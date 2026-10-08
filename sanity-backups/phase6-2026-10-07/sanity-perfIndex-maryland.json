@@ -1,0 +1,31 @@
+{
+  "_createdAt": "2026-03-10T13:55:42Z",
+  "_id": "perfIndex-maryland",
+  "_rev": "G7Tfo59YVwcDW2O5CBrmGV",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:42Z",
+  "economicsMetrics": {
+    "insuranceCoverage": 91,
+    "spendingPerCapita": 70,
+    "workforceGaps": 68
+  },
+  "narrativeSummary": "Maryland's unique all-payer global budget system is a national policy benchmark. The RHT program extends this financial reform to rural and Eastern Shore hospitals that have not yet been integrated, pairing it with equity investments.",
+  "narrativeTitle": "Global Budget Model Expanding to Rural Hospitals",
+  "performanceScore": 75,
+  "policyMetrics": {
+    "scopeOfPractice": 72,
+    "telehealth": 78,
+    "vbpAdoption": 82
+  },
+  "stateId": {
+    "_type": "slug",
+    "current": "maryland"
+  },
+  "stateName": "Maryland",
+  "status": "Improving",
+  "technologyMetrics": {
+    "broadbandAccess": 70,
+    "ehrAdoption": 88,
+    "hieAdoption": 80
+  }
+}

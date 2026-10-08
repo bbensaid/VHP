@@ -1,0 +1,37 @@
+{
+ "id": "8627c012-ae45-451a-82f6-0ae0b1f45a93",
+ "content_blocks": [
+  {
+   "body": "Most quality measures capture process (did we do the recommended thing?) or intermediate outcome (did the patient's A1c improve?). Rarely do they ask: how does the patient feel? Can they do what they want to do? Is their pain tolerable? These patient-reported outcomes (PROs) capture the dimensions of health that patients care about most \u2014 and that don't appear in clinical records.\n\nPROs are collected via validated questionnaires asking patients directly about their symptoms, function, and quality of life. They are distinct from satisfaction surveys (CAHPS) \u2014 PROs measure health states, not opinions about care.",
+   "type": "text",
+   "heading": "What the patient experiences matters most"
+  },
+  {
+   "type": "concepts_grid",
+   "items": [
+    {
+     "body": "Patient-Reported Outcomes Measurement Information System. NIH-funded standardized measures across physical function, fatigue, pain, depression, anxiety, social functioning. Calibrated by item response theory \u2014 adaptive short-form versions available.",
+     "icon": "ti-chart-bar",
+     "title": "PROMIS"
+    },
+    {
+     "body": "Knee Injury and Osteoarthritis Outcome Score / Hip disability and Osteoarthritis Outcome Score. Condition-specific PROs used in orthopedic bundles and joint replacement episodes.",
+     "icon": "ti-heart-rate-monitor",
+     "title": "KOOS/HOOS"
+    },
+    {
+     "body": "International Consortium for Health Outcomes Measurement. Condition-specific standard outcome sets developed with patient input \u2014 used globally to enable comparison across health systems.",
+     "icon": "ti-stethoscope",
+     "title": "ICHOM sets"
+    }
+   ],
+   "heading": "Key PRO frameworks"
+  },
+  {
+   "body": "CMS has begun incorporating PROs into several programs: joint replacement bundles require functional outcome reporting, MIPS has PRO-based quality measures, and the ACO PC Flex model incorporates patient experience measures. The challenge: collecting PROs at scale requires patient portal infrastructure, engagement, and support for patients with limited digital access.",
+   "type": "callout",
+   "heading": "CMS's move toward PROs",
+   "variant": "info"
+  }
+ ]
+}

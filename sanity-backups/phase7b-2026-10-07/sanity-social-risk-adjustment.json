@@ -1,0 +1,515 @@
+{
+  "_createdAt": "2026-05-31T03:19:24Z",
+  "_id": "social-risk-adjustment",
+  "_rev": "rL4Cn5Sfo5Z8rzPmE98aih",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T03:19:24Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Question at the Heart of the Debate"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Should a hospital be held to the same quality standard if half its patients live in poverty as a hospital whose patients are predominantly middle-class? Should a primary care practice treating a community with high rates of food insecurity, unstable housing, and limited transportation be judged on the same readmission rate curve as a practice in a wealthy suburb? These are not rhetorical questions. They are policy choices embedded in every value-based payment program — and the answer determines whether those programs help or harm the safety-net providers that serve America's most vulnerable patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Social risk adjustment refers to the practice of modifying quality and cost benchmarks — or risk scores — to account for patients' social and economic circumstances that are unrelated to the quality of clinical care. When a patient is readmitted to the hospital partly because she has no transportation to her follow-up appointment, no refrigerator for her medications, and no one at home to monitor her condition, that readmission reflects her social circumstances — not her provider's clinical competence. The debate is whether the payment system should account for that reality."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The stakes are enormous. The Hospital Readmissions Reduction Program (HRRP), the Hospital Value-Based Purchasing Program, the Merit-Based Incentive Payment System, and the Shared Savings Program all use outcome and quality metrics that are sensitive to patients' socioeconomic status. Safety-net hospitals and practices that disproportionately serve low-income and disabled populations have argued for years that these programs systematically penalize them — not for delivering poor care, but for serving poor patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Social risk factors — including income level, housing stability, food security, education, transportation access, and social support — are estimated to influence up to 80 percent of health outcomes. Yet most value-based payment programs historically adjusted only for clinical diagnoses, not for these upstream determinants."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The NQF and the Evidence Base"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The National Quality Forum (NQF) established an expert panel in 2014 to examine whether quality measures should be adjusted for social risk factors. The panel's report called for adjustment \"under a defined set of circumstances,\" concluding that failing to adjust might worsen health disparities by creating systematic financial pressure on providers who serve disadvantaged populations. This finding sparked a multi-year policy debate involving CMS, MedPAC, the National Academy of Medicine, and Congress."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "In 2017, the NQF completed a multi-stakeholder trial that tested social risk adjustment across multiple quality measures. The trial found that incorporating social risk factors into performance measurement was feasible — though challenging — and that social risk factors were statistically significant predictors of outcomes on many measures. The study documented clear performance disparities between providers serving high-social-risk versus low-social-risk populations, validating concerns that unadjusted comparisons were systematically misleading."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Research has consistently shown that dual-eligible beneficiaries (those who qualify for both Medicare and Medicaid) and low-income subsidy recipients in Medicare Advantage perform worse on clinical quality measures, have higher readmission rates, and score lower on patient experience surveys — even when controlling for clinical diagnoses. These patterns persist across different geographic regions, health systems, and care settings, suggesting that the disparity is driven by social circumstances rather than differences in clinical care quality."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex1",
+      "_type": "exampleBlock",
+      "content": "The Hospital Readmissions Reduction Program (HRRP), established by the ACA in 2012, penalizes hospitals with higher-than-expected 30-day readmissions for conditions including heart failure, pneumonia, and hip/knee replacement. Safety-net hospitals — which serve disproportionately high shares of low-income and uninsured patients — have consistently received higher penalties under HRRP.\nA 2016 Health Affairs analysis found that safety-net hospitals were three times more likely to receive the maximum readmission penalty than non-safety-net hospitals, despite evidence that their readmission rates were largely driven by patients' social circumstances rather than poor hospital care. Congress partially addressed this in the Consolidated Appropriations Act of 2021, which created a peer-grouping system that compares hospitals to others with similar shares of low-income patients — a form of social risk adjustment for HRRP.",
+      "title": "Hospital Readmissions Reduction Program and Safety-Net Hospitals"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Two Sides of the Policy Debate"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The case for social risk adjustment rests on fairness and access. If safety-net providers are systematically penalized in value-based programs because of who their patients are rather than how well they perform clinically, the programs create a perverse incentive to avoid serving vulnerable populations. Over time, financial penalties can reduce resources available for quality improvement, drive providers to exit the market, or create pressure to limit services to high-risk patients. The ultimate losers are the patients who most depend on those providers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The case against social risk adjustment is also grounded in legitimate policy concerns. Critics argue that adjusting outcome measures for patients' social circumstances could mask genuine disparities in the quality of care delivered to low-income patients. If a hospital serving mostly poor patients actually does deliver inferior care, adjusting the benchmark to account for poverty could obscure that reality and remove the accountability pressure that drives improvement. From this perspective, social risk adjustment could become a tool for excusing poor performance rather than addressing its root causes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "A third position — increasingly adopted by CMS — attempts to split the difference. Rather than adjusting outcome benchmarks for social risk, this approach focuses on measuring and rewarding active interventions to address social needs: screening patients for SDOH, connecting them to community resources, reducing disparities in performance within a provider's own patient population. This \"stratification and accountability\" approach holds that providers should not be rewarded merely for serving a disadvantaged population, but should be rewarded for actively reducing disparities within that population."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Arguments For Adjustment",
+        "points": [
+          "Prevents systematic financial penalties on safety-net providers",
+          "Removes incentive to avoid enrolling or treating vulnerable patients",
+          "Reflects reality that social factors drive outcomes beyond providers' control",
+          "Supported by NQF, National Academy of Medicine, and safety-net advocates"
+        ]
+      },
+      "right": {
+        "label": "Arguments Against Adjustment",
+        "points": [
+          "Could mask genuine disparities in care quality for low-income patients",
+          "Removes accountability pressure to improve outcomes for disadvantaged populations",
+          "May create perverse incentive to label patients as socially disadvantaged",
+          "Difficult to implement consistently without reliable standardized SDOH data"
+        ]
+      },
+      "title": "Social Risk Adjustment: The Core Policy Debate"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What CMS Has Actually Done"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS has moved incrementally toward incorporating social risk into payment programs, though it has not adopted comprehensive social risk adjustment for most quality measures. The most significant step was the peer-grouping adjustment for HRRP, enacted in 2021, which compares hospitals' readmission rates to peers with similar socioeconomic patient mixes rather than to the national average. This approach acknowledges that different hospitals operate in structurally different environments without fully excusing poor performance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "In 2024, CMS issued regulations requiring hospitals participating in federal payment programs to screen all patients for five social determinants: food insecurity, housing instability, transportation needs, utility difficulties, and interpersonal safety. These screening requirements create a standardized data foundation that could eventually support more rigorous social risk adjustment. CMS also established billing codes for Social Determinants of Health Risk Assessments, Community Health Integration services, and Principal Illness Navigation — creating reimbursement pathways for directly addressing social needs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For Medicare Advantage, CMS introduced the Health Equity Index (HEI) as part of the Star Ratings system, taking effect for 2027 star ratings based on 2024–2025 performance data. The HEI rewards plans that achieve high performance specifically among enrollees with social risk factors — dual-eligible beneficiaries, low-income subsidy recipients, and disability-status enrollees. Rather than adjusting benchmarks downward, the HEI adds bonus points for demonstrating equitable outcomes across all enrolled populations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Hospital Readmissions Reduction Program launches with no social risk adjustment, immediately triggering criticism from safety-net hospitals that face disproportionate penalties.",
+          "title": "2010 — ACA Creates HRRP"
+        },
+        {
+          "_key": "step2",
+          "description": "NQF expert panel recommends adjustment for social risk under defined circumstances, providing the first major policy endorsement of the concept.",
+          "title": "2014 — NQF Panel Report"
+        },
+        {
+          "_key": "step3",
+          "description": "NQF multi-stakeholder trial confirms social risk adjustment is feasible and that social factors are statistically significant predictors of outcomes on many quality measures.",
+          "title": "2017 — NQF Trial Findings"
+        },
+        {
+          "_key": "step4",
+          "description": "Congress creates socioeconomic peer groups for HRRP in the Consolidated Appropriations Act, so hospitals are compared to peers with similar dual-eligible shares rather than the national average.",
+          "title": "2021 — HRRP Peer Grouping"
+        },
+        {
+          "_key": "step5",
+          "description": "CMS requires hospitals in federal programs to screen patients for five SDOH domains and report results, creating standardized social data infrastructure.",
+          "title": "2024 — SDOH Screening Mandate"
+        },
+        {
+          "_key": "step6",
+          "description": "CMS Health Equity Index takes effect in Medicare Advantage Star Ratings, rewarding plans for equitable performance across social risk subgroups.",
+          "title": "2027 — Health Equity Index (HEI)"
+        }
+      ],
+      "title": "CMS Timeline: Social Risk in Payment Programs"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Data Problem and the Path Forward"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most practical obstacle to comprehensive social risk adjustment is data. Unlike clinical diagnoses, which are captured through standardized ICD-10 codes in medical claims, social risk factors are inconsistently documented across health systems, insurers, and geographic regions. Poverty is not an ICD-10 code. Housing instability, food insecurity, and transportation barriers are documented in some EHR systems but not others, and the definitions and screening tools vary widely."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2024 SDOH screening mandates represent an attempt to solve this data problem at the population level by requiring consistent, standardized screening across all Medicare- and Medicaid-participating hospitals. Over time, if these requirements are enforced and data is aggregated at the CMS level, it becomes possible to construct reliable patient-level social risk profiles that could support more refined payment adjustments. Several states — including Massachusetts, New York, and California — have moved faster than federal policy by requiring SDOH documentation in Medicaid managed care contracts."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Vermont Blueprint for Health offers an instructive model. Vermont has integrated social risk data collection into its community health team model, using standardized SDOH screening across all primary care practices. This data informs both population health interventions and, increasingly, payment arrangements that account for the social complexity of a practice's attributed population. Vermont's approach suggests that social risk adjustment is not just technically feasible but operationally achievable when built systematically into care delivery infrastructure from the ground up."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The emerging CMS framework distinguishes between \"adjusting for\" social risk (lowering benchmarks for disadvantaged populations) and \"rewarding action on\" social risk (paying for SDOH screening, community health integration, and demonstrated disparity reduction). Both approaches are moving forward simultaneously in different programs."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Social risk adjustment modifies quality and cost benchmarks to account for patients' social and economic circumstances — income, housing, food security — that drive outcomes beyond providers' clinical control.",
+        "The NQF's 2014 expert panel endorsed social risk adjustment under defined circumstances, and a 2017 multi-stakeholder trial confirmed it is feasible and that social factors are significant predictors of outcomes.",
+        "The core policy debate pits fairness concerns (safety-net providers are unfairly penalized) against accountability concerns (adjustment could mask genuine care quality disparities for low-income patients).",
+        "Congress partially adopted social risk adjustment for the Hospital Readmissions Reduction Program in 2021 by creating socioeconomic peer groups rather than comparing all hospitals to a single national benchmark.",
+        "CMS's 2024 SDOH screening mandate requires hospitals to screen patients for five social domains, building the data infrastructure needed for more systematic social risk adjustment in the future.",
+        "The CMS Health Equity Index, effective for 2027 Star Ratings, rewards Medicare Advantage plans for achieving equitable outcomes across social risk subgroups — an \"accountability for equity\" approach rather than benchmark adjustment.",
+        "The absence of standardized, reliable social risk data remains the primary technical barrier to comprehensive social risk adjustment in federal value-based payment programs."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The 2021 Consolidated Appropriations Act created peer groups within HRRP based on hospitals' shares of dual-eligible beneficiaries, so each hospital is compared to peers serving similar proportions of low-income patients rather than the national average. This is a form of social risk adjustment that acknowledges structural differences in operating environments without fully eliminating accountability for readmission performance.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Congress eliminated financial penalties for all safety-net hospitals"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Congress created socioeconomic peer groups so hospitals are compared to others with similar low-income patient shares"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Congress required CMS to adjust all quality measures for patients' poverty status"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Congress replaced readmission rate penalties with SDOH screening bonuses"
+        }
+      ],
+      "question": "Which policy change did Congress make to the Hospital Readmissions Reduction Program in 2021 to address social risk concerns?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] NQF: Social Risk Trial Final Report — https://www.qualityforum.org/Publications/2017/07/Social_Risk_Trial_Final_Report.aspx — NQF 2017 trial findings on feasibility of social risk adjustment"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Health Affairs: Adjusting Quality Measures For Social Risk Factors Can Promote Equity — https://www.healthaffairs.org/doi/10.1377/hlthaff.2020.01764 — Peer-reviewed analysis of pros and cons of social risk adjustment"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CMS: Social Determinants of Health Roadmap — https://www.cms.gov/newsroom/press-releases/cms-issues-new-roadmap-states-address-social-determinants-health-improve-outcomes-lower-costs — CMS SDOH policy framework and state strategies"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Case Management Society of America: 2024 SDOH Requirements — https://cmsatoday.com/2024/12/30/2024-sdoh-social-determinants-of-health-sdoh-requirements-and-what-lies-ahead-in-2025/ — 2024 CMS SDOH screening mandate and five-domain requirements"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] AJMC: Understanding the Social Risk Factor Adjustment's Effect on Star Ratings — https://www.ajmc.com/view/understanding-the-social-risk-factor-adjustment-s-effect-on-star-ratings — Social risk factor adjustment and Health Equity Index in Medicare Advantage"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "value-based-care",
+  "order": 16,
+  "slug": {
+    "_type": "slug",
+    "current": "social-risk-adjustment"
+  },
+  "title": "Social Risk in Risk Adjustment: Should We Adjust for Poverty?"
+}

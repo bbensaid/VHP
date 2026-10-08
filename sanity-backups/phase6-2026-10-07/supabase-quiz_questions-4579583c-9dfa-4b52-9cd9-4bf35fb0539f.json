@@ -1,0 +1,9 @@
+{
+  "id": "4579583c-9dfa-4b52-9cd9-4bf35fb0539f",
+  "quiz_id": "8aac4337-7730-426f-8fa3-a6448bb1eb7c",
+  "order": 3,
+  "question_type": "single_choice",
+  "question": "How does VITL's health information exchange infrastructure support Vermont's AHEAD Model?",
+  "explanation": "HIE infrastructure and value-based care are inseparable at scale. The AHEAD Model's global budget requires proactive population health management — which is only possible with the real-time data flows that VITL's exchange network provides.",
+  "points": null
+}

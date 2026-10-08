@@ -883,6 +883,49 @@ const PAM_LEVELS = [
   { level: 4, label: "Maintaining Behavior", pct: 15, costPerPatient: 3800, color: "bg-emerald-500", textColor: "text-emerald-400" },
 ];
 
+// The five platform TYPES Appendix D.13 promises ("Patient Engagement Platform
+// Comparison (PAM model, 5 types)"). Descriptive reference only: no type is given
+// a vendor score — the 1-10 matrix below stays the reader's own evaluation. Each
+// evidence line is a published review/trial, verified 2026-10-08; billing codes are
+// current CMS/AMA codes. Reader can push a type's name onto any comparison column.
+const ENGAGEMENT_PLATFORM_TYPES = [
+  {
+    key: "portal",
+    label: "EHR-tethered patient portal",
+    mechanism: "Self-service, digital only: records, results, secure messaging, scheduling. Patient must initiate.",
+    billing: "Online digital E/M (e-visits) CPT 99421–99423 for clinician time on portal messages; the portal itself is not billable.",
+    evidence: "Ammenwerth, Schnell-Inderst & Hoerbst, J Med Internet Res 2012;14(6):e162 — systematic review of controlled trials: no statistically significant health-outcome change in the 2 RCTs; evidence insufficient to support the empowerment claim.",
+  },
+  {
+    key: "sms",
+    label: "Two-way text messaging / automated outreach",
+    mechanism: "Push, digital: reminders, care-gap nudges, short self-management prompts. Reaches patients who never log in.",
+    billing: "No dedicated billing code — an operating cost recovered through avoided no-shows and closed gaps.",
+    evidence: "Hall, Cole-Lewis & Bernhardt, Annu Rev Public Health 2015;36:393–415 — review of reviews: most text-messaging interventions effective for diabetes self-management, weight loss, physical activity, smoking cessation and ART adherence; cost-effectiveness not established.",
+  },
+  {
+    key: "rpm",
+    label: "Remote patient monitoring platform",
+    mechanism: "Device data streamed to a care team that acts on it; engagement depends on clinical follow-up. Modeled in the RPM ROI tab.",
+    billing: "CPT 99453, 99454, 99457, 99458 (see RPM ROI tab).",
+    evidence: "Noah et al., npj Digital Medicine 2018;1:20172 — meta-analysis of 27 RCTs of wearable-biosensor RPM: no significant effect on BMI, weight, waist circumference, body fat or blood pressure; possible benefit in COPD.",
+  },
+  {
+    key: "coaching",
+    label: "Digital health coaching / self-management app",
+    mechanism: "Hybrid: app plus a coach (human or scripted) setting goals and building self-efficacy — the skill PAM measures.",
+    billing: "CPT Category III 0591T–0593T (health and well-being coaching) — tracking codes, generally not paid by Medicare.",
+    evidence: "Kivelä et al., Patient Educ Couns 2014;97(2):147–157 — systematic review (11 studies): positive physical, behavioral and psychological effects, notably weight loss and physical health status; cost-effectiveness unproven.",
+  },
+  {
+    key: "chw",
+    label: "Care navigation / community health worker platform",
+    mechanism: "Human-led: navigators or CHWs address social needs and access barriers, with software for referral and tracking.",
+    billing: "Medicare Community Health Integration HCPCS G0019 / G0022 (CY2024 Physician Fee Schedule); Medicaid coverage varies by state.",
+    evidence: "Kangovi et al., Health Affairs 2020;39(2):207–213 — IMPaCT CHW program (RCT-based economics): $2.47 returned to Medicaid per $1 invested annually, driven by fewer hospitalizations.",
+  },
+] as const;
+
 type PlatformScores = Record<string, number>;
 
 const DEFAULT_PLATFORM_NAMES = ["Current State", "Platform A", "Platform B"];
@@ -982,6 +1025,40 @@ function EngagementComparison() {
         </div>
         <div className="mt-3 text-slate-400 text-xs text-right">
           Baseline total cost: <strong className="text-rose-400">${fmt(results.baselineCost)}</strong>
+        </div>
+      </div>
+
+      {/* Five platform types (Appendix D.13) */}
+      <div className="bg-slate-800/40 border border-slate-700 rounded-2xl p-5 overflow-x-auto">
+        <SectionTitle>Five Engagement Platform Types — what the evidence says</SectionTitle>
+        <p className="text-slate-400 text-xs mb-3">
+          Why activation matters: patients at the lowest PAM level had predicted costs 8% higher in the base year and 21% higher
+          in the following half-year than the most activated, after risk adjustment (Hibbard, Greene &amp; Overton, Health Affairs
+          2013;32(2):216–222). Types are described, not scored — score real vendors in the matrix below. &ldquo;Use&rdquo; puts a
+          type&apos;s name on the selected column ({platformNames[selectedPlatform]}).
+        </p>
+        <div className="min-w-[720px] space-y-2">
+          {ENGAGEMENT_PLATFORM_TYPES.map((t) => (
+            <div key={t.key} className="grid grid-cols-12 gap-3 bg-slate-900/60 rounded-xl p-3">
+              <div className="col-span-3">
+                <div className="text-cyan-300 text-xs font-bold">{t.label}</div>
+                <button
+                  type="button"
+                  onClick={() => {
+                    const next = [...platformNames];
+                    next[selectedPlatform] = t.label;
+                    setPlatformNames(next);
+                  }}
+                  className="mt-2 text-[10px] font-bold uppercase tracking-wider text-cyan-400 border border-cyan-700 rounded px-2 py-0.5 hover:bg-cyan-500/10"
+                >
+                  Use
+                </button>
+              </div>
+              <div className="col-span-3 text-slate-300 text-xs">{t.mechanism}</div>
+              <div className="col-span-2 text-slate-400 text-xs">{t.billing}</div>
+              <div className="col-span-4 text-slate-400 text-xs">{t.evidence}</div>
+            </div>
+          ))}
         </div>
       </div>
 

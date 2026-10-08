@@ -1,0 +1,493 @@
+{
+  "_createdAt": "2026-01-31T08:02:22Z",
+  "_id": "uninhabitable-math-vermont-healthcare-cliff",
+  "_rev": "1jJ4sZyHE3MNejrOV85A2B",
+  "_type": "policyAnalysis",
+  "_updatedAt": "2026-07-31T18:27:15Z",
+  "body": [
+    {
+      "_key": "e9-69",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-70",
+          "_type": "span",
+          "marks": [],
+          "text": "For decades, American health care ran on a silent social contract: commercial-insurance premiums would rise indefinitely to cover the operating losses hospitals booked on Medicare and Medicaid. Vermont's Act 167 investigation documented, in unsentimental financial terms, that this contract has expired in the state. What the report describes is not a cyclical downturn but a structural decoupling — expense growth has detached from any revenue capacity Vermont can plausibly muster."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-71",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-72",
+          "_type": "span",
+          "marks": [],
+          "text": "Simple solutions will not work... Higher taxation is unlikely to be a viable solution either due to the potential risk of driving residents and businesses out of state."
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "e9-73",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-74",
+          "_type": "span",
+          "marks": [],
+          "text": "The Decoupling at the Center of the Report"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e9-75",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-76",
+          "_type": "span",
+          "marks": [],
+          "text": "The independent consultant Oliver Wyman, engaged under Act 167, concluded after more than 230 meetings across all 14 of Vermont's hospital service areas — involving over 3,100 participants and roughly 100 organizations — that Vermont's health system is not sustainable on its current trajectory and that many hospitals face near-term solvency risk. The finding is not that costs are merely high; it is that the rate of cost growth has separated from the state's ability to pay, so that even a healthy economy cannot grow revenue fast enough to close the gap."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-77",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-78",
+          "_type": "span",
+          "marks": [],
+          "text": "This is what makes the math 'uninhabitable.' In a normal market, demand falls as price rises, restoring balance. In Vermont health care, demand is demographically locked in — an aging, rural population needs care regardless of price — while the revenue base (commercially insured workers and their employers) is shrinking as premiums climb. The two lines do not converge; they diverge, year after year, which is the formal definition of an unsustainable system."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-79",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-80",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Premiums Can No Longer Carry the Load"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e9-81",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-82",
+          "_type": "span",
+          "marks": [],
+          "text": "The cross-subsidy worked while the commercial pool was large and growing. It is now contracting under its own price. On Vermont Health Connect, the individual exchange, premiums have roughly doubled or more in recent years. Payers have told the legislature that Vermont's regulated insurance markets have been losing money, citing hospital prices and medical spending as the principal drivers. In 2023, Blue Cross and Blue Shield of Vermont paid out about $1.11 in claims for every dollar of premium collected — a structural loss, not a one-year anomaly."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-83",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-84",
+          "_type": "span",
+          "marks": [],
+          "text": "Each premium increase that is meant to shore up hospital revenue instead accelerates the erosion of the pool that funds it: employers thin benefits, individuals drop coverage or forgo care, and the commercial base that the whole cross-subsidy depends on gets smaller and sicker. The Medicare Advantage market tells the same story — for 2026, all but one Medicare Advantage carrier exited Vermont after concluding federal payments did not match local costs, stranding tens of thousands of seniors. When private payers withdraw because the numbers do not work, it is a market signaling that the price of Vermont care has outrun what any payer will fund."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-85",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-86",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Taxation Is Not the Escape Hatch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e9-87",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-88",
+          "_type": "span",
+          "marks": [],
+          "text": "The intuitive response to a public-good shortfall is to tax. The Act 167 report explicitly closes that door, warning that higher taxation risks driving residents and businesses out of a small state with a mobile tax base and an already-high cost of living. Economically, this is the cost-shifting trap: a tax does not reduce the cost of producing care, it merely moves the bill from premium-payers to taxpayers — often the same households — while adding the risk of out-migration that shrinks the tax base itself."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-89",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-90",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why the report frames the problem as requiring structural transformation rather than a new funding source. There is no untapped pool of payers waiting to absorb the gap. Commercial premiums are already at the edge of the pool's tolerance, public payers are already among the lowest in the nation, and taxation threatens the state's economic competitiveness. Every financing lever is near its limit, which is exactly why the report insists the answer must be to lower the cost of care itself, not to find someone new to pay the existing cost."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-91",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-92",
+          "_type": "span",
+          "marks": [],
+          "text": "The 'uninhabitable math' is the simultaneous exhaustion of all three financing levers: commercial premiums (collapsing the pool that funds them), public reimbursement (already among the nation's lowest), and taxation (risking out-migration from a small, mobile state). When every payer is maxed out, the only remaining variable is the cost of producing care."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "e9-93",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-94",
+          "_type": "span",
+          "marks": [],
+          "text": "What 'Lowest in the Nation' Public Payment Really Means"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e9-95",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-96",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont hospital leaders repeatedly note that the state's public-payer reimbursement is among the lowest in the country, and this is central to the arithmetic. If Medicare and Medicaid already pay near the floor, there is no slack on the public side to absorb more of the load — the public payers cannot be squeezed further to relieve the commercial pool, and the federal government is not poised to raise Vermont's rates. The cross-subsidy was, in effect, the state's improvised workaround for chronically thin public payment, and that workaround has now run out of room."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-97",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-98",
+          "_type": "span",
+          "marks": [],
+          "text": "This closes the last conceptual escape route. One might imagine that if commercial premiums and state taxes are exhausted, the answer is simply to shift more cost back onto Medicare and Medicaid — but those payers are already at the bottom of the national distribution, and their payment rates are set federally, beyond Vermont's control. With the commercial pool collapsing, the public payers floored, and taxation foreclosed, the arithmetic genuinely has no remaining payer to absorb the gap. That exhaustion of payers is the precise mechanism that converts a difficult budget into an uninhabitable one, and it is why the report treats structural cost reduction not as one option among several but as the only option the math leaves standing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-99",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-100",
+          "_type": "span",
+          "marks": [],
+          "text": "The Structural Reforms the Math Forces"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e9-101",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-102",
+          "_type": "span",
+          "marks": [],
+          "text": "If revenue cannot rise, expense must fall — not through indiscriminate cuts that strip access, but through structural redesign. Vermont's central tools are hospital global budgets and reference-based pricing, pursued alongside the federal AHEAD model, which pairs hospital global budgets with statewide cost-growth targets. A global budget caps a hospital's total annual revenue and forces it to operate within that envelope, flipping the incentive from maximizing billable volume to keeping a population healthy at lower total cost. Reference-based pricing attacks the price side directly by benchmarking payments to a defined standard rather than to ever-escalating chargemaster rates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-103",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-104",
+          "_type": "span",
+          "marks": [],
+          "text": "These reforms are hard and contested, and their savings are not guaranteed. But they are the only category of response the math actually permits, because they target the cost of care rather than reshuffling who pays for it. The Act 167 report's value is in foreclosing the comfortable alternatives — shop harder, raise premiums, raise taxes — and leaving policymakers facing the one genuinely difficult question that the arithmetic supports: how to deliver the care an aging Vermont needs using meaningfully fewer resources."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-105",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-106",
+          "_type": "span",
+          "marks": [],
+          "text": "The Demographic Multiplier Behind the Numbers"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e9-107",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-108",
+          "_type": "span",
+          "marks": [],
+          "text": "The cliff is steep because Vermont's demographics multiply every cost pressure. Vermont is among the oldest states in the nation — roughly 22 percent of residents are 65 or older and about 28 percent are 60-plus — and an older population consumes substantially more health care per person, concentrated in exactly the high-cost categories (chronic disease, hospitalization, long-term care) that the system struggles to fund. The workforce that delivers that care is aging in parallel: roughly one in three Vermont primary-care physicians is over 60, and half the state's nurses are over 48, so supply is contracting precisely as demand rises."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-109",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-110",
+          "_type": "span",
+          "marks": [],
+          "text": "This demographic multiplier is why Vermont hits the wall before larger, younger states do. The same national forces — chronic-disease growth, medical inflation, workforce shortages — are amplified by an age structure that pushes demand up and a labor structure that pulls supply down at the same time. The state has already lost roughly 500 nursing-home and assisted-living beds to closures and staffing shortages, producing hospital discharge bottlenecks in which patients wait days, weeks, or months for an appropriate care setting. Those stranded patients occupy expensive hospital beds they no longer need, a vivid illustration of how the demographic squeeze converts directly into wasted cost the budget cannot absorb."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-111",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-112",
+          "_type": "span",
+          "marks": [],
+          "text": "Reading the Cliff Honestly"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e9-113",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-114",
+          "_type": "span",
+          "marks": [],
+          "text": "It is worth being precise about what the 'cliff' is and is not. It is not a prediction that Vermont hospitals will all close tomorrow; it is a statement that the current financing structure cannot continue and that, absent structural change, the system degrades through solvency crises, service closures, and lost access — the long-term-care bed losses and discharge bottlenecks already visible in the state. The cliff is the point at which incremental fixes stop working and only structural redesign remains."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-115",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-116",
+          "_type": "span",
+          "marks": [],
+          "text": "That reframing is the report's real contribution. By converting an emotional sense of crisis into dated, dollar-denominated arithmetic, Act 167 makes the trade-offs explicit and the easy answers visibly inadequate. The math is uninhabitable only on the current path; it becomes habitable the moment Vermont accepts that the variable it must change is the cost of producing care, and builds the payment and delivery structures — global budgets, prevention, right-sized services — that can actually change it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-117",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-118",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e9-119",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-120",
+          "_type": "span",
+          "marks": [],
+          "text": "Figures and quotations are drawn from the Act 167 investigation and primary Vermont reporting:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-122",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-123",
+          "_type": "span",
+          "marks": [
+            "e9-121"
+          ],
+          "text": "Green Mountain Care Board — Act 167 Hospital Sustainability / Oliver Wyman report (FAQ)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "e9-121",
+          "_type": "link",
+          "href": "https://healthcarereform.vermont.gov/frequently-asked-questions-act-167-hospital-transformation-report"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-125",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-126",
+          "_type": "span",
+          "marks": [
+            "e9-124"
+          ],
+          "text": "Vermont Business Magazine — GMCB & Oliver Wyman statements on the Act 167 final report"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "e9-124",
+          "_type": "link",
+          "href": "https://vermontbiz.com/news/2024/october/29/gmcb-oliver-wyman-statements-regarding-act-167-final-report"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-128",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-129",
+          "_type": "span",
+          "marks": [
+            "e9-127"
+          ],
+          "text": "VTDigger — On Vermont Health Connect, annual premium prices have doubled, or more"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "e9-127",
+          "_type": "link",
+          "href": "https://vtdigger.org/2025/10/31/on-vermont-health-connect-annual-premium-prices-have-doubled-or-more/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-131",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-132",
+          "_type": "span",
+          "marks": [
+            "e9-130"
+          ],
+          "text": "VTDigger — Tens of thousands of Vermonters set to lose Medicare Advantage in 2026"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "e9-130",
+          "_type": "link",
+          "href": "https://vtdigger.org/2025/10/01/tens-of-thousands-vermonters-are-set-to-lose-medicare-advantage-option-in-2026/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "e9-134",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e9-135",
+          "_type": "span",
+          "marks": [
+            "e9-133"
+          ],
+          "text": "GMCB — Act 68 Update on Hospital Reference-Based Pricing and Global Budgets (Feb 2026)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "e9-133",
+          "_type": "link",
+          "href": "https://legislature.vermont.gov/assets/Legislative-Reports/GMCB-Act-68-Update-02.17.2026A.pdf"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "chapterRef": "6",
+  "impactLevel": "Critical",
+  "pillar": "Economics",
+  "publishedAt": "2025-12-12T09:00:00Z",
+  "slug": {
+    "current": "uninhabitable-math-vermont-healthcare-cliff"
+  },
+  "status": "Active",
+  "summary": "Vermont's Act 167 investigation (Oliver Wyman: 230+ meetings, 3,100+ participants, all 14 hospital service areas) found the commercial cross-subsidy has expired: premiums on Vermont Health Connect have doubled+, BCBSVT paid $1.11 per premium dollar in 2023, and all but one Medicare Advantage carrier exited for 2026. With premiums, public reimbursement, and taxation all maxed out, the only remaining lever is the cost of care — driving global budgets and reference-based pricing under AHEAD.",
+  "title": "The Uninhabitable Math: Decoding Vermont's $2.4 Billion Healthcare Cliff"
+}

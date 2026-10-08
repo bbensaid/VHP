@@ -1,0 +1,135 @@
+{
+  "id": "b9052ffe-b4f4-4842-8e06-cd6196e2cacb",
+  "slug": "hl7-fhir-standards",
+  "sanity_slug": "hie-hl7-fhir-standards",
+  "content_blocks": [
+    {
+      "type": "timeline",
+      "items": [
+        {
+          "body": "Pipe-delimited messaging standard (e.g., MSH|ADT^A01). Still the most widely deployed healthcare messaging standard in production today.",
+          "year": "1987",
+          "title": "HL7 v2 introduced",
+          "pillar": "technology"
+        },
+        {
+          "body": "Clinical Document Architecture — XML-based structured documents. C-CDA summaries power transitions of care and HIE document exchange.",
+          "year": "2005",
+          "title": "HL7 CDA / C-CDA",
+          "pillar": "technology"
+        },
+        {
+          "body": "Fast Healthcare Interoperability Resources — RESTful, resource-based standard designed for modern web APIs. Far more developer-friendly than v2 or CDA.",
+          "year": "2012",
+          "title": "FHIR introduced",
+          "pillar": "technology"
+        },
+        {
+          "body": "ONC and CMS Interoperability rules require FHIR R4 for certified health IT under the 21st Century Cures Act. The standard for new integrations.",
+          "year": "2020",
+          "title": "FHIR R4 mandated",
+          "pillar": "technology"
+        },
+        {
+          "body": "FHIR-based nationwide exchange network goes live. QHINs enable cross-network query and retrieval at scale.",
+          "year": "2022+",
+          "title": "TEFCA & QHINs",
+          "pillar": "technology"
+        }
+      ],
+      "heading": "Health data standards evolution"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Segment-based messages (MSH, PID, OBR, OBX) sent between systems. ADT messages (admit/discharge/transfer) are the workhorse of HIE alert feeds.",
+          "icon": "ti-code-dots",
+          "title": "HL7 v2 messages"
+        },
+        {
+          "body": "Consolidated Clinical Document Architecture — structured XML summaries (CCD, discharge summary, referral note) for transitions of care.",
+          "icon": "ti-file-text",
+          "title": "C-CDA documents"
+        },
+        {
+          "body": "Patient, Observation, Condition, MedicationRequest, DiagnosticReport — discrete data objects with defined schemas, accessible via REST API endpoints.",
+          "icon": "ti-box-multiple",
+          "title": "FHIR resources"
+        },
+        {
+          "body": "Authorization framework (OAuth2-based) enabling third-party apps to access EHR data with patient or clinician consent. Powers patient-facing health apps.",
+          "icon": "ti-lock-access",
+          "title": "SMART on FHIR"
+        },
+        {
+          "body": "US Core Data for Interoperability — the minimum data set that must be available through certified EHR APIs. Defines the floor for FHIR R4 conformance.",
+          "icon": "ti-list",
+          "title": "USCDI"
+        },
+        {
+          "body": "Admit-Discharge-Transfer alerts (HL7 v2 or FHIR) — the foundational real-time signal for care coordination workflows in an HIE.",
+          "icon": "ti-arrows-exchange",
+          "title": "ADT notifications"
+        }
+      ],
+      "heading": "Core standards concepts"
+    },
+    {
+      "rows": [
+        {
+          "left": "Pipe-delimited text (MSH|EVN|PID...)",
+          "label": "Format",
+          "right": "JSON or XML resources via REST API"
+        },
+        {
+          "left": "Point-to-point, push-based messaging",
+          "label": "Integration style",
+          "right": "RESTful: GET /Patient/{id}, POST /Observation"
+        },
+        {
+          "left": "High — but inconsistent implementations",
+          "label": "Flexibility",
+          "right": "Standardized structure with conformance profiles"
+        },
+        {
+          "left": "~95% of existing hospital integrations",
+          "label": "Adoption",
+          "right": "Required for all new certified EHR integrations"
+        },
+        {
+          "left": "Requires specialized HL7 parsing expertise",
+          "label": "Developer experience",
+          "right": "Standard web development skills apply"
+        },
+        {
+          "left": "Not designed for direct patient access",
+          "label": "Patient access",
+          "right": "Enables patient-facing apps via SMART on FHIR"
+        }
+      ],
+      "type": "comparison_table",
+      "heading": "HL7 v2 vs FHIR R4",
+      "leftLabel": "HL7 v2",
+      "rightLabel": "FHIR R4"
+    },
+    {
+      "body": "Don't expect a clean transition. Most production HIE environments run HL7 v2 pipelines for legacy hospital connections while simultaneously building FHIR R4 APIs for new use cases. Your integration engine translates between them. Understanding both is essential.",
+      "type": "callout",
+      "heading": "You will encounter both v2 and FHIR",
+      "variant": "tip"
+    },
+    {
+      "hint": "Recommended: Your CTO or lead architect walks through your organization's specific FHIR implementation — what APIs you expose, what data you exchange, and the decisions you made. 8–12 minutes.",
+      "type": "audio_slot",
+      "label": "Our FHIR implementation: what we built and why"
+    },
+    {
+      "type": "video",
+      "caption": "FHIR explained for beginners — what it is and why it matters (~15 min)",
+      "videoId": "m2O3nb-gKgI",
+      "mediaType": "youtube",
+      "durationSeconds": 900
+    }
+  ]
+}

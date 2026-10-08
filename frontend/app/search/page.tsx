@@ -14,6 +14,8 @@ const TYPE_META: Record<string, { color: string; bg: string; border: string }> =
   "Research Lab Tool": { color: "text-teal-700", bg: "bg-teal-50",   border: "border-teal-200" },
   "Article":        { color: "text-sky-700",    bg: "bg-sky-50",    border: "border-sky-200" },
   "Policy Analysis":{ color: "text-blue-700",    bg: "bg-blue-50",    border: "border-blue-200" },
+  "Academy Course": { color: "text-indigo-700", bg: "bg-indigo-50", border: "border-indigo-200" },
+  "Academy Track":  { color: "text-indigo-700", bg: "bg-indigo-50", border: "border-indigo-200" },
   "Academy Module": { color: "text-indigo-700", bg: "bg-indigo-50", border: "border-indigo-200" },
   "Definition":     { color: "text-emerald-700",bg: "bg-emerald-50",border: "border-emerald-200" },
   "Case Study":     { color: "text-amber-700",  bg: "bg-amber-50",  border: "border-amber-200" },

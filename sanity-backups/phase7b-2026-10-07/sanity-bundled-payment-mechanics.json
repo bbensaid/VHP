@@ -1,0 +1,610 @@
+{
+  "_createdAt": "2026-05-31T03:18:15Z",
+  "_id": "bundled-payment-mechanics",
+  "_rev": "eq5oAYPsLy0PFYEDJSPV8g",
+  "_type": "academyModule",
+  "_updatedAt": "2026-10-08T02:01:56Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Is an Episode-Based Bundled Payment?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A bundled payment — also called an episode-based payment — collapses the dozens of separate claims that Medicare or a commercial payer would ordinarily process for a single clinical event into one aggregated target price. Instead of a hospital billing for the inpatient stay, a surgeon billing separately for the procedure, a post-acute facility billing for its days, and a home health agency billing for visits, the payer holds all of those costs up against a single benchmark. If the team delivers the episode for less, providers share in the savings; if spending exceeds the target, they owe the difference back."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The logic is straightforward: fee-for-service rewards doing more — more tests, longer stays, more specialist consults — because each service generates a separate payment. Bundling inverts that incentive. A provider who reduces an unnecessary post-acute day or avoids a preventable readmission keeps part of the savings rather than losing revenue. Quality guardrails prevent providers from cutting corners to hit their target: readmission rates, mortality, and patient-experience scores are tracked, and poor quality can disqualify a participant from receiving any reconciliation payment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Bundled payments sit in the middle of the value-based care spectrum. They are more aggressive than pay-for-performance bonuses, which layer small incentives onto an otherwise unchanged fee-for-service chassis, but less comprehensive than capitation, which hands a provider a fixed monthly sum to cover all care. Bundles concentrate accountability on a defined clinical episode — a joint replacement, a cardiac procedure, a chemotherapy course — making them easier to attribute to specific providers and easier to price than a full-population capitation arrangement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "An episode of care is a clinically meaningful window of time tied to a specific health event — typically an inpatient anchor stay or a qualifying outpatient procedure, plus a defined follow-up period (most commonly 90 days) during which related care is included in the bundle."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "CMS BPCI Advanced (2018–2025) covered 31 inpatient and 4 outpatient clinical episode types — CMS BPCI Advanced Model Overview 2021",
+          "label": "BPCI Advanced Clinical Episodes",
+          "value": "35"
+        },
+        {
+          "_key": "s2",
+          "context": "Episodes in BPCI Advanced extend 90 days past hospital discharge or outpatient procedure completion — CMS BPCI Advanced Fact Sheet",
+          "label": "Standard Episode Length",
+          "value": "90 days"
+        },
+        {
+          "_key": "s3",
+          "context": "BPCI Advanced saved Medicare a net ~$344 million in Model Year 5 (2022) alone; about $800 million net across all eight model years — CMS BPCI Advanced evaluation reports (2024; final report 2026)",
+          "label": "BPCI Advanced Net Savings, Model Year 5",
+          "value": "$344M"
+        },
+        {
+          "_key": "s4",
+          "context": "Per-episode spending dropped ~$1,014 (~4%) under BPCI Advanced Year 5 — CMS Evaluation 2023",
+          "label": "Average Per-Episode Spending Reduction",
+          "value": "$1,014"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Mechanics: How a Bundle Is Structured"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Every bundled payment model defines three core elements: the anchor event that starts the clock, the episode window, and the care that is included or excluded. In the CMS Bundled Payments for Care Improvement Advanced (BPCI Advanced) model — the largest federal voluntary bundled payment program, which ran from 2018 until it ended on December 31, 2025 — an episode begins either with an inpatient admission identified by a Medicare Severity-Diagnosis Related Group (MS-DRG) code, called the Anchor Stay, or with a qualifying outpatient procedure in a hospital outpatient department, called the Anchor Procedure. The episode ends 90 days after the patient is discharged or the procedure is completed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The financial engine is retrospective reconciliation. Medicare continues to pay providers their ordinary fee-for-service claims throughout the episode — nobody waits for a single check. At the end of each six-month performance period, CMS totals all non-excluded Medicare claims for each participant's episodes and compares that aggregate with the pre-set target price. If spending is below the target, the participant earns a reconciliation payment (shared savings). If spending exceeds the target, the participant owes a repayment amount. CMS provides preliminary target prices before each model year begins so participants can plan care-delivery changes in advance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Target prices are calculated from historical Medicare claims data for that clinical episode type in the participant's market, risk-adjusted for patient complexity, and trended forward with a discount rate (the \"haircut\") that represents the savings Medicare expects to achieve. The haircut ensures the program generates net savings for the federal government even after reconciliation payments are made to high-performing participants."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Patient is admitted for an inpatient stay (Anchor Stay) or undergoes a qualifying outpatient procedure (Anchor Procedure) at a participating hospital or physician group practice.",
+          "title": "Anchor Event"
+        },
+        {
+          "_key": "step2",
+          "description": "CMS begins tracking all Medicare FFS claims for care related to the clinical episode — hospital, physician, post-acute, home health, readmissions, and outpatient visits.",
+          "title": "Episode Opens"
+        },
+        {
+          "_key": "step3",
+          "description": "The episode window covers the anchor event plus 90 days. Excluded services (e.g., trauma, unrelated hospitalizations) are carved out of the bundle per CMS rules.",
+          "title": "90-Day Follow-Up"
+        },
+        {
+          "_key": "step4",
+          "description": "Twice a year (Jan–Jun and Jul–Dec), CMS tallies aggregate FFS payments for all episodes and compares them to aggregate target prices across the participant's portfolio.",
+          "title": "Performance Period Ends"
+        },
+        {
+          "_key": "step5",
+          "description": "If aggregate spending is below the target price, the participant receives a reconciliation payment. If above, the participant owes a repayment. Quality thresholds must be met to receive any payment.",
+          "title": "Reconciliation"
+        }
+      ],
+      "title": "How a BPCI Advanced Episode Flows"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Who Participates and What They Are Accountable For"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Under BPCI Advanced, two entity types could participate: acute care hospitals (ACHs) and physician group practices (PGPs). A hospital participating as an ACH is accountable for the full 90-day episode cost for every eligible patient admitted. A PGP participates as an episode initiator — responsible for managing costs during the episode triggered by the group's physicians. This distinction matters: hospitals have more leverage over post-acute placement, while physician groups have more direct influence over care protocols and follow-up intensity."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 35 BPCI Advanced clinical episodes span eight clinical service line groups: cardiac care, cardiac procedures, gastrointestinal surgery, gastrointestinal care, neurological care, medical and critical care, spinal procedures, and orthopedics. Participants do not have to take on all 35 — they can select the episode types where they have the most clinical volume, existing care-coordination infrastructure, and confidence in their ability to manage costs. This flexibility encourages participation but also creates selection effects: hospitals tend to choose episode types where they already perform well."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Quality measurement is built into the financial settlement. BPCI Advanced tracks Medicare Spending per Beneficiary (MSPB) composite quality scores and requires participants to submit quality data. Low quality scores can reduce or eliminate reconciliation payments, ensuring that cost-cutting does not come at the expense of patient safety. Participants are also encouraged — but not required — to engage post-acute providers (skilled nursing facilities, home health agencies) as downstream episode partners who share in savings and absorb a portion of any penalties."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "BPCI Advanced (Voluntary)",
+        "points": [
+          "Hospitals and physician groups self-select episode types",
+          "Participants can exit the model with notice",
+          "Selection bias: higher performers more likely to join",
+          "Limited national reach — not all markets represented",
+          "Covers 35 clinical episode types"
+        ]
+      },
+      "right": {
+        "label": "CJR / TEAM Models (Mandatory)",
+        "points": [
+          "All hospitals in selected markets must participate",
+          "No opt-out once finalized by CMS rule",
+          "Eliminates selection bias — reflects true market performance",
+          "CMS's TEAM model began Jan 1, 2026, covering 5 procedure types",
+          "Applies to ~741 hospitals in selected Core-Based Statistical Areas"
+        ]
+      },
+      "title": "Voluntary vs. Mandatory Bundled Payment Models"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Target Price: How CMS Sets the Benchmark"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Setting an accurate target price is the most technically demanding element of any bundled payment program. If the target is too high, providers collect windfall payments without changing behavior. If it is too low, providers lose money on every episode regardless of efficiency gains, and they exit the program. CMS attempts to thread this needle by using three to five years of historical fee-for-service claims for the specific episode type in the participant's region, then applying risk adjustments and a discount that ensures the government retains savings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The target price methodology for BPCI Advanced uses a blend of national and regional data, adjusted for the case-mix complexity of the participant's patient population using hierarchical condition categories (HCCs). High-severity patients receive higher target prices; straightforward cases receive lower ones. CMS also applies a \"stop-loss\" and \"stop-gain\" corridor: no single episode can swing the reconciliation more than a defined dollar cap in either direction, protecting both participants and Medicare from extreme outlier cases."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because target prices are anchored to historical spending, participants who have already reduced episode costs through prior efficiency work start with a lower baseline — a phenomenon sometimes called the \"ratchet effect.\" As participants reduce costs over time, CMS lowers the target price in subsequent model years, requiring continuous improvement just to maintain savings. This dynamic has led some high-performing participants to exit voluntary programs voluntarily once their baseline is compressed, a structural tension that mandatory models are designed to overcome."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4an1",
+      "_type": "analogyBlock",
+      "analogy": "Think of the target price like a par score in golf: it is based on what a skilled player should need to complete the hole, adjusted for the difficulty of the terrain (patient complexity). Finishing under par earns savings; going over means you owe the difference. And once you consistently shoot par, the course committee lowers the expected score next season.",
+      "concept": "Bundled Payment Target Price Mechanics"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Care Transformation: What Providers Actually Change"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The practical care changes driven by bundled payments cluster around three levers: post-acute placement, length of stay, and readmission reduction. Post-acute care — skilled nursing facilities, inpatient rehabilitation, home health — is the single largest driver of episode cost variation for surgical procedures. A hip replacement patient discharged to a skilled nursing facility costs Medicare roughly twice as much over 90 days as the same patient discharged directly home with home health support. Bundled payment participants therefore invest heavily in standardized discharge criteria, preferred SNF networks, and home health partnerships."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinical pathway standardization is the second major lever. When a hospital takes on risk for a hip replacement episode, it has a powerful financial incentive to create and enforce a standard care protocol: pre-operative patient optimization (weight, hemoglobin, diabetes control), standardized implant selection, evidence-based rehabilitation protocols, and scheduled follow-up calls. These protocols reduce variance — the expensive outlier cases that blow up episode budgets — and often improve clinical outcomes simultaneously."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Readmission prevention rounds out the triad. A 90-day episode means that any readmission within three months of the initial procedure falls inside the bundle and adds directly to the participant's cost. Participants invest in post-discharge nurse navigator programs, 24/7 patient hotlines, medication reconciliation, and remote monitoring to catch warning signs before they become emergency department visits. These infrastructure investments require upfront capital, which is part of why BPCI Advanced pays preliminary reconciliation payments — to fund the care-coordination capabilities that drive savings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "Analyses of BPCI Advanced performance in lower-extremity joint replacement (one of the highest-volume episodes in the model) found that per-episode spending declined on average by $1,014 — approximately a 4% reduction — by Model Year 5, while the model as a whole saved Medicare an estimated net $344 million in Model Year 5 (about $800 million net across all eight model years, per the 2026 final evaluation). Quality metrics including readmission and mortality rates remained stable, indicating that cost reductions were achieved without compromising patient safety.\nParticipants who succeeded shared common characteristics: strong surgeon engagement, standardized implant formularies, disciplined SNF referral networks, and nurse navigator programs for post-discharge monitoring. Hospitals that treated bundled payments as a physician engagement strategy — rather than a finance department exercise — consistently outperformed those that did not.",
+      "title": "Bundled Payments for Care Improvement Advanced — Orthopedic Episode Results"
+    },
+    {
+      "_key": "s6h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Future of Bundled Payments: From Voluntary to Mandatory"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s6p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS has moved decisively toward mandatory bundled payment models after learning that voluntary programs attract a self-selected group of already-efficient providers. The Comprehensive Care for Joint Replacement (CJR) model — launched in 2016 as a mandatory program in randomly selected metropolitan statistical areas — was the first federal mandatory bundle and provided critical evidence that bundles can generate savings at scale without quality deterioration. CJR saved Medicare an estimated $63 million between 2016 and 2018."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The next generation mandatory model is the Transforming Episode Accountability Model (TEAM), which CMS launched on January 1, 2026, to run through December 31, 2030. TEAM requires approximately 741 acute care hospitals in selected Core-Based Statistical Areas to accept financial risk for five surgical episode types: lower extremity joint replacement, surgical hip femur fracture treatment, spinal fusion, coronary artery bypass graft, and major bowel procedure. Unlike BPCI Advanced's 90-day window, TEAM episodes end 30 days after discharge, reflecting a sharper focus on the immediate post-acute transition."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Commercial payers have also accelerated their own bundled payment programs independently of CMS. Large self-insured employers — working through coalitions like the Pacific Business Group on Health — negotiate direct bundle contracts with hospital systems for high-volume procedures. The multi-payer environment creates both opportunity (providers can amortize care-coordination infrastructure across multiple payers) and complexity (different episode definitions, target price methodologies, and quality metrics across each payer relationship). Standardization of episode definitions across payers remains one of the field's central operational challenges."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6w1",
+      "_type": "warningBlock",
+      "message": "Bundled payments cover a specific clinical episode, not a patient's entire care. A patient under a bundled payment arrangement for a knee replacement still receives fee-for-service payment for unrelated conditions like diabetes management or a subsequent cardiac event. Do not confuse episode-based bundles with full-risk capitation or population-based payment models, which cover all care for a defined patient population.",
+      "title": "Bundled Payments vs. Global Capitation"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "A bundled payment collapses all claims for a defined clinical episode into a single target price, aligning provider incentives around efficiency and quality rather than volume.",
+        "BPCI Advanced (2018–2025) — the largest federal voluntary bundled payment program — covered 35 clinical episode types across 8 service line groups, with episodes defined as an anchor event plus 90 days of follow-up.",
+        "The financial mechanism is retrospective reconciliation: Medicare pays normal claims throughout the episode, then settles the difference against the target price every six months.",
+        "Target prices are derived from historical claims data, risk-adjusted for patient complexity, and trended with a discount rate that ensures Medicare retains net savings even after paying reconciliation bonuses.",
+        "Post-acute placement, clinical pathway standardization, and readmission prevention are the three primary levers providers pull to reduce episode costs.",
+        "BPCI Advanced saved Medicare a net ~$344 million in Model Year 5 alone and about $800 million net across its eight model years, with roughly $1,000 lower spending per episode, with quality metrics remaining stable.",
+        "CMS is moving toward mandatory models: TEAM began January 1, 2026, covering five surgical episode types at approximately 741 hospitals in selected markets."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "BPCI Advanced episodes extend 90 days after the patient is discharged from the Anchor Stay or after the Anchor Procedure is completed in an outpatient setting. This 90-day window is designed to capture the full cost of post-acute recovery, where spending variation is greatest and coordination opportunities are highest.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "At the time of hospital discharge"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": false,
+          "text": "30 days after the anchor event is completed"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": true,
+          "text": "90 days after discharge from the anchor stay or completion of the anchor procedure"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "At the end of the calendar year in which the anchor event occurred"
+        }
+      ],
+      "question": "Under BPCI Advanced, when does an episode of care end?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] CMS: BPCI Advanced Model Overview — https://www.cms.gov/priorities/innovation/innovation-models/bpci-advanced — Episode structure, episode types, and model mechanics"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] CMS BPCI Advanced Model Year 5 Fact Sheet (November 2021) — https://www.cms.gov/priorities/innovation/media/document/bpci-advanced-model-overview-fact-sheet-my5 — Model Year 5 participation and clinical episode service line groups"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CMS BPCI Advanced Fifth Annual Report (2024) — https://www.cms.gov/priorities/innovation/data-and-reports/2024/bpci-adv-ar5-aag — $344M savings and $1,014 per-episode reduction by Year 5"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] HFMA: How CMS Sets the Target Price for Bundles Under BPCI-A — https://www.hfma.org/payment-reimbursement-and-managed-care/bundled-payment/how-cms-sets-the-target-price-for-bundles-under-bpcia/ — Target price methodology, risk adjustment, and discount rate"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] CMS: TEAM (Transforming Episode Accountability Model) — https://www.cms.gov/priorities/innovation/innovation-models/team-model — TEAM launch date, 5 procedure types, 741 hospitals, 2026–2030"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] NEJM: Two-Year Evaluation of Mandatory Bundled Payments for Joint Replacement — https://www.nejm.org/doi/full/10.1056/NEJMsa1809010 — CJR savings of $63M between 2016 and 2018"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "value-based-care",
+  "order": 9,
+  "slug": {
+    "_type": "slug",
+    "current": "bundled-payment-mechanics"
+  },
+  "title": "Episode-Based Bundled Payments: How They Work"
+}

@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import { CheckCircle, AlertTriangle, XCircle, TrendingDown, BadgeCheck, FlaskConical, Info } from "lucide-react";
 import { HOSPITALS as ACT167_HOSPITALS } from "@/app/vermont-act-167/simulator/data";
+import { GMCH, GMCH_LABEL, GMCH_BADGE, GMCH_DISCLAIMER } from "@/lib/data/green-mountain-community-hospital";
 
 type PeerGroup = "cah" | "rural_pps" | "urban_community" | "urban_tertiary";
 
@@ -104,6 +105,8 @@ interface Preset {
   hr1PhaseYear?: number | null;
   /** Years elapsed since the transformation investment. null = not modeled. */
   transformYears?: number | null;
+  /** Fictional example (book Appendix H's Green Mountain Community Hospital). */
+  fictional?: boolean;
 }
 
 // ─── REFERENCE-BASED PRICING (Act 68) ─────────────────────────────────────────
@@ -481,6 +484,26 @@ const VERMONT_PRESETS: Preset[] = [
     sourced: false,
     transformYears: 3, // fully ramped
   },
+  {
+    // Appendix H's fictional worked example — median of the 8 CAH rows above.
+    // See lib/data/green-mountain-community-hospital.ts for the derivation.
+    id: "gmch_example",
+    label: GMCH_LABEL,
+    badge: GMCH_BADGE,
+    peerGroup: GMCH.peerGroup,
+    totalRevenue: GMCH.totalRevenue,
+    operatingExpense: GMCH.operatingExpense,
+    cashOnHand: GMCH.cashOnHand,
+    annualDebtService: GMCH.annualDebtService,
+    currentAssets: GMCH.currentAssets,
+    currentLiabilities: GMCH.currentLiabilities,
+    laborCost: GMCH.laborCost,
+    medicaidCutPct: 0,
+    volumeChangePct: 0,
+    travelNurseIncreasePct: 0,
+    sourced: false, // keeps it out of REAL_HOSPITALS / system aggregates
+    fictional: true,
+  },
 ];
 
 // ─── MULTI-YEAR PROJECTION MODE ───────────────────────────────────────────────
@@ -855,6 +878,7 @@ export default function HospitalFinancialScorecard() {
               (GMCB charts these only as ratios, never as dollar figures) — see code comments for method.
               <FlaskConical size={9} className="inline text-amber-600 ml-1.5 mr-0.5 -mt-0.5" />
               Stress-test scenarios are modeled, not hospital filings.
+              {" "}{GMCH_LABEL} is the book&apos;s fictional Appendix H example (median of the 8 Vermont CAHs).
             </p>
           </div>
 
@@ -1139,7 +1163,13 @@ export default function HospitalFinancialScorecard() {
         {/* ── SCORECARD ── */}
         <div className="lg:col-span-3 p-6 space-y-5 bg-slate-50/50">
 
-          {activePresetData && !activePresetData.sourced && (
+          {activePresetData?.fictional && (
+            <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-amber-100 border border-amber-300 text-amber-800 text-[11px] font-bold">
+              <FlaskConical size={13} className="shrink-0" />
+              {GMCH_DISCLAIMER}
+            </div>
+          )}
+          {activePresetData && !activePresetData.sourced && !activePresetData.fictional && (
             <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-amber-100 border border-amber-300 text-amber-800 text-[11px] font-bold">
               <FlaskConical size={13} className="shrink-0" />
               ESTIMATED SCENARIO — not a hospital filing. This is a modeled stress test built on the

@@ -1,0 +1,98 @@
+{
+  "id": "d4e80633-4a47-4e51-875b-9e6b043136c5",
+  "slug": "medicaid-history-origins",
+  "sanity_slug": "medicaid-history-origins",
+  "content_blocks": [
+    {
+      "body": "On July 30, 1965, President Lyndon Johnson signed the Social Security Amendments in Independence, Missouri — with Harry Truman seated beside him. The legislation created two programs at once: Medicare (Title XVIII), covering the elderly regardless of income, and Medicaid (Title XIX), covering certain low-income populations through a federal-state partnership.\n\nThe distinction mattered politically. Medicare was framed as earned insurance — workers paid in, workers got benefits. Medicaid was framed as welfare — means-tested assistance for the deserving poor. That framing has shaped every policy debate about the program since.",
+      "type": "text",
+      "heading": "Two programs, one moment"
+    },
+    {
+      "type": "timeline",
+      "items": [
+        {
+          "body": "Medicaid created as joint federal-state program. Initial enrollment: ~4 million people.",
+          "year": "1965",
+          "title": "Title XIX enacted",
+          "pillar": "policy"
+        },
+        {
+          "body": "Supplemental Security Income created; Medicaid automatically linked to SSI recipients in most states.",
+          "year": "1972",
+          "title": "SSI integration",
+          "pillar": "policy"
+        },
+        {
+          "body": "Congress mandates coverage for pregnant women and children up to 133% FPL, decoupling Medicaid from welfare cash assistance.",
+          "year": "1986–1990",
+          "title": "Mandatory expansions",
+          "pillar": "policy"
+        },
+        {
+          "body": "State Children's Health Insurance Program (Title XXI) created, covering children in families above Medicaid limits.",
+          "year": "1997",
+          "title": "CHIP created",
+          "pillar": "policy"
+        },
+        {
+          "body": "ACA expands Medicaid to all adults under 138% FPL; federal government pays 100% of expansion costs through 2016, then 90% permanently.",
+          "year": "2010",
+          "title": "ACA enacted",
+          "pillar": "policy"
+        },
+        {
+          "body": "Supreme Court rules ACA Medicaid expansion is effectively optional for states. 10 states still have not expanded as of 2025.",
+          "year": "2012",
+          "title": "NFIB v. Sebelius",
+          "pillar": "policy"
+        },
+        {
+          "body": "Post-COVID continuous enrollment protection ends; states begin redetermining eligibility for ~90 million enrollees.",
+          "year": "2023",
+          "title": "Unwinding begins",
+          "pillar": "policy"
+        }
+      ],
+      "heading": "Medicaid milestones"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "People enrolled in Medicaid/CHIP (2024)",
+          "value": "92M",
+          "source": "CMS"
+        },
+        {
+          "label": "Federal + state Medicaid spending (FY2023)",
+          "value": "$871B",
+          "source": "CMS"
+        },
+        {
+          "label": "Of all US births covered by Medicaid",
+          "value": "40%",
+          "source": "KFF"
+        },
+        {
+          "label": "Of nursing home residents covered by Medicaid",
+          "value": "63%",
+          "source": "KFF"
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "caption": "Medicaid at a glance — Kaiser Family Foundation overview (~7 min)",
+      "videoId": "3cBhsHb4Sp4",
+      "mediaType": "youtube",
+      "durationSeconds": 420
+    },
+    {
+      "body": "Each state runs its own Medicaid program within federal guidelines. Vermont's program (Green Mountain Care) looks very different from Texas's. Eligibility rules, covered services, payment rates, and delivery systems all vary. When someone says 'Medicaid,' they often mean something specific to their state.",
+      "type": "callout",
+      "heading": "Medicaid is not one program",
+      "variant": "info"
+    }
+  ]
+}

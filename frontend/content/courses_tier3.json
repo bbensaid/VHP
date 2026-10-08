@@ -14028,8 +14028,8 @@
                 "eyebrow": "Real-World Example",
                 "title": "Vanderbilt University Medical Center \u2014 PREDICT Program",
                 "body": "Vanderbilt's Pharmacogenomic Resource for Enhanced Decisions in Care and Treatment (PREDICT) program pre-emptively genotyped more than 14,000 patients for CYP variants relevant to commonly prescribed drugs. Genomic results were embedded directly into the EHR, generating clinical decision support alerts when a provider attempted to prescribe a drug whose metabolism would be affected by that patient's variant.",
-                "outcome": "Among patients with actionable CYP2C19 variants, the program increased prescribing of alternative antiplatelet agents from 4.5% to 72.9%, demonstrating that pre-emptive genotyping with EHR integration can successfully redirect prescribing before harm occurs.",
-                "source": "Pulley et al., Clinical Pharmacology & Therapeutics, 2012; Vanderbilt PREDICT Program reports."
+                "outcome": "Among 2,676 genotyped patients, 514 (19.2%) carried a CYP2C19 variant affecting clopidogrel; within 12 months, 57.6% of poor metabolizers and 33.2% of intermediate metabolizers had been switched to an alternative antiplatelet drug, and genotype was the strongest predictor of switching — showing that pre-emptive genotyping with EHR integration can redirect prescribing before harm occurs.",
+                "source": "Pulley et al., Clinical Pharmacology & Therapeutics, 2012; Peterson et al., Clinical Pharmacology & Therapeutics, 2016."
               },
               {
                 "_type": "block",
@@ -14181,7 +14181,7 @@
                 "title": "OneCare Vermont and Population Health Analytics",
                 "body": "OneCare Vermont, the state's accountable care organization, manages care for approximately 190,000 Vermonters under the all-payer model. OneCare's population health analytics platform tracks utilization patterns and outcome metrics across its attributed population. As pharmacogenomic testing data becomes linkable to claims and EHR data, OneCare is positioned to evaluate precision medicine interventions at the population level \u2014 assessing whether specific genomic screening programs reduce hospitalizations or adverse drug events across its patient panel.",
                 "outcome": "Vermont's integrated data infrastructure \u2014 including the Vermont Health Information Exchange \u2014 makes genomic-clinical data linkage more feasible here than in states lacking comparable health IT coordination.",
-                "source": "OneCare Vermont 2025 Annual Report; Vermont Health Information Exchange overview."
+                "source": "OneCare Vermont wind-down announcement (November 2024), reported by VTDigger; Vermont Health Information Exchange overview."
               },
               {
                 "_type": "statGrid",
@@ -14191,8 +14191,8 @@
                   {
                     "_key": "ae7sg3s1",
                     "value": "$528B",
-                    "label": "Estimated annual US cost of ineffective drug prescribing",
-                    "context": "A significant portion of this cost is attributable to drugs prescribed to patients who, due to genetic variation, cannot respond to or safely metabolize them. Source: Personalized Medicine Coalition, 2023.",
+                    "label": "Estimated annual US cost of non-optimized medication therapy (2016)",
+                    "context": "Illness and death from non-optimized medication therapy cost an estimated $528.4 billion in 2016 — about 16% of US health spending. Genetic variation in drug response is one contributor pharmacogenomics can address. Source: Watanabe, McInnis & Hirsch, Annals of Pharmacotherapy, 2018.",
                     "trend": "down"
                   },
                   {
@@ -14204,9 +14204,9 @@
                   },
                   {
                     "_key": "ae7sg3s3",
-                    "value": "2.3M",
-                    "label": "Genomic tests ordered annually in the US (estimated)",
-                    "context": "Genomic test utilization has grown at roughly 15% annually since 2018, driven by oncology, hereditary disease screening, and pharmacogenomics. Source: Personalized Medicine Coalition Annual Report 2024.",
+                    "value": "~75,000",
+                    "label": "Genetic tests on the US market",
+                    "context": "Roughly 75,000 genetic tests were on the US market, with about ten new tests entering every day. Source: Phillips et al., Health Affairs, 2018.",
                     "trend": "up"
                   }
                 ]
@@ -15768,23 +15768,23 @@
                 "stats": [
                   {
                     "_key": "m3st0007",
-                    "value": "$528B",
+                    "value": "$760B–$935B",
                     "label": "Annual waste in U.S. healthcare (2019 estimate)",
-                    "context": "A JAMA study estimated $760B\u2013$935B in annual healthcare waste, with $528B attributable to failure of care delivery and care coordination \u2014 areas where PM can intervene. (Shrank et al., JAMA 2019)",
+                    "context": "Shrank et al. (JAMA, 2019) estimated $760B\u2013$935B in annual waste \u2014 about a quarter of US health spending \u2014 including $102B\u2013$166B from failures of care delivery and $27B\u2013$78B from failures of care coordination, the domains precision medicine can address.",
                     "trend": "neutral"
                   },
                   {
                     "_key": "m3st0008",
-                    "value": "40%",
-                    "label": "Cancer patients who receive ineffective first-line chemo",
-                    "context": "An estimated 40% of cancer patients receive at least one regimen that fails, driving repeated treatment costs and diminished quality of life. (ASCO Annual Report, 2023)",
+                    "value": "$76B–$101B",
+                    "label": "Annual cost of overtreatment and low-value care",
+                    "context": "The same analysis put overtreatment and low-value care — including treatments that do not work for the patient receiving them — at $75.7B–$101.2B a year. (Shrank et al. (JAMA, 2019))",
                     "trend": "neutral"
                   },
                   {
                     "_key": "m3st0009",
-                    "value": "5x",
-                    "label": "Cost differential: Stage I vs. Stage IV cancer treatment",
-                    "context": "Stage IV cancers cost an average of 5 times more to treat than Stage I cancers of the same type, making early detection an economic as well as clinical imperative. (NCI Surveillance, Epidemiology, and End Results, 2024)",
+                    "value": "1.6x",
+                    "label": "Cost differential: Stage I/II vs. Stage IV breast cancer treatment",
+                    "context": "Average insurer-allowed costs in the year after diagnosis were $82,121 for stage I/II breast cancer versus $134,682 for stage IV, making early detection an economic as well as clinical imperative. (Blumen et al., American Health & Drug Benefits, 2016)",
                     "trend": "neutral"
                   }
                 ]
@@ -16793,8 +16793,8 @@
                 "_type": "exampleBlock",
                 "_key": "m4ex0001",
                 "eyebrow": "Real-World Example",
-                "title": "Ambry Genetics: Tracking VUS Reclassification Over Time",
-                "body": "Ambry Genetics, a major clinical genomics laboratory, published a landmark study tracking the reclassification of VUSs in hereditary cancer genes (BRCA1, BRCA2, and others) over a 5-year period. Of VUSs identified between 2012\u20132017, approximately 38% were subsequently reclassified \u2014 and the vast majority were reclassified as benign or likely benign rather than pathogenic.",
+                "title": "Tracking VUS Reclassification Over Time",
+                "body": "Mersch and colleagues examined hereditary cancer testing of 1.45 million people at a single large commercial laboratory between 2006 and 2016. Of 26,670 unique variants of uncertain significance, 7.7% were reclassified during follow-up \u2014 and 91.2% of those were downgraded to benign or likely benign rather than upgraded to pathogenic. Because many VUSs recur across patients, 24.9% of all VUS results reported to individuals were eventually reclassified.",
                 "outcome": "Findings reinforced clinical guidelines that VUS results should not drive preventive surgery or intensified surveillance, and demonstrated the critical importance of laboratory re-contact programs to notify patients of reclassifications.",
                 "source": "Mersch J et al., 'Prevalence of Variant Reclassification Following Hereditary Cancer Genetic Testing,' JAMA 2018"
               },
@@ -16971,9 +16971,9 @@
                 "_key": "m4ex0002",
                 "eyebrow": "Real-World Example",
                 "title": "Vanderbilt University Medical Center: PREDICT Program \u2014 First Large-Scale PGx EHR Integration",
-                "body": "Vanderbilt's PREDICT (Pharmacogenomic Resource for Enhanced Decisions in Care and Treatment) program, launched in 2010, pre-emptively genotyped patients and embedded PGx results into the Epic EHR before they were needed. When a physician prescribed an affected drug, a real-time CDS alert surfaced the patient's genotype and dosing recommendation. Over 14,000 patients were enrolled in the first phase.",
-                "outcome": "CDS alerts fired appropriately in 96% of relevant prescribing encounters, and the program demonstrated that pre-emptive PGx testing with EHR integration was technically feasible and clinically effective at scale \u2014 a model replicated by over 60 health systems including UVM Medical Center.",
-                "source": "Dunnenberger HM et al., 'Preemptive Clinical Pharmacogenomics Testing: Mayo-Vanderbilt Collaborative Research Program,' Mayo Clinic Proceedings 2015"
+                "body": "Vanderbilt's PREDICT (Pharmacogenomic Resource for Enhanced Decisions in Care and Treatment) program, launched in 2010, pre-emptively genotyped patients and embedded PGx results into the Epic EHR before they were needed. When a physician prescribed an affected drug, a real-time CDS alert surfaced the patient's genotype and dosing recommendation. Almost 15,000 patients had been genotyped through PREDICT as part of routine care by the mid-2010s.",
+                "outcome": "The program demonstrated that pre-emptive PGx testing with EHR integration was feasible in routine care and changed prescribing: in a 2016 analysis of 2,676 genotyped patients, CYP2C19 status was the strongest predictor of switching away from clopidogrel.",
+                "source": "Pulley JM et al., Clinical Pharmacology & Therapeutics, 2012; Peterson JF et al., Clinical Pharmacology & Therapeutics, 2016"
               },
               {
                 "_type": "block",
@@ -17704,23 +17704,23 @@
                 "stats": [
                   {
                     "_key": "m5st002a",
-                    "value": "~7%",
-                    "label": "U.S. population with CYP2C19 poor metabolizer status",
-                    "context": "Varies by ancestry: ~2-3% of Europeans, ~15-20% of East Asians. These patients do not effectively activate clopidogrel. (CPIC Guidelines, 2022)",
+                    "value": "2–14%",
+                    "label": "CYP2C19 poor metabolizers, by ancestry",
+                    "context": "Varies by ancestry: about 2% of people of European ancestry, 4% of African Americans, and 14% of Chinese individuals are poor metabolizers who do not effectively activate clopidogrel. (NCBI Medical Genetics Summaries: Clopidogrel Therapy and CYP2C19 Genotype)",
                     "trend": "neutral"
                   },
                   {
                     "_key": "m5st002b",
                     "value": "95%+",
                     "label": "Abacavir hypersensitivity reactions prevented by HLA-B*5701 screening",
-                    "context": "Prospective HLA-B*5701 screening before abacavir prescribing has virtually eliminated this life-threatening drug reaction. (Lancet, 2008)",
+                    "context": "Prospective HLA-B*5701 screening before abacavir prescribing has virtually eliminated this life-threatening drug reaction. (Mallal et al., New England Journal of Medicine, 2008)",
                     "trend": "up"
                   },
                   {
                     "_key": "m5st002c",
                     "value": "99%",
                     "label": "People with at least one actionable pharmacogenomic variant",
-                    "context": "A 2022 CPIC analysis found that virtually everyone has at least one clinically actionable pharmacogenomic variant when tested across a panel of major genes. (CPIC, 2022)",
+                    "context": "In 487,409 UK Biobank participants, 99.5% carried at least one genotype predicting an atypical response to a drug covered by CPIC guidance. (McInnes et al., Clinical Pharmacology & Therapeutics, 2021)",
                     "trend": "neutral"
                   }
                 ]
@@ -18378,22 +18378,22 @@
                   {
                     "_key": "m6st001a",
                     "value": "78%",
-                    "label": "GWAS participants of European ancestry (2016)",
-                    "context": "A landmark 2016 analysis found that 78% of genome-wide association study participants were of European ancestry. By 2022 this had fallen, but European ancestry individuals remained dramatically overrepresented. (Mills & Rahal, Nature Reviews Genetics, 2019)",
+                    "label": "GWAS participants of European ancestry (2018)",
+                    "context": "As of 2018, 78% of genome-wide association study participants were of European ancestry, 10% Asian, and 2% African. (Sirugo, Williams & Tishkoff, Cell, 2019)",
                     "trend": "down"
                   },
                   {
                     "_key": "m6st001b",
-                    "value": "16%",
-                    "label": "Global population share that is European ancestry",
-                    "context": "People of European ancestry represent roughly 16% of the global population but historically made up the vast majority of genomic research participants \u2014 a dramatic mismatch between data and humanity. (UN Population Division, 2023)",
+                    "value": "2%",
+                    "label": "GWAS participants of African ancestry (2018)",
+                    "context": "People of African ancestry \u2014 the most genetically diverse population on Earth \u2014 made up about 2% of GWAS participants as of 2018. (Sirugo, Williams & Tishkoff, Cell, 2019)",
                     "trend": "neutral"
                   },
                   {
                     "_key": "m6st001c",
-                    "value": "4x",
-                    "label": "Higher VUS rate in non-European BRCA testing",
-                    "context": "Black women receiving BRCA testing have historically received variants of uncertain significance at approximately 4 times the rate of white women, partly because interpretation databases were built on European ancestry data. (Ricks-Santi et al., 2017)",
+                    "value": "4.5x",
+                    "label": "PRS accuracy gap, European vs. African ancestry",
+                    "context": "Polygenic scores built from UK Biobank data predicted disease risk about 4.5 times more accurately for people of European ancestry than for people of African ancestry. (Martin et al., Nature Genetics, 2019)",
                     "trend": "down"
                   }
                 ]
@@ -18441,7 +18441,7 @@
                   {
                     "_type": "span",
                     "_key": "m6spn009",
-                    "text": "A 2019 study in Cell found that PRS trained on European populations had substantially lower predictive accuracy when applied to non-European populations \u2014 and that the gap was largest for individuals of African ancestry, who were farthest from the training population genetically. Using a PRS with known poor accuracy for a patient of African ancestry without disclosing this limitation is a form of health inequity embedded in the technology itself.",
+                    "text": "A 2019 study in Nature Genetics (Martin et al.) found that polygenic scores built from predominantly European data predicted risk about 4.5 times more accurately for people of European ancestry than for people of African ancestry, who are genetically farthest from the training population. Using a PRS with known poor accuracy for a patient of African ancestry without disclosing this limitation is a form of health inequity embedded in the technology itself.",
                     "marks": []
                   }
                 ],
@@ -18964,7 +18964,7 @@
                   {
                     "_type": "span",
                     "_key": "m6spn040",
-                    "text": "Rural patients with cancer face documented disparities in receiving tumor genomic profiling \u2014 the first step in precision oncology. A study published in JNCI Cancer Spectrum in 2023 found that rural cancer patients were significantly less likely to receive comprehensive genomic profiling than urban patients, even after controlling for insurance status, cancer stage, and cancer type. This means rural patients are less likely to be identified as candidates for targeted therapies they might benefit from.",
+                    "text": "Rural patients with cancer have historically had less access to tumor genomic profiling \u2014 the first step in precision oncology \u2014 because testing and molecular expertise concentrate in academic centers. Programs that bring testing to community practices can close that gap: a 2024 study in JNCI Cancer Spectrum of 1,258 patients in the Maine Cancer Genomics Initiative, which deployed tumor testing through community and rural oncology practices, found that rurality was not associated with receipt of genome-matched treatment. Access, not geography itself, is the barrier.",
                     "marks": []
                   }
                 ],

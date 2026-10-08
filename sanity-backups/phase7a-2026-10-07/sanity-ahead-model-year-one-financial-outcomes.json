@@ -1,0 +1,408 @@
+{
+  "_createdAt": "2026-03-07T15:19:10Z",
+  "_id": "ahead-model-year-one-financial-outcomes",
+  "_rev": "u6HIGXCWiHyy7dtg52GV1d",
+  "_type": "policyAnalysis",
+  "_updatedAt": "2026-10-08T02:01:33Z",
+  "body": [
+    {
+      "_key": "ahead-58",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-59",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS's AHEAD Model is the federal government's most ambitious bet on hospital global budgets — a voluntary program enlisting whole states to put their hospitals on fixed budgets and align all payers behind controlling total cost of care. It is the national vehicle through which the global-budgeting approach pioneered by Maryland is being spread. This analysis examines what AHEAD is, the states participating, the global-budget mechanics it requires, what early experience suggests, and why it represents the leading edge of payment reform."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ahead-60",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-61",
+          "_type": "span",
+          "marks": [],
+          "text": "What AHEAD Is"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "ahead-62",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-63",
+          "_type": "span",
+          "marks": [],
+          "text": "AHEAD — States Advancing All-Payer Health Equity Approaches and Development — is a voluntary CMS Innovation Center model in which participating states take accountability for their total cost of care and population health while implementing hospital global budgets across payers. The goals are explicit: curb health-care cost growth, improve population health, and advance health equity, by aligning Medicare, Medicaid, and commercial payers behind a common framework and putting hospitals on predictable fixed budgets rather than volume-based fee-for-service (CMS; NASHP). It is, in essence, an attempt to scale the Maryland all-payer global-budget model to other states under federal sponsorship — the most direct federal endorsement to date that global budgeting is the future of hospital payment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ahead-64",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-65",
+          "_type": "span",
+          "marks": [],
+          "text": "The model runs through December 31, 2035, giving participating states a long runway to build and prove the approach — a recognition that transforming a state's entire hospital-payment system is a multi-year undertaking that cannot be rushed. This long horizon distinguishes AHEAD from shorter demonstration models and signals CMS's seriousness about global budgeting as a durable direction rather than a quick experiment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ahead-66",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-67",
+          "_type": "span",
+          "marks": [],
+          "text": "The Participating States"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "ahead-68",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-69",
+          "_type": "span",
+          "marks": [],
+          "text": "AHEAD now has five state participants across three cohorts: Maryland (Cohort 1, building on its mature existing model), Connecticut and Hawaii (Cohort 2), and Rhode Island and New York (Cohort 3); Vermont signed as a Cohort 2 state in January 2025 but withdrew in July 2026. Maryland began in January 2026, and after CMS's September 2025 changes the performance period for Cohorts 2 and 3 begins January 1, 2028, and an opportunity for up to two additional states to join in July 2026 for performance starting in 2028 or 2029 (CMS). The roster is telling: it pairs Maryland (the global-budget pioneer) with states newer to the approach — a mix of proven practitioners and first-time adopters that will generate comparative evidence about how transferable the Maryland model really is."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ahead-70",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-71",
+          "_type": "span",
+          "marks": [],
+          "text": "AHEAD is the federal vehicle for spreading hospital global budgets nationwide — five states (Maryland, Connecticut, Hawaii, Rhode Island, New York) committing to put hospitals on fixed budgets and align all payers, running through 2035. It is CMS's clearest bet that global budgeting is the future of hospital payment."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "ahead-72",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-73",
+          "_type": "span",
+          "marks": [],
+          "text": "The Global-Budget Mechanics"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "ahead-74",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-75",
+          "_type": "span",
+          "marks": [],
+          "text": "AHEAD's requirements are concrete and escalating, which is what makes it a real test rather than an aspiration. Participating states must implement a Medicaid hospital global budget by the end of the first performance year and have at least one commercial payer participating in hospital global budgets by the start of the second — forcing the multi-payer alignment that is global budgeting's hardest requirement. On the Medicare side, a minimum of 10% of a state's (or sub-state region's) Medicare fee-for-service hospital net patient revenue must be under a global budget initially, rising to 30% by the fourth performance year (CMS). States are held accountable for total-cost-of-care and quality targets across all payers, so the budgets come with outcome obligations, not just spending caps."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ahead-76",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-77",
+          "_type": "span",
+          "marks": [],
+          "text": "These escalating thresholds are the model's discipline. By requiring Medicaid global budgets quickly, commercial participation soon after, and a rising share of Medicare revenue under budget over time, AHEAD forces states to actually build the all-payer alignment that global budgeting requires rather than dabbling. The 10%-to-30% Medicare ramp in particular ensures the model grows from a pilot-scale toehold toward a meaningful share of hospital revenue — enough to genuinely test whether global budgets control cost and stabilize hospitals at scale."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ahead-78",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-79",
+          "_type": "span",
+          "marks": [],
+          "text": "How It Differs From the ACO Approach"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "ahead-80",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-81",
+          "_type": "span",
+          "marks": [],
+          "text": "AHEAD represents a meaningful philosophical departure from the accountable-care-organization model that has dominated value-based care for a decade. ACOs are an incentive overlay: they leave fee-for-service in place and reward providers for managing total cost against a benchmark, nudging behavior while the underlying volume-based payment continues. AHEAD's hospital global budgets go further — they replace the fee-for-service base for hospitals with fixed budgets, changing the payment chassis rather than overlaying incentives on it. Where an ACO asks providers to manage cost within a system that still pays per service, a global budget removes the per-service incentive entirely by guaranteeing revenue regardless of volume."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ahead-82",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-83",
+          "_type": "span",
+          "marks": [],
+          "text": "This distinction matters because it addresses a limit of the ACO model: ACOs can nudge a hospital toward efficiency but cannot fix the underlying problem of a hospital whose revenue depends on volume in a declining market. Global budgets address that directly. AHEAD is thus best understood as the next evolution of value-based payment — moving from the ACO's incentive overlay toward a more fundamental restructuring of how hospitals are paid, and pairing it with the all-payer alignment and total-cost-of-care accountability that the ACO model pursues but in a more binding form. It reflects a growing conclusion, visible also in Vermont's Act 167, that the ACO approach, while valuable, is not sufficient for hospitals facing structural rather than behavioral problems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ahead-84",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-85",
+          "_type": "span",
+          "marks": [],
+          "text": "What Early Experience Suggests"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "ahead-86",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-87",
+          "_type": "span",
+          "marks": [],
+          "text": "AHEAD is young — Maryland entered in January 2026 and Cohorts 2 and 3 begin performance on January 1, 2028 — so hard outcome data is not yet available, and any claims of definitive 'year-one results' would be premature. What can be said rests on the underlying evidence the model is built on: Maryland's mature global-budget system, on which AHEAD is modeled, demonstrated real Medicare savings and slowed hospital spending growth, and Pennsylvania's rural global-budget model showed revenue stability that helped sustain fragile hospitals. AHEAD is a bet that this evidence transfers to other states, and its early period will test exactly that — whether states without Maryland's decades of experience can stand up functioning global budgets and achieve similar results."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ahead-88",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-89",
+          "_type": "span",
+          "marks": [],
+          "text": "The honest framing is that AHEAD's value will be known only over years, and its early challenges are likely to be operational: building the budget-setting capacity, securing commercial-payer participation (the hardest part), and managing the transition without destabilizing hospitals. The states that succeed will be those that treat the escalating requirements as a forcing function for serious infrastructure-building; the risk is that some find the multi-payer alignment harder than anticipated and stall. Either outcome is informative, which is the point of running the model across diverse states."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ahead-90",
+      "_type": "code",
+      "code": "[{\"Element\":\"What\",\"Detail\":\"Voluntary CMS state total-cost-of-care model with all-payer hospital global budgets\"},{\"Element\":\"States\",\"Detail\":\"Maryland, Connecticut, Hawaii, Rhode Island, New York (3 cohorts; Vermont withdrew July 2026)\"},{\"Element\":\"Timeline\",\"Detail\":\"Through Dec 31, 2035; Maryland from 2026, Cohorts 2-3 performance from Jan 1, 2028\"},{\"Element\":\"Requirements\",\"Detail\":\"Medicaid global budget by PY1; commercial by PY2; 10%->30% of Medicare FFS NPR\"}]",
+      "title": "The AHEAD Model"
+    },
+    {
+      "_key": "ahead-91",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-92",
+          "_type": "span",
+          "marks": [],
+          "text": "What to Watch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "ahead-93",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-94",
+          "_type": "span",
+          "marks": [],
+          "text": "Key signals: whether participating states successfully implement Medicaid and commercial global budgets on the required timeline, especially the hard commercial-payer alignment; whether early cost and quality results validate the transfer of Maryland's experience to other states; whether the additional-states window (July 2026) attracts more participants, indicating broader confidence; whether other states follow Vermont, which withdrew in July 2026 to pursue hospital global budgets under its own state law (Act 68); and whether AHEAD becomes the template for a broader national shift to global budgeting or reveals limits that keep the approach confined to a few committed states. AHEAD is the experiment that will largely determine whether global budgeting scales beyond Maryland."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ahead-95",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-96",
+          "_type": "span",
+          "marks": [],
+          "text": "Bottom Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "ahead-97",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-98",
+          "_type": "span",
+          "marks": [],
+          "text": "The AHEAD Model is the federal government's vehicle for spreading hospital global budgets, enlisting five states to put hospitals on fixed budgets and align all payers behind controlling total cost of care, running through 2035 with escalating requirements that force real multi-payer alignment rather than dabbling. It is CMS's clearest bet that the global-budgeting approach proven in Maryland is the future of hospital payment, and it is structured as a genuine test — diverse states, concrete thresholds, long horizon. Hard outcome data is not yet available and premature 'year-one' claims should be discounted; AHEAD's value will be known over years, and its early challenges will be operational, above all the difficult work of securing commercial-payer participation. As the leading edge of payment reform, AHEAD is the experiment to watch: its success would mark the beginning of a national shift away from fee-for-service hospital payment, while its struggles would reveal how hard that shift is to achieve outside the few states with the will and capacity to pursue it. For health systems in participating states, the strategic imperative is to engage early and build the capabilities global budgeting rewards — predictable-revenue management, total-cost-of-care accountability, and population health — rather than treating AHEAD as a distant policy experiment, because the states that committed to it have signaled that fixed budgets are where their hospital payment is heading regardless of any single system's preference."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ahead-99",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-100",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "ahead-102",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-103",
+          "_type": "span",
+          "marks": [
+            "ahead-101"
+          ],
+          "text": "CMS — AHEAD (States Advancing All-Payer Health Equity Approaches and Development) Model"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "ahead-101",
+          "_type": "link",
+          "href": "https://www.cms.gov/priorities/innovation/innovation-models/ahead"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "ahead-105",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-106",
+          "_type": "span",
+          "marks": [
+            "ahead-104"
+          ],
+          "text": "CMS — AHEAD Overview Fact Sheet (states, cohorts, requirements)"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "ahead-104",
+          "_type": "link",
+          "href": "https://www.cms.gov/files/document/ahead-overview-fs.pdf"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "ahead-108",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-109",
+          "_type": "span",
+          "marks": [
+            "ahead-107"
+          ],
+          "text": "NASHP — Thinking Ahead on the AHEAD Model: Hospital Global Budgets"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "ahead-107",
+          "_type": "link",
+          "href": "https://nashp.org/thinking-ahead-on-the-ahead-model-hospital-global-budgets/"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "ahead-111",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ahead-112",
+          "_type": "span",
+          "marks": [
+            "ahead-110"
+          ],
+          "text": "Milliman — What's CMS' AHEAD Model? Considerations for states interested in TCOC"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "ahead-110",
+          "_type": "link",
+          "href": "https://www.milliman.com/en/insight/whats-cms-ahead-model-state-agencies-interested-in-tcoc"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": "Value-Based Care Models",
+  "chapterRef": "6",
+  "impactLevel": "Critical",
+  "pillar": "Economics",
+  "publishedAt": "2026-02-08T09:00:00Z",
+  "slug": {
+    "current": "ahead-model-year-one-financial-outcomes"
+  },
+  "status": "Active",
+  "summary": "CMS's AHEAD Model is the federal vehicle for spreading hospital global budgets — five states (Maryland, Connecticut, Hawaii, Rhode Island, New York) committing to put hospitals on fixed budgets and align all payers behind total cost of care, running through 2035 with escalating requirements (Medicaid global budget by PY1, 10%->30% of Medicare FFS NPR). This analysis covers what AHEAD is, the mechanics, why early 'results' are premature, and why it's the leading edge of payment reform.",
+  "title": "AHEAD Model Year One: Early Financial Outcomes and the Lessons Rural Hospital CFOs Cannot Afford to Miss"
+}

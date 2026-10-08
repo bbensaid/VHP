@@ -1,0 +1,342 @@
+{
+  "_createdAt": "2026-05-27T19:21:49Z",
+  "_id": "academyModule-vbc-aco-medicaid",
+  "_rev": "Su0qdAc2uILlQULAsi4YKH",
+  "_type": "academyModule",
+  "_updatedAt": "2026-10-07T19:10:54Z",
+  "body": [
+    {
+      "_key": "med-aco-intro",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The ACO model that most healthcare professionals know is the Medicare Shared Savings Program — a federal CMS initiative with nationally standardized rules and a well-documented evidence base. But ACOs have proliferated far beyond Medicare, appearing in Medicaid programs, commercial insurance markets, and multi-payer settings with fundamentally different populations, financing structures, and policy objectives. Understanding how ACOs function outside the MSSP context is essential for healthcare leaders operating in mixed-payer environments, which describes the reality of virtually every health system and physician organization in the country."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "med-aco-h2-medicaid",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicaid ACOs: Why They Require a Different Framework"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "med-aco-p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicaid ACOs face a fundamentally different operating environment than MSSP ACOs in nearly every relevant dimension. The Medicaid population is younger, poorer, and has higher rates of behavioral health conditions, substance use disorders, unstable housing, and food insecurity than Medicare beneficiaries. Social determinants of health (SDOH) are not peripheral to care management in Medicaid — they are central to whether any clinical intervention will succeed. An ACO that reduces hospital admissions by improving diabetes management faces a categorically different challenge when its attributed population includes people experiencing homelessness or acute food insecurity than when it serves stable, middle-income retirees with intact social support."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "med-aco-p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicaid ACOs are also state-designed rather than federally standardized, meaning there are as many Medicaid ACO models as there are states with Medicaid ACO programs. States typically operate these programs through Section 1115 Medicaid waivers or through their managed care procurement processes. The financial structure varies enormously: some Medicaid ACOs are pure shared savings arrangements similar to MSSP, others operate as capitated managed care organizations with full risk, and still others are hybrid models that layer ACO-style quality accountability on top of existing managed care contracts."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "med-aco-h2-vermont",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's OneCare Vermont: The All-Payer ACO Experiment"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "med-aco-p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's OneCare Vermont represents the most ambitious Medicaid and all-payer ACO experiment in the United States. OneCare is the state's single ACO, operating under the Vermont All-Payer ACO Model — a federal CMMI innovation model approved in 2016 whose performance years ran 2018–2022; CMS extended it through December 31, 2023 and then, by a 2024 amendment, through December 31, 2025. It was never part of AHEAD, a separate federal model: Vermont signed an AHEAD state agreement in January 2025 and withdrew in July 2026. OneCare holds a population-based global budget that covers the vast majority of Vermonters across Medicare, Medicaid, and commercial insurance within a single accountability structure — an approach with no direct parallel elsewhere in the country."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "med-aco-p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Under the Vermont model, OneCare receives a fixed per-member-per-month (PMPM) budget from CMS for Medicare beneficiaries, a Medicaid payment from the State of Vermont, and commercial payments negotiated with Vermont's dominant insurer, Blue Cross and Blue Shield of Vermont. The ACO is responsible for managing total cost of care across all payers for its attributed population — approximately 160,000 Vermonters as of 2023 — and must invest a defined portion of its global budget in population health and social determinants initiatives."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "med-aco-p6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's results have been mixed. CMS evaluations found that the model generated modest Medicare savings in its early years but struggled with attribution methodology challenges and incomplete network participation, since many Vermonters receive care from providers not formally participating in OneCare's network. Vermont's rural geography means that the all-payer alignment that is the model's theoretical strength is harder to achieve in practice. The model has nonetheless invested substantially in community health teams, care management programs, and social determinants initiatives funded through the global budget's population health allocation, creating organizational infrastructure that would not otherwise exist."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "med-aco-h2-oregon",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Oregon's Coordinated Care Organizations: Regional Global Budgets for Medicaid"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "med-aco-p7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Oregon took a fundamentally different approach to Medicaid transformation, creating Coordinated Care Organizations (CCOs) in 2012 through a major Medicaid waiver (House Bill 3650). CCOs are regional, integrated health organizations that receive a global budget for Medicaid beneficiaries in their geographic area and are required to integrate physical health, behavioral health, and oral health into a single organizational accountability structure — a degree of integration that is unusual in American Medicaid and extraordinarily difficult to achieve in practice."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "med-aco-p8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Oregon's CCO evaluation found meaningful early results: emergency department utilization fell 24% between 2011 and 2015, hospitalizations for ambulatory care-sensitive conditions fell significantly, and preventive care rates improved across multiple measures. The global budget structure gave CCOs a strong financial incentive to invest in primary care and social services — if you can prevent an ER visit through upstream intervention, you capture the savings rather than losing revenue from reduced admissions as a hospital would under fee-for-service. The CCO model also gave regional organizations significant latitude to design locally-tailored community health interventions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "med-aco-p9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Oregon's CCOs have faced challenges in sustaining early performance gains and meeting quality benchmarks in behavioral health — the hardest-to-treat and most resource-intensive population segment. The 2019 CCO 2.0 procurement imposed tighter quality requirements, explicit health equity goals, and greater focus on social determinants. Whether Oregon's model is replicable nationally is debated: it required significant state commitment, substantial federal waiver flexibility, and a political environment unusually favorable to healthcare reform that other states may not share."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "med-aco-h2-massachusetts",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Massachusetts MassHealth ACO: SDOH Integration in Medicaid"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "med-aco-p10",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Massachusetts operates one of the most sophisticated Medicaid ACO programs in the nation, launched in 2018 through a Section 1115 waiver. The MassHealth ACO program offers three participation models: ACO-A (ACOs that partner with managed care organizations), ACO-B (ACOs that subcontract with existing MCOs for administrative services), and ACO-C (Primary Care Clinician ACOs for smaller practices). The program also features a PCMH+ model for patients with complex needs, providing enhanced care management payments and allowing greater flexibility in covered services."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "med-aco-p11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "A distinctive feature of Massachusetts's approach is the Flexible Services program, which allows ACOs to spend a portion of their budget on non-traditional services for members with unmet social needs — housing supports, food assistance, and transportation to medical appointments. This is one of the most explicit attempts in American Medicaid to direct healthcare financing toward social services. Early evidence suggests the Flexible Services program is associated with reduced emergency department utilization among targeted high-risk members, though the evaluation challenges are significant given the program's relatively short history."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "med-aco-h2-commercial",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Commercial ACOs: Blue Cross Total Cost of Care and National Insurer Arrangements"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "med-aco-p12",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Commercial insurers have developed their own ACO-like arrangements, most commonly structured as total-cost-of-care (TCOC) contracts between health systems and major payers. Blue Cross Blue Shield of Massachusetts's Alternative Quality Contract (AQC), launched in 2009, is the longest-running and best-studied commercial ACO program in the United States. The AQC provides participating provider groups with a global budget — a fixed PMPM payment for all covered services — plus quality bonuses for performance on a comprehensive quality scorecard covering preventive care, chronic disease management, and patient experience."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "med-aco-p13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Research on the AQC by Song and colleagues published in the New England Journal of Medicine found that the program generated significant savings — an estimated $256 million over 4 years — with simultaneous quality improvements on multiple measures. The AQC's success has been attributed to several factors: the substantial financial risk on both upside and downside, the long contract terms that allow organizations to invest in care management infrastructure with confidence of multi-year returns, and BCBS Massachusetts's commitment to investing in data sharing and analytics support for participating organizations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "med-aco-p14",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Commercial ACOs face a structural challenge that Medicare ACOs do not: multi-payer fragmentation. A health system operating a commercial ACO with BCBS may simultaneously be in a different arrangement with Aetna, UnitedHealthcare, and Cigna — each with different quality measures, different benchmarking methodology, different data sharing agreements, and different care management expectations. The result is a patchwork of quality programs with potentially contradictory incentives, making it operationally difficult to design care delivery systems around any single model's requirements and limiting the return on infrastructure investment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "med-aco-h2-sdoh",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Social Determinants and Medicaid VBC: The Unresolved Challenge"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "med-aco-p15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The most distinctive and unresolved challenge in Medicaid value-based care is the outsized role of social determinants of health. Research consistently shows that clinical care accounts for only 20-30% of health outcomes, with the remainder driven by social factors including income, housing stability, food security, education, and social support networks. Medicaid enrollees have dramatically higher rates of SDOH risk than commercially insured populations — by definition, since Medicaid eligibility is income-based."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "med-aco-p16",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "This creates a fundamental design tension in Medicaid ACO architecture: if an ACO is held accountable for total cost of care and quality outcomes for a population whose health is substantially determined by housing instability, food insecurity, and poverty — factors largely outside the ACO's clinical control — then the financial and quality targets may be inherently unachievable without social service investment that healthcare financing does not traditionally support. Some states including Massachusetts and North Carolina have responded by explicitly allowing healthcare dollars to fund social services. But most Medicaid ACOs lack the regulatory and financial flexibility to fully address the social determinants driving poor health outcomes in their populations, leaving a fundamental gap between what ACOs are accountable for and what they have the authority and resources to address."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "med-aco-synthesis",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicaid and commercial ACOs represent important extensions of the value-based care framework beyond Medicare, but each faces challenges that MSSP was not designed to address. Population complexity, social determinants, state-level policy variation, managed care integration, and multi-payer fragmentation are not peripheral design considerations — they are central to whether ACO models can generate value in non-Medicare settings. The most promising approaches — Oregon's CCO global budgets, Massachusetts's SDOH-inclusive ACO framework, Vermont's all-payer model — share a common thread: they give accountable care organizations both the financial incentives and the programmatic flexibility to address the full range of factors driving health outcomes for their populations. Where that flexibility is absent, ACOs operating in Medicaid and commercial markets tend to produce more limited results."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseTitle": "Value-Based Care: From Fee-for-Service to Outcomes",
+  "estimatedReadTime": 15,
+  "level": "Intermediate",
+  "moduleNumber": 6,
+  "pillar": "Economics",
+  "slug": {
+    "_type": "slug",
+    "current": "vbc-aco-medicaid-commercial"
+  },
+  "summary": "ACO models extend far beyond Medicare, with Medicaid programs in dozens of states and major commercial insurers operating their own accountable care arrangements. The population complexity, state-by-state variation, and social determinants burden of Medicaid ACOs create fundamentally different challenges than MSSP, while commercial ACOs face multi-payer fragmentation that limits the infrastructure investment justification. Vermont's OneCare Vermont, Oregon's Coordinated Care Organization model, Massachusetts's ACO framework, and major commercial total-cost-of-care contracts illustrate the range of approaches and their divergent results.",
+  "title": "ACOs Beyond Medicare: Medicaid and Commercial ACOs"
+}

@@ -1,0 +1,422 @@
+{
+  "_createdAt": "2026-05-27T19:21:49Z",
+  "_id": "academyModule-vbc-aco-evidence",
+  "_rev": "oEdzoBJnHz58jGhpZT04MW",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-27T19:21:49Z",
+  "body": [
+    {
+      "_key": "aco-ev-intro",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Affordable Care Act created the Medicare Shared Savings Program (MSSP) in 2012, establishing ACOs as the central vehicle for Medicare's value-based care agenda. By 2024, over 480 ACOs were participating in MSSP, covering more than 11 million Medicare beneficiaries. After more than a decade of operation, the evidence base is large enough to draw substantive conclusions — and the picture is more nuanced, and in some respects more sobering, than the program's architects anticipated."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-h2-aggregate",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "MSSP Aggregate Performance: What the Data Shows"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "aco-ev-p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS publishes annual MSSP results showing aggregate benchmark performance. For performance year 2022, MSSP ACOs collectively generated $2.0 billion in gross savings relative to benchmarks, and $1.8 billion in net savings after shared savings payments to ACOs. Approximately 60% of MSSP ACOs earned shared savings payments. These are non-trivial numbers relative to the program's administrative investment — but they require careful interpretation that the headline figures do not provide."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The aggregate savings figure conceals enormous variation. The top quartile of MSSP ACOs generates the vast majority of savings; the bottom half frequently generates either no savings or incurs losses that erode the aggregate. A 2020 analysis by McWilliams and colleagues published in the New England Journal of Medicine found that new MSSP ACOs achieved minimal savings in their first 3 years, with meaningful savings concentrated in ACOs that had prior experience in risk-based contracting — particularly those who had previously participated in managed care or commercial ACO programs. Inexperienced organizations entering MSSP largely for the shared savings upside, without the care management infrastructure to generate real efficiency, produced little to no Medicare savings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-h2-pioneer",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Pioneer ACO and NextGen: The Advanced Track Evidence"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "aco-ev-p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Pioneer ACO Model, launched alongside MSSP in 2012 with 32 self-selected advanced organizations, was designed for ACOs with substantial prior experience in coordinated care. Pioneer offered higher shared savings rates and two-sided risk from the start. The CMS evaluation found that Pioneer ACOs generated $385 million in gross savings over 3 years from 2012 to 2015, with average per-beneficiary savings of approximately $300. Importantly, Pioneer ACOs improved on several quality measures including patient experience and preventive care rates. However, 13 of the original 32 Pioneer ACOs dropped out of the model before its conclusion, largely due to the financial risk of two-sided contracts when benchmark methodology produced unfavorable targets — a preview of the rebasing problem that would plague MSSP."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Next Generation ACO Model (2016-2021) was designed to test even higher risk-reward arrangements, offering up to 80-100% of shared savings for ACOs willing to accept commensurate downside risk. NextGen ACOs were largely drawn from Pioneer graduates and other experienced organizations — the most sophisticated ACO operators in the country. The 2021 evaluation found that NextGen ACOs generated approximately $406 million in net savings to Medicare across the model's life, representing roughly a 1.7% reduction in per-beneficiary spending. This is a meaningful but modest result for organizations operating at the leading edge of ACO capability, suggesting that even the best-equipped ACOs face structural limits on how much cost can be removed from the system through care management alone."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-h2-benchmark",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Benchmark Problem: Why Measuring ACO Savings Is So Difficult"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "aco-ev-p6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The central methodological challenge in measuring ACO performance is the benchmark — the target spending level against which actual ACO spending is compared. MSSP benchmarks are calculated using 3 years of prior spending for the ACO's attributed beneficiaries, adjusted for risk and national trend factors. This methodology creates several well-documented problems that affect both the measured results and the behavioral incentives facing ACOs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-p7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The rebasing problem is the most consequential. As ACOs improve efficiency, their prior-year spending — the basis for their benchmark — falls, making it progressively harder to generate savings in subsequent contract periods. An ACO that reduces spending by 5% in year 1 faces a lower benchmark in years 4-6, with less room to save relative to a hypothetical world without the ACO. This ratchet effect creates a structural disincentive to sustained improvement and was cited as a primary reason Pioneer ACOs dropped out of the model. Organizations that work hardest to reduce costs are penalized by the benchmark methodology for having done so."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-p8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Starting in 2017, CMS introduced a regional component into MSSP benchmarks, blending ACO historical spending with regional fee-for-service spending. This regional adjustment benefited ACOs in high-cost regions (whose benchmarks increased, making savings easier to achieve) and disadvantaged ACOs in already low-cost regions. ACOs in rural, low-cost areas — which may have done more to improve care relative to their baseline than their benchmark scores suggest — can appear to underperform simply because they start from an already-low spending baseline. The regional adjustment, intended to improve fairness, created different fairness problems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-p9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The selection bias problem adds further complexity. ACO beneficiaries are assigned retrospectively based on primary care utilization, creating a population that is healthier-than-average in fee-for-service — patients who have a primary care relationship and use it are less likely to be the highest utilizers. This makes it difficult to separate ACO effects from selection effects in non-experimental evaluations, complicating claims about what the ACO model actually caused versus what would have happened anyway in the attributed population."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-h2-basic-enhanced",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "BASIC vs. ENHANCED Tracks: Pathways to Downside Risk"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "aco-ev-p10",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2019 Pathways to Success rule restructured MSSP into two tracks: BASIC (with a glide path from one-sided to two-sided risk over 5 years) and ENHANCED (two-sided risk from the start, with higher sharing rates up to 75% of savings). CMS's intent was to accelerate the migration of ACOs from one-sided savings-only arrangements toward genuine two-sided risk bearing. The CMMI director at the time, Seema Verma, argued that one-sided MSSP ACOs — which faced no penalty if spending exceeded their benchmark — were providing free money to organizations with favorable benchmarks rather than incentivizing real care transformation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-p11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Pathways to Success rule drove an initial contraction in MSSP participation — from over 550 ACOs in 2018 to approximately 500 in 2020 — as organizations that had been benefiting from favorable one-sided risk arrangements exited rather than accept downside exposure. This contraction was arguably beneficial in concentrating the program on ACOs with genuine population health management capability, and the program has since grown again as the market has matured."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-h2-high-performers",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "What High-Performing ACOs Actually Do Differently"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "aco-ev-p12",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Research on ACO performance heterogeneity consistently identifies characteristics of high-performing ACOs that transcend geography and organizational type. A 2023 analysis by Colla and colleagues drawing on MSSP data and ACO survey data found that the strongest predictors of sustained savings include the following."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-bullet1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Robust care management infrastructure: High-performing ACOs invest heavily in embedded care managers, nurses, and social workers who proactively manage high-risk attributed patients between visits. This infrastructure requires upfront investment that takes multiple years to yield savings."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-bullet2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Primary care investment: ACOs that pay primary care physicians above FFS Medicare rates through care management fees, supplemental payments, or risk-sharing bonuses generate stronger alignment and better care coordination outcomes."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-bullet3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Data analytics capability: ACOs that can identify care gaps, risk-stratify their population, and generate actionable analytics for frontline clinicians outperform those operating from claims data alone or relying on lagged CMS data feeds."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-bullet4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Post-acute care management: High-performing ACOs systematically redirect post-acute patients from skilled nursing facilities to home health or home-based therapy. This single intervention — reducing SNF utilization — is the most reliable and largest source of episode cost reduction available to ACOs."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-bullet5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Prior risk-bearing experience: Organizations with experience in Medicare Advantage, commercial capitation, or other risk-based contracts start with population health management infrastructure and organizational culture that new ACOs must build from scratch, often over 3-5 years."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-h2-quality",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Quality Outcomes in ACOs: The More Consistent Evidence"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "aco-ev-p13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The ACO quality evidence is more uniformly positive than the savings evidence. Multiple studies have found that MSSP ACO beneficiaries show better performance on preventive care measures, lower rates of avoidable hospitalizations, and better chronic disease management compared to matched fee-for-service controls. A 2018 study in Health Affairs by McWilliams and colleagues found that MSSP ACOs achieved greater reductions in potentially avoidable hospitalizations than non-ACO FFS, with an estimated 7% reduction in hospital admissions for ambulatory care-sensitive conditions — a meaningful improvement in care quality that also has cost implications."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-p14",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Patient experience scores in ACOs, measured through the CAHPS survey, show modest but consistent improvement over time. ACOs score higher than FFS benchmarks on measures of care coordination, access to care after hours, and provider communication. Readmission rates are lower in ACOs than matched FFS controls in several analyses. These findings suggest that the ACO model is achieving genuine quality improvements — systematizing preventive care, care coordination, and post-acute management — even when the financial savings signal is weak."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-h2-cmmi",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "CMMI's 2021 Strategic Reset: A Candid Assessment"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "aco-ev-p15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "In 2021, CMMI published a strategic refresh that included an unusually candid assessment of its innovation model portfolio. The report acknowledged that despite more than $10 billion invested in testing alternative payment models since 2010, only a handful of models had generated statistically significant net savings to Medicare. The refresh identified systemic problems: models were too often designed for advanced organizations and failed to scale; financial incentives were insufficient to drive care transformation; and the absence of multi-payer alignment meant that ACOs were managing full clinical responsibility for populations where Medicare was only one of several payers and the ACO's financial stake covered only a fraction of total healthcare costs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aco-ev-synthesis",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The honest assessment of ACO performance evidence is this: ACOs work better than fee-for-service at the margins for organizations that are already sophisticated at coordinated care, in regions where fee-for-service spending is high relative to the benchmark, and when the benchmark methodology is favorable. For new ACOs, organizations without prior risk experience, and providers in already-efficient markets, the evidence of financial benefit is weak. The quality evidence is more consistently positive, suggesting that the ACO model's most durable contribution may be less about bending the cost curve than about institutionalizing the organizational infrastructure — care management teams, data analytics, post-acute relationships — that is a prerequisite for the more ambitious value-based models that come next in the reform trajectory."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseTitle": "Value-Based Care: From Fee-for-Service to Outcomes",
+  "estimatedReadTime": 16,
+  "level": "Intermediate",
+  "moduleNumber": 5,
+  "pillar": "Economics",
+  "slug": {
+    "_type": "slug",
+    "current": "vbc-aco-performance-evidence"
+  },
+  "summary": "Over a decade of Medicare Shared Savings Program data reveals a complex, heterogeneous picture of ACO performance: aggregate savings are real but modest, the distribution of results is highly uneven, and the benchmarking methodology contains structural problems that both inflate and limit measured savings. This lesson reviews the MSSP savings track record, Pioneer and NextGen ACO results, the benchmark rebasing problem, what high-performing ACOs actually do differently, and the academic evidence on ACO quality outcomes.",
+  "title": "ACO Performance: What the Evidence Shows"
+}

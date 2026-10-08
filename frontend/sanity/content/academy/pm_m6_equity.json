@@ -68,9 +68,9 @@
       "_key": "m6sg0001",
       "title": "The Genomic Diversity Gap",
       "stats": [
-        {"_key": "m6st001a", "value": "78%", "label": "GWAS participants of European ancestry (2016)", "context": "A landmark 2016 analysis found that 78% of genome-wide association study participants were of European ancestry. By 2022 this had fallen, but European ancestry individuals remained dramatically overrepresented. (Mills & Rahal, Nature Reviews Genetics, 2019)", "trend": "down"},
-        {"_key": "m6st001b", "value": "16%", "label": "Global population share that is European ancestry", "context": "People of European ancestry represent roughly 16% of the global population but historically made up the vast majority of genomic research participants — a dramatic mismatch between data and humanity. (UN Population Division, 2023)", "trend": "neutral"},
-        {"_key": "m6st001c", "value": "4x", "label": "Higher VUS rate in non-European BRCA testing", "context": "Black women receiving BRCA testing have historically received variants of uncertain significance at approximately 4 times the rate of white women, partly because interpretation databases were built on European ancestry data. (Ricks-Santi et al., 2017)", "trend": "down"}
+        {"_key": "m6st001a", "value": "78%", "label": "GWAS participants of European ancestry (2018)", "context": "As of 2018, 78% of genome-wide association study participants were of European ancestry, 10% Asian, and 2% African. (Sirugo, Williams & Tishkoff, Cell, 2019)", "trend": "down"},
+        {"_key": "m6st001b", "value": "2%", "label": "GWAS participants of African ancestry (2018)", "context": "People of African ancestry — the most genetically diverse population on Earth — made up about 2% of GWAS participants as of 2018. (Sirugo, Williams & Tishkoff, Cell, 2019)", "trend": "neutral"},
+        {"_key": "m6st001c", "value": "4.5x", "label": "PRS accuracy gap, European vs. African ancestry", "context": "Polygenic scores built from UK Biobank data predicted disease risk about 4.5 times more accurately for people of European ancestry than for people of African ancestry. (Martin et al., Nature Genetics, 2019)", "trend": "down"}
       ]
     },
     {
@@ -98,7 +98,7 @@
       "_type": "block",
       "_key": "m6blk009",
       "style": "normal",
-      "children": [{"_type": "span", "_key": "m6spn009", "text": "A 2019 study in Cell found that PRS trained on European populations had substantially lower predictive accuracy when applied to non-European populations — and that the gap was largest for individuals of African ancestry, who were farthest from the training population genetically. Using a PRS with known poor accuracy for a patient of African ancestry without disclosing this limitation is a form of health inequity embedded in the technology itself.", "marks": []}],
+      "children": [{"_type": "span", "_key": "m6spn009", "text": "A 2019 study in Nature Genetics (Martin et al.) found that polygenic scores built from predominantly European data predicted risk about 4.5 times more accurately for people of European ancestry than for people of African ancestry, who are genetically farthest from the training population. Using a PRS with known poor accuracy for a patient of African ancestry without disclosing this limitation is a form of health inequity embedded in the technology itself.", "marks": []}],
       "markDefs": []
     },
     {
@@ -361,7 +361,7 @@
       "_type": "block",
       "_key": "m6blk040",
       "style": "normal",
-      "children": [{"_type": "span", "_key": "m6spn040", "text": "Rural patients with cancer face documented disparities in receiving tumor genomic profiling — the first step in precision oncology. A study published in JNCI Cancer Spectrum in 2023 found that rural cancer patients were significantly less likely to receive comprehensive genomic profiling than urban patients, even after controlling for insurance status, cancer stage, and cancer type. This means rural patients are less likely to be identified as candidates for targeted therapies they might benefit from.", "marks": []}],
+      "children": [{"_type": "span", "_key": "m6spn040", "text": "Rural patients with cancer have historically had less access to tumor genomic profiling — the first step in precision oncology — because testing and molecular expertise concentrate in academic centers. Programs that bring testing to community practices can close that gap: a 2024 study in JNCI Cancer Spectrum of 1,258 patients in the Maine Cancer Genomics Initiative, which deployed tumor testing through community and rural oncology practices, found that rurality was not associated with receipt of genome-matched treatment. Access, not geography itself, is the barrier.", "marks": []}],
       "markDefs": []
     },
     {

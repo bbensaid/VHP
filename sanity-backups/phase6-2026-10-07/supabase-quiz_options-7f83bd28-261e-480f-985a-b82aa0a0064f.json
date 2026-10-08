@@ -1,0 +1,8 @@
+{
+  "id": "7f83bd28-261e-480f-985a-b82aa0a0064f",
+  "question_id": "042cfd8e-b27b-4ee8-9ae5-a35e56b07101",
+  "order": 4,
+  "text": "The model succeeds regardless, because Medicare independently enforces participation in state-designed global budgets",
+  "is_correct": false,
+  "explanation": "Medicare participation in a state's global budget requires a separate federal agreement (as with Vermont's AHEAD Model); it is not automatic or self-enforcing."
+}

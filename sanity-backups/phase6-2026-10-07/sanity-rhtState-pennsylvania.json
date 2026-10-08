@@ -1,0 +1,42 @@
+{
+  "_createdAt": "2026-03-10T13:54:22Z",
+  "_id": "rhtState-pennsylvania",
+  "_rev": "G7Tfo59YVwcDW2O5CBreS9",
+  "_type": "rhtState",
+  "_updatedAt": "2026-03-10T13:54:22Z",
+  "awardAmount": "$193,000,000",
+  "description": "Establishing 8 Regional Hubs to provide technical expertise and competitive grants for Value-Based Care adoption.",
+  "initiatives": [
+    {
+      "_key": "ini-0",
+      "description": "8 hubs providing technical expertise (IT, workflow) to local providers.",
+      "title": "Regional Hub Model"
+    },
+    {
+      "_key": "ini-1",
+      "description": "Competitive grants building on the PA Rural Health Model.",
+      "title": "Value-Based Care Grants"
+    }
+  ],
+  "metrics": [
+    {
+      "_key": "metric-0",
+      "label": "Hubs Operational",
+      "status": "Pending",
+      "target": "8 Hubs"
+    },
+    {
+      "_key": "metric-1",
+      "label": "VBC Adoption",
+      "status": "In Progress",
+      "target": "60% Providers"
+    }
+  ],
+  "stateId": {
+    "_type": "slug",
+    "current": "pennsylvania"
+  },
+  "stateName": "Pennsylvania",
+  "status": "Active",
+  "strategicFocus": "Regional Hubs & Value-Based Care"
+}

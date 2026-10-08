@@ -1,0 +1,931 @@
+{
+  "_createdAt": "2026-09-19T04:08:09Z",
+  "_id": "academyModule-five-pillars-apm-readiness-vbc-financial-modeling",
+  "_rev": "3TuVbN9R6ZCoadnRUb0Xlz",
+  "_type": "academyModule",
+  "_updatedAt": "2026-10-07T13:08:45Z",
+  "body": [
+    {
+      "_key": "6e6694cc386d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "27dbf13468b5",
+          "_type": "span",
+          "marks": [],
+          "text": "From Revenue Optimization to Population Cost Management"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "26cb596e366c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "059b63fc359e",
+          "_type": "span",
+          "marks": [],
+          "text": "Chapter 6 established the payment architecture -- reference-based pricing and global budgets. This lesson turns from architecture to practice: how do organizations actually model the financial impact of alternative payment models before they sign one?"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a1ae01437af9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "811fda7ffaa8",
+          "_type": "span",
+          "marks": [],
+          "text": "Under fee-for-service, the financial questions are about revenue optimization: how do we maximize reimbursement for the volume we deliver? Under value-based care, the questions are fundamentally different: what is our total cost of care for our attributed population, where is it higher than the benchmark and why, and what investment reduces it below the benchmark? These are population health economics questions, and they require different data infrastructure and different management skills than a revenue cycle department was built to provide."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "2d0dbbb95b01",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "78649ad5d833",
+          "_type": "span",
+          "marks": [],
+          "text": "Attribution: Defining Your Denominator Before the Year Starts"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "9b28dfa365eb",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "84a508e894ba",
+          "_type": "span",
+          "marks": [],
+          "text": "Attribution is the process of assigning patients to an organization for purposes of measuring shared savings or shared losses. It can be prospective -- the organization knows its panel before the performance year begins -- or retrospective, where the panel is only known after the year is over based on where care was actually delivered."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "916542a10979",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "281d88f81d17",
+          "_type": "span",
+          "marks": [],
+          "text": "The methodology matters as much as the concept: attribution based on plurality of primary care visits produces a different, and typically more stable, population than attribution based on which provider billed the most for a patient. Prospective attribution enables proactive care management, because the organization can act on its panel during the year it is being measured against; retrospective attribution creates genuine uncertainty, since the organization is managing a population it cannot fully identify until the year is already over."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "512fe54a9c5c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "54bec1bc94cd",
+          "_type": "span",
+          "marks": [],
+          "text": "In Vermont, the AHEAD Model was to track total cost of care for Medicare fee-for-service beneficiaries attributed to Vermont hospitals across all payer settings, using the state's VHCURES all-payer claims database as the underlying data source, until Vermont withdrew from AHEAD in July 2026. Having the database is not the same as having the internal analytics capability to use it -- and many Vermont hospitals still lack that capability."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "07691133d8f7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "bdf69c75e938",
+          "_type": "span",
+          "marks": [],
+          "text": "Benchmarking: The Number Everything Is Measured Against"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "feaceaa21211",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "3da349c10d06",
+          "_type": "span",
+          "marks": [],
+          "text": "Every alternative payment model is built around a benchmark: the expected cost of care against which actual performance is measured. Getting the benchmark methodology right -- or negotiating a favorable one -- is often the single most consequential financial decision in APM contract entry."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "76e674457673",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "5d5a3592fc91",
+          "_type": "span",
+          "marks": [],
+          "text": "A historical spending baseline, the most common approach, sets the benchmark from the organization's own past cost, typically with a trend adjustment. This creates the 'efficient provider disadvantage': an organization that is already lean and efficient starts with a lower benchmark and less room to generate savings than a historically high-spending competitor entering the same model."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "39e38ea58c5f",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "235487b84bbc",
+          "_type": "span",
+          "marks": [],
+          "text": "A regional benchmark uses area-wide average cost instead of an organization's own history, which eliminates the efficient-provider disadvantage but can penalize an organization operating in a genuinely high-cost region relative to its own trend. Vermont's reference-based pricing takes this approach at the price level: it anchors to Medicare rates rather than Vermont hospitals' own historical prices, directly addressing the problem of benchmarks built on historically inflated charges."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "173df27035b9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a18a82d74fe5",
+          "_type": "span",
+          "marks": [],
+          "text": "A prospective benchmark, used in global budgets and capitation, is set at the start of the year from projected population needs. It provides revenue certainty for planning, but its fairness depends entirely on the quality of the risk adjustment behind it -- which is the subject of the next section."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "274b69252638",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "231c9aec8a4e",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk Adjustment: The HCC Mechanism and Why It's a Financial Control"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "dcdf27455202",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1dc0936a557e",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS's Hierarchical Condition Category (HCC) model translates a patient's diagnosis codes into a Risk Adjustment Factor (RAF) -- a multiplier applied to the benchmark to reflect that patient's expected cost of care. Accurate coding produces an accurate benchmark. RAF gaps -- diagnoses a patient actually has but that go uncoded -- understate the population's expected cost, producing apparent savings that disappear the moment coding is corrected. Vermont's critical access hospitals carry an average 12% HCC coding gap, according to a 2025 Rural Health Redesign Center assessment -- real revenue and accuracy left on the table simply because documentation does not capture patients' actual complexity."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "b57e8d853fe8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "db2cb6e15c7e",
+          "_type": "span",
+          "marks": [],
+          "text": "The opposite failure mode is worse. In January 2026, Kaiser Permanente affiliates agreed to pay $556 million -- the largest False Claims Act settlement to date involving Medicare Advantage -- to resolve Department of Justice allegations that employees in California and Colorado added diagnosis codes to patient charts after visits, codes the treating physicians had not identified or addressed at the visit itself, systematically inflating risk scores. The government alleged the practice drew roughly $1 billion in federal payments between 2009 and 2018."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "26770ad557d3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a26bc3277ee9",
+          "_type": "span",
+          "marks": [],
+          "text": "The lesson for a CFO sits between these two cases. HCC coding accuracy is not a back-office administrative task; it is a financial control with legal exposure at one extreme and left-on-the-table accuracy at the other. Both point to the same underlying requirement: documentation that reflects real patient complexity, audited regularly against actual clinical records -- not managed as a number to be moved in either direction."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "0495a3db39a3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "4955bdedb31e",
+          "_type": "span",
+          "marks": [],
+          "text": "Shared Savings vs. Downside Risk: The Contract Mechanics"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "bdb89039de96",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "30100c6ad924",
+          "_type": "span",
+          "marks": [],
+          "text": "The core shared-savings calculation runs in steps. First, benchmark PMPM (per member per month) multiplied by attributed member-months sets the total benchmark -- the budget the organization is measured against. Second, actual total cost of care for the attributed population is measured, including out-of-network spending. Third, benchmark minus actual cost equals gross savings, or gross loss if actual spending exceeds the benchmark."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a925f1448c50",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e565480a2ff6",
+          "_type": "span",
+          "marks": [],
+          "text": "Before any payment changes hands, most models apply a minimum savings rate (MSR): under CMS's Medicare Shared Savings Program, this runs roughly 2% to 3.9% of the benchmark depending on the size of the attributed population, protecting against ordinary year-to-year cost variation triggering payments that do not reflect genuine performance change."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "6832c57eaca5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "5f18fae677ac",
+          "_type": "span",
+          "marks": [],
+          "text": "Once savings clear the MSR, a sharing rate applies. Under MSSP's one-sided track, with no downside risk, an organization can earn up to 50% of savings based on quality performance; under two-sided tracks that accept downside risk, sharing can reach 60%, and higher-risk tracks can share losses at 40% to 75%. The structural tradeoff is explicit: more upside sharing requires accepting more downside exposure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "83f7d3536ff1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "05a9e2682145",
+          "_type": "span",
+          "marks": [],
+          "text": "The Care Management ROI Math"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "8a4ff437c61a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "38baa426a004",
+          "_type": "span",
+          "marks": [],
+          "text": "A care management program that prevents 50 hospitalizations in a population of 10,000 Medicare beneficiaries, at an average cost of $15,000 per hospitalization, avoids $750,000 in cost. If that program costs $200,000 a year to operate, the return is roughly 275%."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "88e92b0eb430",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "5d976f4caef0",
+          "_type": "span",
+          "marks": [],
+          "text": "This math only works under value-based care. Under fee-for-service, the same prevented hospitalization is foregone revenue -- the identical clinical success becomes a financial loss. Vermont's data adds a second lever: 32.3% of Vermont emergency department visits are classified as potentially avoidable, at an average cost of $1,800 per visit."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "f3e38460bb83",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e7cdaea6f55b",
+          "_type": "span",
+          "marks": [],
+          "text": "This is not a hypothetical illustration -- it is the specific arithmetic reason population health management is financially rational under shared savings and financially irrational under fee-for-service, and it is why a CFO evaluating a transformation investment needs the avoided-event count and per-event cost, not a general sense that prevention 'should' pay off."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "d84ee7eca9b2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "25751a8c6f8d",
+          "_type": "span",
+          "marks": [],
+          "text": "The Pioneer ACO Lesson: Benchmark Design Determines Survival"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "2795f2fde4ce",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "0ecb75a0c749",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS's Pioneer ACO Model launched in 2012 with 32 participating health systems, selected specifically because they already had experience taking on financial risk. The benchmark combined each ACO's own historical spending with the national Medicare expenditure trend -- a design similar in spirit to today's historical-baseline approach."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "6349955d0cd9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a4847ee08843",
+          "_type": "span",
+          "marks": [],
+          "text": "Participation fell sharply over the model's life: down to 19 organizations by 2014, and to just 8 by the program's final performance year in 2016. Twenty-four organizations left over the model's life -- some for insufficient savings, some for outright losses, several moving to the less risky Medicare Shared Savings Program instead."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "9e786d03671d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "d901fb24f1f4",
+          "_type": "span",
+          "marks": [],
+          "text": "The lesson for any organization evaluating a new risk contract: a benchmark that looks reasonable on paper can still be the difference between an organization that thrives under risk and one that cannot sustain the model. A CFO's first question about any risk contract should be about benchmark mechanics, not the headline sharing rate."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "11ad19134c99",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "4645cf532ce0",
+          "_type": "span",
+          "marks": [],
+          "text": "Reading a Contract for the Risk That Isn't in the Headline Terms"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "919b58d501b0",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "50b67af8b5b8",
+          "_type": "span",
+          "marks": [],
+          "text": "A shared-savings contract's real financial risk often sits in provisions that don't appear in the summary terms: benchmark reset rules, attribution methodology, quality withholds, stop-loss thresholds, carve-outs, and reconciliation timing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "874f9d6e3ba5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "594935d5a9f2",
+          "_type": "span",
+          "marks": [],
+          "text": "Work the math before you sign: a 30% quality withhold on 50% of gross savings means quality performance alone determines 15% of the total financial outcome. An organization that cannot yet reliably report the specific measures being withheld against is accepting risk on a number it cannot currently produce."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "35414d88e154",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "7e37d79232a3",
+          "_type": "span",
+          "marks": [],
+          "text": "Carve-outs -- high-cost drugs, mental health, specialty services excluded from the shared-savings calculation -- reduce an organization's ability to manage total cost of care and shrink the addressable savings opportunity. Every carve-out is a place cost can shift without the organization being able to manage it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "eb6a909d24a1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "6ff9d56b5b23",
+          "_type": "span",
+          "marks": [],
+          "text": "The Readiness Domain That Actually Predicts Success"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "b820e7b8cfad",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "7108a111630c",
+          "_type": "span",
+          "marks": [],
+          "text": "The VBC Transformation Readiness Assessment scores an organization across 30 dimensions in six domains -- strategic clarity, data and technology, care delivery capability, network and partnerships, revenue cycle, and workforce operations -- each rated 0 to 4. The platform reports an overall readiness percentage -- the average across all answered dimensions -- rather than a raw point total: 80%+ indicates Global Budget Readiness, 60-79% indicates Advanced stage (12-18 months to readiness), and below 60% signals the organization is not ready for full downside risk."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "2748e4e452db",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "4ddaf736f6d2",
+          "_type": "span",
+          "marks": [],
+          "text": "For Vermont specifically, Domain 2 (Data and Technology) is the binding constraint: most Vermont hospitals score only 25-45% in this domain, while Blueprint-participating patient-centered medical homes with active Community Health Team support score 40-60% in Domain 3 (care delivery) -- strong by national standards. The gap is not clinical capability; it is the analytics infrastructure needed to act on what clinical teams already know how to do."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "004b48af31f0",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "d606c64c0bce",
+          "_type": "span",
+          "marks": [],
+          "text": "An organization should score itself against this framework, or an equivalent one, before signing a downside-risk contract -- not after the first year-end reconciliation reveals the gap the hard way."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "03220b5ce3ba",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "01ba59ae4a73",
+          "_type": "span",
+          "marks": [],
+          "text": "Before Your Next Contract Cycle"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "a3b182c4fc6b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "b0604bfe9516",
+          "_type": "span",
+          "marks": [],
+          "text": "The pre-signature checklist for a CFO: model your own benchmark under at least two methodologies (historical versus regional); run an HCC coding gap audit against actual clinical documentation; calculate minimum-savings-rate and sharing-rate outcomes at pessimistic, base, and optimistic total-cost-of-care performance; and list every carve-out in the contract and what it removes from your addressable savings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e55f05e472a8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "240ed6f01739",
+          "_type": "span",
+          "marks": [],
+          "text": "Organizations that negotiate aligned VBC contracts ahead of Vermont's FY2028 global budget mandate will have a financial model that reinforces the transformation already underway. Organizations that wait will carry a commercial revenue model still built to reward volume -- in direct conflict with the fixed-budget environment the rest of their business is entering."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "303f48a1ef6e",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "7e48cd77a4bf",
+          "context": "Source: HTR Economics pillar framework / CMS cost data",
+          "label": "Average inpatient hospitalization cost prevented",
+          "value": "$15,000"
+        },
+        {
+          "_key": "df29f96e396a",
+          "context": "Source: HTR Economics pillar framework",
+          "label": "Average cost of a preventable emergency department visit",
+          "value": "$1,800"
+        },
+        {
+          "_key": "8a854fdfd57b",
+          "context": "Source: Vermont Agency of Human Services Transformation Reports",
+          "label": "Share of Vermont ED visits classified as potentially avoidable",
+          "value": "32.3%"
+        }
+      ]
+    },
+    {
+      "_key": "a014bf0219c7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a3218cf775cf",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "The Kaiser Permanente Warning\n"
+        },
+        {
+          "_key": "a70cae379255",
+          "_type": "span",
+          "marks": [],
+          "text": "In January 2026, Kaiser Permanente affiliates agreed to pay $556 million -- the largest False Claims Act settlement to date in Medicare Advantage -- after the DOJ alleged employees added inaccurate diagnosis codes to patient charts after visits, inflating risk scores across California and Colorado and drawing roughly $1 billion in federal payments from 2009 to 2018. Risk-adjustment accuracy is a compliance-grade financial control, not a coding optimization exercise."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "6394cdeb55aa",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "2a60501eb87b",
+          "context": "Source: CMS Medicare Shared Savings Program methodology",
+          "label": "Minimum savings rate before an ACO shares in savings (MSSP one-sided track)",
+          "value": "2-3.9%"
+        },
+        {
+          "_key": "b5842346d917",
+          "context": "Source: CMS ACO model documentation",
+          "label": "Maximum shared-savings rate, one-sided vs. two-sided MSSP tracks",
+          "value": "50-60%"
+        },
+        {
+          "_key": "51ddc7213e1d",
+          "context": "Source: 2025 Vermont Rural Health Redesign Center assessment",
+          "label": "Average HCC coding gap at Vermont critical access hospitals",
+          "value": "12%"
+        }
+      ]
+    },
+    {
+      "_key": "b3327057f481",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ef09320998ec",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "What Pioneer ACO's Attrition Actually Shows\n"
+        },
+        {
+          "_key": "150083de7099",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS's Pioneer ACO Model began in 2012 with 32 organizations chosen for their risk experience; only 8 remained by the program's final performance year in 2016. Several exits were driven by benchmark design and financial losses, not clinical failure -- a reminder that a well-run clinical program can still fail financially under a poorly fitted benchmark."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "4fce0cfa15d0",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "2f6e4766d051",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Vermont's Binding Constraint Isn't Clinical\n"
+        },
+        {
+          "_key": "786bb32eda2b",
+          "_type": "span",
+          "marks": [],
+          "text": "Blueprint-participating PCMH practices with active Community Health Team support score 40-60% on the care-delivery readiness domain -- strong by national standards. Most Vermont hospitals score only 25-45% on the data-and-technology domain. Before assuming downside risk, close the second gap, not the first -- it is already closed."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "e66a1b153645",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "54208aae2bc1",
+          "_type": "span",
+          "marks": [],
+          "text": "Benchmark Construction Methods"
+        }
+      ],
+      "markDefs": [],
+      "style": "h4"
+    },
+    {
+      "_key": "8e0ecd9a2375",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e75d385b9af2",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Historical baseline — "
+        },
+        {
+          "_key": "f86ec12a2b26",
+          "_type": "span",
+          "marks": [],
+          "text": "Advantage: high past spenders get more savings headroom to work with → Disadvantage: already-efficient organizations face the 'efficient provider disadvantage' -- a lower benchmark, less room to save"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "b430146e2b06",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "990db6817aeb",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Regional benchmark — "
+        },
+        {
+          "_key": "a4e2cf7361e6",
+          "_type": "span",
+          "marks": [],
+          "text": "Advantage: eliminates the efficient-provider disadvantage → Disadvantage: organizations in genuinely high-cost regions compete against a benchmark lower than their own cost history"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a885f348bbbc",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fae2b9763c84",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Prospective benchmark — "
+        },
+        {
+          "_key": "aa642e4736e4",
+          "_type": "span",
+          "marks": [],
+          "text": "Advantage: revenue certainty, set before the year begins → Disadvantage: fairness depends entirely on risk-adjustment quality -- poor adjustment rewards case mix, not care management"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "21b6c0b1be83",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "f2e07c6b36e0",
+          "_type": "span",
+          "marks": [],
+          "text": "Shared Savings, Step by Step"
+        }
+      ],
+      "markDefs": [],
+      "style": "h4"
+    },
+    {
+      "_key": "3580700c6754",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "c91a10a94082",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "1. Set the benchmark — "
+        },
+        {
+          "_key": "8b157b545664",
+          "_type": "span",
+          "marks": [],
+          "text": "Benchmark PMPM x attributed member-months → = total benchmark spending -- the budget you are measured against"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "12e5bd8cf7a8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eb628999fa76",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "2. Measure performance — "
+        },
+        {
+          "_key": "bac039214c19",
+          "_type": "span",
+          "marks": [],
+          "text": "Actual total cost of care for the attributed population → Includes all spending, even out-of-network care"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "7b7c6f4a5cc8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "0792e81a5f74",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "3. Calculate gross savings/loss — "
+        },
+        {
+          "_key": "5dffba741af8",
+          "_type": "span",
+          "marks": [],
+          "text": "Benchmark minus actual total cost of care → Positive = gross savings; negative = gross loss"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "4245fb3d887a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "05a01e4bf54b",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "4. Apply the minimum savings rate — "
+        },
+        {
+          "_key": "712937bec115",
+          "_type": "span",
+          "marks": [],
+          "text": "Savings must clear roughly 2-3.9% before any payment → Filters out normal year-to-year variance from genuine performance"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "de3277b0c64f",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "382c6fee22fa",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "5. Apply the sharing rate — "
+        },
+        {
+          "_key": "4572bed358c9",
+          "_type": "span",
+          "marks": [],
+          "text": "Gross savings x sharing rate (50-60%+ depending on risk track) → = the organization's shared savings payment"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "2df81f735d83",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "29ddc9953e9c",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "From the Book — Chapter 7\n"
+        },
+        {
+          "_key": "871199e6ff17",
+          "_type": "span",
+          "marks": [],
+          "text": "Chapter 7 works the APM financial modeling and VBC readiness mechanics this lesson teaches.\n\nRead it at /read/chapter-07."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    }
+  ],
+  "courseTitle": "Five Pillars, One Imperative",
+  "estimatedReadTime": 30,
+  "learningObjectives": [
+    "Explain how attribution and benchmark methodology determine an organization's financial exposure before it delivers any care.",
+    "Describe the mechanics of the HCC/RAF risk-adjustment system and why coding accuracy is a financial control, not an administrative task.",
+    "Calculate a basic shared-savings and care-management ROI scenario using benchmark, minimum savings rate, and sharing rate.",
+    "Identify the contract provisions that most often turn an attractive-looking shared-savings deal into a financial loss."
+  ],
+  "level": "Intermediate",
+  "moduleNumber": 13,
+  "nextModuleSlug": "economics-as-design-vs-management",
+  "pillar": "Economics",
+  "prevModuleSlug": "global-budgets-reference-based-pricing",
+  "slug": {
+    "_type": "slug",
+    "current": "apm-readiness-vbc-financial-modeling"
+  },
+  "summary": "Attribution, benchmarking, and risk adjustment determine an organization's financial exposure before it delivers a single service under a value-based contract. This lesson works through the mechanics -- benchmarks, minimum savings rates, HCC coding, shared savings math -- that a CFO must be able to model before signing.",
+  "title": "APM Readiness and VBC Financial Modeling",
+  "totalModules": 24
+}

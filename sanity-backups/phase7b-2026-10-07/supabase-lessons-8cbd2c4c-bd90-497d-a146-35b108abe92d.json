@@ -1,0 +1,50 @@
+{
+  "id": "8cbd2c4c-bd90-497d-a146-35b108abe92d",
+  "slug": "medicaid-unwinding-redeterminations",
+  "sanity_slug": "medicaid-unwinding-redeterminations",
+  "content_blocks": [
+    {
+      "body": "In March 2020, the Families First Coronavirus Response Act included a provision: states could receive enhanced federal matching funds (a 6.2 percentage point FMAP increase) in exchange for maintaining continuous enrollment — they could not disenroll anyone from Medicaid during the public health emergency, even if their circumstances changed.\n\nEnrollment surged from ~71 million to ~94 million. The continuous enrollment protection ended April 1, 2023. States had 12 months to complete redeterminations for everyone. The process — called the 'unwinding' — became one of the largest eligibility events in Medicaid history.",
+      "type": "text",
+      "heading": "The freeze and the thaw"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "People disenrolled during the unwinding (through 2024)",
+          "value": "23M+",
+          "source": "KFF"
+        },
+        {
+          "label": "Of disenrollments due to procedural reasons (not income)",
+          "value": "~70%",
+          "source": "KFF"
+        },
+        {
+          "label": "Children disenrolled during the unwinding",
+          "value": "4.8M",
+          "source": "Georgetown CCF"
+        },
+        {
+          "label": "Months states had to complete redeterminations",
+          "value": "12",
+          "source": "CMS"
+        }
+      ]
+    },
+    {
+      "body": "The majority of people losing Medicaid coverage during the unwinding were disenrolled for procedural reasons — outdated addresses, returned mail, inability to reach enrollees — not because they were actually ineligible. Many were still poor enough to qualify but lost coverage anyway. This highlighted structural failures in state eligibility systems.",
+      "type": "callout",
+      "heading": "Most disenrollments were procedural",
+      "variant": "warning"
+    },
+    {
+      "type": "video",
+      "caption": "Medicaid unwinding — KFF explainer on the redetermination process (~6 min)",
+      "videoId": "Z7hGgqm26LE",
+      "mediaType": "youtube",
+      "durationSeconds": 360
+    }
+  ]
+}

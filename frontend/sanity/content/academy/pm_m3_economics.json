@@ -183,9 +183,9 @@
       "_key": "m3sg0003",
       "title": "The Waste Argument: What Precision Medicine Aims to Eliminate",
       "stats": [
-        { "_key": "m3st0007", "value": "$528B", "label": "Annual waste in U.S. healthcare (2019 estimate)", "context": "A JAMA study estimated $760B–$935B in annual healthcare waste, with $528B attributable to failure of care delivery and care coordination — areas where PM can intervene. (Shrank et al., JAMA 2019)", "trend": "neutral" },
-        { "_key": "m3st0008", "value": "40%", "label": "Cancer patients who receive ineffective first-line chemo", "context": "An estimated 40% of cancer patients receive at least one regimen that fails, driving repeated treatment costs and diminished quality of life. (ASCO Annual Report, 2023)", "trend": "neutral" },
-        { "_key": "m3st0009", "value": "5x", "label": "Cost differential: Stage I vs. Stage IV cancer treatment", "context": "Stage IV cancers cost an average of 5 times more to treat than Stage I cancers of the same type, making early detection an economic as well as clinical imperative. (NCI Surveillance, Epidemiology, and End Results, 2024)", "trend": "neutral" }
+        { "_key": "m3st0007", "value": "$760B–$935B", "label": "Annual waste in U.S. healthcare (2019 estimate)", "context": "Shrank et al. (JAMA, 2019) estimated $760B–$935B in annual waste — about a quarter of US health spending — including $102B–$166B from failures of care delivery and $27B–$78B from failures of care coordination, the domains precision medicine can address.", "trend": "neutral" },
+        { "_key": "m3st0008", "value": "$76B–$101B", "label": "Annual cost of overtreatment and low-value care", "context": "The same analysis put overtreatment and low-value care — including treatments that do not work for the patient receiving them — at $75.7B–$101.2B a year. (Shrank et al. (JAMA, 2019))", "trend": "neutral" },
+        { "_key": "m3st0009", "value": "1.6x", "label": "Cost differential: Stage I/II vs. Stage IV breast cancer treatment", "context": "Average insurer-allowed costs in the year after diagnosis were $82,121 for stage I/II breast cancer versus $134,682 for stage IV, making early detection an economic as well as clinical imperative. (Blumen et al., American Health & Drug Benefits, 2016)", "trend": "neutral" }
       ]
     },
     {

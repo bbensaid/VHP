@@ -1,0 +1,115 @@
+{
+  "id": "851d6ff9-a15f-4dde-99ce-3ed182a17777",
+  "slug": "hipaa-fundamentals",
+  "sanity_slug": "hie-hipaa-fundamentals",
+  "content_blocks": [
+    {
+      "type": "timeline",
+      "items": [
+        {
+          "body": "Sets national standards for health insurance portability and administrative simplification. PHI privacy provisions included.",
+          "year": "1996",
+          "title": "HIPAA enacted",
+          "pillar": "policy"
+        },
+        {
+          "body": "Establishes patient rights over their health information. Limits on uses and disclosures without authorization.",
+          "year": "2003",
+          "title": "Privacy Rule effective",
+          "pillar": "policy"
+        },
+        {
+          "body": "Requires administrative, physical, and technical safeguards for electronic PHI (ePHI).",
+          "year": "2005",
+          "title": "Security Rule effective",
+          "pillar": "policy"
+        },
+        {
+          "body": "Health Information Technology for Economic and Clinical Health Act — strengthens HIPAA enforcement, introduces Meaningful Use.",
+          "year": "2009",
+          "title": "HITECH Act",
+          "pillar": "policy"
+        },
+        {
+          "body": "Extends HIPAA obligations to Business Associates. Increases civil penalties significantly (up to $1.9M per violation category).",
+          "year": "2013",
+          "title": "Omnibus Rule",
+          "pillar": "policy"
+        }
+      ],
+      "heading": "HIPAA legislative history"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Governs who can access and use PHI. Patients have rights to access, amend, and receive an accounting of disclosures. Minimum necessary standard applies.",
+          "icon": "ti-lock",
+          "title": "Privacy Rule"
+        },
+        {
+          "body": "Technical, administrative, and physical safeguards for ePHI. Requires risk analysis, access controls, audit logs, encryption where reasonable.",
+          "icon": "ti-shield-check",
+          "title": "Security Rule"
+        },
+        {
+          "body": "Covered entities must notify patients within 60 days of discovering a breach of unsecured PHI. HHS notification required; media notification if >500 individuals in a state.",
+          "icon": "ti-bell-ringing",
+          "title": "Breach Notification Rule"
+        }
+      ],
+      "heading": "The three HIPAA rules"
+    },
+    {
+      "body": "PHI is any individually identifiable health information held or transmitted by a covered entity or business associate. The 18 HIPAA identifiers include: name, geographic data smaller than state, dates (except year) related to an individual, phone numbers, fax numbers, email addresses, SSN, medical record numbers, health plan beneficiary numbers, account numbers, certificate/license numbers, VINs, device identifiers, URLs, IP addresses, biometric identifiers, full-face photographs, and any other unique identifying number or code.\n\nAs an HIE employee, you routinely handle PHI. The minimum necessary standard means you should access only the minimum amount of PHI needed to accomplish your task.",
+      "type": "text",
+      "heading": "What is Protected Health Information?"
+    },
+    {
+      "body": "HIEs are almost always Business Associates under HIPAA. This means your organization has contractual and legal obligations that go beyond those of a covered entity's workforce member. All vendors and subcontractors who handle PHI on your behalf must have signed Business Associate Agreements (BAAs).",
+      "type": "callout",
+      "heading": "Business Associate obligations",
+      "variant": "warning"
+    },
+    {
+      "rows": [
+        {
+          "left": "Hospitals, clinics, health plans, clearinghouses",
+          "label": "Examples",
+          "right": "HIEs, EHR vendors, billing companies, cloud providers"
+        },
+        {
+          "left": "Direct HIPAA compliance for patient care activities",
+          "label": "Primary obligation",
+          "right": "Comply with HIPAA through contract (BAA) with covered entity"
+        },
+        {
+          "left": "Up to $1.9M per violation category",
+          "label": "Breach penalties",
+          "right": "Same — directly liable since 2013 Omnibus Rule"
+        },
+        {
+          "left": "Must respond to patient requests",
+          "label": "Patient rights",
+          "right": "Must cooperate with covered entity's patient rights obligations"
+        }
+      ],
+      "type": "comparison_table",
+      "heading": "Covered Entity vs. Business Associate",
+      "leftLabel": "Covered Entity",
+      "rightLabel": "Business Associate"
+    },
+    {
+      "hint": "Recommended content: organization-specific examples of minimum necessary, how breach reporting works internally, and one real (anonymized) lesson learned. 5–8 minutes, MP3 or WAV.",
+      "type": "audio_slot",
+      "label": "HIPAA in our daily workflow — from your compliance officer"
+    },
+    {
+      "type": "video",
+      "caption": "HIPAA Privacy and Security Rules explained clearly (~10 min)",
+      "videoId": "i2r_g7MDTBY",
+      "mediaType": "youtube",
+      "durationSeconds": 600
+    }
+  ]
+}

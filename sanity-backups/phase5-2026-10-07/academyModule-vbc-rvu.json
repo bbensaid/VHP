@@ -1,0 +1,432 @@
+{
+ "_createdAt": "2026-05-27T19:21:49Z",
+ "_id": "academyModule-vbc-rvu",
+ "_rev": "oEdzoBJnHz58jGhpZT04MW",
+ "_type": "academyModule",
+ "_updatedAt": "2026-05-27T19:21:49Z",
+ "body": [
+  {
+   "_key": "rvu-intro-p1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "Every time a physician bills Medicare — or most private insurers — the payment they receive traces back to a single number: the relative value unit, or RVU. Introduced in 1992 following the landmark work of William Hsiao and colleagues at Harvard, the RVU-based Resource-Based Relative Value Scale (RBRVS) replaced a chaotic, historically-derived usual and customary fee schedule with a system that was supposed to be rational, reproducible, and fair. Thirty-plus years later, the RBRVS remains the foundation of physician payment in the United States — but its distortions have become so embedded in care delivery that any serious reform of healthcare value requires understanding exactly how it works, and exactly how it fails."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-h2-anatomy",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "The Anatomy of an RVU"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "rvu-p2",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "Each physician service is assigned a procedure code under the Current Procedural Terminology (CPT) system maintained by the American Medical Association. For every CPT code, CMS assigns three component RVU values that sum to a total relative value:"
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-bullet1",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "Work RVU (wRVU): Reflects the physician time, mental effort, technical skill, and stress involved in the service. This component accounts for roughly 50-55% of total RVUs and is the most politically contested element of the system."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-bullet2",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "Practice Expense RVU (PE RVU): Covers the overhead costs of delivering the service including staff, rent, supplies, and equipment. It accounts for roughly 40-44% of total RVUs and has both a facility (lower, when the service is delivered in a hospital) and non-facility (higher, when in a physician office) version."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-bullet3",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "Malpractice RVU (PLI RVU): Reflects the professional liability insurance costs associated with the procedure, typically 3-5% of total RVUs and highest for high-risk procedural specialties like obstetrics and neurosurgery."
+    }
+   ],
+   "level": 1,
+   "listItem": "bullet",
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-p3",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "Each component is adjusted by a geographic practice cost index (GPCI) that reflects cost-of-living and local input prices in the physician's locality. The Medicare payment formula is then: Payment = [(wRVU x wGPCI) + (PE RVU x PE GPCI) + (PLI RVU x PLI GPCI)] x Conversion Factor. This formula is deceptively simple; its political and economic consequences are anything but."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-p4",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "The Conversion Factor (CF) is a single dollar amount CMS sets each year that translates total RVUs into dollars. For 2024, the CF was set at $32.74 per RVU — down from $33.89 in 2023, a cut that triggered significant physician advocacy. This single number is the lever through which CMS controls total physician spending under Medicare, which makes setting it intensely political. Because Medicare physician payment is budget-neutral by statute, increasing payments for some services requires reducing the conversion factor or reducing payments to others."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-h2-rbrvs",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "How the RBRVS Is Maintained: The AMA/Specialty Society RVS Update Committee"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "rvu-p5",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "In theory, the RBRVS is a scientifically calibrated system. In practice, the relative values assigned to CPT codes are substantially shaped by the AMA/Specialty Society Relative Value Scale Update Committee — universally known as the RUC. The RUC is a 33-member advisory body on which specialty societies hold strong representation, with primary care consistently underrepresented relative to its share of the physician workforce. When CMS wants to value a new or revised CPT code, it solicits input from the RUC, which conducts surveys of physicians to estimate the typical time and intensity associated with the service. CMS accepts the RUC's recommendations at a rate historically above 85-90%, which critics argue gives procedure-heavy specialties outsized influence over their own payment rates."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-p6",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "The RUC process has drawn sustained criticism from primary care advocates, health economists, and the Medicare Payment Advisory Commission (MedPAC). Because specialists dominate the committee, and because the surveys measure physician perceptions of work rather than objective time-motion studies, the resulting RVU values tend to reflect the profession's historic biases. A 15-minute office visit for diabetes management may generate 1.5 work RVUs; an interventional cardiologist placing a coronary stent may generate 30 or more work RVUs in 90 minutes of procedural time. Whether that 20-to-1 ratio accurately reflects the relative social value, training requirements, or patient impact of these services is a question the RUC process was not designed to answer."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-h2-eval-mgmt",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "The Undervaluation of E&M: The Core Distortion"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "rvu-p7",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "The most consequential distortion in the RVU system is the chronic undervaluation of Evaluation and Management (E&M) services — the office visits, hospital rounds, and consultations that constitute the cognitive core of medicine. A new patient office visit of moderate complexity (CPT 99204) generated a total RVU of approximately 3.0 before the 2021 E&M revision. A single colonoscopy (CPT 45378) generated approximately 3.8 total RVUs for roughly the same physician time investment. The physician doing screening colonoscopies at high volume could generate two to three times the annual revenue of an equally trained physician doing complex diabetes or heart failure management."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-p8",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "In 2021, CMS implemented the most significant E&M reform since the system's inception, substantially increasing the wRVUs for office E&M codes and streamlining documentation requirements. Level 4 new patient visits (99204) saw their wRVU increase from 2.43 to 3.17 — a 30% increase. Level 4 established patient visits (99214) increased from 1.50 to 1.92. This reform was partly financed by a reduction in the conversion factor, which meant that proceduralists effectively subsidized the E&M increase through lower per-RVU payments. The reform was directionally correct but insufficient to close a gap that had widened over decades of RUC-dominated valuation."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-h2-sgr",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "The SGR Era and the MACRA Fix"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "rvu-p9",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "From 1997 until 2015, physician Medicare payment was governed by the Sustainable Growth Rate (SGR) formula, a mechanism designed to link aggregate physician spending to GDP growth. When physician spending grew faster than GDP — which it reliably did as volume increased year after year — the SGR formula triggered automatic cuts in the conversion factor. Between 2002 and 2015, the SGR called for cumulative cuts of approximately 30%. Congress overrode these cuts every single year through the so-called annual doc fix, creating enormous policy uncertainty, a growing phantom liability on the federal books, and a pervasive sense among physicians that Medicare payment policy was fundamentally unstable and politically rather than rationally determined."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-p10",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "The Medicare Access and CHIP Reauthorization Act of 2015 (MACRA) permanently repealed the SGR and replaced it with a new framework. Under MACRA, physicians choose between two tracks: the Merit-Based Incentive Payment System (MIPS) and participation in an Advanced Alternative Payment Model (APM). Both tracks were designed to move payment away from pure volume toward quality and value — but the underlying RVU-based fee schedule remained the payment infrastructure on which both tracks operate. MACRA solved the SGR's annual political crisis while leaving the underlying distortions of the RBRVS system intact."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-h2-treadmill",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "The wRVU Treadmill: Consequences for Employed Physicians"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "rvu-p11",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "As hospital systems have acquired physician practices — a trend accelerating sharply since the ACA — most employed physicians are now compensated through wRVU-based productivity formulas. The typical employed physician contract specifies a base salary plus a per-wRVU incentive above a productivity threshold, with total compensation tightly correlated to wRVU output. MGMA data consistently shows that specialist compensation is roughly two to three times primary care compensation when both are driven by wRVU production — a direct reflection of the RVU system's procedural bias embedded in employment contracts."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-p12",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "The wRVU treadmill — the imperative to generate ever-more RVUs to maintain or grow income — has several documented consequences. First, it drives visit compression: physicians see more patients per hour, leaving less time for complex cognitive work, patient education, and care coordination. Second, it incentivizes upcoding — documenting to the highest legitimate level of service to maximize billable RVUs. Third, it creates pressure toward high-RVU procedures even when watchful waiting or lower-intensity care might be clinically equivalent. Fourth, and most perniciously for value-based care, it penalizes physicians who invest time in care coordination, population health activities, and patient outreach that generate no billable codes."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-p13",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "Research by Khullar and colleagues at Weill Cornell has documented that physicians in high-wRVU environments report significantly higher rates of burnout, with primary care physicians experiencing the highest moral distress when productivity targets conflict with relationship-based care. The irony is pointed: the physicians whose work is most essential to value-based care — primary care providers managing complex chronic disease populations — are also those most disadvantaged by the RVU system and most vulnerable to the treadmill dynamic."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-h2-manipulation",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "How RVU Incentives Distort Care Delivery at the System Level"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "rvu-p14",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "The RBRVS system creates predictable distortions beyond individual physician behavior. At the system level, the RVU signal shapes specialty workforce decisions across generations of physicians: medical students choosing between internal medicine and cardiology interventional fellowships are, in part, responding to a payment system that will pay the cardiologist three to four times more per clinical hour for the rest of their career. The United States produces dramatically fewer primary care physicians per capita than peer nations — a workforce imbalance that virtually every health policy researcher links to payment disparities rooted in the RVU system."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-p15",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "At the hospital level, service line investment follows RVU revenue. Cardiac catheterization labs, orthopedic surgery suites, and cancer centers generate far more revenue per square foot than primary care clinics or behavioral health departments. Capital allocation systematically favors procedural capacity over primary and preventive care infrastructure. The geographic distribution of these high-RVU services also tends to follow commercially insured patient populations, reinforcing healthcare access disparities between affluent and low-income communities."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-h2-reform",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "Reform Proposals: From Incremental Fixes to Structural Change"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "rvu-p16",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "Numerous reform proposals have attempted to address the RVU system's distortions at varying levels of ambition. MedPAC has repeatedly recommended time-motion studies to replace RUC survey data as the basis for work RVU valuations. Health economists including the late Uwe Reinhardt argued for a relative value amnesty — a comprehensive re-valuation that would explicitly trade procedural RVU reductions for E&M increases without the constraint of budget neutrality that politically hobbles incremental reform."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-p17",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "CMS Innovation Center models like Primary Care First attempt to partially escape the RVU framework by replacing per-visit E&M billing with flat monthly care management fees for primary care — essentially decoupling primary care revenue from individual visit volume. This represents a meaningful structural shift, but requires primary care practices to accept substantial financial risk during the transition and to build the population health management infrastructure that per-capita payment rewards. The ACA primary care bonus program (2011-2015), which provided a 10% payment increase on primary care E&M services, temporarily reduced the income gap but did not change the underlying RVU values."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-p18",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "The deepest reform — moving toward population-based payment such as capitation or global budgets — would remove per-service payment entirely and make the RVU calculation irrelevant for care delivery decisions. Under capitation, a physician or organization is paid per-member-per-month to manage a population, not per procedure. ACOs, Medicare Advantage plans, and capitated Medicaid managed care organizations operate in this direction, but most physicians remain in fee-for-service RVU-based arrangements for the bulk of their revenue. Until the payment signal changes fundamentally, the wRVU treadmill will continue to shape physician behavior, specialty workforce distribution, and capital investment in ways that systematically undermine the value-based care agenda."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "rvu-synthesis",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "s1",
+     "_type": "span",
+     "marks": [],
+     "text": "The RVU system is not simply a technical payment mechanism — it is the economic foundation on which the entire architecture of American physician practice is built. Its biases toward procedures and against cognitive care are not accidents; they reflect the political economy of the RUC process and the path dependency of a system that has calcified around historical fee relationships established before modern primary care medicine existed. Any value-based care reformer who does not understand RVUs is working with an incomplete map. The conversion factor, the GPCI, the wRVU threshold in employment contracts, the facility versus non-facility PE rate — these technical details translate directly into physician behavior, specialty choice, and the geography of care. Reforming them is slow, political, and expensive. But without reforming them, every other value-based initiative operates against a persistent structural current."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  }
+ ],
+ "courseTitle": "Value-Based Care: From Fee-for-Service to Outcomes",
+ "estimatedReadTime": 17,
+ "level": "Intermediate",
+ "moduleNumber": 2,
+ "pillar": "Economics",
+ "slug": {
+  "_type": "slug",
+  "current": "vbc-rvu-physician-payment"
+ },
+ "summary": "The Resource-Based Relative Value Scale (RBRVS) system has governed physician payment for over three decades, yet its internal logic systematically undervalues cognitive and primary care services relative to procedural work. This lesson dissects how RVUs are calculated, how the conversion factor is set, and why employed physicians face a wRVU treadmill that has profound implications for care quality and physician well-being. Understanding the mechanics of RVU-based payment is essential context for every value-based care reform that attempts to change physician behavior.",
+ "title": "RVUs: How Physician Payment Works — and Why It Favors Procedures"
+}

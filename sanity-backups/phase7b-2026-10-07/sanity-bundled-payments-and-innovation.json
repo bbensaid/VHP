@@ -1,0 +1,505 @@
+{
+  "_createdAt": "2026-06-02T17:14:55Z",
+  "_id": "bundled-payments-and-innovation",
+  "_rev": "vgbIiwZpnxA2FcYEhki47e",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T17:14:55Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Paying for an Episode, Not a Service"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A bundled payment sits conceptually between fee-for-service and the population accountability of an ACO. Instead of paying separately for the surgeon, the hospital stay, the rehab facility, and every follow-up visit, a bundle holds providers accountable for the total cost of a defined clinical episode — for example, a hip replacement and everything that happens in the 90 days after it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The mechanics are usually retrospective. Providers keep billing fee-for-service throughout the episode, then at the end Medicare reconciles total spending against a predetermined target price. If actual spending came in under the target and quality held, the providers keep the difference; if it ran over, they may owe Medicare back."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Bundling targets a specific weakness of fee-for-service: fragmentation. When no one is accountable for the whole episode, costs leak — especially into post-acute care, where discharge decisions vary enormously. A bundle gives providers a direct financial reason to coordinate the entire arc of care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A bundled payment sets a single target price for a whole episode of care (often 90 days). Spending is reconciled against that target: beat it with good quality and keep the savings; exceed it and potentially repay. The episode — not the individual service — becomes the unit of accountability."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CMS Innovation Center (CMMI)"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Most of Medicare’s bundled-payment and value-based experiments come from one place: the Center for Medicare and Medicaid Innovation (CMMI), known as the CMS Innovation Center. It was created by Section 3021 of the Affordable Care Act in 2010 with a specific mission — to test new payment and delivery models that could reduce spending while preserving or improving quality."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMMI has a powerful and unusual authority: if a model is certified by the actuary to lower spending without harming quality (or improve quality without raising spending), the Secretary of HHS can expand it nationally without an act of Congress. That ability to scale successful models is what makes CMMI Medicare’s primary engine of payment innovation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMMI is also why models can be made mandatory in selected regions. Voluntary models suffer from selection bias — only providers who expect to benefit join — so CMMI sometimes requires all hospitals in chosen markets to participate, producing cleaner evidence about whether a model actually works."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex1",
+      "_type": "exampleBlock",
+      "content": "Bundled Payments for Care Improvement Advanced (BPCI Advanced), launched in 2018, let participants take accountability for 90-day episodes across a menu of medical and surgical conditions, with target prices based partly on their own historical spending. It was the first episode model to include an outpatient surgical condition (spine surgery). Like other episode models, it billed fee-for-service throughout and reconciled spending against the target price at the end of each episode.",
+      "title": "BPCI Advanced"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CJR: Testing Mandatory Bundles"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The clearest test of bundled payment was the Comprehensive Care for Joint Replacement (CJR) model, which ran from April 2016 through December 2024. CJR was mandatory for hospitals in selected metropolitan areas and covered hip and knee replacements — high-volume, high-cost procedures with notoriously variable post-acute spending."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The results validated the core theory. A rigorous evaluation found CJR reduced institutional spending per joint-replacement episode by roughly $812 (about a 3 percent relative decrease), driven largely by a meaningful drop in patients being discharged to costly post-acute facilities instead of home. Critically, CMS found no adverse effects on quality — complication rates, mortality, readmissions, and ED use did not worsen."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "CJR demonstrated that a well-designed bundle could squeeze out wasteful post-acute spending without harming patients. Its success directly shaped the next generation of mandatory models, proving that the lever to pull in episode payment is usually post-acute care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "ACA Section 3021 (KFF)",
+          "label": "CMMI Created",
+          "value": "2010"
+        },
+        {
+          "_key": "s2",
+          "context": "Used by BPCI Advanced and CJR (CMS)",
+          "label": "Typical Episode Length",
+          "value": "90-day"
+        },
+        {
+          "_key": "s3",
+          "context": "Driven by less post-acute use; no quality harm (NEJM)",
+          "label": "CJR Savings Per Episode",
+          "value": "~$812"
+        },
+        {
+          "_key": "s4",
+          "context": "Mandatory joint-replacement bundle (CMS)",
+          "label": "CJR Model Period",
+          "value": "Apr 2016-Dec 2024"
+        }
+      ]
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "From CJR to TEAM"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The lessons from CJR fed directly into its successor: the Transforming Episode Accountability Model (TEAM), a mandatory episode-based payment model launching in January 2026. TEAM expands the bundled-payment approach beyond joint replacement to five surgical episode categories and adds enhanced protections for safety-net hospitals."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "TEAM reflects how Medicare’s thinking has matured. It is mandatory (for cleaner evidence and broader impact), it spans multiple procedures (not just one), and it explicitly builds in equity safeguards to avoid penalizing hospitals that serve disadvantaged patients — addressing a recurring critique of earlier value programs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "TEAM also illustrates the cumulative nature of payment reform: each model learns from the last. CJR proved bundles work for joint replacement; TEAM extends that proof across more surgeries while patching the equity gaps the earlier models exposed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "Voluntary models attract providers who expect to win, biasing results. Mandatory models like CJR and TEAM require everyone in selected markets to participate, which gives CMS cleaner evidence about whether a payment model truly works — but also generates strong provider pushback.",
+      "title": "Mandatory models produce better evidence"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMMI’s Mixed Track Record"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "For all its importance, CMMI’s overall record is sobering and politically contested. In roughly 14 years it has launched more than 50 models, but a 2023 Congressional Budget Office analysis found that only six produced statistically significant savings — and none exceeded about $220 million in annual savings. Factoring in CMMI’s operating budget, its net budgetary impact has been only marginally negative."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Very few models have cleared the high bar required for national expansion. To date, only the Diabetes Prevention Program and the Pioneer ACO model met the statutory criteria, and even the Pioneer ACO model was never fully folded into permanent Medicare. Many promising-looking models simply did not save money once rigorously evaluated."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This record is essential context, not a footnote. It shows that paying for value is genuinely hard — good ideas frequently fail to deliver net savings — and it fuels ongoing debate about how CMMI should be reformed. But the standouts, like CJR’s bundled-payment success, are exactly why Medicare keeps testing, refining, and occasionally scaling new models."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5q1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5q1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMMI’s history is a humbling lesson: most payment experiments do not save money — but the few that do, like mandatory bundles, point the way for the rest of the system."
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "A bundled payment sets a single target price for an entire episode of care (often 90 days), reconciling fee-for-service spending against that target at the end.",
+        "Bundles attack fragmentation, giving providers a financial reason to coordinate the whole episode — especially costly post-acute care.",
+        "The CMS Innovation Center (CMMI), created by ACA Section 3021 in 2010, tests payment models and can expand successful ones nationally without new legislation.",
+        "BPCI Advanced (2018) used voluntary 90-day episodes across many conditions; CJR (2016-2024) tested mandatory bundles for hip and knee replacement.",
+        "CJR reduced spending by about $812 per episode, mainly by shifting patients away from costly post-acute facilities, with no measured harm to quality.",
+        "The TEAM model, launching January 2026, makes episode payment mandatory across five surgical categories and adds safety-net hospital protections.",
+        "CMMI’s overall record is mixed: of 50+ models, a CBO analysis found only six achieved statistically significant savings, and only the Diabetes Prevention Program and Pioneer ACO met the bar for expansion."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "CJR’s evaluation found savings of roughly $812 per episode driven largely by a decrease in the share of patients discharged to institutional post-acute care, with no worsening of complications, mortality, readmissions, or ED use. Bundled payments typically find their savings in post-acute care, not by cutting surgeon fees or restricting access.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "By paying surgeons substantially less for each operation"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "By reducing discharges to costly post-acute facilities in favor of home recovery"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "By denying joint replacements to higher-risk patients"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "By eliminating the 90-day follow-up period entirely"
+        }
+      ],
+      "question": "The Comprehensive Care for Joint Replacement (CJR) model achieved most of its savings by changing what aspect of care?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] \"What is CMMI?\" FAQs about the CMS Innovation Center — KFF — https://www.kff.org/medicare/fact-sheet/what-is-cmmi-and-11-other-faqs-about-the-cms-innovation-center/ — ACA Section 3021 creation, expansion authority, model overview."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] BPCI Advanced: Participant Resources — CMS — https://www.cms.gov/priorities/innovation/innovation-models/bpci-advanced/participant-resources — 2018 launch, 90-day episodes, target prices, retrospective reconciliation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Two-Year Evaluation of Mandatory Bundled Payments for Joint Replacement — NEJM — https://www.nejm.org/doi/full/10.1056/NEJMsa1809010 — CJR ~$812/episode savings, post-acute shift, no quality harm."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Comprehensive Care for Joint Replacement Model — CMS — https://www.cms.gov/priorities/innovation/innovation-models/cjr — CJR period (Apr 2016-Dec 2024), mandatory design."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Financial success of CJR paved way for TEAM — Norwood — https://www.norwood.com/financial-success-of-comprehensive-care-for-joint-replacement-cjr-model-paved-way-for-team/ — TEAM mandatory, five surgical episodes, Jan 2026 launch, safety-net protections."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] CMMI’s savings record sparks concern among lawmakers — Healthcare Dive — https://www.healthcaredive.com/news/cmmi-cms-innovation-center-federal-spending-house-energy-commerce/718926/ — CBO: only 6 of 50+ models had significant savings; only DPP and Pioneer ACO certified for expansion."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicare-fundamentals",
+  "order": 11,
+  "slug": {
+    "_type": "slug",
+    "current": "bundled-payments-and-innovation"
+  },
+  "title": "Bundled Payments and CMS Innovation Center Models"
+}

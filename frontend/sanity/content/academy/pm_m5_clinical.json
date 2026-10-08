@@ -212,9 +212,9 @@
       "_key": "m5sg0002",
       "title": "Pharmacogenomics by the Numbers",
       "stats": [
-        {"_key": "m5st002a", "value": "~7%", "label": "U.S. population with CYP2C19 poor metabolizer status", "context": "Varies by ancestry: ~2-3% of Europeans, ~15-20% of East Asians. These patients do not effectively activate clopidogrel. (CPIC Guidelines, 2022)", "trend": "neutral"},
-        {"_key": "m5st002b", "value": "95%+", "label": "Abacavir hypersensitivity reactions prevented by HLA-B*5701 screening", "context": "Prospective HLA-B*5701 screening before abacavir prescribing has virtually eliminated this life-threatening drug reaction. (Lancet, 2008)", "trend": "up"},
-        {"_key": "m5st002c", "value": "99%", "label": "People with at least one actionable pharmacogenomic variant", "context": "A 2022 CPIC analysis found that virtually everyone has at least one clinically actionable pharmacogenomic variant when tested across a panel of major genes. (CPIC, 2022)", "trend": "neutral"}
+        {"_key": "m5st002a", "value": "2–14%", "label": "CYP2C19 poor metabolizers, by ancestry", "context": "Varies by ancestry: about 2% of people of European ancestry, 4% of African Americans, and 14% of Chinese individuals are poor metabolizers who do not effectively activate clopidogrel. (NCBI Medical Genetics Summaries: Clopidogrel Therapy and CYP2C19 Genotype)", "trend": "neutral"},
+        {"_key": "m5st002b", "value": "95%+", "label": "Abacavir hypersensitivity reactions prevented by HLA-B*5701 screening", "context": "Prospective HLA-B*5701 screening before abacavir prescribing has virtually eliminated this life-threatening drug reaction. (Mallal et al., New England Journal of Medicine, 2008)", "trend": "up"},
+        {"_key": "m5st002c", "value": "99%", "label": "People with at least one actionable pharmacogenomic variant", "context": "In 487,409 UK Biobank participants, 99.5% carried at least one genotype predicting an atypical response to a drug covered by CPIC guidance. (McInnes et al., Clinical Pharmacology & Therapeutics, 2021)", "trend": "neutral"}
       ]
     },
     {

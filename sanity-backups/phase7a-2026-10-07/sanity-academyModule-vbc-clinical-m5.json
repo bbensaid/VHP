@@ -1,0 +1,862 @@
+{
+  "_createdAt": "2026-03-08T09:25:57Z",
+  "_id": "academyModule-vbc-clinical-m5",
+  "_rev": "eq5oAYPsLy0PFYEDJSPUPB",
+  "_type": "academyModule",
+  "_updatedAt": "2026-10-08T02:01:43Z",
+  "body": [
+    {
+      "_key": "m5p001",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s001",
+          "_type": "span",
+          "marks": [],
+          "text": "Picture a primary care physician seeing 24 patients in a day. Under fee-for-service, she is rewarded for each visit, each test ordered, each referral made. Under value-based care, she is rewarded for something harder to measure but far more important: whether her patients are actually healthier. That shift in incentives changes everything that happens in the exam room."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5p002",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s002",
+          "_type": "span",
+          "marks": [],
+          "text": "This module is about the clinical side of the VBC transformation. It is not abstract. The shift shows up in care team huddles, in how discharge plans are written, in how nurses manage phone calls with patients just released from the hospital, and in how a physician spends the last five minutes of every appointment. Understanding these changes is essential for anyone who works in, manages, or influences clinical care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5sg01",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "m5st01",
+          "context": "Roughly 1 in 4 hospital admissions in the US is considered preventable — avoidable with better outpatient management. Source: Agency for Healthcare Research and Quality.",
+          "label": "Preventable Hospital Admissions",
+          "trend": "down",
+          "value": "27%"
+        },
+        {
+          "_key": "m5st02",
+          "context": "1 in 5 Medicare patients is readmitted within 30 days of discharge — often due to poor care transitions, not clinical failure. Source: CMS, 2023.",
+          "label": "30-Day Readmission Rate",
+          "trend": "down",
+          "value": "20%"
+        },
+        {
+          "_key": "m5st03",
+          "context": "The US spends over $528 billion annually on the top 10 chronic diseases — almost all of which are manageable or preventable in primary care. Source: Milken Institute.",
+          "label": "Annual Chronic Disease Spend",
+          "trend": "up",
+          "value": "$528B"
+        }
+      ],
+      "title": "Why Clinical Practice Must Change"
+    },
+    {
+      "_key": "m5h2a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5h2as",
+          "_type": "span",
+          "marks": [],
+          "text": "How Payment Models Shape Clinical Decisions"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "m5p003",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s003",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinicians do not consciously think 'I am going to order this test because I will get paid for it.' But payment systems create incentive structures that shape behavior in powerful ways. Under fee-for-service, a busy practice survives by filling the schedule. Under value-based care, a practice is rewarded for keeping patients healthy enough that they do not need to come back as often."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5an01",
+      "_type": "analogyBlock",
+      "analogy": "Think about two gyms. The first gym charges you every time you visit — the more you visit, the more they earn. They are motivated to have you come back constantly. The second gym charges a flat monthly fee — they earn the same whether you come twice a week or never. But if you quit because you are not getting healthier, they lose your membership. That gym is motivated to actually get you fit.",
+      "bridge": "Fee-for-service is the first gym — providers earn more when you come back. Value-based care is the second gym — providers earn more when you stay healthy and do not need to come back. The incentives point in opposite directions, and that shapes clinical practice in profound ways.",
+      "concept": "How payment models shape clinical behavior"
+    },
+    {
+      "_key": "m5cb01",
+      "_type": "comparisonBlock",
+      "leftLabel": "Fee-for-Service",
+      "rightLabel": "Value-Based Care",
+      "rows": [
+        {
+          "_key": "m5cr01",
+          "aspect": "Success metric",
+          "left": "Volume of visits and procedures billed",
+          "right": "Patient outcomes and quality performance scores"
+        },
+        {
+          "_key": "m5cr02",
+          "aspect": "Chronic disease management",
+          "left": "Reactive — treat flare-ups as they occur",
+          "right": "Proactive — prevent flare-ups with regular monitoring"
+        },
+        {
+          "_key": "m5cr03",
+          "aspect": "Patient no-shows",
+          "left": "Lost revenue, little incentive to follow up",
+          "right": "Care gap — proactively outreach and reschedule"
+        },
+        {
+          "_key": "m5cr04",
+          "aspect": "Discharge planning",
+          "left": "Focused on clinical readiness to leave hospital",
+          "right": "Focused on preventing readmission, including social needs"
+        },
+        {
+          "_key": "m5cr05",
+          "aspect": "Specialist referrals",
+          "left": "Refer often; no financial cost to over-referring",
+          "right": "Coordinate care; referrals used when clearly indicated"
+        },
+        {
+          "_key": "m5cr06",
+          "aspect": "Time with patients",
+          "left": "Optimized for throughput — 10 to 15 minute visits",
+          "right": "Optimized for relationship — longer for complex patients"
+        }
+      ],
+      "title": "Clinical Practice: Fee-for-Service vs. Value-Based Care"
+    },
+    {
+      "_key": "m5p004",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s004",
+          "_type": "span",
+          "marks": [],
+          "text": "These differences are not just philosophical. They have real operational consequences. A practice moving to value-based contracts must restructure its workflows, hire different staff — care coordinators, community health workers, data analysts — and invest in systems that identify which patients are at risk before they land in the emergency room."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5h2b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5h2bs",
+          "_type": "span",
+          "marks": [],
+          "text": "Quality Measures: How Clinical Performance Is Evaluated"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "m5p005",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s005",
+          "_type": "span",
+          "marks": [],
+          "text": "In value-based care, clinicians and practices are evaluated on a structured set of quality measures — standardized metrics that assess whether patients are receiving evidence-based care and achieving good outcomes. These come from several sources: the Centers for Medicare and Medicaid Services, the National Committee for Quality Assurance, and the Agency for Healthcare Research and Quality."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5cal1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5cas1",
+          "_type": "span",
+          "marks": [],
+          "text": "Quality Measure: A standardized, evidence-based metric used to assess whether patients receive recommended care. Examples: the percentage of diabetic patients with HbA1c under 8.0%, the percentage of patients with hypertension whose blood pressure is controlled, or the percentage of eligible patients who received a colorectal cancer screening."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "m5p006",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s006",
+          "_type": "span",
+          "marks": [],
+          "text": "There are hundreds of quality measures in use across the US healthcare system. For primary care practices in most VBC contracts, a core set of 10 to 20 measures typically drives the bulk of performance-based bonuses or penalties. The most important fall into four categories."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5sp01",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "m5stp1",
+          "description": "Did patients receive recommended screenings and immunizations? Examples: mammography rates, colorectal cancer screening, flu vaccine administration, pediatric well-child visits. These measures track whether clinicians are proactively catching problems early.",
+          "number": 1,
+          "title": "Preventive Care"
+        },
+        {
+          "_key": "m5stp2",
+          "description": "Are patients with ongoing conditions managed to target levels? Examples: HbA1c control for diabetics, blood pressure control for hypertension patients, statin therapy for cardiovascular patients. These measures track whether care prevents deterioration.",
+          "number": 2,
+          "title": "Chronic Disease Management"
+        },
+        {
+          "_key": "m5stp3",
+          "description": "Do patients feel heard, respected, and well-informed? Measured via standardized CAHPS surveys. Tracks communication quality, care coordination experience, and overall satisfaction. Poor scores often signal care gaps.",
+          "number": 3,
+          "title": "Patient Experience"
+        },
+        {
+          "_key": "m5stp4",
+          "description": "Are patients using the ER and hospital for things that could be handled in outpatient settings? Examples: ED visit rate for ambulatory care-sensitive conditions, 30-day readmission rate, potentially preventable admissions. High rates signal gaps in primary care access or management.",
+          "number": 4,
+          "title": "Avoidable Utilization"
+        }
+      ],
+      "title": "The Four Domains of Clinical Quality in Value-Based Care"
+    },
+    {
+      "_key": "m5wb01",
+      "_type": "warningBlock",
+      "misconception": "Quality measures are just bureaucratic checkboxes that distract from real clinical care.",
+      "reality": "Well-designed quality measures are derived from clinical evidence. A practice that achieves high HbA1c control rates has fewer diabetic patients with amputations, kidney failure, and blindness. The measures exist because doing them consistently saves lives. The legitimate concern is ensuring that measures focus on the right things — and that they do not create perverse incentives of their own."
+    },
+    {
+      "_key": "m5p007",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s007",
+          "_type": "span",
+          "marks": [],
+          "text": "The most sophisticated VBC programs now move beyond process measures — did we do the right thing? — toward outcome measures: did the patient get better? Vermont's All-Payer ACO Model (2017–2025) tracked outcomes like population-level diabetes prevalence trends and preventable hospitalization rates, not just whether a doctor ordered a hemoglobin A1c test."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5h2c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5h2cs",
+          "_type": "span",
+          "marks": [],
+          "text": "Population Health Management: Responsibility Beyond the Appointment"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "m5p008",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s008",
+          "_type": "span",
+          "marks": [],
+          "text": "One of the most fundamental shifts in value-based care is moving from patient-by-patient thinking to population-level thinking. Under fee-for-service, a physician's responsibility begins when a patient walks through the door and ends when they leave. Under VBC, a care team is responsible for the health of an entire attributed patient panel — including the people who are not coming in."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5an02",
+      "_type": "analogyBlock",
+      "analogy": "A school principal does not just react to students who show up in her office with problems. She monitors attendance rates, tracks which students are falling behind, identifies patterns of absenteeism, and proactively reaches out to struggling families before a student drops out. She manages the entire school population — not just the ones who knock on her door.",
+      "bridge": "Population health management works the same way. A VBC practice does not just treat patients who schedule appointments. It monitors the health status of its entire panel — flagging patients overdue for a screening, whose blood pressure has not been checked in 18 months, or whose recent ER visits suggest they are struggling to manage a chronic condition at home.",
+      "concept": "Population health management"
+    },
+    {
+      "_key": "m5p009",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s009",
+          "_type": "span",
+          "marks": [],
+          "text": "Population health management requires three things fee-for-service practices rarely had: data, staff, and proactive processes. The data comes from electronic health records and claims. The staff — care managers or medical assistants in expanded roles — conduct outreach to patients who need follow-up. The processes include monthly panel reviews, risk stratification algorithms, and care gap closure protocols."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5sg02",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "m5st04",
+          "context": "Consistently, the sickest 5% of patients account for roughly 50% of total healthcare spending. VBC practices identify and intensively manage this group. Source: AHRQ.",
+          "label": "Patients Drive 50% of Costs",
+          "trend": "neutral",
+          "value": "5%"
+        },
+        {
+          "_key": "m5st05",
+          "context": "The CDC estimates that 70% of chronic disease burden is preventable through lifestyle changes and early intervention — exactly what population health management targets.",
+          "label": "Chronic Disease Is Preventable",
+          "trend": "neutral",
+          "value": "70%"
+        },
+        {
+          "_key": "m5st06",
+          "context": "Patients enrolled in structured care management programs have 3x better adherence to treatment plans and significantly fewer ED visits. Source: Health Affairs, 2022.",
+          "label": "Impact of Care Management",
+          "trend": "up",
+          "value": "3x"
+        }
+      ],
+      "title": "Population Health by the Numbers"
+    },
+    {
+      "_key": "m5p010",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s010",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk stratification is the engine of population health management. Practices use algorithms — built into EHR systems or analytics platforms — to sort patients into tiers based on their likelihood of a high-cost clinical event in the next 6 to 12 months. High-risk patients get intensive care management: regular check-ins, home visits, medication reconciliation. Low-risk patients get preventive outreach: reminders for annual wellness visits and screenings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5ex01",
+      "_type": "exampleBlock",
+      "body": "ChenMed operates primary care clinics specifically designed for high-risk Medicare patients. Their model flips the standard formula: instead of seeing 24 patients per day in 15-minute slots, ChenMed physicians see 8 to 10 patients per day for 40-minute visits. Every patient has a dedicated care team. Transportation to appointments is provided. Patients receive monthly wellness visits even when they are feeling fine.",
+      "eyebrow": "Real-World Example",
+      "outcome": "ChenMed patients have 30 to 40 percent fewer hospitalizations and emergency department visits than matched comparison groups. Source: Health Affairs, 2020.",
+      "source": "Health Affairs, 2020; ChenMed internal outcomes reporting",
+      "title": "ChenMed — Intensive Primary Care for High-Risk Seniors"
+    },
+    {
+      "_key": "m5h2d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5h2ds",
+          "_type": "span",
+          "marks": [],
+          "text": "Care Coordination: The Connective Tissue of Value-Based Care"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "m5p011",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s011",
+          "_type": "span",
+          "marks": [],
+          "text": "The US healthcare system was built around specialization. Cardiologists manage hearts. Endocrinologists manage diabetes. Orthopedic surgeons manage joints. This works extraordinarily well for complex procedures and rare conditions. It works catastrophically poorly for the average Medicare patient with five chronic conditions who sees seven different specialists — none of whom talk to each other."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5cal2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5cas2",
+          "_type": "span",
+          "marks": [],
+          "text": "Care Coordination: The deliberate organization of patient care activities and the sharing of information among all participants to achieve safer, more effective care. It includes communication between providers, follow-up after transitions, medication reconciliation, and ensuring patients understand their care plan."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "m5p012",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s012",
+          "_type": "span",
+          "marks": [],
+          "text": "Poor care coordination is expensive and dangerous. When a cardiologist adds a new medication and does not know the patient's nephrologist recently changed a kidney medication, the combination can cause serious harm. When a hospital discharges a patient with instructions to 'schedule a follow-up within a week' but does not help make that appointment, the patient often does not go — and ends up back in the ER within 30 days."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5sg03",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "m5st07",
+          "context": "Poor coordination — duplicated tests, medication errors, missed follow-ups — costs the US an estimated $27.2 billion annually. Source: Annals of Internal Medicine.",
+          "label": "Annual Coordination Failure Cost",
+          "trend": "down",
+          "value": "$27.2B"
+        },
+        {
+          "_key": "m5st08",
+          "context": "More than half of US adults have at least 2 chronic conditions, requiring active coordination among multiple providers. Source: CDC, 2023.",
+          "label": "Adults with Multiple Chronic Conditions",
+          "trend": "up",
+          "value": "58%"
+        },
+        {
+          "_key": "m5st09",
+          "context": "One in three patients reports experiencing at least one care coordination problem in the past two years. Source: Commonwealth Fund 2022 International Health Policy Survey.",
+          "label": "Patients Experience Coordination Failures",
+          "trend": "neutral",
+          "value": "1 in 3"
+        }
+      ],
+      "title": "The Cost of Poor Care Coordination"
+    },
+    {
+      "_key": "m5p013",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s013",
+          "_type": "span",
+          "marks": [],
+          "text": "Value-based care fixes this by making coordination an explicit responsibility with a named owner. The care coordinator — often a registered nurse, social worker, or medical assistant in an extended role — serves as the connective tissue between providers, between hospital and home, and between patient and care plan. Their job is to make sure nothing falls through the cracks."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5sp02",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "m5sp21",
+          "description": "Weekly review of the patient panel with the care team. Flag patients overdue for follow-up, those who had a recent hospitalization, or whose risk score changed in the EHR. Decide who gets a proactive outreach call this week.",
+          "number": 1,
+          "title": "Panel Review"
+        },
+        {
+          "_key": "m5sp22",
+          "description": "When a patient is discharged from the hospital, the coordinator calls within 48 to 72 hours: Did you fill your medications? Do you understand your discharge instructions? Is your follow-up appointment scheduled? Can you get there?",
+          "number": 2,
+          "title": "Transition Management"
+        },
+        {
+          "_key": "m5sp23",
+          "description": "Ensure that specialist visit notes are shared with the primary care team. Follow up to confirm referrals were completed. Flag conflicting medication orders for physician review.",
+          "number": 3,
+          "title": "Specialist Coordination"
+        },
+        {
+          "_key": "m5sp24",
+          "description": "At every transition point — admission, discharge, specialist visit — reconcile the patient's complete medication list. Polypharmacy is a leading cause of preventable harm, especially in older adults.",
+          "number": 4,
+          "title": "Medication Reconciliation"
+        },
+        {
+          "_key": "m5sp25",
+          "description": "Help patients understand their care plan, set personal health goals, and navigate the health system. Activated patients — those who feel confident managing their own health — have significantly better outcomes and lower costs.",
+          "number": 5,
+          "title": "Patient Activation"
+        }
+      ],
+      "title": "What a Care Coordinator Does in a VBC Practice"
+    },
+    {
+      "_key": "m5ex02",
+      "_type": "exampleBlock",
+      "body": "Vermont's Blueprint for Health embeds Community Health Teams in primary care practices across the state. Each CHT includes nurses, social workers, dietitians, and community health workers co-located with or closely partnered with primary care practices. When a practice flags a high-risk patient — perhaps a diabetic with three recent ER visits — the CHT mobilizes. They assess barriers such as no transportation, food insecurity, or depression, connect patients to community resources, and manage follow-up.",
+      "eyebrow": "Case Study",
+      "outcome": "Blueprint practices with active CHT partnerships have shown significant reductions in preventable hospitalization rates and improvements in chronic disease management scores compared to non-Blueprint practices. Source: Vermont DVHA Blueprint evaluation reports.",
+      "source": "Vermont Department of Vermont Health Access, Blueprint for Health Annual Reports",
+      "title": "Vermont Blueprint for Health — Community Health Teams"
+    },
+    {
+      "_key": "m5h2e",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5h2es",
+          "_type": "span",
+          "marks": [],
+          "text": "Reducing Preventable Hospitalizations and Readmissions"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "m5p014",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s014",
+          "_type": "span",
+          "marks": [],
+          "text": "Hospitalizations are the single largest driver of healthcare costs. A single inpatient stay for a Medicare patient costs, on average, more than $13,000. Many of those hospitalizations are for conditions that, if managed properly in an outpatient setting, should never have required a hospital bed. These are called ambulatory care-sensitive conditions — uncontrolled diabetes, COPD exacerbations, congestive heart failure, urinary tract infections."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5hl01",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5hls1",
+          "_type": "span",
+          "marks": [],
+          "text": "Ambulatory Care-Sensitive Conditions (ACSCs): Medical conditions for which timely and appropriate outpatient care can prevent hospitalization. They include asthma, COPD, congestive heart failure, diabetes complications, and hypertension. High ACSC hospitalization rates signal that primary care access or quality is failing."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "m5p015",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s015",
+          "_type": "span",
+          "marks": [],
+          "text": "Value-based care contracts explicitly target ACSC hospitalization rates as a key performance indicator. A practice with a high ACSC rate is leaving money on the table — and more importantly, leaving patients in harm's way. Hospitalizations carry real clinical risk: hospital-acquired infections, medication errors, delirium in elderly patients, and the deconditioning from days of bed rest."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5wb02",
+      "_type": "warningBlock",
+      "misconception": "Keeping patients out of the hospital means denying them care they need.",
+      "reality": "Reducing avoidable hospitalizations is about providing better care earlier — not rationing. A patient with COPD who sees their care coordinator monthly, has a written action plan for exacerbations, and can reach a nurse by phone when their breathing worsens is receiving better care than a patient who sees their doctor twice a year and lands in the hospital every winter. The goal is the right care in the right setting."
+    },
+    {
+      "_key": "m5p016",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s016",
+          "_type": "span",
+          "marks": [],
+          "text": "Readmissions are a related but distinct problem. A readmission occurs when a patient returns to the hospital within 30 days of discharge. The national Medicare readmission rate hovers around 15 to 20 percent. CMS began financially penalizing hospitals for excess readmissions in 2013 under the Hospital Readmissions Reduction Program. Since then, rates have declined — but remain stubbornly high."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5sp03",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "m5sp31",
+          "description": "Use a standardized discharge checklist: review medications, schedule follow-up before discharge, provide written instructions in plain language at a 6th-grade reading level, confirm patient understanding via teach-back method.",
+          "number": 1,
+          "title": "Structured Discharge Planning"
+        },
+        {
+          "_key": "m5sp32",
+          "description": "A nurse or care coordinator calls within 2 to 3 days of discharge. Confirm the patient is taking medications correctly, understands warning signs, and has a follow-up appointment. Early problem identification prevents crisis.",
+          "number": 2,
+          "title": "48 to 72 Hour Post-Discharge Call"
+        },
+        {
+          "_key": "m5sp33",
+          "description": "Patients seen by their primary care provider within 7 days of discharge have significantly lower readmission rates. Schedule this before the patient leaves the hospital whenever possible.",
+          "number": 3,
+          "title": "Rapid Follow-Up Appointment"
+        },
+        {
+          "_key": "m5sp34",
+          "description": "Medication errors during care transitions are extremely common. Pharmacist-led or nurse-led reconciliation at discharge — comparing the inpatient list to what the patient took before admission — catches dangerous discrepancies.",
+          "number": 4,
+          "title": "Medication Reconciliation"
+        },
+        {
+          "_key": "m5sp35",
+          "description": "Many readmissions are driven by social factors: no food at home, no transportation to the pharmacy, social isolation causing non-adherence. Transitional care programs that screen for social needs and connect patients to community resources see the largest readmission reductions.",
+          "number": 5,
+          "title": "Address Social Needs"
+        }
+      ],
+      "title": "Evidence-Based Interventions That Reduce Readmissions"
+    },
+    {
+      "_key": "m5kc01",
+      "_type": "knowledgeCheck",
+      "answer": "Under a VBC contract, this patient represents an open care gap. The practice is responsible for her health outcomes even when she is not actively seeking care. The right response is proactive outreach: a care coordinator calls or sends a letter, offers scheduling assistance including transportation help if needed, and flags her for the team's panel review. If she has barriers to care — cost, transportation, work schedule — the team works to address them. Waiting for her to call is no longer acceptable practice.",
+      "hint": "Think about what 'population health management' means — and who is responsible for patients who are NOT in the office.",
+      "question": "A patient with type 2 diabetes and hypertension has not been seen in your practice in 14 months. Her last HbA1c was 9.2 — well above the target of 8.0. She is not scheduled for an upcoming appointment. Under a value-based care contract, what should happen?"
+    },
+    {
+      "_key": "m5h2f",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5h2fs",
+          "_type": "span",
+          "marks": [],
+          "text": "The New Clinical Team: Roles That Value-Based Care Built"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "m5p017",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s017",
+          "_type": "span",
+          "marks": [],
+          "text": "Value-based care has not replaced physicians. But it has radically expanded the clinical team around them. In a well-functioning VBC practice, the physician is the expert clinician and diagnostic mind — supported by a team that handles much of what was once shoved into a 15-minute visit or never done at all."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5cb02",
+      "_type": "comparisonBlock",
+      "leftLabel": "Fee-for-Service Practice",
+      "rightLabel": "VBC-Aligned Practice",
+      "rows": [
+        {
+          "_key": "m5cr07",
+          "aspect": "Core clinical roles",
+          "left": "Physician and medical assistant",
+          "right": "Physician, APP, RN care manager, care coordinator, social worker, CHW"
+        },
+        {
+          "_key": "m5cr08",
+          "aspect": "Patient outreach",
+          "left": "Patient calls us when something is wrong",
+          "right": "We proactively call patients between visits"
+        },
+        {
+          "_key": "m5cr09",
+          "aspect": "Data use",
+          "left": "Chart review during the visit",
+          "right": "Panel management reports, daily risk score reviews, care gap dashboards"
+        },
+        {
+          "_key": "m5cr10",
+          "aspect": "After-hours coverage",
+          "left": "Answering service or ER",
+          "right": "Nurse triage line, telehealth, after-hours urgent access"
+        },
+        {
+          "_key": "m5cr11",
+          "aspect": "Behavioral health",
+          "left": "Refer to external psychiatry — months of waiting",
+          "right": "Embedded behavioral health in primary care — same-day or next-day"
+        }
+      ],
+      "title": "The Care Team: Traditional vs. Value-Based"
+    },
+    {
+      "_key": "m5p018",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s018",
+          "_type": "span",
+          "marks": [],
+          "text": "Advanced Practice Providers — nurse practitioners and physician assistants — play an expanded role in VBC models, often managing the bulk of stable chronic disease visits and wellness exams while physicians focus on complex diagnostic cases. This is team-based care: the right person, for the right patient, at the right time."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5h2g",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5h2gs",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont Clinical Programs: Value-Based Care in Action"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "m5p019",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s019",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont is not just talking about value-based clinical care — it has been running the experiment for over a decade. The Blueprint for Health, launched in 2006, was one of the first statewide primary care transformation programs in the country. Every participating practice has undergone a formal practice transformation process: team-based care, patient registries, care coordination, and quality measurement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5p020",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s020",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's All-Payer ACO Model, which ran from 2017 through December 31, 2025, took this further. OneCare Vermont — the state's accountable care organization until it wound down at the end of 2025 — held a global budget covering roughly a third of Vermont residents. Practices within OneCare were responsible for the total cost of care for their attributed population. Every preventable hospitalization and readmission is a financial signal that something in the clinical model needs to change."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5ex03",
+      "_type": "exampleBlock",
+      "body": "Copley Hospital is a 25-bed critical access hospital in Morrisville serving a largely rural population. As a member of OneCare Vermont, Copley participated in population health management for its attributed patients. The hospital invested in a care transition program: every patient discharged is followed by a registered nurse for 30 days post-discharge, and a risk stratification tool identifies patients most likely to be readmitted for intensified outreach.",
+      "eyebrow": "Vermont in Focus",
+      "outcome": "Copley has maintained readmission rates well below state and national averages for a hospital serving a comparably complex patient population — demonstrating that rural hospitals can achieve VBC goals with the right team structure.",
+      "source": "Vermont DVHA All-Payer Model evaluation, OneCare Vermont reporting",
+      "title": "Copley Hospital — Rural VBC in Morrisville, Vermont"
+    },
+    {
+      "_key": "m5h2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5h2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The Clinical Case for Value-Based Care"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "m5p021",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s021",
+          "_type": "span",
+          "marks": [],
+          "text": "For many clinicians, the shift to value-based care feels like an administrative imposition — more metrics to track, more documentation requirements, more meetings. That is a legitimate concern, and it reflects real transition pain. But the underlying logic of VBC aligns more closely with why most clinicians entered medicine than fee-for-service ever did."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5p022",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5s022",
+          "_type": "span",
+          "marks": [],
+          "text": "Fee-for-service rewarded doing more. It paid well for procedures and poorly for conversations, care coordination, and prevention. It created a system where a physician who spent 45 minutes with a complex elderly patient on 12 medications was paid the same as a physician who spent 10 minutes. It created burnout among clinicians who wanted to practice relationship-based medicine but were trapped on a volume treadmill."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "m5hl02",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m5hls2",
+          "_type": "span",
+          "marks": [],
+          "text": "Physician burnout is at crisis levels: 63% of physicians report burnout symptoms, with administrative burden and loss of clinical autonomy cited as primary drivers. VBC, done well, can restore what drew clinicians to medicine: time with patients, team support, and a payment system that rewards doing what is actually right for the patient. Source: AMA National Burnout Survey, 2025."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "m5kc02",
+      "_type": "knowledgeCheck",
+      "answer": "A preventable hospitalization (ambulatory care-sensitive admission) is a hospital stay that could have been avoided with timely outpatient care — like a COPD patient hospitalized for an exacerbation that could have been managed in the clinic with proper monitoring and medication adjustment. A readmission occurs when a patient returns to the hospital within 30 days of being discharged. Both matter under VBC because they represent clinical failures where the care system fell short. Both carry financial consequences: preventable admissions represent waste, and readmissions trigger CMS penalties under the Hospital Readmissions Reduction Program.",
+      "hint": "Think about timing — one happens before the hospital stay, one happens after.",
+      "question": "What is the difference between a 'preventable hospitalization' and a '30-day readmission,' and why do both matter under VBC contracts?"
+    },
+    {
+      "_key": "m5tw01",
+      "_type": "takeawayBlock",
+      "points": [
+        "Fee-for-service pays for volume; value-based care pays for outcomes — this distinction reshapes every clinical workflow.",
+        "Quality measures in VBC track preventive care, chronic disease management, patient experience, and avoidable utilization.",
+        "Population health management means taking responsibility for patients who are NOT in the office — not just those who show up.",
+        "Care coordination is a clinical skill and a team function — it prevents the gaps between providers that cause harm and cost.",
+        "Preventable hospitalizations and readmissions are the most visible signals of clinical model failure — and the primary financial targets in VBC contracts.",
+        "Vermont's Blueprint for Health and its All-Payer ACO Model (2017–2025) demonstrate that statewide clinical transformation is achievable with measurable results.",
+        "Value-based care, done well, can restore the relationship-centered practice that most clinicians entered medicine to provide."
+      ],
+      "title": "Key Takeaways — Clinical Practice Under Value-Based Care"
+    }
+  ],
+  "courseTitle": "Value-Based Care Fundamentals",
+  "estimatedReadTime": 22,
+  "learningObjectives": [
+    "Explain how fee-for-service versus value-based payment creates different clinical incentives and workflows",
+    "Identify the four major domains of quality measurement used in VBC contracts",
+    "Define population health management and describe how it works in a primary care setting",
+    "Explain what care coordination involves and why it reduces both cost and harm",
+    "Describe evidence-based interventions that reduce preventable hospitalizations and readmissions",
+    "Identify Vermont-specific clinical programs that operationalize value-based care"
+  ],
+  "level": "Intermediate",
+  "moduleNumber": 5,
+  "nextModuleSlug": "vbc-equity-m6",
+  "pillar": "Clinical",
+  "prevModuleSlug": "vbc-fundamentals-module-4-technology-pillar",
+  "publishedAt": "2026-03-08T00:00:00Z",
+  "slug": {
+    "_type": "slug",
+    "current": "vbc-clinical-m5"
+  },
+  "summary": "Value-based care is not just a billing change — it reshapes what happens in every exam room, every hospital ward, and every care team huddle. This module explores how the shift from fee-for-service to value changes clinical workflows, team structures, quality measurement, population health management, and care coordination. If you practice, manage, or support clinical care in any setting, this module explains why the ground is shifting beneath your feet — and what to do about it.",
+  "title": "From Volume to Value at the Bedside: How Value-Based Care Transforms Clinical Practice",
+  "totalModules": 6
+}

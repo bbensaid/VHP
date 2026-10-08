@@ -1,0 +1,66 @@
+{
+  "id": "777e9de7-ca07-4e91-b841-c494794c2e19",
+  "slug": "integration-engines-architecture",
+  "sanity_slug": "hie-integration-architecture",
+  "content_blocks": [
+    {
+      "body": "An integration engine is middleware that sits between source systems (EHRs, labs, pharmacies) and destination systems (HIE repositories, analytics platforms, care management tools). It:\n\n1. **Ingests** messages in various formats (HL7 v2, C-CDA, FHIR)\n2. **Validates** message structure and required fields\n3. **Transforms** data from source format/codes to target standards\n4. **Routes** messages to the appropriate destinations\n5. **Monitors** for errors and alerts on failures\n\nCommon platforms: Mirth Connect (open source, widely used in HIEs), Rhapsody, Azure Health Data Services, AWS HealthLake, InterSystems HealthShare.",
+      "type": "text",
+      "heading": "What is an integration engine?"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Each source system connects directly to each destination. Simple for small networks; becomes unmanageable at scale (N×M connections).",
+          "icon": "ti-point-to-point",
+          "title": "Point-to-point"
+        },
+        {
+          "body": "All participants connect to a central hub. Reduces connections to N+M. The dominant model for statewide HIEs like VITL.",
+          "icon": "ti-broadcast",
+          "title": "Hub-and-spoke"
+        },
+        {
+          "body": "Publishers send data to topics; subscribers receive events they care about. Scales well; supports real-time alerting (ADT feeds, care alerts).",
+          "icon": "ti-topology-star-3",
+          "title": "Publish-subscribe"
+        },
+        {
+          "body": "A dedicated FHIR API layer that stores resources and exposes standardized endpoints. Increasingly the target architecture for new HIE builds.",
+          "icon": "ti-cloud",
+          "title": "FHIR server"
+        },
+        {
+          "body": "TLS in transit, mTLS for server-to-server, role-based access control, audit logging, and de-identification pipelines are non-negotiable.",
+          "icon": "ti-shield-lock",
+          "title": "Security layers"
+        },
+        {
+          "body": "Messages that fail validation are quarantined, not dropped. Dead-letter queues and alerting ensure nothing silently disappears.",
+          "icon": "ti-refresh-alert",
+          "title": "Error handling"
+        }
+      ],
+      "heading": "Architecture patterns"
+    },
+    {
+      "body": "VITL's VHIE operates as a centralized hub serving Vermont's hospitals, clinics, labs, pharmacies, and community health organizations. Data contributors send HL7 v2 or C-CDA messages; VITL normalizes, patient-matches via MPI, and makes data available through:\n• Query-based exchange (provider queries for patient records)\n• Alert-based services (ADT notifications to subscribed providers)\n• Population health analytics platforms\n• Connections to regional and national networks",
+      "type": "callout",
+      "heading": "Vermont's VHIE technical architecture",
+      "variant": "info"
+    },
+    {
+      "hint": "Recommended: Your lead architect or integration engineer walks through your actual integration engine setup, key channels, and a real data flow example. 10–15 minutes. This is one of the most valuable audio slots in the course.",
+      "type": "audio_slot",
+      "label": "Our integration architecture: a technical walkthrough"
+    },
+    {
+      "type": "video",
+      "caption": "Healthcare integration engine fundamentals — Mirth Connect walkthrough (~12 min)",
+      "videoId": "kNQdQjiqv2s",
+      "mediaType": "youtube",
+      "durationSeconds": 720
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "2bde52d5-ab4f-49d1-8d47-05345af194b7",
+  "slug": "sdoh-evidence-domains",
+  "sanity_slug": "sdoh-evidence-domains",
+  "content_blocks": [
+    {
+      "body": "The most widely cited estimate in health equity work: clinical care accounts for approximately 10–20% of health outcomes. The remaining 80–90% is shaped by social and economic factors, health behaviors, and environment.\n\nThis doesn't mean health care doesn't matter — it does, especially in acute crisis. But it does mean that a health system laser-focused on clinical quality while ignoring where patients live, work, eat, and breathe is optimizing the wrong variable.",
+      "type": "text",
+      "heading": "30% clinical care, 70% everything else"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Educational attainment is one of the strongest predictors of health. More education → higher income, better jobs, better health literacy, longer life.",
+          "icon": "ti-school",
+          "title": "Education access & quality"
+        },
+        {
+          "body": "Income, employment, food security, housing stability. Poverty is a powerful health risk factor — both through material deprivation and chronic stress.",
+          "icon": "ti-home",
+          "title": "Economic stability"
+        },
+        {
+          "body": "Social support, discrimination, community cohesion, civic participation. Social isolation is comparable to smoking 15 cigarettes/day for health impact.",
+          "icon": "ti-building-community",
+          "title": "Social & community context"
+        },
+        {
+          "body": "Insurance coverage, geographic access to providers, quality of care received, health literacy, and trust in health care systems.",
+          "icon": "ti-stethoscope",
+          "title": "Health care access & quality"
+        },
+        {
+          "body": "Housing quality, air and water quality, access to healthy food, walkability, safety. ZIP code predicts health better than genetic code.",
+          "icon": "ti-leaf",
+          "title": "Neighborhood & built environment"
+        }
+      ],
+      "heading": "The 5 Healthy People 2030 SDOH domains"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Share of health outcomes attributable to clinical care",
+          "value": "10–20%",
+          "source": "County Health Rankings"
+        },
+        {
+          "label": "Equivalent health harm of social isolation",
+          "value": "15 cigs/day",
+          "source": "Holt-Lunstad 2015"
+        },
+        {
+          "label": "Distance between highest and lowest life expectancy in some US cities",
+          "value": "9 miles",
+          "source": "VCU Center on Society and Health"
+        },
+        {
+          "label": "Of Medicaid and low-income patients report at least one unmet social need",
+          "value": "40%",
+          "source": "NACHC"
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "caption": "Social determinants of health — WHO explainer (~3 min)",
+      "videoId": "d7OdKQwTyKo",
+      "mediaType": "youtube",
+      "durationSeconds": 180
+    }
+  ]
+}

@@ -1,0 +1,476 @@
+{
+  "_createdAt": "2026-05-27T19:30:36Z",
+  "_id": "academyModule-vbc-bundled-mechanics",
+  "_rev": "oEdzoBJnHz58jGhpZT1CcQ",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-27T19:30:36Z",
+  "body": [
+    {
+      "_key": "bund-intro",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Bundled payments represent one of the most conceptually elegant reforms in the value-based care toolkit: instead of paying each provider separately for each service delivered during a clinical episode — the hospitalist, the surgeon, the physical therapist, the skilled nursing facility — a single payment covers the entire episode. Any provider that can deliver the same quality of care at lower cost keeps a share of the savings. The logic is compelling: bundled payments create a financial incentive to coordinate care, eliminate redundant testing, and substitute lower-cost post-acute settings for more expensive ones. The reality, as with most VBC models, is more complicated."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-h2-episode",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "What Defines an Episode of Care"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "bund-p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "An episode of care has three defining characteristics: a clinical anchor event (typically an inpatient hospital admission or a defined outpatient procedure), a time window (how many days before and after the anchor event are included), and a scope of services (which clinical services and care settings fall within the bundle). Each of these design choices has significant consequences for both the incentive structure and the feasibility of the model."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "In BPCI-Advanced, the dominant CMS bundled payment model as of 2024, most episodes use a 90-day window post-discharge. This 90-day period captures the acute hospitalization, all post-acute care (skilled nursing, home health, inpatient rehabilitation), outpatient rehabilitation, professional fees, and related readmissions. A hip replacement episode, for example, includes not just the surgery and hospital stay but all follow-up care through 90 days — making the total episode cost potentially two to three times the acute hospitalization cost alone."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-h2-target-price",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Setting the Target Price: Historical Spending Plus a Discount"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "bund-p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The target price — the amount Medicare will pay for the entire episode — is calculated from historical claims data for the participating hospital or practice, adjusted for regional trends and case mix. CMS sets the target price by taking 3 years of historical episode spending, risk-adjusting for patient characteristics, applying a national trend factor, and then applying a discount that represents CMS's minimum savings requirement. For BPCI-Advanced, this discount has typically been 3% for most clinical episodes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The target price calculation is critical to understanding both the opportunity and the risk in bundled payment. A hospital that has historically been efficient in managing post-acute care will have a low target price, giving it less room to generate savings. A hospital with high historical post-acute spending — particularly high skilled nursing facility utilization — will have a higher target price, giving it substantial opportunity to reduce spending below target by shifting patients to home health or outpatient therapy. This asymmetry means that bundled payment participation is most financially attractive for organizations that have historically been inefficient, paradoxically rewarding past waste."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-h2-bpci",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "BPCI and BPCI-Advanced: The Model Architecture"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "bund-p6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The original Bundled Payment for Care Improvement (BPCI) initiative, launched in 2013, was a voluntary pilot that offered four different model variants testing different episode definitions and payment structures. BPCI was notable for being prospective in Model 2 (a single retrospective reconciliation payment) and retrospective in Models 3 and 4. The model attracted hundreds of hospital and physician group participants and generated the evidence base that informed BPCI-Advanced."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-p7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "BPCI-Advanced, which launched in 2018 and has been extended multiple times, is a voluntary two-sided risk model covering 32 clinical episodes — both inpatient and, uniquely, outpatient procedure episodes. It is considered an Advanced APM under MACRA, meaning qualifying participants earn the 5% APM bonus and are exempt from MIPS reporting. BPCI-Advanced uses retrospective reconciliation: providers continue to receive standard Medicare fee-for-service payments during the performance period, and then CMS reconciles actual episode spending against the target price annually. If actual spending is below target (minus a minimum savings requirement), the participant earns a reconciliation payment. If spending exceeds the target price, the participant owes a repayment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-h3-reconciliation",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "How Reconciliation Works in Practice"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "bund-p8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Reconciliation is the financial settlement process at the heart of retrospective bundled payment. For each episode, CMS calculates actual Medicare spending — aggregating all Part A and Part B claims for services falling within the episode definition — and compares it to the target price. The participant (typically a hospital or physician group) receives or pays the difference, subject to stop-loss provisions that cap downside risk at a percentage of the target price. For hospitals operating hundreds of bundled episodes, the reconciliation can be a multimillion-dollar event in either direction."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-p9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The 12-18 month lag between episode completion and reconciliation payment creates significant cash flow management challenges. A hospital that improves care coordination in January will not receive reconciliation payments for those episodes until the following year. This lag reduces the direct incentive feedback loop and requires organizations to sustain operational changes before seeing financial confirmation that they are working."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-h2-mandatory-voluntary",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Mandatory vs. Voluntary Participation: The Selection Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "bund-p10",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "All current CMS bundled payment models are voluntary, meaning hospitals and physician groups choose whether to participate. This creates a fundamental selection problem: the organizations most likely to volunteer for bundled payment are those most confident they can generate savings — either because they already have low post-acute utilization (giving them little financial opportunity) or because they have substantial post-acute waste and the operational capacity to address it. Organizations that struggle with care coordination, lack data infrastructure, or have poor relationships with post-acute providers are the least likely to volunteer — and arguably the most in need of the model's incentives."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-p11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Comprehensive Care for Joint Replacement (CJR) model, launched in 2016, was the first and only mandatory bundled payment model in Medicare history, covering hip and knee replacement in selected geographic markets. CJR's mandatory design was precisely intended to eliminate selection bias and test whether bundled payment could work for organizations that would not have voluntarily chosen it. The CJR evidence is discussed in the next lesson, but the policy lesson is important: voluntary models generate biased evidence about the model's effectiveness across the full distribution of providers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-h2-gainsharing",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Gainsharing: Aligning Physicians with Episode Savings"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "bund-p12",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Because the surgeon's clinical decisions — which implant to use, whether to discharge to home vs. SNF, which post-acute provider to refer to — are among the largest drivers of episode cost, aligning surgeon incentives with bundle savings is essential. Gainsharing arrangements allow the hospital or convener entity to share reconciliation payments with the physicians whose decisions drive episode spending. CMS permits gainsharing in bundled payment models, with requirements that payments be proportional to the clinician's contribution to savings and not contingent on the volume or value of referrals that violate the anti-kickback statute's intent."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-p13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "In practice, gainsharing arrangements vary widely. Some hospitals pay surgeons a flat bonus for completing required episode management protocols (care pathway adherence, patient education, referral to preferred post-acute partners). Others distribute a share of reconciliation savings based on each surgeon's episode volume and cost performance relative to peers. The most sophisticated arrangements provide surgeons with real-time episode cost data — showing them where spending is going during the 90-day window — combined with performance-based payment that rewards cost-conscious care decisions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-h2-convener",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Convener Organizations: The Infrastructure Layer"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "bund-p14",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS permits convener organizations to serve as the legal participant in BPCI-Advanced on behalf of multiple downstream participants — hospitals, physician groups, or post-acute providers. Conveners handle the administrative burden of model participation (data submission, target price calculation, reconciliation accounting) and provide infrastructure services like care management platforms, post-acute preferred network development, and analytics that individual hospitals may not have the scale to develop independently."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-p15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Major convener organizations in BPCI-Advanced include Remedy Partners (acquired by Nuvera), Archway Health, Caravan Health, and several large health systems acting as conveners for their affiliated physician practices. Conveners typically charge a management fee or take a share of reconciliation savings in exchange for their services. This arrangement allows smaller hospitals and physician groups to access bundled payment models without building the full administrative infrastructure independently, expanding the model's reach beyond large academic medical centers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-h2-episodes",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Which Episodes Are Used Most and Why"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "bund-p16",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Not all clinical episodes are equally amenable to bundled payment, and participation patterns in BPCI and BPCI-Advanced reflect this. The most commonly selected episodes are musculoskeletal — particularly lower extremity joint replacement (hip and knee) — followed by cardiac and cardiac rhythm management episodes, and medical episodes like pneumonia and COPD. Lower extremity joint replacement is the dominant episode for several reasons:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-bullet1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinical predictability: The procedure is highly standardized with relatively low intraoperative variation, making episode cost variation attributable to post-acute care decisions rather than surgical complexity."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-bullet2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Large post-acute care spend: SNF utilization after hip and knee replacement has historically been high — often 30-40% of patients — even though evidence consistently shows that healthy patients can safely recover at home or in outpatient rehab settings. This creates a large, modifiable target for cost reduction."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-bullet3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "High volume: Joint replacement is among the most common elective procedures in Medicare, giving hospitals enough episode volume to generate statistically stable performance data and meaningful reconciliation payments."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-bullet4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Engaged surgeons: Orthopedic surgeons tend to have strong relationships with their post-acute partners and respond strongly to gainsharing incentives, making physician alignment more achievable than in medical episodes where care is more diffuse."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-h2-drg",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Relationship to Hospital Coding and DRGs"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "bund-p17",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Bundled payments interact directly with the inpatient DRG payment system. The hospital continues to receive its standard DRG payment for the anchor hospitalization — the bundle does not replace the DRG payment but rather adds a reconciliation layer on top of it. This means that diagnosis coding intensity, which determines which DRG the case maps to, affects both the base payment and the target price calculation. Cases coded to higher-severity DRGs generate higher base payments and higher target prices, creating potential coding dynamics where hospitals have incentives to document patient complexity thoroughly — which may represent legitimate capture of true comorbidity or may represent documentation-driven upcoding."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-p18",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk adjustment in bundled payment target prices uses patient characteristics including age, sex, and the presence of major comorbidities (via CMS's hierarchical condition category model) to adjust target prices. This is designed to prevent hospitals from losing money on complex, comorbid patients whose episodes genuinely cost more than the average. Whether the risk adjustment adequately captures true clinical risk — or whether organizations can game the risk model through diagnosis documentation — is an ongoing concern in bundled payment design."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bund-synthesis",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Bundled payments are technically complex instruments whose success depends on the interaction of target price methodology, episode design, physician alignment, post-acute care strategy, and organizational data infrastructure. The mechanics matter enormously: a well-designed bundle with fair risk adjustment and meaningful gainsharing can align incentives across a fragmented care delivery system in ways that fee-for-service cannot. A poorly designed bundle — with an unfair target price, inadequate risk adjustment, or misaligned physician incentives — generates the appearance of reform while creating perverse incentives around patient selection and coding. Understanding these mechanics is prerequisite to interpreting the evidence on what bundles actually achieve, which the next lesson examines in detail."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseTitle": "Value-Based Care: From Fee-for-Service to Outcomes",
+  "estimatedReadTime": 19,
+  "level": "Intermediate",
+  "moduleNumber": 7,
+  "pillar": "Economics",
+  "slug": {
+    "_type": "slug",
+    "current": "vbc-bundled-payment-mechanics"
+  },
+  "summary": "Bundled payments replace per-service billing for a defined episode of care with a single payment covering all services across providers and settings, creating powerful incentives to reduce waste and improve coordination. This lesson explains how episodes are defined, how target prices are set, how BPCI-Advanced and its predecessors work mechanically, how reconciliation functions, and the critical roles of convener organizations, gainsharing arrangements, and post-acute care strategy in determining whether a bundle succeeds or fails.",
+  "title": "Episode-Based Bundled Payments: How They Work"
+}

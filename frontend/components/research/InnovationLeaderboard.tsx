@@ -214,6 +214,31 @@ const STATES: StateRecord[] = [...RAW_STATES]
   .sort((a, b) => b.composite - a.composite)
   .map((s, i) => ({ ...s, rank: i + 1 }));
 
+// ─── DISTRICT OF COLUMBIA — listed, NOT ranked (Appendix D.17: "50 states + DC") ──────────
+// DC is shown with only the inputs that exist for it, and is kept OUT of the ranking, the
+// composite, and NATIONAL_AVG — the same treatment America's Health Rankings itself gives DC:
+//   Policy    — REAL, scored by this table's own tier rule: DC is not an AHEAD participant in
+//               any cohort (cms.gov/priorities/innovation/innovation-models/ahead) and runs no
+//               all-payer or global-budget program, so it takes the "no known program" tier = 30.
+//   Clinical  — UNAVAILABLE. AHR does not score or rank DC: "Scores and ranks were not
+//               calculated for the District of Columbia because of its unique status as an
+//               entirely urban population with different governing and funding mechanisms than
+//               states" (AHR 2025 Annual Report, Appendix: Methodology). The rank->0-100 rule
+//               therefore has no input.
+//   Technology, Economics, Operations — UNAVAILABLE. Other states' SIM values are estimates
+//               loosely informed by this platform's earlier adoption/maturity index; that index
+//               never contained DC, so there is no basis for even a disclosed estimate, and one
+//               is not invented here.
+// With 4 of 5 inputs missing a composite would be meaningless, so DC carries no rank.
+const DC_UNRANKED = {
+  state: "District of Columbia",
+  abbr: "DC",
+  region: "South" as const, // U.S. Census Bureau: South region, South Atlantic division
+  policy: 30,
+  policyProgram: "—",
+  note: "Listed, not ranked. Policy uses this table's tier rule (no AHEAD cohort, no all-payer/global-budget program). America's Health Rankings does not score DC, and no basis exists for the simulated Technology/Economics/Operations estimates, so DC has no composite or rank.",
+};
+
 // ─────────────────────────────────────────────────────────────
 // DATA: HOSPITAL SYSTEMS
 // ─────────────────────────────────────────────────────────────
@@ -390,6 +415,11 @@ function StateRankings() {
     });
     return data.slice(0, topN);
   }, [search, regionFilter, sortKey, sortDir, topN]);
+  const showDC =
+    (regionFilter === "All" || regionFilter === DC_UNRANKED.region) &&
+    (!search ||
+      DC_UNRANKED.state.toLowerCase().includes(search.toLowerCase()) ||
+      DC_UNRANKED.abbr.toLowerCase().includes(search.toLowerCase()));
 
   const ColHeader = ({ label, k }: { label: string; k: StateSort }) => (
     <th
@@ -573,11 +603,28 @@ function StateRankings() {
                 </React.Fragment>
               );
             })}
+            {showDC && (
+              <tr className="bg-gray-900/40" title={DC_UNRANKED.note}>
+                <td className="px-3 py-2.5 text-[10px] font-bold uppercase tracking-wider text-slate-500">Unranked</td>
+                <td className="px-3 py-2.5 font-semibold text-white">
+                  <span className="inline-block w-7 text-center text-xs bg-fuchsia-900/60 rounded px-1 mr-1.5 text-fuchsia-300">{DC_UNRANKED.abbr}</span>
+                  {DC_UNRANKED.state}
+                </td>
+                <td className="px-3 py-2.5 text-slate-400">{DC_UNRANKED.region}</td>
+                <td className="px-3 py-2.5 text-slate-500">n/a</td>
+                <td className="px-3 py-2.5 text-slate-300">{DC_UNRANKED.policy}</td>
+                <td className="px-3 py-2.5 text-slate-500">n/a</td>
+                <td className="px-3 py-2.5 text-slate-500">n/a</td>
+                <td className="px-3 py-2.5 text-slate-500">n/a</td>
+                <td className="px-3 py-2.5 text-slate-500">n/a</td>
+                <td colSpan={4} className="px-3 py-2.5 text-slate-400 text-xs">{DC_UNRANKED.note}</td>
+              </tr>
+            )}
           </tbody>
         </table>
       </div>
       <p className="text-xs text-slate-500">
-        Showing {filtered.length} of {STATES.length} states. Policy &amp; Clinical: real, cited data.
+        Showing {filtered.length} of {STATES.length} states{showDC ? " + the District of Columbia (listed, unranked)" : ""}. Policy &amp; Clinical: real, cited data.
         Technology, Economics, Operations: <SimBadge /> simulated estimates. Vermont: sourced pillar readiness.
       </p>
     </div>

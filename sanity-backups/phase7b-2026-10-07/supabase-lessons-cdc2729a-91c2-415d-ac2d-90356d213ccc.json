@@ -1,0 +1,81 @@
+{
+  "id": "cdc2729a-91c2-415d-ac2d-90356d213ccc",
+  "slug": "health-disparities-sdoh",
+  "sanity_slug": "hie-health-disparities-sdoh",
+  "content_blocks": [
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Every person has a fair opportunity to attain their full health potential — not limited by social, economic, or environmental disadvantage.",
+          "icon": "ti-scale",
+          "title": "Health equity"
+        },
+        {
+          "body": "Preventable differences in health outcomes and disease burden experienced by socially disadvantaged groups.",
+          "icon": "ti-chart-bar",
+          "title": "Health disparities"
+        },
+        {
+          "body": "Conditions where people are born, grow, live, work, and age — housing, income, education, food security, transportation — that drive 80%+ of health outcomes.",
+          "icon": "ti-home",
+          "title": "Social determinants"
+        },
+        {
+          "body": "Rural Vermonters face significantly worse access to specialists, behavioral health, and preventive care than urban counterparts.",
+          "icon": "ti-map-pin",
+          "title": "Geographic disparities"
+        }
+      ],
+      "heading": "Foundational equity concepts"
+    },
+    {
+      "body": "HIE data is not equity-neutral. It can amplify inequities in several ways:\n\n**Incomplete participation**: Safety-net providers serving the most vulnerable populations are often less connected to HIEs due to resource constraints. Their patients are underrepresented.\n\n**Missing demographic data**: Race and ethnicity data is frequently missing or inaccurate in EHRs and claims — making it impossible to measure or address disparities.\n\n**Algorithmic bias**: Risk stratification algorithms trained on historical data encode existing disparities. A Black patient with the same disease burden as a white patient may be scored as lower risk due to lower historical healthcare utilization.\n\n**Conversely**, when designed intentionally, HIE is a powerful equity tool: stratified quality measures reveal hidden disparities that aggregate data masks; SDOH data integration enables targeted outreach to vulnerable populations.",
+      "type": "text",
+      "heading": "The data equity imperative"
+    },
+    {
+      "body": "Act 68 explicitly requires that health system transformation generate 'improvements in health outcomes, population health, quality of care, regional access to services, and reducing disparities in access resulting from demographic factors or health status.' Equity is not optional — it is a statutory requirement.",
+      "type": "callout",
+      "heading": "Act 68 equity mandate",
+      "variant": "warning"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "of Americans live in rural areas",
+          "value": "20%",
+          "source": "AAMC"
+        },
+        {
+          "label": "of physicians practice rurally",
+          "value": "11%",
+          "source": "AAMC"
+        },
+        {
+          "label": "of health outcomes driven by social factors",
+          "value": "80%+",
+          "source": "WHO"
+        },
+        {
+          "label": "of EHR records missing race/ethnicity data",
+          "value": "~40%",
+          "source": "ONC research"
+        }
+      ]
+    },
+    {
+      "hint": "Recommended: Your equity lead or community health team discusses known data gaps, specific disparities you've identified in Vermont, and concrete steps your organization is taking. 10–15 minutes. This is one of the most important audio slots in the course.",
+      "type": "audio_slot",
+      "label": "Equity in our HIE: gaps, strategies, and commitments"
+    },
+    {
+      "type": "video",
+      "caption": "Health equity and social determinants of health — an introduction (~13 min)",
+      "videoId": "i9e5WzEQQks",
+      "mediaType": "youtube",
+      "durationSeconds": 780
+    }
+  ]
+}

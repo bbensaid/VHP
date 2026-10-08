@@ -1,0 +1,991 @@
+{
+  "_createdAt": "2026-05-29T04:40:31Z",
+  "_id": "interop-vermont-vitl",
+  "_rev": "eq5oAYPsLy0PFYEDJSPUXz",
+  "_type": "academyModule",
+  "_updatedAt": "2026-10-08T02:01:48Z",
+  "body": [
+    {
+      "_key": "intro_p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "intro_p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont is a small state — fewer than 650,000 residents spread across rugged, rural terrain. Yet Vermont has built one of the most mature statewide health information exchange ecosystems in the United States, connecting nearly every hospital, most health centers, and hundreds of independent practices into a single, governed data network. At the center of that network sits Vermont Information Technology Leaders (VITL), a nonprofit designated by state law to operate the Vermont Health Information Exchange (VHIE). Alongside it, the Green Mountain Care Board (GMCB) administers VHCURES — Vermont's All-Payer Claims Database — providing a complementary financial lens on how care is delivered and paid for across the state. Together, VITL and VHCURES form the twin pillars of Vermont's interoperability architecture, demonstrating both the promise and the hard-won lessons of state-led health IT."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "intro_p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "intro_p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson traces Vermont's journey: the legislative mandate that created VITL, the clinical and administrative services the VHIE provides, the population-level power of claims data, the integrations that tie it all together through the Blueprint for Health, and the challenges that remain — from rural connectivity gaps to questions of long-term funding sustainability."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1_h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1_h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "VITL: A Legislative Mandate for Statewide Connectivity"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1_p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1_p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "VITL was founded in 2005 as a private, nonprofit organization charged with advancing health care delivery and reform in Vermont through the aggregation and exchange of health information. Vermont's legislature subsequently codified VITL's role through Act 107 of 2006, formally designating it as the exclusive operator of the statewide health information exchange network. This legislative backstop was critical: unlike many states where HIE efforts fragmented into competing regional networks, Vermont's approach created a single, authoritative exchange from the start."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1_p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1_p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Under Vermont statute (18 V.S.A. Chapter 219), VITL is required to be named in the state's Health Information Technology Plan as the operator of the statewide HIE network. The statute also mandates that privacy standards applied on the network be no less stringent than those required under HIPAA. This statutory foundation gave VITL both legitimacy and accountability — participating organizations knew they were connecting to a legally recognized, regulated infrastructure rather than a voluntary pilot project."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1_callout",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1_callouts",
+          "_type": "span",
+          "marks": [],
+          "text": "Key framing: VITL's mission is to securely aggregate, standardize, and share the data needed to improve the effectiveness of healthcare for Vermonters. Its vision is to be a leader in collaboratively delivering actionable data that leads to better health."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1_p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1_p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For its first decade, VITL focused primarily on building connectivity — signing up hospitals, health centers, and physician practices, and standing up the core technical infrastructure. The Green Mountain Care Board (GMCB), established by Act 48 of 2011, was later given oversight authority over VITL's budget and strategic plan, ensuring that VITL's priorities remained aligned with Vermont's broader health care reform goals. However, as of July 1, 2025 — through Act 62 of 2025 — responsibility for the Health IT Plan and VITL oversight was formally moved away from the GMCB as Vermont reorganized its health system governance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1_stats",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1_statssg1",
+          "context": "Private nonprofit, legislatively designated HIE operator",
+          "label": "VITL Founded",
+          "value": "2005"
+        },
+        {
+          "_key": "s1_statssg2",
+          "context": "Vermont health care organizations using VITLAccess (2025)",
+          "label": "Connected Organizations",
+          "value": "216"
+        },
+        {
+          "_key": "s1_statssg3",
+          "context": "Organizations submitting clinical data to the VHIE",
+          "label": "Contributing Organizations",
+          "value": "142"
+        },
+        {
+          "_key": "s1_statssg4",
+          "context": "Share of data-sharing Vermonters with a unified health record in VITLAccess",
+          "label": "Patient Coverage",
+          "value": "98.9%"
+        },
+        {
+          "_key": "s1_statssg5",
+          "context": "New data collection interfaces created in calendar year 2024",
+          "label": "New Interfaces (2024)",
+          "value": "147"
+        },
+        {
+          "_key": "s1_statssg6",
+          "context": "New results delivery interfaces stood up in 2024",
+          "label": "New Results Interfaces (2024)",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "_key": "s2_h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2_h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "What the Vermont Health Information Exchange Actually Does"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2_p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2_p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Vermont Health Information Exchange (VHIE) is a secure, statewide data network that enables health care providers, ACOs, and other approved users to electronically exchange and access medical records. Far from a passive data warehouse, the VHIE delivers a suite of active services that change how care is coordinated across Vermont."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2_h3a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2_h3as",
+          "_type": "span",
+          "marks": [],
+          "text": "VITLAccess: The Clinical Portal"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s2_p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2_p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "VITLAccess is VITL's web-based clinical portal — the primary interface through which authorized clinicians and care coordinators access patient data. Rebuilt in spring 2022 with a significantly improved user interface, VITLAccess provides a longitudinal, consolidated health record drawing from all contributing organizations. A clinician seeing a patient in a rural emergency department at 2 a.m. can pull up that patient's medication list, allergy history, recent lab results, imaging reports, and care plans — all from a single screen, even if the data originated from a hospital on the other side of the state."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2_p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2_p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2022 redesign added several critical capabilities: immunization data drawn from the Vermont Immunization Registry and hospital systems, improved patient-matching algorithms to reduce duplicate records and ensure comprehensive record assembly, and the ability to print or download multiple results or documents simultaneously. These improvements reflected lessons from clinician feedback about the original portal and represent the iterative, user-centered design approach VITL has pursued."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2_h3b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2_h3bs",
+          "_type": "span",
+          "marks": [],
+          "text": "Core Data Services"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s2_p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2_p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Beyond the portal itself, the VHIE supports several distinct data service categories. Clinical document exchange allows participating organizations to push and pull structured clinical documents such as Continuity of Care Documents (CCDs) generated at the point of care. Medication history aggregation draws from pharmacies connected to the network, giving prescribers visibility into what a patient has actually filled — not just what was prescribed in their own system. Lab results delivery routes results from connected laboratories back to ordering providers. And care alerts notify care coordinators when patients experience significant clinical events such as emergency department visits or hospitalizations, enabling timely follow-up."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2_example",
+      "_type": "exampleBlock",
+      "content": "A patient with diabetes managed by a primary care practice in Rutland is admitted to a hospital in Burlington following a hypoglycemic episode. The VHIE immediately gives the Burlington ED clinicians access to the patient's full medication list — including insulin dosing — their most recent HbA1c, and the care plan from their endocrinologist. When the patient is discharged, a care alert flows back to the Rutland practice, triggering a follow-up call within 48 hours. No fax machine, no phone tag — just connected systems.",
+      "title": "Example"
+    },
+    {
+      "_key": "s2_p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2_p5s",
+          "_type": "span",
+          "marks": [],
+          "text": "VITL has also progressively expanded the scope of data flowing through the VHIE. Under Beth Anderson's leadership as CEO (2020-2025), the exchange broadened participation to include pharmacies, clinical laboratories, behavioral health providers, and ambulance services. This expansion was not merely additive — it addressed longstanding gaps where patients' behavioral health and substance use treatment records were invisible to the acute care system, creating dangerous information asymmetries at critical moments."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2_compare",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Before VITL / VHIE",
+        "points": [
+          "Providers faxed or phoned for records",
+          "ER clinicians often had no medication history",
+          "Behavioral health data siloed and inaccessible",
+          "Duplicate testing due to unknown prior results",
+          "No statewide visibility into immunization status"
+        ]
+      },
+      "right": {
+        "label": "After VITL / VHIE",
+        "points": [
+          "Longitudinal records accessible at point of care",
+          "Pharmacy-sourced medication history available in portal",
+          "Behavioral health providers connecting to network",
+          "Lab results routed electronically to ordering providers",
+          "Vermont Immunization Registry data integrated"
+        ]
+      },
+      "title": "Before VITL / VHIE vs. After VITL / VHIE"
+    },
+    {
+      "_key": "s3_h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3_h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "VHCURES: Vermont's All-Payer Claims Database"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3_p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3_p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Where the VHIE captures the clinical story of a patient's care, VHCURES — Vermont's Health Care Uniform Reporting and Evaluation System — captures the financial story. VHCURES is Vermont's All-Payer Claims Database (APCD), maintained and managed by the Green Mountain Care Board (GMCB). It is one of the most comprehensive claims datasets in the country, and it plays a central role in Vermont's ability to understand, evaluate, and regulate its health care system."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3_p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3_p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "VHCURES receives medical and pharmacy claims data from three payer categories: commercial health insurers (including third-party administrators and pharmacy benefit managers), Vermont Medicaid, and Medicare. Any insurer serving 200 or more Vermont resident members is required to submit data to VHCURES. The database contains eligibility information — whether a patient is covered — as well as the full claims record of services delivered and payments made."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3_stats",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s3_statssg1",
+          "context": "Share of commercially insured Vermonters represented in VHCURES",
+          "label": "Commercial Coverage",
+          "value": "60%"
+        },
+        {
+          "_key": "s3_statssg2",
+          "context": "All Vermont Medicaid enrollees included in VHCURES",
+          "label": "Medicaid Coverage",
+          "value": "100%"
+        },
+        {
+          "_key": "s3_statssg3",
+          "context": "All Vermont Medicare enrollees included in VHCURES",
+          "label": "Medicare Coverage",
+          "value": "100%"
+        },
+        {
+          "_key": "s3_statssg4",
+          "context": "Minimum member count requiring insurer data submission",
+          "label": "Submission Threshold",
+          "value": "200+"
+        },
+        {
+          "_key": "s3_statssg5",
+          "context": "Commercial insurers, Medicaid, and Medicare all contribute data",
+          "label": "Payer Types",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "_key": "s3_p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3_p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "VHCURES is a powerful analytical tool precisely because it crosses payer boundaries. A researcher studying opioid prescribing patterns, a policymaker evaluating hospital pricing, or a health plan benchmarking its network performance can all draw on VHCURES to understand Vermont's health care system in ways that no single payer's data could support. The GMCB uses VHCURES as a core input for its hospital budget review process, its analysis of health care spending growth, and its assessment of the All-Payer ACO Model's impact on Vermont's cost trajectory."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3_p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3_p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Data from VHCURES is released in two formats: a Public Use File, which is de-identified and available for broad research use, and a Limited Use Dataset, which contains more granular information and is available to qualified researchers under data use agreements with privacy protections. The GMCB's APCD Snapshot tool provides publicly accessible metadata about what is in VHCURES — which health plans are contributing, the highest-volume procedures in the state, and how the dataset has evolved over time — giving policymakers and the public a window into the data without requiring full data access."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3_highlight",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3_highlights",
+          "_type": "span",
+          "marks": [],
+          "text": "Critical distinction: VHCURES (claims data) and the VHIE (clinical data) are complementary but separate systems. Claims data tells you what was billed and paid. Clinical data tells you what actually happened at the point of care. Vermont is one of a handful of states actively working to link these two data streams to build a more complete picture of health and care delivery."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s4_h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4_h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Blueprint for Health: Where VITL Data Drives Reform"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4_p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4_p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's Blueprint for Health is a statewide quality improvement program that has, since its expansion in the late 2000s, worked to transform primary care delivery across the state. It is one of the most long-running and closely studied multi-payer primary care reform efforts in the United States. And it could not function at scale without VITL."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4_p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4_p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Practices participating in the Blueprint for Health are required to sign agreements with VITL and connect their EHR systems to the VHIE. This connectivity serves two core purposes: care coordination at the individual patient level (through VITLAccess), and population-level outcomes measurement through the state's clinical data registry. The registry aggregates clinical data from participating practices and makes it available for quality reporting — allowing the state to track metrics like diabetes control rates, blood pressure management, and preventive care delivery across its entire primary care network."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4_p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4_p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "VITL also shares data with other key reform initiatives. OneCare Vermont — the state's All-Payer ACO until the model ended and OneCare wound down at the end of 2025 — used VHIE data to support care management for its attributed population. The Vermont Department of Health connects to VITL for public health reporting, including immunization registries, disease surveillance, and population health monitoring. This web of data-sharing agreements, each governed by formal legal agreements and privacy protections, is what transforms a simple health information exchange into a reform infrastructure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4_analogy",
+      "_type": "analogyBlock",
+      "analogy": "Think of Vermont's health data ecosystem as a utility grid: VITL is the transmission network that moves power (data) from generators (EHRs, pharmacies, labs) to consumers (clinicians, care coordinators, public health agencies). VHCURES is the billing meter that tracks how much power was consumed and what it cost. The Blueprint for Health is the efficiency program that uses both the transmission data and the billing data to reduce waste and improve outcomes. None of these pieces works as well without the others.",
+      "concept": ""
+    },
+    {
+      "_key": "s4_steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "s4_stepsst1",
+          "description": "A primary care practice enrolls in the Blueprint for Health program and signs a VITL data sharing agreement.",
+          "title": "Practice Joins Blueprint"
+        },
+        {
+          "_key": "s4_stepsst2",
+          "description": "VITL creates a data collection interface to the practice's EHR, enabling bidirectional data flow.",
+          "title": "EHR Connected to VHIE"
+        },
+        {
+          "_key": "s4_stepsst3",
+          "description": "Patient encounter data — diagnoses, medications, lab orders — flows from the EHR into the VHIE.",
+          "title": "Clinical Data Flows In"
+        },
+        {
+          "_key": "s4_stepsst4",
+          "description": "Payers submit claims for patients attributed to the practice into VHCURES.",
+          "title": "Claims Data Flows In"
+        },
+        {
+          "_key": "s4_stepsst5",
+          "description": "Clinicians use VITLAccess to see the full patient record; care alerts notify of ED visits.",
+          "title": "Care Coordination Activated"
+        },
+        {
+          "_key": "s4_stepsst6",
+          "description": "The clinical data registry aggregates practice-level data for Blueprint quality metrics.",
+          "title": "Quality Reporting Generated"
+        },
+        {
+          "_key": "s4_stepsst7",
+          "description": "GMCB and DVHA use VHCURES linked with clinical data to evaluate total cost of care trends.",
+          "title": "Reform Evaluated"
+        }
+      ],
+      "title": "Steps"
+    },
+    {
+      "_key": "s5_h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5_h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Persistent Challenges: Rural Connectivity, Small Practices, and Sustainability"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5_p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5_p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's health information exchange achievements are real and significant, but so are the headwinds VITL and its partners face. Three challenges stand out as particularly structural: rural broadband limitations, the burden on small practices, and long-term funding sustainability."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5_h3a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5_h3as",
+          "_type": "span",
+          "marks": [],
+          "text": "Rural Broadband: Infrastructure Before Interoperability"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s5_p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5_p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont is one of the most rural states in the country — approximately 93% of its land area is classified as rural, and thousands of residents live in areas with no reliable broadband access. Vermont's own 2021 telecommunications planning documents identified 51,000 homes and businesses as unserved or underserved, with limited private-market incentive to extend service to those locations. For health IT, this is a foundational barrier: an EHR cannot connect to the VHIE if the practice does not have reliable internet. Telehealth cannot substitute for in-person care if patients cannot maintain a stable video connection."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5_p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5_p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont has pursued state and federal funding to address this gap. However, in 2025, federal cancellation of Vermont's $5.3 million Digital Equity Grant — funding intended to support broadband expansion and digital literacy — underscored the fragility of relying on federal dollars for infrastructure that is foundational to the state's health reform strategy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5_warning",
+      "_type": "warningBlock",
+      "message": "Small rural practices — often a single physician or a small group — face the steepest interoperability challenges. They may lack the IT staff to manage an EHR, the bandwidth to use the VHIE reliably, or the financial resources to absorb interface build costs. Vermont's HIE is comprehensive in coverage, but coverage statistics must be read with an eye toward which practices are connected versus which remain on the margins.",
+      "title": "Watch Out"
+    },
+    {
+      "_key": "s5_h3b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5_h3bs",
+          "_type": "span",
+          "marks": [],
+          "text": "Funding Sustainability"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s5_p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5_p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "VITL's funding has historically depended on a combination of state appropriations, federal grants, and fees from participating organizations. Research into VITL's early development identified funding sustainability as a persistent challenge: stakeholders recognized the need for a sustainable business model but had not yet resolved it, with interviewees concluding that some form of ongoing public-private partnership would be the only viable long-term approach. That tension has not fully resolved. Federal health IT funding has fluctuated, and the political environment around health IT investment continues to shift."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5_h3c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5_h3cs",
+          "_type": "span",
+          "marks": [],
+          "text": "TEFCA and National Connectivity: Protective Trade-offs"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s5_p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5_p5s",
+          "_type": "span",
+          "marks": [],
+          "text": "As TEFCA — the Trusted Exchange Framework and Common Agreement — has grown into a national interoperability framework, with over 9,200 organizations signed up across 10 Qualified Health Information Networks (QHINs) as of early 2026, Vermont has moved carefully. Vermont enacted shield laws protecting reproductive health data and gender-affirming care data, and state officials have noted that participating in national data-sharing at the TEFCA level makes it difficult to guarantee those protections will be honored when data crosses state lines. Vermont is actively exploring what TEFCA participation might look like while maintaining its protective legal framework — a real tension between connectivity and privacy that other states with similar laws will increasingly face."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5_p6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5_p6s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2025 VITL Annual Report (submitted to the Vermont Legislature in January 2026) noted that the VITL team spent the end of 2025 mapping a new strategic future — exploring new technologies and interoperability approaches to meet the health system's evolving needs in 2026 and beyond. With a new CEO in place following Beth Anderson's departure in July 2025, VITL stands at a pivotal inflection point between its foundational work connecting Vermont's providers and the next phase of contributing to national interoperability."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6_h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6_h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Lessons for the Broader Interoperability Field"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s6_p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6_p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's approach offers several lessons that have influenced thinking about HIE design nationally. First, legislative designation matters. By naming VITL as the exclusive statewide network operator in statute, Vermont avoided the fragmentation that plagued many states that allowed multiple competing HIEs to develop in parallel. A single, authoritative, governed network is structurally more efficient for building participation than a competitive marketplace where providers must choose which network to join."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6_p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6_p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Second, the combination of clinical data (VHIE) and claims data (VHCURES) under coordinated state oversight creates analytical power that neither dataset alone provides. Vermont policymakers can examine not just what care was delivered but whether that care aligned with clinical guidelines, whether it was delivered efficiently, and whether it produced outcomes that justify its cost. This dual-lens approach is increasingly recognized as the gold standard for health system evaluation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6_p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6_p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Third, embedding HIE participation as a requirement — rather than an option — for participating in reform programs like the Blueprint for Health creates a natural on-ramp that ties financial incentives to connectivity. Practices that want the enhanced payments that come with Blueprint participation must connect to VITL. This approach produced broad participation in a small, rural state that might otherwise have struggled to achieve critical mass."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6_quote",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6_quote_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont is a proof point that a small state with the right legislative framework, a nonprofit operator with a clear mandate, and persistent integration with reform programs can build health information exchange infrastructure that serves nearly an entire state's population."
+        }
+      ],
+      "markDefs": [],
+      "style": "blockquote"
+    },
+    {
+      "_key": "s6_p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6_p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "At the same time, Vermont's experience underscores the limits of what an HIE alone can accomplish. Data flows through VITL only because organizations have connected — and connecting requires broadband, EHR systems, staff capacity, and funding. The hardest-to-reach patients and providers are also the hardest to connect to the network. Vermont's next chapter in interoperability will likely depend as much on solving broadband access and small-practice IT support as it does on any technical advances in data standards or exchange protocols."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "takeaway_main",
+      "_type": "takeawayBlock",
+      "points": [
+        "VITL was founded in 2005 and legislatively designated as Vermont's exclusive statewide HIE operator through Act 107 of 2006, giving it a statutory mandate that prevented network fragmentation.",
+        "The Vermont Health Information Exchange (VHIE) serves 216 health care organizations, with VITLAccess providing consolidated longitudinal records covering 98.9% of data-sharing Vermonters.",
+        "VHCURES (the All-Payer Claims Database) captures 100% of Medicaid and Medicare enrollees and ~60% of commercially insured Vermonters, managed by the Green Mountain Care Board.",
+        "The Blueprint for Health requires VITL connectivity as a condition of participation, using both the VHIE for care coordination and VHCURES for total cost of care evaluation.",
+        "Vermont's data ecosystem expanded under VITL to include pharmacies, laboratories, behavioral health providers, and ambulance services — addressing previous gaps in clinical data coverage.",
+        "Vermont is cautiously exploring TEFCA participation but must balance national connectivity with state shield laws protecting reproductive health and gender-affirming care data.",
+        "Rural broadband access remains a foundational barrier: Vermont had 51,000 unserved or underserved locations as of 2021, limiting HIE reach in the state's most rural communities.",
+        "Vermont's dual clinical-and-claims data approach — combining VHIE and VHCURES — is increasingly recognized as a national model for comprehensive health system evaluation."
+      ]
+    },
+    {
+      "_key": "quiz_main",
+      "_type": "knowledgeCheck",
+      "explanation": "VHCURES — Vermont's Health Care Uniform Reporting and Evaluation System — is maintained and managed by the Green Mountain Care Board (GMCB), not by VITL. VITL operates the clinical Vermont Health Information Exchange (VHIE). The GMCB uses VHCURES as a core analytical tool for hospital budget reviews, health care cost growth assessment, and evaluation of the All-Payer ACO Model.",
+      "options": [
+        {
+          "_key": "quiz_mainopt0",
+          "isCorrect": false,
+          "text": "Vermont Information Technology Leaders (VITL)"
+        },
+        {
+          "_key": "quiz_mainopt1",
+          "isCorrect": false,
+          "text": "The Vermont Department of Health (VDH)"
+        },
+        {
+          "_key": "quiz_mainopt2",
+          "isCorrect": true,
+          "text": "The Green Mountain Care Board (GMCB)"
+        },
+        {
+          "_key": "quiz_mainopt3",
+          "isCorrect": false,
+          "text": "OneCare Vermont (the All-Payer ACO)"
+        }
+      ],
+      "question": "Which entity manages Vermont's All-Payer Claims Database (VHCURES)?"
+    },
+    {
+      "_key": "sources_h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sources_h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "VITL — About VITL: Vermont's Health Information Exchange. vitl.net/about-vitl/ (accessed May 2026)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "VITL 2025 Annual Report. Submitted to Vermont Legislature, January 14, 2026. legislature.vermont.gov/Documents/2026/Workgroups/Senate%20Health%20and%20Welfare/Reports%20and%20Resources/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "VITL 2024 Annual Report. legislature.vermont.gov/assets/Legislative-Reports/VITL-2024-Annual-Report-01152024.pdf"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont Health Information Exchange and VITL Overview, March 2024. Presented to House Health Care Committee, April 5, 2024. legislature.vermont.gov/Documents/2024/WorkGroups/House%20Health%20Care/Orientation/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "About VITL and the Vermont Health Information Exchange, February 4, 2025. legislature.vermont.gov/Documents/2026/Workgroups/House%20Health%20Care/Orientation/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "Green Mountain Care Board — VHCURES: Vermont's All-Payer Claims Database. gmcboard.vermont.gov/gmcboard/doc/DATA-AND-ANALYTICS/DATA-COLLECTION/vhcures-vermonts-all-payer-claims-database"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "Green Mountain Care Board — Vermont Information Technology Leaders (VITL) Oversight. gmcboard.vermont.gov/hit/vitl-oversight (accessed May 2026)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src8s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont Statutes Online, Title 18, Chapter 219 — Health Information Exchange. legislature.vermont.gov/statutes/fullchapter/18/219"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src9s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont HIE Tightens Integration With Public Health, Medicaid. Healthcare Innovation, hcinnovationgroup.com (accessed May 2026)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src10",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src10s",
+          "_type": "span",
+          "marks": [],
+          "text": "APCD Council — Vermont. apcdcouncil.org/state/vermont (accessed May 2026)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src11s",
+          "_type": "span",
+          "marks": [],
+          "text": "VTDigger — Federal government cancels Vermont's $5.3 million digital equity grant, May 2025. vtdigger.org/2025/05/16/federal-government-cancels-vermonts-5-3-million-digital-equity-grant/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src12",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src12s",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC / ASTP — TEFCA Priorities and Plans for the Remainder of 2025. healthit.gov/buzz-blog (accessed May 2026)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src13s",
+          "_type": "span",
+          "marks": [],
+          "text": "Rural RHIOs: Common Issues in the Development of Two State-wide Health Information Networks. PMC / NCBI — pmc.ncbi.nlm.nih.gov/articles/PMC2813667/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "healthcare-interoperability",
+  "order": 25,
+  "slug": {
+    "_type": "slug",
+    "current": "interop-vermont-vitl"
+  },
+  "title": "Vermont's Health Information Exchange: VITL and the All-Payer Claims Database"
+}
