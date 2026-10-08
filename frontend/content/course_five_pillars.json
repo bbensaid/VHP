@@ -2361,7 +2361,7 @@
                     "id": "o_5p8c2",
                     "text": "The Vermont legislature repealed Act 68, removing the state authority AHEAD required",
                     "isCorrect": false,
-                    "explanation": "Act 68 remains in force. Its reference-based pricing mandate, global budget schedule and December 2028 Strategic Plan deadline were unaffected by the withdrawal — which is the point of the example."
+                    "explanation": "Act 68 remains in force. Its reference-based pricing mandate, global budget schedule and January 15, 2028 Strategic Plan deadline were unaffected by the withdrawal — which is the point of the example."
                   },
                   {
                     "id": "o_5p8c3",
@@ -7505,25 +7505,25 @@
                 "id": "q_5p22a",
                 "type": "single_choice",
                 "points": 1,
-                "question": "What was the outcome of UVMMC's court challenge to GMCB's FY23 enforcement action?",
-                "explanation": "The challenge was decided against UVMMC, and GMCB's core enforcement authority was upheld -- not on a narrow technicality.",
+                "question": "How did UVMMC's appeal of GMCB's FY23 enforcement action end?",
+                "explanation": "No court ruled. In April 2025 UVMMC dismissed its appeals under a settlement with GMCB; the FY23 enforcement order stayed in place, amended only to spread the remaining reductions over FY26–FY27.",
                 "options": [
                   {
                     "id": "o_5p22a1",
-                    "text": "The challenge was decided against UVMMC, and GMCB's core enforcement authority was upheld",
+                    "text": "UVMMC dismissed its appeals in an April 2025 settlement that left the enforcement order in place",
                     "isCorrect": true
                   },
                   {
                     "id": "o_5p22a2",
-                    "text": "The case is still pending as of this lesson",
+                    "text": "The case is still pending in court",
                     "isCorrect": false,
-                    "explanation": "The case is documented as already decided against UVMMC, not pending."
+                    "explanation": "It is not pending: UVMMC dismissed its appeals under the April 2025 settlement."
                   },
                   {
                     "id": "o_5p22a3",
-                    "text": "UVMMC won a partial ruling narrowing GMCB's enforcement authority to smaller hospitals",
+                    "text": "A court ruled for UVMMC, narrowing GMCB's enforcement authority",
                     "isCorrect": false,
-                    "explanation": "The ruling upheld GMCB's core authority against the largest, most capable potential challenger -- it did not carve out an exemption for large systems."
+                    "explanation": "No court ruled either way; the appeals were dismissed by settlement and the enforcement order stood."
                   }
                 ]
               },
