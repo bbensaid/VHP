@@ -1,0 +1,66 @@
+PHASE 1 / STEP 5 -- SUMMARY  (2026-10-07)
+==========================================
+Proposals only. HTR_Book_v42.docx was NOT modified. Ops: book-audit/phase1/step5/edits_step5.py
+(19 ops). Evidence: findings.jsonl in this folder (op ids match).
+Apply from repo root: python3 book-build/patch_docx.py book-audit/phase1/step5/edits_step5.py
+(re-download the live Google Doc first and re-run the anchor check -- CLAUDE.md rule 10).
+
+OPS
+S5-1a raw        Ch11 §11.5 Tier-3 paragraph: Porter removed from the Tier-3 list; new clause:
+                 its COEs are still under discussion, but it stays inpatient Tier 2 (UVM network).
+S5-1b raw        Fig 11.5 Tier-3 group row -> "Grace Cottage, Gifford, North Country" (anchored on
+                 paraId 00000E2B; the identical Ch2 Fig 2.2 COE string is correct and is left alone).
+S5-1c raw        Fig 11.5: new row "Porter Medical Center (Middlebury) | TBD | Tier 2 — Focused
+                 scope | UVM affiliate; COEs under discussion; OW: grow surgical services long term,
+                 interim bed conversion to MH/geri-psych/memory care". Built with docx_build.
+S5-1d raw        Ch16 HSA table Middlebury: "TBD tier" -> "Tier 2 (COE designations TBD)".
+S5-2  raw        Preface: "fourth-oldest (42.8), behind ME 45.1, NH 43.0, WV 42.9" -> "second-oldest
+                 (43.6), tied with NH and behind only ME (44.8); WV (43.0) is next". Only instance.
+S5-3a raw        Preface: income 22% -> "in the four years to 2022".
+S5-3b raw        Introduction: "over the same period" -> "between 2018 and 2022".
+S5-3c/d raw      Ch2 §2.3: 38% -> "compounded to 38% from FY2018 to FY2024" (bad same-period
+                 comparison dropped); "hospital price growth ... two to three times income growth" ->
+                 "premium growth ... two to three times the annual pace of income growth" (~2.6x).
+S5-3e raw        Ch2 box bullet: 38% FY2018-FY2024; income 22% 2018-2022 ("only" dropped).
+S5-3f raw        Appendix A: "income grew 22%" -> "22% (2018–2022)". NEW: 5th instance found by the
+                 rule-13 grep, not in the original finding.
+S5-4  raw        Ch2 §2.4: "50 ... meetings averaging 68 participants each" -> "with an estimated
+                 1,947 attendees in all (roughly 39 each)".
+S5-6a del_para   Ch10 §10.10 recap paragraph ("The first half of this chapter established...").
+S5-6b del_para   Ch11 §11.10 roadmap paragraph ("These sections develop the operational mechanics...").
+S5-6c del_para   Ch12 heading "12.2.2  Four Components of the HTR Platform" (restates 12.2.1 heading).
+S5-6d del_para   Ch12 lead-in "The transformation implementation platform has four integrated
+                 components..." -- Figure 12.1 table kept as the summary of the 12.2.1 list.
+S5-7  tbl_regex  Fig 10.1 (x4, anchored on row-0 paraId 00000BE7): tblLook 0020->0600; row 0
+                 tblHeader 1->0; explicit edf2f9 fill removed (2 cells); bold+111111 removed (2 runs).
+                 Row 0 now matches row 1. There are no column names in this 2x2 grid, so row 0 was a
+                 data row in header dress.
+
+ITEM 6 METHOD
+difflib SequenceMatcher on every sentence pair in each block: no pair >= 0.8 (max 0.76, the
+12.2.2 heading vs the Fig 12.1 caption). The repetition is paraphrase, and the manual read found it.
+Kept as legitimate or unique: §10.10 para 2, §11.10 para 1, the 12.2.1 list (the only place with
+platform URLs, Convergence Newsletter and advisory e-mail), and Fig 12.1 (a table summarising prose).
+
+ITEM 7 SAFETY
+Removing the fill alone, without changing tblLook, makes Table119's firstRow rule paint row 0 navy.
+Proven by a negative test: check_format.py on a scratch copy with only the last 3 ops ->
+STYLE-PAINTED-DATA-ROW, exit 1. With all 4 ops it is clean. Setting tblLook to 0600 also turns off
+band1Horz (f4f6f9) on row 1, so both rows render white. That matches what docx_build.table() emits
+for a header-less table.
+
+DRY RUN  (in-memory patch_docx.apply on the current word/document.xml, docx mtime 2026-10-07 12:23)
+- all 19 anchors count == 1; all ops applied with no anchor errors
+- tbl_regex substitution counts 1/1/2/2 (asserted)
+- result parses with xml.dom.minidom; document.xml length delta -1718 chars
+- check_format.py on a scratch .docx built from the result (scratchpad, not the book): clean, exit 0
+  (current book also clean)
+
+LEFT, WITH REASONS
+- Ch2 Fig 2.2 COE row naming Porter "TBD / further discussion": faithful to OW p.40.
+- Springfield is Tier 2 in the book but "Major Restructuring" in OW: consistent with the book's
+  tier definition (it keeps inpatient psych and memory-care beds).
+- OW "13 current HSAs" vs book "14 HSAs": a definitional difference (Blueprint uses 14).
+- 12.2.1 is left as a lone subsection under 12.2 once 12.2.2 is removed. Renumbering is the author's call.
+- Item 5 (Act 167 repeal of 9410(e)): verified correct, no op.
+- Not run: render_check.py / audit_chapter.py (the book was not edited). Run both after applying.
