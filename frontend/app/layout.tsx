@@ -33,8 +33,14 @@ export async function generateMetadata(): Promise<Metadata> {
   const metadataBase = new URL(
     host ? `${proto}://${host}` : process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000"
   );
+  // Self-canonical per host: each domain is a distinct brand (lib/brand.ts),
+  // so a page canonicalizes to itself on the domain serving it, never to a
+  // sibling domain. proxy.ts supplies the path; query strings are dropped.
+  // Child segments that set their own `alternates` override this.
+  const pathname = h.get("x-htr-pathname");
   return {
     metadataBase,
+    ...(pathname ? { alternates: { canonical: new URL(pathname, metadataBase).toString() } } : {}),
     title: displayName,
     description: SITE_DESCRIPTION,
     applicationName: displayName,
@@ -47,8 +53,9 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: displayName,
       locale: "en_US",
     },
+    // app/opengraph-image.tsx is a 1200x630 card; X/Twitter falls back to it.
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
     },
     icons: {
       icon: [

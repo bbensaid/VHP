@@ -113,11 +113,15 @@ export async function proxy(request: NextRequest) {
 
   // ── Beta gate — block all page navigation until access code entered ──────────
   // Exemptions: the gate page itself, all API routes (auth/data still works),
-  // the studio, and static assets (handled by matcher config).
+  // the studio, crawler files (robots.txt, sitemap.xml) and the social-share
+  // image (app/opengraph-image.tsx), and static assets (handled by matcher config).
   const betaExempt =
     pathname.startsWith("/beta") ||
     pathname.startsWith("/api/") ||
-    pathname.startsWith("/studio");
+    pathname.startsWith("/studio") ||
+    pathname === "/robots.txt" ||
+    pathname === "/sitemap.xml" ||
+    pathname === "/opengraph-image";
 
   if (!betaExempt && !request.cookies.get(BETA_COOKIE)?.value) {
     const gateUrl = new URL("/beta", request.url);
@@ -140,8 +144,14 @@ export async function proxy(request: NextRequest) {
     }
   }
 
+  // Pass the path to the root layout so it can emit a self-canonical URL for
+  // the host being served (app/layout.tsx generateMetadata). Overwrites any
+  // client-supplied value.
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set("x-htr-pathname", pathname);
+
   const response = NextResponse.next({
-    request: { headers: request.headers },
+    request: { headers: requestHeaders },
   });
 
   const supabase = createServerClient(

@@ -5,8 +5,9 @@ import { BRAND_CONFIG, resolveBrand, ACCESS_DOMAINS, normalizeHost } from "../li
  * Launch-readiness checks: robots.txt, sitemap.xml, per-page metadata and
  * security headers. Requests go through `page.request`, which shares the
  * browser context's cookies — including the `htr_beta=granted:<host>` cookie
- * that playwright.config.ts pre-sets — so the beta gate in proxy.ts does not
- * redirect /robots.txt and /sitemap.xml to /beta.
+ * that playwright.config.ts pre-sets. The "crawler access" block below drops
+ * that cookie to prove proxy.ts exempts /robots.txt, /sitemap.xml and
+ * /opengraph-image from the beta gate.
  */
 
 const BASE_URL = process.env.PLAYWRIGHT_BASE_URL ?? "http://localhost:3000";
@@ -81,6 +82,31 @@ test.describe("page metadata", () => {
     await page.goto("/login");
     const robots = await page.locator('meta[name="robots"]').first().getAttribute("content");
     expect(robots).toMatch(/noindex/);
+  });
+
+  test("pages carry a self-canonical URL on the requesting host and the default OG image", async ({ page }) => {
+    await page.goto("/faq?utm_source=test", { waitUntil: "domcontentloaded" });
+    const canonical = await page.locator('link[rel="canonical"]').first().getAttribute("href");
+    expect(canonical).toMatch(new RegExp(`^https?://${HOST.replace(/\./g, "\\.")}(:\\d+)?/faq$`));
+    const ogImage = await page.locator('meta[property="og:image"]').first().getAttribute("content");
+    expect(ogImage).toMatch(new RegExp(`^https?://${HOST.replace(/\./g, "\\.")}(:\\d+)?/opengraph-image`));
+  });
+});
+
+test.describe("crawler access without the beta cookie", () => {
+  test.use({ storageState: { cookies: [], origins: [] } });
+
+  for (const path of ["/robots.txt", "/sitemap.xml", "/opengraph-image"]) {
+    test(`${path} is served, not redirected to the beta gate`, async ({ page }) => {
+      const res = await page.request.get(path, { maxRedirects: 0 });
+      expect(res.status()).toBe(200);
+    });
+  }
+
+  test("ordinary pages are still gated", async ({ page }) => {
+    const res = await page.request.get("/about", { maxRedirects: 0 });
+    expect(res.status()).toBe(307);
+    expect(res.headers()["location"]).toContain("/beta");
   });
 });
 

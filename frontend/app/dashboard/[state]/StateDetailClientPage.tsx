@@ -128,7 +128,7 @@ function StateDetailClientPageInner({ indexData, programData, stateSlug, hospita
           <div className="flex flex-col md:flex-row justify-between items-start">
             <div className="max-w-3xl">
               <h1 className="ty-h1 font-black text-slate-900 dark:text-slate-100 tracking-tight mb-3">{programData?.stateName || indexData?.stateName}</h1>
-              {programData && <p className="text-slate-500 text-lg leading-relaxed">RHT Award Amount: <span className="font-bold text-indigo-600">{programData.awardAmount}</span></p>}
+              {programData && <p className="text-slate-500 text-lg leading-relaxed">RHT First-Year (FY2026) Award: <span className="font-bold text-indigo-600">{programData.awardAmount}</span></p>}
             </div>
             
             <div className="shrink-0 mt-4 md:mt-0 text-left md:text-right">

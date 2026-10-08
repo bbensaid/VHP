@@ -41,7 +41,7 @@ export const RHTScorecard: React.FC<RHTScorecardProps> = ({ data }) => {
           <div className="bg-slate-50 px-5 py-3 rounded-lg border border-slate-100 min-w-[180px]">
             <div className="flex items-center gap-2 text-indigo-600 mb-1">
               <CurrencyDollarIcon className="w-4 h-4" />
-              <span className="text-xs font-bold uppercase">Awarded</span>
+              <span className="text-xs font-bold uppercase">FY2026 Award</span>
             </div>
             <div
               className="text-3xl font-bold cursor-help"
