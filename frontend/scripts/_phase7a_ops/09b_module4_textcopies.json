@@ -1,0 +1,48 @@
+{
+ "ops": [
+  {
+   "docs": [],
+   "mirror": true,
+   "key": "blk005",
+   "old": "The United States made a massive federal investment in EHR adoption through the HITECH Act of 2009, which appropriated $27 billion in Medicare and Medicaid incentive payments to encourage providers to implement certified EHR systems and demonstrate “meaningful use” — a defined set of capabilities including electronic prescribing, clinical decision support, and patient portal access. By 2021, 88% of hospitals and 78% of office-based physicians had implemented certified EHR systems, a transformation from the 9% hospital adoption rate that existed in 2008. This is one of the most rapid technology adoption curves in the history of any industry, and it created the clinical data foundation that value-based care analytics requires. However, EHR adoption rates mask significant quality variation that is directly relevant to VBC capability. Having a certified EHR does not mean having a fully configured, fully utilized EHR that generates high-quality structured data. Many providers, particularly smaller rural practices and critical access hospitals, implemented EHR systems at the minimum level required to qualify for HITECH incentive payments, resulting in EHR installations that function primarily as billing and documentation tools rather than population health data platforms.",
+   "new": "The United States made a massive federal investment in EHR adoption through the HITECH Act of 2009, which appropriated $27 billion in Medicare and Medicaid incentive payments to encourage providers to implement certified EHR systems and demonstrate “meaningful use” — a defined set of capabilities including electronic prescribing, clinical decision support, and patient portal access. Certified EHR adoption among non-federal acute-care hospitals rose from roughly 10% in 2008 to about 96% by 2021 (Health Affairs; ONC), one of the most rapid technology adoption curves in any industry, and it created the clinical data foundation that value-based care analytics requires. However, adoption rates mask significant quality variation that is directly relevant to VBC capability. Having a certified EHR does not mean having a fully configured, fully utilized EHR that generates high-quality structured data. Many providers, particularly smaller rural practices and critical access hospitals, implemented EHR systems at the minimum level required to qualify for HITECH incentive payments, resulting in installations that function primarily as billing and documentation tools rather than population health data platforms.",
+   "claim": "EHR adoption: '88% of hospitals and 78% of office physicians ... from the 9% hospital adoption rate in 2008'",
+   "verdict": "FABRICATED",
+   "sources": "See ops file 09 (same correction, text-format source copy)",
+   "note": "Text-format local/Supabase copy of the Module 4 paragraph replaced with the corrected policyAnalysis wording."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "key": "blk019b",
+   "old": "We audited five commercial risk stratification products used by our ACO network and found that four of them showed statistically significant underestimation of risk for patients in the lowest income quintile. This is not a vendor quality problem — it is a training data problem. If your model learns from utilization data generated in a fee-for-service world with documented access barriers, it will encode those barriers as predicted need. — Ziad Obermeyer, UC Berkeley School of Public Health, NEJM Catalyst, 2025.",
+   "new": "Algorithmic bias in risk stratification is a documented, real-world problem. Obermeyer and colleagues (Science, 2019) showed that a widely used commercial risk-prediction algorithm systematically underestimated the health needs of Black patients, because it was trained on historical cost data shaped by unequal access — the model learned to encode access barriers as lower predicted need. The lesson for VBC: a risk model trained on fee-for-service utilization in a world with documented access barriers will reproduce those barriers unless it is explicitly audited and recalibrated for equity.",
+   "claim": "Fabricated pull-quote attributed to Ziad Obermeyer (NEJM Catalyst 2025)",
+   "verdict": "FABRICATED",
+   "sources": "See ops file 09 (same correction, text-format source copy)",
+   "note": "Text-format local/Supabase copy of the Module 4 paragraph replaced with the corrected policyAnalysis wording."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "key": "blk022",
+   "old": "The COVID-19 pandemic produced one technology outcome that has proven durably beneficial for value-based care: the rapid normalization of telehealth as a routine care delivery modality. Between March and June 2020, CMS issued emergency waivers that allowed Medicare to reimburse telehealth visits at parity with in-person visits, removed geographic restrictions that had historically limited telehealth to rural areas, and authorized audio-only visits for patients without video capability. Telehealth utilization increased from approximately 840,000 visits per week in the pre-pandemic baseline to 52 million visits per week at the April 2020 peak, a 6,100% increase in utilization that demonstrated both the latent demand for telehealth and the clinical feasibility of delivering a substantial proportion of primary care and chronic disease management visits via video or phone. For value-based care organizations, telehealth is a care management efficiency multiplier: it allows care coordinators and physicians to conduct follow-up visits, medication reviews, and chronic disease check-ins at a fraction of the cost and scheduling friction of in-person visits, enabling more frequent touchpoints with high-risk patients than would be operationally feasible in a purely in-person model.",
+   "new": "The COVID-19 pandemic produced one technology outcome that has proven durably beneficial for value-based care: the rapid normalization of telehealth as a routine care delivery modality. Between March and June 2020, CMS issued emergency waivers that allowed Medicare to reimburse telehealth visits at parity with in-person visits, removed geographic restrictions that had historically limited telehealth to rural areas, and authorized audio-only visits for patients without video capability. Telehealth surged from about 0.2% of outpatient evaluation-and-management visits in February 2020 to a peak of roughly 50.7% in April 2020 — on the order of 78 times the pre-pandemic level (CDC MMWR; HHS ASPE) — demonstrating both latent demand and the clinical feasibility of delivering much of primary care and chronic disease management by video or phone. For value-based care organizations, telehealth is a care management efficiency multiplier: it lets care coordinators and physicians conduct follow-ups, medication reviews, and chronic disease check-ins at a fraction of the cost and scheduling friction of in-person visits, enabling more frequent contact with high-risk patients than a purely in-person model allows.",
+   "claim": "Telehealth 840,000 to 52 million visits/week, 6,100% increase",
+   "verdict": "FABRICATED",
+   "sources": "See ops file 09 (same correction, text-format source copy)",
+   "note": "Text-format local/Supabase copy of the Module 4 paragraph replaced with the corrected policyAnalysis wording."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "key": "blk025",
+   "old": "For healthcare leaders assessing their organization’s VBC technology readiness, the most common mistake is attempting to deploy advanced analytics capabilities before the foundational data quality and connectivity infrastructure is in place. A population health platform fed by an EHR with poorly configured structured data will generate inaccurate risk scores. A care gap reporting system connected to an EHR that does not have standardized problem list coding will miss a significant proportion of the gaps it is supposed to identify. Technology investment in VBC should follow a deliberate sequence, with each layer validated before the next layer is added. The following roadmap reflects the sequence used by the highest-performing rural VBC organizations in HTR’s research, based on analysis of MSSP ACO performance data correlated with technology adoption patterns.",
+   "new": "For healthcare leaders assessing their organization’s VBC technology readiness, the most common mistake is attempting to deploy advanced analytics capabilities before the foundational data quality and connectivity infrastructure is in place. A population health platform fed by an EHR with poorly configured structured data will generate inaccurate risk scores. A care gap reporting system connected to an EHR that does not have standardized problem list coding will miss a significant proportion of the gaps it is supposed to identify. Technology investment in VBC should follow a deliberate sequence, with each layer validated before the next is added.",
+   "claim": "Roadmap attributed to 'HTR's research'",
+   "verdict": "FABRICATED",
+   "sources": "See ops file 09 (same correction, text-format source copy)",
+   "note": "Text-format local/Supabase copy of the Module 4 paragraph replaced with the corrected policyAnalysis wording."
+  }
+ ]
+}

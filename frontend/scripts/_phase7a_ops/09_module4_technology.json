@@ -1,0 +1,371 @@
+{
+ "ops": [
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "mirror": true,
+   "objKey": "blk005",
+   "expect": "9% hospital adoption rate",
+   "set": {
+    "children": [
+     {
+      "_key": "blk005-s",
+      "_type": "span",
+      "marks": [],
+      "text": "The United States made a massive federal investment in EHR adoption through the HITECH Act of 2009, which appropriated $27 billion in Medicare and Medicaid incentive payments to encourage providers to implement certified EHR systems and demonstrate “meaningful use” — a defined set of capabilities including electronic prescribing, clinical decision support, and patient portal access. Certified EHR adoption among non-federal acute-care hospitals rose from roughly 10% in 2008 to about 96% by 2021 (Health Affairs; ONC), one of the most rapid technology adoption curves in any industry, and it created the clinical data foundation that value-based care analytics requires. However, adoption rates mask significant quality variation that is directly relevant to VBC capability. Having a certified EHR does not mean having a fully configured, fully utilized EHR that generates high-quality structured data. Many providers, particularly smaller rural practices and critical access hospitals, implemented EHR systems at the minimum level required to qualify for HITECH incentive payments, resulting in installations that function primarily as billing and documentation tools rather than population health data platforms."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   "claim": "EHR adoption: '88% of hospitals and 78% of office physicians ... from the 9% hospital adoption rate in 2008'",
+   "verdict": "FABRICATED",
+   "sources": "ONC Health IT Quick Stats / Adler-Milstein & Jha, Health Affairs (hospital certified EHR ~96% by 2021; basic EHR ~9-10% in 2008)",
+   "note": "Copied the already-corrected policyAnalysis wording into the academyModule twin."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "mirror": true,
+   "objKey": "blk019b",
+   "expect": "Ziad Obermeyer, UC Berkeley",
+   "set": {
+    "children": [
+     {
+      "_key": "blk019b-s",
+      "_type": "span",
+      "marks": [],
+      "text": "Algorithmic bias in risk stratification is a documented, real-world problem. Obermeyer and colleagues (Science, 2019) showed that a widely used commercial risk-prediction algorithm systematically underestimated the health needs of Black patients, because it was trained on historical cost data shaped by unequal access — the model learned to encode access barriers as lower predicted need. The lesson for VBC: a risk model trained on fee-for-service utilization in a world with documented access barriers will reproduce those barriers unless it is explicitly audited and recalibrated for equity."
+     }
+    ],
+    "markDefs": [],
+    "style": "quote"
+   },
+   "claim": "Pull-quote attributed to Ziad Obermeyer, UC Berkeley, NEJM Catalyst 2025: 'We audited five commercial risk stratification products used by our ACO network...'",
+   "verdict": "FABRICATED",
+   "sources": "Obermeyer Z et al., Dissecting racial bias in an algorithm used to manage the health of populations, Science 2019;366:447-53; no NEJM Catalyst 2025 piece with this quote exists and Obermeyer has no ACO network",
+   "note": "Fabricated quote replaced with the policyAnalysis twin's factual summary of the Science 2019 study."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "mirror": true,
+   "objKey": "blk022",
+   "expect": "52 million visits per week",
+   "set": {
+    "children": [
+     {
+      "_key": "blk022-s",
+      "_type": "span",
+      "marks": [],
+      "text": "The COVID-19 pandemic produced one technology outcome that has proven durably beneficial for value-based care: the rapid normalization of telehealth as a routine care delivery modality. Between March and June 2020, CMS issued emergency waivers that allowed Medicare to reimburse telehealth visits at parity with in-person visits, removed geographic restrictions that had historically limited telehealth to rural areas, and authorized audio-only visits for patients without video capability. Telehealth surged from about 0.2% of outpatient evaluation-and-management visits in February 2020 to a peak of roughly 50.7% in April 2020 — on the order of 78 times the pre-pandemic level (CDC MMWR; HHS ASPE) — demonstrating both latent demand and the clinical feasibility of delivering much of primary care and chronic disease management by video or phone. For value-based care organizations, telehealth is a care management efficiency multiplier: it lets care coordinators and physicians conduct follow-ups, medication reviews, and chronic disease check-ins at a fraction of the cost and scheduling friction of in-person visits, enabling more frequent contact with high-risk patients than a purely in-person model allows."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   "claim": "Telehealth grew from ~840,000 visits/week to 52 million/week in April 2020, a 6,100% increase",
+   "verdict": "FABRICATED",
+   "sources": "CDC MMWR and HHS ASPE (telehealth ~0.2% of outpatient E/M visits Feb 2020 to ~50.7% April 2020)",
+   "note": "Copied corrected policyAnalysis wording."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "mirror": true,
+   "objKey": "blk025",
+   "expect": "in HTR’s research",
+   "set": {
+    "children": [
+     {
+      "_key": "blk025-s",
+      "_type": "span",
+      "marks": [],
+      "text": "For healthcare leaders assessing their organization’s VBC technology readiness, the most common mistake is attempting to deploy advanced analytics capabilities before the foundational data quality and connectivity infrastructure is in place. A population health platform fed by an EHR with poorly configured structured data will generate inaccurate risk scores. A care gap reporting system connected to an EHR that does not have standardized problem list coding will miss a significant proportion of the gaps it is supposed to identify. Technology investment in VBC should follow a deliberate sequence, with each layer validated before the next is added."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   "claim": "Roadmap 'reflects the sequence used by the highest-performing rural VBC organizations in HTR's research, based on analysis of MSSP ACO performance data correlated with technology adoption patterns'",
+   "verdict": "FABRICATED",
+   "sources": "No such HTR research exists in the repo or platform",
+   "note": "Fabricated research attribution removed (policyAnalysis wording copied)."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar",
+    "vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "mirror": true,
+   "objKey": "blk041",
+   "expect": "HTRAcademy2026M4",
+   "drop": true,
+   "claim": "29-minute HTR Academy video (youtube.com/watch?v=HTRAcademy2026M4) with a western North Carolina case study and downloadable Technology Readiness Assessment checklist",
+   "verdict": "FABRICATED",
+   "sources": "YouTube oEmbed for v=HTRAcademy2026M4 returns HTTP 400 (invalid id); no checklist file in frontend/public",
+   "note": "Fake media block removed."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar",
+    "vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "field": "summary",
+   "mirror": true,
+   "old": "why 34% of rural Critical Access Hospitals remain technology-unready for advanced VBC participation",
+   "new": "why many rural Critical Access Hospitals remain technology-unready for advanced VBC participation",
+   "claim": "34% of rural CAHs remain technology-unready for advanced VBC",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No source located (ONC, AHA, Flex Monitoring Team searched)",
+   "note": "Number dropped from the summary."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar",
+    "vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "key": "blk032",
+   "mirror": true,
+   "old": "The 34% of rural Critical Access Hospitals that lack the foundational technology capabilities for advanced VBC participation are not being held back",
+   "new": "The rural Critical Access Hospitals that lack the foundational technology capabilities for advanced VBC participation are not being held back",
+   "claim": "34% of rural CAHs lack foundational technology capabilities",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No source located",
+   "note": "Number dropped."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar",
+    "vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "key": "blk006",
+   "mirror": true,
+   "old": " As of 2024, only 54% of Critical Access Hospitals have all four of these capabilities fully implemented and actively used, compared to 79% of urban academic medical centers — a technology readiness gap that directly correlates with rural hospital VBC participation rates.",
+   "new": " Federal data show the gap is real: in 2023, 70% of non-federal acute care hospitals engaged in all four domains of interoperable exchange (sending, receiving, finding, and integrating patient data), but only 43% did so routinely, and small, rural, critical access, and independent hospitals engaged less often than better-resourced hospitals (ONC Data Brief No. 71, 2024).",
+   "claim": "As of 2024, 54% of CAHs vs 79% of urban academic centers have all four capabilities",
+   "verdict": "FABRICATED",
+   "sources": "ONC Data Brief No. 71, 'Interoperable Exchange of Patient Health Information Among U.S. Hospitals: 2023' (May 2024): 70% all four domains, 43% routinely; lower-resourced hospitals engage less",
+   "note": "Invented comparison replaced with ONC's published figures."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar",
+    "vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "key": "blk009",
+   "mirror": true,
+   "old": " — Don Rucker, former National Coordinator for Health Information Technology, Health IT Buzz, 2024.",
+   "new": "",
+   "claim": "Pull-quote attributed to Don Rucker, former National Coordinator, Health IT Buzz, 2024",
+   "verdict": "FABRICATED",
+   "sources": "Health IT Buzz (ONC blog) archive and web search: no such 2024 post; Rucker left ONC in January 2021",
+   "note": "Attribution removed; pull-quote kept as unattributed editorial text."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar",
+    "vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "key": "blk009",
+   "mirror": true,
+   "old": "When vendors and health systems face $1 million penalties for restricting data access,",
+   "new": "When health IT developers and exchanges face penalties of up to $1 million per violation for restricting data access, and providers face their own federal disincentives,",
+   "claim": "Health systems face $1 million information-blocking penalties",
+   "verdict": "FABRICATED",
+   "sources": "HHS OIG final rule on information blocking CMPs (88 FR 42820, July 3, 2023: up to $1M per violation for developers, HIEs, HINs); HHS final rule 'Establishment of Disincentives for Health Care Providers That Have Committed Information Blocking' (June 2024)",
+   "note": "The $1M CMP applies to developers/HIEs/HINs; providers face separate disincentives."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar",
+    "vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "key": "blk035",
+   "mirror": true,
+   "old": "Any EHR vendor or health system that restricts data sharing in violation of these provisions faces civil monetary penalties of up to $1 million per violation.",
+   "new": "Health IT developers, health information exchanges, and networks that engage in information blocking face civil monetary penalties of up to $1 million per violation; health care providers face separate federal disincentives, such as losing Promoting Interoperability credit under MIPS, under a 2024 HHS rule.",
+   "claim": "Any EHR vendor or health system faces CMPs up to $1M per violation",
+   "verdict": "FABRICATED",
+   "sources": "HHS OIG CMP final rule (July 2023); HHS provider disincentives final rule (June 2024)",
+   "note": "Providers are not subject to the $1M CMP."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar",
+    "vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "key": "blk012",
+   "mirror": true,
+   "old": "As of early 2026, six organizations have been designated as QHINs: eHealth Exchange, Epic Nexus, CommonWell Health Alliance, Kno2, MedAllies, and KONZA National Network.",
+   "new": "By early 2026, eleven networks had been designated as QHINs — eHealth Exchange, Epic Nexus, Health Gorilla, KONZA National Network, and MedAllies (December 2023); CommonWell Health Alliance and Kno2 (February 2024); Netsmart; eClinicalWorks; Surescripts; and Oracle Health Information Network (November 2025).",
+   "claim": "As of early 2026 six QHINs: eHealth Exchange, Epic Nexus, CommonWell, Kno2, MedAllies, KONZA",
+   "verdict": "FABRICATED",
+   "sources": "ASTP/ONC, 'Data Liquidity, Affordability, and Access: The History & Growth of TEFCA' (healthit.gov): 11 QHINs with designation dates; >71,000 participating sites",
+   "note": "Count and list were wrong (omitted Health Gorilla and four later designees)."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar",
+    "vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "key": "blk012",
+   "mirror": true,
+   "old": "The FCC’s Healthcare Connect Fund and USDA’s ReConnect Program are the primary federal mechanisms for addressing rural broadband gaps, but as of 2025, 18% of rural hospital locations still lack broadband access meeting the minimum 25 Mbps threshold that reliable EHR connectivity requires.",
+   "new": "The FCC’s Rural Health Care Program (including its Healthcare Connect Fund) and USDA’s ReConnect Program are the primary federal mechanisms for addressing rural broadband gaps, and rural providers’ requests to the FCC program routinely exceed its annual funding cap.",
+   "claim": "As of 2025, 18% of rural hospital locations lack 25 Mbps broadband",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No source located for 18%; FCC funding year 2025 RHC cap $723.9M vs estimated demand $823.1M (FCC/USAC announcement via Benton Institute)",
+   "note": "Statistic dropped; replaced with a verified demand-vs-cap fact."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar",
+    "vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "mirror": true,
+   "objKey": "blk013",
+   "expect": "Health Information Exchange Capability Gap",
+   "drop": true,
+   "claim": "Table 'Health Information Exchange Capability Gap: Rural vs. Urban, 2025' (66% vs 94% certified EHR, 41% vs 78% FHIR, 12% vs 54% AI, etc.)",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No source given or found for any of the 32 figures (ONC, AHA IT Supplement, Flex Monitoring Team searched)",
+   "note": "Unsourced data table removed; blk006 now carries ONC's verified figures and blk014 was rewritten to stop pointing at the table."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar",
+    "vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "key": "blk014",
+   "mirror": true,
+   "old": "The capability gap data in the table above represents a structural VBC readiness disparity",
+   "new": "The capability gap between lower-resourced rural hospitals and better-resourced systems represents a structural VBC readiness disparity",
+   "claim": "Reference to the removed capability-gap table",
+   "verdict": "UNVERIFIABLE",
+   "sources": "See blk013",
+   "note": "Cross-reference updated after table removal."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar",
+    "vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "key": "blk014",
+   "mirror": true,
+   "old": "including the FCC Healthcare Connect Fund’s $7.1 billion rural broadband commitment,",
+   "new": "including the FCC’s Rural Health Care Program, capped at about $724 million for funding year 2025,",
+   "claim": "FCC Healthcare Connect Fund's $7.1 billion rural broadband commitment",
+   "verdict": "FABRICATED",
+   "sources": "FCC Public Notice on funding year 2025 RHC inflation-adjusted caps (RHC cap $723,892,841; HCF multi-year internal cap $182,780,877), via Benton Institute; $7.1B is the FCC's Emergency Connectivity Fund for schools and libraries, unrelated",
+   "note": "Figure belonged to a different program."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar",
+    "vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "key": "blk017",
+   "mirror": true,
+   "old": "The predictive accuracy of leading AI risk stratification models, as measured by the C-statistic — the probability that the model correctly identifies a patient who will be hospitalized as higher risk than a patient who will not — has improved from approximately 0.70 for traditional claims-based models to 0.82–0.87 for the leading AI models that incorporate multi-modal EHR data, a meaningful improvement that translates directly into better care management targeting and higher ROI on care coordinator time.",
+   "new": "Predictive accuracy is usually reported as the C-statistic — the probability that the model ranks a patient who will be hospitalized above one who will not — and models that add clinical EHR data to claims generally discriminate better than claims-only models, though published gains vary widely by population and outcome and should be validated locally before they drive care coordinator workloads.",
+   "claim": "C-statistic improved from ~0.70 (claims models) to 0.82-0.87 (leading AI models)",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No single source supports the stated ranges; published C-statistics vary by outcome and population",
+   "note": "Numbers dropped; general point kept with an accuracy caveat."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar",
+    "vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "key": "blk022b",
+   "mirror": true,
+   "old": "The impact of telehealth on VBC care management efficiency is supported by utilization and outcome data from CMS’s post-pandemic evaluation of Medicare telehealth claims, which documents the specific visit types, patient populations, and clinical conditions where telehealth has demonstrated both patient adoption and comparable clinical outcomes to in-person care. This evidence base is directly relevant for VBC organizations making decisions about which components of their care management model to deliver via telehealth versus in person.",
+   "new": "The scale of Medicare adoption is documented: the HHS Office of Inspector General found that more than 28 million Medicare beneficiaries — over 2 in 5 — used telehealth in the first year of the pandemic, using 88 times more telehealth services than the year before, with office visits making up just under half of that use. The same review found urban beneficiaries more likely than rural ones to use telehealth — a reminder that the rural populations with the most to gain also face the broadband and device barriers that limit uptake.",
+   "claim": "'CMS's post-pandemic evaluation of Medicare telehealth claims' documenting visit types and outcome equivalence",
+   "verdict": "FABRICATED",
+   "sources": "HHS OIG, 'Telehealth Was Critical for Providing Services to Medicare Beneficiaries During the First Year of the COVID-19 Pandemic' (OEI-02-20-00520, March 2022)",
+   "note": "No such CMS evaluation; replaced with the OIG review's documented findings."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar",
+    "vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "mirror": true,
+   "objKey": "blk022c",
+   "expect": "Telehealth Utilization in Medicare VBC Programs",
+   "drop": true,
+   "claim": "Table 'Telehealth Utilization in Medicare VBC Programs ... 2025' (adoption 38-74%, satisfaction scores, $54-$1,240 per encounter, 62% ED diversion)",
+   "verdict": "FABRICATED",
+   "sources": "No CMS or other source publishes these figures; table presented as CMS evaluation data",
+   "note": "Unsourced table removed."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar",
+    "vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "key": "blk023",
+   "mirror": true,
+   "old": "The Consolidated Appropriations Act of 2023 and the CAA of 2024 extended most telehealth flexibilities through 2025, and the Telehealth Modernization Act of 2026 — currently in Senate committee as of March 2026 — would make them permanent for Medicare beneficiaries and extend audio-only coverage as a permanent benefit for patients without access to broadband or video-capable devices.",
+   "new": "Congress answered with a series of short-term extensions rather than a permanent fix: the Consolidated Appropriations Act, 2023 carried the flexibilities through 2024, later stopgap bills carried them into 2025, they briefly lapsed during the funding gaps of late 2025 and January 31, 2026, and the Consolidated Appropriations Act, 2026 (H.R. 7148, enacted February 2026) extended them — including home as an originating site, audio-only visits, and FQHC/RHC distant-site services — through December 31, 2027.",
+   "claim": "CAA 2023/2024 extended flexibilities through 2025; 'Telehealth Modernization Act of 2026' in Senate committee as of March 2026",
+   "verdict": "FABRICATED",
+   "sources": "Consolidated Appropriations Act, 2026 (H.R. 7148): Medicare telehealth flexibilities through 2027-12-31 (Foley & Lardner, Rehmann, NASW summaries); lapse 2026-01-31 to enactment Feb 2026",
+   "note": "No 'Telehealth Modernization Act of 2026' located; replaced with the enacted extension."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-fundamentals-module-4-technology-pillar",
+    "vbc-fundamentals-module-4-technology-pillar"
+   ],
+   "key": "blk023",
+   "mirror": true,
+   "old": "For rural VBC providers, the permanence of telehealth reimbursement parity is not a convenience issue",
+   "new": "For rural VBC providers, the permanence of these telehealth payment rules is not a convenience issue",
+   "claim": "Telehealth 'reimbursement parity'",
+   "verdict": "UNVERIFIABLE",
+   "sources": "As above",
+   "note": "Wording aligned with what the extensions actually cover."
+  },
+  {
+   "log_only": true,
+   "doc": "sanity academyModule+policyAnalysis vbc-fundamentals-module-4-technology-pillar",
+   "block_key": "blk005/blk008/blk011/blk019",
+   "claim": "HITECH $27B; Cures Act 2016, 2020 rules, FHIR APIs by end-2022; TEFCA Common Agreement January 2022; Obermeyer Science 2019",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "CBO estimate of HITECH incentives (~$27B); ONC Cures Act Final Rule (May 2020) and 2015 Edition Cures Update (g)(10) deadline 2022-12-31; ONC TEFCA release 2022-01-18; Obermeyer et al., Science 2019",
+   "status": "LEFT",
+   "note": ""
+  },
+  {
+   "log_only": true,
+   "doc": "sanity academyModule+policyAnalysis vbc-fundamentals-module-4-technology-pillar",
+   "block_key": "blk039",
+   "claim": "Image caption for a pyramid diagram with 'percentage of rural CAHs that lack that capability'",
+   "verdict": "UNVERIFIABLE",
+   "action": "none",
+   "sources": "Image block has no asset; AcademyContent/ArticlePageTemplate render nothing",
+   "status": "LEFT",
+   "note": "Non-rendering placeholder; left."
+  },
+  {
+   "log_only": true,
+   "doc": "sanity policyAnalysis vbc-fundamentals-module-4-technology-pillar",
+   "block_key": "smpyut9pw1g",
+   "claim": "Sources link https://telehealth.hhs.gov/providers/telehealth-policy",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "HTTP 403 to scripted requests (bot protection); page exists",
+   "status": "LEFT",
+   "note": ""
+  }
+ ]
+}

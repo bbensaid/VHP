@@ -1,0 +1,210 @@
+{
+ "ops": [
+  {
+   "docs": [
+    "academyModule-vbc-clinical-m5"
+   ],
+   "mirror": true,
+   "objKey": "m5st01",
+   "expect": "Roughly 1 in 4 hospital admissions",
+   "set": {
+    "value": "12.9%",
+    "label": "Potentially Preventable Adult Stays",
+    "trend": "down",
+    "context": "In 2017, 3.5 million potentially preventable adult hospital stays — 12.9% of all nonobstetric adult stays — cost $33.7 billion; heart failure was the most common reason. Source: AHRQ HCUP Statistical Brief #259."
+   },
+   "claim": "27% / 'roughly 1 in 4' US admissions preventable (AHRQ)",
+   "verdict": "FABRICATED",
+   "sources": "AHRQ HCUP Statistical Brief #259, 'Characteristics and Costs of Potentially Preventable Inpatient Stays, 2017': 3.5M stays, 12.9% of nonobstetric stays, $33.7B",
+   "note": "AHRQ's figure is 12.9%, not 27%."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-clinical-m5"
+   ],
+   "mirror": true,
+   "objKey": "m5st02",
+   "expect": "1 in 5 Medicare patients is readmitted",
+   "set": {
+    "value": "19.6%",
+    "label": "30-Day Readmissions Before HRRP",
+    "trend": "down",
+    "context": "In 2003–04, 19.6% of Medicare beneficiaries discharged from a hospital were readmitted within 30 days — the finding that helped prompt the Hospital Readmissions Reduction Program. Source: Jencks, Williams & Coleman, New England Journal of Medicine, 2009."
+   },
+   "claim": "1 in 5 (20%) Medicare patients readmitted within 30 days, 'Source: CMS, 2023'",
+   "verdict": "FABRICATED",
+   "sources": "Jencks SF, Williams MV, Coleman EA. Rehospitalizations among patients in the Medicare fee-for-service program. N Engl J Med 2009;360:1418-28 (19.6% within 30 days, 2003-04)",
+   "note": "The 1-in-5 figure is the pre-HRRP 2003-04 rate, not a 2023 CMS figure; re-attributed to its real source and period."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-clinical-m5"
+   ],
+   "mirror": true,
+   "objKey": "m5st03",
+   "expect": "$528 billion",
+   "set": {
+    "value": "$1.1T",
+    "label": "Direct Cost of Chronic Disease",
+    "trend": "up",
+    "context": "Direct US health care costs for chronic conditions totaled $1.1 trillion in 2016 — nearly 6% of GDP — led by cardiovascular conditions, diabetes, and Alzheimer's disease. Source: Milken Institute, The Costs of Chronic Disease in the U.S. (2018)."
+   },
+   "claim": "US spends $528B on top 10 chronic diseases (Milken Institute)",
+   "verdict": "FABRICATED",
+   "sources": "Milken Institute, 'The Costs of Chronic Disease in the U.S.' (2018): $1.1 trillion direct costs in 2016",
+   "note": "$528B does not appear in the Milken report."
+  },
+  {
+   "log_only": true,
+   "doc": "sanity academyModule-vbc-clinical-m5",
+   "block_key": "m5st04",
+   "claim": "Sickest 5% of patients account for roughly 50% of spending (AHRQ)",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "AHRQ MEPS Statistical Briefs on concentration of health expenditures (top 5% ~ half of spending)",
+   "status": "LEFT",
+   "note": ""
+  },
+  {
+   "docs": [
+    "academyModule-vbc-clinical-m5"
+   ],
+   "mirror": true,
+   "objKey": "m5st05",
+   "expect": "The CDC estimates that 70% of chronic disease burden",
+   "set": {
+    "value": "90%",
+    "label": "Spending Tied to Chronic Conditions",
+    "trend": "neutral",
+    "context": "Ninety percent of the nation's annual health care expenditures are for people with chronic and mental health conditions — the population that population health management targets. Source: CDC, Fast Facts: Health and Economic Costs of Chronic Conditions."
+   },
+   "claim": "CDC estimates 70% of chronic disease burden is preventable",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CDC National Center for Chronic Disease Prevention, 'Fast Facts: Health and Economic Costs of Chronic Conditions' (90% of the nation's annual health care expenditures)",
+   "note": "No CDC source for a 70% figure; replaced with CDC's published statistic."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-clinical-m5"
+   ],
+   "mirror": true,
+   "objKey": "m5st06",
+   "expect": "3x better adherence",
+   "set": {
+    "value": "8.3% vs 11.9%",
+    "label": "Care Transitions Coaching",
+    "trend": "down",
+    "context": "In a randomized trial, older patients who received four weeks of care-transitions coaching after discharge had a 30-day rehospitalization rate of 8.3%, versus 11.9% for controls. Source: Coleman et al., Archives of Internal Medicine, 2006."
+   },
+   "claim": "Care management produces 3x better adherence (Health Affairs, 2022)",
+   "verdict": "FABRICATED",
+   "sources": "Coleman EA, Parry C, Chalmers S, Min SJ. The Care Transitions Intervention: results of a randomized controlled trial. Arch Intern Med 2006;166:1822-8 (PubMed 17000937)",
+   "note": "No such Health Affairs 2022 finding; replaced with a verified RCT result."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-clinical-m5"
+   ],
+   "mirror": true,
+   "objKey": "m5ex01",
+   "expect": "ChenMed physicians see 8 to 10 patients per day",
+   "set": {
+    "body": "ChenMed operates primary care centers designed for older, lower-income Medicare Advantage patients with complex chronic illness. Its model inverts the usual primary care formula: physicians carry small patient panels, see patients far more often, and spend more face-to-face time with them, supported by on-site care teams and transportation to appointments.",
+    "outcome": "In a matched comparison of 5,695 patients from each model, ChenMed's 'high-touch' patients averaged 8.7 primary care visits a year versus 3.8 under standard care, had 50% fewer hospital admissions, and cost 28% less. The study was led by ChenMed clinicians with University of Miami co-investigators, so it is not independent.",
+    "source": "Ghany R et al., 'High-Touch Care Leads to Better Outcomes and Lower Costs in a Senior Population,' American Journal of Managed Care, September 2018"
+   },
+   "claim": "ChenMed: 8-10 patients/day, 40-minute visits, monthly wellness visits; 30-40% fewer hospitalizations (Health Affairs, 2020)",
+   "verdict": "FABRICATED",
+   "sources": "Ghany R et al., Am J Manag Care, September 2018 (AJMC press release 'Increasing Patient Contact With Doctors Cut Medicare Advantage Costs 28 Percent'): 8.7 vs 3.8 PCP visits/yr, 50% fewer admissions, 28% lower cost, 5,695 matched patients",
+   "note": "No Health Affairs 2020 study found; visit-length specifics unverifiable; replaced with the real AJMC study and its conflict of interest noted."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-clinical-m5"
+   ],
+   "mirror": true,
+   "objKey": "m5st07",
+   "expect": "$27.2 billion annually. Source: Annals of Internal Medicine",
+   "set": {
+    "value": "$27–78B",
+    "context": "Failures of care coordination — duplicated tests, missed follow-ups, avoidable complications after transitions — waste an estimated $27.2 billion to $78.2 billion a year. Source: Shrank, Rogstad & Parekh, JAMA, 2019."
+   },
+   "claim": "Poor coordination costs $27.2B annually (Annals of Internal Medicine)",
+   "verdict": "FABRICATED",
+   "sources": "Shrank WH, Rogstad TL, Parekh N. Waste in the US Health Care System: Estimated Costs and Potential for Savings. JAMA 2019;322(15):1501-9 (failure of care coordination $27.2B-$78.2B)",
+   "note": "Wrong journal and the low end of a range presented as a point estimate."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-clinical-m5"
+   ],
+   "mirror": true,
+   "objKey": "m5st08",
+   "expect": "Source: CDC, 2023.",
+   "set": {
+    "value": "51.4%",
+    "context": "In 2023, 51.4% of US adults — about 130 million people — reported multiple chronic conditions, including 78.8% of adults 65 and older, requiring active coordination among multiple providers. Source: CDC, Preventing Chronic Disease, 2025 (BRFSS 2013–2023)."
+   },
+   "claim": "58% of US adults have 2+ chronic conditions (CDC, 2023)",
+   "verdict": "FABRICATED",
+   "sources": "Watson KB et al., 'Trends in Multiple Chronic Conditions Among US Adults, By Life Stage, BRFSS 2013-2023', Preventing Chronic Disease 2025;22:240539 (PMC12007472): 51.4% in 2023",
+   "note": "Corrected to CDC's 2023 estimate."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-clinical-m5"
+   ],
+   "mirror": true,
+   "objKey": "m5st09",
+   "expect": "Commonwealth Fund 2022 International Health Policy Survey",
+   "drop": true,
+   "claim": "1 in 3 patients report a care coordination problem in past two years (Commonwealth Fund 2022 IHP Survey)",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Commonwealth Fund 2022 International Health Policy Survey publications reviewed; no matching '1 in 3 ... past two years' coordination statistic located",
+   "note": "Stat tile removed; the grid keeps two verified stats."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-clinical-m5"
+   ],
+   "mirror": true,
+   "objKey": "m5ex03",
+   "expect": "every patient discharged is followed by a registered nurse for 30 days",
+   "set": {
+    "body": "Copley Hospital is a 25-bed critical access hospital in Morrisville serving a largely rural population. In its 2018 community health needs assessment progress report, filed with the Green Mountain Care Board, Copley described two concrete steps to cut 30-day all-cause readmissions: arranging follow-up with a primary care provider within 7 days of discharge, and reviewing each inpatient readmission in real time to find what went wrong.",
+    "outcome": "Copley reported 30-day all-cause readmission rates of 4.4%–17.0% across January–September 2017 (Vermont critical access hospitals: 8.7%–16.8%) and 6.92% for January–April 2018 — below or on par with its critical access peers, showing that a small rural hospital can move the measures VBC contracts reward with simple, disciplined transition steps.",
+    "source": "Copley Hospital, Community Health Needs Assessment Progress Report 2018 (Green Mountain Care Board hospital budget filing B19H31)"
+   },
+   "claim": "Copley: OneCare member; RN follows every discharge for 30 days; risk tool; readmissions 'well below state and national averages' (DVHA All-Payer Model evaluation)",
+   "verdict": "FABRICATED",
+   "sources": "Copley Hospital CHNA Progress Report 2018, gmcboard.vermont.gov/sites/gmcb/files/B19H31_CHNA_Progress_Report_2018_Copley.pdf",
+   "note": "Program details and the cited DVHA evaluation could not be found; replaced with Copley's own documented actions and rates."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-clinical-m5"
+   ],
+   "key": "m5hl02",
+   "mirror": true,
+   "old": "Physician burnout is at crisis levels: 63% of physicians report burnout symptoms, with administrative burden and loss of clinical autonomy cited as primary drivers.",
+   "new": "Physician burnout peaked at 62.8% in 2021 and, though it has eased since — 43.2% of physicians reported at least one symptom in 2024 — it remains high, with administrative burden a leading driver.",
+   "claim": "63% of physicians report burnout (AMA National Burnout Survey, 2025)",
+   "verdict": "FABRICATED",
+   "sources": "AMA press release 'U.S. physician burnout hits lowest rate since COVID-19' (2025): 43.2% in 2024, 45.2%/48.2% in 2023, 62.8% peak in 2021 (AMA/Mayo/Stanford)",
+   "note": "63% is the 2021 peak, presented as current under a 2025 source."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-clinical-m5"
+   ],
+   "key": "m5hl02",
+   "mirror": true,
+   "old": "Source: AMA National Burnout Survey, 2025.",
+   "new": "Source: American Medical Association national burnout survey data, 2021–2024.",
+   "claim": "Source label 'AMA National Burnout Survey, 2025'",
+   "verdict": "FABRICATED",
+   "sources": "As above",
+   "note": "Source label aligned with the years reported."
+  }
+ ]
+}
