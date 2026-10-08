@@ -14,10 +14,6 @@ THE WIRE --- Real-time intelligence at healthtransformationreview.org across all
 RESEARCH LAB --- nearly forty interactive tools at healthtransformationreview.org. FHIR Lab, EMR/EHR Lab, Statewide EHR Modeler, APM Design Lab, Health Equity Studio, Policy Simulator, CIN & Shared Services Modeler, EMS Transformation Modeler, and more.
 HTR ACADEMY --- Structured curriculum at healthtransformationreview.org. Foundation and advanced courses in APM mechanics, HEDIS, and global budgets, plus dedicated Health Equity Analytics and Transformation Leadership courses.
 ADVISORY SERVICES --- Strategic consulting, research, health IT, independent review, capability assessment, financial audit, regulatory navigation, and training. Contact: advisory@healthtransformationreview.org
-
-12.2.2 Four Components of the HTR Platform.
-
-The transformation implementation platform has four integrated components, each designed for a different kind of engagement with the transformation agenda:
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Component                      What it provides
 ---------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
