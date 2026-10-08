@@ -9,6 +9,7 @@ import {
   Shield,
   Info,
 } from "lucide-react";
+import { PQIPanel } from "./PopulationHealthModeler.pqi";
 
 // ─── TYPES ───────────────────────────────────────────────────────────────────
 
@@ -978,6 +979,8 @@ function UtilizationTab() {
           Enable intervention programs above to see savings breakdown
         </div>
       )}
+
+      <PQIPanel />
     </div>
   );
 }

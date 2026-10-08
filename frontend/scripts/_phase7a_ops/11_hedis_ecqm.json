@@ -1,0 +1,41 @@
+{
+ "ops": [
+  {
+   "docs": [
+    "academyModule-vbc-hedis-ecqm"
+   ],
+   "key": "hedis-p2",
+   "old": "and measures addressing disparities.",
+   "new": "and measures reported using Electronic Clinical Data Systems (ECDS).",
+   "mirror": true,
+   "claim": "HEDIS sixth domain = \"measures addressing disparities\"",
+   "verdict": "FABRICATED",
+   "sources": "NCQA HEDIS page (ncqa.org/hedis): \"more than 90 measures across 6 domains of care: Effectiveness of Care, Access/Availability of Care, Experience of Care, Utilization and Risk Adjusted Utilization, Health Plan Descriptive Information, Measures Reported Using Electronic Clinical Data Systems\"",
+   "note": "90 measures / 6 domains verified; sixth domain was misnamed."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-hedis-ecqm"
+   ],
+   "key": "hedis-p13",
+   "old": "MIPS, Star Ratings, and HEDIS all require at least one outcome measure in their quality reporting frameworks.",
+   "new": "MIPS requires clinicians to report at least one outcome measure (or another high-priority measure if no outcome measure applies), and the Medicare Advantage Star Ratings weight outcome measures three times as heavily as process measures.",
+   "mirror": true,
+   "claim": "MIPS, Star Ratings and HEDIS \"all require at least one outcome measure\"",
+   "verdict": "FABRICATED",
+   "sources": "CMS QPP Quality performance category requirements (6 measures incl. one outcome or high-priority measure); CMS Part C & D Star Ratings Technical Notes (outcome/intermediate outcome weight 3, process weight 1)",
+   "note": "HEDIS is a measure set, not a reporting framework with such a rule; Star Ratings weights rather than requires."
+  },
+  {
+   "log_only": true,
+   "doc": "sanity academyModule-vbc-hedis-ecqm",
+   "block_key": "hedis-p5/p6/p9/p14/p19",
+   "claim": "CQL since 2019 reporting; 2020 CMS Interoperability and ONC Cures rules; Battelle CBE/PQM since 2023; Casalino 2016 Health Affairs $15.4B and 785 hours/physician; NCQA Health Equity Accreditation 2021; HEI renamed EHO4all and cancelled in CY2027 final rule; EOM HRSN screening",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "Corrected and sourced in phase 5 (docs/audits/phase5_platform_academy_2026-10.jsonl item E2); Casalino LP et al., Health Affairs 2016;35(3):401-6",
+   "status": "LEFT",
+   "note": "Re-read; not redone."
+  }
+ ]
+}

@@ -3000,7 +3000,7 @@ POLICY = [{'id': 'lesson_5p_legislative_architecture',
                                         "federal waiver, on CMS's terms and CMS's timeline"}]},
                     {'type': 'text',
                      'heading': 'The ERISA ceiling — Gobeille v. Liberty Mutual (2016)',
-                     'body': 'On February 29, 2016, the Supreme Court decided *Gobeille v. Liberty '
+                     'body': 'On March 1, 2016, the Supreme Court decided *Gobeille v. Liberty '
                              'Mutual Insurance Co.* by a vote of 6–2, in an opinion by Justice '
                              "Kennedy. The Court held that ERISA preempts Vermont's law requiring "
                              'health plans — including self-insured employer plans — to report '
@@ -3027,7 +3027,7 @@ POLICY = [{'id': 'lesson_5p_legislative_architecture',
                              'that assumes authority the state does not have.'},
                     {'type': 'key_stat',
                      'stats': [{'value': '6–2',
-                                'label': 'Gobeille v. Liberty Mutual (February 29, 2016) — ERISA '
+                                'label': 'Gobeille v. Liberty Mutual (March 1, 2016) — ERISA '
                                          'preempts state claims-reporting mandates as applied to '
                                          'self-insured plans',
                                 'source': 'U.S. Supreme Court, 577 U.S. 312 (2016)'},

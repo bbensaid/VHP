@@ -1,0 +1,257 @@
+{
+ "ops": [
+  {
+   "docs": [
+    "aco-medicaid-commercial"
+   ],
+   "key": "s2p2",
+   "old": "A 2024 scoping review published in collaboration with the Center for Health Care Strategies analyzed 32 studies",
+   "new": "A 2024 scoping review by Holm, Pagán and Silver in Medical Care Research and Review analyzed 32 studies",
+   "mirror": true,
+   "claim": "Scoping review \"published in collaboration with the Center for Health Care Strategies\"",
+   "verdict": "FABRICATED",
+   "sources": "Holm J, Pagán JA, Silver D, \"The Impact of Medicaid ACOs on Health Care Utilization, Quality Measures, Health Outcomes and Costs from 2012 to 2023: A Scoping Review,\" Medical Care Research and Review 2024 (PMID 38618890; Europe PMC abstract): 32 studies; mixed results; improvements in primary care visits, admissions, inpatient stays; cost reductions in a few studies, dependent on attribution length and years since implementation",
+   "note": "No CHCS involvement; real authors/journal named."
+  },
+  {
+   "docs": [
+    "aco-medicaid-commercial"
+   ],
+   "key": "s2p2",
+   "old": "Medicaid ACOs showed positive effects on primary care utilization and reductions in avoidable admissions in several states, but cost savings were variable and often dependent on",
+   "new": "significant improvements included more primary care visits, fewer admissions and shorter inpatient stays, but only a few studies reported cost reductions, and savings depended on",
+   "mirror": true,
+   "claim": "Review findings wording",
+   "verdict": "REAL",
+   "sources": "Holm J, Pagán JA, Silver D, \"The Impact of Medicaid ACOs on Health Care Utilization, Quality Measures, Health Outcomes and Costs from 2012 to 2023: A Scoping Review,\" Medical Care Research and Review 2024 (PMID 38618890; Europe PMC abstract): 32 studies; mixed results; improvements in primary care visits, admissions, inpatient stays; cost reductions in a few studies, dependent on attribution length and years since implementation",
+   "note": "Aligned to the abstract."
+  },
+  {
+   "docs": [
+    "aco-medicaid-commercial"
+   ],
+   "key": "s2p3",
+   "old": "Among the key positive findings from the scoping review: Medicaid ACO implementation was associated with an increase in children's likelihood of having a personal doctor or nurse by approximately 4 percentage points, a decline in emergency department visits by approximately 5 percentage points, and increases in specialist care use in some state programs. These are meaningful outcomes for a population that historically has faced significant access barriers. However, cost evidence was weaker, with only a subset of studies documenting actual savings to the state Medicaid program.",
+   "new": "Gains in primary care use are meaningful for a population that has historically faced significant access barriers. Cost evidence was weaker: of the 32 studies, only three examined cost reduction at all.",
+   "mirror": true,
+   "claim": "Review found ~4pp personal-doctor gain for children, ~5pp ED decline, more specialist use",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Holm J, Pagán JA, Silver D, \"The Impact of Medicaid ACOs on Health Care Utilization, Quality Measures, Health Outcomes and Costs from 2012 to 2023: A Scoping Review,\" Medical Care Research and Review 2024 (PMID 38618890; Europe PMC abstract): 32 studies; mixed results; improvements in primary care visits, admissions, inpatient stays; cost reductions in a few studies, dependent on attribution length and years since implementation",
+   "note": "Specific figures not traceable to the review; dropped."
+  },
+  {
+   "docs": [
+    "aco-medicaid-commercial"
+   ],
+   "objKey": "s1",
+   "expect": "~4 percentage-point increase in children having a personal doctor",
+   "mirror": true,
+   "set": {
+    "value": "32",
+    "label": "Medicaid ACO Studies Reviewed",
+    "context": "A 2024 scoping review identified 32 studies of Medicaid ACOs published 2012–2023 and found mixed results: more primary care visits, fewer admissions, but few documented cost savings. Source: Holm, Pagán & Silver, Medical Care Research and Review, 2024."
+   },
+   "claim": "Stat: ~4pp personal-doctor increase (CHCS/PubMed Scoping Review 2024)",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Holm J, Pagán JA, Silver D, \"The Impact of Medicaid ACOs on Health Care Utilization, Quality Measures, Health Outcomes and Costs from 2012 to 2023: A Scoping Review,\" Medical Care Research and Review 2024 (PMID 38618890; Europe PMC abstract): 32 studies; mixed results; improvements in primary care visits, admissions, inpatient stays; cost reductions in a few studies, dependent on attribution length and years since implementation",
+   "note": "Stat replaced with the review's verifiable headline."
+  },
+  {
+   "docs": [
+    "aco-medicaid-commercial"
+   ],
+   "objKey": "s2",
+   "expect": "~5 percentage-point decline in emergency department visit rates",
+   "mirror": true,
+   "set": {
+    "value": "7%",
+    "label": "Oregon CCO Expenditure Reduction",
+    "context": "Oregon's shift to Coordinated Care Organizations was associated with a 7% relative reduction in expenditures for selected services compared with Colorado. Source: McConnell et al., Health Affairs, 2017."
+   },
+   "claim": "Stat: ~5pp ED decline (CHCS/PubMed Scoping Review 2024)",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Holm J, Pagán JA, Silver D, \"The Impact of Medicaid ACOs on Health Care Utilization, Quality Measures, Health Outcomes and Costs from 2012 to 2023: A Scoping Review,\" Medical Care Research and Review 2024 (PMID 38618890; Europe PMC abstract): 32 studies; mixed results; improvements in primary care visits, admissions, inpatient stays; cost reductions in a few studies, dependent on attribution length and years since implementation; McConnell KJ, Renfro S, Lindrooth RC, Cohen DJ, Wallace NT, Chernew ME, \"Oregon's Medicaid Reform and Transition to Global Budgets Were Associated With Reductions In Expenditures,\" Health Affairs 2017;36(3):451-9 (PMC5591620): 7% relative reduction; reductions in avoidable ED visits; overall ED visits fell in both states with no significant difference",
+   "note": "Stat replaced with a verified figure."
+  },
+  {
+   "docs": [
+    "aco-medicaid-commercial"
+   ],
+   "key": "s3p2",
+   "old": "Research published in peer-reviewed journals found that the CCO transformation was associated with a 7 percent relative reduction in expenditures across selected services, attributable primarily to reductions in inpatient utilization. Emergency department visit rates fell by 21 percent in the early implementation phase. A Health Affairs study found that these expenditure reductions were attributable to coordinated care organization effects rather than to underlying demographic or economic trends.",
+   "new": "A Health Affairs study by McConnell and colleagues (2017), comparing Oregon with Colorado, found that the CCO transformation was associated with a 7 percent relative reduction in expenditures across selected services, driven primarily by reduced inpatient utilization, along with reductions in avoidable emergency department visits; overall ED visits fell in both states, with no significant difference between them.",
+   "mirror": true,
+   "claim": "Oregon ED visits fell 21% in early implementation",
+   "verdict": "FABRICATED",
+   "sources": "McConnell KJ, Renfro S, Lindrooth RC, Cohen DJ, Wallace NT, Chernew ME, \"Oregon's Medicaid Reform and Transition to Global Budgets Were Associated With Reductions In Expenditures,\" Health Affairs 2017;36(3):451-9 (PMC5591620): 7% relative reduction; reductions in avoidable ED visits; overall ED visits fell in both states with no significant difference",
+   "note": "21% does not appear in the study."
+  },
+  {
+   "docs": [
+    "aco-medicaid-commercial"
+   ],
+   "key": "s3p3",
+   "old": "The scoping review of Medicaid ACO evidence identified Oregon as showing the most consistently positive results among the nine state programs studied. Oregon's distinctive design elements",
+   "new": "Oregon's distinctive design elements",
+   "mirror": true,
+   "claim": "Scoping review identified Oregon as most consistently positive among nine state programs",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Holm J, Pagán JA, Silver D, \"The Impact of Medicaid ACOs on Health Care Utilization, Quality Measures, Health Outcomes and Costs from 2012 to 2023: A Scoping Review,\" Medical Care Research and Review 2024 (PMID 38618890; Europe PMC abstract): 32 studies; mixed results; improvements in primary care visits, admissions, inpatient stays; cost reductions in a few studies, dependent on attribution length and years since implementation",
+   "note": "Not in the review abstract; dropped."
+  },
+  {
+   "docs": [
+    "aco-medicaid-commercial"
+   ],
+   "key": "s3p3",
+   "old": "contributed to both its superior performance and the comprehensiveness of its data. As of 2020, the Oregon Health Authority renewed four-year CCO contracts with 15 CCOs,",
+   "new": "are widely credited for its results. In 2020 the Oregon Health Authority began five-year (2020–2024) contracts with 15 CCOs,",
+   "mirror": true,
+   "claim": "OHA renewed \"four-year\" CCO contracts with 15 CCOs (2020)",
+   "verdict": "FABRICATED",
+   "sources": "Oregon Health Authority, \"Oregon Health Authority Awards 2020-2024 Coordinated Care Contracts\" and CCO 2.0 pages: 15 CCOs; five-year contracts 2020-2024",
+   "note": "Contract length corrected."
+  },
+  {
+   "docs": [
+    "aco-medicaid-commercial"
+   ],
+   "key": "s3ex1",
+   "old": "Research found a 7% relative reduction in selected expenditures and a 21% decline in ED visits in the program's early years.",
+   "new": "Research found a 7% relative reduction in selected expenditures and fewer avoidable ED visits in the program's early years.",
+   "mirror": true,
+   "claim": "Example block repeats 21% ED decline",
+   "verdict": "FABRICATED",
+   "sources": "McConnell KJ, Renfro S, Lindrooth RC, Cohen DJ, Wallace NT, Chernew ME, \"Oregon's Medicaid Reform and Transition to Global Budgets Were Associated With Reductions In Expenditures,\" Health Affairs 2017;36(3):451-9 (PMC5591620): 7% relative reduction; reductions in avoidable ED visits; overall ED visits fell in both states with no significant difference",
+   "note": ""
+  },
+  {
+   "docs": [
+    "aco-medicaid-commercial"
+   ],
+   "key": "s5p2",
+   "old": "Commercial value-based care arrangements specifically grew from 34.6 percent to 39.2 percent in the same period—a 5.1 percentage-point increase in a single year. In 2024, 28.7 percent of all healthcare payments across insurance types came through downside-risk alternative payment model contracts.",
+   "new": "Commercial value-based arrangements specifically grew from 34.6 percent to 39.2 percent in the same period, and shared-risk arrangements across all lines of business rose from 24.5 percent to 28.5 percent of payments.",
+   "mirror": true,
+   "claim": "\"5.1 percentage-point increase\" (34.6->39.2); 2024: 28.7% of payments in downside-risk APMs",
+   "verdict": "UNVERIFIABLE",
+   "sources": "HCPLAN survey via Healthcare Innovation (2024): 41.3% -> 45.2% total; commercial 34.6% -> 39.2%; shared risk 24.5% -> 28.5% (2022->2023)",
+   "note": "Arithmetic error and unsourced 2024 figure replaced with the cited source's numbers."
+  },
+  {
+   "docs": [
+    "aco-medicaid-commercial"
+   ],
+   "key": "tw",
+   "old": "Oregon's Coordinated Care Organization program is the best-evidenced Medicaid ACO model, with a 7% relative reduction in expenditures and a 21% drop in ED visits in early implementation;",
+   "new": "Oregon's Coordinated Care Organization program is among the best-evidenced Medicaid ACO models, with a 7% relative reduction in selected expenditures in early implementation;",
+   "mirror": true,
+   "claim": "Takeaway: 21% ED drop",
+   "verdict": "FABRICATED",
+   "sources": "McConnell KJ, Renfro S, Lindrooth RC, Cohen DJ, Wallace NT, Chernew ME, \"Oregon's Medicaid Reform and Transition to Global Budgets Were Associated With Reductions In Expenditures,\" Health Affairs 2017;36(3):451-9 (PMC5591620): 7% relative reduction; reductions in avoidable ED visits; overall ED visits fell in both states with no significant difference",
+   "note": ""
+  },
+  {
+   "docs": [
+    "aco-medicaid-commercial"
+   ],
+   "key": "tw",
+   "old": "A 2024 scoping review of 32 Medicaid ACO studies found mixed evidence overall, with the strongest findings in primary care access (approximately 4 percentage-point gain in personal doctor rates) and emergency department reduction (approximately 5 percentage-point decline).",
+   "new": "A 2024 scoping review of 32 Medicaid ACO studies found mixed evidence overall, with the clearest gains in primary care visits, admissions and inpatient stays, and few documented cost savings.",
+   "mirror": true,
+   "claim": "Takeaway: 4pp/5pp",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Holm J, Pagán JA, Silver D, \"The Impact of Medicaid ACOs on Health Care Utilization, Quality Measures, Health Outcomes and Costs from 2012 to 2023: A Scoping Review,\" Medical Care Research and Review 2024 (PMID 38618890; Europe PMC abstract): 32 studies; mixed results; improvements in primary care visits, admissions, inpatient stays; cost reductions in a few studies, dependent on attribution length and years since implementation",
+   "note": ""
+  },
+  {
+   "docs": [
+    "aco-medicaid-commercial"
+   ],
+   "key": "qz",
+   "old": "The scoping review of Medicaid ACO evidence identified Oregon as having the most consistently positive results, attributing this partly to the integrated service design that prevents behavioral health and dental carve-outs from undermining physical health cost management.",
+   "new": "This integrated service design prevents behavioral health and dental carve-outs from undermining physical health cost management.",
+   "mirror": true,
+   "claim": "Quiz explanation: review identified Oregon as most consistently positive",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Holm J, Pagán JA, Silver D, \"The Impact of Medicaid ACOs on Health Care Utilization, Quality Measures, Health Outcomes and Costs from 2012 to 2023: A Scoping Review,\" Medical Care Research and Review 2024 (PMID 38618890; Europe PMC abstract): 32 studies; mixed results; improvements in primary care visits, admissions, inpatient stays; cost reductions in a few studies, dependent on attribution length and years since implementation",
+   "note": ""
+  },
+  {
+   "docs": [
+    "aco-medicaid-commercial"
+   ],
+   "key": "src1",
+   "old": "Center for Health Care Strategies / PubMed — \"The Impact",
+   "new": "Holm, Pagán & Silver, Medical Care Research and Review (2024) — \"The Impact",
+   "mirror": true,
+   "claim": "Source line attributing review to CHCS",
+   "verdict": "FABRICATED",
+   "sources": "Holm J, Pagán JA, Silver D, \"The Impact of Medicaid ACOs on Health Care Utilization, Quality Measures, Health Outcomes and Costs from 2012 to 2023: A Scoping Review,\" Medical Care Research and Review 2024 (PMID 38618890; Europe PMC abstract): 32 studies; mixed results; improvements in primary care visits, admissions, inpatient stays; cost reductions in a few studies, dependent on attribution length and years since implementation",
+   "note": ""
+  },
+  {
+   "docs": [
+    "aco-medicaid-commercial"
+   ],
+   "key": "src1",
+   "old": "Supports Medicaid ACO scoping review findings including personal doctor rate gains and ED reduction statistics.",
+   "new": "Supports Medicaid ACO scoping review findings (32 studies; mixed results).",
+   "mirror": true,
+   "claim": "Source note",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Holm J, Pagán JA, Silver D, \"The Impact of Medicaid ACOs on Health Care Utilization, Quality Measures, Health Outcomes and Costs from 2012 to 2023: A Scoping Review,\" Medical Care Research and Review 2024 (PMID 38618890; Europe PMC abstract): 32 studies; mixed results; improvements in primary care visits, admissions, inpatient stays; cost reductions in a few studies, dependent on attribution length and years since implementation",
+   "note": ""
+  },
+  {
+   "docs": [
+    "aco-medicaid-commercial"
+   ],
+   "key": "src2",
+   "old": "2020 contract renewal details.",
+   "new": "2020–2024 contract details.",
+   "mirror": true,
+   "claim": "Source note",
+   "verdict": "FABRICATED",
+   "sources": "OHA",
+   "note": ""
+  },
+  {
+   "docs": [
+    "aco-medicaid-commercial"
+   ],
+   "key": "src3",
+   "old": "Supports Oregon 7% expenditure reduction and 21% ED visit decline findings.",
+   "new": "Supports Oregon 7% expenditure reduction finding.",
+   "mirror": true,
+   "claim": "Source note claims 21% ED",
+   "verdict": "FABRICATED",
+   "sources": "McConnell KJ, Renfro S, Lindrooth RC, Cohen DJ, Wallace NT, Chernew ME, \"Oregon's Medicaid Reform and Transition to Global Budgets Were Associated With Reductions In Expenditures,\" Health Affairs 2017;36(3):451-9 (PMC5591620): 7% relative reduction; reductions in avoidable ED visits; overall ED visits fell in both states with no significant difference",
+   "note": ""
+  },
+  {
+   "docs": [
+    "aco-medicaid-commercial"
+   ],
+   "key": "s6p1",
+   "old": "which CMS approved in 2017 and which ended in 2025, OneCare Vermont operated under a global budget that covered attributed patients across all payers,",
+   "new": "whose agreement CMS and Vermont signed in October 2016 and which ended in 2025, OneCare Vermont received fixed prospective payments from Medicare, Medicaid, and participating commercial payers for its attributed patients,",
+   "mirror": true,
+   "claim": "VAPCOM approved 2017; OneCare under a single all-payer global budget",
+   "verdict": "FABRICATED",
+   "sources": "CMS Vermont All-Payer ACO Model page (agreement Oct 2016; PY1 2018); GMCB/NORC evaluations (payer-specific fixed prospective payments); Blue Cross VT exit Jan 2023 (VTDigger)",
+   "note": "Date and mechanism corrected."
+  },
+  {
+   "log_only": true,
+   "doc": "sanity aco-medicaid-commercial",
+   "block_key": "s3p2/s4p1/s4p2/s4p3/s5p2",
+   "claim": "Oregon 5.4%->3.4% growth commitment; MassHealth ACOs 2018, 17 ACOs, 1.3M; UMass Chan $512M (>half a billion) savings, 23%/13% nutrition findings; waiver extension to Dec 2027; HCPLAN 41.3->45.2%",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "Oregon 1115 waiver (2012); BCBSMA Foundation ACO primer (Oct 2023); UMass Chan summative evaluation via mass.gov one-page summary; CMS approval Sept 2022; HCPLAN",
+   "status": "LEFT",
+   "note": ""
+  }
+ ]
+}

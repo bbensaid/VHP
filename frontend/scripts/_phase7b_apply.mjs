@@ -18,7 +18,7 @@ const LOGDOC = {}; // per-op log lines collected then written
 const statEdits = []; // {op, old, set|remove}
 const textPairs = []; // {op, old, new}
 const results = []; // {op, doc, ok, msg}
-const ids = [...new Set(OPS.map(o => o.id))].filter(id => !ONLY || id === ONLY);
+const ids = [...new Set(OPS.map(o => o.id))].filter(id => !ONLY || ONLY.split(",").includes(id));
 for (const id of ids) {
   if (VBC(id)) { console.log('SKIP VBC-owned', id); continue; }
   const doc = await getDoc(id); if (!doc) { console.log('MISSING', id); continue; }

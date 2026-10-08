@@ -1,0 +1,119 @@
+{
+ "ops": [
+  {
+   "docs": [
+    "academyModule-vbc-rvu"
+   ],
+   "key": "rvu-p5",
+   "old": "The RUC is a 33-member advisory body",
+   "new": "The RUC is a 32-member advisory body",
+   "mirror": true,
+   "claim": "RUC is a 33-member body",
+   "verdict": "FABRICATED",
+   "sources": "AMA RUC composition documents: 32 members (29-31 voting depending on year)",
+   "note": "Minor count error."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-rvu"
+   ],
+   "key": "rvu-p6",
+   "old": "A 15-minute office visit for diabetes management may generate 1.5 work RVUs; an interventional cardiologist placing a coronary stent may generate 30 or more work RVUs in 90 minutes of procedural time. Whether that 20-to-1 ratio accurately reflects",
+   "new": "An established-patient office visit for diabetes management (CPT 99214) carries about 1.9 work RVUs; placing a single coronary stent (CPT 92928) carries roughly 10. Whether that ratio accurately reflects",
+   "mirror": true,
+   "claim": "Coronary stent \"30 or more work RVUs\"; \"20-to-1 ratio\"",
+   "verdict": "FABRICATED",
+   "sources": "CMS Physician Fee Schedule RVU files (via fastrvu.com/AAPC lookups): 92928 wRVU ~9.75-10.96 depending on year; 45378 wRVU ~3.2; 99204 wRVU 2.43 (2020) -> 2.60 (2021); 99205 3.17 -> 3.50; 99214 1.50 -> 1.92 (CY2021 PFS final rule)",
+   "note": "Stent wRVU overstated ~3x; ratio removed."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-rvu"
+   ],
+   "key": "rvu-p7",
+   "old": "A new patient office visit of moderate complexity (CPT 99204) generated a total RVU of approximately 3.0 before the 2021 E&M revision. A single colonoscopy (CPT 45378) generated approximately 3.8 total RVUs for roughly the same physician time investment. The physician doing screening colonoscopies at high volume could generate two to three times the annual revenue of an equally trained physician doing complex diabetes or heart failure management.",
+   "new": "Before the 2021 E&M revision, a new patient office visit of moderate complexity (CPT 99204) carried 2.43 work RVUs for a typical 45 minutes of physician time, while a diagnostic colonoscopy (CPT 45378) carries about 3.2 work RVUs for a procedure of shorter duration — so a physician performing colonoscopies at high volume generates far more work RVUs per hour than an equally trained physician managing complex diabetes or heart failure.",
+   "mirror": true,
+   "claim": "99204 total RVU ~3.0 pre-2021; colonoscopy ~3.8 total RVU \"for same time\"; 2-3x annual revenue",
+   "verdict": "FABRICATED",
+   "sources": "CMS Physician Fee Schedule RVU files (via fastrvu.com/AAPC lookups): 92928 wRVU ~9.75-10.96 depending on year; 45378 wRVU ~3.2; 99204 wRVU 2.43 (2020) -> 2.60 (2021); 99205 3.17 -> 3.50; 99214 1.50 -> 1.92 (CY2021 PFS final rule); 99204 typical time 45 min (pre-2021 CPT descriptor)",
+   "note": "Total-RVU figures were wrong (99204 total was ~4.6 non-facility in 2020); restated on a work-RVU basis; unverifiable revenue multiple dropped."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-rvu"
+   ],
+   "key": "rvu-p8",
+   "old": "Level 4 new patient visits (99204) saw their wRVU increase from 2.43 to 3.17 — a 30% increase.",
+   "new": "Level 4 new patient visits (99204) saw their wRVU increase from 2.43 to 2.60, and level 5 new patient visits (99205) from 3.17 to 3.50.",
+   "mirror": true,
+   "claim": "99204 wRVU 2.43 -> 3.17 (30%)",
+   "verdict": "FABRICATED",
+   "sources": "CMS Physician Fee Schedule RVU files (via fastrvu.com/AAPC lookups): 92928 wRVU ~9.75-10.96 depending on year; 45378 wRVU ~3.2; 99204 wRVU 2.43 (2020) -> 2.60 (2021); 99205 3.17 -> 3.50; 99214 1.50 -> 1.92 (CY2021 PFS final rule)",
+   "note": "3.17 was the old 99205 value; corrected."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-rvu"
+   ],
+   "key": "rvu-p9",
+   "old": "Between 2002 and 2015, the SGR called for cumulative cuts of approximately 30%. Congress overrode these cuts every single year through the so-called annual doc fix,",
+   "new": "After a 5.4% cut took effect in 2002, Congress overrode the formula's scheduled cuts — which had grown past 20% in a single year by 2014 — through 17 short-term \"doc fix\" patches,",
+   "mirror": true,
+   "claim": "SGR cumulative cuts ~30%; Congress overrode \"every single year\"",
+   "verdict": "FABRICATED",
+   "sources": "CRS, \"Medicare Physician Payment Updates and the Sustainable Growth Rate (SGR) System\" (R40907): 2002 -4.8%/-5.4% update took effect; 17 overrides 2003-2015; scheduled 2014 cut 24.4%, 2015 cut 21.2%",
+   "note": "The 2002 cut was not overridden."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-rvu"
+   ],
+   "key": "rvu-p13",
+   "old": "Research by Khullar and colleagues at Weill Cornell has documented that physicians in high-wRVU environments report significantly higher rates of burnout, with primary care physicians experiencing the highest moral distress when productivity targets conflict with relationship-based care.",
+   "new": "Productivity pressure and lack of time are among the most commonly cited drivers of physician burnout, and the pressure is sharpest in primary care, where productivity targets collide with relationship-based care.",
+   "mirror": true,
+   "claim": "Khullar et al. (Weill Cornell) documented higher burnout in high-wRVU environments; PCPs highest moral distress",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No Khullar study with this finding located (Khullar's MIPS work is cited in the MIPS lesson)",
+   "note": "Attribution dropped; general point kept."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-rvu"
+   ],
+   "key": "rvu-p14",
+   "old": "that will pay the cardiologist three to four times more per clinical hour for the rest of their career.",
+   "new": "that will pay the cardiologist far more per clinical hour for the rest of their career.",
+   "mirror": true,
+   "claim": "Cardiologist paid 3-4x more per clinical hour",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No source",
+   "note": "Specific dropped."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-rvu"
+   ],
+   "key": "rvu-p16",
+   "old": "Health economists including the late Uwe Reinhardt argued for a relative value amnesty — a comprehensive re-valuation",
+   "new": "Others have proposed a comprehensive re-valuation",
+   "mirror": true,
+   "claim": "Uwe Reinhardt argued for a \"relative value amnesty\"",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No Reinhardt source using or proposing this found",
+   "note": "Attribution dropped."
+  },
+  {
+   "log_only": true,
+   "doc": "sanity academyModule-vbc-rvu",
+   "block_key": "rvu-p4/p8/p10/p17",
+   "claim": "CF $32.74 (2024) vs $33.89 (2023); 99214 1.50->1.92; MACRA repealed SGR; ACA 10% primary care bonus 2011-2015; PCF ended 2025-12-31",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "CY2024 PFS final rule; CY2021 PFS final rule; MACRA; ACA sec. 5501",
+   "status": "LEFT",
+   "note": "CF later raised to $33.29 from March 2024 by the CAA 2024; text not wrong as stated."
+  }
+ ]
+}

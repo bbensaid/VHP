@@ -1,0 +1,119 @@
+{
+ "ops": [
+  {
+   "docs": [
+    "academyModule-vbc-mips"
+   ],
+   "key": "mips-p3",
+   "old": "In recent years, CMS has exempted an increasing share of eligible clinicians, with roughly 30-40% qualifying for various MIPS exclusions, which itself reflects the program's limited reach into the physician universe.",
+   "new": "Taken together, these exclusions keep a substantial share of clinicians who bill Medicare outside MIPS, which itself reflects the program's limited reach into the physician universe.",
+   "mirror": true,
+   "claim": "\"roughly 30-40%\" of eligible clinicians qualify for MIPS exclusions",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No CMS figure found matching 30-40%",
+   "note": "Specific dropped; general point kept."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-mips"
+   ],
+   "key": "mips-p10",
+   "old": "set at 89 points in recent performance years.",
+   "new": "set at 89 points in the 2022 performance year — the last year MACRA funded that bonus.",
+   "mirror": true,
+   "claim": "Exceptional performance bonus threshold \"89 points in recent performance years\"",
+   "verdict": "FABRICATED",
+   "sources": "MACRA funded the exceptional performance bonus ($500M/yr) for performance years 2017-2022 only; CMS 2022 QPP final rule: additional performance threshold 89 points",
+   "note": "The bonus no longer exists after PY2022; tense corrected."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-mips"
+   ],
+   "key": "mips-p11",
+   "old": "For the 2021 performance year, approximately 75% of MIPS-eligible clinicians received a positive payment adjustment; only 9% received a negative adjustment. The average positive adjustment was less than 1% of Medicare billings.",
+   "new": "For the 2021 performance year, 86% of MIPS-eligible clinicians received a positive payment adjustment, 11% a neutral one, and only 3% a penalty — and the maximum positive adjustment, applied in 2023, was just 2.34%.",
+   "mirror": true,
+   "claim": "PY2021: ~75% positive, 9% negative; average positive adjustment <1%",
+   "verdict": "FABRICATED",
+   "sources": "CMS 2021 Quality Payment Program Experience Report (June 2023): 86% positive adjustment, 11% neutral, 3% negative; mean final score 97.48 (APM entity), 88.32 (groups), 71.61 (individuals); max positive adjustment 2.34% for 2023 payment year",
+   "note": "Figures replaced with CMS's published PY2021 results."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-mips"
+   ],
+   "key": "mips-p12",
+   "old": "In the 2021 performance year, the median score was 89.5 out of 100, and over 30% of eligible clinicians scored above 90.",
+   "new": "In the 2021 performance year, clinicians scored through an APM entity averaged 97.48 points out of 100 and those reporting as groups averaged 88.32.",
+   "mirror": true,
+   "claim": "PY2021 median score 89.5; over 30% scored above 90",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS 2021 Quality Payment Program Experience Report (June 2023): 86% positive adjustment, 11% neutral, 3% negative; mean final score 97.48 (APM entity), 88.32 (groups), 71.61 (individuals); max positive adjustment 2.34% for 2023 payment year",
+   "note": "Unverifiable median replaced with CMS-published means."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-mips"
+   ],
+   "key": "mips-p6",
+   "old": "Studies published in JAMA have shown that MIPS quality scores are more strongly predicted by specialty and measure selection strategy than by independently-assessed clinical quality.",
+   "new": "Research has found that MIPS scores track poorly with independently measured quality (see the JAMA study discussed below).",
+   "mirror": true,
+   "claim": "\"Studies in JAMA\" show MIPS scores predicted by specialty and measure selection more than quality",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Bond AM, Schpero WL, Casalino LP, Zhang M, Khullar D, JAMA 2022;328(21):2136-46 (80,246 PCPs, 2019; MIPS scores inconsistently associated with process/outcome performance; low-scoring high performers served sicker, lower-income patients)",
+   "note": "Unidentifiable study claim reduced to what the real JAMA study shows."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-mips"
+   ],
+   "key": "mips-p13",
+   "old": "A 2019 JAMA Internal Medicine study by Liao and colleagues found that MIPS scores were poorly correlated with independently measured quality metrics. High MIPS scores did not predict better performance on the CMS Overall Quality Star Rating or on HEDIS measures. The authors concluded that MIPS was measuring reporting compliance rather than care quality. A subsequent 2022 analysis in Health Affairs confirmed these findings, showing that the correlation between MIPS performance scores and patient outcomes was statistically indistinguishable from zero for most conditions.",
+   "new": "A 2022 study in JAMA by Bond, Khullar and colleagues examined 80,246 primary care physicians in the 2019 performance year and found that MIPS scores were inconsistently associated with performance on process and outcome measures: some physicians with low MIPS scores performed well on outcomes, and those physicians tended to serve sicker, lower-income patients. The authors concluded that MIPS may be ineffective at measuring and incentivizing quality improvement.",
+   "mirror": true,
+   "claim": "2019 JAMA Internal Medicine study by Liao et al.: MIPS scores did not predict Star Rating/HEDIS; 2022 Health Affairs: correlation with outcomes indistinguishable from zero",
+   "verdict": "FABRICATED",
+   "sources": "Bond AM, Schpero WL, Casalino LP, Zhang M, Khullar D, JAMA 2022;328(21):2136-46 (80,246 PCPs, 2019; MIPS scores inconsistently associated with process/outcome performance; low-scoring high performers served sicker, lower-income patients)",
+   "note": "No such Liao 2019 or 2022 Health Affairs studies; replaced with the real JAMA 2022 study."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-mips"
+   ],
+   "key": "mips-p14",
+   "old": "Examples include the Rheumatology MVP, the Stroke Care and Prevention MVP, the Anesthesia MVP, and the Preventive Care and Vaccination MVP.",
+   "new": "The first MVPs, available for 2023, included Advancing Rheumatology Patient Care, Coordinating Stroke Care to Promote Prevention and Cultivate Positive Outcomes, Advancing Care for Heart Disease, and Patient Safety and Support of Positive Experiences with Anesthesia.",
+   "mirror": true,
+   "claim": "MVP examples incl. \"Preventive Care and Vaccination MVP\"",
+   "verdict": "FABRICATED",
+   "sources": "CMS QPP, 2023 MIPS Value Pathways list (7 MVPs: rheumatology, stroke, heart disease, chronic disease, emergency medicine, lower extremity joint repair, anesthesia)",
+   "note": "No MVP by that name; real MVP titles used."
+  },
+  {
+   "docs": [
+    "academyModule-vbc-mips"
+   ],
+   "key": "mips-p16",
+   "old": "A 2019 RAND Corporation analysis estimated that the average MIPS-eligible physician practice spent $12,811 per clinician per year on MIPS reporting activities.",
+   "new": "A study by Khullar and colleagues (JAMA Health Forum, 2021), based on interviews with 30 practices about the 2019 performance year, estimated that MIPS participation cost practices $12,811 and 201.7 staff hours per physician per year.",
+   "mirror": true,
+   "claim": "\"2019 RAND Corporation analysis\" $12,811 per clinician",
+   "verdict": "FABRICATED",
+   "sources": "Khullar D et al., \"Time and Financial Costs for Physician Practices to Participate in the Medicare MIPS: A Qualitative Study,\" JAMA Health Forum 2021;2(5):e210527",
+   "note": "Figure is real; attribution to RAND was wrong."
+  },
+  {
+   "log_only": true,
+   "doc": "sanity academyModule-vbc-mips",
+   "block_key": "mips-p2/p3/p4/p10",
+   "claim": "MACRA 2015 consolidated PQRS/VM/MU; APM 5% bonus; low-volume threshold $90k/200/200; 2023 weights 30/30/15/25; +/-4,5,7,9%",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "CMS QPP program documentation; MACRA sec. 101",
+   "status": "LEFT",
+   "note": ""
+  }
+ ]
+}
