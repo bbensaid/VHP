@@ -180,7 +180,7 @@ export const rhtProgramData: Record<string, RHTProfile> = {
       "Establishing 8 Regional Hubs to provide technical expertise and competitive grants for Value-Based Care adoption.",
     initiatives: [
       { title: "Regional Hub Model", description: "8 hubs providing technical expertise (IT, workflow) to local providers." },
-      { title: "Value-Based Care Grants", description: "Competitive grants building on the PA Rural Health Model." },
+      { title: "Value-Based Care Grants", description: "Competitive grants building on the now-ended Pennsylvania Rural Health Model (2017–2024), which paid participating rural hospitals all-payer global budgets." },
     ],
     metrics: [
       { label: "Hubs Operational", status: "Pending", target: "8 Hubs" },
@@ -237,25 +237,25 @@ export const rhtProgramData: Record<string, RHTProfile> = {
     id: "maryland",
     stateName: "Maryland",
     awardAmount: "$168,000,000",
-    strategicFocus: "Global Budget Expansion & Rural Equity",
+    strategicFocus: "Rural Workforce, Access & Food for Health",
     description:
-      "Building on Maryland's unique all-payer global budget model, the RHT program extends its reach to underserved rural communities on the Eastern Shore, pairing financial reform with targeted health equity investments.",
+      "Maryland’s RHT plan ($168.2 million in Budget Period 1) is organized in three pillars — transforming the rural health workforce, promoting sustainable access and innovative care, and helping rural Marylanders eat for health — layered on a hospital system already paid under all-payer global budgets, which moved from the Total Cost of Care Model (ended December 31, 2025) into the CMS AHEAD Model in January 2026.",
     initiatives: [
       {
-        title: "Rural Global Budget Pilots",
-        description: "Extending the Maryland Total Cost of Care model to smaller rural hospitals not yet participating in global budgets.",
+        title: "Expand Access to Primary Care",
+        description: "Maryland Health Care Commission grants ($6.3 million in Budget Period 1) to establish and expand rural primary care and strengthen chronic disease management to reduce avoidable hospital use. Maryland hospitals were already on all-payer global budgets, now under the CMS AHEAD Model.",
       },
       {
         title: "Eastern Shore Equity Initiative",
         description: "Targeted workforce recruitment, mobile health units, and broadband expansion for the underserved Eastern Shore region.",
       },
       {
-        title: "Workforce Housing & Retention",
-        description: "Subsidized housing and loan forgiveness programs to retain clinicians in rural Maryland counties.",
+        title: "Workforce Pipeline & Retention",
+        description: "Maryland Department of Labor funding ($15 million in Budget Period 1) for workforce pipeline training and for training, recruitment and retention of rural physicians, PAs, dentists and other advanced practice professionals, plus expanded registered apprenticeships.",
       },
     ],
     metrics: [
-      { label: "New Global Budget Hospitals", status: "Pending", target: "8 Facilities" },
+      { label: "Rural Primary Care Access Funding", status: "In Progress", target: "$6.3M (Budget Period 1)" },
       { label: "Eastern Shore Screenings", status: "In Progress", target: "+15,000/yr" },
       { label: "Clinician Retention Rate", status: "Pending", target: "+12%" },
     ],

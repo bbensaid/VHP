@@ -1,0 +1,78 @@
+PHASE 6 CORRECTION PASS — 2026-10-07 (not committed)
+Ledger: docs/audits/phase6_2026-10.jsonl (one line per change: target, old, new, sources, status FIXED|LEFT, note)
+Backups: sanity-backups/phase6-2026-10-07/ (every Sanity doc, Supabase row and local file, written before any change; no overwrites)
+Scripts: frontend/scripts/_phase6_lib.mjs, _phase6_task1_module3.mjs, _phase6_task1b_quotes.mjs, _phase6_task2_states.mjs,
+         _phase6_task3_pairs.mjs, _phase6_task3_sweep.mjs, _phase6_task3b_repair.mjs, _phase6_task3c_fallbacks.mjs
+Every write was re-fetched and compared (key-order-insensitive for Postgres jsonb).
+
+TOTALS: 230 FIXED lines (104 Sanity, 57 Supabase, 69 local source files), 27 LEFT lines.
+Documents touched: 21 Sanity docs, 14 Supabase rows (5 lessons, 2 quiz_questions, 7 quiz_options), 6 local files.
+
+TASK 1 — VBC Fundamentals Module 3 (economics pillar)
+ Targets: Sanity academyModule + policyAnalysis vbc-fundamentals-module-3-economics-pillar; Supabase lessons e49bcdcd (same slug)
+ and 11ea7c99 (aco-basics, which carries the identical fallback body); courses_tier1.json, course_value_based_care.json,
+ sanity/content/academy/vbc_economics.json, sanity/temp_holder/VBC_Economics.json.
+ - BPCI-A: "$2,100 per episode", "$900M net savings 2018-2023", "a 2024 CMS evaluation" and "CMS's current bundled payment program"
+   are wrong. Replaced with figures from the Lewin Group Final Evaluation Report (Aug 2026): -$743/episode in MY1-2, about -$1,000 in
+   MY3-6, about $800M net over eight model years after net losses in MY1-3, SNF spending about -$500 per episode, SNF stays about 3 days
+   shorter, readmissions similar to the comparison group, and worse self-reported functional status in MY7-8. Also added: the model ran
+   2018-10-01 to 2025-12-31, did not meet CMS's expansion criteria, and TEAM began 2026-01-01.
+ - The ROI table cited six evaluations that do not exist. Primary Care First's real evaluation found a 1% spending INCREASE. Replaced
+   with 4 verified rows: Coleman CTI RCT (2006), Penn IMPaCT ($2.47 per $1), CPC+ final report (no net savings), PCF third annual
+   report (+1%). The 5 dependent paragraphs, the action item and the learning objective were rewritten to match.
+ - The "$312 vs $87 per beneficiary, 3.6:1" claim (stated twice) has no source. Replaced with CMS PY2024 SSP results: $651 gross and
+   $245 net per capita, 75% of 476 ACOs earned payments, low-revenue ACOs $319 vs high-revenue $180.
+ - "Direct Contracting" listed as a current track: changed to ACO REACH (its 2023 successor, ends 2026-12-31), followed by LEAD
+   from 2027-01-01. The recommendation to evaluate ACO REACH entry now points to LEAD.
+ - Quotes attributed to Leemore Dafny (Health Affairs 2025) and Mark McClellan (JAMA 2025) could not be found anywhere. Attributions
+   removed; the pull-quote blocks stay. Removed the nonexistent "CMMI Care Management ROI Analysis 2024" from the image caption.
+
+TASK 2 — /dashboard/[state] (Sanity rhtState + statePerformanceIndex; static TS fallbacks; Supabase rht_state_profiles has 0 rows)
+ - All 100 docs scanned. Only GA, MD, PA and VT mention a CMS model.
+ - Maryland (rhtState + perfIndex): the profile presented TCOC as current and listed "Rural Global Budget Pilots", "New Global
+   Budget Hospitals: 8" and subsidized housing, none of which is in Maryland's CMS-approved RHT plan. Rewritten from the MDH RHTP
+   webinar (2026-04-17): $168.2M Budget Period 1; workforce / sustainable access / Eat for Health pillars; MHCC primary care
+   ($6.3M); Dept of Labor workforce ($15M). TCOC ended 2025-12-31 and Maryland moved into AHEAD (Cohort 1) in January 2026.
+ - Pennsylvania: the PA Rural Health Model is now marked as ended (2017-2024).
+ - The same text was fixed in lib/data/rht-program.ts and lib/data/performance-index-data.ts.
+ - No state doc presents MCP, PCF or BPCI-A as active. No non-participant is claimed as an AHEAD participant.
+
+TASK 3 — all 708 published Sanity docs + quizzes/quiz_questions/quiz_options
+ Sanity (16 docs):
+ - ahead-model-year-one-financial-outcomes: listed six AHEAD states including Vermont. Now five states; Vermont's withdrawal noted;
+   Cohort 2-3 performance starts 2028-01-01.
+ - capitation-mechanics-rvu-volume: "AHEAD's six states" changed to five.
+ - uninhabitable-math, health-economics-fundamentals-act-167: AHEAD was described as Vermont's current tool. Both now say Vermont
+   withdrew in July 2026 and the reforms rest on Act 68.
+ - global-budget-models-international-lessons: PA RHM marked as ended in 2024.
+ - Vermont All-Payer ACO / OneCare written in the present tense: academyModule-vbc-clinical-m5 ("runs through 2029", which is false),
+   precision-medicine-m1 (9 edits), precision-medicine-m3-economics (4), interop-vermont-vitl, aco-medicaid-commercial,
+   vbc-fundamentals-m1, academyModule-vbc-aco-medicaid ("covers the vast majority of Vermonters" also corrected).
+ - BPCI-A present tense / $344M misstatements: bundled-payment-mechanics (also TEAM "launches/will" changed to "began"),
+   bundled-payment-evidence, academyModule-vbc-bundled-mechanics, vbc-fundamentals-module-5 (the same fabricated "$2,100" row,
+   plus a false "consistent quality improvement" claim).
+ Quiz (10 rows): VITL/AHEAD question, its correct option and 2 distractors; "December 2028" changed to "January 15, 2028" (option
+   ce422797); 2 explanations that still described Vermont's AHEAD agreement as in force; work-requirements explanation and
+   correct option updated for OBBBA (federal mandate effective 2027-01-01).
+ Supabase lesson fallbacks with identical stale text (task 3c): precision-medicine-m1, -m3-economics, vbc-clinical-m5.
+ Facts with no remaining instances: UVMMC court ruling, "$195M over five years", work requirements "late 2026".
+
+INCIDENT (self-inflicted, repaired): re-running _phase6_task3_sweep.mjs --commit applied 2 replacements a second time, because
+ their replacement text contains the original. Result: a repeated sentence in bundled-payment-evidence and "includedd" in
+ academyModule-vbc-bundled-mechanics. Both were repaired and verified (_phase6_task3b_repair.mjs). The ledger marks the erroneous
+ lines. The walker in _phase6_lib.mjs now skips a pair once its replacement is already present, so all scripts are idempotent.
+
+LEFT (details in ledger):
+ - Georgia AHEAD readiness: accurate. Georgia funds 87 hospitals to prepare and intends to apply for 2028.
+ - Maryland ini-1 and metric targets, and every state's metric targets: unsourced platform targets, not model-status claims.
+ - Module 3: placeholder YouTube video and "downloadable Excel model"; blk015 ACO REACH present tense (still correct until
+   2026-12-31); blk007 hypothetical table; image caption is not rendered (no asset attached); "up to 80%".
+ - Module 5: further fabricated-looking sources (MSSP 12-Year Evaluation quote, Health Affairs/JAMA Psychiatry/KFF/Commonwealth
+   labels). These need a sourcing pass beyond ended-model status.
+ - academyModule-vbc-social-risk: the OneCare social-risk-index claim is unverified. I did not just change its tense; it needs
+   sourcing or removal.
+ - Platform conflict on whether more states can join AHEAD (module-2 says no new cohorts; AHEAD analysis says July 2026 window).
+   CMS page is silent, so neither was changed.
+ - capitation-mechanics "Vermont's Act 167" global budget: should be Act 68. Not an ended-model claim, so left.
+ - Legitimate historical mentions (OneCare autopsy, Gobeille, PCF/MCP early termination, Maryland AHEAD continuation).
+ - Other Supabase lesson fallbacks were not swept; they render only if sanity_slug fails.
