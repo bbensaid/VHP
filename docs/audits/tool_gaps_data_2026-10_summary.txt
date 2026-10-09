@@ -1,0 +1,42 @@
+Data-dependent tool upgrades, October 2026: summary
+Log: docs/audits/tool_gaps_data_2026-10.jsonl (one line per item; item 4 has an extra resume-verification line)
+Not committed (per instruction).
+
+STATUS
+1 Hospital Financial Stress Test: GMCB FY2025 actuals + FY2026 projected ratios ... DONE (prior run)
+2 APM Design Lab: the 8 model types now drive the calculation ................ DONE (prior run)
+3 APM Shared Savings Calculator: 14 Vermont hospital presets ................. DONE (prior run; DERIVED Medicare proxy, labelled)
+4 Population Health Modeler: AHRQ PQI ........................................ DONE (prior run; re-verified on resume)
+5 Policy Simulator price transparency: 20 CMS shoppable services ............. DONE (this run)
+LEFT: none.
+
+FILES
+1 frontend/components/research/HospitalFinancialScorecard.tsx
+2 frontend/components/research/APMDesignLab.models.ts, APMDesignLab.tabs/architecture.tsx, frontend/scripts/test-apm-models.test.ts
+3 frontend/components/research/APMCalculator.tsx
+4 frontend/components/research/PopulationHealthModeler.pqi.tsx, PopulationHealthModeler.tsx
+5 frontend/components/research/PolicySimulator.data.ts, PolicySimulator.tabs/transparency.tsx
+
+ITEM 4 RESUME CHECK
+The code was complete and wired in (PQIPanel, Preventable Utilization tab). On resume, every national rate and denominator
+was checked against AHRQ PQI Benchmark Tables v2025 Table 1, and every VT/US Medicare cell against a live data.cms.gov
+GV PUF 2024 query. All matched exactly. The book says "13 PQI conditions", but AHRQ's current set has 10 PQIs plus
+4 composites. The panel says so on screen and does not revive the retired indicators.
+
+ITEM 5 SUMMARY
+- 20 services, all from CMS's list of 70 shoppable services (45 CFR 180.60). Each is priced by site of service from the
+  CY2026 Medicare files: OPPS Addendum B Oct 2026, ASC Addendum AA Oct 2026, PFS RVU26D (CF $33.4009) and CLFS Q4 2026.
+  Rates are national unadjusted allowed amounts, facility fee plus professional fee. Each row carries its own derivation.
+- The "price range" is the Medicare HOPD-to-ASC-to-office spread. No public, comparable per-service commercial price
+  for Vermont exists. The commercial multiple is a labelled proxy: 311% (RAND Round 5, Vermont outpatient),
+  adjustable, with the national 279% (RAND 5.1) shown for reference.
+- Two wrong statements in the same tab were corrected: the CMS penalty (now matches 45 CFR 180.90) and the
+  "MedPAC $10B+" claim (now MedPAC June 2023: $6.0B + $1.5B).
+
+CHECKS (run 2026-10-09)
+- npx tsc --noEmit --skipLibCheck: exit 0
+- npx eslint on all touched files for items 1-5: exit 0 (the test file is eslint-ignored by repo config)
+- npx tsx --test scripts/test-apm-models.test.ts: 9/9 pass
+- Item 5 data invariant: HOPD >= ASC >= office on all 20 rows. Labs and screening mammography are equal across
+  settings because they are already site-neutral.
+- Not done: browser render of the tabs.
