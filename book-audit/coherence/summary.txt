@@ -1,0 +1,50 @@
+BOOK COHERENCE PASS - 2026-10-08 (read-only; HTR_Book_v42.docx NOT modified)
+
+Question: after the 386 fact corrections, does any passage's REASONING still rest on the old facts?
+Method: for each corrected fact, grep a full paragraph-text dump of word/document.xml (includes table
+cells the .md mirror flattens) for the subject plus dependent concepts; read each hit in context;
+check figures, Key Concepts, Implications, and the neighbours of corrected sentences.
+
+Files
+  findings.jsonl      18 findings (id, chapter, fact, passage, problem, proposed_text, anchor_count)
+  ops.json            the same 18 as raw ops, with find/replace in XML form
+  edits_coherence.py  EDITS list (patch_docx format, comment above each op), can be exec'd without __file__
+
+Findings per fact
+  1 UVMMC settlement, no ruling ........ 2   COH-1-01 Intro, COH-1-02 Conclusion
+  2 Medicaid HGB halted by CMS ......... 4   COH-2-01/02 App G.3.1, COH-2-03 Intro, COH-2-04 Ch11 actor table
+  3 AHEAD withdrawal / EAST Fund gone .. 8   COH-3-01 Ch6 (EAST "pairing"), 3-02 Ch1 table (cause reversed),
+                                              3-03 Ch8 Blueprint "funded by all payers", 3-04 Fig 13.4 timeline,
+                                              3-05 Ch14.4.3 scenario, 3-06 Ch14.4.1 "AHEAD's fate",
+                                              3-07 Conclusion "federal capital is available", 3-08 App B matrix
+  4 RBP prices effective FY2028 ........ 0   the "RBP (FY2027)" labels are the statutory deadline and every
+                                              effect/savings/premium passage already says FY2028
+  5 Strategic Plan by Jan 15, 2028 ..... 0   every timing argument is consistent with that date
+  6 CCBHC: 4 certified July 1 2026 ..... 2   COH-6-01 Fig 13.1, COH-6-02 App E scorecard
+  7 Work requirements Jan 1, 2027 ...... 1   COH-7-01 Ch3 "late 2026" left over in the Fig 3.4 lead-in
+  8 Porter = Tier 2 .................... 0   Ch11 prose, Fig 11.5, App C, Ch16 table agree; Fig 2.2 "TBD" is
+                                              about COE designations only, not tier
+  9 Weak Operations doesn't collapse ... 0   Ch16 is fixed; Ch1 and App H only collapse the score for UPSTREAM
+     the composite                            gaps (Policy/Technology), which matches
+ 10 Income/charges/premium periods ..... 1   COH-10-01 Ch6 "tracks charge growth with high fidelity" (108% vs 38%)
+
+Total ops: 18 (all `raw`, each find inside one <w:t> run, count == 1 in current document.xml)
+
+Dry run: patch_docx.apply() on the current word/document.xml in memory, all 18 ops applied in
+order, no anchor errors, result parses as XML (ElementTree), all 18 replacement strings present.
+Nothing written to the .docx.
+
+Found and left alone, on purpose
+  - Fig 14.1 / 14.2 EAST-Fund and AHEAD-modification rows: §14.4.3 already labels them as the April
+    2026 assessment, overtaken in July 2026.
+  - Ch3 "the agreement includes ... withdrawal rights" is present tense for a withdrawn agreement.
+    A tense slip, not broken reasoning.
+  - Ch8 Blueprint target to grow its "Medicare population" now that Medicare PMPM has ended. This is
+    tension, not contradiction (attribution is still a goal).
+  - App G.3 "commercial RBP must begin by FY2027 (October 2026), with maximum rates in effect from
+    FY2028" is the corrected wording and holds together.
+  - Glossary "All-payer alignment ... across commercial payers and Medicaid by FY2028-2030" may lean
+    on the halted Medicaid HGB. Act 68's scope over Medicaid was not checked, so it was not changed.
+
+Before applying (CLAUDE.md rule 10): get a fresh Google-Docs download, back it up, re-check each
+anchor count == 1, apply, run check_format.py and render_check.py, then refresh_md.py.
