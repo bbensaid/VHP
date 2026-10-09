@@ -1,0 +1,513 @@
+{
+  "_createdAt": "2026-06-01T12:26:18Z",
+  "_id": "what-is-rcm",
+  "_rev": "glqH7a4yvZFQerxZdaHXFd",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T12:26:18Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Money Side of Care"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Every time a patient receives care, two things happen in parallel. There is the clinical story — the diagnosis, the treatment, the outcome. And there is a financial story — someone has to be billed, an insurer has to be charged, and the provider has to actually get paid for the work. Revenue cycle management (RCM) is the discipline that governs that second story."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Formally, the revenue cycle is comprised of all the administrative and clinical functions that contribute to the capture, management, and collection of patient service revenue. In plainer terms: it is everything a healthcare organization does to get paid for the care it delivers — from the moment a patient schedules an appointment to the moment the final dollar is collected."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This matters enormously because, in American health care, getting paid is genuinely hard. Care is delivered first and billed later; payment flows through a maze of insurers each with their own rules; and a single error anywhere in the chain can mean the provider is never paid at all. RCM exists to manage that complexity so that providers stay financially viable and can keep their doors open."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Revenue cycle management (RCM) is the set of administrative and clinical functions that capture, manage, and collect the revenue a provider earns for patient care — everything involved in getting paid, from scheduling to final collection."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why RCM Is Such a Big Deal"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The scale of the money and effort involved is staggering. Administrative costs — much of which is billing- and insurance-related work — are estimated to represent roughly 25 to 31 percent of total U.S. healthcare spending. The largest single category of healthcare \"waste,\" about $266 billion a year, comes from administrative complexity."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "That complexity translates into real money lost when RCM fails. In 2024, an estimated $262 billion in claims were denied by insurers, and the initial claim denial rate reached about 11.8 percent — meaning roughly one in eight claims was rejected on first submission. Each denied claim costs somewhere between $25 and $181 just to rework."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Unsurprisingly, RCM has become a massive industry in its own right. The U.S. revenue cycle management market is measured in the tens of billions of dollars and growing at double-digit rates, as providers invest heavily in people, software, and outsourced services to capture revenue they would otherwise lose. RCM is not back-office trivia — it is central to whether a hospital or practice survives."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Administrative costs, much of it billing-related (JAMA / research)",
+          "label": "of US Health Spending",
+          "value": "25-31%"
+        },
+        {
+          "_key": "s2",
+          "context": "Largest category of healthcare system waste (PGPF)",
+          "label": "Annual Admin Waste",
+          "value": "~$266B"
+        },
+        {
+          "_key": "s3",
+          "context": "Roughly 1 in 8 claims denied on first submission (industry reports)",
+          "label": "Initial Denial Rate (2024)",
+          "value": "~11.8%"
+        },
+        {
+          "_key": "s4",
+          "context": "Per denied claim (industry analyses)",
+          "label": "Cost to Rework a Denial",
+          "value": "$25-$181"
+        }
+      ]
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Three Phases of the Revenue Cycle"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The revenue cycle is conventionally divided into three phases, and this front-to-back structure is the map for the entire course. The first is the front-end: everything that happens before and at the point of care — scheduling, registration, insurance verification, prior authorization, and financial counseling."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The second is the mid-cycle, where clinical care meets the financial process. This is where the care delivered during the visit gets translated into billable form: clinical documentation, medical coding (ICD-10, CPT, HCPCS), and charge capture. The mid-cycle is the bridge — what happens here directly determines how much the provider can bill and how cleanly."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The third is the back-end: everything after the bill is created — claim submission, payment posting, denial management, appeals, accounts receivable follow-up, and patient collections. A useful way to remember it: the front-end sets up the claim, the mid-cycle builds the claim, and the back-end collects on the claim."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Scheduling, registration, insurance verification, prior authorization, financial counseling.",
+          "title": "Front-End (pre-service)"
+        },
+        {
+          "_key": "step2",
+          "description": "Clinical documentation, medical coding, and charge capture — translating care into a bill.",
+          "title": "Mid-Cycle (point of care)"
+        },
+        {
+          "_key": "step3",
+          "description": "Claim submission, payment posting, denials, appeals, AR follow-up, and patient collections.",
+          "title": "Back-End (post-service)"
+        }
+      ],
+      "title": "The Three Phases of the Revenue Cycle"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Where Clinical Meets Financial"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "One of the most important ideas in RCM is that it is not purely a financial function — it is deeply clinical. The mid-cycle makes this explicit: what a clinician documents during a visit directly affects how much the organization gets paid and how quickly. A service that was delivered but not documented, or documented but not coded, simply does not get billed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This clinical-financial link runs throughout the cycle. A registration clerk who mistypes an insurance ID, a physician who under-documents a complex visit, a coder who selects the wrong code — each is a clinical-adjacent action with direct financial consequences downstream. RCM is therefore a team sport spanning the entire organization, not the job of a billing department alone."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is also why RCM is increasingly understood as a quality-and-finance discipline together. Accurate documentation and coding are simultaneously about getting paid correctly and about reflecting the care actually delivered. The same data that drives a clean claim also feeds quality measurement, which connects RCM to the broader work of running a health system well."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4an1",
+      "_type": "analogyBlock",
+      "analogy": "Think of RCM like a relay race. The front-end runner gets the baton cleanly off the line (correct patient and insurance info). The mid-cycle runner carries it through the hard middle stretch (documentation and coding). The back-end runner sprints to the finish (claims and collections). Drop the baton at any handoff and the whole team loses the race — no matter how fast the other runners are.",
+      "concept": "How the phases of the revenue cycle depend on each other"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Who Does RCM and How It Is Measured"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "RCM is performed by a wide cast: schedulers and registrars, financial counselors, medical coders, billing specialists, denial and appeals analysts, and accounts-receivable teams, all supported by software and often by outsourced vendors. Many organizations now blend in-house staff with specialized RCM companies and technology platforms."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because RCM determines whether a provider gets paid, it is measured rigorously. The Healthcare Financial Management Association (HFMA) maintains a set of standardized revenue-cycle metrics known as MAP Keys, which establish industry benchmarks for revenue cycle excellence across hospitals, physician groups, and other provider types. Later lessons in this course dive into these key performance indicators in detail."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The goal of all this measurement and effort is simple to state and hard to achieve: get paid the right amount, for the right care, as quickly as possible, with as little waste and rework as possible. Every lesson that follows is, at bottom, about improving one piece of that goal — and this course walks the full cycle from scheduling to collections."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5ex1",
+      "_type": "exampleBlock",
+      "content": "The Healthcare Financial Management Association (HFMA) is the leading professional body for healthcare finance, and its MAP Keys are the industry-standard set of revenue-cycle KPIs.\nMAP Keys let an organization benchmark metrics like clean-claim rate, days in accounts receivable, and denial rate against national peers — turning RCM performance from a guess into a measurable, comparable discipline.",
+      "title": "HFMA and the MAP Keys"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Revenue cycle management (RCM) is the set of administrative and clinical functions that capture, manage, and collect the revenue a provider earns for patient care.",
+        "In plain terms, RCM is everything involved in getting paid — from scheduling an appointment to collecting the final dollar.",
+        "RCM matters at scale: administrative costs are ~25-31% of U.S. health spending, ~$266B in annual waste, with ~$262B in claims denied in 2024.",
+        "The revenue cycle has three phases: front-end (pre-service setup), mid-cycle (documentation, coding, charge capture), and back-end (claims, payment, denials, collections).",
+        "A useful frame: the front-end sets up the claim, the mid-cycle builds the claim, and the back-end collects on the claim.",
+        "RCM is deeply clinical — what is documented at the point of care directly determines what can be billed — making it an organization-wide team sport.",
+        "RCM is performed by many roles and rigorously measured; HFMA's MAP Keys are the industry-standard KPIs for benchmarking revenue-cycle performance."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The mid-cycle is where clinical care meets the financial process: it covers clinical documentation, medical coding (ICD-10, CPT, HCPCS), and charge capture — the work of translating the care delivered into a billable claim. Scheduling and verification are front-end; denials, appeals, and collections are back-end.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Scheduling, registration, and insurance verification"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Clinical documentation, medical coding, and charge capture — translating the care delivered into a bill"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Denial management, appeals, and patient collections"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Marketing and patient acquisition"
+        }
+      ],
+      "question": "In the three-phase model of the revenue cycle, which activities belong to the \"mid-cycle\"?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Revenue Cycle Overview (HFMA) — https://www.hfma.org/wp-content/uploads/2024/10/revenuecycleoverview-n2hcoctober2024-mari.pdf — RCM definition; administrative and clinical functions; MAP Keys"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Exploring Front-End Revenue Cycle (TechTarget) — https://www.techtarget.com/revcyclemanagement/feature/Exploring-Front-End-Revenue-Cycle-How-to-Optimize-Its-Performance — front-end / mid-cycle / back-end phases and their activities"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Almost 25% of Healthcare Spending Is Considered Wasteful (PGPF) — https://www.pgpf.org/article/almost-25-percent-of-healthcare-spending-is-considered-wasteful-heres-why/ — administrative complexity ~$266B; admin costs as share of spending"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Administrative Expenses in the US Health Care System: Why So High? (JAMA) — https://jamanetwork.com/journals/jama/fullarticle/2785479 — administrative costs estimated at 25-31% of healthcare expenditures"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] The Real Cost of Claim Denials: $262B Lost (Azebratech) — https://azebratech.com/blog/healthcare-claim-denial-automation/ — ~$262B denied in 2024; ~11.8% initial denial rate; $25-$181 rework cost"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] U.S. Healthcare RCM Market (Towards Healthcare) — https://www.towardshealthcare.com/insights/us-healthcare-revenue-cycle-management-market-sizing — RCM market size and double-digit growth"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "revenue-cycle-management",
+  "order": 1,
+  "slug": {
+    "_type": "slug",
+    "current": "what-is-rcm"
+  },
+  "title": "What is Revenue Cycle Management?"
+}

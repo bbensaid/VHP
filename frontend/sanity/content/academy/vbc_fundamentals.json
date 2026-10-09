@@ -8,7 +8,7 @@
   "pillar": "All",
   "level": "Foundational",
   "estimatedReadTime": 18,
-  "summary": "The United States spends more on healthcare than any nation on earth — yet ranks 37th in health outcomes. This module explains why that paradox exists, how the fee-for-service payment system created it, and how value-based care offers a fundamentally different path forward.",
+  "summary": "The United States spends more on healthcare than any nation on earth — yet trails comparable wealthy nations on life expectancy and preventable deaths. This module explains why that paradox exists, how the fee-for-service payment system created it, and how value-based care offers a fundamentally different path forward.",
   "learningObjectives": [
     "Explain the US healthcare spending paradox using current data",
     "Describe how fee-for-service payment works and the perverse incentives it creates",
@@ -31,7 +31,7 @@
       "_type": "block",
       "_key": "m1p002",
       "style": "normal",
-      "children": [{"_type": "span", "_key": "m1s002", "text": "The US spent $4.5 trillion on healthcare in 2022 — roughly $13,493 per person, and 18.3 percent of the entire national economy. That is more than any other high-income country, by a wide margin. Switzerland, the second-highest spender, dedicates about 11.3 percent of its GDP to health. Germany spends 12.8 percent. Canada spends 12.2 percent.", "marks": []}],
+      "children": [{"_type": "span", "_key": "m1s002", "text": "The US spent $4.5 trillion on healthcare in 2022 — roughly $13,493 per person, and 17.3 percent of the entire national economy (CMS). That is more than any other high-income country, by a wide margin: OECD's Health at a Glance 2025 puts U.S. per-capita spending at 2.5 times the OECD average, with Switzerland, Norway and Germany, the next-highest spenders, at about two-thirds of the U.S. level.", "marks": []}],
       "markDefs": []
     },
     {
@@ -39,16 +39,16 @@
       "_key": "m1sg01",
       "title": "The US Healthcare Spending Paradox",
       "stats": [
-        {"_key": "m1st01", "value": "$4.5T", "label": "US Healthcare Spending (2022)", "context": "18.3% of GDP — the highest of any nation on earth. Source: CMS National Health Expenditure Accounts, 2023.", "trend": "up"},
-        {"_key": "m1st02", "value": "37th", "label": "US Health Outcomes Ranking", "context": "Behind most peer nations in life expectancy, infant mortality, and chronic disease burden. Source: World Health Organization.", "trend": "down"},
-        {"_key": "m1st03", "value": "30–40%", "label": "Estimated Waste in US Healthcare", "context": "JAMA 2019: $760B–$935B per year on unnecessary or low-value care — roughly 1 in 3 dollars spent.", "trend": "neutral"}
+        {"_key": "m1st01", "value": "$4.5T", "label": "US Healthcare Spending (2022)", "context": "17.3% of GDP — the highest share among wealthy nations. Source: CMS National Health Expenditure Accounts.", "trend": "up"},
+        {"_key": "m1st02", "value": "4.1 yrs", "label": "U.S. Life Expectancy Gap (2023)", "context": "U.S. life expectancy of 78.4 years trailed the comparable-country average of 82.5. Source: Peterson-KFF Health System Tracker.", "trend": "down"},
+        {"_key": "m1st03", "value": "~25%", "label": "Estimated Waste in US Healthcare", "context": "JAMA 2019 (Shrank et al.): $760B–$935B per year in waste — about one-quarter of total U.S. health spending.", "trend": "neutral"}
       ]
     },
     {
       "_type": "block",
       "_key": "m1p003",
       "style": "normal",
-      "children": [{"_type": "span", "_key": "m1s003", "text": "And yet — despite outspending every peer nation — the US ranks 37th in overall health outcomes according to the World Health Organization. Americans live shorter lives than citizens of 40 other countries. The US infant mortality rate is nearly double that of Finland. Preventable deaths from conditions like diabetes, hypertension, and heart disease occur at far higher rates here than in comparable wealthy nations.", "marks": []}],
+      "children": [{"_type": "span", "_key": "m1s003", "text": "And yet — despite outspending every peer nation — U.S. life expectancy, at 78.4 years in 2023, trailed the comparable-country average by 4.1 years (Peterson-KFF), and U.S. preventable mortality was 217 deaths per 100,000 against an OECD average of 145 (OECD). Preventable deaths from conditions like diabetes, hypertension, and heart disease occur at far higher rates here than in comparable wealthy nations.", "marks": []}],
       "markDefs": []
     },
     {
@@ -120,8 +120,8 @@
       "title": "The True Cost of Fee-for-Service Waste (JAMA, 2019)",
       "stats": [
         {"_key": "m1st04", "value": "$265B", "label": "Administrative Complexity Waste", "context": "The largest single category of healthcare waste — driven by billing complexity and multi-payer administrative burden.", "trend": "up"},
-        {"_key": "m1st05", "value": "$210B", "label": "Overtreatment and Low-Value Care", "context": "Tests, procedures, and hospital stays that clinical evidence shows don't meaningfully improve outcomes.", "trend": "up"},
-        {"_key": "m1st06", "value": "$180B", "label": "Pricing Failure Waste", "context": "Prices that significantly exceed benchmarks for identical services in other markets.", "trend": "neutral"}
+        {"_key": "m1st05", "value": "$76–101B", "label": "Overtreatment and Low-Value Care", "context": "Shrank et al. (JAMA 2019) estimate for overtreatment or low-value care: tests, procedures, and stays that do not improve outcomes.", "trend": "up"},
+        {"_key": "m1st06", "value": "$231–241B", "label": "Pricing Failure Waste", "context": "Shrank et al. (JAMA 2019) estimate for pricing failure: prices well above benchmarks for identical services.", "trend": "neutral"}
       ]
     },
     {
@@ -213,7 +213,7 @@
       "_type": "block",
       "_key": "m1p013",
       "style": "normal",
-      "children": [{"_type": "span", "_key": "m1s013", "text": "Medicare ACOs generated $1.87 billion in net savings for Medicare in 2022, according to CMS. As of 2024, more than 480 ACOs participate in the Medicare Shared Savings Program, covering over 11 million beneficiaries. Vermont's OneCare Vermont is an ACO that serves both Medicare and Medicaid populations — and is the centerpiece of the state's nationally recognized All-Payer Model.", "marks": []}],
+      "children": [{"_type": "span", "_key": "m1s013", "text": "Medicare ACOs generated more than $1.8 billion in net savings for Medicare in 2022, according to CMS. As of 2024, more than 480 ACOs participate in the Medicare Shared Savings Program, covering over 11 million beneficiaries. Vermont's OneCare Vermont is an ACO that serves both Medicare and Medicaid populations — and is the centerpiece of the state's nationally recognized All-Payer Model.", "marks": []}],
       "markDefs": []
     },
     {
@@ -267,14 +267,14 @@
       "_type": "block",
       "_key": "m1p016",
       "style": "normal",
-      "children": [{"_type": "span", "_key": "m1s016", "text": "Vermont is the only state in the nation operating an approved All-Payer Accountable Care Organization Model — a program that brings Medicare, Medicaid, and commercial insurance under a single set of quality and spending targets for the first time in American history. This makes Vermont uniquely important to anyone studying value-based care. What Vermont learns, the nation watches.", "marks": []}],
+      "children": [{"_type": "span", "_key": "m1s016", "text": "Vermont was the only state to operate an All-Payer Accountable Care Organization Model (performance years 2018–2025) — the first ACO program to bring Medicare, Medicaid, and commercial insurance under a single set of quality and spending targets. This makes Vermont uniquely important to anyone studying value-based care. What Vermont learns, the nation watches.", "marks": []}],
       "markDefs": []
     },
     {
       "_type": "block",
       "_key": "m1p017",
       "style": "normal",
-      "children": [{"_type": "span", "_key": "m1s017", "text": "The Vermont All-Payer ACO Model was approved by CMS in 2016 and launched in January 2017. At its center is OneCare Vermont, a statewide ACO that contracts with hospitals, physicians, and community organizations across the state. OneCare Vermont currently serves approximately 240,000 Vermonters — nearly 40 percent of the state's population — through its attributed beneficiary program.", "marks": []}],
+      "children": [{"_type": "span", "_key": "m1s017", "text": "The Vermont All-Payer ACO Model was approved by CMS in 2016 and launched in January 2017. At its center is OneCare Vermont, a statewide ACO that contracts with hospitals, physicians, and community organizations across the state. By 2021, about 243,000 Vermonters — roughly 38 percent of the state's population — were attributed to OneCare (NORC).", "marks": []}],
       "markDefs": []
     },
     {
@@ -282,9 +282,9 @@
       "_key": "m1ex01",
       "eyebrow": "Real-World Example",
       "title": "OneCare Vermont: Vermont's Statewide ACO",
-      "body": "OneCare Vermont launched in 2017 as the operational vehicle for Vermont's All-Payer ACO Model. It serves Medicare, Medicaid, and commercial insurance members under a unified set of quality metrics and spending targets. The organization works with 119 primary care practices, 14 hospitals, and hundreds of community providers across the state to coordinate care for approximately 240,000 attributed Vermonters. Unlike a traditional insurer, OneCare Vermont does not manage claims — instead, it manages the health of a population, investing in care coordination, social services navigation, and community health workers.",
-      "outcome": "In performance years where OneCare met quality targets, Vermont demonstrated lower-than-expected spending growth — a meaningful achievement given Vermont's older, sicker-than-average, and largely rural population.",
-      "source": "Vermont Agency of Administration / CMS All-Payer Model Performance Reports, 2017–2024"
+      "body": "OneCare Vermont launched in 2017 as the operational vehicle for Vermont's All-Payer ACO Model. It serves Medicare, Medicaid, and commercial insurance members under a unified set of quality metrics and spending targets. The organization worked with hospitals, primary care practices, and community providers across the state to coordinate care for about 243,000 attributed Vermonters by 2021 (NORC). Unlike a traditional insurer, OneCare Vermont does not manage claims — instead, it manages the health of a population, investing in care coordination, social services navigation, and community health workers.",
+      "outcome": "NORC's federal evaluation of performance years 2018–2021 found the model reduced gross Medicare spending for ACO-attributed beneficiaries by $686 per beneficiary per year (6.2 percent) — gross savings, before shared-savings and other model payments.",
+      "source": "NORC at the University of Chicago, Vermont All-Payer ACO Model Third Evaluation Report (2023)"
     },
     {
       "_type": "block",
@@ -312,8 +312,8 @@
       "_key": "m1ex02",
       "eyebrow": "Real-World Example",
       "title": "Medicare Shared Savings Program: The Largest VBC Program in the World",
-      "body": "The Medicare Shared Savings Program (MSSP), created by the Affordable Care Act in 2012 and operated by CMS, is the largest ACO program in the world. Participating ACOs take responsibility for the total cost and quality of care for their attributed Medicare beneficiaries. ACOs that spend below their benchmark while meeting quality standards share a portion of savings with Medicare. Those in higher-risk tracks may also face penalties for overspending.",
-      "outcome": "In 2022, Medicare ACOs generated $1.87 billion in net savings for Medicare while serving 11 million beneficiaries. ACOs in higher-risk tracks consistently outperformed lower-risk tracks, demonstrating that meaningful financial accountability improves performance.",
+      "body": "The Medicare Shared Savings Program (MSSP), created by the Affordable Care Act of 2010 and launched in 2012 and operated by CMS, is the largest ACO program in the world. Participating ACOs take responsibility for the total cost and quality of care for their attributed Medicare beneficiaries. ACOs that spend below their benchmark while meeting quality standards share a portion of savings with Medicare. Those in higher-risk tracks may also face penalties for overspending.",
+      "outcome": "In 2022, Medicare ACOs generated more than $1.8 billion in net savings for Medicare while serving 11 million beneficiaries. ACOs in higher-risk tracks consistently outperformed lower-risk tracks, demonstrating that meaningful financial accountability improves performance.",
       "source": "CMS Medicare Shared Savings Program 2022 Performance Year Results, published 2023"
     },
     {
@@ -362,8 +362,8 @@
       "title": "VBC Progress in the United States (2024–2026)",
       "stats": [
         {"_key": "m1st07", "value": "480+", "label": "Medicare ACOs in Operation", "context": "Serving over 11 million Medicare beneficiaries nationwide as of 2024. Source: CMS MSSP Annual Report.", "trend": "up"},
-        {"_key": "m1st08", "value": "$1.87B", "label": "Net Medicare Savings from ACOs (2022)", "context": "Savings generated above the cost of bonuses paid to high-performing ACOs. Source: CMS.", "trend": "up"},
-        {"_key": "m1st09", "value": "240,000", "label": "Vermonters Attributed to OneCare VT", "context": "Roughly 40% of Vermont's total population — the highest all-payer ACO penetration rate in the country.", "trend": "up"}
+        {"_key": "m1st08", "value": "$1.8B+", "label": "Net Medicare Savings from ACOs (2022)", "context": "Savings generated above the cost of bonuses paid to high-performing ACOs. Source: CMS.", "trend": "up"},
+        {"_key": "m1st09", "value": "243,000", "label": "Vermonters Attributed to OneCare VT", "context": "Vermonters attributed to OneCare in 2021, about 38% of the state's population. Source: NORC federal evaluation (2023).", "trend": "up"}
       ]
     },
     {
@@ -406,18 +406,18 @@
       "_key": "m1kc02",
       "question": "What makes Vermont's healthcare system unique compared to every other state in the country?",
       "hint": "Think about the payer mix and the role of OneCare Vermont.",
-      "answer": "Vermont is the only state operating an approved All-Payer ACO Model — meaning Medicare, Medicaid, and commercial insurance all operate under a single set of unified quality and spending targets. In every other state, these payers operate independently with different rules, creating fragmentation that makes coordinated care harder. Vermont's model, anchored by OneCare Vermont and overseen by the Green Mountain Care Board, attempts to align all payers behind shared goals for the first time in American history."
+      "answer": "Vermont was the only state to operate an All-Payer ACO Model (2018–2025) — meaning Medicare, Medicaid, and commercial insurance all operate under a single set of unified quality and spending targets. In every other state, these payers operate independently with different rules, creating fragmentation that makes coordinated care harder. Vermont's model, anchored by OneCare Vermont and overseen by the Green Mountain Care Board, aimed to align all payers behind shared ACO goals — the first model of its kind."
     },
     {
       "_type": "takeawayBlock",
       "_key": "m1tw01",
       "title": "Key Takeaways: Module 1",
       "points": [
-        "The US spends $4.5 trillion on healthcare (18.3% of GDP) — more than any nation — yet ranks 37th in health outcomes, a paradox driven largely by fee-for-service payment incentives.",
+        "The US spent $4.5 trillion on healthcare in 2022 (17.3% of GDP) — more than any nation — yet trails comparable countries on life expectancy and preventable deaths, a paradox driven largely by fee-for-service payment incentives.",
         "Fee-for-service pays providers per service delivered, creating perverse incentives to do more regardless of whether it helps patients. Prevention, coordination, and efficiency are financially penalized.",
         "Value-based care is a family of payment models that pay for outcomes rather than volume — aligning provider incentives with patient health. The core formula: Value = Quality / Cost.",
         "The four main VBC model categories are pay-for-performance, shared savings ACOs, bundled payments, and capitation/global budgets — each shifting more financial risk and accountability to providers.",
-        "Vermont's All-Payer ACO Model — the only one of its kind in the US — makes Vermont a national laboratory for value-based care transformation, with OneCare Vermont serving approximately 240,000 Vermonters.",
+        "Vermont's All-Payer ACO Model — the only one of its kind in the US, 2018–2025 — made Vermont a national laboratory for value-based care transformation, with about 243,000 Vermonters attributed to OneCare Vermont by 2021.",
         "The transition from FFS to VBC requires changes in payment contracts, data infrastructure, clinical workflows, and organizational culture — and is a multi-decade journey, not a single event."
       ]
     }

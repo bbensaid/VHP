@@ -1,0 +1,342 @@
+{
+  "_createdAt": "2026-05-27T19:35:59Z",
+  "_id": "academyModule-vbc-social-risk",
+  "_rev": "RGOmUXVV4znufH6fhfhx4h",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-27T19:35:59Z",
+  "body": [
+    {
+      "_key": "sr-intro",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk adjustment for clinical complexity is widely accepted as a fairness requirement in value-based care payment. Adjusting for patient poverty, race, or social circumstances is far more controversial — a debate that sits at the intersection of health equity, payment policy, and moral reasoning about what healthcare systems can and should be held accountable for. The question is not abstract: it directly affects the financial viability of safety-net hospitals, Federally Qualified Health Centers, and health plans serving Medicaid and dual-eligible populations. And the answer has profound consequences for whether value-based care drives equity improvement or perpetuates existing disparities."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sr-h2-tension",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Core Tension: Fairness vs. Accountability"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sr-p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The case for including social risk factors in risk adjustment is straightforward: social determinants of health — income, housing stability, food security, educational attainment, neighborhood conditions — are among the strongest predictors of healthcare costs and health outcomes. A clinician or health plan serving a population with high rates of food insecurity, unstable housing, and poverty will have worse measured outcomes and higher costs than one serving an affluent population, even if the quality of clinical care is identical or superior. Without adjustment for these factors, payment models systematically penalize providers who serve disadvantaged communities."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sr-p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The case against social risk adjustment is equally forceful: adjusting for social risk means accepting lower quality targets for providers caring for poor patients. If a safety-net hospital's quality standards are set lower because its patients are poorer, where is the accountability for genuinely improving care for those patients? Adjusted benchmarks may mask systematic quality failures in institutions that serve disadvantaged populations — the very populations for whom quality improvement is most consequential. There is also a race-equity dimension: adjusting for race in risk models could entrench racial disparities in quality standards, treating different quality as acceptable based on patient demographics."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sr-h2-nasem",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The NASEM 2017 Report: A Framework for Resolution"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sr-p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The National Academies of Sciences, Engineering, and Medicine (NASEM) 2017 report Accounting for Social Risk Factors in Medicare Payment provided the most rigorous framework to date for addressing this dilemma. The report distinguished between two different uses of social risk data in payment: adjusting payment to reflect differences in expected costs (payment risk adjustment), and adjusting performance standards to reflect differences in expected quality outcomes (performance standard adjustment). The NASEM committee concluded that adjusting payment for social risk is appropriate when social factors predict expected costs; adjusting performance standards — holding providers to lower quality targets — is not appropriate because it would entrench disparities."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sr-p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The NASEM report's key recommendations included: stratify quality reporting by social risk factors to make disparities visible; use social risk data for payment adjustment only when it predicts additional cost beyond clinical risk; invest in building the data infrastructure (collecting SDOH data systematically in claims and EHRs) needed to improve social risk models; and create accountability for reducing disparities rather than just adjusting them away."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sr-h2-current-cms",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Current CMS Policy: Stratified Reporting vs. Direct Adjustment"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sr-p6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "As of 2024, CMS policy on social risk in payment programs has largely followed the NASEM recommendation to stratify rather than adjust. In MSSP, CMS produces stratified quality reports showing ACO performance separately for dual-eligible and non-dual-eligible beneficiaries, making disparities visible without adjusting the financial targets based on social risk. In the Hospital Value-Based Purchasing program, CMS stratifies hospital quality scores by patient social risk but does not adjust the financial reward-penalty calculations. In Medicare Advantage Star Ratings, CMS has introduced the Categorical Adjustment Index (CAI), which adjusts Star Ratings for plans with high proportions of low-income and dual-eligible enrollees — a partial form of social risk adjustment specific to the Star Rating context."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sr-p7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Critics from the safety-net provider community argue that stratified reporting without payment adjustment is insufficient: making disparities visible is valuable, but if the payment model still penalizes safety-net providers financially for serving disadvantaged populations, visibility alone does not solve the equity problem. The FQHC and community health center community has been particularly vocal about the need for social risk adjustment in quality-linked payment models, arguing that their patient populations' social complexity makes them structurally unable to meet the same performance standards as suburban physician practices serving commercially insured patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sr-h2-dual-eligible",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Dual-Eligible Population: The Most Challenging Social Risk Context"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sr-p8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Dual-eligible beneficiaries — individuals who qualify for both Medicare and Medicaid — represent the highest-cost, highest-need population in American healthcare. Approximately 12 million Americans are dually enrolled, representing roughly 15% of Medicaid enrollees but nearly 40% of Medicaid spending, and approximately 20% of Medicare beneficiaries but 35% of Medicare spending. Dual-eligibles have dramatically higher rates of multiple chronic conditions, behavioral health comorbidities, cognitive impairment, functional limitations, and social needs including poverty and unstable housing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sr-p9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The dual-eligible indicator (DE) is already included in the CMS-HCC model as a demographic risk factor, and dual-eligible status is a criterion for the Low-Income Subsidy (LIS) adjustment in Medicare Part D and for the CAI in Star Ratings. But the DE indicator captures only the administrative status of dual enrollment — it does not capture the degree of social need, housing instability, functional disability, or behavioral health complexity within the dual-eligible population, which varies enormously. A fully-disabled, low-income beneficiary with severe mental illness and unstable housing presents very different care management challenges than a dual-eligible beneficiary who qualified for Medicaid because of modest financial assets with otherwise manageable chronic conditions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sr-h2-z-codes",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "SDOH Z-Codes: A New Data Source for Social Risk Models"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sr-p10",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "ICD-10-CM includes a set of Z-codes (Z55-Z65) that allow clinicians to document social determinants of health in the medical record and in claims data. Z-codes cover domains including: Z59 (Problems related to housing and economic circumstances), Z60 (Problems related to social environment), Z63 (Other problems related to primary support group), and Z64 (Problems related to certain psychosocial circumstances including inadequate food and homelessness). If systematically coded, Z-codes could provide claims-based social risk data that improves risk adjustment models without requiring new data collection infrastructure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sr-p11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "In practice, Z-code utilization is extremely variable and generally low. Studies have found that fewer than 1-2% of Medicare beneficiaries have any Z-code documented in their claims in a given year, despite much higher estimated prevalence of social needs. Systematic barriers include: lack of provider training in Z-code documentation, perceived lack of actionability (documenting food insecurity does not itself connect the patient to food assistance), EHR workflow gaps that do not prompt social needs screening, and uncertainty about whether the information will be used beneficially or result in adverse insurance consequences."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sr-h2-state-labs",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont and Maryland as Policy Laboratories"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sr-p12",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Several states have taken more direct approaches to social risk adjustment than federal CMS policy permits. Vermont's OneCare Vermont ACO model uses a social risk index based on area deprivation scores, housing instability data, and Vermont's Medicaid enrollment rates to adjust ACO financial targets at the regional level. This approach adjusts the aggregate benchmark rather than individual patient risk scores, partially addressing the safety-net equity concern without requiring individual-level social data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sr-p13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Maryland's All-Payer Model has included social determinants adjustments in its hospital global budget calculations since the 2014 model update. Maryland hospitals in socioeconomically disadvantaged areas receive higher global budget revenue allocations that reflect the expected higher costs of caring for their populations — an explicit social risk adjustment built into hospital-level payment. Maryland has also invested in community health worker programs and social needs navigation as part of its total cost of care framework, recognizing that social interventions are inseparable from clinical cost management for high-need populations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sr-h2-equity-proposals",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Policy Proposals: Equity-Adjusted vs. Equity-Stratified Measurement"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sr-p14",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The current policy debate has crystallized around two approaches. The equity-stratified approach (current CMS policy) reports performance separately by social risk stratum, maintains common performance standards across all providers, and creates accountability for reducing disparities without adjusting targets. The equity-adjusted approach adjusts financial targets or quality benchmarks for social risk, reducing the financial penalty on safety-net providers while creating a risk that lower standards will be permanently accepted for disadvantaged populations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sr-p15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "A third approach — which some researchers and advocacy organizations are advocating — is to fund social risk management rather than adjust it away. Under this approach, VBC payment models would include explicit supplemental payments for social needs management: care management fees for high-social-risk beneficiaries, population health investment funds for underserved communities, or Medicaid-funded social service integration programs. This approach maintains quality accountability while providing the resources needed to actually address the social determinants that drive disparate outcomes. Whether this approach can generate sufficient political consensus — particularly given the significant budget implications — is the central policy challenge."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sr-synthesis",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The social risk adjustment debate is ultimately a debate about what the healthcare system can and should be held responsible for. Clinical risk adjustment is uncontroversially appropriate: providers cannot control whether their patients have congestive heart failure, so payment must reflect clinical complexity. Social risk adjustment is more contested because social determinants, while also largely outside an individual provider's control, are in principle addressable through healthcare system action — care management, social needs navigation, community investment — even if addressing them requires resources beyond what current payment systems provide. The path forward requires both better data infrastructure for social risk measurement and payment policy that creates accountability for disparity reduction while providing the resources to actually achieve it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseTitle": "Value-Based Care: From Fee-for-Service to Outcomes",
+  "estimatedReadTime": 15,
+  "level": "Intermediate",
+  "moduleNumber": 13,
+  "pillar": "Economics",
+  "slug": {
+    "_type": "slug",
+    "current": "vbc-social-risk-adjustment"
+  },
+  "summary": "One of the most contested questions in healthcare payment policy is whether risk adjustment models should incorporate social risk factors — poverty, housing instability, race, neighborhood disadvantage — alongside clinical diagnoses. Adjusting for social risk may perpetuate inequity by holding safety-net providers to lower performance standards; not adjusting punishes providers who serve disadvantaged populations for factors outside their control. The NASEM 2017 report, dual-eligible adjustments, SDOH Z-codes, and state-level experiments offer competing approaches to this unresolved dilemma.",
+  "title": "Social Risk in Risk Adjustment: Should We Adjust for Poverty?"
+}

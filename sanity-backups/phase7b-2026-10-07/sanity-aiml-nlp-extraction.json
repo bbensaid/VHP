@@ -1,0 +1,1105 @@
+{
+  "_createdAt": "2026-05-30T04:02:26Z",
+  "_id": "aiml-nlp-extraction",
+  "_rev": "2zkDeD7zc2Ko2DfFHkGMZv",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T04:02:26Z",
+  "body": [
+    {
+      "_key": "s1h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Unstructured Data Problem in Healthcare"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Electronic health records were designed to capture billing codes, laboratory values, vital signs, and medication lists — the structured, searchable fields that power administrative reporting and standard analytics. But the actual practice of medicine happens in language. Physicians write notes. Nurses document assessments. Radiologists dictate impressions. Pathologists describe tissue findings. Operative surgeons narrate procedures. The clinical story — with all its nuance, context, uncertainty, and reasoning — lives in free text, not in database fields."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The scale of this problem is striking. Across health informatics literature, approximately 80% of clinically relevant information in EHRs is estimated to exist in unstructured free-text notes rather than structured fields. This figure, widely cited by researchers at institutions including the University of Michigan EMERSE project and repeated in systematic reviews of clinical NLP, reflects a fundamental architectural mismatch: the tools clinicians use to communicate are prose, but the tools health systems use to analyze data require structured fields. The consequence is that the richest clinical information — symptom nuance, functional status, clinical reasoning, patient preferences, diagnostic uncertainty, and social context — is largely invisible to traditional analytics pipelines."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "What lives in clinical notes that exists nowhere else in the EHR? Consider what a physician actually writes in a progress note versus what gets coded: the note may describe a patient who is \"increasingly short of breath climbing one flight of stairs but not at rest,\" document that \"the patient is worried this is related to the new medication started three weeks ago,\" note that \"patient lives alone and cannot reliably manage a complex medication regimen,\" and express that \"the differential includes heart failure versus COPD exacerbation — will proceed with echocardiogram to differentiate.\" None of those clinically critical details appear in the ICD-10 code field, the medication list, or the problem list. They exist only in the narrative."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1call",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1calls",
+          "_type": "span",
+          "marks": [],
+          "text": "The three core NLP tasks in clinical settings: (1) Named Entity Recognition — identifying clinical concepts in text (medications, diagnoses, procedures, anatomical locations, lab values); (2) Relation Extraction — linking concepts to each other (drug → dose → route; diagnosis → severity → onset); (3) Classification — categorizing documents or passages by clinical meaning (is this note about a new diagnosis or follow-up? is this mention of a disease affirmed or negated?). Most production clinical NLP systems combine all three."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Natural language processing is the technology that bridges the gap between clinical prose and computable data. By converting free text into structured, machine-readable information, NLP makes the narrative layer of the EHR available to the same analytics engines, quality measurement systems, population health tools, and research databases that already consume structured data. The challenge — and it is a genuine one — is that clinical language is among the most complex text that NLP systems encounter: domain-specific vocabulary, abbreviations, misspellings, shorthand, copy-pasted boilerplate, negated findings, hedged assertions, and temporal nuance combine to make clinical notes far harder to process than news articles or legal documents."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1stats",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Approximately 80% of clinically relevant information in EHRs exists in free-text notes rather than structured fields — a figure widely cited across health informatics literature and foundational to the case for clinical NLP.",
+          "label": "Clinical Info in Unstructured Text",
+          "value": "~80%"
+        },
+        {
+          "_key": "s2",
+          "context": "US health systems generate millions of clinical notes every day across inpatient, outpatient, and specialty settings. At this scale, manual review of notes for research, quality, or population health is operationally impossible without automation.",
+          "label": "Clinical Notes Generated Daily (US Estimate)",
+          "value": "2.6M+"
+        },
+        {
+          "_key": "s3",
+          "context": "Well-validated clinical NLP systems on well-defined tasks with quality training data typically achieve F1 scores between 0.80 and 0.95, balancing precision (correctness of extractions) with recall (completeness of extractions).",
+          "label": "Typical F1 Score Range for Clinical NLP",
+          "value": "0.80–0.95"
+        },
+        {
+          "_key": "s4",
+          "context": "The HL7 Gravity Project has developed standardized terminology covering 17 social risk domains — from housing instability to food insecurity — enabling NLP-extracted SDOH findings to be encoded in interoperable FHIR resources across EHR systems.",
+          "label": "SDOH Domains with Gravity Project Terminology",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "_key": "s2h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Core NLP Techniques for Clinical Text"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinical NLP has evolved through three distinct technological eras: rule-based systems, statistical machine learning models, and the current transformer-based era. Each generation has left its mark on production systems, and most real-world clinical NLP pipelines are hybrids — combining the speed and transparency of rules with the generalization capability of learned models."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2h3a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h3as",
+          "_type": "span",
+          "marks": [],
+          "text": "Rule-Based and Dictionary-Driven NLP"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The earliest clinical NLP systems used regular expressions, handcrafted pattern rules, and clinical dictionaries to identify concepts in text. If a note contains the string \"metformin 500 mg,\" a rule-based system can reliably extract both the drug name and dose — no training data required. These systems are fast, fully transparent, and easy to audit: a clinician or informaticist can inspect every rule and understand why a given extraction was made. They remain in active use for well-defined tasks in stable domains."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The limitation is brittleness. Rule-based systems fail on spelling variants (\"metFORMIN,\" \"Metformn\"), novel abbreviations, and phrasing that was not anticipated when the rules were written. Maintaining a large rule set as clinical documentation practices evolve is labor-intensive. And rules cannot learn — they cannot improve their performance by observing examples of correct and incorrect extractions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2h3b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h3bs",
+          "_type": "span",
+          "marks": [],
+          "text": "Statistical and Machine Learning Approaches"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s2p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "The second generation of clinical NLP used statistical methods — particularly Conditional Random Fields (CRF) — to learn extraction patterns from labeled training data. CRFs became the workhorse of clinical named entity recognition (NER) before the transformer era. Given a corpus of clinical notes where human annotators have labeled every mention of a medication, diagnosis, and procedure, a CRF learns the patterns that predict these labels: what words appear before and after medications, what capitalization patterns distinguish drug names, what positional features signal the start of a diagnosis mention. CRF-based systems achieve substantially better generalization than rule systems — they handle novel phrasing as long as it resembles patterns seen in training."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2h3c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h3cs",
+          "_type": "span",
+          "marks": [],
+          "text": "Transformer-Based Clinical NLP: BioBERT, ClinicalBERT, and Beyond"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s2p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p5s",
+          "_type": "span",
+          "marks": [],
+          "text": "The transformer architecture — introduced by Google in 2017 and popularized in 2018 with BERT (Bidirectional Encoder Representations from Transformers) — fundamentally changed NLP across every domain, including clinical text. BERT-based models are pre-trained on massive text corpora using self-supervised objectives, developing deep contextual representations of language that capture semantic meaning, syntax, and long-range dependencies. Fine-tuning these pre-trained representations on labeled clinical NLP tasks produces performance that dramatically outperforms earlier approaches on most benchmarks."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p6s",
+          "_type": "span",
+          "marks": [],
+          "text": "BioBERT (Lee et al., Bioinformatics 2020) was pre-trained on PubMed abstracts and PMC full-text articles — 18 billion biomedical tokens — enabling it to recognize biomedical terminology with far greater depth than general-purpose BERT. ClinicalBERT (Alsentzer et al., 2019) took this further by pre-training on clinical notes from the MIMIC-III intensive care unit dataset, capturing the abbreviation-dense, shorthand-heavy, clinical-note-specific language that BioBERT — trained on research literature — does not fully represent. For clinical NER tasks on EHR text, ClinicalBERT and its successors consistently outperform models trained only on biomedical literature."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2h3d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h3ds",
+          "_type": "span",
+          "marks": [],
+          "text": "The Foundational NLP Pipelines: cTAKES and MetaMap"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s2p7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p7s",
+          "_type": "span",
+          "marks": [],
+          "text": "Before the transformer era, two open-source systems defined the infrastructure of clinical NLP research. cTAKES — the clinical Text Analysis and Knowledge Extraction System — was developed starting in 2006 by a team of physicians, computer scientists, and software engineers at Mayo Clinic, and was submitted to the Apache Software Foundation in 2012, where it became a top-level Apache project. cTAKES processes clinical notes through a modular pipeline: sentence segmentation, tokenization, part-of-speech tagging, named entity recognition, and concept normalization to standard vocabularies including SNOMED CT, RxNorm, and ICD. Critically, cTAKES includes a negation detection module — recognizing that a mention of a disease is not useful without knowing whether it is affirmed, negated, or uncertain."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p8s",
+          "_type": "span",
+          "marks": [],
+          "text": "MetaMap, developed at the National Library of Medicine by Dr. Alan Aronson, takes a different approach: it maps arbitrary biomedical text to concepts in the UMLS Metathesaurus, the comprehensive vocabulary integration system maintained by NLM that links over 200 biomedical vocabularies including SNOMED CT, ICD-10, RxNorm, LOINC, and MeSH. MetaMap uses symbolic NLP techniques — variant generation, lexical lookup, and scoring — to identify the most likely UMLS concept for each span of text. MetaMap Lite, a modern reimplementation, provides faster performance while maintaining the same UMLS-based concept normalization. These tools are used for concept normalization: converting \"heart attack,\" \"MI,\" \"myocardial infarction,\" and \"AMI\" to a single UMLS Concept Unique Identifier (CUI) that enables consistent analysis across notes that use different terminology for the same concept."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2h3e",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h3es",
+          "_type": "span",
+          "marks": [],
+          "text": "Negation Detection: The NegEx Algorithm"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s2p9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p9s",
+          "_type": "span",
+          "marks": [],
+          "text": "Negation detection is not an optional feature of clinical NLP — it is a prerequisite for accuracy. In clinical notes, a substantial fraction of all disease and finding mentions are negated: physicians write \"patient denies chest pain,\" \"no evidence of pneumonia,\" \"rules out pulmonary embolism,\" \"without signs of infection.\" A system that extracts clinical concepts without determining whether they are affirmed or negated will produce systematically incorrect outputs — coding absent findings as present, misclassifying healthy patients as diseased, and corrupting any downstream analysis."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p10",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p10s",
+          "_type": "span",
+          "marks": [],
+          "text": "The NegEx algorithm, described by Chapman et al. in the Journal of Biomedical Informatics in 2001, was the first widely adopted solution. NegEx maintains a list of negation trigger phrases (\"no,\" \"denies,\" \"without,\" \"absent,\" \"rules out,\" \"negative for\") and pseudo-negation phrases that superficially resemble negation but are not (\"not rule out,\" \"rule out diagnosis of\"). When a clinical entity is found within a defined window — up to six tokens — following or preceding a true negation trigger, NegEx marks the entity as negated. In validation against 1,235 findings in 1,000 discharge summary sentences, NegEx achieved 94.5% specificity, substantially outperforming a naive baseline. Successor systems — ConText, NegBio, and the negation modules in cTAKES — extend NegEx with uncertainty detection, experiencer detection (is the finding about the patient or a family member?), and temporality (is this a current finding or historical?)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Rule-Based NLP",
+        "points": [
+          "No training data required — deployable immediately",
+          "Fully transparent and auditable — every decision traceable",
+          "Fast inference — suitable for real-time applications",
+          "Brittle on novel phrasing, abbreviation variants, typos",
+          "Requires expert maintenance as documentation practices change",
+          "Scales poorly: rules grow unwieldy with domain breadth"
+        ]
+      },
+      "right": {
+        "label": "Transformer-Based NLP",
+        "points": [
+          "Learns from labeled examples — generalizes to novel phrasing",
+          "Handles abbreviations, misspellings, and variation naturally",
+          "State-of-the-art accuracy on most clinical NLP benchmarks since 2019",
+          "Requires labeled training data — annotation is expensive and slow",
+          "Less interpretable — difficult to audit individual predictions",
+          "Computationally intensive — requires GPU infrastructure at scale"
+        ]
+      },
+      "title": "Rule-Based vs. Transformer-Based Clinical NLP"
+    },
+    {
+      "_key": "s2ex",
+      "_type": "exampleBlock",
+      "content": "Consider a clinical NLP system reading the note: \"Patient is a 62-year-old male presenting for follow-up. He denies shortness of breath, chest pain, or lower extremity edema. No cough. Previously had pneumonia in 2022, now resolved.\" A naive system performing simple concept extraction would identify: shortness of breath (positive), chest pain (positive), lower extremity edema (positive), cough (positive), pneumonia (positive). Every single extraction is wrong — all findings are negated or historical. A NegEx-enabled system reads the same note and correctly marks each entity: shortness of breath (negated), chest pain (negated), lower extremity edema (negated), cough (negated), pneumonia (historical, resolved). The difference between these two outputs is the difference between a useful clinical NLP system and a harmful one. In production, false-positive disease mentions propagate into quality metrics, population health dashboards, and coding outputs — compounding errors at scale.",
+      "title": "NegEx — Why Negation Matters"
+    },
+    {
+      "_key": "s3h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinical NLP Use Cases That Matter"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The value of clinical NLP is realized at the intersection of technical capability and genuine clinical need. The use cases that have achieved the widest adoption are those where notes contain information that is clinically significant, not reliably captured in structured fields, and needed at scale by health systems. Six categories have demonstrated clear, documented value across health systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3h3a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h3as",
+          "_type": "span",
+          "marks": [],
+          "text": "ICD Code Suggestion from Clinical Notes"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medical coding is the translation of clinical documentation into standardized diagnosis and procedure codes (ICD-10-CM, CPT) for billing, quality reporting, and epidemiological tracking. In most health systems, this process is performed by health information management (HIM) professionals — clinical documentation specialists and coders — who read physician notes and assign codes. The process is time-consuming, subject to variability, and dependent on the completeness of physician documentation. NLP-based coding assistance systems read clinical notes, identify diagnosis mentions, and suggest ICD-10 codes for coder review. Vendors including 3M Health Information Systems, Optum, and Nuance have deployed these systems widely. The HIM professional reviews NLP suggestions, accepts correct ones, rejects incorrect ones, and adds missed codes — using NLP as a productivity tool that increases throughput and reduces coding variability, not as a replacement for professional judgment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3h3b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h3bs",
+          "_type": "span",
+          "marks": [],
+          "text": "Adverse Drug Event Detection"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Adverse drug events (ADEs) — patient harm caused by medications — are a major patient safety concern, but they are systematically undercoded in structured EHR fields. A physician who notes in a progress note that \"the patient developed a rash three days after starting amoxicillin — appears to be a drug reaction, holding the medication\" is documenting an ADE in the narrative. That ADE may or may not generate an ICD code, a structured allergy entry, or a pharmacovigilance report. NLP-based ADE detection scans clinical notes for drug-reaction mentions, linking the medication entity (amoxicillin) to the adverse reaction entity (rash) and the temporal relationship (three days after starting) — extracting the structured ADE record that the narrative contains but structured fields miss. This capability is used in post-market drug surveillance, hospital safety monitoring, and pharmacovigilance programs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3h3c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h3cs",
+          "_type": "span",
+          "marks": [],
+          "text": "Cancer Registry Abstraction"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s3p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Population cancer registries — maintained at the state and national level — require detailed abstraction of cancer type, histology, stage, treatment, and outcomes from pathology reports, operative notes, and clinical documentation. This abstraction was historically entirely manual: trained cancer registrars read reports and entered data into registry fields. NLP automates a substantial fraction of this work. Pathology reports follow relatively consistent structure, and NLP systems have demonstrated strong performance in extracting cancer site, histology type, stage (TNM components), margin status, and lymph node involvement from pathology prose. Research has shown that NLP-assisted cancer registry abstraction can identify 30% more cases than diagnosis codes alone, and dramatically reduces the time-to-registry entry that delays population-level cancer surveillance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3h3d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h3ds",
+          "_type": "span",
+          "marks": [],
+          "text": "Quality Measure Extraction"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s3p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p5s",
+          "_type": "span",
+          "marks": [],
+          "text": "Electronic Clinical Quality Measures (eCQMs) are computed from structured EHR data to assess care quality across dimensions including preventive care, chronic disease management, and patient safety. But some clinically important quality dimensions — care planning discussions, advance directive documentation, functional status assessment, symptom burden, shared decision-making conversations — are documented in notes, not in structured fields. NLP enables extraction of these narrative quality indicators, expanding the measurable surface area of clinical quality beyond what structured data alone supports. For example, whether a palliative care discussion about goals of care occurred, or whether a depression screening included a discussion of safety, may exist only in the clinical note."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3h3e",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h3es",
+          "_type": "span",
+          "marks": [],
+          "text": "Social Determinants of Health Identification"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s3p6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p6s",
+          "_type": "span",
+          "marks": [],
+          "text": "Perhaps the fastest-growing use case for clinical NLP is the extraction of social determinants of health (SDOH) from clinical notes. Structured EHR fields for SDOH — housing status, food security, transportation access, social support, employment — are sparsely populated in most health systems. Clinicians who screen patients for social needs document findings in the note narrative. Research has consistently shown that NLP can identify SDOH information from clinical notes at rates that substantially exceed structured field capture: one EHR study found that 32% of homeless patients, 19% of current tobacco users, and 10% of drug users had these health risk factors documented only in the clinical narrative — invisible to structured-data analytics but findable by NLP."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Tokenize notes, normalize clinical abbreviations (SOB = shortness of breath, c/o = complains of, h/o = history of), handle copy-paste artifacts, segment into sentences. Clinical text requires custom preprocessing rules because standard NLP tokenizers do not handle medical shorthand.",
+          "title": "Text Preprocessing"
+        },
+        {
+          "_key": "step2",
+          "description": "Identify SDOH-relevant concepts and spans: housing terms (homeless, shelter, eviction, unstable housing), food access language (food bank, food insecurity, hungry, cannot afford food), transportation mentions (no car, unable to get to appointments), social support references (lives alone, no family support, isolated), employment and financial language (unemployed, cannot afford medications, financial stress).",
+          "title": "Named Entity Recognition"
+        },
+        {
+          "_key": "step3",
+          "description": "Apply NegEx or ConText to distinguish \"patient reports food insecurity\" from \"patient denies food insecurity\" and \"patient may be experiencing housing instability\" from \"patient is homeless.\" Negated and uncertain SDOH mentions must be handled differently than affirmed findings to avoid false coding of social needs.",
+          "title": "Negation and Uncertainty Detection"
+        },
+        {
+          "_key": "step4",
+          "description": "Link co-occurring SDOH entities into compound findings: \"lives alone\" + \"no family support\" + \"unable to afford medications\" together constitute a compound social isolation and financial toxicity finding that is clinically more actionable than any single entity in isolation.",
+          "title": "Relation Extraction"
+        },
+        {
+          "_key": "step5",
+          "description": "Map extracted SDOH concepts to the Gravity Project FHIR value sets — the HL7-standardized terminology covering 17 social risk domains. This normalization step produces SDOH findings that are interoperable across EHR systems and can be aggregated at the population level.",
+          "title": "Normalization to Standard Vocabulary"
+        },
+        {
+          "_key": "step6",
+          "description": "Write extracted and normalized SDOH findings to structured EHR fields or FHIR Observation resources. The output enters population health dashboards, triggers care coordination workflows, and contributes to community health needs assessments — converting narrative social information into actionable infrastructure.",
+          "title": "Output to Structured Field"
+        }
+      ],
+      "title": "NLP Pipeline for SDOH Extraction from Clinical Notes"
+    },
+    {
+      "_key": "s4h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Electronic Phenotyping and Research Applications"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "One of the most consequential applications of clinical NLP is electronic phenotyping: the use of EHR data — including NLP-extracted information from clinical notes — to identify patients with specific clinical characteristics. Traditional phenotyping for research requires manual chart review: a research coordinator reads patient records to determine whether each patient meets inclusion criteria for a study. For large cohorts, this is prohibitively expensive and slow. Electronic phenotyping replaces or augments manual review with algorithms that query structured EHR data and NLP-extracted note data simultaneously, enabling identification of patient populations at scales that make retrospective research and prospective trial recruitment operationally feasible."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4h3a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h3as",
+          "_type": "span",
+          "marks": [],
+          "text": "PheKB: The Phenotype Knowledge Base"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Phenotype KnowledgeBase (PheKB) — created by the electronic Medical Records and Genomics (eMERGE) consortium — is a collaborative digital platform for sharing validated electronic phenotyping algorithms. Health systems and academic medical centers deposit their validated phenotype definitions — including the ICD codes, medication records, lab thresholds, and NLP criteria that together define a patient population — so that other institutions can adapt and validate them against their own EHR data. PheKB phenotypes are used for clinical trial recruitment, quality improvement cohort identification, genomics research, and disease surveillance. The platform supports the \"transportability\" of phenotypes: an algorithm developed at Vanderbilt can be validated at Mayo Clinic and deployed at Mass General Brigham, enabling multi-site research without requiring each site to develop its phenotyping logic from scratch."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4h3b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h3bs",
+          "_type": "span",
+          "marks": [],
+          "text": "The i2b2 / n2c2 NLP Challenges"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The i2b2 (Informatics for Integrating Biology and the Bedside) NLP Shared Tasks, now continued as n2c2 (National NLP Clinical Challenges) at Harvard Medical School, have been the defining benchmarks for clinical NLP research since 2006. Each year, organizers release de-identified clinical text datasets and challenge the research community to develop NLP systems for specific extraction tasks. Challenge tracks have included: medication extraction (identifying drug name, dose, route, frequency, and reason from notes); relation extraction (linking medications to their attributes, diagnoses to findings); smoking status classification; de-identification of PHI from clinical notes; and, most recently, SDOH extraction and progress note understanding. The n2c2 challenges serve a dual purpose: they produce benchmark datasets for model evaluation, and they attract the research community to clinical NLP problems with direct healthcare relevance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4h3c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h3cs",
+          "_type": "span",
+          "marks": [],
+          "text": "NLP-Enabled Clinical Data Warehouses"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s4p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Major academic medical centers have built NLP-enabled clinical data warehouses that process millions of notes retrospectively, making the information in clinical narratives as queryable as structured EHR data. Vanderbilt University Medical Center's BioVU biobank links EHR data — including NLP-extracted note information — to DNA biosamples from hundreds of thousands of patients, enabling genome-wide association studies driven by electronic phenotypes. Mass General Brigham (formerly Partners HealthCare) operates a research data platform that combines structured EHR data with NLP-processed clinical notes across a multi-hospital system. These platforms have enabled landmark studies in cardiovascular disease, oncology, psychiatric genetics, and pharmacogenomics that would have been impossible with structured data alone."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4h3d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h3ds",
+          "_type": "span",
+          "marks": [],
+          "text": "De-Identification: The Prerequisite for Research Sharing"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s4p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p5s",
+          "_type": "span",
+          "marks": [],
+          "text": "Before clinical notes can be shared for research — within the i2b2/n2c2 challenge datasets, across institutions, or in public biomedical data repositories — protected health information (PHI) must be removed. The HIPAA Safe Harbor method specifies 18 categories of PHI that must be removed or generalized: names, geographic data below state level, dates more specific than year for individuals over 89, phone numbers, email addresses, social security numbers, and more. Manual de-identification is the gold standard but is impractical at scale. NLP de-identification tools — including NLM's own de-identification tools and the MITRE Identification Scrubber Toolkit — automate PHI detection and removal using a combination of rule-based and ML approaches. The i2b2 de-identification shared task produced training and test corpora that have driven substantial improvements in automated de-identification performance; modern de-identification systems achieve F1 scores exceeding 0.96 on standard benchmarks."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4analogy",
+      "_type": "analogyBlock",
+      "analogy": "Clinical NLP is like having a team of expert abstractors who can read every note in your EHR simultaneously — not just the most recent visit, but every encounter over years of care — and extract structured findings in seconds. The challenge is making sure they read carefully, handle ambiguity correctly, distinguish what the patient has from what they deny having, and flag what they are uncertain about. The scale advantage is transformative; the accuracy requirement is unforgiving.",
+      "concept": "The scale advantage and accuracy imperative of clinical NLP versus manual chart review"
+    },
+    {
+      "_key": "s4hl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hls",
+          "_type": "span",
+          "marks": [],
+          "text": "The Gravity Project (HL7) has developed a standardized FHIR-based framework — the SDOH Clinical Care Implementation Guide, currently at version 2.3.0 — for documenting and exchanging SDOH information extracted from clinical interactions. The Gravity Project maintains terminology for 17 social risk domains, developed in collaboration with SNOMED CT International, Regenstrief (LOINC), the ICD-10 Coordination and Maintenance Committee, and the American Medical Association. NLP tools aligned with Gravity value sets produce SDOH data that is interoperable across EHR systems — a critical step toward population-level SDOH tracking and community health needs assessment at the scale health equity work demands."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s5h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Accuracy, Limitations, and Governance"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinical NLP systems are not general-purpose tools that can be deployed unchanged across any clinical setting. Their accuracy is domain-specific, task-specific, and institution-specific — a reality that creates both a technical challenge and a governance imperative. Understanding the sources of clinical NLP error is essential for any health system considering deployment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5h3a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h3as",
+          "_type": "span",
+          "marks": [],
+          "text": "Measuring NLP Accuracy: Precision, Recall, and F1"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinical NLP accuracy is standardly measured with precision, recall, and their harmonic mean, the F1 score. Precision measures correctness: of all the clinical entities the system extracted, what fraction was correct? Recall measures completeness: of all the clinical entities that actually exist in the text, what fraction did the system find? A system that extracts only high-confidence mentions achieves high precision but low recall — missing many true entities. A system that extracts aggressively achieves high recall but low precision — producing many false extractions. F1 balances the two; the choice of target F1 depends on the application. For ICD coding assistance, high recall is prioritized — missing a code is more costly than generating a false suggestion for coder review. For population health analytics, high precision is prioritized — false positive disease attributions corrupt cohort composition."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5h3b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h3bs",
+          "_type": "span",
+          "marks": [],
+          "text": "Domain Specificity: The Training-Deployment Mismatch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "A clinical NLP model trained on cardiology progress notes will underperform — sometimes dramatically — when applied to oncology notes, psychiatric assessments, or emergency department triage documentation. This is not a failure of the underlying technology; it reflects the genuine linguistic heterogeneity of clinical documentation. Cardiology notes use a specific vocabulary (EF, cath, stent, catheterization, LVEF, BNP), abbreviation conventions, and documentation patterns that differ substantially from oncology (pathologic staging, chemotherapy regimens, response criteria) or psychiatry (MSE components, suicidality assessment, diagnostic formulation). Models must be trained on text representative of the domain, note type, and clinical setting where they will be deployed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5h3c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h3cs",
+          "_type": "span",
+          "marks": [],
+          "text": "Temporal Reasoning in Clinical Notes"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s5p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinical notes are temporally complex. A single progress note may document current conditions, past medical history, family history, and historical findings that have since resolved — and a clinically accurate NLP system must distinguish among them. \"Patient is having an MI\" is categorically different from \"patient had MI five years ago,\" \"patient's father had MI at age 55,\" and \"there was no evidence of prior MI on imaging.\" This four-way distinction — current, historical, family history, negated — is clinically fundamental. NLP systems that collapse these distinctions conflate active and historical conditions, producing datasets where chronic but resolved diagnoses appear as current problems and where family history is misattributed to the patient."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5h3d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h3ds",
+          "_type": "span",
+          "marks": [],
+          "text": "EHR Vendor Variation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s5p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p5s",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinical note text differs systematically across EHR vendors. Epic's SmartText templates produce notes with specific structural patterns and smart phrase expansions. Oracle Health (formerly Cerner) note formats differ in structure, sectioning, and terminology conventions. Meditech systems produce notes with yet another set of formatting and abbreviation conventions. A clinical NLP model trained on notes from an Epic-dominant system may require retraining or fine-tuning before deployment at an Oracle Health institution — not because the clinical content is different, but because the linguistic patterns of documentation differ across platforms."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5warn",
+      "_type": "warningBlock",
+      "message": "Most EHRs allow physicians to copy forward text from previous notes into the current note — a practice widespread enough that studies of clinical documentation estimate that 20–80% of some note types contain copied text. When a clinical NLP system extracts information from a note contaminated with copy-pasted content from previous encounters, it may incorrectly attribute historical findings to the current visit, extract the same finding multiple times (inflating frequency counts), or miss changes in clinical status that the copying clinician intended to update. De-duplication logic, date-aware extraction that anchors findings to the note date rather than treating all note content as contemporaneous, and copy-detection algorithms are essential components of production clinical NLP pipelines operating on real-world EHR data.",
+      "title": "Copy-Paste Propagation — A Known NLP Failure Mode"
+    },
+    {
+      "_key": "s5h3e",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h3es",
+          "_type": "span",
+          "marks": [],
+          "text": "Governance Requirements for Production Deployment"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s5p6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p6s",
+          "_type": "span",
+          "marks": [],
+          "text": "A clinical NLP system used for ICD coding, quality measure reporting, clinical decision support, or population health management is not a research prototype — it is health IT infrastructure with regulatory and liability implications. Before production deployment, several governance requirements apply. First, the system must be validated on a representative sample of the target institution's own note corpus — not just on the benchmark datasets used during development. Performance on i2b2/n2c2 challenge data is informative but not sufficient for production certification. Second, ongoing monitoring for performance drift is required: as clinical documentation practices change (new templates, new providers, EHR upgrades, copy-paste pattern shifts), NLP performance may degrade without any change to the model itself. Third, human oversight is required for high-stakes outputs — particularly ICD coding and clinical decision support, where NLP suggestions should be reviewed and confirmed by qualified professionals rather than applied automatically. Fourth, the feedback loop must be closed: when NLP errors are identified in production, the training data and model must be updated to address systematic failure modes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6take",
+      "_type": "takeawayBlock",
+      "points": [
+        "Approximately 80% of clinically relevant information in EHRs exists in unstructured free-text notes — physician narratives, nursing assessments, radiology reports, pathology findings, and discharge summaries — making NLP the essential technology for converting clinical prose into computable, actionable data.",
+        "The three core clinical NLP tasks are Named Entity Recognition (identifying clinical concepts such as medications, diagnoses, and procedures), Relation Extraction (linking concepts — drug to dose to route, diagnosis to severity to onset), and Classification (categorizing documents or passages by clinical meaning including affirmation, negation, and temporality).",
+        "Transformer-based models including BioBERT and ClinicalBERT have dramatically outperformed earlier rule-based and CRF-based approaches on most clinical NLP benchmarks since 2019, but they still require domain-specific fine-tuning on representative clinical note corpora and labeled training data from the target clinical domain.",
+        "Negation detection is non-negotiable in clinical NLP — \"patient denies chest pain\" and \"chest pain\" represent opposite clinical realities. The NegEx algorithm, developed by Chapman et al. in 2001, introduced the standard approach to negation detection, and its successors (ConText, NegBio, cTAKES negation module) are now standard components of every production clinical NLP pipeline.",
+        "High-value clinical NLP use cases include ICD code suggestion from clinical notes, adverse drug event detection for pharmacovigilance, cancer registry abstraction from pathology reports, quality measure extraction from narrative documentation, and — increasingly — identification of social determinants of health from clinical narratives at rates that substantially exceed structured field capture.",
+        "Electronic phenotyping — using NLP-extracted EHR data alongside structured fields to identify patient populations with specific clinical characteristics — enables retrospective cohort studies, genomics research, and clinical trial recruitment at scales impossible with manual chart review. PheKB and the eMERGE consortium have created shared infrastructure for validated, transportable phenotype algorithms.",
+        "Clinical NLP models are domain-specific: a model trained on cardiology notes underperforms on oncology, psychiatric, or emergency department text. Validation on the target institution's own note corpus, ongoing monitoring for performance drift, and human oversight of high-stakes outputs are required governance standards for production deployment."
+      ]
+    },
+    {
+      "_key": "s7quiz",
+      "_type": "knowledgeCheck",
+      "explanation": "Without negation detection, a naive NLP system performs simple concept-span matching — it finds \"shortness of breath\" in the text and codes it as an affirmed, positive clinical finding, ignoring the word \"denies\" that precedes it. This is a false positive that could incorrectly add a respiratory diagnosis to the patient's problem list, affect quality measure calculations, or skew population health analytics by inflating disease prevalence counts. The NegEx algorithm, developed by Chapman et al. (2001), specifically detects negation trigger phrases (\"denies,\" \"no,\" \"without,\" \"absent,\" \"rules out\") and marks the entity in the negation scope as negated rather than affirmed. Modern clinical NLP pipelines use NegEx's successors — ConText, NegBio, and the cTAKES negation module — to handle the full spectrum of negation, uncertainty, and historical attribution in clinical text.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "It correctly identifies shortness of breath as a confirmed diagnosis."
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "It incorrectly codes shortness of breath as a positive finding when the patient does not have it."
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "It fails to find any clinical entities in the note at all."
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "It maps shortness of breath to the wrong ICD-10 code."
+        }
+      ],
+      "question": "A clinical NLP system extracts \"shortness of breath\" from a physician note that reads: \"Patient denies shortness of breath.\" Without negation detection, what error does the system make?"
+    },
+    {
+      "_key": "s8h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources and Further Reading"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s8s1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s1s",
+          "_type": "span",
+          "marks": [],
+          "text": "1. Kreimeyer et al. — Natural language processing systems for capturing and standardizing unstructured clinical information — Journal of Biomedical Informatics, 2017. https://www.sciencedirect.com/science/article/pii/S1532046417301740"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s8s2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s2s",
+          "_type": "span",
+          "marks": [],
+          "text": "2. Savova et al. — Mayo clinical Text Analysis and Knowledge Extraction System (cTAKES): architecture, component evaluation and applications — Journal of the American Medical Informatics Association, 2010. PMC2995668. https://pmc.ncbi.nlm.nih.gov/articles/PMC2995668/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s8s3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s3s",
+          "_type": "span",
+          "marks": [],
+          "text": "3. Chapman et al. — A Simple Algorithm for Identifying Negated Findings and Diseases in Discharge Summaries — Journal of Biomedical Informatics, 2001. PubMed PMID 12123149. https://pubmed.ncbi.nlm.nih.gov/12123149/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s8s4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s4s",
+          "_type": "span",
+          "marks": [],
+          "text": "4. Lee et al. — BioBERT: a pre-trained biomedical language representation model for biomedical text mining — Bioinformatics, 2020. PMC7703786. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7703786/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s8s5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s5s",
+          "_type": "span",
+          "marks": [],
+          "text": "5. HL7 Gravity Project — SDOH Clinical Care Implementation Guide v2.3.0 — https://hl7.org/fhir/us/sdoh-clinicalcare/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s8s6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s6s",
+          "_type": "span",
+          "marks": [],
+          "text": "6. n2c2 / i2b2 NLP Research Datasets — National NLP Clinical Challenges, Harvard DBMI — https://n2c2.dbmi.hms.harvard.edu/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s8s7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s7s",
+          "_type": "span",
+          "marks": [],
+          "text": "7. Kirby et al. — PheKB: a catalog and workflow for creating electronic phenotype algorithms for transportability — JAMIA, 2016. PMC5070514. https://pmc.ncbi.nlm.nih.gov/articles/PMC5070514/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s8s8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s8s",
+          "_type": "span",
+          "marks": [],
+          "text": "8. Aronson & Lang — An overview of MetaMap: historical perspective and recent advances — JAMIA, 2010. https://metamap.nlm.nih.gov/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s8s9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s9s",
+          "_type": "span",
+          "marks": [],
+          "text": "9. Leveraging NLP to Augment Structured SDOH Data in the EHR — arxiv 2212.07538. https://arxiv.org/pdf/2212.07538"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "aiml-nlp-extraction"
+  },
+  "title": "NLP and Information Extraction from Clinical Notes"
+}

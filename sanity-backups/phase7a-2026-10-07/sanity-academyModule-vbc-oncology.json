@@ -1,0 +1,328 @@
+{
+  "_createdAt": "2026-05-27T19:30:36Z",
+  "_id": "academyModule-vbc-oncology",
+  "_rev": "oEdzoBJnHz58jGhpZT1CcQ",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-27T19:30:36Z",
+  "body": [
+    {
+      "_key": "ocm-intro",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Cancer care accounts for approximately $190 billion in annual US healthcare spending, with costs growing faster than almost any other disease category driven by the proliferation of high-cost targeted therapies, immunotherapies, and increasingly expensive supportive care regimens. For CMS, oncology represents both the most urgent cost challenge and the most complex environment in which to implement value-based care. The Oncology Care Model (OCM), which ran from 2016 to 2022, was the most ambitious attempt in Medicare's history to test episode-based payment in oncology — and its results illuminate both the potential and the hard limits of VBC approaches in cancer."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ocm-h2-why-hard",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Oncology Is VBC's Hardest Domain"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "ocm-p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Value-based care in oncology faces structural challenges that do not exist to the same degree in other clinical domains. First, treatment decisions involve profound uncertainty even for expert clinicians: two patients with the same cancer stage and histology can have dramatically different clinical trajectories based on genomic factors, tumor microenvironment, and patient-specific factors that are increasingly well-characterized but still incompletely predictive. Standard risk adjustment models built on claims data cannot adequately capture this biological complexity."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ocm-p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Second, patient expectations in oncology are uniquely powerful. Patients with cancer — and their families — often push strongly for the most aggressive treatment options available, and oncologists experience significant moral pressure to pursue every possible therapeutic avenue. The conversation about treatment goals, including the difficult question of whether a given treatment is likely to extend meaningful life or primarily extend treatment-related suffering, is among the hardest in medicine. Financial incentives are poorly positioned to facilitate these conversations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ocm-p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Third, drug costs dominate the oncology cost equation in ways that providers have almost no ability to control. A single course of pembrolizumab (Keytruda) for lung cancer can cost $100,000-$200,000 per year. CAR-T cell therapies for hematologic malignancies can cost $400,000-$500,000 for a single treatment course. When drug costs represent 60-80% of oncology episode spending, the total cost of care is driven more by CMS's drug pricing policy and pharmaceutical negotiations than by any provider care management decision."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ocm-h2-design",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "OCM Design: 6-Month Episodes and MEOS Payments"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "ocm-p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Oncology Care Model used 6-month episodes triggered by initiation of chemotherapy — an anchor event that identified patients actively receiving systemic cancer treatment. The episode captured all Medicare spending during the 6-month window: chemotherapy, hospitalizations, emergency visits, physician services, hospice, and supportive care. Target prices were calculated from historical claims data, risk-adjusted for cancer type, stage, and patient demographics, with a 4% discount representing CMS's minimum savings requirement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ocm-p6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "A distinctive and important feature of OCM was the Monthly Enhanced Oncology Services (MEOS) payment — a flat monthly fee of $160 per patient during chemotherapy months. This payment was not tied to individual service delivery; it was designed to support care management infrastructure that would not otherwise be reimbursable under fee-for-service. Practices were required to use MEOS funds to provide 24/7 patient access, care navigation, evidence-based treatment planning, and care coordination services. This prospective investment in care management capacity was a more sophisticated approach than typical fee-for-service quality incentives."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ocm-p7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "OCM participation was voluntary and included both physician oncology practices and hospital outpatient departments. At peak enrollment, approximately 175 practices participated, treating roughly 155,000 Medicare beneficiaries annually. OCM also included a quality performance requirement: practices had to achieve quality thresholds across 12 measures spanning care plan documentation, patient experience, treatment appropriateness, and end-of-life care. Performance below quality thresholds could reduce or eliminate shared savings payments even if cost targets were met."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ocm-h2-practice-changes",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "What Participating Practices Actually Changed"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "ocm-p8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS monitoring surveys and qualitative research documented that OCM participation drove genuine operational changes in participating practices. The most consistent changes included: expanding care navigator roles to manage patient calls and symptom monitoring between visits; implementing evidence-based treatment pathways to reduce practice variation; establishing 24/7 access lines to direct symptomatic patients to the oncology office rather than emergency departments; and investing in care planning documentation to meet OCM's quality requirements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ocm-p9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The emergency department reduction was the most financially meaningful operational change across OCM participants. Research by Kline and colleagues found that OCM participation was associated with a 9-14% reduction in emergency department visits among chemotherapy patients relative to matched controls — a meaningful quality improvement (since ED visits represent care failures for oncology patients) that also generated meaningful cost savings. Hospital admission rates also declined modestly. These changes were achievable because they reflected addressable care gaps: chemotherapy patients presenting to EDs for symptoms that could have been managed by oncology practices with the staffing and protocols to handle them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ocm-h2-results",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "OCM Results: What the CMS Evaluation Found"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "ocm-p10",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The independent CMS evaluation of OCM, conducted by Abt Associates, found that OCM did not generate statistically significant net savings to Medicare in its first several performance periods. Gross savings from reduced utilization (ED visits, hospitalizations, post-acute care) were real and consistent, but these savings were largely offset by the MEOS payments CMS made to participating practices. On net, OCM's financial impact on Medicare was approximately zero — a finding that disappointed proponents who had expected the model to generate substantial savings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ocm-p11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Quality outcomes in OCM were more positive. Participating practices showed improvements in care planning documentation, patient experience scores, and end-of-life care quality indicators including increased hospice use and reduced aggressive care in the last 30 days of life. The improvement in end-of-life care quality — moving patients toward goal-concordant care earlier in terminal illness — is arguably the most important quality achievement in oncology value-based care, with both patient welfare and cost implications that are substantial."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ocm-h2-drug-costs",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Drug Costs: The Elephant in the Oncology Bundle"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "ocm-p12",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The fundamental limitation of OCM as an oncology value-based care model was the inclusion of drug costs in the episode spending calculation. When drug costs represent the majority of total episode spending and those costs are determined by CMS's fee schedule for physician-administered drugs (typically Average Sales Price plus 6%), participating practices have almost no leverage over the largest cost driver. A practice that flawlessly manages care coordination, reduces ED visits, and improves end-of-life care conversations cannot offset the impact of a new PD-1 inhibitor entering the market at $150,000 per year that becomes standard of care during the performance period."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ocm-p13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The OCM target price calculation attempted to adjust for new drug approvals and rising drug costs through a trend adjustment, but the methodology was imperfect and created significant financial uncertainty for participating practices. Several large oncology groups withdrew from OCM specifically because they could not manage their financial exposure to drug cost trends that bore no relationship to their care management decisions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ocm-h2-eom",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Enhancing Oncology Model: OCM's Successor"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "ocm-p14",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Enhancing Oncology Model (EOM), which launched in July 2023 as OCM's successor, incorporated several design improvements based on OCM's lessons. EOM narrowed the cancer types covered to 7 high-priority malignancies (breast, lung, prostate, small intestine/colorectal, multiple myeloma, chronic leukemia, and B-cell lymphoma). It increased the Monthly Enhanced Oncology Services payment from $160 to $750 per beneficiary per month to fund more robust care management. It also added explicit health equity requirements — practices must collect and report race and ethnicity data and implement interventions targeting disparities for each episode initiator patient."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ocm-p15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "EOM also made partial progress on the drug cost problem by excluding very high-cost therapies from the bundle (a carve-out approach) for specified conditions where drug cost variability is driven by treatment selection rather than care management. Whether EOM ultimately generates net savings to Medicare beyond MEOS payments remains to be demonstrated, but the design improvements reflect genuine learning from OCM's decade of operation and represent the most sophisticated oncology VBC model yet designed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ocm-synthesis",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Oncology Care Model's legacy is complex: it failed to generate the net financial savings its architects hoped for, but it succeeded in demonstrating that systematic care management investment in oncology can reduce emergency utilization, improve end-of-life care quality, and support goal-concordant care. The fundamental lesson is that drug pricing reform is a prerequisite for meaningful financial value in oncology VBC — no care management intervention can save enough through utilization reduction to offset the trajectory of oncology drug costs under current Medicare pricing. The EOM's equity requirements and higher care management payments represent genuine progress, but the model cannot fully succeed until the drug cost problem is addressed through separate policy mechanisms."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseTitle": "Value-Based Care: From Fee-for-Service to Outcomes",
+  "estimatedReadTime": 15,
+  "level": "Intermediate",
+  "moduleNumber": 9,
+  "pillar": "Clinical",
+  "slug": {
+    "_type": "slug",
+    "current": "vbc-oncology-care-model"
+  },
+  "summary": "Oncology is the most complex and expensive domain in which value-based care has been attempted, combining catastrophic cost trajectories, profound clinical uncertainty, patient expectations around treatment intensity, and a drug pricing system largely beyond any single payer's control. This lesson examines the Oncology Care Model (OCM) design and results, the Enhancing Oncology Model that succeeded it, how drug costs complicate oncology bundles, and what the evidence reveals about which aspects of value-based oncology are achievable.",
+  "title": "The Oncology Care Model: VBC in Cancer Care"
+}

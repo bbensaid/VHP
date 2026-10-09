@@ -1,0 +1,1123 @@
+{
+  "_createdAt": "2026-09-19T04:08:09Z",
+  "_id": "academyModule-five-pillars-global-budgets-reference-based-pricing",
+  "_rev": "nb7D8fBK2I30j0oxcqQkcO",
+  "_type": "academyModule",
+  "_updatedAt": "2026-10-07T13:08:30Z",
+  "body": [
+    {
+      "_key": "0961192ac6c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "c959a0e195ff",
+          "_type": "span",
+          "marks": [],
+          "text": "Fee-for-Service Pays for the Wrong Thing"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "f9d2d250b52c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fdabe53c71e6",
+          "_type": "span",
+          "marks": [],
+          "text": "Fee-for-service payment is the foundational economic structure of American healthcare: providers are paid for each service delivered, at rates set by negotiated contracts or government schedules. The logic is simple and, transaction by transaction, entirely rational: more services delivered means more revenue."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e09e8dd4da42",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "bc5ec8c83c65",
+          "_type": "span",
+          "marks": [],
+          "text": "That rationality at the individual transaction level produces irrational outcomes at the system level. Under fee-for-service, a hospital that prevents a hospitalization loses revenue. A hospital that prevents a readmission loses revenue. A hospital that manages a chronic condition well enough that a patient never reaches the emergency department loses revenue. This is not a criticism of individual clinicians or managers, who are generally motivated by genuine commitment to patient care -- it is an observation about the incentive built into the payment architecture itself. When the financial incentive and the clinical incentive point in opposite directions, the financial incentive wins systematically, at scale, even if not in every individual case."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "b9d8027c0820",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "f1bc155e65bb",
+          "_type": "span",
+          "marks": [],
+          "text": "This is also why fifteen years of voluntary value-based care programs have moved the needle on payment reform without fundamentally changing hospital behavior: as long as the underlying chassis is still fee-for-service, volume remains the path of least resistance to revenue."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "b3af4a1000bc",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "461032bae8c6",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's Price Extraction Problem, in Numbers"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "73c37ba1099b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "02817303f3c0",
+          "_type": "span",
+          "marks": [],
+          "text": "Fee-for-service creates a second structural problem distinct from the volume incentive: in concentrated hospital markets -- which describes the majority of U.S. hospital markets, and all of Vermont's -- it lets hospitals with market power charge commercial payers far above their actual cost of care. Vermont's data, documented in the Green Mountain Care Board's February 2026 report, is among the most extreme in the country: UVMMC's commercial prices run 358% of Medicare (RAND, 2018-2020 data), the average Vermont hospital charges commercial payers 250-300% of Medicare, and the approximate break-even point is roughly 136% of Medicare."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "59b5ca2256ca",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "7376004f0c5e",
+          "_type": "span",
+          "marks": [],
+          "text": "The consequence for insurance premiums is direct and arithmetically straightforward. Vermont's average monthly silver marketplace premium rose from $456 in 2018 to $948 in 2024 -- a 108% increase in six years -- tracking hospital charge growth with high fidelity (Oliver Wyman Act 167 Report; GMCB analysis). These are not coincidental trends; they are the mathematical output of a price structure with no regulatory discipline."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "cd5dd552eacf",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "923bc6dd10e1",
+          "_type": "span",
+          "marks": [],
+          "text": "Oliver Wyman's analysis found no relationship between price and quality across Vermont's hospital system. The gap between break-even and actual commercial charges is not explained by complexity or outcomes. It is market power -- the ability of a dominant provider to demand above-cost prices from payers with no viable network alternative."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ee6b0684128f",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "baea0f82c646",
+          "_type": "span",
+          "marks": [],
+          "text": "What Reference-Based Pricing Actually Does, Mechanically"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "db6c9db96815",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "b4401f89fc73",
+          "_type": "span",
+          "marks": [],
+          "text": "Reference-based pricing (RBP) addresses the price extraction problem directly. Rather than letting hospitals and payers negotiate bilaterally -- where hospital market power determines the outcome -- RBP establishes a transparent external benchmark, typically a percentage of Medicare reimbursement, as the maximum a hospital may accept as payment in full. Vermont's Act 68 directs the GMCB to implement mandatory RBP for commercial payers no later than hospital fiscal year 2027, targeting roughly 200% of Medicare -- the level Oliver Wyman's Act 167 study recommended as sufficient to move the system toward a sustainable trajectory while still covering hospitals' actual costs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1d544b4c6fc8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a469491114f3",
+          "_type": "span",
+          "marks": [],
+          "text": "Act 68's architecture rests on four design principles: mandatory, not voluntary, for every hospital and every commercial payer; a binding ceiling, not advisory guidance, meaning hospitals cannot charge or collect more than the established rate; a transparent, nationally comparable Medicare benchmark; and premium passthrough monitoring, so GMCB and Vermont's Department of Financial Regulation can verify that price reductions actually reach premiums rather than being absorbed as insurer margin."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "980b8e35a961",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "17f45148eca5",
+          "_type": "span",
+          "marks": [],
+          "text": "GMCB's February 2026 report added a refinement reflecting Vermont's varied 14-hospital system: rather than one statewide multiplier, GMCB will weigh each hospital's payer mix, labor costs, social risk factors, and role in the system -- a critical access hospital serving a largely Medicaid and Medicare rural population has different cost economics than a large academic medical center, even under one binding ceiling principle."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "090a5f6a5899",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "7b5db1d5d7ae",
+          "_type": "span",
+          "marks": [],
+          "text": "The Cross-State Evidence Behind Vermont's 200%"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "62771548bd63",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "cd296535549c",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont is not designing RBP in a vacuum. Oregon implemented RBP for its state employee health plans in 2019, capping in-network payments at 200% of Medicare and out-of-network at 185%, covering roughly 300,000 lives. A Health Affairs study found the program saved an estimated $107.5 million over its first 27 months -- and, critically, all 24 hospitals affected by the cap remained in-network. That finding directly answers the most common objection to RBP: that hospitals will simply walk away from a regulated rate. At 200% of Medicare, they did not, because 200% of Medicare is still substantially above their actual cost of care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "8673d4b6c4f4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "dd817c2686d5",
+          "_type": "span",
+          "marks": [],
+          "text": "Montana's 2016 state-employee-plan RBP program produced roughly $48 million in initial savings but proved politically fragile without a statutory mandate behind it -- a cautionary data point that helps explain why Vermont chose to legislate RBP rather than negotiate a smaller demonstration. Washington's 'Cascade Care' public option caps participating network payments at 160% of Medicare and is expanding toward state employee plans."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "5f3fafeceaab",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "129a67434acb",
+          "_type": "span",
+          "marks": [],
+          "text": "None of these programs, however, is a full statewide, all-hospital, all-commercial-payer mandate. Vermont's Act 68 is: it is the most specific mandatory all-payer price target enacted by any state to date."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "0247b071b183",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "59f2efb4edfd",
+          "_type": "span",
+          "marks": [],
+          "text": "What RBP Fixes -- and What It Leaves Standing"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "3e01cf5ce629",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "b9ad705b7734",
+          "_type": "span",
+          "marks": [],
+          "text": "GMCB's February 2026 report was precise about scope. RBP reduces hospital leverage to demand excessive commercial prices, narrows unjustified price variation for the same service, protects affordability with a binding ceiling, and incentivizes operational efficiency over price increases as the remaining margin lever. It also establishes the price denominator that a global budget needs to function."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "16583ceed183",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "85ddc0828f67",
+          "_type": "span",
+          "marks": [],
+          "text": "RBP does not control total hospital spending -- it caps price, not volume. It does not guarantee that savings reach consumers without explicit passthrough monitoring. It does not restructure incentives around prevention or population health. And it does not solve the cross-subsidy collapse driven by Vermont's aging demographics, in which a shrinking commercially insured base must bear a growing share of below-cost Medicare and Medicaid patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "84fd0695290d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "716c61938d8a",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why Act 68 sequences RBP first and global budgets second. RBP is a necessary but insufficient tool; global budgets are built to address what RBP leaves unresolved."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "89f0620051e2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "20d97ee18456",
+          "_type": "span",
+          "marks": [],
+          "text": "What a Global Budget Actually Is, Mechanically"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "519c735968a4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "7fee61229231",
+          "_type": "span",
+          "marks": [],
+          "text": "A hospital global budget is a prospectively set annual revenue cap: an amount fixed before the fiscal year begins, based on population health needs and past performance, not on the volume of services a hospital happens to deliver during the year. Under a global budget, the hospital receives that fixed total regardless of how many patients it sees or procedures it performs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "474a64e07551",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1ab966dee8b7",
+          "_type": "span",
+          "marks": [],
+          "text": "This is a different lever than RBP. RBP caps the price of each unit of care; a global budget caps total revenue across all units combined, for the year, in advance. A Vermont hospital operating under a global budget knows its annual revenue before the year starts -- something fee-for-service, with its dependence on volume, acuity mix, and billing accuracy, can never provide."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "b97275424910",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "f80f07e68e94",
+          "_type": "span",
+          "marks": [],
+          "text": "That predictability is not a secondary benefit. For Vermont's financially distressed rural hospitals, knowing next year's revenue today is what makes multi-year capital planning and workforce investment possible at all."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1ceda9b417cf",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "b91668b66d1c",
+          "_type": "span",
+          "marks": [],
+          "text": "The Incentive Flip: Why an Avoided Admission Becomes a Margin Gain"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "90c6f6f7c67a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "c10517dcfd8f",
+          "_type": "span",
+          "marks": [],
+          "text": "Under fee-for-service, revenue equals price times volume: the only way to grow revenue is to deliver more services or charge more per service. Under a global budget, revenue is fixed by construction. The only lever left to improve financial performance is reducing cost -- which means managing population health better, preventing hospitalizations, cutting avoidable readmissions, and delivering care in less expensive settings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "678c535a9181",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "9e02f1ed3eee",
+          "_type": "span",
+          "marks": [],
+          "text": "This flips the admission-avoidance calculus completely. Under fee-for-service, an avoided admission is lost revenue. Under a global budget, the same avoided admission reduces the cost side of a fixed-revenue equation -- which is, arithmetically, improved margin. The clinical success and the financial success point the same direction for the first time."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "6cac77c62736",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "d9fd0b4f4b9d",
+          "_type": "span",
+          "marks": [],
+          "text": "A Maryland state regulator, quoted in a JAMA Network Open study of the state's all-payer model, described the effect directly: the global budget \"flipped the incentives for hospitals in the right direction. It was such a monumental change, a sea change, in the way that hospitals thought about raising revenue.\" This is not a theoretical claim -- it is a documented behavioral shift, from strategies that chase volume to strategies built around population health management."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ecb2f8fdc7c3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "de180cb46927",
+          "_type": "span",
+          "marks": [],
+          "text": "Maryland: A Decade of Global Budget Evidence"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "b2cc9717ac17",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "5a3638f5d110",
+          "_type": "span",
+          "marks": [],
+          "text": "Maryland's Health Services Cost Review Commission (HSCRC) was established in 1972 with a unique statutory authority to set hospital rates for all commercial payers, and received a Medicare demonstration waiver in 1977 to extend that authority to Medicare as well. The current Global Budget Revenue (GBR) methodology, operating under a renegotiated federal waiver since 2014, fixes each hospital's total annual revenue before the year begins; prices for individual services then adjust during the year to hit that fixed target."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "c1e636d48b35",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ad95b785d998",
+          "_type": "span",
+          "marks": [],
+          "text": "Maryland is the only U.S. state to have run mandatory all-payer hospital global budgets for more than a decade, and its results are the closest empirical evidence available for what Vermont is attempting: roughly $1.4 billion in Medicare hospital savings relative to the projected national trend, a 7% reduction in hospital admissions for Medicare patients (with avoidable admissions down more than 6%), and an estimated $800 million reduction in Medicare Part A and B spending (CMS evaluation)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "cff5a2164b0a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "b99bcc2f4bcc",
+          "_type": "span",
+          "marks": [],
+          "text": "The model's accountability structure extends beyond the budget cap itself: a Medicare Performance Adjustment worth 1% of Medicare revenue tied to total cost of care, and a Quality Based Reimbursement program worth 2% of all-payer revenue tied to patient experience, safety, and outcomes. The budget constraint is non-negotiable; the quality components are calibrated to reward the population-health behavior the fixed budget is designed to produce."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "c54f8269ed95",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "9af153527cde",
+          "_type": "span",
+          "marks": [],
+          "text": "What Maryland Also Proves: A Global Budget Alone Doesn't Fix Population Health"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "ce734cd10ea1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "13aca2e59969",
+          "_type": "span",
+          "marks": [],
+          "text": "The Milbank Memorial Fund's evaluation of Maryland's model is not uniformly positive, and intellectual honesty requires presenting the limits alongside the achievements: it found mixed results on quality metrics and no improvement in population-level measures like smoking rates or obesity prevalence."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "7441a12363f2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "549fecc83e45",
+          "_type": "span",
+          "marks": [],
+          "text": "The reason is analytically important. A global budget creates a powerful incentive to reduce hospital utilization, but it does not automatically create the community infrastructure -- primary care capacity, behavioral health access, housing, transportation -- that addresses what drives that utilization in the first place. When Maryland's avoidable admissions fell, the reduction was concentrated among healthier patients who, with adequate primary care, would not have needed hospitalization. The sickest patients kept arriving at emergency departments, and hospitals spent more time treating them once there."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "22272145a30d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ecaf6bab5c82",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont built this lesson into its design from the start rather than adding it years later, as Maryland did. The AHEAD State Agreement linked hospital global budgets to the Equity, Access, and Statewide Transformation (EAST) Fund, intended to provide up to $150 million annually beginning in 2027 for primary care, mental health, home health, and long-term care investment -- a plan undone when CMS capped the expected EAST Fund near $10 million and Vermont withdrew from AHEAD in July 2026 (see below). The Rural Health Transformation Program separately provides transformation capital -- a $195 million FY2026 award, an annual amount rather than a five-year total -- for workforce, telehealth, and community infrastructure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "2e2301e51d11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "7d1977983207",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's Four Attempts, and the One Lesson"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "ea14e91837cd",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "3d6e70fb6bb1",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont has tried some version of hospital global budgeting for over a decade, and the pattern across the attempts is instructive. GMCB's net patient revenue cap, in place since 2012, partially constrained individual hospital revenue growth but did not align incentives across payers or address volume gaming. A 2014 pilot proposed for Rutland Regional Medical Center -- payments based on historical revenue plus inflation, adjusted for demographics -- was never implemented; hospital opposition and implementation complexity stopped it before launch."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bb214d904190",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8d5f8e6333bc",
+          "_type": "span",
+          "marks": [],
+          "text": "The Vermont All-Payer ACO Model (2017-2025) went further: a voluntary arrangement aligning hospital global payments across Medicare, Medicaid, and commercial payers based on historical spend. But because participation was voluntary, the state's highest-cost commercial payers opted out, and OneCare Vermont -- the ACO administering the model -- could not compel them to join. The model produced modest results but never achieved the all-payer alignment that makes global budgets work, and it expired at the end of 2025."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bfc308917412",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ea36845f57e7",
+          "_type": "span",
+          "marks": [],
+          "text": "The lesson across all three attempts is unambiguous: a global budget that is optional for the highest-price hospital or the highest-leverage payer in a market is not a global budget -- it is a demonstration project. Act 68's statutory mandate, requiring non-CAH hospital global budgets by FY2028 and all Vermont hospitals by FY2030, removes the opt-out. That is the design difference that matters, and it is the reason Act 68 looks structurally different from everything that came before it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "78d5817d9cdb",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fb9bab95c5d5",
+          "_type": "span",
+          "marks": [],
+          "text": "The AHEAD Episode: A Model Vermont Signed, Then Left"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "42ed6771e755",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "28f9627d2ac4",
+          "_type": "span",
+          "marks": [],
+          "text": "In January 2025, Vermont signed the AHEAD (Achieving Healthcare Efficiency through Accountable Design) State Agreement with CMS, a federal model intended to bring Medicare fee-for-service hospitals under global budgets alongside Act 68's commercial reforms. Vermont expected roughly $138 million in additional federal funds to reinvest in primary care and community services as part of the deal."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "2f781651a98d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "2b25107958b0",
+          "_type": "span",
+          "marks": [],
+          "text": "A subsequent CMS renegotiation, imposed to align Vermont's terms with those of other AHEAD states, cut that expectation to a cap of about $10 million. With most of the money that had justified joining gone, but the model's administrative complexity and downside risk unchanged, Vermont formally notified CMS of its withdrawal in July 2026."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "84a8f7045301",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "700f95beee4a",
+          "_type": "span",
+          "marks": [],
+          "text": "Because the performance period had not yet begun, the withdrawal changed nothing operationally for Vermont hospitals or providers: Act 68's global budget mandate rests on state statutory authority, not the federal AHEAD agreement, and Vermont's near-term transformation capital comes from the Rural Health Transformation Program, which does not depend on AHEAD either. The episode is a concrete illustration of a risk this course takes seriously -- because Vermont anchored its reform in state authority rather than a federal model, it could exit a bad federal deal without derailing the reform itself."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aeff15bbb74a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "2bb70ee8c7a9",
+          "_type": "span",
+          "marks": [],
+          "text": "Before Your Next Contract Cycle"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "c103dcc4f8a2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "f58a171e2ba8",
+          "_type": "span",
+          "marks": [],
+          "text": "For a hospital executive, the practical task is to model your cost structure under a fixed-revenue scenario now, not after FY2028 arrives: what does cost per adjusted discharge look like at current volume, at 5% lower volume, at 10% lower volume? What administrative cost-reduction opportunities exist that are simply invisible under a volume-growth financial model?"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "b7849615aeca",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "932ba18deb4c",
+          "_type": "span",
+          "marks": [],
+          "text": "The transition window is short. GMCB sets the RBP method by rule in 2027, and reference prices take effect for commercial payers in hospital FY2028 -- the same year non-CAH global budgets are due, one budget cycle away. Contracts negotiated today should already assume the fixed-revenue environment that is coming, not the volume-driven environment that is ending."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "df84e4370a0c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ab9d1672e3ae",
+          "_type": "span",
+          "marks": [],
+          "text": "Payment reform is the master variable the rest of this course's framework depends on financially -- but a global budget only produces the incentive flip this lesson describes if the organization can actually measure and manage a fixed budget in practice. That is the subject of the next lesson."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "eb2b3420f142",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "e1c040b4ffd0",
+          "context": "Source: RAND Hospital Price Transparency Study, 2018-2020 data",
+          "label": "UVMMC commercial hospital prices as a share of Medicare",
+          "value": "358%"
+        },
+        {
+          "_key": "80f413fd20bf",
+          "context": "Source: GMCB Act 68 Update, February 2026",
+          "label": "Approximate break-even point for Vermont hospitals",
+          "value": "~136%"
+        },
+        {
+          "_key": "3585ec797c7c",
+          "context": "Source: Oliver Wyman Act 167 Report / GMCB analysis",
+          "label": "Increase in Vermont's average silver marketplace premium, 2018-2024 ($456 to $948)",
+          "value": "108%"
+        }
+      ]
+    },
+    {
+      "_key": "e321daf0610e",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e68b513dee48",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Voluntary Models Fail\n"
+        },
+        {
+          "_key": "753881ac7ec7",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's own All-Payer ACO Model (2017-2025) proves this concretely: OneCare Vermont could not compel the state's highest-cost commercial payers to participate, so the model never achieved the all-payer alignment that makes global budgets work, and it expired at the end of 2025. This is why Act 68 made participation mandatory rather than trying to improve the voluntary model."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "37db56696a13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "40b2d39de499",
+          "_type": "span",
+          "marks": [],
+          "text": "Maryland's Global Budget Results, and Their Limits"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "d76a6f76333d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "046ee7f276a3",
+          "_type": "span",
+          "marks": [],
+          "text": "Maryland's decade-plus track record gives Vermont something no other state can offer: a mandatory, all-payer, statewide global budget program old enough to show both what it achieves and where it needs help. The savings and utilization results are real and independently evaluated by CMS, HSCRC, and outside researchers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "dabacaf69193",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "4e563b7da8a9",
+          "_type": "span",
+          "marks": [],
+          "text": "The population-health limits are equally real, and Vermont's planned response -- pairing the budget with the EAST Fund and Rural Health Transformation Program from day one -- was a direct answer to the specific gap Maryland's evaluators identified, though the EAST Fund half fell away when Vermont withdrew from AHEAD in July 2026."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "2ddf5f14c1f3",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "a6e249166b1c",
+          "context": "Source: HSCRC / CMS evaluation",
+          "label": "Medicare hospital savings versus the projected national trend since 2014",
+          "value": "$1.4B"
+        },
+        {
+          "_key": "98328a115884",
+          "context": "Source: CMS / Commonwealth Fund",
+          "label": "Reduction in hospital admissions for Medicare patients (avoidable admissions down over 6%)",
+          "value": "7%"
+        },
+        {
+          "_key": "64da280bd4ed",
+          "context": "Source: CMS evaluation",
+          "label": "Reduction in Medicare Part A and B hospital spending",
+          "value": "$800M"
+        }
+      ]
+    },
+    {
+      "_key": "f0b6fc37b36e",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "497703f95d8c",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "The Oregon Counter-Evidence\n"
+        },
+        {
+          "_key": "28523e68b5bf",
+          "_type": "span",
+          "marks": [],
+          "text": "The most common objection to reference-based pricing is that hospitals will simply refuse the regulated rate and exit commercial networks, cutting off patient access. Oregon's experience directly refutes this at 200% of Medicare: all 24 hospitals affected by the state's 2019 employee-plan RBP program remained in-network, because 200% of Medicare is still well above their actual cost of care."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "bf38be52fd07",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "c51008dadd34",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "A Global Budget Without Primary Care Is Half a Reform\n"
+        },
+        {
+          "_key": "98bd9ae5e56d",
+          "_type": "span",
+          "marks": [],
+          "text": "Maryland's Milbank Fund evaluation found the global budget model reduced hospital utilization but did not, by itself, improve population health measures like smoking or obesity rates -- the reduction in admissions was concentrated among healthier patients. Vermont tried to build the lesson into its design from day one: the EAST Fund and Rural Health Transformation Program were to pair the fixed-revenue budget with community investment, rather than adding it years later as Maryland did. The EAST Fund fell away when Vermont withdrew from AHEAD in July 2026."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "80291e8bd8a8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "f8d44428869e",
+          "_type": "span",
+          "marks": [],
+          "text": "Reference-Based Pricing and Rate Regulation: Cross-State Comparison"
+        }
+      ],
+      "markDefs": [],
+      "style": "h4"
+    },
+    {
+      "_key": "bf675fb2ba3b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e7cfb1e3e35c",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Oregon (2019) — "
+        },
+        {
+          "_key": "51b3203b0528",
+          "_type": "span",
+          "marks": [],
+          "text": "200% of Medicare in-network / 185% out-of-network; state employee plan, ~300,000 covered lives → $107.5M saved in 27 months (Health Affairs); all 24 affected hospitals stayed in-network"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "8c5bcc7b054b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "c428f757c654",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Montana (2016) — "
+        },
+        {
+          "_key": "9f11e0ae5965",
+          "_type": "span",
+          "marks": [],
+          "text": "Direct contracting at a percentage of Medicare for the state employee plan → $48M initial savings; politically fragile without a statutory mandate behind it"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "f45a2eee4c2a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "084bb19f2e3a",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Washington (2021) — "
+        },
+        {
+          "_key": "a33dec3591ff",
+          "_type": "span",
+          "marks": [],
+          "text": "'Cascade Care' public option at 160% of Medicare → Voluntary; expanding to state employee plans and growing commercial adoption"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "4edcb42213e1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "11ed140d87b8",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Maryland (2014-present) — "
+        },
+        {
+          "_key": "88e15cdec70c",
+          "_type": "span",
+          "marks": [],
+          "text": "All-payer rate setting; fixed annual global budget revenue; Medicare waiver → $1.4B Medicare savings; 7% fewer admissions; $800M spending reduction"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "832445acbcde",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "751150e3ed5d",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Vermont Act 68 (FY2027) — "
+        },
+        {
+          "_key": "e70896191f0a",
+          "_type": "span",
+          "marks": [],
+          "text": "Mandatory statewide RBP at roughly 200% of Medicare; commercial payers first, all hospitals → Implementation underway; a negative 1% commercial rate benchmark already in effect FY2026 as a transition step"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "168ba616c284",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "45dbf9612519",
+          "_type": "span",
+          "marks": [],
+          "text": "Fee-for-Service vs. Global Budget: What Changes When Revenue Is Fixed"
+        }
+      ],
+      "markDefs": [],
+      "style": "h4"
+    },
+    {
+      "_key": "17890113f11d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "9964a3424f58",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Revenue formula — "
+        },
+        {
+          "_key": "f7e662742081",
+          "_type": "span",
+          "marks": [],
+          "text": "Price x volume -- more services delivered means more revenue → A fixed annual amount set before the year begins, independent of volume"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "275fedfea6c6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8f115334ebb0",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "An avoided admission — "
+        },
+        {
+          "_key": "ce1e4a513e18",
+          "_type": "span",
+          "marks": [],
+          "text": "Lost revenue -- the hospital is paid for services it no longer delivers → Reduced cost against a fixed revenue base -- in other words, improved margin"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "4231854d39e0",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e3995445f686",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Planning horizon — "
+        },
+        {
+          "_key": "76943b2a96f3",
+          "_type": "span",
+          "marks": [],
+          "text": "Revenue depends on volume, acuity, and billing accuracy -- variable and partly outside the hospital's control → Annual revenue is known before the year starts, enabling capital and workforce planning"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fef4edacff73",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "d92a72e266f8",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "What improves financial performance — "
+        },
+        {
+          "_key": "fa04aa458ebf",
+          "_type": "span",
+          "marks": [],
+          "text": "More services, higher-acuity coding, higher prices → Lower cost of care: prevention, fewer readmissions, efficient length of stay"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "f961b214e641",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "cd2ed58b9693",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "From the Book — Chapter 6\n"
+        },
+        {
+          "_key": "8750ff7f3e15",
+          "_type": "span",
+          "marks": [],
+          "text": "Chapter 6 is the Economics pillar in full — global budgets and reference-based pricing as Vermont's financial reform architecture.\n\nRead it at /read/chapter-06."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    }
+  ],
+  "courseTitle": "Five Pillars, One Imperative",
+  "estimatedReadTime": 30,
+  "learningObjectives": [
+    "Explain the mechanical difference between fee-for-service and a global budget, and why the change flips a hospital's incentive to prevent an admission.",
+    "Describe how reference-based pricing sets a binding price ceiling and why Vermont set that ceiling at roughly 200% of Medicare.",
+    "Use Maryland's decade of all-payer global budget results to evaluate what mandatory global budgets can and cannot achieve on their own.",
+    "Identify why Vermont's three prior voluntary payment-reform attempts failed and what Act 68 changed structurally."
+  ],
+  "level": "Intermediate",
+  "moduleNumber": 12,
+  "nextModuleSlug": "apm-readiness-vbc-financial-modeling",
+  "pillar": "Economics",
+  "prevModuleSlug": "ai-governance-clinical-decision-support",
+  "slug": {
+    "_type": "slug",
+    "current": "global-budgets-reference-based-pricing"
+  },
+  "summary": "Reference-based pricing caps what a hospital may charge; a global budget caps what a hospital may collect in total, regardless of volume. Together they are the two mechanisms Vermont uses to break the fee-for-service incentive, and Maryland's decade of results shows what each does and does not achieve on its own.",
+  "title": "Global Budgets and Reference-Based Pricing",
+  "totalModules": 24
+}

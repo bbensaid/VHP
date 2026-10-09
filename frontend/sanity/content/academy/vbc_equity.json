@@ -61,9 +61,9 @@
       "_key": "m6sg01",
       "title": "Health Disparities in the United States",
       "stats": [
-        {"_key": "m6st01", "value": "3.5 years", "label": "Black-White Life Expectancy Gap", "context": "Black Americans live 3.5 fewer years on average than white Americans. The gap widened to 6 years during COVID-19 due to disparate mortality rates. Source: CDC National Vital Statistics, 2023.", "trend": "down"},
-        {"_key": "m6st02", "value": "2x", "label": "Maternal Mortality: Black vs. White", "context": "Black women die from pregnancy-related causes at more than twice the rate of white women — even after controlling for income and education. Source: CDC, 2023.", "trend": "down"},
-        {"_key": "m6st03", "value": "20%", "label": "Rural vs. Urban Mortality Gap", "context": "Rural Americans have age-adjusted mortality rates 20% higher than urban Americans — a gap that has widened over the past two decades as rural hospital closures and provider shortages compound. Source: JAMA, 2024.", "trend": "down"}
+        {"_key": "m6st01", "value": "4.4 years", "label": "Black-White Life Expectancy Gap", "context": "Black Americans' life expectancy (74.0 years) trailed White Americans' (78.4) by 4.4 years in 2023; the gap widened during COVID-19. Source: KFF analysis of NCHS U.S. Life Tables, 2023.", "trend": "down"},
+        {"_key": "m6st02", "value": "3.5x", "label": "Maternal Mortality: Black vs. White", "context": "In 2023, the pregnancy-related death rate was 50.3 per 100,000 live births for Black women versus 14.5 for White women. Source: CDC NCHS, Maternal Mortality Rates in the United States, 2023.", "trend": "down"},
+        {"_key": "m6st03", "value": "Higher", "label": "Rural vs. Urban Mortality Gap", "context": "Rural Americans have higher age-adjusted death rates than urban Americans, a gap that has widened over the past two decades.", "trend": "down"}
       ]
     },
     {
@@ -106,9 +106,9 @@
       "_key": "m6sg02",
       "title": "Social Determinants in VBC Populations",
       "stats": [
-        {"_key": "m6st04", "value": "34%", "label": "Food Insecurity Prevalence", "context": "34% of high-risk VBC patients screen positive for food insecurity. Food-insecure patients have a 2.1x higher risk of preventable hospitalization. Source: AHRQ, 2024.", "trend": "down"},
-        {"_key": "m6st05", "value": "29%", "label": "Transportation Barriers", "context": "29% of high-risk VBC patients report transportation barriers to care. Missing appointments due to lack of transportation drives medication non-adherence and delayed diagnosis. Source: AHRQ, 2024.", "trend": "neutral"},
-        {"_key": "m6st06", "value": "4.2x", "label": "Housing Instability Risk Multiplier", "context": "Patients experiencing housing instability or homelessness have 4.2x higher risk of preventable hospitalization than stably housed patients. Source: NEJM, 2023.", "trend": "down"}
+        {"_key": "m6st04", "value": "37%", "label": "Screened Positive for a Core Need", "context": "Of more than 1 million Medicaid and Medicare beneficiaries screened in CMS's Accountable Health Communities Model, 37% had at least one core social need. Source: CMS AHC final evaluation, 2026.", "trend": "down"},
+        {"_key": "m6st05", "value": "18%", "label": "Needs Plus Frequent ED Use", "context": "18% of AHC-screened beneficiaries had a core need and two or more ED visits in the prior year, making them eligible for navigation. Source: CMS AHC final evaluation, 2026.", "trend": "neutral"},
+        {"_key": "m6st06", "value": "$223/mo", "label": "Cost of a Transportation Need (Medicaid)", "context": "Medicaid beneficiaries with transportation needs had $223 higher health care expenditures per month than those without, adjusting for other needs. Source: CMS AHC final evaluation, 2026.", "trend": "down"}
       ]
     },
     {
@@ -139,7 +139,7 @@
       "_type": "block",
       "_key": "m6p008",
       "style": "normal",
-      "children": [{"_type": "span", "_key": "m6s008", "text": "The panel selection problem is the most empirically documented. A 2024 study in Health Affairs found that ACOs serving the highest quartile of dual-eligible beneficiaries — patients enrolled in both Medicare and Medicaid, who face the most complex social and clinical needs — were 2.3 times more likely to exit MSSP within three years than ACOs serving lower proportions of dual-eligible patients. The program's financial structure creates systematic pressure against serving the most vulnerable populations.", "marks": []}],
+      "children": [{"_type": "span", "_key": "m6s008", "text": "The panel selection problem is the most empirically documented. Because MSSP benchmarks and quality scores were built with little adjustment for social risk, ACOs serving high shares of dual-eligible beneficiaries — patients enrolled in both Medicare and Medicaid, who face the most complex social and clinical needs — face weaker financial returns from participation. CMS acknowledged that pressure when it added a health equity adjustment to ACO quality scoring (2023) and a Health Equity Benchmark Adjustment (2025).", "marks": []}],
       "markDefs": []
     },
     {
@@ -167,7 +167,7 @@
       "_type": "block",
       "_key": "m6p010",
       "style": "normal",
-      "children": [{"_type": "span", "_key": "m6s010", "text": "CMS made its most significant commitment to SDOH risk adjustment in the 2022 MSSP final rule, which introduced a Health Equity Benchmark Adjustment that increases spending benchmarks for ACOs serving high proportions of patients with low-income subsidy status. This acknowledges that high-need populations cost more to manage effectively. However, the 3.5 percent adjustment ceiling is widely considered insufficient by health equity researchers — and it uses low-income subsidy status as an imperfect proxy for the full range of social complexity that drives outcome variation.", "marks": []}],
+      "children": [{"_type": "span", "_key": "m6s010", "text": "CMS made its most significant commitment to SDOH risk adjustment in the CY2025 Physician Fee Schedule final rule, which created a Health Equity Benchmark Adjustment — starting in 2025 — that raises spending benchmarks for ACOs serving high proportions of beneficiaries who are dually eligible or receive the Part D low-income subsidy. This acknowledges that high-need populations cost more to manage effectively. Critics note that dual and low-income-subsidy status are imperfect proxies for the full range of social complexity that drives outcome variation.", "marks": []}],
       "markDefs": []
     },
     {
@@ -178,7 +178,7 @@
       "rightLabel": "Researcher-Recommended Approach",
       "rows": [
         {"_key": "m6cr01", "aspect": "Primary adjustment factor", "left": "Low-income subsidy status (proxy for poverty)", "right": "Area Deprivation Index + Z-code utilization + CHW encounter data"},
-        {"_key": "m6cr02", "aspect": "Adjustment magnitude", "left": "Up to 3.5% benchmark increase", "right": "8 to 12% adjustment based on SDOH cost impact evidence"},
+        {"_key": "m6cr02", "aspect": "Adjustment magnitude", "left": "Benchmark increase for ACOs with high dual/LIS shares (from 2025)", "right": "Larger adjustments calibrated to measured social-risk cost impact"},
         {"_key": "m6cr03", "aspect": "Data source", "left": "Medicare enrollment data (limited)", "right": "EHR SDOH screening data + census social vulnerability index"},
         {"_key": "m6cr04", "aspect": "Population coverage", "left": "Medicare fee-for-service only", "right": "All payers including Medicaid and commercial"},
         {"_key": "m6cr05", "aspect": "Equity transparency", "left": "Aggregate performance reporting", "right": "Disaggregated reporting by race, ethnicity, income, and geography required"}
@@ -188,7 +188,7 @@
       "_type": "block",
       "_key": "m6p011",
       "style": "normal",
-      "children": [{"_type": "span", "_key": "m6s011", "text": "CMS has committed to expanding SDOH risk adjustment methodology in the 2026 MSSP final rule, with proposals to incorporate Area Deprivation Index scores, Z-code utilization rates from EHR screenings, and community health worker encounter data as additional adjustment factors. These changes are meaningful but still incomplete. The policy change required to make VBC metrics truly equitable will require sustained advocacy from providers who are experiencing the consequences of inadequate adjustment directly.", "marks": []}],
+      "children": [{"_type": "span", "_key": "m6s011", "text": "CMS has not adopted the broader factors researchers recommend — such as Area Deprivation Index scores, Z-code screening data, or community health worker encounter data — and the CY2026 Physician Fee Schedule moved the other way, removing the social determinants risk assessment from Medicare's G0136 code. The policy change required to make VBC metrics truly equitable will require sustained advocacy from providers who are experiencing the consequences of inadequate adjustment directly.", "marks": []}],
       "markDefs": []
     },
     {
@@ -230,9 +230,9 @@
       "_key": "m6sg03",
       "title": "The Evidence for Community Health Workers",
       "stats": [
-        {"_key": "m6st07", "value": "22%", "label": "Reduction in Preventable Hospitalizations", "context": "A 2024 meta-analysis of 47 RCTs found CHW programs targeting high-risk populations produced an average 22% reduction in preventable hospitalizations. Source: AJPH, 2024.", "trend": "up"},
-        {"_key": "m6st08", "value": "4:1", "label": "CHW Return on Investment", "context": "CHW programs consistently show a 4-to-1 return on investment — the highest ROI of any care management intervention type studied. Source: Health Affairs, 2023.", "trend": "up"},
-        {"_key": "m6st09", "value": "31%", "label": "Chronic Disease Monitoring Improvement", "context": "CHW programs targeting high-risk populations show a 31% improvement in chronic disease monitoring completion rates — exceeding care coordinator programs alone. Source: AJPH, 2024.", "trend": "up"}
+        {"_key": "m6st07", "value": "Fewer", "label": "Hospitalizations in IMPaCT Trial", "context": "In a randomized trial, Penn Medicine's IMPaCT CHW program reduced hospitalizations among high-risk, low-income patients — the source of its savings. Source: Kangovi et al., Health Affairs, 2020.", "trend": "up"},
+        {"_key": "m6st08", "value": "$2.47:$1", "label": "CHW Return on Investment", "context": "Every dollar Medicaid invested in Penn Medicine's IMPaCT CHW program returned $2.47 within the fiscal year, in a randomized trial. Source: Kangovi et al., Health Affairs, 2020.", "trend": "up"},
+        {"_key": "m6st09", "value": "302", "label": "Trial Size (IMPaCT ROI Study)", "context": "The ROI estimate came from a randomized controlled trial of 302 patients — the first economic analysis of a health system CHW program for adults using RCT data. Source: Kangovi et al., Health Affairs, 2020.", "trend": "up"}
       ]
     },
     {
@@ -249,15 +249,7 @@
       "children": [{"_type": "span", "_key": "m6s015", "text": "CMS has taken meaningful steps to address this. No federal rule requires state Medicaid programs to pay for CHW services: coverage is a state option, possible since a 2013 CMS rule (effective 2014) let Medicaid pay for preventive services recommended by a licensed practitioner, and 29 of 48 responding states reported paying for CHW services in KFF's 2022 survey. For Medicare, the CY2024 Physician Fee Schedule created the first Community Health Integration codes (G0019, G0022), which pay for CHW services furnished under a billing practitioner's supervision. The AHEAD Model gives each participating state up to $12 million in cooperative agreement funding and requires a state health equity plan. Vermont signed on to AHEAD in January 2025 but withdrew in July 2026, before its performance period began, so it has no AHEAD-linked CHW funding stream.", "marks": []}],
       "markDefs": []
     },
-    {
-      "_type": "exampleBlock",
-      "_key": "m6ex01",
-      "eyebrow": "Real-World Example",
-      "title": "Roots Community Health Center — CHWs as Clinical Infrastructure",
-      "body": "Roots Community Health Center in Oakland, California serves a predominantly Black and low-income patient population. Their CHW program places community health workers in every primary care team. CHWs conduct SDOH screenings, make home visits for high-risk patients, connect patients to food and housing resources, attend medical appointments as patient advocates, and provide health education in culturally relevant formats. CHWs are paid employees with full benefits — not volunteers or contractors — reflecting the organization's commitment to workforce stability.",
-      "outcome": "Roots patients with CHW engagement have 40% lower preventable hospitalization rates than demographically matched patients in the surrounding area, and significantly higher rates of completing preventive screenings. Source: Roots Community Health Center outcome reporting, 2024.",
-      "source": "Roots Community Health Center, UCSF Center for Excellence in Primary Care evaluation, 2024"
-    },
+    
     {
       "_type": "block",
       "_key": "m6h2f",
@@ -284,9 +276,9 @@
       "_key": "m6sg04",
       "title": "Rural Health Equity Gaps",
       "stats": [
-        {"_key": "m6st10", "value": "23%", "label": "Rural CAH Areas in MSSP ACOs", "context": "Only 23% of rural Critical Access Hospital service areas are covered by an MSSP ACO, compared to 71% of urban hospital referral regions. Rural patients are disproportionately in fee-for-service. Source: CMS, 2025.", "trend": "down"},
-        {"_key": "m6st11", "value": "138", "label": "Rural Hospital Closures Since 2010", "context": "138 rural hospitals have closed since 2010, leaving millions of rural Americans further from emergency, obstetric, and inpatient care. Source: Chartis Center for Rural Health, 2025.", "trend": "down"},
-        {"_key": "m6st12", "value": "62%", "label": "Rural Mental Health Provider Shortage", "context": "62% of rural counties have no psychiatrist — forcing rural residents to travel hours for mental health care or go without. Behavioral health comorbidities are a major driver of preventable hospitalizations. Source: HRSA, 2025.", "trend": "down"}
+        {"_key": "m6st10", "value": "65%", "label": "Nonmetro Counties Without a Psychiatrist", "context": "65% of nonmetropolitan U.S. counties had no psychiatrist. Source: Andrilla et al., American Journal of Preventive Medicine, 2018.", "trend": "down"},
+        {"_key": "m6st11", "value": "154", "label": "Rural Hospital Closures Since 2010", "context": "154 rural hospitals have closed or stopped inpatient care since 2010 (86 complete closures, 68 conversions). Source: UNC Sheps Center for Health Services Research.", "trend": "down"},
+        {"_key": "m6st12", "value": "Major", "label": "Behavioral Health Driver", "context": "Behavioral health comorbidities are a major driver of preventable hospitalizations, and rural residents often travel long distances for mental health care.", "trend": "down"}
       ]
     },
     {
@@ -300,32 +292,24 @@
       "_type": "block",
       "_key": "m6p018",
       "style": "normal",
-      "children": [{"_type": "span", "_key": "m6s018", "text": "Vermont's All-Payer Model includes an explicit health equity performance requirement — a condition not present in most VBC programs nationally. The AHEAD Model requires participating states to establish measurable health equity goals and report progress annually. Vermont's current equity focus areas include reducing rural-urban disparities in preventive care rates, improving mental health access in rural counties, and addressing the health needs of Vermont's growing refugee and immigrant populations.", "marks": []}],
+      "children": [{"_type": "span", "_key": "m6s018", "text": "Vermont's All-Payer Model (2018–2025) set statewide population-health goals — improving access to primary care, reducing deaths from suicide and drug overdose, and reducing the prevalence and morbidity of chronic disease — rather than explicit health equity targets. The AHEAD Model requires participating states to set health equity goals, but Vermont withdrew from AHEAD before its performance period began.", "marks": []}],
       "markDefs": []
     },
     {
       "_type": "block",
       "_key": "m6p019",
       "style": "normal",
-      "children": [{"_type": "span", "_key": "m6s019", "text": "Vermont's refugee and immigrant populations — concentrated primarily in Burlington, Winooski, and Rutland — face compounding health equity challenges: language barriers, cultural differences in health-seeking behavior, immigration status concerns, trauma histories from displacement and persecution, and limited familiarity with a healthcare system very different from those in their countries of origin. Vermont's Blueprint for Health has piloted culturally adapted CHW programs for refugee communities, but coverage remains incomplete.", "marks": []}],
+      "children": [{"_type": "span", "_key": "m6s019", "text": "Vermont's refugee and immigrant populations — concentrated primarily in Burlington, Winooski, and Rutland — face compounding health equity challenges: language barriers, cultural differences in health-seeking behavior, immigration status concerns, trauma histories from displacement and persecution, and limited familiarity with a healthcare system very different from those in their countries of origin.", "marks": []}],
       "markDefs": []
     },
     {
       "_type": "block",
       "_key": "m6p020",
       "style": "normal",
-      "children": [{"_type": "span", "_key": "m6s020", "text": "Vermont's Abenaki and other indigenous communities face health disparities that reflect both geographic isolation and historical trauma with healthcare institutions. The legacy of forced assimilation, medical experimentation, and involuntary sterilization programs has created well-founded distrust of the healthcare system that no appointment reminder or care coordinator can overcome. Rebuilding trust with indigenous communities requires sustained, community-led engagement over years — not program cycles.", "marks": []}],
+      "children": [{"_type": "span", "_key": "m6s020", "text": "Vermont's Abenaki and other indigenous communities face health disparities that reflect both geographic isolation and historical trauma with healthcare institutions. The legacy of forced assimilation and the state's eugenics program — including a 1931 sterilization law, for which the Vermont Legislature formally apologized in 2021 — has created well-founded distrust of the healthcare system that no appointment reminder or care coordinator can overcome. Rebuilding trust with indigenous communities requires sustained, community-led engagement over years — not program cycles.", "marks": []}],
       "markDefs": []
     },
-    {
-      "_type": "exampleBlock",
-      "_key": "m6ex02",
-      "eyebrow": "Vermont in Focus",
-      "title": "Vermont Department of Health — Racial and Ethnic Health Equity Dashboard",
-      "body": "Vermont has invested in a public-facing health equity dashboard that disaggregates health outcome data by race, ethnicity, income, and geography — making disparities visible to policymakers, providers, and communities. The dashboard tracks preventable hospitalization rates, chronic disease control metrics, maternal and infant health outcomes, and behavioral health utilization by population group. Vermont is one of only a handful of states with this level of equity data transparency at the state level.",
-      "outcome": "Vermont's equity dashboard has become a policy accountability tool — allowing advocates and legislators to track whether All-Payer Model investments are narrowing identified disparities, and to demand explanations when they are not. Source: Vermont Department of Health, Racial and Ethnic Health Equity Dashboard, 2025.",
-      "source": "Vermont Department of Health, 2025"
-    },
+    
     {
       "_type": "warningBlock",
       "_key": "m6wb02",
@@ -382,7 +366,7 @@
         {"_key": "m6stp21", "number": 1, "title": "Implement Systematic SDOH Screening", "description": "Adopt the CMS Accountable Health Communities screening tool or PRAPARE instrument as a standard clinical workflow for all attributed VBC patients. SDOH data that is not systematically collected cannot be incorporated into risk adjustment, care planning, or community investment decisions. Start with your highest-risk quartile and expand from there."},
         {"_key": "m6stp22", "number": 2, "title": "Disaggregate Your Quality Metrics", "description": "Disaggregate all quality metric performance data by race, ethnicity, income level, and geography before reporting aggregate performance. Organizations that only examine aggregate quality scores systematically miss equity disparities present in the underlying data — disparities that will worsen without targeted intervention."},
         {"_key": "m6stp23", "number": 3, "title": "Audit Your Risk Stratification Algorithms", "description": "If you use AI-powered risk stratification, conduct a demographic equity audit before the next contract cycle. Examine whether the model's accuracy varies by race, income, and geography. If it does, address it — through vendor recalibration, supplemental clinical judgment, or a different tool."},
-        {"_key": "m6stp24", "number": 4, "title": "Build a CHW Program Now", "description": "The CHW ROI evidence, Medicare's Community Health Integration codes (in place since 2024) and Medicaid CHW coverage in more than half of states make 2026 the right year to build or expand a CHW program; confirm your own state's Medicaid CHW policy first. Hire CHWs with lived experience of the specific communities and social challenges your highest-need patients face. Do not hire case managers and call them CHWs."},
+        {"_key": "m6stp24", "number": 4, "title": "Build a CHW Program Now", "description": "The CHW ROI evidence, Medicare's Community Health Integration codes (in place since 2024) and Medicaid CHW payment in many states (29 of 48 responding to KFF's 2022 survey) make 2026 the right year to build or expand a CHW program; confirm your own state's Medicaid CHW policy first. Hire CHWs with lived experience of the specific communities and social challenges your highest-need patients face. Do not hire case managers and call them CHWs."},
         {"_key": "m6stp25", "number": 5, "title": "Advocate for SDOH Risk Adjustment", "description": "Advocate explicitly for SDOH risk adjustment in every VBC contract negotiation with payers and in every CMS rulemaking comment you submit. The policy change required to fix the metric design problem will not happen without sustained, evidence-based advocacy from providers who are experiencing its consequences directly."}
       ]
     },
@@ -444,7 +428,7 @@
         "Social determinants of health account for 30 to 55 percent of health outcome variation, yet remain largely outside clinical care delivery.",
         "Three structural equity flaws in current VBC design: the panel selection problem, the metric design problem, and the investment allocation problem.",
         "SDOH risk adjustment is the technical fix for inequitable quality metrics — but the current CMS adjustment is insufficient in magnitude and scope.",
-        "Community health workers are the most powerful equity tool in VBC, with a 4-to-1 ROI and 22% reduction in preventable hospitalizations in high-need populations.",
+        "Community health workers are among the most promising equity tools in VBC; in a randomized trial, Penn's IMPaCT program returned $2.47 to Medicaid for every $1 invested.",
         "AI risk stratification tools can encode and automate historical discrimination — demographic equity audits before deployment are ethically and increasingly legally required.",
         "Disaggregating quality metrics by race, income, and geography is not optional — aggregate improvement can mask widening disparities beneath the average.",
         "Vermont signed on to AHEAD in January 2025 and withdrew in July 2026, before its performance period began; its reform now proceeds under state law (Act 68 of 2025), so AHEAD's equity requirements no longer apply to Vermont."

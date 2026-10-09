@@ -383,7 +383,7 @@
           "order": 99,
           "slug": "vbc-fundamentals-m1",
           "title": "Why the Way We Pay for Healthcare Is Breaking the System — And How Paying for Value Could Fix It",
-          "summary": "The United States spends more on healthcare than any nation on earth — yet ranks 37th in health outcomes. This module explains why that paradox exists, how the fee-for-service payment system created it, and how value-based care offers a fundamentally different path forward.",
+          "summary": "The United States spends more on healthcare than any nation on earth — yet trails comparable wealthy nations on life expectancy and preventable deaths. This module explains why that paradox exists, how the fee-for-service payment system created it, and how value-based care offers a fundamentally different path forward.",
           "estimatedMinutes": 18,
           "objectives": [
             {
@@ -410,7 +410,7 @@
           "contentBlocks": [
             {
               "type": "text",
-              "body": "Imagine paying a mechanic every time they touched your car — whether or not it ran better afterward. Now imagine that mechanic's salary depended entirely on how many parts they replaced, not on whether your car actually worked. You would quickly end up with a very expensive car that still broke down constantly. This, in essence, is how the United States pays for healthcare.\n\nThe US spent $4.5 trillion on healthcare in 2022 — roughly $13,493 per person, and 18.3 percent of the entire national economy. That is more than any other high-income country, by a wide margin. Switzerland, the second-highest spender, dedicates about 11.3 percent of its GDP to health. Germany spends 12.8 percent. Canada spends 12.2 percent.\n\nAnd yet — despite outspending every peer nation — the US ranks 37th in overall health outcomes according to the World Health Organization. Americans live shorter lives than citizens of 40 other countries. The US infant mortality rate is nearly double that of Finland. Preventable deaths from conditions like diabetes, hypertension, and heart disease occur at far higher rates here than in comparable wealthy nations."
+              "body": "Imagine paying a mechanic every time they touched your car — whether or not it ran better afterward. Now imagine that mechanic's salary depended entirely on how many parts they replaced, not on whether your car actually worked. You would quickly end up with a very expensive car that still broke down constantly. This, in essence, is how the United States pays for healthcare.\n\nThe US spent $4.5 trillion on healthcare in 2022 — roughly $13,493 per person, and 17.3 percent of the entire national economy (CMS). That is more than any other high-income country, by a wide margin: OECD's Health at a Glance 2025 puts U.S. per-capita spending at 2.5 times the OECD average, with Switzerland, Norway and Germany, the next-highest spenders, at about two-thirds of the U.S. level.\n\nAnd yet — despite outspending every peer nation — U.S. life expectancy, at 78.4 years in 2023, trailed the comparable-country average by 4.1 years (Peterson-KFF), and U.S. preventable mortality was 217 deaths per 100,000 against an OECD average of 145 (OECD). Preventable deaths from conditions like diabetes, hypertension, and heart disease occur at far higher rates here than in comparable wealthy nations."
             },
             {
               "type": "text",
@@ -466,7 +466,7 @@
             {
               "type": "text",
               "heading": "Category 2: Accountable Care Organizations and Shared Savings",
-              "body": "Accountable Care Organizations (ACOs) are networks of doctors, hospitals, and other providers that work together to coordinate care for a defined group of patients. The ACO is given a benchmark spending target. If the ACO spends less than the benchmark while maintaining quality, it shares in those savings. This model keeps the fee-for-service billing infrastructure but adds accountability for total cost of care.\n\nMedicare ACOs generated $1.87 billion in net savings for Medicare in 2022, according to CMS. As of 2024, more than 480 ACOs participate in the Medicare Shared Savings Program, covering over 11 million beneficiaries. Vermont's OneCare Vermont is an ACO that serves both Medicare and Medicaid populations — and is the centerpiece of the state's nationally recognized All-Payer Model."
+              "body": "Accountable Care Organizations (ACOs) are networks of doctors, hospitals, and other providers that work together to coordinate care for a defined group of patients. The ACO is given a benchmark spending target. If the ACO spends less than the benchmark while maintaining quality, it shares in those savings. This model keeps the fee-for-service billing infrastructure but adds accountability for total cost of care.\n\nMedicare ACOs generated more than $1.8 billion in net savings for Medicare in 2022, according to CMS. As of 2024, more than 480 ACOs participate in the Medicare Shared Savings Program, covering over 11 million beneficiaries. Vermont's OneCare Vermont is an ACO that serves both Medicare and Medicaid populations — and is the centerpiece of the state's nationally recognized All-Payer Model."
             },
             {
               "type": "text",
@@ -481,7 +481,7 @@
             {
               "type": "text",
               "heading": "Vermont: A National Laboratory for Value-Based Care",
-              "body": "Vermont is the only state in the nation operating an approved All-Payer Accountable Care Organization Model — a program that brings Medicare, Medicaid, and commercial insurance under a single set of quality and spending targets for the first time in American history. This makes Vermont uniquely important to anyone studying value-based care. What Vermont learns, the nation watches.\n\nThe Vermont All-Payer ACO Model was approved by CMS in 2016 and launched in January 2017. At its center is OneCare Vermont, a statewide ACO that contracts with hospitals, physicians, and community organizations across the state. OneCare Vermont currently serves approximately 240,000 Vermonters — nearly 40 percent of the state's population — through its attributed beneficiary program."
+              "body": "Vermont was the only state to operate an All-Payer Accountable Care Organization Model (performance years 2018–2025) — the first ACO program to bring Medicare, Medicaid, and commercial insurance under a single set of quality and spending targets. This makes Vermont uniquely important to anyone studying value-based care. What Vermont learns, the nation watches.\n\nThe Vermont All-Payer ACO Model was approved by CMS in 2016 and launched in January 2017. At its center is OneCare Vermont, a statewide ACO that contracts with hospitals, physicians, and community organizations across the state. By 2021, about 243,000 Vermonters — roughly 38 percent of the state's population — were attributed to OneCare (NORC)."
             },
             {
               "type": "text",
@@ -2320,7 +2320,7 @@
             {
               "type": "text",
               "heading": "Three Structural Equity Flaws in Current VBC Design",
-              "body": "Value-based care was intended to be an equity intervention — aligning incentives with population health outcomes should, in theory, help the patients who need the most help. The reality is more complicated. Three structural equity problems have been consistently documented in the VBC research literature. Understanding all three is essential for any leader who wants to build VBC programs that advance rather than undermine health equity.\n\nThe panel selection problem is the most empirically documented. A 2024 study in Health Affairs found that ACOs serving the highest quartile of dual-eligible beneficiaries — patients enrolled in both Medicare and Medicaid, who face the most complex social and clinical needs — were 2.3 times more likely to exit MSSP within three years than ACOs serving lower proportions of dual-eligible patients. The program's financial structure creates systematic pressure against serving the most vulnerable populations."
+              "body": "Value-based care was intended to be an equity intervention — aligning incentives with population health outcomes should, in theory, help the patients who need the most help. The reality is more complicated. Three structural equity problems have been consistently documented in the VBC research literature. Understanding all three is essential for any leader who wants to build VBC programs that advance rather than undermine health equity.\n\nThe panel selection problem is the most empirically documented. Because MSSP benchmarks and quality scores were built with little adjustment for social risk, ACOs serving high shares of dual-eligible beneficiaries — patients enrolled in both Medicare and Medicaid, who face the most complex social and clinical needs — face weaker financial returns from participation. CMS acknowledged that pressure when it added a health equity adjustment to ACO quality scoring (2023) and a Health Equity Benchmark Adjustment (2025)."
             },
             {
               "type": "callout",
@@ -2331,7 +2331,7 @@
             {
               "type": "text",
               "heading": "SDOH Risk Adjustment: Making the Metrics Fair",
-              "body": "The metric design problem — the failure of standard quality metrics to account for social determinants — is the most technically solvable of VBC's equity challenges. SDOH risk adjustment means modifying performance benchmarks to account for the social complexity of the patient population being served, so that providers are compared to peers serving similar populations rather than to the national average.\n\nCMS made its most significant commitment to SDOH risk adjustment in the 2022 MSSP final rule, which introduced a Health Equity Benchmark Adjustment that increases spending benchmarks for ACOs serving high proportions of patients with low-income subsidy status. This acknowledges that high-need populations cost more to manage effectively. However, the 3.5 percent adjustment ceiling is widely considered insufficient by health equity researchers — and it uses low-income subsidy status as an imperfect proxy for the full range of social complexity that drives outcome variation.\n\nCMS has committed to expanding SDOH risk adjustment methodology in the 2026 MSSP final rule, with proposals to incorporate Area Deprivation Index scores, Z-code utilization rates from EHR screenings, and community health worker encounter data as additional adjustment factors. These changes are meaningful but still incomplete. The policy change required to make VBC metrics truly equitable will require sustained advocacy from providers who are experiencing the consequences of inadequate adjustment directly."
+              "body": "The metric design problem — the failure of standard quality metrics to account for social determinants — is the most technically solvable of VBC's equity challenges. SDOH risk adjustment means modifying performance benchmarks to account for the social complexity of the patient population being served, so that providers are compared to peers serving similar populations rather than to the national average.\n\nCMS made its most significant commitment to SDOH risk adjustment in the CY2025 Physician Fee Schedule final rule, which created a Health Equity Benchmark Adjustment — starting in 2025 — that raises spending benchmarks for ACOs serving high proportions of beneficiaries who are dually eligible or receive the Part D low-income subsidy. This acknowledges that high-need populations cost more to manage effectively. Critics note that dual and low-income-subsidy status are imperfect proxies for the full range of social complexity that drives outcome variation.\n\nCMS has not adopted the broader factors researchers recommend — such as Area Deprivation Index scores, Z-code screening data, or community health worker encounter data — and the CY2026 Physician Fee Schedule moved the other way, removing the social determinants risk assessment from Medicare's G0136 code. The policy change required to make VBC metrics truly equitable will require sustained advocacy from providers who are experiencing the consequences of inadequate adjustment directly."
             },
             {
               "type": "text",
@@ -2356,7 +2356,7 @@
             {
               "type": "text",
               "heading": "Vermont's Equity Landscape: Progress and Persistent Gaps",
-              "body": "Vermont's All-Payer Model includes an explicit health equity performance requirement — a condition not present in most VBC programs nationally. The AHEAD Model requires participating states to establish measurable health equity goals and report progress annually. Vermont's current equity focus areas include reducing rural-urban disparities in preventive care rates, improving mental health access in rural counties, and addressing the health needs of Vermont's growing refugee and immigrant populations.\n\nVermont's refugee and immigrant populations — concentrated primarily in Burlington, Winooski, and Rutland — face compounding health equity challenges: language barriers, cultural differences in health-seeking behavior, immigration status concerns, trauma histories from displacement and persecution, and limited familiarity with a healthcare system very different from those in their countries of origin. Vermont's Blueprint for Health has piloted culturally adapted CHW programs for refugee communities, but coverage remains incomplete.\n\nVermont's Abenaki and other indigenous communities face health disparities that reflect both geographic isolation and historical trauma with healthcare institutions. The legacy of forced assimilation, medical experimentation, and involuntary sterilization programs has created well-founded distrust of the healthcare system that no appointment reminder or care coordinator can overcome. Rebuilding trust with indigenous communities requires sustained, community-led engagement over years — not program cycles."
+              "body": "Vermont's All-Payer Model (2018–2025) set statewide population-health goals — improving access to primary care, reducing deaths from suicide and drug overdose, and reducing the prevalence and morbidity of chronic disease — rather than explicit health equity targets. The AHEAD Model requires participating states to set health equity goals, but Vermont withdrew from AHEAD before its performance period began.\n\nVermont's refugee and immigrant populations — concentrated primarily in Burlington, Winooski, and Rutland — face compounding health equity challenges: language barriers, cultural differences in health-seeking behavior, immigration status concerns, trauma histories from displacement and persecution, and limited familiarity with a healthcare system very different from those in their countries of origin.\n\nVermont's Abenaki and other indigenous communities face health disparities that reflect both geographic isolation and historical trauma with healthcare institutions. The legacy of forced assimilation and the state's eugenics program — including a 1931 sterilization law, for which the Vermont Legislature formally apologized in 2021 — has created well-founded distrust of the healthcare system that no appointment reminder or care coordinator can overcome. Rebuilding trust with indigenous communities requires sustained, community-led engagement over years — not program cycles."
             },
             {
               "type": "text",
@@ -2457,17 +2457,17 @@
                 {
                   "icon": "ti-map",
                   "title": "AHEAD Model",
-                  "body": "CMS's State All Payer Health Equity Approaches and Development (AHEAD) model. Vermont is a participant. Aligns Medicare, Medicaid, and commercial payers around shared total cost of care targets at the state level."
+                  "body": "CMS's State All Payer Health Equity Approaches and Development (AHEAD) model. Vermont signed on in January 2025 but withdrew in July 2026, before its performance period began. AHEAD aligns Medicare, Medicaid, and commercial payers around shared total cost of care targets at the state level."
                 },
                 {
                   "icon": "ti-scale",
                   "title": "Equity in VBC",
-                  "body": "New CMS requirements for ACOs and MA plans to stratify quality data by race, ethnicity, and social risk — and to develop equity plans to close gaps."
+                  "body": "Equity policies CMS introduced in 2022–2024 — health equity plans in ACO REACH, a health equity adjustment in MSSP quality scoring, and a planned Medicare Advantage Health Equity Index reward — several of which CMS rolled back or did not implement in 2025."
                 },
                 {
                   "icon": "ti-home-heart",
                   "title": "Advanced Primary Care",
-                  "body": "CMS Primary Care First (PCF) and similar models that dramatically increase primary care revenue in exchange for total cost of care accountability."
+                  "body": "CMS Primary Care First (PCF, ended early in 2025) and similar models that increase primary care revenue in exchange for total cost of care accountability."
                 },
                 {
                   "icon": "ti-brain",
@@ -2484,8 +2484,8 @@
             },
             {
               "type": "audio_slot",
-              "label": "Vermont's AHEAD model: a participant's view",
-              "hint": "Interview someone from Vermont's ACO (OneCare Vermont) or the Green Mountain Care Board about participating in the AHEAD model, what multi-payer alignment means in practice, and how Vermont's all-payer approach differs from single-payer Medicare models. Recommended: 8–12 minutes."
+              "label": "Vermont and AHEAD: a participant's view",
+              "hint": "Interview someone from Vermont's ACO (OneCare Vermont) or the Green Mountain Care Board about the All-Payer Model experience, Vermont's 2026 decision to withdraw from AHEAD, what multi-payer alignment means in practice, and how Vermont's all-payer approach differs from single-payer Medicare models. Recommended: 8–12 minutes."
             }
           ],
           "quiz": {

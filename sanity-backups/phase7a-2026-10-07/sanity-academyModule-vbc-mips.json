@@ -1,0 +1,440 @@
+{
+  "_createdAt": "2026-05-27T19:21:49Z",
+  "_id": "academyModule-vbc-mips",
+  "_rev": "oEdzoBJnHz58jGhpZT04MW",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-27T19:21:49Z",
+  "body": [
+    {
+      "_key": "mips-intro-p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "When Congress passed the Medicare Access and CHIP Reauthorization Act (MACRA) in 2015 with rare bipartisan support, it created the most significant restructuring of Medicare physician payment since RBRVS. The law created two pathways: the Merit-Based Incentive Payment System (MIPS) for physicians who remain in traditional fee-for-service Medicare, and incentivized participation in Advanced Alternative Payment Models (APMs). MIPS was designed as a transitional mechanism — a way to introduce performance-based payment adjustments while most physicians were still operating in fee-for-service arrangements. By 2023, however, MIPS had become a massive compliance exercise that consumed billions of dollars in administrative effort while delivering payment adjustments too small to change behavior and performance scores too inflated to differentiate quality."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mips-h2-origins",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "MACRA's Architecture: MIPS vs. APMs"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "mips-p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "MACRA consolidated three legacy CMS quality programs — the Physician Quality Reporting System (PQRS), the Value-Based Payment Modifier, and Meaningful Use — into MIPS, streamlining reporting into a single framework. Simultaneously, it created the APM track: physicians in qualifying Advanced APMs receive a 5% lump-sum bonus on Medicare Part B payments through 2024, transitioning to higher fee schedule updates after 2025. The law was explicit in its intent — the APM track was the destination, MIPS was the on-ramp. CMS projected that most physicians would migrate toward APMs within a decade. That migration has been slower and more uneven than anticipated, with most physicians remaining in MIPS years into the program."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mips-p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Not all clinicians are subject to MIPS. Physicians below the low-volume threshold — defined as $90,000 or less in Part B allowed charges, 200 or fewer Part B patients, or 200 or fewer covered professional services in a year — are excluded. Small rural practices, new clinicians in their first year of Medicare billing, and clinicians who participate substantially in APMs may also be excluded. In recent years, CMS has exempted an increasing share of eligible clinicians, with roughly 30-40% qualifying for various MIPS exclusions, which itself reflects the program's limited reach into the physician universe."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mips-h2-categories",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Four Performance Categories"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "mips-p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "MIPS calculates a composite performance score (MIPS Final Score) based on four categories. The weights have shifted over the program's history; for the 2023 performance year the categories and weights were as follows."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mips-h3-quality",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "1. Quality (30% Weight)"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "mips-p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinicians select 6 quality measures from a library of hundreds, including at least one outcome measure or a high-priority measure if no outcome measure is applicable to their practice. Quality measures cover domains including preventive care, chronic disease management, patient safety, and patient experience. The quality category score is calculated by benchmarking individual clinician performance against national peer performance on each measure, with scores from 1 to 10 points per measure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mips-p6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The measure selection flexibility is both a feature and a bug. Clinicians naturally select measures on which they perform well, a phenomenon known as cherry-picking measures. Because each clinician can choose different measures from the library, cross-clinician comparison is severely limited. Studies published in JAMA have shown that MIPS quality scores are more strongly predicted by specialty and measure selection strategy than by independently-assessed clinical quality. A dermatologist and an endocrinologist reporting different measures cannot be meaningfully compared, rendering the quality category a compliance exercise rather than a performance signal."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mips-h3-cost",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "2. Cost (30% Weight)"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "mips-p7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The cost category requires no clinician reporting — CMS calculates it entirely from claims data. CMS uses two primary cost measures: Total Per Capita Cost (TPCC), which measures total Medicare spending for attributed beneficiaries across all services, and Medicare Spending per Beneficiary (MSPB), which measures spending in the episode surrounding a hospital admission. Specialty-specific episode cost measures covering conditions like hip and knee replacement, cataract surgery, and ischemic vascular disease have been added over time. Attribution to clinicians for cost purposes follows complex rules that have been criticized for attributing spending to clinicians who have limited control over the care driving costs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mips-h3-ia",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "3. Improvement Activities (15% Weight)"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "mips-p8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Improvement Activities category is the most flexible of the four. Clinicians attest to completing activities from a menu of over 100 options covering care coordination, beneficiary engagement, patient safety, population management, and behavioral and mental health integration. Activities are weighted high or medium; completing two high-weighted activities or four medium-weighted activities achieves the maximum score. Most clinicians can achieve maximum credit in this category simply by attesting to activities already embedded in their standard practice. Clinicians in PCMHs, rural health clinics, or health professional shortage areas receive automatic full credit, further diluting any performance signal."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mips-h3-pi",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "4. Promoting Interoperability (25% Weight)"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "mips-p9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Promoting Interoperability (PI) category — formerly Meaningful Use and then Advancing Care Information — measures EHR adoption and use. Clinicians must use a 2015 Edition Certified EHR Technology and report on objectives including e-prescribing, Health Information Exchange (HIE) participation, patient access to electronic records, and public health reporting including immunization registry submission. The PI category has the heaviest administrative infrastructure requirements and generates the most hardship exception requests, particularly from small practices and specialists whose clinical workflows do not map cleanly onto electronic information exchange measures."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mips-h2-scoring",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Payment Adjustments: How Scores Translate to Dollars"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "mips-p10",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "MIPS is budget-neutral: the bonuses paid to high performers are funded by penalties on low performers. The maximum payment adjustment in MIPS has scaled up over the program's history: plus or minus 4% in 2019, plus or minus 5% in 2020, plus or minus 7% in 2021, and plus or minus 9% from 2022 onward. An additional exceptional performance bonus of up to 10% extra is available for clinicians scoring above a high-performance threshold, set at 89 points in recent performance years."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mips-p11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The critical problem with budget neutrality in a system with widespread grade inflation is that penalties fall on a thin tail of low performers while bonuses are diluted across the large majority who score well. For the 2021 performance year, approximately 75% of MIPS-eligible clinicians received a positive payment adjustment; only 9% received a negative adjustment. The average positive adjustment was less than 1% of Medicare billings. For a physician billing $400,000 in Medicare annually, a 0.5% positive adjustment represents $2,000 — a trivially small incentive relative to the compliance cost of participation, fundamentally undermining MIPS's behavioral theory of change."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mips-h2-grade-inflation",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Grade Inflation and the Performance Score Validity Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "mips-p12",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The distribution of MIPS Final Scores has consistently clustered in the high range. In the 2021 performance year, the median score was 89.5 out of 100, and over 30% of eligible clinicians scored above 90. The scoring system rewards reporting completion more than performance excellence: a clinician who reports all required measures receives substantial credit regardless of whether their actual clinical outcomes are superior to peers. The benchmarking methodology uses peer performance distributions, but measure cherry-picking and low data completeness thresholds allow high scores without high performance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mips-p13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "A 2019 JAMA Internal Medicine study by Liao and colleagues found that MIPS scores were poorly correlated with independently measured quality metrics. High MIPS scores did not predict better performance on the CMS Overall Quality Star Rating or on HEDIS measures. The authors concluded that MIPS was measuring reporting compliance rather than care quality. A subsequent 2022 analysis in Health Affairs confirmed these findings, showing that the correlation between MIPS performance scores and patient outcomes was statistically indistinguishable from zero for most conditions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mips-h2-mvp",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "MIPS Value Pathways: The Reform Within the Reform"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "mips-p14",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Recognizing MIPS's measure proliferation and flexibility problems, CMS introduced MIPS Value Pathways (MVPs) beginning in 2023. MVPs organize a curated set of measures — quality, cost, improvement activities, and PI — around a specialty or clinical condition. Examples include the Rheumatology MVP, the Stroke Care and Prevention MVP, the Anesthesia MVP, and the Preventive Care and Vaccination MVP. By constraining measure choice within a clinically coherent bundle, MVPs aim to enable more meaningful peer comparison, reduce cherry-picking, and produce a quality signal that is more interpretable to patients and purchasers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mips-p15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "MVPs are CMS's attempt to make MIPS serve as a meaningful on-ramp to APMs by aligning measures with the quality frameworks used in specialty-specific Alternative Payment Models. The transition to MVPs is voluntary initially but CMS has signaled intent to deprecate traditional MIPS reporting options over time. Whether MVPs meaningfully address MIPS's fundamental limitations — the small payment adjustments, the administrative burden, the grade inflation — remains contested, since the structural problems are architectural, not just measurement design issues."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mips-h2-burden",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Administrative Burden: The Hidden Cost of MIPS Compliance"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "mips-p16",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "A 2019 RAND Corporation analysis estimated that the average MIPS-eligible physician practice spent $12,811 per clinician per year on MIPS reporting activities. For small practices, this burden was proportionally larger. A solo primary care physician spending $12,000 annually on MIPS compliance in exchange for a potential $2,000-$4,000 payment adjustment is running a negative expected-value proposition — unless the compliance activities coincidentally generate clinical or operational value independent of the financial incentive, which is rarely their design intent."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mips-p17",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The MIPS reporting ecosystem has spawned a cottage industry of vendors — qualified registries, certified EHR vendors, and Qualified Clinical Data Registries (QCDRs) — that help practices navigate reporting requirements. This intermediary layer absorbs resources without directly improving patient care. Small and independent practices are at particular disadvantage: they lack the data infrastructure, analytics capabilities, and compliance staff that large health systems deploy, yet face the same reporting requirements. The resulting consolidation pressure — small practices merging with health systems partly to share MIPS compliance costs — has implications for physician autonomy and market competition that extend well beyond the quality measurement program."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mips-h2-failure",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Why MIPS Has Failed to Drive Transformation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "mips-p18",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The core problem with MIPS as a value-based care mechanism is that it adjusts the price per RVU without changing the underlying volume-based payment model. A physician who scores 95 on MIPS and receives a 1.5% payment bonus is still being paid per encounter, per procedure, per visit. The incentive signal is additive to the fee-for-service signal rather than substitutive of it. Genuine transformation requires payment models that change the fundamental calculus — paying for population health management, care coordination, and outcomes rather than for individual service delivery events. MIPS layers a thin quality and efficiency incentive on top of a volume-based system while leaving the volume-based system intact."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "mips-synthesis",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "MIPS represents a well-intentioned but structurally limited approach to physician payment reform. Its architects faced a genuine dilemma: disrupting the entire fee-for-service system simultaneously was politically impossible, so MIPS was designed as a soft transition that would maintain most FFS revenue while layering on quality incentives. The result is a system that imposes substantial costs on physicians and health systems, generates data of questionable validity, provides trivially small incentive signals, and leaves the underlying FFS payment model intact. The lesson for value-based care reformers is clear: incremental reforms layered on top of fee-for-service tend to inherit its distortions rather than replace them. Genuine transformation requires moving the center of gravity — from per-service payment to population-based accountability — and MIPS, for all its complexity, does not do that."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseTitle": "Value-Based Care: From Fee-for-Service to Outcomes",
+  "estimatedReadTime": 16,
+  "level": "Intermediate",
+  "moduleNumber": 3,
+  "pillar": "Economics",
+  "slug": {
+    "_type": "slug",
+    "current": "vbc-mips-payment-system"
+  },
+  "summary": "The Merit-Based Incentive Payment System, created by MACRA in 2015, was designed to move Medicare physician payment toward quality and value by adjusting payments based on composite performance scores. In practice, MIPS has generated enormous administrative burden, achieved widespread grade inflation, and failed to drive the structural transformation it promised. This lesson dissects the MIPS architecture, the four performance categories, the payment adjustment mechanics, and the escalating critique that MIPS represents a costly incremental reform that has crowded out more fundamental change.",
+  "title": "MIPS: The Merit-Based Incentive Payment System"
+}

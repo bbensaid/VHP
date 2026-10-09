@@ -1,0 +1,504 @@
+{
+  "_createdAt": "2026-05-31T07:02:07Z",
+  "_id": "vbc-future-directions",
+  "_rev": "glqH7a4yvZFQerxZdJyUG7",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T07:02:07Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A Field at an Inflection Point"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Value-based care is no longer an experiment at the margins of American healthcare — it is the explicit direction of federal policy. But \"the future of VBC\" is not a smooth, predictable curve. The years 2025 and 2026 brought one of the sharpest strategic pivots in the history of the CMS Innovation Center (CMMI), the federal body that designs and tests new payment models. Understanding where VBC is heading means understanding both the durable trends and the recent reset that reshaped them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "On May 13, 2025, CMMI launched a new strategy organized around three pillars: promoting evidence-based prevention, empowering people to achieve their health goals, and driving choice and competition. All three sit on a single foundational principle the Center repeated insistently — protecting the federal taxpayer. The Innovation Center declared it would focus on the models that show the greatest promise for generating savings while improving quality, signaling a smaller, more demanding portfolio than the sprawling set of demonstrations that came before."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This matters because it changes what \"value\" is being optimized for. The previous era emphasized broad participation and equity-focused expansion. The current era emphasizes demonstrable financial performance, downside risk, prevention built into every model, and competition among providers. The destination — paying for outcomes instead of volume — is unchanged. The route, the guardrails, and the rhetoric have shifted considerably."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: The CMS Innovation Center (CMMI) is the federal \"laboratory\" for payment reform. Its strategy determines which value-based models exist, who can join them, and how much financial risk providers must bear — making CMMI’s direction the single best predictor of where VBC is heading."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Prevention, empowering people, and choice & competition — all anchored to protecting the taxpayer — launched May 13, 2025 (CMS Innovation Center)",
+          "label": "CMMI 2025 Strategy",
+          "value": "3 pillars"
+        },
+        {
+          "_key": "s2",
+          "context": "The Long-term Enhanced ACO Design (LEAD) Model is a 10-year initiative beginning January 1, 2027 (CMS)",
+          "label": "LEAD Model Lifespan",
+          "value": "10 years"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Portfolio Reset: What Ended and Why"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The clearest signal of the new direction was what CMMI chose to stop doing. In 2025 the Innovation Center terminated several models before their originally scheduled end dates — most notably Primary Care First (PCF) and Making Care Primary (MCP). On its face, ending primary-care models looks like a retreat from primary care. CMMI framed it as the opposite: a way to move beneficiaries into more permanent, scalable programs — above all the Medicare Shared Savings Program (MSSP), the agency’s flagship and permanent accountable care initiative."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The logic of the reset is that CMMI will narrow its portfolio to models with clearer savings logic, more defined provider obligations, and cleaner policy goals, while keeping primary care and accountable care as the foundation. Future models will place greater weight on downside financial risk — meaning providers can lose money, not just share in savings — and on measurable reductions in unnecessary utilization. The result is a smaller portfolio that asks more of the participants who remain."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2w1",
+      "_type": "warningBlock",
+      "message": "The earlier ambition to place essentially all Traditional Medicare beneficiaries (and the vast majority of Medicaid beneficiaries) in accountable care relationships by 2030 has not been restated under the 2025 strategy. The emphasis shifted from maximizing participation to demonstrating savings — a meaningful change in how success is defined.",
+      "title": "A Notable Absence: The 2030 Goal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For providers, the reset created real disruption. Organizations built around models that were terminated early had to find a new home, typically MSSP or a successor demonstration. This is the recurring tension of payment reform: the very experimentation that drives progress also creates instability for the practices that bet on a given model. Reading CMMI’s strategy is therefore not academic — it directly determines which contracts a health system can sign next year."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "From ACO REACH to LEAD: The Next Generation of Risk"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "No transition better illustrates the new era than the end of ACO REACH and the rise of its successor. The ACO REACH (Realizing Equity, Access, and Community Health) Model, launched in 2023, was the most advanced risk-bearing accountable care model in Traditional Medicare: it paired prospective, population-based payments with two-sided financial risk and provider-led governance. It will run for four performance years — 2023 through 2026 — and then conclude on December 31, 2026."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "In its place, CMMI announced the Long-term Enhanced ACO Design (LEAD) Model, a 10-year initiative with Performance Year 1 beginning January 1, 2027. The unusually long time horizon is itself the point: it signals that CMMI wants stable, durable risk arrangements rather than short demonstrations that expire and strand their participants. The obvious candidates for LEAD are the organizations already in ACO REACH — they have the risk experience, the contracts, and an existing model ending exactly when LEAD begins. REACH organizations that do not move into LEAD would revert to MSSP or to fee-for-service."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3steps1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "The model concludes on December 31, 2026 after its final performance year — it does not continue in any form.",
+          "title": "ACO REACH ends"
+        },
+        {
+          "_key": "step2",
+          "description": "The 10-year Long-term Enhanced ACO Design Model starts January 1, 2027, designed as the durable successor for risk-bearing ACOs.",
+          "title": "LEAD begins"
+        },
+        {
+          "_key": "step3",
+          "description": "Experienced REACH ACOs can apply to LEAD; those that do not must fall back to MSSP or to traditional fee-for-service.",
+          "title": "Organizations choose a path"
+        },
+        {
+          "_key": "step4",
+          "description": "Even before sunset, PY2026 REACH introduced caps on risk-score growth and reduced the weight of the regional benchmark — previewing the more demanding LEAD era.",
+          "title": "Tighter guardrails apply"
+        }
+      ],
+      "title": "How the REACH-to-LEAD Transition Works"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2026 updates to REACH preview the direction LEAD will extend. CMS introduced caps on early-year risk-score growth (with a higher ceiling for High-Needs ACOs) and a cumulative cap of 3% on risk-score growth from 2019 through 2026, and it reduced the weight of the regional benchmark — shifting Standard ACOs toward a 60/40 blend favoring historical baselines. CMS also renamed the model’s Health Equity Benchmark Adjustment to the \"population adjustment,\" reframing it as an account for the share of beneficiaries who are dually eligible or receive the Part D Low-Income Subsidy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Prevention, Patient Empowerment, and Competition"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The three pillars of the 2025 strategy are not slogans — each carries concrete design commitments that will shape the models providers actually operate under. The most striking is the prevention pillar: CMMI promised that prevention will be part of every model it tests, with mechanisms for providers to offer services such as exercise and nutritional support that promote healthier lifestyles. This embeds population health and upstream intervention into the structure of payment, rather than treating it as an optional add-on."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The empowerment pillar centers on data and incentives: models are expected to better connect people to their own health data, unlock data access across all models, and align financial incentives so patients are active participants rather than passive recipients. The choice-and-competition pillar aims to broaden participation in alternative payment models — with explicit attention to independent and rural providers, the practices most at risk of being squeezed out of a market dominated by large consolidated systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Prior VBC Emphasis",
+        "points": [
+          "Maximize participation in accountable care",
+          "Broad equity-focused expansion goals",
+          "Many parallel demonstration models",
+          "Upside-heavy, lower-risk on-ramps",
+          "Target of ~all Medicare beneficiaries in ACOs by 2030"
+        ]
+      },
+      "right": {
+        "label": "2025–2026 CMMI Emphasis",
+        "points": [
+          "Demonstrate measurable savings to taxpayers",
+          "Prevention built into every model",
+          "Smaller, more demanding portfolio",
+          "Greater weight on downside financial risk",
+          "No restated 2030 universal-participation target"
+        ]
+      },
+      "title": "How the Emphasis Shifted"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What This Means for the Decade Ahead"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Pulling the threads together, several durable trends emerge from the noise of any single administration’s rebranding. First, risk is going up. The trajectory from shared-savings-only arrangements toward two-sided risk and long-horizon models like LEAD is consistent across strategies — providers will increasingly be accountable for total cost and outcomes, not merely rewarded for bonus performance. Second, primary care and accountable care remain the foundation even as the specific models churn; the MSSP, as a permanent program, is the stable anchor toward which beneficiaries are repeatedly funneled."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Third, prevention and patient-reported data are moving from periphery to core. A strategy that puts prevention in every model, combined with the expansion of patient-reported outcome measures across the portfolio, means the definition of \"value\" is broadening beyond cost and clinical metrics to include what patients experience and whether illness is avoided in the first place. Fourth, the politics of value-based care are real and consequential: strategies, model names, and benchmarks change with administrations, and successful organizations build the underlying capabilities — risk management, data infrastructure, care coordination — that transfer across whatever model is in vogue."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "Chasing individual payment models is like trying to catch each wave at the beach — exhausting and unpredictable, because waves come and go. Building core value-based capabilities is like learning to swim: once you can manage financial risk, use your data, and coordinate care, you stay afloat no matter which wave (REACH, LEAD, MSSP, the next acronym) arrives.",
+      "concept": "Adapting to a changing VBC model landscape"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For a state like Vermont — which has pursued some of the nation’s most ambitious payment reform through all-payer accountable care — these federal currents are not abstract. The fate of national models, the rise of long-horizon designs like LEAD, and the prevention-first framing all shape what is possible at the state level. The organizations that will thrive are not those that guess the next model correctly, but those that build the durable muscle of taking accountability for a population’s health and cost — the one capability every version of value-based care demands."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "On May 13, 2025, the CMS Innovation Center (CMMI) launched a new strategy built on three pillars — evidence-based prevention, empowering people, and choice & competition — all anchored to the principle of protecting the federal taxpayer.",
+        "CMMI reset its portfolio toward fewer, more demanding models with clearer savings logic and greater downside financial risk, terminating Primary Care First and Making Care Primary early and funneling beneficiaries toward the permanent Medicare Shared Savings Program (MSSP).",
+        "The earlier goal of placing essentially all Traditional Medicare beneficiaries in accountable care relationships by 2030 has not been restated, marking a shift from maximizing participation to demonstrating savings.",
+        "ACO REACH — the leading two-sided-risk model in Traditional Medicare — runs through performance year 2026 and ends December 31, 2026.",
+        "Its successor, the Long-term Enhanced ACO Design (LEAD) Model, is a 10-year initiative beginning January 1, 2027; REACH organizations not moving into LEAD revert to MSSP or fee-for-service.",
+        "PY2026 REACH previewed the tougher era with caps on risk-score growth (a 3% cumulative cap from 2019–2026), a reduced regional-benchmark weight (60/40 for Standard ACOs), and the renaming of the Health Equity Benchmark Adjustment to the \"population adjustment.\"",
+        "CMMI committed that prevention will be part of every model it tests, and that models will unlock patient data access and align incentives to empower patients — broadening the definition of \"value.\"",
+        "The durable trends — rising risk, primary care as foundation, prevention and patient-reported data at the core, and politically volatile model names — mean success comes from building transferable capabilities, not betting on any single model."
+      ]
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] CMS Innovation Center: \"Strategy to Make America Healthy Again\" — https://www.cms.gov/priorities/innovation/about/cms-innovation-center-strategy-make-america-healthy-again — three pillars (prevention, empowering people, choice & competition); prevention in every model; protect-the-taxpayer foundation; launched May 13, 2025."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] AHA News: \"CMS Innovation Center launches new strategic plan\" (May 13, 2025) — https://www.aha.org/news/headline/2025-05-13-cms-innovation-center-launches-new-strategic-plan — confirms the three-pillar strategy and launch date."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Norton Rose Fulbright: \"CMS Innovation Center’s 2025–2026 portfolio reset\" — https://www.nortonrosefulbright.com/en/knowledge/publications/763c0ae5/cms-innovation-centers-2025-2026-portfolio-reset — narrowing to savings-logic models, greater downside risk, primary/accountable care as foundation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] HealthManagement: \"CMS Announces New Innovation Agenda\" — https://www.healthmanagement.com/blog/cms-announces-new-innovation-agenda-heres-what-you-need-to-know/ — early termination of PCF and MCP; movement of beneficiaries into MSSP; no restated 2030 universal-ACO goal."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Healthcare Dive: \"Medicare unveils successor to ACO REACH\" — https://www.healthcaredive.com/news/aco-lead-medicare-accountable-cms-reach-replacement/808356/ — ACO REACH ends Dec 31, 2026; LEAD Model is a 10-year initiative starting Jan 1, 2027."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] CMS: \"ACO REACH Model Performance Year 2026 Model Update – Quick Reference\" — https://www.cms.gov/priorities/innovation/aco-reach-model-performance-year-2026-model-update-quick-reference — PY2026 risk-score caps (3% cumulative 2019–2026), 60/40 benchmark blend, \"population adjustment\" rename."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] ATI Advisory: \"ACO REACH Sunset: Operational Scenarios and Strategic Considerations for 2027\" — https://atiadvisory.com/resources/aco-reach-sunset-operational-scenarios-and-strategic-considerations-for-2027/ — REACH performance years 2023–2026; transition paths to LEAD, MSSP, or fee-for-service."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "value-based-care",
+  "order": 13,
+  "slug": {
+    "_type": "slug",
+    "current": "vbc-future-directions"
+  },
+  "title": "Where Value-Based Care Is Heading: Primary Care, Risk & the Next Decade"
+}

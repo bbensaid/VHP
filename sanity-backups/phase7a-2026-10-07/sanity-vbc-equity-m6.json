@@ -1,0 +1,508 @@
+{
+  "_createdAt": "2026-05-31T06:38:08Z",
+  "_id": "vbc-equity-m6",
+  "_rev": "u6HIGXCWiHyy7dtg521O2x",
+  "_type": "academyModule",
+  "_updatedAt": "2026-10-08T00:15:26Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Equity Gap That Value-Based Care Must Confront"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Value-based care was designed to improve quality while reducing costs — a goal that sounds universal but has been implemented in ways that systematically exclude or disadvantage the people who most need better care. The promise of VBC is that if we pay for outcomes rather than volume, the entire health system will orient toward keeping people healthy and intervening effectively when they get sick. But that promise breaks down when the populations most likely to get sick are also the populations whose providers are most financially penalized for serving them, and whose social circumstances make achieving measured outcomes hardest."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Health disparities in the United States are pervasive, well-documented, and stubbornly persistent. Black Americans have shorter life expectancies than white Americans, higher rates of preventable hospitalizations, worse outcomes for nearly every major chronic disease, and less access to high-quality specialty care. Hispanic Americans face systematic barriers to accessing care due to language, immigration status, and geographic concentration in underserved communities. Rural Americans — regardless of race — face provider shortages, longer travel distances to specialists, and hospital closures that have accelerated over the past decade. These are not statistical abstractions; they are the lived experiences of tens of millions of Americans who depend on a healthcare system that was not designed with them in mind."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Research consistently estimates that social determinants of health — factors like income, education, housing quality, food security, neighborhood safety, and transportation access — drive between 50 and 80 percent of health outcomes. Clinical care accounts for roughly 20 percent. This means that value-based programs focused exclusively on clinical quality metrics are, at best, optimizing a minority of the drivers of health. A VBC system that ignores social determinants is like a building code that focuses only on the foundation while ignoring whether the occupants have heat, water, and a safe neighborhood."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Social determinants of health — income, housing, education, food security, transportation, and neighborhood safety — account for an estimated 50–80% of health outcomes. A value-based care system that ignores these upstream factors cannot achieve equitable health improvement, regardless of how well it optimizes clinical delivery."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Up to 80% of health outcomes are driven by social determinants rather than clinical care — CMS SDOH Framework 2025",
+          "label": "Health Outcomes from Social Factors",
+          "value": "80%"
+        },
+        {
+          "_key": "s2",
+          "context": "Life expectancy gap between Black and white Americans persists at approximately 5 years — CDC National Center for Health Statistics 2023",
+          "label": "Black-White Life Expectancy Gap",
+          "value": "5 Years"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Current VBC Design Can Worsen Disparities"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The architecture of most value-based payment programs contains features that can actively worsen health disparities, even when the programs' intentions are positive. The clearest example is financial benchmarking based on historical costs. When ACOs or hospitals have their savings targets set relative to their own historical spending, providers who historically underserved low-income populations — spending less not because of efficiency but because patients couldn't afford care — will have lower baselines and therefore must improve more to earn bonuses. Conversely, providers who historically overspent may generate \"savings\" simply by stopping unnecessary high-cost care, even without improving outcomes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Quality metrics in VBC programs are similarly biased by the populations they measure. Preventive care rates, disease management outcomes, and patient experience scores are all sensitive to social determinants that providers cannot control. A physician practicing in a food desert who consistently struggles to improve her patients' HbA1c levels despite excellent clinical care faces the same performance benchmark as a physician in an affluent community where patients can afford fresh food, have stable employment, and can take time off to manage their chronic conditions. Without social risk adjustment, the quality measurement system punishes the former and rewards the latter."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Provider network and geographic access issues compound these problems. VBC programs are most effective when patients have consistent, ongoing relationships with their primary care providers — the foundation of care coordination and preventive care. But underserved communities have higher rates of safety-net provider dependence, federally qualified health center (FQHC) utilization, and emergency department use as primary care. These non-standard care patterns make attribution difficult in ACO models and reduce the effectiveness of care coordination interventions designed around assumptions of regular primary care visits."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2w1",
+      "_type": "warningBlock",
+      "message": "Value-based care programs that penalize providers for serving disadvantaged populations create incentives for \"cream skimming\" — the strategic avoidance of high-risk, high-complexity, socially disadvantaged patients in favor of healthier, wealthier ones. When financial models reward efficiency over equity, providers who serve the most vulnerable patients can face the steepest penalties, creating pressure to deprioritize or exclude these populations from VBC arrangements.",
+      "title": "The \"Cream Skimming\" Risk"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Social Determinants Framework in Practice"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Addressing social determinants within a VBC framework requires moving beyond clinical-only interventions. Several models have demonstrated that systematic SDOH screening and community-based intervention — when integrated with clinical care delivery — can improve both health outcomes and financial performance. The logic is compelling: a patient who loses her apartment will generate emergency department visits, hospitalizations, and uncontrolled chronic disease management costs that dwarf the cost of housing support. If the VBC arrangement captures the savings from those avoided costs, investing in housing support can be financially rational, not just compassionate."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Camden Coalition of Healthcare Providers in Camden, New Jersey pioneered the concept of \"hotspotting\" — identifying the highest-cost, most frequently hospitalized patients and providing intensive community-based support to address both clinical and social needs. By targeting the top 1 percent of cost drivers with wraparound services including housing assistance, transportation, medication management, and care coordination, the Coalition demonstrated significant reductions in hospital utilization. The model has since been replicated in dozens of communities and influenced the design of complex care management programs in Medicare and Medicaid."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Vermont Blueprint for Health, which has operated since 2008 and covers all payers in Vermont, integrates community health teams — social workers, care coordinators, community health workers — with primary care practices. These teams address SDOH needs alongside clinical needs, with a shared data system that allows providers across settings to track patients' social circumstances alongside their medical records. Vermont's model has been associated with reduced emergency department utilization, slower cost growth, and improved quality scores — providing one of the most comprehensive demonstrations that SDOH integration can work at a statewide population level."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "The Accountable Health Communities (AHC) Model, launched by CMMI in 2017, tested whether systematically identifying and addressing health-related social needs — through screening, referral, and community navigation — could reduce Medicare and Medicaid utilization and costs.\nThe model operated across over 30 bridge organizations that screened over 800,000 beneficiaries for five core social needs: housing instability, food insecurity, transportation difficulties, utility needs, and interpersonal safety. Participants were randomized to awareness (referral information only), assistance (community navigation), and alignment (coordinating community services). Results showed that community navigation significantly reduced inpatient admissions and emergency department visits for beneficiaries with at least one unmet social need, validating the clinical and financial case for integrating SDOH screening into Medicare care delivery.",
+      "title": "CMS Accountable Health Communities Model"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What an Equity-Centered VBC System Looks Like"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Building a VBC system that works for everyone requires changes at multiple levels: the data infrastructure for measuring equity, the payment architecture that removes penalties for serving disadvantaged populations, the workforce that can address social and clinical needs together, and the community partnerships that connect healthcare systems to social services. None of these changes is simple, and all of them require sustained policy commitment across multiple administrations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "On measurement, equity-centered VBC requires stratifying all quality measures by race, ethnicity, income, disability status, and social risk factor status — and holding providers accountable for reducing within-panel disparities, not just improving average performance. CMS has moved in this direction with the Health Equity Index for Medicare Advantage and has proposed measure stratification requirements for the Hospital Value-Based Purchasing program starting in 2026. But the data infrastructure for consistent race and ethnicity reporting in healthcare claims remains incomplete, and many providers cannot accurately stratify their own quality data by social characteristics."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "On workforce, community health workers (CHWs) have emerged as one of the highest-value tools for bridging clinical care and social needs. CHWs are trusted community members who provide health education, navigation, care coordination, and social support — often in patients' homes and in community settings rather than clinical offices. In the CY2024 Physician Fee Schedule, CMS created Medicare's first Community Health Integration codes (G0019, G0022) for CHW services furnished under a billing practitioner's supervision; Medicaid coverage of CHW services remains a state option, available since 2014 and adopted by more than half of states. This represents a significant structural change that could enable systematic SDOH intervention at scale."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Require all quality metrics to be reported and benchmarked by race, ethnicity, income, and social risk factor status — rewarding disparity reduction, not just average performance improvement.",
+          "title": "Stratified Quality Measurement"
+        },
+        {
+          "_key": "step2",
+          "description": "Adjust payment benchmarks and quality thresholds to account for patients' social circumstances, removing the financial penalty for serving disadvantaged populations.",
+          "title": "Social Risk Adjustment"
+        },
+        {
+          "_key": "step3",
+          "description": "Require systematic screening for social determinants across all care settings, using standardized tools and coding systems to create consistent, actionable social risk data.",
+          "title": "Universal SDOH Screening"
+        },
+        {
+          "_key": "step4",
+          "description": "Fund community health workers, care coordinators, and social workers embedded in clinical practices or operating as shared community resources accessible to VBC participants.",
+          "title": "Community Health Integration"
+        },
+        {
+          "_key": "step5",
+          "description": "Create financial mechanisms for healthcare systems to partner with housing agencies, food banks, transportation providers, and workforce development programs to address identified social needs.",
+          "title": "Cross-Sector Partnerships"
+        },
+        {
+          "_key": "step6",
+          "description": "Hold VBC participants accountable not just for clinical quality averages but for demonstrated reduction in health disparities within their attributed populations.",
+          "title": "Outcome Accountability"
+        }
+      ],
+      "title": "Components of an Equity-Centered VBC System"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Policy Landscape and What Remains Unresolved"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS has articulated a health equity commitment across multiple programs and policy documents, but translating that commitment into payment design that meaningfully advances equity is a work in progress. The 2022 CMMI Strategic Refresh explicitly named health equity as a central goal of value-based care model design, committing that all future Innovation Center models would include health equity elements. The AHC model, Enhanced Primary Care Transformation model, and ACO REACH all included equity-specific requirements or bonuses. Yet CMMI also terminated several models early in 2025, raising uncertainty about the long-term trajectory of equity-focused innovation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicaid is potentially a more powerful lever for health equity in VBC than Medicare, because Medicaid disproportionately serves the populations with the most pronounced health disparities — low-income adults, children, people with disabilities, and pregnant women. Several states have moved aggressively to incorporate SDOH into Medicaid managed care contracts: North Carolina's Healthy Opportunities Pilots funded social services through Medicaid for the first time, testing whether braiding healthcare and social service funding could improve outcomes for the most complex enrollees. Massachusetts, Oregon, and California have implemented similar Medicaid innovations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The fundamental unresolved tension is between universalism and targeting. A truly equitable VBC system would require different standards, different investments, and different timelines for providers and populations at different starting points — a form of affirmative payment design that explicitly prioritizes closing gaps rather than maximizing average performance. American health policy has historically struggled with this kind of targeted approach, preferring universal standards that appear fair on paper but embed structural inequities in practice. Resolving that tension — acknowledging that equity sometimes requires differential treatment — is the defining political and policy challenge for the next generation of value-based care design."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "A school system that grades every student on the same curve regardless of whether they had tutors, stable housing, and enough food is not measuring academic achievement — it is measuring socioeconomic advantage. Value-based care faces the same problem: measuring health outcomes on a single universal scale when the determinants of those outcomes are profoundly unequal.",
+      "concept": "Health Equity and VBC Performance Measurement"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Social determinants of health — income, housing, education, food security, and transportation — drive up to 80 percent of health outcomes, meaning VBC programs focused only on clinical quality metrics are optimizing a minority of what actually drives health.",
+        "Current VBC program design can worsen disparities through historical cost benchmarking, unadjusted quality metrics, and financial penalties that disproportionately fall on safety-net providers serving the most disadvantaged populations.",
+        "The \"cream skimming\" risk — providers strategically avoiding high-complexity, socially disadvantaged patients — is a real consequence of VBC financial models that penalize rather than reward serving vulnerable populations.",
+        "Community health workers, SDOH screening programs, and cross-sector partnerships between healthcare and social services represent proven operational strategies for addressing social determinants within VBC arrangements.",
+        "The Vermont Blueprint for Health and CMS Accountable Health Communities Model provide real-world evidence that integrating SDOH screening and community navigation into VBC can reduce hospitalizations and emergency department utilization.",
+        "CMS has committed to health equity as a central design principle for future Innovation Center models, and has created new billing codes for community health workers and SDOH risk assessments — but comprehensive equity-adjusted payment design remains incomplete.",
+        "Building a VBC system that works for everyone requires stratified quality measurement, social risk adjustment, universal SDOH screening, community health integration, and outcome accountability for demonstrated disparity reduction — not just average performance improvement."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The AHC Model specifically tested the clinical and financial impact of screening beneficiaries for five health-related social needs — housing instability, food insecurity, transportation, utilities, and interpersonal safety — and then providing community navigation to connect them with social services. The model demonstrated that community navigation significantly reduced inpatient admissions and emergency department visits for beneficiaries with at least one unmet social need, validating the premise that addressing SDOH can reduce healthcare utilization and cost.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "It exclusively served Medicare Advantage enrollees in high-cost ZIP codes"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "It systematically screened Medicare and Medicaid beneficiaries for five social needs and tested whether community navigation addressing those needs could reduce healthcare utilization"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "It required hospitals to hire community health workers as full-time clinical staff"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "It replaced fee-for-service billing with a global budget for participating community health centers"
+        }
+      ],
+      "question": "What was the primary design feature of the CMS Accountable Health Communities (AHC) Model that distinguished it from standard care management programs?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] CMS: How Is CMS Addressing Social Determinants of Health in 2025 — https://docgo.com/blog/how-is-cms-addressing-social-determinants-of-health-sdoh-in-2025/ — CMS SDOH frameworks, 80% health outcomes estimate, 2025 initiatives"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] CMS SDOH Roadmap: Improving Outcomes, Lowering Costs — https://www.cms.gov/newsroom/press-releases/cms-issues-new-roadmap-states-address-social-determinants-health-improve-outcomes-lower-costs — CMS SDOH state strategy and VBC alignment"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] ICF: Medicare and Medicaid Move Upstream to Address Social Determinants of Health — https://www.icf.com/insights/health/cms-address-social-determinants-health — Accountable Health Communities Model design and results"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] AJMC: Navigating Health Equity in 2024: The Evolution of Accountability — https://www.ajmc.com/view/navigating-health-equity-in-2024-the-evolution-of-accountability-part-1 — CMS equity accountability framework and 2026 VBP health equity adjustment"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Case Management Society of America: 2024 SDOH Requirements — https://cmsatoday.com/2024/12/30/2024-sdoh-social-determinants-of-health-sdoh-requirements-and-what-lies-ahead-in-2025/ — 2024 SDOH screening mandate, five-domain requirements, CHW billing codes"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "value-based-care",
+  "order": 19,
+  "slug": {
+    "_type": "slug",
+    "current": "vbc-equity-m6"
+  },
+  "title": "Who Gets Left Behind: Health Equity, Social Determinants, and Building a VBC System That Works for Everyone"
+}

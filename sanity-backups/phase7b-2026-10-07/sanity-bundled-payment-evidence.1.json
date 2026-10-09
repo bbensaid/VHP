@@ -1,0 +1,604 @@
+{
+  "_createdAt": "2026-05-31T03:19:56Z",
+  "_id": "bundled-payment-evidence",
+  "_rev": "zxdiW4rSXbRh1KrIcDMU6t",
+  "_type": "academyModule",
+  "_updatedAt": "2026-10-08T12:33:39Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Reading the Evidence: What \"Success\" Means in Bundled Payment Research"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Evaluating bundled payment programs is harder than it appears. The central question — \"do bundles save money and improve care?\" — demands three separate answers: Do they reduce total episode spending? Do they reduce spending in a way that generates net savings to Medicare after reconciliation payments? And do they maintain or improve the quality of care delivered? These are distinct tests, and a program can pass one while failing another. Most rigorous research now distinguishes between gross episode savings (reductions in FFS claims) and net Medicare savings (what remains after reconciliation bonuses are subtracted)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The methodological challenge is defining the counterfactual. What would those patients have cost if the bundle had never existed? Researchers typically compare bundle participants to matched comparison hospitals or use difference-in-differences designs that control for pre-existing trends. Both approaches can be confounded by the selection effect: providers who voluntarily enter bundled payment programs are not a random sample — they tend to be larger, more integrated, and already more cost-efficient than non-participants. Any evaluation that does not rigorously account for this self-selection risk will overstate the program's causal impact."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "With those caveats in mind, the body of evidence on bundled payments is substantial and growing. The strongest evidence comes from surgical episodes — joint replacements, spine procedures, cardiac procedures — where episode costs are large, post-acute care is a known driver of variation, and the bundle gives providers a clear lever to pull. Evidence for medical episodes (pneumonia, heart failure, sepsis) is much weaker and in some cases negative, reflecting the inherent difficulty of coordinating care for patients with complex, unpredictable trajectories."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Net Medicare savings = gross episode spending reduction minus reconciliation payments made to participants. A model can achieve gross savings (claims go down) while generating net losses (bonuses paid out exceed the savings). Evaluations that report only gross savings overstate program value to the federal government."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Surgical Episodes: Where Bundles Work Best"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most consistent evidence for bundled payment effectiveness comes from lower-extremity joint replacement — hip and knee arthroplasty. Multiple independent studies evaluating BPCI and the mandatory Comprehensive Care for Joint Replacement (CJR) model found that participation was associated with significant reductions in episode spending, driven primarily by shifts in post-acute care utilization: fewer discharges to skilled nursing facilities and inpatient rehabilitation, shorter SNF stays when they do occur, and lower readmission rates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A landmark NEJM study evaluating the first two years of the CJR mandatory model found statistically significant episode cost reductions without deterioration in mortality, readmission, or patient-reported function. Analyses of BPCI orthopedic episodes found per-episode spending declines averaging roughly $1,166, with the reductions concentrated in SNF costs. Importantly, these quality-neutral cost reductions suggest that prior fee-for-service spending included avoidable post-acute utilization that could be eliminated without harming patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Cardiac procedures show similarly strong results. Bundled payment programs for coronary artery bypass graft (CABG) and percutaneous coronary intervention (PCI) have demonstrated cost reductions through shorter ICU stays, earlier extubation protocols, and standardized cardiac rehabilitation pathways. The BPCI program for major cardiac procedures generated savings across participating sites, with the highest-performing hospitals combining aggressive clinical protocol standardization with strong post-discharge follow-up programs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Hip and knee replacement under BPCI Model 2 — Dummit et al., JAMA 2016",
+          "label": "Avg. Per-Episode Cost Reduction",
+          "value": "$1,166"
+        },
+        {
+          "_key": "s2",
+          "context": "Net Medicare savings from Comprehensive Care for Joint Replacement, performance years 2016–2018, after reconciliation payments — CMS third annual evaluation",
+          "label": "CJR Mandatory Model Savings",
+          "value": "$61.6M"
+        },
+        {
+          "_key": "s3",
+          "context": "CMS evaluation: CJR and control patients reported similar satisfaction with recovery and care management",
+          "label": "Patient Satisfaction (CJR vs. control)",
+          "value": "Similar"
+        },
+        {
+          "_key": "s4",
+          "context": "Gross reduction in CJR episode payments, PY2016–2018, before $90.5M in reconciliation payments — CMS third annual evaluation",
+          "label": "CJR Gross Medicare Savings",
+          "value": "$152.1M"
+        }
+      ]
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medical Episodes: The Mixed and Negative Evidence"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The picture for medical episode bundles — heart failure, pneumonia, chronic obstructive pulmonary disease, sepsis — is considerably less encouraging. A 2024 study published in JAMA Cardiology evaluating BPCI Model 2 participation for heart failure (18 BPCI hospitals versus 211 comparison hospitals) found that hospital participation was not associated with improvement in process-of-care quality measures, nor with reductions in 30-day or 90-day risk-adjusted all-cause mortality or readmission rates. In other words, the bundle had no detectable effect on quality or outcomes for this high-volume condition."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why do medical episodes respond so differently? Several structural factors explain the divergence. First, medical episodes have much higher cost variance — a heart failure patient can cost $8,000 or $80,000 depending on comorbidities and complications that are difficult to predict or control at admission. Surgical episodes have more predictable cost trajectories, making target prices more accurate and financial risk more manageable. Second, post-acute care is a less dominant cost driver for medical episodes, meaning providers have fewer high-leverage levers to pull to reduce spending."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Third, medical episodes require cross-specialty coordination that is structurally harder to achieve. A joint replacement bundle centers on an orthopedic surgeon who acts as the natural care captain. A heart failure bundle involves hospitalists, cardiologists, primary care physicians, pharmacists, and home health agencies — all of whom need to function as a coordinated team across settings they have historically operated in silos. Building those relationships requires organizational trust and shared workflows that take years to develop and are not financially motivated by the bundle alone."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "A study published in JAMA Cardiology in early 2024 analyzing BPCI participation for heart failure episodes found that bundled payment participation was not associated with improved quality performance or outcomes on key measures including 30-day and 90-day readmission and mortality rates. The researchers concluded that bundled payment models may be most effective for surgical and procedural conditions where post-acute care costs are predictable and reducible, rather than complex medical conditions with highly variable trajectories.\nThis evidence is consistent with CMS's own evaluation findings and has informed the design of subsequent models, which have increasingly focused on high-cost surgical procedure types with clearer care pathways and more concentrated provider accountability.",
+      "title": "BPCI Heart Failure Episode — PubMed Study (2024)"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "BPCI Advanced: Evaluation Findings Across Five Model Years"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS has published multiple annual evaluation reports for BPCI Advanced, providing the most detailed longitudinal evidence available on a voluntary federal bundled payment program. In Model Year 5 (2022), BPCI Advanced generated approximately $344 million in net Medicare savings — a roughly 4% reduction in episode spending compared to the risk-adjusted target price benchmark. Per-episode spending declined by an average of $1,014. The model ended on December 31, 2025, and its final evaluation (August 2026) put net Medicare savings at about $800 million across all eight model years, after net losses in Model Years 1–3. Readmission and mortality rates remained stable, satisfying the quality non-inferiority threshold built into the model."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Participation patterns in BPCI Advanced reveal the selection dynamics that complicate evaluation. The model consistently attracted high-volume orthopedic and cardiac programs at large academic medical centers and community hospitals with strong surgical volumes. These institutions already invested in care coordination prior to joining the program and were better positioned to achieve savings from day one. The Penn LDI evaluation noted that physician group practice participation in BPCI Advanced was lower than hospital participation, and that future models need to better engage PGPs if savings are to be extended to the physician setting."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The fourth annual CMS evaluation report (2023) confirmed that savings persisted through the later model years but that per-episode savings rates were compressing over time — consistent with the \"ratchet effect\" where target prices are adjusted downward as participants demonstrate efficiency. High-performing participants reported that maintaining savings required continuous investment in care coordination and protocol improvement, not a one-time transformation. This finding has important implications for program sustainability and the transition from voluntary to mandatory models."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Surgical Episodes (Strong Evidence)",
+        "points": [
+          "Consistent cost reductions in joint replacement, spine, CABG",
+          "Post-acute shift from SNF to home-based care is the primary lever",
+          "Quality outcomes maintained or improved in most studies",
+          "CJR saved $63M over 2016–2018 (mandatory model)",
+          "BPCI Advanced: ~$1,014 per-episode reduction by Year 5"
+        ]
+      },
+      "right": {
+        "label": "Medical Episodes (Weak/Mixed Evidence)",
+        "points": [
+          "Heart failure, pneumonia bundles show limited cost impact",
+          "High cost variance makes target prices harder to set accurately",
+          "No improvement in readmissions or mortality in heart failure studies",
+          "Cross-specialty care teams harder to align than surgeon-led models",
+          "Post-acute care is a smaller and less controllable cost share"
+        ]
+      },
+      "title": "What the Evidence Shows: Surgical vs. Medical Episode Bundles"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Predicts Success in a Bundled Payment Program?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Research consistently identifies a cluster of organizational characteristics that distinguish high-performing bundled payment participants from those who exit or underperform. Surgeon or specialist engagement is the single most consistent predictor of success. When the physician who performs the procedure is an active partner in designing the episode care pathway — not merely a recipient of hospital-imposed protocols — adoption is faster, variance is lower, and cost reductions are more durable. Programs that treat bundled payment as a finance problem rather than a clinical quality initiative rarely succeed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Strong post-acute networks are the second predictor. High performers develop preferred relationships with a small set of SNFs and home health agencies, share patient-level data with those partners, and create clear discharge criteria that minimize unnecessary institutional post-acute stays. Facilities that discharge patients to a broad, undifferentiated network of post-acute providers lose the ability to standardize care in the 90-day tail of the episode — where cost variation is highest and provider accountability is most diffuse."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Data infrastructure matters more than most institutions anticipate before joining a bundle. Participants need near-real-time visibility into their episode claims to identify which patients are generating outlier costs and why. Providers who wait for quarterly claims reports to understand their performance cannot make mid-episode course corrections. Successful participants invest in analytics platforms that flag high-cost patterns early — unexpected readmissions, unusually long SNF stays, duplicate imaging — so care managers can intervene before costs accumulate beyond the target."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Involve proceduralists in episode pathway design from the start. Surgeon buy-in drives protocol adoption and reduces implant and care variation.",
+          "title": "Engage Surgeons as Co-Owners"
+        },
+        {
+          "_key": "step2",
+          "description": "Concentrate referrals to a small set of SNFs and home health agencies with shared data access, standardized handoff protocols, and aligned incentives.",
+          "title": "Build a Preferred Post-Acute Network"
+        },
+        {
+          "_key": "step3",
+          "description": "Assign dedicated nurse navigators to high-risk bundle patients for proactive post-discharge follow-up, medication reconciliation, and early readmission interception.",
+          "title": "Create a Nurse Navigator Function"
+        },
+        {
+          "_key": "step4",
+          "description": "Use near-real-time claims analytics to track episode performance by patient, provider, and clinical pathway — not quarterly reports that arrive too late to act on.",
+          "title": "Invest in Episode Analytics"
+        },
+        {
+          "_key": "step5",
+          "description": "In surgical bundles, implant costs are a controllable variable. Formulary standardization reduces materials costs without affecting clinical outcomes.",
+          "title": "Standardize Implant Selection"
+        }
+      ],
+      "title": "What High-Performing Bundled Payment Participants Do Differently"
+    },
+    {
+      "_key": "s6h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Limitations and Open Questions in the Field"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s6p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite the growing body of evidence, several important questions remain unresolved. The most significant is generalizability: can the savings demonstrated by self-selected high performers in voluntary programs be replicated across a broader, less-selected population of hospitals forced to participate in mandatory models? Early evidence from the CJR mandatory model is cautiously optimistic — savings were achieved across a heterogeneous set of hospitals — but TEAM's mandatory extension to five episode types beginning in 2026 will provide the most definitive test yet."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Equity concerns are a second open question. Research has found that bundled payment programs may inadvertently disadvantage safety-net hospitals that serve higher proportions of low-income patients with complex social needs. These patients have higher post-acute care needs and face barriers — transportation, housing instability, medication access — that make care coordination harder and episode costs higher. Standard risk adjustment does not fully account for social determinants of health, potentially making target prices systematically under-set for safety-net populations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The interaction between bundles and other value-based care models is also poorly understood. A hospital simultaneously participating in an ACO and BPCI Advanced for overlapping patient populations faces complex attribution rules and potentially conflicting incentives. CMS has worked to align these models, but providers operating in multiple value-based contracts simultaneously need sophisticated analytics to understand how their performance in one program affects their financial exposure in another. As the value-based care ecosystem matures, managing this portfolio complexity will become a core healthcare administration competency."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6w1",
+      "_type": "warningBlock",
+      "message": "Many news reports and even some policy briefs describe bundled payment \"savings\" without clarifying whether those figures are gross (before reconciliation payments to providers) or net (after payments). Programs that reduced episode claims but paid out bonuses exceeding the reduction — as was the case in some early BPCI surgical episodes — technically lost money for Medicare even while appearing successful. Always ask: savings to whom, measured how?",
+      "title": "Gross Savings Are Not Net Savings"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "The strongest evidence for bundled payment effectiveness comes from surgical episodes — joint replacement, spine, and cardiac procedures — where post-acute care costs are large and reducible.",
+        "Medical episode bundles for conditions like heart failure have shown limited or no impact on quality or cost, reflecting higher cost variance and more complex multi-specialty coordination needs.",
+        "BPCI Advanced generated approximately $344 million in net Medicare savings in Model Year 5 and about $800 million net across all eight model years (2018–2025), with per-episode spending declining ~$1,014 and quality metrics remaining stable.",
+        "Selection bias is the central methodological challenge in bundle evaluation: voluntary participants are not representative of all hospitals, so observed savings may overstate the true causal effect of the program.",
+        "Net Medicare savings — gross reductions minus reconciliation payments to providers — are the correct measure of program value to the government; reporting gross savings alone overstates the federal benefit.",
+        "Predictors of success include surgeon engagement, a strong preferred post-acute network, nurse navigator programs, near-real-time episode analytics, and implant formulary standardization.",
+        "Equity concerns remain: safety-net hospitals serving complex social-needs populations may face structurally under-set target prices, creating an unintended penalty for caring for vulnerable patients."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Lower extremity joint replacement has consistently shown the strongest evidence of cost and quality improvement under bundled payment programs. The surgical episode has a predictable cost structure, a clear clinical captain (the orthopedic surgeon), and post-acute care (SNF and inpatient rehab) as a large and controllable cost lever. Medical episodes like heart failure and pneumonia have shown little to no benefit in rigorous evaluations, due to high cost variance and complex multi-specialty coordination challenges.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Heart failure hospitalization"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": false,
+          "text": "Pneumonia treatment"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": true,
+          "text": "Lower extremity joint replacement (hip and knee arthroplasty)"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Sepsis management"
+        }
+      ],
+      "question": "Which type of clinical episode has shown the strongest and most consistent evidence of cost savings under bundled payment programs?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] CMS BPCI Advanced Fourth Evaluation Report (2023) — https://www.cms.gov/priorities/innovation/data-and-reports/2023/bpci-adv-ar4 — Longitudinal savings and quality findings through Year 4"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] NEJM: Two-Year Evaluation of Mandatory Bundled Payments for Joint Replacement — https://www.nejm.org/doi/full/10.1056/NEJMsa1809010 — CJR mandatory model savings and quality outcomes"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] PubMed: Bundled Payments for Care Improvement and Quality of Care in Heart Failure (2024) — https://pubmed.ncbi.nlm.nih.gov/38170516/ — Heart failure bundle showing no improvement in quality or outcomes"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Penn LDI: Future Bundled Payment Models Need to Engage Physician Group Practices — https://ldi.upenn.edu/our-work/research-updates/future-bundled-payment-models-need-to-engage-physician-group-practices/ — PGP participation gaps and policy implications"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Fierce Healthcare: Study Finds Bundled Payments for Hip and Knee Procedures Lowered Costs — https://www.fiercehealthcare.com/hospitals-health-systems/study-finds-bundled-payments-for-hip-and-knee-procedures-lowered-costs-but — $1,166 per-episode reduction in joint replacement"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Altarum Healthcare Value Hub: Bundled Payments — What Does the Evidence Say? — https://www.healthcarevaluehub.org/advocate-resources/publications/bundled-payments-what-does-evidence-say — Summary of evidence across episode types"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "value-based-care",
+  "order": 10,
+  "slug": {
+    "_type": "slug",
+    "current": "bundled-payment-evidence"
+  },
+  "title": "Bundled Payment Evidence: What the Research Shows"
+}

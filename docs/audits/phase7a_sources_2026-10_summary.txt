@@ -1,0 +1,73 @@
+PHASE 7A: ACADEMY SOURCE-INTEGRITY SWEEP, PART A (VBC FAMILY). SUMMARY
+Completed 2026-10-08. Ledger: docs/audits/phase7a_sources_2026-10.jsonl (847 lines; one line per finding per target copy)
+Ops files: frontend/scripts/_phase7a_ops/01..29 (applied with _phase7a_apply.mjs; exact-count guards, idempotent)
+Backups: sanity-backups/phase7a-2026-10-07/ (no-overwrite; suffixes .1/.2 for repeat backups)
+Nothing committed to git.
+
+SCOPE: 29 Sanity docs (id or slug contains vbc-fundamentals-module- / vbc-fundamentals-m / vbc-social-risk /
+capitation-mechanics / vbc-bundled- / aco-, or starts with vbc-). All 29 are now logged.
+  academyModule-vbc-{aco-evidence, aco-medicaid, bundled-evidence, bundled-mechanics, clinical-m5,
+    fundamentals-module-2/3/4, hedis-ecqm, mips, oncology, pro, rvu, social-risk}
+  aco-basics, aco-medicaid-commercial, aco-performance-evidence, aco-population-health-strategy, aco-quality-reporting,
+  mssp-aco-overview, capitation-mechanics-rvu-volume, policyAnalysis-eco-001 (slug value-based-care-aco-shared-savings-2025)
+  policyAnalysis vbc-fundamentals-module-2/3/4/5, ahead-model-year-one-financial-outcomes (touched as a Module 2 dependency)
+  vbc-fundamentals-m1, vbc-equity-m6, vbc-future-directions   <- finished in this final session
+
+COUNTS FOR THE WHOLE RUN (ledger lines; a finding fixed in Sanity + Supabase + local JSON counts once per copy)
+  FABRICATED  FIXED  554
+  UNVERIFIABLE FIXED 230
+  REAL        FIXED   28   (accurate claim, re-attributed or re-dated)
+  REAL        LEFT    30   (verified, no change)
+  UNVERIFIABLE LEFT    5   (see LEFT below)
+  Sanity-target lines only: 201 FABRICATED fixed, 102 UNVERIFIABLE fixed, 25 REAL fixed, 28 REAL left, 4 UNVERIFIABLE left.
+  This final session: 237 lines (144 FABRICATED fixed, 75 UNVERIFIABLE fixed, 10 REAL fixed, 7 REAL left, 1 UNVERIFIABLE left).
+
+KNOWN ITEMS: all FIXED, and a residue scan over all 29 docs is clean
+  Module 5 "MSSP 12-Year Evaluation" (fabricated report and quote): removed and replaced
+  vbc-social-risk "OneCare social risk index": replaced
+  capitation-mechanics "Act 167" changed to Act 68 of 2025
+  Module 3 placeholder YouTube (HTRAcademy2026M3) and "downloadable Excel model" removed (same for M2/M4/M5 videos)
+  AHEAD "no further cohorts" contradiction: Module 2 and the AHEAD analysis now state CMS's fall-2025
+    offer of two more states from 2028/2029
+
+FINAL SESSION, PER DOC
+  vbc-fundamentals-m1 (Sanity, 41 blocks): per-capita $14,885 was OECD PPP, not CMS NHE, so changed to CMS $15,474; life-expectancy gap
+    4.1 not "nearly 4"; OECD and Peterson-KFF figures had been swapped between sources, now corrected; "more than 2.5x" changed to 2.5x;
+    stat year 2023 changed to 2024; ACO REACH "full global capitation risk" corrected to the Global option; Vermont APM "first attempt in
+    the U.S." narrowed to first all-payer ACO model (Maryland, 1977); Quadruple Aim attributed to Bodenheimer and Sinsky.
+    MSSP 2023 and REACH 2023 figures verified REAL.
+    Legacy Supabase fallback (lessons f5c3dc5e + 1818fa5b, shared text) + 3 local JSON: WHO "37th" ranking removed;
+    18.3% changed to 17.3% of GDP (2022); a self-contradicting country ranking replaced; JAMA waste stats corrected to Shrank 2019
+    (~25%, $76-101B overtreatment, $231-241B pricing); $1.87B changed to >$1.8B; ACA date fixed; OneCare 240k/"currently"/119
+    practices replaced with NORC 243k (2021); a non-existent "CMS All-Payer Model Performance Reports" source replaced with NORC
+    (-$686 PBPY, -6.2%); "first time in American history" narrowed; tense fixed (model ended 2025).
+  vbc-equity-m6 (Sanity, 34 -> 38 blocks): "CMS SDOH Framework 2025" was a DocGo vendor blog, so re-cited to Hood et al. 2016 (47/34/16%);
+    Black-White gap 5 changed to 4.4 years (NCHS 2023); Camden Coalition "significant reductions" reversed (NEJM 2020 RCT null);
+    AHC Model counts, design and results corrected to CMS final evaluation (28 BOs, >1M screened, only Assistance Track
+    randomized); a non-existent "Enhanced Primary Care Transformation model" replaced with Making Care Primary; Strategy Refresh dated 2021;
+    HVBP/MA equity policies corrected and their 2025 reversal noted; CHW Medicaid count tied to KFF; NC HOP
+    narrowed and its July 2025 stop noted; 4 citation blocks added.
+    Legacy Supabase fallback (lesson e8dd6050) + local JSON: 12 fabricated or unsourced stats replaced with verified ones
+    (AHC, Kangovi 2020 $2.47 ROI, Sheps 154 closures, Andrilla 65%, CDC maternal mortality); fake "2024 Health Affairs" ACO-exit
+    study, wrong HEBA year and "3.5% ceiling", invented "2026 MSSP" SDOH commitments all removed; Roots and VDH-dashboard
+    case studies with fabricated evaluations dropped; Vermont APM goals corrected to the agreement's three population-health goals.
+  vbc-future-directions (Sanity, 34 -> 35 blocks): REACH PY2026 risk caps restated per CMS; "population adjustment" rename
+    re-sourced to the REACH financial operating guide (predates PY2026; adds Community Deprivation Index); source [6]
+    no longer credited with the rename; "patient-reported outcome measures" claim removed (not in the CMMI strategy).
+    Strategy, PCF/MCP terminations and LEAD dates verified REAL.
+    Legacy Supabase fallback (lesson 5866fcff) + local JSON: "Vermont is a participant" in AHEAD corrected (withdrew July 2026);
+    stale equity-requirements line dated; PCF marked ended.
+
+LEFT (deliberately, with reason)
+  4 image/placeholder blocks in Modules 2-5 (blk044, blk036, blk039, blk042): no asset, nothing renders, and they make no
+    rendered factual claim.
+  frontend/sanity/temp_holder/VBC_Fundamentals.json: an older Module 1 draft ("ranks 46th", "nearly twice the OECD average")
+    that is not the source of any live doc or row. Left untouched; delete or rewrite it before any re-import.
+  Opinion and editorial sentences (course conclusions, unattributed pull quote in m1 s2q1) left as editorial.
+  Source URLs that return 403 only to scripted requests (cmsatoday.com, healthmanagement.com, oecd.org) were left in place.
+    The OECD page was confirmed by search.
+
+NOTES
+  The m1/m6/future-directions Supabase rows carry an older and different body than Sanity. They render only if Sanity fails,
+  because sanity_slug is set. They were corrected rather than replaced.
+  Every in-scope doc keeps at least 20 blocks.

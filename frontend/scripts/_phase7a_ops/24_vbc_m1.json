@@ -1,0 +1,180 @@
+{
+ "ops": [
+  {
+   "key": "s1p1",
+   "old": "$5.3 trillion in 2024, approximately $14,885 per person.",
+   "new": "$5.3 trillion in 2024, or $15,474 per person (CMS).",
+   "claim": "$5.3T in 2024 at 'approximately $14,885 per person'",
+   "verdict": "FABRICATED",
+   "sources": "CMS NHE Fact Sheet: 'NHE grew 7.2% to $5.3 trillion in 2024, or $15,474 per person'; OECD, Health at a Glance 2025 (US country note + 'Health expenditure per capita'): US over USD 14,880 per person in 2024 (PPP), 2.5 times the OECD average of nearly USD 6,000; US life expectancy 78.4, 2.7 years below the OECD average",
+   "note": "$14,885 is OECD's 2024 PPP figure, not CMS's per-person NHE; replaced with CMS's own per-person figure.",
+   "docs": [
+    "vbc-fundamentals-m1"
+   ],
+   "mirror": true
+  },
+  {
+   "key": "s1p1",
+   "old": "nearly 4 years shorter than the average among comparable wealthy countries",
+   "new": "4.1 years shorter than the average among comparable wealthy countries",
+   "claim": "US life expectancy 'nearly 4 years' below comparable countries",
+   "verdict": "FABRICATED",
+   "sources": "Peterson-KFF Health System Tracker, 'How does U.S. life expectancy compare to other countries?': 78.4 years in 2023; gap with comparable countries 4.1 years in 2023 (comparable average 82.5)",
+   "note": "Gap is 4.1 years per the cited tracker.",
+   "docs": [
+    "vbc-fundamentals-m1"
+   ],
+   "mirror": true
+  },
+  {
+   "key": "s1sg1",
+   "old": "Nearly 4 years shorter than peer country average of 82.5 years — OECD Health at a Glance 2025",
+   "new": "4.1 years shorter than the comparable-country average of 82.5 years — Peterson-KFF Health System Tracker",
+   "claim": "Peer average 82.5 attributed to OECD Health at a Glance 2025",
+   "verdict": "FABRICATED",
+   "sources": "Peterson-KFF Health System Tracker, 'How does U.S. life expectancy compare to other countries?': 78.4 years in 2023; gap with comparable countries 4.1 years in 2023 (comparable average 82.5); OECD, Health at a Glance 2025 (US country note + 'Health expenditure per capita'): US over USD 14,880 per person in 2024 (PPP), 2.5 times the OECD average of nearly USD 6,000; US life expectancy 78.4, 2.7 years below the OECD average",
+   "note": "82.5 is Peterson-KFF's comparable-country average; OECD reports a 2.7-year gap to the OECD average. Attribution corrected.",
+   "docs": [
+    "vbc-fundamentals-m1"
+   ],
+   "mirror": true
+  },
+  {
+   "key": "s1sg1",
+   "old": "Per-Capita Spending 2023",
+   "new": "Per-Capita Spending 2024 (PPP)",
+   "claim": "$14,885 per-capita labelled 2023",
+   "verdict": "FABRICATED",
+   "sources": "OECD, Health at a Glance 2025 (US country note + 'Health expenditure per capita'): US over USD 14,880 per person in 2024 (PPP), 2.5 times the OECD average of nearly USD 6,000; US life expectancy 78.4, 2.7 years below the OECD average",
+   "note": "OECD figure is for 2024.",
+   "docs": [
+    "vbc-fundamentals-m1"
+   ],
+   "mirror": true
+  },
+  {
+   "key": "s1sg1",
+   "old": "More than 2.5x the OECD average of $5,967 — OECD Health Statistics",
+   "new": "2.5 times the OECD average of nearly $6,000 — OECD Health at a Glance 2025",
+   "claim": "'More than 2.5x' OECD average of $5,967",
+   "verdict": "UNVERIFIABLE",
+   "sources": "OECD, Health at a Glance 2025 (US country note + 'Health expenditure per capita'): US over USD 14,880 per person in 2024 (PPP), 2.5 times the OECD average of nearly USD 6,000; US life expectancy 78.4, 2.7 years below the OECD average",
+   "note": "OECD says 2.5 times and 'nearly USD 6,000'; exact $5,967 not retrievable (oecd.org 403), specific dropped.",
+   "docs": [
+    "vbc-fundamentals-m1"
+   ],
+   "mirror": true
+  },
+  {
+   "key": "tw",
+   "old": "more than 2.5x the OECD per-capita average",
+   "new": "about 2.5 times the OECD per-capita average",
+   "claim": "'more than 2.5x the OECD per-capita average'",
+   "verdict": "FABRICATED",
+   "sources": "OECD, Health at a Glance 2025 (US country note + 'Health expenditure per capita'): US over USD 14,880 per person in 2024 (PPP), 2.5 times the OECD average of nearly USD 6,000; US life expectancy 78.4, 2.7 years below the OECD average",
+   "note": "14,885/5,967 = 2.49; OECD says 2.5 times.",
+   "docs": [
+    "vbc-fundamentals-m1"
+   ],
+   "mirror": true
+  },
+  {
+   "key": "src2",
+   "old": "Per-capita spending $14,885 vs. OECD $5,967; life expectancy 78.4 years vs. 82.5 peer average",
+   "new": "Per-capita spending over $14,880 (2024, PPP), 2.5 times the OECD average of nearly $6,000; life expectancy 78.4 years, 2.7 years below the OECD average",
+   "claim": "Source note: OECD $5,967; '82.5 peer average' attributed to OECD",
+   "verdict": "FABRICATED",
+   "sources": "OECD, Health at a Glance 2025 (US country note + 'Health expenditure per capita'): US over USD 14,880 per person in 2024 (PPP), 2.5 times the OECD average of nearly USD 6,000; US life expectancy 78.4, 2.7 years below the OECD average",
+   "note": "Source description aligned to what OECD publishes.",
+   "docs": [
+    "vbc-fundamentals-m1"
+   ],
+   "mirror": true
+  },
+  {
+   "key": "src7",
+   "old": "U.S. life expectancy 78.4 years, 2.7 years below OECD average in 2023",
+   "new": "U.S. life expectancy 78.4 years in 2023, 4.1 years below the comparable-country average of 82.5",
+   "claim": "Source note attributes OECD's 2.7-year gap to Peterson-KFF",
+   "verdict": "FABRICATED",
+   "sources": "Peterson-KFF Health System Tracker, 'How does U.S. life expectancy compare to other countries?': 78.4 years in 2023; gap with comparable countries 4.1 years in 2023 (comparable average 82.5)",
+   "note": "Swapped attribution between the two sources corrected.",
+   "docs": [
+    "vbc-fundamentals-m1"
+   ],
+   "mirror": true
+  },
+  {
+   "key": "s2p3",
+   "old": "Over time, IHI and others have expanded the framework to a \"Quadruple Aim\" that adds",
+   "new": "In 2014, Thomas Bodenheimer and Christine Sinsky (Annals of Family Medicine) proposed expanding the framework to a \"Quadruple Aim\" that adds",
+   "claim": "Quadruple Aim attributed to 'IHI and others'",
+   "verdict": "REAL",
+   "sources": "Bodenheimer T, Sinsky C. 'From Triple to Quadruple Aim: Care of the Patient Requires Care of the Provider.' Ann Fam Med 2014;12(6):573-576",
+   "note": "Concept real; attribution corrected to its originators.",
+   "docs": [
+    "vbc-fundamentals-m1"
+   ],
+   "mirror": true
+  },
+  {
+   "key": "s4p3",
+   "old": "tests a deeper form of accountable care with full global capitation risk.",
+   "new": "tests deeper accountable care, including a Global option in which ACOs take on 100% of shared savings and losses and may elect capitated payments.",
+   "claim": "ACO REACH = 'full global capitation risk'",
+   "verdict": "FABRICATED",
+   "sources": "CMS ACO REACH model page: Professional option (50% savings/losses, primary care capitation) and Global option (100% savings/losses, primary care or total care capitation)",
+   "note": "Overstated: only the Global option carries full risk.",
+   "docs": [
+    "vbc-fundamentals-m1"
+   ],
+   "mirror": true
+  },
+  {
+   "key": "s5p3",
+   "old": "the first attempt in the U.S. to create multi-payer payment alignment at the state level",
+   "new": "the first all-payer ACO model in the U.S.",
+   "claim": "Vermont APM 'first attempt in the U.S.' at state multi-payer payment alignment",
+   "verdict": "FABRICATED",
+   "sources": "HSCRC: Maryland all-payer hospital rate setting under a Medicare waiver since 1977; CMS Vermont All-Payer ACO Model page",
+   "note": "Maryland predates Vermont by four decades; narrowed to the accurate 'first all-payer ACO model'.",
+   "docs": [
+    "vbc-fundamentals-m1"
+   ],
+   "mirror": true
+  },
+  {
+   "log_only": true,
+   "doc": "sanity vbc-fundamentals-m1",
+   "block_key": "s4p2,s4ex1,s1sg1,tw,src3",
+   "claim": "MSSP 2023: >$2.1B net savings (record), $3.1B shared savings payments, 7 consecutive years, 480 ACOs/608,000+ clinicians/nearly 11M (Jan 2024), quality gains",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "CMS press release 'Medicare Shared Savings Program Continues to Deliver Meaningful Savings and High-Quality Health Care' (2024)",
+   "status": "LEFT",
+   "note": "All figures match CMS verbatim."
+  },
+  {
+   "log_only": true,
+   "doc": "sanity vbc-fundamentals-m1",
+   "block_key": "s4p3,src4",
+   "claim": "ACO REACH 2023: 132 ACOs, >2M beneficiaries, $695M net savings, health equity plans",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "HC Innovation Group (CMS PY2023 results): 132 ACOs, $1.6B gross / $695M net; CMS 2023 announcement: estimated 2.1M beneficiaries; REACH health equity plan requirement",
+   "status": "LEFT",
+   "note": "Source URL resolves."
+  },
+  {
+   "log_only": true,
+   "doc": "sanity vbc-fundamentals-m1",
+   "block_key": "s2p1,s3cmp1,s5st1,s2q1",
+   "claim": "Triple Aim IHI 2008; MIPS +/-9%; MSSP sharing 40-75%; unattributed pull quote",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "Berwick, Nolan, Whittington, Health Affairs 2008; 42 CFR 414.1405 (9% max negative adjustment); 42 CFR 425.605/610 (BASIC 40-50%, ENHANCED 75%)",
+   "status": "LEFT",
+   "note": "s2q1 is an editorial pull quote attributed to no one; not a fabricated attribution. KFF/AAMC source URLs return 200."
+  }
+ ]
+}

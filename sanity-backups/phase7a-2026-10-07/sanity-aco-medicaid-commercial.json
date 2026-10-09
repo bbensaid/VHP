@@ -1,0 +1,634 @@
+{
+  "_createdAt": "2026-05-31T06:38:05Z",
+  "_id": "aco-medicaid-commercial",
+  "_rev": "lKp0BhG1T8aY2oFO5b5eOj",
+  "_type": "academyModule",
+  "_updatedAt": "2026-10-08T02:01:50Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why ACOs Expanded Beyond Medicare"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Medicare Shared Savings Program demonstrated that the accountable care concept—providers voluntarily accepting responsibility for the cost and quality of a defined population—could work at scale in a government insurance program. That demonstration triggered rapid interest from Medicaid agencies and commercial health plans, which faced similar problems: fragmented care, avoidable hospitalizations, and payment structures that rewarded volume over value. By the mid-2010s, dozens of states were designing Medicaid ACO programs and commercial insurers were launching parallel contracts with provider networks."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Yet the translation from Medicare to Medicaid and commercial markets is not straightforward. Medicare beneficiaries are older, have stable enrollment, and interact with a single federal payer using standardized rules. Medicaid populations are younger, more diverse, often have complex social needs, and experience high coverage turnover—members can churn on and off Medicaid eligibility multiple times per year, making continuity of attribution and care management extremely difficult. Commercial ACOs face different challenges: multiple competing payers with proprietary data, less standardized quality measures, and the reality that commercial patients may have ACO-like contracts with several plans simultaneously."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite these structural differences, the core ACO logic transfers: if providers can reduce avoidable utilization, improve preventive care, and coordinate across settings, both Medicaid programs and commercial payers stand to gain. The mechanisms—attribution, benchmarks, shared savings or shared losses—are adapted but recognizable. This lesson examines how Medicaid and commercial ACO programs have been designed, what the evidence shows about their effectiveness, and what Vermont's own experience illustrates about state-level innovation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: Medicaid ACOs and commercial ACOs share the fundamental ACO architecture—attributed populations, spending benchmarks, and quality-linked payments—but operate in environments with fundamentally different patient populations, payer structures, and data availability compared to the Medicare MSSP."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicaid ACOs: State-by-State Innovation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicaid is a joint federal-state program, which means there is no single national Medicaid ACO model. Each state that creates a Medicaid ACO does so through its own design, often using Section 1115 demonstration waivers to obtain federal flexibility. States have experimented with widely varying approaches: some run voluntary programs similar to MSSP, others mandate all Medicaid managed care organizations to operate within an ACO framework, and still others create global budget models that blend ACO accountability with capitation payments."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A 2024 scoping review published in collaboration with the Center for Health Care Strategies analyzed 32 studies on Medicaid ACO programs published between 2012 and 2023. The review found mixed evidence overall—Medicaid ACOs showed positive effects on primary care utilization and reductions in avoidable admissions in several states, but cost savings were variable and often dependent on how long the program had been operating and how long patients were attributed. Medicaid ACOs face unique challenges: patient populations with complex social needs, frequent eligibility turnover, and program designs that vary dramatically across states."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Among the key positive findings from the scoping review: Medicaid ACO implementation was associated with an increase in children's likelihood of having a personal doctor or nurse by approximately 4 percentage points, a decline in emergency department visits by approximately 5 percentage points, and increases in specialist care use in some state programs. These are meaningful outcomes for a population that historically has faced significant access barriers. However, cost evidence was weaker, with only a subset of studies documenting actual savings to the state Medicaid program."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Medicaid ACO implementation associated with ~4 percentage-point increase in children having a personal doctor. Source: CHCS/PubMed Scoping Review 2024.",
+          "label": "Increase in Personal Doctor Rate",
+          "value": "~4 pp"
+        },
+        {
+          "_key": "s2",
+          "context": "Medicaid ACOs associated with ~5 percentage-point decline in emergency department visit rates among attributed children. Source: CHCS/PubMed Scoping Review 2024.",
+          "label": "Decline in ED Visit Rate",
+          "value": "~5 pp"
+        },
+        {
+          "_key": "s3",
+          "context": "Over 1.3 million MassHealth members—more than half of the program's 2.4 million total—enrolled in one of 17 MassHealth ACOs as of June 2023. Source: Blue Cross MA Foundation.",
+          "label": "MassHealth ACO Enrollment 2023",
+          "value": "1.3M+"
+        },
+        {
+          "_key": "s4",
+          "context": "MassHealth's 2017-2022 Section 1115 Demonstration Waiver saved Massachusetts more than half a billion dollars over five years. Source: UMass Chan Evaluation, Mass.gov.",
+          "label": "MassHealth Demonstration Savings",
+          "value": "$500M+"
+        }
+      ]
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Oregon's Coordinated Care Organizations: The Leading State Model"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Oregon's Coordinated Care Organization (CCO) program is widely regarded as the most comprehensive and rigorously evaluated Medicaid ACO model in the United States. Launched in 2012 under an 1115 waiver with substantial initial federal funding, Oregon transformed its entire Medicaid program—the Oregon Health Plan—into a statewide network of CCOs. Each CCO is a regional entity responsible for the physical, behavioral, and oral health of its attributed Medicaid members, operating under a global budget with an annual spending growth cap."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Oregon committed to reducing its Medicaid spending growth rate from 5.4 percent annually to 3.4 percent within three years. Research published in peer-reviewed journals found that the CCO transformation was associated with a 7 percent relative reduction in expenditures across selected services, attributable primarily to reductions in inpatient utilization. Emergency department visit rates fell by 21 percent in the early implementation phase. A Health Affairs study found that these expenditure reductions were attributable to coordinated care organization effects rather than to underlying demographic or economic trends."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The scoping review of Medicaid ACO evidence identified Oregon as showing the most consistently positive results among the nine state programs studied. Oregon's distinctive design elements—mandatory Medicaid enrollment (rather than voluntary), inclusion of mental health and dental services within the global budget (rather than carving them out), community advisory councils with meaningful governance authority, and integration of social determinants of health services—contributed to both its superior performance and the comprehensiveness of its data. As of 2020, the Oregon Health Authority renewed four-year CCO contracts with 15 CCOs, with contracts focusing on behavioral health, health equity, social determinants, and sustainable cost growth."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "Oregon currently contracts with 15 Coordinated Care Organizations that cover OHP members across the state. Each CCO integrates physical, behavioral, and oral health services under a single global budget, which is capped at a state-specified growth rate. CCOs are governed by community advisory councils that include Medicaid members, community organizations, and local stakeholders.\nThe Oregon model's inclusion of dental and mental health under the global budget is a critical design feature that most other state programs omit. By integrating these services, Oregon avoids the perverse incentive of carving them out—where behavioral health crises drive hospital admissions that show up as avoidable costs in the physical health budget without accountability. Research found a 7% relative reduction in selected expenditures and a 21% decline in ED visits in the program's early years. Source: CHCS/NIH; Oregon Health Authority.",
+      "title": "Oregon Health Plan CCOs"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Massachusetts MassHealth ACOs: Scale and Integration"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Massachusetts launched its Medicaid ACO program in 2018 as part of a Section 1115 demonstration waiver, becoming one of the first states to integrate ACO accountability directly into its Medicaid managed care framework. By June 2023, over 1.3 million MassHealth members—more than half of the program's 2.4 million total—were enrolled in one of 17 MassHealth ACOs. This scale makes MassHealth one of the largest Medicaid ACO programs in the country by attributed population."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "An independent evaluation conducted by UMass Chan Medical School found that MassHealth's 2017–2022 Section 1115 demonstration saved Massachusetts more than $500 million over five years while maintaining near-universal health coverage and the lowest uninsurance rate among comparison states. Health outcomes improved in both physical and behavioral health domains. Hospitalization rates were 23 percent lower and emergency department visit rates 13 percent lower among members who received nutrition support services compared to eligible non-participants."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "MassHealth's program design included two types of ACOs: Accountable Care Partnership Plans (ACPPs), which are fully integrated ACO-managed care plans combining an ACO with a health plan, and Primary Care ACOs (PCACOs), which are ACOs working with existing managed care organizations. The program also built in a community partner infrastructure—ACO-affiliated organizations providing community health workers, care navigators, and long-term services support—reflecting recognition that social needs are major drivers of Medicaid spending. In September 2022, CMS approved an extension of the MassHealth demonstration waiver through December 2027."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "The state Medicaid agency designs attribution rules, benchmark methodology, quality measures, and shared savings/risk parameters, often with federal approval via Section 1115 waiver.",
+          "title": "State Designs the Program"
+        },
+        {
+          "_key": "step2",
+          "description": "Hospital systems, physician groups, community health centers, or coalitions apply to become ACOs, demonstrating organizational capacity and governance structure.",
+          "title": "Provider Organizations Apply"
+        },
+        {
+          "_key": "step3",
+          "description": "Medicaid members are attributed to ACOs based on primary care utilization patterns, similar to MSSP but adapted for Medicaid data systems and enrollment patterns.",
+          "title": "Beneficiaries Attributed"
+        },
+        {
+          "_key": "step4",
+          "description": "The ACO delivers care, manages utilization, and coordinates services. Monthly reporting or quarterly feedback allows course correction during the year.",
+          "title": "Performance Year Runs"
+        },
+        {
+          "_key": "step5",
+          "description": "At year-end, actual spending is compared to the benchmark. ACOs that generated savings and met quality thresholds receive a share; those in two-sided programs may owe losses.",
+          "title": "Financial Settlement"
+        }
+      ],
+      "title": "How a State Medicaid ACO Typically Works"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Commercial ACOs: Private-Payer Accountable Care"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Commercial ACOs operate under contracts between provider organizations and private health plans—employer-sponsored insurance, individual market plans, and commercial managed care. Unlike Medicare or Medicaid ACOs, commercial ACOs are governed entirely by private contracts without a regulatory framework, meaning their design varies enormously across payers, markets, and time. The common thread is still the ACO logic: a defined provider network accepts responsibility for a population's total cost of care against a benchmark, with shared savings or shared losses tied to both spending and quality performance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Commercial ACO growth has been driven by large employers and major health plans seeking to reduce trend growth in healthcare costs. The Health Care Payment Learning and Action Network (HCPLAN) reported that value-based arrangements across all lines of business grew from 41.3 percent of payments in 2022 to 45.2 percent in 2023. Commercial value-based care arrangements specifically grew from 34.6 percent to 39.2 percent in the same period—a 5.1 percentage-point increase in a single year. In 2024, 28.7 percent of all healthcare payments across insurance types came through downside-risk alternative payment model contracts."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Commercial ACOs face distinctive challenges that Medicare and Medicaid ACOs do not. First, multi-payer attribution: a primary care physician attributed to a commercial ACO by one payer may simultaneously be in a Medicare ACO and a Medicaid ACO, with potentially conflicting quality targets and reporting requirements. Second, data opacity: commercial claims data is proprietary and payers often share incomplete claims information with ACO partners, hampering risk stratification. Third, shorter contract terms: commercial ACO contracts often run one to three years, which is insufficient time to see the full financial benefits of care management investments that may take several years to mature."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Medicaid ACOs",
+        "points": [
+          "State-designed under CMS waiver authority",
+          "Serve lower-income, often high-social-need populations",
+          "High coverage turnover challenges attribution continuity",
+          "Federal matching funds create joint savings incentive",
+          "Global budgets common in leading state models (Oregon)",
+          "Social determinants and behavioral health integration critical"
+        ]
+      },
+      "right": {
+        "label": "Commercial ACOs",
+        "points": [
+          "Private contracts—no federal regulatory framework",
+          "Serve working-age commercially insured populations",
+          "Multi-payer overlap creates conflicting incentives",
+          "Proprietary data limits care management visibility",
+          "Shorter contract terms reduce long-term investment payoff",
+          "Employers increasingly driving program design"
+        ]
+      },
+      "title": "Medicaid ACOs vs. Commercial ACOs: Key Differences"
+    },
+    {
+      "_key": "s6h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's All-Payer Model: ACOs Across All Insurance Types"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s6p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont pursued one of the most ambitious ACO strategies in the United States: an all-payer accountable care model in which a single ACO—OneCare Vermont—accepted responsibility for the total cost of care for Vermonters across Medicare, Medicaid, and commercial insurance. Under the Vermont All-Payer ACO Model (VAPCOM), which CMS approved in 2017 and which ended in 2025, OneCare Vermont operated under a global budget that covered attributed patients across all payers, aligning financial incentives in a way that no single-payer ACO can achieve."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The all-payer design directly solves the multi-payer attribution problem that plagues commercial ACOs. When a provider's financial incentives are aligned across all of their patients—not just their Medicare patients or their one commercial contract—clinical behavior can change more consistently and comprehensively. A primary care physician in the OneCare network had the same incentive to prevent avoidable hospitalizations for their Medicaid patient as for their Medicare patient, removing a major source of conflicting financial signals that undermines single-payer ACO models."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's model has generated considerable national attention and research interest as a proof-of-concept for all-payer ACO design. The state agreed to keep per-capita cost growth below a target rate and to meet annual quality benchmarks across the attributed population. Implementation was iterative—the model was modified through renegotiation with CMS before it ended on December 31, 2025. Vermont's experience offers important lessons about the prerequisites for all-payer ACO success: state political will, a small enough market for coordination to be feasible, and strong primary care infrastructure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6an1",
+      "_type": "analogyBlock",
+      "analogy": "Think of multi-payer ACO fragmentation like a sports referee who has to follow different rulebooks for different players on the same field. A doctor with Medicare, Medicaid, and commercial patients effectively works under three different financial systems simultaneously. Vermont's all-payer model gave everyone the same rulebook, so the referee—and the players—could play a coherent game.",
+      "concept": "All-payer ACO design: why aligning all payers matters"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Medicaid and commercial ACOs adapt the Medicare ACO model—attributed populations, spending benchmarks, and quality-linked shared savings—to their distinct payer environments, patient populations, and data constraints.",
+        "A 2024 scoping review of 32 Medicaid ACO studies found mixed evidence overall, with the strongest findings in primary care access (approximately 4 percentage-point gain in personal doctor rates) and emergency department reduction (approximately 5 percentage-point decline).",
+        "Oregon's Coordinated Care Organization program is the best-evidenced Medicaid ACO model, with a 7% relative reduction in expenditures and a 21% drop in ED visits in early implementation; its design integrates behavioral, physical, and oral health under one global budget.",
+        "MassHealth (Massachusetts) enrolled over 1.3 million Medicaid members in ACOs by 2023, with an independent evaluation finding $500 million in savings over five years and improved physical and behavioral health outcomes.",
+        "Commercial ACO contracts grew significantly, with value-based arrangements representing 45.2% of all healthcare payments across insurance types in 2023, up from 41.3% in 2022, according to HCPLAN data.",
+        "Commercial ACOs face unique challenges not present in Medicare or Medicaid programs: multi-payer attribution overlap, proprietary data opacity, shorter contract terms, and the absence of a federal regulatory framework.",
+        "Vermont's all-payer ACO model (OneCare Vermont, which ended in 2025) addressed multi-payer fragmentation by applying a single global budget across Medicare, Medicaid, and commercial payers—one of the most ambitious accountable care experiments in the U.S."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Oregon's CCO model is distinctive for its mandatory enrollment (all OHP members are enrolled), its integration of mental health and dental services under the same global budget as physical health, and its community advisory council governance. The scoping review of Medicaid ACO evidence identified Oregon as having the most consistently positive results, attributing this partly to the integrated service design that prevents behavioral health and dental carve-outs from undermining physical health cost management.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Oregon's CCOs are voluntary—providers can opt out at any time without penalty."
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Oregon integrates physical, behavioral, and oral health services under a single global budget with mandatory Medicaid enrollment."
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Oregon does not use attribution—all Medicaid members are automatically in the ACO."
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Oregon's CCOs are operated entirely by commercial health plans rather than provider organizations."
+        }
+      ],
+      "question": "Which feature of Oregon's Coordinated Care Organization program is most frequently cited as distinguishing it from other state Medicaid ACO models?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Center for Health Care Strategies / PubMed — \"The Impact of Medicaid Accountable Care Organizations on Health Care Utilization, Quality Measures, Health Outcomes and Costs from 2012 to 2023: A Scoping Review\" — https://pubmed.ncbi.nlm.nih.gov/38618890/ — Supports Medicaid ACO scoping review findings including personal doctor rate gains and ED reduction statistics."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Oregon Health Authority — Coordinated Care Organizations (CCOs) — https://www.oregon.gov/oha/ohp/pages/ccos.aspx — Supports Oregon CCO program structure, 15 CCOs, 2020 contract renewal details."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] PMC / Health Affairs — \"Oregon's Medicaid Reform and Transition to Global Budgets Were Associated with Reductions in Expenditures\" — https://pmc.ncbi.nlm.nih.gov/articles/PMC5591620/ — Supports Oregon 7% expenditure reduction and 21% ED visit decline findings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Mass.gov / UMass Chan — \"New UMass Chan Evaluation: Innovation at MassHealth Led to Improved Health Outcomes and Lower Costs\" — https://www.mass.gov/news/new-umass-chan-evaluation-innovation-at-masshealth-led-to-improved-health-outcomes-and-lower-costs — Supports MassHealth $500M+ savings, 23% lower hospitalization rate statistics."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Blue Cross MA Foundation — \"What to Know Now About MassHealth ACOs\" (October 2023) — https://www.bluecrossmafoundation.org/sites/g/files/csphws2506/files/2023-10/ACO%20Primer_2023_FINAL.pdf — Supports MassHealth 1.3M member enrollment and 17 ACOs statistic."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] HCPLAN / Healthcare Innovation — \"HCPLAN Survey Data Finds Progress on Alternative Payment Models\" — https://www.hcinnovationgroup.com/policy-value-based-care/alternative-payment-models/news/55244090/hcplan-survey-data-finds-progress-on-alternative-payment-models — Supports 45.2% value-based arrangement share of all payments in 2023 and 39.2% commercial VBC figure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] CHCS/PMC — \"Early Performance in Medicaid Accountable Care Organizations: A Comparison of Oregon and Colorado\" — https://pmc.ncbi.nlm.nih.gov/articles/PMC5440252/ — Supports comparative analysis of state Medicaid ACO design features."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src8s",
+          "_type": "span",
+          "marks": [],
+          "text": "[8] CMS — Vermont All-Payer ACO Model — Supports Vermont VAPCOM all-payer model design and OneCare Vermont description. Available at: https://www.cms.gov/priorities/innovation/innovation-models/vermont-all-payer-aco-model"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "value-based-care",
+  "order": 7,
+  "slug": {
+    "_type": "slug",
+    "current": "aco-medicaid-commercial"
+  },
+  "title": "ACOs Beyond Medicare: Medicaid and Commercial ACOs"
+}

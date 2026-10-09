@@ -1,0 +1,570 @@
+{
+  "_createdAt": "2026-05-29T22:23:50Z",
+  "_id": "hie-health-disparities-sdoh",
+  "_rev": "glqH7a4yvZFQerxZd1M8Wt",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-29T22:23:50Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Are Health Disparities and Why Do They Persist?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Health disparities are preventable differences in the burden of disease, injury, violence, or opportunities to achieve optimal health experienced by socially disadvantaged groups. These differences are not random — they follow predictable patterns tied to race, ethnicity, income, geography, language, and disability status. Where a person is born, how they grow up, where they work and live, and how they age shape their health in ways that dwarf the influence of clinical care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The data make the pattern unmistakable. In 2023, Black Americans had a life expectancy of 74.0 years — 4.4 years less than White Americans (78.4) and 7.3 years less than Hispanic Americans (81.3). Black infants died at a rate of 10.9 per 1,000 live births in 2023, more than twice the White rate of 4.5. Black maternal mortality reached 50.3 deaths per 100,000 live births — 3.5 times the White rate of 14.5 — and the gap is not closing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "These gaps persist not because of biological differences between groups, but because of cumulative structural disadvantages: income, neighborhood, education, environmental exposure, and unequal treatment within the healthcare system itself. Understanding their root causes is the first step to closing them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Health disparities are differences in health outcomes between groups that are avoidable, unnecessary, and unjust. Health equity is the state in which every person has a fair and just opportunity to attain their highest possible level of health — regardless of race, income, zip code, or language."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "vs. 78.4 yrs for White Americans — a 4.4-year gap (KFF / CDC NCHS 2023)",
+          "label": "Black Life Expectancy 2023",
+          "value": "74.0 yrs"
+        },
+        {
+          "_key": "s2",
+          "context": "3.5× the White rate of 14.5 — CDC NCHS February 2025 report",
+          "label": "Black Maternal Deaths per 100K",
+          "value": "50.3"
+        },
+        {
+          "_key": "s3",
+          "context": "More than 2× the White rate of 4.5 per 1,000 live births (KFF 2023)",
+          "label": "Black Infant Mortality per 1,000",
+          "value": "10.9"
+        },
+        {
+          "_key": "s4",
+          "context": "Medical care accounts for only 10–20% of modifiable health contributors (RWJF County Health Rankings)",
+          "label": "Health Outcomes Shaped by SDOH",
+          "value": "80–90%"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Five Domains of Social Determinants of Health"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Social determinants of health are the conditions in which people are born, grow, work, live, and age — and the broader forces shaping those conditions: economic policies, social norms, political systems, and community infrastructure. The U.S. Department of Health and Human Services' Healthy People 2030 framework organizes SDOH into five domains that interact and reinforce one another."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Economic stability is the most studied domain: poverty limits access to nutritious food, safe housing, and preventive care — driving chronic disease rates up and life expectancy down. Education shapes health literacy, employment options, and earning potential throughout life. Neighborhood and built environment determines whether people have access to grocery stores, safe places to exercise, clean air and water, and transportation to healthcare appointments. Social and community context — including discrimination, incarceration, and social cohesion — affects mental health, stress physiology, and health behaviors."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Health care access and quality is the fifth domain — and while it is what most people think of when they think of healthcare disparities, it is only one of five. Expanding coverage and reducing clinical bias matters enormously, but it cannot alone close gaps rooted in poverty, housing instability, or neighborhood disinvestment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Income, employment, food security, and housing stability. Poverty is a primary driver of poor health across all age groups and conditions.",
+          "title": "Economic Stability"
+        },
+        {
+          "_key": "step2",
+          "description": "Early childhood education, high school graduation rates, higher education, and language/literacy. Education predicts lifetime income, health behaviors, and health literacy.",
+          "title": "Education Access and Quality"
+        },
+        {
+          "_key": "step3",
+          "description": "Health insurance coverage, proximity to providers, cultural competency, and quality of care received. Uninsured and underinsured populations delay and forgo care.",
+          "title": "Health Care Access and Quality"
+        },
+        {
+          "_key": "step4",
+          "description": "Housing quality, air and water quality, access to healthy food, neighborhood safety, and transportation. ZIP code is a stronger predictor of health than genetic code.",
+          "title": "Neighborhood and Built Environment"
+        },
+        {
+          "_key": "step5",
+          "description": "Discrimination, incarceration, civic participation, social support networks, and community cohesion. Chronic stress from racism and discrimination has measurable physiological effects.",
+          "title": "Social and Community Context"
+        }
+      ],
+      "title": "Healthy People 2030 — Five SDOH Domains"
+    },
+    {
+      "_key": "s2an1",
+      "_type": "analogyBlock",
+      "analogy": "Think of the five SDOH domains as the soil in which health grows. Clinical care is like adding fertilizer — it helps, but if the soil is toxic (poverty, unsafe housing, polluted water), no amount of fertilizer will produce a healthy harvest. You have to fix the soil.",
+      "concept": "Social Determinants of Health as Upstream Drivers"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Racial and Ethnic Disparities: The Evidence"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Racial and ethnic health disparities in the United States are among the most well-documented and persistent in the developed world. They exist across nearly every health condition — cardiovascular disease, diabetes, cancer, mental health, and maternal and infant health — and they exist even after controlling for income and insurance status, pointing to systemic and structural factors including discrimination in care delivery."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Black maternal mortality illustrates the depth of the problem. In 2023, Black women died from pregnancy-related causes at a rate of 50.3 per 100,000 live births — compared to 14.5 for White women. This 3.5-fold disparity persists across income levels and education levels: Black women with college degrees experience higher maternal mortality than White women without them. Research consistently identifies delayed or inadequate care, implicit bias among providers, and preterm birth driven by chronic stress as key mechanisms."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Hispanic paradox — whereby Hispanic Americans have lower mortality than White Americans despite lower average income and insurance coverage — illustrates that SDOH operate differently across groups. Strong family cohesion, lower smoking rates, and immigration selection effects partially explain this pattern. Understanding the paradox is important: it demonstrates that SDOH are not simply about income, and that protective factors in culture and community can buffer against adverse exposures."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "In 2023, the CDC reported that Black women died from pregnancy-related causes at 50.3 per 100,000 live births — 3.5 times the White rate of 14.5. The gap did not improve between 2022 and 2023 despite overall U.S. maternal mortality declining. Studies find that even among college-educated Black women, maternal mortality exceeds that of White women without college degrees. Causes include implicit bias in pain management, later diagnosis of complications, higher rates of preeclampsia driven by chronic stress (weathering hypothesis), and systemic underinvestment in maternal care in majority-Black communities. (Source: CDC NCHS Maternal Mortality Report, February 2025)",
+      "title": "Black Maternal Mortality — A National Crisis"
+    },
+    {
+      "_key": "s3cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Black Americans",
+        "points": [
+          "Life expectancy: 74.0 years",
+          "Infant mortality: 10.9 per 1,000 live births",
+          "Maternal mortality: 50.3 per 100,000",
+          "2× rate of hypertension vs. White adults",
+          "Higher rates of diabetes, stroke, and kidney disease"
+        ]
+      },
+      "right": {
+        "label": "White Americans",
+        "points": [
+          "Life expectancy: 78.4 years",
+          "Infant mortality: 4.5 per 1,000 live births",
+          "Maternal mortality: 14.5 per 100,000",
+          "Lower prevalence of most chronic conditions",
+          "Better access to preventive and specialty care"
+        ]
+      },
+      "title": "Disparities Across Key Health Indicators (2023)"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "SDOH and Health IT: Screening, Data, and Action"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Addressing SDOH requires knowing where individual patients stand — which means screening for food insecurity, housing instability, transportation barriers, social isolation, and financial strain during clinical encounters. Organizations like NACHC, PRAPARE (Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences), and AHC (Accountable Health Communities) have developed validated SDOH screening tools now used across thousands of clinical sites."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The challenge is what happens after screening. Identifying that a patient lacks stable housing is only useful if there is a referral pathway to a housing resource — and a closed-loop system to confirm whether the referral was acted on. Community-based organizations, 211 resource networks, and social care platforms like Unite Us and findhelp are working to build those closed-loop connections between clinical and social care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS has prioritized SDOH data collection at the system level. Beginning in January 2023, CMS started collecting optional race and ethnicity data from Medicare Advantage enrollment forms. CMS also finalized the collection of race/ethnicity data through issuers' EDGE servers beginning with 2023 benefit year data. The goal is to stratify quality measures by race, ethnicity, and language — making disparities visible in reporting programs so health plans and providers are accountable for closing them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Use a validated tool (PRAPARE, AHC HRSN screener, or Gravity Project Z-codes) to identify social needs during a clinical encounter.",
+          "title": "Screen"
+        },
+        {
+          "_key": "step2",
+          "description": "Record social needs using standardized ICD-10-CM Z-codes (e.g., Z59.0 homelessness, Z59.4 food insecurity) so data is structured and reportable.",
+          "title": "Document"
+        },
+        {
+          "_key": "step3",
+          "description": "Connect patients to community resources via a social care network (211, Unite Us, findhelp, local CBOs) with a warm handoff or electronic referral.",
+          "title": "Refer"
+        },
+        {
+          "_key": "step4",
+          "description": "Receive confirmation from the community organization that the referral was received and acted on — avoiding referrals that vanish.",
+          "title": "Close the Loop"
+        },
+        {
+          "_key": "step5",
+          "description": "Aggregate SDOH data across the population to identify patterns, target interventions, and measure whether social needs are being resolved.",
+          "title": "Track and Report"
+        }
+      ],
+      "title": "SDOH Screening to Action Workflow"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS Strategy and the Road to Equity"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS has made health equity a formal pillar of its strategic plan. The agency's equity strategy centers on five priorities: expanding the collection of standardized demographic and SDOH data; identifying and reducing disparities in Medicare and Medicaid; building capacity in underserved communities; engaging in community partnerships; and closing the gap in cultural and language access to care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "In quality reporting, CMS is moving toward requiring stratification of HEDIS, MIPS, and other measures by race, ethnicity, and language — making it impossible for plans and providers to submit aggregate scores that mask disparities. The logic is simple: if a health plan serves 100,000 members and reports a 90% diabetes control rate, but the rate is 95% for White members and 75% for Black members, the aggregate score obscures a 20-percentage-point gap that requires action."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "Collecting race, ethnicity, and language data is necessary but not sufficient. The goal is not better reporting — it is closing the gaps the data reveals. Systems that collect demographic data but do not analyze it by subgroup, do not set disparity-reduction targets, and do not hold leaders accountable are performing equity theater, not achieving health equity.",
+      "title": "Data Without Action Is Not Equity"
+    },
+    {
+      "_key": "s5hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS's long-term vision: every quality measure stratified by race, ethnicity, language, and geography — so that health plans, hospitals, and clinicians are held accountable not just for average performance, but for equitable performance across every population they serve."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Health disparities are preventable differences in health outcomes tied to race, income, geography, and other social factors — not random variation or biological fate.",
+        "In 2023, Black Americans had a life expectancy 4.4 years shorter than White Americans, Black maternal mortality was 3.5 times higher than White maternal mortality, and Black infant mortality was more than twice the White rate.",
+        "Social determinants of health — economic stability, education, neighborhood, social context, and health care access — drive 80–90% of health outcomes, dwarfing the 10–20% contribution of clinical care.",
+        "Healthy People 2030 organizes SDOH into five domains; addressing health disparities requires upstream interventions in all five, not just expanding insurance coverage.",
+        "SDOH screening tools (PRAPARE, AHC HRSN, Gravity Project Z-codes) allow clinicians to identify social needs, but closed-loop referral systems are essential to translate screening into actual resource connection.",
+        "CMS began collecting standardized race and ethnicity data from Medicare Advantage enrollment forms in January 2023 and is moving toward stratifying all quality measures by demographic group to make disparities measurable and accountable.",
+        "Health equity requires moving beyond data collection to disparity-reduction targets, accountability mechanisms, and sustained investment in the communities most affected by structural disadvantage."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The CDC's February 2025 report on 2023 maternal mortality data found that Black women died at a rate of 50.3 per 100,000 live births compared to 14.5 for White women — making Black women approximately 3.5 times more likely to die from pregnancy-related causes. This gap persists even among college-educated Black women, pointing to structural and systemic factors beyond income or access.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Black women are approximately 1.5 times more likely to die from pregnancy-related causes"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Black women are approximately 3.5 times more likely to die from pregnancy-related causes"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "There is no statistically significant difference after controlling for income"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Black women have lower maternal mortality due to the Hispanic paradox"
+        }
+      ],
+      "question": "According to the CDC's 2023 data, how does the Black maternal mortality rate compare to the White maternal mortality rate in the United States?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] KFF — Racial Disparities in Life Expectancy — https://www.kff.org/racial-equity-and-health-policy/racial-disparities-in-life-expectancy/ — life expectancy by race 2023, infant mortality rates"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] CDC NCHS — Maternal Mortality Rates in the United States, 2023 — https://www.cdc.gov/nchs/data/hestat/maternal-mortality/2023/maternal-mortality-rates-2023.htm — Black maternal mortality 50.3 vs. White 14.5 per 100,000"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CDC — Social Determinants of Health — https://www.cdc.gov/about/priorities/why-is-addressing-sdoh-important.html — SDOH definition, domains, CDC framework"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] HHS Healthy People 2030 — SDOH — https://health.gov/healthypeople/priority-areas/social-determinants-health — five SDOH domains"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] CMS — The Path Forward: Improving Data to Advance Health Equity Solutions — https://www.cms.gov/blog/path-forward-improving-data-advance-health-equity-solutions — CMS equity data strategy, race/ethnicity collection 2023"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "hie-health-disparities-sdoh"
+  },
+  "title": "Health Disparities and Social Determinants of Health"
+}

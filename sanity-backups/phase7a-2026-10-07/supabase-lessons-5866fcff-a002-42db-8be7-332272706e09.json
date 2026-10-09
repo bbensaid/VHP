@@ -1,0 +1,80 @@
+{
+  "id": "5866fcff-a002-42db-8be7-332272706e09",
+  "track_id": "390266eb-3012-4441-b7ee-6e5d208af7f0",
+  "pillar": "economics",
+  "order": 1,
+  "slug": "vbc-future-directions",
+  "title": "Where VBC Is Heading: Primary Care, Equity & Scale",
+  "summary": "The push toward primary care-centric total cost of care models, the challenge of embedding equity into VBC design, and honest assessment of what VBC has and hasn't solved.",
+  "estimated_minutes": 17,
+  "objectives": [
+    {
+      "id": "obj_vf1",
+      "text": "Describe the AHEAD model and its significance for multi-payer VBC"
+    },
+    {
+      "id": "obj_vf2",
+      "text": "Explain how VBC models can be designed to advance or inadvertently undermine equity"
+    },
+    {
+      "id": "obj_vf3",
+      "text": "Articulate the honest limitations of VBC after 15 years of experimentation"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Despite 15 years of VBC, the US still underinvests in primary care relative to specialty care. Primary care receives approximately 5–7% of total health spending despite managing the majority of patient contacts. VBC models that pay for total cost of care have shown the most promise when they substantially increase primary care investment — higher per-member payments for care management, behavioral health integration, and extended access.",
+      "type": "text",
+      "heading": "The primary care investment deficit"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "CMS's State All Payer Health Equity Approaches and Development (AHEAD) model. Vermont is a participant. Aligns Medicare, Medicaid, and commercial payers around shared total cost of care targets at the state level.",
+          "icon": "ti-map",
+          "title": "AHEAD Model"
+        },
+        {
+          "body": "New CMS requirements for ACOs and MA plans to stratify quality data by race, ethnicity, and social risk — and to develop equity plans to close gaps.",
+          "icon": "ti-scale",
+          "title": "Equity in VBC"
+        },
+        {
+          "body": "CMS Primary Care First (PCF) and similar models that dramatically increase primary care revenue in exchange for total cost of care accountability.",
+          "icon": "ti-home-heart",
+          "title": "Advanced Primary Care"
+        },
+        {
+          "body": "Collaborative Care Model payment for integrated behavioral health in primary care — finally reimbursed under CPT 99492-99494 codes.",
+          "icon": "ti-brain",
+          "title": "Behavioral health integration"
+        }
+      ],
+      "heading": "Emerging directions in VBC"
+    },
+    {
+      "body": "After 15+ years of experimentation: VBC has not bent the cost curve at the population level. National health spending continues to grow faster than GDP. VBC has produced real but modest savings in specific programs. The field has learned that payment reform alone — without workforce transformation, social determinants investment, and technology alignment — is insufficient. The next chapter of VBC will need to address these structural gaps.",
+      "type": "callout",
+      "heading": "What VBC has not solved",
+      "variant": "warning"
+    },
+    {
+      "hint": "Interview someone from Vermont's ACO (OneCare Vermont) or the Green Mountain Care Board about participating in the AHEAD model, what multi-payer alignment means in practice, and how Vermont's all-payer approach differs from single-payer Medicare models. Recommended: 8–12 minutes.",
+      "type": "audio_slot",
+      "label": "Vermont's AHEAD model: a participant's view"
+    }
+  ],
+  "tags": [
+    "primary care",
+    "AHEAD",
+    "equity",
+    "VBC future",
+    "total cost of care"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T21:56:21.50167+00:00",
+  "updated_at": "2026-05-27T19:41:40.974037+00:00",
+  "sanity_slug": "vbc-future-directions"
+}

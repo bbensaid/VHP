@@ -1,0 +1,518 @@
+{
+  "_createdAt": "2026-05-31T20:21:37Z",
+  "_id": "medicaid-who-it-covers",
+  "_rev": "glqH7a4yvZFQerxZdQsr7V",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T20:21:37Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Four Major Populations"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicaid does not cover everyone who is poor. It covers specific groups of low-income people defined by federal law and state choices. The program organizes its enrollees into four major populations: children, non-disabled (often called \"non-elderly\") adults, people who qualify on the basis of a disability, and adults age 65 and older."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Historically, eligibility was \"categorical\" — you had to fit into a recognized category (such as a child, a pregnant woman, a parent, an aged person, or a person with a disability) and also have a low income. The 2010 Affordable Care Act added a fifth pathway for low-income adults generally, but the categorical structure still shapes how the program works, how benefits are set, and how spending is distributed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Understanding these four groups is the key to understanding Medicaid's finances, because the populations that make up most of the enrollment are not the populations that drive most of the spending — a tension that runs through nearly every Medicaid policy debate."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicaid enrollees fall into four major groups: children, non-disabled adults, people eligible due to disability, and adults 65 and older. Children are the largest group by enrollment, but older adults and people with disabilities drive the majority of spending."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Children: The Largest Group"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Children are the single largest group of Medicaid enrollees. Together with the Children's Health Insurance Program (CHIP), Medicaid covers a large share of all American children, financing a substantial fraction of all births and serving as the backbone of pediatric coverage for low-income families."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Children also receive Medicaid's most comprehensive benefit guarantee: Early and Periodic Screening, Diagnostic, and Treatment, known as EPSDT. EPSDT requires states to cover periodic and as-needed medical, vision, hearing, and dental screening for children under 21 — and, crucially, to cover any service needed to \"correct or ameliorate\" a child's physical or mental condition, even if that service is otherwise optional for adults."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite being the largest enrollment group, children are relatively inexpensive to cover because most are healthy. In fiscal year 2023, children represented roughly 35 percent of full-benefit enrollment but only about 15 to 16 percent of Medicaid spending."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "EPSDT is the most comprehensive pediatric benefit in American health coverage: states must cover any medically necessary service for an eligible child, even services that are optional for adult enrollees."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Elderly and People With Disabilities: Where the Money Goes"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The populations that drive Medicaid spending are adults 65 and older and people who qualify on the basis of a disability. Together these two groups make up a minority of enrollment but the majority of spending, because they tend to have chronic conditions, complex needs, and high rates of long-term care use."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The per-enrollee numbers make the gap vivid. Spending per enrollee is highest for people with disabilities (around $20,950) and older adults (around $20,194) — roughly six times the per-enrollee spending for children (around $3,321), according to KFF analysis of federal data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is also why Medicaid is the nation's primary payer for long-term services and supports (LTSS). Medicare generally does not pay for extended nursing-home stays or ongoing personal care, so Medicaid fills that gap — covering nursing facility care and home-based care for people who have exhausted their resources."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "But only ~15-16% of spending (Medicaid.gov FY2023 Beneficiary Profile)",
+          "label": "Children: Share of Enrollment",
+          "value": "~35%"
+        },
+        {
+          "_key": "s2",
+          "context": "From a minority of total enrollment (Medicaid.gov FY2023)",
+          "label": "Aged + Disabled: Share of Spending",
+          "value": "~51%"
+        },
+        {
+          "_key": "s3",
+          "context": "About 6x the per-child amount (KFF)",
+          "label": "Per-Enrollee Spending: Disability",
+          "value": "~$20,950"
+        },
+        {
+          "_key": "s4",
+          "context": "Lowest of the major groups (KFF)",
+          "label": "Per-Enrollee Spending: Children",
+          "value": "~$3,321"
+        }
+      ]
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Dual Eligibles: Covered by Both Medicare and Medicaid"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A particularly important subgroup is \"dual eligibles\" — people enrolled in both Medicare and Medicaid. These are typically low-income older adults or people with disabilities who qualify for Medicare but also meet Medicaid's income and asset limits. For them, Medicare is the primary payer and Medicaid wraps around it, covering premiums, cost-sharing, and benefits Medicare does not, such as long-term care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Dual eligibles are a small share of enrollees but a hugely disproportionate share of cost. As of 2024, roughly 13.7 million Americans were enrolled in both programs. This high-need population accounts for a disproportionate share — about a third — of combined Medicare and Medicaid spending, which is why aligning and coordinating their care is a major policy priority."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "Medicaid and Medicare are the first- and second-largest public payers for long-term services and supports, together accounting for roughly 63.6 percent of all LTSS spending nationwide in 2023.\nBecause Medicare generally does not cover extended nursing-home or personal-care needs, Medicaid is the de facto national long-term care program — a role most enrollees and families do not anticipate until they need it.",
+      "title": "Medicaid as the Payer for Long-Term Care"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Mandatory vs. Optional Benefits"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Just as eligibility groups are split into mandatory and optional, so are benefits. Federal law requires every state Medicaid program to cover a core set of mandatory benefits. These include inpatient and outpatient hospital services, physician services, laboratory and x-ray services, nursing facility services, family planning, federally qualified health center and rural health clinic services, and EPSDT for children."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Beyond that floor, states may choose to cover a wide range of optional benefits — such as prescription drugs (covered by every state in practice), dental care for adults, physical therapy, and home and community-based services. Because these are optional, the exact benefit package an adult receives depends heavily on which state they live in."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This mandatory-versus-optional structure, layered on top of the mandatory-versus-optional eligibility groups, is what makes Medicaid so variable. Two adults with the same income and the same diagnosis can receive very different coverage simply because they live in different states."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Mandatory Benefits (every state)",
+        "points": [
+          "Inpatient & outpatient hospital",
+          "Physician services",
+          "Laboratory & x-ray",
+          "Nursing facility services",
+          "Family planning",
+          "EPSDT for children under 21"
+        ]
+      },
+      "right": {
+        "label": "Common Optional Benefits (state choice)",
+        "points": [
+          "Prescription drugs",
+          "Adult dental & vision",
+          "Physical & occupational therapy",
+          "Home & community-based services",
+          "Case management",
+          "Personal care services"
+        ]
+      },
+      "title": "Medicaid Benefits: Required vs. State Choice"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "Some \"optional\" benefits are nearly universal in practice — every state Medicaid program covers prescription drugs, for example, even though drug coverage is technically optional under federal law. \"Optional\" describes the legal category, not how common the benefit actually is.",
+      "title": "Optional Does Not Mean Rare"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Medicaid covers four major populations: children, non-disabled adults, people eligible due to disability, and adults age 65 and older.",
+        "Children are the largest enrollment group (~35% of full-benefit enrollees) but account for only about 15-16% of spending because most are healthy.",
+        "Older adults and people with disabilities are a minority of enrollment but drive roughly half of all Medicaid spending.",
+        "Per-enrollee spending is about six times higher for people with disabilities and older adults than for children.",
+        "Dual eligibles (~13.7 million people in 2024) are enrolled in both Medicare and Medicaid and account for a disproportionate share of combined spending.",
+        "Medicaid is the nation's primary payer for long-term services and supports because Medicare generally does not cover extended nursing-home or personal care.",
+        "Benefits are split into mandatory (required in every state, like hospital and physician services and EPSDT) and optional (state choice, like adult dental and home-based services)."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Children are the largest group by enrollment but the least expensive per person — about $3,321 per enrollee versus roughly $20,000 for older adults and people with disabilities. Because those higher-need groups use far more long-term and complex care, they drive the majority of Medicaid spending even though they are a minority of enrollees.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Children are charged lower provider rates by law"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Most children are healthy, so per-enrollee spending is low compared with older adults and people with disabilities"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Children are only covered by CHIP, not Medicaid"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "States are not required to cover children's care"
+        }
+      ],
+      "question": "Children make up the largest share of Medicaid enrollment. Why do they account for a relatively small share of spending?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Eligibility Policy — https://www.medicaid.gov/medicaid/eligibility-policy — four major eligibility groups and mandatory vs optional eligibility"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] 2023 Medicaid and CHIP Beneficiary Profile — https://www.medicaid.gov/medicaid/quality-of-care/downloads/beneficiary-profile-2023.pdf — children ~35% of enrollment but ~15-16% of spending; aged+disabled ~51% of spending"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] A Look at Variation in Medicaid Spending Per Enrollee by Group — https://www.kff.org/medicaid/a-look-at-variation-in-medicaid-spending-per-enrollee-by-group-and-across-states/ — per-enrollee spending: disability ~$20,950, aged ~$20,194, children ~$3,321"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Mandatory & Optional Medicaid Benefits — https://www.medicaid.gov/medicaid/benefits/mandatory-optional-medicaid-benefits — mandatory benefit list including hospital, physician, lab/x-ray, nursing facility, EPSDT"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] A Profile of Medicare-Medicaid Enrollees (Dual Eligibles) — https://www.kff.org/medicare/a-profile-of-medicare-medicaid-enrollees-dual-eligibles/ — ~13.7M dual eligibles in 2024; disproportionate share of combined spending"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Who Pays for Long-Term Services and Supports? — https://www.congress.gov/crs-product/IF10343 — Medicaid and Medicare account for ~63.6% of all LTSS spending in 2023; Medicaid primary LTSS payer"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicaid-101",
+  "order": 2,
+  "slug": {
+    "_type": "slug",
+    "current": "medicaid-who-it-covers"
+  },
+  "title": "Who Medicaid Covers: Populations & Benefits"
+}

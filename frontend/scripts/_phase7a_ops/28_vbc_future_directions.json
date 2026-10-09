@@ -1,0 +1,117 @@
+{
+ "ops": [
+  {
+   "docs": [
+    "vbc-future-directions"
+   ],
+   "mirror": true,
+   "key": "s3p3",
+   "old": "CMS introduced caps on early-year risk-score growth (with a higher ceiling for High-Needs ACOs) and a cumulative cap of 3% on risk-score growth from 2019 through 2026,",
+   "new": "CMS added a 3% cap on Standard ACOs' cumulative risk-score growth from 2019 through 2026 (High Needs ACOs face an asymmetric 8% cap on 2023–2026 growth for newly voluntarily aligned beneficiaries),",
+   "claim": "REACH PY2026 risk-score caps described as 'early-year' caps with a cumulative 3% cap for all",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS, 'ACO REACH Model Performance Year 2026 Model Update – Quick Reference': additional 3% cap on risk score growth 2019-2026 (Standard ACOs); asymmetric 8% cap 2023-2026 for High Needs ACOs (newly voluntarily aligned); Standard ACO blend 60%/40% historical/regional in PY2026; no mention of HEBA renaming",
+   "note": "Restated precisely as CMS publishes it."
+  },
+  {
+   "docs": [
+    "vbc-future-directions"
+   ],
+   "mirror": true,
+   "key": "s3p3",
+   "old": "CMS also renamed the model’s Health Equity Benchmark Adjustment to the \"population adjustment,\" reframing it as an account for the share of beneficiaries who are dually eligible or receive the Part D Low-Income Subsidy.",
+   "new": "CMS’s financial operating guides now call the model’s Health Equity Benchmark Adjustment the \"Population Adjustment\"; for PY2026 it combines a new Community Deprivation Index with beneficiaries’ dual-eligibility and Part D Low-Income Subsidy status.",
+   "claim": "HEBA renamed 'population adjustment' as a PY2026 update; based only on dual/LIS share",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS, ACO REACH PY2026 Financial Operating Guide: Overview, sec. 4.8 'Population Adjustment' (Community Deprivation Index + dual eligibility + LIS status); PY2025 guide (Rev. 1.2) already uses 'Population Adjustment'; CMS, 'ACO REACH Model Performance Year 2026 Model Update – Quick Reference': additional 3% cap on risk score growth 2019-2026 (Standard ACOs); asymmetric 8% cap 2023-2026 for High Needs ACOs (newly voluntarily aligned); Standard ACO blend 60%/40% historical/regional in PY2026; no mention of HEBA renaming",
+   "note": "Rename is real but predates PY2026 and is not in the cited quick reference; composition corrected (adds CDI)."
+  },
+  {
+   "docs": [
+    "vbc-future-directions"
+   ],
+   "mirror": true,
+   "key": "tk",
+   "old": "and the renaming of the Health Equity Benchmark Adjustment to the \"population adjustment.\"",
+   "new": "while CMS’s guides now call the Health Equity Benchmark Adjustment the \"Population Adjustment.\"",
+   "claim": "Takeaway: rename presented as a PY2026 change",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS, ACO REACH PY2026 Financial Operating Guide: Overview, sec. 4.8 'Population Adjustment' (Community Deprivation Index + dual eligibility + LIS status); PY2025 guide (Rev. 1.2) already uses 'Population Adjustment'",
+   "note": "Aligned with body."
+  },
+  {
+   "docs": [
+    "vbc-future-directions"
+   ],
+   "mirror": true,
+   "key": "src6",
+   "old": "60/40 benchmark blend, \"population adjustment\" rename.",
+   "new": "60/40 benchmark blend for Standard ACOs.",
+   "claim": "Source [6] cited for the rename it does not contain",
+   "verdict": "FABRICATED",
+   "sources": "CMS, 'ACO REACH Model Performance Year 2026 Model Update – Quick Reference': additional 3% cap on risk score growth 2019-2026 (Standard ACOs); asymmetric 8% cap 2023-2026 for High Needs ACOs (newly voluntarily aligned); Standard ACO blend 60%/40% historical/regional in PY2026; no mention of HEBA renaming",
+   "note": "Source description corrected; rename now cited to [8]."
+  },
+  {
+   "docs": [
+    "vbc-future-directions"
+   ],
+   "mirror": true,
+   "key": "s5p2",
+   "old": "combined with the expansion of patient-reported outcome measures across the portfolio, means",
+   "new": "combined with the strategy’s push to connect people to their own health data, means",
+   "claim": "Strategy includes 'expansion of patient-reported outcome measures across the portfolio'",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS Innovation Center, 'Strategy to Make America Healthy Again' page: three pillars; protect the taxpayer; data access; downside risk — no mention of patient-reported outcome measures",
+   "note": "Not in the strategy; replaced with what it does say."
+  },
+  {
+   "docs": [
+    "vbc-future-directions"
+   ],
+   "mirror": true,
+   "key": "tk",
+   "old": "prevention and patient-reported data at the core",
+   "new": "prevention and patient data access at the core",
+   "claim": "Takeaway: 'patient-reported data at the core'",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS Innovation Center, 'Strategy to Make America Healthy Again' page: three pillars; protect the taxpayer; data access; downside risk — no mention of patient-reported outcome measures",
+   "note": "Aligned with body."
+  },
+  {
+   "docs": [
+    "vbc-future-directions"
+   ],
+   "after": "src7",
+   "insert": {
+    "_key": "src8",
+    "_type": "block",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_key": "src8s",
+      "_type": "span",
+      "marks": [],
+      "text": "[8] CMS: \"ACO REACH Model PY2026 Financial Operating Guide: Overview\" — https://www.cms.gov/priorities/innovation/files/aco-reach-py26-financial-ops-guide-ovw.pdf — Section 4.8, Population Adjustment (Community Deprivation Index, dual eligibility, Low-Income Subsidy status)."
+     }
+    ]
+   },
+   "claim": "Added source for Population Adjustment",
+   "verdict": "REAL",
+   "sources": "CMS, ACO REACH PY2026 Financial Operating Guide: Overview, sec. 4.8 'Population Adjustment' (Community Deprivation Index + dual eligibility + LIS status); PY2025 guide (Rev. 1.2) already uses 'Population Adjustment'",
+   "note": "New citation block."
+  },
+  {
+   "log_only": true,
+   "doc": "sanity vbc-future-directions",
+   "block_key": "s1p2,s1sg1,s2p1,s2p2,s3p1,s3p2,s4p1,s4p2,src1-src7",
+   "claim": "CMMI strategy May 13, 2025 (3 pillars, protect taxpayer, prevention in every model, data access, independent/rural providers, downside risk); PCF and MCP terminated early 2025; REACH 2023-2026; LEAD 10-year from Jan 1, 2027",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "CMS Innovation Center strategy page; AHA News 2025-05-13; CMS 2025-03-12 early-termination announcement; Healthcare Dive (LEAD: 10-year period, begins after REACH ends end of 2026, rural add-on); curl status 200 for src1-3,5-7, src4 healthmanagement.com 403 to bots",
+   "status": "LEFT",
+   "note": "No fabricated quotes, studies, people or media. 2030-goal-not-restated claim consistent with strategy page (no 2030 mention)."
+  }
+ ]
+}

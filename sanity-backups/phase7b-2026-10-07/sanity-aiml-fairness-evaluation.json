@@ -1,0 +1,617 @@
+{
+  "_createdAt": "2026-05-28T18:29:37Z",
+  "_id": "aiml-fairness-evaluation",
+  "_rev": "rL4Cn5Sfo5Z8rzPmDvnGPA",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T04:34:49Z",
+  "body": [
+    {
+      "_key": "s1h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Fairness Evaluation Is Not Optional"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Artificial intelligence is reshaping clinical decision-making at a pace that has outrun the frameworks healthcare institutions use to assess quality and safety. Algorithms now influence who receives preventive care outreach, how emergency department resources are allocated, which patients are flagged for readmission risk, and whether an insurance claim is approved or denied. When those algorithms harbor bias — and evidence shows many do — the consequences are not abstract statistical errors. They are missed diagnoses, delayed treatment, and widened health inequities affecting real patients, disproportionately from communities that have historically faced discrimination in healthcare."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The landmark 2019 study by Ziad Obermeyer and colleagues, published in Science, examined a widely deployed commercial algorithm used by health systems across the United States to identify high-risk patients for care management programs. The study found that, at any given risk score, Black patients were significantly sicker than White patients — carrying on average 26 percent more chronic conditions at the 97th risk percentile. The root cause was straightforward: the algorithm predicted future healthcare costs, not illness severity. Because structural inequities in the U.S. healthcare system mean that Black patients historically spend less on care for the same level of illness, lower predicted cost was mistakenly read as lower clinical need. Fixing the algorithm — by training it to predict illness burden directly — increased the percentage of Black patients receiving additional care from 17.7 percent to 46.5 percent. That is not a marginal improvement; it is a near-tripling of access for an entire patient population."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Regulatory pressure is intensifying on every front. The FDA published its AI/ML-Based Software as a Medical Device (SaMD) Action Plan in January 2021, which explicitly identified evaluation of algorithm bias and robustness as a core pillar. The Office of the National Coordinator for Health Information Technology (ONC) finalized its HTI-1 Rule in January 2024, which for the first time imposes mandatory transparency requirements for predictive algorithms embedded in certified health IT — covering more than 96 percent of U.S. hospitals. Compliance deadlines began December 31, 2024. On the civil rights side, HHS finalized an updated Section 1557 rule in 2024, which explicitly prohibits algorithmic discrimination by health plans and providers receiving federal funds. Covered entities are required to monitor third-party AI tools for discriminatory patterns and implement risk management programs. Organizations that fail to audit their AI systems are not just taking a patient safety risk — they are taking a legal one."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Black patients vs. White patients at the same risk score in the Obermeyer 2019 Science study",
+          "label": "More Chronic Conditions",
+          "value": "26%"
+        },
+        {
+          "_key": "s2",
+          "context": "Proportion of Black patients receiving additional care after bias remediation in the Obermeyer study",
+          "label": "Care Access Increase",
+          "value": "17.7% → 46.5%"
+        },
+        {
+          "_key": "s3",
+          "context": "Share of U.S. hospitals using certified health IT now subject to ONC HTI-1 algorithm transparency requirements (2024)",
+          "label": "Hospital Coverage",
+          "value": "96%+"
+        },
+        {
+          "_key": "s4",
+          "context": "Date HHS nondiscrimination rule explicitly banning algorithmic discrimination took effect for covered healthcare entities",
+          "label": "Section 1557 Effective",
+          "value": "July 2024"
+        }
+      ]
+    },
+    {
+      "_key": "s1warn",
+      "_type": "warningBlock",
+      "message": "The ONC HTI-1 Final Rule (effective Dec 31, 2024) requires certified EHR vendors and their health system clients to disclose information about AI/predictive algorithms — including performance across demographic subgroups. Ignoring bias audits is no longer a strategic choice; it is a compliance violation.",
+      "title": "Compliance Is Now Mandatory"
+    },
+    {
+      "_key": "s2h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources of Bias in Healthcare AI"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Before you can measure and correct bias, you must understand where it enters the system. Healthcare AI bias is not a single problem with a single fix — it is a family of distinct failure modes, each arising at a different point in the model development pipeline. Conflating them leads to interventions that address the wrong root cause. There are four primary categories that every healthcare AI practitioner must be able to identify: training data bias, label bias, feature proxy bias, and measurement bias."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Training data bias arises when the dataset used to train a model does not represent the population the model will be deployed on. If a radiology AI for pneumonia detection is trained almost entirely on chest X-rays from large academic medical centers with predominantly White patients, its performance will be measurably worse when deployed at community hospitals serving more diverse populations. This is not a theoretical concern: multiple studies have shown that FDA-cleared dermatology AI tools perform significantly worse on darker skin tones, largely because clinical imaging datasets historically underrepresented patients with Fitzpatrick skin types IV through VI. Label bias occurs when the ground-truth labels used during training are themselves products of prior human or systemic biases. If physicians historically undertreated pain in Black patients — a well-documented pattern in the clinical literature — then a model trained to predict \"received adequate pain treatment\" will encode that discriminatory history as a target signal and replicate it. The algorithm learns not what should happen, but what did happen, including all of the prejudice embedded in those past decisions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Feature proxy bias is subtler and particularly dangerous. Seemingly neutral features can serve as proxies for race, gender, or socioeconomic status in ways that are not obvious during model design. Zip code, insurance type, prior utilization patterns, and even the specific ICD-10 codes documented (which vary by clinical setting and documentation culture) can all act as demographic proxies. A model that learns \"patients with Medicaid and a zip code in this census tract are lower priority\" is effectively discriminating by race and income — even if race is never an explicit input. Measurement bias is the fourth category, and the pulse oximetry case is its most striking healthcare illustration. Pulse oximeters measure blood oxygen saturation by passing infrared light through the skin; because the device was historically designed and validated on subjects with lighter skin pigmentation, higher melanin concentrations systematically cause overestimation of oxygen saturation. Research published in the New England Journal of Medicine and confirmed by subsequent studies showed that Black patients are approximately three times more likely to suffer from occult hypoxemia — dangerously low oxygen levels that the device reports as normal. When AI systems are then trained on pulse oximetry data from electronic health records, they inherit this physical measurement bias as a data artifact, with potentially fatal downstream consequences."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Bias Type",
+        "points": [
+          "Training Data Bias — underrepresentation in the training set",
+          "Label Bias — ground truth reflects historical discrimination",
+          "Feature Proxy Bias — neutral features encode protected attributes",
+          "Measurement Bias — the data collection instrument itself is inaccurate for subgroups"
+        ]
+      },
+      "right": {
+        "label": "Healthcare Example",
+        "points": [
+          "Dermatology AI trained on images skewing toward lighter skin tones",
+          "Pain management model trained on historically undertreated Black patient records",
+          "Risk score using zip code, insurance type, or prior utilization as proxies for race/SES",
+          "Pulse oximeters overestimating SpO2 in patients with darker skin pigmentation"
+        ]
+      },
+      "title": "Four Bias Types at a Glance"
+    },
+    {
+      "_key": "s3h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Fairness Metrics: What to Actually Measure"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Measuring fairness in machine learning requires choosing a mathematical criterion — and that choice is not neutral. Different definitions of fairness encode different ethical commitments, and each can be satisfied while dramatically violating another. The four metrics that appear most frequently in healthcare AI fairness audits are demographic parity, equalized odds, predictive parity (also called calibration within groups), and overall calibration across subgroups. Understanding what each measures — and what it misses — is foundational to conducting a meaningful audit."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Demographic parity requires that the proportion of positive predictions (e.g., \"high risk\") be equal across demographic groups, regardless of the true underlying prevalence of disease or risk. It is easy to compute and intuitively appealing: if 20 percent of White patients are classified as high-risk, then 20 percent of Black patients should be too. But demographic parity is agnostic to ground truth. If two groups genuinely differ in disease prevalence — which they often do, due to the very social determinants of health that create health disparities — then forcing equal prediction rates requires either over-classifying the lower-prevalence group or under-classifying the higher-prevalence group, both of which are forms of error. Equalized odds, formalized by Hardt, Price, and Srebro in 2016, requires that the model achieve equal true positive rates and equal false positive rates across groups. In healthcare terms: the model should be equally good at identifying truly sick patients from both groups (equal sensitivity), and equally conservative about misidentifying healthy patients as sick (equal specificity). This is often the most clinically meaningful fairness criterion because it directly concerns the accuracy of the model for each group, not just the volume of predictions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Predictive parity (calibration within groups) requires that when the model assigns a risk score of, say, 0.7, approximately 70 percent of patients with that score actually experience the predicted outcome — and this calibration should hold equally well for each demographic subgroup. A model can be well-calibrated overall but poorly calibrated within groups: scores might be accurate on average but systematically over- or underestimate risk for Black patients, elderly patients, or rural patients when examined in isolation. This is precisely what the Obermeyer study found: the commercial algorithm was well-calibrated for costs but systematically under-calibrated for illness burden in Black patients. Here is where the mathematics becomes uncomfortable for practitioners who want a single perfect metric: Chouldechova proved in 2017 — in a paper titled \"Fair Prediction with Disparate Impact\" published in the journal Big Data — that when protected groups have unequal base rates of the outcome, it is mathematically impossible for any binary classifier to simultaneously achieve equal false positive rates, equal false negative rates, and predictive parity across those groups, except in the degenerate case of a perfect predictor. This is the fairness impossibility theorem. It is not a limitation of current technology or computational power — it is an algebraic constraint. No algorithm can satisfy all three criteria at once when base rates differ. Healthcare practitioners must therefore choose which fairness criterion matters most for their specific clinical context and be transparent about that choice."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3analogy",
+      "_type": "analogyBlock",
+      "analogy": "Imagine you are a teacher grading two classes of students where Class A genuinely has more advanced preparation than Class B. You can grade everyone on the same curve (demographic parity — equal pass rates), or you can grade so that the score accurately predicts future academic performance for everyone (predictive parity), or you can ensure that equally well-prepared students from both classes have equal chances of passing (equalized odds). But you cannot do all three simultaneously when the underlying preparation levels differ. Choosing which fairness criterion to apply is a values decision, not a technical one.",
+      "concept": "The Fairness Impossibility Theorem in Chouldechova 2017: when base rates differ across groups, demographic parity, equalized odds, and predictive parity cannot all be satisfied by the same model at the same time."
+    },
+    {
+      "_key": "s3sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Year Chouldechova proved that calibration and error rate balance cannot coexist when groups have unequal base rates (Big Data journal)",
+          "label": "Impossibility Theorem",
+          "value": "2017"
+        },
+        {
+          "_key": "s2",
+          "context": "Demographic parity, equalized odds, and predictive parity cannot be simultaneously satisfied when outcome prevalence differs across groups",
+          "label": "Cannot All Be Met",
+          "value": "3 Metrics"
+        },
+        {
+          "_key": "s3",
+          "context": "Year Hardt, Price, and Srebro formally defined equalized odds as requiring equal TPR and FPR across demographic groups",
+          "label": "Equalized Odds Defined",
+          "value": "2016"
+        },
+        {
+          "_key": "s4",
+          "context": "Within-group calibration is often the most actionable metric in healthcare: are scores equally accurate for each patient subgroup?",
+          "label": "Most Clinically Relevant",
+          "value": "Calibration"
+        }
+      ]
+    },
+    {
+      "_key": "s4h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Practical Audit Methods"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Knowing which fairness metrics to target is necessary but not sufficient. Healthcare organizations need a structured audit workflow that produces actionable findings rather than a single aggregate performance number. A robust fairness audit uses at least four complementary methods: subgroup performance stratification, disparate impact testing, SHAP-based feature importance audits, and counterfactual testing. Each method reveals a different dimension of potential bias, and using only one creates blind spots."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Subgroup performance stratification is the foundational step and should be mandatory for any deployed clinical AI model. It involves disaggregating standard performance metrics — AUC, sensitivity, specificity, positive predictive value, F1 score — by every available demographic dimension: race and ethnicity, sex and gender, age group, insurance type, language preference, and geographic region. A model reporting 85 percent AUC overall can simultaneously achieve 91 percent AUC for White patients and 74 percent AUC for Black patients — and the aggregate number obscures the disparity entirely. Reporting only aggregate performance for clinical AI is analogous to reporting only average drug efficacy without acknowledging that the drug was barely tested in women: it is an incomplete and potentially misleading characterization of safety and effectiveness. Disparate impact testing goes one step further by applying the statistical framework developed in employment discrimination law to healthcare predictions. The standard \"four-fifths rule\" checks whether the rate of positive predictions (or favorable outcomes) for a protected group is at least 80 percent of the rate for the most-advantaged group. If a readmission risk model flags 30 percent of White patients for care management but only 18 percent of Black patients — despite equivalent disease burden — that gap exceeds the threshold for disparate impact and warrants immediate investigation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "SHAP (SHapley Additive exPlanations), introduced by Lundberg and Lee in their seminal NeurIPS 2017 paper \"A Unified Approach to Interpreting Model Predictions,\" provides a theoretically grounded method for attributing the contribution of each input feature to an individual prediction. In a fairness audit context, SHAP values are used to examine whether different features dominate predictions for different demographic groups. If \"prior emergency department utilization\" is the top predictor of risk for Black patients but \"number of specialist visits\" dominates for White patients, that asymmetry may reflect access disparities rather than true clinical differences — and a model that is not aware of this distinction is encoding socioeconomic barriers as clinical risk signals. Counterfactual testing probes the model by constructing hypothetical patients who are identical in all clinically relevant features except for a single demographic characteristic — race, sex, age — and asking whether the prediction changes. A fair model should, in principle, produce identical predictions for clinically identical patients regardless of demographic category. In practice, because race and socioeconomic features are correlated throughout the training data, counterfactual testing frequently surfaces proxy discrimination that would otherwise be invisible in aggregate performance metrics."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Identify all demographic dimensions relevant to your patient population and the clinical use case. Collect self-reported race/ethnicity, sex, age, insurance status, and preferred language. Ensure sample sizes within each subgroup are sufficient for statistically meaningful comparisons.",
+          "title": "Define Scope and Protected Groups"
+        },
+        {
+          "_key": "step2",
+          "description": "Compute AUC, sensitivity, specificity, PPV, NPV, and calibration curves separately for each subgroup. Document gaps. An acceptable disparity threshold must be established before the audit, not after seeing results.",
+          "title": "Stratify All Performance Metrics by Subgroup"
+        },
+        {
+          "_key": "step3",
+          "description": "Using the four-fifths rule or an equivalent statistical test, examine whether positive prediction rates differ significantly across groups in a way that cannot be explained by genuine clinical differences. Flag any gap exceeding your pre-defined threshold.",
+          "title": "Apply Disparate Impact Testing"
+        },
+        {
+          "_key": "step4",
+          "description": "Generate SHAP summary plots separately for each demographic group. Compare which features drive high-risk predictions in each group. Investigate whether features that act as socioeconomic or geographic proxies are dominant predictors for historically marginalized groups.",
+          "title": "Run SHAP Feature Importance Analysis by Subgroup"
+        },
+        {
+          "_key": "step5",
+          "description": "Create matched patient pairs identical except for the protected attribute and observe prediction changes. Quantify the average counterfactual effect of race or gender. Any effect not explainable by genuine clinical reasoning is evidence of proxy discrimination.",
+          "title": "Conduct Counterfactual Testing"
+        },
+        {
+          "_key": "step6",
+          "description": "Produce a formal bias audit report including all stratified metrics, disparate impact results, top SHAP drivers by group, and counterfactual effect sizes. Classify findings by severity and assign remediation owners with deadlines.",
+          "title": "Document Findings and Determine Remediation Path"
+        }
+      ],
+      "title": "Conducting a Healthcare AI Fairness Audit"
+    },
+    {
+      "_key": "s5h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "From Audit to Action: Remediation and Ongoing Monitoring"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "An audit that produces findings without a remediation pathway is an academic exercise. Healthcare organizations discovering bias in a deployed AI model face a spectrum of options that differ in complexity, cost, effectiveness, and the trade-offs they introduce. The intervention that is easiest to implement is rarely the most durable, and the intervention that addresses root cause is rarely the fastest. Understanding what each approach achieves — and what it sacrifices — is essential for making defensible clinical governance decisions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Pre-processing interventions address bias before the model ever trains. Resampling strategies — either oversampling underrepresented groups or undersampling overrepresented ones — attempt to correct the representational imbalance in the training data. Reweighting assigns higher loss penalties to errors on minority-group patients during training, forcing the optimizer to treat their predictions as more important. These approaches have the advantage of addressing root-cause data problems, but they are only available when an organization controls the training pipeline, which is often not the case with commercial third-party models. Post-processing calibration is the most common intervention for organizations using vendor AI: it accepts the model's outputs as given and applies group-specific threshold adjustments to balance performance across subgroups. For example, if a model has a 0.5 decision threshold and produces systematically lower scores for Black patients, lowering the threshold for that group to 0.42 can equalize sensitivity without retraining the underlying model. The limitation is that post-processing calibration is a corrective patch, not a cure — it compensates for bias without eliminating its source, and calibration drift over time can reintroduce the disparity it was meant to fix."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Model replacement — retiring a biased model and substituting one built with fairness constraints from the outset — is the most thorough intervention but also the most disruptive. In practice, many healthcare organizations have found that the organizational friction of replacing an entrenched vendor product is underestimated during the audit phase. For this reason, continuous monitoring frameworks are increasingly recognized as the necessary complement to any initial remediation. Monitoring involves scheduling recurring subgroup performance evaluations on the live patient population — not just the original validation cohort — because population shifts, changes in clinical practice, and data pipeline modifications can all introduce new disparities in a model that was fair at launch. The ONC HTI-1 rule implicitly acknowledges this by requiring ongoing transparency about algorithm performance rather than a one-time disclosure. Best practice, reflected in guidance from both the FDA and academic literature on responsible AI in healthcare, calls for automated drift alerts that trigger a formal re-audit whenever subgroup performance gaps exceed a predefined threshold. Fairness is not a certification earned at deployment — it is an ongoing property of a system that must be continuously verified."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Approach",
+        "points": [
+          "Resampling / Reweighting (pre-processing)",
+          "Post-processing Calibration",
+          "In-processing Fairness Constraints",
+          "Model Replacement"
+        ]
+      },
+      "right": {
+        "label": "Key Trade-off",
+        "points": [
+          "Effective at root cause but requires training data access and may reduce overall accuracy",
+          "No retraining needed, deployable quickly, but addresses symptoms not root cause — drift risk",
+          "Optimizes for a chosen fairness criterion during training; forces explicit trade-off with accuracy",
+          "Most durable fix but highest disruption, cost, and organizational resistance"
+        ]
+      },
+      "title": "Remediation Strategies: Trade-offs"
+    },
+    {
+      "_key": "s5hl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hls",
+          "_type": "span",
+          "marks": [],
+          "text": "Continuous monitoring is not optional post-remediation. Population demographics shift, data pipelines change, and clinical practice evolves — all of which can silently reintroduce bias into a model that was audited as fair at launch. Schedule subgroup performance re-evaluations at minimum every six months for any AI model in clinical use."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "twblock",
+      "_type": "takeawayBlock",
+      "points": [
+        "Healthcare AI bias is documented and consequential: the Obermeyer 2019 Science study showed a widely used risk algorithm assigned lower priority to Black patients who were on average 26% sicker than White patients at the same score.",
+        "Bias enters through multiple channels — training data underrepresentation, historically biased labels, feature proxies for race/SES, and measurement instruments (like pulse oximeters) that perform differently across demographic groups.",
+        "No single fairness metric is complete. Chouldechova's 2017 impossibility theorem proves that demographic parity, equalized odds, and predictive parity cannot all be satisfied simultaneously when outcome base rates differ across groups.",
+        "Subgroup performance stratification is the essential first audit step: always disaggregate AUC, sensitivity, specificity, and calibration by race/ethnicity, sex, age, and insurance status — never report only aggregate performance.",
+        "SHAP (Lundberg & Lee, NeurIPS 2017) enables feature-level fairness auditing by revealing whether different variables dominate predictions for different demographic groups, surfacing proxy discrimination invisible in aggregate metrics.",
+        "Post-processing calibration is the fastest remediation for commercial models (adjust group-specific thresholds without retraining) but is a patch, not a cure — it must be combined with ongoing monitoring for calibration drift.",
+        "ONC's HTI-1 Final Rule (2024) and HHS's updated Section 1557 rule (2024) have made algorithm transparency and anti-discrimination compliance legally mandatory for covered health IT and providers — bias audits are now a regulatory requirement, not a best practice.",
+        "Fairness is not a one-time certification. Continuous monitoring with automated drift alerts is essential: population shifts and pipeline changes can silently reintroduce bias into a model that was fair at deployment."
+      ]
+    },
+    {
+      "_key": "quizblock",
+      "_type": "knowledgeCheck",
+      "explanation": "Post-processing calibration adjusts group-specific decision thresholds using the existing model outputs, allowing the hospital to equalize sensitivity across demographic groups without requiring access to the training pipeline or a full model retrain — making it the fastest viable intervention for a deployed commercial model. While it does not eliminate the underlying root cause of the disparity, it is a defensible immediate measure that can be implemented while a longer-term remediation plan (such as working with the vendor to retrain on more representative data) is developed and evaluated.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Report the 88% aggregate AUC and note the subgroup gap in documentation"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Apply post-processing calibration by adjusting the decision threshold separately for each demographic group to equalize sensitivity"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Retrain the model immediately using synthetic data augmentation for Black patients"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Disable the AI model for Black patients until a new model is built"
+        }
+      ],
+      "question": "A hospital's care management AI achieves 88% overall AUC. A fairness audit reveals it achieves 93% AUC for White patients but only 76% AUC for Black patients. The hospital wants to apply a quick remediation without retraining the model. Which approach is most appropriate as an immediate intervention?"
+    },
+    {
+      "_key": "srch2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srch2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Obermeyer Z, Powers B, Vogeli C, Mullainathan S. \"Dissecting racial bias in an algorithm used to manage the health of populations.\" Science. 2019;366(6464):447-453. — https://www.science.org/doi/10.1126/science.aax2342 — Supports the finding that a widely used commercial risk algorithm systematically underestimated the illness burden of Black patients due to using healthcare costs as a proxy for clinical need."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Chouldechova A. \"Fair prediction with disparate impact: A study of bias in recidivism prediction instruments.\" Big Data. 2017;5(2):153-163. — https://www.liebertpub.com/doi/10.1089/big.2016.0047 — Supports the fairness impossibility theorem: when protected groups have unequal outcome base rates, no binary classifier can simultaneously achieve equal false positive rates, equal false negative rates, and predictive parity."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Lundberg SM, Lee SI. \"A Unified Approach to Interpreting Model Predictions.\" Advances in Neural Information Processing Systems (NeurIPS). 2017. — https://arxiv.org/abs/1705.07874 — Supports the description of SHAP (SHapley Additive exPlanations) as a theoretically grounded framework for attributing feature contributions to individual predictions, widely used in fairness audits."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Office of the National Coordinator for Health Information Technology (ONC). \"Health Data, Technology, and Interoperability: Certification Program Updates, Algorithm Transparency, and Information Sharing (HTI-1 Final Rule).\" Federal Register. January 9, 2024. — https://www.federalregister.gov/documents/2024/01/09/2023-28857 — Supports the description of ONC algorithm transparency requirements for certified health IT, including disclosure of AI/predictive algorithm performance across demographic subgroups, effective December 31, 2024."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] HHS Office for Civil Rights. \"Section 1557 of the Affordable Care Act — Nondiscrimination in Health Programs and Activities Final Rule.\" 2024. — https://www.hhs.gov/civil-rights/for-individuals/section-1557/faqs/index.html — Supports the requirement that covered healthcare providers and health plans implement risk management programs to prevent algorithmic discrimination and conduct ongoing monitoring of AI tools, effective July 2024."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Sjoding MW, Dickson RP, Iwashyna TJ, Gay SE, Valley TS. \"Racial Bias in Pulse Oximetry Measurement.\" New England Journal of Medicine. 2020;383(25):2477-2478. — https://pmc.ncbi.nlm.nih.gov/articles/PMC8723900/ — Supports the measurement bias section: pulse oximeters systematically overestimate oxygen saturation in patients with darker skin pigmentation, with Black patients approximately three times more likely to suffer undetected occult hypoxemia."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] FDA. \"Artificial Intelligence/Machine Learning (AI/ML)-Based Software as a Medical Device (SaMD) Action Plan.\" January 2021. — https://healthtechmagazine.net/article/2021/05/fda-plans-oversight-ai-medical-devices-addressing-bias — Supports the five-pillar FDA framework including evaluation of algorithm bias and robustness as a mandated focus area for AI/ML medical device oversight."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "aiml-fairness-evaluation"
+  },
+  "title": "AI Fairness Evaluation: How to Measure and Audit Machine Learning Models for Bias"
+}

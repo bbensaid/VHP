@@ -1,0 +1,637 @@
+{
+  "_createdAt": "2026-05-28T18:30:51Z",
+  "_id": "aiml-equity-procurement",
+  "_rev": "glqH7a4yvZFQerxZd4iW9R",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T04:34:40Z",
+  "body": [
+    {
+      "_key": "s1h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Standard Procurement Fails for AI"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "When a hospital buys a new infusion pump or EHR module, traditional procurement is well-suited to the task. Committees evaluate technical specifications, integration requirements, vendor stability, and total cost of ownership. Performance criteria are objective and measurable: uptime guarantees, interface response times, regulatory clearance. These frameworks work because conventional software behaves deterministically — the same input reliably produces the same output, and failures are generally visible and traceable. AI systems break almost every one of these assumptions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Modern healthcare AI tools — from sepsis prediction engines to radiology triage software to care-management risk scores — are statistical models whose behavior is shaped by the training data they consumed. That data reflects historical patterns of care, and historical patterns of care in the United States are deeply racially stratified. An algorithm trained on predominantly white, well-insured patient populations will encode those patterns and produce outputs calibrated for that population. When deployed across a diverse patient panel, it will perform differently — often worse — for patients whose physiology, healthcare utilization history, and social determinants of health were underrepresented in training. Standard RFP criteria asking only for FDA 510(k) clearance or aggregate AUC statistics will miss this entirely."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "There is also the problem of performance drift. Unlike a database query that either returns correct results or does not, an AI model can degrade silently as the patient population shifts, as clinical practices evolve, or as upstream data pipelines change. A procurement process that evaluates performance at the point of sale but installs no ongoing monitoring obligation leaves health systems flying blind. The result is that equity risks are baked in at purchase and never surfaced until harm has already occurred. Building equity into procurement — not as an afterthought but as a first-order criterion — is the single most cost-effective intervention a health system can make to prevent algorithmically amplified disparities."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Traditional Software",
+        "points": [
+          "Deterministic outputs — same input yields same output",
+          "Failures are visible and generate error logs",
+          "Performance verified once at deployment",
+          "Vendor liability is relatively clear",
+          "Bias risk is low — logic is explicit and auditable"
+        ]
+      },
+      "right": {
+        "label": "Healthcare AI Systems",
+        "points": [
+          "Probabilistic outputs — vary with patient subgroup",
+          "Failures can be silent and produce plausible-looking wrong answers",
+          "Performance drifts over time with population and data changes",
+          "Liability for discriminatory outcomes falls on the health system (HHS Section 1557)",
+          "Bias is embedded in training data and invisible without deliberate subgroup analysis"
+        ]
+      },
+      "title": "Traditional Software vs. Healthcare AI Procurement Risks"
+    },
+    {
+      "_key": "s2h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Algorithmic Bias Problem in Healthcare AI"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The evidence that algorithmic bias causes real harm to real patients is not theoretical. It has been documented in peer-reviewed literature across multiple clinical domains. Perhaps the most widely cited case involves a commercial care-management algorithm used by hospitals and insurers to allocate additional care resources — such as care coordination and disease management programs — to the patients who need them most. In a landmark 2019 paper published in Science, Ziad Obermeyer and colleagues at the University of California Berkeley dissected this algorithm and found systematic racial bias. At any given risk score, Black patients were considerably sicker than white patients with the same score, meaning the algorithm was consistently underestimating need in Black patients. The root cause was not that race was an explicit variable — it was not. The cause was that the algorithm predicted healthcare cost as a proxy for health need. Because structural inequities mean that less money is spent on Black patients with the same conditions than on white patients, the algorithm inferred that they must be healthier. The study estimated that this bias reduced the number of Black patients identified for extra care by more than half. The algorithm was in use across health systems serving more than 200 million people in the United States."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A second domain where algorithmic bias causes measurable clinical harm is pulse oximetry, and the lessons for AI procurement are direct. Pulse oximeters estimate blood oxygen saturation using light absorption differences between oxygenated and deoxygenated hemoglobin. They were developed and validated primarily in lighter-skinned populations, and melanin interferes with measurement accuracy. A 2020 study published in the New England Journal of Medicine quantified the clinical consequences: among patients with a pulse oximetry reading of 92–96%, occult hypoxemia — actual arterial oxygen saturation below 88% — was found in 11.7% of measurements in Black patients but only 3.6% in white patients. This means Black patients were roughly three times more likely to have a falsely reassuring oxygen reading. When AI clinical decision support systems incorporate pulse oximetry data as a feature — as many sepsis and early warning models do — that device-level bias becomes embedded in the AI output, compounding inequity at scale."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Dermatology AI illustrates a third failure mode: training data that does not represent the population to be served. A major 2022 study published in Science Advances created the Diverse Dermatology Images dataset and evaluated state-of-the-art AI models against it. The results were striking. The Stanford DeepDerm model, which had achieved accuracy praised as matching dermatologist-level performance in earlier trials, demonstrated sensitivity of 0.69 for lighter skin tones but only 0.23 for darker skin tones — a nearly threefold disparity in the ability to correctly identify malignant lesions. The underlying cause was straightforward: less than 5% of the training images in leading dermatology datasets depicted dark skin tones (Fitzpatrick scale V–VI). A procurement team asking only whether the model achieved high aggregate accuracy would have cleared this tool for deployment without detecting that it was substantially less reliable for a significant segment of the patient population it would serve."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "The Obermeyer 2019 study found the Optum algorithm reduced Black patients identified for extra care by more than half",
+          "label": "Black Patients Missed",
+          "value": ">50%"
+        },
+        {
+          "_key": "s2",
+          "context": "Black patients were roughly three times more likely to have falsely normal pulse oximetry readings (NEJM 2020)",
+          "label": "Higher Occult Hypoxemia Rate",
+          "value": "3×"
+        },
+        {
+          "_key": "s3",
+          "context": "Less than 5% of dermatology AI training images included Fitzpatrick V–VI (dark) skin tones (Daneshjou et al. 2022)",
+          "label": "Dark Skin in Dermatology Datasets",
+          "value": "<5%"
+        },
+        {
+          "_key": "s4",
+          "context": "The Optum algorithm was used by hospitals and insurers serving over 200 million people annually",
+          "label": "Patients Exposed to Biased Risk Score",
+          "value": "200M+"
+        }
+      ]
+    },
+    {
+      "_key": "s2warn",
+      "_type": "warningBlock",
+      "message": "A model that is 91% accurate overall may be 97% accurate for white patients and 79% accurate for Black patients. Aggregate performance metrics, which are what most RFPs request, will not reveal this. Always demand stratified performance reports.",
+      "title": "Bias Is Not Visible in Aggregate Statistics"
+    },
+    {
+      "_key": "s3h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Equity-Centered Evaluation Criteria"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Building an equity-centered evaluation process requires health systems to demand specific artifacts and commitments from vendors before a contract is signed. The Coalition for Health AI (CHAI), a national multi-stakeholder body that released its draft Responsible Health AI Framework for public comment in June 2024, provides detailed guidance here. CHAI's Assurance Standards Guide — developed over two years with clinical, operational, technical, and regulatory leaders — establishes criteria across the full AI adoption lifecycle, including explicit equity assessment domains: accountability, fairness, fitness for purpose, reliability and validity, and transparency. The HEAAL framework (Health Equity Across the AI Lifecycle), published in peer-reviewed literature, similarly structures 37 step-by-step procedures for evaluating existing AI solutions across these same equity domains. These frameworks give procurement teams a defensible, standards-grounded checklist rather than improvised ad hoc criteria."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The single most important artifact to demand from any AI vendor is stratified performance data — model accuracy, sensitivity, specificity, and positive predictive value reported separately for each demographic subgroup your patient population includes: race, ethnicity, sex, age group, insurance status, and primary language. Vendors who cannot or will not provide this data are telling you something important: either the analysis has not been done, or the results are unfavorable. Neither is acceptable. Equally important is transparency about training data demographics. Ask vendors for a data card or similar documentation that specifies where training data was sourced, what proportion of training examples came from each demographic group, and how the training population compares to your own patient panel. Significant demographic mismatch between training data and deployment context is a direct predictor of performance disparities."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Model cards, a framework for structured model transparency documentation developed by Google researchers and published in 2018, provide a standardized template for exactly this information: intended use cases, out-of-scope uses, training data composition, evaluation results disaggregated by subgroup, and known limitations. Requiring vendors to supply a completed model card is a concrete, implementable procurement criterion that immediately separates vendors who have invested in responsible development from those who have not. The American Medical Association's AI governance toolkit, developed with Manatt Health, also recommends that health systems require vendor evaluation that includes bias testing results as part of its eight-step framework for implementing and managing AI. Health systems should additionally require evidence of independent third-party audit for any high-stakes clinical AI — risk scores, diagnostic AI, treatment recommendation systems — because self-reported performance has obvious incentive problems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Require sensitivity, specificity, PPV, and NPV broken out by race, ethnicity, sex, age group, and insurance status. Reject aggregate-only statistics.",
+          "title": "Stratified Performance Report"
+        },
+        {
+          "_key": "step2",
+          "description": "Ask for a data card or equivalent document specifying the demographic composition of training data and how it compares to your patient population.",
+          "title": "Training Data Demographics"
+        },
+        {
+          "_key": "step3",
+          "description": "For any high-stakes clinical AI, require evidence of bias testing conducted by an independent auditor, not just vendor self-report.",
+          "title": "Independent Third-Party Audit"
+        },
+        {
+          "_key": "step4",
+          "description": "Require a completed model card following the Google/Mitchell et al. framework: intended use, subgroup evaluations, known limitations.",
+          "title": "Model Card"
+        },
+        {
+          "_key": "step5",
+          "description": "Before broad rollout, require a pilot study that validates the model on your own patient data and reports subgroup performance.",
+          "title": "Validation on Your Own Patient Population"
+        },
+        {
+          "_key": "step6",
+          "description": "Demand contractual commitments to ongoing bias monitoring with results shared at defined intervals — quarterly at minimum for high-stakes tools.",
+          "title": "Post-Deployment Monitoring Commitment"
+        }
+      ],
+      "title": "Equity Evaluation Checklist: 6 Things to Demand Before Signing"
+    },
+    {
+      "_key": "s3call",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3calls",
+          "_type": "span",
+          "marks": [],
+          "text": "CHAI's 2024 Responsible Health AI Framework aligns with the National Academy of Medicine's AI Code of Conduct, the White House Blueprint for an AI Bill of Rights, and NIST AI frameworks — giving health systems a coalition-backed, legally defensible foundation for equity-centered procurement requirements."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s4h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Contract and Governance Requirements"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Equity evaluation during procurement is necessary but not sufficient. The regulatory landscape has evolved to make post-deployment governance a legal obligation, not merely a best practice. In April 2024, the HHS Office of Civil Rights finalized a rule under Section 1557 of the Affordable Care Act that explicitly addresses AI discrimination. The rule took effect July 5, 2024, with affirmative requirements to identify and mitigate AI discrimination risks taking effect May 1, 2025. Critically, the rule places liability on covered healthcare organizations — hospitals, health systems, insurers — rather than on AI vendors. If an AI tool you are using produces discriminatory outcomes based on race, color, national origin, sex, age, or disability, your organization is responsible, not the algorithm's developer. This legal reality makes contractual governance clauses in AI vendor agreements a matter of institutional risk management, not optional ethics compliance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Every AI vendor contract for a high-stakes clinical tool should include several non-negotiable provisions. First, a bias monitoring service level agreement: the vendor must provide quarterly reports showing model performance stratified by demographic subgroup, flagging any performance degradation or emerging disparities. The contract should specify a threshold — commonly a greater-than-10% performance difference across demographic groups is used as a trigger — at which the vendor is contractually obligated to investigate, remediate, and provide a remediation timeline. Second, data access for independent auditing: your organization must retain the right to run the vendor's model against your own data and share de-identified outputs with independent auditors. Vendors who resist this clause are creating opacity that is incompatible with your legal obligations under Section 1557."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Third, and often overlooked, is the right to exit without penalty when disparate impact is identified. Standard software contracts typically include significant termination fees and minimum commitment periods. AI contracts should include a carve-out: if independent audit or ongoing monitoring establishes that the tool produces disparate outcomes that cannot be remediated within a defined period — typically 90 to 180 days — the health system retains the right to terminate the contract without penalty. This is not punitive; it reflects the reality that health systems cannot remain contractually locked into tools that expose patients to algorithmic discrimination and expose the organization to civil rights liability. Additionally, contracts should require incident reporting: vendors must notify the health system within a defined window if they discover model failures, training data issues, or known biases in related product versions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex",
+      "_type": "exampleBlock",
+      "content": "Bias Monitoring SLA: Vendor provides quarterly subgroup performance reports. Performance gap >10% across demographic groups triggers mandatory remediation within 90 days.\n\nData Access for Audit: Health system retains right to run model outputs against its own patient data and share de-identified results with independent third-party auditors.\n\nDisparate Impact Exit Clause: If independent audit identifies disparate impact that is not remediated within 180 days, health system may terminate with 30-day notice and no penalty fees.\n\nIncident Notification: Vendor must notify health system within 72 hours of discovering any model defect, known bias, or data integrity issue affecting the deployed version.\n\nTraining Data Change Notification: Vendor must notify health system 60 days before any retraining of the model on new data, with updated training demographics documentation.",
+      "title": "Key Contract Clauses for High-Stakes Clinical AI"
+    },
+    {
+      "_key": "s5h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Building an Internal AI Equity Review Process"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Procurement criteria and contract clauses protect your organization from the outside in. But sustained protection from algorithmic harm requires building internal capacity to govern AI from the inside out. Stanford Medicine launched RAISE-Health — Responsible AI for Safe and Equitable Health — in June 2023, a joint initiative with the Stanford Institute for Human-Centered Artificial Intelligence (HAI). The initiative, co-led by Dean Lloyd Minor and HAI co-director Fei-Fei Li, aims to define structured frameworks for ethical standards and safeguards and to convene multidisciplinary innovators, experts, and decision-makers. One of its key recommendations is that health systems establish dedicated AI governance committees that include not just clinical and technical staff, but also community representatives, ethicists, and patient advocates — voices that are rarely present when AI tools are evaluated through traditional IT procurement channels."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A functional AI equity review committee should evaluate every clinical AI tool through an equity lens before deployment and maintain ongoing oversight after deployment. Membership should span clinical informatics, pharmacy, nursing leadership, a bioethicist or health equity specialist, patient services, legal and compliance, and representation from the communities your health system serves — particularly communities of color and non-English-speaking populations who face compounded algorithmic risk. The committee should operate through a structured review process: evaluating vendor documentation using a standardized scorecard aligned to CHAI or HEAAL criteria, requiring pilot validation on the health system's own patient data before broad deployment, establishing a monitoring dashboard that tracks model performance stratified by race, ethnicity, language, and other relevant dimensions in real time, and maintaining a clear incident reporting pathway for clinicians who observe unexpected or concerning AI behavior."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Community input is not a procedural formality — it is a substantive governance requirement. Health systems that serve high proportions of Medicaid beneficiaries, immigrant populations, or communities with historical experiences of medical mistrust need to include those communities in decisions about which AI tools will shape their care. This means community advisory boards with genuine deliberative authority over AI deployment decisions, not post-hoc notification. It means translating AI governance materials into the languages your patients speak. And it means being transparent with patients when AI tools inform their care — a transparency requirement that Section 1557 compliance frameworks are increasingly codifying. Organizations that treat AI governance as a technical IT function rather than a community accountability function will find themselves unable to meet the emerging legal, ethical, and community trust obligations that equity-centered AI deployment demands."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5anal",
+      "_type": "analogyBlock",
+      "analogy": "Think of an AI equity review committee the way you think of an Institutional Review Board for clinical research. Just as an IRB provides independent, multidisciplinary oversight of research protocols to protect human subjects — with authority to pause or reject studies that pose unacceptable risk — an AI equity committee provides independent oversight of clinical AI deployments to protect patients from algorithmic harm, with authority to delay or reject tools that cannot demonstrate equitable performance.",
+      "concept": "AI governance committees function as an IRB for deployed algorithms — providing independent multidisciplinary oversight with real authority to protect patients from inequitable AI systems."
+    },
+    {
+      "_key": "s5steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Include clinical informatics, nursing leadership, pharmacy, bioethics, legal/compliance, patient services, and community representatives. Establish that the committee has authority to delay or reject AI deployments — not merely advisory standing.",
+          "title": "Define Membership and Authority"
+        },
+        {
+          "_key": "step2",
+          "description": "Adopt a structured evaluation tool aligned to CHAI or HEAAL criteria. Score every clinical AI tool on training data demographics, subgroup performance, audit status, and model card completeness before contract execution.",
+          "title": "Build a Standardized Scorecard"
+        },
+        {
+          "_key": "step3",
+          "description": "Before broad rollout, every high-stakes clinical AI must be piloted on a representative subset of your patient population with stratified performance analysis reviewed by the committee.",
+          "title": "Require Pre-Deployment Pilot Validation"
+        },
+        {
+          "_key": "step4",
+          "description": "Work with informatics teams to build dashboards that track AI model performance — false positive rates, alert rates, concordance with clinician decisions — stratified by patient demographics, updated at minimum monthly.",
+          "title": "Deploy a Real-Time Monitoring Dashboard"
+        },
+        {
+          "_key": "step5",
+          "description": "Create a clear, low-friction mechanism for clinicians to flag unexpected or concerning AI behavior — similar to a safety event report. Investigate every report and feed findings back into vendor oversight.",
+          "title": "Establish an Incident Reporting Pathway"
+        },
+        {
+          "_key": "step6",
+          "description": "Convene community advisory board input before deploying any AI tool that will affect populations with histories of medical mistrust or structural underservice. Document their input and your responses.",
+          "title": "Engage Community Advisors in Deployment Decisions"
+        }
+      ],
+      "title": "Standing Up an AI Equity Review Committee: A Practical Blueprint"
+    },
+    {
+      "_key": "s5hl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hls",
+          "_type": "span",
+          "marks": [],
+          "text": "The HHS Section 1557 final rule (effective July 5, 2024) places legal liability for AI discrimination on covered healthcare organizations, not vendors. Health systems cannot outsource their equity obligations to algorithm developers — they must build internal governance capacity to meet those obligations."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "tkwy",
+      "_type": "takeawayBlock",
+      "points": [
+        "Standard procurement processes designed for traditional software are not equipped to detect or prevent algorithmic bias in AI — health systems need equity-specific evaluation frameworks.",
+        "The 2019 Obermeyer Science paper demonstrated that a widely used care-management algorithm reduced Black patients identified for additional care by more than half, by using healthcare cost as a proxy for health need.",
+        "The 2020 NEJM study found Black patients were roughly three times more likely to have falsely normal pulse oximetry readings, meaning AI systems using pulse ox data can compound existing device bias.",
+        "Always demand stratified performance data — sensitivity, specificity, PPV, NPV — broken out by race, ethnicity, sex, age, and insurance status. Aggregate accuracy statistics can mask severe subgroup disparities.",
+        "Require vendors to supply a completed model card (following the Google/Mitchell et al. framework), training data demographics documentation, and evidence of independent third-party audit for high-stakes tools.",
+        "AI vendor contracts must include a bias monitoring SLA, data access rights for independent audit, a disparate-impact exit clause, and an incident notification requirement.",
+        "Under HHS Section 1557 (effective July 2024/May 2025), covered healthcare organizations bear legal liability for AI discrimination — not vendors. Internal governance capacity is a legal necessity, not optional.",
+        "An AI equity review committee — modeled on an IRB with genuine authority over deployment decisions — should include community representatives and operate before, during, and after AI tool deployment."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "The Obermeyer study found that race was not an explicit variable in the algorithm. The bias arose because the model used healthcare cost to predict health need. Because structural racism causes less money to be spent on Black patients with the same chronic conditions as white patients, the algorithm incorrectly inferred that those Black patients were healthier. The study estimated this reduced the number of Black patients identified for additional care by more than half.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The algorithm explicitly used race as a predictor variable to lower risk scores for Black patients."
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The algorithm predicted healthcare cost as a proxy for health need, and structural inequities cause less to be spent on Black patients with identical conditions."
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The algorithm was trained exclusively on white patient data and had never been tested on diverse populations."
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Black patients have lower rates of chronic disease, so the algorithm correctly assigned them lower risk scores."
+        }
+      ],
+      "question": "According to the 2019 Obermeyer Science paper, what was the root cause of racial bias in the widely used care-management algorithm?"
+    },
+    {
+      "_key": "srch2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srch2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Obermeyer Z, Powers B, Vogeli C, Mullainathan S. \"Dissecting racial bias in an algorithm used to manage the health of populations.\" Science. 2019;366(6464):447–453. https://www.science.org/doi/10.1126/science.aax2342 — Documents that the Optum care-management algorithm reduced Black patients identified for extra care by more than half due to cost-as-proxy bias."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Sjoding MW, Dickson RP, Iwashyna TJ, Gay SE, Valley TS. \"Racial Bias in Pulse Oximetry Measurement.\" New England Journal of Medicine. 2020;383:2477–2478. https://www.nejm.org/doi/full/10.1056/NEJMc2029240 — Demonstrates that Black patients had occult hypoxemia at 11.7% vs. 3.6% in white patients at the same pulse oximetry reading, a roughly threefold disparity."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Daneshjou R, Smith MP, Sun MD, Rotemberg V, Zou J. \"Disparities in dermatology AI performance on a diverse, curated clinical image set.\" Science Advances. 2022;8(32):eabq6147. https://www.science.org/doi/10.1126/sciadv.abq6147 — Finds that leading dermatology AI models show nearly threefold sensitivity disparity between light and dark skin tones, driven by under-5% dark-skin representation in training data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Coalition for Health AI (CHAI). \"CHAI Releases Draft Responsible Health AI Framework for Public Comment.\" June 26, 2024. https://www.chai.org/blog/chai-releases-draft-responsible-health-ai-framework-for-public-comment — Provides the Assurance Standards Guide and Assurance Reporting Checklists covering accountability, fairness, fitness for purpose, reliability, and transparency across the AI adoption lifecycle."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] HHS Office of Civil Rights. \"Nondiscrimination in Health Programs and Activities.\" Final Rule, Section 1557, ACA. Federal Register, May 6, 2024. https://www.federalregister.gov/documents/2024/05/06/2024-08711/nondiscrimination-in-health-programs-and-activities — Rule effective July 5, 2024 (affirmative AI requirements from May 1, 2025) placing liability for AI discrimination on covered healthcare organizations rather than algorithm vendors."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Mitchell M, Wu S, Zaldivar A, et al. \"Model Cards for Model Reporting.\" ACM FAccT 2019. https://research.google/pubs/model-cards-for-model-reporting/ — Original framework for standardized AI transparency documentation including training data composition, subgroup evaluations, and known limitations; widely adopted as a procurement transparency requirement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] Stanford Medicine / Stanford HAI. \"Stanford Medicine and Stanford Institute for Human-Centered AI announce RAISE-Health.\" June 14, 2023. https://med.stanford.edu/news/all-news/2023/06/raise-health.html — Announcement of RAISE-Health initiative co-led by Dean Lloyd Minor and Fei-Fei Li to define frameworks for ethical and equitable AI governance in health systems, including multidisciplinary committee models."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src8s",
+          "_type": "span",
+          "marks": [],
+          "text": "[8] Cossgriff CV, et al. \"Development and preliminary testing of Health Equity Across the AI Lifecycle (HEAAL).\" medRxiv, October 2023. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11081364/ — Describes the HEAAL framework with 37 step-by-step procedures for equity assessment across five domains (accountability, fairness, fitness for purpose, reliability, transparency) for healthcare AI evaluation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "aiml-equity-procurement"
+  },
+  "title": "Equity-Centered AI Procurement: How Healthcare Organizations Should Evaluate and Buy AI Tools"
+}

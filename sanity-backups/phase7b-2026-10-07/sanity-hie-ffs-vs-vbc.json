@@ -1,0 +1,670 @@
+{
+  "_createdAt": "2026-05-29T22:14:24Z",
+  "_id": "hie-ffs-vs-vbc",
+  "_rev": "2zkDeD7zc2Ko2DfFHjQs5v",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-29T22:14:24Z",
+  "body": [
+    {
+      "_key": "s1h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two Philosophies of Payment"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "For most of the twentieth century, fee-for-service was the unchallenged foundation of American healthcare finance. Hospitals billed for admissions, physicians billed for office visits, and laboratories billed for every test they ran. The logic was straightforward: you perform a service, you get paid for it. As healthcare grew in complexity and cost, however, that logic began to reveal a profound structural flaw. The United States now spends approximately 18 percent of its gross domestic product on healthcare — more than any other high-income nation — yet ranks well below peers on life expectancy, avoidable mortality, and access to primary care. The spending and the outcomes were moving in opposite directions, and the payment system was at least partly responsible."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The volume-to-value shift began in earnest with the Affordable Care Act of 2010, which created the Center for Medicare and Medicaid Innovation (CMMI) and charged it with testing alternative payment models at scale. The underlying premise was that if you change what you pay for, you change what providers do. Instead of rewarding every procedure and encounter, value-based models reward providers for keeping patients healthy, reducing unnecessary hospitalizations, and coordinating care across settings. Changing the payment architecture, in other words, was seen as the most reliable lever for changing clinical behavior."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The stakes could not be higher. Medicare and Medicaid together cover more than 160 million Americans and account for the largest single share of national health expenditure. How CMS structures its payment models shapes what every hospital, physician practice, and post-acute facility does in practice. Understanding the difference between fee-for-service and value-based care — not just in theory but in operational detail — is essential for anyone working in health informatics, policy, or administration."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1co",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1cos",
+          "_type": "span",
+          "marks": [],
+          "text": "Fee-for-Service (FFS): A payment model in which providers receive a separate reimbursement for each individual service, procedure, or encounter they deliver. Payment rates are set prospectively (e.g., via Medicare's physician fee schedule or DRG-based inpatient rates) and are independent of whether the service improves the patient's health. The incentive is to deliver more services, not better outcomes."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Studies estimate that up to 30% of FFS healthcare spending may be attributable to unnecessary or low-value services",
+          "label": "Low-Value Care Spending",
+          "value": "Up to 30%"
+        },
+        {
+          "_key": "s2",
+          "context": "CMS has set a goal to have 100% of Medicare beneficiaries in an accountable care relationship by 2030",
+          "label": "CMS VBC Goal by 2030",
+          "value": "100%"
+        },
+        {
+          "_key": "s3",
+          "context": "A record 476 ACOs participated in the Medicare Shared Savings Program in performance year 2024",
+          "label": "MSSP ACOs in 2024",
+          "value": "476"
+        },
+        {
+          "_key": "s4",
+          "context": "CMS reported $2.4 billion in net Medicare savings from MSSP ACOs in performance year 2024 — the highest since program inception",
+          "label": "Medicare Net Savings from MSSP 2024",
+          "value": "$2.4B"
+        }
+      ]
+    },
+    {
+      "_key": "s2h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Fee-for-Service Works — and Why It Creates Problems"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "In a fee-for-service system, every billable interaction has a code. Physicians use Current Procedural Terminology (CPT) codes to document what they did; hospitals use Diagnosis-Related Groups (DRGs) for inpatient stays and Ambulatory Payment Classifications (APCs) for outpatient services. Each code maps to a payment rate set by a prospective payment system. Medicare's physician fee schedule converts CPT codes into relative value units (RVUs) — composite measures of physician work, practice expense, and malpractice cost — then multiplies by a conversion factor to produce a dollar amount. More RVUs mean more revenue; no RVUs mean no revenue. Prevention, care coordination, and phone calls that keep patients out of the hospital generate few or no billable events under traditional FFS."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The perverse incentive chain that FFS creates is well documented. A cardiologist who orders an echocardiogram generates revenue; a primary care physician who spends forty minutes counseling a diabetic patient on lifestyle changes may barely cover overhead. Surgical specialties that perform high-RVU procedures are systematically better compensated than primary and preventive care, which contributes to specialist shortages in rural areas and underinvestment in chronic disease management. Studies suggest that up to 30 percent of FFS spending may be attributable to low-value or unnecessary services — imaging ordered out of habit, procedures performed on patients unlikely to benefit, hospitalizations that could have been avoided with better outpatient management."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Fragmentation is FFS's other structural legacy. Because each provider bills independently, specialists and primary care physicians have little financial incentive to communicate or coordinate. A patient with heart failure, diabetes, and chronic kidney disease may see five separate specialists who each optimize for their own domain without a unified treatment plan. Hospital readmissions — often preventable with proper discharge planning and follow-up — generate additional admissions revenue under FFS rather than creating a financial penalty. This architecture does not fail by accident; it produces exactly the behaviors the payment system rewards."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2an",
+      "_type": "analogyBlock",
+      "analogy": "Fee-for-service is like paying a mechanic by the part they replace, not by whether the car runs — the incentive is to find more parts to replace, not to fix the root problem.",
+      "concept": "FFS payment incentivizes volume of services rather than patient outcomes, just as paying per repair part incentivizes more replacements rather than a well-functioning vehicle."
+    },
+    {
+      "_key": "s2warn",
+      "_type": "warningBlock",
+      "message": "Under FFS, a provider who avoids an unnecessary hospitalization actually loses revenue. The system penalizes prevention and efficiency because neither generates a billable event. A well-coordinated care team that keeps a high-risk patient out of the emergency department is financially punished relative to one that admits the same patient for observation.",
+      "title": "Volume ≠ Value"
+    },
+    {
+      "_key": "s2cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Fee-for-Service",
+        "points": [
+          "Paid per service/procedure",
+          "Rewards volume",
+          "Fragmented care delivery",
+          "No incentive for prevention",
+          "Provider bears no cost risk",
+          "Payment on service delivery"
+        ]
+      },
+      "right": {
+        "label": "Value-Based Care",
+        "points": [
+          "Paid for outcomes and quality",
+          "Rewards efficiency",
+          "Coordinated care teams",
+          "Incentivizes prevention and chronic disease management",
+          "Provider shares financial risk",
+          "Payment tied to performance metrics"
+        ]
+      },
+      "title": "Fee-for-Service vs. Value-Based Care"
+    },
+    {
+      "_key": "s3h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Value-Based Care Spectrum"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Value-based care is not a single payment model — it is a spectrum ranging from modest quality bonuses layered on top of FFS to full capitation in which providers receive a fixed monthly payment per patient regardless of how many services they deliver. The common thread is that provider payment is linked, in some way, to quality metrics, outcome measures, or total cost of care benchmarks. The degree of financial risk the provider accepts varies dramatically across the spectrum, and that risk level largely determines how strongly the model changes provider behavior."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Pay-for-performance (P4P) sits at the low-risk end. Providers continue to receive FFS base payments but earn small bonuses — or face small penalties — based on performance on quality metrics such as HbA1c control rates, cancer screening adherence, or patient experience scores. Because the adjustments are typically small relative to total revenue, P4P alone has a limited effect on clinical practice. Shared savings models, like Medicare ACOs, occupy the middle of the spectrum: providers take responsibility for a defined population and share in any savings achieved versus a spending benchmark, with more advanced tracks adding downside risk. Full capitation — common in staff-model HMOs and some Medicaid managed care contracts — places the full utilization risk on the provider organization, creating the strongest incentive to invest in prevention and care management."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS has structured its Alternative Payment Model (APM) framework to encourage providers to move along the spectrum toward greater accountability. The Quality Payment Program designates certain two-sided risk models as Advanced APMs; clinicians who meet participation thresholds in Advanced APMs earn a 5 percent incentive bonus (applicable to payment years 2020 through 2024) and are exempt from the Merit-based Incentive Payment System (MIPS) reporting requirements. By 2026, a record 82.8 percent of MSSP ACOs were in Advanced APM tracks — evidence that the financial incentives are working to push providers toward greater risk-sharing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Small bonuses or penalties based on quality metrics; provider still paid FFS base rate; lowest risk transfer. Common examples include MIPS quality performance adjustments and commercial insurer quality withholds.",
+          "title": "Pay-for-Performance (P4P)"
+        },
+        {
+          "_key": "step2",
+          "description": "Provider takes on a defined population; if total spending comes in below the benchmark, the ACO earns a share of savings. In upside-only tracks, providers face no penalty for spending above benchmark — moderate, one-sided risk.",
+          "title": "Shared Savings (ACOs)"
+        },
+        {
+          "_key": "step3",
+          "description": "Provider earns a share of savings AND owes a share of losses versus benchmark. Stronger accountability than upside-only; qualifies as an Advanced APM under the Quality Payment Program, unlocking the APM incentive bonus.",
+          "title": "Shared Risk / Two-Sided"
+        },
+        {
+          "_key": "step4",
+          "description": "A single payment covers all services related to a defined clinical episode — for example, a joint replacement plus 90 days of post-operative care. The provider keeps any amount spent below the target price and owes the difference if spending exceeds it.",
+          "title": "Bundled / Episode Payments"
+        },
+        {
+          "_key": "step5",
+          "description": "Fixed per-member-per-month (PMPM) payment per patient regardless of services delivered. Provider bears full utilization risk and has the strongest incentive to invest in prevention, care management, and efficient resource use. Maximum accountability.",
+          "title": "Full Capitation"
+        }
+      ],
+      "title": "The VBC Payment Model Spectrum"
+    },
+    {
+      "_key": "s4h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Medicare Shared Savings Program: ACOs in Action"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Medicare Shared Savings Program (MSSP), launched in 2012 under the Affordable Care Act, is the largest value-based care program in the United States by beneficiary count. MSSP allows groups of physicians, hospitals, and other providers to form Accountable Care Organizations (ACOs) and accept accountability for the total cost and quality of care for an attributed population of Traditional Medicare beneficiaries. Attribution is largely based on primary care utilization: beneficiaries are assigned to the ACO whose primary care clinicians they see most frequently. The ACO is then measured against a benchmark — an estimate of what CMS would have spent on that population absent the ACO — and earns or owes a share of the difference."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The financial mechanics of MSSP are designed to balance risk and reward. ACOs in upside-only tracks (BASIC Level A/B) can earn up to 40–50 percent of savings above the minimum savings rate but owe nothing if they spend above benchmark. ACOs in two-sided tracks (BASIC Level E and ENHANCED) earn a higher savings share — up to 75 percent — but also owe a portion of losses. Benchmarks are updated annually and incorporate regional spending trends to prevent ACOs in low-cost markets from being penalized for historical efficiency. Quality performance gates apply: ACOs must meet minimum quality standards to receive shared savings, and quality scores affect the savings rate they earn."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Performance year 2024 produced the most compelling evidence yet that MSSP works at scale. With 476 ACOs caring for approximately 10.3 million Traditional Medicare beneficiaries, the program generated $4.1 billion in shared savings for participating ACOs and $2.4 billion in net savings for Medicare — the highest figures since program inception in 2012. Seventy-five percent of ACOs earned performance payments, and only 16 ACOs owed shared losses totaling $20.3 million. The results suggest that the MSSP model, particularly as ACOs mature and move into two-sided risk, is delivering meaningful reductions in total cost of care while maintaining or improving quality."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4hl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hls",
+          "_type": "span",
+          "marks": [],
+          "text": "In 2024, MSSP ACOs earned $4.1 billion in shared savings while Medicare net-saved $2.4 billion — the best results since the program launched in 2012."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s4ex",
+      "_type": "exampleBlock",
+      "content": "476 ACOs cared for approximately 10.3 million Traditional Medicare beneficiaries. 75% of ACOs earned performance payments, while only 16 ACOs owed shared losses ($20.3 million total). CMS reported this as the highest shared savings earned and Medicare savings achieved since inception. The program is credited with driving care coordination improvements, chronic disease management, and reduced unnecessary hospitalizations.\n(Source: CMS PY2024 SSP Financial & Quality Results Fact Sheet)",
+      "title": "Medicare Shared Savings Program — Performance Year 2024"
+    },
+    {
+      "_key": "s4sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Total shared savings earned by MSSP ACOs in performance year 2024 — record high since program inception (CMS PY2024 MSSP Fact Sheet)",
+          "label": "ACO Earned Savings 2024",
+          "value": "$4.1B"
+        },
+        {
+          "_key": "s2",
+          "context": "Net savings to Medicare from MSSP ACOs in performance year 2024, after subtracting shared savings payments made to ACOs (CMS PY2024 MSSP Fact Sheet)",
+          "label": "Medicare Net Savings 2024",
+          "value": "$2.4B"
+        }
+      ]
+    },
+    {
+      "_key": "s5h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Hospital Value-Based Programs: VBP, HRRP, and HACRP"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS applies value-based care logic to hospitals through three interlocking payment adjustment programs that together create significant financial stakes for quality performance. Unlike voluntary ACO participation, these hospital programs are mandatory for most Medicare-participating acute care hospitals. They operate by modifying the DRG-based inpatient prospective payment that hospitals would otherwise receive — rewarding strong performers and penalizing hospitals with poor quality metrics, high readmission rates, or elevated rates of hospital-acquired conditions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Hospital Readmissions Reduction Program (HRRP), launched in fiscal year 2013, has been particularly influential in reshaping hospital behavior around care transitions. By penalizing excess 30-day readmission rates for six specific conditions — acute myocardial infarction, heart failure, pneumonia, chronic obstructive pulmonary disease, elective hip and knee replacement, and coronary artery bypass graft surgery — HRRP created a direct financial incentive to invest in discharge planning, medication reconciliation, post-acute follow-up, and community-based transitional care programs. Hospitals that previously regarded readmissions as additional revenue now face up to a 3 percent penalty on all Medicare inpatient discharges, not just those related to the penalized conditions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The combined effect of these three programs is to create a multi-domain quality accountability framework for hospitals. VBP evaluates safety, clinical outcomes, efficiency (Medicare spending per beneficiary), and patient experience; HRRP focuses on post-discharge outcomes for high-risk conditions; HACRP targets patient safety events during the hospital stay itself. Together, they represent CMS's attempt to make hospital payment sensitive to the full arc of a patient's care — from admission through recovery — rather than rewarding the volume of services delivered during the inpatient episode alone."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "CMS withholds 2% of Medicare payments from all participating hospitals and redistributes based on quality performance across four domains: safety, clinical outcomes, efficiency (Medicare spending per beneficiary), and patient experience (HCAHPS). Hospitals scoring above average receive more than the 2% withheld; hospitals scoring below average receive less, resulting in a net payment reduction.",
+          "title": "Hospital Value-Based Purchasing (VBP)"
+        },
+        {
+          "_key": "step2",
+          "description": "Launched FY 2013; penalizes hospitals with excess 30-day readmission rates for six conditions: AMI, CHF, pneumonia, COPD, hip/knee replacement, and CABG. The penalty — up to a 3% reduction on all Medicare inpatient discharges — applies hospital-wide, not just to readmission-related claims, creating a strong incentive to invest in care transition programs.",
+          "title": "Hospital Readmissions Reduction Program (HRRP)"
+        },
+        {
+          "_key": "step3",
+          "description": "Bottom-quartile hospitals on hospital-acquired condition (HAC) measures receive a 1% payment reduction on all Medicare discharges. HAC measures include central line-associated bloodstream infections, catheter-associated urinary tract infections, surgical site infections, and patient safety indicators. Creates incentive to invest in infection control, falls prevention, and patient safety protocols.",
+          "title": "Hospital-Acquired Condition Reduction Program (HACRP)"
+        }
+      ],
+      "title": "CMS Hospital Quality Payment Programs"
+    },
+    {
+      "_key": "s5warn",
+      "_type": "warningBlock",
+      "message": "The term \"value-based care\" covers everything from tiny quality bonuses to full capitation. A small P4P adjustment does not meaningfully change provider incentives; only two-sided risk models where providers can owe money back reliably drive behavior change at scale. Policymakers and analysts should distinguish carefully between programs that modestly adjust FFS payments and those that fundamentally restructure financial accountability for total cost of care.",
+      "title": "Not All VBC Is Created Equal"
+    },
+    {
+      "_key": "s6h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Road Ahead: Challenges and Progress"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s6p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite more than a decade of VBC expansion, significant barriers remain. Attribution methodology — determining which patients are accountable to which provider — remains contested and can produce misalignment between clinical relationships and financial accountability. Small and independent practices often lack the data infrastructure, care management staffing, and actuarial expertise needed to participate meaningfully in risk-bearing arrangements. Rural providers face population sizes too small to generate statistically stable quality or cost measurements. And the transition from FFS to VBC requires providers to invest upfront in care coordination infrastructure before the downstream savings materialize — a cash flow challenge that has slowed adoption among safety-net and critical access hospitals."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS's stated goal is to have all Medicare beneficiaries in an accountable care relationship by 2030, with a parallel goal of moving all Medicaid beneficiaries into value-based arrangements through state partnerships. As of 2024, roughly half of providers remain outside meaningful value-based arrangements, and the pace of transition has been uneven across specialties and geographies. The record MSSP results in 2024 — and the milestone of 82.8 percent of MSSP ACOs in Advanced APM tracks by 2026 — suggest the trajectory is positive, but reaching the 2030 goal will require sustained policy commitment, technical assistance for smaller providers, and continued refinement of benchmark-setting methodologies to ensure that efficiency gains are genuinely rewarded rather than competed away in future benchmark resets."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6qt",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6qts",
+          "_type": "span",
+          "marks": [],
+          "text": "\"The fee-for-service system rewards doing more, not doing better. The transition to value-based care is fundamentally about realigning financial incentives with patient health.\""
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "s6hl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6hls",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS has set a goal to have all Medicare beneficiaries in an accountable care relationship by 2030 — but as of 2024, roughly 50% of providers remain outside value-based arrangements."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "tw1",
+      "_type": "takeawayBlock",
+      "points": [
+        "Fee-for-service reimburses providers per service rendered, creating a structural incentive for volume over value — studies suggest up to 30% of FFS spending may be low-value or unnecessary.",
+        "Value-based care realigns financial incentives by tying provider payment to quality, outcomes, and total cost of care rather than the count of services delivered.",
+        "The VBC spectrum ranges from pay-for-performance (minimal risk transfer) through shared savings ACOs and bundled payments to full capitation (maximum provider risk).",
+        "The Medicare Shared Savings Program reached record performance in 2024: 476 ACOs, 10.3 million beneficiaries, $4.1 billion in ACO earned savings, and $2.4 billion in net Medicare savings.",
+        "CMS applies mandatory VBC logic to hospitals through three programs: Hospital VBP (2% withhold redistributed by quality), HRRP (up to 3% penalty for excess readmissions), and HACRP (1% penalty for bottom-quartile HAC performance).",
+        "Advanced APM participation — which requires two-sided financial risk — triggers a 5% incentive bonus and MIPS exemption; by 2026, 82.8% of MSSP ACOs were in Advanced APM tracks.",
+        "Barriers to VBC adoption include attribution complexity, data infrastructure gaps in small practices, and the upfront investment required before downstream savings materialize."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "The HRRP allows CMS to reduce a hospital's Medicare inpatient payment rate by up to 3% if the hospital has excess 30-day readmission rates for any of the six covered conditions (AMI, CHF, pneumonia, COPD, hip/knee replacement, CABG). The penalty applies to all Medicare inpatient discharges — not just readmission-related claims — making it a significant financial incentive to invest in care transitions.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "1% reduction on all Medicare inpatient discharges"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "3% reduction on all Medicare inpatient discharges"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "5% reduction on readmission-related claims only"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "10% reduction on Medicare Advantage payments"
+        }
+      ],
+      "question": "Under the Hospital Readmissions Reduction Program (HRRP), what is the maximum payment penalty a hospital can face?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "1. CMS Shared Savings Program PY2024 Results — https://www.cms.gov/files/document/fact-sheet-ssp-py24-financial-quality-results.pdf — MSSP 2024 ACO count, beneficiaries, savings amounts"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "2. CMS Quality Payment Program — https://www.cms.gov/priorities/innovation/about/alternative-payment-models — APM framework, 100% VBC goal by 2030"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "3. Hospital Value-Based Purchasing — https://www.cms.gov/medicare/quality/value-based-programs/hospital-purchasing — VBP 2% withhold mechanism"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "4. CMS Hospital Readmissions Reduction Program — https://www.cms.gov/medicare/quality/value-based-programs/hospital-readmissions — HRRP conditions, up to 3% penalty, FY2013 launch"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "5. Third Way: The Case Against Fee-for-Service — https://www.thirdway.org/report/the-case-against-fee-for-service-health-care — 30% low-value spending estimate, FFS overutilization incentives"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "hie-ffs-vs-vbc"
+  },
+  "title": "Fee-for-Service vs. Value-Based Care"
+}

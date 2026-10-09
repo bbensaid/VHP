@@ -1,0 +1,721 @@
+{
+  "_createdAt": "2026-05-29T22:08:35Z",
+  "_id": "hie-clinical-quality-measures",
+  "_rev": "rL4Cn5Sfo5Z8rzPmDsT1xQ",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-29T22:08:35Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Quality Measurement Matters"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Healthcare quality in the United States has long been characterized by profound variation. The Institute of Medicine's landmark 2001 report \"Crossing the Quality Chasm\" catalogued the gap between the care Americans receive and the care they should receive, organizing the challenge around six dimensions: care should be safe, effective, patient-centered, timely, efficient, and equitable. Two decades later those six aims remain the organizing principle behind virtually every major quality measurement program in the country — including those run by CMS, NCQA, and The Joint Commission. The persistent variability in clinical outcomes across hospitals, health plans, and geographic regions is both the problem quality measurement was designed to expose and the reason it continues to expand."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Measurement is the prerequisite for improvement. A health system cannot reliably close a gap it cannot see. Quality measures translate abstract aims — \"be safer,\" \"be more equitable\" — into specific, reportable rates that clinicians, administrators, payers, and policymakers can act on. A 30-day readmission rate tells a hospital CEO that something is breaking down in care transitions. A low rate of A1C testing in diabetic patients tells a health plan that its network may not be providing guideline-concordant care. Without these concrete signals, improvement efforts are speculative rather than targeted. Quality measurement converts clinical ambition into operational data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The stakes are no longer purely clinical — they are financial. Federal payment programs now link reimbursement directly to measured quality performance. The Merit-based Incentive Payment System (MIPS) adjusts Medicare payments to individual clinicians based partly on how well they score on quality measures. Hospital Value-Based Purchasing ties a portion of inpatient reimbursement to performance on clinical, safety, and patient experience measures. The Hospital Readmissions Reduction Program penalizes facilities with excess readmission rates. As the healthcare system shifts from volume to value, the ability to measure, report, and improve on quality measures has become a core business competency for every provider organization."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS defines quality measures as \"tools that help measure or quantify healthcare processes, outcomes, patient perceptions, and organizational structure and/or systems that are associated with the ability to provide high-quality health care and/or that relate to one or more quality goals for health care — effective, safe, efficient, patient-centered, equitable, and timely care.\""
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "NCQA MY2023/2024 ratings cycle",
+          "label": "Americans in HEDIS-reporting plans",
+          "value": "227 million"
+        },
+        {
+          "_key": "s2",
+          "context": "CMS finalized for performance year 2024",
+          "label": "MIPS quality measures available in 2024",
+          "value": "198"
+        },
+        {
+          "_key": "s3",
+          "context": "Quality performance category weight in 2024",
+          "label": "of MIPS final score",
+          "value": "30%"
+        },
+        {
+          "_key": "s4",
+          "context": "Covers clinical care and patient satisfaction",
+          "label": "quality measures in 2024 NCQA report",
+          "value": "90"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Donabedian Framework: Structure, Process, Outcome"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "In 1966, Avedis Donabedian published \"Evaluating the Quality of Medical Care\" in the Milbank Memorial Fund Quarterly — now considered one of the most cited articles in public health history. Donabedian proposed that quality could be assessed through three interconnected lenses: the structure in which care is delivered, the processes of care that occur, and the outcomes that result. His framework gave healthcare a vocabulary for measurement that had previously been missing, and it remains the conceptual backbone of virtually every quality program in use today, more than fifty years after its publication."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Structure refers to the context in which care is delivered: the physical facilities, the equipment available, the qualifications and number of staff, how financing is organized, and whether the organization uses an electronic health record. Structure measures are often the easiest to collect but the least directly tied to patient outcomes. Process measures capture the transactions between patients and providers — whether a diabetic patient had their hemoglobin A1C tested, whether a patient with hypertension was prescribed an ACE inhibitor, whether a smoker received cessation counseling. Because they describe actions that clinicians take (or fail to take), process measures are highly actionable. Outcome measures capture the ultimate effects on health: 30-day readmission rates, in-hospital mortality, hospital-acquired infections, patient satisfaction scores."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Donabedian's framework implies a causal chain: better structure enables better processes, and better processes produce better outcomes. That logic underpins all modern quality improvement programs. But the chain has real limits. Structure does not guarantee good process — a well-equipped hospital can still deliver inconsistent care. Process does not guarantee good outcomes — sometimes the right care is delivered and the patient still deteriorates due to disease complexity. And outcomes are influenced by factors entirely outside the health system, including socioeconomic conditions and patient behavior. This is why high-quality measurement programs typically balance all three dimensions rather than relying on outcomes alone."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2an1",
+      "_type": "analogyBlock",
+      "analogy": "Think of structure as a kitchen, process as the recipe followed, and outcome as the dish that arrives — you need all three to understand why a meal was good or bad.",
+      "concept": "The Donabedian framework: structure + process + outcome each explain a different layer of quality."
+    },
+    {
+      "_key": "s2cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Structure & Process",
+        "points": [
+          "Board-certified physicians on staff",
+          "EHR adoption rate",
+          "% diabetic patients with A1C tested",
+          "% patients counseled on smoking cessation",
+          "Hand-hygiene compliance rate"
+        ]
+      },
+      "right": {
+        "label": "Outcome",
+        "points": [
+          "30-day readmission rate",
+          "Hospital mortality rate",
+          "Hospital-acquired infection rate",
+          "Patient satisfaction scores (CAHPS)",
+          "Hemoglobin A1C control in diabetic patients"
+        ]
+      },
+      "title": "Three Donabedian Measure Types"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "HEDIS: The Health Plan Quality Standard"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Healthcare Effectiveness Data and Information Set — universally known as HEDIS — is maintained by the National Committee for Quality Assurance (NCQA) and is the most widely used health plan quality tool in the United States. Health plans use HEDIS to measure performance across dozens of clinical domains including preventive care, chronic disease management, behavioral health, and maternal health. Results are used for NCQA accreditation, public reporting through Quality Compass, and value-based contracting with employers, Medicaid agencies, and Medicare Advantage sponsors. As of the MY2023/2024 ratings cycle, approximately 227 million Americans are enrolled in health plans that report HEDIS results to NCQA — a scale that makes it unlike any other quality dataset in American healthcare."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "HEDIS data is collected through three methods depending on the measure. Administrative data — claims and encounter records — is the most efficient source and sufficient for many measures. Supplemental data allows plans to incorporate information from provider EHRs and labs that does not appear in claims. The hybrid method combines administrative data with targeted medical record review for a random sample of eligible members, providing higher accuracy for measures where claims alone are insufficient. The MY 2024 State of Health Care Quality Report includes national averages for 90 quality measures covering clinical care and patient satisfaction, giving plans, purchasers, and regulators a comprehensive national benchmark."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "NCQA's 2024 Health Plan Ratings are calculated as a weighted average of HEDIS clinical quality scores and CAHPS patient experience scores, plus bonus points for accreditation status. Plans use these ratings for marketing differentiation, member retention, and to satisfy contractual requirements from large employers and government programs. For Medicaid managed care plans and Medicare Advantage organizations, HEDIS performance can directly affect premium revenue through quality bonus payments, creating powerful financial incentives to invest in the care gaps HEDIS measures reveal. Vermont's Medicaid managed care and ACO programs rely on HEDIS as a core performance framework for their quality improvement portfolios."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "227 million Americans are in plans that report HEDIS — making it the most widely used healthcare quality tool in the country."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "NCQA rated health plans across the U.S. using MY 2023 HEDIS and CAHPS data. Ratings are based on the weighted average of plan performance across clinical quality and patient experience measures, plus bonus points for accreditation status. Plans use ratings for marketing, member retention, and value-based contract negotiations.",
+      "title": "NCQA Health Plan Ratings 2024"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Identify the eligible population for each measure (e.g., all members aged 18–75 with a diabetes diagnosis during the measurement year).",
+          "title": "Define the denominator"
+        },
+        {
+          "_key": "step2",
+          "description": "Extract relevant diagnosis, procedure, and pharmacy codes from claims and encounter records submitted by providers and pharmacies.",
+          "title": "Collect administrative claims data"
+        },
+        {
+          "_key": "step3",
+          "description": "For measures requiring clinical detail not captured in claims, conduct targeted chart abstraction on a statistically valid random sample of eligible members.",
+          "title": "Supplement with medical record review (hybrid)"
+        },
+        {
+          "_key": "step4",
+          "description": "Divide the numerator (members who received the service) by the denominator (eligible members) to produce a percentage rate for each measure.",
+          "title": "Calculate the measure rate"
+        },
+        {
+          "_key": "step5",
+          "description": "Plans submit certified HEDIS data to NCQA, which aggregates results into national and percentile benchmarks used for accreditation and public reporting.",
+          "title": "Submit to NCQA for benchmarking"
+        }
+      ],
+      "title": "How HEDIS Measurement Works"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Electronic Clinical Quality Measures (eCQMs)"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Electronic Clinical Quality Measures (eCQMs) represent a fundamental shift in how quality data is collected. Traditional clinical quality measures (CQMs) required manual abstraction — a trained person reviewing paper charts or PDF-based records to find the information needed to calculate a rate. That process was expensive, slow, and prone to inter-rater variability. eCQMs are specified in a standard electronic format, with logic written using Health Quality Measure Format (HQMF) and expressed against standard clinical terminologies — SNOMED CT for clinical findings, LOINC for laboratory and clinical observations, ICD-10 for diagnoses, and RxNorm for medications. Data is extracted automatically from EHR systems, eliminating manual review for the bulk of reporting."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS uses eCQMs across multiple programs: the Medicaid Promoting Interoperability Program, the Medicare Promoting Interoperability Program (formerly Meaningful Use), the Merit-based Incentive Payment System (MIPS), and Alternative Payment Models (APMs). A critical operational advantage of eCQMs is coverage: because they run against structured EHR data for all applicable patients, eCQMs automatically meet MIPS's 75% reporting frequency threshold — a requirement that is administratively burdensome when using traditional chart-abstracted measures. This near-complete patient coverage also makes eCQM rates more statistically reliable than sample-based results, giving CMS and providers a more accurate picture of actual performance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The next evolution of eCQMs is FHIR-based quality reporting. The HL7 FHIR standard — the same infrastructure driving patient access APIs and interoperability mandates — is now being applied to quality reporting. FHIR-based quality measures (sometimes called \"digital quality measures\" or dQMs) use FHIR resources and Clinical Quality Language (CQL) to define measure logic that can execute against FHIR-compliant EHR data. This approach promises to reduce the gap between care delivery and quality reporting, enabling near real-time feedback and making it feasible to expand measurement into clinical domains that were previously too complex or costly to abstract manually."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "eCQMs extract data directly from EHRs in a standard electronic format — eliminating the manual chart abstraction that traditional CQMs required, reducing both cost and human error."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "eCQMs depend on the quality of documentation in the EHR. Missing or inaccurate clinical data (wrong diagnosis codes, missing problem list entries) will cause patients to be excluded from denominators or counted incorrectly, distorting the measure rate.",
+      "title": "Administrative Data Alone Is Not Enough"
+    },
+    {
+      "_key": "s4st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "A clinician documents a laboratory result, diagnosis, medication order, or clinical observation in the EHR during the course of care.",
+          "title": "EHR captures clinical event"
+        },
+        {
+          "_key": "step2",
+          "description": "The EHR maps the event to standard codes — SNOMED CT, LOINC, ICD-10, or RxNorm — enabling the measure logic to recognize the event regardless of which EHR vendor generated the data.",
+          "title": "Event coded using standard terminologies"
+        },
+        {
+          "_key": "step3",
+          "description": "The measure's electronic specification (written in CQL) executes against the patient's structured EHR data, evaluating whether the patient meets the denominator criteria and whether the required care was delivered (numerator).",
+          "title": "eCQM logic runs against structured data"
+        },
+        {
+          "_key": "step4",
+          "description": "The EHR or a connected quality reporting tool aggregates numerator and denominator counts across all applicable patients and calculates the measure rate.",
+          "title": "Measure rate computed"
+        },
+        {
+          "_key": "step5",
+          "description": "The measure rate is transmitted to CMS via the relevant reporting pathway — MIPS, Promoting Interoperability, or an APM — using standardized electronic submission formats.",
+          "title": "Submitted electronically to CMS reporting program"
+        }
+      ],
+      "title": "How an eCQM Gets Calculated"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS Quality Reporting Programs: MIPS, IQR, and VBP"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Centers for Medicare & Medicaid Services operates the largest portfolio of quality reporting programs in American healthcare. For individual clinicians, the Merit-based Incentive Payment System (MIPS) is the primary vehicle. MIPS consolidates quality, improvement activities, promoting interoperability, and cost into a composite score that adjusts each clinician's Medicare Part B payments upward or downward. In 2024, the Quality performance category accounts for 30% of the MIPS final score — the single largest component. CMS finalized 198 quality measures available for MIPS reporting in 2024 (173 traditional CQMs plus 58 eCQMs), added 11 new measures, and removed 11 others. Clinicians must report on a minimum of 6 quality measures, including at least one outcome or high-priority measure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "For acute care hospitals, the Hospital Inpatient Quality Reporting (IQR) Program is the foundational reporting vehicle. IQR is a pay-for-reporting program: hospitals that do not successfully report face a reduction in their annual payment update. But IQR data also feeds directly into programs with more direct payment consequences. The Hospital Value-Based Purchasing (VBP) Program uses IQR-reported measures to calculate a Total Performance Score that can either increase or decrease inpatient Medicare payments. The Hospital-Acquired Condition Reduction Program (HACRP) uses safety and infection measures to identify the worst-performing hospitals, which receive a 1% payment reduction on all Medicare discharges. Together these programs create a layered financial accountability structure for hospital quality."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The movement toward value-based payment has fundamentally changed how provider organizations think about quality measurement. When quality scores were used only for public reporting, the financial consequences of poor performance were reputational. Now they are direct and material. A large hospital system subject to HRRP penalties, HACRP reductions, and VBP adjustments simultaneously can see millions of dollars in annual payment impact from quality performance. This has driven significant investment in quality improvement infrastructure — care management teams, data analytics platforms, population health systems, and transitional care programs — all justified in part by the financial return on improving measure performance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "2024 MIPS performance category weight",
+          "label": "of MIPS final score is Quality",
+          "value": "30%"
+        },
+        {
+          "_key": "s2",
+          "context": "CMS finalized for performance year 2024",
+          "label": "MIPS quality measures available",
+          "value": "198"
+        },
+        {
+          "_key": "s3",
+          "context": "Must include 1 outcome or high-priority measure",
+          "label": "minimum measures to report",
+          "value": "6"
+        },
+        {
+          "_key": "s4",
+          "context": "36 measures developed cumulatively; 11 in use 2024",
+          "label": "CMS spent on measure development",
+          "value": "$62.6M"
+        }
+      ]
+    },
+    {
+      "_key": "s5ex1",
+      "_type": "exampleBlock",
+      "content": "CMS reduces Medicare payments to hospitals with excess 30-day readmission rates for conditions including heart attack, heart failure, pneumonia, COPD, hip/knee replacement, and CABG. The program has been in effect since FY 2013. Hospitals with the highest readmission rates face a payment reduction of up to 3% on all Medicare inpatient discharges, creating a direct financial incentive to invest in care transitions and post-discharge support.",
+      "title": "Hospital Readmissions Reduction Program (HRRP)"
+    },
+    {
+      "_key": "s5cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Traditional (Chart Abstraction)",
+        "points": [
+          "Manual review of medical records",
+          "Labor-intensive and expensive",
+          "Sample-based (not all patients)",
+          "Delayed data availability",
+          "Higher risk of human error"
+        ]
+      },
+      "right": {
+        "label": "eCQM (Electronic)",
+        "points": [
+          "Automated extraction from EHR",
+          "Lower cost at scale",
+          "Near 100% patient coverage",
+          "Near real-time data availability",
+          "Requires clean structured EHR data"
+        ]
+      },
+      "title": "Traditional Reporting vs. eCQM Reporting"
+    },
+    {
+      "_key": "s6h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Quality Measurement and Health Equity"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s6p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Aggregate quality scores can obscure profound inequities hidden within the average. A health system may achieve a respectable overall 30-day readmission rate while Black or Hispanic patients at the same institution face rates two to three times higher. A health plan may report strong HEDIS scores on diabetes care while patients with limited English proficiency receive far lower rates of A1C testing and retinal exams. When quality measurement programs report only aggregate rates, they cannot detect — and therefore cannot address — these disparities. Stratifying quality measures by race, ethnicity, preferred language, and socioeconomic status is the methodological prerequisite for an equitable quality improvement agenda."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Both CMS and NCQA have made explicit commitments to embed equity stratification into their quality measurement frameworks. NCQA has developed HEDIS equity measures and is expanding stratified reporting requirements. CMS's Universal Foundation for quality measurement, launched as part of its National Quality Strategy, includes health equity as a core domain and is incorporating race and ethnicity stratification into MIPS and Medicaid reporting. The practical challenge is data: stratified quality reporting requires that EHRs and health plans collect accurate, complete, and standardized race, ethnicity, and language data — a requirement that remains inconsistently met across the industry. Health information exchanges like Vermont's VITL play a growing role in aggregating this data across provider organizations to enable population-level equity analysis."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6w1",
+      "_type": "warningBlock",
+      "message": "A hospital may have an excellent average 30-day readmission rate while having much higher rates for Black or Hispanic patients. Without stratification by race, ethnicity, and language, quality reporting programs can inadvertently reward systems that perform well for well-resourced patients while ignoring gaps for vulnerable populations.",
+      "title": "Aggregate Quality Scores Can Hide Disparities"
+    },
+    {
+      "_key": "s6hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS and NCQA have both committed to adding equity stratification to quality measures. The goal is to make disparate performance visible — because you cannot improve what you cannot measure."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "end_tw1",
+      "_type": "takeawayBlock",
+      "points": [
+        "The Donabedian framework (structure → process → outcome) is the conceptual foundation of all modern quality measurement, first articulated in Donabedian's landmark 1966 article.",
+        "HEDIS, maintained by NCQA, covers approximately 227 million Americans and is the dominant quality measurement tool for health plans, used for accreditation, public reporting, and value-based contracting.",
+        "eCQMs automate quality reporting by extracting data directly from EHRs using standard terminologies, eliminating manual chart abstraction and achieving near-complete patient coverage.",
+        "In MIPS 2024, the Quality category accounts for 30% of the final score; clinicians report on at least 6 measures including one outcome or high-priority measure from a set of 198 available.",
+        "Hospital quality programs — IQR, VBP, HACRP, and HRRP — create a layered financial incentive structure that ties Medicare payment directly to measured clinical performance.",
+        "Aggregate quality scores can mask significant disparities by race, ethnicity, and language; stratified reporting is essential to an equitable quality improvement strategy.",
+        "FHIR-based digital quality measures represent the next evolution of eCQMs, enabling near real-time quality feedback using the same interoperability infrastructure as patient access APIs."
+      ]
+    },
+    {
+      "_key": "end_qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "HEDIS is maintained by NCQA — the National Committee for Quality Assurance. CMS runs its own quality reporting programs (MIPS, IQR, VBP) but does not own or maintain HEDIS. ONC oversees health IT policy and certification. The Joint Commission accredits hospitals but does not maintain HEDIS.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "CMS (Centers for Medicare & Medicaid Services)"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "NCQA (National Committee for Quality Assurance)"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "ONC (Office of the National Coordinator for Health IT)"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The Joint Commission"
+        }
+      ],
+      "question": "Which organization maintains the HEDIS quality measures used by health plans?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "1. CMS Quality Measures — https://www.cms.gov/medicare/quality/measures — Definition of quality measures, MIPS requirements, and CMS quality program overview."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "2. NCQA HEDIS — https://www.ncqa.org/hedis/ — 227 million enrolled, MY2024 State of Health Care Quality Report, and health plan ratings methodology."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "3. Donabedian 1966 perspective (NEJM retrospective) — https://www.nejm.org/doi/full/10.1056/NEJMp1605101 — Origins and lasting influence of the Donabedian model of healthcare quality assessment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "4. CMS eCQM Basics — https://www.cms.gov/medicare/regulations-guidance/promoting-interoperability-programs/electronic-clinical-quality-measures-basics — eCQM programs, reporting requirements, and Promoting Interoperability Program details."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "5. 2024 CMS Quality Measure Development Plan Annual Report — https://www.cms.gov/files/document/2024-quality-measure-development-plan-annual-report.pdf — $62.6M cumulative measure development spend, 36 measures developed, 11 active in 2024."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "hie-clinical-quality-measures"
+  },
+  "title": "Clinical Quality Measures in Healthcare"
+}

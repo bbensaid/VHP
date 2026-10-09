@@ -1,0 +1,540 @@
+{
+  "_createdAt": "2026-05-29T22:28:10Z",
+  "_id": "hie-high-low-value-care",
+  "_rev": "rL4Cn5Sfo5Z8rzPmDsbbl0",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-29T22:28:10Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Defining Value in Healthcare"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What does \"value\" mean in healthcare? The simplest formulation — popularized by Harvard's Michael Porter — is Value = Outcomes / Cost. High-value care delivers meaningful, evidence-based clinical benefit relative to its cost and risk to the patient. Low-value care is the inverse: interventions where cost or risk exceeds the likely benefit. But value is not just about money — it is about whether care actually improves or risks patient health."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The scale of low-value care in the United States is staggering. The Institute of Medicine's landmark 2012 report \"Best Care at Lower Cost\" estimated that approximately 30% of US health spending in 2009 — roughly $750 billion — was wasted. That waste included unnecessary services, excessive administrative costs, fraud, and inflated prices. More recent estimates place annual spending on low-value care at $100 billion to $700 billion depending on what is counted. Up to 40% of Medicare beneficiaries receive at least one low-value service per year."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The consequences are not just financial. Unnecessary services expose patients to real harm — radiation from imaging, surgical complications, drug side effects, healthcare-associated infections, and the cascade of follow-up tests triggered by false-positive results. A healthcare system that provides more care than is needed is not just wasteful; it is actively dangerous."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "High-value care = meaningful clinical benefit relative to cost and risk. Low-value care = interventions where cost or harm exceeds likely benefit. The goal is not to spend less — it is to spend on care that works."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "IOM 'Best Care at Lower Cost' (2012) — unnecessary services, admin costs, fraud",
+          "label": "Estimated Healthcare Waste in 2009",
+          "value": "~$750B"
+        },
+        {
+          "_key": "s2",
+          "context": "At least one low-value service per year (JAMA Network Open, 2024)",
+          "label": "Medicare Beneficiaries Receiving Low-Value Care",
+          "value": "40%"
+        },
+        {
+          "_key": "s3",
+          "context": "ABIM Foundation / Lown Institute — approximately 30% of all care is wasteful",
+          "label": "US Healthcare Estimated Unnecessary",
+          "value": "30%"
+        },
+        {
+          "_key": "s4",
+          "context": "80+ specialty societies have identified overused tests and treatments (ABIM Foundation, 2023)",
+          "label": "Choosing Wisely Recommendations",
+          "value": "700+"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Makes Care Low Value?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Low-value care is not always obvious. It ranges from blatantly wasteful services — antibiotics for viral infections, routine pre-operative testing before low-risk surgery — to subtler overuse driven by habit, anxiety, or financial incentive. JAMA research estimated that $12.8 to $28.6 billion could be saved annually by targeting the most common low-value services alone."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The IOM identified six categories of healthcare waste: unnecessary services (overuse beyond evidence), inefficiently delivered services (care that could be done better or cheaper), excess administrative complexity, inflated prices, missed prevention opportunities, and fraud and abuse. Unnecessary services — the clinical waste category — is the most directly actionable through clinical behavior change, but it is also the hardest to reduce because it requires changing the habits of individual providers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "A concrete example: more than 200,000 unnecessary back surgeries took place over a three-year period, costing Medicare more than $1.9 billion, according to the Lown Institute. The evidence shows that most patients with chronic low back pain do better with physical therapy and conservative management than with surgery — yet the financial incentive for surgery, combined with patient expectations, drives continued overuse. Imaging without clear clinical indication, routine urine cultures in asymptomatic patients, and repeat imaging for stable findings are other common offenders documented in Choosing Wisely recommendations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Low-Value (avoid)",
+        "points": [
+          "Antibiotics for viral upper respiratory infections",
+          "Routine pre-op chest X-ray for low-risk surgery",
+          "Annual EKG in asymptomatic low-risk adults",
+          "CT scan for uncomplicated headache without red flags",
+          "PSA screening without shared decision making",
+          "Back surgery for non-specific chronic low back pain without trial of conservative therapy"
+        ]
+      },
+      "right": {
+        "label": "High-Value (evidence-based)",
+        "points": [
+          "Blood pressure control with antihypertensives (reduces stroke/MI)",
+          "Colorectal cancer screening per guidelines",
+          "Diabetes A1C monitoring and management",
+          "Smoking cessation counseling and pharmacotherapy",
+          "Post-discharge follow-up within 7 days to reduce readmissions",
+          "Annual flu vaccination in eligible patients"
+        ]
+      },
+      "title": "Low-Value vs. High-Value Care Examples"
+    },
+    {
+      "_key": "s2w1",
+      "_type": "warningBlock",
+      "message": "The instinct to 'do something' is understandable in both clinicians and patients. But evidence consistently shows that in many situations, watchful waiting, lifestyle modification, or conservative management produces outcomes equivalent — or superior — to aggressive intervention, at far lower risk and cost. The most courageous clinical decision is sometimes to not order the test.",
+      "title": "More Care Is Not Always Better Care"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Choosing Wisely: A National De-Implementation Campaign"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "In 2012, the ABIM Foundation and Consumer Reports launched the Choosing Wisely campaign — the highest-profile national effort to reduce low-value care through clinical engagement rather than regulatory mandate. The campaign launched with nine specialty societies offering 45 recommendations about tests and treatments that clinicians and patients should question. By 2023, more than 80 specialty societies had joined, producing over 700 recommendations spanning imaging, laboratory testing, medications, and procedures. The campaign has since spread to more than 30 countries."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Each Choosing Wisely recommendation is generated by a specialty society based on evidence that a particular service is frequently ordered, has significant cost or risk, and is often not necessary given current clinical evidence. Examples include: don't order routine imaging for uncomplicated low back pain; don't prescribe antibiotics for non-specific upper respiratory infections; don't perform routine pre-operative tests for low-risk procedures. Importantly, the recommendations are framed as starting points for conversation — not prohibitions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The evidence on Choosing Wisely's impact is mixed but instructive. Active interventions — clinical decision support alerts, audit and feedback, educational outreach, leadership engagement — reduced overuse in 65% of studies. Simply disseminating the recommendations without an active change strategy produced reductions in only 13% of studies. The lesson: awareness alone does not change behavior. Sustained de-implementation requires targeted strategies matched to the local barriers driving the overuse."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "Antibiotic prescribing for acute respiratory infections is one of the most documented cases of low-value care. More than 40% of antibiotic prescriptions for respiratory infections in primary care are estimated to be unnecessary — contributing to antimicrobial resistance and patient harm from side effects. Multiple Choosing Wisely lists from the AAFP, ACIP, and infectious disease societies recommend against prescribing antibiotics for viral pharyngitis, bronchitis, and sinusitis without bacterial confirmation. Health systems using clinical decision support prompts tied to these recommendations have shown 20–30% reductions in unnecessary antibiotic prescribing in primary care. (Source: ABIM Foundation / Choosing Wisely)",
+      "title": "Choosing Wisely — Antibiotic Overprescription"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Barriers to Reducing Low-Value Care"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Knowing that a service is low-value does not automatically stop it from being ordered. Research on barriers to de-implementation consistently identifies a cluster of factors that make it difficult for clinicians — even those who understand the evidence — to stop providing unnecessary care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Patient expectations and requests are the most commonly cited barrier: 85% of primary care physicians in a multinational survey identified patient expectations as a challenge, and 83% cited direct patient requests for tests or treatments. Clinicians also fear medical error (81%) — the anxiety that the one patient they do not image or test will be the one who has something serious. Time pressure (81%) and fear of under-diagnosis (79%) round out the top barriers. These are not irrational fears; they reflect the asymmetry of accountability in medicine, where doing too much is rarely penalized and doing too little can result in lawsuits."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "System-level factors compound individual barriers. Fee-for-service payment rewards volume — ordering more generates more revenue, even when the additional care provides no benefit. Fragmented care means that multiple providers order overlapping tests without visibility into what has already been done. Electronic health records that make ordering easy but provide no feedback on cumulative cost or redundancy also contribute to overuse."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Embed evidence-based Choosing Wisely recommendations as soft stops or hard stops in the EHR order entry workflow; alert clinicians when ordering a potentially low-value service and prompt documentation of clinical justification.",
+          "title": "Clinical Decision Support (CDS) Alerts"
+        },
+        {
+          "_key": "step2",
+          "description": "Regularly share individual and team-level data on low-value service rates compared to peers; social comparison ('you order imaging for back pain more than 80% of your colleagues') is a powerful behavioral lever.",
+          "title": "Audit and Feedback"
+        },
+        {
+          "_key": "step3",
+          "description": "Engage patients in evidence-based conversations about the likely benefit and harm of a proposed service; patients who understand low pretest probability often choose watchful waiting over testing.",
+          "title": "Shared Decision Making"
+        },
+        {
+          "_key": "step4",
+          "description": "Stop paying for services designated as low-value; CMS and commercial payers have begun excluding certain services from coverage when ordered outside of evidence-based indications.",
+          "title": "Payment Reform"
+        },
+        {
+          "_key": "step5",
+          "description": "Require prior authorization for high-cost imaging, procedures, or medications with documented overuse; use peer-to-peer review for outlier prescribers.",
+          "title": "Preauthorization and Peer Review"
+        }
+      ],
+      "title": "Strategies to Reduce Low-Value Care"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "High-Value Care in Practice"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "High-value care is not simply cheap care — it is care that delivers the right outcome for the right patient at the right time, with evidence supporting both the clinical benefit and the cost-effectiveness. Many of the highest-value interventions in medicine are also among the least expensive: blood pressure control, cholesterol management, colorectal cancer screening, smoking cessation, and vaccination. These interventions prevent enormous amounts of downstream disease, hospitalization, and premature death."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CMS Million Hearts Cardiovascular Disease Risk Reduction Model demonstrated this principle at scale. The model paid providers to systematically measure patients' cardiovascular risk using a validated tool, and to intensify treatment for high- and medium-risk beneficiaries. The result was reduced first-time heart attacks and strokes — without increasing total care costs. The program exemplifies value-based care logic: invest in evidence-based prevention upstream to avoid expensive acute events downstream."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "High-value care is like maintaining a car on schedule — oil changes, tire rotations, brake checks. It seems like spending money on something that isn't broken. But it prevents the catastrophic breakdown that costs ten times more and strands you on the highway. Low-value care is like buying expensive fuel additives based on a TV commercial — you spend real money for no proven benefit, and you might damage the engine.",
+      "concept": "High-Value vs. Low-Value Care Logic"
+    },
+    {
+      "_key": "s5hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The highest-value interventions in American medicine — controlling blood pressure, managing diabetes, screening for cancer, vaccinating against flu and pneumonia — are also among the most underprovided. The US simultaneously over-provides low-value services and under-provides high-value ones, producing the worst of both worlds: excess cost and avoidable harm."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "High-value care delivers meaningful clinical benefit relative to its cost and risk; low-value care is care where cost or harm to the patient exceeds likely benefit.",
+        "The IOM estimated roughly $750 billion — about 30% of US health spending in 2009 — was waste, with unnecessary services being the most directly reducible category.",
+        "Up to 40% of Medicare beneficiaries receive at least one low-value service per year; annual low-value spending estimates range from $100 billion to $700 billion.",
+        "The Choosing Wisely campaign, launched by the ABIM Foundation in 2012, produced more than 700 specialty society recommendations on overused services; active interventions based on those recommendations reduced overuse 65% of the time.",
+        "The top barriers to de-implementing low-value care are patient expectations (85%), patient requests (83%), fear of medical error (81%), and time pressure (81%) — requiring both cultural and structural change, not just education.",
+        "Effective de-implementation strategies include clinical decision support alerts, audit and feedback, shared decision making, payment reform, and prior authorization — and work best in combination.",
+        "The US simultaneously over-provides low-value care and under-provides high-value preventive care — indicating that the solution is not simply spending less, but spending on what works."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Choosing Wisely was launched in 2012 by the ABIM Foundation in partnership with Consumer Reports. It began with nine specialty societies offering 45 recommendations and grew to more than 80 societies and 700+ recommendations by 2023. CMS, the IOM, and The Joint Commission are separate organizations that have supported related quality improvement efforts but did not originate the Choosing Wisely campaign.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The Centers for Medicare and Medicaid Services (CMS)"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The American Board of Internal Medicine (ABIM) Foundation"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The Institute of Medicine (IOM)"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The Joint Commission"
+        }
+      ],
+      "question": "The Choosing Wisely campaign was launched in 2012 by which organization?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] IOM — Best Care at Lower Cost (2012) — https://www.ncbi.nlm.nih.gov/books/NBK207225/ — $750B waste estimate, six waste categories"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] ABIM Foundation — Choosing Wisely — https://choosingwisely.org/ — campaign history, 80+ societies, 700+ recommendations, 30+ countries"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] JAMA Network Open — The Need for More Effective Tools to Decrease Use of Low-Value Care — https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2825818 — 40% Medicare beneficiaries, $12.8–$28.6B savings estimate"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Lown Institute — Low-Value Care — https://lowninstitute.org/lown-issues/low-value-care/ — 200K+ unnecessary back surgeries, $1.9B Medicare cost"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] PMC — Perspectives on low-value care and barriers to de-implementation — https://pmc.ncbi.nlm.nih.gov/articles/PMC11084097/ — barrier percentages (85%, 83%, 81%)"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "hie-high-low-value-care"
+  },
+  "title": "High-Value and Low-Value Care"
+}

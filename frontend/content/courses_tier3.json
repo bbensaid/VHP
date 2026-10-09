@@ -18336,7 +18336,7 @@
                   {
                     "_type": "span",
                     "_key": "m6spn004",
-                    "text": "A genome-wide association study (GWAS) is a research approach that scans the entire genome of thousands of people to find genetic variants that are statistically associated with a trait or disease. GWAS has identified tens of thousands of genetic associations across hundreds of conditions. But more than 90% of participants in published GWAS studies have been of European ancestry, even though people of European ancestry make up only about 16% of the world's population.",
+                    "text": "A genome-wide association study (GWAS) is a research approach that scans the entire genome of thousands of people to find genetic variants that are statistically associated with a trait or disease. GWAS has identified tens of thousands of genetic associations across hundreds of conditions. But most GWAS participants have been of European ancestry, so the variants discovered — and the risk tools built on them — reflect European genomes far better than those of any other population.",
                     "marks": []
                   }
                 ],

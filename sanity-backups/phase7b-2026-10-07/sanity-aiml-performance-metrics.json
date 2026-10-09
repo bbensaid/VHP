@@ -1,0 +1,584 @@
+{
+  "_createdAt": "2026-05-30T03:38:17Z",
+  "_id": "aiml-performance-metrics",
+  "_rev": "rL4Cn5Sfo5Z8rzPmDvVf27",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T03:38:17Z",
+  "body": [
+    {
+      "_key": "s1h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Standard Accuracy Fails in Healthcare AI"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1b1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1b1s",
+          "_type": "span",
+          "marks": [],
+          "text": "When a hospital administrator or a vendor pitches an AI model with the claim that it is \"98% accurate,\" that single number almost always conceals more than it reveals. Accuracy — the fraction of all predictions that are correct — is a deeply misleading metric whenever the condition being predicted is rare relative to the population being screened. Healthcare is filled with exactly these situations: sepsis affects roughly 2% of ICU admissions, early-stage pancreatic cancer is present in less than 0.1% of asymptomatic adults, and pulmonary embolism occurs in fewer than 5% of emergency patients with chest pain. In every one of these scenarios, a model that simply predicts \"negative\" for every single patient will achieve accuracy well above 95% — while being completely useless clinically. Understanding why this happens, and which metrics actually matter, is the foundation of responsible AI evaluation in healthcare."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1b2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1b2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The key tool for moving beyond raw accuracy is the confusion matrix, which breaks every prediction into one of four categories. A true positive (TP) is a patient who has the condition and is correctly identified. A true negative (TN) is a patient without the condition who is correctly cleared. A false positive (FP) — sometimes called a Type I error — is a patient without the condition who is incorrectly flagged. A false negative (FN) — Type II error — is a patient who has the condition but is incorrectly missed. The clinical stakes of these errors are profoundly asymmetric. In a sepsis prediction model, a false negative means a patient in early septic shock is not identified and treated promptly; the mortality consequences can be fatal. A false positive triggers an unnecessary workup, exposes a patient to potential antibiotic side effects, increases nursing burden, and — critically — contributes to alert fatigue when clinicians receive too many spurious alarms and begin ignoring them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sensitivity (Recall) = TP ÷ (TP + FN): of all patients who truly have the condition, what fraction does the model correctly identify? Specificity = TN ÷ (TN + FP): of all patients who truly do not have the condition, what fraction does the model correctly clear? High sensitivity catches nearly everyone who is sick. High specificity avoids flooding the clinic with false alarms."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1b3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1b3s",
+          "_type": "span",
+          "marks": [],
+          "text": "These two metrics, sensitivity and specificity, are the building blocks for every other measure discussed in this lesson. They are intrinsic properties of a model at a given decision threshold — unlike predictive values, they do not change as disease prevalence shifts across populations. However, translating sensitivity and specificity into clinical action requires understanding how they interact with the frequency of disease in the real world. That interaction is where most real-world AI deployments encounter their first major failure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "A model predicting no sepsis for every patient is 98% accurate in a 2% prevalence ICU population — yet clinically useless, identifying zero true cases",
+          "label": "Accuracy of \"Always Negative\" Sepsis Model",
+          "value": "98%"
+        },
+        {
+          "_key": "s2",
+          "context": "An AUROC of 0.5 means the model performs no better than a coin flip; clinically useful models need AUROC ≥ 0.75 as a baseline starting point",
+          "label": "AUROC of a Random Classifier",
+          "value": "0.5"
+        }
+      ]
+    },
+    {
+      "_key": "s2h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The ROC Curve and AUROC: Reading the Discrimination Signal"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2b1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2b1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Receiver Operating Characteristic (ROC) curve is one of the most fundamental visualizations in clinical AI evaluation. It is constructed by plotting, at every possible decision threshold, the true positive rate (sensitivity) on the y-axis against the false positive rate (1 − specificity) on the x-axis. A model that perfectly discriminates patients who have a condition from those who do not would trace a curve through the upper-left corner of the plot — sensitivity of 1.0, false positive rate of 0 — at some threshold. A completely uninformative model, by contrast, would trace a diagonal line from the lower-left to the upper-right, performing no better than random chance at every threshold."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2b2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2b2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Area Under the ROC Curve — AUROC, also called AUC or c-statistic — summarizes the entire curve in a single number. It can be interpreted as the probability that a randomly selected patient who has the condition will receive a higher risk score than a randomly selected patient who does not. AUROC ranges from 0.5 (random) to 1.0 (perfect). In clinical practice, an AUROC below 0.60 is generally considered unacceptable, 0.70–0.79 is acceptable for lower-stakes decisions, 0.80–0.89 is considered good, and values above 0.90 are excellent. For clinical decision support alerts, a threshold of ≥ 0.75 is commonly cited as a minimum bar worth evaluating further."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2b3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2b3s",
+          "_type": "span",
+          "marks": [],
+          "text": "A critically important concept is threshold selection. Because the ROC curve plots the model's behavior at every possible cutoff, clinicians and informaticists must choose the operating point that reflects the clinical context. Lowering the decision threshold increases sensitivity — the model flags more patients as high-risk — but simultaneously lowers specificity, generating more false alarms. Raising the threshold reduces false alarms but at the cost of missing more true cases. For sepsis alerts, where a missed case can be fatal, most implementations use a low threshold to prioritize sensitivity even at the expense of specificity. Screening programs for colonoscopy recall, where unnecessary procedures carry real procedural risk, typically favor higher thresholds that reduce false positives."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex1",
+      "_type": "exampleBlock",
+      "content": "Epic's proprietary Sepsis Prediction Model (ESM) is deployed in hundreds of hospitals across the United States. Internal validation reported an AUROC of approximately 0.76–0.83, which appears acceptable on paper. However, a landmark 2021 external validation study by Wong et al. published in JAMA Internal Medicine evaluated the model across 38,455 hospitalizations at the University of Michigan and found a dramatically different picture in actual practice. The model achieved an AUROC of only 0.63, a sensitivity of just 33%, and — most alarmingly — a positive predictive value of only 12%. In practical terms, this means that 88 out of every 100 sepsis alerts fired by the system were false alarms, and 67% of patients who actually developed sepsis were not flagged at all. Alerts were generated for 18% of all hospitalized patients, creating a massive and well-documented burden of alert fatigue. The AUROC looked passable in internal validation; the real-world clinical utility was not.",
+      "title": "Epic Sepsis Model — Real-World AUROC vs. PPV"
+    },
+    {
+      "_key": "s2an1",
+      "_type": "analogyBlock",
+      "analogy": "Think of the ROC curve like adjusting a smoke detector's sensitivity dial. Turn it up too high (low threshold) and it triggers every time someone makes toast — high sensitivity, terrible specificity, and the household stops trusting it. Turn it too low and a real fire goes undetected. The ROC curve displays every point along that dial simultaneously, and AUROC summarizes how well the detector separates real fires from toast smoke across its entire range.",
+      "concept": "The sensitivity-specificity tradeoff in clinical AI alerting"
+    },
+    {
+      "_key": "s3h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Positive Predictive Value, Prevalence, and the Base Rate Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3b1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3b1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Once a model generates a positive alert, the clinician faces an immediate practical question: what is the probability that this specific patient actually has the condition? That question is answered not by sensitivity or specificity, but by the Positive Predictive Value (PPV). PPV = TP ÷ (TP + FP): of every patient the model flags, what fraction truly has the condition? Its complement, Negative Predictive Value (NPV = TN ÷ (TN + FN)), answers: of every patient the model clears, what fraction is truly free of the condition? Both metrics are essential for understanding the operational impact of deploying a model in a real clinical workflow."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3b2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3b2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The single most important — and most frequently overlooked — fact about PPV and NPV is this: they are not fixed properties of the model. They change with every shift in the prevalence of the condition in the population being tested. This is a direct consequence of Bayes' theorem and is sometimes called the base rate problem. Consider a model with 95% sensitivity and 95% specificity — excellent performance by almost any standard. Applied to a disease with 20% prevalence, the PPV is approximately 83%: most positive flags represent true cases and the model is clinically actionable. Now apply that same model unchanged to a community where the disease affects only 1% of patients. The PPV collapses to approximately 16%: 84 out of every 100 positive alerts are false alarms. The model's intrinsic discriminatory ability has not changed at all — only the prevalence has — but the clinical utility has been destroyed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3b3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3b3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This dynamic is a major and underappreciated source of real-world AI failure in healthcare. A model validated at a high-acuity academic medical center, where the target outcome is relatively common, will frequently disappoint when deployed at a community hospital or primary care network where the same outcome is far rarer. The validation study may report excellent PPV because the authors measured it in their high-prevalence dataset. Clinicians and health system leaders who adopt the tool without adjusting for their own prevalence environment will encounter an unexpectedly high false alarm rate, leading to alert fatigue and eventual abandonment of the tool. This is not a hypothetical concern — it is precisely what the Wong et al. (2021) study documented with the Epic Sepsis Model."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3w1",
+      "_type": "warningBlock",
+      "message": "Models validated in high-risk ICU or academic populations often fail when deployed broadly across a health system. Before implementing any clinical AI tool, always ask: what was the prevalence of the target outcome in the validation dataset? How does that compare to the prevalence in your own deployment population? Even a modest difference — say, 15% vs. 5% — can reduce PPV by more than half, transforming a useful tool into an alert fatigue generator.",
+      "title": "The Prevalence Portability Problem"
+    },
+    {
+      "_key": "s3cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "High Prevalence Setting (20%)",
+        "points": [
+          "PPV ≈ 83% — most alerts represent true cases",
+          "Model is directly actionable for clinical decision-making",
+          "Alert burden is manageable relative to patient risk identified",
+          "Consistent with typical academic center or high-acuity ICU validation datasets"
+        ]
+      },
+      "right": {
+        "label": "Low Prevalence Setting (1%)",
+        "points": [
+          "PPV ≈ 16% — approximately 84% of alerts are false alarms",
+          "Alert fatigue becomes severe; clinicians learn to dismiss alerts",
+          "Net clinical effect may be negative if resources are diverted to false positives",
+          "Typical of community hospitals, primary care, or population-level screening"
+        ]
+      },
+      "title": "PPV at 95% Sensitivity and 95% Specificity — Prevalence Changes Everything"
+    },
+    {
+      "_key": "s4h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Calibration, F1 Score, and the Metrics Beyond AUROC"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4b1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4b1s",
+          "_type": "span",
+          "marks": [],
+          "text": "AUROC measures whether a model correctly ranks patients by relative risk — does it give the sicker patient a higher score than the healthier patient? But ranking is not the same as quantifying. A model with excellent AUROC may still be systematically wrong about the absolute level of risk. If a model flags a patient as having a \"30% probability of sepsis\" but patients at that risk score actually develop sepsis only 8% of the time, the model is overconfident — its predicted probabilities do not match reality. This property is called calibration. A well-calibrated model means that among all patients assigned a predicted risk of X%, approximately X% of them actually experience the event. Poor calibration is not just a statistical concern; it has direct clinical consequences when physicians use predicted risk estimates to have conversations with patients about prognosis or to decide on treatment intensity."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4b2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4b2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most commonly used summary measure of calibration is the Brier Score: the mean squared error between the model's predicted probability and the actual binary outcome (0 or 1). A Brier Score of 0 is perfect; a score of 0.25 corresponds to an uninformative model that assigns 50% probability to every patient regardless of their actual risk. Lower is better. Importantly, a model can have a strong AUROC and a poor Brier Score simultaneously — high discrimination does not guarantee good calibration. Calibration plots, also called reliability diagrams, visually display predicted probability on the x-axis against observed event rate on the y-axis; a perfectly calibrated model traces the 45-degree diagonal."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4b3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4b3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For datasets with severe class imbalance — which describes the majority of clinical prediction problems in healthcare — neither accuracy nor AUROC captures the full picture. The F1 score addresses this by combining precision (equivalent to PPV) and recall (equivalent to sensitivity) into a single harmonic mean: F1 = 2 × (Precision × Recall) ÷ (Precision + Recall). F1 is particularly useful when both false positives and false negatives carry significant costs, and when the positive class (the rare event, such as sepsis or readmission) is the focus of clinical concern. A related approach, the Precision-Recall curve and its area (AUPRC), is often more informative than the ROC curve in heavily imbalanced clinical datasets because it focuses entirely on model performance for the positive class rather than averaging across both."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4b4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4b4s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most clinically sophisticated evaluation framework available today is Decision Curve Analysis (DCA), introduced by Vickers and Elkin in 2006 in Medical Decision Making. DCA quantifies the \"net benefit\" of using a model to guide clinical decisions across a range of threshold probabilities — the risk level at which a clinician would decide to act. Net benefit integrates sensitivity, specificity, and the relative harm of false positives versus false negatives weighted by the clinical threshold. DCA allows a direct comparison between three strategies: use the model to guide treatment decisions, treat all patients regardless of model score, or treat no patients. A model that provides positive net benefit above both baseline strategies across the clinically relevant range of thresholds is genuinely useful. DCA has been increasingly required by leading clinical informatics journals and is now considered the gold standard for demonstrating clinical utility."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "AUROC ≥ 0.75 is a starting bar, not a finish line. A model with AUROC of 0.80 can still be clinically worthless if PPV at your institution's prevalence is 8%. Always request sensitivity, specificity, PPV, and NPV computed at the operating threshold the vendor recommends.",
+          "title": "Check AUROC — but do not stop there"
+        },
+        {
+          "_key": "step2",
+          "description": "Use your institution's real prevalence of the target outcome — not the validation study's prevalence. If the study was conducted in a high-volume academic center and your hospital treats a broader, lower-acuity population, recompute PPV accordingly using Bayes' theorem.",
+          "title": "Calculate PPV at your actual prevalence"
+        },
+        {
+          "_key": "step3",
+          "description": "Request a calibration plot. If the model predicts 40% risk and the observed event rate for those patients is only 10%, the model is systematically overconfident and the predicted probabilities cannot be used for patient counseling or risk stratification decisions.",
+          "title": "Inspect calibration with a reliability diagram"
+        },
+        {
+          "_key": "step4",
+          "description": "DCA shows net benefit across the full range of threshold probabilities — does using this model actually help more patients than the alternatives of treating everyone or treating no one? A model with favorable DCA profile is clinically useful; a model that does not beat these simple baselines provides no actionable benefit despite looking good on AUROC.",
+          "title": "Run a Decision Curve Analysis"
+        },
+        {
+          "_key": "step5",
+          "description": "Evaluate AUROC, sensitivity, specificity, and PPV separately by race and ethnicity, sex, age group, and insurance payer. Disparate performance across subgroups is well-documented in the literature and must be surfaced before deployment, not after. Equity gaps discovered post-deployment are far more difficult and costly to address.",
+          "title": "Stratify performance by patient subgroup"
+        }
+      ],
+      "title": "How to Evaluate a Clinical AI Model Before Trusting It"
+    },
+    {
+      "_key": "s5h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Equity in Model Evaluation: Performance Must Be Equal Across Populations"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5b1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5b1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Perhaps the most consequential and underappreciated dimension of clinical AI evaluation is equitable performance across patient subgroups. Algorithmic bias — systematic differences in model performance across racial, ethnic, sex, age, or socioeconomic groups — does not require intentional discrimination to emerge. It arises from training data that does not equally represent all populations, from proxy variables that correlate with race or income, and from measurement instruments that were never validated across diverse patient groups. The result is AI systems that work well for the majority population in the training data but systematically underperform for patients who were underrepresented — often the patients who most need accurate, timely clinical decision support."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5b2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5b2s",
+          "_type": "span",
+          "marks": [],
+          "text": "One of the most cited and consequential demonstrations of algorithmic bias in healthcare is the landmark 2019 study by Obermeyer et al. published in Science. The researchers examined a widely used commercial risk-stratification algorithm — now identified as Optum's tool — that was used by major health systems to identify patients for high-risk care management programs. The algorithm predicted future healthcare costs as a proxy for health need. The problem: Black patients, due to well-documented structural barriers including insurance gaps, transportation limitations, and historical medical distrust, incur lower healthcare costs even when equally sick. As a result, the algorithm systematically underestimated the illness burden of Black patients relative to white patients with the same cost level. The study estimated that this bias reduced the proportion of Black patients identified for care management programs by approximately 50% relative to medically equivalent white patients. Correcting the algorithm to use actual illness markers rather than cost as a proxy could more than double the number of Black patients appropriately identified for extra support."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5b3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5b3s",
+          "_type": "span",
+          "marks": [],
+          "text": "A second canonical example illustrates how bias in clinical measurement devices — not just AI algorithms — propagates directly into AI systems trained on that data. Sjoding et al., writing in the New England Journal of Medicine in 2020, analyzed pulse oximetry measurements paired with arterial blood gas (the gold standard) measurements across thousands of patients in ICUs at the University of Michigan and 178 other hospitals. Pulse oximeters estimate oxygen saturation by shining light through the fingertip; the device's calibration was historically conducted primarily on lighter-skinned individuals. The study found that Black patients had occult hypoxemia — true arterial oxygen saturation below 88% despite normal-appearing pulse oximeter readings — at nearly three times the rate of white patients: 17.0% versus 6.2% in the multicenter cohort. Any AI model trained on pulse oximetry data as a feature inherits this systematic measurement error, which can cause it to underestimate respiratory deterioration in Black patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5hi1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hi1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The FDA's 2023 AI/ML action plan and ONC's HTI-1 rule (Health Data, Technology, and Interoperability) both now require equity-stratified performance reporting for AI tools used in clinical decision support. Developers and health systems deploying predictive models are expected to report performance disaggregated by race, ethnicity, sex, and age. Equitable performance is moving from a best practice to a regulatory requirement."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s5b4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5b4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Practically speaking, equity evaluation requires reporting AUROC, sensitivity, specificity, PPV, and calibration separately for each relevant subgroup — not just an aggregate number that may mask dramatic disparities underneath. A model that achieves AUROC of 0.82 overall but 0.68 for Black patients and 0.88 for white patients is not a model that performs adequately. The gap in performance represents real patients receiving worse care based on factors unrelated to their clinical condition. Health systems deploying AI tools should require vendors to provide subgroup-stratified performance data for the specific population of the deployment site — not an average drawn from a demographically different validation cohort."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Obermeyer et al. Science 2019: algorithmic bias reduced the proportion of Black patients identified for high-risk care management programs by approximately 50% relative to medically equivalent white patients, because the algorithm used cost as a proxy for health need",
+          "label": "Reduction in Black Patients Flagged for Care Management",
+          "value": "~50%"
+        },
+        {
+          "_key": "s2",
+          "context": "Sjoding et al. NEJM 2020: Black patients had occult hypoxemia (true SpO₂ < 88% despite normal pulse ox readings) at nearly 3× the rate of white patients — 17.0% vs. 6.2% — a measurement bias that propagates into AI systems trained on pulse oximetry data",
+          "label": "Occult Hypoxemia Rate in Black vs. White Patients",
+          "value": "~3×"
+        }
+      ]
+    },
+    {
+      "_key": "tak1",
+      "_type": "takeawayBlock",
+      "points": [
+        "Simple accuracy is a misleading metric for clinical AI — class imbalance means a model predicting \"negative\" for every patient can achieve 98% accuracy while missing every true case and being clinically worthless.",
+        "AUROC measures a model's ability to rank patients by risk across all thresholds, but a high AUROC (e.g., 0.80) does not guarantee clinical utility — PPV must also be acceptable at the deployment population's actual disease prevalence.",
+        "Positive predictive value (PPV) is not a fixed property of a model — it depends on disease prevalence in the deployment population and can collapse dramatically in lower-prevalence settings, turning an acceptable tool into an alert fatigue generator.",
+        "Calibration — whether a model's predicted probabilities match actual event rates — is essential for risk-stratification decisions and is entirely independent of AUROC; a model can have strong discrimination and poor calibration simultaneously.",
+        "Decision curve analysis (DCA) is the most clinically meaningful evaluation framework because it weighs the net benefit of acting on model predictions against both false positive and false negative harms across the full range of clinically relevant decision thresholds.",
+        "Algorithmic bias is well-documented: the Obermeyer et al. (2019) study found a widely used risk score reduced Black patients flagged for care management by approximately 50% relative to medically equivalent white patients, because cost was used as a proxy for health need.",
+        "Equity-stratified performance evaluation — reporting AUROC, sensitivity, and PPV separately by race, sex, age, and payer — is becoming a regulatory requirement under FDA and ONC frameworks, not merely a best practice."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "In a population with 2% sepsis prevalence, 90% sensitivity, and 90% specificity, Bayes' theorem gives PPV ≈ 15.5%. In a cohort of 10,000 patients, approximately 200 have sepsis; the model correctly flags 180 of them (90% sensitivity) and incorrectly flags 980 patients without sepsis (10% of 9,800). Total alerts: 1,160 — of which only 180 are true positives, yielding PPV of 180/1,160 ≈ 15.5%. This is the base rate problem: PPV is determined jointly by model performance AND prevalence in the deployment population, not by sensitivity or specificity alone. Despite strong discrimination metrics, approximately 85% of alerts in this setting are false alarms — a clinically untenable burden.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "About 90%, matching the model's sensitivity"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "About 15%, because low prevalence causes most flags to be false alarms"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "About 50%, because sensitivity and specificity are equal"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "About 2%, matching the base rate of sepsis"
+        }
+      ],
+      "question": "A sepsis prediction model is deployed in a community hospital where sepsis affects 2% of patients. The model has 90% sensitivity and 90% specificity. Approximately what is the positive predictive value (PPV) — the probability that a flagged patient actually has sepsis?"
+    },
+    {
+      "_key": "srch2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srch2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Obermeyer Z, Powers B, Vogeli C, Mullainathan S. Dissecting racial bias in an algorithm used to manage the health of populations. Science. 2019;366(6464):447-453. https://www.science.org/doi/10.1126/science.aax2342 — Demonstrated that a widely used commercial risk-stratification algorithm underestimated illness in Black patients by using healthcare cost as a proxy for health need, reducing the proportion of Black patients identified for care management programs by approximately 50%."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sjoding MW, Dickson RP, Iwashyna TJ, Gay SE, Valley TS. Racial bias in pulse oximetry measurement. N Engl J Med. 2020;383(25):2477-2478. https://www.nejm.org/doi/10.1056/NEJMc2029240 — Found that Black patients had occult hypoxemia (true SpO₂ < 88% despite normal pulse oximeter readings) at nearly 3× the rate of white patients (17.0% vs. 6.2%) in a multicenter ICU cohort, due to measurement bias from device calibration conducted primarily on lighter-skinned populations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Wong A, Otles E, Donnelly JP, et al. External validation of a widely implemented proprietary sepsis prediction model in hospitalized patients. JAMA Intern Med. 2021;181(8):1065-1070. https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2781307 — External validation at the University of Michigan (38,455 hospitalizations) found that Epic's Sepsis Prediction Model achieved AUROC of 0.63, sensitivity of 33%, and PPV of only 12%, with alerts generated for 18% of all hospitalized patients — documenting severe alert fatigue."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vickers AJ, Elkin EB. Decision curve analysis: a novel method for evaluating prediction models. Med Decis Making. 2006;26(6):565-574. https://journals.sagepub.com/doi/10.1177/0272989X06295361 — Introduced Decision Curve Analysis as a method to evaluate the clinical utility of prediction models by plotting net benefit across a range of threshold probabilities, enabling comparison of model-guided treatment to treat-all and treat-none strategies."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "Steyerberg EW, Vickers AJ, Cook NR, et al. Assessing the performance of prediction models: a framework for traditional and novel measures. Epidemiology. 2010;21(1):128-138. Comprehensive framework for evaluating clinical prediction models including AUROC, calibration, Brier score, and net reclassification — the methodological foundation for modern clinical AI performance assessment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "aiml-performance-metrics"
+  },
+  "title": "Evaluating AI Performance: Metrics That Matter in Healthcare"
+}

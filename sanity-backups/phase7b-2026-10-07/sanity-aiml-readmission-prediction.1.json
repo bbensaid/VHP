@@ -1,0 +1,619 @@
+{
+  "_createdAt": "2026-05-30T03:46:21Z",
+  "_id": "aiml-readmission-prediction",
+  "_rev": "9Kr4sqmOhDZgAxKUOFc1j6",
+  "_type": "academyModule",
+  "_updatedAt": "2026-10-08T12:33:35Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Readmission Problem and Why It Matters"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A hospital readmission is defined as an inpatient admission that occurs within 30 days of a preceding discharge from an acute care hospital. Readmissions are widely used as a quality indicator because they frequently signal problems that could have been prevented: inadequate discharge planning, poor care coordination, unresolved clinical problems, or a failure to connect patients with the follow-up services they need to stay stable at home. Not every readmission is avoidable — some reflect the natural progression of serious illness — but a substantial share reflects gaps in the care transition process."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The modern policy focus on readmissions was crystallized by a landmark 2009 study in the New England Journal of Medicine by Stephen Jencks, Mark Williams, and Eric Coleman. Analyzing Medicare fee-for-service data, the authors found that 19.6 percent of the 11.8 million Medicare beneficiaries discharged from hospital were readmitted within 30 days — approximately one in five patients. Even more striking: 34 percent were readmitted within 90 days, and half of the 30-day readmissions occurred without the patient having seen a physician in an outpatient setting after discharge. The study estimated that unplanned rehospitalizations cost Medicare $17.4 billion in 2004 alone."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Jencks study provided the political and financial justification for Congress to act. The Affordable Care Act of 2010 established the Hospital Readmissions Reduction Program (HRRP), which CMS began implementing in fiscal year 2013 (covering discharges from October 2012). Under HRRP, hospitals with excess readmissions — meaning readmission rates statistically higher than expected for their patient mix — face a reduction of up to 3 percent on all Medicare base inpatient payments. The program initially targeted three conditions: acute myocardial infarction (AMI), heart failure, and pneumonia. It has since expanded to six conditions, adding COPD, total hip and knee arthroplasty, and coronary artery bypass graft surgery (CABG). Preliminary CMS data for fiscal year 2026 show only 641 hospitals (21.8 percent) escaping a penalty — so about 78 percent of evaluated hospitals are penalized, and 240 (8.1 percent) face reductions of 1 percent or more — making it one of the most broadly applied financial penalties in Medicare."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A 30-day readmission is any unplanned return to an acute care hospital within 30 days of a prior discharge, regardless of the reason for readmission. CMS measures it using risk-standardized readmission rates that adjust for patient demographics and comorbidity burden, allowing fair comparisons across hospitals serving different patient populations."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "National all-cause 30-day readmission rate for Medicare fee-for-service — Definitive HC analysis of CMS Hospital Compare data, March 2025 (14.67%)",
+          "label": "Medicare 30-Day Readmission Rate",
+          "value": "~15%"
+        },
+        {
+          "_key": "s2",
+          "context": "Heart failure carries one of the highest 30-day readmission rates among all diagnoses — multiple studies using the Nationwide Readmissions Database, 2024",
+          "label": "Heart Failure 30-Day Readmission",
+          "value": "~21–23%"
+        },
+        {
+          "_key": "s3",
+          "context": "Hospitals with excess readmissions penalized up to 3% of all Medicare base inpatient payments — CMS Hospital Readmissions Reduction Program",
+          "label": "Maximum HRRP Penalty",
+          "value": "3%"
+        },
+        {
+          "_key": "s4",
+          "context": "Estimated Medicare cost of unplanned rehospitalizations in 2004 — Jencks et al., New England Journal of Medicine, 2009",
+          "label": "Annual Cost of Readmissions",
+          "value": "$17.4B"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Traditional Risk Scoring vs. Machine Learning"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Before machine learning entered the readmission prediction space, clinicians relied on structured risk scores calculated at the point of discharge. The most widely adopted is the LACE index, derived and validated by van Walraven and colleagues in a 2010 study published in the Canadian Medical Association Journal. LACE is an acronym for its four components: Length of stay (0 to 7 points), Acuity of admission (3 points if the admission was unplanned), Comorbidity measured by the Charlson Comorbidity Index, and Emergency department visits in the six months before admission. Scores range from 0 to 19; a threshold of 10 or above is commonly used to flag high-risk patients. LACE was designed to be calculable from administrative data available at discharge — making it practical in settings without advanced analytics infrastructure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "LACE's simplicity is also its limitation. External validation studies consistently report area under the receiver operating characteristic curve (AUROC) values in the range of 0.68 to 0.70. A Swiss validation study published in PLOS ONE (2021) found the LACE+ index achieved an AUC of 0.703 (95% CI 0.687–0.719) — better than chance, but leaving substantial room for improvement. The model captures only four variables and is calculated once at discharge, missing the dynamic clinical picture that unfolds during the hospitalization. It cannot incorporate lab trends, nursing assessments, medication changes, or social history data — all of which are now understood to carry significant predictive signal."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Machine learning models approach the readmission problem differently. Rather than selecting four variables by expert consensus, they ingest hundreds of features from the electronic health record — prior utilization history, diagnosis codes, lab values and their trajectories over the admission, medication lists, vital sign trends, nursing assessments, social work documentation, and discharge planning fields — and allow the algorithm to identify which combinations are most predictive. Gradient boosting models (XGBoost, LightGBM) and random forest classifiers consistently outperform LACE across populations, with AUROC values typically in the 0.74 to 0.83 range in peer-reviewed validation studies. One frequently cited analysis found a gradient boosting model achieved AUC 0.83 compared to LACE's AUC of 0.66 on the same dataset. Epic Systems has integrated a proprietary readmission risk model into its EHR, updating the score every four hours during the hospitalization; in a Swiss external validation study, Epic's model achieved an AUC of 0.692 — outperforming simple LACE but with room for site-specific model improvement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "LACE Score",
+        "points": [
+          "Uses only 4 variables (L, A, C, E)",
+          "Calculated once at discharge",
+          "Transparent and clinically interpretable",
+          "AUROC typically 0.68–0.70 in external validation",
+          "Requires no IT infrastructure — can be calculated by hand",
+          "Validated across many settings and countries"
+        ]
+      },
+      "right": {
+        "label": "ML Models",
+        "points": [
+          "Incorporates hundreds of features simultaneously",
+          "Score updated continuously during admission",
+          "AUROC typically 0.74–0.83 in validation studies",
+          "Requires EHR integration and data pipeline",
+          "May not generalize across institutions without retraining",
+          "Can detect complex non-linear feature interactions"
+        ]
+      },
+      "title": "LACE Score vs. Machine Learning Models"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Features Actually Predict Readmission"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Understanding which patient characteristics drive readmission risk is essential both for building effective models and for designing targeted interventions. Across virtually every published readmission model — from simple logistic regression to deep learning — a consistent set of feature categories emerges as predictive, even as the specific variables and their weights differ by condition and population."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Prior utilization history is the single most powerful predictor category. The number of inpatient admissions and emergency department visits in the preceding 6 to 12 months captures something that no single clinical measurement can: a patient's pattern of acute health deterioration over time. A patient admitted five times in the last year for COPD exacerbations is categorically different in risk from a patient with their first admission, even if both patients look similar on today's clinical snapshot. This prior utilization signal is so strong that it alone approaches the predictive accuracy of the full LACE score."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Social determinants of health represent perhaps the most underappreciated and inconsistently captured feature category. Lack of caregiver support, housing instability, food insecurity, and transportation barriers are all independently associated with readmission — yet they are frequently absent from structured EHR fields. When social history is documented consistently through standardized screening tools, adding SDOH variables meaningfully improves model performance. When it is missing or incomplete, models fall back on geographic proxies like zip code to estimate social risk — a limitation that can introduce equity problems discussed in section five."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3an1",
+      "_type": "analogyBlock",
+      "analogy": "Think of a readmission prediction model like a weather forecast that considers humidity, wind, temperature, barometric pressure, and satellite imagery together — rather than just looking at today's temperature. Each variable alone tells you something, but combining dozens of signals is what produces an accurate prediction of whether tomorrow's picnic will get rained out.",
+      "concept": "Multi-feature machine learning readmission prediction"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Count of ED visits and inpatient admissions in the prior 6 and 12 months — the single most predictive feature category, consistently validated across all major readmission modeling studies.",
+          "title": "Utilization History"
+        },
+        {
+          "_key": "step2",
+          "description": "Number of active diagnoses, Charlson Comorbidity Index score, presence of high-risk conditions: congestive heart failure, COPD, chronic kidney disease stage 4–5, active cancer, and diabetes with complications.",
+          "title": "Diagnosis Burden"
+        },
+        {
+          "_key": "step3",
+          "description": "Sodium, BUN/creatinine ratio, hemoglobin, and BNP (for heart failure) — both absolute values at discharge and their trajectory during the admission. A rising creatinine at discharge signals instability that a single discharge value alone would miss.",
+          "title": "Lab Trends"
+        },
+        {
+          "_key": "step4",
+          "description": "Total medication count at discharge (polypharmacy, defined as more than 10 medications, is associated with higher readmission risk); presence of high-risk medications requiring close post-discharge monitoring — anticoagulants, insulin, diuretics, digoxin.",
+          "title": "Medication Count and Risk"
+        },
+        {
+          "_key": "step5",
+          "description": "Documented caregiver support, housing situation, transportation access, and food security — captured from social work notes or structured SDOH screening tools. Adds significant predictive value when consistently documented.",
+          "title": "Social Risk Indicators"
+        },
+        {
+          "_key": "step6",
+          "description": "Discharge destination (home, skilled nursing facility, inpatient rehab, home with home health services); whether a 7-day follow-up appointment was scheduled before the patient left the hospital — one of the strongest modifiable predictors of readmission.",
+          "title": "Discharge Disposition and Follow-Up"
+        }
+      ],
+      "title": "Features a Readmission Model Uses at Discharge"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Turning Predictions Into Interventions"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A readmission risk score posted on a patient's chart — with no workflow built around it — produces exactly zero reduction in readmissions. This is not a theoretical concern: multiple health systems have deployed predictive models and then measured their impact, only to find no improvement when the score was not linked to a systematic intervention. The prediction identifies who is at risk; the intervention is what changes the outcome. Both are required, and the latter is often the harder problem to solve."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most rigorously studied transitional care intervention is the Transitional Care Model (TCM), developed by Mary Naylor and colleagues at the University of Pennsylvania over more than three decades of research. TCM is an advanced practice registered nurse (APRN)-led, team-based care management strategy specifically designed for high-risk hospitalized older adults. The APRN begins working with the patient and family while the patient is still in the hospital, creates an individualized care plan, conducts home visits after discharge, and provides telephone support during the high-risk post-discharge period. Multiple randomized controlled trials, including landmark studies published in JAMA and the Annals of Internal Medicine, demonstrated that TCM reduced rehospitalizations by 30 to 50 percent and produced net savings of approximately $4,500 per patient over five to twelve months post-discharge."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For health systems that cannot staff a full TCM program, evidence-based transitional care components can be deployed individually. Pharmacist-led medication reconciliation at discharge resolves the medication discrepancies — dose errors, duplications, missing medications — that drive a substantial share of medication-related readmissions, particularly in heart failure, anticoagulation therapy, and insulin management. Care transition coaching, such as the Coleman model's \"Four Pillars\" (medication self-management, a patient-centered health record, follow-up, and knowledge of red-flag symptoms), can be delivered in a brief inpatient visit. Scheduling a follow-up appointment within 7 days of discharge before the patient leaves the hospital is one of the simplest and most consistently evidence-supported modifiable interventions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "UCSF Medical Center implemented a readmission prediction model integrated directly into their discharge planning workflow. Patients who score above the high-risk threshold are automatically referred to their Transitions of Care team before discharge is finalized. The team conducts a pharmacist-led medication review, social work assessment for post-discharge support needs, and arranges a 48 to 72-hour post-discharge nurse phone call.\nThe program tracks 30-day and 90-day readmission rates by unit, allowing clinicians to see whether interventions are working at the ward level — creating a feedback loop between the model's predictions and the interventions' outcomes. This integration of prediction and action is the design pattern that evidence supports as effective.",
+      "title": "UCSF Transitional Care Program — Closing the Loop"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "Multiple studies have found that deploying a readmission risk score with no change in discharge workflow produces no reduction in readmissions. The model identifies who is at risk; the intervention reduces the risk. Both are required. If your institution is evaluating a readmission model, the first question is not \"what is the AUROC?\" — it is \"what exactly happens when a patient scores high, and who is responsible for acting on that score within what timeframe?\"",
+      "title": "Prediction Without Intervention Is Theater"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Equity, Bias, and the Limits of Prediction"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Readmission models trained on historical healthcare utilization data carry a structural risk of perpetuating the inequities baked into that history. The core problem is this: prior utilization — the strongest predictor of future readmission — is not a pure measure of health need. It is a measure of care access. A patient who has been poorly served by the healthcare system, who delayed care, who went without a primary care doctor, who could not afford medications, or who lives in a health care desert will show low prior utilization not because they are healthy but because they could not access care. A model that treats their low utilization as low risk will systematically underestimate their actual health burden."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This exact mechanism was documented in a landmark 2019 study in Science by Ziad Obermeyer, Brian Powers, Christine Vogeli, and Sendhil Mullainathan. The authors analyzed a widely used commercial risk score deployed across millions of patients and found that at any given risk score, Black patients were considerably sicker than White patients — on average, patients in the 97th percentile of risk had 26 percent more chronic conditions if they were Black than if they were White. The root cause: the algorithm predicted healthcare costs rather than illness, and because systemic barriers resulted in less money being spent on Black patients, the model learned to underestimate their health needs. The authors estimated that correcting the bias would increase the share of Black patients identified for additional care management from 17.7 to 46.5 percent."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The HRRP itself has been subject to an equity critique that mirrors this concern at the hospital level. Research — including work by Ashish Jha and colleagues — found that CMS penalties under HRRP disproportionately fell on safety-net hospitals serving low-income and minority populations. These hospitals were being penalized for readmission rates that reflected their patients' social complexity, not failures of clinical care. CMS acknowledged this critique and beginning in fiscal year 2019 restructured HRRP benchmarks to stratify hospitals by their share of dual-eligible patients (those enrolled in both Medicare and Medicaid). Under this approach, hospitals are compared only to peers serving similar proportions of low-income patients — a significant methodological change that reduces but does not eliminate the structural disadvantage facing safety-net institutions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS's dual-eligibility stratification in HRRP, effective FY2019, represents an important precedent: quality measures used for financial accountability must account for the social risk of the population served, or they will punish hospitals for serving the most vulnerable patients. This principle is increasingly applied across CMS value-based payment programs."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s5sg2",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Preliminary CMS FY2026 data: only 641 hospitals (21.8%) avoid a penalty; 240 (8.1%) face cuts of 1% or more",
+          "label": "Hospitals Penalized Under HRRP (FY2026)",
+          "value": "~78%"
+        },
+        {
+          "_key": "s2",
+          "context": "Obermeyer et al. found that removing cost-proxy bias would increase the share of Black patients receiving additional care management from 17.7% to 46.5% — Science, 2019",
+          "label": "Black Patients Identified if Bias Corrected",
+          "value": "46.5%"
+        }
+      ]
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Hospital readmissions affect approximately 15 percent of Medicare patients within 30 days and were estimated to cost $17.4 billion annually — making them a major target for both quality improvement and financial risk management (Jencks et al., NEJM 2009).",
+        "CMS's Hospital Readmissions Reduction Program (HRRP), operational since FY2013, penalizes hospitals up to 3 percent of Medicare base inpatient payments for excess readmissions across six conditions; in FY2026, approximately 82.8 percent of eligible hospitals face penalties.",
+        "The LACE score (Length of stay, Acuity, Comorbidities, ED visits) is the most widely used traditional readmission risk tool, with AUROC typically 0.68–0.70 in external validation — a useful baseline that machine learning models consistently and substantially outperform.",
+        "Machine learning readmission models incorporate hundreds of features — prior utilization, lab trends, medication burden, social risk, discharge planning — and typically achieve AUROC 0.74–0.83, but clinical benefit depends entirely on the intervention workflow triggered by the prediction.",
+        "Prior utilization history (ED visits and hospitalizations in the past 6–12 months) is consistently the strongest predictor of readmission across virtually all models and populations — because it captures the patient's pattern of acute health deterioration over time, not just today's clinical snapshot.",
+        "Prediction without intervention produces no reduction in readmissions — evidence-based transitional care programs such as Mary Naylor's Transitional Care Model (30–50% reduction in rehospitalizations in randomized trials), pharmacist-led medication reconciliation, and 7-day follow-up scheduling must be deployed alongside the risk model.",
+        "Readmission models trained on utilization data can systematically underestimate risk in historically underserved populations; Obermeyer et al. (Science 2019) documented this bias in a widely used commercial algorithm, and CMS has begun stratifying HRRP benchmarks by dual-eligibility share to partially address the equity critique for safety-net hospitals."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "LACE stands for Length of stay, Acuity of admission, Comorbidity (Charlson Comorbidity Index), and Emergency department visits — medication count is not one of the four components. Medication burden is a strong independent predictor of readmission and is included in more comprehensive ML models, but it was not part of the original LACE derivation by van Walraven et al. (CMAJ 2010).",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Length of hospital stay"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Number of active medications at discharge"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Acuity of admission (whether the admission was unplanned)"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Emergency department visits in the past 6 months"
+        }
+      ],
+      "question": "The LACE readmission risk score uses four variables. Which of the following is NOT one of the four components of the LACE score?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Jencks SF, Williams MV, Coleman EA. Rehospitalizations among Patients in the Medicare Fee-for-Service Program. New England Journal of Medicine. 2009;360:1418–1428. https://www.nejm.org/doi/10.1056/NEJMsa0803563 — Supports: 1 in 5 Medicare patients readmitted in 30 days; $17.4 billion annual cost; half of readmissions occur without post-discharge physician visit."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] CMS Hospital Readmissions Reduction Program. Centers for Medicare & Medicaid Services. https://www.cms.gov/medicare/quality/value-based-programs/hospital-readmissions — Supports: HRRP launched FY2013, 6 conditions covered, penalty up to 3%, FY2026 impacts ~82.8% of eligible hospitals."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] van Walraven C, Dhalla IA, Bell C, et al. Derivation and validation of an index to predict early death or unplanned readmission after discharge from hospital to the community. CMAJ. 2010;182(6):551–557. https://www.cmaj.ca/content/182/6/551 — Supports: LACE index derivation, four components, score range 0–19, and validation in administrative data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Naylor MD, Brooten D, Campbell R, et al. Comprehensive Discharge Planning and Home Follow-up of Hospitalized Elders: A Randomized Clinical Trial. JAMA. 1999;281(7):613–620. https://jamanetwork.com/journals/jama/fullarticle/190152 — Supports: Transitional Care Model APRN-led intervention; reduction in rehospitalizations for high-risk elders."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Obermeyer Z, Powers B, Vogeli C, Mullainathan S. Dissecting racial bias in an algorithm used to manage the health of populations. Science. 2019;366(6464):447–453. https://www.science.org/doi/10.1126/science.aax2342 — Supports: bias in cost-proxy algorithms; Black patients underidentified for care management; correcting bias would increase Black patient identification from 17.7% to 46.5%."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Ebrahimian S, et al. External validation of EPIC's Risk of Unplanned Readmission model, the LACE+ index and SQLape as predictors of unplanned hospital readmissions. PLOS ONE. 2021. https://pmc.ncbi.nlm.nih.gov/articles/PMC8589185/ — Supports: Epic model AUROC 0.692; LACE+ AUC 0.703 in Swiss external validation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] Predicting 1 year readmission for heart failure: A comparative study of machine learning and the LACE index. PMC. 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC11424322/ — Supports: ML gradient boosting models outperforming LACE for readmission prediction; AUROC comparisons."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src8s",
+          "_type": "span",
+          "marks": [],
+          "text": "[8] Penn LDI — Mary Naylor on 30 Years of Transitional Care Model. https://ldi.upenn.edu/our-work/research-updates/when-medicare-sent-patients-home-sooner-mary-naylor-built-the-safety-net/ — Supports: TCM randomized trials showing 30–50% reduction in rehospitalizations and net savings of approximately $4,500 per patient."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "aiml-readmission-prediction"
+  },
+  "title": "Predicting Hospital Readmissions with Machine Learning"
+}

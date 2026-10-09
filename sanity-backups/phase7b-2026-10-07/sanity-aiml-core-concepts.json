@@ -1,0 +1,701 @@
+{
+  "_createdAt": "2026-05-29T23:04:19Z",
+  "_id": "aiml-core-concepts",
+  "_rev": "rL4Cn5Sfo5Z8rzPmDsi7qp",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-29T23:04:19Z",
+  "body": [
+    {
+      "_key": "s1h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why AI Is Reshaping Healthcare"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Modern healthcare generates data at a scale and velocity that no human team can analyze unaided. A single large health system produces millions of electronic health record events per day — structured lab values, unstructured physician notes, radiology images measured in gigapixels, genomic sequences spanning billions of base pairs, continuous wearable sensor streams, and administrative claims records. Individually, each dataset tells a partial story. Together, they form a picture of patient health that is richer than anything available in the pre-digital era — yet the sheer volume has made clinical synthesis by human review alone increasingly impossible."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Artificial intelligence and machine learning provide the computational infrastructure to bridge this gap. Where a cardiologist reviews dozens of echocardiograms per shift, an AI model trained on hundreds of thousands of studies can screen every image in a health system within seconds, flagging those most likely to show reduced ejection fraction for priority human review. Where a hospitalist must intuit which patients are silently deteriorating on the floor, an ML model continuously watching vital sign trends, lab trajectories, and nursing assessments can surface risk scores at two-hour intervals across every patient simultaneously. This is not replacement of clinical judgment — it is augmentation of it at a scale previously unimaginable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The economic signal confirms the clinical urgency. Investment in AI healthcare applications has grown explosively over the past five years, and projections suggest the market will expand more than sixteenfold over the next decade. North America currently leads global adoption, holding over 45 percent of total AI healthcare market revenue — driven by a combination of EHR maturation, regulatory engagement, and venture capital concentration. Understanding the foundational concepts of AI and machine learning is therefore no longer a specialty interest for informaticists; it is a baseline literacy requirement for every clinician, administrator, analyst, and policymaker working in American healthcare."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1stat",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Global market value in 2025 — Precedence Research; projected $613.81B by 2034",
+          "label": "AI Healthcare Market 2025",
+          "value": "$36.96B"
+        },
+        {
+          "_key": "s2",
+          "context": "FDA AI/ML medical device approvals through May 2025; 956 in radiology alone",
+          "label": "FDA-Cleared AI Devices (May 2025)",
+          "value": "1,247"
+        },
+        {
+          "_key": "s3",
+          "context": "Hospitals with ML functions integrated in EHR systems — JMIR retrospective study 2025",
+          "label": "US Hospitals with EHR ML (2024)",
+          "value": "75%"
+        },
+        {
+          "_key": "s4",
+          "context": "Compound annual growth rate for AI in healthcare — Grand View Research",
+          "label": "Market CAGR Through 2033",
+          "value": "38.9%"
+        }
+      ]
+    },
+    {
+      "_key": "s1call",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1calls",
+          "_type": "span",
+          "marks": [],
+          "text": "Key distinctions: Artificial Intelligence is the broad field of building machines that perform tasks requiring human-like intelligence — reasoning, perception, language. Machine Learning is a subset of AI in which systems learn patterns directly from data without being explicitly programmed for every rule. Deep Learning is a subset of ML that uses multilayer neural networks to automatically discover hierarchical features from raw inputs like images, audio, and text. Every deep learning system is an ML system; every ML system is an AI system — but not the reverse."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Three Paradigms of Machine Learning"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Machine learning does not describe a single algorithm — it describes a family of approaches that differ in how they learn from data. Three paradigms define the landscape: supervised learning, unsupervised learning, and reinforcement learning. Each is suited to a different type of clinical problem, and understanding the distinction allows healthcare professionals to match the right tool to the right task rather than applying a single technique indiscriminately."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Supervised learning is the most widely deployed paradigm in clinical AI today. A model is trained on a labeled dataset — a collection of examples where each input (patient features) is paired with a known output (the outcome or label). The algorithm adjusts its internal parameters to minimize the gap between its predictions and the known labels, learning a mapping function it can then apply to new, unseen patients. Classic clinical examples include readmission risk models (input: discharge labs, diagnoses, prior utilization; label: readmitted within 30 days — yes or no), diabetic retinopathy classifiers (input: fundus photograph pixels; label: grade of retinopathy), and sepsis early-warning systems (input: vital sign trends and lab trajectories; label: sepsis onset within six hours). The 1,247 FDA-cleared AI medical devices through May 2025 are overwhelmingly supervised learning models."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Unsupervised learning trains on data without labels, asking the algorithm to discover structure that humans have not predefined. Clustering algorithms group patients by phenotype similarity — revealing, for example, that what clinicians label \"heart failure\" may actually be four or five molecularly distinct subtypes with different prognoses and optimal therapies. Dimensionality reduction methods like principal component analysis condense thousands of genomic variables into interpretable components. Anomaly detection surfaces billing patterns or lab results that deviate significantly from population norms. Unsupervised approaches are less mature in direct clinical deployment than supervised models, but they are invaluable for discovery science and health equity research — revealing which patient subgroups are most underserved by existing care models."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Reinforcement learning (RL) operates on a fundamentally different logic. An agent takes a sequence of decisions in an environment, receives a reward or penalty signal after each action, and gradually learns a policy that maximizes cumulative reward over time. This paradigm is purpose-built for problems with sequential decision-making — precisely the structure of clinical care. Should the ICU physician increase vasopressor dose now, hold it, or wean? Should the oncology team escalate chemotherapy or pause for toxicity recovery? RL models trained on retrospective ICU data have shown the ability to learn dosing policies for sepsis management that outperform average clinician decisions on historical cohorts. Prospective deployment trials are ongoing, and RL remains the paradigm with the most transformative long-term potential in dynamic clinical decision support."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Supervised Learning",
+        "points": [
+          "Requires labeled training data (known input-output pairs)",
+          "Predicts a defined target variable (diagnosis, risk score, outcome)",
+          "Examples: readmission risk, retinopathy classification, sepsis alerts",
+          "Most widely deployed paradigm in clinical AI and FDA-cleared devices"
+        ]
+      },
+      "right": {
+        "label": "Unsupervised / Reinforcement Learning",
+        "points": [
+          "Unsupervised: no labels required — discovers hidden structure in data",
+          "Reinforcement: no predefined answer — learns policy through trial and reward",
+          "Useful for phenotype discovery, subgroup identification, adaptive treatment",
+          "Less mature in clinical deployment; growing rapidly in research and emerging tools"
+        ]
+      },
+      "title": "Supervised vs. Unsupervised and Reinforcement Learning"
+    },
+    {
+      "_key": "s2ex",
+      "_type": "exampleBlock",
+      "content": "Researchers at Google DeepMind and academic medical centers trained a reinforcement learning model on retrospective ICU patient data from multiple health systems to recommend intravenous fluid volumes and vasopressor doses for septic patients on an hour-by-hour basis. The model learned treatment policies — sequences of dosing decisions — that were associated with lower 90-day mortality in historical cohorts compared to the average clinician approach. Importantly, the model did not simply maximize short-term stability; it learned that aggressive early fluid resuscitation followed by rapid weaning outperformed prolonged high-volume strategies. Prospective randomized trials are required before clinical implementation, and the Nature npj Digital Medicine literature notes that RL for dynamic treatment regimes represents one of the most active frontiers in clinical AI research.",
+      "title": "Reinforcement Learning for Sepsis Management — Nature Medicine"
+    },
+    {
+      "_key": "s3h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Traditional Machine Learning vs. Deep Learning"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Within supervised and unsupervised learning, a critical architectural divide separates traditional machine learning from deep learning. This distinction is not merely technical — it determines which data types each approach handles best, what volume of training data is required, how interpretable the resulting model is, and how much computational infrastructure the team must provision. Getting this choice wrong is one of the most common and costly mistakes in healthcare AI projects."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Traditional ML algorithms — logistic regression, decision trees, random forests, gradient boosting, support vector machines — require a domain expert to engineer features from raw data before the model ever sees it. A cardiologist and data scientist working together decide which variables to extract from the EHR: age, ejection fraction, BNP level, number of prior hospitalizations, number of active medications, presence of specific ICD codes. The algorithm then learns how to weight and combine those pre-specified features. This process of feature engineering encodes human clinical knowledge into the model — which is simultaneously its greatest strength (the model benefits from decades of clinical insight) and its greatest limitation (features the expert failed to think of are invisible to the model)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Deep learning — neural networks with many hidden layers — sidesteps the feature engineering bottleneck entirely. Given a raw fundus photograph, a CNN does not need a retinal specialist to define which pixel patterns indicate hemorrhage; the network discovers those patterns itself through repeated exposure to thousands of labeled images during training. Given raw clinical note text, a transformer-based language model does not need a linguist to specify which phrases indicate worsening dyspnea; it learns contextual representations of language that capture clinical meaning. This automatic feature learning is what makes deep learning transformative for unstructured data — images, free text, audio — where manual feature engineering is prohibitively labor-intensive."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "The tradeoff is substantial. Deep learning models require orders of magnitude more labeled training data than traditional ML models — thousands to millions of examples rather than hundreds. They require GPU infrastructure for training that traditional ML does not. And they are dramatically harder to interpret: when a random forest flags a patient as high risk, you can examine the feature importances and understand which variables drove the prediction. When a twelve-layer neural network flags the same patient, the reasoning is distributed across millions of numerical weights in a form humans cannot read directly. For structured clinical data — tabular EHR data with labs, vitals, demographics, and diagnosis codes — traditional ML (especially gradient boosting) typically matches or outperforms deep learning while training in minutes instead of hours and producing more interpretable models. Deep learning's advantages emerge clearly with imaging, genomics, and clinical NLP."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Specify what the model should predict or classify — for example, 30-day readmission risk for CHF patients discharged from the hospital. The definition should include the prediction horizon (30 days), the population (CHF discharges), and the outcome (acute care re-encounter).",
+          "title": "Define the Task"
+        },
+        {
+          "_key": "step2",
+          "description": "Gather historical patient records from the EHR, claims system, or registry. For supervised learning, attach known outcomes to each record — readmitted: yes or no. Label quality is the single most important determinant of model quality; garbage labels produce garbage models regardless of algorithm choice.",
+          "title": "Collect and Label Data"
+        },
+        {
+          "_key": "step3",
+          "description": "Extract relevant variables from raw data as numeric inputs: age, discharge diagnosis codes, lab values at discharge, number of ED visits in the prior six months, active medication count, insurance type. For deep learning on images or text, this step is replaced by providing the raw input directly to the network.",
+          "title": "Feature Engineering"
+        },
+        {
+          "_key": "step4",
+          "description": "Feed labeled data through the chosen algorithm, which adjusts its internal parameters — coefficients in logistic regression, split thresholds in trees, weights in neural networks — to minimize prediction error on the training set. Use cross-validation to reduce overfitting to the specific training sample.",
+          "title": "Train the Model"
+        },
+        {
+          "_key": "step5",
+          "description": "Evaluate on a held-out test set the model has never seen during training. Measure discrimination (AUROC), calibration (do predicted probabilities match observed rates?), sensitivity, specificity, and — critically — performance stratified by race, age, sex, and payer to detect equity gaps before deployment.",
+          "title": "Validate and Test"
+        },
+        {
+          "_key": "step6",
+          "description": "Integrate the model into clinical workflows — EHR alerts, dashboard risk scores, worklist prioritization. Establish continuous monitoring for performance drift as the patient population, coding practices, and treatment protocols evolve. A model validated in 2020 may no longer perform adequately in 2025 without retraining.",
+          "title": "Deploy and Monitor"
+        }
+      ],
+      "title": "How a Machine Learning Model Is Built"
+    },
+    {
+      "_key": "s3warn",
+      "_type": "warningBlock",
+      "message": "A common misconception is that deep learning makes feature engineering obsolete across all healthcare AI applications. For structured clinical data — lab values, vital signs, diagnosis codes, medication lists — domain-informed feature engineering still dramatically improves model performance and is often more cost-effective than deploying a deep learning architecture. Deep learning's automatic feature learning shines on imaging, genomic sequences, and free-text clinical notes — not on tabular EHR data where traditional ML (especially gradient boosting) remains the practical gold standard.",
+      "title": "Feature Engineering vs. Deep Learning — Do Not Conflate Them"
+    },
+    {
+      "_key": "s4h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key ML Algorithms Clinicians and Analysts Encounter"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Healthcare AI is not a monolithic technology — it is an ecosystem of algorithms, each with specific strengths, data requirements, and interpretability profiles. Clinicians and analysts who understand what each algorithm does (even without implementing it themselves) can ask better questions of AI vendors, critically evaluate published models, and contribute meaningfully to institutional AI governance. The following algorithms appear repeatedly in clinical AI literature and commercial clinical decision support tools."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Logistic regression is the statistical backbone of most clinical prediction rules in use today — the LACE index for readmission, the CHADS₂ score for stroke risk in atrial fibrillation, the CURB-65 pneumonia severity score. Its output is a probability (0 to 1), and each input variable has a coefficient that translates directly to an odds ratio clinicians can interpret without machine learning expertise. This interpretability is its defining advantage in settings where clinical accountability requires that a clinician understand and defend every prediction."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Decision trees partition the patient population through a sequence of binary splits — \"Is creatinine above 1.5? If yes, go left; if no, go right\" — producing a flowchart-like model that clinicians can trace manually. Random forests aggregate hundreds of slightly randomized trees and average their votes, dramatically improving accuracy while retaining the ability to rank variable importance. Random forests handle missing data gracefully — a critical property for EHR data, where documentation gaps are the norm rather than the exception. They power many sepsis early-warning and ICU deterioration models deployed in commercial platforms."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Gradient boosting (XGBoost, LightGBM, CatBoost) builds trees sequentially, with each new tree correcting the errors of the ensemble so far. This iterative error-correction produces state-of-the-art accuracy on structured tabular data and has dominated clinical AI benchmark competitions for the past several years. The tradeoff is reduced interpretability compared to logistic regression — though SHAP (SHapley Additive exPlanations) values can decompose any gradient boosting prediction into per-feature contributions. Many commercial clinical decision support tools — including population health risk stratification platforms and sepsis alerts — are powered by gradient boosting under the hood."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p5s",
+          "_type": "span",
+          "marks": [],
+          "text": "Convolutional neural networks (CNNs) are the gold standard architecture for analyzing grid-structured data — medical images. A CNN stacks layers of filters that progressively detect low-level features (edges, textures) and then higher-level structures (lesions, anatomical landmarks) directly from pixel values. The 956 FDA-cleared radiology AI devices through May 2025 are predominantly CNN-based models trained on hundreds of thousands of annotated studies. Beyond radiology, CNNs power digital pathology (whole-slide image analysis), dermatology (skin lesion classification), and ophthalmology (diabetic retinopathy, glaucoma screening)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p6s",
+          "_type": "span",
+          "marks": [],
+          "text": "Transformer models and large language models (LLMs) have reshaped clinical NLP since the introduction of BERT in 2018 and the GPT family shortly after. Transformers use attention mechanisms to capture long-range dependencies in text, enabling them to understand clinical narrative in ways that older NLP tools could not. Applied to healthcare, they power ambient clinical documentation (converting physician-patient conversation to structured notes), clinical summarization, diagnostic code suggestion, and prior authorization automation. By 2024, GPT-based and open-source LLMs were embedded in multiple major EHR platforms, representing the fastest-moving frontier in commercial healthcare AI."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4anal",
+      "_type": "analogyBlock",
+      "analogy": "Think of traditional ML as a recipe where you hand the chef (the algorithm) a curated list of ingredients (pre-selected features). Deep learning is like giving the chef a whole field of crops and letting them decide which plants to harvest, how to process them, and how to combine them into the final dish. The recipe approach is faster, cheaper, and produces consistent results when you already know which ingredients matter. The field approach discovers combinations you never thought to specify — but requires far more time, equipment, and raw material to work.",
+      "concept": "The difference between feature engineering (traditional ML) and automatic feature learning (deep learning) in machine learning"
+    },
+    {
+      "_key": "s4tbl",
+      "_type": "tableBlock",
+      "rows": [
+        {
+          "Algorithm": "Logistic Regression",
+          "Clinical_Use": "Risk scores, triage tools, prediction rules",
+          "Data_Type": "Structured / tabular",
+          "Strength": "Interpretability (odds ratios)"
+        },
+        {
+          "Algorithm": "Random Forest",
+          "Clinical_Use": "Sepsis alerts, readmission risk, deterioration",
+          "Data_Type": "Structured / tabular",
+          "Strength": "Handles missing data; robust to outliers"
+        },
+        {
+          "Algorithm": "Gradient Boosting (XGBoost)",
+          "Clinical_Use": "CDS tools, population health, risk stratification",
+          "Data_Type": "Structured / tabular",
+          "Strength": "Highest accuracy on tabular benchmarks"
+        },
+        {
+          "Algorithm": "CNN (Deep Learning)",
+          "Clinical_Use": "Radiology AI, digital pathology, dermatology",
+          "Data_Type": "Images (pixels)",
+          "Strength": "Automatic feature learning from raw images"
+        },
+        {
+          "Algorithm": "Transformer / LLM",
+          "Clinical_Use": "Ambient documentation, NLP, prior auth",
+          "Data_Type": "Text / sequential data",
+          "Strength": "Long-range language understanding"
+        },
+        {
+          "Algorithm": "Reinforcement Learning",
+          "Clinical_Use": "ICU dosing, treatment planning, adaptive care",
+          "Data_Type": "Sequential decision data",
+          "Strength": "Optimizes long-term cumulative outcomes"
+        }
+      ]
+    },
+    {
+      "_key": "s5h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "From Algorithm to Clinical Deployment"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The gap between a promising research model and a safely deployed clinical AI tool is wider than most non-technical stakeholders appreciate. Building and validating the model is roughly 20 percent of the total effort. The remaining 80 percent involves regulatory compliance, clinical workflow integration, institutional governance, ongoing monitoring, and the slower cultural work of earning clinician trust. Many health systems have learned this the hard way — investing in model development only to discover that deployment without a robust implementation infrastructure yields no measurable outcome benefit and sometimes generates new harms."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The FDA regulates AI-powered clinical tools as Software as a Medical Device (SaMD) when they are intended to diagnose, treat, mitigate, or prevent disease. Developers must demonstrate substantial equivalence to a predicate device through the 510(k) pathway, or establish safety and effectiveness through the more rigorous Premarket Approval (PMA) process for higher-risk applications. A key challenge is that AI models can and should update as they encounter new data — but traditional regulatory frameworks were designed for static software. The FDA's Predetermined Change Control Plan (PCCP) framework, introduced in recent years, allows developers to specify in advance the types of model updates (retraining, performance improvements) that are permissible without requiring a new regulatory submission, as long as those changes remain within pre-approved bounds. This framework is still maturing, and the regulatory landscape for adaptive AI remains one of the fastest-evolving areas in health law."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Model drift is the silent killer of deployed clinical AI. A sepsis model trained on 2019 ICU data was built in a world without COVID-19, without the post-pandemic shifts in care protocols, and without the coding changes that followed ICD-10 updates. By 2024, that model may be operating on a patient population whose characteristics diverge substantially from its training data — producing predictions that are systematically biased without any obvious failure mode. Continuous post-deployment monitoring — tracking AUROC, calibration, and alert positive predictive value over rolling time windows — is not optional; it is a regulatory requirement under the FDA SaMD framework and an institutional safety obligation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Explainability is both a clinical need and an emerging regulatory expectation. A clinician presented with a high-risk alert needs to understand which patient factors drove the prediction in order to act on it appropriately — and to override it responsibly when clinical judgment diverges. SHAP (SHapley Additive exPlanations) decomposes any model's prediction into per-feature contributions, answering \"this patient's creatinine trend added 12 points to the risk score; their age added 8.\" LIME (Local Interpretable Model-agnostic Explanations) provides locally faithful approximations of complex model behavior. Both are now standard components of responsible clinical AI deployment, and both are increasingly expected in vendor contracting and institutional AI governance frameworks."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p5s",
+          "_type": "span",
+          "marks": [],
+          "text": "Equity in AI performance is the dimension most frequently overlooked in initial deployment and most frequently identified in post-deployment audits. A model trained predominantly on data from urban, insured, white patients may perform with high overall AUROC while performing substantially worse for Black patients, rural patients, Medicaid beneficiaries, or non-English speakers. Stratified performance evaluation — breaking down AUROC, sensitivity, and specificity by race, ethnicity, age group, sex, payer, and geography — must be completed before any clinical AI tool is deployed at scale. Institutions that skip this step risk automating and amplifying existing healthcare disparities rather than reducing them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5ex",
+      "_type": "exampleBlock",
+      "content": "Epic Systems embedded a deterioration prediction model — using gradient boosting on vital signs, laboratory values, and nursing assessment inputs — across hundreds of health systems as part of its EHR platform. By 2024, the model was generating millions of patient risk alerts daily across the Epic network, making it arguably the most widely deployed clinical ML model in American healthcare. Institutions that paired the alert with a defined rapid response workflow — a nurse escalation protocol triggered at a specific threshold score — reported reductions in unexpected ICU transfers and in-hospital mortality in observational analyses. Institutions that activated the alert without a paired response protocol reported alert fatigue, clinician desensitization, and no measurable outcome benefit. The Deterioration Index is the canonical case study in how clinical AI implementation success is determined less by algorithm quality than by workflow integration design.",
+      "title": "Epic's Deterioration Index — EHR-Integrated ML at Scale"
+    },
+    {
+      "_key": "s5hl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hls",
+          "_type": "span",
+          "marks": [],
+          "text": "The FDA had cleared 1,247 AI/ML medical devices through May 2025 — nearly all concentrated in radiology (956 devices), cardiology (116), and neurology (56). The regulatory pathway for adaptive AI, post-market monitoring requirements, and mandatory equity testing standards are all still actively evolving. Healthcare organizations procuring AI tools should evaluate vendors not only on model accuracy but on regulatory clearance status, post-market surveillance commitments, and published equity analyses."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s6tkwy",
+      "_type": "takeawayBlock",
+      "points": [
+        "AI encompasses machine learning (learning from data) and deep learning (automatic feature learning via neural networks) — each suited to different healthcare data types and clinical use cases.",
+        "Supervised learning (labeled data → predictions) is the dominant ML paradigm in clinical AI; unsupervised and reinforcement learning are growing for phenotype discovery and adaptive treatment optimization respectively.",
+        "Traditional ML (logistic regression, random forests, gradient boosting) excels on structured EHR data; deep learning (CNNs, transformers) dominates imaging and clinical NLP where manual feature engineering is impractical.",
+        "The FDA had approved 1,247 AI/ML medical devices through May 2025, the vast majority in radiology — evidence of how far imaging AI has advanced in regulatory maturity relative to other clinical domains.",
+        "Approximately 75% of U.S. hospitals had ML functions integrated into their EHR systems by 2024, making AI-literate clinical and operational staff increasingly essential across every health system role.",
+        "Model deployment is harder than model building — drift monitoring, explainability (SHAP/LIME), stratified equity evaluation, and clinical workflow integration are the real implementation challenges that determine whether a model delivers benefit or harm.",
+        "The global AI-in-healthcare market is growing at ~39% CAGR, projected to reach $613 billion by 2034 — signaling that AI literacy is no longer optional for any professional working in or around American healthcare."
+      ]
+    },
+    {
+      "_key": "s7quiz",
+      "_type": "knowledgeCheck",
+      "explanation": "Supervised learning uses labeled training data — where each example has a known correct output — to teach a model to predict outcomes for new, unseen inputs. It is the dominant paradigm for clinical predictive models such as readmission risk scores, sepsis early-warning alerts, and diagnostic imaging classifiers, and accounts for the overwhelming majority of the 1,247 FDA-cleared AI/ML medical devices approved through May 2025. Reinforcement learning optimizes sequential decisions through reward signals; unsupervised learning finds patterns in unlabeled data without a predefined target variable.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Unsupervised learning"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": false,
+          "text": "Reinforcement learning"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": true,
+          "text": "Supervised learning"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Transfer learning"
+        }
+      ],
+      "question": "Which machine learning paradigm trains a model on labeled examples (known input-output pairs) and is the most widely deployed approach in clinical AI applications such as readmission risk scoring and disease classification?"
+    },
+    {
+      "_key": "s8src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s8s1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Precedence Research — AI in Healthcare Market Size, Share & Trends 2025–2034 — https://www.precedenceresearch.com/artificial-intelligence-in-healthcare-market — Global AI healthcare market valued at $36.96 billion in 2025, projected to reach $613.81 billion by 2034 at 38.9% CAGR; North America holds >45% of global revenue."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s8s2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s2s",
+          "_type": "span",
+          "marks": [],
+          "text": "IntuitionLabs — FDA AI/ML Medical Device Tracker (May 2025) — https://intuitionlabs.ai/articles/fda-ai-medical-device-tracker — 1,247 FDA-cleared AI/ML medical devices through May 2025; 956 in radiology, 116 in cardiovascular, 56 in neurology."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s8s3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s3s",
+          "_type": "span",
+          "marks": [],
+          "text": "JMIR Medical Informatics — Adoption of Machine Learning Functions in US Hospital Electronic Health Record Systems: Retrospective Study (2025) — https://www.jmir.org/2025/1/e76126 — 75% of non-federal acute-care hospitals had ML functions integrated in EHR systems; 71% used predictive AI in EHRs in 2024 (up from 66% in 2023); metropolitan hospitals 83.8% vs. non-metropolitan 61.3%."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s8s4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s4s",
+          "_type": "span",
+          "marks": [],
+          "text": "PMC / NIH — Machine Learning in Healthcare: A Review (PMC8822225) — https://pmc.ncbi.nlm.nih.gov/articles/PMC8822225/ — Comprehensive review of supervised, unsupervised, and reinforcement learning paradigms and their clinical applications, including imaging, NLP, and clinical decision support."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s8s5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s5s",
+          "_type": "span",
+          "marks": [],
+          "text": "Nature npj Digital Medicine — Reinforcement Learning for Clinical Decision-Making and Dynamic Treatment Regimes (2024) — https://www.nature.com/articles/s41746-024-01316-0 — Review of RL applications in medicine including sepsis management dosing, ICU ventilator weaning, and adaptive treatment optimization; current state and prospective trial requirements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "aiml-core-concepts"
+  },
+  "title": "Core Concepts of AI and Machine Learning in Healthcare"
+}

@@ -1,0 +1,782 @@
+{
+  "_createdAt": "2026-05-28T18:42:30Z",
+  "_id": "aiml-ethics",
+  "_rev": "e9dAzcXU8PHUfi5EO1EUKS",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T04:34:53Z",
+  "body": [
+    {
+      "_key": "intro1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "intro1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Artificial intelligence is moving from the research lab into the clinic with remarkable speed — triaging chest X-rays, predicting sepsis, recommending chemotherapy regimens, flagging patients at risk of readmission. Yet speed of adoption and depth of ethical reflection are not moving in lockstep. Every week brings new headlines: an algorithm that quietly penalised Black patients, a diagnostic tool whose reasoning no clinician could explain, a health system that trained a model on millions of patient records without anyone's explicit consent. These are not theoretical concerns. They are documented failures in deployed systems — and they demand that healthcare professionals develop the vocabulary and the frameworks to reason about them clearly."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "intro2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "intro2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson grounds AI ethics in the healthcare context. We begin with the four principles that have anchored biomedical ethics since 1979, applying each to AI-specific scenarios. We then examine transparency and explainability — the obligation to make algorithmic reasoning legible to clinicians and patients. Next we work through the tangled landscape of consent and data privacy, where HIPAA's de-identification rules were designed long before machine learning existed. We then study four documented real-world dilemmas that illustrate how ethical failures embed themselves in deployed products. Finally we tackle the hardest question of all: when an AI system causes harm, who is responsible?"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "intro3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "intro3s",
+          "_type": "span",
+          "marks": [],
+          "text": "By the end of this lesson you will be able to apply bioethical principles to AI use cases, identify when explainability obligations arise, spot consent and privacy risks in AI pipelines, recognise documented bias patterns, and articulate accountability frameworks aligned with AMA policy and WHO guidance."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The Four Principles Applied to AI"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "In 1979, philosopher Tom Beauchamp and theologian James Childress published the first edition of Principles of Biomedical Ethics, a work that would go on to define how medicine reasons about right and wrong. Now in its ninth edition, the text argues that four clusters of moral principles form the core of ethical reasoning in health care: respect for autonomy, nonmaleficence, beneficence, and justice. These principles were developed for human clinicians acting on individual patients, but each translates — with important modifications — into the AI context."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Autonomy in AI means more than simply obtaining consent before a procedure. It requires that patients have meaningful say in whether AI tools influence their care, that they can understand the nature of algorithmic recommendations, and that they retain the right to opt out. When an AI system recommends a care pathway, the patient's autonomy is threatened if the system is so opaque that neither the patient nor the physician can explain the basis of the recommendation. Autonomy also demands data autonomy — a patient's right to determine how their health information is used, including whether it feeds future AI training."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Nonmaleficence — do no harm — imposes a duty on AI developers and deploying institutions to proactively identify failure modes. Unlike a human clinician, an AI system can fail at scale: a biased risk score applied across a health system harms thousands of patients simultaneously. Beneficence requires that AI tools demonstrably improve health outcomes, not merely impress in retrospective validation studies. Justice demands equitable distribution of benefits and burdens: an AI system that performs well for well-represented demographic groups while degrading care for minority populations is unjust regardless of its average accuracy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1stats",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Now in its 9th edition; the foundational bioethics text",
+          "label": "Year Beauchamp & Childress published the four principles",
+          "value": "1979"
+        },
+        {
+          "_key": "s2",
+          "context": "Continuously updated to address emerging technologies",
+          "label": "Current edition of Principles of Biomedical Ethics",
+          "value": "9th ed."
+        },
+        {
+          "_key": "s3",
+          "context": "Autonomy · Nonmaleficence · Beneficence · Justice",
+          "label": "Core bioethical principles",
+          "value": "4"
+        },
+        {
+          "_key": "s4",
+          "context": "Extends Beauchamp & Childress into the AI domain",
+          "label": "WHO AI ethics principles for health (2021)",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "_key": "s1analogy",
+      "_type": "analogyBlock",
+      "analogy": "Imagine a new resident who has studied thousands of case files but was trained exclusively on cases from one hospital with a particular patient population. When that resident transfers to a different hospital, their intuitions may systematically mislead them. You would not trust the resident's judgment blindly — you would supervise, validate, and correct. AI systems require the same structured mentorship, even after deployment.",
+      "concept": "Bioethical principles apply to AI systems the same way they apply to human clinicians — the stakes are similar, but the failure modes are different in scale and mechanism."
+    },
+    {
+      "_key": "s1p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "The WHO's 2021 Ethics and Governance of Artificial Intelligence for Health guidance extends Beauchamp and Childress into the AI domain with six principles: protect autonomy; promote human well-being and the public interest; ensure transparency and explainability; foster responsibility and accountability; ensure inclusiveness and equity; and promote AI that is responsive and sustainable. Published after eighteen months of deliberation by twenty leading experts in ethics, digital technology, law, and human rights, the WHO document represents the first global consensus on what ethical AI in health actually requires."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Transparency and Explainability: The Black Box Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Modern machine learning models — particularly deep neural networks — arrive at their predictions through computations across millions of parameters. A radiologist can point to the precise shadow on a CT scan that led to a diagnosis. A neural network classifying the same scan cannot. This is the black box problem: the output is produced, but the reasoning is not legible. In most commercial contexts this may be a minor inconvenience. In healthcare, it is a serious ethical and regulatory problem."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The right to an explanation is increasingly embedded in law. The EU AI Act, which entered into application in 2024 and whose high-risk AI obligations apply fully from August 2026, classifies any AI component integrated into a medical device requiring Notified Body review as high-risk under Article 6(1)(b). High-risk AI systems must satisfy transparency requirements: users must be able to interpret outputs, and providers must document the logic of the system in a way that enables audit. Separately, the EU's General Data Protection Regulation (GDPR) Article 22 grants individuals the right not to be subject to decisions based solely on automated processing, and Article 13 requires meaningful information about the logic involved."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The FDA has similarly emphasised explainability in its guidance on AI/ML-based Software as a Medical Device (SaMD). The agency requires that manufacturers document performance across subpopulations, maintain transparency about training data, and implement mechanisms for ongoing monitoring of real-world performance. Clinicians cannot appropriately supervise AI recommendations they cannot interrogate — and supervision is precisely what regulators and professional bodies expect."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex",
+      "_type": "exampleBlock",
+      "content": "Explainable AI (XAI) researchers have developed several practical methods for making black-box models legible. LIME (Local Interpretable Model-Agnostic Explanations) explains individual predictions by approximating the local decision boundary with a simpler, interpretable model — showing, for instance, which lab values most influenced a sepsis alert. SHAP (SHapley Additive exPlanations) assigns each input feature a contribution score drawn from cooperative game theory, allowing clinicians to see that an elevated creatinine contributed +0.23 to a risk score while age contributed -0.05. Grad-CAM generates heat maps over medical images showing which pixels most activated a neural network's classification — studies have found that Grad-CAM visualisations increase clinician confidence in radiology AI by approximately 30%.",
+      "title": "XAI Techniques in Clinical Practice"
+    },
+    {
+      "_key": "s2p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Explainability is not just a regulatory compliance exercise — it is a patient safety mechanism. When clinicians cannot understand why an AI flagged a patient, they cannot decide whether to act on the flag or override it with good reason. Unintelligible recommendations erode the clinical judgment that is the last line of defence against algorithmic error. Professional accountability requires that the physician understand the basis of any recommendation they act on — whether that recommendation comes from a colleague, a protocol, or an algorithm."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2warn",
+      "_type": "warningBlock",
+      "message": "A system that provides a clear, confident, wrong explanation is more dangerous than one that admits uncertainty. Explainability tools must be validated against ground truth: LIME and SHAP can produce plausible-looking but misleading explanations if the underlying model is unstable or the data distribution shifts. Always pair explainability requirements with rigorous performance monitoring.",
+      "title": "Explainability Does Not Equal Accuracy"
+    },
+    {
+      "_key": "s3h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Consent, Data Privacy, and Secondary Use"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The modern AI development pipeline begins with data — typically vast quantities of electronic health record data accumulated over years of routine clinical care. This creates an immediate ethical tension: patients who provided that data consented to treatment, not to training a commercial machine learning model. The distinction matters. The purposes, the beneficiaries, and the risks of secondary use are materially different from direct clinical care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "HIPAA addresses this tension through its de-identification framework, which allows data to be used for research and other purposes if identifying information is removed. HIPAA recognises two de-identification methods. The Safe Harbor method requires the removal of 18 specific identifiers — including names, Social Security numbers, medical record numbers, detailed dates, and geographic subdivisions smaller than a state — after which the data is considered de-identified and is no longer subject to HIPAA's Privacy Rule. The Expert Determination method allows a statistician to certify that residual re-identification risk is very small, often permitting retention of more granular data such as month-level dates and sub-state locations that are useful for machine learning."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The limitation of HIPAA's de-identification framework in the AI context is profound. Modern machine learning models can reconstruct personal identities from data patterns that contain none of the 18 Safe Harbor identifiers. A combination of age, diagnosis codes, prescription history, and admission timestamps can be sufficient to re-identify individuals, particularly in small or distinctive populations. A 2019 study estimated that 99.98% of Americans could be correctly re-identified using just 15 demographic attributes. Researchers have demonstrated that even genomic sequences shared for research can be linked back to named individuals. Safe Harbor de-identification, designed in the pre-deep-learning era, provides weaker protection than its legal status implies."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3comp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Safe Harbor Method",
+        "points": [
+          "Remove all 18 listed identifiers",
+          "No statistical expertise required",
+          "Simpler compliance path",
+          "Less data retained (dates to year only)",
+          "Weaker against modern re-identification attacks"
+        ]
+      },
+      "right": {
+        "label": "Expert Determination Method",
+        "points": [
+          "Retain more granular data (month dates, sub-state location)",
+          "Requires qualified statistician certification",
+          "Better suited for ML training datasets",
+          "Risk-based, not rules-based",
+          "More flexible but requires documentation of analysis"
+        ]
+      },
+      "title": "HIPAA De-Identification: Safe Harbor vs. Expert Determination"
+    },
+    {
+      "_key": "s3p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Beyond de-identification, the deeper ethical question is whether patients should have a meaningful voice in the secondary use of their health data. A 2025 scoping review published in a peer-reviewed journal identified four recurring themes in the literature on patient consent for AI training data: privacy, transparency, and consent adequacy; public trust and regulatory fragmentation; fair representation and model generalisability; and responsible AI integration. The review found that current consent practices are widely considered inadequate for AI training purposes — patients are often unaware their data is being used, and even when they are informed, the consent process does not meaningfully convey the nature of the secondary use or its commercial dimensions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Document specifically what the AI model will be trained to do and who will benefit — a model predicting readmission for a specific health system's quality program differs from one sold commercially.",
+          "title": "Identify the purpose"
+        },
+        {
+          "_key": "step2",
+          "description": "Determine whether existing patient consent covers the proposed use. Broad research consents often do not cover commercial AI training.",
+          "title": "Assess consent adequacy"
+        },
+        {
+          "_key": "step3",
+          "description": "Choose between Safe Harbor and Expert Determination based on data sensitivity and ML requirements; document the method and validate against re-identification risk.",
+          "title": "Apply de-identification appropriately"
+        },
+        {
+          "_key": "step4",
+          "description": "Create oversight bodies with patient representation, define data retention and deletion policies, and establish breach response protocols.",
+          "title": "Establish data governance"
+        },
+        {
+          "_key": "step5",
+          "description": "Publish model cards describing training data demographics, performance metrics across subpopulations, and known limitations before clinical deployment.",
+          "title": "Disclose and publish"
+        }
+      ],
+      "title": "Ethical Data Governance for AI Training"
+    },
+    {
+      "_key": "s4h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Real Ethical Dilemmas in Deployed AI"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Abstract ethical principles become concrete when we study documented failures in deployed AI systems. Three cases have become canonical in healthcare AI ethics discussions — each illustrates a different failure mode and implicates different principles."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most widely studied case is the Optum health risk stratification algorithm, exposed in a landmark study published in Science in October 2019 by economist and physician Ziad Obermeyer and colleagues. The algorithm was used by hospitals and insurers to identify high-risk patients who would benefit from care management programs — it touched care decisions for over 200 million people in the United States annually. The researchers found a severe racial bias: Black patients were assigned systematically lower risk scores than white patients with equivalent or worse health status. The mechanism was the algorithm's proxy variable: it used prior healthcare costs to predict health needs. Because Black patients historically spent approximately $1,800 less per year on healthcare than white patients with the same conditions — a product of systemic barriers to access, not better health — the algorithm concluded they were healthier. The result: the number of Black patients identified for extra care was reduced by more than half. The algorithm did not contain race as a variable; the bias was imported through the cost proxy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Epic Sepsis Prediction Model illustrates the problem of external validation failure. Developed and marketed to health systems as a tool for early sepsis detection, the model performed far below vendor claims when independently evaluated. A 2021 study examining 27,697 patients across 38,455 hospitalisations found the model's area under the receiver operating characteristic curve (AUC) was only 0.63 — substantially below the performance Epic reported. The model missed 67% of sepsis cases. Beyond overall poor performance, researchers identified disparate performance across demographic subgroups, with statistically significant differences for Asian and Hispanic patients, partly because the original training data did not use the Sepsis-3 definition and because racial and socioeconomic differences in care access created systematic variation in the training signal. The case illustrates that bias is not always introduced by a single discriminatory variable — it can emerge from the complex interaction of training data, outcome definitions, and population heterogeneity."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex",
+      "_type": "exampleBlock",
+      "content": "While not a healthcare case, Amazon's experience with its AI hiring algorithm — which the company quietly abandoned in 2018 after discovering it systematically downgraded resumes from women — carries a direct lesson for healthcare AI. The algorithm was trained on a decade of hiring decisions, during which Amazon, like most technology companies, hired predominantly male engineers. The model learned from those decisions: it penalised resumes that contained the word \"women's\" and downgraded graduates of all-women's colleges. The training data encoded historical bias; the model faithfully reproduced it. In healthcare, training an AI on historical clinical decisions means training it on decisions made in a system that has long delivered unequal care by race, gender, insurance status, and geography. The algorithm inherits the inequities of the system that generated its data.",
+      "title": "The Amazon Hiring Algorithm: A Cautionary Analogy from Outside Healthcare"
+    },
+    {
+      "_key": "s4stats",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Obermeyer et al., Science, 2019",
+          "label": "US patients annually affected by Optum-style risk algorithms",
+          "value": ">200M"
+        },
+        {
+          "_key": "s2",
+          "context": "Optum algorithm cost-proxy mechanism",
+          "label": "Reduction in Black patients identified for extra care due to algorithmic bias",
+          "value": ">50%"
+        },
+        {
+          "_key": "s3",
+          "context": "JAMA Internal Medicine, 2021",
+          "label": "AUC of Epic Sepsis Model in independent validation (vs. vendor claims)",
+          "value": "0.63"
+        },
+        {
+          "_key": "s4",
+          "context": "University of Michigan independent study",
+          "label": "Percentage of sepsis cases missed by the Epic model in external validation",
+          "value": "67%"
+        }
+      ]
+    },
+    {
+      "_key": "s4p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "These cases share a common architecture of failure: an algorithm trained to optimise a measurable proxy (cost, historical alerts, prior diagnoses) rather than the underlying clinical reality; validation conducted primarily by the vendor on its own data; deployment at scale before independent external validation; and inadequate monitoring for disparate impact after deployment. Recognising this architecture is the first step in designing procurement and governance processes that catch failures before they cause harm at scale."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Who Is Accountable? Liability, Governance, and Professional Responsibility"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "When an AI-influenced clinical decision causes patient harm, the question of accountability becomes urgent and legally complicated. Healthcare AI inserts a new actor — the algorithm developer or vendor — between the traditional parties of the physician-patient relationship. Existing medical liability frameworks were designed for human actors and do not map cleanly onto this three-party structure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The American Medical Association has been explicit in its position: physicians who use AI tools bear professional responsibility for the recommendations they act upon. AMA policy, updated through its STEPS Forward governance framework, states that physicians using AI \"accept responsibility for responding appropriately to the AI's recommendations\" and that \"failure to apply human judgment to any output of AI is a violation of a physician's professional duties.\" This principle — sometimes called the physician ultimate responsibility doctrine — holds that clinical judgment cannot be delegated to an algorithm. A physician who blindly follows an AI recommendation without appropriate scrutiny is professionally responsible for the outcome in the same way they would be if they blindly followed a nurse's suggestion without exercising independent judgment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "AMA survey data from 2024 shows that nearly 70% of physicians now use AI in clinical practice, up from 38% the previous year — a dramatic acceleration that has outpaced the development of governance infrastructure. Most health systems have not yet established the oversight committees, procurement checklists, post-deployment monitoring protocols, or staff training programs that responsible AI use requires. The AMA's eight-step AI governance toolkit provides a structured framework for health systems to establish these structures, covering vendor selection, clinical validation, equity auditing, staff education, and ongoing performance review."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Designate a physician-led AI governance committee with ethics, legal, clinical informatics, and patient representation.",
+          "title": "Establish leadership"
+        },
+        {
+          "_key": "step2",
+          "description": "Specify approved AI applications, their intended users, and the clinical decisions they inform — not replace.",
+          "title": "Define use cases"
+        },
+        {
+          "_key": "step3",
+          "description": "Require independent validation data, transparency about training demographics, and subgroup performance metrics before procurement.",
+          "title": "Vet vendors"
+        },
+        {
+          "_key": "step4",
+          "description": "Run the AI on local data before deployment; performance at the vendor's institution may not replicate in your population.",
+          "title": "Validate locally"
+        },
+        {
+          "_key": "step5",
+          "description": "Ensure clinicians understand what the AI can and cannot do, how to interpret outputs, and when to override.",
+          "title": "Train staff"
+        },
+        {
+          "_key": "step6",
+          "description": "Track real-world performance over time, especially for performance drift and disparate impact across patient groups.",
+          "title": "Monitor continuously"
+        },
+        {
+          "_key": "step7",
+          "description": "Actively audit outcomes by race, ethnicity, sex, age, and insurance status to detect disparate impact early.",
+          "title": "Audit for equity"
+        },
+        {
+          "_key": "step8",
+          "description": "Establish clear channels for clinicians to report concerns about AI performance; treat reports as safety signals.",
+          "title": "Report and improve"
+        }
+      ],
+      "title": "AMA 8-Step AI Governance Framework (Summary)"
+    },
+    {
+      "_key": "s5p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "The WHO's 2021 guidance adds an international governance dimension, calling on governments to establish regulatory frameworks that hold AI developers, deploying institutions, and clinicians jointly accountable through shared liability models. The WHO's sixth principle — responsiveness and sustainability — specifically addresses the need for ongoing post-market surveillance analogous to the pharmacovigilance systems that monitor drug safety after approval. No AI system should be treated as a finished product; all should be subject to continuous monitoring, performance review, and, when evidence of harm accumulates, withdrawal or remediation. Professional responsibility does not end at the purchase decision; it extends throughout the system's deployed lifecycle."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5warn",
+      "_type": "warningBlock",
+      "message": "Studies show that clinicians exhibit automation bias — they over-rely on algorithmic recommendations and under-scrutinise outputs that confirm their existing impressions, and they are less likely to override a wrong recommendation when it comes from an AI than when it comes from a human colleague. The presence of an AI recommendation changes the social dynamics of clinical decision-making in ways that can reduce rather than enhance safety. Governance frameworks must explicitly address automation bias through training, interface design, and mandatory human review checkpoints.",
+      "title": "Automation Bias Is a Patient Safety Risk"
+    },
+    {
+      "_key": "s5p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p5s",
+          "_type": "span",
+          "marks": [],
+          "text": "Liability allocation between vendors, health systems, and individual clinicians remains an evolving area of law. In general, vendors may bear product liability for design defects in the AI system; health systems may bear institutional liability for deploying an unvalidated or poorly governed tool; and clinicians may bear professional liability for failure to exercise appropriate judgment in applying AI recommendations. Courts have not yet settled the standard of care for AI-assisted medicine, but legal scholars expect it to converge toward a standard that holds clinicians accountable for knowing the performance characteristics and limitations of the AI tools they use — just as they are expected to know the dosing ranges and side effects of drugs they prescribe."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tkwy",
+      "_type": "takeawayBlock",
+      "points": [
+        "Beauchamp and Childress's four principles — autonomy, nonmaleficence, beneficence, and justice — each apply to AI with important modifications: scale of harm, opacity of reasoning, and embedded historical bias are AI-specific ethical hazards.",
+        "The WHO's 2021 AI ethics guidance for health establishes six global principles, adding transparency, accountability, and sustainability to the bioethics canon.",
+        "The EU AI Act classifies medical AI embedded in regulated devices as high-risk, imposing strict transparency, documentation, and human oversight requirements with enforcement from August 2026.",
+        "HIPAA's Safe Harbor de-identification framework removes 18 identifiers, but modern re-identification attacks can defeat this protection using data combinations — Expert Determination provides a more robust risk-based alternative for ML datasets.",
+        "The Optum algorithm case demonstrates that bias can be imported through proxy variables (healthcare costs) even when race is excluded from the model — disparate impact does not require discriminatory intent.",
+        "The Epic Sepsis Model's independent validation revealed an AUC of 0.63 and a 67% miss rate for sepsis cases — underscoring the danger of relying on vendor-reported performance without external validation.",
+        "AMA policy establishes that physicians bear professional responsibility for AI-influenced decisions; failure to apply human judgment to AI outputs is a violation of professional duties.",
+        "Effective AI governance requires pre-deployment local validation, post-deployment equity auditing, ongoing performance monitoring, and clear channels for clinician reporting — not just procurement diligence."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "The Optum study, published in Science in 2019 by Obermeyer et al., showed that the algorithm did not include race as a variable. The bias arose because it used past healthcare expenditure as a proxy for health need. Black patients spent approximately $1,800 less per year than white patients with equivalent conditions — a consequence of systemic barriers to access, not better health — causing the model to systematically underestimate their care needs and reduce their identification for care management programs by more than half.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The algorithm explicitly included race as a negative weighting variable in its scoring formula."
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The algorithm used prior healthcare costs as a proxy for health needs; because Black patients spent less on care due to systemic access barriers, the algorithm rated them as healthier than they were."
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The algorithm was trained exclusively on data from hospitals serving predominantly white populations and had never encountered Black patient records."
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Bias was introduced by the human reviewers who calibrated the algorithm's output thresholds after initial training."
+        }
+      ],
+      "question": "The Optum health risk stratification algorithm was found to systematically underestimate the health needs of Black patients. What was the primary mechanism of this bias?"
+    },
+    {
+      "_key": "srch",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srchs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] WHO: Ethics and Governance of Artificial Intelligence for Health (2021) — https://www.who.int/publications/i/item/9789240029200 — Documents the WHO's six consensus AI ethics principles for health, cited throughout Section 1 and Section 5 for the global governance framework and the transparency and sustainability principles."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Obermeyer Z et al., \"Dissecting racial bias in an algorithm used to manage the health of populations,\" Science (2019) — https://www.washingtonpost.com/health/2019/10/24/racial-bias-medical-algorithm-favors-white-patients-over-sicker-black-patients/ — Primary source for the Optum algorithm bias case study in Section 4, including the cost-proxy mechanism and the >50% reduction in Black patients identified for enhanced care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Beauchamp TL, Childress JF: Principles of Biomedical Ethics (Oxford University Press, 9th ed.) — https://global.oup.com/academic/product/principles-of-biomedical-ethics-9780197832639 — Foundational source for the four-principle framework in Section 1: autonomy, nonmaleficence, beneficence, and justice."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] EU AI Act — Annex III, Article 6(1)(b) — https://artificialintelligenceact.eu/annex/3/ — Legal basis for the high-risk classification of medical AI systems and the transparency and human oversight requirements discussed in Section 2; high-risk obligations apply from August 2026."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] AMA STEPS Forward AI Governance Toolkit and AMA AI Principles — https://www.ama-assn.org/practice-management/digital-health/augmented-intelligence-medicine — Source for physician ultimate responsibility doctrine, the eight-step governance framework, and the statistic that 70% of physicians used AI in 2024, cited in Section 5."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Healthcare IT Today: \"Problems With Epic's Sepsis Prediction Model\" (2021) — https://www.healthcareittoday.com/2021/06/29/problems-with-epics-sepsis-prediction-model-underscore-larger-issues-with-algorithmic-prediction-models/ — Source for the Epic Sepsis Model external validation findings (AUC 0.63, 67% miss rate) and disparate performance across demographic subgroups in Section 4."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] Censinet: \"HIPAA Safe Harbor vs. Expert Determination\" — https://censinet.com/perspectives/hipaa-safe-harbor-vs-expert-determination — Source for the two HIPAA de-identification methods, the 18 Safe Harbor identifiers, and the comparison of Safe Harbor versus Expert Determination in Section 3."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src8s",
+          "_type": "span",
+          "marks": [],
+          "text": "[8] PMC / JMIR: \"The Ethics of Leveraging Routinely Collected Patient Data for AI Development\" (2026) — https://www.jmir.org/2026/1/e79863 — Source for the four-theme framework of ethical concerns in EHR data secondary use (privacy/consent, public trust, fair representation, responsible integration) discussed in Section 3."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "aiml-ethics"
+  },
+  "title": "AI Ethics in Healthcare: Principles, Frameworks, and Real Dilemmas"
+}

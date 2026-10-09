@@ -1,0 +1,540 @@
+{
+  "_createdAt": "2026-05-29T22:33:05Z",
+  "_id": "hie-hl7-fhir-standards",
+  "_rev": "rL4Cn5Sfo5Z8rzPmDscSOY",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-29T22:33:05Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Healthcare Needs Data Standards"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Healthcare generates vast amounts of data — lab results, medication orders, diagnoses, vital signs, imaging reports — across thousands of incompatible software systems. Without common data standards, a lab result from one hospital cannot be reliably interpreted by a different hospital's EHR, and a patient's medication list cannot flow automatically from a physician's office to a pharmacy. Standards are the shared language that allows different healthcare systems to exchange, interpret, and act on information consistently."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Health Level Seven (HL7) International, founded in 1987 as an ANSI-accredited, not-for-profit standards organization, became the primary body responsible for healthcare data exchange standards in the United States and globally. The name \"Health Level Seven\" refers to Layer 7 — the application layer — of the Open Systems Interconnection (OSI) reference model. HL7's standards now underpin virtually every electronic clinical workflow, from patient admission to lab ordering to claims submission."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two generations of HL7 standards dominate the landscape today: HL7 Version 2 (v2), the workhorse of hospital systems since 1987, and FHIR (Fast Healthcare Interoperability Resources), the modern API-based standard that is rapidly becoming the foundation for patient access, interoperability regulations, and digital health innovation. Understanding both — how they work, how they differ, and how they coexist — is essential for anyone working in health IT."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "HL7 International is an ANSI-accredited, not-for-profit standards developing organization that provides a framework of international standards for the exchange, integration, sharing, and retrieval of electronic health information. It was founded in 1987 and its standards are now implemented in healthcare systems across 50+ countries."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "ANSI-accredited standards body that created the foundational healthcare data exchange standards",
+          "label": "HL7 Founded",
+          "value": "1987"
+        },
+        {
+          "_key": "s2",
+          "context": "Near-universal adoption since 1989 — present in 35+ countries (HL7 / industry surveys)",
+          "label": "US Healthcare Orgs Using HL7 v2",
+          "value": "95%"
+        },
+        {
+          "_key": "s3",
+          "context": "v4.0.1 — mandated by CMS-9115-F and ONC Cures Act Final Rule as the patient access API standard",
+          "label": "FHIR R4 Released",
+          "value": "2019"
+        },
+        {
+          "_key": "s4",
+          "context": "Epic's FHIR APIs process over 1 billion transactions monthly (Epic published statistics)",
+          "label": "FHIR Transactions/Month via Epic",
+          "value": "1B+"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "HL7 Version 2: The Original Healthcare Messaging Standard"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "HL7 v2 was first released in October 1987 and became the dominant standard for real-time clinical data exchange in hospitals. It uses a pipe-delimited text message format where data elements are separated by the | character, sub-components by ^, repeating values by ~, and sub-sub-components by &. While this seems archaic by modern standards, it was revolutionary in 1987 — enabling the first automated exchange of admission, discharge, lab, and order data between disparate hospital systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "HL7 v2 messages are organized into message types that correspond to clinical events. ADT messages (Admit, Discharge, Transfer) communicate patient movement and demographics — a new admission sends an ADT-A01, a discharge sends an ADT-A03. ORM messages carry orders from the ordering system to the fulfilling department (lab, pharmacy, radiology). ORU messages return results — an ORU-R01 carries lab results, vital signs, or radiology reports back to the ordering clinician. Every message contains segments — MSH (message header with sender, recipient, timestamp, and message type), PID (patient demographics), and type-specific segments like OBR (observation request) and OBX (observation result)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite being nearly 40 years old, HL7 v2 remains deeply embedded in healthcare IT. It is present in 95% of US healthcare organizations and installed in 35+ countries. Complex HL7 v2 integration projects typically take 3–6 months to implement due to the high degree of local customization — every hospital implements v2 slightly differently, with local Z-segments and non-standard field usage, creating integration complexity that FHIR was specifically designed to eliminate."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex1",
+      "_type": "exampleBlock",
+      "content": "When a clinician orders a blood glucose test in a hospital EHR, an ORM^O01 message travels from the EHR to the laboratory information system (LIS). When the lab completes the analysis, the LIS sends an ORU^R01 message back to the EHR containing the patient ID, the test ordered (LOINC code in OBR), and the result value, units, and reference range (in OBX segments). This exchange — invisible to the clinician — happens in seconds and relies entirely on HL7 v2 message parsing. In a large academic medical center, thousands of these messages flow per hour, 24 hours a day.",
+      "title": "HL7 v2 in Action: Lab Result Delivery"
+    },
+    {
+      "_key": "s2w1",
+      "_type": "warningBlock",
+      "message": "Despite being called a 'standard,' HL7 v2 is notorious for implementation variation. Two hospitals can both claim HL7 v2 compliance while implementing the same fields in incompatible ways. Z-segments (custom extensions) are common, field optionality is high, and there is no enforced terminology binding. This is why interface engines (Mirth Connect, Rhapsody) exist — to translate between the many dialects of v2 spoken by different systems.",
+      "title": "v2 Is Not Truly Standardized"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "FHIR: The Modern Healthcare API Standard"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Fast Healthcare Interoperability Resources (FHIR, pronounced \"fire\") is HL7 International's next-generation standard, designed from the ground up for the web era. Where HL7 v2 sends messages in response to clinical events, FHIR exposes data through RESTful APIs — the same technology that powers websites, mobile apps, and cloud services. A FHIR server makes clinical data available as discrete, addressable resources that any authorized application can retrieve using standard HTTP requests."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "FHIR organizes clinical information into modular resource types — Patient, Observation, Encounter, Condition, MedicationRequest, DiagnosticReport, Immunization, AllergyIntolerance, and many more. Each resource has a defined structure and is accessible at a predictable URL. For example, to retrieve patient 123's blood pressure readings, a developer sends a standard HTTP GET request: GET /Observation?patient=123&code=55284-4 — and receives a JSON bundle of matching Observation resources. FHIR R4 (v4.0.1, released in 2019) is the current implementation baseline, mandated by both the ONC Cures Act Final Rule and the CMS Interoperability and Patient Access Rule."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "FHIR's developer-friendly design dramatically reduces integration time. Where HL7 v2 projects take 3–6 months, FHIR implementations for equivalent scope often complete in 6–12 weeks. Standard JSON libraries, HTTP clients, and FHIR reference implementations (HAPI FHIR in Java, Microsoft Azure Health Data Services, Google Cloud Healthcare API) provide off-the-shelf tooling. Epic's FHIR APIs alone process over 1 billion transactions per month — a scale that reflects both the standard's adoption and the explosive growth of patient-facing apps and third-party integrations built on top of it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3an1",
+      "_type": "analogyBlock",
+      "analogy": "Think of HL7 v2 as the postal system — it delivers messages from one place to another, and has been doing so reliably for decades. FHIR is like the internet — instead of mailing documents, you query a live database using a URL, and get back structured data in real time that any app can use. Both carry health information; only one was designed for the world of smartphones and APIs.",
+      "concept": "HL7 v2 vs FHIR as Communication Paradigms"
+    },
+    {
+      "_key": "s3cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "HL7 v2 (Message-Based)",
+        "points": [
+          "Pipe-delimited text messages triggered by clinical events",
+          "Near-universal hospital adoption (95% of US orgs)",
+          "High local customization — implementation varies widely",
+          "Integration projects take 3–6 months",
+          "Requires interface engine middleware",
+          "Not natively queryable — push-only model"
+        ]
+      },
+      "right": {
+        "label": "FHIR (API-Based)",
+        "points": [
+          "RESTful APIs using HTTP, JSON, and XML",
+          "Mandated by ONC and CMS for patient access",
+          "Strictly defined resource structures and terminology bindings",
+          "Integration projects often complete in 6–12 weeks",
+          "Works with standard web developer tools",
+          "Supports real-time query, push (subscriptions), and bulk export"
+        ]
+      },
+      "title": "HL7 v2 vs FHIR"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "SMART on FHIR: Secure App Integration"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "SMART on FHIR (Substitutable Medical Applications, Reusable Technologies) is the standard framework for securely connecting third-party applications to EHR data via FHIR. It builds on OAuth 2.0 — the same authorization protocol used by Google, Facebook, and most major web platforms — and adds healthcare-specific scopes and launch context so that apps know which patient is being viewed and what data they are authorized to access."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "SMART supports two launch modes. In an EHR Launch, the app is opened from within an active EHR session — the EHR passes the app a launch token containing the current patient ID, encounter ID, and FHIR server URL. The app uses this context to immediately display relevant patient data without requiring a separate login. In a Standalone Launch, the app opens independently (e.g., a patient-facing mobile app) and prompts the user to authenticate and select a patient context. SMART scopes control exactly what data the app can access — patient/Observation.read gives read-only access to a specific patient's observations, while user/MedicationRequest.write allows the app to create medication orders on behalf of a clinician."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "SMART on FHIR has enabled the emergence of healthcare app ecosystems. Epic's App Orchard and Oracle Health's (formerly Cerner) App Market host thousands of third-party clinical apps — decision support tools, specialty workflows, patient engagement platforms, and analytics dashboards — all connecting to EHR data through SMART on FHIR without requiring custom point-to-point integrations. This shift from proprietary interfaces to open, standards-based app platforms is one of the most significant structural changes in health IT driven by FHIR adoption."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "The clinician clicks a SMART app link within the EHR while viewing a patient record; the EHR generates a launch token tied to the current patient and encounter context.",
+          "title": "Clinician Opens App"
+        },
+        {
+          "_key": "step2",
+          "description": "The app's launch URL receives the EHR's FHIR server URL (iss) and a launch handle; it uses these to discover the authorization endpoint.",
+          "title": "App Receives Launch Context"
+        },
+        {
+          "_key": "step3",
+          "description": "The app redirects to the EHR's OAuth server, which authenticates the user (if not already logged in) and presents a consent screen showing what data the app is requesting.",
+          "title": "OAuth 2.0 Authorization"
+        },
+        {
+          "_key": "step4",
+          "description": "The EHR returns an access token and the patient/encounter context (patient ID, encounter ID); the access token is scoped to the permissions the app requested.",
+          "title": "Token Exchange"
+        },
+        {
+          "_key": "step5",
+          "description": "The app uses the access token to make FHIR API calls to retrieve patient data (e.g., GET /MedicationRequest?patient=123) and display the relevant clinical content.",
+          "title": "FHIR API Calls"
+        }
+      ],
+      "title": "How SMART on FHIR EHR Launch Works"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Regulatory Mandates and the Road Ahead"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "FHIR's rise from technical standard to regulatory requirement was driven by federal policy. The ONC Cures Act Final Rule, published May 1, 2020 and effective June 30, 2020, requires certified EHR developers to publish FHIR R4-based APIs at no cost to patients and authorized third parties. EHR developers must also attest that they will not engage in information blocking — refusing to share data through these APIs. Failure to comply exposes developers to penalties of up to $1 million per violation enforced by the HHS Office of Inspector General."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CMS Interoperability and Patient Access Final Rule (CMS-9115-F) complements ONC's rule on the payer side. It requires CMS-regulated payers — Medicare Advantage, Medicaid, CHIP, and ACA Marketplace plans — to implement a FHIR R4 Patient Access API covering claims, encounters, and a defined clinical data subset (USCDI v1). Payers must also implement a Provider Directory API and a Payer-to-Payer exchange mechanism. TEFCA's Common Agreement v2.0, released April 2024, added mandatory FHIR-based transaction support as a condition for QHINs, bringing FHIR into the national exchange infrastructure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "HL7 v2 and FHIR are not competitors — they are complementary. v2 remains the backbone of high-volume, real-time hospital transactions (admissions, lab orders, results) and will not be replaced overnight. FHIR is the standard for API-driven innovation: patient apps, payer-to-payer exchange, quality reporting, and clinical decision support. Most health systems today run both in parallel."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "HL7 International, founded in 1987, is the ANSI-accredited body responsible for healthcare data exchange standards; the name refers to Layer 7 (application layer) of the OSI model.",
+        "HL7 v2, first released in October 1987, uses pipe-delimited messages and is deployed in 95% of US healthcare organizations — but high local customization makes integration complex and time-consuming.",
+        "FHIR R4 (v4.0.1, released 2019) uses RESTful APIs, HTTP, and JSON to represent clinical data as modular resources (Patient, Observation, Encounter, etc.), enabling faster and more consistent integrations than v2.",
+        "SMART on FHIR provides a secure OAuth 2.0-based framework for launching third-party apps from within EHRs with patient and encounter context — enabling the healthcare app ecosystems on Epic, Cerner, and other platforms.",
+        "The ONC Cures Act Final Rule (2020) requires certified EHRs to expose FHIR R4 APIs at no cost; CMS-9115-F requires payers to implement FHIR R4 Patient Access APIs covering claims, encounters, and clinical data.",
+        "HL7 v2 and FHIR are complementary — v2 handles high-volume real-time hospital messaging; FHIR enables patient-facing apps, payer exchange, and API-driven interoperability innovation.",
+        "Epic's FHIR APIs alone process over 1 billion transactions per month — a measure of how rapidly FHIR has moved from a regulatory requirement to the dominant infrastructure for health data exchange."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "ADT (Admit, Discharge, Transfer) messages are the most common HL7 v2 message type, communicating patient movement events — a new admission generates an ADT-A01, a discharge generates an ADT-A03. ORU messages carry observation results (lab values, vitals), ORM carries orders, and MSH is a segment within every message that identifies the sender, recipient, and message type — not a message type itself.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "ORU — Observation Result"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": false,
+          "text": "ORM — Order Message"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": true,
+          "text": "ADT — Admit, Discharge, Transfer"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "MSH — Message Header"
+        }
+      ],
+      "question": "Which HL7 v2 message type is used to communicate patient admission, discharge, and transfer events?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] HL7 International — About HL7 — https://www.hl7.org/ — HL7 founding history, ANSI accreditation, standards portfolio"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] HL7 FHIR R4 Specification — https://hl7.org/fhir/R4/ — FHIR resource types, RESTful API design, R4 release"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] ONC — Cures Act Final Rule — https://www.healthit.gov/topic/oncs-cures-act-final-rule — FHIR R4 API mandate, no-cost access, information blocking"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] CMS — Interoperability and Patient Access Final Rule Fact Sheet — https://www.cms.gov/newsroom/fact-sheets/interoperability-and-patient-access-fact-sheet — CMS-9115-F FHIR R4 payer requirements"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] SMART App Launch Framework — https://hl7.org/fhir/smart-app-launch/ — OAuth 2.0, EHR launch, standalone launch, clinical scopes"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "hie-hl7-fhir-standards"
+  },
+  "title": "HL7 and FHIR: Healthcare Data Standards"
+}

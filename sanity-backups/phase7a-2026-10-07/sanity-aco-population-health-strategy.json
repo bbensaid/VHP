@@ -1,0 +1,518 @@
+{
+  "_createdAt": "2026-06-01T18:02:05Z",
+  "_id": "aco-population-health-strategy",
+  "_rev": "IOfxRsA0kr16lzZkUtSLtq",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T18:02:05Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why ACOs and Population Health Are Inseparable"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Everything in this course has assumed a financial reason to manage a population proactively. The Accountable Care Organization (ACO) is the structure that creates that reason. An ACO is a group of providers that agrees to be collectively accountable for the cost and quality of a defined population of patients — and to share in the savings if they keep spending below a benchmark while meeting quality standards."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is the economic engine. Under fee-for-service, there is no payoff for preventing an avoidable hospitalization — the hospital is paid for the admission. Under an ACO, preventing that admission keeps spending below benchmark and earns shared savings. The ACO flips the incentive so that the proactive, whole-population work this course describes finally pays. ACO strategy IS population health strategy, applied to a financial contract."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "And it works at scale. In 2024, the Medicare Shared Savings Program (MSSP) — the largest ACO program — had 476 ACOs covering about 10.3 million assigned beneficiaries and generated record net savings of roughly $2.4 billion, the eighth consecutive year of savings. ACOs are no longer an experiment; they are a proven, growing model, and population health is how they succeed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "An ACO is a group of providers accountable for the cost and quality of a defined population, sharing in savings if they beat a spending benchmark while meeting quality. It is the financial engine that makes proactive population health pay — ACO strategy IS population health strategy."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How ACO Economics Work"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Three mechanics define an ACO, and all three connect to earlier lessons. First, attribution: patients are assigned to the ACO, usually based on where they get their primary care — this is the \"defined population\" from the very first lesson. Second, the benchmark: CMS sets an expected spending target for the ACO's attributed population. Third, shared savings: if actual spending comes in below the benchmark AND the ACO meets quality standards, the ACO keeps a share of the difference."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The quality gate matters: an ACO cannot earn savings simply by spending less — it must also hit quality measures (the ACO quality reporting from the Clinical Quality Measurement course), so \"savings\" cannot come from stinting on care. This is what aligns the financial and clinical goals."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "A critical evolution is two-sided risk. Early ACOs took only upside (shared savings with no penalty for overspending). Increasingly, ACOs take two-sided risk — they share in savings but also owe money if they overspend. In 2024, two-sided-risk ACOs generated the large majority of all savings, because real downside risk drives serious population health investment. Risk is the engine: the more an ACO has at stake, the harder it works the population health levers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Patients are assigned to the ACO, usually via their primary care.",
+          "title": "Attribution"
+        },
+        {
+          "_key": "step2",
+          "description": "CMS sets an expected spending target for the attributed population.",
+          "title": "Benchmark"
+        },
+        {
+          "_key": "step3",
+          "description": "Spend below benchmark while meeting quality measures.",
+          "title": "Beat the benchmark on cost AND quality"
+        },
+        {
+          "_key": "step4",
+          "description": "Keep a share of the difference (and, under two-sided risk, owe money if over).",
+          "title": "Share the savings"
+        }
+      ],
+      "title": "How an ACO Earns Shared Savings"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Strategic Levers"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How does an ACO actually beat its benchmark? Not by denying care, but by reducing avoidable, low-value utilization — the high-cost events that add little clinical benefit. The primary targets are preventable inpatient admissions, avoidable emergency department visits, and destabilizing care transitions. Every lever in this course points at these."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The strategy is built on the population health toolkit: risk-stratify the attributed population to find the high-risk and rising-risk patients; deploy care management to those tiers; run chronic-disease programs (diabetes, heart failure, hypertension) to prevent the complications that drive admissions; integrate behavioral health; close care gaps for quality; and use transitional care and remote monitoring to prevent readmissions. The ACO is where all the previous lessons combine into one financial strategy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two ACO-specific levers deserve emphasis. Post-acute care management: a huge share of avoidable spending is in skilled nursing facilities (SNFs) and other post-acute care, so top ACOs build preferred, high-quality SNF networks and manage length of stay and readmissions there. And primary care investment: top-performing ACOs have markedly higher primary-care utilization — one analysis found about 2.5 times the PCP service use of the MSSP average — because strong primary care prevents the downstream expensive events. ACOs that invest in primary care and post-acute management win."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Covering ~10.3M assigned beneficiaries (CMS)",
+          "label": "MSSP ACOs (2024)",
+          "value": "476"
+        },
+        {
+          "_key": "s2",
+          "context": "8th consecutive year of savings (CMS)",
+          "label": "Record Net Savings (2024)",
+          "value": "~$2.4B"
+        },
+        {
+          "_key": "s3",
+          "context": "Risk-bearing ACOs generated the majority of 2024 savings (CMS)",
+          "label": "Drives Most Savings",
+          "value": "2-sided risk"
+        },
+        {
+          "_key": "s4",
+          "context": "Top performers vs. MSSP average primary-care utilization (Avalere)",
+          "label": "PCP Use, Top ACOs",
+          "value": "~2.5x"
+        }
+      ]
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Leakage Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A distinctive ACO challenge is \"network leakage\" — attributed patients getting care outside the ACO's network. Leakage hurts an ACO two ways: it loses visibility into the patient's care (the out-of-network data blind spot from the data-infrastructure lesson), and it loses the ability to manage cost and quality for care it does not control. Out-of-network utilization can seriously derail an ACO's savings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The data bears this out: costs are higher for ACOs whose patients see primary care physicians outside the ACO's network. When a patient's care fragments across providers the ACO cannot coordinate, avoidable duplication, gaps, and high-cost events multiply — exactly the fragmentation population health exists to fix, now with direct financial consequences."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Managing leakage is therefore a core ACO strategy: building strong primary-care relationships so patients stay in-network, establishing preferred specialist and post-acute networks, and using data (including ADT alerts and predictive analytics) to detect and respond to leakage. This is the financial expression of the whole course's theme — fragmented care is bad care and expensive care, and keeping the patient within a coordinated, accountable network is how an ACO delivers better outcomes at lower cost."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "When attributed patients get care outside the ACO's network, the ACO loses both visibility (the out-of-network data blind spot) and control over cost and quality — and its costs rise. Strong primary care relationships, preferred networks, and leakage-detection analytics are essential, because uncoordinated out-of-network care directly erodes shared savings.",
+      "title": "Leakage Quietly Destroys ACO Savings"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Where the Course Comes Together"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The ACO is where this entire course resolves into a coherent business strategy. Each earlier lesson is a lever an ACO pulls: data infrastructure gives the ACO visibility into its attributed population; risk stratification and prediction target its limited resources; care gap closure earns the quality gate; chronic-disease and behavioral programs prevent the complications that drive cost; care management and patient engagement deliver the interventions; and leakage management keeps it all coordinated."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This also clarifies why population health and value-based payment are inseparable, as the first lesson claimed. Population health is the operational method; the ACO (and value-based contracts generally) is the payment model that rewards it. Neither works alone: value-based payment without population health capability just shifts risk onto unprepared providers; population health without value-based payment has no business case. Together, they form the model."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The strategic takeaway for any provider entering value-based care is that succeeding as an ACO is not about a single trick — it is about systematically building the full population health stack and pointing it at avoidable utilization, while keeping patients coordinated within the network and meeting quality. The ACOs that win are the ones that do population health well. The next lesson goes deeper into the financial discipline of managing the total cost of care that underlies all of this."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5ex1",
+      "_type": "exampleBlock",
+      "content": "A successful two-sided-risk MSSP ACO invests heavily in primary care (driving PCP utilization well above average), risk-stratifies its attributed population, and deploys care managers to the high-risk and rising-risk tiers. It runs diabetes, heart-failure, and behavioral-health programs, uses ADT alerts for transitional care, and builds a preferred high-quality SNF network to cut avoidable post-acute spending.\nThe result: fewer preventable admissions and readmissions, strong quality scores, and shared savings earned by keeping its defined population healthier and better coordinated — population health as financial strategy.",
+      "title": "A High-Performing ACO's Playbook"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "An ACO is a group of providers accountable for the cost and quality of a defined (attributed) population, sharing savings if they beat a spending benchmark while meeting quality.",
+        "The ACO flips the fee-for-service incentive: preventing avoidable events now pays, making it the financial engine for proactive population health.",
+        "In 2024, MSSP had 476 ACOs covering ~10.3M beneficiaries and generated record net savings of ~$2.4 billion, an eighth straight year of savings.",
+        "ACO economics rest on attribution, a spending benchmark, and a quality gate; two-sided (downside) risk drives the majority of savings because real risk drives serious investment.",
+        "ACOs win by reducing avoidable utilization (preventable admissions, ED visits, bad transitions) using the full population health toolkit, plus post-acute/SNF network management and primary-care investment (top ACOs ~2.5x PCP use).",
+        "Network leakage — patients getting out-of-network care — destroys visibility, control, and savings, so keeping patients coordinated in-network is a core ACO strategy.",
+        "The ACO is where the whole course resolves: population health is the operational method and value-based payment (ACOs) is the model that rewards it — neither works without the other."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Under fee-for-service, an avoidable admission generates revenue, so there is no financial reward for preventing it. In an ACO, the group is accountable for total spending against a benchmark, so a prevented admission keeps spending down and earns shared savings (provided quality standards are met). This flipped incentive is exactly what makes the proactive, whole-population work of population health financially worthwhile — ACO strategy is population health strategy.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "It makes no difference; admissions are paid the same either way"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Under fee-for-service the admission generates payment, but in an ACO preventing that admission keeps spending below benchmark and earns shared savings — so prevention finally pays"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "ACOs are paid more for more admissions"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "ACOs eliminate the need to meet any quality standards"
+        }
+      ],
+      "question": "How does the ACO model change the financial incentive around an avoidable hospital admission, compared with fee-for-service?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Medicare Shared Savings Program PY24 Financial and Quality Results (CMS) — https://www.cms.gov/files/document/fact-sheet-ssp-py24-financial-quality-results.pdf — 476 ACOs; ~10.3M beneficiaries; record savings; quality gate"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Medicare ACOs Saved $2.4B in 2024, Setting a New Record (Fierce Healthcare) — https://www.fiercehealthcare.com/regulatory/mssp-acos-saved-24b-2024-setting-new-record-program — ~$2.4B net savings; eighth consecutive year; two-sided risk driving savings"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] ACO Payment Basics (MedPAC) — https://www.medpac.gov/wp-content/uploads/2024/10/MedPAC_Payment_Basics_25_ACOs_FINAL_SEC.pdf — attribution, benchmark, and shared-savings mechanics"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] 5 Key Strategies for ACO Performance (Arcadia) — https://arcadia.io/resources/5-key-strategies-for-aco-performance — reducing avoidable utilization; risk stratification; data infrastructure"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] New Analysis Finds Top-Performing ACOs Focus on Patients with Complex Needs (Avalere) — https://advisory.avalerehealth.com/insights/new-analysis-finds-top-performing-acos-across-models-focus-on-patients-with-complex-needs — top ACOs ~2.5x PCP utilization; complex-patient focus"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Solving the ACO's Out-of-Network Utilization Problem (TechTarget) — https://www.techtarget.com/revcyclemanagement/answer/Solving-the-ACOs-Out-of-Network-Utilization-Problem — network leakage; higher costs with out-of-network primary care"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "population-health-management",
+  "order": 12,
+  "slug": {
+    "_type": "slug",
+    "current": "aco-population-health-strategy"
+  },
+  "title": "ACO Population Health Strategy"
+}

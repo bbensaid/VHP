@@ -1,0 +1,532 @@
+{
+  "_createdAt": "2026-06-01T04:13:44Z",
+  "_id": "stratifying-measures-by-race",
+  "_rev": "rL4Cn5Sfo5Z8rzPmENFYFu",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T04:13:44Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Average Hides the Inequity"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Every measure so far in this course produces a single number for an organization — one breast-cancer-screening rate, one blood-pressure-control rate. That single number is an average across everyone the measure covers. And an average, by design, hides variation. A hospital with an excellent overall score can still be delivering very different care to different groups of patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is the core insight of equity-focused measurement: an aggregate measure can look fine while masking serious disparities underneath. If care is excellent for one population and poor for another, the blended average may land in a perfectly acceptable range — and the inequity stays invisible precisely because no one disaggregated the number."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The remedy is stratification: breaking a measure apart and reporting it separately for different groups — by race, ethnicity, language, and social risk factors. Stratification is how a hidden disparity becomes a visible, addressable problem. It connects directly to \"equity,\" the sixth IOM aim from the first lesson of this course."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Stratification means reporting a quality measure separately for different patient groups (by race, ethnicity, language, social risk) instead of as one average — revealing disparities that an aggregate score hides."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why the Aggregate Fails — A Concrete Example"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The power of stratification is easiest to see in real data. CMS's Office of Minority Health publishes stratified reports of Medicare performance, and they repeatedly show gaps that the overall numbers conceal."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "In one CMS analysis, stratifying a measure by both race and dual-eligibility (a marker of low income) at the same time revealed a 24 percentage-point gap between subgroups: White non-dual enrollees had the highest rate (about 70.6 percent) while Black dual-eligible enrollees had the lowest (about 46.8 percent). A single average would have buried that entire 24-point spread inside one unremarkable-looking number."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Crucially, that gap only appeared when race and dual status were crossed together. Stratifying by race alone, or income alone, understated it. This is the intersectionality point: disparities often live at the intersection of factors, so the way you slice the data determines what you can see."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Between subgroups in a CMS stratified analysis",
+          "label": "Hidden Disparity Gap",
+          "value": "24 pts"
+        },
+        {
+          "_key": "s2",
+          "context": "White non-dual enrollees (CMS OMH)",
+          "label": "Highest Subgroup",
+          "value": "70.6%"
+        },
+        {
+          "_key": "s3",
+          "context": "Black dual-eligible enrollees (CMS OMH)",
+          "label": "Lowest Subgroup",
+          "value": "46.8%"
+        },
+        {
+          "_key": "s4",
+          "context": "Gap visible only when factors are crossed (CMS)",
+          "label": "Intersection Reveals It",
+          "value": "Race × Dual"
+        }
+      ]
+    },
+    {
+      "_key": "s2ex1",
+      "_type": "exampleBlock",
+      "content": "CMS OMH stratifies measures of patient experience and clinical care quality by race, ethnicity, and sex for Medicare Advantage and fee-for-service enrollees, with statistical comparisons to benchmarks.\nThese reports exist specifically to surface disparities that national averages hide, and to give plans and CMS a target for where to focus equity-improvement work.",
+      "title": "CMS Office of Minority Health Stratified Reporting"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "You Cannot Stratify Without the Data"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Stratification has a hard prerequisite: you must have data on the characteristics you want to stratify by. The foundational requirement is race, ethnicity, and language (REL) data, ideally collected directly from patients in a standardized way. Without REL data, the disparity is real but unmeasurable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "In practice, REL data is often incomplete or missing — the same data-quality problem from the previous lesson, now with equity stakes. When self-reported data is unavailable, organizations sometimes estimate race and ethnicity indirectly; for HEDIS, for example, CMS has estimated group membership by combining administrative data, surname analysis, and residential location (geocoding)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Indirect estimation is a stopgap, not a substitute — it introduces error and can misclassify individuals. The durable solution is collecting accurate self-reported REL and social-risk data directly, which is why this is a major focus of equity work and why CMS and Medicaid are increasingly moving to require standardized collection of race, ethnicity, language, disability status, and related factors."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3w1",
+      "_type": "warningBlock",
+      "message": "You can only stratify by characteristics you actually record. Missing or low-quality race/ethnicity/language data means disparities exist but stay invisible. Indirect estimation (surname, geocoding) is a stopgap that introduces error — self-reported standardized data is the real fix.",
+      "title": "No REL Data, No Disparity Measurement"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Beyond Race: Social Risk and SDOH"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Equity stratification is not limited to race and ethnicity. Social determinants of health (SDOH) and social risk factors — income, housing instability, food insecurity, disability status, geography, dual-eligibility — are powerful axes for revealing disparities, and often interact with race."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CMS example above used dual-eligibility as a proxy for low income, and it was the combination with race that exposed the largest gap. Increasingly, quality programs stratify by social risk factors and compare subgroup performance to benchmarks, because where a disparity is driven by social conditions, the improvement strategy differs from one driven by, say, clinical access."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is also why SDOH data collection (screening for housing, food, transportation needs) and standardized coding of those needs matter for measurement, not just for care. The richer and more standardized the social-risk data, the more precisely an organization can locate and target the inequities in its care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Gather standardized REL and social-risk/SDOH data, ideally self-reported.",
+          "title": "Collect the characteristics"
+        },
+        {
+          "_key": "step2",
+          "description": "Report the measure separately for each group instead of one average.",
+          "title": "Disaggregate the measure"
+        },
+        {
+          "_key": "step3",
+          "description": "Examine intersections (e.g., race × income) where disparities often hide.",
+          "title": "Cross factors"
+        },
+        {
+          "_key": "step4",
+          "description": "Compare subgroups to benchmarks and direct improvement to the gaps.",
+          "title": "Compare and target"
+        }
+      ],
+      "title": "How to Stratify a Measure for Equity"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "From Visibility to Accountability"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Stratification is moving from optional analysis to required practice. CMS has built health-equity stratified reporting into its programs, and Medicaid and CHIP have moved toward making standardized, stratifiable quality measures mandatory — including collecting a core set of demographic and social-risk metrics specifically to identify and address disparities."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This shift matters because what is required gets done. As long as stratification was voluntary, many organizations reported only the aggregate and never saw their internal gaps. Mandating disaggregated reporting forces the inequities into view, which is the necessary first step toward closing them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "But stratification only diagnoses; it does not treat. Seeing a 24-point gap tells you a problem exists, not how to fix it — and, as the next lesson explores, it raises a thorny technical question about whether and how to risk-adjust for social factors. Stratification is the indispensable first move of equity-focused quality measurement: you cannot close a gap you refuse to look at."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5q1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5q1s",
+          "_type": "span",
+          "marks": [],
+          "text": "An aggregate quality score can be entirely acceptable and still conceal a population receiving far worse care. Stratification is how the field stops hiding behind the average."
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "A single aggregate quality measure is an average that can hide large disparities between patient groups, even when the overall score looks acceptable.",
+        "Stratification reports a measure separately by race, ethnicity, language, and social risk factors, making hidden disparities visible and actionable.",
+        "A CMS analysis found a 24-point gap between subgroups (White non-duals ~70.6% vs Black duals ~46.8%) that the aggregate would have buried.",
+        "Disparities often live at intersections (e.g., race × income), so crossing factors reveals gaps that single-factor stratification understates.",
+        "Stratification requires data: standardized race, ethnicity, and language (REL) and social-risk data — ideally self-reported, since indirect estimation introduces error.",
+        "Social determinants and social risk factors (income, housing, dual-eligibility, disability) are essential stratification axes alongside race and ethnicity.",
+        "CMS and Medicaid are moving stratified, disaggregated reporting from optional to mandatory, because requiring it forces inequities into view — the first step to closing them."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "An aggregate rate is an average that can conceal serious gaps between groups. A 65% overall could hide, say, 80% control for one population and 45% for another. Only by stratifying (and crossing factors like race and income) does the disparity become visible — which requires collecting standardized REL and social-risk data.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Because stratification always raises the overall score"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Because the 65% average can mask large disparities — some subgroups may be far below it while others are far above"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Because aggregate measures are illegal"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Because stratification eliminates the need for REL data"
+        }
+      ],
+      "question": "A health plan reports an overall blood-pressure-control rate of 65%, which meets its target. Why might equity advocates still insist on stratifying this measure?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Stratified Reporting (CMS) — https://www.cms.gov/priorities/health-equity/minority-health/research-data/stratified-reporting — CMS OMH stratified reporting of Medicare performance by race, ethnicity, sex, and social risk"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Disparities in Health Care in Medicare Advantage Associated with Dual Eligibility (CMS) — https://www.cms.gov/files/document/2021-delis-national-disparities-stratified-report.pdf — 24-point gap; White non-duals ~70.6% vs Black duals ~46.8%; intersection of race and dual status"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Using Patient Race, Ethnicity, and Language Data to Achieve Health Equity (JGIM/PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC4441661/ — REL data as foundation for stratifying performance measures"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] The Path Forward: Improving Data to Advance Health Equity Solutions (CMS) — https://www.cms.gov/files/document/path-forwardhe-data-paper.pdf — indirect estimation (administrative data, surname, geocoding) vs self-reported data"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Developing Health Equity Measures (HHS ASPE) — https://aspe.hhs.gov/sites/default/files/private/pdf/265566/developing-health-equity-measures.pdf — stratification by demographic and SDOH factors to identify disparities"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Drive Health Equity Improvements with Race, Ethnicity and Language Data (Healthmine) — https://www.healthmine.com/resources/building-health-equity-campaigns-demographic-language-data — mandatory standardized collection of race, ethnicity, language, disability status in Medicaid/CHIP"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "clinical-quality-measurement",
+  "order": 13,
+  "slug": {
+    "_type": "slug",
+    "current": "stratifying-measures-by-race"
+  },
+  "title": "Stratifying Quality Measures by Race, Ethnicity, and SDOH"
+}

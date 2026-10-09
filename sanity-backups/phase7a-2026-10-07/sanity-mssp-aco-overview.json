@@ -1,0 +1,548 @@
+{
+  "_createdAt": "2026-06-02T17:13:02Z",
+  "_id": "mssp-aco-overview",
+  "_rev": "AkeaYSOMdu2FnGALUxUfvs",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T17:13:02Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Accountability for the Whole Patient"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Every payment system covered so far pays for a piece of care — a hospital stay, a physician visit, a post-acute episode. The Accountable Care Organization (ACO) model takes a different angle entirely: it holds a group of providers accountable for the total cost and quality of care for a defined population of patients, no matter where that care happens."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "An ACO is a group of doctors, hospitals, and other providers who voluntarily join together to coordinate care for a population of Medicare beneficiaries. If they keep total spending below a target while meeting quality standards, they share in the savings. The Medicare Shared Savings Program (MSSP) is Medicare’s largest and permanent ACO program, created by the Affordable Care Act of 2010."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Crucially, MSSP is built on top of traditional fee-for-service, not instead of it. Providers in an ACO keep billing and getting paid the normal Part A and B way. The shared-savings (or shared-loss) settlement happens afterward, based on how total spending for their attributed patients compared to a benchmark."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "An ACO is held accountable for the total cost and quality of care for a population of patients. Under MSSP, providers keep receiving normal fee-for-service payments, then settle up against a spending benchmark at year-end — sharing savings if they beat it, and (in two-sided models) losses if they exceed it."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How the Shared Savings Program Works"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "MSSP works through three core mechanics: attribution, benchmarking, and settlement. First, Medicare beneficiaries are attributed (assigned) to an ACO based on where they get most of their primary care. An ACO must have at least 5,000 attributed fee-for-service beneficiaries to participate."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Second, CMS sets a spending benchmark — an expected total cost of care for those attributed patients, based on history and regional spending. Third, at the end of the performance year, CMS compares actual spending to the benchmark. If the ACO spent less and met quality standards, it shares in the savings; if it spent more, it may owe a share of the losses, depending on its track."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Quality is a gate, not an afterthought. An ACO that generates savings but fails to meet CMS quality standards does not get to keep the money. This pairing — savings only if quality holds — is what distinguishes shared savings from simple cost-cutting."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Patients are assigned to the ACO based on their primary care; minimum 5,000 required.",
+          "title": "Attribute beneficiaries"
+        },
+        {
+          "_key": "step2",
+          "description": "CMS establishes an expected total cost of care using historical and regional data.",
+          "title": "Set the benchmark"
+        },
+        {
+          "_key": "step3",
+          "description": "Providers keep billing FFS while managing the population’s overall cost and quality.",
+          "title": "Deliver coordinated care"
+        },
+        {
+          "_key": "step4",
+          "description": "The ACO must meet CMS quality standards to qualify for savings.",
+          "title": "Measure quality"
+        },
+        {
+          "_key": "step5",
+          "description": "Spend below it and pass quality = share savings; spend above it = potential shared losses.",
+          "title": "Settle against the benchmark"
+        }
+      ],
+      "title": "The MSSP Cycle"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "One-Sided vs. Two-Sided Risk"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The single most important variable in an ACO arrangement is how much financial risk it bears. In one-sided (upside-only) models, the ACO shares in savings if it beats the benchmark but owes nothing if it overspends — a gentle on-ramp that protects new ACOs from losses while they build capabilities."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "In two-sided (downside) risk models, the ACO shares in savings but also must repay a share of losses if spending exceeds the benchmark. In exchange for that risk, two-sided ACOs keep a larger share of any savings they generate. MSSP organizes these options into the BASIC track (which glides from upside-only Level A up to risk-bearing Level E) and the ENHANCED track (the highest level of risk and reward)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS has steadily pushed ACOs toward downside risk because that is where the savings are. In 2024, roughly two-thirds of ACOs were in the higher-risk Level E or ENHANCED arrangements, and those risk-bearing ACOs generated the large majority of the program’s total savings. Skin in the game changes behavior."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "One-Sided (Upside Only)",
+        "points": [
+          "Share in savings if you beat the benchmark",
+          "Owe nothing if you overspend",
+          "Lower savings share kept",
+          "On-ramp for newer ACOs (e.g., BASIC Levels A-D)"
+        ]
+      },
+      "right": {
+        "label": "Two-Sided (Downside) Risk",
+        "points": [
+          "Share in savings AND repay a share of losses",
+          "Real financial accountability for overspending",
+          "Higher savings share kept",
+          "Where most program savings come from (Level E / ENHANCED)"
+        ]
+      },
+      "title": "One-Sided vs. Two-Sided Risk"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Does It Work? The Evidence"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "After a slow start, MSSP has become the largest accountable-care program in the country and is now producing record results. For performance year 2024, Shared Savings Program ACOs generated about $2.4 billion in net savings to Medicare — the highest in the program’s history — while nearly every ACO met CMS quality standards."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Participation keeps growing. For 2025, 476 ACOs participated, and the program serves millions of traditional-Medicare beneficiaries through hundreds of thousands of providers. The data consistently show that two-sided, risk-bearing ACOs deliver most of the savings, which is why the program’s design keeps nudging organizations toward downside risk."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Alongside the permanent MSSP, the CMS Innovation Center runs ACO models that test more aggressive designs — most notably ACO REACH, which uses full or partial capitation and a strong health-equity focus, serving millions of beneficiaries through participating ACOs. MSSP is the durable backbone; the Innovation Center models are the laboratory."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Highest in program history (CMS)",
+          "label": "Net Medicare Savings (PY2024)",
+          "value": "$2.4B"
+        },
+        {
+          "_key": "s2",
+          "context": "Growing participation (CMS)",
+          "label": "ACOs in 2025",
+          "value": "476"
+        },
+        {
+          "_key": "s3",
+          "context": "Required to participate in MSSP (CMS)",
+          "label": "Minimum Attributed Beneficiaries",
+          "value": "5,000"
+        },
+        {
+          "_key": "s4",
+          "context": "Level E or ENHANCED generate most savings",
+          "label": "Of ACOs in Downside Risk (2024)",
+          "value": "~2/3"
+        }
+      ]
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why ACOs Matter"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "ACOs represent a fundamentally different theory of payment reform than the per-case programs that came before. Instead of fine-tuning the price of each service, they make providers accountable for the whole — the total spending and quality of a population — and let the providers figure out how to deliver better care for less."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This shifts incentives toward exactly the activities fee-for-service neglects: care coordination, prevention, managing chronic disease, reducing avoidable hospitalizations, and steering patients to high-value post-acute care. An ACO profits by keeping people healthy and out of the hospital, not by doing more to them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For Medicare, ACOs are central to the long-term strategy of moving traditional fee-for-service toward value. CMS has set goals to have all traditional-Medicare beneficiaries in an accountable care relationship — making the ACO model not a side experiment but the intended future of the program."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5q1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5q1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The ACO flips the core question of payment: not \"how do we price each service?\" but \"who is accountable for the whole patient?\""
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "An Accountable Care Organization (ACO) is a voluntary group of providers held accountable for the total cost and quality of care for a population of patients.",
+        "The Medicare Shared Savings Program (MSSP), created by the ACA in 2010, is Medicare’s largest, permanent ACO program.",
+        "MSSP runs on attribution (minimum 5,000 beneficiaries), a spending benchmark, and a year-end settlement — built on top of normal fee-for-service payments.",
+        "Quality is a gate: an ACO must meet CMS quality standards to keep any shared savings.",
+        "One-sided models share savings with no downside; two-sided models share savings and losses but let ACOs keep a larger share — organized as the BASIC and ENHANCED tracks.",
+        "In 2024, MSSP generated a record ~$2.4 billion in net savings, with risk-bearing (Level E/ENHANCED) ACOs producing most of the savings.",
+        "ACOs reward coordination, prevention, and avoiding unnecessary care, and are central to CMS’s goal of moving all traditional-Medicare beneficiaries into accountable care relationships."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Two-sided (downside) risk means the ACO shares in both savings and losses: if spending exceeds the benchmark, the ACO owes Medicare a share of the overage. In exchange for taking that risk, two-sided ACOs keep a larger share of any savings. One-sided ACOs, by contrast, have upside only and owe nothing for overspending.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Nothing — ACOs are never responsible for losses"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The ACO must repay a share of the losses to Medicare"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The ACO is automatically removed from Medicare"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Medicare doubles the ACO’s fee-for-service payments to compensate"
+        }
+      ],
+      "question": "In a two-sided (downside) risk ACO arrangement under MSSP, what happens if the ACO’s total spending exceeds its benchmark?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Shared Savings Program — CMS — https://www.cms.gov/medicare/payment/fee-for-service-providers/shared-savings-program-ssp-acos — ACO definition, FFS basis, quality-and-savings requirement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] ACOs Payment Basics — MedPAC — https://www.medpac.gov/wp-content/uploads/2024/10/MedPAC_Payment_Basics_25_ACOs_FINAL_SEC.pdf — attribution, benchmark, BASIC/ENHANCED tracks, one-sided vs two-sided risk."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CMS Report: ACOs Generated $2.4B in Medicare Savings in 2024 — LeadingAge — https://leadingage.org/cms-report-acos-generated-2-4b-in-medicare-savings-in-2024/ — record net savings, quality performance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Accountability Delivered: Shared Savings Program Results from 2024 — Accountable for Health — https://accountableforhealth.org/accountability-delivered-in-medicare-shared-savings-program-results-from-2024/ — Level E/ENHANCED ACOs drive most savings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] 2026 Medicare ACO Initiatives Participation Highlights — CMS — https://www.cms.gov/newsroom/fact-sheets/2026-medicare-accountable-care-organization-initiatives-participation-highlights — 476 ACOs in 2025; 5,000-beneficiary minimum; track mix."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] ACO REACH Model — CMS Innovation Center — https://www.cms.gov/priorities/innovation/innovation-models/aco-reach — capitation-based, equity-focused Innovation Center ACO model."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicare-fundamentals",
+  "order": 10,
+  "slug": {
+    "_type": "slug",
+    "current": "mssp-aco-overview"
+  },
+  "title": "Medicare Shared Savings Program and ACOs"
+}
