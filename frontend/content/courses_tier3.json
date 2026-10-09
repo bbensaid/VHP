@@ -3297,12 +3297,12 @@
                   {
                     "value": "2\u20134%",
                     "label": "Target operating margin",
-                    "context": "HFMA benchmark for a financially healthy hospital; below 1% signals distress"
+                    "context": "A commonly cited rule of thumb for a sustainable hospital; margins near or below zero signal distress"
                   },
                   {
-                    "value": "$1.3T",
+                    "value": "$1.5T",
                     "label": "Annual hospital spending",
-                    "context": "Total U.S. hospital expenditures, making hospitals the single largest component of healthcare spending"
+                    "context": "Total U.S. hospital care spending in 2023 (CMS National Health Expenditure data) — the single largest component of healthcare spending"
                   }
                 ]
               },
@@ -3344,7 +3344,7 @@
                 },
                 {
                   "id": "q-hf-fundamentals-001-2",
-                  "text": "What HFMA benchmark represents a financially healthy hospital operating margin?",
+                  "text": "What operating margin range is commonly cited as a sustainable target for a hospital?",
                   "options": [
                     {
                       "id": "a",
@@ -3364,7 +3364,7 @@
                     }
                   ],
                   "correctId": "b",
-                  "explanation": "HFMA benchmarks suggest a healthy hospital should target a 2\u20134% operating margin. Margins below 1% signal financial distress, while margins consistently above 5% may indicate underinvestment in community benefit or capital."
+                  "explanation": "A 2\u20134% operating margin is a commonly cited rule of thumb for a sustainable hospital; margins near or below zero signal financial distress, because they leave nothing to reinvest in equipment, facilities, and reserves."
                 },
                 {
                   "id": "q-hf-fundamentals-001-3",
@@ -3449,7 +3449,7 @@
                   {
                     "value": "150+",
                     "label": "Days cash on hand (target)",
-                    "context": "HFMA/Moody's benchmark; hospitals below 100 days face rating pressure"
+                    "context": "A commonly cited marker of strong liquidity (strong levels run roughly 150–205 days); hospitals far below it face rating pressure"
                   },
                   {
                     "value": "50\u201360%",
@@ -3467,7 +3467,7 @@
                 "type": "callout",
                 "variant": "tip",
                 "title": "Days Cash on Hand Formula",
-                "body": "Days Cash on Hand = (Cash + Short-term Investments) / (Total Operating Expenses \u2212 Depreciation) \u00d7 365\n\nThis ratio tells you how many days a hospital could operate using only its liquid reserves if all revenue stopped. Moody's considers 150+ days strong; below 100 days raises concern."
+                "body": "Days Cash on Hand = (Cash + Short-term Investments) / (Total Operating Expenses \u2212 Depreciation) \u00d7 365\n\nThis ratio tells you how many days a hospital could operate using only its liquid reserves if all revenue stopped. Roughly 150 days or more is commonly read as strong liquidity; a much thinner cushion raises concern with lenders and rating agencies."
               }
             ],
             "quiz": {
@@ -3501,7 +3501,7 @@
                 },
                 {
                   "id": "q-hf-fundamentals-002-2",
-                  "text": "What is the HFMA/Moody's benchmark for days cash on hand that signals financial strength?",
+                  "text": "What level of days cash on hand is commonly cited as a sign of financial strength?",
                   "options": [
                     {
                       "id": "a",
@@ -3521,7 +3521,7 @@
                     }
                   ],
                   "correctId": "c",
-                  "explanation": "HFMA and Moody's consider 150+ days cash on hand a benchmark for financial strength. Hospitals below 100 days face increased scrutiny from rating agencies and lenders."
+                  "explanation": "150+ days cash on hand is commonly cited as a sign of financial strength. Hospitals with much thinner cushions face increased scrutiny from rating agencies and lenders."
                 },
                 {
                   "id": "q-hf-fundamentals-002-3",
@@ -3579,7 +3579,7 @@
                 "type": "comparison_table",
                 "headers": [
                   "Ratio",
-                  "HFMA Median",
+                  "Illustrative Mid-Range",
                   "Strong Performance"
                 ],
                 "rows": [
@@ -3614,7 +3614,7 @@
                 "type": "callout",
                 "variant": "info",
                 "title": "How Moody's and S&P Use These Ratios",
-                "body": "Rating agencies weigh a combination of ratios when assigning bond ratings. Moody's Aa-rated hospitals typically show operating margins above 5%, days cash on hand above 200, and debt service coverage above 4x. Hospitals in the Baa range (lowest investment grade) often show margins of 1\u20133%, days cash on hand of 80\u2013120, and coverage of 1.5\u20132.5x. A downgrade to below investment grade (Ba or lower) sharply raises borrowing costs and can trigger covenant violations."
+                "body": "Rating agencies weigh a combination of ratios when assigning bond ratings. Higher-rated (Aa-category) hospitals typically combine stronger margins, deeper cash reserves \u2014 well over 200 days \u2014 and higher debt service coverage than lower investment-grade (Baa) credits. A downgrade to below investment grade (Ba or lower) sharply raises borrowing costs and can trigger covenant violations."
               },
               {
                 "type": "glossary_terms",
@@ -3661,7 +3661,7 @@
                     }
                   ],
                   "correctId": "c",
-                  "explanation": "Operating Margin = Operating Income / Total Operating Revenue = $10M / $250M = 4.0%. This puts the hospital at the high end of the HFMA healthy range of 2\u20134%."
+                  "explanation": "Operating Margin = Operating Income / Total Operating Revenue = $10M / $250M = 4.0%. This puts the hospital at the high end of the commonly cited healthy range of 2\u20134%."
                 },
                 {
                   "id": "q-hf-fundamentals-003-2",
@@ -3709,7 +3709,7 @@
                     }
                   ],
                   "correctId": "d",
-                  "explanation": "Moody's Aa-rated hospitals typically demonstrate days cash on hand above 200, reflecting a very strong liquidity position. Hospitals in the Baa range (lowest investment grade) typically show 80\u2013120 days."
+                  "explanation": "Aa-category hospitals typically hold well over 200 days cash on hand, reflecting a very strong liquidity position; lower investment-grade (Baa) credits hold considerably less."
                 }
               ]
             },
@@ -3807,7 +3807,7 @@
                 "type": "callout",
                 "variant": "warning",
                 "title": "The Medicare Advantage Shift",
-                "body": "Medicare Advantage (MA) now covers over 50% of Medicare beneficiaries and is projected to reach 60%+ by 2030. MA plans often pay closer to traditional Medicare rates but impose prior authorization requirements that add administrative burden and can result in denied claims. Hospitals with growing MA volume must monitor authorization denial rates and appeal processes closely."
+                "body": "Medicare Advantage (MA) now covers over 50% of Medicare beneficiaries and is projected to keep growing. MA plans often pay closer to traditional Medicare rates but impose prior authorization requirements that add administrative burden and can result in denied claims. Hospitals with growing MA volume must monitor authorization denial rates and appeal processes closely."
               }
             ],
             "quiz": {
@@ -4062,7 +4062,7 @@
               {
                 "type": "text",
                 "heading": "Three Types of Revenue Deductions",
-                "body": "**Contractual Adjustments** are the largest revenue deduction. When a commercial insurer agrees to pay $2,000 for a procedure billed at $8,000, the $6,000 difference is a contractual adjustment. Medicare and Medicaid create similar adjustments based on the difference between charges and their fixed payment rates.\n\n**Charity Care** is free or discounted care provided to patients who cannot afford to pay, based on a formal financial assistance policy. Nonprofit hospitals must have and publicize charity care policies to meet IRS 501(c)(3) requirements. Charity care is reported at cost (not charges) in FASB financial statements under ASC 954.\n\n**Bad Debt** is care provided to patients who were expected to pay (and were not identified as charity-eligible) but did not. It reflects collection failure rather than intentional forgiveness. Under ASC 954, hospitals estimate and record bad debt as an operating expense."
+                "body": "**Contractual Adjustments** are the largest revenue deduction. When a commercial insurer agrees to pay $2,000 for a procedure billed at $8,000, the $6,000 difference is a contractual adjustment. Medicare and Medicaid create similar adjustments based on the difference between charges and their fixed payment rates.\n\n**Charity Care** is free or discounted care provided to patients who cannot afford to pay, based on a formal financial assistance policy. Nonprofit hospitals must have and publicize charity care policies to meet IRS 501(c)(3) requirements. Charity care is reported at cost (not charges) in FASB financial statements under ASC 954.\n\n**Bad Debt** is care provided to patients who were expected to pay (and were not identified as charity-eligible) but did not. It reflects collection failure rather than intentional forgiveness. Since ASC 606 took effect (2018 for most hospitals), amounts a hospital never expected to collect at the time of service are treated as implicit price concessions that reduce revenue; only later credit losses are recorded as bad debt expense."
               },
               {
                 "type": "comparison_table",
@@ -4085,7 +4085,7 @@
                   [
                     "Bad Debt",
                     "Unpaid balances from patients expected to pay",
-                    "Recorded as operating expense under ASC 954"
+                    "Mostly an implicit price concession under ASC 606; later credit losses expensed"
                   ]
                 ]
               },
@@ -4099,9 +4099,9 @@
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "~$42B",
-                    "label": "Annual charity care (U.S. hospitals)",
-                    "context": "AHA estimates U.S. hospitals provided approximately $42 billion in charity care annually in recent years"
+                    "value": "$42.7B",
+                    "label": "Annual uncompensated care (U.S. hospitals, 2020)",
+                    "context": "AHA: U.S. hospitals provided $42.67 billion in uncompensated care (charity care plus bad debt, at cost) in 2020"
                   },
                   {
                     "value": "2\u20133%",
@@ -4167,7 +4167,7 @@
                     }
                   ],
                   "correctId": "c",
-                  "explanation": "Under FASB ASC 954, charity care is reported at cost (not charges) and disclosed in the financial statement notes. It is not included in revenue since no payment is expected, making it different from bad debt which is recorded as an expense."
+                  "explanation": "Under FASB ASC 954, charity care is reported at cost (not charges) and disclosed in the financial statement notes. It is not included in revenue since no payment is expected, making it different from bad debt, which under ASC 606 is mostly an implicit price concession and partly a credit-loss expense."
                 },
                 {
                   "id": "q-hf-revenue-003-3",
@@ -4397,14 +4397,14 @@
                     "context": "Highly variable by case complexity; reimbursement often covers costs with margin"
                   },
                   {
-                    "value": "\u2013$1,200",
+                    "value": "Often negative",
                     "label": "Typical ED visit margin",
-                    "context": "Emergency departments often lose money on a per-visit basis; volume and downstream admissions provide the rationale"
+                    "context": "Emergency departments often lose money per visit; community obligation, volume and downstream admissions provide the rationale"
                   },
                   {
-                    "value": "70%",
-                    "label": "Hospital revenues from top 3 service lines",
-                    "context": "Most hospitals generate the majority of margin from 2\u20133 high-margin clinical service lines"
+                    "value": "A few lines",
+                    "label": "Where most margin comes from",
+                    "context": "Margin is typically concentrated in a handful of procedural service lines such as cardiovascular, orthopedics and neurosciences"
                   }
                 ]
               },
@@ -4564,7 +4564,7 @@
                   },
                   {
                     "term": "Time-Driven ABC (TDABC)",
-                    "definition": "A simplified ABC variant developed by Kaplan and Porter that uses time as the primary cost driver, making it practical for complex healthcare settings."
+                    "definition": "A simplified ABC variant developed by Kaplan and Anderson (and applied to health care by Kaplan and Porter) that uses time as the primary cost driver, making it practical for complex healthcare settings."
                   },
                   {
                     "term": "Physician Variation",
@@ -4580,15 +4580,15 @@
                 "type": "callout",
                 "variant": "tip",
                 "title": "ABC and Physician Engagement",
-                "body": "ABC data is most powerful when used to facilitate physician-level conversations about practice variation. When two surgeons performing the same procedure show a 30% cost difference\u2014driven by implant choice, length of stay, and lab ordering\u2014that data creates a fact-based foundation for standardization conversations. Leading health systems like Mayo Clinic and Kaiser have used ABC to reduce cost per case by 15\u201325% in targeted surgical service lines."
+                "body": "ABC data is most powerful when used to facilitate physician-level conversations about practice variation. When two surgeons performing the same procedure show a 30% cost difference\u2014driven by implant choice, length of stay, and lab ordering\u2014that data creates a fact-based foundation for standardization conversations. Health systems that have adopted time-driven ABC report using it to target exactly these drivers in surgical service lines."
               },
               {
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "15\u201325%",
-                    "label": "Cost reduction via ABC-informed standardization",
-                    "context": "Health systems targeting physician variation with ABC data have achieved 15\u201325% cost reduction in surgical service lines"
+                    "value": "Standardization",
+                    "label": "Main lever for ABC-informed savings",
+                    "context": "ABC-informed standardization of implants, length of stay and ancillary ordering is the main lever for reducing cost per case in surgical service lines"
                   },
                   {
                     "value": "30\u201350%",
@@ -4654,7 +4654,7 @@
                     }
                   ],
                   "correctId": "b",
-                  "explanation": "TDABC uses time as the primary cost driver (e.g., minutes of nursing care, minutes in OR), which is more manageable to measure than tracking every individual activity. It was developed by Kaplan and Porter specifically for healthcare applications."
+                  "explanation": "TDABC uses time as the primary cost driver (e.g., minutes of nursing care, minutes in OR), which is more manageable to measure than tracking every individual activity. It was developed by Robert Kaplan and Steven Anderson and brought into health care by Kaplan and Michael Porter."
                 },
                 {
                   "id": "q-hf-cost-003-3",
@@ -9105,9 +9105,9 @@
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "72%",
+                    "value": "85%",
                     "label": "Medicaid beneficiaries in managed care",
-                    "context": "As of 2023, approximately 72% of all Medicaid enrollees are in some form of managed care arrangement"
+                    "context": "In 2024, 73.7 million enrollees (84.8%) received some or all of their care through a Medicaid managed care plan (CMS)"
                   },
                   {
                     "value": "1982",
@@ -9115,9 +9115,9 @@
                     "context": "Arizona's AHCCCS program pioneered mandatory statewide Medicaid managed care"
                   },
                   {
-                    "value": "$X00B+",
-                    "label": "Annual Medicaid managed care spending",
-                    "context": "Federal and state Medicaid managed care expenditures exceed hundreds of billions annually"
+                    "value": "~50%",
+                    "label": "Share of Medicaid spending paid to MCOs, FY 2024",
+                    "context": "About half of the $919 billion in total Medicaid spending in FY 2024 went to MCOs (KFF)"
                   }
                 ]
               },
@@ -9125,7 +9125,7 @@
                 "type": "callout",
                 "variant": "info",
                 "title": "Section 1915(b): The Freedom-of-Choice Waiver",
-                "body": "Most states use Section 1915(b) waivers to mandate managed care enrollment. These waivers allow states to restrict beneficiary choice of provider by requiring enrollment in a contracted MCO. CMS approves them for two-year renewable periods. States may also use Section 1115 demonstration waivers for broader delivery system innovations."
+                "body": "Many states use Section 1915(b) waivers to mandate managed care enrollment (others use the Section 1932(a) state plan option created by the Balanced Budget Act of 1997, or Section 1115). These waivers allow states to restrict beneficiary choice of provider by requiring enrollment in a contracted MCO. CMS approves them for two-year renewable periods. States may also use Section 1115 demonstration waivers for broader delivery system innovations."
               },
               {
                 "type": "concepts_grid",
@@ -9180,7 +9180,7 @@
                 },
                 {
                   "id": "q-mmc-managed-care-foundations-001-2",
-                  "text": "What federal authority do most states use to mandate Medicaid managed care enrollment?",
+                  "text": "Which federal waiver authority lets states mandate Medicaid managed care enrollment by waiving freedom-of-choice requirements?",
                   "options": [
                     {
                       "id": "a",
@@ -9293,18 +9293,18 @@
               {
                 "type": "text",
                 "heading": "Fully Capitated MCOs",
-                "body": "The dominant model in Medicaid, fully capitated MCOs receive a fixed PMPM payment and assume responsibility for all covered services. Commercial insurers (Centene, Molina, UnitedHealthcare Community Plan, Anthem) and non-profit plans (UPMC, WellCare, local CCOs) compete for state contracts. MCOs must meet network adequacy standards, file encounter data, and meet quality benchmarks.\n\nStates like Texas, Florida, and Ohio run large multi-plan MCO markets. Ohio's Medicaid managed care program, for example, contracts with five MCOs covering over 3 million beneficiaries across the state."
+                "body": "The dominant model in Medicaid, fully capitated MCOs receive a fixed PMPM payment and assume responsibility for all covered services. Commercial insurers (Centene, Molina, UnitedHealthcare Community Plan, Anthem) and non-profit plans (such as UPMC for You, CareSource, and Oregon's local CCOs) compete for state contracts. MCOs must meet network adequacy standards, file encounter data, and meet quality benchmarks.\n\nStates like Texas, Florida, and Ohio run large multi-plan MCO markets. Ohio's Next Generation managed care program, launched in February 2023, for example, contracts with seven MCOs serving more than 3 million members."
               },
               {
                 "type": "text",
                 "heading": "Primary Care Case Management (PCCM)",
-                "body": "PCCM programs pay primary care providers a small monthly case management fee (typically $2\u2013$7 PMPM) on top of FFS payments to coordinate care. The state retains financial risk. North Carolina's Community Care of North Carolina (CCNC) was a nationally recognized PCCM model before the state transitioned to MCOs.\n\nPCCM is increasingly rare but remains relevant in states with limited MCO market interest, particularly rural areas where insufficient enrollment density makes capitation financially unviable for commercial insurers."
+                "body": "PCCM programs pay primary care providers a small monthly case management fee (typically a few dollars PMPM) on top of FFS payments to coordinate care. The state retains financial risk. North Carolina's Community Care of North Carolina (CCNC) was a nationally recognized PCCM model before the state transitioned to MCOs.\n\nPCCM is increasingly rare but remains relevant in states with limited MCO market interest, particularly rural areas where insufficient enrollment density makes capitation financially unviable for commercial insurers."
               },
               {
                 "type": "callout",
                 "variant": "tip",
                 "title": "ACOs in Medicaid Context",
-                "body": "Medicaid ACOs differ from Medicare ACOs. They typically operate under Section 1115 waivers and may involve shared savings without full capitation. Oregon's Coordinated Care Organizations (CCOs) and Vermont's All-Payer ACO Model represent hybrid approaches where provider-led entities take on population-level accountability with global budget caps."
+                "body": "Medicaid ACOs differ from Medicare ACOs. They typically operate under Section 1115 waivers and may involve shared savings without full capitation. Oregon's Coordinated Care Organizations (CCOs), which operate under global budgets, and Vermont's All-Payer ACO Model (2017–2025) are hybrid approaches where provider-led entities take on population-level accountability."
               }
             ],
             "quiz": {
@@ -9410,13 +9410,13 @@
               {
                 "type": "text",
                 "heading": "42 CFR Part 438: The Regulatory Backbone",
-                "body": "Title 42, Code of Federal Regulations, Part 438 is the primary federal regulatory framework for Medicaid managed care. First substantially revised in 2002 and comprehensively overhauled in 2016, it governs how states structure, procure, and oversee managed care contracts.\n\n**Key Subparts:**\n- **Subpart A** \u2014 General provisions, definitions (MCO, PAHP, PIHP, PCCM)\n- **Subpart B** \u2014 State responsibilities: contract requirements, actuarial soundness\n- **Subpart C** \u2014 Enrollee rights and protections, marketing standards\n- **Subpart D** \u2014 Access and availability: network adequacy, timely access\n- **Subpart E** \u2014 Quality measurement and improvement (QAP requirements)\n- **Subpart F** \u2014 Grievance and appeal systems\n- **Subpart G** \u2014 External Quality Review (EQRO requirements)\n- **Subpart H** \u2014 Payments: actuarial soundness, MLR, risk corridors"
+                "body": "Title 42, Code of Federal Regulations, Part 438 is the primary federal regulatory framework for Medicaid managed care. First issued in 2002 to implement the Balanced Budget Act of 1997, and comprehensively overhauled in 2016, it governs how states structure, procure, and oversee managed care contracts.\n\n**Key Subparts:**\n- **Subpart A** \u2014 General provisions: definitions, standard contract requirements (\u00a7438.3), actuarially sound rates (\u00a7\u00a7438.4\u2013438.7), medical loss ratio (\u00a7438.8)\n- **Subpart B** \u2014 State responsibilities: enrollment and choice, state monitoring (\u00a7438.66), network adequacy standards (\u00a7438.68), MLR reporting (\u00a7438.74)\n- **Subpart C** \u2014 Enrollee rights and protections, marketing standards\n- **Subpart D** \u2014 MCO, PIHP and PAHP standards: availability of services, care coordination, coverage and authorization, provider selection\n- **Subpart E** \u2014 Quality measurement and improvement; External Quality Review (\u00a7\u00a7438.310\u2013438.370)\n- **Subpart F** \u2014 Grievance and appeal system\n- **Subpart G** \u2014 Medicaid managed care quality rating system (added 2024)\n- **Subpart H** \u2014 Additional program integrity safeguards"
               },
               {
                 "type": "callout",
                 "variant": "key",
                 "title": "The 2016 Final Rule: Modernizing Managed Care Oversight",
-                "body": "CMS's 2016 Medicaid managed care final rule (81 FR 27498) was the most comprehensive update since 2002. Key provisions included: mandatory Medical Loss Ratio (MLR) floor of 85% for MCOs; new network adequacy standards with time and distance requirements; enhanced enrollee protections; strengthened EQRO requirements; and new encounter data reporting mandates. The 2024 Access rule further strengthened network adequacy and added new appointment wait time standards."
+                "body": "CMS's 2016 Medicaid managed care final rule (81 FR 27498) was the most comprehensive update since 2002. Key provisions included: an 85% medical loss ratio (MLR) standard for setting capitation rates; new network adequacy standards with time and distance requirements; enhanced enrollee protections; strengthened EQRO requirements; and new encounter data reporting mandates. The 2024 Access rule further strengthened network adequacy and added new appointment wait time standards."
               },
               {
                 "type": "glossary_terms",
@@ -9505,8 +9505,8 @@
                       "text": "Subpart H"
                     }
                   ],
-                  "correctId": "c",
-                  "explanation": "Subpart G of 42 CFR Part 438 (\u00a7\u00a7438.350\u2013370) governs External Quality Review, including EQRO qualifications, mandatory activities, and state reporting requirements."
+                  "correctId": "b",
+                  "explanation": "Subpart E of 42 CFR Part 438 (\"Quality Measurement and Improvement; External Quality Review\") contains the EQR rules at \u00a7\u00a7438.350\u2013438.370, including EQRO qualifications and mandatory activities. Subpart G, added in 2024, is the Medicaid managed care quality rating system."
                 },
                 {
                   "id": "q-mmc-managed-care-foundations-003-2",
@@ -9554,7 +9554,7 @@
                     }
                   ],
                   "correctId": "c",
-                  "explanation": "The 2016 final rule established an 85% MLR floor for Medicaid MCOs, meaning at least 85 cents of every premium dollar must be spent on clinical services and quality improvement."
+                  "explanation": "The 2016 final rule set an 85% MLR standard: states must set capitation rates so each plan can reasonably achieve an MLR of at least 85% — at least 85 cents of each premium dollar going to claims, quality improvement, and fraud prevention."
                 }
               ]
             },
@@ -9591,7 +9591,7 @@
               {
                 "type": "text",
                 "heading": "The Competitive Procurement Process",
-                "body": "States procure Medicaid MCO contracts through formal competitive procurement, typically a Request for Proposals (RFP). The process must comply with federal procurement standards at 42 CFR \u00a7438.3 and state procurement law. CMS must review and approve contracts before they take effect.\n\n**Typical RFP Timeline:**\n1. **Planning Phase** (6\u201312 months pre-RFP): State defines service regions, populations, benefit packages, and contract terms\n2. **RFP Release**: Public posting with 60\u201390 day response window; bidder conferences and Q&A\n3. **Proposal Evaluation**: Scored by technical review panels \u2014 often includes site visits and oral presentations\n4. **Negotiation and Award**: State negotiates final contract terms; losers may protest\n5. **CMS Review**: State submits executed contract; CMS has 90 days to review\n6. **Implementation**: Enrollment transition, readiness review, go-live"
+                "body": "States procure Medicaid MCO contracts through formal competitive procurement, typically a Request for Proposals (RFP). The process must follow state procurement law, and the resulting contract must meet the federal contract requirements at 42 CFR \u00a7438.3. CMS must review and approve the contract \u2014 a precondition for federal matching of capitation payments.\n\n**Typical RFP Timeline:**\n1. **Planning Phase** (6\u201312 months pre-RFP): State defines service regions, populations, benefit packages, and contract terms\n2. **RFP Release**: Public posting with 60\u201390 day response window; bidder conferences and Q&A\n3. **Proposal Evaluation**: Scored by technical review panels \u2014 often includes site visits and oral presentations\n4. **Negotiation and Award**: State negotiates final contract terms; losers may protest\n5. **CMS Review**: State submits the proposed final contract to CMS — no later than 90 days before the effective date if approval is needed by then (42 CFR §438.3(a))\n6. **Implementation**: Enrollment transition, readiness review, go-live"
               },
               {
                 "type": "callout",
@@ -9625,13 +9625,13 @@
                 "stats": [
                   {
                     "value": "90 days",
-                    "label": "CMS contract review window",
-                    "context": "CMS has up to 90 days to review and approve submitted Medicaid managed care contracts"
+                    "label": "Contract submission lead time",
+                    "context": "States seeking CMS approval by a specific effective date must submit the proposed final contract no later than 90 days before it (42 CFR §438.3(a))"
                   },
                   {
                     "value": "3\u20135",
-                    "label": "Typical number of MCOs per state market",
-                    "context": "Most state Medicaid programs contract with 3 to 5 MCOs to maintain competition while ensuring viable plan size"
+                    "label": "Most common number of MCOs per state",
+                    "context": "The largest group of states (17 of 41 with Medicaid managed care) contract with 3 to 5 MCOs; the range runs from one (North Dakota) to 26 (California) (New York State DOH review)"
                   }
                 ]
               }
@@ -9663,7 +9663,7 @@
                     }
                   ],
                   "correctId": "b",
-                  "explanation": "42 CFR \u00a7438.3 requires states to submit all Medicaid managed care contracts to CMS for review. CMS has 90 days to review and must approve the contract before it takes effect."
+                  "explanation": "42 CFR \u00a7438.3 requires states to submit all Medicaid managed care contracts to CMS for review and approval. States seeking approval by a specific effective date must submit the proposed final contract at least 90 days in advance, and CMS approval is a precondition for federal matching funds."
                 },
                 {
                   "id": "q-mmc-procurement-contracting-001-2",
@@ -9691,7 +9691,7 @@
                 },
                 {
                   "id": "q-mmc-procurement-contracting-001-3",
-                  "text": "Most state Medicaid markets contract with how many MCOs?",
+                  "text": "What is the most common number of MCOs a state Medicaid program contracts with?",
                   "options": [
                     {
                       "id": "a",
@@ -9711,7 +9711,7 @@
                     }
                   ],
                   "correctId": "b",
-                  "explanation": "Most states contract with 3 to 5 MCOs. This range maintains competitive pressure on plans while ensuring each has enough enrollment to operate viably and invest in care management."
+                  "explanation": "The largest group of states — 17 of the 41 with Medicaid managed care in a New York State Department of Health review — contract with 3 to 5 MCOs, balancing competition with enough enrollment per plan; the range runs from one (North Dakota) to 26 (California)."
                 }
               ]
             },
@@ -9745,42 +9745,12 @@
                 "type": "callout",
                 "variant": "warning",
                 "title": "Encounter Data: A Critical Oversight Tool",
-                "body": "MCOs must submit complete and accurate encounter data \u2014 records of every service provided to enrollees \u2014 to the state. Under 42 CFR \u00a7438.818, states must certify encounter data completeness and accuracy to CMS. CMS uses encounter data for rate-setting, quality measurement, and fraud detection. Incomplete encounter data was a major finding in OIG audits of multiple state Medicaid programs in 2019\u20132022."
+                "body": "MCOs must submit complete and accurate encounter data \u2014 records of every service provided to enrollees \u2014 to the state. Under 42 CFR \u00a7438.818, states must certify encounter data completeness and accuracy to CMS. CMS uses encounter data for rate-setting, quality measurement, and fraud detection. A 2021 HHS-OIG evaluation (OEI-02-19-00180) found that most states did not report complete and accurate managed care payment data in their T-MSIS encounter records."
               },
               {
                 "type": "comparison_table",
-                "headers": [
-                  "Network Adequacy Standard",
-                  "Primary Care",
-                  "Specialty Care",
-                  "Hospital"
-                ],
-                "rows": [
-                  [
-                    "Maximum Travel Distance (urban)",
-                    "30 miles",
-                    "75 miles",
-                    "75 miles"
-                  ],
-                  [
-                    "Maximum Travel Time (rural)",
-                    "60 minutes",
-                    "90 minutes",
-                    "90 minutes"
-                  ],
-                  [
-                    "Minimum Provider-to-Enrollee Ratio",
-                    "1:2,000",
-                    "Varies by specialty",
-                    "N/A"
-                  ],
-                  [
-                    "Appointment Wait Time (routine)",
-                    "10 business days",
-                    "15 business days",
-                    "N/A"
-                  ]
-                ]
+                "headers": ["Network Adequacy Standard (illustrative state values, except the federal wait times)","Primary Care","Specialty Care","Hospital"],
+                "rows": [["Maximum Travel Distance (urban)","30 miles","75 miles","75 miles"],["Maximum Travel Time (rural)","60 minutes","90 minutes","90 minutes"],["Minimum Provider-to-Enrollee Ratio","1:2,000","Varies by specialty","N/A"],["Appointment Wait Time (routine, federal 2024 rule)","15 business days","State-set (outpatient mental health/SUD: 10 business days)","N/A"]]
               },
               {
                 "type": "glossary_terms",
@@ -9795,7 +9765,7 @@
                   },
                   {
                     "term": "Quality Assurance Program (QAP)",
-                    "definition": "An MCO's internal program for monitoring and improving the quality of care \u2014 required under 42 CFR \u00a7438.240"
+                    "definition": "An MCO's internal program for monitoring and improving the quality of care \u2014 required under 42 CFR \u00a7438.330 (formerly \u00a7438.240)"
                   },
                   {
                     "term": "EPSDT",
@@ -9860,26 +9830,9 @@
                 {
                   "id": "q-mmc-procurement-contracting-002-3",
                   "text": "What is the maximum routine primary care appointment wait time required under federal network adequacy standards?",
-                  "options": [
-                    {
-                      "id": "a",
-                      "text": "5 business days"
-                    },
-                    {
-                      "id": "b",
-                      "text": "10 business days"
-                    },
-                    {
-                      "id": "c",
-                      "text": "30 calendar days"
-                    },
-                    {
-                      "id": "d",
-                      "text": "45 calendar days"
-                    }
-                  ],
+                  "options": [{"id":"a","text":"5 business days"},{"id":"b","text":"15 business days"},{"id":"c","text":"30 calendar days"},{"id":"d","text":"45 calendar days"}],
                   "correctId": "b",
-                  "explanation": "Federal network adequacy standards (strengthened in the 2024 Access rule) require routine primary care appointments to be available within 10 business days of a request."
+                  "explanation": "The 2024 Managed Care Access, Finance, and Quality rule requires routine primary care (and OB/GYN) appointments within 15 business days of a request; routine outpatient mental health and substance use disorder appointments must be available within 10 business days."
                 }
               ]
             },
@@ -9907,7 +9860,7 @@
               {
                 "type": "text",
                 "heading": "External Quality Review Organizations (EQROs)",
-                "body": "Every state with a Medicaid managed care program must contract with an EQRO \u2014 an independent organization that assesses MCO performance. Under 42 CFR \u00a7438.358, EQROs must conduct three mandatory annual activities:\n\n1. **Validation of PIPs (Performance Improvement Projects)**: Assessing whether MCO quality improvement projects are methodologically sound\n2. **Validation of Performance Measures**: Confirming that HEDIS and other quality metrics are calculated accurately\n3. **Validation of Network Adequacy**: Reviewing whether the MCO's network meets state and federal standards\n\nOptional EQRO activities include: consumer surveys (CAHPS Medicaid), focused studies on specific quality issues, and assessment of new MCO systems."
+                "body": "Every state with a Medicaid managed care program must contract with an EQRO \u2014 an independent organization that assesses MCO performance. Under 42 CFR \u00a7438.358, four EQR-related activities are mandatory for each plan:\n\n1. **Validation of PIPs (Performance Improvement Projects)**: Assessing whether MCO quality improvement projects are methodologically sound\n2. **Validation of Performance Measures**: Confirming that HEDIS and other quality metrics are calculated accurately\n3. **Validation of Network Adequacy**: Reviewing whether the MCO's network meets state and federal standards\n4. **Compliance Review**: A review, conducted within the previous three years, of the MCO's compliance with federal standards for access, enrollee rights, and quality\n\nOptional EQRO activities include: encounter data validation, administering or validating consumer surveys (such as CAHPS), and focused studies on specific quality issues."
               },
               {
                 "type": "callout",
@@ -9928,7 +9881,7 @@
                   },
                   {
                     "term": "Intermediate Sanctions",
-                    "definition": "Penalties available to states under 42 CFR \u00a7438.702 for MCO non-compliance, including civil monetary penalties, suspension of enrollment, and contract termination"
+                    "definition": "Penalties available to states under 42 CFR \u00a7438.702 for MCO non-compliance, including civil money penalties, temporary management, suspension of new enrollment, and suspension of payment for new enrollees"
                   },
                   {
                     "term": "Encounter Data Validation (EDV)",
@@ -9940,14 +9893,14 @@
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "3",
-                    "label": "Mandatory EQRO activities per year",
-                    "context": "States must ensure EQROs conduct three mandatory activities: PIP validation, performance measure validation, and network adequacy validation"
+                    "value": "4",
+                    "label": "Mandatory EQR-related activities",
+                    "context": "PIP validation, performance measure validation, network adequacy validation, and a compliance review within the previous three years (42 CFR §438.358(b))"
                   },
                   {
-                    "value": "$25,000/day",
-                    "label": "Maximum daily civil monetary penalty",
-                    "context": "States may impose civil monetary penalties up to $25,000 per day for each MCO violation under 42 CFR \u00a7438.704"
+                    "value": "$25K–$100K",
+                    "label": "Civil money penalty limit per determination",
+                    "context": "42 CFR §438.704 caps state civil money penalties at $25,000 or $100,000 per determination, depending on the violation (e.g., $100,000 for discriminating among enrollees by health status or misrepresenting information to CMS or the state)"
                   }
                 ]
               }
@@ -9979,7 +9932,7 @@
                     }
                   ],
                   "correctId": "b",
-                  "explanation": "Validating PIPs is one of three mandatory EQRO activities under 42 CFR \u00a7438.358. CAHPS surveys and focused studies are optional activities."
+                  "explanation": "Validating PIPs is one of four mandatory EQR-related activities under 42 CFR \u00a7438.358. CAHPS surveys and focused studies are optional activities."
                 },
                 {
                   "id": "q-mmc-procurement-contracting-003-2",
@@ -10064,30 +10017,25 @@
               {
                 "type": "text",
                 "heading": "Actuarial Soundness: The Federal Baseline",
-                "body": "Under 42 CFR \u00a7438.4, all Medicaid capitation rates must be 'actuarially sound' \u2014 meaning rates must be sufficient to cover the MCO's reasonable, appropriate, and attainable costs of providing covered services to the enrolled population. Rates must be developed by a qualified actuary (ASA or FSA with relevant Medicaid experience) and certified as actuarially sound before CMS approval.\n\nActuarial soundness has two components: (1) rates must cover expected costs based on the covered population's utilization patterns and (2) rates must reflect the specific MCO's operating environment \u2014 not just market averages."
+                "body": "Under 42 CFR \u00a7438.4, all Medicaid capitation rates must be 'actuarially sound' \u2014 meaning rates must be sufficient to cover the MCO's reasonable, appropriate, and attainable costs of providing covered services to the enrolled population. Rates must be developed and certified by a qualified actuary (one who meets the American Academy of Actuaries' qualification standards, per 42 CFR §438.2) and certified as actuarially sound before CMS approval.\n\nActuarial soundness has two components: (1) rates must cover expected costs based on the covered population's utilization patterns and (2) rates must be developed in accordance with generally accepted actuarial principles and practices and the federal rate development standards in \u00a7438.5."
               },
               {
                 "type": "text",
                 "heading": "Rate Cells and Population Segmentation",
-                "body": "States develop rates for distinct 'rate cells' \u2014 segments of the Medicaid population with similar expected costs. Common rate cells include:\n- Age/sex bands (e.g., children 0\u20131, children 1\u201314, adult males 19\u201344)\n- Eligibility categories (TANF families, SSI individuals, dual eligibles)\n- Geographic regions (reflecting local cost variation)\n- Functional need levels (for MLTSS populations)\n\nPMPM rates vary dramatically across cells. A child rate cell might be $180 PMPM while an aged/blind/disabled rate cell exceeds $1,200 PMPM, reflecting the much higher expected utilization of complex populations."
+                "body": "States develop rates for distinct 'rate cells' \u2014 segments of the Medicaid population with similar expected costs. Common rate cells include:\n- Age/sex bands (e.g., children 0\u20131, children 1\u201314, adult males 19\u201344)\n- Eligibility categories (TANF families, SSI individuals, dual eligibles)\n- Geographic regions (reflecting local cost variation)\n- Functional need levels (for MLTSS populations)\n\nPMPM rates vary dramatically across cells. For scale, KFF puts Medicaid spending at about $3,321 a year per child enrollee (roughly $280 a month) versus about $20,950 per enrollee with disabilities (roughly $1,750 a month), reflecting the much higher expected utilization of complex populations."
               },
               {
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "$180",
-                    "label": "Typical child PMPM rate",
-                    "context": "Children rate cells are typically among the lowest PMPM rates due to lower average utilization"
+                    "value": "~$280/mo",
+                    "label": "Medicaid spending per child enrollee",
+                    "context": "About $3,321 a year per child enrollee (KFF per-enrollee spending data)"
                   },
                   {
-                    "value": "$1,200+",
-                    "label": "Typical aged/disabled adult PMPM rate",
-                    "context": "SSI/ABD populations have much higher expected costs, reflecting complex medical and LTSS needs"
-                  },
-                  {
-                    "value": "3\u20135%",
-                    "label": "Typical annual medical trend factor",
-                    "context": "Actuaries apply trend factors to base period data to project costs forward to the rating period"
+                    "value": "~$1,750/mo",
+                    "label": "Medicaid spending per enrollee with disabilities",
+                    "context": "About $20,950 a year per enrollee eligible through disability (KFF per-enrollee spending data)"
                   }
                 ]
               },
@@ -10095,7 +10043,7 @@
                 "type": "callout",
                 "variant": "tip",
                 "title": "Data Sources for Rate Development",
-                "body": "Actuaries use a combination of data sources to develop base period costs: MCO encounter data (if complete and credible), state FFS claims data, and commercial benchmarks. The CMS Actuarial Communication and Guidance document (released annually) provides guidance on acceptable methodologies. States must submit the actuarial rate certification along with rate development documentation (RDD) for CMS review."
+                "body": "Actuaries use a combination of data sources to develop base period costs: MCO encounter data (if complete and credible), state FFS claims data, and commercial benchmarks. CMS's annual Medicaid Managed Care Rate Development Guide provides guidance on acceptable methodologies. States must submit the actuarial rate certification along with rate development documentation (RDD) for CMS review."
               }
             ],
             "quiz": {
@@ -10113,7 +10061,7 @@
                     },
                     {
                       "id": "b",
-                      "text": "A qualified actuary (ASA or FSA)"
+                      "text": "A qualified actuary (meeting American Academy of Actuaries qualification standards)"
                     },
                     {
                       "id": "c",
@@ -10125,7 +10073,7 @@
                     }
                   ],
                   "correctId": "b",
-                  "explanation": "42 CFR \u00a7438.4 requires that Medicaid capitation rates be certified as actuarially sound by a qualified actuary \u2014 typically an Associate or Fellow of the Society of Actuaries (ASA/FSA) with Medicaid experience."
+                  "explanation": "42 CFR \u00a7438.4 requires capitation rates to be certified as actuarially sound by an actuary who meets the American Academy of Actuaries' qualification standards and follows Actuarial Standards Board practice standards (42 CFR \u00a7438.2)."
                 },
                 {
                   "id": "q-mmc-actuarial-rate-setting-001-2",
@@ -10173,7 +10121,7 @@
                     }
                   ],
                   "correctId": "b",
-                  "explanation": "Trend factors project historical base period costs forward to the rating period, accounting for medical cost inflation, utilization changes, and benefit changes. Typical Medicaid medical trend factors range from 3\u20135% annually."
+                  "explanation": "Trend factors project historical base period costs forward to the rating period, accounting for medical cost inflation, utilization changes, and benefit changes."
                 }
               ]
             },
@@ -10236,7 +10184,7 @@
                 "type": "callout",
                 "variant": "info",
                 "title": "HCCs in Medicaid Risk Adjustment",
-                "body": "Hierarchical Condition Categories (HCCs) group ICD-10 diagnosis codes into clinically meaningful categories that predict future healthcare costs. CMS's HHS-HCC model (used in ACA marketplaces) and CMS's Medicare HCC model are commonly adapted for Medicaid. Diagnosis codes from encounter data are mapped to HCCs, which are then weighted and summed to produce a risk score. A risk score of 1.0 represents average expected cost; a score of 2.5 means the member is expected to cost 2.5x the average."
+                "body": "Hierarchical Condition Categories (HCCs) group ICD-10 diagnosis codes into clinically meaningful categories that predict future healthcare costs. Medicare Advantage (CMS-HCC) and the ACA marketplaces (HHS-HCC) use HCC models, but most Medicaid programs use a Medicaid-specific diagnosis-based model instead — 33 of the 38 programs that risk-adjust MCO payments use the Chronic Illness and Disability Payment System (CDPS). Diagnosis codes from encounter data are mapped to HCCs, which are then weighted and summed to produce a risk score. A risk score of 1.0 represents average expected cost; a score of 2.5 means the member is expected to cost 2.5x the average."
               },
               {
                 "type": "glossary_terms",
@@ -10247,7 +10195,7 @@
                   },
                   {
                     "term": "HCC (Hierarchical Condition Category)",
-                    "definition": "A clinical grouping of ICD-10 codes that predicts future healthcare costs; the basis for most modern risk adjustment models"
+                    "definition": "A clinical grouping of ICD-10 codes that predicts future healthcare costs; the basis of Medicare Advantage and ACA marketplace risk adjustment (most Medicaid programs use the similar diagnosis-based CDPS model)"
                   },
                   {
                     "term": "Cream Skimming",
@@ -10363,7 +10311,7 @@
               {
                 "type": "text",
                 "heading": "The 85% MLR Floor",
-                "body": "The 2016 Medicaid managed care final rule established a Medical Loss Ratio (MLR) floor of 85% for Medicaid MCOs, PIHPs, and PAHPs. This means MCOs must spend at least 85 cents of every capitation dollar on clinical services and quality improvement activities \u2014 limiting administrative costs and profit to 15%.\n\nMLR = (Incurred Claims + Quality Improvement Expenses) / Premium Revenue\n\nIf an MCO's MLR falls below 85%, it must remit the difference to the state. States can also require higher MLR thresholds in their contracts \u2014 some states require 88% or 90%."
+                "body": "The 2016 Medicaid managed care final rule set an 85% medical loss ratio (MLR) standard for MCOs, PIHPs, and PAHPs: states must set capitation rates so each plan can reasonably achieve an MLR of at least 85%, and any minimum MLR a state imposes must be at least 85%.\n\nMLR = (Incurred Claims + Quality Improvement Expenditures + Fraud Prevention Activities) / (Premium Revenue − Taxes and Licensing/Regulatory Fees)\n\nIf a state requires remittance, a plan whose MLR falls below the state's minimum must pay back the difference. States can also set minimums above 85% in their contracts."
               },
               {
                 "type": "comparison_table",
@@ -10380,7 +10328,7 @@
                   ],
                   [
                     "Quality Improvement",
-                    "YES (capped at 3%)",
+                    "YES",
                     "Disease management, care coordination programs"
                   ],
                   [
@@ -10404,7 +10352,7 @@
                 "type": "callout",
                 "variant": "key",
                 "title": "MLR Remittance: How It Works",
-                "body": "If an MCO's annual MLR falls below the 85% threshold, the plan must remit the shortfall to the state Medicaid agency. For example, if a plan received $500 million in capitation and achieved an 82% MLR, it would owe the state $15 million (3% \u00d7 $500M). States must report MLR data to CMS annually. Unlike ACA marketplace MLR rebates, Medicaid MLR remittances go to the state, not directly to beneficiaries."
+                "body": "If a state requires remittance and an MCO's annual MLR falls below the 85% threshold, the plan must remit the shortfall to the state Medicaid agency. For example, if a plan received $500 million in capitation and achieved an 82% MLR, it would owe the state $15 million (3% \u00d7 $500M). States must report MLR data to CMS annually. Unlike ACA marketplace MLR rebates, Medicaid MLR remittances go to the state, not directly to beneficiaries."
               },
               {
                 "type": "key_stat",
@@ -10412,12 +10360,12 @@
                   {
                     "value": "85%",
                     "label": "Federal MLR floor for Medicaid MCOs",
-                    "context": "Established by the 2016 final rule; MCOs must spend at least 85% of premium on clinical services and quality improvement"
+                    "context": "Set by the 2016 final rule: states must set rates so each plan can reasonably achieve at least 85%, and any state-mandated minimum must be at least 85%"
                   },
                   {
                     "value": "15%",
-                    "label": "Maximum administrative/profit allowance",
-                    "context": "Administrative costs including marketing, overhead, and profit are capped at 15% of premium revenue"
+                    "label": "Left for administration and profit at an 85% MLR",
+                    "context": "At an 85% MLR, no more than 15% of adjusted premium revenue remains for administration and profit; federal rules do not separately cap administrative costs"
                   }
                 ]
               }
@@ -10448,7 +10396,7 @@
                       "text": "86.5%"
                     }
                   ],
-                  "correctId": "bases",
+                  "correctId": "b",
                   "explanation": "MLR = (330 + 8) / 400 = 338/400 = 84.5%. This falls below the 85% floor, so the MCO would owe the state a remittance."
                 },
                 {
@@ -10473,7 +10421,7 @@
                     }
                   ],
                   "correctId": "b",
-                  "explanation": "The MCO's MLR of 84.5% is 0.5 percentage points below the 85% floor. The remittance owed = 0.5% \u00d7 $400M = $2 million."
+                  "explanation": "If the state requires remittance at an 85% minimum, the MCO's MLR of 84.5% is 0.5 percentage points short, so it owes 0.5% \u00d7 $400M = $2 million."
                 },
                 {
                   "id": "q-mmc-actuarial-rate-setting-003-2",
@@ -10497,7 +10445,7 @@
                     }
                   ],
                   "correctId": "c",
-                  "explanation": "Quality improvement expenses, including disease management programs, count toward the MLR numerator (capped at 3% of premium). Marketing, executive compensation, and administrative costs do not count."
+                  "explanation": "Quality improvement expenses, including disease management programs, count toward the MLR numerator. Marketing, executive compensation, and administrative costs do not count."
                 }
               ]
             },
@@ -10534,13 +10482,13 @@
               {
                 "type": "text",
                 "heading": "Carve-Ins vs. Carve-Outs: The Basics",
-                "body": "When states design Medicaid managed care contracts, they must decide which services to include ('carve in') within the MCO's capitation and which to exclude ('carve out') for separate management. Carved-out services are typically delivered through separate contracts \u2014 often with PIHPs or PAHPs \u2014 or paid FFS directly by the state.\n\n**Common Carve-Outs:**\n- Behavioral health services (most commonly carved out)\n- Long-term services and supports (LTSS)\n- Dental services (often a separate PAHP)\n- Non-emergency medical transportation (NEMT)\n- Pharmacy (increasingly being carved back in)\n- High-cost specialty drugs"
+                "body": "When states design Medicaid managed care contracts, they must decide which services to include ('carve in') within the MCO's capitation and which to exclude ('carve out') for separate management. Carved-out services are typically delivered through separate contracts \u2014 often with PIHPs or PAHPs \u2014 or paid FFS directly by the state.\n\n**Common Carve-Outs:**\n- Behavioral health services (most commonly carved out)\n- Long-term services and supports (LTSS)\n- Dental services (often a separate PAHP)\n- Non-emergency medical transportation (NEMT)\n- Pharmacy (carved out in a few states, such as California and New York)\n- High-cost specialty drugs"
               },
               {
                 "type": "callout",
                 "variant": "warning",
                 "title": "The Integration Problem",
-                "body": "Carving out behavioral health from physical health creates a structural barrier to integrated care. Members with co-occurring mental health and medical conditions often fall through the cracks between their MCO (physical health) and PIHP (behavioral health). This is why a strong trend toward 'carving in' behavioral health has emerged \u2014 states like Arizona, Pennsylvania, and New York have integrated behavioral health into MCO contracts to improve whole-person care."
+                "body": "Carving out behavioral health from physical health creates a structural barrier to integrated care. Members with co-occurring mental health and medical conditions often fall through the cracks between their MCO (physical health) and PIHP (behavioral health). This is why a strong trend toward 'carving in' behavioral health has emerged \u2014 states like Arizona, Washington, and New York have integrated behavioral health into MCO contracts to improve whole-person care."
               },
               {
                 "type": "comparison_table",
@@ -10565,9 +10513,9 @@
                   ],
                   [
                     "Pharmacy",
-                    "Increasingly (CMS encourages)",
+                    "Most MCO states",
                     "Historically common",
-                    "Strong carve-in trend"
+                    "Mixed — a few states (e.g., CA, NY) carved it out"
                   ],
                   [
                     "Dental",
@@ -10714,25 +10662,25 @@
               {
                 "type": "text",
                 "heading": "Federal Network Adequacy Framework",
-                "body": "42 CFR \u00a7438.68 requires states to establish network adequacy standards for Medicaid MCOs covering: time and distance to providers; appointment wait times; provider-to-enrollee ratios; and availability of providers who are not accepting new patients. States must establish standards for at least the following provider types: primary care (adult and pediatric), OB/GYN, behavioral health (outpatient and inpatient), specialist, hospital, pharmacy, and pediatric dental.\n\nThe 2024 Medicaid Access rule (89 FR 40542) strengthened these requirements substantially, adding mandatory appointment wait time standards and requiring states to conduct secret shopper surveys to validate compliance."
+                "body": "42 CFR \u00a7438.68 requires states to set a quantitative network adequacy standard (such as time-and-distance or provider-to-enrollee ratios) for specified provider types and, since the 2024 rule, appointment wait time standards. States must establish standards for at least the following provider types: primary care (adult and pediatric), OB/GYN, mental health and substance use disorder (adult and pediatric), specialist, hospital, pharmacy, and pediatric dental.\n\nThe 2024 Managed Care Access, Finance, and Quality rule (89 FR 41002) strengthened these requirements substantially, adding mandatory appointment wait time standards and requiring states to conduct secret shopper surveys to validate compliance."
               },
               {
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "10 days",
+                    "value": "15 business days",
                     "label": "Max wait for routine primary care",
-                    "context": "2024 Access rule standard for routine (non-urgent) primary care appointment availability"
+                    "context": "2024 Managed Care Access, Finance, and Quality rule maximum for routine primary care (adult and pediatric) appointments"
                   },
                   {
-                    "value": "15 days",
-                    "label": "Max wait for routine specialist care",
-                    "context": "2024 Access rule standard for routine specialist appointments"
+                    "value": "15 business days",
+                    "label": "Max wait for routine OB/GYN care",
+                    "context": "2024 rule maximum for routine OB/GYN appointments; states also set a standard for one additional provider type of their choosing"
                   },
                   {
-                    "value": "48 hours",
-                    "label": "Max wait for urgent care",
-                    "context": "Urgent (non-emergency) care must be available within 48 hours under 2024 Access rule standards"
+                    "value": "10 business days",
+                    "label": "Max wait for outpatient mental health/SUD",
+                    "context": "2024 rule maximum for routine outpatient mental health and substance use disorder appointments (adult and pediatric)"
                   }
                 ]
               },
@@ -10744,50 +10692,8 @@
               },
               {
                 "type": "comparison_table",
-                "headers": [
-                  "Provider Type",
-                  "Urban Time-Distance",
-                  "Rural Time-Distance",
-                  "Wait Time Standard"
-                ],
-                "rows": [
-                  [
-                    "Primary Care (Adult)",
-                    "30 min / 30 mi",
-                    "60 min / 60 mi",
-                    "10 business days (routine)"
-                  ],
-                  [
-                    "Primary Care (Pediatric)",
-                    "30 min / 30 mi",
-                    "60 min / 60 mi",
-                    "10 business days (routine)"
-                  ],
-                  [
-                    "OB/GYN",
-                    "30 min / 30 mi",
-                    "60 min / 60 mi",
-                    "15 business days (routine)"
-                  ],
-                  [
-                    "Behavioral Health (Outpatient)",
-                    "30 min / 30 mi",
-                    "60 min / 60 mi",
-                    "10 business days"
-                  ],
-                  [
-                    "Specialist",
-                    "45 min / 45 mi",
-                    "90 min / 90 mi",
-                    "15 business days (routine)"
-                  ],
-                  [
-                    "Hospital",
-                    "45 min / 45 mi",
-                    "90 min / 90 mi",
-                    "N/A (ED: immediate)"
-                  ]
-                ]
+                "headers": ["Provider Type","Urban Time-Distance (example state standard)","Rural Time-Distance (example state standard)","Federal Wait Time Standard (2024 rule)"],
+                "rows": [["Primary Care (Adult)","30 min / 30 mi","60 min / 60 mi","15 business days (routine)"],["Primary Care (Pediatric)","30 min / 30 mi","60 min / 60 mi","15 business days (routine)"],["OB/GYN","30 min / 30 mi","60 min / 60 mi","15 business days (routine)"],["Behavioral Health (Outpatient)","30 min / 30 mi","60 min / 60 mi","10 business days (routine)"],["Specialist","45 min / 45 mi","90 min / 90 mi","State-set (a state may choose it as its additional type)"],["Hospital","45 min / 45 mi","90 min / 90 mi","N/A (ED: immediate)"]]
               }
             ],
             "quiz": {
@@ -10821,7 +10727,7 @@
                 },
                 {
                   "id": "q-mmc-benefits-network-management-002-2",
-                  "text": "Under the 2024 Access rule, urgent care (non-emergency) must be available within:",
+                  "text": "Under the 2024 Medicaid managed care rule, routine outpatient mental health and substance use disorder appointments must be available within:",
                   "options": [
                     {
                       "id": "a",
@@ -10840,8 +10746,8 @@
                       "text": "10 business days"
                     }
                   ],
-                  "correctId": "b",
-                  "explanation": "The 2024 Medicaid Access rule requires MCOs to provide access to urgent (non-emergency) care within 48 hours of a request."
+                  "correctId": "d",
+                  "explanation": "The 2024 Managed Care Access, Finance, and Quality rule sets a 10-business-day standard for routine outpatient mental health and substance use disorder appointments (15 business days for primary care and OB/GYN). It does not set a federal 48-hour urgent care standard."
                 },
                 {
                   "id": "q-mmc-benefits-network-management-002-3",
@@ -10893,20 +10799,20 @@
               {
                 "type": "text",
                 "heading": "Provider Credentialing: MCO Obligations",
-                "body": "MCOs must credential all network providers before allowing them to treat enrollees. Under 42 CFR \u00a7438.214, MCOs must: verify that providers meet state licensing and certification requirements; have procedures to exclude providers excluded from federal programs; and recredential providers at least every three years.\n\n**Primary source verification** requires the MCO to verify credentials directly with the issuing source \u2014 e.g., confirming a medical license with the state medical board, not just accepting the provider's copy. This protects against credential fraud and ensures network quality."
+                "body": "MCOs must credential all network providers before allowing them to treat enrollees. Under 42 CFR \u00a7438.214, each state must set a uniform credentialing and recredentialing policy that its MCOs follow, and MCOs may not employ or contract with providers excluded from federal health care programs. Most plans also follow NCQA credentialing standards, which require recredentialing at least every three years.\n\n**Primary source verification** requires the MCO to verify credentials directly with the issuing source \u2014 e.g., confirming a medical license with the state medical board, not just accepting the provider's copy. This protects against credential fraud and ensures network quality."
               },
               {
                 "type": "callout",
                 "variant": "tip",
                 "title": "Delegated Credentialing",
-                "body": "Large health systems and medical groups often request that MCOs delegate credentialing responsibility to them \u2014 meaning the group credentials its own providers and the MCO accepts the group's determination. This is permitted under 42 CFR \u00a7438.214 if the MCO maintains oversight and can audit the delegate's credentialing files. Delegation significantly reduces administrative burden for large networks but requires robust oversight agreements."
+                "body": "Large health systems and medical groups often request that MCOs delegate credentialing responsibility to them \u2014 meaning the group credentials its own providers and the MCO accepts the group's determination. This is permitted under NCQA standards and 42 CFR \u00a7438.230 (subcontracting and delegation), which keeps the MCO fully responsible, if the MCO maintains oversight and can audit the delegate's credentialing files. Delegation significantly reduces administrative burden for large networks but requires robust oversight agreements."
               },
               {
                 "type": "concepts_grid",
                 "concepts": [
                   {
                     "term": "Primary Source Verification",
-                    "definition": "Direct confirmation of a provider's credentials with the original issuing source (medical board, DEA, NPDB) \u2014 required under 42 CFR \u00a7438.214"
+                    "definition": "Direct confirmation of a provider's credentials with the original issuing source (medical board, DEA, NPDB) \u2014 required under NCQA credentialing standards"
                   },
                   {
                     "term": "NPDB (National Practitioner Data Bank)",
@@ -10928,7 +10834,7 @@
                   {
                     "value": "Every 3 years",
                     "label": "Required MCO recredentialing cycle",
-                    "context": "42 CFR \u00a7438.214 requires MCOs to recredential all network providers at least every three years"
+                    "context": "NCQA credentialing standards (which most MCOs follow) require recredentialing all network providers at least every three years"
                   },
                   {
                     "value": "Monthly",
@@ -10969,7 +10875,7 @@
                 },
                 {
                   "id": "q-mmc-benefits-network-management-003-2",
-                  "text": "Under 42 CFR \u00a7438.214, how often must MCOs recredential network providers?",
+                  "text": "Under NCQA credentialing standards, how often must health plans recredential network providers?",
                   "options": [
                     {
                       "id": "a",
@@ -10989,7 +10895,7 @@
                     }
                   ],
                   "correctId": "c",
-                  "explanation": "42 CFR \u00a7438.214 requires MCOs to recredential all network providers at minimum every three years, ensuring that credentials remain current and adverse actions are identified."
+                  "explanation": "NCQA credentialing standards require health plans to recredential network providers at least every three years; 42 CFR \u00a7438.214 requires each state to set a uniform credentialing and recredentialing policy that its MCOs follow."
                 },
                 {
                   "id": "q-mmc-benefits-network-management-003-3",
@@ -11050,7 +10956,7 @@
               {
                 "type": "text",
                 "heading": "HEDIS in Medicaid Context",
-                "body": "HEDIS (Healthcare Effectiveness Data and Information Set) is a standardized set of performance measures developed by NCQA (National Committee for Quality Assurance). Most states require their Medicaid MCOs to report HEDIS measures annually, using state-specific Medicaid data.\n\n**Key HEDIS Measure Domains for Medicaid:**\n- **Preventive Care**: Well-child visits, adolescent immunizations, cervical cancer screening\n- **Chronic Disease Management**: Comprehensive diabetes care (HbA1c, eye exams, nephropathy screening), asthma management, blood pressure control\n- **Behavioral Health**: Follow-up after hospitalization for mental illness (FUH), antidepressant medication management (AMM)\n- **Maternal Health**: Prenatal and postpartum care (PPC), C-section rates\n- **Children**: EPSDT screens, developmental screening, lead screening"
+                "body": "HEDIS (Healthcare Effectiveness Data and Information Set) is a standardized set of performance measures developed by NCQA (National Committee for Quality Assurance). Most states require their Medicaid MCOs to report HEDIS measures annually, using state-specific Medicaid data.\n\n**Key HEDIS Measure Domains for Medicaid:**\n- **Preventive Care**: Well-child visits, adolescent immunizations, cervical cancer screening\n- **Chronic Disease Management**: Diabetes care (glycemic status, eye exams, kidney health evaluation), asthma medication ratio, controlling high blood pressure\n- **Behavioral Health**: Follow-up after hospitalization for mental illness (FUH), antidepressant medication management (AMM)\n- **Maternal Health**: Prenatal and postpartum care (PPC)\n- **Children**: Well-child visits, childhood immunization status, lead screening in children (developmental screening is reported through the CMS Child Core Set rather than HEDIS)"
               },
               {
                 "type": "comparison_table",
@@ -11085,7 +10991,7 @@
                 "type": "callout",
                 "variant": "info",
                 "title": "Pay-for-Performance Tied to HEDIS",
-                "body": "Many states tie MCO capitation withholds or quality bonuses to HEDIS performance. For example, Tennessee's CoverKids (CHIP) and Ohio Medicaid both use quality withholds where 1\u20132% of capitation is held back and returned only if MCOs meet HEDIS benchmarks. Benchmarks are typically set at the 25th, 50th, or 75th NCQA Medicaid percentile nationally."
+                "body": "Many states tie MCO capitation withholds or quality bonuses to HEDIS performance. For example, the MyCare Ohio demonstration for dually eligible enrollees withheld 1% of capitation in its first year, rising to 3% by year three, and repaid it on a sliding scale according to how many quality measures (including HEDIS and CAHPS) each plan met. Benchmarks are typically set at the 25th, 50th, or 75th NCQA Medicaid percentile nationally."
               },
               {
                 "type": "glossary_terms",
@@ -11164,7 +11070,7 @@
                 },
                 {
                   "id": "q-mmc-care-management-quality-001-3",
-                  "text": "States like Tennessee (CoverKids) and Ohio Medicaid use quality withholds to:",
+                  "text": "Quality withholds, like the one used in the MyCare Ohio demonstration, are designed to:",
                   "options": [
                     {
                       "id": "a",
@@ -11172,7 +11078,7 @@
                     },
                     {
                       "id": "b",
-                      "text": "Hold back 1\u20132% of capitation and return it only if MCOs meet HEDIS benchmarks"
+                      "text": "Hold back a share of capitation and return it based on quality-measure performance"
                     },
                     {
                       "id": "c",
@@ -11184,7 +11090,7 @@
                     }
                   ],
                   "correctId": "b",
-                  "explanation": "Quality withholds retain 1\u20132% of capitation payments and return those funds to MCOs that achieve defined HEDIS performance benchmarks, creating financial incentives for quality improvement."
+                  "explanation": "Quality withholds retain a share of capitation (MyCare Ohio: 1% rising to 3%) and return it to plans according to their performance on quality measures such as HEDIS and CAHPS, creating a financial incentive for quality improvement."
                 }
               ]
             },
@@ -11212,7 +11118,7 @@
               {
                 "type": "text",
                 "heading": "What Is MLTSS?",
-                "body": "Managed Long-Term Services and Supports (MLTSS) programs integrate LTSS \u2014 including nursing facility care, home and community-based services (HCBS), personal care, and adult day services \u2014 into Medicaid managed care capitation. As of 2023, over 20 states operate MLTSS programs covering approximately 1.5 million beneficiaries.\n\nThe policy rationale for MLTSS includes: rebalancing care from institutions toward home and community settings; improving care coordination for high-cost, complex members; and achieving cost predictability through capitation. Critics raise concerns about profit motives in a sector where quality is hard to measure and vulnerable populations have limited ability to advocate for themselves."
+                "body": "Managed Long-Term Services and Supports (MLTSS) programs integrate LTSS \u2014 including nursing facility care, home and community-based services (HCBS), personal care, and adult day services \u2014 into Medicaid managed care capitation. As of 2023, about two dozen states operated MLTSS programs, and CMS counted about 1.9 million MLTSS users nationwide as of July 2024.\n\nThe policy rationale for MLTSS includes: rebalancing care from institutions toward home and community settings; improving care coordination for high-cost, complex members; and achieving cost predictability through capitation. Critics raise concerns about profit motives in a sector where quality is hard to measure and vulnerable populations have limited ability to advocate for themselves."
               },
               {
                 "type": "callout",
@@ -11250,14 +11156,14 @@
                     "context": "As of 2023, more than 20 states have integrated LTSS into managed care capitation"
                   },
                   {
-                    "value": "1.5M",
+                    "value": "1.9M",
                     "label": "Beneficiaries in MLTSS programs",
-                    "context": "Approximately 1.5 million Medicaid beneficiaries receive LTSS through managed care arrangements nationally"
+                    "context": "About 1.9 million Medicaid enrollees used LTSS through managed care as of July 1, 2024 (CMS managed care enrollment report)"
                   },
                   {
-                    "value": "$300B+",
-                    "label": "Annual LTSS Medicaid spending",
-                    "context": "LTSS represents the largest single category of Medicaid spending, exceeding $300 billion annually"
+                    "value": "$199.4B",
+                    "label": "Medicaid LTSS spending, FY 2020",
+                    "context": "HCBS accounted for 62.5% and institutional care 37.5% (CMS/Mathematica LTSS expenditures report)"
                   }
                 ]
               }
@@ -11374,48 +11280,18 @@
               {
                 "type": "text",
                 "heading": "Value-Based Purchasing in Medicaid",
-                "body": "Value-based purchasing (VBP) in Medicaid operates on two levels: (1) between states and MCOs, and (2) between MCOs and their provider networks. At the state-MCO level, states use quality withholds, incentive payments, and performance bonuses tied to HEDIS and other quality metrics. At the MCO-provider level, MCOs are increasingly required by states to enter VBP arrangements with a minimum percentage of providers.\n\nCMS encourages VBP through its Medicaid VBP framework and has set targets for states to move specified percentages of Medicaid payments into VBP arrangements. New York's Medicaid Redesign Team set a goal of 80% of Medicaid payments flowing through VBP by 2020."
+                "body": "Value-based purchasing (VBP) in Medicaid operates on two levels: (1) between states and MCOs, and (2) between MCOs and their provider networks. At the state-MCO level, states use quality withholds, incentive payments, and performance bonuses tied to HEDIS and other quality metrics. At the MCO-provider level, MCOs are increasingly required by states to enter VBP arrangements with a minimum percentage of providers.\n\nMany states use the Health Care Payment Learning & Action Network (HCP-LAN) framework to classify these arrangements. New York's Medicaid Redesign Team set a goal of 80% of Medicaid payments flowing through VBP by 2020."
               },
               {
                 "type": "comparison_table",
-                "headers": [
-                  "VBP Tier",
-                  "Description",
-                  "Risk Level",
-                  "Example"
-                ],
-                "rows": [
-                  [
-                    "Tier 1",
-                    "FFS with quality bonuses/penalties",
-                    "Minimal",
-                    "HEDIS-tied incentive payments"
-                  ],
-                  [
-                    "Tier 2",
-                    "Shared savings (upside only)",
-                    "Low",
-                    "ACO shared savings without downside"
-                  ],
-                  [
-                    "Tier 3",
-                    "Shared savings/losses (two-sided)",
-                    "Moderate",
-                    "ACO with downside risk corridor"
-                  ],
-                  [
-                    "Tier 4",
-                    "Full capitation to provider",
-                    "High",
-                    "Global capitation to integrated system"
-                  ]
-                ]
+                "headers": ["HCP-LAN Category","Description","Risk Level","Example"],
+                "rows": [["Category 2","FFS with quality bonuses/penalties","Minimal","HEDIS-tied incentive payments"],["Category 3A","Shared savings (upside only)","Low","ACO shared savings without downside"],["Category 3B","Shared savings/losses (two-sided)","Moderate","ACO with downside risk corridor"],["Category 4","Population-based payment (e.g., full capitation to provider)","High","Global capitation to integrated system"]]
               },
               {
                 "type": "callout",
                 "variant": "info",
                 "title": "MCO-to-Provider VBP Requirements",
-                "body": "Several states now require MCOs to flow a minimum percentage of provider payments through VBP arrangements. For example, Oregon requires its CCOs to meet specific VBP targets as a condition of contract. CMS's Innovation Center (CMMI) has tested Medicaid VBP through demonstrations including the Integrated Care for Kids (InCK) model and the Accountable Health Communities model."
+                "body": "Several states now require MCOs to flow a minimum percentage of provider payments through VBP arrangements. For example, Oregon requires its CCOs to meet specific VBP targets as a condition of contract. CMS's Innovation Center (CMMI) has tested Medicaid VBP through demonstrations including the Integrated Care for Kids (InCK) model, which supports state Medicaid alternative payment models for children's services."
               },
               {
                 "type": "glossary_terms",
@@ -11446,7 +11322,7 @@
               "questions": [
                 {
                   "id": "q-mmc-value-based-medicaid-001-1",
-                  "text": "In the CMS Medicaid VBP framework, Tier 1 arrangements are characterized by:",
+                  "text": "In the HCP-LAN payment framework, Category 2 arrangements are characterized by:",
                   "options": [
                     {
                       "id": "a",
@@ -11466,7 +11342,7 @@
                     }
                   ],
                   "correctId": "c",
-                  "explanation": "Tier 1 VBP arrangements add quality bonuses or penalties on top of the existing FFS payment structure, with minimal risk transfer. They are the most common starting point for provider VBP."
+                  "explanation": "HCP-LAN Category 2 arrangements add quality bonuses or penalties on top of the existing fee-for-service payment structure, with minimal risk transfer. They are the most common starting point for provider VBP."
                 },
                 {
                   "id": "q-mmc-value-based-medicaid-001-2",
@@ -11494,27 +11370,10 @@
                 },
                 {
                   "id": "q-mmc-value-based-medicaid-001-3",
-                  "text": "Global capitation to a provider organization represents which tier of the VBP framework?",
-                  "options": [
-                    {
-                      "id": "a",
-                      "text": "Tier 1"
-                    },
-                    {
-                      "id": "b",
-                      "text": "Tier 2"
-                    },
-                    {
-                      "id": "c",
-                      "text": "Tier 3"
-                    },
-                    {
-                      "id": "d",
-                      "text": "Tier 4"
-                    }
-                  ],
+                  "text": "Global capitation to a provider organization falls in which HCP-LAN category?",
+                  "options": [{"id":"a","text":"Category 1"},{"id":"b","text":"Category 2"},{"id":"c","text":"Category 3"},{"id":"d","text":"Category 4"}],
                   "correctId": "d",
-                  "explanation": "Tier 4 represents the highest level of provider risk: a fixed PMPM payment (global capitation) to an integrated provider organization covering all services for attributed members, with the provider bearing full utilization risk."
+                  "explanation": "HCP-LAN Category 4 (population-based payment) represents the highest level of provider risk: a fixed PMPM payment (global capitation) to an integrated provider organization covering all services for attributed members, with the provider bearing full utilization risk."
                 }
               ]
             },
@@ -11548,7 +11407,7 @@
                 "type": "callout",
                 "variant": "warning",
                 "title": "Controversial Waiver Provisions",
-                "body": "States have used 1115 waivers to test provisions that go beyond traditional Medicaid managed care, including: work/community engagement requirements (struck down by courts in Arkansas, Kentucky; recently re-approved for Georgia); premium requirements for able-bodied adults; drug testing for enrollment; and time-limited enrollment (beneficiary lock-outs). CMS policy on these provisions has shifted significantly between administrations."
+                "body": "States have used 1115 waivers to test provisions that go beyond traditional Medicaid managed care, including: work/community engagement requirements (struck down by courts in Arkansas and Kentucky; Georgia's Pathways program runs under a 2020 approval reinstated by a federal court in 2022; Congress wrote community engagement requirements into federal law in July 2025); premium requirements for able-bodied adults; and time-limited enrollment (beneficiary lock-outs). CMS policy on these provisions has shifted significantly between administrations."
               },
               {
                 "type": "comparison_table",
@@ -11558,38 +11417,7 @@
                   "Key Innovation",
                   "Status"
                 ],
-                "rows": [
-                  [
-                    "Arizona",
-                    "AHCCCS",
-                    "First statewide mandatory managed care",
-                    "Ongoing since 1982"
-                  ],
-                  [
-                    "Oregon",
-                    "Oregon Health Plan",
-                    "CCO global budgets, VBP",
-                    "Ongoing"
-                  ],
-                  [
-                    "Tennessee",
-                    "TennCare",
-                    "Statewide managed care with closed enrollment",
-                    "Ongoing"
-                  ],
-                  [
-                    "Georgia",
-                    "Georgia Pathways",
-                    "Work requirements for Medicaid expansion",
-                    "Active/contested"
-                  ],
-                  [
-                    "Vermont",
-                    "All-Payer ACO",
-                    "Multi-payer global budget with ACO",
-                    "Ongoing"
-                  ]
-                ]
+                "rows": [["Arizona","AHCCCS","First statewide mandatory managed care","Ongoing since 1982"],["Oregon","Oregon Health Plan","CCO global budgets, VBP","Ongoing"],["Tennessee","TennCare","Statewide mandatory managed care since 1994","Ongoing"],["Georgia","Georgia Pathways","Work requirements for Medicaid expansion","Active/contested"],["Vermont","Global Commitment to Health (with the All-Payer ACO Model)","Multi-payer ACO model with Medicaid participation","All-Payer ACO Model ended December 2025"]]
               },
               {
                 "type": "glossary_terms",
@@ -11944,7 +11772,7 @@
               },
               {
                 "type": "text",
-                "text": "Clinically reportable variants include those affecting disease risk (BRCA1/2 for breast/ovarian cancer), drug metabolism (CYP2D6 for codeine), or pathogen susceptibility (G6PD deficiency). The distinction between germline variants (present in every cell, heritable) and somatic variants (acquired in tumor cells, not heritable) is clinically critical."
+                "text": "Clinically reportable variants include those affecting disease risk (BRCA1/2 for breast/ovarian cancer), drug metabolism (CYP2D6 for codeine), or drug-triggered hemolysis risk (G6PD deficiency). The distinction between germline variants (present in every cell, heritable) and somatic variants (acquired in tumor cells, not heritable) is clinically critical."
               }
             ],
             "quiz": {
@@ -12016,11 +11844,11 @@
                   },
                   {
                     "year": "2013",
-                    "event": "Whole-genome sequencing reaches $1,000 milestone"
+                    "event": "Cost per genome falls below $10,000 (NHGRI); the $1,000 mark follows in 2014–15"
                   },
                   {
                     "year": "2020",
-                    "event": "FDA authorizes first direct-to-consumer BRCA test; WGS used in COVID-19 surveillance"
+                    "event": "Genomic sequencing used at scale for COVID-19 variant surveillance (the FDA had authorized the first direct-to-consumer BRCA test, 23andMe's, in 2018)"
                   },
                   {
                     "year": "2023",
@@ -12028,7 +11856,7 @@
                   },
                   {
                     "year": "2025",
-                    "event": "WGS under $500; clinical WGS reimbursed for rare pediatric disease in most states"
+                    "event": "WGS under $500; rapid WGS for critically ill infants covered by a growing number of state Medicaid programs"
                   }
                 ]
               },
@@ -12160,7 +11988,7 @@
                   },
                   {
                     "term": "Newborn Screening",
-                    "definition": "Population-level dried blood spot testing for ~35 core conditions by RUSP \u2014 enables pre-symptomatic treatment"
+                    "definition": "Population-level dried blood spot testing for the 38 core conditions on the federal RUSP \u2014 enables pre-symptomatic treatment"
                   }
                 ]
               },
@@ -12175,9 +12003,9 @@
               },
               {
                 "type": "key_stat",
-                "value": "~35",
+                "value": "38",
                 "label": "Conditions on the federal RUSP newborn screening panel",
-                "context": "States may screen for additional conditions; all 50 states screen for at least the 35 RUSP core conditions using dried blood spots from heel-stick sampling"
+                "context": "Core conditions as of December 2025 (HRSA); each state decides its own panel, so coverage of the RUSP varies, using dried blood spots from heel-stick sampling"
               },
               {
                 "type": "callout",
@@ -12187,7 +12015,7 @@
               },
               {
                 "type": "text",
-                "text": "Genetic counselors play an indispensable role in pre-test education (informed consent, implications for family members) and post-test interpretation. The NSGC (National Society of Genetic Counselors) and ABGC (American Board of Genetic Counseling) credential these specialists. Many states now mandate genetic counselor involvement for high-complexity results."
+                "text": "Genetic counselors play an indispensable role in pre-test education (informed consent, implications for family members) and post-test interpretation. The NSGC (National Society of Genetic Counselors) and ABGC (American Board of Genetic Counseling) credential these specialists. Some payers require genetic counseling before they will cover certain high-complexity tests."
               }
             ],
             "quiz": {
@@ -12245,13 +12073,13 @@
               },
               {
                 "type": "text",
-                "text": "Adverse drug reactions (ADRs) cause over 100,000 deaths and 2 million hospitalizations annually in the United States. An estimated 7% of ADRs are attributable to pharmacogenomic (PGx) variation \u2014 predictable, preventable differences in how individuals metabolize and respond to medications based on genetic variants in drug-metabolizing enzymes, transporters, and targets."
+                "text": "A landmark meta-analysis (Lazarou et al., JAMA, 1998) estimated more than 2 million serious adverse drug reactions (ADRs) and over 100,000 deaths a year among hospitalized U.S. patients. Part of that burden reflects pharmacogenomic (PGx) variation \u2014 predictable, preventable differences in how individuals metabolize and respond to medications based on genetic variants in drug-metabolizing enzymes, transporters, and targets."
               },
               {
                 "type": "key_stat",
-                "value": "95%",
-                "label": "Americans carry at least one actionable PGx variant",
-                "context": "CPIC (Clinical Pharmacogenomics Implementation Consortium) guidelines cover >90 drug-gene pairs; PGx affects virtually every major drug class"
+                "value": "99%",
+                "label": "Patients carrying at least one actionable PGx variant",
+                "context": "Mayo Clinic analysis of five pharmacogenes in 1,013 patients (Ji et al., Journal of Molecular Diagnostics, 2016)"
               },
               {
                 "type": "heading",
@@ -12305,7 +12133,7 @@
                 "type": "callout",
                 "variant": "warning",
                 "title": "Clopidogrel and CYP2C19: A High-Stakes Example",
-                "body": "Clopidogrel (Plavix) is a prodrug requiring CYP2C19 activation to its active antiplatelet metabolite. CYP2C19 poor and intermediate metabolizers (20\u201330% of patients) have reduced activation and higher rates of stent thrombosis. The FDA added a black box warning in 2010. CPIC and ACC/AHA guidelines recommend prasugrel or ticagrelor for PCI patients who are CYP2C19 poor metabolizers."
+                "body": "Clopidogrel (Plavix) is a prodrug requiring CYP2C19 activation to its active antiplatelet metabolite. CYP2C19 poor and intermediate metabolizers (20\u201330% of patients) have reduced activation and higher rates of stent thrombosis. The FDA added a black box warning in 2010. CPIC guidelines recommend prasugrel or ticagrelor, absent contraindication, for PCI patients who are CYP2C19 poor or intermediate metabolizers; ACC/AHA guidelines do not recommend routine genotyping."
               },
               {
                 "type": "text",
@@ -12396,7 +12224,7 @@
               },
               {
                 "type": "text",
-                "text": "EGFR-mutant Non-Small Cell Lung Cancer (NSCLC): EGFR exon 19 deletions and L858R point mutations (found in ~15% of NSCLC in the US, ~40% in East Asian patients) predict response to EGFR tyrosine kinase inhibitors (TKIs). Osimertinib (3rd generation) has 5-year OS of 38% vs. 18% for chemotherapy in first-line EGFR-mutant NSCLC. T790M resistance mutation, detected by liquid biopsy, predicts response to osimertinib after first/second-generation TKI progression."
+                "text": "EGFR-mutant Non-Small Cell Lung Cancer (NSCLC): EGFR exon 19 deletions and L858R point mutations (found in ~15% of NSCLC in the US, ~40% in East Asian patients) predict response to EGFR tyrosine kinase inhibitors (TKIs). In the FLAURA trial, first-line osimertinib (3rd generation) extended median overall survival to 38.6 months versus 31.8 months with first-generation EGFR TKIs (Ramalingam et al., NEJM, 2020). T790M resistance mutation, detected by liquid biopsy, predicts response to osimertinib after first/second-generation TKI progression."
               },
               {
                 "type": "text",
@@ -12404,15 +12232,15 @@
               },
               {
                 "type": "key_stat",
-                "value": "~60%",
-                "label": "Advanced melanoma patients with BRAF V600E mutation",
+                "value": "~40–50%",
+                "label": "Melanomas carrying a BRAF V600 mutation",
                 "context": "BRAF/MEK inhibitor combinations (vemurafenib + cobimetinib; dabrafenib + trametinib) achieve ~70% response rate and have transformed metastatic melanoma prognosis"
               },
               {
                 "type": "callout",
                 "variant": "info",
                 "title": "Tumor-Agnostic Approvals: Biomarker Over Histology",
-                "body": "FDA has granted tumor-agnostic approvals for therapies based on molecular biomarkers regardless of tumor type: pembrolizumab for MSI-H/dMMR (2017), larotrectinib for NTRK fusions (2018), entrectinib for NTRK fusions and ROS1 (2019), and selpercatinib for RET fusions (2022). This paradigm shift means the genomic test result \u2014 not the organ of origin \u2014 determines therapy eligibility."
+                "body": "FDA has granted tumor-agnostic approvals for therapies based on molecular biomarkers regardless of tumor type: pembrolizumab for MSI-H/dMMR (2017), larotrectinib for NTRK fusions (2018), entrectinib for NTRK fusions (2019), and selpercatinib for RET fusions (2022). This paradigm shift means the genomic test result \u2014 not the organ of origin \u2014 determines therapy eligibility."
               },
               {
                 "type": "heading",
@@ -12520,13 +12348,13 @@
               },
               {
                 "type": "text",
-                "text": "When a pathogenic variant is identified in a proband, first-degree relatives (parents, siblings, children) have a 50% probability of carrying the same variant. Cascade testing \u2014 systematic, variant-specific testing of at-risk relatives \u2014 is one of the highest-value interventions in medicine. A single BRCA2 proband diagnosis can trigger testing in 10\u201320 relatives, identifying carriers who can begin surveillance decades before symptom onset."
+                "text": "When a pathogenic variant is identified in a proband, first-degree relatives (parents, siblings, children) have a 50% probability of carrying the same variant. Cascade testing \u2014 systematic, variant-specific testing of at-risk relatives \u2014 is one of the highest-value interventions in medicine. A single BRCA2 proband diagnosis can open testing to parents, siblings, children and, through them, more distant relatives \u2014 identifying carriers who can begin surveillance decades before symptom onset."
               },
               {
                 "type": "callout",
                 "variant": "info",
                 "title": "ACMG Secondary Findings: Incidental Genomic Disclosure",
-                "body": "The ACMG recommends that clinical laboratories report pathogenic/likely pathogenic variants in 81 genes (ACMG SF v3.2, 2023) when found incidentally during WES/WGS, regardless of the primary indication. These 'secondary findings' include BRCA1/2, Lynch genes, cardiac channelopathy genes, and FH genes. Patients must consent to receive or not receive secondary findings before testing."
+                "body": "The ACMG recommends that clinical laboratories report pathogenic/likely pathogenic variants in 84 genes (ACMG SF v3.3, 2025) when found incidentally during WES/WGS, regardless of the primary indication. These 'secondary findings' include BRCA1/2, Lynch genes, cardiac channelopathy genes, and FH genes. Patients must consent to receive or not receive secondary findings before testing."
               },
               {
                 "type": "text",
@@ -12724,13 +12552,13 @@
               },
               {
                 "type": "text",
-                "text": "Clinical decision support alerts for pharmacogenomics must be carefully designed to avoid alert fatigue \u2014 the phenomenon where clinicians override >90% of alerts, including critical ones, due to excessive irrelevant interruptions. Best practices include: tiered severity (hard stop vs. advisory), pre-emptive display in patient summary rather than only at prescription, actionable alternative recommendations, and links to the underlying evidence (CPIC guidelines)."
+                "text": "Clinical decision support alerts for pharmacogenomics must be carefully designed to avoid alert fatigue \u2014 the phenomenon where clinicians override most alerts (49–96% in a widely cited JAMIA review), including critical ones, due to excessive irrelevant interruptions. Best practices include: tiered severity (hard stop vs. advisory), pre-emptive display in patient summary rather than only at prescription, actionable alternative recommendations, and links to the underlying evidence (CPIC guidelines)."
               },
               {
                 "type": "callout",
                 "variant": "info",
                 "title": "Genomics EHR Pilots: Key Findings",
-                "body": "The IGNITE (Implementing GeNomics In pracTicE) network studied PGx CDS implementation across 7 academic medical centers. Key finding: when PGx results were pre-emptively displayed in patient summary views (before prescribing), clinicians used them appropriately 85% of the time. When alerts only fired at prescription, override rates exceeded 70%. Proactive display, not reactive alerting, drives utilization."
+                "body": "The NHGRI-funded IGNITE (Implementing GeNomics In pracTicE) network develops and tests ways to bring genomic medicine, including pharmacogenomic decision support, into routine care across multiple U.S. health systems. A recurring design lesson from PGx programs: interruptive alerts at the moment of prescribing are easily dismissed, so results should also be visible proactively — in the patient summary, before the prescribing decision."
               },
               {
                 "type": "text",
@@ -12762,7 +12590,7 @@
                     }
                   ],
                   "correctId": "b",
-                  "explanation": "Evidence from the IGNITE network shows that proactive (pre-emptive) display of PGx results in patient summary views \u2014 before the prescribing decision is made \u2014 dramatically improves appropriate utilization compared to reactive alerts at prescription time. Reactive alerts are often dismissed as interruptions; proactive display integrates genomic information into the natural clinical reasoning process."
+                  "explanation": "Making PGx results visible proactively in patient summary views \u2014 before the prescribing decision is made \u2014 is a widely recommended design practice, because reactive alerts at prescription time compete with every other interruption. Reactive alerts are often dismissed as interruptions; proactive display integrates genomic information into the natural clinical reasoning process."
                 }
               ]
             },
@@ -12809,7 +12637,7 @@
                   [
                     "Million Veteran Program (VA)",
                     "1,000,000+",
-                    "Veterans cohort; largest WGS biobank globally; linked VA EHR",
+                    "Veterans cohort; one of the largest genomic biobanks; linked VA EHR",
                     "Cardiovascular GWAS, PTSD genomics, cancer risk in veterans"
                   ],
                   [
@@ -12834,7 +12662,7 @@
                 "type": "callout",
                 "variant": "info",
                 "title": "Polygenic Risk Scores: Population \u2192 Individual Risk",
-                "body": "Polygenic Risk Scores (PRS) aggregate thousands of common variants, each with small effect, into a composite genomic risk score for complex diseases (coronary artery disease, type 2 diabetes, breast cancer). Individuals in the top 10% of PRS for CAD have a 3-fold elevated lifetime risk \u2014 comparable to rare Mendelian variants. PRS are beginning to enter clinical guidance for statin initiation and mammography scheduling."
+                "body": "Polygenic Risk Scores (PRS) aggregate thousands of common variants, each with small effect, into a composite genomic risk score for complex diseases (coronary artery disease, type 2 diabetes, breast cancer). Khera et al. (Nature Genetics, 2018) found that 8% of the population carries a polygenic score conferring at least threefold risk of coronary artery disease \u2014 comparable to rare Mendelian variants. PRS are being studied for statin and breast-screening decisions, but major guidelines do not yet recommend routine use."
               }
             ],
             "quiz": {
@@ -12892,7 +12720,7 @@
               },
               {
                 "type": "text",
-                "text": "Fear of genetic discrimination is a primary barrier to genetic testing uptake \u2014 studies show 40\u201350% of at-risk individuals decline recommended testing due to insurance or employment discrimination fears. The Genetic Information Nondiscrimination Act (GINA), enacted in 2008, provides federal protections but has critical gaps that patients and providers must understand."
+                "text": "Fear of genetic discrimination is a primary barrier to genetic testing uptake \u2014 surveys consistently find that worry about insurance or employment discrimination is among the most common reasons people give for declining or delaying recommended testing. The Genetic Information Nondiscrimination Act (GINA), enacted in 2008, provides federal protections but has critical gaps that patients and providers must understand."
               },
               {
                 "type": "comparison_table",
@@ -12930,7 +12758,7 @@
                   [
                     "State Laws",
                     "Varies by state",
-                    "Many states extend GINA to life/disability insurance; some add stronger employment protections",
+                    "Some states restrict genetic underwriting in life, disability or long-term care insurance (e.g., Florida since 2020); some add stronger employment protections",
                     "Patchwork; patients must know their state law"
                   ]
                 ]
@@ -13012,7 +12840,7 @@
                   },
                   {
                     "term": "Incidental / Secondary Findings",
-                    "definition": "Clinically significant findings unrelated to the indication for testing \u2014 ACMG SF v3.2 covers 81 actionable genes"
+                    "definition": "Clinically significant findings unrelated to the indication for testing \u2014 ACMG SF v3.3 (2025) covers 84 actionable genes"
                   },
                   {
                     "term": "Right Not to Know",
@@ -13051,7 +12879,7 @@
                 "type": "callout",
                 "variant": "warning",
                 "title": "Ancestry and Variant Classification Disparities",
-                "body": "African American patients are 3x more likely to receive a VUS result on hereditary cancer panels compared to European American patients \u2014 not because they carry more uncertain variants, but because African-ancestry variants are underrepresented in variant databases used for classification. This disparity causes inequitable clinical care: European patients get actionable results; Black patients get uncertainty."
+                "body": "African American patients receive VUS results on hereditary cancer panels at markedly higher rates than European American patients \u2014 not because they carry more uncertain variants, but because African-ancestry variants are underrepresented in variant databases used for classification. This disparity causes inequitable clinical care: European patients get actionable results; Black patients get uncertainty."
               },
               {
                 "type": "text",
@@ -13119,7 +12947,7 @@
                 "type": "key_stat",
                 "value": "~4 million",
                 "label": "US newborns screened annually",
-                "context": "NBS identifies approximately 12,500 affected infants per year across the ~35 RUSP core conditions; treatment prevents >1,000 infant deaths annually"
+                "context": "NBS identifies approximately 12,500 affected infants per year across the RUSP core conditions (38 as of December 2025)"
               },
               {
                 "type": "comparison_table",
@@ -13175,7 +13003,7 @@
                 "type": "callout",
                 "variant": "info",
                 "title": "SMA Gene Therapy: Timing Is Everything",
-                "body": "Spinal muscular atrophy (SMA) added to the RUSP in 2018, and 50 states now screen for it. Onasemnogene abeparvovec (Zolgensma) \u2014 a $2.1M single-dose gene therapy \u2014 replaces the non-functional SMN1 gene. When given before symptom onset (days to weeks of life), >90% of treated infants achieve normal motor milestones. After symptom onset, outcomes are dramatically worse. NBS makes the difference between a normal life and severe disability."
+                "body": "Spinal muscular atrophy (SMA) added to the RUSP in 2018, and 50 states now screen for it. Onasemnogene abeparvovec (Zolgensma) \u2014 a $2.1M single-dose gene therapy \u2014 replaces the non-functional SMN1 gene. When given before symptom onset, outcomes are strikingly better: in the SPR1NT trial, all 14 presymptomatic infants with two SMN2 copies sat independently (11 within the normal developmental window) and 10 walked independently. After symptom onset, outcomes are dramatically worse. NBS makes the difference between a normal life and severe disability."
               }
             ],
             "quiz": {
@@ -13228,13 +13056,13 @@
               },
               {
                 "type": "text",
-                "text": "In 2023, ACOG and ACMG jointly updated recommendations to endorse ECS over ethnicity-based screening. The updated guidance recommends offering ECS to all patients preconception or in early pregnancy as the preferred approach. Conditions included in ECS panels must meet criteria: well-defined phenotype, significant morbidity/mortality, disease frequency >1/100,000, and available treatment or reproductive options."
+                "text": "In 2021, the ACMG recommended a population-neutral, tiered approach, with Tier 3 screening (conditions with a carrier frequency of at least 1 in 200) offered to all pregnant patients and those planning pregnancy. ACOG (Committee Opinion 690, 2017) considers ethnic-specific, pan-ethnic and expanded screening all acceptable, and advises that panel conditions have a carrier frequency of 1 in 100 or greater and a serious effect on health or quality of life."
               },
               {
                 "type": "key_stat",
-                "value": "~1 in 4",
-                "label": "Couples who are both carriers of the same recessive condition when ECS is performed",
-                "context": "Among couples where both partners undergo ECS, approximately 1 in 4 are 'at-risk couples' with 25% chance of an affected pregnancy"
+                "value": "≥1 in 200",
+                "label": "Carrier-frequency threshold for ACMG Tier 3 conditions",
+                "context": "ACMG (2021) recommends Tier 3 screening for all pregnant patients and those planning pregnancy; when both partners carry the same condition, each pregnancy has a 25% chance of being affected"
               },
               {
                 "type": "concepts_grid",
@@ -13269,7 +13097,7 @@
                 "type": "callout",
                 "variant": "info",
                 "title": "ECS Access and Equity",
-                "body": "Expanded carrier screening panels cost $250\u2013$600 out of pocket when not covered by insurance. Coverage varies dramatically by insurer and state. This creates equity gaps: well-insured, educated patients access ECS; underserved populations often do not. Federally Qualified Health Centers (FQHCs) and Title X family planning programs are key access points for expanding ECS to underserved communities. Several states have mandated ECS insurance coverage."
+                "body": "Expanded carrier screening panels cost $250\u2013$600 out of pocket when not covered by insurance. Coverage varies dramatically by insurer and state. This creates equity gaps: well-insured, educated patients access ECS; underserved populations often do not. Federally Qualified Health Centers (FQHCs) and Title X family planning programs are key access points for expanding ECS to underserved communities. Coverage depends heavily on the plan and the state."
               }
             ],
             "quiz": {
@@ -14506,7 +14334,7 @@
                     "_key": "ba6cmp1r2",
                     "aspect": "FDA review required?",
                     "left": "Yes \u2014 must pass FDA 510(k) clearance or premarket approval before commercial distribution",
-                    "right": "Historically no \u2014 FDA exercised 'enforcement discretion' for decades; this changed in 2024"
+                    "right": "No \u2014 FDA exercised 'enforcement discretion' for decades; its 2024 rule asserting oversight was vacated in 2025"
                   },
                   {
                     "_key": "ba6cmp1r3",
@@ -14524,7 +14352,7 @@
                     "_key": "ba6cmp1r5",
                     "aspect": "Regulatory trajectory",
                     "left": "Stable framework; Breakthrough Device designation available to accelerate review",
-                    "right": "FDA finalized LDT rule in 2024 phasing in oversight; legal challenges ongoing as of 2026"
+                    "right": "FDA's 2024 LDT rule was vacated by a federal court in March 2025 and rescinded in September 2025; LDTs remain regulated under CLIA"
                   }
                 ]
               },
@@ -14536,7 +14364,7 @@
                   {
                     "_type": "span",
                     "_key": "ba7fda2s",
-                    "text": "For most of precision medicine's growth period, the vast majority of genomic tests used in clinical practice were LDTs \u2014 developed and run by specialized genomic laboratories without FDA review of their clinical validity claims. The FDA's decision in 2024 to finalize a rule phasing in LDT oversight over four years represents a significant regulatory shift that will reshape which tests remain available and at what cost.",
+                    "text": "For most of precision medicine's growth period, the vast majority of genomic tests used in clinical practice were LDTs \u2014 developed and run by specialized genomic laboratories without FDA review of their clinical validity claims. In 2024 the FDA finalized a rule to phase in LDT oversight over four years, but a federal court vacated it in March 2025, holding that the agency lacks authority to regulate LDTs as devices, and the FDA rescinded the rule in September 2025. LDTs therefore remain governed by CLIA, not FDA premarket review.",
                     "marks": []
                   }
                 ],
@@ -14564,7 +14392,7 @@
                   {
                     "_type": "span",
                     "_key": "bb1fda3s",
-                    "text": "For Vermont laboratories and health systems ordering genomic tests from national reference laboratories, the LDT-to-IVD regulatory transition creates both uncertainty and opportunity. Tests that laboratories have been offering for years may need to be revalidated under FDA standards. Some smaller laboratories may discontinue certain LDTs rather than bear the cost of FDA submission. Conversely, tests that survive FDA review will carry greater clinical credibility.",
+                    "text": "For Vermont laboratories and health systems ordering genomic tests from national reference laboratories, the collapse of the 2024 LDT rule means the status quo holds: most complex genomic tests are still LDTs whose clinical validity no federal agency reviews before use. Ordering clinicians therefore carry more of the burden of judging a test's evidence base, and an FDA-approved alternative, where one exists, carries an independent review that an LDT does not.",
                     "marks": []
                   }
                 ],
@@ -14606,7 +14434,7 @@
                   {
                     "_type": "span",
                     "_key": "bb4callout2s",
-                    "text": "CLIA Certificate of Accreditation: The highest CLIA certification level, required for laboratories performing high-complexity testing \u2014 which includes essentially all genomic sequencing and molecular diagnostic tests. Laboratories holding a CLIA Certificate of Accreditation must meet proficiency testing requirements, maintain documented quality management systems, and submit to unannounced inspections. Major genomic reference laboratories (including those used by Vermont hospitals) hold this certification, typically with accreditation through the College of American Pathologists (CAP).",
+                    "text": "High-complexity testing under CLIA \u2014 which includes essentially all genomic sequencing and molecular diagnostic tests \u2014 requires either a Certificate of Compliance (inspected by the state survey agency) or a Certificate of Accreditation (inspected by a CMS-approved accrediting organization). Laboratories performing high-complexity testing must meet proficiency testing requirements, maintain documented quality management systems, and submit to unannounced inspections. Major genomic reference laboratories (including those used by Vermont hospitals) hold this certification, typically with accreditation through the College of American Pathologists (CAP).",
                     "marks": []
                   }
                 ],
@@ -14710,7 +14538,7 @@
                   {
                     "_type": "span",
                     "_key": "bc3gina3s",
-                    "text": "The life and disability insurance gap is not theoretical. Patients who learn they carry high-penetrance variants \u2014 such as BRCA1/2 (elevated breast and ovarian cancer risk), APOE4 (elevated Alzheimer's risk), or Lynch syndrome variants (elevated colorectal cancer risk) \u2014 can face discrimination when applying for life insurance policies. Several documented cases exist of patients whose life insurance premiums were significantly increased or applications denied based on genomic test results.",
+                    "text": "The life and disability insurance gap is not theoretical. Patients who learn they carry risk variants \u2014 such as BRCA1/2 (elevated breast and ovarian cancer risk), Lynch syndrome variants (elevated colorectal cancer risk), or APOE4 (elevated Alzheimer's risk) \u2014 can be asked about those results when applying for life, disability, or long-term care insurance, and in most states those insurers may lawfully use them in underwriting.",
                     "marks": []
                   }
                 ],
@@ -14738,7 +14566,7 @@
                   {
                     "_type": "span",
                     "_key": "bc5gina4s",
-                    "text": "Vermont has taken steps to address GINA's gaps through state law. Vermont's genetic privacy statute (20 V.S.A. Chapter 217) extends nondiscrimination protections beyond federal minimums, and the Vermont Department of Financial Regulation has guidance restricting the use of genetic information by insurers operating in the state. Vermont's protections are among the stronger state-level frameworks in the country, though gaps in life insurance underwriting remain.",
+                    "text": "Vermont has taken steps to address GINA's gaps through state law. Vermont's genetic testing statute (18 V.S.A. §§ 9331–9335) requires written informed consent before genetic testing, limits disclosure of results without the individual's written authorization, bars the use of genetic information in employment, and prohibits insurers from conditioning coverage on a requirement to undergo genetic testing or on a family member's test results. Gaps remain in life, disability, and long-term care underwriting.",
                     "marks": []
                   }
                 ],
@@ -14844,7 +14672,7 @@
                     "_key": "bd5step1",
                     "number": 1,
                     "title": "Precision Medicine Initiative Funding ($1.455B)",
-                    "description": "The Act allocated $1.455 billion over 10 years for precision medicine research, including $1.41 billion for the Cancer Moonshot initiative and $30 million for the FDA to develop regulatory science supporting genomic medicine. This was the largest federal precision medicine investment in history at the time."
+                    "description": "The Act authorized $1.455 billion over 10 years for the Precision Medicine Initiative (now the All of Us Research Program) — separate from the $1.8 billion it provided for the Cancer Moonshot and the $500 million it provided for FDA innovation, all part of a $4.8 billion NIH and FDA innovation package."
                   },
                   {
                     "_key": "bd5step2",
@@ -14922,7 +14750,7 @@
                   {
                     "_type": "span",
                     "_key": "be1callout4s",
-                    "text": "MolDx Program: A technical assessment and coverage determination program administered by Palmetto GBA, a Medicare Administrative Contractor (MAC). MolDx evaluates the clinical validity and clinical utility of molecular and genomic diagnostic tests submitted for Medicare coverage. Labs seeking Medicare reimbursement for a new genomic test must submit a technical assessment to MolDx demonstrating analytical validity, clinical validity, and clinical utility. MolDx then issues coverage recommendations that feed into Local Coverage Determinations (LCDs) issued by the relevant MAC for each geographic region.",
+                    "text": "MolDx Program: A technical assessment and coverage determination program administered by Palmetto GBA, a Medicare Administrative Contractor (MAC). MolDx evaluates the clinical validity and clinical utility of molecular and genomic diagnostic tests submitted for Medicare coverage. Labs seeking Medicare reimbursement for a new genomic test must submit a technical assessment to MolDx demonstrating analytical validity, clinical validity, and clinical utility. MolDx then issues coverage recommendations that feed into the Local Coverage Determinations (LCDs) of the MACs that use it — Palmetto, Noridian, WPS, and CGS. Vermont's MAC, National Government Services, is not one of them.",
                     "marks": []
                   }
                 ],
@@ -14936,7 +14764,7 @@
                   {
                     "_type": "span",
                     "_key": "be2cms2s",
-                    "text": "Local Coverage Determinations (LCDs) are the primary mechanism through which Medicare coverage for specific genomic tests is established. An LCD specifies which patient populations, clinical indications, and test methodologies qualify for Medicare payment. For Vermont providers, the relevant MACs are Novitas Solutions (for Medicare Part B) and the relevant MAC jurisdiction covering New England. LCDs are publicly available and searchable on the CMS website.",
+                    "text": "Local Coverage Determinations (LCDs) are the primary mechanism through which Medicare coverage for specific genomic tests is established. An LCD specifies which patient populations, clinical indications, and test methodologies qualify for Medicare payment. For Vermont providers, the MAC is National Government Services (NGS, Jurisdiction K), which does not participate in MolDx — so Vermont coverage for molecular tests turns on NGS's own LCDs and on national coverage determinations such as NCD 90.2. LCDs are publicly available and searchable on the CMS website.",
                     "marks": []
                   }
                 ],
@@ -14950,7 +14778,7 @@
                   {
                     "_type": "span",
                     "_key": "be3cms3s",
-                    "text": "The MolDx/LCD process creates a coverage lag that can frustrate clinical adoption of promising tests. A test may be FDA-approved, clinically validated in peer-reviewed literature, and recommended by specialty society guidelines \u2014 yet still lack Medicare coverage because an LCD has not yet been issued. During this gap, Medicare beneficiaries may face out-of-pocket costs for tests their physicians believe are clinically necessary. Vermont has a higher-than-average Medicare population (approximately 20% of residents), making LCD coverage decisions especially consequential for the state.",
+                    "text": "The MolDx/LCD process creates a coverage lag that can frustrate clinical adoption of promising tests. A test may be FDA-approved, clinically validated in peer-reviewed literature, and recommended by specialty society guidelines \u2014 yet still lack Medicare coverage because an LCD has not yet been issued. During this gap, Medicare beneficiaries may face out-of-pocket costs for tests their physicians believe are clinically necessary. Vermont has a higher-than-average Medicare population (about 25% of residents), making LCD coverage decisions especially consequential for the state.",
                     "marks": []
                   }
                 ],
@@ -14963,23 +14791,17 @@
                 "stats": [
                   {
                     "_key": "be4sg2s1",
-                    "value": "$2,950",
-                    "label": "Maximum Medicare payment for comprehensive genomic profiling (CGP) in oncology",
-                    "context": "CMS established a national coverage determination for FDA-approved comprehensive genomic profiling tests in advanced cancer patients in 2022, setting payment at approximately $2,950 per test. This was a landmark coverage expansion. Source: CMS NCD 90.2.",
+                    "value": "2018",
+                    "label": "Year CMS finalized NCD 90.2 covering FDA-approved NGS tumor profiling",
+                    "context": "NCD 90.2 (March 16, 2018) covers FDA-approved or -cleared NGS companion diagnostics for Medicare beneficiaries with recurrent, relapsed, refractory, metastatic, or advanced stage III or IV cancer. Source: CMS NCD 90.2.",
                     "trend": "up"
                   },
-                  {
-                    "_key": "be4sg2s2",
-                    "value": "18\u201324 mo",
-                    "label": "Typical timeline from test commercialization to Medicare LCD",
-                    "context": "The MolDx technical assessment and LCD development process typically takes 18 to 24 months, creating a coverage gap during which new tests may lack Medicare reimbursement even if clinically validated. Source: Personalized Medicine Coalition analysis.",
-                    "trend": "neutral"
-                  },
+                  
                   {
                     "_key": "be4sg2s3",
-                    "value": "~20%",
+                    "value": "~25%",
                     "label": "Vermont residents enrolled in Medicare",
-                    "context": "Vermont's older demographic profile means that Medicare coverage determinations for genomic tests have outsized impact on statewide test access compared to states with younger populations. Source: CMS State Health Facts, 2025.",
+                    "context": "Vermont's older demographic profile means that Medicare coverage determinations for genomic tests have outsized impact on statewide test access. Source: KFF State Health Facts, 2024 (165,155 beneficiaries of 648,493 residents).",
                     "trend": "up"
                   }
                 ]
@@ -15032,8 +14854,8 @@
                 "eyebrow": "Real-World Example",
                 "title": "Foundation Medicine FoundationOne CDx \u2014 Breakthrough Device to CMS Coverage",
                 "body": "Foundation Medicine's FoundationOne CDx is a comprehensive genomic profiling test that analyzes 324 cancer-related genes simultaneously using tumor tissue. It received FDA approval as a companion diagnostic for multiple therapies across multiple cancer types in 2017 and was granted Breakthrough Device designation for additional indications. The FDA-CMS parallel review process was subsequently used to pursue national coverage determination from CMS.",
-                "outcome": "In 2022, CMS issued a National Coverage Determination (NCD 90.2) covering FDA-approved comprehensive genomic profiling tests for Medicare beneficiaries with advanced cancer, making FoundationOne CDx broadly covered for eligible patients for the first time. This NCD applies to Vermont's Medicare patients with advanced solid tumors.",
-                "source": "FDA, FoundationOne CDx approval history; CMS NCD 90.2, 2022."
+                "outcome": "In March 2018, CMS issued a National Coverage Determination (NCD 90.2) covering FDA-approved comprehensive genomic profiling tests for Medicare beneficiaries with advanced cancer, making FoundationOne CDx broadly covered for eligible patients for the first time. This NCD applies to Vermont's Medicare patients with advanced solid tumors.",
+                "source": "FDA, FoundationOne CDx approval history; CMS NCD 90.2, 2018."
               },
               {
                 "_type": "block",
@@ -15071,7 +14893,7 @@
                   {
                     "_type": "span",
                     "_key": "bf3state2s",
-                    "text": "Vermont's genetic privacy statute (18 V.S.A. \u00a7 9333 et seq.) establishes that genetic information is the property of the individual, requires written informed consent before genetic testing, prohibits disclosure of genetic information without consent, and extends nondiscrimination protections in insurance and employment beyond the federal GINA baseline. The statute applies to genetic testing performed in Vermont and to Vermont insurers, regardless of where a patient's genetic data originated.",
+                    "text": "Vermont's genetic testing statute (18 V.S.A. \u00a7\u00a7 9331\u20139335) requires prior written authorization and informed consent before genetic testing, allows results to be disclosed only with the tested individual's written authorization, prohibits the use of genetic information in employment, labor-organization membership, and professional licensure, and bars insurers from underwriting on the basis of a requirement to undergo genetic testing or a family member's results.",
                     "marks": []
                   }
                 ],
@@ -15085,7 +14907,7 @@
                   {
                     "_type": "span",
                     "_key": "bf4highlight2s",
-                    "text": "Vermont's 'genetic information as property' framing is stronger than the federal approach. Under Vermont law, patients retain a property interest in their genetic information \u2014 meaning they must affirmatively consent to its use for purposes beyond the clinical encounter for which it was generated. This has implications for biobank research, secondary use of genomic data in quality improvement programs, and any commercial use of genomic data by health systems.",
+                    "text": "Vermont's written-consent and written-authorization requirements are stronger than the federal approach: a genetic test generally cannot be performed, and its results cannot be disclosed, without the individual's written authorization. This has implications for biobank research, secondary use of genomic data in quality improvement programs, and any commercial use of genomic data by health systems.",
                     "marks": []
                   }
                 ],
@@ -15228,8 +15050,8 @@
                   {
                     "_key": "bg5step5",
                     "number": 5,
-                    "title": "2023: Data Breach and 2024: Bankruptcy Filing",
-                    "description": "A major data breach in 2023 exposed genetic and ancestry data for approximately 6.9 million 23andMe users, highlighting the catastrophic privacy risks inherent in large DTC genomic databases. In 2024, 23andMe filed for bankruptcy, raising urgent questions about the disposition of its genetic database \u2014 one of the largest private genomic collections in the world \u2014 and what privacy rights users retained over data held by a company in financial distress."
+                    "title": "2023: Data Breach and 2025: Bankruptcy Filing",
+                    "description": "A major data breach in 2023 exposed genetic and ancestry data for approximately 6.9 million 23andMe users, highlighting the catastrophic privacy risks inherent in large DTC genomic databases. In March 2025, 23andMe filed for bankruptcy, raising urgent questions about the disposition of its genetic database \u2014 one of the largest private genomic collections in the world \u2014 and what privacy rights users retained over data held by a company in financial distress."
                   }
                 ]
               },
@@ -15269,16 +15091,16 @@
                 "stats": [
                   {
                     "_key": "bh1sg3s1",
-                    "value": "26M+",
-                    "label": "Consumers who used 23andMe before its 2024 bankruptcy",
-                    "context": "23andMe built the world's largest private consumer genomic database before filing for bankruptcy in 2024, exposing tens of millions of users to data governance uncertainty. Source: 23andMe company filings, 2024.",
+                    "value": "~15M",
+                    "label": "Customers whose data 23andMe held at its 2025 bankruptcy",
+                    "context": "23andMe filed for Chapter 11 bankruptcy in March 2025 holding genetic data on roughly 15 million customers; 28 attorneys general, including Vermont's, sued to block a sale of that data without consent. Source: Vermont Attorney General, June 2025.",
                     "trend": "neutral"
                   },
                   {
                     "_key": "bh1sg3s2",
                     "value": "6.9M",
                     "label": "Users affected by 23andMe data breach (2023)",
-                    "context": "A credential-stuffing attack in 2023 exposed genetic and ancestry data for approximately 6.9 million users \u2014 roughly 26% of 23andMe's user base \u2014 in one of the largest genomic data breaches on record. Source: 23andMe SEC filing, 2023.",
+                    "context": "A credential-stuffing attack in 2023 exposed genetic and ancestry data for approximately 6.9 million users \u2014 roughly half of 23andMe's customers \u2014 in one of the largest genomic data breaches on record. Source: 23andMe SEC filings, 2023.",
                     "trend": "neutral"
                   },
                   {
@@ -15326,7 +15148,7 @@
                   {
                     "_type": "span",
                     "_key": "bh4synth2s",
-                    "text": "Stage 1 is laboratory development and CLIA certification. The laboratory designs and analytically validates the test, ensuring it accurately and reproducibly detects the genomic variants it claims to detect. CLIA certification confirms the laboratory's quality management systems meet federal standards. Stage 2 is FDA regulatory review \u2014 either as an LDT under the new LDT oversight framework or as an IVD submitted for clearance or approval. For a test paired with a specific therapy, FDA review includes companion diagnostic authorization.",
+                    "text": "Stage 1 is laboratory development and CLIA certification. The laboratory designs and analytically validates the test, ensuring it accurately and reproducibly detects the genomic variants it claims to detect. CLIA certification confirms the laboratory's quality management systems meet federal standards. Stage 2 is the FDA question \u2014 an IVD kit needs FDA clearance or approval, while a laboratory-developed test is offered under CLIA alone (the FDA's 2024 LDT rule was vacated in 2025). For a test paired with a specific therapy, FDA review includes companion diagnostic authorization.",
                     "marks": []
                   }
                 ],
@@ -15340,7 +15162,7 @@
                   {
                     "_type": "span",
                     "_key": "bh5synth3s",
-                    "text": "Stage 3 is CMS coverage determination through the MolDx program. The laboratory submits clinical validity and utility evidence to MolDx; MolDx issues a technical assessment; a Local Coverage Determination is drafted and finalized. Vermont providers can now bill Medicare for the test under specified clinical indications. Stage 4 is clinical deployment \u2014 during which HIPAA and Vermont genetic privacy law govern how results are stored, shared, and used, and GINA protections apply to prevent health insurance discrimination based on results.",
+                    "text": "Stage 3 is the Medicare coverage determination — through the MolDx program in states whose MACs use it, or through the local MAC's own LCD process elsewhere, including Vermont (NGS); a national coverage determination such as NCD 90.2 can also apply. Once coverage is in place, providers can bill Medicare for the test under the specified clinical indications. Stage 4 is clinical deployment \u2014 during which HIPAA and Vermont genetic privacy law govern how results are stored, shared, and used, and GINA protections apply to prevent health insurance discrimination based on results.",
                     "marks": []
                   }
                 ],
@@ -15364,8 +15186,8 @@
                 "_type": "knowledgeCheck",
                 "_key": "bh7kc1",
                 "question": "A Vermont oncologist wants to order a comprehensive genomic profiling test for a Medicare patient with metastatic non-small cell lung cancer. She wants to understand whether Medicare will pay for it. Which regulatory program should she consult, and what evidence would CMS need to see to cover the test?",
-                "hint": "Think about the MolDx program and what 'clinical utility' means in the CMS coverage framework.",
-                "answer": "The oncologist should consult the MolDx program's coverage determinations and the applicable Local Coverage Determination (LCD) issued by the Medicare Administrative Contractor for her region. For Medicare to cover a comprehensive genomic profiling test, MolDx must have completed a technical assessment finding that the test demonstrates: (1) analytical validity \u2014 the test accurately identifies the genomic alterations it claims to detect; (2) clinical validity \u2014 the identified alterations are associated with clinically meaningful outcomes or drug response; and (3) clinical utility \u2014 using the test's results demonstrably improves patient outcomes compared to not using the test. For FDA-approved comprehensive genomic profiling tests in advanced solid tumors, the CMS National Coverage Determination (NCD 90.2, 2022) provides coverage for Medicare beneficiaries with recurrent, relapsed, refractory, metastatic, or advanced stage IV solid tumors. If the test and indication fall within NCD 90.2's scope, coverage is available nationally. The oncologist should confirm the specific test she intends to order carries FDA approval and that the indication matches the NCD criteria."
+                "hint": "Think about national versus local coverage determinations and what 'clinical utility' means in the CMS coverage framework.",
+                "answer": "The oncologist should consult the national coverage determination for NGS tumor testing (NCD 90.2) and any Local Coverage Determination issued by National Government Services — Vermont's Medicare Administrative Contractor, which does not participate in MolDx. Outside an NCD, Medicare coverage generally requires evidence that the test demonstrates: (1) analytical validity \u2014 the test accurately identifies the genomic alterations it claims to detect; (2) clinical validity \u2014 the identified alterations are associated with clinically meaningful outcomes or drug response; and (3) clinical utility \u2014 using the test's results demonstrably improves patient outcomes compared to not using the test. For FDA-approved comprehensive genomic profiling tests in advanced solid tumors, the CMS National Coverage Determination (NCD 90.2, 2018) provides coverage for Medicare beneficiaries with recurrent, relapsed, refractory, metastatic, or advanced stage III or IV cancer. If the test and indication fall within NCD 90.2's scope, coverage is available nationally. The oncologist should confirm the specific test she intends to order carries FDA approval and that the indication matches the NCD criteria."
               },
               {
                 "_type": "knowledgeCheck",
@@ -15380,14 +15202,14 @@
                 "title": "Key Takeaways: Module 2",
                 "points": [
                   "Genomic tests operate under a fragmented regulatory framework involving FDA (test authorization), CMS (coverage and payment), HIPAA (privacy), GINA (nondiscrimination), and state law \u2014 each governing a different aspect of the same clinical encounter.",
-                  "The FDA's 2024 LDT rule phases in oversight for laboratory-developed tests, which historically operated without FDA review of clinical validity \u2014 a significant change affecting the majority of complex genomic tests used in clinical practice.",
+                  "Laboratory-developed tests \u2014 the majority of complex genomic tests \u2014 operate without FDA review of clinical validity; the FDA's 2024 rule to change that was vacated in 2025, so CLIA remains their main federal oversight.",
                   "CLIA certification ensures laboratory analytical quality but does not validate a test's clinical validity or utility \u2014 a distinction critical to evaluating whether a genomic test should be ordered.",
                   "GINA protects against genetic discrimination in health insurance and employment but explicitly does not cover life, disability, or long-term care insurance \u2014 a gap clinicians must discuss during informed consent for high-penetrance variant testing.",
                   "Genomic data cannot be meaningfully de-identified using standard HIPAA Safe Harbor methods; its inherent identifying nature requires specialized data governance approaches for research and secondary use.",
                   "The 21st Century Cures Act created the Breakthrough Device designation and real-world evidence framework, accelerating both FDA review and CMS coverage timelines for innovative genomic diagnostics.",
                   "The ACMG five-tier variant classification system is the clinical standard for reporting genomic results; Variants of Uncertain Significance (VUS) require careful patient communication and should not drive clinical action.",
                   "DTC genetic tests such as 23andMe are not equivalent to clinical-grade genomic testing \u2014 they assess a fraction of the genome, may lack clinical-grade validation, and are not subject to HIPAA if the company is not a covered entity.",
-                  "Vermont's genetic privacy statute extends state-level protections beyond federal minimums and establishes genetic information as patient property, with implications for biobank research and secondary data use.",
+                  "Vermont's genetic privacy statute extends state-level protections beyond federal minimums and requires written consent before genetic testing and written authorization before results are disclosed, with implications for biobank research and secondary data use.",
                   "The 23andMe data breach and bankruptcy underscore that genomic data governance failures have real patient consequences \u2014 and that regulatory frameworks for protecting consumer genomic data remain inadequate."
                 ]
               }

@@ -10,7 +10,7 @@ const db = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_
 const ROOT = new URL('../../', import.meta.url);
 
 const logged = new Map(); // key (doc id or slug fragment) -> {fixed, total}
-for (const f of ['docs/audits/phase7a_sources_2026-10.jsonl', 'docs/audits/phase7b_sources_2026-10.jsonl']) {
+for (const f of ['docs/audits/phase7a_sources_2026-10.jsonl', 'docs/audits/phase7b_sources_2026-10.jsonl', 'docs/audits/phase8b_sources_2026-10.jsonl'].filter(p => fs.existsSync(new URL(p, ROOT)))) {
   for (const l of fs.readFileSync(new URL(f, ROOT), 'utf8').split('\n')) {
     if (!l.trim()) continue; let d; try { d = JSON.parse(l); } catch { continue; }
     const k = String(d.doc || ''); const e = logged.get(k) || { fixed: 0, total: 0 };

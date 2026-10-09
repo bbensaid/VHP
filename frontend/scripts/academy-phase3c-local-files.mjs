@@ -11,7 +11,7 @@ const slice = src.slice(src.indexOf('const S_POD'), src.indexOf('const ROW_IDS')
 const { TX, EIGHT, ROW_TEXT, S_POD, S_AHEAD } = new Function(slice + '; return { TX, EIGHT, ROW_TEXT, S_POD, S_AHEAD };')();
 const PAIRS = [TX, EIGHT, ...Object.values(ROW_TEXT).flat()];
 const FILES = ['frontend/sanity/temp_holder/VBC_Equity.json', 'frontend/sanity/temp_holder/VBC_Clinical.json',
-  'frontend/sanity/content/Medicaid_Claude_V2.json', 'frontend/sanity/temp_holder/VBC_Fundamentals.json',
+  'frontend/sanity/content/Medicaid_Claude_V2.json', /* temp_holder/VBC_Fundamentals.json deleted 2026-10-09 (phase 8a) */
   'frontend/sanity/temp_holder/VBC_Policy.json', 'frontend/sanity/content/academy/vbc_policy.json',
   'frontend/sanity/temp_holder/VBC_Economics.json', 'frontend/sanity/temp_holder/VBC_Technology.json',
   'frontend/sanity/content/academy/vbc_economics.json', 'frontend/sanity/content/academy/vbc_technology.json',

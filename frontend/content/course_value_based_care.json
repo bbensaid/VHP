@@ -2128,11 +2128,6 @@
               "variant": "info",
               "heading": "Highest-weight measures: where plans focus",
               "body": "CMS assigns different weights to different measures — some count 3x, 4x, or 5x in the final calculation. The highest-weight measures include medication adherence for chronic conditions, care for older adults, and care transitions. Plans invest most heavily in improving these measures because the return on a star improvement is highest."
-            },
-            {
-              "type": "audio_slot",
-              "label": "Stars program director: what moves the needle",
-              "hint": "Interview a Medicare Advantage quality director about which star measures are hardest to move, what interventions have worked, and how the star program has changed plan behavior. Recommended: 8–10 minutes."
             }
           ],
           "quiz": {

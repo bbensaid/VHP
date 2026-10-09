@@ -92,7 +92,7 @@
             },
             {
               "type": "text",
-              "text": "Clinically reportable variants include those affecting disease risk (BRCA1/2 for breast/ovarian cancer), drug metabolism (CYP2D6 for codeine), or pathogen susceptibility (G6PD deficiency). The distinction between germline variants (present in every cell, heritable) and somatic variants (acquired in tumor cells, not heritable) is clinically critical."
+              "text": "Clinically reportable variants include those affecting disease risk (BRCA1/2 for breast/ovarian cancer), drug metabolism (CYP2D6 for codeine), or drug-triggered hemolysis risk (G6PD deficiency). The distinction between germline variants (present in every cell, heritable) and somatic variants (acquired in tumor cells, not heritable) is clinically critical."
             }
           ],
           "quiz": {
@@ -164,11 +164,11 @@
                 },
                 {
                   "year": "2013",
-                  "event": "Whole-genome sequencing reaches $1,000 milestone"
+                  "event": "Cost per genome falls below $10,000 (NHGRI); the $1,000 mark follows in 2014\u201315"
                 },
                 {
                   "year": "2020",
-                  "event": "FDA authorizes first direct-to-consumer BRCA test; WGS used in COVID-19 surveillance"
+                  "event": "Genomic sequencing used at scale for COVID-19 variant surveillance (the FDA had authorized the first direct-to-consumer BRCA test, 23andMe's, in 2018)"
                 },
                 {
                   "year": "2023",
@@ -176,7 +176,7 @@
                 },
                 {
                   "year": "2025",
-                  "event": "WGS under $500; clinical WGS reimbursed for rare pediatric disease in most states"
+                  "event": "WGS under $500; rapid WGS for critically ill infants covered by a growing number of state Medicaid programs"
                 }
               ]
             },
@@ -308,7 +308,7 @@
                 },
                 {
                   "term": "Newborn Screening",
-                  "definition": "Population-level dried blood spot testing for ~35 core conditions by RUSP \u2014 enables pre-symptomatic treatment"
+                  "definition": "Population-level dried blood spot testing for the 38 core conditions on the federal RUSP \u2014 enables pre-symptomatic treatment"
                 }
               ]
             },
@@ -323,9 +323,9 @@
             },
             {
               "type": "key_stat",
-              "value": "~35",
+              "value": "38",
               "label": "Conditions on the federal RUSP newborn screening panel",
-              "context": "States may screen for additional conditions; all 50 states screen for at least the 35 RUSP core conditions using dried blood spots from heel-stick sampling"
+              "context": "Core conditions as of December 2025 (HRSA); each state decides its own panel, so coverage of the RUSP varies, using dried blood spots from heel-stick sampling"
             },
             {
               "type": "callout",
@@ -335,7 +335,7 @@
             },
             {
               "type": "text",
-              "text": "Genetic counselors play an indispensable role in pre-test education (informed consent, implications for family members) and post-test interpretation. The NSGC (National Society of Genetic Counselors) and ABGC (American Board of Genetic Counseling) credential these specialists. Many states now mandate genetic counselor involvement for high-complexity results."
+              "text": "Genetic counselors play an indispensable role in pre-test education (informed consent, implications for family members) and post-test interpretation. The NSGC (National Society of Genetic Counselors) and ABGC (American Board of Genetic Counseling) credential these specialists. Some payers require genetic counseling before they will cover certain high-complexity tests."
             }
           ],
           "quiz": {
@@ -393,13 +393,13 @@
             },
             {
               "type": "text",
-              "text": "Adverse drug reactions (ADRs) cause over 100,000 deaths and 2 million hospitalizations annually in the United States. An estimated 7% of ADRs are attributable to pharmacogenomic (PGx) variation \u2014 predictable, preventable differences in how individuals metabolize and respond to medications based on genetic variants in drug-metabolizing enzymes, transporters, and targets."
+              "text": "A landmark meta-analysis (Lazarou et al., JAMA, 1998) estimated more than 2 million serious adverse drug reactions (ADRs) and over 100,000 deaths a year among hospitalized U.S. patients. Part of that burden reflects pharmacogenomic (PGx) variation \u2014 predictable, preventable differences in how individuals metabolize and respond to medications based on genetic variants in drug-metabolizing enzymes, transporters, and targets."
             },
             {
               "type": "key_stat",
-              "value": "95%",
-              "label": "Americans carry at least one actionable PGx variant",
-              "context": "CPIC (Clinical Pharmacogenomics Implementation Consortium) guidelines cover >90 drug-gene pairs; PGx affects virtually every major drug class"
+              "value": "99%",
+              "label": "Patients carrying at least one actionable PGx variant",
+              "context": "Mayo Clinic analysis of five pharmacogenes in 1,013 patients (Ji et al., Journal of Molecular Diagnostics, 2016)"
             },
             {
               "type": "heading",
@@ -453,7 +453,7 @@
               "type": "callout",
               "variant": "warning",
               "title": "Clopidogrel and CYP2C19: A High-Stakes Example",
-              "body": "Clopidogrel (Plavix) is a prodrug requiring CYP2C19 activation to its active antiplatelet metabolite. CYP2C19 poor and intermediate metabolizers (20\u201330% of patients) have reduced activation and higher rates of stent thrombosis. The FDA added a black box warning in 2010. CPIC and ACC/AHA guidelines recommend prasugrel or ticagrelor for PCI patients who are CYP2C19 poor metabolizers."
+              "body": "Clopidogrel (Plavix) is a prodrug requiring CYP2C19 activation to its active antiplatelet metabolite. CYP2C19 poor and intermediate metabolizers (20\u201330% of patients) have reduced activation and higher rates of stent thrombosis. The FDA added a black box warning in 2010. CPIC guidelines recommend prasugrel or ticagrelor, absent contraindication, for PCI patients who are CYP2C19 poor or intermediate metabolizers; ACC/AHA guidelines do not recommend routine genotyping."
             },
             {
               "type": "text",
@@ -544,7 +544,7 @@
             },
             {
               "type": "text",
-              "text": "EGFR-mutant Non-Small Cell Lung Cancer (NSCLC): EGFR exon 19 deletions and L858R point mutations (found in ~15% of NSCLC in the US, ~40% in East Asian patients) predict response to EGFR tyrosine kinase inhibitors (TKIs). Osimertinib (3rd generation) has 5-year OS of 38% vs. 18% for chemotherapy in first-line EGFR-mutant NSCLC. T790M resistance mutation, detected by liquid biopsy, predicts response to osimertinib after first/second-generation TKI progression."
+              "text": "EGFR-mutant Non-Small Cell Lung Cancer (NSCLC): EGFR exon 19 deletions and L858R point mutations (found in ~15% of NSCLC in the US, ~40% in East Asian patients) predict response to EGFR tyrosine kinase inhibitors (TKIs). In the FLAURA trial, first-line osimertinib (3rd generation) extended median overall survival to 38.6 months versus 31.8 months with first-generation EGFR TKIs (Ramalingam et al., NEJM, 2020). T790M resistance mutation, detected by liquid biopsy, predicts response to osimertinib after first/second-generation TKI progression."
             },
             {
               "type": "text",
@@ -552,15 +552,15 @@
             },
             {
               "type": "key_stat",
-              "value": "~60%",
-              "label": "Advanced melanoma patients with BRAF V600E mutation",
+              "value": "~40\u201350%",
+              "label": "Melanomas carrying a BRAF V600 mutation",
               "context": "BRAF/MEK inhibitor combinations (vemurafenib + cobimetinib; dabrafenib + trametinib) achieve ~70% response rate and have transformed metastatic melanoma prognosis"
             },
             {
               "type": "callout",
               "variant": "info",
               "title": "Tumor-Agnostic Approvals: Biomarker Over Histology",
-              "body": "FDA has granted tumor-agnostic approvals for therapies based on molecular biomarkers regardless of tumor type: pembrolizumab for MSI-H/dMMR (2017), larotrectinib for NTRK fusions (2018), entrectinib for NTRK fusions and ROS1 (2019), and selpercatinib for RET fusions (2022). This paradigm shift means the genomic test result \u2014 not the organ of origin \u2014 determines therapy eligibility."
+              "body": "FDA has granted tumor-agnostic approvals for therapies based on molecular biomarkers regardless of tumor type: pembrolizumab for MSI-H/dMMR (2017), larotrectinib for NTRK fusions (2018), entrectinib for NTRK fusions (2019), and selpercatinib for RET fusions (2022). This paradigm shift means the genomic test result \u2014 not the organ of origin \u2014 determines therapy eligibility."
             },
             {
               "type": "heading",
@@ -668,13 +668,13 @@
             },
             {
               "type": "text",
-              "text": "When a pathogenic variant is identified in a proband, first-degree relatives (parents, siblings, children) have a 50% probability of carrying the same variant. Cascade testing \u2014 systematic, variant-specific testing of at-risk relatives \u2014 is one of the highest-value interventions in medicine. A single BRCA2 proband diagnosis can trigger testing in 10\u201320 relatives, identifying carriers who can begin surveillance decades before symptom onset."
+              "text": "When a pathogenic variant is identified in a proband, first-degree relatives (parents, siblings, children) have a 50% probability of carrying the same variant. Cascade testing \u2014 systematic, variant-specific testing of at-risk relatives \u2014 is one of the highest-value interventions in medicine. A single BRCA2 proband diagnosis can open testing to parents, siblings, children and, through them, more distant relatives \u2014 identifying carriers who can begin surveillance decades before symptom onset."
             },
             {
               "type": "callout",
               "variant": "info",
               "title": "ACMG Secondary Findings: Incidental Genomic Disclosure",
-              "body": "The ACMG recommends that clinical laboratories report pathogenic/likely pathogenic variants in 81 genes (ACMG SF v3.2, 2023) when found incidentally during WES/WGS, regardless of the primary indication. These 'secondary findings' include BRCA1/2, Lynch genes, cardiac channelopathy genes, and FH genes. Patients must consent to receive or not receive secondary findings before testing."
+              "body": "The ACMG recommends that clinical laboratories report pathogenic/likely pathogenic variants in 84 genes (ACMG SF v3.3, 2025) when found incidentally during WES/WGS, regardless of the primary indication. These 'secondary findings' include BRCA1/2, Lynch genes, cardiac channelopathy genes, and FH genes. Patients must consent to receive or not receive secondary findings before testing."
             },
             {
               "type": "text",
@@ -872,13 +872,13 @@
             },
             {
               "type": "text",
-              "text": "Clinical decision support alerts for pharmacogenomics must be carefully designed to avoid alert fatigue \u2014 the phenomenon where clinicians override >90% of alerts, including critical ones, due to excessive irrelevant interruptions. Best practices include: tiered severity (hard stop vs. advisory), pre-emptive display in patient summary rather than only at prescription, actionable alternative recommendations, and links to the underlying evidence (CPIC guidelines)."
+              "text": "Clinical decision support alerts for pharmacogenomics must be carefully designed to avoid alert fatigue \u2014 the phenomenon where clinicians override most alerts (49\u201396% in a widely cited JAMIA review), including critical ones, due to excessive irrelevant interruptions. Best practices include: tiered severity (hard stop vs. advisory), pre-emptive display in patient summary rather than only at prescription, actionable alternative recommendations, and links to the underlying evidence (CPIC guidelines)."
             },
             {
               "type": "callout",
               "variant": "info",
               "title": "Genomics EHR Pilots: Key Findings",
-              "body": "The IGNITE (Implementing GeNomics In pracTicE) network studied PGx CDS implementation across 7 academic medical centers. Key finding: when PGx results were pre-emptively displayed in patient summary views (before prescribing), clinicians used them appropriately 85% of the time. When alerts only fired at prescription, override rates exceeded 70%. Proactive display, not reactive alerting, drives utilization."
+              "body": "The NHGRI-funded IGNITE (Implementing GeNomics In pracTicE) network develops and tests ways to bring genomic medicine, including pharmacogenomic decision support, into routine care across multiple U.S. health systems. A recurring design lesson from PGx programs: interruptive alerts at the moment of prescribing are easily dismissed, so results should also be visible proactively \u2014 in the patient summary, before the prescribing decision."
             },
             {
               "type": "text",
@@ -910,7 +910,7 @@
                   }
                 ],
                 "correctId": "b",
-                "explanation": "Evidence from the IGNITE network shows that proactive (pre-emptive) display of PGx results in patient summary views \u2014 before the prescribing decision is made \u2014 dramatically improves appropriate utilization compared to reactive alerts at prescription time. Reactive alerts are often dismissed as interruptions; proactive display integrates genomic information into the natural clinical reasoning process."
+                "explanation": "Making PGx results visible proactively in patient summary views \u2014 before the prescribing decision is made \u2014 is a widely recommended design practice, because reactive alerts at prescription time compete with every other interruption. Reactive alerts are often dismissed as interruptions; proactive display integrates genomic information into the natural clinical reasoning process."
               }
             ]
           },
@@ -957,7 +957,7 @@
                 [
                   "Million Veteran Program (VA)",
                   "1,000,000+",
-                  "Veterans cohort; largest WGS biobank globally; linked VA EHR",
+                  "Veterans cohort; one of the largest genomic biobanks; linked VA EHR",
                   "Cardiovascular GWAS, PTSD genomics, cancer risk in veterans"
                 ],
                 [
@@ -982,7 +982,7 @@
               "type": "callout",
               "variant": "info",
               "title": "Polygenic Risk Scores: Population \u2192 Individual Risk",
-              "body": "Polygenic Risk Scores (PRS) aggregate thousands of common variants, each with small effect, into a composite genomic risk score for complex diseases (coronary artery disease, type 2 diabetes, breast cancer). Individuals in the top 10% of PRS for CAD have a 3-fold elevated lifetime risk \u2014 comparable to rare Mendelian variants. PRS are beginning to enter clinical guidance for statin initiation and mammography scheduling."
+              "body": "Polygenic Risk Scores (PRS) aggregate thousands of common variants, each with small effect, into a composite genomic risk score for complex diseases (coronary artery disease, type 2 diabetes, breast cancer). Khera et al. (Nature Genetics, 2018) found that 8% of the population carries a polygenic score conferring at least threefold risk of coronary artery disease \u2014 comparable to rare Mendelian variants. PRS are being studied for statin and breast-screening decisions, but major guidelines do not yet recommend routine use."
             }
           ],
           "quiz": {
@@ -1040,7 +1040,7 @@
             },
             {
               "type": "text",
-              "text": "Fear of genetic discrimination is a primary barrier to genetic testing uptake \u2014 studies show 40\u201350% of at-risk individuals decline recommended testing due to insurance or employment discrimination fears. The Genetic Information Nondiscrimination Act (GINA), enacted in 2008, provides federal protections but has critical gaps that patients and providers must understand."
+              "text": "Fear of genetic discrimination is a primary barrier to genetic testing uptake \u2014 surveys consistently find that worry about insurance or employment discrimination is among the most common reasons people give for declining or delaying recommended testing. The Genetic Information Nondiscrimination Act (GINA), enacted in 2008, provides federal protections but has critical gaps that patients and providers must understand."
             },
             {
               "type": "comparison_table",
@@ -1078,7 +1078,7 @@
                 [
                   "State Laws",
                   "Varies by state",
-                  "Many states extend GINA to life/disability insurance; some add stronger employment protections",
+                  "Some states restrict genetic underwriting in life, disability or long-term care insurance (e.g., Florida since 2020); some add stronger employment protections",
                   "Patchwork; patients must know their state law"
                 ]
               ]
@@ -1160,7 +1160,7 @@
                 },
                 {
                   "term": "Incidental / Secondary Findings",
-                  "definition": "Clinically significant findings unrelated to the indication for testing \u2014 ACMG SF v3.2 covers 81 actionable genes"
+                  "definition": "Clinically significant findings unrelated to the indication for testing \u2014 ACMG SF v3.3 (2025) covers 84 actionable genes"
                 },
                 {
                   "term": "Right Not to Know",
@@ -1199,7 +1199,7 @@
               "type": "callout",
               "variant": "warning",
               "title": "Ancestry and Variant Classification Disparities",
-              "body": "African American patients are 3x more likely to receive a VUS result on hereditary cancer panels compared to European American patients \u2014 not because they carry more uncertain variants, but because African-ancestry variants are underrepresented in variant databases used for classification. This disparity causes inequitable clinical care: European patients get actionable results; Black patients get uncertainty."
+              "body": "African American patients receive VUS results on hereditary cancer panels at markedly higher rates than European American patients \u2014 not because they carry more uncertain variants, but because African-ancestry variants are underrepresented in variant databases used for classification. This disparity causes inequitable clinical care: European patients get actionable results; Black patients get uncertainty."
             },
             {
               "type": "text",
@@ -1267,7 +1267,7 @@
               "type": "key_stat",
               "value": "~4 million",
               "label": "US newborns screened annually",
-              "context": "NBS identifies approximately 12,500 affected infants per year across the ~35 RUSP core conditions; treatment prevents >1,000 infant deaths annually"
+              "context": "NBS identifies approximately 12,500 affected infants per year across the RUSP core conditions (38 as of December 2025)"
             },
             {
               "type": "comparison_table",
@@ -1323,7 +1323,7 @@
               "type": "callout",
               "variant": "info",
               "title": "SMA Gene Therapy: Timing Is Everything",
-              "body": "Spinal muscular atrophy (SMA) added to the RUSP in 2018, and 50 states now screen for it. Onasemnogene abeparvovec (Zolgensma) \u2014 a $2.1M single-dose gene therapy \u2014 replaces the non-functional SMN1 gene. When given before symptom onset (days to weeks of life), >90% of treated infants achieve normal motor milestones. After symptom onset, outcomes are dramatically worse. NBS makes the difference between a normal life and severe disability."
+              "body": "Spinal muscular atrophy (SMA) added to the RUSP in 2018, and 50 states now screen for it. Onasemnogene abeparvovec (Zolgensma) \u2014 a $2.1M single-dose gene therapy \u2014 replaces the non-functional SMN1 gene. When given before symptom onset, outcomes are strikingly better: in the SPR1NT trial, all 14 presymptomatic infants with two SMN2 copies sat independently (11 within the normal developmental window) and 10 walked independently. After symptom onset, outcomes are dramatically worse. NBS makes the difference between a normal life and severe disability."
             }
           ],
           "quiz": {
@@ -1376,13 +1376,13 @@
             },
             {
               "type": "text",
-              "text": "In 2023, ACOG and ACMG jointly updated recommendations to endorse ECS over ethnicity-based screening. The updated guidance recommends offering ECS to all patients preconception or in early pregnancy as the preferred approach. Conditions included in ECS panels must meet criteria: well-defined phenotype, significant morbidity/mortality, disease frequency >1/100,000, and available treatment or reproductive options."
+              "text": "In 2021, the ACMG recommended a population-neutral, tiered approach, with Tier 3 screening (conditions with a carrier frequency of at least 1 in 200) offered to all pregnant patients and those planning pregnancy. ACOG (Committee Opinion 690, 2017) considers ethnic-specific, pan-ethnic and expanded screening all acceptable, and advises that panel conditions have a carrier frequency of 1 in 100 or greater and a serious effect on health or quality of life."
             },
             {
               "type": "key_stat",
-              "value": "~1 in 4",
-              "label": "Couples who are both carriers of the same recessive condition when ECS is performed",
-              "context": "Among couples where both partners undergo ECS, approximately 1 in 4 are 'at-risk couples' with 25% chance of an affected pregnancy"
+              "value": "\u22651 in 200",
+              "label": "Carrier-frequency threshold for ACMG Tier 3 conditions",
+              "context": "ACMG (2021) recommends Tier 3 screening for all pregnant patients and those planning pregnancy; when both partners carry the same condition, each pregnancy has a 25% chance of being affected"
             },
             {
               "type": "concepts_grid",
@@ -1417,7 +1417,7 @@
               "type": "callout",
               "variant": "info",
               "title": "ECS Access and Equity",
-              "body": "Expanded carrier screening panels cost $250\u2013$600 out of pocket when not covered by insurance. Coverage varies dramatically by insurer and state. This creates equity gaps: well-insured, educated patients access ECS; underserved populations often do not. Federally Qualified Health Centers (FQHCs) and Title X family planning programs are key access points for expanding ECS to underserved communities. Several states have mandated ECS insurance coverage."
+              "body": "Expanded carrier screening panels cost $250\u2013$600 out of pocket when not covered by insurance. Coverage varies dramatically by insurer and state. This creates equity gaps: well-insured, educated patients access ECS; underserved populations often do not. Federally Qualified Health Centers (FQHCs) and Title X family planning programs are key access points for expanding ECS to underserved communities. Coverage depends heavily on the plan and the state."
             }
           ],
           "quiz": {

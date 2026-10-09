@@ -1,0 +1,140 @@
+{
+ "edits": [
+  {
+   "table": "quiz_options",
+   "id": "b046924f-95f1-4ab5-a19a-ade4abb3d6fd",
+   "set": {
+    "is_correct": true
+   },
+   "expect": {
+    "text": "Subpart E",
+    "is_correct": false
+   },
+   "claim": "EQRO quiz: Subpart E not marked correct",
+   "verdict": "FABRICATED",
+   "src": "eCFR Part 438 structure: EQR is Subpart E"
+  },
+  {
+   "table": "quiz_options",
+   "id": "f86b55a5-32b1-4377-b51c-10ef2dfd542f",
+   "set": {
+    "is_correct": false
+   },
+   "expect": {
+    "text": "Subpart G",
+    "is_correct": true
+   },
+   "claim": "EQRO quiz: Subpart G marked correct",
+   "verdict": "FABRICATED",
+   "src": "eCFR Part 438 structure: EQR is Subpart E"
+  },
+  {
+   "table": "quiz_options",
+   "id": "cdd88c84-61b2-401d-8868-c929ef4c7e2d",
+   "set": {
+    "text": "15 business days"
+   },
+   "expect": {
+    "text": "10 business days",
+    "is_correct": true
+   },
+   "claim": "primary care wait quiz: correct option \"10 business days\"",
+   "verdict": "FABRICATED",
+   "src": "eCFR 42 CFR 438.68(e)(1) (fetched): routine wait-time maximums MH/SUD 10, primary care 15, OB/GYN 15 business days, plus one state-selected type; no federal specialist, urgent-care, or time-distance values (states set those)"
+  },
+  {
+   "table": "quiz_options",
+   "id": "b880536b-6687-4462-b3c2-ef20060f9889",
+   "set": {
+    "is_correct": true
+   },
+   "expect": {
+    "text": "84.5%",
+    "is_correct": false
+   },
+   "claim": "MLR quiz: no option marked correct",
+   "verdict": "FABRICATED",
+   "src": "(330+8)/400 = 84.5%"
+  },
+  {
+   "table": "quiz_options",
+   "id": "2430d458-8fb1-49b6-b4d3-01f10331beb7",
+   "set": {
+    "is_correct": false
+   },
+   "expect": {
+    "text": "48 hours",
+    "is_correct": true
+   },
+   "claim": "48-hour urgent care marked correct",
+   "verdict": "FABRICATED",
+   "src": "eCFR 42 CFR 438.68(e)(1) (fetched): routine wait-time maximums MH/SUD 10, primary care 15, OB/GYN 15 business days, plus one state-selected type; no federal specialist, urgent-care, or time-distance values (states set those)"
+  },
+  {
+   "table": "quiz_options",
+   "id": "bb1f282d-7708-4a0d-886e-50b016dbc02a",
+   "set": {
+    "is_correct": true
+   },
+   "expect": {
+    "text": "10 business days",
+    "is_correct": false
+   },
+   "claim": "MH/SUD 10 business days not marked correct",
+   "verdict": "FABRICATED",
+   "src": "eCFR 42 CFR 438.68(e)(1) (fetched): routine wait-time maximums MH/SUD 10, primary care 15, OB/GYN 15 business days, plus one state-selected type; no federal specialist, urgent-care, or time-distance values (states set those)"
+  },
+  {
+   "table": "quiz_options",
+   "id": "c0638dce-f186-4cfa-8ce0-d0ae38020c45",
+   "set": {
+    "text": "Category 1"
+   },
+   "expect": {
+    "text": "Tier 1"
+   },
+   "claim": "quiz option \"Tier 1\" of a non-existent CMS VBP framework",
+   "verdict": "FABRICATED",
+   "src": "HCP-LAN APM Framework (categories 1-4); no \"CMS Medicaid VBP framework\" with tiers exists"
+  },
+  {
+   "table": "quiz_options",
+   "id": "106ac2b1-69f8-406d-a7fc-9e0d02f24caa",
+   "set": {
+    "text": "Category 2"
+   },
+   "expect": {
+    "text": "Tier 2"
+   },
+   "claim": "quiz option \"Tier 2\" of a non-existent CMS VBP framework",
+   "verdict": "FABRICATED",
+   "src": "HCP-LAN APM Framework (categories 1-4); no \"CMS Medicaid VBP framework\" with tiers exists"
+  },
+  {
+   "table": "quiz_options",
+   "id": "109dcf41-7ba9-4728-930f-7948b03b1d4b",
+   "set": {
+    "text": "Category 3"
+   },
+   "expect": {
+    "text": "Tier 3"
+   },
+   "claim": "quiz option \"Tier 3\" of a non-existent CMS VBP framework",
+   "verdict": "FABRICATED",
+   "src": "HCP-LAN APM Framework (categories 1-4); no \"CMS Medicaid VBP framework\" with tiers exists"
+  },
+  {
+   "table": "quiz_options",
+   "id": "84df801f-7658-4353-8991-0908284a8335",
+   "set": {
+    "text": "Category 4"
+   },
+   "expect": {
+    "text": "Tier 4"
+   },
+   "claim": "quiz option \"Tier 4\" of a non-existent CMS VBP framework",
+   "verdict": "FABRICATED",
+   "src": "HCP-LAN APM Framework (categories 1-4); no \"CMS Medicaid VBP framework\" with tiers exists"
+  }
+ ]
+}
