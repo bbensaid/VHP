@@ -81,12 +81,12 @@
                 {
                   "value": "2\u20134%",
                   "label": "Target operating margin",
-                  "context": "HFMA benchmark for a financially healthy hospital; below 1% signals distress"
+                  "context": "A commonly cited rule of thumb for a sustainable hospital; margins near or below zero signal distress"
                 },
                 {
-                  "value": "$1.3T",
+                  "value": "$1.5T",
                   "label": "Annual hospital spending",
-                  "context": "Total U.S. hospital expenditures, making hospitals the single largest component of healthcare spending"
+                  "context": "Total U.S. hospital care spending in 2023 (CMS National Health Expenditure data) — the single largest component of healthcare spending"
                 }
               ]
             },
@@ -128,7 +128,7 @@
               },
               {
                 "id": "q-hf-fundamentals-001-2",
-                "text": "What HFMA benchmark represents a financially healthy hospital operating margin?",
+                "text": "What operating margin range is commonly cited as a sustainable target for a hospital?",
                 "options": [
                   {
                     "id": "a",
@@ -148,7 +148,7 @@
                   }
                 ],
                 "correctId": "b",
-                "explanation": "HFMA benchmarks suggest a healthy hospital should target a 2\u20134% operating margin. Margins below 1% signal financial distress, while margins consistently above 5% may indicate underinvestment in community benefit or capital."
+                "explanation": "A 2\u20134% operating margin is a commonly cited rule of thumb for a sustainable hospital; margins near or below zero signal financial distress, because they leave nothing to reinvest in equipment, facilities, and reserves."
               },
               {
                 "id": "q-hf-fundamentals-001-3",
@@ -233,7 +233,7 @@
                 {
                   "value": "150+",
                   "label": "Days cash on hand (target)",
-                  "context": "HFMA/Moody's benchmark; hospitals below 100 days face rating pressure"
+                  "context": "A commonly cited marker of strong liquidity (strong levels run roughly 150–205 days); hospitals far below it face rating pressure"
                 },
                 {
                   "value": "50\u201360%",
@@ -251,7 +251,7 @@
               "type": "callout",
               "variant": "tip",
               "title": "Days Cash on Hand Formula",
-              "body": "Days Cash on Hand = (Cash + Short-term Investments) / (Total Operating Expenses \u2212 Depreciation) \u00d7 365\n\nThis ratio tells you how many days a hospital could operate using only its liquid reserves if all revenue stopped. Moody's considers 150+ days strong; below 100 days raises concern."
+              "body": "Days Cash on Hand = (Cash + Short-term Investments) / (Total Operating Expenses \u2212 Depreciation) \u00d7 365\n\nThis ratio tells you how many days a hospital could operate using only its liquid reserves if all revenue stopped. Roughly 150 days or more is commonly read as strong liquidity; a much thinner cushion raises concern with lenders and rating agencies."
             }
           ],
           "quiz": {
@@ -285,7 +285,7 @@
               },
               {
                 "id": "q-hf-fundamentals-002-2",
-                "text": "What is the HFMA/Moody's benchmark for days cash on hand that signals financial strength?",
+                "text": "What level of days cash on hand is commonly cited as a sign of financial strength?",
                 "options": [
                   {
                     "id": "a",
@@ -305,7 +305,7 @@
                   }
                 ],
                 "correctId": "c",
-                "explanation": "HFMA and Moody's consider 150+ days cash on hand a benchmark for financial strength. Hospitals below 100 days face increased scrutiny from rating agencies and lenders."
+                "explanation": "150+ days cash on hand is commonly cited as a sign of financial strength. Hospitals with much thinner cushions face increased scrutiny from rating agencies and lenders."
               },
               {
                 "id": "q-hf-fundamentals-002-3",
@@ -363,7 +363,7 @@
               "type": "comparison_table",
               "headers": [
                 "Ratio",
-                "HFMA Median",
+                "Illustrative Mid-Range",
                 "Strong Performance"
               ],
               "rows": [
@@ -398,7 +398,7 @@
               "type": "callout",
               "variant": "info",
               "title": "How Moody's and S&P Use These Ratios",
-              "body": "Rating agencies weigh a combination of ratios when assigning bond ratings. Moody's Aa-rated hospitals typically show operating margins above 5%, days cash on hand above 200, and debt service coverage above 4x. Hospitals in the Baa range (lowest investment grade) often show margins of 1\u20133%, days cash on hand of 80\u2013120, and coverage of 1.5\u20132.5x. A downgrade to below investment grade (Ba or lower) sharply raises borrowing costs and can trigger covenant violations."
+              "body": "Rating agencies weigh a combination of ratios when assigning bond ratings. Higher-rated (Aa-category) hospitals typically combine stronger margins, deeper cash reserves \u2014 well over 200 days \u2014 and higher debt service coverage than lower investment-grade (Baa) credits. A downgrade to below investment grade (Ba or lower) sharply raises borrowing costs and can trigger covenant violations."
             },
             {
               "type": "glossary_terms",
@@ -445,7 +445,7 @@
                   }
                 ],
                 "correctId": "c",
-                "explanation": "Operating Margin = Operating Income / Total Operating Revenue = $10M / $250M = 4.0%. This puts the hospital at the high end of the HFMA healthy range of 2\u20134%."
+                "explanation": "Operating Margin = Operating Income / Total Operating Revenue = $10M / $250M = 4.0%. This puts the hospital at the high end of the commonly cited healthy range of 2\u20134%."
               },
               {
                 "id": "q-hf-fundamentals-003-2",
@@ -493,7 +493,7 @@
                   }
                 ],
                 "correctId": "d",
-                "explanation": "Moody's Aa-rated hospitals typically demonstrate days cash on hand above 200, reflecting a very strong liquidity position. Hospitals in the Baa range (lowest investment grade) typically show 80\u2013120 days."
+                "explanation": "Aa-category hospitals typically hold well over 200 days cash on hand, reflecting a very strong liquidity position; lower investment-grade (Baa) credits hold considerably less."
               }
             ]
           },
@@ -591,7 +591,7 @@
               "type": "callout",
               "variant": "warning",
               "title": "The Medicare Advantage Shift",
-              "body": "Medicare Advantage (MA) now covers over 50% of Medicare beneficiaries and is projected to reach 60%+ by 2030. MA plans often pay closer to traditional Medicare rates but impose prior authorization requirements that add administrative burden and can result in denied claims. Hospitals with growing MA volume must monitor authorization denial rates and appeal processes closely."
+              "body": "Medicare Advantage (MA) now covers over 50% of Medicare beneficiaries and is projected to keep growing. MA plans often pay closer to traditional Medicare rates but impose prior authorization requirements that add administrative burden and can result in denied claims. Hospitals with growing MA volume must monitor authorization denial rates and appeal processes closely."
             }
           ],
           "quiz": {
@@ -846,7 +846,7 @@
             {
               "type": "text",
               "heading": "Three Types of Revenue Deductions",
-              "body": "**Contractual Adjustments** are the largest revenue deduction. When a commercial insurer agrees to pay $2,000 for a procedure billed at $8,000, the $6,000 difference is a contractual adjustment. Medicare and Medicaid create similar adjustments based on the difference between charges and their fixed payment rates.\n\n**Charity Care** is free or discounted care provided to patients who cannot afford to pay, based on a formal financial assistance policy. Nonprofit hospitals must have and publicize charity care policies to meet IRS 501(c)(3) requirements. Charity care is reported at cost (not charges) in FASB financial statements under ASC 954.\n\n**Bad Debt** is care provided to patients who were expected to pay (and were not identified as charity-eligible) but did not. It reflects collection failure rather than intentional forgiveness. Under ASC 954, hospitals estimate and record bad debt as an operating expense."
+              "body": "**Contractual Adjustments** are the largest revenue deduction. When a commercial insurer agrees to pay $2,000 for a procedure billed at $8,000, the $6,000 difference is a contractual adjustment. Medicare and Medicaid create similar adjustments based on the difference between charges and their fixed payment rates.\n\n**Charity Care** is free or discounted care provided to patients who cannot afford to pay, based on a formal financial assistance policy. Nonprofit hospitals must have and publicize charity care policies to meet IRS 501(c)(3) requirements. Charity care is reported at cost (not charges) in FASB financial statements under ASC 954.\n\n**Bad Debt** is care provided to patients who were expected to pay (and were not identified as charity-eligible) but did not. It reflects collection failure rather than intentional forgiveness. Since ASC 606 took effect (2018 for most hospitals), amounts a hospital never expected to collect at the time of service are treated as implicit price concessions that reduce revenue; only later credit losses are recorded as bad debt expense."
             },
             {
               "type": "comparison_table",
@@ -869,7 +869,7 @@
                 [
                   "Bad Debt",
                   "Unpaid balances from patients expected to pay",
-                  "Recorded as operating expense under ASC 954"
+                  "Mostly an implicit price concession under ASC 606; later credit losses expensed"
                 ]
               ]
             },
@@ -883,9 +883,9 @@
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "~$42B",
-                  "label": "Annual charity care (U.S. hospitals)",
-                  "context": "AHA estimates U.S. hospitals provided approximately $42 billion in charity care annually in recent years"
+                  "value": "$42.7B",
+                  "label": "Annual uncompensated care (U.S. hospitals, 2020)",
+                  "context": "AHA: U.S. hospitals provided $42.67 billion in uncompensated care (charity care plus bad debt, at cost) in 2020"
                 },
                 {
                   "value": "2\u20133%",
@@ -951,7 +951,7 @@
                   }
                 ],
                 "correctId": "c",
-                "explanation": "Under FASB ASC 954, charity care is reported at cost (not charges) and disclosed in the financial statement notes. It is not included in revenue since no payment is expected, making it different from bad debt which is recorded as an expense."
+                "explanation": "Under FASB ASC 954, charity care is reported at cost (not charges) and disclosed in the financial statement notes. It is not included in revenue since no payment is expected, making it different from bad debt, which under ASC 606 is mostly an implicit price concession and partly a credit-loss expense."
               },
               {
                 "id": "q-hf-revenue-003-3",
@@ -1181,14 +1181,14 @@
                   "context": "Highly variable by case complexity; reimbursement often covers costs with margin"
                 },
                 {
-                  "value": "\u2013$1,200",
+                  "value": "Often negative",
                   "label": "Typical ED visit margin",
-                  "context": "Emergency departments often lose money on a per-visit basis; volume and downstream admissions provide the rationale"
+                  "context": "Emergency departments often lose money per visit; community obligation, volume and downstream admissions provide the rationale"
                 },
                 {
-                  "value": "70%",
-                  "label": "Hospital revenues from top 3 service lines",
-                  "context": "Most hospitals generate the majority of margin from 2\u20133 high-margin clinical service lines"
+                  "value": "A few lines",
+                  "label": "Where most margin comes from",
+                  "context": "Margin is typically concentrated in a handful of procedural service lines such as cardiovascular, orthopedics and neurosciences"
                 }
               ]
             },
@@ -1348,7 +1348,7 @@
                 },
                 {
                   "term": "Time-Driven ABC (TDABC)",
-                  "definition": "A simplified ABC variant developed by Kaplan and Porter that uses time as the primary cost driver, making it practical for complex healthcare settings."
+                  "definition": "A simplified ABC variant developed by Kaplan and Anderson (and applied to health care by Kaplan and Porter) that uses time as the primary cost driver, making it practical for complex healthcare settings."
                 },
                 {
                   "term": "Physician Variation",
@@ -1364,15 +1364,15 @@
               "type": "callout",
               "variant": "tip",
               "title": "ABC and Physician Engagement",
-              "body": "ABC data is most powerful when used to facilitate physician-level conversations about practice variation. When two surgeons performing the same procedure show a 30% cost difference\u2014driven by implant choice, length of stay, and lab ordering\u2014that data creates a fact-based foundation for standardization conversations. Leading health systems like Mayo Clinic and Kaiser have used ABC to reduce cost per case by 15\u201325% in targeted surgical service lines."
+              "body": "ABC data is most powerful when used to facilitate physician-level conversations about practice variation. When two surgeons performing the same procedure show a 30% cost difference\u2014driven by implant choice, length of stay, and lab ordering\u2014that data creates a fact-based foundation for standardization conversations. Health systems that have adopted time-driven ABC report using it to target exactly these drivers in surgical service lines."
             },
             {
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "15\u201325%",
-                  "label": "Cost reduction via ABC-informed standardization",
-                  "context": "Health systems targeting physician variation with ABC data have achieved 15\u201325% cost reduction in surgical service lines"
+                  "value": "Standardization",
+                  "label": "Main lever for ABC-informed savings",
+                  "context": "ABC-informed standardization of implants, length of stay and ancillary ordering is the main lever for reducing cost per case in surgical service lines"
                 },
                 {
                   "value": "30\u201350%",
@@ -1438,7 +1438,7 @@
                   }
                 ],
                 "correctId": "b",
-                "explanation": "TDABC uses time as the primary cost driver (e.g., minutes of nursing care, minutes in OR), which is more manageable to measure than tracking every individual activity. It was developed by Kaplan and Porter specifically for healthcare applications."
+                "explanation": "TDABC uses time as the primary cost driver (e.g., minutes of nursing care, minutes in OR), which is more manageable to measure than tracking every individual activity. It was developed by Robert Kaplan and Steven Anderson and brought into health care by Kaplan and Michael Porter."
               },
               {
                 "id": "q-hf-cost-003-3",

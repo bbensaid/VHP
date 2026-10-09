@@ -1,0 +1,550 @@
+{
+ "edits": [
+  {
+   "match": {
+    "label": "Medicaid beneficiaries in managed care",
+    "value": "72%"
+   },
+   "claim": "stat: 72% in managed care as of 2023",
+   "verdict": "FABRICATED",
+   "src": "CMS 2024 Medicaid Managed Care Enrollment report (fetched PDF): 73,670,122 (84.8%) in any managed care; KFF 10 Things (fetched): MCO payments about 50% of $919B total Medicaid spending, FY2024",
+   "note": "",
+   "set": {
+    "value": "85%",
+    "context": "In 2024, 73.7 million enrollees (84.8%) received some or all of their care through a Medicaid managed care plan (CMS)"
+   }
+  },
+  {
+   "match": {
+    "label": "Annual Medicaid managed care spending",
+    "value": "$X00B+"
+   },
+   "claim": "stat value is a literal placeholder \"$X00B+\"",
+   "verdict": "FABRICATED",
+   "src": "CMS 2024 Medicaid Managed Care Enrollment report (fetched PDF): 73,670,122 (84.8%) in any managed care; KFF 10 Things (fetched): MCO payments about 50% of $919B total Medicaid spending, FY2024",
+   "note": "",
+   "set": {
+    "value": "~50%",
+    "label": "Share of Medicaid spending paid to MCOs, FY 2024",
+    "context": "About half of the $919 billion in total Medicaid spending in FY 2024 went to MCOs (KFF)"
+   }
+  },
+  {
+   "match": {
+    "label": "CMS contract review window",
+    "value": "90 days"
+   },
+   "claim": "stat: CMS has up to 90 days to review contracts",
+   "verdict": "FABRICATED",
+   "src": "42 CFR 438.3(a): submit proposed final contracts no later than 90 days before the effective date when approval is sought by then",
+   "note": "",
+   "set": {
+    "label": "Contract submission lead time",
+    "context": "States seeking CMS approval by a specific effective date must submit the proposed final contract no later than 90 days before it (42 CFR §438.3(a))"
+   }
+  },
+  {
+   "match": {
+    "label": "Typical number of MCOs per state market",
+    "value": "3–5"
+   },
+   "claim": "stat: most state programs contract with 3 to 5 MCOs",
+   "verdict": "UNVERIFIABLE",
+   "src": "New York State DOH MCO procurement review (search-indexed): largest number of states (17 of 41) contract with 3-5 MCOs; ND 1; CA 26",
+   "note": "",
+   "set": {
+    "label": "Most common number of MCOs per state",
+    "context": "The largest group of states (17 of 41 with Medicaid managed care) contract with 3 to 5 MCOs; the range runs from one (North Dakota) to 26 (California) (New York State DOH review)"
+   }
+  },
+  {
+   "match": {
+    "type": "comparison_table",
+    "headers": [
+     "Network Adequacy Standard",
+     "Primary Care",
+     "Specialty Care",
+     "Hospital"
+    ]
+   },
+   "claim": "table: federal-looking wait times (primary 10 / specialty 15 business days) and unattributed distance/ratio values",
+   "verdict": "FABRICATED",
+   "src": "eCFR 42 CFR 438.68(e)(1) (fetched): routine wait-time maximums MH/SUD 10, primary care 15, OB/GYN 15 business days, plus one state-selected type; no federal specialist, urgent-care, or time-distance values (states set those)",
+   "note": "",
+   "set": {
+    "headers": [
+     "Network Adequacy Standard (illustrative state values, except the federal wait times)",
+     "Primary Care",
+     "Specialty Care",
+     "Hospital"
+    ],
+    "rows": [
+     [
+      "Maximum Travel Distance (urban)",
+      "30 miles",
+      "75 miles",
+      "75 miles"
+     ],
+     [
+      "Maximum Travel Time (rural)",
+      "60 minutes",
+      "90 minutes",
+      "90 minutes"
+     ],
+     [
+      "Minimum Provider-to-Enrollee Ratio",
+      "1:2,000",
+      "Varies by specialty",
+      "N/A"
+     ],
+     [
+      "Appointment Wait Time (routine, federal 2024 rule)",
+      "15 business days",
+      "State-set (outpatient mental health/SUD: 10 business days)",
+      "N/A"
+     ]
+    ]
+   }
+  },
+  {
+   "match": {
+    "label": "Mandatory EQRO activities per year",
+    "value": "3"
+   },
+   "claim": "stat: three mandatory EQRO activities",
+   "verdict": "FABRICATED",
+   "src": "eCFR 42 CFR 438.358(b) (fetched): four mandatory activities; 42 CFR 438.704(b): CMP limits $25,000 or $100,000 per determination",
+   "note": "",
+   "set": {
+    "value": "4",
+    "label": "Mandatory EQR-related activities",
+    "context": "PIP validation, performance measure validation, network adequacy validation, and a compliance review within the previous three years (42 CFR §438.358(b))"
+   }
+  },
+  {
+   "match": {
+    "label": "Maximum daily civil monetary penalty",
+    "value": "$25,000/day"
+   },
+   "claim": "stat: CMP up to $25,000 per day under 438.704",
+   "verdict": "FABRICATED",
+   "src": "eCFR 42 CFR 438.358(b) (fetched): four mandatory activities; 42 CFR 438.704(b): CMP limits $25,000 or $100,000 per determination",
+   "note": "",
+   "set": {
+    "value": "$25K–$100K",
+    "label": "Civil money penalty limit per determination",
+    "context": "42 CFR §438.704 caps state civil money penalties at $25,000 or $100,000 per determination, depending on the violation (e.g., $100,000 for discriminating among enrollees by health status or misrepresenting information to CMS or the state)"
+   }
+  },
+  {
+   "match": {
+    "label": "Typical child PMPM rate",
+    "value": "$180"
+   },
+   "claim": "stat: typical child PMPM $180",
+   "verdict": "UNVERIFIABLE",
+   "src": "KFF per-enrollee spending: children $3,321, disability $20,950 per year (phase-7b ledger); no source for typical $180/$1,200 PMPM cells or a typical 3-5% trend",
+   "note": "",
+   "set": {
+    "value": "~$280/mo",
+    "label": "Medicaid spending per child enrollee",
+    "context": "About $3,321 a year per child enrollee (KFF per-enrollee spending data)"
+   }
+  },
+  {
+   "match": {
+    "label": "Typical aged/disabled adult PMPM rate",
+    "value": "$1,200+"
+   },
+   "claim": "stat: typical aged/disabled PMPM $1,200+",
+   "verdict": "UNVERIFIABLE",
+   "src": "KFF per-enrollee spending: children $3,321, disability $20,950 per year (phase-7b ledger); no source for typical $180/$1,200 PMPM cells or a typical 3-5% trend",
+   "note": "",
+   "set": {
+    "value": "~$1,750/mo",
+    "label": "Medicaid spending per enrollee with disabilities",
+    "context": "About $20,950 a year per enrollee eligible through disability (KFF per-enrollee spending data)"
+   }
+  },
+  {
+   "match": {
+    "label": "Typical annual medical trend factor",
+    "value": "3–5%"
+   },
+   "claim": "stat: typical annual medical trend 3-5%",
+   "verdict": "UNVERIFIABLE",
+   "src": "KFF per-enrollee spending: children $3,321, disability $20,950 per year (phase-7b ledger); no source for typical $180/$1,200 PMPM cells or a typical 3-5% trend",
+   "note": "",
+   "remove": true
+  },
+  {
+   "match": {
+    "label": "Federal MLR floor for Medicaid MCOs",
+    "value": "85%"
+   },
+   "claim": "stat context: MCOs must spend at least 85%",
+   "verdict": "FABRICATED",
+   "src": "42 CFR 438.4(b)(9), 438.8; Georgetown CCF March 2024 (fetched)",
+   "note": "",
+   "set": {
+    "context": "Set by the 2016 final rule: states must set rates so each plan can reasonably achieve at least 85%, and any state-mandated minimum must be at least 85%"
+   }
+  },
+  {
+   "match": {
+    "label": "Maximum administrative/profit allowance",
+    "value": "15%"
+   },
+   "claim": "stat: administrative costs and profit capped at 15%",
+   "verdict": "FABRICATED",
+   "src": "42 CFR 438.4(b)(9), 438.8; Georgetown CCF March 2024 (fetched)",
+   "note": "",
+   "set": {
+    "label": "Left for administration and profit at an 85% MLR",
+    "context": "At an 85% MLR, no more than 15% of adjusted premium revenue remains for administration and profit; federal rules do not separately cap administrative costs"
+   }
+  },
+  {
+   "match": {
+    "label": "Max wait for routine primary care",
+    "value": "10 days"
+   },
+   "claim": "stat: routine primary care within 10 days (2024 rule)",
+   "verdict": "FABRICATED",
+   "src": "eCFR 42 CFR 438.68(e)(1) (fetched): routine wait-time maximums MH/SUD 10, primary care 15, OB/GYN 15 business days, plus one state-selected type; no federal specialist, urgent-care, or time-distance values (states set those)",
+   "note": "",
+   "set": {
+    "value": "15 business days",
+    "context": "2024 Managed Care Access, Finance, and Quality rule maximum for routine primary care (adult and pediatric) appointments"
+   }
+  },
+  {
+   "match": {
+    "label": "Max wait for routine specialist care",
+    "value": "15 days"
+   },
+   "claim": "stat: routine specialist care within 15 days (2024 rule)",
+   "verdict": "FABRICATED",
+   "src": "eCFR 42 CFR 438.68(e)(1) (fetched): routine wait-time maximums MH/SUD 10, primary care 15, OB/GYN 15 business days, plus one state-selected type; no federal specialist, urgent-care, or time-distance values (states set those)",
+   "note": "",
+   "set": {
+    "label": "Max wait for routine OB/GYN care",
+    "value": "15 business days",
+    "context": "2024 rule maximum for routine OB/GYN appointments; states also set a standard for one additional provider type of their choosing"
+   }
+  },
+  {
+   "match": {
+    "label": "Max wait for urgent care",
+    "value": "48 hours"
+   },
+   "claim": "stat: urgent care within 48 hours (2024 rule)",
+   "verdict": "FABRICATED",
+   "src": "eCFR 42 CFR 438.68(e)(1) (fetched): routine wait-time maximums MH/SUD 10, primary care 15, OB/GYN 15 business days, plus one state-selected type; no federal specialist, urgent-care, or time-distance values (states set those)",
+   "note": "",
+   "set": {
+    "label": "Max wait for outpatient mental health/SUD",
+    "value": "10 business days",
+    "context": "2024 rule maximum for routine outpatient mental health and substance use disorder appointments (adult and pediatric)"
+   }
+  },
+  {
+   "match": {
+    "type": "comparison_table",
+    "headers": [
+     "Provider Type",
+     "Urban Time-Distance",
+     "Rural Time-Distance",
+     "Wait Time Standard"
+    ]
+   },
+   "claim": "table: wait column (primary 10, specialist 15 business days) and unattributed time-distance values",
+   "verdict": "FABRICATED",
+   "src": "eCFR 42 CFR 438.68(e)(1) (fetched): routine wait-time maximums MH/SUD 10, primary care 15, OB/GYN 15 business days, plus one state-selected type; no federal specialist, urgent-care, or time-distance values (states set those)",
+   "note": "",
+   "set": {
+    "headers": [
+     "Provider Type",
+     "Urban Time-Distance (example state standard)",
+     "Rural Time-Distance (example state standard)",
+     "Federal Wait Time Standard (2024 rule)"
+    ],
+    "rows": [
+     [
+      "Primary Care (Adult)",
+      "30 min / 30 mi",
+      "60 min / 60 mi",
+      "15 business days (routine)"
+     ],
+     [
+      "Primary Care (Pediatric)",
+      "30 min / 30 mi",
+      "60 min / 60 mi",
+      "15 business days (routine)"
+     ],
+     [
+      "OB/GYN",
+      "30 min / 30 mi",
+      "60 min / 60 mi",
+      "15 business days (routine)"
+     ],
+     [
+      "Behavioral Health (Outpatient)",
+      "30 min / 30 mi",
+      "60 min / 60 mi",
+      "10 business days (routine)"
+     ],
+     [
+      "Specialist",
+      "45 min / 45 mi",
+      "90 min / 90 mi",
+      "State-set (a state may choose it as its additional type)"
+     ],
+     [
+      "Hospital",
+      "45 min / 45 mi",
+      "90 min / 90 mi",
+      "N/A (ED: immediate)"
+     ]
+    ]
+   }
+  },
+  {
+   "match": {
+    "label": "Beneficiaries in MLTSS programs",
+    "value": "1.5M"
+   },
+   "claim": "stat: 1.5 million in MLTSS",
+   "verdict": "FABRICATED",
+   "src": "CMS 2024 Medicaid Managed Care Enrollment report (fetched PDF): ~1.9M MLTSS users July 1 2024; Mathematica/CMS LTSS expenditures FFY2020: $199.4B (HCBS 62.5%)",
+   "note": "",
+   "set": {
+    "value": "1.9M",
+    "context": "About 1.9 million Medicaid enrollees used LTSS through managed care as of July 1, 2024 (CMS managed care enrollment report)"
+   }
+  },
+  {
+   "match": {
+    "label": "Annual LTSS Medicaid spending",
+    "value": "$300B+"
+   },
+   "claim": "stat: LTSS $300B+ a year, largest single category of Medicaid spending",
+   "verdict": "FABRICATED",
+   "src": "CMS 2024 Medicaid Managed Care Enrollment report (fetched PDF): ~1.9M MLTSS users July 1 2024; Mathematica/CMS LTSS expenditures FFY2020: $199.4B (HCBS 62.5%)",
+   "note": "",
+   "set": {
+    "value": "$199.4B",
+    "label": "Medicaid LTSS spending, FY 2020",
+    "context": "HCBS accounted for 62.5% and institutional care 37.5% (CMS/Mathematica LTSS expenditures report)"
+   }
+  },
+  {
+   "match": {
+    "type": "comparison_table",
+    "headers": [
+     "VBP Tier",
+     "Description",
+     "Risk Level",
+     "Example"
+    ]
+   },
+   "claim": "table: \"CMS Medicaid VBP framework\" Tiers 1-4",
+   "verdict": "FABRICATED",
+   "src": "HCP-LAN APM Framework (categories 1-4); no \"CMS Medicaid VBP framework\" with tiers exists",
+   "note": "",
+   "set": {
+    "headers": [
+     "HCP-LAN Category",
+     "Description",
+     "Risk Level",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Category 2",
+      "FFS with quality bonuses/penalties",
+      "Minimal",
+      "HEDIS-tied incentive payments"
+     ],
+     [
+      "Category 3A",
+      "Shared savings (upside only)",
+      "Low",
+      "ACO shared savings without downside"
+     ],
+     [
+      "Category 3B",
+      "Shared savings/losses (two-sided)",
+      "Moderate",
+      "ACO with downside risk corridor"
+     ],
+     [
+      "Category 4",
+      "Population-based payment (e.g., full capitation to provider)",
+      "High",
+      "Global capitation to integrated system"
+     ]
+    ]
+   }
+  },
+  {
+   "match": {
+    "type": "comparison_table",
+    "headers": [
+     "State",
+     "Waiver Name",
+     "Key Innovation",
+     "Status"
+    ]
+   },
+   "claim": "table: Vermont All-Payer ACO listed as an ongoing 1115 waiver; TennCare closed enrollment",
+   "verdict": "FABRICATED",
+   "src": "Vermont All-Payer ACO Model agreement ended Dec 31 2025; OneCare Vermont wound down (Healthcare Innovation; UVM Health retrospective); Medicaid participation ran through the Global Commitment to Health 1115 waiver",
+   "note": "TennCare row text was already corrected by the string-pair spec; this sets the final rows.",
+   "set": {
+    "rows": [
+     [
+      "Arizona",
+      "AHCCCS",
+      "First statewide mandatory managed care",
+      "Ongoing since 1982"
+     ],
+     [
+      "Oregon",
+      "Oregon Health Plan",
+      "CCO global budgets, VBP",
+      "Ongoing"
+     ],
+     [
+      "Tennessee",
+      "TennCare",
+      "Statewide mandatory managed care since 1994",
+      "Ongoing"
+     ],
+     [
+      "Georgia",
+      "Georgia Pathways",
+      "Work requirements for Medicaid expansion",
+      "Active/contested"
+     ],
+     [
+      "Vermont",
+      "Global Commitment to Health (with the All-Payer ACO Model)",
+      "Multi-payer ACO model with Medicaid participation",
+      "All-Payer ACO Model ended December 2025"
+     ]
+    ]
+   }
+  },
+  {
+   "match": {
+    "id": "q-mmc-managed-care-foundations-003-1"
+   },
+   "claim": "local quiz: correctId c (Subpart G) for EQRO question",
+   "verdict": "FABRICATED",
+   "src": "eCFR Part 438 structure: EQR is Subpart E",
+   "note": "",
+   "set": {
+    "correctId": "b"
+   }
+  },
+  {
+   "match": {
+    "id": "q-mmc-procurement-contracting-002-3"
+   },
+   "claim": "local quiz: routine primary care wait option \"10 business days\" marked correct",
+   "verdict": "FABRICATED",
+   "src": "eCFR 42 CFR 438.68(e)(1) (fetched): routine wait-time maximums MH/SUD 10, primary care 15, OB/GYN 15 business days, plus one state-selected type; no federal specialist, urgent-care, or time-distance values (states set those)",
+   "note": "",
+   "set": {
+    "options": [
+     {
+      "id": "a",
+      "text": "5 business days"
+     },
+     {
+      "id": "b",
+      "text": "15 business days"
+     },
+     {
+      "id": "c",
+      "text": "30 calendar days"
+     },
+     {
+      "id": "d",
+      "text": "45 calendar days"
+     }
+    ]
+   }
+  },
+  {
+   "match": {
+    "id": "q-mmc-actuarial-rate-setting-003-1"
+   },
+   "claim": "local quiz: corrupted correctId \"bases\" (no correct answer)",
+   "verdict": "FABRICATED",
+   "src": "arithmetic: (330+8)/400 = 84.5% = option b",
+   "note": "",
+   "set": {
+    "correctId": "b"
+   }
+  },
+  {
+   "match": {
+    "id": "q-mmc-benefits-network-management-002-2"
+   },
+   "claim": "local quiz: 48-hour urgent care marked correct",
+   "verdict": "FABRICATED",
+   "src": "eCFR 42 CFR 438.68(e)(1) (fetched): routine wait-time maximums MH/SUD 10, primary care 15, OB/GYN 15 business days, plus one state-selected type; no federal specialist, urgent-care, or time-distance values (states set those)",
+   "note": "",
+   "set": {
+    "correctId": "d"
+   }
+  },
+  {
+   "match": {
+    "id": "q-mmc-value-based-medicaid-001-3"
+   },
+   "claim": "local quiz: options \"Tier 1-4\" of a non-existent CMS VBP framework",
+   "verdict": "FABRICATED",
+   "src": "HCP-LAN APM Framework (categories 1-4); no \"CMS Medicaid VBP framework\" with tiers exists",
+   "note": "",
+   "set": {
+    "options": [
+     {
+      "id": "a",
+      "text": "Category 1"
+     },
+     {
+      "id": "b",
+      "text": "Category 2"
+     },
+     {
+      "id": "c",
+      "text": "Category 3"
+     },
+     {
+      "id": "d",
+      "text": "Category 4"
+     }
+    ]
+   }
+  }
+ ],
+ "lessonIds": [
+  "5abd1ca5-642e-4e07-bf12-d001e4ef1c16",
+  "5f52b8ec-98ed-4795-a194-862449ee48ba",
+  "d364b782-f8d1-4ed4-bdc9-5c429cbae045",
+  "7dea9b4b-c3b3-471a-beb0-efdc58ebab62",
+  "445d7c79-cf76-4b39-aebf-90a5dbd3ea95",
+  "b9547cc0-b01f-4589-8c02-01b98ad730ce",
+  "b1b2c5fa-7453-4033-a917-a9a22734f155",
+  "9319601f-c19e-4bc1-977e-8a8709e0290c",
+  "b01ccd5e-1824-41c3-a85a-f66df7727cb1",
+  "70e72ac3-23eb-44a0-891c-c8545da8c1d1"
+ ],
+ "files": [
+  "frontend/content/course_medicaid_managed_care.json",
+  "frontend/content/courses_tier3.json"
+ ]
+}

@@ -1452,7 +1452,7 @@
               {
                 "type": "text",
                 "heading": "The shift to managed care",
-                "body": "In 1980, nearly all Medicaid was delivered fee-for-service: states paid providers directly for each covered service. By 2023, approximately 72% of Medicaid beneficiaries \u2014 and 55% of Medicaid spending \u2014 flows through managed care organizations (MCOs).\n\nThe shift happened for several reasons: states wanted cost predictability, MCOs promised care coordination, and federal law in the 1990s made it easier for states to mandate managed care enrollment without federal waivers."
+                "body": "In 1980, nearly all Medicaid was delivered fee-for-service: states paid providers directly for each covered service. By July 2024, about 78% of Medicaid enrollees were in comprehensive managed care organizations (MCOs) (CMS), and payments to MCOs made up about half of the $919 billion in total Medicaid spending in FY 2024 (KFF).\n\nThe shift happened for several reasons: states wanted cost predictability, MCOs promised care coordination, and federal law in the 1990s made it easier for states to mandate managed care enrollment without federal waivers."
               },
               {
                 "type": "comparison_table",
@@ -1515,14 +1515,9 @@
                   {
                     "icon": "ti-cash",
                     "title": "MLR requirements",
-                    "body": "MCOs must spend at least 85% of premium revenue on medical costs (medical loss ratio). Excess profit must be returned to the state."
+                    "body": "States must set capitation rates so each MCO can reasonably achieve a medical loss ratio of at least 85%; states may require plans that fall short to remit the difference."
                   }
                 ]
-              },
-              {
-                "type": "audio_slot",
-                "label": "MCO perspective: managing Medicaid populations",
-                "hint": "Interview a Medicaid MCO medical director or care coordinator about the realities of managing complex populations, prior authorization challenges, and value-based contracting with providers. Recommended: 8\u201310 minutes."
               }
             ],
             "quiz": {
@@ -1838,8 +1833,8 @@
               {
                 "type": "callout",
                 "variant": "warning",
-                "heading": "Work requirements: blocked by the courts",
-                "body": "Several Republican administrations approved 1115 waivers requiring Medicaid enrollees to document work, volunteering, or job training to maintain coverage. Courts repeatedly struck these down, ruling that work requirements do not promote Medicaid's objective of providing health coverage \u2014 they undermine it by causing coverage loss. The legal and policy debate continues."
+                "heading": "Work requirements: from the courts to federal law",
+                "body": "The first Trump administration approved 1115 waivers requiring some Medicaid enrollees to document work, volunteering, or job training to keep coverage. Federal courts set several approvals aside \u2014 in Gresham v. Azar (D.C. Cir., 2020) the court held that HHS had failed to weigh the waivers' effect on coverage, Medicaid's central objective. In July 2025, Congress put community-engagement requirements for expansion adults into federal law (P.L. 119-21), taking effect January 1, 2027."
               },
               {
                 "type": "concepts_grid",
@@ -1863,7 +1858,7 @@
                   {
                     "icon": "ti-briefcase",
                     "title": "Work requirements",
-                    "body": "Require documentation of employment or community engagement \u2014 legally contested and often blocked."
+                    "body": "Require documentation of employment or community engagement \u2014 contested in court, then written into federal law for expansion adults in 2025."
                   },
                   {
                     "icon": "ti-home",
@@ -1966,8 +1961,8 @@
                     "source": "KFF"
                   },
                   {
-                    "value": "$1,300",
-                    "label": "Average daily cost of nursing facility care vs. ~$200 for home care",
+                    "value": "$127,750",
+                    "label": "Median annual cost of a private nursing home room, 2024 (home health aide: $77,792)",
                     "source": "Genworth"
                   },
                   {
@@ -1986,7 +1981,7 @@
                 "type": "callout",
                 "variant": "tip",
                 "heading": "Money follows the person",
-                "body": "'Money Follows the Person' (MFP) is a CMS demonstration program that helps people transition from nursing facilities back to community settings. When someone leaves a nursing facility for home care, their Medicaid funding moves with them. Vermont has been a national leader in this model."
+                "body": "'Money Follows the Person' (MFP) is a CMS demonstration program that helps people transition from nursing facilities back to community settings. When someone leaves a nursing facility for home care, their Medicaid funding moves with them."
               }
             ],
             "quiz": {
@@ -2194,7 +2189,7 @@
               {
                 "type": "text",
                 "heading": "The quality measurement challenge",
-                "body": "Medicaid serves populations with significant health complexity \u2014 high rates of chronic conditions, behavioral health needs, social determinants challenges, and limited prior access to care. Measuring quality in this context requires measures that account for acuity and capture what matters to enrollees.\n\nCMS requires states to collect and report standardized quality data through the Medicaid and CHIP Quality Improvement Program (Medicaid managed care rules) and state reporting to CMS's Transformed Medicaid Statistical Information System (T-MSIS)."
+                "body": "Medicaid serves populations with significant health complexity \u2014 high rates of chronic conditions, behavioral health needs, social determinants challenges, and limited prior access to care. Measuring quality in this context requires measures that account for acuity and capture what matters to enrollees.\n\nCMS requires states to collect and report standardized quality data through the managed care quality rules (42 CFR Part 438, including annual external quality review), the Adult and Child Core Sets (mandatory for the Child Core Set and adult behavioral health measures since 2024), and state data submissions to CMS's Transformed Medicaid Statistical Information System (T-MSIS)."
               },
               {
                 "type": "concepts_grid",
@@ -2236,12 +2231,7 @@
                 "type": "callout",
                 "variant": "info",
                 "heading": "Value-based payment in Medicaid managed care",
-                "body": "CMS increasingly pushes states to include value-based payment (VBP) requirements in MCO contracts. Under VBP, MCOs pass some financial risk to providers \u2014 paying primary care practices based on quality and outcomes rather than pure volume. Vermont's OneCare model is a leading example of provider-level VBP within a Medicaid context."
-              },
-              {
-                "type": "audio_slot",
-                "label": "Quality director perspective: measuring what matters",
-                "hint": "Interview a Medicaid MCO or state quality director about the practical challenges of quality measurement \u2014 data gaps, attribution, adjusting for social determinants. Recommended: 6\u20138 minutes."
+                "body": "CMS increasingly pushes states to include value-based payment (VBP) requirements in MCO contracts. Under VBP, MCOs pass some financial risk to providers \u2014 paying primary care practices based on quality and outcomes rather than pure volume."
               }
             ],
             "quiz": {
@@ -4862,12 +4852,6 @@
                     "marks": []
                   }
                 ]
-              },
-              {
-                "_key": "blk036",
-                "_type": "image",
-                "caption": "A three-panel economic visualization for value-based care. The left panel shows a waterfall chart illustrating the volume-to-value transition financial model over five years, with fee-for-service revenue declining in a stepped pattern as care management reduces utilization, shared savings revenue growing from year two onward, and net financial position crossing from negative to positive at year three. The center panel shows the ROI comparison across six care management intervention types as a horizontal bar chart, sorted by ROI ratio, with investment cost and savings bars color-coded in contrasting colors. The right panel shows a scatter plot of 200 MSSP ACOs with years of participation on the x-axis and net savings per beneficiary on the y-axis, illustrating the maturity curve with a regression line showing the inflection point at year three to four of participation. Data source: CMS MSSP Financial and Quality Results 2024.",
-                "alt": "Three-panel economic visualization showing the volume-to-value financial transition model, care management intervention ROI comparison, and MSSP ACO savings maturity curve over years of participation."
               }
             ]
           }
@@ -5838,11 +5822,6 @@
                 "variant": "info",
                 "heading": "Highest-weight measures: where plans focus",
                 "body": "CMS assigns different weights to different measures \u2014 some count 3x, 4x, or 5x in the final calculation. The highest-weight measures include medication adherence for chronic conditions, care for older adults, and care transitions. Plans invest most heavily in improving these measures because the return on a star improvement is highest."
-              },
-              {
-                "type": "audio_slot",
-                "label": "Stars program director: what moves the needle",
-                "hint": "Interview a Medicare Advantage quality director about which star measures are hardest to move, what interventions have worked, and how the star program has changed plan behavior. Recommended: 8\u201310 minutes."
               }
             ],
             "quiz": {
@@ -8574,12 +8553,6 @@
                     "marks": []
                   }
                 ]
-              },
-              {
-                "_key": "blk044",
-                "_type": "image",
-                "caption": "A two-panel policy architecture diagram for U.S. value-based care. The left panel shows the federal policy stack as a vertical hierarchy: Congress at the top (MACRA, ACA Section 3021), then CMS, then CMMI, then individual model types (ACOs, bundles, capitation, AHEAD), with arrows showing authority flow and legal waivers annotated at each level. The right panel shows the state-federal Medicaid relationship as a Venn diagram with the federal minimum standards circle, the state flexibility circle, and Section 1115 and 1915 waiver authority shown as the overlap zone where VBC Medicaid innovation occurs. Key programs are labeled within each zone.",
-                "alt": "Federal and state policy architecture diagram showing the legal and regulatory structure enabling value-based care in the United States, from Congressional authorization through CMMI model design to state Medicaid waiver programs."
               }
             ],
             "tags": []
@@ -9109,12 +9082,6 @@
                     "marks": []
                   }
                 ]
-              },
-              {
-                "_key": "blk039",
-                "_type": "image",
-                "caption": "A three-layer technology architecture diagram for value-based care, designed as a pyramid. The foundation layer (EHR and structured data capture) is shown in blue at the base, with icons representing certified EHR systems, FHIR API connectivity, and standardized clinical coding. The middle layer (HIE and data exchange) is shown in green, with icons representing state HIE connections, ADT alert feeds, TEFCA QHIN connectivity, and bidirectional data flows between hospitals, physicians, pharmacies, and post-acute facilities. The top layer (analytics and intelligence) is shown in purple, with icons representing population health platforms, AI risk stratification models, care gap dashboards, and care coordinator workflow tools. Red annotations on each layer indicate the specific percentage of rural CAHs that lack that capability, based on the capability gap table data from this module.",
-                "alt": "Three-layer pyramid diagram showing the technology infrastructure required for value-based care, from EHR data foundation through health information exchange to AI-powered population health analytics, with rural capability gap annotations."
               }
             ],
             "tags": []

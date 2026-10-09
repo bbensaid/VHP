@@ -1,0 +1,100 @@
+{
+ "pairs": [
+  {
+   "old": "By 2023, approximately 72% of Medicaid beneficiaries \u2014 and 55% of Medicaid spending \u2014 flows through managed care organizations (MCOs).",
+   "new": "By July 2024, about 78% of Medicaid enrollees were in comprehensive managed care organizations (MCOs) (CMS), and payments to MCOs made up about 52% of total Medicaid spending in FY 2023 (KFF).",
+   "claim": "By 2023 ~72% of beneficiaries and 55% of spending flow through MCOs",
+   "verdict": "FABRICATED",
+   "src": "CMS 2024 Medicaid Managed Care Enrollment report (fetched PDF): 78.2% in comprehensive MCOs; KFF: MCO payments ~52% of total Medicaid spending FY2023",
+   "note": "Fallback (Supabase content_blocks) of medicaid-managed-care-organizations."
+  },
+  {
+   "old": "MCOs must spend at least 85% of premium revenue on medical costs (medical loss ratio). Excess profit must be returned to the state.",
+   "new": "States must set capitation rates so each MCO can reasonably achieve a medical loss ratio of at least 85%; states may require plans that fall short to remit the difference.",
+   "claim": "MCOs must spend 85%; excess profit must be returned to the state",
+   "verdict": "FABRICATED",
+   "src": "42 CFR 438.4(b)(9) and 438.8 (85% MLR standard for rate setting; remittance is a state option per 438.8(j)); MACPAC MLR issue brief Jan 2022",
+   "note": "Fallback of medicaid-managed-care-organizations."
+  },
+  {
+   "old": "Several Republican administrations approved 1115 waivers requiring Medicaid enrollees to document work, volunteering, or job training to maintain coverage. Courts repeatedly struck these down, ruling that work requirements do not promote Medicaid's objective of providing health coverage \u2014 they undermine it by causing coverage loss. The legal and policy debate continues.",
+   "new": "The first Trump administration approved 1115 waivers requiring some Medicaid enrollees to document work, volunteering, or job training to keep coverage. Federal courts set several approvals aside \u2014 in Gresham v. Azar (D.C. Cir., 2020) the court held that HHS had failed to weigh the waivers' effect on coverage, Medicaid's central objective. In July 2025, Congress put community-engagement requirements for expansion adults into federal law (P.L. 119-21), taking effect January 1, 2027.",
+   "claim": "Several Republican administrations approved work requirements; courts repeatedly struck them down; debate continues (stale: omits 2025 statute)",
+   "verdict": "FABRICATED",
+   "src": "Gresham v. Azar, 950 F.3d 93 (D.C. Cir. 2020); P.L. 119-21 signed July 4, 2025 (NACo, CRS R48755): community engagement for expansion adults 19-64 from Jan 1, 2027",
+   "note": "Fallback of medicaid-1115-waivers."
+  },
+  {
+   "old": "Work requirements: blocked by the courts",
+   "new": "Work requirements: from the courts to federal law",
+   "claim": "heading 'blocked by the courts' (stale)",
+   "verdict": "FABRICATED",
+   "src": "P.L. 119-21 (July 4, 2025)",
+   "note": "Fallback of medicaid-1115-waivers."
+  },
+  {
+   "old": "Require documentation of employment or community engagement \u2014 legally contested and often blocked.",
+   "new": "Require documentation of employment or community engagement \u2014 contested in court, then written into federal law for expansion adults in 2025.",
+   "claim": "work requirements 'legally contested and often blocked' (stale)",
+   "verdict": "FABRICATED",
+   "src": "P.L. 119-21",
+   "note": "Fallback of medicaid-1115-waivers."
+  },
+  {
+   "old": "Average daily cost of nursing facility care vs. ~$200 for home care",
+   "new": "Median annual cost of a private nursing home room, 2024 (home health aide: $77,792)",
+   "claim": "stat: $1,300 average daily cost of nursing facility care vs ~$200 home care (Genworth)",
+   "verdict": "FABRICATED",
+   "src": "Genworth/CareScout 2024 Cost of Care Survey press release (investor.genworth.com): nursing home private room national median $127,750/year; home health aide $77,792/year",
+   "note": "Fallback of medicaid-hcbs-waivers."
+  },
+  {
+   "old": "$1,300",
+   "new": "$127,750",
+   "claim": "stat value $1,300/day (Genworth)",
+   "verdict": "FABRICATED",
+   "src": "Genworth/CareScout 2024 Cost of Care Survey press release (investor.genworth.com): nursing home private room national median $127,750/year; home health aide $77,792/year",
+   "note": "Fallback of medicaid-hcbs-waivers (value of the same stat)."
+  },
+  {
+   "old": " Vermont has been a national leader in this model.",
+   "new": "",
+   "claim": "Vermont has been a national leader in the Money Follows the Person model",
+   "verdict": "UNVERIFIABLE",
+   "src": "No source found ranking Vermont as an MFP leader; CMS MFP program page describes the demonstration only",
+   "note": "Fallback of medicaid-hcbs-waivers; general MFP description kept."
+  },
+  {
+   "old": "CMS requires states to collect and report standardized quality data through the Medicaid and CHIP Quality Improvement Program (Medicaid managed care rules) and state reporting to CMS's Transformed Medicaid Statistical Information System (T-MSIS).",
+   "new": "CMS requires states to collect and report standardized quality data through the managed care quality rules (42 CFR Part 438, including annual external quality review), the Adult and Child Core Sets (mandatory for the Child Core Set and adult behavioral health measures since 2024), and state data submissions to CMS's Transformed Medicaid Statistical Information System (T-MSIS).",
+   "claim": "'Medicaid and CHIP Quality Improvement Program' (no program by that name)",
+   "verdict": "FABRICATED",
+   "src": "42 CFR Part 438 subpart E; Federal Register 2023-18669 (mandatory Core Set reporting from 2024); medicaid.gov T-MSIS",
+   "note": "Fallback of medicaid-quality-measures."
+  },
+  {
+   "old": " Vermont's OneCare model is a leading example of provider-level VBP within a Medicaid context.",
+   "new": "",
+   "claim": "Vermont's OneCare model is a leading example of provider-level VBP in Medicaid",
+   "verdict": "FABRICATED",
+   "src": "Repo-verified OneCare record (memory project_ch1_onecare_correction; book Ch1 'The OneCare Failure'): OneCare's results were contested and it wound down \u2014 not a 'leading example'",
+   "note": "Fallback of medicaid-quality-measures; general VBP point kept."
+  }
+ ],
+ "supa": [
+  {
+   "table": "lessons",
+   "col": "content_blocks",
+   "ids": [
+    "933671b6-3696-4c5c-9a1d-79820679c1e1",
+    "97d6099c-ae8f-45cd-b836-cf1a7b3296be",
+    "e7e973a4-9924-4f20-8f17-9258ad5037c5",
+    "d2b1dd6b-0b0e-4d92-b4a2-345963cd6e25"
+   ]
+  }
+ ],
+ "files": [
+  "frontend/content/course_medicaid_101.json",
+  "frontend/content/courses_tier1.json"
+ ]
+}

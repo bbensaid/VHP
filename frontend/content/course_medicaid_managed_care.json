@@ -53,9 +53,9 @@
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "72%",
+                  "value": "85%",
                   "label": "Medicaid beneficiaries in managed care",
-                  "context": "As of 2023, approximately 72% of all Medicaid enrollees are in some form of managed care arrangement"
+                  "context": "In 2024, 73.7 million enrollees (84.8%) received some or all of their care through a Medicaid managed care plan (CMS)"
                 },
                 {
                   "value": "1982",
@@ -63,9 +63,9 @@
                   "context": "Arizona's AHCCCS program pioneered mandatory statewide Medicaid managed care"
                 },
                 {
-                  "value": "$X00B+",
-                  "label": "Annual Medicaid managed care spending",
-                  "context": "Federal and state Medicaid managed care expenditures exceed hundreds of billions annually"
+                  "value": "~50%",
+                  "label": "Share of Medicaid spending paid to MCOs, FY 2024",
+                  "context": "About half of the $919 billion in total Medicaid spending in FY 2024 went to MCOs (KFF)"
                 }
               ]
             },
@@ -73,7 +73,7 @@
               "type": "callout",
               "variant": "info",
               "title": "Section 1915(b): The Freedom-of-Choice Waiver",
-              "body": "Most states use Section 1915(b) waivers to mandate managed care enrollment. These waivers allow states to restrict beneficiary choice of provider by requiring enrollment in a contracted MCO. CMS approves them for two-year renewable periods. States may also use Section 1115 demonstration waivers for broader delivery system innovations."
+              "body": "Many states use Section 1915(b) waivers to mandate managed care enrollment (others use the Section 1932(a) state plan option created by the Balanced Budget Act of 1997, or Section 1115). These waivers allow states to restrict beneficiary choice of provider by requiring enrollment in a contracted MCO. CMS approves them for two-year renewable periods. States may also use Section 1115 demonstration waivers for broader delivery system innovations."
             },
             {
               "type": "concepts_grid",
@@ -128,7 +128,7 @@
               },
               {
                 "id": "q-mmc-managed-care-foundations-001-2",
-                "text": "What federal authority do most states use to mandate Medicaid managed care enrollment?",
+                "text": "Which federal waiver authority lets states mandate Medicaid managed care enrollment by waiving freedom-of-choice requirements?",
                 "options": [
                   {
                     "id": "a",
@@ -241,18 +241,18 @@
             {
               "type": "text",
               "heading": "Fully Capitated MCOs",
-              "body": "The dominant model in Medicaid, fully capitated MCOs receive a fixed PMPM payment and assume responsibility for all covered services. Commercial insurers (Centene, Molina, UnitedHealthcare Community Plan, Anthem) and non-profit plans (UPMC, WellCare, local CCOs) compete for state contracts. MCOs must meet network adequacy standards, file encounter data, and meet quality benchmarks.\n\nStates like Texas, Florida, and Ohio run large multi-plan MCO markets. Ohio's Medicaid managed care program, for example, contracts with five MCOs covering over 3 million beneficiaries across the state."
+              "body": "The dominant model in Medicaid, fully capitated MCOs receive a fixed PMPM payment and assume responsibility for all covered services. Commercial insurers (Centene, Molina, UnitedHealthcare Community Plan, Anthem) and non-profit plans (such as UPMC for You, CareSource, and Oregon's local CCOs) compete for state contracts. MCOs must meet network adequacy standards, file encounter data, and meet quality benchmarks.\n\nStates like Texas, Florida, and Ohio run large multi-plan MCO markets. Ohio's Next Generation managed care program, launched in February 2023, for example, contracts with seven MCOs serving more than 3 million members."
             },
             {
               "type": "text",
               "heading": "Primary Care Case Management (PCCM)",
-              "body": "PCCM programs pay primary care providers a small monthly case management fee (typically $2\u2013$7 PMPM) on top of FFS payments to coordinate care. The state retains financial risk. North Carolina's Community Care of North Carolina (CCNC) was a nationally recognized PCCM model before the state transitioned to MCOs.\n\nPCCM is increasingly rare but remains relevant in states with limited MCO market interest, particularly rural areas where insufficient enrollment density makes capitation financially unviable for commercial insurers."
+              "body": "PCCM programs pay primary care providers a small monthly case management fee (typically a few dollars PMPM) on top of FFS payments to coordinate care. The state retains financial risk. North Carolina's Community Care of North Carolina (CCNC) was a nationally recognized PCCM model before the state transitioned to MCOs.\n\nPCCM is increasingly rare but remains relevant in states with limited MCO market interest, particularly rural areas where insufficient enrollment density makes capitation financially unviable for commercial insurers."
             },
             {
               "type": "callout",
               "variant": "tip",
               "title": "ACOs in Medicaid Context",
-              "body": "Medicaid ACOs differ from Medicare ACOs. They typically operate under Section 1115 waivers and may involve shared savings without full capitation. Oregon's Coordinated Care Organizations (CCOs) and Vermont's All-Payer ACO Model represent hybrid approaches where provider-led entities take on population-level accountability with global budget caps."
+              "body": "Medicaid ACOs differ from Medicare ACOs. They typically operate under Section 1115 waivers and may involve shared savings without full capitation. Oregon's Coordinated Care Organizations (CCOs), which operate under global budgets, and Vermont's All-Payer ACO Model (2017\u20132025) are hybrid approaches where provider-led entities take on population-level accountability."
             }
           ],
           "quiz": {
@@ -358,13 +358,13 @@
             {
               "type": "text",
               "heading": "42 CFR Part 438: The Regulatory Backbone",
-              "body": "Title 42, Code of Federal Regulations, Part 438 is the primary federal regulatory framework for Medicaid managed care. First substantially revised in 2002 and comprehensively overhauled in 2016, it governs how states structure, procure, and oversee managed care contracts.\n\n**Key Subparts:**\n- **Subpart A** \u2014 General provisions, definitions (MCO, PAHP, PIHP, PCCM)\n- **Subpart B** \u2014 State responsibilities: contract requirements, actuarial soundness\n- **Subpart C** \u2014 Enrollee rights and protections, marketing standards\n- **Subpart D** \u2014 Access and availability: network adequacy, timely access\n- **Subpart E** \u2014 Quality measurement and improvement (QAP requirements)\n- **Subpart F** \u2014 Grievance and appeal systems\n- **Subpart G** \u2014 External Quality Review (EQRO requirements)\n- **Subpart H** \u2014 Payments: actuarial soundness, MLR, risk corridors"
+              "body": "Title 42, Code of Federal Regulations, Part 438 is the primary federal regulatory framework for Medicaid managed care. First issued in 2002 to implement the Balanced Budget Act of 1997, and comprehensively overhauled in 2016, it governs how states structure, procure, and oversee managed care contracts.\n\n**Key Subparts:**\n- **Subpart A** \u2014 General provisions: definitions, standard contract requirements (\u00a7438.3), actuarially sound rates (\u00a7\u00a7438.4\u2013438.7), medical loss ratio (\u00a7438.8)\n- **Subpart B** \u2014 State responsibilities: enrollment and choice, state monitoring (\u00a7438.66), network adequacy standards (\u00a7438.68), MLR reporting (\u00a7438.74)\n- **Subpart C** \u2014 Enrollee rights and protections, marketing standards\n- **Subpart D** \u2014 MCO, PIHP and PAHP standards: availability of services, care coordination, coverage and authorization, provider selection\n- **Subpart E** \u2014 Quality measurement and improvement; External Quality Review (\u00a7\u00a7438.310\u2013438.370)\n- **Subpart F** \u2014 Grievance and appeal system\n- **Subpart G** \u2014 Medicaid managed care quality rating system (added 2024)\n- **Subpart H** \u2014 Additional program integrity safeguards"
             },
             {
               "type": "callout",
               "variant": "key",
               "title": "The 2016 Final Rule: Modernizing Managed Care Oversight",
-              "body": "CMS's 2016 Medicaid managed care final rule (81 FR 27498) was the most comprehensive update since 2002. Key provisions included: mandatory Medical Loss Ratio (MLR) floor of 85% for MCOs; new network adequacy standards with time and distance requirements; enhanced enrollee protections; strengthened EQRO requirements; and new encounter data reporting mandates. The 2024 Access rule further strengthened network adequacy and added new appointment wait time standards."
+              "body": "CMS's 2016 Medicaid managed care final rule (81 FR 27498) was the most comprehensive update since 2002. Key provisions included: an 85% medical loss ratio (MLR) standard for setting capitation rates; new network adequacy standards with time and distance requirements; enhanced enrollee protections; strengthened EQRO requirements; and new encounter data reporting mandates. The 2024 Access rule further strengthened network adequacy and added new appointment wait time standards."
             },
             {
               "type": "glossary_terms",
@@ -453,8 +453,8 @@
                     "text": "Subpart H"
                   }
                 ],
-                "correctId": "c",
-                "explanation": "Subpart G of 42 CFR Part 438 (\u00a7\u00a7438.350\u2013370) governs External Quality Review, including EQRO qualifications, mandatory activities, and state reporting requirements."
+                "correctId": "b",
+                "explanation": "Subpart E of 42 CFR Part 438 (\"Quality Measurement and Improvement; External Quality Review\") contains the EQR rules at \u00a7\u00a7438.350\u2013438.370, including EQRO qualifications and mandatory activities. Subpart G, added in 2024, is the Medicaid managed care quality rating system."
               },
               {
                 "id": "q-mmc-managed-care-foundations-003-2",
@@ -502,7 +502,7 @@
                   }
                 ],
                 "correctId": "c",
-                "explanation": "The 2016 final rule established an 85% MLR floor for Medicaid MCOs, meaning at least 85 cents of every premium dollar must be spent on clinical services and quality improvement."
+                "explanation": "The 2016 final rule set an 85% MLR standard: states must set capitation rates so each plan can reasonably achieve an MLR of at least 85% \u2014 at least 85 cents of each premium dollar going to claims, quality improvement, and fraud prevention."
               }
             ]
           },
@@ -539,7 +539,7 @@
             {
               "type": "text",
               "heading": "The Competitive Procurement Process",
-              "body": "States procure Medicaid MCO contracts through formal competitive procurement, typically a Request for Proposals (RFP). The process must comply with federal procurement standards at 42 CFR \u00a7438.3 and state procurement law. CMS must review and approve contracts before they take effect.\n\n**Typical RFP Timeline:**\n1. **Planning Phase** (6\u201312 months pre-RFP): State defines service regions, populations, benefit packages, and contract terms\n2. **RFP Release**: Public posting with 60\u201390 day response window; bidder conferences and Q&A\n3. **Proposal Evaluation**: Scored by technical review panels \u2014 often includes site visits and oral presentations\n4. **Negotiation and Award**: State negotiates final contract terms; losers may protest\n5. **CMS Review**: State submits executed contract; CMS has 90 days to review\n6. **Implementation**: Enrollment transition, readiness review, go-live"
+              "body": "States procure Medicaid MCO contracts through formal competitive procurement, typically a Request for Proposals (RFP). The process must follow state procurement law, and the resulting contract must meet the federal contract requirements at 42 CFR \u00a7438.3. CMS must review and approve the contract \u2014 a precondition for federal matching of capitation payments.\n\n**Typical RFP Timeline:**\n1. **Planning Phase** (6\u201312 months pre-RFP): State defines service regions, populations, benefit packages, and contract terms\n2. **RFP Release**: Public posting with 60\u201390 day response window; bidder conferences and Q&A\n3. **Proposal Evaluation**: Scored by technical review panels \u2014 often includes site visits and oral presentations\n4. **Negotiation and Award**: State negotiates final contract terms; losers may protest\n5. **CMS Review**: State submits the proposed final contract to CMS \u2014 no later than 90 days before the effective date if approval is needed by then (42 CFR \u00a7438.3(a))\n6. **Implementation**: Enrollment transition, readiness review, go-live"
             },
             {
               "type": "callout",
@@ -573,13 +573,13 @@
               "stats": [
                 {
                   "value": "90 days",
-                  "label": "CMS contract review window",
-                  "context": "CMS has up to 90 days to review and approve submitted Medicaid managed care contracts"
+                  "label": "Contract submission lead time",
+                  "context": "States seeking CMS approval by a specific effective date must submit the proposed final contract no later than 90 days before it (42 CFR \u00a7438.3(a))"
                 },
                 {
                   "value": "3\u20135",
-                  "label": "Typical number of MCOs per state market",
-                  "context": "Most state Medicaid programs contract with 3 to 5 MCOs to maintain competition while ensuring viable plan size"
+                  "label": "Most common number of MCOs per state",
+                  "context": "The largest group of states (17 of 41 with Medicaid managed care) contract with 3 to 5 MCOs; the range runs from one (North Dakota) to 26 (California) (New York State DOH review)"
                 }
               ]
             }
@@ -611,7 +611,7 @@
                   }
                 ],
                 "correctId": "b",
-                "explanation": "42 CFR \u00a7438.3 requires states to submit all Medicaid managed care contracts to CMS for review. CMS has 90 days to review and must approve the contract before it takes effect."
+                "explanation": "42 CFR \u00a7438.3 requires states to submit all Medicaid managed care contracts to CMS for review and approval. States seeking approval by a specific effective date must submit the proposed final contract at least 90 days in advance, and CMS approval is a precondition for federal matching funds."
               },
               {
                 "id": "q-mmc-procurement-contracting-001-2",
@@ -639,7 +639,7 @@
               },
               {
                 "id": "q-mmc-procurement-contracting-001-3",
-                "text": "Most state Medicaid markets contract with how many MCOs?",
+                "text": "What is the most common number of MCOs a state Medicaid program contracts with?",
                 "options": [
                   {
                     "id": "a",
@@ -659,7 +659,7 @@
                   }
                 ],
                 "correctId": "b",
-                "explanation": "Most states contract with 3 to 5 MCOs. This range maintains competitive pressure on plans while ensuring each has enough enrollment to operate viably and invest in care management."
+                "explanation": "The largest group of states \u2014 17 of the 41 with Medicaid managed care in a New York State Department of Health review \u2014 contract with 3 to 5 MCOs, balancing competition with enough enrollment per plan; the range runs from one (North Dakota) to 26 (California)."
               }
             ]
           },
@@ -693,12 +693,12 @@
               "type": "callout",
               "variant": "warning",
               "title": "Encounter Data: A Critical Oversight Tool",
-              "body": "MCOs must submit complete and accurate encounter data \u2014 records of every service provided to enrollees \u2014 to the state. Under 42 CFR \u00a7438.818, states must certify encounter data completeness and accuracy to CMS. CMS uses encounter data for rate-setting, quality measurement, and fraud detection. Incomplete encounter data was a major finding in OIG audits of multiple state Medicaid programs in 2019\u20132022."
+              "body": "MCOs must submit complete and accurate encounter data \u2014 records of every service provided to enrollees \u2014 to the state. Under 42 CFR \u00a7438.818, states must certify encounter data completeness and accuracy to CMS. CMS uses encounter data for rate-setting, quality measurement, and fraud detection. A 2021 HHS-OIG evaluation (OEI-02-19-00180) found that most states did not report complete and accurate managed care payment data in their T-MSIS encounter records."
             },
             {
               "type": "comparison_table",
               "headers": [
-                "Network Adequacy Standard",
+                "Network Adequacy Standard (illustrative state values, except the federal wait times)",
                 "Primary Care",
                 "Specialty Care",
                 "Hospital"
@@ -723,9 +723,9 @@
                   "N/A"
                 ],
                 [
-                  "Appointment Wait Time (routine)",
-                  "10 business days",
+                  "Appointment Wait Time (routine, federal 2024 rule)",
                   "15 business days",
+                  "State-set (outpatient mental health/SUD: 10 business days)",
                   "N/A"
                 ]
               ]
@@ -743,7 +743,7 @@
                 },
                 {
                   "term": "Quality Assurance Program (QAP)",
-                  "definition": "An MCO's internal program for monitoring and improving the quality of care \u2014 required under 42 CFR \u00a7438.240"
+                  "definition": "An MCO's internal program for monitoring and improving the quality of care \u2014 required under 42 CFR \u00a7438.330 (formerly \u00a7438.240)"
                 },
                 {
                   "term": "EPSDT",
@@ -815,7 +815,7 @@
                   },
                   {
                     "id": "b",
-                    "text": "10 business days"
+                    "text": "15 business days"
                   },
                   {
                     "id": "c",
@@ -827,7 +827,7 @@
                   }
                 ],
                 "correctId": "b",
-                "explanation": "Federal network adequacy standards (strengthened in the 2024 Access rule) require routine primary care appointments to be available within 10 business days of a request."
+                "explanation": "The 2024 Managed Care Access, Finance, and Quality rule requires routine primary care (and OB/GYN) appointments within 15 business days of a request; routine outpatient mental health and substance use disorder appointments must be available within 10 business days."
               }
             ]
           },
@@ -855,7 +855,7 @@
             {
               "type": "text",
               "heading": "External Quality Review Organizations (EQROs)",
-              "body": "Every state with a Medicaid managed care program must contract with an EQRO \u2014 an independent organization that assesses MCO performance. Under 42 CFR \u00a7438.358, EQROs must conduct three mandatory annual activities:\n\n1. **Validation of PIPs (Performance Improvement Projects)**: Assessing whether MCO quality improvement projects are methodologically sound\n2. **Validation of Performance Measures**: Confirming that HEDIS and other quality metrics are calculated accurately\n3. **Validation of Network Adequacy**: Reviewing whether the MCO's network meets state and federal standards\n\nOptional EQRO activities include: consumer surveys (CAHPS Medicaid), focused studies on specific quality issues, and assessment of new MCO systems."
+              "body": "Every state with a Medicaid managed care program must contract with an EQRO \u2014 an independent organization that assesses MCO performance. Under 42 CFR \u00a7438.358, four EQR-related activities are mandatory for each plan:\n\n1. **Validation of PIPs (Performance Improvement Projects)**: Assessing whether MCO quality improvement projects are methodologically sound\n2. **Validation of Performance Measures**: Confirming that HEDIS and other quality metrics are calculated accurately\n3. **Validation of Network Adequacy**: Reviewing whether the MCO's network meets state and federal standards\n4. **Compliance Review**: A review, conducted within the previous three years, of the MCO's compliance with federal standards for access, enrollee rights, and quality\n\nOptional EQRO activities include: encounter data validation, administering or validating consumer surveys (such as CAHPS), and focused studies on specific quality issues."
             },
             {
               "type": "callout",
@@ -876,7 +876,7 @@
                 },
                 {
                   "term": "Intermediate Sanctions",
-                  "definition": "Penalties available to states under 42 CFR \u00a7438.702 for MCO non-compliance, including civil monetary penalties, suspension of enrollment, and contract termination"
+                  "definition": "Penalties available to states under 42 CFR \u00a7438.702 for MCO non-compliance, including civil money penalties, temporary management, suspension of new enrollment, and suspension of payment for new enrollees"
                 },
                 {
                   "term": "Encounter Data Validation (EDV)",
@@ -888,14 +888,14 @@
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "3",
-                  "label": "Mandatory EQRO activities per year",
-                  "context": "States must ensure EQROs conduct three mandatory activities: PIP validation, performance measure validation, and network adequacy validation"
+                  "value": "4",
+                  "label": "Mandatory EQR-related activities",
+                  "context": "PIP validation, performance measure validation, network adequacy validation, and a compliance review within the previous three years (42 CFR \u00a7438.358(b))"
                 },
                 {
-                  "value": "$25,000/day",
-                  "label": "Maximum daily civil monetary penalty",
-                  "context": "States may impose civil monetary penalties up to $25,000 per day for each MCO violation under 42 CFR \u00a7438.704"
+                  "value": "$25K\u2013$100K",
+                  "label": "Civil money penalty limit per determination",
+                  "context": "42 CFR \u00a7438.704 caps state civil money penalties at $25,000 or $100,000 per determination, depending on the violation (e.g., $100,000 for discriminating among enrollees by health status or misrepresenting information to CMS or the state)"
                 }
               ]
             }
@@ -927,7 +927,7 @@
                   }
                 ],
                 "correctId": "b",
-                "explanation": "Validating PIPs is one of three mandatory EQRO activities under 42 CFR \u00a7438.358. CAHPS surveys and focused studies are optional activities."
+                "explanation": "Validating PIPs is one of four mandatory EQR-related activities under 42 CFR \u00a7438.358. CAHPS surveys and focused studies are optional activities."
               },
               {
                 "id": "q-mmc-procurement-contracting-003-2",
@@ -1012,30 +1012,25 @@
             {
               "type": "text",
               "heading": "Actuarial Soundness: The Federal Baseline",
-              "body": "Under 42 CFR \u00a7438.4, all Medicaid capitation rates must be 'actuarially sound' \u2014 meaning rates must be sufficient to cover the MCO's reasonable, appropriate, and attainable costs of providing covered services to the enrolled population. Rates must be developed by a qualified actuary (ASA or FSA with relevant Medicaid experience) and certified as actuarially sound before CMS approval.\n\nActuarial soundness has two components: (1) rates must cover expected costs based on the covered population's utilization patterns and (2) rates must reflect the specific MCO's operating environment \u2014 not just market averages."
+              "body": "Under 42 CFR \u00a7438.4, all Medicaid capitation rates must be 'actuarially sound' \u2014 meaning rates must be sufficient to cover the MCO's reasonable, appropriate, and attainable costs of providing covered services to the enrolled population. Rates must be developed and certified by a qualified actuary (one who meets the American Academy of Actuaries' qualification standards, per 42 CFR \u00a7438.2) and certified as actuarially sound before CMS approval.\n\nActuarial soundness has two components: (1) rates must cover expected costs based on the covered population's utilization patterns and (2) rates must be developed in accordance with generally accepted actuarial principles and practices and the federal rate development standards in \u00a7438.5."
             },
             {
               "type": "text",
               "heading": "Rate Cells and Population Segmentation",
-              "body": "States develop rates for distinct 'rate cells' \u2014 segments of the Medicaid population with similar expected costs. Common rate cells include:\n- Age/sex bands (e.g., children 0\u20131, children 1\u201314, adult males 19\u201344)\n- Eligibility categories (TANF families, SSI individuals, dual eligibles)\n- Geographic regions (reflecting local cost variation)\n- Functional need levels (for MLTSS populations)\n\nPMPM rates vary dramatically across cells. A child rate cell might be $180 PMPM while an aged/blind/disabled rate cell exceeds $1,200 PMPM, reflecting the much higher expected utilization of complex populations."
+              "body": "States develop rates for distinct 'rate cells' \u2014 segments of the Medicaid population with similar expected costs. Common rate cells include:\n- Age/sex bands (e.g., children 0\u20131, children 1\u201314, adult males 19\u201344)\n- Eligibility categories (TANF families, SSI individuals, dual eligibles)\n- Geographic regions (reflecting local cost variation)\n- Functional need levels (for MLTSS populations)\n\nPMPM rates vary dramatically across cells. For scale, KFF puts Medicaid spending at about $3,321 a year per child enrollee (roughly $280 a month) versus about $20,950 per enrollee with disabilities (roughly $1,750 a month), reflecting the much higher expected utilization of complex populations."
             },
             {
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "$180",
-                  "label": "Typical child PMPM rate",
-                  "context": "Children rate cells are typically among the lowest PMPM rates due to lower average utilization"
+                  "value": "~$280/mo",
+                  "label": "Medicaid spending per child enrollee",
+                  "context": "About $3,321 a year per child enrollee (KFF per-enrollee spending data)"
                 },
                 {
-                  "value": "$1,200+",
-                  "label": "Typical aged/disabled adult PMPM rate",
-                  "context": "SSI/ABD populations have much higher expected costs, reflecting complex medical and LTSS needs"
-                },
-                {
-                  "value": "3\u20135%",
-                  "label": "Typical annual medical trend factor",
-                  "context": "Actuaries apply trend factors to base period data to project costs forward to the rating period"
+                  "value": "~$1,750/mo",
+                  "label": "Medicaid spending per enrollee with disabilities",
+                  "context": "About $20,950 a year per enrollee eligible through disability (KFF per-enrollee spending data)"
                 }
               ]
             },
@@ -1043,7 +1038,7 @@
               "type": "callout",
               "variant": "tip",
               "title": "Data Sources for Rate Development",
-              "body": "Actuaries use a combination of data sources to develop base period costs: MCO encounter data (if complete and credible), state FFS claims data, and commercial benchmarks. The CMS Actuarial Communication and Guidance document (released annually) provides guidance on acceptable methodologies. States must submit the actuarial rate certification along with rate development documentation (RDD) for CMS review."
+              "body": "Actuaries use a combination of data sources to develop base period costs: MCO encounter data (if complete and credible), state FFS claims data, and commercial benchmarks. CMS's annual Medicaid Managed Care Rate Development Guide provides guidance on acceptable methodologies. States must submit the actuarial rate certification along with rate development documentation (RDD) for CMS review."
             }
           ],
           "quiz": {
@@ -1061,7 +1056,7 @@
                   },
                   {
                     "id": "b",
-                    "text": "A qualified actuary (ASA or FSA)"
+                    "text": "A qualified actuary (meeting American Academy of Actuaries qualification standards)"
                   },
                   {
                     "id": "c",
@@ -1073,7 +1068,7 @@
                   }
                 ],
                 "correctId": "b",
-                "explanation": "42 CFR \u00a7438.4 requires that Medicaid capitation rates be certified as actuarially sound by a qualified actuary \u2014 typically an Associate or Fellow of the Society of Actuaries (ASA/FSA) with Medicaid experience."
+                "explanation": "42 CFR \u00a7438.4 requires capitation rates to be certified as actuarially sound by an actuary who meets the American Academy of Actuaries' qualification standards and follows Actuarial Standards Board practice standards (42 CFR \u00a7438.2)."
               },
               {
                 "id": "q-mmc-actuarial-rate-setting-001-2",
@@ -1121,7 +1116,7 @@
                   }
                 ],
                 "correctId": "b",
-                "explanation": "Trend factors project historical base period costs forward to the rating period, accounting for medical cost inflation, utilization changes, and benefit changes. Typical Medicaid medical trend factors range from 3\u20135% annually."
+                "explanation": "Trend factors project historical base period costs forward to the rating period, accounting for medical cost inflation, utilization changes, and benefit changes."
               }
             ]
           },
@@ -1184,7 +1179,7 @@
               "type": "callout",
               "variant": "info",
               "title": "HCCs in Medicaid Risk Adjustment",
-              "body": "Hierarchical Condition Categories (HCCs) group ICD-10 diagnosis codes into clinically meaningful categories that predict future healthcare costs. CMS's HHS-HCC model (used in ACA marketplaces) and CMS's Medicare HCC model are commonly adapted for Medicaid. Diagnosis codes from encounter data are mapped to HCCs, which are then weighted and summed to produce a risk score. A risk score of 1.0 represents average expected cost; a score of 2.5 means the member is expected to cost 2.5x the average."
+              "body": "Hierarchical Condition Categories (HCCs) group ICD-10 diagnosis codes into clinically meaningful categories that predict future healthcare costs. Medicare Advantage (CMS-HCC) and the ACA marketplaces (HHS-HCC) use HCC models, but most Medicaid programs use a Medicaid-specific diagnosis-based model instead \u2014 33 of the 38 programs that risk-adjust MCO payments use the Chronic Illness and Disability Payment System (CDPS). Diagnosis codes from encounter data are mapped to HCCs, which are then weighted and summed to produce a risk score. A risk score of 1.0 represents average expected cost; a score of 2.5 means the member is expected to cost 2.5x the average."
             },
             {
               "type": "glossary_terms",
@@ -1195,7 +1190,7 @@
                 },
                 {
                   "term": "HCC (Hierarchical Condition Category)",
-                  "definition": "A clinical grouping of ICD-10 codes that predicts future healthcare costs; the basis for most modern risk adjustment models"
+                  "definition": "A clinical grouping of ICD-10 codes that predicts future healthcare costs; the basis of Medicare Advantage and ACA marketplace risk adjustment (most Medicaid programs use the similar diagnosis-based CDPS model)"
                 },
                 {
                   "term": "Cream Skimming",
@@ -1311,7 +1306,7 @@
             {
               "type": "text",
               "heading": "The 85% MLR Floor",
-              "body": "The 2016 Medicaid managed care final rule established a Medical Loss Ratio (MLR) floor of 85% for Medicaid MCOs, PIHPs, and PAHPs. This means MCOs must spend at least 85 cents of every capitation dollar on clinical services and quality improvement activities \u2014 limiting administrative costs and profit to 15%.\n\nMLR = (Incurred Claims + Quality Improvement Expenses) / Premium Revenue\n\nIf an MCO's MLR falls below 85%, it must remit the difference to the state. States can also require higher MLR thresholds in their contracts \u2014 some states require 88% or 90%."
+              "body": "The 2016 Medicaid managed care final rule set an 85% medical loss ratio (MLR) standard for MCOs, PIHPs, and PAHPs: states must set capitation rates so each plan can reasonably achieve an MLR of at least 85%, and any minimum MLR a state imposes must be at least 85%.\n\nMLR = (Incurred Claims + Quality Improvement Expenditures + Fraud Prevention Activities) / (Premium Revenue \u2212 Taxes and Licensing/Regulatory Fees)\n\nIf a state requires remittance, a plan whose MLR falls below the state's minimum must pay back the difference. States can also set minimums above 85% in their contracts."
             },
             {
               "type": "comparison_table",
@@ -1328,7 +1323,7 @@
                 ],
                 [
                   "Quality Improvement",
-                  "YES (capped at 3%)",
+                  "YES",
                   "Disease management, care coordination programs"
                 ],
                 [
@@ -1352,7 +1347,7 @@
               "type": "callout",
               "variant": "key",
               "title": "MLR Remittance: How It Works",
-              "body": "If an MCO's annual MLR falls below the 85% threshold, the plan must remit the shortfall to the state Medicaid agency. For example, if a plan received $500 million in capitation and achieved an 82% MLR, it would owe the state $15 million (3% \u00d7 $500M). States must report MLR data to CMS annually. Unlike ACA marketplace MLR rebates, Medicaid MLR remittances go to the state, not directly to beneficiaries."
+              "body": "If a state requires remittance and an MCO's annual MLR falls below the 85% threshold, the plan must remit the shortfall to the state Medicaid agency. For example, if a plan received $500 million in capitation and achieved an 82% MLR, it would owe the state $15 million (3% \u00d7 $500M). States must report MLR data to CMS annually. Unlike ACA marketplace MLR rebates, Medicaid MLR remittances go to the state, not directly to beneficiaries."
             },
             {
               "type": "key_stat",
@@ -1360,12 +1355,12 @@
                 {
                   "value": "85%",
                   "label": "Federal MLR floor for Medicaid MCOs",
-                  "context": "Established by the 2016 final rule; MCOs must spend at least 85% of premium on clinical services and quality improvement"
+                  "context": "Set by the 2016 final rule: states must set rates so each plan can reasonably achieve at least 85%, and any state-mandated minimum must be at least 85%"
                 },
                 {
                   "value": "15%",
-                  "label": "Maximum administrative/profit allowance",
-                  "context": "Administrative costs including marketing, overhead, and profit are capped at 15% of premium revenue"
+                  "label": "Left for administration and profit at an 85% MLR",
+                  "context": "At an 85% MLR, no more than 15% of adjusted premium revenue remains for administration and profit; federal rules do not separately cap administrative costs"
                 }
               ]
             }
@@ -1396,7 +1391,7 @@
                     "text": "86.5%"
                   }
                 ],
-                "correctId": "bases",
+                "correctId": "b",
                 "explanation": "MLR = (330 + 8) / 400 = 338/400 = 84.5%. This falls below the 85% floor, so the MCO would owe the state a remittance."
               },
               {
@@ -1421,7 +1416,7 @@
                   }
                 ],
                 "correctId": "b",
-                "explanation": "The MCO's MLR of 84.5% is 0.5 percentage points below the 85% floor. The remittance owed = 0.5% \u00d7 $400M = $2 million."
+                "explanation": "If the state requires remittance at an 85% minimum, the MCO's MLR of 84.5% is 0.5 percentage points short, so it owes 0.5% \u00d7 $400M = $2 million."
               },
               {
                 "id": "q-mmc-actuarial-rate-setting-003-2",
@@ -1445,7 +1440,7 @@
                   }
                 ],
                 "correctId": "c",
-                "explanation": "Quality improvement expenses, including disease management programs, count toward the MLR numerator (capped at 3% of premium). Marketing, executive compensation, and administrative costs do not count."
+                "explanation": "Quality improvement expenses, including disease management programs, count toward the MLR numerator. Marketing, executive compensation, and administrative costs do not count."
               }
             ]
           },
@@ -1482,13 +1477,13 @@
             {
               "type": "text",
               "heading": "Carve-Ins vs. Carve-Outs: The Basics",
-              "body": "When states design Medicaid managed care contracts, they must decide which services to include ('carve in') within the MCO's capitation and which to exclude ('carve out') for separate management. Carved-out services are typically delivered through separate contracts \u2014 often with PIHPs or PAHPs \u2014 or paid FFS directly by the state.\n\n**Common Carve-Outs:**\n- Behavioral health services (most commonly carved out)\n- Long-term services and supports (LTSS)\n- Dental services (often a separate PAHP)\n- Non-emergency medical transportation (NEMT)\n- Pharmacy (increasingly being carved back in)\n- High-cost specialty drugs"
+              "body": "When states design Medicaid managed care contracts, they must decide which services to include ('carve in') within the MCO's capitation and which to exclude ('carve out') for separate management. Carved-out services are typically delivered through separate contracts \u2014 often with PIHPs or PAHPs \u2014 or paid FFS directly by the state.\n\n**Common Carve-Outs:**\n- Behavioral health services (most commonly carved out)\n- Long-term services and supports (LTSS)\n- Dental services (often a separate PAHP)\n- Non-emergency medical transportation (NEMT)\n- Pharmacy (carved out in a few states, such as California and New York)\n- High-cost specialty drugs"
             },
             {
               "type": "callout",
               "variant": "warning",
               "title": "The Integration Problem",
-              "body": "Carving out behavioral health from physical health creates a structural barrier to integrated care. Members with co-occurring mental health and medical conditions often fall through the cracks between their MCO (physical health) and PIHP (behavioral health). This is why a strong trend toward 'carving in' behavioral health has emerged \u2014 states like Arizona, Pennsylvania, and New York have integrated behavioral health into MCO contracts to improve whole-person care."
+              "body": "Carving out behavioral health from physical health creates a structural barrier to integrated care. Members with co-occurring mental health and medical conditions often fall through the cracks between their MCO (physical health) and PIHP (behavioral health). This is why a strong trend toward 'carving in' behavioral health has emerged \u2014 states like Arizona, Washington, and New York have integrated behavioral health into MCO contracts to improve whole-person care."
             },
             {
               "type": "comparison_table",
@@ -1513,9 +1508,9 @@
                 ],
                 [
                   "Pharmacy",
-                  "Increasingly (CMS encourages)",
+                  "Most MCO states",
                   "Historically common",
-                  "Strong carve-in trend"
+                  "Mixed \u2014 a few states (e.g., CA, NY) carved it out"
                 ],
                 [
                   "Dental",
@@ -1662,25 +1657,25 @@
             {
               "type": "text",
               "heading": "Federal Network Adequacy Framework",
-              "body": "42 CFR \u00a7438.68 requires states to establish network adequacy standards for Medicaid MCOs covering: time and distance to providers; appointment wait times; provider-to-enrollee ratios; and availability of providers who are not accepting new patients. States must establish standards for at least the following provider types: primary care (adult and pediatric), OB/GYN, behavioral health (outpatient and inpatient), specialist, hospital, pharmacy, and pediatric dental.\n\nThe 2024 Medicaid Access rule (89 FR 40542) strengthened these requirements substantially, adding mandatory appointment wait time standards and requiring states to conduct secret shopper surveys to validate compliance."
+              "body": "42 CFR \u00a7438.68 requires states to set a quantitative network adequacy standard (such as time-and-distance or provider-to-enrollee ratios) for specified provider types and, since the 2024 rule, appointment wait time standards. States must establish standards for at least the following provider types: primary care (adult and pediatric), OB/GYN, mental health and substance use disorder (adult and pediatric), specialist, hospital, pharmacy, and pediatric dental.\n\nThe 2024 Managed Care Access, Finance, and Quality rule (89 FR 41002) strengthened these requirements substantially, adding mandatory appointment wait time standards and requiring states to conduct secret shopper surveys to validate compliance."
             },
             {
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "10 days",
+                  "value": "15 business days",
                   "label": "Max wait for routine primary care",
-                  "context": "2024 Access rule standard for routine (non-urgent) primary care appointment availability"
+                  "context": "2024 Managed Care Access, Finance, and Quality rule maximum for routine primary care (adult and pediatric) appointments"
                 },
                 {
-                  "value": "15 days",
-                  "label": "Max wait for routine specialist care",
-                  "context": "2024 Access rule standard for routine specialist appointments"
+                  "value": "15 business days",
+                  "label": "Max wait for routine OB/GYN care",
+                  "context": "2024 rule maximum for routine OB/GYN appointments; states also set a standard for one additional provider type of their choosing"
                 },
                 {
-                  "value": "48 hours",
-                  "label": "Max wait for urgent care",
-                  "context": "Urgent (non-emergency) care must be available within 48 hours under 2024 Access rule standards"
+                  "value": "10 business days",
+                  "label": "Max wait for outpatient mental health/SUD",
+                  "context": "2024 rule maximum for routine outpatient mental health and substance use disorder appointments (adult and pediatric)"
                 }
               ]
             },
@@ -1694,22 +1689,22 @@
               "type": "comparison_table",
               "headers": [
                 "Provider Type",
-                "Urban Time-Distance",
-                "Rural Time-Distance",
-                "Wait Time Standard"
+                "Urban Time-Distance (example state standard)",
+                "Rural Time-Distance (example state standard)",
+                "Federal Wait Time Standard (2024 rule)"
               ],
               "rows": [
                 [
                   "Primary Care (Adult)",
                   "30 min / 30 mi",
                   "60 min / 60 mi",
-                  "10 business days (routine)"
+                  "15 business days (routine)"
                 ],
                 [
                   "Primary Care (Pediatric)",
                   "30 min / 30 mi",
                   "60 min / 60 mi",
-                  "10 business days (routine)"
+                  "15 business days (routine)"
                 ],
                 [
                   "OB/GYN",
@@ -1721,13 +1716,13 @@
                   "Behavioral Health (Outpatient)",
                   "30 min / 30 mi",
                   "60 min / 60 mi",
-                  "10 business days"
+                  "10 business days (routine)"
                 ],
                 [
                   "Specialist",
                   "45 min / 45 mi",
                   "90 min / 90 mi",
-                  "15 business days (routine)"
+                  "State-set (a state may choose it as its additional type)"
                 ],
                 [
                   "Hospital",
@@ -1769,7 +1764,7 @@
               },
               {
                 "id": "q-mmc-benefits-network-management-002-2",
-                "text": "Under the 2024 Access rule, urgent care (non-emergency) must be available within:",
+                "text": "Under the 2024 Medicaid managed care rule, routine outpatient mental health and substance use disorder appointments must be available within:",
                 "options": [
                   {
                     "id": "a",
@@ -1788,8 +1783,8 @@
                     "text": "10 business days"
                   }
                 ],
-                "correctId": "b",
-                "explanation": "The 2024 Medicaid Access rule requires MCOs to provide access to urgent (non-emergency) care within 48 hours of a request."
+                "correctId": "d",
+                "explanation": "The 2024 Managed Care Access, Finance, and Quality rule sets a 10-business-day standard for routine outpatient mental health and substance use disorder appointments (15 business days for primary care and OB/GYN). It does not set a federal 48-hour urgent care standard."
               },
               {
                 "id": "q-mmc-benefits-network-management-002-3",
@@ -1841,20 +1836,20 @@
             {
               "type": "text",
               "heading": "Provider Credentialing: MCO Obligations",
-              "body": "MCOs must credential all network providers before allowing them to treat enrollees. Under 42 CFR \u00a7438.214, MCOs must: verify that providers meet state licensing and certification requirements; have procedures to exclude providers excluded from federal programs; and recredential providers at least every three years.\n\n**Primary source verification** requires the MCO to verify credentials directly with the issuing source \u2014 e.g., confirming a medical license with the state medical board, not just accepting the provider's copy. This protects against credential fraud and ensures network quality."
+              "body": "MCOs must credential all network providers before allowing them to treat enrollees. Under 42 CFR \u00a7438.214, each state must set a uniform credentialing and recredentialing policy that its MCOs follow, and MCOs may not employ or contract with providers excluded from federal health care programs. Most plans also follow NCQA credentialing standards, which require recredentialing at least every three years.\n\n**Primary source verification** requires the MCO to verify credentials directly with the issuing source \u2014 e.g., confirming a medical license with the state medical board, not just accepting the provider's copy. This protects against credential fraud and ensures network quality."
             },
             {
               "type": "callout",
               "variant": "tip",
               "title": "Delegated Credentialing",
-              "body": "Large health systems and medical groups often request that MCOs delegate credentialing responsibility to them \u2014 meaning the group credentials its own providers and the MCO accepts the group's determination. This is permitted under 42 CFR \u00a7438.214 if the MCO maintains oversight and can audit the delegate's credentialing files. Delegation significantly reduces administrative burden for large networks but requires robust oversight agreements."
+              "body": "Large health systems and medical groups often request that MCOs delegate credentialing responsibility to them \u2014 meaning the group credentials its own providers and the MCO accepts the group's determination. This is permitted under NCQA standards and 42 CFR \u00a7438.230 (subcontracting and delegation), which keeps the MCO fully responsible, if the MCO maintains oversight and can audit the delegate's credentialing files. Delegation significantly reduces administrative burden for large networks but requires robust oversight agreements."
             },
             {
               "type": "concepts_grid",
               "concepts": [
                 {
                   "term": "Primary Source Verification",
-                  "definition": "Direct confirmation of a provider's credentials with the original issuing source (medical board, DEA, NPDB) \u2014 required under 42 CFR \u00a7438.214"
+                  "definition": "Direct confirmation of a provider's credentials with the original issuing source (medical board, DEA, NPDB) \u2014 required under NCQA credentialing standards"
                 },
                 {
                   "term": "NPDB (National Practitioner Data Bank)",
@@ -1876,7 +1871,7 @@
                 {
                   "value": "Every 3 years",
                   "label": "Required MCO recredentialing cycle",
-                  "context": "42 CFR \u00a7438.214 requires MCOs to recredential all network providers at least every three years"
+                  "context": "NCQA credentialing standards (which most MCOs follow) require recredentialing all network providers at least every three years"
                 },
                 {
                   "value": "Monthly",
@@ -1917,7 +1912,7 @@
               },
               {
                 "id": "q-mmc-benefits-network-management-003-2",
-                "text": "Under 42 CFR \u00a7438.214, how often must MCOs recredential network providers?",
+                "text": "Under NCQA credentialing standards, how often must health plans recredential network providers?",
                 "options": [
                   {
                     "id": "a",
@@ -1937,7 +1932,7 @@
                   }
                 ],
                 "correctId": "c",
-                "explanation": "42 CFR \u00a7438.214 requires MCOs to recredential all network providers at minimum every three years, ensuring that credentials remain current and adverse actions are identified."
+                "explanation": "NCQA credentialing standards require health plans to recredential network providers at least every three years; 42 CFR \u00a7438.214 requires each state to set a uniform credentialing and recredentialing policy that its MCOs follow."
               },
               {
                 "id": "q-mmc-benefits-network-management-003-3",
@@ -1998,7 +1993,7 @@
             {
               "type": "text",
               "heading": "HEDIS in Medicaid Context",
-              "body": "HEDIS (Healthcare Effectiveness Data and Information Set) is a standardized set of performance measures developed by NCQA (National Committee for Quality Assurance). Most states require their Medicaid MCOs to report HEDIS measures annually, using state-specific Medicaid data.\n\n**Key HEDIS Measure Domains for Medicaid:**\n- **Preventive Care**: Well-child visits, adolescent immunizations, cervical cancer screening\n- **Chronic Disease Management**: Comprehensive diabetes care (HbA1c, eye exams, nephropathy screening), asthma management, blood pressure control\n- **Behavioral Health**: Follow-up after hospitalization for mental illness (FUH), antidepressant medication management (AMM)\n- **Maternal Health**: Prenatal and postpartum care (PPC), C-section rates\n- **Children**: EPSDT screens, developmental screening, lead screening"
+              "body": "HEDIS (Healthcare Effectiveness Data and Information Set) is a standardized set of performance measures developed by NCQA (National Committee for Quality Assurance). Most states require their Medicaid MCOs to report HEDIS measures annually, using state-specific Medicaid data.\n\n**Key HEDIS Measure Domains for Medicaid:**\n- **Preventive Care**: Well-child visits, adolescent immunizations, cervical cancer screening\n- **Chronic Disease Management**: Diabetes care (glycemic status, eye exams, kidney health evaluation), asthma medication ratio, controlling high blood pressure\n- **Behavioral Health**: Follow-up after hospitalization for mental illness (FUH), antidepressant medication management (AMM)\n- **Maternal Health**: Prenatal and postpartum care (PPC)\n- **Children**: Well-child visits, childhood immunization status, lead screening in children (developmental screening is reported through the CMS Child Core Set rather than HEDIS)"
             },
             {
               "type": "comparison_table",
@@ -2033,7 +2028,7 @@
               "type": "callout",
               "variant": "info",
               "title": "Pay-for-Performance Tied to HEDIS",
-              "body": "Many states tie MCO capitation withholds or quality bonuses to HEDIS performance. For example, Tennessee's CoverKids (CHIP) and Ohio Medicaid both use quality withholds where 1\u20132% of capitation is held back and returned only if MCOs meet HEDIS benchmarks. Benchmarks are typically set at the 25th, 50th, or 75th NCQA Medicaid percentile nationally."
+              "body": "Many states tie MCO capitation withholds or quality bonuses to HEDIS performance. For example, the MyCare Ohio demonstration for dually eligible enrollees withheld 1% of capitation in its first year, rising to 3% by year three, and repaid it on a sliding scale according to how many quality measures (including HEDIS and CAHPS) each plan met. Benchmarks are typically set at the 25th, 50th, or 75th NCQA Medicaid percentile nationally."
             },
             {
               "type": "glossary_terms",
@@ -2112,7 +2107,7 @@
               },
               {
                 "id": "q-mmc-care-management-quality-001-3",
-                "text": "States like Tennessee (CoverKids) and Ohio Medicaid use quality withholds to:",
+                "text": "Quality withholds, like the one used in the MyCare Ohio demonstration, are designed to:",
                 "options": [
                   {
                     "id": "a",
@@ -2120,7 +2115,7 @@
                   },
                   {
                     "id": "b",
-                    "text": "Hold back 1\u20132% of capitation and return it only if MCOs meet HEDIS benchmarks"
+                    "text": "Hold back a share of capitation and return it based on quality-measure performance"
                   },
                   {
                     "id": "c",
@@ -2132,7 +2127,7 @@
                   }
                 ],
                 "correctId": "b",
-                "explanation": "Quality withholds retain 1\u20132% of capitation payments and return those funds to MCOs that achieve defined HEDIS performance benchmarks, creating financial incentives for quality improvement."
+                "explanation": "Quality withholds retain a share of capitation (MyCare Ohio: 1% rising to 3%) and return it to plans according to their performance on quality measures such as HEDIS and CAHPS, creating a financial incentive for quality improvement."
               }
             ]
           },
@@ -2160,7 +2155,7 @@
             {
               "type": "text",
               "heading": "What Is MLTSS?",
-              "body": "Managed Long-Term Services and Supports (MLTSS) programs integrate LTSS \u2014 including nursing facility care, home and community-based services (HCBS), personal care, and adult day services \u2014 into Medicaid managed care capitation. As of 2023, over 20 states operate MLTSS programs covering approximately 1.5 million beneficiaries.\n\nThe policy rationale for MLTSS includes: rebalancing care from institutions toward home and community settings; improving care coordination for high-cost, complex members; and achieving cost predictability through capitation. Critics raise concerns about profit motives in a sector where quality is hard to measure and vulnerable populations have limited ability to advocate for themselves."
+              "body": "Managed Long-Term Services and Supports (MLTSS) programs integrate LTSS \u2014 including nursing facility care, home and community-based services (HCBS), personal care, and adult day services \u2014 into Medicaid managed care capitation. As of 2023, about two dozen states operated MLTSS programs, and CMS counted about 1.9 million MLTSS users nationwide as of July 2024.\n\nThe policy rationale for MLTSS includes: rebalancing care from institutions toward home and community settings; improving care coordination for high-cost, complex members; and achieving cost predictability through capitation. Critics raise concerns about profit motives in a sector where quality is hard to measure and vulnerable populations have limited ability to advocate for themselves."
             },
             {
               "type": "callout",
@@ -2198,14 +2193,14 @@
                   "context": "As of 2023, more than 20 states have integrated LTSS into managed care capitation"
                 },
                 {
-                  "value": "1.5M",
+                  "value": "1.9M",
                   "label": "Beneficiaries in MLTSS programs",
-                  "context": "Approximately 1.5 million Medicaid beneficiaries receive LTSS through managed care arrangements nationally"
+                  "context": "About 1.9 million Medicaid enrollees used LTSS through managed care as of July 1, 2024 (CMS managed care enrollment report)"
                 },
                 {
-                  "value": "$300B+",
-                  "label": "Annual LTSS Medicaid spending",
-                  "context": "LTSS represents the largest single category of Medicaid spending, exceeding $300 billion annually"
+                  "value": "$199.4B",
+                  "label": "Medicaid LTSS spending, FY 2020",
+                  "context": "HCBS accounted for 62.5% and institutional care 37.5% (CMS/Mathematica LTSS expenditures report)"
                 }
               ]
             }
@@ -2322,38 +2317,38 @@
             {
               "type": "text",
               "heading": "Value-Based Purchasing in Medicaid",
-              "body": "Value-based purchasing (VBP) in Medicaid operates on two levels: (1) between states and MCOs, and (2) between MCOs and their provider networks. At the state-MCO level, states use quality withholds, incentive payments, and performance bonuses tied to HEDIS and other quality metrics. At the MCO-provider level, MCOs are increasingly required by states to enter VBP arrangements with a minimum percentage of providers.\n\nCMS encourages VBP through its Medicaid VBP framework and has set targets for states to move specified percentages of Medicaid payments into VBP arrangements. New York's Medicaid Redesign Team set a goal of 80% of Medicaid payments flowing through VBP by 2020."
+              "body": "Value-based purchasing (VBP) in Medicaid operates on two levels: (1) between states and MCOs, and (2) between MCOs and their provider networks. At the state-MCO level, states use quality withholds, incentive payments, and performance bonuses tied to HEDIS and other quality metrics. At the MCO-provider level, MCOs are increasingly required by states to enter VBP arrangements with a minimum percentage of providers.\n\nMany states use the Health Care Payment Learning & Action Network (HCP-LAN) framework to classify these arrangements. New York's Medicaid Redesign Team set a goal of 80% of Medicaid payments flowing through VBP by 2020."
             },
             {
               "type": "comparison_table",
               "headers": [
-                "VBP Tier",
+                "HCP-LAN Category",
                 "Description",
                 "Risk Level",
                 "Example"
               ],
               "rows": [
                 [
-                  "Tier 1",
+                  "Category 2",
                   "FFS with quality bonuses/penalties",
                   "Minimal",
                   "HEDIS-tied incentive payments"
                 ],
                 [
-                  "Tier 2",
+                  "Category 3A",
                   "Shared savings (upside only)",
                   "Low",
                   "ACO shared savings without downside"
                 ],
                 [
-                  "Tier 3",
+                  "Category 3B",
                   "Shared savings/losses (two-sided)",
                   "Moderate",
                   "ACO with downside risk corridor"
                 ],
                 [
-                  "Tier 4",
-                  "Full capitation to provider",
+                  "Category 4",
+                  "Population-based payment (e.g., full capitation to provider)",
                   "High",
                   "Global capitation to integrated system"
                 ]
@@ -2363,7 +2358,7 @@
               "type": "callout",
               "variant": "info",
               "title": "MCO-to-Provider VBP Requirements",
-              "body": "Several states now require MCOs to flow a minimum percentage of provider payments through VBP arrangements. For example, Oregon requires its CCOs to meet specific VBP targets as a condition of contract. CMS's Innovation Center (CMMI) has tested Medicaid VBP through demonstrations including the Integrated Care for Kids (InCK) model and the Accountable Health Communities model."
+              "body": "Several states now require MCOs to flow a minimum percentage of provider payments through VBP arrangements. For example, Oregon requires its CCOs to meet specific VBP targets as a condition of contract. CMS's Innovation Center (CMMI) has tested Medicaid VBP through demonstrations including the Integrated Care for Kids (InCK) model, which supports state Medicaid alternative payment models for children's services."
             },
             {
               "type": "glossary_terms",
@@ -2394,7 +2389,7 @@
             "questions": [
               {
                 "id": "q-mmc-value-based-medicaid-001-1",
-                "text": "In the CMS Medicaid VBP framework, Tier 1 arrangements are characterized by:",
+                "text": "In the HCP-LAN payment framework, Category 2 arrangements are characterized by:",
                 "options": [
                   {
                     "id": "a",
@@ -2414,7 +2409,7 @@
                   }
                 ],
                 "correctId": "c",
-                "explanation": "Tier 1 VBP arrangements add quality bonuses or penalties on top of the existing FFS payment structure, with minimal risk transfer. They are the most common starting point for provider VBP."
+                "explanation": "HCP-LAN Category 2 arrangements add quality bonuses or penalties on top of the existing fee-for-service payment structure, with minimal risk transfer. They are the most common starting point for provider VBP."
               },
               {
                 "id": "q-mmc-value-based-medicaid-001-2",
@@ -2442,27 +2437,27 @@
               },
               {
                 "id": "q-mmc-value-based-medicaid-001-3",
-                "text": "Global capitation to a provider organization represents which tier of the VBP framework?",
+                "text": "Global capitation to a provider organization falls in which HCP-LAN category?",
                 "options": [
                   {
                     "id": "a",
-                    "text": "Tier 1"
+                    "text": "Category 1"
                   },
                   {
                     "id": "b",
-                    "text": "Tier 2"
+                    "text": "Category 2"
                   },
                   {
                     "id": "c",
-                    "text": "Tier 3"
+                    "text": "Category 3"
                   },
                   {
                     "id": "d",
-                    "text": "Tier 4"
+                    "text": "Category 4"
                   }
                 ],
                 "correctId": "d",
-                "explanation": "Tier 4 represents the highest level of provider risk: a fixed PMPM payment (global capitation) to an integrated provider organization covering all services for attributed members, with the provider bearing full utilization risk."
+                "explanation": "HCP-LAN Category 4 (population-based payment) represents the highest level of provider risk: a fixed PMPM payment (global capitation) to an integrated provider organization covering all services for attributed members, with the provider bearing full utilization risk."
               }
             ]
           },
@@ -2496,7 +2491,7 @@
               "type": "callout",
               "variant": "warning",
               "title": "Controversial Waiver Provisions",
-              "body": "States have used 1115 waivers to test provisions that go beyond traditional Medicaid managed care, including: work/community engagement requirements (struck down by courts in Arkansas, Kentucky; recently re-approved for Georgia); premium requirements for able-bodied adults; drug testing for enrollment; and time-limited enrollment (beneficiary lock-outs). CMS policy on these provisions has shifted significantly between administrations."
+              "body": "States have used 1115 waivers to test provisions that go beyond traditional Medicaid managed care, including: work/community engagement requirements (struck down by courts in Arkansas and Kentucky; Georgia's Pathways program runs under a 2020 approval reinstated by a federal court in 2022; Congress wrote community engagement requirements into federal law in July 2025); premium requirements for able-bodied adults; and time-limited enrollment (beneficiary lock-outs). CMS policy on these provisions has shifted significantly between administrations."
             },
             {
               "type": "comparison_table",
@@ -2522,7 +2517,7 @@
                 [
                   "Tennessee",
                   "TennCare",
-                  "Statewide managed care with closed enrollment",
+                  "Statewide mandatory managed care since 1994",
                   "Ongoing"
                 ],
                 [
@@ -2533,9 +2528,9 @@
                 ],
                 [
                   "Vermont",
-                  "All-Payer ACO",
-                  "Multi-payer global budget with ACO",
-                  "Ongoing"
+                  "Global Commitment to Health (with the All-Payer ACO Model)",
+                  "Multi-payer ACO model with Medicaid participation",
+                  "All-Payer ACO Model ended December 2025"
                 ]
               ]
             },

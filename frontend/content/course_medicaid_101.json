@@ -878,7 +878,7 @@
             {
               "type": "text",
               "heading": "The shift to managed care",
-              "body": "In 1980, nearly all Medicaid was delivered fee-for-service: states paid providers directly for each covered service. By 2023, approximately 72% of Medicaid beneficiaries \u2014 and 55% of Medicaid spending \u2014 flows through managed care organizations (MCOs).\n\nThe shift happened for several reasons: states wanted cost predictability, MCOs promised care coordination, and federal law in the 1990s made it easier for states to mandate managed care enrollment without federal waivers."
+              "body": "In 1980, nearly all Medicaid was delivered fee-for-service: states paid providers directly for each covered service. By July 2024, about 78% of Medicaid enrollees were in comprehensive managed care organizations (MCOs) (CMS), and payments to MCOs made up about half of the $919 billion in total Medicaid spending in FY 2024 (KFF).\n\nThe shift happened for several reasons: states wanted cost predictability, MCOs promised care coordination, and federal law in the 1990s made it easier for states to mandate managed care enrollment without federal waivers."
             },
             {
               "type": "comparison_table",
@@ -941,14 +941,9 @@
                 {
                   "icon": "ti-cash",
                   "title": "MLR requirements",
-                  "body": "MCOs must spend at least 85% of premium revenue on medical costs (medical loss ratio). Excess profit must be returned to the state."
+                  "body": "States must set capitation rates so each MCO can reasonably achieve a medical loss ratio of at least 85%; states may require plans that fall short to remit the difference."
                 }
               ]
-            },
-            {
-              "type": "audio_slot",
-              "label": "MCO perspective: managing Medicaid populations",
-              "hint": "Interview a Medicaid MCO medical director or care coordinator about the realities of managing complex populations, prior authorization challenges, and value-based contracting with providers. Recommended: 8\u201310 minutes."
             }
           ],
           "quiz": {
@@ -1052,8 +1047,8 @@
             {
               "type": "callout",
               "variant": "warning",
-              "heading": "Work requirements: blocked by the courts",
-              "body": "Several Republican administrations approved 1115 waivers requiring Medicaid enrollees to document work, volunteering, or job training to maintain coverage. Courts repeatedly struck these down, ruling that work requirements do not promote Medicaid's objective of providing health coverage \u2014 they undermine it by causing coverage loss. The legal and policy debate continues."
+              "heading": "Work requirements: from the courts to federal law",
+              "body": "The first Trump administration approved 1115 waivers requiring some Medicaid enrollees to document work, volunteering, or job training to keep coverage. Federal courts set several approvals aside \u2014 in Gresham v. Azar (D.C. Cir., 2020) the court held that HHS had failed to weigh the waivers' effect on coverage, Medicaid's central objective. In July 2025, Congress put community-engagement requirements for expansion adults into federal law (P.L. 119-21), taking effect January 1, 2027."
             },
             {
               "type": "concepts_grid",
@@ -1077,7 +1072,7 @@
                 {
                   "icon": "ti-briefcase",
                   "title": "Work requirements",
-                  "body": "Require documentation of employment or community engagement \u2014 legally contested and often blocked."
+                  "body": "Require documentation of employment or community engagement \u2014 contested in court, then written into federal law for expansion adults in 2025."
                 },
                 {
                   "icon": "ti-home",
@@ -1180,8 +1175,8 @@
                   "source": "KFF"
                 },
                 {
-                  "value": "$1,300",
-                  "label": "Average daily cost of nursing facility care vs. ~$200 for home care",
+                  "value": "$127,750",
+                  "label": "Median annual cost of a private nursing home room, 2024 (home health aide: $77,792)",
                   "source": "Genworth"
                 },
                 {
@@ -1200,7 +1195,7 @@
               "type": "callout",
               "variant": "tip",
               "heading": "Money follows the person",
-              "body": "'Money Follows the Person' (MFP) is a CMS demonstration program that helps people transition from nursing facilities back to community settings. When someone leaves a nursing facility for home care, their Medicaid funding moves with them. Vermont has been a national leader in this model."
+              "body": "'Money Follows the Person' (MFP) is a CMS demonstration program that helps people transition from nursing facilities back to community settings. When someone leaves a nursing facility for home care, their Medicaid funding moves with them."
             }
           ],
           "quiz": {
@@ -1298,7 +1293,7 @@
             {
               "type": "text",
               "heading": "The quality measurement challenge",
-              "body": "Medicaid serves populations with significant health complexity \u2014 high rates of chronic conditions, behavioral health needs, social determinants challenges, and limited prior access to care. Measuring quality in this context requires measures that account for acuity and capture what matters to enrollees.\n\nCMS requires states to collect and report standardized quality data through the Medicaid and CHIP Quality Improvement Program (Medicaid managed care rules) and state reporting to CMS's Transformed Medicaid Statistical Information System (T-MSIS)."
+              "body": "Medicaid serves populations with significant health complexity \u2014 high rates of chronic conditions, behavioral health needs, social determinants challenges, and limited prior access to care. Measuring quality in this context requires measures that account for acuity and capture what matters to enrollees.\n\nCMS requires states to collect and report standardized quality data through the managed care quality rules (42 CFR Part 438, including annual external quality review), the Adult and Child Core Sets (mandatory for the Child Core Set and adult behavioral health measures since 2024), and state data submissions to CMS's Transformed Medicaid Statistical Information System (T-MSIS)."
             },
             {
               "type": "concepts_grid",
@@ -1340,12 +1335,7 @@
               "type": "callout",
               "variant": "info",
               "heading": "Value-based payment in Medicaid managed care",
-              "body": "CMS increasingly pushes states to include value-based payment (VBP) requirements in MCO contracts. Under VBP, MCOs pass some financial risk to providers \u2014 paying primary care practices based on quality and outcomes rather than pure volume. Vermont's OneCare model is a leading example of provider-level VBP within a Medicaid context."
-            },
-            {
-              "type": "audio_slot",
-              "label": "Quality director perspective: measuring what matters",
-              "hint": "Interview a Medicaid MCO or state quality director about the practical challenges of quality measurement \u2014 data gaps, attribution, adjusting for social determinants. Recommended: 6\u20138 minutes."
+              "body": "CMS increasingly pushes states to include value-based payment (VBP) requirements in MCO contracts. Under VBP, MCOs pass some financial risk to providers \u2014 paying primary care practices based on quality and outcomes rather than pure volume."
             }
           ],
           "quiz": {
