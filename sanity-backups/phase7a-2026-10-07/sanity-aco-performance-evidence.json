@@ -1,0 +1,603 @@
+{
+  "_createdAt": "2026-05-31T03:20:41Z",
+  "_id": "aco-performance-evidence",
+  "_rev": "2zkDeD7zc2Ko2DfFHnbdDg",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T03:20:41Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Central Question: Do ACOs Actually Save Money?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Since the first Medicare Shared Savings Program ACOs began in April 2012, a persistent and important debate has surrounded a deceptively simple question: do ACOs reduce healthcare spending, or do they merely attract providers who were already efficient? The answer matters enormously for health policy—if ACOs primarily generate shared savings by selecting favorable benchmarks and low-cost patient panels, then the program transfers money to providers without improving efficiency. If they genuinely change care patterns, they offer a scalable path to sustainable Medicare."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The evidence is nuanced and depends critically on how savings are measured. Comparing ACO spending to the program benchmark—the method CMS uses to calculate shared savings payments—consistently shows large, favorable results. But the benchmark is not necessarily what spending would have been in the absence of the ACO. A more rigorous test uses a counterfactual control group of comparable non-ACO providers to estimate the treatment effect. These counterfactual analyses yield more modest, though still generally positive, findings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Understanding the distinction between benchmark-based and counterfactual-based measurement is essential for interpreting ACO research. This lesson reviews what the program-level data, independent research, and oversight bodies have found about ACO performance across financial outcomes, quality of care, and the variables that predict success."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: A benchmark-based savings estimate tells you how far below target an ACO performed. A counterfactual-based estimate tells you whether the ACO changed spending compared to a world where no ACO existed. The two numbers are not the same, and conflating them overstates ACO impact."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Program-Level Results: MSSP Performance Data 2012–2024"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS publishes annual financial and quality results for the MSSP, and these figures paint an increasingly impressive picture. In performance year 2024, 476 ACOs generated $6.6 billion in total gross savings relative to benchmarks. After accounting for $4.1 billion paid out as shared savings to ACOs, Medicare retained $2.4 billion in net savings—the largest in program history. The per-capita net savings were $241 per attributed beneficiary, up from $207 in 2023. Since the program's inception, ACOs have generated $35 billion in gross savings and $13.6 billion in net savings to Medicare."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The trajectory of program performance has improved markedly as ACOs have matured and taken on greater financial risk. In the program's early years (2012–2014), many ACOs generated little savings and a significant minority exited after failing to earn shared savings payments. By 2024, 75 percent of ACOs earned performance payments—the highest share since the program launched. ACOs in Level E and ENHANCED tracks, which carry two-sided risk, generated $5.4 billion of the $6.6 billion in total gross savings, confirming that downside accountability drives stronger performance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Quality performance has remained consistently high throughout the program's history. In 2024, nearly every ACO met CMS's quality standard. Mean blood pressure control rates rose from 77.80 percent to 79.49 percent year over year. Long-term trends show consistent improvements in preventive care screening rates, patient experience scores, and chronic disease management metrics. The quality-savings correlation supports the argument that ACOs are not cutting costs by under-delivering care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Total gross savings relative to benchmarks across all 476 MSSP ACOs in PY2024. Source: CMS PY2024 MSSP Fact Sheet.",
+          "label": "Gross ACO Savings 2024",
+          "value": "$6.6B"
+        },
+        {
+          "_key": "s2",
+          "context": "Medicare's retained savings after paying out $4.1B in ACO performance payments in PY2024—a new program record. Source: CMS PY2024 MSSP Fact Sheet.",
+          "label": "Net Medicare Savings 2024",
+          "value": "$2.4B"
+        },
+        {
+          "_key": "s3",
+          "context": "Total net Medicare savings generated by MSSP ACOs since the program launched in 2012. Source: CMS PY2024 MSSP Fact Sheet.",
+          "label": "Cumulative Net Savings 2012–2024",
+          "value": "$13.6B"
+        },
+        {
+          "_key": "s4",
+          "context": "Net savings per assigned beneficiary in PY2024, up from $207 in 2023. Source: CMS PY2024 MSSP Fact Sheet.",
+          "label": "Net Per-Capita Savings 2024",
+          "value": "$241"
+        }
+      ]
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CBO and Counterfactual Challenge"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "In April 2024, the Congressional Budget Office published a comprehensive review of Medicare ACO program performance titled \"Medicare Accountable Care Organizations: Past Performance and Future Directions.\" The CBO used counterfactual control groups—comparable providers not participating in ACOs—to estimate how much ACO participation actually reduced spending relative to what would have occurred otherwise. The CBO found \"mixed results\" across models, with some ACO programs achieving small net savings and others showing small net costs when measured against counterfactuals."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CBO's more positive findings were concentrated in specific ACO types: physician-led ACOs, ACOs with higher primary care concentration, ACOs that accepted more financial risk (downside-risk tracks), and ACOs in their earlier agreement periods. These characteristics align with the theoretical model of how ACOs should work—primary care-driven coordination, strong financial incentives, and early-stage enthusiasm for change. The finding that physician-led ACOs outperform hospital-system ACOs is particularly notable, given that most large integrated delivery systems initially assumed their scale would be an advantage."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Selection bias is a persistent methodological challenge in ACO research. Practices that choose to form or join ACOs may be systematically different from those that do not—they may already have better care management capabilities, lower baseline utilization, or more motivated clinical leadership. Researchers at Health Affairs and in peer-reviewed literature have documented that post-2017, MSSP composition increasingly shifted toward providers with lower pre-existing spending relative to their region, consistent with providers self-selecting into the program based on expected benchmark favorability."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3w1",
+      "_type": "warningBlock",
+      "message": "ACO benchmarks are designed to accomplish multiple goals—achieving savings, ensuring ACO participation, and managing risk corridor width—and therefore diverge from a pure estimate of what spending would have been without the ACO. Research published in Health Affairs Forefront noted that \"All I Do Is Win\"—beating the benchmark—does not prove spending was reduced. Policymakers, analysts, and healthcare leaders should treat program-reported savings figures as performance against targets, not proof of equivalent real-world savings.",
+      "title": "Important Caveat: Benchmark ≠ Counterfactual"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Drives ACO Success? Factors the Evidence Identifies"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Across multiple studies and program evaluations, several structural and operational factors consistently predict better ACO financial and quality performance. The most robust finding is that ACOs taking on downside risk—putting their own money at risk if they overspend—significantly outperform upside-only ACOs. Financial accountability changes provider behavior in ways that the prospect of shared savings alone does not. This is why CMS's \"Pathways to Success\" rule accelerated the timeline for mandatory risk progression."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Physician leadership is a second strong predictor. Physician-led ACOs—those not dominated by a hospital anchor—tend to generate more consistent savings and quality improvements than hospital-anchored ACOs. This may reflect the fact that hospital systems have conflicting incentives: ACO shared savings require reducing hospitalizations, yet admissions revenue is the financial backbone of hospital operations. Physician-led organizations do not face this structural tension. The CBO's 2024 review confirmed that physician-led ACOs are among the most reliably cost-reducing ACO configurations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Investment in care management infrastructure is a third key predictor. ACOs that deploy dedicated care coordinators, use predictive risk stratification to identify high-cost patients before crises, implement post-discharge follow-up programs, and engage community health workers to address social determinants of health consistently outperform ACOs that layer the ACO contract on top of an unchanged practice model. The evidence suggests that the ACO contract is a necessary but not sufficient condition for savings—the operational transformation matters as much as the financial structure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Characteristics Associated with Higher ACO Savings",
+        "points": [
+          "Downside risk accepted (two-sided tracks)",
+          "Physician-led governance—no hospital system majority",
+          "Dedicated care management and care coordination staff",
+          "Robust EHR and analytics for risk stratification",
+          "High primary care concentration among ACO participants",
+          "Earlier agreement periods with strong initial motivation"
+        ]
+      },
+      "right": {
+        "label": "Characteristics Associated with Lower ACO Savings",
+        "points": [
+          "Upside-only risk (BASIC Level A or B)",
+          "Hospital-system-anchored ACO with admission revenue conflict",
+          "No dedicated care management infrastructure",
+          "Weak data infrastructure—inability to identify high-risk patients",
+          "Late-entry ACOs inheriting favorable benchmarks",
+          "High specialist-to-primary-care ratio in participating providers"
+        ]
+      },
+      "title": "ACO Performance Predictors: Higher vs. Lower Savings"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "ACO REACH and the Next Generation ACO: Evidence from Alternative Models"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Next Generation ACO (NGACO) model (2016–2021) was designed to test whether ACOs willing to accept full two-sided risk—including capitation-like arrangements—could generate larger net savings than MSSP ACOs. The NGACO model generated $667 million in gross savings across performance years 2016 to 2019. However, after accounting for $909 million in shared savings and other payouts to risk-bearing ACOs, the NGACO model was associated with $243 million in net losses to Medicare over four performance years. CMS terminated the NGACO model after performance year 2021 on these grounds."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The NGACO experience illustrates an important tension in ACO design: higher risk levels attract providers confident in their ability to save, but generous shared savings rates can convert gross program savings into net Medicare costs. The successor ACO REACH model recalibrated this balance, keeping two-sided risk while adjusting the shared savings formula and adding an explicit health equity commitment. In 2023, ACO REACH's 132 participants generated $1.643 billion in gross savings and $695 million in net savings after incentive payments—a net-positive result that justified the program's continuation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "ACO REACH distinguished itself from MSSP through several design features: a total cost of care model (rather than Parts A and B only), a requirement that at least 75 percent of each ACO's governing body consist of participating providers (to prevent private equity capture), and explicit equity benchmarks requiring ACOs to collect and report race, ethnicity, and language data and develop health equity plans. The 2025 announcement of potential NGACO REACH restructuring introduced uncertainty about the model's future trajectory."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5ex1",
+      "_type": "exampleBlock",
+      "content": "Aledade is one of the largest physician-focused ACO operators in the United States, providing technology, data analytics, and care management support to independent primary care practices to help them succeed in ACO models. As of 2024, Aledade had grown to support hundreds of practices across dozens of states, participating in both MSSP and ACO REACH.\nAledade's approach exemplifies the physician-led model the evidence favors: independent practices retain ownership and autonomy, while Aledade provides the risk stratification tools, care coordinator training, and claims analytics that individual practices could not afford alone. Their publicly reported results consistently show above-average shared savings rates relative to national MSSP averages, supporting the thesis that physician-led, well-supported ACOs outperform hospital-anchored counterparts. Source: Aledade company publications and NAACOS ACO data.",
+      "title": "Aledade: A Physician-Led ACO Network"
+    },
+    {
+      "_key": "s6h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Quality Evidence: What ACOs Deliver Beyond Cost"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s6p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "While the financial evidence on ACOs is debated, the quality evidence is more consistently positive. Studies using Medicare claims data and CAHPS surveys show that ACO beneficiaries receive more preventive services, more follow-up care after hospitalization, and report better care coordination experiences than comparable non-ACO patients. ACO quality reporting has yielded year-over-year improvements in blood pressure control, diabetic eye exam rates, tobacco cessation counseling, and influenza vaccination rates—all clinically meaningful outcomes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A particularly important quality finding involves potentially avoidable hospitalizations. Multiple studies have shown that ACOs reduce ambulatory care-sensitive condition hospitalizations—admissions for conditions like heart failure exacerbation, diabetic ketoacidosis, and asthma that are generally preventable with good outpatient management. Reducing these admissions is clinically valuable, represents genuine care improvement rather than cost-shifting, and aligns with the theoretical mechanism by which ACOs should improve the delivery of care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Health equity remains a significant unresolved quality challenge. Early analyses found that ACOs were more likely to be located in higher-income, less racially diverse areas, and that attributed populations skewed toward healthier, more educated patients. CMS has responded with quality measures that explicitly stratify results by race and ethnicity, equity bonuses in ACO REACH, and data collection requirements around social risk factors. Whether ACOs can reduce disparities—not just average costs—is now one of the central quality questions in the field."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The best-performing ACOs combine financial accountability (downside risk), physician leadership, care management infrastructure, and equity-focused quality measurement. No single element alone is sufficient—all four must be present for consistently strong performance."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "ACO performance data must be interpreted carefully: benchmark-based savings (what CMS reports) and counterfactual-based savings (what independent researchers measure) are different numbers, with the latter being more methodologically rigorous.",
+        "In performance year 2024, MSSP ACOs generated $2.4 billion in net savings and $6.6 billion in gross savings—record figures—with 75% of ACOs earning performance payments.",
+        "The Congressional Budget Office's 2024 review found \"mixed results\" using counterfactual methods, with positive findings concentrated in physician-led, primary-care-heavy, downside-risk ACOs.",
+        "Selection bias is a persistent challenge: practices that join ACOs may already be more efficient, making it difficult to isolate the true causal effect of ACO participation on spending.",
+        "The Next Generation ACO model (2016–2021) produced gross savings but generated $243 million in net Medicare costs after shared savings payments, illustrating the tension between high risk tolerance and program economics.",
+        "ACO REACH (launched 2023) addressed NGACO shortcomings with rebalanced incentives, a 75% provider governance requirement, and explicit health equity commitments, generating $695 million in net savings in its first year.",
+        "Quality evidence is more consistently positive than financial evidence: ACO beneficiaries receive more preventive care, have fewer avoidable hospitalizations, and report better care coordination than comparable non-ACO patients.",
+        "Health equity remains an unresolved quality challenge, with early evidence that ACOs disproportionately served lower-risk, more affluent populations—a gap CMS is actively trying to address through redesigned quality requirements."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The CBO's April 2024 report used comparison groups of non-ACO providers to estimate the counterfactual impact of ACO participation. It found \"mixed results\" overall—not universal savings—and identified physician-led ACOs, those accepting downside risk, and those with higher primary care concentration as the most reliably cost-reducing configurations. This is distinct from the CMS benchmark-based reports, which show large savings because benchmarks are not pure counterfactuals.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "ACOs universally reduced Medicare spending by large margins across all program models."
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "ACOs had mixed results, with the most consistent savings found in physician-led, downside-risk ACOs with high primary care concentration."
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "ACOs increased Medicare spending in all models studied."
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The CBO found no meaningful difference between ACO and non-ACO provider spending patterns."
+        }
+      ],
+      "question": "What did the Congressional Budget Office's 2024 review find when it compared ACO spending to counterfactual control groups rather than to program benchmarks?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] CMS — MSSP PY2024 Financial and Quality Performance Results Fact Sheet — https://www.cms.gov/files/document/fact-sheet-ssp-py24-financial-quality-results.pdf — Supports all 2024 and cumulative MSSP performance statistics."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Congressional Budget Office — Medicare Accountable Care Organizations: Past Performance and Future Directions (April 2024) — https://www.cbo.gov/publication/60213 — Supports counterfactual analysis findings, physician-led ACO advantage, mixed results conclusion."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Health Affairs Forefront — \"All I Do Is Win: Why Beating Benchmarks Doesn't Mean That ACOs Are Reducing Costs\" — https://www.healthaffairs.org/content/forefront/all-do-win-why-beating-benchmarks-doesn-t-mean-acos-reducing-costs — Supports benchmark vs. counterfactual distinction and selection effects discussion."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] CMS — Next Generation ACO Model — https://innovation.cms.gov/innovation-models/next-generation-aco-model — Supports NGACO gross savings ($667M) and net losses ($243M) statistics."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] CMS — ACO REACH PY2023 Financial and Quality Performance Results Fact Sheet — https://www.cms.gov/priorities/innovation/aco-reach-py2023-financial-and-quality-performance-results-fact-sheet — Supports ACO REACH 2023 statistics: 132 ACOs, $1.643B gross, $695M net savings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Benchmarking Changes and Selective Participation in the Medicare Shared Savings Program (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC10228701/ — Supports selection bias discussion and post-2017 compositional shift in MSSP."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] NAACOS — 2024 ACO Publications — https://www.naacos.com/2024-aco-publications/ — Supports references to ACO quality improvement trends and program performance literature."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "value-based-care",
+  "order": 6,
+  "slug": {
+    "_type": "slug",
+    "current": "aco-performance-evidence"
+  },
+  "title": "ACO Performance: What the Evidence Shows"
+}

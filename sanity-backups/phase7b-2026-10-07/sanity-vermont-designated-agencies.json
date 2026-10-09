@@ -1,0 +1,526 @@
+{
+  "_createdAt": "2026-06-02T17:54:57Z",
+  "_id": "vermont-designated-agencies",
+  "_rev": "jFV5UM63HEdRp4x3punS7i",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T17:54:57Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Are Vermont’s Designated Agencies?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont organizes its public behavioral health system around a network of Designated Agencies (DAs) — private, nonprofit, community-based organizations that the state formally designates to deliver mental health, substance use, and developmental disability services in defined geographic regions. There are 10 Designated Agencies, with the state designating one to serve each region, so that every part of Vermont has a clear, accountable local provider of these services."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Alongside the 10 DAs, Vermont works with two Specialized Service Agencies (SSAs): Pathways Vermont, which serves adults, and NFI Vermont (the Northeastern Family Institute), which serves children and families. Together the DAs and SSAs form the backbone of Vermont’s publicly funded behavioral health \"System of Care.\""
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The defining feature of this model is that responsibility is explicit and local. Rather than leaving it to chance whether a region has adequate community mental health services, Vermont assigns a designated, accountable agency to each region and funds it to serve everyone who needs care — a structure quite different from the fragmented patchwork found in many states."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A Designated Agency is a private nonprofit that Vermont formally designates to provide mental health, substance use, and developmental disability services for a specific region. Vermont has 10 DAs (one per region) plus two Specialized Service Agencies."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "One per geographic region of Vermont",
+          "label": "Designated Agencies",
+          "value": "10"
+        },
+        {
+          "_key": "s2",
+          "context": "Pathways Vermont (adults) and NFI Vermont (children/families)",
+          "label": "Specialized Service Agencies",
+          "value": "2"
+        },
+        {
+          "_key": "s3",
+          "context": "For mental health, via the DA network",
+          "label": "Vermonters served per year",
+          "value": "25,000+"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Roots in Deinstitutionalization"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Designated Agency model grew out of the deinstitutionalization movement of the mid-twentieth century. For decades, people with serious mental illness were confined in large state psychiatric hospitals — Vermont’s was the Vermont State Hospital in Waterbury — often for years or decades. The federal Community Mental Health Act, signed by President Kennedy in 1963, set out to replace this with community-based care, shifting resources toward local nonprofit services."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont built its DA network as the community-based system that deinstitutionalization required. The logic was that local, community-rooted nonprofits would be better positioned than a distant state institution to support people living in their own communities. Over time the DAs became the primary home for community mental health, developmental disability, and substance use services across the state."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This history became vivid in 2011, when the Vermont State Hospital in Waterbury was severely damaged and effectively closed after flooding from Tropical Storm Irene, capping years of decertification and quality problems. Its closure accelerated Vermont’s reliance on a more distributed, community-based system — making the strength of the DA network a matter of statewide importance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex1",
+      "_type": "exampleBlock",
+      "content": "The Vermont State Hospital in Waterbury, the state’s long-standing psychiatric institution, was forced to close in 2011 following flooding from Tropical Storm Irene, on top of earlier decertification and quality concerns.\nIts closure pushed Vermont toward an even more decentralized model, increasing the importance of the community-based Designated Agencies that care for people outside of institutional walls.",
+      "title": "The Closure of the Vermont State Hospital"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Designation Works"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Designation is a formal, statutory process. Under Vermont law (18 V.S.A. § 8907 and related statutes), the state’s commissioners ensure that community services for people with mental health conditions, psychiatric disabilities, and developmental disabilities are provided through designated community agencies, and they designate the public or private nonprofit agencies to provide or arrange for those services in each area."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Designation is not permanent or automatic — agencies must be periodically recertified, meeting state standards to keep their designated status. This gives the state ongoing leverage over quality and accountability: a Designated Agency holds a defined responsibility for its region, and that responsibility is reviewed and renewed rather than granted indefinitely."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Many of the DAs are organized collaboratively through Vermont Care Partners, a network combining the Vermont Council of Developmental and Mental Health Services and the Vermont Care Network — a collaboration of sixteen nonprofit community-based member agencies serving Vermonters affected by developmental disabilities, mental health conditions, and substance use disorders. This shared infrastructure helps the agencies coordinate, advocate, and operate consistently statewide."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "State law directs that community services be delivered through designated agencies, which the state formally designates by region (18 V.S.A. § 8907).",
+          "title": "Statutory designation"
+        },
+        {
+          "_key": "step2",
+          "description": "One Designated Agency is responsible for each geographic region, so coverage is explicit rather than left to chance.",
+          "title": "Regional responsibility"
+        },
+        {
+          "_key": "step3",
+          "description": "Designation must be periodically renewed against state standards, giving the state ongoing accountability leverage.",
+          "title": "Recertification"
+        },
+        {
+          "_key": "step4",
+          "description": "Many agencies coordinate through Vermont Care Partners for consistency, advocacy, and shared operations.",
+          "title": "Shared network"
+        }
+      ],
+      "title": "The Logic of the Designated Agency System"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How the Agencies Are Funded"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Funding is what makes the model work — and it reflects the same move away from pure fee-for-service discussed earlier in this course. Rather than billing per visit, DAs are largely funded through case rates and a capitation arrangement: the Department of Vermont Health Access (DVHA), Vermont’s Medicaid agency, makes per-member-per-month payments to the Department of Mental Health, which in turn pays the agencies, supplemented by additional state and federal funds for services and people not covered by Medicaid."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This capitated, case-rate structure gives agencies flexibility to provide comprehensive services — case management, crisis response, community support — without the financial pressure of fee-for-service to limit care to the most billable activities. It is, in effect, a value-based approach that predates much of the national value-based payment movement. Most of the Department of Mental Health’s budget — on the order of roughly $200 million — flows to these agencies, much of it from federal Medicaid funds."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because so much funding and responsibility is concentrated in the DAs, their financial health and workforce capacity are recurring statewide concerns. When DAs face staffing shortages or funding pressure, the effects ripple across Vermont’s entire behavioral health safety net — which is why the agencies feature prominently in the state’s legislative and budget debates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont funds its Designated Agencies largely through Medicaid case rates and capitation rather than fee-for-service — a value-based approach that gives agencies the flexibility to deliver comprehensive community care."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Vermont’s System Is Studied"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont’s Designated Agency model is frequently cited as a comparatively organized approach to community behavioral health. By assigning clear regional responsibility, funding agencies flexibly, and building a comprehensive local presence, the state achieves a level of coordination and coverage that fragmented systems in other states often lack. A single agency like the Howard Center, the Designated Agency for Chittenden County, can run dozens of programs and serve many thousands of people across mental health, substance use, and developmental disability needs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The model is not without strain. Like behavioral health systems everywhere, the DAs face workforce shortages, rising demand, and funding pressures, and Vermont continues to reform and supplement the system — including by adding Certified Community Behavioral Health Clinic funding in 2024, layering a national model on top of its existing infrastructure. The DA system is a strong foundation, not a finished solution."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For this course, the Designated Agencies illustrate in concrete, real-world form many of the principles covered earlier: community-based care, integration of mental health and substance use services, accountable regional responsibility, and value-based funding. They set the stage for Vermont’s equally distinctive opioid treatment system — the Hub-and-Spoke model — examined in the next lesson."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5ex1",
+      "_type": "exampleBlock",
+      "content": "The Howard Center is the Designated Agency for Chittenden County (greater Burlington), Vermont’s most populous region, providing mental health and developmental disability services and serving as the lead substance use provider for the area.\nIt operates more than fifty programs with a staff of around 1,300 and supports roughly 19,000 people a year across more than 60 locations — illustrating the scale and comprehensiveness a single Designated Agency can reach.",
+      "title": "Howard Center — A Designated Agency in Action"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Vermont delivers public behavioral health care through 10 Designated Agencies — nonprofit organizations the state formally designates, one per region — plus two Specialized Service Agencies (Pathways Vermont and NFI Vermont).",
+        "The model grew out of mid-century deinstitutionalization and the 1963 federal Community Mental Health Act, which shifted care from state hospitals to community nonprofits.",
+        "The closure of the Vermont State Hospital in Waterbury in 2011 deepened the state’s reliance on this decentralized, community-based system.",
+        "Designation is statutory (18 V.S.A. § 8907), assigns explicit regional responsibility, and must be periodically recertified, giving the state ongoing accountability over quality.",
+        "DAs are funded largely through Medicaid case rates and per-member-per-month capitation rather than fee-for-service, a value-based approach that funds comprehensive community care.",
+        "The system serves more than 25,000 Vermonters a year for mental health, with most of the Department of Mental Health’s roughly $200 million budget flowing to these agencies.",
+        "The Designated Agencies embody course principles — community-based, integrated, accountable, value-based care — and set the foundation for Vermont’s Hub-and-Spoke opioid model."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Vermont designates a single accountable nonprofit per region (10 Designated Agencies plus two Specialized Service Agencies) to deliver community behavioral health and developmental disability services, funding them through Medicaid case rates and capitation rather than fee-for-service. This explicit regional responsibility is what distinguishes the model.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The state directly operates large psychiatric hospitals in each region."
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The state formally designates one accountable nonprofit agency per region to provide community mental health, substance use, and developmental disability services, funded largely through Medicaid case rates and capitation."
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Each region relies on for-profit hospitals competing for fee-for-service patients."
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Services are provided only by state employees billing per visit."
+        }
+      ],
+      "question": "What is the defining structural feature of Vermont’s Designated Agency model?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Vermont Department of Mental Health — Designated Agencies and Specialized Service Agencies — https://mentalhealth.vermont.gov/services/designated-agencies-and-specialized-service-agencies — DAs as designated nonprofits; Pathways Vermont and NFI as Specialized Service Agencies."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Vermont Department of Mental Health — Designated Agencies (community mental health agencies) — https://mentalhealth.vermont.gov/community-resources/das-community-mental-health-agencies — one Designated Agency per region; 10 DAs statewide."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Vermont Care Partners — Agencies — https://vermontcarepartners.org/agencies/ — network of sixteen nonprofit member agencies serving developmental disabilities, mental health, and substance use."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] FindLaw — 18 V.S.A. § 8907 (Designated agencies) — https://codes.findlaw.com/vt/title-18-health/vt-st-tit-18-sect-8907.html/ — statutory basis for designation of community mental health and developmental disability agencies."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Vermont Public — State of Mind: Community Mental Health — https://www.vermontpublic.org/vpr-news/2013-10-21/state-of-mind-community-mental-health-bearing-the-burden — deinstitutionalization roots, Community Mental Health Act, ~25,000+ served and DMH budget largely funding the agencies."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Howard Center — About Howard Center — https://howardcenter.org/about-us/about/ — Howard Center as Chittenden County Designated Agency; scale of programs, staff, and people served."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "behavioral-health-integration",
+  "order": 1,
+  "slug": {
+    "_type": "slug",
+    "current": "vermont-designated-agencies"
+  },
+  "title": "Vermont's Designated Agencies: A Model for Community Mental Health"
+}

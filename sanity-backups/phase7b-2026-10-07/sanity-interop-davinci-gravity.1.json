@@ -1,0 +1,782 @@
+{
+  "_createdAt": "2026-05-29T03:47:05Z",
+  "_id": "interop-davinci-gravity",
+  "_rev": "9Kr4sqmOhDZgAxKUOFc1OX",
+  "_type": "academyModule",
+  "_updatedAt": "2026-10-08T12:33:32Z",
+  "body": [
+    {
+      "_key": "s1h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Are FHIR Implementation Guides?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "FHIR (Fast Healthcare Interoperability Resources) is often called \"the language of modern healthcare data,\" but a language alone is not enough. Two systems can both speak FHIR and still be unable to exchange data usefully if they use different resource structures, terminology codes, or workflow expectations. This is where Implementation Guides — IGs — come in. An IG is a formal, published specification that narrows the broad flexibility of FHIR into precise, agreed-upon rules for a specific use case. It defines which resources must be supported, which data fields are required versus optional, which code systems to use, and how the API calls should flow between systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "HL7 International publishes FHIR IGs through a rigorous multi-stage process. A project team drafts the IG, submits it for community ballot as a \"Standard for Trial Use\" (STU), receives and reconciles hundreds of public comments from implementers, vendors, and regulators, and then publishes a revised version that reflects real-world feedback. Only after sustained, demonstrated implementation does a specification mature toward Normative status. This process ensures that IGs are not just theoretical documents — they are living standards shaped by the engineers, clinicians, and payers who actually build and operate systems against them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two HL7 FHIR Accelerator programs have produced the most influential IGs in the payer-provider space: the Da Vinci Project and the Gravity Project. An Accelerator is a structured program inside HL7 that brings together industry stakeholders to build and test IGs faster than the traditional standards process alone allows. Each Accelerator has a specific domain focus, a governing structure, and a commitment to testing in real pilots before declaring work complete."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1analogy",
+      "_type": "analogyBlock",
+      "analogy": "Think of FHIR as the English language and an Implementation Guide as a legal contract written in English. Both parties understand the words, but the contract specifies exactly which terms mean what, what must be delivered by when, and what happens when something goes wrong. Without the contract, two fluent English speakers can still talk past each other.",
+      "concept": "FHIR is flexible by design; IGs add the constraints that make interoperability precise and reliable."
+    },
+    {
+      "_key": "s1p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Da Vinci Project was founded in 2019 as an HL7 FHIR Accelerator with a specific mandate: accelerate FHIR adoption in value-based care by solving the most painful payer-provider data exchange problems. The project started with twenty-two founding member organizations and has grown to more than sixty industry-leading payers, providers, and health IT vendors. Its work is organized into use cases — discrete problem statements — each of which produces its own Implementation Guide and reference implementation. CMS's prior authorization interoperability mandates, finalized in the 2024 CMS-0057-F rule, cite Da Vinci IGs directly as the required technical standards."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p5s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Gravity Project has a different origin and a different focus. It was initiated in November 2018 by the Social Interventions Research and Evaluation Network (SIREN) at the University of California, San Francisco, in collaboration with EMI Advisors LLC of Bethesda, Maryland. With initial funding from the Robert Wood Johnson Foundation, SIREN launched Gravity in 2019 as a national collaborative effort to develop structured data standards for social determinants of health (SDOH). Where Da Vinci attacks billing and authorization friction, Gravity attacks a different gap: the absence of standardized, machine-readable codes for the social conditions — food insecurity, housing instability, transportation barriers — that drive as much as 80 percent of health outcomes but are almost never documented in a form that clinical systems can act on."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1stats",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Payers, providers, and health IT vendors actively building FHIR IGs together",
+          "label": "Da Vinci Member Organizations",
+          "value": "60+"
+        },
+        {
+          "_key": "s2",
+          "context": "Initiated by SIREN at UCSF with Robert Wood Johnson Foundation funding",
+          "label": "Gravity Project Launch Year",
+          "value": "2019"
+        },
+        {
+          "_key": "s3",
+          "context": "Current published STU version, released May 2025; v3.0 in ballot",
+          "label": "Gravity SDOH Clinical Care IG",
+          "value": "2.3.0"
+        },
+        {
+          "_key": "s4",
+          "context": "Current STU version cited in CMS-0057-F prior authorization mandate",
+          "label": "Da Vinci PAS IG Version",
+          "value": "2.1.0"
+        }
+      ]
+    },
+    {
+      "_key": "s2h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Da Vinci IGs: PDex, PAS, CRD, and DTR"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Da Vinci has published more than a dozen Implementation Guides. Four have become the centerpiece of federal interoperability mandates and real-world payer-provider integrations: the Payer Data Exchange IG (PDex), the Prior Authorization Support IG (PAS), the Coverage Requirements Discovery IG (CRD), and the Documentation Templates and Rules IG (DTR). Together these four IGs address the most administratively burdensome touchpoints in the American healthcare system: sharing a patient's longitudinal record when they switch payers, submitting and adjudicating prior authorization requests in near real-time, and ensuring that providers surface payer coverage rules inside their own EHR workflow before ordering a service."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Payer Data Exchange IG (PDex), currently at version 2.1.0 (STU2.1) with version 2.2.0 in continuous development, defines the FHIR API surface that enables two critical data flows. First, payer-to-payer exchange: when a patient changes health plans, the new payer can call the old payer's PDex API to retrieve the patient's complete clinical history as FHIR resources conforming to US Core profiles. Second, payer-to-provider exchange: providers can call a payer's PDex endpoint to retrieve administrative and claims-derived clinical data about a patient, eliminating fax-based information requests. PDex has been updated to align with both US Core 6.1.0 and 7.0.0, enabling compliance with both CMS-0057-F and the ONC HTI-1 rule simultaneously."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Prior Authorization Support IG (PAS), at version 2.1.0, defines a FHIR-based API workflow that replaces traditional X12 278 prior authorization transactions. Under PAS, a provider's EHR submits a FHIR Claim resource — bundled with all required supporting documentation — to the payer's PAS endpoint. The payer's system evaluates the request, potentially in real-time using clinical decision support, and returns a ClaimResponse resource. The entire round-trip can happen in seconds for straightforward cases, compared to the 72-hour or multi-day waits that characterize traditional PA processes. CMS-0057-F identifies PAS IG version STU 2.0.1 as the normative standard for the Prior Authorization API that covered payers must implement by January 1, 2027."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "When a clinician opens an order in their EHR, CRD fires a FHIR hook to the payer. The payer returns coverage requirements — whether PA is needed, which documentation templates apply — directly inside the EHR workflow, before the order is placed.",
+          "title": "CRD: Discover Coverage Rules at the Point of Care"
+        },
+        {
+          "_key": "step2",
+          "description": "If CRD signals that documentation is required, DTR launches a SMART-on-FHIR app within the EHR. The app pre-populates documentation templates with data already in the record, prompting the clinician only for missing information. This dramatically reduces manual data entry.",
+          "title": "DTR: Complete Documentation Inside the EHR"
+        },
+        {
+          "_key": "step3",
+          "description": "Once documentation is complete, the EHR assembles a FHIR Bundle and submits it to the payer's PAS endpoint. The payer evaluates the request and returns a real-time response — approved, pended, or denied — with the explanation included in the structured FHIR response.",
+          "title": "PAS: Submit the Prior Auth Request as FHIR"
+        },
+        {
+          "_key": "step4",
+          "description": "The entire workflow — from order placement to authorization decision — happens inside structured, auditable FHIR API calls. No faxes, no phone queues, no manual re-keying of data that already exists in the EHR.",
+          "title": "Close the Loop: Eliminate the Fax"
+        }
+      ],
+      "title": "How the Da Vinci CRD + DTR + PAS Workflow Flows"
+    },
+    {
+      "_key": "s2p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Coverage Requirements Discovery (CRD), currently at version 2.1.0, is the upstream trigger in the Da Vinci burden-reduction workflow. It leverages CDS Hooks — a standard for embedding clinical decision support into EHR workflows — to allow payers to inject coverage information at the exact moment a clinician is making a treatment decision. CRD answers the question \"Does this patient's plan require prior authorization for this service?\" before the order is finalized, not after. This timing is critical: it is far more efficient to surface a coverage requirement during the ordering workflow than to discover a PA is needed only after a claim is denied."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p5s",
+          "_type": "span",
+          "marks": [],
+          "text": "Documentation Templates and Rules (DTR), at version 2.1.0, is the companion to CRD. Where CRD identifies what is required, DTR provides the mechanism for gathering it. DTR uses SMART on FHIR to launch a payer-curated questionnaire application inside the provider's EHR. Using CQL (Clinical Quality Language) logic, the app queries the patient's FHIR records to pre-populate answers wherever the data already exists, surfacing only the truly missing information to the clinician. CMS has established its own Document Requirements Lookup Service (DRLS) — which combines CRD and DTR functionality — specifically for Medicare Fee-for-Service programs, validating the architecture at the federal level."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2compare",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Traditional Prior Authorization",
+        "points": [
+          "Submitted via phone call, fax, or X12 EDI",
+          "Average decision time: 24 hours to multiple days",
+          "Documentation often requested separately after submission",
+          "Provider staff spend hours on administrative follow-up",
+          "No structured feedback on denial reason"
+        ]
+      },
+      "right": {
+        "label": "Da Vinci PAS + CRD + DTR",
+        "points": [
+          "Submitted as structured FHIR API call from within EHR",
+          "Real-time responses possible for straightforward cases",
+          "Documentation assembled automatically using CQL logic",
+          "Clinical staff focus on patient care, not paperwork",
+          "Structured denial reason codes returned in FHIR ClaimResponse"
+        ]
+      },
+      "title": "Traditional Prior Auth vs. Da Vinci FHIR-Based PA"
+    },
+    {
+      "_key": "s3h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Da Vinci in Regulation: How CMS-0057-F Codified These IGs into Law"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CMS Interoperability and Prior Authorization Final Rule — formally CMS-0057-F — was published in January 2024 and represents the most consequential federal interoperability mandate since the 2020 CMS and ONC interoperability rules. The rule applies to Medicare Advantage organizations, state Medicaid and CHIP fee-for-service programs, Medicaid managed care plans, CHIP managed care entities, and Qualified Health Plan issuers on the Federally Facilitated Exchanges. Collectively, these plans cover the majority of Americans with government-sponsored or exchange-based coverage."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS-0057-F establishes a two-phase compliance timeline. The first phase took effect January 1, 2026: covered payers must now respond to standard prior authorization requests within 7 calendar days and to expedited requests within 72 hours; they must include specific, structured reasons for any denial; and they must begin publicly reporting prior authorization metrics, with the first annual reports due March 31, 2026 covering calendar year 2025 data. These provisions are not FHIR-specific — they are operational requirements that any payer must meet regardless of their technology approach. However, they create enormous pressure for automation, because manual PA processes cannot reliably meet 72-hour response windows at scale."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The second phase — and the one that directly references Da Vinci IGs — takes effect January 1, 2027. By that date, covered payers must have four FHIR-based APIs live and in production: a Patient Access API (based on PDex), a Provider Access API (also based on PDex), a Payer-to-Payer API (PDex again), and a Prior Authorization API based on Da Vinci PAS IG version STU 2.0.1. This is a landmark moment in U.S. healthcare standards history: for the first time, a specific named private-sector Implementation Guide — developed by a multi-stakeholder coalition, not a government body — is cited by name in a federal rule as a required technical standard. The Da Vinci Project's architecture has, in effect, become federal infrastructure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3callout",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3callouts",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS-0057-F requires covered payers to implement the Da Vinci PAS IG (STU 2.0.1) as the technical standard for their Prior Authorization API by January 1, 2027 — making Da Vinci specifications enforceable federal requirements for Medicare Advantage, Medicaid, CHIP, and exchange plans."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s3p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "The compliance landscape is challenging. Survey data from WEDI (Workgroup for Electronic Data Interchange) from late 2025 found that many payers were still in early stages of implementation for the Prior Authorization API specifically, with readiness varying widely across plan types and sizes. Smaller plans and state Medicaid agencies face particularly steep technical lift, as they may lack the internal engineering capacity to build FHIR API infrastructure from scratch. This has driven a cottage industry of FHIR platform vendors offering turnkey compliance solutions built on top of the Da Vinci specifications."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p5s",
+          "_type": "span",
+          "marks": [],
+          "text": "The regulation also reflects a broader policy strategy: rather than CMS building and mandating its own proprietary technology, the agency is leveraging privately developed, community-consensus standards that have already been tested in real implementations. This approach reduces the risk of government-mandated technology failures and creates a market-driven path to adoption — payers who implement Da Vinci IGs well will have a competitive compliance advantage, which accelerates the overall ecosystem. In mid-2025, more than fifty major health insurers voluntarily committed to targeting at least 80 percent real-time electronic prior authorization approval rates by 2027, reflecting the industry's recognition that FHIR-based PA is not just a regulatory requirement but a genuine operational efficiency driver."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3example",
+      "_type": "exampleBlock",
+      "content": "Regence BlueCross BlueShield and MultiCare Connected Care became early proof that Da Vinci's architecture works at production scale. They launched what was described as the nation's first scalable FHIR-based prior authorization system using Da Vinci specifications. The results were dramatic: 94 percent of prior authorization inquiries received an immediate response — meaning the request was either approved or determined to require no PA at all — within seconds of submission. Clinicians at MultiCare could make requests directly from within their EHR, and the authorization decision flowed back into the same workflow without phone calls or faxes. At HIMSS23, MultiCare's Anna Taylor and Regence's Heidi Kriz presented this outcome as a benchmark for what standards-based prior authorization can achieve in practice.",
+      "title": "Regence and MultiCare: The Nation's First Scalable FHIR Prior Authorization System"
+    },
+    {
+      "_key": "s4h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Gravity Project: Putting Social Determinants of Health into FHIR"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Social determinants of health — the conditions in which people are born, live, learn, work, and age — are estimated to drive 80 percent or more of health outcomes, yet they have historically been invisible to clinical information systems. A clinician might know that a patient's diabetes is poorly controlled, but unless food insecurity is documented in a structured, coded field, the health system has no way to connect that clinical problem to its social cause, refer the patient to a food pantry, or measure whether that referral reduced hospitalizations. The Gravity Project exists specifically to close that gap."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Gravity's approach is rigorous and consensus-driven. For each SDOH domain, a multi-stakeholder work group assembles the evidence base for how that condition should be defined, screened for, and documented. The group then works with SNOMED CT International, Regenstrief Institute (which stewards LOINC), and the ICD-10 Coordination and Maintenance Committee to create or curate the actual codes that represent each concept. This is painstaking work — getting a new concept into SNOMED CT or LOINC can take 12 to 18 months — but it ensures that Gravity's value sets are grounded in internationally recognized, maintained terminology systems rather than local codes that fragment data across organizations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Gravity SDOH Clinical Care Implementation Guide, currently at version 2.3.0 (STU 2.3, generated May 2025 and based on FHIR R4), defines FHIR profiles, value sets, and workflows for the full SDOH care cycle: screening a patient for social needs, documenting findings as FHIR Observations and Conditions, creating FHIR ServiceRequests for community referrals, and tracking the status of those referrals through FHIR Tasks. Version 3.0.0 is currently in ballot as of early 2026, with expanded domain coverage and improved alignment with the United States Core Data for Interoperability (USCDI)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4stats",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Including food insecurity, housing instability, transportation, education, employment, and more",
+          "label": "SDOH Domains in Gravity IG",
+          "value": "21+"
+        },
+        {
+          "_key": "s2",
+          "context": "STU 2.3, published May 2025 on FHIR R4; v3.0 balloting in 2026",
+          "label": "Current Gravity SDOH IG Version",
+          "value": "2.3.0"
+        },
+        {
+          "_key": "s3",
+          "context": "Research consensus on proportion of outcomes attributable to social and economic conditions",
+          "label": "Health Outcomes Driven by Social Factors",
+          "value": "80%"
+        },
+        {
+          "_key": "s4",
+          "context": "SNOMED CT, Regenstrief/LOINC, and ICD-10 coordination committee",
+          "label": "Terminology Bodies Partnering with Gravity",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "_key": "s4p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "The SDOH domains covered by the Gravity IG span far beyond the two most commonly discussed. Food insecurity and housing instability were the first domains completed — the Gravity Project completed its initial food insecurity and housing data identification work before expanding. The current IG includes value sets and profiles for transportation insecurity, utility insecurity (inability to pay for heat, electricity, or water), educational attainment barriers, employment and financial strain, social isolation, intimate partner violence, and digital access barriers, among others. Each domain has a corresponding set of screening questions (mapped to LOINC panel codes), condition codes (mapped to SNOMED CT and ICD-10), and intervention codes for referrals."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p5s",
+          "_type": "span",
+          "marks": [],
+          "text": "State health systems and Medicaid programs are now formally recognizing Gravity standards. Washington State's 2025 FHIR Infrastructure Roadmap named the Gravity SDOH Clinical Care IG as a core interoperability standard for community and clinical data exchange. New York sought to leverage Gravity standards for exchange of SDOH screenings between clinical systems and community-based organizations like Unite Us and FindHelp, ensuring that FHIR-compliant screenings could be ingested by social care platforms in real-time. Colorado's vendor contracts for its statewide social care platform explicitly require Gravity-aligned terminology and FHIR-based exchange. These state-level mandates are creating the network effects that transform a voluntary standard into a de facto requirement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4example",
+      "_type": "exampleBlock",
+      "content": "A patient comes in for a diabetes follow-up. The nurse administers the LOINC-coded AHC HRSN screening panel (LOINC panel code 96777-8) inside the EHR. The patient screens positive for food insecurity. The EHR creates a FHIR Observation with LOINC code 88122-7 (\"Within the past 12 months, we worried whether our food would run out before we got money to buy more\") and a FHIR Condition with SNOMED CT code 733423003 (\"Food insecurity\"). The care coordinator creates a FHIR ServiceRequest for a food pantry referral, which is transmitted via Task to the community-based organization's FHIR endpoint. When the referral is fulfilled, the CBO updates the Task status, and the EHR receives a structured confirmation — all without a fax machine or a phone call.",
+      "title": "How Gravity Codes Flow Through a Real Care Encounter"
+    },
+    {
+      "_key": "s5h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Implementation Reality: Adoption, Challenges, and What Comes Next"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Real-world adoption of both Da Vinci and Gravity IGs is accelerating but uneven. On the Da Vinci side, the Regence-MultiCare prior authorization pilot is no longer an outlier — it is a benchmark. The Da Vinci Trebuchet pilot program organizes multi-organization cohorts to test specific IGs in production environments, with 2026 cohorts already forming. CMS's regulatory deadline of January 1, 2027 for FHIR-based PA APIs is creating real urgency across the industry. Roughly 65 percent of EHR transactions on Epic systems achieved electronic prior authorization by 2025, with ePA transaction volumes nearly doubling from 2023 to early 2025."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The barriers to full PAS IG adoption are real and multi-layered. Technical complexity is one factor — implementing a compliant FHIR Claim submission endpoint that correctly handles all PAS workflow states (pended, approved, denied, modified) requires significant engineering investment. Organizational alignment is another: the PAS workflow requires both the EHR vendor and the payer platform to implement complementary sides of the same API, which means bilateral negotiations that take time. Smaller regional health plans and safety-net providers face resource constraints that make in-house implementation difficult. And despite a January 2027 deadline, WEDI's 2025 surveys found that a meaningful share of covered entities had not yet begun implementation work for the Prior Authorization API specifically."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC has provided an important tool to support PAS adoption: the Da Vinci Prior Authorization Support Test Kit, launched on Inferno (the federal FHIR testing platform). This test kit allows implementers to validate their PAS implementations against the IG's conformance requirements before going live, reducing the risk of interoperability failures in production. The existence of an authoritative, publicly available test kit is a meaningful maturity signal — it means the IG has progressed from specification to executable, testable infrastructure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5warning",
+      "_type": "warningBlock",
+      "message": "CMS-0057-F's January 1, 2027 API implementation deadline applies to Medicare Advantage, Medicaid managed care, CHIP managed care, and exchange plans. Plans that fail to meet requirements face potential compliance action. The prior authorization operational requirements (72-hour expedited, 7-day standard response) already took effect January 1, 2026. Organizations that have not begun their Da Vinci PAS implementation should treat this as an urgent priority, not a future concern.",
+      "title": "The 2027 Deadline Is Not a Soft Target"
+    },
+    {
+      "_key": "s5p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "On the Gravity side, the implementation picture is more heterogeneous. Major EHR platforms including Epic have built SDOH screening and documentation modules that align with Gravity value sets, making it easier for health systems to capture structured SDOH data. But the harder problem — closing the referral loop with community-based organizations — remains a work in progress. CBOs typically lack the technical capacity to build FHIR endpoints, so interoperability between clinical systems and the social care sector depends on intermediary platforms like Unite Us, FindHelp, and Aunt Bertha that can translate between FHIR and the APIs those organizations actually use. States like New York and Colorado are addressing this through explicit vendor contract requirements, creating the contractual obligation that drives technical investment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p5s",
+          "_type": "span",
+          "marks": [],
+          "text": "Looking ahead, both projects have substantial roadmaps. Da Vinci is expanding into clinical data exchange between providers and payers for value-based care performance measurement, and is developing IGs for attachments — the structured clinical documents that support claims adjudication. Gravity is developing version 3.0 of its SDOH Clinical Care IG with expanded domain coverage and is pursuing deeper integration with the United States Core Data for Interoperability (USCDI) — the federally required minimum dataset for EHR certification. As SDOH data elements enter USCDI and EHR certification criteria, Gravity's approach shifts from voluntary best practice to the floor that every certified EHR must support. That normative shift, once complete, will make structured social needs documentation as routine as recording a blood pressure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5stats",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Regence-MultiCare Da Vinci PAS pilot: 94% of requests resolved within seconds",
+          "label": "Immediate PA Response Rate",
+          "value": "94%"
+        },
+        {
+          "_key": "s2",
+          "context": "CMS-0057-F requires covered payers to have Da Vinci PAS API in production",
+          "label": "FHIR PA API Deadline",
+          "value": "Jan 1, 2027"
+        },
+        {
+          "_key": "s3",
+          "context": "Major health insurers voluntarily targeting 80% real-time PA approvals by 2027",
+          "label": "Insurers Committing to 80% ePA",
+          "value": "50+"
+        },
+        {
+          "_key": "s4",
+          "context": "CMS now requires 72-hour expedited and 7-day standard PA decision timelines",
+          "label": "PA Speed Requirements Live",
+          "value": "Jan 1, 2026"
+        }
+      ]
+    },
+    {
+      "_key": "twk1",
+      "_type": "takeawayBlock",
+      "points": [
+        "FHIR Implementation Guides (IGs) constrain the flexibility of FHIR into precise, use-case-specific rules — without IGs, two FHIR-compliant systems can still fail to interoperate.",
+        "The Da Vinci Project, launched in 2019 with 22 founding members and now comprising 60+ organizations, produces IGs that solve payer-provider friction around prior authorization and data exchange.",
+        "Da Vinci's CRD + DTR + PAS workflow replaces fax-based prior authorization with a real-time FHIR API loop: coverage rules surface in the EHR at order time, documentation is pre-populated, and PA decisions return in seconds.",
+        "CMS-0057-F (2024) directly cites Da Vinci PAS IG STU 2.0.1 as the required technical standard for the Prior Authorization API that covered payers must implement by January 1, 2027 — a landmark moment where a private-sector IG became federal law.",
+        "The Gravity Project was initiated in 2018 by SIREN at UCSF with Robert Wood Johnson Foundation funding to create standardized, machine-readable codes for social determinants of health, working with SNOMED CT, LOINC/Regenstrief, and ICD-10.",
+        "Gravity's SDOH Clinical Care IG (v2.3.0, May 2025) defines FHIR profiles for screening, documenting, referring, and tracking social needs across 21+ domains including food insecurity, housing instability, transportation barriers, and intimate partner violence.",
+        "The Regence-MultiCare FHIR prior authorization pilot demonstrated 94% of requests resolved immediately — proving that Da Vinci's architecture delivers transformative operational outcomes, not just theoretical interoperability.",
+        "Both Da Vinci and Gravity IGs are moving from voluntary standards toward regulatory requirements: Da Vinci via CMS-0057-F and Gravity via state Medicaid mandates and USCDI integration."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "CMS-0057-F (the 2024 CMS Interoperability and Prior Authorization Final Rule) directly cites the Da Vinci Prior Authorization Support IG, STU version 2.0.1, as the normative technical standard for the Prior Authorization API. This API must be live and in production at covered payers — including Medicare Advantage, Medicaid managed care, CHIP managed care, and exchange plans — by January 1, 2027. This makes PAS IG STU 2.0.1 one of the only privately developed, multi-stakeholder FHIR Implementation Guides to be formally mandated in a U.S. federal rule.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "It is listed as an optional reference standard that payers may choose to use for their Prior Authorization API"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "It is cited by name as the required technical standard for the Prior Authorization API that covered payers must implement by January 1, 2027"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "It defines the data elements that payers must report publicly about prior authorization volumes and timelines"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "It replaces the X12 EDI 835 transaction for claims payment between providers and Medicare Advantage plans"
+        }
+      ],
+      "question": "What role does the Da Vinci Prior Authorization Support (PAS) IG play in CMS-0057-F?"
+    },
+    {
+      "_key": "srch2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srch2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] HL7 Da Vinci Project Advances Transformational Work in 2025 — https://hl7news.hl7.org/2026/01/06/hl7-da-vinci-project-advances-transformational-work-in-2025/ — Da Vinci membership size (60+ organizations), 2026 pilot cohorts forming, CMS-0057-F Phase 1 taking effect, Regence-MultiCare 94% immediate response rate at HIMSS25"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] CMS Interoperability and Prior Authorization Final Rule CMS-0057-F — https://www.cms.gov/newsroom/fact-sheets/cms-interoperability-prior-authorization-final-rule-cms-0057-f — Rule scope (Medicare Advantage, Medicaid, CHIP, exchange plans), January 1, 2026 operational requirements, January 1, 2027 FHIR API deadline, four required APIs including Prior Authorization API based on Da Vinci PAS IG STU 2.0.1"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] The Gravity Project — SIREN at UCSF — https://sirenetwork.ucsf.edu/TheGravityProject — Gravity Project origin: initiated November 2018 by SIREN at University of California San Francisco in collaboration with EMI Advisors LLC; initial funding from Robert Wood Johnson Foundation; launched as national collaborative in 2019"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] SDOH Clinical Care IG v2.3.0 — HL7 International — https://hl7.org/fhir/us/sdoh-clinicalcare/ — Current published version of Gravity SDOH Clinical Care IG: STU 2.3.0, generated May 2025, based on FHIR R4; v3.0.0-ballot in continuous build for 2026 ballot cycle"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Da Vinci Prior Authorization Support FHIR IG v2.1.0 — HL7 International — https://hl7.org/fhir/us/davinci-pas/ — Current PAS IG version STU 2.1.0; defines FHIR Claim/ClaimResponse workflow replacing X12 278 transactions; STU 2.0.1 cited in CMS-0057-F"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Da Vinci Payer Data Exchange IG v2.1.0 — HL7 International — https://hl7.org/fhir/us/davinci-pdex/ — Current PDex IG version STU 2.1.0; supports payer-to-payer and payer-to-provider exchange; updated for US Core 6.1.0 and 7.0.0 alignment with CMS-0057-F and ONC HTI-1"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] State Momentum Grows Around Gravity SDOH-CC-IG Implementation — HL7 News — https://hl7news.hl7.org/2026/01/20/state-momentum-grows-around-gravity-sdoh-cc-ig-implementation/ — Washington State 2025 FHIR Infrastructure Roadmap naming Gravity as core standard; New York leveraging Gravity for CBO exchange; Colorado vendor contract requirements for Gravity-aligned SDOH data"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src8s",
+          "_type": "span",
+          "marks": [],
+          "text": "[8] Enhancing Healthcare Interoperability: Launching the DaVinci Prior Authorization Support (PAS) Test Kit — ONC Blog — https://healthit.gov/blog/interoperability/enhancing-healthcare-interoperability-launching-the-davinci-prior-authorization-support-pas-test-kit/ — ONC's Inferno-based PAS Test Kit for validating FHIR prior authorization implementations against the Da Vinci PAS IG conformance requirements"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "interop-davinci-gravity"
+  },
+  "title": "Da Vinci and Gravity: FHIR Implementation Guides Solving Real Payer and SDOH Problems"
+}

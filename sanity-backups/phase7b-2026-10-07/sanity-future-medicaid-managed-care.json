@@ -1,0 +1,465 @@
+{
+  "_createdAt": "2026-05-31T18:19:03Z",
+  "_id": "future-medicaid-managed-care",
+  "_rev": "2zkDeD7zc2Ko2DfFHpXeHX",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T18:19:03Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two Forces Shaping What Comes Next"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Having built up the full machinery of Medicaid managed care across this course — delivery models, federal rules, procurement, rate-setting, networks, quality, and value-based payment — we close by looking forward. Where is this system heading? The answer is shaped by two powerful forces pulling in different directions. One is aspirational: a sustained movement toward \"whole-person care\" that addresses the social factors driving health, not just medical services. The other is fiscal and political: looming federal cuts and enrollment losses that threaten to reshape the program’s scale and strain its finances. The future of Medicaid managed care lies in the tension between these two forces."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The whole-person-care movement reflects a genuine intellectual shift. There is growing recognition that medical care alone cannot produce health when a person lacks stable housing, adequate food, reliable transportation, or employment — the social determinants of health (SDOH). Medicaid managed care, with its capitated, population-focused structure and (via Section 1115) its flexibility to fund non-traditional services, has become a leading vehicle for acting on this recognition. The direction of travel is toward MCOs that address the whole person and their social context, not just their diagnoses."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "But that aspiration now collides with a harsh fiscal environment. Major federal Medicaid cuts and policy changes are projected to shrink enrollment and squeeze financing precisely as states aspire to do more. Understanding the future of Medicaid managed care means holding both realities at once — the expansive vision of whole-person care and the contractionary pressure of cuts that could undermine it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: The future of Medicaid managed care is shaped by two forces — an aspirational shift toward whole-person care addressing social determinants of health (SDOH), and a fiscal/political shift toward major federal cuts and enrollment losses that threaten the program’s scale and finances."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Federal Medicaid spending is projected to fall by about $911 billion (~14%) over a decade under recent law (H.R.1/OBBBA), increasing the uninsured by ~7.5 million (KFF)",
+          "label": "Projected Federal Cuts",
+          "value": "$911B / 14%"
+        },
+        {
+          "_key": "s2",
+          "context": "Overall Medicaid enrollment is projected to decline 9–10 million between 2027 and 2028, with MCOs losing roughly 7 million members (industry analyses)",
+          "label": "Projected Enrollment Decline",
+          "value": "9–10M"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Whole-Person Care: The Aspirational Direction"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The defining aspiration of modern Medicaid managed care is whole-person care — integrating physical health, behavioral health, services for intellectual and developmental disabilities, pharmacy, and social supports into a single coordinated approach centered on the member rather than fragmented by service type. This is the through-line connecting many earlier lessons: the carve-in trend toward integration, MLTSS coordination for complex members, and value-based payment all point toward treating the whole person rather than a collection of disconnected benefits."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Increasingly, that integration extends beyond clinical care to social needs. Medicaid managed care organizations are using Medicaid funds to address social determinants of health, supporting members’ broader needs including housing, nutrition, and employment, in recognition of the adverse health impacts of unmet social needs. The mechanisms are ones this course has already covered: Section 1115 demonstrations (the HRSN waivers), \"in lieu of services and settings\" (ILOS) authority from the 2024 final rule, and value-based arrangements that reward keeping people healthy. Together they let plans pay for a food prescription or a housing navigator when those interventions improve health more than another clinical visit would."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Effective whole-person care depends on partnership and infrastructure. Plans are increasingly partnering with community-based organizations to connect members with critical resources, recognizing that an MCO cannot itself provide housing or food but can fund and coordinate with the organizations that do. Key elements of doing this well include member- and community-centeredness, structured programming, and realignment of the delivery system. Some states are even beginning to integrate SDOH factors into risk adjustment, so plans serving members with greater social needs are paid appropriately — extending the risk-adjustment logic from clinical conditions to social circumstances."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2steps1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Unify physical, behavioral, IDD, and pharmacy care around the member rather than by service silo.",
+          "title": "Clinical integration"
+        },
+        {
+          "_key": "step2",
+          "description": "Use 1115 HRSN waivers, ILOS authority, and VBP to fund housing, nutrition, and employment supports.",
+          "title": "Social needs services"
+        },
+        {
+          "_key": "step3",
+          "description": "Partner with community-based organizations that actually deliver social supports.",
+          "title": "Community partnerships"
+        },
+        {
+          "_key": "step4",
+          "description": "Reward whole-person outcomes through value-based arrangements and, increasingly, SDOH-informed risk adjustment.",
+          "title": "Aligned payment"
+        }
+      ],
+      "title": "Building Blocks of Whole-Person Care"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Fiscal and Political Headwinds"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Against this expansive vision stand serious headwinds. Recent federal law (H.R.1, also discussed as OBBBA in the hospital-finance course) is projected to reduce federal Medicaid spending by roughly $911 billion — about 14% — over a decade, and to increase the number of uninsured people by around 7.5 million, with impacts varying widely by state (spending cuts ranging from about 4% to nearly a fifth of federal Medicaid spending in some states). These are not marginal adjustments; they represent a structural contraction of the program’s federal financing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The enrollment effects are projected to be large and are already beginning. Since the enactment of H.R.1, net Medicaid enrollment has already declined by over a million members, and overall enrollment is projected to fall by 9 to 10 million between 2027 and 2028 — with managed care plans losing roughly 7 million members. The drivers include work reporting requirements and more frequent (six-month) eligibility redeterminations beginning January 1, 2027, which research consistently shows cause eligible people to lose coverage through administrative churn, not just genuine ineligibility."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "These pressures cascade through the system in ways this course has mapped. As enrollment falls and financing tightens, the Medicaid segment’s profitability is projected to deteriorate sharply — with segment EBITDA expected to turn negative in 2025–2026. Providers, already reimbursed below fee-for-service levels in many cases, face reduced or stagnant rates alongside more uninsured patients, pressuring them to cut staff and services or close — a particular threat to rural and safety-net providers. The network adequacy, payer-mix, and sustainability problems from earlier lessons all intensify under fiscal contraction."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3w1",
+      "_type": "warningBlock",
+      "message": "Whole-person care asks Medicaid managed care to do more — addressing housing, food, and social needs. Federal cuts and enrollment losses push it to do less, with shrinking budgets and fewer members. How states and plans navigate between this expansive vision and contractionary pressure will define Medicaid managed care for the rest of the decade.",
+      "title": "The Core Tension of the Coming Years"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What States and Plans Are Prioritizing"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Facing these crosscurrents, states and advocates are converging on a set of priorities for the years ahead. The top concerns identified for Medicaid managed care include enrollment oversight (ensuring that eligible people are not wrongly disenrolled amid redeterminations and work requirements), network adequacy (keeping real access as financing tightens), benefit design (deciding what to cover when budgets shrink), and MCO accountability (holding plans to their obligations even under fiscal stress). These priorities are, notably, the very subjects of this course — the machinery built to govern managed care becomes more important, not less, when the program is under strain."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2024 final rule’s quality rating system, the strengthened network adequacy and secret-shopper requirements, the tightened MLR and directed-payment oversight — all of these accountability tools take on heightened significance in a contracting environment. When budgets are ample, oversight catches occasional problems; when budgets are cut and plans face negative margins, the temptation to under-provide care, thin networks, and avoid expensive members grows, and robust oversight becomes the main protection for vulnerable enrollees. The future will test whether the accountability framework this course described can hold under real fiscal pressure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4an1",
+      "_type": "analogyBlock",
+      "analogy": "Medicaid managed care’s future is like a household that has finally decided to invest in long-term health — better food, a safer home, preventive care (whole-person care) — just as its income is cut. The wisest response is not to abandon the vision but to protect the investments that actually keep people well and out of expensive crises, while watching spending carefully. The danger is that under financial stress, the household cuts exactly the preventive investments that would have saved money later. States face the same choice: whether cuts fall on the whole-person investments that improve health or are absorbed without gutting them.",
+      "concept": "Navigating between vision and fiscal constraint"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Conclusion: Where the Course Has Led"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "This final lesson completes a journey that began with a simple question: why do states pay private plans to manage Medicaid, and how is that arrangement governed? The answer unfolded across the course. States moved to managed care chiefly for budget predictability; they choose among delivery models that transfer different amounts of risk; they operate within the federal framework of 42 CFR Part 438; they select plans through procurement, pay them through actuarially sound risk-adjusted capitation bounded by medical loss ratios, require adequate networks and credentialed providers, measure quality through HEDIS, oversee performance through external review, and increasingly push value-based payment and whole-person care. Every piece exists to capture managed care’s benefits while guarding against its central risk: that a plan paid a fixed amount will under-serve the vulnerable people who depend on it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The future will stress-test that entire structure. Whole-person care represents Medicaid managed care reaching toward its highest ambition — using its capitated, population-based design to address the social roots of health, not just treat illness. The fiscal and political headwinds represent the constraint within which that ambition must be pursued. The same tools that govern managed care in good times — risk adjustment, network standards, quality measurement, MLR floors, oversight — are what will protect enrollees if the cuts arrive as projected. The machinery is not bureaucratic overhead; it is the safeguard that determines whether managed care serves its members or fails them when money is tight."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For the student who has worked through this course, the enduring lesson is that Medicaid managed care is neither inherently good nor bad — it is a powerful financial and delivery structure whose outcomes depend entirely on how well it is designed, paid, and overseen. It can deliver coordinated, whole-person care to tens of millions, or it can become risk transfer with thin networks and under-provided care. The difference lies in the operational details this course has covered. As Medicaid managed care moves into a future of expansive vision and fiscal pressure, those details — the rates, the rules, the networks, the measures, the oversight — will determine whether the system honors its purpose: caring for the people who have nowhere else to turn."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "The future of Medicaid managed care is shaped by two opposing forces: an aspirational shift toward whole-person care addressing social determinants of health (SDOH), and major federal cuts and enrollment losses that threaten the program’s scale and finances.",
+        "Whole-person care integrates physical health, behavioral health, IDD services, pharmacy, and social supports around the member, extending beyond clinical care to address housing, nutrition, and employment.",
+        "Plans address social needs through Section 1115 HRSN waivers, \"in lieu of services\" (ILOS) authority, value-based arrangements, community-based partnerships, and emerging SDOH-informed risk adjustment.",
+        "Recent federal law (H.R.1/OBBBA) is projected to cut federal Medicaid spending ~$911 billion (~14%) over a decade and raise the uninsured by ~7.5 million, with impacts varying widely by state.",
+        "Medicaid enrollment is projected to decline 9–10 million between 2027 and 2028 (MCOs losing ~7 million), driven by work reporting requirements and six-month redeterminations starting January 1, 2027, with declines already underway.",
+        "Fiscal pressure cascades through the system: Medicaid-segment profitability is projected to turn negative in 2025–2026, and providers face below-FFS rates plus more uninsured patients, threatening staff cuts and rural/safety-net closures.",
+        "States and advocates prioritize enrollment oversight, network adequacy, benefit design, and MCO accountability — the very machinery of this course — which becomes more important under fiscal strain because the incentive to under-provide grows.",
+        "The enduring lesson is that Medicaid managed care is neither inherently good nor bad; its outcomes depend on how well it is designed, paid, and overseen — the operational details that determine whether it delivers whole-person care or becomes risk transfer that fails vulnerable members."
+      ]
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] PMC/NIH: \"Addressing the Social Needs of Medicaid Enrollees Through Managed Care: Lessons and Promising Practices from the Field\" — https://pmc.ncbi.nlm.nih.gov/articles/PMC8861919/ — MCOs addressing social needs, member- and community-centeredness, structured programming, and delivery-system realignment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Center for Health Care Strategies: \"Addressing Social Determinants of Health via Medicaid Managed Care Contracts and Section 1115 Demonstrations\" — https://www.chcs.org/resource/addressing-social-determinants-of-health-via-medicaid-managed-care-contracts-and-section-1115-demonstrations/ — using managed care contracts and 1115 waivers to fund housing, nutrition, and employment supports."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Society of Actuaries: \"Integration of Social Determinants of Health into Medicaid Managed Care Risk Adjustment\" (2025) — https://www.soa.org/resources/research-reports/2025/sdoh-medicaid-risk-adjustment/ — emerging integration of SDOH factors into Medicaid risk adjustment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] KFF: \"Medicaid: What to Watch in 2026\" — https://www.kff.org/medicaid/medicaid-what-to-watch-in-2026/ — H.R.1 projected ~$911 billion (~14%) federal Medicaid cut over a decade, ~7.5 million more uninsured, and 2027 work requirements and six-month redeterminations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Center for Children and Families (Georgetown): \"Medicaid Managed Care: The Big Five in Q1 2026\" — https://ccf.georgetown.edu/2026/05/21/medicaid-managed-care-the-big-five-in-q1-2026/ — net enrollment decline since H.R.1, projected 9–10 million enrollment loss (MCOs losing ~7 million) 2027–2028, and top priorities (enrollment oversight, network adequacy, benefit design, MCO accountability)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Fierce Healthcare: \"2026 Outlook: The domino effect of Medicaid cuts and the hidden costs for healthcare\" — https://www.fiercehealthcare.com/payers/2026-outlook-domino-effect-medicaid-cuts-and-hidden-costs-healthcare — projected negative Medicaid-segment EBITDA in 2025–2026 and provider network strain from reduced rates and rising uninsurance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicaid-managed-care-operations",
+  "order": 17,
+  "slug": {
+    "_type": "slug",
+    "current": "future-medicaid-managed-care"
+  },
+  "title": "The Future of Medicaid Managed Care: SDOH and Whole-Person Care"
+}

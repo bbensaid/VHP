@@ -1,0 +1,54 @@
+{
+ "ops": [
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "model. Vermont is a participant. Aligns",
+   "new": "model. Vermont signed on in January 2025 but withdrew in July 2026, before its performance period began. AHEAD aligns",
+   "claim": "'Vermont is a participant' in AHEAD",
+   "verdict": "FABRICATED",
+   "sources": "Author-verified fact set (phase 3 brief, 2026-10-07): Vermont signed the AHEAD State Agreement in January 2025 and withdrew in July 2026 (WCAX / Vermont Public 2026-07-28)",
+   "note": "Stale; Vermont withdrew. Legacy Supabase fallback (lesson 5866fcff) and local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "New CMS requirements for ACOs and MA plans to stratify quality data by race, ethnicity, and social risk — and to develop equity plans to close gaps.",
+   "new": "Equity policies CMS introduced in 2022–2024 — health equity plans in ACO REACH, a health equity adjustment in MSSP quality scoring, and a planned Medicare Advantage Health Equity Index reward — several of which CMS rolled back or did not implement in 2025.",
+   "claim": "'New CMS requirements' for ACO/MA stratification and equity plans",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CY2023 PFS final rule (MSSP health equity adjustment); ACO REACH health equity plan requirement; CY2024 MA rule (HEI); CY2027 MA/Part D final rule (HEI/EHO4all not implemented)",
+   "note": "Undated 'new requirements' replaced with dated, verified policy history. Legacy Supabase fallback (lesson 5866fcff) and local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "CMS Primary Care First (PCF) and similar models that dramatically increase primary care revenue",
+   "new": "CMS Primary Care First (PCF, ended early in 2025) and similar models that increase primary care revenue",
+   "claim": "PCF presented as current; 'dramatically increase'",
+   "verdict": "REAL",
+   "sources": "CMS 2025-03-12 announcement ending Primary Care First early",
+   "note": "Status added. Legacy Supabase fallback (lesson 5866fcff) and local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "about participating in the AHEAD model, what multi-payer alignment means in practice,",
+   "new": "about the All-Payer Model experience, Vermont's 2026 decision to withdraw from AHEAD, what multi-payer alignment means in practice,",
+   "claim": "Audio prompt assumes Vermont participates in AHEAD",
+   "verdict": "FABRICATED",
+   "sources": "Author-verified fact set (phase 3 brief, 2026-10-07): Vermont signed the AHEAD State Agreement in January 2025 and withdrew in July 2026 (WCAX / Vermont Public 2026-07-28)",
+   "note": "Prompt updated. Legacy Supabase fallback (lesson 5866fcff) and local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "Vermont's AHEAD model: a participant's view",
+   "new": "Vermont and AHEAD: a participant's view",
+   "claim": "Audio slot label 'Vermont's AHEAD model'",
+   "verdict": "FABRICATED",
+   "sources": "Author-verified fact set (phase 3 brief, 2026-10-07): Vermont signed the AHEAD State Agreement in January 2025 and withdrew in July 2026 (WCAX / Vermont Public 2026-07-28)",
+   "note": "Label updated. Legacy Supabase fallback (lesson 5866fcff) and local source JSON."
+  }
+ ]
+}

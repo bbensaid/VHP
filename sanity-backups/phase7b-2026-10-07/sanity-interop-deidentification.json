@@ -1,0 +1,593 @@
+{
+  "_createdAt": "2026-05-29T03:53:17Z",
+  "_id": "interop-deidentification",
+  "_rev": "rL4Cn5Sfo5Z8rzPmE3aesd",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T17:23:51Z",
+  "body": [
+    {
+      "_key": "s1h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why De-identification Matters"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Every time a patient visits a clinic, fills a prescription, or receives a laboratory result, that encounter generates data — and that data contains some of the most sensitive details a person can share about themselves. The Health Insurance Portability and Accountability Act of 1996 (HIPAA) defines Protected Health Information, or PHI, as any individually identifiable health information that is created, received, maintained, or transmitted by a covered entity or its business associates. The scope is deliberately broad: PHI covers information in any format, whether electronic, paper, or spoken, if it relates to a person's physical or mental health, the provision of care, or payment for that care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The tension in modern healthcare data is acute. On one side, patients have a legitimate expectation that the intimate details of their medical histories will not flow freely through the world. On the other side, researchers, public-health officials, health systems, and software developers need large, representative datasets to answer important questions — how does a new treatment perform across different demographic groups? What risk factors predict hospital readmission? How can an EHR be tested without exposing real records? De-identification is the legal and technical bridge that allows health data to move across this tension without dissolving the privacy protection that patients deserve."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The regulatory stakes have also increased sharply. The 21st Century Cures Act and the CMS Interoperability and Patient Access Rule have accelerated data sharing mandates across payers, providers, and health information networks. As more data flows through APIs and exchanges, the volume of PHI potentially exposed to secondary use has grown exponentially. Getting de-identification right is no longer a compliance checkbox — it is a foundational requirement for operating responsibly in a connected health system."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "All 18 must be removed under Safe Harbor de-identification",
+          "label": "HIPAA PHI Identifiers",
+          "value": "18"
+        },
+        {
+          "_key": "s2",
+          "context": "Sweeney 1997: ZIP + date of birth + sex uniquely identifies 87% of Americans",
+          "label": "U.S. Population Re-identifiable",
+          "value": "87%"
+        },
+        {
+          "_key": "s3",
+          "context": "The dataset Sweeney used to re-identify Gov. Weld's medical records in 1997",
+          "label": "MA Employee Records",
+          "value": "135,000"
+        },
+        {
+          "_key": "s4",
+          "context": "Size of the anonymized dataset de-anonymized by Narayanan & Shmatikov in 2008",
+          "label": "Netflix Subscribers",
+          "value": "500,000"
+        }
+      ]
+    },
+    {
+      "_key": "s2h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "HIPAA's Two De-identification Methods"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "HIPAA's Privacy Rule, codified at 45 CFR § 164.514(b), provides two legally recognized pathways for de-identifying health information. Once either pathway is satisfied, the resulting data is no longer considered PHI and is no longer subject to HIPAA's use and disclosure restrictions. Choosing the right pathway depends on the resources available, the level of statistical rigor required, and the downstream use of the data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The first and most commonly used method is Safe Harbor. Under Safe Harbor, a covered entity must remove all 18 categories of direct identifiers specified in the regulation: (1) names; (2) geographic subdivisions smaller than a state, including street address, city, county, precinct, and ZIP codes, with a narrow exception for three-digit ZIP codes serving populations greater than 20,000; (3) all date elements other than year that are directly related to an individual, plus ages over 89 which must be aggregated into a single \"90+\" category; (4) telephone numbers; (5) fax numbers; (6) email addresses; (7) Social Security numbers; (8) medical record numbers; (9) health plan beneficiary numbers; (10) account numbers; (11) certificate and license numbers; (12) vehicle identifiers and serial numbers including license plates; (13) device identifiers and serial numbers; (14) web URLs; (15) IP addresses; (16) biometric identifiers including fingerprints and voice prints; (17) full-face photographs and comparable images; and (18) any other unique identifying number, characteristic, or code. The entity must also have no actual knowledge that the remaining information could identify an individual. Safe Harbor is rules-based and requires no special statistical expertise, making it widely accessible."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The second method is Expert Determination. Here, a qualified statistician or other expert applies generally accepted principles of statistical and scientific methods to analyze the data and concludes that the risk of identifying any individual is very small. The regulation does not define \"very small\" numerically, leaving this to professional judgment. The expert must document their methods and findings so that the covered entity can justify the conclusion if challenged. Expert Determination is more flexible than Safe Harbor — it can retain ZIP codes or date elements that Safe Harbor would require removing — but it demands rigor, resources, and defensible documentation. Most large academic medical centers and research consortia rely on Expert Determination when they need richer geographic or temporal granularity in their datasets."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Safe Harbor",
+        "points": [
+          "Remove all 18 enumerated identifiers",
+          "No statistical expertise required",
+          "Clear, auditable checklist",
+          "May over-strip useful data (e.g., all ZIP codes)",
+          "Best for routine data releases and smaller organizations"
+        ]
+      },
+      "right": {
+        "label": "Expert Determination",
+        "points": [
+          "Statistical expert certifies very small re-identification risk",
+          "Requires qualified statistician and formal documentation",
+          "Can retain richer geographic and temporal data",
+          "More flexible but more resource-intensive",
+          "Best for large research datasets needing analytical depth"
+        ]
+      },
+      "title": "Safe Harbor vs. Expert Determination"
+    },
+    {
+      "_key": "s3h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Re-identification Risks: The Limits of De-identification"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "De-identification is a risk-reduction strategy, not a guarantee of permanent anonymity. This distinction matters enormously, and a series of landmark empirical studies has demonstrated just how porous the anonymity of seemingly de-identified data can be when an adversary has access to even modest amounts of auxiliary information."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most cited demonstration came from computer scientist Latanya Sweeney in 1997. The state of Massachusetts had released medical encounter data for approximately 135,000 state employees with obvious identifiers — names, addresses, and Social Security numbers — removed. Sweeney obtained the publicly available Cambridge, Massachusetts voter registration list, which contained name, address, date of birth, sex, and ZIP code for each voter. By linking the two datasets on the combination of five-digit ZIP code, date of birth, and sex, she was able to uniquely identify the medical records of then-Governor William Weld — demonstrating that the combination of these three \"non-identifying\" fields was sufficient to pinpoint an individual. Her subsequent analysis of the 1990 U.S. Census showed that 87 percent of the American population could be uniquely identified by ZIP code, date of birth, and sex alone. This trio of fields, none of which appears on HIPAA's Safe Harbor list except for detailed dates, illustrates the concept of quasi-identifiers: attributes that are individually innocuous but collectively identifying."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "A decade later, in 2008, Arvind Narayanan and Vitaly Shmatikov of the University of Texas at Austin published \"Robust De-anonymization of Large Sparse Datasets,\" applying their methodology to the Netflix Prize dataset — a collection of 100 million movie ratings submitted by approximately 500,000 anonymous subscribers that Netflix released for a machine-learning competition. Narayanan and Shmatikov showed that by knowing just a few of a subscriber's movie ratings and approximate dates, an adversary could cross-reference the Netflix data with publicly available Internet Movie Database (IMDb) reviews to uniquely identify that subscriber's record with high confidence. The attack worked even when the adversary had imprecise or partial knowledge, and it succeeded even when some ratings were deliberately perturbed as a privacy defense. The Netflix study crystallized a broader principle: sparse, high-dimensional data is extraordinarily difficult to anonymize because each data point narrows down the set of plausible individuals so rapidly."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3an",
+      "_type": "analogyBlock",
+      "analogy": "Imagine you are given a jigsaw puzzle with most pieces removed, but you can still recognize the full picture. De-identified data is like a puzzle with the corner pieces removed — it looks incomplete, but someone with a second puzzle box (auxiliary data) can fill in just enough to reconstruct the original image.",
+      "concept": "Re-identification works by combining a de-identified dataset with auxiliary external data — each additional piece narrows the field of candidates until a single individual is identified."
+    },
+    {
+      "_key": "s3warn",
+      "_type": "warningBlock",
+      "message": "DNA sequences present a categorical re-identification risk that goes beyond quasi-identifiers. Even a partial genome can be matched against public genealogical databases (such as GEDmatch) to identify an individual or their relatives. The HIPAA Safe Harbor rule requires removing \"biometric identifiers\" but does not explicitly enumerate genomic sequences, creating an interpretive gap. Any organization sharing genomic data should treat it as permanently identifiable regardless of accompanying metadata removal.",
+      "title": "Genomic Data Cannot Be Truly De-identified"
+    },
+    {
+      "_key": "s3ex",
+      "_type": "exampleBlock",
+      "content": "k-anonymity, introduced by Sweeney in 1998, is a formal privacy model that requires every record in a dataset to be indistinguishable from at least k-1 other records with respect to all quasi-identifier fields. A dataset with k=5 guarantees that any re-identification attempt narrows the adversary's target to a pool of at least five people. Higher k values offer stronger protection but reduce analytical utility because they require more generalization (e.g., replacing exact age with an age range). Extensions such as l-diversity and t-closeness address additional attack vectors where k-anonymity alone is insufficient, such as when all records in a k-anonymous group share a sensitive attribute value.",
+      "title": "The k-Anonymity Framework"
+    },
+    {
+      "_key": "s4h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Synthetic Data: A Different Privacy Approach"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Where de-identification tries to protect real patients by removing or generalizing information that could identify them, synthetic data takes an entirely different approach: it generates entirely fictional records that statistically resemble a real population without corresponding to any actual individual. If no real person's data is present in the dataset, there is no real person to re-identify. This philosophical shift — from \"hide the individual\" to \"replace the individual\" — makes synthetic data an increasingly attractive option for certain use cases."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "There are two broad families of synthetic data generation. Statistical synthesis methods model the marginal and joint distributions of variables in a real dataset and then draw new records from those distributions. These approaches, which include techniques such as multiple imputation and Gaussian copulas, can preserve complex correlations between variables such as the relationship between age, diagnosis codes, and medication lists. Generative model approaches use machine learning — particularly generative adversarial networks (GANs) and variational autoencoders — to learn the underlying structure of a dataset and generate new samples that are statistically realistic but do not directly copy any training record. Generative models are more powerful but also more difficult to validate and more susceptible to memorization attacks, in which the model effectively reproduces a real training record."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most widely used open-source synthetic patient generator in health IT is Synthea, developed by MITRE Corporation. Synthea simulates the entire medical history of synthetic patients from birth to death using probabilistic disease models, clinical guidelines, and demographic data drawn from public sources. It generates output in standard formats including HL7 FHIR and C-CDA, and MITRE has made one million synthetic patient records freely available for download. Synthea has been adopted across health IT development, FHIR API testing, clinical decision support validation, machine learning model training, and healthcare education — any context where a realistic but risk-free patient dataset is needed. Because Synthea records are built from models rather than real encounters, they carry no HIPAA obligations and require no IRB approval for use."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4st",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Developers building EHR interfaces, FHIR APIs, or patient portals can use synthetic data to populate test environments with realistic records, avoiding the legal and ethical burden of using real PHI in non-production systems.",
+          "title": "Software Development and Testing"
+        },
+        {
+          "_key": "step2",
+          "description": "Training predictive models requires large, labeled datasets. Synthetic data can augment real training sets or provide baseline data where real data is scarce — particularly valuable for rare diseases or underrepresented populations.",
+          "title": "AI and Machine Learning Model Training"
+        },
+        {
+          "_key": "step3",
+          "description": "Medical and nursing students, health informatics trainees, and clinical staff can practice with realistic patient scenarios without exposing real patient information, supporting competency development in a safe environment.",
+          "title": "Healthcare Education and Simulation"
+        },
+        {
+          "_key": "step4",
+          "description": "Researchers can release a synthetic version of their study dataset alongside a publication, enabling reproducibility and peer verification without disclosing the underlying real patient records.",
+          "title": "Privacy-Preserving Research Publication"
+        }
+      ],
+      "title": "Key Use Cases for Synthetic Health Data"
+    },
+    {
+      "_key": "s4warn",
+      "_type": "warningBlock",
+      "message": "Synthetic data, however realistic, reflects the model used to generate it — not ground truth. Statistical associations that were not captured in the generation model will be absent from the synthetic dataset. Rare events and edge cases are often underrepresented. For regulatory submissions, clinical trial analysis, or population health surveillance that requires legally defensible results from real-world evidence, synthetic data is a supplement, not a replacement, for appropriately governed access to real patient records.",
+      "title": "Synthetic Data Is Not a Perfect Substitute for Real Data"
+    },
+    {
+      "_key": "s5h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Governance Framework: When to Use What"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Selecting the right privacy-preserving approach requires matching technical options to regulatory context, research purpose, and organizational risk tolerance. HIPAA provides a tiered framework for research data use that maps roughly to increasing levels of identifiability — and increasing governance requirements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Fully de-identified data, produced by either the Safe Harbor or Expert Determination method, falls outside HIPAA entirely. Organizations can share, publish, or sell de-identified data without patient authorization, data use agreements, or IRB oversight under HIPAA (though state law and institutional policy may impose additional requirements). This is why de-identification is so valuable for large-scale data sharing initiatives: once data crosses the de-identification threshold, the regulatory friction drops substantially. However, as the re-identification literature demonstrates, fully de-identified data still carries residual risk — particularly when the data is rich in quasi-identifiers or when it will be merged with other datasets."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Between identified data and fully de-identified data sits the Limited Data Set, defined at 45 CFR § 164.514(e). A Limited Data Set retains certain geographic and date elements — city, state, ZIP code, and dates of admission, discharge, service, birth, and death — that Safe Harbor would require removing. Because a Limited Data Set still contains PHI, it must be protected: any disclosure requires a Data Use Agreement (DUA) executed between the covered entity and the recipient. The DUA must specify permitted uses and disclosures (limited to research, public health, and health care operations), identify who may access the data, require the recipient to implement appropriate safeguards, prohibit re-identification, and obligate reporting of any unauthorized use or disclosure. Limited Data Sets are a practical middle ground for research that needs geographic precision or temporal patterns but does not require full patient-level identification."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "For research that requires identified data — full medical record numbers, individual diagnoses, and linked longitudinal records — covered entities must obtain patient authorization or qualify for an IRB waiver of authorization under 45 CFR § 46.116. The IRB evaluates whether the research could practicably be conducted without the waiver, whether it poses minimal risk, and whether it includes adequate privacy safeguards. In practice, large health systems and academic medical centers maintain dedicated data governance committees that evaluate data requests, classify the appropriate tier, and require data use agreements or IRB documentation before any data leaves the institution."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p5s",
+          "_type": "span",
+          "marks": [],
+          "text": "An emerging alternative to any form of data sharing is federated learning — a machine-learning paradigm in which model training occurs locally at each data-holding institution, and only model updates (gradients or parameters) are shared across sites rather than the underlying patient data itself. Programs such as the PCORnet national patient-centered clinical research network and the NIH's National COVID Cohort Collaborative (N3C) have pioneered federated and enclave-based approaches that allow multi-institutional analyses without requiring any institution to export its raw patient records. These architectures fundamentally reframe the privacy problem: instead of asking \"how do we safely share data?\", they ask \"how do we bring computation to the data?\""
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "De-identified Data",
+        "points": [
+          "All 18 Safe Harbor identifiers removed (or Expert Determination performed)",
+          "No longer PHI — HIPAA does not apply",
+          "No DUA or patient authorization required",
+          "Residual re-identification risk remains",
+          "Suitable for public release, open datasets, publication"
+        ]
+      },
+      "right": {
+        "label": "Limited Data Set",
+        "points": [
+          "Direct identifiers removed but ZIP, city, dates retained",
+          "Still PHI — HIPAA applies",
+          "Data Use Agreement mandatory",
+          "IRB review recommended for research use",
+          "Suitable for research requiring geographic/temporal precision"
+        ]
+      },
+      "title": "Data Sharing Tiers Under HIPAA"
+    },
+    {
+      "_key": "s5hi",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5his",
+          "_type": "span",
+          "marks": [],
+          "text": "Governance Rule of Thumb: Match the data tier to the analytical need. If ZIP code precision is not required for the research question, use Safe Harbor de-identification and eliminate the DUA burden. If it is required, use a Limited Data Set with a DUA. Reserve identified data access for questions that genuinely cannot be answered with less."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "tkwy",
+      "_type": "takeawayBlock",
+      "points": [
+        "HIPAA defines 18 PHI identifier categories that must all be removed under Safe Harbor de-identification; Expert Determination allows a qualified statistician to certify \"very small\" re-identification risk using scientific methods.",
+        "Latanya Sweeney's 1997 study showed that ZIP code, date of birth, and sex alone can uniquely identify 87% of the U.S. population — demonstrating that \"non-obvious\" fields can function as quasi-identifiers.",
+        "Narayanan and Shmatikov's 2008 Netflix Prize study proved that sparse, anonymized datasets can be re-identified using publicly available auxiliary data, even with only partial or noisy background knowledge.",
+        "Synthetic data — exemplified by MITRE's open-source Synthea generator — creates fictional but statistically realistic patient records that carry no HIPAA obligations and no re-identification risk, but cannot fully replace real data for regulatory or outcome research.",
+        "The HIPAA Limited Data Set tier retains city, state, ZIP, and key dates while still qualifying for streamlined disclosure under a mandatory Data Use Agreement — a practical middle ground between full de-identification and identified access.",
+        "Federated learning allows multi-site machine-learning analyses without any institution exporting raw patient data, addressing the privacy problem by bringing computation to the data rather than data to the computation.",
+        "Governance decisions should be driven by analytical necessity: use the least-identified data tier that can answer the research question, apply IRB oversight for identified data, and document all risk assessments.",
+        "Genomic data warrants special treatment because even partial DNA sequences can enable re-identification through public genealogical databases, a risk that HIPAA Safe Harbor does not explicitly address."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "Sweeney's analysis of 1990 U.S. Census data found that the combination of five-digit ZIP code, date of birth, and sex uniquely identified approximately 87 percent of the American population — making these three fields together a powerful quasi-identifier despite none of them appearing individually as an obvious identifier. This finding became foundational to the modern understanding of re-identification risk and directly influenced HIPAA's requirement to remove date elements and ZIP codes under Safe Harbor de-identification.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Approximately 63%"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Approximately 87%"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Approximately 45%"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Approximately 99%"
+        }
+      ],
+      "question": "In Latanya Sweeney's landmark 1997 study, what percentage of the U.S. population could be uniquely identified using only five-digit ZIP code, date of birth, and sex?"
+    },
+    {
+      "_key": "srch2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srch2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Sweeney, L. (2000). Simple Demographics Often Identify People Uniquely. Carnegie Mellon University, Data Privacy Working Paper 3. Available via ResearchGate — https://www.researchgate.net/publication/267716853_Simple_Demographics_Often_Identify_People_Uniquely — Supports the 87% re-identification figure using ZIP code, date of birth, and sex from 1990 U.S. Census data; also the 1997 demonstration using Massachusetts employee health records to re-identify Governor Weld."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] U.S. Department of Health and Human Services. Guidance Regarding Methods for De-identification of Protected Health Information in Accordance with the HIPAA Privacy Rule. HHS.gov — https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html — Authoritative source for the complete list of 18 Safe Harbor identifiers, the Expert Determination standard, the Limited Data Set definition, and Data Use Agreement requirements under 45 CFR § 164.514."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Narayanan, A. & Shmatikov, V. (2008). Robust De-anonymization of Large Sparse Datasets. IEEE Symposium on Security and Privacy. Full text: https://www.cs.cornell.edu/~shmat/shmat_oak08netflix.pdf — Supports the Netflix Prize dataset re-identification findings: 500,000 anonymous subscribers, cross-referenced with IMDb, demonstrating de-anonymization from sparse auxiliary data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] MITRE Corporation. Synthetic Patient Records Help Deliver Real Health Outcomes. MITRE.org — https://www.mitre.org/news-insights/impact-story/synthetic-patient-records-help-deliver-real-health-outcomes — Supports description of Synthea as an open-source synthetic patient generator, its MITRE provenance, FHIR output formats, and the availability of one million free synthetic records."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Walonoski, J. et al. (2018). Synthea: An approach, method, and software mechanism for generating synthetic patients and the synthetic electronic health care record. Journal of the American Medical Informatics Association, 25(3), 230–238 — https://academic.oup.com/jamia/article/25/3/230/4098271 — Peer-reviewed validation of Synthea's disease modeling approach, statistical fidelity, and suitability for health IT development and research."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "interop-deidentification"
+  },
+  "title": "De-identification and Synthetic Data: Protecting Privacy While Enabling Research"
+}

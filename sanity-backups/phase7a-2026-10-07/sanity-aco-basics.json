@@ -1,0 +1,652 @@
+{
+  "_createdAt": "2026-05-31T03:18:48Z",
+  "_id": "aco-basics",
+  "_rev": "2zkDeD7zc2Ko2DfFHnbYwc",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T03:18:48Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Is an Accountable Care Organization?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "An Accountable Care Organization (ACO) is a group of doctors, hospitals, and other health care providers who voluntarily come together to deliver coordinated, high-quality care to Medicare patients. The central premise is that when providers collaborate—rather than operate in fragmented silos—they can prevent unnecessary services, catch problems earlier, and improve outcomes, all while reducing overall spending. Unlike a health maintenance organization (HMO), patients retain full freedom to see any Medicare provider; ACO membership is invisible to the patient unless they are informed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "ACOs operate under Medicare's fee-for-service (FFS) billing system as their baseline. Providers continue to bill and receive standard FFS payments for each service they deliver. On top of that baseline, the ACO is measured against a spending benchmark and a quality scorecard. If the ACO collectively keeps spending below the benchmark and meets quality thresholds, it earns a share of the savings—known as shared savings. If spending exceeds the benchmark, some ACO tracks require the group to pay back a portion of those excess costs, a feature called downside risk or shared losses."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The legal foundation for Medicare ACOs is Section 3022 of the Affordable Care Act (ACA), which amended Title XVIII of the Social Security Act by adding Section 1899 to establish the Medicare Shared Savings Program (MSSP). The MSSP regulations were finalized in November 2011 and became effective January 3, 2012, with the first ACO agreements starting as early as April 1, 2012."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: An ACO is not an insurance product and does not require patients to change their behavior. It is a provider-side accountability mechanism—providers take responsibility for the cost and quality of care for a defined patient population while patients continue receiving traditional Medicare benefits."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "A record number of ACOs participated in the Medicare Shared Savings Program in performance year 2024. Source: CMS PY2024 Fact Sheet.",
+          "label": "MSSP ACOs in 2024",
+          "value": "476"
+        },
+        {
+          "_key": "s2",
+          "context": "More than 10 million Medicare fee-for-service beneficiaries were assigned to an MSSP ACO in 2024. Source: CMS PY2024 Fact Sheet.",
+          "label": "Assigned Beneficiaries",
+          "value": "10.3M"
+        },
+        {
+          "_key": "s3",
+          "context": "MSSP ACOs generated $2.4 billion in net savings to Medicare in performance year 2024, a new program record. Source: CMS PY2024 Fact Sheet.",
+          "label": "Net Savings to Medicare 2024",
+          "value": "$2.4B"
+        },
+        {
+          "_key": "s4",
+          "context": "75% of participating ACOs earned performance payments totaling $4.1 billion in 2024. Source: CMS PY2024 Fact Sheet.",
+          "label": "ACOs Earned Shared Savings",
+          "value": "75%"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Attribution Works: Assigning Patients to an ACO"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because patients do not enroll in an ACO directly, CMS uses a process called attribution—sometimes called assignment—to determine which patients \"belong\" to which ACO for measurement purposes. Attribution is based on where a patient receives the plurality of their primary care services. Specifically, CMS examines claims data to identify which ACO-affiliated clinician provided the most primary care evaluation and management visits to a given patient, and that ACO receives credit (and accountability) for that patient."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS currently offers ACOs two main attribution approaches. Under prospective attribution, patients are assigned at the start of the contract performance year based on their claims from the prior calendar year. This gives ACOs advance knowledge of their defined population, enabling proactive outreach and care management. Under retrospective attribution, patients are assigned at the end of the performance period based on services used during that year, which typically produces a larger attributed population but reduces the ACO's ability to plan ahead. A hybrid approach—preliminary prospective with retrospective reconciliation—begins with a prospective list that is updated quarterly and finalized retrospectively, balancing planning certainty with accuracy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Attribution has important financial and clinical implications. Patients who receive no primary care visits during the year may fall out of attribution, creating gaps in accountability for high-need populations. Additionally, specialists and hospitals cannot directly attract attribution—only primary care evaluation and management services count. This design intentionally places primary care physicians at the center of ACO economics, reinforcing their role as care coordinators for the attributed population."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "CMS identifies all primary care evaluation and management (E&M) visits a Medicare FFS beneficiary received during the attribution window.",
+          "title": "Primary Care Service Check"
+        },
+        {
+          "_key": "step2",
+          "description": "Each visit is linked to the TIN (Tax Identification Number) of the billing practice to determine which ACO participants rendered the care.",
+          "title": "Provider Linkage"
+        },
+        {
+          "_key": "step3",
+          "description": "The beneficiary is attributed to the ACO whose affiliated providers delivered the greatest share of primary care E&M services, measured in allowed charges.",
+          "title": "Plurality Rule"
+        },
+        {
+          "_key": "step4",
+          "description": "CMS applies eligibility criteria—the beneficiary must be enrolled in Medicare Parts A and B, not enrolled in Medicare Advantage, and not in certain other payment models.",
+          "title": "Eligibility Screen"
+        },
+        {
+          "_key": "step5",
+          "description": "ACOs receive a preliminary list of attributed beneficiaries each quarter, updated throughout the year, for care management planning purposes.",
+          "title": "Notification"
+        }
+      ],
+      "title": "How CMS Assigns a Beneficiary to an MSSP ACO"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Benchmarks: Setting the Spending Target"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "An ACO's benchmark is the spending target against which its actual expenditures are compared at the end of each performance year. Getting the benchmark right is the single most important technical feature of the MSSP, because an inflated benchmark makes it easy to show savings without actually changing care patterns, while an overly tight benchmark can make participation financially unviable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The historical benchmark is calculated at the start of each agreement period using the weighted average of risk-adjusted, trended per-capita spending for the ACO's attributed population across the three previous benchmark years. CMS then applies a regional adjustment: the historical benchmark is blended with the average expenditures in the ACO's regional service area, giving partial weight to regional costs. This regional component reduces the incentive to cherry-pick low-cost patients and rewards ACOs that are already efficient relative to their local market."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For new agreement periods beginning January 1, 2024, CMS introduced the Accountable Care Prospective Trend (ACPT)—a fixed projected national spending growth rate—as a third component of the benchmark update factor, creating what is now known as a three-way blended update. The ACPT is blended with actual national and regional FFS spending trends to set the annual benchmark update, reducing the volatility that occurred when benchmarks moved dramatically with pandemic-era utilization swings. Together, these adjustments are designed to make the benchmark a stable, fair, and credible target."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: The benchmark is not simply last year's spending. It is a risk-adjusted, regionally-blended, prospectively-trended target. An ACO that starts from a high-cost baseline can earn shared savings even if costs only fall modestly, while an already-efficient ACO must work harder to stay below its benchmark."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s3w1",
+      "_type": "warningBlock",
+      "message": "Beating the benchmark shows spending was lower than the target—but that target is not necessarily what spending would have been without the ACO. The Congressional Budget Office's April 2024 review found \"mixed results\" when comparing ACO spending to counterfactual estimates rather than to program benchmarks. Selection effects—ACOs attracting lower-cost practices—account for some reported savings.",
+      "title": "Common Misconception: Beating the Benchmark ≠ Reducing Spending"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Shared Savings and Shared Losses: The Risk Architecture"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "When an ACO's actual per-capita spending falls below its benchmark by more than the minimum savings rate (MSR), it qualifies to share in those savings with Medicare. The MSR exists to filter out random statistical variation—small ACOs have higher MSRs because random fluctuation in spending is larger in smaller populations. Conversely, ACOs in downside-risk tracks face a minimum loss rate (MLR): spending must exceed the benchmark by more than the MLR before losses are owed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The MSSP is organized into tracks with escalating levels of financial risk and reward. The BASIC track allows new ACOs to enter a glide path, starting with upside-only risk in levels A and B, then progressing to limited two-sided risk in levels C through E. The ENHANCED track offers the highest shared savings rate (up to 75 percent of savings) but requires full two-sided risk from day one. Under the \"Pathways to Success\" redesign finalized in 2018, CMS reduced the maximum time an ACO can remain in upside-only risk from six years to two years for most ACOs, with an extension to three years for low-revenue (typically physician-led) ACOs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "In 2024, two-thirds of MSSP ACOs were operating in the Level E or ENHANCED track, meaning the majority of the program now carries downside risk. This is a marked shift from the program's early years, when nearly all ACOs stayed in upside-only tracks indefinitely. High-risk-track ACOs generated more than two-thirds of all net savings in 2024—$5.4 billion of the $6.6 billion total gross savings—demonstrating that financial accountability correlates with stronger performance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "BASIC Track (Levels A–E)",
+        "points": [
+          "New ACOs begin with upside-only risk (Levels A–B)",
+          "Glide path to two-sided risk over time",
+          "Shared savings rate up to 50% (Level E)",
+          "Minimum 2 years before required risk progression",
+          "Lower downside exposure—capped loss sharing"
+        ]
+      },
+      "right": {
+        "label": "ENHANCED Track",
+        "points": [
+          "Two-sided risk from agreement start",
+          "No glide path—full accountability immediately",
+          "Shared savings rate up to 75%",
+          "Eligible for additional investment payments",
+          "Required for ACOs seeking highest reward potential"
+        ]
+      },
+      "title": "MSSP Track Comparison: BASIC vs. ENHANCED"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Quality Measurement and Its Role in ACO Economics"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Shared savings payments are contingent on meeting a quality performance standard—ACOs cannot earn purely by cutting costs. CMS evaluates ACO quality using a composite score drawn from measures spanning preventive care, chronic disease management, patient experience, and care coordination. The quality score gates entry to shared savings: ACOs that fall below the quality threshold receive a reduced share of any savings earned, or may be barred from payment entirely."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "In 2024, nearly every ACO in the MSSP met CMS's quality standard, continuing a multi-year trend of high marks on patient experience and preventive care measures. Among ACOs reporting through the CMS Web Interface, the mean percentage of beneficiaries with controlled high blood pressure rose from 77.80 percent in 2023 to 79.49 percent in 2024—a statistically significant improvement. Preventive measures such as influenza vaccination and colorectal cancer screening also showed strong average performance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The quality-savings linkage is a deliberate policy design: it prevents ACOs from gaming the benchmark through under-provision of care. However, critics note that most ACO quality measures are process-based rather than outcome-based, and that near-universal quality compliance across hundreds of ACOs may reflect measure selection as much as genuine care improvement. CMS has signaled ongoing interest in transitioning toward more outcome-oriented and health-equity-sensitive quality metrics."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "Think of an ACO like a restaurant group with a shared kitchen budget. Each chef (provider) still cooks individual dishes (services) and charges per plate (FFS billing). But at year-end, if the whole kitchen spent less than expected AND the food quality scores were high, the restaurant group gets a bonus. The key is that no one chef gets rewarded for cutting corners on ingredients—quality scores make sure the food stays good.",
+      "concept": "ACO shared savings: combining FFS billing with collective accountability"
+    },
+    {
+      "_key": "s6h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The ACO Landscape: MSSP, ACO REACH, and ACO PC Flex"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s6p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The MSSP is the largest Medicare ACO program, but it is not the only one. The ACO Realizing Equity, Access, and Community Health (REACH) model, administered by the Center for Medicare and Medicaid Innovation (CMMI), is a separate advanced alternative payment model with higher financial risk and more flexibility. ACO REACH launched in 2023, replacing the Global and Professional Direct Contracting (GPDC) model, which itself evolved from the Pioneer ACO Model (2012–2016). In 2023, 132 ACOs participated in ACO REACH, managing care for more than two million Medicare beneficiaries and overseeing $26.6 billion in Medicare Parts A and B expenditures."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The ACO Primary Care Flex (ACO PC Flex) model, launched January 1, 2025, is the newest CMMI initiative. It targets low-revenue MSSP participants—typically smaller, physician-led ACOs—by offering prospective primary care payments (up-front monthly payments rather than retrospective shared savings) to support care management infrastructure that small practices cannot easily finance. This model attempts to solve the capital problem: small practices lack the cash flow to invest in care coordinators, health coaches, and analytics platforms before receiving any savings payments."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Together, these models represent CMS's evolving strategy to move the entire Medicare FFS population—not just commercially insured patients—toward accountable care. The 2025 ACO initiatives announcements from CMS signaled the goal of having every Medicare beneficiary in an accountable care relationship by 2030, though participation remains voluntary and trajectory toward that goal requires continued growth in both ACO numbers and attributed beneficiaries."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6ex1",
+      "_type": "exampleBlock",
+      "content": "Within the ACO REACH model, a subset of participants operates as High-Needs Population (HNP) ACOs, specifically designed to serve beneficiaries with complex chronic conditions or serious illness. In performance year 2023, HNP ACOs achieved a 13.3% net savings rate—substantially higher than Standard ACOs (2.8%) or New Entrant ACOs (4.8%).\nThis performance reflects the financial upside available when organizations master care management for high-cost, high-need patients. HNP ACOs use intensive care models—home visits, palliative care integration, and social needs navigation—that reduce avoidable hospitalizations and emergency department visits for patients who would otherwise drive disproportionately high Medicare expenditures. Source: CMS ACO REACH PY2023 Financial and Quality Performance Results Fact Sheet.",
+      "title": "ACO REACH High-Needs Population ACOs"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "ACOs are voluntary groups of providers that accept collective accountability for the cost and quality of care for an attributed Medicare population while patients retain full freedom of choice.",
+        "Section 3022 of the Affordable Care Act created the Medicare Shared Savings Program in 2012, establishing the legal foundation for Medicare ACOs.",
+        "Attribution assigns patients to an ACO based on plurality of primary care services received, with choices between prospective, retrospective, and hybrid methods that affect both population certainty and size.",
+        "The ACO benchmark is a risk-adjusted, regionally-blended, prospectively-trended spending target—not simply prior-year spending—and beating it does not automatically mean real-world costs were reduced.",
+        "Shared savings are only paid when an ACO both beats its benchmark by more than the minimum savings rate AND meets CMS's quality performance standard, preventing savings through under-provision of care.",
+        "Two-thirds of MSSP ACOs now operate under two-sided (downside) risk as of 2024, a major shift from the program's early years, with high-risk-track ACOs generating over two-thirds of all program savings.",
+        "Beyond the MSSP, CMS operates ACO REACH (for advanced risk models) and the new ACO PC Flex model (for small, physician-led ACOs), reflecting a strategy to move all Medicare FFS beneficiaries into accountable care."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Attribution in the MSSP is automatic and claims-based—patients never choose or enroll in an ACO directly. CMS examines primary care evaluation and management claims and assigns the beneficiary to the ACO whose affiliated clinicians provided the greatest share of those services, measured in allowed charges. Hospital admissions and plan enrollment play no direct role in MSSP attribution.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The beneficiary selects an ACO by signing an enrollment form at their doctor's office."
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "CMS assigns the beneficiary to the ACO whose affiliated providers delivered the plurality of their primary care evaluation and management services."
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Attribution is based on which hospital the beneficiary was admitted to most recently."
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The beneficiary's insurance plan designates an ACO at the start of each calendar year."
+        }
+      ],
+      "question": "Under the Medicare Shared Savings Program, how is a beneficiary attributed to an ACO?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] CMS PY2024 MSSP Financial and Quality Performance Results Fact Sheet — https://www.cms.gov/files/document/fact-sheet-ssp-py24-financial-quality-results.pdf — Supports all 2024 MSSP statistics: 476 ACOs, 10.3M beneficiaries, $2.4B net savings, $4.1B earned, 75% earning payments, quality trends."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] CMS — Assignment of Beneficiaries to ACOs Participating in the MSSP (Fact Sheet) — https://www.cms.gov/newsroom/fact-sheets/assignment-beneficiaries-accountable-care-organizations-participating-medicare-shared-savings — Supports attribution methodology description."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Milliman — Understanding Prospective vs. Retrospective Assignment in MSSP: Examining the Assignment Methodology for 2024 and Beyond — https://www.milliman.com/en/insight/understanding-prospective-retrospective-mssp-2024 — Supports explanation of prospective, retrospective, and hybrid attribution approaches."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Congressional Budget Office — Medicare Accountable Care Organizations: Past Performance and Future Directions (April 2024) — https://www.cbo.gov/publication/60213 — Supports discussion of selection bias, counterfactual savings estimates, and \"mixed results\" finding."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] CMS — Final Rule Creates Pathways to Success for the Medicare Shared Savings Program — https://www.cms.gov/newsroom/fact-sheets/final-rule-creates-pathways-success-medicare-shared-savings-program — Supports track structure, risk progression timelines, and low-revenue ACO definitions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] CMS — ACO REACH PY2023 Financial and Quality Performance Results Fact Sheet — https://www.cms.gov/priorities/innovation/aco-reach-py2023-financial-and-quality-performance-results-fact-sheet — Supports ACO REACH statistics: 132 ACOs, 2M+ beneficiaries, $26.6B expenditures, savings rates by ACO type."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] CMS — MSSP Accountable Care Prospective Trend Specifications — https://www.cms.gov/files/document/medicare-ssp-acpt-specifications.pdf — Supports description of the three-way blended benchmark update factor introduced for PY2024."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src8s",
+          "_type": "span",
+          "marks": [],
+          "text": "[8] CMS — ACO Primary Care Flex Model Overview — https://www.cms.gov/newsroom/fact-sheets/cms-moves-closer-accountable-care-goals-2025-aco-initiatives — Supports description of ACO PC Flex model targeting low-revenue ACOs, launched January 1, 2025."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "value-based-care",
+  "order": 5,
+  "slug": {
+    "_type": "slug",
+    "current": "aco-basics"
+  },
+  "title": "ACO Fundamentals: Attribution, Benchmarks & Shared Savings"
+}

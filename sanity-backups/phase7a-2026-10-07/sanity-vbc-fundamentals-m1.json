@@ -1,0 +1,637 @@
+{
+  "_createdAt": "2026-05-31T06:38:03Z",
+  "_id": "vbc-fundamentals-m1",
+  "_rev": "lKp0BhG1T8aY2oFO5b5g8D",
+  "_type": "academyModule",
+  "_updatedAt": "2026-10-08T02:01:52Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Fundamental Problem: A System That Pays for Sickness, Not Health"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The United States spends more on healthcare than any other nation in the world — $5.3 trillion in 2024, approximately $14,885 per person. And yet, by nearly every measure of population health, the country performs below its peer nations. Life expectancy in the U.S. was 78.4 years in 2023, nearly 4 years shorter than the average among comparable wealthy countries. Rates of chronic disease, preventable hospitalizations, and avoidable deaths are persistently higher in the U.S. than in nations that spend far less. The paradox is stark: more spending, worse outcomes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This paradox is not the result of incompetent physicians, inferior technology, or inadequate hospitals. On most measures of technical medical capability — cancer survival rates, cardiac intervention outcomes, cutting-edge diagnostic tools — American medicine is among the best in the world. The problem is structural. The way the United States pays for healthcare systematically rewards the wrong things: it rewards treating illness rather than preventing it, rewards individual services rather than coordinated care, and rewards volume rather than value. The payment architecture shapes the behavior of every actor in the system, and the current architecture is pointing almost everyone in the wrong direction."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Value-based care (VBC) is the policy response to this misalignment. It is a broad umbrella term for payment and care delivery approaches that tie financial incentives to quality outcomes, patient experience, and cost-efficiency — rather than to the raw count of services delivered. Understanding value-based care requires first understanding the problem it is designed to solve: the incentive structure of fee-for-service medicine and the consequences that structure produces."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: Value-based care is a healthcare payment and delivery model in which providers are compensated based on patient health outcomes and the efficiency of care delivery — rather than on the volume of services provided. The central idea is to align financial incentives with the goal of keeping patients healthy."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "CMS National Health Expenditure Report — U.S. spent $5.3 trillion on health in 2024",
+          "label": "U.S. Health Spending 2024",
+          "value": "$5.3T"
+        },
+        {
+          "_key": "s2",
+          "context": "Nearly 4 years shorter than peer country average of 82.5 years — OECD Health at a Glance 2025",
+          "label": "U.S. Life Expectancy 2023",
+          "value": "78.4 yrs"
+        },
+        {
+          "_key": "s3",
+          "context": "More than 2.5x the OECD average of $5,967 — OECD Health Statistics",
+          "label": "Per-Capita Spending 2023",
+          "value": "$14,885"
+        },
+        {
+          "_key": "s4",
+          "context": "MSSP ACOs generated record $2.1B in net Medicare savings in 2023 — CMS Shared Savings Program Report",
+          "label": "MSSP Net Savings 2023",
+          "value": "$2.1B"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Triple Aim: The Framework Behind Value-Based Care"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The intellectual foundation of the value-based care movement is the Triple Aim, a framework articulated by the Institute for Healthcare Improvement (IHI) in 2008. The Triple Aim holds that health system improvement requires simultaneously pursuing three goals: improving the patient experience of care (including quality and satisfaction), improving the health of populations, and reducing the per-capita cost of healthcare. These three dimensions are not naturally in tension — indeed, the Triple Aim's central insight is that addressing all three together is both possible and necessary."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Fee-for-service medicine is structurally incapable of pursuing the Triple Aim because it optimizes only for volume — which is a proxy for neither quality nor health. A system that pays for more services will generate more services, regardless of whether those services improve the patient experience, improve population health, or reduce cost. The Triple Aim requires payment mechanisms that can reward coordination, prevention, and efficiency rather than activity."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Over time, IHI and others have expanded the framework to a \"Quadruple Aim\" that adds a fourth dimension: improving the health and well-being of the healthcare workforce. This addition acknowledges that provider burnout — driven in part by the administrative burden of documentation-heavy FFS billing and compliance programs like MIPS — is itself a systemic problem that undermines care quality. A truly value-based system should improve the experience of care for clinicians, not just patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2q1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2q1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The problem is not that American medicine lacks quality. The problem is that the payment system rewards the wrong quality — the quality of filling out a claim, not the quality of keeping a patient well."
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Spectrum of Value-Based Payment Models"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Value-based care is not a single payment model — it is a spectrum of approaches that shift incentives away from pure volume and toward quality, efficiency, and outcomes. These models vary in the degree of financial risk they impose on providers, the scope of services they cover, and the populations they address. Understanding the landscape of models is essential for anyone navigating healthcare finance and policy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "At one end of the spectrum are pay-for-performance (P4P) programs, which layer quality bonuses or penalties on top of existing FFS payments. MIPS is a prominent example: it preserves fee-for-service billing while adjusting final payments up or down based on a quality and cost score. P4P models represent the lowest-risk entry point into value-based care — they do not require providers to change their fundamental revenue model — but they also generate the least structural change in care delivery because the FFS volume incentive remains intact."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Moving up the risk spectrum, bundled payment models establish a single fixed payment for an entire episode of care — for example, a total knee replacement including surgery, inpatient stay, rehabilitation, and follow-up visits over a defined period. Providers who manage the episode below the target price retain the savings; those who exceed it share in the loss. Bundled payments create powerful incentives for care coordination across the inpatient and post-acute continuum, but they apply only to defined episodes and do not address population health or primary prevention."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Lower Risk (Closer to FFS)",
+        "points": [
+          "Pay-for-Performance (e.g., MIPS): FFS + quality adjustment",
+          "Quality bonuses layered onto existing billing",
+          "No change to fundamental revenue model",
+          "Low structural change in care delivery",
+          "Example: MIPS ±9% Medicare adjustment"
+        ]
+      },
+      "right": {
+        "label": "Higher Risk (Further from FFS)",
+        "points": [
+          "Shared Savings / ACOs: rewards for beating cost targets",
+          "Bundled Payments: single price for episode of care",
+          "Capitation: per-member-per-month payment regardless of volume",
+          "Global Budget: total population spending cap",
+          "Example: MSSP, ACO REACH, Vermont All-Payer ACO"
+        ]
+      },
+      "title": "Value-Based Payment Model Spectrum"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Accountable Care Organizations: The Flagship VBC Model"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Accountable Care Organizations (ACOs) are the most widely deployed model of value-based care in the United States. An ACO is a group of doctors, hospitals, and other healthcare providers who agree to share accountability for the quality and total cost of care for an assigned population of patients. Rather than being paid for each individual service, ACO participants receive their FFS payments as usual — but at year's end, if the ACO's total spending for its attributed beneficiaries is below a risk-adjusted benchmark, the ACO earns a share of those savings. If spending exceeds the benchmark, the ACO may owe losses back, depending on its risk track."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Medicare Shared Savings Program (MSSP) is the largest ACO program in the United States. As of January 2024, 480 MSSP ACOs include more than 608,000 clinicians providing care to nearly 11 million Medicare beneficiaries. In 2023, MSSP ACOs generated $2.1 billion in net savings for Medicare — the largest in the program's more than ten-year history — while also demonstrating quality improvements in diabetes management, blood pressure control, cancer screening, and depression care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The ACO REACH (Realizing Equity, Access, and Community Health) model, administered by CMMI, tests a deeper form of accountable care with full global capitation risk. In 2023, the 132 ACO REACH participants managed care for more than 2 million Medicare beneficiaries, generating $695 million in net savings. The model explicitly incorporates health equity requirements — ACOs must develop health equity plans and report on disparities for high-need populations — marking a significant expansion of the VBC framework beyond cost and quality to address systemic disparities in care access and outcomes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "In 2023, the MSSP achieved its seventh consecutive year of program-wide savings and its largest net savings total in program history: $2.1 billion returned to Medicare. ACOs in the program earned shared savings payments totaling $3.1 billion — also a record. Performance also improved on quality measures related to diabetes care, blood pressure control, colorectal and breast cancer screening, statin therapy, and depression screening.\nAs of January 2024, 480 ACOs participated, covering nearly 11 million beneficiaries through the work of more than 608,000 clinicians. The program demonstrates that large-scale ACO participation can simultaneously reduce Medicare spending and improve measured quality — the core promise of the Triple Aim.",
+      "title": "Medicare Shared Savings Program — 2023 Record Results"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Capitation and Global Budgets: The Deepest Form of VBC"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "At the far end of the value-based care spectrum are capitation and global budget models, which represent the most complete structural departure from fee-for-service. Under full capitation, a provider organization receives a fixed per-member-per-month (PMPM) payment from a payer to cover all covered services for an assigned population — regardless of how many services are actually used. The provider keeps the margin if it delivers care efficiently; it absorbs the loss if it does not. Capitation fully inverts the FFS incentive: instead of more services = more revenue, the logic becomes appropriate care = retained margin."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Global budgets extend this logic to entire health systems or regions. Rather than paying on a per-patient basis, a global budget model sets an annual spending total for a defined population and gives a delivery system or state accountability for staying within that budget while meeting quality standards. Global budgets are common in other countries — the UK's NHS operates largely on a global budget basis — but they are rare in the United States, where Maryland's hospital global budget program and Vermont's All-Payer ACO Model (2017–2025) have been the most prominent examples."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's All-Payer ACO Model, which ran from 2017 (performance years from 2018) through December 31, 2025, is particularly noteworthy because it aligned Medicare, Medicaid, and major commercial insurers under a single, statewide value-based payment framework — the first attempt in the U.S. to create multi-payer payment alignment at the state level. The model drove significant investment in primary care infrastructure and care coordination in Vermont, and its record offers lessons for other states seeking to address both cost and health equity through payment reform."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "CMS attributes Medicare beneficiaries to the ACO based on their primary care utilization — which provider they visit most for primary care.",
+          "title": "Assign a Patient Panel"
+        },
+        {
+          "_key": "step2",
+          "description": "CMS calculates a risk-adjusted spending benchmark — the projected total Medicare cost for that population based on historical trends and regional factors.",
+          "title": "Set a Benchmark"
+        },
+        {
+          "_key": "step3",
+          "description": "ACO clinicians deliver care under their existing FFS billing arrangements — the payment change happens at the back end, not the point of service.",
+          "title": "Providers Deliver Care"
+        },
+        {
+          "_key": "step4",
+          "description": "At year-end, CMS compares actual total Medicare spending for the attributed population to the benchmark.",
+          "title": "Compare Actual vs. Benchmark"
+        },
+        {
+          "_key": "step5",
+          "description": "If actual spending is below the benchmark, the ACO earns a percentage share of the savings (40–75% depending on the track). If spending exceeds the benchmark in a two-sided risk track, the ACO repays a share of the losses.",
+          "title": "Share Savings or Losses"
+        },
+        {
+          "_key": "step6",
+          "description": "Savings sharing is contingent on meeting minimum quality performance requirements — ACOs that miss quality thresholds have their shared savings reduced or withheld.",
+          "title": "Quality Gate"
+        }
+      ],
+      "title": "How Value Flows in an ACO Shared Savings Model"
+    },
+    {
+      "_key": "s6h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why the Transition Is Hard — and Why It Is Happening Anyway"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s6p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The case for value-based care is compelling in theory, and the evidence from programs like MSSP and ACO REACH is increasingly convincing in practice. Yet the transition from fee-for-service to value-based payment has been slower and more contested than reformers hoped when the ACA established CMMI in 2010. The reasons are structural, financial, and cultural. Provider organizations that built their facilities, staffed their teams, and financed their operations around FFS revenue cannot rapidly restructure without risk. A hospital that derives 40% of its margin from high-volume elective procedures does not easily absorb the shift to a model that rewards reducing utilization."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "There is also the challenge of measurement. Value-based payment requires robust quality metrics, reliable patient attribution, risk adjustment that does not penalize providers caring for sicker or more complex populations, and data infrastructure that can track patients across settings and over time. Building these systems is expensive, slow, and contentious. Disputes over which quality measures are clinically meaningful, how to attribute patients to providers in a fragmented system, and how to adjust benchmarks for social determinants of health have occupied policy debates for more than a decade without full resolution."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite these barriers, the direction of travel is clear. CMS has set explicit goals for moving Medicare toward value-based payment, and commercial payers have followed. The combination of rising healthcare costs, aging demographics, and the documented failure of FFS to produce commensurate health outcomes has created irreversible pressure for payment reform. For healthcare professionals, administrators, and policymakers, understanding the architecture of value-based care — its models, its incentives, its measurement systems, and its limitations — is no longer optional. It is the vocabulary of the field."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6w1",
+      "_type": "warningBlock",
+      "message": "Value-based care programs have documented early successes in reducing cost and improving quality metrics for defined populations — but evidence on long-term population health impact and equity outcomes is still developing. Not all VBC models reduce health disparities; some early evidence suggests that ACOs serving more advantaged populations outperform those serving high-need, low-income populations, raising important questions about how VBC design can be improved to reduce — rather than widen — health equity gaps.",
+      "title": "Key Limitation of VBC"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "The U.S. spends $5.3 trillion on healthcare annually — more than 2.5x the OECD per-capita average — yet achieves below-average outcomes on most population health indicators, including life expectancy.",
+        "The core cause of this paradox is a fee-for-service payment architecture that rewards volume over value, fragmenting care and incentivizing overtreatment while under-incentivizing prevention and coordination.",
+        "Value-based care (VBC) is a broad umbrella for payment models that tie financial incentives to quality, outcomes, and cost-efficiency — the central mechanism for realigning the payment system.",
+        "The Triple Aim framework — improving patient experience, improving population health, and reducing per-capita cost — provides the conceptual foundation for VBC design.",
+        "VBC models exist on a spectrum from low-risk pay-for-performance programs (like MIPS) to full capitation and global budgets; each point on the spectrum involves different degrees of financial risk and structural change.",
+        "ACOs are the flagship VBC model in Medicare; the MSSP generated a record $2.1 billion in net savings in 2023 while improving quality metrics — the seventh consecutive year of program-wide savings.",
+        "The transition to VBC faces structural, financial, and measurement barriers — but the policy and market direction is clear, making VBC literacy an essential competency for all healthcare professionals."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Pay-for-performance programs like MIPS preserve the fee-for-service billing structure and layer quality adjustments on top — providers still earn more by delivering more services, but their final payment is modified upward or downward by a quality and cost score. Capitation replaces the per-service payment with a fixed per-member-per-month amount, fully inverting the FFS incentive: efficient, high-quality care generates margin, while unnecessary utilization erodes it.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Pay-for-performance eliminates billing entirely; capitation still requires fee-for-service billing."
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Pay-for-performance adjusts FFS payments based on quality scores; capitation replaces FFS with a fixed per-member payment regardless of volume."
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Capitation applies only to hospital services; pay-for-performance covers physician services only."
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Both models are functionally identical — they differ only in which agency administers them."
+        }
+      ],
+      "question": "Which of the following best describes the core structural difference between pay-for-performance models (like MIPS) and capitation models?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] CMS National Health Expenditure Data — https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/nhe-fact-sheet — U.S. health spending $5.3 trillion in 2024"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] OECD Health at a Glance 2025: United States — https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/united-states_3517f35e-en.html — Per-capita spending $14,885 vs. OECD $5,967; life expectancy 78.4 years vs. 82.5 peer average"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CMS, Medicare Shared Savings Program 2023 Results — https://www.cms.gov/newsroom/press-releases/medicare-shared-savings-program-continues-deliver-meaningful-savings-and-high-quality-health-care — Record $2.1B net savings, 480 ACOs, 11 million beneficiaries, seventh consecutive year of savings"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] ACO REACH Model PY2023 Results — https://www.hcinnovationgroup.com/policy-value-based-care/alternative-payment-models/news/55241909/cms-reports-on-performance-improvements-by-aco-reach-participants — 132 ACOs, 2M+ beneficiaries, $695M net savings in 2023"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] KFF, \"What is CMMI?\" — https://www.kff.org/affordable-care-act/what-is-cmmi-and-11-other-faqs-about-the-cms-innovation-center/ — CMMI established by ACA 2010, purpose to test innovative payment and delivery models"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] IHI Triple Aim / AAMC, \"What's the Value in Value-Based Care?\" — https://www.aamc.org/about-us/mission-areas/clinical-care/whats-value-value-based-care — Triple Aim framework; overview of VBC model spectrum"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] Peterson-KFF Health System Tracker, U.S. Life Expectancy — https://www.healthsystemtracker.org/chart-collection/u-s-life-expectancy-compare-countries/ — U.S. life expectancy 78.4 years, 2.7 years below OECD average in 2023"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "value-based-care",
+  "order": 4,
+  "slug": {
+    "_type": "slug",
+    "current": "vbc-fundamentals-m1"
+  },
+  "title": "Why the Way We Pay for Healthcare Is Breaking the System — And How Paying for Value Could Fix It"
+}

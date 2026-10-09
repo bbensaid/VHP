@@ -1,0 +1,597 @@
+{
+  "_createdAt": "2026-05-28T18:02:15Z",
+  "_id": "aiml-fda-cleared-cases",
+  "_rev": "YT4i0aO2Kcl15cH3An1YdJ",
+  "_type": "academyModule",
+  "_updatedAt": "2026-10-08T12:33:24Z",
+  "body": [
+    {
+      "_key": "s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The FDA AI/ML Medical Device Landscape"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The growth of artificial intelligence in regulated medicine has been nothing short of extraordinary. As of the end of 2025, the U.S. Food and Drug Administration had cumulatively authorized more than 1,400 AI- and machine-learning-enabled medical devices — a figure that stood at fewer than 400 just five years earlier in 2020. In 2024 alone, 253 new AI/ML devices received authorization, and 2025 set a new annual record with 295 clearances. This acceleration reflects both the maturing state of the technology and the FDA's growing regulatory capacity to evaluate it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The vast majority of FDA-authorized AI devices — roughly 97 percent — travel through the 510(k) premarket notification pathway, which requires demonstrating substantial equivalence to an existing legally marketed device rather than conducting a full clinical trial. A small but growing fraction use the De Novo pathway, which creates a new device classification when no valid predicate exists. This regulatory structure is important for clinicians to understand: unlike a drug approval, a 510(k) clearance does not necessarily mean a pivotal randomized controlled trial was conducted. Clinical evidence standards vary considerably across devices, which is why scrutinizing the supporting data matters as much as the clearance itself."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "One pattern dominates the specialty breakdown: radiology accounts for approximately 76 percent of all authorized AI/ML devices, reflecting that imaging data was the earliest and most tractable target for deep learning algorithms. Cardiovascular medicine is the distant second at about 10 percent of authorizations, followed by neurology at roughly 3.7 percent, hematology at 1.8 percent, and ophthalmology at 1.1 percent. This skewed distribution means that while AI is transforming radiology workflows broadly, other high-burden specialties — primary care, psychiatry, gastroenterology — remain comparatively underserved by cleared tools. Understanding where the regulatory pipeline is dense and where it is thin helps clinicians set appropriate expectations for their own practice settings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Up from fewer than 400 in 2020",
+          "label": "Cumulative FDA-authorized AI/ML devices by end of 2025",
+          "value": "1,400+"
+        },
+        {
+          "_key": "s2",
+          "context": "A new annual record",
+          "label": "AI/ML devices cleared in 2025",
+          "value": "295"
+        },
+        {
+          "_key": "s3",
+          "context": "Cardiovascular is second at ~10%",
+          "label": "Share of cleared AI devices in radiology",
+          "value": "76%"
+        },
+        {
+          "_key": "s4",
+          "context": "Substantial equivalence, not a full RCT",
+          "label": "Cleared via 510(k) pathway",
+          "value": "97%"
+        }
+      ]
+    },
+    {
+      "_key": "s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Case Study: Radiology AI — IDx-DR and Viz.ai"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most historically significant single clearance in the AI/ML device era belongs to IDx-DR, a diabetic retinopathy screening system developed by Digital Diagnostics (formerly IDx LLC). In April 2018, the FDA granted it De Novo authorization, making IDx-DR the first autonomous AI diagnostic system ever cleared across any medical specialty — meaning it could render a clinical decision without a physician reviewing the image in real time. The system works by analyzing fundus photographs taken with a specific retinal camera in a primary care office, and it returns one of two outputs: \"more than mild diabetic retinopathy detected, refer to an eye care professional\" or \"negative for more than mild diabetic retinopathy, rescreen in 12 months.\" There is no gray zone, no \"possible\" output — the algorithm is designed to act as a gatekeeper that removes the need for a specialist to evaluate every image."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The pivotal trial supporting the IDx-DR clearance enrolled 900 patients with diabetes across ten primary care sites. Compared against a stringent reference standard using Early Treatment Diabetic Retinopathy Study (ETDRS) grading by a human reading center, IDx-DR achieved a sensitivity of 87.2 percent and a specificity of 90.7 percent — both exceeding the pre-specified performance thresholds. These numbers matter clinically: diabetic retinopathy is the leading cause of preventable blindness in working-age adults in the United States, yet a large proportion of people with diabetes never receive an annual retinal exam because access to ophthalmologists is limited, especially in rural communities and underserved urban areas. By embedding screening into primary care, IDx-DR directly addresses one of the most stubborn access gaps in preventive eye care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Roughly the same month that IDx-DR received its clearance, the FDA also granted De Novo authorization to Viz.ai — but for an entirely different clinical problem: detecting large vessel occlusion (LVO) strokes on computed tomography angiography (CTA) images. Viz.ai is a care coordination platform, not an autonomous diagnostic system, but its AI component analyzes CTA scans in near-real time and sends an alert directly to the on-call neurovascular specialist's smartphone if it detects findings suspicious for LVO. In a 300-patient performance study supporting FDA clearance, the platform achieved an AUC of 0.91 with 90 percent sensitivity and 90 percent specificity, and its median scan-to-notification time was under six minutes. A separate analysis found the AI was faster than neuroimaging specialists in more than 95 percent of cases and saved an average of 52 minutes in door-to-treatment workflows — a clinically decisive interval when the accepted maxim is \"time is brain.\""
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex",
+      "_type": "exampleBlock",
+      "content": "A federally qualified health center in a rural Vermont county has no on-site ophthalmologist and a three-month wait for the nearest retinal specialist. Using an FDA-authorized autonomous AI system like IDx-DR, a medical assistant can capture a fundus photograph during a routine diabetes visit. The AI returns a result within minutes. Patients who screen positive are referred for confirmatory specialist evaluation; patients who screen negative receive a 12-month recall without consuming any specialist time. This model has been shown to dramatically increase screening rates in real-world health system deployments.",
+      "title": "IDx-DR in a Rural Primary Care Clinic"
+    },
+    {
+      "_key": "s3h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Case Study: Cardiology AI — AliveCor KardiaMobile and the Mayo AI-ECG"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Cardiology has been shaped by two parallel tracks of FDA-cleared AI: consumer-facing wearable ECG devices and institutional AI algorithms that augment standard 12-lead electrocardiography. AliveCor pioneered the first track when it received FDA clearance in 2012 for KardiaMobile, a thumb-sized electrode pad that connects to a smartphone and records a medical-grade single-lead ECG in 30 seconds. That original clearance covered detection of atrial fibrillation (AFib) and normal sinus rhythm. Over the following decade, AliveCor stacked additional clearances: in 2019, KardiaMobile 6L became the first FDA-cleared six-lead personal ECG device; in 2021, it received clearance for QTc interval measurement relevant to drug-induced arrhythmia monitoring; and its Kardia AI V2 algorithm suite — the first FDA-cleared personal ECG algorithm to detect six common arrhythmias simultaneously — brought improved sensitivity and specificity with fewer false positives compared to the original algorithm."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The clinical significance of KardiaMobile goes beyond convenience. Atrial fibrillation affects an estimated 2.7 to 6.1 million Americans and is a leading cause of preventable ischemic stroke — yet paroxysmal AFib is notoriously difficult to capture on a clinic-based 12-lead ECG, which is only a ten-second snapshot. Consumer-grade AI ECG devices enable patients to record multiple times per day during symptomatic episodes or on a scheduled basis, dramatically expanding the monitoring window without requiring a Holter monitor prescription or an expensive implantable loop recorder. This shifts the diagnostic burden from episodic clinic encounters to continuous community-based surveillance — a genuine structural change in how arrhythmia detection works at the population level."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The institutional AI track is exemplified by a landmark 2019 study from the Mayo Clinic published in Nature Medicine, which trained a convolutional neural network on paired 12-lead ECG and echocardiogram data from 44,959 patients to detect left ventricular ejection fraction (LVEF) of 35 percent or lower — the threshold for heart failure with reduced ejection fraction (HFrEF). The resulting AI model achieved a sensitivity of 86.3 percent, specificity of 85.7 percent, and an AUC of 0.93 on its validation set. The clinical insight is remarkable: the standard 12-lead ECG does not traditionally detect reduced ejection fraction — cardiologists read an ECG for rhythm, conduction, and ischemia, not for systolic function. Yet the AI found subtle, previously unrecognized signal patterns in the ECG waveform that correlate with pump dysfunction. A subsequent randomized trial, EAGLE, demonstrated that when primary care physicians received AI-ECG alerts during routine encounters, new diagnoses of low EF increased significantly — 2.1 percent in the intervention arm versus 1.6 percent in the control arm — enabling earlier initiation of guideline-directed medical therapy that saves lives in HFrEF."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3an",
+      "_type": "analogyBlock",
+      "analogy": "Think of the Mayo AI-ECG as a trained radiologist who has also, over years, memorized which subtle X-ray findings correlate with underlying bone density loss — a pattern invisible to the untrained eye but consistently present once you know what to look for.",
+      "concept": "AI algorithms detect non-obvious correlations in existing clinical data that human readers were never trained to see, extending the diagnostic information content of a test that clinicians already routinely perform."
+    },
+    {
+      "_key": "s3sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "For AFib and normal sinus rhythm detection",
+          "label": "Year KardiaMobile first received FDA clearance",
+          "value": "2012"
+        },
+        {
+          "_key": "s2",
+          "context": "Including AFib, bradycardia, tachycardia",
+          "label": "Arrhythmias detectable by Kardia AI V2",
+          "value": "6"
+        },
+        {
+          "_key": "s3",
+          "context": "Nature Medicine 2019 validation study",
+          "label": "Sensitivity of Mayo AI-ECG for LVEF ≤35%",
+          "value": "86.3%"
+        },
+        {
+          "_key": "s4",
+          "context": "Trained on 44,959 patient ECG-echo pairs",
+          "label": "AUC of Mayo AI-ECG model",
+          "value": "0.93"
+        }
+      ]
+    },
+    {
+      "_key": "s4h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Case Study: Pathology and Oncology AI — Paige Prostate"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Digital pathology was the last major clinical discipline to see AI clearances arrive, in part because the FDA's regulatory framework for whole-slide imaging devices had to mature first. That changed in September 2021, when Paige, Inc. received De Novo marketing authorization for Paige Prostate — making it the first AI product ever cleared by the FDA in the field of digital pathology. The device is designed to assist pathologists in detecting prostate cancer on digitized needle biopsy slides, one of the highest-volume diagnostic procedures in oncology. Prostate cancer is the most common cancer in American men, and needle biopsy interpretation is notoriously demanding: slides may contain dozens of cores, each with subtle Gleason-grade findings that require expert pattern recognition and sustained attention to evaluate accurately."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The clinical validation data for Paige Prostate is compelling. In standalone performance testing, the AI system achieved a slide-level sensitivity of 98.9 percent and a specificity of 93.3 percent for cancer detection. In a core-level analysis, sensitivity reached 97.7 percent with a specificity of 99.3 percent. More importantly, in a pivotal reader study examining how pathologists performed with and without AI assistance, using Paige Prostate increased pathologist sensitivity from 90.9 percent to 96.6 percent — a 5.7 percentage point gain — with only a 0.8 percentage point reduction in specificity. Three prostate cancer cases that pathologists initially missed were identified with AI assistance. The gains were not limited to specialists: non-specialist pathologists using Paige Prostate achieved sensitivity levels comparable to specialist pathologists working unaided, effectively functioning as a competence equalizer across experience levels."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The significance of Paige Prostate extends beyond its own clinical performance metrics. It demonstrated that de novo regulatory authorization for AI-augmented pathology was achievable, and it opened the door for subsequent AI pathology products. It also crystallized a key design philosophy that the FDA has emphasized across the AI device landscape: the model is assistive, not autonomous. A pathologist still reviews the slide; the AI provides a probability map and flags suspicious regions. This \"human in the loop\" architecture is deliberate — it preserves physician accountability, guards against automation bias, and allows the clinician's judgment to override the algorithm when clinical context warrants it. For a field as consequential as cancer diagnosis, where a missed finding can mean delayed treatment and a false positive can mean unnecessary surgery, this balance between augmentation and automation represents a carefully calibrated regulatory position."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Autonomous AI (e.g., IDx-DR)",
+        "points": [
+          "Renders a clinical decision without real-time physician review",
+          "Designed for high-throughput screening in non-specialist settings",
+          "FDA requires strong standalone sensitivity and specificity evidence",
+          "Appropriate where specialist access is the limiting factor"
+        ]
+      },
+      "right": {
+        "label": "Assistive AI (e.g., Paige Prostate)",
+        "points": [
+          "Flags findings and provides probability maps for physician review",
+          "Augments expert performance rather than replacing specialist interpretation",
+          "Evaluated on reader study outcomes: does it improve human performance?",
+          "Appropriate where specialist volume or fatigue creates diagnostic risk"
+        ]
+      },
+      "title": "Autonomous AI vs. Assistive AI in Clinical Practice"
+    },
+    {
+      "_key": "s5h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hs",
+          "_type": "span",
+          "marks": [],
+          "text": "What Clinical Validation Evidence Shows — and Where the Gaps Are"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Across the devices examined in this lesson, a consistent pattern emerges in the structure of clinical evidence: the pivotal validation studies used to support FDA clearance are typically well-designed and demonstrate strong performance under controlled conditions. IDx-DR was tested at ten real primary care sites with a stringent reference standard. Viz.ai's 300-patient performance study used specialist neuroimaging interpretation as the comparator. The Mayo AI-ECG was trained and validated on one of the largest paired ECG-echocardiogram datasets ever assembled. Paige Prostate's reader study used a controlled experimental design with documented pre- and post-AI pathologist performance. These are not toy datasets or cherry-picked scenarios — they represent genuine scientific rigor."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "However, a 2025 cross-sectional study in JAMA Network Open examined all 903 AI-enabled medical devices on the FDA's list as of August 2024 and found that clinical performance studies were reported for only 505 (55.9 percent); 218 (24.1 percent) explicitly stated that no performance study was conducted. Of the studies reported, only 8.1 percent were prospective and 2.4 percent randomized. These statistics reveal a structural gap between the strongest-evidence devices — like the ones profiled in this lesson — and the broader cleared device landscape, where many products reach market with thinner evidence packages. Clinicians adopting AI tools in practice cannot assume that FDA clearance implies the same depth of clinical evidence across all products."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Real-world performance is a separate concern from clearance-study performance. AI models trained on specific hospital systems, patient demographics, or imaging equipment configurations may degrade when deployed in different environments. The FDA describes this as a \"dataset shift\" problem — when the distribution of data the algorithm encounters in deployment differs from the distribution it trained on, accuracy can fall in ways that neither the algorithm nor the clinician using it will necessarily recognize. This is why the FDA's evolving regulatory framework emphasizes post-market surveillance requirements for adaptive AI systems and encourages health systems to monitor algorithm performance metrics over time, not just at initial implementation. Understanding that a cleared device is not a permanently calibrated tool but a deployed system requiring ongoing quality oversight is a core competency for clinicians who integrate AI into their practice."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w",
+      "_type": "warningBlock",
+      "message": "Roughly 44 percent of FDA-cleared AI medical devices as of 2024 had no publicly available clinical performance data. Performance validated in a controlled study setting may not translate directly to your patient population, imaging equipment, or institutional workflow. Always evaluate the evidence package for any AI tool you deploy and monitor real-world outcomes.",
+      "title": "FDA Clearance Does Not Guarantee Universal Performance"
+    },
+    {
+      "_key": "s5st",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Was it cleared via 510(k) (substantial equivalence) or De Novo (new classification)? De Novo typically implies more scrutiny for genuinely novel technology.",
+          "title": "Check the clearance pathway"
+        },
+        {
+          "_key": "step2",
+          "description": "Search the FDA 510(k) database for the decision summary and look for linked publications. Does the dataset match your patient population demographics?",
+          "title": "Locate the clinical evidence"
+        },
+        {
+          "_key": "step3",
+          "description": "Sensitivity and specificity alone do not tell you whether the AI improves real clinician decision-making. Look for reader study evidence.",
+          "title": "Assess standalone vs. reader-study performance"
+        },
+        {
+          "_key": "step4",
+          "description": "Has the manufacturer committed to ongoing performance monitoring? Does your institution have a process for tracking AI algorithm outcomes over time?",
+          "title": "Review post-market surveillance commitments"
+        },
+        {
+          "_key": "step5",
+          "description": "Even a highly accurate AI tool can fail to deliver benefit if it creates alert fatigue, interrupts care flow, or produces outputs that clinicians find difficult to interpret and act on.",
+          "title": "Evaluate workflow integration"
+        }
+      ],
+      "title": "How to Evaluate Any FDA-Cleared AI Device Before Clinical Adoption"
+    },
+    {
+      "_key": "s5sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Windecker et al., JAMA Network Open 2025 — all 903 FDA-listed AI devices as of Aug 2024",
+          "label": "Cleared AI devices reporting a clinical performance study",
+          "value": "55.9%"
+        },
+        {
+          "_key": "s2",
+          "context": "Windecker et al., JAMA Network Open 2025 — most evidence is retrospective",
+          "label": "Reported performance studies that were prospective",
+          "value": "8.1%"
+        },
+        {
+          "_key": "s3",
+          "context": "Faster than neuroimaging specialists in >95% of cases",
+          "label": "Average time saved by Viz.ai in LVO stroke workflow",
+          "value": "52 min"
+        },
+        {
+          "_key": "s4",
+          "context": "From 90.9% to 96.6%; three missed cancers caught",
+          "label": "Pathologist sensitivity gain with Paige Prostate AI assist",
+          "value": "5.7pp"
+        }
+      ]
+    },
+    {
+      "_key": "tkwy",
+      "_type": "takeawayBlock",
+      "points": [
+        "By end of 2025, the FDA had cumulatively authorized more than 1,400 AI/ML medical devices, with radiology accounting for ~76% of all clearances.",
+        "IDx-DR (cleared April 2018) was the first fully autonomous AI diagnostic system ever authorized by the FDA — for diabetic retinopathy screening in primary care.",
+        "Viz.ai received De Novo clearance in February 2018 for AI-based LVO stroke detection, achieving a scan-to-notification time under six minutes and saving an average of 52 minutes versus standard workflows.",
+        "AliveCor KardiaMobile has received multiple FDA clearances since 2012 and its Kardia AI V2 suite now detects six arrhythmias, including AFib, bradycardia, and tachycardia.",
+        "The Mayo Clinic AI-ECG algorithm detects low ejection fraction (LVEF ≤35%) from a standard 12-lead ECG with 86.3% sensitivity and an AUC of 0.93 — a capability no clinician had previously been trained to extract from an ECG.",
+        "Paige Prostate (authorized September 2021) was the first FDA-authorized AI in digital pathology; it raised pathologist sensitivity for prostate cancer detection from 90.9% to 96.6% with only a marginal specificity trade-off.",
+        "FDA clearance does not guarantee strong clinical evidence: ~44% of cleared AI devices have no publicly available performance data, and only 9% have a prospective post-market surveillance plan.",
+        "Clinicians must distinguish autonomous AI (renders a decision independently) from assistive AI (flags findings for human review) — a distinction the FDA treats very differently in its regulatory and accountability framework."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "IDx-DR received De Novo authorization in April 2018, making it the first autonomous AI diagnostic system cleared by the FDA in any field of medicine — meaning it can render a clinical decision (refer or rescreen) without requiring a physician to review the image in real time. This \"autonomous\" classification distinguishes it from the broader category of AI-assisted tools that require physician oversight and was the basis for the De Novo pathway designation, as no prior predicate device existed for this regulatory classification.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The first AI device to detect atrial fibrillation without a physician"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The first fully autonomous AI diagnostic system cleared by the FDA across any medical specialty"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The first AI device to be cleared via the 510(k) pathway rather than De Novo"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The first AI tool to match radiologist accuracy on chest CT scans"
+        }
+      ],
+      "question": "IDx-DR, cleared by the FDA in April 2018, was historically significant because it was:"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] FDA AI/ML-Enabled Medical Devices — IntuitionLabs Tracker — https://intuitionlabs.ai/articles/fda-ai-medical-device-tracker — Supports cumulative authorization count (1,400+ by end of 2025), 2025 annual record (295 clearances), and specialty breakdown (radiology 76%, cardiovascular ~10%)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Pivotal Trial of IDx-DR: Autonomous AI for Diabetic Retinopathy — Nature npj Digital Medicine (2018) — https://www.nature.com/articles/s41746-018-0040-6 — Supports IDx-DR De Novo clearance (April 2018), trial design (900 patients, 10 sites), and performance metrics (sensitivity 87.2%, specificity 90.7%)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] FDA Permits Marketing of Viz.ai Clinical Decision Support Software — FDA Press Announcement — https://www.fda.gov/news-events/press-announcements/fda-permits-marketing-clinical-decision-support-software-alerting-providers-potential-stroke — Supports Viz.ai De Novo clearance (February 2018) as the first AI triage software for LVO stroke, AUC 0.91, 90% sensitivity/specificity, median 6-minute notification."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Screening for Cardiac Contractile Dysfunction Using an AI-Enabled ECG — Nature Medicine (2019) — https://pubmed.ncbi.nlm.nih.gov/30617318/ — Supports Mayo Clinic AI-ECG validation study: 44,959 patient training set, sensitivity 86.3%, specificity 85.7%, AUC 0.93 for LVEF ≤35%."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Paige Receives First-Ever FDA Approval for AI in Digital Pathology — Business Wire (September 2021) — https://www.businesswire.com/news/home/20210922005369/en/Paige-Receives-First-Ever-FDA-Approval-for-AI-Product-in-Digital-Pathology — Supports Paige Prostate De Novo authorization (September 2021) as the first FDA-authorized AI in pathology, and clinical validation metrics."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] A Scoping Review of Reporting Gaps in FDA-Approved AI Medical Devices — npj Digital Medicine (2024) — https://www.nature.com/articles/s41746-024-01270-x — Supports finding that only 55.9% of cleared AI devices had public clinical data, 9.0% had prospective post-market surveillance plans, and 1.9% linked to peer-reviewed publications with full safety and efficacy data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "aiml-fda-cleared-cases"
+  },
+  "title": "FDA-Cleared AI in Clinical Practice: Real Case Studies of Approved AI Medical Devices"
+}

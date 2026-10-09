@@ -1,0 +1,371 @@
+{
+ "ops": [
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "s1p3",
+   "old": "Research consistently estimates that social determinants of health — factors like income, education, housing quality, food security, neighborhood safety, and transportation access — drive between 50 and 80 percent of health outcomes. Clinical care accounts for roughly 20 percent.",
+   "new": "An analysis of U.S. county data (Hood et al., American Journal of Preventive Medicine, 2016) estimated that socioeconomic factors — income, education, employment, family and social support, community safety — account for about 47 percent of modifiable health outcomes, health behaviors for 34 percent, and clinical care for only 16 percent.",
+   "claim": "SDOH 'drive between 50 and 80 percent of health outcomes'; clinical care ~20%",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Hood CM, Gennuso KP, Swain GR, Catlin BB. 'County Health Rankings: Relationships Between Determinant Factors and Health Outcomes.' Am J Prev Med 2016;50(2):129-35 (PMID 26526164): socioeconomic 47%, behaviors 34%, clinical care 16%, physical environment 3%",
+   "note": "Unattributed range replaced with a specific peer-reviewed estimate."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "s1c1",
+   "old": "— account for an estimated 50–80% of health outcomes.",
+   "new": "— together with health behaviors, account for roughly 80% of modifiable health outcomes, while clinical care accounts for about 16% (Hood et al., 2016).",
+   "claim": "Callout: SDOH = 50–80% of outcomes",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Hood CM, Gennuso KP, Swain GR, Catlin BB. 'County Health Rankings: Relationships Between Determinant Factors and Health Outcomes.' Am J Prev Med 2016;50(2):129-35 (PMID 26526164): socioeconomic 47%, behaviors 34%, clinical care 16%, physical environment 3%",
+   "note": "Aligned to cited estimate."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "s1sg1",
+   "old": "Up to 80% of health outcomes are driven by social determinants rather than clinical care — CMS SDOH Framework 2025",
+   "new": "Socioeconomic factors (47%) and health behaviors (34%) together account for about 80% of modifiable health outcomes; clinical care 16% — Hood et al., Am J Prev Med 2016",
+   "claim": "80% figure attributed to a 'CMS SDOH Framework 2025'",
+   "verdict": "FABRICATED",
+   "sources": "Hood CM, Gennuso KP, Swain GR, Catlin BB. 'County Health Rankings: Relationships Between Determinant Factors and Health Outcomes.' Am J Prev Med 2016;50(2):129-35 (PMID 26526164): socioeconomic 47%, behaviors 34%, clinical care 16%, physical environment 3%; the cited source was a DocGo vendor blog, not a CMS framework",
+   "note": "No such CMS framework; reattributed to the peer-reviewed source."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "s1sg1",
+   "old": "Health Outcomes from Social Factors",
+   "new": "Outcomes from Non-Clinical Factors",
+   "claim": "Stat label: 80% from social factors alone",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Hood CM, Gennuso KP, Swain GR, Catlin BB. 'County Health Rankings: Relationships Between Determinant Factors and Health Outcomes.' Am J Prev Med 2016;50(2):129-35 (PMID 26526164): socioeconomic 47%, behaviors 34%, clinical care 16%, physical environment 3%",
+   "note": "80% includes health behaviors."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "s1sg1",
+   "old": "Life expectancy gap between Black and white Americans persists at approximately 5 years — CDC National Center for Health Statistics 2023",
+   "new": "Black Americans' life expectancy (74.0 years) trailed White Americans' (78.4) by 4.4 years in 2023 — KFF analysis of NCHS U.S. Life Tables, 2023",
+   "claim": "Black-white life expectancy gap 'approximately 5 years' (NCHS 2023)",
+   "verdict": "FABRICATED",
+   "sources": "KFF 'Racial Disparities in Life Expectancy' citing Arias, Xu, Kochanek, United States Life Tables, 2023 (NVSR 2025): Black 74.0, White 78.4",
+   "note": "2023 gap is 4.4 years."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "s3p2",
+   "old": "By targeting the top 1 percent of cost drivers with wraparound services including housing assistance, transportation, medication management, and care coordination, the Coalition demonstrated significant reductions in hospital utilization. The model has since been replicated in dozens of communities and influenced the design of complex care management programs in Medicare and Medicaid.",
+   "new": "Its wraparound services included housing assistance, transportation, medication management, and care coordination. When the approach was tested rigorously, however, the result was sobering: a randomized trial of the Coalition's care-transitions program (Finkelstein et al., New England Journal of Medicine, 2020) found 180-day readmission rates of 62.3 percent among enrolled patients versus 61.7 percent under usual care — no significant difference. The model still shaped complex care management nationally, and the trial is a standing lesson that promising before-and-after results need controlled evaluation.",
+   "claim": "Camden Coalition 'demonstrated significant reductions in hospital utilization'",
+   "verdict": "FABRICATED",
+   "sources": "Finkelstein A, Zhou A, Taubman S, Doyle J. 'Health Care Hotspotting — A Randomized, Controlled Trial.' NEJM 2020;382:152-162: 800 patients; 180-day readmission 62.3% vs 61.7%, no significant effect",
+   "note": "The RCT found no effect; claim reversed to what the evidence shows."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "s3p3",
+   "old": "The Vermont Blueprint for Health, which has operated since 2008 and covers all payers in Vermont, integrates",
+   "new": "The Vermont Blueprint for Health, whose multi-payer community health teams began in pilot communities in 2008, integrates",
+   "claim": "Blueprint 'operated since 2008 and covers all payers'",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Vermont Blueprint for Health program history (CHT pilots 2008; multi-payer CHT funding); Jones C, Finison K, et al. 'Vermont's Community-Oriented All-Payer Medical Home Model Reduces Expenditures and Utilization While Delivering High-Quality Care.' Popul Health Manag 2016;19:196-205 (6-year sequential cross-sectional, 123 practices)",
+   "note": "Phrasing narrowed to the documented program element."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "s3p3",
+   "old": "These teams address SDOH needs alongside clinical needs, with a shared data system that allows providers across settings to track patients' social circumstances alongside their medical records. Vermont's model has been associated with reduced emergency department utilization, slower cost growth, and improved quality scores — providing one of the most comprehensive demonstrations that SDOH integration can work at a statewide population level.",
+   "new": "These teams address social needs alongside clinical needs. A peer-reviewed analysis of six years of Vermont all-payer claims (Jones et al., Population Health Management, 2016) associated the Blueprint's community-oriented medical-home model with lower expenditures and utilization while maintaining quality — one of the longest-running statewide examples of linking community supports to primary care.",
+   "claim": "Blueprint 'shared data system' tracking social circumstances; outcomes uncited",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Jones C, Finison K, et al. 'Vermont's Community-Oriented All-Payer Medical Home Model Reduces Expenditures and Utilization While Delivering High-Quality Care.' Popul Health Manag 2016;19:196-205 (6-year sequential cross-sectional, 123 practices)",
+   "note": "Uncited data-system claim dropped; outcome claim tied to its peer-reviewed source."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "s3ex1",
+   "old": "The model operated across over 30 bridge organizations that screened over 800,000 beneficiaries for five core social needs: housing instability, food insecurity, transportation difficulties, utility needs, and interpersonal safety. Participants were randomized to awareness (referral information only), assistance (community navigation), and alignment (coordinating community services). Results showed that community navigation significantly reduced inpatient admissions and emergency department visits for beneficiaries with at least one unmet social need, validating the clinical and financial case for integrating SDOH screening into Medicare care delivery.",
+   "new": "Twenty-eight bridge organizations screened more than 1 million Medicaid and Medicare beneficiaries for five core needs: housing instability, food insecurity, transportation problems, utility difficulties, and interpersonal violence. In the Assistance Track, navigation-eligible beneficiaries (at least one need plus two or more ED visits in the prior year) were randomized to referral information alone or referral plus an offer of navigation; the Alignment Track was not randomized. CMS's final evaluation found that navigation lowered total health care expenditures — with fewer inpatient admissions and readmissions among Medicaid beneficiaries and fewer ED visits and ambulatory-care-sensitive admissions among fee-for-service Medicare beneficiaries — even though rates of need resolution were similar to the control group.",
+   "claim": "AHC: 'over 30' bridge orgs, '800,000' screened, three randomized arms, navigation reduced admissions and ED visits for anyone with an unmet need",
+   "verdict": "FABRICATED",
+   "sources": "CMS Innovation Center, AHC Model Final Evaluation Report, Executive Summary (2026, cms.gov/priorities/innovation/data-and-reports/2026/ahc-final-report-exec-sum): 28 bridge organizations; >1 million screened; Assistance Track randomized (navigation vs referral-only control), Alignment Track not randomized; navigation lowered total expenditures; Medicaid lower inpatient admissions/readmissions; FFS Medicare lower ACSC admissions and ED visits; need resolution similar to control",
+   "note": "Counts, design and results corrected to CMS's final evaluation."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "qz",
+   "old": "The model demonstrated that community navigation significantly reduced inpatient admissions and emergency department visits for beneficiaries with at least one unmet social need, validating the premise that addressing SDOH can reduce healthcare utilization and cost.",
+   "new": "CMS's final evaluation found that navigation lowered total health care expenditures and hospital-based use among navigation-eligible beneficiaries (fewer inpatient admissions for Medicaid enrollees, fewer ED visits for fee-for-service Medicare enrollees), supporting the premise that addressing social needs can reduce utilization and cost.",
+   "claim": "Quiz explanation: AHC navigation reduced admissions and ED visits for anyone with an unmet need",
+   "verdict": "FABRICATED",
+   "sources": "CMS Innovation Center, AHC Model Final Evaluation Report, Executive Summary (2026, cms.gov/priorities/innovation/data-and-reports/2026/ahc-final-report-exec-sum): 28 bridge organizations; >1 million screened; Assistance Track randomized (navigation vs referral-only control), Alignment Track not randomized; navigation lowered total expenditures; Medicaid lower inpatient admissions/readmissions; FFS Medicare lower ACSC admissions and ED visits; need resolution similar to control",
+   "note": "Aligned with final evaluation."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "s4p2",
+   "old": "CMS has moved in this direction with the Health Equity Index for Medicare Advantage and has proposed measure stratification requirements for the Hospital Value-Based Purchasing program starting in 2026.",
+   "new": "CMS moved in this direction in 2023, finalizing a Health Equity Index reward for Medicare Advantage Star Ratings and a health equity adjustment for the Hospital Value-Based Purchasing program, but reversed both in 2025: the FY2026 inpatient rule removed the hospital adjustment, and the CY2027 Medicare Advantage rule did not implement the reward.",
+   "claim": "HVBP 'proposed measure stratification requirements starting 2026'; MA Health Equity Index presented as current",
+   "verdict": "FABRICATED",
+   "sources": "CY2024 MA final rule (HEI, April 2023); FY2024 IPPS final rule (HVBP health equity adjustment, Aug 2023); FY2026 IPPS final rule (CMS-1833-F): removes HVBP health equity adjustment; CY2027 MA/Part D final rule: does not implement the Health Equity Index / EHO4all reward (Becker's, Fierce Healthcare); CY2026 PFS final rule: G0136 descriptor revised to remove SDOH risk assessment",
+   "note": "Mischaracterized policy and now-reversed policies corrected."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "s4p3",
+   "old": "Medicaid coverage of CHW services remains a state option, available since 2014 and adopted by more than half of states.",
+   "new": "Medicaid coverage of CHW services remains a state option; in KFF's 2022 survey, 29 of 48 responding states reported allowing Medicaid payment for CHW services.",
+   "claim": "Medicaid CHW coverage 'available since 2014 and adopted by more than half of states'",
+   "verdict": "UNVERIFIABLE",
+   "sources": "KFF, 'State Policies for Expanding Medicaid Coverage of Community Health Worker (CHW) Services' (29 of 48 responding states, July 2022); CHW Medicaid payment predates 2014 (e.g., Minnesota SPA 2008)",
+   "note": "'Since 2014' inaccurate; count tied to source."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "s5p1",
+   "old": "The 2022 CMMI Strategic Refresh explicitly named health equity as a central goal of value-based care model design, committing that all future Innovation Center models would include health equity elements. The AHC model, Enhanced Primary Care Transformation model, and ACO REACH all included equity-specific requirements or bonuses. Yet CMMI also terminated several models early in 2025,",
+   "new": "The Innovation Center's October 2021 Strategy Refresh named health equity a strategic objective, committing to embed it in every model. The AHC model, the Making Care Primary model, and ACO REACH all included equity-specific requirements or payment adjustments. Yet in March 2025 CMMI announced the early termination of four models — Making Care Primary among them —",
+   "claim": "'2022 CMMI Strategic Refresh'; 'Enhanced Primary Care Transformation model'",
+   "verdict": "FABRICATED",
+   "sources": "CMS Innovation Center Strategy Refresh white paper (released 2021-10-20); CMS MCP model page; CMS 2025-03-12 announcement ending Maryland TCOC, Primary Care First, ESRD Treatment Choices, Making Care Primary (Winston & Strawn, Jones Day)",
+   "note": "No 'Enhanced Primary Care Transformation' model exists; replaced with MCP; year corrected."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "s5p2",
+   "old": "North Carolina's Healthy Opportunities Pilots funded social services through Medicaid for the first time, testing",
+   "new": "North Carolina's Healthy Opportunities Pilots — described by the state as the nation's first comprehensive program to test evidence-based non-medical interventions for high-needs Medicaid enrollees — tested",
+   "claim": "NC HOP 'funded social services through Medicaid for the first time'",
+   "verdict": "UNVERIFIABLE",
+   "sources": "NCDHHS Healthy Opportunities Pilots page ('nation's first comprehensive program...'; up to $650M Medicaid authority); NCDHHS notice: services stopped 2025-07-01",
+   "note": "Overclaim narrowed to the state's own description."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "s5p2",
+   "old": "could improve outcomes for the most complex enrollees.",
+   "new": "could improve outcomes for the most complex enrollees; services stopped on July 1, 2025, when state funding lapsed.",
+   "claim": "NC HOP presented as ongoing",
+   "verdict": "REAL",
+   "sources": "NCDHHS and health-plan notice: HOP services stopped effective 2025-07-01 for lack of state appropriation",
+   "note": "Status added."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "tw",
+   "old": "— drive up to 80 percent of health outcomes,",
+   "new": "— together with health behaviors, drive roughly 80 percent of modifiable health outcomes,",
+   "claim": "Takeaway: SDOH 'drive up to 80 percent'",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Hood CM, Gennuso KP, Swain GR, Catlin BB. 'County Health Rankings: Relationships Between Determinant Factors and Health Outcomes.' Am J Prev Med 2016;50(2):129-35 (PMID 26526164): socioeconomic 47%, behaviors 34%, clinical care 16%, physical environment 3%",
+   "note": "Aligned."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "tw",
+   "old": "represent proven operational strategies",
+   "new": "represent promising operational strategies",
+   "claim": "Takeaway: CHW/SDOH strategies 'proven'",
+   "verdict": "FABRICATED",
+   "sources": "Finkelstein A, Zhou A, Taubman S, Doyle J. 'Health Care Hotspotting — A Randomized, Controlled Trial.' NEJM 2020;382:152-162: 800 patients; 180-day readmission 62.3% vs 61.7%, no significant effect; CMS Innovation Center, AHC Model Final Evaluation Report, Executive Summary (2026, cms.gov/priorities/innovation/data-and-reports/2026/ahc-final-report-exec-sum): 28 bridge organizations; >1 million screened; Assistance Track randomized (navigation vs referral-only control), Alignment Track not randomized; navigation lowered total expenditures; Medicaid lower inpatient admissions/readmissions; FFS Medicare lower ACSC admissions and ED visits; need resolution similar to control",
+   "note": "Camden RCT null; AHC mixed on need resolution — 'proven' overstated."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "tw",
+   "old": "provide real-world evidence that integrating SDOH screening and community navigation into VBC can reduce hospitalizations and emergency department utilization.",
+   "new": "provide real-world evidence that linking community supports to primary care, and social-needs screening to navigation, can lower spending and hospital-based use.",
+   "claim": "Takeaway: Blueprint/AHC reduce hospitalizations and ED use",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Jones C, Finison K, et al. 'Vermont's Community-Oriented All-Payer Medical Home Model Reduces Expenditures and Utilization While Delivering High-Quality Care.' Popul Health Manag 2016;19:196-205 (6-year sequential cross-sectional, 123 practices); CMS Innovation Center, AHC Model Final Evaluation Report, Executive Summary (2026, cms.gov/priorities/innovation/data-and-reports/2026/ahc-final-report-exec-sum): 28 bridge organizations; >1 million screened; Assistance Track randomized (navigation vs referral-only control), Alignment Track not randomized; navigation lowered total expenditures; Medicaid lower inpatient admissions/readmissions; FFS Medicare lower ACSC admissions and ED visits; need resolution similar to control",
+   "note": "Aligned with evaluations."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "tw",
+   "old": "CMS has committed to health equity as a central design principle for future Innovation Center models, and has created new billing codes for community health workers and SDOH risk assessments — but comprehensive equity-adjusted payment design remains incomplete.",
+   "new": "CMS made health equity a design objective for Innovation Center models in 2021 and created Medicare billing codes for community health integration and SDOH risk assessment in 2024 — but in 2025 it rolled back several equity provisions, so equity-adjusted payment design remains unsettled.",
+   "claim": "Takeaway: CMS equity commitment and SDOH code presented as current",
+   "verdict": "FABRICATED",
+   "sources": "CMS Innovation Center Strategy Refresh (2021); CY2024 PFS final rule (G0019/G0022, G0136); FY2026 IPPS final rule (CMS-1833-F): removes HVBP health equity adjustment; CY2027 MA/Part D final rule: does not implement the Health Equity Index / EHO4all reward (Becker's, Fierce Healthcare); CY2026 PFS final rule: G0136 descriptor revised to remove SDOH risk assessment",
+   "note": "Stale; 2025 reversals added."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "mirror": true,
+   "key": "src1",
+   "old": "[1] CMS: How Is CMS Addressing Social Determinants of Health in 2025 — https://docgo.com/blog/how-is-cms-addressing-social-determinants-of-health-sdoh-in-2025/ — CMS SDOH frameworks, 80% health outcomes estimate, 2025 initiatives",
+   "new": "[1] Hood CM, Gennuso KP, Swain GR, Catlin BB, \"County Health Rankings: Relationships Between Determinant Factors and Health Outcomes,\" American Journal of Preventive Medicine 2016;50(2):129-35 — https://pubmed.ncbi.nlm.nih.gov/26526164/ — socioeconomic factors 47%, health behaviors 34%, clinical care 16%, physical environment 3%",
+   "claim": "Source [1] labelled 'CMS' but is a DocGo vendor blog (403)",
+   "verdict": "FABRICATED",
+   "sources": "Hood CM, Gennuso KP, Swain GR, Catlin BB. 'County Health Rankings: Relationships Between Determinant Factors and Health Outcomes.' Am J Prev Med 2016;50(2):129-35 (PMID 26526164): socioeconomic 47%, behaviors 34%, clinical care 16%, physical environment 3%",
+   "note": "Mislabelled vendor blog replaced with the primary study."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "after": "src5",
+   "insert": {
+    "_key": "src6",
+    "_type": "block",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_key": "src6s",
+      "_type": "span",
+      "marks": [],
+      "text": "[6] CMS Innovation Center, Accountable Health Communities Model Final Evaluation Report, Executive Summary (2026) — https://www.cms.gov/priorities/innovation/data-and-reports/2026/ahc-final-report-exec-sum — 28 bridge organizations, >1 million screened, randomized Assistance Track, impacts on expenditures and hospital use"
+     }
+    ]
+   },
+   "claim": "Added source for corrected AHC facts",
+   "verdict": "REAL",
+   "sources": "CMS Innovation Center, AHC Model Final Evaluation Report, Executive Summary (2026, cms.gov/priorities/innovation/data-and-reports/2026/ahc-final-report-exec-sum): 28 bridge organizations; >1 million screened; Assistance Track randomized (navigation vs referral-only control), Alignment Track not randomized; navigation lowered total expenditures; Medicaid lower inpatient admissions/readmissions; FFS Medicare lower ACSC admissions and ED visits; need resolution similar to control",
+   "note": "New citation block."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "after": "src6",
+   "insert": {
+    "_key": "src7",
+    "_type": "block",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_key": "src7s",
+      "_type": "span",
+      "marks": [],
+      "text": "[7] Finkelstein A, Zhou A, Taubman S, Doyle J, \"Health Care Hotspotting — A Randomized, Controlled Trial,\" New England Journal of Medicine 2020;382:152-162 — Camden Coalition care-transitions program: 180-day readmissions 62.3% vs. 61.7%, no significant effect"
+     }
+    ]
+   },
+   "claim": "Added source for Camden RCT",
+   "verdict": "REAL",
+   "sources": "Finkelstein A, Zhou A, Taubman S, Doyle J. 'Health Care Hotspotting — A Randomized, Controlled Trial.' NEJM 2020;382:152-162: 800 patients; 180-day readmission 62.3% vs 61.7%, no significant effect",
+   "note": "New citation block."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "after": "src7",
+   "insert": {
+    "_key": "src8",
+    "_type": "block",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_key": "src8s",
+      "_type": "span",
+      "marks": [],
+      "text": "[8] Jones C, Finison K, et al., \"Vermont's Community-Oriented All-Payer Medical Home Model Reduces Expenditures and Utilization While Delivering High-Quality Care,\" Population Health Management 2016;19:196-205 — https://pmc.ncbi.nlm.nih.gov/articles/PMC4913508/"
+     }
+    ]
+   },
+   "claim": "Added source for Blueprint outcomes",
+   "verdict": "REAL",
+   "sources": "Jones C, Finison K, et al. 'Vermont's Community-Oriented All-Payer Medical Home Model Reduces Expenditures and Utilization While Delivering High-Quality Care.' Popul Health Manag 2016;19:196-205 (6-year sequential cross-sectional, 123 practices)",
+   "note": "New citation block."
+  },
+  {
+   "docs": [
+    "vbc-equity-m6"
+   ],
+   "after": "src8",
+   "insert": {
+    "_key": "src9",
+    "_type": "block",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_key": "src9s",
+      "_type": "span",
+      "marks": [],
+      "text": "[9] KFF, \"Racial Disparities in Life Expectancy\" (analysis of NCHS United States Life Tables, 2023) — https://www.kff.org/racial-equity-and-health-policy/racial-disparities-in-life-expectancy/ — Black 74.0 vs. White 78.4 years"
+     }
+    ]
+   },
+   "claim": "Added source for life-expectancy gap",
+   "verdict": "REAL",
+   "sources": "KFF 'Racial Disparities in Life Expectancy' citing Arias, Xu, Kochanek, United States Life Tables, 2023 (NVSR 2025): Black 74.0, White 78.4",
+   "note": "New citation block."
+  },
+  {
+   "log_only": true,
+   "doc": "sanity vbc-equity-m6",
+   "block_key": "s4p3,s5p2,s2*,src2-src5",
+   "claim": "CHI codes G0019/G0022 in CY2024 PFS; MA/OR/CA Medicaid HRSN innovations; benchmark/quality-metric bias reasoning; sources 2-4 resolve (200), source 5 cmsatoday 403 to bots",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "CY2024 PFS final rule (CMS-1784-F); MassHealth Flexible Services, Oregon 1115 HRSN, CalAIM Community Supports; curl status checks 2026-10-08",
+   "status": "LEFT",
+   "note": "cmsatoday.com returns 403 to scripted requests (bot protection); left in place."
+  }
+ ]
+}

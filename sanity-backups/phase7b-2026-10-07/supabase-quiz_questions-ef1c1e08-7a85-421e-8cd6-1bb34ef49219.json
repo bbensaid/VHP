@@ -1,0 +1,9 @@
+{
+  "id": "ef1c1e08-7a85-421e-8cd6-1bb34ef49219",
+  "quiz_id": "a4131fc6-76c8-4068-82d4-36397acfbdd4",
+  "order": 1,
+  "question_type": "single_choice",
+  "question": "What did the Supreme Court hold in Gobeille v. Liberty Mutual Insurance Co. (2016)?",
+  "explanation": "By 6–2, in an opinion by Justice Kennedy on February 29, 2016, the Court held that ERISA preempts Vermont's law requiring health plans, including self-insured employer plans, to report claims data into the state's all-payer claims database. Reporting and disclosure are core ERISA functions.",
+  "points": 1
+}

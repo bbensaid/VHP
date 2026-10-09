@@ -1,0 +1,554 @@
+{
+  "_createdAt": "2026-05-29T22:50:59Z",
+  "_id": "hie-vermont-acts-167-68",
+  "_rev": "rL4Cn5Sfo5Z8rzPmDsfRNF",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-29T22:50:59Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont as a National Health IT Laboratory"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont is one of the smallest states in the nation — with approximately 650,000 residents — but it has consistently punched above its weight in health system reform. Since the early 2000s, Vermont has built a comprehensive, legislatively-mandated health information infrastructure that integrates clinical data exchange, multi-payer payment reform, and population health management in ways that most larger states have only aspired to. Understanding Vermont's framework means understanding what coordinated, statewide health IT looks like when it is actually built."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's approach rests on three interlocking pillars: the Vermont Health Information Exchange (VHIE), operated by VITL under statutory designation; the Blueprint for Health, the state's multi-payer primary care transformation program; and a series of legislative acts — most recently Act 167 of 2022 — that have advanced the integration of claims data, clinical data, and social determinants information into a unified statewide health record infrastructure. Each pillar is codified in Vermont statute under Title 18, ensuring that the HIE and payment reform programs are not merely grant-funded pilots but durable state policy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson examines each pillar in depth: how VITL and the VHIE were established and how they operate; how the Blueprint for Health aligns financial incentives with care coordination; and what Act 167 of 2022 directed the state to do next — including the ambitious goal of merging Vermont's all-payer claims database with its statewide clinical HIE to create a single longitudinal health record for every Vermonter."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's health IT framework is codified in 18 V.S.A. Chapter 219, which requires a statewide Health Information Technology Plan, designates VITL as the exclusive operator of the Vermont Health Information Exchange, and mandates integration of the Blueprint for Health's IT components — making Vermont's HIE and payment reform programs matters of state law, not just policy preference."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Nonprofit designated by Vermont Legislature as exclusive statewide HIE operator",
+          "label": "VITL Founded",
+          "value": "2005"
+        },
+        {
+          "_key": "s2",
+          "context": "Vermont's multi-payer primary care reform program enacted in statute; modified significantly in 2010",
+          "label": "Blueprint for Health Codified",
+          "value": "2006"
+        },
+        {
+          "_key": "s3",
+          "context": "Directed integration of claims (VHCURES) + clinical (VHIE) + SDOH data into one health record per Vermonter",
+          "label": "Act 167 Enacted",
+          "value": "2022"
+        },
+        {
+          "_key": "s4",
+          "context": "Act 62 (2025) removed VITL oversight from Green Mountain Care Board",
+          "label": "VITL Governance Restructured",
+          "value": "July 2025"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "VITL and the Vermont Health Information Exchange"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont Information Technology Leaders (VITL) was founded in 2005 as a private nonprofit organization with support from the Vermont Association of Health and Hospital Systems, the Vermont Medical Society, and Fletcher Allen Health Care (now the University of Vermont Medical Center). Its founding mission was to help digitize Vermont's healthcare system and facilitate electronic exchange of patient information across the state. Vermont subsequently designated VITL in statute — under 18 V.S.A. § 9352 — as the exclusive operator of the Vermont Health Information Exchange (VHIE), making it the only entity authorized to operate a statewide HIE network in Vermont."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The VHIE connects Vermont's hospitals, primary and specialty care practices, Federally Qualified Health Centers (FQHCs), home health agencies, nursing homes, commercial laboratories, and other healthcare organizations. Since 2005, VITL has collected, matched, and standardized patient data from these contributing organizations, building a longitudinal clinical data repository that spans care settings. VITL provides three primary services to the state: health information exchange (giving authorized providers access to a patient's records across organizations), quality reporting (aggregating data for population-level analysis), and analytics (supporting Vermont's Blueprint for Health and other initiatives)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's Health Information Technology Plan — required by 18 V.S.A. § 9351 — specifies what the VHIE must accomplish and how VITL must operate. The Plan is submitted annually to the Green Mountain Care Board (GMCB) by November 1 and must be approved, rejected, or modified by GMCB within 45 days. It must include standards and protocols for patient education, patient privacy, physician best practices, electronic connectivity, and the delivery of cost-efficient care. The Plan also integrates the IT components of the Blueprint for Health, the Agency of Human Services' Enterprise Master Patient Index (EMPI), and all Medicaid management information systems — ensuring VITL's infrastructure is aligned with Vermont's broader health reform agenda. Note: As of July 1, 2025, Act 62 transferred VITL oversight away from the GMCB, restructuring Vermont's health IT governance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex1",
+      "_type": "exampleBlock",
+      "content": "During the COVID-19 pandemic, Vermont's pre-existing VHIE infrastructure proved essential. VITL's statewide data exchange network enabled rapid aggregation of lab results, vaccination records, and hospital census data across Vermont's dispersed provider network — information that would have taken days to compile manually from individual facilities. The VHIE's existing connections to hospitals, labs, and primary care practices meant Vermont could operationalize statewide surveillance faster than states that lacked a functioning HIE. This real-world deployment illustrates the long-term value of investing in HIE infrastructure before a crisis demands it.",
+      "title": "VITL's Role in Vermont's COVID-19 Response"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "A hospital, clinic, FQHC, or lab establishes a data feed to VITL's VHIE using HL7 v2 or FHIR standards; VITL's interface engine receives and standardizes the incoming data.",
+          "title": "Provider Connects to VHIE"
+        },
+        {
+          "_key": "step2",
+          "description": "VITL's Enterprise Master Patient Index (EMPI) matches each incoming record to the correct patient across contributing organizations, creating a longitudinal identity link.",
+          "title": "Patient Matching"
+        },
+        {
+          "_key": "step3",
+          "description": "When an authorized provider sees a patient, they can query the VHIE from within their EHR to retrieve records from other contributing organizations — lab results, hospital discharge summaries, medication lists.",
+          "title": "Record Available for Query"
+        },
+        {
+          "_key": "step4",
+          "description": "VITL aggregates de-identified data for population health analysis, quality reporting for Blueprint practices, and state health surveillance.",
+          "title": "Quality and Analytics"
+        },
+        {
+          "_key": "step5",
+          "description": "Vermont uses an opt-out consent model for the VHIE; patients are enrolled by default and must actively opt out if they do not wish their data shared through the exchange.",
+          "title": "Patient Consent"
+        }
+      ],
+      "title": "How the VHIE Works for a Vermont Provider"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Blueprint for Health: Multi-Payer Primary Care Reform"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Blueprint for Health is Vermont's state-led initiative for implementing sustainable health care delivery reform. First codified in Vermont statute in 2006 and significantly expanded in 2010 with Act 128, the Blueprint rests on a simple premise: if primary care practices are transformed into high-functioning, team-based medical homes, and if all payers share the cost of that transformation, the result will be better care, healthier populations, and lower total costs. The Blueprint is not a Medicaid-only or Medicare-only program — it is an all-payer reform that requires commercial insurers, Medicaid, and Medicare to participate together."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Blueprint has four core components. The first is Patient-Centered Medical Homes (PCMHs) — primary care practices that have achieved National Committee for Quality Assurance (NCQA) recognition for team-based care, care coordination, and population management. PCMHs receive a per-member-per-month (PMPM) payment from all payers, scaled to their NCQA score — higher scores earn higher payments, creating a financial incentive to continuously improve. The second is Community Health Teams (CHTs) — multi-disciplinary teams deployed regionally to support PCMHs. CHT staff include nurses, care coordinators, social workers, counselors, health educators, registered dietitians, nutrition specialists, health coaches, and community health workers. CHT capacity payments are approximately $350,000 per 20,000 patients, shared equally by Vermont's commercial and public payers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "In 2010, Vermont was selected to participate in the CMS Multi-Payer Advanced Primary Care Practice (MAPCP) Demonstration, through which Medicare formally joined the Blueprint as a paying partner alongside commercial insurers and Medicaid — one of the first instances in the US of Medicare participating in a state-led all-payer primary care transformation program. The Blueprint uses Vermont's all-payer claims database (VCHURES) and the Vermont Clinical Registry for data, analytics, and the Learning Health System component that enables practices to continuously evaluate and improve their performance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Before Blueprint (Fragmented Primary Care)",
+        "points": [
+          "Each payer contracts separately with each practice",
+          "No shared investment in care coordination or team-based care",
+          "PCPs paid FFS — rewarded for volume, not value",
+          "No community health teams to support complex patients",
+          "No shared population-level data across payers",
+          "Care transitions unsupported — patients fall through gaps"
+        ]
+      },
+      "right": {
+        "label": "After Blueprint (Coordinated Multi-Payer Reform)",
+        "points": [
+          "All payers (commercial + Medicaid + Medicare) aligned behind shared goals",
+          "PMPM payments support PCMH transformation at scale",
+          "Community Health Teams deployed regionally to support practices",
+          "VCHURES claims + VHIE clinical data enable population analytics",
+          "Learning Health System enables continuous quality improvement",
+          "Care coordinators proactively manage high-risk patients"
+        ]
+      },
+      "title": "Blueprint for Health — Before and After"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Act 167 (2022): Toward One Health Record per Vermonter"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont Act 167 of 2022 (S.285), “An act relating to health care reform,” represented a significant legislative step forward in Vermont's health IT agenda. Among its most consequential provisions was a directive to the HIE Steering Committee to work toward creating one health record per Vermonter — a longitudinal record that integrates health care claims data, clinical data, mental health and substance use disorder records, and social determinants of health data. Critically, the Act called for a data integration strategy to merge and consolidate Vermont's all-payer claims database (VHCURES) with the clinical data in the VHIE."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This merger — claims data plus clinical data plus SDOH data in a single longitudinal record — is the holy grail of health information management. Claims data tells you what services were billed and paid; clinical data tells you what actually happened clinically; SDOH data tells you what social and environmental factors shaped the patient's health. Each alone is powerful; combined, they create a complete picture of a patient's health journey across settings, payers, and social contexts. Vermont's Act 167 positioned the state to build this integrated view at a statewide level — a capability that most states lack the infrastructure to attempt."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Act 167 also addressed the Blueprint for Health's funding. The Director of Health Care Reform was required to recommend, by January 15, 2023, updated per-member-per-month payment amounts for insurers and Medicaid for Blueprint Community Health Teams and quality improvement facilitation. Additional provisions covered options for supporting Vermonters with moderate care needs, Green Mountain Care Board reporting requirements, Medicaid primary care reimbursement rates, and prior authorization reporting — reflecting the Act's comprehensive scope as a health care reform omnibus."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Act 167's vision — one longitudinal health record per Vermonter integrating claims, clinical, behavioral health, and SDOH data — represents the most ambitious health data integration goal in Vermont's history. It requires merging VHCURES (the all-payer claims database), the VHIE (clinical HIE), behavioral health records, and social needs data under a unified governance and consent framework. No other state had attempted this integration at statewide scale when Act 167 was enacted."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "Vermont's goal of integrating mental health and substance use disorder records into a unified health record must navigate 42 CFR Part 2 (federal SUD confidentiality rules) and Vermont's own behavioral health privacy statutes. Mental health and SUD records carry stricter protections than general medical records. Any data integration strategy for Act 167's unified health record must include a robust consent architecture that separately governs behavioral health data — with patient opt-in (not just opt-out) for this sensitive category.",
+      "title": "Behavioral Health Data Requires Special Consent Governance"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's Health IT Governance Evolution"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's health IT governance has evolved through multiple legislative cycles. From 2011 through 2025, the Green Mountain Care Board (GMCB) held oversight authority for Vermont's statewide Health Information Technology Plan and VITL. The GMCB — an independent state agency — reviewed and approved Vermont's annual HIT Plan, ensuring that VITL's activities aligned with Vermont's broader health reform goals. This placed Vermont's HIE governance at the intersection of health care reform policy and health IT strategy in a way unique among US states."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Act 62 of 2025, effective July 1, 2025, restructured Vermont's health IT governance by removing VITL oversight and the HIT Plan from the Green Mountain Care Board's responsibilities. This change reflects Vermont's ongoing evolution in how it organizes health system reform functions — separating technical HIE governance from the broader health care cost and quality oversight mission of the GMCB. Vermont's health IT governance will continue to evolve as the state pursues the ambitious data integration goals set out in Act 167."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's experience offers national lessons about what statewide health IT requires to succeed. First, statutory designation matters: naming VITL the exclusive statewide HIE operator in law — rather than through a grant or contract — gave VITL the stability and authority to build long-term infrastructure. Second, multi-payer alignment is essential: the Blueprint's success depends on every payer participating, including Medicare — which requires federal CMS engagement through models like the MAPCP Demonstration. Third, data integration is generational work: merging claims, clinical, and SDOH data at statewide scale, as Act 167 envisions, requires years of governance, consent framework development, technical integration, and stakeholder trust-building. Vermont is further along this path than most states, but the work is not finished."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "Vermont's health IT system is like a city's water infrastructure — invisible to most residents until it isn't working. The pipes (VITL's data connections), the treatment plant (the EMPI and data standardization), and the distribution system (the VHIE query and reporting platform) all had to be built before any water could flow. Act 167 is like adding a water recycling system — taking what already flows through the pipes and making it even more useful by integrating it with other sources. The infrastructure investment came first; the value follows from it.",
+      "concept": "Vermont's Statewide HIE as Shared Infrastructure"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "VITL (Vermont Information Technology Leaders), founded in 2005, is legislatively designated under 18 V.S.A. § 9352 as the exclusive operator of Vermont's statewide Health Information Exchange — making HIE a matter of state law, not just policy.",
+        "Vermont's Health Information Technology Plan, required by 18 V.S.A. § 9351, is submitted annually to the Green Mountain Care Board; it must integrate the Blueprint for Health's IT components, the state EMPI, and all Medicaid management information systems.",
+        "The Blueprint for Health, codified in 2006 and expanded in 2010, is an all-payer primary care transformation program: PCMHs receive PMPM payments scaled to NCQA scores; Community Health Teams receive ~$350,000 per 20,000 patients, shared equally by all payers.",
+        "In 2010, Medicare joined the Blueprint through the CMS Multi-Payer Advanced Primary Care Practice (MAPCP) Demonstration — one of the earliest examples in the US of Medicare formally aligning with a state-led all-payer primary care reform.",
+        "Vermont Act 167 (2022) directed the HIE Steering Committee to create one health record per Vermonter integrating claims (VHCURES), clinical (VHIE), behavioral health, and SDOH data — a statewide data integration goal unprecedented in scope.",
+        "Integrating behavioral health and SUD records into the unified health record requires special consent governance under 42 CFR Part 2 and Vermont's own behavioral health privacy statutes — opt-in consent, not opt-out, applies for this sensitive data.",
+        "Act 62 (2025, effective July 1, 2025) restructured Vermont's health IT governance by removing VITL oversight and the HIT Plan from the Green Mountain Care Board, reflecting Vermont's ongoing evolution in organizing health system reform functions."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "18 V.S.A. § 9352 designates Vermont Information Technology Leaders (VITL) as the exclusive operator of the Vermont Health Information Exchange (VHIE). VITL is a nonprofit organization founded in 2005 that has been building and operating Vermont's statewide HIE since then. The Green Mountain Care Board oversaw Vermont's Health IT Plan and VITL until Act 62 (2025) restructured that governance. DVHA coordinates the HIT Plan; UVM Medical Center was a founding supporter of VITL but does not operate the VHIE.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The Green Mountain Care Board (GMCB)"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Vermont Information Technology Leaders (VITL)"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The Department of Vermont Health Access (DVHA)"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The University of Vermont Medical Center"
+        }
+      ],
+      "question": "Under Vermont law, which organization is designated as the exclusive operator of Vermont's statewide Health Information Exchange (VHIE)?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] VITL — About VITL — https://vitl.net/about-vitl/ — founding history, services, legislative designation"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Vermont Legislature — 18 V.S.A. § 9351 — https://legislature.vermont.gov/statutes/section/18/219/09351 — HIT Plan requirements, GMCB oversight, VITL designation"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Vermont Legislature — Act 167 of 2022 (S.285) — https://legislature.vermont.gov/Documents/2022/Docs/ACTS/ACT167/ACT167%20As%20Enacted.pdf — HIE one-record goal, Blueprint PMPM provision"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Green Mountain Care Board — Blueprint for Health Overview — https://gmcboard.vermont.gov/sites/gmcb/files/documents/Blueprint%20Overview%20-%20PCAG%20May%202022.pdf — Blueprint components, PCMH payments, CHTs"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Health Affairs — Vermont's Blueprint for Medical Homes, Community Health Teams, and Better Health at Lower Cost — https://www.healthaffairs.org/doi/10.1377/hlthaff.2011.0169 — Blueprint evidence, MAPCP Demonstration, multi-payer design"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "hie-vermont-acts-167-68"
+  },
+  "title": "Vermont's Health IT Framework: VITL, Blueprint, and Act 167"
+}

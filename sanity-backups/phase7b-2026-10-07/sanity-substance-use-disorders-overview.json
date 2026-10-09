@@ -1,0 +1,543 @@
+{
+  "_createdAt": "2026-06-02T17:27:31Z",
+  "_id": "substance-use-disorders-overview",
+  "_rev": "jFV5UM63HEdRp4x3pu05ju",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T17:27:31Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Is a Substance Use Disorder?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A substance use disorder (SUD) is a medical condition in which the recurrent use of alcohol or drugs causes clinically significant impairment — including health problems, disability, and failure to meet responsibilities at work, school, or home. It is not a moral failing or a simple lack of willpower. The leading federal science agency, the National Institute on Drug Abuse (NIDA), defines addiction as a chronic, relapsing brain disease characterized by compulsive drug seeking and use despite harmful consequences."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The DSM-5-TR diagnoses substance use disorders using 11 criteria, spanning impaired control (using more than intended, unsuccessful attempts to cut down, craving), social impairment, risky use, and pharmacological signs (tolerance and withdrawal). Severity is graded by how many criteria a person meets: 2–3 indicates a mild disorder, 4–5 moderate, and 6 or more severe. A severe substance use disorder is what most people mean by \"addiction.\""
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Framing SUDs as chronic medical conditions — similar to diabetes or hypertension in that they involve relapse, require ongoing management, and respond to treatment — reshapes how the health system should respond. It points toward long-term, evidence-based treatment rather than short-term punishment or one-time detox."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A substance use disorder is a diagnosable medical condition graded mild (2–3 criteria), moderate (4–5), or severe (6+) on 11 DSM-5-TR criteria. NIDA classifies addiction as a chronic, relapsing brain disease — not a moral failing."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "2023 SAMHSA NSDUH",
+          "label": "People with any SUD (age 12+)",
+          "value": "48.5M"
+        },
+        {
+          "_key": "s2",
+          "context": "Severity graded mild / moderate / severe",
+          "label": "DSM-5-TR diagnostic criteria",
+          "value": "11"
+        },
+        {
+          "_key": "s3",
+          "context": "Commonly called \"addiction\" (DSM-5-TR)",
+          "label": "Criteria for a severe SUD",
+          "value": "6+"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Alcohol: The Most Common Substance Use Disorder"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Alcohol use disorder (AUD) is by far the most prevalent substance use disorder in the United States. In 2023, an estimated 28.9 million people aged 12 or older — about 10.2% of that population — had an alcohol use disorder. Because alcohol is legal, socially accepted, and widely available, AUD is frequently underestimated and underdiagnosed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Alcohol’s health toll is broad: it contributes to liver disease, several cancers, cardiovascular disease, injuries, and tens of thousands of deaths each year, in addition to the direct harms of dependence. Yet because heavy drinking is normalized, many people with AUD never see it as a treatable medical problem."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Effective treatments exist, including FDA-approved medications (such as naltrexone and acamprosate) alongside behavioral therapies and mutual-support programs. As with mental illness, the central challenge is not the absence of effective treatment but the failure to connect people to it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Alcohol use disorder is the single most common substance use disorder — about 28.9 million people aged 12+ in 2023 — yet because alcohol is legal and normalized, it is widely underdiagnosed."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Opioids and the Overdose Crisis"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Opioids — a class that includes prescription painkillers, heroin, and illicitly manufactured fentanyl — are at the center of the deadliest drug crisis in U.S. history. About 5 million adults had an opioid use disorder in the past year in 2023. While that is far fewer than have alcohol use disorder, opioids account for a hugely disproportionate share of overdose deaths."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The crisis has unfolded in waves: first prescription opioids, then heroin, and since around 2013 a third wave driven by illicitly manufactured fentanyl — a synthetic opioid roughly 50–100 times more potent than morphine. In 2023, synthetic opioids (primarily fentanyl) were involved in the large majority of opioid overdose deaths, with nearly 73,000 deaths involving synthetic opioids other than methadone."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The total death toll is staggering but recently improving. There were an estimated 107,543 drug overdose deaths in the United States in 2023 — the first annual decline since 2018 — and provisional data show deaths fell sharply again in 2024, to roughly 80,000, a nearly 27% drop. The improvement is real but uneven, and fentanyl remains the dominant driver of overdose mortality."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "First annual decline since 2018 (CDC)",
+          "label": "Drug overdose deaths in 2023",
+          "value": "~107,543"
+        },
+        {
+          "_key": "s2",
+          "context": "Primarily fentanyl, 2023 (CDC)",
+          "label": "Deaths involving synthetic opioids",
+          "value": "~73,000"
+        },
+        {
+          "_key": "s3",
+          "context": "Down ~27% from 2023 (CDC)",
+          "label": "Overdose deaths in 2024 (provisional)",
+          "value": "~80,000"
+        },
+        {
+          "_key": "s4",
+          "context": "Past year, 2023 (SAMHSA NSDUH)",
+          "label": "Adults with opioid use disorder",
+          "value": "~5M"
+        }
+      ]
+    },
+    {
+      "_key": "s3w1",
+      "_type": "warningBlock",
+      "message": "Illicitly manufactured fentanyl is so potent that a small amount can be lethal, and it is increasingly mixed into other drugs without users’ knowledge. This is why overdose deaths far outpace the size of the opioid-using population and why naloxone (an overdose-reversal medication) and fentanyl test strips have become front-line harm-reduction tools.",
+      "title": "Fentanyl Changes the Math"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Beyond Opioids and Alcohol"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Substance use disorders also involve stimulants (methamphetamine and cocaine), cannabis, sedatives, and other drugs. Stimulant-related deaths have risen in recent years, often in combination with fentanyl — a pattern sometimes called \"polysubstance\" overdose, where more than one drug is involved."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Cannabis use disorder is increasingly recognized as legalization expands access; while cannabis is far less lethal than opioids, a meaningful share of regular users develop a disorder marked by impaired control and continued use despite problems. The key clinical point is that the same DSM-5-TR framework — impaired control, social impairment, risky use, tolerance and withdrawal — applies across substances."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Polysubstance use complicates both diagnosis and treatment and is a major reason that overdose deaths have been so hard to reduce: reversing one drug’s effects may not address the others involved. Treatment systems increasingly have to address whole patterns of use rather than a single substance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "CDC data show that as the fentanyl wave grew, overdose deaths increasingly involved fentanyl combined with stimulants such as methamphetamine or cocaine.\nThis polysubstance pattern means harm-reduction and treatment can no longer assume a single drug is involved — a person may need treatment addressing both opioid and stimulant use at once.",
+      "title": "The Rise of Polysubstance Overdose"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Treatment Works — When People Can Reach It"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite the grim death tolls, substance use disorders are treatable. For opioid use disorder in particular, medications for opioid use disorder (methadone, buprenorphine, and naltrexone) are the gold-standard, evidence-based treatment and substantially reduce overdose death and improve survival. Alcohol use disorder likewise has effective medications and therapies."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Yet the treatment gap is enormous. Of the 48.5 million people aged 12 or older with a substance use disorder in 2023, only about 15.6% received any treatment, leaving more than 41 million people untreated. Stigma, criminalization, cost, and a shortage of treatment capacity all contribute."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Understanding SUDs as chronic, treatable medical conditions — not crimes or character flaws — is the foundation for the treatment-system and integration topics in the rest of this course. The later tracks on the ASAM criteria, opioid treatment programs, and Vermont’s Hub-and-Spoke model are all responses to this same challenge: how to actually deliver effective treatment at scale."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5q1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5q1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Substance use disorders are chronic, treatable medical conditions — yet in 2023 fewer than one in six people with an SUD received any treatment."
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "A substance use disorder is a diagnosable medical condition graded mild, moderate, or severe on 11 DSM-5-TR criteria; NIDA frames addiction as a chronic, relapsing brain disease.",
+        "Alcohol use disorder is the most common SUD — about 28.9 million people aged 12+ in 2023 — but is widely underdiagnosed because alcohol is legal and normalized.",
+        "Opioids drive the deadliest drug crisis in U.S. history; about 5 million adults had an opioid use disorder in 2023.",
+        "Illicitly manufactured fentanyl, 50–100 times more potent than morphine, accounted for the large majority of opioid overdose deaths (nearly 73,000 in 2023).",
+        "Overdose deaths reached ~107,543 in 2023 — the first decline since 2018 — and fell further to roughly 80,000 in 2024, though the crisis remains severe and uneven.",
+        "Polysubstance use, especially fentanyl combined with stimulants, complicates treatment and is a major reason overdose deaths have been hard to reduce.",
+        "SUDs are treatable — medications for opioid use disorder reduce death — but only about 15.6% of people with an SUD received any treatment in 2023."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The DSM-5-TR uses 11 criteria and grades severity by how many a person meets — 2–3 is mild, 4–5 is moderate, and 6 or more is severe (often called addiction). The same framework applies across substances.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "By the specific drug used, regardless of symptoms."
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "By the number of diagnostic criteria met: 2–3 mild, 4–5 moderate, 6+ severe."
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "By whether the person has ever been arrested for drug use."
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Severity is not graded; a person either has an SUD or does not."
+        }
+      ],
+      "question": "How does the DSM-5-TR grade the severity of a substance use disorder?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] NIDA — Understanding Drug Use and Addiction DrugFacts — https://nida.nih.gov/publications/drugfacts/understanding-drug-use-addiction — addiction defined as a chronic, relapsing brain disease."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] NCBI Bookshelf — DSM-5-TR Criteria for Diagnosing and Classifying Substance Use Disorders — https://www.ncbi.nlm.nih.gov/books/NBK565474/table/table-3/ — 11 criteria; severity thresholds (mild 2–3, moderate 4–5, severe 6+)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] SAMHSA — 2023 NSDUH Annual National Report — https://www.samhsa.gov/data/report/2023-nsduh-annual-national-report — 48.5M with any SUD (age 12+), ~28.9M with alcohol use disorder, ~5M adults with opioid use disorder, 15.6% treatment rate."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] CDC NCHS — Drug Overdose Deaths in the United States, 2023–2024 — https://www.cdc.gov/nchs/products/databriefs/db549.htm — ~107,543 overdose deaths in 2023 (first decline since 2018); ~80,000 in 2024; synthetic opioids the dominant driver."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] CDC — Understanding the Opioid Overdose Epidemic — https://www.cdc.gov/overdose-prevention/about/understanding-the-opioid-overdose-epidemic.html — waves of the crisis; illicitly manufactured fentanyl 50–100x more potent than morphine; synthetic opioids in the majority of opioid deaths."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] NIAAA — NIDA and NIAAA commentary supports brain disease model of addiction — https://www.niaaa.nih.gov/news-events/announcement/nida-and-niaaa-commentary-strongly-supports-brain-disease-model-addiction — scientific support for treating addiction as a chronic brain disease."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "behavioral-health-integration",
+  "order": 3,
+  "slug": {
+    "_type": "slug",
+    "current": "substance-use-disorders-overview"
+  },
+  "title": "Substance Use Disorders: Opioids, Alcohol, and Beyond"
+}

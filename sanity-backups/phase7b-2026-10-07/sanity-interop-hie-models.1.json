@@ -1,0 +1,577 @@
+{
+  "_createdAt": "2026-05-29T03:34:31Z",
+  "_id": "interop-hie-models",
+  "_rev": "zxdiW4rSXbRh1KrIcDMPxd",
+  "_type": "academyModule",
+  "_updatedAt": "2026-10-08T12:33:25Z",
+  "body": [
+    {
+      "_key": "s1h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Is Health Information Exchange?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Health information exchange (HIE) is the electronic mobilization of health care information across organizations within a region, community, or hospital system. The Office of the National Coordinator for Health Information Technology (ONC) defines HIE as the \"electronic movement of health-related information among organizations according to nationally recognized standards.\" The purpose of HIE is simple but profound: when a patient is seen by any provider in a connected network, the relevant clinical history — diagnoses, medications, lab results, imaging, and care plans — should be available at the point of care, regardless of where it was originally created. Without HIE, clinicians too often make decisions without complete information, leading to duplicated tests, drug interactions, and preventable errors."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC recognizes three distinct forms of health information exchange. Directed exchange is the secure, point-to-point transmission of patient data from one known provider to another — the digital equivalent of a referral packet or discharge summary, transmitted via encrypted Direct Messaging rather than fax. Query-based exchange allows providers to search for and retrieve patient records from other providers on demand, which is especially valuable for unplanned or emergency care when the patient cannot provide a complete history. Consumer-mediated exchange gives patients themselves the ability to aggregate, control, and share their health information — for example, through a personal health record or a patient-facing app connected to their providers via FHIR APIs. Each mode addresses a different coordination scenario, and mature HIE ecosystems support all three simultaneously."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The scope of HIE in the United States is substantial. California alone has 15 HIEs, Texas has 12, and states like New York, New Jersey, and Pennsylvania each operate 8, reflecting a largely decentralized, market-driven pattern of exchange organization. Nationally, health information exchanges serve approximately 92 percent of the U.S. population, though coverage does not always translate to meaningful clinical use. HIE is foundational to population health management — enabling public health surveillance, care gap identification, and chronic disease registries — and to value-based care contracts that require providers to demonstrate coordinated, outcome-driven care. The shift from fee-for-service payment to value-based models has made HIE not merely convenient but economically essential for providers and payers alike."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Directed, query-based, and consumer-mediated exchange",
+          "label": "ONC Exchange Modes",
+          "value": "3"
+        },
+        {
+          "_key": "s2",
+          "context": "Proportion of Americans served by at least one HIE network",
+          "label": "U.S. Population Served",
+          "value": "92%"
+        },
+        {
+          "_key": "s3",
+          "context": "Most of any U.S. state; Texas follows with 12",
+          "label": "California HIEs",
+          "value": "15"
+        },
+        {
+          "_key": "s4",
+          "context": "Documents flowing monthly through Carequality framework alone",
+          "label": "Monthly Clinical Docs",
+          "value": "1.2B+"
+        }
+      ]
+    },
+    {
+      "_key": "s2h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Centralized HIE Architecture"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "In a centralized HIE architecture, participating organizations transmit copies of clinical documents to a shared, centrally managed repository — a Clinical Data Repository (CDR) — maintained by the HIE authority. Queries against this store are resolved locally within the repository, which means response times are fast and predictable. The HIE operator maintains a Master Patient Index (MPI) — a comprehensive registry that links every patient's demographic record across all contributing organizations to a single enterprise identifier. When a clinician queries the network, the MPI resolves the patient identity and the CDR returns the consolidated record. This architecture is particularly well-suited to regional networks where participants agree to cede data custody in exchange for a richer, continuously updated longitudinal record."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont Information Technology Leaders (VITL), Vermont's designated statewide HIE, illustrates the real-world evolution of a centralized approach. Founded in 2005 as a public-private collaboration between the Vermont Association of Hospitals and Health Systems and state government, VITL has operated a central data infrastructure for Vermont's small but clinically complex population. Its strategic plan anticipates a hybrid data model blending a federated approach with a centralized repository for population health analytics. As of 2025, VITL is implementing a new, FHIR-native data repository as part of the state's broader vision for a Unified Health Data Space — a modern evolution that retains centralized analytical power while embracing open standards. Vermont's model demonstrates how small states can leverage centralization to build clinically rich, analytics-ready data assets that a purely federated network would struggle to assemble."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The governance complexity of centralized models is real and often underestimated. When patient data lives in a repository operated by a third-party HIE, critical questions arise: Who owns the data? Who can access it for secondary purposes such as research or quality reporting? What liability does the HIE bear if there is a breach? Centralized repositories also present a single point of failure — a successful cyberattack or catastrophic infrastructure failure could simultaneously disrupt access to records across every participating organization. These risks demand robust security controls, redundant infrastructure, and explicit legal agreements (often called data use and reciprocal support agreements, or DURSA) that define data rights, breach notification obligations, and permitted uses. Governance boards typically include representatives from member hospitals, payers, and patient advocates to balance competing interests over the shared repository."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Centralized",
+        "points": [
+          "Single repository enables fast, unified queries",
+          "Rich longitudinal records support population health analytics",
+          "Requires only one integration point per participant",
+          "Single point of failure if repository goes offline",
+          "Complex data custody, governance, and consent management"
+        ]
+      },
+      "right": {
+        "label": "Federated",
+        "points": [
+          "Data stays at source — no custody transfer required",
+          "Politically feasible for organizations reluctant to share data",
+          "No single point of failure across the network",
+          "Query latency higher; data currency depends on source systems",
+          "Harder to assemble true longitudinal records across sources"
+        ]
+      },
+      "title": "Centralized vs. Federated: Core Trade-offs"
+    },
+    {
+      "_key": "s3h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Federated HIE Architecture"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The federated model inverts the custody logic of centralization: clinical data remains within each participating organization's own systems, and the HIE provides only the connective tissue needed to locate and retrieve it on demand. The key infrastructure component is a Record Locator Service (RLS), sometimes called a patient index, which maintains a directory of where patient records exist — not the records themselves. When a clinician initiates a query, the RLS identifies which member organizations hold data for that patient, routes the query to those endpoints, and assembles the results into a coherent response. Because no copy of clinical content is stored centrally, participating organizations retain physical and legal control of their own data, making this model politically attractive in competitive markets where hospitals are reluctant to share data with a central authority that their rivals can also access."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "CommonWell Health Alliance exemplifies the federated approach at national scale. Founded in 2013 by leading health IT vendors, CommonWell operates a vendor-neutral network in which data remains within the provider health IT systems where it was collected. CommonWell's core services include patient enrollment and identity management, record location (creating a virtual table of contents of where information about a patient exists across the network), and a query-and-retrieve capability that allows caregivers to pull needed data across trusted network members. The network covers more than 261 million unique individuals and has facilitated the exchange of more than 11 billion health care records since its founding. In February 2024, CommonWell was officially designated as a Qualified Health Information Network (QHIN) under TEFCA, validating its federated architecture as a backbone for the emerging national interoperability framework."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Federated architectures face two structural challenges that centralized designs avoid. First, query latency: because each query must be routed to multiple source systems, resolved, and assembled, response times depend on the slowest participating endpoint. A clinician in an emergency department waiting for records from three different health systems may find that one is temporarily offline, returning an incomplete picture. Second, data currency: federated queries retrieve records as they exist at the moment of the query, but there is no mechanism to proactively notify a care team when a patient's condition changes at another organization. This \"pull only\" model misses the event-driven use cases — such as an alert when a patient is admitted to an ED — that are increasingly important for care coordination and population health management. Emerging FHIR subscription mechanisms, discussed in Section 5, are beginning to address this gap within federated architectures."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3analogy",
+      "_type": "analogyBlock",
+      "analogy": "A federated HIE works like a library catalog system: the catalog (the Record Locator Service) tells you which branch holds the book you need, but the book itself stays on the shelf at that branch until you request it. A centralized HIE is more like a single main library that collects copies of every book from every branch — faster to retrieve, but requiring trust that the main library will safeguard and return what was deposited.",
+      "concept": "Federated vs. Centralized HIE data custody"
+    },
+    {
+      "_key": "s4h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Hybrid Architecture and the Network-of-Networks Era"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Most real-world HIEs today do not fit neatly into either the centralized or federated category. Instead, they combine elements of both: a central directory or MPI for identity resolution, a centralized repository for high-value analytical data sets (e.g., ADT alerts, lab results, and medication histories), and federated query for detailed clinical documents held at source systems. This hybrid approach attempts to capture the query speed and analytical richness of centralization without requiring every participating organization to surrender custody of its entire record set. Vermont's VITL, for instance, explicitly describes its architecture as a hybrid blending centralized repository capabilities with federated exchange for certain data types. As FHIR APIs proliferate, the boundary between centralized and federated is increasingly blurred: an organization can expose FHIR endpoints that make its data queryable in near-real-time while also contributing certain data sets to a shared analytical environment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "At the national level, the United States has embraced a network-of-networks model through two complementary frameworks: Carequality and TEFCA. Carequality, a 501(c)(3) nonprofit and the nation's most widely adopted interoperability framework, provides a common package of legal terms, policy requirements, technical specifications, and governance processes that any health information network can adopt. Once two networks both subscribe to Carequality's rules, they can exchange data without negotiating separate bilateral agreements — the framework acts as a mutual recognition treaty for clinical data. As of 2024, Carequality enables the flow of more than 1.2 billion clinical documents every month. The eHealth Exchange — originally launched as the federal Nationwide Health Information Network (NHIN) and rebranded in 2012 — is one of Carequality's largest members, facilitating secure exchange of records for more than 300 million patients and processing roughly 25 billion data exchanges annually. Its network reaches all 50 states, 75 percent of U.S. hospitals, and four federal agencies including the Department of Defense, Veterans Affairs, CMS, and the Social Security Administration."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "TEFCA — the Trusted Exchange Framework and Common Agreement — represents ONC's most ambitious attempt to establish a nationwide, government-backed exchange floor. Under TEFCA, networks apply to become Qualified Health Information Networks (QHINs), entities that agree to meet a common set of technical and policy requirements and to exchange data with every other QHIN without additional negotiation. The first QHINs were designated in December 2023. By late 2025, eleven networks had achieved QHIN status: eHealth Exchange, Epic Nexus, Health Gorilla, Konza, MedAllies, Kno2, CommonWell Health Alliance, eClinicalWorks (designated January 2025), Oracle Health Information Network (designated November 2025), Surescripts, and Netsmart. The QHIN model is explicitly federated at the network level — no single QHIN stores all the data — but each QHIN may itself be centralized, federated, or hybrid internally. FHIR-based exchange within TEFCA was piloted in 2025, and beginning January 1, 2026, QHINs must adopt HL7 FAST security procedures for all FHIR transactions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "The requesting organization submits a query to its QHIN, identifying the patient by demographic data or a known identifier.",
+          "title": "Patient Identified"
+        },
+        {
+          "_key": "step2",
+          "description": "The QHIN uses its Record Locator Service to find matching patient records across other QHINs and their member organizations.",
+          "title": "Identity Resolution"
+        },
+        {
+          "_key": "step3",
+          "description": "The query is broadcast to all connected QHINs, which route it to their own member organizations holding relevant data.",
+          "title": "Inter-QHIN Routing"
+        },
+        {
+          "_key": "step4",
+          "description": "Responding organizations return clinical documents; the requesting QHIN assembles and delivers the consolidated response to the clinician.",
+          "title": "Data Assembly"
+        },
+        {
+          "_key": "step5",
+          "description": "All transactions are logged per TEFCA requirements to support accountability, consent enforcement, and security monitoring.",
+          "title": "Audit Logging"
+        }
+      ],
+      "title": "How a TEFCA QHIN Query Works"
+    },
+    {
+      "_key": "s5h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sustainability, Governance, and the FHIR Transformation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Financial sustainability has been the Achilles' heel of health information exchange since the earliest community HIE experiments of the 1990s. Research consistently shows that only about 46 percent of operational HIEs can cover their operating costs with revenue from participants; among HIEs still in the planning stage, that figure drops to 36 percent. The core economic problem is a misalignment between who bears the cost of enabling exchange and who captures the benefit. A hospital that invests in HIE connectivity incurs real infrastructure and staffing costs, but many of the savings — avoided duplicate imaging, reduced readmissions, better-coordinated post-acute care — accrue to payers and to the health system as a whole rather than to the investing provider. Assessment fees have historically been the largest single revenue source for HIEs, followed by membership or subscription fees and state or federal grants. Continued dependence on grant funding, however, is widely recognized as a marker of poor long-term sustainability potential."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Governance structures shape both HIE sustainability and the quality of the data they produce. The dominant model is the private nonprofit, governed by a board representing member organizations — hospitals, physician groups, payers, and sometimes consumer advocates. Some scholars and policymakers have argued for treating HIE infrastructure as a public utility — regulated, mandated, and funded through a combination of government appropriations and assessed fees, much like the electrical grid or the public water system. Vermont's VITL approaches this model: it was created by legislative action, receives state funding, and operates as a designated statewide HIE with explicit public responsibilities. The public-utility framing aligns incentives better than a purely voluntary market model, but it requires sustained political will and a state government willing to backstop the HIE's operating costs through economic downturns and leadership transitions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "FHIR — HL7's Fast Healthcare Interoperability Resources standard — is fundamentally reshaping HIE architecture. Mandated as the baseline requirement under the 21st Century Cures Act and ONC's interoperability regulations, FHIR R4 exposes clinical data via RESTful APIs that any application can query using standard web technologies. This democratizes access to health data, allowing new entrants — patient-facing apps, analytics platforms, care coordination tools — to participate in HIE without traditional integration engines or point-to-point interfaces. More significantly, FHIR R5 introduced topic-based subscriptions that enable event-driven exchange: rather than pulling records on demand, a care team can subscribe to receive a notification the moment a patient is admitted to another facility, discharged, or has a critical lab result. This event-driven capability bridges the most important gap in federated architectures and points toward a future where HIE is less about routing documents and more about delivering timely, actionable signals to the right person at the right moment. The 2025 State of FHIR survey by HL7 International and Firely, with respondents from 57 countries, found that 71 percent reported FHIR already in use for at least a few use cases in their country, and that FHIR is mandated or recommended in 73 percent of countries with health data regulation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5warn",
+      "_type": "warningBlock",
+      "message": "HIEs that rely primarily on grant funding rather than participant-generated revenue are at elevated risk of closure when grant cycles end. When evaluating an HIE's long-term viability, look for diversified revenue (membership fees, transaction fees, analytics services) and evidence that participating organizations view the HIE as operationally essential rather than optionally convenient.",
+      "title": "Grant Dependency Is a Sustainability Red Flag"
+    },
+    {
+      "_key": "s5sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Share of operational HIEs covering costs from participant revenue",
+          "label": "Self-Sustaining HIEs",
+          "value": "46%"
+        },
+        {
+          "_key": "s2",
+          "context": "Countries actively using FHIR per global survey, up from 66% in 2024",
+          "label": "FHIR Adoption (2025)",
+          "value": "71%"
+        },
+        {
+          "_key": "s3",
+          "context": "Networks designated under TEFCA as of late 2025",
+          "label": "Designated QHINs",
+          "value": "11"
+        },
+        {
+          "_key": "s4",
+          "context": "Data exchanges processed by eHealth Exchange annually",
+          "label": "Annual eHealth Exchanges",
+          "value": "25B"
+        }
+      ]
+    },
+    {
+      "_key": "tkwy",
+      "_type": "takeawayBlock",
+      "points": [
+        "ONC defines three HIE exchange modes: directed (push), query-based (pull), and consumer-mediated (patient-controlled).",
+        "Centralized HIEs store data in a shared repository for fast queries and rich analytics, but create data custody complexity and a single point of failure.",
+        "Federated HIEs keep data at source systems and use a Record Locator Service to route queries, preserving data sovereignty at the cost of higher latency.",
+        "Most modern HIEs are hybrid: a central directory and selective centralized data sets paired with federated query for detailed clinical documents.",
+        "CommonWell Health Alliance covers 261 million individuals using a federated model; it became a TEFCA QHIN in February 2024.",
+        "TEFCA's QHIN framework creates a network-of-networks; eleven QHINs were designated by late 2025, including eHealth Exchange, Epic Nexus, CommonWell, and Oracle Health.",
+        "Only about 46% of operational HIEs cover costs from participant revenue; financial sustainability remains the sector's most persistent structural challenge.",
+        "FHIR R5 subscriptions enable event-driven HIE — proactive alerts when patients are admitted or discharged — moving beyond the pull-only limitations of traditional federated models."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "The Record Locator Service in a federated HIE acts as a pointer system — it knows which organizations hold records for a given patient but does not store clinical content itself. This is the defining characteristic of the federated model: data custody remains with source organizations, and the RLS simply routes queries to the right destinations, preserving data sovereignty while enabling network-wide retrieval.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Store copies of all clinical documents from participating organizations"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Maintain a directory of where patient records exist across member systems without holding the records themselves"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Translate clinical documents between different EHR vendor formats"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Authenticate clinicians before they can submit queries to the network"
+        }
+      ],
+      "question": "In a federated HIE architecture, what is the primary function of the Record Locator Service (RLS)?"
+    },
+    {
+      "_key": "srch2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srch2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] ONC — \"What is HIE?\" — healthit.gov/health-it-basics/hie — Defines the three ONC-recognized forms of health information exchange: directed, query-based, and consumer-mediated, and provides the foundational regulatory context for HIE in the United States."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] CommonWell Health Alliance — commonwellalliance.org — Source for CommonWell's federated architecture description, network scale (261 million individuals, 11 billion records exchanged), and February 2024 TEFCA QHIN designation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] The Sequoia Project / TEFCA RCE — rce.sequoiaproject.org/designated-qhins — Source for the current list of designated QHINs under TEFCA, including eClinicalWorks (January 2025) and Oracle Health (November 2025), and Carequality framework statistics (1.2 billion monthly documents)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] eHealth Exchange — ehealthexchange.org — Source for eHealth Exchange network scale (300 million patients, 25 billion annual exchanges, 75% of U.S. hospitals, four federal agencies) and its origins as the federal Nationwide Health Information Network (NHIN)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Vermont VITL — vitl.net and Vermont Legislature Presentation, April 2024 — legislature.vermont.gov/Documents/2024/WorkGroups/House%20Health%20Care — Source for VITL founding history, hybrid architecture design, and FHIR-native repository implementation plans."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] PubMed / EHRIntelligence — \"Challenges, Alternatives, and Paths to Sustainability for Health Information Exchange Efforts\" (pubmed.ncbi.nlm.nih.gov/24141531) and related research — Source for the 46%/36% self-sustainability statistics and the structural economic challenges of HIE funding models."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] HL7 / ONC FHIR Adoption Survey 2025 — sprypt.com/blog/fhir-guide — Source for FHIR R5 topic-based subscription capabilities, 71% global FHIR adoption rate (2025 survey), and the QHIN requirement to adopt HL7 FAST security procedures for FHIR transactions by January 1, 2026."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "interop-hie-models"
+  },
+  "title": "HIE Architecture Models: Centralized, Federated, and Hybrid Approaches to Health Information Exchange"
+}

@@ -1,0 +1,263 @@
+{
+ "ops": [
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "yet ranks 37th in health outcomes. This module",
+   "new": "yet trails comparable wealthy nations on life expectancy and preventable deaths. This module",
+   "claim": "US 'ranks 37th in health outcomes'",
+   "verdict": "FABRICATED",
+   "sources": "WHO World Health Report 2000 ranked the US 37th on overall health-system performance (not outcomes); the ranking was never updated; Peterson-KFF Health System Tracker: US life expectancy 78.4 (2023), 4.1 years below comparable-country average",
+   "note": "WHO's 2000 ranking was of system performance, 26 years old; replaced with current sourced comparison. Legacy Supabase fallback copy (rendered only if Sanity fails) plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "roughly $13,493 per person, and 18.3 percent of the entire national economy. That is more than any other high-income country, by a wide margin. Switzerland, the second-highest spender, dedicates about 11.3 percent of its GDP to health. Germany spends 12.8 percent. Canada spends 12.2 percent.",
+   "new": "roughly $13,493 per person, and 17.3 percent of the entire national economy (CMS). That is more than any other high-income country, by a wide margin: OECD's Health at a Glance 2025 puts U.S. per-capita spending at 2.5 times the OECD average, with Switzerland, Norway and Germany, the next-highest spenders, at about two-thirds of the U.S. level.",
+   "claim": "2022 spending = 18.3% of GDP; Switzerland 'second-highest' at 11.3% (contradicted by Germany 12.8%); Canada 12.2%",
+   "verdict": "FABRICATED",
+   "sources": "CMS NHE: 2022 spending $4.5T, $13,493 per person, 17.3% of GDP (18.3% was the 2021 share); OECD Health at a Glance 2025: US over USD 14,880 per capita, 2.5x OECD average; Switzerland, Norway, Germany at about two-thirds of US level; US preventable mortality 217/100k vs OECD 145",
+   "note": "GDP share wrong (2021 figure); internally contradictory country ranking replaced with OECD's published comparison. Legacy Supabase fallback copy (rendered only if Sanity fails) plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "the US ranks 37th in overall health outcomes according to the World Health Organization. Americans live shorter lives than citizens of 40 other countries. The US infant mortality rate is nearly double that of Finland.",
+   "new": "U.S. life expectancy, at 78.4 years in 2023, trailed the comparable-country average by 4.1 years (Peterson-KFF), and U.S. preventable mortality was 217 deaths per 100,000 against an OECD average of 145 (OECD).",
+   "claim": "WHO '37th in overall health outcomes'; 'shorter lives than 40 other countries'; infant mortality 'nearly double Finland'",
+   "verdict": "FABRICATED",
+   "sources": "WHO World Health Report 2000 ranked the US 37th on overall health-system performance (not outcomes); the ranking was never updated; Peterson-KFF Health System Tracker: US life expectancy 78.4 (2023), 4.1 years below comparable-country average; OECD Health at a Glance 2025: US over USD 14,880 per capita, 2.5x OECD average; Switzerland, Norway, Germany at about two-thirds of US level; US preventable mortality 217/100k vs OECD 145",
+   "note": "Misattributed WHO ranking and unsourced counts replaced with verified current figures. Legacy Supabase fallback copy (rendered only if Sanity fails) plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "The US spends $4.5 trillion on healthcare (18.3% of GDP) — more than any nation — yet ranks 37th in health outcomes,",
+   "new": "The US spent $4.5 trillion on healthcare in 2022 (17.3% of GDP) — more than any nation — yet trails comparable countries on life expectancy and preventable deaths,",
+   "claim": "Takeaway: 18.3% of GDP; ranks 37th",
+   "verdict": "FABRICATED",
+   "sources": "CMS NHE: 2022 spending $4.5T, $13,493 per person, 17.3% of GDP (18.3% was the 2021 share); WHO World Health Report 2000 ranked the US 37th on overall health-system performance (not outcomes); the ranking was never updated",
+   "note": "Takeaway aligned with corrected body. Legacy Supabase fallback copy (rendered only if Sanity fails) plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "Medicare ACOs generated $1.87 billion in net savings for Medicare in 2022, according to CMS.",
+   "new": "Medicare ACOs generated more than $1.8 billion in net savings for Medicare in 2022, according to CMS.",
+   "claim": "MSSP 2022 net savings $1.87B",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS PY2022 Shared Savings Program results (Aug 2023): more than $1.8B net savings (verified earlier this run)",
+   "note": "CMS reports 'more than $1.8 billion'; extra precision dropped. Legacy Supabase fallback copy (rendered only if Sanity fails) plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "In 2022, Medicare ACOs generated $1.87 billion in net savings",
+   "new": "In 2022, Medicare ACOs generated more than $1.8 billion in net savings",
+   "claim": "MSSP 2022 net savings $1.87B (case study)",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS PY2022 Shared Savings Program results (Aug 2023): more than $1.8B net savings (verified earlier this run)",
+   "note": "As above. Legacy Supabase fallback copy (rendered only if Sanity fails) plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "created by the Affordable Care Act in 2012",
+   "new": "created by the Affordable Care Act of 2010 and launched in 2012",
+   "claim": "MSSP 'created by the ACA in 2012'",
+   "verdict": "FABRICATED",
+   "sources": "ACA (2010) Sec. 3022; first MSSP ACOs began April/July 2012 (CMS)",
+   "note": "Date of enactment corrected. Legacy Supabase fallback copy (rendered only if Sanity fails) plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "OneCare Vermont currently serves approximately 240,000 Vermonters — nearly 40 percent of the state's population — through its attributed beneficiary program.",
+   "new": "By 2021, about 243,000 Vermonters — roughly 38 percent of the state's population — were attributed to OneCare (NORC).",
+   "claim": "OneCare 'currently serves approximately 240,000 ... nearly 40 percent'",
+   "verdict": "UNVERIFIABLE",
+   "sources": "NORC, Vermont All-Payer ACO Model Third Evaluation Report (GMCB-hosted PDF, June 2023): PY2018-2021 gross Medicare spending -$686.40 PBPY (-6.2%) for ACO-attributed beneficiaries; 242,758 Vermonters attributed in 2021 (via AJMC 2023-08-11)",
+   "note": "Undated present-tense figure replaced with NORC's dated count; model ended 2025. Legacy Supabase fallback copy (rendered only if Sanity fails) plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "The organization works with 119 primary care practices, 14 hospitals, and hundreds of community providers across the state to coordinate care for approximately 240,000 attributed Vermonters.",
+   "new": "The organization worked with hospitals, primary care practices, and community providers across the state to coordinate care for about 243,000 attributed Vermonters by 2021 (NORC).",
+   "claim": "OneCare '119 primary care practices, 14 hospitals'",
+   "verdict": "UNVERIFIABLE",
+   "sources": "NORC, Vermont All-Payer ACO Model Third Evaluation Report (GMCB-hosted PDF, June 2023): PY2018-2021 gross Medicare spending -$686.40 PBPY (-6.2%) for ACO-attributed beneficiaries; 242,758 Vermonters attributed in 2021 (via AJMC 2023-08-11); no source for 119/14 located",
+   "note": "Specific network counts dropped. Legacy Supabase fallback copy (rendered only if Sanity fails) plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "In performance years where OneCare met quality targets, Vermont demonstrated lower-than-expected spending growth — a meaningful achievement given Vermont's older, sicker-than-average, and largely rural population.",
+   "new": "NORC's federal evaluation of performance years 2018–2021 found the model reduced gross Medicare spending for ACO-attributed beneficiaries by $686 per beneficiary per year (6.2 percent) — gross savings, before shared-savings and other model payments.",
+   "claim": "Outcome tied to 'CMS All-Payer Model Performance Reports': lower-than-expected spending growth when quality targets met",
+   "verdict": "UNVERIFIABLE",
+   "sources": "NORC, Vermont All-Payer ACO Model Third Evaluation Report (GMCB-hosted PDF, June 2023): PY2018-2021 gross Medicare spending -$686.40 PBPY (-6.2%) for ACO-attributed beneficiaries; 242,758 Vermonters attributed in 2021 (via AJMC 2023-08-11)",
+   "note": "Vague claim tied to a non-existent report series replaced with NORC's finding. Legacy Supabase fallback copy (rendered only if Sanity fails) plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "Vermont Agency of Administration / CMS All-Payer Model Performance Reports, 2017–2024",
+   "new": "NORC at the University of Chicago, Vermont All-Payer ACO Model Third Evaluation Report (2023)",
+   "claim": "Source: 'Vermont Agency of Administration / CMS All-Payer Model Performance Reports, 2017–2024'",
+   "verdict": "FABRICATED",
+   "sources": "NORC, Vermont All-Payer ACO Model Third Evaluation Report (GMCB-hosted PDF, June 2023): PY2018-2021 gross Medicare spending -$686.40 PBPY (-6.2%) for ACO-attributed beneficiaries; 242,758 Vermonters attributed in 2021 (via AJMC 2023-08-11)",
+   "note": "No report series by that name; replaced with the actual federal evaluation. Legacy Supabase fallback copy (rendered only if Sanity fails) plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "Vermont is the only state in the nation operating an approved All-Payer Accountable Care Organization Model — a program that brings Medicare, Medicaid, and commercial insurance under a single set of quality and spending targets for the first time in American history.",
+   "new": "Vermont was the only state to operate an All-Payer Accountable Care Organization Model (performance years 2018–2025) — the first ACO program to bring Medicare, Medicaid, and commercial insurance under a single set of quality and spending targets.",
+   "claim": "Vermont APM 'for the first time in American history'; present tense",
+   "verdict": "FABRICATED",
+   "sources": "HSCRC: Maryland all-payer hospital rate setting since 1977; CMS Vermont All-Payer ACO Model page (ended 2025-12-31)",
+   "note": "Maryland predates; narrowed to 'first ACO program'; tense corrected. Legacy Supabase fallback copy (rendered only if Sanity fails) plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "Vermont is the only state operating an approved All-Payer ACO Model",
+   "new": "Vermont was the only state to operate an All-Payer ACO Model (2018–2025)",
+   "claim": "Quiz answer: 'only state operating' (model ended 2025)",
+   "verdict": "FABRICATED",
+   "sources": "CMS Vermont All-Payer ACO Model page",
+   "note": "Tense corrected. Legacy Supabase fallback copy (rendered only if Sanity fails) plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "attempts to align all payers behind shared goals for the first time in American history.",
+   "new": "aimed to align all payers behind shared ACO goals — the first model of its kind.",
+   "claim": "Quiz answer: 'first time in American history'",
+   "verdict": "FABRICATED",
+   "sources": "HSCRC (Maryland all-payer since 1977)",
+   "note": "Overclaim narrowed. Legacy Supabase fallback copy (rendered only if Sanity fails) plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "— the only one of its kind in the US — makes Vermont a national laboratory for value-based care transformation, with OneCare Vermont serving approximately 240,000 Vermonters.",
+   "new": "— the only one of its kind in the US, 2018–2025 — made Vermont a national laboratory for value-based care transformation, with about 243,000 Vermonters attributed to OneCare Vermont by 2021.",
+   "claim": "Takeaway: OneCare 'serving approximately 240,000'",
+   "verdict": "UNVERIFIABLE",
+   "sources": "NORC, Vermont All-Payer ACO Model Third Evaluation Report (GMCB-hosted PDF, June 2023): PY2018-2021 gross Medicare spending -$686.40 PBPY (-6.2%) for ACO-attributed beneficiaries; 242,758 Vermonters attributed in 2021 (via AJMC 2023-08-11)",
+   "note": "Dated and sourced. Legacy Supabase fallback copy (rendered only if Sanity fails) plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m1st01",
+   "expect": "18.3% of GDP",
+   "set": {
+    "context": "17.3% of GDP — the highest share among wealthy nations. Source: CMS National Health Expenditure Accounts."
+   },
+   "claim": "Stat: 2022 spending '18.3% of GDP'",
+   "verdict": "FABRICATED",
+   "sources": "CMS NHE: 2022 spending $4.5T, $13,493 per person, 17.3% of GDP (18.3% was the 2021 share)",
+   "note": "GDP share corrected. Legacy Supabase fallback stat plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m1st02",
+   "expect": "37th",
+   "set": {
+    "label": "U.S. Life Expectancy Gap (2023)",
+    "trend": "down",
+    "value": "4.1 yrs",
+    "context": "U.S. life expectancy of 78.4 years trailed the comparable-country average of 82.5. Source: Peterson-KFF Health System Tracker."
+   },
+   "claim": "Stat: 'US Health Outcomes Ranking 37th' (WHO)",
+   "verdict": "FABRICATED",
+   "sources": "WHO World Health Report 2000 ranked the US 37th on overall health-system performance (not outcomes); the ranking was never updated; Peterson-KFF Health System Tracker: US life expectancy 78.4 (2023), 4.1 years below comparable-country average",
+   "note": "Replaced with sourced current comparison. Legacy Supabase fallback stat plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m1st03",
+   "expect": "30–40%",
+   "set": {
+    "value": "~25%",
+    "context": "JAMA 2019 (Shrank et al.): $760B–$935B per year in waste — about one-quarter of total U.S. health spending."
+   },
+   "claim": "Stat: waste '30–40%', 'roughly 1 in 3 dollars'",
+   "verdict": "FABRICATED",
+   "sources": "Shrank WH, Rogstad TL, Parekh N. 'Waste in the US Health Care System.' JAMA 2019;322(15):1501-9: total $760B-$935B (~25% of spending); administrative complexity $265.6B; pricing failure $230.7-240.5B; overtreatment/low-value care $75.7-101.2B",
+   "note": "Study says ~25%. Legacy Supabase fallback stat plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m1st05",
+   "expect": "$210B",
+   "set": {
+    "value": "$76–101B",
+    "context": "Shrank et al. (JAMA 2019) estimate for overtreatment or low-value care: tests, procedures, and stays that do not improve outcomes."
+   },
+   "claim": "Stat: overtreatment/low-value care $210B",
+   "verdict": "FABRICATED",
+   "sources": "Shrank WH, Rogstad TL, Parekh N. 'Waste in the US Health Care System.' JAMA 2019;322(15):1501-9: total $760B-$935B (~25% of spending); administrative complexity $265.6B; pricing failure $230.7-240.5B; overtreatment/low-value care $75.7-101.2B",
+   "note": "Study estimate is $75.7–101.2B. Legacy Supabase fallback stat plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m1st06",
+   "expect": "$180B",
+   "set": {
+    "value": "$231–241B",
+    "context": "Shrank et al. (JAMA 2019) estimate for pricing failure: prices well above benchmarks for identical services."
+   },
+   "claim": "Stat: pricing failure $180B",
+   "verdict": "FABRICATED",
+   "sources": "Shrank WH, Rogstad TL, Parekh N. 'Waste in the US Health Care System.' JAMA 2019;322(15):1501-9: total $760B-$935B (~25% of spending); administrative complexity $265.6B; pricing failure $230.7-240.5B; overtreatment/low-value care $75.7-101.2B",
+   "note": "Study estimate is $230.7–240.5B. Legacy Supabase fallback stat plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m1st08",
+   "expect": "$1.87B",
+   "set": {
+    "value": "$1.8B+"
+   },
+   "claim": "Stat: MSSP 2022 net savings $1.87B",
+   "verdict": "UNVERIFIABLE",
+   "sources": "CMS PY2022 Shared Savings Program results (Aug 2023): more than $1.8B net savings (verified earlier this run)",
+   "note": "Precision dropped. Legacy Supabase fallback stat plus local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m1st09",
+   "expect": "highest all-payer ACO penetration",
+   "set": {
+    "value": "243,000",
+    "context": "Vermonters attributed to OneCare in 2021, about 38% of the state's population. Source: NORC federal evaluation (2023)."
+   },
+   "claim": "Stat: 240,000 'highest all-payer ACO penetration rate in the country'",
+   "verdict": "UNVERIFIABLE",
+   "sources": "NORC, Vermont All-Payer ACO Model Third Evaluation Report (GMCB-hosted PDF, June 2023): PY2018-2021 gross Medicare spending -$686.40 PBPY (-6.2%) for ACO-attributed beneficiaries; 242,758 Vermonters attributed in 2021 (via AJMC 2023-08-11)",
+   "note": "Superlative unverifiable (only all-payer ACO model); dated figure substituted. Legacy Supabase fallback stat plus local source JSON."
+  },
+  {
+   "log_only": true,
+   "doc": "supabase lessons f5c3dc5e-b919-4d2d-91d6-37c0256598fe / 1818fa5b-1b32-477e-9c98-4fd048680034 content_blocks",
+   "block_key": "m1st04, m1st07",
+   "claim": "Administrative complexity waste $265B; 480+ MSSP ACOs, 11M beneficiaries (2024)",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "Shrank WH, Rogstad TL, Parekh N. 'Waste in the US Health Care System.' JAMA 2019;322(15):1501-9: total $760B-$935B (~25% of spending); administrative complexity $265.6B; pricing failure $230.7-240.5B; overtreatment/low-value care $75.7-101.2B; CMS MSSP Jan 2024 fact sheet",
+   "status": "LEFT",
+   "note": "Matches sources."
+  }
+ ]
+}

@@ -1,0 +1,398 @@
+{
+  "_createdAt": "2026-05-27T19:35:59Z",
+  "_id": "academyModule-vbc-pro",
+  "_rev": "u6HIGXCWiHyy7dtg522FhB",
+  "_type": "academyModule",
+  "_updatedAt": "2026-10-08T00:22:14Z",
+  "body": [
+    {
+      "_key": "pro-intro",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "For most of quality measurement's history, the question of whether healthcare was working was answered by providers: Did the doctor prescribe the right medication? Was the correct procedure performed? Was the HbA1c checked? These process and surrogate outcome measures tell us whether clinical activities occurred, but they do not tell us whether the patient experienced less pain, returned to work, felt better, or found their treatment worthwhile. Patient-reported outcomes (PROs) — structured, standardized measurements of how patients feel and function, collected directly from patients rather than abstracted from charts — address this fundamental gap. They are the most patient-centered form of quality evidence available, and their use in value-based care is expanding rapidly."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pro-h2-what",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "What Patient-Reported Outcomes Are and Why They Matter"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "pro-p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "A patient-reported outcome is any report of the status of a patient's health condition or health behavior that comes directly from the patient, without interpretation by a clinician or anyone else. PROs can cover a wide range of health domains: symptoms (pain intensity, fatigue severity, dyspnea), function (physical function, cognitive function, social functioning), mental health (depression, anxiety, emotional well-being), treatment adherence and side effects, health-related quality of life, and patient satisfaction with care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pro-p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "PROs matter for value-based care for several interconnected reasons. First, they measure outcomes that patients actually care about — the FDA increasingly asks oncology drug sponsors to collect core PRO data (symptoms, symptomatic side effects and physical function) alongside tumor response, as set out in its June 2021 draft guidance on core patient-reported outcomes in cancer clinical trials. Second, they capture dimensions of health that are invisible to clinical observation: a patient who presents to clinic appearing well but reporting severe fatigue and poor function is a different clinical picture than a patient whose vital signs and lab values are all normal. Third, they enable comparison across interventions, clinicians, and healthcare systems on grounds that patients find meaningful, not just grounds that are administratively convenient."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pro-h2-promis",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "PROMIS: The Patient-Reported Outcomes Measurement Information System"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "pro-p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "PROMIS, developed by the NIH beginning in 2004 and now maintained by Northwestern University's Health Measures organization, is the most comprehensive and methodologically rigorous PRO instrument system available in American healthcare. PROMIS was designed to solve several problems with legacy PRO instruments: they were condition-specific (requiring different instruments for different diseases), they used arbitrary scoring systems that did not allow cross-condition comparison, they were paper-based and administratively cumbersome, and they were developed with limited psychometric rigor."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pro-p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "PROMIS achieves its goals through three key design features. First, it is built on Item Response Theory (IRT) — a psychometric framework that calibrates each individual survey question on a continuous scale, allowing scores from different combinations of questions to be placed on a common metric. Second, it uses Item Banks — large pools of calibrated questions for each health domain — that allow flexible measurement. Third, it implements Computerized Adaptive Testing (CAT), where an algorithm selects the most informative questions from the item bank based on the patient's answers to previous questions, achieving precise measurement with typically 4-7 questions per domain rather than the 15-30 questions required by traditional fixed-length instruments."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pro-p6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "PROMIS is normed to the US general population with a mean T-score of 50 and standard deviation of 10, meaning a patient with a PROMIS Physical Function score of 40 is approximately one standard deviation below the population mean. This general-population norming allows direct comparison across conditions: a patient with knee osteoarthritis who scores 35 on physical function can be compared to a patient with heart failure or multiple sclerosis on the same scale, enabling cross-condition burden measurement that condition-specific instruments cannot provide."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pro-h3-domains",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "PROMIS Domains and Clinical Applications"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "pro-p7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "PROMIS maintains validated item banks and short-form instruments for over 70 health domains covering physical, mental, and social health. The most commonly used domains in clinical practice include: Physical Function (assessment of physical activities of daily living and higher-level physical activity); Pain Interference (the degree to which pain disrupts daily activities and participation); Fatigue (the subjective experience of tiredness, weakness, and lack of energy); Depression (mood, affect, and somatic symptoms associated with depressive disorders); Anxiety (subjective fear, apprehension, and tension); and Social Function (ability to participate in social activities and roles)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pro-p8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "PROMIS also includes pediatric versions and proxy-report versions (completed by caregivers for patients who cannot self-report), extending its applicability across age groups and clinical populations. Global Health short forms — a 10-item instrument covering physical and mental health global assessments — provide a rapid screening tool that is widely used in population health management contexts."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pro-h2-condition-specific",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Condition-Specific PRO Instruments: Complementing PROMIS"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "pro-p9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "While PROMIS provides a universal, comparable measurement framework, condition-specific PRO instruments capture clinical details relevant to specific diseases that generic instruments miss. The Hip disability and Osteoarthritis Outcome Score (HOOS) and Knee injury and Osteoarthritis Outcome Score (KOOS) are widely used in orthopedic value-based care programs and bundled payment models. Their short forms, the HOOS JR and KOOS JR, are the instruments behind CMS's hip and knee replacement PRO measures: voluntary PRO data submission in the Comprehensive Care for Joint Replacement (CJR) model since 2016, and the Hospital IQR Program's THA/TKA patient-reported outcome performance measure. The PROMIS CAT for Physical Function and the KOOS/HOOS complement each other: PROMIS provides population-comparable scores; KOOS/HOOS captures joint-specific function details that matter for orthopedic management."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pro-p10",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "In oncology, condition-specific and symptom-specific PRO instruments are essential because cancer treatments produce unique symptom profiles not captured by generic instruments. The FACT-G (Functional Assessment of Cancer Therapy - General) and disease-specific variants (FACT-B for breast cancer, FACT-L for lung cancer) are standard in oncology clinical trials and increasingly in routine clinical practice. The FDA's June 2021 draft guidance on core patient-reported outcomes in cancer clinical trials set out which PRO domains sponsors should collect, signaling that PROs are becoming a permanent component of oncology evidence."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pro-h2-pro-pm",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "PRO Performance Measures: From Research to Accountability"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "pro-p11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "A PRO Performance Measure (PRO-PM) is a standardized quality measure based on PRO data that is used to evaluate and compare the performance of healthcare providers or health plans. PRO-PMs move PRO data from individual clinical use (informing care for individual patients) to accountability use (comparing providers or programs). The development of valid, reliable PRO-PMs requires: adequate sample sizes for reliable provider-level measurement, appropriate risk adjustment for case mix (sicker patients report worse outcomes), standardized data collection protocols, and infrastructure for systematic PRO administration and reporting."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pro-p12",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS has included PRO-PMs in several APM quality frameworks. The CJR bundled payment model rewarded hospitals for voluntarily submitting HOOS JR and KOOS JR data for hip and knee replacement beginning in 2016, and the Hospital IQR Program has since adopted a THA/TKA PRO performance measure built on the same instruments. The Enhancing Oncology Model (2023) requires participating practices to implement electronic PRO collection for symptom monitoring. These CMS decisions signal that PROs will become a standard component of quality measurement in APMs, though the infrastructure for systematic collection and reporting is still being built."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pro-h2-digital",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Digital Health and Real-Time PRO Collection"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "pro-p13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Digital health technology has dramatically expanded the practical feasibility of PRO collection. Patient portals, smartphone applications, SMS-based surveys, and tablet-based collection in waiting rooms allow PROs to be collected at scale without the paper burden that made systematic collection impractical in busy clinical settings. EHR integration platforms — including APIs connecting PROMIS assessment tools with Epic, Cerner, and other EHR systems — allow PRO results to flow directly into the patient's chart and appear as structured data available for quality measurement and care management."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pro-p14",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The most clinically impactful application of digital PRO collection is real-time symptom monitoring in oncology. Studies by Ethan Basch and colleagues published in JAMA and the New England Journal of Medicine demonstrated that weekly web-based symptom monitoring — where patients report symptoms between clinic visits and clinicians receive alerts for concerning symptom escalation — reduced emergency department visits, improved quality of life, and extended overall survival in cancer patients receiving systemic treatment. These results, replicated in multiple studies, have made digital PRO collection a clinical best practice recommendation in oncology, not just a research tool."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pro-h2-barriers",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Implementation Barriers: Burden, EHR Integration, and Workflow"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "pro-p15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite their clinical and policy value, PROs face significant implementation barriers in routine practice. Patient burden is the most commonly cited: completing multiple PRO instruments at each visit, particularly for patients with multiple chronic conditions who may be asked to complete instruments by multiple providers, creates fatigue and declining response rates over time. Survey optimization — using adaptive testing to minimize questions, selecting domain-specific measures rather than comprehensive batteries, and deploying instruments at clinically appropriate time points — can reduce burden significantly."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pro-p16",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "EHR integration remains technically challenging despite improvements in interoperability standards. Most EHR systems do not natively display PRO trends in clinically actionable formats — instead, PRO scores appear as discrete data elements or notes that require manual review, rather than trend graphs that show longitudinal change relative to population norms. Workflow integration requires deliberate clinical process design: specifying when PROs are administered, who reviews them, what the clinical response protocol is for concerning scores, and how PRO data informs treatment decision conversations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pro-h2-equity",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Equity Concerns in PRO Collection and Interpretation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "pro-p17",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "PRO collection raises equity concerns that must be addressed for the data to be valid and actionable across diverse populations. Digital PRO collection platforms assume smartphone access, digital literacy, and English proficiency that is not universal. Patients with limited English proficiency, lower digital literacy, or lack of smartphone access systematically have lower PRO completion rates, creating selection bias in the resulting data that may obscure the populations with highest clinical need. PROMIS instruments have been translated and validated in Spanish and several other languages, and some instruments have been validated in low-literacy versions, but coverage across all relevant languages and literacy levels remains incomplete."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pro-p18",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Population-level PRO benchmarks may also reflect underlying social inequity rather than provider performance. If a safety-net hospital's patient population reports higher pain scores and lower physical function than a tertiary academic medical center's population, this difference likely reflects socioeconomic and health status differences between populations rather than quality differences between providers. Using unadjusted PRO data for provider accountability without social risk adjustment risks misattributing population health burden to provider quality — the same problem that affects risk adjustment for financial accountability in ACOs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pro-synthesis",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Patient-reported outcomes represent the most direct measurement of whether healthcare is achieving what patients come to clinicians for: less pain, better function, improved quality of life, and the ability to live according to their values. The methodological infrastructure for valid, reliable PRO collection exists in PROMIS and the growing ecosystem of validated instruments. The digital infrastructure for scalable collection is increasingly available. What remains is the harder work of building clinical workflows that use PRO data in real time, equity-aware collection protocols that serve all patients, and accountability frameworks that use PRO data in ways that improve care rather than creating gaming incentives. PROs are moving from research instrument to clinical standard — the question is how quickly the healthcare system can build the infrastructure to use them well."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseTitle": "Value-Based Care: From Fee-for-Service to Outcomes",
+  "estimatedReadTime": 16,
+  "level": "Intermediate",
+  "moduleNumber": 11,
+  "pillar": "Clinical",
+  "slug": {
+    "_type": "slug",
+    "current": "vbc-patient-reported-outcomes"
+  },
+  "summary": "Patient-reported outcomes (PROs) capture what patients themselves experience — pain, function, fatigue, mental health, quality of life — offering a fundamentally different quality signal than clinician-observed outcomes or administrative measures. This lesson covers PROMIS and its computerized adaptive testing approach, condition-specific PRO instruments, the CMS framework for PRO performance measures, digital health opportunities and barriers, equity concerns in PRO collection, and the emerging use of real-time PRO data in care management.",
+  "title": "Patient-Reported Outcomes: Measuring What Patients Care About"
+}

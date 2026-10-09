@@ -1,0 +1,312 @@
+{
+ "ops": [
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m6st01",
+   "expect": "3.5 fewer years",
+   "claim": "Stat: Black-white gap 3.5 years; widened to 6 years in COVID (CDC 2023)",
+   "verdict": "FABRICATED",
+   "sources": "KFF 'Racial Disparities in Life Expectancy' (NCHS U.S. Life Tables 2023): Black 74.0, White 78.4",
+   "note": "Figures corrected to NCHS 2023 life tables. Legacy Supabase fallback (lesson e8dd6050) and local source JSON.",
+   "set": {
+    "value": "4.4 years",
+    "context": "Black Americans' life expectancy (74.0 years) trailed White Americans' (78.4) by 4.4 years in 2023; the gap widened during COVID-19. Source: KFF analysis of NCHS U.S. Life Tables, 2023."
+   }
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m6st02",
+   "expect": "more than twice the rate",
+   "claim": "Stat: Black maternal mortality '2x', 'even after controlling for income and education' (CDC 2023)",
+   "verdict": "FABRICATED",
+   "sources": "CDC NCHS Health E-Stat, Maternal Mortality Rates in the United States, 2023: Black 50.3 vs White 14.5 per 100,000 live births",
+   "note": "Ratio is ~3.5x; uncited 'controlling for' claim dropped. Legacy Supabase fallback (lesson e8dd6050) and local source JSON.",
+   "set": {
+    "value": "3.5x",
+    "context": "In 2023, the pregnancy-related death rate was 50.3 per 100,000 live births for Black women versus 14.5 for White women. Source: CDC NCHS, Maternal Mortality Rates in the United States, 2023."
+   }
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m6st03",
+   "expect": "Source: JAMA, 2024",
+   "claim": "Stat: rural mortality '20% higher' (JAMA 2024)",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No JAMA 2024 source located for the 20% figure; CDC NCHS documents a widening rural-urban mortality gap",
+   "note": "Specific and citation dropped. Legacy Supabase fallback (lesson e8dd6050) and local source JSON.",
+   "set": {
+    "value": "Higher",
+    "context": "Rural Americans have higher age-adjusted death rates than urban Americans, a gap that has widened over the past two decades."
+   }
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m6st04",
+   "expect": "34% of high-risk VBC patients",
+   "claim": "Stat: 34% food insecurity, 2.1x hospitalization risk (AHRQ 2024)",
+   "verdict": "FABRICATED",
+   "sources": "CMS AHC Model Final Evaluation Report, Executive Summary (2026): >1 million screened; 37% at least one core need; 18% also >=2 ED visits; Medicaid beneficiaries with transportation needs $223 higher PBPM expenditures; no AHRQ 2024 source located",
+   "note": "Replaced with verified AHC screening result. Legacy Supabase fallback (lesson e8dd6050) and local source JSON.",
+   "set": {
+    "label": "Screened Positive for a Core Need",
+    "value": "37%",
+    "context": "Of more than 1 million Medicaid and Medicare beneficiaries screened in CMS's Accountable Health Communities Model, 37% had at least one core social need. Source: CMS AHC final evaluation, 2026."
+   }
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m6st05",
+   "expect": "29% of high-risk VBC patients",
+   "claim": "Stat: 29% transportation barriers (AHRQ 2024)",
+   "verdict": "FABRICATED",
+   "sources": "CMS AHC Model Final Evaluation Report, Executive Summary (2026): >1 million screened; 37% at least one core need; 18% also >=2 ED visits; Medicaid beneficiaries with transportation needs $223 higher PBPM expenditures",
+   "note": "Replaced with verified figure. Legacy Supabase fallback (lesson e8dd6050) and local source JSON.",
+   "set": {
+    "label": "Needs Plus Frequent ED Use",
+    "value": "18%",
+    "context": "18% of AHC-screened beneficiaries had a core need and two or more ED visits in the prior year, making them eligible for navigation. Source: CMS AHC final evaluation, 2026."
+   }
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m6st06",
+   "expect": "4.2x higher risk",
+   "claim": "Stat: housing instability 4.2x preventable hospitalization risk (NEJM 2023)",
+   "verdict": "FABRICATED",
+   "sources": "CMS AHC Model Final Evaluation Report, Executive Summary (2026): >1 million screened; 37% at least one core need; 18% also >=2 ED visits; Medicaid beneficiaries with transportation needs $223 higher PBPM expenditures; no NEJM 2023 source located",
+   "note": "Replaced with verified figure. Legacy Supabase fallback (lesson e8dd6050) and local source JSON.",
+   "set": {
+    "label": "Cost of a Transportation Need (Medicaid)",
+    "value": "$223/mo",
+    "context": "Medicaid beneficiaries with transportation needs had $223 higher health care expenditures per month than those without, adjusting for other needs. Source: CMS AHC final evaluation, 2026."
+   }
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "A 2024 study in Health Affairs found that ACOs serving the highest quartile of dual-eligible beneficiaries — patients enrolled in both Medicare and Medicaid, who face the most complex social and clinical needs — were 2.3 times more likely to exit MSSP within three years than ACOs serving lower proportions of dual-eligible patients. The program's financial structure creates systematic pressure against serving the most vulnerable populations.",
+   "new": "Because MSSP benchmarks and quality scores were built with little adjustment for social risk, ACOs serving high shares of dual-eligible beneficiaries — patients enrolled in both Medicare and Medicaid, who face the most complex social and clinical needs — face weaker financial returns from participation. CMS acknowledged that pressure when it added a health equity adjustment to ACO quality scoring (2023) and a Health Equity Benchmark Adjustment (2025).",
+   "claim": "'2024 Health Affairs study': high-dual ACOs 2.3x more likely to exit MSSP",
+   "verdict": "FABRICATED",
+   "sources": "CMS fact sheet CY2023 PFS final rule (MSSP health equity adjustment up to 10 quality bonus points); CMS fact sheet CY2025 PFS final rule CMS-1807-F (Health Equity Benchmark Adjustment for ACOs with high LIS/dual shares, from PY2025); no such 2024 Health Affairs study located",
+   "note": "Fabricated study removed; replaced with documented CMS policy response. Legacy Supabase fallback (lesson e8dd6050) and local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "CMS made its most significant commitment to SDOH risk adjustment in the 2022 MSSP final rule, which introduced a Health Equity Benchmark Adjustment that increases spending benchmarks for ACOs serving high proportions of patients with low-income subsidy status. This acknowledges that high-need populations cost more to manage effectively. However, the 3.5 percent adjustment ceiling is widely considered insufficient by health equity researchers — and it uses low-income subsidy status as an imperfect proxy for the full range of social complexity that drives outcome variation.",
+   "new": "CMS made its most significant commitment to SDOH risk adjustment in the CY2025 Physician Fee Schedule final rule, which created a Health Equity Benchmark Adjustment — starting in 2025 — that raises spending benchmarks for ACOs serving high proportions of beneficiaries who are dually eligible or receive the Part D low-income subsidy. This acknowledges that high-need populations cost more to manage effectively. Critics note that dual and low-income-subsidy status are imperfect proxies for the full range of social complexity that drives outcome variation.",
+   "claim": "HEBA in the '2022 MSSP final rule' with a '3.5 percent adjustment ceiling'",
+   "verdict": "FABRICATED",
+   "sources": "CMS fact sheet CY2023 PFS final rule (MSSP health equity adjustment up to 10 quality bonus points); CMS fact sheet CY2025 PFS final rule CMS-1807-F (Health Equity Benchmark Adjustment for ACOs with high LIS/dual shares, from PY2025)",
+   "note": "Wrong rule year; 3.5% ceiling unsupported. Legacy Supabase fallback (lesson e8dd6050) and local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "Up to 3.5% benchmark increase",
+   "new": "Benchmark increase for ACOs with high dual/LIS shares (from 2025)",
+   "claim": "Comparison row: 'Up to 3.5% benchmark increase'",
+   "verdict": "FABRICATED",
+   "sources": "CMS fact sheet CY2023 PFS final rule (MSSP health equity adjustment up to 10 quality bonus points); CMS fact sheet CY2025 PFS final rule CMS-1807-F (Health Equity Benchmark Adjustment for ACOs with high LIS/dual shares, from PY2025)",
+   "note": "Unsupported figure removed. Legacy Supabase fallback (lesson e8dd6050) and local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "8 to 12% adjustment based on SDOH cost impact evidence",
+   "new": "Larger adjustments calibrated to measured social-risk cost impact",
+   "claim": "Comparison row: researchers recommend '8 to 12%'",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No source located for an 8-12% recommendation",
+   "note": "Specific dropped. Legacy Supabase fallback (lesson e8dd6050) and local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "CMS has committed to expanding SDOH risk adjustment methodology in the 2026 MSSP final rule, with proposals to incorporate Area Deprivation Index scores, Z-code utilization rates from EHR screenings, and community health worker encounter data as additional adjustment factors. These changes are meaningful but still incomplete.",
+   "new": "CMS has not adopted the broader factors researchers recommend — such as Area Deprivation Index scores, Z-code screening data, or community health worker encounter data — and the CY2026 Physician Fee Schedule moved the other way, removing the social determinants risk assessment from Medicare's G0136 code.",
+   "claim": "'2026 MSSP final rule' committing to ADI, Z-code and CHW-encounter adjustments",
+   "verdict": "FABRICATED",
+   "sources": "CY2026 PFS final rule CMS-1832-F (G0136 descriptor revised to physical activity/nutrition; SDOH terms removed/reframed); no ADI/Z-code/CHW MSSP adjustment finalized",
+   "note": "Invented commitment replaced with the actual 2026 rule. Legacy Supabase fallback (lesson e8dd6050) and local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m6st07",
+   "expect": "47 RCTs",
+   "claim": "Stat: '2024 meta-analysis of 47 RCTs' — 22% fewer preventable hospitalizations (AJPH 2024)",
+   "verdict": "FABRICATED",
+   "sources": "Kangovi S, et al. 'Evidence-Based Community Health Worker Program Addresses Unmet Social Needs And Generates Positive Return On Investment.' Health Affairs 2020;39(2):207-213: $2.47 returned per $1 invested by Medicaid, within the fiscal year (RCT, 302 patients); no such AJPH 2024 meta-analysis located",
+   "note": "Replaced with a verified RCT finding. Legacy Supabase fallback (lesson e8dd6050) and local source JSON.",
+   "set": {
+    "label": "Hospitalizations in IMPaCT Trial",
+    "value": "Fewer",
+    "context": "In a randomized trial, Penn Medicine's IMPaCT CHW program reduced hospitalizations among high-risk, low-income patients — the source of its savings. Source: Kangovi et al., Health Affairs, 2020."
+   }
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m6st08",
+   "expect": "4-to-1 return",
+   "claim": "Stat: CHW '4-to-1 ROI — the highest of any care management intervention' (Health Affairs 2023)",
+   "verdict": "FABRICATED",
+   "sources": "Kangovi S, et al. 'Evidence-Based Community Health Worker Program Addresses Unmet Social Needs And Generates Positive Return On Investment.' Health Affairs 2020;39(2):207-213: $2.47 returned per $1 invested by Medicaid, within the fiscal year (RCT, 302 patients)",
+   "note": "Replaced with verified RCT-based ROI. Legacy Supabase fallback (lesson e8dd6050) and local source JSON.",
+   "set": {
+    "value": "$2.47:$1",
+    "context": "Every dollar Medicaid invested in Penn Medicine's IMPaCT CHW program returned $2.47 within the fiscal year, in a randomized trial. Source: Kangovi et al., Health Affairs, 2020."
+   }
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m6st09",
+   "expect": "31% improvement",
+   "claim": "Stat: CHWs '31% improvement in chronic disease monitoring' (AJPH 2024)",
+   "verdict": "FABRICATED",
+   "sources": "Kangovi S, et al. 'Evidence-Based Community Health Worker Program Addresses Unmet Social Needs And Generates Positive Return On Investment.' Health Affairs 2020;39(2):207-213: $2.47 returned per $1 invested by Medicaid, within the fiscal year (RCT, 302 patients)",
+   "note": "Unsourced stat replaced with a verified study fact. Legacy Supabase fallback (lesson e8dd6050) and local source JSON.",
+   "set": {
+    "label": "Trial Size (IMPaCT ROI Study)",
+    "value": "302",
+    "context": "The ROI estimate came from a randomized controlled trial of 302 patients — the first economic analysis of a health system CHW program for adults using RCT data. Source: Kangovi et al., Health Affairs, 2020."
+   }
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "Community health workers are the most powerful equity tool in VBC, with a 4-to-1 ROI and 22% reduction in preventable hospitalizations in high-need populations.",
+   "new": "Community health workers are among the most promising equity tools in VBC; in a randomized trial, Penn's IMPaCT program returned $2.47 to Medicaid for every $1 invested.",
+   "claim": "Takeaway: CHWs 4-to-1 ROI and 22% reduction",
+   "verdict": "FABRICATED",
+   "sources": "Kangovi S, et al. 'Evidence-Based Community Health Worker Program Addresses Unmet Social Needs And Generates Positive Return On Investment.' Health Affairs 2020;39(2):207-213: $2.47 returned per $1 invested by Medicaid, within the fiscal year (RCT, 302 patients)",
+   "note": "Aligned with corrected stats. Legacy Supabase fallback (lesson e8dd6050) and local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "Medicaid CHW coverage in more than half of states",
+   "new": "Medicaid CHW payment in many states (29 of 48 responding to KFF's 2022 survey)",
+   "claim": "Medicaid CHW coverage 'in more than half of states'",
+   "verdict": "UNVERIFIABLE",
+   "sources": "KFF 2022 survey: 29 of 48 responding states",
+   "note": "Tied to source. Legacy Supabase fallback (lesson e8dd6050) and local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m6ex01",
+   "expect": "UCSF Center for Excellence",
+   "claim": "Roots Community Health Center case: CHW on every team; '40% lower preventable hospitalization rates' (UCSF evaluation 2024; Roots outcome reporting 2024)",
+   "verdict": "FABRICATED",
+   "sources": "No UCSF Center for Excellence in Primary Care evaluation of Roots or published outcome figures located",
+   "note": "Case study with fabricated evaluation and outcome removed. Legacy Supabase fallback (lesson e8dd6050) and local source JSON.",
+   "drop": true
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m6st10",
+   "expect": "Only 23% of rural",
+   "claim": "Stat: 23% of rural CAH areas vs 71% urban covered by MSSP ACOs (CMS 2025)",
+   "verdict": "FABRICATED",
+   "sources": "No CMS 2025 source located; Andrilla CHA, Patterson DG, Garberson LA, Coulthard C, Larson EH. 'Geographic Variation in the Supply of Selected Behavioral Health Providers.' Am J Prev Med 2018;54(6S3):S199-S207: 65% of nonmetropolitan counties had no psychiatrist",
+   "note": "Replaced with a verified rural access figure. Legacy Supabase fallback (lesson e8dd6050) and local source JSON.",
+   "set": {
+    "label": "Nonmetro Counties Without a Psychiatrist",
+    "value": "65%",
+    "context": "65% of nonmetropolitan U.S. counties had no psychiatrist. Source: Andrilla et al., American Journal of Preventive Medicine, 2018."
+   }
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m6st11",
+   "expect": "138 rural hospitals",
+   "claim": "Stat: 138 rural closures since 2010 (Chartis 2025)",
+   "verdict": "UNVERIFIABLE",
+   "sources": "UNC Sheps Center, Rural Hospital Closures: 154 closures and conversions since 2010 (86 complete, 68 converted; excludes REH conversions)",
+   "note": "Replaced with the Sheps Center count. Legacy Supabase fallback (lesson e8dd6050) and local source JSON.",
+   "set": {
+    "value": "154",
+    "context": "154 rural hospitals have closed or stopped inpatient care since 2010 (86 complete closures, 68 conversions). Source: UNC Sheps Center for Health Services Research."
+   }
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m6st12",
+   "expect": "62% of rural counties",
+   "claim": "Stat: 62% of rural counties no psychiatrist (HRSA 2025)",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Andrilla CHA, Patterson DG, Garberson LA, Coulthard C, Larson EH. 'Geographic Variation in the Supply of Selected Behavioral Health Providers.' Am J Prev Med 2018;54(6S3):S199-S207: 65% of nonmetropolitan counties had no psychiatrist (figure is 65%, 2018)",
+   "note": "Duplicate of the corrected 65% stat above; specific dropped here. Legacy Supabase fallback (lesson e8dd6050) and local source JSON.",
+   "set": {
+    "label": "Behavioral Health Driver",
+    "value": "Major",
+    "context": "Behavioral health comorbidities are a major driver of preventable hospitalizations, and rural residents often travel long distances for mental health care."
+   }
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "Vermont's All-Payer Model includes an explicit health equity performance requirement — a condition not present in most VBC programs nationally. The AHEAD Model requires participating states to establish measurable health equity goals and report progress annually. Vermont's current equity focus areas include reducing rural-urban disparities in preventive care rates, improving mental health access in rural counties, and addressing the health needs of Vermont's growing refugee and immigrant populations.",
+   "new": "Vermont's All-Payer Model (2018–2025) set statewide population-health goals — improving access to primary care, reducing deaths from suicide and drug overdose, and reducing the prevalence and morbidity of chronic disease — rather than explicit health equity targets. The AHEAD Model requires participating states to set health equity goals, but Vermont withdrew from AHEAD before its performance period began.",
+   "claim": "Vermont APM 'explicit health equity performance requirement'; 'current equity focus areas'",
+   "verdict": "FABRICATED",
+   "sources": "Vermont All-Payer ACO Model Agreement (2016), population health goals; CMS AHEAD model page",
+   "note": "Unverifiable requirement and focus areas replaced with the agreement's actual goals. Legacy Supabase fallback (lesson e8dd6050) and local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": " Vermont's Blueprint for Health has piloted culturally adapted CHW programs for refugee communities, but coverage remains incomplete.",
+   "new": "",
+   "claim": "Blueprint 'piloted culturally adapted CHW programs for refugee communities'",
+   "verdict": "UNVERIFIABLE",
+   "sources": "No Blueprint source located",
+   "note": "Specific dropped. Legacy Supabase fallback (lesson e8dd6050) and local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "old": "The legacy of forced assimilation, medical experimentation, and involuntary sterilization programs has created",
+   "new": "The legacy of forced assimilation and the state's eugenics program — including a 1931 sterilization law, for which the Vermont Legislature formally apologized in 2021 — has created",
+   "claim": "Abenaki: 'medical experimentation' and sterilization programs",
+   "verdict": "UNVERIFIABLE",
+   "sources": "Vermont Eugenics Survey (1925-1936) and 1931 sterilization law; J.R.H.7 (2021) legislative apology",
+   "note": "Unsourced 'medical experimentation' dropped; sterilization history tied to the record. Legacy Supabase fallback (lesson e8dd6050) and local source JSON."
+  },
+  {
+   "docs": [],
+   "mirror": true,
+   "objKey": "m6ex02",
+   "expect": "Racial and Ethnic Health Equity Dashboard",
+   "claim": "VDH 'Racial and Ethnic Health Equity Dashboard'; 'one of only a handful of states'; dashboard used to track All-Payer Model disparities",
+   "verdict": "FABRICATED",
+   "sources": "No VDH dashboard by that name or source for the accountability outcome located",
+   "note": "Case study removed. Legacy Supabase fallback (lesson e8dd6050) and local source JSON.",
+   "drop": true
+  },
+  {
+   "log_only": true,
+   "doc": "supabase lessons e8dd6050-ced6-4b81-b9d5-669588905667 content_blocks",
+   "block_key": "cb.0 body 0/8/42/49",
+   "claim": "Obermeyer 2019 Science algorithm bias; WHO '30 to 55 percent' SDOH estimate; AHC and PRAPARE screening tools",
+   "verdict": "REAL",
+   "action": "none",
+   "sources": "Obermeyer Z et al., Science 2019;366:447-453; WHO Social determinants of health fact page ('SDH account for between 30-55% of health outcomes'); CMS AHC HRSN Screening Tool; NACHC PRAPARE",
+   "status": "LEFT",
+   "note": "Course-conclusion opinion sentences left as editorial."
+  }
+ ]
+}

@@ -1,0 +1,588 @@
+{
+  "_createdAt": "2026-06-02T17:23:57Z",
+  "_id": "behavioral-health-burden",
+  "_rev": "vgbIiwZpnxA2FcYEhkkAby",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T17:23:57Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Common Are Behavioral Health Conditions?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "\"Behavioral health\" is an umbrella term that covers both mental health conditions — such as depression, anxiety, and schizophrenia — and substance use disorders involving alcohol, opioids, and other drugs. These conditions are not rare or marginal. They are among the most common health problems Americans face, touching tens of millions of households every single year."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The federal government measures this burden each year through the National Survey on Drug Use and Health (NSDUH), conducted by the Substance Abuse and Mental Health Services Administration (SAMHSA). In 2023, an estimated 58.7 million adults aged 18 or older — 22.8%, or roughly one in five — experienced any mental illness in the past year. Of those, 14.6 million adults (5.7%) had a serious mental illness, meaning a condition that substantially interfered with major life activities."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Substance use disorders are nearly as widespread. Among people aged 12 or older, 48.5 million had a substance use disorder in 2023. Behavioral health conditions are, in short, a normal part of the population’s health profile — not an edge case the health system can treat as optional."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Behavioral health = mental health conditions + substance use disorders. In 2023, about 1 in 5 U.S. adults had any mental illness, and 48.5 million people aged 12+ had a substance use disorder."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "22.8% of U.S. adults in 2023 (SAMHSA NSDUH 2023)",
+          "label": "Adults with any mental illness",
+          "value": "58.7M"
+        },
+        {
+          "_key": "s2",
+          "context": "5.7% of U.S. adults in 2023 (SAMHSA NSDUH 2023)",
+          "label": "Adults with serious mental illness",
+          "value": "14.6M"
+        },
+        {
+          "_key": "s3",
+          "context": "Aged 12+ in 2023 (SAMHSA NSDUH 2023)",
+          "label": "People with a substance use disorder",
+          "value": "48.5M"
+        },
+        {
+          "_key": "s4",
+          "context": "Any mental illness, past-year (SAMHSA NSDUH 2023)",
+          "label": "Adults affected each year",
+          "value": "1 in 5"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Treatment Gap: Prevalence Is Only Half the Story"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "High prevalence would matter less if most people who needed care received it. They do not. The defining feature of the U.S. behavioral health system is a large and persistent treatment gap — the distance between the number of people who have a condition and the number who actually get treated for it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Of the 58.7 million adults with any mental illness in 2023, 27.1 million did not receive any mental health treatment in the past year — roughly 46% went untreated. The gap is even more dramatic for substance use: of the 48.5 million people aged 12 or older with a substance use disorder, only 15.6% (about 7.1 million) received any substance use treatment, leaving 85.4% — more than 41 million people — without care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "These gaps are not driven by a single cause. Surveys consistently identify cost, lack of insurance coverage, stigma, not knowing where to go, workforce shortages, and a belief that one should handle problems alone. Understanding behavioral health burden therefore means looking past raw prevalence to the systemic failure to connect people with effective treatment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Mental Illness (adults)",
+        "points": [
+          "58.7M adults had any mental illness",
+          "27.1M received NO treatment in the past year",
+          "Roughly 46% of adults with mental illness went untreated"
+        ]
+      },
+      "right": {
+        "label": "Substance Use Disorder (age 12+)",
+        "points": [
+          "48.5M had a substance use disorder",
+          "Only 15.6% (~7.1M) received any treatment",
+          "85.4% (~41M people) received NO treatment"
+        ]
+      },
+      "title": "The Behavioral Health Treatment Gap (2023)"
+    },
+    {
+      "_key": "s2w1",
+      "_type": "warningBlock",
+      "message": "A high number of people with a diagnosis does not mean they are being cared for. For substance use disorders, the overwhelming majority — more than four in five — receive no treatment at all in a given year. The burden of behavioral health is as much a story of unmet need as of disease.",
+      "title": "Prevalence ≠ Treatment"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Human Toll: Mortality and Lost Years of Life"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Untreated behavioral health conditions are lethal. In 2023, more than 49,000 people in the United States died by suicide. Suicide was the 11th leading cause of death overall that year, but it ranked as the second leading cause of death for Americans aged 10–14, 15–24, and 25–44 — meaning that for young and working-age people, few things kill more."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The toll extends far beyond suicide. People living with serious mental illness die substantially earlier than the general population — estimates commonly range from roughly 10 to more than 20 years of life lost. Critically, the majority of these excess deaths are not from the psychiatric condition itself but from preventable physical illnesses such as cardiovascular disease, diabetes, and cancer, compounded by smoking, limited access to medical care, and the side effects of some medications."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why behavioral and physical health cannot be treated as separate problems. A person with schizophrenia is far more likely to die of a heart attack that went unmanaged than of anything directly psychiatric. The burden of behavioral health is, in large part, a burden of fragmented care — a theme that runs through the rest of this course."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "CDC provisional data, United States",
+          "label": "Suicide deaths in 2023",
+          "value": "49,300+"
+        },
+        {
+          "_key": "s2",
+          "context": "Suicide ranking in 2023 (CDC)",
+          "label": "Leading cause of death, ages 10–44",
+          "value": "2nd"
+        },
+        {
+          "_key": "s3",
+          "context": "Premature mortality vs. general population (peer-reviewed estimates)",
+          "label": "Years of life lost with SMI",
+          "value": "10–20+"
+        }
+      ]
+    },
+    {
+      "_key": "s3hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Most excess deaths among people with serious mental illness come from preventable physical illness — not the psychiatric condition itself. Integrating behavioral and physical care is a matter of life and death."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "When Conditions Overlap: Co-Occurring Disorders"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Mental health conditions and substance use disorders frequently travel together. In 2023, an estimated 20.4 million adults had a mental illness co-occurring with a substance use disorder in the past year, and 6.8 million had a serious mental illness alongside a substance use disorder."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Co-occurring disorders (sometimes called \"dual diagnosis\") are clinically harder to treat and historically have fallen between the cracks of a system that separated mental health care from addiction care. A person seeking help for depression and an alcohol use disorder might once have been told to \"get sober first\" before addressing the depression — a sequencing that often left both conditions untreated."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Modern best practice is integrated treatment that addresses both conditions at the same time, in the same setting, by a coordinated team. The scale of co-occurrence — more than 20 million adults — is one of the strongest arguments for the integration models this course explores."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "SAMHSA, the federal agency that leads U.S. behavioral health policy, explicitly recommends integrated treatment for co-occurring mental and substance use disorders rather than treating them in separate, sequential silos.\nIts data show that in 2023, 20.4 million adults had any mental illness plus a substance use disorder, underscoring why the agency frames integration — not separation — as the standard of care.",
+      "title": "SAMHSA on Co-Occurring Disorders"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Economic Burden"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Beyond the human cost, behavioral health conditions impose an enormous economic burden. A 2024 study by economists affiliated with Yale and the National Bureau of Economic Research estimated that mental illness costs the U.S. economy roughly $282 billion every year — a drag comparable in size to an average economic recession."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "That figure is not mostly hospital bills. The study attributed about $83 billion to the direct costs of treatment, roughly $10 billion to years of life lost to suicide, and the largest share — about $189 billion — to reduced work productivity. In other words, the cost of untreated and undertreated behavioral illness shows up in lost wages, missed work, and diminished output far more than in clinical spending."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This matters for policy. If most of the economic damage comes from lost productivity rather than treatment, then investing in access to effective care is not simply a cost — it can be an investment that pays back through healthier, more productive people. The economics reinforce the clinical case for closing the treatment gap."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "2024 Yale/NBER study, U.S. economy",
+          "label": "Annual cost of mental illness",
+          "value": "$282B"
+        },
+        {
+          "_key": "s2",
+          "context": "Largest single component (2024 Yale/NBER study)",
+          "label": "Lost work productivity",
+          "value": "$189B"
+        },
+        {
+          "_key": "s3",
+          "context": "2024 Yale/NBER study",
+          "label": "Direct treatment costs",
+          "value": "$83B"
+        }
+      ]
+    },
+    {
+      "_key": "s5q1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5q1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The cost of mental illness to the U.S. economy is roughly $282 billion a year — about the size of an average recession — and most of it is lost productivity, not treatment spending."
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Behavioral health spans both mental health conditions and substance use disorders; in 2023 about 1 in 5 U.S. adults (58.7 million) had any mental illness and 48.5 million people aged 12+ had a substance use disorder.",
+        "14.6 million adults had a serious mental illness in 2023 — a condition that substantially interfered with major life activities.",
+        "The defining feature of the system is the treatment gap: about 46% of adults with mental illness went untreated, and 85% of people with a substance use disorder received no treatment.",
+        "More than 49,000 people died by suicide in 2023; suicide was the second leading cause of death for Americans aged 10–44.",
+        "People with serious mental illness die roughly 10 to 20+ years earlier than average, mostly from preventable physical illnesses — making integration of behavioral and physical care a life-and-death issue.",
+        "Co-occurring disorders are common (20.4 million adults in 2023) and are best addressed with integrated, simultaneous treatment rather than sequential silos.",
+        "Mental illness costs the U.S. economy an estimated $282 billion a year, the majority of it from lost productivity rather than treatment spending."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "In 2023, 27.1 million of the 58.7 million adults with any mental illness (about 46%) received no treatment, and only 15.6% of the 48.5 million people with a substance use disorder were treated — leaving roughly 85% untreated. Both conditions show large gaps, with substance use the larger of the two.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Most adults with mental illness receive treatment, but most people with substance use disorders do not."
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Roughly 46% of adults with any mental illness went untreated, and about 85% of people with a substance use disorder received no treatment."
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Nearly everyone with a behavioral health condition receives some form of treatment within a year."
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The treatment gap exists only for substance use disorders, not for mental illness."
+        }
+      ],
+      "question": "According to 2023 NSDUH data, which statement best captures the \"treatment gap\" in U.S. behavioral health?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] SAMHSA — Key Substance Use and Mental Health Indicators in the United States: Results from the 2023 NSDUH — https://www.samhsa.gov/data/report/2023-nsduh-annual-national-report — prevalence of any mental illness (58.7M / 22.8%), serious mental illness (14.6M / 5.7%), substance use disorder (48.5M), treatment rates and the treatment gap."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] National Association of Counties — SAMHSA releases new data on rates of mental illness and substance use disorder in the U.S. — https://www.naco.org/news/samhsa-releases-new-data-rates-mental-illness-and-substance-use-disorder-us — summary of 2023 NSDUH including co-occurring disorders (20.4M adults AMI+SUD; 6.8M SMI+SUD) and treatment receipt."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CDC — Suicide Data and Statistics — https://www.cdc.gov/suicide/facts/data.html — more than 49,000 suicide deaths in 2023; suicide as 11th leading cause overall and 2nd leading cause for ages 10–44."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Yale News — Novel study quantifies immense economic costs of mental illness in the U.S. (2024) — https://news.yale.edu/2024/04/22/novel-study-quantifies-immense-economic-costs-mental-illness-us — ~$282B annual economic cost; $83B treatment, $189B lost productivity, $10B suicide."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Annals of General Psychiatry — Mortality gap and physical comorbidity of people with severe mental disorders — https://annals-general-psychiatry.biomedcentral.com/articles/10.1186/s12991-021-00374-y — reduced life expectancy (commonly ~10–20+ years) for people with serious mental illness, driven largely by preventable physical illness."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] SAMHSA — Co-Occurring Disorders and Other Health Conditions — https://www.samhsa.gov/substance-use/treatment/co-occurring-disorders — federal recommendation for integrated treatment of co-occurring mental and substance use disorders."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "behavioral-health-integration",
+  "order": 1,
+  "slug": {
+    "_type": "slug",
+    "current": "behavioral-health-burden"
+  },
+  "title": "The Burden of Behavioral Health Conditions"
+}

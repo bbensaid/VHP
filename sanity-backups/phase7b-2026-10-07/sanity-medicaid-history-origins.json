@@ -1,0 +1,518 @@
+{
+  "_createdAt": "2026-05-31T20:20:13Z",
+  "_id": "medicaid-history-origins",
+  "_rev": "glqH7a4yvZFQerxZdQsmoP",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T20:20:13Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Born in 1965: A Great Society Program"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicaid was created on July 30, 1965, when President Lyndon B. Johnson signed the Social Security Amendments of 1965 (Public Law 89-97). The same law created Medicare. Medicaid was added as Title XIX of the Social Security Act, and Johnson signed the bill in Independence, Missouri, with former President Harry Truman — who had championed national health insurance two decades earlier — at his side."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Both programs were part of Johnson's \"Great Society\" agenda, a sweeping set of domestic reforms aimed at reducing poverty and racial injustice. But the two programs were built very differently. Medicare was designed as a uniform federal program for people 65 and older. Medicaid, by contrast, was designed as a federal-state partnership: the federal government would pay a share of the cost, but each state would run its own program within federal rules."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This design choice is the single most important thing to understand about Medicaid. Because states administer their own programs, \"Medicaid\" is really 56 different programs — one for each state, the District of Columbia, and the territories — each with different eligibility rules, covered benefits, and provider payment rates. Two people with identical incomes can qualify in one state and be turned away in another."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicaid is authorized by Title XIX of the Social Security Act. It is jointly financed by the federal and state governments but administered by the states within federal guidelines — which is why eligibility and benefits vary widely from state to state."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "From Welfare Add-On to Health Insurer"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "In its early decades, Medicaid was tightly tied to cash welfare. Eligibility was generally linked to receipt of welfare benefits, meaning that to get Medicaid you usually had to qualify for a cash-assistance program first. This linked health coverage to welfare status rather than treating it as health insurance in its own right."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A key early expansion came in 1972, when Congress created the Supplemental Security Income (SSI) program. SSI consolidated cash assistance for low-income aged, blind, and disabled people, and in most states it led to automatic Medicaid eligibility for SSI recipients. This permanently expanded Medicaid's role as a payer for people with disabilities and the low-income elderly — populations that remain among the program's most expensive enrollees today."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Over the following decades, Congress gradually decoupled Medicaid from welfare. A series of laws in the 1980s extended coverage to low-income pregnant women and children regardless of welfare status, transforming Medicaid into a broad health-financing program rather than a welfare appendage."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Title XIX of the Social Security Act, signed by President Johnson (National Archives)",
+          "label": "Medicaid Signed Into Law",
+          "value": "1965"
+        },
+        {
+          "_key": "s2",
+          "context": "Led to automatic Medicaid eligibility for many aged, blind, and disabled people (Medicaid.gov)",
+          "label": "SSI Created",
+          "value": "1972"
+        }
+      ]
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CHIP and the Coverage of Children"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The next major milestone came in 1997, when the Balanced Budget Act created the Children's Health Insurance Program (CHIP), originally known as SCHIP. CHIP was designed to cover children in families that earned too much to qualify for Medicaid but could not afford private insurance — generally children in families below roughly 200 percent of the federal poverty level."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "CHIP gave states a new, capped pot of federal money and substantial flexibility: states could run CHIP as an expansion of Medicaid, as a separate program, or as a combination of both. Together, Medicaid and CHIP became the backbone of children's health coverage in the United States, and the two programs are now reported and tracked together in most federal enrollment data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "CHIP was enacted as part of the Balanced Budget Act of 1997, which provided roughly $40 billion in federal funding through fiscal year 2007 to cover low-income, uninsured children not eligible for Medicaid.\nUnlike Medicaid, which is an open-ended entitlement, CHIP funding is capped — states receive a set federal allotment each year. This structural difference still shapes how the two programs are financed and renewed by Congress today.",
+      "title": "The Balanced Budget Act of 1997"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The ACA and the Biggest Expansion in 50 Years"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Affordable Care Act (ACA), signed in 2010, called for the single largest expansion in Medicaid's history. Starting January 1, 2014, the ACA extended Medicaid eligibility to nearly all non-elderly adults with incomes up to 138 percent of the federal poverty level — including, for the first time, low-income adults without dependent children, who had historically been excluded in most states."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The ACA also created a single, income-based eligibility standard called Modified Adjusted Gross Income (MAGI), replacing a patchwork of welfare-linked rules with one application and one set of rules aligned with the insurance marketplaces. The federal government agreed to pay an unusually generous share of the cost for the newly eligible adults to encourage states to expand."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "But in 2012, the Supreme Court changed the plan. In National Federation of Independent Business v. Sebelius, decided June 28, 2012, the Court ruled that the federal government could not force states to expand Medicaid by threatening to withhold all of their existing Medicaid funding. The practical effect was to make the ACA Medicaid expansion optional for each state."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Traditional Medicaid (pre-2014)",
+        "points": [
+          "Eligibility tied to categories: children, pregnant women, parents, aged, disabled",
+          "Childless adults excluded in most states",
+          "Patchwork of welfare-linked income rules",
+          "No single national income standard"
+        ]
+      },
+      "right": {
+        "label": "ACA Expansion (2014+)",
+        "points": [
+          "Covers nearly all adults up to 138% of the federal poverty level",
+          "Childless low-income adults eligible for the first time",
+          "Single MAGI income standard",
+          "Optional for states after NFIB v. Sebelius (2012)"
+        ]
+      },
+      "title": "Medicaid Before and After the ACA Expansion"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "Because of the 2012 Supreme Court decision, ACA Medicaid expansion is optional. As of mid-2025, 41 states (including the District of Columbia) had adopted expansion while 10 states had not — which is why a low-income adult's eligibility still depends heavily on the state they live in.",
+      "title": "Expansion Is a State Choice"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicaid Today: Scale and Significance"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Six decades after its creation, Medicaid is one of the largest sources of health coverage in the United States. In fiscal year 2023, Medicaid provided coverage to roughly 96 million individuals over the course of the year at a total cost of about $894 billion. The federal government paid approximately 69 percent of that total and states paid the rest."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicaid represented about 18 percent of all national health spending in 2023, making it comparable in scale to Medicare and one of the dominant payers in the entire health system. It is also the nation's primary payer for long-term care and a major financer of births, behavioral health, and care for people with disabilities."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Enrollment fluctuates with the economy and with policy. It surged during the COVID-19 pandemic when states were temporarily barred from disenrolling people, then fell sharply during the post-pandemic \"unwinding.\" As of February 2026, about 74.9 million people were enrolled in Medicaid and CHIP combined — still slightly above pre-pandemic levels but well below the pandemic peak."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Individuals served by Medicaid over the year (Congressional Research Service)",
+          "label": "People Covered in FY2023",
+          "value": "~96M"
+        },
+        {
+          "_key": "s2",
+          "context": "Federal share ~69%, state share ~31% (CRS / MACPAC)",
+          "label": "Total FY2023 Spending",
+          "value": "$894B"
+        },
+        {
+          "_key": "s3",
+          "context": "Medicaid's share of all US health spending in CY2023 (CRS)",
+          "label": "of National Health Spending",
+          "value": "~18%"
+        },
+        {
+          "_key": "s4",
+          "context": "Combined enrollment as of February 2026 (KFF)",
+          "label": "Medicaid + CHIP Enrolled",
+          "value": "~74.9M"
+        }
+      ]
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Medicaid was created on July 30, 1965, by Title XIX of the Social Security Act, signed by President Lyndon Johnson alongside Medicare.",
+        "Unlike Medicare, Medicaid is a federal-state partnership: states run their own programs within federal rules, so eligibility and benefits vary widely by state.",
+        "Medicaid began closely tied to cash welfare, but Congress gradually decoupled it — the 1972 SSI program and 1980s expansions broadened it into a true health insurer.",
+        "The Balanced Budget Act of 1997 created CHIP to cover children in families earning too much for Medicaid but unable to afford private insurance.",
+        "The 2010 ACA called for expanding Medicaid to adults up to 138% of poverty using a single MAGI income standard, beginning in 2014.",
+        "The 2012 Supreme Court decision NFIB v. Sebelius made the ACA Medicaid expansion optional, so as of mid-2025, 41 states (with DC) had expanded and 10 had not.",
+        "Today Medicaid covers roughly 96 million people a year, spends about $894 billion annually, and accounts for about 18% of all US health spending."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The Court held that the federal government could not coerce states into expanding Medicaid by threatening to withhold all existing Medicaid funds. As a result, the expansion became a state choice — which is why some states have expanded and others have not.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "It struck down the entire Affordable Care Act"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "It made the Medicaid expansion optional for each state"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "It required all states to expand Medicaid immediately"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "It eliminated federal funding for Medicaid"
+        }
+      ],
+      "question": "What did the 2012 Supreme Court decision in NFIB v. Sebelius do to the ACA's Medicaid expansion?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Medicare and Medicaid Act (1965) — https://www.archives.gov/milestone-documents/medicare-and-medicaid-act — Medicaid signed into law July 30, 1965 as Title XIX by President Johnson"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Program History and Prior Initiatives — https://www.medicaid.gov/about-us/program-history — 1972 SSI link to Medicaid eligibility and program evolution"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Federal Legislative Milestones in Medicaid and CHIP — https://www.macpac.gov/reference-materials/federal-legislative-milestones-in-medicaid-and-chip/ — CHIP created by the Balanced Budget Act of 1997"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] National Federation of Independent Business v. Sebelius, 567 U.S. 519 (2012) — https://supreme.justia.com/cases/federal/us/567/519/ — Supreme Court made ACA Medicaid expansion optional for states"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Medicaid: An Overview — https://www.congress.gov/crs-product/R43357 — FY2023 ~96M covered, ~$894B spending, ~18% of national health spending, ~69% federal share"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Medicaid Enrollment and Unwinding Tracker — https://www.kff.org/medicaid/medicaid-enrollment-and-unwinding-tracker/ — ~74.9M Medicaid+CHIP enrolled as of February 2026; 41 states (with DC) expanded as of mid-2025"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicaid-101",
+  "order": 1,
+  "slug": {
+    "_type": "slug",
+    "current": "medicaid-history-origins"
+  },
+  "title": "Medicaid's Origins: 1965 to Today"
+}

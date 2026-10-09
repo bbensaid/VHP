@@ -1,0 +1,656 @@
+{
+  "_createdAt": "2026-05-28T17:59:55Z",
+  "_id": "aiml-fda-regulation",
+  "_rev": "glqH7a4yvZFQerxZd4j1HD",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T04:35:53Z",
+  "body": [
+    {
+      "_key": "intro1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "intro1s",
+          "_type": "span",
+          "marks": [],
+          "text": "If you are building, buying, deploying, or evaluating artificial intelligence tools in a clinical setting, the single most important piece of paper on your desk is the FDA's regulatory framework for Software as a Medical Device. Not because the FDA is merely a compliance hurdle—but because the framework defines what counts as a medical device in the first place, which pathway to market a product must travel, how it may change after clearance, and what obligations follow it into clinical practice. Understanding this framework is the baseline competency for every healthcare AI stakeholder: clinician, administrator, health-system executive, investor, and policymaker alike."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "intro2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "intro2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The regulatory landscape for healthcare AI has evolved rapidly. The 21st Century Cures Act of 2016 carved out certain clinical decision support software from device regulation. The FDA's 2021 AI/ML Action Plan committed to a new oversight model suited to continuously learning algorithms. A final Predetermined Change Control Plan (PCCP) guidance landed in December 2024. And in January 2026, FDA issued an updated final Clinical Decision Support guidance that further refined which AI tools escape device regulation entirely. This lesson walks through each layer of the framework so you can read it fluently—and apply it to real decisions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Software as a Medical Device: The Legal Foundation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The term Software as a Medical Device (SaMD) was formally defined by the International Medical Device Regulators Forum (IMDRF) in 2013 as 'software intended to be used for one or more medical purposes that perform these purposes without being part of a hardware medical device.' This definition was deliberately broad. It covers software running on smartphones, tablets, cloud servers, hospital workstations, and third-party platforms—as long as that software has a medical purpose of its own, independent of any physical device it may run on. The IMDRF working group, chaired by the FDA, developed four categories of SaMD based on the significance of the information provided and the seriousness of the condition involved, ranging from non-serious conditions with informational output at one end to critical conditions with diagnostic or treatment-driving output at the other."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "FDA adopted the IMDRF SaMD framework and maps it onto the existing three-class U.S. medical device classification system: Class I (lowest risk, general controls only), Class II (moderate risk, special controls, most AI devices land here), and Class III (highest risk, premarket approval required). The critical threshold is whether software meets the statutory definition of a device under Section 201(h) of the Federal Food, Drug, and Cosmetic (FD&C) Act—intended for use in the diagnosis, cure, mitigation, treatment, or prevention of disease, or intended to affect the structure or function of the body. AI tools that cross this threshold are medical devices and must be regulated accordingly. Those that do not cross it—such as general-purpose health tracking apps or administrative software—fall outside FDA jurisdiction entirely."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 21st Century Cures Act, signed into law in December 2016, refined the boundary further. It explicitly excluded certain software functions from the device definition: administrative software (billing, scheduling), general wellness apps, electronic health records, and—most significantly for AI—certain clinical decision support (CDS) software. Section 520(o)(1)(E) of the FD&C Act creates the Non-Device CDS exclusion, which applies when four specific criteria are all met simultaneously. The Cures Act did not eliminate FDA oversight of healthcare software; it refined where that oversight begins and ends. The FDA's subsequent guidance documents have spent nearly a decade clarifying how to apply those criteria in practice, with the most recent final guidance issued in January 2026."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Cumulative total as of August 2024, per FDA tracking database",
+          "label": "AI/ML Devices Cleared by FDA",
+          "value": "950+"
+        },
+        {
+          "_key": "s2",
+          "context": "ML-enabled devices newly authorized in calendar year 2024 alone",
+          "label": "2024 New Authorizations",
+          "value": "253"
+        },
+        {
+          "_key": "s3",
+          "context": "Share of 2024 AI device clearances in radiology and medical imaging",
+          "label": "Radiology Dominance",
+          "value": "74%"
+        },
+        {
+          "_key": "s4",
+          "context": "Proportion of 2024 AI devices cleared via 510(k) substantial equivalence pathway",
+          "label": "510(k) Share",
+          "value": "95%"
+        }
+      ]
+    },
+    {
+      "_key": "s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Premarket Pathways: 510(k), De Novo, and PMA"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Once software is classified as a medical device, the developer must obtain FDA authorization before marketing it in the United States. The pathway depends on the device's risk class and whether a legally marketed predicate exists. The three primary pathways—510(k) clearance, De Novo classification, and Premarket Approval (PMA)—differ dramatically in burden, timeline, and evidence requirements. For AI developers, choosing the right pathway early is one of the most consequential strategic decisions in a product's lifecycle, because the wrong choice can add years and tens of millions of dollars to the path to market."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 510(k) premarket notification pathway is by far the most common route for AI medical devices. In 2024, approximately 94.6 percent of newly authorized AI/ML devices were cleared via 510(k). To obtain clearance, a manufacturer must demonstrate 'substantial equivalence' to a legally marketed predicate device—meaning the new device has the same intended use and the same or equivalent technological characteristics, or any differences do not raise new safety and effectiveness questions. For AI SaMD, substantial equivalence is typically supported through algorithm performance data, software verification and validation testing, and cybersecurity documentation rather than full randomized clinical trials. The IDx-DR diabetic retinopathy detector—which received the first De Novo authorization for an autonomous AI diagnostic in 2018—subsequently became a predicate enabling multiple follow-on 510(k) clearances, including LumineticsCore in 2021 and AEYE-DS in 2022."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The De Novo pathway is the correct choice when an AI device is genuinely novel—no legally marketed predicate exists—but the device is low to moderate risk (Class I or II). De Novo requests ask FDA to both classify the device and establish special controls (performance standards, labeling requirements, post-market surveillance protocols) that will govern the new device category and serve as predicates for future 510(k) submissions. The DermaSensor handheld pigmented-lesion analyzer for melanoma risk received De Novo authorization (DEN230008) in January 2024. The Notal Vision Home OCT System for macular degeneration monitoring received De Novo (DEN230043) in May 2024. Both established new device types that competitors can now cite as predicates. In 2024, nine AI devices—5.4 percent of all new authorizations—went through De Novo."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "510(k) Clearance",
+        "points": [
+          "Must cite a legally marketed predicate device",
+          "Demonstrates substantial equivalence to predicate",
+          "Does not establish new device type or special controls",
+          "Fastest pathway: typically 3-6 months average review",
+          "Most common: ~95% of AI device clearances in 2024"
+        ]
+      },
+      "right": {
+        "label": "De Novo Classification",
+        "points": [
+          "Used when no valid predicate exists",
+          "FDA evaluates novel device on its own merits",
+          "Establishes new device category and special controls",
+          "Longer timeline: typically 12-24+ months",
+          "Creates predicate for future 510(k) filers in same category"
+        ]
+      },
+      "title": "510(k) vs. De Novo: Key Differences for AI Developers"
+    },
+    {
+      "_key": "s2p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Premarket Approval (PMA) is the most rigorous FDA pathway, reserved for Class III devices that present a substantial risk of serious illness or injury. PMA requires valid scientific evidence—typically including data from well-designed clinical trials—demonstrating a reasonable assurance of safety and effectiveness. As of 2025, no standalone AI/ML SaMD has been approved through PMA, reflecting the fact that most AI diagnostic and decision-support tools have been classified as Class II devices. However, as AI moves from augmenting clinician judgment to autonomously making high-stakes treatment decisions—particularly in life-critical contexts such as sepsis management, ventilator control, or autonomous surgical guidance—the risk calculus could shift and PMA may become relevant for certain AI categories."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex",
+      "_type": "exampleBlock",
+      "content": "In 2018, IDx-DR became the first AI diagnostic device to receive FDA authorization for autonomous use without requiring clinician interpretation of the image (De Novo DEN180001). It screens for diabetic retinopathy in primary care using a retinal camera and deep learning. Because no prior predicate existed, it went through De Novo and established a new device type. That single De Novo authorization spawned a lineage of 510(k) clearances—LumineticsCore (2021) and AEYE-DS (2022)—demonstrating how one foundational De Novo can accelerate an entire product category.",
+      "title": "IDx-DR: The Landmark De Novo That Built an AI Predicate Tree"
+    },
+    {
+      "_key": "s3h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The Predetermined Change Control Plan: Managing AI That Learns"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Traditional FDA medical device regulation assumes a 'locked' product: the device you submit for clearance is the device you sell, and any significant post-clearance modification requires a new submission. This model made sense for a pacemaker or a surgical instrument, but it creates a fundamental tension with machine learning—algorithms designed to improve continuously as they see more data. If every model retrain or dataset expansion required a new 510(k), AI developers would face an impossible choice between regulatory compliance and the core value proposition of their technology. The Predetermined Change Control Plan (PCCP) is FDA's answer to this tension."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "On December 3, 2024, FDA published its final guidance titled 'Marketing Submission Recommendations for a Predetermined Change Control Plan for Artificial Intelligence-Enabled Device Software Functions.' A PCCP is a document, submitted as part of an initial marketing submission (510(k), De Novo, or PMA) or as a supplement to an existing authorization, that pre-defines specific algorithm changes the manufacturer anticipates making after clearance—and the validation and monitoring protocols that will govern those changes. When a manufacturer later makes a PCCP-covered change and executes it exactly as the approved plan specifies, no new marketing submission is required. The PCCP essentially moves review from a reactive post-change process to a prospective pre-approval of the change methodology."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "FDA requires a PCCP to contain three core components. The Description of Modifications must specify exactly what types of changes are contemplated—for example, retraining on expanded demographic datasets, updating confidence thresholds, or incorporating new imaging modalities. Vague or open-ended descriptions will not be accepted. The Modification Protocol must detail the data requirements, statistical methods, performance benchmarks, and validation testing that must be completed before any covered change is deployed. The Impact Assessment must analyze how each type of contemplated change could affect device safety, effectiveness, and the risk-benefit profile. Changes not covered by an approved PCCP—including changes to intended use, changes exceeding the scope of the modification protocol, or changes whose impact assessment was not pre-approved—continue to require a new marketing submission."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "In your initial submission, specify precisely which algorithm changes you anticipate: e.g., retraining with ≥10,000 new images from ≥3 new health systems, updating decision thresholds within ±5% of cleared value.",
+          "title": "Define Modification Scope"
+        },
+        {
+          "_key": "step2",
+          "description": "Document the data governance, statistical acceptance criteria, internal validation studies, and clinical performance benchmarks that must be met before any covered change can be deployed.",
+          "title": "Write the Modification Protocol"
+        },
+        {
+          "_key": "step3",
+          "description": "Analyze how each contemplated change affects safety and effectiveness. FDA reviews this analysis as part of the original clearance or subsequent supplement.",
+          "title": "Submit Impact Assessment"
+        },
+        {
+          "_key": "step4",
+          "description": "When the time comes, implement only changes within the approved scope using the approved protocol. Maintain thorough documentation showing each step was executed as pre-specified.",
+          "title": "Execute Changes Per Plan"
+        },
+        {
+          "_key": "step5",
+          "description": "PCCP-covered changes must still be tracked under your post-market surveillance plan. Real-world performance data after each change must be collected and reviewed.",
+          "title": "Post-Market Monitoring"
+        }
+      ],
+      "title": "How a PCCP Works in Practice"
+    },
+    {
+      "_key": "s3an",
+      "_type": "analogyBlock",
+      "analogy": "A PCCP is like a building permit that covers future renovations. Instead of filing a new permit every time you want to move a wall, you file one comprehensive plan upfront that says: we may modify walls in zones A, B, and C, using licensed contractors, following these safety inspections. Future renovations within that plan proceed without new permits; changes outside the plan require a new filing.",
+      "concept": "Predetermined Change Control Plans allow pre-approved algorithm updates without new FDA submissions—if the changes stay within the pre-specified scope and protocol."
+    },
+    {
+      "_key": "s4h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2026 CDS Software Guidance: What Is and Is Not a Device"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most consequential boundary in healthcare AI regulation is not between different clearance pathways—it is the line between 'regulated medical device' and 'not a device at all.' The 21st Century Cures Act created that line for clinical decision support software through Section 520(o)(1)(E) of the FD&C Act. After an initial draft guidance in 2017, a final guidance in 2022, and years of industry feedback, FDA issued a revised final Clinical Decision Support Software Guidance on January 6, 2026 (reissued January 29, 2026), followed by a town hall on March 11, 2026. This 2026 guidance is the current controlling document for the Non-Device CDS determination."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Under the Cures Act framework, a CDS software function qualifies as Non-Device CDS—and therefore escapes FDA device regulation entirely—only if it meets all four of the following criteria simultaneously. First, the software is not intended to acquire, process, or analyze a medical image or a signal from an in vitro diagnostic device or a pattern or signal from a signal acquisition system. This criterion excludes AI that reads imaging, interprets ECG waveforms, or analyzes continuous physiologic signals from regulatory relief. Second, the software is intended for the purpose of displaying, analyzing, or printing medical information about a patient or other medical information—such as peer-reviewed clinical practice guidelines or best-practice recommendations. Third, the software is intended for the purpose of supporting or providing recommendations to a health care professional (HCP) about prevention, diagnosis, or treatment of a disease or condition. Fourth, and most critically for AI, the software must enable the HCP to independently review the basis for the recommendation—meaning the clinician must be able to see the logic, evidence, or reasoning behind the output and form their own judgment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2026 guidance introduced one significant policy shift from the 2022 version. Under the prior guidance, FDA had taken a position that CDS tools producing only a single output (rather than multiple ranked recommendations) failed Criterion 3 because they were not truly 'supporting' independent clinical judgment. In the 2026 guidance, FDA announced it will exercise enforcement discretion for single-output CDS functions that meet all other non-device criteria, acknowledging that in some clinical contexts only one recommendation is clinically appropriate and withholding it creates a worse outcome than surfacing it clearly. This is a meaningful expansion of the non-device safe harbor. Tools that analyze raw imaging signals, that apply proprietary algorithms the clinician cannot audit, or that provide recommendations without exposing their evidence base remain regulated medical devices regardless of whether they are labeled as 'clinical decision support.'"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4warn",
+      "_type": "warningBlock",
+      "message": "Many AI vendors market their tools as \"clinical decision support\" to imply they are not medical devices. This framing is legally meaningless unless all four Cures Act criteria are genuinely met. The most common failure point is Criterion 4: if the AI uses a black-box neural network whose outputs cannot be independently reviewed by the clinician, the tool does not qualify as Non-Device CDS and is a regulated medical device—regardless of how it is marketed. Health systems that deploy uncleared AI clinical tools under the assumption they are \"just CDS\" may be exposing themselves and their patients to significant risk.",
+      "title": "The Transparency Trap for AI-Powered CDS"
+    },
+    {
+      "_key": "s4cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Non-Device CDS (Not Regulated)",
+        "points": [
+          "Displays drug interaction alerts from peer-reviewed databases",
+          "Presents dosing calculators based on published protocols",
+          "Surfaces relevant clinical guidelines for a diagnosis",
+          "Shows a differential diagnosis list with linked evidence that clinicians can review",
+          "Provides a singular recommendation that is clinically unambiguous (2026 update)"
+        ]
+      },
+      "right": {
+        "label": "Regulated AI SaMD (Requires FDA Clearance)",
+        "points": [
+          "Analyzes retinal images to diagnose diabetic retinopathy",
+          "Interprets ECG waveforms to detect atrial fibrillation",
+          "Uses black-box model to risk-score sepsis without auditable basis",
+          "Reads CT scans to quantify pulmonary nodule malignancy risk",
+          "Autonomously recommends medication titration based on ICU sensor signals"
+        ]
+      },
+      "title": "Non-Device CDS vs. Regulated AI SaMD"
+    },
+    {
+      "_key": "s5h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Post-Market Surveillance and the Total Product Lifecycle Approach"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "FDA authorization is not the end of the regulatory story for an AI medical device—it is the beginning of a different chapter. The agency's Total Product Life Cycle (TPLC) approach holds that device safety and effectiveness must be demonstrated and maintained continuously, from initial design through the entire period of commercial use. For static hardware devices, post-market surveillance has historically meant adverse event reporting (MDR reports under 21 CFR Part 803) and, for certain Class II devices, post-market surveillance studies under 21 CFR Part 522. For AI SaMD, the TPLC approach carries additional weight because the thing being monitored—the algorithm—may behave differently in real-world clinical environments than it did in controlled validation studies."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The FDA's January 2025 draft guidance on 'Artificial Intelligence-Enabled Device Software Functions: Lifecycle Management and Marketing Submission Recommendations' (building on the December 2024 PCCP final guidance) specifically recommends that AI device submissions include a post-deployment monitoring plan describing how real-world performance will be tracked, how dataset drift will be detected, how demographic subgroup performance will be monitored, and at what thresholds a performance degradation will trigger corrective action. Manufacturers are expected to document their AI model versions, training data lineage, and algorithm update history in auditable form. This traceability requirement reflects FDA's recognition that an AI device that performed well in a 2022 validation study may underperform when deployed in a new patient population or when upstream data pipelines change."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The FDA's January 2021 AI/ML Action Plan—released by the Center for Devices and Radiological Health (CDRH)—laid the policy foundation for the TPLC approach. The Action Plan set out five commitments: issuing draft guidance on predetermined change control plans; promoting Good Machine Learning Practices (GMLP); enhancing transparency for patients and clinicians; fostering methodologies to assess and improve ML algorithms; and advancing real-world performance monitoring. The GMLP Guiding Principles, co-authored with Health Canada and the UK's MHRA in October 2021, identified ten practices—including multi-disciplinary team composition, clinical relevance of training data, and transparent reporting of model performance across demographic subgroups—that FDA now treats as baseline expectations. Manufacturers whose submissions do not reflect these practices face greater scrutiny and longer review timelines."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Real-world implementation of the TPLC approach remains a work in progress. A 2024 study analyzing the 168 ML-enabled devices authorized that year found that uptake of PCCPs and transparent demographic performance reporting remained limited, suggesting many manufacturers have not yet fully operationalized FDA's expectations. Health systems deploying AI tools also have post-market obligations of their own: they must report adverse events tied to AI-generated recommendations under the MDR reporting framework, and health-system-initiated customizations of AI tools (such as retraining on local data) can create their own regulatory obligations. Understanding where the device manufacturer's regulatory responsibility ends and the health system's begins is one of the least-understood—and most practically important—questions in healthcare AI governance today."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "FDA's five GMLP commitments: PCCP guidance, GMLP practices, transparency, algorithm assessment, real-world monitoring",
+          "label": "2021 Action Plan Pillars",
+          "value": "5"
+        },
+        {
+          "_key": "s2",
+          "context": "Co-authored by FDA, Health Canada, and UK MHRA in October 2021; baseline expectations for ML device development",
+          "label": "GMLP Guiding Principles",
+          "value": "10"
+        },
+        {
+          "_key": "s3",
+          "context": "FDA draft on AI-enabled device lifecycle management and marketing submission recommendations",
+          "label": "TPLC Draft Guidance Released",
+          "value": "Jan 2025"
+        },
+        {
+          "_key": "s4",
+          "context": "FDA finalized the Predetermined Change Control Plan guidance for AI-enabled device software functions",
+          "label": "PCCP Final Guidance",
+          "value": "Dec 2024"
+        }
+      ]
+    },
+    {
+      "_key": "s5warn",
+      "_type": "warningBlock",
+      "message": "Health systems sometimes assume that purchasing an FDA-cleared AI tool transfers all regulatory responsibility to the vendor. In practice, health systems that significantly modify a cleared AI tool—by retraining it on local data, changing its intended use, or integrating it into a novel clinical workflow—may be creating a new medical device subject to its own regulatory requirements. FDA has yet to issue definitive guidance on hospital-as-manufacturer scenarios for AI, making this one of the highest-risk gray areas in current healthcare AI deployment.",
+      "title": "Health-System Deployment Is Not a Regulatory Firewall"
+    },
+    {
+      "_key": "tw1",
+      "_type": "takeawayBlock",
+      "points": [
+        "SaMD is defined by the IMDRF as software with a medical purpose independent of any hardware device; FDA maps this onto the three-class U.S. device classification system (Class I/II/III).",
+        "The 21st Century Cures Act created the Non-Device CDS exclusion under Section 520(o)(1)(E): CDS software that meets all four criteria—no imaging/signal analysis, displays medical information, supports HCP recommendations, and enables independent review of the basis—is not a regulated medical device.",
+        "The 2026 CDS final guidance extended enforcement discretion to single-output CDS tools, but the critical Criterion 4 (independent review of the basis) remains the most common failure point for AI tools marketed as 'just CDS.'",
+        "510(k) clearance (substantial equivalence to a predicate) governs roughly 95% of AI device authorizations; De Novo applies when a novel low-to-moderate-risk AI has no valid predicate; PMA applies for Class III high-risk devices and has not yet been used for standalone AI SaMD.",
+        "The PCCP framework (December 2024 final guidance) allows manufacturers to pre-approve specific algorithm change types and their validation protocols so that post-market updates within the approved scope do not require new submissions.",
+        "FDA's TPLC approach requires post-market performance monitoring, dataset drift detection, demographic subgroup tracking, and auditable model version history throughout the device's commercial life.",
+        "The FDA's 2021 AI/ML Action Plan established five commitments—PCCP guidance, GMLP, transparency, algorithm assessment methodologies, and real-world monitoring—that now constitute baseline regulatory expectations for all AI SaMD developers.",
+        "Health systems deploying AI tools are not passive bystanders under FDA's framework: significant local modifications to cleared AI tools may create new regulatory obligations, and adverse events tied to AI recommendations must be reported under mandatory MDR requirements."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "This tool fails at least two of the four Non-Device CDS criteria under Section 520(o)(1)(E). Criterion 1 is violated because ECG waveforms are signals from a signal acquisition system, which the exclusion explicitly covers. Criterion 4 is also violated because the proprietary neural network does not enable the clinician to independently review the basis for the recommendation. The 2026 enforcement discretion for single-output tools does not rescue a tool that fails these foundational criteria. The tool is therefore a regulated medical device requiring FDA authorization before marketing.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Non-Device CDS, because it supports a clinician's decision rather than replacing it."
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": false,
+          "text": "Non-Device CDS under the 2026 enforcement discretion for single-output tools."
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": true,
+          "text": "A regulated medical device, because it processes a signal from a signal acquisition system and does not enable independent review of the basis for its recommendation."
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "A general wellness product exempt from FDA oversight because it does not diagnose a specific disease."
+        }
+      ],
+      "question": "A clinical AI tool analyzes raw 12-lead ECG waveforms using a proprietary neural network and outputs a single risk score for atrial fibrillation without showing the clinician the algorithm's logic or evidence base. Under the FDA's 2026 CDS Software Guidance, how should this tool be classified?"
+    },
+    {
+      "_key": "srch",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srchs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] FDA Clinical Decision Support Software Final Guidance (January 2026) — https://www.fda.gov/media/191560/download — Defines the four Non-Device CDS criteria under Section 520(o)(1)(E) and the 2026 enforcement discretion for single-output tools."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] FDA: Marketing Submission Recommendations for a Predetermined Change Control Plan for AI-Enabled Device Software Functions (December 2024) — https://www.mcdermottplus.com/insights/fda-issues-final-guidance-on-predetermined-change-control-plans-for-ai-enabled-devices/ — Describes PCCP three-component structure: Description of Modifications, Modification Protocol, and Impact Assessment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] FDA AI/ML Action Plan for SaMD (January 2021) — https://www.fda.gov/news-events/press-announcements/fda-releases-artificial-intelligencemachine-learning-action-plan — Sets five regulatory commitments including PCCP guidance, GMLP, transparency, algorithm assessment, and real-world monitoring."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Machine Learning-Enabled Medical Devices Authorized by the US FDA in 2024 — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12730494/ — Source for 2024 clearance statistics: 168 devices, 94.6% via 510(k), 5.4% De Novo, radiology at 74.4%."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] FDA Software as a Medical Device (SaMD) — https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd — FDA's official IMDRF SaMD definition, risk classification framework, and links to all SaMD-related guidance documents."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] IDx-DR De Novo Authorization (DEN180001) and Predicate Lineage — https://intuitionlabs.ai/articles/fda-samd-pathways-510k-de-novo-pma-ai — Documents IDx-DR as first autonomous AI diagnostic De Novo (2018) and its role as predicate for LumineticsCore (2021) and AEYE-DS (2022)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "aiml-fda-regulation"
+  },
+  "title": "FDA Regulation of AI/ML Medical Devices: The Regulatory Framework Every Healthcare AI Stakeholder Must Know"
+}
