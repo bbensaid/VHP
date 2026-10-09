@@ -6817,7 +6817,7 @@ D.3 APM Design Lab --- APM Architecture Designer (8 model types); Episode-Based 
 
 D.4 APM Shared Savings Calculator --- models shared savings/loss under any APM contract (benchmark PMPM, attributed member-months, actual TCOC, sharing rate, MSR, quality withhold, stop-loss). Pessimistic/base/optimistic scenarios with sensitivity analysis; Vermont data for 14 hospitals pre-loaded.
 
-D.5 Population Health Modeler --- Markov disease progression (5 models, 10-year cohorts); AHRQ Prevention Quality Indicators (13 PQI conditions); Intervention Impact Library (8 interventions, 5-year ROI); SIR epidemic model with vaccination scenarios.
+D.5 Population Health Modeler --- Markov disease progression (5 models, 10-year cohorts); AHRQ Prevention Quality Indicators (10 PQI conditions plus 4 composite measures, AHRQ v2025); Intervention Impact Library (8 interventions, 5-year ROI); SIR epidemic model with vaccination scenarios.
 
 D.6 Health Equity Studio (HEROI) --- HEROI composite across five dimensions: Access Equity (25%), Quality Equity (25%), Outcome Equity (25%), SDOH Burden (15%), Trust & Engagement (10%). Sub-tools: Racial/Ethnic Disparity Calculator; Geographic Access Gap Analyzer; SDOH Composite Scoring; Equity-Weighted ICER. Integrates with VHCURES and Blueprint data.
 
