@@ -59,11 +59,17 @@ export function TransparencyTab() {
   const [ptChecked, setPtChecked] = useState<Record<string, boolean>>({});
 
   // Site-neutral
-  const [selectedProc, setSelectedProc] = useState("echo");
+  const [selectedProc, setSelectedProc] = useState("45378");
   const [volume, setVolume] = useState(500);
   const [currentSetting, setCurrentSetting] = useState<
     "hopd" | "asc" | "office"
   >("hopd");
+  // Commercial price as % of Medicare. Default: Vermont outpatient relative
+  // price 311% (RAND Hospital Price Transparency Round 5, GMCB presentation,
+  // Aug 2024, slide 13). National outpatient facility average 279% (RAND
+  // Round 5.1, 2022 claims). Applying one multiple to every setting is a
+  // simplification: RAND also finds commercial ASC prices below HOPD prices.
+  const [commercialPct, setCommercialPct] = useState(311);
 
   // NSA
   const [nsaSpecialty, setNsaSpecialty] = useState("Emergency Medicine");
@@ -94,9 +100,20 @@ export function TransparencyTab() {
       asc: procData.ascRate,
       office: procData.officeRate,
     };
-    const currentRate = rateMap[currentSetting];
-    const neutralRate = procData.officeRate; // site-neutral = lowest rate
-    const commercialMultiplier = 1.5;
+    // A setting where the service is not payable falls back to HOPD.
+    const setting = rateMap[currentSetting] == null ? "hopd" : currentSetting;
+    const currentRate = rateMap[setting] ?? procData.hopdRate;
+    // Site-neutral target = the lowest-cost setting where Medicare pays for
+    // the service: office if payable there, otherwise ASC, otherwise HOPD.
+    const neutralSetting =
+      procData.officeRate != null
+        ? "Office"
+        : procData.ascRate != null
+          ? "ASC"
+          : "HOPD";
+    const neutralRate =
+      procData.officeRate ?? procData.ascRate ?? procData.hopdRate;
+    const commercialMultiplier = commercialPct / 100;
 
     const currentMedicareRevenue = currentRate * volume;
     const neutralMedicareRevenue = neutralRate * volume;
@@ -109,6 +126,8 @@ export function TransparencyTab() {
       currentCommercialRevenue - neutralCommercialRevenue;
 
     return {
+      setting,
+      neutralSetting,
       currentRate,
       neutralRate,
       currentMedicareRevenue,
@@ -119,7 +138,7 @@ export function TransparencyTab() {
       commercialReduction,
       totalReduction: revenueReduction + commercialReduction,
     };
-  }, [procData, volume, currentSetting]);
+  }, [procData, volume, currentSetting, commercialPct]);
 
   const nsa = useMemo(() => {
     const qpa = nsaAvgCharge * (qpaPct / 100);
@@ -247,7 +266,10 @@ export function TransparencyTab() {
                 </ul>
               )}
               <div className="mt-3 text-xs text-slate-400">
-                CMS penalty: up to $300/day for non-compliance ($109,500/year)
+                CMS civil monetary penalty (45 CFR 180.90): $300/day for
+                hospitals with 30 or fewer beds; $10 per bed per day above
+                that, capped at $5,500/day (about $2.0M/year). Base amounts,
+                inflation-adjusted annually under 45 CFR part 102.
               </div>
             </div>
           </div>
@@ -265,11 +287,11 @@ export function TransparencyTab() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div>
             <SelectRow
-              label="Procedure"
+              label="CMS shoppable service (20 of 70)"
               value={selectedProc}
               options={PROCEDURES.map((p) => ({
                 value: p.id,
-                label: p.label,
+                label: `${p.code} · ${p.label} (${p.category})`,
               }))}
               onChange={setSelectedProc}
             />
@@ -282,6 +304,16 @@ export function TransparencyTab() {
               onChange={setVolume}
               format={(v) => v.toLocaleString()}
             />
+            <SliderRow
+              label="Commercial price (% of Medicare)"
+              value={commercialPct}
+              min={100}
+              max={450}
+              step={1}
+              onChange={setCommercialPct}
+              format={(v) => `${v}%`}
+              tooltip="Default 311% = Vermont outpatient relative price, RAND Hospital Price Transparency Round 5 (GMCB, Aug 2024). National outpatient facility average: 279% (RAND Round 5.1, 2022 claims)."
+            />
             <div className="mb-4">
               <label className="block ty-body text-slate-600 mb-2">
                 Current Setting
@@ -293,22 +325,30 @@ export function TransparencyTab() {
                     { id: "asc", label: "ASC" },
                     { id: "office", label: "Office" },
                   ] as const
-                ).map((s) => (
-                  <button
-                    key={s.id}
-                    onClick={() => setCurrentSetting(s.id)}
-                    className={`py-2 rounded-lg text-sm font-semibold border transition-colors ${currentSetting === s.id ? "bg-blue-600 text-white border-blue-600" : "bg-white text-slate-600 border-slate-200 hover:border-blue-400"}`}
-                  >
-                    {s.label}
-                  </button>
-                ))}
+                ).map((s) => {
+                  const available =
+                    s.id === "hopd" ||
+                    (s.id === "asc" ? procData.ascRate : procData.officeRate) !=
+                      null;
+                  return (
+                    <button
+                      key={s.id}
+                      onClick={() => setCurrentSetting(s.id)}
+                      disabled={!available}
+                      title={available ? undefined : "Not payable by Medicare in this setting"}
+                      className={`py-2 rounded-lg text-sm font-semibold border transition-colors disabled:opacity-40 disabled:cursor-not-allowed ${siteNeutral.setting === s.id ? "bg-blue-600 text-white border-blue-600" : "bg-white text-slate-600 border-slate-200 hover:border-blue-400"}`}
+                    >
+                      {s.label}
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
             {/* Rate table */}
             <div className="bg-slate-50 rounded-lg p-3">
               <p className="text-xs font-semibold text-slate-500 uppercase mb-2">
-                Medicare Rates — {procData.label}
+                Medicare CY2026 — {procData.code} {procData.label}
               </p>
               {[
                 {
@@ -325,19 +365,29 @@ export function TransparencyTab() {
               ].map((row) => (
                 <div
                   key={row.key}
-                  className={`flex justify-between items-center py-1.5 border-b border-slate-200 last:border-0 text-sm ${currentSetting === row.key ? "font-bold text-blue-700" : "text-slate-600"}`}
+                  className={`flex justify-between items-center py-1.5 border-b border-slate-200 last:border-0 text-sm ${siteNeutral.setting === row.key ? "font-bold text-blue-700" : "text-slate-600"}`}
                 >
                   <span>{row.label}</span>
                   <div className="flex items-center gap-2">
-                    <span>${row.rate.toLocaleString()}</span>
-                    {row.key === "office" && (
-                      <span className="text-xs bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded font-semibold">
-                        Site-Neutral
-                      </span>
-                    )}
+                    <span>
+                      {row.rate == null
+                        ? "not payable"
+                        : `$${row.rate.toLocaleString()}`}
+                    </span>
+                    {row.rate != null &&
+                      row.rate === siteNeutral.neutralRate &&
+                      (row.key === "office" ||
+                        (row.key === "asc" && procData.officeRate == null)) && (
+                        <span className="text-xs bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded font-semibold">
+                          Site-Neutral
+                        </span>
+                      )}
                   </div>
                 </div>
               ))}
+              <p className="mt-2 text-[11px] leading-snug text-slate-500">
+                {procData.basis}.
+              </p>
             </div>
           </div>
 
@@ -360,7 +410,7 @@ export function TransparencyTab() {
                 icon={<TrendingDown size={18} />}
               />
               <StatCard
-                label="Commercial Impact (150% Medicare)"
+                label={`Commercial Impact (${commercialPct}% of Medicare)`}
                 value={fmtM(siteNeutral.commercialReduction)}
                 color={siteNeutral.commercialReduction > 0 ? "amber" : "green"}
                 icon={<DollarSign size={18} />}
@@ -393,10 +443,22 @@ export function TransparencyTab() {
                 <span className="font-semibold text-emerald-700">
                   Patient/CMS position:
                 </span>{" "}
-                Patients pay higher cost-sharing at HOPDs. Site-neutral saves
-                Medicare and patients money without evidence of quality
-                difference. MedPAC estimates $10B+ annual savings from full
-                site-neutrality.
+                Patients pay higher cost-sharing at HOPDs. MedPAC (June 2023,
+                ch. 8) estimated that aligning rates across HOPDs, ASCs and
+                offices for 66 APCs would have cut 2021 Medicare OPPS outlays
+                by $6.0B and beneficiary cost-sharing by $1.5B ($7.5B in all)
+                if retained as savings rather than redistributed
+                budget-neutrally.
+              </p>
+              <p className="mt-2 text-slate-500">
+                Rates: Medicare national unadjusted allowed amounts, facility +
+                professional, from the CY2026 OPPS Addendum B (Oct 2026), ASC
+                Addendum AA (Oct 2026), PFS RVU file (Oct 2026, CF $33.4009)
+                and CLFS (Q4 2026). Services are from CMS&apos;s list of 70
+                shoppable services (45 CFR 180.60). Site-neutral target ={" "}
+                {siteNeutral.neutralSetting.toLowerCase()} rate. Clinic visits
+                use the on-campus G0463 rate; excepted off-campus departments
+                already receive 40% of it.
               </p>
             </div>
           </div>
