@@ -1,0 +1,62 @@
+[
+ {
+  "id": "COH-1-01",
+  "chapter": "Introduction",
+  "fact": 1,
+  "op": "raw",
+  "passage": "That outcome is the strongest available evidence that \"mandatory\" in this book's framework describes a regime that has been tested against its most resourced potential opponent and held.",
+  "problem": "'Tested ... and held' reads as a judicial test; UVMMC dismissed its appeals in a settlement, no court ruled (App G.4.2 says enforcement is 'not judicially tested').",
+  "find": "a regime that has been tested against its most resourced potential opponent and held.",
+  "replace": "a regime that has been challenged by its most resourced potential opponent and held — though, because the challenge ended in settlement, no court has yet ruled on how far GMCB’s authority reaches."
+ },
+ {
+  "id": "COH-1-02",
+  "chapter": "Conclusion",
+  "fact": 1,
+  "op": "raw",
+  "passage": "...demonstrated that the GMCB has the analytical capability, the legal authority, and the institutional will to enforce budget orders.",
+  "problem": "Claims enforcement 'demonstrated ... the legal authority'; the only legal challenge was settled without a ruling, so the legal reach is undecided (App G.4.2).",
+  "find": "the analytical capability, the legal authority, and the institutional will to enforce budget orders",
+  "replace": "the analytical capability, the statutory tools, and the institutional will to enforce budget orders — though, because UVMMC settled rather than litigating to judgment, how far that authority reaches has not been decided by a court"
+ },
+ {
+  "id": "COH-2-01",
+  "chapter": "Appendix G (G.3.1)",
+  "fact": 2,
+  "op": "raw",
+  "passage": "Three sources of transition-period support were expected to exist in parallel ... though only two now actually apply.",
+  "problem": "Of the three listed sources, the EAST Fund is gone (AHEAD withdrawal) and the Medicaid HGB was halted by CMS (payments directed to stop) - the same paragraph says both - so only RHT applies; the GAP box below already calls RHT 'the only funding source available'.",
+  "find": "with different eligibility rules — though only two now actually apply.",
+  "replace": "with different eligibility rules — though only one now actually applies."
+ },
+ {
+  "id": "COH-2-02",
+  "chapter": "Appendix G (G.3.1)",
+  "fact": 2,
+  "op": "raw",
+  "passage": "...ahead of the commercial RBP mandate --- meaning the Medicaid payer is, perversely, the first to move to a budget-based model...",
+  "problem": "Present-tense 'is the first to move' presumes the Medicaid HGB is operating; the parenthesis just before says CMS directed the payments to stop.",
+  "find": "ahead of the commercial RBP mandate — meaning the Medicaid payer is, perversely, the first to move to a budget-based model, while commercial payers",
+  "replace": "ahead of the commercial RBP mandate — meaning the Medicaid payer was, perversely, the first to attempt a budget-based model, while commercial payers"
+ },
+ {
+  "id": "COH-2-03",
+  "chapter": "Introduction",
+  "fact": 2,
+  "op": "raw",
+  "passage": "...the specific financial bridge ... --- the combination of Rural Health Transformation Program funds and the sequencing of Medicaid versus commercial global budgets --- which together determine whether a given hospital remains solvent in fiscal years 2027 and 2028",
+  "problem": "Treats the Medicaid-before-commercial budget sequence as part of the live transition bridge; CMS halted the Medicaid HGB in July 2026 and App G.3 now says RHT is the only transition funding.",
+  "find": "— the combination of Rural Health Transformation Program funds and the sequencing of Medicaid versus commercial global budgets — which together determine whether",
+  "replace": "— chiefly Rural Health Transformation Program funds, now that Vermont has left AHEAD and CMS has halted the Medicaid hospital global budget — which determines whether"
+ },
+ {
+  "id": "COH-2-04",
+  "chapter": "Ch11 (Fig: AHS/state actor roles)",
+  "fact": 2,
+  "op": "raw",
+  "passage": "DVHA: Medicaid authority; manages Medicaid global budget; oversees Blueprint for Health and OneCare wind-down",
+  "problem": "Present-tense 'manages Medicaid global budget' describes an operating program; CMS directed the payments to stop in July 2026.",
+  "find": "Medicaid authority; manages Medicaid global budget; oversees",
+  "replace": "Medicaid authority; manages the Medicaid global budget (halted by CMS, July 2026); oversees"
+ }
+]
