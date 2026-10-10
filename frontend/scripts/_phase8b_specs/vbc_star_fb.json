@@ -1,0 +1,42 @@
+{
+ "pairs": [
+  {
+   "old": "\n\nAnalyses by MedPAC, CMS, and academic researchers find that 20–30% of the variance in star ratings is explained by the socioeconomic composition of a plan's enrollment — not by actual quality of care delivered.",
+   "new": "\n\nCMS's own research found an average within-contract performance gap for LIS/dual-eligible and disabled enrollees, which is why it added the Categorical Adjustment Index to the ratings in 2017 as an interim fix.",
+   "claim": "fallback: 'MedPAC, CMS, and academic researchers find that 20–30% of the variance in star ratings is explained by socioeconomic composition'",
+   "verdict": "UNVERIFIABLE",
+   "src": "no MedPAC/CMS source found for a 20-30% variance figure; CMS CAI supplement: CAI introduced 2017 for average within-contract LIS/DE/disability disparity",
+   "note": ""
+  },
+  {
+   "old": "Starting with 2027 Star Ratings, CMS is implementing the Health Equity Index (HEI) — a reward measure that gives plans additional credit for achieving better quality outcomes for their LIS/dual eligible and/or disability members. Plans with smaller quality gaps between vulnerable and non-vulnerable members earn HEI credit. This inverts the old incentive: rather than penalizing plans for serving difficult populations, HEI rewards plans that actually close gaps within those populations.",
+   "new": "CMS finalized a Health Equity Index (HEI) in 2023 for the 2027 Star Ratings — a reward that would have given plans extra credit for high performance among their LIS/dual-eligible and disabled members, in place of the existing reward factor. In its CY2027 final rule (April 2026), CMS removed the HEI (by then renamed Excellent Health Outcomes for All) before it took effect and kept the historical reward factor, leaving the Categorical Adjustment Index as the main equity adjustment.",
+   "claim": "fallback callout: 'Starting with 2027 Star Ratings, CMS is implementing the HEI'; 'plans with smaller quality gaps earn HEI credit' (HEI rewarded SRF-population performance, and was removed April 2026)",
+   "verdict": "FABRICATED",
+   "src": "CY2027 MA/Part D final rule (Apr 2, 2026) removed the HEI / Excellent Health Outcomes for All reward before it took effect and kept the historical reward factor",
+   "note": ""
+  },
+  {
+   "old": "The Health Equity Index: CMS's response",
+   "new": "The Health Equity Index: proposed fix, withdrawn",
+   "claim": "fallback callout heading presents HEI as CMS's live response",
+   "verdict": "FABRICATED",
+   "src": "CY2027 MA/Part D final rule (Apr 2, 2026) removed the HEI / Excellent Health Outcomes for All reward before it took effect and kept the historical reward factor",
+   "note": ""
+  }
+ ],
+ "supa": [
+  {
+   "table": "lessons",
+   "col": "content_blocks",
+   "ids": [
+    "ce76b8b4-f526-4d78-a682-a0764e54b325"
+   ]
+  }
+ ],
+ "files": [
+  "frontend/content/course_value_based_care.json",
+  "frontend/content/courses_tier1.json",
+  "frontend/content/expand_vbc.json"
+ ]
+}

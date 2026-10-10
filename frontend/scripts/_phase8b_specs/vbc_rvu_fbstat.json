@@ -1,0 +1,59 @@
+{
+ "lessonId": "f91e414f-b5c2-4e1d-a280-f26b11bbf7e9",
+ "index": 2,
+ "expectOld": {
+  "type": "key_stat",
+  "stats": [
+   {
+    "label": "Annual income gap between primary care and specialist physicians",
+    "value": "$100K+",
+    "source": "AAMC"
+   },
+   {
+    "label": "Medicare conversion factor per RVU (2024)",
+    "value": "~$33",
+    "source": "CMS"
+   },
+   {
+    "label": "Of US health spending goes to primary care",
+    "value": "6%",
+    "source": "RWJF"
+   },
+   {
+    "label": "Of medical school graduates choosing primary care specialties",
+    "value": "35%",
+    "source": "AAMC"
+   }
+  ]
+ },
+ "newBlock": {
+  "type": "key_stat",
+  "stats": [
+   {
+    "label": "Average pay gap between specialists ($398K) and primary care physicians ($281K), 2024",
+    "value": "~$117K",
+    "source": "Medscape 2025 Physician Compensation Report"
+   },
+   {
+    "label": "Medicare conversion factor per RVU (2024)",
+    "value": "~$33",
+    "source": "CMS"
+   },
+   {
+    "label": "Of US health spending went to primary care (2022)",
+    "value": "<5%",
+    "source": "Milbank Memorial Fund, 2024 Primary Care Scorecard"
+   }
+  ]
+ },
+ "anchor": "Annual income gap between primary care and specialist physicians",
+ "files": [
+  "frontend/content/course_value_based_care.json",
+  "frontend/content/courses_tier1.json",
+  "frontend/content/expand_vbc.json"
+ ],
+ "claim": "fallback key_stat: $100K+ gap attributed to AAMC; 6% of spending to primary care attributed to RWJF; 35% of graduates choosing primary care (AAMC)",
+ "verdict": "MISATTRIBUTED",
+ "src": "Medscape 2025 report (WebMD press 2025-04-15): PCP $281K, specialists $398K; Milbank 2024 Scorecard: primary care <5% of spending in 2022; 35% graduate figure not found in AAMC sources (dropped)",
+ "note": "35% stat UNVERIFIABLE, dropped."
+}

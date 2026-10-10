@@ -1,0 +1,42 @@
+{
+ "pairs": [
+  {
+   "old": "Operates the eCQM (electronic clinical quality measure) program, the Hospital Compare reporting system, and ties measures to payment in VBC programs.",
+   "new": "Operates the eCQM (electronic clinical quality measure) program and the Care Compare public reporting site (which replaced Hospital Compare in 2020), and ties measures to payment in VBC programs.",
+   "claim": "fallback: CMS operates 'the Hospital Compare reporting system' (retired 2020)",
+   "verdict": "MISATTRIBUTED",
+   "src": "CMS consolidated Hospital Compare and its other Compare tools into Care Compare in 2020",
+   "note": ""
+  },
+  {
+   "old": "National Quality Forum. Endorses measures through a consensus process — NQF endorsement is required for many federal quality programs.",
+   "new": "National Quality Forum. Ran the consensus-based endorsement process federal programs relied on for two decades; since 2023 CMS's consensus-based entity contract has been held by Battelle (Partnership for Quality Measurement).",
+   "claim": "fallback: NQF endorses measures and 'NQF endorsement is required for many federal quality programs' (stale since 2023)",
+   "verdict": "MISATTRIBUTED",
+   "src": "CMS CBE contract awarded to Battelle 2023; endorsement via Partnership for Quality Measurement (matches lesson body hedis-p9)",
+   "note": ""
+  },
+  {
+   "old": "Physicians now spend an estimated 15+ hours per week on documentation and reporting requirements. Studies show that every patient visit generates 2+ hours of EHR time.",
+   "new": "Physicians report spending about 15.5 hours a week on paperwork and administration (Medscape, 2023). A 2016 time-and-motion study (Sinsky et al., Annals of Internal Medicine) found that for every hour of direct clinical face time, physicians spent nearly two more hours on EHR and desk work.",
+   "claim": "fallback callout: '15+ hours per week'; 'every patient visit generates 2+ hours of EHR time'",
+   "verdict": "MISATTRIBUTED",
+   "src": "Medscape Physician Compensation Report 2023 (15.5 h/week paperwork & administration); Sinsky et al., Ann Intern Med 2016, doi 10.7326/M16-0961 (nearly 2 h EHR/desk work per 1 h face time)",
+   "note": ""
+  }
+ ],
+ "supa": [
+  {
+   "table": "lessons",
+   "col": "content_blocks",
+   "ids": [
+    "3bd04c71-679b-452b-afee-0e7d656931b2"
+   ]
+  }
+ ],
+ "files": [
+  "frontend/content/course_value_based_care.json",
+  "frontend/content/courses_tier1.json",
+  "frontend/content/expand_vbc.json"
+ ]
+}

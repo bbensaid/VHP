@@ -191,36 +191,31 @@
             {
               "type": "text",
               "heading": "One number drives most of physician pay",
-              "body": "Medicare pays physicians based on the Resource-Based Relative Value Scale (RBRVS). Every covered service has a Relative Value Unit (RVU) value — a number representing the relative resource intensity of that service. Multiply the RVU by the national conversion factor (~$33 in 2024) and you get the Medicare payment.\n\nA 99213 (brief office visit) is worth about 1.3 RVUs → ~$43. A 99214 (moderate office visit) is 1.92 RVUs → ~$63. A knee arthroscopy is 10+ RVUs → $340+. A primary care physician seeing 20 patients per day at 1–2 RVUs each earns less than a surgeon doing three procedures."
+              "body": "Medicare pays physicians based on the Resource-Based Relative Value Scale (RBRVS). Every covered service has a Relative Value Unit (RVU) value — a number representing the relative resource intensity of that service. Multiply the RVU by the national conversion factor (~$33 in 2024) and you get the Medicare payment.\n\nA 99213 office visit carries 1.30 work RVUs and a 99214 carries 1.92 (2021 values); the payment uses total RVUs (work plus practice expense plus malpractice), so the work RVU alone understates it. The bias shows up per hour: Sinsky and Dugdale (JAMA Internal Medicine, 2013) found Medicare paid 368% (screening colonoscopy) and 486% (cataract extraction) of the hourly revenue for the same physician time spent on evaluation and management."
             },
             {
               "type": "callout",
               "variant": "warning",
               "heading": "The RUC: specialty-dominated valuation",
-              "body": "RVU values are recommended by the AMA/Specialty Society Relative Value Scale Update Committee (RUC) — a 29-member body historically dominated by specialists. Primary care has consistently argued the RUC undervalues cognitive work (thinking, coordinating, managing complexity) and overvalues procedural skills. MedPAC has repeatedly found that primary care RVUs are too low, contributing to the primary care–specialty income gap of more than $100,000 annually."
+              "body": "RVU values are recommended by the AMA/Specialty Society Relative Value Scale Update Committee (RUC) — a 32-member body historically dominated by specialists. Primary care has consistently argued the RUC undervalues cognitive work (thinking, coordinating, managing complexity) and overvalues procedural skills. MedPAC has repeatedly found that primary care RVUs are too low, contributing to the primary care–specialty income gap of more than $100,000 annually."
             },
             {
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "$100K+",
-                  "label": "Annual income gap between primary care and specialist physicians",
-                  "source": "AAMC"
+                  "label": "Average pay gap between specialists ($398K) and primary care physicians ($281K), 2024",
+                  "value": "~$117K",
+                  "source": "Medscape 2025 Physician Compensation Report"
                 },
                 {
-                  "value": "~$33",
                   "label": "Medicare conversion factor per RVU (2024)",
+                  "value": "~$33",
                   "source": "CMS"
                 },
                 {
-                  "value": "6%",
-                  "label": "Of US health spending goes to primary care",
-                  "source": "RWJF"
-                },
-                {
-                  "value": "35%",
-                  "label": "Of medical school graduates choosing primary care specialties",
-                  "source": "AAMC"
+                  "label": "Of US health spending went to primary care (2022)",
+                  "value": "<5%",
+                  "source": "Milbank Memorial Fund, 2024 Primary Care Scorecard"
                 }
               ]
             }
@@ -1320,13 +1315,13 @@
             {
               "type": "text",
               "heading": "Applying episode payment to cancer",
-              "body": "Cancer care is among the most expensive areas of US healthcare — and among the most difficult to apply episode-based payment models to. Treatment courses vary enormously, clinical pathways are rapidly evolving, and drug costs have been exploding.\n\nThe Oncology Care Model (OCM, 2016–2022) covered 6-month episodes anchored by chemotherapy initiation. Practices received a $160/month per-beneficiary-per-month payment for care management, plus shared savings or losses against a benchmark. 187 practices participated at peak."
+              "body": "Cancer care is among the most expensive areas of US healthcare — and among the most difficult to apply episode-based payment models to. Treatment courses vary enormously, clinical pathways are rapidly evolving, and drug costs have been exploding.\n\nThe Oncology Care Model (OCM, 2016–2022) covered 6-month episodes anchored by chemotherapy initiation. Practices received a $160/month per-beneficiary-per-month payment for care management, plus performance-based payments (and, for practices in two-sided risk, repayments) against a benchmark. 202 practices took part over the model's life; 122 remained at the end."
             },
             {
               "type": "callout",
               "variant": "info",
-              "heading": "OCM results: minimal savings, quality improvement",
-              "body": "The final OCM evaluation found minimal net savings to Medicare — about 0.2% of episode costs in the best-performing cohort. However, quality improvements were meaningful: participating practices showed higher hospice use, fewer ED visits, and better symptom documentation. The successor Enhancing Oncology Model (EOM, 2023–) focuses on a smaller set of high-cost cancers with a modified payment approach."
+              "heading": "OCM results: gross savings, net losses",
+              "body": "The final OCM evaluation found that total episode payments rose 2.1% less in OCM than in comparison episodes, but monthly and performance-based payments to practices outweighed those savings, leaving Medicare an estimated $639 million net loss. Practice-reported screening measures improved, but OCM had no measurable impact on ED visits, hospital stays, or hospice use relative to comparison practices. The successor Enhancing Oncology Model (EOM, 2023–) focuses on a smaller set of high-cost cancers with a modified payment approach."
             },
             {
               "type": "concepts_grid",
@@ -1350,7 +1345,7 @@
                 {
                   "icon": "ti-pill",
                   "title": "Drug costs",
-                  "body": "Cancer drug prices have risen 10–15% annually. Episode benchmarks can be overwhelmed by new drug approvals mid-performance period."
+                  "body": "Cancer drug prices keep rising. Episode benchmarks can be overwhelmed by new drug approvals mid-performance period."
                 }
               ]
             }
@@ -1365,7 +1360,7 @@
                 "type": "single_choice",
                 "question": "What was the main finding from the CMS Oncology Care Model final evaluation?",
                 "points": 1,
-                "explanation": "The OCM showed minimal net savings to Medicare (about 0.2% of episode costs) but meaningful quality improvements — higher hospice use, fewer ED visits.",
+                "explanation": "OCM reduced total episode payments by 2.1% relative to comparison episodes, but monthly and performance-based payments to practices exceeded those savings, for an estimated $639 million net loss to Medicare; it had no measurable impact on ED visits, hospital stays, or hospice use.",
                 "options": [
                   {
                     "id": "opt_ocm1a",
@@ -1374,7 +1369,7 @@
                   },
                   {
                     "id": "opt_ocm1b",
-                    "text": "Minimal net savings but meaningful quality improvements including higher hospice use",
+                    "text": "Modest gross savings, but net losses to Medicare after payments to practices, with little change in quality outcomes",
                     "isCorrect": true
                   },
                   {
@@ -1469,12 +1464,12 @@
                 {
                   "icon": "ti-building",
                   "title": "CMS",
-                  "body": "Operates the eCQM (electronic clinical quality measure) program, the Hospital Compare reporting system, and ties measures to payment in VBC programs."
+                  "body": "Operates the eCQM (electronic clinical quality measure) program and the Care Compare public reporting site (which replaced Hospital Compare in 2020), and ties measures to payment in VBC programs."
                 },
                 {
                   "icon": "ti-star",
                   "title": "NQF",
-                  "body": "National Quality Forum. Endorses measures through a consensus process — NQF endorsement is required for many federal quality programs."
+                  "body": "National Quality Forum. Ran the consensus-based endorsement process federal programs relied on for two decades; since 2023 CMS's consensus-based entity contract has been held by Battelle (Partnership for Quality Measurement)."
                 },
                 {
                   "icon": "ti-heart-rate-monitor",
@@ -1520,7 +1515,7 @@
               "type": "callout",
               "variant": "warning",
               "heading": "Measure burden: the 15-minute visit problem",
-              "body": "Physicians now spend an estimated 15+ hours per week on documentation and reporting requirements. Studies show that every patient visit generates 2+ hours of EHR time. CMS has acknowledged the problem and has been actively sunsetting low-value measures, aligning measure sets across programs, and investing in digital quality measure infrastructure to reduce manual reporting burden."
+              "body": "Physicians report spending about 15.5 hours a week on paperwork and administration (Medscape, 2023). A 2016 time-and-motion study (Sinsky et al., Annals of Internal Medicine) found that for every hour of direct clinical face time, physicians spent nearly two more hours on EHR and desk work. CMS has acknowledged the problem and has been actively sunsetting low-value measures, aligning measure sets across programs, and investing in digital quality measure infrastructure to reduce manual reporting burden."
             }
           ],
           "quiz": {
@@ -1624,7 +1619,7 @@
               "type": "callout",
               "variant": "info",
               "heading": "CMS's move toward PROs",
-              "body": "CMS has begun incorporating PROs into several programs: joint replacement bundles require functional outcome reporting, MIPS has PRO-based quality measures, and the ACO PC Flex model incorporates patient experience measures. The challenge: collecting PROs at scale requires patient portal infrastructure, engagement, and support for patients with limited digital access."
+              "body": "CMS has begun incorporating PROs into several programs: the CJR joint replacement model rewarded hospitals for submitting HOOS JR and KOOS JR functional outcome data, the Hospital IQR Program adopted a hip and knee replacement PRO performance measure, and MIPS includes PRO-based quality measures. The challenge: collecting PROs at scale requires patient portal infrastructure, engagement, and support for patients with limited digital access."
             }
           ],
           "quiz": {
@@ -1850,7 +1845,7 @@
             {
               "type": "text",
               "heading": "HCC risk scores: how they're built",
-              "body": "CMS uses a Hierarchical Condition Category (HCC) model to calculate each Medicare beneficiary's risk score (Risk Adjustment Factor, or RAF). The model works like this:\n\n1. Claims are submitted by providers with ICD-10 diagnosis codes\n2. Diagnoses map to one of 86 HCC categories (e.g., HCC 19 = diabetes without complications, HCC 18 = diabetes with chronic complications)\n3. Each HCC has a coefficient representing its contribution to predicted spending\n4. The sum of all a patient's HCC coefficients plus demographic factors = their RAF score\n5. RAF 1.0 = average cost; RAF 2.0 = twice average cost\n\nOrganizations in risk-based contracts are paid based on their population's average RAF — higher RAF populations receive higher per-member-per-month payments."
+              "body": "CMS uses a Hierarchical Condition Category (HCC) model to calculate each Medicare beneficiary's risk score (Risk Adjustment Factor, or RAF). The model works like this:\n\n1. Claims are submitted by providers with ICD-10 diagnosis codes\n2. Diagnoses map to one of 115 payment HCC categories in the current V28 model (the V24 model it replaced had 86; there, HCC 19 = diabetes without complications, HCC 18 = diabetes with chronic complications)\n3. Each HCC has a coefficient representing its contribution to predicted spending\n4. The sum of all a patient's HCC coefficients plus demographic factors = their RAF score\n5. RAF 1.0 = average cost; RAF 2.0 = twice average cost\n\nOrganizations in risk-based contracts are paid based on their population's average RAF — higher RAF populations receive higher per-member-per-month payments."
             },
             {
               "type": "callout",
@@ -1862,24 +1857,24 @@
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "$26B+",
-                  "label": "Estimated Medicare Advantage overpayments due to risk score inflation (10 years)",
-                  "source": "MedPAC"
+                  "label": "Est. added MA payments from higher coding intensity (2026)",
+                  "value": "~$22B",
+                  "source": "MedPAC, Feb 2026"
                 },
                 {
-                  "value": "86",
-                  "label": "HCC categories in the CMS-HCC model",
+                  "label": "Payment HCC categories in the CMS-HCC V28 model (86 in V24)",
+                  "value": "115",
                   "source": "CMS"
                 },
                 {
-                  "value": "1.0",
                   "label": "RAF score = average predicted cost",
+                  "value": "1.0",
                   "source": "CMS"
                 },
                 {
-                  "value": "$1,000+",
-                  "label": "Annual revenue impact per member per 0.1 RAF score change",
-                  "source": "Industry estimate"
+                  "label": "MA payments for 2023 from diagnoses reported only on health risk assessments",
+                  "value": "$7.5B",
+                  "source": "HHS OIG, Oct 2024"
                 }
               ]
             }
@@ -2204,13 +2199,13 @@
             {
               "type": "text",
               "heading": "Stars and the equity penalty",
-              "body": "Research consistently shows that Medicare Advantage plans serving higher proportions of Low-Income Subsidy (LIS) beneficiaries and dual eligibles score lower on Star Ratings — even after controlling for plan characteristics. This creates a troubling dynamic: plans that choose to serve the most vulnerable populations are financially penalized through lower star ratings and loss of the 5% quality bonus.\n\nAnalyses by MedPAC, CMS, and academic researchers find that 20–30% of the variance in star ratings is explained by the socioeconomic composition of a plan's enrollment — not by actual quality of care delivered."
+              "body": "Research consistently shows that Medicare Advantage plans serving higher proportions of Low-Income Subsidy (LIS) beneficiaries and dual eligibles score lower on Star Ratings — even after controlling for plan characteristics. This creates a troubling dynamic: plans that choose to serve the most vulnerable populations are financially penalized through lower star ratings and loss of the 5% quality bonus.\n\nCMS's own research found an average within-contract performance gap for LIS/dual-eligible and disabled enrollees, which is why it added the Categorical Adjustment Index to the ratings in 2017 as an interim fix."
             },
             {
               "type": "callout",
               "variant": "info",
-              "heading": "The Health Equity Index: CMS's response",
-              "body": "Starting with 2027 Star Ratings, CMS is implementing the Health Equity Index (HEI) — a reward measure that gives plans additional credit for achieving better quality outcomes for their LIS/dual eligible and/or disability members. Plans with smaller quality gaps between vulnerable and non-vulnerable members earn HEI credit. This inverts the old incentive: rather than penalizing plans for serving difficult populations, HEI rewards plans that actually close gaps within those populations."
+              "heading": "The Health Equity Index: proposed fix, withdrawn",
+              "body": "CMS finalized a Health Equity Index (HEI) in 2023 for the 2027 Star Ratings — a reward that would have given plans extra credit for high performance among their LIS/dual-eligible and disabled members, in place of the existing reward factor. In its CY2027 final rule (April 2026), CMS removed the HEI (by then renamed Excellent Health Outcomes for All) before it took effect and kept the historical reward factor, leaving the Categorical Adjustment Index as the main equity adjustment."
             }
           ],
           "quiz": {
@@ -2561,31 +2556,31 @@
             },
             {
               "type": "text",
-              "heading": "Maryland: the only all-payer global budget state",
-              "body": "Maryland has had a unique hospital payment system since 1977. The Health Services Cost Review Commission (HSCRC) sets hospital rates for all payers — Medicare, Medicaid, and commercial — under a federal waiver. In 2014, Maryland moved its hospitals to all-payer global budgets under the Maryland All-Payer Model, which ran from 2014 through 2018; in 2019 it entered the Total Cost of Care Model, adding a population-level global budget for Medicare spending across all care settings.\n\nResults after 5 years: Maryland hospitals generated $1.2B in Medicare savings, achieved lower per-capita cost growth than national trends, and showed quality improvements — particularly in preventable hospitalizations and readmissions. The federal AHEAD Model, which builds partly on Maryland's approach, now runs in Maryland, Connecticut, Hawaii, Rhode Island and downstate New York; Vermont signed on in January 2025 but withdrew in July 2026, and its hospital global budgets now proceed under state law (Act 68 of 2025)."
+              "heading": "Maryland: the statewide all-payer global budget pioneer",
+              "body": "Maryland has had a unique hospital payment system since 1977. The Health Services Cost Review Commission (HSCRC) sets hospital rates for all payers — Medicare, Medicaid, and commercial — under a federal waiver. In 2014, Maryland moved its hospitals to all-payer global budgets under the Maryland All-Payer Model, which ran from 2014 through 2018; in 2019 it entered the Total Cost of Care Model, adding a population-level global budget for Medicare spending across all care settings.\n\nResults after 5 years: the independent evaluation (RTI International, 2019) found $975 million in Medicare savings from 2014 to 2018 — total Medicare spending grew 2.8 percent more slowly than in a comparison group, with $796 million of the savings from hospital spending. The federal AHEAD Model, which builds partly on Maryland's approach, began performance in Maryland in 2026, with Connecticut, Hawaii, Rhode Island and downstate New York slated to follow; Vermont signed on in January 2025 but withdrew in July 2026, and its hospital global budgets now proceed under state law (Act 68 of 2025)."
             },
             {
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "$1.2B",
-                  "label": "Medicare savings generated by Maryland hospitals 2014–2019",
-                  "source": "CMS"
+                  "label": "Medicare savings under Maryland's All-Payer Model, 2014–2018",
+                  "value": "$975M",
+                  "source": "RTI International evaluation for CMS (2019)"
                 },
                 {
-                  "value": "1977",
                   "label": "Year Maryland established its all-payer hospital rate system",
+                  "value": "1977",
                   "source": "HSCRC"
                 },
                 {
-                  "value": "2025",
                   "label": "Year Vermont signed the AHEAD State Agreement (it withdrew in July 2026)",
+                  "value": "2025",
                   "source": "Vermont GMCB / AHS"
                 },
                 {
-                  "value": "15%",
-                  "label": "Reduction in preventable hospitalizations in Maryland model areas",
-                  "source": "NEJM"
+                  "label": "Reduction in preventable admissions, Maryland Total Cost of Care Model, 2019–2022",
+                  "value": "16.8%",
+                  "source": "Mathematica evaluation for CMS"
                 }
               ]
             }

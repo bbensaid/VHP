@@ -1,0 +1,64 @@
+{
+ "lessonId": "48247e64-0e6f-434f-8c38-2d497d909c76",
+ "index": 3,
+ "expectOld": {
+  "type": "key_stat",
+  "stats": [
+   {
+    "label": "Estimated Medicare Advantage overpayments due to risk score inflation (10 years)",
+    "value": "$26B+",
+    "source": "MedPAC"
+   },
+   {
+    "label": "HCC categories in the CMS-HCC model",
+    "value": "86",
+    "source": "CMS"
+   },
+   {
+    "label": "RAF score = average predicted cost",
+    "value": "1.0",
+    "source": "CMS"
+   },
+   {
+    "label": "Annual revenue impact per member per 0.1 RAF score change",
+    "value": "$1,000+",
+    "source": "Industry estimate"
+   }
+  ]
+ },
+ "newBlock": {
+  "type": "key_stat",
+  "stats": [
+   {
+    "label": "Est. added MA payments from higher coding intensity (2026)",
+    "value": "~$22B",
+    "source": "MedPAC, Feb 2026"
+   },
+   {
+    "label": "Payment HCC categories in the CMS-HCC V28 model (86 in V24)",
+    "value": "115",
+    "source": "CMS"
+   },
+   {
+    "label": "RAF score = average predicted cost",
+    "value": "1.0",
+    "source": "CMS"
+   },
+   {
+    "label": "MA payments for 2023 from diagnoses reported only on health risk assessments",
+    "value": "$7.5B",
+    "source": "HHS OIG, Oct 2024"
+   }
+  ]
+ },
+ "anchor": "Estimated Medicare Advantage overpayments due to risk score inflation (10 years)",
+ "files": [
+  "frontend/content/course_value_based_care.json",
+  "frontend/content/courses_tier1.json",
+  "frontend/content/expand_vbc.json"
+ ],
+ "claim": "fallback key_stat: '$26B+ overpayments (10 years) — MedPAC'; '86 HCC categories'; '$1,000+ per 0.1 RAF — Industry estimate'",
+ "verdict": "UNVERIFIABLE",
+ "src": "MedPAC Feb 2026 comment letter (~$22B in 2026); CMS V28 115 payment HCCs; HHS OIG OEI-03-23-00380 ($7.5B, 2023); $26B/10-year and $1,000/0.1 RAF figures not found in any MedPAC or CMS source (dropped)",
+ "note": "86 -> 115 is MISATTRIBUTED (stale V24 count)."
+}

@@ -1,0 +1,80 @@
+{
+ "pairs": [
+  {
+   "old": "plus shared savings or losses against a benchmark. 187 practices participated at peak.",
+   "new": "plus performance-based payments (and, for practices in two-sided risk, repayments) against a benchmark. 202 practices took part over the model's life; 122 remained at the end.",
+   "claim": "fallback: '187 practices participated at peak'",
+   "verdict": "FABRICATED",
+   "src": "Abt Global OCM Final Report (May 2024) exec summary: net losses $639M; total episode payments rose $616 (2.1%) less; no impact on ED visits, inpatient stays, hospice use or timing; at-a-glance: 202 practices active participation, 122 at end (CMS OCM page)",
+   "note": ""
+  },
+  {
+   "old": "The final OCM evaluation found minimal net savings to Medicare — about 0.2% of episode costs in the best-performing cohort. However, quality improvements were meaningful: participating practices showed higher hospice use, fewer ED visits, and better symptom documentation.",
+   "new": "The final OCM evaluation found that total episode payments rose 2.1% less in OCM than in comparison episodes, but monthly and performance-based payments to practices outweighed those savings, leaving Medicare an estimated $639 million net loss. Practice-reported screening measures improved, but OCM had no measurable impact on ED visits, hospital stays, or hospice use relative to comparison practices.",
+   "claim": "fallback callout: 'minimal net savings — about 0.2%'; 'higher hospice use, fewer ED visits, better symptom documentation'",
+   "verdict": "FABRICATED",
+   "src": "Abt Global OCM Final Report (May 2024) exec summary: net losses $639M; total episode payments rose $616 (2.1%) less; no impact on ED visits, inpatient stays, hospice use or timing; at-a-glance: 202 practices active participation, 122 at end (CMS OCM page)",
+   "note": ""
+  },
+  {
+   "old": "OCM results: minimal savings, quality improvement",
+   "new": "OCM results: gross savings, net losses",
+   "claim": "fallback callout heading",
+   "verdict": "FABRICATED",
+   "src": "Abt Global OCM Final Report (May 2024) exec summary: net losses $639M; total episode payments rose $616 (2.1%) less; no impact on ED visits, inpatient stays, hospice use or timing; at-a-glance: 202 practices active participation, 122 at end (CMS OCM page)",
+   "note": ""
+  },
+  {
+   "old": "Cancer drug prices have risen 10–15% annually. Episode benchmarks",
+   "new": "Cancer drug prices keep rising. Episode benchmarks",
+   "claim": "fallback concepts_grid: 'Cancer drug prices have risen 10–15% annually'",
+   "verdict": "UNVERIFIABLE",
+   "src": "no source given or found for a 10-15% annual figure",
+   "note": ""
+  },
+  {
+   "old": "The OCM showed minimal net savings to Medicare (about 0.2% of episode costs) but meaningful quality improvements — higher hospice use, fewer ED visits.",
+   "new": "OCM reduced total episode payments by 2.1% relative to comparison episodes, but monthly and performance-based payments to practices exceeded those savings, for an estimated $639 million net loss to Medicare; it had no measurable impact on ED visits, hospital stays, or hospice use.",
+   "claim": "quiz explanation: 0.2% net savings, higher hospice use, fewer ED visits",
+   "verdict": "FABRICATED",
+   "src": "Abt Global OCM Final Report (May 2024) exec summary: net losses $639M; total episode payments rose $616 (2.1%) less; no impact on ED visits, inpatient stays, hospice use or timing; at-a-glance: 202 practices active participation, 122 at end (CMS OCM page)",
+   "note": ""
+  },
+  {
+   "old": "Minimal net savings but meaningful quality improvements including higher hospice use",
+   "new": "Modest gross savings, but net losses to Medicare after payments to practices, with little change in quality outcomes",
+   "claim": "quiz correct option: minimal net savings with quality improvements incl. higher hospice use",
+   "verdict": "FABRICATED",
+   "src": "Abt Global OCM Final Report (May 2024) exec summary: net losses $639M; total episode payments rose $616 (2.1%) less; no impact on ED visits, inpatient stays, hospice use or timing; at-a-glance: 202 practices active participation, 122 at end (CMS OCM page)",
+   "note": ""
+  }
+ ],
+ "supa": [
+  {
+   "table": "lessons",
+   "col": "content_blocks",
+   "ids": [
+    "837fc9e7-8084-4c88-a43d-941ad6102158"
+   ]
+  },
+  {
+   "table": "quiz_questions",
+   "col": "explanation",
+   "ids": [
+    "9de6e681-f0c7-49b8-8049-b4747e25c5f9"
+   ]
+  },
+  {
+   "table": "quiz_options",
+   "col": "text",
+   "ids": [
+    "fde56be0-fe43-4542-931d-a3a5fbae3e3a"
+   ]
+  }
+ ],
+ "files": [
+  "frontend/content/course_value_based_care.json",
+  "frontend/content/courses_tier1.json",
+  "frontend/content/expand_vbc.json"
+ ]
+}
