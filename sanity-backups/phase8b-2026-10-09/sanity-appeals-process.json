@@ -1,0 +1,521 @@
+{
+  "_createdAt": "2026-06-01T12:47:17Z",
+  "_id": "appeals-process",
+  "_rev": "rL4Cn5Sfo5Z8rzPmESOPEe",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T12:47:17Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "When You Disagree With the Denial"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Not every denial is correct. Payers deny claims that should have been paid — for incomplete information they could have requested, for \"medical necessity\" the documentation actually supported, or simply in error. When a provider believes a denial is wrong, the remedy is the appeal: a formal request that the payer reconsider its decision."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Appeals are the back-end's tool for fighting denials, distinct from simply correcting and resubmitting. You resubmit when the claim had a fixable error; you appeal when you believe the claim was correct and the denial was not. Appeals are more formal, more documentation-heavy, and governed by strict deadlines and levels."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most striking fact about appeals is how underused they are relative to how often they work. Only about 11.5 percent of denied Medicare claims are ever appealed — yet most appeals succeed. That gap represents enormous recoverable revenue left on the table simply because providers do not pursue it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "An appeal is a formal request that a payer reconsider a denial believed to be wrong. Strikingly, only ~11.5% of denied Medicare claims are appealed — yet most appeals succeed, meaning huge recoverable revenue goes unpursued."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Levels of Appeal"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Appeals proceed through escalating levels, and you generally must exhaust each internal level before moving to the next. A first-level appeal is the initial formal request asking the payer to reconsider, reviewed by insurance-company personnel. The payer typically has a defined window (often around 30 days) to respond."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "If the first-level appeal is denied, a second-level appeal triggers another internal review — usually by a different medical reviewer who did not participate in the original decision — supported by additional evidence and stronger documentation. Only after exhausting internal appeals can a provider (or patient) usually request an external review by an Independent Review Organization (IRO), a neutral third party whose decision the payer must honor."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Each level raises the bar and the independence of the reviewer. The internal levels give the payer a chance to correct itself; the external review removes the decision from the payer entirely. This escalation structure exists for commercial and ACA-plan appeals, and a parallel (more elaborate) structure governs Medicare."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Formal request for reconsideration, reviewed by payer personnel.",
+          "title": "First-level (internal)"
+        },
+        {
+          "_key": "step2",
+          "description": "Another internal review by a different reviewer, with stronger evidence.",
+          "title": "Second-level (internal)"
+        },
+        {
+          "_key": "step3",
+          "description": "A neutral independent review organization decides; the payer must comply.",
+          "title": "External review (IRO)"
+        },
+        {
+          "_key": "step4",
+          "description": "Medicare extends through ALJ, Appeals Council, and federal court.",
+          "title": "(Medicare adds further levels)"
+        }
+      ],
+      "title": "Escalating Levels of Appeal"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Medicare Five-Level Process"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicare has its own, formally defined five-level appeals process that is worth knowing because Medicare is so large. Level 1 is Redetermination by a Medicare Administrative Contractor (MAC); Level 2 is Reconsideration by a Qualified Independent Contractor (QIC); Level 3 is a hearing before an Administrative Law Judge (ALJ); Level 4 is review by the Medicare Appeals Council; and Level 5 is judicial review in federal district court."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Each level has strict deadlines. A redetermination must be requested within 120 days of the initial determination; a reconsideration within 180 days of the redetermination notice, with the QIC having 60 days to decide. Miss a deadline and the appeal right is generally forfeited — the same unforgiving clock that governs timely filing governs appeals."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "In practice, the vast majority of cases resolve early: over 90 percent of Medicare Advantage appeals are settled at Level 1 or Level 2, with only about 2 to 3 percent reaching an ALJ hearing. This means a well-prepared first- or second-level appeal is where most recoverable revenue is actually won — the higher levels are rare and reserved for the hardest cases."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3t1",
+      "_type": "code",
+      "code": [
+        {
+          "Decided_By": "Medicare Administrative Contractor (MAC)",
+          "Level": "Level_1",
+          "Name": "Redetermination"
+        },
+        {
+          "Decided_By": "Qualified Independent Contractor (QIC)",
+          "Level": "Level_2",
+          "Name": "Reconsideration"
+        },
+        {
+          "Decided_By": "Administrative Law Judge",
+          "Level": "Level_3",
+          "Name": "ALJ Hearing"
+        },
+        {
+          "Decided_By": "Medicare Appeals Council",
+          "Level": "Level_4",
+          "Name": "Appeals Council Review"
+        },
+        {
+          "Decided_By": "Federal district court",
+          "Level": "Level_5",
+          "Name": "Judicial Review"
+        }
+      ],
+      "language": "json",
+      "title": "The Five Levels of Medicare Appeal"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Winning an Appeal: Documentation and the Peer-to-Peer"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Appeals are won on evidence. The core of any appeal is a clear, specific appeal letter that states exactly why the claim should be paid, paired with as much supporting documentation as possible — the medical records, physician statements, and clinical evidence that establish the case. A missing physician statement or an incomplete record can sink an otherwise valid appeal."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "For clinical denials (especially medical necessity), a powerful tool is the peer-to-peer review: the treating physician speaks directly with a physician reviewer at the payer to argue the clinical case. It is requested by the provider and, for some denials, must be completed quickly. A peer-to-peer can overturn a denial before a formal written appeal is even needed, because it lets two clinicians resolve a clinical disagreement directly."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The recurring theme is that appeals reward preparation and specificity. A generic \"please reconsider\" letter rarely works; an appeal that cites the specific policy, attaches the exact documentation that rebuts the denial reason, and addresses the CARC code head-on is what succeeds. This is also why good documentation (the earlier lesson) pays off twice — once in preventing the denial, and again in winning the appeal if one happens."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "A payer denies an inpatient admission as \"not medically necessary.\" Rather than file a written appeal immediately, the hospital requests a peer-to-peer review, and the admitting physician speaks directly with the payer's physician reviewer to explain the clinical picture that justified admission.\nThe reviewer, hearing the clinical reasoning directly, overturns the denial — resolving it faster than a formal multi-level appeal and recovering the full payment.",
+      "title": "A Peer-to-Peer Reversing a Denial"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Payer Relations and the Bigger Picture"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Appeals are one front in a broader, ongoing relationship between providers and payers. Beyond individual appeals, strong payer relations involve tracking each payer's denial and reversal patterns, escalating systemic problems (a payer denying a whole category of valid claims), and using contract terms — prompt-payment clauses, dispute-resolution provisions — to hold payers accountable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The data from appeals feeds back into this relationship. If a particular payer consistently denies valid claims that are then overturned on appeal, that pattern is leverage — in contract renegotiation, in regulatory complaints, and in operational pushback. Appeals are not just claim-by-claim recovery; in aggregate they are evidence about payer behavior."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The practical bottom line connects back to the opening fact: because most appeals succeed but few are filed, building real appeal capacity — clear ownership, deadline tracking, strong documentation, and routine use of peer-to-peer — is one of the highest-return investments in the back end. An organization that appeals diligently recovers revenue its peers abandon. With denials worked and appealed, the cycle turns to posting the payments that do come in — the subject of the next module."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "Most appeals succeed, yet only a small fraction of denied claims are ever appealed (~11.5% in Medicare). Failing to appeal valid denials abandons revenue that would very likely be recovered. Track appeal deadlines, build strong documentation, and use peer-to-peer reviews — diligent appealing recovers what competitors write off.",
+      "title": "Don't Leave Winnable Appeals Unfiled"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "An appeal is a formal request that a payer reconsider a denial believed to be wrong — distinct from correcting and resubmitting a claim that had a fixable error.",
+        "Only ~11.5% of denied Medicare claims are appealed, yet most appeals succeed, leaving large recoverable revenue unpursued.",
+        "Appeals escalate through levels: first-level and second-level internal reviews, then external review by an Independent Review Organization (IRO).",
+        "Medicare has a formal five-level process: Redetermination (MAC), Reconsideration (QIC), ALJ hearing, Appeals Council, and federal judicial review, each with strict deadlines.",
+        "Over 90% of Medicare Advantage appeals resolve at Level 1 or 2, so well-prepared early appeals are where most recoverable revenue is won.",
+        "Appeals are won on evidence: a specific appeal letter plus medical records and physician statements; the peer-to-peer review lets the treating physician argue clinical denials directly.",
+        "Appeals feed broader payer relations — denial/reversal patterns are leverage in contract negotiation and accountability; diligent appealing recovers revenue competitors abandon."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The combination of a low appeal rate and a high success rate means valid denials are routinely abandoned even though they would likely be overturned. The practical implication is that investing in appeal capacity — deadline tracking, strong documentation, and peer-to-peer reviews — recovers revenue that less diligent organizations write off. Appealing winnable denials is one of the highest-return back-end activities.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Appeals are usually a waste of time and should be avoided"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "There is large recoverable revenue in valid denials that simply go unappealed — building real appeal capacity is high-return"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Only claims over $10,000 are worth appealing"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Appeals are only available for commercial, not Medicare, claims"
+        }
+      ],
+      "question": "Given that only about 11.5% of denied Medicare claims are appealed but most appeals succeed, what is the key takeaway for a revenue cycle team?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] First-Level vs Second-Level Appeals for Denied Medical Claims (Medical Insurance Advocacy) — https://www.medicalinsuranceadvocacy.com/first-level-vs-second-level-appeals-for-denied-medical-claims/ — internal appeal levels; reviewer independence; ~30-day windows"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Internal Claims and Appeals and the External Review Process (CMS) — https://www.cms.gov/marketplace/technical-assistance-resources/internal-claims-and-appeals.pdf — exhausting internal appeals before external review by an IRO"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Medicare Appeals Process (5 Levels of Appeal) (LeadingAge NY) — https://www.leadingageny.org/?LinkServID=E1559973-9C70-519B-EEB3E9718A705BA1 — Redetermination (MAC), Reconsideration (QIC), ALJ, Appeals Council, judicial review; deadlines"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Medicare Advantage Appeal Letter / 5-Level Guide (Muni Health) — https://muni.health/blog/medicare-advantage-appeal-letter-template-2025 — over 90% resolve at Level 1/2; only ~2-3% reach ALJ; ~11.5% of denials appealed"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Health Insurance Claim Denied? How to Appeal (NAIC) — https://content.naic.org/article/consumer-insight-health-insurance-claim-denied-how-appeal-denial — specific appeal letter and supporting evidence"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Levels of Appeal on a Denied Health Insurance Claim (Norton Health Law) — https://www.nortonhealthlaw.com/2020/10/levels-of-appeal-on-a-denied-health-insurance-cl/ — peer-to-peer review; documentation requirements"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "revenue-cycle-management",
+  "order": 15,
+  "slug": {
+    "_type": "slug",
+    "current": "appeals-process"
+  },
+  "title": "Appeals Process and Payer Relations"
+}

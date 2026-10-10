@@ -1,0 +1,94 @@
+{
+  "id": "53bb99ab-6ab9-40bc-acf6-af30572196ad",
+  "track_id": "b4dc3110-ae42-46f4-a973-18dd833697e9",
+  "pillar": "economics",
+  "order": 1,
+  "slug": "payer-mix-revenue",
+  "title": "Payer Mix and Its Impact on Revenue",
+  "summary": "A hospital's payer mix—the proportion of patients covered by Medicare, Medicaid, commercial insurance, and self-pay—is the single most powerful determinant of its revenue per case. This lesson explains how payer mix shapes financial performance and strategic decisions.",
+  "estimated_minutes": 20,
+  "objectives": [
+    "Define payer mix and calculate its impact on average revenue per adjusted discharge",
+    "Compare reimbursement rates across Medicare, Medicaid, commercial, and uninsured payers",
+    "Explain why payer mix shifts create financial risk for hospitals"
+  ],
+  "content_blocks": [
+    {
+      "body": "Not all patients reimburse at the same rate. Commercial insurers typically pay 150–200% of Medicare rates for the same service. Medicaid pays below Medicare in most states—sometimes 60–70% of Medicare. Uninsured patients may pay nothing or receive charity care.\n\nA hospital with 60% commercial payer mix operates in a fundamentally different financial universe than one with 60% Medicaid. Safety-net hospitals serving predominantly low-income populations face structural financial challenges not because they are inefficient but because their payer mix generates far less revenue per case.\n\nManaging payer mix is therefore a strategic priority. Decisions about service lines, locations, and physician recruitment all carry payer mix implications.",
+      "type": "text",
+      "heading": "Why Payer Mix Is the Revenue Multiplier"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Commercial vs Medicare rates",
+          "value": "150–200%",
+          "context": "Commercial insurers typically pay 150–200% of Medicare rates for equivalent services"
+        },
+        {
+          "label": "Medicaid as % of Medicare",
+          "value": "60–70%",
+          "context": "Most state Medicaid programs reimburse below Medicare, creating a payment shortfall"
+        },
+        {
+          "label": "Uninsured payment rate",
+          "value": "$0",
+          "context": "Uninsured patients often qualify for charity care or generate bad debt, yielding zero net revenue"
+        }
+      ]
+    },
+    {
+      "rows": [
+        [
+          "Commercial (PPO/HMO)",
+          "150–200%",
+          "Declining share in many markets"
+        ],
+        [
+          "Medicare (FFS)",
+          "100% baseline",
+          "Growing as population ages"
+        ],
+        [
+          "Medicare Advantage",
+          "95–105%",
+          "Rapidly growing"
+        ],
+        [
+          "Medicaid",
+          "60–85%",
+          "Expanding in Medicaid expansion states"
+        ],
+        [
+          "Uninsured/Charity",
+          "0–20%",
+          "Variable by market"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Payer",
+        "Typical Rate vs Medicare",
+        "Volume Trend"
+      ]
+    },
+    {
+      "body": "Medicare Advantage (MA) now covers over 50% of Medicare beneficiaries and is projected to reach 60%+ by 2030. MA plans often pay closer to traditional Medicare rates but impose prior authorization requirements that add administrative burden and can result in denied claims. Hospitals with growing MA volume must monitor authorization denial rates and appeal processes closely.",
+      "type": "callout",
+      "title": "The Medicare Advantage Shift",
+      "variant": "warning"
+    }
+  ],
+  "tags": [
+    "payer mix",
+    "Medicare",
+    "Medicaid",
+    "reimbursement rates"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:34:37.298806+00:00",
+  "updated_at": "2026-06-01T13:29:14.264072+00:00",
+  "sanity_slug": "payer-mix-revenue"
+}

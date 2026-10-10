@@ -1,0 +1,9 @@
+{
+  "id": "69afde2a-12a8-4970-a8d1-89f5e63ad596",
+  "quiz_id": "019a8d4c-3ed9-440c-8115-bde4f76f6e56",
+  "order": 3,
+  "question_type": "single_choice",
+  "question": "A Moody's Aa-rated hospital would most likely show days cash on hand of:",
+  "explanation": "Moody's Aa-rated hospitals typically demonstrate days cash on hand above 200, reflecting a very strong liquidity position. Hospitals in the Baa range (lowest investment grade) typically show 80–120 days.",
+  "points": null
+}

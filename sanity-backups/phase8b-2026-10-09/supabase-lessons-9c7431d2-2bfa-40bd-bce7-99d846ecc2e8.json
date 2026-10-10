@@ -1,0 +1,54 @@
+{
+  "id": "9c7431d2-2bfa-40bd-bce7-99d846ecc2e8",
+  "track_id": "6d44e7cc-75aa-4d68-acc7-5f81ca2ec46d",
+  "pillar": "policy",
+  "order": 2,
+  "slug": "medicare-advantage-market-dynamics",
+  "title": "MA Market Dynamics: Special Needs Plans and D-SNPs",
+  "summary": "Special Needs Plans (SNPs) are a specialized type of Medicare Advantage plan designed for specific populations — dually eligible beneficiaries, institutionalized individuals, and those with severe chronic conditions. D-SNPs for dual eligibles are the fastest-growing segment of the SNP market.",
+  "estimated_minutes": 18,
+  "objectives": [
+    {
+      "id": "obj-mcare-008-1",
+      "text": "Describe the three types of Special Needs Plans"
+    },
+    {
+      "id": "obj-mcare-008-2",
+      "text": "Explain the coverage and coordination advantages of D-SNPs for dual eligible beneficiaries"
+    },
+    {
+      "id": "obj-mcare-008-3",
+      "text": "Identify the financial alignment opportunity in D-SNPs under FIDE and HIDE SNP models"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "**Special Needs Plans (SNPs)** are MA plans authorized to exclusively enroll (or disproportionately enroll) beneficiaries with specific health or social needs. Congress created SNPs in 2003 to allow tailored benefit design for high-need populations.",
+      "type": "text"
+    },
+    {
+      "text": "The Three SNP Types",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "**Dual Eligible SNPs (D-SNPs)** serve beneficiaries who have both Medicare and Medicaid — approximately 12 million Americans. D-SNPs coordinate Medicare and Medicaid benefits, reducing the fragmentation that plagues dual eligible beneficiaries.\n\n**Chronic Condition SNPs (C-SNPs)** serve beneficiaries with specific chronic conditions — diabetes, CHF, ESRD, dementia, HIV/AIDS. C-SNPs design specialized benefit structures and care management around the targeted condition.\n\n**Institutional SNPs (I-SNPs)** serve beneficiaries who live in or require care at the level of a nursing facility. I-SNPs enable MA plans to coordinate with long-term care facilities and cover the nursing home population.",
+      "type": "text"
+    },
+    {
+      "text": "D-SNPs: The Dual Eligible Opportunity",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Dual eligible beneficiaries are among the highest-need, highest-cost people in the healthcare system — 15% of Medicaid enrollees account for 34% of Medicaid spending. They have on average 7 chronic conditions, high rates of behavioral health and SDOH needs, and historically fragmented care across Medicare and Medicaid silos.\n\n**Fully Integrated Dual Eligible SNPs (FIDE SNPs)** hold Medicare and Medicaid risk under a single contract — truly integrating benefits. These plans have the financial alignment to invest in care management that reduces costs across both payers.\n\n**Highly Integrated Dual Eligible SNPs (HIDE SNPs)** have a lower level of integration — they coordinate benefits but may not hold both payer risks.\n\nCMS is pushing toward greater integration through the **Medicare-Medicaid Integration Program** and state-based agreements, recognizing that integrated financing is essential for improving care for dually eligible beneficiaries.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:25:02.311876+00:00",
+  "updated_at": "2026-06-02T17:06:07.707399+00:00",
+  "sanity_slug": "medicare-advantage-market-dynamics"
+}

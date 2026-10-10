@@ -1,0 +1,82 @@
+{
+  "id": "5face3f5-68d3-46e3-81a8-055571078d85",
+  "track_id": "af23bf93-ddf7-4501-8c6a-d5ab3f890ef1",
+  "pillar": "clinical",
+  "order": 3,
+  "slug": "types-of-genetic-tests",
+  "title": "Types of Genetic Tests and Their Clinical Applications",
+  "summary": "Diagnostic, predictive, carrier, pharmacogenomic, and prenatal tests — matching the right test to the clinical question.",
+  "estimated_minutes": 20,
+  "objectives": [],
+  "content_blocks": [
+    {
+      "text": "Matching the Test to the Clinical Question",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "text": "Genetic testing is not monolithic. Ordering 'a genetic test' without specifying the clinical question is like ordering 'an imaging study.' Each test type has a specific indication, sensitivity, and result interpretation framework. The appropriate test depends on whether you're confirming a diagnosis, predicting future risk, identifying carriers, or guiding drug therapy.",
+      "type": "text"
+    },
+    {
+      "type": "concepts_grid",
+      "concepts": [
+        {
+          "term": "Diagnostic Testing",
+          "definition": "Confirms or rules out a genetic condition in someone with symptoms — e.g., whole-exome sequencing for a child with developmental delay"
+        },
+        {
+          "term": "Predictive Testing",
+          "definition": "Identifies disease risk before symptoms — e.g., BRCA1/2 testing in a woman with family history of breast cancer"
+        },
+        {
+          "term": "Carrier Testing",
+          "definition": "Determines if an asymptomatic person carries one copy of a recessive variant — e.g., CF carrier screening before pregnancy"
+        },
+        {
+          "term": "Pharmacogenomic (PGx) Testing",
+          "definition": "Predicts drug response based on metabolizer phenotype — e.g., CYP2D6 for codeine, DPYD for fluorouracil"
+        },
+        {
+          "term": "Prenatal Testing",
+          "definition": "Screens or diagnoses fetal chromosomal/genetic conditions — includes NIPT, amniocentesis, CVS"
+        },
+        {
+          "term": "Newborn Screening",
+          "definition": "Population-level dried blood spot testing for ~35 core conditions by RUSP — enables pre-symptomatic treatment"
+        }
+      ]
+    },
+    {
+      "text": "Chromosome vs. Sequence vs. Expression",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "text": "Karyotyping examines chromosome number and large structural rearrangements visible under a microscope — appropriate for Down syndrome (trisomy 21) or chromosomal translocations. Chromosomal microarray (CMA) adds resolution for submicroscopic copy-number variants (CNVs). Sequence-based tests (panels, WES, WGS) detect single-nucleotide variants and small indels. RNA sequencing (transcriptomics) and methylation arrays add expression-level data.",
+      "type": "text"
+    },
+    {
+      "type": "key_stat",
+      "label": "Conditions on the federal RUSP newborn screening panel",
+      "value": "~35",
+      "context": "States may screen for additional conditions; all 50 states screen for at least the 35 RUSP core conditions using dried blood spots from heel-stick sampling"
+    },
+    {
+      "body": "DTC services (e.g., 23andMe, AncestryDNA) use genotyping arrays that test only known variants and cannot detect rare pathogenic variants. A 'negative' BRCA result from a DTC test does NOT rule out hereditary breast/ovarian cancer risk. Patients presenting DTC results should be referred to genetic counselors for appropriate clinical-grade testing.",
+      "type": "callout",
+      "title": "Direct-to-Consumer (DTC) Genomics: Clinical Limitations",
+      "variant": "warning"
+    },
+    {
+      "text": "Genetic counselors play an indispensable role in pre-test education (informed consent, implications for family members) and post-test interpretation. The NSGC (National Society of Genetic Counselors) and ABGC (American Board of Genetic Counseling) credential these specialists. Many states now mandate genetic counselor involvement for high-complexity results.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:21.034693+00:00",
+  "updated_at": "2026-06-01T18:36:03.579357+00:00",
+  "sanity_slug": "types-of-genetic-tests"
+}

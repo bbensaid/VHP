@@ -1,0 +1,104 @@
+{
+  "id": "7bea354d-865b-4c22-a83e-d5d865621b0e",
+  "track_id": "69f16f27-e1cf-473f-a185-96566bffe82c",
+  "pillar": "equity",
+  "order": 1,
+  "slug": "community-health-workers",
+  "title": "Community Health Workers: Evidence, Roles & Sustainability",
+  "summary": "The evidence base for CHW programs, the specific roles CHWs play in bridging clinical and community systems, Medicaid CHW reimbursement, and program design principles.",
+  "estimated_minutes": 20,
+  "objectives": [
+    {
+      "id": "obj_cw1",
+      "text": "Describe the core roles of community health workers and what makes them effective"
+    },
+    {
+      "id": "obj_cw2",
+      "text": "Summarize the evidence on CHW impact on utilization, outcomes, and equity"
+    },
+    {
+      "id": "obj_cw3",
+      "text": "Explain how states are financing CHW programs through Medicaid"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Community health workers are lay health workers — typically from the same community they serve — who bridge the gap between clinical health systems and the communities they struggle to reach. They are known by many names: promotoras, navigators, health coaches, patient advocates.\n\nWhat makes CHWs effective is not primarily their knowledge (though training matters) but their trust. A CHW who shares the language, culture, and lived experience of the patients they serve can build relationships that clinical staff — however well-intentioned — often cannot.",
+      "type": "text",
+      "heading": "The trusted bridge"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Help patients navigate complex health and social service systems — appointments, insurance enrollment, benefits applications.",
+          "icon": "ti-user-heart",
+          "title": "Navigation"
+        },
+        {
+          "body": "Connect patients with food, housing, transportation, and financial assistance. The direct link between SDOH screening and resource connection.",
+          "icon": "ti-home",
+          "title": "Social needs"
+        },
+        {
+          "body": "Support self-management for diabetes, hypertension, asthma. Evidence shows CHW support improves medication adherence and reduces A1c.",
+          "icon": "ti-stethoscope",
+          "title": "Chronic disease support"
+        },
+        {
+          "body": "Doula and CHW models have demonstrated reduction in maternal mortality and disparities — particularly for Black mothers.",
+          "icon": "ti-baby",
+          "title": "Maternal health"
+        }
+      ],
+      "heading": "Core CHW roles"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Return on investment for every $1 spent on CHW programs (meta-analysis)",
+          "value": "$3.6",
+          "source": "RWJF"
+        },
+        {
+          "label": "Reduction in ED visits in CHW-supported high-risk populations",
+          "value": "25%",
+          "source": "Health Affairs"
+        },
+        {
+          "label": "States that now reimburse CHW services through Medicaid",
+          "value": "33+",
+          "source": "KFF"
+        },
+        {
+          "label": "Black maternal mortality reduction with doula/CHW support in some programs",
+          "value": "2x",
+          "source": "ACOG"
+        }
+      ]
+    },
+    {
+      "body": "Historically, CHW programs were grant-funded — effective but fragile. More than 33 states now reimburse CHW services through Medicaid, providing a sustainable funding stream. CMS has made this easier through guidance on billing CHW services as part of chronic care management, care coordination, and preventive services. Vermont reimburses CHW services through Medicaid and has integrated CHWs into its ACO model.",
+      "type": "callout",
+      "heading": "Medicaid CHW reimbursement: the sustainability solution",
+      "variant": "info"
+    },
+    {
+      "hint": "Interview a CHW about their day-to-day work — what they actually do, the barriers their patients face, what makes the role effective, and what the health system gets wrong about community engagement. Recommended: 8–12 minutes.",
+      "type": "audio_slot",
+      "label": "Community health worker: the view from the community"
+    }
+  ],
+  "tags": [
+    "community health workers",
+    "CHW",
+    "Medicaid reimbursement",
+    "bridge"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T21:56:24.515363+00:00",
+  "updated_at": "2026-06-02T14:02:24.15852+00:00",
+  "sanity_slug": "community-health-workers"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "4fdc561d-528a-497c-b2de-35ad4f55453e",
+  "quiz_id": "4ed856cb-2cb8-480d-8dce-2da111f6c8c4",
+  "order": 1,
+  "question_type": "single_choice",
+  "question": "The NHS's National Programme for IT (NPfIT), which cost the UK government more than £10 billion before being dismantled in 2011, is most often cited as a failure of which specific kind?",
+  "explanation": "Multiple independent reviews, including the National Audit Office, found NPfIT's governance separated central decision-making from the local organizations responsible for implementation — a structural governance failure, not primarily a technology failure.",
+  "points": 1
+}

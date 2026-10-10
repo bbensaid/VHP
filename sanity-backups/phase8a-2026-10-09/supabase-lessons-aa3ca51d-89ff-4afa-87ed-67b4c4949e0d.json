@@ -1,0 +1,113 @@
+{
+  "id": "aa3ca51d-89ff-4afa-87ed-67b4c4949e0d",
+  "track_id": "6e36fdab-df2b-42e1-ab3a-dc28c560aee9",
+  "pillar": "equity",
+  "order": 2,
+  "slug": "hea-disparity-decomposition",
+  "title": "Disparity Decomposition: From Raw Gaps to Actionable Signals",
+  "summary": "The same underlying gap can be reported as a rate difference, a rate ratio, or a summary index — and each tells a different story. This lesson works through the actual arithmetic AHRQ and CDC use, the reference-group choice that quietly shapes every result, and the small-numbers problem that breaks naive stratification.",
+  "estimated_minutes": 22,
+  "objectives": [
+    {
+      "id": "obj_hea2a",
+      "text": "Distinguish absolute disparity (rate difference) from relative disparity (rate ratio) and explain when each is the more honest metric."
+    },
+    {
+      "id": "obj_hea2b",
+      "text": "Describe the Pearcy-Keppel Index of Disparity as a summary measure across many subgroups."
+    },
+    {
+      "id": "obj_hea2c",
+      "text": "Explain why reference-group choice and small cell sizes can distort a disparity measurement, and what analysts do about it."
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Suppose Group A has an outcome rate of 20% and Group B has a rate of 10%. The **rate difference** is 10 percentage points. The **rate ratio** is 2.0 — Group A's rate is twice Group B's. Both are true simultaneously, and each is the more honest number in a different context: the rate difference tells you the absolute burden (how many more people in Group A are affected), while the rate ratio tells you the relative burden (how much more likely). AHRQ's National Healthcare Quality and Disparities Report (NHQDR), the federally mandated annual disparities report, computes rate ratios between each priority population and a reference group for its headline disparity tables.\n\nA disparity that looks small on one scale can look large on the other. A rate difference of 2 percentage points sounds modest; if the reference rate is 1%, that is a 3x rate ratio.",
+      "type": "text",
+      "heading": "Two ways to describe the same gap"
+    },
+    {
+      "body": "Absolute disparity (rate difference) and relative disparity (rate ratio) are both legitimate summaries of the same gap. Reporting only one — especially only the smaller-looking one — is a framing choice, not a neutral default.",
+      "type": "callout",
+      "heading": "Key Concept",
+      "variant": "info"
+    },
+    {
+      "body": "A single rate ratio compares two groups. But most real populations split into many subgroups — several racial/ethnic categories, income bands, education levels. Jeffrey Pearcy and Kenneth Keppel's 2002 *Public Health Reports* paper, written to help track progress toward the original Healthy People 2010 disparity-elimination goal, proposed the **Index of Disparity (ID)**: a modified coefficient of variation across all subgroup rates relative to a reference rate, expressed as a single percentage. It lets an analyst track whether disparity across an entire population is widening or narrowing over time — its authors found, for example, that gender disparity in cardiovascular deaths fell from 1989–1998 while racial/ethnic disparity in the same outcome stayed essentially flat.",
+      "type": "text",
+      "heading": "Summarizing across many subgroups: the Index of Disparity"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Year AHRQ's CAHPS patient-experience program began",
+          "value": "1995",
+          "source": "AHRQ"
+        },
+        {
+          "label": "Year CMS launched the Mapping Medicare Disparities (MMD) Tool",
+          "value": "2016",
+          "source": "CMS Office of Minority Health"
+        },
+        {
+          "label": "Chronic conditions the MMD Tool tracks by race/ethnicity, geography, and dual-eligibility",
+          "value": "18+",
+          "source": "CMS OMH"
+        }
+      ],
+      "heading": "Two Federal Disparity Measurement Systems"
+    },
+    {
+      "body": "Every disparity ratio needs a denominator group to compare against. AHRQ's own methodology documentation is explicit that this choice matters and is under continuous review: comparing every group to the population's best-performing group produces larger, more visible gaps; comparing every group to the population average produces smaller ones. Neither choice is 'wrong' — but a report that switches reference groups between years, or between measures, without saying so, can make progress (or its absence) look different than it is.",
+      "type": "text",
+      "heading": "The reference-group problem"
+    },
+    {
+      "rows": [
+        {
+          "left": "Larger — every group is compared to the ceiling",
+          "label": "Visible disparity size",
+          "right": "Smaller — the average already includes the low-performing groups"
+        },
+        {
+          "left": "Setting an aspirational target",
+          "label": "Use case",
+          "right": "Tracking year-over-year population-level change"
+        },
+        {
+          "left": "Can look alarmist if not contextualized",
+          "label": "Risk",
+          "right": "Can understate the gap for the worst-off group"
+        }
+      ],
+      "type": "comparison_table",
+      "heading": "Reference-Group Choice Changes What You See",
+      "leftLabel": "Best-performing group as reference",
+      "rightLabel": "Population average as reference"
+    },
+    {
+      "body": "Small subgroups produce unstable rates. A rate computed from 20 patients can swing from a 5% disparity to a 25% disparity with two additional events. AHRQ and NCQA both apply minimum-cell-size suppression rules before publishing a stratified rate — a real methodological safeguard, not bureaucratic caution. Any equity dashboard built without a minimum-N rule will manufacture false disparities out of statistical noise.",
+      "type": "callout",
+      "heading": "Important",
+      "variant": "warning"
+    },
+    {
+      "body": "CMS's Office of Minority Health launched the Mapping Medicare Disparities (MMD) Tool in March 2016 specifically to solve the reference-group and small-numbers problems for public users. It offers two views — Population View and Hospital View — letting analysts filter by state or county, sex, age, dual-eligibility status, and race/ethnicity, and it tracks utilization and outcome measures (hospitalizations, readmissions, mortality) across 18-plus chronic conditions. Its design choices — a fixed set of comparison groups, pre-suppressed small cells, downloadable underlying tables — are a working example of the tradeoffs this lesson describes, made once by CMS so individual analysts don't have to remake them inconsistently.",
+      "type": "text",
+      "heading": "Case study: the Mapping Medicare Disparities Tool"
+    }
+  ],
+  "tags": [
+    "disparity-measurement",
+    "ahrq",
+    "index-of-disparity",
+    "small-numbers"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-09-22T19:11:32.216737+00:00",
+  "updated_at": "2026-09-22T19:42:02.013259+00:00",
+  "sanity_slug": "hea-disparity-decomposition"
+}

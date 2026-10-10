@@ -1,0 +1,453 @@
+{
+  "_createdAt": "2026-05-31T07:41:18Z",
+  "_id": "health-system-integration",
+  "_rev": "rL4Cn5Sfo5Z8rzPmEBXpry",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T07:41:18Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "From Standalone Hospitals to Sprawling Systems"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The independent community hospital, once the norm in American health care, is now the exception. Nearly 70% of U.S. hospitals are affiliated with a health system, and the trend toward consolidation continues. Standalone hospitals have merged into regional and national systems, hospitals have acquired physician practices and outpatient centers, and the result is a landscape dominated by large, integrated organizations. This lesson examines the financial logic behind that transformation — the pursuit of \"systemness\" — and the uncomfortable gap between what consolidation promises and what the evidence shows it delivers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "\"Systemness\" refers to the financial and operational benefits a health system aims to capture by integrating its parts into a coordinated whole rather than a collection of separate facilities. The theory is appealing: a unified system can achieve economies of scale, negotiate better with payers and suppliers, access capital more cheaply, pool data, standardize care, and shift services to lower-cost settings. These are real potential advantages, and they explain why consolidation has been one of the most powerful forces reshaping hospital finance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "But the gap between theory and reality is where this lesson earns its keep. A large and consistent body of evidence shows that consolidation reliably raises prices while rarely lowering costs or improving quality. Understanding both the genuine financial benefits of integration and its well-documented harms is essential to thinking clearly about one of the central trends in American health care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: \"Systemness\" is the set of financial and operational benefits — economies of scale, payer leverage, capital access, pooled data, standardized care — that health systems seek through integration. The evidence shows consolidation reliably raises prices but rarely lowers costs or improves quality."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Nearly 70% of U.S. hospitals are now affiliated with a health system, reflecting decades of consolidation (KFF)",
+          "label": "Hospitals in a System",
+          "value": "~70%"
+        },
+        {
+          "_key": "s2",
+          "context": "One or two systems controlled the entire inpatient market in 47% of metropolitan areas in 2022; in 82% they controlled over 75% (KFF)",
+          "label": "Markets Dominated by 1–2 Systems",
+          "value": "47% of metros"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two Directions of Integration"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Integration happens along two axes, and the distinction matters financially. Horizontal integration occurs when one hospital or system merges with or acquires another hospital — combining like with like to gain size and market share within the same level of care. Vertical integration occurs when a system acquires other parts of the care chain, most notably physician practices and outpatient centers — combining different stages of care delivery under one owner. A system pursuing systemness typically does both: growing horizontally to dominate markets and vertically to control the patient’s full care journey."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The stated rationales are genuine business logic. Consolidation can provide economies of scale (spreading fixed administrative, IT, and overhead costs across more facilities), access to capital (a large system borrows more cheaply, as the debt-financing lesson showed), pooled data (enabling population health and analytics), and bargaining leverage against market-dominant payers. Proponents also cite the ability to move care to lower-cost outpatient settings, standardize quality, and rescue financially struggling rural hospitals and physician practices that cannot survive alone."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Horizontal Integration",
+        "points": [
+          "Hospital merges with or acquires another hospital",
+          "Combines the same level of care",
+          "Increases size and local market share",
+          "Can raise prices 6%–65% in concentrated markets"
+        ]
+      },
+      "right": {
+        "label": "Vertical Integration",
+        "points": [
+          "System acquires physician practices or outpatient centers",
+          "Combines different stages of the care chain",
+          "Controls more of the patient’s care journey",
+          "Physician-practice acquisition raises prices ~14% on average"
+        ]
+      },
+      "title": "Horizontal vs. Vertical Integration"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Evidence: Higher Prices, Not Lower Costs"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Here the data delivers an inconvenient verdict. Despite economies-of-scale rhetoric, mergers and acquisitions of U.S. hospitals rarely improve quality or lower costs and prices — and they frequently raise them. Horizontal hospital-to-hospital mergers in concentrated markets can raise hospital prices anywhere from 6% to 65%. One review found hospital charges increased with integration 93% of the time, in 13 of 14 studies measuring price changes. The promised savings, when they exist at all, rarely reach patients or payers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Vertical integration shows the same pattern. When hospitals acquire physician practices, prices for those physicians’ services rise about 14% on average — and patients sometimes find prices doubled or more simply because their practice was purchased by a hospital and can now bill at hospital rates. Cross-market mergers (combining hospitals in different geographic markets) raised prices by almost 13% over six years, with even larger increases when the acquired hospital had a bigger market share. The mechanism is straightforward: market power. A system that dominates a market can demand higher rates from insurers, who pass the cost to employers and patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3w1",
+      "_type": "warningBlock",
+      "message": "The most common justification for consolidation — economies of scale lowering costs — is largely not borne out. Improved health care value cannot be achieved by hospital mergers and acquisitions alone; the dominant measurable effect is higher prices from increased market power, not lower costs passed on to patients.",
+      "title": "Economies of Scale Are Often a Rationale, Not a Result"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The macroeconomic consequences are sobering. Higher provider prices from consolidation raised insurance premiums and out-of-pocket costs, which come out of workers’ paychecks — contributing to an estimated reduction in U.S. worker wages of nearly $1 trillion from 2012 to 2022. Consolidation is not a victimless reshuffling of corporate boxes; it transfers real money from workers and patients to dominant systems through higher prices."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Regulatory Response"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because the price evidence is so consistent, antitrust regulators have intensified their scrutiny of health care consolidation. The Federal Trade Commission (FTC) and Department of Justice have ramped up enforcement, and in 2023 jointly released modernized merger guidelines that expanded the analytical tools for evaluating health care transactions, with particular attention to already-concentrated hospital and physician-group markets. Regulators have grown skeptical of the \"efficiency\" justifications systems offer for mergers, given how rarely those efficiencies materialize as lower prices."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This scrutiny has teeth. The FTC has blocked or deterred multiple hospital mergers, and in June 2024, Novant Health in North Carolina canceled its planned acquisition of two hospitals after the FTC argued the deal would create near-monopoly conditions. These actions signal a regulatory environment far less willing to accept consolidation on faith. For health systems, this means that the path to systemness through acquisition now runs through a much more demanding antitrust gauntlet — and that the financial case for a merger must increasingly account for the risk of regulatory rejection."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "Consider a system that already operates the largest hospital in a metro area and seeks to acquire its main competitor. The stated rationale is economies of scale and integrated care. But the practical effect — as the FTC argued in blocking such deals — is that the combined system would control most of the market’s inpatient capacity, giving it the leverage to demand higher rates from every insurer in the region.\n\nThis is the heart of the consolidation paradox: the same market dominance that delivers the financial \"benefit\" of payer leverage is precisely what harms patients and employers through higher prices. Systemness and market power are often two names for the same thing — which is why regulators increasingly treat the efficiency story with skepticism.",
+      "title": "When Market Dominance Becomes the Strategy"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Thinking Clearly About Systemness"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How should a student of hospital finance hold these competing realities? The honest synthesis is that integration has genuine potential benefits and a documented record of disappointing on them. The economies of scale, capital access, and data pooling are real and can, in principle, support better and more efficient care — especially the legitimate rescue of failing rural hospitals and the shift of care to lower-cost settings. But the dominant, measurable effect of consolidation as actually practiced has been higher prices driven by market power, not lower costs or better quality."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "Systemness is like merging several neighborhood hardware stores into a single chain. In theory, the chain buys in bulk, shares a warehouse, and passes savings to customers. In practice, once it is the only hardware store in town, the incentive to pass along savings evaporates — it can simply charge more because shoppers have nowhere else to go. The efficiencies may be real, but without competition, they tend to enrich the chain rather than the customer.",
+      "concept": "The promise vs. reality of health system consolidation"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This tension also connects to value-based care in a revealing way. Consolidation’s defenders increasingly justify it as necessary infrastructure for value-based, population-health-oriented care — the scale and pooled data needed to manage populations and bear risk. There is something to this: bearing capitation risk does require scale and capabilities. But the evidence that integration alone improves value is lacking, which means systemness is at best a potential enabler of value, not a guarantee of it. A system can consolidate, raise prices, and never deliver the value it promised."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For the board and the finance leader, the lesson is to separate the rhetoric of systemness from its measurable results. A merger may genuinely strengthen an organization’s balance sheet and capabilities — or it may simply buy market power that raises prices while doing little for patients. Distinguishing the two requires exactly the analytical discipline this course has built: looking past the strategic narrative to the actual financial and quality evidence. Systemness is neither salvation nor villainy; it is a powerful financial strategy whose benefits accrue unevenly, and whose price effects make it one of the most scrutinized and consequential forces in American health care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "\"Systemness\" is the financial and operational benefit health systems seek through integration — economies of scale, payer leverage, capital access, pooled data, and standardized care; nearly 70% of U.S. hospitals are now system-affiliated.",
+        "Integration occurs horizontally (hospital acquiring hospital, gaining market share) and vertically (acquiring physician practices and outpatient centers, controlling more of the care chain).",
+        "The evidence is consistent and inconvenient: consolidation rarely lowers costs or improves quality, and hospital charges rose with integration in 93% of studies measuring price changes.",
+        "Horizontal mergers in concentrated markets can raise prices 6%–65%, and vertical acquisition of physician practices raises their service prices ~14% on average (sometimes doubling).",
+        "The mechanism is market power, not efficiency — by 2022, one or two systems controlled the entire inpatient market in 47% of metro areas, letting dominant systems demand higher payer rates.",
+        "Consolidation’s higher prices raised premiums and out-of-pocket costs, contributing to an estimated ~$1 trillion reduction in U.S. worker wages from 2012 to 2022.",
+        "Regulators have responded: the FTC/DOJ issued modernized 2023 merger guidelines and increased enforcement, with deals like Novant Health’s 2024 acquisition canceled after FTC opposition.",
+        "Systemness has genuine potential benefits but a record of disappointing on them; it is at best a potential enabler of value-based care, not a guarantee, so leaders must judge mergers by measurable results rather than strategic rhetoric."
+      ]
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] KFF: \"One or Two Health Systems Controlled the Entire Market for Inpatient Hospital Care in Nearly Half of Metropolitan Areas\" — https://www.kff.org/health-costs/one-or-two-health-systems-controlled-the-entire-market-for-inpatient-hospital-care-in-nearly-half-of-metropolitan-areas/ — 47% of metros controlled by 1–2 systems (82% over 75%); ~70% of hospitals system-affiliated."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] American College of Surgeons: \"Improved Health Care Value Cannot Be Achieved by Hospital Mergers and Acquisitions Alone\" (2024) — https://www.facs.org/media-center/press-releases/2024/improved-health-care-value-cannot-be-achieved-by-hospital-mergers-and-acquisitions-alone/ — mergers rarely improve quality or lower costs; charges rose with integration in 13 of 14 studies (93%)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Bipartisan Policy Center: \"Health Care Provider Consolidation\" — https://bipartisanpolicy.org/issue-brief/health-care-provider-consolidation/ — horizontal vs. vertical integration definitions; horizontal mergers raising prices 6%–65%; physician-practice acquisition raising prices ~14%."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Advisory Board: \"Hospital mergers are leading to higher prices. Will regulators step in?\" — https://www.advisory.com/daily-briefing/2024/04/29/hospital-mergers — cross-market mergers raising prices ~13% over six years (21.8% when the acquired hospital had larger share)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] ScienceDirect: \"Vertical integration and market consolidation in healthcare: Policy drivers and impact on physicians and patient care\" — https://www.sciencedirect.com/science/article/pii/S104314892400037X — vertical integration’s anticompetitive price effects and reduced patient choice; ~$1 trillion wage reduction 2012–2022."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] KFF Health News: \"Biden’s FTC Has Blocked 4 Hospital Mergers\" / FTC speeches — https://kffhealthnews.org/news/article/biden-ftc-block-hospital-mergers-antitrust/ — 2023 modernized merger guidelines, increased enforcement, and the 2024 Novant Health cancellation after FTC opposition."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "hospital-finance",
+  "order": 17,
+  "slug": {
+    "_type": "slug",
+    "current": "health-system-integration"
+  },
+  "title": "Systemness: Financial Integration Across Health Systems"
+}

@@ -1,0 +1,95 @@
+{
+  "id": "5acc634e-e99a-4817-b0da-3f1c2c2ddd90",
+  "track_id": "6e36fdab-df2b-42e1-ab3a-dc28c560aee9",
+  "pillar": "equity",
+  "order": 5,
+  "slug": "hea-equity-weighted-economics",
+  "title": "Weighting Equity Into the Dollar: HEROI and Distributional Cost-Effectiveness",
+  "summary": "Standard cost-effectiveness analysis treats a QALY gained by an advantaged group the same as one gained by a disadvantaged group. Distributional cost-effectiveness analysis (DCEA) does not — and this platform's own HEROI composite is a working, documented example of building an equity-weighted score, including an honest label on the one dimension it cannot yet measure directly.",
+  "estimated_minutes": 25,
+  "objectives": [
+    {
+      "id": "obj_hea5a",
+      "text": "Explain why standard cost-effectiveness analysis can be equity-blind."
+    },
+    {
+      "id": "obj_hea5b",
+      "text": "Describe distributional cost-effectiveness analysis (DCEA) and the role of an inequality-aversion parameter."
+    },
+    {
+      "id": "obj_hea5c",
+      "text": "Walk through how HEROI's five weighted dimensions combine into a single composite score, including its documented proxy limitation."
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Conventional cost-effectiveness analysis (CEA) asks one question: for a given budget, which intervention produces the most total health (usually measured in quality-adjusted life years, or QALYs)? A QALY gained by a well-off, easy-to-reach population counts exactly the same as a QALY gained by a disadvantaged, hard-to-reach population. That is a deliberate simplification that makes CEA tractable — and it is also the reason CEA, used alone, can systematically favor interventions that help people who are already relatively well off, simply because they are cheaper to reach.",
+      "type": "text",
+      "heading": "Standard cost-effectiveness analysis is equity-blind by design"
+    },
+    {
+      "body": "Distributional cost-effectiveness analysis (DCEA) extends standard CEA by explicitly trading off total health gained against the reduction of health inequality — rather than maximizing total health alone.",
+      "type": "callout",
+      "heading": "Key Concept",
+      "variant": "info"
+    },
+    {
+      "body": "Richard Cookson, Susan Griffin, Ole Norheim, and Anthony Culyer's 2020 Oxford University Press volume, *Distributional Cost-Effectiveness Analysis: Quantifying Health Equity Impacts and Trade-Offs*, formalized DCEA as a field. Its central mechanism is the **equity weight**, derived from the Atkinson index of inequality aversion, denoted ε. At ε = 0, there is no special priority for the worst-off — DCEA collapses back to standard CEA. Cookson and colleagues' 2017 illustrative work used ε = 0.5 as a default representing mild inequality aversion; larger values put sharply more weight on health gains for the worst-off group. The choice of ε is itself a value judgment that a DCEA analysis should state explicitly, not bury in a footnote.",
+      "type": "text",
+      "heading": "Distributional cost-effectiveness analysis (DCEA)"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Weight on Access Equity in the HEROI composite",
+          "value": "25%",
+          "source": "Health Equity Studio, HEROI Composite Score tab"
+        },
+        {
+          "label": "Weight on Quality Equity",
+          "value": "25%",
+          "source": "Health Equity Studio"
+        },
+        {
+          "label": "Weight on Outcome Equity",
+          "value": "25%",
+          "source": "Health Equity Studio"
+        },
+        {
+          "label": "Weight on SDOH Burden, then Trust & Engagement",
+          "value": "15% + 10%",
+          "source": "Health Equity Studio"
+        }
+      ],
+      "heading": "The HEROI Composite — This Platform's Worked Example"
+    },
+    {
+      "body": "This platform's Health Equity Studio computes HEROI (Health Equity Return on Investment) as a weighted average of five 0–100 dimension scores, each fed by a different tab of the same tool. Access Equity blends the racial/ethnic disparity signal from the Disparity Calculator with the metro-vs-isolated-rural gap from the Geographic Access Gap Analyzer. Quality Equity and Outcome Equity are drawn from the same disparity-decomposition logic taught in Lesson 2, applied to quality and outcome measures respectively. SDOH Burden reuses the exact composite score built in the SDOH Composite & ROI tab — the same construction method taught in Lesson 4. Trust & Engagement is the fifth input.\n\nOpen the tool yourself at **/research-lab/population-equity?tab=equity** and select the HEROI Composite Score tab — the platform documents its own dimension notes inline, so you can see exactly which upstream tab feeds each weighted input, live, using whatever population profile you set on the Disparity Calculator tab.",
+      "type": "text",
+      "heading": "How HEROI actually combines its five inputs"
+    },
+    {
+      "body": "The Health Equity Studio's own documentation states plainly that its Trust & Engagement dimension is a documented proxy, pending real CAHPS (Consumer Assessment of Healthcare Providers and Systems) survey data — not a claim that it has already solved patient-trust measurement. This is the right way to handle a dimension you cannot yet measure directly: label the proxy, state what real data would replace it, and don't let the composite's clean final number imply more precision than the weakest input actually has.",
+      "type": "callout",
+      "heading": "Important — an honestly labeled proxy",
+      "variant": "warning"
+    },
+    {
+      "body": "Kaiser Permanente received the American Hospital Association's 2017 Equity of Care Award for embedding disparity reduction into its operating structure — physicians, nurses, and staff across its integrated system working from shared disparity data rather than each department tracking equity independently. The lesson for anyone building or using a composite like HEROI is the same one Kaiser's recognition illustrates: a composite score is only as useful as the organizational structure that acts on what it shows. A HEROI score computed once and filed away is a number; a HEROI score reviewed on the same cadence as a financial scorecard is a management tool.",
+      "type": "text",
+      "heading": "Case study: system-wide equity as a management discipline"
+    }
+  ],
+  "tags": [
+    "heroi",
+    "dcea",
+    "equity-weighting",
+    "cost-effectiveness"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-09-22T19:11:35.945152+00:00",
+  "updated_at": "2026-09-22T19:42:02.013259+00:00",
+  "sanity_slug": "hea-equity-weighted-economics"
+}

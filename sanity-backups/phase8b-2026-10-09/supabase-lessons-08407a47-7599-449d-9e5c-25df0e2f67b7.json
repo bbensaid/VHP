@@ -1,0 +1,75 @@
+{
+  "id": "08407a47-7599-449d-9e5c-25df0e2f67b7",
+  "track_id": "c43e2f66-f060-46ad-b2cf-bc8c20cf59b8",
+  "pillar": "operations",
+  "order": 3,
+  "slug": "documentation-compliance",
+  "title": "Documentation Requirements and Compliance",
+  "summary": "Clinical documentation must support every code assigned — insufficient documentation is both a revenue risk and a compliance risk.",
+  "estimated_minutes": 20,
+  "objectives": [
+    "Explain the documentation requirements for E/M coding under the 2021 AMA guidelines",
+    "Describe the role of Clinical Documentation Improvement (CDI) programs",
+    "Identify the compliance risks of upcoding and undercoding"
+  ],
+  "content_blocks": [
+    {
+      "body": "In 2021, the AMA significantly revised Evaluation and Management (E/M) coding guidelines for office and outpatient visits:\n\n- **Level of service** is now based on either **Medical Decision Making (MDM)** or **Total Time** on the date of the encounter\n- The old requirement to document all three key components (history, exam, MDM) was eliminated for established patients\n- For new patients, only two of three components are required\n- **Time-based billing** now counts total provider time on the date of service, not just face-to-face time\n\nThese changes were designed to reduce documentation burden and allow physicians to focus on medically relevant content.",
+      "type": "text",
+      "heading": "2021 E/M Documentation Guidelines"
+    },
+    {
+      "body": "CDI programs deploy trained specialists who review inpatient clinical documentation concurrently (while the patient is still admitted) to:\n\n1. Identify documentation gaps that may result in undercoding\n2. Query physicians to clarify ambiguous clinical language (e.g., 'anemia' vs. 'acute blood loss anemia')\n3. Ensure that the principal diagnosis, CCs, and MCCs are fully supported\n4. Improve DRG assignment accuracy and Case Mix Index (CMI)\n\nA strong CDI program can improve CMI by 0.1–0.3 points, translating to $5–15M annually for a 400-bed hospital.",
+      "type": "text",
+      "heading": "Clinical Documentation Improvement (CDI)"
+    },
+    {
+      "body": "Upcoding — assigning codes that reflect a higher level of service or severity than documented — is fraud. Penalties include False Claims Act liability (up to 3x damages + $13,000 per claim). But undercoding — assigning codes that underrepresent the severity of illness — is also harmful: it reduces reimbursement, understates patient acuity for quality measures, and masks true case complexity.",
+      "type": "callout",
+      "title": "Upcoding vs. Undercoding: Both Are Problems",
+      "variant": "warning"
+    },
+    {
+      "rows": [
+        [
+          "'Anemia' not further specified",
+          "Lower-weighted DRG",
+          "Revenue loss $1,500–4,000/case"
+        ],
+        [
+          "Sepsis vs. 'infection'",
+          "Significantly lower DRG",
+          "Revenue loss $5,000–15,000/case"
+        ],
+        [
+          "BMI not documented",
+          "Missing obesity CC/MCC",
+          "Revenue loss $2,000–8,000/case"
+        ],
+        [
+          "POA not indicated",
+          "HAC penalty risk",
+          "1% Medicare payment penalty"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Documentation Issue",
+        "Coding Impact",
+        "Revenue Impact"
+      ]
+    }
+  ],
+  "tags": [
+    "clinical documentation",
+    "CDI",
+    "E/M coding",
+    "compliance",
+    "medical necessity"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:31:21.639856+00:00",
+  "updated_at": "2026-06-01T13:14:49.45464+00:00",
+  "sanity_slug": "documentation-compliance"
+}

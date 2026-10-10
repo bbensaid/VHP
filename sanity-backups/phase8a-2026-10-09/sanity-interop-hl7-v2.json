@@ -1,0 +1,583 @@
+{
+  "_createdAt": "2026-05-29T02:41:09Z",
+  "_id": "interop-hl7-v2",
+  "_rev": "2zkDeD7zc2Ko2DfFHkT8vk",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T04:54:21Z",
+  "body": [
+    {
+      "_key": "s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "HL7 v2 Origins and Dominance"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "In March 1987, a group of hospital CIOs, software vendors, and healthcare informaticists convened at the Hospital of the University of Pennsylvania, convened by Dr. Sam Schultz, to solve a problem that was quietly strangling the modernization of American hospitals. Each clinical system — laboratory, radiology, pharmacy, admissions — had been built in isolation, and connecting any two of them required a bespoke, hand-crafted interface. With N systems in a hospital, you needed as many as N-squared custom integrations. The first version of HL7 (Health Level Seven) emerged from that 1987 meeting, and Version 2 was published the following year in 1988, adding billing and lab results workflows. HL7 v2 was not the most elegant technical design ever produced, but it was pragmatic, vendor-agnostic, and — crucially — it shipped at exactly the moment hospitals needed it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Nearly four decades later, HL7 Version 2 remains the dominant messaging standard in global healthcare. HL7 International reports that 95% of U.S. healthcare organizations use HL7 v2, and the standard has been adopted across more than 35 countries. Estimates place HL7 v2 at handling roughly 85% of all healthcare data exchanges in the United States, with American hospitals collectively processing over 15 billion HL7 v2 messages annually. Every major EHR, laboratory information system, radiology information system, and pharmacy system supports HL7 v2. This is not simply legacy inertia — it is a reflection of how deeply the format is woven into clinical operations that cannot afford downtime, data loss, or ambiguity."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The enduring dominance of HL7 v2 is a case study in how standards succeed in high-stakes industries. The format works. It is human-readable enough that a trained analyst can eyeball a raw message and diagnose a problem. It is compact enough to perform well over slow network connections. And it arrived before the internet era, meaning it was designed for point-to-point TCP connections — the network topology that hospital infrastructure was built around. Newer standards like HL7 FHIR offer dramatically better design and web-native interoperability, but replacing HL7 v2 requires replacing thousands of carefully tuned, mission-critical interfaces. Most health systems will run HL7 v2 well into the 2040s alongside FHIR, not instead of it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1stats",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Use HL7 v2 according to HL7 International",
+          "label": "U.S. Healthcare Organizations",
+          "value": "95%"
+        },
+        {
+          "_key": "s2",
+          "context": "Estimated share handled by HL7 v2 in the U.S.",
+          "label": "Healthcare Data Exchanges",
+          "value": "85%"
+        },
+        {
+          "_key": "s3",
+          "context": "Have adopted the HL7 v2 standard",
+          "label": "Countries Worldwide",
+          "value": ">35"
+        },
+        {
+          "_key": "s4",
+          "context": "HL7 v2 messages processed by U.S. hospitals each year",
+          "label": "Messages Annually",
+          "value": "15B+"
+        },
+        {
+          "_key": "s5",
+          "context": "Committee established at the University of Pennsylvania",
+          "label": "Year HL7 Was Founded",
+          "value": "1987"
+        },
+        {
+          "_key": "s6",
+          "context": "Mirth Connect, a leading HL7 engine, operates in over 40 countries",
+          "label": "Countries Deploying Mirth",
+          "value": "~40"
+        }
+      ]
+    },
+    {
+      "_key": "s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Message Structure: Segments, Fields, and the Pipe-Delimited Format"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "HL7 v2 messages are plain text, structured hierarchically using delimiter characters rather than XML tags or JSON keys. The vertical bar (pipe, \"|\") separates fields within a segment. The caret (\"^\") separates components within a field. The tilde (\"~\") separates repetitions of a field. And the ampersand (\"&\") separates sub-components. This means a raw HL7 v2 message looks, to the uninitiated, like line noise — but to integration engineers, each position carries precise clinical meaning. Every message begins with an MSH (Message Header) segment, which encodes the sending application, receiving application, message type, timestamp, and a unique message control ID. If any segment is the \"shipping label\" of the HL7 envelope, it is MSH."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "After MSH, a patient-level message will typically contain a PID (Patient Identification) segment carrying demographics: medical record number, name, date of birth, sex, address, and contact information. The PID segment is the foundation for patient matching across disparate systems — a notoriously difficult problem given that the same patient may have different identifiers in the EHR, the lab system, and the insurance system. For clinical orders and results, the OBR (Observation Request) segment describes what was ordered — the test, the ordering provider, the specimen collection time — while one or more OBX (Observation Result) segments carry the actual result values, reference ranges, and abnormal flags. A single lab panel can generate dozens of OBX segments, one per analyte."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "A realistic HL7 v2 lab result message (ORU^R01) might look like this: \"MSH|^~\\&|LAB_SYS|MAIN_HOSPITAL|EHR|MAIN_HOSPITAL|20240315143022||ORU^R01|MSG00123|P|2.5\" on the first line, followed by \"PID|1||MRN123456^^^MAIN_HOSPITAL||JOHNSON^SARAH^M||19820714|F\" identifying the patient, then \"OBR|1|ORD987654|LAB987654|85025^COMPLETE BLOOD COUNT^CPT\" describing the CBC order, and finally a series of OBX lines such as \"OBX|1|NM|718-7^HEMOGLOBIN^LN||13.8|g/dL|12.0-16.0|N|||F\" carrying the hemoglobin result with value, units, reference range, and a normal flag. Parsing that string correctly requires knowing not just the delimiters but the HL7 data type and table definitions for every field position. This is why integration engines and parser libraries exist."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex",
+      "_type": "exampleBlock",
+      "content": "OBX|1|NM|718-7^HEMOGLOBIN^LN||13.8|g/dL|12.0-16.0|N|||F\n\nField 1 (Set ID): 1 — sequence number within the message\nField 2 (Value Type): NM — numeric\nField 3 (Observation Identifier): 718-7^HEMOGLOBIN^LN — LOINC code, name, coding system\nField 5 (Observation Value): 13.8 — the result\nField 6 (Units): g/dL\nField 7 (Reference Range): 12.0–16.0\nField 8 (Abnormal Flag): N — normal\nField 11 (Observation Result Status): F — final result",
+      "title": "Anatomy of an OBX Segment"
+    },
+    {
+      "_key": "s3h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Common Message Types and Clinical Workflows"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The ADT (Admit, Discharge, Transfer) family of messages is the heartbeat of hospital operations. When a patient arrives and is admitted, the registration system fires an ADT^A01 message to every downstream system — the pharmacy, the dietary system, the billing engine, the clinical documentation platform — so that each knows a new patient encounter has begun. When that patient moves from the emergency department to the ICU, an ADT^A02 transfer message propagates the location change. When they go home, ADT^A03 closes the encounter. And whenever patient demographics are corrected — a misspelled name, an updated insurance ID — ADT^A08 broadcasts the update. These four event types (A01, A02, A03, A08) alone account for the majority of ADT message volume in most health systems, and their reliable delivery is a prerequisite for accurate care coordination, billing, and quality reporting."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The ORM (Order Message) and ORU (Observation Result Unsolicited) pair forms the backbone of the diagnostic cycle. When a clinician places a lab or radiology order, the EHR sends an ORM^O01 to the laboratory or radiology information system. The receiving system acknowledges with an ACK (acknowledgment) message, then begins processing. When results are available, the lab system returns an ORU^R01 carrying OBX segments for each result. This bidirectional ORM-to-ORU loop happens millions of times per day across U.S. hospitals. For scheduling, SIU (Scheduling Information Unsolicited) messages — ranging from SIU^S12 (notification of new appointment) to SIU^S15 (notification of appointment cancellation) — synchronize scheduling modules across EHR, radiology, and referral management platforms. MDM (Medical Document Management) messages, particularly MDM^T02, carry transcribed clinical notes, operative reports, and discharge summaries from dictation and transcription platforms back into the EHR."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Understanding these message types is essential for anyone troubleshooting an integration failure or designing a new interface. When a provider complains that lab results are not appearing in the EHR, the problem is almost certainly in the ORU pipeline — perhaps a malformed OBX segment, an unrecognized LOINC code in OBX-3, or a mismatch in the patient identifier that prevents the result from attaching to the correct encounter. When the pharmacy does not know a patient has been admitted, the ADT^A01 message likely failed delivery or was silently dropped due to a message profile mismatch. Tracing the HL7 message type immediately narrows the diagnostic search space from the entire hospital IT ecosystem to a specific interface and segment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Clinician selects a lab test in the EHR; the system generates an ORM^O01 message containing the order details in OBR and patient details in PID.",
+          "title": "Provider Places Order"
+        },
+        {
+          "_key": "step2",
+          "description": "The integration engine routes the ORM via MLLP over TCP to the Laboratory Information System (LIS). The LIS sends back an ACK to confirm receipt.",
+          "title": "Order Transmitted to Lab"
+        },
+        {
+          "_key": "step3",
+          "description": "The lab collects the specimen, runs the analyzer, and records results. The LIS generates an ORU^R01 with one OBX segment per result value.",
+          "title": "Specimen Collected and Analyzed"
+        },
+        {
+          "_key": "step4",
+          "description": "The LIS transmits the ORU^R01 back through the integration engine to the EHR. The EHR parses the message and attaches results to the patient encounter.",
+          "title": "Result Delivered to EHR"
+        },
+        {
+          "_key": "step5",
+          "description": "The EHR alerts the ordering provider that results are available, completing the diagnostic loop.",
+          "title": "Provider Notified"
+        }
+      ],
+      "title": "The Order-Result Cycle in HL7 v2"
+    },
+    {
+      "_key": "s4h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The HL7 v2 Interoperability Problem: Standards That Do Not Standardize"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "HL7 v2's greatest strength — flexibility — is also its deepest flaw. The standard defines message structures but does not enforce vocabulary, implementation choices, or local customizations. Two systems that both claim compliance with HL7 v2.3 can be entirely incompatible in practice. One laboratory might encode hemoglobin results using a local code \"HGB\" in OBX-3, while another uses the LOINC code \"718-7^HEMOGLOBIN^LN\". Both are technically valid under HL7 v2.3. The receiving EHR, however, may only be configured to recognize LOINC codes — meaning the first lab's results will be received but silently fail to map, leaving clinicians staring at an empty result field while the data sits orphaned in an integration engine queue. This kind of silent failure is more dangerous than an outright error."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Z-segment mechanism exemplifies this tension between flexibility and interoperability. Every HL7 v2 segment beginning with the letter \"Z\" is a locally defined, proprietary extension. Vendors use Z-segments to transmit data that either does not fit in standard segments or that they prefer to keep in custom structures — patient consent flags, scheduling metadata, insurance authorization codes. A ZIN segment from one vendor and a ZIN segment from a different vendor may share a name but carry completely different fields. Receiving systems that encounter an unknown Z-segment are typically configured to ignore it silently. This means critical data encoded in Z-segments by the sending system may simply vanish at the receiving end unless both parties have explicitly agreed on the custom structure, documented it, and implemented it — which requires ongoing bilateral coordination that rarely scales across a health system with hundreds of interfaces."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The practical consequence of HL7 v2's implementation flexibility is a phenomenon called \"interface engine proliferation.\" Because each connection between two systems requires custom translation logic to reconcile differences in field usage, code sets, and Z-segments, health systems have accumulated integration engines — Mirth Connect, Rhapsody, InterSystems HealthShare, Cloverleaf — running thousands of individual channel configurations. A large academic medical center may operate 800 to 1,200 active HL7 interfaces, each one a small bespoke software artifact. This creates a massive, hidden infrastructure burden: every upgrade to an EHR or lab system can break dozens of interfaces, each of which must be individually tested and repaired. The interfaces collectively represent years of engineering effort and institutional knowledge that is rarely documented adequately."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4warn",
+      "_type": "warningBlock",
+      "message": "HL7 v2 interfaces frequently accept and acknowledge messages (sending back an ACK) that they then fail to process correctly due to code mapping errors or unrecognized Z-segments. This means clinical data — lab results, medication orders — can appear to have been delivered successfully while actually being lost or misfiled. Integration monitoring tools that check beyond ACK status are essential for detecting these silent failures.",
+      "title": "The Silent Failure Risk"
+    },
+    {
+      "_key": "s4analogy",
+      "_type": "analogyBlock",
+      "analogy": "Imagine if the United States had a national standard for electrical outlets that specified the shape of the plug but not the voltage, frequency, or current rating — and allowed any manufacturer to add extra pins labeled with whatever letters they chose. Every device would technically use the \"standard\" outlet, but you would need a custom adapter for every device-outlet combination. That is HL7 v2 interoperability in practice.",
+      "concept": "HL7 v2 defines message structure (the plug shape) but leaves vocabulary, coding systems, and local extensions (the voltage and custom pins) to each implementer — creating the illusion of standardization while preserving the reality of point-to-point incompatibility."
+    },
+    {
+      "_key": "s5h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hs",
+          "_type": "span",
+          "marks": [],
+          "text": "HL7 v2 and FHIR Coexistence: The Long Transition"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "HL7 FHIR (Fast Healthcare Interoperability Resources), published in 2014 and now at Release 4 and beyond, was designed to address almost every limitation of HL7 v2: it uses RESTful APIs and JSON/XML, enforces structure through defined resource types, mandates standard terminologies, and is natively web-compatible. The question is not whether FHIR is technically superior to HL7 v2 — it clearly is. The question is how to get from here to there without disrupting the billions of clinical transactions that depend on HL7 v2 every day. The answer, increasingly, is that they will coexist for decades. HL7 International has explicitly recognized this reality by publishing the official HL7 Version 2 to FHIR Implementation Guide, a project maintained by the Orders and Observations working group that provides standardized mappings from HL7 v2 messages, segments, and data types to their FHIR R4 equivalents."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The transport layer for HL7 v2 — MLLP, the Minimal Lower Layer Protocol — is another dimension of the legacy that will persist. MLLP wraps HL7 v2 messages in a simple envelope using start-of-block (ASCII 0x0B) and end-of-block (ASCII 0x1C) characters, then transmits the wrapped message over a persistent TCP connection. MLLP has no inherent security or encryption; it relies on TLS or IPsec at the network layer for protection of PHI in transit. It has no standard port — port 6660 is commonly used by convention — and it requires a persistent, stateful TCP connection between sender and receiver. Every major integration engine — Mirth Connect, Rhapsody, InterSystems, Cloverleaf — maintains MLLP listener and sender components as core capabilities. As long as legacy systems speak only MLLP, the integration engine's job is to receive MLLP HL7 v2, transform it to FHIR, and deliver it to modern API endpoints — acting as a universal translator at the boundary between eras."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The v2-to-FHIR mapping project (available at build.fhir.org/ig/HL7/v2-to-fhir) defines, for example, how the fields of an HL7 v2 PID segment map to FHIR Patient resource attributes: PID-3 (Patient Identifier List) maps to Patient.identifier, PID-5 (Patient Name) maps to Patient.name, PID-7 (Date of Birth) maps to Patient.birthDate, and so on. Similarly, an ADT^A01 message maps to a FHIR Bundle containing a MessageHeader, Patient, Encounter, and related resources. These mappings allow integration engines to serve as automated translators — converting the legacy pipe-delimited messages arriving from a 20-year-old laboratory system into standards-conformant FHIR resources that can be consumed by a modern clinical decision support platform or a patient-facing app operating under 21st Century Cures Act API mandates. The coexistence of v2 and FHIR is not a failure of modernization; it is the realistic, pragmatic path forward for an industry where patient safety cannot tolerate a big-bang replacement of working infrastructure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5compare",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "HL7 Version 2",
+        "points": [
+          "Pipe-delimited plain text format",
+          "Transported via MLLP over TCP (stateful)",
+          "No enforced vocabulary or coding system",
+          "Z-segments for local extensions",
+          "Point-to-point, push-based messaging",
+          "Dominant in clinical operations since 1988",
+          "Every major EHR and LIS supports it natively"
+        ]
+      },
+      "right": {
+        "label": "HL7 FHIR R4",
+        "points": [
+          "JSON or XML over RESTful HTTP",
+          "Stateless API calls, web-native",
+          "Structured resources with defined data types",
+          "Extensions are typed and versioned",
+          "Pull-based queries and event subscriptions",
+          "Required for CMS/ONC API mandates since 2021",
+          "Growing adoption in patient-facing and analytics apps"
+        ]
+      },
+      "title": "HL7 v2 vs. FHIR: Key Differences"
+    },
+    {
+      "_key": "s5callout",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5callouts",
+          "_type": "span",
+          "marks": [],
+          "text": "The HL7 v2-to-FHIR Implementation Guide (published by HL7 International, Orders and Observations WG) is the authoritative bridge document for organizations managing the transition. Integration engines use these mappings to auto-translate incoming HL7 v2 traffic into FHIR resources, enabling modern applications to consume legacy data without requiring source system upgrades."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "tkwy",
+      "_type": "takeawayBlock",
+      "points": [
+        "HL7 Version 2 was created in 1987–1988 to solve the N-squared interface problem in hospitals, and now handles an estimated 85% of U.S. healthcare data exchanges.",
+        "95% of U.S. healthcare organizations use HL7 v2; American hospitals process over 15 billion v2 messages per year.",
+        "HL7 v2 messages are pipe-delimited plain text; the MSH segment is the mandatory header, PID carries patient identity, OBR carries order details, and OBX carries individual result values.",
+        "ADT messages (A01 admit, A02 transfer, A03 discharge, A08 update) are the heartbeat of hospital operations; ORU carries results; ORM carries orders; SIU carries scheduling events; MDM carries clinical documents.",
+        "HL7 v2's fatal flaw is implementation flexibility without enforcement: two v2.3-compliant systems can be incompatible due to different code sets, field usage, and proprietary Z-segments.",
+        "Z-segments (any segment beginning with \"Z\") are local custom extensions; receiving systems typically ignore unknown Z-segments, creating silent data loss risks.",
+        "MLLP (Minimal Lower Layer Protocol) is the standard transport for HL7 v2 over TCP — it wraps messages in start/end block characters and has no built-in security.",
+        "HL7 International has published an official v2-to-FHIR Implementation Guide; integration engines serve as translators between the HL7 v2 legacy world and modern FHIR APIs, enabling coexistence rather than replacement."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "The positive ACK confirms the message was received at the transport layer, but it does not guarantee the EHR successfully parsed and filed the data. A mismatch between the laboratory's local observation code in OBX-3 and the EHR's expected coding system (e.g., LOINC) is the most common cause of this \"ghost delivery\" failure pattern — the message arrives, is acknowledged, and is then silently discarded or queued as unmapped. This is one of the most dangerous failure modes in HL7 v2 integration because clinical staff receive no alert and may believe results are simply pending.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The MLLP connection timed out before the ACK was transmitted."
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "A code mapping failure — the OBX observation identifier uses a local code the EHR does not recognize — caused the result to be received but not filed."
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The ADT^A03 discharge message closed the encounter before the result arrived."
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The PID segment was missing, so the entire message was rejected at the MLLP layer."
+        }
+      ],
+      "question": "A hospital's EHR receives an HL7 v2 ORU^R01 message from the laboratory and sends back a positive ACK, yet the lab results never appear in the patient chart. What is the most likely cause?"
+    },
+    {
+      "_key": "srch",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srchs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] \"A History of HL7: From Terminals to APIs\" — Medblocks Blog — https://medblocks.com/blog/a-history-of-hl7-from-terminals-to-apis — Confirms HL7 was founded in March 1987 at the Hospital of the University of Pennsylvania and that HL7 v2 was published in 1988 with billing and lab results workflows."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] \"HL7 Version 2\" — National Library of Medicine / NIH — https://www.nlm.nih.gov/oet/ed/healthdatastandards/03-300.html — Source for HL7 v2 adoption statistics: 95% of U.S. healthcare organizations, adoption in 35+ countries, and dominance in data exchange."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] \"HL7 Version 2 to FHIR — Introduction\" — HL7 International, Orders and Observations WG — https://build.fhir.org/ig/HL7/v2-to-fhir/introduction.html — Official Implementation Guide confirming the existence and scope of the v2-to-FHIR mapping project, including segment-level ConceptMaps for FHIR R4."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] \"Minimal Lower Layer Protocol\" — Wikipedia — https://en.wikipedia.org/wiki/Minimal_Lower_Layer_Protocol — Definition of MLLP, its use of start/end block ASCII characters over TCP, the absence of a standard port (port 6660 by convention), and the reliance on TLS for security."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] \"Custom Segments: HL7 Z-segments\" — iNTERFACEWARE Blog — https://blog.interfaceware.com/custom-segments-hl7-z-segments/ — Explains Z-segment convention (all custom segments begin with \"Z\"), their purpose for local data not covered by the standard, and the interoperability risk when receiving systems ignore unknown Z-segments."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] \"HL7 ADT — Admit Discharge Transfer\" — Rhapsody Health — https://rhapsody.health/resources/hl7-adt/ — Defines ADT event types A01 (admit), A02 (transfer), A03 (discharge), and A08 (patient information update) and their clinical workflow roles."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] \"HL7 Message Types: ADT, ORU, ORM, DFT & SIU\" — Saga IT — https://saga-it.com/blog/hl7-message-types-explained — Comprehensive reference for ORU^R01 (results), ORM^O01 (orders), SIU scheduling events, and MDM document management messages with workflow descriptions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "interop-hl7-v2"
+  },
+  "title": "HL7 Version 2: The Workhorse of Healthcare Messaging"
+}

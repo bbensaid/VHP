@@ -1,0 +1,509 @@
+{
+  "_createdAt": "2026-06-02T13:33:33Z",
+  "_id": "housing-as-health-care",
+  "_rev": "Gtio4gKoJ677Mg6YJHlbQ5",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T13:33:33Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Housing Is a Clinical Variable"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Of all the social determinants, housing has perhaps the most direct and measurable relationship to health. Housing instability — whether eviction risk, overcrowding, unsafe conditions, or outright homelessness — degrades health through many channels at once: exposure to the elements, interrupted medication and treatment, inability to store food or insulin, untreated chronic disease, violence, and relentless stress. It is difficult to manage diabetes, heart failure, or a mental illness without a stable, safe place to sleep."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The numbers are stark. People experiencing homelessness in the United States have an average age of death around 48 years — more than two decades shorter than the general population — and mortality rates three to six times higher than housed peers. They rely heavily on emergency departments and inpatient care because the structural barriers to primary and preventive care are so high. Housing instability is not a backdrop to their health problems; it is a primary driver of them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For a health system operating under value-based contracts, this population is often the most expensive and hardest to manage. A chronically unhoused patient with several conditions can cycle through the emergency department dozens of times a year. From both a moral and a financial standpoint, treating that patient's medical conditions while ignoring their homelessness is treating the symptom and leaving the cause untouched."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Housing instability is a primary driver of poor health, not a side issue. People experiencing homelessness die roughly 26 years earlier than the general population and use emergency and inpatient care at far higher rates."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Cost Logic: Why Housing Can Save Money"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "There is a compelling economic argument layered on top of the moral one. The highest-utilizing unhoused patients generate enormous, largely avoidable costs through repeated emergency visits, inpatient stays, and complications of conditions that could be managed in stable settings. For these patients, the cost of doing nothing is not zero — it is very high, just paid through the most expensive part of the system."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is the core insight behind treating housing as a health intervention: providing stable housing to a high-need individual can reduce their use of crisis care enough to partly or fully offset the cost of the housing itself. The savings are not guaranteed for every person, and the strongest effects concentrate among the highest utilizers, but the logic has held up well enough to attract serious investment from payers and health systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two cautions matter. First, the business case is strongest for the chronically homeless with high medical utilization, not for everyone with a housing need — the math does not work the same way across the whole population. Second, framing housing purely as cost savings can be a trap: if a program does not produce net savings, that does not make it a failure, because reducing avoidable death and suffering has value independent of the spreadsheet."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Roughly 26+ years shorter than the general US population, per Community Solutions",
+          "label": "Average age of death, people experiencing homelessness",
+          "value": "~48 yrs"
+        },
+        {
+          "_key": "s2",
+          "context": "Among adults experiencing homelessness, per systematic reviews",
+          "label": "Mortality rate vs. housed population",
+          "value": "3-6x"
+        },
+        {
+          "_key": "s3",
+          "context": "From a randomized controlled trial of Housing First",
+          "label": "Stable housing at 1 year (Housing First vs usual care)",
+          "value": "73% vs 31%"
+        },
+        {
+          "_key": "s4",
+          "context": "Plus 41% improved housing stability, 2021 comparative study",
+          "label": "Reduction in homelessness, Housing First vs Treatment First",
+          "value": "88%"
+        }
+      ]
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Housing First: The Evidence-Based Model"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The dominant evidence-based approach is Housing First. Its premise is a reversal of older \"treatment first\" models: rather than requiring a person to achieve sobriety, complete treatment, or demonstrate \"housing readiness\" before earning housing, Housing First provides permanent housing immediately and unconditionally, then wraps supportive services around the person in their new home."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The rationale is both humane and pragmatic. Expecting someone to resolve addiction or serious mental illness while sleeping on the street or in a shelter inverts the order in which recovery actually happens — stability comes first, and it makes everything else more achievable. Removing the preconditions also stops screening out the very people with the most acute needs, who are least able to clear a readiness bar."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The evidence is strong, particularly for chronically homeless people with serious mental illness or substance use disorders. Randomized controlled trials find Housing First produces dramatically higher housing retention than treatment-as-usual — in one trial, 73% of Housing First participants were stably housed at one year versus 31% of the comparison group. A 2021 comparison found Housing First decreased homelessness by 88% and improved housing stability by 41% relative to Treatment First, and the model is consistently associated with reduced hospitalization and emergency department use."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "Housing First has been tested in multiple randomized controlled trials, including large multi-site studies in the US and Canada (such as the At Home/Chez Soi trial). The defining results: people offered immediate, unconditional permanent housing with supports stay housed at far higher rates than those in treatment-first programs — about 73% versus 31% stably housed at one year in one US trial.\nA 2021 comparative analysis found Housing First reduced homelessness by 88% and improved housing stability by 41% versus Treatment First, and trials consistently show reduced use of hospitals and emergency departments. Housing First is now endorsed as a best practice for ending chronic homelessness, even for people who are actively using substances.",
+      "title": "Housing First — Randomized Trial Evidence"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Health Systems and Medicaid Pay for Housing"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Recognizing housing as health care, payers and health systems have built mechanisms to fund housing-related services — with an important boundary. Federal Medicaid dollars generally cannot pay for \"room and board\" (rent itself) as an ongoing benefit, but they can increasingly pay for the services that help people find and keep housing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "In November 2023, CMS released a Medicaid and CHIP Health-Related Social Needs (HRSN) Framework that, through Section 1115 demonstration waivers, allowed states to cover a defined menu of housing supports: housing transition and navigation services, tenancy-sustaining services such as eviction prevention and tenant-rights education, one-time moving costs, and home modifications — plus, for specific high-need populations, up to six months of transitional rent and up to six months of nutrition services. By early 2024, several states had approved demonstrations under this framework."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This policy area is in flux and worth tracking. In March 2025, the federal administration rescinded the November 2023 HRSN guidance and framework, stating it would review state requests to cover health-related social needs on a case-by-case basis under existing statute rather than the standardized framework. The underlying authority to use 1115 waivers for housing supports remains, but the standardized national framework that had accelerated adoption was withdrawn — a reminder that the financing of housing-as-health-care depends on shifting federal policy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Help finding housing, applying for units, and completing the move-in process.",
+          "title": "Housing transition / navigation"
+        },
+        {
+          "_key": "step2",
+          "description": "Eviction prevention, tenant-rights education, and landlord mediation to keep people housed.",
+          "title": "Tenancy-sustaining services"
+        },
+        {
+          "_key": "step3",
+          "description": "Security deposits, first-month setup, and moving expenses (where authorized).",
+          "title": "One-time transition costs"
+        },
+        {
+          "_key": "step4",
+          "description": "Short-term residential recuperative care for people too sick for the street but not needing a hospital.",
+          "title": "Medical respite"
+        },
+        {
+          "_key": "step5",
+          "description": "Under the 2023 HRSN framework, up to six months of rent for specific high-need populations — subject to current federal policy.",
+          "title": "Transitional rent (limited)"
+        }
+      ],
+      "title": "Housing Supports Health Systems and Medicaid Can Fund"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What This Means in Practice"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "For frontline clinical teams, the practical implications start with screening: identifying housing instability through SDOH screening and documenting it (Z59 codes capture housing and economic problems). A patient flagged as unstably housed or homeless should trigger a referral pathway — to a housing navigator, a community partner, or a medical respite program — not just a note in the chart."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medical respite deserves special mention. It provides short-term residential care for people experiencing homelessness who are too ill to recover on the street but do not need a hospital bed. Respite programs reduce inappropriate emergency department use and readmissions by giving patients a safe place to heal — a concrete, fundable intervention that sits squarely at the intersection of housing and health care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "At the system level, some health systems have gone further and invested directly in affordable housing as a population-health strategy, treating it as a way to reduce their most expensive utilization while improving outcomes. Whether through direct investment, Medicaid-funded services, or community partnerships, the throughline is the same: a system that treats housing as outside its lane is leaving one of the most powerful health levers untouched."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "Be precise about what is fundable. Standard federal Medicaid does not cover ongoing rent or \"room and board\" as a benefit. It can cover housing-related services (navigation, tenancy support) and, under specific 1115 authorities, time-limited transitional rent for defined populations. The exact scope depends on each state's waiver and current federal policy, which changed in 2025.",
+      "title": "Medicaid generally cannot pay open-ended rent"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Housing instability is a primary driver of poor health: people experiencing homelessness die ~26 years earlier than average and use crisis care at far higher rates.",
+        "For high-utilizing unhoused patients, the cost of doing nothing is high — making stable housing a potential health intervention that can offset crisis-care spending.",
+        "Housing First provides permanent housing immediately and unconditionally, then adds supports — reversing the older \"treatment first / housing readiness\" model.",
+        "RCTs show Housing First works: ~73% vs 31% stably housed at one year, an 88% reduction in homelessness vs Treatment First, and reduced hospital and ED use.",
+        "Federal Medicaid generally cannot pay ongoing rent, but can fund housing-related services; the 2023 CMS HRSN framework added time-limited transitional rent via 1115 waivers.",
+        "That HRSN framework was rescinded in March 2025, moving back to case-by-case review — financing of housing-as-health-care depends on shifting federal policy.",
+        "Clinically, screen for housing instability (Z59 codes), refer to navigators or medical respite, and recognize respite care as a fundable bridge between street and hospital."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Housing First provides permanent housing immediately, without preconditions such as sobriety, treatment completion, or proven \"housing readiness,\" and then wraps supportive services around the person. Randomized controlled trials show it produces dramatically higher housing retention than treatment-as-usual (e.g., ~73% vs 31% stably housed at one year) and reduces hospital and emergency department use, making it the evidence-based standard for ending chronic homelessness.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Housing is provided only after the person completes treatment and demonstrates 90 days of sobriety"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Permanent housing is provided immediately and unconditionally, then supports are added — and RCTs show far higher housing retention than treatment-first models"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Temporary shelter is provided while treatment begins, with housing contingent on employment"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Housing vouchers are issued but only to people who pass a housing-readiness assessment"
+        }
+      ],
+      "question": "What is the core principle of the Housing First model, and what does the evidence show?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Community Solutions — \"The Costs and Harms of Homelessness\" — https://community.solutions/research-posts/the-costs-and-harms-of-homelessness/ — average age of death ~48 (≥26 years shorter than the general population); mortality 3-6x higher; elevated ED use."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] National Low Income Housing Coalition — \"The Case for Housing First\" — https://nlihc.org/sites/default/files/Housing-First-Research.pdf — RCT evidence (73% vs 31% stably housed at one year); reduced hospitalization and ED use."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] \"Is the Housing First Model Effective? Different Evidence for Different Outcomes,\" PMC — https://pmc.ncbi.nlm.nih.gov/articles/PMC7427255/ — 2021 comparison: Housing First decreased homelessness by 88% and improved housing stability by 41% vs Treatment First."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] KFF — \"Section 1115 Medicaid Waiver Watch: Recent Approvals to Address Health-Related Social Needs (HRSN)\" — https://www.kff.org/medicaid/section-1115-medicaid-waiver-watch-a-closer-look-at-recent-approvals-to-address-health-related-social-needs-hrsn/ — November 2023 CMS HRSN framework; housing supports, up to 6 months transitional rent; approved state demonstrations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] State Health & Value Strategies — \"CMS Releases Updated HRSN Framework for Medicaid and CHIP\" — https://shvs.org/cms-releases-updated-hrsn-framework-for-medicaid-and-chip/ — scope of Medicaid housing supports (no room and board); March 2025 rescission of the 2023 HRSN framework."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "health-equity-sdoh",
+  "order": 6,
+  "slug": {
+    "_type": "slug",
+    "current": "housing-as-health-care"
+  },
+  "title": "Housing as Health Care: Homelessness, Eviction & the Medical Costs"
+}

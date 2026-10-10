@@ -1,0 +1,84 @@
+{
+  "id": "97e9a337-fd00-440a-b494-aecd886031b7",
+  "track_id": "95e1411d-62ce-4872-8f02-04dc41fed7ff",
+  "pillar": "economics",
+  "order": 2,
+  "slug": "reading-hospital-financial-statements",
+  "title": "Reading a Hospital Financial Statement",
+  "summary": "Hospital financial statements follow FASB ASC 954 and include an income statement, balance sheet, and cash flow statement with healthcare-specific line items. This lesson decodes each statement and explains what the numbers reveal about organizational health.",
+  "estimated_minutes": 30,
+  "objectives": [
+    "Identify the key components of a hospital income statement, including net patient service revenue and operating expenses",
+    "Read a hospital balance sheet and assess liquidity through days cash on hand",
+    "Explain what the statement of cash flows reveals about capital investment activity"
+  ],
+  "content_blocks": [
+    {
+      "body": "Unlike a retail company's income statement, a hospital's begins with **gross patient service revenue**—charges at full chargemaster rates—then subtracts contractual adjustments, charity care, and bad debt to arrive at **net patient service revenue**. Other operating revenue (parking, cafeteria, research grants) is added to produce **total operating revenue**.\n\nOperating expenses typically break down as:\n- **Salaries and benefits:** 50–60% of total expenses\n- **Supplies:** 15–20%\n- **Purchased services:** 8–12%\n- **Depreciation:** 4–6%\n- **Interest:** 1–3%\n\nThe bottom line is **operating income (loss)**. Nonprofits also report **non-operating revenue** (investment income, contributions) leading to an **excess of revenues over expenses**—the nonprofit analog to net income.",
+      "type": "text",
+      "heading": "The Hospital Income Statement"
+    },
+    {
+      "rows": [
+        [
+          "Income Statement",
+          "Revenue and expenses over a period",
+          "Net patient service revenue, salary expense, operating margin"
+        ],
+        [
+          "Balance Sheet",
+          "Assets, liabilities, and net assets at a point in time",
+          "Cash, accounts receivable, long-term debt, net assets"
+        ],
+        [
+          "Cash Flow Statement",
+          "Sources and uses of cash",
+          "Operating cash flow, capital expenditures, bond proceeds"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Statement",
+        "What It Shows",
+        "Key Hospital Line Items"
+      ]
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Days cash on hand (target)",
+          "value": "150+",
+          "context": "HFMA/Moody's benchmark; hospitals below 100 days face rating pressure"
+        },
+        {
+          "label": "Labor as % of expenses",
+          "value": "50–60%",
+          "context": "Salaries and benefits are by far the largest hospital cost category"
+        },
+        {
+          "label": "Debt service coverage ratio",
+          "value": ">2.0x",
+          "context": "Most bond covenants require DSCR above 1.10–1.25; investment-grade targets >2.0x"
+        }
+      ]
+    },
+    {
+      "body": "Days Cash on Hand = (Cash + Short-term Investments) / (Total Operating Expenses − Depreciation) × 365\n\nThis ratio tells you how many days a hospital could operate using only its liquid reserves if all revenue stopped. Moody's considers 150+ days strong; below 100 days raises concern.",
+      "type": "callout",
+      "title": "Days Cash on Hand Formula",
+      "variant": "tip"
+    }
+  ],
+  "tags": [
+    "financial statements",
+    "income statement",
+    "balance sheet",
+    "FASB ASC 954"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:34:35.305156+00:00",
+  "updated_at": "2026-06-01T13:29:14.16464+00:00",
+  "sanity_slug": "reading-hospital-financial-statements"
+}

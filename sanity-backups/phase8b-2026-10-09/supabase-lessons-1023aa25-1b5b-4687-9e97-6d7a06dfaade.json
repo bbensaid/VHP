@@ -1,0 +1,63 @@
+{
+  "id": "1023aa25-1b5b-4687-9e97-6d7a06dfaade",
+  "track_id": "f4b5a826-f843-4b4f-829b-6b3440311aa6",
+  "pillar": "equity",
+  "order": 1,
+  "slug": "stratifying-by-equity",
+  "title": "Stratifying Quality Data by Race, Ethnicity, and Language",
+  "summary": "Quality metrics look very different when stratified by race, ethnicity, language, and geography. Disaggregating population health data is the first step in identifying and addressing health disparities that aggregate metrics hide.",
+  "estimated_minutes": 20,
+  "objectives": [
+    {
+      "id": "obj-ph-014-1",
+      "text": "Explain why aggregate quality metrics can mask health disparities"
+    },
+    {
+      "id": "obj-ph-014-2",
+      "text": "Describe NCQA's Health Equity Accreditation requirements for stratified reporting"
+    },
+    {
+      "id": "obj-ph-014-3",
+      "text": "Identify strategies for improving REAL+D data collection quality"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "A health plan can achieve the 75th percentile in controlling high blood pressure nationally — and still have a 20-percentage-point gap between its White and Black members. Aggregate metrics hide this disparity. Without stratified data, plans and systems cannot target interventions to the populations that need them most.",
+      "type": "text"
+    },
+    {
+      "text": "REAL+D Data Collection",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "**REAL+D** refers to Race, Ethnicity, And Language + Disability data — the core demographic dimensions used for equity stratification. Challenges include:\n\n**Collection gaps.** Many EHRs have incomplete race/ethnicity data because providers haven't consistently collected it. Studies show 30–60% of records have missing or 'unknown' race/ethnicity.\n\n**Granularity.** 'Asian' encompasses dozens of distinct ethnic groups with very different health profiles. Aggregate categories obscure disparities within groups.\n\n**Self-identification vs. observation.** Best practice is self-reported data, but many systems still rely on observer-assigned race.\n\nImproving REAL+D data quality requires workflow changes at registration, staff training, and patient communication about why data is collected.",
+      "type": "text"
+    },
+    {
+      "text": "Stratified Quality Reporting",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "NCQA launched **Health Equity Accreditation** in 2021, requiring health plans to stratify HEDIS measures by race and ethnicity and develop equity improvement plans targeting identified disparities. CMS is moving in the same direction, requiring Medicare Advantage plans to submit stratified HEDIS data.\n\nCMS's **Star Ratings** equity adjustments are designed so that plans serving diverse populations aren't penalized — but the long-term goal is holding all plans accountable for closing the gaps.",
+      "type": "text"
+    },
+    {
+      "text": "Targeted Interventions",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Once disparities are identified, targeted interventions must address root causes:\n\n- **Language-concordant care.** Matching care managers to patients who share their language — not just interpreter services — significantly improves engagement and outcomes.\n- **Culturally adapted protocols.** Diabetes education adapted for cultural food preferences, family structures, and religious practices achieves better adherence than generic programs.\n- **Community health worker deployment.** CHWs from the same community as high-disparity populations are among the highest-ROI equity interventions.\n- **Structural SDOH interventions.** Transportation assistance, housing navigation, and food security programs address the structural drivers of disparate outcomes.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:25:00.437014+00:00",
+  "updated_at": "2026-06-01T18:17:41.222558+00:00",
+  "sanity_slug": "stratifying-by-equity"
+}

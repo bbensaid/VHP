@@ -1,0 +1,511 @@
+{
+  "_createdAt": "2026-06-01T12:39:45Z",
+  "_id": "clean-claims",
+  "_rev": "2zkDeD7zc2Ko2DfFHs9hgw",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T12:39:45Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Goal of the Whole Front End"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Everything in the front-end and mid-cycle — verification, authorization, documentation, coding, charge capture — has been building toward one thing: a clean claim. A clean claim is a claim that is complete and accurate, with no errors, so that the payer accepts and pays it on the first submission without rejection or denial."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The clean claim is the payoff for all the upstream discipline. When a claim arrives clean, it gets paid fast and the encounter is essentially done. When it arrives dirty — missing a field, carrying a wrong code, failing an edit — it bounces back, and the organization enters the expensive cycle of correction, resubmission, and follow-up that defines the back end."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because of this, the clean claim rate is one of the most important RCM metrics, benchmarked at 95 percent or higher (with top performers near 98 percent). Every percentage point of clean claim rate translates directly into faster cash, lower rework cost, and shorter days in accounts receivable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A clean claim is complete and accurate with no errors, so the payer accepts and pays it on first submission. It is the payoff of all upstream work, and the clean claim rate (benchmark 95%+) directly drives cash speed and cost."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Two Claim Forms"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A claim is a structured document, and there are two primary formats depending on who is billing. Professional claims — from individual providers like physicians and suppliers — use the CMS-1500 form (the paper version), whose electronic equivalent is the 837P. Institutional claims — from facilities like hospitals and skilled-nursing facilities — use the UB-04 form (also called the CMS-1450), whose electronic equivalent is the 837I."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The forms differ in structure. The CMS-1500 uses 33 numbered fields; the UB-04 uses 81 alphanumeric \"form locators.\" The big conceptual difference is that the UB-04/837I organizes charges around revenue codes — categorizing services by department or type — whereas the CMS-1500/837P bills line-by-line by procedure. A hospital stay and a physician's office visit are billed on fundamentally different documents."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "In modern practice, almost all claims are submitted electronically as 837 transactions rather than on paper, because the electronic versions are faster, scalable, and preferred (often required) by payers. Knowing which form applies — professional vs. institutional — is foundational, because the wrong form, or the wrong fields for that form, produces an immediate rejection."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "CMS-1500 / 837P (Professional)",
+        "points": [
+          "Used by individual providers and suppliers",
+          "33 numbered fields",
+          "Bills line-by-line by procedure (CPT/HCPCS)",
+          "Office visits, labs, therapy"
+        ]
+      },
+      "right": {
+        "label": "UB-04 / 837I (Institutional)",
+        "points": [
+          "Used by facilities (hospitals, SNFs)",
+          "81 form locators",
+          "Organizes charges around revenue codes",
+          "Hospital stays, facility fees"
+        ]
+      },
+      "title": "Professional vs. Institutional Claims"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Makes a Claim Clean"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A clean claim requires that all the required fields are completed accurately — and which fields are required depends on the payer (Medicare, Medicaid, or commercial) and the form. On a CMS-1500, critical fields include the patient's insurance ID, diagnosis codes (ICD-10), dates and place of service, CPT/HCPCS codes with modifiers, charges, and the rendering and billing provider NPIs and tax ID."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The claim must also be internally coherent — the same linkage from the coding lesson. The diagnosis must support the procedure; the codes must be valid and current; the modifiers must be correct; the provider identifiers (NPI and taxonomy) must match the payer's records. A claim can have every box filled and still be \"dirty\" if the contents do not hang together correctly."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Cleanliness is unforgiving of small things. A mistyped insurance ID, an invalid date format, an improper taxonomy code in the billing-provider field, or a missing referring-provider entry can each trigger a rejection. This is why the front-end verification and accurate coding covered earlier matter so much: they are what populate these fields correctly in the first place."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "CMS-1500/837P for professional, UB-04/837I for institutional.",
+          "title": "Correct form"
+        },
+        {
+          "_key": "step2",
+          "description": "Patient/insurance IDs, diagnosis and procedure codes, dates, charges, provider NPIs.",
+          "title": "Complete required fields"
+        },
+        {
+          "_key": "step3",
+          "description": "Diagnosis supports procedure; valid current codes; correct modifiers and taxonomy.",
+          "title": "Coherent linkage"
+        },
+        {
+          "_key": "step4",
+          "description": "Meets that payer's particular field and formatting requirements.",
+          "title": "Payer-specific compliance"
+        }
+      ],
+      "title": "Elements of a Clean Claim"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Claim Scrubbing"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The mechanism that catches errors before a claim goes out is claim scrubbing: a thorough automated (and sometimes manual) review of the claim against thousands of edits and rules to flag inconsistencies, missing fields, and likely denials. Scrubbing is the last line of defense, sitting between the billing system and the payer."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Scrubbers check the obvious (missing or invalid fields, wrong formats) and the subtle (code combinations that violate payer or national edit rules, diagnosis-procedure mismatches, modifier problems). The principle is simple and powerful: it is vastly cheaper to catch an error in scrubbing — before submission — than to have the payer catch it as a denial weeks later."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Professional bodies like the AAPC and AMA emphasize scrubbing precisely because it reduces denials and improves submission efficiency. A good scrubbing process is one of the highest-leverage investments in the cycle: it converts would-be denials into clean claims at the point of lowest cost, directly raising the clean claim rate."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "A claim is built with a valid procedure code but an outdated diagnosis code that the payer no longer accepts. Submitted as-is, it would be rejected and bounce back days later.\nThe claim scrubber flags the invalid code before submission, the biller corrects it, and the claim goes out clean — turning a future denial into a first-pass payment at a fraction of the cost of reworking it after the fact.",
+      "title": "A Scrubber Catching a Rejection"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Rejections vs. Denials, and Why Clean Pays"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A useful distinction: a rejected claim never made it into the payer's system — it failed a format or front-line edit (at the clearinghouse or payer intake) and can usually be corrected and resubmitted quickly. A denied claim was accepted and adjudicated but the payer decided not to pay it. Clean-claim discipline aims to prevent both, but rejections are the cheaper, earlier failure to fix."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The economics overwhelmingly reward cleanliness. A clean claim is paid in one pass; a dirty claim triggers research, correction, resubmission, and follow-up — at $25 to $181 per rework — plus the delay of additional weeks in AR. A high clean claim rate is therefore not a vanity metric; it is one of the most direct levers on both cost and cash speed in the entire revenue cycle."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The throughline of this lesson is that \"clean\" is the goal everything upstream serves and everything downstream depends on. The front-end gathers correct information, the mid-cycle codes and documents it accurately, scrubbing verifies it, and only then does the claim go out. Get the claim clean and the back end is short and cheap; let it go out dirty and the back end becomes the expensive, multi-step ordeal that the rest of this course's modules address."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "A rejection means the claim failed a format/edit check and never entered the payer's system — usually a quick fix and resubmit. A denial means the claim was processed but the payer declined to pay. Both are prevented by clean claims, but they are worked differently — don't treat a rejection like a denial or vice versa.",
+      "title": "Rejection and Denial Are Not the Same Thing"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "A clean claim is complete and accurate with no errors, so the payer pays it on first submission; it is the payoff of all upstream front-end and mid-cycle work.",
+        "The clean claim rate (benchmark 95%+, top performers ~98%) directly drives faster cash, lower rework cost, and shorter days in AR.",
+        "Professional claims use the CMS-1500 form (electronic 837P); institutional claims use the UB-04/CMS-1450 (electronic 837I), which organizes charges around revenue codes.",
+        "A clean claim requires correct required fields (insurance IDs, codes, dates, charges, provider NPIs), coherent code linkage, and payer-specific compliance.",
+        "Claim scrubbing reviews claims against thousands of edits to catch errors before submission — far cheaper than fixing a denial later.",
+        "A rejected claim failed a format/edit check and never entered the payer's system; a denied claim was adjudicated but not paid — they are worked differently.",
+        "Clean-claim discipline is one of the most direct levers on revenue-cycle cost and cash speed, which is why so much upstream effort serves it."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Facilities such as hospitals bill institutional claims on the UB-04 (CMS-1450) form, electronically the 837I, which organizes charges around revenue codes by department/service type. The CMS-1500 / 837P is for professional claims from individual providers and suppliers, billed line-by-line by procedure. Using the wrong form produces an immediate rejection.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The CMS-1500 / 837P, because all claims use the same form"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The UB-04 / 837I institutional format, which organizes facility charges around revenue codes"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "A Good Faith Estimate"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The 270 eligibility transaction"
+        }
+      ],
+      "question": "A hospital is billing for an inpatient stay. Which claim format should it use?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] CMS-1500 vs UB-04 (CMS-1450): Differences, Fields & 837P/837I Explained (Vital Health Service) — https://vitalhealthservice.com/cms-1500-vs-ub-04/ — CMS-1500 (33 fields) vs UB-04 (81 form locators); revenue codes; professional vs institutional"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Medicare Billing: 837P and Form CMS-1500 (CMS) — https://www.cms.gov/files/document/837p-cms-1500pdf — CMS-1500 paper / 837P electronic professional claim; required fields"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] In What Format Are Healthcare Claims Sent? (BellMedEx) — https://bellmedex.com/in-what-format-are-healthcare-claims-sent/ — 837 family (837P, 837I, 837D); paper-to-electronic equivalents"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Clean Claim Submission Process in Medical Billing (BMB) — https://bestmedicalbilling.com/blogs/medical-claim-submission-process-in-medical-billing/ — clean claim definition; accurate required fields; faster reimbursement"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] CMS-1500 Form in Medical Billing: How to Fill It Right (MBW RCM) — https://www.mbwrcm.com/the-revenue-cycle-blog/cms-1500-form-in-medical-billing — critical CMS-1500 fields; NPI; taxonomy; payer-specific requirements"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Clean Claim Submission Process / Claim Scrubbing (Best Medical Billing) — https://bestmedicalbilling.com/blogs/medical-claim-submission-process-in-medical-billing/ — claim scrubbing flags errors before submission to reduce denials"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "revenue-cycle-management",
+  "order": 10,
+  "slug": {
+    "_type": "slug",
+    "current": "clean-claims"
+  },
+  "title": "Clean Claims: What They Are and Why They Matter"
+}

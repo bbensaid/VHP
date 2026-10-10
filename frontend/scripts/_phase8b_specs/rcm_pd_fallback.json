@@ -1,0 +1,25 @@
+{
+ "pairs": [
+  {
+   "old": "High-performing organizations establish an RCM Governance Committee that meets monthly and includes:",
+   "new": "Many organizations establish an RCM Governance Committee that meets regularly and can include:",
+   "claim": "fallback: high-performing organizations establish an RCM governance committee that meets monthly",
+   "verdict": "UNVERIFIABLE",
+   "src": "No study linking a monthly RCM governance committee to high performance; kept as a common practice",
+   "note": ""
+  }
+ ],
+ "supa": [
+  {
+   "table": "lessons",
+   "col": "content_blocks",
+   "ids": [
+    "94407bd1-f7ed-470d-be45-703faa7f11ec"
+   ]
+  }
+ ],
+ "files": [
+  "frontend/content/course_revenue_cycle.json",
+  "frontend/content/courses_tier3.json"
+ ]
+}

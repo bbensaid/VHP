@@ -1,0 +1,518 @@
+{
+  "_createdAt": "2026-06-01T12:31:58Z",
+  "_id": "prior-authorization",
+  "_rev": "glqH7a4yvZFQerxZdaJdLx",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T12:31:58Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Getting Permission Before You Treat"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Prior authorization (often \"prior auth\" or \"PA\") is a requirement that a provider obtain approval from the patient's insurer before delivering certain services, medications, or procedures — or the insurer will not pay for them. It is, in blunt terms, a cost-control tool: the payer wants to vet that the planned care is necessary and covered before it is on the hook for the bill."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "For the revenue cycle, prior authorization is a front-end gatekeeper. A service that requires authorization but is delivered without it is very likely to be denied — and \"no authorization\" denials are particularly painful because the care has already been provided and the cost incurred. The money is simply lost."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Prior authorization sits at the uncomfortable intersection of finance and clinical care. It is a billing requirement, but it directly affects whether and when patients get treatment. That tension is why it is one of the most contentious topics in all of health care, and why it deserves a lesson of its own."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Prior authorization requires a provider to get the insurer's approval before delivering certain services or drugs. Without it, the claim is typically denied — and because the care has already been delivered, that revenue is usually lost."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Process"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The basic workflow is: identify that a planned service requires authorization, gather the clinical documentation justifying medical necessity, submit the request to the payer, wait for a determination, and only then proceed (or appeal a denial). Identifying which services need authorization is itself a challenge, because requirements vary by payer and plan and change frequently."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Once submitted, the request is reviewed against the payer's medical-necessity criteria. The payer may approve, deny, or request more information. Approvals often come with limits — a specific number of visits, a defined timeframe, or a particular site of care — that the provider must then track and not exceed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The technical standard for the prior-authorization transaction under HIPAA is the X12 278. Increasingly, though, the industry is moving toward FHIR-based electronic prior authorization (ePA) APIs that integrate directly with the EHR, aiming to replace fax-and-phone workflows with automated, real-time exchange."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Determine whether the planned service or drug needs authorization for this payer/plan.",
+          "title": "Identify the requirement"
+        },
+        {
+          "_key": "step2",
+          "description": "Assemble the clinical evidence of medical necessity.",
+          "title": "Gather documentation"
+        },
+        {
+          "_key": "step3",
+          "description": "Send to the payer (HIPAA X12 278, or increasingly a FHIR ePA API).",
+          "title": "Submit the request"
+        },
+        {
+          "_key": "step4",
+          "description": "Record approval limits, or appeal a denial, before proceeding.",
+          "title": "Track the determination"
+        }
+      ],
+      "title": "The Prior Authorization Workflow"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Enormous Burden"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Prior authorization is widely regarded as one of the heaviest administrative burdens in health care, and the data is stark. According to the American Medical Association's 2024 prior authorization survey, physicians and their staff spend an average of 13 hours per week completing prior authorization requests, processing an average of 39 requests per physician per week."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The clinical consequences are serious. In the AMA survey, 93 percent of physicians reported that prior authorization delays access to necessary care, 89 percent said it increases physician burnout, and 82 percent said it can sometimes lead patients to abandon treatment altogether. Forty percent of physicians have staff working exclusively on prior authorizations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For the revenue cycle, this burden cuts two ways. It is a major operational cost — staff time, dedicated personnel, software — and a major risk, because every required authorization that is missed, delayed, or done wrong becomes a denial. Prior authorization is simultaneously expensive to do and expensive to get wrong."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Per physician + staff (AMA 2024 survey)",
+          "label": "Time on Prior Auth",
+          "value": "13 hrs/week"
+        },
+        {
+          "_key": "s2",
+          "context": "Per physician per week (AMA 2024)",
+          "label": "PA Requests",
+          "value": "39/week"
+        },
+        {
+          "_key": "s3",
+          "context": "Physicians citing PA delays to care (AMA 2024)",
+          "label": "Report Care Delays",
+          "value": "93%"
+        },
+        {
+          "_key": "s4",
+          "context": "PA can lead patients to abandon care (AMA 2024)",
+          "label": "Cite Treatment Abandonment",
+          "value": "82%"
+        }
+      ]
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Common Pitfalls"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Several recurring mistakes turn prior authorization into lost revenue. The first is failing to identify that a service required authorization at all — easy to do given how requirements vary and change. The service is delivered, the claim goes out, and it is denied for \"no authorization on file,\" with the care already rendered."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The second is exceeding the authorization's limits — delivering more visits than approved, at the wrong site of care, or after the authorization's timeframe expired. The third is poor documentation of medical necessity, leading the payer to deny the request even when the care is appropriate. The fourth is letting authorizations expire before the service is performed, especially for scheduled procedures that get rescheduled."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The throughline is that prior authorization is unforgiving of process gaps. Because it must happen before the service, there is often no way to fix a missed authorization after the fact — unlike a coding error, you cannot simply resubmit. This is why organizations build dedicated authorization workflows, track expirations, and verify requirements as part of front-end verification (the previous lesson)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "Unlike a coding error you can correct and resubmit, a prior authorization usually must be obtained BEFORE the service. Deliver care that required authorization without it, and the resulting denial is frequently unappealable — the revenue is simply lost. Identifying PA requirements at scheduling is essential.",
+      "title": "A Missed Authorization Often Cannot Be Fixed"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Reform and the Move to Automation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because the burden is so widely recognized, prior authorization is a major target of reform. The most significant federal action is the CMS Interoperability and Prior Authorization final rule (CMS-0057-F), which imposes new requirements on many payers (Medicare Advantage, Medicaid, CHIP, and ACA marketplace plans)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The rule requires impacted payers to send prior authorization decisions within 72 hours for expedited (urgent) requests and seven calendar days for standard requests — which in some cases cuts current timeframes in half — and to provide specific reasons for denials. It also requires payers to build FHIR-based Prior Authorization APIs to automate the exchange, with operational provisions generally phasing in from 2026 and API requirements by 2027."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The direction of travel is clear: from fax-and-phone toward electronic, EHR-integrated, real-time prior authorization, with regulatory pressure for faster, more transparent decisions. For the revenue cycle, this promises to reduce both the labor cost and the denial risk over time — but for now, prior authorization remains a heavy, high-stakes front-end task that every RCM operation must manage carefully."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5ex1",
+      "_type": "exampleBlock",
+      "content": "CMS-0057-F requires impacted payers (Medicare Advantage, Medicaid/CHIP, ACA marketplace) to return prior authorization decisions within 72 hours for urgent and seven days for standard requests, give specific denial reasons, and build FHIR-based Prior Authorization APIs.\nOperational provisions generally begin in 2026 with API requirements by 2027 — a concrete federal push to make prior authorization faster, more transparent, and electronic.",
+      "title": "The CMS Interoperability and Prior Authorization Final Rule"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Prior authorization requires the insurer's approval before certain services or drugs are delivered; without it, the claim is typically denied and the revenue lost.",
+        "The workflow is: identify the requirement, document medical necessity, submit (HIPAA X12 278 or a FHIR ePA API), and track the determination and its limits.",
+        "The burden is enormous: the 2024 AMA survey found 13 hours/week and 39 requests per physician per week spent on prior authorization.",
+        "Prior authorization delays care (93% of physicians), drives burnout (89%), and can cause treatment abandonment (82%).",
+        "Common pitfalls: not identifying a PA requirement, exceeding authorization limits, weak medical-necessity documentation, and letting authorizations expire.",
+        "A missed authorization usually cannot be fixed after the fact, making it unforgiving — requirements must be caught at scheduling/verification.",
+        "The CMS Interoperability and Prior Authorization rule (CMS-0057-F) mandates faster decisions (72 hours urgent / 7 days standard) and FHIR-based ePA APIs, phasing in 2026-2027."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Prior authorization generally must be obtained before the service is delivered. When a required authorization is missed, the care has already been provided and the cost incurred, but there is often no way to obtain retroactive approval — so unlike a coding error that can be corrected and resubmitted, the denial is frequently unappealable and the revenue is simply lost. This is why identifying PA requirements at scheduling is critical.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "It can always be fixed by resubmitting with a corrected code"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Because the care has already been delivered and the authorization usually had to be obtained beforehand, the denial is frequently unappealable and the revenue is lost"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "It only affects patient balances, not insurer payments"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Payers reimburse these claims automatically after 30 days"
+        }
+      ],
+      "question": "Why is a \"no prior authorization on file\" denial often more damaging than other denial types?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] 2024 AMA Prior Authorization Physician Survey (AMA) — https://www.ama-assn.org/press-center/ama-press-releases/ama-survey-indicates-prior-authorization-wreaks-havoc-patient-care — 13 hrs/week; 39 PAs per physician per week; 93% care delays; 89% burnout; 82% abandonment"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Fixing Prior Auth: Nearly 40 Prior Authorizations a Week (AMA) — https://www.ama-assn.org/practice-management/prior-authorization/fixing-prior-auth-nearly-40-prior-authorizations-week-way — volume of PA requests; 40% have staff working exclusively on PA"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CMS Interoperability and Prior Authorization Final Rule CMS-0057-F (CMS) — https://www.cms.gov/newsroom/fact-sheets/cms-interoperability-prior-authorization-final-rule-cms-0057-f — 72-hour urgent / 7-day standard decisions; FHIR Prior Authorization API; phase-in 2026-2027"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] CMS Finalizes New Electronic Prior Authorization Requirements (Ropes & Gray) — https://www.ropesgray.com/en/insights/alerts/2024/01/cms-finalizes-new-electronic-prior-authorization-requirements-for-payers-and-providers — denial-reason requirement; impacted payers; compliance dates"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] APIs and Relevant Standards (CMS) — https://www.cms.gov/priorities/burden-reduction/overview/interoperability/implementation-guides-standards/application-programming-interfaces-apis-relevant-standards-implementation-guides-igs — X12 278 prior-authorization transaction; FHIR-based PA API"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] AMA Survey Highlights Growing Burden of Prior Authorization (AJMC) — https://www.ajmc.com/view/ama-survey-highlights-growing-burden-of-prior-authorization-on-physicians-patients — burden and patient-impact statistics from the AMA survey"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "revenue-cycle-management",
+  "order": 5,
+  "slug": {
+    "_type": "slug",
+    "current": "prior-authorization"
+  },
+  "title": "Prior Authorization: Process and Pitfalls"
+}

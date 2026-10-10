@@ -1,0 +1,404 @@
+{
+  "_createdAt": "2026-09-22T19:15:04Z",
+  "_id": "tl-why-change-management-matters",
+  "_rev": "LCntMInbokDNzSR9NF5HNV",
+  "_type": "academyModule",
+  "_updatedAt": "2026-09-22T19:15:04Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Execution Gap"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Healthcare transformation programs rarely fail because the underlying analysis was wrong. The financial case for value-based payment, the clinical case for care coordination, and the equity case for closing measured disparities are each backed by decades of published evidence. Boards approve the strategy. Consultants deliver the report. Legislatures pass the statute. And then, in a large share of cases, very little actually changes in how the organization operates two years later."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "What fails, far more often than the analysis, is the organizational change process: the sequencing, pacing, and management of the human and institutional change that structural reform actually requires. A hospital can have an airtight financial model for entering a global budget and still fail to execute it, because the model says nothing about how department heads will react when told that growing volume no longer grows revenue, or how a governing board will react to ceding rate-setting authority to an outside commission. This course is about that second problem — the one the analytical frameworks in a strategy deck do not solve."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Change management, project management, and portfolio management are related but distinct disciplines. Project management delivers a defined scope on schedule and budget. Program management coordinates related projects to produce benefits no single project could achieve alone. Portfolio management aligns the whole collection of programs and projects with organizational strategy. Change management is the layer underneath all three: the discipline of managing how people and institutions actually adopt the new state, regardless of how well the plan above them is built."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "PMI, Pulse of the Profession — unrecoverable loss on projects that fail outright",
+          "label": "Lost per $1B in failed projects",
+          "value": "$135M"
+        },
+        {
+          "_key": "s2",
+          "context": "PMI — the gap between organizations with strong project delivery discipline and those without",
+          "label": "Risk per $1B spent, high- vs. low-performers",
+          "value": "$20M vs. $280M"
+        },
+        {
+          "_key": "s3",
+          "context": "PMI — organizations with an established Project Management Office (PMO) vs. those without one",
+          "label": "More projects delivered on time and on budget",
+          "value": "38%"
+        },
+        {
+          "_key": "s4",
+          "context": "PMI — organizations that treat project management as a non-strategic function",
+          "label": "More projects fail outright",
+          "value": "67%"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two Failure Modes, Not One"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "It is useful to separate transformation failure into two distinct modes. An analytical failure means the underlying plan was wrong — the payment model does not actually align incentives, the clinical redesign does not actually improve outcomes, the technology does not actually do what the vendor promised. An execution failure means the plan was sound but the organization could not, or did not, actually carry it out: stakeholders were not brought along, governance never caught up with scope, or the change was announced but never institutionalized. Healthcare transformation research and practice consistently find the second failure mode is more common than the first."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The United Kingdom's National Programme for IT (NPfIT) is one of the most thoroughly studied examples of a pure execution failure in a health system context. Launched in the early 2000s to build a single national electronic health record and supporting IT infrastructure for the National Health Service, NPfIT was stopped early in 2011 after the UK government had spent an estimated £9.8 billion on it — with independent reviews and retrospectives placing total realized and sunk costs as high as £10–12.7 billion once contract terminations and write-offs are included. The core information-technology problem the programme set out to solve — clinicians across a national health system unable to share patient records — was a real and analytically sound problem to solve. What collapsed was execution."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex1",
+      "_type": "exampleBlock",
+      "content": "The UK's National Audit Office and Parliament's Public Accounts Committee both examined NPfIT's collapse in detail. Their findings center on governance, not technology: the programme's structure separated central decision-making authority from the local NHS organizations responsible for actually implementing the systems, creating a persistent gap between the people who designed the programme and the people who had to make it work in a hospital or clinic. Reviewers also found insufficient engagement with clinicians and other frontline stakeholders during design, and risk assessments that were produced and then set aside rather than acted on.\nThe National Audit Office's later assessment made a second finding that matters directly for this course: the lessons from NPfIT's failure were not being captured or applied systematically even in the UK government's subsequent digital transformation programmes — meaning the same governance gap was positioned to repeat itself elsewhere.",
+      "title": "The NHS National Programme for IT (NPfIT)"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Makes Healthcare's Change Problem Specifically Harder"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Every organization undergoing major change faces resistance, competing priorities, and limited bandwidth. Healthcare transformation adds structural features that a typical corporate change program does not have to manage. Clinical governance is legally and professionally separate from administrative governance — a hospital CEO cannot simply direct medical staff the way a corporate executive directs a business unit, because clinical decision-making authority sits with licensed professionals and medical staff bylaws, not the org chart. Patient safety obligations mean some changes cannot be piloted the way a retail company pilots a new store format; a clinical process change that fails silently can hurt someone before anyone notices the failure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Authority is also unusually distributed. A single transformation initiative in a state like Vermont can simultaneously involve an independent state regulator, a federal agency, a state legislature, a hospital's own governing board — which typically includes community members with political relationships to local legislators — and, in many markets, organized labor. A corporate change leader answers to one board and one set of shareholders. A healthcare transformation leader is answering to several genuinely independent sources of authority at once, none of which can be overruled by the others."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Typical Corporate Change",
+        "points": [
+          "Single governing board and shareholder base",
+          "Management has direct authority over most affected staff",
+          "Pilots can fail safely and be rolled back",
+          "Timeline is set internally and can be renegotiated"
+        ]
+      },
+      "right": {
+        "label": "Healthcare Transformation Under Mandatory Reform",
+        "points": [
+          "Overlapping authority: regulator, legislature, board, medical staff",
+          "Clinical decision-making authority sits outside the org chart",
+          "A failed pilot can mean patient harm, not just a rollback",
+          "Statutory deadlines are set externally and cannot be renegotiated"
+        ]
+      },
+      "title": "Corporate Change vs. Healthcare Transformation"
+    },
+    {
+      "_key": "s3w1",
+      "_type": "warningBlock",
+      "message": "A statutory deadline changes the urgency calculation — the transformation is happening regardless — but it does not remove the need to build a coalition, communicate a vision, or manage resistance. Organizations that treat a legal mandate as a substitute for change leadership tend to produce exactly the compliance-only, minimally-adopted version of reform that shows up in the data years later as underperformance.",
+      "title": "A Mandate Does Not Remove the Change-Management Problem"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What This Course Covers"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The five lessons that follow work through the change-leadership toolkit a healthcare transformation leader actually needs, in the order a real transformation program encounters them: first the framework for sequencing organizational change itself (Kotter's eight steps), then the governance infrastructure that keeps a multi-year, multi-component transformation from fragmenting into disconnected initiatives (the PMO and portfolio management), then the specific skill of managing governing boards and external stakeholders who did not choose the reform, then the specific and predictable resistance patterns that a fixed-revenue-envelope transition produces, and finally the discipline of making a transformation's gains durable instead of letting them erode once leadership attention moves elsewhere."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Applying the classic change-management framework to a mandatory reform timeline, evidenced by two independent healthcare studies.",
+          "title": "Kotter's Eight Steps"
+        },
+        {
+          "_key": "step2",
+          "description": "The project/program/portfolio hierarchy, using the VA's 1990s restructuring and the NHS's NPfIT as opposite case studies.",
+          "title": "Building the PMO"
+        },
+        {
+          "_key": "step3",
+          "description": "Three real governance designs — Maryland, Oregon, Massachusetts — for building buy-in from stakeholders who did not choose the reform.",
+          "title": "Stakeholder and Board Management"
+        },
+        {
+          "_key": "step4",
+          "description": "The predictable resistance patterns a fixed-revenue-envelope transition produces, evidenced by CMS's mandatory bundled-payment experience.",
+          "title": "Managing Resistance"
+        },
+        {
+          "_key": "step5",
+          "description": "Benefits realization management and what separates a durable transformation from one that quietly reverses.",
+          "title": "Sustaining the Change"
+        }
+      ],
+      "title": "What Comes Next"
+    },
+    {
+      "_key": "s4hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A statutory deadline is not negotiable, but the change-management work required to meet it well — rather than merely on paper — is exactly the same work described in this course, whether the reform is voluntary or mandatory."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Healthcare transformation programs more often fail from execution and change-management gaps than from flawed analysis.",
+        "Project, program, portfolio, and change management are related but distinct disciplines; change management is the layer that determines whether people and institutions actually adopt the new state.",
+        "PMI's research finds organizations without a PMO complete fewer projects on time and on budget, and organizations that treat project management as non-strategic see far higher outright failure rates.",
+        "The NHS's National Programme for IT is a canonical example of a pure execution failure: the underlying goal was sound, but centralized governance separated from local implementation authority caused the collapse.",
+        "Healthcare transformation is structurally harder to lead than typical corporate change because clinical governance sits outside the administrative org chart and authority is distributed across regulators, legislatures, boards, and medical staff.",
+        "A legal mandate changes the urgency calculation for a reform but does not remove the need for a guiding coalition, a communicated vision, or active resistance management.",
+        "This course builds the change-leadership toolkit in the order a real transformation encounters it: sequencing change, building governance, managing stakeholders, managing resistance, and sustaining the result."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "PMI's research found organizations that do not treat project management as a strategic competency report an average of 67% more of their projects failing outright, and separately found PMO organizations complete 38% more projects on time and on budget than those without one.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "There is no measurable difference in project outcomes"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Organizations that undervalue project management report 67% more projects failing outright"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Organizations with a PMO complete fewer projects on time"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Project management discipline only matters for IT projects"
+        }
+      ],
+      "question": "According to PMI's Pulse of the Profession research, what distinguishes organizations that treat project management as a strategic competency from those that do not?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] PMI, Pulse of the Profession research (multiple years) — https://www.pmi.org/learning/library/2022/07/01/21/01/en-2013-pulse-high-cost-low-performance-13511 — cost-of-poor-performance and PMO-value statistics"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] National Audit Office / Parliament Public Accounts Committee, \"The dismantled National Programme for IT in the NHS\" — https://publications.parliament.uk/pa/cm201314/cmselect/cmpubacc/294/294.pdf — NPfIT governance failure findings and cost"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Panorama Consulting, \"Reasons Behind The NHS IT System & Project Failure Case Study\" — https://www.panorama-consulting.com/nhs-it-system-failure/ — NPfIT cost and governance analysis"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Health Transformation Review, Transforming American Healthcare, Chapter 12 §12.4 (\"The Change Management Science Behind Healthcare Transformation\") — internal manuscript, book's own framing of the execution-gap argument"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "tl-why-change-management-matters"
+  },
+  "title": "Why Change Management Determines Transformation Success"
+}

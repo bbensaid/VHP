@@ -1,0 +1,124 @@
+{
+  "id": "740da3c5-4827-43ec-a26c-0696e93eabfa",
+  "track_id": "6e36fdab-df2b-42e1-ab3a-dc28c560aee9",
+  "pillar": "equity",
+  "order": 6,
+  "slug": "hea-from-score-to-action",
+  "title": "From Score to Action: Trust, Governance, and Closing the Loop",
+  "summary": "A dashboard that nobody acts on is not an equity program. This closing lesson covers CAHPS as the real data source behind the 'Trust' dimension every proxy is trying to approximate, the governance loop that turns a score into an intervention, and the 'so what' test every equity metric should have to pass before it ships.",
+  "estimated_minutes": 20,
+  "objectives": [
+    {
+      "id": "obj_hea6a",
+      "text": "Describe CAHPS and why it is the reference data source the Trust & Engagement dimension is proxying for."
+    },
+    {
+      "id": "obj_hea6b",
+      "text": "Explain the 'measurement without action' failure mode documented in the disparity-dashboard literature."
+    },
+    {
+      "id": "obj_hea6c",
+      "text": "Apply a governance loop (measure → assess cause → act → re-measure) to turn an equity score into an accountability structure."
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "The Consumer Assessment of Healthcare Providers and Systems (CAHPS) program is an AHRQ initiative dating to 1995. It is not one survey but a family of standardized patient-experience surveys covering ambulatory clinician offices, hospitals, nursing homes, dialysis centers, surgical care, dental plans, home health, behavioral health, and care for American Indian populations — each asking patients to rate concrete aspects of their experience, such as how well providers communicated and how easy it was to get needed care.\n\nCAHPS is the reference standard the Trust & Engagement dimension in Lesson 5 is a proxy *for*. Real CAHPS data, stratified by race, ethnicity, and language the way Lesson 3's HEDIS measures are stratified, would let a Trust dimension measure what patients actually report about being heard and respected — rather than the indirect proxy signal a system without CAHPS access has to use instead.",
+      "type": "text",
+      "heading": "What CAHPS actually measures"
+    },
+    {
+      "body": "CAHPS is patient-reported, not administratively derived — it is the closest thing in U.S. healthcare measurement to asking patients directly whether they were treated well, which is exactly why it is hard to substitute with a proxy.",
+      "type": "callout",
+      "heading": "Key Concept",
+      "variant": "info"
+    },
+    {
+      "body": "A body of published research on disparity dashboards has converged on a consistent finding: dashboards that stratify data by race, ethnicity, or other subgroup are common, but dashboards that are demonstrably tied to a specific accountability structure — someone whose job it is to act when a gap appears — are much rarer. A stratified rate that nobody owns is a fact sitting in a report. The same rate, reviewed by a named committee with authority to change a staffing model, a referral pathway, or a screening protocol, is the beginning of an intervention.",
+      "type": "text",
+      "heading": "The 'measurement without action' failure mode"
+    },
+    {
+      "type": "steps",
+      "items": [
+        [
+          "Measure",
+          "Compute the stratified rate, the composite SDOH score, or the HEROI dimension — using the methods from Lessons 2–5."
+        ],
+        [
+          "Assess cause",
+          "Before acting, ask why the gap exists — a staffing gap, a referral-pathway gap, a documentation gap (recall Lesson 4's Z-code problem), or a genuine access barrier each call for a different fix. This maps directly to Priority 2 of the CMS Framework for Health Equity 2022–2032: assess causes of disparities within programs and operations, not just their existence."
+        ],
+        [
+          "Act",
+          "Change something specific and attributable — staffing, a referral relationship, a screening workflow, a resource allocation — tied to the assessed cause."
+        ],
+        [
+          "Re-measure",
+          "Run the same stratified measure again on the same cadence. If the gap didn't move, the assessed cause was probably wrong, or the action didn't address it — go back to step 2."
+        ]
+      ],
+      "title": "The Governance Loop"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Year AHRQ's CAHPS program began",
+          "value": "1995",
+          "source": "AHRQ"
+        },
+        {
+          "label": "Priorities in the CMS Framework for Health Equity 2022–2032",
+          "value": "5",
+          "source": "CMS Office of Minority Health"
+        }
+      ],
+      "heading": "Turning Data Into Structural Action"
+    },
+    {
+      "body": "Rush University Medical Center's SDOH screening effort, built with community partners including Catholic Charities, the Greater Chicago Food Depository, and CommunityHealth (Chicago's largest free clinic), did not stop at collecting screening data. Rush formed a West Side Anchor Committee explicitly to convert what the screening and stratified quality data showed into standing operating processes — shared goals, common referral pathways, and joint investment decisions with those community partners. That committee is the 'someone whose job it is to act' this lesson's governance loop describes, made concrete.",
+      "type": "text",
+      "heading": "Case study: from screening data to an anchor-mission committee"
+    },
+    {
+      "rows": [
+        {
+          "left": "No one is accountable if it moves the wrong way",
+          "label": "Owner",
+          "right": "A named person or committee reviews it on a set cadence"
+        },
+        {
+          "left": "No defined trigger for action",
+          "label": "Threshold",
+          "right": "A stated gap size or trend that triggers a specific response"
+        },
+        {
+          "left": "Gap is reported with no hypothesis about cause",
+          "label": "Cause pathway",
+          "right": "At least one testable hypothesis about cause is attached"
+        },
+        {
+          "left": "One-time snapshot",
+          "label": "Re-measurement",
+          "right": "Scheduled to be measured again after the action"
+        }
+      ],
+      "type": "comparison_table",
+      "heading": "The 'So What' Test for a New Equity Metric",
+      "leftLabel": "Metric ships without this",
+      "rightLabel": "Metric passes the 'so what' test"
+    }
+  ],
+  "tags": [
+    "cahps",
+    "governance",
+    "equity-action-plan",
+    "dashboards"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-09-22T19:11:37.250829+00:00",
+  "updated_at": "2026-09-22T19:42:02.013259+00:00",
+  "sanity_slug": "hea-from-score-to-action"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "f75c395f-0c96-4575-988c-1c25904704ba",
+  "track_id": "f4b5a826-f843-4b4f-829b-6b3440311aa6",
+  "pillar": "equity",
+  "order": 2,
+  "slug": "community-health-workers-equity",
+  "title": "Community Health Workers as Population Health Infrastructure",
+  "summary": "Community health workers (CHWs) are frontline public health workers who serve as a critical link between health systems and underserved communities. A robust evidence base demonstrates their impact on chronic disease management, SDOH navigation, and health equity.",
+  "estimated_minutes": 18,
+  "objectives": [
+    {
+      "id": "obj-ph-015-1",
+      "text": "Define the CHW role and its evidence base in population health"
+    },
+    {
+      "id": "obj-ph-015-2",
+      "text": "Identify payment models that support sustainable CHW programs"
+    },
+    {
+      "id": "obj-ph-015-3",
+      "text": "Describe how CHW programs are integrated into care management workflows"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Community health workers (CHWs) — also called promotores, patient navigators, health coaches, and peer support specialists — are laypeople trained to support health and social needs in their communities. CHWs typically share the language, culture, and lived experience of the populations they serve, enabling trust and access that clinical staff cannot replicate.",
+      "type": "text"
+    },
+    {
+      "text": "Evidence of CHW Effectiveness",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A 2015 Cochrane Review of CHW programs for disadvantaged populations found consistent positive effects on outcomes for cardiovascular disease, diabetes, malaria, tuberculosis, and child health. In U.S. studies:\n\n- CHW programs for diabetes management reduce A1C by 0.5–1.0% in underserved populations\n- CHW-based transition programs reduce 30-day readmissions by 20–30% in high-risk populations\n- CHW SDOH navigation programs reduce ED utilization by 15–25% in frequent-user populations\n\nThe Camden Coalition's 'hot-spotter' model — intensive CHW engagement for the highest-cost patients — generated early enthusiasm, though subsequent RCT findings were more nuanced, highlighting the importance of CHW program design.",
+      "type": "text"
+    },
+    {
+      "text": "Sustainable Payment Models",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "CHW programs have historically struggled with sustainability because fee-for-service payment doesn't cover their services. Emerging payment mechanisms include:\n\n**Medicaid CHW benefits.** More than 30 states have added CHW services as a Medicaid benefit. Vermont's Medicaid program funds CHWs through the Blueprint for Health and VCCI.\n\n**CMS Innovation Center models.** Several CMMI models explicitly fund CHW services — the Accountable Health Communities model funded HRSN screening and referral, with CHWs as navigators.\n\n**ACO and VBC inclusion.** ACOs and global budget programs fund CHWs from their care management budgets when CHW-driven cost savings offset the investment.\n\n**FQHC billing.** Federally Qualified Health Centers can bill for CHW services under certain state plans.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:25:00.512158+00:00",
+  "updated_at": "2026-06-01T18:19:46.004209+00:00",
+  "sanity_slug": "community-health-workers-equity"
+}

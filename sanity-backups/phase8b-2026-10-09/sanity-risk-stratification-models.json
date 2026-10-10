@@ -1,0 +1,540 @@
+{
+  "_createdAt": "2026-06-01T15:20:11Z",
+  "_id": "risk-stratification-models",
+  "_rev": "2zkDeD7zc2Ko2DfFHsYoIV",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T15:20:11Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Not All Patients Need the Same Thing"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A defined population is not uniform. A few members are gravely ill and need intensive, hands-on management; some are at rising risk and need a nudge before they get worse; most are relatively healthy and mainly need routine preventive care. Treating everyone the same wastes resources on the well and under-serves the sick. Risk stratification is the discipline of sorting a population by risk so that effort and resources go where they will do the most good."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This matters because population health resources — care managers, outreach, programs — are finite. You cannot intensively manage everyone. Risk stratification answers the essential operational question: of my whole panel, who needs what level of attention? It is the targeting engine of population health management."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The economic case is overwhelming, because healthcare spending is extraordinarily concentrated. Identifying and managing the small group driving most of the cost is where population health earns its return — and risk stratification is how you find them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk stratification sorts a defined population into tiers of risk so finite resources (care managers, outreach, programs) target the patients who need them most. It is the targeting engine of population health management."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Concentration of Cost"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The single fact that justifies risk stratification is the staggering concentration of healthcare spending. In the United States, roughly 5 percent of the population accounts for nearly half of all health expenditures, and about 20 percent accounts for 80 percent of total spending. A tiny slice of patients drives an enormous share of cost."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The driver is chronic illness and complexity. Spending for people with five or more chronic conditions is roughly 17 times higher than for people with no chronic conditions. The sickest, most complex patients — those with multiple interacting conditions, often compounded by social needs — are both the highest-cost and the highest-need."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This concentration is good news for population health, because it means a focused effort can have outsized impact. You do not have to fix everyone's cost; if you can keep the highest-risk 5 percent healthier and out of the hospital, you move the majority of the spending. Risk stratification is what lets you find that 5 percent — and the \"rising risk\" patients who are about to join them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Top 5% of population ~ nearly 50% of expenditures (US data)",
+          "label": "Drive ~Half of Spending",
+          "value": "5%"
+        },
+        {
+          "_key": "s2",
+          "context": "Top 20% ~ 80% of total health spending (US data)",
+          "label": "Drive 80% of Spending",
+          "value": "20%"
+        },
+        {
+          "_key": "s3",
+          "context": "Spending for 5+ chronic conditions vs none (research)",
+          "label": "Cost of Complexity",
+          "value": "17x"
+        },
+        {
+          "_key": "s4",
+          "context": "A small group focus moves most of the cost",
+          "label": "Why Targeting Works",
+          "value": "Concentration"
+        }
+      ]
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Risk Pyramid"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk stratification is classically visualized as a pyramid (often associated with Kaiser Permanente). The population is divided into tiers, each needing a different intensity of intervention. Understanding the tiers is understanding the whole model."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "At the broad base are low-risk patients — the majority, mostly healthy, who need wellness and primary prevention (screenings, vaccines, healthy-behavior support). In the middle is the \"rising risk\" tier: patients with emerging issues (early or single chronic conditions) who need secondary prevention to keep them from progressing. Near the top are high-risk patients with established chronic conditions requiring active disease management. At the small apex are the complex, highest-risk patients who need intensive, coordinated case management."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The \"rising risk\" tier deserves special attention because it is where population health can change the trajectory. High-risk patients are already expensive and partly locked in; low-risk patients are fine. But rising-risk patients are at the tipping point — a well-timed intervention can keep them from becoming high-risk, which is both clinically better and far cheaper. Smart programs invest heavily here, not just at the apex."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Majority, mostly healthy — wellness and primary prevention.",
+          "title": "Low risk (base)"
+        },
+        {
+          "_key": "step2",
+          "description": "Emerging issues — secondary prevention to halt progression (the tipping point).",
+          "title": "Rising risk (middle)"
+        },
+        {
+          "_key": "step3",
+          "description": "Established chronic conditions — active disease management.",
+          "title": "High risk (upper)"
+        },
+        {
+          "_key": "step4",
+          "description": "Multiple conditions + needs — intensive case management.",
+          "title": "Complex / highest risk (apex)"
+        }
+      ],
+      "title": "The Risk Stratification Pyramid"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Risk Is Actually Calculated"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sorting patients into the pyramid requires a method to score risk, and several established tools exist — most built on the data infrastructure from the previous lesson. The most prominent in U.S. value-based care is the Hierarchical Condition Categories (HCC) model, which calculates a Risk Adjustment Factor (RAF) score from a patient's documented diagnoses; a higher RAF means a more complex, higher-cost patient. HCC/RAF is central to Medicare Advantage and ACO payment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Other validated tools include the Adjusted Clinical Groups (ACG) system (which often shows the strongest statistical performance for predicting utilization), the Charlson Comorbidity Index (a weighted count of conditions predicting mortality and future use), and condition-specific tools like the LACE score for post-discharge readmission risk (Length of stay, Acuity, Comorbidities, ED visits; a score of 10 or higher flags high readmission risk)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "These data-driven models are powerful but imperfect, which is why most programs combine them with clinical judgment. An algorithm scores the whole panel quickly and consistently, but a primary care team often knows things the data misses — a patient's fragile housing, a recent loss, a worrying trajectory not yet in the codes. The best stratification blends algorithmic scoring with human knowledge of the patient."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4t1",
+      "_type": "code",
+      "code": [
+        {
+          "Common_Use": "Medicare Advantage / ACO payment",
+          "Tool": "HCC_RAF",
+          "What_It_Does": "Risk score from documented diagnoses"
+        },
+        {
+          "Common_Use": "Utilization/care-coordination targeting",
+          "Tool": "ACG",
+          "What_It_Does": "Groups by diagnosis patterns; strong prediction"
+        },
+        {
+          "Common_Use": "Mortality and future-use prediction",
+          "Tool": "Charlson_Index",
+          "What_It_Does": "Weighted comorbidity count"
+        },
+        {
+          "Common_Use": "Readmission prevention (score >=10 = high)",
+          "Tool": "LACE_Score",
+          "What_It_Does": "4-factor post-discharge readmission risk"
+        }
+      ],
+      "language": "json",
+      "title": "Common Risk Stratification Tools"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "From Score to Action"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A risk score is useless until it drives a different action. The entire point of stratification is to match intervention intensity to risk tier: low-risk patients get automated preventive reminders; rising-risk patients get targeted outreach and lighter-touch programs; high-risk patients get enrolled in disease management; the complex apex gets a dedicated care manager and intensive coordination."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This tiering is what makes finite resources go far. A care-management team that tried to call every patient would accomplish little; the same team focused on the stratified high-risk and rising-risk tiers can meaningfully change outcomes and cost. Stratification turns \"manage the population\" from an impossible slogan into a concrete, prioritized worklist."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Stratification is also not a one-time exercise. Patients move between tiers as their health changes, so risk scores must be refreshed regularly and the worklists updated. A patient who was low-risk last year may be rising-risk now; catching that movement early is exactly the proactive, whole-population behavior that defines population health. The next lessons build directly on this: predictive analytics sharpens who is rising, and care-gap analysis turns the tiers into specific to-dos."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "Stratification only creates value when each tier triggers a different intensity of intervention. Computing risk scores but treating everyone the same defeats the purpose. And because patients move between tiers over time, scores must be refreshed regularly and worklists updated — stratification is continuous, not one-time.",
+      "title": "A Risk Score That Doesn't Change the Action Is Wasted"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Risk stratification sorts a defined population into risk tiers so finite resources target the patients who need them most — the targeting engine of population health.",
+        "Healthcare spending is extremely concentrated: ~5% of people drive nearly half of spending, ~20% drive 80%, and those with 5+ chronic conditions cost ~17x those with none.",
+        "The risk pyramid has tiers: low risk (prevention), rising risk (the tipping point for secondary prevention), high risk (disease management), and complex/highest risk (intensive case management).",
+        "The \"rising risk\" tier offers the biggest opportunity to change trajectory and avoid costly progression, so smart programs invest there, not only at the apex.",
+        "Risk is scored with tools like HCC/RAF (diagnosis-based, central to MA/ACO payment), ACG, the Charlson Comorbidity Index, and LACE (readmission risk).",
+        "Data-driven models should be combined with clinical judgment, which captures factors (social, recent events) the codes miss.",
+        "A risk score must drive a different action per tier, and because patients move between tiers, stratification must be refreshed continuously."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "High-risk patients are already expensive and partly locked in; low-risk patients are fine. Rising-risk patients are at the tipping point, where a well-timed intervention (secondary prevention) can keep them from progressing into the high-risk, high-cost tier. Catching and acting on this group early is where population health most changes both outcomes and cost trajectory.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Because rising-risk patients are the cheapest to ignore"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Because they are at a tipping point — a timely intervention can prevent them from becoming high-risk, which is both clinically better and far cheaper than managing them once they deteriorate"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Because they account for nearly all healthcare spending already"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Because they require no intervention at all"
+        }
+      ],
+      "question": "Why is the \"rising risk\" middle tier of the risk pyramid often the highest-value place to focus population health efforts?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Risk Stratification in Healthcare: Models, Benefits, and Challenges (US Health Insights) — https://ushealthinsights.com/article/risk-stratification-in-healthcare/ — pyramid model; spending concentration; purpose of stratification"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Risk Stratification (NACHC Action Guide) — https://www.nachc.org/wp-content/uploads/2023/04/PHM_Risk-Stratification-AG-Jan-2022.pdf — pyramid tiers; combining algorithms with clinical judgment"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] What Is Risk Stratification in Healthcare? (Aledade) — https://aledade.com/value-based-care-resources/blogs/what-is-risk-stratification-in-health-care/ — 5%/50% and 20%/80% spending concentration; 17x cost of complexity"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Risk-Stratification Methods for Identifying Patients for Care Coordination (AJMC) — https://www.ajmc.com/view/risk-stratification-methods-for-identifying-patients-for-care-coordination — HCC, ACG, Charlson methods and comparative performance"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] A Systematic Review of Risk Stratification Tools in Primary Care (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC8299990/ — ACG/CCI/HCC comparison; predictive performance"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Understanding Risk Stratification and Comorbidities (Health Catalyst) — https://www.slideshare.net/healthcatalyst1/understanding-risk-stratification-comorbidities-and-the-future-of-healthcare — HCC/RAF; LACE readmission score; tiering to action"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "population-health-management",
+  "order": 4,
+  "slug": {
+    "_type": "slug",
+    "current": "risk-stratification-models"
+  },
+  "title": "Risk Stratification: Models and Methods"
+}

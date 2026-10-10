@@ -1,0 +1,73 @@
+{
+  "id": "5579e2bd-d1e1-434e-822b-532b8155f489",
+  "track_id": "0e78285d-e6f2-4f97-8ce1-207bb6a2eb0c",
+  "pillar": "equity",
+  "order": 2,
+  "slug": "population-carrier-screening",
+  "title": "Population-Based Carrier Screening",
+  "summary": "Expanded carrier screening, ACOG/ACMG guidelines, and equitable access to reproductive genomics.",
+  "estimated_minutes": 16,
+  "objectives": [],
+  "content_blocks": [
+    {
+      "text": "Reproductive Genomics for Every Couple",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "text": "Carrier screening identifies individuals who carry one copy of a pathogenic variant in an autosomal recessive condition — they are healthy but at risk of having an affected child if their partner is also a carrier. Traditional carrier screening was ethnicity-based (Ashkenazi Jewish panel, sickle cell for African Americans). Expanded carrier screening (ECS) tests for hundreds of recessive conditions regardless of ethnicity.",
+      "type": "text"
+    },
+    {
+      "text": "In 2023, ACOG and ACMG jointly updated recommendations to endorse ECS over ethnicity-based screening. The updated guidance recommends offering ECS to all patients preconception or in early pregnancy as the preferred approach. Conditions included in ECS panels must meet criteria: well-defined phenotype, significant morbidity/mortality, disease frequency >1/100,000, and available treatment or reproductive options.",
+      "type": "text"
+    },
+    {
+      "type": "key_stat",
+      "label": "Couples who are both carriers of the same recessive condition when ECS is performed",
+      "value": "~1 in 4",
+      "context": "Among couples where both partners undergo ECS, approximately 1 in 4 are 'at-risk couples' with 25% chance of an affected pregnancy"
+    },
+    {
+      "type": "concepts_grid",
+      "concepts": [
+        {
+          "term": "Carrier Frequency",
+          "definition": "Proportion of the population carrying one pathogenic allele for a recessive condition — varies by ancestry and condition"
+        },
+        {
+          "term": "Residual Risk",
+          "definition": "Remaining carrier risk after a negative carrier screen — depends on detection rate of the panel for that variant/ancestry"
+        },
+        {
+          "term": "Couple-Based vs. Sequential Screening",
+          "definition": "Couple-based screens both partners simultaneously; sequential screens one first, then the partner only if first is positive"
+        },
+        {
+          "term": "Preimplantation Genetic Testing (PGT-M)",
+          "definition": "Genetic testing of IVF embryos before implantation — allows selection of unaffected embryos for at-risk couples"
+        },
+        {
+          "term": "NIPT (Non-Invasive Prenatal Testing)",
+          "definition": "cfDNA-based screening for chromosomal aneuploidy (trisomy 21, 18, 13) and sex chromosomes from maternal blood at 10+ weeks"
+        },
+        {
+          "term": "cfDNA (Cell-Free DNA)",
+          "definition": "Fetal DNA fragments in maternal circulation — source material for NIPT"
+        }
+      ]
+    },
+    {
+      "body": "Expanded carrier screening panels cost $250–$600 out of pocket when not covered by insurance. Coverage varies dramatically by insurer and state. This creates equity gaps: well-insured, educated patients access ECS; underserved populations often do not. Federally Qualified Health Centers (FQHCs) and Title X family planning programs are key access points for expanding ECS to underserved communities. Several states have mandated ECS insurance coverage.",
+      "type": "callout",
+      "title": "ECS Access and Equity",
+      "variant": "info"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:24.972737+00:00",
+  "updated_at": "2026-06-02T04:30:49.236625+00:00",
+  "sanity_slug": "population-carrier-screening"
+}

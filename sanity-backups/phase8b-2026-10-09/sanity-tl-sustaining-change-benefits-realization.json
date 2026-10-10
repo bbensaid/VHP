@@ -1,0 +1,438 @@
+{
+  "_createdAt": "2026-09-22T19:15:12Z",
+  "_id": "tl-sustaining-change-benefits-realization",
+  "_rev": "lK8ThWNLjNn912fmFZVwVK",
+  "_type": "academyModule",
+  "_updatedAt": "2026-09-22T19:15:12Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Step With No Finish Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Kotter's eighth step — institute the change in culture and systems — is the step this course has now flagged twice as the one most transformation efforts skip, and it is worth being precise about why. Steps 1 through 7 each have a visible event attached: a public presentation that creates urgency, a coalition's first meeting, a launch, an early win, a period of visible acceleration. Institutionalization has no equivalent event to point to. It is the absence of an event — the new behavior simply continuing to be normal long after the program that created it has stopped being anyone's actively managed project."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "That absence of a natural finish line is precisely why sustainment has to be planned and budgeted for deliberately, rather than assumed to happen automatically once a transformation has launched successfully. The Project Management Institute's benefits realization management standard gives this planning a formal structure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "PMI's Three-Part Discipline"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Benefits realization management is the process of planning, tracking, realizing, and sustaining the strategic benefits a project, program, or portfolio is meant to produce. PMI's standard treats it as a tool within the broader discipline of portfolio performance management, and defines three core elements: identify the benefits a program is meant to produce, execute the changes needed to produce them, and sustain those benefits after the program has formally concluded."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The third element — sustain — is the one most transformation plans never explicitly budget for. Most plans identify a target benefit clearly and execute a defined set of changes to reach it. Far fewer plans assign a named owner, a review cadence, and a monitoring mechanism to the period after the program has officially closed — which is exactly when a hard-won gain is most vulnerable to quietly reversing."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Maryland General Assembly — the HSCRC's founding statute",
+          "label": "Maryland's rate-setting authority created",
+          "value": "1971"
+        },
+        {
+          "_key": "s2",
+          "context": "CMS/CMMI + HSCRC — the All-Payer Model",
+          "label": "Global budgets extended to all acute hospitals",
+          "value": "2014"
+        },
+        {
+          "_key": "s3",
+          "context": "Maryland TCOC Model — added non-hospital spending incentives",
+          "label": "Extended to Total Cost of Care",
+          "value": "2019"
+        }
+      ]
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Case Study in Durability: Maryland's Five-Decade Run"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Maryland's hospital rate-setting authority has operated continuously since a 1971 state statute — more than five decades, spanning multiple governors, legislatures, and federal administrations. The model has not been static across that period. It has been repeatedly revised: extended to private payers in 1974, to Medicare and Medicaid in 1977, converted to global budgets for all acute-care hospitals in 2014, and extended again into a Total Cost of Care model covering non-hospital spending in 2019. Published assessments describe the model as having performed favorably over its most recent decade, but explicitly note this has required \"continual course correction by CMS, HSCRC, and hospitals\" rather than a single design that has simply run unchanged."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "The relevant lesson from Maryland is not that its original 1971 or 2014 design was perfect and therefore never needed to change. It is the opposite: the model survived and expanded specifically because it had a standing structure — the HSCRC as a permanent independent commission, with an ongoing relationship to CMS — that could keep making course corrections indefinitely, long after the original 1971 or 2014 launch events were no longer news. Durability came from a standing governance structure built to keep adjusting, not from getting the design right once and leaving it alone.",
+      "title": "Maryland as the Institutionalization Benchmark"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Case Study in Sustainment Infrastructure: CPC+'s Learning Collaboratives"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS's Comprehensive Primary Care Plus model, a national advanced primary care medical home model that launched in 2017 across 14 regions and expanded to 18 by 2018, built its sustainment mechanism directly into the program's design rather than treating it as a follow-up activity after launch."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "CPC+ included a standing national and regional learning system — in-person and web-based learning communities, national webinars, an annual national stakeholder meeting, cross-region collaboration, and individualized on-site coaching — organized around five core primary-care functions: access and continuity, care management, comprehensiveness and coordination, patient and caregiver engagement, and planned care and population health. The infrastructure did not end when a practice completed its initial transformation; it continued operating for the life of the model precisely so that gains made in year one did not depend on a single training event holding permanently.",
+      "title": "CPC+'s Learning System"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Case Study in Collapse: What Happens Without Sustainment Infrastructure"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The NHS's National Programme for IT, examined in Lesson 3 for its governance-structure failure, offers a second, distinct lesson here about sustainment specifically. The UK's National Audit Office found not only that the programme itself failed, but that the lessons from its failure were not being captured or applied systematically — meaning the same structural risks remained live in the government's later digital transformation programmes. A program that has no mechanism for sustaining even its own institutional learning is unlikely to have a mechanism for sustaining the operational benefits it was originally built to produce."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Sustained (Maryland, CPC+)",
+        "points": [
+          "A standing governance body empowered to keep making course corrections indefinitely",
+          "A learning/coaching infrastructure that continues after initial go-live",
+          "A named review cadence that outlives the original launch team"
+        ]
+      },
+      "right": {
+        "label": "Collapsed (NPfIT)",
+        "points": [
+          "Governance structured around a single centralized launch, not ongoing local adjustment",
+          "No standing mechanism to capture and apply lessons after failure began to show",
+          "Institutional learning not systematically transferred to later programs"
+        ]
+      },
+      "title": "What Sustains a Transformation vs. What Lets It Collapse"
+    },
+    {
+      "_key": "s6h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Building a Sustainment Plan"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s6p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A transformation's launch team should not be the same body responsible for its indefinite maintenance — the skills, incentives, and attention span required are different. A concrete sustainment plan names a benefit owner for each targeted gain, sets a review cadence that continues well past go-live, keeps the risk register open rather than closing the file at launch, and budgets ongoing resources for the kind of learning-collaborative-style support CPC+ built in, rather than treating training as a one-time event."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Assign a specific, named individual responsible for each targeted benefit continuing to hold — not the launch project manager by default.",
+          "title": "Name a benefit owner"
+        },
+        {
+          "_key": "step2",
+          "description": "Schedule reviews on a fixed calendar that extends well beyond the program's formal close date.",
+          "title": "Set a post-launch review cadence"
+        },
+        {
+          "_key": "step3",
+          "description": "Do not close the risk register at go-live; the risks to a benefit holding are often different from the risks to launching it.",
+          "title": "Keep the risk register open"
+        },
+        {
+          "_key": "step4",
+          "description": "Fund coaching, cross-site collaboration, or a learning community the way CPC+ did, rather than a single training event.",
+          "title": "Budget for ongoing learning support"
+        },
+        {
+          "_key": "step5",
+          "description": "The book's own recommendation for Vermont — a consolidated dashboard reported at every legislative cycle — is a sustainment mechanism, not only a launch-phase accountability tool.",
+          "title": "Report on a fixed public cadence indefinitely"
+        }
+      ],
+      "title": "A Sustainment Plan"
+    },
+    {
+      "_key": "s6hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "If the dashboard does not exist, the transformation is not being managed. If it exists but the milestones are consistently incomplete, the transformation is not on track — and either way, the legislature, board, or executive sponsor needs to know before the gap becomes irreversible."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Kotter's Step 8, institutionalization, has no natural finish-line event, which is exactly why it is the step most healthcare transformations leave incomplete.",
+        "PMI's benefits realization management standard defines three core elements — identify, execute, sustain — and most transformation plans budget for the first two but not the third.",
+        "Maryland's hospital rate-setting model has operated continuously since 1971 and expanded through 2014 and 2019 specifically because a standing governance body kept making course corrections, not because the original design was static.",
+        "CMS's CPC+ built a standing national and regional learning-collaborative infrastructure directly into the model, so gains did not depend on a single training event.",
+        "The NHS's National Audit Office found NPfIT's failure lessons were not systematically captured even by later government digital programs — a sustainment failure layered on top of the original governance failure.",
+        "A concrete sustainment plan names a benefit owner, sets a post-launch review cadence, keeps the risk register open, and budgets ongoing learning support rather than a one-time launch event.",
+        "A fixed, public reporting cadence — the book's own recommendation for Vermont's legislature — functions as a sustainment mechanism, not just an accountability tool for the launch phase."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Most transformation plans do identify a target benefit and execute a defined set of changes to reach it. Far fewer assign a named owner, review cadence, and monitoring mechanism for the period after the program formally closes — exactly the gap the NHS's own National Audit Office found in NPfIT's aftermath.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Identify the benefits"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": false,
+          "text": "Execute the changes needed to produce the benefits"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": true,
+          "text": "Sustain the benefits after the program ends"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Market the benefits externally"
+        }
+      ],
+      "question": "Per PMI's benefits realization management standard, which of the three core elements — identify, execute, sustain — does this lesson identify as the one most transformation plans fail to budget for?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] PMI, \"Benefits Realization Management Framework\" — https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/benefits-realization-management-framework.pdf — the identify/execute/sustain framework"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Commonwealth Fund, \"Hospital Global Budgeting: Lessons from Maryland and Selected Nations\" (2024) — https://www.commonwealthfund.org/publications/fund-reports/2024/jun/hospital-global-budgeting-lessons-maryland-selected-nations — Maryland's multi-decade course-correction history"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CMS, \"CPC+ Annual Report\" and Primary Care Collaborative overview — https://www.cms.gov/priorities/innovation/data-and-reports/2022/cpc-annual-report-2-cms-perspective — CPC+ learning-collaborative infrastructure"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] National Audit Office / Parliament Public Accounts Committee, \"The dismantled National Programme for IT in the NHS\" — https://publications.parliament.uk/pa/cm201314/cmselect/cmpubacc/294/294.pdf — the finding that NPfIT's lessons were not systematically captured"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Health Transformation Review, Transforming American Healthcare, Chapter 12 §12.9 — internal manuscript, the legislative-dashboard sustainment recommendation"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "tl-sustaining-change-benefits-realization"
+  },
+  "title": "Sustaining the Change: Benefits Realization and Avoiding Reform Fatigue"
+}

@@ -1,0 +1,465 @@
+{
+  "_createdAt": "2026-05-31T07:32:51Z",
+  "_id": "debt-financing",
+  "_rev": "rL4Cn5Sfo5Z8rzPmEBXQqZ",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T07:32:51Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Hospitals Pay for the Big Things"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A new hospital tower can cost hundreds of millions of dollars. A major system-wide electronic health record can run into the billions. No hospital pays for investments of this scale out of its annual operating surplus — the thin margins covered in earlier lessons make that impossible. Instead, hospitals borrow, and the dominant way they borrow is by issuing bonds. Understanding debt financing — how hospitals issue bonds, how credit ratings determine what they pay, and how covenants constrain what they do afterward — is essential to understanding how hospitals fund their futures."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "For nonprofit hospitals, debt financing comes with a powerful advantage rooted in their tax status. Because they are 501(c)(3) charitable organizations, they can issue tax-exempt (municipal) debt — bonds whose interest is exempt from federal (and often state) income tax for the investor. That tax exemption lets investors accept a lower interest rate, and nonprofit hospital borrowers save, on average, an estimated 2 percentage points on their borrowing compared to taxable bonds or bank financing. On a $300 million bond, two points is enormous, and those savings ultimately lower the cost of care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "But borrowing at attractive rates is not automatic. A hospital must convince investors it will repay, and the entire machinery of credit ratings and bond covenants exists to price and police that risk. The story of hospital debt financing is the story of how a hospital’s financial health — the ratios from earlier lessons — translates directly into the cost and availability of the capital it needs to survive."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: Nonprofit hospitals fund major investments primarily by issuing tax-exempt (municipal) bonds, saving roughly 2 percentage points versus taxable financing. Credit ratings determine the interest rate they pay, and bond covenants impose ongoing financial requirements they must meet."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Nonprofit hospitals save an estimated 2 percentage points on borrowing by issuing tax-exempt bonds versus taxable debt — savings that lower the cost of care (industry analyses)",
+          "label": "Tax-Exempt Borrowing Savings",
+          "value": "~2 pts"
+        },
+        {
+          "_key": "s2",
+          "context": "Moody’s, S&P, and Fitch collectively issued 95 hospital downgrades against 37 upgrades in 2024, reflecting ongoing expense pressure (Fierce Healthcare)",
+          "label": "Downgrades vs. Upgrades (2024)",
+          "value": "95 vs 37"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Tax-Exempt Bonds: The Workhorse of Hospital Capital"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "When a nonprofit hospital issues a bond, it is borrowing from investors who buy the bonds and receive interest payments over time, with the principal repaid at maturity. These are typically issued through a state or local financing authority, which is what gives them their tax-exempt, \"municipal\" character. The proceeds fund capital projects — and in recent years, new issuance has gone primarily toward renovation and expansion of existing facilities and growth opportunities, especially ambulatory (outpatient) expansion that reflects care moving out of inpatient settings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The municipal hospital bond market is cyclical and revealing. After three years of declining volume, 2024 saw a large rebound, with healthcare bond issuance jumping more than 100% year over year as hospitals returned to the capital markets to fund delayed projects. This rebound signals both pent-up capital needs from years of deferred investment and enough financial recovery for hospitals to take on new debt — connecting directly to the rising capital-expenditure trends discussed in the budgeting lessons."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Credit Ratings: The Price of Trust"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Before a hospital can sell bonds at a good rate, it must be rated. The three major credit rating agencies — Moody’s, Standard & Poor’s (S&P), and Fitch — evaluate a hospital based on the likelihood that it will default on its debt, examining metrics like its cost structure, local demographics, and payer mix, alongside the financial ratios covered earlier (operating margin, days cash on hand, debt service coverage). The rating they assign is a letter grade that investors use to judge risk."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most important dividing line is investment grade. Bonds rated BBB- or higher by S&P and Fitch, or Baa3 or higher by Moody’s, are investment grade; anything below is \"speculative\" or \"junk.\" This line matters enormously because many institutional investors are restricted to investment-grade securities, so a hospital that falls below it loses access to a huge pool of buyers. The rating directly sets the interest rate: a higher rating signals lower risk, so investors accept lower returns, and the hospital borrows more cheaply."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Ratings move, and the direction has been worrying. In 2024, the three agencies collectively issued 95 downgrades against just 37 upgrades — an improvement over 2023’s 116 downgrades and 33 upgrades, but still a lopsided picture. Many downgrades reflected ongoing expense pressure that outpaced revenue growth, even as patient volumes recovered and reliance on contract labor declined. Each downgrade is more than a label: it tangibly raises the hospital’s future borrowing costs and signals deteriorating financial health to the entire market."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3w1",
+      "_type": "warningBlock",
+      "message": "When a hospital’s rating falls, investors demand more return for the added perceived risk, pushing up interest rates on new debt, widening spreads, and triggering more restrictive terms and reserve requirements. A drop below investment grade can be severely detrimental — sharply limiting access to capital and harming even existing bondholders.",
+      "title": "A Downgrade Is Expensive — Especially Below Investment Grade"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Covenants: The Strings Attached to Borrowing"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Lending a hospital hundreds of millions of dollars is risky, so bondholders protect themselves with covenants — contractual promises the hospital must keep for as long as the bonds are outstanding. The two most common financial covenants come straight from the ratios covered earlier. A debt service coverage ratio (DSCR) covenant requires the hospital to maintain enough cash flow to cover its principal and interest payments, with minimums often ranging from 1.10 to 1.25. A days cash on hand covenant requires the hospital to keep a minimum liquidity cushion, often in the range of 40 to 80 days."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "These covenants are typically consolidated through a master trust indenture, a financing structure that pools the credit of multiple nonprofit entities into an \"obligated group\" and consolidates all financial covenants into a single document used across the system’s bond issues. The structure lets a health system borrow on the combined strength of its members. Privately placed bonds held by banks often carry more stringent covenants than publicly issued bonds under a master indenture — but they offer the flexibility of negotiating directly with the lender if trouble arises."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4steps1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Maintain cash flow sufficient to cover debt payments — minimums often 1.10 to 1.25.",
+          "title": "Debt service coverage ratio"
+        },
+        {
+          "_key": "step2",
+          "description": "Keep a minimum liquidity cushion — often 40 to 80 days of operating expenses.",
+          "title": "Days cash on hand"
+        },
+        {
+          "_key": "step3",
+          "description": "Demonstrate financial capacity before issuing more debt, protecting existing bondholders.",
+          "title": "Additional bonds test"
+        },
+        {
+          "_key": "step4",
+          "description": "Provide regular financial statements and certify covenant compliance to bondholders.",
+          "title": "Reporting and compliance"
+        }
+      ],
+      "title": "Common Hospital Bond Covenants"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Breaching a covenant is serious. A covenant default can trigger remedies ranging from penalty rates to, in the worst case, acceleration — the lender demanding immediate repayment of the entire balance. Because the consequences are so severe, hospitals approaching a covenant breach must take aggressive early action: cutting costs, raising liquidity, or negotiating waivers and amendments with bondholders or banks before the breach occurs. Covenant management is a core discipline of hospital treasury operations, not a back-office afterthought."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Debt Financing Ties the Whole Course Together"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Debt financing is where nearly every concept in hospital finance converges. The financial ratios from Module 1 are not academic — they are literally the inputs rating agencies use and the thresholds covenants enforce. A hospital’s payer mix and operating margin shape its rating; its days cash on hand is both a liquidity measure and a covenant requirement; its debt service coverage determines whether it can borrow more. The abstract idea of \"financial health\" becomes concrete the moment a hospital tries to raise capital."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "A hospital borrowing through bonds is like a homebuyer getting a mortgage. The credit rating is the credit score: a better score means a lower interest rate and access to more lenders. The tax exemption is like a special low-rate program only certain buyers qualify for. The covenants are the mortgage terms — keep your income above a threshold, maintain insurance — and breaking them can let the bank call the loan. Just as a homebuyer’s whole financial life shapes their mortgage, a hospital’s entire financial profile shapes its access to capital.",
+      "concept": "Hospital bonds, ratings, and covenants"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This convergence creates a powerful feedback loop, for better or worse. A financially strong hospital earns a high rating, borrows cheaply, invests in facilities and technology that strengthen it further, and easily meets its covenants. A struggling hospital gets downgraded, borrows expensively (if at all), cannot fund the investments that would improve its position, and risks breaching covenants — accelerating its decline. Debt financing can be a ladder up or a spiral down, and which one depends on the fundamentals built in every prior lesson."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For the student of hospital finance, debt financing is the capstone of the capital side of the field. It shows why margins, liquidity, and coverage ratios matter beyond the financial statements: they determine whether a hospital can afford to build, expand, and modernize — or whether it is locked out of the capital markets precisely when it most needs them. Mastering bonds, ratings, and covenants means seeing how a hospital’s past financial performance becomes the constraint and the engine of its future."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "Hospitals fund large capital investments primarily by issuing bonds; nonprofit (501(c)(3)) hospitals can issue tax-exempt municipal bonds, saving roughly 2 percentage points versus taxable financing.",
+        "Healthcare bond issuance rebounded sharply in 2024 (up more than 100% year over year), with proceeds going largely to renovation, expansion, and ambulatory (outpatient) growth.",
+        "The three major rating agencies — Moody’s, S&P, and Fitch — assess default risk using cost structure, demographics, payer mix, and financial ratios, assigning a credit rating that sets the hospital’s borrowing cost.",
+        "Investment grade (BBB-/Baa3 or higher) is the critical threshold; falling below it cuts off access to many institutional investors and sharply raises borrowing costs.",
+        "Rating trends have been negative: agencies issued 95 downgrades versus 37 upgrades in 2024, driven by expenses outpacing revenue, and each downgrade raises future borrowing costs.",
+        "Bond covenants impose ongoing requirements — commonly a debt service coverage ratio (often 1.10–1.25 minimum) and days cash on hand (often 40–80 days) — frequently consolidated via a master trust indenture and obligated group.",
+        "Breaching a covenant can trigger penalty rates or acceleration (demand for immediate full repayment), so hospitals must act aggressively and early to cut costs, raise liquidity, or negotiate waivers.",
+        "Debt financing ties the whole course together: the financial ratios are the very inputs rating agencies use and covenants enforce, creating a feedback loop that can be a ladder up or a spiral down."
+      ]
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Health Affairs Forefront: \"An Overlooked Hospital Performance Metric: Bond Ratings\" — https://www.healthaffairs.org/content/forefront/overlooked-hospital-performance-metric-bond-ratings — nonprofit tax-exempt debt issuance, the three rating agencies, and ratings based on default likelihood, cost structure, demographics, and payer mix."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Fierce Healthcare: \"Nonprofit hospitals' credit downgrades outpaced upgrades again in 2024\" — https://www.fiercehealthcare.com/providers/nonprofit-hospitals-credit-downgrades-outpaced-upgrades-again-2024 — 95 downgrades vs. 37 upgrades in 2024 (116 vs. 33 in 2023); expense pressure driving downgrades."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Kaufman Hall: \"2025 Healthcare Credit and Capital Markets Outlook\" — https://www.kaufmanhall.com/insights/article/2025-healthcare-credit-and-capital-markets-outlook — 2024 healthcare bond market rebound (>100% YoY) and issuance directed to renovation, expansion, and ambulatory growth."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Wikipedia: \"Bond credit rating\" — https://en.wikipedia.org/wiki/Bond_credit_rating — investment-grade thresholds (BBB-/Baa3 or higher across S&P, Fitch, and Moody’s)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] HFMA: \"Robert Turner: Avoiding a bond covenant default takes aggressive action\" — https://www.hfma.org/finance-and-business-strategy/robert-turner-avoiding-a-bond-covenant-default-takes-aggressive-action-from-a-health-system-borrower/ — DSCR (1.10–1.25) and days-cash-on-hand (40–80 days) covenants, master trust indentures, obligated groups, and default remedies."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Boldt Healthcare Real Estate: \"Hospital Credit Downgrades: How to Protect Capital Access\" — https://www.boldthealthcarerealestate.com/blog/navigating-healthcare-credit-downgrades-and-its-impact-on-access-to-capital/ — how downgrades raise borrowing costs, widen spreads, and tighten terms and reserve requirements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "hospital-finance",
+  "order": 12,
+  "slug": {
+    "_type": "slug",
+    "current": "debt-financing"
+  },
+  "title": "Debt Financing: Bonds, Credit Ratings, and Covenants"
+}

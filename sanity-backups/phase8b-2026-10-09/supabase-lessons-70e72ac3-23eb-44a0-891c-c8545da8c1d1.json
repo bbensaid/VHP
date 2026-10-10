@@ -1,0 +1,101 @@
+{
+  "id": "70e72ac3-23eb-44a0-891c-c8545da8c1d1",
+  "track_id": "7bb54bd8-e750-4e7b-bbc2-689d12df9a1d",
+  "pillar": "economics",
+  "order": 2,
+  "slug": "section-1115-waivers",
+  "title": "Section 1115 Waivers and Managed Care Innovation",
+  "summary": "Covers Section 1115 demonstration waivers as tools for Medicaid managed care innovation, including recent waiver approvals, community engagement requirements, and managed care-specific provisions.",
+  "estimated_minutes": 20,
+  "objectives": [
+    "Explain the legal basis and approval requirements for Section 1115 waivers",
+    "Describe how states have used 1115 waivers to innovate in managed care",
+    "Identify controversial waiver provisions and their policy implications"
+  ],
+  "content_blocks": [
+    {
+      "body": "Section 1115 of the Social Security Act gives the Secretary of HHS authority to approve experimental, pilot, or demonstration projects that promote the objectives of the Medicaid program. Unlike 1915(b) waivers (which only allow managed care mandates), 1115 waivers can waive almost any provision of Title XIX — enabling broad programmatic innovation.\n\nKey requirements: (1) the project must be budget-neutral to the federal government over the waiver period; (2) it must be approved for a defined period (typically 5 years, renewable); (3) states must implement a robust evaluation; (4) CMS must publish a public notice and comment period.",
+      "type": "text",
+      "heading": "What Is a Section 1115 Waiver?"
+    },
+    {
+      "body": "States have used 1115 waivers to test provisions that go beyond traditional Medicaid managed care, including: work/community engagement requirements (struck down by courts in Arkansas, Kentucky; recently re-approved for Georgia); premium requirements for able-bodied adults; drug testing for enrollment; and time-limited enrollment (beneficiary lock-outs). CMS policy on these provisions has shifted significantly between administrations.",
+      "type": "callout",
+      "title": "Controversial Waiver Provisions",
+      "variant": "warning"
+    },
+    {
+      "rows": [
+        [
+          "Arizona",
+          "AHCCCS",
+          "First statewide mandatory managed care",
+          "Ongoing since 1982"
+        ],
+        [
+          "Oregon",
+          "Oregon Health Plan",
+          "CCO global budgets, VBP",
+          "Ongoing"
+        ],
+        [
+          "Tennessee",
+          "TennCare",
+          "Statewide managed care with closed enrollment",
+          "Ongoing"
+        ],
+        [
+          "Georgia",
+          "Georgia Pathways",
+          "Work requirements for Medicaid expansion",
+          "Active/contested"
+        ],
+        [
+          "Vermont",
+          "All-Payer ACO",
+          "Multi-payer global budget with ACO",
+          "Ongoing"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "State",
+        "Waiver Name",
+        "Key Innovation",
+        "Status"
+      ]
+    },
+    {
+      "type": "glossary_terms",
+      "terms": [
+        {
+          "term": "Budget Neutrality",
+          "definition": "The requirement that a Section 1115 waiver not cost the federal government more than it would have spent without the waiver over the demonstration period"
+        },
+        {
+          "term": "Community Engagement Requirements",
+          "definition": "Waiver provisions requiring able-bodied adult Medicaid beneficiaries to work, volunteer, or participate in approved activities as a condition of eligibility — highly contested legally and politically"
+        },
+        {
+          "term": "Demonstration Period",
+          "definition": "The approved timeframe for a Section 1115 waiver, typically 5 years — states must apply for renewal with a new evaluation plan"
+        },
+        {
+          "term": "TennCare",
+          "definition": "Tennessee's Medicaid program, operated under a Section 1115 waiver since 1994 — one of the first and most studied state Medicaid managed care demonstrations"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "Section 1115",
+    "waivers",
+    "demonstration projects",
+    "Medicaid innovation"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:18.324367+00:00",
+  "updated_at": "2026-06-01T13:29:15.661243+00:00",
+  "sanity_slug": "section-1115-waivers"
+}

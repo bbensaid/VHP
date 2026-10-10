@@ -1,0 +1,560 @@
+{
+  "_createdAt": "2026-06-02T16:22:58Z",
+  "_id": "inpatient-pps-drg",
+  "_rev": "vgbIiwZpnxA2FcYEhjOiTy",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T16:22:58Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Problem Medicare Had to Solve"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "For Medicare’s first 18 years, hospitals were paid retrospectively for whatever it cost them to treat a patient. This cost-based reimbursement was, in the words of analysts, a \"nearly risk-free world\" for hospitals: the more services they delivered and the longer patients stayed, the more Medicare paid. There was no built-in reason to be efficient."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Predictably, costs spiraled. Cost-based payment rewarded volume and length of stay, not value, and Medicare hospital spending grew faster than the program could sustain. By the early 1980s, policymakers concluded the incentives themselves had to change."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The solution was a prospective payment system — pay a fixed, predetermined amount per case based on the patient’s diagnosis, set in advance. If a hospital treats the patient for less, it keeps the difference; if it spends more, it absorbs the loss. This single change shifted financial risk from Medicare onto hospitals and rewired the incentives of American hospital care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Prospective payment means the price is set before the care is delivered, based on the patient’s diagnosis — not on the hospital’s actual costs. Efficiency becomes the hospital’s reward; inefficiency becomes its loss."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Cost-Based (pre-1983)",
+        "points": [
+          "Hospital paid for actual costs incurred",
+          "More services and longer stays = more revenue",
+          "Hospital bears almost no financial risk",
+          "Incentive: do more, stay longer"
+        ]
+      },
+      "right": {
+        "label": "Prospective (IPPS, 1983+)",
+        "points": [
+          "Fixed payment set in advance per diagnosis",
+          "Treat efficiently and keep the difference",
+          "Hospital bears the financial risk",
+          "Incentive: treat efficiently, discharge appropriately"
+        ]
+      },
+      "title": "Cost-Based vs. Prospective Payment"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Is a DRG?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The unit of payment under the Inpatient Prospective Payment System (IPPS) is the Diagnosis-Related Group, or DRG. DRGs were developed at Yale University in the early 1970s by Robert Fetter and John Thompson as a way to classify hospital cases into clinically similar groups that consume similar resources."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The core idea is patient classification by \"case mix.\" Instead of paying for each test, drug, and bed-day, Medicare assigns each inpatient stay to a single DRG based on the principal diagnosis, procedures performed, complications, comorbidities, age, and discharge status. Each DRG carries a relative weight reflecting how resource-intensive that type of case is on average."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicare uses a refined version called MS-DRGs (Medicare Severity DRGs), which account for the severity of illness through complication and comorbidity tiers. For fiscal year 2025, CMS uses a total of 773 MS-DRGs. A high-weight DRG such as a major organ transplant pays far more than a low-weight DRG such as a simple medical admission."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex1",
+      "_type": "exampleBlock",
+      "content": "In the early 1970s, Robert B. Fetter, Ph.D., and John D. Thompson, MPH, at Yale University built the first operational set of Diagnosis-Related Groups to relate the types of patients a hospital treats to the costs it incurs. A decade later, Congress adopted their classification system as the backbone of Medicare’s national prospective payment system — turning an academic case-mix tool into the engine of U.S. hospital reimbursement.",
+      "title": "Yale University and the Birth of DRGs"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How a DRG Payment Is Calculated"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The base IPPS payment for a case is, at its heart, a multiplication: a standardized base payment rate multiplied by the DRG’s relative weight. The base rate is split into a labor-related share and a non-labor share, and the labor share is adjusted by the local area wage index so that hospitals in high-cost labor markets receive more."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "On top of that base payment, Medicare adds several adjustments. Teaching hospitals receive an Indirect Medical Education (IME) add-on tied to their resident-to-bed ratio. Hospitals serving many low-income patients receive a Disproportionate Share Hospital (DSH) add-on. And unusually expensive cases can qualify for outlier payments once costs exceed a high threshold."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The combined formula means two hospitals treating the identical DRG can be paid different amounts based on where they are, whether they teach, whom they serve, and whether the case became catastrophically expensive — but the starting point is always the same: base rate times relative weight."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Take the standardized amount, split into labor and non-labor shares.",
+          "title": "Start with the base rate"
+        },
+        {
+          "_key": "step2",
+          "description": "Apply the area wage index to the labor share for geographic cost differences.",
+          "title": "Adjust for local wages"
+        },
+        {
+          "_key": "step3",
+          "description": "Multiply the wage-adjusted base rate by the MS-DRG relative weight.",
+          "title": "Multiply by the DRG weight"
+        },
+        {
+          "_key": "step4",
+          "description": "Add IME (teaching), DSH (low-income), and any new-technology add-ons.",
+          "title": "Add policy adjustments"
+        },
+        {
+          "_key": "step5",
+          "description": "For extraordinarily costly cases that exceed the outlier threshold.",
+          "title": "Apply outlier payment if needed"
+        }
+      ],
+      "title": "Building an IPPS Payment"
+    },
+    {
+      "_key": "s3sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Congress amended the Social Security Act (CMS)",
+          "label": "IPPS Authorized",
+          "value": "1983"
+        },
+        {
+          "_key": "s2",
+          "context": "CMS FY2025 IPPS Final Rule",
+          "label": "MS-DRGs in FY2025",
+          "value": "773"
+        },
+        {
+          "_key": "s3",
+          "context": "Fetter & Thompson (CMS DRG design docs)",
+          "label": "DRGs Invented at Yale",
+          "value": "1970s"
+        },
+        {
+          "_key": "s4",
+          "context": "Plus wage index, IME, DSH, outliers",
+          "label": "Core Payment Formula",
+          "value": "Base × Weight"
+        }
+      ]
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How IPPS Changed Hospital Behavior"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because a hospital now earns a fixed amount per DRG regardless of how long the patient stays, IPPS created powerful pressure to reduce length of stay and eliminate unnecessary days and tests. After 1983, hospitals intensified their scrutiny of length of stay, and average inpatient stays fell substantially across the system."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "IPPS also made accurate clinical documentation and coding financially critical. Since the DRG assignment — and thus the payment — depends on documented diagnoses, complications, and comorbidities, hospitals invested heavily in coding, case management, and clinical documentation improvement programs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The same incentives carry risks regulators watch closely: \"upcoding\" (assigning a higher-paying DRG than warranted) and premature discharge (\"quicker and sicker\"). These concerns are exactly why Medicare layered on quality and readmissions programs in later decades — covered later in this course."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "A fixed payment per DRG rewards efficiency but can incentivize premature discharge and upcoding. Medicare’s later quality programs — like the Hospital Readmissions Reduction Program — exist partly to counterbalance these inpatient-payment incentives.",
+      "title": "The downside of paying per case"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why IPPS Still Matters"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "IPPS was the first large-scale demonstration that changing how you pay providers changes how they deliver care. It proved that Medicare’s purchasing power could reshape behavior across thousands of hospitals at once — a lesson that underpins every later payment reform."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The prospective-payment logic spread far beyond hospitals. Medicare went on to build prospective payment systems for skilled nursing facilities, home health, inpatient rehabilitation, and more — each applying the same principle of paying a predetermined amount per episode or unit of care rather than per service."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "And the DRG concept itself became foundational to bundled payments and value-based care. Once you can define and price a discrete episode of care, you can begin holding providers accountable for the cost and quality of that whole episode — which is precisely where Medicare payment policy has been heading ever since."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5q1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5q1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 1983 shift to DRG-based prospective payment proved a principle that still drives reform today: change how you pay, and you change how care is delivered."
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Before 1983, Medicare paid hospitals retrospectively for their costs, rewarding volume and long stays with almost no financial risk to the hospital.",
+        "In 1983 Congress authorized the Inpatient Prospective Payment System (IPPS), paying a fixed amount per case set in advance by diagnosis.",
+        "The unit of payment is the Diagnosis-Related Group (DRG), developed at Yale by Fetter and Thompson; Medicare uses MS-DRGs that reflect severity.",
+        "For FY2025 there are 773 MS-DRGs, each with a relative weight reflecting average resource use.",
+        "Base IPPS payment = standardized base rate × DRG relative weight, adjusted by the area wage index, plus IME, DSH, and outlier add-ons.",
+        "IPPS shifted financial risk to hospitals, drove down length of stay, and made coding and documentation financially critical.",
+        "The prospective-payment model spread to other settings and laid the conceptual groundwork for bundled payments and value-based care."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "IPPS pays prospectively: a standardized base rate (split into labor/non-labor shares and wage-index adjusted) is multiplied by the MS-DRG relative weight, with add-ons for teaching (IME), low-income share (DSH), and outliers. It deliberately does not pay based on the hospital’s actual costs, charges, or length of stay — that was the pre-1983 cost-based system it replaced.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "By the hospital’s actual costs for that specific patient"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "By a standardized base rate multiplied by the case’s DRG relative weight"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "By the number of days the patient stays in the hospital"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "By the total charges the hospital lists on its bill"
+        }
+      ],
+      "question": "Under the Inpatient Prospective Payment System, how is the base payment for a hospital admission primarily determined?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Design and Development of the Diagnosis Related Group (DRGs) — CMS — https://www.cms.gov/icd10m/fy2025-version42.0-fullcode-cms/fullcode_cms/Design_and_Development_of_the_Diagnosis_Related_Group_(DRGs).pdf — Yale origins, Fetter & Thompson, classification logic."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Diagnosis-related group — Wikipedia — https://en.wikipedia.org/wiki/Diagnosis-related_group — 1983 congressional authorization, IPPS adoption."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] FY 2025 IPPS Final Rule — CMS — https://www.cms.gov/medicare/payment/prospective-payment-systems/acute-inpatient-pps/fy-2025-ipps-final-rule-home-page — 773 MS-DRGs for FY2025."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Medicare Inpatient Methodology — Payerset — https://docs.payerset.com/using-the-payerset-platform/data-dictionary/medicare-inpatient-methodology — base rate × relative weight, wage index, IME, DSH, outliers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Cost-Based Payment — Saving Rural Hospitals (CHQPR) — https://ruralhospitals.chqpr.org/Cost-Based_Payment.html — pre-1983 cost-based \"risk-free\" reimbursement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Marketing and health care implications of hospitals adapting to DRG reimbursement — PubMed — https://pubmed.ncbi.nlm.nih.gov/10113589/ — increased scrutiny of length of stay after 1983."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicare-fundamentals",
+  "order": 4,
+  "slug": {
+    "_type": "slug",
+    "current": "inpatient-pps-drg"
+  },
+  "title": "Inpatient Payment: DRGs and the Prospective Payment System"
+}

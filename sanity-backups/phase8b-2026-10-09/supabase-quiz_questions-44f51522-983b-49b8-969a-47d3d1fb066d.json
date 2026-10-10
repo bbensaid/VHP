@@ -1,0 +1,9 @@
+{
+  "id": "44f51522-983b-49b8-969a-47d3d1fb066d",
+  "quiz_id": "6c0178d2-a0ab-495c-93d1-74e48d8aab1d",
+  "order": 2,
+  "question_type": "single_choice",
+  "question": "Which denial type has the highest appeal success rate?",
+  "explanation": "Duplicate denials (85–90% appeal success) are among the most recoverable because they often result from a processing error rather than a true clinical or administrative problem. Demonstrating the claims are for distinct dates of service typically resolves them.",
+  "points": null
+}

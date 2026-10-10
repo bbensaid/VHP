@@ -1,0 +1,24 @@
+{
+ "pairs": [
+  {
+   "old": "The third element is the one most transformation plans never budget for \u2014 and it is the exact element the NHS's National Audit Office found missing from NPfIT, concluding that lessons from the failure were not being systematically captured even by the government's later digital programs.",
+   "new": "The third element is the one most transformation plans never budget for. A related gap followed NPfIT: in 2020 the UK's National Audit Office said it was not convinced the programme's lessons were all being applied to later NHS digital programmes.",
+   "claim": "fallback callout: the sustain element is 'the exact element the NHS's National Audit Office found missing from NPfIT'",
+   "verdict": "MISATTRIBUTED",
+   "src": "NAO \"Digital transformation in the NHS\" (May 2020): \"not convinced that all the lessons are being applied now\" \u2014 a lessons-learning gap, not a finding that the PMI \"sustain\" element was missing; the NAO is the UK auditor, not the NHS's",
+   "note": ""
+  }
+ ],
+ "supa": [
+  {
+   "table": "lessons",
+   "col": "content_blocks",
+   "ids": [
+    "322dc30b-cb91-421b-8409-4984d2296736"
+   ]
+  }
+ ],
+ "files": [
+  "frontend/content/course_transformation_leadership.json"
+ ]
+}

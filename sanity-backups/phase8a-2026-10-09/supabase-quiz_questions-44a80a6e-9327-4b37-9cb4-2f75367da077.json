@@ -1,0 +1,9 @@
+{
+  "id": "44a80a6e-9327-4b37-9cb4-2f75367da077",
+  "quiz_id": "aff0b948-bb17-4cc2-a26c-64f5ba0414bb",
+  "order": 1,
+  "question_type": "single_choice",
+  "question": "Why can nonprofit hospitals issue bonds at lower interest rates than for-profit hospitals?",
+  "explanation": "Nonprofit hospitals can issue tax-exempt municipal bonds because their 501(c)(3) status allows bondholders to receive interest income exempt from federal taxes. Bondholders accept lower yields in exchange for this tax benefit, reducing the hospital's borrowing cost by 50–100 basis points.",
+  "points": null
+}

@@ -1,0 +1,75 @@
+{
+  "id": "548ff353-f388-4a1d-a7db-5008d887902f",
+  "track_id": "69f16f27-e1cf-473f-a185-96566bffe82c",
+  "pillar": "equity",
+  "order": 2,
+  "slug": "cross-sector-partnerships",
+  "title": "Cross-Sector Partnerships: Health Systems & Community Organizations",
+  "summary": "How health systems, community organizations, housing agencies, schools, and food systems are building partnerships to address upstream determinants of health at scale.",
+  "estimated_minutes": 16,
+  "objectives": [
+    {
+      "id": "obj_cs1",
+      "text": "Describe the 'anchor institution' role for health systems in community health"
+    },
+    {
+      "id": "obj_cs2",
+      "text": "Explain IRS community benefit requirements for nonprofit hospitals"
+    },
+    {
+      "id": "obj_cs3",
+      "text": "Identify examples of successful cross-sector partnerships and their outcomes"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Large health systems are often among the biggest employers in their communities — with massive purchasing power, real estate holdings, and investment portfolios. The 'anchor institution' concept asks: can health systems use these economic levers to benefit their communities, not just their patients?\n\nExamples: Kaiser Permanente has committed $200M to affordable housing. Boston Medical Center runs a food pantry, farm, and kitchen that produces medically tailored meals. Cleveland Clinic's Evergreen Cooperative uses procurement to create jobs in underserved neighborhoods. These are not charity — they are strategic investments in the social determinants of health that drive the system's highest-cost patients.",
+      "type": "text",
+      "heading": "Hospitals as anchor institutions"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Directing purchasing toward local, minority-owned businesses. Creates jobs and local economic circulation in high-need communities.",
+          "icon": "ti-briefcase",
+          "title": "Procurement"
+        },
+        {
+          "body": "Mission-aligned investing in affordable housing, community development financial institutions (CDFIs), and social enterprises.",
+          "icon": "ti-coin",
+          "title": "Investment"
+        },
+        {
+          "body": "Partnering with local schools and community colleges to create health career pathways for residents of communities the system serves.",
+          "icon": "ti-school",
+          "title": "Workforce pipeline"
+        },
+        {
+          "body": "IRS Section 501(r) requires nonprofit hospitals to conduct a Community Health Needs Assessment every 3 years and develop an implementation strategy. A mechanism for structured community investment.",
+          "icon": "ti-building-community",
+          "title": "Community health needs"
+        }
+      ],
+      "heading": "Mechanisms for health system community investment"
+    },
+    {
+      "body": "Nonprofit hospitals claimed $129B in community benefit spending in 2019 — mostly charity care and Medicaid shortfall. Critics argue that little of this reaches the social determinants investments that would most reduce community health disparities. The IRS requires community benefit reporting but allows wide flexibility in what counts. CMS and advocacy groups are pushing for requirements that a meaningful share of community benefit target measurable social determinants.",
+      "type": "callout",
+      "heading": "Community benefit: $129B annually — but poorly tracked",
+      "variant": "info"
+    }
+  ],
+  "tags": [
+    "cross-sector",
+    "partnership",
+    "anchor institution",
+    "community benefit",
+    "IRS 501r"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T22:13:46.833802+00:00",
+  "updated_at": "2026-06-02T14:03:58.159075+00:00",
+  "sanity_slug": "cross-sector-partnerships"
+}

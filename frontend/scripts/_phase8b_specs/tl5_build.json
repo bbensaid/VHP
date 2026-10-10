@@ -1,0 +1,12 @@
+{
+ "file": "frontend/content/_build_transformation_leadership_course.py",
+ "claim": "tl-managing-resistance-global-budgets fallback quiz explanation: CJR mechanism inverted",
+ "verdict": "MISATTRIBUTED",
+ "src": "Wilcock et al., JAMA Intern Med 2021;181(7):932-940 (PMID 33999159): savings dissipated because hospitals responded to the year-3 changes (high-spending dropouts; mandatory hospitals kept healthier knee patients inpatient in the bundle; selection explained 75% of decline) \u2014 not because the gaming incentive weakened",
+ "pairs": [
+  [
+   "            \"Once outpatient TKA was excluded from the bundle nationally and some hospitals' participation \"\n            \"became voluntary, the boundary-gaming incentive weakened and CJR's savings were no longer \"\n            \"statistically significant by the fourth performance year \u2014 direct evidence that the earlier \"\n            \"savings were partly an artifact of the mandatory boundary itself.\",",
+   "            \"After outpatient knee replacement could be billed outside the bundle and participation became \"\n            \"voluntary in half the areas, hospitals responded to the new boundary \u2014 high-spending hospitals \"\n            \"dropped out, and mandatory hospitals kept healthier knee patients inside the inpatient bundle \u2014 so \"\n            \"savings fell from about $976 to $331 per episode and were no longer statistically significant by \"\n            \"the fourth year (JAMA Internal Medicine, 2021).\","
+  ]
+ ]
+}

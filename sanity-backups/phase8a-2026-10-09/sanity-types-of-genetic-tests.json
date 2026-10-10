@@ -1,0 +1,521 @@
+{
+  "_createdAt": "2026-06-01T18:36:01Z",
+  "_id": "types-of-genetic-tests",
+  "_rev": "IOfxRsA0kr16lzZkUtx4WV",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T18:36:01Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two Questions: What and Why"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Cheap sequencing made genetic testing feasible, but \"a genetic test\" is not one thing. To use genetics in medicine you must understand two distinct dimensions: WHAT the test looks at (how much of the genome, examined how) and WHY it is being done (the clinical purpose). Confusing these is a common source of error — the right test depends on both."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson maps both dimensions: the technical methods (from a single gene up to the whole genome) and the clinical purposes (diagnostic, predictive, carrier, pharmacogenomic). And it addresses the increasingly important question of direct-to-consumer testing versus clinical-grade testing, which differ in ways that matter enormously for patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The practical goal is to be able to reason about which test fits a clinical situation, what it can and cannot tell you, and how to interpret what comes back. A genetic test ordered or interpreted incorrectly can mislead a patient about their health, their cancer treatment, or their family — so understanding the test landscape is foundational clinical knowledge."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A genetic test has two dimensions: WHAT it examines (single gene up to whole genome) and WHY (diagnostic, predictive, carrier, or pharmacogenomic). The right test depends on both, and clinical-grade testing differs importantly from direct-to-consumer tests."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Much of the Genome: The Methods"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Tests differ in how much DNA they examine, trading focus for breadth. Single-gene testing looks at one specific gene — ideal when a condition has distinctive features and a known causative gene (e.g., testing the HBB gene for sickle cell disease, or testing a relative for a known familial variant). It is precise and inexpensive but blind to everything else."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Gene panels examine a defined set of genes — from a few to many hundreds — chosen because they could all explain a particular presentation (e.g., a hereditary-cancer panel, or a cardiomyopathy panel). Panels are the workhorse for conditions that can be caused by many genes. Going broader, whole exome sequencing (WES) reads the exome — only about 1 to 2 percent of the genome, but the protein-coding portion that harbors roughly 85 percent of known disease-causing variants — making it an efficient catch-all when the causative gene is unknown."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Whole genome sequencing (WGS) reads essentially all the DNA, coding and non-coding, providing the most complete picture; it is used when a strong genetic suspicion remains unexplained by WES. Separately, chromosomal microarray (CMA) detects large deletions, duplications, and copy-number changes (with higher detection than the older karyotype), and karyotyping visualizes whole-chromosome abnormalities. CMA and karyotype are mainstays of prenatal and developmental diagnosis. The general principle: start as targeted as the clinical question allows, and broaden only as needed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3t1",
+      "_type": "code",
+      "code": [
+        {
+          "Best_For": "Distinctive condition with known gene; testing relatives",
+          "Examines": "One specific gene",
+          "Method": "Single-gene"
+        },
+        {
+          "Best_For": "Conditions caused by many possible genes",
+          "Examines": "A defined set (few to hundreds)",
+          "Method": "Gene_panel"
+        },
+        {
+          "Best_For": "Unknown causative gene; efficient catch-all",
+          "Examines": "Coding ~1-2% (~85% of known pathogenic variants)",
+          "Method": "Whole_exome_(WES)"
+        },
+        {
+          "Best_For": "Strong suspicion unexplained by WES",
+          "Examines": "Essentially all DNA",
+          "Method": "Whole_genome_(WGS)"
+        },
+        {
+          "Best_For": "Prenatal and developmental diagnosis",
+          "Examines": "Copy-number / whole-chromosome changes",
+          "Method": "Microarray_/_Karyotype"
+        }
+      ],
+      "language": "json",
+      "title": "Genetic Test Methods by Breadth"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why the Test: The Clinical Purposes"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The same sequencing technology serves very different clinical purposes, and the purpose shapes interpretation and counseling. Diagnostic testing seeks to confirm or rule out a suspected genetic condition in a symptomatic patient — answering \"what does this person have?\" Predictive (or presymptomatic) testing assesses future risk in a currently healthy person — for example, testing for a BRCA variant to gauge future cancer risk, or for a known familial condition."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Carrier testing identifies whether a healthy person carries a recessive variant they could pass to children even though they are unaffected themselves (relevant to cystic fibrosis, sickle cell disease, Tay-Sachs, and others) — central to reproductive planning. And pharmacogenomic testing examines genes affecting drug metabolism to guide medication choice and dosing (the subject of the next lesson)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "These purposes carry different stakes and counseling needs. A diagnostic result explains current illness; a predictive result delivers risk information about a future that may never come, with profound psychological and family implications; a carrier result matters mainly for reproduction; a pharmacogenomic result guides prescribing. The same BRCA variant means different things tested diagnostically in a cancer patient versus predictively in their healthy sibling. Matching the purpose to the situation — and counseling appropriately — is as important as choosing the right method."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Confirm/rule out a suspected condition in a symptomatic patient.",
+          "title": "Diagnostic"
+        },
+        {
+          "_key": "step2",
+          "description": "Assess future risk in a currently healthy person.",
+          "title": "Predictive (presymptomatic)"
+        },
+        {
+          "_key": "step3",
+          "description": "Identify recessive variants a healthy person could pass to children.",
+          "title": "Carrier"
+        },
+        {
+          "_key": "step4",
+          "description": "Guide drug choice and dosing based on metabolism genes.",
+          "title": "Pharmacogenomic"
+        }
+      ],
+      "title": "Genetic Testing Purposes"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinical-Grade vs. Direct-to-Consumer"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A patient may arrive with results from a direct-to-consumer (DTC) test like 23andMe, and understanding how these differ from clinical testing is essential. DTC tests are ordered by the consumer without a clinician, and report a mix of ancestry, traits, and FDA-authorized health information (some disease-risk variants, carrier status, and pharmacogenomic findings). In 2018, 23andMe became the first company to receive FDA marketing authorization for DTC health-related tests."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "But DTC tests have critical limitations that patients often misunderstand. They do not diagnose conditions — they identify predispositions, not certainties. They examine only specific, pre-selected variants, so they miss rare or novel variants in the same genes (a DTC BRCA test checks only a few variants and can give false reassurance to someone who actually carries a different pathogenic BRCA variant). And their accuracy and relevance vary by ancestry, because the variants tested were studied largely in particular populations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The practical guidance: DTC results should not be acted on clinically without confirmation by a clinical-grade test and professional interpretation. A reassuring DTC result does not rule out a condition, and a concerning one must be verified before any medical decision. Clinical-grade testing — ordered and interpreted by professionals, often with genetic counseling — is the standard for any result that will drive care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "DTC tests check only a few pre-selected variants, so a \"negative\" result can falsely reassure someone who carries a different pathogenic variant the test did not look for. DTC results identify predispositions, not diagnoses, and vary in accuracy by ancestry. Never act clinically on a DTC result without confirmation by clinical-grade testing and professional interpretation.",
+      "title": "A \"Negative\" Direct-to-Consumer Test Is Not Clinical Clearance"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Choosing and Interpreting Tests Well"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Putting the dimensions together, choosing a genetic test is a clinical reasoning exercise: define the question (diagnostic, predictive, carrier, pharmacogenomic), then pick the narrowest method that can answer it (single gene or panel if the candidates are known; WES or WGS if not). Broader is not always better — a whole genome generates far more variants of uncertain significance and incidental findings to interpret and counsel about."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Interpretation is where the difficulty lies, as the previous lessons established. Every test result must be read through the ACMG classification lens, and the broader the test, the more uncertain findings (VUS) and unexpected secondary findings it will surface — each requiring careful interpretation and, often, genetic counseling. The test is only the first step; making sense of the result, in the context of the patient and their family, is the harder work."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The throughline is that genetic testing is powerful but must be matched to purpose, chosen at the right breadth, distinguished from consumer testing, and interpreted carefully. With this map of the testing landscape established, the next lessons dive into the major clinical applications — pharmacogenomics, oncology, and hereditary conditions — where these tests are actually put to use to change care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5ex1",
+      "_type": "exampleBlock",
+      "content": "A child presents with unexplained developmental delay and no clear diagnosis. A single-gene test would be a shot in the dark; a clinician might start with chromosomal microarray (to catch copy-number causes) and, if negative, proceed to whole exome sequencing to search broadly for a causative variant.\nContrast this with a healthy adult whose mother carries a known BRCA1 variant: here a targeted single-variant test for that specific familial variant is exactly right — precise, inexpensive, and definitive. Same toolkit, different question, different correct test.",
+      "title": "Matching Test to Question"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "A genetic test has two dimensions: WHAT it examines (breadth) and WHY (clinical purpose); the right test depends on both.",
+        "By breadth: single-gene (one gene), panels (a defined set), whole exome (coding ~1-2% but ~85% of known pathogenic variants), whole genome (all DNA), and microarray/karyotype (copy-number/chromosomal).",
+        "The principle is to start as targeted as the question allows and broaden only as needed, since broader tests generate more uncertain and incidental findings.",
+        "By purpose: diagnostic (confirm illness), predictive (future risk in the healthy), carrier (recessive variants passable to children), and pharmacogenomic (drug response) — each with different stakes and counseling needs.",
+        "Direct-to-consumer tests (e.g., 23andMe, FDA-authorized for some health reports in 2018) identify predispositions, not diagnoses, and check only pre-selected variants.",
+        "A \"negative\" DTC result can falsely reassure, accuracy varies by ancestry, and DTC results must be confirmed by clinical-grade testing before driving care.",
+        "Interpretation through the ACMG lens is the hard part; broader tests surface more VUS and secondary findings, often requiring genetic counseling."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "DTC tests examine only specific, pre-selected variants, so a \"negative\" BRCA result can falsely reassure someone whose family carries a different pathogenic BRCA variant the test did not check. The correct step is clinical-grade targeted testing for the specific known familial variant, with professional interpretation. DTC results identify predispositions, not diagnoses, and should never be acted on (or used for reassurance) without clinical confirmation.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "She definitely does not carry the familial variant and needs no further testing"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The DTC test checks only a few pre-selected BRCA variants and may not include her family's specific one — she needs clinical-grade targeted testing for the known familial variant before drawing any conclusion"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "She should immediately begin cancer treatment"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "DTC and clinical tests are equivalent for this purpose"
+        }
+      ],
+      "question": "A healthy woman's mother carries a known pathogenic BRCA1 variant. The woman buys a direct-to-consumer test that includes \"BRCA\" and it comes back negative. What is the correct interpretation?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] What Are the Different Types of Genetic Tests? (MedlinePlus Genetics) — https://medlineplus.gov/genetics/understanding/testing/types/ — single-gene, panel, and testing purposes (diagnostic, predictive, carrier, pharmacogenomic)"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Whole Exome and Whole Genome Sequencing (MedlinePlus Genetics) — https://medlineplus.gov/genetics/understanding/testing/sequencing/ — WES (~1-2% of genome) vs WGS; when each is used"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Gene Panel vs. Whole Exome Sequencing (3billion) — https://3billion.io/blog/gene-panel-clinical-whole-exome-sequencing — exome ~85% of known pathogenic variants; tiered testing approach"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Chromosomal Microarray versus Karyotyping for Prenatal Diagnosis (NEJM) — https://www.nejm.org/doi/full/10.1056/NEJMoa1203382 — CMA vs karyotype detection; prenatal applications"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] DTC Genetic Testing Guide (askmyDNA) — https://www.askmydna.com/en/blog/direct-to-consumer-genetic-testing-guide — DTC reports; FDA 2018 23andMe authorization; predispositions not diagnoses; limitations"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Pharmacogenetic Testing Through the DTC Company 23andMe (BMC Medical Genomics) — https://link.springer.com/article/10.1186/s12920-017-0283-0 — DTC limitations; pre-selected variants; ancestry-dependent relevance"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "genomics-precision-medicine",
+  "order": 3,
+  "slug": {
+    "_type": "slug",
+    "current": "types-of-genetic-tests"
+  },
+  "title": "Types of Genetic Tests and Their Clinical Applications"
+}

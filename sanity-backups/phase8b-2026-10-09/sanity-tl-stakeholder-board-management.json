@@ -1,0 +1,377 @@
+{
+  "_createdAt": "2026-09-22T19:15:09Z",
+  "_id": "tl-stakeholder-board-management",
+  "_rev": "LCntMInbokDNzSR9NF5JfJ",
+  "_type": "academyModule",
+  "_updatedAt": "2026-09-22T19:15:09Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A Different Kind of Board Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A hospital governing board asked to approve a discretionary strategic initiative retains a real option: it can decline, delay, or scale it back. A board operating under mandatory payment reform — where an independent regulator has already set the rate methodology and a legislature has already set the deadline — is instead being asked to accept and implement a transformation it did not choose and cannot stop. That distinction changes what board management has to accomplish. The task is no longer persuasion toward a yes-or-no decision; it is education and engagement toward effective implementation of a decision that has already been made elsewhere."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Hospital community boards typically include members with genuine political relationships to local legislators, which means board management under mandatory reform is never purely an internal governance exercise — it is simultaneously a channel through which political and community sentiment about the reform reaches the legislature that mandated it. Three real transformation programs built three different governance designs to manage exactly this problem, and each offers a distinct, evidenced lesson."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Maryland: Naming the Sea Change Explicitly"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Maryland's Health Services Cost Review Commission, an independent state agency, has held hospital rate-setting authority since a 1971 state statute, expanded to private payers in 1974 and to Medicare and Medicaid under a 1977 federal waiver. In 2014, working with CMS and the CMS Innovation Center, the state converted all acute-care hospitals to global budgets under the Maryland All-Payer Model — fixing each hospital's total annual revenue in advance rather than paying by volume of services delivered."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex1",
+      "_type": "exampleBlock",
+      "content": "A published qualitative study of Maryland health care leaders' perspectives on the All-Payer Model found the global budget conversion was described directly as \"a monumental change, a sea change, in the way that hospitals thought about raising revenue.\" The leaders interviewed identified a specific set of governance themes as necessary to manage that shift: setting achievable expectations rather than overpromising immediate results, protecting hospital autonomy rather than dictating operational decisions from the regulator, maintaining close and continuous communication between the commission and hospital leadership, using actionable data that hospitals could act on rather than only report, carefully calibrating each hospital's budget rather than applying a single formula uniformly, and building a shared commitment to the change across the state's hospital sector rather than treating compliance as adversarial. In 2019, Maryland and CMS extended the model into the Total Cost of Care Model, adding incentives for hospitals to help manage spending on services delivered by other, non-hospital providers — a sign the original governance approach had built enough durability to support expansion rather than retrenchment.",
+      "title": "Maryland's Global Budget Conversion"
+    },
+    {
+      "_key": "s2c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Naming a change explicitly as a \"sea change\" rather than downplaying its magnitude — and then organizing governance specifically around not overpromising, protecting existing autonomy where possible, and communicating continuously — is itself a stakeholder-management strategy documented in Maryland's own case, not just a description of what the reform felt like from the outside."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Oregon: Building Community Governance Into the Structure"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Oregon took a structurally different governance approach for its Medicaid Coordinated Care Organizations, launched under a 2012 state reform. Rather than a top-down regulator managing provider compliance, each CCO is governed as a required partnership among health care providers, community members, and other stakeholders in the health system who share in the financial risk of a single global budget covering physical, mental, and dental health care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "Each Oregon CCO is required to maintain a Community Advisory Committee, which produces a Community Health Assessment and a Community Health Improvement Plan for its region. Community stakeholders and Medicaid members themselves play a formal governance role that is substantially larger than in a traditional managed-care organization. The design deliberately trades some administrative simplicity for community legitimacy: a CCO's budget and priorities are shaped, in part, by the people who use the care it finances, not only by the providers and payers who deliver and fund it.",
+      "title": "Oregon's Coordinated Care Organizations"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Massachusetts: Co-Designing the Reform Before Launch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Blue Cross Blue Shield of Massachusetts took a third approach when it launched the Alternative Quality Contract in January 2009 — a global-budget-based commercial payment model combining a fixed per-patient payment, adjusted annually for health status and inflation, with substantial performance incentives tied to nationally accepted quality, effectiveness, and patient-experience measures."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "Rather than designing the contract internally and then presenting it to providers as a finished product, BCBS Massachusetts built a team of physicians, finance experts, and measurement scientists and tested the contract concept directly with key hospital and physician leaders, local and national policy experts, employers, and other purchasers throughout the design process — before the contract was finalized. The framework explicitly linked payment reform, quality measurement, public engagement, legislative and regulatory strategy, organizational governance, and information technology as connected levers rather than treating the payment change in isolation. A Harvard Medical School study published in 2019 found the AQC slowed the growth rate of medical spending by up to 12% while improving patient care over eight years of operation, and the contract now covers more than 80% of the physicians and hospitals in the BCBS Massachusetts network.",
+      "title": "The Massachusetts Alternative Quality Contract"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A Stakeholder Management Framework for Mandatory Reform"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The three cases point to a common structural lesson despite their different designs: each built a formal mechanism for a non-payer stakeholder group — hospital leadership in Maryland, community members in Oregon, physician and hospital leaders in Massachusetts — to shape the reform's design or governance, rather than only receiving it after the fact. The book's own account of Vermont's transformation coalition identifies exactly the gap this points to: Vermont's guiding coalition of AHS leadership, the state regulator, hospital CEOs, and the legislature's health reform oversight committee is missing systematic clinical leadership integration — the same gap Kotter's Step 2 identifies as fatal if left unaddressed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "This is not a hypothetical risk drawn from general change-management theory. The book's own analysis of Vermont's actual transformation coalition names clinical leadership engagement as its current, unresolved gap — precisely the coalition-composition risk Maryland, Oregon, and Massachusetts each built formal structures to avoid.",
+      "title": "The Missing Coalition Seat Is a Named, Current Gap — Not a Hypothetical"
+    },
+    {
+      "_key": "s5st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Identify every group with real authority over implementation — regulator, legislature, board, medical staff, community — not only the group that holds legal sign-off.",
+          "title": "Map authority and interest"
+        },
+        {
+          "_key": "step2",
+          "description": "Not a consultation role — a seat with actual influence over medical staff, matching what Kotter's Step 2 requires.",
+          "title": "Give clinical leadership a real coalition seat"
+        },
+        {
+          "_key": "step3",
+          "description": "Boards under mandatory reform need sustained education on what is and is not still within their control, not a single approval meeting.",
+          "title": "Build a board education timeline"
+        },
+        {
+          "_key": "step4",
+          "description": "A channel for stakeholder concerns to actually change implementation details, even when the reform itself cannot be stopped.",
+          "title": "Create a genuine feedback loop"
+        },
+        {
+          "_key": "step5",
+          "description": "Vermont's own Chapter 12 argues the legislature should require a consolidated transformation dashboard reported at every legislative cycle — visible, regular reporting is itself a stakeholder-management tool.",
+          "title": "Report on a fixed public cadence"
+        }
+      ],
+      "title": "Building a Stakeholder Management Plan"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "A governing board under mandatory reform is being asked to implement a decision it did not make and cannot reverse — board management has to shift from persuasion to education and engagement.",
+        "Maryland's hospital leaders described their 2014 global budget conversion as \"a monumental change, a sea change,\" and named achievable expectations, protected autonomy, close communication, actionable data, calibrated budgets, and shared commitment as the governance themes that managed it.",
+        "Oregon built formal community governance directly into its Coordinated Care Organizations through required Community Advisory Committees and shared financial risk.",
+        "Massachusetts's BCBS tested its Alternative Quality Contract concept with hospital and physician leaders, policy experts, and employers before finalizing it — treating payment, quality measurement, governance, and public engagement as linked levers.",
+        "All three cases built a formal mechanism for a non-payer stakeholder group to shape the reform before or during rollout, not only after launch.",
+        "Vermont's own transformation coalition, per the book's own account, is missing exactly this kind of systematic clinical leadership integration — a current, named gap rather than a hypothetical risk.",
+        "A working stakeholder plan maps authority and interest, gives clinical leadership a real coalition seat, sustains board education over time, builds a genuine feedback loop, and reports on a fixed public cadence."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Oregon required Community Advisory Committees and shared financial governance with community members; Massachusetts tested its contract concept directly with hospital and physician leaders and policy experts before finalizing it. Both built formal, pre-launch stakeholder shaping into the reform rather than presenting a finished design after the fact.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Both eliminated financial risk for providers"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Both built formal mechanisms for non-payer stakeholders to shape the reform's design or governance"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Both were launched without any stakeholder engagement"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Both are federal CMS models"
+        }
+      ],
+      "question": "What structural feature is common to Oregon's Coordinated Care Organizations and the Massachusetts Alternative Quality Contract, despite their very different designs?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] \"Health Care Leaders' Perspectives on the Maryland All-Payer Model\" — https://pmc.ncbi.nlm.nih.gov/articles/PMC8903109/ — the \"sea change\" quote and governance themes"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Commonwealth Fund, \"Hospital Global Budgeting: Lessons from Maryland and Selected Nations\" (2024) — https://www.commonwealthfund.org/publications/fund-reports/2024/jun/hospital-global-budgeting-lessons-maryland-selected-nations — Maryland model history and 2019 TCOC extension"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Kaiser Family Foundation, \"Coordinated Care Organizations: Frequently Asked Questions\" — https://www.kff.org/wp-content/uploads/sites/2/2012/05/cco-faq.pdf — Oregon CCO governance structure"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Health Affairs, \"Private-Payer Innovation In Massachusetts: The 'Alternative Quality Contract'\" (2010) — https://healthaffairs.org/doi/full/10.1377/hlthaff.2010.0980 — AQC design and co-development process"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] BCBS Massachusetts newsroom, \"New Harvard Medical School Study Finds... Alternative Quality Contract Slowed Spending, Improved Care Over 8 Years\" (July 2019) — https://newsroom.bluecrossma.com/2019-07-17-New-Harvard-Medical-School-Study-Finds-Blue-Cross-Blue-Shield-of-Massachusetts-Alternative-Quality-Contract-Slowed-Spending-Improved-Care-Over-8-Years — AQC outcomes and network coverage"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Health Transformation Review, Transforming American Healthcare, Chapter 12 §12.4.1, Step 2 — internal manuscript, Vermont's named clinical-leadership coalition gap"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "tl-stakeholder-board-management"
+  },
+  "title": "Stakeholder and Governing Board Management Under Mandatory Payment Reform"
+}

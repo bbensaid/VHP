@@ -1,0 +1,65 @@
+{
+  "id": "94407bd1-f7ed-470d-be45-703faa7f11ec",
+  "track_id": "5f7fc507-a352-415c-b804-c361dd2d9f3f",
+  "pillar": "technology",
+  "order": 3,
+  "slug": "performance-dashboards",
+  "title": "Performance Dashboards and Benchmarking",
+  "summary": "RCM performance dashboards provide real-time visibility into revenue cycle health and enable data-driven management decisions.",
+  "estimated_minutes": 18,
+  "objectives": [
+    "Design an RCM performance dashboard with the right KPIs for different audiences",
+    "Explain how to use HFMA and MGMA benchmarks for peer comparison",
+    "Describe the characteristics of an effective RCM governance structure"
+  ],
+  "content_blocks": [
+    {
+      "body": "Different RCM audiences need different views of the same data:\n\n**Executive/CFO Dashboard:** Days in AR, Net Collection Rate, Cost to Collect, monthly net revenue trend, denial rate trend — high-level financial health indicators reviewed weekly or monthly.\n\n**Operations Manager Dashboard:** Claim volume by status, denial rate by payer and category, AR aging distribution, work queue completion rates — operational metrics reviewed daily.\n\n**Staff/Analyst Dashboard:** Individual productivity metrics, specific denial queues, claim follow-up status — task-level metrics reviewed in real time.\n\nEffective dashboards are actionable — each metric links to a defined response protocol when it falls outside acceptable range.",
+      "type": "text",
+      "heading": "Designing Effective RCM Dashboards"
+    },
+    {
+      "body": "Compare your performance to industry benchmarks from:\n\n- **HFMA (Healthcare Financial Management Association):** Annual MAP Keys benchmarks covering hospital and health system RCM metrics\n- **MGMA (Medical Group Management Association):** Physician practice benchmarks by specialty and group size\n- **CMS Public Data:** Medicare claims data for peer comparison on utilization and payment\n- **Advisory Board / Kaufman Hall:** Health system financial benchmarking\n- **Peer groups:** Direct comparison with similar organizations (by size, location, payer mix)\n\nBenchmarks are most useful when adjusted for payer mix — a high Medicaid-volume organization will have inherently higher Days in AR than a commercial-heavy peer.",
+      "type": "text",
+      "heading": "External Benchmarking Sources"
+    },
+    {
+      "body": "High-performing organizations establish an RCM Governance Committee that meets monthly and includes: CFO, VP Revenue Cycle, Chief Medical Officer (CDI oversight), Chief Compliance Officer, and department medical directors. This cross-functional ownership ensures that denial trends, documentation issues, and technology investments are addressed at the appropriate level of authority.",
+      "type": "callout",
+      "title": "RCM Governance: Who Owns the Revenue Cycle?",
+      "variant": "key"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Days in AR: <40 days (hospital)",
+          "value": "Top quartile",
+          "context": "HFMA MAP Keys 2023 benchmark"
+        },
+        {
+          "label": "Net Collection Rate: >97%",
+          "value": "Top quartile",
+          "context": "HFMA benchmark; median is ~94%"
+        },
+        {
+          "label": "Cost to Collect: <2% of net revenue",
+          "value": "Top quartile",
+          "context": "HFMA benchmark; median is ~3.5%"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "dashboard",
+    "benchmarking",
+    "HFMA",
+    "MGMA",
+    "RCM governance"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:31:32.192001+00:00",
+  "updated_at": "2026-06-01T13:14:49.973895+00:00",
+  "sanity_slug": "performance-dashboards"
+}

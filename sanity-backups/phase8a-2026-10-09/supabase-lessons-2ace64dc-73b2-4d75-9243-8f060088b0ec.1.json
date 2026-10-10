@@ -1,0 +1,114 @@
+{
+  "id": "2ace64dc-73b2-4d75-9243-8f060088b0ec",
+  "track_id": "2f888e21-e6a6-40a6-b81c-e9410b30aa52",
+  "pillar": "technology",
+  "order": 2,
+  "slug": "master-patient-index-terminology",
+  "title": "Master Patient Index & Terminology Services",
+  "summary": "Patient identity matching and clinical terminology standards — the infrastructure that ensures the right data belongs to the right patient and means the same thing everywhere.",
+  "estimated_minutes": 25,
+  "objectives": [
+    {
+      "id": "obj_m1",
+      "text": "Explain how a Master Patient Index works and why it is foundational to HIE"
+    },
+    {
+      "id": "obj_m2",
+      "text": "Distinguish deterministic and probabilistic patient matching algorithms"
+    },
+    {
+      "id": "obj_m3",
+      "text": "Identify the four major clinical terminology standards: LOINC, SNOMED CT, RxNorm, ICD-10"
+    },
+    {
+      "id": "obj_m4",
+      "text": "Explain why terminology mapping is critical to data quality and analytics"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Before any clinical data can be useful, you must be certain it belongs to the right patient. This sounds simple; it is not. Across Vermont's healthcare system, a single patient may appear in dozens of systems with slightly different representations: 'Robert Smith' vs 'Bob Smith', DOB recorded as MM/DD/YYYY in one system and YYYY-MM-DD in another, address changed twice in five years.\n\nThe Master Patient Index (MPI) solves this by maintaining a master identity record and linking all system-specific patient IDs to it. A false positive (linking two different patients) can cause clinical harm. A false negative (fragmenting one patient's records) causes care gaps and analytics failures.",
+      "type": "text",
+      "heading": "Why identity is the hardest problem in HIE"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Assigns a Master Patient Identifier (MPID) that links a patient's records across all participating systems.",
+          "icon": "ti-fingerprint",
+          "title": "MPI"
+        },
+        {
+          "body": "Exact match on defined fields (SSN + DOB + surname). High precision, lower recall — misses records with any data entry errors.",
+          "icon": "ti-equal",
+          "title": "Deterministic matching"
+        },
+        {
+          "body": "Weighted scoring across multiple fields (Fellegi-Sunter algorithm). Handles typos, name variations, and missing fields. Produces a match confidence score.",
+          "icon": "ti-math-function",
+          "title": "Probabilistic matching"
+        },
+        {
+          "body": "Two different patients incorrectly linked — the most dangerous error. Can result in wrong patient receiving another's clinical information.",
+          "icon": "ti-x",
+          "title": "False positive"
+        },
+        {
+          "body": "One patient's records remain fragmented across multiple identities. Causes care gaps, duplicate testing, analytics failures.",
+          "icon": "ti-copy",
+          "title": "False negative"
+        },
+        {
+          "body": "Uses a national reference database (e.g., LexisNexis) to augment matching — particularly effective for patients who change address or name.",
+          "icon": "ti-refresh",
+          "title": "Referential matching"
+        }
+      ],
+      "heading": "MPI and matching fundamentals"
+    },
+    {
+      "body": "Even with perfect patient matching, HIE data is useless if 'diabetes' means different things in different systems. Terminology standards create a shared vocabulary:\n\n- **LOINC** (Logical Observation Identifiers Names and Codes): Standardizes lab tests and clinical measurements. A CBC from Quest Diagnostics and a CBC from LabCorp should map to the same LOINC codes.\n- **SNOMED CT**: Comprehensive clinical terminology for diagnoses, findings, procedures. The most granular clinical vocabulary.\n- **RxNorm**: Standard for drug names and clinical drug attributes. Enables medication reconciliation across systems.\n- **ICD-10-CM**: Diagnosis codes used in claims and clinical documentation. Required for billing; maps to SNOMED for clinical analysis.\n\nYour HIE's terminology services layer maps local codes to these standards — without it, population-level analytics are unreliable.",
+      "type": "text",
+      "heading": "Why terminology standards matter"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "of HIE records have at least one demographic discrepancy",
+          "value": "~50%",
+          "source": "ONC research"
+        },
+        {
+          "label": "LOINC codes for lab and clinical observations",
+          "value": "100K+",
+          "source": "Regenstrief Institute"
+        },
+        {
+          "label": "SNOMED CT clinical concepts",
+          "value": "350K+",
+          "source": "SNOMED International"
+        },
+        {
+          "label": "HIPAA identifiers that constitute PHI",
+          "value": "~18",
+          "source": "HHS OCR"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "MPI",
+    "patient-matching",
+    "LOINC",
+    "SNOMED",
+    "RxNorm",
+    "terminology"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T17:00:43.447572+00:00",
+  "updated_at": "2026-10-09T19:34:08.848156+00:00",
+  "sanity_slug": "hie-mpi-terminology"
+}

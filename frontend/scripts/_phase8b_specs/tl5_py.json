@@ -1,0 +1,20 @@
+{
+ "file": "frontend/content/_lessons_transformation_leadership.py",
+ "claim": "tl-managing-resistance-global-budgets source: CJR mechanism inverted",
+ "verdict": "MISATTRIBUTED",
+ "src": "Wilcock et al., JAMA Intern Med 2021;181(7):932-940 (PMID 33999159): savings dissipated because hospitals responded to the year-3 changes (high-spending dropouts; mandatory hospitals kept healthier knee patients inpatient in the bundle; selection explained 75% of decline) \u2014 not because the gaming incentive weakened",
+ "pairs": [
+  [
+   "Once CMS subsequently made '\n        'participation voluntary for some hospitals and separately made outpatient total knee replacement '\n        'billable nationally outside the bundle, the boundary-optimization incentive weakened \u2014 and CJR\\'s '\n        'measured savings were no longer statistically significant by the fourth performance year.'),",
+   "When CMS made participation '\n        'voluntary in half the areas and let outpatient knee replacements be billed outside the bundle in the '\n        'model\\'s third year, hospitals responded to the new boundary: the highest-spending hospitals dropped out '\n        'where they could, and hospitals still in the mandatory bundle kept healthier knee patients in the '\n        'covered inpatient setting rather than shifting them outpatient. A 2021 JAMA Internal Medicine study '\n        'found savings fell from about $976 per episode in year two to $331 in year four \u2014 no longer '\n        'statistically significant \u2014 with patient and site-of-care selection explaining three-quarters of the decline.'),"
+  ],
+  [
+   "'CJR\\'s measured savings were no longer statistically significant by year four once the mandatory boundary was loosened \u2014 direct evidence the earlier savings were partly an artifact of the boundary itself.',",
+   "'CJR\\'s measured savings had largely dissipated by year four because hospitals responded to the year-three rule changes \u2014 high-spending hospitals exited where participation became voluntary, and remaining hospitals selected which patients stayed inside the bundle (JAMA Internal Medicine, 2021).',"
+  ],
+  [
+   "        'Once outpatient TKA was excluded from the bundle nationally and some hospitals\\' participation became '\n        'voluntary, the boundary-optimization incentive weakened, and CJR\\'s measured savings were no longer '\n        'statistically significant by the fourth year \u2014 evidence that part of the earlier savings reflected '\n        'boundary-gaming rather than genuine efficiency gains.'),",
+   "        'After outpatient knee replacement could be billed outside the bundle and participation became voluntary '\n        'in half the areas, hospitals responded to the new boundary \u2014 high-spending hospitals dropped out, and '\n        'mandatory hospitals kept healthier knee patients inside the inpatient bundle \u2014 so savings fell from about '\n        '$976 to $331 per episode and were no longer statistically significant by the fourth year (JAMA Internal '\n        'Medicine, 2021).'),"
+  ]
+ ]
+}

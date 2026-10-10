@@ -1,0 +1,108 @@
+{
+  "id": "933671b6-3696-4c5c-9a1d-79820679c1e1",
+  "track_id": "9a457eb2-7ae0-4e9f-83c1-e0c8546cf63b",
+  "pillar": "economics",
+  "order": 1,
+  "slug": "medicaid-managed-care-organizations",
+  "title": "MCOs: Capitation, Networks & Accountability",
+  "summary": "How Medicaid managed care organizations are paid, contracted, and held accountable — and why states moved from fee-for-service to managed care.",
+  "estimated_minutes": 20,
+  "objectives": [
+    {
+      "id": "obj_mm1",
+      "text": "Explain how capitated managed care differs from fee-for-service"
+    },
+    {
+      "id": "obj_mm2",
+      "text": "Describe how states set capitation rates and what actuarial soundness means"
+    },
+    {
+      "id": "obj_mm3",
+      "text": "Identify the key accountability mechanisms for Medicaid MCOs"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "In 1980, nearly all Medicaid was delivered fee-for-service: states paid providers directly for each covered service. By July 2024, about 78% of Medicaid enrollees were in comprehensive managed care organizations (MCOs) (CMS), and payments to MCOs made up about 52% of total Medicaid spending in FY 2023 (KFF).\n\nThe shift happened for several reasons: states wanted cost predictability, MCOs promised care coordination, and federal law in the 1990s made it easier for states to mandate managed care enrollment without federal waivers.",
+      "type": "text",
+      "heading": "The shift to managed care"
+    },
+    {
+      "rows": [
+        {
+          "left": "State pays provider per service",
+          "label": "Payment model",
+          "right": "State pays MCO fixed monthly amount per member (PMPM)"
+        },
+        {
+          "left": "State bears all cost risk",
+          "label": "Financial risk",
+          "right": "MCO bears utilization risk within contracted services"
+        },
+        {
+          "left": "Fragmented; each provider bills separately",
+          "label": "Care coordination",
+          "right": "MCO responsible for coordinating care"
+        },
+        {
+          "left": "Unpredictable — depends on utilization",
+          "label": "Cost predictability",
+          "right": "Predictable state budget (per PMPM rate)"
+        },
+        {
+          "left": "State sets rates directly",
+          "label": "Provider payment",
+          "right": "MCO sets rates within contract minimums"
+        }
+      ],
+      "type": "comparison_table",
+      "heading": "Fee-for-service vs. managed care",
+      "leftLabel": "Fee-for-Service",
+      "rightLabel": "Managed Care (Capitation)"
+    },
+    {
+      "body": "Federal law requires that Medicaid capitation rates be 'actuarially sound' — sufficient to pay for covered services for the enrolled population. States must document their actuarial basis. Rates that are too low create financial pressure on MCOs that can result in inadequate provider networks, prior authorization barriers, or insolvency.",
+      "type": "callout",
+      "heading": "Actuarial soundness: the legal floor",
+      "variant": "info"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "State-MCO contracts specify covered services, network requirements, quality measures, and financial penalties for non-compliance.",
+          "icon": "ti-file-text",
+          "title": "Contracts"
+        },
+        {
+          "body": "MCOs report standardized quality measures (HEDIS). States may tie a portion of capitation to performance on key measures.",
+          "icon": "ti-chart-bar",
+          "title": "HEDIS measures"
+        },
+        {
+          "body": "Federal rules require MCOs to maintain sufficient providers (time/distance standards) so enrollees can access covered services.",
+          "icon": "ti-users",
+          "title": "Network adequacy"
+        },
+        {
+          "body": "States must set capitation rates so each MCO can reasonably achieve a medical loss ratio of at least 85%; states may require plans that fall short to remit the difference.",
+          "icon": "ti-cash",
+          "title": "MLR requirements"
+        }
+      ],
+      "heading": "MCO accountability mechanisms"
+    }
+  ],
+  "tags": [
+    "managed care",
+    "MCO",
+    "capitation",
+    "PMPM",
+    "network adequacy"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T21:56:17.34809+00:00",
+  "updated_at": "2026-10-09T14:48:26.074867+00:00",
+  "sanity_slug": "medicaid-managed-care-organizations"
+}

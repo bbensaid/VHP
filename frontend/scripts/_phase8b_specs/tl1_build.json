@@ -1,0 +1,28 @@
+{
+ "file": "frontend/content/_build_transformation_leadership_course.py",
+ "claim": "tl-why-change-management-matters fallback source: PMI stats misattributed",
+ "verdict": "MISATTRIBUTED",
+ "src": "PMI Pulse 2013 ($135M at risk per $1B; $20M vs $280M), 2017 (38% more projects meet original goals with strategy-aligned EPMO), 2020 (67% more fail outright); PAC HC 294 (2013) \u00a39.8bn estimated cost; no source for \u00a310-12.7bn or risk assessments set aside",
+ "pairs": [
+  [
+   "(\"$135M\", \"Lost per $1B in failed projects\", \"PMI, Pulse of the Profession \u2014 unrecoverable loss on failed initiatives\"),",
+   "(\"$135M\", \"At risk per $1B spent on projects\", \"PMI, Pulse of the Profession 2013 \u2014 money put at risk by poor project performance\"),"
+  ],
+  [
+   "(\"38%\", \"More projects on time/budget\", \"PMI \u2014 organizations with a PMO vs. those without one\"),",
+   "(\"38%\", \"More projects meet original goals\", \"PMI, Pulse of the Profession 2017 \u2014 organizations whose enterprise PMO is aligned to strategy\"),"
+  ],
+  [
+   "(\"67%\", \"More projects fail outright\", \"PMI \u2014 organizations that treat project management as non-strategic\"),",
+   "(\"67%\", \"More projects fail outright\", \"PMI, Pulse of the Profession 2020 \u2014 organizations that undervalue project management as a strategic competency\"),"
+  ],
+  [
+   "            \"PMI's research found these organizations report 67% more of their projects failing outright \u2014 \"",
+   "            \"PMI's 2020 Pulse of the Profession found organizations that undervalue project management as a strategic competency report an average of 67% more of their projects failing outright \u2014 \""
+  ],
+  [
+   "\"PMO organizations complete 38% more projects on time and budget \u2014 the opposite conclusion.\"",
+   "\"PMI's 2017 research found organizations with a strategy-aligned enterprise PMO report 38% more projects meeting their original goals \u2014 the opposite conclusion.\""
+  ]
+ ]
+}

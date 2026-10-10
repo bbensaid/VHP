@@ -1,0 +1,63 @@
+{
+  "id": "38e802fd-2696-4194-b283-81ee5482daa5",
+  "track_id": "6d44e7cc-75aa-4d68-acc7-5f81ca2ec46d",
+  "pillar": "policy",
+  "order": 1,
+  "slug": "medicare-advantage-overview",
+  "title": "Medicare Advantage: Structure and Growth",
+  "summary": "Medicare Advantage (Part C) now covers more than 50% of Medicare beneficiaries and is the fastest-growing segment of the Medicare market. Understanding how MA works — risk adjustment, benchmarks, bidding, and star ratings — is essential for anyone in health insurance, hospital finance, or health policy.",
+  "estimated_minutes": 22,
+  "objectives": [
+    {
+      "id": "obj-mcare-007-1",
+      "text": "Explain how CMS pays Medicare Advantage plans"
+    },
+    {
+      "id": "obj-mcare-007-2",
+      "text": "Describe how MA risk adjustment works under HCC coding"
+    },
+    {
+      "id": "obj-mcare-007-3",
+      "text": "Identify the key differences between Medicare Advantage and Traditional Medicare from a beneficiary perspective"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Medicare Advantage crossed the 50% enrollment threshold in 2023 — for the first time, more Medicare beneficiaries are enrolled in private MA plans than traditional Medicare. This shift has profound implications for hospitals, physicians, and payers across the country.",
+      "type": "text"
+    },
+    {
+      "text": "How CMS Pays MA Plans",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "CMS pays MA plans a monthly **capitation rate** — a fixed dollar amount per enrolled beneficiary — adjusted for each beneficiary's health status. The payment process:\n\n1. **County benchmark.** CMS establishes a county-level benchmark based on fee-for-service Medicare spending in that area (adjusted for local costs).\n\n2. **Plan bid.** MA plans submit a bid reflecting their projected cost to cover Part A/B benefits for an average enrollee. Plans bid below, at, or above the benchmark.\n\n3. **Rebate.** Plans that bid below the benchmark retain a share of the difference (the 'rebate') which must be spent on supplemental benefits (dental, vision, hearing, fitness).\n\n4. **Risk adjustment.** The final payment is adjusted upward or downward based on each enrollee's **HCC risk score** — capturing expected costs based on diagnosed conditions. A member with multiple chronic conditions receives a higher risk-adjusted payment than a healthy 67-year-old.",
+      "type": "text"
+    },
+    {
+      "text": "HCC Risk Adjustment and Upcoding Concerns",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Risk adjustment creates strong incentives for plans to identify and document all diagnoses — a practice called 'risk adjustment optimization' or, more critically, 'upcoding.' When plans conduct chart reviews and in-home health assessments specifically to find diagnoses that increase HCC scores (without necessarily treating those conditions), critics argue this inflates federal payments without improving care.\n\nCMS has implemented enhanced auditing and is developing new approaches (VBID, targeted probe-and-educate) to address risk score accuracy. Congressional scrutiny of MA overpayments — estimated at $88 billion over 10 years by MedPAC — continues.",
+      "type": "text"
+    },
+    {
+      "text": "Star Ratings",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "CMS's **Star Rating system** rates MA plans from 1 to 5 stars on quality and performance measures across five domains:\n\n1. Staying healthy (preventive screenings, vaccines)\n2. Managing chronic conditions (diabetes, hypertension, medication adherence)\n3. Member experience (CAHPS surveys)\n4. Member complaints and changes (appeals, grievances, enrollment stability)\n5. Health plan administration\n\nPlans with 4+ stars receive a **quality bonus** — up to 5% additional payment — and qualify for enhanced marketing opportunities. The Star Rating system is a powerful quality lever and a key differentiator in the MA market.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:25:02.003422+00:00",
+  "updated_at": "2026-06-02T17:03:32.428289+00:00",
+  "sanity_slug": "medicare-advantage-overview"
+}

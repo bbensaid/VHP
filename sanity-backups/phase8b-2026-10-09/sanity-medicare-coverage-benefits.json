@@ -1,0 +1,542 @@
+{
+  "_createdAt": "2026-06-02T16:20:56Z",
+  "_id": "medicare-coverage-benefits",
+  "_rev": "jFV5UM63HEdRp4x3psx2p0",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T16:20:56Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A Safety Net, Not Comprehensive Insurance"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A common misconception is that Medicare pays for everything once you turn 65. It does not. Traditional Medicare was designed in 1965 as a safety net against catastrophic costs, not as a comprehensive benefit, and it still carries substantial cost-sharing and significant coverage exclusions. Understanding these gaps is the single best way to understand why the Medigap and Medicare Advantage markets exist."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Cost-sharing in traditional Medicare comes in three forms: deductibles you pay before coverage kicks in, coinsurance (a share of each cost), and premiums for ongoing coverage. The dollar figures change every year; the structure does not."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most consequential design feature is what traditional Medicare lacks: an out-of-pocket maximum. Unlike employer plans and Medicare Advantage, Original Medicare Parts A and B set no annual cap on what a beneficiary can owe — a single catastrophic illness can generate unlimited 20 percent coinsurance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Original Medicare (Parts A + B) has no annual out-of-pocket maximum. This is the central financial risk of traditional Medicare and the main reason most beneficiaries add Medigap or choose Medicare Advantage."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Part A Cost-Sharing (Hospital)"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Part A cost-sharing is organized around the \"benefit period,\" a concept that surprises many beneficiaries. A benefit period begins when you are admitted as an inpatient and ends only after you have been out of a hospital or skilled nursing facility for 60 consecutive days. The deductible is charged per benefit period, not per year — so two separate hospitalizations months apart can each trigger the full deductible."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "In 2025, the inpatient hospital deductible is $1,676 per benefit period. Days 1–60 carry no additional coinsurance after the deductible. Days 61–90 cost $419 per day. Beyond 90 days, you tap into 60 \"lifetime reserve days\" at $838 per day — and once used, those reserve days are gone forever."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Skilled nursing facility (SNF) coverage follows a separate schedule and has a critical precondition: Medicare only pays for SNF care after a qualifying inpatient hospital stay of at least three days. SNF days 1–20 carry no coinsurance; days 21–100 cost $209.50 per day in 2025; and after day 100, the beneficiary pays the full cost."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2t1",
+      "_type": "code",
+      "code": [
+        {
+          "Amount_2025": "$1,676 per benefit period",
+          "Notes": "Charged per benefit period, not per year",
+          "Service": "Inpatient deductible"
+        },
+        {
+          "Amount_2025": "$419 per day",
+          "Notes": "Coinsurance after deductible",
+          "Service": "Hospital days 61-90"
+        },
+        {
+          "Amount_2025": "$838 per day",
+          "Notes": "Only 60 days for your entire life",
+          "Service": "Lifetime reserve days"
+        },
+        {
+          "Amount_2025": "$209.50 per day",
+          "Notes": "Requires prior 3-day hospital inpatient stay",
+          "Service": "SNF days 21-100"
+        }
+      ],
+      "language": "json",
+      "title": "2025 Part A Cost-Sharing"
+    },
+    {
+      "_key": "s2w1",
+      "_type": "warningBlock",
+      "message": "Medicare only covers SNF care after a 3-day inpatient hospital stay. Time spent under \"observation status\" — even overnight — does not count as inpatient, so patients who think they were admitted can be denied SNF coverage. This is a frequent and costly trap.",
+      "title": "The 3-day rule and \"observation status\""
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Part B Cost-Sharing (Medical)"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Part B covers physician visits, outpatient care, preventive services, and durable medical equipment. In 2025, the standard Part B premium is $185.00 per month and the annual deductible is $257. After the deductible, beneficiaries typically pay 20 percent coinsurance of the Medicare-approved amount for most services."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "That 20 percent has no ceiling. For a routine office visit it is trivial; for an expensive course of chemotherapy, dialysis, or specialty infusions billed under Part B, the 20 percent share can run into the tens of thousands of dollars in a single year — with no out-of-pocket maximum to stop it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Higher-income beneficiaries pay more than the standard premium through IRMAA, the Income-Related Monthly Adjustment Amount, which adds surcharges to both Part B and Part D premiums above set income thresholds."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Per month; higher with IRMAA (CMS)",
+          "label": "Standard Part B Premium 2025",
+          "value": "$185.00"
+        },
+        {
+          "_key": "s2",
+          "context": "Annual (CMS 2025 fact sheet)",
+          "label": "Part B Deductible 2025",
+          "value": "$257"
+        },
+        {
+          "_key": "s3",
+          "context": "Of approved amount, with NO out-of-pocket cap",
+          "label": "Part B Coinsurance",
+          "value": "20%"
+        },
+        {
+          "_key": "s4",
+          "context": "Per benefit period (CMS / Federal Register)",
+          "label": "Part A Deductible 2025",
+          "value": "$1,676"
+        }
+      ]
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Medicare Does NOT Cover"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Beyond cost-sharing, traditional Medicare simply excludes whole categories of care that older adults frequently need. Routine dental, vision, and hearing care — including most dentures, eyeglasses, and hearing aids — are not covered by Original Medicare."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The largest gap is long-term care. Medicare does not pay for custodial long-term care — help with bathing, dressing, eating, and other daily activities in a nursing home or at home over the long run. Medicare covers only short-term, skilled care for recovery. Long-term custodial care is paid out of pocket, by long-term care insurance, or by Medicaid once a person spends down their assets."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "These exclusions are not minor. They are precisely the benefits that Medicare Advantage plans advertise — many MA plans add dental, vision, and hearing benefits — and they are a major reason beneficiaries weigh MA against Original Medicare plus a supplement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Covered",
+        "points": [
+          "Inpatient hospital care (Part A)",
+          "Physician and outpatient services (Part B)",
+          "Preventive screenings",
+          "Short-term skilled nursing after a hospital stay"
+        ]
+      },
+      "right": {
+        "label": "NOT Covered",
+        "points": [
+          "Routine dental, vision, and hearing care",
+          "Most hearing aids, eyeglasses, dentures",
+          "Long-term custodial / nursing-home care",
+          "Care received outside the U.S. (with rare exceptions)"
+        ]
+      },
+      "title": "Covered vs. Not Covered by Original Medicare"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Medigap Fills the Gaps"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because Original Medicare has no out-of-pocket maximum and substantial cost-sharing, most traditional-Medicare beneficiaries buy a Medicare Supplement policy, known as Medigap. Sold by private insurers, Medigap plans are standardized into lettered plans (such as Plan G and Plan N) so that the same letter offers the same benefits no matter which company sells it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medigap covers cost-sharing in Original Medicare — Part A and Part B coinsurance and copayments, and depending on the plan, deductibles. By capping the beneficiary’s exposure, Medigap effectively creates the out-of-pocket protection that Original Medicare itself lacks."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "But Medigap does not fill the benefit gaps. Medigap plans generally do not cover dental, vision, hearing, or long-term care. For those, beneficiaries must buy separate standalone policies — or choose a Medicare Advantage plan that bundles such benefits in. This trade-off, cost protection versus added benefits, is the core choice every new beneficiary faces."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5ex1",
+      "_type": "exampleBlock",
+      "content": "Consider a Part B patient on an expensive specialty infusion drug billed at $300,000 a year. Under Original Medicare alone, the 20% coinsurance — about $60,000 — would fall on the patient with no cap to stop it. A Medigap Plan G would cover that Part B coinsurance after the small Part B deductible, turning a potentially ruinous bill into a predictable, modest cost. This is exactly the financial risk Medigap was built to address.",
+      "title": "The Catastrophic-Cost Scenario"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Traditional Medicare is a safety net with significant cost-sharing, not comprehensive coverage.",
+        "Original Medicare (Parts A + B) has no annual out-of-pocket maximum — its central financial risk.",
+        "In 2025 the Part A deductible is $1,676 per benefit period; days 61-90 cost $419/day and lifetime reserve days cost $838/day.",
+        "Part B in 2025 has a $185.00 standard premium and $257 deductible, then 20% coinsurance with no cap.",
+        "Medicare does not cover routine dental, vision, hearing, or long-term custodial care — major gaps for older adults.",
+        "SNF coverage requires a qualifying 3-day inpatient hospital stay; \"observation status\" does not count.",
+        "Medigap policies are standardized by letter and fill Original Medicare cost-sharing gaps, but not dental, vision, hearing, or long-term care."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Original Medicare has no out-of-pocket maximum, and Part B charges 20% coinsurance after the deductible. On $400,000 of services that 20% share runs into the tens of thousands with nothing to cap it — which is why most beneficiaries add Medigap or choose Medicare Advantage (which is required to have an out-of-pocket cap).",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Nothing beyond the Part B premium — Medicare covers it all"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": false,
+          "text": "A fixed annual out-of-pocket maximum of about $9,000"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": true,
+          "text": "About 20% of the approved amount — tens of thousands of dollars, with no cap"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Only the $257 Part B deductible"
+        }
+      ],
+      "question": "A Medicare beneficiary on Original Medicare alone develops a serious illness requiring $400,000 of Part B-covered services in one year. Roughly how much could they owe out of pocket?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] 2025 Medicare Parts A & B Premiums and Deductibles — CMS — https://www.cms.gov/newsroom/fact-sheets/2025-medicare-parts-b-premiums-and-deductibles — Part B premium $185, deductible $257; Part A deductible $1,676."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Medicare Program; CY 2025 Inpatient Hospital Deductible and Coinsurance — Federal Register — https://www.federalregister.gov/documents/2024/11/14/2024-26472/ — days 61-90 $419, lifetime reserve $838, SNF $209.50."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Medicare Lifetime Reserve Days — Medical News Today — https://www.medicalnewstoday.com/articles/medicare-lifetime-reserve-days — 60 lifetime reserve days at $838/day; benefit period rules."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Medicare Coverage of Skilled Nursing Facility Stays — Nolo — https://www.nolo.com/legal-encyclopedia/medicare-coverage-skilled-nursing-facility-stays.html — 3-day qualifying inpatient stay; SNF day schedule."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Medicare Coverage for Dental, Vision, and Hearing — Medigap.com — https://www.medigap.com/faqs/medicare-coverage-for-dental-vision-and-hearing/ — exclusions and Medigap gap-filling."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Learn what Medigap Covers — Medicare.gov — https://www.medicare.gov/health-drug-plans/medigap/basics/coverage — standardized lettered plans; covers coinsurance/copays/deductibles, not LTC/dental/vision."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicare-fundamentals",
+  "order": 3,
+  "slug": {
+    "_type": "slug",
+    "current": "medicare-coverage-benefits"
+  },
+  "title": "Medicare Coverage: What's Covered, What's Not"
+}

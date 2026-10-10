@@ -1,0 +1,75 @@
+{
+  "id": "7dea9b4b-c3b3-471a-beb0-efdc58ebab62",
+  "track_id": "3bd5c937-6231-4c89-a48f-02a99487b792",
+  "pillar": "policy",
+  "order": 3,
+  "slug": "monitoring-oversight-eqro",
+  "title": "Monitoring and Oversight: EQRO and State Responsibilities",
+  "summary": "Examines how states and CMS monitor Medicaid MCO performance through External Quality Review Organizations, sanctions, and corrective action plans.",
+  "estimated_minutes": 22,
+  "objectives": [
+    "Describe the mandatory and optional activities of an EQRO under 42 CFR §438.358",
+    "Explain state sanctions available when MCOs fail to meet contract requirements",
+    "Identify key performance metrics states use in ongoing MCO oversight"
+  ],
+  "content_blocks": [
+    {
+      "body": "Every state with a Medicaid managed care program must contract with an EQRO — an independent organization that assesses MCO performance. Under 42 CFR §438.358, EQROs must conduct three mandatory annual activities:\n\n1. **Validation of PIPs (Performance Improvement Projects)**: Assessing whether MCO quality improvement projects are methodologically sound\n2. **Validation of Performance Measures**: Confirming that HEDIS and other quality metrics are calculated accurately\n3. **Validation of Network Adequacy**: Reviewing whether the MCO's network meets state and federal standards\n\nOptional EQRO activities include: consumer surveys (CAHPS Medicaid), focused studies on specific quality issues, and assessment of new MCO systems.",
+      "type": "text",
+      "heading": "External Quality Review Organizations (EQROs)"
+    },
+    {
+      "body": "CAHPS (Consumer Assessment of Healthcare Providers and Systems) Medicaid surveys are optional EQRO activities that capture enrollee-reported experiences. Questions cover: getting needed care, getting care quickly, how well doctors communicate, and overall plan rating. CMS and states use CAHPS data alongside HEDIS measures to assess plan quality from the beneficiary perspective.",
+      "type": "callout",
+      "title": "CAHPS Medicaid: The Consumer Voice",
+      "variant": "info"
+    },
+    {
+      "type": "concepts_grid",
+      "concepts": [
+        {
+          "term": "PIP (Performance Improvement Project)",
+          "definition": "A focused quality improvement initiative required of MCOs — EQROs validate that PIPs use sound methodology and achieve meaningful improvement"
+        },
+        {
+          "term": "Corrective Action Plan (CAP)",
+          "definition": "A required remediation plan when an MCO fails to meet contract standards; the MCO must describe specific corrective actions and timelines"
+        },
+        {
+          "term": "Intermediate Sanctions",
+          "definition": "Penalties available to states under 42 CFR §438.702 for MCO non-compliance, including civil monetary penalties, suspension of enrollment, and contract termination"
+        },
+        {
+          "term": "Encounter Data Validation (EDV)",
+          "definition": "An EQRO or state assessment of MCO encounter data completeness, accuracy, and timeliness as a precondition for valid quality measurement"
+        }
+      ]
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Mandatory EQRO activities per year",
+          "value": "3",
+          "context": "States must ensure EQROs conduct three mandatory activities: PIP validation, performance measure validation, and network adequacy validation"
+        },
+        {
+          "label": "Maximum daily civil monetary penalty",
+          "value": "$25,000/day",
+          "context": "States may impose civil monetary penalties up to $25,000 per day for each MCO violation under 42 CFR §438.704"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "EQRO",
+    "oversight",
+    "sanctions",
+    "quality review"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:09.126139+00:00",
+  "updated_at": "2026-06-01T13:29:15.23811+00:00",
+  "sanity_slug": "monitoring-oversight-eqro"
+}

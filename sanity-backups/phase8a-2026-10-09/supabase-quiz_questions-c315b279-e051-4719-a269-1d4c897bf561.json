@@ -1,0 +1,9 @@
+{
+  "id": "c315b279-e051-4719-a269-1d4c897bf561",
+  "quiz_id": "af491e32-1c31-4c93-a619-f8d929767b73",
+  "order": 2,
+  "question_type": "single_choice",
+  "question": "Time-Driven Activity-Based Costing (TDABC) is preferred in healthcare because:",
+  "explanation": "TDABC uses time as the primary cost driver (e.g., minutes of nursing care, minutes in OR), which is more manageable to measure than tracking every individual activity. It was developed by Kaplan and Porter specifically for healthcare applications.",
+  "points": null
+}

@@ -1,0 +1,70 @@
+{
+ "edits": [
+  {
+   "table": "quiz_questions",
+   "id": "d69505a5-a7f2-40a8-ac11-3a2d124c254b",
+   "expect": {
+    "question": "What cost-to-collect ratio improvement do organizations with fully integrated RCM systems typically achieve?"
+   },
+   "set": {
+    "question": "What is the main risk of a best-of-breed RCM technology strategy?",
+    "explanation": "Best-of-breed picks the leading specialized product for each function, which gains depth (for example in denial analytics) but only works if the systems are connected with robust HL7/FHIR interfaces; poorly integrated tools recreate data silos and manual touchpoints. Integrated single-vendor platforms trade some per-function depth for seamless internal data flow."
+   },
+   "claim": "quiz: fully integrated RCM systems achieve 30-40% lower cost-to-collect",
+   "verdict": "UNVERIFIABLE",
+   "src": "No primary source for \"30-40% lower cost-to-collect\" with fully integrated systems (search 2026-10-09: only vendor case studies and a Black Book self-reported survey citing 27%; nothing matching 30-40%); replacement question tests the lesson\u2019s integrated vs best-of-breed trade-off"
+  },
+  {
+   "table": "quiz_options",
+   "id": "b0856db9-9e22-40cf-a64c-d34c764a9587",
+   "expect": {
+    "text": "5\u201310% lower"
+   },
+   "set": {
+    "text": "Less functional depth in each area"
+   },
+   "claim": "quiz option rewritten with question",
+   "verdict": "UNVERIFIABLE",
+   "src": "No primary source for \"30-40% lower cost-to-collect\" with fully integrated systems (search 2026-10-09: only vendor case studies and a Black Book self-reported survey citing 27%; nothing matching 30-40%)"
+  },
+  {
+   "table": "quiz_options",
+   "id": "6e8425ae-3364-4c87-b450-99013d552fed",
+   "expect": {
+    "text": "15\u201320% lower"
+   },
+   "set": {
+    "text": "It cannot submit claims in the 837 format"
+   },
+   "claim": "quiz option rewritten with question",
+   "verdict": "UNVERIFIABLE",
+   "src": "No primary source for \"30-40% lower cost-to-collect\" with fully integrated systems (search 2026-10-09: only vendor case studies and a Black Book self-reported survey citing 27%; nothing matching 30-40%)"
+  },
+  {
+   "table": "quiz_options",
+   "id": "7d35a2b9-4e7a-4167-85cf-28d1b094e56f",
+   "expect": {
+    "text": "30\u201340% lower"
+   },
+   "set": {
+    "text": "Data silos and manual re-entry if the systems are poorly integrated"
+   },
+   "claim": "quiz option rewritten with question",
+   "verdict": "UNVERIFIABLE",
+   "src": "No primary source for \"30-40% lower cost-to-collect\" with fully integrated systems (search 2026-10-09: only vendor case studies and a Black Book self-reported survey citing 27%; nothing matching 30-40%)"
+  },
+  {
+   "table": "quiz_options",
+   "id": "c946c8a3-3bda-4930-b3f8-0613afb9cb8d",
+   "expect": {
+    "text": "50\u201360% lower"
+   },
+   "set": {
+    "text": "It requires every function to come from one vendor"
+   },
+   "claim": "quiz option rewritten with question",
+   "verdict": "UNVERIFIABLE",
+   "src": "No primary source for \"30-40% lower cost-to-collect\" with fully integrated systems (search 2026-10-09: only vendor case studies and a Black Book self-reported survey citing 27%; nothing matching 30-40%)"
+  }
+ ]
+}

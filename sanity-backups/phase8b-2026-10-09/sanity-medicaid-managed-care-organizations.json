@@ -1,0 +1,514 @@
+{
+  "_createdAt": "2026-05-31T20:27:21Z",
+  "_id": "medicaid-managed-care-organizations",
+  "_rev": "rL4Cn5Sfo5Z8rzPmEI6cl5",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T20:27:21Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Most People Actually Get Medicaid"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "When people imagine Medicaid, they often picture the state directly paying a doctor each time an enrollee gets care. But that fee-for-service model is no longer how most Medicaid works. Today the majority of enrollees get their care through private health plans under contract with the state, known as Medicaid managed care organizations, or MCOs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Under managed care, the state pays an MCO a fixed monthly amount for each enrolled member, and the MCO takes on the responsibility — and the financial risk — of arranging and paying for that member's covered care. This shifts day-to-day operations from the state to private plans and fundamentally changes the incentives in the program."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The scale of this shift is enormous. In 2024, more than 73 million people — about 85 percent of Medicaid enrollees — received some or all of their care through a Medicaid managed care plan, and comprehensive risk-based managed care is now the primary delivery system in nearly three-quarters of states."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A Medicaid managed care organization (MCO) is a private health plan paid a fixed monthly amount per enrollee by the state to arrange and pay for that enrollee's covered care. Most Medicaid enrollees are now in managed care rather than fee-for-service."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Capitation: Paying Per Member, Per Month"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The defining feature of MCOs is capitation. Instead of paying for each service after it happens, the state pays the MCO a predetermined, per-member-per-month (PMPM) amount to cover and coordinate all of an enrollee's Medicaid services. The plan keeps the difference if it spends less than the capitation payment and absorbs the loss if it spends more."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is what makes managed care \"risk-based.\" The financial risk of an enrollee's care moves from the state to the plan. In theory this gives MCOs an incentive to keep members healthy and coordinate care efficiently; in practice it also creates a tension — a plan can profit by spending less, so strong oversight is needed to ensure it does not skimp on necessary care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Federal rules require that capitation rates be \"actuarially sound\" — projected to cover all reasonable, appropriate, and attainable costs under the plan's contract. Rates are set in advance by actuaries based on expected enrollment, the health profile (or \"acuity\") of members, and projected utilization."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Fee-for-Service (FFS)",
+        "points": [
+          "State pays providers per service",
+          "State bears the financial risk",
+          "Incentive to deliver more services",
+          "State manages claims directly"
+        ]
+      },
+      "right": {
+        "label": "Managed Care (MCO)",
+        "points": [
+          "State pays plan a fixed PMPM amount",
+          "Plan bears the financial risk",
+          "Incentive to coordinate and control cost",
+          "Plan manages network and claims"
+        ]
+      },
+      "title": "Fee-for-Service vs. Managed Care"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Main Types of Managed Care"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Not all \"managed care\" is the same. State Medicaid programs use three main types of arrangements. The dominant model is comprehensive risk-based managed care, in which an MCO is fully at risk for a broad set of benefits in exchange for capitation — this is what most people mean by \"Medicaid managed care.\""
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A second model is primary care case management (PCCM). PCCM is really a managed fee-for-service system: enrollees are linked to a primary care provider who is paid a small monthly fee to coordinate care, but services are still billed fee-for-service. The state, not a plan, keeps the financial risk."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "A third category is limited-benefit plans, which manage only a specific slice of care — such as behavioral health, dental, or non-emergency transportation — rather than the full benefit package. A single enrollee might be in a comprehensive MCO for most care and a limited-benefit plan for one carved-out service."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Some or all care via a Medicaid managed care plan, 2024 (Medicaid.gov)",
+          "label": "Enrollees in Managed Care",
+          "value": "~85%"
+        },
+        {
+          "_key": "s2",
+          "context": "Up from ~15% in 1995 (MACPAC)",
+          "label": "in Comprehensive MCOs",
+          "value": "~70%"
+        },
+        {
+          "_key": "s3",
+          "context": "Comprehensive risk-based managed care (MACPAC)",
+          "label": "States Use MCOs as Primary Model",
+          "value": "~3 of 4"
+        },
+        {
+          "_key": "s4",
+          "context": "Per member, per month fixed payment (MACPAC)",
+          "label": "Capitation Basis",
+          "value": "PMPM"
+        }
+      ]
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Networks and Access"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because an MCO is responsible for arranging care, it builds a network of contracted providers — primary care doctors, specialists, hospitals, behavioral health clinicians — that its members use. The composition of that network directly determines whether members can actually get the care they are entitled to."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why states impose network adequacy standards on MCOs, requiring them to maintain enough providers, within reasonable distances and wait times, to serve their enrollees. A capitation payment is meaningless if members cannot find a doctor who participates, so access standards are a core part of holding plans accountable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Network adequacy is a recurring challenge in Medicaid because provider payment rates are often lower than commercial or Medicare rates, which can limit how many providers are willing to participate. Ensuring adequate networks is therefore one of the central oversight responsibilities states take on when they contract with MCOs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "Medicaid managed care has grown into one of the largest privatized public programs in the country: a small number of large insurers operate Medicaid plans across many states, collectively covering tens of millions of enrollees.\nThis scale is why CMS and state Medicaid agencies devote so much attention to contract requirements, network standards, and financial oversight — the day-to-day Medicaid experience of most enrollees now runs through these private plans.",
+      "title": "A Large, Privatized Delivery System"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Accountability: The Medical Loss Ratio"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A key tool for holding MCOs accountable is the medical loss ratio (MLR). The MLR measures how much of the capitation revenue a plan actually spends on health care for members, as opposed to administration and profit. A higher MLR means more of each dollar went to care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Since 2019, federal rules have required states to set capitation rates so that each MCO can reasonably be expected to achieve an MLR of at least 85 percent. In other words, at least 85 cents of every capitation dollar should go to medical care and quality improvement, leaving no more than 15 cents for administration and profit."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The MLR is a direct response to the central risk of capitation: that a plan paid a fixed amount might pad its margins by underspending on care. By setting a floor on medical spending, the MLR — alongside network adequacy rules, quality reporting, and contract oversight — forms the accountability backbone of Medicaid managed care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "Capitation gives MCOs an incentive to coordinate care efficiently, but also a financial incentive to spend less — which could mean denying or delaying needed care. The 85% medical loss ratio floor, network adequacy standards, and quality reporting exist precisely to counter that risk.",
+      "title": "Capitation Cuts Both Ways"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Most Medicaid enrollees now receive care through private managed care organizations (MCOs) rather than traditional fee-for-service.",
+        "In 2024, about 85% of enrollees got some or all care through a Medicaid managed care plan, and ~70% are in comprehensive risk-based MCOs.",
+        "MCOs are paid by capitation — a fixed per-member-per-month (PMPM) amount — and take on the financial risk for enrollees' covered care.",
+        "Federal rules require capitation rates to be \"actuarially sound,\" meaning projected to cover reasonable and attainable costs.",
+        "The three main managed care arrangements are comprehensive risk-based MCOs, primary care case management (PCCM), and limited-benefit plans.",
+        "States enforce network adequacy standards so MCOs maintain enough providers for members to actually access care.",
+        "Since 2019, capitation rates must let each MCO reasonably achieve a medical loss ratio of at least 85%, ensuring most of each dollar goes to care rather than profit."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Capitation means the state pays the MCO a predetermined per-member-per-month (PMPM) payment regardless of how many services the member uses. This shifts financial risk to the plan — it profits if it spends less and absorbs losses if it spends more — which is why oversight tools like the 85% medical loss ratio exist.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The state reimburses the plan for each service after it is delivered"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The state pays the plan a fixed per-member-per-month amount to cover and coordinate all of an enrollee's care"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The plan charges enrollees a monthly premium"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The federal government pays providers directly"
+        }
+      ],
+      "question": "What does it mean that Medicaid MCOs are paid by \"capitation\"?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Medicaid Managed Care Enrollment and Program Characteristics 2024 — https://www.medicaid.gov/medicaid/managed-care/downloads/2024-medicaid-managed-care-enrollment-report.pdf — ~73M / ~85% of enrollees in managed care in 2024"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Medicaid managed care payment — https://www.macpac.gov/subtopic/medicaid-managed-care-payment/ — capitation PMPM payments; actuarial soundness requirement"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Types of managed care arrangements — https://www.macpac.gov/subtopic/types-of-managed-care-arrangements/ — comprehensive risk-based MCO, PCCM, limited-benefit plans; growth to ~70%"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Medical Loss Ratios in Medicaid Managed Care — https://www.macpac.gov/wp-content/uploads/2022/01/Medical-loss-ratio-issue-brief-January-2022.pdf — 85% MLR requirement since 2019"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Managed care rate setting — https://www.macpac.gov/subtopic/managed-care-rate-setting/ — actuarially sound capitation rate development based on acuity and utilization"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] A Look at Medicaid Enrollment and Finances of the Five Largest Medicaid Managed Care Plans — https://www.kff.org/medicaid/a-look-at-medicaid-enrollment-and-finances-of-the-five-largest-medicaid-managed-care-plans/ — scale of large private Medicaid plans"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicaid-101",
+  "order": 6,
+  "slug": {
+    "_type": "slug",
+    "current": "medicaid-managed-care-organizations"
+  },
+  "title": "MCOs: Capitation, Networks & Accountability"
+}

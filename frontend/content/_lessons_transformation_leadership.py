@@ -61,10 +61,10 @@ lesson_1_body = [
         'people and institutions actually adopt the new state, regardless of how well the plan above them '
         'is built.'),
     stat_grid('s1sg1', [
-        ('$135M', 'Lost per $1B in failed projects', 'PMI, Pulse of the Profession — unrecoverable loss on projects that fail outright'),
-        ('$20M vs. $280M', 'Risk per $1B spent, high- vs. low-performers', 'PMI — the gap between organizations with strong project delivery discipline and those without'),
-        ('38%', 'More projects delivered on time and on budget', 'PMI — organizations with an established Project Management Office (PMO) vs. those without one'),
-        ('67%', 'More projects fail outright', 'PMI — organizations that treat project management as a non-strategic function'),
+        ('$135M', 'At risk per $1B spent on projects', 'PMI, Pulse of the Profession 2013 — money put at risk by poor project performance'),
+        ('$20M vs. $280M', 'Risk per $1B spent, high- vs. low-performers', 'PMI, Pulse of the Profession 2013 — the gap between high-performing organizations and low performers'),
+        ('38%', 'More projects meet original goals', 'PMI, Pulse of the Profession 2017 — organizations whose enterprise PMO is aligned to strategy'),
+        ('67%', 'More projects fail outright', 'PMI, Pulse of the Profession 2020 — organizations that undervalue project management as a strategic competency'),
     ]),
 
     h2('s2h1', 'Two Failure Modes, Not One'),
@@ -80,9 +80,8 @@ lesson_1_body = [
         'The United Kingdom\'s National Programme for IT (NPfIT) is one of the most thoroughly studied examples '
         'of a pure execution failure in a health system context. Launched in the early 2000s to build a '
         'single national electronic health record and supporting IT infrastructure for the National Health '
-        'Service, NPfIT was stopped early in 2011 after the UK government had spent an estimated £9.8 billion '
-        'on it — with independent reviews and retrospectives placing total realized and sunk costs as high as '
-        '£10–12.7 billion once contract terminations and write-offs are included. The core information-'
+        'Service, NPfIT was dismantled in 2011; in 2013 Parliament\'s Public Accounts Committee put its '
+        'estimated cost at £9.8 billion and warned the final bill was likely to be higher. The core information-'
         'technology problem the programme set out to solve — clinicians across a national health system '
         'unable to share patient records — was a real and analytically sound problem to solve. What collapsed '
         'was execution.'),
@@ -92,8 +91,7 @@ lesson_1_body = [
         'separated central decision-making authority from the local NHS organizations responsible for actually '
         'implementing the systems, creating a persistent gap between the people who designed the programme and '
         'the people who had to make it work in a hospital or clinic. Reviewers also found insufficient '
-        'engagement with clinicians and other frontline stakeholders during design, and risk assessments that '
-        'were produced and then set aside rather than acted on.\n'
+        'engagement with clinicians and other frontline stakeholders during design.\n'
         'The National Audit Office\'s later assessment made a second finding that matters directly for this '
         'course: the lessons from NPfIT\'s failure were not being captured or applied systematically even in '
         'the UK government\'s subsequent digital transformation programmes — meaning the same governance gap '
@@ -163,7 +161,7 @@ lesson_1_body = [
     takeaway('tw', [
         'Healthcare transformation programs more often fail from execution and change-management gaps than from flawed analysis.',
         'Project, program, portfolio, and change management are related but distinct disciplines; change management is the layer that determines whether people and institutions actually adopt the new state.',
-        'PMI\'s research finds organizations without a PMO complete fewer projects on time and on budget, and organizations that treat project management as non-strategic see far higher outright failure rates.',
+        'PMI\'s research finds organizations with a strategy-aligned enterprise PMO see more projects meet their original goals, and organizations that treat project management as non-strategic see far higher outright failure rates.',
         'The NHS\'s National Programme for IT is a canonical example of a pure execution failure: the underlying goal was sound, but centralized governance separated from local implementation authority caused the collapse.',
         'Healthcare transformation is structurally harder to lead than typical corporate change because clinical governance sits outside the administrative org chart and authority is distributed across regulators, legislatures, boards, and medical staff.',
         'A legal mandate changes the urgency calculation for a reform but does not remove the need for a guiding coalition, a communicated vision, or active resistance management.',
@@ -179,12 +177,12 @@ lesson_1_body = [
             ('Organizations with a PMO complete fewer projects on time', False),
             ('Project management discipline only matters for IT projects', False),
         ],
-        'PMI\'s research found organizations that do not treat project management as a strategic competency '
-        'report an average of 67% more of their projects failing outright, and separately found PMO '
-        'organizations complete 38% more projects on time and on budget than those without one.'),
+        'PMI\'s 2020 Pulse of the Profession found organizations that undervalue project management as a strategic competency '
+        'report an average of 67% more of their projects failing outright; its 2017 edition separately found organizations '
+        'with a strategy-aligned enterprise PMO report 38% more projects meeting their original goals.'),
 
     h2('src', 'Sources'),
-    blk('src1', '[1] PMI, Pulse of the Profession research (multiple years) — https://www.pmi.org/learning/library/2022/07/01/21/01/en-2013-pulse-high-cost-low-performance-13511 — cost-of-poor-performance and PMO-value statistics'),
+    blk('src1', '[1] PMI, Pulse of the Profession research (multiple years) — https://www.pmi.org/learning/library/2022/07/01/21/01/en-2013-pulse-high-cost-low-performance-13511 — 2013 edition: $135M at risk per $1B; $20M vs $280M. The 38% (strategy-aligned EPMO) figure is from the 2017 edition, "Success Rates Rise"; the 67% figure is from the 2020 edition, "Ahead of the Curve"'),
     blk('src2', '[2] National Audit Office / Parliament Public Accounts Committee, "The dismantled National Programme for IT in the NHS" — https://publications.parliament.uk/pa/cm201314/cmselect/cmpubacc/294/294.pdf — NPfIT governance failure findings and cost'),
     blk('src3', '[3] Panorama Consulting, "Reasons Behind The NHS IT System & Project Failure Case Study" — https://www.panorama-consulting.com/nhs-it-system-failure/ — NPfIT cost and governance analysis'),
     blk('src4', '[4] Health Transformation Review, Transforming American Healthcare, Chapter 12 §12.4 ("The Change Management Science Behind Healthcare Transformation") — internal manuscript, book\'s own framing of the execution-gap argument'),
@@ -311,7 +309,7 @@ lesson_2_body = [
     ]),
 
     takeaway('tw', [
-        'Kotter\'s eight-step model — urgency, coalition, vision, communication, obstacle removal, short-term wins, sustained acceleration, institutionalization — was developed from more than 100 corporate cases and has since been validated in independently published healthcare studies.',
+        'Kotter\'s eight-step model — urgency, coalition, vision, communication, obstacle removal, short-term wins, sustained acceleration, institutionalization — was developed from more than 100 corporate cases and has since been applied in independently published healthcare studies (a case study and a quality-improvement study, not controlled trials).',
         'Under a mandatory reform, Step 1 (urgency) already exists by statute; the task shifts to presenting it credibly rather than manufacturing it.',
         'Step 2 (coalition) carries the highest healthcare-specific risk: a coalition without real clinical leadership will not produce implementation, regardless of legal mandate.',
         'A published Kentucky FQHC case study found evidence of Steps 1–7 in a real preventive-care transformation, with Step 8 identified as the remaining gap.',
@@ -370,8 +368,8 @@ lesson_3_body = [
         'A portfolio manager\'s entire job is to see across that boundary; without the role, the boundary '
         'simply goes unmonitored.'),
     stat_grid('s1sg1', [
-        ('$2T', 'Wasted worldwide annually', 'PMI, Pulse of the Profession — roughly 11.4% of every dollar invested lost to poor project performance'),
-        ('38%', 'More on-time/on-budget delivery', 'PMI — comparing organizations with an established PMO to those without one'),
+        ('$2T', 'Wasted worldwide annually', 'PMI, Pulse of the Profession 2018 — about $1M every 20 seconds; the 2020 edition put average waste at 11.4% of project investment'),
+        ('38%', 'More projects meet original goals', 'PMI, Pulse of the Profession 2017 — organizations whose enterprise PMO is aligned to strategy'),
     ]),
 
     h2('s2h1', 'What a PMO Actually Does'),
@@ -396,8 +394,8 @@ lesson_3_body = [
     blk('s3p1',
         'By the mid-1990s, the U.S. Department of Veterans Affairs\' health system was widely criticized for '
         'delivering fragmented, unpredictable care that was expensive and difficult to access. Dr. Kenneth '
-        'Kizer, a physician trained in emergency medicine and public health, was appointed Director of the '
-        'Veterans Health Administration in 1994 specifically to modernize the system. In 1995 he launched a '
+        'Kizer, a physician trained in emergency medicine and public health, was appointed the VA\'s Under '
+        'Secretary for Health — head of the Veterans Health Administration — in 1994 specifically to modernize the system. In 1995 he launched a '
         'restructuring plan that decentralized the VA\'s national operations into 22 geographically defined '
         'Veterans Integrated Service Networks, known as VISNs, and drove the reorganization through 1999.'),
     example('s3ex1', 'Kenneth Kizer\'s VA Restructuring, 1995–1999',
@@ -405,8 +403,8 @@ lesson_3_body = [
         'coordination, quality improvement, resource allocation, and information management. Rather than '
         'managing the whole VA system as one centralized bureaucracy, Kizer pushed real operational '
         'accountability down to the 22 regional networks while holding each one to consistent, measurable '
-        'standards from the center. Published assessments of the transformation — including analyses in the '
-        'Annual Review of Public Health — found the restructuring produced dramatically improved quality, '
+        'standards from the center. Published assessments of the transformation — including a 2009 Annual '
+        'Review of Public Health review co-authored by Kizer himself — found the restructuring produced dramatically improved quality, '
         'service, and operational efficiency, to the point that VA care quality later came to be regarded as '
         'among the best in the American health system and the transformation itself is frequently cited as a '
         'model for large-scale health-system reform.'),
@@ -420,10 +418,9 @@ lesson_3_body = [
         'implementing the systems those central decisions had specified — the opposite structural choice from '
         'the VA\'s decentralized-with-accountability model. The National Audit Office found this separation of '
         'authority from accountability, combined with insufficient engagement of frontline clinicians during '
-        'design and risk assessments that were produced and then not acted on, to be the core drivers of the '
-        'programme\'s collapse. It was stopped in 2011 after an estimated £9.8 billion in direct government '
-        'spending, with independent retrospectives placing total realized costs, once write-offs are '
-        'included, as high as £10–12.7 billion.'),
+        'design, to be the core drivers of the programme\'s collapse. It was dismantled in 2011; in 2013 '
+        'Parliament\'s Public Accounts Committee put its estimated cost at £9.8 billion and warned the final '
+        'bill was likely to be higher.'),
     compare('s4cmp1', 'What Separated the VA\'s Success From NPfIT\'s Failure',
         'VA VISN Restructuring (Worked)', [
             'Decentralized operational authority to 22 regional networks',
@@ -434,8 +431,8 @@ lesson_3_body = [
         'NHS NPfIT (Failed)', [
             'Centralized decision-making, separated from local implementation authority',
             'Insufficient engagement of clinicians and frontline stakeholders in design',
-            'Risk assessments produced but not acted on',
-            'Dismantled in 2011 after ~£9.8B in direct spend; total realized cost estimated up to £10–12.7B',
+            'Lessons still not systematically applied years later (NAO, 2020)',
+            'Dismantled in 2011; estimated cost £9.8B and rising (Public Accounts Committee, 2013)',
         ]),
 
     h2('s5h1', 'Designing Your Own PMO'),
@@ -462,9 +459,9 @@ lesson_3_body = [
     takeaway('tw', [
         'PMI\'s hierarchy — project, program, portfolio — gives transformation leaders a precise vocabulary for a coordination problem healthcare usually manages informally.',
         'A missing portfolio layer has a specific, predictable cost: resource conflicts and cross-component dependencies go unmonitored until they cause a visible failure.',
-        'PMI research finds organizations with an established PMO complete 38% more projects on time and on budget than those without one.',
+        'PMI research finds organizations whose enterprise PMO is aligned to strategy report 38% more projects meeting their original goals (Pulse of the Profession, 2017).',
         'The VA\'s 1995–99 VISN restructuring under Kenneth Kizer decentralized operational authority to 22 regional networks while holding them to consistent central standards — and is widely credited with producing durable quality gains.',
-        'The NHS\'s National Programme for IT made the opposite structural choice — centralizing decision-making while leaving local organizations accountable for implementation — and collapsed at an estimated cost of up to £10–12.7 billion.',
+        'The NHS\'s National Programme for IT made the opposite structural choice — centralizing decision-making while leaving local organizations accountable for implementation — and collapsed at an estimated cost of £9.8 billion (Public Accounts Committee, 2013).',
         'A PMO\'s core functions are a maintained portfolio register, a genuinely reviewed risk register, defined stage gates, resource-conflict resolution, and one consolidated report.',
         'The single highest-value first step for any organization building this capability is a full portfolio inventory — every initiative, assigned an owner and a pillar.',
     ]),
@@ -484,7 +481,7 @@ lesson_3_body = [
         'which reviewers identified as the core governance failure.'),
 
     h2('src', 'Sources'),
-    blk('src1', '[1] PMI, Pulse of the Profession research — https://www.pmi.org/learning/library/2022/07/01/21/01/en-2013-pulse-high-cost-low-performance-13511 — PMO value and cost-of-poor-performance statistics'),
+    blk('src1', '[1] PMI, Pulse of the Profession research — https://www.pmi.org/learning/library/2022/07/01/21/01/en-2013-pulse-high-cost-low-performance-13511 — 2013 edition (cost of low performance). The $2T/year waste figure is from the 2018 edition, 11.4% average waste from the 2020 edition ("Ahead of the Curve"), and the 38% strategy-aligned-EPMO figure from the 2017 edition ("Success Rates Rise")'),
     blk('src2', '[2] "Extreme Makeover: Transformation of the Veterans Health Care System" (Annual Review of Public Health) — https://www.annualreviews.org/content/journals/10.1146/annurev.publhealth.29.020907.090940 — VA VISN restructuring under Kenneth Kizer'),
     blk('src3', '[3] "The Revitalization of the Veterans Health Administration" — https://www.businessofgovernment.org/sites/default/files/TransformingVHA.pdf — Kizer\'s 1995 "Vision for Change" restructuring plan'),
     blk('src4', '[4] National Audit Office / Parliament Public Accounts Committee, "The dismantled National Programme for IT in the NHS" — https://publications.parliament.uk/pa/cm201314/cmselect/cmpubacc/294/294.pdf — NPfIT governance failure and cost findings'),
@@ -528,8 +525,8 @@ lesson_4_body = [
         'fixing each hospital\'s total annual revenue in advance rather than paying by volume of services '
         'delivered.'),
     example('s2ex1', 'Maryland\'s Global Budget Conversion',
-        'A published qualitative study of Maryland health care leaders\' perspectives on the All-Payer Model '
-        'found the global budget conversion was described directly as "a monumental change, a sea change, in '
+        'A 2022 qualitative study in JAMA Health Forum, based on interviews with 20 Maryland health care leaders, '
+        'quotes one state regulator describing the global budget conversion as "a monumental change, a sea change, in '
         'the way that hospitals thought about raising revenue." The leaders interviewed identified a specific '
         'set of governance themes as necessary to manage that shift: setting achievable expectations rather '
         'than overpromising immediate results, protecting hospital autonomy rather than dictating operational '
@@ -605,7 +602,7 @@ lesson_4_body = [
 
     takeaway('tw', [
         'A governing board under mandatory reform is being asked to implement a decision it did not make and cannot reverse — board management has to shift from persuasion to education and engagement.',
-        'Maryland\'s hospital leaders described their 2014 global budget conversion as "a monumental change, a sea change," and named achievable expectations, protected autonomy, close communication, actionable data, calibrated budgets, and shared commitment as the governance themes that managed it.',
+        'A Maryland state regulator described the 2014 global budget conversion as "a monumental change, a sea change," and the health care leaders interviewed named achievable expectations, protected autonomy, close communication, actionable data, calibrated budgets, and shared commitment as the governance themes that managed it.',
         'Oregon built formal community governance directly into its Coordinated Care Organizations through required Community Advisory Committees and shared financial risk.',
         'Massachusetts\'s BCBS tested its Alternative Quality Contract concept with hospital and physician leaders, policy experts, and employers before finalizing it — treating payment, quality measurement, governance, and public engagement as linked levers.',
         'All three cases built a formal mechanism for a non-payer stakeholder group to shape the reform before or during rollout, not only after launch.',
@@ -628,10 +625,10 @@ lesson_4_body = [
         'rather than presenting a finished design after the fact.'),
 
     h2('src', 'Sources'),
-    blk('src1', '[1] "Health Care Leaders\' Perspectives on the Maryland All-Payer Model" — https://pmc.ncbi.nlm.nih.gov/articles/PMC8903109/ — the "sea change" quote and governance themes'),
+    blk('src1', '[1] "Health Care Leaders\' Perspectives on the Maryland All-Payer Model" (Kilaru et al., JAMA Health Forum, 2022) — https://pmc.ncbi.nlm.nih.gov/articles/PMC8903109/ — the "sea change" quote and governance themes'),
     blk('src2', '[2] Commonwealth Fund, "Hospital Global Budgeting: Lessons from Maryland and Selected Nations" (2024) — https://www.commonwealthfund.org/publications/fund-reports/2024/jun/hospital-global-budgeting-lessons-maryland-selected-nations — Maryland model history and 2019 TCOC extension'),
     blk('src3', '[3] Kaiser Family Foundation, "Coordinated Care Organizations: Frequently Asked Questions" — https://www.kff.org/wp-content/uploads/sites/2/2012/05/cco-faq.pdf — Oregon CCO governance structure'),
-    blk('src4', '[4] Health Affairs, "Private-Payer Innovation In Massachusetts: The \'Alternative Quality Contract\'" (2010) — https://healthaffairs.org/doi/full/10.1377/hlthaff.2010.0980 — AQC design and co-development process'),
+    blk('src4', '[4] Health Affairs, "Private-Payer Innovation In Massachusetts: The \'Alternative Quality Contract\'" (Chernew et al., 2011) — https://healthaffairs.org/doi/full/10.1377/hlthaff.2010.0980 — AQC design and co-development process'),
     blk('src5', '[5] BCBS Massachusetts newsroom, "New Harvard Medical School Study Finds... Alternative Quality Contract Slowed Spending, Improved Care Over 8 Years" (July 2019) — https://newsroom.bluecrossma.com/2019-07-17-New-Harvard-Medical-School-Study-Finds-Blue-Cross-Blue-Shield-of-Massachusetts-Alternative-Quality-Contract-Slowed-Spending-Improved-Care-Over-8-Years — AQC outcomes and network coverage'),
     blk('src6', '[6] Health Transformation Review, Transforming American Healthcare, Chapter 12 §12.4.1, Step 2 — internal manuscript, Vermont\'s named clinical-leadership coalition gap'),
 ]
@@ -675,10 +672,13 @@ lesson_5_body = [
         'mandate, and were more likely to perform knee replacements in the inpatient setting — which the '
         'bundle covered — even when the same procedure performed outpatient, which the bundle did not cover, '
         'would have been the less costly option. Roughly 77% of CJR participant hospitals earned reconciliation '
-        'payments in one or both of the model\'s first two performance years. Once CMS subsequently made '
-        'participation voluntary for some hospitals and separately made outpatient total knee replacement '
-        'billable nationally outside the bundle, the boundary-optimization incentive weakened — and CJR\'s '
-        'measured savings were no longer statistically significant by the fourth performance year.'),
+        'payments in one or both of the model\'s first two performance years. When CMS made participation '
+        'voluntary in half the areas and let outpatient knee replacements be billed outside the bundle in the '
+        'model\'s third year, hospitals responded to the new boundary: the highest-spending hospitals dropped out '
+        'where they could, and hospitals still in the mandatory bundle kept healthier knee patients in the '
+        'covered inpatient setting rather than shifting them outpatient. A 2021 JAMA Internal Medicine study '
+        'found savings fell from about $976 per episode in year two to $331 in year four — no longer '
+        'statistically significant — with patient and site-of-care selection explaining three-quarters of the decline.'),
     callout('s2c1',
         'The CJR pattern is not evidence of bad faith. It is evidence that organizations respond rationally to '
         'whatever boundary a payment reform draws. A fixed-revenue or fixed-bundle boundary will be optimized '
@@ -742,8 +742,8 @@ lesson_5_body = [
 
     takeaway('tw', [
         'A fixed-revenue-envelope reform reframes every department\'s incentive to grow volume into a zero-sum trade-off, producing more resistance than a bonus-on-top value-based arrangement.',
-        'CMS\'s mandatory CJR bundle produced documented boundary-gaming: hospitals selected healthier patients and shifted procedures into the inpatient setting the bundle covered.',
-        'CJR\'s measured savings were no longer statistically significant by year four once the mandatory boundary was loosened — direct evidence the earlier savings were partly an artifact of the boundary itself.',
+        'CMS\'s mandatory CJR bundle produced documented boundary-gaming: hospitals selected healthier patients and kept more knee replacements in the inpatient setting the bundle covered.',
+        'CJR\'s measured savings had largely dissipated by year four because hospitals responded to the year-three rule changes — high-spending hospitals exited where participation became voluntary, and remaining hospitals selected which patients stayed inside the bundle (JAMA Internal Medicine, 2021).',
         'A second resistance pattern is autonomy anxiety — Maryland\'s own governance design named "protecting hospital autonomy" explicitly as a necessary theme for managing its global budget conversion.',
         'A third pattern is quiet clinical disengagement when clinical leadership lacks a genuine coalition seat — harder to detect than open opposition because it produces no formal objection.',
         'A working playbook names the zero-sum trade-off explicitly, builds a transparent reallocation process, creates genuine early wins, monitors for boundary behavior from year one, and formalizes a real clinical coalition seat.',
@@ -759,13 +759,14 @@ lesson_5_body = [
             ('The model was cancelled immediately', False),
             ('Hospital participation became mandatory nationwide', False),
         ],
-        'Once outpatient TKA was excluded from the bundle nationally and some hospitals\' participation became '
-        'voluntary, the boundary-optimization incentive weakened, and CJR\'s measured savings were no longer '
-        'statistically significant by the fourth year — evidence that part of the earlier savings reflected '
-        'boundary-gaming rather than genuine efficiency gains.'),
+        'After outpatient knee replacement could be billed outside the bundle and participation became voluntary '
+        'in half the areas, hospitals responded to the new boundary — high-spending hospitals dropped out, and '
+        'mandatory hospitals kept healthier knee patients inside the inpatient bundle — so savings fell from about '
+        '$976 to $331 per episode and were no longer statistically significant by the fourth year (JAMA Internal '
+        'Medicine, 2021).'),
 
     h2('src', 'Sources'),
-    blk('src1', '[1] Commonwealth Fund, "How Hospitals Respond to Incentives: Bundled Payment for Joint Surgery" (2021) — https://www.commonwealthfund.org/publications/journal-article/2021/may/hospital-incentives-bundled-payment-joint-surgery — CJR boundary-gaming findings'),
+    blk('src1', '[1] Commonwealth Fund, "How Hospitals Respond to Incentives: Bundled Payment for Joint Surgery" (2021) — https://www.commonwealthfund.org/publications/journal-article/2021/may/hospital-incentives-bundled-payment-joint-surgery — summary of Wilcock et al., "Hospital Responses to Incentives in Episode-Based Payment for Joint Surgery," JAMA Internal Medicine 2021;181(7):932-940 (https://pubmed.ncbi.nlm.nih.gov/33999159/)'),
     blk('src2', '[2] CMS, "Findings at a Glance: Comprehensive Care for Joint Replacement (CJR) Model" — https://www.cms.gov/files/document/cjr-fg-secondannrptpdf.pdf — CJR participation and reconciliation-payment data'),
     blk('src3', '[3] "Health Care Leaders\' Perspectives on the Maryland All-Payer Model" — https://pmc.ncbi.nlm.nih.gov/articles/PMC8903109/ — the "protecting hospital autonomy" governance theme'),
     blk('src4', '[4] Health Transformation Review, Transforming American Healthcare, Chapter 12 §12.4.1, Step 2 — internal manuscript, the coalition-seat argument applied to Vermont'),
@@ -794,15 +795,14 @@ lesson_6_body = [
     blk('s1p2',
         'That absence of a natural finish line is precisely why sustainment has to be planned and budgeted '
         'for deliberately, rather than assumed to happen automatically once a transformation has launched '
-        'successfully. The Project Management Institute\'s benefits realization management standard gives '
-        'this planning a formal structure.'),
+        'successfully. The Project Management Institute\'s Benefits Realization Management Framework '
+        '(2016) gives this planning a formal structure.'),
 
     h2('s2h1', 'PMI\'s Three-Part Discipline'),
     blk('s2p1',
         'Benefits realization management is the process of planning, tracking, realizing, and sustaining the '
-        'strategic benefits a project, program, or portfolio is meant to produce. PMI\'s standard treats it as '
-        'a tool within the broader discipline of portfolio performance management, and defines three core '
-        'elements: identify the benefits a program is meant to produce, execute the changes needed to produce '
+        'strategic benefits a project, program, or portfolio is meant to produce. PMI\'s framework organizes it into '
+        'three core elements: identify the benefits a program is meant to produce, execute the changes needed to produce '
         'them, and sustain those benefits after the program has formally concluded.'),
     callout('s2c1',
         'The third element — sustain — is the one most transformation plans never explicitly budget for. Most '
@@ -823,9 +823,8 @@ lesson_6_body = [
         'model has not been static across that period. It has been repeatedly revised: extended to private '
         'payers in 1974, to Medicare and Medicaid in 1977, converted to global budgets for all acute-care '
         'hospitals in 2014, and extended again into a Total Cost of Care model covering non-hospital spending '
-        'in 2019. Published assessments describe the model as having performed favorably over its most recent '
-        'decade, but explicitly note this has required "continual course correction by CMS, HSCRC, and '
-        'hospitals" rather than a single design that has simply run unchanged.'),
+        'in 2019. Each of those revisions was a course correction by the commission, CMS, and the hospitals — '
+        'the model has never been a single design left to run unchanged.'),
     example('s3ex1', 'Maryland as the Institutionalization Benchmark',
         'The relevant lesson from Maryland is not that its original 1971 or 2014 design was perfect and '
         'therefore never needed to change. It is the opposite: the model survived and expanded specifically '
@@ -891,16 +890,16 @@ lesson_6_body = [
 
     takeaway('tw', [
         'Kotter\'s Step 8, institutionalization, has no natural finish-line event, which is exactly why it is the step most healthcare transformations leave incomplete.',
-        'PMI\'s benefits realization management standard defines three core elements — identify, execute, sustain — and most transformation plans budget for the first two but not the third.',
+        'PMI\'s Benefits Realization Management Framework defines three core elements — identify, execute, sustain — and most transformation plans budget for the first two but not the third.',
         'Maryland\'s hospital rate-setting model has operated continuously since 1971 and expanded through 2014 and 2019 specifically because a standing governance body kept making course corrections, not because the original design was static.',
         'CMS\'s CPC+ built a standing national and regional learning-collaborative infrastructure directly into the model, so gains did not depend on a single training event.',
-        'The NHS\'s National Audit Office found NPfIT\'s failure lessons were not systematically captured even by later government digital programs — a sustainment failure layered on top of the original governance failure.',
+        'The UK\'s National Audit Office found NPfIT\'s failure lessons were not systematically captured even by later government digital programs — a sustainment failure layered on top of the original governance failure.',
         'A concrete sustainment plan names a benefit owner, sets a post-launch review cadence, keeps the risk register open, and budgets ongoing learning support rather than a one-time launch event.',
         'A fixed, public reporting cadence — the book\'s own recommendation for Vermont\'s legislature — functions as a sustainment mechanism, not just an accountability tool for the launch phase.',
     ]),
 
     quiz('qz',
-        'Per PMI\'s benefits realization management standard, which of the three core elements — identify, '
+        'Per PMI\'s Benefits Realization Management Framework, which of the three core elements — identify, '
         'execute, sustain — does this lesson identify as the one most transformation plans fail to budget '
         'for?',
         [
@@ -911,14 +910,14 @@ lesson_6_body = [
         ],
         'Most transformation plans do identify a target benefit and execute a defined set of changes to reach '
         'it. Far fewer assign a named owner, review cadence, and monitoring mechanism for the period after the '
-        'program formally closes — exactly the gap the NHS\'s own National Audit Office found in NPfIT\'s '
+        'program formally closes — exactly the gap the UK\'s National Audit Office found in NPfIT\'s '
         'aftermath.'),
 
     h2('src', 'Sources'),
-    blk('src1', '[1] PMI, "Benefits Realization Management Framework" — https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/benefits-realization-management-framework.pdf — the identify/execute/sustain framework'),
+    blk('src1', '[1] PMI, "Benefits Realization Management Framework" — https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/benefits-realization-management-framework.pdf — the identify/execute/sustain framework (2016)'),
     blk('src2', '[2] Commonwealth Fund, "Hospital Global Budgeting: Lessons from Maryland and Selected Nations" (2024) — https://www.commonwealthfund.org/publications/fund-reports/2024/jun/hospital-global-budgeting-lessons-maryland-selected-nations — Maryland\'s multi-decade course-correction history'),
     blk('src3', '[3] CMS, "CPC+ Annual Report" and Primary Care Collaborative overview — https://www.cms.gov/priorities/innovation/data-and-reports/2022/cpc-annual-report-2-cms-perspective — CPC+ learning-collaborative infrastructure'),
-    blk('src4', '[4] National Audit Office / Parliament Public Accounts Committee, "The dismantled National Programme for IT in the NHS" — https://publications.parliament.uk/pa/cm201314/cmselect/cmpubacc/294/294.pdf — the finding that NPfIT\'s lessons were not systematically captured'),
+    blk('src4', '[4] National Audit Office, "Digital transformation in the NHS" (May 2020) — https://www.nao.org.uk/reports/digital-transformation-in-the-nhs/ — the finding that NPfIT\'s lessons were not all being applied to later NHS digital programmes'),
     blk('src5', '[5] Health Transformation Review, Transforming American Healthcare, Chapter 12 §12.9 — internal manuscript, the legislative-dashboard sustainment recommendation'),
 ]
 

@@ -1,0 +1,50 @@
+{
+  "id": "85228bf9-14a2-48cb-aaf1-68ff382b726c",
+  "track_id": "422c97c2-efbd-49c0-8ab9-c07b7d1e3420",
+  "pillar": "operations",
+  "order": 3,
+  "slug": "appeals-process",
+  "title": "Appeals Process and Payer Relations",
+  "summary": "A well-structured appeals process — including peer-to-peer reviews, formal appeals, and external review rights — can recover 50–75% of appealable denials.",
+  "estimated_minutes": 20,
+  "objectives": [
+    "Describe the levels of the appeals process for commercial and Medicare claims",
+    "Explain the peer-to-peer review process and when to use it",
+    "Identify legal protections and external review rights available to providers"
+  ],
+  "content_blocks": [
+    {
+      "body": "For commercial insurance claims, appeals typically proceed through:\n\n1. **First-level appeal (reconsideration):** Standard written appeal with supporting documentation; typically 30–60 days to file\n2. **Second-level appeal:** Review by a different or senior payer reviewer; often required before external review\n3. **Peer-to-peer review:** Direct physician-to-physician conversation between the treating provider and the payer's medical director; most effective for medical necessity denials\n4. **External Independent Review:** Available for medical necessity denials under state and federal law; binding on payers in most states\n5. **Legal action:** For high-value disputes or systematic payer non-compliance with contract terms",
+      "type": "text",
+      "heading": "The Levels of Appeal"
+    },
+    {
+      "body": "Physician peer-to-peer review — where the treating physician speaks directly with the payer's medical director — is the most effective intervention for medical necessity denials. Studies show peer-to-peer reviews reverse 50–80% of medical necessity denials. Request it within the payer's stated window (usually 5–14 business days from denial date).",
+      "type": "callout",
+      "title": "Peer-to-Peer Review: The Most Effective Tool",
+      "variant": "key"
+    },
+    {
+      "body": "Medicare has a structured five-level appeals process:\n\n1. **Redetermination** — MAC (Medicare Administrative Contractor) review; 120 days to file; decision within 60 days\n2. **Reconsideration** — Qualified Independent Contractor (QIC) review; 180 days to file\n3. **ALJ Hearing** — Office of Medicare Hearings and Appeals; minimum dispute amount ($180 in 2024)\n4. **Medicare Appeals Council** — Review by the Departmental Appeals Board\n5. **Federal District Court** — Final judicial review; minimum dispute amount ($1,800 in 2024)",
+      "type": "text",
+      "heading": "Medicare Appeals Process"
+    },
+    {
+      "body": "The No Surprises Act created an Independent Dispute Resolution (IDR) process for billing disputes between providers and payers for out-of-network emergency and surprise billing situations. The IDR arbitrator selects either the provider's offer or the payer's offer (baseball arbitration style). As of 2023, providers have won approximately 70–77% of IDR decisions.",
+      "type": "callout",
+      "title": "No Surprises Act IDR Process",
+      "variant": "info"
+    }
+  ],
+  "tags": [
+    "appeals",
+    "peer-to-peer review",
+    "external review",
+    "dispute resolution"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:31:26.862799+00:00",
+  "updated_at": "2026-06-01T13:14:49.681918+00:00",
+  "sanity_slug": "appeals-process"
+}

@@ -1,0 +1,463 @@
+{
+  "_createdAt": "2026-05-31T18:06:53Z",
+  "_id": "covered-benefits-carveins-carveouts",
+  "_rev": "glqH7a4yvZFQerxZdPcXm5",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T18:06:53Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Deciding What the Plan Is Responsible For"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "When a state contracts with an MCO, one of the most consequential design decisions is also one of the least visible: exactly which services the plan is responsible for. It would seem obvious that a comprehensive plan should cover everything, but Medicaid programs routinely pull certain services out of the MCO contract and manage them separately. These decisions — to \"carve in\" or \"carve out\" a benefit — shape how care is delivered, how it is coordinated, and whether a member’s care is unified or fragmented across multiple systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The terminology is simple. A carve-in is a service that remains within or is integrated into the MCO’s responsibility — the plan provides it and is paid (through capitation) to cover it. A carve-out is a service removed from the MCO benefit package — the plan neither provides it nor receives payment for it, and the state manages that service through a separate arrangement, such as a limited-benefit plan or fee-for-service. Every Medicaid managed care program is, in effect, a set of decisions about which benefits to carve in and which to carve out."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "These decisions carry real stakes for members and for the system. Carve-outs can bring specialized expertise to complex services but risk fragmenting a person’s care across disconnected plans; carve-ins promise integration and \"whole-person care\" but depend on the MCO actually coordinating well. This lesson examines which services are commonly carved out, the strong recent trend toward carving them back in, and the surprisingly mixed evidence on whether integration delivers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: A carve-in keeps a service within the MCO’s capitated responsibility; a carve-out removes it, so the plan neither provides nor is paid for it and the state manages it separately. The mix of carve-ins and carve-outs defines the scope of each MCO contract and how integrated a member’s care is."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "About 23 states carve behavioral health into their MCOs, with another 17 using mixed \"carve-up\" approaches — reflecting a strong shift toward integration (industry analyses)",
+          "label": "Carve In Behavioral Health",
+          "value": "23 states"
+        },
+        {
+          "_key": "s2",
+          "context": "28 states and DC carve pharmacy into their MCOs, while 7 states carve prescription drugs out (KFF / AHIP)",
+          "label": "Pharmacy: Carve-In vs. Carve-Out",
+          "value": "28 vs 7"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Gets Carved Out — and Why"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A handful of services are carved out far more often than others, and they share a common trait: they are specialized, distinct from general medical care, and historically managed through their own systems. The services most frequently carved out of Medicaid managed care are behavioral health (mental health and substance use), dental, pharmacy, and non-emergency medical transportation (NEMT). Behavioral health is the most commonly carved-out service of all, reflecting a long history of separate mental health systems and specialized provider networks."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The rationale for carving out is real. A specialized service may benefit from a vendor with deep, focused expertise — a behavioral health organization that understands serious mental illness, a dental plan with a dedicated dentist network, a transportation broker that manages rides. Carving out lets the state contract with an entity built specifically for that service, rather than expecting a general medical MCO to manage something far outside its core competence. When done well, a carve-out delivers specialized management that a comprehensive plan might handle poorly."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "But carve-outs come at a cost: fragmentation. When a member’s behavioral health is managed by one entity, their physical health by another, their pharmacy by a third, and their transportation by a fourth, no single organization sees the whole person. A patient with serious mental illness and diabetes may have their psychiatric care and their diabetes care managed by entities that never communicate. This fragmentation is precisely the problem that the integration movement, discussed next, aims to solve."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Carve-In (Integrated)",
+        "points": [
+          "Service stays within the MCO’s capitation",
+          "One plan responsible for the whole person",
+          "Easier coordination across physical and other care",
+          "Depends on the MCO actually integrating care",
+          "Aligned with \"whole-person care\" goals"
+        ]
+      },
+      "right": {
+        "label": "Carve-Out (Separate)",
+        "points": [
+          "Service removed from the MCO benefit package",
+          "Managed by a specialized vendor or fee-for-service",
+          "Brings focused expertise to complex services",
+          "Risks fragmenting a member’s care across systems",
+          "Requires deliberate cross-system coordination"
+        ]
+      },
+      "title": "Carve-In vs. Carve-Out"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Trend: Carving Back In"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Over the past decade, the dominant trend has been to carve services back in — to integrate them into comprehensive MCOs in pursuit of \"whole-person care.\" The shift in behavioral health is striking: the number of states with behavioral health carve-in arrangements grew rapidly, more than quadrupling in a single recent year, and today roughly 23 states carve behavioral health into their MCOs, with another 17 using mixed \"carve-up\" approaches. Meanwhile, primary \"horizontal\" behavioral health carve-outs to separate care-management organizations have declined — from about 13 states in 2011 to roughly 9 — driven by a clear policy preference for integration."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Pharmacy shows the same integrationist tilt: 28 states and the District of Columbia carve pharmacy into their MCOs, compared with just 7 that carve prescription drugs out. The logic behind carving in is intuitive and powerful — when one plan is responsible for all of a member’s care, it has both the information and the financial incentive to coordinate across physical health, behavioral health, and pharmacy, treating the person as a whole rather than a collection of disconnected benefits."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This integration goal connects directly to the financial model. A fully capitated MCO responsible for the whole person internalizes the trade-offs: it benefits financially when better behavioral health care reduces avoidable medical admissions, or when managing medications prevents hospitalizations. Under carve-outs, those savings flow to a different entity — a version of the \"wrong pocket problem.\" Carving in aligns the incentives so that one plan profits from coordinating the member’s total care, which is the theoretical heart of the whole-person-care argument."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Does Integration Actually Work?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Given the strength of the carve-in trend, one might expect clear evidence that integration improves care. The reality is more humbling. Research on whether carve-in models deliver better outcomes is genuinely mixed. Some studies have found that access to and utilization of services was not better at integrated MCOs compared to carve-out models, finding no consistent association between integration and claims-based measures of utilization and quality. In other words, simply putting a benefit inside the MCO contract did not, by itself, produce better care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Yet other evidence is more encouraging. In New York and Oregon, behavioral health integration led to higher use of both behavioral and physical health outpatient services among individuals with serious mental illness and those with milder behavioral health needs — suggesting integration can improve access when implemented well. The divergence points to a crucial lesson: the outcome depends not on the contracting structure alone, but on how the integration is actually executed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "Putting two benefits in the same MCO contract (financial integration) does not guarantee that the administration and delivery of care are actually coordinated (clinical integration). States seeking real integration must pair the contracting change with investments in workforce, data analytics, and performance oversight — otherwise a carve-in is integration in name only.",
+      "title": "Financial Integration Is Not Clinical Integration"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Designing the Benefit Package"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "For a state Medicaid program, the carve-in/carve-out decision is a balancing act with no universally right answer. Carving in offers the promise of coordinated, whole-person care and aligned incentives, but only if the MCO genuinely integrates the service rather than administering it in a silo. Carving out offers specialized expertise and focused management, but at the risk of fragmenting the member’s experience. The right choice depends on the service, the state’s MCO capabilities, the strength of specialized vendors, and how much the state is willing to invest in making integration real."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "Carve-ins and carve-outs are like deciding whether one general contractor handles your entire home renovation or you hire separate specialists for plumbing, electrical, and roofing. The single contractor (carve-in) can coordinate everything and is accountable for the whole project — but only if they actually manage the subtrades well. Hiring separate specialists (carve-out) gets you deep expertise in each area, but now someone has to make sure the plumber and electrician don’t work at cross-purposes. Neither is automatically better; it depends on the contractor’s coordinating skill.",
+      "concept": "Carve-in vs. carve-out benefit design"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two requirements cut across the decision regardless of structure. First, care coordination: whether a service is carved in or out, states and plans are responsible for coordinating care across delivery systems so the member does not fall through the cracks. Second, behavioral health parity: federal rules require that behavioral health benefits be covered on par with medical benefits, a requirement that applies however behavioral health is structured. These obligations mean that even a carve-out cannot be an excuse to ignore a service or treat mental health as second-class."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson opens the benefits-and-network module by defining the scope of what an MCO actually manages. The next lessons build on it: network adequacy standards apply to the services a plan covers, and provider credentialing concerns the providers a plan must contract with for those covered benefits. The carve-in/carve-out decision is logically first because it determines the boundaries of the plan’s responsibility — everything else in benefit and network management operates within the scope these decisions set."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "A carve-in keeps a service within the MCO’s capitated responsibility, while a carve-out removes it so the plan neither provides nor is paid for it and the state manages it separately.",
+        "The services most commonly carved out are behavioral health (the most frequent), dental, pharmacy, and non-emergency medical transportation — specialized services historically run through their own systems.",
+        "Carve-outs bring specialized vendor expertise but risk fragmenting a member’s care across disconnected entities that may never communicate.",
+        "The dominant decade-long trend is to carve services back in for \"whole-person care\": about 23 states now carve in behavioral health (with 17 mixed \"carve-up\" approaches), horizontal BH carve-outs fell from ~13 states in 2011 to ~9, and 28 states plus DC carve in pharmacy versus 7 that carve it out.",
+        "Carving in aligns incentives by making one capitated plan responsible for the whole person, so it benefits financially from coordinating across physical, behavioral, and pharmacy care (avoiding a \"wrong pocket\" problem).",
+        "The evidence that integration improves outcomes is mixed — some studies found no utilization/quality advantage for integrated MCOs, while New York and Oregon saw higher outpatient service use after behavioral health integration.",
+        "Financial integration (same contract) is not the same as clinical integration (coordinated delivery); real integration requires investments in workforce, data analytics, and performance oversight.",
+        "Regardless of structure, states and plans must coordinate care across delivery systems and comply with behavioral health parity, and the carve-in/carve-out decision sets the scope within which network adequacy and credentialing then operate."
+      ]
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] MACPAC: \"Types of managed care arrangements\" — https://www.macpac.gov/subtopic/types-of-managed-care-arrangements/ — carve-in/carve-out definitions and limited-benefit plans for carved-out services."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] KFF: \"10 Things to Know About Medicaid Managed Care\" — https://www.kff.org/medicaid/issue-brief/10-things-to-know-about-medicaid-managed-care/ — commonly carved-out services (behavioral health, dental, pharmacy, NEMT) and pharmacy carve-in counts (28 states + DC vs. 7)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Center for Health Care Strategies: \"Behavioral Health Integration in Medicaid Managed Care — Evidence Roundup\" (2024) — https://bettercareplaybook.org/_blog/2024/31/behavioral-health-integration-medicaid-managed-care-evidence-roundup — ~23 states carving in behavioral health, 17 \"carve-up\" models, decline of horizontal carve-outs, and mixed integration evidence."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Behavioral Health Business: \"Integrated Managed Care Organizations Fail to Outperform Carve-Outs in Behavioral Health Access\" (Jan 2024) — https://bhbusiness.com/2024/01/03/integrated-managed-care-organizations-fail-to-outperform-carve-outs-in-behavioral-health-access/ — finding no consistent utilization/quality advantage for integrated MCOs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] RAND: \"Carve-In Models for Specialty Behavioral Health Services in Medicaid: Lessons for the State of California\" — https://www.rand.org/pubs/research_reports/RRA1517-1.html — New York and Oregon integration increasing outpatient service use; financial vs. clinical integration distinction."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] AHIP: \"Carving Pharmacy into Medicaid Managed Care Organization Benefits is Critical for Beneficiary Outcomes\" — https://www.ahip.org/resources/carving-pharmacy-into-medicaid-managed-care-organization-benefits-is-critical-for-beneficiary-outcomes — the case for pharmacy carve-in and coordination across benefits."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicaid-managed-care-operations",
+  "order": 10,
+  "slug": {
+    "_type": "slug",
+    "current": "covered-benefits-carveins-carveouts"
+  },
+  "title": "Covered Benefits: Carve-Ins vs. Carve-Outs"
+}

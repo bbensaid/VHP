@@ -1,0 +1,553 @@
+{
+  "_createdAt": "2026-06-02T17:06:06Z",
+  "_id": "medicare-advantage-market-dynamics",
+  "_rev": "jFV5UM63HEdRp4x3pte97t",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T17:06:06Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Special Needs Plans: Targeting the Highest-Need Beneficiaries"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Not every Medicare Advantage plan is open to everyone. Special Needs Plans (SNPs) are a category of MA plan restricted to beneficiaries with specific characteristics, designed to tailor benefits, provider networks, and care management to populations with concentrated needs. They are one of the fastest-growing parts of the entire Medicare program."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "There are three types. Chronic Condition SNPs (C-SNPs) serve people with specific severe or disabling chronic conditions, such as diabetes or heart failure. Institutional SNPs (I-SNPs) serve people who live in institutions like skilled nursing facilities (or who need that level of care). Dual Eligible SNPs (D-SNPs) serve people who qualify for both Medicare and Medicaid."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "SNPs have grown dramatically. They now account for about 21 percent of all Medicare Advantage enrollees, up from just 13 percent in 2018, and between 2024 and 2025 they made up nearly half of the total growth in MA enrollment. SNPs are no longer a niche — they are a major engine of MA expansion."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "There are three SNP types: C-SNP (chronic conditions), I-SNP (institutional), and D-SNP (dual eligible). All are Medicare Advantage plans, but enrollment is limited to beneficiaries who meet the plan’s specific eligibility criteria."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Who they serve",
+        "points": [
+          "C-SNP: people with specific chronic/disabling conditions",
+          "I-SNP: people in (or needing) institutional-level care",
+          "D-SNP: people eligible for both Medicare and Medicaid"
+        ]
+      },
+      "right": {
+        "label": "Why they exist",
+        "points": [
+          "Tailor benefits and care management to high-need groups",
+          "Concentrate clinical expertise for complex patients",
+          "Coordinate the notoriously fragmented dual-eligible experience"
+        ]
+      },
+      "title": "The Three Types of Special Needs Plans"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Dual Eligibles and the Rise of D-SNPs"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Dual eligibles — people enrolled in both Medicare and Medicaid — are among the most complex and expensive beneficiaries in the entire health system. They tend to be poorer, sicker, and more likely to need long-term services and supports, and historically they have had to navigate two completely separate programs with separate rules, cards, and benefits."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "D-SNPs are designed to bring those two programs together. They are by far the largest SNP category: over 80 percent of all SNP enrollees are in D-SNPs, and D-SNP enrollment grew from about 2.2 million in 2018 to roughly 5.8 million in 2024. As more duals enroll, D-SNPs increasingly define how this high-need population experiences coverage."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The core challenge is integration. A D-SNP can be loosely or tightly coordinated with the enrollee’s Medicaid coverage, and CMS classifies the more integrated forms as Highly Integrated Dual Eligible (HIDE) SNPs and Fully Integrated Dual Eligible (FIDE) SNPs. FIDE SNPs go furthest — covering nearly all Medicaid services, including long-term services and supports, under one coordinated umbrella."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Up from 13% in 2018 (KFF)",
+          "label": "Of MA Enrollees in SNPs (2024)",
+          "value": "21%"
+        },
+        {
+          "_key": "s2",
+          "context": "D-SNPs dominate the SNP category (KFF)",
+          "label": "Of SNP Enrollees in D-SNPs",
+          "value": "82%"
+        },
+        {
+          "_key": "s3",
+          "context": "Rapid expansion (KFF)",
+          "label": "D-SNP Growth 2018-2024",
+          "value": "2.2M → 5.8M"
+        },
+        {
+          "_key": "s4",
+          "context": "SNPs drive overall MA expansion (KFF)",
+          "label": "Of 2024-25 MA Growth from SNPs",
+          "value": "~48%"
+        }
+      ]
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2025 Push Toward Integration"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS has made integrating Medicare and Medicaid for dual eligibles a top priority, and a set of rules taking effect in 2025 sharply accelerates that push. The central change is a new integrated-care Special Enrollment Period (SEP): starting January 1, 2025, full-benefit dual eligibles can switch into an integrated D-SNP (FIDE, HIDE, or an applicable integrated plan) once per month to align their Medicare and Medicaid coverage."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "At the same time, FIDE SNPs are now required to operate with \"exclusively aligned enrollment,\" meaning their members must also be in the affiliated Medicaid managed care plan — so the two halves of coverage finally move together. Additional requirements phase in over the following years to further consolidate and align dual coverage."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The goal is to end the fragmentation that has long plagued dual eligibles: a single, coordinated plan responsible for both Medicare and Medicaid benefits, with unified care management and appeals. For the dual-eligible population, these rules represent one of the most significant structural changes in years."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Full-benefit duals can move into an integrated D-SNP once per month starting Jan 1, 2025.",
+          "title": "New integrated-care SEP"
+        },
+        {
+          "_key": "step2",
+          "description": "FIDE SNP members must also be in the affiliated Medicaid plan.",
+          "title": "Exclusively aligned enrollment for FIDE SNPs"
+        },
+        {
+          "_key": "step3",
+          "description": "Phased rules restrict parent organizations to fewer D-SNPs per service area over time.",
+          "title": "Limit standalone D-SNP proliferation"
+        },
+        {
+          "_key": "step4",
+          "description": "Goal: one coordinated plan and one appeals process across Medicare and Medicaid.",
+          "title": "Toward unified coverage"
+        }
+      ],
+      "title": "The 2025 Integration Changes (Dual Eligibles)"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "A Fully Integrated Dual Eligible (FIDE) SNP is the most tightly integrated D-SNP. It must provide nearly all Medicaid services — including long-term services and supports (LTSS), Medicaid behavioral health, home health, and durable medical equipment — under one plan with exclusively aligned enrollment. For a dual eligible needing nursing-home-level care, that means a single entity coordinating both their Medicare medical care and their Medicaid long-term care, rather than two disconnected programs.",
+      "title": "FIDE SNPs and Long-Term Services"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A Concentrated Market"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "As Medicare Advantage has grown, it has also consolidated. A handful of large insurers now dominate. In 2024, UnitedHealthcare and Humana together accounted for nearly half — about 47 percent — of all Medicare Advantage enrollment nationwide."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "At the local level the concentration is even starker. As of 2024, about 90 percent of Medicare beneficiaries lived in a county where MA enrollees had plans from just one or two insurers, and the great majority of counties were classified as highly or very highly concentrated. Rural counties were the most concentrated of all."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This concentration matters for policy. Limited competition can mean less pressure on plans to improve benefits or restrain costs, and it gives a few firms enormous influence over how most Medicare beneficiaries receive care. Market structure, not just payment formulas, shapes what Medicare Advantage actually delivers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "Beneficiaries often see dozens of MA plan options, but most of those plans are offered by the same few insurers. With UnitedHealthcare and Humana alone holding ~47% of national enrollment and most counties dominated by one or two firms, the MA \"marketplace\" is far less competitive than the plan count suggests.",
+      "title": "Choice on paper, concentration in practice"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why MA Market Dynamics Matter"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The growth of SNPs and the consolidation of the MA market are reshaping who controls high-need care. D-SNPs in particular are becoming the dominant vehicle for the dual-eligible population — the very people whose care is most expensive and most fragmented — putting private plans at the center of one of health policy’s hardest problems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "These dynamics also intersect with the overpayment concerns from the previous lesson. SNPs enroll sicker patients with higher risk scores, and concentrated markets reduce competitive pressure, both of which influence how much Medicare ultimately pays and what beneficiaries receive in return."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For anyone working in Medicare, the lesson is that Medicare Advantage is not a single uniform product. It is a fast-evolving market of specialized plans and dominant insurers, and the 2025 integration rules show that policymakers are actively trying to steer that market toward better-coordinated care for the people who need it most."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5q1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5q1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicare Advantage is no longer one product but a consolidating market of specialized plans — and D-SNPs are quietly becoming the front door to care for America’s sickest, poorest beneficiaries."
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Special Needs Plans (SNPs) are MA plans limited to specific populations and come in three types: C-SNP (chronic conditions), I-SNP (institutional), and D-SNP (dual eligible).",
+        "SNPs reached about 21% of MA enrollees in 2024 (up from 13% in 2018) and drove nearly half of MA enrollment growth between 2024 and 2025.",
+        "D-SNPs are the largest SNP type — over 80% of SNP enrollees — and grew from ~2.2 million (2018) to ~5.8 million (2024).",
+        "Dual eligibles are among the costliest, most complex beneficiaries; D-SNPs aim to coordinate their fragmented Medicare and Medicaid coverage.",
+        "CMS classifies more integrated D-SNPs as HIDE and FIDE SNPs; FIDE SNPs cover nearly all Medicaid services, including long-term services and supports.",
+        "Rules effective in 2025 add a monthly integrated-care SEP and require FIDE SNPs to use exclusively aligned enrollment, pushing toward unified dual coverage.",
+        "The MA market is highly concentrated: UnitedHealthcare and Humana held ~47% of national enrollment in 2024, and ~90% of beneficiaries live in counties dominated by one or two insurers."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "D-SNPs are Medicare Advantage plans limited to dual eligibles (people in both Medicare and Medicaid). They are the largest SNP category — over 80% of SNP enrollees — and the most integrated forms (HIDE and FIDE SNPs) coordinate Medicare and Medicaid benefits, including, for FIDE SNPs, long-term services and supports.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "They are open to any Medicare beneficiary regardless of income"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "They serve people eligible for both Medicare and Medicaid and are the largest SNP type"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "They are a form of Original Medicare, not Medicare Advantage"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "They cover only prescription drugs, not medical care"
+        }
+      ],
+      "question": "Which statement about Dual Eligible Special Needs Plans (D-SNPs) is correct?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] A Closer Look at the Growing Role of Special Needs Plans in Medicare Advantage — KFF — https://www.kff.org/medicare/a-closer-look-at-the-growing-role-of-special-needs-plans-in-medicare-advantage/ — three SNP types; 21% (up from 13%); D-SNP 82% and 2.2M→5.8M growth."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Special Needs Plans (SNP) — Medicare.gov — https://www.medicare.gov/health-drug-plans/health-plans/your-health-plan-options/SNP — definitions of C-SNP, I-SNP, D-SNP."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] D-SNPs: Integration & Unified Appeals Requirements — CMS — https://www.cms.gov/medicare/medicaid-coordination/about/dsnps — HIDE/FIDE definitions and integration goals."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Upcoming Changes for Dually Eligible Individuals: The Final 2025 MA Rule — Justice in Aging — https://justiceinaging.org/upcoming-changes-for-dually-enrolled-individuals/ — 2025 integrated-care SEP, exclusively aligned enrollment for FIDE SNPs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Most Medicare Advantage Markets are Dominated by One or Two Insurers — KFF — https://www.kff.org/medicare/most-medicare-advantage-markets-are-dominated-by-one-or-two-insurers/ — ~90% of beneficiaries in 1-2 insurer counties; concentration data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Medicare Advantage in 2024: Enrollment Update and Key Trends — KFF — https://www.kff.org/medicare/medicare-advantage-in-2024-enrollment-update-and-key-trends/ — UnitedHealthcare + Humana ~47% of national MA enrollment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicare-fundamentals",
+  "order": 8,
+  "slug": {
+    "_type": "slug",
+    "current": "medicare-advantage-market-dynamics"
+  },
+  "title": "MA Market Dynamics: Special Needs Plans and D-SNPs"
+}

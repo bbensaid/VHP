@@ -1,0 +1,53 @@
+{
+  "id": "a0c1911c-2cbd-4168-96f9-d46e68b9d51a",
+  "track_id": "002cf3f4-4ae7-4101-8e1d-aeb2629f7b37",
+  "pillar": "equity",
+  "order": 2,
+  "slug": "structural-racism-health",
+  "title": "Structural Racism & Health: From Redlining to Clinical Bias",
+  "summary": "How structural racism — through housing, education, wealth, and clinical practice — produces health disparities, and what the evidence says about implicit bias in clinical settings.",
+  "estimated_minutes": 18,
+  "objectives": [
+    {
+      "id": "obj_es1",
+      "text": "Explain how structural racism — not just individual prejudice — produces health disparities"
+    },
+    {
+      "id": "obj_es2",
+      "text": "Describe the health effects of discriminatory housing policy (redlining)"
+    },
+    {
+      "id": "obj_es3",
+      "text": "Summarize the evidence on implicit bias in clinical settings"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "When people hear 'racism,' they often think of individual bigotry — explicit prejudice held by a specific person. Structural racism is different: it refers to the historical and ongoing policies, practices, and norms that systematically advantage some groups and disadvantage others, often without any individual intending harm.\n\nHealth disparities are largely the product of structural racism: differential access to wealth, education, housing, environmental quality, and safety — all of which are powerful determinants of health — that have been shaped by policy decisions across generations.",
+      "type": "text",
+      "heading": "Beyond individual prejudice"
+    },
+    {
+      "body": "From the 1930s through the 1960s, the federal government's Home Owners' Loan Corporation drew color-coded maps of US cities, rating neighborhoods for lending risk. Neighborhoods with Black residents were systematically marked red ('hazardous') — denying mortgages that would have built intergenerational wealth.\n\nResearchers have overlaid 1930s redlining maps on modern health data and found persistent correlations: formerly redlined neighborhoods today have higher rates of asthma, diabetes, hypertension, low birth weight, and shorter life expectancy — 80+ years after the maps were drawn. The mechanism is through concentrated poverty, disinvestment, environmental hazard siting, and stress.",
+      "type": "text",
+      "heading": "Redlining and health: the maps still matter"
+    },
+    {
+      "body": "Dozens of studies document disparities in pain management, diagnostic accuracy, and treatment recommendations that persist after controlling for clinical variables. Black patients receive less pain medication than white patients with identical presentations. Studies using identical vignettes with patient names swapped show different treatment recommendations based on perceived race. This is not conscious racism — it reflects unconscious associations that every clinician is susceptible to, which is why training and system-level safeguards matter.",
+      "type": "callout",
+      "heading": "Implicit bias in clinical settings",
+      "variant": "warning"
+    }
+  ],
+  "tags": [
+    "structural racism",
+    "redlining",
+    "implicit bias",
+    "clinical bias"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T21:56:22.42826+00:00",
+  "updated_at": "2026-10-09T19:34:08.113109+00:00",
+  "sanity_slug": "structural-racism-health"
+}

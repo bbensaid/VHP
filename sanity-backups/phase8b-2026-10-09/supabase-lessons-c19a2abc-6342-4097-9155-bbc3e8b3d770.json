@@ -1,0 +1,104 @@
+{
+  "id": "c19a2abc-6342-4097-9155-bbc3e8b3d770",
+  "track_id": "c43e2f66-f060-46ad-b2cf-bc8c20cf59b8",
+  "pillar": "operations",
+  "order": 1,
+  "slug": "icd10-cpt-hcpcs",
+  "title": "ICD-10, CPT, and HCPCS Coding Fundamentals",
+  "summary": "Three coding systems — ICD-10-CM/PCS, CPT, and HCPCS — work together to describe diagnoses and procedures for billing purposes.",
+  "estimated_minutes": 25,
+  "objectives": [
+    "Distinguish between ICD-10-CM, ICD-10-PCS, CPT, and HCPCS Level II codes",
+    "Explain how diagnosis and procedure codes work together on a claim",
+    "Describe the role of DRGs in inpatient hospital billing"
+  ],
+  "content_blocks": [
+    {
+      "type": "concepts_grid",
+      "concepts": [
+        {
+          "term": "ICD-10-CM",
+          "definition": "International Classification of Diseases, 10th Revision, Clinical Modification — used to report diagnoses in all care settings; ~72,000 codes"
+        },
+        {
+          "term": "ICD-10-PCS",
+          "definition": "Procedure Coding System — used by hospitals to report inpatient procedures; ~87,000 codes organized by body system and approach"
+        },
+        {
+          "term": "CPT",
+          "definition": "Current Procedural Terminology — AMA-maintained codes for physician services, outpatient procedures, and ancillary services; updated annually"
+        },
+        {
+          "term": "HCPCS Level II",
+          "definition": "Healthcare Common Procedure Coding System — CMS-maintained codes for drugs, supplies, DME, and ambulance services not covered by CPT"
+        },
+        {
+          "term": "DRG",
+          "definition": "Diagnosis-Related Group — CMS payment category grouping similar inpatient diagnoses; determines the fixed payment for a Medicare inpatient stay"
+        },
+        {
+          "term": "CC/MCC",
+          "definition": "Complication or Comorbidity / Major Complication or Comorbidity — secondary diagnoses that increase DRG weight and reimbursement when documented"
+        }
+      ]
+    },
+    {
+      "body": "For outpatient/professional claims, CPT procedure codes paired with ICD-10-CM diagnosis codes determine payment under Medicare's Physician Fee Schedule (PFS) or payer fee schedules. Medical necessity requires that the diagnosis code supports the procedure.\n\nFor hospital inpatient claims, ICD-10-CM diagnosis codes and ICD-10-PCS procedure codes are grouped into a DRG. CMS pays a fixed rate per DRG regardless of actual resource use (with outlier adjustments for extreme cases). The principal diagnosis, complications (CC/MCC), and procedures all affect DRG assignment and payment.",
+      "type": "text",
+      "heading": "How Codes Drive Payment"
+    },
+    {
+      "body": "Documenting and coding secondary diagnoses as CCs or MCCs can increase DRG payment by 15–35%. Examples: Documenting 'acute blood loss anemia' vs. 'anemia' — the former may qualify as a CC. Clinical documentation improvement (CDI) programs focus specifically on capturing these diagnoses when clinically supported.",
+      "type": "callout",
+      "title": "CC/MCC Capture: High-Value Coding",
+      "variant": "key"
+    },
+    {
+      "rows": [
+        [
+          "ICD-10-CM",
+          "CDC/NCHS",
+          "Diagnoses",
+          "All settings"
+        ],
+        [
+          "ICD-10-PCS",
+          "CMS",
+          "Inpatient procedures",
+          "Hospital inpatient only"
+        ],
+        [
+          "CPT",
+          "AMA",
+          "Physician/outpatient procedures",
+          "Outpatient, physician, ASC"
+        ],
+        [
+          "HCPCS II",
+          "CMS",
+          "Drugs, supplies, DME",
+          "All settings"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Code Set",
+        "Maintained By",
+        "Used For",
+        "Setting"
+      ]
+    }
+  ],
+  "tags": [
+    "ICD-10",
+    "CPT",
+    "HCPCS",
+    "DRG",
+    "medical coding"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:31:19.996039+00:00",
+  "updated_at": "2026-06-01T13:14:49.340476+00:00",
+  "sanity_slug": "icd10-cpt-hcpcs"
+}

@@ -1,0 +1,94 @@
+{
+  "id": "65490bb3-5067-4120-966f-9a9f18004dfb",
+  "track_id": "abbb878c-ad5e-4b02-ae7d-0e7e1f02553b",
+  "pillar": "equity",
+  "order": 3,
+  "slug": "housing-as-health-care",
+  "title": "Housing as Health Care: Homelessness, Eviction & the Medical Costs",
+  "summary": "The evidence linking housing instability to health outcomes, what happens medically when people lose housing, and how health systems are beginning to pay for housing as a health intervention.",
+  "estimated_minutes": 17,
+  "objectives": [
+    {
+      "id": "obj_hh1",
+      "text": "Describe the health consequences of housing instability and homelessness"
+    },
+    {
+      "id": "obj_hh2",
+      "text": "Explain the Housing First model and the evidence for its effectiveness"
+    },
+    {
+      "id": "obj_hh3",
+      "text": "Describe how Medicaid and ACO models are beginning to pay for housing-related services"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Housing instability — eviction risk, overcrowding, unsafe conditions, or outright homelessness — is one of the strongest predictors of poor health outcomes. People experiencing homelessness have life expectancies 20–25 years shorter than housed people. They use emergency departments at rates 5–10 times higher than the general population, are hospitalized more frequently, and have dramatically higher rates of mental illness, substance use, and communicable disease.\n\nFor health systems operating in value-based contracts, chronically unhoused patients are often the highest-cost, hardest-to-manage members of the population. Housing instability is not a social problem on the side — it is a primary driver of health care costs.",
+      "type": "text",
+      "heading": "Housing is health care"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Provides permanent housing to chronically homeless people immediately, without requiring sobriety or treatment compliance first. Strong RCT evidence: higher housing retention, comparable or better health outcomes than treatment-first models.",
+          "icon": "ti-home",
+          "title": "Housing First"
+        },
+        {
+          "body": "Short-term residential care for medically ill people experiencing homelessness who don't require hospital level care. Reduces inappropriate ED use and readmissions.",
+          "icon": "ti-user-heart",
+          "title": "Medical respite"
+        },
+        {
+          "body": "CMS now allows Medicaid to pay for tenancy support services, housing navigation, and transitional rent for high-need populations through 1115 waivers.",
+          "icon": "ti-coins",
+          "title": "Medicaid housing supports"
+        },
+        {
+          "body": "Some health systems (Kaiser, Dignity Health, Boston Medical Center) have invested directly in affordable housing — treating it as a population health investment that reduces their most expensive utilization.",
+          "icon": "ti-building-community",
+          "title": "Health system investment"
+        }
+      ],
+      "heading": "Housing interventions with health evidence"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Shorter life expectancy for people experiencing chronic homelessness",
+          "value": "20-25 yrs",
+          "source": "JAMA"
+        },
+        {
+          "label": "Higher ED use rate for unhoused vs. housed individuals",
+          "value": "5-10x",
+          "source": "Health Affairs"
+        },
+        {
+          "label": "Annual Medicaid cost for a chronically homeless individual",
+          "value": "$30,000+",
+          "source": "RWJF"
+        },
+        {
+          "label": "Annual cost of supportive housing per person — fraction of health system savings",
+          "value": "$10,000",
+          "source": "Corporation for Supportive Housing"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "housing",
+    "homelessness",
+    "eviction",
+    "SDOH",
+    "housing-first"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T22:13:43.91238+00:00",
+  "updated_at": "2026-06-02T13:33:35.999215+00:00",
+  "sanity_slug": "housing-as-health-care"
+}

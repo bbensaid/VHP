@@ -1,0 +1,349 @@
+{
+  "_createdAt": "2026-09-22T19:19:02Z",
+  "_id": "hea-stratified-quality-measurement",
+  "_rev": "LCntMInbokDNzSR9NF6V6J",
+  "_type": "academyModule",
+  "_updatedAt": "2026-09-22T19:19:02Z",
+  "body": [
+    {
+      "_key": "l3s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l3s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "What \"Stratified\" Means, Operationally"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l3s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l3s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A standard HEDIS measure reports a single plan-wide number — for example, the share of eligible members who received a colorectal cancer screening. A stratified version of that same measure reports it separately by race, ethnicity, and, for some measures, language: the screening rate for Black members, for Hispanic members, for Asian members, for White members, side by side. Nothing about the clinical definition of the measure changes. What changes is that a plan can no longer average away a gap between subgroups inside one clean headline number."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l3s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l3s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "NCQA began requiring this for HEDIS measures in Measurement Year 2022, starting with 5 measures. By Measurement Year 2024, that had grown to 22 measures, and NCQA continued proposing further additions and revisions for Measurement Year 2025 — part of a stated strategy of building health equity into all of its measurement offerings rather than running it as a separate initiative alongside standard HEDIS."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l3s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "NCQA",
+          "label": "HEDIS measures stratified by race/ethnicity, MY2022",
+          "value": "5"
+        },
+        {
+          "_key": "s2",
+          "context": "NCQA",
+          "label": "HEDIS measures stratified by race/ethnicity, MY2024",
+          "value": "22"
+        },
+        {
+          "_key": "s3",
+          "context": "NCQA",
+          "label": "Health plan contracts studied in NCQA's Race and Ethnicity Stratification Learning Network",
+          "value": "101"
+        },
+        {
+          "_key": "s4",
+          "context": "NCQA",
+          "label": "Covered lives represented across those 101 contracts",
+          "value": "19M+"
+        }
+      ]
+    },
+    {
+      "_key": "l3s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l3s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Direct vs. Indirect Race and Ethnicity Data"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l3s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l3s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Stratification only works if a plan actually has race and ethnicity data on its members, and much of that data is missing at the individual level. NCQA's reporting requirement addresses this directly: for every stratified value, plans must disclose whether it came from direct data (the member self-reported it, typically at enrollment or during a clinical encounter) or indirect data (an alternate source, most commonly geocoding a member's address against Census tract demographics, used to infer a probable value when no self-report exists)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l3s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l3s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Direct data is more accurate for any given individual — the member stated it — but is frequently incomplete, since many members never answer a demographic question at all. Indirect data can fill most or all of the population-level gap but introduces real risk of individual misclassification, especially in racially and ethnically mixed neighborhoods where geocoding a single address to a single inferred race is a much blunter instrument than an actual self-report. The disclosure requirement exists precisely so a reader of a stratified result can tell how much of the underlying data is a self-report versus an inference, rather than being handed one clean-looking number that hides the difference."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l3cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Direct (self-reported)",
+        "points": [
+          "High individual accuracy — the member stated it",
+          "Often incomplete — many members never respond",
+          "NCQA's preferred source when available"
+        ]
+      },
+      "right": {
+        "label": "Indirect (geocoded/imputed)",
+        "points": [
+          "Can fill most of the population-level gap",
+          "Probabilistic — can misclassify any given individual",
+          "Must be labeled as indirect under NCQA reporting rules"
+        ]
+      },
+      "title": "Direct vs. Indirect Race/Ethnicity Data"
+    },
+    {
+      "_key": "l3s2c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l3s2c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A stratified measure built mostly on indirect data is measuring something real, but with materially more individual-level noise than the same measure built on direct self-report — and that difference must be disclosed, not absorbed silently into a single clean-looking rate."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "l3an1",
+      "_type": "analogyBlock",
+      "analogy": "Sorting a town's mail by zip code before delivery, instead of dumping every letter for the whole county into one bin, does not change what any single letter says. It changes whether a mail carrier can see that one zip code's mail keeps arriving late while the rest of the county's does not.",
+      "concept": "What stratifying a HEDIS measure by race and ethnicity does — and does not — change about the underlying clinical measure"
+    },
+    {
+      "_key": "l3s3h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l3s3hs",
+          "_type": "span",
+          "marks": [],
+          "text": "A Live Example: Measurement Outrunning Incentive"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l3s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l3s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS proposed a Health Equity Index reward — initially branded the \"Excellent Health Outcomes for All\" reward — as a new Medicare Advantage Star Ratings incentive specifically designed to reward plans for improving performance among disadvantaged subsets of their enrollees, rather than rewarding uniformly high performance across everyone. In the Contract Year 2027 Medicare Advantage and Part D final rule, CMS did not implement that reward, choosing instead to continue the pre-existing, non-equity-targeted Reward Factor, which rewards plans for consistently high performance across all enrollees regardless of whether gaps between subgroups are narrowing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l3s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l3s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Meanwhile, NCQA's own stratified-measure requirement kept expanding across the same period, from 5 measures to 22. Put those two facts side by side and a clear pattern emerges: the analytic capacity to detect a quality-measure disparity by race and ethnicity is expanding faster than the financial infrastructure to reward a plan specifically for closing it. Anyone building an equity analytics program on top of HEDIS stratification should understand that the measurement they are building has not, at least as of this writing, been matched by a comparable payment lever at the federal level."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l3w1",
+      "_type": "warningBlock",
+      "message": "A plan can be fully compliant with every NCQA stratification requirement and still face no direct Star Ratings financial reward specifically tied to closing the gaps that stratification reveals. Measurement compliance and equity-focused payment incentive are two separate systems, moving on two separate timelines.",
+      "title": "Do Not Confuse Measurement With Incentive"
+    },
+    {
+      "_key": "l3s4h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l3s4hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Case Study: Rush University Medical Center"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l3ex1",
+      "_type": "exampleBlock",
+      "content": "Rush University Medical Center's health equity approach, documented in a 2021 NEJM Catalyst case study titled \"Health Equity as a System Strategy,\" treated stratified data as an organizing principle for the whole institution rather than a compliance artifact filed once a year by the quality department. Rush built its strategy around what stratified quality and screening data showed about its surrounding West Side Chicago neighborhood.\nConcretely, that meant forming a dedicated Anchor Mission structure — the West Side Anchor Committee — explicitly tasked with translating what the data showed into hiring, purchasing, and community-investment decisions, not only clinical protocol changes. It is a working illustration of what NCQA's stratification requirement exists to make possible: an organization can only act on a gap it can see broken out by subgroup, and Rush's case shows that visibility becoming an organizational structure rather than staying a static report.",
+      "title": "Rush University Medical Center — Data Into System Strategy"
+    },
+    {
+      "_key": "l3tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Stratifying a HEDIS measure means reporting the identical clinical measure separately by subgroup (race, ethnicity, sometimes language) instead of one blended number.",
+        "NCQA grew its stratified-measure requirement from 5 measures (MY2022) to 22 measures (MY2024), covering 101 studied contracts and 19M+ covered lives in its Learning Network.",
+        "Direct (self-reported) race/ethnicity data is individually more accurate but often incomplete; indirect (geocoded/imputed) data fills population gaps but risks individual misclassification — NCQA requires both to be labeled, not blended silently.",
+        "CMS declined to implement a proposed Health Equity Index reward for 2027 Medicare Advantage Star Ratings, continuing the non-equity-targeted historical Reward Factor instead — a real, current example of measurement outrunning incentive.",
+        "Rush University Medical Center converted stratified data into an Anchor Mission committee with authority over hiring, purchasing, and community investment — not just a clinical protocol change.",
+        "A quality-measurement program can be fully compliant with stratification requirements and still lack any specific federal financial reward for closing the gaps that stratification reveals."
+      ]
+    },
+    {
+      "_key": "l3qz",
+      "_type": "knowledgeCheck",
+      "explanation": "NCQA requires plans to label each stratified value by its data source — direct (self-reported) or indirect (e.g., geocoded) — so a reader can see how much of the result rests on inference rather than self-report.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The plan should blend it with any direct data and report one unlabeled number"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The plan must disclose this as indirect data, separate from any direct self-reported values"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The plan cannot report the stratified measure at all in this case"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The plan must exclude those members from the measure entirely"
+        }
+      ],
+      "question": "A health plan reports a stratified HEDIS measure where most of the race/ethnicity values came from geocoding member addresses against Census data, because few members self-reported. Under NCQA rules, how must this be handled?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] NCQA, Expansion of Race and Ethnicity Stratification — https://wpcdn.ncqa.org/www-prod/wp-content/uploads/2023/02/02.-Race-Ethnicity.pdf — MY2022→MY2024 measure count growth, direct vs. indirect data requirement"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] NCQA Race and Ethnicity Stratification Learning Network — https://res.ncqa.org/ — 101 contracts, 19M+ covered lives"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CMS, Contract Year 2027 Medicare Advantage and Part D Final Rule Fact Sheet — https://www.cms.gov/newsroom/fact-sheets/contract-year-2027-medicare-advantage-part-d-final-rule — Health Equity Index reward not implemented for 2027"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Rush University Medical Center, \"Health Equity as a System Strategy,\" NEJM Catalyst 2021 — https://catalyst.nejm.org/doi/full/10.1056/CAT.20.0674 — West Side Anchor Committee case study"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "health-equity-analytics",
+  "order": 3,
+  "slug": {
+    "_type": "slug",
+    "current": "hea-stratified-quality-measurement"
+  },
+  "title": "Stratified Quality Measurement: HEDIS, NCQA, and the Star Ratings Fight"
+}

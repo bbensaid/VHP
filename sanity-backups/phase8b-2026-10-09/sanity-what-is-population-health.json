@@ -1,0 +1,530 @@
+{
+  "_createdAt": "2026-06-01T15:14:46Z",
+  "_id": "what-is-population-health",
+  "_rev": "2zkDeD7zc2Ko2DfFHsVvc5",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T15:14:46Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A Different Unit of Concern"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Most of medicine focuses on one patient at a time: this person, this visit, this diagnosis. Population health flips the unit of concern from the individual to the group. It asks not \"how do we treat this patient?\" but \"how healthy is this whole population, and what is driving its health?\""
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The foundational definition comes from a 2003 paper by David Kindig and Greg Stoddart in the American Journal of Public Health. They defined population health as \"the health outcomes of a group of individuals, including the distribution of such outcomes within the group.\" That definition is more subtle than it looks, and unpacking it is the key to the whole field."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The phrase \"distribution of such outcomes\" is doing heavy lifting. It means population health is not satisfied with an average — a population can have good average health while a subgroup suffers terribly. Built into the very definition is a concern with equity: how health is spread across the group, not just its mean. This is why population health and health equity are inseparable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Population health (Kindig & Stoddart, 2003) is \"the health outcomes of a group of individuals, including the distribution of such outcomes within the group.\" The unit of concern is the group, and the focus on distribution makes equity intrinsic."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Three Elements and the Determinants of Health"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Kindig and Stoddart described the field as having three connected elements: health outcomes, the patterns of health determinants that produce those outcomes, and the policies and interventions that link the two. In other words, population health is not just measuring how healthy a group is — it is understanding why, and acting on it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The \"why\" lives in the determinants of health. The authors named six categories: the social, economic, and physical environments; personal health practices; individual capacity and coping skills; biology; early developmental trajectory (early childhood); and access to health services. Strikingly, only one of those six — access to health services — is what we usually think of as \"health care.\""
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is the most important and counterintuitive idea in population health: most of what determines a group's health happens outside the doctor's office. The conditions people live in, their behaviors, their early-life circumstances, and their environment shape health far more than medical care does. A field focused on population health must therefore look well beyond the clinic."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "The measurable health status of the group — and how it is distributed.",
+          "title": "Health outcomes"
+        },
+        {
+          "_key": "step2",
+          "description": "The patterns of factors (social, behavioral, biological, environmental, access) producing those outcomes.",
+          "title": "Determinants"
+        },
+        {
+          "_key": "step3",
+          "description": "The actions that link determinants to outcomes — what we do to improve health.",
+          "title": "Policies & interventions"
+        }
+      ],
+      "title": "The Three Elements of Population Health"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Triple Aim"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Population health entered the mainstream of U.S. health policy through the Triple Aim. In 2008, Don Berwick, Tom Nolan, and John Whittington of the Institute for Healthcare Improvement (IHI) described three goals to pursue simultaneously: improving the patient experience of care, improving the health of populations, and reducing the per capita cost of care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Triple Aim was transformative because it made \"the health of populations\" an explicit, co-equal goal of the health system — alongside individual care quality and cost. It became the organizing framework for the U.S. National Quality Strategy and for countless health-system strategies. Population health has been called the \"North Star\" of the Triple Aim."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The framework's power is that the three aims pull on each other. You cannot durably reduce per capita cost without improving population health (sicker populations cost more), and you cannot improve population health by focusing only on the patients who happen to show up. The Triple Aim pushed health systems to think beyond their own walls to the health of the communities they serve."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Founding definition of population health (AJPH)",
+          "label": "Kindig & Stoddart Definition",
+          "value": "2003"
+        },
+        {
+          "_key": "s2",
+          "context": "Only 1 of which is health-care access (Kindig & Stoddart)",
+          "label": "Determinant Categories",
+          "value": "6"
+        },
+        {
+          "_key": "s3",
+          "context": "Berwick, Nolan & Whittington / IHI",
+          "label": "Triple Aim Introduced",
+          "value": "2008"
+        },
+        {
+          "_key": "s4",
+          "context": "Pursued simultaneously (IHI Triple Aim)",
+          "label": "Experience, Health, Cost",
+          "value": "3 aims"
+        }
+      ]
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Population Health vs. Population Health Management"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A crucial distinction runs through this course: population health versus population health management (PHM). Population health is the broad concept — the health outcomes and determinants of a group, in the academic Kindig-Stoddart sense, which can mean an entire community or nation. Population health management adds a strong, operational management component: it is what a specific health-care organization actually does to improve outcomes for a defined group it is responsible for."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The key word is \"defined.\" A PHM program operates on a defined population — usually the patients attributed to a practice, the members of a health plan, or the employees of an employer. Most PHM models rest on an attribution method that assigns a panel of patients to a provider or organization, which is then accountable for that panel's health."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This distinction matters because this course is mostly about management — the practical work of improving the health of a defined, attributed population. When we say \"population health\" going forward, we usually mean PHM: a concrete organization, a concrete panel, and concrete interventions, all measured against the Triple Aim."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Population Health (concept)",
+        "points": [
+          "Health outcomes + distribution of a group",
+          "Can mean a whole community or nation",
+          "Academic, determinant-focused (Kindig & Stoddart)",
+          "Includes factors far outside health care"
+        ]
+      },
+      "right": {
+        "label": "Population Health Management (PHM)",
+        "points": [
+          "What an organization does to improve outcomes",
+          "Operates on a DEFINED, attributed population",
+          "A panel of patients/members it is accountable for",
+          "Operational, measured against the Triple Aim"
+        ]
+      },
+      "title": "Population Health vs. Population Health Management"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Proactive, Whole-Population Care"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The defining behavior of population health management is that it is proactive and whole-population, not reactive and visit-based. Traditional care is reactive: it treats the patients who walk in the door. PHM attends to the entire defined population — including the patients who have NOT come in, who are often the ones at highest risk."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is the logic of \"panel management\": a practice systematically identifies and tracks the care needs of every patient on its panel, whether or not they are showing up for appointments. The diabetic patient who has not been seen in a year, the woman overdue for a mammogram, the person with rising blood pressure who never schedules a visit — population health is designed to find and reach exactly those people."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This proactive stance is also why population health is bound up with value-based care. Under fee-for-service, there is little incentive to chase the patients who are not generating visits. Under value-based payment, where the organization is accountable for the cost and quality of a whole population, preventing expensive downstream events (an avoidable ER visit, an uncontrolled chronic disease) becomes the whole game. Value-based care is the economic engine that makes population health management worth doing — and the rest of this course builds out how it is actually done."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "The biggest mental shift in population health is attending to the whole defined panel — especially the high-risk patients who are not coming in for care. Reactive, visit-based medicine misses exactly the people who most need outreach. PHM is proactive by design.",
+      "title": "Population Health Is About Who Is NOT in the Room"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Population health (Kindig & Stoddart, 2003) is the health outcomes of a group AND the distribution of those outcomes — making equity intrinsic to the concept.",
+        "It has three elements: health outcomes, the determinants producing them, and the policies/interventions linking the two.",
+        "The six determinant categories include social/economic/physical environment, behaviors, capacity, biology, early development, and access — only one is health care.",
+        "Most of what determines a population's health happens outside the clinic, so the field looks far beyond medical care.",
+        "The Triple Aim (Berwick et al., IHI, 2008) made population health a co-equal goal alongside patient experience and per capita cost.",
+        "Population health management (PHM) adds an operational management layer, acting on a defined, attributed population (a panel) an organization is accountable for.",
+        "PHM is proactive and whole-population — attending to patients who have not come in — and is powered by value-based care, which rewards preventing costly downstream events."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "A focus only on the average can hide large disparities — a population can look healthy on average while a subgroup experiences much worse outcomes. By including the distribution of outcomes in the very definition, Kindig and Stoddart made equity a core, intrinsic concern of population health, not an add-on. This is why population health and health equity are inseparable.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Because averages are mathematically impossible to compute for groups"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Because a population can have good average health while a subgroup suffers far worse outcomes — so distribution makes equity intrinsic to the concept"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Because distribution is only relevant to public health, not population health"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Because it lets organizations ignore high-risk patients"
+        }
+      ],
+      "question": "Why does the Kindig & Stoddart definition of population health emphasize \"the distribution of such outcomes within the group,\" not just average outcomes?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] What Is Population Health? (Kindig & Stoddart, AJPH 2003) — https://ajph.aphapublications.org/doi/full/10.2105/AJPH.93.3.380 — definition; three elements; six determinant categories"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] What Is Population Health? (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC1447747/ — distribution of outcomes; differentiation from public health"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] The Triple Aim: Care, Health, and Cost (IHI) — https://www.ihi.org/resources/publications/triple-aim-care-health-and-cost — Berwick, Nolan & Whittington 2008; three simultaneous aims"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Populations, Population Health, and the Evolution of Population Management (IHI) — https://www.ihi.org/library/blog/populations-population-health-and-evolution-population-management-making-sense-terminology — population health vs. population health management; defined populations"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] A Health System's Journey toward Better Population Health through Empanelment and Panel Management (PMC) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6023523/ — attribution, panels, proactive whole-population care"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] How to Improve Value-Based Care: Population Health Management Strategies (AMA) — https://www.ama-assn.org/practice-management/payment-delivery-models/how-improve-value-based-care-population-health — value-based care as the driver of PHM"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "population-health-management",
+  "order": 1,
+  "slug": {
+    "_type": "slug",
+    "current": "what-is-population-health"
+  },
+  "title": "What Is Population Health?"
+}

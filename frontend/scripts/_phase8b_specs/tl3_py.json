@@ -1,0 +1,28 @@
+{
+ "file": "frontend/content/_lessons_transformation_leadership.py",
+ "claim": "tl-building-the-pmo source: PMI stats conflated/misattributed; Kizer title; self-authored review presented as independent; NPfIT risk assessments and \u00a310-12.7bn",
+ "verdict": "MISATTRIBUTED",
+ "src": "PMI Pulse 2018 ($2T/yr), 2020 (11.4%), 2017 (38% strategy-aligned EPMO, original goals); Kizer & Dudley Annu Rev Public Health 2009 (Kizer co-author); Kizer = VA Under Secretary for Health 1994-99; PAC HC 294 (2013) \u00a39.8bn",
+ "pairs": [
+  [
+   "'PMI, Pulse of the Profession \u2014 roughly 11.4% of every dollar invested lost to poor project performance'),",
+   "'PMI, Pulse of the Profession 2018 \u2014 about $1M every 20 seconds; the 2020 edition put average waste at 11.4% of project investment'),"
+  ],
+  [
+   "('38%', 'More on-time/on-budget delivery', 'PMI \u2014 comparing organizations with an established PMO to those without one'),",
+   "('38%', 'More projects meet original goals', 'PMI, Pulse of the Profession 2017 \u2014 organizations whose enterprise PMO is aligned to strategy'),"
+  ],
+  [
+   "was appointed Director of the '\n        'Veterans Health Administration in 1994",
+   "was appointed the VA\\'s Under '\n        'Secretary for Health \u2014 head of the Veterans Health Administration \u2014 in 1994"
+  ],
+  [
+   "Published assessments of the transformation \u2014 including analyses in the '\n        'Annual Review of Public Health \u2014 found",
+   "Published assessments of the transformation \u2014 including a 2009 Annual '\n        'Review of Public Health review co-authored by Kizer himself \u2014 found"
+  ],
+  [
+   "combined with insufficient engagement of frontline clinicians during '\n        'design and risk assessments that were produced and then not acted on, to be the core drivers of the '\n        'programme\\'s collapse. It was stopped in 2011 after an estimated \u00a39.8 billion in direct government '\n        'spending, with independent retrospectives placing total realized costs, once write-offs are '\n        'included, as high as \u00a310\u201312.7 billion.'),",
+   "combined with insufficient engagement of frontline clinicians during '\n        'design, to be the core drivers of the programme\\'s collapse. It was dismantled in 2011; in 2013 '\n        'Parliament\\'s Public Accounts Committee put its estimated cost at \u00a39.8 billion and warned the final '\n        'bill was likely to be higher.'),"
+  ]
+ ]
+}

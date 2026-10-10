@@ -1,0 +1,72 @@
+{
+  "id": "700a42c5-0ba1-4b72-a743-8f782ecb500e",
+  "track_id": "fe4b9793-5a48-4265-bc50-50d3e28d3f41",
+  "pillar": "policy",
+  "order": 3,
+  "slug": "medicare-coverage-benefits",
+  "title": "Medicare Coverage: What's Covered, What's Not",
+  "summary": "Traditional Medicare has significant coverage gaps — no dental, vision, or hearing coverage, and substantial cost-sharing that can expose beneficiaries to catastrophic out-of-pocket costs. Understanding these gaps explains the Medigap and Medicare Advantage markets.",
+  "estimated_minutes": 22,
+  "objectives": [
+    {
+      "id": "obj-mcare-003-1",
+      "text": "Identify the major Part A and Part B cost-sharing requirements"
+    },
+    {
+      "id": "obj-mcare-003-2",
+      "text": "Explain what Medicare does NOT cover and why this matters"
+    },
+    {
+      "id": "obj-mcare-003-3",
+      "text": "Describe how Medigap (Medicare Supplement) insurance fills coverage gaps"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Traditional Medicare is not comprehensive insurance — it was designed as a safety net, not a full-coverage plan. Beneficiaries face substantial cost-sharing and significant coverage exclusions.",
+      "type": "text"
+    },
+    {
+      "text": "Part A Cost-Sharing",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "**Inpatient hospital deductible:** $1,632 per benefit period in 2024 (not annually — per hospital episode, which resets after 60 days out of the hospital).\n\n**Coinsurance:**\n- Days 1–60: $0 coinsurance after deductible\n- Days 61–90: $408/day coinsurance\n- Days 91+: $816/day (lifetime reserve days)\n- After 150 days: 100% on beneficiary\n\n**Skilled Nursing Facility:**\n- Days 1–20: $0 coinsurance (following qualifying 3-night hospital stay)\n- Days 21–100: $204/day\n- Day 101+: 100% on beneficiary",
+      "type": "text"
+    },
+    {
+      "text": "Part B Cost-Sharing",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "**Annual deductible:** $240 in 2024.\n\n**Coinsurance:** 20% of the Medicare-approved amount for most services — with no out-of-pocket maximum. A catastrophic illness can result in unbounded 20% coinsurance under traditional Medicare.\n\n**Premium:** $174.70/month in 2024 (higher for high-income beneficiaries under IRMAA).",
+      "type": "text"
+    },
+    {
+      "text": "What Medicare Doesn't Cover",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Traditional Medicare has notable exclusions:\n\n- **Dental care** — routine exams, cleanings, fillings, dentures\n- **Vision care** — routine eye exams, eyeglasses\n- **Hearing aids** — a major gap for elderly beneficiaries\n- **Long-term care** — Medicare covers only skilled nursing care following a qualifying hospital stay; custodial (nursing home) care is not covered\n- **Cosmetic procedures**\n- **Most care outside the U.S.**\n\nThese gaps are a primary driver of Medicare Advantage enrollment growth — most MA plans include dental, vision, and hearing benefits that traditional Medicare excludes.",
+      "type": "text"
+    },
+    {
+      "text": "Medigap Insurance",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "**Medigap** (Medicare Supplement) policies are standardized supplemental insurance plans sold by private insurers that fill Traditional Medicare's cost-sharing gaps. Ten standardized plans (A through N) are offered. The most popular plans (G and N) cover the Part B deductible and most coinsurance, effectively giving beneficiaries near-comprehensive coverage with a predictable premium.\n\nApproximately 23% of traditional Medicare beneficiaries have Medigap coverage. Medigap is not compatible with Medicare Advantage — beneficiaries must choose one model or the other.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:25:01.417598+00:00",
+  "updated_at": "2026-06-02T16:20:59.109306+00:00",
+  "sanity_slug": "medicare-coverage-benefits"
+}

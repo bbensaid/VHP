@@ -1,0 +1,9 @@
+{
+  "id": "2bd8371d-d5ed-4ae6-8c40-57f554625d70",
+  "quiz_id": "34f03ba5-a079-47b9-ab36-f63f67b176bd",
+  "order": 2,
+  "question_type": "single_choice",
+  "question": "What operating margin range is commonly cited as a sustainable target for a hospital?",
+  "explanation": "HFMA benchmarks suggest a healthy hospital should target a 2–4% operating margin. Margins below 1% signal financial distress, while margins consistently above 5% may indicate underinvestment in community benefit or capital.",
+  "points": null
+}

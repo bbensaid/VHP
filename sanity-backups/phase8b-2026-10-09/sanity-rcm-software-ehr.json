@@ -1,0 +1,519 @@
+{
+  "_createdAt": "2026-06-01T12:53:34Z",
+  "_id": "rcm-software-ehr",
+  "_rev": "rL4Cn5Sfo5Z8rzPmESPiCB",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T12:53:34Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Systems That Run the Cycle"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Every step covered so far — verification, coding, charge capture, claims, posting, AR, collections — runs on software. Modern revenue cycle management is impossible to do at scale by hand, so this module turns to the technology that powers it. The starting point is understanding the core systems and, critically, how they connect to the electronic health record (EHR)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two systems sit at the center. The EHR is the clinical system of record — where care is documented, orders are placed, and the data that drives coding and charges originates. The practice management system (PMS) — or its hospital equivalent, the patient accounting system — handles the financial side: scheduling, registration, billing, claims, payments, and AR. RCM software is the family of tools that manages the revenue functions, whether built into these systems or layered on top."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The single most important fact about this technology is the relationship between the clinical and financial systems. Because what is documented clinically determines what can be billed financially, the EHR and the billing system must share data cleanly. How well they integrate largely determines how well the whole revenue cycle works."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "RCM runs on software: the EHR (clinical system of record) and the practice management / patient accounting system (financial side). Because clinical documentation drives billing, how well these systems integrate largely determines revenue-cycle performance."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why EHR Integration Matters"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "When the EHR and billing systems are integrated, patient and clinical data flows continuously from documentation into billing without re-keying. A registration entered once populates the claim; a documented and coded service flows into charge capture automatically; a posted payment updates the patient's account everywhere at once. Integration eliminates the silos that traditionally separated clinical and financial workflows."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The payoff is concrete: less manual data entry, fewer transcription errors, more accurate CPT and charge capture, and faster claims. Recall that administrative complexity wastes an estimated $266 billion a year — much of it the friction of disconnected systems and manual re-entry. Integration attacks that waste directly by letting data move once and be used everywhere."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Technically, this integration is built on the interoperability standards from elsewhere in the HTR curriculum — HL7 and FHIR APIs, plus direct database connections — to create the continuous data flow between clinical documentation and billing. The same standards that move data between organizations also move it between the clinical and financial systems within one organization."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Patient and insurance data entered at registration populates downstream systems.",
+          "title": "Register once"
+        },
+        {
+          "_key": "step2",
+          "description": "Clinical documentation in the EHR flows into coding and charge capture.",
+          "title": "Document & code"
+        },
+        {
+          "_key": "step3",
+          "description": "Charges generate claims without manual re-entry.",
+          "title": "Bill automatically"
+        },
+        {
+          "_key": "step4",
+          "description": "Payments and balances update the patient account across the platform.",
+          "title": "Post & update"
+        }
+      ],
+      "title": "How Integrated Data Flows"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Big Platforms"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "In the hospital and large-health-system world, two integrated platforms dominate. Epic's revenue cycle module (Resolute, alongside its registration and scheduling tools) ties billing and coding workflows directly to the patient record, offering automated claim generation, coding assistance, denial management, and revenue reporting inside the same system clinicians use."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Oracle Health (formerly Cerner) offers comparable integrated revenue-cycle capabilities (its newer platform branded RevElate), spanning registration through claim submission and reimbursement, with the goal of improving coding accuracy, reducing denials, and improving revenue capture by keeping clinical and financial functions on one system."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For smaller practices, integrated EHR-plus-practice-management products from many vendors serve the same role on a smaller scale. The common thread is that these are enterprise systems designed so registration, clinical documentation, coding, billing, and AR all live in one connected platform — the \"single system of record\" model."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "It is worth knowing these names because the platform an organization runs shapes its entire RCM operation — its workflows, its reporting, its integration burden, and even which third-party tools it can bolt on."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Integrated vs. Best-of-Breed"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A fundamental strategic choice underlies all RCM technology: the integrated (enterprise) approach versus the best-of-breed approach. An integrated system is a single-vendor platform handling clinical and financial functions together. A best-of-breed strategy selects the leading specialized product for each function — a top EHR, a top RCM tool, a top denial-analytics platform — and integrates them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Each has clear trade-offs. Integrated systems offer seamless internal data flow, one vendor for support and updates, and minimal integration points — everything is designed to work together. But they typically offer less depth in any single function than a specialized standalone product. Best-of-breed offers superior depth in each area but introduces the significant challenge of interoperability: the specialized systems must be connected with robust HL7/FHIR interfaces, or the benefits dissolve into data silos."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The right choice depends on the organization. A large system with complex payer contracts and high claim volume may need the denial-analytics depth that a dedicated RCM platform provides, accepting the integration work. A smaller practice may be far better served by one integrated system that \"does most of this\" and connects cleanly to a few outside tools, avoiding the integration burden entirely."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Integrated (Enterprise)",
+        "points": [
+          "Single vendor, clinical + financial together",
+          "Seamless internal data flow",
+          "One source for support and updates",
+          "Less depth in any single function"
+        ]
+      },
+      "right": {
+        "label": "Best-of-Breed",
+        "points": [
+          "Leading specialized product per function",
+          "Superior depth (e.g., denial analytics)",
+          "Requires robust HL7/FHIR interfaces",
+          "Risk of data silos if poorly integrated"
+        ]
+      },
+      "title": "Integrated vs. Best-of-Breed"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Choosing and Living With RCM Technology"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The practical reality is that most organizations land somewhere on a spectrum between fully integrated and fully best-of-breed — typically a core integrated platform supplemented by a few specialized tools where the platform falls short (often denial management, contract management, or patient-payment tools). The integration question becomes \"how do I get a system that does most of this, then connects cleanly to the few outside tools I really need?\""
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Whatever the architecture, the success criterion is the same: clean, continuous data flow from registration through collection, with minimal manual re-entry and minimal silos. A beautiful denial-analytics tool that does not receive timely, accurate data from the EHR is useless; a perfectly integrated platform with weak denial logic still loses revenue. Technology serves the cycle, not the other way around."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This sets up the rest of the module. With the core systems and their integration understood, the next lessons examine the more advanced technology layered on top: predictive analytics and AI that mine this integrated data to prevent denials and predict payment, and the dashboards that turn all of it into the KPIs and benchmarks that manage the revenue cycle."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "A best-of-breed tool with cutting-edge features is worthless if it cannot get clean, timely data from the EHR — and a slick integrated platform with weak denial logic still loses revenue. When evaluating RCM technology, the quality of data flow between clinical and financial systems matters more than any single feature list.",
+      "title": "Integration Quality Beats Feature Lists"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Modern RCM runs on software: the EHR (clinical system of record) and the practice management / patient accounting system (financial side), with RCM tools managing revenue functions.",
+        "Because clinical documentation drives billing, clean integration between the EHR and billing systems largely determines revenue-cycle performance.",
+        "Integration creates continuous data flow — register once, document and code, bill automatically, post and update — eliminating re-keying and reducing errors.",
+        "EHR-RCM integration is built on HL7/FHIR APIs and direct database connections, attacking the ~$266B in administrative waste driven partly by disconnected systems.",
+        "Large platforms dominate hospital RCM: Epic (Resolute) and Oracle Health/Cerner (RevElate) tie billing directly to the patient record.",
+        "The core strategic choice is integrated (single-vendor, seamless but less deep) vs. best-of-breed (specialized depth but requiring robust interfaces and risking silos).",
+        "Most organizations blend the two; the success criterion is clean, continuous data flow from registration to collection — integration quality matters more than feature lists."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "An integrated, single-vendor platform gives seamless internal data flow, one source of support, and minimal integration points — but typically less depth in any single function. A best-of-breed strategy picks the leading specialized product for each function (gaining depth, e.g., in denial analytics) but must connect them with robust HL7/FHIR interfaces or risk data silos. The right choice depends on the organization's size, complexity, and claim volume.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Integrated systems are always cheaper and best-of-breed always more expensive"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Integrated systems offer seamless single-vendor data flow but less depth per function, while best-of-breed offers superior depth but requires robust interfaces and risks data silos"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Best-of-breed systems do not require any integration"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Integrated systems cannot handle clinical documentation"
+        }
+      ],
+      "question": "What is the central trade-off between an integrated (enterprise) RCM/EHR system and a best-of-breed approach?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Revenue Cycle Management (RCM) in Healthcare and Its Integration with EHRs (CPa Medical Billing) — https://cpamedicalbilling.com/revenue-cycle-management-rcm-in-healthcare-and-its-integration-with-ehrs/ — EHR as clinical system; integration with billing"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] EHR Integration and Its Role in Streamlining RCM (CPa Medical Billing) — https://cpamedicalbilling.com/ehr-integration-and-its-role-in-streamlining-rcm/ — continuous data flow via HL7/FHIR; eliminating clinical-financial silos; $266B admin waste"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] How to Integrate Epic with Medical Billing Software (Enter Health) — https://www.enter.health/post/how-to-integrate-epic-with-medical-billing-software — Epic Resolute revenue-cycle module; automated claim generation; denial management"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Cerner EHR Billing & RCM Services (MedCare MSO) — https://medcaremso.com/ehr-billing-service/cerner/ — Cerner/Oracle Health RevElate; PowerChart charge capture; practice management front-end"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Enterprise EHR vs. Best-of-Breed EHR: An Overview (Pharmacy Informatics Academy) — https://pharmacyinformaticsacademy.com/2025/12/18/enterprise-ehr-vs-best-of-breed-ehr-an-overview/ — integrated vs best-of-breed definitions and interoperability challenges"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Advancing Interoperability via EHR/EMR Integration with RCM (Riken Shah) — https://www.linkedin.com/pulse/advancing-interoperability-via-ehremr-integration-rcm-riken-shah-biiyf — data flow, functional-depth trade-offs, integration quality"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "revenue-cycle-management",
+  "order": 19,
+  "slug": {
+    "_type": "slug",
+    "current": "rcm-software-ehr"
+  },
+  "title": "RCM Software and EHR Integration"
+}

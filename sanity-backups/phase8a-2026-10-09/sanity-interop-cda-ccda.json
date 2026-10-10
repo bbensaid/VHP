@@ -1,0 +1,633 @@
+{
+  "_createdAt": "2026-05-29T02:48:56Z",
+  "_id": "interop-cda-ccda",
+  "_rev": "2zkDeD7zc2Ko2DfFHkT6E5",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T04:53:41Z",
+  "body": [
+    {
+      "_key": "s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "What Is the Clinical Document Architecture?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Clinical Document Architecture (CDA) is an HL7 document markup standard that uses XML to define the structure, encoding, and semantics of clinical documents for the purpose of exchange. HL7 CDA Release 1 was approved as an ANSI standard in November 2000, and the far more widely adopted Release 2 achieved ANSI approval in May 2005 and later became an ISO standard in 2009. CDA Release 2 remains the foundation of nearly every structured clinical document exchanged in the United States today — from hospital discharge summaries sent to primary care physicians, to the care summaries that flow between EHR systems at care transitions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A CDA document is divided into two logical regions: a header and a body. The header is the administrative and provenance layer — it identifies the patient, the author, the organization that created the document, the type of encounter, and the legal custodian. The body carries the clinical content itself. Inside the body, content is organized into nested sections, and each section must contain a narrative block — a chunk of human-readable text that any browser can render without special software. This design principle is fundamental to CDA's philosophy: a CDA document must always be renderable by a human, even if the machine-processable entries inside it cannot be decoded."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Below the narrative block sits an optional entries layer. Entries encode the same clinical facts in machine-readable form using coded vocabularies — SNOMED CT, LOINC, RxNorm, and ICD. A receiving system that cannot interpret the entries can safely ignore them and render only the narrative. A system that can parse them gains structured, computable data. This dual-layer design — human-readable narrative plus machine-processable entries — was innovative for its time and is what separates CDA documents from simple PDF attachments or plain-text discharge summaries. It is the architectural decision that made CDA durable enough to underpin two decades of US health information exchange policy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1an",
+      "_type": "analogyBlock",
+      "analogy": "Think of a CDA document like a legal contract with attached exhibits. The contract body (the narrative block) is written in plain English so any lawyer or judge can read it. The exhibits (the structured entries) contain the same information in a precise, machine-indexable format that automated systems can search and process. You can act on the contract using only the narrative — but the exhibits make automation possible.",
+      "concept": "CDA dual-layer architecture: human-readable narrative block plus optional machine-processable entries"
+    },
+    {
+      "_key": "s1sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "HL7 CDA Release 2 became an ANSI-approved standard in May 2005",
+          "label": "CDA R2 ANSI Approval",
+          "value": "2005"
+        },
+        {
+          "_key": "s2",
+          "context": "CDA R2 elevated to an ISO international standard four years later",
+          "label": "ISO Adoption",
+          "value": "2009"
+        },
+        {
+          "_key": "s3",
+          "context": "CDA uses XML as its markup language for all document content",
+          "label": "Encoding Format",
+          "value": "XML"
+        },
+        {
+          "_key": "s4",
+          "context": "Every CDA document has header, narrative body, and optional coded entries",
+          "label": "CDA Layers",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "_key": "s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "C-CDA: The Consolidated Implementation Guide"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The base CDA standard defines the document framework but deliberately leaves the clinical content largely unconstrained. This flexibility created a proliferation of competing, incompatible CDA implementation guides across US states, health systems, and specialty societies. By the early 2010s, a physician receiving a CDA document might find that allergies were coded in one section in one system, a completely different section in another, and not coded at all in a third. The Consolidated CDA — C-CDA — was HL7's answer to this fragmentation. The S&I Framework, coordinated by the Office of the National Coordinator for Health IT (ONC), drove the consolidation of seven previously separate CDA implementation guides into a single, nationally harmonized specification."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "C-CDA defines a specific set of document types, each with required sections, required coded entries, and vocabulary bindings. The core document types include: the Continuity of Care Document (CCD), which aggregates a patient's full longitudinal health record for transfer between providers; the Discharge Summary, limited to information generated at the point of hospital release; the Progress Note, used for ongoing encounter documentation in inpatient or outpatient settings; the History and Physical (H&P); the Consultation Note; the Operative Note; the Procedure Note; the Diagnostic Imaging Report; the Referral Note; the Transfer Summary; and the Care Plan. Each document type is governed by a template that specifies which sections are required, which are optional, and which data elements inside each section must be present in both narrative and coded form."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "C-CDA 2.1, published in 2015, has been the regulatory cornerstone of US interoperability requirements for nearly a decade and has seen only errata updates since its publication. C-CDA 3.0 merged the 2.1 guide with the C-CDA Companion Guide, added enhancement requests, and incorporated USCDI V4 alignment. However, the HL7 community moved quickly: C-CDA 4.0 has been published as the current normative version, and C-CDA 5.0 is in active ballot. The regulatory adoption of C-CDA 2.1 expired as a standalone certification basis on January 1, 2026, marking a transition to newer versions aligned with the US Core Data for Interoperability (USCDI) requirements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Base CDA (HL7 CDA R2)",
+        "points": [
+          "Defines the XML document framework",
+          "Header structure: patient, author, custodian",
+          "Mandatory human-readable narrative in every section",
+          "Optional coded entries layer",
+          "No constraints on which sections or vocabularies to use",
+          "Applicable globally, not US-specific"
+        ]
+      },
+      "right": {
+        "label": "C-CDA (Consolidated Implementation Guide)",
+        "points": [
+          "Restricts CDA to specific US document types (CCD, Discharge Summary, etc.)",
+          "Mandates required sections for each document type",
+          "Binds coded entries to LOINC, SNOMED CT, RxNorm, ICD",
+          "Aligns with USCDI data elements",
+          "Required for CEHRT certification and Meaningful Use compliance",
+          "Subject to ONC regulatory adoption via 45 CFR Part 170"
+        ]
+      },
+      "title": "CDA vs. C-CDA: What Each Standard Provides"
+    },
+    {
+      "_key": "s3h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3hs",
+          "_type": "span",
+          "marks": [],
+          "text": "CDA in Meaningful Use and CEHRT"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The C-CDA standard did not become ubiquitous through organic market adoption. It was mandated. Meaningful Use Stage 2, finalized by CMS and ONC in 2012, required eligible professionals and eligible hospitals to electronically exchange summary care records using C-CDA for every transition of care and referral where feasible. The specific regulatory hook was 45 CFR 170.314(b)(2), which required EHR technology to create, display, and transmit C-CDA documents as a precondition of certification. ONC's CEHRT (Certified EHR Technology) program embedded C-CDA compliance at the product level — no certification meant no Meaningful Use incentive payments."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2015 Edition certification criteria, published in the Federal Register in October 2015, extended and refined the C-CDA requirements. Under 45 CFR 170.315(b)(1), \"Transitions of Care,\" certified health IT had to both create and receive C-CDA documents. Receive was the harder requirement — it forced vendors to parse and incorporate incoming C-CDA data into their systems, not merely generate outbound documents. This bidirectional mandate pushed every major EHR vendor to invest in C-CDA production and consumption, creating the foundation for today's national clinical document exchange infrastructure through networks like CommonWell, Carequality, and the eHealth Exchange."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The role of ONC in C-CDA adoption cannot be overstated. ONC coordinated the original consolidation effort through the S&I Framework, funded testing infrastructure at the Standards Implementation and Testing Environment (SITE), and published Companion Guides to clarify ambiguous requirements in the base specification. ONC also funded the C-CDA Scorecard — a free online tool at site.healthit.gov that allows providers and vendors to submit a C-CDA document and receive an automated quality score highlighting deviations from best practices. The interplay between regulatory mandate and publicly funded tooling is what transformed C-CDA from a technical specification into infrastructure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "HL7 International publishes the Consolidated CDA implementation guide, consolidating seven prior guides into one US-realm standard.",
+          "title": "HL7 Publishes C-CDA"
+        },
+        {
+          "_key": "step2",
+          "description": "ONC references C-CDA in 45 CFR Part 170, making it an official content exchange standard for CEHRT certification.",
+          "title": "ONC Adopts via Rulemaking"
+        },
+        {
+          "_key": "step3",
+          "description": "CMS requires C-CDA-based transitions of care as a Meaningful Use Stage 2 core measure, tying compliance to EHR incentive payments.",
+          "title": "CMS Embeds in Meaningful Use"
+        },
+        {
+          "_key": "step4",
+          "description": "EHR vendors submit to ONC-authorized testing laboratories (ATLs) to prove their products create, display, and receive valid C-CDA documents.",
+          "title": "Vendors Certify Products"
+        },
+        {
+          "_key": "step5",
+          "description": "Health information networks (CommonWell, Carequality, eHealth Exchange) standardize on C-CDA as the document payload for nationwide clinical exchange.",
+          "title": "Networks Scale Exchange"
+        },
+        {
+          "_key": "step6",
+          "description": "ONC funds the SITE C-CDA Validator and Scorecard to support ongoing quality improvement beyond initial certification.",
+          "title": "ONC Publishes Tooling"
+        }
+      ],
+      "title": "The C-CDA Regulatory Pathway: From Standard to Mandate"
+    },
+    {
+      "_key": "s4h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The Transition to FHIR: C-CDA vs. FHIR Documents"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "HL7 FHIR has emerged as the preferred API framework for modern health data exchange, and it is reasonable to ask: does FHIR make C-CDA obsolete? The honest answer is nuanced. FHIR and C-CDA were designed for different primary use cases. C-CDA excels at producing a complete, human-readable clinical document — a discharge summary or care summary that can be rendered in a browser, signed by a physician, and attached to a patient record. FHIR excels at granular, API-driven retrieval of specific clinical resources: a patient's current medications, a single lab result, or a list of active problems. These are complementary, not competing, capabilities."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The FHIR community recognized this complementarity and created two bridges. The first is the C-CDA on FHIR Implementation Guide (currently version 1.2.0 STU 1, based on FHIR R4, with version 2.0.0 in continuous build development). This guide defines FHIR profiles on the Composition resource that map directly to C-CDA document types — CCD, Discharge Summary, Progress Note, and others. The second bridge is a wrapping approach: a C-CDA document can be referenced via a FHIR DocumentReference resource, allowing FHIR-native systems to discover and retrieve C-CDA documents without requiring full conversion. Both strategies support incremental migration rather than a hard cutover."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "C-CDA will not disappear quickly. Tens of thousands of EHR installations generate and consume C-CDA documents daily, and the regulatory infrastructure — CEHRT certification, Carequality, eHealth Exchange — remains organized around C-CDA payloads. Replacing it requires not just updating software but rewriting certification criteria, retesting vendors, renegotiating network participation agreements, and retraining implementation teams. Realistically, C-CDA will coexist with FHIR for at least a decade. The trajectory is clear — FHIR is the direction of travel — but the journey is long, and C-CDA remains the workhorse of clinical document exchange in the United States today."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "C-CDA",
+        "points": [
+          "Mature: 20+ years of production use",
+          "Human-readable narrative always present",
+          "Legally signable clinical document format",
+          "Supported by all major EHR vendors",
+          "Mandatory in CEHRT and network participation",
+          "Verbose XML; large file sizes for complete records",
+          "Complex schematron validation; steep learning curve"
+        ]
+      },
+      "right": {
+        "label": "FHIR Documents / APIs",
+        "points": [
+          "RESTful APIs enable granular data retrieval",
+          "JSON encoding: lighter and developer-friendly",
+          "Composable: fetch only the data elements needed",
+          "Strong support for patient-facing app development",
+          "C-CDA on FHIR IG bridges both worlds",
+          "Regulatory adoption still maturing vs. C-CDA",
+          "Less mature tooling for legal document signing"
+        ]
+      },
+      "title": "C-CDA vs. FHIR Documents: Strengths and Trade-offs"
+    },
+    {
+      "_key": "s4w",
+      "_type": "warningBlock",
+      "message": "FHIR APIs are the future direction for health data exchange, but C-CDA remains a current, active regulatory requirement for CEHRT certification and health information network participation. Implementers who abandon C-CDA competency prematurely risk compliance gaps. Build both capabilities — they solve different problems.",
+      "title": "Common Misconception: \"FHIR Replaces C-CDA Now\""
+    },
+    {
+      "_key": "s5h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Real-World C-CDA Implementation: Quality, Validation, and Common Pitfalls"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite two decades of standardization effort, production C-CDA documents frequently suffer from quality problems that impair interoperability. Research has documented that real-world system-generated C-CDA documents regularly contain data represented inconsistently or incompletely. Common failure patterns include: missing coded entries despite a narrative section being present; misuse of null flavors (the XML mechanism for representing unknown or unavailable data) to mask absent data rather than convey its true status; section templates applied to incorrect content types; date and time precision errors; and vocabulary codes that are valid in isolation but semantically incorrect in context. Studies have found that automated tools identify approximately thirteen times more issues than schematron validation alone — meaning that passing basic schema validation is a floor, not a ceiling."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The primary validation stack for C-CDA has three layers. First, XML schema validation confirms that the document is well-formed and matches the CDA XML schema. Second, schematron validation applies the business rule constraints defined in the C-CDA implementation guide — for example, that a CCD must contain a Problem section, or that every Medication Activity entry must include a route code. Third, the ONC SITE C-CDA Scorecard goes beyond schema and schematron to assess best practices: are LOINC codes used for lab results instead of local codes? Are date-times recorded with appropriate precision? Are section templates applied correctly? The Scorecard generates a quantitative grade and a detailed issue report that implementers can act on."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "In addition to the free SITE tooling, EHR vendors seeking CEHRT certification must submit to testing through ONC-Authorized Testing Laboratories (ATLs). The two largest ATLs in the US are Drummond Group and ICSA Labs. Both test C-CDA creation and reception as part of the 45 CFR 170.315(b)(1) Transitions of Care criterion. Real-world implementation teams also rely on the Lantana Group's Schematron Validator and the NIST CDA Validation tool hosted at cda-validation.nist.gov. A mature C-CDA implementation practice includes automated validation in the document generation pipeline — not just during certification testing — so that quality problems are caught before documents reach receiving systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5ex",
+      "_type": "exampleBlock",
+      "content": "When a patient is discharged from an acute care hospital, the hospital EHR must generate a C-CDA Discharge Summary or Continuity of Care Document. This document must contain — in both narrative and coded form — the discharge diagnosis (ICD-10-CM coded), the reconciled medication list (RxNorm coded), allergy list (SNOMED CT coded), pending follow-up instructions, and any referrals. The document is transmitted via Direct Secure Messaging or a network like Carequality to the receiving primary care provider's EHR. The receiving system must parse the C-CDA, reconcile the medication list against the patient's existing record, and flag any discrepancies for the physician to review. If the sending system used local codes instead of RxNorm, the receiving system cannot perform automated reconciliation — the document arrives but the computable value is lost.",
+      "title": "Transition of Care Use Case: Hospital Discharge to Primary Care"
+    },
+    {
+      "_key": "s5sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Automated best-practice tools identify roughly 13x more C-CDA problems than schematron validation alone",
+          "label": "More Issues Found by Advanced Tools",
+          "value": "13x"
+        },
+        {
+          "_key": "s2",
+          "context": "Schema → Schematron → Scorecard: each catches a different class of C-CDA quality problem",
+          "label": "Validation Layers",
+          "value": "3"
+        },
+        {
+          "_key": "s3",
+          "context": "C-CDA 2.1 (2015) was the dominant regulatory version for nearly a decade",
+          "label": "Baseline C-CDA Version",
+          "value": "2015"
+        },
+        {
+          "_key": "s4",
+          "context": "The C-CDA R2.1 Companion Guide Release 2 certification basis expired January 1, 2026",
+          "label": "C-CDA 2.1 Companion Guide Expiry",
+          "value": "2026"
+        }
+      ]
+    },
+    {
+      "_key": "s5call",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5calls",
+          "_type": "span",
+          "marks": [],
+          "text": "Practical rule: treat the ONC SITE C-CDA Scorecard as a continuous quality metric, not a one-time certification hurdle. Run your generated C-CDAs through the Scorecard regularly in your development and QA pipelines. A score below 70% signals real interoperability risk for receiving systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "tw1",
+      "_type": "takeawayBlock",
+      "points": [
+        "HL7 CDA Release 2, approved as an ANSI standard in May 2005 and as an ISO standard in 2009, defines an XML-based document format with a mandatory human-readable narrative and optional machine-processable coded entries.",
+        "C-CDA (Consolidated CDA) constrains the base CDA standard into specific US document types — CCD, Discharge Summary, Progress Note, Referral Note, and others — with required sections and vocabulary bindings.",
+        "Meaningful Use Stage 2 mandated C-CDA for transitions of care under 45 CFR 170.314(b)(2), making it a regulatory requirement embedded in every CEHRT-certified EHR system in the United States.",
+        "ONC's SITE platform provides a free C-CDA Validator and Scorecard. Automated best-practice tools catch approximately 13 times more quality issues than schematron validation alone.",
+        "C-CDA and FHIR solve different problems: C-CDA is optimized for complete, signable clinical documents; FHIR is optimized for granular, API-driven data access. The C-CDA on FHIR IG (v1.2.0 STU 1, FHIR R4) bridges both worlds.",
+        "C-CDA 4.0 is the current normative HL7 version, with 5.0 in active ballot. The regulatory basis for C-CDA 2.1 Companion Guide certification expired January 1, 2026, signaling an active standards transition.",
+        "The two largest ONC-Authorized Testing Laboratories — Drummond Group and ICSA Labs — test C-CDA creation and reception as part of CEHRT 170.315(b)(1) Transitions of Care certification.",
+        "C-CDA will coexist with FHIR for at least a decade. Implementers should build competency in both standards: C-CDA for document exchange compliance, FHIR APIs for modern application development."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "CDA's defining architectural innovation is its dual-layer design: every section must contain a human-readable narrative block that any browser can render, paired with an optional layer of machine-processable entries using standardized vocabularies like SNOMED CT and RxNorm. This means a receiving system can always present the document to a clinician, even if it cannot parse the coded entries — unlike a plain PDF, which has no computable data layer, or a pure structured format, which has no guaranteed human-readable rendering.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "CDA documents are encrypted using AES-256 by default"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "CDA documents contain a mandatory human-readable narrative block alongside optional machine-processable coded entries"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "CDA documents use JSON encoding rather than XML for structured data"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "CDA documents require a digital signature on every section before transmission"
+        }
+      ],
+      "question": "Which architectural feature distinguishes a CDA document from a plain PDF clinical document?"
+    },
+    {
+      "_key": "srch",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srchs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] HL7 CDA Release 2 — ANSI/HL7 CDA-R2 2005, ANSI webstore and HL7 Standards Product Brief — https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7 — Confirms CDA R2 ANSI approval in May 2005 and ISO adoption in 2009."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Consolidated CDA (C-CDA) v4.0.0 — HL7 International, IG Home Page — https://hl7.org/cda/us/ccda/ — Confirms C-CDA 4.0 as current published normative version; documents C-CDA 2.1 and 3.0 history and document types."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] 2015 Edition Health IT Certification Criteria — Federal Register, October 2015 — https://www.federalregister.gov/documents/2015/10/16/2015-25597/ — Confirms ONC's 45 CFR 170.315(b)(1) Transitions of Care requirement for C-CDA creation and reception in CEHRT."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] The C-CDA Scorecard Continues to Improve C-CDA Implementation — ONC Health IT Buzz Blog — https://www.healthit.gov/buzz-blog/interoperability/the-c-cda-scorecard-continues-to-improve-c-cda-implementation-across-health-it-settings — Describes the ONC SITE C-CDA Scorecard tool and its role in quality improvement beyond certification."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] C-CDA on FHIR v1.2.0 — HL7 International Implementation Guide — http://hl7.org/fhir/us/ccda/ — Confirms C-CDA on FHIR STU 1 (v1.2.0) based on FHIR R4; describes Composition-based FHIR profiles for C-CDA document types."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Interoperability Progress and Remaining Data Quality Barriers of Certified Health IT — PMC / National Library of Medicine — https://pmc.ncbi.nlm.nih.gov/articles/PMC6371305/ — Peer-reviewed research documenting common quality problems in production C-CDA documents and that automated tools find 13x more issues than schematron alone."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] eCFR 45 CFR 170.205 — Content Exchange Standards for Electronic Health Information — https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-D/part-170/subpart-B/section-170.205 — Regulatory reference for ONC adoption of C-CDA as a named content exchange standard; Companion Guide expiry January 1, 2026."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "interop-cda-ccda"
+  },
+  "title": "CDA and C-CDA: The Clinical Document Architecture Standard"
+}

@@ -1,0 +1,443 @@
+{
+  "_createdAt": "2026-05-31T07:18:38Z",
+  "_id": "hospital-financial-ratios",
+  "_rev": "2zkDeD7zc2Ko2DfFHo7n5H",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T07:18:38Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Raw Numbers Lie and Ratios Tell the Truth"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A hospital reporting $50 million in profit sounds healthy — until you learn it has $5 billion in revenue, making that \"huge\" profit a razor-thin 1% margin. Raw dollar figures are nearly meaningless in isolation because hospitals vary so enormously in size. Financial ratios solve this by expressing each number as a relationship — profit relative to revenue, cash relative to expenses, debt relative to capital — so that a 25-bed rural hospital and a 1,200-bed academic system can be compared on the same scale."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Ratios are also how the people who hold real power over hospitals make decisions. Bond rating agencies, lenders, boards, and state regulators all judge a hospital through ratios and against published benchmark medians, such as those compiled by the Healthcare Financial Management Association (HFMA). A hospital’s ratios determine its credit rating, its borrowing cost, and sometimes its survival. Learning to read them is learning the language in which a hospital’s fate is actually decided."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Hospital financial ratios are conventionally grouped into five categories: profitability, liquidity, capital structure, asset efficiency, and a catch-all \"other.\" Each category answers a different question. Together, they form a complete diagnostic — the financial equivalent of checking vital signs across multiple organ systems rather than taking a single temperature."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: A financial ratio expresses one financial figure as a proportion of another, neutralizing differences in size so hospitals can be compared to each other and to benchmark medians. Ratios fall into five families: profitability, liquidity, capital structure, asset efficiency, and other."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Recent national hospital operating-margin medians ran roughly 1–2% in 2024–2025 — profitable but very thin (HFMA / Fitch)",
+          "label": "Median Operating Margin",
+          "value": "~1–2%"
+        },
+        {
+          "_key": "s2",
+          "context": "Median days cash on hand reached roughly 215–220 days in 2024, a favorable liquidity cushion versus history (HFMA)",
+          "label": "Days Cash on Hand",
+          "value": "~215–220 days"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Profitability: Is the Hospital Earning a Surplus?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Profitability ratios measure whether an organization can produce a surplus of revenue over expenses. The two headline measures are operating margin and total margin. Operating margin is operating income divided by operating revenue — it isolates whether the core business of delivering care is sustainable. Total margin is the bottom line (including non-operating items like investment income) divided by total revenue. The gap between them reveals how much a hospital leans on investment returns rather than patient care to stay in the black."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The numbers are sobering. Recent medians put hospital operating margins around 1–2%, and Fitch reported its rated-credit median operating margin rising from roughly 0.2% in 2022 to about 1.1% in 2024, with EBITDA margin climbing from 7.3% to 8.6% over the same period. These are slim figures for organizations carrying enormous fixed costs. A 1–2% operating margin means that a modest shift in payer mix, a wage spike, or a soft quarter of volume can tip a hospital from surplus to loss."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2w1",
+      "_type": "warningBlock",
+      "message": "If a hospital’s total margin is strongly positive but its operating margin is near zero or negative, the institution is being kept afloat by investment income, not by patient care. That is a structurally fragile position, because investment returns are volatile and outside the hospital’s control.",
+      "title": "Operating Margin vs. Total Margin: Mind the Gap"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Liquidity: Can the Hospital Pay Its Bills?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Liquidity ratios measure the ability to meet short-term obligations, collect what is owed, and maintain a cash position. The most watched is days cash on hand (DCOH) — how many days the hospital could keep operating on existing cash if revenue stopped — calculated from cash and investments divided by average daily operating expenses (excluding depreciation). Recent medians around 215–220 days represent a strong cushion; a hospital below 50 days is in genuine danger."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two other liquidity measures matter. The current ratio (current assets divided by current liabilities) tests whether short-term obligations are covered; a value of 1.0 or higher means current assets are sufficient to pay current liabilities. Days in accounts receivable measures the average collection period — net patient receivables divided by average daily net patient revenue. A rising number is a warning: it means cash is trapped in unpaid claims, often signaling billing problems, denials, or payer slow-walking that starve operations of working capital."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3steps1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "How long could the hospital survive with no incoming revenue? Strong is roughly 150–220+ days.",
+          "title": "Days cash on hand"
+        },
+        {
+          "_key": "step2",
+          "description": "Are short-term assets enough to cover short-term debts? 1.0 or higher is the floor.",
+          "title": "Current ratio"
+        },
+        {
+          "_key": "step3",
+          "description": "How fast does the hospital collect? Lower is better; a rising trend signals trapped cash.",
+          "title": "Days in accounts receivable"
+        },
+        {
+          "_key": "step4",
+          "description": "How much cash backs the debt? Recent medians around 170–178% indicate flexibility.",
+          "title": "Cash-to-debt"
+        }
+      ],
+      "title": "The Liquidity Quick-Check"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Capital Structure and Asset Efficiency: Built to Last?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Capital structure ratios measure how a hospital’s assets are financed and its capacity to take on new debt — the questions a bond rating agency cares about most. Equity financing (total net assets divided by total assets) shows how much of the hospital is funded by its own resources versus debt; a higher value means more room to borrow. Debt service coverage measures whether the hospital generates enough cash to cover its debt payments (principal, interest, and leases); a ratio below 1.0 means it is not generating enough to meet obligations — a serious red flag for lenders."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Asset efficiency ratios relate revenue to the assets used to generate it, and one deserves special attention: average age of plant. Despite its name, it is a financial ratio, not a literal measurement — calculated as accumulated depreciation divided by annual depreciation expense. It approximates how \"old\" a hospital’s buildings and equipment are in financial terms. A rising average age of plant signals deferred investment and a looming need for capital: the hospital is running on aging infrastructure that will soon demand expensive replacement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "When Fitch or Moody’s rates a hospital’s bonds, no single ratio decides the grade. A strong analyst reads the set: an operating margin around 1–2%, days cash on hand near 200, cash-to-debt above 170%, debt service coverage comfortably above 1.0, and an average age of plant that is not creeping upward.\n\nA hospital strong on profitability but weak on liquidity, or flush with cash but carrying an aging plant and thin debt coverage, will be rated and priced accordingly. The rating then determines the interest rate the hospital pays to borrow — turning these ratios directly into millions of dollars of cost.",
+      "title": "How Rating Agencies Read These Ratios Together"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Using Ratios Wisely: Trends, Benchmarks, and Context"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A ratio in isolation is only a starting point; its meaning comes from comparison. Two comparisons matter most. First, benchmarking: how does the hospital compare to the median for similar hospitals, using sources like HFMA’s published ratio medians? A current ratio of 1.5 means little until you know peers run at 2.0. Second, trending: which direction is the ratio moving over several years? A days-cash-on-hand figure of 120 is reassuring if it rose from 80, and alarming if it fell from 200. The trajectory often matters more than the snapshot."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "Financial ratios are like a patient’s vital signs. No single vital — heart rate, blood pressure, temperature, oxygen — tells you whether someone is healthy; a clinician reads them as a set and watches how they change over time. A hospital with a great profitability \"pulse\" but a dangerously low liquidity \"blood pressure\" is no healthier than a patient with one perfect vital and one in crisis.",
+      "concept": "Reading financial ratios as a complete diagnostic"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Ratios also have limits that a careful analyst respects. They can be distorted by one-time events (a large gift, a lawsuit, an asset sale), by accounting choices, and by differences between hospital types — a critical-access rural hospital and an urban academic medical center should not be held to identical targets. Days cash on hand, in particular, does not capture access to lines of credit or the timing of large obligations, so even a favorable number can hide a coming squeeze. Ratios are a powerful lens, not a verdict."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Put together, the five categories give a hospital’s complete financial picture: Is it profitable (profitability)? Can it pay its bills (liquidity)? Is it financed sustainably and able to borrow (capital structure)? Is it using its assets efficiently and keeping them current (asset efficiency)? For everyone from a board member to a state regulator to a value-based-care strategist, fluency in these ratios is the difference between reacting to last year’s crisis and seeing next year’s coming."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "Financial ratios express one figure as a proportion of another, neutralizing size differences so hospitals can be compared to peers and to benchmark medians (e.g., HFMA), and they drive bond ratings, borrowing costs, and regulatory judgments.",
+        "Hospital ratios fall into five categories: profitability, liquidity, capital structure, asset efficiency, and other — each answering a different diagnostic question.",
+        "Operating margin (operating income ÷ operating revenue) isolates core care sustainability; total margin includes non-operating income — a large gap between them signals reliance on investment returns rather than patient care.",
+        "Recent operating-margin medians run roughly 1–2% (Fitch rated-credit median ~1.1% in 2024; EBITDA margin ~8.6%), leaving little cushion against shocks.",
+        "Key liquidity ratios are days cash on hand (recent medians ~215–220 days), the current ratio (≥1.0 floor), days in accounts receivable (lower is better), and cash-to-debt (~170–178%).",
+        "Capital structure ratios — equity financing and debt service coverage (a ratio below 1.0 means the hospital cannot cover its debt payments) — measure financing sustainability and borrowing capacity.",
+        "Average age of plant (accumulated depreciation ÷ depreciation expense) is a financial, not physical, measure; a rising value warns of deferred investment and a looming need for capital.",
+        "Ratios gain meaning only through benchmarking against peers and trending over time, and they have real limits — distorted by one-time events, accounting choices, and hospital-type differences — so they inform judgment rather than replace it."
+      ]
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] HFMA: \"Key Hospital Financial Statistics and Ratio Medians: Glossary of Formulas\" — https://www.hfma.org/finance-and-business-strategy/1113/ — standard definitions and formulas for hospital financial ratios and the medians analysts benchmark against."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Massachusetts CHIA: \"Financial Metric Formulas and Calculations\" — https://www.chiamass.gov/financial-metric-formulas-and-calculations — the five ratio categories (profitability, liquidity, capital structure, asset efficiency, other) and formulas including average age of plant and debt service coverage."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] HFMA: \"Hospital financial and revenue cycle benchmarks paint a complicated picture\" — https://www.hfma.org/finance-and-business-strategy/hospital-financial-and-revenue-cycle-benchmarks-paint-a-complicated-picture-heading-into-the-new-year/ — operating margin trends and days-cash-on-hand medians (~215–220 days), cash-to-debt ~170–178%."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] HFMA: \"The financial state of the not-for-profit hospital sector: key takeaways from the latest medians\" — https://www.hfma.org/finance-and-business-strategy/healthcare-business-trends/the-financial-state-of-the-not-for-profit-hospital-sector-key-takeaways-from-the-latest-medians/ — Fitch median operating margin ~0.2%→1.1% (2022–2024) and EBITDA margin 7.3%→8.6%."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] AHA Chartbook Glossary — https://www.aha.org/system/files/research/reports/tw/chartbook/2016/glossary.pdf/ — definitions of average age of plant and related hospital financial indicators."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Corporate Finance Institute: \"Debt Service Coverage Ratio\" — https://corporatefinanceinstitute.com/resources/commercial-lending/debt-service-coverage-ratio/ — DSCR definition; a ratio below 1.0 indicates insufficient cash to meet debt obligations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "hospital-finance",
+  "order": 3,
+  "slug": {
+    "_type": "slug",
+    "current": "hospital-financial-ratios"
+  },
+  "title": "Key Financial Ratios for Hospitals: Reading Health in Five Numbers"
+}

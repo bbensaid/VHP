@@ -1,0 +1,805 @@
+{
+  "_createdAt": "2026-09-19T04:08:09Z",
+  "_id": "academyModule-five-pillars-calibrate-for-the-gap-not-the-average",
+  "_rev": "cGE63aJqei6oB7VsSNsro1",
+  "_type": "academyModule",
+  "_updatedAt": "2026-09-19T04:08:09Z",
+  "body": [
+    {
+      "_key": "f782ca561ad4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "5ad9f70f7bab",
+          "_type": "span",
+          "marks": [],
+          "text": "The Optimization Trap: Averages Can Rise While Gaps Widen"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "7b961ed2fbbb",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "cb6ab9ee208b",
+          "_type": "span",
+          "marks": [],
+          "text": "A system that improves its average readmission rate, primary care access rate, or chronic disease control rate can be getting worse for its worst-served population at the same time. The average is a single number produced by summing outcomes across every subgroup and dividing by the total. It has no memory of who improved and who did not. A payment reform, a new technology deployment, or a clinical protocol can move the average up while the gap between the best-served and worst-served populations grows — and the published metric will still show success."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "05fe385bb16c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ff7297c779cb",
+          "_type": "span",
+          "marks": [],
+          "text": "This is not a hypothetical failure mode. It is the default failure mode of quality improvement, because most interventions are easiest to implement, adopt, and sustain in populations that already have the fewest structural barriers — reliable transportation, stable housing, broadband, insurance literacy, trust in the health system. An intervention rolled out uniformly will, absent a specific design choice to prevent it, produce its fastest gains exactly where the fewest gains were needed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "2d1988101f0e",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "9b31ae0af9d5",
+          "_type": "span",
+          "marks": [],
+          "text": "The five-pillar framework's sixth question — is it just? — exists to catch this failure mode before it reaches publication. It asks, for every policy, technology, economic design, clinical model, and operational change: who moved, and who did not?"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "53dc493ac997",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "f9136eb03f84",
+          "context": "Source: Vermont Department of Health, Health Equity Data Report, January 2025",
+          "label": "Vermont adults with a personal primary care provider, statewide vs. BIPOC adults — an 11-point gap concealed by the statewide figure",
+          "value": "91% vs. 80%"
+        },
+        {
+          "_key": "87d9bf3963c4",
+          "context": "Source: KFF, 2026",
+          "label": "US adults in the ACA Medicaid ‘coverage gap’ — too much income to qualify for Medicaid, too little for marketplace subsidies, in states that have not expanded Medicaid",
+          "value": "1.2–1.4M"
+        }
+      ]
+    },
+    {
+      "_key": "b7436f3b825c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "52871c69432d",
+          "_type": "span",
+          "marks": [],
+          "text": "Why This Is Not a Sixth Pillar"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "74709ea6fd9d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "3d0ad47c3d27",
+          "_type": "span",
+          "marks": [],
+          "text": "It would be easier to manage equity as a sixth pillar — a dedicated workstream with its own budget line, its own staff, its own initiatives, sitting alongside policy, technology, economics, clinical, and operations. It would also be a mistake, and it is the single most consequential design choice in how a health system organizes its equity work."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "48eae083bfb9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "07f2547bafd0",
+          "_type": "span",
+          "marks": [],
+          "text": "A sixth pillar competes with the other five for funding, attention, and organizational priority — and it reliably loses that competition when budgets tighten, because it is treated as an add-on to the “real” transformation work rather than as a property the real work must have. The Equity Imperative is not a competing workstream. It is a test applied to each of the five pillars on its own terms: does this policy design permit the outcome for every population it touches, not just the average one? Does this technology perform for the populations most likely to be poorly served by biased data? Does this economic design sustain the providers serving the highest-need populations, not just the lowest-cost ones? Does this clinical model work for patients without broadband, without transportation, without a native English speaker in the household? Can this operational change actually be executed in the community with the fewest resources to absorb its disruption?"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "b4ab0249c38c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ec72858373ac",
+          "_type": "span",
+          "marks": [],
+          "text": "Get this distinction wrong and the practical consequence is immediate: equity work becomes a report that documents disparities without institutional power to change the policy, technology, budget, clinical protocol, or operating plan that produced them. Get it right and equity becomes a design constraint on every decision the other five pillars make — which is the only way gaps actually close."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "75224d2db483",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "7b9c6cb06ec0",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Say This, Not That\n"
+        },
+        {
+          "_key": "c26d3e0d9bff",
+          "_type": "span",
+          "marks": [],
+          "text": "There are five pillars and one cross-cutting test, not six pillars. Equity is not ‘the equity pillar.’ It has its own two-lesson track here because it requires depth, not because it is a peer of policy, technology, economics, clinical, and operations — it is applied to each of them."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "4376a11b7087",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "225c80ed2286",
+          "_type": "span",
+          "marks": [],
+          "text": "The Justice Test, Applied to Each Pillar"
+        }
+      ],
+      "markDefs": [],
+      "style": "h4"
+    },
+    {
+      "_key": "485383fcc589",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "d9633bbf8c29",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Policy — is it permissible, and for whom? — "
+        },
+        {
+          "_key": "3902adf9b3fd",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk: uniform eligibility rules that look neutral on their face can leave a defined population out entirely. An estimated 1.2–1.4 million adults fall into the ACA ‘coverage gap’ in the roughly nine states that have not expanded Medicaid — too much income to qualify for Medicaid, too little to qualify for marketplace subsidies (KFF, 2026). → Opportunity: Vermont's Act 68 requires that hospital budget review (RBP) account for each hospital's community context, payer mix, and social risk factors rather than applying one uniform benchmark statewide."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ac0dd8555672",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "c9011665d651",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Technology — is it possible, and for whom does it work? — "
+        },
+        {
+          "_key": "ed376d83c3fe",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk: a clinical calculator embedded in the EHR can encode bias directly into a treatment decision. Before 2021, the standard eGFR kidney-function equation applied a race coefficient that produced systematically higher — less severe — estimated kidney function for Black patients, delaying transplant referral and specialist care. → Opportunity: the NKF-ASN Task Force's September 2021 recommendation adopted a race-free CKD-EPI creatinine equation, removing the coefficient from the calculation used nationwide."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "5bbe8b27ccb3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1a29445fcb0d",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Economics — is it sustainable, and for whom? — "
+        },
+        {
+          "_key": "9b5591192504",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk: a payment or scoring model that does not adjust for who a provider serves can penalize the providers doing the hardest work. Before 2017, Medicare Advantage Star Ratings did not adjust for enrollee socioeconomic status, systematically lowering scores for plans serving more dual-eligible and disabled beneficiaries. → Opportunity: CMS's Categorical Adjustment Index, in place since the 2017 Star Ratings, adds or subtracts up to 0.10–0.20 stars based on a contract's share of dual-eligible, low-income-subsidy, and disabled enrollees."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "851fe0b8bdd8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8728f512202a",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Clinical — is it effective, and for whom? — "
+        },
+        {
+          "_key": "1212f41cdeda",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk: a clinical decision tool can steer care away from patients before a clinician ever weighs in. The original VBAC (vaginal birth after cesarean) success calculator, published in 2007, used a race and ethnicity correction that systematically predicted lower success for Black and Hispanic patients — making clinicians less likely to offer a trial of labor. → Opportunity: the NICHD/MFMU Network's May 2021 calculator update removed race and ethnicity; predicted VBAC success no longer differs significantly by race."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "2debd1fff3e8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "cda63c36a1e9",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Operations — is it executable, and for whom? — "
+        },
+        {
+          "_key": "ff7af466424e",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk: consolidating inpatient services at regional hubs on a financial-sustainability timeline, without sequencing replacement access first, can leave an entire region without timely emergency care. → Opportunity: Vermont's Northeast Kingdom equity constraint requires EMS capacity, telehealth infrastructure, and community paramedicine investment to precede or accompany any reduction in inpatient services at North Country Hospital or Northeastern Vermont Regional Hospital."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "8ab743d5a332",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "81d734e547c3",
+          "_type": "span",
+          "marks": [],
+          "text": "Policy Pillar, in Depth: The Coverage Gap No One Designed on Purpose"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "b99e520a6cb0",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "557f760ac46e",
+          "_type": "span",
+          "marks": [],
+          "text": "The ACA Medicaid coverage gap is not evenly distributed. Texas alone accounts for roughly 42% of the people caught in it, and about 97% of the national total lives in the South, concentrated in the same states that declined Medicaid expansion. No policymaker set out to build a gap between two eligibility thresholds; it is the byproduct of a permissible, individually defensible state-level choice, repeated across nine or ten states, that in aggregate leaves over a million working-age adults with no affordable coverage option at all."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "8634873f00b9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "24cdcd4dec4d",
+          "_type": "span",
+          "marks": [],
+          "text": "This is the policy pillar's justice test in its cleanest form: a law can be permissible — states retain the constitutional right to decline Medicaid expansion — while still failing the equity test for the specific population it excludes. Permissibility and justice are different questions, and the five-pillar framework's first pillar answers only the first one."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "30fcab274945",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "be5c8fe3f640",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont expanded Medicaid and reports 97% overall coverage — a policy pillar pass at the state level. Yet Essex County, in the Northeast Kingdom, still runs an 8% uninsured rate, nearly three times the statewide average. Passing the aggregate test does not mean every county, or every population within a state, has passed it too."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "72470d5475b9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a9216415eee4",
+          "_type": "span",
+          "marks": [],
+          "text": "Technology Pillar, in Depth: When the Algorithm Is the Barrier"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "7338c6b26a92",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e02eaf7d5c4f",
+          "_type": "span",
+          "marks": [],
+          "text": "The eGFR race coefficient originated from population-level research suggesting Black patients had, on average, higher serum creatinine levels, and the equation adjusted for that by mathematically inflating the estimated kidney function reported for any patient coded as Black — regardless of that individual patient's actual physiology. The clinical consequence ran in one direction: patients whose true kidney function was worse than their eGFR reading suggested were referred for transplant evaluation and specialist nephrology care later than they should have been."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e38823dc7e39",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "f5f471c76ac5",
+          "_type": "span",
+          "marks": [],
+          "text": "The fix did not require inventing new technology. It required removing an assumption already embedded in a formula that labs and EHRs across the country had been running without examining it for two decades. That is the technology pillar's justice test in practice: not only “does the tool exist and function,” but “does the tool perform equally across every population it is applied to, or does it embed an assumption that only some patients pay for.”"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "cf88913edc7c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "c4398cee05fb",
+          "_type": "span",
+          "marks": [],
+          "text": "Removing the coefficient was not costless. Clinical laboratories had to re-implement the CKD-EPI 2021 race-free equation and manage a transition in which some patients' reported kidney function changed overnight — a reminder that correcting a biased technology tool is itself an operations and clinical-pillar problem, and that the five pillars interlock even when only one of them originally failed the test."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "47609ce74aec",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "9d1d52d4552f",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinical Pillar, in Depth: The Calculator That Predicted Away Access"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "8ec533af34ef",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "4c6726cdc1fa",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2007 VBAC success calculator, developed by the Maternal-Fetal Medicine Units Network, included a statistical correction for race and ethnicity built directly from its original research cohort. In practice, this meant a Black or Hispanic patient with an otherwise identical clinical profile to a white patient — same age, same prior deliveries, same indication for the earlier cesarean — received a lower predicted probability of a successful vaginal birth."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "101fe9d17fe6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "f99a5145b248",
+          "_type": "span",
+          "marks": [],
+          "text": "That predicted probability fed directly into a clinical conversation: a lower predicted success rate made clinicians less likely to offer a trial of labor at all, steering more Black and Hispanic patients toward repeat cesarean delivery — with its longer recovery, higher complication risk in future pregnancies, and higher cost — not because of their actual clinical presentation, but because of a coefficient attached to their race in a formula."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "532ae6fc9536",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "f8da13bbf078",
+          "_type": "span",
+          "marks": [],
+          "text": "NICHD and the MFMU Network released a race-free calculator in May 2021, and predicted VBAC success no longer differs significantly by race once the correction is removed. But removing the calculator's bias does not automatically undo years of a referral pattern shaped by it — which is why the book's own root-cause taxonomy treats trust and engagement as a separate barrier from clinical practice variation. Fixing the tool is necessary. It is not sufficient on its own."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "2b25f9095445",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "335d292f4642",
+          "_type": "span",
+          "marks": [],
+          "text": "Economics Pillar, in Depth: Scoring the Provider, Not Just the Outcome"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "8e9db8c9f058",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "b8bfc481b18b",
+          "_type": "span",
+          "marks": [],
+          "text": "Before 2017, Medicare Advantage Star Ratings scored every contract against the same bar regardless of who it served. A plan with a large share of dual-eligible, low-income-subsidy, or disabled enrollees — populations with, on average, more complex medication regimens, more social barriers to appointment attendance, and more difficulty meeting preventive-care benchmarks — was scored as though its enrollees looked like any other plan's. The plans doing the hardest work showed up with the lowest scores."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ad0096310359",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "01a226092061",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS's Categorical Adjustment Index, introduced with the 2017 Star Ratings, does not change what is measured. It changes what counts as a good score for a given enrollee mix, adding or subtracting up to 0.10–0.20 stars based on a contract's share of dual-eligible, low-income-subsidy, and disabled enrollees. That is the economics pillar's justice test working as designed: sustainability cannot be judged the same way for a provider serving a harder population as for one that is not, and a payment or scoring model that ignores the difference will always undercount the providers who most need accurate recognition."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a76d42d9007b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "5bfbb38f392c",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "The Pattern Across All Four\n"
+        },
+        {
+          "_key": "8837370686d4",
+          "_type": "span",
+          "marks": [],
+          "text": "Coverage gap, eGFR, VBAC calculator, Star Ratings — in every case, the harm was not visible in the aggregate number. Coverage looked fine at 97% statewide. Kidney function estimation looked like ordinary lab math. The VBAC calculator looked like evidence-based obstetrics. Star Ratings looked like an objective quality score. The gap was only visible once someone disaggregated by the population that bore it."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "277286f7bd9d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "d4a0bcc19255",
+          "_type": "span",
+          "marks": [],
+          "text": "Operations Pillar and the Northeast Kingdom Constraint"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "68fcd5eb0fef",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "f0bd3e30603c",
+          "_type": "span",
+          "marks": [],
+          "text": "The Northeast Kingdom — Caledonia, Essex, and Orleans counties — is Vermont's clearest and most severe equity priority: some of the lowest population densities in the eastern United States, unemployment above the state average, high disability rates, limited broadband, and the highest uninsurance rates in Vermont. North Country Hospital in Newport and Northeastern Vermont Regional Hospital in St. Johnsbury are among the state's most financially distressed facilities, and both are candidates for Tier 3 designation under the Oliver Wyman regionalization blueprint — meaning they may not be able to sustain full inpatient operations long term."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1e75ca278d9b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "485713117450",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's Agency of Human Services must be explicit, in its Statewide Strategic Plan, that the Northeast Kingdom is an equity priority that constrains the pace and structure of regionalization. The financial logic of consolidating services at hospitals in Burlington, Rutland, or Bennington cannot override the equity obligation to maintain emergency access in the most rural, most isolated communities in the state. This is a constraint on the operations pillar, not a footnote to it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "28425c321f8a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "c3375123e547",
+          "_type": "span",
+          "marks": [],
+          "text": "The constraint has a specific sequencing rule: investments in EMS capacity, telehealth infrastructure, and community paramedicine must precede or accompany any reduction in inpatient services — not follow it. Rural Emergency Hospital designation is a viable path precisely because it maintains 24/7 emergency access while eliminating unsustainable inpatient infrastructure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fbd36cddcdaa",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "d216ca1f3a36",
+          "_type": "span",
+          "marks": [],
+          "text": "The operations-pillar justice test, applied here, is concrete rather than abstract: after a given transformation, can a 70-year-old resident of Canaan having a heart attack at 2 a.m. still receive timely emergency care? Can a person with serious mental illness in Newport reach a CCBHC without a two-hour drive? Can a child in Lyndonville see a primary care provider within 14 days? Those three questions, not a statewide access percentage, are the pass/fail bar."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1e1ce83a15da",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "c1b7d56a59f5",
+          "context": "Source: AHS November 2025 Transformation Report; Vermont Rural Health Transformation Program Application",
+          "label": "Uninsured rate, Essex County (Northeast Kingdom) vs. statewide Vermont — nearly 3x",
+          "value": "8% vs. 3%"
+        },
+        {
+          "_key": "ee1c88ea0fe0",
+          "context": "Source: Vermont Department of Health",
+          "label": "Caledonia, Essex, and Orleans — the Northeast Kingdom, Vermont's highest-priority equity geography",
+          "value": "3 counties"
+        }
+      ]
+    },
+    {
+      "_key": "8967c8818196",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "153326f4e3e8",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Sequencing Is the Safeguard, Not a Slogan\n"
+        },
+        {
+          "_key": "eb3b1ec18b85",
+          "_type": "span",
+          "marks": [],
+          "text": "The equity constraint on Northeast Kingdom hospitals does not freeze them in place. It orders the steps. EMS, telehealth, and community paramedicine investment first, or at minimum concurrent — inpatient service reduction second, and only through a path like Rural Emergency Hospital designation that preserves 24/7 emergency access. Reverse that order and a financially rational consolidation becomes, in the book's own words, a catastrophic equity regression."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "462ab9dd4512",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "693370848fbb",
+          "_type": "span",
+          "marks": [],
+          "text": "Beyond Vermont: The Same Test, a Different Map"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "1aa24daac67d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "7be7af0f1dd6",
+          "_type": "span",
+          "marks": [],
+          "text": "The Northeast Kingdom's pattern — a population separated from timely emergency, behavioral health, and primary care by distance and provider shortage — is not unique to Vermont. It recurs as the defining rural equity challenge in the Mountain West, the rural South, Appalachia, and the Great Plains, and in a different geometry in underserved tribal health systems and dense urban cores, where fragmentation and capacity constraints replace distance as the access barrier."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "01f88ddb6b5e",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "d39dc664bd80",
+          "_type": "span",
+          "marks": [],
+          "text": "The diagnostic question travels intact across every one of those geographies: for a specific, named person in the underserved population, can they get the care they need within a clinically meaningful timeframe? Substitute the place name and the population, and the justice test still works — which is exactly why it belongs to all five pillars rather than to a separate equity workstream tied to one region's geography."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "0083f1a4df12",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a4d983dfc387",
+          "_type": "span",
+          "marks": [],
+          "text": "Applying the Test Yourself"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "0691061bc826",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "029f438f0ed0",
+          "_type": "span",
+          "marks": [],
+          "text": "Consider a hypothetical statewide diabetes-control initiative — used here only to illustrate the mechanism, not as a reported result — that raises the overall share of patients with controlled HbA1c from 68% to 75% over three years, a genuine seven-point aggregate gain. If that gain is concentrated entirely among commercially insured, urban patients, and the rate among rural Medicaid patients does not move, the reported aggregate success conceals a widened gap: two groups that started six points apart may now be fourteen points apart. Disaggregating the same data by insurance type and geography is the only way to see it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fdc452195849",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "0cd066375dc6",
+          "_type": "span",
+          "marks": [],
+          "text": "The test is the same five questions, asked with one addition each time: not just “is this policy permissible,” but permissible for whom, and who is excluded? Not just “is this technology possible,” but does it perform equally for the population most likely to be poorly represented in its training or reference data? Not just “is this economically sustainable,” but sustainable for the providers serving the hardest populations, not only the least complex ones? Not just “is this clinically effective,” but effective for patients without the resources the study population had? Not just “is this executable,” but executable without leaving the highest-need population until last?"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "057ce6531c42",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "687c302a6e47",
+          "_type": "span",
+          "marks": [],
+          "text": "Summary: One Test, Applied Five Times"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "92049c43ac9c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "279a976b2fb8",
+          "_type": "span",
+          "marks": [],
+          "text": "The Equity Imperative does not add a sixth question to the five-pillar framework's checklist. It multiplies each of the five existing questions by “for whom” — and it requires the answer to be checked against the worst-served subgroup, not the statewide average."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "7ae1ae7fe6ae",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "f302da2761da",
+          "_type": "span",
+          "marks": [],
+          "text": "Vermont's Northeast Kingdom, the eGFR calculator, the VBAC calculator, the Medicaid coverage gap, and the Star Ratings adjustment are five different pillars failing, or being fixed, in five different ways. The test that catches or corrects each one is the same test, asked five times."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "0131ce30df36",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a2b5bab2ed02",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "From the Book — Chapter 10\n"
+        },
+        {
+          "_key": "8fca796a20d4",
+          "_type": "span",
+          "marks": [],
+          "text": "Chapter 10 is the Equity Imperative in full — closing gaps rather than averaging them, with Vermont's own 11-point access gap as the anchor.\n\nRead it at /read/chapter-10."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    }
+  ],
+  "courseTitle": "Five Pillars, One Imperative",
+  "estimatedReadTime": 25,
+  "learningObjectives": [
+    "Explain why a rising system-wide average can coexist with a widening subgroup disparity, and identify disaggregation as the analytic move that exposes it.",
+    "State precisely why the Equity Imperative is a cross-cutting test applied to each of the five pillars, not a sixth pillar competing with them for budget and attention.",
+    "Apply the justice test to each of the five pillars using verified, named examples of the test failing and the test being designed in.",
+    "Explain how the Northeast Kingdom's equity status functions as a binding sequencing constraint — not a soft consideration — on Vermont's hospital regionalization."
+  ],
+  "level": "Intermediate",
+  "moduleNumber": 19,
+  "nextModuleSlug": "heroi-stratified-hedis-vbc-safeguards",
+  "pillar": "Equity",
+  "prevModuleSlug": "workforce-as-the-binding-constraint",
+  "slug": {
+    "_type": "slug",
+    "current": "calibrate-for-the-gap-not-the-average"
+  },
+  "summary": "An aggregate metric can improve while the gap between the best-served and worst-served population widens underneath it — because the average has no memory of who moved. This lesson applies that test to each of the five pillars in turn, using the Northeast Kingdom's equity constraint on Vermont's hospital regionalization as the book's own worked example.",
+  "title": "Calibrate for the Gap, Not the Average",
+  "totalModules": 24
+}

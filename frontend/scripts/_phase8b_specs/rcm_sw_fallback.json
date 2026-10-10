@@ -1,0 +1,33 @@
+{
+ "pairs": [
+  {
+   "old": " Organizations with fully integrated systems report 30\u201340% lower cost-to-collect ratios.",
+   "new": "",
+   "claim": "fallback: fully integrated systems report 30-40% lower cost-to-collect ratios",
+   "verdict": "UNVERIFIABLE",
+   "src": "No primary source for \"30-40% lower cost-to-collect\" with fully integrated systems (search 2026-10-09: only vendor case studies and a Black Book self-reported survey citing 27%; nothing matching 30-40%)",
+   "note": "sentence dropped"
+  },
+  {
+   "old": "denial tracking, and reporting (Waystar, Availity, Talksoft)",
+   "new": "denial tracking, and reporting (e.g., Waystar)",
+   "claim": "fallback concept: Talksoft and Availity listed as RCM platforms for AR/denial management",
+   "verdict": "MISATTRIBUTED",
+   "src": "Talksoft (RevSpring) is an appointment-reminder / patient-messaging product (advancedmd.com marketplace; RevSpring Talksoft sell sheet), not an AR/denial RCM platform; Availity is primarily a payer-provider clearinghouse/portal (covered by the Clearinghouse entry)",
+   "note": ""
+  }
+ ],
+ "supa": [
+  {
+   "table": "lessons",
+   "col": "content_blocks",
+   "ids": [
+    "8e3c543b-78fa-4685-958a-8c38733b09d0"
+   ]
+  }
+ ],
+ "files": [
+  "frontend/content/course_revenue_cycle.json",
+  "frontend/content/courses_tier3.json"
+ ]
+}

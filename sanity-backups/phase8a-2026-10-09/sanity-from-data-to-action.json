@@ -1,0 +1,509 @@
+{
+  "_createdAt": "2026-06-02T13:39:02Z",
+  "_id": "from-data-to-action",
+  "_rev": "HBG7Yo3w4ORG4xxOz5yS9b",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T13:39:02Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Data Is Necessary but Not Sufficient"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The previous lesson made the case for high-quality REaL data and stratified measurement. But producing a beautiful dashboard that displays a disparity is not the same as closing it. The history of health equity work is littered with organizations that mistook measurement for progress — that invested heavily in identifying gaps and then stalled, treating the dashboard as a destination rather than a starting point."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Health systems that actually reduce disparities share a recognizable pattern. They move deliberately from data (the gap exists and here is its size) to root-cause analysis (why does it exist) to targeted intervention (a specific change aimed at the specific cause) to accountability (someone owns the result and is measured on it). Each step is necessary; skipping any one is where most efforts fail."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson is about that pipeline: how to turn a stratified disparity finding into a structured equity action plan, choose interventions that fit the root cause, set measurable targets, and build the organizational accountability that determines whether the gap actually narrows. The tools are not exotic — they are ordinary quality improvement methods, applied with an equity lens."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Identifying a disparity is the beginning, not the end. The systems that close gaps move from data to root-cause analysis to targeted intervention to accountability — and most failures happen when one of those steps is skipped."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Equity Action Cycle"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A practical way to structure disparity reduction is as a cycle that mirrors standard quality improvement but begins with stratified data. The first step is to identify and quantify the gap: take a meaningful measure — say, postpartum follow-up visits — stratify it by race, ethnicity, and language, and name the size of the gap between the highest- and lowest-performing groups. A precise gap (\"an 18-point Black-white difference\") is far more actionable than a vague concern."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The second and most-often-skipped step is root-cause analysis. A gap in postpartum follow-up could stem from scheduling barriers, transportation, appointment availability, language-discordant communication, or distrust — and each cause implies a completely different intervention. Disaggregating the gap further (Where does it appear? At scheduling? In no-show rates? In which clinics?) tells you what is actually broken. Choosing an intervention before understanding the cause is how organizations waste effort on changes that do not move the gap."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Only then does the cycle proceed to designing a targeted intervention, setting a specific time-bound improvement target, and measuring against it on a regular cadence — iterating if the gap is not closing. This is deliberately the discipline of quality improvement: treat a disparity exactly like any other quality defect, with a named owner, a measurable target, and a feedback loop, rather than as a values aspiration without a mechanism."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Stratify a meaningful measure by race, ethnicity, and language; name the size of the gap between the best- and worst-performing groups.",
+          "title": "Identify and quantify the gap"
+        },
+        {
+          "_key": "step2",
+          "description": "Disaggregate further to find where the gap originates — scheduling, transportation, language, no-shows, provider distribution.",
+          "title": "Analyze the root cause"
+        },
+        {
+          "_key": "step3",
+          "description": "Choose an evidence-based change that fits the specific cause (e.g., CHW outreach, language-concordant scheduling, reminders in preferred language).",
+          "title": "Design a targeted intervention"
+        },
+        {
+          "_key": "step4",
+          "description": "For example: reduce the Black-white postpartum follow-up gap from 18 to 8 points within 18 months.",
+          "title": "Set a measurable, time-bound target"
+        },
+        {
+          "_key": "step5",
+          "description": "Track against the target on a regular cadence; if the gap is not closing, revisit the root cause and adjust.",
+          "title": "Measure, iterate, and sustain"
+        }
+      ],
+      "title": "The Equity Action Cycle"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Choosing Interventions That Fit the Cause"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The reason root-cause analysis matters so much is that interventions are not interchangeable. An intervention that fixes a transportation barrier does nothing for a gap driven by language discordance, and vice versa. The art of disparity reduction is matching a specific, evidence-based change to the specific cause the analysis revealed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The toolkit is well established. For access and follow-up gaps: community health worker outreach to the affected population, reminder calls and messages in the patient's preferred language, same-day or extended-hours appointments, and transportation support. For communication gaps: professional interpreter services and language-concordant scheduling and care. For trust gaps: partnership with trusted community organizations and culturally concordant staff. Each maps to a category of root cause."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "A critical design principle is to target the intervention to the gap population without stigmatizing them. Disparity reduction often means giving more — more outreach, more support — to the group that is behind, which is exactly the equity-over-equality logic from the start of this course. Universal interventions (a change applied to everyone) sometimes widen gaps, because the already-advantaged take them up faster; targeted interventions aimed at the lagging group are usually what actually closes a disparity."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "Mass General Brigham used stratified data to identify clear inequities in its own care: lower colorectal cancer screening rates among patients of color and patients with limited English proficiency, and racial and language disparities across diabetes outcome measures.\nRather than stopping at the finding, its Chief Medical Officer for Health Equity organized targeted responses — culturally and linguistically tailored screening-awareness campaigns, mobile Community Care Vans bringing screenings and chronic-disease services into underserved neighborhoods, and equity goals embedded in its strategic plan. It illustrates the full pipeline: stratify, find the gap, analyze who is missed, and deploy interventions aimed at that population.",
+      "title": "Mass General Brigham — Targeted Disparity Reduction"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Disparity Dashboards: Making Gaps Visible and Owned"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The operational home for this work is increasingly the disparity dashboard — a tool that displays key quality and outcome measures stratified by race, ethnicity, language, and other equity-relevant factors, in a form leaders and frontline teams can act on. A 2023 framework published in The Lancet Digital Health evaluated the literature on disparity dashboards and laid out principles for using them to drive improvement rather than just display data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A good disparity dashboard does more than show gaps; it assigns them. It makes a specific gap visible to a specific owner with a specific target, and it tracks movement over time so that progress (or its absence) is unambiguous. The difference between a dashboard that drives change and one that gathers dust is whether the numbers on it are tied to accountable owners and time-bound goals — the same discipline as any effective performance management."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashboards also surface the aggregate trap in real time. By always showing measures stratified rather than in aggregate, they prevent the comfortable illusion that a good overall number means equitable care. A clinic that sees its colorectal screening gap on the dashboard every month cannot un-see it — which is precisely the point."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Displays measures by race, ethnicity, language — not just aggregate, per Lancet Digital Health framework",
+          "label": "Core feature of a disparity dashboard",
+          "value": "Stratified"
+        },
+        {
+          "_key": "s2",
+          "context": "Each gap tied to an accountable owner and a time-bound target",
+          "label": "What turns a dashboard into action",
+          "value": "Named owner"
+        },
+        {
+          "_key": "s3",
+          "context": "Tracking movement makes progress or stagnation unambiguous",
+          "label": "How progress is judged",
+          "value": "Over time"
+        },
+        {
+          "_key": "s4",
+          "context": "Tracking gaps at the executive level drives resource allocation, per NAM",
+          "label": "Where equity measures gain traction",
+          "value": "Executive level"
+        }
+      ]
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Accountability: The Factor That Separates Progress From Stagnation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Across the literature on health systems that make measurable equity progress, one factor recurs above all others: accountability tied to leadership. Systems that close gaps consistently link senior-leader performance goals — and, increasingly, compensation — to measurable equity outcomes. When the CEO's and chief medical officer's reviews include a specific equity target, the organization predictably allocates resources, attention, and urgency to meeting it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The National Academy of Medicine has been explicit on this point: holding the CEO accountable against clear, quantifiable equity goals is described as an essential governance duty, and modifying executive compensation so that a meaningful portion is tied to equity metrics is a key lever. This is not symbolic. Compensation and performance review are how organizations signal what genuinely matters, and equity work that lacks that signal tends to remain a values statement that competes — and loses — against everything that is measured and rewarded."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The contrast is stark and well documented. Organizations that treat equity as a values commitment without accountability rarely produce measurable improvement; organizations that wire it into goals, dashboards, and compensation do. The lesson for anyone doing this work is that the technical pipeline — data, root cause, intervention, target — only delivers when it sits inside an accountability structure that makes closing the gap someone's actual job."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "A published equity statement, a diversity committee, and a dashboard are not enough on their own. The evidence is consistent: measurable disparity reduction requires tying specific, quantifiable equity goals to senior-leadership performance and compensation. Without that accountability, equity work competes against everything that is actually measured and rewarded — and usually loses.",
+      "title": "Values statements without accountability rarely close gaps"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Identifying a disparity is the start, not the finish; systems that close gaps move from data to root-cause analysis to targeted intervention to accountability.",
+        "The equity action cycle quantifies the gap, analyzes its root cause, designs a fitting intervention, sets a time-bound target, and iterates — ordinary QI with an equity lens.",
+        "Root-cause analysis is the most-often-skipped and most important step: interventions are not interchangeable, and the cause determines the right fix.",
+        "Targeted interventions aimed at the lagging group usually close gaps; universal changes can even widen them when the advantaged take them up faster.",
+        "Mass General Brigham used stratified data to find screening and diabetes disparities, then deployed tailored campaigns and mobile services to the affected populations.",
+        "Disparity dashboards drive change only when each gap is tied to a named owner, a time-bound target, and tracked over time — at the executive level.",
+        "The factor that most separates progress from stagnation is accountability: tying senior-leadership goals and compensation to measurable equity outcomes (per NAM)."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "While data and dashboards are necessary, the recurring differentiator in the literature is accountability tied to leadership. Systems that close gaps link senior-leader goals — and increasingly compensation — to measurable equity outcomes. The National Academy of Medicine frames holding leaders accountable against quantifiable equity goals as an essential governance duty; without it, equity work tends to remain an unrewarded values statement.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Having the most sophisticated data dashboards and analytics, regardless of how they are used"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Tying senior-leadership performance goals and compensation to measurable equity outcomes"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Receiving dedicated external funding earmarked for equity programs"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Serving a majority-minority patient population that creates urgency"
+        }
+      ],
+      "question": "Across the evidence, what most distinguishes health systems that make measurable equity progress from those that stall?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] National Academy of Medicine — \"An Equity Agenda for the Field of Health Care Quality Improvement\" — https://nam.edu/perspectives/an-equity-agenda-for-the-field-of-health-care-quality-improvement/ — tying executive compensation and CEO accountability to quantifiable equity goals."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Disparity dashboards: an evaluation of the literature and framework for health equity improvement, The Lancet Digital Health (2023) — https://www.thelancet.com/journals/landig/article/PIIS2589-7500(23)00150-4/fulltext — framework for using stratified dashboards to drive disparity reduction."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Mass General Brigham — Health Equity Strategic Plan and disparity-reduction initiatives — https://www.massgeneralbrigham.org/en/about/advancing-care/health-equity-community-health — stratified identification of colorectal screening and diabetes disparities and targeted interventions (campaigns, Community Care Vans)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] \"Measure what matters: health equity tracking and measurement practices across US healthcare systems,\" PMC — https://pmc.ncbi.nlm.nih.gov/articles/PMC12094744/ — executive-level tracking and accountability as drivers of equity measurement and improvement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Institute for Healthcare Improvement — \"Achieving Health Equity: A Guide for Health Care Organizations\" — https://www.ihi.org/resources/Pages/IHIWhitePapers/Achieving-Health-Equity.aspx — framework treating disparity reduction as a quality improvement discipline with named owners and targets."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "health-equity-sdoh",
+  "order": 9,
+  "slug": {
+    "_type": "slug",
+    "current": "from-data-to-action"
+  },
+  "title": "From Disparity Data to Equity Action Plans"
+}

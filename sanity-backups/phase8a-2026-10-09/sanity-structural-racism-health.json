@@ -1,0 +1,509 @@
+{
+  "_createdAt": "2026-06-02T12:31:13Z",
+  "_id": "structural-racism-health",
+  "_rev": "IOfxRsA0kr16lzZkVDscMT",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T12:31:13Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Beyond Individual Prejudice"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "When most people hear the word \"racism,\" they picture individual bigotry — a specific person holding and acting on explicit prejudice. That is interpersonal racism, and it is real. But it is not the main engine of health disparities. Structural racism refers to the totality of ways in which societies foster discrimination through mutually reinforcing systems — housing, education, employment, criminal justice, credit, and health care — that systematically advantage some groups and disadvantage others, often with no individual intending harm."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The distinction is not academic. If health disparities were caused mainly by a handful of prejudiced individuals, the solution would be to identify and remove those individuals. But structural racism operates through ordinary, \"race-neutral\" rules and the accumulated weight of historical policy. A mortgage map drawn in 1937, a school funded by local property taxes, a highway routed through a particular neighborhood — none of these requires a bigot in the room to produce racially patterned harm decades later."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For the health workforce, this reframing changes what counts as the problem and what counts as a solution. Good intentions and personal fairness are necessary but nowhere near sufficient. Reducing disparities requires examining the systems — admission criteria, algorithms, referral patterns, neighborhood investment — that produce unequal outcomes regardless of anyone's intent."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Structural racism is produced by interlocking systems and historical policy, not primarily by individual prejudice. That is why personal good intentions, while necessary, cannot by themselves close health gaps."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Redlining: A Policy Whose Maps Still Predict Health"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "In 1933, during the Great Depression, Congress created the Home Owners' Loan Corporation (HOLC) to refinance mortgages and stem foreclosures. Beginning in 1935, as part of its City Survey project (which ran through 1940), the HOLC produced color-coded \"residential security maps\" of more than 200 cities, grading neighborhoods for lending risk: A (\"Best,\" outlined green), B (\"Still Desirable,\" blue), C (\"Declining,\" yellow), and D (\"Hazardous,\" outlined red)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The grading was explicitly racial. Neighborhoods with Black residents — and often any non-white or immigrant population — were routinely marked red and deemed hazardous for lending, regardless of housing quality. Being \"redlined\" meant residents could not obtain the mortgages that built intergenerational wealth for white families in the green and blue zones. The maps codified and accelerated residential segregation and disinvestment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The remarkable and disturbing finding of modern research is how well those 1930s maps still predict health today, more than 80 years later. Studies overlaying HOLC grades on current health data find that formerly redlined neighborhoods have lower life expectancy and higher rates of asthma, diabetes, hypertension, kidney disease, and poor mental health. The mechanism runs through concentrated poverty, environmental hazard siting, lack of green space, and chronic stress — the durable physical legacy of a discriminatory credit policy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex1",
+      "_type": "exampleBlock",
+      "content": "Researchers have linked HOLC grades to modern outcomes across many US cities. One national analysis found life expectancy roughly 3.6 years lower on average in historically redlined (grade D) communities versus the highest-graded (grade A) communities, with one study measuring an average drop from about 80.5 years in grade-A tracts to 75.7 years in grade-D tracts.\nAsthma is a striking marker: prevalence rose from about 8.6% in grade-A tracts to 10.7% in grade-D tracts, and redlined neighborhoods show elevated rates of asthma-related emergency department visits. The maps were drawn for credit, but they ended up describing who breathes clean air and who lives longest.",
+      "title": "HOLC Redlining and Present-Day Health"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Structure Becomes Biology"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A reasonable question is how a policy from the 1930s, long since formally abolished, can still register in someone's blood pressure or birth weight today. The answer is that structural disadvantage operates through concrete, measurable pathways — it does not require ongoing intentional discrimination to keep producing harm."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Wealth is the clearest channel. Home equity is the primary way American families build and pass on wealth; denying mortgages to Black families for decades produced a racial wealth gap that persists today and shapes everything downstream — the quality of schools a family can access, the neighborhood they can afford, the financial cushion they have for a health emergency. Environmental exposure is another: redlined and disinvested neighborhoods were disproportionately chosen as sites for highways, industrial facilities, and waste — concentrating air pollution that drives asthma and cardiovascular disease."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Chronic stress is the third pathway, and it connects structural racism back to the social gradient. The physiological wear of living with discrimination, economic precarity, and unsafe environments — sometimes described as \"weathering\" — accelerates biological aging and contributes to hypertension, preterm birth, and other outcomes. The structure, in other words, gets under the skin."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Redlining and segregation deny credit, concentrate one group in disinvested areas, and block wealth-building.",
+          "title": "Discriminatory policy"
+        },
+        {
+          "_key": "step2",
+          "description": "Lower wealth and income mean worse housing, under-resourced schools, and less financial cushion for emergencies.",
+          "title": "Material deprivation"
+        },
+        {
+          "_key": "step3",
+          "description": "Disinvested neighborhoods are disproportionately sited near pollution, heat, and hazards that drive asthma and cardiovascular disease.",
+          "title": "Environmental exposure"
+        },
+        {
+          "_key": "step4",
+          "description": "Cumulative stress from discrimination and precarity dysregulates the body, contributing to hypertension and preterm birth.",
+          "title": "Chronic stress (\"weathering\")"
+        },
+        {
+          "_key": "step5",
+          "description": "The result is lower life expectancy and higher chronic disease — observable in the same neighborhoods the maps marked red.",
+          "title": "Measurable health disparity"
+        }
+      ],
+      "title": "Pathways From Policy to Health Outcome"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Bias Inside the Clinic: The Evidence"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Structural racism does not stop at the hospital door. A large body of research documents racial disparities in clinical care — in pain management, diagnostic workups, and treatment recommendations — that persist after controlling for clinical variables, insurance, and disease severity. These are not usually the product of conscious prejudice. They reflect unconscious associations and, in some cases, outright false beliefs that clinicians absorb from the same culture as everyone else."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most cited evidence is a 2016 study by Hoffman and colleagues, published in the Proceedings of the National Academy of Sciences. The researchers surveyed white medical students and residents about false beliefs regarding biological differences between Black and white people — for example, the false claim that Black people's skin is thicker or their nerve endings less sensitive. Half of the sample endorsed at least one such false belief. Those who did rated a Black patient's pain as lower than an identical white patient's and made less accurate treatment recommendations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The finding is sobering precisely because the participants were trainees in good standing at US medical schools, not extremists. It demonstrates that the inputs to clinical decisions — pain ratings, perceived credibility, presumed risk — can be racially skewed by beliefs the clinician may not even know they hold. This is why individual goodwill is not enough, and why system-level safeguards (standardized protocols, decision support, bias training, and stratified outcome monitoring) matter."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Half endorsed at least one false biological difference between Black and white people (Hoffman et al., 2016 PNAS)",
+          "label": "Med students/residents endorsing a false belief",
+          "value": "~50%"
+        },
+        {
+          "_key": "s2",
+          "context": "About 70% of white laypeople endorsed at least one such false belief in the same study",
+          "label": "Laypeople endorsing a false belief",
+          "value": "~70%"
+        },
+        {
+          "_key": "s3",
+          "context": "Lower in historically redlined (grade D) vs grade-A communities, national analysis",
+          "label": "Life expectancy gap by HOLC grade",
+          "value": "3.6 yrs"
+        },
+        {
+          "_key": "s4",
+          "context": "Across HOLC grades, per redlining-and-asthma research (AJRCCM)",
+          "label": "Asthma prevalence, grade A to grade D",
+          "value": "8.6% to 10.7%"
+        }
+      ]
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What This Means for the Health Workforce"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Recognizing structural racism reframes the job of reducing disparities. It is not enough to ask clinicians to be kind and fair, though they should be. The leverage points are systemic: where a health system invests, which neighborhoods it serves and how, which algorithms it deploys, how it collects and stratifies data, and whether it audits its own care for racially patterned gaps."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "At the individual level, the evidence on implicit bias points toward humility and structure rather than self-congratulation. No clinician is immune to the unconscious associations documented in the research, so the protective measures are procedural: standardized pain protocols that reduce discretion in skewed directions, second looks on referral decisions, and decision support that surfaces guideline-concordant care regardless of who the patient is."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "At the organizational level, the redlining evidence argues for treating place as a clinical variable. A patient's ZIP code carries the accumulated history of housing policy and environmental exposure; a system serious about equity uses that information to target outreach, screening, and community investment where structural disadvantage is concentrated — rather than treating every patient as if they started from the same line."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "Awareness of unconscious bias is a starting point, not a solution. Studies show one-off implicit bias trainings rarely change behavior on their own. Durable change comes from pairing awareness with structural safeguards — standardized protocols, decision support, accountability for stratified outcomes — that constrain how much individual discretion can drift in a biased direction.",
+      "title": "Implicit bias training alone is not a fix"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Structural racism works through interlocking systems and historical policy that disadvantage some groups regardless of any individual's intent — it is distinct from interpersonal prejudice.",
+        "The HOLC redlining maps (1935-1940) graded neighborhoods for credit, marking Black areas \"hazardous\" and denying the mortgages that built intergenerational wealth.",
+        "Those 1930s maps still predict health: redlined neighborhoods show ~3.6 years lower life expectancy and higher asthma, diabetes, and hypertension more than 80 years later.",
+        "Structure becomes biology through wealth deprivation, concentrated environmental exposure, and the chronic stress of discrimination (\"weathering\").",
+        "Clinical bias is documented: in Hoffman et al. (2016), half of white medical trainees endorsed a false biological belief and rated Black patients' pain lower.",
+        "Implicit bias is nearly universal and largely unconscious, so individual goodwill is not enough — system-level safeguards are required.",
+        "For the workforce, the leverage points are systemic: standardized protocols, decision support, stratified outcome monitoring, and treating place as a clinical variable."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "In the study, half of the white medical students and residents sampled endorsed at least one false belief about biological differences (such as thicker skin or less sensitive nerve endings). Critically, those who endorsed these beliefs rated an identical Black patient's pain as lower than a white patient's and made less accurate treatment recommendations — showing that unconscious false beliefs translate into biased clinical decisions even among trainees in good standing.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "No medical trainees endorsed any false beliefs, though laypeople did"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "About half endorsed at least one false belief, and those who did rated Black patients' pain lower and made less accurate treatment recommendations"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Trainees endorsed the false beliefs but it had no effect on their treatment recommendations"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The false beliefs were endorsed only by trainees who had explicit racial prejudice"
+        }
+      ],
+      "question": "What did Hoffman and colleagues (2016, PNAS) find when they surveyed white medical students and residents about false beliefs regarding biological differences between Black and white people?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Home Owners' Loan Corporation — Wikipedia and NCRC \"HOLC redlining maps\" — https://ncrc.org/holc/ — HOLC created 1933; residential security maps via City Survey 1935-1940; A/B/C/D grading with red = \"hazardous\" and racially based criteria."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] NCRC — \"Redlining and Neighborhood Health\" — https://ncrc.org/holc-health/ — associations between HOLC grade and present-day asthma, COPD, diabetes, hypertension, kidney disease, poor mental health, and lower life expectancy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] \"The Legacy of Redlining: Increasing Childhood Asthma Disparities through Neighborhood Poverty,\" American Journal of Respiratory and Critical Care Medicine — https://www.atsjournals.org/doi/10.1164/rccm.202309-1702OC — asthma prevalence ~8.6% (grade A) to ~10.7% (grade D); life expectancy decline across grades."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Hoffman, Trawalter, Axt & Oliver, PNAS (2016) — \"Racial bias in pain assessment and treatment recommendations, and false beliefs about biological differences between blacks and whites\" — https://www.pnas.org/doi/10.1073/pnas.1516047113 — ~50% of white medical trainees and ~70% of laypeople endorsed false beliefs; biased pain ratings and treatment recommendations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Bailey et al., The Lancet (2017) — \"Structural racism and health inequities in the USA: evidence and interventions\" — https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)30569-X/fulltext — definition of structural racism as mutually reinforcing systems and its pathways to health."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "health-equity-sdoh",
+  "order": 2,
+  "slug": {
+    "_type": "slug",
+    "current": "structural-racism-health"
+  },
+  "title": "Structural Racism & Health: From Redlining to Clinical Bias"
+}

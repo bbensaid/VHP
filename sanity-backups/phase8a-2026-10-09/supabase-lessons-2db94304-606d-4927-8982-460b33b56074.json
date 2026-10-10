@@ -1,0 +1,91 @@
+{
+  "id": "2db94304-606d-4927-8982-460b33b56074",
+  "track_id": "800ba332-22c6-48f5-a688-361c0728d568",
+  "pillar": "clinical",
+  "order": 2,
+  "slug": "oncology-genomics",
+  "title": "Somatic Genomics in Oncology",
+  "summary": "Tumor profiling, actionable alterations, targeted therapies, and the liquid biopsy revolution.",
+  "estimated_minutes": 25,
+  "objectives": [],
+  "content_blocks": [
+    {
+      "text": "Cancer as a Disease of the Genome",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "text": "Cancer is fundamentally a genomic disease — driven by somatic mutations that accumulate in individual cells over a lifetime. The Cancer Genome Atlas (TCGA) and International Cancer Genome Consortium (ICGC) have catalogued thousands of driver mutations across 33 cancer types. Today, comprehensive genomic profiling (CGP) of tumors is standard of care in oncology, enabling molecularly targeted therapies that have transformed outcomes in lung, breast, colon, melanoma, and hematologic malignancies.",
+      "type": "text"
+    },
+    {
+      "type": "concepts_grid",
+      "concepts": [
+        {
+          "term": "Driver Mutation",
+          "definition": "A mutation that confers selective growth advantage and is causally involved in oncogenesis — the therapeutic target"
+        },
+        {
+          "term": "Passenger Mutation",
+          "definition": "A mutation with no selective advantage, accumulated due to genomic instability — not a therapeutic target"
+        },
+        {
+          "term": "TMB (Tumor Mutational Burden)",
+          "definition": "Total number of somatic mutations per megabase of coding DNA — high TMB predicts response to checkpoint inhibitors"
+        },
+        {
+          "term": "MSI (Microsatellite Instability)",
+          "definition": "Hypermutation phenotype due to mismatch repair (MMR) deficiency — MSI-H tumors respond to pembrolizumab regardless of histology"
+        },
+        {
+          "term": "CNS Penetrance",
+          "definition": "Ability of a targeted therapy to cross the blood-brain barrier — critical for oncogene-driven brain metastases"
+        },
+        {
+          "term": "Liquid Biopsy",
+          "definition": "Detection of circulating tumor DNA (ctDNA) or cells in blood — enables non-invasive tumor profiling and MRD monitoring"
+        }
+      ]
+    },
+    {
+      "text": "Landmark Targeted Therapy Examples",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "text": "EGFR-mutant Non-Small Cell Lung Cancer (NSCLC): EGFR exon 19 deletions and L858R point mutations (found in ~15% of NSCLC in the US, ~40% in East Asian patients) predict response to EGFR tyrosine kinase inhibitors (TKIs). Osimertinib (3rd generation) has 5-year OS of 38% vs. 18% for chemotherapy in first-line EGFR-mutant NSCLC. T790M resistance mutation, detected by liquid biopsy, predicts response to osimertinib after first/second-generation TKI progression.",
+      "type": "text"
+    },
+    {
+      "text": "HER2-Amplified Breast Cancer: HER2 (ERBB2) amplification (~20% of breast cancers) predicts response to trastuzumab (Herceptin), pertuzumab, and T-DM1. HER2-low expression (IHC 1+ or 2+/ISH-) is a newly recognized biomarker for trastuzumab deruxtecan (T-DXd), expanding targeted therapy eligibility to a much larger population. HER2 is also actionable in gastric, lung, and colorectal cancers.",
+      "type": "text"
+    },
+    {
+      "type": "key_stat",
+      "label": "Advanced melanoma patients with BRAF V600E mutation",
+      "value": "~60%",
+      "context": "BRAF/MEK inhibitor combinations (vemurafenib + cobimetinib; dabrafenib + trametinib) achieve ~70% response rate and have transformed metastatic melanoma prognosis"
+    },
+    {
+      "body": "FDA has granted tumor-agnostic approvals for therapies based on molecular biomarkers regardless of tumor type: pembrolizumab for MSI-H/dMMR (2017), larotrectinib for NTRK fusions (2018), entrectinib for NTRK fusions and ROS1 (2019), and selpercatinib for RET fusions (2022). This paradigm shift means the genomic test result — not the organ of origin — determines therapy eligibility.",
+      "type": "callout",
+      "title": "Tumor-Agnostic Approvals: Biomarker Over Histology",
+      "variant": "info"
+    },
+    {
+      "text": "Liquid Biopsy in Clinical Practice",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "text": "Cell-free DNA (cfDNA) including circulating tumor DNA (ctDNA) is shed by tumors into the bloodstream. Liquid biopsy platforms (Guardant360, FoundationOne Liquid CDx) detect ctDNA variants at allele fractions as low as 0.1%. Clinical applications include: tissue-free tumor profiling when biopsy is unsafe, resistance mutation detection at progression, and minimal residual disease (MRD) monitoring post-treatment. FDA-approved companion diagnostics now include liquid biopsy tests for EGFR (osimertinib), BRCA1/2 (rucaparib), and others.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:21.785835+00:00",
+  "updated_at": "2026-06-02T03:54:10.144876+00:00",
+  "sanity_slug": "oncology-genomics"
+}

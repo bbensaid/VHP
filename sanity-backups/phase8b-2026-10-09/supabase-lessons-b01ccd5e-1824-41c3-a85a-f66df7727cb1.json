@@ -1,0 +1,95 @@
+{
+  "id": "b01ccd5e-1824-41c3-a85a-f66df7727cb1",
+  "track_id": "7bb54bd8-e750-4e7b-bbc2-689d12df9a1d",
+  "pillar": "economics",
+  "order": 1,
+  "slug": "value-based-purchasing-medicaid",
+  "title": "Value-Based Purchasing in Medicaid Managed Care",
+  "summary": "Examines value-based purchasing arrangements in Medicaid, including MCO-to-provider VBP contracts, quality withholds, shared savings models, and the CMS VBP framework.",
+  "estimated_minutes": 22,
+  "objectives": [
+    "Describe the CMS value-based purchasing framework for Medicaid MCOs",
+    "Explain how MCOs design VBP contracts with downstream providers",
+    "Identify the different tiers of value-based payment arrangements"
+  ],
+  "content_blocks": [
+    {
+      "body": "Value-based purchasing (VBP) in Medicaid operates on two levels: (1) between states and MCOs, and (2) between MCOs and their provider networks. At the state-MCO level, states use quality withholds, incentive payments, and performance bonuses tied to HEDIS and other quality metrics. At the MCO-provider level, MCOs are increasingly required by states to enter VBP arrangements with a minimum percentage of providers.\n\nCMS encourages VBP through its Medicaid VBP framework and has set targets for states to move specified percentages of Medicaid payments into VBP arrangements. New York's Medicaid Redesign Team set a goal of 80% of Medicaid payments flowing through VBP by 2020.",
+      "type": "text",
+      "heading": "Value-Based Purchasing in Medicaid"
+    },
+    {
+      "rows": [
+        [
+          "Tier 1",
+          "FFS with quality bonuses/penalties",
+          "Minimal",
+          "HEDIS-tied incentive payments"
+        ],
+        [
+          "Tier 2",
+          "Shared savings (upside only)",
+          "Low",
+          "ACO shared savings without downside"
+        ],
+        [
+          "Tier 3",
+          "Shared savings/losses (two-sided)",
+          "Moderate",
+          "ACO with downside risk corridor"
+        ],
+        [
+          "Tier 4",
+          "Full capitation to provider",
+          "High",
+          "Global capitation to integrated system"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "VBP Tier",
+        "Description",
+        "Risk Level",
+        "Example"
+      ]
+    },
+    {
+      "body": "Several states now require MCOs to flow a minimum percentage of provider payments through VBP arrangements. For example, Oregon requires its CCOs to meet specific VBP targets as a condition of contract. CMS's Innovation Center (CMMI) has tested Medicaid VBP through demonstrations including the Integrated Care for Kids (InCK) model and the Accountable Health Communities model.",
+      "type": "callout",
+      "title": "MCO-to-Provider VBP Requirements",
+      "variant": "info"
+    },
+    {
+      "type": "glossary_terms",
+      "terms": [
+        {
+          "term": "Value-Based Purchasing (VBP)",
+          "definition": "Payment arrangements linking reimbursement to quality and efficiency outcomes rather than volume of services"
+        },
+        {
+          "term": "Quality Withhold",
+          "definition": "A portion of MCO capitation retained by the state and returned only upon meeting defined quality benchmarks"
+        },
+        {
+          "term": "Shared Savings",
+          "definition": "An arrangement where providers share in a portion of cost savings achieved against a benchmark, with or without downside risk for losses"
+        },
+        {
+          "term": "Global Capitation",
+          "definition": "A fixed PMPM payment to a provider organization covering all services for the attributed population — the highest level of provider-level VBP risk"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "value-based purchasing",
+    "VBP",
+    "pay-for-performance",
+    "shared savings"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:17.3985+00:00",
+  "updated_at": "2026-06-01T13:29:15.606805+00:00",
+  "sanity_slug": "value-based-purchasing-medicaid"
+}

@@ -1,0 +1,106 @@
+{
+  "id": "b1b2c5fa-7453-4033-a917-a9a22734f155",
+  "track_id": "fa4f708c-64f6-496c-b5b8-ace2382eadb0",
+  "pillar": "operations",
+  "order": 2,
+  "slug": "network-adequacy-standards",
+  "title": "Network Adequacy Standards and Time-Distance Requirements",
+  "summary": "Details federal and state network adequacy requirements for Medicaid MCOs, including the 2024 Access rule's new appointment wait time standards and provider-to-enrollee ratios.",
+  "estimated_minutes": 20,
+  "objectives": [
+    "Describe the federal network adequacy framework under 42 CFR §438.68",
+    "Explain time-and-distance standards and how states set them",
+    "Identify the 2024 Access rule's new appointment wait time requirements"
+  ],
+  "content_blocks": [
+    {
+      "body": "42 CFR §438.68 requires states to establish network adequacy standards for Medicaid MCOs covering: time and distance to providers; appointment wait times; provider-to-enrollee ratios; and availability of providers who are not accepting new patients. States must establish standards for at least the following provider types: primary care (adult and pediatric), OB/GYN, behavioral health (outpatient and inpatient), specialist, hospital, pharmacy, and pediatric dental.\n\nThe 2024 Medicaid Access rule (89 FR 40542) strengthened these requirements substantially, adding mandatory appointment wait time standards and requiring states to conduct secret shopper surveys to validate compliance.",
+      "type": "text",
+      "heading": "Federal Network Adequacy Framework"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Max wait for routine primary care",
+          "value": "10 days",
+          "context": "2024 Access rule standard for routine (non-urgent) primary care appointment availability"
+        },
+        {
+          "label": "Max wait for routine specialist care",
+          "value": "15 days",
+          "context": "2024 Access rule standard for routine specialist appointments"
+        },
+        {
+          "label": "Max wait for urgent care",
+          "value": "48 hours",
+          "context": "Urgent (non-emergency) care must be available within 48 hours under 2024 Access rule standards"
+        }
+      ]
+    },
+    {
+      "body": "A longstanding problem in Medicaid managed care is 'ghost networks' — provider directories listing doctors who are not actually accepting Medicaid patients. The 2024 Access rule requires states to conduct secret shopper surveys to test whether listed providers are actually available to enrollees. This addresses a gap where MCOs could meet network adequacy standards on paper while enrollees faced access barriers in practice.",
+      "type": "callout",
+      "title": "Secret Shopper Surveys: Validating Paper Networks",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "Primary Care (Adult)",
+          "30 min / 30 mi",
+          "60 min / 60 mi",
+          "10 business days (routine)"
+        ],
+        [
+          "Primary Care (Pediatric)",
+          "30 min / 30 mi",
+          "60 min / 60 mi",
+          "10 business days (routine)"
+        ],
+        [
+          "OB/GYN",
+          "30 min / 30 mi",
+          "60 min / 60 mi",
+          "15 business days (routine)"
+        ],
+        [
+          "Behavioral Health (Outpatient)",
+          "30 min / 30 mi",
+          "60 min / 60 mi",
+          "10 business days"
+        ],
+        [
+          "Specialist",
+          "45 min / 45 mi",
+          "90 min / 90 mi",
+          "15 business days (routine)"
+        ],
+        [
+          "Hospital",
+          "45 min / 45 mi",
+          "90 min / 90 mi",
+          "N/A (ED: immediate)"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Provider Type",
+        "Urban Time-Distance",
+        "Rural Time-Distance",
+        "Wait Time Standard"
+      ]
+    }
+  ],
+  "tags": [
+    "network adequacy",
+    "time-distance",
+    "access",
+    "2024 Access rule"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:13.98612+00:00",
+  "updated_at": "2026-06-01T13:29:15.422393+00:00",
+  "sanity_slug": "network-adequacy-standards"
+}

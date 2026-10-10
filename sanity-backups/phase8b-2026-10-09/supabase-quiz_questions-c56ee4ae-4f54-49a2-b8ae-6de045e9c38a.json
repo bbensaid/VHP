@@ -1,0 +1,9 @@
+{
+  "id": "c56ee4ae-4f54-49a2-b8ae-6de045e9c38a",
+  "quiz_id": "90327568-f190-41db-a42d-f66171cdb750",
+  "order": 1,
+  "question_type": "single_choice",
+  "question": "In the CMS Medicaid VBP framework, Tier 1 arrangements are characterized by:",
+  "explanation": "Tier 1 VBP arrangements add quality bonuses or penalties on top of the existing FFS payment structure, with minimal risk transfer. They are the most common starting point for provider VBP.",
+  "points": null
+}

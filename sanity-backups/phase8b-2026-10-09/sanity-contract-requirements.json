@@ -1,0 +1,442 @@
+{
+  "_createdAt": "2026-05-31T07:55:53Z",
+  "_id": "contract-requirements",
+  "_rev": "glqH7a4yvZFQerxZdKF7LV",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T07:55:53Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Contract Is Where Promises Become Obligations"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Once a state selects its MCOs through the procurement covered in the last lesson, it translates the winning proposals into a binding contract. That contract — often hundreds of pages long — is the single most important operational document in Medicaid managed care. It converts the federal requirements of 42 CFR Part 438 and the state’s own priorities into specific, enforceable obligations the plan must meet. If the procurement is where the state chooses its partners, the contract is where it defines exactly what those partners must do."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Three categories of contract requirements form the operational backbone of every Medicaid MCO contract: network adequacy (ensuring enrollees can actually access providers), quality assurance (ensuring the care is good), and reporting (ensuring the state can see what the plan is doing). These three threads run through the entire relationship, and each is anchored in federal regulation. Together they are how a state holds a risk-bearing private plan accountable for serving a vulnerable public population."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Understanding these requirements matters because they are the mechanism that addresses the central tension of managed care. A capitated plan has an incentive to spend less — which could mean a thin network, skimpy care, or hidden problems. Network, quality, and reporting requirements are the contractual counterweights: they force the plan to maintain real access, demonstrate real quality, and show the state real data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: An MCO contract converts federal rules and state priorities into binding obligations across three core areas — network adequacy (access), quality assurance (good care), and reporting (transparency) — backed by enforcement tools like sanctions and liquidated damages."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Network Adequacy Requirements"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The first pillar is network adequacy: the contract must require the plan to maintain a provider network sufficient to deliver the covered services. Under 42 CFR 438.68, states must develop and publish quantitative time-and-distance standards for a defined set of provider types — primary care (adult and pediatric), OB/GYN, behavioral health, adult and pediatric specialists, hospitals, pharmacy, and pediatric dental — plus additional types as CMS determines. The 2024 final rule layered appointment wait-time standards on top of these, as the federal-framework lesson described, so adequacy is now judged by both geography and timeliness."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Crucially, network adequacy is not just about counting providers. In setting standards, states must consider factors such as providers’ ability to communicate with limited-English-proficient enrollees, accommodation of disabilities, the availability of triage or screening lines, and the use of telemedicine and other innovative technologies. This reflects a recognition that a \"provider in the network\" is only meaningful if a real enrollee — who may have a disability, speak limited English, or live far from care — can actually reach and use them. The contract embeds these considerations as binding requirements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "To verify adequacy, states require plans to support a Network Adequacy and Access Assurances Report (NAAAR), documenting an analysis that supports the assurance that each plan’s network is adequate. Combined with the secret-shopper surveys from the federal-framework lesson, this gives the state both the plan’s self-reported network data and an independent test of whether that network functions in practice — closing the gap between paper networks and real access."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Quality Assurance Requirements"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The second pillar is quality assurance. The contract must require the plan to participate in the state’s quality apparatus, which federal rules build around several components. Each state contracting with managed care plans must draft and implement a written quality strategy for assessing and improving the quality of care (42 CFR 438.340). Within that, each plan must operate a Quality Assessment and Performance Improvement (QAPI) program, undergo external quality review (EQR) by an independent organization, and meet accreditation and reporting requirements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "These requirements work together as a system. The state’s quality strategy sets the overall direction and goals. Each plan’s QAPI program is its internal engine for measuring and improving care. External quality review provides an independent, expert assessment of each plan’s performance — the subject of its own lesson later in this course. And quality measure reporting (including HEDIS, also covered later) generates the data that feeds all of it. The contract binds the plan into this entire structure, making quality not optional but a condition of payment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3w1",
+      "_type": "warningBlock",
+      "message": "Because a capitated plan profits by spending less, there is a risk it could cut corners on care. The quality strategy, QAPI, external quality review, and measure reporting exist precisely to detect under-provision and force improvement — turning \"good care\" from a hope into a measured, enforceable obligation.",
+      "title": "Quality Requirements Counter the Skimping Incentive"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Reporting Requirements and Enrollee Protections"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The third pillar is reporting — the data flow that lets the state see what its plans are doing. The centerpiece is the requirement under 42 CFR 438.66 that each state submit to CMS, no later than 180 days after each contract year, a Managed Care Program Annual Report (MCPAR) on each program. That report must assess, at minimum, each plan’s financial performance (including medical loss ratio), the quality and timeliness of encounter data, enrollment and benefit changes, a summary of grievances, appeals, and state fair hearings, network adequacy and access, and performance on quality measures. The MCPAR is essentially the state’s annual accountability ledger for managed care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two reporting streams deserve special note. Encounter data — the information about every item or service an enrollee receives under the contract — is the managed care equivalent of fee-for-service claims data, and it is essential for rate-setting, quality measurement, and oversight; the timeliness and accuracy of encounter data is itself a monitored requirement. And appeals and grievances data give a direct window into enrollee experience: enrollees can appeal service denials and file grievances about any dissatisfaction, and since 2022 states must report certain appeals and grievance data to CMS annually, so the state can spot a plan that is denying too much care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "These reporting requirements connect to enforcement. Federal rules require states to maintain a monitoring system spanning administration, appeals and grievances, claims, enrollee materials, finance and MLR, information systems and encounter data, marketing, medical and utilization management, program integrity, network management, quality improvement, and LTSS delivery. When monitoring reveals problems, contracts give states enforcement tools: monetary penalties, corrective action plans, suspension of new enrollment, and liquidated damages — predetermined monetary penalties written into the contract for specific failures. These are the teeth behind the requirements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4steps1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Time-and-distance and wait-time standards, LEP/disability/telehealth considerations, and network assurance reporting (NAAAR).",
+          "title": "Network adequacy"
+        },
+        {
+          "_key": "step2",
+          "description": "State quality strategy, plan QAPI program, external quality review, accreditation, and quality-measure reporting.",
+          "title": "Quality assurance"
+        },
+        {
+          "_key": "step3",
+          "description": "Annual MCPAR (within 180 days), encounter data, appeals/grievances reporting, backed by sanctions and liquidated damages.",
+          "title": "Reporting and oversight"
+        }
+      ],
+      "title": "The Three Pillars of an MCO Contract"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why the Contract Is the Heart of Oversight"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Everything a state can require of a plan after the contract is signed must be in the contract. This makes contract design enormously consequential — it is the state’s last and best chance to exercise leverage. A weak contract with vague standards and few reporting requirements leaves the state with little ability to hold a plan accountable; a strong contract with clear, measurable, enforceable requirements gives the state real oversight. Because the relationship runs for years, the quality of the contract determines the quality of the accountability for the entire contract term."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "An MCO contract is like the franchise agreement behind a restaurant chain. The franchisee (the plan) runs the day-to-day operation, but the agreement dictates the standards it must meet — the menu it must offer (covered services), the locations it must staff (network adequacy), the inspections it must pass (quality review), and the sales reports it must file (reporting). If a location skimps, the franchise agreement’s penalty clauses (sanctions and liquidated damages) are what let headquarters force a fix. A vague agreement means a chain that can’t control its own restaurants.",
+      "concept": "How the MCO contract enables oversight"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The three pillars also illustrate how managed care’s components interlock. Network adequacy without reporting would be unverifiable; quality requirements without enforcement would be toothless; reporting without standards to measure against would be meaningless. The contract weaves them together: it sets the standards (network and quality), requires the data to verify them (reporting), and attaches the consequences for failure (sanctions). Each pillar depends on the others, and the contract is what binds them into a coherent system of accountability."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson sets up the rest of the course in a direct way. The monitoring and oversight lesson that follows explains how the state actually uses the reporting and enforcement provisions established here. The rate-setting module explains how the financial terms — including the encounter data and MLR provisions referenced above — are calculated. The network adequacy and quality lessons go deeper into those specific contract requirements. The contract is the hub; the operational details radiate out from it. Master what the contract requires, and you understand the structure within which all of Medicaid managed care operates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "The MCO contract converts federal rules (42 CFR Part 438) and state priorities into binding, enforceable obligations, organized around three core pillars: network adequacy, quality assurance, and reporting.",
+        "Network adequacy requirements (438.68) include quantitative time-and-distance standards for specified provider types plus 2024 appointment wait-time standards, and must consider LEP communication, disability accommodation, and telehealth.",
+        "States require network assurance documentation (the NAAAR) and, combined with secret-shopper surveys, verify that paper networks deliver real access.",
+        "Quality assurance requires a state quality strategy (438.340), a plan QAPI program, external quality review by an independent organization, and accreditation/measure reporting — a system that exists to counter the skimping incentive of capitation.",
+        "Reporting centers on the Managed Care Program Annual Report (MCPAR) under 438.66, due within 180 days of the contract year, covering financial performance/MLR, encounter data, enrollment/benefit changes, grievances and appeals, network adequacy, and quality measures.",
+        "Encounter data (the record of every service an enrollee receives) is the managed care equivalent of claims data and is essential for rate-setting, quality, and oversight; appeals and grievances data (reported to CMS annually since 2022) reveal enrollee experience and over-denial.",
+        "Federal rules require a broad state monitoring system, and contracts provide enforcement teeth — monetary penalties, corrective action plans, enrollment suspension, and liquidated damages (predetermined penalties for specific failures).",
+        "Because anything the state can require after signing must be in the contract, contract design is the state’s key point of leverage — a strong, measurable contract enables real oversight for the entire multi-year term."
+      ]
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] eCFR: \"42 CFR 438.68 — Network adequacy standards\" — https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-438/subpart-B/section-438.68 — time-and-distance standards for specified provider types and required consideration of LEP, disability, triage lines, and telemedicine."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] MACPAC: \"Quality requirements under Medicaid managed care\" — https://www.macpac.gov/subtopic/quality-requirements-under-medicaid-managed-care/ — written state quality strategy, QAPI program, external quality review, and accreditation requirements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] eCFR: \"42 CFR 438.340 — Managed care State quality strategy\" — https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-438/subpart-E/section-438.340 — requirement that each state draft and implement a written quality strategy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] MACPAC: \"Key federal program accountability requirements in Medicaid managed care\" — https://www.macpac.gov/subtopic/key-federal-program-accountability-requirements-in-medicaid-managed-care/ — the 438.66 Managed Care Program Annual Report (within 180 days), monitoring-system scope, and encounter data definition."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] KFF: \"Medicaid Managed Care Reporting and Transparency: Managed Care Program Annual Reports\" — https://www.kff.org/medicaid/medicaid-managed-care-reporting-and-transparency-managed-care-program-annual-reports/ — MCPAR contents including financial performance/MLR, encounter data, grievances and appeals, network adequacy, and quality measures."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] National Health Law Program: \"Medicaid Managed Care Accountability: How States Use Sanctions\" — https://healthlaw.org/medicaid-managed-care-accountability-how-states-use-sanctions/ — enforcement tools including monetary penalties, corrective action plans, enrollment suspension, and liquidated damages."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicaid-managed-care-operations",
+  "order": 5,
+  "slug": {
+    "_type": "slug",
+    "current": "contract-requirements"
+  },
+  "title": "Contract Requirements: Network Adequacy, Quality Assurance, and Reporting"
+}

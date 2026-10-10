@@ -1,0 +1,88 @@
+{
+  "id": "f5c15a93-6215-4de7-aeac-d69f8058872f",
+  "track_id": "4b72b2af-3497-4a44-8bfd-e9a1581a53ee",
+  "pillar": "economics",
+  "order": 3,
+  "slug": "population-health-business-case",
+  "title": "Building the Business Case for Population Health Investment",
+  "summary": "Population health investments—care coordination programs, community health workers, chronic disease management—often generate financial returns only under value-based contracts. This lesson examines how to build a credible business case and measure ROI.",
+  "estimated_minutes": 20,
+  "objectives": [
+    "Identify the financial returns from population health investment under different payment models",
+    "Build a simple business case framework for a population health program",
+    "Explain why population health investment is financially rational in value-based but not FFS environments"
+  ],
+  "content_blocks": [
+    {
+      "body": "Population health programs—care coordination, transition management, chronic disease management, community health workers—are designed to keep patients healthier and out of the hospital. Under FFS, this is financially self-defeating: fewer hospitalizations = less revenue.\n\nUnder value-based payment, the financial logic inverts. A $1M investment in care coordinators that prevents $3M in avoidable hospitalizations creates $2M in net savings—which the hospital captures under shared savings or capitation.\n\nThe business case therefore requires understanding **what payment model captures the return on investment**. Before investing in population health, finance leadership must assess: what percentage of the relevant patient population is in value-based contracts? What is the shared savings rate? What is the projected savings per prevented hospitalization?",
+      "type": "text",
+      "heading": "The Payment Model Problem for Prevention"
+    },
+    {
+      "body": "A credible population health business case includes:\n1. **Target population:** Size, risk stratification, payer mix in value-based vs FFS\n2. **Intervention costs:** Program staff, technology, community partnerships\n3. **Clinical impact:** Projected reduction in ED visits, hospitalizations, readmissions\n4. **Financial impact:** Savings × sharing rate (under shared savings) or full savings (under capitation)\n5. **Payback period:** Typically 2–4 years for population health programs\n6. **Sensitivity analysis:** What if savings are 50% lower than projected?",
+      "type": "callout",
+      "title": "The Business Case Framework",
+      "variant": "tip"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "ROI per dollar invested in care coordination (value-based)",
+          "value": "$3–7",
+          "context": "Studies suggest well-designed care coordination programs generate $3–$7 in savings per dollar invested under value-based contracts"
+        },
+        {
+          "label": "Top patients = 80% of costs",
+          "value": "20%",
+          "context": "The top 20% of patients by risk/cost typically account for 80% of total spending—the target for population health intervention"
+        },
+        {
+          "label": "Typical payback period",
+          "value": "2–4 years",
+          "context": "Population health investments typically take 2–4 years to achieve positive ROI as programs mature and patient panels stabilize"
+        }
+      ]
+    },
+    {
+      "rows": [
+        [
+          "Care coordination team (10 FTEs)",
+          "$1.2M",
+          "$4M in avoided hospitalizations",
+          "$0.8M net positive"
+        ],
+        [
+          "CHW program (community health workers)",
+          "$600K",
+          "$1.8M in ED diversion",
+          "$300K net positive"
+        ],
+        [
+          "Remote monitoring (CHF/COPD)",
+          "$400K",
+          "$1.5M in readmission avoidance",
+          "$350K net positive"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Program Type",
+        "Annual Cost",
+        "Projected Savings (VBC)",
+        "Net ROI at 50% sharing"
+      ]
+    }
+  ],
+  "tags": [
+    "population health",
+    "business case",
+    "care coordination",
+    "ROI"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:34:46.571371+00:00",
+  "updated_at": "2026-06-01T13:29:14.831844+00:00",
+  "sanity_slug": "population-health-business-case"
+}

@@ -1,0 +1,88 @@
+{
+  "id": "2dc45593-8dd6-4600-a413-29437eff1ead",
+  "track_id": "800ba332-22c6-48f5-a688-361c0728d568",
+  "pillar": "clinical",
+  "order": 3,
+  "slug": "hereditary-conditions",
+  "title": "Hereditary Genetic Conditions: Counseling and Management",
+  "summary": "BRCA syndromes, Lynch syndrome, cardiogenomics, and the role of cascade testing in families.",
+  "estimated_minutes": 20,
+  "objectives": [],
+  "content_blocks": [
+    {
+      "text": "Hereditary Syndromes with Clinical Action",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "text": "Germline pathogenic variants are inherited and present in every cell of the body, including gonads — meaning they can be passed to children. Identifying a hereditary syndrome in one patient unlocks risk management opportunities for the entire family through cascade testing. Several hereditary syndromes have high lifetime penetrance and evidence-based clinical management protocols.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Hereditary Breast & Ovarian Cancer (HBOC)",
+          "BRCA1, BRCA2",
+          "BRCA1: 72% breast, 44% ovarian; BRCA2: 69% breast, 17% ovarian",
+          "Annual MRI + mammogram, risk-reducing salpingo-oophorectomy, mastectomy option, PARP inhibitors"
+        ],
+        [
+          "Lynch Syndrome",
+          "MLH1, MSH2, MSH6, PMS2, EPCAM",
+          "Up to 80% colorectal, 40-60% endometrial, elevated gastric/ovarian/bladder risk",
+          "Annual colonoscopy from age 20-25, endometrial biopsy, aspirin chemoprevention (CAPP2)"
+        ],
+        [
+          "Familial Hypercholesterolemia (FH)",
+          "LDLR, APOB, PCSK9",
+          "20x increased MI risk by age 60 without treatment",
+          "High-intensity statin + ezetimibe from childhood, PCSK9 inhibitors, LDL apheresis"
+        ],
+        [
+          "Hereditary Cardiomyopathy",
+          "MYH7, MYBPC3, SCN5A, KCNQ1",
+          "Varies by gene — HCM, DCM, Long QT, arrhythmia risk",
+          "Annual echo/ECG, ICD consideration, activity restriction, cascade family testing"
+        ],
+        [
+          "PTEN Hamartoma Tumor Syndrome (Cowden)",
+          "PTEN",
+          "85% lifetime breast cancer, thyroid, colorectal, endometrial risk",
+          "Annual breast MRI + mammogram from age 30, thyroid US, colonoscopy"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Syndrome",
+        "Gene(s)",
+        "Lifetime Cancer Risk",
+        "Management"
+      ]
+    },
+    {
+      "text": "Cascade Testing: A Family Health Strategy",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "text": "When a pathogenic variant is identified in a proband, first-degree relatives (parents, siblings, children) have a 50% probability of carrying the same variant. Cascade testing — systematic, variant-specific testing of at-risk relatives — is one of the highest-value interventions in medicine. A single BRCA2 proband diagnosis can trigger testing in 10–20 relatives, identifying carriers who can begin surveillance decades before symptom onset.",
+      "type": "text"
+    },
+    {
+      "body": "The ACMG recommends that clinical laboratories report pathogenic/likely pathogenic variants in 81 genes (ACMG SF v3.2, 2023) when found incidentally during WES/WGS, regardless of the primary indication. These 'secondary findings' include BRCA1/2, Lynch genes, cardiac channelopathy genes, and FH genes. Patients must consent to receive or not receive secondary findings before testing.",
+      "type": "callout",
+      "title": "ACMG Secondary Findings: Incidental Genomic Disclosure",
+      "variant": "info"
+    },
+    {
+      "text": "Genetic counselors are essential partners in hereditary syndrome management. Pre-test counseling addresses informed consent, insurance discrimination protections (GINA for health insurance, state laws for life/disability), implications for family members, and psychological impact. Post-test counseling interprets results, facilitates family communication, and connects patients to management resources and research registries.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:22.242167+00:00",
+  "updated_at": "2026-06-02T03:57:57.54349+00:00",
+  "sanity_slug": "hereditary-conditions"
+}

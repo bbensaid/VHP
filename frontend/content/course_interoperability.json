@@ -299,7 +299,7 @@
             {
               "type": "text",
               "heading": "The standard that conquered healthcare \u2014 by accident",
-              "body": "HL7 version 2 was developed in 1987 by a small group of health IT pioneers who met at a hotel in Philadelphia. Their goal was modest: create a standard for exchanging data between hospital laboratory systems and clinical systems. What they produced became the most widely implemented healthcare data standard in history \u2014 carrying an estimated 95% of all clinical data transactions in US hospitals to this day.\n\nThe staying power of HL7 v2 is remarkable given that it was designed before the internet, before relational databases became ubiquitous, and before anyone imagined the complexity of modern EHR systems. The standard uses a pipe-delimited text format that looks almost primitive by modern standards. Yet every hospital in the country processes thousands of HL7 v2 messages per day. Understanding this format is not optional for health IT professionals \u2014 it is the baseline.\n\nThe fundamental structure of HL7 v2 is the message. Each message has a type (determined by its first segment), and each message is made of segments separated by carriage returns. Segments are made of fields separated by pipe characters (|). Within fields, components are separated by carets (^), and sub-components by ampersands (&). A typical ADT^A01 admission message might contain 15\u201325 segments covering patient demographics, visit information, attending physician, diagnosis, and insurance."
+              "body": "HL7 version 2 was developed in 1987 by a small group of health IT pioneers who met at the Hospital of the University of Pennsylvania in Philadelphia. Their goal was modest: create a standard for exchanging data between hospital laboratory systems and clinical systems. What they produced became the most widely implemented healthcare data standard in history \u2014 used today, HL7 International reports, by 95% of U.S. healthcare organizations.\n\nThe staying power of HL7 v2 is remarkable given that it was designed before the internet, before relational databases became ubiquitous, and before anyone imagined the complexity of modern EHR systems. The standard uses a pipe-delimited text format that looks almost primitive by modern standards. Yet every hospital in the country processes thousands of HL7 v2 messages per day. Understanding this format is not optional for health IT professionals \u2014 it is the baseline.\n\nThe fundamental structure of HL7 v2 is the message. Each message has a type (determined by its first segment), and each message is made of segments separated by carriage returns. Segments are made of fields separated by pipe characters (|). Within fields, components are separated by carets (^), and sub-components by ampersands (&). A typical ADT^A01 admission message might contain 15\u201325 segments covering patient demographics, visit information, attending physician, diagnosis, and insurance."
             },
             {
               "type": "comparison_table",
@@ -353,19 +353,19 @@
               "type": "callout",
               "variant": "warning",
               "title": "The standard that isn't standard",
-              "body": "HL7 v2's greatest weakness is also what made it popular: flexibility. The standard defines required and optional fields, but allows extensive local customization through 'Z-segments' \u2014 custom segments with no national definition. Every major EHR vendor has implemented HL7 v2 slightly differently. A Cerner ADT feed and an Epic ADT feed can carry the same data in different fields, with different coding conventions, and with different optional segments populated. This is why interface engines exist: to translate between each organization's HL7 v2 dialect. A large hospital system may have 300+ active HL7 interfaces, each requiring ongoing maintenance."
+              "body": "HL7 v2's greatest weakness is also what made it popular: flexibility. The standard defines required and optional fields, but allows extensive local customization through 'Z-segments' \u2014 custom segments with no national definition. Every major EHR vendor has implemented HL7 v2 slightly differently. A Cerner ADT feed and an Epic ADT feed can carry the same data in different fields, with different coding conventions, and with different optional segments populated. This is why interface engines exist: to translate between each organization's HL7 v2 dialect. A large hospital system may run a very large number of active HL7 interfaces, each requiring ongoing maintenance."
             },
             {
               "type": "key_stat",
               "value": "95%",
-              "label": "of US hospital data transactions use HL7 v2",
+              "label": "of U.S. healthcare organizations use HL7 v2 (HL7 International)",
               "context": "Despite being developed in 1987, HL7 v2 remains the dominant standard for internal hospital data exchange. It is expected to coexist with FHIR for at least another decade as the installed base of v2 interfaces is enormous."
             },
             {
               "type": "callout",
               "variant": "example",
-              "title": "Real-world HL7 v2 failure: medication errors from interface mismatches",
-              "body": "A hospital integrated a new pharmacy system with their EHR via HL7 v2. The pharmacy system sent RxNorm codes for medications in a Z-segment field. The EHR expected drug codes in the standard CE data type field within OBX. Because the interface was not correctly mapped, medications arrived as free text strings with no structured code. Pharmacists could not perform automated drug interaction checks. The error went undetected for 6 months because the data 'looked right' on screen. This pattern \u2014 data present but semantically broken \u2014 is among the most dangerous in health IT."
+              "title": "Illustrative HL7 v2 failure: medication errors from interface mismatches",
+              "body": "Consider a hospital that integrates a new pharmacy system with its EHR via HL7 v2. The pharmacy system sent RxNorm codes for medications in a Z-segment field. The EHR expects drug codes in a standard coded (CE) field. Because the interface is not correctly mapped, medications arrive as free-text strings with no structured code, and pharmacists cannot run automated drug-interaction checks. Errors like this can go unnoticed for a long time because the data 'looks right' on screen. This pattern \u2014 data present but semantically broken \u2014 is among the most dangerous in health IT."
             }
           ],
           "quiz": {
@@ -546,7 +546,7 @@
             {
               "type": "text",
               "heading": "A fresh look at health data exchange",
-              "body": "In 2011, a New Zealand health informaticist named Grahame Grieve published a proposal called 'Fresh Look at Healthcare Interoperability.' He argued that healthcare data exchange standards had become too complex, too slow to implement, and too far removed from modern software development practices. His solution was elegant: model clinical data as discrete, web-native resources that could be exchanged using the same RESTful API patterns that power the modern internet.\n\nThe result was FHIR \u2014 Fast Healthcare Interoperability Resources \u2014 now published and maintained by HL7 International. Where HL7 v2 uses pipe-delimited text messages and HL7 v3 used dense XML schemas that required specialized tooling, FHIR uses JSON or XML in a format familiar to any web developer. A FHIR Patient resource looks like the JSON objects used by thousands of modern APIs. This was intentional: by lowering the barrier to entry, FHIR attracted a generation of software developers who had never built health IT systems before.\n\nFHIR's core architectural decision is the 'resource.' A resource is a discrete, identifiable unit of healthcare information \u2014 a Patient, an Observation (lab result or vital sign), a MedicationRequest, a Condition, an Encounter. There are 145+ FHIR resources covering virtually every domain of clinical and administrative healthcare. Each resource has a defined set of elements, a canonical URL, and can be retrieved, created, updated, or searched via standard HTTP methods. This RESTful design means FHIR APIs work with standard HTTP clients, including curl, Postman, or any programming language's HTTP library."
+              "body": "In 2011, an Australian health informaticist named Grahame Grieve put forward a proposal originally called 'Resources for Healthcare.' He argued that healthcare data exchange standards had become too complex, too slow to implement, and too far removed from modern software development practices. His solution was elegant: model clinical data as discrete, web-native resources that could be exchanged using the same RESTful API patterns that power the modern internet.\n\nThe result was FHIR \u2014 Fast Healthcare Interoperability Resources \u2014 now published and maintained by HL7 International. Where HL7 v2 uses pipe-delimited text messages and HL7 v3 used dense XML schemas that required specialized tooling, FHIR uses JSON or XML in a format familiar to any web developer. A FHIR Patient resource looks like the JSON objects used by thousands of modern APIs. This was intentional: by lowering the barrier to entry, FHIR attracted a generation of software developers who had never built health IT systems before.\n\nFHIR's core architectural decision is the 'resource.' A resource is a discrete, identifiable unit of healthcare information \u2014 a Patient, an Observation (lab result or vital sign), a MedicationRequest, a Condition, an Encounter. There are 145+ FHIR resources covering virtually every domain of clinical and administrative healthcare. Each resource has a defined set of elements, a canonical URL, and can be retrieved, created, updated, or searched via standard HTTP methods. This RESTful design means FHIR APIs work with standard HTTP clients, including curl, Postman, or any programming language's HTTP library."
             },
             {
               "type": "concepts_grid",
@@ -585,7 +585,7 @@
                 {
                   "year": "2011",
                   "label": "FHIR proposed",
-                  "description": "Grahame Grieve publishes 'Fresh Look at Healthcare Interoperability.' HL7 begins FHIR development."
+                  "description": "Grahame Grieve proposes 'Resources for Healthcare.' HL7 begins FHIR development."
                 },
                 {
                   "year": "2014",
@@ -595,7 +595,7 @@
                 {
                   "year": "2017",
                   "label": "STU3 published",
-                  "description": "FHIR STU3 becomes the first version widely implemented in EHR products. Apple Health Records uses STU3."
+                  "description": "FHIR STU3 published, with substantial maturation of the resource set."
                 },
                 {
                   "year": "2019",
@@ -608,7 +608,7 @@
                   "description": "ONC and CMS finalize rules requiring FHIR R4 APIs for certified EHRs and CMS-regulated payers."
                 },
                 {
-                  "year": "2023",
+                  "year": "2022\u20132023",
                   "label": "R4B and R5",
                   "description": "FHIR R4B (minor update) and R5 (major update) published, but R4 remains the regulatory and implementation baseline."
                 }
@@ -616,15 +616,15 @@
             },
             {
               "type": "key_stat",
-              "value": "1B+",
-              "label": "FHIR API calls per month across US health systems",
-              "context": "As of 2024, FHIR APIs at major US health systems process over 1 billion API calls per month, driven by patient-facing apps, payer integrations, and population health analytics tools."
+              "value": "145",
+              "label": "resource types defined in FHIR R4",
+              "context": "HL7 FHIR R4 resource list. Each is a discrete, independently addressable unit of healthcare data; R4 remains the U.S. regulatory baseline."
             },
             {
               "type": "callout",
               "variant": "info",
               "title": "Why R4, not R5?",
-              "body": "FHIR R5 was published in 2023 with significant improvements, but ONC's certification rules and CMS's interoperability rules both specify FHIR R4 as the required version. Implementation guides like US Core, CARIN Blue Button, and Da Vinci are all built on R4. Health IT vendors will not migrate to R5 until regulatory and implementation guide support catches up \u2014 a process that typically takes 3\u20135 years. R4 is the version that matters for US healthcare today."
+              "body": "FHIR R5 was published in 2023 with significant improvements, but ONC's certification rules and CMS's interoperability rules both specify FHIR R4 as the required version. Implementation guides like US Core, CARIN Blue Button, and Da Vinci are all built on R4. Health IT vendors will not migrate to R5 until regulatory and implementation guide support catches up. R4 is the version that matters for US healthcare today."
             }
           ],
           "quiz": {
@@ -850,13 +850,13 @@
               "type": "callout",
               "variant": "warning",
               "title": "The C-CDA quality problem",
-              "body": "C-CDA quality varies dramatically across EHR implementations. A study published in the Journal of the American Medical Informatics Association found that 60% of C-CDAs received at a large academic medical center had at least one data quality issue \u2014 medications listed as allergies, problem lists duplicated across sections, immunization dates missing. The standard defines structure but cannot enforce data quality. Receiving systems must build extensive validation and cleanup logic, and clinicians often cannot trust the structured data, defaulting to reading the narrative text instead."
+              "body": "C-CDA quality varies dramatically across EHR implementations. A 2014 study in the Journal of the American Medical Informatics Association (D'Amore et al., SMART C-CDA Collaborative) examined 91 sample C-CDAs from 21 certified technologies and recorded 615 errors and data-expression issues in 11 areas \u2014 for example, omitted or misused allergic reactions and missing medication dose frequency. The standard defines structure but cannot enforce data quality. Receiving systems must build extensive validation and cleanup logic, and clinicians often cannot trust the structured data, defaulting to reading the narrative text instead."
             },
             {
               "type": "callout",
               "variant": "info",
               "title": "C-CDA vs. FHIR Documents: choosing the right approach",
-              "body": "FHIR supports document exchange through its Document resource profile \u2014 essentially packaging FHIR resources into a structured document analogous to C-CDA. For new implementations, FHIR-based documents offer better tooling and developer experience. However, C-CDA remains required for Meaningful Use attestation, most HIE networks, and transition of care workflows. In practice, health systems must support both formats for the foreseeable future."
+              "body": "FHIR supports document exchange through document Bundles built around a Composition resource \u2014 essentially packaging FHIR resources into a structured document analogous to C-CDA. For new implementations, FHIR-based documents offer better tooling and developer experience. However, C-CDA remains required for ONC-certified EHR technology, most HIE networks, and transition of care workflows. In practice, health systems must support both formats for the foreseeable future."
             }
           ],
           "quiz": {

@@ -1,0 +1,60 @@
+{
+  "id": "b3d1dee0-9e35-4856-bcd8-9a2379207b29",
+  "track_id": "86509fd2-107a-4cee-b9ac-6f1c0977997c",
+  "pillar": "equity",
+  "order": 2,
+  "slug": "determinants-of-health",
+  "title": "Determinants of Health: Clinical vs. Social Drivers",
+  "summary": "Only about 20% of health outcomes are attributable to clinical care. The remaining 80% are driven by social, economic, environmental, and behavioral factors. Understanding these determinants is essential for effective population health strategy.",
+  "estimated_minutes": 20,
+  "objectives": [
+    {
+      "id": "obj-ph-002-1",
+      "text": "Cite the approximate contribution of clinical care vs. SDOH to health outcomes"
+    },
+    {
+      "id": "obj-ph-002-2",
+      "text": "List the major domains of social determinants of health"
+    },
+    {
+      "id": "obj-ph-002-3",
+      "text": "Explain how SDOH data can be integrated into population health programs"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "A landmark 2014 analysis in Health Affairs estimated that medical care accounts for only 10–20% of health outcomes for a population. The remaining 80–90% is driven by social, behavioral, genetic, and environmental factors — often called the *social determinants of health* (SDOH).",
+      "type": "text"
+    },
+    {
+      "text": "The Five SDOH Domains (Healthy People 2030)",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The U.S. Department of Health and Human Services identifies five major SDOH domains:\n\n1. **Economic stability** — income, employment, food security, housing stability\n2. **Education access and quality** — early childhood education, literacy, vocational training\n3. **Health care access and quality** — health coverage, proximity to providers, health literacy\n4. **Neighborhood and built environment** — housing quality, crime, environmental conditions\n5. **Social and community context** — social support, civic participation, discrimination",
+      "type": "text"
+    },
+    {
+      "body": "Vermont's Act 68 and Blueprint for Health programs explicitly integrate SDOH into care coordination. Community Health Teams (CHTs) screen for food insecurity, housing instability, and transportation barriers, then connect patients to community resources — a model replicated across value-based care programs nationally.",
+      "type": "callout",
+      "title": "Vermont Context",
+      "variant": "warning"
+    },
+    {
+      "text": "Integrating SDOH into Clinical Workflows",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Health systems use several approaches to capture and act on SDOH data:\n\n**Validated screening tools.** The Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences (PRAPARE) and the Accountable Health Communities (AHC) Health-Related Social Needs (HRSN) screening tool are standardized instruments used during clinical encounters.\n\n**EHR integration.** USCDI v3 includes SDOH data elements including housing status, food insecurity, and transportation. Systems can now document and query SDOH in structured fields.\n\n**Community resource referral.** Platforms like Unite Us, Findhelp (formerly Aunt Bertha), and NowPow create closed-loop referral networks connecting clinical encounters to community services.\n\n**Claims-based inference.** ICD-10-CM Z-codes (Z55–Z65) allow providers to document social determinants in claims data, enabling payers to track SDOH burden across populations.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:58.870354+00:00",
+  "updated_at": "2026-06-01T15:16:49.454885+00:00",
+  "sanity_slug": "determinants-of-health"
+}

@@ -1,0 +1,432 @@
+{
+  "_createdAt": "2026-09-22T19:19:03Z",
+  "_id": "hea-sdoh-burden-scoring",
+  "_rev": "emp4phc5XG2oL4iPFmxLbU",
+  "_type": "academyModule",
+  "_updatedAt": "2026-09-22T19:19:03Z",
+  "body": [
+    {
+      "_key": "l4s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l4s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Two Different Questions, Two Different Tools"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l4s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l4s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "\"What social risks does this specific patient face?\" and \"how socially deprived is this specific neighborhood?\" sound similar but require entirely different instruments. The first is answered by an individual-level screening tool, administered directly to a patient during an encounter. The second is answered by an area-level composite index, built once from public data about a geography and then applied to every patient who lives there, regardless of their individual circumstances."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l4s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l4s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Both are legitimate inputs to an SDOH burden score, and a well-built scoring system typically uses both: the individual tool wherever a clinical encounter exists to administer it, and the area-level index as a population-level signal or a fallback for patients who were never screened directly."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l4s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l4s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "An area-level deprivation score is not a substitute for individual screening — it is a different instrument answering a different question, useful precisely where individual screening data does not yet exist."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "l4s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l4s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "PRAPARE — the Individual-Level Standard"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l4s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l4s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "PRAPARE (the Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences) was developed in 2013 by the National Association of Community Health Centers, in partnership with the Association of Asian Pacific Community Health Organizations and the Oregon Primary Care Association. It screens for 22 distinct social determinants of health factors — housing, food security, transportation, income, and more."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l4s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l4s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A deliberate design choice made PRAPARE unusually easy to adopt at scale: it was standardized against ICD-10, LOINC, and SNOMED CT codes from the start, so a clinician's answers translate directly into documentable, interoperable data rather than a free-text note. That standardization is a large part of why PRAPARE became one of the most widely used SDOH screening tools in U.S. community health centers, is available free in most major EHR platforms, and has been translated into 26 languages."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l4ex1",
+      "_type": "exampleBlock",
+      "content": "PRAPARE's codification against LOINC, SNOMED CT, and ICD-10 (including the SDOH Z-codes covered later in this lesson) is precisely what let it scale into \"most major EHR platforms\" rather than remaining a paper form or a locally built questionnaire. A screening tool that produces answers a system cannot store, query, or aggregate is much harder to turn into a population-level score — the standardization decision made at PRAPARE's creation in 2013 is inseparable from its later adoption.",
+      "title": "PRAPARE's Design Choice as a Case Study"
+    },
+    {
+      "_key": "l4s3h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l4s3hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Area-Level Composite Indices"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l4s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l4s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CDC/ATSDR Social Vulnerability Index (SVI) uses 16 variables drawn from the 5-year American Community Survey, grouped into four themes — socioeconomic status; household composition and disability; minority status and language; and housing type and transportation — combined into a single percentile ranking (0 to 1, higher meaning more vulnerable) at the census-tract level. It was originally built to help identify communities needing support before, during, and after disasters, and has since been adopted more broadly as a general area-level deprivation signal."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l4s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l4s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Amy Kind and William Buckingham published a distinct approach, the Area Deprivation Index (ADI), in a 2018 New England Journal of Medicine perspective, \"Making Neighborhood-Disadvantage Metrics Accessible.\" The ADI ranks census block groups on 17 measures spanning income, education, employment, and housing quality. Kind's team at the University of Wisconsin–Madison built the accompanying Neighborhood Atlas specifically to make block-group-level rankings freely downloadable, turning what had been an academic construct into a tool any health system, researcher, or policymaker could apply to a patient address."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l4s4sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "NACHC",
+          "label": "Social determinants of health factors PRAPARE screens for",
+          "value": "22"
+        },
+        {
+          "_key": "s2",
+          "context": "NACHC",
+          "label": "Languages PRAPARE has been translated into",
+          "value": "26"
+        },
+        {
+          "_key": "s3",
+          "context": "CDC/ATSDR",
+          "label": "Census variables in the CDC/ATSDR Social Vulnerability Index",
+          "value": "16"
+        },
+        {
+          "_key": "s4",
+          "context": "Kind & Buckingham, NEJM 2018",
+          "label": "Measures in the Area Deprivation Index",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "_key": "l4s5h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l4s5hs",
+          "_type": "span",
+          "marks": [],
+          "text": "How a Composite Index Actually Gets Built"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l4st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Choose which underlying factors count toward deprivation — SVI's four themes, or the ADI's 17 measures. This is a values choice about which social conditions are in scope, not a purely technical one.",
+          "title": "Domain selection"
+        },
+        {
+          "_key": "step2",
+          "description": "Convert each raw variable (income, percent without a vehicle, educational attainment, and so on) onto a common scale — typically a percentile rank or z-score — so measures in different units can be combined meaningfully.",
+          "title": "Standardization"
+        },
+        {
+          "_key": "step3",
+          "description": "Decide how much each standardized domain contributes to the final score. Equal weighting across domains is common and easy to defend, but it is a choice, not a neutral default — a different weighting scheme is equally defensible and would produce different rankings.",
+          "title": "Weighting"
+        },
+        {
+          "_key": "step4",
+          "description": "Sum or average the weighted, standardized components into one score or percentile, typically reported at the census tract or block-group level.",
+          "title": "Aggregation"
+        }
+      ],
+      "title": "Composite Index Construction"
+    },
+    {
+      "_key": "l4w1",
+      "_type": "warningBlock",
+      "message": "SVI and ADI both measure area-level social deprivation, using different domains and different weighting choices. They can — and sometimes do — rank the exact same neighborhood differently. Neither ranking is \"wrong\"; an analyst using either index should say which one and be able to explain why that one was chosen for the task at hand.",
+      "title": "Two Valid Indices Can Disagree"
+    },
+    {
+      "_key": "l4t1",
+      "_type": "code",
+      "code": [
+        {
+          "Built_By": "NACHC (2013)",
+          "Factors": "22 SDOH factors",
+          "Level": "Individual patient",
+          "Tool": "PRAPARE"
+        },
+        {
+          "Built_By": "CDC/ATSDR",
+          "Factors": "16 variables, 4 themes",
+          "Level": "Census tract",
+          "Tool": "CDC/ATSDR SVI"
+        },
+        {
+          "Built_By": "Kind & Buckingham, U. Wisconsin",
+          "Factors": "17 measures",
+          "Level": "Census block group",
+          "Tool": "Area Deprivation Index"
+        }
+      ],
+      "language": "json",
+      "title": "Three SDOH Instruments, Side by Side"
+    },
+    {
+      "_key": "l4s6h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l4s6hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The Claims-Data Gap: SDOH Z-Codes"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l4s6p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l4s6p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "ICD-10-CM diagnosis codes Z55 through Z65 exist specifically to document social determinants of health inside a clinical encounter — housing instability, food insecurity, transportation barriers, and related factors. The Gravity Project, working with the American Medical Association, has built standardized crosswalks mapping common SDOH screening questions, including CMS's own Accountable Health Communities screening tool, directly to the appropriate Z-code and SNOMED CT terms."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l4s6p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l4s6p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite that infrastructure and explicit CDC and WHO emphasis on using these codes, one peer-reviewed study found only about 1.9% of inpatient hospital admissions carried an SDOH Z-code. Any SDOH burden score built primarily from claims data will systematically understate real social risk for exactly this reason — the code being rare in the data does not mean the underlying social need is rare in the population; it means it mostly is not being documented."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l4tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Individual-level screening (PRAPARE) and area-level composite indices (SVI, ADI) answer different questions and are built by entirely different methods — a strong SDOH scoring system typically uses both.",
+        "PRAPARE (NACHC, 2013) screens 22 SDOH factors, is codified against ICD-10/LOINC/SNOMED, is free in most EHRs, and is translated into 26 languages — its standardization is a large part of why it scaled.",
+        "The CDC/ATSDR Social Vulnerability Index uses 16 variables across 4 themes; the Area Deprivation Index (Kind & Buckingham, NEJM 2018) uses 17 measures via the Neighborhood Atlas — different, equally valid area-level approaches.",
+        "Building any composite index requires four real judgment calls: domain selection, standardization method, weighting scheme, and aggregation — none of them purely neutral or purely technical.",
+        "Two well-built indices covering the same reality (SVI and ADI) can rank the same neighborhood differently because of these judgment calls — that is a methods fact, not an error in either index.",
+        "Only about 1.9% of inpatient admissions carry an SDOH Z-code, so any claims-based SDOH burden score will understate true social risk unless it corrects for this documentation gap.",
+        "This lesson's SDOH scoring methodology is the direct input to the SDOH Burden dimension (15% weight) of this platform's HEROI composite, covered next in Lesson 5."
+      ]
+    },
+    {
+      "_key": "l4qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Area-level indices like SVI and ADI exist precisely for this situation — they provide a defensible population-level social-risk signal from an address alone, without requiring an individual screening encounter, though they are a different (coarser) instrument than direct screening.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Assume those patients have no social risk factors, since none were reported"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Apply an area-level composite index (like SVI or ADI) based on the patient's home address as a population-level proxy"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Wait until every patient completes a PRAPARE screening before scoring anyone"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Use the hospital's overall average PRAPARE score for every unscreened patient regardless of where they live"
+        }
+      ],
+      "question": "A health system wants to estimate social risk for patients who have never completed a PRAPARE screening. What is the most appropriate approach from this lesson?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] NACHC, PRAPARE — https://www.nachc.org/resource/prapare/ — 22 factors, developed 2013, EHR availability and language translations"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] CDC/ATSDR, Social Vulnerability Index — https://www.atsdr.cdc.gov/place-health/php/svi/index.html — 16 variables, 4 themes"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Kind AJH, Buckingham WR. Making Neighborhood-Disadvantage Metrics Accessible — The Neighborhood Atlas. NEJM 2018;378:2456-2458 — https://www.nejm.org/doi/10.1056/NEJMp1802313 — Area Deprivation Index, 17 measures"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] SDOH ICD-10 Z-code adoption study — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12608873/ — ~1.9% of inpatient admissions coded"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] CMS/Gravity Project SDOH Z-code resource — https://www.cms.gov/files/document/cms-2023-omh-z-code-resource.pdf — Z55–Z65 crosswalks"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "health-equity-analytics",
+  "order": 4,
+  "slug": {
+    "_type": "slug",
+    "current": "hea-sdoh-burden-scoring"
+  },
+  "title": "Scoring SDOH Burden: From PRAPARE to Composite Indices"
+}

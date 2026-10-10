@@ -1,0 +1,80 @@
+{
+  "id": "decbe056-744a-48cb-b4eb-8227a8764107",
+  "track_id": "abbb878c-ad5e-4b02-ae7d-0e7e1f02553b",
+  "pillar": "equity",
+  "order": 2,
+  "slug": "sdoh-screening-tools",
+  "title": "SDOH Screening in Clinical Settings: Tools, Z-Codes & Referrals",
+  "summary": "How clinical teams screen for social needs using validated tools (PRAPARE, AHC, SEEK), document with ICD-10 Z-codes, and connect patients to community resources.",
+  "estimated_minutes": 20,
+  "objectives": [
+    {
+      "id": "obj_sc1",
+      "text": "Identify validated SDOH screening tools and their appropriate use cases"
+    },
+    {
+      "id": "obj_sc2",
+      "text": "Explain how Z-codes are used to document social needs in clinical records"
+    },
+    {
+      "id": "obj_sc3",
+      "text": "Describe the closed-loop referral model for connecting patients to community resources"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "SDOH screening asks patients about their social needs directly — food security, housing stability, transportation, utilities, interpersonal safety. The evidence shows patients are willing to answer these questions when asked in a respectful, confidential context, and that screening identifies needs that clinicians would not otherwise know about.\n\nBut screening without action causes harm: asking someone if they're food insecure and then having no response to offer erodes trust. Effective SDOH programs pair screening with a referral pathway — either through embedded community health workers, a care coordination team, or a community resource platform like findhelp or NowPow.",
+      "type": "text",
+      "heading": "Screening: from asking to acting"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences. 21-item tool from NACHC. Maps to Z-codes. Most widely used in FQHCs.",
+          "icon": "ti-clipboard",
+          "title": "PRAPARE"
+        },
+        {
+          "body": "Accountable Health Communities screening tool developed by CMS. 10 core questions covering food, housing, transportation, utilities, and safety. Required for CMS AHC model participants.",
+          "icon": "ti-file-description",
+          "title": "AHC Screening Tool"
+        },
+        {
+          "body": "Safe Environment for Every Kid. Pediatric tool designed for primary care. Screens for family stress, substance use, depression, and food insecurity during well-child visits.",
+          "icon": "ti-stethoscope",
+          "title": "SEEK"
+        },
+        {
+          "body": "Brief 5-question tool for rapid screening in high-volume settings. Covers food, housing, transportation, interpersonal violence, and utilities.",
+          "icon": "ti-heart",
+          "title": "SDOH-5"
+        }
+      ],
+      "heading": "Major SDOH screening tools"
+    },
+    {
+      "body": "ICD-10-CM Z-codes (in the Z55–Z65 range) capture social determinants of health in clinical documentation:\n\n- Z59.0: Homelessness\n- Z59.4: Lack of adequate food\n- Z63.0: Problems in relationship with spouse or partner\n- Z56.0: Unemployment, unspecified\n- Z60.2: Problems related to living alone\n\nZ-codes enable population-level analysis of social needs in a practice or system, support quality reporting, and increasingly are used by payers to adjust risk scores and target interventions. Documentation of Z-codes has historically been low — many clinicians don't know they exist or don't realize the clinical and operational value of using them.",
+      "type": "text",
+      "heading": "Z-codes: documenting social needs in ICD-10"
+    },
+    {
+      "body": "A warm referral to a food bank is better than a pamphlet. A closed-loop referral — where the receiving organization confirms the patient connected with services and sends that information back to the care team — is better still. Community resource platforms like findhelp (formerly Aunt Bertha), NowPow, and Unite Us are building the infrastructure for closed-loop referrals at scale.",
+      "type": "callout",
+      "heading": "Closed-loop referrals: did the patient get help?",
+      "variant": "info"
+    }
+  ],
+  "tags": [
+    "SDOH screening",
+    "PRAPARE",
+    "Z-codes",
+    "social needs",
+    "referral"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T21:56:23.133765+00:00",
+  "updated_at": "2026-06-02T12:59:11.83266+00:00",
+  "sanity_slug": "sdoh-screening-tools"
+}

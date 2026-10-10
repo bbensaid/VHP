@@ -1,0 +1,419 @@
+{
+  "_createdAt": "2026-05-31T07:57:18Z",
+  "_id": "monitoring-oversight-eqro",
+  "_rev": "rL4Cn5Sfo5Z8rzPmEBZCpv",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T07:57:18Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Trust, but Verify — Independently"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A state can write a strong contract with detailed network, quality, and reporting requirements, but a contract is only as good as the oversight behind it. How does a state actually know whether its MCOs are delivering quality care, maintaining adequate networks, and treating enrollees fairly — rather than simply claiming to? The answer combines two layers: the state’s own ongoing monitoring, and an independent, expert review conducted by a third party called an External Quality Review Organization (EQRO). This lesson is about how Medicaid managed care is actually watched."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The need for independent review flows directly from the central tension of managed care. A capitated plan has both the incentive to under-provide care and control over much of the data used to judge it. Relying solely on the plan’s self-reporting would be like grading students on tests they score themselves. The EQRO exists to break that conflict — to provide the state and CMS an objective, expert assessment of each plan’s quality, timeliness, and access, based on validated data rather than the plan’s word."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Understanding monitoring and oversight completes the procurement-and-contracting story. The procurement chose the plans; the contract defined their obligations; and oversight — anchored by the EQRO — is how the state verifies those obligations are met and acts when they are not."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: States oversee MCOs through ongoing monitoring plus an annual External Quality Review (EQR) conducted by an independent External Quality Review Organization (EQRO), which assesses each plan’s quality, timeliness, and access and reports findings the state uses to hold plans accountable."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What External Quality Review Is"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "External Quality Review (EQR) is the analysis and evaluation, by an independent EQRO, of aggregated information on the quality, timeliness, and access to health care services that a managed care plan furnishes to Medicaid or CHIP enrollees. Those three dimensions — quality, timeliness, and access — are the lens through which every EQR assesses a plan. The federal parameters that states must follow when conducting EQR are set out at 42 CFR §§ 438.350, 438.354, 438.358, 438.360, and 438.364, making EQR a federally required, structured process rather than an ad hoc review."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The EQRO must be genuinely independent and qualified. Federal rules require the EQRO to have staff with demonstrated experience and knowledge of Medicaid beneficiaries, managed care delivery systems, and quality assessment methods; sufficient physical, technological, and financial resources; and the clinical and nonclinical skills to carry out the work. This independence and expertise are what give the EQRO’s findings credibility — it is not the plan grading itself, and it is not a generalist auditor, but a specialized organization equipped to evaluate managed care quality."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Mandatory EQR Activities"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "EQR is built from a defined set of EQR-related activities — the work, set out at 42 CFR § 438.358, that produces the data the EQRO analyzes. Several activities are mandatory, performed on each plan. One is a compliance review, which states must conduct on each plan once within a three-year period, assessing the plan’s compliance with structural and operational standards. Another is the validation of performance measures — independently confirming that the quality measures a plan reports (such as HEDIS measures, covered later) are accurate rather than self-flattering. A third is the validation of performance improvement projects (PIPs) that are part of the plan’s QAPI program."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The crucial word in those activities is \"validation.\" The EQRO does not simply accept the numbers a plan reports; it validates them — checking the methodology and data so that a plan cannot inflate its measured performance. This is the heart of breaking the self-reporting conflict. Beyond the mandatory activities, federal rules also define optional activities states may add, and the 2024 final rule and updated EQR protocols expanded the toolkit, including validation related to network adequacy. The mandatory core ensures every state’s EQR covers the essentials, while options let states tailor deeper scrutiny."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3steps1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Assess each plan’s compliance with structural and operational standards once every three years.",
+          "title": "Compliance review"
+        },
+        {
+          "_key": "step2",
+          "description": "Independently verify that the quality measures a plan reports are accurate.",
+          "title": "Validation of performance measures"
+        },
+        {
+          "_key": "step3",
+          "description": "Confirm that the plan’s quality-improvement projects are sound and producing real improvement.",
+          "title": "Validation of performance improvement projects (PIPs)"
+        },
+        {
+          "_key": "step4",
+          "description": "States may add further reviews, such as validation related to network adequacy, to tailor oversight.",
+          "title": "(Plus optional activities)"
+        }
+      ],
+      "title": "Core Mandatory EQR Activities"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The EQR Technical Report — and What States Do With It"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The product of all this work is the annual EQR technical report, which the EQRO must provide to the state and CMS for each plan. The report describes how the data was aggregated and analyzed for each EQR activity and draws conclusions about the quality, timeliness, and access to care the plan furnishes. Critically, it assesses each plan’s strengths and weaknesses on those dimensions and offers recommendations for improving services and for how the state can target the goals and objectives in its quality strategy. The technical report is the authoritative, independent scorecard on each plan."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "But a report only matters if the state acts on it, and here states vary considerably. They range from simply noting plan performance to taking real consequences — using EQR findings to inform contract changes, require corrective action plans (CAPs), impose financial penalties, and reduce or freeze the auto-assignment of new enrollees to a poor-performing plan. That last tool is particularly powerful: auto-assignment (how the state distributes enrollees who do not choose a plan) is a major source of membership, so freezing it directly hits a plan’s growth and revenue. The strongest oversight ties EQR findings to tangible consequences."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "The EQR technical report is only as effective as the state’s willingness to act on it. States that merely \"note\" poor performance exert little pressure; states that link EQR findings to corrective action plans, financial penalties, and frozen auto-assignment turn independent review into real accountability. Oversight is a choice, not just a process.",
+      "title": "A Report Without Consequences Changes Nothing"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The State’s Broader Monitoring Role"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The EQRO is the centerpiece, but the state retains a broad, ongoing monitoring role that surrounds it. As the contract lesson described, federal rules require states to maintain a monitoring system spanning administration, appeals and grievances, claims, finance and MLR, encounter data, medical and utilization management, program integrity, network management, quality improvement, and LTSS. CMS reinforces this with required reports — the Annual Program Oversight Report under 42 CFR § 438.66(e), the Medical Loss Ratio Summary Report, and the Access Standards Report — that compel states to compile and submit evidence of their oversight to the federal government."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "State oversight of MCOs works like the oversight of a restaurant. The state’s ongoing monitoring is the manager checking the books, the complaints, and the daily operations. The EQRO is the independent health inspector who arrives annually, validates that the kitchen really meets standards rather than taking the owner’s word, and files a detailed report on what is clean and what is not. And the enforcement tools — corrective action plans, fines, freezing new business — are what give the inspection teeth. Without the independent inspector, the owner grades their own kitchen; without enforcement, even a damning inspection changes nothing.",
+      "concept": "The layers of Medicaid managed care oversight"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This layered structure — independent expert review (EQRO) plus continuous state monitoring plus federal reporting — exists because the stakes are so high and the conflict of interest so real. Billions in public dollars flow to private plans serving vulnerable populations, and those plans profit by spending less. Oversight is the mechanism that lets a state capture managed care’s benefits (predictability, coordination) while guarding against its risks (under-provision, cherry-picking, poor quality). It is the practical answer to the question that opened the course: how do you trust private plans with public care?"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson closes the procurement-and-contracting arc and opens onto the rest of the course. Oversight depends on the data and standards established elsewhere: the quality measures validated by the EQRO are detailed in the HEDIS and quality lessons; the financial oversight connects to the rate-setting and MLR module; the network reviews connect to the network-adequacy lesson. Monitoring is not a separate silo but the verification layer that makes every other requirement real. A state that selects good plans, writes a strong contract, and oversees rigorously has built the full machinery of accountable Medicaid managed care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "States oversee MCOs through two layers: their own ongoing monitoring and an annual External Quality Review (EQR) conducted by an independent External Quality Review Organization (EQRO).",
+        "EQR is the independent analysis of aggregated information on the quality, timeliness, and access to care a plan furnishes, governed by federal parameters at 42 CFR §§ 438.350–438.364.",
+        "The EQRO must be independent and qualified, with demonstrated expertise in Medicaid beneficiaries, managed care delivery, and quality assessment — so findings come from a specialized third party, not the plan grading itself.",
+        "Mandatory EQR activities (438.358) include a compliance review once every three years, validation of reported performance measures, and validation of performance improvement projects (PIPs); states may add optional activities such as network-adequacy validation.",
+        "The key word is \"validation\" — the EQRO verifies the accuracy of what plans report rather than accepting it, breaking the self-reporting conflict of interest.",
+        "The annual EQR technical report assesses each plan’s strengths, weaknesses, and recommendations on quality, timeliness, and access, and is provided to the state and CMS as the authoritative independent scorecard.",
+        "States vary in acting on findings — from merely noting performance to imposing corrective action plans, financial penalties, and reducing or freezing auto-assignment of enrollees (a powerful lever on a plan’s revenue).",
+        "Surrounding the EQRO, states maintain a broad monitoring system and submit federally required reports (Annual Program Oversight Report under 438.66(e), MLR Summary Report, Access Standards Report), creating a layered structure that lets states capture managed care’s benefits while guarding against its risks."
+      ]
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Medicaid.gov: \"Quality of Care — External Quality Review\" — https://www.medicaid.gov/medicaid/quality-of-care/medicaid-managed-care-quality/quality-of-care-external-quality-review — EQR definition (quality, timeliness, access), the regulatory framework (438.350–438.364), and EQRO qualifications."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] MACPAC: \"Examining the Role of External Quality Review in Managed Care Oversight and Accountability\" (March 2025) — https://www.macpac.gov/wp-content/uploads/2025/03/MACPAC_March-2025-Chapter-1.pdf — how states use EQR findings (noting performance, CAPs, financial penalties, reducing/freezing auto-assignment)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] MACPAC: \"Managed Care External Quality Review Issue Brief\" — https://www.macpac.gov/wp-content/uploads/2023/07/Managed-Care-External-Quality-Review-Issue-Brief.pdf — mandatory EQR activities (compliance review every 3 years, validation of performance measures and PIPs) and the technical report."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] CMS: \"External Quality Review (EQR) Protocols\" (2023) — https://www.medicaid.gov/medicaid/quality-of-care/downloads/2023-eqr-protocols.pdf — the structured EQR-related activities and the annual technical report’s required contents."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] eCFR: \"42 CFR Part 438 Subpart E — Quality Measurement and Improvement; External Quality Review\" — https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-438/subpart-E — the federal EQR requirements, including mandatory activities at 438.358."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] MACPAC: \"Key federal program accountability requirements in Medicaid managed care\" — https://www.macpac.gov/subtopic/key-federal-program-accountability-requirements-in-medicaid-managed-care/ — the broad state monitoring system and federally required oversight reports (438.66(e) Annual Program Oversight Report, MLR Summary, Access Standards Report)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicaid-managed-care-operations",
+  "order": 6,
+  "slug": {
+    "_type": "slug",
+    "current": "monitoring-oversight-eqro"
+  },
+  "title": "Monitoring and Oversight: EQRO and State Responsibilities"
+}

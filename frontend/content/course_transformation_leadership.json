@@ -78,18 +78,18 @@
               "stats": [
                 {
                   "value": "$135M",
-                  "label": "Lost per $1B in failed projects",
-                  "source": "PMI, Pulse of the Profession \u2014 unrecoverable loss on failed initiatives"
+                  "label": "At risk per $1B spent on projects",
+                  "source": "PMI, Pulse of the Profession 2013 \u2014 money put at risk by poor project performance"
                 },
                 {
                   "value": "38%",
-                  "label": "More projects on time/budget",
-                  "source": "PMI \u2014 organizations with a PMO vs. those without one"
+                  "label": "More projects meet original goals",
+                  "source": "PMI, Pulse of the Profession 2017 \u2014 organizations whose enterprise PMO is aligned to strategy"
                 },
                 {
                   "value": "67%",
                   "label": "More projects fail outright",
-                  "source": "PMI \u2014 organizations that treat project management as non-strategic"
+                  "source": "PMI, Pulse of the Profession 2020 \u2014 organizations that undervalue project management as a strategic competency"
                 }
               ],
               "heading": "The Cost of Skipping This"
@@ -111,7 +111,7 @@
                 "type": "single_choice",
                 "points": 1,
                 "question": "According to PMI's Pulse of the Profession research, what happens to organizations that treat project management as a non-strategic function?",
-                "explanation": "PMI's research found these organizations report 67% more of their projects failing outright \u2014 treating execution discipline as optional carries a measurable, large penalty.",
+                "explanation": "PMI's 2020 Pulse of the Profession found organizations that undervalue project management as a strategic competency report an average of 67% more of their projects failing outright \u2014 treating execution discipline as optional carries a measurable, large penalty.",
                 "options": [
                   {
                     "id": "o_tl11",
@@ -128,7 +128,7 @@
                     "id": "o_tl13",
                     "text": "They save money by avoiding PMO overhead",
                     "isCorrect": false,
-                    "explanation": "PMO organizations complete 38% more projects on time and budget \u2014 the opposite conclusion."
+                    "explanation": "PMI's 2017 research found organizations with a strategy-aligned enterprise PMO report 38% more projects meeting their original goals \u2014 the opposite conclusion."
                   },
                   {
                     "id": "o_tl14",
@@ -269,12 +269,12 @@
                 {
                   "value": "$2T",
                   "label": "Wasted annually worldwide",
-                  "source": "PMI, Pulse of the Profession \u2014 roughly 11.4% of every dollar invested lost to poor project performance"
+                  "source": "PMI, Pulse of the Profession 2018 \u2014 about $1M every 20 seconds; the 2020 edition put average waste at 11.4% of project investment"
                 },
                 {
                   "value": "38%",
-                  "label": "More on-time/on-budget delivery",
-                  "source": "PMI \u2014 organizations with an established PMO"
+                  "label": "More projects meet original goals",
+                  "source": "PMI, Pulse of the Profession 2017 \u2014 organizations whose enterprise PMO is aligned to strategy"
                 }
               ],
               "heading": "What a PMO Is Worth"
@@ -295,7 +295,7 @@
                 "id": "q_tl3",
                 "type": "single_choice",
                 "points": 1,
-                "question": "The NHS's National Programme for IT (NPfIT), which cost the UK government more than \u00a310 billion before being dismantled in 2011, is most often cited as a failure of which specific kind?",
+                "question": "The NHS's National Programme for IT (NPfIT), dismantled in 2011 at an estimated cost of \u00a39.8 billion, is most often cited as a failure of which specific kind?",
                 "explanation": "Multiple independent reviews, including the National Audit Office, found NPfIT's governance separated central decision-making from the local organizations responsible for implementation \u2014 a structural governance failure, not primarily a technology failure.",
                 "options": [
                   {
@@ -470,7 +470,7 @@
                 "type": "single_choice",
                 "points": 1,
                 "question": "What happened to CMS's measured savings from the mandatory CJR bundled-payment model after outpatient total knee replacement was made nationally billable outside the bundle?",
-                "explanation": "Once outpatient TKA was excluded from the bundle nationally and some hospitals' participation became voluntary, the boundary-gaming incentive weakened and CJR's savings were no longer statistically significant by the fourth performance year \u2014 direct evidence that the earlier savings were partly an artifact of the mandatory boundary itself.",
+                "explanation": "After outpatient knee replacement could be billed outside the bundle and participation became voluntary in half the areas, hospitals responded to the new boundary \u2014 high-spending hospitals dropped out, and mandatory hospitals kept healthier knee patients inside the inpatient bundle \u2014 so savings fell from about $976 to $331 per episode and were no longer statistically significant by the fourth year (JAMA Internal Medicine, 2021).",
                 "options": [
                   {
                     "id": "o_tl51",
@@ -560,7 +560,7 @@
             {
               "type": "callout",
               "variant": "info",
-              "body": "PMI's benefits realization management standard defines three core elements: identify the benefits a program is meant to produce, execute the changes needed to produce them, and sustain those benefits after the program formally ends. The third element is the one most transformation plans never budget for \u2014 and it is the exact element the NHS's National Audit Office found missing from NPfIT, concluding that lessons from the failure were not being systematically captured even by the government's later digital programs.",
+              "body": "PMI's Benefits Realization Management Framework defines three core elements: identify the benefits a program is meant to produce, execute the changes needed to produce them, and sustain those benefits after the program formally ends. The third element is the one most transformation plans never budget for. A related gap followed NPfIT: in 2020 the UK's National Audit Office said it was not convinced the programme's lessons were all being applied to later NHS digital programmes.",
               "heading": "PMI's Three-Part Discipline"
             }
           ],
@@ -573,8 +573,8 @@
                 "id": "q_tl6",
                 "type": "single_choice",
                 "points": 1,
-                "question": "Per PMI's benefits realization management standard, what is the third of the three core elements \u2014 the one this lesson identifies as most often missing from transformation plans?",
-                "explanation": "Identify and execute are the two elements most transformation plans do carry out; sustain \u2014 keeping the benefit in place and monitored after the program formally closes \u2014 is the element most often skipped, which is exactly the gap the NHS's own National Audit Office identified.",
+                "question": "Per PMI's Benefits Realization Management Framework, what is the third of the three core elements \u2014 the one this lesson identifies as most often missing from transformation plans?",
+                "explanation": "Identify and execute are the two elements most transformation plans do carry out; sustain \u2014 keeping the benefit in place and monitored after the program formally closes \u2014 is the element most often skipped, which is exactly the gap the UK's National Audit Office identified.",
                 "options": [
                   {
                     "id": "o_tl61",

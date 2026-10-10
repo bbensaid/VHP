@@ -1,0 +1,80 @@
+{
+  "id": "560cc2d9-faae-430d-848b-41547a211336",
+  "track_id": "4b72b2af-3497-4a44-8bfd-e9a1581a53ee",
+  "pillar": "economics",
+  "order": 2,
+  "slug": "shared-savings-risk-capitation",
+  "title": "Shared Savings, Risk Corridors, and Capitation",
+  "summary": "Value-based contracts span a spectrum from shared savings (upside only) to full capitation (global risk). This lesson explains each model's financial mechanics and the risk management required as hospitals take on more accountability.",
+  "estimated_minutes": 25,
+  "objectives": [
+    "Explain the financial mechanics of shared savings programs and how savings are calculated",
+    "Describe risk corridors and their role in protecting hospitals entering value-based contracts",
+    "Define capitation and explain the financial management discipline it requires"
+  ],
+  "content_blocks": [
+    {
+      "body": "Value-based contracts exist on a spectrum of financial risk:\n\n**Shared Savings (Upside Only):** The hospital earns a share of any savings generated below a spending benchmark but bears no downside risk. CMS Medicare Shared Savings Program (MSSP) Track 1 is this model. Hospitals capture 50% of savings; no penalty for overspending.\n\n**Two-Sided Risk (Upside + Downside):** Hospitals share both savings and losses. MSSP Enhanced Track or Medicare ACO REACH. Higher shared savings rate (60–75%) but must repay a portion of overspending.\n\n**Bundled Payments:** A single payment for an episode of care (e.g., hip replacement + 90-day post-acute). Hospital keeps savings from efficient care; absorbs losses from complications.\n\n**Capitation:** A fixed per-member-per-month (PMPM) payment covering all services for an attributed population. Full global risk. Requires sophisticated actuarial modeling, utilization management, and reserve capital.",
+      "type": "text",
+      "heading": "The Value-Based Contract Spectrum"
+    },
+    {
+      "type": "concepts_grid",
+      "concepts": [
+        {
+          "term": "Benchmark",
+          "definition": "The projected spending target in a shared savings program; savings are measured against this expected spending level based on historical claims."
+        },
+        {
+          "term": "Risk Corridor",
+          "definition": "A contractual protection limiting the maximum loss a hospital can incur; e.g., losses capped at 5% of benchmark, protecting against catastrophic risk."
+        },
+        {
+          "term": "PMPM (Per Member Per Month)",
+          "definition": "The capitation payment rate; a fixed monthly payment per attributed member regardless of services actually used."
+        },
+        {
+          "term": "MLR (Medical Loss Ratio)",
+          "definition": "In capitation, the percentage of premium/PMPM spent on medical services; too high means financial loss; targets typically 80–85%."
+        }
+      ]
+    },
+    {
+      "body": "Taking on full capitation requires hospital systems to function like insurance companies. They must maintain actuarial reserves to cover unexpected high-cost cases, develop stop-loss insurance for outlier patients, and build utilization management infrastructure. Entering full capitation without these capabilities has bankrupted provider organizations. Regulators in some states now require hospital-sponsored plans to maintain minimum solvency reserves.",
+      "type": "callout",
+      "title": "Actuarial and Reserve Requirements for Full Risk",
+      "variant": "warning"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "MSSP Track 1 shared savings rate",
+          "value": "50%",
+          "context": "CMS shares 50% of net savings with qualifying ACOs in the upside-only track"
+        },
+        {
+          "label": "Two-sided risk shared savings rate",
+          "value": "60–75%",
+          "content": "Higher shared savings rate available to ACOs accepting downside risk"
+        },
+        {
+          "label": "Capitation payment unit",
+          "value": "PMPM",
+          "context": "Capitated contracts pay a fixed per-member-per-month rate; all medical costs above this are the provider's financial responsibility"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "shared savings",
+    "capitation",
+    "risk corridors",
+    "value-based contracts"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:34:45.730158+00:00",
+  "updated_at": "2026-06-01T13:29:14.786749+00:00",
+  "sanity_slug": "shared-savings-risk-capitation"
+}

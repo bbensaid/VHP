@@ -1,0 +1,9 @@
+{
+  "id": "ae671f98-c8db-403d-825c-90c6bdf557bf",
+  "quiz_id": "1e0d2875-a082-4f2f-ae96-0c7bf7e19573",
+  "order": 3,
+  "question_type": "single_choice",
+  "question": "What percentage of U.S. hospital beds are now located within multi-hospital systems?",
+  "explanation": "Over 60% of U.S. hospital beds are now in multi-hospital systems, reflecting decades of consolidation driven by financial pressure, capital needs, and competitive dynamics. This represents a dramatic shift from the mostly independent hospital landscape of the 1990s.",
+  "points": null
+}

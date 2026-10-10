@@ -1,0 +1,9 @@
+{
+  "id": "0f0b480b-c102-43fb-a9fa-9e35570fc960",
+  "quiz_id": "82e8f34a-39be-45e2-9338-00a8f77eda32",
+  "order": 3,
+  "question_type": "single_choice",
+  "question": "What is the primary financial challenge for hospitals transitioning from volume to value?",
+  "explanation": "The dual financial challenge is the core tension: hospitals must maintain FFS revenue (still 80%+ of income) while investing in value-based capabilities like care coordination that reduce FFS volume. Moving too fast risks revenue collapse; moving too slowly leaves quality incentive money on the table.",
+  "points": null
+}

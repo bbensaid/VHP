@@ -1,0 +1,69 @@
+{
+  "id": "94a22761-8ff0-4e6b-834f-c5858e202787",
+  "track_id": "f536b762-6a77-44bf-88d3-56297dffeffb",
+  "pillar": "operations",
+  "order": 1,
+  "slug": "pre-registration-insurance-verification",
+  "title": "Pre-Registration and Insurance Verification",
+  "summary": "Accurate pre-registration and real-time eligibility verification are the single highest-leverage interventions in the revenue cycle.",
+  "estimated_minutes": 20,
+  "objectives": [
+    "Explain the components of a complete pre-registration workflow",
+    "Describe electronic eligibility verification using 270/271 EDI transactions",
+    "Identify the most common registration errors and their downstream impact"
+  ],
+  "content_blocks": [
+    {
+      "body": "Pre-registration — collecting patient and insurance information before the date of service — is the single most impactful front-end investment an organization can make. When done well, it:\n\n- Reduces day-of registration time by 50–70%\n- Enables insurance verification 48–72 hours in advance\n- Allows identification of authorization requirements before the visit\n- Provides time for patient financial counseling and upfront collections",
+      "type": "text",
+      "heading": "Why Pre-Registration Matters"
+    },
+    {
+      "body": "Under HIPAA 5010, real-time eligibility verification uses two ANSI X12 transactions:\n\n- **270 (Eligibility Inquiry):** Sent by the provider to the payer asking: 'Is this patient covered for this service on this date?'\n- **271 (Eligibility Response):** Returned by the payer confirming coverage, deductible status, copay/coinsurance amounts, and authorization requirements.\n\nLeading organizations run batch 270/271 transactions 3–5 days before scheduled appointments and again on the day of service for real-time updates.",
+      "type": "text",
+      "heading": "Electronic Eligibility Verification: The 270/271 Transaction"
+    },
+    {
+      "body": "A 271 response confirming 'active coverage' does not mean the specific service is covered. Staff must also verify: (1) whether the service is a covered benefit, (2) whether the provider is in-network, (3) deductible/OOP status, and (4) whether prior authorization is required.",
+      "type": "callout",
+      "title": "Coverage ≠ Benefits",
+      "variant": "warning"
+    },
+    {
+      "type": "glossary_terms",
+      "terms": [
+        {
+          "term": "COB (Coordination of Benefits)",
+          "definition": "Process for determining which payer is primary when a patient has multiple insurance plans"
+        },
+        {
+          "term": "Deductible",
+          "definition": "Amount patient must pay out-of-pocket before insurance begins paying for covered services"
+        },
+        {
+          "term": "OOP Maximum",
+          "definition": "Annual cap on patient cost-sharing after which insurance covers 100% of covered services"
+        },
+        {
+          "term": "Subscriber",
+          "definition": "The person in whose name the insurance policy is held; may differ from the patient"
+        },
+        {
+          "term": "HIPAA 5010",
+          "definition": "The current standard transaction set for electronic healthcare transactions, replacing HIPAA 4010 in 2012"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "pre-registration",
+    "eligibility verification",
+    "270/271",
+    "patient access"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:31:16.646007+00:00",
+  "updated_at": "2026-06-01T13:14:49.205145+00:00",
+  "sanity_slug": "pre-registration-insurance-verification"
+}

@@ -1,0 +1,82 @@
+{
+  "id": "df0b0f34-3127-4cac-8b1e-ddbf3619a8e6",
+  "track_id": "5991ce21-b5fc-4fd1-a719-73b711e4dfe5",
+  "pillar": "equity",
+  "order": 1,
+  "slug": "real-data-collection",
+  "title": "REaL Data: Collecting Race, Ethnicity & Language",
+  "summary": "Why REaL data collection is foundational to equity work, common pitfalls in collection, and how stratified quality reporting reveals disparities invisible in aggregate data.",
+  "estimated_minutes": 18,
+  "objectives": [
+    {
+      "id": "obj_rd1",
+      "text": "Explain why high-quality REaL data collection is foundational to equity measurement"
+    },
+    {
+      "id": "obj_rd2",
+      "text": "Identify common failures in REaL data collection and how to address them"
+    },
+    {
+      "id": "obj_rd3",
+      "text": "Explain how stratified quality reporting reveals disparities hidden in aggregate data"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "The single most common reason health systems cannot identify disparities in their own care is data quality. Race and ethnicity data is frequently missing, miscategorized, or so coarsely collected (five broad categories) that meaningful analysis is impossible.\n\nHigh-quality REaL data collection — asking patients directly, using the full OMB category set, collecting preferred language separately from ethnicity — is the prerequisite for everything else in equity work. You cannot stratify quality measures, set improvement targets, or demonstrate progress without it.",
+      "type": "text",
+      "heading": "You can't improve what you don't measure"
+    },
+    {
+      "rows": [
+        {
+          "left": "Collected by staff observation (inaccurate, biased)",
+          "label": "Race",
+          "right": "Self-reported by patient at registration or via patient portal"
+        },
+        {
+          "left": "Collapsed into race (Hispanic listed as a race)",
+          "label": "Ethnicity",
+          "right": "Collected separately: ethnicity (Hispanic/Not Hispanic) AND race"
+        },
+        {
+          "left": "5 broad OMB categories only",
+          "label": "Detail",
+          "right": "Granular sub-categories (e.g., Cambodian, Dominican, Somali) within OMB categories"
+        },
+        {
+          "left": "Not collected or conflated with ethnicity",
+          "label": "Language",
+          "right": "Preferred spoken language AND preferred written language collected separately"
+        },
+        {
+          "left": "Coded as 'Unknown' or 'Declined' without follow-up",
+          "label": "Missing data",
+          "right": "Protocols to request self-identification at next encounter"
+        }
+      ],
+      "type": "comparison_table",
+      "heading": "Common REaL data problems and solutions",
+      "leftLabel": "Common Problem",
+      "rightLabel": "Better Approach"
+    },
+    {
+      "body": "A hospital's colorectal cancer screening rate is 72% — at or above the national average. Looks fine. But stratified by race: white patients 79%, Black patients 61%, Hispanic patients 54%. The aggregate hides a 25-point gap. This is the aggregate trap: good overall performance can mask severe disparities. Equity work requires stratified measurement.",
+      "type": "callout",
+      "heading": "The aggregate trap",
+      "variant": "warning"
+    }
+  ],
+  "tags": [
+    "REaL data",
+    "race",
+    "ethnicity",
+    "language",
+    "data stratification"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T21:56:23.47206+00:00",
+  "updated_at": "2026-10-09T19:34:08.435087+00:00",
+  "sanity_slug": "real-data-collection"
+}

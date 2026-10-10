@@ -1,0 +1,119 @@
+{
+  "id": "0cf1272d-dd41-47af-b81d-4a5b001dc118",
+  "track_id": "af23bf93-ddf7-4501-8c6a-d5ab3f890ef1",
+  "pillar": "clinical",
+  "order": 2,
+  "slug": "human-genome-project-to-clinical",
+  "title": "From the Human Genome Project to Clinical Genomics",
+  "summary": "The technological revolution that made whole-genome sequencing a clinical tool in 25 years.",
+  "estimated_minutes": 18,
+  "objectives": [],
+  "content_blocks": [
+    {
+      "text": "A 25-Year Revolution",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "text": "The Human Genome Project (HGP), completed in 2003 after 13 years and $3 billion, sequenced the first reference human genome. Today, whole-genome sequencing (WGS) costs under $500 and can be completed in 24–48 hours. This 6-million-fold cost reduction over two decades is faster than Moore's Law and has fundamentally transformed medicine.",
+      "type": "text"
+    },
+    {
+      "type": "timeline",
+      "events": [
+        {
+          "year": "1990",
+          "event": "Human Genome Project launched — international consortium, $3 billion budget"
+        },
+        {
+          "year": "1997",
+          "event": "Microarray technology enables genome-wide association studies (GWAS)"
+        },
+        {
+          "year": "2003",
+          "event": "HGP completed — first human reference genome published"
+        },
+        {
+          "year": "2007",
+          "event": "Next-generation sequencing (NGS) platforms launched — cost begins rapid decline"
+        },
+        {
+          "year": "2013",
+          "event": "Whole-genome sequencing reaches $1,000 milestone"
+        },
+        {
+          "year": "2020",
+          "event": "FDA authorizes first direct-to-consumer BRCA test; WGS used in COVID-19 surveillance"
+        },
+        {
+          "year": "2023",
+          "event": "Telomere-to-telomere (T2T) complete human genome assembly published"
+        },
+        {
+          "year": "2025",
+          "event": "WGS under $500; clinical WGS reimbursed for rare pediatric disease in most states"
+        }
+      ]
+    },
+    {
+      "text": "Sequencing Technologies",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "text": "First-generation Sanger sequencing (1977) reads short fragments accurately but slowly. Next-generation sequencing (NGS) platforms (Illumina, Ion Torrent) perform massively parallel short-read sequencing — cheap and high-throughput but struggle with repetitive regions. Third-generation long-read platforms (PacBio HiFi, Oxford Nanopore) sequence single molecules in real time, resolving structural variants and repeat expansions that short reads miss.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Sanger",
+          "~800 bp",
+          "$500–$1,000/gene",
+          "Confirming known variants"
+        ],
+        [
+          "Illumina NGS",
+          "150–300 bp",
+          "$400–$600",
+          "WGS, WES, gene panels"
+        ],
+        [
+          "PacBio HiFi",
+          "15–20 kb",
+          "$800–$1,200",
+          "Structural variants, phasing"
+        ],
+        [
+          "Oxford Nanopore",
+          "10–100+ kb",
+          "$500–$900",
+          "Rapid WGS, methylation"
+        ],
+        [
+          "Microarray",
+          "SNP/CNV only",
+          "$200–$400",
+          "GWAS, carrier screening"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Technology",
+        "Read Length",
+        "Cost/Genome",
+        "Best For"
+      ]
+    },
+    {
+      "text": "Clinical applications span the continuum from targeted single-gene tests (e.g., CFTR for cystic fibrosis) to multigene panels (e.g., 80-gene hereditary cancer panel), whole-exome sequencing (WES, ~2% of genome), and whole-genome sequencing (WGS, 100%). The clinical utility — not just the technology capability — drives which test is appropriate.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:20.675412+00:00",
+  "updated_at": "2026-06-01T18:34:11.247745+00:00",
+  "sanity_slug": "human-genome-project-to-clinical"
+}

@@ -1,0 +1,89 @@
+{
+  "id": "b9547cc0-b01f-4589-8c02-01b98ad730ce",
+  "track_id": "3f412c46-e54e-421c-9d6b-8cfb3758a4f2",
+  "pillar": "economics",
+  "order": 3,
+  "slug": "mlr-requirements",
+  "title": "MLR Requirements and Profit Limits",
+  "summary": "Explains Medicaid MCO Medical Loss Ratio requirements, how MLR is calculated, reporting obligations, and the implications of failing to meet the 85% floor.",
+  "estimated_minutes": 20,
+  "objectives": [
+    "Calculate MLR using the standard Medicaid formula",
+    "Explain what expenses qualify as clinical versus administrative under MLR rules",
+    "Describe the consequences when an MCO's MLR falls below 85%"
+  ],
+  "content_blocks": [
+    {
+      "body": "The 2016 Medicaid managed care final rule set an 85% medical loss ratio (MLR) standard for MCOs, PIHPs, and PAHPs: states must set capitation rates so each plan can reasonably achieve an MLR of at least 85%, and any minimum MLR a state imposes must be at least 85%.\n\nMLR = (Incurred Claims + Quality Improvement Expenditures + Fraud Prevention Activities) / (Premium Revenue − Taxes and Licensing/Regulatory Fees)\n\nIf a state requires remittance, a plan whose MLR falls below the state's minimum must pay back the difference. States can also set minimums above 85% in their contracts.",
+      "type": "text",
+      "heading": "The 85% MLR Floor"
+    },
+    {
+      "rows": [
+        [
+          "Clinical Services",
+          "YES",
+          "Medical claims, pharmacy, dental, BH"
+        ],
+        [
+          "Quality Improvement",
+          "YES",
+          "Disease management, care coordination programs"
+        ],
+        [
+          "Health IT Infrastructure",
+          "YES (if QI-related)",
+          "Population health tools, care management platforms"
+        ],
+        [
+          "Administrative Costs",
+          "NO",
+          "Marketing, overhead, compliance, billing"
+        ],
+        [
+          "Profit/Surplus",
+          "NO",
+          "Net income, retained earnings, reserves above required"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Expense Category",
+        "Counts Toward MLR Numerator?",
+        "Examples"
+      ]
+    },
+    {
+      "body": "If a state requires remittance and an MCO's annual MLR falls below the 85% threshold, the plan must remit the shortfall to the state Medicaid agency. For example, if a plan received $500 million in capitation and achieved an 82% MLR, it would owe the state $15 million (3% × $500M). States must report MLR data to CMS annually. Unlike ACA marketplace MLR rebates, Medicaid MLR remittances go to the state, not directly to beneficiaries.",
+      "type": "callout",
+      "title": "MLR Remittance: How It Works",
+      "variant": "key"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Federal MLR floor for Medicaid MCOs",
+          "value": "85%",
+          "context": "Established by the 2016 final rule; MCOs must spend at least 85% of premium on clinical services and quality improvement"
+        },
+        {
+          "label": "Maximum administrative/profit allowance",
+          "value": "15%",
+          "context": "Administrative costs including marketing, overhead, and profit are capped at 15% of premium revenue"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "MLR",
+    "Medical Loss Ratio",
+    "profit limits",
+    "administrative costs"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:11.788179+00:00",
+  "updated_at": "2026-10-09T15:08:30.56554+00:00",
+  "sanity_slug": "mlr-requirements"
+}

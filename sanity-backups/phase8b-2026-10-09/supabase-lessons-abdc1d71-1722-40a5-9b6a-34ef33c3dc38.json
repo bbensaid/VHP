@@ -1,0 +1,63 @@
+{
+  "id": "abdc1d71-1722-40a5-9b6a-34ef33c3dc38",
+  "track_id": "ba7eb589-1b43-4f05-80f4-0d64b0d54839",
+  "pillar": "economics",
+  "order": 2,
+  "slug": "physician-payment-fee-schedule",
+  "title": "Physician Payment: The Medicare Fee Schedule and RBRVS",
+  "summary": "Medicare pays physicians using a fee schedule based on Relative Value Units (RVUs) under the Resource-Based Relative Value Scale (RBRVS). Understanding how RVUs are calculated and how the Conversion Factor is set explains the systematic undervaluation of primary care relative to specialty procedures.",
+  "estimated_minutes": 22,
+  "objectives": [
+    {
+      "id": "obj-mcare-005-1",
+      "text": "Describe how RBRVS and RVUs determine physician payment rates"
+    },
+    {
+      "id": "obj-mcare-005-2",
+      "text": "Explain why procedural specialties earn more than primary care under the fee schedule"
+    },
+    {
+      "id": "obj-mcare-005-3",
+      "text": "Describe MACRA and the Quality Payment Program's role in physician payment reform"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Before 1992, Medicare paid physicians based on 'usual, customary, and reasonable' charges — whatever physicians billed, Medicare largely paid. This rewarded proceduralists who could bill high and often and failed to reward cognitive services like evaluation and management. RBRVS was designed to rationalize physician payment.",
+      "type": "text"
+    },
+    {
+      "text": "RBRVS and Relative Value Units",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The **Resource-Based Relative Value Scale (RBRVS)** assigns each physician service a number of **Relative Value Units (RVUs)** based on:\n\n1. **Physician work RVUs** — time, skill, intensity, and mental effort required\n2. **Practice expense RVUs** — overhead costs (staff, equipment, supplies)\n3. **Malpractice RVUs** — professional liability insurance costs\n\nAll three components are adjusted for **geographic practice cost indices (GPCI)** that reflect local cost-of-living and market differences.\n\n**Medicare Payment = (Work RVU × Work GPCI + PE RVU × PE GPCI + MP RVU × MP GPCI) × Conversion Factor**\n\nThe **Conversion Factor (CF)** is set by CMS annually and translates RVUs into dollars. In 2024, the CF is approximately $32.74 per RVU.",
+      "type": "text"
+    },
+    {
+      "text": "The Primary Care Disadvantage",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A systemic critique of RBRVS is that it undervalues primary care. Procedure-based services — colonoscopies, surgeries, imaging — generate more RVUs per hour of physician time than evaluation and management (E&M) services like office visits. A cardiologist performing a procedure earns 5–10x the hourly rate of a primary care physician.\n\nThe result: severe primary care shortages in the U.S. while procedure-based specialties are adequately or over-supplied in many markets. Various payment reform efforts — value-based payment, chronic care management codes, advanced primary care add-ons — have tried to address this imbalance.",
+      "type": "text"
+    },
+    {
+      "text": "MACRA and the Quality Payment Program",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The **Medicare Access and CHIP Reauthorization Act (MACRA)** of 2015 replaced the Sustainable Growth Rate (SGR) formula — which threatened deep physician payment cuts annually — with a new framework: the **Quality Payment Program (QPP)**.\n\nQPP offers two tracks:\n\n**MIPS (Merit-Based Incentive Payment System)** — traditional Medicare billing with performance-based adjustments. Physicians score on quality, cost, improvement activities, and promoting interoperability. High scorers receive bonuses; low scorers receive reductions.\n\n**APM (Advanced Alternative Payment Model) track** — physicians who participate substantially in CMS-approved alternative payment models (ACOs with risk, bundled payments, PCMHs) receive a 5% bonus and exemption from MIPS.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:25:01.860581+00:00",
+  "updated_at": "2026-06-02T16:26:29.183912+00:00",
+  "sanity_slug": "physician-payment-fee-schedule"
+}

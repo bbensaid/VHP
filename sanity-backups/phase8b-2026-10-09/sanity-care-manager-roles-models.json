@@ -1,0 +1,540 @@
+{
+  "_createdAt": "2026-06-01T17:54:13Z",
+  "_id": "care-manager-roles-models",
+  "_rev": "IOfxRsA0kr16lzZkUtMuJu",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T17:54:13Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The People Who Do the Work"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The first half of this course built the analytic machinery of population health — data, risk stratification, prediction, care gaps, and disease-specific programs. But analytics do not call patients, coordinate their care, or help them manage at home. People do. This lesson is about those people: the care managers, and the models that organize their work."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Care management is the hands-on, relationship-based core of population health — the human layer that turns a risk score into actual help for a real person. A care manager is the team member who takes responsibility for guiding a defined set of high-risk patients: coordinating their care across providers, helping them navigate the system, supporting their self-management, and intervening proactively before problems escalate."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is where the proactive, whole-population philosophy becomes a job. The risk stratification lesson identified who needs intensive attention; care management is who delivers it. Understanding the roles, the program types, and the structural models is understanding how population health actually reaches patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Care management is the hands-on, relationship-based core of population health: a care manager takes responsibility for guiding a defined set of high-risk patients — coordinating care, supporting self-management, and intervening proactively. Analytics identify who needs help; care managers deliver it."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Who Care Managers Are"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Care managers come from varied backgrounds, and the mix matters because different patients need different expertise. The most common is the registered nurse (RN) care manager, who handles the clinical work — medication management, disease education, symptom monitoring, coordinating with physicians. RNs are the backbone of complex and chronic care management."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "But care management is a team, not a single role. Social workers address the social and behavioral barriers — housing, benefits, mental health, family situations — that often drive a patient's health more than the clinical issues. Community health workers (the subject of a later lesson) bring trusted, culturally-concordant connection to the community and help with on-the-ground barriers. Pharmacists manage complex medication regimens. The right team for a population mixes these roles."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The key principle is matching the role to the need. A patient whose diabetes is uncontrolled because of a complex insulin regimen needs an RN or pharmacist; a patient whose diabetes is uncontrolled because they cannot afford food or get to appointments needs a social worker or community health worker. Effective care management deploys the whole team and routes each patient to the role that addresses their actual barrier."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Clinical core: medication management, disease education, symptom monitoring, physician coordination.",
+          "title": "RN care manager"
+        },
+        {
+          "_key": "step2",
+          "description": "Social and behavioral barriers: housing, benefits, mental health, family.",
+          "title": "Social worker"
+        },
+        {
+          "_key": "step3",
+          "description": "Trusted community connection and on-the-ground barrier support.",
+          "title": "Community health worker"
+        },
+        {
+          "_key": "step4",
+          "description": "Complex medication management and titration.",
+          "title": "Pharmacist"
+        }
+      ],
+      "title": "The Care Management Team"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Types of Care Management"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Care management is not one program but several, distinguished by the population and the time horizon. Chronic Care Management (CCM) is ongoing support for patients with two or more chronic conditions expected to last at least a year — the steady, month-to-month work of keeping chronic disease controlled. Medicare reimburses it: CPT 99490 covers 20 minutes of clinical staff time per month for care planning and oversight."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Complex CCM serves patients needing more intensive management, with codes (99487, plus add-on 99489) covering 60+ minutes per month and moderate-to-high-complexity decision-making. Transitional Care Management (TCM) is the time-limited, high-intensity work in the 30 days after a hospital discharge — the post-discharge follow-up that prevents readmissions (connecting to the heart-failure and ADT-alert lessons). And complex (intensive) care management targets the highest-risk, highest-cost patients with hands-on, often in-person support."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "These programs each have their own reimbursement, eligibility, and intensity, but they share a logic: match the program to the patient's risk tier and situation. A stable two-chronic-condition patient gets CCM; a patient just discharged from the hospital gets TCM; the complex apex patient gets intensive care management. This is the risk pyramid translated into staffing and programs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3t1",
+      "_type": "code",
+      "code": [
+        {
+          "Intensity": "Ongoing; ~20 min/month (CPT 99490)",
+          "Population": "2+ chronic conditions (12+ months)",
+          "Program": "Chronic_Care_Management"
+        },
+        {
+          "Intensity": "60+ min/month; high-complexity decisions (99487/99489)",
+          "Population": "Higher-complexity chronic patients",
+          "Program": "Complex_CCM"
+        },
+        {
+          "Intensity": "High, time-limited (30-day post-discharge window)",
+          "Population": "Recently discharged patients",
+          "Program": "Transitional_Care_Mgmt"
+        },
+        {
+          "Intensity": "Intensive, often in-person",
+          "Population": "Highest-risk, highest-cost",
+          "Program": "Complex_Care_Management"
+        }
+      ],
+      "language": "json",
+      "title": "Types of Care Management"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Caseload: The Central Design Variable"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The single most important operational decision in care management is caseload — how many patients one care manager is responsible for. It is the dial that trades off intensity against reach, and getting it wrong wastes the whole program. Too high, and the care manager cannot meaningfully help anyone; too low, and the program is too expensive to scale."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Caseloads vary enormously by intensity. A typical RN care manager handling high-risk patients carries roughly 50 to 150 patients. But the range is wide: a purely telephonic, light-touch program might run as high as ~500 members per care manager, while intensive in-person case management for the most complex patients might be as low as ~25 to 1. The intensity of the intervention determines the caseload, not the other way around."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The factors that set the right caseload include the clinical and social complexity of the patients, the care manager's experience, the available social supports, the setting, and the target outcomes. The discipline is to match caseload to the population's needs: the highest-risk apex patients need small caseloads and intensive attention; the broader rising-risk tier can be served with larger caseloads and lighter touch. This is, again, the risk pyramid driving resource allocation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "High-risk patients per RN care manager (NACHC)",
+          "label": "Typical RN Caseload",
+          "value": "50-150"
+        },
+        {
+          "_key": "s2",
+          "context": "Upper end for purely telephonic programs (industry)",
+          "label": "Light-Touch Telephonic",
+          "value": "~500:1"
+        },
+        {
+          "_key": "s3",
+          "context": "Lower end for the most complex patients (industry)",
+          "label": "Intensive In-Person",
+          "value": "~25:1"
+        },
+        {
+          "_key": "s4",
+          "context": "More intensive intervention = smaller caseload",
+          "label": "Sets the Caseload",
+          "value": "Intensity"
+        }
+      ]
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Embedded vs. Centralized Models"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Beyond who and how many, there is a structural question: where does the care manager sit? Two models dominate. In the embedded (practice-based) model, the care manager is part of the primary care team — physically and organizationally inside the practice, working alongside the physicians and their patients. In the centralized model, care managers work from a central hub (often a health plan or a system-level team), independent of any one practice's workflow."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Each has trade-offs. Embedded care managers build trust with both physicians and patients, integrate into the clinical workflow, and benefit from warm hand-offs and shared knowledge — evidence suggests embedded models are generally better adopted into practice. Centralized models offer efficiency, consistency, specialized expertise, and easier scaling across many practices, but can feel disconnected from the front-line care team."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Many organizations blend the two — embedded care managers for the highest-touch work where relationship and workflow integration matter most, centralized teams for scalable, telephonic, or specialized functions. There is no single right answer; the choice depends on the population, the organization's structure, and the resources available. The throughline is that care management is the human engine of population health, and how you staff, size, and structure it determines whether all the upstream analytics actually translate into better care. The next lesson turns to what care managers and patients actually do together: care planning and patient engagement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "A care manager given 300 of the most complex patients cannot meaningfully help any of them; one given 25 light-touch patients is wasted capacity. The caseload must match the intervention intensity and patient complexity — small for intensive in-person work, larger for telephonic light-touch — or the program fails on either impact or cost.",
+      "title": "Caseload Must Match Intervention Intensity"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Care management is the hands-on, relationship-based core of population health — the human layer that turns risk scores into actual help; care managers guide defined sets of high-risk patients.",
+        "Care managers come from varied backgrounds — RNs (clinical core), social workers (social barriers), community health workers, pharmacists — and the right team matches the role to the patient's actual barrier.",
+        "Care management types include Chronic Care Management (CCM, 2+ conditions, ~20 min/month, CPT 99490), Complex CCM (60+ min), Transitional Care Management (post-discharge), and intensive complex care management.",
+        "Medicare reimburses these programs, making team-based, between-visit care management financially sustainable.",
+        "Caseload is the central design variable: typically 50-150 high-risk patients per RN, ranging from ~500:1 (telephonic light-touch) to ~25:1 (intensive in-person).",
+        "Intervention intensity determines caseload — more intensive work requires smaller caseloads — and should follow the risk pyramid.",
+        "Care managers can be embedded (in the practice; better integrated and adopted) or centralized (in a hub; more scalable and consistent); many organizations blend both."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Caseload must match intervention intensity. Intensive, in-person management of the most complex patients requires small caseloads — often as low as ~25 to 1, and typically 50-150 for high-risk RN caseloads. Assigning 300 complex patients to one care manager (a ratio appropriate only for light-touch telephonic work) means none of them get the intensive support they need. The program would fail on impact despite spending the money.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The caseload is too small to be cost-effective"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The caseload is far too high for intensive in-person management of complex patients (typically ~25-150), so the care manager cannot meaningfully help any of them"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Complex patients do not need care management"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "RNs cannot perform care management"
+        }
+      ],
+      "question": "A care management program assigns each RN care manager 300 of the organization's most complex, highest-risk patients for intensive in-person management. What is the likely problem?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Care Management Action Guide (NACHC) — https://www.nachc.org/wp-content/uploads/2022/01/Care-Management-AG_December-2021.pdf — care manager roles; RN caseload 50-150 high-risk patients; team composition"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Chronic Care Management (RHIhub) — https://www.ruralhealthinfo.org/care-management/chronic-care-management — CCM definition; CPT 99490; complex CCM (99487/99489); reimbursement"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] What Is a Care Manager? (ChartSpan) — https://www.chartspan.com/blog/what-is-a-care-manager/ — RN care manager role; CCM and TCM responsibilities"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Section 5: Selecting a Care Management Program Model (AHRQ) — https://www.ahrq.gov/patient-safety/settings/long-term-care/resource/hcbs/medicaidmgmt/mm5.html — caseload ranges (~500:1 telephonic to ~25:1 intensive); program model selection"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Effect of Care Management Program Structure on Implementation (PMC) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4986276/ — embedded (practice-based) vs centralized models; embedded better normalized"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Designing the Role of the Embedded Care Manager (CEConnection) — https://alliedhealth.ceconnection.com/files/DesigningtheRoleoftheEmbeddedCareManager-1372333255651.pdf — embedded care manager working alongside PCPs and high-risk patients"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "population-health-management",
+  "order": 10,
+  "slug": {
+    "_type": "slug",
+    "current": "care-manager-roles-models"
+  },
+  "title": "Care Manager Roles and Care Management Models"
+}

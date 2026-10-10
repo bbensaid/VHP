@@ -1,0 +1,491 @@
+{
+  "_createdAt": "2026-06-02T04:10:03Z",
+  "_id": "biobanks-genomic-research",
+  "_rev": "IOfxRsA0kr16lzZkV4gKOf",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T04:10:03Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Where Genomic Knowledge Comes From"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Every clinical genomics application in this course — interpreting a variant, calculating a risk, matching a drug — depends on knowledge that had to be discovered somewhere. That somewhere is, increasingly, the biobank. Biobanks are the engine of population genomic research, the resource that turns raw human genetic variation into the knowledge clinicians use. Understanding them explains where genomic medicine's evidence base actually comes from."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A biobank is a large, secure repository of biological samples (like blood and saliva) from volunteer participants who consented to donate them for research, along with the genomic data derived from those samples and — crucially — linked to the participants' health records, lifestyle data, and environmental exposures. It is the combination that gives biobanks their power: genomes connected to real health outcomes across large populations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This linkage is what enables discovery. With a genome alone, you cannot learn what a variant does; with hundreds of thousands of genomes linked to lifelong health data, patterns emerge — which variants associate with which diseases, drug responses, and traits. Biobanks are how the field moves from individual sequences to generalizable knowledge."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A biobank is a large repository of consented biological samples and genomic data, linked to participants' health, lifestyle, and environmental data. That linkage of genomes to real outcomes at population scale is what generates the knowledge clinical genomics depends on."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Major Biobanks"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A handful of national biobanks dominate the landscape, each holding genomic and health data on hundreds of thousands of people. The UK Biobank is a landmark — about 500,000 participants with whole-genome sequence data plus more than 10,000 variables including imaging, physical measurements, activity tracking, and lifestyle questionnaires, all linked to health records. It has become a globally used resource powering thousands of studies."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "In the United States, the NIH All of Us Research Program has enrolled over 500,000 participants and is generating clinical-grade whole-genome sequence data. Internationally, programs like Singapore's PRECISE, Biobank Japan, and Korea's National Project of Bio-Big Data are building comparable resources. Together these initiatives are generating unprecedented volumes of high-resolution genomic data integrated with deep clinical and environmental information."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "A critical difference between them is diversity, which foreshadows a major equity issue. UK Biobank participants are roughly 88 percent white — even somewhat over-representing white participants relative to the UK population. All of Us, by explicit design, prioritizes recruiting from populations historically underrepresented in genomic research. This matters enormously because genomic knowledge derived from a non-diverse cohort applies less well to everyone else — the foundation of the \"diversity deficit\" the equity lessons address."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "With WGS + 10,000+ variables (UK Biobank)",
+          "label": "UK Biobank Participants",
+          "value": "~500,000"
+        },
+        {
+          "_key": "s2",
+          "context": "NIH program with a diversity focus (NIH)",
+          "label": "All of Us Participants",
+          "value": "500,000+"
+        },
+        {
+          "_key": "s3",
+          "context": "Over-representing white participants (UK Biobank data)",
+          "label": "UK Biobank White",
+          "value": "~88%"
+        },
+        {
+          "_key": "s4",
+          "context": "UK, US, Singapore, Japan, Korea, and more",
+          "label": "National Biobanks",
+          "value": "Multiple"
+        }
+      ]
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Biobanks Discover: GWAS and Polygenic Risk"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The signature discovery method enabled by biobanks is the genome-wide association study (GWAS). A GWAS scans the genomes of large numbers of people, comparing those with a condition (or trait) to those without, to find genetic variants statistically associated with it. With biobank-scale data, GWAS have identified hundreds of thousands of variant-trait associations across virtually every common disease."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "These associations feed a powerful tool: the polygenic risk score (PRS). Most common diseases (heart disease, diabetes, many cancers) are not caused by a single gene but by the combined small effects of many variants. A PRS sums up the effects of those many variants into a single score estimating a person's genetic predisposition to a condition — fundamentally different from the single-gene, high-penetrance variants of the hereditary-conditions lesson."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Polygenic risk scores are an emerging frontier of precision medicine — potentially identifying people at elevated risk for common diseases before symptoms, enabling earlier prevention. But they carry serious caveats: they are probabilistic (a high score is elevated risk, not destiny), their communication to patients is challenging, and — critically — they perform far worse in populations underrepresented in the biobanks they were derived from. A PRS built mostly on European-ancestry data is less accurate for everyone else, which is exactly why biobank diversity matters so much."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "Researchers run a genome-wide association study across a biobank of hundreds of thousands of people, finding the many variants associated with coronary heart disease. They combine those variants' effects into a polygenic risk score.\nA person's PRS can then estimate their genetic predisposition to heart disease, potentially flagging high-risk individuals for earlier prevention. But because the underlying GWAS was conducted mostly in European-ancestry participants, the score is markedly less accurate for people of other ancestries — a direct consequence of biobank composition.",
+      "title": "From Biobank to Polygenic Risk Score"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Consent and the Ethics of Biobanking"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Biobanks raise distinctive ethical challenges, starting with consent. Because biobank data is used for countless future studies that cannot all be specified in advance, participants typically sign \"broad consent\" — agreeing to let their samples and data be used for a wide range of future research purposes, rather than consenting to each specific study. This enables the open-ended discovery biobanks are built for."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Broad consent is ethically contested. It trades the specificity of traditional informed consent (where you know exactly what you are agreeing to) for the practical flexibility research needs. Critics note that biobank consent documents can frame research narrowly (in terms of disease and treatment) while obscuring the full range of lawful uses — raising questions about whether participants truly understand what they agreed to. Maintaining public trust requires transparency about how data is actually used."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Other ethical questions include return of results (if a biobank discovers something clinically important about a participant, does it tell them? — practices vary), data governance and privacy (these are vast repositories of the most personal data imaginable), and benefit sharing (do participants and their communities benefit from discoveries made with their data?). These connect directly to the next lessons on genetic privacy law (GINA) and consent and equity — biobanks are where many of those issues become concrete at scale."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "Biobank participants typically give \"broad consent\" for unspecified future research, since the studies cannot all be known in advance. This enables open-ended discovery but means participants do not know exactly how their data will be used — and consent documents can obscure the full range of uses. Maintaining trust depends on transparency, and the model raises ongoing questions about return of results and benefit sharing.",
+      "title": "Broad Consent Trades Specificity for Flexibility"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Biobanks Matter for Clinical Genomics"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Biobanks close the loop of clinical genomics. The interpretation bottleneck from earlier lessons — knowing what a variant means — is solved largely by biobank-scale data: a variant seen across hundreds of thousands of people with known health outcomes becomes interpretable (recall the GA4GH data-sharing lesson, which exists partly to pool exactly this kind of data). Biobanks are the source of the knowledge that makes individual genomic results meaningful."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "They are also where the future of precision medicine is being built — polygenic risk scores for common diseases, new drug-gene associations, novel disease genes, and the multi-omics research of a later lesson. The clinical applications of tomorrow are being discovered in the biobanks of today. And they make vivid the equity stakes: because discovery happens in these cohorts, who is in them determines who benefits from the resulting knowledge."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The takeaway is that clinical genomics rests on a research foundation, and biobanks are that foundation. They generate the evidence, raise the central ethical questions of consent and trust, and embody the diversity problem that determines whether genomic medicine serves everyone or only the populations who were studied. The next two lessons take up the policy and ethics — genetic privacy and discrimination protections (GINA), and consent and equity — that the rise of biobanks and clinical genomics makes urgent."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "A biobank is a large repository of consented biological samples and genomic data linked to participants' health, lifestyle, and environmental data — the engine of population genomic research.",
+        "The linkage of genomes to real health outcomes at scale is what enables discovery; biobanks turn individual sequences into generalizable knowledge.",
+        "Major biobanks include the UK Biobank (~500,000, but ~88% white) and the NIH All of Us program (500,000+, with an explicit diversity focus), plus international initiatives.",
+        "Genome-wide association studies (GWAS) use biobank data to find variant-disease associations, which feed polygenic risk scores (PRS) summing many variants' small effects.",
+        "PRS are an emerging precision-medicine frontier but are probabilistic, hard to communicate, and far less accurate in populations underrepresented in the source biobanks.",
+        "Biobanks rely on \"broad consent\" for unspecified future research, which is ethically contested and raises questions about understanding, return of results, governance, and benefit sharing.",
+        "Biobanks generate the knowledge that makes clinical genomic results interpretable, are where precision medicine's future is built, and embody the equity stakes of who gets studied."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Polygenic risk scores are built from genome-wide association studies conducted in specific biobank populations. A score derived mostly from European-ancestry participants is markedly less accurate for people of other ancestries, because variant frequencies and associations differ across populations. This is why biobank diversity matters so much — and (separately) PRS are probabilistic estimates of predisposition, not certainties. The under-representation problem directly limits who benefits from the resulting tools.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "It will be equally accurate for all populations"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "It performs markedly worse for people of other ancestries, because the underlying GWAS was derived mostly from European-ancestry data — a direct consequence of biobank composition"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "It guarantees who will develop heart disease"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Polygenic scores are unaffected by the source population"
+        }
+      ],
+      "question": "A polygenic risk score for heart disease was developed using a biobank whose participants are ~88% of European ancestry. What is a key limitation when applying it?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Biobanks (Broad Institute) — https://www.broadinstitute.org/what-is-a-biobank — biobank definition: samples, genomic data, linked health/lifestyle/environmental data"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Lessons from National Biobank Projects Utilizing Whole-Genome Sequencing (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC11887102/ — UK Biobank, All of Us, Singapore PRECISE, Biobank Japan, Korea; WGS at population scale"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] UK Biobank (Wikipedia) — https://en.wikipedia.org/wiki/UK_Biobank — ~500,000 participants; 10,000+ variables; ~88% white participants"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Genomic Data in the All of Us Research Program (Nature) — https://www.nature.com/articles/s41586-023-06957-x — All of Us diverse WGS data; diversity focus"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Genome-Wide Risk Prediction of Common Diseases Across Ancestries (Cell Genomics / ScienceDirect) — https://www.sciencedirect.com/science/article/pii/S2666979X22000428 — GWAS-derived polygenic risk scores; ancestry-dependent performance"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Consent and Its Discontents: The Case of UK Biobank (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC12380962/ — broad consent; framing concerns; trust and governance"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "genomics-precision-medicine",
+  "order": 9,
+  "slug": {
+    "_type": "slug",
+    "current": "biobanks-genomic-research"
+  },
+  "title": "Biobanks and Population Genomic Research"
+}

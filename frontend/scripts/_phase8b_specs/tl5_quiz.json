@@ -1,0 +1,24 @@
+{
+ "pairs": [
+  {
+   "old": "Once outpatient TKA was excluded from the bundle nationally and some hospitals' participation became voluntary, the boundary-gaming incentive weakened and CJR's savings were no longer statistically significant by the fourth performance year \u2014 direct evidence that the earlier savings were partly an artifact of the mandatory boundary itself.",
+   "new": "After outpatient knee replacement could be billed outside the bundle and participation became voluntary in half the areas, hospitals responded to the new boundary \u2014 high-spending hospitals dropped out, and mandatory hospitals kept healthier knee patients inside the inpatient bundle \u2014 so savings fell from about $976 to $331 per episode and were no longer statistically significant by the fourth year (JAMA Internal Medicine, 2021).",
+   "claim": "quiz explanation: boundary-gaming incentive weakened; savings an artifact of the mandatory boundary",
+   "verdict": "MISATTRIBUTED",
+   "src": "Wilcock et al., JAMA Intern Med 2021;181(7):932-940 (PMID 33999159): savings dissipated because hospitals responded to the year-3 changes (high-spending dropouts; mandatory hospitals kept healthier knee patients inpatient in the bundle; selection explained 75% of decline) \u2014 not because the gaming incentive weakened",
+   "note": ""
+  }
+ ],
+ "supa": [
+  {
+   "table": "quiz_questions",
+   "col": "explanation",
+   "ids": [
+    "8649c10f-a05c-4279-8648-5fbb852eb701"
+   ]
+  }
+ ],
+ "files": [
+  "frontend/content/course_transformation_leadership.json"
+ ]
+}

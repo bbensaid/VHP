@@ -1,0 +1,77 @@
+{
+  "id": "2b658f0b-5f37-4e8e-a86f-71cb3971c5cd",
+  "track_id": "3e784043-efb4-454d-8a98-4e9dc43ad047",
+  "pillar": "technology",
+  "order": 2,
+  "slug": "ehr-genomic-integration",
+  "title": "EHR Integration and Clinical Decision Support for Genomics",
+  "summary": "Embedding genomic results in clinical workflows — persistent storage, CDS triggers, and alert design.",
+  "estimated_minutes": 20,
+  "objectives": [],
+  "content_blocks": [
+    {
+      "text": "The EHR Integration Challenge",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "text": "Genomic data poses unique EHR integration challenges. Unlike a hemoglobin level that changes daily, a patient's BRCA1 genotype is permanent and relevant for life. Yet most EHRs store lab results as episodic documents rather than persistent patient attributes. Genomic results filed as PDFs are invisible to clinical decision support engines. Structured, computable genomic data — stored as FHIR Observations or coded EHR fields — is required for actionable precision medicine.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Level 0: PDF Only",
+          "Genomic report stored as unstructured document",
+          "None — clinician must read and apply manually"
+        ],
+        [
+          "Level 1: Discrete Coded Variant",
+          "Key variants stored as discrete EHR fields (e.g., CYP2D6 phenotype, BRCA1 status)",
+          "Basic alerts at point-of-care for known drug-gene pairs"
+        ],
+        [
+          "Level 2: FHIR Genomics",
+          "Full variant data in FHIR Observation/DiagnosticReport resources",
+          "Real-time CDS Hooks integration, population-level queries"
+        ],
+        [
+          "Level 3: Genomic Data Warehouse",
+          "Aggregated genomic + clinical data for analytics and research",
+          "AI/ML-driven discovery, cohort identification, trial matching"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Integration Level",
+        "Description",
+        "CDS Capability"
+      ]
+    },
+    {
+      "text": "PGx Alert Design Principles",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "text": "Clinical decision support alerts for pharmacogenomics must be carefully designed to avoid alert fatigue — the phenomenon where clinicians override >90% of alerts, including critical ones, due to excessive irrelevant interruptions. Best practices include: tiered severity (hard stop vs. advisory), pre-emptive display in patient summary rather than only at prescription, actionable alternative recommendations, and links to the underlying evidence (CPIC guidelines).",
+      "type": "text"
+    },
+    {
+      "body": "The IGNITE (Implementing GeNomics In pracTicE) network studied PGx CDS implementation across 7 academic medical centers. Key finding: when PGx results were pre-emptively displayed in patient summary views (before prescribing), clinicians used them appropriately 85% of the time. When alerts only fired at prescription, override rates exceeded 70%. Proactive display, not reactive alerting, drives utilization.",
+      "type": "callout",
+      "title": "Genomics EHR Pilots: Key Findings",
+      "variant": "info"
+    },
+    {
+      "text": "Tumor board genomic reporting requires structured presentation of CGP results — variant classification, tier (ESCAT/AMP tiers), matched clinical trials, and FDA-approved therapies. Platforms like Tempus, Foundation Medicine, and Caris Life Sciences provide structured reporting with clinical decision support embedded. Interoperability with institutional EHRs via FHIR remains a work in progress.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:23.085661+00:00",
+  "updated_at": "2026-06-02T04:06:34.320106+00:00",
+  "sanity_slug": "ehr-genomic-integration"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "19b0e462-6419-42f0-9930-6bd7a6790991",
+  "quiz_id": "c099c76f-c24d-429f-8bab-58f32abc1ff3",
+  "order": 1,
+  "question_type": "single_choice",
+  "question": "Per PMI's Benefits Realization Management Framework, what is the third of the three core elements — the one this lesson identifies as most often missing from transformation plans?",
+  "explanation": "Identify and execute are the two elements most transformation plans do carry out; sustain — keeping the benefit in place and monitored after the program formally closes — is the element most often skipped, which is exactly the gap the NHS's own National Audit Office identified.",
+  "points": 1
+}

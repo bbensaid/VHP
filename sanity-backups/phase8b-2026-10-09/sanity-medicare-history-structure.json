@@ -1,0 +1,583 @@
+{
+  "_createdAt": "2026-06-02T15:16:54Z",
+  "_id": "medicare-history-structure",
+  "_rev": "qISJ5fIz37lwajxIS1F4Cn",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T15:16:54Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Medicare Was Created"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Before 1965, growing old in America often meant losing health coverage exactly when you needed it most. Private insurers either refused to cover older adults or charged premiums most retirees could not afford, and roughly half of Americans over 65 had no health insurance at all. Aging was, in effect, a pre-existing condition that the private market would not insure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "President Lyndon B. Johnson signed Medicare into law on July 30, 1965, as part of the Social Security Amendments of 1965. The same statute created Medicaid. Medicare became Title XVIII of the Social Security Act and Medicaid became Title XIX — the legal \"titles\" you still hear referenced today."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Johnson held the signing ceremony at the Truman Library in Independence, Missouri, to honor former President Harry Truman, who had proposed national health insurance back in 1945 only to be blocked by Congress. Truman was enrolled as Medicare’s very first beneficiary and received the first Medicare card."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicare is a social insurance program: workers pay into it through payroll taxes during their careers and draw benefits in retirement, regardless of income. This is fundamentally different from Medicaid, which is means-tested and targets low-income people."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1ex1",
+      "_type": "exampleBlock",
+      "content": "When Johnson signed Medicare into law at the Truman Library on July 30, 1965, he enrolled 81-year-old former President Harry Truman as the program’s first beneficiary. Truman and his wife Bess received the first two Medicare cards. Johnson chose the venue deliberately to credit Truman, who had first proposed national health insurance two decades earlier.",
+      "title": "Harry Truman, Medicare Card #1"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Four Parts of Medicare"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicare grew from a two-part program into a four-part program over four decades. Parts A and B existed from the start in 1965 and together are called \"Original\" or \"Traditional\" Medicare. Part C (Medicare Advantage) was created by the Balanced Budget Act of 1997 — originally called Medicare+Choice — letting beneficiaries get their benefits through private plans. Part D, the outpatient prescription drug benefit, was created by the Medicare Modernization Act of 2003 and took effect on January 1, 2006."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Part A is Hospital Insurance. It covers inpatient hospital stays, skilled nursing facility care following a qualifying hospital stay, hospice, and some home health. Most beneficiaries pay no Part A premium because they (or a spouse) paid Medicare payroll taxes for at least 40 quarters — ten years — of work."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Part B is Medical Insurance. It covers physician visits, outpatient care, preventive services, durable medical equipment, and drugs administered in a clinical setting. Part B requires a monthly premium. Part C, Medicare Advantage, is a private-plan alternative that must cover everything A and B cover and usually bundles in Part D drug coverage. Part D is the standalone voluntary prescription drug benefit delivered by private plans."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Original Medicare (Parts A + B)",
+        "points": [
+          "Run directly by the federal government",
+          "See any provider that accepts Medicare nationwide",
+          "No annual out-of-pocket cap (without a Medigap policy)",
+          "Add standalone Part D for drugs"
+        ]
+      },
+      "right": {
+        "label": "Medicare Advantage (Part C)",
+        "points": [
+          "Run by private insurers paid a capitated rate by CMS",
+          "Usually network-based (HMO/PPO)",
+          "Federal law requires an annual out-of-pocket maximum",
+          "Drug coverage usually built in; often extra dental/vision benefits"
+        ]
+      },
+      "title": "Original Medicare vs. Medicare Advantage (Part C)"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Who Is Eligible"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicare eligibility is not purely about turning 65. The program has four distinct pathways to coverage, and understanding them is essential because they carry different rules about premiums and waiting periods."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The main pathway is age. U.S. citizens and lawful permanent residents who have worked 40 quarters (ten years) in Medicare-covered employment are entitled to premium-free Part A at 65 and can enroll in Part B for a monthly premium. People who reach 65 without enough work quarters can still buy into Part A by paying a premium."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The disability pathway covers people under 65 who have received Social Security Disability Insurance (SSDI) for 24 months; they are then automatically enrolled in Parts A and B. Two conditions bypass the standard 24-month wait: people with End-Stage Renal Disease (ESRD) generally qualify about three months after starting regular dialysis or after a kidney transplant, and people with ALS (amyotrophic lateral sclerosis) qualify immediately upon receiving SSDI."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Citizens/permanent residents with 40 quarters of Medicare-taxed work get premium-free Part A; those with fewer quarters can buy in.",
+          "title": "Age 65+"
+        },
+        {
+          "_key": "step2",
+          "description": "People under 65 are auto-enrolled in Parts A and B after 24 months of Social Security Disability Insurance benefits.",
+          "title": "SSDI for 24 months"
+        },
+        {
+          "_key": "step3",
+          "description": "Qualify at any age, generally ~3 months after regular dialysis begins or after a kidney transplant — no 24-month wait.",
+          "title": "End-Stage Renal Disease"
+        },
+        {
+          "_key": "step4",
+          "description": "People with ALS receive Medicare immediately upon collecting SSDI — no 24-month wait.",
+          "title": "ALS"
+        }
+      ],
+      "title": "The Four Pathways to Medicare Eligibility"
+    },
+    {
+      "_key": "s3w1",
+      "_type": "warningBlock",
+      "message": "Medicare is federal, age/disability-based, and not means-tested. Medicaid is a joint federal-state program that is means-tested for low-income people. About 12 million Americans are \"dual eligibles\" enrolled in both at once — Medicare pays first, Medicaid fills gaps.",
+      "title": "Don’t confuse Medicare with Medicaid"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Big Medicare Is"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicare is one of the largest payers in the world. As of 2025, about 68.9 million Americans are enrolled, and roughly 90 percent of them are age 65 or older; the rest qualify through disability, ESRD, or ALS. In 2024, about 61.2 million beneficiaries had both Part A and Part B."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The program is also a massive share of public finances. Medicare made up roughly 13.5 percent of the federal budget in 2024, and in 2024 Medicare spending reached about $1.1 trillion — around 21 percent of all national health expenditures. In short, more than one in five U.S. health care dollars flows through Medicare."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The pressure is demographic. The United States hit \"Peak 65\" in 2025, with a record 4.18 million people turning 65 in a single year — an average of about 11,400 every day. This wave of aging baby boomers is why Medicare financing, payment reform, and the shift toward value-based care dominate health policy debates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "About 90% are age 65+ (Senior Living / CMS data)",
+          "label": "People Enrolled (2025)",
+          "value": "68.9M"
+        },
+        {
+          "_key": "s2",
+          "context": "About 21% of national health expenditures (CMS NHE)",
+          "label": "Medicare Spending 2024",
+          "value": "~$1.1T"
+        },
+        {
+          "_key": "s3",
+          "context": "A major driver of federal spending (KFF Medicare 101)",
+          "label": "Of Federal Budget (2024)",
+          "value": "13.5%"
+        },
+        {
+          "_key": "s4",
+          "context": "\"Peak 65\" — record 4.18M reached 65 in one year",
+          "label": "Turning 65 Per Day in 2025",
+          "value": "11,400"
+        }
+      ]
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Medicare’s Structure Matters"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicare’s four-part design shapes nearly everything about how American health care is paid for. Because Part A is funded by a dedicated payroll-tax trust fund while Part B and Part D draw heavily on general revenue and premiums, the parts face very different fiscal pressures — a distinction explored in the next lesson on financing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicare also sets the pace for the entire system. Private insurers frequently benchmark their payment rates to Medicare, and Medicare’s policy experiments — prospective payment, accountable care organizations, bundled payments — ripple outward to Medicaid and commercial payers. When Medicare changes how it pays, the whole market tends to follow."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Finally, the rapid growth of Medicare Advantage has shifted the program toward private administration. More than half of eligible beneficiaries are now in Part C plans, which changes how care is managed, how providers are reimbursed, and where federal dollars actually go."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5q1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5q1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicare did not just insure older Americans — it became the single most powerful force shaping how the entire U.S. health care system is financed and delivered."
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Medicare was signed into law on July 30, 1965, by President Johnson as Title XVIII of the Social Security Act, alongside Medicaid (Title XIX); Harry Truman was its first beneficiary.",
+        "Medicare is social insurance — funded by payroll taxes and available regardless of income — not a means-tested program like Medicaid.",
+        "Part A covers hospital care, Part B covers outpatient/physician care, Part C (Medicare Advantage) is the private-plan alternative, and Part D covers prescription drugs.",
+        "Parts A and B date to 1965; Part C came from the Balanced Budget Act of 1997 and Part D from the Medicare Modernization Act of 2003 (effective 2006).",
+        "Eligibility has four pathways: age 65+ with 40 work quarters, 24 months of SSDI, ESRD, and ALS (the last two skip the 24-month wait).",
+        "As of 2025, about 68.9 million people are enrolled, ~90% of them age 65 or older.",
+        "Medicare spent roughly $1.1 trillion in 2024 — about 21% of national health spending and ~13.5% of the federal budget — and the \"Peak 65\" wave is intensifying fiscal pressure."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Part C, Medicare Advantage, lets beneficiaries receive their benefits through private plans paid a capitated rate by CMS. Part A covers hospital/inpatient care, Part B covers outpatient and physician services, and Part D covers prescription drugs — so the other three options mismatch the part with its coverage.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Part A covers prescription drugs"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": false,
+          "text": "Part B covers inpatient hospital stays"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": true,
+          "text": "Part C (Medicare Advantage) is the private-plan alternative to Original Medicare"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Part D is the hospital insurance funded by payroll taxes"
+        }
+      ],
+      "question": "Which of the following correctly pairs a Medicare part with what it primarily covers?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Medicare Is Signed Into Law — SSA History — https://www.ssa.gov/history/lbjsm.html — July 30, 1965 signing, Truman as first beneficiary."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Medicare and Medicaid Act (1965) — National Archives — https://www.archives.gov/milestone-documents/medicare-and-medicaid-act — Title XVIII/XIX structure and intent."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Original Medicare (Part A and B) Eligibility and Enrollment — CMS — https://www.cms.gov/medicare/enrollment-renewal/original-part-a-b — 40 quarters, premium-free Part A, eligibility rules."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Medicare Coverage for People with Disabilities — Center for Medicare Advocacy — https://medicareadvocacy.org/medicare-info/medicare-coverage-for-people-with-disabilities/ — 24-month SSDI wait, ESRD and ALS exceptions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Medicare Prescription Drug, Improvement, and Modernization Act — Wikipedia/Congress.gov — https://www.congress.gov/bill/108th-congress/house-bill/1 — Part D created 2003, effective Jan 1, 2006; Part C history."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Medicaid and Medicare Statistics in 2026 — SeniorLiving.org — https://www.seniorliving.org/medicare-medicaid/statistics/ — 68.9M enrolled in 2025, ~90% age 65+."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] Medicare Health Policy 101 — KFF — https://www.kff.org/medicare/health-policy-101-medicare/ — ~$1.1T spending, ~21% of NHE, ~13.5% of federal budget."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src8s",
+          "_type": "span",
+          "marks": [],
+          "text": "[8] America is hitting \"peak 65\" in 2024/2025 — CBS News — https://www.cbsnews.com/news/retirement-medicare-401k-what-to-know-peak-65/ — 4.18M turning 65, ~11,400/day."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicare-fundamentals",
+  "order": 1,
+  "slug": {
+    "_type": "slug",
+    "current": "medicare-history-structure"
+  },
+  "title": "Medicare: History, Structure, and Enrollment"
+}

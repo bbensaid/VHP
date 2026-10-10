@@ -1,0 +1,75 @@
+{
+  "id": "59acbd07-d668-4f4b-a5bf-25682ca84386",
+  "track_id": "fa4f708c-64f6-496c-b5b8-ace2382eadb0",
+  "pillar": "operations",
+  "order": 3,
+  "slug": "provider-credentialing-mco",
+  "title": "Provider Credentialing and Contracting with MCOs",
+  "summary": "Covers how MCOs credential and contract with providers, including primary source verification, delegated credentialing, and common provider contracting disputes.",
+  "estimated_minutes": 18,
+  "objectives": [
+    "Explain the primary source verification requirement in MCO credentialing",
+    "Describe the delegated credentialing model and its regulatory basis",
+    "Identify common provider contracting requirements in Medicaid MCO agreements"
+  ],
+  "content_blocks": [
+    {
+      "body": "MCOs must credential all network providers before allowing them to treat enrollees. Under 42 CFR §438.214, MCOs must: verify that providers meet state licensing and certification requirements; have procedures to exclude providers excluded from federal programs; and recredential providers at least every three years.\n\n**Primary source verification** requires the MCO to verify credentials directly with the issuing source — e.g., confirming a medical license with the state medical board, not just accepting the provider's copy. This protects against credential fraud and ensures network quality.",
+      "type": "text",
+      "heading": "Provider Credentialing: MCO Obligations"
+    },
+    {
+      "body": "Large health systems and medical groups often request that MCOs delegate credentialing responsibility to them — meaning the group credentials its own providers and the MCO accepts the group's determination. This is permitted under 42 CFR §438.214 if the MCO maintains oversight and can audit the delegate's credentialing files. Delegation significantly reduces administrative burden for large networks but requires robust oversight agreements.",
+      "type": "callout",
+      "title": "Delegated Credentialing",
+      "variant": "tip"
+    },
+    {
+      "type": "concepts_grid",
+      "concepts": [
+        {
+          "term": "Primary Source Verification",
+          "definition": "Direct confirmation of a provider's credentials with the original issuing source (medical board, DEA, NPDB) — required under 42 CFR §438.214"
+        },
+        {
+          "term": "NPDB (National Practitioner Data Bank)",
+          "definition": "Federal database of adverse licensing actions, malpractice payments, and sanctions — MCOs must query it during initial credentialing"
+        },
+        {
+          "term": "Delegated Credentialing",
+          "definition": "An arrangement where the MCO delegates credentialing activities to a provider organization, subject to MCO oversight and audit rights"
+        },
+        {
+          "term": "OIG Exclusion List",
+          "definition": "List of individuals and entities excluded from federal healthcare programs — MCOs must check this list and cannot contract with excluded providers"
+        }
+      ]
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Required MCO recredentialing cycle",
+          "value": "Every 3 years",
+          "context": "42 CFR §438.214 requires MCOs to recredential all network providers at least every three years"
+        },
+        {
+          "label": "Recommended OIG exclusion list check frequency",
+          "value": "Monthly",
+          "context": "Best practice is to check the OIG exclusion list monthly to identify newly excluded providers between credentialing cycles"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "credentialing",
+    "provider contracting",
+    "network management",
+    "primary source verification"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:14.733956+00:00",
+  "updated_at": "2026-06-01T13:29:15.470985+00:00",
+  "sanity_slug": "provider-credentialing-mco"
+}

@@ -2786,7 +2786,7 @@
                   },
                   {
                     "term": "Revenue Cycle Management Platform",
-                    "definition": "Dedicated software for AR management, denial tracking, and reporting (Waystar, Availity, Talksoft)"
+                    "definition": "Dedicated software for AR management, denial tracking, and reporting (e.g., Waystar)"
                   },
                   {
                     "term": "Clearinghouse",
@@ -2805,7 +2805,7 @@
               {
                 "type": "text",
                 "heading": "The Integration Challenge",
-                "body": "Most healthcare organizations use multiple systems from different vendors. Key integration points:\n\n- **EHR \u2192 PMS:** Clinical documentation must flow to the billing system with charges, codes, and clinical data\n- **PMS \u2192 Clearinghouse:** Claims formatted and transmitted in HIPAA-compliant 837 format\n- **Clearinghouse \u2192 Payer:** Claims routed to correct payer destination\n- **Payer \u2192 Clearinghouse \u2192 PMS:** ERA (835) returned and posted automatically\n\nGaps in these integrations create manual touchpoints, errors, and revenue leakage. Organizations with fully integrated systems report 30\u201340% lower cost-to-collect ratios."
+                "body": "Most healthcare organizations use multiple systems from different vendors. Key integration points:\n\n- **EHR \u2192 PMS:** Clinical documentation must flow to the billing system with charges, codes, and clinical data\n- **PMS \u2192 Clearinghouse:** Claims formatted and transmitted in HIPAA-compliant 837 format\n- **Clearinghouse \u2192 Payer:** Claims routed to correct payer destination\n- **Payer \u2192 Clearinghouse \u2192 PMS:** ERA (835) returned and posted automatically\n\nGaps in these integrations create manual touchpoints, errors, and revenue leakage."
               },
               {
                 "type": "callout",
@@ -2869,27 +2869,27 @@
                 },
                 {
                   "id": "q-rcm-tech-001-3",
-                  "text": "What cost-to-collect ratio improvement do organizations with fully integrated RCM systems typically achieve?",
+                  "text": "What is the main risk of a best-of-breed RCM technology strategy?",
                   "options": [
                     {
                       "id": "a",
-                      "text": "5\u201310% lower"
+                      "text": "Less functional depth in each area"
                     },
                     {
                       "id": "b",
-                      "text": "15\u201320% lower"
+                      "text": "It cannot submit claims in the 837 format"
                     },
                     {
                       "id": "c",
-                      "text": "30\u201340% lower"
+                      "text": "Data silos and manual re-entry if the systems are poorly integrated"
                     },
                     {
                       "id": "d",
-                      "text": "50\u201360% lower"
+                      "text": "It requires every function to come from one vendor"
                     }
                   ],
                   "correctId": "c",
-                  "explanation": "Organizations with fully integrated RCM systems (minimal manual touchpoints between EHR, PMS, clearinghouse, and payer) typically achieve 30\u201340% lower cost-to-collect ratios compared to fragmented systems requiring significant manual intervention."
+                  "explanation": "Best-of-breed picks the leading specialized product for each function, which gains depth (for example in denial analytics) but only works if the systems are connected with robust HL7/FHIR interfaces; poorly integrated tools recreate data silos and manual touchpoints. Integrated single-vendor platforms trade some per-function depth for seamless internal data flow."
                 }
               ]
             }
@@ -2918,25 +2918,25 @@
               {
                 "type": "text",
                 "heading": "AI Applications in RCM",
-                "body": "Artificial intelligence is being applied across the revenue cycle:\n\n- **Prior authorization automation:** AI predicts which cases require PA and auto-submits requests, reducing manual burden by 60\u201370%\n- **Predictive denial scoring:** ML models score each claim pre-submission with a denial probability, allowing targeted intervention before submission\n- **Autonomous coding:** NLP-based tools read clinical documentation and suggest ICD-10 and CPT codes with 85\u201395% accuracy\n- **Intelligent work queue management:** AI prioritizes AR follow-up by expected recovery value rather than dollar amount alone\n- **Payment prediction:** Models predict when each claim will pay and flag claims deviating from predicted payment patterns\n- **Robotic Process Automation (RPA):** Bots handle repetitive tasks like eligibility checks, claim status inquiries, and payment posting"
+                "body": "Artificial intelligence is being applied across the revenue cycle:\n\n- **Prior authorization automation:** AI predicts which cases require PA and auto-submits requests, reducing manual burden\n- **Predictive denial scoring:** ML models score each claim pre-submission with a denial probability, allowing targeted intervention before submission\n- **Autonomous coding:** NLP-based tools read clinical documentation and suggest ICD-10 and CPT codes for human review\n- **Intelligent work queue management:** AI prioritizes AR follow-up by expected recovery value rather than dollar amount alone\n- **Payment prediction:** Models predict when each claim will pay and flag claims deviating from predicted payment patterns\n- **Robotic Process Automation (RPA):** Bots handle repetitive tasks like eligibility checks, claim status inquiries, and payment posting"
               },
               {
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "60\u201370%",
-                    "label": "Reduction in PA processing time with AI",
-                    "context": "For organizations using intelligent PA automation platforms"
+                    "value": "27%",
+                    "label": "Organizations deploying AI at scale in the revenue cycle",
+                    "context": "Across multiple functions; another 53% are piloting (HFMA survey, Feb 2026, n=95)"
                   },
                   {
-                    "value": "85\u201395%",
-                    "label": "Accuracy of AI-assisted medical coding",
-                    "context": "Varies by specialty and documentation quality; human review still required for complex cases"
+                    "value": "15%",
+                    "label": "Users reporting positive ROI from revenue-cycle AI",
+                    "context": "Of the 63% of organizations using AI/automation in the revenue cycle (HFMA poll, May 2025)"
                   },
                   {
-                    "value": "$360B",
-                    "label": "Projected AI impact on US healthcare admin costs by 2026",
-                    "context": "McKinsey Global Institute estimate of potential administrative savings from AI automation"
+                    "value": "$200–360B",
+                    "label": "Potential annual US health spending savings from wider AI adoption",
+                    "context": "5–10% of spending, 2019 dollars, within about five years (Sahni, Stein, Zemmel & Cutler, NBER Working Paper 30857, 2023)"
                   }
                 ]
               },
@@ -3062,25 +3062,25 @@
                 "type": "callout",
                 "variant": "key",
                 "title": "RCM Governance: Who Owns the Revenue Cycle?",
-                "body": "High-performing organizations establish an RCM Governance Committee that meets monthly and includes: CFO, VP Revenue Cycle, Chief Medical Officer (CDI oversight), Chief Compliance Officer, and department medical directors. This cross-functional ownership ensures that denial trends, documentation issues, and technology investments are addressed at the appropriate level of authority."
+                "body": "Many organizations establish an RCM Governance Committee that meets regularly and can include: CFO, VP Revenue Cycle, Chief Medical Officer (CDI oversight), Chief Compliance Officer, and department medical directors. This cross-functional ownership ensures that denial trends, documentation issues, and technology investments are addressed at the appropriate level of authority."
               },
               {
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "Top quartile",
+                    "value": "Rule of thumb",
                     "label": "Days in AR: <40 days (hospital)",
-                    "context": "HFMA MAP Keys 2023 benchmark"
+                    "context": "Common industry target (not an HFMA-published benchmark); MAP Key definitions standardize the calculation"
                   },
                   {
-                    "value": "Top quartile",
+                    "value": "Rule of thumb",
                     "label": "Net Collection Rate: >97%",
-                    "context": "HFMA benchmark; median is ~94%"
+                    "context": "Common industry target (not an HFMA-published benchmark)"
                   },
                   {
-                    "value": "Top quartile",
+                    "value": "Rule of thumb",
                     "label": "Cost to Collect: <2% of net revenue",
-                    "context": "HFMA benchmark; median is ~3.5%"
+                    "context": "Common industry target (not an HFMA-published benchmark)"
                   }
                 ]
               }

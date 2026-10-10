@@ -1,0 +1,33 @@
+{
+ "pairs": [
+  {
+   "old": "auto-submits requests, reducing manual burden by 60\u201370%",
+   "new": "auto-submits requests, reducing manual burden",
+   "claim": "fallback: AI PA automation reduces manual burden by 60-70%",
+   "verdict": "UNVERIFIABLE",
+   "src": "No independent source for 60-70% PA burden/processing-time reduction or 85-95% AI coding accuracy (vendor marketing only; search 2026-10-09)",
+   "note": ""
+  },
+  {
+   "old": "suggest ICD-10 and CPT codes with 85\u201395% accuracy",
+   "new": "suggest ICD-10 and CPT codes for human review",
+   "claim": "fallback: NLP coding tools 85-95% accurate",
+   "verdict": "UNVERIFIABLE",
+   "src": "No independent source for 60-70% PA burden/processing-time reduction or 85-95% AI coding accuracy (vendor marketing only; search 2026-10-09)",
+   "note": ""
+  }
+ ],
+ "supa": [
+  {
+   "table": "lessons",
+   "col": "content_blocks",
+   "ids": [
+    "cd225a5b-50c7-485d-ac68-aa156a1071d2"
+   ]
+  }
+ ],
+ "files": [
+  "frontend/content/course_revenue_cycle.json",
+  "frontend/content/courses_tier3.json"
+ ]
+}

@@ -1,0 +1,451 @@
+{
+  "_createdAt": "2026-05-31T07:42:57Z",
+  "_id": "financial-sustainability",
+  "_rev": "2zkDeD7zc2Ko2DfFHo84mn",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T07:42:57Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Question Every Other Lesson Has Been Building Toward"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Every concept in this course — payer mix and margins, cost accounting, capital and debt, value-based payment, governance — ultimately serves a single question: can this hospital survive? Financial sustainability is the capacity of a hospital to remain financially viable over the long term while continuing to fulfill its mission. It is not a single metric but a condition: enough margin to reinvest, enough liquidity to weather shocks, enough access to capital to modernize, and a business model durable enough to withstand a relentlessly changing landscape. This capstone lesson examines the forces threatening that sustainability today and the strategies hospitals are using to defend it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The central threat is deceptively simple and increasingly severe: expenses are growing faster than revenue. In 2025, hospital expenses increased by 7.5% — over twice the rate of growth in hospital prices over the same period. When the cost of providing care rises faster than the payment for it, margins compress, and for many hospitals, health systems, and medical groups, margin pressure in 2026 is more intense than at any point in the last decade. The thin margins documented throughout this course are now being squeezed harder than ever."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is not a temporary post-pandemic hangover; it is a structural challenge driven by labor and drug costs, an aging population shifting payer mix toward government programs, and looming federal funding cuts. Understanding financial sustainability means understanding both why the pressure is mounting and what separates the hospitals that will adapt from those that will close."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: Financial sustainability is a hospital’s capacity to stay viable long-term while fulfilling its mission — requiring adequate margin, liquidity, and capital access. The defining threat today is expense growth outpacing revenue growth, compressing already-thin margins."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Hospital expenses rose 7.5% in 2025 — more than twice the growth in hospital prices — with expense growth continuing to outpace revenue into 2026 (AHA / Kaufman Hall)",
+          "label": "Expense vs. Revenue Growth",
+          "value": "7.5% vs ~3.9%"
+        },
+        {
+          "_key": "s2",
+          "context": "The One Big Beautiful Bill Act cuts an estimated $911 billion in federal Medicaid and CHIP spending over 10 years, with ~$155B from rural areas (Commonwealth Fund)",
+          "label": "OBBBA Medicaid/CHIP Cuts",
+          "value": "$911B"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Expense Squeeze"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The first force eroding sustainability is cost growth across the board. Recent data shows the squeeze in detail: labor expenses grew about 4.9%, non-labor expenses 6.4%, and drug expenses 6.8% year over year — with non-labor and drug costs surging fastest. Labor, as the cost-accounting lessons established, remains the largest single expense, but the broad-based rise across supplies, pharmaceuticals, and services means hospitals cannot cost-cut their way out through any single lever. Total expenses rising 5.4% against gross operating revenue rising only 3.9% captures the bind: the gap between the two lines is where margin disappears."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "These costs are largely outside the hospital’s direct control. Drug prices are set by manufacturers; wage levels are set by competitive labor markets and persistent clinical workforce shortages; supply costs reflect global pressures. Because so much of the cost base is fixed or externally driven, and because (as earlier lessons showed) hospitals cannot quickly shed fixed costs when revenue softens, the expense squeeze translates almost directly into margin erosion. Year-to-date operating margins around 2.0% (with system allocations) as of late 2025 leave almost no cushion against further cost shocks."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2w1",
+      "_type": "warningBlock",
+      "message": "Because expense growth is broad-based and largely externally driven — labor, drugs, supplies all rising — no single cost cut restores sustainability. Hospitals that treat cost control as the entire strategy, rather than pairing it with revenue diversification and payment-model change, tend to manage decline rather than reverse it.",
+      "title": "You Cannot Cut Your Way to Health Alone"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Payer and Policy Threat"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The second force is the deterioration of the revenue side, driven by payer mix and federal policy. As the population ages, more patients shift into Medicare; as economic and coverage conditions change, more shift into Medicaid or become uninsured. Both trends move the payer mix toward the below-cost government payers analyzed in earlier lessons, eroding the commercial cross-subsidy that hospital finances depend on. In one nationwide survey of healthcare finance professionals, 66% cited government funding and Medicaid cuts as a leading concern — the single most pressing worry on the revenue side."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "That worry has a concrete cause. The One Big Beautiful Bill Act (OBBBA) is projected to cut roughly $911 billion in federal Medicaid and CHIP spending over ten years, with about $155 billion of that falling on rural areas, alongside the DSH cuts covered in the payer-mix lesson. Medicaid work requirements and tightened eligibility are projected to increase the uninsured population, adding uncompensated care just as supplemental payments shrink. For hospitals with heavy government payer mixes, this is a direct, multi-year hit to revenue with no obvious replacement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Nowhere is the threat more acute than in rural communities. Nearly half of rural hospitals already operate with negative margins, more than 100 rural hospitals have closed or converted in the last decade, and modeling suggests proposed Medicaid policies could cut rural safety-net hospitals’ net operating income by roughly 25–28%. For these institutions, financial sustainability is not an abstraction — it is the difference between a community having a hospital and not having one. Mechanisms like state-directed payments and provider taxes have become critical lifelines."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Strategies for Sustainability"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Faced with this squeeze, hospitals are pursuing several strategies, and the strongest combine them rather than relying on any one. The first is operational excellence and disciplined cost control — but elevated from a finance-department task to a board-level strategic initiative, treating \"operational rigor\" and getting at the expense lines as a core competency rather than a one-time cost-cutting drive. This is cost management as an ongoing discipline informed by exactly the cost-accounting tools covered earlier."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The second is revenue diversification, especially the shift toward outpatient care. Outpatient revenue has been growing far faster than inpatient — rising 7.2% versus 3.5% in one recent month — as care migrates to ambulatory settings and hospitals build outpatient, ambulatory surgery, and service-line capacity to capture it. The third is the development of value-based enterprise models and strategic partnerships, positioning the organization to be paid for keeping populations healthy rather than depending solely on volume that is increasingly capped by government payers. Together these reflect a hospital trying to reshape both its cost base and its revenue base for a different future."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4steps1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Make disciplined, ongoing cost control a board-level strategic competency, informed by accurate cost accounting.",
+          "title": "Operational excellence"
+        },
+        {
+          "_key": "step2",
+          "description": "Grow faster-rising outpatient and ambulatory care and high-value service lines to broaden the revenue base.",
+          "title": "Revenue diversification"
+        },
+        {
+          "_key": "step3",
+          "description": "Build value-based and population-health capabilities to be paid for outcomes, not just constrained volume.",
+          "title": "Value-based transformation"
+        },
+        {
+          "_key": "step4",
+          "description": "Protect creditworthiness and pursue partnerships that add scale and capabilities without simply buying market power.",
+          "title": "Capital and partnership strategy"
+        }
+      ],
+      "title": "Pillars of a Sustainability Strategy"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Synthesis: Why Sustainability Ties It All Together"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson is the capstone of hospital finance because sustainability is where every prior concept converges. The thin margins and ratios from Module 1 define how little cushion exists. The payer mix and reimbursement realities from Module 2 explain why revenue is under threat. The cost accounting from Module 3 is the toolkit for the expense discipline sustainability demands. The capital and debt strategy from Module 4 determines whether a hospital can fund its transformation. The value-based finance of Module 5 offers the most promising path to a durable model. And the governance of the prior lesson is what steers all of it. Sustainability is not a topic alongside the others — it is what the others add up to."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "A hospital’s financial sustainability is like a household living on a fixed income whose bills keep rising. Cutting spending helps but cannot fully close the gap; the household also needs new income sources and must adapt to a changing world. The ones that endure are not those that simply economize, but those that restructure — finding new revenue, controlling costs continuously, and adjusting their whole way of living to the new reality. Hospitals that merely cut, without reshaping revenue and payment, are economizing their way toward the exit.",
+      "concept": "Hospital financial sustainability"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The stakes of getting this right could not be higher, because a hospital is not just a business. When a hospital fails financially, a community loses access to care, jobs, and often its largest employer — which is why financial sustainability and mission are inseparable rather than opposed. A hospital cannot serve its community if it cannot keep its doors open, and it does not deserve to keep its doors open if it abandons its community in pursuit of margin. The art of sustainable hospital finance is holding both truths at once: remaining financially viable precisely so the mission can endure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Looking ahead, the pressures are intensifying — margin compression at decade-high levels, hundreds of billions in Medicaid cuts phasing in, an aging population, and relentless cost growth. But the path forward is visible in the strategies the strongest organizations are already pursuing: rigorous cost discipline, diversified and outpatient-weighted revenue, genuine movement toward value-based payment, and disciplined capital stewardship under engaged governance. The hospitals that master the full toolkit this course has assembled — and have the discipline to apply it as their landscape shifts beneath them — are the ones that will still be standing, and still serving their communities, when the next decade of change arrives."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "Financial sustainability is a hospital’s capacity to stay viable long-term while fulfilling its mission, requiring adequate margin, liquidity, and capital access — and the defining threat today is expense growth outpacing revenue growth.",
+        "Hospital expenses rose 7.5% in 2025 (over twice the growth in prices), with broad-based increases in labor (~4.9%), non-labor (~6.4%), and drug costs (~6.8%), squeezing already-thin margins to the most intense pressure in a decade.",
+        "Because cost growth is broad-based and largely externally driven, no single cost cut restores sustainability — hospitals that rely on cost-cutting alone tend to manage decline rather than reverse it.",
+        "The revenue side is threatened by payer-mix shifts toward below-cost government payers and by federal policy: the OBBBA cuts an estimated $911 billion in Medicaid/CHIP over 10 years (~$155B rural), and 66% of finance professionals cite government cuts as a leading concern.",
+        "Rural hospitals are most at risk — nearly half operate with negative margins, 100+ have closed or converted in a decade, and proposed Medicaid policies could cut rural safety-net net operating income by ~25–28%.",
+        "Sustainability strategies combine operational excellence (cost control as a board-level competency), revenue diversification (faster-growing outpatient care), value-based enterprise models, and disciplined capital/partnership strategy.",
+        "Sustainability is the capstone of hospital finance because it integrates every prior concept — margins, payer mix, cost accounting, capital and debt, value-based finance, and governance all converge on whether the hospital survives.",
+        "Financial viability and mission are inseparable: a hospital cannot serve its community if it closes, but should not survive by abandoning its community — sustainable hospital finance means staying viable precisely so the mission can endure."
+      ]
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] AHA / Healthcare Finance News: \"Hospital expense growth is outpacing revenue\" — https://www.healthcarefinancenews.com/news/hospital-expense-growth-outpacing-revenue — 2025 expenses +7.5% (over twice price growth); expense components (labor 4.9%, non-labor 6.4%, drugs 6.8%)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] HFMA: \"Hospital margins decline in 2026 as expenses outpace revenue\" — https://www.hfma.org/operations-management/hospital-operating-margin-trends-2026/ — 2026 margin pressure the most intense in a decade; total expenses +5.4% vs. gross operating revenue +3.9%; margins ~2.0% with allocations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Commonwealth Fund: \"Federal Cuts to Medicaid Could End Medicaid Expansion and Affect Hospitals in Nearly Every State\" (2025) — https://www.commonwealthfund.org/publications/issue-briefs/2025/may/federal-cuts-medicaid-could-end-medicaid-expansion-affect-hospitals — OBBBA $911B Medicaid/CHIP cuts over 10 years; ~$155B from rural areas."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Commonwealth Fund: \"The Impact of Proposed Federal Medicaid Work Requirements on Hospital Revenues and Financial Margins\" (2025) — https://www.commonwealthfund.org/publications/issue-briefs/2025/sep/impact-medicaid-work-requirements-hospital-revenues-margins — rural safety-net net operating income reductions of ~24.6%–28.0%."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] FTI Consulting: \"Healthcare Providers' Path from Crisis to Stability Amidst Potential Medicaid Cuts\" — https://www.fticonsulting.com/insights/articles/healthcare-providers-path-crisis-stability-amidst-potential-medicaid-cuts — ~50% of rural hospitals with negative margins, 100+ closures/conversions in a decade, cost-reduction and state-directed-payment responses."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Becker’s Hospital Review: \"Healthcare finance trends for 2026: A dynamic mix of opportunity and risk\" — https://www.beckershospitalreview.com/finance/healthcare-finance-trends-for-2026-a-dynamic-mix-of-opportunity-and-risk/ — cost control as board-level strategy, outpatient revenue growth (7.2% vs 3.5%), value-based enterprise models, and the 66% Medicaid-cut concern."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "hospital-finance",
+  "order": 18,
+  "slug": {
+    "_type": "slug",
+    "current": "financial-sustainability"
+  },
+  "title": "Financial Sustainability in a Changing Landscape"
+}

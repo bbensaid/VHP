@@ -1,0 +1,538 @@
+{
+  "_createdAt": "2026-06-01T12:44:20Z",
+  "_id": "why-claims-denied",
+  "_rev": "rL4Cn5Sfo5Z8rzPmESNmED",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T12:44:20Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Inevitable Reality of Denials"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "No matter how clean the front-end and mid-cycle, some claims will come back denied. Denial management is the back-end discipline of dealing with that reality, and it begins with a deceptively simple question: why was this claim denied? Understanding the root-cause categories of denials is the foundation for both fixing individual claims and preventing the next batch."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The scale makes this urgent. Initial claim denial rates reached about 11.8 percent in 2024 (with some payer types, like Medicare Advantage and managed Medicaid, running around 15 percent), and roughly $262 billion in claims were initially denied that year. Denials are not an edge case — they are a constant, massive drain that every organization must actively manage."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The single most important fact about denials, though, is hopeful: the Kaiser Family Foundation found that between 86 and 90 percent of denials are preventable. The vast majority of denials trace to fixable, upstream causes — which means understanding the categories is the first step to driving the denial rate down."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Denials are a constant: initial denial rates hit ~11.8% in 2024 (~$262B denied). But 86-90% of denials are preventable, so understanding root-cause categories is the key to both fixing claims and preventing future denials."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Soft Denials vs. Hard Denials"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A foundational distinction shapes how a denial is handled: soft versus hard. A soft denial is temporary — it can often be reversed by submitting additional information or correcting and resubmitting the claim. The money is recoverable if the team acts. A duplicate claim or a missing-information denial is typically soft."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A hard denial is final — it generally results in lost revenue and cannot simply be corrected and resubmitted (though some can still be appealed). A denial for a service that was genuinely not covered, or one where the timely filing deadline has irrevocably passed, is typically hard. Hard denials are the ones that become write-offs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This distinction drives triage. Soft denials should be worked quickly, because they are recoverable with effort; hard denials require judgment about whether an appeal is worth pursuing or whether to write off. Knowing which is which prevents teams from wasting effort on unrecoverable claims while letting recoverable ones age past the point of recovery."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Soft Denial",
+        "points": [
+          "Temporary and reversible",
+          "Fixable with corrected info / resubmission",
+          "Money still recoverable if worked",
+          "e.g., duplicate, missing information"
+        ]
+      },
+      "right": {
+        "label": "Hard Denial",
+        "points": [
+          "Final, generally lost revenue",
+          "Cannot simply be corrected and resubmitted",
+          "Often becomes a write-off (some appealable)",
+          "e.g., non-covered service, missed timely filing"
+        ]
+      },
+      "title": "Soft vs. Hard Denials"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Major Root-Cause Categories"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Denials cluster into a recognizable set of root causes, and learning them is essential because each maps to a different prevention strategy upstream. Missing or inaccurate information (wrong demographics, missing fields) and prior authorization problems consistently rank as the top causes in industry surveys, followed closely by eligibility/coverage issues."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The other major categories: medical necessity (the documentation did not justify the service — research has found this among the top denial reasons); coding errors (mismatched diagnosis and procedure, wrong modifiers, invalid codes); timely filing violations (the claim was submitted past the payer's deadline); duplicate claims (the same service billed twice); and coordination-of-benefits problems (billed the wrong payer first)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Notice that nearly every category traces back to an earlier lesson in this course: missing info and eligibility to the front-end; prior auth to its own lesson; medical necessity to documentation; coding errors to coding; timely filing to payer contracts. This is the practical proof of the \"back-end denial is a front-end failure\" principle — the denial categories are essentially a catalog of where upstream processes broke."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Wrong demographics, incomplete fields — a leading cause.",
+          "title": "Missing/inaccurate information"
+        },
+        {
+          "_key": "step2",
+          "description": "No prior authorization, or coverage inactive/not verified.",
+          "title": "Authorization & eligibility"
+        },
+        {
+          "_key": "step3",
+          "description": "Documentation does not justify the service; code errors and mismatches.",
+          "title": "Medical necessity & coding"
+        },
+        {
+          "_key": "step4",
+          "description": "Late submission, double-billing, or wrong payer order.",
+          "title": "Timely filing, duplicates, COB"
+        }
+      ],
+      "title": "Major Denial Root-Cause Categories"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Reading the Denial: CARC and RARC Codes"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Payers do not deny claims with a written paragraph — they use standardized codes. The primary one is the Claim Adjustment Reason Code (CARC), which states the reason for an adjustment or denial. CARCs appear on the remittance, telling the provider exactly why the claim was not paid in full. There are roughly 358 CARCs maintained by the X12 committee."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Alongside CARCs are Remittance Advice Remark Codes (RARCs), which provide supplementary explanation and instructions. The rule of thumb: the CARC tells you what happened to your claim, and the RARC adds context or next steps. RARCs are not always present — they appear when extra explanation is needed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "A handful of CARCs account for the majority of denials, so learning the common ones is high-leverage. Examples include CO-16 (claim lacks information), CO-18 (duplicate claim), CO-50 (deemed not medically necessary), CO-97 (service included/not separately covered), and CO-22 (coordination of benefits needed). The \"CO\" prefix indicates a contractual obligation (provider write-off), while a \"PR\" prefix indicates patient responsibility — the prefix itself tells you who owes the balance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4t1",
+      "_type": "code",
+      "code": [
+        {
+          "Code": "CO-16",
+          "Meaning": "Claim/service lacks information",
+          "Typical_Category": "Missing/inaccurate information"
+        },
+        {
+          "Code": "CO-18",
+          "Meaning": "Duplicate claim/service",
+          "Typical_Category": "Duplicate"
+        },
+        {
+          "Code": "CO-50",
+          "Meaning": "Not deemed medically necessary",
+          "Typical_Category": "Medical necessity"
+        },
+        {
+          "Code": "CO-22",
+          "Meaning": "Coordination of benefits needed",
+          "Typical_Category": "COB / eligibility"
+        },
+        {
+          "Code": "CO-97",
+          "Meaning": "Service not separately payable",
+          "Typical_Category": "Bundling/coding"
+        }
+      ],
+      "language": "json",
+      "title": "Common CARC Denial Codes"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "From Categorizing to Preventing"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Categorizing denials is not bookkeeping — it is the engine of prevention. Because 86 to 90 percent of denials are preventable, the path to a lower denial rate runs through systematically tracking which categories and CARCs are driving an organization's denials, then fixing the upstream process responsible."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is classic root-cause analysis applied to revenue. If \"no prior authorization\" denials spike, the fix is in the front-end authorization workflow, not the appeals team. If \"missing information\" denials dominate, the fix is registration data quality. If \"medical necessity\" denials rise, the fix is documentation. The CARC distribution is essentially a diagnostic readout of where the revenue cycle is leaking."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why reducing denials became a top priority for the large majority of organizations — and why denial root-cause analysis sits at the center of the back-end. Understanding why claims are denied is the prerequisite for the next two lessons: building a workflow to work denials efficiently, and appealing the ones that were wrong. But the ultimate goal is always to drive the denial rate down by preventing the categories at their source."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "Fixing an individual denied claim recovers one payment; fixing the root-cause category prevents hundreds of future denials. Because 86-90% of denials are preventable, tracking CARC patterns to find and fix the upstream process is far higher-leverage than working denials one at a time.",
+      "title": "Work the Category, Not Just the Claim"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Denials are a constant: initial denial rates reached ~11.8% in 2024 with ~$262B in claims denied, but the KFF found 86-90% of denials are preventable.",
+        "Soft denials are temporary and recoverable by correcting/resubmitting; hard denials are generally final lost revenue (though some are appealable).",
+        "Major root-cause categories include missing/inaccurate information, prior authorization, eligibility/coverage, medical necessity, coding errors, timely filing, duplicates, and coordination of benefits.",
+        "Nearly every denial category traces back to an upstream process — proof that back-end denials are usually front-end or mid-cycle failures.",
+        "Payers communicate denials via standardized CARC codes (the reason, ~358 exist) and RARC codes (supplementary context).",
+        "Common CARCs include CO-16 (lacks information), CO-18 (duplicate), CO-50 (not medically necessary), CO-22 (COB needed), CO-97 (not separately payable); \"CO\" = provider write-off, \"PR\" = patient responsibility.",
+        "Categorizing denials drives prevention: tracking CARC patterns reveals which upstream process to fix, which is far higher-leverage than working claims one at a time."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "A CO-50 denial means the documentation did not justify the service's medical necessity. The high-leverage fix is upstream — strengthening clinical documentation (and the diagnosis-to-procedure linkage) so the record supports each service. Because 86-90% of denials are preventable, fixing the root-cause category prevents many future denials, whereas working each claim individually only recovers one at a time.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Hire more appeals staff to work the denials one by one"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Improve clinical documentation so the record clearly justifies medical necessity for the services billed"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Resubmit the same claims unchanged"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Switch all claims to the UB-04 form"
+        }
+      ],
+      "question": "An organization notices a sharp rise in CO-50 (\"not deemed medically necessary\") denials. From a root-cause perspective, where should it focus to prevent these?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Preventing Claim Denials: 6 Top Reasons (FinThrive) — https://finthrive.com/blog/preventing-claim-denials — top denial categories: prior auth, missing info, eligibility, medical necessity, coding, timely filing"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] What is the Denials Management Process? (Rivet Health) — https://www.rivethealth.com/blog/what-is-the-denials-management-process — soft vs hard denials; 86-90% of denials preventable (KFF)"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CARC and RARC Codes: Complete Guide (Spry) — https://www.sprypt.com/denial-codes/carc-and-rarc-codes — ~358 CARCs; CARC vs RARC roles; common codes"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Common Medical Billing Denial Codes (Campus.edu) — https://campus.edu/blog/medical-billing-and-coding/common-medical-billing-denial-codes — CO-16, CO-18, CO-50, CO-22, CO-97; CO (contractual) vs PR (patient responsibility)"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] 50+ US Healthcare Denial Rates & Reimbursement Statistics for 2026 (Aptarro) — https://www.aptarro.com/insights/us-healthcare-denial-rates-reimbursement-statistics — 11.8% initial denial rate; payer-type rates; top reasons; reducing denials a priority"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Errors in Patient Access Cited as Top Reason for Initial Payer Denials (Akasa) — https://akasa.com/press/reasons-for-denials — eligibility and missing prior authorization as leading denial causes"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "revenue-cycle-management",
+  "order": 13,
+  "slug": {
+    "_type": "slug",
+    "current": "why-claims-denied"
+  },
+  "title": "Why Claims Are Denied: Root Cause Categories"
+}

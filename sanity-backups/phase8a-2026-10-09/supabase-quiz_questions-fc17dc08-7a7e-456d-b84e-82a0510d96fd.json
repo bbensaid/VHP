@@ -1,0 +1,9 @@
+{
+  "id": "fc17dc08-7a7e-456d-b84e-82a0510d96fd",
+  "quiz_id": "a282365b-3a45-4099-a2d8-e3030ac2c56e",
+  "order": 2,
+  "question_type": "single_choice",
+  "question": "In distributional cost-effectiveness analysis (DCEA), what does the equity weight parameter ε represent?",
+  "explanation": "ε, from the Atkinson index of inequality aversion, controls how much extra weight DCEA gives to health gains for the worst-off group; Cookson et al.'s illustrative work used ε = 0.5 as a mild-aversion default.",
+  "points": 1
+}

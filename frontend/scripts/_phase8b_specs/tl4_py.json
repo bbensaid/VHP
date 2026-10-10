@@ -1,0 +1,24 @@
+{
+ "file": "frontend/content/_lessons_transformation_leadership.py",
+ "claim": "tl-stakeholder-board-management source: sea-change quote attribution; source years/journal",
+ "verdict": "MISATTRIBUTED",
+ "src": "Kilaru et al., JAMA Health Forum 2022 (PMC8903109): quote is from one state regulator; Crossref: Chernew et al. Health Affairs Jan 2011",
+ "pairs": [
+  [
+   "        'A published qualitative study of Maryland health care leaders\\' perspectives on the All-Payer Model '\n        'found the global budget conversion was described directly as \"a monumental change",
+   "        'A 2022 qualitative study in JAMA Health Forum, based on interviews with 20 Maryland health care leaders, '\n        'quotes one state regulator describing the global budget conversion as \"a monumental change"
+  ],
+  [
+   "'Maryland\\'s hospital leaders described their 2014 global budget conversion as \"a monumental change, a sea change,\" and named",
+   "'A Maryland state regulator described the 2014 global budget conversion as \"a monumental change, a sea change,\" and the health care leaders interviewed named"
+  ],
+  [
+   "blk('src1', '[1] \"Health Care Leaders\\' Perspectives on the Maryland All-Payer Model\" \u2014 https://pmc",
+   "blk('src1', '[1] \"Health Care Leaders\\' Perspectives on the Maryland All-Payer Model\" (Kilaru et al., JAMA Health Forum, 2022) \u2014 https://pmc"
+  ],
+  [
+   "The \\'Alternative Quality Contract\\'\" (2010)",
+   "The \\'Alternative Quality Contract\\'\" (Chernew et al., 2011)"
+  ]
+ ]
+}

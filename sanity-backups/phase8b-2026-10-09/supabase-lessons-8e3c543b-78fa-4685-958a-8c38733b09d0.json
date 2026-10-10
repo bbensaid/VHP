@@ -1,0 +1,68 @@
+{
+  "id": "8e3c543b-78fa-4685-958a-8c38733b09d0",
+  "track_id": "5f7fc507-a352-415c-b804-c361dd2d9f3f",
+  "pillar": "technology",
+  "order": 1,
+  "slug": "rcm-software-ehr",
+  "title": "RCM Software and EHR Integration",
+  "summary": "The RCM technology stack spans EHRs, practice management systems, clearinghouses, and specialized point solutions — integration is the key challenge.",
+  "estimated_minutes": 20,
+  "objectives": [
+    "Describe the components of the RCM technology stack",
+    "Explain the integration challenges between EHR and practice management systems",
+    "Identify the key selection criteria for RCM software"
+  ],
+  "content_blocks": [
+    {
+      "type": "concepts_grid",
+      "concepts": [
+        {
+          "term": "EHR (Electronic Health Record)",
+          "definition": "Clinical documentation system; charge triggers and clinical data originate here (Epic, Cerner/Oracle, Meditech)"
+        },
+        {
+          "term": "Practice Management System (PMS)",
+          "definition": "Manages scheduling, registration, billing, and claims; may be integrated with EHR or separate"
+        },
+        {
+          "term": "Revenue Cycle Management Platform",
+          "definition": "Dedicated software for AR management, denial tracking, and reporting (Waystar, Availity, Talksoft)"
+        },
+        {
+          "term": "Clearinghouse",
+          "definition": "Intermediary that scrubs and routes electronic claims between providers and payers"
+        },
+        {
+          "term": "Contract Management System",
+          "definition": "Software that models expected reimbursement and identifies payer underpayments"
+        },
+        {
+          "term": "Patient Engagement Platform",
+          "definition": "Patient-facing tools for online bill pay, financial counseling, and payment plans"
+        }
+      ]
+    },
+    {
+      "body": "Most healthcare organizations use multiple systems from different vendors. Key integration points:\n\n- **EHR → PMS:** Clinical documentation must flow to the billing system with charges, codes, and clinical data\n- **PMS → Clearinghouse:** Claims formatted and transmitted in HIPAA-compliant 837 format\n- **Clearinghouse → Payer:** Claims routed to correct payer destination\n- **Payer → Clearinghouse → PMS:** ERA (835) returned and posted automatically\n\nGaps in these integrations create manual touchpoints, errors, and revenue leakage. Organizations with fully integrated systems report 30–40% lower cost-to-collect ratios.",
+      "type": "text",
+      "heading": "The Integration Challenge"
+    },
+    {
+      "body": "The largest health systems face a strategic choice: Epic's integrated suite (scheduling through billing) vs. best-of-breed specialized RCM tools that may outperform Epic in specific areas (denial management, contract analytics). The trend has shifted toward Epic's integrated model, but many organizations supplement with specialized analytics platforms.",
+      "type": "callout",
+      "title": "Epic vs. Best-of-Breed",
+      "variant": "tip"
+    }
+  ],
+  "tags": [
+    "RCM software",
+    "EHR",
+    "practice management",
+    "technology stack"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:31:30.19602+00:00",
+  "updated_at": "2026-06-01T13:14:49.861354+00:00",
+  "sanity_slug": "rcm-software-ehr"
+}

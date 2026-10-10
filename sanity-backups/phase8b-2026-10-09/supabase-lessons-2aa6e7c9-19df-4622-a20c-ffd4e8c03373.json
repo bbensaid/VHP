@@ -1,0 +1,75 @@
+{
+  "id": "2aa6e7c9-19df-4622-a20c-ffd4e8c03373",
+  "track_id": "f1c708c3-a8b6-48d3-a584-debef8a6946e",
+  "pillar": "technology",
+  "order": 1,
+  "slug": "clean-claims",
+  "title": "Clean Claims: What They Are and Why They Matter",
+  "summary": "A clean claim contains all required data elements and passes payer edits on first submission — the foundation of an efficient revenue cycle.",
+  "estimated_minutes": 18,
+  "objectives": [
+    "Define a clean claim and its required data elements",
+    "Describe the claim editing process and common rejection reasons",
+    "Explain the financial impact of clean claim rate on overall RCM performance"
+  ],
+  "content_blocks": [
+    {
+      "body": "A clean claim is one that:\n- Contains all required demographic and insurance information\n- Has valid diagnosis (ICD-10-CM) and procedure (CPT/HCPCS) codes\n- Includes a valid NPI for the billing and rendering provider\n- Has the correct revenue codes (for institutional claims)\n- Passes all payer-specific edits and HIPAA transaction standards\n- Is submitted within the payer's timely filing deadline\n\nClean claim rates of 95%+ are the industry benchmark; top performers achieve 98–99%.",
+      "type": "text",
+      "heading": "What Makes a Claim 'Clean'?"
+    },
+    {
+      "body": "A **rejection** occurs before the claim is processed — the claim fails edits and is returned without adjudication. Rejections can be corrected and resubmitted. A **denial** occurs after the claim is processed — the payer adjudicates the claim but refuses payment. Denials require an appeal and formal dispute process. Tracking these separately is essential for root cause analysis.",
+      "type": "callout",
+      "title": "Rejection vs. Denial: A Critical Distinction",
+      "variant": "info"
+    },
+    {
+      "type": "glossary_terms",
+      "terms": [
+        {
+          "term": "NPI",
+          "definition": "National Provider Identifier — the unique 10-digit identifier required on all HIPAA-standard electronic transactions"
+        },
+        {
+          "term": "Revenue Code",
+          "definition": "4-digit code on UB-04 (institutional) claims identifying the type of service or accommodation billed"
+        },
+        {
+          "term": "Timely Filing",
+          "definition": "The deadline by which a claim must be submitted after date of service; typically 90–180 days for commercial, 1 year for Medicare"
+        },
+        {
+          "term": "837P / 837I",
+          "definition": "HIPAA-standard EDI transaction for professional (837P) and institutional (837I) electronic claim submission"
+        }
+      ]
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Clean claim rate target for top performers",
+          "value": "98%+",
+          "context": "Every 1% improvement in clean claim rate reduces denial rework costs by ~$15,000 per $1M in net revenue"
+        },
+        {
+          "label": "Medicare timely filing window for corrected claims",
+          "value": "30 days",
+          "context": "Original claims must be filed within 1 year; corrected claims within 60–120 days depending on circumstance"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "clean claims",
+    "claim editing",
+    "rejections",
+    "837"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:31:22.449895+00:00",
+  "updated_at": "2026-06-01T13:14:49.498745+00:00",
+  "sanity_slug": "clean-claims"
+}

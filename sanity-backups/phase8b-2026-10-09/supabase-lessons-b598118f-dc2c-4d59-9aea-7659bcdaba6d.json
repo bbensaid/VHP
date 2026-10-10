@@ -1,0 +1,85 @@
+{
+  "id": "b598118f-dc2c-4d59-9aea-7659bcdaba6d",
+  "track_id": "19f9fa97-aa77-4a4d-8188-55e7f22554e3",
+  "pillar": "clinical",
+  "order": 1,
+  "slug": "medicare-star-ratings",
+  "title": "Medicare Advantage Star Ratings: Formula, Stakes & Strategy",
+  "summary": "How CMS calculates 1-5 star ratings for Medicare Advantage plans, what the financial stakes are, and how plans manage their star strategy.",
+  "estimated_minutes": 18,
+  "objectives": [
+    {
+      "id": "obj_sr1",
+      "text": "Explain the 5-star rating formula and its major domains"
+    },
+    {
+      "id": "obj_sr2",
+      "text": "Describe the financial consequences of star rating levels for MA plans"
+    },
+    {
+      "id": "obj_sr3",
+      "text": "Identify the measures with the highest weight and strategic importance"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "CMS rates every Medicare Advantage and Part D plan on a 1–5 star scale, published annually on Medicare.gov. Stars serve two purposes: consumer transparency (beneficiaries can compare plans) and financial incentives (CMS pays quality bonuses to plans rated 4 stars or above).\n\nThe stakes are enormous. A plan earning 4+ stars receives a 5% bonus on its base payment rate — worth hundreds of millions of dollars annually for large plans. Plans below 3 stars for three consecutive years can be terminated from Medicare Advantage.",
+      "type": "text",
+      "heading": "Stars as a market signal and a financial lever"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Preventive screenings and vaccines — mammograms, colorectal cancer screening, flu vaccines, annual wellness visits.",
+          "icon": "ti-stethoscope",
+          "title": "Staying healthy"
+        },
+        {
+          "body": "HEDIS measures for diabetes, hypertension, cholesterol, COPD, and mental health medication adherence.",
+          "icon": "ti-pill",
+          "title": "Managing chronic conditions"
+        },
+        {
+          "body": "CAHPS member experience measures — getting needed care, getting care quickly, rating of health care, customer service.",
+          "icon": "ti-phone",
+          "title": "Plan responsiveness"
+        },
+        {
+          "body": "Complaint rates, appeals upheld, call center performance metrics.",
+          "icon": "ti-shield-check",
+          "title": "Member complaints & appeals"
+        },
+        {
+          "body": "Compliance with CMS rules, pricing accuracy, and formulary compliance for Part D.",
+          "icon": "ti-file-check",
+          "title": "Health plan administration"
+        }
+      ],
+      "heading": "The 5 star domains"
+    },
+    {
+      "body": "CMS assigns different weights to different measures — some count 3x, 4x, or 5x in the final calculation. The highest-weight measures include medication adherence for chronic conditions, care for older adults, and care transitions. Plans invest most heavily in improving these measures because the return on a star improvement is highest.",
+      "type": "callout",
+      "heading": "Highest-weight measures: where plans focus",
+      "variant": "info"
+    },
+    {
+      "hint": "Interview a Medicare Advantage quality director about which star measures are hardest to move, what interventions have worked, and how the star program has changed plan behavior. Recommended: 8–10 minutes.",
+      "type": "audio_slot",
+      "label": "Stars program director: what moves the needle"
+    }
+  ],
+  "tags": [
+    "Star Ratings",
+    "Medicare Advantage",
+    "HEDIS",
+    "CAHPS",
+    "quality bonus"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T21:56:21.124806+00:00",
+  "updated_at": "2026-06-02T21:31:27.451552+00:00",
+  "sanity_slug": "medicare-star-ratings"
+}

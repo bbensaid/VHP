@@ -1,0 +1,9 @@
+{
+  "id": "6282303b-a2e4-43c3-bc53-833dd8960f68",
+  "quiz_id": "8d1e6500-5abd-420d-b50e-86e4095dba53",
+  "order": 1,
+  "question_type": "single_choice",
+  "question": "Under 42 CFR §438.3, Medicaid managed care contracts must be:",
+  "explanation": "42 CFR §438.3 requires states to submit all Medicaid managed care contracts to CMS for review. CMS has 90 days to review and must approve the contract before it takes effect.",
+  "points": null
+}

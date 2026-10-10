@@ -1,0 +1,540 @@
+{
+  "_createdAt": "2026-06-01T15:16:47Z",
+  "_id": "determinants-of-health",
+  "_rev": "2zkDeD7zc2Ko2DfFHsWJDn",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T15:16:47Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Counterintuitive Truth About Health"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The previous lesson introduced the idea that most of what determines a population's health happens outside the doctor's office. This lesson puts numbers and structure to that claim, because it is the single most important — and most counterintuitive — fact in population health: medical care is a relatively small driver of health outcomes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "If you want to improve the health of a population, you have to understand what actually drives it. And the evidence is clear that clinical care, while essential, is far from the dominant factor. The conditions in which people live, their behaviors, and their environment matter more."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This reframing has enormous practical consequences. A health system that only invests in better medical care is optimizing the smaller lever. To move population health, organizations must also act on the larger levers — the social and behavioral determinants — which is why the field looks so far beyond the clinic."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The central insight: medical care drives only a minority of health outcomes. Social, economic, behavioral, and environmental factors drive the majority — so improving population health requires acting well beyond the clinic."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The County Health Rankings Model"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most widely cited framework for the determinants of health is the County Health Rankings model, developed by the University of Wisconsin Population Health Institute with the Robert Wood Johnson Foundation. It assigns approximate weights to the modifiable factors that shape health outcomes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The model's weights are: social and economic factors about 40 percent, health behaviors about 30 percent, clinical care about 20 percent, and the physical environment about 10 percent. The popular shorthand is \"80/20\" — roughly 80 percent of health outcomes are driven by factors other than medical care, and only about 20 percent by clinical care itself."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Read those weights carefully. Social and economic factors alone — things like income, education, employment, and community safety — outweigh clinical care by two to one. Health behaviors (smoking, diet, activity, substance use) also outweigh clinical care. The top drivers identified in this work include poverty, racism, food insecurity, housing insecurity, and adverse childhood experiences."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Largest driver (County Health Rankings model)",
+          "label": "Social & Economic Factors",
+          "value": "~40%"
+        },
+        {
+          "_key": "s2",
+          "context": "Smoking, diet, activity, substance use (CHR)",
+          "label": "Health Behaviors",
+          "value": "~30%"
+        },
+        {
+          "_key": "s3",
+          "context": "Medical care itself (CHR)",
+          "label": "Clinical Care",
+          "value": "~20%"
+        },
+        {
+          "_key": "s4",
+          "context": "Air, water, housing, built environment (CHR)",
+          "label": "Physical Environment",
+          "value": "~10%"
+        }
+      ]
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Five Domains of Social Determinants"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The factors outside clinical care are collectively called the social determinants of health (SDOH) — defined as the conditions in which people are born, live, learn, work, play, worship, and age. The federal Healthy People 2030 framework organizes them into five place-based domains, which give a practical map of where to look."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The five domains are: Economic Stability (income, employment, poverty, ability to afford food and housing); Education Access and Quality; Health Care Access and Quality; Neighborhood and Built Environment (housing, transportation, safety, air and water); and Social and Community Context (social connections, support, and experiences of discrimination)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Notice that \"Health Care Access and Quality\" is just one of the five domains — consistent with the County Health Rankings finding that clinical care is a minority driver. The other four domains are the \"upstream\" factors, typically outside health-care delivery, that population health programs must address to genuinely move outcomes and reduce disparities."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Income, employment, poverty, ability to afford basics.",
+          "title": "Economic Stability"
+        },
+        {
+          "_key": "step2",
+          "description": "Educational opportunity and attainment.",
+          "title": "Education Access & Quality"
+        },
+        {
+          "_key": "step3",
+          "description": "Availability and quality of medical services.",
+          "title": "Health Care Access & Quality"
+        },
+        {
+          "_key": "step4",
+          "description": "Housing, transportation, safety, air and water.",
+          "title": "Neighborhood & Built Environment"
+        },
+        {
+          "_key": "step5",
+          "description": "Social support, connection, and experiences of discrimination.",
+          "title": "Social & Community Context"
+        }
+      ],
+      "title": "The Five SDOH Domains (Healthy People 2030)"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Social Determinants vs. Social Needs"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A subtle but important distinction divides the population level from the individual level. \"Social determinants of health\" are population-level conditions — the structural and environmental factors that shape a whole community's health. \"Social needs\" (or health-related social needs) are the specific, individual-level problems a particular patient has right now: this patient is food-insecure, that patient lacks transportation to dialysis."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The distinction matters for action. You address social determinants through policy and community-level intervention (improving housing stock, food access, neighborhood safety). You address an individual's social needs through screening and referral during care — identifying that a specific patient needs a food benefit, a housing resource, or a transportation voucher."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Population health management works at both levels: it aggregates individual social-needs data to understand the population's determinants, and it uses that understanding to target both individual interventions and broader community partnerships. Screening individuals is how the abstract \"determinants\" become concrete, actionable needs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Social Determinants (population)",
+        "points": [
+          "Population-level conditions",
+          "Structural: housing stock, food access, safety",
+          "Addressed via policy and community intervention",
+          "The \"why\" behind population health patterns"
+        ]
+      },
+      "right": {
+        "label": "Social Needs (individual)",
+        "points": [
+          "A specific patient's problem right now",
+          "This patient is food-insecure / lacks transport",
+          "Addressed via screening and referral in care",
+          "The actionable, person-level expression"
+        ]
+      },
+      "title": "Social Determinants vs. Social Needs"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Capturing Social Data: Z Codes"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "To act on social needs systematically, you have to record them in a structured, codable way — the same data-quality principle from quality measurement. The tool for this is a specific set of ICD-10 diagnosis codes, the \"Z codes\" in the range Z55 to Z65, which document social factors like housing instability, food insecurity, and lack of transportation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Z codes are assigned at the individual level, captured through screening, health-risk assessments, and patient self-report during encounters. Aggregated across a population, they become powerful population-health data — informing risk stratification, value-based care initiatives, and where to target resources. They are the bridge from individual social-needs screening to population-level insight."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "But there is a major catch, and it echoes the EHR-data-quality lesson from quality measurement: Z codes are dramatically underused. Studies have found SDOH Z codes recorded on only around 1.9 percent of hospital admissions. The social needs exist; they are simply not being captured in coded form, which means population health programs are often flying blind on the very factors that drive the most outcomes. Improving SDOH screening and Z-code capture is a foundational task for any serious population health effort — and it sets up the data-infrastructure lesson that follows."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "Social factors drive the majority of health outcomes, yet SDOH Z codes appear on only ~1.9% of hospital admissions. Population health programs frequently lack data on exactly the determinants that matter most. Systematic social-needs screening and structured (Z-code) capture is foundational, not optional.",
+      "title": "The Biggest Drivers Are the Least Documented"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Medical care drives only a minority of health outcomes; social, economic, behavioral, and environmental factors drive the majority.",
+        "The County Health Rankings model weights modifiable determinants roughly: social/economic ~40%, behaviors ~30%, clinical care ~20%, physical environment ~10% (the \"80/20\" shorthand).",
+        "Social and economic factors and health behaviors each outweigh clinical care; top drivers include poverty, racism, food and housing insecurity, and adverse childhood experiences.",
+        "Healthy People 2030 organizes SDOH into five domains: economic stability, education, health care access, neighborhood/built environment, and social/community context.",
+        "Social determinants are population-level conditions (addressed via policy/community); social needs are individual-level problems (addressed via screening and referral).",
+        "ICD-10 Z codes (Z55-Z65) capture individual social needs in structured form, which aggregates into population-health data.",
+        "Z codes are severely underused (~1.9% of hospital admissions), so programs often lack data on the biggest health drivers — making SDOH screening and capture foundational."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The County Health Rankings model attributes only about 20% of health outcomes to clinical care, with social and economic factors (~40%), health behaviors (~30%), and the physical environment (~10%) driving the remaining ~80%. This is the empirical basis for population health's focus on factors well beyond medical care.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "About 80%"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "About 20% — with social/economic factors (~40%), behaviors (~30%), and physical environment (~10%) driving the rest"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "About 95%"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Exactly 50%"
+        }
+      ],
+      "question": "According to the County Health Rankings model, approximately what share of health outcomes is driven by clinical (medical) care?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] County Health Rankings: Relationships Between Determinant Factors and Health Outcomes (ScienceDirect) — https://www.sciencedirect.com/science/article/abs/pii/S0749379715005140 — model weights: social/economic 40%, behaviors 30%, clinical care 20%, physical environment 10%"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Social Determinants of Health: The Variable for 80% of Health Outcomes (CareJourney) — https://carejourney.com/social-determinants-of-health/ — the 80/20 framing; top drivers (poverty, racism, food/housing insecurity, ACEs)"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Social Determinants of Health — Healthy People 2030 (ODPHP) — https://odphp.health.gov/healthypeople/priority-areas/social-determinants-health — five SDOH domains and definition"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] 5 Domains of the Social Determinants of Health (Veradigm) — https://veradigm.com/veradigm-news/5-domains-social-determinants-of-health-sdoh/ — the five place-based domains explained"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Using Z Codes: The Social Determinants of Health (CMS) — https://www.cms.gov/files/document/zcodes-infographic.pdf — Z55-Z65 codes; individual capture; population-health use"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Utilization of SDOH ICD-10 Z-Codes Among Hospitalized Patients, 2016-2017 (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC7666017/ — Z codes on only ~1.9% of hospital admissions (underuse)"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "population-health-management",
+  "order": 2,
+  "slug": {
+    "_type": "slug",
+    "current": "determinants-of-health"
+  },
+  "title": "Determinants of Health: Clinical vs. Social Drivers"
+}

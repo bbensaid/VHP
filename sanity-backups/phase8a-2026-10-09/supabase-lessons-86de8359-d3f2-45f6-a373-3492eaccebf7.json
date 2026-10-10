@@ -1,0 +1,107 @@
+{
+  "id": "86de8359-d3f2-45f6-a373-3492eaccebf7",
+  "track_id": "6e36fdab-df2b-42e1-ab3a-dc28c560aee9",
+  "pillar": "equity",
+  "order": 3,
+  "slug": "hea-stratified-quality-measurement",
+  "title": "Stratified Quality Measurement: HEDIS, NCQA, and the Star Ratings Fight",
+  "summary": "Stratifying a quality measure means running the same HEDIS measure separately by race, ethnicity, and language — and it depends entirely on whether the underlying demographic data is even there. This lesson covers NCQA's build-out, the direct-vs-indirect data problem, and a live example of measurement outrunning payment incentive.",
+  "estimated_minutes": 22,
+  "objectives": [
+    {
+      "id": "obj_hea3a",
+      "text": "Explain what it means, operationally, to stratify a HEDIS measure."
+    },
+    {
+      "id": "obj_hea3b",
+      "text": "Distinguish direct (self-reported) from indirect (imputed) race/ethnicity data and the tradeoffs of each."
+    },
+    {
+      "id": "obj_hea3c",
+      "text": "Describe why CMS's 2027 decision not to implement a Health Equity Index reward is a live example of incentive lagging measurement."
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "A standard HEDIS measure — say, colorectal cancer screening rates — reports one number for a whole plan. A **stratified** version of that same measure reports it separately by race, ethnicity, and (for some measures) language: the screening rate for Black members, for Hispanic members, for Asian members, for White members, side by side. Nothing about the clinical definition of the measure changes; what changes is that the plan can no longer average away a gap between subgroups.\n\nNCQA began requiring this for HEDIS measures in Measurement Year 2022, starting with 5 measures. By Measurement Year 2024 that had grown to 22 measures, with NCQA adding more each year as part of what it calls making health equity part of all its offerings.",
+      "type": "text",
+      "heading": "What 'stratified' means in practice"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Health plan contracts studied in NCQA's RES Learning Network",
+          "value": "101",
+          "source": "NCQA"
+        },
+        {
+          "label": "Covered lives represented across those contracts",
+          "value": "19M+",
+          "source": "NCQA"
+        },
+        {
+          "label": "Share of studied contracts that were Medicaid product lines",
+          "value": "41%",
+          "source": "NCQA"
+        }
+      ],
+      "heading": "The Race and Ethnicity Stratification Learning Network"
+    },
+    {
+      "body": "Stratification only works if a plan actually has race and ethnicity data on its members. NCQA's reporting requires plans to disclose, for every stratified value, whether it came from **direct data** (the member self-reported it, typically at enrollment or in a clinical encounter) or **indirect data** (an alternate source, such as geocoding a member's address against Census tract demographics, used to infer a probable value when no self-report exists).\n\nDirect data is more accurate for any individual member but is often incomplete — many members never self-report. Indirect data fills gaps at the population level but can misclassify individuals, especially in racially mixed neighborhoods. A plan reporting a stratified measure built mostly on indirect data is measuring something real, but with more noise than the same measure built on direct data — and NCQA's disclosure requirement exists so that difference is visible to anyone reading the result, not hidden inside a single clean-looking number.",
+      "type": "text",
+      "heading": "Direct vs. indirect data — and why it matters"
+    },
+    {
+      "rows": [
+        {
+          "left": "Member self-report at enrollment or encounter",
+          "label": "Source",
+          "right": "Inferred from address, surname, or other proxy against Census data"
+        },
+        {
+          "left": "High — the member stated it",
+          "label": "Individual accuracy",
+          "right": "Probabilistic — can misclassify any given individual"
+        },
+        {
+          "left": "Often incomplete — many members never report",
+          "label": "Population completeness",
+          "right": "Can fill most or all of the gap"
+        },
+        {
+          "left": "Preferred; must be labeled as direct when used",
+          "label": "NCQA requirement",
+          "right": "Permitted; must be labeled as indirect when used"
+        }
+      ],
+      "type": "comparison_table",
+      "heading": "Direct vs. Indirect Race/Ethnicity Data",
+      "leftLabel": "Direct (self-reported)",
+      "rightLabel": "Indirect (geocoded/imputed)"
+    },
+    {
+      "body": "CMS's Contract Year 2027 Medicare Advantage and Part D final rule did not implement the 'Excellent Health Outcomes for All' reward — the payment incentive that had been proposed as a Health Equity Index reward for Star Ratings — and instead continued the historical Reward Factor, which rewards consistently high performance for all enrollees rather than closing gaps between them. NCQA's own stratified-measure count kept growing in the same period. The measurement infrastructure to detect a disparity and the payment infrastructure to reward closing it are not the same system, and as of this course's writing, they are not moving at the same pace.",
+      "type": "callout",
+      "heading": "Important — a live measurement-vs-incentive gap",
+      "variant": "warning"
+    },
+    {
+      "body": "Rush University Medical Center's health equity strategy, described in a 2021 *NEJM Catalyst* case study, treated data stratification as a system-level strategy rather than a compliance exercise: Rush restructured its own operations around what stratified data showed about its West Side Chicago neighborhood, including forming a dedicated Anchor Mission committee to translate what the numbers found into hiring, purchasing, and investment decisions in the surrounding community — not just clinical protocol changes. It is a working example of what NCQA's stratification requirement is *for*: a plan or system can only act on a gap it can see by subgroup, and Rush built its strategy around making that visibility organizational, not just a report that quality staff filed once a year.",
+      "type": "text",
+      "heading": "Case study: Rush University Medical Center"
+    }
+  ],
+  "tags": [
+    "hedis",
+    "ncqa",
+    "stratification",
+    "star-ratings"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-09-22T19:11:33.555999+00:00",
+  "updated_at": "2026-09-22T19:42:02.013259+00:00",
+  "sanity_slug": "hea-stratified-quality-measurement"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "7a1e23be-fad6-4695-9c3a-a312cec878b5",
+  "quiz_id": "83edbc96-41d3-4048-a63e-2419b9af5759",
+  "order": 3,
+  "question_type": "single_choice",
+  "question": "Quality withholds, like the one used in the MyCare Ohio demonstration, are designed to:",
+  "explanation": "Quality withholds retain 1–2% of capitation payments and return those funds to MCOs that achieve defined HEDIS performance benchmarks, creating financial incentives for quality improvement.",
+  "points": null
+}

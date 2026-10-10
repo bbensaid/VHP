@@ -1,0 +1,109 @@
+{
+  "id": "ce84ad38-7dd2-41c6-8ee0-ccbd3e45a56a",
+  "track_id": "422c97c2-efbd-49c0-8ab9-c07b7d1e3420",
+  "pillar": "operations",
+  "order": 1,
+  "slug": "why-claims-denied",
+  "title": "Why Claims Are Denied: Root Cause Categories",
+  "summary": "Understanding denial root causes is the first step to systematic prevention — most denials fall into a small number of recurring categories.",
+  "estimated_minutes": 20,
+  "objectives": [
+    "Categorize claim denials by root cause using CARC and RARC codes",
+    "Identify the most common denial reasons by claim type and payer",
+    "Explain how claim adjustment reason codes (CARCs) communicate denial reasons"
+  ],
+  "content_blocks": [
+    {
+      "body": "Claim denials fall into five primary root cause categories:\n\n1. **Eligibility/Authorization:** Patient not covered, authorization missing or invalid (CO-4, CO-15, CO-197)\n2. **Coding/Documentation:** Incorrect codes, missing modifier, medical necessity not supported (CO-4, CO-11, CO-16)\n3. **Timely Filing:** Claim submitted after the payer's deadline (CO-29)\n4. **Duplicate Claim:** Same claim submitted more than once (CO-18)\n5. **Contract/Credentialing:** Provider not in-network or credentialing incomplete (CO-97, PR-2)\n\nUnderstanding which category drives your denials determines which front-end or back-end process needs improvement.",
+      "type": "text",
+      "heading": "Denial Root Cause Categories"
+    },
+    {
+      "rows": [
+        [
+          "CO-4",
+          "Service requires a referral",
+          "Missing referral/authorization",
+          "Verify auth requirements at registration"
+        ],
+        [
+          "CO-11",
+          "Diagnosis inconsistent with procedure",
+          "Coding mismatch",
+          "Clinical documentation review pre-submission"
+        ],
+        [
+          "CO-15",
+          "Authorization number missing/invalid",
+          "Auth not obtained or entered incorrectly",
+          "Auth tracking system with pre-visit verification"
+        ],
+        [
+          "CO-18",
+          "Duplicate claim",
+          "Claim resubmitted without correction",
+          "Claim tracking with duplicate edit"
+        ],
+        [
+          "CO-29",
+          "Timely filing exceeded",
+          "Claim filed after deadline",
+          "Worklist monitoring for unbilled accounts"
+        ],
+        [
+          "CO-97",
+          "Benefit not covered under this plan",
+          "Wrong payer billed or benefit excluded",
+          "Eligibility verification; benefit review"
+        ],
+        [
+          "PR-2",
+          "Coinsurance amount",
+          "Patient responsibility",
+          "Financial counseling; collect at point of service"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "CARC Code",
+        "Description",
+        "Root Cause",
+        "Prevention"
+      ]
+    },
+    {
+      "body": "CARC codes are grouped by responsible party: **CO** (Contractual Obligation) — payer adjustment per contract, provider writes off; **PR** (Patient Responsibility) — patient owes the balance; **OA** (Other Adjustment) — miscellaneous adjustments. Correctly categorizing adjustments ensures accurate financial reporting and appropriate patient billing.",
+      "type": "callout",
+      "title": "CO vs. PR vs. OA: Understanding Adjustment Reason Groups",
+      "variant": "key"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Denials that are preventable",
+          "value": "67%",
+          "context": "MGMA data; most denials result from correctable front-end and mid-cycle process failures"
+        },
+        {
+          "label": "Average net revenue lost to unrecovered denials",
+          "value": "9%",
+          "context": "For organizations without systematic denial management programs"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "denials",
+    "CARC",
+    "RARC",
+    "denial categories",
+    "CO-4",
+    "CO-97"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:31:25.077761+00:00",
+  "updated_at": "2026-06-01T13:14:49.591069+00:00",
+  "sanity_slug": "why-claims-denied"
+}

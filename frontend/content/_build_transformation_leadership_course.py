@@ -171,9 +171,9 @@ LESSONS = [
             ),
             key_stat_block(
                 [
-                    ("$135M", "Lost per $1B in failed projects", "PMI, Pulse of the Profession — unrecoverable loss on failed initiatives"),
-                    ("38%", "More projects on time/budget", "PMI — organizations with a PMO vs. those without one"),
-                    ("67%", "More projects fail outright", "PMI — organizations that treat project management as non-strategic"),
+                    ("$135M", "At risk per $1B spent on projects", "PMI, Pulse of the Profession 2013 — money put at risk by poor project performance"),
+                    ("38%", "More projects meet original goals", "PMI, Pulse of the Profession 2017 — organizations whose enterprise PMO is aligned to strategy"),
+                    ("67%", "More projects fail outright", "PMI, Pulse of the Profession 2020 — organizations that undervalue project management as a strategic competency"),
                 ],
                 heading="The Cost of Skipping This",
             ),
@@ -191,12 +191,12 @@ LESSONS = [
             "tl1",
             "According to PMI's Pulse of the Profession research, what happens to organizations that treat "
             "project management as a non-strategic function?",
-            "PMI's research found these organizations report 67% more of their projects failing outright — "
+            "PMI's 2020 Pulse of the Profession found organizations that undervalue project management as a strategic competency report an average of 67% more of their projects failing outright — "
             "treating execution discipline as optional carries a measurable, large penalty.",
             [
                 ("They see no measurable difference in outcomes", False, "The research found a large, measurable penalty."),
                 ("They report 67% more project failures", True, None),
-                ("They save money by avoiding PMO overhead", False, "PMO organizations complete 38% more projects on time and budget — the opposite conclusion."),
+                ("They save money by avoiding PMO overhead", False, "PMI's 2017 research found organizations with a strategy-aligned enterprise PMO report 38% more projects meeting their original goals — the opposite conclusion."),
                 ("They complete projects faster on average", False, "The finding is about failure rate, not speed."),
             ],
         ),
@@ -298,8 +298,8 @@ LESSONS = [
             ),
             key_stat_block(
                 [
-                    ("$2T", "Wasted annually worldwide", "PMI, Pulse of the Profession — roughly 11.4% of every dollar invested lost to poor project performance"),
-                    ("38%", "More on-time/on-budget delivery", "PMI — organizations with an established PMO"),
+                    ("$2T", "Wasted annually worldwide", "PMI, Pulse of the Profession 2018 — about $1M every 20 seconds; the 2020 edition put average waste at 11.4% of project investment"),
+                    ("38%", "More projects meet original goals", "PMI, Pulse of the Profession 2017 — organizations whose enterprise PMO is aligned to strategy"),
                 ],
                 heading="What a PMO Is Worth",
             ),
@@ -314,8 +314,8 @@ LESSONS = [
         ],
         "quiz": quiz(
             "tl3",
-            "The NHS's National Programme for IT (NPfIT), which cost the UK government more than £10 billion "
-            "before being dismantled in 2011, is most often cited as a failure of which specific kind?",
+            "The NHS's National Programme for IT (NPfIT), dismantled in 2011 at an estimated cost of £9.8 billion, "
+            "is most often cited as a failure of which specific kind?",
             "Multiple independent reviews, including the National Audit Office, found NPfIT's governance "
             "separated central decision-making from the local organizations responsible for implementation — "
             "a structural governance failure, not primarily a technology failure.",
@@ -453,10 +453,11 @@ LESSONS = [
             "tl5",
             "What happened to CMS's measured savings from the mandatory CJR bundled-payment model after "
             "outpatient total knee replacement was made nationally billable outside the bundle?",
-            "Once outpatient TKA was excluded from the bundle nationally and some hospitals' participation "
-            "became voluntary, the boundary-gaming incentive weakened and CJR's savings were no longer "
-            "statistically significant by the fourth performance year — direct evidence that the earlier "
-            "savings were partly an artifact of the mandatory boundary itself.",
+            "After outpatient knee replacement could be billed outside the bundle and participation became "
+            "voluntary in half the areas, hospitals responded to the new boundary — high-spending hospitals "
+            "dropped out, and mandatory hospitals kept healthier knee patients inside the inpatient bundle — so "
+            "savings fell from about $976 to $331 per episode and were no longer statistically significant by "
+            "the fourth year (JAMA Internal Medicine, 2021).",
             [
                 ("Savings increased further", False, "The opposite occurred — measured savings shrank."),
                 ("Savings were no longer statistically significant by year four", True, None),
@@ -506,22 +507,22 @@ LESSONS = [
                 heading="Five Decades of Course Correction, Not Collapse",
             ),
             callout_block(
-                "PMI's benefits realization management standard defines three core elements: identify the "
+                "PMI's Benefits Realization Management Framework defines three core elements: identify the "
                 "benefits a program is meant to produce, execute the changes needed to produce them, and "
                 "sustain those benefits after the program formally ends. The third element is the one most "
-                "transformation plans never budget for — and it is the exact element the NHS's National "
-                "Audit Office found missing from NPfIT, concluding that lessons from the failure were not "
-                "being systematically captured even by the government's later digital programs.",
+                "transformation plans never budget for. A related gap followed NPfIT: in 2020 the UK's National "
+                "Audit Office said it was not convinced the programme's lessons were all being applied to "
+                "later NHS digital programmes.",
                 heading="PMI's Three-Part Discipline",
             ),
         ],
         "quiz": quiz(
             "tl6",
-            "Per PMI's benefits realization management standard, what is the third of the three core "
+            "Per PMI's Benefits Realization Management Framework, what is the third of the three core "
             "elements — the one this lesson identifies as most often missing from transformation plans?",
             "Identify and execute are the two elements most transformation plans do carry out; sustain — "
             "keeping the benefit in place and monitored after the program formally closes — is the element "
-            "most often skipped, which is exactly the gap the NHS's own National Audit Office identified.",
+            "most often skipped, which is exactly the gap the UK's National Audit Office identified.",
             [
                 ("Identify the benefits", False, "Most transformation plans do this part — they define a target benefit up front."),
                 ("Execute the changes needed to produce the benefits", False, "Most plans reach execution; the gap comes after."),

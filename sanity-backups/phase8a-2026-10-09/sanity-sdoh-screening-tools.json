@@ -1,0 +1,509 @@
+{
+  "_createdAt": "2026-06-02T12:59:09Z",
+  "_id": "sdoh-screening-tools",
+  "_rev": "cV7vBu21BPCdPK4W4ytzA9",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T12:59:09Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "From Knowing to Asking"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The previous lesson established that social conditions drive most health outcomes. But a health system cannot act on a patient's housing instability or food insecurity if it does not know about it — and these needs are usually invisible in a standard clinical encounter. SDOH screening is the structured practice of asking patients directly about their social needs so that those needs can be documented and addressed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A consistent finding across the literature is that patients are generally willing to answer these questions when they are asked respectfully, confidentially, and with a clear purpose. Screening surfaces needs clinicians would otherwise never learn about — a patient skipping medications to pay rent, a parent rationing food, an older adult who cannot get to appointments. None of these is visible on a lab panel."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "But screening is only the first step, and doing it badly can cause harm. Asking someone whether they are food insecure and then offering nothing in response signals that the system sees the problem and does not care — eroding the trust screening was meant to build. Responsible SDOH screening is always designed as the front end of a pathway that ends in a referral and, ideally, a confirmed connection to help."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "SDOH screening structures the question \"what do you need outside the clinic?\" Patients will generally answer when asked respectfully — but screening must be paired with a real response, or it erodes trust rather than building it."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Major Validated Screening Tools"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Several validated screening instruments are in wide use. They differ in length, setting, and the domains they emphasize, but they share the goal of standardizing how social needs are captured so that data can be aggregated, compared, and acted on. Two tools dominate US practice: PRAPARE and the CMS Accountable Health Communities tool."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "PRAPARE — the Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences — was developed by the National Association of Community Health Centers (NACHC) together with AAPCHO and the Oregon Primary Care Association. It comprises 21 questions, including 16 core measures, covering housing, food, employment, education, transportation, and social support. PRAPARE is the most widely used tool in Federally Qualified Health Centers and is designed to map to ICD-10 Z-codes for documentation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CMS Accountable Health Communities (AHC) Health-Related Social Needs (HRSN) Screening Tool is a shorter, 10-item instrument published by CMS in 2017. Its core covers five domains — housing instability, food insecurity, transportation problems, utility needs, and interpersonal safety — with optional supplemental questions on financial strain, employment, mental health, and more. It was built for the AHC model and has become a federal reference standard for health-related social needs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2t1",
+      "_type": "code",
+      "code": [
+        {
+          "Best_For": "FQHCs and community health centers",
+          "Developer": "NACHC / AAPCHO / OPCA",
+          "Length": "21 questions (16 core)",
+          "Tool": "PRAPARE"
+        },
+        {
+          "Best_For": "Medicare/Medicaid populations; federal reference standard",
+          "Developer": "CMS",
+          "Length": "10 core items",
+          "Tool": "AHC HRSN"
+        },
+        {
+          "Best_For": "Rapid food-insecurity screening in any setting",
+          "Developer": "Children's HealthWatch",
+          "Length": "2 items",
+          "Tool": "Hunger Vital Sign"
+        },
+        {
+          "Best_For": "Pediatric primary care / well-child visits",
+          "Developer": "Univ. of Maryland",
+          "Length": "Parent questionnaire",
+          "Tool": "SEEK"
+        }
+      ],
+      "language": "json",
+      "title": "Common SDOH Screening Tools"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Z-Codes: Documenting Social Needs in the Record"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Identifying a social need is only useful if it is recorded in a way the system can use. ICD-10-CM Z-codes in the Z55-Z65 range are the standardized diagnosis codes for documenting social determinants of health. They let a clinician capture a social need as structured data that can be counted across a panel, reported for quality programs, and increasingly used by payers to understand and address population needs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The categories map cleanly to the screening domains: Z55 covers education and literacy problems; Z56 employment and unemployment; Z57 occupational exposures; Z58 physical environment; Z59 housing and economic circumstances (Z59.0 is homelessness); Z60 the social environment; and Z62-Z65 various psychosocial circumstances. Per ICD-10 guidance, these are reported as secondary diagnoses, and notably they may be documented based on information from any clinician involved in the patient's care — not only the billing provider — which means social workers, nurses, and case managers can supply the documentation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The central problem with Z-codes is not the codes themselves but how rarely they are used. CMS reported that Z-codes were documented for only about 1.6% of Medicare fee-for-service beneficiaries in 2019, despite social needs being far more prevalent than that. The barriers are practical: many clinicians do not know the codes exist, lack a workflow for capturing them, or are unsure who is permitted to document them. Improving Z-code capture is a recurring target of health-system equity initiatives."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Standardized diagnosis codes for documenting social determinants of health",
+          "label": "ICD-10 SDOH code range",
+          "value": "Z55-Z65"
+        },
+        {
+          "_key": "s2",
+          "context": "Severe underutilization relative to true prevalence, per CMS",
+          "label": "Medicare FFS beneficiaries with a Z-code (2019)",
+          "value": "1.6%"
+        },
+        {
+          "_key": "s3",
+          "context": "Adoption has remained slow since release, per CMS",
+          "label": "When SDOH Z-codes became available",
+          "value": "FY2016"
+        },
+        {
+          "_key": "s4",
+          "context": "Always as secondary diagnoses; documentable by any clinician on the care team",
+          "label": "How Z-codes are reported",
+          "value": "Secondary"
+        }
+      ]
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Closing the Loop: From Referral to Confirmed Help"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Screening identifies a need and Z-codes document it, but neither solves anything on its own. The decisive step is the referral — connecting the patient to a community resource that can actually address the need — and, ideally, confirming the connection happened. The quality of this handoff is what separates SDOH programs that improve outcomes from those that simply generate data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Referrals exist on a spectrum. A paper pamphlet listing food banks is the weakest form — the patient is left to navigate alone. A \"warm\" referral, where a staff member helps make the connection during the visit, is stronger. The strongest is a closed-loop referral: the receiving organization confirms the patient connected with services and reports that outcome back to the care team, so the loop is closed and the system knows whether the need was met."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "A set of community resource and referral platforms has emerged to enable closed-loop referrals at scale, building shared directories and digital handoffs between health care and community-based organizations. The best known are findhelp (formerly Aunt Bertha) and Unite Us. These platforms let a clinic send an electronic referral, track its status, and receive confirmation — turning a vague suggestion into an accountable transaction."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "findhelp (formerly Aunt Bertha) operates a searchable national directory of social-service programs that lets clinical teams and patients find and connect to local resources, with referral tracking.\nUnite Us builds coordinated-care networks that link health care organizations with community-based organizations and provide closed-loop referral tracking — the referring team is notified when a patient is served. Both are used by health systems, payers, and Medicaid programs to make social-needs referrals accountable rather than aspirational.",
+      "title": "Unite Us and findhelp — Closed-Loop Referral Networks"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Designing Screening That Helps Rather Than Harms"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Putting the pieces together, an effective SDOH screening program has four linked components: a validated tool appropriate to the setting, a respectful workflow for asking, structured documentation (including Z-codes), and a referral pathway capable of closing the loop. Missing any one of these undermines the others. A great tool with no referral pathway just catalogs suffering; a great referral network with no screening never finds the patients who need it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Workflow and trust matter as much as instrument choice. Who asks the questions, how they are framed, whether the patient understands why, and whether the encounter feels safe all shape whether screening yields honest answers. Embedding community health workers or trained staff to conduct screening and follow up on referrals consistently produces better engagement than handing patients a form in a waiting room."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Finally, screening should be designed with the populations it serves, not just for them. Tools and workflows that are language-concordant, culturally appropriate, and sensitive to the stigma around needs like food insecurity or interpersonal safety will capture far more than a generic checklist. The goal is not a completed questionnaire — it is a patient whose unmet need was identified and actually addressed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "Requiring clinicians to screen without giving them time, training, documentation tools, or a referral network sets the program up to fail — and can damage patient trust. Before scaling screening, ensure the downstream referral pathway and the staff capacity to act on findings are genuinely in place.",
+      "title": "Do not let screening become an unfunded mandate"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "SDOH screening structures the practice of asking patients about social needs; patients generally answer when asked respectfully, surfacing needs invisible in clinical data.",
+        "PRAPARE (21 questions, 16 core; NACHC) is the dominant tool in FQHCs; the CMS AHC HRSN tool (10 items, 5 core domains) is a federal reference standard.",
+        "ICD-10 Z-codes (Z55-Z65) document social needs as structured data and may be recorded by any clinician on the care team, reported as secondary diagnoses.",
+        "Z-codes are badly underutilized — documented for only ~1.6% of Medicare FFS beneficiaries in 2019 — mainly due to workflow gaps and lack of awareness.",
+        "The decisive step is the referral; closed-loop referrals confirm the patient connected to services and report back to the care team.",
+        "Platforms like findhelp and Unite Us enable closed-loop referrals at scale by linking health care with community-based organizations and tracking outcomes.",
+        "Effective programs link four components — validated tool, respectful workflow, structured documentation, and a real referral pathway; missing any one undermines the rest."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Z-codes in the Z55-Z65 range are ICD-10-CM diagnosis codes used to document social determinants of health (e.g., Z59.0 for homelessness). They allow social needs to be captured as structured, reportable data. The key limitation is severe underutilization: CMS found they were documented for only about 1.6% of Medicare fee-for-service beneficiaries in 2019, due mainly to lack of awareness and missing workflows.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "They document vaccination status; the limitation is that they expire annually"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "They document social determinants of health as structured data, but are badly underutilized — recorded for only ~1.6% of Medicare FFS beneficiaries in 2019"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "They are billing codes that generate direct reimbursement; the limitation is low payment rates"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "They code mental health diagnoses under DSM-5; the limitation is overlap with ICD codes"
+        }
+      ],
+      "question": "What are ICD-10 Z-codes in the Z55-Z65 range used for, and what is a key limitation in current practice?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] National Association of Community Health Centers — \"PRAPARE\" — https://www.nachc.org/resource/prapare/ — PRAPARE developed by NACHC/AAPCHO/OPCA; 21 questions with 16 core measures; domains and FQHC use."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] CMS — \"The Accountable Health Communities Health-Related Social Needs Screening Tool\" — https://www.cms.gov/priorities/innovation/files/worksheets/ahcm-screeningtool.pdf — 10-item tool; five core domains (housing, food, transportation, utilities, interpersonal safety); published 2017."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CMS Office of Minority Health (2023) — \"Utilization of Z Codes for Social Determinants of Health\" — https://www.cms.gov/files/document/cms-2023-omh-z-code-resource.pdf — Z55-Z65 range; ~1.6% of Medicare FFS beneficiaries had a Z-code in 2019; documentation by any clinician on the care team."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Medicaid.gov T-MSIS Reporting Reminder — \"Z Codes for Social Determinants of Health\" — https://www.medicaid.gov/medicaid/data-and-systems/macbis/tmsis/tmsis-blog/105716 — Z-codes reported as secondary diagnoses; available since FY2016; slow adoption."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Unite Us and findhelp — closed-loop referral platforms — https://uniteus.com/ and https://www.findhelp.org/ — community resource networks enabling electronic referrals and closed-loop tracking between health care and community organizations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "health-equity-sdoh",
+  "order": 5,
+  "slug": {
+    "_type": "slug",
+    "current": "sdoh-screening-tools"
+  },
+  "title": "SDOH Screening in Clinical Settings: Tools, Z-Codes & Referrals"
+}

@@ -1,0 +1,40 @@
+{
+ "file": "frontend/content/_lessons_transformation_leadership.py",
+ "claim": "tl-sustaining-change-benefits-realization source: PMI BRM standard/tool claim; unverified Maryland quote; NHS's NAO; source for lessons finding",
+ "verdict": "MISATTRIBUTED",
+ "src": "PMI BRM Framework 2016 (identify/execute/sustain; a framework, not a standard); quote \"continual course correction...\" unverifiable; NAO is the UK auditor; lessons finding = NAO Digital transformation in the NHS (May 2020)",
+ "pairs": [
+  [
+   "The Project Management Institute\\'s benefits realization management standard gives '\n        'this planning a formal structure.'),",
+   "The Project Management Institute\\'s Benefits Realization Management Framework '\n        '(2016) gives this planning a formal structure.'),"
+  ],
+  [
+   "PMI\\'s standard treats it as '\n        'a tool within the broader discipline of portfolio performance management, and defines three core '\n        'elements:",
+   "PMI\\'s framework organizes it into '\n        'three core elements:"
+  ],
+  [
+   "Published assessments describe the model as having performed favorably over its most recent '\n        'decade, but explicitly note this has required \"continual course correction by CMS, HSCRC, and '\n        'hospitals\" rather than a single design that has simply run unchanged.'),",
+   "Each of those revisions was a course correction by the commission, CMS, and the hospitals \u2014 '\n        'the model has never been a single design left to run unchanged.'),"
+  ],
+  [
+   "'PMI\\'s benefits realization management standard defines three core elements",
+   "'PMI\\'s Benefits Realization Management Framework defines three core elements"
+  ],
+  [
+   "'The NHS\\'s National Audit Office found NPfIT",
+   "'The UK\\'s National Audit Office found NPfIT"
+  ],
+  [
+   "'Per PMI\\'s benefits realization management standard, which of",
+   "'Per PMI\\'s Benefits Realization Management Framework, which of"
+  ],
+  [
+   "exactly the gap the NHS\\'s own National Audit Office found",
+   "exactly the gap the UK\\'s National Audit Office found"
+  ],
+  [
+   "blk('src4', '[4] National Audit Office / Parliament Public Accounts Committee, \"The dismantled National Programme for IT in the NHS\" \u2014 https://publications.parliament.uk/pa/cm201314/cmselect/cmpubacc/294/294.pdf \u2014 the finding that NPfIT\\'s lessons were not systematically captured'),",
+   "blk('src4', '[4] National Audit Office, \"Digital transformation in the NHS\" (May 2020) \u2014 https://www.nao.org.uk/reports/digital-transformation-in-the-nhs/ \u2014 the finding that NPfIT\\'s lessons were not all being applied to later NHS digital programmes'),"
+  ]
+ ]
+}

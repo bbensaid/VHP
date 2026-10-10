@@ -1,0 +1,531 @@
+{
+  "_createdAt": "2026-06-02T17:11:23Z",
+  "_id": "hospital-vbp-hrrp-hacrp",
+  "_rev": "jFV5UM63HEdRp4x3pttqh0",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T17:11:23Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Adding Quality to the Payment Equation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Inpatient Prospective Payment System pays hospitals a fixed amount per case — which rewards efficiency but says nothing about whether the care was good. A hospital could discharge a patient quickly and cheaply, only to have them bounce back a week later with a complication, and IPPS alone would simply pay for both stays."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Affordable Care Act of 2010 set out to fix that gap by tying a slice of Medicare hospital payment to quality and outcomes, not just volume. It created three mandatory pay-for-performance programs that now sit on top of IPPS: the Hospital Value-Based Purchasing Program (VBP), the Hospital Readmissions Reduction Program (HRRP), and — added shortly after — the Hospital-Acquired Condition Reduction Program (HACRP)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Together these three programs adjust a meaningful portion of a hospital’s Medicare revenue based on how well it performs on safety, outcomes, patient experience, and cost. They are the hospital-level expression of Medicare’s broader shift from paying for volume to paying for value."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "VBP, HRRP, and HACRP are three distinct ACA-era programs that adjust hospital IPPS payments based on quality. A hospital can be affected by all three at once, with the adjustments stacking on top of its base DRG payments."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Hospital Value-Based Purchasing (VBP)"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Hospital VBP Program rewards or penalizes hospitals based on their performance across four evenly weighted domains: Clinical Outcomes, Safety, Person and Community Engagement (patient experience), and Efficiency and Cost Reduction. A hospital’s scores combine into a Total Performance Score."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "VBP has a defining feature: it is budget-neutral. CMS withholds 2 percent of each participating hospital’s base operating DRG payments and redistributes the entire pool back to hospitals as value-based incentive payments. High performers can earn back more than they contributed; low performers get back less. No money leaves the system — it is redistributed from worse to better performers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Clinical Outcomes domain illustrates what VBP measures: mortality after acute myocardial infarction (AMI), heart failure, pneumonia, COPD, and coronary artery bypass graft (CABG), plus complications from elective hip and knee replacement. VBP is the broadest of the three programs because it can move payment in either direction."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Of base operating DRG payments (CMS)",
+          "label": "VBP Withhold",
+          "value": "2%"
+        },
+        {
+          "_key": "s2",
+          "context": "Outcomes, Safety, Experience, Efficiency (evenly weighted)",
+          "label": "VBP Domains",
+          "value": "4"
+        },
+        {
+          "_key": "s3",
+          "context": "Full 2% pool redistributed back to hospitals",
+          "label": "VBP Design",
+          "value": "Budget-neutral"
+        },
+        {
+          "_key": "s4",
+          "context": "Affordable Care Act value-based programs",
+          "label": "Created by the ACA",
+          "value": "2010"
+        }
+      ]
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Hospital Readmissions Reduction Program (HRRP)"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The HRRP, also created by the ACA and launched in October 2012, targets a specific waste-and-quality problem: patients who are discharged and then readmitted within 30 days, often because of poor discharge planning or inadequate follow-up. It penalizes hospitals with worse-than-expected, risk-adjusted readmission rates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Unlike VBP, HRRP is a one-way penalty: there is no upside. Hospitals with excess readmissions lose up to 3 percent of their inpatient Medicare payments. The program focuses on six conditions and procedures: heart attack (AMI), heart failure, pneumonia, COPD, CABG, and elective hip/knee replacement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "HRRP is credited with helping drive down national readmission rates, but it is also one of the most debated programs in Medicare. Critics argue it disproportionately penalizes safety-net hospitals that serve sicker, poorer patients, prompting CMS to later stratify hospitals into peer groups by their share of dual-eligible patients to make comparisons fairer."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "A hospital that discharges a heart-failure patient without arranging medications, follow-up appointments, and home monitoring may see that patient return within days. HRRP makes such readmissions financially painful — up to a 3% cut on all inpatient Medicare payments — which is why hospitals invested heavily in discharge planning, transitional care, and post-discharge follow-up after 2012.",
+      "title": "Why the 30-Day Window Matters"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Hospital-Acquired Condition Reduction Program (HACRP)"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The HACRP, which began in October 2014, targets harms that happen inside the hospital — conditions patients acquire during their stay that should largely be preventable. It is the bluntest of the three programs: every year, the hospitals scoring in the worst-performing quartile (the bottom 25 percent) lose 1 percent of all their Medicare fee-for-service payments."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "HACRP scoring rests on six measures: the CMS Patient Safety and Adverse Events Composite (PSI 90), plus five healthcare-associated infection measures — central line-associated bloodstream infections (CLABSI), catheter-associated urinary tract infections (CAUTI), surgical site infections (SSI) for colon surgery and hysterectomy, and MRSA bacteremia."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because HACRP penalizes a fixed bottom quartile every year regardless of absolute improvement, even hospitals that get safer can still be penalized if others improve faster — a design feature that has drawn criticism, particularly for its disproportionate impact on safety-net and teaching hospitals."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "Because HACRP penalizes the worst-performing 25% of hospitals each year by definition, a hospital can reduce its infection rates and still be penalized if it remains in the bottom quartile. It is a relative-ranking penalty, not an absolute-threshold one.",
+      "title": "HACRP always penalizes the bottom quartile"
+    },
+    {
+      "_key": "s4t1",
+      "_type": "code",
+      "code": [
+        {
+          "Adjustment": "Up or down (2% withhold, redistributed)",
+          "Focus": "Overall quality (4 domains)",
+          "Program": "VBP",
+          "Started": "2013"
+        },
+        {
+          "Adjustment": "Penalty only, up to 3%",
+          "Focus": "30-day readmissions (6 conditions)",
+          "Program": "HRRP",
+          "Started": "Oct 2012"
+        },
+        {
+          "Adjustment": "Penalty only, 1% (worst quartile)",
+          "Focus": "Hospital-acquired conditions",
+          "Program": "HACRP",
+          "Started": "Oct 2014"
+        }
+      ],
+      "language": "json",
+      "title": "The Three Hospital Quality Programs at a Glance"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How the Programs Fit Together"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "These three programs operate simultaneously and independently. A single hospital can earn a VBP bonus, take an HRRP readmissions penalty, and avoid (or incur) a HACRP penalty all in the same year — the adjustments stack on top of its base IPPS payments, sometimes pulling in different directions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Collectively they pushed hospitals to invest in things IPPS alone never rewarded: infection prevention, discharge planning, care transitions, patient experience, and mortality reduction. They demonstrated that even modest payment adjustments — a few percent of Medicare revenue — can reshape hospital priorities."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "They also exposed the hard problems of pay-for-performance: how to risk-adjust fairly, how to avoid punishing hospitals that serve disadvantaged patients, and how to measure quality without creating perverse incentives. Those lessons feed directly into the next stage of reform — accountable care organizations and bundled payments — covered in the lessons ahead."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5q1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5q1s",
+          "_type": "span",
+          "marks": [],
+          "text": "VBP, HRRP, and HACRP proved that Medicare could put a hospital’s money where its quality was — and revealed just how hard it is to measure quality fairly."
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "The ACA created three mandatory hospital pay-for-performance programs layered on top of IPPS to tie payment to quality, not just volume.",
+        "Hospital VBP scores four evenly weighted domains (Clinical Outcomes, Safety, Person & Community Engagement, Efficiency) and is budget-neutral.",
+        "VBP withholds 2% of base operating DRG payments and redistributes the entire pool, so it can adjust payment up or down.",
+        "HRRP (launched Oct 2012) is a penalty-only program of up to 3% for excess 30-day readmissions across six conditions including AMI, heart failure, and pneumonia.",
+        "HACRP (began Oct 2014) imposes a 1% penalty on the worst-performing quartile of hospitals on six safety measures (PSI 90 plus five infection measures).",
+        "HACRP penalizes a fixed bottom 25% every year, so a hospital can improve and still be penalized — a relative, not absolute, design.",
+        "A hospital can be affected by all three programs at once; collectively they drove investment in safety, care transitions, and patient experience while exposing the difficulty of fair quality measurement."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "VBP withholds 2% of base operating DRG payments and redistributes the full pool, so high performers can earn back more than they contributed — payment moves both ways. HRRP (up to 3%) and HACRP (1% on the worst quartile) are penalty-only with no upside. All three are ACA-era programs, and the worst-quartile rule is HACRP’s, not VBP’s.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "VBP is the only one of the three created by the Affordable Care Act"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "VBP can increase or decrease payment (budget-neutral redistribution), while HRRP and HACRP are penalty-only"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "VBP applies only to Medicare Advantage plans, not traditional Medicare"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "VBP penalizes only the worst-performing quartile of hospitals each year"
+        }
+      ],
+      "question": "How does the Hospital Value-Based Purchasing (VBP) program differ fundamentally from the HRRP and HACRP?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Hospital Value-Based Purchasing — CMS — https://www.cms.gov/medicare/quality/value-based-programs/hospital-purchasing — four domains, 2% withhold, budget-neutral redistribution."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] IPPS Hospital Value-Based Purchasing — AHA — https://www.aha.org/hospital-value-based-purchasing/ipps-hospital-value-based-purchasing — VBP domains, Total Performance Score, clinical outcomes measures."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Medicare’s Hospital Readmission Reduction Program FAQ — ACEP — https://www.acep.org/administration/reimbursement/reimbursement-faqs/hospital-readmissions-faq — ACA origin, Oct 2012 launch, up to 3% penalty, six conditions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Impact of the Medicare HRRP on Vulnerable Populations — BMC Health Services Research — https://bmchealthservres.biomedcentral.com/articles/10.1186/s12913-019-4645-5 — readmissions critique, safety-net penalty concerns."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Hospital-Acquired Condition Reduction Program — CMS — https://www.cms.gov/medicare/payment/prospective-payment-systems/acute-inpatient-pps/hospital-acquired-condition-reduction-program-hacrp — Oct 2014 start, 1% worst-quartile penalty, six measures (PSI 90, CLABSI, CAUTI, SSI, MRSA)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] HAC Reduction Program Penalizes Safety-Net Hospitals At Higher Rates — TechTarget — https://www.techtarget.com/revcyclemanagement/news/366600040/ — relative-ranking critique of HACRP."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicare-fundamentals",
+  "order": 9,
+  "slug": {
+    "_type": "slug",
+    "current": "hospital-vbp-hrrp-hacrp"
+  },
+  "title": "Hospital Value-Based Programs: VBP, HRRP, and HACRP"
+}

@@ -1,0 +1,502 @@
+{
+  "_createdAt": "2026-06-02T04:04:06Z",
+  "_id": "genomic-data-standards",
+  "_rev": "IOfxRsA0kr16lzZkV4coPa",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T04:04:06Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Genomics Is a Data Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The earlier lessons established that cheap sequencing solved the problem of reading DNA, and that the bottleneck moved to interpretation. But between sequencing and clinical use sits an enormous, often-overlooked challenge: data. A single human genome is billions of data points, and to be useful that data must be stored, processed, exchanged, and integrated into care — all of which require standards."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Without shared data standards, genomics fragments into incompatible silos: one lab's results cannot be read by another's software, a genomic result cannot flow into the EHR, and data cannot be pooled for research. Standards are the unglamorous plumbing that makes genomic data actually usable across the bioinformatics pipeline, the clinical record, and the research enterprise."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson covers the three layers of genomic data standards that matter for clinical genomics: the file formats produced by sequencing and analysis (FASTQ, BAM, VCF), the clinical-reporting standard for getting genomics into health IT (HL7 FHIR Genomics), and the global data-sharing framework (GA4GH). Each solves a different part of the genomics-as-data problem."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Genomic data only becomes useful through shared standards. Three layers matter: sequencing/analysis file formats (FASTQ, BAM, VCF), the clinical-reporting standard (HL7 FHIR Genomics), and the global data-sharing framework (GA4GH)."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Bioinformatics File Pipeline"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sequencing produces data in a sequence of standardized formats, each a step closer to a clinical answer. The pipeline runs FASTQ → BAM → VCF. Understanding this flow demystifies what happens between the sequencer and the report."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A FASTQ file holds the raw output of the sequencer: the millions of short DNA \"reads\" plus a quality score for each base. It is the unprocessed starting material — sequence fragments with no idea yet where they belong in the genome. Next, alignment software maps those reads against a reference genome, producing a BAM file (Binary Alignment Map) — the reads now placed in their correct genomic positions. FASTQ shows the raw reads; BAM shows where they belong."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Finally, variant-calling software compares the aligned reads (BAM) to the reference and identifies where the patient differs — the variants — producing a VCF file (Variant Call Format). VCF, developed in 2010 for the 1000 Genomes Project, is the standard format for storing variants (SNPs, indels, structural variants). The VCF is the starting point for the interpretation work — applying the ACMG classification to decide which of the listed variants actually matter clinically. So the pipeline turns raw sequence into a list of variants ready for expert analysis."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Raw sequencer output: millions of short reads with quality scores (not yet placed).",
+          "title": "FASTQ"
+        },
+        {
+          "_key": "step2",
+          "description": "Reads aligned to a reference genome — now in their correct genomic positions.",
+          "title": "BAM"
+        },
+        {
+          "_key": "step3",
+          "description": "The variants: where the patient differs from the reference (developed 2010 for 1000 Genomes).",
+          "title": "VCF"
+        },
+        {
+          "_key": "step4",
+          "description": "Apply ACMG classification to decide which variants are clinically meaningful.",
+          "title": "Interpretation"
+        }
+      ],
+      "title": "The Bioinformatics File Pipeline"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "FHIR Genomics: Getting Into the Health Record"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A VCF file is fine for bioinformaticians, but it is not how a clinician consumes genomic information, and it does not flow into an electronic health record. To make genomic results clinically usable — orderable, reportable, and integrated with the rest of a patient's data — the field needs a clinical health-IT standard. That standard is built on FHIR, the modern interoperability standard from the broader HTR curriculum."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The HL7 Clinical Genomics Work Group developed the FHIR Genomics Reporting Implementation Guide — a set of FHIR profiles for representing genomic test requests and results in a structured, standardized way. It standardizes the reporting of variants, genotypes, and variant annotations, and can represent both germline and somatic findings, simple and complex variants, and the clinical implications (disease associations, medication recommendations) derived from them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This matters because it connects genomics to everything else in clinical informatics. A genomic result represented in FHIR Genomics can flow into the EHR, trigger clinical decision support (the next lesson), and be exchanged between systems using the same FHIR machinery that carries the rest of a patient's data. FHIR Genomics is the bridge from the bioinformatics world (VCF) to the clinical world (the EHR) — turning a variant file into an actionable part of the patient record."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "The contrast is instructive: VCF answers \"what variants does this sample have?\" for a bioinformatician; FHIR Genomics answers \"how does this genomic result fit into this patient's clinical record and care?\" for the health system. Both are needed; they serve different layers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "GA4GH: Sharing Data Across the World"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The third layer addresses a problem neither file formats nor clinical reporting solves: the need to share and pool genomic data across institutions and countries, responsibly. Genomic interpretation improves dramatically when data is pooled — a variant seen once is a mystery, but seen in thousands of people with known outcomes, its meaning becomes clear. Yet sharing genomic data raises enormous privacy and governance challenges."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Global Alliance for Genomics and Health (GA4GH) was created to meet this need. It develops a common framework of technical standards and harmonized, responsible approaches for sharing genomic and health-related data across organizations. Its goal is to let the world's genomic data work together — both technically (interoperable formats and APIs) and ethically (governance and consent frameworks)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "GA4GH standards are not academic; they are implemented by over 40 leading genomics institutions worldwide, including the NIH All of Us Research Program, Genomics England, TOPMed, Australian Genomics, and major technology companies. This global adoption is what enables the large-scale data pooling that powers better variant interpretation — directly addressing the interpretation bottleneck and, notably, the equity problem that databases underrepresent some populations (a later lesson), since broader sharing can broaden representation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "A clinical lab finds a rare variant in a patient and cannot tell if it is pathogenic — a \"variant of uncertain significance.\" On its own, the lab has seen it only once.\nThrough GA4GH-enabled data sharing, that variant can be checked against pooled data from dozens of institutions worldwide. If it turns out to appear in many healthy people, it is likely benign; if it clusters in affected individuals, likely pathogenic. Shared standards turn isolated mysteries into interpretable answers — directly attacking the VUS problem.",
+      "title": "Why Pooling Data Improves Interpretation"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Standards Are the Foundation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "These three layers fit together as the data backbone of clinical genomics. The bioinformatics formats (FASTQ/BAM/VCF) move sequence to variants; FHIR Genomics moves variants into the clinical record and decision support; and GA4GH moves data across institutions to improve interpretation for everyone. Each layer solves a distinct piece, and all are needed for genomics to function as routine medicine."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The recurring theme of this curriculum applies forcefully here: standardized data is the precondition for everything. Without VCF, every lab's output is incompatible. Without FHIR Genomics, results cannot reach the clinician or trigger decision support. Without GA4GH, the world's genomic data stays in silos and interpretation stays harder than it needs to be. Standards are not the exciting part of genomics, but they are what make the exciting parts possible at scale."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For anyone working in clinical genomics, the practical takeaway is to understand which standard operates at which layer, and to recognize that the field's ability to deliver genomic medicine at scale depends on this plumbing being in place. The next lesson builds directly on FHIR Genomics: how genomic results, once standardized, are integrated into the EHR and turned into clinical decision support that actually changes care at the point of decision."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "VCF is a bioinformatics file format (sequence-to-variants) — it does not flow into an EHR or trigger decision support. FHIR Genomics is the clinical-reporting standard that does. GA4GH is the cross-institution data-sharing framework. Confusing these layers (e.g., expecting a VCF to integrate with the clinical record) leads to broken genomic workflows. Each standard solves a different part of the data problem.",
+      "title": "Match the Standard to the Layer"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Genomics is fundamentally a data problem, and shared standards are what make genomic data storable, exchangeable, and usable across the pipeline, the clinic, and research.",
+        "The bioinformatics pipeline runs FASTQ (raw reads) → BAM (reads aligned to a reference) → VCF (the variants), the standard variant format developed in 2010 for the 1000 Genomes Project.",
+        "The VCF is the starting point for interpretation (applying ACMG classification to decide which variants matter).",
+        "The HL7 FHIR Genomics Reporting Implementation Guide standardizes genomic results for clinical use, letting them flow into the EHR and trigger decision support — the bridge from VCF to the clinical record.",
+        "VCF answers \"what variants does this sample have?\" for bioinformaticians; FHIR Genomics answers \"how does this result fit into the patient's record and care?\" for the health system.",
+        "The Global Alliance for Genomics and Health (GA4GH) provides technical and ethical standards for responsibly sharing genomic data across 40+ institutions worldwide (All of Us, Genomics England, TOPMed).",
+        "Pooling data via shared standards improves variant interpretation (helping resolve VUS) — standards are the unglamorous foundation that makes genomic medicine work at scale."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "These standards operate at different layers. The VCF is the bioinformatics output listing a sample's variants — useful to analysts but not consumable by clinicians or EHRs. The HL7 FHIR Genomics Reporting Implementation Guide standardizes genomic results in clinical FHIR form, so they can flow into the electronic health record, trigger decision support, and be exchanged between systems. VCF answers \"what variants are present\"; FHIR Genomics makes that result actionable in clinical care. (GA4GH is the separate cross-institution data-sharing layer.)",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "FHIR Genomics replaces the VCF in the bioinformatics pipeline"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "A VCF is a bioinformatics file format that does not flow into the EHR or trigger decision support; FHIR Genomics standardizes the result for clinical use so it can integrate with the patient record and care"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "VCF and FHIR Genomics are the same thing"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "FHIR Genomics is only for research data sharing"
+        }
+      ],
+      "question": "A genomic lab produces a VCF file of a patient's variants. Why is the HL7 FHIR Genomics standard also needed?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] FASTQ vs BAM vs VCF — Understanding the Most Important NGS File Formats (Genome Insights) — https://genomeinsights.wordpress.com/2026/05/14/fastq-vs-bam-vs-vcf-understanding-the-most-important-ngs-file-formats/ — the FASTQ → BAM → VCF pipeline"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Variant Call Format (Wikipedia) — https://en.wikipedia.org/wiki/Variant_Call_Format — VCF developed 2010 for the 1000 Genomes Project; stores SNPs, indels, structural variants"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Genomics Reporting Implementation Guide (HL7 FHIR) — https://hl7.org/fhir/uv/genomics-reporting/ — FHIR profiles for genomic test results; variants, genotypes, annotations; germline and somatic"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Genomics on FHIR — A Feasibility Study (npj Genomic Medicine) — https://www.nature.com/articles/s41525-025-00516-1 — FHIR Genomics for clinical interoperability; representing genomic data in the record"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Global Alliance for Genomics and Health (GA4GH) — https://build.fhir.org/ig/HL7/phenomics-exchange-ig/ga4gh.html — common framework for responsible genomic data sharing; 40+ institutions (All of Us, Genomics England, TOPMed)"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] VCF — Variant Call Format (GATK, Broad Institute) — https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format — VCF as the variant-calling output and starting point for interpretation"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "genomics-precision-medicine",
+  "order": 7,
+  "slug": {
+    "_type": "slug",
+    "current": "genomic-data-standards"
+  },
+  "title": "Genomic Data Standards: VCF, FHIR Genomics, and GA4GH"
+}

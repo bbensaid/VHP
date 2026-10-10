@@ -1,0 +1,520 @@
+{
+  "_createdAt": "2026-06-02T17:17:17Z",
+  "_id": "part-d-structure-formulary",
+  "_rev": "vgbIiwZpnxA2FcYEhkicaE",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T17:17:17Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Newest Pillar of Medicare"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "For its first four decades, Medicare had a glaring gap: it generally did not cover outpatient prescription drugs. A senior could have a heart attack covered under Part A, but the medications to prevent the next one were largely on their own dime. Part D, created by the Medicare Modernization Act of 2003 and effective January 1, 2006, finally closed that gap."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Part D is unusual in its structure. Rather than the government providing the benefit directly, it is delivered entirely by private plans — either standalone Prescription Drug Plans (PDPs) that attach to Original Medicare, or drug coverage built into Medicare Advantage plans (MA-PDs). Beneficiaries pay premiums, and the federal government heavily subsidizes the cost."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Enrollment is voluntary, but there is a catch: beneficiaries who go without creditable drug coverage and sign up late face a permanent late-enrollment penalty added to their premium. This nudge is designed to keep healthy beneficiaries in the risk pool rather than waiting until they get sick."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Part D is the Medicare outpatient prescription drug benefit, created by the Medicare Modernization Act of 2003 (effective 2006). It is delivered entirely through private plans — standalone PDPs or Medicare Advantage drug plans — and subsidized by the federal government."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Formularies and Tiers"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Every Part D plan has a formulary — its list of covered drugs. Plans are not required to cover every drug, but they must cover a wide range across therapeutic categories and include certain protected classes. Two plans can cover very different drugs at very different prices, which is why drug coverage, not just premium, should drive plan choice."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Within a formulary, drugs are sorted into tiers. Lower tiers (preferred generics, generics) carry low copays; higher tiers (preferred brand, non-preferred, and specialty) carry higher copays or coinsurance. Plans use tiering to steer patients toward lower-cost drugs and to negotiate with manufacturers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Plans also use utilization management tools: prior authorization (requiring approval before a drug is covered), step therapy (try a cheaper drug first), and quantity limits. These tools control costs but can create access barriers, making formulary design one of the most consequential — and contested — features of any Part D plan."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Easy to overweight",
+        "points": [
+          "The monthly premium",
+          "The plan’s brand name",
+          "A low advertised deductible alone"
+        ]
+      },
+      "right": {
+        "label": "What actually matters",
+        "points": [
+          "Whether your specific drugs are on the formulary",
+          "Which tier your drugs fall in (copay/coinsurance)",
+          "Prior authorization or step-therapy requirements"
+        ]
+      },
+      "title": "Choosing a Part D Plan: What Matters"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Benefit Structure — and the End of the Donut Hole"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The standard Part D benefit has long moved through phases. A beneficiary first pays a deductible (up to $590 in 2025), then enters an initial coverage phase sharing costs with the plan. Historically, beneficiaries then hit the infamous \"donut hole\" — a coverage gap where they paid a much larger share — before reaching catastrophic coverage."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "That donut hole is now gone. As of 2025, the Inflation Reduction Act restructured Part D into a simpler three-phase benefit — deductible, initial coverage, and catastrophic — with no coverage gap in between. The change makes drug costs far more predictable for beneficiaries."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The headline reform is a hard out-of-pocket cap. Beginning in 2025, beneficiary out-of-pocket spending on covered Part D drugs is capped at $2,000 per year (indexed thereafter; the cap is $2,100 in 2026). Once a beneficiary hits the cap, the plan covers the rest of their covered drug costs for the year — a profound change for people on expensive medications."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "New IRA cap; $2,100 in 2026 (KFF/CMS)",
+          "label": "Part D OOP Cap (2025)",
+          "value": "$2,000"
+        },
+        {
+          "_key": "s2",
+          "context": "Maximum standard Part D deductible (CMS)",
+          "label": "Standard Deductible 2025",
+          "value": "Up to $590"
+        },
+        {
+          "_key": "s3",
+          "context": "Coverage gap removed under the IRA in 2025",
+          "label": "The \"Donut Hole\"",
+          "value": "Eliminated"
+        },
+        {
+          "_key": "s4",
+          "context": "Projected IRA savings on drug costs (CMS)",
+          "label": "Avg. OOP Savings 2025",
+          "value": "~30%"
+        }
+      ]
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Inflation Reduction Act Transformation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2022 Inflation Reduction Act (IRA) is the most significant change to Medicare drug coverage since Part D itself. Beyond the out-of-pocket cap and donut-hole elimination, it capped insulin cost-sharing at $35 per month (effective 2023 for Part D insulin), making a life-sustaining drug affordable for millions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The IRA also requires drug manufacturers to pay rebates to Medicare if they raise prices faster than inflation — an inflation-rebate provision designed to restrain price growth. And it created the Medicare Prescription Payment Plan, effective January 1, 2025, which lets any Part D enrollee spread their out-of-pocket costs into capped, interest-free monthly installments instead of paying a large bill all at once at the pharmacy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Most historically, the IRA gave Medicare the power to negotiate prices for certain high-spend drugs — something the original 2003 law had explicitly forbidden. CMS selected the first 10 drugs, and the negotiated prices (ranging from a 38 percent to a 79 percent discount off 2023 list prices) take effect in 2026, with more drugs added in later years."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "For the first negotiation cycle, CMS reached agreed prices on 10 high-spend Part D drugs — including Januvia, Eliquis, Xarelto, and Imbruvica — with discounts ranging from 38% to 79% off 2023 list prices. Effective in 2026, these prices are estimated to save Medicare beneficiaries about $1.5 billion in out-of-pocket costs and the Medicare program roughly $6 billion per year. It is the first time in Part D’s history that Medicare has directly negotiated drug prices.",
+      "title": "The First Round of Drug Price Negotiation"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Part D Matters Now"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Part D sits at the intersection of Medicare’s biggest tensions: access, cost, and the role of private plans. It made drugs vastly more accessible to seniors, but it also embodied the original political bargain of relying on private plans and barring price negotiation — a bargain the IRA has now substantially rewritten."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The IRA reforms ripple far beyond beneficiaries’ wallets. The out-of-pocket cap shifts more cost onto plans and manufacturers, reshaping plan bids and premiums. Price negotiation challenges the pharmaceutical industry’s pricing model and has prompted litigation. And inflation rebates change manufacturers’ incentives to raise prices."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For anyone working in Medicare, Part D is now one of the most dynamic areas of the program. Understanding formularies, the new three-phase benefit, the $2,000 cap, and drug price negotiation is essential to understanding where Medicare — and American drug policy — is heading."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5q1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5q1s",
+          "_type": "span",
+          "marks": [],
+          "text": "With the Inflation Reduction Act, Medicare crossed a line it had refused to cross for two decades: it began negotiating what it pays for drugs."
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Part D, created by the Medicare Modernization Act of 2003 (effective 2006), is Medicare’s outpatient prescription drug benefit, delivered through private PDP and MA-PD plans.",
+        "Enrollment is voluntary but carries a permanent late-enrollment penalty for those who delay without creditable coverage.",
+        "Each plan has a formulary with tiered cost-sharing and uses tools like prior authorization and step therapy, so the right plan depends on a beneficiary’s specific drugs.",
+        "As of 2025 the IRA restructured Part D into a three-phase benefit (deductible up to $590, initial coverage, catastrophic) and eliminated the \"donut hole.\"",
+        "The IRA established a hard out-of-pocket cap on covered Part D drugs — $2,000 in 2025 (indexed to $2,100 in 2026).",
+        "The IRA also capped insulin at $35/month, added inflation rebates, and created the Medicare Prescription Payment Plan for interest-free monthly installments.",
+        "Most significantly, the IRA empowered Medicare to negotiate drug prices for the first time; the initial 10 drugs’ negotiated prices (38%–79% discounts) take effect in 2026."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Effective 2025, the IRA reconfigured Part D into a three-phase benefit, eliminated the coverage-gap \"donut hole,\" and imposed a hard $2,000 annual out-of-pocket cap on covered drugs (indexed to $2,100 in 2026). It did not eliminate Part D, force uniform copays, or make enrollment mandatory.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "It eliminated Part D and moved all drug coverage into Part B"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "It capped beneficiary out-of-pocket spending on covered drugs at $2,000 and eliminated the donut hole"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "It required every plan to cover every drug at the same copay"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "It made Part D enrollment mandatory for all beneficiaries"
+        }
+      ],
+      "question": "Which statement best describes a major change the Inflation Reduction Act made to Medicare Part D starting in 2025?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Medicare Prescription Drug, Improvement, and Modernization Act — Congress.gov — https://www.congress.gov/bill/108th-congress/house-bill/1 — Part D created 2003, effective Jan 1, 2006; private-plan delivery."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Understanding Medicare Part D changes in 2025 — Wellpoint — https://www.wellpoint.com/medicare/understanding-medicare/medicare-part-d-changes-2025 — three-phase benefit, $590 deductible, donut hole eliminated, $2,000 cap."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Explaining the Prescription Drug Provisions in the Inflation Reduction Act — KFF — https://www.kff.org/medicare/issue-brief/explaining-the-prescription-drug-provisions-in-the-inflation-reduction-act/ — $2,000 cap, insulin $35, inflation rebates, negotiation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Medicare Drug Price Negotiation Program: Negotiated Prices for IPAY 2026 — CMS — https://www.cms.gov/newsroom/fact-sheets/medicare-drug-price-negotiation-program-negotiated-prices-initial-price-applicability-year-2026 — first 10 drugs, 38%-79% discounts, effective 2026, savings estimates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Medicare Prescription Payment Plan — CMS — https://www.cms.gov/medicare/health-drug-plans/medicare-prescription-payment-plan — interest-free monthly installments effective Jan 1, 2025."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Medicare Part D Donut Hole Explained: What Changed in 2025 — NCOA — https://www.ncoa.org/article/the-medicare-part-d-donut-hole-what-you-need-to-know/ — coverage gap eliminated; formulary tiers and benefit phases."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicare-fundamentals",
+  "order": 12,
+  "slug": {
+    "_type": "slug",
+    "current": "part-d-structure-formulary"
+  },
+  "title": "Part D: Structure, Formularies, and the IRA Drug Reforms"
+}

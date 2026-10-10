@@ -1,0 +1,82 @@
+{
+  "id": "7fb9d2bc-1527-4ab6-954e-929179cb6da4",
+  "track_id": "a40f98c2-16bf-4d9e-accd-49b18214e5d5",
+  "pillar": "policy",
+  "order": 2,
+  "slug": "genomic-consent-equity",
+  "title": "Informed Consent and Genomic Equity",
+  "summary": "The ethics of consent, return of results, and addressing population diversity gaps in genomics.",
+  "estimated_minutes": 18,
+  "objectives": [],
+  "content_blocks": [
+    {
+      "text": "Consent in the Genomic Era",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "text": "Genomic testing raises consent challenges that traditional medical consent frameworks were not designed to address. A genomic test reveals information not just about the patient but about biological relatives. Results may be uncertain or change over time (VUS reclassification). Secondary findings may be discovered in genes unrelated to the original clinical question. And data generated may be used for research purposes the patient cannot foresee.",
+      "type": "text"
+    },
+    {
+      "type": "concepts_grid",
+      "concepts": [
+        {
+          "term": "Germline Result Disclosure",
+          "definition": "Decision to disclose heritable variants — implications extend to first-degree relatives who may not have consented"
+        },
+        {
+          "term": "Incidental / Secondary Findings",
+          "definition": "Clinically significant findings unrelated to the indication for testing — ACMG SF v3.2 covers 81 actionable genes"
+        },
+        {
+          "term": "Right Not to Know",
+          "definition": "Patient's ethical right to decline genomic results — must be balanced against public health and family member interests"
+        },
+        {
+          "term": "Dynamic Consent",
+          "definition": "Ongoing consent model allowing participants to modify research data-sharing preferences over time via digital platforms"
+        },
+        {
+          "term": "VUS Reclassification",
+          "definition": "When variant significance changes with new evidence — laboratories must have protocols to re-contact patients with material reclassifications"
+        },
+        {
+          "term": "Broad Consent",
+          "definition": "NIH Common Rule (2018) allows broad consent for future unspecified research use of biospecimens/data — simplified alternative to study-specific consent"
+        }
+      ]
+    },
+    {
+      "text": "The Diversity Crisis in Genomics",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "text": "A foundational equity problem: over 78% of GWAS participants are of European ancestry, despite Europeans comprising only ~16% of the global population. This means polygenic risk scores, variant databases (ClinVar, gnomAD), and reference allele frequencies are most accurate for European-ancestry individuals and least accurate for African, East Asian, South Asian, and Indigenous populations. A VUS in a European patient may be well-classified; the same variant in an African patient may remain uncertain because population-specific frequency data is absent.",
+      "type": "text"
+    },
+    {
+      "type": "key_stat",
+      "label": "GWAS participants of European ancestry",
+      "value": "78%",
+      "context": "This over-representation means genomic tools — risk scores, variant classification, drug response predictions — work less accurately for non-European patients, exacerbating health disparities"
+    },
+    {
+      "body": "African American patients are 3x more likely to receive a VUS result on hereditary cancer panels compared to European American patients — not because they carry more uncertain variants, but because African-ancestry variants are underrepresented in variant databases used for classification. This disparity causes inequitable clinical care: European patients get actionable results; Black patients get uncertainty.",
+      "type": "callout",
+      "title": "Ancestry and Variant Classification Disparities",
+      "variant": "warning"
+    },
+    {
+      "text": "NIH's All of Us Research Program is explicitly designed to address this gap — targeting 1 million participants with >50% from underrepresented populations. The H3Africa Initiative, the Human Heredity and Health in Africa consortium, is building African-ancestry genomic reference resources. These efforts are essential for ensuring precision medicine benefits all populations equitably.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:24.277176+00:00",
+  "updated_at": "2026-06-02T04:15:34.02056+00:00",
+  "sanity_slug": "genomic-consent-equity"
+}

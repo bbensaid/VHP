@@ -1,0 +1,9 @@
+{
+  "id": "736ec564-2bca-4358-b48e-1e2db0b60633",
+  "quiz_id": "1440977e-ebc2-4317-a783-acc14277f36f",
+  "order": 1,
+  "question_type": "single_choice",
+  "question": "According to PMI's Pulse of the Profession research, what happens to organizations that treat project management as a non-strategic function?",
+  "explanation": "PMI's research found these organizations report 67% more of their projects failing outright — treating execution discipline as optional carries a measurable, large penalty.",
+  "points": 1
+}

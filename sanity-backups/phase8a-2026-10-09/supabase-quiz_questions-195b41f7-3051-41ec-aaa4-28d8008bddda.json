@@ -1,0 +1,9 @@
+{
+  "id": "195b41f7-3051-41ec-aaa4-28d8008bddda",
+  "quiz_id": "7642fb63-97e7-46f2-8f6e-3a1180b56e11",
+  "order": 3,
+  "question_type": "true_false",
+  "question": "CMS's 2027 Medicare Advantage Star Ratings final rule expanded payment rewards specifically for closing health equity gaps.",
+  "explanation": "CMS did not implement the previously proposed Health Equity Index reward for 2027 and instead continued the historical Reward Factor, which is not equity-targeted — the opposite of what this statement claims.",
+  "points": 1
+}

@@ -1,0 +1,35 @@
+{
+ "lessonIds": [
+  "0d8fc04d-3ab9-4ad2-addc-6ae6018684e6"
+ ],
+ "files": [
+  "frontend/content/course_transformation_leadership.json"
+ ],
+ "edits": [
+  {
+   "match": {
+    "label": "Wasted annually worldwide",
+    "value": "$2T"
+   },
+   "set": {
+    "source": "PMI, Pulse of the Profession 2018 \u2014 about $1M every 20 seconds; the 2020 edition put average waste at 11.4% of project investment"
+   },
+   "claim": "fallback stat: $2T wasted, roughly 11.4% of every dollar (PMI, undated)",
+   "verdict": "MISATTRIBUTED",
+   "src": "PMI Pulse 2018: ~$2 trillion wasted a year; 2020: 11.4% average waste \u2014 different years conflated"
+  },
+  {
+   "match": {
+    "label": "More on-time/on-budget delivery",
+    "value": "38%"
+   },
+   "set": {
+    "label": "More projects meet original goals",
+    "source": "PMI, Pulse of the Profession 2017 \u2014 organizations whose enterprise PMO is aligned to strategy"
+   },
+   "claim": "fallback stat: 38% more on-time/on-budget delivery with an established PMO",
+   "verdict": "MISATTRIBUTED",
+   "src": "PMI Pulse 2017: strategy-aligned EPMO -> 38% more projects meet original goals (not PMO vs none, on time/budget)"
+  }
+ ]
+}

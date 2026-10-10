@@ -1,0 +1,9 @@
+{
+  "id": "4214cf4e-b480-4481-ad63-47937578280f",
+  "quiz_id": "99750d60-6dc7-45aa-9f2d-a9490643886d",
+  "order": 2,
+  "question_type": "single_choice",
+  "question": "What is the HFMA/Moody's benchmark for days cash on hand that signals financial strength?",
+  "explanation": "HFMA and Moody's consider 150+ days cash on hand a benchmark for financial strength. Hospitals below 100 days face increased scrutiny from rating agencies and lenders.",
+  "points": null
+}

@@ -1,0 +1,94 @@
+{
+  "id": "48e8efdc-073f-4cbf-80f2-826aba1c98d0",
+  "track_id": "f1c708c3-a8b6-48d3-a584-debef8a6946e",
+  "pillar": "technology",
+  "order": 2,
+  "slug": "clearinghouses-edi",
+  "title": "Clearinghouses and EDI Transactions",
+  "summary": "Healthcare clearinghouses serve as the intermediary between providers and payers, translating and scrubbing claims before transmission.",
+  "estimated_minutes": 20,
+  "objectives": [
+    "Explain the role of a clearinghouse in the claims submission process",
+    "Identify the key HIPAA EDI transactions used in the revenue cycle",
+    "Describe how clearinghouse edits differ from payer edits"
+  ],
+  "content_blocks": [
+    {
+      "body": "A healthcare clearinghouse receives claims from providers, validates them against HIPAA transaction standards and payer-specific requirements, and transmits clean claims to payers. Key functions:\n\n- **Translation:** Convert provider billing system formats to HIPAA-compliant ANSI X12 EDI format\n- **Scrubbing:** Apply hundreds of edits to identify errors before payer submission\n- **Routing:** Direct claims to the correct payer based on payer ID\n- **Acknowledgment:** Return 999/TA1 acknowledgments confirming claim receipt\n- **Reporting:** Provide claim status, rejection reports, and ERA management\n\nMajor clearinghouses include Availity, Change Healthcare (now Optum), and Waystar.",
+      "type": "text",
+      "heading": "What Clearinghouses Do"
+    },
+    {
+      "rows": [
+        [
+          "Eligibility Inquiry",
+          "270",
+          "Provider → Payer",
+          "Check patient insurance eligibility"
+        ],
+        [
+          "Eligibility Response",
+          "271",
+          "Payer → Provider",
+          "Return coverage/benefit details"
+        ],
+        [
+          "Professional Claim",
+          "837P",
+          "Provider → Payer",
+          "Submit physician/outpatient claims"
+        ],
+        [
+          "Institutional Claim",
+          "837I",
+          "Provider → Payer",
+          "Submit hospital/facility claims"
+        ],
+        [
+          "Claim Status Request",
+          "276",
+          "Provider → Payer",
+          "Check status of a submitted claim"
+        ],
+        [
+          "Claim Status Response",
+          "277",
+          "Payer → Provider",
+          "Return claim adjudication status"
+        ],
+        [
+          "Remittance Advice",
+          "835",
+          "Payer → Provider",
+          "Electronic payment and adjustment details"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "EDI Transaction",
+        "ANSI X12 #",
+        "Direction",
+        "Purpose"
+      ]
+    },
+    {
+      "body": "In February 2024, Change Healthcare — the largest healthcare clearinghouse in the US processing ~15 billion claims per year — suffered a ransomware attack that disrupted claims processing for weeks. The incident highlighted the systemic risk of clearinghouse concentration and the need for business continuity planning in RCM operations.",
+      "type": "callout",
+      "title": "The Change Healthcare Cyberattack (2024)",
+      "variant": "warning"
+    }
+  ],
+  "tags": [
+    "clearinghouse",
+    "EDI",
+    "ANSI X12",
+    "HIPAA 5010",
+    "835",
+    "837"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:31:23.234766+00:00",
+  "updated_at": "2026-06-01T13:14:50.021282+00:00",
+  "sanity_slug": "clearinghouses-edi"
+}

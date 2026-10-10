@@ -1,0 +1,59 @@
+{
+  "id": "03e50865-39f0-415c-87cf-ab3d336747e4",
+  "track_id": "c43e2f66-f060-46ad-b2cf-bc8c20cf59b8",
+  "pillar": "operations",
+  "order": 2,
+  "slug": "charge-capture",
+  "title": "Charge Capture: From Service to Bill",
+  "summary": "Charge capture is the process of recording every billable service provided so that revenue is not left uncollected.",
+  "estimated_minutes": 18,
+  "objectives": [
+    "Explain the charge capture workflow from clinical service delivery to charge entry",
+    "Identify common charge capture failures and their financial impact",
+    "Describe the role of the chargemaster in charge capture"
+  ],
+  "content_blocks": [
+    {
+      "body": "Charge capture begins at the point of care and ends when a charge is entered into the billing system. The workflow:\n\n1. **Clinical service delivered** — physician orders and performs a procedure or provides a service\n2. **Documentation created** — service recorded in the EHR (order, note, or procedure record)\n3. **Charge trigger** — EHR system generates a charge based on the order or documentation\n4. **Charge review** — coding or charge review staff validate that charges are accurate and complete\n5. **Charge entry** — validated charges entered into the practice management or billing system\n6. **Claim generation** — charges compiled into a claim for submission",
+      "type": "text",
+      "heading": "The Charge Capture Workflow"
+    },
+    {
+      "body": "The Charge Description Master (CDM or chargemaster) is the comprehensive list of every billable item a facility provides, including the associated charge (list price), revenue code, and CPT/HCPCS code. It is the price list that initiates billing.\n\nKey CDM management principles:\n- CDMs must be updated annually to reflect new CPT codes and discontinued services\n- Charge amounts must be defensible and internally consistent\n- CMS price transparency rules require hospitals to publish CDM data publicly",
+      "type": "text",
+      "heading": "The Chargemaster (CDM)"
+    },
+    {
+      "body": "The most common charge capture gaps include: (1) services performed but never ordered in the EHR, (2) implants and supplies not captured at time of procedure, (3) late charges submitted after the claim has already been filed, and (4) observation hours not captured for outpatient stays. Studies suggest 3–7% of billable hospital services go uncaptured.",
+      "type": "callout",
+      "title": "Common Charge Capture Failures",
+      "variant": "warning"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Estimated billable services not captured",
+          "value": "3–7%",
+          "context": "Industry estimate; implies millions in lost revenue annually for a mid-sized hospital"
+        },
+        {
+          "label": "Annual revenue at risk for a 300-bed hospital",
+          "value": "$1.3M",
+          "context": "From charge capture gaps at even a 2% miss rate on $65M annual charges"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "charge capture",
+    "chargemaster",
+    "CDM",
+    "revenue leakage"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:31:20.806982+00:00",
+  "updated_at": "2026-06-01T13:14:49.389548+00:00",
+  "sanity_slug": "charge-capture"
+}

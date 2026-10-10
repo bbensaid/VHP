@@ -1,0 +1,9 @@
+{
+  "id": "ae76f557-9226-40e6-be89-e30f4e9138ce",
+  "quiz_id": "90327568-f190-41db-a42d-f66171cdb750",
+  "order": 3,
+  "question_type": "single_choice",
+  "question": "Global capitation to a provider organization falls in which HCP-LAN category?",
+  "explanation": "Tier 4 represents the highest level of provider risk: a fixed PMPM payment (global capitation) to an integrated provider organization covering all services for attributed members, with the provider bearing full utilization risk.",
+  "points": null
+}

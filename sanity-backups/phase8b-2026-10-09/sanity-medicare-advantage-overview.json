@@ -1,0 +1,523 @@
+{
+  "_createdAt": "2026-06-02T17:03:29Z",
+  "_id": "medicare-advantage-overview",
+  "_rev": "AkeaYSOMdu2FnGALUwwKtd",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T17:03:29Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Private Option Inside Medicare"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicare Advantage (Part C) lets beneficiaries receive their Medicare benefits through a private health plan instead of directly from the government. An MA plan must cover everything Original Medicare Parts A and B cover, and the great majority also bundle in Part D drug coverage. In exchange for taking on this role, the plan receives a fixed monthly payment from CMS for each enrollee."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The trade-off for beneficiaries is real. In return for using a plan’s provider network and following its rules — including prior authorization for many services — enrollees often get extra benefits Original Medicare lacks, like dental, vision, hearing, and an annual out-of-pocket maximum that traditional Medicare does not have."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicare Advantage grew from the Balanced Budget Act of 1997 (originally \"Medicare+Choice\") and was renamed and expanded by the Medicare Modernization Act of 2003. Over the following two decades it went from a niche option to the way most beneficiaries now get their Medicare."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicare Advantage plans are paid a risk-adjusted, capitated (per-member-per-month) amount by CMS to cover all Part A and B benefits — a fundamentally different payment model from the fee-for-service of Original Medicare."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "From Niche to Majority"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The headline fact about Medicare Advantage is its explosive growth. In 2024, more than half of eligible Medicare beneficiaries — about 32.8 million people, or 54 percent — were enrolled in MA plans, up from roughly 38 percent of Part A and B spending share not long before."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This shift has profound consequences. As MA crosses the majority threshold, a growing share of all Medicare dollars flows through private insurers rather than directly to providers, and the largest insurers (such as UnitedHealthcare and Humana) have become dominant players in Medicare. Provider networks, prior authorization, and plan marketing now shape the experience of most beneficiaries."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Growth has been fueled by generous extra benefits, heavy marketing, and a payment structure that — as later sections explain — has tended to pay plans well. For the health system, MA is no longer an alternative to Medicare; for most beneficiaries, it is Medicare."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "About 32.8 million people (KFF)",
+          "label": "Of Beneficiaries in MA (2024)",
+          "value": "54%"
+        },
+        {
+          "_key": "s2",
+          "context": "Rapid growth in recent years (KFF/MedPAC)",
+          "label": "MA Share of A&B Spending",
+          "value": "38% → 54%"
+        },
+        {
+          "_key": "s3",
+          "context": "Balanced Budget Act (\"Medicare+Choice\")",
+          "label": "MA Created",
+          "value": "1997"
+        },
+        {
+          "_key": "s4",
+          "context": "Medicare Modernization Act",
+          "label": "Renamed Medicare Advantage",
+          "value": "2003"
+        }
+      ]
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Medicare Pays MA Plans: Benchmarks, Bids, and Rebates"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicare pays MA plans through a benchmark-and-bid system. The benchmark is the maximum CMS will pay for an enrollee in a given county, set as a percentage of estimated traditional-Medicare spending in that county — ranging from 95 percent in high-cost counties to 115 percent in low-cost counties. Each plan then submits a bid: its estimated cost to provide Part A and B benefits."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "If a plan bids below its benchmark — which nearly all plans do — it receives a rebate equal to a share of the difference between the benchmark and its bid. That share depends on the plan’s star rating: 70 percent for plans with at least 4.5 stars, 65 percent for 3.5–4 stars, and 50 percent for lower-rated plans. Plans must return rebates to enrollees as lower premiums, reduced cost-sharing, or supplemental benefits."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why MA plans can offer \"$0 premium\" coverage with dental and vision: the rebate funds those extras. It also ties plan revenue directly to quality ratings, since higher stars mean both a larger rebate share and quality-bonus increases to the benchmark itself."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "A county-specific cap, 95%–115% of local traditional-Medicare spending.",
+          "title": "CMS sets the benchmark"
+        },
+        {
+          "_key": "step2",
+          "description": "Its estimated cost to deliver Part A and B benefits.",
+          "title": "The plan submits a bid"
+        },
+        {
+          "_key": "step3",
+          "description": "Nearly all plans bid below benchmark, generating a rebate.",
+          "title": "Compare bid to benchmark"
+        },
+        {
+          "_key": "step4",
+          "description": "70% (4.5+ stars), 65% (3.5-4 stars), or 50% (lower) of the difference.",
+          "title": "Apply the star-rating rebate share"
+        },
+        {
+          "_key": "step5",
+          "description": "As lower premiums, reduced cost-sharing, or supplemental benefits.",
+          "title": "Return rebate to enrollees"
+        }
+      ],
+      "title": "How an MA Plan Gets Paid"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk Adjustment and Star Ratings"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Capitated payment creates an obvious risk: a plan could profit by enrolling only healthy people. Medicare counters this with risk adjustment. The CMS-HCC (Hierarchical Condition Categories) model raises a plan’s per-enrollee payment for sicker members based on their documented diagnoses, so plans are paid more to care for higher-need patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Quality is governed by the Star Ratings system, which rates plans from 1 to 5 stars on dozens of measures spanning clinical quality, patient experience, and customer service. Stars do double duty: they determine quality-bonus payments and they set the rebate share a plan keeps. In 2025, about 75 percent of MA enrollees were in plans receiving bonus payments, at an estimated federal cost of at least $12.7 billion."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Together, risk adjustment and star ratings are the levers that make capitation workable — paying more for sicker patients and rewarding measured quality — but, as the next section shows, they are also where the program’s biggest controversies live."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "In 2025, federal spending on Medicare Advantage quality-bonus payments totaled at least $12.7 billion, with roughly 75% of MA enrollees in plans that earned bonuses. Bonuses raise a plan’s benchmark (most by 5 percentage points, and \"double bonus\" counties by 10), which is why plans invest heavily in their star ratings — even small movements across a star threshold can mean large revenue swings.",
+      "title": "The $12.7 Billion Quality Bonus"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Overpayment Controversy"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "For all its popularity, Medicare Advantage faces a serious and well-documented critique: it costs taxpayers more than traditional Medicare would for similar enrollees. The Medicare Payment Advisory Commission (MedPAC) estimated that 2024 MA spending was about 23 percent higher than fee-for-service — roughly $88 billion in a single year."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "MedPAC attributes this to two forces. \"Coding intensity\" — plans documenting more diagnoses to raise risk scores — made MA risk scores about 20 percent higher than they would be in traditional Medicare, worth roughly $54 billion. \"Favorable selection\" — MA tending to enroll healthier-than-average beneficiaries relative to their risk scores — added roughly $36 billion more."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "These findings drive ongoing policy fights over how to reform risk adjustment, audit coding, and recalibrate benchmarks. They are essential context: Medicare Advantage delivers real benefits to enrollees, but its payment design has produced systematic overpayments that strain the very trust funds discussed earlier in this course."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "Medicare Advantage often gives enrollees richer benefits and an out-of-pocket cap — but MedPAC estimates it cost taxpayers about $88 billion more than traditional Medicare in 2024, mostly from coding intensity and favorable selection. Both can be true at once.",
+      "title": "Popular with enrollees, costly to taxpayers"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Medicare Advantage (Part C) delivers Medicare benefits through private plans paid a risk-adjusted, capitated amount by CMS.",
+        "MA plans must cover everything Parts A and B cover, usually include Part D, and are required to have an annual out-of-pocket maximum that Original Medicare lacks.",
+        "In 2024 about 54% of beneficiaries (~32.8 million) were enrolled in MA, making it how most people now get their Medicare.",
+        "Plans are paid via a benchmark (95%–115% of local FFS spending) and a bid; bidding below benchmark earns a rebate whose share depends on star rating (50/65/70%).",
+        "Rebates must fund lower premiums, reduced cost-sharing, or supplemental benefits — which is how \"$0 premium\" plans with dental/vision are financed.",
+        "The CMS-HCC model risk-adjusts payment for sicker enrollees, and Star Ratings drive both quality bonuses (~$12.7B in 2025) and the rebate share.",
+        "MedPAC estimates MA cost taxpayers ~23% more than traditional Medicare in 2024 (~$88B), driven by coding intensity (~$54B) and favorable selection (~$36B)."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Nearly all MA plans bid below their county benchmark. The rebate — a star-rating-dependent share of the difference between benchmark and bid — must by law be returned to enrollees as lower premiums, reduced cost-sharing, or supplemental benefits, which is how plans fund $0-premium offerings with dental and vision. MA plans must still cover all Part A and B benefits.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Because MA plans are not required to cover Part A and B benefits"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Because plans bid below their benchmark and use the resulting rebate to fund supplemental benefits"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Because the federal government directly pays for all dental and vision care"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Because MA enrollees pay a much higher Part B premium to subsidize the extras"
+        }
+      ],
+      "question": "Why can many Medicare Advantage plans offer \"$0 premium\" coverage that includes extras like dental and vision?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Medicare Advantage in 2024: Enrollment Update and Key Trends — KFF — https://www.kff.org/medicare/issue-brief/medicare-advantage-in-2024-enrollment-update-and-key-trends/ — 54% / 32.8M enrolled; spending share growth."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] How Medicare Pays Medicare Advantage Plans — KFF — https://www.kff.org/medicare/how-medicare-pays-medicare-advantage-plans-issues-and-policy-options/ — benchmarks (95–115%), bids, rebates (50/65/70% by stars), CMS-HCC, stars."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Medicare Advantage Quality Bonus Payments Will Total at Least $12.7 Billion in 2025 — KFF — https://www.kff.org/medicare/medicare-advantage-quality-bonus-payments/ — 75% of enrollees in bonus plans; $12.7B."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Estimating Medicare Advantage Coding Intensity and Favorable Selection (March 2024) — MedPAC — https://www.medpac.gov/wp-content/uploads/2024/03/Mar24_Ch13_MedPAC_Report_To_Congress_SEC.pdf — ~23% higher spending ($88B), coding intensity (~20%, $54B), favorable selection ($36B)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Medicare Prescription Drug, Improvement, and Modernization Act — Congress.gov — https://www.congress.gov/bill/108th-congress/house-bill/1 — Part C history; Medicare+Choice renamed Medicare Advantage (2003); BBA 1997 origin."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] 2025 Medicare Advantage and Part D Star Ratings — CMS — https://www.cms.gov/newsroom/fact-sheets/2025-medicare-advantage-part-d-star-ratings — star ratings methodology and role in payment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicare-fundamentals",
+  "order": 7,
+  "slug": {
+    "_type": "slug",
+    "current": "medicare-advantage-overview"
+  },
+  "title": "Medicare Advantage: Structure and Growth"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "ec363f62-0006-429a-9593-0cfce6648186",
+  "quiz_id": "b3249d51-e3e7-4d72-bcec-99aea9460e04",
+  "order": 1,
+  "question_type": "single_choice",
+  "question": "Under 42 CFR Part 438, which subpart governs External Quality Review Organization (EQRO) requirements?",
+  "explanation": "Subpart G of 42 CFR Part 438 (§§438.350–370) governs External Quality Review, including EQRO qualifications, mandatory activities, and state reporting requirements.",
+  "points": null
+}

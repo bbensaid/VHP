@@ -1,0 +1,9 @@
+{
+  "id": "39e0655b-7363-4c1d-ae40-dd80a5e363a3",
+  "quiz_id": "6250e7bc-7c96-400e-aad9-ad081f4822f9",
+  "order": 2,
+  "question_type": "single_choice",
+  "question": "Under FASB ASC 954, how is charity care reported in a hospital's financial statements?",
+  "explanation": "Under FASB ASC 954, charity care is reported at cost (not charges) and disclosed in the financial statement notes. It is not included in revenue since no payment is expected, making it different from bad debt which is recorded as an expense.",
+  "points": null
+}

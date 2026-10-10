@@ -1,0 +1,9 @@
+{
+  "id": "c22f6a57-807c-45b9-8e02-87e589bc7fe4",
+  "quiz_id": "cf259cdd-fea4-4cd1-9e27-019bfd04e950",
+  "order": 3,
+  "question_type": "single_choice",
+  "question": "What percentage of claim denials are considered preventable according to MGMA data?",
+  "explanation": "MGMA and other industry sources estimate approximately 67% of denials are preventable through improved front-end processes, better documentation, and pre-submission edits.",
+  "points": null
+}
