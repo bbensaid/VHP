@@ -1829,9 +1829,9 @@
               },
               {
                 "type": "key_stat",
-                "value": "400+",
-                "label": "apps in the Epic App Orchard built on SMART on FHIR",
-                "context": "Epic's app marketplace (App Orchard) has over 400 certified SMART on FHIR applications as of 2024 \u2014 a direct result of the standardized authorization layer that SMART provides. Similar ecosystems exist for Oracle/Cerner and other EHR platforms."
+                "value": "2",
+                "label": "major EHR developer programs built around SMART on FHIR",
+                "context": "The two largest EHR vendors each run a SMART on FHIR developer program \u2014 Epic Showroom (formerly App Orchard) and Oracle Health Code Console \u2014 a direct result of the standardized authorization layer that SMART provides."
               }
             ],
             "quiz": {
@@ -1979,7 +1979,7 @@
               {
                 "type": "text",
                 "heading": "Payers join the interoperability mandate",
-                "body": "While ONC's interoperability rules focused on EHR vendors and providers, CMS simultaneously issued the Interoperability and Patient Access Final Rule in May 2020 \u2014 targeting the other major holder of health data: health insurance payers. The rule requires Medicare Advantage organizations, state Medicaid and CHIP programs, and Qualified Health Plans on the Federally Facilitated Exchange to implement FHIR R4 APIs that give members access to their own claims, clinical, and formulary data.\n\nThe Patient Access API requirement went into effect July 1, 2021 for MA plans and January 1, 2022 for Medicaid and CHIP programs. This means that members can now connect third-party apps to their health plan's FHIR server and access their complete claims history, clinical data the plan has received, drug formulary information, and cost-sharing details. The data must conform to implementation guides including CARIN Blue Button for consumer-directed exchange and the DaVinci PDex guide for clinical data.\n\nThe practical impact has been significant. Over 20 million patients had connected apps to payer FHIR APIs by 2024. Companies like Manifest MedEx, 1upHealth, and Particle Health have built businesses aggregating FHIR data from payers on behalf of patients. Apple Health Records can pull payer claims data in addition to clinical data from EHRs \u2014 giving patients a more complete picture of their health history than any single source provides."
+                "body": "While ONC's interoperability rules focused on EHR vendors and providers, CMS simultaneously issued the Interoperability and Patient Access Final Rule in May 2020 \u2014 targeting the other major holder of health data: health insurance payers. The rule requires Medicare Advantage organizations, state Medicaid and CHIP programs, and Qualified Health Plans on the Federally Facilitated Exchange to implement FHIR R4 APIs that give members access to their own claims, clinical, and formulary data.\n\nThe Patient Access API requirement applied from January 1, 2021, with CMS enforcing it from July 1, 2021. This means that members can now connect third-party apps to their health plan's FHIR server and access their complete claims history, clinical data the plan has received, drug formulary information, and cost-sharing details. The data must conform to implementation guides including CARIN Blue Button for consumer-directed exchange and the DaVinci PDex guide for clinical data.\n\nThe practical impact is still building. Companies such as 1upHealth and Flexpa build tools that connect consumer apps to payer FHIR APIs, but member uptake remains modest: Flexpa reported about 120,000 successful connections across 216 health plans by November 2024."
               },
               {
                 "type": "comparison_table",
@@ -2012,16 +2012,16 @@
                   ],
                   [
                     "Prior Authorization",
-                    "DaVinci PAS IG (2026 rule)",
+                    "Da Vinci PDex IG (CMS-0057-F, 2024 rule; from 2027)",
                     "Prior auth decisions, pending requests, required documentation"
                   ]
                 ]
               },
               {
                 "type": "key_stat",
-                "value": "20M+",
-                "label": "patients connected apps to payer FHIR APIs by 2024",
-                "context": "The CMS Patient Access API requirement has driven significant patient-facing data access. Over 20 million patients had connected at least one third-party app to their health plan's FHIR API by 2024, accessing claims history, clinical data, and formulary information."
+                "value": "Jan 1, 2016",
+                "label": "earliest date of service payers must make available",
+                "context": "Payers must make claims and encounter data with dates of service on or after January 1, 2016 available to current members through the Patient Access API, alongside clinical and formulary data."
               },
               {
                 "type": "callout",
@@ -2061,7 +2061,7 @@
                       "text": "Qualified Health Plans on federal exchanges"
                     }
                   ],
-                  "explanation": "ERISA plans \u2014 covering approximately 60% of Americans with private insurance through large employers \u2014 are a notable gap in the CMS Interoperability Rule. Separate federal action would be needed to reach these plans.",
+                  "explanation": "Employer-sponsored plans, including self-insured ERISA plans, are a notable gap in the CMS Interoperability Rule. Separate federal action would be needed to reach these plans.",
                   "text": "Which of the following plan types is NOT required to implement a Patient Access API under the CMS Interoperability Rule?",
                   "correctId": "q_pa2c"
                 },
@@ -2109,7 +2109,7 @@
                       "text": "To allow providers to update their own directory information in real time"
                     }
                   ],
-                  "explanation": "Provider directory accuracy is a major problem \u2014 studies show 30\u201350% of provider directory entries are inaccurate. The Provider Directory API requirement aims to standardize and expose this data for better network transparency.",
+                  "explanation": "Provider directory accuracy is a major problem \u2014 CMS reviews of Medicare Advantage directories found 45\u201352% of listed provider locations had at least one inaccuracy. The Provider Directory API requirement aims to standardize and expose this data for better network transparency.",
                   "text": "What is the primary purpose of the Provider Directory API requirement in the CMS Interoperability Rule?",
                   "correctId": "q_pa3b"
                 },
@@ -2213,7 +2213,7 @@
                   ],
                   [
                     "Member matching",
-                    "FHIR $match operation or equivalent; no universal patient ID available"
+                    "Da Vinci $member-match operation or equivalent; no universal patient ID available"
                   ]
                 ]
               },
@@ -2221,7 +2221,7 @@
                 "type": "callout",
                 "variant": "warning",
                 "title": "The member matching problem",
-                "body": "The US has no universal patient identifier \u2014 a decision made in the HIPAA era due to privacy concerns. For payer-to-payer exchange, this means matching members across organizations using probabilistic matching on name, date of birth, and other identifiers. The FHIR $match operation provides a standardized mechanism, but false positive and false negative rates vary by implementation. A false positive (sending another patient's data) is a serious privacy violation. A false negative (failing to match a valid member) means the exchange doesn't happen. ONC's Patient Matching Algorithm Challenge sought to improve matching accuracy, but the lack of a universal identifier remains the Achilles heel of payer-to-payer exchange."
+                "body": "The US has no universal patient identifier \u2014 a decision made in the HIPAA era due to privacy concerns. For payer-to-payer exchange, this means matching members across organizations using probabilistic matching on name, date of birth, and other identifiers. The Da Vinci $member-match operation provides a standardized mechanism, but false positive and false negative rates vary by implementation. A false positive (sending another patient's data) is a serious privacy violation. A false negative (failing to match a valid member) means the exchange doesn't happen. ONC's Patient Matching Algorithm Challenge sought to improve matching accuracy, but the lack of a universal identifier remains the Achilles heel of payer-to-payer exchange."
               }
             ],
             "quiz": {
@@ -2414,9 +2414,9 @@
               },
               {
                 "type": "key_stat",
-                "value": "87M",
-                "label": "CMS Blue Button 2.0 beneficiaries with FHIR data available",
-                "context": "CMS Blue Button 2.0 provides FHIR-based access to Medicare claims data for 53 million beneficiaries. Using Bulk FHIR, researchers and ACOs can access population-level data for quality measurement, research, and care management."
+                "value": "53M",
+                "label": "Medicare beneficiaries with Blue Button 2.0 FHIR claims data at launch (2018)",
+                "context": "CMS Blue Button 2.0 launched with FHIR-based access to Medicare claims data for 53 million beneficiaries. For population-level data, MSSP ACOs use CMS's separate Beneficiary Claims Data API (BCDA), built on the Bulk FHIR specification."
               },
               {
                 "type": "callout",
@@ -2960,7 +2960,7 @@
               {
                 "type": "text",
                 "heading": "Pull vs. push: two models for care coordination",
-                "body": "Health information exchange traditionally operated on a query model: when a provider needed information about a patient, they would query the HIE and retrieve whatever was available. This pull model works well when a clinician is actively caring for a patient and needs their history. It works poorly for proactive care management \u2014 a care manager cannot query for every patient daily to see if any of them went to the emergency department last night.\n\nEvent-driven exchange (also called push-based or subscription-based exchange) flips the model. Rather than waiting to be asked, the HIE proactively notifies subscribed care teams when a patient experiences a clinically significant event \u2014 an admission, a transfer, a discharge. This is the ADT notification model: Admission/Discharge/Transfer events, which every hospital already generates in HL7 v2 format, are made available to care teams subscribed to receive them.\n\nCMS recognized the clinical value of ADT notifications and made them mandatory. The 2021 Conditions of Participation rule requires hospitals to send electronic ADT notifications to primary care providers, post-acute facilities, and other relevant care team members within 24 hours of key events. This single rule \u2014 requiring hospitals to notify care teams when their patients show up \u2014 has had more practical impact on care coordination than many more technically complex interoperability initiatives."
+                "body": "Health information exchange traditionally operated on a query model: when a provider needed information about a patient, they would query the HIE and retrieve whatever was available. This pull model works well when a clinician is actively caring for a patient and needs their history. It works poorly for proactive care management \u2014 a care manager cannot query for every patient daily to see if any of them went to the emergency department last night.\n\nEvent-driven exchange (also called push-based or subscription-based exchange) flips the model. Rather than waiting to be asked, the HIE proactively notifies subscribed care teams when a patient experiences a clinically significant event \u2014 an admission, a transfer, a discharge. This is the ADT notification model: Admission/Discharge/Transfer events, which every hospital already generates in HL7 v2 format, are made available to care teams subscribed to receive them.\n\nCMS recognized the clinical value of ADT notifications and made them mandatory. The 2021 Conditions of Participation rule requires hospitals to send electronic ADT notifications to primary care providers, post-acute facilities, and other relevant care team members at the time of admission or ED registration and at or immediately before discharge or transfer. This single rule \u2014 requiring hospitals to notify care teams when their patients show up \u2014 has had more practical impact on care coordination than many more technically complex interoperability initiatives."
               },
               {
                 "type": "comparison_table",
@@ -3005,15 +3005,15 @@
               },
               {
                 "type": "key_stat",
-                "value": "40%",
-                "label": "reduction in readmissions in some ADT notification programs",
-                "context": "Early ADT notification programs at academic medical centers and ACOs demonstrated readmission rate reductions of 20\u201340% in high-risk populations. The mechanism: care managers receive same-day notification when a patient is discharged and can arrange follow-up before the patient has a chance to readmit."
+                "value": "Apr 30, 2021",
+                "label": "compliance date of the CMS ADT notification Conditions of Participation",
+                "context": "Hospitals, psychiatric hospitals, and critical access hospitals have had to send these notifications since the Conditions of Participation took effect on April 30, 2021. The mechanism: care managers receive same-day notification when a patient is discharged and can arrange follow-up before the patient has a chance to readmit."
               },
               {
                 "type": "callout",
                 "variant": "info",
                 "title": "Da Vinci Unsolicited Notifications: the FHIR standard for ADT events",
-                "body": "The Da Vinci Admission, Discharge, Transfer (ADT) Notification Implementation Guide defines how FHIR-based ADT notifications should be structured and transmitted. As healthcare moves from HL7 v2 ADT messages to FHIR, this guide provides the transition path \u2014 the same clinical event (patient admitted, patient discharged) expressed as a FHIR notification rather than a v2 message. Hospitals and HIEs implementing FHIR-based notifications use this guide to ensure interoperability."
+                "body": "The Da Vinci Unsolicited Notifications Implementation Guide (v1.1.0, April 2025) defines how FHIR-based ADT notifications should be structured and transmitted. As healthcare moves from HL7 v2 ADT messages to FHIR, this guide provides the transition path \u2014 the same clinical event (patient admitted, patient discharged) expressed as a FHIR notification rather than a v2 message. Hospitals and HIEs implementing FHIR-based notifications use this guide to ensure interoperability."
               }
             ],
             "quiz": {
@@ -3054,7 +3054,7 @@
                     },
                     {
                       "id": "q_qe2b",
-                      "text": "Send electronic ADT notifications to PCPs, post-acute facilities, and other relevant care team members within 24 hours of key events"
+                      "text": "Send electronic ADT notifications to PCPs, post-acute facilities, and other relevant care team members at the time of admission, discharge, or transfer"
                     },
                     {
                       "id": "q_qe2c",
@@ -3065,7 +3065,7 @@
                       "text": "Give patients direct access to their ADT event data"
                     }
                   ],
-                  "explanation": "The 2021 CoP ADT notification rule is one of the most impactful care coordination mandates of recent years. Its 24-hour notification requirement enables care managers to intervene in the critical post-discharge window when readmission risk is highest.",
+                  "explanation": "The 2021 CoP ADT notification rule is one of the most impactful care coordination mandates of recent years. Its at-the-time-of-event notification requirement enables care managers to intervene in the critical post-discharge window when readmission risk is highest.",
                   "text": "The 2021 CMS Conditions of Participation rule required hospitals to do what regarding patient ADT events?",
                   "correctId": "q_qe2b"
                 },
@@ -3078,7 +3078,7 @@
                     },
                     {
                       "id": "q_qe3b",
-                      "text": "Da Vinci Admission, Discharge, Transfer Notification IG"
+                      "text": "Da Vinci Unsolicited Notifications (ADT) IG"
                     },
                     {
                       "id": "q_qe3c",
@@ -3162,7 +3162,7 @@
               {
                 "type": "text",
                 "heading": "The consent paradox: privacy vs. care quality",
-                "body": "Every health information exchange must answer a fundamental question: does a patient need to actively agree before their data is shared (opt-in), or is data shared by default unless the patient objects (opt-out)? This choice has profound implications for the completeness of the data available in the HIE \u2014 and ultimately for the quality of care that data enables.\n\nOpt-in consent maximizes patient autonomy. No data flows without explicit patient agreement. The problem: studies consistently show that only 20\u201340% of patients actively opt in to health information exchange when given the choice, even though the vast majority support sharing when the concept is explained to them. An HIE where 70% of patients haven't opted in is an HIE that misses 70% of the care picture. Incomplete data can be more dangerous than no data \u2014 a provider who believes they have the complete medication list when they actually have only the medications for the 30% who opted in faces real clinical risk.\n\nOpt-out consent maximizes data completeness. All patients are included unless they affirmatively object. Most public health, population health, and care coordination programs that have attempted opt-in have eventually moved to opt-out for this reason. Vermont operates an opt-out model \u2014 patients are included in VITL's exchange network and can request exclusion. Most state HIEs that have achieved meaningful data completeness use opt-out."
+                "body": "Every health information exchange must answer a fundamental question: does a patient need to actively agree before their data is shared (opt-in), or is data shared by default unless the patient objects (opt-out)? This choice has profound implications for the completeness of the data available in the HIE \u2014 and ultimately for the quality of care that data enables.\n\nOpt-in consent maximizes patient autonomy. No data flows without explicit patient agreement. The problem: an opt-in HIE holds records only for patients who have signed consent, and an HIE where most patients have not opted in misses most of the care picture. Incomplete data can be more dangerous than no data \u2014 a provider who believes they have the complete medication list when they actually have only the medications for the 30% who opted in faces real clinical risk.\n\nOpt-out consent maximizes data completeness. All patients are included unless they affirmatively object. Vermont moved to an opt-out model under Act 53 of 2019 (effective March 1, 2020) \u2014 patients are included in VITL's exchange network and can request exclusion. Most state HIEs that have achieved meaningful data completeness use opt-out."
               },
               {
                 "type": "comparison_table",
@@ -3180,8 +3180,8 @@
                   ],
                   [
                     "Data completeness",
-                    "Low (20\u201340% typical enrollment)",
-                    "High (5\u201310% typically opt out)"
+                    "Lower \u2014 limited to patients who have signed consent",
+                    "Higher \u2014 all patients except those who opt out"
                   ],
                   [
                     "Clinical risk from incomplete data",
@@ -3215,7 +3215,7 @@
                 "type": "callout",
                 "variant": "info",
                 "title": "Granular consent: patient-controlled data sharing",
-                "body": "Some HIEs offer granular consent \u2014 patients control not just whether their data is shared, but which data elements or which organizations can access which records. A patient might consent to sharing their primary care records but not their mental health records, or allow sharing with their cardiologist but not with their employer's occupational health clinic. Granular consent is technically complex to implement and maintain. Studies show that when patients are given granular options, they often withhold clinically important information, creating data incompleteness that can harm care. Most HIE experts recommend simple opt-out with robust patient notification rather than complex granular consent frameworks."
+                "body": "Some HIEs offer granular consent \u2014 patients control not just whether their data is shared, but which data elements or which organizations can access which records. A patient might consent to sharing their primary care records but not their mental health records, or allow sharing with their cardiologist but not with their employer's occupational health clinic. Granular consent is technically complex to implement and maintain. When patients are given granular options, some withhold clinically important information, creating data incompleteness that can harm care."
               }
             ],
             "quiz": {
@@ -3232,7 +3232,7 @@
                     },
                     {
                       "id": "q_cons1b",
-                      "text": "Opt-out achieves far higher data completeness \u2014 opt-in HIEs typically enroll only 20\u201340% of patients, creating dangerous data gaps"
+                      "text": "Opt-out achieves far higher data completeness \u2014 opt-in HIEs hold records only for patients who have signed consent, creating dangerous data gaps"
                     },
                     {
                       "id": "q_cons1c",
