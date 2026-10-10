@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { CheckCircle, AlertTriangle, XCircle, TrendingDown, BadgeCheck, FlaskConical, Info } from "lucide-react";
 import { HOSPITALS as ACT167_HOSPITALS } from "@/app/vermont-act-167/simulator/data";
 import { GMCH, GMCH_LABEL, GMCH_BADGE, GMCH_DISCLAIMER } from "@/lib/data/green-mountain-community-hospital";
+import Act68TransitionScenario from "./Act68TransitionScenario";
 
 type PeerGroup = "cah" | "rural_pps" | "urban_community" | "urban_tertiary";
 
@@ -619,7 +620,7 @@ function fmtUSD(n: number) {
 }
 
 export default function HospitalFinancialScorecard() {
-  const [mode, setMode] = useState<"stress" | "projection">("stress");
+  const [mode, setMode] = useState<"stress" | "projection" | "transition">("stress");
   const [peerGroup, setPeerGroup] = useState<PeerGroup>("cah");
   const [activePreset, setActivePreset] = useState<string | null>(null);
 
@@ -820,7 +821,7 @@ export default function HospitalFinancialScorecard() {
   return (
     <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
       {/* ── MODE TOGGLE ── */}
-      <div className="flex items-center gap-2 px-6 pt-5 pb-4 border-b border-slate-200 bg-slate-50">
+      <div className="flex flex-wrap items-center gap-2 px-6 pt-5 pb-4 border-b border-slate-200 bg-slate-50">
         <button
           onClick={() => setMode("stress")}
           className={`px-3.5 py-1.5 rounded-lg text-xs font-black uppercase tracking-wide transition-all ${
@@ -837,14 +838,26 @@ export default function HospitalFinancialScorecard() {
         >
           Multi-Year Projection
         </button>
+        <button
+          onClick={() => setMode("transition")}
+          className={`px-3.5 py-1.5 rounded-lg text-xs font-black uppercase tracking-wide transition-all ${
+            mode === "transition" ? "bg-indigo-600 text-white shadow-sm" : "bg-white border border-slate-200 text-slate-500 hover:border-slate-300"
+          }`}
+        >
+          Act 68 Transition FY2026–30
+        </button>
         <span className="text-[10px] text-slate-400 ml-1">
           {mode === "stress"
             ? "One hospital, one year, adjustable shocks."
-            : "All 14 real GMCB FY2025-actual baselines, compounded forward under adjustable growth rates."}
+            : mode === "projection"
+            ? "All 14 real GMCB FY2025-actual baselines, compounded forward under adjustable growth rates."
+            : "Year by year through GMCB's FY27 orders and FY2028 reference-based pricing — where each hospital is thinnest."}
         </span>
       </div>
 
-      {mode === "stress" ? (
+      {mode === "transition" ? (
+        <Act68TransitionScenario hospitals={REAL_HOSPITALS} />
+      ) : mode === "stress" ? (
       <div className="grid grid-cols-1 lg:grid-cols-5 divide-y lg:divide-y-0 lg:divide-x divide-slate-200">
 
         {/* ── INPUTS ── */}

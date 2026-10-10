@@ -399,7 +399,7 @@ export const TOOLS: readonly Tool[] = [
     // A live news feed, so it is not chapter-bound — but chs 13 and 14 send
     // readers to it explicitly as an early-warning instrument.
     chapters: ["13", "14"],
-    desc: "Real-time curated feed of the most important healthcare policy, economics, and transformation news signals.",
+    desc: "Real-time curated feed of the most important healthcare policy, economics, and transformation news signals, plus a Vermont Legislature health-reform bill tracker.",
   },
 ] as const;
 

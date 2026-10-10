@@ -121,26 +121,13 @@ const SOURCES = [
   },
 ];
 
-// Vermont Legislature bill tracking (Act 68 amendments, GMCB appointment
-// bills) was checked and could NOT be wired: legislature.vermont.gov has
-// no public RSS feed (confirmed — no <link rel="alternate" rss> anywhere,
-// no /rss.xml, /feed, or /bill/rss route resolves). The state DOES run a
-// real bill-data API at legislature.vermont.gov/docs/api/v1, but it is
-// key-gated ("contact IT@leg.state.vt.us to obtain an API key") and no key
-// is available in this environment. Per standing instruction, this is left
-// as an honest "not yet connected" disclosure rather than a scraper against
-// the bill-search HTML (fragile, and outside the RSS abstraction every
-// other source uses) or fabricated bill entries. Surfaced to the client
-// separately from `items` so it never enters pillar-tagging/impact scoring
-// as if it were a real headline.
-const UNAVAILABLE_SOURCES = [
-  {
-    label: "VT Legislature",
-    reason:
-      "No public RSS feed. The Legislature's bill-data API (legislature.vermont.gov/docs/api/v1) requires an API key from IT@leg.state.vt.us that this integration does not have.",
-    url: "https://legislature.vermont.gov/bill",
-  },
-];
+// Vermont Legislature bills are tracked separately (lib/wire/vt-bills.ts,
+// rendered by app/the-wire/VermontBillTracker.tsx): the Legislature has no
+// RSS feed, so its public bill status pages are read at most once per bill
+// per day instead. Kept out of `items` so bill statuses never enter
+// pillar-tagging/impact scoring as if they were headlines. No source is
+// currently checked-but-unwired; the list stays for future disclosures.
+const UNAVAILABLE_SOURCES: { label: string; reason: string; url: string }[] = [];
 
 function parseDate(block: string): string | null {
   const m = block.match(/<pubDate>(.*?)<\/pubDate>/);
