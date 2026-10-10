@@ -4100,7 +4100,7 @@
           "order": 2,
           "slug": "interface-engines-integration",
           "title": "Interface Engines: The Plumbing of Health IT",
-          "summary": "How interface engines translate, route, and transform health messages between systems \u2014 and why a large hospital may have 500 active interfaces requiring constant maintenance.",
+          "summary": "How interface engines translate, route, and transform health messages between systems \u2014 and why a large hospital may run hundreds of active interfaces requiring constant maintenance.",
           "estimatedMinutes": 16,
           "isPublished": true,
           "tags": [
@@ -4134,13 +4134,13 @@
             {
               "type": "text",
               "heading": "The translation layer nobody sees",
-              "body": "Between every two clinical systems that exchange data sits an interface engine \u2014 the software that receives a message from one system, transforms it into the format the receiving system expects, routes it correctly, and confirms delivery. Most clinicians are unaware interface engines exist. Most health IT leaders are acutely aware that their interface engines are among the most critical and most fragile components of their infrastructure.\n\nA large academic medical center may have 400\u2013600 active interfaces: the laboratory system sending HL7 v2 ORU messages to the EHR, the pharmacy system receiving medication orders, the radiology PACS receiving orders and returning results, the ADT feed going to the HIE, the billing system receiving charges, the care management platform receiving ADT notifications. Each interface is a custom configuration \u2014 a mapping of fields from one system's dialect to another's. When either system is updated, the interface must be retested and often reconfigured.\n\nThe leading interface engine platforms include Mirth Connect (open source, widely used in smaller organizations and HIEs), Rhapsody (commercial, strong in large health systems), Infor Cloverleaf (legacy enterprise platform), and InterSystems HealthShare (combines interface engine with clinical data repository). Cloud-based FHIR servers \u2014 Microsoft Azure Health Data Services, Google Cloud Healthcare API, AWS HealthLake \u2014 are increasingly used as the FHIR layer above or alongside traditional interface engines."
+              "body": "Between every two clinical systems that exchange data sits an interface engine \u2014 the software that receives a message from one system, transforms it into the format the receiving system expects, routes it correctly, and confirms delivery. Most clinicians are unaware interface engines exist. Most health IT leaders are acutely aware that their interface engines are among the most critical and most fragile components of their infrastructure.\n\nA large academic medical center may run hundreds of active interfaces: the laboratory system sending HL7 v2 ORU messages to the EHR, the pharmacy system receiving medication orders, the radiology PACS receiving orders and returning results, the ADT feed going to the HIE, the billing system receiving charges, the care management platform receiving ADT notifications. Each interface is a custom configuration \u2014 a mapping of fields from one system's dialect to another's. When either system is updated, the interface must be retested and often reconfigured.\n\nThe leading interface engine platforms include Mirth Connect (long open source and widely used in smaller organizations and HIEs; proprietary since version 4.6 in 2025), Rhapsody (commercial, strong in large health systems), Infor Cloverleaf (legacy enterprise platform), and InterSystems HealthShare (combines interface engine with clinical data repository). Cloud-based FHIR servers \u2014 Microsoft Azure Health Data Services, Google Cloud Healthcare API, AWS HealthLake \u2014 are increasingly used as the FHIR layer above or alongside traditional interface engines."
             },
             {
               "type": "key_stat",
-              "value": "400-600",
-              "label": "active interfaces at a typical large hospital",
-              "context": "The total cost of interface ownership \u2014 including initial build, testing, ongoing maintenance, and monitoring \u2014 is estimated at $10,000\u2013$50,000 per interface per year. A hospital with 500 interfaces faces $5\u201325M annually in interface maintenance costs alone."
+              "value": "1,000",
+              "label": "interfaces in one documented health system",
+              "context": "One documented health system runs 1,000 interfaces across 136 connected systems (InterSystems). Every interface carries build, testing, maintenance, and monitoring costs for as long as it runs."
             },
             {
               "type": "callout",
@@ -4154,7 +4154,7 @@
               "items": [
                 {
                   "term": "Mirth Connect",
-                  "definition": "Open-source interface engine maintained by NextGen. Free to use, large community, strong HL7 v2 support. Used by many HIEs and smaller organizations."
+                  "definition": "Interface engine maintained by NextGen; open source until version 4.6 (2025) moved it to a proprietary licence, prompting the Open Integration Engine community fork. Strong HL7 v2 support; NextGen says it powers a third of U.S. public HIEs."
                 },
                 {
                   "term": "Rhapsody",
@@ -4229,7 +4229,7 @@
                   },
                   {
                     "id": "q_ie2b",
-                    "text": "An open-source platform widely used by HIEs and smaller organizations",
+                    "text": "A long-time open-source platform widely used by HIEs and smaller organizations",
                     "isCorrect": true,
                     "explanation": "Mirth Connect is open-source \u2014 free to download and use \u2014 making it popular among budget-constrained organizations, regional HIEs, and organizations that want to customize their integration infrastructure. It is maintained by NextGen Healthcare."
                   },
@@ -4246,7 +4246,7 @@
                     "explanation": "Mirth Connect is maintained by NextGen Healthcare, a commercial company \u2014 not by government. It is open-source (freely licensed) but not government-operated."
                   }
                 ],
-                "explanation": "Mirth Connect's open-source model made it the interface engine of choice for regional HIEs and smaller organizations that needed capable integration without commercial licensing costs."
+                "explanation": "Mirth Connect's long-standing open-source model made it the interface engine of choice for regional HIEs and smaller organizations that needed capable integration without commercial licensing costs \u2014 until NextGen moved version 4.6 to a proprietary licence in 2025."
               },
               {
                 "id": "q_ie3",
@@ -4601,7 +4601,7 @@
               "type": "key_stat",
               "value": "350,000+",
               "label": "clinical concepts in SNOMED CT",
-              "context": "SNOMED CT's 350,000+ concepts and 1.5 million relationships make it the most comprehensive clinical ontology in existence. Its polyhierarchical structure allows a concept like 'type 2 diabetes mellitus' to be simultaneously classified as a metabolic disease, an endocrine disorder, and a disorder of glucose metabolism."
+              "context": "SNOMED CT's 350,000+ concepts, each formally defined by relationships to other concepts, make it the most comprehensive clinical terminology in existence. Its polyhierarchical structure allows a concept like 'type 2 diabetes mellitus' to be simultaneously classified as a metabolic disease, an endocrine disorder, and a disorder of glucose metabolism."
             },
             {
               "type": "callout",
@@ -4788,13 +4788,13 @@
             {
               "type": "text",
               "heading": "A minimum floor, not a ceiling",
-              "body": "The United States Core Data for Interoperability (USCDI) defines the minimum set of health data classes and elements that must be supported by certified EHR technology for nationwide, interoperable exchange. Think of it as the federal government's answer to the question: 'What is the least amount of data that must be exchangeable for this system to be useful for patient care?' USCDI is deliberately a floor, not a ceiling \u2014 organizations and implementation guides can require more, but certified systems must support at least USCDI.\n\nONC publishes updated versions of USCDI annually, with each version expanding the required data classes. USCDI v1 (2020) established the initial baseline with data classes like clinical notes, problems, medications, immunizations, and vital signs. V2 (2022) added social determinants of health data and health insurance information. V3 (2023) added sexual orientation and gender identity, health status assessments, facility information, and expanded clinical notes. Each expansion reflects evolving consensus about what data is essential for quality care and equitable outcomes.\n\nUSCDI's clinical impact comes through its connection to ONC certification. Certified EHRs must support USCDI data classes in their standardized FHIR API. The US Core Implementation Guide translates USCDI data classes into specific FHIR R4 resource profiles \u2014 defining exactly which FHIR resources and elements must be present for each USCDI data element. This creates a direct chain from policy (USCDI) to technical standard (US Core) to implementation (certified EHR APIs)."
+              "body": "The United States Core Data for Interoperability (USCDI) defines the minimum set of health data classes and elements that must be supported by certified EHR technology for nationwide, interoperable exchange. Think of it as the federal government's answer to the question: 'What is the least amount of data that must be exchangeable for this system to be useful for patient care?' USCDI is deliberately a floor, not a ceiling \u2014 organizations and implementation guides can require more, but certified systems must support at least USCDI.\n\nONC publishes updated versions of USCDI annually, with each version expanding the required data classes. USCDI v1 (2020) established the initial baseline with data classes like clinical notes, problems, medications, immunizations, and vital signs. V2 (2021) added sexual orientation and gender identity and social determinants of health data. V3 (2022) added health insurance information, health status assessments, and facility information. Each expansion reflects evolving consensus about what data is essential for quality care and equitable outcomes.\n\nUSCDI's clinical impact comes through its connection to ONC certification. Certified EHRs must support USCDI data classes in their standardized FHIR API. The US Core Implementation Guide translates USCDI data classes into specific FHIR R4 resource profiles \u2014 defining exactly which FHIR resources and elements must be present for each USCDI data element. This creates a direct chain from policy (USCDI) to technical standard (US Core) to implementation (certified EHR APIs)."
             },
             {
               "type": "key_stat",
               "value": "v4",
-              "label": "USCDI version published in 2024, expanding to include behavioral health and more SDOH data",
-              "context": "USCDI v4 (2024) continued the expansion trajectory, adding behavioral health data elements, additional SDOH data, and expanded patient demographic data. Each annual update reflects stakeholder input through ONC's USCDI+ and Standards Version Advancement Process (SVAP)."
+              "label": "USCDI version published in July 2023, adding substance use, physical activity, and medication adherence data",
+              "context": "USCDI v4 (July 2023) added 20 data elements and one data class, including alcohol use, substance use, physical activity, and medication adherence. Each annual update reflects stakeholder submissions through ONC's ONDEC system."
             },
             {
               "type": "callout",
@@ -4904,13 +4904,13 @@
                   },
                   {
                     "id": "q_uscdi2b",
-                    "text": "USCDI v2 (2022)",
+                    "text": "USCDI v2 (2021)",
                     "isCorrect": true,
                     "explanation": "USCDI v2 was the first version to include SDOH data as a required data class, reflecting growing policy consensus that SDOH information is essential for equitable care. SDOH was further expanded in v3."
                   },
                   {
                     "id": "q_uscdi2c",
-                    "text": "USCDI v3 (2023)",
+                    "text": "USCDI v3 (2022)",
                     "isCorrect": false,
                     "explanation": "USCDI v3 expanded SDOH data further, but the initial SDOH data class was introduced in v2."
                   },
@@ -4957,7 +4957,7 @@
               },
               {
                 "id": "q_uscdi4",
-                "prompt": "Sexual orientation and gender identity (SOGI) data was added to USCDI as a required data class in which version?",
+                "prompt": "Sexual orientation and gender identity (SOGI) data elements were first added to USCDI in which version?",
                 "type": "single_choice",
                 "options": [
                   {
@@ -4968,24 +4968,24 @@
                   },
                   {
                     "id": "q_uscdi4b",
-                    "text": "USCDI v3 (2023)",
+                    "text": "USCDI v2 (2021)",
                     "isCorrect": true,
-                    "explanation": "SOGI was added to USCDI v3, making it a required data element in certified EHR technology. This means certified EHRs must be able to capture, store, and exchange sexual orientation and gender identity data using standardized vocabulary."
+                    "explanation": "SOGI elements (sexual orientation and gender identity) were added in USCDI v2 in July 2021, alongside SDOH elements. USCDI v3.1 (June 2025) later removed or revised them under Executive Order 14168."
                   },
                   {
                     "id": "q_uscdi4c",
-                    "text": "USCDI v2 (2022)",
+                    "text": "USCDI v3 (2022)",
                     "isCorrect": false,
-                    "explanation": "USCDI v2 focused on adding SDOH data and health insurance information \u2014 SOGI came in v3."
+                    "explanation": "USCDI v3 added Health Insurance Information and Health Status/Assessments; SOGI had already entered in v2."
                   },
                   {
                     "id": "q_uscdi4d",
                     "text": "SOGI is not included in any version of USCDI",
                     "isCorrect": false,
-                    "explanation": "SOGI was added in USCDI v3 (2023), reflecting recognition that these data elements are essential for identifying and addressing health disparities in LGBTQ+ populations."
+                    "explanation": "SOGI elements were added in USCDI v2 (2021); USCDI v3.1 (2025) removed or revised them."
                   }
                 ],
-                "explanation": "SOGI data in USCDI v3 represents a significant equity-focused expansion \u2014 making it a federal requirement that certified EHRs can capture and exchange these data elements necessary for tracking LGBTQ+ health disparities."
+                "explanation": "SOGI data entered USCDI in v2 (July 2021) as an equity-focused expansion. USCDI v3.1 (June 2025) then removed or revised the sex, sexual orientation, and gender identity elements under Executive Order 14168 \u2014 a reminder that USCDI content can contract as well as grow."
               }
             ]
           }
@@ -5222,7 +5222,7 @@
           "order": 1,
           "slug": "hipaa-security-rule",
           "title": "HIPAA Security Rule: Safeguards for Electronic PHI",
-          "summary": "The three categories of HIPAA Security Rule safeguards \u2014 administrative, physical, and technical \u2014 and the 2024 updates requiring encryption and MFA.",
+          "summary": "The three categories of HIPAA Security Rule safeguards \u2014 administrative, physical, and technical \u2014 and the proposed update (announced December 2024, not yet final) that would require encryption and MFA.",
           "estimatedMinutes": 18,
           "isPublished": true,
           "tags": [
@@ -5263,7 +5263,7 @@
               "type": "key_stat",
               "value": "$10.9M",
               "label": "average cost of a healthcare data breach (IBM 2023)",
-              "context": "Healthcare has the highest average data breach cost of any industry \u2014 $10.9 million per breach in 2023, nearly three times the cross-industry average. This reflects the sensitivity of health data, the value of PHI on the black market, and the extensive legal and remediation costs following a breach."
+              "context": "Healthcare has the highest average data breach cost of any industry \u2014 $10.93 million per breach in 2023, about two and a half times the cross-industry average of $4.45 million (IBM). This reflects the sensitivity of health data, the value of PHI on the black market, and the extensive legal and remediation costs following a breach."
             },
             {
               "type": "concepts_grid",
@@ -5298,8 +5298,8 @@
             {
               "type": "callout",
               "variant": "info",
-              "title": "2024 HIPAA Security Rule update: mandatory encryption and MFA",
-              "body": "HHS proposed significant updates to the HIPAA Security Rule in 2024 \u2014 the first major revision since 2013. Key proposed changes: making encryption of ePHI at rest and in transit mandatory (currently 'addressable'), requiring multi-factor authentication for workforce access to ePHI, requiring annual compliance audits, and updating technical requirements to reflect modern cyber threats. These updates reflect the dramatic increase in healthcare ransomware attacks and the recognition that the current Security Rule's flexibility has resulted in inadequate security in many organizations."
+              "title": "Proposed HIPAA Security Rule update: mandatory encryption and MFA",
+              "body": "HHS proposed significant updates to the HIPAA Security Rule in December 2024 (published January 6, 2025) \u2014 the first major revision since 2013. As of 2026 the rule is not final; final action is projected for July 2027. Key proposed changes: making encryption of ePHI at rest and in transit mandatory (currently 'addressable'), requiring multi-factor authentication for workforce access to ePHI, requiring annual compliance audits, and updating technical requirements to reflect modern cyber threats. These updates reflect the dramatic increase in healthcare ransomware attacks and the recognition that the current Security Rule's flexibility has resulted in inadequate security in many organizations."
             }
           ],
           "quiz": {
@@ -5712,7 +5712,7 @@
               "type": "callout",
               "variant": "warning",
               "title": "The national patient identifier debate",
-              "body": "The US has no universal patient identifier \u2014 a deliberate policy choice made in the HIPAA era when Congress prohibited HHS from creating one, citing privacy concerns. The consequences are significant: patient matching across organizations relies on probabilistic algorithms using name, date of birth, address, and phone number \u2014 with error rates that create both safety risks (wrong patient's data merged) and exchange failures (same patient not matched). ONC's Patient Matching Algorithm Challenge sought to improve matching accuracy. FHIR's $match operation standardizes the API for matching. But until a universal patient identifier exists \u2014 or biometric matching is adopted \u2014 patient matching will remain health IT's most persistent unsolved problem."
+              "body": "The US has no universal patient identifier. HIPAA (1996) actually directed HHS to adopt one, but since 1998 an annual appropriations rider has barred HHS from spending funds to do so, citing privacy concerns. The consequences are significant: patient matching across organizations relies on probabilistic algorithms using name, date of birth, address, and phone number \u2014 with error rates that create both safety risks (wrong patient's data merged) and exchange failures (same patient not matched). ONC's Patient Matching Algorithm Challenge sought to improve matching accuracy. FHIR's $match operation standardizes the API for matching. But until a universal patient identifier exists \u2014 or biometric matching is adopted \u2014 patient matching will remain health IT's most persistent unsolved problem."
             },
             {
               "type": "comparison_table",
@@ -5740,7 +5740,7 @@
                   "Vendor-operated network",
                   "Commercial vendor operating exchange as business service",
                   "Vendor accountability, contract terms",
-                  "CommonWell, some regional networks"
+                  "Surescripts, some regional networks"
                 ],
                 [
                   "Hospital-operated",
@@ -5758,9 +5758,9 @@
             },
             {
               "type": "key_stat",
-              "value": "30-50%",
-              "label": "of provider directory entries are inaccurate in payer systems",
-              "context": "Patient matching and provider directory accuracy are related problems \u2014 both stem from the absence of universal identifiers and the manual processes used to maintain identity records. Studies consistently find 30-50% error rates in payer provider directories, undermining network adequacy assessments and patient provider searches."
+              "value": "45-52%",
+              "label": "of Medicare Advantage directory locations had at least one inaccuracy (CMS reviews)",
+              "context": "Patient matching and provider directory accuracy are related problems \u2014 both stem from the absence of universal identifiers and the manual processes used to maintain identity records. CMS's three Medicare Advantage directory reviews (2016\u20132018) found 45\u201352% of listed provider locations had at least one inaccuracy, undermining network adequacy assessments and patient provider searches."
             }
           ],
           "quiz": {
@@ -5781,7 +5781,7 @@
                   },
                   {
                     "id": "q_dg_1b",
-                    "text": "Congress prohibited HHS from creating one in the HIPAA era, citing privacy concerns about a universal health ID",
+                    "text": "Since 1998 an annual appropriations rider has barred HHS from funding one, citing privacy concerns about a universal health ID",
                     "isCorrect": true,
                     "explanation": "The HIPAA legislation included a provision prohibiting HHS from creating or adopting a standard national patient identifier until Congress affirmatively authorizes it \u2014 a prohibition that has remained in effect due to persistent privacy concerns about a universal health ID."
                   },
