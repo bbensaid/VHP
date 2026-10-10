@@ -1,6 +1,8 @@
 import { BoltIcon } from "@heroicons/react/24/outline";
 import WireFeed from "./WireFeed";
 import { getUser } from "@/lib/auth";
+import VermontBillTracker from "./VermontBillTracker";
+import { getTrackedBills, type BillStatus } from "@/lib/wire/vt-bills";
 
 export const metadata = {
   title: "The Wire | HTR Live Intelligence",
@@ -38,10 +40,19 @@ async function getWireItems(): Promise<{
   }
 }
 
+async function getBills(): Promise<BillStatus[]> {
+  try {
+    return await getTrackedBills();
+  } catch {
+    return [];
+  }
+}
+
 export default async function TheWirePage() {
-  const [{ items, fetched_at, unavailable_sources }, user] = await Promise.all([
+  const [{ items, fetched_at, unavailable_sources }, user, bills] = await Promise.all([
     getWireItems(),
     getUser(),
+    getBills(),
   ]);
 
   return (
@@ -65,6 +76,9 @@ export default async function TheWirePage() {
           Real-time healthcare news aggregated from leading policy, regulatory, and clinical sources.
         </p>
       </div>
+
+      {/* Vermont Legislature bill tracker (Ch.14 early-warning signals) */}
+      <VermontBillTracker bills={bills} />
 
       {/* Feed */}
       <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm p-6">
