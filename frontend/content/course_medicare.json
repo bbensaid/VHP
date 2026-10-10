@@ -207,7 +207,7 @@
             },
             {
               "type": "text",
-              "body": "**Medigap** (Medicare Supplement) policies are standardized supplemental insurance plans sold by private insurers that fill Traditional Medicare's cost-sharing gaps. Ten standardized plans (A through N) are offered. The most popular plans (G and N) cover the Part B deductible and most coinsurance, effectively giving beneficiaries near-comprehensive coverage with a predictable premium.\n\nApproximately 23% of traditional Medicare beneficiaries have Medigap coverage. Medigap is not compatible with Medicare Advantage \u2014 beneficiaries must choose one model or the other."
+              "body": "**Medigap** (Medicare Supplement) policies are standardized supplemental insurance plans sold by private insurers that fill Traditional Medicare's cost-sharing gaps. Ten standardized plans (A through N) are offered. The most popular plans (G and N) cover the Part B deductible and most coinsurance, effectively giving beneficiaries near-comprehensive coverage with a predictable premium.\n\nAbout 43% of traditional Medicare beneficiaries (12.2 million) had Medigap coverage in 2023. Medigap is not compatible with Medicare Advantage \u2014 beneficiaries must choose one model or the other."
             }
           ],
           "quiz": null
@@ -246,7 +246,7 @@
           "contentBlocks": [
             {
               "type": "text",
-              "body": "Before 1983, Medicare paid hospitals on a retrospective, cost-based system \u2014 whatever it cost to care for a patient, Medicare reimbursed it (with limits). This created perverse incentives: hospitals had no reason to be efficient, and longer stays meant more revenue. Medicare spending grew at 17% annually in the early 1980s, threatening the program's solvency."
+              "body": "Before 1983, Medicare paid hospitals on a retrospective, cost-based system \u2014 whatever it cost to care for a patient, Medicare reimbursed it (with limits). This created perverse incentives: hospitals had no reason to be efficient, and longer stays meant more revenue. By the early 1980s, rapid growth in Medicare hospital spending was threatening the program's solvency."
             },
             {
               "type": "heading",
@@ -270,7 +270,7 @@
               "type": "callout",
               "variant": "info",
               "title": "Clinical Documentation Integrity (CDI)",
-              "body": "Hospitals employ clinical documentation integrity specialists to review records and query physicians when documentation doesn't capture the full complexity of a patient's condition. Under-documented cases may fall into lower MS-DRG tiers, costing hospitals significant revenue. CDI programs typically generate $2\u20135 in revenue for every $1 invested."
+              "body": "Hospitals employ clinical documentation integrity specialists to review records and query physicians when documentation doesn't capture the full complexity of a patient's condition. Under-documented cases may fall into lower MS-DRG tiers, costing hospitals significant revenue."
             }
           ],
           "quiz": {
@@ -337,7 +337,7 @@
             },
             {
               "type": "text",
-              "body": "The **Resource-Based Relative Value Scale (RBRVS)** assigns each physician service a number of **Relative Value Units (RVUs)** based on:\n\n1. **Physician work RVUs** \u2014 time, skill, intensity, and mental effort required\n2. **Practice expense RVUs** \u2014 overhead costs (staff, equipment, supplies)\n3. **Malpractice RVUs** \u2014 professional liability insurance costs\n\nAll three components are adjusted for **geographic practice cost indices (GPCI)** that reflect local cost-of-living and market differences.\n\n**Medicare Payment = (Work RVU \u00d7 Work GPCI + PE RVU \u00d7 PE GPCI + MP RVU \u00d7 MP GPCI) \u00d7 Conversion Factor**\n\nThe **Conversion Factor (CF)** is set by CMS annually and translates RVUs into dollars. In 2024, the CF is approximately $32.74 per RVU."
+              "body": "The **Resource-Based Relative Value Scale (RBRVS)** assigns each physician service a number of **Relative Value Units (RVUs)** based on:\n\n1. **Physician work RVUs** \u2014 time, skill, intensity, and mental effort required\n2. **Practice expense RVUs** \u2014 overhead costs (staff, equipment, supplies)\n3. **Malpractice RVUs** \u2014 professional liability insurance costs\n\nAll three components are adjusted for **geographic practice cost indices (GPCI)** that reflect local cost-of-living and market differences.\n\n**Medicare Payment = (Work RVU \u00d7 Work GPCI + PE RVU \u00d7 PE GPCI + MP RVU \u00d7 MP GPCI) \u00d7 Conversion Factor**\n\nThe **Conversion Factor (CF)** is set by CMS annually and translates RVUs into dollars. The 2024 CF was $33.29 per RVU (after a March 2024 congressional adjustment to the initial $32.74); for 2025 it is $32.35."
             },
             {
               "type": "heading",
@@ -346,7 +346,7 @@
             },
             {
               "type": "text",
-              "body": "A systemic critique of RBRVS is that it undervalues primary care. Procedure-based services \u2014 colonoscopies, surgeries, imaging \u2014 generate more RVUs per hour of physician time than evaluation and management (E&M) services like office visits. A cardiologist performing a procedure earns 5\u201310x the hourly rate of a primary care physician.\n\nThe result: severe primary care shortages in the U.S. while procedure-based specialties are adequately or over-supplied in many markets. Various payment reform efforts \u2014 value-based payment, chronic care management codes, advanced primary care add-ons \u2014 have tried to address this imbalance."
+              "body": "A systemic critique of RBRVS is that it undervalues primary care. Procedure-based services \u2014 colonoscopies, surgeries, imaging \u2014 generate more RVUs per hour of physician time than evaluation and management (E&M) services like office visits.\n\nThe result: severe primary care shortages in the U.S. while procedure-based specialties are adequately or over-supplied in many markets. Various payment reform efforts \u2014 value-based payment, chronic care management codes, advanced primary care add-ons \u2014 have tried to address this imbalance."
             },
             {
               "type": "heading",
@@ -355,7 +355,7 @@
             },
             {
               "type": "text",
-              "body": "The **Medicare Access and CHIP Reauthorization Act (MACRA)** of 2015 replaced the Sustainable Growth Rate (SGR) formula \u2014 which threatened deep physician payment cuts annually \u2014 with a new framework: the **Quality Payment Program (QPP)**.\n\nQPP offers two tracks:\n\n**MIPS (Merit-Based Incentive Payment System)** \u2014 traditional Medicare billing with performance-based adjustments. Physicians score on quality, cost, improvement activities, and promoting interoperability. High scorers receive bonuses; low scorers receive reductions.\n\n**APM (Advanced Alternative Payment Model) track** \u2014 physicians who participate substantially in CMS-approved alternative payment models (ACOs with risk, bundled payments, PCMHs) receive a 5% bonus and exemption from MIPS."
+              "body": "The **Medicare Access and CHIP Reauthorization Act (MACRA)** of 2015 replaced the Sustainable Growth Rate (SGR) formula \u2014 which threatened deep physician payment cuts annually \u2014 with a new framework: the **Quality Payment Program (QPP)**.\n\nQPP offers two tracks:\n\n**MIPS (Merit-Based Incentive Payment System)** \u2014 traditional Medicare billing with performance-based adjustments. Physicians score on quality, cost, improvement activities, and promoting interoperability. High scorers receive bonuses; low scorers receive reductions.\n\n**APM (Advanced Alternative Payment Model) track** \u2014 physicians who participate substantially in CMS-approved alternative payment models (ACOs with risk, bundled payments, PCMHs) receive a lump-sum incentive payment (5% for payment years 2019\u20132024, 3.5% for 2025 and 1.88% for 2026) and exemption from MIPS."
             }
           ],
           "quiz": null
@@ -469,7 +469,7 @@
             },
             {
               "type": "text",
-              "body": "Risk adjustment creates strong incentives for plans to identify and document all diagnoses \u2014 a practice called 'risk adjustment optimization' or, more critically, 'upcoding.' When plans conduct chart reviews and in-home health assessments specifically to find diagnoses that increase HCC scores (without necessarily treating those conditions), critics argue this inflates federal payments without improving care.\n\nCMS has implemented enhanced auditing and is developing new approaches (VBID, targeted probe-and-educate) to address risk score accuracy. Congressional scrutiny of MA overpayments \u2014 estimated at $88 billion over 10 years by MedPAC \u2014 continues."
+              "body": "Risk adjustment creates strong incentives for plans to identify and document all diagnoses \u2014 a practice called 'risk adjustment optimization' or, more critically, 'upcoding.' When plans conduct chart reviews and in-home health assessments specifically to find diagnoses that increase HCC scores (without necessarily treating those conditions), critics argue this inflates federal payments without improving care.\n\nCMS has expanded Risk Adjustment Data Validation (RADV) audits and is phasing in a revised risk model (V28, 2024\u20132026) to address risk score accuracy. Congressional scrutiny of MA overpayments \u2014 estimated by MedPAC at $83 billion in 2024 alone \u2014 continues."
             },
             {
               "type": "heading",
@@ -478,7 +478,7 @@
             },
             {
               "type": "text",
-              "body": "CMS's **Star Rating system** rates MA plans from 1 to 5 stars on quality and performance measures across five domains:\n\n1. Staying healthy (preventive screenings, vaccines)\n2. Managing chronic conditions (diabetes, hypertension, medication adherence)\n3. Member experience (CAHPS surveys)\n4. Member complaints and changes (appeals, grievances, enrollment stability)\n5. Health plan administration\n\nPlans with 4+ stars receive a **quality bonus** \u2014 up to 5% additional payment \u2014 and qualify for enhanced marketing opportunities. The Star Rating system is a powerful quality lever and a key differentiator in the MA market."
+              "body": "CMS's **Star Rating system** rates MA plans from 1 to 5 stars on quality and performance measures across five domains:\n\n1. Staying healthy (preventive screenings, vaccines)\n2. Managing chronic conditions (diabetes, hypertension, medication adherence)\n3. Member experience (CAHPS surveys)\n4. Member complaints and changes (appeals, grievances, enrollment stability)\n5. Health plan customer service\n\nPlans with 4+ stars receive a **quality bonus** \u2014 up to 5% additional payment \u2014 and qualify for enhanced marketing opportunities. The Star Rating system is a powerful quality lever and a key differentiator in the MA market."
             }
           ],
           "quiz": {
@@ -554,7 +554,7 @@
             },
             {
               "type": "text",
-              "body": "Dual eligible beneficiaries are among the highest-need, highest-cost people in the healthcare system \u2014 15% of Medicaid enrollees account for 34% of Medicaid spending. They have on average 7 chronic conditions, high rates of behavioral health and SDOH needs, and historically fragmented care across Medicare and Medicaid silos.\n\n**Fully Integrated Dual Eligible SNPs (FIDE SNPs)** hold Medicare and Medicaid risk under a single contract \u2014 truly integrating benefits. These plans have the financial alignment to invest in care management that reduces costs across both payers.\n\n**Highly Integrated Dual Eligible SNPs (HIDE SNPs)** have a lower level of integration \u2014 they coordinate benefits but may not hold both payer risks.\n\nCMS is pushing toward greater integration through the **Medicare-Medicaid Integration Program** and state-based agreements, recognizing that integrated financing is essential for improving care for dually eligible beneficiaries."
+              "body": "Dual eligible beneficiaries are among the highest-need, highest-cost people in the healthcare system and account for a disproportionate share of Medicaid spending relative to their enrollment. They have high rates of multiple chronic conditions, behavioral health and SDOH needs, and historically fragmented care across Medicare and Medicaid silos.\n\n**Fully Integrated Dual Eligible SNPs (FIDE SNPs)** hold Medicare and Medicaid risk under a single contract \u2014 truly integrating benefits. These plans have the financial alignment to invest in care management that reduces costs across both payers.\n\n**Highly Integrated Dual Eligible SNPs (HIDE SNPs)** have a lower level of integration \u2014 they coordinate benefits but may not hold both payer risks.\n\nCMS (through its Medicare-Medicaid Coordination Office) is pushing toward greater integration through D-SNP integration rules and state Medicaid agency contracts, recognizing that integrated financing is essential for improving care for dually eligible beneficiaries."
             }
           ],
           "quiz": null
@@ -602,7 +602,7 @@
             },
             {
               "type": "text",
-              "body": "VBP withholds 2% of all DRG payments and redistributes them based on hospital quality scores across four domains:\n\n1. **Clinical outcomes** \u2014 mortality rates for AMI, HF, pneumonia, COPD, CABG; PSI-90 (patient safety composite)\n2. **Safety** \u2014 healthcare-associated infections (CLABSI, CAUTI, MRSA, CDI)\n3. **Person and Community Engagement** \u2014 HCAHPS patient experience survey scores\n4. **Efficiency and Cost Reduction** \u2014 Medicare spending per beneficiary\n\nHospitals that score above average receive bonuses; those below average receive net reductions. Budget-neutral design means total dollars redistributed equal total dollars withheld."
+              "body": "VBP withholds 2% of all DRG payments and redistributes them based on hospital quality scores across four domains:\n\n1. **Clinical outcomes** \u2014 mortality rates for AMI, HF, pneumonia, COPD, CABG; complications after elective hip/knee replacement\n2. **Safety** \u2014 healthcare-associated infections (CLABSI, CAUTI, MRSA, CDI)\n3. **Person and Community Engagement** \u2014 HCAHPS patient experience survey scores\n4. **Efficiency and Cost Reduction** \u2014 Medicare spending per beneficiary\n\nHospitals that score above average receive bonuses; those below average receive net reductions. Budget-neutral design means total dollars redistributed equal total dollars withheld."
             },
             {
               "type": "heading",
@@ -611,7 +611,7 @@
             },
             {
               "type": "text",
-              "body": "HRRP penalizes hospitals with excess 30-day readmission rates for six conditions: **AMI, HF, pneumonia, COPD, hip/knee replacement, and CABG.** Maximum penalty is 3% of all Medicare DRG payments \u2014 a significant financial exposure for high-readmission hospitals.\n\nHRRP has been controversial. Critics argue it has worsened patient outcomes in some cases (patients diverted from admission when they needed hospitalization) and disproportionately penalizes safety-net hospitals that serve higher-risk, sicker populations. A 2022 adjustment stratifies hospitals by the proportion of dual-eligible patients they serve, partially addressing the equity critique."
+              "body": "HRRP penalizes hospitals with excess 30-day readmission rates for six conditions: **AMI, HF, pneumonia, COPD, hip/knee replacement, and CABG.** Maximum penalty is 3% of all Medicare DRG payments \u2014 a significant financial exposure for high-readmission hospitals.\n\nHRRP has been controversial. Critics argue it has worsened patient outcomes in some cases (patients diverted from admission when they needed hospitalization) and disproportionately penalizes safety-net hospitals that serve higher-risk, sicker populations. Since FY2019 (under the 21st Century Cures Act), CMS stratifies hospitals into peer groups by the proportion of dual-eligible patients they serve, partially addressing the equity critique."
             },
             {
               "type": "heading",
@@ -816,7 +816,7 @@
             },
             {
               "type": "text",
-              "body": "The IRA made transformational changes to Part D:\n\n**$2,000 out-of-pocket cap.** Beginning in 2025, Medicare beneficiaries face a $2,000 annual cap on out-of-pocket prescription drug costs \u2014 eliminating the 'catastrophic' phase where patients previously had unlimited cost exposure.\n\n**Insulin cap.** Insulin costs capped at $35/month for Part D enrollees (effective 2023).\n\n**Vaccines.** All ACIP-recommended vaccines covered at $0 cost-sharing.\n\n**Drug price negotiation.** For the first time in Medicare's history, CMS is authorized to negotiate prices directly with pharmaceutical manufacturers for selected high-expenditure drugs. The first 10 drugs were selected in 2023; negotiated prices take effect in 2026. CMS has authority to expand to 20+ drugs annually.\n\nThe IRA drug reforms represent the largest change to Part D since its creation and are expected to generate $98 billion in net Medicare savings over 10 years."
+              "body": "The IRA made transformational changes to Part D:\n\n**$2,000 out-of-pocket cap.** Beginning in 2025, Medicare beneficiaries face a $2,000 annual cap on out-of-pocket prescription drug costs (indexed; $2,100 in 2026) \u2014 once reached, enrollees pay nothing more for covered drugs in the catastrophic phase, ending the unlimited cost exposure they previously faced.\n\n**Insulin cap.** Insulin costs capped at $35/month for Part D enrollees (effective 2023).\n\n**Vaccines.** All ACIP-recommended vaccines covered at $0 cost-sharing.\n\n**Drug price negotiation.** For the first time in Medicare's history, CMS is authorized to negotiate prices directly with pharmaceutical manufacturers for selected high-expenditure drugs. The first 10 drugs were selected in 2023; negotiated prices take effect in 2026. The law allows up to 15 more drugs for 2027, 15 (including Part B drugs) for 2028, and up to 20 per year from 2029.\n\nThe IRA drug reforms represent the largest change to Part D since its creation and were estimated by CBO to reduce the federal deficit by $237 billion over 2022\u20132031, including $98.5 billion in Medicare savings from price negotiation."
             }
           ],
           "quiz": {

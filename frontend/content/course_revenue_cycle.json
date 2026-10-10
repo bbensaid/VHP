@@ -546,7 +546,7 @@
             {
               "type": "text",
               "heading": "Why Pre-Registration Matters",
-              "body": "Pre-registration \u2014 collecting patient and insurance information before the date of service \u2014 is the single most impactful front-end investment an organization can make. When done well, it:\n\n- Reduces day-of registration time by 50\u201370%\n- Enables insurance verification 48\u201372 hours in advance\n- Allows identification of authorization requirements before the visit\n- Provides time for patient financial counseling and upfront collections"
+              "body": "Pre-registration \u2014 collecting patient and insurance information before the date of service \u2014 is the single most impactful front-end investment an organization can make. When done well, it:\n\n- Shortens day-of registration\n- Enables insurance verification 48\u201372 hours in advance\n- Allows identification of authorization requirements before the visit\n- Provides time for patient financial counseling and upfront collections"
             },
             {
               "type": "text",
@@ -694,19 +694,19 @@
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "46 hours",
+                  "value": "13 hours",
                   "label": "Average physician time per week on PA",
-                  "context": "AMA 2023 survey; one in three physicians report PA has led to a serious adverse event for a patient"
+                  "context": "AMA late-2024 survey: 39 requests per physician per week; more than one-quarter of physicians report PA led to a serious adverse event"
                 },
                 {
                   "value": "94%",
                   "label": "PA requests eventually approved",
-                  "context": "KFF analysis showing most PA denials are ultimately overturned \u2014 suggesting the system imposes delays more than prevents inappropriate care"
+                  "context": "KFF: Medicare Advantage insurers fully or partially denied about 6% of 35M+ requests in 2021; only 11% of denials were appealed, and 82% of appeals succeeded"
                 },
                 {
-                  "value": "35%",
-                  "label": "Providers who abandon care due to PA delays",
-                  "context": "AMA survey finding; patients may not receive needed care due to administrative friction"
+                  "value": "78%",
+                  "label": "Physicians reporting patients abandon treatment",
+                  "context": "AMA survey (released June 2024): physicians reporting that patients abandon treatment because of PA struggles"
                 }
               ]
             },
@@ -714,7 +714,7 @@
               "type": "callout",
               "variant": "tip",
               "title": "FHIR-Based Prior Authorization (CMS 2026)",
-              "body": "CMS finalized rules requiring payers to implement FHIR-based APIs for prior authorization by 2026 (Interoperability and Prior Authorization Final Rule, CMS-0057-F). This will enable electronic, near-real-time PA decisions for many services, reducing the current 1\u201314 day wait times for manual PA requests."
+              "body": "CMS finalized rules requiring payers to meet faster prior authorization decision timeframes from 2026 and to implement FHIR-based Prior Authorization APIs by January 2027 (Interoperability and Prior Authorization Final Rule, CMS-0057-F). This will enable electronic, near-real-time PA decisions for many services, reducing the current 1\u201314 day wait times for manual PA requests."
             },
             {
               "type": "comparison_table",
@@ -810,7 +810,7 @@
                   },
                   {
                     "id": "b",
-                    "text": "Payers to implement FHIR APIs for electronic PA by 2026"
+                    "text": "Payers to implement FHIR APIs for electronic PA by 2027"
                   },
                   {
                     "id": "c",
@@ -822,7 +822,7 @@
                   }
                 ],
                 "correctId": "b",
-                "explanation": "CMS-0057-F requires impacted payers to implement FHIR-based APIs for prior authorization, enabling electronic PA requests and near-real-time decisions for many services by 2026."
+                "explanation": "CMS-0057-F requires impacted payers to implement FHIR-based APIs for prior authorization, enabling electronic PA requests and faster decisions, with the API required by January 2027 (decision timeframes apply from 2026)."
               }
             ]
           }
@@ -850,12 +850,12 @@
             {
               "type": "text",
               "heading": "The Rise of Patient Financial Responsibility",
-              "body": "High-deductible health plans (HDHPs) have shifted significant financial responsibility to patients. In 2024, over 50% of employer-sponsored plan enrollees are in HDHPs. As a result:\n\n- Patient balances now represent 20\u201335% of hospital net revenue\n- Bad debt from patient responsibility has increased 11% annually since 2018\n- Patient financial experience is now a top driver of overall patient satisfaction scores\n\nOrganizations that invest in financial counseling and transparent estimates see 15\u201325% improvement in upfront collection rates."
+              "body": "High-deductible health plans (HDHPs) have shifted significant financial responsibility to patients. In 2024, about 27% of covered workers were enrolled in a high-deductible plan with a savings option (KFF Employer Health Benefits Survey). As a result:\n\n- Patient balances are a growing share of provider revenue\n- Bad debt from patient responsibility has become a major collections risk\n- Patient financial experience increasingly shapes overall patient satisfaction\n\nOrganizations that invest in financial counseling and transparent estimates can improve upfront collections."
             },
             {
               "type": "text",
               "heading": "Price Transparency Requirements",
-              "body": "Two federal mandates now require providers to publish pricing:\n\n**Hospital Price Transparency Rule (2021):** Hospitals must publish machine-readable files with all standard charges and a consumer-friendly display of 300 shoppable services. CMS enforcement increased in 2023, with penalties up to $2M per year.\n\n**No Surprises Act (2022):** Prohibits surprise billing for emergency care and non-emergency care at in-network facilities. Requires Good Faith Estimates for self-pay patients and advance explanation of benefits for insured patients within 3 business days of scheduling."
+              "body": "Two federal mandates now require providers to publish pricing:\n\n**Hospital Price Transparency Rule (2021):** Hospitals must publish machine-readable files with all standard charges and a consumer-friendly display of 300 shoppable services. CMS strengthened enforcement in 2022\u20132023, with penalties up to about $2M per year for the largest hospitals.\n\n**No Surprises Act (2022):** Prohibits surprise billing for emergency care and non-emergency care at in-network facilities. Requires Good Faith Estimates for uninsured and self-pay patients (generally within 1\u20133 business days of scheduling); the advance explanation of benefits for insured patients has been deferred pending further rulemaking."
             },
             {
               "type": "callout",
@@ -867,19 +867,14 @@
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "50%+",
-                  "label": "Employer plan enrollees in HDHPs (2024)",
+                  "value": "27%",
+                  "label": "Covered workers in HDHP/SOs (2024)",
                   "context": "Kaiser Family Foundation Employer Health Benefits Survey"
-                },
-                {
-                  "value": "70%",
-                  "label": "Patient balances collected if addressed before discharge",
-                  "context": "vs. ~30% collected after a statement is mailed post-discharge"
                 },
                 {
                   "value": "$2M",
                   "label": "Maximum annual CMS penalty for price transparency non-compliance",
-                  "context": "Effective 2023; scaled to hospital bed count"
+                  "context": "Effective 2022; scaled to hospital bed count"
                 }
               ]
             }
@@ -915,27 +910,27 @@
               },
               {
                 "id": "q-rcm-access-003-2",
-                "text": "What is the collection rate for patient balances addressed before discharge, compared to after a statement is mailed?",
+                "text": "Under the No Surprises Act, when can an uninsured or self-pay patient use the Patient-Provider Dispute Resolution process?",
                 "options": [
                   {
                     "id": "a",
-                    "text": "40% before discharge vs 35% after statement"
+                    "text": "When billed charges exceed the estimate by any amount"
                   },
                   {
                     "id": "b",
-                    "text": "70% before discharge vs 30% after statement"
+                    "text": "When billed charges exceed the Good Faith Estimate by $400 or more"
                   },
                   {
                     "id": "c",
-                    "text": "90% before discharge vs 60% after statement"
+                    "text": "Only if the provider is out of network"
                   },
                   {
                     "id": "d",
-                    "text": "55% before discharge vs 45% after statement"
+                    "text": "Only within 10 days of receiving the bill"
                   }
                 ],
                 "correctId": "b",
-                "explanation": "Industry data shows approximately 70% of patient balances can be collected when addressed proactively before or at discharge, compared to only about 30% after a paper statement is mailed."
+                "explanation": "If the final bill exceeds the Good Faith Estimate by $400 or more, the patient may start dispute resolution within 120 days of receiving the bill, and the provider may not move the bill to collections while the dispute is pending."
               },
               {
                 "id": "q-rcm-access-003-3",
@@ -1035,7 +1030,7 @@
               "type": "callout",
               "variant": "key",
               "title": "CC/MCC Capture: High-Value Coding",
-              "body": "Documenting and coding secondary diagnoses as CCs or MCCs can increase DRG payment by 15\u201335%. Examples: Documenting 'acute blood loss anemia' vs. 'anemia' \u2014 the former may qualify as a CC. Clinical documentation improvement (CDI) programs focus specifically on capturing these diagnoses when clinically supported."
+              "body": "Documenting and coding secondary diagnoses that qualify as CCs or MCCs moves a case into a higher-weighted MS-DRG tier and increases payment. Examples: Documenting 'acute blood loss anemia' vs. 'anemia' \u2014 the former may qualify as a CC. Clinical documentation improvement (CDI) programs focus specifically on capturing these diagnoses when clinically supported."
             },
             {
               "type": "comparison_table",
@@ -1187,20 +1182,20 @@
               "type": "callout",
               "variant": "warning",
               "title": "Common Charge Capture Failures",
-              "body": "The most common charge capture gaps include: (1) services performed but never ordered in the EHR, (2) implants and supplies not captured at time of procedure, (3) late charges submitted after the claim has already been filed, and (4) observation hours not captured for outpatient stays. Studies suggest 3\u20137% of billable hospital services go uncaptured."
+              "body": "The most common charge capture gaps include: (1) services performed but never ordered in the EHR, (2) implants and supplies not captured at time of procedure, (3) late charges submitted after the claim has already been filed, and (4) observation hours not captured for outpatient stays. HFMA estimates that as much as 1% of net charges are lost to charge integrity leakage."
             },
             {
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "3\u20137%",
-                  "label": "Estimated billable services not captured",
-                  "context": "Industry estimate; implies millions in lost revenue annually for a mid-sized hospital"
+                  "value": "Up to 1%",
+                  "label": "Net charges lost to charge-capture leakage",
+                  "context": "HFMA estimate; millions of dollars a year for a large health system"
                 },
                 {
                   "value": "$1.3M",
-                  "label": "Annual revenue at risk for a 300-bed hospital",
-                  "context": "From charge capture gaps at even a 2% miss rate on $65M annual charges"
+                  "label": "Illustrative revenue at risk",
+                  "context": "A 2% miss rate on $65M of annual charges (illustrative arithmetic, not a measured hospital figure)"
                 }
               ]
             }
@@ -1236,15 +1231,15 @@
               },
               {
                 "id": "q-rcm-coding-002-2",
-                "text": "What percentage of billable hospital services are estimated to go uncaptured due to charge capture failures?",
+                "text": "According to HFMA, roughly how much of a health system's net charges can be lost to charge-capture (charge integrity) leakage?",
                 "options": [
                   {
                     "id": "a",
-                    "text": "Less than 1%"
+                    "text": "As much as 0.1%"
                   },
                   {
                     "id": "b",
-                    "text": "3\u20137%"
+                    "text": "As much as 1%"
                   },
                   {
                     "id": "c",
@@ -1256,7 +1251,7 @@
                   }
                 ],
                 "correctId": "b",
-                "explanation": "Industry estimates suggest 3\u20137% of billable services are not captured, representing significant revenue leakage. Common gaps include unbilled implants, missed ancillary charges, and services without corresponding orders."
+                "explanation": "An HFMA analysis estimates that as much as 1% of net charges are lost to charge integrity leakage \u2014 small as a percentage, but millions of dollars a year for a large health system. Common gaps include unbilled implants, missed ancillary charges, and services without corresponding orders."
               },
               {
                 "id": "q-rcm-coding-002-3",
@@ -1309,18 +1304,18 @@
             {
               "type": "text",
               "heading": "2021 E/M Documentation Guidelines",
-              "body": "In 2021, the AMA significantly revised Evaluation and Management (E/M) coding guidelines for office and outpatient visits:\n\n- **Level of service** is now based on either **Medical Decision Making (MDM)** or **Total Time** on the date of the encounter\n- The old requirement to document all three key components (history, exam, MDM) was eliminated for established patients\n- For new patients, only two of three components are required\n- **Time-based billing** now counts total provider time on the date of service, not just face-to-face time\n\nThese changes were designed to reduce documentation burden and allow physicians to focus on medically relevant content."
+              "body": "In 2021, the AMA significantly revised Evaluation and Management (E/M) coding guidelines for office and outpatient visits:\n\n- **Level of service** is now based on either **Medical Decision Making (MDM)** or **Total Time** on the date of the encounter\n- History and exam no longer determine the level for new or established patients; they are documented as medically appropriate (previously, new patients required all three key components and established patients two of three)\n- **Time-based billing** now counts total provider time on the date of service, not just face-to-face time\n\nThese changes were designed to reduce documentation burden and allow physicians to focus on medically relevant content."
             },
             {
               "type": "text",
               "heading": "Clinical Documentation Improvement (CDI)",
-              "body": "CDI programs deploy trained specialists who review inpatient clinical documentation concurrently (while the patient is still admitted) to:\n\n1. Identify documentation gaps that may result in undercoding\n2. Query physicians to clarify ambiguous clinical language (e.g., 'anemia' vs. 'acute blood loss anemia')\n3. Ensure that the principal diagnosis, CCs, and MCCs are fully supported\n4. Improve DRG assignment accuracy and Case Mix Index (CMI)\n\nA strong CDI program can improve CMI by 0.1\u20130.3 points, translating to $5\u201315M annually for a 400-bed hospital."
+              "body": "CDI programs deploy trained specialists who review inpatient clinical documentation concurrently (while the patient is still admitted) to:\n\n1. Identify documentation gaps that may result in undercoding\n2. Query physicians to clarify ambiguous clinical language (e.g., 'anemia' vs. 'acute blood loss anemia')\n3. Ensure that the principal diagnosis, CCs, and MCCs are fully supported\n4. Improve DRG assignment accuracy and Case Mix Index (CMI)"
             },
             {
               "type": "callout",
               "variant": "warning",
               "title": "Upcoding vs. Undercoding: Both Are Problems",
-              "body": "Upcoding \u2014 assigning codes that reflect a higher level of service or severity than documented \u2014 is fraud. Penalties include False Claims Act liability (up to 3x damages + $13,000 per claim). But undercoding \u2014 assigning codes that underrepresent the severity of illness \u2014 is also harmful: it reduces reimbursement, understates patient acuity for quality measures, and masks true case complexity."
+              "body": "Upcoding \u2014 assigning codes that reflect a higher level of service or severity than documented \u2014 is fraud. Penalties include False Claims Act liability (treble damages plus a per-claim penalty of $14,308\u2013$28,618 as adjusted for 2025). But undercoding \u2014 assigning codes that underrepresent the severity of illness \u2014 is also harmful: it reduces reimbursement, understates patient acuity for quality measures, and masks true case complexity."
             },
             {
               "type": "comparison_table",
@@ -1333,17 +1328,17 @@
                 [
                   "'Anemia' not further specified",
                   "Lower-weighted DRG",
-                  "Revenue loss $1,500\u20134,000/case"
+                  "Revenue loss (varies by MS-DRG)"
                 ],
                 [
                   "Sepsis vs. 'infection'",
                   "Significantly lower DRG",
-                  "Revenue loss $5,000\u201315,000/case"
+                  "Large revenue loss (varies by MS-DRG)"
                 ],
                 [
                   "BMI not documented",
                   "Missing obesity CC/MCC",
-                  "Revenue loss $2,000\u20138,000/case"
+                  "Revenue loss (varies by MS-DRG)"
                 ],
                 [
                   "POA not indicated",
@@ -1428,7 +1423,7 @@
                   }
                 ],
                 "correctId": "c",
-                "explanation": "The False Claims Act (31 U.S.C. \u00a7 3729) creates civil liability for knowingly submitting false claims to federal programs including Medicare and Medicaid. Penalties include treble damages plus $13,000\u201327,000 per claim."
+                "explanation": "The False Claims Act (31 U.S.C. \u00a7 3729) creates civil liability for knowingly submitting false claims to federal programs including Medicare and Medicaid. Penalties include treble damages plus a per-claim penalty of $14,308\u2013$28,618 (2025 inflation adjustment)."
               }
             ]
           }
@@ -1503,12 +1498,12 @@
                 {
                   "value": "98%+",
                   "label": "Clean claim rate target for top performers",
-                  "context": "Every 1% improvement in clean claim rate reduces denial rework costs by ~$15,000 per $1M in net revenue"
+                  "context": "Industry benchmark is 95%+; top performers reach 98\u201399%"
                 },
                 {
-                  "value": "30 days",
-                  "label": "Medicare timely filing window for corrected claims",
-                  "context": "Original claims must be filed within 1 year; corrected claims within 60\u2013120 days depending on circumstance"
+                  "value": "12 months",
+                  "label": "Medicare timely filing window",
+                  "context": "From the date of service; corrections via reopening generally within 1 year of the initial determination"
                 }
               ]
             }
@@ -1677,7 +1672,7 @@
               "type": "callout",
               "variant": "warning",
               "title": "The Change Healthcare Cyberattack (2024)",
-              "body": "In February 2024, Change Healthcare \u2014 the largest healthcare clearinghouse in the US processing ~15 billion claims per year \u2014 suffered a ransomware attack that disrupted claims processing for weeks. The incident highlighted the systemic risk of clearinghouse concentration and the need for business continuity planning in RCM operations."
+              "body": "In February 2024, Change Healthcare \u2014 the largest healthcare clearinghouse in the US, processing ~15 billion health care transactions per year \u2014 suffered a ransomware attack that disrupted claims processing for weeks. The incident highlighted the systemic risk of clearinghouse concentration and the need for business continuity planning in RCM operations."
             }
           ],
           "quiz": {
@@ -1801,14 +1796,9 @@
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "115\u2013145%",
-                  "label": "Typical commercial rate as % of Medicare",
-                  "context": "For hospital outpatient services; physician rates often 110\u2013130% of Medicare PFS"
-                },
-                {
-                  "value": "3\u20135 years",
-                  "label": "Typical payer contract term",
-                  "context": "Most commercial contracts auto-renew annually after the initial term without active renegotiation"
+                  "value": "~263%",
+                  "label": "Commercial hospital outpatient prices as % of Medicare",
+                  "context": "RAND Round 5 (2022 data): all hospital services averaged 254%, inpatient 244%, outpatient 263% of Medicare"
                 }
               ]
             }

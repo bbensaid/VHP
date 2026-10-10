@@ -180,4 +180,6 @@ export const OPS = [
       { id: 'value-based-purchasing-medicaid', key: 'src3', verdict: 'MISATTRIBUTED', sources: E, claim: 'source annotation missing Arizona ramp',
         pairs: [['and the HCP-LAN framework.', 'and the HCP-LAN framework; Arizona’s MCO VBP requirement rising from 5% (2013) to 20% (2015–2016).']] },
     ]; })(),
+  ...OPS2, // part 2 (Medicare, Population Health, RCM, Transformation Leadership, VBC) — _phase8b_ops2.mjs
 ];
+import { OPS2 } from './_phase8b_ops2.mjs';

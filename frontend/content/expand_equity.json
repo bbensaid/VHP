@@ -85,7 +85,7 @@
           {
             "type": "text",
             "heading": "Housing is health care",
-            "body": "Housing instability — eviction risk, overcrowding, unsafe conditions, or outright homelessness — is one of the strongest predictors of poor health outcomes. People experiencing homelessness have life expectancies 20–25 years shorter than housed people. They use emergency departments at rates 5–10 times higher than the general population, are hospitalized more frequently, and have dramatically higher rates of mental illness, substance use, and communicable disease.\n\nFor health systems operating in value-based contracts, chronically unhoused patients are often the highest-cost, hardest-to-manage members of the population. Housing instability is not a social problem on the side — it is a primary driver of health care costs."
+            "body": "Housing instability — eviction risk, overcrowding, unsafe conditions, or outright homelessness — is one of the strongest predictors of poor health outcomes. People experiencing homelessness die at least 26 years earlier than the general population, on average. They use emergency departments at far higher rates than the general population, are hospitalized more frequently, and have dramatically higher rates of mental illness, substance use, and communicable disease.\n\nFor health systems operating in value-based contracts, chronically unhoused patients are often the highest-cost, hardest-to-manage members of the population. Housing instability is not a social problem on the side — it is a primary driver of health care costs."
           },
           {
             "type": "concepts_grid",
@@ -100,10 +100,10 @@
           {
             "type": "key_stat",
             "stats": [
-              { "value": "20-25 yrs", "label": "Shorter life expectancy for people experiencing chronic homelessness", "source": "JAMA" },
-              { "value": "5-10x", "label": "Higher ED use rate for unhoused vs. housed individuals", "source": "Health Affairs" },
-              { "value": "$30,000+", "label": "Annual Medicaid cost for a chronically homeless individual", "source": "RWJF" },
-              { "value": "$10,000", "label": "Annual cost of supportive housing per person — fraction of health system savings", "source": "Corporation for Supportive Housing" }
+              { "value": "26+ yrs", "label": "Shorter life expectancy for people experiencing chronic homelessness", "source": "Community Solutions" },
+              { "value": "Several-fold", "label": "Higher ED use rate for unhoused vs. housed individuals", "source": "Community Solutions" },
+              { "value": "$31,000", "label": "Annual community cost of a chronically homeless individual (Central Florida study)", "source": "Central Florida Commission on Homelessness, 2014" },
+              { "value": "$10,000", "label": "Annual cost of permanent supportive housing per person (same study)", "source": "Central Florida Commission on Homelessness, 2014" }
             ]
           }
         ],
@@ -148,13 +148,13 @@
           {
             "type": "text",
             "heading": "Food insecurity is a clinical issue",
-            "body": "Food insecurity — limited or uncertain access to adequate food — affects approximately 44 million Americans, including 13 million children. For clinicians, food insecurity is not just a social problem: it is directly linked to uncontrolled diabetes (food-insecure patients have 27% higher A1c), hypertension, depression, and hospital readmissions.\n\nA diabetic patient who cannot afford or access fresh vegetables, whole grains, and lean protein cannot manage their blood sugar regardless of how good their medication is. Food is medicine — and clinicians are increasingly recognizing that prescriptions for metformin need to be paired with access to food."
+            "body": "Food insecurity — limited or uncertain access to adequate food — affected about 47 million Americans in 2023, including nearly 14 million children (USDA). For clinicians, food insecurity is not just a social problem: it is directly linked to uncontrolled diabetes, hypertension, depression, and hospital readmissions.\n\nA diabetic patient who cannot afford or access fresh vegetables, whole grains, and lean protein cannot manage their blood sugar regardless of how good their medication is. Food is medicine — and clinicians are increasingly recognizing that prescriptions for metformin need to be paired with access to food."
           },
           {
             "type": "concepts_grid",
             "heading": "Food-as-medicine interventions with evidence",
             "items": [
-              { "icon": "ti-leaf", "title": "Produce prescriptions", "body": "Clinicians write 'prescriptions' redeemable at farmers markets or grocery stores for fresh produce. RCTs show A1c reductions of 0.6–1.0% in food-insecure diabetic patients." },
+              { "icon": "ti-leaf", "title": "Produce prescriptions", "body": "Clinicians write 'prescriptions' redeemable at farmers markets or grocery stores for fresh produce. Evidence is mixed: modest A1c reductions in some evaluations, none in a subsidy-only randomized trial." },
               { "icon": "ti-soup", "title": "Medically tailored meals", "body": "Home-delivered meals designed by registered dietitians for specific conditions (diabetes, CHF, renal disease, HIV). Strong evidence: 50% reduction in hospitalizations in some studies." },
               { "icon": "ti-building-store", "title": "Food pharmacy", "body": "Grocery-store-style areas within clinical settings where food-insecure patients can 'shop' for free healthy food. Pioneer sites: Boston Medical Center, Geisinger." },
               { "icon": "ti-coin", "title": "SNAP enrollment", "body": "Clinical teams screen for SNAP eligibility and connect patients. Supplemental Nutrition Assistance Program covers ~$200/month in food for eligible individuals — but only 82% of eligible people are enrolled." }
@@ -163,8 +163,8 @@
           {
             "type": "key_stat",
             "stats": [
-              { "value": "44M", "label": "Americans experiencing food insecurity", "source": "USDA 2023" },
-              { "value": "27%", "label": "Higher A1c in food-insecure vs. food-secure diabetic patients", "source": "Diabetes Care" },
+              { "value": "47M", "label": "Americans experiencing food insecurity", "source": "USDA 2023" },
+              { "value": "~14M", "label": "Children in food-insecure households (2023)", "source": "USDA ERS" },
               { "value": "50%", "label": "Reduction in hospitalizations with medically tailored meals in some studies", "source": "JAMA IM" },
               { "value": "18%", "label": "Of eligible people not enrolled in SNAP", "source": "USDA" }
             ]
@@ -180,10 +180,10 @@
               "type": "single_choice",
               "question": "What have clinical trials found about produce prescription programs for food-insecure diabetic patients?",
               "points": 1,
-              "explanation": "RCTs of produce prescription programs show A1c reductions of 0.6–1.0% in food-insecure diabetic patients — clinically meaningful reductions comparable to adding a medication.",
+              "explanation": "The evidence is mixed: some evaluations find modest A1c reductions (about 0.3 points in a large Tufts-led analysis), but a randomized trial of a produce subsidy alone found no significant A1c improvement at 12 months. Design and wraparound support matter.",
               "options": [
                 { "id": "opt_fi1a", "text": "No clinical impact — A1c is not affected by diet alone", "isCorrect": false },
-                { "id": "opt_fi1b", "text": "A1c reductions of 0.6–1.0% — comparable to adding a medication", "isCorrect": true },
+                { "id": "opt_fi1b", "text": "Mixed results — modest A1c reductions in some evaluations, but no significant effect in a subsidy-only randomized trial", "isCorrect": true },
                 { "id": "opt_fi1c", "text": "Improved patient satisfaction but no measurable A1c change", "isCorrect": false },
                 { "id": "opt_fi1d", "text": "Reductions only in patients who were already adherent to their medications", "isCorrect": false }
               ]
@@ -278,20 +278,20 @@
           {
             "type": "text",
             "heading": "A trusted device that wasn't equally accurate",
-            "body": "Pulse oximeters — the small clip devices that measure blood oxygen saturation — have been ubiquitous in clinical care for decades. During COVID-19, they were essential: the decision to admit a patient or discharge them often hinged on a single SpO2 reading.\n\nIn 2020–2021, multiple studies published in NEJM and other leading journals found that pulse oximeters were significantly less accurate in patients with darker skin tones — overestimating oxygen saturation by 2–3 percentage points. This meant that Black and Hispanic patients with dangerously low oxygen levels appeared to be within normal range, leading to delayed treatment and worse outcomes.\n\nThis was not a COVID-era discovery — the bias had been documented in the 1980s and 1990s, but the clinical and regulatory systems failed to act on it."
+            "body": "Pulse oximeters — the small clip devices that measure blood oxygen saturation — have been ubiquitous in clinical care for decades. During COVID-19, they were essential: the decision to admit a patient or discharge them often hinged on a single SpO2 reading.\n\nIn 2020–2021, multiple studies published in NEJM and other leading journals found that pulse oximeters were significantly less accurate in patients with darker skin tones — overestimating oxygen saturation. This meant that Black and Hispanic patients with dangerously low oxygen levels appeared to be within normal range, leading to delayed treatment and worse outcomes.\n\nThis was not a COVID-era discovery — the bias had been documented in the 1980s and 1990s, but the clinical and regulatory systems failed to act on it."
           },
           {
             "type": "callout",
             "variant": "warning",
             "heading": "Why the bias exists — and was ignored",
-            "body": "Pulse oximeters work by shining light through the finger and measuring absorption at two wavelengths. Melanin in the skin absorbs light at these wavelengths, interfering with the measurement. Device manufacturers validated their devices predominantly on lighter-skinned subjects — a common pattern in medical device and clinical trial populations. Despite early research flagging the disparity, the FDA did not require manufacturers to validate accuracy across skin tones until 2024."
+            "body": "Pulse oximeters work by shining light through the finger and measuring absorption at two wavelengths. Melanin in the skin absorbs light at these wavelengths, interfering with the measurement. Device manufacturers validated their devices predominantly on lighter-skinned subjects — a common pattern in medical device and clinical trial populations. Despite early research flagging the disparity, the FDA did not issue draft guidance calling for validation across a broad range of skin tones until January 2025."
           },
           {
             "type": "key_stat",
             "stats": [
               { "value": "3x", "label": "Higher rate of occult hypoxemia in Black patients missed by pulse oximetry vs. white patients", "source": "NEJM 2020" },
-              { "value": "2–3 pts", "label": "Average SpO2 overestimation in patients with darker skin tones", "source": "NEJM 2020" },
-              { "value": "2024", "label": "Year FDA first required manufacturers to validate pulse oximeters across skin tones", "source": "FDA" }
+              { "value": "17.0% vs 6.2%", "label": "Occult hypoxemia, Black vs. white patients (multicenter cohort)", "source": "NEJM 2020" },
+              { "value": "2025", "label": "Year FDA issued draft guidance on validating pulse oximeters across skin tones", "source": "FDA" }
             ]
           }
         ],
@@ -418,7 +418,7 @@
             "type": "callout",
             "variant": "info",
             "heading": "Community benefit: $129B annually — but poorly tracked",
-            "body": "Nonprofit hospitals claimed $129B in community benefit spending in 2019 — mostly charity care and Medicaid shortfall. Critics argue that little of this reaches the social determinants investments that would most reduce community health disparities. The IRS requires community benefit reporting but allows wide flexibility in what counts. CMS and advocacy groups are pushing for requirements that a meaningful share of community benefit target measurable social determinants."
+            "body": "Nonprofit hospitals reported $129B in community benefits in 2020 (AHA analysis of Schedule H data) — mostly charity care and Medicaid shortfall. Critics argue that little of this reaches the social determinants investments that would most reduce community health disparities. The IRS requires community benefit reporting but allows wide flexibility in what counts. CMS and advocacy groups are pushing for requirements that a meaningful share of community benefit target measurable social determinants."
           }
         ],
         "quiz": {

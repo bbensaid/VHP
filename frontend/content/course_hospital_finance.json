@@ -1807,7 +1807,7 @@
             {
               "type": "text",
               "heading": "Tax-Exempt Bond Financing for Nonprofit Hospitals",
-              "body": "Nonprofit hospitals with 501(c)(3) status can issue **tax-exempt municipal bonds** through conduit issuers (state or county authorities). Because the interest income is exempt from federal taxes for bondholders, these bonds carry lower interest rates than taxable bonds\u2014typically 50\u2013100 basis points lower, saving millions in interest over a 30-year bond life.\n\nHospitals access the bond market through:\n- **Revenue bonds:** Secured by hospital revenues (most common)\n- **General obligation bonds:** Backed by taxing authority (public hospitals)\n- **Bank loans and lines of credit:** For shorter-term or smaller needs\n\nFor-profit hospitals must issue **taxable bonds** or use equity financing, making their cost of capital higher unless offset by greater operational scale."
+              "body": "Nonprofit hospitals with 501(c)(3) status can issue **tax-exempt municipal bonds** through conduit issuers (state or county authorities). Because the interest income is exempt from federal taxes for bondholders, these bonds carry lower interest rates than taxable bonds\u2014an estimated 2 percentage points lower on average, according to the American Hospital Association, saving millions in interest over a 30-year bond life.\n\nHospitals access the bond market through:\n- **Revenue bonds:** Secured by hospital revenues (most common)\n- **General obligation bonds:** Backed by taxing authority (public hospitals)\n- **Bank loans and lines of credit:** For shorter-term or smaller needs\n\nFor-profit hospitals must issue **taxable bonds** or use equity financing, making their cost of capital higher unless offset by greater operational scale."
             },
             {
               "type": "comparison_table",
@@ -1848,15 +1848,15 @@
               "type": "callout",
               "variant": "warning",
               "title": "Bond Covenants: Operational Constraints",
-              "body": "Bond indentures typically include financial covenants that hospitals must maintain:\n- **Minimum DSCR:** Often 1.10\u20131.25x annual debt service coverage\n- **Minimum days cash on hand:** Often 75\u2013100 days\n- **Debt-to-capitalization limits:** Often 60\u201365% maximum\n\nBreaching a covenant triggers technical default, which can require immediate negotiation with bondholders, waiver agreements, or in severe cases, accelerated repayment. CFOs must monitor covenant compliance continuously and flag risks to the board well in advance."
+              "body": "Bond indentures typically include financial covenants that hospitals must maintain:\n- **Minimum DSCR:** Often 1.10\u20131.25x annual debt service coverage\n- **Minimum days cash on hand:** Often 40\u201380 days\n- **Debt-to-capitalization limits:** Often 60\u201365% maximum\n\nBreaching a covenant triggers technical default, which can require immediate negotiation with bondholders, waiver agreements, or in severe cases, accelerated repayment. CFOs must monitor covenant compliance continuously and flag risks to the board well in advance."
             },
             {
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "50\u2013100 bps",
+                  "value": "~2 pts",
                   "label": "Tax-exempt savings vs taxable bonds",
-                  "context": "The interest rate advantage of tax-exempt bonds vs comparable taxable bonds for nonprofit hospitals"
+                  "context": "Estimated average interest saving of tax-exempt bonds vs taxable bonds or bank financing (American Hospital Association)"
                 },
                 {
                   "value": "30 years",
@@ -1898,7 +1898,7 @@
                   }
                 ],
                 "correctId": "c",
-                "explanation": "Nonprofit hospitals can issue tax-exempt municipal bonds because their 501(c)(3) status allows bondholders to receive interest income exempt from federal taxes. Bondholders accept lower yields in exchange for this tax benefit, reducing the hospital's borrowing cost by 50\u2013100 basis points."
+                "explanation": "Nonprofit hospitals can issue tax-exempt municipal bonds because their 501(c)(3) status allows bondholders to receive interest income exempt from federal taxes. Bondholders accept lower yields in exchange for this tax benefit, reducing the hospital's borrowing cost by an estimated 2 percentage points on average (AHA)."
               },
               {
                 "id": "q-hf-capital-003-2",
@@ -1983,7 +1983,7 @@
             {
               "type": "text",
               "heading": "The Fundamental Tension in Payment Reform",
-              "body": "Under **fee-for-service (FFS)**, hospitals are paid for each service delivered. More procedures, more admissions, more tests = more revenue. This creates an incentive to maximize volume.\n\nUnder **value-based payment**, hospitals are paid based on outcomes, quality, and cost efficiency. Keeping patients out of the hospital, reducing readmissions, preventing complications = financial success. This directly contradicts FFS revenue logic.\n\nThe transition creates a **dual financial challenge**: hospitals must simultaneously:\n1. Maintain FFS revenue (still 80%+ of most hospitals' income) to fund operations\n2. Invest in value-based capabilities (care coordination, analytics, community health) that reduce FFS volume\n\nThis 'burning platform' dynamic requires hospitals to manage a carefully paced transition to avoid financial crisis."
+              "body": "Under **fee-for-service (FFS)**, hospitals are paid for each service delivered. More procedures, more admissions, more tests = more revenue. This creates an incentive to maximize volume.\n\nUnder **value-based payment**, hospitals are paid based on outcomes, quality, and cost efficiency. Keeping patients out of the hospital, reducing readmissions, preventing complications = financial success. This directly contradicts FFS revenue logic.\n\nThe transition creates a **dual financial challenge**: hospitals must simultaneously:\n1. Maintain FFS revenue (still the larger share of most hospitals' income) to fund operations\n2. Invest in value-based capabilities (care coordination, analytics, community health) that reduce FFS volume\n\nThis 'burning platform' dynamic requires hospitals to manage a carefully paced transition to avoid financial crisis."
             },
             {
               "type": "comparison_table",
@@ -2041,7 +2041,7 @@
                 },
                 {
                   "value": "$1B+",
-                  "label": "Annual HRRP penalties",
+                  "label": "Cumulative HRRP penalties",
                   "context": "CMS has levied over $1 billion in cumulative readmission penalties since program inception in 2012"
                 }
               ]
@@ -2122,7 +2122,7 @@
                   }
                 ],
                 "correctId": "b",
-                "explanation": "The dual financial challenge is the core tension: hospitals must maintain FFS revenue (still 80%+ of income) while investing in value-based capabilities like care coordination that reduce FFS volume. Moving too fast risks revenue collapse; moving too slowly leaves quality incentive money on the table."
+                "explanation": "The dual financial challenge is the core tension: hospitals must maintain FFS revenue (still the larger share of income) while investing in value-based capabilities like care coordination that reduce FFS volume. Moving too fast risks revenue collapse; moving too slowly leaves quality incentive money on the table."
               }
             ]
           },
@@ -2150,7 +2150,7 @@
             {
               "type": "text",
               "heading": "The Value-Based Contract Spectrum",
-              "body": "Value-based contracts exist on a spectrum of financial risk:\n\n**Shared Savings (Upside Only):** The hospital earns a share of any savings generated below a spending benchmark but bears no downside risk. CMS Medicare Shared Savings Program (MSSP) Track 1 is this model. Hospitals capture 50% of savings; no penalty for overspending.\n\n**Two-Sided Risk (Upside + Downside):** Hospitals share both savings and losses. MSSP Enhanced Track or Medicare ACO REACH. Higher shared savings rate (60\u201375%) but must repay a portion of overspending.\n\n**Bundled Payments:** A single payment for an episode of care (e.g., hip replacement + 90-day post-acute). Hospital keeps savings from efficient care; absorbs losses from complications.\n\n**Capitation:** A fixed per-member-per-month (PMPM) payment covering all services for an attributed population. Full global risk. Requires sophisticated actuarial modeling, utilization management, and reserve capital."
+              "body": "Value-based contracts exist on a spectrum of financial risk:\n\n**Shared Savings (Upside Only):** The hospital earns a share of any savings generated below a spending benchmark but bears no downside risk. The Medicare Shared Savings Program (MSSP) BASIC track Levels A and B work this way: ACOs keep up to 40% of savings (50% under the legacy Track 1, retired in 2019); no penalty for overspending.\n\n**Two-Sided Risk (Upside + Downside):** Hospitals share both savings and losses. MSSP BASIC Levels C\u2013E and the ENHANCED track. Higher shared savings rate (up to 50% in BASIC Levels C\u2013E, up to 75% in ENHANCED) but must repay a portion of overspending.\n\n**Bundled Payments:** A single payment for an episode of care (e.g., hip replacement + 90-day post-acute). Hospital keeps savings from efficient care; absorbs losses from complications.\n\n**Capitation:** A fixed per-member-per-month (PMPM) payment covering all services for an attributed population. Full global risk. Requires sophisticated actuarial modeling, utilization management, and reserve capital."
             },
             {
               "type": "concepts_grid",
@@ -2183,12 +2183,12 @@
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "50%",
-                  "label": "MSSP Track 1 shared savings rate",
-                  "context": "CMS shares 50% of net savings with qualifying ACOs in the upside-only track"
+                  "value": "40%",
+                  "label": "MSSP upside-only (BASIC A–B) max sharing rate",
+                  "context": "CMS shares up to 40% of savings with ACOs in the upside-only BASIC Levels A–B (50% under the legacy Track 1, retired in 2019)"
                 },
                 {
-                  "value": "60\u201375%",
+                  "value": "50–75%",
                   "label": "Two-sided risk shared savings rate",
                   "content": "Higher shared savings rate available to ACOs accepting downside risk"
                 },
@@ -2315,9 +2315,9 @@
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "$3\u20137",
-                  "label": "ROI per dollar invested in care coordination (value-based)",
-                  "context": "Studies suggest well-designed care coordination programs generate $3\u2013$7 in savings per dollar invested under value-based contracts"
+                  "value": "14.3:1",
+                  "label": "Median ROI of public health interventions (systematic review)",
+                  "context": "A 2017 systematic review of 52 studies (Masters et al.) found a median return of 14.3 to 1 for public health interventions; returns for any one care-coordination program vary widely"
                 },
                 {
                   "value": "20%",
@@ -2627,7 +2627,7 @@
             {
               "type": "text",
               "heading": "The Financial Logic of System Integration",
-              "body": "When independent hospitals join health systems, the financial rationale typically includes:\n\n**Scale Economies:** Consolidated purchasing through group purchasing organizations (GPOs), shared IT infrastructure, centralized revenue cycle, and shared administrative services reduce per-unit costs.\n\n**Capital Access:** System membership provides access to investment-grade system bonds at lower rates than a standalone community hospital could achieve. A Baa-rated hospital joining an Aa-rated system may borrow at 100\u2013150 bps lower rates.\n\n**Revenue Enhancement:** System membership may improve payer contract rates (multi-hospital leverage), expand specialty services, and provide employed physician networks that drive referrals.\n\n**Sustainability:** Financially marginal hospitals gain access to system capital allocation and operating support that may be unavailable as standalone organizations."
+              "body": "When independent hospitals join health systems, the financial rationale typically includes:\n\n**Scale Economies:** Consolidated purchasing through group purchasing organizations (GPOs), shared IT infrastructure, centralized revenue cycle, and shared administrative services reduce per-unit costs.\n\n**Capital Access:** System membership provides access to investment-grade system bonds at lower rates than a standalone community hospital could achieve. A Baa-rated hospital joining an Aa-rated system can borrow at meaningfully lower rates.\n\n**Revenue Enhancement:** System membership may improve payer contract rates (multi-hospital leverage), expand specialty services, and provide employed physician networks that drive referrals.\n\n**Sustainability:** Financially marginal hospitals gain access to system capital allocation and operating support that may be unavailable as standalone organizations."
             },
             {
               "type": "comparison_table",
@@ -2668,20 +2668,20 @@
               "type": "callout",
               "variant": "warning",
               "title": "Integration Failure Risks",
-              "body": "Hospital mergers frequently fail to achieve projected financial synergies. Common failure modes include: (1) Cultural resistance to standardization; (2) IT system integration cost overruns (EHR consolidation can cost $50\u2013200M for large systems); (3) Physician loyalty to local independence; (4) Community opposition to service changes. FTC antitrust review can block mergers in concentrated markets, and post-merger price increases have drawn Congressional scrutiny."
+              "body": "Hospital mergers frequently fail to achieve projected financial synergies. Common failure modes include: (1) Cultural resistance to standardization; (2) IT system integration cost overruns (EHR consolidation can cost hundreds of millions of dollars, and over $1 billion for the largest systems); (3) Physician loyalty to local independence; (4) Community opposition to service changes. FTC antitrust review can block mergers in concentrated markets, and post-merger price increases have drawn Congressional scrutiny."
             },
             {
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "60%+",
-                  "label": "Hospital beds in systems",
-                  "context": "Over 60% of U.S. hospital beds are now in multi-hospital systems, up from 40% two decades ago"
+                  "value": "69%",
+                  "label": "Hospitals in systems",
+                  "context": "More than two-thirds of U.S. hospitals (69%) are now part of a larger system, up from 56% in 2010 (KFF)"
                 },
                 {
-                  "value": "$50\u2013200M",
+                  "value": "$100M–$1B+",
                   "label": "EHR consolidation cost",
-                  "context": "Large health system EHR consolidation projects typically cost $50\u2013200M, often exceeding initial projections"
+                  "context": "Large health system EHR consolidation projects can cost hundreds of millions of dollars \u2014 over $1 billion for the largest \u2014 often exceeding initial projections"
                 },
                 {
                   "value": "3\u20135 years",
@@ -2718,7 +2718,7 @@
                   }
                 ],
                 "correctId": "b",
-                "explanation": "When a lower-rated hospital joins a higher-rated system, it gains access to the system's investment-grade bonds at lower interest rates\u2014potentially 100\u2013150 basis points savings compared to borrowing as a standalone Baa-rated organization."
+                "explanation": "When a lower-rated hospital joins a higher-rated system, it gains access to the system's investment-grade bonds at lower interest rates\u2014potentially meaningful interest savings compared to borrowing as a standalone Baa-rated organization."
               },
               {
                 "id": "q-hf-governance-002-2",
@@ -2746,7 +2746,7 @@
               },
               {
                 "id": "q-hf-governance-002-3",
-                "text": "What percentage of U.S. hospital beds are now located within multi-hospital systems?",
+                "text": "What percentage of U.S. hospitals are now part of a larger health system?",
                 "options": [
                   {
                     "id": "a",
@@ -2766,7 +2766,7 @@
                   }
                 ],
                 "correctId": "c",
-                "explanation": "Over 60% of U.S. hospital beds are now in multi-hospital systems, reflecting decades of consolidation driven by financial pressure, capital needs, and competitive dynamics. This represents a dramatic shift from the mostly independent hospital landscape of the 1990s."
+                "explanation": "More than two-thirds of U.S. hospitals (69%) are now part of a larger system, up from 56% in 2010 (KFF), reflecting decades of consolidation driven by financial pressure, capital needs, and competitive dynamics."
               }
             ]
           },
@@ -2794,7 +2794,7 @@
             {
               "type": "text",
               "heading": "The Structural Pressures on Hospital Finance",
-              "body": "U.S. hospitals face a convergence of financial headwinds that make historical operating margins increasingly difficult to sustain:\n\n**Payment Rate Pressure:** Medicare rates are set by Congress and updated annually at below-inflation rates (Market Basket minus productivity adjustment). Medicaid rates vary widely but are below cost in many states.\n\n**Labor Cost Inflation:** Post-pandemic labor markets have driven RN and tech wages up 15\u201325%, with heavy dependence on expensive contract/travel labor in some markets. Labor now represents 55\u201365% of expenses at many hospitals.\n\n**Supply Chain Inflation:** Drug and supply costs have risen 5\u201310% annually in recent years, driven by generic drug shortages, global supply chain disruptions, and single-source contracts.\n\n**Disruptive Competition:** Amazon, CVS Health (Aetna), UnitedHealth (Optum), and private equity-backed specialty groups are capturing high-margin ambulatory services, leaving hospitals with a higher proportion of complex, lower-margin inpatient care."
+              "body": "U.S. hospitals face a convergence of financial headwinds that make historical operating margins increasingly difficult to sustain:\n\n**Payment Rate Pressure:** Medicare rates are set by Congress and updated annually at below-inflation rates (Market Basket minus productivity adjustment). Medicaid rates vary widely but are below cost in many states.\n\n**Labor Cost Inflation:** Post-pandemic labor markets have driven RN and tech wages up by double digits, with heavy dependence on expensive contract/travel labor in some markets. Labor now represents 55\u201365% of expenses at many hospitals.\n\n**Supply Chain Inflation:** Drug and supply costs have risen 5\u201310% annually in recent years, driven by generic drug shortages, global supply chain disruptions, and single-source contracts.\n\n**Disruptive Competition:** Amazon, CVS Health (Aetna), UnitedHealth (Optum), and private equity-backed specialty groups are capturing high-margin ambulatory services, leaving hospitals with a higher proportion of complex, lower-margin inpatient care."
             },
             {
               "type": "callout",
@@ -2841,14 +2841,14 @@
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "~30%",
+                  "value": "~40\u201350%",
                   "label": "Hospitals with negative operating margins (2022\u201323)",
-                  "context": "Following pandemic-related costs and labor inflation, approximately 30% of U.S. hospitals operated at negative margins in 2022\u20132023"
+                  "context": "Following pandemic-related costs and labor inflation, about half of U.S. hospitals ended 2022 with negative operating margins and about 40% were still losing money at the end of 2023 (Kaufman Hall)"
                 },
                 {
-                  "value": "15\u201325%",
+                  "value": "Double-digit",
                   "label": "RN wage inflation post-pandemic",
-                  "content": "Registered nurse wages rose 15\u201325% in many markets post-2020, creating major operating expense pressure"
+                  "content": "Registered nurse wages rose by double digits in many markets post-2020, creating major operating expense pressure"
                 },
                 {
                   "value": "340B",
@@ -2877,7 +2877,7 @@
                   },
                   {
                     "id": "c",
-                    "text": "About 30%"
+                    "text": "About 40–50%"
                   },
                   {
                     "id": "d",
@@ -2885,7 +2885,7 @@
                   }
                 ],
                 "correctId": "c",
-                "explanation": "Following the pandemic, approximately 30% of U.S. hospitals operated at negative operating margins in 2022\u20132023, driven by labor cost inflation (especially travel nursing premiums), supply chain disruption, and below-inflation Medicare rate updates."
+                "explanation": "Following the pandemic, about half of U.S. hospitals ended 2022 with negative operating margins and about 40% were still in the red at the end of 2023 (Kaufman Hall), driven by labor cost inflation (especially travel nursing premiums), supply chain disruption, and below-inflation Medicare rate updates."
               },
               {
                 "id": "q-hf-governance-003-2",
