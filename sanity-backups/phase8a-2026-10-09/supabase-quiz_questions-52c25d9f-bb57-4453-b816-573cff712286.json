@@ -1,0 +1,9 @@
+{
+  "id": "52c25d9f-bb57-4453-b816-573cff712286",
+  "quiz_id": "3a6d0e10-7cbd-4a02-aa2a-af1361af581b",
+  "order": 2,
+  "question_type": "single_choice",
+  "question": "The 2021 CMS Conditions of Participation rule required hospitals to do what regarding patient ADT events?",
+  "explanation": "The 2021 CoP ADT notification rule is one of the most impactful care coordination mandates of recent years. Its 24-hour notification requirement enables care managers to intervene in the critical post-discharge window when readmission risk is highest.",
+  "points": null
+}

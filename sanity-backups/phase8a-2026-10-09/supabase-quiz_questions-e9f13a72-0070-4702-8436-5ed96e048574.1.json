@@ -1,0 +1,9 @@
+{
+  "id": "e9f13a72-0070-4702-8436-5ed96e048574",
+  "quiz_id": "dbb904c9-c60a-4375-a098-65793438aa53",
+  "order": 4,
+  "question_type": "single_choice",
+  "question": "Sexual orientation and gender identity (SOGI) data elements were first added to USCDI in which version?",
+  "explanation": "SOGI data in USCDI v3 represents a significant equity-focused expansion — making it a federal requirement that certified EHRs can capture and exchange these data elements necessary for tracking LGBTQ+ health disparities.",
+  "points": null
+}

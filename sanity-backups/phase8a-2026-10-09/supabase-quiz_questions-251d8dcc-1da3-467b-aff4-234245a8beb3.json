@@ -1,0 +1,9 @@
+{
+  "id": "251d8dcc-1da3-467b-aff4-234245a8beb3",
+  "quiz_id": "2d9e38d8-ceb7-482b-96a9-ddae8d457018",
+  "order": 2,
+  "question_type": "single_choice",
+  "question": "Mirth Connect is notable for being which type of interface engine?",
+  "explanation": "Mirth Connect's open-source model made it the interface engine of choice for regional HIEs and smaller organizations that needed capable integration without commercial licensing costs.",
+  "points": null
+}

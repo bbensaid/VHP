@@ -1,0 +1,778 @@
+{
+  "_createdAt": "2026-05-29T03:41:16Z",
+  "_id": "interop-query-vs-event",
+  "_rev": "glqH7a4yvZFQerxZdH3yOx",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T01:57:01Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Two Fundamental Patterns of Health Data Exchange"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Every interoperability transaction in U.S. healthcare ultimately reduces to one of two architectural patterns: a system asks for data it needs right now (query-based, or pull), or a system automatically sends data when something clinically significant happens (event-based, or push). These are not competing standards — they are complementary strategies, each built for a different workflow need. Understanding when to reach for each pattern is one of the most important practical skills in health IT."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Query-based exchange assumes that the receiver knows they need data and knows roughly when to ask for it. A primary care physician opening a patient chart before an annual wellness visit might query a health information network to retrieve recent specialist notes, lab results, or medication lists from other institutions. The request is deliberate, human-initiated, and tied to a moment of care. The network responds with whatever it can locate, and the clinician reviews the results. This model works well for planned encounters and scheduled workflows."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Event-based exchange, by contrast, assumes that something has already happened — a patient was admitted to the emergency department, a lab value crossed a critical threshold, a prescription was filled — and that the receiving party needs to know about it immediately, without waiting to be asked. The originating system pushes a notification or full message to one or more recipients who have subscribed to that type of event. The receiver does not need to poll or remember to check; the information arrives in their workflow automatically. This model is essential for care transitions, population health monitoring, and time-sensitive clinical alerts."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1an1",
+      "_type": "analogyBlock",
+      "analogy": "Think of query-based exchange like a library: you walk in when you need a book and search the catalog yourself. Event-based exchange is like a subscription service: the moment the next issue is published, it lands in your mailbox — you never had to ask.",
+      "concept": "Library vs. subscription service as a metaphor for pull vs. push data exchange"
+    },
+    {
+      "_key": "s1cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Query-Based (Pull)",
+        "points": [
+          "Receiver initiates the request",
+          "Triggered by a scheduled or ad-hoc care need",
+          "Well-suited for pre-visit chart prep",
+          "Latency acceptable — seconds to minutes",
+          "Receiver must know a record may exist elsewhere",
+          "Examples: FHIR RESTful GET, XCA document query"
+        ]
+      },
+      "right": {
+        "label": "Event-Based (Push)",
+        "points": [
+          "Sender initiates the message without a request",
+          "Triggered by a clinical event (admit, discharge, lab)",
+          "Well-suited for care transitions and alerts",
+          "Latency must be near-real-time — seconds",
+          "Receiver does not need to know to look for data",
+          "Examples: HL7 v2 ADT, FHIR Subscription, Direct"
+        ]
+      },
+      "title": "Query-Based vs. Event-Based Exchange at a Glance"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Query-Based Exchange: FHIR, CommonWell, and Carequality"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Query-based exchange is the backbone of the two largest U.S. health information networks: CommonWell Health Alliance and Carequality. Both networks enable participating providers to locate and retrieve patient records from other members, regardless of which EHR vendor they use. CommonWell leverages IHE standards — including PIX for patient identity matching, XCA for cross-community document retrieval, and XDS.b for document registration — as well as modern FHIR-based interfaces such as the IHE MHD profile. Carequality overlays governance and legal reciprocity on top of the same technical substrate, enabling providers on CommonWell to exchange with providers on other frameworks such as Epic's CareEverywhere and eHealth Exchange."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The FHIR RESTful model has transformed query-based exchange by making individual clinical data elements — not just documents — retrievable on demand. A FHIR R4 server exposes standardized endpoints such as GET /Patient, GET /Condition, GET /MedicationRequest, and GET /Observation. A requesting system authenticates via SMART on FHIR, presents a patient identifier, and the server returns a JSON bundle containing only the data elements requested. This granularity is a significant upgrade from CDA-based document exchange, where a 200-page continuity of care document might be returned when all a clinician needed was the current medication list."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "CommonWell has been investing in transitioning its network toward discrete FHIR resource exchange. Its Record Locator Service (RLS) enables a querying system to discover where a given patient's records reside across member organizations, then retrieve specific FHIR resources such as labs, medications, and allergies — in addition to traditional documents. This combination of a centralized patient identity index and distributed FHIR data retrieval is the emerging architecture for national-scale query-based exchange."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "The querying system submits patient demographics to a Master Patient Index or Record Locator Service to find matching identifiers at other organizations. CommonWell uses IHE PIX; TEFCA-aligned networks use the TEFCA Common Agreement patient matching requirements.",
+          "title": "Patient Identity Resolution"
+        },
+        {
+          "_key": "step2",
+          "description": "The network returns the FHIR endpoint URLs of organizations that hold records for the identified patient. The querying system now knows where to look.",
+          "title": "Endpoint Discovery"
+        },
+        {
+          "_key": "step3",
+          "description": "The querying system authenticates to each remote server, typically via SMART on FHIR OAuth 2.0, presenting patient context and purpose-of-use.",
+          "title": "Authorization"
+        },
+        {
+          "_key": "step4",
+          "description": "The querying system sends one or more RESTful GET requests — for example, GET /Condition?patient=<id>&category=problem-list-item — to retrieve targeted clinical data. The server responds with a FHIR Bundle.",
+          "title": "FHIR GET Request"
+        },
+        {
+          "_key": "step5",
+          "description": "The returned resources are surfaced in the clinician's EHR, reconciled with the local record, and incorporated into the care plan.",
+          "title": "Clinical Review"
+        }
+      ],
+      "title": "How a FHIR Query-Based Exchange Works"
+    },
+    {
+      "_key": "s2hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "TEFCA, which became fully operational in 2024 with eight designated Qualified Health Information Networks (QHINs), is built primarily around query-based document exchange. FHIR-based QHIN-to-QHIN exchange was piloted in 2025, representing the next phase of network evolution from document retrieval toward discrete resource query."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Event-Based Exchange: HL7 v2 ADT, FHIR Subscriptions, and Direct"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Event-based exchange has been part of health IT since the earliest days of HL7. HL7 version 2 (v2), first published in 1987 and still running on the majority of hospital interfaces worldwide, is fundamentally an event-driven messaging standard. When something happens in a clinical system — a patient is registered, transferred, or discharged — the system generates a v2 message and pushes it to every downstream system that needs to know. The most common v2 message type for this purpose is the ADT (Admit, Discharge, Transfer) message. ADT A01 signals an admission; ADT A02 signals an intra-facility transfer; ADT A03 signals a discharge. These three message types, along with ADT A04 (registration) and ADT A08 (patient information update), handle the vast majority of care transition notifications in U.S. hospitals today."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CMS Interoperability and Patient Access Final Rule (85 FR 25510), finalized in May 2020 and effective April 30, 2021, codified event-based exchange as a federal Condition of Participation. Under 42 CFR 482.24(d), Medicare and Medicaid participating hospitals, psychiatric hospitals, and critical access hospitals (CAHs) that use an EHR must send electronic patient event notifications upon admission, discharge, and transfer to the patient's established primary care practitioner, the patient's established care team, and post-acute care providers with whom the patient has an established relationship. The rule permits hospitals to transmit notifications using HL7 v2 ADT messages, C-CDA summary care records, or FHIR-based APIs, giving flexibility while mandating the workflow."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS required hospitals to send ADT event notifications by April 30, 2021. This mandate made event-based exchange a federal compliance requirement for every Medicare- and Medicaid-participating inpatient facility in the country — not just a best practice."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "On the modern FHIR side, the R4 Subscription resource introduced a mechanism for clients to register interest in data changes on a FHIR server. However, the original R4 Subscription model — based on criteria strings evaluated against the server's data set — proved difficult to implement consistently across vendors. The FHIR community responded with a significant redesign in R5, introducing SubscriptionTopic resources that define specific event types (such as \"patient admitted\" or \"lab result critical\") as canonical, versioned artifacts. Because FHIR R4 remains the dominant version in production systems, HL7 published the Subscriptions R5 Backport Implementation Guide (version 1.2.0-ballot) to extend topic-based subscription semantics to R4 and R4B servers through extensions and profiles, without requiring a full upgrade."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "The HL7 Da Vinci Project's Unsolicited Notifications Implementation Guide (version 1.1.0, published April 2025) builds directly on the R5 backport to define a standardized FHIR messaging framework for Admit, Discharge, and Transfer notifications. The Da Vinci Alerts IG specifies FHIR MessageBundle structures for each event type, defines required profiles such as the ADT Notification Condition and ADT Notification Coverage, and describes the roles of Sender, Intermediary (such as an HIE), and Recipient. An intermediary can receive a notification from a hospital and forward it to multiple downstream recipients — PCPs, care managers, post-acute facilities — using a single standardized pipeline."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "A 72-year-old Medicare patient with congestive heart failure presents to an emergency department not affiliated with her primary care practice. The hospital's EHR fires an HL7 v2 ADT A04 (registration) message to its HIE interface engine within seconds of registration. The HIE translates the message to a FHIR MessageBundle conformant with the Da Vinci Alerts IG and routes it to the patient's PCP practice via the practice's care management platform. The care manager sees the alert within three minutes of the patient's arrival, reaches out to the ER care team to share the patient's active medication list and recent echocardiogram, and schedules a transitional care management visit before the patient is discharged. The PCP practice bills a TCM code 99496 — a reimbursable workflow that would not have been triggered without the real-time notification.",
+      "title": "ADT Notification Workflow: A Patient's Unplanned ER Visit"
+    },
+    {
+      "_key": "s3sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Practices integrating ADT notifications into workflows saw TCM visits rise by 33–37% over three years, per Sciometrix data from 2020–2022",
+          "label": "Increase in transitional care management visits",
+          "value": "33–37%"
+        },
+        {
+          "_key": "s2",
+          "context": "Practices using Manifest MedEx ADT alerts achieved 21–29% fewer emergency department readmissions per 1,000 patients",
+          "label": "Reduction in ED readmissions",
+          "value": "21–29%"
+        },
+        {
+          "_key": "s3",
+          "context": "Average cost avoidance per prevented readmission, making ADT-driven follow-up one of the highest-ROI interoperability investments available",
+          "label": "Savings per avoided hospital readmission",
+          "value": "~$15,000"
+        },
+        {
+          "_key": "s4",
+          "context": "Studies show that prompt post-discharge follow-up enabled by timely notifications can cut readmission rates by up to 50%",
+          "label": "Potential readmission reduction",
+          "value": "50%"
+        }
+      ]
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Direct Messaging: Secure Push for Care Coordination"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Direct Secure Messaging — often called simply \"Direct\" — is a push-based interoperability standard built on S/MIME-encrypted email over SMTP, governed by the DirectTrust network of accredited Health Information Service Providers (HISPs). Every certified EHR in the United States must support Direct as a condition of ONC certification. Unlike HL7 ADT, which sends structured event messages to known endpoints registered in an interface engine, Direct allows any credentialed provider to push a C-CDA summary document to any other credentialed provider using a Direct address that looks like a standard email address (provider@hospital.directaddress.net)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Direct is most commonly used for care transition summaries — the transition of care (ToC) and referral documents sent when a patient moves from a hospital to a skilled nursing facility, from a specialist back to a primary care physician, or from one care setting to another. The meaningful use program explicitly required that a C-CDA ToC summary be sent via Direct to the next provider of care upon discharge, making Direct the first federally-mandated push-based exchange mechanism in U.S. healthcare."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Direct has real limitations: it carries documents, not discrete data elements; it has no built-in acknowledgment or delivery confirmation standard; and its query-based counterpart (XCDR, or Direct Query) never achieved wide adoption. Nevertheless, Direct remains widely deployed and relevant, particularly for referral workflows, transition of care summaries, and secure communication between clinicians at different organizations. In many markets, a single patient discharge triggers both a Direct C-CDA push to the receiving facility's Direct address and an HL7 ADT push to the PCP's care management platform — both event-based mechanisms, but serving different receivers and different purposes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "Direct Messaging is frequently confused with FHIR-based exchange. Direct is an encrypted email protocol that carries C-CDA XML documents. FHIR is a RESTful API standard for structured data resources. They address different problems: Direct delivers a complete clinical summary to a known recipient; FHIR APIs expose queryable, structured data to authorized applications. Modern interoperability strategies often deploy both.",
+      "title": "Common Misconception: Direct Is Not FHIR"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Choosing the Right Pattern: A Decision Framework"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Selecting between query-based and event-based exchange is not an either/or decision — most mature interoperability architectures deploy both. The choice of which pattern to use for a given workflow depends on four key variables: the urgency of the information, whether a care event has already occurred, whether the receiver knows to look for data, and the technical capabilities of both the sending and receiving systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "When urgency is high and a care transition has just occurred — an admission, a discharge, a transfer, a critical lab result — event-based push is almost always the right answer. Waiting for a clinician to manually query for a record that may not yet be associated with the patient in a network index introduces exactly the delay that causes preventable readmissions and medication errors. The receiver needs to know something happened before they know to ask."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "When the receiver is initiating a scheduled care encounter and wants to assemble the most complete picture of a patient's history before the visit — annual wellness, specialist consultation, post-acute admission assessment — query-based exchange is more appropriate. The clinician can pull records from multiple institutions, reconcile them against the local record, and use the consolidated view to inform care planning. FHIR RESTful queries through networks like CommonWell/Carequality or TEFCA are well-suited to this use case."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "A growing class of workflows benefits from combining both patterns. Payers and care management organizations, for example, may subscribe to ADT event notifications to learn when a member is admitted to any facility in the network. Upon receiving that event, they automatically trigger a FHIR query against the admitting hospital to retrieve the patient's current problem list, active medications, and recent labs — enabling a care manager to contact the patient within hours of admission with a complete clinical picture. This event-triggered query pattern is increasingly common in value-based care programs and is explicitly supported by the Da Vinci Project's broader suite of implementation guides."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Reach for Event-Based (Push) When…",
+        "points": [
+          "A care transition just occurred (admit, discharge, transfer)",
+          "Time to notification is measured in minutes, not hours",
+          "The receiver doesn't know to look for the data",
+          "You need to trigger a downstream workflow automatically",
+          "Regulatory compliance (CMS ADT CoP) is required",
+          "Monitoring a patient population for status changes"
+        ]
+      },
+      "right": {
+        "label": "Reach for Query-Based (Pull) When…",
+        "points": [
+          "A scheduled care encounter is upcoming",
+          "The clinician needs a complete longitudinal record",
+          "Latency of seconds to minutes is acceptable",
+          "The receiver knows the patient may have records elsewhere",
+          "Pre-visit chart prep or care plan reconciliation",
+          "A specific data element (e.g., last A1C) is needed on demand"
+        ]
+      },
+      "title": "When to Use Each Pattern"
+    },
+    {
+      "_key": "s5h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "TEFCA and the Evolving Landscape"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s5p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p5s",
+          "_type": "span",
+          "marks": [],
+          "text": "TEFCA's Common Agreement governs both query-based document exchange and message-based (push) exchange across QHINs. The initial TEFCA launch in 2024 focused on query-based document retrieval — enabling providers to locate and retrieve C-CDA documents across all participating QHINs through a single governance framework. FHIR-based QHIN-to-QHIN exchange, enabling discrete resource queries at national scale, was piloted in 2025 as Stage 3 of the TEFCA implementation roadmap. As TEFCA matures, both query and event-based exchange are expected to be available as first-class exchange modalities within the national network."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5ex1",
+      "_type": "exampleBlock",
+      "content": "An accountable care organization (ACO) managing 15,000 Medicare beneficiaries subscribes to ADT feeds from every hospital within a 50-mile radius. When an attributed patient is admitted, the ACO's care management platform receives an ADT A01 notification within minutes. The platform automatically fires a series of FHIR GET requests — Condition, MedicationRequest, AllergyIntolerance, Observation (recent labs) — against the hospital's FHIR R4 endpoint. The care manager reviewing the case sees a consolidated view of the admission diagnosis, current medications, and active conditions in a single screen, without any manual chart pulling. The ACO's analytics layer simultaneously flags whether the admission was potentially avoidable, feeding quality improvement workflows.",
+      "title": "Event-Triggered Query in Value-Based Care"
+    },
+    {
+      "_key": "s6h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Implementation Considerations and Common Pitfalls"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s6p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Organizations implementing event-based exchange must solve three technical problems that do not arise in query-based workflows: endpoint management, duplicate notification handling, and patient matching at speed. In a query model, the querying system controls the request and has time to resolve patient identity before retrieving data. In an event-based model, notifications arrive asynchronously and may reference patients using identifiers unfamiliar to the receiving system. A robust ADT notification receiver must be able to match incoming notifications to local patients in near-real time, handle duplicate ADTs for the same event (common in production environments), and route notifications to the correct care team member without manual intervention."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "On the sending side, hospitals deploying ADT notifications under the CMS Conditions of Participation must maintain accurate, current lists of the patients' established care providers and their electronic endpoints. A notification sent to an outdated Direct address or decommissioned HL7 endpoint meets the letter of the rule but fails to achieve its clinical purpose. Several intermediary vendors — including Rhapsody, Nuvolo, and CarePort Health (now Altera) — provide ADT notification routing services that maintain endpoint directories and handle delivery confirmation on behalf of hospitals."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "FHIR Subscription implementations face their own challenges. The original R4 Subscription model required servers to evaluate arbitrary criteria strings — essentially running live queries — for every data change across the entire resource set, creating significant performance burdens. The topic-based model in R5 and the backport IG shifts this burden from runtime query evaluation to compile-time topic definition: a SubscriptionTopic is a canonical resource that defines exactly which events trigger notifications, reducing server overhead and enabling vendors to optimize notification pipelines. Implementers adopting the Da Vinci Alerts IG should verify that their FHIR server vendor supports the R5 backport SubscriptionTopic extensions before committing to this pattern."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6w1",
+      "_type": "warningBlock",
+      "message": "Event-based exchange, if poorly scoped, can overwhelm care teams with notifications. ADT alerts for every patient encounter — regardless of attribution, care relationship, or clinical urgency — rapidly become noise that clinicians learn to ignore. Effective implementations filter notifications by panel membership, risk score, or care program enrollment, and route alerts to the appropriate team member rather than broadcasting to everyone.",
+      "title": "Alert Fatigue Is a Real Risk"
+    },
+    {
+      "_key": "s7tkwy",
+      "_type": "takeawayBlock",
+      "points": [
+        "Query-based exchange (pull) is initiated by the receiver and best suited for planned encounters, pre-visit chart prep, and longitudinal record assembly; FHIR RESTful APIs and networks like CommonWell/Carequality are the primary mechanisms.",
+        "Event-based exchange (push) is initiated by the sender when a clinical event occurs and is essential for care transitions, real-time alerts, and population health monitoring — the receiver does not need to know to ask.",
+        "HL7 v2 ADT messages remain the dominant event-based mechanism in U.S. hospitals; ADT A01, A02, A03, and A04 cover the vast majority of care transition notifications.",
+        "The CMS Interoperability Final Rule (effective April 30, 2021) mandated that Medicare/Medicaid hospitals send electronic ADT notifications to PCPs and post-acute providers upon admission, discharge, and transfer.",
+        "FHIR Subscriptions, and specifically the Da Vinci Unsolicited Notifications IG (v1.1.0), provide a modern, standardized FHIR messaging framework for ADT-type events that integrates with the R5 Subscriptions Backport IG.",
+        "Direct Secure Messaging is a widely deployed push mechanism for care transition summary documents (C-CDA) but carries documents — not discrete FHIR resources — and is complementary to, not a replacement for, ADT notifications.",
+        "Event-triggered query — subscribing to ADT events and then automatically firing FHIR GET requests for discrete data — is the emerging pattern for value-based care and ACO care management workflows.",
+        "Alert fatigue is a real implementation risk; effective event-based exchange requires filtering by panel membership, risk stratification, and intelligent routing to prevent notification overload."
+      ]
+    },
+    {
+      "_key": "s8quiz1",
+      "_type": "knowledgeCheck",
+      "explanation": "Event-based ADT notification is the correct answer because the practice needs to be informed of the admission event in real time — without having to proactively query or wait until discharge. Query-based exchange requires the practice to know when and where to ask; Direct messaging occurs at discharge, too late for proactive transitional care management outreach. The ADT push model is exactly what the CMS ADT Conditions of Participation was designed to mandate and support.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Query-based FHIR exchange, where the practice queries hospital FHIR servers each morning for new admissions from the prior 24 hours."
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Event-based ADT notification, where the hospital pushes an admission notification to the practice's care management platform in real time upon patient registration."
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Direct Secure Messaging, where the hospital sends a C-CDA care summary document to the practice's Direct address at the time of discharge."
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "TEFCA query-based document exchange, where the practice retrieves continuity of care documents from all regional hospitals weekly."
+        }
+      ],
+      "question": "A primary care practice wants to be notified within minutes whenever one of their attributed patients is admitted to any hospital in the region, so they can proactively reach out and schedule a transitional care management visit. Which interoperability pattern is best suited for this workflow?"
+    },
+    {
+      "_key": "s9src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s9srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s9s1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s9s1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS. \"Admission, Discharge, and Transfer Patient Event Notification Conditions of Participation (CoP).\" 42 CFR 482.24(d), 482.61(f), and 485.638(d). https://www.cms.gov/priorities/burden-reduction/overview/interoperability/frequently-asked-questions/admission-discharge-transfer-patient-event-notification-conditions-participation-cop-42-cfr-482-24d"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s9s2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s9s2s",
+          "_type": "span",
+          "marks": [],
+          "text": "HL7 Da Vinci Project. \"Da Vinci Unsolicited Notifications Implementation Guide, v1.1.0.\" April 2025. https://build.fhir.org/ig/HL7/davinci-alerts/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s9s3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s9s3s",
+          "_type": "span",
+          "marks": [],
+          "text": "HL7 FHIR. \"Subscriptions R5 Backport Implementation Guide, v1.2.0-ballot.\" https://build.fhir.org/ig/HL7/fhir-subscription-backport-ig/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s9s4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s9s4s",
+          "_type": "span",
+          "marks": [],
+          "text": "CommonWell Health Alliance. \"CommonWell Hosts Virtual Connectathon to Build Next Generation of FHIR.\" https://www.commonwellalliance.org/news-center/commonwell-news/commonwell-hosts-virtual-connectathon-to-build-next-generation-of-fhir/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s9s5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s9s5s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sciometrix. \"How Real-Time ADT Alerts Can Reduce Readmission Rates — Especially in Chronic + Post-Acute Care.\" https://www.sciometrix.com/blogs-clinicus/how-real-time-adt-alerts-can-reduce-readmission-rates-especially-in-chronic-post-acute-care"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s9s6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s9s6s",
+          "_type": "span",
+          "marks": [],
+          "text": "athenahealth. \"FHIR Event Notifications Power Real-Time Care.\" https://www.athenahealth.com/resources/blog/fhir-subscriptions-event-driven-apis"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s9s7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s9s7s",
+          "_type": "span",
+          "marks": [],
+          "text": "Health IT.gov / TEFCA. \"TEFCA Priorities and Plans for the Remainder of 2025.\" https://www.healthit.gov/buzz-blog/health-information-exchange-2/tefca-priorities-and-plans-for-the-remainder-of-2025"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s9s8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s9s8s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medplum. \"Technical Guide to TEFCA.\" https://www.medplum.com/blog/technical-guide-to-tefca"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s9s9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s9s9s",
+          "_type": "span",
+          "marks": [],
+          "text": "Rhapsody Health. \"How to Comply with the CMS ADT e-Notification Condition of Participation.\" https://rhapsody.health/blog/how-to-comply-with-the-cms-adt-e-notification-condition-of-participation-and-answers-to-other-faqs/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s9s10",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s9s10s",
+          "_type": "span",
+          "marks": [],
+          "text": "Pearl Health. \"ADT Alerts: Preventing Hospital Readmissions & Improving Patient Outcomes.\" https://pearlhealth.com/blog/our-technology/adt-alerts-preventing-hospital-readmissions-improving-patient-outcomes/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "healthcare-interoperability",
+  "order": 22,
+  "slug": {
+    "_type": "slug",
+    "current": "interop-query-vs-event"
+  },
+  "title": "Query vs. Event-Based Exchange: Choosing the Right Interoperability Pattern"
+}

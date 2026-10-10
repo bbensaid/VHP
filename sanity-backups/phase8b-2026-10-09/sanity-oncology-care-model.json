@@ -1,0 +1,608 @@
+{
+  "_createdAt": "2026-05-31T03:21:46Z",
+  "_id": "oncology-care-model",
+  "_rev": "glqH7a4yvZFQerxZdJwLDH",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T06:38:07Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Cancer Care Needed Its Own Value-Based Model"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Cancer care sits at the intersection of several cost crises in American healthcare. Chemotherapy drug prices have risen dramatically — targeted therapies can cost $100,000 or more per patient per year — and utilization is intensive, with patients receiving not just drugs but frequent lab work, imaging, supportive care, and hospitalizations for complications. Yet the fee-for-service system that governed oncology for decades provided no mechanism to reward coordination, reduce emergency visits, or guide patients toward evidence-based regimens. Oncologists were paid for administering drugs (via the buy-and-bill system), not for managing the comprehensive trajectory of a patient's cancer care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The fragmentation problem in oncology is acute. A Medicare beneficiary receiving chemotherapy may interact with a medical oncologist, a radiation oncologist, a surgeon, a hospitalist, a palliative care team, social workers, and home health aides — often in separate organizations with no shared data, no common care plan, and no financial incentive to reduce unnecessary emergency department visits or duplicative imaging. When a patient calls at 2 a.m. with fever and chills during neutropenia, the default in a fragmented system is to send them to the ER, where the cost of a workup can exceed $5,000, even when a phone triage protocol with a nurse practitioner might safely manage the situation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS recognized this problem and launched the Oncology Care Model (OCM) in 2016 as the first cancer-focused alternative payment model in the federal portfolio. OCM ran through June 30, 2022, involving 122 oncology practices and five commercial payer partners. It was succeeded by the Enhancing Oncology Model (EOM), which launched July 1, 2023, with a refined episode structure and narrower scope focused on seven high-cost cancer types. Both models used a common architecture: a six-month chemotherapy episode triggered by the start of systemic treatment, a monthly enhanced payment to fund care coordination, and a performance-based payment tied to end-of-episode cost and quality."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Oncology Care Model was the first alternative payment model specifically designed for cancer care. It ran from 2016 to 2022, covering chemotherapy episodes for any cancer type treated at participating practices, and served as the proof-of-concept for the successor Enhancing Oncology Model launched in 2023."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Number of oncology practices in OCM at model conclusion June 2022 — CMS OCM Final Evaluation 2024",
+          "label": "OCM Participating Practices",
+          "value": "122"
+        },
+        {
+          "_key": "s2",
+          "context": "Monthly Enhanced Oncology Services payment per beneficiary per month during active chemotherapy episode — CMS OCM Overview",
+          "label": "MEOS Monthly Payment",
+          "value": "$160/mo"
+        },
+        {
+          "_key": "s3",
+          "context": "OCM and EOM episodes last 6 months from start of chemotherapy — CMS OCM Design Documents",
+          "label": "Episode Length",
+          "value": "6 months"
+        },
+        {
+          "_key": "s4",
+          "context": "Enhancing Oncology Model focuses on 7 specific cancer types: breast, lung, CLL, colorectal, lymphoma, myeloma, prostate — CMS EOM 2023",
+          "label": "EOM Cancer Types",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The OCM Episode: Structure and Payment Architecture"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "An OCM episode is triggered when a Medicare beneficiary begins a course of systemic chemotherapy at a participating practice. The episode lasts six months from the date of the first chemotherapy claim. Unlike a surgical bundle anchored to a single procedure, a six-month oncology episode encompasses a dynamic, evolving clinical situation: cycles of chemotherapy, supportive care, scans to assess treatment response, management of side effects, and potentially a treatment switch if the first regimen fails. The breadth of included services reflects both the comprehensiveness of cancer care and the challenge of attributing costs to any single responsible clinician."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The OCM payment structure had two components. First, the monthly enhanced oncology services (MEOS) payment: $160 per beneficiary per month for each month of the six-month episode, regardless of outcomes. The MEOS was explicitly designed as an upfront investment — an infrastructure subsidy to pay for the care coordination staff, extended hours access, and data reporting requirements that CMS required all participating practices to implement. Over a full six-month episode, a single patient generated $960 in MEOS payments to the practice."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The second component was performance-based payments (PBPs): additional payments made retrospectively if a practice's actual episode spending fell below a risk-adjusted benchmark price and the practice met quality thresholds. PBPs were available only to practices that achieved both cost and quality targets, ensuring that cost reductions did not come at the expense of care quality. Practices that generated excess costs above the benchmark owed a repayment in the model's two-sided risk phase — a key distinction from programs that offer upside-only participation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Medicare beneficiary starts chemotherapy at a participating oncology practice. A new six-month episode clock begins.",
+          "title": "Episode Opens"
+        },
+        {
+          "_key": "step2",
+          "description": "CMS pays the practice $160 per beneficiary per month for each of the six months — regardless of spending or outcomes. Total: up to $960 per episode.",
+          "title": "MEOS Payments"
+        },
+        {
+          "_key": "step3",
+          "description": "Practice must provide 24/7 patient access, care coordination, evidence-based treatment planning, electronic care plans, and patient navigation as conditions of MEOS receipt.",
+          "title": "Enhanced Services Delivered"
+        },
+        {
+          "_key": "step4",
+          "description": "At the end of six months, the episode closes. CMS tallies all Medicare claims for the patient during the episode.",
+          "title": "Episode Closes"
+        },
+        {
+          "_key": "step5",
+          "description": "CMS compares actual episode spending to the risk-adjusted benchmark. If below benchmark and quality thresholds met, practice receives a performance-based payment. If above, repayment may be owed (in two-sided risk phase).",
+          "title": "Reconciliation"
+        }
+      ],
+      "title": "OCM Episode Payment Flow"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What OCM Required Practices to Do"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Participation in OCM was not simply a financial arrangement — it required oncology practices to undergo substantive operational transformation. CMS specified six care delivery functions that all participating practices had to implement: (1) 24/7 patient access to an oncologist or advanced practice clinician with access to the patient's medical record; (2) care coordination, including a designated care team for each patient; (3) patient navigation — assigning a navigator to help patients understand their diagnoses, manage treatment side effects, and navigate the healthcare system; (4) evidence-based treatment — documenting adherence to clinical guidelines from ASCO, NCCN, or comparable bodies; (5) comprehensive care plans developed within three months of treatment initiation; and (6) electronic quality reporting to CMS."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 24/7 access requirement was among the most impactful changes. Oncology practices accustomed to referring after-hours patients to the emergency department had to establish structured telephone triage protocols staffed by oncology-trained nurses. The data on after-hours triage are compelling: patients who can reach an oncology nurse at night are far less likely to end up in the emergency department for manageable symptoms — fever, nausea, pain — that do not require hospital-level intervention. The MEOS payment was intended to cover the staffing cost of this function."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Patient navigation deserves special attention as a care delivery innovation. An oncology navigator — typically a nurse or social worker — acts as the patient's guide and advocate throughout the treatment course. Navigators schedule and track appointments, coordinate transportation, connect patients with financial assistance programs, manage prescription adherence, and serve as the first point of contact when something goes wrong. Research consistently shows that navigation programs reduce treatment delays, improve adherence, and decrease emergency utilization, particularly for patients from low-income or underserved communities who face the greatest structural barriers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "UNC Lineberger's OCM participation centered on expanding its nurse navigation program as the care coordination backbone for the model. Navigators worked with patients on treatment adherence, side-effect management, and after-hours triage, using structured telephone protocols to avoid unnecessary ER visits.\nThe program demonstrated reductions in unplanned hospitalizations and ED visits among navigated patients, consistent with the national OCM evidence on practices that invested heavily in navigation infrastructure. The experience reinforced the lesson that OCM's care quality requirements were not just compliance checkboxes — they were the actual mechanisms of cost and quality improvement.",
+      "title": "University of North Carolina Lineberger Comprehensive Cancer Center — OCM Navigation"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What the OCM Evaluation Found: Savings, Losses, and Quality"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The final OCM evaluation, covering all nine performance periods through the model's June 2022 conclusion, revealed a complex picture of modest relative savings overwhelmed by MEOS payments. The evaluation found a $499 relative reduction per episode in OCM vs. comparison episodes — meaning practices that participated in OCM spent about $499 less per episode than comparable non-participating practices, after risk adjustment. This looks like success on its face, but the evaluation found that the average MEOS payments received by participating practices totaled approximately $720 per episode."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "When MEOS payments and performance-based payments were included in the net calculation, the OCM program resulted in an estimated net loss to Medicare of $639 million over its six years of operation. The program reduced FFS claims but paid out more in MEOS and PBP payments than it recovered in savings. This is the core tension in oncology value-based care: the coordination infrastructure needed to improve care is expensive, and the savings it generates — mostly from avoided emergency visits and hospitalizations — may not be large enough to offset the infrastructure investment at scale."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Quality results were mixed. The evaluation found no significant changes, either positive or negative, in hospitalizations, emergency department visits, or measured quality outcomes for the overall OCM patient population. However, one positive finding emerged in equity: adherence to high-cost drugs improved for patients who were Black, Hispanic, or low-income — populations that historically received less aggressive or guideline-concordant treatment. This represents a meaningful equity improvement and aligns with one of the model's explicit goals of reducing treatment disparities."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Gross Episode Savings",
+        "points": [
+          "$499 relative reduction per episode vs. comparison group",
+          "Driven by reduced hospitalizations and ER visits",
+          "Consistent with the coordination infrastructure investments",
+          "Statistically significant relative savings in several episode types"
+        ]
+      },
+      "right": {
+        "label": "Net Medicare Impact",
+        "points": [
+          "Average MEOS payments: ~$720 per episode",
+          "Net loss to Medicare: ~$639 million over 6 years",
+          "Gross savings did not offset MEOS + performance-based payments",
+          "EOM redesigned to narrower, higher-savings-potential cancer types"
+        ]
+      },
+      "title": "OCM Financial Results: What Was Saved vs. What Was Paid"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Enhancing Oncology Model: Lessons Applied"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS launched the Enhancing Oncology Model (EOM) on July 1, 2023, incorporating lessons from the OCM evaluation. The most consequential design change was the shift from a universal chemotherapy trigger to a narrow focus on seven high-cost, high-volume cancer types: high-risk breast cancer, lung cancer, chronic leukemia (CLL), small intestine/colorectal cancer, lymphoma, multiple myeloma, and high-risk prostate cancer. These conditions were selected because OCM data showed they had the highest episode costs, the highest variation in spending, and therefore the greatest potential for achievable savings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "EOM retained the six-month episode structure and the monthly care management payment (now called the monthly care management payment or MCMP, paid at $70 per beneficiary per month — reduced from OCM's $160 to improve net savings potential). EOM also requires practices to take on two-sided financial risk from the start of the model — unlike OCM, which phased practices into downside risk gradually. This faster risk exposure is intended to sharpen the financial incentives for cost management and distinguish practices willing to commit to the model from those testing the waters for upside-only payments."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "EOM also strengthened the health equity requirements built into the model. Participating practices must collect and report patient-level race, ethnicity, and social determinants of health data; develop a health equity plan; and demonstrate measurable efforts to reduce disparities in treatment and outcomes. This reflects a deliberate evolution from OCM, where equity was a secondary goal, to EOM, where it is a first-order accountability measure. A second cohort of EOM participants launched July 1, 2025, indicating continued CMS commitment to the oncology VBC program."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "Running an OCM practice is like running a restaurant that charges a fixed price for a full meal, no matter what courses the diner orders. The $160 MEOS payment per month is the fixed cover charge — it pays for the kitchen staff and service setup. The performance-based payment is like a tip only given if the diner leaves satisfied and the total cost to the house stays under budget. If the kitchen spends more on ingredients than the cover charge brings in, the restaurant loses money — which is exactly what happened to Medicare net of MEOS payments in the OCM.",
+      "concept": "Oncology Care Model Payment Architecture"
+    },
+    {
+      "_key": "s6h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Implications for the Future of Specialty Value-Based Care"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s6p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The OCM and EOM experience holds lessons that extend well beyond oncology. They demonstrate that applying VBC principles to specialty care is structurally harder than applying them to surgical episodes, because the episode cost structure is more complex, the patient population is more fragile, and the care coordination demands are higher. The oncology experience has also highlighted the fundamental tension in alternative payment model design: the coordination infrastructure needed to improve care requires upfront investment, and those investments must generate sufficient downstream savings to justify their cost to the payer."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The models have also demonstrated the importance of data infrastructure. Oncology practices that succeeded in OCM were those that invested in real-time dashboard tools to track their episode spending, identify high-cost patients early in the episode, and monitor care plan adherence. Practices that tried to manage OCM performance using quarterly claims reports — too delayed to guide clinical interventions — consistently underperformed those with live analytics tools. The lesson generalizes: VBC success is a data analytics challenge as much as a clinical care challenge."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Finally, the oncology VBC experience raises profound questions about the appropriate boundary of value-based accountability in end-of-life care. Patients with metastatic disease receiving chemotherapy near the end of life generate very high episode costs, and those costs are largely driven by clinical and patient preferences about aggressive versus palliative treatment rather than by efficiency failures. Any model that holds practices financially accountable for total episode cost must grapple with the risk that financial incentives inadvertently discourage appropriate aggressive treatment for patients who want it, or conversely, encourage premature transitions to hospice for financial reasons. This ethical dimension requires ongoing vigilance in model design and evaluation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6w1",
+      "_type": "warningBlock",
+      "message": "The OCM's estimated $639 million net loss to Medicare reflects a payment design issue — the $160 MEOS was set too high relative to achievable savings — not a failure of the care coordination concept. The equity improvements and coordination infrastructure built by participating practices have lasting value beyond the financial reconciliation. EOM's reduced monthly payment and narrower episode focus are direct responses to this design lesson.",
+      "title": "Net Loss Does Not Mean the Model Failed"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "The Oncology Care Model (2016–2022) was the first federal alternative payment model for cancer care, using six-month chemotherapy episodes triggered by the start of systemic treatment.",
+        "OCM paid practices $160 per beneficiary per month (MEOS) to fund care coordination infrastructure, including 24/7 patient access, patient navigation, and evidence-based treatment planning.",
+        "The OCM evaluation found a $499 relative savings per episode, but average MEOS payments of $720 per episode resulted in an estimated net loss of $639 million to Medicare over six years.",
+        "Quality outcomes were largely unchanged at the population level, but a meaningful equity improvement was observed: drug adherence improved for Black, Hispanic, and low-income patients.",
+        "The Enhancing Oncology Model (EOM), launched July 1, 2023, applies lessons from OCM with a narrower focus on 7 high-cost cancer types, a reduced monthly payment ($70/beneficiary/month), and mandatory two-sided risk from the start.",
+        "EOM added formal health equity requirements: practices must collect race/ethnicity and social determinants data, develop an equity plan, and demonstrate measurable disparity-reduction efforts.",
+        "The oncology VBC experience illustrates a universal lesson: coordination infrastructure investments must generate sufficient downstream savings to be net-positive for payers — a design challenge all specialty APMs must solve."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The OCM evaluation found a $499 relative reduction in episode spending per episode compared to non-participants. However, the MEOS payment averaged approximately $720 per episode — exceeding the savings generated. When MEOS and performance-based payments were included in the net calculation, Medicare lost an estimated $639 million over the model's six years. This design flaw — upfront payments set too high relative to achievable savings — directly informed EOM's reduced monthly payment of $70 per beneficiary per month.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Participating practices delivered lower-quality care, triggering quality penalty payments"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The monthly enhanced oncology services (MEOS) payments to practices exceeded the gross episode savings achieved"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The model was limited to too few cancer types to generate sufficient savings volume"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "CMS set the benchmark target prices too high, causing reconciliation overpayments"
+        }
+      ],
+      "question": "What was the primary reason the OCM resulted in a net loss to Medicare despite achieving relative episode savings?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] CMS: Oncology Care Model — https://www.cms.gov/priorities/innovation/innovation-models/oncology-care — Model overview, episode structure, MEOS payment, and participation statistics"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] CMS OCM Final Evaluation Report At-A-Glance (2024) — https://www.cms.gov/priorities/innovation/data-and-reports/2024/ocm-final-eval-report-2024-aag — Net loss of $639M, $499 per-episode relative savings, quality findings"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CMS OCM Evaluation PP1–9 Executive Summary (2023) — https://www.cms.gov/priorities/innovation/data-and-reports/2023/ocm-evaluation-pp1-9-exec-sum — Comprehensive evaluation findings including equity improvements"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] ASCO Post: Oncology Care Model Studies Find Significant Savings but Minor Quality Improvement (2023) — https://ascopost.com/issues/december-10-2023/oncology-care-model-studies-find-significant-savings-but-minor-quality-improvement/ — Independent analysis of OCM savings and quality results"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] CMS: Enhancing Oncology Model (EOM) — https://www.cms.gov/priorities/innovation/innovation-models/eom — EOM structure, 7 cancer types, July 2023 launch, second cohort July 2025"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] PMC: Design Challenges of an Episode-Based Payment Model in Oncology: The CMS Oncology Care Model — https://pmc.ncbi.nlm.nih.gov/articles/PMC5508445/ — MEOS $160 calculation, 24/7 access requirements, care coordination design rationale"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "value-based-care",
+  "order": 11,
+  "slug": {
+    "_type": "slug",
+    "current": "oncology-care-model"
+  },
+  "title": "The Oncology Care Model: VBC in Cancer Care"
+}

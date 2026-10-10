@@ -1,0 +1,582 @@
+{
+  "_createdAt": "2026-05-29T03:29:40Z",
+  "_id": "interop-smart-fhir",
+  "_rev": "rL4Cn5Sfo5Z8rzPmDwA6P3",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T04:54:39Z",
+  "body": [
+    {
+      "_key": "s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The Problem SMART Solves: Vendor Lock-In and the Closed EHR"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Before SMART on FHIR, integrating a third-party application with an EHR was an expensive, bespoke engineering project. Every major EHR vendor — Epic, Cerner, Allscripts — had its own proprietary API, its own authentication scheme, and its own data model. A clinical decision support tool built for Epic needed to be almost entirely rewritten to run in Cerner, and then rewritten again for Meditech. The result was that innovation happened slowly, mostly inside large vendors, while smaller companies with genuinely useful ideas could not afford the integration tax required to reach clinicians at scale."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The conceptual breakthrough came in 2010 when researchers at Harvard Medical School and Boston Children's Hospital launched a project called Substitutable Medical Applications and Reusable Technologies — SMART. Led by physician-informaticist Josh Mandel, the project's explicit goal was to create an \"app store for healthcare\": a standard platform layer so that a developer could write an application once and run it, unmodified, on any EHR that supported the standard. Early SMART used its own clinical data models (now called SMART Classic). In the second half of 2013, the team updated the platform to use the emerging HL7 FHIR standard for data exchange, giving birth to SMART on FHIR. The new platform debuted publicly at the HIMSS conference in February 2014, with prototype demonstrations from several commercial EHR vendors and app developers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The fundamental promise of SMART on FHIR is separation of concerns. The EHR remains responsible for storing and managing clinical data. The SMART framework provides a standardized mechanism for a third-party application to request access to that data, receive permission from the user, and launch inside the clinical workflow — all without the EHR vendor having to build the feature themselves. For the first time, the EHR could become an extensible platform rather than a monolithic silo."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Harvard Medical School & Boston Children's Hospital",
+          "label": "SMART Project Founded",
+          "value": "2010"
+        },
+        {
+          "_key": "s2",
+          "context": "Demonstrated at HIMSS with multiple commercial EHR vendors",
+          "label": "SMART on FHIR Debut",
+          "value": "2014"
+        },
+        {
+          "_key": "s3",
+          "context": "Epic App Orchard, Oracle Health Code Console, Cerner Code",
+          "label": "Major EHR Marketplaces",
+          "value": "3+"
+        },
+        {
+          "_key": "s4",
+          "context": "In active clinical use at institutions including Boston Children's and Duke Medicine",
+          "label": "Production SMART Apps",
+          "value": "Dozens"
+        }
+      ]
+    },
+    {
+      "_key": "s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "How SMART on FHIR Works: OAuth 2.0 Meets the Clinical Workflow"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "At its core, SMART on FHIR is a profile on top of two well-established internet standards: OAuth 2.0 for authorization and HL7 FHIR for clinical data. OAuth 2.0 is the same protocol that powers \"Sign in with Google\" and \"Connect with Facebook\" across the web — a battle-tested framework for letting a user grant a third-party application limited access to their data without sharing their password. SMART on FHIR adapts this framework specifically for the healthcare context, adding the concept of clinical launch context (which patient is currently on the screen?), healthcare-specific scopes, and EHR-embedded app launching."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2an",
+      "_type": "analogyBlock",
+      "analogy": "Imagine the EHR is a secured apartment building. OAuth 2.0 is the intercom system. When a SMART app wants in, it rings the intercom (authorization request). The resident — the clinician or patient — decides whether to buzz the app in (grant consent). The building then issues a temporary keycard (access token) that only opens the specific doors the resident approved. The app never learns the master key.",
+      "concept": "SMART on FHIR uses OAuth 2.0 to grant apps time-limited, scoped access to EHR data — never the master credentials."
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "SMART defines two primary launch patterns. In the EHR Launch flow, the EHR initiates the sequence: a clinician clicks an app icon inside the EHR interface, and the EHR passes a launch token and the FHIR server base URL to the app. The app uses these to request an authorization code, which it exchanges for an access token along with the current patient context (patient ID, encounter ID, practitioner ID). The app then uses the access token to call FHIR APIs and retrieve the data it needs — all without the clinician needing to log in again or manually identify the patient. In the Standalone Launch flow, the app starts independently (e.g., from a mobile phone or patient portal) and prompts the user to select a patient or log in directly. Both flows use the same underlying OAuth 2.0 authorization code exchange mechanism."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Clinician clicks the SMART app icon. The EHR redirects the browser to the app's launch URL, passing a launch parameter and the FHIR server base URL as query parameters.",
+          "title": "EHR Initiates Launch"
+        },
+        {
+          "_key": "step2",
+          "description": "The app fetches the FHIR server's .well-known/smart-configuration document to discover the authorization and token endpoints — eliminating hardcoded URLs.",
+          "title": "App Discovers Authorization Endpoint"
+        },
+        {
+          "_key": "step3",
+          "description": "The app redirects the user to the EHR's authorization server, requesting specific scopes (e.g., patient/*.read, launch/patient) and including a PKCE code challenge for security.",
+          "title": "Authorization Request"
+        },
+        {
+          "_key": "step4",
+          "description": "The EHR presents a consent screen. The clinician (or patient) approves the requested permissions. The authorization server redirects back to the app with a short-lived authorization code.",
+          "title": "User Grants Consent"
+        },
+        {
+          "_key": "step5",
+          "description": "The app sends the authorization code to the token endpoint and receives an access token, a refresh token, and the patient context (patient ID, encounter ID) in the response body.",
+          "title": "Token Exchange"
+        },
+        {
+          "_key": "step6",
+          "description": "The app uses the access token as a Bearer token in HTTP Authorization headers to call FHIR R4 endpoints — e.g., GET /Patient/{id}/MedicationRequest — and retrieves structured clinical data.",
+          "title": "FHIR API Calls"
+        }
+      ],
+      "title": "EHR Launch Authorization Flow"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "SMART scopes are the permission language of the framework. They follow the pattern context/ResourceType.action. The context is patient (data limited to the in-context patient), user (data the logged-in user can see), or system (machine-to-machine, no user in the loop). The ResourceType is any FHIR resource name such as Observation, MedicationRequest, or Condition. The action is read (r), search (s), or write (c, u, d). So patient/Observation.rs means \"read and search Observations for the current patient.\" Scopes give EHR administrators fine-grained control over what any given app is permitted to access, and users can review exactly what permissions they are granting before approving."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The SMART App Gallery and Real-World Clinical Use Cases"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "SMART Health IT maintains a publicly accessible App Gallery at apps.smarthealthit.org where developers can list applications built on the SMART standard. The gallery is organized by audience (clinicians, patients, researchers) and serves as a discovery mechanism for healthcare organizations evaluating third-party tools. Dozens of clinical applications are listed, spanning cardiovascular risk, pain management, oncology, mental health, and population analytics — demonstrating that the platform has moved well beyond proof-of-concept into active clinical use at institutions including Boston Children's Hospital and Duke Medicine."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Several production SMART apps illustrate the breadth of what the platform enables. The ASCVD Risk Calculator, embedded in EHRs at multiple institutions, pulls a patient's lab results, demographics, and medication list via FHIR and computes a 10-year cardiovascular risk score in real time — without the clinician copying any data. The Pain Management Summary dashboard aggregates opioid prescription history, pain assessments, and PDMP data into a single view, supporting safer prescribing decisions. COSRI (Clinical Opioid Summary with Rx Integration) connects directly to state Prescription Drug Monitoring Programs via SMART. Each of these apps runs inside the EHR workflow, launched with a single click, and presents information in the context of the patient already on screen."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "CDS Hooks is the complementary standard that extends SMART's reach into proactive clinical decision support. Where SMART apps are user-launched, CDS Hooks allows external services to automatically fire decision support suggestions at defined moments in the clinical workflow — when a medication is ordered, when a patient's chart is opened, or when a diagnosis code is entered. The SMART project team at Harvard Medical School has led the development of CDS Hooks as part of the broader FHIR-based interoperability ecosystem, and the two standards are designed to work together: a CDS Hook suggestion can launch a SMART app for deeper investigation or action. Together they represent a complete architecture for embedded clinical intelligence."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "SMART App Launch",
+        "points": [
+          "User-initiated: clinician clicks app icon",
+          "Full interactive UI embedded in EHR iframe",
+          "App pulls data on demand via FHIR APIs",
+          "Best for complex, interactive workflows",
+          "Examples: risk calculators, order entry assistants"
+        ]
+      },
+      "right": {
+        "label": "CDS Hooks",
+        "points": [
+          "System-initiated: fires automatically at workflow triggers",
+          "Returns cards with suggestions, links, or app launches",
+          "Server receives FHIR context in the hook payload",
+          "Best for ambient, just-in-time guidance",
+          "Examples: drug-drug interaction alerts, care gap reminders"
+        ]
+      },
+      "title": "SMART App Launch vs. CDS Hooks"
+    },
+    {
+      "_key": "s4h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hs",
+          "_type": "span",
+          "marks": [],
+          "text": "SMART Backend Services: Machine-to-Machine Authorization"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Not every FHIR integration involves a human sitting at a keyboard. Population health analytics platforms, payer data pipelines, automated quality reporting systems, and Bulk FHIR export jobs all need to authenticate against a FHIR server without a user present. The SMART Backend Services specification, published by HL7 International as part of the SMART App Launch Implementation Guide, defines exactly how to handle this scenario. It uses the OAuth 2.0 Client Credentials grant flow, adapted for healthcare, with JSON Web Token (JWT) assertions for client authentication."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The SMART Backend Services flow works as follows. The client system is pre-registered with the FHIR authorization server and is assigned a set of pre-authorized scopes — for example, system/Patient.rs and system/Observation.rs, which grant read and search access to those resources for all patients the client has been authorized to access. At runtime, the client generates a short-lived, one-time-use authentication JWT signed with its private key. It posts this JWT to the authorization server's token endpoint using a standard OAuth 2.0 client credentials request. The server validates the JWT signature against the client's registered public key, confirms the pre-authorized scopes, and issues an access token. The client then uses this token to call FHIR APIs — including the $export operation for Bulk FHIR — without any human interaction. The specification requires TLS 1.2 or higher for all exchanges."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "SMART Backend Services is the authorization backbone for the Bulk FHIR ecosystem. When a hospital system needs to export a million patient records to a population health vendor for annual quality reporting, or when a payer needs to automatically retrieve claims-linked clinical data, Backend Services provides the secure, auditable, machine-to-machine credential exchange that makes it possible. Unlike the EHR Launch flow, there is no consent screen — the data access has been negotiated and pre-authorized at the system administration level, with appropriate Business Associate Agreements in place. This makes Backend Services powerful but also requires careful governance: the scopes granted to a backend client should follow the principle of least privilege, requesting only the resource types and actions the pipeline genuinely needs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w",
+      "_type": "warningBlock",
+      "message": "SMART Backend Services does not involve a real-time consent screen. Access is granted based on prior administrative agreements between the client system and the FHIR server. Organizations deploying backend clients must ensure appropriate data use agreements, audit logging, and scope minimization policies are in place before go-live.",
+      "title": "Backend Services Requires Pre-Authorization"
+    },
+    {
+      "_key": "s5h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Regulatory Mandate: How SMART on FHIR Became Required Law"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "SMART on FHIR moved from an academic research project to a federal legal requirement through the 21st Century Cures Act and the ONC's Health IT Certification Program. The 2015 Edition Certified EHR Technology (CEHRT) rules first introduced FHIR-based API requirements. The 2015 Edition Cures Update — implementing the Cures Act final rule — went significantly further. It replaced the earlier SMART v1 App Launch Framework with the SMART App Launch Implementation Guide Release 2.0.0 (SMART v2) as the required standard. Any EHR seeking ONC certification must now support SMART on FHIR compliant application access, including verifying SMART authorization flows, refresh tokens, and token revocation as part of the certification testing process."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The three largest EHR vendors have built developer ecosystems around SMART on FHIR. Epic's App Orchard (now called the Epic Showroom) is a vetted marketplace where third-party developers list SMART-compatible applications. Developers register their apps, receive sandbox credentials, and go through a validation process before their apps can be deployed at Epic customer sites. Oracle Health (formerly Cerner) operates the Code Console developer portal, where developers register SMART applications, configure redirect URIs, and access Cerner Millennium sandbox environments. Validated integrations can be listed on the Oracle Healthcare Marketplace. These marketplaces collectively represent hundreds of commercially available SMART applications across clinical decision support, patient engagement, revenue cycle, and population health."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The SMART brand has also extended beyond EHR integration into patient-held credentials through SMART Health Cards. Developed in response to COVID-19 by the Vaccination Credential Initiative — a coalition that included Epic, Cerner, Microsoft, Salesforce, and dozens of health systems — SMART Health Cards use a combination of W3C Verifiable Credentials and HL7 FHIR to encode vaccination records as cryptographically signed QR codes. By January 2022, approximately 80% of Americans who had received a COVID-19 vaccine had access to a SMART Health Card through state health departments, healthcare systems, pharmacies, and employer portals. The same technical framework is now being extended to other health documents including lab results, insurance cards, and referral authorizations — demonstrating that the SMART ecosystem has grown far beyond its original EHR launch use case."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Replaced SMART v1 under the 2015 Edition Cures Update",
+          "label": "Required ONC Standard",
+          "value": "SMART v2"
+        },
+        {
+          "_key": "s2",
+          "context": "Of vaccinated Americans had SMART Health Card access by Jan 2022",
+          "label": "COVID Vaccine Card Coverage",
+          "value": "80%"
+        },
+        {
+          "_key": "s3",
+          "context": "Epic App Orchard/Showroom, Oracle Health Code Console, Cerner Code",
+          "label": "Major EHR Developer Portals",
+          "value": "3"
+        },
+        {
+          "_key": "s4",
+          "context": "Distinguishes machine-to-machine from patient/user scopes",
+          "label": "Backend Services Scope Prefix",
+          "value": "system/"
+        }
+      ]
+    },
+    {
+      "_key": "s5cl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5cls",
+          "_type": "span",
+          "marks": [],
+          "text": "The Cures Act information blocking rules work in tandem with SMART on FHIR: EHRs that restrict authorized SMART app access to patient data without a legitimate exception may now be found in violation of information blocking regulations, subject to civil monetary penalties."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "tkwy",
+      "_type": "takeawayBlock",
+      "points": [
+        "SMART on FHIR was born in 2010 at Harvard/Boston Children's Hospital under Josh Mandel, debuting as SMART on FHIR at HIMSS 2014 after adopting the HL7 FHIR data standard.",
+        "The framework combines OAuth 2.0 authorization with FHIR APIs, giving EHRs an app-store model where third-party developers write once and deploy across any compliant EHR.",
+        "EHR Launch passes patient context automatically; Standalone Launch lets apps initiate independently — both use the same OAuth 2.0 authorization code flow.",
+        "SMART scopes (patient/*.read, user/*.read, system/*.read) provide fine-grained, auditable permission control over exactly which FHIR resources an app may access.",
+        "SMART Backend Services uses JWT client credentials for machine-to-machine auth, enabling Bulk FHIR exports, payer pipelines, and automated quality reporting without a user in the loop.",
+        "CDS Hooks complements SMART App Launch by firing proactive decision support suggestions at defined EHR workflow moments, with hooks able to launch SMART apps for deeper action.",
+        "The ONC's 2015 Edition Cures Update made SMART v2 a federal certification requirement; EHRs that block authorized SMART app access may violate information blocking regulations.",
+        "SMART Health Cards — adopted by 80% of vaccinated Americans by January 2022 — extended the SMART ecosystem into patient-held, cryptographically signed health credentials."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "In the SMART EHR Launch flow, the authorization code exchange at the token endpoint returns a time-limited OAuth 2.0 access token bundled with the current patient context — including the FHIR patient ID and optionally the encounter and practitioner IDs. This context is what allows the app to immediately call the correct FHIR resources for the patient already on the clinician's screen, without any additional patient selection step. Permanent API keys and raw HL7 v2 feeds are not part of the SMART on FHIR specification.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The patient's raw HL7 v2 message feed directly from the EHR ADT system"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "An access token plus patient context (patient ID, encounter ID) for calling FHIR APIs"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "A permanent API key stored in the app's configuration file"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "A CDS Hook card containing the clinical decision support recommendation"
+        }
+      ],
+      "question": "In the SMART on FHIR EHR Launch flow, what does the app receive at the end of the token exchange step?"
+    },
+    {
+      "_key": "srch",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srchs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Mandel JC et al., \"SMART on FHIR: a standards-based, interoperable apps platform for electronic health records\" — Journal of the American Medical Informatics Association, 2016 — https://academic.oup.com/jamia/article/23/5/899/2379865 — Confirms origin at Harvard/Boston Children's in 2010, SMART Classic to SMART on FHIR transition in 2013, and HIMSS 2014 debut."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] HL7 SMART App Launch Implementation Guide v2.2.0 — https://hl7.org/fhir/smart-app-launch/ — Authoritative specification for EHR Launch, Standalone Launch, OAuth 2.0 scopes (patient/*.read, user/*.read, system/*.read), and the Backend Services profile with JWT client credential authentication."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] ONC Health IT Certification Program: 2015 Edition Cures Update — https://www.healthit.gov/sites/default/files/page/2022-03/Cures-Update-Fact-Sheet.pdf — Confirms that SMART App Launch IG v2.0.0 replaced v1.0.0 as the required standard under the 2015 Edition Cures Update, with certification testing of authorization flows, refresh tokens, and revocation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] SMART Health Cards Framework — https://spec.smarthealth.cards/ — Specification for W3C Verifiable Credential + HL7 FHIR-based health credentials; Wikipedia and Healthcare IT News coverage confirms Vaccination Credential Initiative coalition (Epic, Cerner, Microsoft) and 80% COVID vaccine card coverage by January 2022."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] SMART Health IT App Gallery — https://apps.smarthealthit.org/ — Publicly accessible gallery confirming dozens of production SMART apps including ASCVD Risk Calculator, Pain Management Summary, and COSRI; confirms clinical use at Boston Children's Hospital and Duke Medicine."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Oracle Health / Cerner Code Console Documentation — https://docs.oracle.com/en/industries/health/millennium-platform-apis/smart-developer-overview/ — Confirms Oracle Health Code Console as the SMART app developer portal for Cerner Millennium, with registration, sandbox, and Oracle Healthcare Marketplace listing process."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "interop-smart-fhir"
+  },
+  "title": "SMART on FHIR: The App Launch Framework That Opens the EHR"
+}

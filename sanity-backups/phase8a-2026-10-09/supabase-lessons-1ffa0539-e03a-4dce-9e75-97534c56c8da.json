@@ -1,0 +1,86 @@
+{
+  "id": "1ffa0539-e03a-4dce-9e75-97534c56c8da",
+  "track_id": "402105c4-fe88-4d8e-873c-28b5bc1bdb86",
+  "pillar": "policy",
+  "order": 1,
+  "slug": "hipaa-security-rule",
+  "title": "HIPAA Security Rule: Safeguards for Electronic PHI",
+  "summary": "The three categories of HIPAA Security Rule safeguards — administrative, physical, and technical — and the 2024 updates requiring encryption and MFA.",
+  "estimated_minutes": 18,
+  "objectives": [
+    {
+      "id": "obj_hs1",
+      "text": "Identify the three categories of HIPAA Security Rule safeguards"
+    },
+    {
+      "id": "obj_hs2",
+      "text": "Explain what a HIPAA risk analysis is and why it is required"
+    },
+    {
+      "id": "obj_hs3",
+      "text": "Describe the 2024 HIPAA Security Rule updates"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "The HIPAA Security Rule (45 CFR Parts 160 and 164) applies specifically to electronic protected health information (ePHI) — PHI that is created, received, maintained, or transmitted in electronic form. Where the HIPAA Privacy Rule governs all forms of PHI (including paper and verbal), the Security Rule focuses exclusively on the security of electronic systems. This distinction matters: paper records left in a waiting room are a Privacy Rule issue; a laptop containing patient records stolen from a car is a Security Rule issue.\n\nThe Security Rule organizes its requirements into three categories of safeguards: administrative (policies, workforce training, risk management), physical (workstation security, facility access controls, device disposal), and technical (access controls, audit logs, encryption, integrity). The distinction between 'required' and 'addressable' implementation specifications is frequently misunderstood — addressable does not mean optional. Covered entities must either implement the addressable specification or document why an equivalent alternative is in place.\n\nHIPAA's risk analysis requirement is the foundation of Security Rule compliance: covered entities must conduct an accurate and thorough assessment of the potential risks to ePHI confidentiality, integrity, and availability. Risk analysis must be conducted initially and whenever significant operational or environmental changes occur. OCR has cited absent or inadequate risk analysis in the majority of its enforcement actions — it is the single most common HIPAA security deficiency found in investigations.",
+      "type": "text",
+      "heading": "Protecting ePHI: the Security Rule's framework"
+    },
+    {
+      "type": "key_stat",
+      "label": "average cost of a healthcare data breach (IBM 2023)",
+      "value": "$10.9M",
+      "context": "Healthcare has the highest average data breach cost of any industry — $10.9 million per breach in 2023, nearly three times the cross-industry average. This reflects the sensitivity of health data, the value of PHI on the black market, and the extensive legal and remediation costs following a breach."
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "term": "Administrative Safeguards",
+          "definition": "Policies and procedures governing security management, workforce training, information access management, security awareness, contingency planning, and evaluation. Includes the mandatory risk analysis."
+        },
+        {
+          "term": "Physical Safeguards",
+          "definition": "Controls on physical access to systems that contain ePHI — facility access controls, workstation use policies, workstation security, device and media controls (disposal, reuse, backup)."
+        },
+        {
+          "term": "Technical Safeguards",
+          "definition": "Technology and policies controlling access to ePHI — unique user identification, emergency access procedures, automatic logoff, audit controls, integrity controls, transmission security (encryption)."
+        },
+        {
+          "term": "Required vs. Addressable",
+          "definition": "Required specifications must be implemented as written. Addressable specifications must be implemented or an equivalent alternative documented. 'Addressable' does not mean optional."
+        },
+        {
+          "term": "Risk Analysis",
+          "definition": "A required administrative safeguard: systematic assessment of risks to ePHI confidentiality, integrity, and availability. Must be documented, thorough, organization-wide. Foundation of all other security decisions."
+        },
+        {
+          "term": "Business Associate Agreement (BAA)",
+          "definition": "Contract required between a covered entity and any business associate that accesses, processes, or maintains ePHI. Extends Security Rule obligations to vendors and contractors."
+        }
+      ],
+      "heading": "HIPAA Security Rule safeguard categories"
+    },
+    {
+      "body": "HHS proposed significant updates to the HIPAA Security Rule in 2024 — the first major revision since 2013. Key proposed changes: making encryption of ePHI at rest and in transit mandatory (currently 'addressable'), requiring multi-factor authentication for workforce access to ePHI, requiring annual compliance audits, and updating technical requirements to reflect modern cyber threats. These updates reflect the dramatic increase in healthcare ransomware attacks and the recognition that the current Security Rule's flexibility has resulted in inadequate security in many organizations.",
+      "type": "callout",
+      "title": "2024 HIPAA Security Rule update: mandatory encryption and MFA",
+      "variant": "info"
+    }
+  ],
+  "tags": [
+    "HIPAA",
+    "security",
+    "ePHI",
+    "encryption",
+    "risk analysis",
+    "MFA"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:55.537784+00:00",
+  "updated_at": "2026-06-01T14:54:57.070598+00:00",
+  "sanity_slug": "interop-hipaa-security"
+}

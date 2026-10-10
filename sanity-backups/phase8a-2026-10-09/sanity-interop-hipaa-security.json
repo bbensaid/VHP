@@ -1,0 +1,736 @@
+{
+  "_createdAt": "2026-05-29T03:51:49Z",
+  "_id": "interop-hipaa-security",
+  "_rev": "2zkDeD7zc2Ko2DfFHmCs6E",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T17:30:43Z",
+  "body": [
+    {
+      "_key": "s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "HIPAA Security Rule: What It Is and Who It Covers"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) established foundational privacy and security protections for health information. While the broader statute passed in 1996, the Security Rule that specifically governs electronic protected health information (ePHI) was published as a final rule in February 2003 and took effect on April 21, 2005 — giving the industry two years to build compliance programs before enforcement began. For over two decades, this single regulatory framework has governed how hospitals, insurers, clinics, and their vendors protect the most sensitive data Americans share with anyone: their medical records."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Security Rule applies exclusively to ePHI — health information that is created, received, maintained, or transmitted in electronic form and that can be used to identify an individual. This is a critical distinction: paper records and purely verbal communications fall under the Privacy Rule, not the Security Rule. Every piece of digitally stored patient data, from an EHR record to a lab result sent by secure message, is ePHI and therefore subject to the Security Rule's three categories of safeguards: administrative, physical, and technical. Understanding which data qualifies as ePHI is the first step in building a defensible compliance posture, because scope errors — assuming a system is out of scope when it is not — are among the most common gaps auditors and regulators find."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two categories of organizations must comply with the Security Rule: covered entities and business associates. Covered entities are health plans, healthcare clearinghouses, and healthcare providers who transmit health information electronically. Business associates are any vendors or contractors that create, receive, maintain, or transmit ePHI on a covered entity's behalf — from cloud storage providers to billing companies to telehealth platforms. The HITECH Act of 2009 extended direct Security Rule liability to business associates, meaning regulators can sanction a vendor directly, not merely through the covered entity that hired them. Business associate agreements (BAAs) — contracts specifying how ePHI may be used and protected — are the contractual mechanism that operationalizes this shared responsibility."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Original statute establishing health data privacy framework",
+          "label": "HIPAA Enacted",
+          "value": "1996"
+        },
+        {
+          "_key": "s2",
+          "context": "Final compliance deadline for most covered entities after 2003 publication",
+          "label": "Security Rule Effective",
+          "value": "April 2005"
+        },
+        {
+          "_key": "s3",
+          "context": "Administrative, physical, and technical — all must be addressed",
+          "label": "Safeguard Categories",
+          "value": "3"
+        },
+        {
+          "_key": "s4",
+          "context": "Covered entities and business associates both bear direct compliance obligations",
+          "label": "Covered Party Types",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "_key": "s1cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Required",
+        "points": [
+          "Must be implemented exactly as stated — no flexibility",
+          "Examples: risk analysis, unique user identification, audit controls",
+          "Non-implementation is per se a violation regardless of cost or context"
+        ]
+      },
+      "right": {
+        "label": "Addressable",
+        "points": [
+          "Must be implemented, modified, or documented as not reasonable and appropriate",
+          "Examples: encryption (legacy 2003 rule), automatic logoff, authentication",
+          "Organization documents its decision with a rationale — not an exemption"
+        ]
+      },
+      "title": "Required vs. Addressable Specifications (2003 Rule)"
+    },
+    {
+      "_key": "s1note",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1notes",
+          "_type": "span",
+          "marks": [],
+          "text": "A persistent misconception is that \"addressable\" means \"optional.\" Under the 2003 rule, an addressable specification still requires implementation unless the organization formally documents why it is not reasonable and appropriate and adopts an equivalent alternative. Regulators have sanctioned organizations that treated addressable as a free pass. The proposed 2025 update eliminates this distinction entirely, making all specifications required — discussed in Section 4."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1w",
+      "_type": "warningBlock",
+      "message": "Any system that touches ePHI — even indirectly, such as a log aggregation tool that ingests audit trails from an EHR — may be considered in-scope for the Security Rule. Conduct a thorough data flow mapping exercise to identify every system that creates, receives, maintains, or transmits ePHI before scoping your compliance program.",
+      "title": "Scope Creep Is a Compliance Risk"
+    },
+    {
+      "_key": "s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Administrative Safeguards: The Compliance Foundation That Most Organizations Get Wrong"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Administrative safeguards are the policies, procedures, and training programs that govern how an organization manages the security of ePHI. They are the largest category in the Security Rule and, by OCR's own enforcement data, the most consistently deficient. Among all administrative requirements, the security risk analysis stands out as the single most commonly cited deficiency in OCR enforcement actions year after year. A 2016–2017 OCR compliance audit found that only 14 percent of covered entities were substantially fulfilling their regulatory responsibilities for risk analysis — meaning roughly 86 percent had meaningful gaps at the time of audit. That figure has improved since but risk analysis failures remain the dominant enforcement trigger."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "What does a compliant risk analysis actually require? The Security Rule mandates an accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of all ePHI the organization creates, receives, maintains, or transmits. OCR has been explicit that a risk analysis must cover all ePHI across all systems — not just the primary EHR. Organizations that base their risk analysis on a template form, or that scope it only to one system without mapping all data flows, are producing a non-compliant document. Following a risk analysis, the organization must implement a risk management plan that reduces identified risks to a reasonable and appropriate level — and that plan must be reviewed and updated on a regular basis, not filed and forgotten."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Other administrative safeguards include designation of a security official responsible for developing and implementing security policies, a workforce security program that grants access only to employees who need it, an information access management process, security awareness training for all workforce members (including phishing simulations and periodic refreshers), security incident procedures, and a contingency plan covering data backup, disaster recovery, and emergency mode operations. Each of these must be documented in written policies. In the fall of 2024, OCR launched a dedicated \"Risk Analysis Initiative\" and within six months had announced seven enforcement actions — all citing failure to conduct an adequate risk analysis as a foundational violation that enabled or worsened subsequent breaches."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "OCR found only 14% of covered entities substantially meeting risk analysis requirements",
+          "label": "Compliant in 2016–17 Audit",
+          "value": "14%"
+        },
+        {
+          "_key": "s2",
+          "context": "OCR issued seven enforcement actions in the first six months of its 2024 Risk Analysis Initiative",
+          "label": "Risk Analysis Initiative Actions",
+          "value": "7"
+        },
+        {
+          "_key": "s3",
+          "context": "OCR reported a 264% increase in reported large breaches involving ransomware from 2018 to 2023",
+          "label": "Ransomware Increase Since 2018",
+          "value": "264%"
+        },
+        {
+          "_key": "s4",
+          "context": "OCR collected $9,944,612 in settlements and penalties across 22 enforcement actions in calendar year 2024",
+          "label": "2024 HIPAA Penalties",
+          "value": "$9.9M"
+        }
+      ]
+    },
+    {
+      "_key": "s2steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Identify every system, device, application, and process that creates, receives, maintains, or transmits ePHI — including legacy systems, portable devices, and third-party integrations.",
+          "title": "Map All ePHI"
+        },
+        {
+          "_key": "step2",
+          "description": "For each ePHI-touching system, document reasonably anticipated threats (hacking, ransomware, employee error, natural disaster) and existing vulnerabilities.",
+          "title": "Identify Threats and Vulnerabilities"
+        },
+        {
+          "_key": "step3",
+          "description": "Evaluate the technical, administrative, and physical controls already in place and determine their effectiveness in mitigating identified threats.",
+          "title": "Assess Current Controls"
+        },
+        {
+          "_key": "step4",
+          "description": "Assign a risk level to each threat-vulnerability pair based on probability of occurrence and potential impact on ePHI confidentiality, integrity, or availability.",
+          "title": "Determine Likelihood and Impact"
+        },
+        {
+          "_key": "step5",
+          "description": "Produce a written risk register that ranks findings and feeds directly into a risk management plan with assigned owners and timelines.",
+          "title": "Document and Prioritize Risks"
+        },
+        {
+          "_key": "step6",
+          "description": "Repeat the analysis whenever there is a significant change — new system, new vendor, merger, or known breach — and at least annually.",
+          "title": "Review and Update Regularly"
+        }
+      ],
+      "title": "Conducting a HIPAA-Compliant Risk Analysis"
+    },
+    {
+      "_key": "s2ex",
+      "_type": "exampleBlock",
+      "content": "In 2023, OCR investigated Elgon Information Systems and determined that the company had failed to conduct a comprehensive and accurate risk analysis to identify all risks and vulnerabilities to ePHI. The case settled for $80,000 plus a corrective action plan. The penalty illustrates that even smaller business associates face direct financial consequences for administrative safeguard failures — OCR does not reserve enforcement solely for large health systems.",
+      "title": "Elgon Information Systems: $80,000 for Skipping Risk Analysis"
+    },
+    {
+      "_key": "s3h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Physical Safeguards: Protecting the Hardware That Holds Health Data"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Physical safeguards govern the physical access to facilities, workstations, and devices that store or process ePHI. The Security Rule organizes physical safeguards into four standards: facility access controls, workstation use, workstation security, and device and media controls. While technical controls like encryption and firewalls receive more attention, physical safeguards address an equally important attack surface — the reality that an attacker who can walk into a server room, pick up an unencrypted laptop, or photograph a monitor displaying patient records has bypassed every technical control in place. Physical breaches also include less dramatic but highly common failures such as leaving a workstation unlocked, disposing of a hard drive without secure erasure, or allowing unauthorized visitors into restricted areas."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Facility access controls require covered entities to implement policies that limit physical access to electronic information systems and the facilities where they are housed to authorized personnel. Implementation specifications under this standard include contingency operations (ensuring authorized personnel can access facilities during an emergency), a facility security plan, access establishment and modification procedures, and validation procedures for personnel requesting access. Workstation use and security standards require that every workstation handling ePHI has a documented policy describing its expected use and physical surroundings, and that physical safeguards restrict access to authorized users — including locked screen policies, privacy screens in public-facing areas, and physical positioning of monitors away from foot traffic in reception areas."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Device and media controls address the movement of hardware and electronic media containing ePHI. Required specifications include disposal procedures (ensuring ePHI is destroyed before a device is retired), and media re-use policies (ensuring ePHI is cleared before a device is reassigned). Addressable specifications include accountability (tracking the movement of devices and media) and data backup and storage before movement. The rise of bring-your-own-device (BYOD) policies has significantly complicated physical safeguard compliance: HIPAA does not distinguish between corporate-owned and personal devices — if a personal smartphone stores or transmits ePHI, it falls within the Security Rule's scope and must be subject to the same device controls, including the ability to remotely wipe ePHI if the device is lost or the employee departs. Mobile Device Management (MDM) platforms have become a near-mandatory operational tool for organizations with any BYOD exposure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3w",
+      "_type": "warningBlock",
+      "message": "Organizations that allow employees to access ePHI on personal devices without a formal BYOD policy and MDM enrollment face compounding risks: no remote wipe capability, no audit trail, no configuration enforcement. When a device is lost or stolen, the inability to confirm whether ePHI was present — let alone protected — may trigger breach notification obligations.",
+      "title": "BYOD Without MDM Is a High-Risk Configuration"
+    },
+    {
+      "_key": "s3cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Facility Controls",
+        "points": [
+          "Keycard or badge access to server rooms and data centers",
+          "Visitor logs and escort policies for restricted areas",
+          "Surveillance cameras covering entry points and equipment areas",
+          "Alarm systems and after-hours access restrictions"
+        ]
+      },
+      "right": {
+        "label": "Device & Media Controls",
+        "points": [
+          "Encrypted hard drives on all workstations and laptops",
+          "Centralized MDM for mobile devices accessing ePHI",
+          "Secure media destruction (certificate of destruction for retired drives)",
+          "Remote-wipe capability for lost or stolen portable devices"
+        ]
+      },
+      "title": "Physical Safeguard Controls: Facility vs. Device Focus"
+    },
+    {
+      "_key": "s3ex",
+      "_type": "exampleBlock",
+      "content": "In February 2024, OCR announced a $4.75 million settlement with Montefiore Medical Center after an employee stole and sold patient data affecting 12,517 individuals over a six-month period. The investigation found that Montefiore had failed to implement adequate access controls and workforce monitoring that would have detected or prevented the insider theft. This case demonstrates that physical and administrative safeguards are intertwined: workforce access controls, audit logging, and anomaly detection working together are what catch insider threats.",
+      "title": "Montefiore Medical Center: $4.75M for Insider Theft Enabled by Access Control Gaps"
+    },
+    {
+      "_key": "s4h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Technical Safeguards and the 2025 Security Rule Overhaul"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Technical safeguards are the technology controls and related policies that protect ePHI and control access to it. The Security Rule identifies four technical safeguard standards: access controls, audit controls, integrity controls, and transmission security. Access controls require covered entities to implement technical policies that allow only authorized persons to access ePHI — implemented through required specifications for unique user identification (every user gets their own login, no shared credentials) and emergency access procedures, plus addressable specifications for automatic logoff and encryption and decryption. Audit controls require hardware, software, and procedural mechanisms that record and examine activity in systems that contain or use ePHI — the logs that let you answer \"who accessed this patient's record and when?\" after an incident."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Transmission security — the requirement that covered entities guard against unauthorized access to ePHI being transmitted over electronic communications networks — is where the 2003 rule's age shows most clearly. Encryption of data in transit was listed as an addressable specification in 2003, meaning organizations could technically document a rationale for not encrypting. In practice, the industry has converged on Transport Layer Security (TLS) as the baseline for any network transmission of ePHI, and OCR has made clear through enforcement guidance that failure to encrypt transmissions is difficult to justify as reasonable and appropriate. Encryption of data at rest — stored on servers, databases, and portable devices — was also addressable under the 2003 rule and has similarly become a de facto requirement through enforcement pressure even before the proposed 2025 update."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "On January 6, 2025, HHS published a Notice of Proposed Rulemaking (NPRM) representing the most significant overhaul of the HIPAA Security Rule since its original publication — the first substantive update in over two decades. The proposed rule makes five structural changes that healthcare organizations must prepare for: First, the required/addressable distinction is eliminated — every implementation specification becomes mandatory, with only narrowly defined exceptions. Second, encryption of ePHI at rest and in transit is explicitly required, not merely addressable. Third, multi-factor authentication (MFA) is required, not optional. Fourth, regulated entities must conduct biannual vulnerability scans and annual penetration testing. Fifth, network segmentation to isolate systems that contain ePHI from other networks is required. The comment period closed March 7, 2025, and the final rule is expected to publish in 2026, with a 240-day compliance window after publication."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4analogy",
+      "_type": "analogyBlock",
+      "analogy": "Think of the 2003 Security Rule as a building code that said walls \"should generally\" be fireproof — individual builders could document why drywall was sufficient for their situation. The 2025 proposed rule tears out that flexibility and says: every wall must meet the same fire-rating standard, period. The discretion that once allowed cost-based trade-offs is replaced by specific, measurable, auditable technical requirements.",
+      "concept": "The 2025 HIPAA Security Rule NPRM eliminates addressable specifications and mandates concrete controls"
+    },
+    {
+      "_key": "s4sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "HHS published the proposed Security Rule overhaul in the Federal Register",
+          "label": "NPRM Published",
+          "value": "Jan 6, 2025"
+        },
+        {
+          "_key": "s2",
+          "context": "Proposed rule mandates biannual vulnerability scanning of all ePHI systems",
+          "label": "Vulnerability Scans Required",
+          "value": "2x/year"
+        },
+        {
+          "_key": "s3",
+          "context": "Annual penetration testing of network and critical systems required under proposed rule",
+          "label": "Pen Testing Required",
+          "value": "1x/year"
+        },
+        {
+          "_key": "s4",
+          "context": "Covered entities and BAs will have 240 days after final rule publication to comply",
+          "label": "Compliance Window",
+          "value": "240 days"
+        }
+      ]
+    },
+    {
+      "_key": "s4steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Audit your current security program against every existing addressable specification to identify gaps, since all will become required.",
+          "title": "Inventory All Implementation Specifications"
+        },
+        {
+          "_key": "step2",
+          "description": "Evaluate which systems lack MFA and prioritize deployment — focus first on systems with direct ePHI access and remote access pathways.",
+          "title": "Implement or Assess MFA"
+        },
+        {
+          "_key": "step3",
+          "description": "Confirm encryption at rest (full disk or database-level) and in transit (TLS 1.2+) across all ePHI systems, including backup media and portable devices.",
+          "title": "Verify Encryption Coverage"
+        },
+        {
+          "_key": "step4",
+          "description": "Stand up a formal vulnerability scanning program using tools like Nessus or Qualys and document remediation timelines — biannual cadence at minimum.",
+          "title": "Establish Vulnerability Management"
+        },
+        {
+          "_key": "step5",
+          "description": "Contract for an annual penetration test covering external perimeter, internal network, and application layers that touch ePHI.",
+          "title": "Engage a Penetration Testing Vendor"
+        },
+        {
+          "_key": "step6",
+          "description": "The proposed rule requires BAs to update agreements within 180 days of final rule publication — begin identifying and renegotiating contracts now.",
+          "title": "Update Business Associate Agreements"
+        }
+      ],
+      "title": "Preparing for the 2025/2026 Security Rule Changes"
+    },
+    {
+      "_key": "s5h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Breach Statistics, Enforcement, and the Change Healthcare Wake-Up Call"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The scale of healthcare data breaches has grown dramatically since OCR began publishing its breach portal in 2009. Between 2009 and 2025, OCR received reports of 7,357 healthcare data breaches affecting 500 or more individuals, collectively exposing the protected health information of more than 935 million Americans — nearly three times the U.S. population, reflecting the reality that many individuals have been breached multiple times. In 2023, OCR logged 746 large breaches affecting an average of 154,609 individuals each. The single largest breach that year — HCA Healthcare — affected 11.27 million individuals. Hacking and IT incidents accounted for 81% of 2023 breaches and 96% of breached records, with ransomware emerging as the dominant attack vector. OCR reported that large breaches involving ransomware increased 264% between 2018 and 2023."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "In 2024, the Change Healthcare ransomware attack rewrote the scale of what a single healthcare data breach could look like. On February 21, 2024, ALPHV/BlackCat ransomware operators gained access to Change Healthcare — a subsidiary of UnitedHealth Group and the largest healthcare payment processing network in the United States. The attack disrupted the ability of pharmacies to process prescription claims and of providers to submit bills for weeks. UnitedHealth Group ultimately disclosed that approximately 190 million Americans had their personal and healthcare data compromised — making it the largest healthcare data breach in U.S. history by a wide margin. The stolen data included health insurance information, medical records, billing data, and in many cases Social Security numbers. The company estimated the financial cost at $2.45 billion for the nine months ending September 30, 2024, and that figure continued to rise."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Total 2024 breach numbers reflected the Change Healthcare effect: while fewer large breaches were reported than in 2023 (663 vs. 746, a 9% decrease), the total number of individuals affected reached 242.9 million — the vast majority attributable to a single incident. Hacking and IT incidents accounted for 99.45% of all breached records in 2024. OCR's enforcement activity ran in parallel: the agency imposed 22 financial penalties in calendar year 2024, collecting $9.94 million in settlements. Fourteen of those actions cited Security Rule violations, and the Risk Analysis Initiative that launched in late 2024 added seven more enforcement actions in its first six months alone. The message from regulators is unambiguous: the cybersecurity crisis in healthcare has made HIPAA Security Rule compliance an urgent operational priority, not a check-the-box exercise."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Largest single healthcare data breach in U.S. history — UnitedHealth's Change Healthcare, 2024",
+          "label": "Change Healthcare Victims",
+          "value": "190M"
+        },
+        {
+          "_key": "s2",
+          "context": "UnitedHealth Group's estimated total cost through Q3 2024 from the ransomware attack",
+          "label": "Change Healthcare Cost",
+          "value": "$2.45B"
+        },
+        {
+          "_key": "s3",
+          "context": "Hacking/IT incidents accounted for 241.6M of 242.9M individuals affected in 2024 breaches",
+          "label": "2024 Records from Hacking",
+          "value": "99.45%"
+        },
+        {
+          "_key": "s4",
+          "context": "Cumulative individuals whose ePHI was exposed in breaches of 500+ reported to OCR since 2009",
+          "label": "Total Since 2009",
+          "value": "935M+"
+        }
+      ]
+    },
+    {
+      "_key": "s5ex",
+      "_type": "exampleBlock",
+      "content": "In a coordinated enforcement action, OCR announced settlements with four covered entities following ransomware attacks, emphasizing that failure to conduct adequate risk analyses and implement appropriate access controls left these organizations vulnerable. The settlements ranged from tens of thousands to hundreds of thousands of dollars and included corrective action plans requiring implementation of the security controls that had been absent before the attacks. OCR's consistent message: ransomware is often preventable, and when it is not, the inadequate security program that allowed it represents independent HIPAA violations.",
+      "title": "OCR Settles Four Ransomware Investigations Simultaneously"
+    },
+    {
+      "_key": "s5callout",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5callouts",
+          "_type": "span",
+          "marks": [],
+          "text": "The Change Healthcare breach is a systemic risk illustration, not just a company failure. A single vendor providing payment processing for hundreds of thousands of providers meant that one successful ransomware attack disrupted care delivery nationally. It is the strongest argument yet for aggressive third-party risk management and the elimination of single points of failure in healthcare infrastructure."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s6tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "The HIPAA Security Rule, published February 2003 and effective April 21, 2005, governs electronically protected health information (ePHI) — not paper records — for both covered entities and their business associates.",
+        "Three safeguard categories structure compliance: administrative (policies and training), physical (facility and device controls), and technical (access, audit, integrity, and transmission controls).",
+        "Risk analysis is the most commonly cited Security Rule deficiency — a 2016–17 OCR audit found only 14% of covered entities substantially meeting the requirement, and OCR's 2024 Risk Analysis Initiative has generated seven enforcement actions.",
+        "Physical safeguards are often underestimated: BYOD devices that handle ePHI are in scope regardless of ownership, and unencrypted portable devices remain a persistent breach cause.",
+        "The 2025 NPRM — the first major Security Rule update in over two decades — eliminates the required/addressable distinction, mandates encryption at rest and in transit, requires MFA, and adds biannual vulnerability scanning and annual penetration testing.",
+        "In 2024, hacking/IT incidents accounted for 99.45% of all breached records, with the Change Healthcare ransomware attack alone affecting approximately 190 million Americans.",
+        "OCR collected $9.94 million in HIPAA settlements in 2024 across 22 enforcement actions, signaling sustained regulatory pressure despite the administration change.",
+        "Organizations should begin preparing for the final 2025/2026 Security Rule now — audit all addressable specifications, verify encryption coverage, and establish formal vulnerability management programs before the 240-day compliance clock starts."
+      ]
+    },
+    {
+      "_key": "s7qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The 2025 NPRM's most consequential structural change is eliminating the longstanding required/addressable distinction that allowed organizations to document why encryption was not \"reasonable and appropriate\" for their situation. Under the proposed rule, encryption of ePHI at rest and in transit becomes an explicit requirement with no cost-based exception — meaning organizations that previously documented away their encryption obligation will need to implement it regardless of their rationale.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "It increases financial penalties for all HIPAA violations by 25 percent."
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "It eliminates the required/addressable distinction, making encryption at rest and in transit mandatory with no cost-based opt-out."
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "It extends the Security Rule for the first time to paper records stored alongside electronic systems."
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "It transfers enforcement authority from OCR to the FTC for technology companies."
+        }
+      ],
+      "question": "Which change does the 2025 HIPAA Security Rule NPRM make that most significantly affects organizations that relied on \"addressable\" flexibility for encryption?"
+    },
+    {
+      "_key": "s8src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s8s1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] HHS Office for Civil Rights, \"Summary of the HIPAA Security Rule\" — https://www.hhs.gov/hipaa/for-professionals/security/laws-regulations/index.html — Authoritative text of Security Rule effective date (April 21, 2005), safeguard categories, and required vs. addressable specifications framework."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s8s2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] HIPAA Journal, \"2024 Healthcare Data Breach Report\" — https://www.hipaajournal.com/2024-healthcare-data-breach-report/ — Source for 663 large breaches in 2024, 242.9 million individuals affected, hacking/IT accounting for 99.45% of breached records, and the Change Healthcare 190 million figure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s8s3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Federal Register, \"HIPAA Security Rule To Strengthen the Cybersecurity of Electronic Protected Health Information\" (January 6, 2025) — https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information — Primary source for 2025 NPRM provisions: elimination of addressable specifications, mandatory encryption, MFA, biannual vulnerability scans, annual pen testing, and 240-day compliance window."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s8s4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] HHS Office for Civil Rights, \"OCR Reports to Congress on HIPAA Compliance and Data Breaches in 2024\" — https://www.hipaajournal.com/ocr-reports-congress-hipaa-compliance-data-breaches-2024/ — Source for 22 enforcement actions, $9.94 million in 2024 HIPAA settlements, and the Risk Analysis Initiative generating seven enforcement actions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s8s5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] BleepingComputer, \"UnitedHealth now says 190 million impacted by 2024 data breach\" — https://www.bleepingcomputer.com/news/security/unitedhealth-now-says-190-million-impacted-by-2024-data-breach/ — Confirmed scale of Change Healthcare breach at 190 million Americans; ALPHV/BlackCat ransomware attribution; $2.45 billion estimated cost through Q3 2024."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s8s6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s8s6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] National Law Review, \"HHS-OCR Risk Analysis Enforcement Initiative Continues Under New Administration\" — https://natlawreview.com/article/hhs-ocr-risk-analysis-enforcement-initiative-continues-under-new-administration — Source for the 2024 Risk Analysis Initiative, seven enforcement actions in first six months, and the 2016–17 OCR audit finding that only 14% of covered entities substantially met risk analysis requirements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "interop-hipaa-security"
+  },
+  "title": "HIPAA Security Rule: Protecting Health Data in Motion and at Rest"
+}

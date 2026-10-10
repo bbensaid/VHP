@@ -1,0 +1,85 @@
+{
+  "id": "b681a5cd-c6db-44b5-b9dc-330e63ef4f60",
+  "track_id": "08e0a1a1-e128-4a24-97a0-b8544487f047",
+  "pillar": "technology",
+  "order": 1,
+  "slug": "snomed-loinc-rxnorm",
+  "title": "Clinical Terminology: SNOMED CT, LOINC & RxNorm",
+  "summary": "The three pillars of clinical terminology — SNOMED CT for clinical concepts, LOINC for observations and labs, RxNorm for medications — and why semantic interoperability depends on them.",
+  "estimated_minutes": 18,
+  "objectives": [
+    {
+      "id": "obj_ct1",
+      "text": "Distinguish SNOMED CT, LOINC, and RxNorm by primary use case"
+    },
+    {
+      "id": "obj_ct2",
+      "text": "Explain why clinical terminology standards are essential for semantic interoperability"
+    },
+    {
+      "id": "obj_ct3",
+      "text": "Describe what the UMLS Metathesaurus does"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Before two systems can meaningfully exchange clinical data, they must agree not just on the format of the data (structural interoperability) but on the meaning of each concept (semantic interoperability). The same clinical concept — type 2 diabetes mellitus — might be represented as 'DM2,' 'T2DM,' 'adult-onset diabetes,' SNOMED code 44054006, ICD-10 code E11, or a dozen local variations. Without shared vocabulary standards, a receiving system cannot reliably interpret what it receives.\n\nThree terminology systems have become the foundation of semantic interoperability in US healthcare: SNOMED CT for clinical concepts, LOINC for laboratory and clinical observations, and RxNorm for medications. These are not competing standards — they serve different purposes and are designed to be used together. A complete medication administration record might use RxNorm to identify the drug, LOINC to code the administration event, and SNOMED to capture the indication. Understanding when to use which standard is a core health IT competency.\n\nThe United States Core Data for Interoperability (USCDI) — ONC's defined minimum dataset — specifies which terminology standards must be used for each data element in certified EHR technology. USCDI requires SNOMED CT for problems and procedures, LOINC for lab tests, RxNorm for medications, and ICD-10 for diagnoses. This mandate drives consistent terminology use across the 96% of hospitals that have certified EHRs.",
+      "type": "text",
+      "heading": "The vocabulary problem in health data"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "term": "SNOMED CT",
+          "definition": "Systematized Nomenclature of Medicine — Clinical Terms. 350,000+ clinical concepts covering diseases, findings, procedures, anatomy, organisms. Maintained by SNOMED International. The richest clinical ontology — used for problem lists, clinical findings, procedures."
+        },
+        {
+          "term": "LOINC",
+          "definition": "Logical Observation Identifiers Names and Codes. 100,000+ codes for laboratory tests, clinical observations, vital signs, SDOH screenings, survey instruments. Free to use. Maintained by Regenstrief Institute. The standard for 'what was measured.'"
+        },
+        {
+          "term": "RxNorm",
+          "definition": "Normalized drug names linking brand names, generic names, and active ingredients. Maintained by NLM. Free to use. Used in e-prescribing, medication reconciliation, drug interaction checking. The standard for 'what drug was given.'"
+        },
+        {
+          "term": "UMLS Metathesaurus",
+          "definition": "NLM's Unified Medical Language System — a Rosetta Stone linking SNOMED, LOINC, RxNorm, ICD, MeSH, and 200+ other vocabularies. Allows concept mapping across terminology systems."
+        },
+        {
+          "term": "NDC",
+          "definition": "National Drug Code — FDA's drug product identifier including manufacturer, drug, and package size. Used in pharmacy dispensing and claims. RxNorm normalizes NDC codes to clinical drug concepts."
+        },
+        {
+          "term": "MedDRA",
+          "definition": "Medical Dictionary for Regulatory Activities. Used for adverse event reporting to FDA, EMA, and other regulatory agencies. Not typically used in EHRs or HIE."
+        }
+      ],
+      "heading": "The three pillars of clinical terminology"
+    },
+    {
+      "type": "key_stat",
+      "label": "clinical concepts in SNOMED CT",
+      "value": "350,000+",
+      "context": "SNOMED CT's 350,000+ concepts and 1.5 million relationships make it the most comprehensive clinical ontology in existence. Its polyhierarchical structure allows a concept like 'type 2 diabetes mellitus' to be simultaneously classified as a metabolic disease, an endocrine disorder, and a disorder of glucose metabolism."
+    },
+    {
+      "body": "SNOMED CT: use for clinical documentation — problem lists, findings, procedures in the EHR. LOINC: use for what was observed or measured — lab test names, vital sign names, screening tool questions. ICD-10: use for billing and administrative reporting — diagnosis codes on claims. RxNorm: use for medications in clinical exchange. The US Core FHIR profiles specify which terminology to use for each resource element — following these profiles ensures consistent use across systems.",
+      "type": "callout",
+      "title": "When to use SNOMED vs. LOINC vs. ICD-10",
+      "variant": "tip"
+    }
+  ],
+  "tags": [
+    "SNOMED",
+    "LOINC",
+    "RxNorm",
+    "terminology",
+    "semantic interoperability"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:52.381681+00:00",
+  "updated_at": "2026-06-01T14:54:57.954292+00:00",
+  "sanity_slug": "interop-snomed-loinc-rxnorm"
+}

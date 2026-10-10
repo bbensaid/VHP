@@ -1,0 +1,510 @@
+{
+  "_createdAt": "2026-05-31T03:22:16Z",
+  "_id": "star-ratings-equity-critique",
+  "_rev": "rL4Cn5Sfo5Z8rzPmE995dQ",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T03:22:16Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Low-Income Subsidy and Who It Represents"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Within Medicare Advantage, no group of beneficiaries is more politically and programmatically complex than those who receive the Low-Income Subsidy (LIS) — also called Extra Help. The LIS program subsidizes Part D prescription drug costs for Medicare beneficiaries with limited income and resources, reducing or eliminating premiums, deductibles, and copayments for eligible enrollees. In 2024, over 14 million Medicare beneficiaries received some form of the low-income subsidy, representing roughly 40 percent of all Part D enrollees."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "LIS beneficiaries are disproportionately represented in certain Medicare Advantage plans — particularly dual-eligible special needs plans (D-SNPs) that specialize in serving people who qualify for both Medicare and Medicaid. These beneficiaries carry significant social complexity: they are more likely to have multiple chronic conditions, unstable housing, food insecurity, limited health literacy, and barriers to transportation. They are also more likely to miss appointments, have lower medication adherence rates, and score lower on patient experience surveys — through no fault of the plans that serve them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Star Ratings system was designed when Medicare Advantage enrollment was dominated by relatively affluent, healthy seniors. As D-SNPs and LIS-serving plans have grown — driven by CMS policy and market dynamics — the system has had to grapple with a fundamental design tension: should plans serving the most complex, socially disadvantaged populations be held to identical performance standards as plans serving predominantly healthy, high-income beneficiaries?"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Low-Income Subsidy (LIS) beneficiaries — also called Extra Help recipients — are Medicare Part D enrollees with limited income and resources who receive federal subsidies for prescription drug costs. Plans serving high LIS concentrations consistently face structural performance disadvantages in the Star Ratings system that are only partially offset by existing adjustments."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How the Star Ratings System Disadvantages LIS-Heavy Plans"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Star Ratings system measures performance on approximately 42 metrics, and LIS status correlates negatively with performance on a wide range of them. Medication adherence measures — which are triple-weighted in the Part D domain — show consistent LIS gaps. Research across multiple years of CMS data shows that LIS beneficiaries are significantly less likely to adhere to statins, ACE inhibitors/ARBs, and oral diabetic medications, even when controlling for demographics and clinical diagnoses. The reasons are structural: cost-sharing (even if subsidized), transportation barriers, social instability, and limited pharmacy access in low-income neighborhoods."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "CAHPS patient experience scores — triple-weighted measures in the Part C domain — also show systematic LIS disadvantages. LIS beneficiaries report lower satisfaction with their health plan and care experience across multiple CAHPS domains, including communication with providers, coordination of care, and plan responsiveness. Research has found that these lower CAHPS scores reflect real experience differences driven by factors including neighborhood poverty, language barriers, and concentration of LIS beneficiaries in plans with less administrative capacity — but they are partially attributable to social circumstances rather than plan performance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The cumulative effect is that plans serving high concentrations of LIS beneficiaries face a structural performance headwind on multiple high-weight measures simultaneously. A plan serving 60 percent LIS beneficiaries competing against a plan serving 15 percent LIS beneficiaries for the same star rating faces a mathematically different challenge. This creates an equity paradox: the plans most committed to serving America's most vulnerable Medicare beneficiaries are the plans most financially penalized by the quality measurement system."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex1",
+      "_type": "exampleBlock",
+      "content": "Dual Eligible Special Needs Plans (D-SNPs) enroll beneficiaries who are simultaneously eligible for Medicare and Medicaid — the highest-complexity, most socially disadvantaged subset of Medicare beneficiaries. D-SNPs typically report substantially lower star ratings than non-SNP Medicare Advantage plans, with many D-SNPs concentrated at 3 to 3.5 stars even when delivering care that health equity advocates consider high quality.\nA 2024 analysis found that D-SNPs disproportionately serve beneficiaries with mental illness, substance use disorders, housing instability, and multiple chronic conditions — all characteristics associated with lower measured performance on star rating metrics. Despite serving arguably the most important population in Medicare, D-SNPs are persistently disadvantaged in the quality bonus payment system.",
+      "title": "D-SNPs and the LIS Performance Gap"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Categorical Adjustment Index: A Partial Solution"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS has been aware of the LIS performance gap for years and has responded with the Categorical Adjustment Index (CAI). The CAI adds points to a contract's overall star rating to adjust for the mean within-contract performance disparity associated with its percentage of enrollees receiving the Part D low-income subsidy or dual eligibility and those who are disabled. The adjustment is applied at the contract level, not the measure level, and it primarily benefits contracts with high LIS/dual-eligible enrollment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CAI works by examining the gap between LIS/dual-eligible beneficiaries and non-LIS beneficiaries within the same plan on each measure. If a plan's LIS beneficiaries score significantly lower than its non-LIS beneficiaries on the same measures, the CAI provides an upward adjustment to partially offset the penalty. The goal is to ensure that such contracts' performance is not understated solely because of the composition of their enrolled population."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CAI has limitations, however. Critics argue that it is insufficiently generous to fully offset the performance disadvantage facing heavily LIS-concentrated plans, and that the within-contract comparison methodology misses much of the structural disadvantage these plans face. Plans serving 80 percent LIS beneficiaries cannot simply be compared to themselves — they need comparison against the very different standard that applies to plans serving mostly healthy, wealthy seniors. The CAI represents an incremental accommodation rather than a fundamental redesign of the measurement framework."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Current CMS Approach (CAI)",
+        "points": [
+          "Adds points to overall rating based on within-contract LIS/non-LIS performance gap",
+          "Primarily benefits plans with high LIS/dual-eligible concentrations",
+          "Adjusts the final star rating score, not individual measure cut points",
+          "Criticized as insufficient to fully offset LIS structural disadvantages"
+        ]
+      },
+      "right": {
+        "label": "Proposed Alternative Approaches",
+        "points": [
+          "Separate performance benchmarks for LIS-concentrated plans (peer grouping)",
+          "Social risk adjustment of individual measure cut points",
+          "Distinct rating tracks for D-SNPs and non-SNP plans",
+          "Outcome measures specifically designed for socially complex populations"
+        ]
+      },
+      "title": "Star Ratings Equity Mechanisms: Existing vs. Proposed"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Health Equity Index: A New Framework"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS introduced a new mechanism — the Health Equity Index (HEI) — as part of a broader effort to align Medicare Advantage incentives with health equity goals. Unlike the CAI, which adjusts for the penalty associated with having many LIS beneficiaries, the HEI is designed to reward plans that actively improve outcomes specifically for their most disadvantaged enrollees. The HEI takes effect for 2027 Star Ratings, measuring performance in 2024 and 2025."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The HEI replaces the existing reward factor in the star ratings program. Plans earn HEI points based on their performance on specific quality measures among their Social Risk Factor (SRF) population — defined as enrollees receiving Extra Help/LIS, dual-eligible beneficiaries, and disability-status enrollees. Plans whose social risk factor members make up at least the contract-level median SRF enrollment can earn up to 0.4 points added to their unrounded star rating. Plans with at least 50 percent of the median SRF enrollment can earn up to 0.2 points."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The HEI represents a philosophical shift from the CAI. Rather than simply adjusting for the negative performance effect of having many LIS beneficiaries, the HEI creates a positive incentive for achieving high quality specifically among LIS and dual-eligible beneficiaries. A plan that serves many LIS enrollees but does not improve their outcomes receives no HEI reward. A plan that actively closes care gaps, improves medication adherence, and achieves high CAHPS scores among its LIS population earns a meaningful star rating bonus. This shifts the frame from \"compensation for disadvantage\" to \"reward for demonstrated equity.\""
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "All Medicare Advantage plans were measured against the same cut points with no adjustment for LIS concentration or social risk, creating systematic disadvantages for safety-net plans.",
+          "title": "Pre-2012: No Equity Adjustment"
+        },
+        {
+          "_key": "step2",
+          "description": "CMS introduced a small reward factor for contracts that maintained consistently high ratings over multiple years — but this primarily benefited already-high-performing plans, not LIS-heavy ones.",
+          "title": "2012–2022: Reward Factor"
+        },
+        {
+          "_key": "step3",
+          "description": "The Categorical Adjustment Index began adjusting final star ratings upward for plans with high LIS/dual-eligible concentrations and high within-contract performance disparities.",
+          "title": "2015: CAI Introduced"
+        },
+        {
+          "_key": "step4",
+          "description": "CMS begins measuring plan performance on the Health Equity Index during 2024–2025, setting the foundation for HEI rewards to take effect in 2027 Star Ratings.",
+          "title": "2024: HEI Measurement Begins"
+        },
+        {
+          "_key": "step5",
+          "description": "The Health Equity Index replaces the old reward factor, rewarding plans for achieving high performance specifically among their social risk factor enrolled population.",
+          "title": "2027: HEI Replaces Reward Factor"
+        }
+      ],
+      "title": "The Evolution of Equity Adjustments in Star Ratings"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What These Changes Mean for Policy and Practice"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The combination of the CAI and the emerging HEI represents genuine progress toward a more equitable Medicare Advantage quality measurement system — but substantial structural problems remain. The core measurement framework still compares all plans on the same absolute performance thresholds using annually-shifted cut points that do not distinguish between plans serving 10 percent LIS beneficiaries and plans serving 80 percent LIS beneficiaries. Until CMS adopts either separate rating tracks for D-SNPs or individual measure-level social risk adjustment, the most vulnerable beneficiaries will continue to be served by plans that are disproportionately penalized in the quality bonus payment system."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "For plans strategically, the HEI creates new data requirements and care management priorities. Plans need to identify their SRF population, track measure performance specifically within that subgroup, and build targeted interventions to close equity gaps — not just overall performance gaps. This requires more granular data infrastructure than most plans have historically maintained, and it requires care management programs that are designed specifically for the social complexity of LIS and dual-eligible beneficiaries rather than programs designed for the general MA population and then applied to SRF members by default."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The broader policy implication is that health equity and Medicare Advantage financial performance are increasingly linked. A plan that ignores equity — that achieves high average star ratings by serving predominantly healthy, wealthy seniors while its LIS minority underperforms — will no longer be rewarded by the same program mechanics as a plan that achieves equitable outcomes across its full enrolled population. Whether the HEI is sufficiently generous to overcome the structural disadvantages faced by the most LIS-concentrated plans remains to be seen after the 2027 ratings are released."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Health Equity Index takes effect for 2027 Star Ratings and measures performance in 2024–2025. Plans need to start now building care management programs specifically designed for their Social Risk Factor population — LIS recipients, dual-eligible beneficiaries, and disabled enrollees — to position for the HEI reward."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Low-Income Subsidy (LIS) beneficiaries — over 14 million enrollees in 2024 — consistently score lower on Medicare Advantage star rating measures due to social and economic barriers that are structurally distinct from clinical care quality.",
+        "Plans serving high concentrations of LIS and dual-eligible beneficiaries face systematic performance disadvantages on the most heavily weighted star rating measures, including medication adherence (triple-weighted) and CAHPS patient experience surveys (triple-weighted).",
+        "The Categorical Adjustment Index (CAI) partially offsets this disadvantage by adding points to final star ratings for plans with high LIS/dual-eligible enrollment and large within-contract performance disparities — but critics argue it is insufficient.",
+        "The Health Equity Index (HEI), effective for 2027 Star Ratings, replaces the old reward factor with a mechanism that specifically rewards plans for achieving high performance among their Social Risk Factor population.",
+        "The HEI represents a philosophical shift from compensating for having disadvantaged enrollees to rewarding actively improving outcomes for them — changing the incentive from enrollment composition to care delivery equity.",
+        "Plans can earn up to 0.4 additional star rating points from the HEI if their SRF enrollment exceeds the contract-level median and they achieve high SRF-specific performance outcomes.",
+        "Comprehensive reform of the star ratings system for equity — including separate D-SNP rating tracks or individual measure-level social risk adjustment — remains a pending policy challenge despite the incremental progress represented by the CAI and HEI."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The CAI is a defensive adjustment that partially compensates plans for the performance penalty associated with enrolling many LIS/dual-eligible beneficiaries — it adds points based on within-contract disparities. The HEI is an offensive reward that requires plans to demonstrate high performance specifically among their SRF population to earn bonus points. One adjusts for disadvantage; the other rewards demonstrated equity in care delivery.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The CAI applies to Part D measures only, while the HEI applies to Part C measures only"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The CAI adjusts ratings upward for having many LIS enrollees, while the HEI rewards plans for actively achieving high performance among their LIS and dual-eligible members"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The CAI is used only for 5-star plans, while the HEI applies to all plans regardless of rating"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The CAI is a financial bonus payment, while the HEI is a star rating adjustment"
+        }
+      ],
+      "question": "What is the fundamental difference between the Categorical Adjustment Index (CAI) and the Health Equity Index (HEI) in the Medicare Advantage Star Ratings system?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] AJMC: Understanding the Social Risk Factor Adjustment's Effect on Star Ratings — https://www.ajmc.com/view/understanding-the-social-risk-factor-adjustment-s-effect-on-star-ratings — CAI mechanics and LIS performance gap analysis"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Icario: 2024 CMS Final Rule — Health Equity Index Reward — https://icariohealth.com/blog/2024-cms-final-rule-focus-on-the-health-equity-index-reward/ — HEI design, timing, and SRF reward structure"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CMS: 2025 Medicare Advantage and Part D Star Ratings Fact Sheet — https://www.cms.gov/newsroom/fact-sheets/2025-medicare-advantage-part-d-star-ratings — Star ratings results, structure, and methodology context"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Managed Healthcare Executive: Medicare Star Ratings Could Drop with Focus on Equity — https://www.managedhealthcareexecutive.com/view/medicare-star-ratings-could-drop-with-focus-on-equity-pbmi-2024 — Industry analysis of HEI and LIS plan strategic implications"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Milliman: Recent Health Equity-Focused Initiatives from CMS for Medicare Plans — https://www.milliman.com/en/insight/recent-health-equity-focused-initiatives-from-cms-medicare-plans — Technical analysis of CMS equity adjustments and their actuarial impact"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "value-based-care",
+  "order": 18,
+  "slug": {
+    "_type": "slug",
+    "current": "star-ratings-equity-critique"
+  },
+  "title": "Star Ratings & Equity: The Low-Income Subsidy Problem"
+}

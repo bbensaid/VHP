@@ -1,0 +1,645 @@
+{
+  "_createdAt": "2026-05-29T03:05:02Z",
+  "_id": "interop-info-blocking",
+  "_rev": "rL4Cn5Sfo5Z8rzPmDwABOM",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T04:54:48Z",
+  "body": [
+    {
+      "_key": "s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "What Is Information Blocking?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "In 2016 Congress passed the 21st Century Cures Act with a deceptively simple goal: make health data flow freely. Section 4004 of that law created a legal prohibition against \"information blocking\" — defined in regulation at 45 CFR 171.103 as any practice by an \"actor\" that is likely to interfere with, prevent, or materially discourage the access, exchange, or use of electronic health information (EHI), unless required by law or covered by one of the enumerated regulatory exceptions. The definition is intentionally broad. Congress wanted to capture the full spectrum of behaviors — technical, contractual, and cultural — that had historically kept data siloed inside individual systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Three categories of entities qualify as \"actors\" under the rule: (1) health IT developers of certified health IT, (2) health information exchanges and health information networks (HIEs/HINs), and (3) healthcare providers. The law applies a slightly different knowledge standard to each group. For health IT developers and HIEs/HINs, information blocking occurs when the actor knows, or should know, that a practice is likely to interfere with EHI access. For healthcare providers, the standard is higher — the provider must actually know that the practice is unreasonable and likely to interfere. This asymmetry reflects Congress's view that technology vendors are more sophisticated market actors who should be held to a more demanding standard."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The scope of electronic health information covered by the rule has expanded since the regulation first took effect. From April 5, 2021 through October 5, 2022, EHI was limited to the data classes and elements defined in the United States Core Data for Interoperability (USCDI) Version 1 — a relatively narrow set of clinical data including demographics, vital signs, laboratory results, and medications. Starting October 6, 2022, the definition expanded dramatically to encompass all information in a patient's HIPAA Designated Record Set (DRS) — every medical record, billing record, and other documentation used to make decisions about a patient, including images, wave files, and any other form of ePHI. This full-EHI expansion dramatically broadened the universe of data that actors must make available on request."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1stats",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Information blocking prohibition became enforceable for all actors",
+          "label": "Rule Effective Date",
+          "value": "April 5, 2021"
+        },
+        {
+          "_key": "s2",
+          "context": "Scope shifted from USCDI v1 to the entire HIPAA Designated Record Set",
+          "label": "Full EHI Expansion",
+          "value": "October 6, 2022"
+        },
+        {
+          "_key": "s3",
+          "context": "Health IT developers, HIEs/HINs, and healthcare providers",
+          "label": "Covered Entities",
+          "value": "3 Actor Types"
+        },
+        {
+          "_key": "s4",
+          "context": "Where the exact definition of information blocking lives in the Code of Federal Regulations",
+          "label": "Regulatory Citation",
+          "value": "45 CFR 171.103"
+        }
+      ]
+    },
+    {
+      "_key": "s1analogy",
+      "_type": "analogyBlock",
+      "analogy": "Think of information blocking like a toll bridge that was built with public funds but operated by a private company that then charges prohibitive tolls, only lets certain cars cross, and keeps the roadway in disrepair to discourage use. The 21st Century Cures Act is the law that says: the bridge must be open, the tolls must be reasonable, and the road must actually be drivable.",
+      "concept": "Information blocking uses technical, contractual, or operational barriers to prevent the free flow of patient health data that patients and clinicians have a legal right to access."
+    },
+    {
+      "_key": "s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The Eight Exceptions"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The prohibition on information blocking is not absolute. ONC finalized eight regulatory exceptions — codified at 45 CFR Part 171, Subpart B — that describe the circumstances under which an actor's practice of limiting EHI access does NOT constitute information blocking. These exceptions are divided into two categories: five exceptions describing reasons an actor might not fulfill a request for EHI, and three exceptions describing procedures actors may use when they do fulfill such requests. Critically, meeting an exception is voluntary — an actor is never required to invoke one. And satisfying an exception requires meeting all of the conditions specified in the regulation; partial compliance does not shield an actor from liability."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The five \"not fulfilling\" exceptions are: (1) the Preventing Harm Exception, which allows actors to limit EHI access when there is a reasonable belief that doing so would prevent substantial harm to a patient or another person; (2) the Privacy Exception, which covers situations where applicable state or federal privacy law prohibits the disclosure — this exception has multiple sub-conditions tied to specific HIPAA and state law scenarios; (3) the Security Exception, which permits actors to take reasonable, temporary measures to protect the security of EHI during an identified security threat; (4) the Infeasibility Exception, which acknowledges that there are genuine technical, operational, or legal constraints that can make it infeasible to fulfill a particular request; and (5) the Health IT Performance Exception, which permits health IT systems to be taken offline or have performance temporarily degraded for maintenance, upgrades, and other routine operational activities."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The three \"fulfilling requests\" exceptions govern the manner in which actors respond to legitimate EHI requests: (6) the Content and Manner Exception allows actors to negotiate and maintain reasonable terms for the access, exchange, and use of EHI — but importantly, this exception requires that the actor first attempt to reach agreement using content and manner that meets the requestor's needs; (7) the Fees Exception permits actors to charge fees for providing EHI access, but those fees must be based on objective and verifiable cost-based criteria uniformly applied to all similarly situated requestors — a $50,000 fee for a connection that costs $500 to maintain would fall well outside this exception; and (8) the Licensing Exception allows health IT developers to require licensees to obtain licenses for interoperability elements, so long as the licensing terms are non-discriminatory and commercially reasonable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Name the specific conduct — a policy, a contract clause, a technical configuration, a delay — that may constitute information blocking.",
+          "title": "Identify the practice"
+        },
+        {
+          "_key": "step2",
+          "description": "Determine which of the eight exceptions might cover this conduct. Each exception has specific conditions that must ALL be satisfied.",
+          "title": "Check the applicable exception"
+        },
+        {
+          "_key": "step3",
+          "description": "Prepare contemporaneous documentation showing that every condition of the exception is met. ONC advises actors to maintain this documentation proactively.",
+          "title": "Document the conditions"
+        },
+        {
+          "_key": "step4",
+          "description": "Remember: invoking an exception is a defense, not a right. If OIG opens an investigation, the actor bears the burden of demonstrating exception compliance.",
+          "title": "Apply the exception defensively"
+        },
+        {
+          "_key": "step5",
+          "description": "Exceptions have sub-conditions that may evolve with new ONC guidance. Compliance teams should review exception applicability at least annually.",
+          "title": "Review regularly"
+        }
+      ],
+      "title": "How to Evaluate Whether an Exception Applies"
+    },
+    {
+      "_key": "s2compare",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Likely Meets an Exception",
+        "points": [
+          "Refusing to share psychiatric notes citing state mental health privacy law (Privacy Exception)",
+          "Temporarily blocking API access during a documented ransomware incident (Security Exception)",
+          "Charging cost-based, uniformly applied fees for FHIR API connections (Fees Exception)",
+          "Declining a technically infeasible format conversion with documented rationale (Infeasibility Exception)"
+        ]
+      },
+      "right": {
+        "label": "Likely a Violation",
+        "points": [
+          "Blocking competitor EHR access without any legitimate clinical or legal basis",
+          "Charging $50,000 for an API connection that costs $500 to maintain",
+          "Offering better API terms to non-competing vendors than to competing EHR developers",
+          "Deliberately delaying data exports for weeks without a documented reason"
+        ]
+      },
+      "title": "Exception vs. Violation: Common Scenarios"
+    },
+    {
+      "_key": "s3h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Penalties and Enforcement"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The enforcement architecture for information blocking is divided between two HHS agencies with distinct authorities over distinct actor categories. The HHS Office of Inspector General (OIG) holds primary enforcement authority over health IT developers, HIEs, and HINs. OIG finalized its civil monetary penalty (CMP) rule on June 27, 2023, with enforcement becoming effective September 1, 2023. Under this rule, OIG may impose penalties of up to $1 million per violation against covered health IT actors. OIG will consider the nature and extent of the practice, the harm or potential harm caused, the duration of the conduct, the actor's history of compliance, and whether financial loss to federal health care programs resulted."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Healthcare providers face a different enforcement mechanism — \"disincentives\" administered through existing Medicare payment programs rather than standalone fines. On June 24, 2024, HHS finalized the provider disincentives rule (published in the Federal Register at 89 FR 55496, effective July 1, 2024). Under this rule, eligible hospitals found to have committed information blocking lose the ability to earn three-quarters of their annual market basket increase under the Inpatient Prospective Payment System (IPPS). Critical Access Hospitals see their Medicare reimbursement drop from 101% of reasonable costs to 100%. Individual clinicians in the Merit-based Incentive Payment System (MIPS) face estimated median losses of $686, while group practices of six clinicians could lose over $4,100. Accountable Care Organizations (ACOs) and ACO participants may be barred from the Medicare Shared Savings Program for at least one year — potentially worth millions in forgone shared savings payments."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The complaint and referral process runs through ONC (now rebranded as ASTP — the Assistant Secretary for Technology Policy). Any person or entity may submit a complaint through the ONC Information Blocking Complaint Portal. Since the portal opened in April 2021 through early 2026, nearly 1,600 complaints have been submitted, with approximately 85 percent filed by or on behalf of patients, and more than 90 percent targeting healthcare providers rather than health IT developers or HIEs. ONC reviews complaints and refers those with potential violations to OIG (for health IT developers and HIEs) or to CMS and the relevant Medicare program administrators (for healthcare providers). Enforcement escalated significantly in September 2025 when HHS Secretary Kennedy directed agency resources toward active information blocking enforcement — marking the most aggressive federal posture since the law took effect."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3stats",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "OIG penalty ceiling for health IT developers, HIEs, and HINs — effective September 1, 2023",
+          "label": "Max CMP per Violation",
+          "value": "$1 million"
+        },
+        {
+          "_key": "s2",
+          "context": "Total complaints submitted to ONC's Information Blocking Portal since April 2021",
+          "label": "Complaints Filed by 2026",
+          "value": "~1,600"
+        },
+        {
+          "_key": "s3",
+          "context": "Share of information blocking complaints submitted by patients or their representatives",
+          "label": "Filed by Patients",
+          "value": "85%"
+        },
+        {
+          "_key": "s4",
+          "context": "Date OIG began investigating healthcare providers under the 2024 disincentives final rule",
+          "label": "Provider Disincentives Begin",
+          "value": "July 31, 2024"
+        }
+      ]
+    },
+    {
+      "_key": "s3warn",
+      "_type": "warningBlock",
+      "message": "OIG has confirmed it will exercise enforcement discretion and generally not pursue conduct that occurred before July 31, 2024 for healthcare providers. However, health IT developers and HIEs have been subject to enforcement since September 1, 2023. Conduct that is ongoing — even if it began before these dates — remains actionable.",
+      "title": "No Retroactive Enforcement for Providers"
+    },
+    {
+      "_key": "s4h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Common Scenarios: What Counts as Information Blocking"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC has published extensive sub-regulatory guidance illustrating the types of practices that are likely — or unlikely — to constitute information blocking. One of the clearest categories involves unreasonable fees. The Fees Exception permits cost-based charges, but ONC guidance makes clear that fees must be objectively verifiable, uniformly applied, and proportionate to the actual cost of providing access. Charging a third-party app developer or competing health system dramatically inflated fees — while offering no-cost or nominal-cost connections to affiliated or non-competing partners — is a paradigmatic information blocking violation. The disparate treatment itself is the red flag, independent of the absolute dollar amount."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Requiring proprietary data formats when standardized FHIR APIs are available is another common scenario. The 21st Century Cures Act requires certified health IT to offer a standardized API \"without special effort\" for any individual patient or population of patients. An actor that makes data technically available only through a legacy HL7 v2 feed, a proprietary export format, or a cumbersome portal download — while refusing to enable the certified FHIR API — may be engaging in information blocking even if the data is theoretically accessible. Similarly, conditioning access on proprietary software licenses, requiring patients or clinicians to use specific applications, or building technical obstacles into the API workflow (such as excessive authentication steps applied only to competitors' apps) can all constitute information blocking."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Refusing to connect with competing health systems or vendor-neutral platforms is one of the most commercially significant patterns ONC has identified. A hospital system that shares discharge summaries, referral records, and care plans freely within its own affiliated network — but systematically delays, degrades, or refuses data exchange with providers at competing health systems — is likely engaging in information blocking, even if each individual refusal has a stated operational justification. ONC has specifically flagged \"excessive delays\" as a concern: a weeks-long processing time for a records request that could be fulfilled in minutes through existing technology is not a technical limitation; it is a practice that discourages access and may constitute information blocking absent a valid exception."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "A regional HIE offers FHIR API connections to health system members at no charge. When a digital health startup applies for a connection to access de-identified population data for a public health analytics project, the HIE quotes $50,000 in upfront fees plus $10,000 per month in maintenance — terms offered to no other connection partner. The startup files a complaint with ONC. The HIE cannot satisfy the Fees Exception because the fees are not based on objective, verifiable, uniformly applied cost criteria. OIG would likely find this to be information blocking.",
+      "title": "Scenario: The $50,000 API Connection Fee"
+    },
+    {
+      "_key": "s4ex2",
+      "_type": "exampleBlock",
+      "content": "A large EHR vendor's app marketplace approves hundreds of third-party applications. When a competing EHR vendor submits an app designed to help patients migrate their records to the new platform, the app is denied approval. The reason given is vague \"security concerns\" — but no security review was conducted and similar apps from non-competing developers were approved without review. This is a textbook Licensing Exception failure: the terms are discriminatory based on competitive status, not objective security criteria.",
+      "title": "Scenario: Blocking a Competitor's App"
+    },
+    {
+      "_key": "s5h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Real Enforcement Cases and Industry Impact"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "As of early 2026, no entity has been publicly named as the subject of a completed enforcement action with a final penalty imposed — a reality that reflects both the complexity of information blocking investigations and the deliberate sequencing of the federal enforcement ramp-up. The enforcement machinery has been built in visible stages. OIG finalized its CMP rule in June 2023. Provider disincentives were finalized in June 2024. HHS Secretary Kennedy issued a high-profile enforcement directive in September 2025. In February 2026, ASTP/ONC announced it had begun issuing letters of nonconformity to certain certified EHR developers related to API performance and potential information blocking, with formal notices of investigation to follow. The industry has been operating in an enforcement environment that was fully assembled only within the prior eighteen months."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The industry response to the information blocking framework has been substantial even in the absence of completed enforcement cases. Epic, the largest EHR vendor by U.S. market share, launched its App Orchard marketplace and has supported SMART on FHIR app authorization across its installed base. Oracle Health (formerly Cerner) upgraded its APIs to HL7 FHIR R4, the standard mandated by the ONC certification program. In real-world performance studies published in peer-reviewed literature, Oracle Cerner sites achieved bulk FHIR data export speeds of over 8,000 resources per minute for datasets of 5 to 16 million resources, while Epic sites exported at 1,555 to 2,500 resources per minute. These numbers reflect genuine technical investment in interoperability infrastructure — investment directly incentivized by the information blocking framework and the threat of CMP liability."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The population-level impact on data liquidity has been meaningful. The requirement that all certified health IT support standardized FHIR APIs has created the technical substrate for a new generation of interoperability use cases — from payer-to-provider data exchange under the CMS Interoperability Rule to patient-directed data aggregation through apps like Apple Health and CommonHealth. The ONC complaint portal data offers a revealing window into where friction remains: the fact that 90 percent of complaints name healthcare providers, not health IT developers, suggests that the cultural and organizational barriers to data sharing — not just the technical ones — remain the primary obstacle. Hospitals and clinician practices that have long treated patient data as an institutional asset are now being told, by federal law, that the patient's right to that data supersedes institutional convenience."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5callout",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5callouts",
+          "_type": "span",
+          "marks": [],
+          "text": "Industry Watch: In September 2025, the HHS-OIG and ASTP jointly issued an Enforcement Alert — a formal agency communication signaling that investigations are underway and that completed enforcement actions will be made public. Compliance officers at health IT companies and health systems should treat this alert as a direct warning that the years-long ramp-up period is ending."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s5stats",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "ASTP/ONC began issuing nonconformity letters to certified EHR developers for API and interoperability concerns",
+          "label": "First Letters of Nonconformity",
+          "value": "February 2026"
+        },
+        {
+          "_key": "s2",
+          "context": "Share of information blocking complaints targeting healthcare providers rather than health IT developers",
+          "label": "Provider Complaints",
+          "value": "90%"
+        },
+        {
+          "_key": "s3",
+          "context": "Oracle Cerner's FHIR bulk data export speed in peer-reviewed performance studies",
+          "label": "Resources/Min (Cerner)",
+          "value": "8,000+"
+        },
+        {
+          "_key": "s4",
+          "context": "No completed enforcement actions with public penalty determinations have been announced — but investigations are active",
+          "label": "Public Final Penalties (as of early 2026)",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "_key": "tkwy1",
+      "_type": "takeawayBlock",
+      "points": [
+        "Information blocking is defined at 45 CFR 171.103 as any practice by a health IT developer, HIE/HIN, or healthcare provider that is likely to interfere with the access, exchange, or use of EHI — unless required by law or covered by a regulatory exception.",
+        "Three actor categories are covered: health IT developers of certified health IT, health information exchanges and networks, and healthcare providers. Each faces a distinct knowledge standard under the law.",
+        "EHI expanded dramatically on October 6, 2022 — from USCDI Version 1 data elements to the full HIPAA Designated Record Set, covering essentially all patient medical and billing information held in any format.",
+        "ONC finalized exactly eight exceptions to information blocking, divided into five \"not fulfilling\" exceptions (Preventing Harm, Privacy, Security, Infeasibility, Health IT Performance) and three \"fulfilling\" exceptions (Content and Manner, Fees, Licensing). All conditions of an exception must be met for it to apply.",
+        "OIG can impose civil monetary penalties of up to $1 million per violation against health IT developers and HIEs — effective September 1, 2023. Healthcare providers face Medicare payment disincentives under the June 2024 final rule, including loss of market basket increases and potential exclusion from the Medicare Shared Savings Program.",
+        "Nearly 1,600 complaints had been filed with ONC's Information Blocking Complaint Portal by early 2026 — 85 percent by patients and 90 percent against healthcare providers — revealing that cultural resistance to data sharing remains the dominant barrier.",
+        "As of early 2026, no completed enforcement actions with public penalty determinations have been announced, but investigations are active. ASTP/ONC began issuing letters of nonconformity to EHR developers in February 2026, and HHS Secretary Kennedy declared enforcement a department priority in September 2025.",
+        "The information blocking framework has already driven significant industry investment in FHIR APIs and interoperability infrastructure, with major EHR vendors like Epic and Oracle Health (Cerner) building out standardized API capabilities directly in response to the certification and enforcement requirements."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "Charging dramatically different fees to competing versus non-competing developers fails the Fees Exception, which requires that fees be based on objective, verifiable, and uniformly applied cost criteria. Offering favorable terms to non-competitors while imposing punitive fees on competitors is a textbook discriminatory practice that ONC guidance explicitly identifies as likely information blocking. The other three options fall within recognized exceptions: the Security Exception covers ransomware incidents, the Privacy Exception covers state mental health privacy laws, and the Health IT Performance Exception covers scheduled maintenance.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "A hospital temporarily blocks API access during an active ransomware incident and restores it within 48 hours after the threat is contained."
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "An EHR vendor charges one competing health app developer $50,000 for an API connection while offering the same connection to non-competing developers at no charge."
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "A provider declines to share a patient's psychiatric notes because applicable state mental health privacy law prohibits disclosure without specific written consent."
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "A health IT developer takes its system offline for four hours on a Sunday morning for a scheduled database maintenance upgrade."
+        }
+      ],
+      "question": "Under the ONC information blocking rule, which of the following practices would MOST likely constitute information blocking that does NOT qualify for any regulatory exception?"
+    },
+    {
+      "_key": "srch",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srchs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] ONC Information Blocking Overview — https://www.healthit.gov/topic/information-blocking — Statutory definition, actor categories, EHI scope, and complaint portal data; primary ONC reference for the entire lesson."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] OIG Final Information Blocking Penalty Rule (June 2023) — https://oig.hhs.gov/reports/featured/information-blocking/ — Confirms $1 million per violation CMP authority for health IT developers and HIEs/HINs, effective September 1, 2023; OIG enforcement priorities."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Federal Register: Provider Disincentives Final Rule (July 1, 2024) — https://www.federalregister.gov/documents/2024/07/01/2024-13793/21st-century-cures-act-establishment-of-disincentives-for-health-care-providers-that-have-committed — CMS disincentives for eligible hospitals, CAHs, MIPS clinicians, and ACOs; specific penalty amounts and effective dates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] HHS Crackdown on Health Data Blocking (September 2025) — https://www.hhs.gov/press-room/hhs-crackdown-health-data-blocking.html — HHS Secretary Kennedy's September 2025 enforcement directive; joint OIG/ASTP Enforcement Alert; approximately 1,300–1,600 complaints filed since April 2021."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Bradley Law: The 8 Information Blocking Exceptions (2022) — https://www.bradley.com/insights/publications/2022/06/hhs-information-blocking-rule-the-8-exceptions — Detailed breakdown of all eight ONC exceptions, their conditions, and practical compliance guidance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Real World Performance of 21st Century Cures Act Population Level API — https://pmc.ncbi.nlm.nih.gov/articles/PMC10593080/ — Peer-reviewed study comparing Epic and Oracle Cerner FHIR bulk data export performance in real-world deployments; resources-per-minute figures cited in Section 5."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] ONC Understanding EHI (Designated Record Set expansion) — https://healthit.gov/information-blocking/understanding-electronic-health-information-ehi/ — Official ONC resource explaining the October 6, 2022 expansion from USCDI v1 to the full HIPAA Designated Record Set."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src8s",
+          "_type": "span",
+          "marks": [],
+          "text": "[8] Holland & Knight: The Wait Is Over — Information Blocking Enforcement Is Officially Here (February 2026) — https://www.hklaw.com/en/insights/publications/2026/02/the-wait-is-over-information-blocking-enforcement-is-officially-here — Analysis of ASTP/ONC letters of nonconformity issued to EHR developers in February 2026 and the current state of enforcement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "interop-info-blocking"
+  },
+  "title": "Information Blocking: The Law, the Exceptions, and the Enforcement"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "8627c012-ae45-451a-82f6-0ae0b1f45a93",
+  "track_id": "92eeb98e-030c-499a-be95-79635ca57473",
+  "pillar": "clinical",
+  "order": 2,
+  "slug": "patient-reported-outcomes",
+  "title": "Patient-Reported Outcomes: Measuring What Patients Care About",
+  "summary": "The shift from clinician-measured to patient-reported outcomes (PROs), the PROMIS framework, CMS's use of PROs in VBC programs, and the implementation challenges.",
+  "estimated_minutes": 16,
+  "objectives": [
+    {
+      "id": "obj_pro1",
+      "text": "Explain what patient-reported outcomes are and why they matter for quality measurement"
+    },
+    {
+      "id": "obj_pro2",
+      "text": "Describe the PROMIS measurement framework and its advantages"
+    },
+    {
+      "id": "obj_pro3",
+      "text": "Identify how CMS is incorporating PROs into value-based care programs"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Most quality measures capture process (did we do the recommended thing?) or intermediate outcome (did the patient's A1c improve?). Rarely do they ask: how does the patient feel? Can they do what they want to do? Is their pain tolerable? These patient-reported outcomes (PROs) capture the dimensions of health that patients care about most — and that don't appear in clinical records.\n\nPROs are collected via validated questionnaires asking patients directly about their symptoms, function, and quality of life. They are distinct from satisfaction surveys (CAHPS) — PROs measure health states, not opinions about care.",
+      "type": "text",
+      "heading": "What the patient experiences matters most"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Patient-Reported Outcomes Measurement Information System. NIH-funded standardized measures across physical function, fatigue, pain, depression, anxiety, social functioning. Calibrated by item response theory — adaptive short-form versions available.",
+          "icon": "ti-chart-bar",
+          "title": "PROMIS"
+        },
+        {
+          "body": "Knee Injury and Osteoarthritis Outcome Score / Hip disability and Osteoarthritis Outcome Score. Condition-specific PROs used in orthopedic bundles and joint replacement episodes.",
+          "icon": "ti-heart-rate-monitor",
+          "title": "KOOS/HOOS"
+        },
+        {
+          "body": "International Consortium for Health Outcomes Measurement. Condition-specific standard outcome sets developed with patient input — used globally to enable comparison across health systems.",
+          "icon": "ti-stethoscope",
+          "title": "ICHOM sets"
+        }
+      ],
+      "heading": "Key PRO frameworks"
+    },
+    {
+      "body": "CMS has begun incorporating PROs into several programs: joint replacement bundles require functional outcome reporting, MIPS has PRO-based quality measures, and the ACO PC Flex model incorporates patient experience measures. The challenge: collecting PROs at scale requires patient portal infrastructure, engagement, and support for patients with limited digital access.",
+      "type": "callout",
+      "heading": "CMS's move toward PROs",
+      "variant": "info"
+    }
+  ],
+  "tags": [
+    "PROM",
+    "PRO",
+    "PROMIS",
+    "patient outcomes",
+    "quality measurement"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T22:13:39.715072+00:00",
+  "updated_at": "2026-10-08T00:22:17.924402+00:00",
+  "sanity_slug": "vbc-patient-reported-outcomes"
+}

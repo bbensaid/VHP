@@ -1,0 +1,42 @@
+[
+  {
+    "id": "a30a86fe-59c5-4361-adcc-080554e93175",
+    "track_id": "a31a8a75-7474-4142-abc0-427825e26120",
+    "pillar": "technology",
+    "order": 4,
+    "slug": "ehr-business-case-roi",
+    "title": "The EHR Business Case: Total Cost of Ownership & 5-Year ROI",
+    "summary": "Build the business case for an EHR: total cost of ownership, the go-live productivity dip, and a five-year ROI model with break-even. Complements the EHR market and burden modules with the financial decision they leave out.",
+    "estimated_minutes": 20,
+    "objectives": [
+      {
+        "id": "o1",
+        "text": "Break down EHR total cost of ownership: implementation, licensing, training, and go-live productivity loss"
+      },
+      {
+        "id": "o2",
+        "text": "Explain and quantify the go-live productivity dip"
+      },
+      {
+        "id": "o3",
+        "text": "Model a phased five-year benefit stream and identify the break-even year"
+      },
+      {
+        "id": "o4",
+        "text": "Relate hosting model and vendor choice to the financial profile"
+      }
+    ],
+    "content_blocks": [],
+    "tags": [
+      "ehr",
+      "business-case",
+      "roi",
+      "adoption"
+    ],
+    "related_lesson_ids": [],
+    "is_published": true,
+    "created_at": "2026-06-15T02:30:15.033903+00:00",
+    "updated_at": "2026-06-15T02:30:15.033903+00:00",
+    "sanity_slug": "ehr-business-case-roi"
+  }
+]

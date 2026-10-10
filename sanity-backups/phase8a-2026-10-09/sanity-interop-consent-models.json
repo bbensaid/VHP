@@ -1,0 +1,623 @@
+{
+  "_createdAt": "2026-05-29T03:38:57Z",
+  "_id": "interop-consent-models",
+  "_rev": "2zkDeD7zc2Ko2DfFHmCmfJ",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T17:24:18Z",
+  "body": [
+    {
+      "_key": "s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The Consent Baseline: What HIPAA Allows Without Patient Authorization"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Before examining consent models in health information exchange (HIE), it is essential to understand what the law already permits without any patient signature. The HIPAA Privacy Rule, codified at 45 CFR Parts 160 and 164, establishes a baseline under which covered entities — hospitals, physicians, health plans, and their business associates — may use and disclose protected health information (PHI) without obtaining patient consent or authorization for three overarching categories: Treatment, Payment, and Health Care Operations, collectively known as TPO. These exceptions are not loopholes; they are deliberate design choices reflecting Congress's intent to allow the healthcare system to function efficiently while still protecting sensitive data from non-clinical misuse."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Under the Treatment exception, a primary care physician can share a patient's medication history with a referring cardiologist without asking the patient to sign anything first. Under the Payment exception, a hospital can send a patient's diagnosis codes and procedure records to a payer for claim adjudication. Under Health Care Operations, a hospital quality team can review records to evaluate outcomes without triggering authorization requirements. The minimum-necessary standard still applies to Payment and Operations disclosures — meaning only the PHI reasonably necessary to accomplish the purpose should be shared — but Treatment disclosures carry no such restriction, recognizing that a treating clinician may need the full clinical picture."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This federal floor does not stop states from enacting stronger protections. Many states have enacted \"super-HIPAA\" statutes that require explicit written consent even for some TPO disclosures, particularly for mental health records, HIV/AIDS status, genetic information, and reproductive health data. Vermont, for instance, imposes strict confidentiality requirements on HIV-related records beyond what HIPAA mandates. Maryland and Connecticut have similarly robust mental health privacy laws that restrict disclosure for treatment coordination unless the patient has consented in writing. These state variations create a patchwork that HIE operators must navigate carefully: a network spanning multiple states must honor the most restrictive applicable law, which often means building consent workflows even when HIPAA alone would not require them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Treatment, Payment, and Health Care Operations — all permissible without patient authorization under HIPAA",
+          "label": "TPO Categories",
+          "value": "3"
+        },
+        {
+          "_key": "s2",
+          "context": "Every state plus D.C. may layer additional consent requirements on top of HIPAA's federal baseline",
+          "label": "Jurisdictions",
+          "value": "50+"
+        },
+        {
+          "_key": "s3",
+          "context": "Categories such as mental health, genetics, and substance use that commonly trigger state-level extra protections",
+          "label": "Sensitive Data Categories",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "_key": "s1co",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1cos",
+          "_type": "span",
+          "marks": [],
+          "text": "Key principle: HIPAA is a floor, not a ceiling. States may — and frequently do — require stronger patient protections. HIE networks operating across state lines must determine which jurisdiction's law governs each disclosure and build their consent architecture accordingly."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Opt-In vs. Opt-Out: Definitions, Trade-offs, and State Variation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The central policy question for any HIE is whether patient data flows into the network by default — with patients able to withdraw — or only after patients affirmatively agree to participate. These two approaches, opt-out and opt-in respectively, represent fundamentally different theories of patient autonomy and administrative practicality. In an opt-out model, patients are enrolled automatically and must actively contact the HIE or their provider to restrict sharing. In an opt-in model, the patient must affirmatively sign a consent form before any records are accessible through the network. Each model carries meaningful trade-offs for data completeness, care coordination, and administrative burden."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Research published in the American Journal of Managed Care found that hospitals located in states with opt-in consent policies were 7.8 percentage points more likely than hospitals in opt-out states to report regulatory barriers to health information exchange. This gap illustrates the operational weight of opt-in consent: providers must manage consent tracking for every patient, consent forms expire, patients move, and the administrative cost compounds across millions of encounters. By contrast, opt-out models produce more complete network data because the default is inclusion. The trade-off is that patients who never read the enrollment notice may not realize their records are being shared, raising autonomy concerns — particularly among historically marginalized communities with legitimate reasons to distrust data sharing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "State policies vary considerably. New York uses a consent-to-access model through its Statewide Health Information Network (SHIN-NY) in which patients must sign a consent form for each provider who wishes to access their records — giving patients granular control but creating administrative complexity. California does not have a statewide statutory mandate, but most California HIE organizations have implemented opt-out mechanisms that allow data sharing by default while honoring patient withdrawal requests. Texas legislation frames HIE participation as \"voluntary,\" placing it outside a strict opt-in or opt-out classification. Beyond binary models, some HIEs have moved toward granular consent, where patients can say yes to sharing their diabetes records but no to sharing their mental health records — a more patient-centered approach that requires significantly more sophisticated technical infrastructure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Opt-In (Explicit Consent)",
+        "points": [
+          "Patient must actively agree before records flow into HIE",
+          "Strongest privacy protection; highest patient autonomy",
+          "Incomplete network data if enrollment rates are low",
+          "Higher administrative burden: consent tracking, renewal, revocation",
+          "Used by New York's SHIN-NY model"
+        ]
+      },
+      "right": {
+        "label": "Opt-Out (Default Inclusion)",
+        "points": [
+          "Patient is enrolled automatically; may withdraw at any time",
+          "Fuller, more representative network data",
+          "Risk of uninformed enrollment for patients who miss notices",
+          "Lower administrative burden for providers",
+          "Used or approximated by many state HIEs including California"
+        ]
+      },
+      "title": "Opt-In vs. Opt-Out: Core Trade-offs"
+    },
+    {
+      "_key": "s2ex",
+      "_type": "exampleBlock",
+      "content": "Some HIEs now offer patients a tiered consent menu rather than a single on/off switch. A patient might permit their primary care records and lab results to be shared broadly, while restricting mental health visit notes to only their psychiatrist, and blocking substance use disorder records entirely from the HIE. This granular model respects the eleven sensitive data categories recognized in health data privacy frameworks — including genetics, mental health, substance use, and sexual/reproductive health — and more closely reflects patient preferences. Research shows that 82.5% of patients consider mental health information sensitive and 64.1% want choices about sharing sensitive records with providers, underscoring demand for granular control.",
+      "title": "Granular Consent in Practice"
+    },
+    {
+      "_key": "s3h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3hs",
+          "_type": "span",
+          "marks": [],
+          "text": "42 CFR Part 2: The Special Rule for Substance Use Disorder Records"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "No federal regulation creates more friction in health information exchange than 42 CFR Part 2, the Confidentiality of Substance Use Disorder Patient Records rule. Originally enacted in the 1970s to encourage people with addiction to seek treatment without fear that their records could be used against them in criminal proceedings or by employers, Part 2 has historically imposed requirements far stricter than HIPAA's TPO framework. Under the pre-2024 regime, substance use disorder (SUD) treatment records could not be disclosed — even to other treating physicians — without a patient-signed consent form that named the specific recipient, the specific purpose, and had an expiration date. A patient treated at an opioid treatment program could not have those records automatically shared with their cardiologist even in an emergency without a valid consent in place."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "On February 8, 2024, the Department of Health and Human Services published a Final Rule modifying 42 CFR Part 2, implementing changes Congress required in the 2020 CARES Act. The rule took effect on April 16, 2024, with a compliance deadline of February 16, 2026. The 2024 Final Rule makes four landmark changes. First, it allows a single patient consent to cover all future uses and disclosures for treatment, payment, and health care operations — eliminating the need to name every specific recipient. Second, it aligns Part 2 breach notification requirements with HIPAA's Breach Notification Rule. Third, it grants Part 2 patients new rights to request an accounting of disclosures and to request restrictions on certain disclosures, mirroring rights already available under HIPAA. Fourth, it replaces Part 2's criminal-only penalties with HIPAA-aligned civil and criminal enforcement authority, administered by HHS Office for Civil Rights."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite these improvements, the consent segmentation challenge for HIEs remains significant. Even under the 2024 rule, Part 2 records require consent before they can flow through an HIE — the single-consent mechanism helps, but HIE platforms must be able to identify which records originated from a Part 2 program and apply the appropriate controls. Historically, many HIE vendors simply blocked all exchange of SUD records to avoid compliance exposure, meaning a patient's treatment for opioid use disorder was invisible to the emergency department treating that same patient for an overdose. Implementing Part 2-compliant segmentation requires labeling records at the source, propagating those labels through the exchange infrastructure, and enforcing access rules at the point of query — a technically demanding sequence that most legacy HIE platforms were not built to support."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3warn",
+      "_type": "warningBlock",
+      "message": "A common compliance mistake is assuming that a HIPAA-compliant HIE automatically handles 42 CFR Part 2 records correctly. It does not. Until a provider's HIE platform explicitly implements Part 2 consent tracking and record segmentation, the safest default is to exclude SUD records from HIE exchange entirely — which means care gaps. The 2024 Final Rule alignment helps, but technical implementation remains the bottleneck.",
+      "title": "Do Not Conflate HIPAA and Part 2"
+    },
+    {
+      "_key": "s3sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "HHS published the 42 CFR Part 2 Final Rule on February 8, 2024, aligning it with HIPAA after the 2020 CARES Act mandate",
+          "label": "Final Rule Published",
+          "value": "Feb 2024"
+        },
+        {
+          "_key": "s2",
+          "context": "Covered entities must fully comply with the updated 42 CFR Part 2 requirements by February 16, 2026",
+          "label": "Compliance Deadline",
+          "value": "Feb 2026"
+        },
+        {
+          "_key": "s3",
+          "context": "Part 2 was created decades before HIPAA to encourage SUD treatment-seeking without fear of legal or employment consequences",
+          "label": "Original Enactment",
+          "value": "1970s"
+        }
+      ]
+    },
+    {
+      "_key": "s4h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hs",
+          "_type": "span",
+          "marks": [],
+          "text": "FHIR Consent Resource and Digital Consent Management"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The emergence of HL7 FHIR as the dominant interoperability standard has introduced a structured, computable mechanism for expressing consent: the FHIR Consent resource. Available since FHIR Release 3 and substantially refined in R4 and R5, the Consent resource can encode a wide range of privacy policies in machine-readable form. The resource's core structure begins with a base decision — either permit or deny — and then layers in provisions that represent exceptions to that decision. Each provision can be scoped by data category, purpose of use, actor (the individual or organization authorized to access), date range, and security label. Nested sub-provisions allow for arbitrarily complex policy trees: a patient could grant broad access to a care team but exclude a specific data category or specific provider role."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The HL7 Data Segmentation for Privacy (DS4P) Implementation Guide, published by the HL7 Security Working Group, extends this capability by defining how security labels should be applied to individual FHIR resources based on their sensitivity classification. The DS4P IG specifies the sec-label-basis extension, which records which policy or regulation drove the label assignment — allowing a system to know, for instance, that a MedicationRequest resource carries a Part 2 label because it originated from a certified opioid treatment program. The sec-label-related-artifact extension can then point to the specific consent directive that authorizes a disclosure, creating an auditable chain from consent to data release. Packages for both R4 and R4B are available, and the SAMHSA-sponsored Consent2Share (C2S) open-source platform was built on this specification to demonstrate feasibility."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The technical challenges of enforcing granular consent at scale in production FHIR APIs are considerable. First, consent must be checked at query time — not just at ingestion — meaning every FHIR API call must be evaluated against the patient's current consent record before any data is returned. Second, consent records themselves can change: a patient revokes consent, updates a provision, or grants new access. The HIE's query engine must either maintain a consent cache that is updated in near real-time or query the authoritative consent store synchronously, adding latency. Third, many clinical workflows generate bulk queries — document queries, summary patient records, care gap analyses — and applying row-level consent filtering to millions of records requires purpose-built data access control infrastructure that most EHR vendors have not yet standardized. The FHIR Consent resource provides the grammar; building a scalable enforcement engine is the engineering work the industry is still completing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4an",
+      "_type": "analogyBlock",
+      "analogy": "Think of the FHIR Consent resource as a sophisticated key-ring management system. Each consent provision is like a copy of a key that grants access to a specific room (data category) in a building (the patient record). The base decision sets whether the default is \"all doors locked\" (deny) or \"all doors open\" (permit), and each provision adds or removes specific keys. The DS4P security labels are like the room labels on each door. The enforcement engine is the security guard who checks every key against every door at every entry point — in real time, at scale.",
+      "concept": "FHIR Consent provisions map data access rules in a machine-readable hierarchy, but enforcement requires an active policy decision point at every API query."
+    },
+    {
+      "_key": "s4st",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Patient (or clinician on behalf of patient) submits a FHIR Consent resource to the HIE's consent registry, specifying permitted actors, data categories, and purposes of use.",
+          "title": "Patient Creates Consent"
+        },
+        {
+          "_key": "step2",
+          "description": "Source systems or the HIE apply DS4P security labels to incoming FHIR resources based on data category (e.g., mental health, SUD, genetics) at ingestion time.",
+          "title": "Records Are Labeled"
+        },
+        {
+          "_key": "step3",
+          "description": "A requesting provider's system submits a FHIR query (e.g., GET /Patient/{id}/$everything) to the HIE with a declared purpose of use.",
+          "title": "Query Is Received"
+        },
+        {
+          "_key": "step4",
+          "description": "The HIE's Policy Decision Point (PDP) retrieves the patient's current consent record and evaluates whether the requesting actor, declared purpose, and data categories are all permitted.",
+          "title": "Consent Is Evaluated"
+        },
+        {
+          "_key": "step5",
+          "description": "Only FHIR resources whose labels match the granted provisions are included in the response. Restricted resources are either redacted or replaced with an existence notice, depending on policy.",
+          "title": "Filtered Response Is Returned"
+        }
+      ],
+      "title": "How a FHIR Consent-Enforced Query Works"
+    },
+    {
+      "_key": "s5h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The Path to Standardization: TEFCA, ONC, and Consent Interoperability"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Trusted Exchange Framework and Common Agreement (TEFCA), administered by ONC and operated through the Recognized Coordinating Entity (RCE), represents the federal government's most ambitious attempt to create a national, interoperable HIE fabric. TEFCA's architecture is built around Qualified Health Information Networks (QHINs) — large-scale networks that interconnect regional HIEs, provider networks, payers, and public health agencies under a single governance framework and set of technical standards. As of 2024, Common Agreement Version 2.0 was published in the Federal Register on May 1, 2024, with updated standard operating procedures released in August 2024 to support new exchange purposes including public health and benefit determination."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "TEFCA's consent approach rests on the concept of Exchange Purposes (XPs). Every data request transmitted through TEFCA must identify the lawful purpose for which it is made — Treatment, Payment, Health Care Operations, Public Health, Benefits Determination, or Individual Access Services. For Individual Access Services, entities must obtain express consent from the individual before providing access. For other exchange purposes, TEFCA relies on the applicable federal and state laws that already govern those disclosures — meaning HIPAA's TPO framework applies to Treatment, Payment, and Operations queries, while state law may layer additional requirements. TEFCA does not yet impose a unified national consent standard, and state-level variation remains a significant interoperability barrier within the network of networks. A QHIN receiving a Treatment query from a provider in a state with opt-in HIE consent requirements must still honor those requirements even if the data originates in an opt-out state."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC's Data Segmentation for Privacy (DS4P) initiative, launched as a pilot program in October 2011, laid the conceptual and technical groundwork for what is now the HL7 DS4P Implementation Guide. The initiative demonstrated that metadata tags could be used to label sensitive data categories and enforce selective sharing across organizational boundaries. SAMHSA's Consent2Share platform — an open-source consent management and data segmentation tool — was built on DS4P specifications and designed to integrate with existing EHR and HIE systems. For production-grade consent management, organizations including CommonWell Health Alliance, Carequality, and regional HIEs have been developing or procuring consent management platforms capable of storing, evaluating, and enforcing patient consent decisions at the speed required for real-time clinical exchange. The convergence of TEFCA governance, FHIR R4 APIs, and DS4P security labels is creating the technical foundation for a national consent interoperability layer — but full standardization across all fifty states remains a multi-year effort."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5hl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hls",
+          "_type": "span",
+          "marks": [],
+          "text": "TEFCA Common Agreement Version 2.0 was published May 1, 2024, with updated SOPs released August 2024. Every TEFCA query must declare an Exchange Purpose; Individual Access Services require express patient consent. State law still governs consent requirements for Treatment, Payment, and Operations queries within QHIN networks."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s5sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Common Agreement Version 2.0 entered the Federal Register on May 1, 2024, expanding TEFCA's lawful exchange purposes",
+          "label": "TEFCA v2.0 Published",
+          "value": "May 2024"
+        },
+        {
+          "_key": "s2",
+          "context": "TEFCA recognizes six lawful Exchange Purposes: Treatment, Payment, Operations, Public Health, Benefits Determination, and Individual Access Services",
+          "label": "Exchange Purposes",
+          "value": "6"
+        },
+        {
+          "_key": "s3",
+          "context": "ONC's Data Segmentation for Privacy pilot launched in October 2011, pioneering metadata-based sensitive data labeling for HIE",
+          "label": "DS4P Initiative Launched",
+          "value": "2011"
+        }
+      ]
+    },
+    {
+      "_key": "tkwy",
+      "_type": "takeawayBlock",
+      "points": [
+        "HIPAA's TPO framework permits disclosure for Treatment, Payment, and Health Care Operations without patient authorization, but states may — and do — require additional consent, creating a legal patchwork HIEs must navigate.",
+        "Opt-out models produce more complete HIE data but risk enrolling patients who did not meaningfully choose to participate; opt-in models honor autonomy but reduce network completeness and increase administrative burden.",
+        "Granular consent allows patients to share some data categories (e.g., diabetes records) while restricting others (e.g., mental health, SUD) — a model that best reflects patient preferences but demands sophisticated technical infrastructure.",
+        "42 CFR Part 2 historically imposed consent requirements far stricter than HIPAA for substance use disorder records; the February 2024 Final Rule aligned Part 2 with HIPAA's TPO framework, with a compliance deadline of February 16, 2026.",
+        "Even after Part 2 alignment, HIEs must implement record-level segmentation and consent tracking for SUD data — a technical challenge many legacy platforms have not yet solved.",
+        "The HL7 FHIR Consent resource (R4) provides a machine-readable structure for encoding patient consent policies as permit/deny decisions with nested provisions scoped by actor, data category, and purpose; the DS4P IG extends this with security label specifications.",
+        "TEFCA's Exchange Purpose framework establishes lawful basis declarations for every QHIN query but defers to existing federal and state law for Treatment, Payment, and Operations consent — meaning state variation persists within the national network.",
+        "Scalable consent enforcement in production FHIR environments requires a Policy Decision Point that evaluates consent in real time at every API call — an engineering challenge the industry is still solving."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "The 2024 Final Rule, implementing the 2020 CARES Act mandate, allowed a single patient consent to cover all TPO uses and disclosures of SUD records — eliminating the need to name every specific recipient in advance. The rule also aligned Part 2's breach notification and penalty structures with HIPAA, but did not repeal Part 2 or extend its scope to non-SUD records.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Part 2 was repealed entirely, and SUD records are now governed solely by HIPAA."
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "A single patient consent can now cover all future uses and disclosures for treatment, payment, and health care operations, aligning Part 2 with HIPAA's TPO framework."
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Providers are now required to obtain separate written consent for every individual disclosure of SUD records, regardless of purpose."
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The 2024 rule extended Part 2 protections to cover all sensitive health data categories, including mental health and genetic records."
+        }
+      ],
+      "question": "Which of the following best describes the key change made to 42 CFR Part 2 by the 2024 HHS Final Rule?"
+    },
+    {
+      "_key": "srcH",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcHs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] HHS Fact Sheet: 42 CFR Part 2 Final Rule — https://www.hhs.gov/hipaa/for-professionals/regulatory-initiatives/fact-sheet-42-cfr-part-2-final-rule/index.html — Confirms February 8, 2024 publication date, April 16, 2024 effective date, February 16, 2026 compliance deadline, and key changes including single-consent for TPO, breach notification alignment, and HIPAA penalty alignment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] AJMC: Opt-In Consent Policies — Potential Barriers to Hospital Health Information Exchange — https://www.ajmc.com/view/optin-consent-policies-potential-barriers-to-hospital-health-information-exchange — Source for the finding that hospitals in opt-in states were 7.8 percentage points more likely to report regulatory barriers to HIE, and for the administrative burden analysis comparing opt-in vs. opt-out models."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] HL7 FHIR Data Segmentation for Privacy (DS4P) Implementation Guide — https://build.fhir.org/ig/HL7/fhir-security-label-ds4p/index.html — Source for DS4P IG structure, sec-label-basis extension, sec-label-related-artifact extension, and R4/R4B package availability."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] ONC / HealthIT.gov: Trusted Exchange Framework and Common Agreement (TEFCA) — https://www.healthit.gov/topic/interoperability/policy/trusted-exchange-framework-and-common-agreement-tefca — Source for TEFCA Exchange Purpose framework, QHIN structure, Common Agreement Version 2.0 publication date (May 1, 2024), and Individual Access Services express consent requirement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] HealthIT.gov: State Consent Laws — https://www.healthit.gov/topic/interoperability/state-consent-laws — Source for 50-state comparative overview of HIE patient consent policies, state-specific opt-in and opt-out approaches, and New York's consent-to-access model."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] PMC / NIH: Granular Patient Control of Personal Health Information — https://pmc.ncbi.nlm.nih.gov/articles/PMC6890413/ — Source for the eleven sensitive data categories used in granular consent frameworks and patient survey findings (82.5% consider mental health information sensitive; 64.1% want choices over sensitive record sharing)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] ONC DS4P Initiative and Consent2Share — https://www.healthit.gov/topic/health-it-health-care-settings/behavioral-health-consent-management — Source for the October 2011 DS4P pilot launch, the Consent2Share (C2S) open-source tool, and SAMHSA's role in sponsoring consent management and data segmentation technology for behavioral health HIE."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "interop-consent-models"
+  },
+  "title": "Consent Models in Health Information Exchange: Opt-In, Opt-Out, and Everything In Between"
+}

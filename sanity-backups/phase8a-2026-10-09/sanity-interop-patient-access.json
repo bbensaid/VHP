@@ -1,0 +1,874 @@
+{
+  "_createdAt": "2026-05-29T03:07:35Z",
+  "_id": "interop-patient-access",
+  "_rev": "glqH7a4yvZFQerxZdH4UiB",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T02:07:16Z",
+  "body": [
+    {
+      "_key": "intro_p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a823628f265e4fdc",
+          "_type": "span",
+          "marks": [],
+          "text": "Your health data tells a story that spans decades — every diagnosis, every medication, every lab value, every surgery. Yet for most of American healthcare history, patients have been passive observers of that story, unable to read it, let alone share it. Physicians held records in file cabinets. Hospitals locked data inside proprietary systems. Insurers sat on years of claims that patients never saw. The 21st century brought electronic health records, but digitizing a locked file cabinet does not make information free."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "intro_p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "56c3510387e94c08",
+          "_type": "span",
+          "marks": [],
+          "text": "That reality is now changing — not because the industry chose transparency voluntarily, but because federal law now mandates it. A converging set of regulations — the 21st Century Cures Act, the CMS Interoperability and Patient Access Final Rule (CMS-9115-F), and the ONC Cures Act Final Rule — have created enforceable patient rights to electronic health data. APIs are the pipes. FHIR is the language. SMART on FHIR is the security handshake. Together, they are building the infrastructure for true health data portability. This lesson examines the legal foundations of those rights, the technical systems built to fulfill them, the real-world barriers that still limit access, and the road ahead."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "intro_stats",
+      "_type": "statGrid",
+      "items": [
+        {
+          "label": "Patients offered portal access (2024)",
+          "value": "77%"
+        },
+        {
+          "label": "Of those offered access, who used it",
+          "value": "65%"
+        },
+        {
+          "label": "U.S. hospitals with FHIR app APIs (2024)",
+          "value": "70%"
+        },
+        {
+          "label": "Apple Health Records partner facilities",
+          "value": "500+"
+        },
+        {
+          "label": "Medicare beneficiaries covered by Blue Button 2.0",
+          "value": "60M+"
+        },
+        {
+          "label": "HIPAA Right of Access response window",
+          "value": "30 days"
+        }
+      ]
+    },
+    {
+      "_key": "s1_h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eb6d03fd307145f5",
+          "_type": "span",
+          "marks": [],
+          "text": "The Original Foundation: HIPAA's Right of Access"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1_p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "66f6a8e39a6c4b2d",
+          "_type": "span",
+          "marks": [],
+          "text": "Long before FHIR or APIs existed, patients already had a federal right to their health information. The HIPAA Privacy Rule, codified at 45 CFR §164.524, grants every patient the right to inspect and obtain a copy of their protected health information (PHI) maintained in a designated record set. This right covers medical records, billing records, and any other records used to make decisions about the individual."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1_p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "0b1c3e42a55a4423",
+          "_type": "span",
+          "marks": [],
+          "text": "The mechanics are straightforward on paper. A patient submits a written request to a covered entity — a hospital, physician practice, insurer, or their business associates — and the covered entity must act on that request within 30 calendar days of receipt. A single 30-day extension is permitted if the entity notifies the patient in writing of the reason for delay and provides a date by which it will complete the action. Covered entities may charge a reasonable, cost-based fee — but that fee can only cover labor for copying, supplies, and postage. They cannot charge for retrieving or reviewing the records, a distinction the Office for Civil Rights (OCR) at HHS has repeatedly emphasized in enforcement actions. When a patient uses a patient portal's View, Download, and Transmit functionality, no fee may be charged at all."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1_p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "9b0c1820c8684170",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite this longstanding right, compliance was historically poor. Providers routinely imposed excessive fees, demanded notarized requests, required patients to appear in person, or simply failed to respond within the legally required window. OCR launched a Right of Access Initiative in 2019, specifically targeting providers who delayed, denied, or overcharged patients for their records. The initiative has resulted in dozens of settlements and civil monetary penalties. As recently as December 2024, OCR finalized a $200,000 penalty against OHSU for Right of Access violations, and reached a $60,000 settlement with South Broward Hospital District. These enforcement actions signal that HHS treats patient access as a genuine legal obligation — not a courtesy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1_callout",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1_callouts",
+          "_type": "span",
+          "marks": [],
+          "text": "Under HIPAA 45 CFR §164.524, patients have the right to direct their PHI to a third party of their choosing — including a health app, a caregiver, or another provider. Covered entities cannot refuse on the grounds that they do not trust the receiving app or question the patient's reason for sharing."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1_warning",
+      "_type": "warningBlock",
+      "message": "HIPAA's Right of Access applies to 'designated record sets' — not necessarily every record a clinician ever created. Psychotherapy notes, certain quality assurance records, and information compiled for legal proceedings may be excluded. The 21st Century Cures Act's information blocking rules extend further, covering all electronic health information (EHI) — a broader category than HIPAA's designated record set."
+    },
+    {
+      "_key": "s2_h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8094a2e85f554194",
+          "_type": "span",
+          "marks": [],
+          "text": "21st Century Cures Act: The Information Blocking Prohibition"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2_p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "648d3b7b02994e9f",
+          "_type": "span",
+          "marks": [],
+          "text": "The 21st Century Cures Act, signed into law in December 2016, took the concept of patient access and reframed it as a prohibition framework. Rather than simply granting rights to patients, it made it illegal for 'actors' in the healthcare ecosystem — health IT developers, health information networks, and healthcare providers — to engage in practices that interfere with the access, exchange, or use of electronic health information (EHI). This prohibition, codified in the ONC Cures Act Final Rule at 45 CFR Part 171, took effect April 5, 2021."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2_p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eafbcfb8d52a4c49",
+          "_type": "span",
+          "marks": [],
+          "text": "The statute defines information blocking broadly: any practice that a provider, health IT developer, or health information network knows is likely to interfere with, prevent, or materially discourage access, exchange, or use of EHI — unless the practice falls within a defined exception. ONC codified eight categories of permissible exceptions, including practices necessary to prevent harm, protect privacy, maintain security, comply with other laws, or address infeasibility. If an actor cannot fit their practice within one of these eight exceptions, the practice is presumed to be information blocking. The scope of EHI covered by the prohibition expanded in October 2022 from a subset of structured data to nearly all information in a patient's designated record set — including clinical notes, imaging reports, and behavioral health records."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2_p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a32d8759823f428b",
+          "_type": "span",
+          "marks": [],
+          "text": "Enforcement unfolded in stages. ONC began enforcing against health IT developers and health information exchanges on September 1, 2023, with civil monetary penalties of up to $1,000,000 per violation. Disincentives for healthcare providers became effective July 1, 2024 — making the prohibition fully operational across all actor types. Providers found to have committed information blocking may lose Meaningful Use status, receive a zero score in the MIPS Promoting Interoperability performance category, or be excluded from the Medicare Shared Savings Program for at least one year. A February 2026 HHS announcement of a formal crackdown on health data blocking signals continued and intensifying enforcement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2_compare",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "",
+        "points": []
+      },
+      "right": {
+        "label": "",
+        "points": []
+      }
+    },
+    {
+      "_key": "s2_example",
+      "_type": "exampleBlock",
+      "content": "A regional hospital system charges patients $1 per page plus a $25 administrative fee to retrieve records requested for care coordination with another provider. Under HIPAA, the $25 fee is impermissible — it covers retrieval, not copying. Under the Cures Act information blocking rules, any policy that systematically discourages patients from exercising their access rights, without a valid exception, could constitute information blocking — even if the fee would survive HIPAA scrutiny. The two frameworks overlap but are not identical; compliance with one does not guarantee compliance with the other."
+    },
+    {
+      "_key": "s3_h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ef76b18e1bf6423b",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS-9115-F: The Patient Access API Mandate for Payers"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3_p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8429f9af04994335",
+          "_type": "span",
+          "marks": [],
+          "text": "While the 21st Century Cures Act and the ONC Cures Act Final Rule primarily regulate providers and health IT developers, CMS took parallel action on the payer side with the Interoperability and Patient Access Final Rule (CMS-9115-F), finalized in May 2020. This rule targets a data trove that patients had almost never been able to access: their insurance claims and clinical data held by Medicare Advantage plans, Medicaid managed care organizations, CHIP plans, and Qualified Health Plan (QHP) issuers on the Federally Facilitated Exchanges."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3_p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "7fc5b08cabae4c72",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS-9115-F requires affected payers to implement a Patient Access API — a FHIR R4-based interface that patients can use to retrieve their own data. The API must expose adjudicated claims and encounter data, clinical data (including laboratory results), prior authorization decisions, and formulary and coverage information. Critically, the rule requires that payers make data available going back to January 1, 2016 — giving patients a multi-year view of their own insurance history, not just recent claims. CMS enforced compliance beginning July 1, 2021 after exercising enforcement discretion through the first half of that year."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3_p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "09ca3a438bc2400c",
+          "_type": "span",
+          "marks": [],
+          "text": "The Patient Access API uses SMART on FHIR for authorization. When a patient wants to connect a third-party app to their insurance data, the app redirects the patient to the payer's authorization server. The patient logs in with their insurer credentials and grants the app specific permissions using OAuth 2.0 scopes. The payer's server then issues a time-limited access token — the patient's credentials are never shared with the third-party app. The app presents this token to the FHIR API and retrieves the patient's data. The patient can revoke access at any time through the payer's portal. This architecture brings health insurance data access into alignment with how consumers already authorize apps to access their bank accounts or email."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3_p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "946b709286c6452d",
+          "_type": "span",
+          "marks": [],
+          "text": "Subsequent rulemakings have layered additional requirements on top of CMS-9115-F. The 2024 CMS Interoperability and Prior Authorization Final Rule (CMS-0057-F) added requirements for Prior Authorization APIs, mandating that payers expose prior authorization decisions and timelines via FHIR and publicly report prior authorization metrics beginning in 2026. Each new mandate extends the scope of payer data that patients can access programmatically, steadily dismantling the information asymmetry that has defined the payer-patient relationship for decades."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3_stats",
+      "_type": "statGrid",
+      "items": [
+        {
+          "label": "Patient Access API enforcement date",
+          "value": "July 1, 2021"
+        },
+        {
+          "label": "Historical data window required",
+          "value": "From Jan 1, 2016"
+        },
+        {
+          "label": "Payer types covered",
+          "value": "MA, Medicaid, CHIP, QHP"
+        },
+        {
+          "label": "API standard required",
+          "value": "HL7 FHIR R4"
+        },
+        {
+          "label": "Authorization protocol",
+          "value": "SMART on FHIR / OAuth 2.0"
+        },
+        {
+          "label": "Prior Authorization API deadline",
+          "value": "2026-2027"
+        }
+      ]
+    },
+    {
+      "_key": "s3_h3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "eee94f03cc4b4521",
+          "_type": "span",
+          "marks": [],
+          "text": "What Data Does the Patient Access API Expose?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "s3_steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "s0",
+          "_type": "step",
+          "title": "Adjudicated claims and encounter data — every service billed to the insurer, going back to January 1, 2016"
+        },
+        {
+          "_key": "s1",
+          "_type": "step",
+          "title": "Clinical data including laboratory results and diagnostic information the payer holds"
+        },
+        {
+          "_key": "s2",
+          "_type": "step",
+          "title": "Prior authorization requests, decisions, and denial reasons"
+        },
+        {
+          "_key": "s3",
+          "_type": "step",
+          "title": "Formulary and prescription drug coverage information via a Drug Formulary API"
+        },
+        {
+          "_key": "s4",
+          "_type": "step",
+          "title": "Provider directory information — network status and specialty data via a Provider Directory API"
+        }
+      ]
+    },
+    {
+      "_key": "s4_h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "5393f521fd2a46c6",
+          "_type": "span",
+          "marks": [],
+          "text": "Blue Button 2.0, Apple Health Records, and the Patient App Ecosystem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4_p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "78448ee8fe874a93",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS's own implementation of the Patient Access API concept predates CMS-9115-F. Blue Button 2.0 — launched as a production API in 2018 — gives Medicare beneficiaries the ability to authorize third-party apps to access their Medicare Part A (hospital), Part B (outpatient), and Part D (prescription drug) claims and encounter data. The API serves FHIR-formatted data for over 60 million Medicare beneficiaries — one of the largest repositories of longitudinal health claims data in the world. Beneficiaries authorize apps through Medicare.gov, retaining full control over which applications can access their information and for how long."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4_p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "604f102e821e464f",
+          "_type": "span",
+          "marks": [],
+          "text": "Blue Button 2.0 demonstrated both the promise and the persistent challenge of patient-facing health data APIs. On the promise side, the program proved that a FHIR API could operate at Medicare's scale — hundreds of millions of claims records served to authorized apps on demand. It attracted dozens of registered production applications spanning personal health management, care coordination, research platforms, and benefits navigation services. On the challenge side, actual beneficiary uptake remained modest: despite the size of the eligible population, the fraction of Medicare's 60 million beneficiaries who connected an app to Blue Button 2.0 was small. Access rights and technical capability do not automatically translate into patient engagement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4_p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e41cb587156245f6",
+          "_type": "span",
+          "marks": [],
+          "text": "Apple Health Records represents perhaps the most visible consumer-facing implementation of FHIR-based patient access. Launched with 12 hospital partners in 2018, the feature uses the FHIR R4 standard and the SMART on FHIR authorization framework to pull clinical records directly into the iPhone Health app. By 2024, more than 500 hospitals and health systems were connected to Apple Health Records. ONC data from 2024 found that 70% of U.S. hospitals enabled patient access via FHIR-configured apps — up from 49% in 2021 — and that 57% of patients used app-based access to medical records, compared to 38% in 2020. The program demonstrates that patients will adopt health data apps when the user experience is genuinely frictionless."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4_p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "6df31250bbdc4f4d",
+          "_type": "span",
+          "marks": [],
+          "text": "The SMART on FHIR standard, developed originally at Boston Children's Hospital and HL7, provides the authorization layer that makes the app ecosystem interoperable. SMART App Launch version 2.2.0 layers OAuth 2.0 and OpenID Connect on top of FHIR, providing a standardized way for apps to request specific scopes of patient data, confirm patient identity via OpenID Connect claims, and receive time-limited access tokens. This framework is now required by the ONC Cures Act Final Rule for certified health IT — meaning any EHR vendor seeking ONC certification must support it. The result is a genuine ecosystem: any SMART-compatible patient app can, in principle, connect to any certified EHR, without custom integration work."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4_analogy",
+      "_type": "analogyBlock",
+      "analogy": "Think of SMART on FHIR like the 'Sign in with Google' button that thousands of apps use. You never give the third-party app your Google password — Google's servers verify your identity and issue a limited permission token. SMART on FHIR does the same thing for health data: your EHR or payer verifies who you are and hands the app a time-limited key to specific parts of your record — nothing more, nothing less. The result is consent-based, scoped, revocable access that puts the patient in control."
+    },
+    {
+      "_key": "s5_h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "de60196d6d90498e",
+          "_type": "span",
+          "marks": [],
+          "text": "The Gap Between Rights and Reality: Persistent Barriers"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5_p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "b2314f4c97db4c60",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite a robust legal framework and steadily improving technical infrastructure, patient access to health data remains far from universal in practice. ONC's 2024 Health Information National Trends Survey (HINTS) data found that while 77% of individuals nationally were offered online access to their health information, only 65% of those offered access actually used it. Among portal users, only 32% had used the download feature to save a copy of their records, and only 21% had transmitted their records to a third party. The majority of patients with portal access were using it passively — viewing, but not moving, their data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5_p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "dcffbb3b8b2d41ee",
+          "_type": "span",
+          "marks": [],
+          "text": "The barriers are both structural and sociodemographic. On the structural side, patients with care scattered across multiple health systems face fragmentation: a portal from each provider, each requiring separate login credentials, each showing only that system's data. Patients who have seen five specialists in three health systems may need five portals to assemble a complete picture of their care. CommonWell Health Alliance and Carequality — the two major nationwide health information exchange frameworks, both now connected to TEFCA — enable provider-to-provider data sharing across organizations. But patient-initiated cross-provider exchange, where a patient directs their records from one system to another without involving a clinician, remains technically complex and poorly supported in most consumer-facing applications."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5_p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "095598751afb48e9",
+          "_type": "span",
+          "marks": [],
+          "text": "On the sociodemographic side, ONC data consistently documents disparities in portal access and use by race, ethnicity, income, education, and geography. Patients with lower health literacy may struggle to interpret clinical notes and lab values even when they can access them. Non-English speakers face language barriers in portal interfaces designed primarily for English-language users. Rural patients may lack reliable broadband for app-based access. Lower-resourced hospitals — small, rural, and Critical Access facilities — lag significantly behind large academic medical centers in deploying FHIR-enabled app APIs, meaning patients at those facilities may not yet have the same technical access as patients at well-resourced systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5_p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fa9c606889c448da",
+          "_type": "span",
+          "marks": [],
+          "text": "There is also the question of what patients can do once they have their data. A FHIR bundle of clinical data is rich and machine-readable, but it was not designed for lay audiences. Allergy codes, procedure codes, SNOMED-coded diagnoses, and LOINC-coded lab values are meaningful to clinicians and software systems — but a patient staring at a raw FHIR JSON file is not meaningfully informed. The real frontier of patient access is not just getting data out of systems — it is translating that data into actionable insight for the person it belongs to."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5_compare",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "",
+        "points": []
+      },
+      "right": {
+        "label": "",
+        "points": []
+      }
+    },
+    {
+      "_key": "s5_highlight",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5_highlights",
+          "_type": "span",
+          "marks": [],
+          "text": "In 2024, 70% of U.S. hospitals enabled patient access via FHIR app APIs — up from 49% in 2021. Progress is real, but 30% of hospitals still do not provide this mandated capability, disproportionately affecting patients at small, rural, and Critical Access facilities."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s6_h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e00162b04a3f4a63",
+          "_type": "span",
+          "marks": [],
+          "text": "The Road to True Portability: What Comes Next"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s6_p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a17963409e244fe5",
+          "_type": "span",
+          "marks": [],
+          "text": "The regulatory infrastructure built between 2016 and 2024 has established that patients have enforceable rights to their electronic health information. The technical infrastructure — FHIR R4, SMART on FHIR, Patient Access APIs, Blue Button 2.0, TEFCA — has created standardized pipes through which that data can flow. What the ecosystem now needs is the final layer: applications, data intermediaries, and user experiences that make portable health data genuinely useful to patients in the moments that matter."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6_p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "f720b93104154dbb",
+          "_type": "span",
+          "marks": [],
+          "text": "TEFCA, the Trusted Exchange Framework and Common Agreement finalized by ONC in January 2022 and operationalized through Qualified Health Information Networks (QHINs) beginning in 2023, is building the nationwide backbone for patient-directed exchange at scale. CommonWell and Carequality have both committed to TEFCA connectivity, potentially unifying the major nationwide exchange frameworks under a single governance structure. Under TEFCA's Individual Access Services, patients will be able to direct the movement of their records from any TEFCA-connected organization to any other — regardless of which EHR or payer system those organizations use."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6_p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ce1ec80b1cbe4368",
+          "_type": "span",
+          "marks": [],
+          "text": "The longer-term vision — a single, patient-controlled longitudinal health record — aggregates data from every provider, payer, pharmacy, lab, and device the patient has ever interacted with. Several companies are building toward this model, pulling FHIR data from multiple sources simultaneously using SMART on FHIR and assembling it into a unified timeline. As AI-powered interpretation layers mature, patients may eventually receive not just a copy of their records, but a personalized, plain-language explanation of what those records mean — closing the loop between access and understanding."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6_p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "25ec899c220f4d21",
+          "_type": "span",
+          "marks": [],
+          "text": "Two risks deserve attention as patient access expands. First, privacy: when patients share data with apps via SMART on FHIR, those apps are not necessarily covered entities under HIPAA — they may be regulated only by the FTC, which applies a weaker standard. A patient who shares their Medicare claims with a wellness app may have significantly less protection than they realize. Second, equity: if the apps and platforms that make portable data useful are designed for the already-connected and already-literate patient, the information blocking prohibition will have succeeded technically while failing the patients who most need to benefit from it. True portability is not just a legal right — it is an equity imperative."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6_quote",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6_quotes",
+          "_type": "span",
+          "marks": [],
+          "text": "Patients should not have to fight for their own health information. Data blocking is a patient safety issue — when records do not follow the patient, care suffers."
+        }
+      ],
+      "markDefs": [],
+      "style": "blockquote"
+    },
+    {
+      "_key": "takeaway_main",
+      "_type": "takeawayBlock",
+      "points": [
+        "HIPAA's Right of Access (45 CFR §164.524) gives patients the right to their records within 30 days; fees can only cover copying costs — not retrieval, search, or review.",
+        "The 21st Century Cures Act prohibits information blocking by providers, health IT developers, and health information networks under 45 CFR Part 171; full enforcement across all actor types has been active since July 2024.",
+        "CMS-9115-F requires Medicare Advantage, Medicaid, CHIP, and QHP payers to expose adjudicated claims and clinical data via FHIR Patient Access APIs, with data going back to January 1, 2016.",
+        "Blue Button 2.0 delivers FHIR-formatted Medicare claims data for over 60 million beneficiaries; Apple Health Records connects to 500+ facilities — both use SMART on FHIR for patient-authorized app access.",
+        "SMART on FHIR (OAuth 2.0 + OpenID Connect) is the standard authorization layer for patient-facing health apps, required for ONC-certified health IT; it enables consent-based, scoped, revocable access.",
+        "As of 2024, 77% of patients were offered portal access but only 65% used it, and only 32% downloaded records — legal access rights and technical availability do not automatically produce patient engagement.",
+        "CommonWell, Carequality, and TEFCA are building nationwide exchange infrastructure; patient-directed exchange across system boundaries remains the hardest problem to solve at scale.",
+        "The equity frontier: low-resourced hospitals lag in FHIR API deployment; apps that make portable data useful must be designed for patients with low digital literacy and limited connectivity."
+      ]
+    },
+    {
+      "_key": "quiz_main",
+      "_type": "knowledgeCheck",
+      "explanation": "CMS-9115-F requires affected payers — Medicare Advantage, Medicaid managed care, CHIP, and QHP issuers — to make available through the Patient Access API all adjudicated claims and encounter data with a date of service on or after January 1, 2016, for all current enrollees. This applies regardless of when the patient enrolled or when the payer stood up its FHIR API.",
+      "options": [
+        {
+          "_key": "opt0",
+          "isCorrect": false,
+          "text": "From the date the patient enrolled in their current plan"
+        },
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "From January 1, 2016"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": false,
+          "text": "From January 1, 2019, when the CMS pilot program began"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "From the date the payer implemented its FHIR API"
+        }
+      ],
+      "question": "Under the CMS Interoperability and Patient Access Final Rule (CMS-9115-F), how far back must affected payers make claims and encounter data available through the Patient Access API for current enrollees?"
+    },
+    {
+      "_key": "sources_h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "6769bc636b98460a",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "026f7ca7e89145a8",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS. CMS Interoperability and Patient Access Final Rule (CMS-9115-F). Centers for Medicare and Medicaid Services. https://www.cms.gov/priorities/burden-reduction/overview/interoperability/policies-regulations/cms-interoperability-patient-access-final-rule-cms-9115-f"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "673f0f2abf644f7b",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS. Patient Access API — Frequently Asked Questions. https://www.cms.gov/priorities/burden-reduction/overview/interoperability/frequently-asked-questions/patient-access-api"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8e649357126c47f7",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC. ONC's Cures Act Final Rule. Office of the National Coordinator for Health Information Technology. https://www.healthit.gov/topic/oncs-cures-act-final-rule"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "4aad6b033f9044a0",
+          "_type": "span",
+          "marks": [],
+          "text": "Federal Register. 21st Century Cures Act: Interoperability, Information Blocking, and the ONC Health IT Certification Program. 85 FR 25642. May 1, 2020. https://www.federalregister.gov/documents/2020/05/01/2020-07419/21st-century-cures-act-interoperability-information-blocking-and-the-onc-health-it-certification"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "85837c3352e94492",
+          "_type": "span",
+          "marks": [],
+          "text": "HHS. Individuals' Right under HIPAA to Access their Health Information — 45 CFR §164.524. https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/access/index.html"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "b06b0e4b65d6477b",
+          "_type": "span",
+          "marks": [],
+          "text": "eCFR. 45 CFR Part 171 — Information Blocking. https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-D/part-171"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "498689642f1d49b0",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS. Blue Button 2.0 — Improving Medicare Beneficiary Access to Health Information. https://bluebutton.cms.gov/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "60bcac3ba8074dd6",
+          "_type": "span",
+          "marks": [],
+          "text": "Apple. Healthcare — Health Records. https://www.apple.com/healthcare/health-records/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1bbbf88b871a41d3",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC / ASTP. Individuals' Access and Use of Patient Portals and Smartphone Health Apps, 2024. ASTP Data Brief No. 79, August 2025. https://healthit.gov/data/data-briefs/individuals-access-and-use-patient-portals-and-smartphone-health-apps-2024/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src10",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "21ced41a134e48ba",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC / ASTP. Growth of Health IT-Enabled Patient Engagement Capabilities Among U.S. Hospitals: 2021-2024. https://healthit.gov/data/data-briefs/growth-health-it-enabled-patient-engagement-capabilities-among-us-hospitals-2021/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "13d2847636584700",
+          "_type": "span",
+          "marks": [],
+          "text": "HL7 International. SMART App Launch Framework v2.2.0. https://hl7.org/fhir/smart-app-launch/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src12",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "c934b6e8f4b840d4",
+          "_type": "span",
+          "marks": [],
+          "text": "CommonWell Health Alliance. 2024 CommonWell Overview. https://www.commonwellalliance.org/wp-content/uploads/2024/04/24_CommonWell_Overview_Flier_Final_Digital.pdf"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "585006624c064e85",
+          "_type": "span",
+          "marks": [],
+          "text": "HHS. HHS Announces Crackdown on Health Data Blocking. February 2026. https://www.hhs.gov/press-room/hhs-crackdown-health-data-blocking.html"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src14",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "7381df436fc84b41",
+          "_type": "span",
+          "marks": [],
+          "text": "Federal Register. 21st Century Cures Act: Establishment of Disincentives for Health Care Providers That Have Committed Information Blocking. July 1, 2024. https://www.federalregister.gov/documents/2024/07/01/2024-13793/21st-century-cures-act-establishment-of-disincentives-for-health-care-providers-that-have-committed"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "healthcare-interoperability",
+  "order": 20,
+  "slug": {
+    "_type": "slug",
+    "current": "interop-patient-access"
+  },
+  "title": "Patient Access to Health Data: Rights, APIs, and the Road to True Portability"
+}

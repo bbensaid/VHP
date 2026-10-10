@@ -1,0 +1,9 @@
+{
+  "id": "86a9ab15-49b5-46ea-b6fb-9c98341c6c11",
+  "quiz_id": "96dffd25-ca23-4198-a8b7-177d23182877",
+  "order": 3,
+  "question_type": "single_choice",
+  "question": "What is the primary purpose of the Provider Directory API requirement in the CMS Interoperability Rule?",
+  "explanation": "Provider directory accuracy is a major problem — studies show 30–50% of provider directory entries are inaccurate. The Provider Directory API requirement aims to standardize and expose this data for better network transparency.",
+  "points": null
+}

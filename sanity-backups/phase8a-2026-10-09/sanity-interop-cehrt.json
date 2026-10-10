@@ -1,0 +1,624 @@
+{
+  "_createdAt": "2026-05-29T03:07:34Z",
+  "_id": "interop-cehrt",
+  "_rev": "rL4Cn5Sfo5Z8rzPmE3ad72",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T17:23:06Z",
+  "body": [
+    {
+      "_key": "s1h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "What CEHRT Is and Why It Exists"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Certified EHR Technology — universally shortened to CEHRT — is the federally defined standard that an electronic health record system must meet before it can be used to satisfy the requirements of Medicare and Medicaid quality and incentive programs. The term sounds bureaucratic, but the concept is straightforward: the federal government will not pay clinicians or hospitals for demonstrating \"meaningful use\" of a health IT system unless that system has been independently tested and found to meet a published set of technical criteria. CEHRT is the stamp that says the system passed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The legal foundation for the entire certification machinery is the Health Information Technology for Economic and Clinical Health Act — the HITECH Act — which was signed into law on February 17, 2009, as part of the American Recovery and Reinvestment Act. HITECH authorized the Office of the National Coordinator for Health Information Technology (ONC) to establish a certification program and directed the Centers for Medicare and Medicaid Services (CMS) to tie billions of dollars in EHR incentive payments to the use of certified technology. Without HITECH, there would be no certification program; without the certification program, there would be no agreed-upon baseline for what an EHR must do."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC published its first set of certification criteria in the 2011 Edition Final Rule, establishing the inaugural CEHRT definition to support Meaningful Use Stage 1. The program has gone through multiple editions since — 2014 Edition, 2015 Edition, and the landmark 2015 Edition Cures Update — each ratcheting up the technical bar as the healthcare system's expectations for data sharing and interoperability evolved. Today, CEHRT is not merely an eligibility checkbox for incentive payments; it also underpins the 21st Century Cures Act's information-blocking prohibitions and the Promoting Interoperability performance category inside CMS quality payment programs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Created the legal authority for ONC certification and CMS EHR incentives",
+          "label": "HITECH Enacted",
+          "value": "2009"
+        },
+        {
+          "_key": "s2",
+          "context": "Estimated CMS EHR incentive dollars tied to CEHRT use since 2011",
+          "label": "Incentive Payments",
+          "value": "$35B+"
+        },
+        {
+          "_key": "s3",
+          "context": "Certified health IT modules listed on chpl.healthit.gov",
+          "label": "Products on CHPL",
+          "value": "10,000+"
+        },
+        {
+          "_key": "s4",
+          "context": "Share of total MIPS final score tied to the Promoting Interoperability category",
+          "label": "MIPS PI Weight",
+          "value": "25%"
+        }
+      ]
+    },
+    {
+      "_key": "s2h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2015 Edition Cures Update Requirements"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The single most consequential regulatory update to the certification program arrived on May 1, 2020, when ONC published the \"21st Century Cures Act: Interoperability, Information Blocking, and the ONC Health IT Certification Program\" Final Rule in the Federal Register (85 FR 25642). This rule — commonly called the Cures Act Final Rule — substantially upgraded the 2015 Edition certification criteria and created what is now known as the 2015 Edition Cures Update. Developers of certified health IT were required to meet the new API standards and provide them to customers by no later than May 2, 2022."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The headline technical requirement introduced by the Cures Update is a standardized API for both single-patient and population-level data services, built on HL7 FHIR Release 4 (FHIR R4). Specifically, certified products must implement the FHIR US Core Implementation Guide, the FHIR Bulk Data Access Implementation Guide for population-level queries, and the HL7 SMART Application Launch Framework Implementation Guide so that third-party applications can authenticate and retrieve data securely. These three implementation guides together form the technical spine of modern app-based interoperability in U.S. healthcare."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Alongside the API requirement, the Cures Update mandated support for the United States Core Data for Interoperability Version 1 (USCDI v1) as the minimum data set. USCDI v1 defines 52 individual data elements organized into 16 data classes — covering patient demographics, allergies and intolerances, medications, laboratory results, vital signs, clinical notes, care team members, health concerns, immunizations, implantable devices, patient documents, problems, procedures, provenance, smoking status, and unique device identifiers. Any CEHRT system must be able to expose all of these data classes through its FHIR API. The Cures Update also required an Electronic Health Information (EHI) export function, allowing patients or their authorized representatives to download a complete export of their entire record — not just the USCDI subset."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex",
+      "_type": "exampleBlock",
+      "content": "Before the Cures Update, a hospital could use a 2015 Edition-certified EHR that supported only proprietary or HL7 v2 interfaces for data exchange. After the update, that same hospital's vendor was required to ship a FHIR R4-based patient-facing API, a bulk data export endpoint for population analytics, and an EHI export tool — all tested against specific implementation guides. This meant that a patient could, for the first time, connect a smartphone app directly to their hospital's EHR using the same open standards their bank uses for account aggregation.",
+      "title": "What the Cures Update Changed in Practice"
+    },
+    {
+      "_key": "s2cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "2015 Edition (Pre-Cures)",
+        "points": [
+          "HL7 v2 and C-CDA document exchange",
+          "Common Clinical Data Set (CCDS) — predecessor to USCDI",
+          "No mandatory patient-facing FHIR API",
+          "No bulk data / population-level export requirement"
+        ]
+      },
+      "right": {
+        "label": "2015 Edition Cures Update",
+        "points": [
+          "FHIR R4 standardized API — mandatory",
+          "USCDI v1 — 52 data elements across 16 classes",
+          "SMART App Launch for third-party app access",
+          "EHI export for full patient record download"
+        ]
+      },
+      "title": "2015 Edition vs. 2015 Edition Cures Update"
+    },
+    {
+      "_key": "s3h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC-ATLs and the Certification Testing Process"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Before any product can appear on the Certified Health IT Product List (CHPL) at chpl.healthit.gov, it must be tested by an ONC-Authorized Testing Laboratory (ONC-ATL) and then certified by an ONC-Authorized Certification Body (ONC-ACB). These are separate but often overlapping roles. The three established ONC-ATLs are Drummond Group, ICSA Labs, and SLI Compliance — a division of Gaming Laboratories International. In 2023, Leidos joined as a fourth ONC-ATL, adding capacity to a process that had at times created bottlenecks for vendors racing to meet regulatory deadlines."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Testing at an ONC-ATL is methodical and criterion-by-criterion. The lab works through each applicable certification criterion in 45 CFR § 170.315, running the vendor's software against standardized test procedures and test data to verify conformance. For the FHIR API criterion, this includes executing specific API queries, validating FHIR resource structures, testing SMART App Launch sequences, and verifying that the bulk data export endpoint returns well-formed FHIR bundles. Passing the lab tests earns a \"test report,\" which the vendor then submits to an ONC-ACB — such as Drummond Group or SLI Compliance, which hold dual ATL and ACB status — for final certification and listing on the CHPL."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Certification is not a one-time event. ONC-ACBs conduct ongoing surveillance — both reactive, triggered by complaints or anomalies, and random-sample surveillance — to verify that certified modules continue to function as certified in real-world deployments. If an ONC-ACB finds a non-conformity, the developer must correct it within a defined remediation period. At the program level, ONC itself can initiate Direct Review under 45 CFR § 170.580 if it has reasonable belief that a developer has violated a Condition or Maintenance of Certification. Severe or uncorrected violations can result in suspension or termination — decertification — of one or more modules, with the status publicly visible on the CHPL so that providers can see when a product they rely on is under corrective action."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "The vendor identifies which certification criteria (45 CFR § 170.315) apply to their product and designs or upgrades functionality to meet each one.",
+          "title": "Design to Criteria"
+        },
+        {
+          "_key": "step2",
+          "description": "An authorized testing lab — Drummond Group, ICSA Labs, SLI Compliance, or Leidos — executes standardized test procedures and issues a test report.",
+          "title": "ONC-ATL Testing"
+        },
+        {
+          "_key": "step3",
+          "description": "An authorized certification body reviews the test report, confirms documentation, and issues a Certificate of Compliance for each criterion passed.",
+          "title": "ONC-ACB Certification"
+        },
+        {
+          "_key": "step4",
+          "description": "The ONC-ACB publishes the certified product to chpl.healthit.gov, making the certification details, criteria met, and CHPL ID number publicly searchable.",
+          "title": "CHPL Publication"
+        },
+        {
+          "_key": "step5",
+          "description": "The ONC-ACB monitors the product through random and reactive surveillance; ONC may conduct Direct Review; corrective actions or decertifications are updated on CHPL in real time.",
+          "title": "Ongoing Surveillance"
+        }
+      ],
+      "title": "The Path from Code to CHPL Listing"
+    },
+    {
+      "_key": "s3warn",
+      "_type": "warningBlock",
+      "message": "Providers and administrators should always verify a vendor's certification status directly on chpl.healthit.gov before relying on marketing materials. A product can have some criteria certified and others not; the CHPL shows exactly which criteria each module meets — and whether any are under surveillance action.",
+      "title": "CHPL Is Your Source of Truth"
+    },
+    {
+      "_key": "s4h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "CEHRT in CMS Quality Programs"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most direct way most clinicians encounter CEHRT requirements is through the Promoting Interoperability (PI) performance category inside the Merit-based Incentive Payment System (MIPS). MIPS is CMS's consolidated quality reporting framework under MACRA, and the PI category carries a weight of 25 percent of a clinician's total MIPS final score. To report PI, a clinician must attest to using CEHRT and must provide their EHR's CMS EHR Certification ID (CEHRT ID) — a unique identifier visible on the CHPL — as part of their submission."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2024 PI performance category is organized around four objectives: Electronic Prescribing, Health Information Exchange, Provider to Patient Exchange, and Public Health and Clinical Data Exchange. Each objective contains required and optional measures. The Electronic Prescribing objective includes the e-Prescribing measure and the Query of Prescription Drug Monitoring Program (PDMP) measure. The Health Information Exchange objective includes measures for sending and receiving care summaries. The Provider to Patient Exchange objective focuses on enabling patients to access their data via API-enabled apps. Under Public Health and Clinical Data Exchange, Immunization Registry Reporting and Electronic Case Reporting are required; Public Health Registry Reporting, Clinical Data Registry Reporting, and Syndromic Surveillance Reporting are optional bonus measures worth up to 5 additional points."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Clinicians must also provide four required attestations as part of their PI submission: an attestation that they have not taken actions to limit or restrict the compatibility or interoperability of their CEHRT; an ONC Direct Review attestation; a Security Risk Analysis measure confirmation; and a Safety Assurance Factors for EHR Resilience (SAFER) Guides attestation. The maximum attainable PI score is 105 points — the extra 5 come from optional bonus measures — but the score is capped at 100 for final MIPS weighting purposes. Advanced APM participants are generally excluded from MIPS reporting requirements but often must still use CEHRT to qualify for the Advanced APM bonus."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4an",
+      "_type": "analogyBlock",
+      "analogy": "Think of the CEHRT ID on a PI attestation like the VIN number on a car title. The car still has to pass a safety inspection (ONC-ATL testing), be registered (CHPL listing), and have its registration current (ongoing surveillance). Without a valid VIN matching current registration, you cannot legally operate the vehicle in programs that require one — just as a clinician cannot claim PI credit without a valid, active CEHRT ID.",
+      "concept": "CEHRT ID in MIPS PI reporting works like a vehicle VIN: it uniquely identifies the certified product and proves the regulatory requirements are met."
+    },
+    {
+      "_key": "s4sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Share of total MIPS score driven by Promoting Interoperability category",
+          "label": "MIPS PI Weight",
+          "value": "25%"
+        },
+        {
+          "_key": "s2",
+          "context": "Minimum PI reporting period required in 2024 MIPS",
+          "label": "Minimum Reporting Period",
+          "value": "180 days"
+        },
+        {
+          "_key": "s3",
+          "context": "Maximum points attainable in PI category before 100-point cap",
+          "label": "Max PI Score",
+          "value": "105 pts"
+        },
+        {
+          "_key": "s4",
+          "context": "Mandatory yes/no attestations required alongside PI measures",
+          "label": "Required Attestations",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "_key": "s5h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Certification Does NOT Guarantee"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CEHRT certification is a necessary condition for participating in federal quality programs — but it is emphatically not a sufficient condition for real-world interoperability or safe, usable software. This distinction matters enormously in practice. Certification testing occurs in a controlled lab environment with standardized synthetic data, scripted workflows, and idealized network conditions. A vendor's software might pass every criterion in the lab and still behave very differently when deployed in a busy emergency department with legacy infrastructure, thousands of active patient records, and staff under time pressure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Research published in peer-reviewed literature confirms this usability gap. Studies have found that EHR certification testing does not accurately represent actual use by clinicians in their clinical environment, and that vendor-reported usability scores are based on test cases that do not resemble real clinical scenarios. The testing environment lacks variables such as task interruptions, increased noise levels, concurrent alerts, and other stressors that characterize real clinical settings. Poorly designed screen layouts, redundant workflow sequences, and alert fatigue are documented consequences — all of which survived the certification process untouched."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC acknowledged this gap and, through the Cures Act Final Rule, created a Real World Testing requirement. Health IT developers certified under the program must annually submit Real World Testing plans describing how they will demonstrate interoperability and functionality in actual production environments — not just in the lab. However, a 2025 study published in the Journal of the American Medical Informatics Association found that developers were not presenting results in meaningful ways with appropriate context, suggesting that Real World Testing as currently implemented falls short of providing genuine transparency. ONC and the authorized certification bodies have been called on to more closely inspect report quality and impose clearer metric requirements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5warn",
+      "_type": "warningBlock",
+      "message": "A CHPL listing tells you a product met the federal technical bar on the day it was tested. It does not tell you whether the product is easy to use, whether it will interoperate with your specific trading partners, or whether it will perform reliably at scale. Procurement decisions should include real-world reference checks, usability testing with actual clinical staff, and review of the vendor's Real World Testing results on CHPL.",
+      "title": "Certification Is a Floor, Not a Ceiling"
+    },
+    {
+      "_key": "s5cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Certification DOES confirm",
+        "points": [
+          "FHIR R4 API meets criterion 170.315(g)(10)",
+          "USCDI v1 data elements are technically supported",
+          "EHI export function is present and testable",
+          "Security and privacy criteria were tested"
+        ]
+      },
+      "right": {
+        "label": "Certification does NOT confirm",
+        "points": [
+          "Real-world data exchange with your specific partners",
+          "Clinical workflow usability or staff adoption",
+          "Performance under production load and patient volumes",
+          "Vendor compliance with information-blocking rules post-deployment"
+        ]
+      },
+      "title": "What Certification Confirms vs. What It Does Not"
+    },
+    {
+      "_key": "tkwy",
+      "_type": "takeawayBlock",
+      "points": [
+        "CEHRT stands for Certified EHR Technology — the federal designation required to participate in Medicare and Medicaid quality and incentive programs.",
+        "The ONC Health IT Certification Program was created by the HITECH Act of 2009 and has evolved through multiple editions, culminating in the 2015 Edition Cures Update.",
+        "The 2015 Edition Cures Update (May 2020) mandated FHIR R4 APIs, USCDI v1 (52 data elements, 16 classes), SMART App Launch, Bulk Data export, and an EHI export function.",
+        "Products are tested by ONC-ATLs (Drummond Group, ICSA Labs, SLI Compliance, Leidos) and listed on the CHPL at chpl.healthit.gov — always verify certification status there directly.",
+        "Ongoing ONC-ACB surveillance and ONC Direct Review can result in decertification; CHPL shows real-time corrective action status.",
+        "The Promoting Interoperability category in MIPS carries a 25% weight; clinicians must submit a valid CEHRT ID, report PI measures across four objectives, and provide four required attestations.",
+        "Certification is a technical floor — it does not guarantee real-world interoperability, clinical usability, or production reliability; Real World Testing requirements exist but remain inconsistently implemented.",
+        "When evaluating an EHR, use the CHPL to verify criteria, check surveillance history, and review the vendor's Real World Testing results alongside direct reference checks."
+      ]
+    },
+    {
+      "_key": "qz01",
+      "_type": "knowledgeCheck",
+      "explanation": "The 2015 Edition Cures Update, finalized in the ONC's May 2020 Cures Act Final Rule, introduced the mandatory FHIR Release 4 standardized API requirement — including SMART App Launch and Bulk Data support — as a new criterion. HL7 v2, e-prescribing of controlled substances, and audit logging were requirements in earlier certification editions and were not the headline additions of the Cures Update.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Support for HL7 v2 messaging interfaces"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "A standardized FHIR R4 API for single-patient and population data services"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Electronic prescribing of controlled substances"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Maintaining an audit log of system activity"
+        }
+      ],
+      "question": "Which of the following is a requirement introduced by the 2015 Edition Cures Update that was NOT present in the original 2015 Edition certification criteria?"
+    },
+    {
+      "_key": "srch2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srch2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] ONC Health IT Certification Program Overview — https://www.healthit.gov/topic/certification-ehrs/certification-program-health-it — Background on the HITECH Act foundation and the ONC certification program structure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Federal Register: 21st Century Cures Act Final Rule — https://www.federalregister.gov/documents/2019/03/04/2019-02224/21st-century-cures-act-interoperability-information-blocking-and-the-onc-health-it-certification — Primary regulatory citation for the 2015 Edition Cures Update, FHIR R4 requirement, USCDI v1, and EHI export mandate."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Certified Health IT Product List (CHPL) — https://chpl.healthit.gov — Authoritative public database of all ONC-certified health IT products, surveillance status, and CEHRT IDs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] ONC-Authorized Testing Laboratories — https://www.healthit.gov/topic/certification-ehrs/onc-authorized-testing-laboratories-onc-atls — Official list of Drummond Group, ICSA Labs, SLI Compliance, and Leidos as active ONC-ATLs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] 2024 MIPS Promoting Interoperability Measures — https://mdinteractive.com/2024-mips-promoting-interoperability-measures — Detailed breakdown of 2024 PI objectives, required and optional measures, attestations, and scoring."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Real World Testing — ONC — https://www.healthit.gov/topic/certification-ehrs/real-world-testing — ONC's Real World Testing program overview, including annual requirements for certified health IT developers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] Meaningfully meeting the interoperability mandate: a review of ASTP/ONC Real World Testing practices — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12153719/ — Peer-reviewed 2025 study documenting gaps in how developers report Real World Testing results."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src8s",
+          "_type": "span",
+          "marks": [],
+          "text": "[8] Mind the Gap: usability and safety challenges in EHR implementation — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5228144/ — Systematic review documenting the gap between certification-lab testing conditions and real clinical environments."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "interop-cehrt"
+  },
+  "title": "CEHRT: Certified EHR Technology and What Certification Actually Means"
+}

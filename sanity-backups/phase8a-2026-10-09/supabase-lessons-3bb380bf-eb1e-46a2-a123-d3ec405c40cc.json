@@ -1,0 +1,109 @@
+{
+  "id": "3bb380bf-eb1e-46a2-a123-d3ec405c40cc",
+  "track_id": "a3c63a7e-b87e-490e-9a38-c2fab03c8d1c",
+  "pillar": "policy",
+  "order": 1,
+  "slug": "21st-century-cures-act-overview",
+  "title": "The 21st Century Cures Act: A Landmark in Health IT Law",
+  "summary": "How the bipartisan 2016 law reshaped health IT policy — mandating patient data access, defining information blocking, and setting the stage for FHIR API adoption.",
+  "estimated_minutes": 18,
+  "objectives": [
+    {
+      "id": "obj_cures1",
+      "text": "Identify the three major domains of the 21st Century Cures Act"
+    },
+    {
+      "id": "obj_cures2",
+      "text": "Explain what ONC's 2020 Final Rule required and the key compliance dates"
+    },
+    {
+      "id": "obj_cures3",
+      "text": "Describe the three types of actors subject to information blocking rules"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "The 21st Century Cures Act was signed into law by President Obama on December 13, 2016, passing the House 392-26 and the Senate 94-5 — a level of bipartisan support rarely seen in US healthcare legislation. The law addressed three major domains: accelerating drug and device approval at FDA, strengthening mental health services, and — most relevant to health IT — mandating interoperability and prohibiting information blocking.\n\nThe health IT provisions of the Cures Act represented a fundamental shift in the federal government's approach to health data exchange. Where previous programs (Meaningful Use, the EHR incentive program) used financial carrots to encourage EHR adoption and data sharing, the Cures Act added a stick: practices that interfere with the access, exchange, or use of electronic health information are not just undesirable — they are potentially illegal, subject to civil monetary penalties of up to $1 million per violation for health IT developers.\n\nONC took nearly four years to translate the Cures Act's health IT provisions into regulation, publishing the 21st Century Cures Act Final Rule in March 2020. That rule had two major components: the information blocking rule (effective April 5, 2021) and the interoperability standards conditions requiring FHIR R4 APIs in certified EHR technology.",
+      "type": "text",
+      "heading": "A rare bipartisan achievement"
+    },
+    {
+      "type": "timeline",
+      "events": [
+        {
+          "year": "2016",
+          "label": "Cures Act enacted",
+          "description": "Bipartisan passage with 392-26 in House, 94-5 in Senate. Signed December 13."
+        },
+        {
+          "year": "2020",
+          "label": "ONC Final Rule",
+          "description": "ONC publishes 21st Century Cures Act Final Rule — information blocking rules, FHIR R4 API requirements, conditions of certification."
+        },
+        {
+          "year": "Apr 2021",
+          "label": "Information blocking effective",
+          "description": "Information blocking provisions become effective for all three actor types. Complaints begin."
+        },
+        {
+          "year": "Oct 2022",
+          "label": "USCDI v1 required",
+          "description": "CEHRT must support USCDI v1 data set and standardized FHIR R4 API."
+        },
+        {
+          "year": "2023",
+          "label": "OIG enforcement",
+          "description": "OIG begins publishing information blocking complaint data. First disincentives for healthcare providers established."
+        },
+        {
+          "year": "2024",
+          "label": "USCDI v3",
+          "description": "ONC updates USCDI to v3, expanding required data classes to include SDOH, sexual orientation, and gender identity."
+        }
+      ],
+      "heading": "21st Century Cures Act milestones"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "term": "Health IT Developers",
+          "definition": "Companies that develop certified health IT (EHR vendors, FHIR server vendors). Face the harshest penalties — up to $1M per violation in civil monetary penalties from ONC."
+        },
+        {
+          "term": "Health Information Networks/Exchanges",
+          "definition": "Organizations that operate networks or services for health information exchange — HIEs, health information networks, query-based exchange services."
+        },
+        {
+          "term": "Healthcare Providers",
+          "definition": "Hospitals, physician practices, clinics, and other providers who use EHR systems. Face 'disincentives' — impacts on CMS payment programs like MIPS — rather than direct fines."
+        }
+      ],
+      "heading": "Three types of information blocking actors"
+    },
+    {
+      "body": "Beginning April 5, 2021, patients gained an enforceable right to access their electronic health information through standardized FHIR APIs — meaning they can connect any certified third-party app to their EHR and pull their own data. Before this date, patient data access was discretionary. After this date, blocking or unduly restricting patient data access became potentially illegal. Patients can now use apps like Apple Health, CommonHealth, and hundreds of others to access their own records.",
+      "type": "callout",
+      "title": "What changed for patients on April 5, 2021",
+      "variant": "info"
+    },
+    {
+      "type": "key_stat",
+      "label": "maximum civil monetary penalty per information blocking violation",
+      "value": "$1M",
+      "context": "Health IT developers face up to $1 million per information blocking violation. Healthcare providers face disincentives through CMS payment programs. The financial stakes are designed to change the economics of information blocking."
+    }
+  ],
+  "tags": [
+    "Cures Act",
+    "ONC",
+    "information blocking",
+    "FHIR",
+    "policy"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:37.833499+00:00",
+  "updated_at": "2026-06-01T14:54:57.354904+00:00",
+  "sanity_slug": "interop-cures-act"
+}

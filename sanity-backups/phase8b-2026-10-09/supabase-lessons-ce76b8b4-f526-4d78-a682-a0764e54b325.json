@@ -1,0 +1,49 @@
+{
+  "id": "ce76b8b4-f526-4d78-a682-a0764e54b325",
+  "track_id": "19f9fa97-aa77-4a4d-8188-55e7f22554e3",
+  "pillar": "clinical",
+  "order": 2,
+  "slug": "star-ratings-equity-critique",
+  "title": "Star Ratings & Equity: The Low-Income Subsidy Problem",
+  "summary": "Why Medicare Advantage plans serving high proportions of low-income and dual eligible members consistently score lower on Star Ratings — and what CMS is doing about it.",
+  "estimated_minutes": 14,
+  "objectives": [
+    {
+      "id": "obj_se1",
+      "text": "Explain why plans serving LIS/dual eligible populations score lower on Star Ratings"
+    },
+    {
+      "id": "obj_se2",
+      "text": "Describe the criticism that Stars penalizes safety-net MA plans"
+    },
+    {
+      "id": "obj_se3",
+      "text": "Explain how the Health Equity Index attempts to address this"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Research consistently shows that Medicare Advantage plans serving higher proportions of Low-Income Subsidy (LIS) beneficiaries and dual eligibles score lower on Star Ratings — even after controlling for plan characteristics. This creates a troubling dynamic: plans that choose to serve the most vulnerable populations are financially penalized through lower star ratings and loss of the 5% quality bonus.\n\nAnalyses by MedPAC, CMS, and academic researchers find that 20–30% of the variance in star ratings is explained by the socioeconomic composition of a plan's enrollment — not by actual quality of care delivered.",
+      "type": "text",
+      "heading": "Stars and the equity penalty"
+    },
+    {
+      "body": "Starting with 2027 Star Ratings, CMS is implementing the Health Equity Index (HEI) — a reward measure that gives plans additional credit for achieving better quality outcomes for their LIS/dual eligible and/or disability members. Plans with smaller quality gaps between vulnerable and non-vulnerable members earn HEI credit. This inverts the old incentive: rather than penalizing plans for serving difficult populations, HEI rewards plans that actually close gaps within those populations.",
+      "type": "callout",
+      "heading": "The Health Equity Index: CMS's response",
+      "variant": "info"
+    }
+  ],
+  "tags": [
+    "Star Ratings",
+    "equity",
+    "LIS",
+    "dual eligible",
+    "HEI"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T22:13:41.063637+00:00",
+  "updated_at": "2026-06-02T21:31:26.17064+00:00",
+  "sanity_slug": "star-ratings-equity-critique"
+}

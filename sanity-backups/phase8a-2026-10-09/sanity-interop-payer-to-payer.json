@@ -1,0 +1,909 @@
+{
+  "_createdAt": "2026-05-29T03:32:25Z",
+  "_id": "interop-payer-to-payer",
+  "_rev": "glqH7a4yvZFQerxZdH47Pd",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T02:01:00Z",
+  "body": [
+    {
+      "_key": "intro1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "intro1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Americans move between jobs, between states, and between life stages. When they do, their health coverage often moves with them or, more precisely, it disappears and reappears in a different form. A factory worker switches from employer-sponsored Medicaid managed care to a Marketplace plan after a layoff. A retiree transitions from commercial insurance to Medicare Advantage. A young adult ages off a parent's plan and enrolls in a state Medicaid program. Each of these transitions is not just an administrative event. It is a potential rupture in the continuity of care. The new payer inherits a member but not a record. The patient's diagnosis history, prior authorization approvals, chronic medication regimen, and recent specialist consultations exist somewhere on a server operated by the previous plan but are invisible to the clinicians and care managers now responsible for that person's health."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "intro2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "intro2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This invisibility has real consequences. A care manager at the new plan who does not know about a patient's recent hospitalization cannot schedule appropriate follow-up. A prior authorization reviewer who cannot see a previously approved six-month course of specialty medication may deny continuation, creating an abrupt gap in treatment. A disease management program that does not know a member has diabetes cannot enroll them in population health outreach. Every one of these failures costs money in duplicated diagnostic tests, avoidable hospitalizations, and adverse drug events, and most importantly it costs health. The problem is structural: the health insurance system has historically treated membership data as proprietary, not portable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "intro3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "intro3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Payer-to-payer data exchange is the regulatory and technical effort to fix this structural failure. The concept is straightforward: when a member changes health plans, the new payer should be able to request and receive relevant clinical and administrative data from the previous payer, so that care continues without interruption. The execution has proved far more complex. This lesson traces the regulatory journey from CMS-9115-F's original 2022 mandate through its supersession by CMS-0057-F's January 2027 deadline, explains the technical architecture built on HL7's Da Vinci PDex Implementation Guide, and examines the real-world challenges of member identity matching, consent management, and data operationalization that stand between the regulatory vision and clinical impact."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The Coverage Gap Problem: Who Actually Switches Plans and Why It Matters"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The scale of health plan switching in the United States is large enough to constitute a persistent public health challenge in its own right. The problem is most acute in Medicaid, where administrative-driven disenrollment and re-enrollment, a phenomenon researchers call churning, affects tens of millions of people each year. Before the COVID-19 public health emergency froze Medicaid eligibility redeterminations, studies found that among full-benefit Medicaid beneficiaries enrolled at any point in a given year, roughly 10% experienced a gap in coverage of less than one year. Approximately 4% were disenrolled and re-enrolled within three months, and nearly 7% within six months. These are not people who became ineligible for coverage. They are people who lost coverage due to paperwork failures, outdated addresses, or administrative processing errors, and then regained it shortly after."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Medicaid unwinding that followed the end of pandemic-era continuous enrollment protections in April 2023 provided a stark illustration of this dynamic at extreme scale. States resumed eligibility redeterminations after a pause of more than three years, and over the following two years, more than 25 million people were disenrolled from Medicaid. Studies found that 69% of disenrollments were procedural rather than eligibility-based, meaning the vast majority of people who lost coverage were likely still eligible. Many re-enrolled within weeks or months, but each gap represented a period during which the re-enrolling member was invisible to their plan. Any care coordination, disease management, or prior authorization history accumulated during years of prior enrollment was gone from the new plan's view."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "In Medicare Advantage, approximately 10% of the 11.3 million enrollees studied in 2019, roughly 1.2 million people, voluntarily switched plans during the open enrollment period. In the Affordable Care Act Marketplace, switching rates are substantially higher: 43% of enrollees switched plans between 2015 and 2016, driven by premium volatility, insurer exits, and annual re-evaluation of cost-sharing structures. Each of these transitions creates a potential data gap. And unlike Medicaid churning where the member may return to the same plan, Marketplace switching typically involves entirely different payers who have no established data-sharing relationship."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "People disenrolled during post-pandemic unwinding; 69% lost coverage for procedural rather than eligibility reasons",
+          "label": "Medicaid Disenrollments 2023-2025",
+          "value": "25M+"
+        },
+        {
+          "_key": "s2",
+          "context": "Annual share of MA enrollees who voluntarily changed plans during open enrollment (KFF, 2019 data)",
+          "label": "Medicare Advantage Switchers",
+          "value": "10%"
+        },
+        {
+          "_key": "s3",
+          "context": "Share of Marketplace enrollees who switched plans between 2015-2016, the highest switching rate of any market segment",
+          "label": "ACA Marketplace Switchers",
+          "value": "43%"
+        },
+        {
+          "_key": "s4",
+          "context": "Estimated administrative cost per person per churn episode, not including downstream clinical costs of care fragmentation",
+          "label": "Cost of Medicaid Churn",
+          "value": "$400-$600"
+        }
+      ]
+    },
+    {
+      "_key": "s1call",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1calls",
+          "_type": "span",
+          "marks": [],
+          "text": "The root problem: when a member moves from one health plan to another, the new plan has their enrollment demographics but none of their clinical history. Diagnoses, prior authorizations, chronic condition status, and care plans must be rebuilt from scratch at cost to both the member's health and the system's efficiency."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The Regulatory Journey: From CMS-9115-F to CMS-0057-F"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The regulatory effort to mandate payer-to-payer data exchange begins with the CMS Interoperability and Patient Access Final Rule, published May 1, 2020 and commonly cited as CMS-9115-F. This landmark rule required Medicare Advantage organizations, Medicaid managed care plans, CHIP managed care entities, and Qualified Health Plans on the Federally Facilitated Exchanges to implement not only a Patient Access API for members but also a payer-to-payer data exchange process. Specifically, payers were required to, upon member request, send clinical and administrative data to another payer when the member changed plans. The original compliance deadline for the payer-to-payer provisions was January 1, 2022."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "That deadline proved aspirational. On December 8, 2021, weeks before the deadline, CMS announced that it would exercise enforcement discretion and not take action to enforce the payer-to-payer provisions of CMS-9115-F. The agency's rationale was candid: the FHIR-based technical standards needed for payer-to-payer exchange had not yet matured to the point where standardized, reliable exchange was feasible at scale. CMS wanted to avoid a situation where payers exchanged data in inconsistent, non-standard formats that would undermine interoperability rather than advance it. The agency committed to addressing the challenges through future rulemaking and delivered on that commitment through CMS-0057-F."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CMS Interoperability and Prior Authorization Final Rule, known as CMS-0057-F, was released on January 17, 2024 and represents the definitive federal framework for payer-to-payer data exchange. The rule establishes that the same categories of impacted payers must implement and maintain a FHIR R4-based Payer-to-Payer API. The compliance deadline is January 1, 2027. The rule explicitly recommends the Da Vinci Payer Data Exchange PDex Implementation Guide as the technical standard for this API, building on the HL7 infrastructure that payers were already deploying for the Patient Access API."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "The scope of data that must be exchanged under CMS-0057-F is substantial and specific. Payers must make available adjudicated claims and encounter data excluding provider remittances and enrollee cost-sharing details, data classes and elements from the content standards adopted by ONC under USCDI, and prior authorization information excluding drugs. Critically, the rule requires payers to exchange data with a date of service within five years of the exchange request, and for data originating before January 1, 2016, the requirement is limited to data with a service date on or after that date. This means a newly enrolled member can trigger a request for up to five years of claims, clinical data, and prior authorization history from their previous plan."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "CMS-9115-F (2020 Rule)",
+        "points": [
+          "Original deadline: January 1, 2022",
+          "Enforcement discretion announced December 2021, never actually enforced",
+          "Required payer-to-payer exchange but lacked detailed technical specifications",
+          "Standards maturity was insufficient for reliable standardized exchange",
+          "Identified the problem but could not yet prescribe a workable solution"
+        ]
+      },
+      "right": {
+        "label": "CMS-0057-F (2024 Rule)",
+        "points": [
+          "Compliance deadline: January 1, 2027",
+          "Fully binding, no enforcement discretion announced",
+          "Explicitly recommends Da Vinci PDex IG as the technical standard",
+          "Requires 5 years of claims, USCDI data, and prior auth history",
+          "Adds member consent, identity matching, and response timeline requirements"
+        ]
+      },
+      "title": "CMS-9115-F vs. CMS-0057-F: Payer-to-Payer Data Exchange"
+    },
+    {
+      "_key": "s3h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3hs",
+          "_type": "span",
+          "marks": [],
+          "text": "How Payer-to-Payer Exchange Works: The PDex Technical Architecture"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The technical foundation for payer-to-payer exchange is the Da Vinci Payer Data Exchange Implementation Guide, version 2.2.0, developed by the Da Vinci Project, a collaboration of HL7 and health industry members including payers, providers, and health IT vendors. The PDex IG defines how FHIR R4 resources should be packaged, queried, and exchanged specifically for payer use cases. It establishes the data model covering which FHIR profiles apply to claims, diagnoses, medications, and prior authorizations in a payer context, the access pattern using FHIR RESTful APIs with SMART on FHIR authorization, and the identity-matching operation called $member-match that allows a requesting payer to establish that the member they are asking about is the same person the previous payer has records for."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The $member-match operation is the linchpin of the entire exchange. When a member enrolls with a new payer and consents to data exchange, the new payer does not have the previous plan's internal member ID. What it has is the member's enrollment demographics: name, date of birth, gender, and potentially a subscriber ID from the previous plan if the member can provide it. The $member-match operation allows the new payer acting as the requesting payer to send these demographics to the previous payer's FHIR endpoint and receive back a confirmed patient identifier, specifically a FHIR UMB Unique Member Business identifier, that can then be used to query clinical and administrative data. The operation uses mTLS mutual Transport Layer Security for the connection and OAuth 2.0 dynamic client registration for authorization, ensuring that only verified, credentialed payers can initiate data requests."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The PDex IG supports two exchange patterns: single-member exchange and bulk exchange. Single-member exchange handles individual member data requests, the primary use case when a specific member enrolls and requests their history. Bulk exchange, introduced in PDex v2.2.0, allows a new payer to perform member matching and data requests for large populations simultaneously, for example at the end of an open enrollment period when thousands of new members join at once. Bulk exchange uses the FHIR Asynchronous Request Pattern with an HTTP POST kick-off that returns a 202 Accepted response with a Content-Location status endpoint, followed by polling until a completion manifest referencing NDJSON output files is available. This mirrors the bulk data export pattern already used for provider access and analytics."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3analogy",
+      "_type": "analogyBlock",
+      "analogy": "Think of payer-to-payer exchange like porting your phone number when you switch carriers. When you leave one carrier, you do not lose your number. You authorize the transfer, your new carrier sends a request to your old carrier using a standardized protocol, and your number follows you. Payer-to-payer exchange works the same way: when you switch health plans, you give consent, your new payer sends a $member-match request to your old payer using FHIR APIs, and your five years of claims history and clinical records follow you to your new plan instead of disappearing when you sign up.",
+      "concept": "Payer-to-payer FHIR exchange as phone number porting for health records"
+    },
+    {
+      "_key": "s3steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "A member enrolls with a new health plan and provides consent for their previous plan to share data. CMS-0057-F requires payers to obtain and honor member consent; the new payer must initiate the data request within one week of enrollment.",
+          "title": "Member Enrolls and Consents"
+        },
+        {
+          "_key": "step2",
+          "description": "The new payer acting as requesting payer establishes a mutual TLS connection to the previous payer's FHIR endpoint, verifying both parties' identity cryptographically before any data flows.",
+          "title": "Establish Secure Connection"
+        },
+        {
+          "_key": "step3",
+          "description": "Using the secure connection, the requesting payer performs OAuth 2.0 Dynamic Client Registration to acquire client credentials from the previous payer's authorization server.",
+          "title": "OAuth 2.0 Client Registration"
+        },
+        {
+          "_key": "step4",
+          "description": "The requesting payer calls the $member-match operation on the previous payer's FHIR endpoint, submitting the member's enrollment demographics. The previous payer returns a confirmed FHIR patient identifier if a match is found.",
+          "title": "Run the Member Match Operation"
+        },
+        {
+          "_key": "step5",
+          "description": "Using the matched patient identifier and an OAuth 2.0 access token, the requesting payer queries the previous payer's FHIR API for up to five years of adjudicated claims, USCDI clinical data, and prior authorization history.",
+          "title": "Query Clinical and Administrative Data"
+        },
+        {
+          "_key": "step6",
+          "description": "The requesting payer receives FHIR resources including ExplanationOfBenefit, Condition, MedicationRequest, and Coverage resources, ingests them into its systems, and makes them available to care managers, prior authorization reviewers, and disease management programs.",
+          "title": "Ingest and Operationalize"
+        }
+      ],
+      "title": "The Payer-to-Payer Data Exchange Workflow"
+    },
+    {
+      "_key": "s3call",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3calls",
+          "_type": "span",
+          "marks": [],
+          "text": "The previous payer must respond to data requests within one business day under CMS-0057-F. This tight turnaround is designed to ensure that clinical continuity information is available to the new plan before the first care interaction, not weeks later when the member may have already faced a prior authorization denial or a duplicated diagnostic workup."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s4h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hs",
+          "_type": "span",
+          "marks": [],
+          "text": "What Data Must Flow: Claims, Clinical Records, and Prior Authorizations"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The data scope defined by CMS-0057-F for payer-to-payer exchange is deliberately broad. The goal is not merely to transmit a summary. It is to give the new plan enough context to meaningfully continue care. The three primary categories of required data are adjudicated claims and encounter data, USCDI-standard clinical information, and prior authorization history. Each category serves a distinct clinical and administrative purpose, and together they constitute something close to a portable health record from the payer's perspective."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Adjudicated claims and encounter data forms the backbone of the exchange. In FHIR terms, claims are represented primarily through the ExplanationOfBenefit resource, which encodes the provider who rendered care, the date of service, the diagnosis and procedure codes, the amount billed, and the amount paid. Five years of this data gives the receiving plan a longitudinal picture of a member's care utilization: how many times they have been hospitalized, what specialists they regularly see, what chronic conditions drive most of their claims, and what their total cost of care looks like. This information is invaluable for risk stratification, care gap identification, and accurate actuarial modeling. CMS-0057-F explicitly excludes provider remittances and enrollee cost-sharing information from the required exchange, focusing the mandate on clinically relevant data rather than financial settlement details."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The USCDI clinical data requirement builds on the United States Core Data for Interoperability standard, which ONC updates annually to define the minimum clinical data set that health IT systems must be able to exchange. In the payer context, USCDI data includes patient demographics, active problems and diagnoses, medications, allergies, immunizations, laboratory results, vital signs, and clinical notes where the payer holds them. Not every payer holds rich clinical data, as some hold only claims. But where clinical data exists, for example from value-based care arrangements that include clinical data feeds from provider networks, it must be included in the exchange. This requirement ensures that exchange is not limited to administrative claims codes but includes the richer clinical context that claims alone cannot convey."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Prior authorization history may be the most operationally critical component of the exchange. A member with a complex condition such as metastatic cancer, multiple sclerosis, or severe rheumatoid arthritis may have an active prior authorization for a specialty medication or an ongoing approval for a home health service. If the new plan does not know about this authorization, its clinical reviewers may treat the member as a new case, requiring them to re-submit clinical documentation, go through a fresh review process, and potentially experience a gap in treatment during the review period. CMS-0057-F requires the previous payer to include prior authorization data in the exchange package, including the service authorized, the authorization number, the dates, and the clinical rationale. For members with active authorizations, this single requirement may be the highest-value element in the entire exchange."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "CMS-0057-F mandates exchange of adjudicated claims and encounter data with service dates within 5 years of the exchange request",
+          "label": "Claims History Required",
+          "value": "5 years"
+        },
+        {
+          "_key": "s2",
+          "context": "The mandatory compliance date for impacted payers to implement and maintain the Payer-to-Payer FHIR API under CMS-0057-F",
+          "label": "Compliance Deadline",
+          "value": "Jan 1, 2027"
+        },
+        {
+          "_key": "s3",
+          "context": "Previous payer must respond to a payer-to-payer data request within one business day of receiving a valid matched request",
+          "label": "Response Requirement",
+          "value": "1 business day"
+        },
+        {
+          "_key": "s4",
+          "context": "New payer must initiate the data request within one week of member enrollment and consent to ensure timely data availability",
+          "label": "Initiation Window",
+          "value": "1 week"
+        }
+      ]
+    },
+    {
+      "_key": "s4ex",
+      "_type": "exampleBlock",
+      "content": "A 52-year-old woman with relapsing-remitting multiple sclerosis switches from a Medicaid managed care plan to a Marketplace plan during open enrollment. Her previous plan had an active prior authorization for natalizumab, a high-cost specialty infusion administered monthly. Without payer-to-payer exchange, her new plan's prior authorization team would receive a fresh PA request from her neurologist with no context and might require a step therapy protocol starting with lower-cost alternatives, even though she has already demonstrated failure on multiple prior agents. With payer-to-payer exchange, the new plan receives the prior authorization history including the clinical rationale, the active approval status, and the treatment duration. The care manager can onboard her into the specialty pharmacy program on day one, avoiding a treatment gap that could trigger a relapse.",
+      "title": "Real-World Scenario: Prior Authorization Continuity for a Complex Patient"
+    },
+    {
+      "_key": "s5h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The Hard Problems: Identity Matching, Consent, and Data Operationalization"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "If payer-to-payer data exchange were purely a regulatory and technical standards problem, the January 2027 deadline would be straightforward to meet. The real difficulty lies in three operational challenges that no regulation or implementation guide can fully solve: member identity matching, consent management, and post-ingestion data operationalization. These challenges sit at the intersection of incomplete data, legal complexity, and organizational capability, and industry experience with early implementations suggests they are where most exchange attempts break down in practice."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Member identity matching is the foundational challenge. The $member-match operation in the PDex IG provides a standardized protocol for matching demographics, but it cannot compensate for demographic data quality problems that are endemic to the health insurance industry. Names are recorded inconsistently, with William at one plan and Bill at another. Dates of birth contain transcription errors. Women who have changed their name after marriage may appear under different names at different plans. Addresses are outdated. Social Security Numbers, which would provide a reliable matching key, are not universally collected for privacy reasons and are not included in the FHIR $member-match operation's standard input. The United States has no national patient identifier, a persistent gap in the country's health IT infrastructure, meaning that matching must rely on probabilistic algorithms applied to imperfect demographic data. A match that fails produces no data transfer. A false match could result in the wrong patient's records being disclosed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Consent management presents its own complexity. CMS-0057-F requires member opt-in consent before a payer can initiate a data request to a previous plan. This sounds straightforward but raises several operational questions. How does the new plan verify that the consent it has obtained is legally sufficient to authorize the previous plan to disclose data? Will one covered entity accept a consent record gathered by another covered entity as sufficient authorization for disclosure under HIPAA? The PDex IG includes consent resource handling within the $member-match workflow, but payers must implement internal processes for capturing, storing, and transmitting consent documentation in a way that both the requesting plan and the disclosing plan trust. For members who have behavioral health or substance use disorder treatment history, categories of data that carry heightened legal protections under 42 CFR Part 2, consent requirements are even more stringent, and the current PDex framework does not yet have a fully standardized solution for segmenting these sensitive records from a bulk exchange."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Post-ingestion operationalization may be the least-discussed but most consequential challenge. A payer can successfully receive a FHIR bundle of ExplanationOfBenefit resources from a previous plan and still fail to use them effectively. This happens when the internal systems receiving the data lack the workflow integration to surface prior authorization history to reviewers at the moment of decision, or when member identity confidence scores from the matching process are not propagated through the data pipeline, leaving care managers uncertain whether they are looking at the right patient's records. A 2025 industry report found that payer-to-payer interoperability most often fails in the post-ingestion layer where member identity confidence, provenance clarity, completeness signaling, workflow routing, and exception handling remain too immature to translate received data into clinical action. Receiving the data and using the data are not the same thing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w",
+      "_type": "warningBlock",
+      "message": "CMS-0057-F establishes a compliance deadline for implementing and maintaining the Payer-to-Payer FHIR API, meaning the technical capability must be in place and functional. But regulatory compliance does not guarantee clinical impact. A payer can pass an API audit and still fail to route prior authorization history to reviewers in time to prevent a treatment gap, or fail to surface a member's chronic condition profile to care managers during onboarding. The measure of true success in payer-to-payer exchange is not whether the API endpoint responds. It is whether the data received improves outcomes for the member who switched plans.",
+      "title": "The January 2027 Deadline Is a Floor, Not a Ceiling"
+    },
+    {
+      "_key": "s5cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "What Compliance Requires",
+        "points": [
+          "FHIR R4 Payer-to-Payer API endpoint live by January 1, 2027",
+          "$member-match operation implemented for identity resolution",
+          "5 years of claims, USCDI data, and prior auth history available",
+          "Respond to data requests within one business day",
+          "Initiate requests within one week of member consent and enrollment"
+        ]
+      },
+      "right": {
+        "label": "What Clinical Impact Requires",
+        "points": [
+          "Matched data routed to care managers during new member onboarding",
+          "Prior authorization history surfaced to reviewers at point of decision",
+          "Chronic condition profile integrated into risk stratification workflows",
+          "Data provenance tracked so clinicians know the source and date of each record",
+          "Exception handling for failed matches and incomplete records"
+        ]
+      },
+      "title": "Payer-to-Payer Exchange: Technical Compliance vs. Clinical Impact"
+    },
+    {
+      "_key": "s6h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The Road to 2027 and Beyond: Adoption Landscape and Future Trajectory"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s6p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "With the January 2027 deadline approaching, the health insurance industry faces a substantial implementation sprint. Unlike the Patient Access API where payers had years of experience building FHIR infrastructure and SMART on FHIR authorization before the compliance date arrived, the Payer-to-Payer API introduces genuinely new complexity: payer-to-payer trust frameworks, mTLS endpoint management, bulk member matching, and the operational workflows described above. Early industry assessments suggest that while most large national payers have PDex development programs underway, regional plans and smaller Medicaid managed care organizations face significant resource and technical capability gaps."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Sequoia Project, a non-profit health IT policy organization, has identified payer-to-payer exchange as a priority for its TEFCA framework expansion. While TEFCA currently focuses primarily on provider-to-provider and provider-to-payer exchange, the Sequoia Project has noted that January 2027 creates an opportunity to connect payer-to-payer exchange into the TEFCA trust fabric, providing participating payers with pre-built trust agreements, endpoint directories, and identity assurance frameworks that individual bilateral agreements cannot efficiently provide. If this integration succeeds, it would address one of the most persistent operational barriers to payer-to-payer exchange: the need for each requesting payer to negotiate individual trust agreements with each potential responding payer, creating an exponential scaling problem in a market with hundreds of health plans."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The longer-term regulatory trajectory points toward increasingly granular and comprehensive data exchange. CMS-0057-F is not the final word on payer-to-payer exchange. It is the framework on which subsequent requirements will be built. Likely areas for future rulemaking include real-time exchange rather than the one-week initiation window currently permitted, expanded data scope to include more structured clinical data as payers acquire it through value-based arrangements, and integration with national patient identity initiatives. The Da Vinci Project continues to evolve the PDex IG, with version 2.2.0 having introduced bulk exchange patterns and improved consent handling, and future versions expected to address behavioral health data segmentation and enhanced provenance requirements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "For members, the potential impact is substantial but conditional on execution quality. A Medicaid member who churns and loses coverage for three months due to a paperwork failure before re-enrolling should, under a fully implemented payer-to-payer exchange regime, have their chronic condition history, active care plans, and prior authorization approvals available to the re-enrolling plan within days rather than requiring months of manual record reconstruction. A Medicare Advantage enrollee who switches plans during open enrollment should not have to re-document their medical history to a new care manager. An ACA Marketplace member who changes plans because their previous insurer exits the market should not lose their oncologist's prior authorization for chemotherapy continuation. These are the outcomes that the regulatory framework is designed to produce, and they will only materialize if payers invest not just in API compliance, but in the operational infrastructure that turns received data into clinical action."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6hl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6hls",
+          "_type": "span",
+          "marks": [],
+          "text": "Payer-to-payer exchange is the missing link in health data continuity. The Patient Access API gave members the right to retrieve their own data. Provider access APIs gave clinicians direct access to payer data. Payer-to-payer exchange closes the loop by ensuring that when a member changes plans, their history follows them automatically without requiring the member to personally gather and transport their own records between insurers."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "tkwy",
+      "_type": "takeawayBlock",
+      "points": [
+        "CMS-9115-F (2020) originally required payer-to-payer data exchange by January 1, 2022, but CMS exercised enforcement discretion in December 2021 because FHIR standards had not yet matured sufficiently for reliable standardized exchange at scale.",
+        "CMS-0057-F (January 2024) supersedes the earlier framework with a definitive mandate: impacted payers must implement a FHIR R4 Payer-to-Payer API by January 1, 2027, exchanging up to 5 years of claims, USCDI clinical data, and prior authorization history.",
+        "The technical backbone is the Da Vinci PDex Implementation Guide v2.2.0, which defines the $member-match operation for identity resolution, mTLS and OAuth 2.0 for security, and both single-member and bulk asynchronous exchange patterns.",
+        "The $member-match operation resolves the identity problem: the requesting payer submits enrollment demographics and the previous payer returns a confirmed FHIR patient identifier that unlocks the clinical data query, without relying on a national patient identifier that the U.S. does not yet have.",
+        "The previous payer must respond to data requests within one business day, and the new payer must initiate the request within one week of member consent and enrollment, ensuring clinically relevant data arrives before the first care interaction.",
+        "Three operational challenges dominate real-world implementation: member identity matching failures from demographic data quality problems, consent management complexity especially for sensitive behavioral health records under 42 CFR Part 2, and post-ingestion operationalization failures where received data never reaches clinical workflows.",
+        "More than 25 million Medicaid disenrollments occurred during the 2023-2025 unwinding with 69% attributable to administrative rather than eligibility reasons, illustrating the massive scale of the coverage continuity problem that payer-to-payer exchange is designed to address.",
+        "Regulatory compliance with the January 2027 API mandate is necessary but not sufficient: the measure of success is whether prior authorization history, chronic condition profiles, and care plans are surfaced to the right people at the right moment to prevent treatment gaps for members who switch plans."
+      ]
+    },
+    {
+      "_key": "quiz1",
+      "_type": "knowledgeCheck",
+      "explanation": "CMS-0057-F sets the compliance deadline at January 1, 2027 for the Payer-to-Payer FHIR API. Impacted payers must make available adjudicated claims and encounter data, USCDI clinical information, and prior authorization history with a date of service within five years of the exchange request and no earlier than January 1, 2016. The rule builds on the foundation of CMS-9115-F, which originally required payer-to-payer exchange by January 1, 2022 but was never enforced after CMS exercised enforcement discretion in December 2021.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "January 1, 2026; 3 years of claims history"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "January 1, 2027; 5 years of claims history"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "January 1, 2025; 10 years of claims history"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "January 1, 2027; 1 year of claims history"
+        }
+      ],
+      "question": "Under CMS-0057-F, what is the compliance deadline for impacted payers to implement the Payer-to-Payer FHIR API, and how many years of claims history must be available for exchange?"
+    },
+    {
+      "_key": "srch",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srchs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS. CMS Interoperability and Prior Authorization Final Rule (CMS-0057-F). Centers for Medicare and Medicaid Services, January 2024. https://www.cms.gov/priorities/burden-reduction/overview/interoperability/policies-regulations/cms-interoperability-prior-authorization-final-rule-cms-0057-f"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS. Payer-to-Payer API — Frequently Asked Questions. Centers for Medicare and Medicaid Services. https://www.cms.gov/priorities/burden-reduction/overview/interoperability/frequently-asked-questions/payer-payer-api"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS. CMS Interoperability and Patient Access Final Rule (CMS-9115-F). Centers for Medicare and Medicaid Services, May 2020. https://www.cms.gov/priorities/burden-reduction/overview/interoperability/policies-regulations/cms-interoperability-patient-access-final-rule-cms-9115-f"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS. FAQs About CMS Interoperability and Patient Access Final Rule — Payer-to-Payer Enforcement Discretion. https://www.cms.gov/files/document/cms-9115-payer-payer-enforcement-discretion-faq.pdf"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "HL7 Da Vinci Project. Da Vinci Payer Data Exchange PDex Implementation Guide v2.2.0. https://build.fhir.org/ig/HL7/davinci-epdx/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "HL7 Da Vinci Project. PDex Payer-to-Payer Exchange Single Member — v2.2.0. https://build.fhir.org/ig/HL7/davinci-epdx/payertopayerexchange.html"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "KFF. Medicare Advantage Plan Switching: Exception or Norm? Kaiser Family Foundation. https://www.kff.org/medicare/medicare-advantage-plan-switching-exception-or-norm/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src8s",
+          "_type": "span",
+          "marks": [],
+          "text": "KFF. 10 Things to Know About the Unwinding of the Medicaid Continuous Enrollment Provision. https://www.kff.org/medicaid/issue-brief/10-things-to-know-about-the-unwinding-of-the-medicaid-continuous-enrollment-provision/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src9s",
+          "_type": "span",
+          "marks": [],
+          "text": "Commonwealth Fund. Reducing Medicaid Churn: Policies to Promote Stable Health Coverage and Access to Care, June 2025. https://www.commonwealthfund.org/publications/issue-briefs/2025/jun/reducing-medicaid-churn-policies-promote-stable-health-coverage"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src10",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src10s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sequoia Project. What January 2027 Means for Payer-to-Payer Exchange. https://sequoiaproject.org/what-january-2027-means-for-payer-to-payer-exchange/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src11s",
+          "_type": "span",
+          "marks": [],
+          "text": "Binariks. Payer-to-Payer Data Exchange: What You Must Know in 2026. https://binariks.com/blog/payer-to-payer-data-exchange-cms/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src12",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src12s",
+          "_type": "span",
+          "marks": [],
+          "text": "Morningstar/AccessWire. Payer-to-Payer API Reality Gap Report Finds Most Exchanged Data Still Fails at the Point of Operational Use. https://www.morningstar.com/news/accesswire/1155520msn/payer-to-payer-api-reality-gap-report-finds-most-exchanged-data-still-fails-at-the-point-of-operational-use"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src13s",
+          "_type": "span",
+          "marks": [],
+          "text": "1up Health. From Rule to Results: Your Top Payer-to-Payer Data Exchange Questions Answered. https://1up.health/blog/from-rule-to-results-your-top-payer-to-payer-data-exchange-questions-answered/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src14",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src14s",
+          "_type": "span",
+          "marks": [],
+          "text": "U.S. News Health News. 25 Million People Lost Medicaid After the COVID-19 Pandemic. April 2026. https://www.usnews.com/news/health-news/articles/2026-04-14/25-million-people-lost-medicaid-after-the-covid-19-pandemic-state-policies-shaped-who-stayed"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "healthcare-interoperability",
+  "order": 21,
+  "slug": {
+    "_type": "slug",
+    "current": "interop-payer-to-payer"
+  },
+  "title": "Payer-to-Payer Data Exchange: Continuity of Coverage in a Mobile Population"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "6070b2d4-5a31-46f1-b3a5-bff0ce79d912",
+  "quiz_id": "a818c71f-1292-4ae7-9452-d1f3ff6973e8",
+  "order": 2,
+  "question_type": "single_choice",
+  "question": "Under the Cures Act, which type of actor faces the highest financial penalty — up to $1 million per violation — for information blocking?",
+  "explanation": "The Cures Act created a tiered enforcement framework. Health IT developers face the steepest direct penalties ($1M/violation from ONC) because they control the technology infrastructure that enables or blocks data exchange.",
+  "points": null
+}

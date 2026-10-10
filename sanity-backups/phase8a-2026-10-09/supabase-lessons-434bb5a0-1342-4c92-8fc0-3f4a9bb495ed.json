@@ -1,0 +1,96 @@
+{
+  "id": "434bb5a0-1342-4c92-8fc0-3f4a9bb495ed",
+  "track_id": "a3c63a7e-b87e-490e-9a38-c2fab03c8d1c",
+  "pillar": "policy",
+  "order": 4,
+  "slug": "patient-access-rights-hipaa",
+  "title": "Patient Access Rights: HIPAA, Cures Act & Third-Party Apps",
+  "summary": "Patients have layered rights to access their health data — HIPAA's 30-day right of access, OCR enforcement, and the Cures Act's stronger electronic access mandate.",
+  "estimated_minutes": 15,
+  "objectives": [
+    {
+      "id": "obj_par1",
+      "text": "Explain HIPAA's right of access: timeline, format, fees"
+    },
+    {
+      "id": "obj_par2",
+      "text": "Describe how the Cures Act strengthens patient access beyond HIPAA"
+    },
+    {
+      "id": "obj_par3",
+      "text": "Explain what patients can and cannot do when authorizing third-party apps"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "HIPAA has included a right of access since the Privacy Rule took effect in 2003: patients can request their medical records, and covered entities must provide them within 30 days (with one 30-day extension) in the format requested if readily producible. Fees are limited to the cost of copying, labor, and postage. On paper, this is a strong right. In practice, it was routinely violated without consequence for nearly two decades.\n\nOCR's Right of Access Initiative, launched in 2019, changed this. OCR began actively investigating access complaints and imposing civil monetary penalties for violations — even small ones. A physician practice that takes 6 months to fulfill a simple records request, charges $400 for a simple copy, or refuses to send records directly to a patient's designated app now faces real enforcement risk. By 2024, OCR had imposed over $10 million in HIPAA right of access settlements.\n\nThe Cures Act adds a separate, stronger layer of patient access rights for data held in certified EHR systems. Patients can now direct their EHR provider to share their data with any third-party application that meets the standardized API terms of service — without the covered entity's permission to use a specific app. This patient-directed data sharing is a fundamental new right that goes beyond what HIPAA requires.",
+      "type": "text",
+      "heading": "Patients have a right to their own data — but it has been poorly enforced"
+    },
+    {
+      "rows": [
+        [
+          "Timeline",
+          "30 days (60 with extension)",
+          "Real-time or near-real-time"
+        ],
+        [
+          "Format",
+          "Requested format if readily producible",
+          "Standardized FHIR R4 API"
+        ],
+        [
+          "Scope",
+          "Designated record set",
+          "EHI (all data in CEHRT)"
+        ],
+        [
+          "Third-party direction",
+          "Patient can designate a recipient",
+          "Patient can connect any certified app"
+        ],
+        [
+          "Fees",
+          "Cost-based, limited",
+          "Cannot charge patients fees for their own data"
+        ],
+        [
+          "Enforcement",
+          "OCR, up to $50,000/violation",
+          "ONC/OIG information blocking rules"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Dimension",
+        "HIPAA Right of Access",
+        "Cures Act API Access"
+      ],
+      "heading": "HIPAA Right of Access vs. Cures Act API Access"
+    },
+    {
+      "body": "When a patient connects a third-party app to their EHR's FHIR API, they are authorizing that app to access their health data. The covered entity (hospital or provider) cannot veto this choice — but also cannot guarantee the app is HIPAA compliant. Once data moves to a third-party consumer app (like a wellness app or data aggregator), HIPAA no longer applies. The app is governed by its own privacy policy and FTC regulations. Patients should be counseled about this privacy tradeoff when connecting apps.",
+      "type": "callout",
+      "title": "What patients authorize when connecting third-party apps",
+      "variant": "warning"
+    },
+    {
+      "type": "key_stat",
+      "label": "in HIPAA right of access settlements (OCR, 2019–2024)",
+      "value": "$10M+",
+      "context": "OCR's Right of Access Initiative brought real enforcement to a patient right that had been largely theoretical. Settlements range from $3,500 (small practices) to $240,000 (larger organizations) per violation."
+    }
+  ],
+  "tags": [
+    "patient access",
+    "HIPAA",
+    "right of access",
+    "OCR",
+    "third-party apps"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:40.694102+00:00",
+  "updated_at": "2026-06-01T14:54:56.885524+00:00",
+  "sanity_slug": "interop-patient-access"
+}

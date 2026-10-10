@@ -1,0 +1,620 @@
+{
+  "_createdAt": "2026-05-29T03:05:00Z",
+  "_id": "interop-cures-act",
+  "_rev": "rL4Cn5Sfo5Z8rzPmE3ayg7",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T17:29:58Z",
+  "body": [
+    {
+      "_key": "intro1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "intro1s",
+          "_type": "span",
+          "marks": [],
+          "text": "On December 13, 2016, President Obama signed the 21st Century Cures Act into law. The legislation was one of the most sweeping health information technology reforms in the United States since the HITECH Act of 2009, and its interoperability provisions — concentrated in Title IV — set off a regulatory cascade that would reshape how hospitals, insurers, app developers, and patients exchange electronic health information for years to come."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "intro2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "intro2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Yet the law itself was only the opening act. The actual requirements that providers and health IT vendors had to meet came primarily through two landmark final rules published simultaneously on May 1, 2020: the ONC 21st Century Cures Act Final Rule (85 FR 25642) and the CMS Interoperability and Patient Access Final Rule (CMS-9115-F). Together these rules translated congressional intent into specific, enforceable mandates around APIs, data standards, and a new federal prohibition called information blocking. Understanding what each layer of this legal framework actually requires — and what it does not — is essential for anyone working at the intersection of health policy, technology, or clinical care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "intro3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "intro3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson walks through the five pillars of the interoperability framework created by the Cures Act: the legislative architecture of Title IV, the information blocking prohibition and its exceptions, the FHIR API mandates and certification requirements, the Trusted Exchange Framework and Common Agreement (TEFCA) that aims to create a network of networks, and finally the real-world impact measured since enforcement began — including the significant gaps that remain."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Title IV: The Legislative Architecture"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 21st Century Cures Act spans 362 pages and covers topics ranging from cancer research to mental health to drug approvals. Title IV, however, is exclusively focused on health information technology. It contains four major sections — 4001 through 4004 — that together define the statutory framework for interoperability and information blocking. Section 4001 directed ONC to establish an annual strategy for using health IT to reduce burden on clinicians. Section 4002 updated the certification program for electronic health records, requiring that certified technology not block information sharing. Section 4003 directed ONC to develop a Trusted Exchange Framework for nationwide interoperability. And Section 4004 — the most consequential from a compliance standpoint — formally prohibited information blocking and established penalties for violations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "What makes Title IV unusual in federal health IT law is the breadth of entities it covers. Prior federal health IT legislation primarily targeted providers participating in federal programs and the EHR vendors serving them. Title IV extended new legal obligations to health information exchanges (HIEs), health information networks (HINs), and health IT developers far beyond the narrow scope of EHR certification. The law also created a definition of interoperability that set a new standard: health IT should enable the secure exchange and use of health information without special effort on the part of the user. That phrase — without special effort — became a touchstone in subsequent regulatory debates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Congress also gave ONC explicit authority to update the United States Core Data for Interoperability (USCDI), a standardized set of health data elements that must be supported by certified systems. USCDI Version 1, which became the baseline for the Cures Act final rules, defined 16 data classes including patient demographics, clinical notes, laboratory results, medications, vital signs, and provenance information. Subsequent versions have expanded these requirements, with USCDI v3 adding social determinants of health data elements and v4 incorporating additional clinical data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "By President Obama; 362-page omnibus health legislation",
+          "label": "Cures Act Signed",
+          "value": "Dec 13, 2016"
+        },
+        {
+          "_key": "s2",
+          "context": "Both ONC and CMS rules appeared in Federal Register simultaneously (85 FR 25642)",
+          "label": "Final Rules Published",
+          "value": "May 1, 2020"
+        },
+        {
+          "_key": "s3",
+          "context": "Baseline data elements all certified health IT must support",
+          "label": "USCDI v1 Data Classes",
+          "value": "16"
+        },
+        {
+          "_key": "s4",
+          "context": "Sections 4001–4004 covering strategy, certification, TEFCA, and information blocking",
+          "label": "Key Title IV Sections",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "_key": "s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The Information Blocking Prohibition: Section 4004 in Detail"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Section 4004 of the Cures Act created an entirely new category of federal health care violation: information blocking. The statute defines information blocking as a practice that is likely to interfere with, prevent, or materially discourage the access, exchange, or use of electronic health information (EHI), and that the actor knows — or should know — is likely to have that effect. Unlike HIPAA, which regulates what information must be protected, the information blocking prohibition regulates practices that unnecessarily restrict what information can flow."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The law identifies three categories of regulated actors: health IT developers of certified health IT; health information exchanges and health information networks (HIEs/HINs); and health care providers. The knowledge standard differs by actor type. For health IT developers and HIEs/HINs, the standard is whether they know or should know that a practice is likely to interfere with EHI access. For providers, it is a slightly higher bar — the provider must actually know that the practice is unreasonable. The definition of EHI itself was phased in: initially limited to data elements in USCDI v1, and then expanded by October 2022 to encompass the full scope of a patient's designated record set as defined under HIPAA."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC established eight regulatory exceptions that, when met, mean a practice does not constitute information blocking. These are: (1) Preventing Harm — blocking is permitted when it substantially reduces a genuine risk of harm to a patient or third party; (2) Privacy — compliance with state or federal privacy laws or patient-requested restrictions; (3) Security — protecting against threats to the confidentiality, integrity, or availability of EHI, but only when applied consistently and non-discriminatorily; (4) Infeasibility — technically or organizationally impossible to fulfill a specific request; (5) Health IT Performance — system maintenance or upgrades requiring temporary unavailability; (6) Content and Manner — responding in an alternative manner when a request is unreasonable in its scope; (7) Fees — charging market-based, cost-related fees for access, applied uniformly; and (8) Licensing — conditions on licensing interoperability interfaces, subject to fair terms requirements. Between April 2021 and May 2023, ONC received 708 complaints alleging information blocking — 79% filed by or on behalf of patients, with health care providers named as the alleged actor in 80% of cases."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Before Cures Act (pre-2016)",
+        "points": [
+          "No federal prohibition on EHI access interference",
+          "EHR contracts routinely included data-blocking clauses",
+          "Patients had no federal right to machine-readable health data",
+          "No penalty framework for vendor lock-in practices"
+        ]
+      },
+      "right": {
+        "label": "After Cures Act (post-2020 rules)",
+        "points": [
+          "Federal prohibition on information blocking by three actor types",
+          "OIG can impose CMPs up to $1M per violation for IT developers/HIEs",
+          "Patients have right to their EHI through standardized APIs at no cost",
+          "Disincentives apply to providers; OIG final penalty rule effective Sept 2023"
+        ]
+      },
+      "title": "Information Blocking: Before vs. After Cures Act"
+    },
+    {
+      "_key": "s2w",
+      "_type": "warningBlock",
+      "message": "OIG's final information blocking penalty rule took effect September 1, 2023, meaning conduct before that date is not subject to CMPs. As of mid-2025, OIG has not publicly disclosed completed enforcement actions under the rule, but has indicated it is actively prioritizing cases involving patient harm, large financial loss, or long duration of blocking.",
+      "title": "Enforcement is active but developing"
+    },
+    {
+      "_key": "s3h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3hs",
+          "_type": "span",
+          "marks": [],
+          "text": "FHIR APIs and CEHRT Requirements: The Technical Mandate"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The ONC Cures Act Final Rule's most technically consequential provision was the creation of a new certification criterion for standardized APIs using HL7 FHIR Release 4 (FHIR R4). This criterion — codified at 45 CFR 170.315(g)(10) — requires that certified EHR technology (CEHRT) support application programming interfaces that allow both individual patients and authorized third-party apps to access health data programmatically, without special effort, and at no cost to the patient. The standard chosen was not arbitrary: FHIR R4 had emerged from a multi-year HL7 standards development process and had already seen significant industry adoption before it became mandatory."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The ONC rule established two distinct API use cases. The first is the Patient Access API: a single-patient, read-only API that allows patients to authorize third-party applications — including smartphone health apps — to retrieve their records from their provider's EHR. The second is the Provider Access API and Bulk Data Access: population-level data export capabilities that allow authorized entities to retrieve records for multiple patients simultaneously. SMART on FHIR, a companion specification that ONC also endorsed, provides the authorization and authentication layer that allows apps to plug into EHRs much as apps plug into a smartphone operating system. By 2024, more than 250 certified products from over 200 health IT developers had implemented the Bulk Data Access API criterion."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CMS Interoperability and Patient Access Rule (CMS-9115-F) extended parallel FHIR API requirements to payers — specifically Medicaid and CHIP fee-for-service programs, Medicaid managed care organizations, CHIP managed care entities, and Qualified Health Plans in the Federally Facilitated Marketplace. These payers were required to implement a FHIR R4-based Patient Access API making claims, encounter data, and clinical data (conforming to USCDI v1) available to members. CMS also required payers to implement a Provider Directory API, enabling providers to verify network information programmatically. Data had to be available from January 1, 2016 forward for all current enrollees. A subsequent CMS rule — CMS-0057-F, the Interoperability and Prior Authorization Final Rule published in January 2024 — added prior authorization exchange via FHIR APIs, with compliance deadlines extending to 2026–2027."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "ONC Cures Act Final Rule became effective — information blocking prohibition activated for health IT developers and HIEs.",
+          "title": "June 30, 2020"
+        },
+        {
+          "_key": "step2",
+          "description": "Information blocking provisions became enforceable for all actor types; ONC began accepting complaints.",
+          "title": "April 5, 2021"
+        },
+        {
+          "_key": "step3",
+          "description": "Certified health IT must have the new FHIR R4 standardized API (§170.315(g)(10)) available to clients and patients.",
+          "title": "December 31, 2022"
+        },
+        {
+          "_key": "step4",
+          "description": "EHI definition expanded from USCDI v1 to the full designated record set, significantly broadening what actors cannot block.",
+          "title": "October 6, 2022"
+        },
+        {
+          "_key": "step5",
+          "description": "EHI export capability (§170.315(b)(10)) — bulk export of a patient's entire record — required to be available in certified systems.",
+          "title": "December 31, 2023"
+        },
+        {
+          "_key": "step6",
+          "description": "OIG's civil monetary penalty enforcement for information blocking by non-provider actors begins.",
+          "title": "September 1, 2023"
+        }
+      ],
+      "title": "Compliance Milestones: ONC Cures Update Timeline"
+    },
+    {
+      "_key": "s3analogy",
+      "_type": "analogyBlock",
+      "analogy": "Think of FHIR R4 as the USB-C standard for health data. Before FHIR mandates, every EHR vendor used a proprietary connector — a health app had to build a custom integration for Epic, another for Cerner, another for Athena. FHIR R4 creates one universal port. Once a vendor certifies to the standard, any authorized app can plug in without custom development.",
+      "concept": "FHIR R4 as universal interoperability standard for health data APIs"
+    },
+    {
+      "_key": "s4h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hs",
+          "_type": "span",
+          "marks": [],
+          "text": "TEFCA: Building the Network of Networks"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Section 4003(b) of the Cures Act gave ONC a specific mandate: publish a Trusted Exchange Framework — a common set of principles that all health information networks should follow — and a Common Agreement that health information networks could sign to participate in nationwide, query-based exchange. The resulting initiative, the Trusted Exchange Framework and Common Agreement (TEFCA), took several years to develop through public comment and stakeholder engagement. ONC published TEFCA's foundational documents in January 2022, and in December 2023 reached the pivotal milestone of designating the first Qualified Health Information Networks (QHINs) — the organizations that anchor TEFCA's exchange infrastructure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "TEFCA operates through a three-tier governance structure. At the top is ONC, which sets policy. Below ONC is the Recognized Coordinating Entity (RCE) — currently the Sequoia Project — which manages the Common Agreement, handles QHIN applications, and oversees technical standards through the QHIN Technical Framework (QTF). At the operational level are the QHINs themselves: large health information networks that sign the Common Agreement and agree to exchange data with one another under shared rules for patient identity matching, authentication, and performance. As of early 2024, eight organizations had been designated as QHINs: eHealth Exchange, Epic Nexus, Health Gorilla, Konza, MedAllies, Kno2, CommonWell Health Alliance, and eClinicalWorks. CommonWell alone serves more than 37,000 provider organizations and more than 244 million unique individuals."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The transformative promise of TEFCA is query-based exchange at national scale. Before TEFCA, a clinician at a hospital in Vermont wanting to access records from a hospital in Texas faced a patchwork of bilateral agreements, network memberships, and technical barriers. TEFCA creates a single on-ramp: join any QHIN, and you can query any other QHIN's participants under the shared rules of the Common Agreement. TEFCA defines five exchange purposes: Treatment, Payment, Health Care Operations, Public Health, and Individual Access Services (IAS) — the last being a critical pathway for patients to access their own data. In August 2024, Carequality — one of the largest existing interoperability frameworks in the country — announced alignment with TEFCA, signaling a broad industry convergence around this infrastructure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex",
+      "_type": "exampleBlock",
+      "content": "A patient is admitted to a Vermont hospital after a car accident. The treating physician needs medication history from the patient's primary care practice in Florida. Under TEFCA: (1) The hospital's EHR, as a participant in a Vermont-based QHIN, sends a Treatment-purpose query to the TEFCA network. (2) The TEFCA infrastructure routes the query to any QHIN whose participants include the Florida practice. (3) The Florida QHIN returns the patient's medication list, problem list, and allergy information in FHIR R4 format. (4) The Vermont EHR displays the results — no phone calls, no fax, no bilateral agreement required. The entire exchange occurs under the legal and technical governance of the Common Agreement.",
+      "title": "How TEFCA Exchange Works in Practice"
+    },
+    {
+      "_key": "s5h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Real-World Impact and What Remains Unfinished"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Since the information blocking prohibition took effect in April 2021 and the FHIR API certification deadlines began hitting in late 2022, measurable change has occurred in the health IT landscape. Patient access to health data through third-party apps has expanded dramatically. ONC's 2023 data showed that just 5% of certified EHR products — in market penetration terms — had satisfied the full Cures Update API criteria, yet those 5% supported approximately 66% of inpatient users and 77% of ambulatory users nationwide, because the criterion was adopted by the dominant market players early. More than 250 certified products now support the Bulk Data Access API. Payers subject to CMS-9115-F have stood up Patient Access APIs, giving millions of Medicaid and marketplace enrollees machine-readable access to their claims and clinical data for the first time."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite this progress, significant gaps persist. First, provider directory accuracy remains a chronic problem. CMS required payers to publish Provider Directory APIs, but the underlying data in those directories — which provider is in network, what their practice address is, what specialties they offer — is notoriously inaccurate. Studies have found error rates exceeding 50% in payer directories, undermining the value of the API mandate. Second, consent portability is largely unsolved. TEFCA's Common Agreement governs what QHINs can share with one another, but patient consent preferences expressed in one system — say, a request not to share behavioral health records — are not reliably honored when records travel across TEFCA or between EHR systems. Third, data quality and completeness vary widely. A FHIR API can return a medication list that is months out of date, or clinical notes that were never coded into structured data. The Cures Act mandated access to data, not the accuracy or completeness of that data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Ongoing rulemaking is attempting to address some of these gaps. ONC's Health Data, Technology, and Interoperability (HTI-1) final rule, published in December 2023, codified TEFCA requirements and expanded USCDI to v3. A subsequent HTI-2 rulemaking proposed additional standards and strengthened API transparency requirements. HHS also proposed new provider disincentive rules for information blocking by health care providers — a separate track from OIG enforcement — which would allow CMS to exclude information-blocking providers from meaningful use incentive programs or Medicare payment bonuses. The cumulative effect of these rules, if fully implemented, would represent the most comprehensive federal interoperability infrastructure the United States has ever had. Whether it will deliver seamless, patient-centered health data exchange in practice remains an open question."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w",
+      "_type": "warningBlock",
+      "message": "A common misconception is that FHIR API mandates override HIPAA privacy rules. They do not. HIPAA governs what information covered entities must protect; the Cures Act governs practices that unreasonably block access. When a patient authorizes a third-party app to receive their records through a FHIR API, the provider is permitted to share those records despite HIPAA — but HIPAA still applies to how the receiving app handles that data if it is a covered entity or business associate. The two frameworks intersect but do not cancel each other.",
+      "title": "HIPAA still governs privacy — FHIR does not override it"
+    },
+    {
+      "_key": "s5sg",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Received by ONC between April 2021 and May 2023; 79% filed by or on behalf of patients",
+          "label": "Information Blocking Complaints",
+          "value": "708"
+        },
+        {
+          "_key": "s2",
+          "context": "Per violation for health IT developers, HIEs, and HINs under OIG's Sept 2023 final rule",
+          "label": "Maximum OIG Penalty",
+          "value": "$1M"
+        },
+        {
+          "_key": "s3",
+          "context": "eHealth Exchange, Epic Nexus, Health Gorilla, Konza, MedAllies, Kno2, CommonWell, eClinicalWorks",
+          "label": "Designated QHINs (early 2024)",
+          "value": "8"
+        },
+        {
+          "_key": "s4",
+          "context": "Health IT products supporting the Bulk Data Access API criterion by 2024",
+          "label": "Certified Products (Bulk Data API)",
+          "value": "250+"
+        }
+      ]
+    },
+    {
+      "_key": "srch",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srchs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Federal Register — 21st Century Cures Act: Interoperability, Information Blocking, and the ONC Health IT Certification Program (85 FR 25642, May 1, 2020) — https://www.federalregister.gov/documents/2020/05/01/2020-07419/21st-century-cures-act-interoperability-information-blocking-and-the-onc-health-it-certification — Source for ONC final rule effective date, FHIR R4 API criteria, information blocking exceptions, and USCDI v1 data class requirements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] CMS Interoperability and Patient Access Final Rule (CMS-9115-F) — https://www.cms.gov/priorities/burden-reduction/overview/interoperability/policies-regulations/cms-interoperability-patient-access-final-rule-cms-9115-f — Source for payer FHIR R4 Patient Access API requirements, Provider Directory API mandate, and data coverage from January 1, 2016 forward."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] OIG Information Blocking Enforcement — Ropes & Gray Alert (July 2023) and OIG.HHS.gov — https://oig.hhs.gov/reports/featured/information-blocking/ — Source for OIG final rule (Sept 1, 2023 effective date), $1M per-violation maximum CMPs, and complaint statistics (708 complaints, April 2021–May 2023)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] TEFCA Overview — ONC / Sequoia Project RCE — https://www.healthit.gov/topic/interoperability/policy/trusted-exchange-framework-and-common-agreement-tefca — Source for Section 4003(b) legal basis, January 2022 publication, December 2023 first QHIN designations, and eight designated QHINs as of early 2024."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] On the Road to Cures Update: Certified API Technology — ONC Health IT Buzz (2022–2023) — https://www.healthit.gov/buzz-blog/healthit-certification/on-the-road-to-cures-update-certified-api-technology — Source for adoption statistics: 5% of certified products covering 66% inpatient and 77% ambulatory users; 250+ Bulk Data API products by 2024."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] 21st Century Cures Act — Wikipedia — https://en.wikipedia.org/wiki/21st_Century_Cures_Act — Source for December 13, 2016 signing date, Title IV section structure, and legislative history."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tko",
+      "_type": "takeawayBlock",
+      "points": [
+        "The 21st Century Cures Act was signed December 13, 2016; its core interoperability and information blocking rules were published May 1, 2020, in two simultaneous final rules from ONC (85 FR 25642) and CMS (CMS-9115-F).",
+        "Title IV, Section 4004 prohibits information blocking — practices that knowingly and unreasonably impede EHI access — by three actor types: health IT developers, HIEs/HINs, and health care providers.",
+        "ONC established eight exceptions to the information blocking prohibition (preventing harm, privacy, security, infeasibility, health IT performance, content and manner, fees, licensing); meeting an exception means a practice is not information blocking.",
+        "Both ONC and CMS mandated HL7 FHIR Release 4 as the required API standard: ONC for certified EHRs, CMS for Medicaid, CHIP, and marketplace payer Patient Access APIs.",
+        "TEFCA — directed by Section 4003 — is a voluntary nationwide framework connecting Qualified Health Information Networks (QHINs) under a Common Agreement; eight QHINs were designated by early 2024, enabling query-based exchange at national scale.",
+        "OIG's civil monetary penalty rule took effect September 1, 2023, allowing fines up to $1 million per information blocking violation for non-provider actors; provider disincentives are a separate HHS track.",
+        "Significant gaps remain: provider directory inaccuracy, lack of cross-system consent portability, and variable data quality undermine the promise of FHIR-enabled access even where APIs are technically compliant.",
+        "Ongoing rulemakings — including HTI-1 (Dec 2023), the CMS Prior Authorization Rule (Jan 2024), and proposed provider disincentives — are layering additional requirements on top of the original 2020 rules."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "The Cures Act's information blocking prohibition applies to three categories of actors: health IT developers of certified health IT, health information exchanges and networks, and health care providers. Individual patients are the intended beneficiaries of the law, not regulated actors subject to its prohibitions. Patients exercising their right to access their own records — including through third-party apps authorized via FHIR APIs — are explicitly protected by, not constrained by, the information blocking framework.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Health IT developers of certified health IT"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": false,
+          "text": "Health information exchanges (HIEs) and health information networks (HINs)"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": true,
+          "text": "Individual patients accessing their own records through a third-party app"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Health care providers who know their practice is unreasonably restricting EHI access"
+        }
+      ],
+      "question": "Under the 21st Century Cures Act, which of the following entities is NOT considered a regulated 'actor' subject to the information blocking prohibition?"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "interop-cures-act"
+  },
+  "title": "The 21st Century Cures Act and Interoperability: What the Law Actually Requires"
+}

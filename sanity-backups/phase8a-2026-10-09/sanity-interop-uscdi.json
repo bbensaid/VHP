@@ -1,0 +1,1009 @@
+{
+  "_createdAt": "2026-05-29T03:47:03Z",
+  "_id": "interop-uscdi",
+  "_rev": "cYZDD0WgGI3bQOfKbYswm9",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-15T02:30:13Z",
+  "body": [
+    {
+      "_key": "h2-what-is-uscdi",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h2-what-is-uscdi_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "What Is USCDI?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "blk-intro-1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-intro-1_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "The United States Core Data for Interoperability — universally abbreviated as USCDI — is a standardized set of health data classes and constituent data elements that ONC (the Office of the National Coordinator for Health Information Technology) has designated as the minimum dataset required for nationwide, interoperable health information exchange. Think of USCDI as the federal government's official answer to a fundamental question: when any two health IT systems in the United States share patient data, which fields must both sides be capable of sending and receiving?"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk-intro-2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-intro-2_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "USCDI was first published in July 2020 as part of the ONC 21st Century Cures Act Final Rule. Before USCDI existed, its predecessor — the Common Clinical Data Set (CCDS) — served a similar purpose, but lacked the structured versioning and annual update cycle that USCDI introduced. USCDI is not a FHIR implementation guide, a claims format, or a coding system. It sits one level above all of those: it defines *what* data must be interoperable, leaving the technical *how* to implementation guides like HL7 FHIR US Core."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "callout-intro",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "callout-intro_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "USCDI defines the minimum dataset for interoperability — it tells the healthcare ecosystem which data elements every certified health IT system must be able to exchange, regardless of vendor or care setting."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk-intro-3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-intro-3_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "The standard is managed entirely by ONC, an agency within the U.S. Department of Health and Human Services (HHS). ONC maintains USCDI through an open, publicly participatory process: any stakeholder — a hospital, a health IT developer, a patient advocacy group, or an individual clinician — can submit new data element proposals via the ONC New Data Element and Class (ONDEC) Submission System. Submissions go through a maturity-level review. Elements that reach Level 2 maturity by October of a given year are eligible for inclusion in the following year's draft USCDI, which is published in January. After public comment and review by the Health IT Advisory Committee (HITAC), the final version is published each July."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sg-intro",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "864227c7b061",
+          "label": "Year USCDI v1 was first published",
+          "value": "2020"
+        },
+        {
+          "_key": "188cf17ec926",
+          "label": "Data classes in USCDI v3",
+          "value": "19"
+        },
+        {
+          "_key": "699839513c0b",
+          "label": "Data elements in USCDI v3",
+          "value": "94"
+        },
+        {
+          "_key": "ad760dcaa94c",
+          "label": "USCDI update cadence (draft Jan, final Jul)",
+          "value": "Annual"
+        }
+      ]
+    },
+    {
+      "_key": "h2-version-history",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h2-version-history_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "USCDI Version History: From v1 to v6"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "blk-vh-1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-vh-1_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC has published new USCDI versions every year since 2020, each one expanding the required dataset to reflect evolving clinical practice, public health priorities, and equity goals. Understanding the version history helps explain why compliance timelines vary across programs and why EHR vendors may support different versions simultaneously."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "h3-v1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h3-v1_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "Version 1 — July 2020"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "blk-v1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-v1_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "USCDI v1 was the first published version and became the regulatory baseline for Certified EHR Technology (CEHRT) under the 21st Century Cures Act Final Rule. It encompassed 52 data elements across 16 data classes. Key additions over the predecessor CCDS included Clinical Notes, Provenance, Pediatric Vital Signs, and patient Address. USCDI v1 set the floor for what any ONC-certified EHR must be capable of exchanging."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "h3-v2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h3-v2_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "Version 2 — July 2021"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "blk-v2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-v2_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "USCDI v2 added three new data classes and 22 new data elements, with an explicit focus on advancing health equity. The most significant additions were Sexual Orientation and Gender Identity (SOGI) data elements — long requested by LGBTQ+ health advocates — and Social Determinants of Health (SDOH) data elements that allow clinicians to document housing instability, food insecurity, and transportation barriers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "h3-v3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h3-v3_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "Version 3 — July 2022 (Now the Regulatory Baseline)"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "blk-v3-1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-v3-1_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "USCDI v3 is the most consequential version to date from a regulatory standpoint. The HTI-1 Final Rule, effective February 2024, adopted USCDI v3 as the new baseline standard for certified health IT. Importantly, ONC mandated that all health IT modules certified to criteria referencing USCDI must upgrade to v3 by January 1, 2026 — a hard compliance deadline that is reshaping EHR upgrade cycles across the industry. USCDI v3 expanded to 19 data classes and 94 data elements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk-v3-2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-v3-2_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "The 19 data classes in USCDI v3 cover: Allergies and Intolerances, Assessment and Plan of Treatment, Care Team Members, Clinical Notes, Clinical Tests, Diagnostic Imaging, Encounter Information, Goals, Health Insurance Information (new in v3), Health Status/Assessments (new in v3, absorbing Health Concerns), Immunizations, Laboratory, Medications, Patient Demographics/Information, Problems, Procedures, Provenance, Referral Notes, and Vital Signs. New equity-focused data elements include Disability Status, Mental/Cognitive Status, Functional Status, and Pregnancy Status."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hl-v3-deadline",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hl-v3-deadline_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "USCDI v3 is the current mandatory baseline. All ONC-certified EHRs must support v3 by January 1, 2026 under the HTI-1 Final Rule."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "h3-v4-v6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h3-v4-v6_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "Versions 4, 5, and 6 — Continued Annual Expansion"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "blk-v4-v6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-v4-v6_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "USCDI v4 added 20 data elements and one new data class to v3, including Alcohol Use, Substance Use, Physical Activity Assessments, Treatment Intervention preferences, Care Experience Preferences, and Medication Adherence data elements. USCDI v5, published July 2024, added 16 new data elements and two new data classes. USCDI v6 was published July 2025 with 6 additional data elements. Draft USCDI v7, released January 2026 for public comment, proposes 30 new data elements — the largest single-version expansion in the standard's history."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "analogy-building-code",
+      "_type": "analogyBlock",
+      "analogy": "[Unhandled block type: analogyBlock]"
+    },
+    {
+      "_key": "h2-cehrt",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h2-cehrt_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "USCDI and the ONC Certification Program"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "blk-cehrt-1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-cehrt-1_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "USCDI does not exist in a vacuum — its power comes from its direct linkage to the ONC Health IT Certification Program. To participate in federal programs like the Merit-based Incentive Payment System (MIPS), the Medicare and Medicaid Promoting Interoperability programs, and several value-based care models, providers must use Certified EHR Technology (CEHRT). Certification, in turn, requires EHR products to demonstrate they can exchange the specific data classes and elements defined in the current regulatory baseline version of USCDI."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk-cehrt-2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-cehrt-2_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "This creates a powerful compliance chain: federal payment programs require CEHRT → CEHRT certification requires USCDI support → USCDI defines which data elements must be interoperable. The result is that every major EHR vendor selling to hospitals, physician groups, or ambulatory clinics that accept Medicare or Medicaid must build USCDI compliance into their core product."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ex-cehrt",
+      "_type": "exampleBlock",
+      "content": "A regional hospital system using Epic or Oracle Health must ensure its EHR can receive and send all 94 data elements in USCDI v3 — including the new Health Insurance Information class and the equity-focused Disability Status elements — before its next CEHRT certification renewal. Failure to meet the January 1, 2026 deadline risks losing certification, which would disqualify the system from participating in MIPS and could result in Medicare payment penalties.",
+      "eyebrow": "Real-World Application"
+    },
+    {
+      "_key": "blk-cehrt-3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-cehrt-3_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "The 21st Century Cures Act Final Rule (2020) was the original legislative trigger that made USCDI certification mandatory. The subsequent HTI-1 Final Rule (effective February 8, 2024) updated the regulatory baseline from USCDI v1 to USCDI v3 and introduced the January 1, 2026 transition deadline. Notably, after January 1, 2026, ONC will no longer allow new certifications to reference USCDI v1 — v3 becomes the only valid baseline. This is not a soft guideline but a hard regulatory requirement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "compare-rules",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "21st Century Cures Act Final Rule (2020)",
+        "points": [
+          "Established USCDI v1 as baseline for CEHRT",
+          "Required support for 52 data elements across 16 classes",
+          "Prohibited information blocking",
+          "Mandated patient access APIs using FHIR",
+          "Covered major EHR developers with ≥ 500k patient records"
+        ]
+      },
+      "right": {
+        "label": "HTI-1 Final Rule (2024)",
+        "points": [
+          "Upgraded baseline to USCDI v3 (94 elements, 19 classes)",
+          "Set January 1, 2026 as hard compliance deadline",
+          "Expanded CEHRT scope to more health IT developers",
+          "Required support for USCDI+ use cases in certain programs",
+          "Strengthened algorithmic transparency and AI accountability provisions"
+        ]
+      },
+      "title": "21st Century Cures Act Final Rule vs. HTI-1 Final Rule"
+    },
+    {
+      "_key": "h2-uscdi-plus",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h2-uscdi-plus_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "USCDI+: Domain-Specific Extensions Beyond the Core"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "blk-plus-1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-plus-1_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "USCDI defines the national minimum dataset — but minimum is often not enough for specialized programs. ONC created USCDI+ (pronounced 'USCDI plus') to address exactly this gap. USCDI+ is an extension mechanism that allows federal agencies and programs to define domain-specific datasets that go beyond the core USCDI standard without fragmenting the broader interoperability ecosystem."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk-plus-2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-plus-2_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "Under the USCDI+ framework, a program identifies additional data elements it needs beyond USCDI — elements that are too specialized or too nascent to be appropriate for the universal baseline but that the program's participants must be able to exchange. These elements are documented, published, and harmonized using the same structured USCDI methodology, creating a consistent, machine-readable specification for developers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "callout-plus",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "callout-plus_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "USCDI+ is not a replacement for USCDI — it is a structured extension layer. Every USCDI+ dataset builds on top of the core USCDI standard. Programs using USCDI+ still require full USCDI compliance as the foundation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk-plus-3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-plus-3_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "The first and most prominent USCDI+ domain is USCDI+ Quality, developed jointly by ONC and CMS to support digital quality measurement. USCDI+ Quality establishes a harmonized baseline of data elements needed for a wide range of quality measurement use cases — including CMS electronic clinical quality measures (eCQMs), CMS's Data Element Library, AHRQ Common Formats, and NCQA HEDIS measures. By creating a consistent USCDI+ Quality data element list, ONC and CMS aim to reduce the fragmentation that currently exists when different quality programs require the same underlying clinical data but specify it in incompatible ways."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk-plus-4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-plus-4_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "CDC has also engaged with the USCDI+ framework for public health reporting extensions. The model reflects a broader philosophy: rather than allow each federal program to independently define and require its own proprietary dataset — which would force EHR vendors to build dozens of separate integrations — USCDI+ creates a managed, centrally coordinated extension layer where new program needs are documented and harmonized against each other and against the core standard."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sg-plus",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "plus-s1",
+          "label": "USCDI+ use cases published by ONC",
+          "value": "13+"
+        },
+        {
+          "_key": "plus-s2",
+          "label": "Year USCDI+ program launched",
+          "value": "2021"
+        },
+        {
+          "_key": "plus-s3",
+          "label": "USCDI+ operates at sector or program level",
+          "value": "Sector"
+        },
+        {
+          "_key": "plus-s4",
+          "label": "USCDI+ adoption is voluntary for stakeholders",
+          "value": "Voluntary"
+        }
+      ]
+    },
+    {
+      "_key": "h2-fhir-mapping",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h2-fhir-mapping_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "How USCDI Maps to the US Core FHIR Implementation Guide"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "blk-fhir-1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-fhir-1_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "USCDI tells you *what* data must be interoperable. The US Core FHIR Implementation Guide (IG) — published by HL7 and maintained in close coordination with ONC — tells you *how* to represent and exchange that data using FHIR resources and profiles. Understanding the relationship between these two standards is essential for any health IT developer building interoperability solutions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk-fhir-2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-fhir-2_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "The US Core IG defines FHIR profiles — constrained versions of base FHIR resources — that implement each USCDI data class and element with Must Support constraints, terminology bindings, and search parameters. For example, the USCDI Allergies and Intolerances data class maps to the US Core AllergyIntolerance profile; the USCDI Clinical Notes data class maps to the US Core DocumentReference and DiagnosticReport profiles; the USCDI Patient Demographics class maps to the US Core Patient profile."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "blk-fhir-3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-fhir-3_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "Each new version of US Core is designed to align with a corresponding version of USCDI. US Core v6 aligns with USCDI v3; US Core v7 and later versions align with subsequent USCDI releases. However, the mapping is not always one-to-one. A single USCDI data class may map to multiple FHIR profiles, and many US Core profile elements have no direct USCDI counterpart — because US Core's scope is broader than certification. US Core also includes elements needed to make FHIR technically functional that USCDI does not explicitly require."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "warn-fhir-naming",
+      "_type": "warningBlock",
+      "message": "USCDI data class names and FHIR resource names often differ. 'Health Status/Assessments' in USCDI does not map cleanly to a single FHIR resource — it spans Observation, Condition, and other resources depending on the specific data element. Always consult the US Core USCDI mapping table when implementing FHIR APIs for USCDI compliance.",
+      "title": "FHIR Naming vs. USCDI Naming"
+    },
+    {
+      "_key": "blk-fhir-4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-fhir-4_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "For ONC certification, EHRs must demonstrate they support the FHIR-based APIs specified in the certification criteria — which reference US Core profiles as the implementation specification for USCDI-required data. In practice, this means demonstrating that a FHIR server can return Patient, AllergyIntolerance, Condition, MedicationRequest, DiagnosticReport, Observation, DocumentReference, and other US Core-profiled resources for the data elements required by the certified USCDI version."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "quote-fhir",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "quote-fhir_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "USCDI and FHIR US Core are complementary initiatives, with USCDI defining high-level data requirements and FHIR US Core providing detailed FHIR-based profiles for meeting those requirements. Mapping between them is necessary for achieving interoperability and consistency in healthcare data exchange."
+        }
+      ],
+      "markDefs": [],
+      "style": "blockquote"
+    },
+    {
+      "_key": "h2-challenges",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h2-challenges_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "Real-World Implementation Challenges"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "blk-ch-1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-ch-1_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite USCDI's clear regulatory mandate and structured versioning process, real-world implementation remains far from uniform. Multiple categories of challenges have emerged as the standard has expanded from 52 data elements in v1 to 94 in v3 — and continues to grow with each annual release."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "h3-ambiguity",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h3-ambiguity_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "Data Class Ambiguity"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "blk-ch-ambiguity",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-ch-ambiguity_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "One of the most persistent criticisms of USCDI — raised prominently by the Electronic Health Record Association (EHRA) — is the ambiguity in data class definitions. When a data class definition is broad or imprecise, EHR vendors may implement it in materially different ways while both claiming compliance. This ambiguity creates friction at exactly the point where standardization is supposed to reduce it: when two certified systems try to exchange the 'same' data element and find it encoded differently."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "h3-legacy",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h3-legacy_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "Legacy Systems and Upgrade Costs"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "blk-ch-legacy",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-ch-legacy_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "Many hospitals — particularly critical access hospitals, rural facilities, psychiatric hospitals, and safety-net providers — run older EHR infrastructure that was certified to USCDI v1 or earlier CCDS standards. Upgrading to USCDI v3 compliance is not a configuration change; it often requires significant software development, data migration, and staff retraining. ONC data shows that while 86% of non-federal acute care hospitals have adopted a certified EHR, only 67% of psychiatric hospitals have done so — a gap that reflects real structural barriers in the certification upgrade pathway."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "h3-coded",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h3-coded_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "Coded vs. Unstructured Data"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "blk-ch-coded",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-ch-coded_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "USCDI compliance assumes data exists in structured, coded form. But in clinical practice, a substantial portion of medically significant information lives in unstructured clinical notes, scanned documents, and free-text fields. Oncology is a stark example: many pathology results remain uncoded in EHRs because clinicians manually transcribe pathology reports without applying standardized terminologies like SNOMED CT or LOINC. An EHR may be technically certified to send the Laboratory data class, but if the underlying data is unstructured, the API call returns incomplete or absent records."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "h3-lag",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h3-lag_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "Version Lag Between Certification and Clinical Reality"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "blk-ch-lag",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "blk-ch-lag_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "Because USCDI is updated annually but regulatory baselines are set through formal rulemaking — a process that takes 18-24 months — there is always a gap between the most current USCDI version and the version required for certification. As of 2026, the regulatory baseline is USCDI v3 (published 2022), while ONC has already published v5 and v6 and is drafting v7. Programs that want to use elements from v4 or v5 for quality measurement must rely on USCDI+ or non-regulatory mechanisms — adding complexity for developers who must support multiple versions simultaneously."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ex-version-lag",
+      "_type": "exampleBlock",
+      "content": "A care coordination vendor building a post-discharge follow-up platform wants to capture Medication Adherence data — an element added in USCDI v4. If the EHRs they integrate with are only certified to USCDI v3, they have no standardized way to request that data element via the FHIR API. They must either negotiate custom extensions with each EHR vendor, use an HL7 FHIR Questionnaire workaround, or wait until the regulatory baseline advances to v4 — which may be years away.",
+      "eyebrow": "Version Lag Example"
+    },
+    {
+      "_key": "steps-ondec",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "d8276f7cba00",
+          "description": "A stakeholder identifies a clinical data element not in the current USCDI version",
+          "title": "Identify Gap"
+        },
+        {
+          "_key": "9cd80e6edba5",
+          "description": "They submit the element via the ONC ONDEC (New Data Element and Class) Submission System",
+          "title": "Submit via ONDEC"
+        },
+        {
+          "_key": "4fcf72e354aa",
+          "description": "The community reviews and comments; the element is assigned a maturity level",
+          "title": "Community Review"
+        },
+        {
+          "_key": "7d4b20e448c4",
+          "description": "Elements reaching Level 2 maturity by October are eligible for the next annual USCDI version",
+          "title": "Maturity Level 2"
+        },
+        {
+          "_key": "step-5",
+          "description": "ONC publishes the draft version in January and the final version in July of the following year",
+          "title": "Final Adoption"
+        }
+      ],
+      "title": "How New Elements Enter USCDI (ONDEC Process)"
+    },
+    {
+      "_key": "h2-takeaways",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h2-takeaways_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Takeaways"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "takeaway-main",
+      "_type": "takeawayBlock",
+      "points": [
+        "USCDI is ONC's standardized minimum dataset for interoperability — it defines which health data classes and elements every certified EHR must be capable of exchanging.",
+        "The standard launched in July 2020 (v1) and is updated annually, with draft versions published each January and final versions each July.",
+        "USCDI v3 (19 data classes, 94 elements) is the current regulatory baseline, mandated for all ONC-certified EHRs by January 1, 2026 under the HTI-1 Final Rule.",
+        "USCDI+ is an extension mechanism for sector-specific data needs, used in programs like TEFCA, CDC public health reporting, and CMS quality measurement.",
+        "USCDI and FHIR US Core are complementary: USCDI defines what data must be exchangeable; US Core defines how to represent it in FHIR.",
+        "Implementation challenges include version lag (v1 vs v3 gaps), inconsistent mapping to FHIR resources, and the shift from free text to coded data elements."
+      ],
+      "title": "Key Takeaways"
+    },
+    {
+      "_key": "quiz-hti1",
+      "_type": "knowledgeCheck",
+      "explanation": "The HTI-1 (Health Data, Technology, and Interoperability) Final Rule, effective February 8, 2024, adopted USCDI v3 as the new certification baseline and set January 1, 2026 as the hard deadline for all certified health IT to transition from USCDI v1 to v3. The original 21st Century Cures Act Final Rule established USCDI v1 as the initial baseline in 2020.",
+      "options": [
+        {
+          "_key": "d7173521f620",
+          "isCorrect": false,
+          "text": "The 21st Century Cures Act Final Rule (2020)"
+        },
+        {
+          "_key": "c26120301e8b",
+          "isCorrect": true,
+          "text": "The HTI-1 (Health Data, Technology, and Interoperability) Final Rule (2024)"
+        },
+        {
+          "_key": "quiz-opt-3",
+          "isCorrect": false,
+          "text": "The CMS Interoperability and Patient Access Final Rule (2020)"
+        },
+        {
+          "_key": "quiz-opt-4",
+          "isCorrect": false,
+          "text": "The HIPAA Omnibus Rule (2013)"
+        }
+      ],
+      "question": "Which federal rule established USCDI v3 as the new mandatory certification baseline and set January 1, 2026 as the compliance deadline?"
+    },
+    {
+      "_key": "h2-sources",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h2-sources_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src-1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src-1_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC — United States Core Data for Interoperability (USCDI) | Interoperability Standards Platform: https://isp.healthit.gov/united-states-core-data-interoperability-uscdi"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src-2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src-2_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC — HTI-1 Final Rule (Health Data, Technology, and Interoperability): https://healthit.gov/regulations/hti-rules/hti-1-final-rule/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src-3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src-3_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC Standards Bulletin 2024-2 (USCDI v5): https://www.healthit.gov/topic/standardsbulletin_24-2"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src-4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src-4_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC — USCDI+ Program: https://www.healthit.gov/topic/interoperability/uscdi-plus"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src-5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src-5_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "HL7 US Core Implementation Guide v9.0.0 — USCDI Mapping: https://build.fhir.org/ig/HL7/US-Core/uscdi.html"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src-6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src-6_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "EHRA Blog — Concerns Grow over Ambiguity of USCDI Data Classes: https://ehrablog.org/2023/12/20/concerns-grow-over-ambiguity-of-uscdi-data-classes/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src-7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src-7_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "Particle Health — Understanding USCDI and How USCDI Works With FHIR: https://www.particlehealth.com/blog/understanding-uscdi"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src-8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src-8_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "Federal Register — HTI-1 Final Rule (2024/01/09): https://www.federalregister.gov/documents/2024/01/09/2023-28857/health-data-technology-and-interoperability-certification-program-updates-algorithm-transparency-and"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src-9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src-9_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS MMS Hub — USCDI and USCDI+ Quality Presentation: https://mmshub.cms.gov/sites/default/files/MMS-InfoSession-USCDI-Slides-20231129.pdf"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src-10",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src-10_s0",
+          "_type": "span",
+          "marks": [],
+          "text": "1upHealth — Transitioning from USCDI Version 1 to Version 3: https://1up.health/blog/transitioning-from-uscdi-version-1-to-version-3/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "emqelii1ql",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "emqelii1qm",
+          "_type": "span",
+          "marks": [],
+          "text": "Apply It in the EMR/EHR Lab"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "emqelii1qn",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "emqelii1qo",
+          "_type": "span",
+          "marks": [],
+          "text": "Try the EMR/EHR Lab's Data Quality mode to audit a record against the ten USCDI classes and see how completeness and coded-rate change as data is added or left as free text."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "emqelii1qq",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "emqelii1qr",
+          "_type": "span",
+          "marks": [
+            "emqelii1qp"
+          ],
+          "text": "Open the EMR/EHR Lab → quality mode"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "emqelii1qp",
+          "_type": "link",
+          "href": "/research-lab/interoperability?tab=emr&mode=quality"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "healthcare-interoperability",
+  "order": 24,
+  "slug": {
+    "_type": "slug",
+    "current": "interop-uscdi"
+  },
+  "title": "USCDI: The United States Core Data for Interoperability Standard"
+}

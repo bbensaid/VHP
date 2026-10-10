@@ -1,0 +1,96 @@
+{
+  "id": "2f69eb97-8cfb-4429-a7c2-b27e949df38d",
+  "track_id": "bd821302-397d-4c09-8604-cd2739b629c6",
+  "pillar": "technology",
+  "order": 4,
+  "slug": "bulk-fhir-population-data",
+  "title": "Bulk FHIR: Population-Level Data Export",
+  "summary": "How Bulk FHIR enables population-scale data extraction for quality reporting, analytics, and research — using asynchronous export, NDJSON format, and backend service authorization.",
+  "estimated_minutes": 16,
+  "objectives": [
+    {
+      "id": "obj_bulk1",
+      "text": "Explain what Bulk FHIR is and when to use it instead of individual FHIR queries"
+    },
+    {
+      "id": "obj_bulk2",
+      "text": "Describe the NDJSON format and the asynchronous export process"
+    },
+    {
+      "id": "obj_bulk3",
+      "text": "Identify three real-world use cases for Bulk FHIR in healthcare"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Individual FHIR queries — GET /Patient/123/Observation — are designed for retrieving data about one patient at a time. This is perfect for patient-facing applications, clinical decision support, and care coordination. But population health analytics, quality measure calculation, research cohort building, and payer-to-payer exchange require data about thousands or millions of patients simultaneously. Sending thousands of individual API calls is inefficient and can overwhelm FHIR servers.\n\nBulk FHIR (formally called the FHIR Asynchronous Bulk Data Access specification) solves this by enabling population-scale data exports. Rather than retrieving one patient at a time, Bulk FHIR initiates an export job on the server, waits for it to complete, and then downloads data files containing all patients' records. The export is asynchronous — the client kicks off the job, polls for completion (or awaits a notification), and retrieves the files when ready.\n\nThe data format is NDJSON — Newline Delimited JSON — one FHIR resource per line in a text file. An export of Observation resources for 100,000 patients might produce a file with 5 million lines, one per observation. NDJSON is designed for streaming processing — tools like Apache Spark, Python pandas, and data warehouses can process NDJSON efficiently line by line without loading the entire file into memory.",
+      "type": "text",
+      "heading": "When you need everyone's data, not one patient's"
+    },
+    {
+      "rows": [
+        [
+          "Use case",
+          "Single patient, real-time",
+          "Population, batch"
+        ],
+        [
+          "Authorization",
+          "SMART on FHIR (user or patient context)",
+          "SMART Backend Services (system credentials)"
+        ],
+        [
+          "Response format",
+          "Single FHIR resource or Bundle",
+          "NDJSON files, one resource per line"
+        ],
+        [
+          "Timing",
+          "Synchronous — response in milliseconds",
+          "Asynchronous — minutes to hours"
+        ],
+        [
+          "Scale",
+          "1 patient per request",
+          "Millions of patients per export"
+        ],
+        [
+          "Primary use",
+          "Patient apps, CDS, care coordination",
+          "Quality reporting, analytics, research, payer exchange"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Dimension",
+        "Individual FHIR API",
+        "Bulk FHIR"
+      ],
+      "heading": "Individual FHIR API vs. Bulk FHIR"
+    },
+    {
+      "type": "key_stat",
+      "label": "CMS Blue Button 2.0 beneficiaries with FHIR data available",
+      "value": "87M",
+      "context": "CMS Blue Button 2.0 provides FHIR-based access to Medicare claims data for 53 million beneficiaries. Using Bulk FHIR, researchers and ACOs can access population-level data for quality measurement, research, and care management."
+    },
+    {
+      "body": "ACOs in the Medicare Shared Savings Program use Bulk FHIR to receive their attributed beneficiaries' claims data from CMS. Instead of receiving flat files, ACOs increasingly receive FHIR-formatted bulk exports they can ingest directly into their population health analytics platforms. This is a real-world production use case for Bulk FHIR at scale.",
+      "type": "callout",
+      "title": "Bulk FHIR in MSSP quality reporting",
+      "variant": "tip"
+    }
+  ],
+  "tags": [
+    "Bulk FHIR",
+    "population health",
+    "NDJSON",
+    "quality reporting",
+    "analytics"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:44.585086+00:00",
+  "updated_at": "2026-06-01T14:54:57.266841+00:00",
+  "sanity_slug": "interop-bulk-fhir"
+}

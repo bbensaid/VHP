@@ -1,0 +1,97 @@
+{
+  "id": "1914a8e9-23ad-416b-828c-f2dc03701d42",
+  "track_id": "a372b50e-de8b-4e68-98e2-2230055090dd",
+  "pillar": "policy",
+  "order": 4,
+  "slug": "hie-consent-models",
+  "title": "Consent Models: Opt-In, Opt-Out & Granular Consent",
+  "summary": "How different consent frameworks balance patient autonomy against data completeness — and the special protections for substance use disorder records under 42 CFR Part 2.",
+  "estimated_minutes": 15,
+  "objectives": [
+    {
+      "id": "obj_cons1",
+      "text": "Distinguish between opt-in and opt-out consent models and their tradeoffs"
+    },
+    {
+      "id": "obj_cons2",
+      "text": "Explain what 42 CFR Part 2 protects and why it creates HIE complexity"
+    },
+    {
+      "id": "obj_cons3",
+      "text": "Describe granular consent and its impact on data completeness"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Every health information exchange must answer a fundamental question: does a patient need to actively agree before their data is shared (opt-in), or is data shared by default unless the patient objects (opt-out)? This choice has profound implications for the completeness of the data available in the HIE — and ultimately for the quality of care that data enables.\n\nOpt-in consent maximizes patient autonomy. No data flows without explicit patient agreement. The problem: studies consistently show that only 20–40% of patients actively opt in to health information exchange when given the choice, even though the vast majority support sharing when the concept is explained to them. An HIE where 70% of patients haven't opted in is an HIE that misses 70% of the care picture. Incomplete data can be more dangerous than no data — a provider who believes they have the complete medication list when they actually have only the medications for the 30% who opted in faces real clinical risk.\n\nOpt-out consent maximizes data completeness. All patients are included unless they affirmatively object. Most public health, population health, and care coordination programs that have attempted opt-in have eventually moved to opt-out for this reason. Vermont operates an opt-out model — patients are included in VITL's exchange network and can request exclusion. Most state HIEs that have achieved meaningful data completeness use opt-out.",
+      "type": "text",
+      "heading": "The consent paradox: privacy vs. care quality"
+    },
+    {
+      "rows": [
+        [
+          "Patient autonomy",
+          "Maximum — explicit consent required",
+          "Moderate — passive consent assumed unless objection"
+        ],
+        [
+          "Data completeness",
+          "Low (20–40% typical enrollment)",
+          "High (5–10% typically opt out)"
+        ],
+        [
+          "Clinical risk from incomplete data",
+          "Higher — missing data for non-enrolled patients",
+          "Lower — nearly complete population coverage"
+        ],
+        [
+          "Administrative burden",
+          "High — consent collection and tracking",
+          "Lower — opt-out tracking only"
+        ],
+        [
+          "Public trust (initial)",
+          "Higher — perceived as respecting privacy",
+          "Risk of backlash if not well communicated"
+        ],
+        [
+          "State examples",
+          "New York (historically), some state mental health HIEs",
+          "Vermont, most mature state HIEs"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Dimension",
+        "Opt-In",
+        "Opt-Out"
+      ],
+      "heading": "Opt-in vs. opt-out consent models"
+    },
+    {
+      "body": "Even in opt-out HIE states, substance use disorder treatment records have special protections under 42 CFR Part 2 — federal regulations that require explicit written patient consent before these records can be shared, even for treatment purposes. A patient enrolled in a methadone clinic or residential treatment program can have their primary care records shared via the HIE, but their SUD treatment records require a separate, specific consent. This creates a data silo precisely for the population that most benefits from integrated care. Recent regulatory updates (2024) have aligned Part 2 more closely with HIPAA, allowing broader treatment-related sharing with a single consent — a significant improvement.",
+      "type": "callout",
+      "title": "42 CFR Part 2: Substance use disorder records require extra consent",
+      "variant": "warning"
+    },
+    {
+      "body": "Some HIEs offer granular consent — patients control not just whether their data is shared, but which data elements or which organizations can access which records. A patient might consent to sharing their primary care records but not their mental health records, or allow sharing with their cardiologist but not with their employer's occupational health clinic. Granular consent is technically complex to implement and maintain. Studies show that when patients are given granular options, they often withhold clinically important information, creating data incompleteness that can harm care. Most HIE experts recommend simple opt-out with robust patient notification rather than complex granular consent frameworks.",
+      "type": "callout",
+      "title": "Granular consent: patient-controlled data sharing",
+      "variant": "info"
+    }
+  ],
+  "tags": [
+    "consent",
+    "opt-in",
+    "opt-out",
+    "42 CFR Part 2",
+    "HIE",
+    "privacy"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:48.464272+00:00",
+  "updated_at": "2026-06-01T14:54:57.815744+00:00",
+  "sanity_slug": "interop-consent-models"
+}

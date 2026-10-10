@@ -1,0 +1,544 @@
+{
+  "_createdAt": "2026-05-31T03:18:03Z",
+  "_id": "risk-adjustment-hcc",
+  "_rev": "glqH7a4yvZFQerxZdHe8Ft",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T03:18:03Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Is Risk Adjustment and Why Does It Exist?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "When Medicare pays a private health plan to cover a beneficiary, it faces a fundamental problem: sicker patients cost more. Without correction, plans would compete by cherry-picking healthy enrollees — a practice called \"favorable selection\" — leaving the sickest patients with fewer options and worse care. Risk adjustment is the statistical mechanism that corrects this distortion by modifying per-member payments to reflect the expected health costs of each enrollee."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The core logic is straightforward. A Medicare Advantage plan enrolling a 70-year-old with diabetes, heart failure, and chronic kidney disease should receive substantially more per month than a plan enrolling a healthy 65-year-old. Without that adjustment, the plan covering the sicker patient would face a financial loss — creating pressure to cut services, narrow networks, or exit the market. Risk adjustment removes that incentive by making the financial playing field level regardless of who enrolls."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS has used risk adjustment in Medicare Advantage since 2004. The model inputs demographic characteristics (age, sex, Medicaid dual-eligibility status, disability status) and diagnosed health conditions into a predictive formula. The output is a risk score — a number expressing how expensive a patient is expected to be relative to the average Medicare beneficiary, who has a risk score of 1.0. A score of 1.4 means the plan receives 40 percent more per month than average; a score of 0.7 means 30 percent less."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk adjustment transforms capitated payments from flat per-member amounts into condition-adjusted amounts, ensuring that plans covering sicker populations are adequately compensated and have no financial motive to avoid high-need patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "A score of 1.0 represents the average Medicare beneficiary cost baseline — Source: CMS",
+          "label": "Average Risk Score",
+          "value": "1.0"
+        },
+        {
+          "_key": "s2",
+          "context": "Medicare beneficiaries with multiple chronic conditions average more than $14,000 per year — Source: CMS Chronic Conditions Data",
+          "label": "Avg Annual Cost, High-Risk",
+          "value": "$14,000+"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Hierarchical Condition Categories Work"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CMS-HCC (Hierarchical Condition Category) model is the actuarial engine behind Medicare Advantage risk adjustment. It assigns ICD-10 diagnosis codes to condition categories that have been grouped by clinical and cost similarity. Each category carries an additive risk score coefficient — a number calibrated from fee-for-service Medicare claims data showing how much that condition, on average, raises expected annual costs above baseline."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The word \"hierarchical\" reflects an important design choice: when multiple conditions in the same disease family are present, only the most severe applies. A patient diagnosed with both \"Type 2 diabetes without complications\" and \"Type 2 diabetes with chronic kidney disease\" counts only in the more severe CKD category, not in both. This prevents double-counting within a clinical hierarchy while still allowing additive scoring across unrelated disease categories. A patient with diabetes, heart failure, and cancer would receive coefficients for all three separate disease groups."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Demographic factors are also built into the model. Age and sex interact with conditions — the same diabetes diagnosis carries different coefficients for a 68-year-old versus a 78-year-old, reflecting different baseline risk levels. Dual-eligibility status (being enrolled in both Medicare and Medicaid) and disability status add further adjustments, because low-income and disabled beneficiaries tend to have higher healthcare utilization even controlling for diagnosed conditions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Medicare Advantage plans submit ICD-10 diagnosis codes gathered from all encounters, hospitalizations, and health assessments during the prior calendar year.",
+          "title": "Diagnoses Submitted"
+        },
+        {
+          "_key": "step2",
+          "description": "CMS maps each submitted ICD-10 code to one of the HCC categories using a published crosswalk table. Not all diagnosis codes map to an HCC — roughly 7,770 of the roughly 75,000 ICD-10 codes map under the current V28 model.",
+          "title": "Mapping to HCCs"
+        },
+        {
+          "_key": "step3",
+          "description": "Within each disease family, the hierarchy rule is applied — only the most severe condition category is retained when multiple related diagnoses are present.",
+          "title": "Hierarchies Applied"
+        },
+        {
+          "_key": "step4",
+          "description": "Each applicable HCC coefficient is added together along with demographic coefficients (age/sex, dual status, disability) to produce the final risk score.",
+          "title": "Coefficients Summed"
+        },
+        {
+          "_key": "step5",
+          "description": "The risk score is multiplied by the county-level benchmark rate set by CMS to produce the monthly capitated payment to the plan.",
+          "title": "Payment Calculated"
+        }
+      ],
+      "title": "How a Risk Score Is Calculated"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Model V28: The 2024 Overhaul"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS substantially revised the HCC model beginning in 2024 with the introduction of Version 28 (V28), which replaced the longstanding Version 24 (V24). The transition was phased over three years: V28 applied to 33 percent of payment in 2024, 67 percent in 2025, and 100 percent beginning January 1, 2026. V28 expanded the number of condition categories from 86 to 115, reflecting advances in clinical knowledge and updated cost data from more recent Medicare claims."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "One major change was the removal of several diagnosis codes that had been subject to widespread manipulation. V28 reduced the number of valid ICD-10 codes that map to HCCs from 9,797 under V24 to 7,770 under V28 — a reduction of over 2,000 mappable codes. CMS determined that many of these removed codes lacked strong predictive power for future costs or were being entered on risk-adjustment-specific encounters rather than as genuine clinical findings. The net effect of V28 is projected to reduce average Medicare Advantage risk scores by approximately 3.12 percent."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The model recalibration matters enormously for plan finances. A 3 percent reduction in average risk scores across the entire Medicare Advantage program — which covers over 33 million beneficiaries — translates to billions of dollars in reduced annual payments. Plans with the highest concentrations of previously-manipulated diagnoses face the steepest payment reductions, creating strong financial pressure to improve the integrity of their coding practices."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "Under the old V24 model, certain conditions like \"vascular claudication\" and \"morbid obesity due to excess calories\" mapped to HCCs that contributed meaningfully to risk scores. Under V28, these and hundreds of similar codes were removed or recategorized because they showed weak predictive validity in claims data analysis.\nPlans that had been aggressively coding these conditions through in-home health risk assessments saw the largest payment reductions. CMS structured the 3-year phase-in specifically to allow time for plans to adjust their clinical documentation workflows rather than face an immediate financial cliff.",
+      "title": "CMS-HCC V28 Transition Impact"
+    },
+    {
+      "_key": "s3w1",
+      "_type": "warningBlock",
+      "message": "Under the risk adjustment rules, diagnoses must come from a physician, nonphysician practitioner, or facility encounter — and must be documented in the medical record. Diagnoses captured only on health risk assessments without supporting clinical documentation do not qualify under RADV audit standards, even if they were accepted for payment.",
+      "title": "Not All Diagnosis Sources Are Equal"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Upcoding Problem and Federal Oversight"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk adjustment creates a perverse financial incentive: the more diagnoses a plan documents, the more money it receives. Plans discovered that aggressive diagnosis capture — particularly through in-home health risk assessments (HRAs) conducted by plan-employed vendors — could substantially boost risk scores without corresponding increases in actual care delivered. The OIG and MedPAC have documented this \"coding intensity\" problem for over a decade."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "In October 2024, HHS OIG published a report estimating that diagnoses reported only on HRAs and HRA-linked chart reviews — and not on any other service records — resulted in approximately $7.5 billion in risk-adjusted payments for 2023 that lacked adequate clinical documentation support. The top 13 health conditions accounted for $5.6 billion of that total, with nearly half ($2.7 billion) generated from in-home HRAs. OIG recommended CMS exclude HRA-only diagnoses from risk adjustment calculations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS conducts Risk Adjustment Data Validation (RADV) audits to verify that submitted diagnoses are supported by medical record documentation. In 2023, CMS finalized updated RADV audit methodology that significantly strengthened the extrapolation approach — meaning that if an audit finds a certain percentage of diagnoses are unsupported, CMS can recover overpayments estimated across the plan's entire enrolled population, not just the audited sample. The industry challenged the rule in court, but CMS has proceeded with enforcement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "OIG estimated $7.5 billion in risk-adjusted payments lacking adequate documentation support — OIG Report OEI-03-23-00380, October 2024",
+          "label": "HRA-Only Overpayment (2023)",
+          "value": "$7.5B"
+        },
+        {
+          "_key": "s2",
+          "context": "MedPAC estimated upcoding would cost Medicare $23 billion in additional payments in 2023 after the coding intensity adjustment — MedPAC 2024",
+          "label": "Coding Intensity Cost (2023)",
+          "value": "$23B"
+        }
+      ]
+    },
+    {
+      "_key": "s4an1",
+      "_type": "analogyBlock",
+      "analogy": "Think of HCC upcoding like a car insurance company that always finds a reason to label your car as a \"high-performance sports model\" because sports cars get higher premiums — even when your car is a standard sedan. The risk adjustment system needs accurate diagnosis data the way insurance needs accurate vehicle classifications.",
+      "concept": "HCC Coding Integrity and Risk Adjustment Manipulation"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk Adjustment in Other Value-Based Programs"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "HCC-based risk adjustment is not limited to capitated Medicare Advantage payments. Risk scores are used across a wide range of value-based programs to ensure that providers caring for sicker patient panels are not unfairly penalized in quality and cost comparisons. In the Medicare Shared Savings Program, ACO benchmark calculations are risk-adjusted to reflect the clinical complexity of assigned beneficiaries. Without this adjustment, ACOs serving rural or low-income populations with higher burdens of chronic disease would systematically appear to perform worse than those serving healthy suburban populations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The ACA's individual market also uses a separate risk adjustment program (not HCC-based) administered by CMS to redistribute funds among insurers on the exchanges, compensating plans that enroll sicker populations at the expense of those that enroll healthier ones. This prevents the \"death spiral\" dynamic in which sick individuals cluster in high-premium plans while healthy individuals opt out, destabilizing the market."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Despite these protections, risk adjustment remains an imperfect science. The model predicts expected costs from prior-year diagnoses, but health status can change rapidly. Newly diagnosed conditions mid-year are not captured until the next payment cycle. The model also underpredicts costs for some high-cost outlier patients and overpredicts for others. These limitations mean that even a well-designed risk adjustment system will produce some payment inaccuracies — the goal is minimizing systematic bias, not achieving perfection."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "What Risk Adjustment Achieves",
+        "points": [
+          "Compensates plans for sicker enrolled populations",
+          "Removes financial incentive to avoid high-need patients",
+          "Enables fair performance comparisons across unlike populations",
+          "Reduces incentive for favorable selection in competitive markets"
+        ]
+      },
+      "right": {
+        "label": "Limitations of Risk Adjustment",
+        "points": [
+          "Cannot adjust for diagnoses not documented in the prior year",
+          "Creates financial incentive for aggressive (and fraudulent) coding",
+          "Does not capture social risk factors like poverty or housing instability",
+          "Model accuracy degrades for extreme outlier patients"
+        ]
+      },
+      "title": "Risk Adjustment: What It Does vs. What It Cannot Do"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Risk adjustment modifies capitated payments based on expected health costs, removing the financial incentive for plans to avoid enrolling sick patients.",
+        "The CMS-HCC model maps ICD-10 diagnosis codes to condition categories, each carrying an additive cost coefficient calibrated from fee-for-service Medicare claims data.",
+        "The \"hierarchical\" principle means only the most severe condition within a disease family counts, preventing double-counting while allowing additive scoring across unrelated diseases.",
+        "CMS transitioned from V24 to V28 in 2024–2026, expanding HCC categories from 86 to 115 and removing over 2,000 mappable codes that lacked predictive validity or were being manipulated.",
+        "OIG estimated that HRA-only diagnoses generated approximately $7.5 billion in unsupported payments in 2023 — a primary driver of ongoing federal oversight and RADV audit reforms.",
+        "Risk adjustment is used beyond Medicare Advantage in ACO benchmarking, individual market programs, and other value-based arrangements to ensure fair comparisons across unlike patient populations.",
+        "The fundamental tension in risk adjustment is that accurate coding is essential for fair payment, but the financial incentive to maximize diagnoses creates persistent pressure toward upcoding and fraud."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The hierarchical structure means that when a patient has multiple diagnoses within the same disease family — for example, both diabetes without complications and diabetes with kidney disease — only the most severe category contributes to the risk score. This prevents the same underlying condition from being counted multiple times at different severity levels. Age-based adjustments exist separately through demographic coefficients, not the hierarchy.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "To rank plans by their overall quality of care delivery"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "To prevent double-counting within a disease family by applying only the most severe condition category"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "To ensure that older beneficiaries receive higher payments than younger ones"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "To limit the total number of diagnoses any single patient can contribute to a risk score"
+        }
+      ],
+      "question": "What is the primary purpose of the \"hierarchical\" design in the CMS-HCC risk adjustment model?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] CMS: 2025 Medicare Advantage and Part D Star Ratings Fact Sheet — https://www.cms.gov/newsroom/fact-sheets/2025-medicare-advantage-part-d-star-ratings — CMS-HCC model context and Medicare Advantage overview"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Commonwealth Fund: How Risk Adjustment Affects Payment for Medicare Advantage Plans — https://www.commonwealthfund.org/publications/explainer/2026/jan/how-risk-adjustment-affects-payment-medicare-advantage-plans — Core explanation of risk adjustment mechanics"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] OIG HHS: Medicare Advantage — Questionable Use of Health Risk Assessments Continues To Drive Up Payments to Plans by Billions (October 2024) — https://oig.hhs.gov/reports/all/2024/medicare-advantage-questionable-use-of-health-risk-assessments-continues-to-drive-up-payments-to-plans-by-billions/ — $7.5 billion HRA-only overpayment estimate for 2023"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] CMS: CMS-HCC Risk Adjustment Model V28 — https://www.raapidinc.com/blogs/cms-hcc-model-v28/ — V28 expansion to 115 HCCs, reduction of mappable codes from 9,797 to 7,770"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] MedPAC: Comment Letter on MA Part D CY2027 — https://www.medpac.gov/wp-content/uploads/2026/02/02252026_MedPAC_MA_Part-D-AN-CY-2027_comment-letter_v3_SEC.pdf — MedPAC $23 billion coding intensity estimate for 2023"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "value-based-care",
+  "order": 15,
+  "slug": {
+    "_type": "slug",
+    "current": "risk-adjustment-hcc"
+  },
+  "title": "Risk Adjustment & HCC Scores: Leveling the Playing Field"
+}

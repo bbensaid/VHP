@@ -1,0 +1,83 @@
+{
+  "id": "952c8cac-69e4-4a0b-a545-807e6afcf00f",
+  "track_id": "bd821302-397d-4c09-8604-cd2739b629c6",
+  "pillar": "policy",
+  "order": 3,
+  "slug": "payer-to-payer-exchange",
+  "title": "Payer-to-Payer Exchange: Following the Patient",
+  "summary": "When patients change health plans, CMS requires payers to exchange five years of claims history — using FHIR to close the data gap that has historically followed insurance transitions.",
+  "estimated_minutes": 15,
+  "objectives": [
+    {
+      "id": "obj_p2p1",
+      "text": "Explain the patient problem that payer-to-payer exchange addresses"
+    },
+    {
+      "id": "obj_p2p2",
+      "text": "Describe what data must be exchanged and the technical mechanism"
+    },
+    {
+      "id": "obj_p2p3",
+      "text": "Identify the key implementation challenges in payer-to-payer exchange"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "When an American changes health insurance — whether due to a job change, open enrollment decision, Medicare Advantage plan switch, or Medicaid redetermination — their new insurer has virtually no information about their health history. The new plan does not know their chronic conditions, their recent hospitalizations, their medication history, or the prior authorizations they had approved. From the new plan's perspective, the member is a blank slate. This creates real clinical risk — prior authorizations must be restarted from scratch, care management programs cannot identify high-risk members quickly, and member experience suffers as patients must re-explain their histories.\n\nThe CMS Interoperability Rule addresses this by requiring payers to exchange data when a member moves from one covered plan to another. Upon member request, the prior plan must send up to five years of claims data and clinical data to the new plan within one business day. This payer-to-payer exchange uses FHIR — specifically the Da Vinci Payer Data Exchange (PDex) Implementation Guide — to standardize the data format.\n\nThe implementation challenge is substantial. Identifying the member on both systems — member matching — requires reconciling names, dates of birth, and identifiers across organizations with no shared patient identifier. Once identified, the sending plan must convert its claims data to FHIR format and transmit it securely. The receiving plan must ingest and reconcile that data with its own records. These processes require investment in FHIR infrastructure that many plans, particularly smaller Medicaid managed care organizations, are still building.",
+      "type": "text",
+      "heading": "The data gap that follows patients"
+    },
+    {
+      "rows": [
+        [
+          "Who must comply",
+          "Medicare Advantage, Medicaid MCOs, CHIP MCOs, QHP plans on federal exchange"
+        ],
+        [
+          "Trigger",
+          "Member request at time of enrollment or within plan year"
+        ],
+        [
+          "Timeline",
+          "Within one business day of request"
+        ],
+        [
+          "Data scope",
+          "Up to 5 years of claims and clinical data"
+        ],
+        [
+          "Technical standard",
+          "FHIR R4, Da Vinci PDex IG, SMART Backend Services"
+        ],
+        [
+          "Member matching",
+          "FHIR $match operation or equivalent; no universal patient ID available"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Requirement",
+        "Detail"
+      ],
+      "heading": "Payer-to-payer exchange requirements"
+    },
+    {
+      "body": "The US has no universal patient identifier — a decision made in the HIPAA era due to privacy concerns. For payer-to-payer exchange, this means matching members across organizations using probabilistic matching on name, date of birth, and other identifiers. The FHIR $match operation provides a standardized mechanism, but false positive and false negative rates vary by implementation. A false positive (sending another patient's data) is a serious privacy violation. A false negative (failing to match a valid member) means the exchange doesn't happen. ONC's Patient Matching Algorithm Challenge sought to improve matching accuracy, but the lack of a universal identifier remains the Achilles heel of payer-to-payer exchange.",
+      "type": "callout",
+      "title": "The member matching problem",
+      "variant": "warning"
+    }
+  ],
+  "tags": [
+    "payer-to-payer",
+    "FHIR",
+    "CMS",
+    "member matching",
+    "Da Vinci PDex"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:43.629684+00:00",
+  "updated_at": "2026-06-01T14:54:57.679526+00:00",
+  "sanity_slug": "interop-payer-to-payer"
+}
