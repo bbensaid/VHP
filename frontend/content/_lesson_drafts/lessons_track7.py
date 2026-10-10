@@ -79,7 +79,7 @@ LESSONS = [
                     {
                         "label": "Economics — is it sustainable, and for whom?",
                         "left": "Risk: a payment or scoring model that does not adjust for who a provider serves can penalize the providers doing the hardest work. Before 2017, Medicare Advantage Star Ratings did not adjust for enrollee socioeconomic status, systematically lowering scores for plans serving more dual-eligible and disabled beneficiaries.",
-                        "right": "Opportunity: CMS's Categorical Adjustment Index, in place since the 2017 Star Ratings, adds or subtracts up to 0.10–0.20 stars based on a contract's share of dual-eligible, low-income-subsidy, and disabled enrollees.",
+                        "right": "Opportunity: CMS's Categorical Adjustment Index, in place since the 2017 Star Ratings, adds or subtracts a small fraction of a star based on a contract's share of dual-eligible, low-income-subsidy, and disabled enrollees.",
                     },
                     {
                         "label": "Clinical — is it effective, and for whom?",
@@ -97,7 +97,7 @@ LESSONS = [
                 "type": "text",
                 "heading": "Policy Pillar, in Depth: The Coverage Gap No One Designed on Purpose",
                 "body": (
-                    "The ACA Medicaid coverage gap is not evenly distributed. Texas alone accounts for roughly 42% of the people caught in it, and about 97% of the national total lives in the South, concentrated in the same states that declined Medicaid expansion. No policymaker set out to build a gap between two eligibility thresholds; it is the byproduct of a permissible, individually defensible state-level choice, repeated across nine or ten states, that in aggregate leaves over a million working-age adults with no affordable coverage option at all.\n\n"
+                    "The ACA Medicaid coverage gap is not evenly distributed. Texas alone has accounted for roughly four in ten of the people caught in it in KFF’s estimates, and nearly all of them live in the South, concentrated in the same states that declined Medicaid expansion. No policymaker set out to build a gap between two eligibility thresholds; it is the byproduct of a permissible, individually defensible state-level choice, repeated across nine or ten states, that in aggregate leaves over a million working-age adults with no affordable coverage option at all.\n\n"
                     "This is the policy pillar's justice test in its cleanest form: a law can be permissible — states retain the constitutional right to decline Medicaid expansion — while still failing the equity test for the specific population it excludes. Permissibility and justice are different questions, and the five-pillar framework's first pillar answers only the first one.\n\n"
                     "Vermont expanded Medicaid and reports 97% overall coverage — a policy pillar pass at the state level. Yet Essex County, in the Northeast Kingdom, still runs an 8% uninsured rate, nearly three times the statewide average. Passing the aggregate test does not mean every county, or every population within a state, has passed it too."
                 ),
@@ -125,7 +125,7 @@ LESSONS = [
                 "heading": "Economics Pillar, in Depth: Scoring the Provider, Not Just the Outcome",
                 "body": (
                     "Before 2017, Medicare Advantage Star Ratings scored every contract against the same bar regardless of who it served. A plan with a large share of dual-eligible, low-income-subsidy, or disabled enrollees — populations with, on average, more complex medication regimens, more social barriers to appointment attendance, and more difficulty meeting preventive-care benchmarks — was scored as though its enrollees looked like any other plan's. The plans doing the hardest work showed up with the lowest scores.\n\n"
-                    "CMS's Categorical Adjustment Index, introduced with the 2017 Star Ratings, does not change what is measured. It changes what counts as a good score for a given enrollee mix, adding or subtracting up to 0.10–0.20 stars based on a contract's share of dual-eligible, low-income-subsidy, and disabled enrollees. That is the economics pillar's justice test working as designed: sustainability cannot be judged the same way for a provider serving a harder population as for one that is not, and a payment or scoring model that ignores the difference will always undercount the providers who most need accurate recognition."
+                    "CMS's Categorical Adjustment Index, introduced with the 2017 Star Ratings, does not change what is measured. It changes what counts as a good score for a given enrollee mix, adding or subtracting a small fraction of a star based on a contract's share of dual-eligible, low-income-subsidy, and disabled enrollees. That is the economics pillar's justice test working as designed: sustainability cannot be judged the same way for a provider serving a harder population as for one that is not, and a payment or scoring model that ignores the difference will always undercount the providers who most need accurate recognition."
                 ),
             },
             {

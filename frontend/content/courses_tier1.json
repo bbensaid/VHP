@@ -9315,18 +9315,13 @@
               {
                 "type": "text",
                 "heading": "Redlining and health: the maps still matter",
-                "body": "From the 1930s through the 1960s, the federal government's Home Owners' Loan Corporation drew color-coded maps of US cities, rating neighborhoods for lending risk. Neighborhoods with Black residents were systematically marked red ('hazardous') \u2014 denying mortgages that would have built intergenerational wealth.\n\nResearchers have overlaid 1930s redlining maps on modern health data and found persistent correlations: formerly redlined neighborhoods today have higher rates of asthma, diabetes, hypertension, low birth weight, and shorter life expectancy \u2014 80+ years after the maps were drawn. The mechanism is through concentrated poverty, disinvestment, environmental hazard siting, and stress."
+                "body": "Between 1935 and 1940, the federal government's Home Owners' Loan Corporation drew color-coded maps of US cities, rating neighborhoods for lending risk. Neighborhoods with Black residents were systematically marked red ('hazardous') \u2014 denying mortgages that would have built intergenerational wealth.\n\nResearchers have overlaid 1930s redlining maps on modern health data and found persistent correlations: formerly redlined neighborhoods today have higher rates of asthma, diabetes, hypertension, low birth weight, and shorter life expectancy \u2014 80+ years after the maps were drawn. The mechanism is through concentrated poverty, disinvestment, environmental hazard siting, and stress."
               },
               {
                 "type": "callout",
                 "variant": "warning",
                 "heading": "Implicit bias in clinical settings",
                 "body": "Dozens of studies document disparities in pain management, diagnostic accuracy, and treatment recommendations that persist after controlling for clinical variables. Black patients receive less pain medication than white patients with identical presentations. Studies using identical vignettes with patient names swapped show different treatment recommendations based on perceived race. This is not conscious racism \u2014 it reflects unconscious associations that every clinician is susceptible to, which is why training and system-level safeguards matter."
-              },
-              {
-                "type": "audio_slot",
-                "label": "Clinician on addressing bias in practice",
-                "hint": "Interview a physician or nurse about their experience encountering and addressing implicit bias in clinical settings \u2014 what they've seen, how they've changed their practice, and what systemic changes would help. Recommended: 7\u201310 minutes."
               }
             ],
             "quiz": {
@@ -9669,7 +9664,7 @@
               {
                 "type": "text",
                 "heading": "Screening: from asking to acting",
-                "body": "SDOH screening asks patients about their social needs directly \u2014 food security, housing stability, transportation, utilities, interpersonal safety. The evidence shows patients are willing to answer these questions when asked in a respectful, confidential context, and that screening identifies needs that clinicians would not otherwise know about.\n\nBut screening without action causes harm: asking someone if they're food insecure and then having no response to offer erodes trust. Effective SDOH programs pair screening with a referral pathway \u2014 either through embedded community health workers, a care coordination team, or a community resource platform like findhelp or NowPow."
+                "body": "SDOH screening asks patients about their social needs directly \u2014 food security, housing stability, transportation, utilities, interpersonal safety. The evidence shows patients are willing to answer these questions when asked in a respectful, confidential context, and that screening identifies needs that clinicians would not otherwise know about.\n\nBut screening without action causes harm: asking someone if they're food insecure and then having no response to offer erodes trust. Effective SDOH programs pair screening with a referral pathway \u2014 either through embedded community health workers, a care coordination team, or a community resource platform like findhelp or Unite Us."
               },
               {
                 "type": "concepts_grid",
@@ -9692,8 +9687,8 @@
                   },
                   {
                     "icon": "ti-heart",
-                    "title": "SDOH-5",
-                    "body": "Brief 5-question tool for rapid screening in high-volume settings. Covers food, housing, transportation, interpersonal violence, and utilities."
+                    "title": "Hunger Vital Sign",
+                    "body": "Two-item food-insecurity screener from Children's HealthWatch, validated for rapid use in any clinical setting."
                   }
                 ]
               },
@@ -9783,7 +9778,7 @@
               {
                 "type": "text",
                 "heading": "Housing is health care",
-                "body": "Housing instability \u2014 eviction risk, overcrowding, unsafe conditions, or outright homelessness \u2014 is one of the strongest predictors of poor health outcomes. People experiencing homelessness have life expectancies 20\u201325 years shorter than housed people. They use emergency departments at rates 5\u201310 times higher than the general population, are hospitalized more frequently, and have dramatically higher rates of mental illness, substance use, and communicable disease.\n\nFor health systems operating in value-based contracts, chronically unhoused patients are often the highest-cost, hardest-to-manage members of the population. Housing instability is not a social problem on the side \u2014 it is a primary driver of health care costs."
+                "body": "Housing instability \u2014 eviction risk, overcrowding, unsafe conditions, or outright homelessness \u2014 is one of the strongest predictors of poor health outcomes. People experiencing homelessness die at least 26 years earlier than the general population, on average. They use emergency departments at far higher rates than the general population, are hospitalized more frequently, and have dramatically higher rates of mental illness, substance use, and communicable disease.\n\nFor health systems operating in value-based contracts, chronically unhoused patients are often the highest-cost, hardest-to-manage members of the population. Housing instability is not a social problem on the side \u2014 it is a primary driver of health care costs."
               },
               {
                 "type": "concepts_grid",
@@ -9815,24 +9810,24 @@
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "20-25 yrs",
+                    "value": "26+ yrs",
                     "label": "Shorter life expectancy for people experiencing chronic homelessness",
-                    "source": "JAMA"
+                    "source": "Community Solutions"
                   },
                   {
-                    "value": "5-10x",
+                    "value": "Several-fold",
                     "label": "Higher ED use rate for unhoused vs. housed individuals",
-                    "source": "Health Affairs"
+                    "source": "Community Solutions"
                   },
                   {
-                    "value": "$30,000+",
-                    "label": "Annual Medicaid cost for a chronically homeless individual",
-                    "source": "RWJF"
+                    "value": "$31,000",
+                    "label": "Annual community cost of a chronically homeless individual (Central Florida study)",
+                    "source": "Central Florida Commission on Homelessness, 2014"
                   },
                   {
                     "value": "$10,000",
-                    "label": "Annual cost of supportive housing per person \u2014 fraction of health system savings",
-                    "source": "Corporation for Supportive Housing"
+                    "label": "Annual cost of permanent supportive housing per person (same study)",
+                    "source": "Central Florida Commission on Homelessness, 2014"
                   }
                 ]
               }
@@ -9912,7 +9907,7 @@
               {
                 "type": "text",
                 "heading": "Food insecurity is a clinical issue",
-                "body": "Food insecurity \u2014 limited or uncertain access to adequate food \u2014 affects approximately 44 million Americans, including 13 million children. For clinicians, food insecurity is not just a social problem: it is directly linked to uncontrolled diabetes (food-insecure patients have 27% higher A1c), hypertension, depression, and hospital readmissions.\n\nA diabetic patient who cannot afford or access fresh vegetables, whole grains, and lean protein cannot manage their blood sugar regardless of how good their medication is. Food is medicine \u2014 and clinicians are increasingly recognizing that prescriptions for metformin need to be paired with access to food."
+                "body": "Food insecurity \u2014 limited or uncertain access to adequate food \u2014 affected about 47 million Americans in 2023, including nearly 14 million children (USDA). For clinicians, food insecurity is not just a social problem: it is directly linked to uncontrolled diabetes, hypertension, depression, and hospital readmissions.\n\nA diabetic patient who cannot afford or access fresh vegetables, whole grains, and lean protein cannot manage their blood sugar regardless of how good their medication is. Food is medicine \u2014 and clinicians are increasingly recognizing that prescriptions for metformin need to be paired with access to food."
               },
               {
                 "type": "concepts_grid",
@@ -9921,7 +9916,7 @@
                   {
                     "icon": "ti-leaf",
                     "title": "Produce prescriptions",
-                    "body": "Clinicians write 'prescriptions' redeemable at farmers markets or grocery stores for fresh produce. RCTs show A1c reductions of 0.6\u20131.0% in food-insecure diabetic patients."
+                    "body": "Clinicians write 'prescriptions' redeemable at farmers markets or grocery stores for fresh produce. Evidence is mixed: modest A1c reductions in some evaluations, none in a subsidy-only randomized trial."
                   },
                   {
                     "icon": "ti-soup",
@@ -9944,14 +9939,14 @@
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "44M",
+                    "value": "47M",
                     "label": "Americans experiencing food insecurity",
                     "source": "USDA 2023"
                   },
                   {
-                    "value": "27%",
-                    "label": "Higher A1c in food-insecure vs. food-secure diabetic patients",
-                    "source": "Diabetes Care"
+                    "value": "~14M",
+                    "label": "Children in food-insecure households (2023)",
+                    "source": "USDA ERS"
                   },
                   {
                     "value": "50%",
@@ -9976,7 +9971,7 @@
                   "type": "single_choice",
                   "question": "What have clinical trials found about produce prescription programs for food-insecure diabetic patients?",
                   "points": 1,
-                  "explanation": "RCTs of produce prescription programs show A1c reductions of 0.6\u20131.0% in food-insecure diabetic patients \u2014 clinically meaningful reductions comparable to adding a medication.",
+                  "explanation": "The evidence is mixed: some evaluations find modest A1c reductions (about 0.3 points in a large Tufts-led analysis), but a randomized trial of a produce subsidy alone found no significant A1c improvement at 12 months. Design and wraparound support matter.",
                   "options": [
                     {
                       "id": "opt_fi1a",
@@ -9985,7 +9980,7 @@
                     },
                     {
                       "id": "opt_fi1b",
-                      "text": "A1c reductions of 0.6\u20131.0% \u2014 comparable to adding a medication",
+                      "text": "Mixed results \u2014 modest A1c reductions in some evaluations, but no significant effect in a subsidy-only randomized trial",
                       "isCorrect": true
                     },
                     {
@@ -10077,7 +10072,7 @@
                   {
                     "label": "Ethnicity",
                     "left": "Collapsed into race (Hispanic listed as a race)",
-                    "right": "Collected separately: ethnicity (Hispanic/Not Hispanic) AND race"
+                    "right": "Captured alongside race, never instead of it (separate question under the 1997 OMB standard; combined multi-select question under the 2024 revision)"
                   },
                   {
                     "label": "Detail",
@@ -10101,11 +10096,6 @@
                 "variant": "warning",
                 "heading": "The aggregate trap",
                 "body": "A hospital's colorectal cancer screening rate is 72% \u2014 at or above the national average. Looks fine. But stratified by race: white patients 79%, Black patients 61%, Hispanic patients 54%. The aggregate hides a 25-point gap. This is the aggregate trap: good overall performance can mask severe disparities. Equity work requires stratified measurement."
-              },
-              {
-                "type": "audio_slot",
-                "label": "Health system equity analyst: building the data infrastructure",
-                "hint": "Interview a data analyst or quality leader at a health system about the practical challenges of collecting and using REaL data \u2014 EHR limitations, staff training, patient trust. Recommended: 7\u20139 minutes."
               }
             ],
             "quiz": {
@@ -10414,13 +10404,13 @@
               {
                 "type": "text",
                 "heading": "A trusted device that wasn't equally accurate",
-                "body": "Pulse oximeters \u2014 the small clip devices that measure blood oxygen saturation \u2014 have been ubiquitous in clinical care for decades. During COVID-19, they were essential: the decision to admit a patient or discharge them often hinged on a single SpO2 reading.\n\nIn 2020\u20132021, multiple studies published in NEJM and other leading journals found that pulse oximeters were significantly less accurate in patients with darker skin tones \u2014 overestimating oxygen saturation by 2\u20133 percentage points. This meant that Black and Hispanic patients with dangerously low oxygen levels appeared to be within normal range, leading to delayed treatment and worse outcomes.\n\nThis was not a COVID-era discovery \u2014 the bias had been documented in the 1980s and 1990s, but the clinical and regulatory systems failed to act on it."
+                "body": "Pulse oximeters \u2014 the small clip devices that measure blood oxygen saturation \u2014 have been ubiquitous in clinical care for decades. During COVID-19, they were essential: the decision to admit a patient or discharge them often hinged on a single SpO2 reading.\n\nIn 2020\u20132021, multiple studies published in NEJM and other leading journals found that pulse oximeters were significantly less accurate in patients with darker skin tones \u2014 overestimating oxygen saturation. This meant that Black and Hispanic patients with dangerously low oxygen levels appeared to be within normal range, leading to delayed treatment and worse outcomes.\n\nThis was not a COVID-era discovery \u2014 the bias had been documented in the 1980s and 1990s, but the clinical and regulatory systems failed to act on it."
               },
               {
                 "type": "callout",
                 "variant": "warning",
                 "heading": "Why the bias exists \u2014 and was ignored",
-                "body": "Pulse oximeters work by shining light through the finger and measuring absorption at two wavelengths. Melanin in the skin absorbs light at these wavelengths, interfering with the measurement. Device manufacturers validated their devices predominantly on lighter-skinned subjects \u2014 a common pattern in medical device and clinical trial populations. Despite early research flagging the disparity, the FDA did not require manufacturers to validate accuracy across skin tones until 2024."
+                "body": "Pulse oximeters work by shining light through the finger and measuring absorption at two wavelengths. Melanin in the skin absorbs light at these wavelengths, interfering with the measurement. Device manufacturers validated their devices predominantly on lighter-skinned subjects \u2014 a common pattern in medical device and clinical trial populations. Despite early research flagging the disparity, the FDA did not issue draft guidance calling for validation across a broad range of skin tones until January 2025."
               },
               {
                 "type": "key_stat",
@@ -10431,13 +10421,13 @@
                     "source": "NEJM 2020"
                   },
                   {
-                    "value": "2\u20133 pts",
-                    "label": "Average SpO2 overestimation in patients with darker skin tones",
+                    "value": "17.0% vs 6.2%",
+                    "label": "Occult hypoxemia, Black vs. white patients (multicenter cohort)",
                     "source": "NEJM 2020"
                   },
                   {
-                    "value": "2024",
-                    "label": "Year FDA first required manufacturers to validate pulse oximeters across skin tones",
+                    "value": "2025",
+                    "label": "Year FDA issued draft guidance on validating pulse oximeters across skin tones",
                     "source": "FDA"
                   }
                 ]
@@ -10550,23 +10540,23 @@
                   },
                   {
                     "icon": "ti-users",
-                    "title": "Underserved communities",
-                    "body": "Assess and address barriers to participation by underserved communities in CMS programs."
+                    "title": "Assess causes of disparities",
+                    "body": "Assess the causes of disparities within CMS programs and address inequities in policies and operations."
                   },
                   {
                     "icon": "ti-chart-bar",
-                    "title": "Disparities research",
-                    "body": "Build evidence on interventions that close disparities and share findings with the field."
+                    "title": "Organizational capacity",
+                    "body": "Build the capacity of health care organizations and the workforce to reduce health and health care disparities."
                   },
                   {
                     "icon": "ti-coins",
-                    "title": "Payment models",
-                    "body": "Embed equity in payment models \u2014 including requiring disparity reduction plans in ACO and APM contracts."
+                    "title": "Language access & literacy",
+                    "body": "Advance language access, health literacy, and the provision of culturally tailored services."
                   },
                   {
                     "icon": "ti-home-heart",
-                    "title": "Cultural competency",
-                    "body": "Ensure CMS-funded organizations provide culturally and linguistically appropriate services (CLAS standards)."
+                    "title": "Disability access",
+                    "body": "Increase all forms of accessibility to health care services and coverage for people with disabilities."
                   }
                 ]
               },
@@ -10574,7 +10564,7 @@
                 "type": "callout",
                 "variant": "info",
                 "heading": "Health Equity Index in Star Ratings",
-                "body": "Beginning with the 2027 Star Ratings, CMS is introducing a Health Equity Index (HEI) reward that gives Medicare Advantage plans additional credit for improving quality for low-income and/or disabled enrollees. Plans that reduce disparities within their enrolled population are rewarded; those that perform worse for vulnerable subgroups are penalized. This is the first time equity performance has been directly linked to MA payment."
+                "body": "CMS designed a Health Equity Index (HEI) reward \u2014 later renamed Excellent Health Outcomes for All \u2014 to add up to 0.4 to a Medicare Advantage plan's Star Rating for strong performance among low-income-subsidy, dual-eligible, and disabled enrollees. It was a bonus, not a penalty. In its Contract Year 2027 final rule (April 2026), CMS decided not to implement it and kept the historical reward factor instead."
               },
               {
                 "type": "text",
@@ -10809,7 +10799,7 @@
                   {
                     "icon": "ti-baby",
                     "title": "Maternal health",
-                    "body": "Doula and CHW models have demonstrated reduction in maternal mortality and disparities \u2014 particularly for Black mothers."
+                    "body": "Doula and CHW models are being expanded, including through Medicaid coverage, to address maternal health disparities \u2014 particularly for Black mothers."
                   }
                 ]
               },
@@ -10817,24 +10807,24 @@
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "$3.6",
-                    "label": "Return on investment for every $1 spent on CHW programs (meta-analysis)",
-                    "source": "RWJF"
+                    "value": "$2.47",
+                    "label": "Return to Medicaid per $1 invested in the IMPaCT CHW model (RCT-based)",
+                    "source": "Health Affairs (Kangovi et al., 2020)"
                   },
                   {
-                    "value": "25%",
-                    "label": "Reduction in ED visits in CHW-supported high-risk populations",
-                    "source": "Health Affairs"
+                    "value": "3",
+                    "label": "Randomized controlled trials of the IMPaCT CHW model",
+                    "source": "Penn LDI"
                   },
                   {
-                    "value": "33+",
-                    "label": "States that now reimburse CHW services through Medicaid",
+                    "value": "Over half",
+                    "label": "States with Medicaid policies covering CHW services",
                     "source": "KFF"
                   },
                   {
-                    "value": "2x",
-                    "label": "Black maternal mortality reduction with doula/CHW support in some programs",
-                    "source": "ACOG"
+                    "value": "Expanding",
+                    "label": "Medicaid doula and CHW maternal-health coverage",
+                    "source": "KFF"
                   }
                 ]
               },
@@ -10842,12 +10832,7 @@
                 "type": "callout",
                 "variant": "info",
                 "heading": "Medicaid CHW reimbursement: the sustainability solution",
-                "body": "Historically, CHW programs were grant-funded \u2014 effective but fragile. More than 33 states now reimburse CHW services through Medicaid, providing a sustainable funding stream. CMS has made this easier through guidance on billing CHW services as part of chronic care management, care coordination, and preventive services. Vermont reimburses CHW services through Medicaid and has integrated CHWs into its ACO model."
-              },
-              {
-                "type": "audio_slot",
-                "label": "Community health worker: the view from the community",
-                "hint": "Interview a CHW about their day-to-day work \u2014 what they actually do, the barriers their patients face, what makes the role effective, and what the health system gets wrong about community engagement. Recommended: 8\u201312 minutes."
+                "body": "Historically, CHW programs were grant-funded \u2014 effective but fragile. More than half of states now have Medicaid policies covering CHW services, providing a sustainable funding stream. CMS has made this easier through guidance on billing CHW services as part of chronic care management, care coordination, and preventive services."
               }
             ],
             "quiz": {
@@ -10956,7 +10941,7 @@
                 "type": "callout",
                 "variant": "info",
                 "heading": "Community benefit: $129B annually \u2014 but poorly tracked",
-                "body": "Nonprofit hospitals claimed $129B in community benefit spending in 2019 \u2014 mostly charity care and Medicaid shortfall. Critics argue that little of this reaches the social determinants investments that would most reduce community health disparities. The IRS requires community benefit reporting but allows wide flexibility in what counts. CMS and advocacy groups are pushing for requirements that a meaningful share of community benefit target measurable social determinants."
+                "body": "Nonprofit hospitals reported $129B in community benefits in 2020 (AHA analysis of Schedule H data) \u2014 mostly charity care and Medicaid shortfall. Critics argue that little of this reaches the social determinants investments that would most reduce community health disparities. The IRS requires community benefit reporting but allows wide flexibility in what counts. CMS and advocacy groups are pushing for requirements that a meaningful share of community benefit target measurable social determinants."
               }
             ],
             "quiz": {

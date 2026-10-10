@@ -547,7 +547,7 @@
               {
                 "type": "text",
                 "heading": "Why Pre-Registration Matters",
-                "body": "Pre-registration \u2014 collecting patient and insurance information before the date of service \u2014 is the single most impactful front-end investment an organization can make. When done well, it:\n\n- Reduces day-of registration time by 50\u201370%\n- Enables insurance verification 48\u201372 hours in advance\n- Allows identification of authorization requirements before the visit\n- Provides time for patient financial counseling and upfront collections"
+                "body": "Pre-registration \u2014 collecting patient and insurance information before the date of service \u2014 is the single most impactful front-end investment an organization can make. When done well, it:\n\n- Shortens day-of registration\n- Enables insurance verification 48\u201372 hours in advance\n- Allows identification of authorization requirements before the visit\n- Provides time for patient financial counseling and upfront collections"
               },
               {
                 "type": "text",
@@ -695,19 +695,19 @@
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "46 hours",
+                    "value": "13 hours",
                     "label": "Average physician time per week on PA",
-                    "context": "AMA 2023 survey; one in three physicians report PA has led to a serious adverse event for a patient"
+                    "context": "AMA late-2024 survey: 39 requests per physician per week; more than one-quarter of physicians report PA led to a serious adverse event"
                   },
                   {
                     "value": "94%",
                     "label": "PA requests eventually approved",
-                    "context": "KFF analysis showing most PA denials are ultimately overturned \u2014 suggesting the system imposes delays more than prevents inappropriate care"
+                    "context": "KFF: Medicare Advantage insurers fully or partially denied about 6% of 35M+ requests in 2021; only 11% of denials were appealed, and 82% of appeals succeeded"
                   },
                   {
-                    "value": "35%",
-                    "label": "Providers who abandon care due to PA delays",
-                    "context": "AMA survey finding; patients may not receive needed care due to administrative friction"
+                    "value": "78%",
+                    "label": "Physicians reporting patients abandon treatment",
+                    "context": "AMA survey (released June 2024): physicians reporting that patients abandon treatment because of PA struggles"
                   }
                 ]
               },
@@ -715,7 +715,7 @@
                 "type": "callout",
                 "variant": "tip",
                 "title": "FHIR-Based Prior Authorization (CMS 2026)",
-                "body": "CMS finalized rules requiring payers to implement FHIR-based APIs for prior authorization by 2026 (Interoperability and Prior Authorization Final Rule, CMS-0057-F). This will enable electronic, near-real-time PA decisions for many services, reducing the current 1\u201314 day wait times for manual PA requests."
+                "body": "CMS finalized rules requiring payers to meet faster prior authorization decision timeframes from 2026 and to implement FHIR-based Prior Authorization APIs by January 2027 (Interoperability and Prior Authorization Final Rule, CMS-0057-F). This will enable electronic, near-real-time PA decisions for many services, reducing the current 1\u201314 day wait times for manual PA requests."
               },
               {
                 "type": "comparison_table",
@@ -811,7 +811,7 @@
                     },
                     {
                       "id": "b",
-                      "text": "Payers to implement FHIR APIs for electronic PA by 2026"
+                      "text": "Payers to implement FHIR APIs for electronic PA by 2027"
                     },
                     {
                       "id": "c",
@@ -823,7 +823,7 @@
                     }
                   ],
                   "correctId": "b",
-                  "explanation": "CMS-0057-F requires impacted payers to implement FHIR-based APIs for prior authorization, enabling electronic PA requests and near-real-time decisions for many services by 2026."
+                  "explanation": "CMS-0057-F requires impacted payers to implement FHIR-based APIs for prior authorization, enabling electronic PA requests and faster decisions, with the API required by January 2027 (decision timeframes apply from 2026)."
                 }
               ]
             }
@@ -851,12 +851,12 @@
               {
                 "type": "text",
                 "heading": "The Rise of Patient Financial Responsibility",
-                "body": "High-deductible health plans (HDHPs) have shifted significant financial responsibility to patients. In 2024, over 50% of employer-sponsored plan enrollees are in HDHPs. As a result:\n\n- Patient balances now represent 20\u201335% of hospital net revenue\n- Bad debt from patient responsibility has increased 11% annually since 2018\n- Patient financial experience is now a top driver of overall patient satisfaction scores\n\nOrganizations that invest in financial counseling and transparent estimates see 15\u201325% improvement in upfront collection rates."
+                "body": "High-deductible health plans (HDHPs) have shifted significant financial responsibility to patients. In 2024, about 27% of covered workers were enrolled in a high-deductible plan with a savings option (KFF Employer Health Benefits Survey). As a result:\n\n- Patient balances are a growing share of provider revenue\n- Bad debt from patient responsibility has become a major collections risk\n- Patient financial experience increasingly shapes overall patient satisfaction\n\nOrganizations that invest in financial counseling and transparent estimates can improve upfront collections."
               },
               {
                 "type": "text",
                 "heading": "Price Transparency Requirements",
-                "body": "Two federal mandates now require providers to publish pricing:\n\n**Hospital Price Transparency Rule (2021):** Hospitals must publish machine-readable files with all standard charges and a consumer-friendly display of 300 shoppable services. CMS enforcement increased in 2023, with penalties up to $2M per year.\n\n**No Surprises Act (2022):** Prohibits surprise billing for emergency care and non-emergency care at in-network facilities. Requires Good Faith Estimates for self-pay patients and advance explanation of benefits for insured patients within 3 business days of scheduling."
+                "body": "Two federal mandates now require providers to publish pricing:\n\n**Hospital Price Transparency Rule (2021):** Hospitals must publish machine-readable files with all standard charges and a consumer-friendly display of 300 shoppable services. CMS strengthened enforcement in 2022–2023, with penalties up to about $2M per year for the largest hospitals.\n\n**No Surprises Act (2022):** Prohibits surprise billing for emergency care and non-emergency care at in-network facilities. Requires Good Faith Estimates for uninsured and self-pay patients (generally within 1–3 business days of scheduling); the advance explanation of benefits for insured patients has been deferred pending further rulemaking."
               },
               {
                 "type": "callout",
@@ -868,19 +868,15 @@
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "50%+",
-                    "label": "Employer plan enrollees in HDHPs (2024)",
+                    "value": "27%",
+                    "label": "Covered workers in HDHP/SOs (2024)",
                     "context": "Kaiser Family Foundation Employer Health Benefits Survey"
                   },
-                  {
-                    "value": "70%",
-                    "label": "Patient balances collected if addressed before discharge",
-                    "context": "vs. ~30% collected after a statement is mailed post-discharge"
-                  },
+                  
                   {
                     "value": "$2M",
                     "label": "Maximum annual CMS penalty for price transparency non-compliance",
-                    "context": "Effective 2023; scaled to hospital bed count"
+                    "context": "Effective 2022; scaled to hospital bed count"
                   }
                 ]
               }
@@ -916,27 +912,27 @@
                 },
                 {
                   "id": "q-rcm-access-003-2",
-                  "text": "What is the collection rate for patient balances addressed before discharge, compared to after a statement is mailed?",
+                  "text": "Under the No Surprises Act, when can an uninsured or self-pay patient use the Patient-Provider Dispute Resolution process?",
                   "options": [
                     {
                       "id": "a",
-                      "text": "40% before discharge vs 35% after statement"
+                      "text": "When billed charges exceed the estimate by any amount"
                     },
                     {
                       "id": "b",
-                      "text": "70% before discharge vs 30% after statement"
+                      "text": "When billed charges exceed the Good Faith Estimate by $400 or more"
                     },
                     {
                       "id": "c",
-                      "text": "90% before discharge vs 60% after statement"
+                      "text": "Only if the provider is out of network"
                     },
                     {
                       "id": "d",
-                      "text": "55% before discharge vs 45% after statement"
+                      "text": "Only within 10 days of receiving the bill"
                     }
                   ],
                   "correctId": "b",
-                  "explanation": "Industry data shows approximately 70% of patient balances can be collected when addressed proactively before or at discharge, compared to only about 30% after a paper statement is mailed."
+                  "explanation": "If the final bill exceeds the Good Faith Estimate by $400 or more, the patient may start dispute resolution within 120 days of receiving the bill, and the provider may not move the bill to collections while the dispute is pending."
                 },
                 {
                   "id": "q-rcm-access-003-3",
@@ -1036,7 +1032,7 @@
                 "type": "callout",
                 "variant": "key",
                 "title": "CC/MCC Capture: High-Value Coding",
-                "body": "Documenting and coding secondary diagnoses as CCs or MCCs can increase DRG payment by 15\u201335%. Examples: Documenting 'acute blood loss anemia' vs. 'anemia' \u2014 the former may qualify as a CC. Clinical documentation improvement (CDI) programs focus specifically on capturing these diagnoses when clinically supported."
+                "body": "Documenting and coding secondary diagnoses that qualify as CCs or MCCs moves a case into a higher-weighted MS-DRG tier and increases payment. Examples: Documenting 'acute blood loss anemia' vs. 'anemia' \u2014 the former may qualify as a CC. Clinical documentation improvement (CDI) programs focus specifically on capturing these diagnoses when clinically supported."
               },
               {
                 "type": "comparison_table",
@@ -1188,20 +1184,20 @@
                 "type": "callout",
                 "variant": "warning",
                 "title": "Common Charge Capture Failures",
-                "body": "The most common charge capture gaps include: (1) services performed but never ordered in the EHR, (2) implants and supplies not captured at time of procedure, (3) late charges submitted after the claim has already been filed, and (4) observation hours not captured for outpatient stays. Studies suggest 3\u20137% of billable hospital services go uncaptured."
+                "body": "The most common charge capture gaps include: (1) services performed but never ordered in the EHR, (2) implants and supplies not captured at time of procedure, (3) late charges submitted after the claim has already been filed, and (4) observation hours not captured for outpatient stays. HFMA estimates that as much as 1% of net charges are lost to charge integrity leakage."
               },
               {
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "3\u20137%",
-                    "label": "Estimated billable services not captured",
-                    "context": "Industry estimate; implies millions in lost revenue annually for a mid-sized hospital"
+                    "value": "Up to 1%",
+                    "label": "Net charges lost to charge-capture leakage",
+                    "context": "HFMA estimate; millions of dollars a year for a large health system"
                   },
                   {
                     "value": "$1.3M",
-                    "label": "Annual revenue at risk for a 300-bed hospital",
-                    "context": "From charge capture gaps at even a 2% miss rate on $65M annual charges"
+                    "label": "Illustrative revenue at risk",
+                    "context": "A 2% miss rate on $65M of annual charges (illustrative arithmetic, not a measured hospital figure)"
                   }
                 ]
               }
@@ -1237,27 +1233,27 @@
                 },
                 {
                   "id": "q-rcm-coding-002-2",
-                  "text": "What percentage of billable hospital services are estimated to go uncaptured due to charge capture failures?",
+                  "text": "According to HFMA, roughly how much of a health system's net charges can be lost to charge-capture (charge integrity) leakage?",
                   "options": [
                     {
                       "id": "a",
-                      "text": "Less than 1%"
+                      "text": "As much as 0.1%"
                     },
                     {
                       "id": "b",
-                      "text": "3\u20137%"
+                      "text": "As much as 1%"
                     },
                     {
                       "id": "c",
-                      "text": "10\u201315%"
+                      "text": "10–15%"
                     },
                     {
                       "id": "d",
-                      "text": "20\u201325%"
+                      "text": "20–25%"
                     }
                   ],
                   "correctId": "b",
-                  "explanation": "Industry estimates suggest 3\u20137% of billable services are not captured, representing significant revenue leakage. Common gaps include unbilled implants, missed ancillary charges, and services without corresponding orders."
+                  "explanation": "An HFMA analysis estimates that as much as 1% of net charges are lost to charge integrity leakage — small as a percentage, but millions of dollars a year for a large health system. Common gaps include unbilled implants, missed ancillary charges, and services without corresponding orders."
                 },
                 {
                   "id": "q-rcm-coding-002-3",
@@ -1310,18 +1306,18 @@
               {
                 "type": "text",
                 "heading": "2021 E/M Documentation Guidelines",
-                "body": "In 2021, the AMA significantly revised Evaluation and Management (E/M) coding guidelines for office and outpatient visits:\n\n- **Level of service** is now based on either **Medical Decision Making (MDM)** or **Total Time** on the date of the encounter\n- The old requirement to document all three key components (history, exam, MDM) was eliminated for established patients\n- For new patients, only two of three components are required\n- **Time-based billing** now counts total provider time on the date of service, not just face-to-face time\n\nThese changes were designed to reduce documentation burden and allow physicians to focus on medically relevant content."
+                "body": "In 2021, the AMA significantly revised Evaluation and Management (E/M) coding guidelines for office and outpatient visits:\n\n- **Level of service** is now based on either **Medical Decision Making (MDM)** or **Total Time** on the date of the encounter\n- History and exam no longer determine the level for new or established patients; they are documented as medically appropriate (previously, new patients required all three key components and established patients two of three)\n- **Time-based billing** now counts total provider time on the date of service, not just face-to-face time\n\nThese changes were designed to reduce documentation burden and allow physicians to focus on medically relevant content."
               },
               {
                 "type": "text",
                 "heading": "Clinical Documentation Improvement (CDI)",
-                "body": "CDI programs deploy trained specialists who review inpatient clinical documentation concurrently (while the patient is still admitted) to:\n\n1. Identify documentation gaps that may result in undercoding\n2. Query physicians to clarify ambiguous clinical language (e.g., 'anemia' vs. 'acute blood loss anemia')\n3. Ensure that the principal diagnosis, CCs, and MCCs are fully supported\n4. Improve DRG assignment accuracy and Case Mix Index (CMI)\n\nA strong CDI program can improve CMI by 0.1\u20130.3 points, translating to $5\u201315M annually for a 400-bed hospital."
+                "body": "CDI programs deploy trained specialists who review inpatient clinical documentation concurrently (while the patient is still admitted) to:\n\n1. Identify documentation gaps that may result in undercoding\n2. Query physicians to clarify ambiguous clinical language (e.g., 'anemia' vs. 'acute blood loss anemia')\n3. Ensure that the principal diagnosis, CCs, and MCCs are fully supported\n4. Improve DRG assignment accuracy and Case Mix Index (CMI)"
               },
               {
                 "type": "callout",
                 "variant": "warning",
                 "title": "Upcoding vs. Undercoding: Both Are Problems",
-                "body": "Upcoding \u2014 assigning codes that reflect a higher level of service or severity than documented \u2014 is fraud. Penalties include False Claims Act liability (up to 3x damages + $13,000 per claim). But undercoding \u2014 assigning codes that underrepresent the severity of illness \u2014 is also harmful: it reduces reimbursement, understates patient acuity for quality measures, and masks true case complexity."
+                "body": "Upcoding \u2014 assigning codes that reflect a higher level of service or severity than documented \u2014 is fraud. Penalties include False Claims Act liability (treble damages plus a per-claim penalty of $14,308–$28,618 as adjusted for 2025). But undercoding \u2014 assigning codes that underrepresent the severity of illness \u2014 is also harmful: it reduces reimbursement, understates patient acuity for quality measures, and masks true case complexity."
               },
               {
                 "type": "comparison_table",
@@ -1334,17 +1330,17 @@
                   [
                     "'Anemia' not further specified",
                     "Lower-weighted DRG",
-                    "Revenue loss $1,500\u20134,000/case"
+                    "Revenue loss (varies by MS-DRG)"
                   ],
                   [
                     "Sepsis vs. 'infection'",
                     "Significantly lower DRG",
-                    "Revenue loss $5,000\u201315,000/case"
+                    "Large revenue loss (varies by MS-DRG)"
                   ],
                   [
                     "BMI not documented",
                     "Missing obesity CC/MCC",
-                    "Revenue loss $2,000\u20138,000/case"
+                    "Revenue loss (varies by MS-DRG)"
                   ],
                   [
                     "POA not indicated",
@@ -1429,7 +1425,7 @@
                     }
                   ],
                   "correctId": "c",
-                  "explanation": "The False Claims Act (31 U.S.C. \u00a7 3729) creates civil liability for knowingly submitting false claims to federal programs including Medicare and Medicaid. Penalties include treble damages plus $13,000\u201327,000 per claim."
+                  "explanation": "The False Claims Act (31 U.S.C. \u00a7 3729) creates civil liability for knowingly submitting false claims to federal programs including Medicare and Medicaid. Penalties include treble damages plus a per-claim penalty of $14,308\u2013$28,618 (2025 inflation adjustment)."
                 }
               ]
             }
@@ -1504,12 +1500,12 @@
                   {
                     "value": "98%+",
                     "label": "Clean claim rate target for top performers",
-                    "context": "Every 1% improvement in clean claim rate reduces denial rework costs by ~$15,000 per $1M in net revenue"
+                    "context": "Industry benchmark is 95%+; top performers reach 98–99%"
                   },
                   {
-                    "value": "30 days",
-                    "label": "Medicare timely filing window for corrected claims",
-                    "context": "Original claims must be filed within 1 year; corrected claims within 60\u2013120 days depending on circumstance"
+                    "value": "12 months",
+                    "label": "Medicare timely filing window",
+                    "context": "From the date of service; corrections via reopening generally within 1 year of the initial determination"
                   }
                 ]
               }
@@ -1678,7 +1674,7 @@
                 "type": "callout",
                 "variant": "warning",
                 "title": "The Change Healthcare Cyberattack (2024)",
-                "body": "In February 2024, Change Healthcare \u2014 the largest healthcare clearinghouse in the US processing ~15 billion claims per year \u2014 suffered a ransomware attack that disrupted claims processing for weeks. The incident highlighted the systemic risk of clearinghouse concentration and the need for business continuity planning in RCM operations."
+                "body": "In February 2024, Change Healthcare \u2014 the largest healthcare clearinghouse in the US, processing ~15 billion health care transactions per year \u2014 suffered a ransomware attack that disrupted claims processing for weeks. The incident highlighted the systemic risk of clearinghouse concentration and the need for business continuity planning in RCM operations."
               }
             ],
             "quiz": {
@@ -1802,14 +1798,9 @@
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "115\u2013145%",
-                    "label": "Typical commercial rate as % of Medicare",
-                    "context": "For hospital outpatient services; physician rates often 110\u2013130% of Medicare PFS"
-                  },
-                  {
-                    "value": "3\u20135 years",
-                    "label": "Typical payer contract term",
-                    "context": "Most commercial contracts auto-renew annually after the initial term without active renegotiation"
+                    "value": "~263%",
+                    "label": "Commercial hospital outpatient prices as % of Medicare",
+                    "context": "RAND Round 5 (2022 data): all hospital services averaged 254%, inpatient 244%, outpatient 263% of Medicare"
                   }
                 ]
               }
@@ -5023,7 +5014,7 @@
               {
                 "type": "text",
                 "heading": "Tax-Exempt Bond Financing for Nonprofit Hospitals",
-                "body": "Nonprofit hospitals with 501(c)(3) status can issue **tax-exempt municipal bonds** through conduit issuers (state or county authorities). Because the interest income is exempt from federal taxes for bondholders, these bonds carry lower interest rates than taxable bonds\u2014typically 50\u2013100 basis points lower, saving millions in interest over a 30-year bond life.\n\nHospitals access the bond market through:\n- **Revenue bonds:** Secured by hospital revenues (most common)\n- **General obligation bonds:** Backed by taxing authority (public hospitals)\n- **Bank loans and lines of credit:** For shorter-term or smaller needs\n\nFor-profit hospitals must issue **taxable bonds** or use equity financing, making their cost of capital higher unless offset by greater operational scale."
+                "body": "Nonprofit hospitals with 501(c)(3) status can issue **tax-exempt municipal bonds** through conduit issuers (state or county authorities). Because the interest income is exempt from federal taxes for bondholders, these bonds carry lower interest rates than taxable bonds\u2014an estimated 2 percentage points lower on average, according to the American Hospital Association, saving millions in interest over a 30-year bond life.\n\nHospitals access the bond market through:\n- **Revenue bonds:** Secured by hospital revenues (most common)\n- **General obligation bonds:** Backed by taxing authority (public hospitals)\n- **Bank loans and lines of credit:** For shorter-term or smaller needs\n\nFor-profit hospitals must issue **taxable bonds** or use equity financing, making their cost of capital higher unless offset by greater operational scale."
               },
               {
                 "type": "comparison_table",
@@ -5064,15 +5055,15 @@
                 "type": "callout",
                 "variant": "warning",
                 "title": "Bond Covenants: Operational Constraints",
-                "body": "Bond indentures typically include financial covenants that hospitals must maintain:\n- **Minimum DSCR:** Often 1.10\u20131.25x annual debt service coverage\n- **Minimum days cash on hand:** Often 75\u2013100 days\n- **Debt-to-capitalization limits:** Often 60\u201365% maximum\n\nBreaching a covenant triggers technical default, which can require immediate negotiation with bondholders, waiver agreements, or in severe cases, accelerated repayment. CFOs must monitor covenant compliance continuously and flag risks to the board well in advance."
+                "body": "Bond indentures typically include financial covenants that hospitals must maintain:\n- **Minimum DSCR:** Often 1.10\u20131.25x annual debt service coverage\n- **Minimum days cash on hand:** Often 40\u201380 days\n- **Debt-to-capitalization limits:** Often 60\u201365% maximum\n\nBreaching a covenant triggers technical default, which can require immediate negotiation with bondholders, waiver agreements, or in severe cases, accelerated repayment. CFOs must monitor covenant compliance continuously and flag risks to the board well in advance."
               },
               {
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "50\u2013100 bps",
+                    "value": "~2 pts",
                     "label": "Tax-exempt savings vs taxable bonds",
-                    "context": "The interest rate advantage of tax-exempt bonds vs comparable taxable bonds for nonprofit hospitals"
+                    "context": "Estimated average interest saving of tax-exempt bonds vs taxable bonds or bank financing (American Hospital Association)"
                   },
                   {
                     "value": "30 years",
@@ -5114,7 +5105,7 @@
                     }
                   ],
                   "correctId": "c",
-                  "explanation": "Nonprofit hospitals can issue tax-exempt municipal bonds because their 501(c)(3) status allows bondholders to receive interest income exempt from federal taxes. Bondholders accept lower yields in exchange for this tax benefit, reducing the hospital's borrowing cost by 50\u2013100 basis points."
+                  "explanation": "Nonprofit hospitals can issue tax-exempt municipal bonds because their 501(c)(3) status allows bondholders to receive interest income exempt from federal taxes. Bondholders accept lower yields in exchange for this tax benefit, reducing the hospital's borrowing cost by an estimated 2 percentage points on average (AHA)."
                 },
                 {
                   "id": "q-hf-capital-003-2",
@@ -5199,7 +5190,7 @@
               {
                 "type": "text",
                 "heading": "The Fundamental Tension in Payment Reform",
-                "body": "Under **fee-for-service (FFS)**, hospitals are paid for each service delivered. More procedures, more admissions, more tests = more revenue. This creates an incentive to maximize volume.\n\nUnder **value-based payment**, hospitals are paid based on outcomes, quality, and cost efficiency. Keeping patients out of the hospital, reducing readmissions, preventing complications = financial success. This directly contradicts FFS revenue logic.\n\nThe transition creates a **dual financial challenge**: hospitals must simultaneously:\n1. Maintain FFS revenue (still 80%+ of most hospitals' income) to fund operations\n2. Invest in value-based capabilities (care coordination, analytics, community health) that reduce FFS volume\n\nThis 'burning platform' dynamic requires hospitals to manage a carefully paced transition to avoid financial crisis."
+                "body": "Under **fee-for-service (FFS)**, hospitals are paid for each service delivered. More procedures, more admissions, more tests = more revenue. This creates an incentive to maximize volume.\n\nUnder **value-based payment**, hospitals are paid based on outcomes, quality, and cost efficiency. Keeping patients out of the hospital, reducing readmissions, preventing complications = financial success. This directly contradicts FFS revenue logic.\n\nThe transition creates a **dual financial challenge**: hospitals must simultaneously:\n1. Maintain FFS revenue (still the larger share of most hospitals' income) to fund operations\n2. Invest in value-based capabilities (care coordination, analytics, community health) that reduce FFS volume\n\nThis 'burning platform' dynamic requires hospitals to manage a carefully paced transition to avoid financial crisis."
               },
               {
                 "type": "comparison_table",
@@ -5257,7 +5248,7 @@
                   },
                   {
                     "value": "$1B+",
-                    "label": "Annual HRRP penalties",
+                    "label": "Cumulative HRRP penalties",
                     "context": "CMS has levied over $1 billion in cumulative readmission penalties since program inception in 2012"
                   }
                 ]
@@ -5338,7 +5329,7 @@
                     }
                   ],
                   "correctId": "b",
-                  "explanation": "The dual financial challenge is the core tension: hospitals must maintain FFS revenue (still 80%+ of income) while investing in value-based capabilities like care coordination that reduce FFS volume. Moving too fast risks revenue collapse; moving too slowly leaves quality incentive money on the table."
+                  "explanation": "The dual financial challenge is the core tension: hospitals must maintain FFS revenue (still the larger share of income) while investing in value-based capabilities like care coordination that reduce FFS volume. Moving too fast risks revenue collapse; moving too slowly leaves quality incentive money on the table."
                 }
               ]
             },
@@ -5366,7 +5357,7 @@
               {
                 "type": "text",
                 "heading": "The Value-Based Contract Spectrum",
-                "body": "Value-based contracts exist on a spectrum of financial risk:\n\n**Shared Savings (Upside Only):** The hospital earns a share of any savings generated below a spending benchmark but bears no downside risk. CMS Medicare Shared Savings Program (MSSP) Track 1 is this model. Hospitals capture 50% of savings; no penalty for overspending.\n\n**Two-Sided Risk (Upside + Downside):** Hospitals share both savings and losses. MSSP Enhanced Track or Medicare ACO REACH. Higher shared savings rate (60\u201375%) but must repay a portion of overspending.\n\n**Bundled Payments:** A single payment for an episode of care (e.g., hip replacement + 90-day post-acute). Hospital keeps savings from efficient care; absorbs losses from complications.\n\n**Capitation:** A fixed per-member-per-month (PMPM) payment covering all services for an attributed population. Full global risk. Requires sophisticated actuarial modeling, utilization management, and reserve capital."
+                "body": "Value-based contracts exist on a spectrum of financial risk:\n\n**Shared Savings (Upside Only):** The hospital earns a share of any savings generated below a spending benchmark but bears no downside risk. The Medicare Shared Savings Program (MSSP) BASIC track Levels A and B work this way: ACOs keep up to 40% of savings (50% under the legacy Track 1, retired in 2019); no penalty for overspending.\n\n**Two-Sided Risk (Upside + Downside):** Hospitals share both savings and losses. MSSP BASIC Levels C\u2013E and the ENHANCED track. Higher shared savings rate (up to 50% in BASIC Levels C\u2013E, up to 75% in ENHANCED) but must repay a portion of overspending.\n\n**Bundled Payments:** A single payment for an episode of care (e.g., hip replacement + 90-day post-acute). Hospital keeps savings from efficient care; absorbs losses from complications.\n\n**Capitation:** A fixed per-member-per-month (PMPM) payment covering all services for an attributed population. Full global risk. Requires sophisticated actuarial modeling, utilization management, and reserve capital."
               },
               {
                 "type": "concepts_grid",
@@ -5399,12 +5390,12 @@
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "50%",
-                    "label": "MSSP Track 1 shared savings rate",
-                    "context": "CMS shares 50% of net savings with qualifying ACOs in the upside-only track"
+                    "value": "40%",
+                    "label": "MSSP upside-only (BASIC A–B) max sharing rate",
+                    "context": "CMS shares up to 40% of savings with ACOs in the upside-only BASIC Levels A–B (50% under the legacy Track 1, retired in 2019)"
                   },
                   {
-                    "value": "60\u201375%",
+                    "value": "50–75%",
                     "label": "Two-sided risk shared savings rate",
                     "content": "Higher shared savings rate available to ACOs accepting downside risk"
                   },
@@ -5531,9 +5522,9 @@
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "$3\u20137",
-                    "label": "ROI per dollar invested in care coordination (value-based)",
-                    "context": "Studies suggest well-designed care coordination programs generate $3\u2013$7 in savings per dollar invested under value-based contracts"
+                    "value": "14.3:1",
+                    "label": "Median ROI of public health interventions (systematic review)",
+                    "context": "A 2017 systematic review of 52 studies (Masters et al.) found a median return of 14.3 to 1 for public health interventions; returns for any one care-coordination program vary widely"
                   },
                   {
                     "value": "20%",
@@ -5843,7 +5834,7 @@
               {
                 "type": "text",
                 "heading": "The Financial Logic of System Integration",
-                "body": "When independent hospitals join health systems, the financial rationale typically includes:\n\n**Scale Economies:** Consolidated purchasing through group purchasing organizations (GPOs), shared IT infrastructure, centralized revenue cycle, and shared administrative services reduce per-unit costs.\n\n**Capital Access:** System membership provides access to investment-grade system bonds at lower rates than a standalone community hospital could achieve. A Baa-rated hospital joining an Aa-rated system may borrow at 100\u2013150 bps lower rates.\n\n**Revenue Enhancement:** System membership may improve payer contract rates (multi-hospital leverage), expand specialty services, and provide employed physician networks that drive referrals.\n\n**Sustainability:** Financially marginal hospitals gain access to system capital allocation and operating support that may be unavailable as standalone organizations."
+                "body": "When independent hospitals join health systems, the financial rationale typically includes:\n\n**Scale Economies:** Consolidated purchasing through group purchasing organizations (GPOs), shared IT infrastructure, centralized revenue cycle, and shared administrative services reduce per-unit costs.\n\n**Capital Access:** System membership provides access to investment-grade system bonds at lower rates than a standalone community hospital could achieve. A Baa-rated hospital joining an Aa-rated system can borrow at meaningfully lower rates.\n\n**Revenue Enhancement:** System membership may improve payer contract rates (multi-hospital leverage), expand specialty services, and provide employed physician networks that drive referrals.\n\n**Sustainability:** Financially marginal hospitals gain access to system capital allocation and operating support that may be unavailable as standalone organizations."
               },
               {
                 "type": "comparison_table",
@@ -5884,20 +5875,20 @@
                 "type": "callout",
                 "variant": "warning",
                 "title": "Integration Failure Risks",
-                "body": "Hospital mergers frequently fail to achieve projected financial synergies. Common failure modes include: (1) Cultural resistance to standardization; (2) IT system integration cost overruns (EHR consolidation can cost $50\u2013200M for large systems); (3) Physician loyalty to local independence; (4) Community opposition to service changes. FTC antitrust review can block mergers in concentrated markets, and post-merger price increases have drawn Congressional scrutiny."
+                "body": "Hospital mergers frequently fail to achieve projected financial synergies. Common failure modes include: (1) Cultural resistance to standardization; (2) IT system integration cost overruns (EHR consolidation can cost hundreds of millions of dollars, and over $1 billion for the largest systems); (3) Physician loyalty to local independence; (4) Community opposition to service changes. FTC antitrust review can block mergers in concentrated markets, and post-merger price increases have drawn Congressional scrutiny."
               },
               {
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "60%+",
-                    "label": "Hospital beds in systems",
-                    "context": "Over 60% of U.S. hospital beds are now in multi-hospital systems, up from 40% two decades ago"
+                    "value": "69%",
+                    "label": "Hospitals in systems",
+                    "context": "More than two-thirds of U.S. hospitals (69%) are now part of a larger system, up from 56% in 2010 (KFF)"
                   },
                   {
-                    "value": "$50\u2013200M",
+                    "value": "$100M–$1B+",
                     "label": "EHR consolidation cost",
-                    "context": "Large health system EHR consolidation projects typically cost $50\u2013200M, often exceeding initial projections"
+                    "context": "Large health system EHR consolidation projects can cost hundreds of millions of dollars \u2014 over $1 billion for the largest \u2014 often exceeding initial projections"
                   },
                   {
                     "value": "3\u20135 years",
@@ -5934,7 +5925,7 @@
                     }
                   ],
                   "correctId": "b",
-                  "explanation": "When a lower-rated hospital joins a higher-rated system, it gains access to the system's investment-grade bonds at lower interest rates\u2014potentially 100\u2013150 basis points savings compared to borrowing as a standalone Baa-rated organization."
+                  "explanation": "When a lower-rated hospital joins a higher-rated system, it gains access to the system's investment-grade bonds at lower interest rates\u2014potentially meaningful interest savings compared to borrowing as a standalone Baa-rated organization."
                 },
                 {
                   "id": "q-hf-governance-002-2",
@@ -5962,7 +5953,7 @@
                 },
                 {
                   "id": "q-hf-governance-002-3",
-                  "text": "What percentage of U.S. hospital beds are now located within multi-hospital systems?",
+                  "text": "What percentage of U.S. hospitals are now part of a larger health system?",
                   "options": [
                     {
                       "id": "a",
@@ -5982,7 +5973,7 @@
                     }
                   ],
                   "correctId": "c",
-                  "explanation": "Over 60% of U.S. hospital beds are now in multi-hospital systems, reflecting decades of consolidation driven by financial pressure, capital needs, and competitive dynamics. This represents a dramatic shift from the mostly independent hospital landscape of the 1990s."
+                  "explanation": "More than two-thirds of U.S. hospitals (69%) are now part of a larger system, up from 56% in 2010 (KFF), reflecting decades of consolidation driven by financial pressure, capital needs, and competitive dynamics."
                 }
               ]
             },
@@ -6010,7 +6001,7 @@
               {
                 "type": "text",
                 "heading": "The Structural Pressures on Hospital Finance",
-                "body": "U.S. hospitals face a convergence of financial headwinds that make historical operating margins increasingly difficult to sustain:\n\n**Payment Rate Pressure:** Medicare rates are set by Congress and updated annually at below-inflation rates (Market Basket minus productivity adjustment). Medicaid rates vary widely but are below cost in many states.\n\n**Labor Cost Inflation:** Post-pandemic labor markets have driven RN and tech wages up 15\u201325%, with heavy dependence on expensive contract/travel labor in some markets. Labor now represents 55\u201365% of expenses at many hospitals.\n\n**Supply Chain Inflation:** Drug and supply costs have risen 5\u201310% annually in recent years, driven by generic drug shortages, global supply chain disruptions, and single-source contracts.\n\n**Disruptive Competition:** Amazon, CVS Health (Aetna), UnitedHealth (Optum), and private equity-backed specialty groups are capturing high-margin ambulatory services, leaving hospitals with a higher proportion of complex, lower-margin inpatient care."
+                "body": "U.S. hospitals face a convergence of financial headwinds that make historical operating margins increasingly difficult to sustain:\n\n**Payment Rate Pressure:** Medicare rates are set by Congress and updated annually at below-inflation rates (Market Basket minus productivity adjustment). Medicaid rates vary widely but are below cost in many states.\n\n**Labor Cost Inflation:** Post-pandemic labor markets have driven RN and tech wages up by double digits, with heavy dependence on expensive contract/travel labor in some markets. Labor now represents 55\u201365% of expenses at many hospitals.\n\n**Supply Chain Inflation:** Drug and supply costs have risen 5\u201310% annually in recent years, driven by generic drug shortages, global supply chain disruptions, and single-source contracts.\n\n**Disruptive Competition:** Amazon, CVS Health (Aetna), UnitedHealth (Optum), and private equity-backed specialty groups are capturing high-margin ambulatory services, leaving hospitals with a higher proportion of complex, lower-margin inpatient care."
               },
               {
                 "type": "callout",
@@ -6057,14 +6048,14 @@
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "~30%",
+                    "value": "~40\u201350%",
                     "label": "Hospitals with negative operating margins (2022\u201323)",
-                    "context": "Following pandemic-related costs and labor inflation, approximately 30% of U.S. hospitals operated at negative margins in 2022\u20132023"
+                    "context": "Following pandemic-related costs and labor inflation, about half of U.S. hospitals ended 2022 with negative operating margins and about 40% were still losing money at the end of 2023 (Kaufman Hall)"
                   },
                   {
-                    "value": "15\u201325%",
+                    "value": "Double-digit",
                     "label": "RN wage inflation post-pandemic",
-                    "content": "Registered nurse wages rose 15\u201325% in many markets post-2020, creating major operating expense pressure"
+                    "content": "Registered nurse wages rose by double digits in many markets post-2020, creating major operating expense pressure"
                   },
                   {
                     "value": "340B",
@@ -6093,7 +6084,7 @@
                     },
                     {
                       "id": "c",
-                      "text": "About 30%"
+                      "text": "About 40–50%"
                     },
                     {
                       "id": "d",
@@ -6101,7 +6092,7 @@
                     }
                   ],
                   "correctId": "c",
-                  "explanation": "Following the pandemic, approximately 30% of U.S. hospitals operated at negative operating margins in 2022\u20132023, driven by labor cost inflation (especially travel nursing premiums), supply chain disruption, and below-inflation Medicare rate updates."
+                  "explanation": "Following the pandemic, about half of U.S. hospitals ended 2022 with negative operating margins and about 40% were still in the red at the end of 2023 (Kaufman Hall), driven by labor cost inflation (especially travel nursing premiums), supply chain disruption, and below-inflation Medicare rate updates."
                 },
                 {
                   "id": "q-hf-governance-003-2",

@@ -25,6 +25,10 @@ for (const id of ids) {
   const body = structuredClone(doc.body); let changed = false; const mine = [];
   for (const op of OPS.filter(o => o.id === id)) {
     const i = body.findIndex(b => b._key === op.key);
+    if (op.removeBlock) { // part 2: delete a whole block (e.g. a dead source line or an empty media placeholder)
+      if (i < 0) { mine.push({ op, ok: true, msg: 'block already removed' }); continue; }
+      body.splice(i, 1); changed = true; mine.push({ op, ok: true, msg: 'block removed' }); continue;
+    }
     if (i < 0) { mine.push({ op, ok: false, msg: 'block key missing' }); continue; }
     const msgs = []; let bad = false;
     for (const [o, n] of op.pairs || []) {
@@ -160,7 +164,7 @@ if (COMMIT) {
   for (const r of results) {
     const fixed = r.ok && (r.changed ? r.verified === true : true);
     append({ doc: `sanity academyModule ${r.doc}`, block_key: r.op.key, claim: r.op.claim || '(see earlier FABRICATED/UNVERIFIABLE line for this block)', verdict: r.op.verdict || 'FABRICATED',
-      action: [...(r.op.pairs || []).filter(p => p[0] && p[1] != null).map(([o, n]) => `replaced ${JSON.stringify(o).slice(0, 250)} -> ${JSON.stringify(n).slice(0, 250)}`),
+      action: [...(r.op.removeBlock ? ['removed block ' + r.op.key] : []), ...(r.op.pairs || []).filter(p => p[0] && p[1] != null).map(([o, n]) => `replaced ${JSON.stringify(o).slice(0, 250)} -> ${JSON.stringify(n).slice(0, 250)}`),
         ...Object.keys(r.op.stats || {}).map(k => `stat ${k} fields set ${JSON.stringify(r.op.stats[k]).slice(0, 300)}`),
         ...Object.keys(r.op.statsByIndex || {}).map(k => `stat index ${k} set ${JSON.stringify(r.op.statsByIndex[k]).slice(0, 300)}`),
         ...(r.op.removeStats || []).map(k => `removed stat ${k}`)].join(' | '),

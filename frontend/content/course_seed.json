@@ -1011,8 +1011,8 @@
               "stats": [
                 {
                   "value": "~50%",
-                  "label": "of HIE records have at least one demographic discrepancy",
-                  "source": "ONC research"
+                  "label": "patient-matching accuracy across organizations that share records (can fall to)",
+                  "source": "STAT News 2022, via Imprivata"
                 },
                 {
                   "value": "100K+",
@@ -1030,11 +1030,6 @@
                   "source": "HHS OCR"
                 }
               ]
-            },
-            {
-              "type": "audio_slot",
-              "label": "Our MPI strategy and patient matching challenges",
-              "hint": "Recommended: Your informatics or data engineering team describes your MPI implementation, match rate, known challenges, and how you handle duplicates. 8–12 minutes."
             }
           ],
           "quiz": {
@@ -1999,11 +1994,6 @@
               "variant": "tip",
               "heading": "Build your pillar map",
               "body": "After completing this course, identify: (1) which pillar is your primary domain, (2) which pillar you feel least confident in, and (3) one person in your organization who is expert in that pillar. Schedule a 30-minute conversation with them in your first month."
-            },
-            {
-              "type": "audio_slot",
-              "label": "Meet our team: roles and career paths at HTR",
-              "hint": "Recommended: Brief audio introductions (2–3 minutes each) from leaders across teams — informatics, analytics, policy, provider relations, compliance. Stitch them together into one 15–20 minute audio track."
             }
           ],
           "quiz": {

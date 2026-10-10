@@ -5255,7 +5255,7 @@
                 "type": "callout",
                 "variant": "warning",
                 "title": "Vermont Context",
-                "body": "Vermont's Act 68 and Blueprint for Health programs explicitly integrate SDOH into care coordination. Community Health Teams (CHTs) screen for food insecurity, housing instability, and transportation barriers, then connect patients to community resources \u2014 a model replicated across value-based care programs nationally."
+                "body": "Vermont's Blueprint for Health integrates SDOH into care coordination. Community Health Teams (CHTs) screen for food insecurity, housing instability, and transportation barriers, then connect patients to community resources \u2014 a model replicated across value-based care programs nationally."
               },
               {
                 "type": "heading",
@@ -5375,7 +5375,7 @@
               },
               {
                 "type": "text",
-                "body": "**HCC (Hierarchical Condition Categories)** \u2014 Used by CMS for Medicare Advantage and ACOs. Assigns condition categories based on ICD-10 diagnoses from the prior year, weighted by cost. HCC scores predict expected annual Medicare spending. A score of 1.0 means average cost; 2.0 means twice average.\n\n**ACG (Adjusted Clinical Groups)** \u2014 Johns Hopkins model that uses diagnoses, age, and sex to group patients into categories based on their overall morbidity burden. ACG is widely used in commercial and Medicaid populations.\n\n**CDPS (Chronic Illness and Disability Payment System)** \u2014 Developed for Medicaid. Groups ICD codes into condition-based categories that predict Medicaid spending. Vermont's VCCI program uses CDPS-based risk scoring to identify the highest-cost 5% of Medicaid members for intensive case management.\n\n**Proprietary machine learning models** \u2014 Many PHM platforms layer in predictive models trained on local data that incorporate claims, clinical data, pharmacy fills, and SDOH to generate composite risk scores."
+                "body": "**HCC (Hierarchical Condition Categories)** \u2014 Used by CMS for Medicare Advantage and ACOs. Assigns condition categories based on ICD-10 diagnoses from the prior year, weighted by cost. HCC scores predict expected annual Medicare spending. A score of 1.0 means average cost; 2.0 means twice average.\n\n**ACG (Adjusted Clinical Groups)** \u2014 Johns Hopkins model that uses diagnoses, age, and sex to group patients into categories based on their overall morbidity burden. ACG is widely used in commercial and Medicaid populations.\n\n**CDPS (Chronic Illness and Disability Payment System)** \u2014 Developed for Medicaid. Groups ICD codes into condition-based categories that predict Medicaid spending. Vermont's Chronic Care Initiative (VCCI) has used predictive analytics to identify the highest-risk, highest-cost 5% of Medicaid members for intensive case management.\n\n**Proprietary machine learning models** \u2014 Many PHM platforms layer in predictive models trained on local data that incorporate claims, clinical data, pharmacy fills, and SDOH to generate composite risk scores."
               },
               {
                 "type": "callout",
@@ -5457,7 +5457,7 @@
               },
               {
                 "type": "text",
-                "body": "**30-day readmission** \u2014 Which patients discharged from the hospital are likely to return within 30 days? CMS's LACE score (Length of stay, Acuity, Comorbidities, ED visits) is a simple validated tool; ML models now incorporate dozens of additional features.\n\n**Avoidable ED visits** \u2014 Which patients with manageable conditions (UTI, asthma exacerbation, CHF decompensation) are likely to visit the ED rather than primary care?\n\n**Medication non-adherence** \u2014 Which patients on critical medications (statins, antihypertensives, diabetes drugs) are likely to discontinue? Pharmacy fill data is the most reliable signal.\n\n**Disease progression** \u2014 Which patients with pre-diabetes are likely to develop Type 2 diabetes within 2 years? Early intervention changes the trajectory.\n\n**New high-cost diagnosis** \u2014 Which currently moderate-risk patients are on a trajectory toward high-cost conditions?"
+                "body": "**30-day readmission** \u2014 Which patients discharged from the hospital are likely to return within 30 days? The LACE index (Length of stay, Acuity, Comorbidities, ED visits; van Walraven et al., CMAJ 2010) is a simple validated tool; ML models now incorporate dozens of additional features.\n\n**Avoidable ED visits** \u2014 Which patients with manageable conditions (UTI, asthma exacerbation, CHF decompensation) are likely to visit the ED rather than primary care?\n\n**Medication non-adherence** \u2014 Which patients on critical medications (statins, antihypertensives, diabetes drugs) are likely to discontinue? Pharmacy fill data is the most reliable signal.\n\n**Disease progression** \u2014 Which patients with pre-diabetes are likely to develop Type 2 diabetes within 2 years? Early intervention changes the trajectory.\n\n**New high-cost diagnosis** \u2014 Which currently moderate-risk patients are on a trajectory toward high-cost conditions?"
               },
               {
                 "type": "heading",
@@ -5511,7 +5511,7 @@
               },
               {
                 "type": "text",
-                "body": "HEDIS (Healthcare Effectiveness Data and Information Set), maintained by NCQA, is the dominant quality measurement framework in the U.S. Over 90% of health plans report HEDIS measures. Key population health HEDIS measures include:\n\n- **Controlling High Blood Pressure** \u2014 % of hypertensive patients with BP < 140/90\n- **Comprehensive Diabetes Care** \u2014 A1C testing, nephropathy screening, retinal exam, BP control\n- **Colorectal Cancer Screening** \u2014 colonoscopy, FIT, stool DNA for ages 45\u201375\n- **Breast Cancer Screening** \u2014 mammography for women 50\u201374\n- **Well-Child Visits** \u2014 pediatric preventive care rates\n- **Follow-Up After Hospitalization for Mental Illness** \u2014 7- and 30-day follow-up rates"
+                "body": "HEDIS (Healthcare Effectiveness Data and Information Set), maintained by NCQA, is the dominant quality measurement framework in the U.S. Over 90% of health plans report HEDIS measures. Key population health HEDIS measures include:\n\n- **Controlling High Blood Pressure** \u2014 % of hypertensive patients with BP < 140/90\n- **Diabetes care measures** \u2014 HbA1c control, eye exam, BP control, kidney health evaluation (split out of the former Comprehensive Diabetes Care bundle in MY2022)\n- **Colorectal Cancer Screening** \u2014 colonoscopy, FIT, stool DNA for ages 45\u201375\n- **Breast Cancer Screening** \u2014 mammography for women 40\u201374 (expanded from 50\u201374 for MY2025)\n- **Well-Child Visits** \u2014 pediatric preventive care rates\n- **Follow-Up After Hospitalization for Mental Illness** \u2014 7- and 30-day follow-up rates"
               },
               {
                 "type": "heading",
@@ -5520,7 +5520,7 @@
               },
               {
                 "type": "text",
-                "body": "**Patient outreach.** Automated phone calls, SMS, and patient portal messages for due screenings. Digital-first outreach achieves 15\u201330% response rates at low cost.\n\n**Point-of-care reminders.** EHR alerts prompt clinicians when eligible patients are due for services during encounters \u2014 \"Mrs. Smith is due for colorectal cancer screening.\"\n\n**Opportunistic care.** Closing multiple gaps during a single visit \u2014 a patient coming in for a follow-up can get an influenza vaccine and depression screening at the same time.\n\n**Community health workers.** CHWs can conduct in-home screenings, accompany patients to appointments, and address barriers to care like transportation or cost.\n\n**Panel management.** Dedicated staff (care coordinators, panel managers) work the care gap list proactively \u2014 reaching out to patients before they experience a health event."
+                "body": "**Patient outreach.** Automated phone calls, SMS, and patient portal messages for due screenings.\n\n**Point-of-care reminders.** EHR alerts prompt clinicians when eligible patients are due for services during encounters \u2014 \"Mrs. Smith is due for colorectal cancer screening.\"\n\n**Opportunistic care.** Closing multiple gaps during a single visit \u2014 a patient coming in for a follow-up can get an influenza vaccine and depression screening at the same time.\n\n**Community health workers.** CHWs can conduct in-home screenings, accompany patients to appointments, and address barriers to care like transportation or cost.\n\n**Panel management.** Dedicated staff (care coordinators, panel managers) work the care gap list proactively \u2014 reaching out to patients before they experience a health event."
               }
             ],
             "quiz": null
@@ -5559,7 +5559,7 @@
             "contentBlocks": [
               {
                 "type": "text",
-                "body": "Diabetes affects 38 million Americans and costs the healthcare system $413 billion annually (2022 ADA estimate). A single poorly controlled diabetic patient can generate $30,000\u2013$50,000 in annual costs from complications \u2014 renal disease, amputation, cardiovascular events, and vision loss. Population health programs that keep diabetic patients controlled prevent these catastrophic \u2014 and expensive \u2014 endpoints."
+                "body": "Diabetes affects 38 million Americans and costs the healthcare system $413 billion annually (2022 ADA estimate). Poorly controlled diabetes drives costly complications \u2014 renal disease, amputation, cardiovascular events, and vision loss. Population health programs that keep diabetic patients controlled prevent these catastrophic \u2014 and expensive \u2014 endpoints."
               },
               {
                 "type": "heading",
@@ -5568,16 +5568,16 @@
               },
               {
                 "type": "text",
-                "body": "The foundation of population diabetes management is a **diabetes registry** \u2014 a list of all patients with a diabetes diagnosis, their current clinical status, and outstanding care gaps. Registries enable panel managers to:\n\n- Identify patients with A1C > 9% for intensified outreach\n- Track patients overdue for nephropathy screening or retinal exams\n- Monitor BP and LDL control across the diabetic panel\n- Generate reports for value-based contract performance"
+                "body": "The foundation of population diabetes management is a **diabetes registry** \u2014 a list of all patients with a diabetes diagnosis, their current clinical status, and outstanding care gaps. Registries enable panel managers to:\n\n- Identify patients with A1C > 9% for intensified outreach\n- Track patients overdue for kidney health evaluation or retinal exams\n- Monitor BP and LDL control across the diabetic panel\n- Generate reports for value-based contract performance"
               },
               {
                 "type": "heading",
                 "level": 2,
-                "text": "HEDIS Comprehensive Diabetes Care (CDC)"
+                "text": "HEDIS Diabetes Measures"
               },
               {
                 "type": "text",
-                "body": "The CDC HEDIS measure tracks seven components for diabetic members aged 18\u201375:\n\n1. A1C testing (annually)\n2. A1C poor control > 9% (lower is better)\n3. A1C control < 8%\n4. Blood pressure control < 140/90\n5. Nephropathy screening\n6. Retinal eye exam\n7. Statin therapy"
+                "body": "Since MY2022, NCQA reports diabetes care for members aged 18\u201375 as separate measures (they were formerly bundled as Comprehensive Diabetes Care):\n\n1. Glycemic status poor control > 9% (lower is better)\n2. Glycemic status control < 8%\n3. Blood pressure control < 140/90\n4. Eye exam (retinal)\n5. Kidney health evaluation (eGFR plus uACR)\n\nStatin therapy is tracked in a separate HEDIS measure (Statin Therapy for Patients With Diabetes)."
               },
               {
                 "type": "heading",
@@ -5586,7 +5586,7 @@
               },
               {
                 "type": "text",
-                "body": "Evidence shows that diabetes self-management education (DSME) reduces A1C by 0.5\u20131.0%, hospitalizations by 20%, and costs. Digital tools amplify this:\n\n**Continuous glucose monitors (CGMs)** \u2014 Dexterity, Libre, and similar devices provide real-time glucose data to patients and, via connected apps, to care teams. CGM use is now covered for most Type 2 diabetic patients on insulin.\n\n**Digital therapeutics** \u2014 Apps like Omada, Noom, and Livongo's Diabetes Management Program provide behavior coaching, tracking, and care manager integration. Studies show 1\u20132% A1C reduction in engaged users.\n\n**Medication adherence tools** \u2014 Pill dispensers, pharmacy blister packs, and refill reminders address the 30\u201350% non-adherence rate that is the leading cause of poor glycemic control."
+                "body": "Evidence shows that diabetes self-management education and support (DSMES) lowers A1C and can reduce costs. Digital tools amplify this:\n\n**Continuous glucose monitors (CGMs)** \u2014 Dexcom, FreeStyle Libre, and similar devices provide real-time glucose data to patients and, via connected apps, to care teams. CGM use is now covered for most Type 2 diabetic patients on insulin.\n\n**Digital therapeutics** \u2014 Apps like Omada, Noom, and Livongo's Diabetes Management Program provide behavior coaching, tracking, and care manager integration.\n\n**Medication adherence tools** \u2014 Pill dispensers, pharmacy blister packs, and refill reminders address medication non-adherence, a major contributor to poor glycemic control."
               }
             ],
             "quiz": null
@@ -5616,7 +5616,7 @@
             "contentBlocks": [
               {
                 "type": "text",
-                "body": "Heart failure (HF) affects 6.5 million Americans and is the #1 cause of hospitalization for adults over 65. The 30-day readmission rate for HF is approximately 25% \u2014 the highest of any major diagnosis. CMS penalizes hospitals with excess HF readmissions under the Hospital Readmissions Reduction Program (HRRP), creating strong financial incentives for population management programs."
+                "body": "Heart failure (HF) affects 6.5 million Americans and is the #1 cause of hospitalization for adults over 65. The 30-day readmission rate for HF is roughly one in four. CMS penalizes hospitals with excess HF readmissions under the Hospital Readmissions Reduction Program (HRRP), creating strong financial incentives for population management programs."
               },
               {
                 "type": "heading",
@@ -5625,7 +5625,7 @@
               },
               {
                 "type": "text",
-                "body": "The highest-risk period for HF patients is the 7\u201330 days following hospital discharge. Transition programs target this window:\n\n**Post-discharge phone call within 48 hours.** Nurses confirm medication reconciliation, review weight monitoring instructions (daily weight gain > 2 lbs = call your provider), and verify PCP follow-up scheduled.\n\n**7-day follow-up visit.** Studies show that 7-day PCP or cardiology follow-up reduces 30-day readmissions by 15\u201320%. Care managers proactively schedule these appointments before discharge.\n\n**Remote monitoring.** Daily weight, blood pressure, and symptom monitoring via connected devices, with automated alerts to care teams when thresholds are crossed.\n\n**Medication reconciliation.** Up to 40% of HF readmissions involve medication errors or non-adherence. Pharmacist-led medication reconciliation at discharge is a high-impact intervention."
+                "body": "The highest-risk period for HF patients is the 7\u201330 days following hospital discharge. Transition programs target this window:\n\n**Post-discharge phone call within 48 hours.** Nurses confirm medication reconciliation, review weight monitoring instructions (daily weight gain > 2 lbs = call your provider), and verify PCP follow-up scheduled.\n\n**7-day follow-up visit.** Early PCP or cardiology follow-up after discharge is associated with lower 30-day readmission (Hernandez et al., JAMA 2010). Care managers proactively schedule these appointments before discharge.\n\n**Remote monitoring.** Daily weight, blood pressure, and symptom monitoring via connected devices, with automated alerts to care teams when thresholds are crossed.\n\n**Medication reconciliation.** Medication errors and non-adherence are common contributors to HF readmissions. Pharmacist-led medication reconciliation at discharge is a high-impact intervention."
               },
               {
                 "type": "heading",
@@ -5634,7 +5634,7 @@
               },
               {
                 "type": "text",
-                "body": "Controlling blood pressure in a population requires more than prescriptions:\n\n**Self-measured blood pressure (SMBP).** Providing patients with home BP monitors and coaching on self-monitoring doubles BP control rates compared to office-only monitoring (CDC evidence review).\n\n**Team-based care.** Pharmacist-led hypertension management \u2014 where clinical pharmacists adjust medications per protocol \u2014 consistently outperforms physician-only management for BP control.\n\n**Addressing therapeutic inertia.** Many patients have documented hypertension but never receive intensified therapy despite persistently elevated BP. Registries and panel management close this gap.\n\n**Community hypertension programs.** Barbershop BP screening (Black Barbershop Health Outreach Program), faith community nurse programs, and pharmacy-based BP checks extend reach into underserved communities."
+                "body": "Controlling blood pressure in a population requires more than prescriptions:\n\n**Self-measured blood pressure (SMBP).** Providing patients with home BP monitors and coaching on self-monitoring improves BP control compared to office-only monitoring, especially when combined with clinical support (Community Preventive Services Task Force).\n\n**Team-based care.** Pharmacist-led hypertension management \u2014 where clinical pharmacists adjust medications per protocol \u2014 consistently outperforms physician-only management for BP control.\n\n**Addressing therapeutic inertia.** Many patients have documented hypertension but never receive intensified therapy despite persistently elevated BP. Registries and panel management close this gap.\n\n**Community hypertension programs.** Barbershop BP screening (Black Barbershop Health Outreach Program), faith community nurse programs, and pharmacy-based BP checks extend reach into underserved communities."
               }
             ],
             "quiz": {
@@ -5692,7 +5692,7 @@
             "contentBlocks": [
               {
                 "type": "text",
-                "body": "People with depression have 2\u20133 times the medical costs of people without depression \u2014 even after adjusting for comorbidities. Diabetes patients with comorbid depression have A1C control rates 50% worse than those without depression. Integrating behavioral health into population programs is one of the highest-ROI interventions in healthcare."
+                "body": "People with depression have substantially higher medical costs than people without it, and comorbid depression makes chronic conditions such as diabetes harder to control. Integrating behavioral health into population programs addresses both."
               },
               {
                 "type": "heading",
@@ -5701,7 +5701,7 @@
               },
               {
                 "type": "text",
-                "body": "The Collaborative Care Model is the most extensively studied approach to primary care\u2013behavioral health integration. It has three core components:\n\n1. **Behavioral health care manager** \u2014 typically a social worker or nurse embedded in primary care who provides brief evidence-based interventions (CBT, motivational interviewing), tracks patient progress, and coordinates with the psychiatrist\n2. **Treating physician (PCP)** \u2014 prescribes psychiatric medications, supported by the care manager\n3. **Psychiatric consultant** \u2014 reviews the care manager's caseload, provides consultation on complex cases, and recommends medication adjustments\n\nCoCM has 79 randomized controlled trials behind it. On average, it reduces depression symptoms by 40\u201350% more than usual care and improves diabetes and cardiovascular outcomes in comorbid patients."
+                "body": "The Collaborative Care Model is the most extensively studied approach to primary care\u2013behavioral health integration. It has three core components:\n\n1. **Behavioral health care manager** \u2014 typically a social worker or nurse embedded in primary care who provides brief evidence-based interventions (CBT, motivational interviewing), tracks patient progress, and coordinates with the psychiatrist\n2. **Treating physician (PCP)** \u2014 prescribes psychiatric medications, supported by the care manager\n3. **Psychiatric consultant** \u2014 reviews the care manager's caseload, provides consultation on complex cases, and recommends medication adjustments\n\nMore than 90 randomized controlled trials support CoCM (UW AIMS Center; the 2012 Cochrane review pooled 79), showing it is more effective than usual care for depression and anxiety, with benefits for comorbid diabetes and heart disease in trials such as TEAMcare."
               },
               {
                 "type": "heading",
@@ -5966,7 +5966,7 @@
               },
               {
                 "type": "text",
-                "body": "For a typical Medicare population, spending breaks down approximately as:\n\n- **Inpatient** \u2014 30\u201335% of total spending (hospitalizations, surgical procedures)\n- **Physician/outpatient** \u2014 25\u201330% (office visits, outpatient procedures)\n- **Post-acute care** \u2014 15\u201320% (skilled nursing facilities, home health, inpatient rehab)\n- **Pharmacy** \u2014 10\u201315%\n- **ED** \u2014 5\u20138%\n- **Other** (DME, lab, imaging) \u2014 5\u201310%\n\nThe highest-leverage areas for population health intervention are **inpatient admissions** (reduce preventable hospitalizations), **post-acute care** (right-size SNF use, extend home health), and **ED utilization** (redirect avoidable visits to primary care)."
+                "body": "For a typical Medicare population, spending falls into these main categories:\n\n- **Inpatient** (hospitalizations, surgical procedures)\n- **Physician/outpatient** (office visits, outpatient procedures)\n- **Post-acute care** (skilled nursing facilities, home health, inpatient rehab)\n- **Pharmacy**\n- **ED**\n- **Other** (DME, lab, imaging)\n\nThe highest-leverage areas for population health intervention are **inpatient admissions** (reduce preventable hospitalizations), **post-acute care** (right-size SNF use, extend home health), and **ED utilization** (redirect avoidable visits to primary care)."
               },
               {
                 "type": "heading",
@@ -5975,7 +5975,7 @@
               },
               {
                 "type": "text",
-                "body": "Not all spending is created equal. **High-value care** delivers meaningful health benefits relative to its cost \u2014 appropriate cancer screenings, evidence-based chronic disease management, effective surgical interventions.\n\n**Low-value care** delivers marginal or no benefit, and in some cases causes harm. The Choosing Wisely campaign identifies hundreds of low-value services across specialties \u2014 routine pre-operative testing before low-risk procedures, imaging for uncomplicated low back pain, antibiotics for viral upper respiratory infections.\n\nEstimates suggest 25\u201330% of U.S. healthcare spending is low-value or waste. Population health programs that monitor ordering patterns and provide clinical decision support can reduce low-value care without compromising outcomes."
+                "body": "Not all spending is created equal. **High-value care** delivers meaningful health benefits relative to its cost \u2014 appropriate cancer screenings, evidence-based chronic disease management, effective surgical interventions.\n\n**Low-value care** delivers marginal or no benefit, and in some cases causes harm. The Choosing Wisely campaign identifies hundreds of low-value services across specialties \u2014 routine pre-operative testing before low-risk procedures, imaging for uncomplicated low back pain, antibiotics for viral upper respiratory infections.\n\nShrank et al. (JAMA, 2019) estimated that roughly 25% of U.S. health care spending \u2014 $760\u2013935 billion a year \u2014 is waste. Population health programs that monitor ordering patterns and provide clinical decision support can reduce low-value care without compromising outcomes."
               },
               {
                 "type": "callout",
@@ -6029,7 +6029,7 @@
               },
               {
                 "type": "text",
-                "body": "**REAL+D** refers to Race, Ethnicity, And Language + Disability data \u2014 the core demographic dimensions used for equity stratification. Challenges include:\n\n**Collection gaps.** Many EHRs have incomplete race/ethnicity data because providers haven't consistently collected it. Studies show 30\u201360% of records have missing or 'unknown' race/ethnicity.\n\n**Granularity.** 'Asian' encompasses dozens of distinct ethnic groups with very different health profiles. Aggregate categories obscure disparities within groups.\n\n**Self-identification vs. observation.** Best practice is self-reported data, but many systems still rely on observer-assigned race.\n\nImproving REAL+D data quality requires workflow changes at registration, staff training, and patient communication about why data is collected."
+                "body": "**REAL+D** refers to Race, Ethnicity, And Language + Disability data \u2014 the core demographic dimensions used for equity stratification. Challenges include:\n\n**Collection gaps.** Many EHRs have incomplete race/ethnicity data because providers haven't consistently collected it. In many systems a large share of records have missing or 'unknown' race/ethnicity.\n\n**Granularity.** 'Asian' encompasses dozens of distinct ethnic groups with very different health profiles. Aggregate categories obscure disparities within groups.\n\n**Self-identification vs. observation.** Best practice is self-reported data, but many systems still rely on observer-assigned race.\n\nImproving REAL+D data quality requires workflow changes at registration, staff training, and patient communication about why data is collected."
               },
               {
                 "type": "heading",
@@ -6038,7 +6038,7 @@
               },
               {
                 "type": "text",
-                "body": "NCQA launched **Health Equity Accreditation** in 2021, requiring health plans to stratify HEDIS measures by race and ethnicity and develop equity improvement plans targeting identified disparities. CMS is moving in the same direction, requiring Medicare Advantage plans to submit stratified HEDIS data.\n\nCMS's **Star Ratings** equity adjustments are designed so that plans serving diverse populations aren't penalized \u2014 but the long-term goal is holding all plans accountable for closing the gaps."
+                "body": "NCQA launched **Health Equity Accreditation** in 2021, and since measurement year 2022 it has been adding race and ethnicity stratification to a growing set of HEDIS measures so plans can identify disparities and target improvement.\n\nCMS's **Star Ratings** use a Categorical Adjustment Index so that plans serving more low-income, dual-eligible, and disabled members aren't penalized for their enrollment mix \u2014 but the long-term goal is holding all plans accountable for closing the gaps."
               },
               {
                 "type": "heading",
@@ -6086,7 +6086,7 @@
               },
               {
                 "type": "text",
-                "body": "A 2015 Cochrane Review of CHW programs for disadvantaged populations found consistent positive effects on outcomes for cardiovascular disease, diabetes, malaria, tuberculosis, and child health. In U.S. studies:\n\n- CHW programs for diabetes management reduce A1C by 0.5\u20131.0% in underserved populations\n- CHW-based transition programs reduce 30-day readmissions by 20\u201330% in high-risk populations\n- CHW SDOH navigation programs reduce ED utilization by 15\u201325% in frequent-user populations\n\nThe Camden Coalition's 'hot-spotter' model \u2014 intensive CHW engagement for the highest-cost patients \u2014 generated early enthusiasm, though subsequent RCT findings were more nuanced, highlighting the importance of CHW program design."
+                "body": "Systematic reviews of lay and community health worker programs report benefits across conditions including cardiovascular disease, diabetes, and child health. In U.S. randomized trials, Penn's IMPaCT program cut hospital stays by 65% and doubled patient satisfaction with primary care in a multi-center trial, and returned $2.47 per Medicaid dollar (Health Affairs, 2020).\n\nThe Camden Coalition's 'hot-spotter' model \u2014 intensive CHW engagement for the highest-cost patients \u2014 generated early enthusiasm, but a 2020 randomized trial (Finkelstein et al., NEJM) found it did not reduce hospital readmissions, highlighting the importance of program design and rigorous evaluation."
               },
               {
                 "type": "heading",
@@ -6095,7 +6095,7 @@
               },
               {
                 "type": "text",
-                "body": "CHW programs have historically struggled with sustainability because fee-for-service payment doesn't cover their services. Emerging payment mechanisms include:\n\n**Medicaid CHW benefits.** More than 30 states have added CHW services as a Medicaid benefit. Vermont's Medicaid program funds CHWs through the Blueprint for Health and VCCI.\n\n**CMS Innovation Center models.** Several CMMI models explicitly fund CHW services \u2014 the Accountable Health Communities model funded HRSN screening and referral, with CHWs as navigators.\n\n**ACO and VBC inclusion.** ACOs and global budget programs fund CHWs from their care management budgets when CHW-driven cost savings offset the investment.\n\n**FQHC billing.** Federally Qualified Health Centers can bill for CHW services under certain state plans."
+                "body": "CHW programs have historically struggled with sustainability because fee-for-service payment doesn't cover their services. Emerging payment mechanisms include:\n\n**Medicaid CHW benefits.** As of January 2024, just over half of state Medicaid programs covered CHW services, and the number continues to grow (Milbank Memorial Fund).\n\n**CMS Innovation Center models.** Several CMMI models explicitly fund CHW services \u2014 the Accountable Health Communities model funded HRSN screening and referral, with CHWs as navigators.\n\n**ACO and VBC inclusion.** ACOs and global budget programs fund CHWs from their care management budgets when CHW-driven cost savings offset the investment.\n\n**FQHC billing.** Federally Qualified Health Centers can bill for CHW services under certain state plans."
               }
             ],
             "quiz": null
@@ -6470,7 +6470,7 @@
               },
               {
                 "type": "text",
-                "body": "**Medigap** (Medicare Supplement) policies are standardized supplemental insurance plans sold by private insurers that fill Traditional Medicare's cost-sharing gaps. Ten standardized plans (A through N) are offered. The most popular plans (G and N) cover the Part B deductible and most coinsurance, effectively giving beneficiaries near-comprehensive coverage with a predictable premium.\n\nApproximately 23% of traditional Medicare beneficiaries have Medigap coverage. Medigap is not compatible with Medicare Advantage \u2014 beneficiaries must choose one model or the other."
+                "body": "**Medigap** (Medicare Supplement) policies are standardized supplemental insurance plans sold by private insurers that fill Traditional Medicare's cost-sharing gaps. Ten standardized plans (A through N) are offered. The most popular plans (G and N) cover the Part B deductible and most coinsurance, effectively giving beneficiaries near-comprehensive coverage with a predictable premium.\n\nAbout 43% of traditional Medicare beneficiaries (12.2 million) had Medigap coverage in 2023. Medigap is not compatible with Medicare Advantage \u2014 beneficiaries must choose one model or the other."
               }
             ],
             "quiz": null
@@ -6509,7 +6509,7 @@
             "contentBlocks": [
               {
                 "type": "text",
-                "body": "Before 1983, Medicare paid hospitals on a retrospective, cost-based system \u2014 whatever it cost to care for a patient, Medicare reimbursed it (with limits). This created perverse incentives: hospitals had no reason to be efficient, and longer stays meant more revenue. Medicare spending grew at 17% annually in the early 1980s, threatening the program's solvency."
+                "body": "Before 1983, Medicare paid hospitals on a retrospective, cost-based system \u2014 whatever it cost to care for a patient, Medicare reimbursed it (with limits). This created perverse incentives: hospitals had no reason to be efficient, and longer stays meant more revenue. By the early 1980s, rapid growth in Medicare hospital spending was threatening the program's solvency."
               },
               {
                 "type": "heading",
@@ -6533,7 +6533,7 @@
                 "type": "callout",
                 "variant": "info",
                 "title": "Clinical Documentation Integrity (CDI)",
-                "body": "Hospitals employ clinical documentation integrity specialists to review records and query physicians when documentation doesn't capture the full complexity of a patient's condition. Under-documented cases may fall into lower MS-DRG tiers, costing hospitals significant revenue. CDI programs typically generate $2\u20135 in revenue for every $1 invested."
+                "body": "Hospitals employ clinical documentation integrity specialists to review records and query physicians when documentation doesn't capture the full complexity of a patient's condition. Under-documented cases may fall into lower MS-DRG tiers, costing hospitals significant revenue."
               }
             ],
             "quiz": {
@@ -6600,7 +6600,7 @@
               },
               {
                 "type": "text",
-                "body": "The **Resource-Based Relative Value Scale (RBRVS)** assigns each physician service a number of **Relative Value Units (RVUs)** based on:\n\n1. **Physician work RVUs** \u2014 time, skill, intensity, and mental effort required\n2. **Practice expense RVUs** \u2014 overhead costs (staff, equipment, supplies)\n3. **Malpractice RVUs** \u2014 professional liability insurance costs\n\nAll three components are adjusted for **geographic practice cost indices (GPCI)** that reflect local cost-of-living and market differences.\n\n**Medicare Payment = (Work RVU \u00d7 Work GPCI + PE RVU \u00d7 PE GPCI + MP RVU \u00d7 MP GPCI) \u00d7 Conversion Factor**\n\nThe **Conversion Factor (CF)** is set by CMS annually and translates RVUs into dollars. In 2024, the CF is approximately $32.74 per RVU."
+                "body": "The **Resource-Based Relative Value Scale (RBRVS)** assigns each physician service a number of **Relative Value Units (RVUs)** based on:\n\n1. **Physician work RVUs** \u2014 time, skill, intensity, and mental effort required\n2. **Practice expense RVUs** \u2014 overhead costs (staff, equipment, supplies)\n3. **Malpractice RVUs** \u2014 professional liability insurance costs\n\nAll three components are adjusted for **geographic practice cost indices (GPCI)** that reflect local cost-of-living and market differences.\n\n**Medicare Payment = (Work RVU \u00d7 Work GPCI + PE RVU \u00d7 PE GPCI + MP RVU \u00d7 MP GPCI) \u00d7 Conversion Factor**\n\nThe **Conversion Factor (CF)** is set by CMS annually and translates RVUs into dollars. The 2024 CF was $33.29 per RVU (after a March 2024 congressional adjustment to the initial $32.74); for 2025 it is $32.35."
               },
               {
                 "type": "heading",
@@ -6609,7 +6609,7 @@
               },
               {
                 "type": "text",
-                "body": "A systemic critique of RBRVS is that it undervalues primary care. Procedure-based services \u2014 colonoscopies, surgeries, imaging \u2014 generate more RVUs per hour of physician time than evaluation and management (E&M) services like office visits. A cardiologist performing a procedure earns 5\u201310x the hourly rate of a primary care physician.\n\nThe result: severe primary care shortages in the U.S. while procedure-based specialties are adequately or over-supplied in many markets. Various payment reform efforts \u2014 value-based payment, chronic care management codes, advanced primary care add-ons \u2014 have tried to address this imbalance."
+                "body": "A systemic critique of RBRVS is that it undervalues primary care. Procedure-based services \u2014 colonoscopies, surgeries, imaging \u2014 generate more RVUs per hour of physician time than evaluation and management (E&M) services like office visits.\n\nThe result: severe primary care shortages in the U.S. while procedure-based specialties are adequately or over-supplied in many markets. Various payment reform efforts \u2014 value-based payment, chronic care management codes, advanced primary care add-ons \u2014 have tried to address this imbalance."
               },
               {
                 "type": "heading",
@@ -6618,7 +6618,7 @@
               },
               {
                 "type": "text",
-                "body": "The **Medicare Access and CHIP Reauthorization Act (MACRA)** of 2015 replaced the Sustainable Growth Rate (SGR) formula \u2014 which threatened deep physician payment cuts annually \u2014 with a new framework: the **Quality Payment Program (QPP)**.\n\nQPP offers two tracks:\n\n**MIPS (Merit-Based Incentive Payment System)** \u2014 traditional Medicare billing with performance-based adjustments. Physicians score on quality, cost, improvement activities, and promoting interoperability. High scorers receive bonuses; low scorers receive reductions.\n\n**APM (Advanced Alternative Payment Model) track** \u2014 physicians who participate substantially in CMS-approved alternative payment models (ACOs with risk, bundled payments, PCMHs) receive a 5% bonus and exemption from MIPS."
+                "body": "The **Medicare Access and CHIP Reauthorization Act (MACRA)** of 2015 replaced the Sustainable Growth Rate (SGR) formula \u2014 which threatened deep physician payment cuts annually \u2014 with a new framework: the **Quality Payment Program (QPP)**.\n\nQPP offers two tracks:\n\n**MIPS (Merit-Based Incentive Payment System)** \u2014 traditional Medicare billing with performance-based adjustments. Physicians score on quality, cost, improvement activities, and promoting interoperability. High scorers receive bonuses; low scorers receive reductions.\n\n**APM (Advanced Alternative Payment Model) track** \u2014 physicians who participate substantially in CMS-approved alternative payment models (ACOs with risk, bundled payments, PCMHs) receive a lump-sum incentive payment (5% for payment years 2019\u20132024, 3.5% for 2025 and 1.88% for 2026) and exemption from MIPS."
               }
             ],
             "quiz": null
@@ -6732,7 +6732,7 @@
               },
               {
                 "type": "text",
-                "body": "Risk adjustment creates strong incentives for plans to identify and document all diagnoses \u2014 a practice called 'risk adjustment optimization' or, more critically, 'upcoding.' When plans conduct chart reviews and in-home health assessments specifically to find diagnoses that increase HCC scores (without necessarily treating those conditions), critics argue this inflates federal payments without improving care.\n\nCMS has implemented enhanced auditing and is developing new approaches (VBID, targeted probe-and-educate) to address risk score accuracy. Congressional scrutiny of MA overpayments \u2014 estimated at $88 billion over 10 years by MedPAC \u2014 continues."
+                "body": "Risk adjustment creates strong incentives for plans to identify and document all diagnoses \u2014 a practice called 'risk adjustment optimization' or, more critically, 'upcoding.' When plans conduct chart reviews and in-home health assessments specifically to find diagnoses that increase HCC scores (without necessarily treating those conditions), critics argue this inflates federal payments without improving care.\n\nCMS has expanded Risk Adjustment Data Validation (RADV) audits and is phasing in a revised risk model (V28, 2024\u20132026) to address risk score accuracy. Congressional scrutiny of MA overpayments \u2014 estimated by MedPAC at $83 billion in 2024 alone \u2014 continues."
               },
               {
                 "type": "heading",
@@ -6741,7 +6741,7 @@
               },
               {
                 "type": "text",
-                "body": "CMS's **Star Rating system** rates MA plans from 1 to 5 stars on quality and performance measures across five domains:\n\n1. Staying healthy (preventive screenings, vaccines)\n2. Managing chronic conditions (diabetes, hypertension, medication adherence)\n3. Member experience (CAHPS surveys)\n4. Member complaints and changes (appeals, grievances, enrollment stability)\n5. Health plan administration\n\nPlans with 4+ stars receive a **quality bonus** \u2014 up to 5% additional payment \u2014 and qualify for enhanced marketing opportunities. The Star Rating system is a powerful quality lever and a key differentiator in the MA market."
+                "body": "CMS's **Star Rating system** rates MA plans from 1 to 5 stars on quality and performance measures across five domains:\n\n1. Staying healthy (preventive screenings, vaccines)\n2. Managing chronic conditions (diabetes, hypertension, medication adherence)\n3. Member experience (CAHPS surveys)\n4. Member complaints and changes (appeals, grievances, enrollment stability)\n5. Health plan customer service\n\nPlans with 4+ stars receive a **quality bonus** \u2014 up to 5% additional payment \u2014 and qualify for enhanced marketing opportunities. The Star Rating system is a powerful quality lever and a key differentiator in the MA market."
               }
             ],
             "quiz": {
@@ -6817,7 +6817,7 @@
               },
               {
                 "type": "text",
-                "body": "Dual eligible beneficiaries are among the highest-need, highest-cost people in the healthcare system \u2014 15% of Medicaid enrollees account for 34% of Medicaid spending. They have on average 7 chronic conditions, high rates of behavioral health and SDOH needs, and historically fragmented care across Medicare and Medicaid silos.\n\n**Fully Integrated Dual Eligible SNPs (FIDE SNPs)** hold Medicare and Medicaid risk under a single contract \u2014 truly integrating benefits. These plans have the financial alignment to invest in care management that reduces costs across both payers.\n\n**Highly Integrated Dual Eligible SNPs (HIDE SNPs)** have a lower level of integration \u2014 they coordinate benefits but may not hold both payer risks.\n\nCMS is pushing toward greater integration through the **Medicare-Medicaid Integration Program** and state-based agreements, recognizing that integrated financing is essential for improving care for dually eligible beneficiaries."
+                "body": "Dual eligible beneficiaries are among the highest-need, highest-cost people in the healthcare system and account for a disproportionate share of Medicaid spending relative to their enrollment. They have high rates of multiple chronic conditions, behavioral health and SDOH needs, and historically fragmented care across Medicare and Medicaid silos.\n\n**Fully Integrated Dual Eligible SNPs (FIDE SNPs)** hold Medicare and Medicaid risk under a single contract \u2014 truly integrating benefits. These plans have the financial alignment to invest in care management that reduces costs across both payers.\n\n**Highly Integrated Dual Eligible SNPs (HIDE SNPs)** have a lower level of integration \u2014 they coordinate benefits but may not hold both payer risks.\n\nCMS (through its Medicare-Medicaid Coordination Office) is pushing toward greater integration through D-SNP integration rules and state Medicaid agency contracts, recognizing that integrated financing is essential for improving care for dually eligible beneficiaries."
               }
             ],
             "quiz": null
@@ -6865,7 +6865,7 @@
               },
               {
                 "type": "text",
-                "body": "VBP withholds 2% of all DRG payments and redistributes them based on hospital quality scores across four domains:\n\n1. **Clinical outcomes** \u2014 mortality rates for AMI, HF, pneumonia, COPD, CABG; PSI-90 (patient safety composite)\n2. **Safety** \u2014 healthcare-associated infections (CLABSI, CAUTI, MRSA, CDI)\n3. **Person and Community Engagement** \u2014 HCAHPS patient experience survey scores\n4. **Efficiency and Cost Reduction** \u2014 Medicare spending per beneficiary\n\nHospitals that score above average receive bonuses; those below average receive net reductions. Budget-neutral design means total dollars redistributed equal total dollars withheld."
+                "body": "VBP withholds 2% of all DRG payments and redistributes them based on hospital quality scores across four domains:\n\n1. **Clinical outcomes** \u2014 mortality rates for AMI, HF, pneumonia, COPD, CABG; complications after elective hip/knee replacement\n2. **Safety** \u2014 healthcare-associated infections (CLABSI, CAUTI, MRSA, CDI)\n3. **Person and Community Engagement** \u2014 HCAHPS patient experience survey scores\n4. **Efficiency and Cost Reduction** \u2014 Medicare spending per beneficiary\n\nHospitals that score above average receive bonuses; those below average receive net reductions. Budget-neutral design means total dollars redistributed equal total dollars withheld."
               },
               {
                 "type": "heading",
@@ -6874,7 +6874,7 @@
               },
               {
                 "type": "text",
-                "body": "HRRP penalizes hospitals with excess 30-day readmission rates for six conditions: **AMI, HF, pneumonia, COPD, hip/knee replacement, and CABG.** Maximum penalty is 3% of all Medicare DRG payments \u2014 a significant financial exposure for high-readmission hospitals.\n\nHRRP has been controversial. Critics argue it has worsened patient outcomes in some cases (patients diverted from admission when they needed hospitalization) and disproportionately penalizes safety-net hospitals that serve higher-risk, sicker populations. A 2022 adjustment stratifies hospitals by the proportion of dual-eligible patients they serve, partially addressing the equity critique."
+                "body": "HRRP penalizes hospitals with excess 30-day readmission rates for six conditions: **AMI, HF, pneumonia, COPD, hip/knee replacement, and CABG.** Maximum penalty is 3% of all Medicare DRG payments \u2014 a significant financial exposure for high-readmission hospitals.\n\nHRRP has been controversial. Critics argue it has worsened patient outcomes in some cases (patients diverted from admission when they needed hospitalization) and disproportionately penalizes safety-net hospitals that serve higher-risk, sicker populations. Since FY2019 (under the 21st Century Cures Act), CMS stratifies hospitals into peer groups by the proportion of dual-eligible patients they serve, partially addressing the equity critique."
               },
               {
                 "type": "heading",
@@ -7079,7 +7079,7 @@
               },
               {
                 "type": "text",
-                "body": "The IRA made transformational changes to Part D:\n\n**$2,000 out-of-pocket cap.** Beginning in 2025, Medicare beneficiaries face a $2,000 annual cap on out-of-pocket prescription drug costs \u2014 eliminating the 'catastrophic' phase where patients previously had unlimited cost exposure.\n\n**Insulin cap.** Insulin costs capped at $35/month for Part D enrollees (effective 2023).\n\n**Vaccines.** All ACIP-recommended vaccines covered at $0 cost-sharing.\n\n**Drug price negotiation.** For the first time in Medicare's history, CMS is authorized to negotiate prices directly with pharmaceutical manufacturers for selected high-expenditure drugs. The first 10 drugs were selected in 2023; negotiated prices take effect in 2026. CMS has authority to expand to 20+ drugs annually.\n\nThe IRA drug reforms represent the largest change to Part D since its creation and are expected to generate $98 billion in net Medicare savings over 10 years."
+                "body": "The IRA made transformational changes to Part D:\n\n**$2,000 out-of-pocket cap.** Beginning in 2025, Medicare beneficiaries face a $2,000 annual cap on out-of-pocket prescription drug costs (indexed; $2,100 in 2026) \u2014 once reached, enrollees pay nothing more for covered drugs in the catastrophic phase, ending the unlimited cost exposure they previously faced.\n\n**Insulin cap.** Insulin costs capped at $35/month for Part D enrollees (effective 2023).\n\n**Vaccines.** All ACIP-recommended vaccines covered at $0 cost-sharing.\n\n**Drug price negotiation.** For the first time in Medicare's history, CMS is authorized to negotiate prices directly with pharmaceutical manufacturers for selected high-expenditure drugs. The first 10 drugs were selected in 2023; negotiated prices take effect in 2026. The law allows up to 15 more drugs for 2027, 15 (including Part B drugs) for 2028, and up to 20 per year from 2029.\n\nThe IRA drug reforms represent the largest change to Part D since its creation and were estimated by CBO to reduce the federal deficit by $237 billion over 2022\u20132031, including $98.5 billion in Medicare savings from price negotiation."
               }
             ],
             "quiz": {
