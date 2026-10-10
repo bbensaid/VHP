@@ -1,0 +1,107 @@
+{
+  "id": "8ced148e-689a-4eff-b4bc-0e1f87e752c9",
+  "track_id": "08e0a1a1-e128-4a24-97a0-b8544487f047",
+  "pillar": "technology",
+  "order": 2,
+  "slug": "uscdi-us-core-data",
+  "title": "USCDI: The Minimum Dataset for Interoperability",
+  "summary": "The United States Core Data for Interoperability — ONC's defined minimum dataset that certified EHRs must support — and how it connects to US Core FHIR profiles.",
+  "estimated_minutes": 15,
+  "objectives": [
+    {
+      "id": "obj_uscdi1",
+      "text": "Define USCDI and explain its relationship to CEHRT certification"
+    },
+    {
+      "id": "obj_uscdi2",
+      "text": "Describe the major data classes included in USCDI v3"
+    },
+    {
+      "id": "obj_uscdi3",
+      "text": "Explain how USCDI connects to US Core FHIR profiles"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "The United States Core Data for Interoperability (USCDI) defines the minimum set of health data classes and elements that must be supported by certified EHR technology for nationwide, interoperable exchange. Think of it as the federal government's answer to the question: 'What is the least amount of data that must be exchangeable for this system to be useful for patient care?' USCDI is deliberately a floor, not a ceiling — organizations and implementation guides can require more, but certified systems must support at least USCDI.\n\nONC publishes updated versions of USCDI annually, with each version expanding the required data classes. USCDI v1 (2020) established the initial baseline with data classes like clinical notes, problems, medications, immunizations, and vital signs. V2 (2022) added social determinants of health data and health insurance information. V3 (2023) added sexual orientation and gender identity, health status assessments, facility information, and expanded clinical notes. Each expansion reflects evolving consensus about what data is essential for quality care and equitable outcomes.\n\nUSCDI's clinical impact comes through its connection to ONC certification. Certified EHRs must support USCDI data classes in their standardized FHIR API. The US Core Implementation Guide translates USCDI data classes into specific FHIR R4 resource profiles — defining exactly which FHIR resources and elements must be present for each USCDI data element. This creates a direct chain from policy (USCDI) to technical standard (US Core) to implementation (certified EHR APIs).",
+      "type": "text",
+      "heading": "A minimum floor, not a ceiling"
+    },
+    {
+      "type": "key_stat",
+      "label": "USCDI version published in 2024, expanding to include behavioral health and more SDOH data",
+      "value": "v4",
+      "context": "USCDI v4 (2024) continued the expansion trajectory, adding behavioral health data elements, additional SDOH data, and expanded patient demographic data. Each annual update reflects stakeholder input through ONC's USCDI+ and Standards Version Advancement Process (SVAP)."
+    },
+    {
+      "body": "The expansion from USCDI v1 to v3 is significant: v3 adds sexual orientation and gender identity (SOGI) data, social determinants of health screening results (housing instability, food insecurity, transportation needs), health insurance information, and expanded clinical notes types including discharge summary notes, history and physical notes, and referral notes. These additions reflect the healthcare system's growing recognition that clinical care data alone is insufficient — social and demographic data are essential for equitable, comprehensive care.",
+      "type": "callout",
+      "title": "What USCDI v3 adds that v1 didn't have",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "Patient Demographics",
+          "Name, DOB, address, SOGI, race/ethnicity",
+          "OMB race/ethnicity, SNOMED for SOGI"
+        ],
+        [
+          "Problems",
+          "Active conditions, medical history",
+          "SNOMED CT, ICD-10-CM"
+        ],
+        [
+          "Medications",
+          "Active medications, medication allergy/intolerance",
+          "RxNorm for medications, SNOMED for reactions"
+        ],
+        [
+          "Laboratory Results",
+          "Lab tests and values",
+          "LOINC for test names, UCUM for units"
+        ],
+        [
+          "Vital Signs",
+          "BP, HR, weight, BMI, O2 saturation",
+          "LOINC for vital sign names, UCUM for units"
+        ],
+        [
+          "Clinical Notes",
+          "Progress notes, discharge summaries, consultation notes",
+          "LOINC for note types"
+        ],
+        [
+          "SDOH",
+          "Food insecurity, housing instability, transportation",
+          "LOINC for screening tools, SNOMED for findings"
+        ],
+        [
+          "Immunizations",
+          "Vaccine administered, date, dose",
+          "CVX for vaccine type, MVX for manufacturer"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Data Class",
+        "Examples",
+        "Key Terminology Required"
+      ],
+      "heading": "USCDI data classes (v3 summary)"
+    }
+  ],
+  "tags": [
+    "USCDI",
+    "US Core",
+    "ONC",
+    "data classes",
+    "interoperability",
+    "SDOH"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:53.417879+00:00",
+  "updated_at": "2026-06-01T14:54:58.004559+00:00",
+  "sanity_slug": "interop-uscdi"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "48247e64-0e6f-434f-8c38-2d497d909c76",
+  "track_id": "df795ab8-9efd-4065-ba56-636b123c11a5",
+  "pillar": "economics",
+  "order": 1,
+  "slug": "risk-adjustment-hcc",
+  "title": "Risk Adjustment & HCC Scores: Leveling the Playing Field",
+  "summary": "Why risk adjustment is necessary for fair VBC payment, how Hierarchical Condition Categories (HCCs) work, how risk scores affect revenue, and the upcoding controversy.",
+  "estimated_minutes": 20,
+  "objectives": [
+    {
+      "id": "obj_ra1",
+      "text": "Explain why risk adjustment is necessary for fair comparison in VBC"
+    },
+    {
+      "id": "obj_ra2",
+      "text": "Describe how HCC-based risk scores are calculated"
+    },
+    {
+      "id": "obj_ra3",
+      "text": "Explain the upcoding problem and its consequences for the program"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Without risk adjustment, value-based payment rewards providers who serve healthy patients and penalizes those who serve the sickest. A primary care practice that attracts many elderly patients with multiple chronic conditions will spend more on their care — not because they're inefficient, but because their patients need more care.\n\nRisk adjustment solves this by adjusting payment targets (and quality measure comparisons) based on predicted spending for each patient's health status. A provider with sicker patients gets a higher benchmark; one with healthier patients gets a lower one.",
+      "type": "text",
+      "heading": "The selection problem"
+    },
+    {
+      "body": "CMS uses a Hierarchical Condition Category (HCC) model to calculate each Medicare beneficiary's risk score (Risk Adjustment Factor, or RAF). The model works like this:\n\n1. Claims are submitted by providers with ICD-10 diagnosis codes\n2. Diagnoses map to one of 115 payment HCC categories in the current V28 model (the V24 model it replaced had 86; there, HCC 19 = diabetes without complications, HCC 18 = diabetes with chronic complications)\n3. Each HCC has a coefficient representing its contribution to predicted spending\n4. The sum of all a patient's HCC coefficients plus demographic factors = their RAF score\n5. RAF 1.0 = average cost; RAF 2.0 = twice average cost\n\nOrganizations in risk-based contracts are paid based on their population's average RAF — higher RAF populations receive higher per-member-per-month payments.",
+      "type": "text",
+      "heading": "HCC risk scores: how they're built"
+    },
+    {
+      "body": "Because RAF scores translate directly to revenue, there are strong financial incentives to ensure all diagnoses are captured — and, in some cases, to document conditions that may be questionable. OIG and DOJ investigations have found that Medicare Advantage plans (which also use HCC-based risk adjustment) have overstated member acuity by billions of dollars annually through systematic upcoding. CMS has responded with stricter audits and risk score adjustments.",
+      "type": "callout",
+      "heading": "The upcoding problem",
+      "variant": "warning"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Estimated Medicare Advantage overpayments due to risk score inflation (10 years)",
+          "value": "$26B+",
+          "source": "MedPAC"
+        },
+        {
+          "label": "HCC categories in the CMS-HCC model",
+          "value": "86",
+          "source": "CMS"
+        },
+        {
+          "label": "RAF score = average predicted cost",
+          "value": "1.0",
+          "source": "CMS"
+        },
+        {
+          "label": "Annual revenue impact per member per 0.1 RAF score change",
+          "value": "$1,000+",
+          "source": "Industry estimate"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "risk adjustment",
+    "HCC",
+    "RAF score",
+    "upcoding",
+    "coding accuracy"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T21:56:20.791701+00:00",
+  "updated_at": "2026-10-10T13:39:01.024042+00:00",
+  "sanity_slug": "risk-adjustment-hcc"
+}

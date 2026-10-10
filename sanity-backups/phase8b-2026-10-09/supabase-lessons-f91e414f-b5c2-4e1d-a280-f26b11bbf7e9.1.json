@@ -1,0 +1,74 @@
+{
+  "id": "f91e414f-b5c2-4e1d-a280-f26b11bbf7e9",
+  "track_id": "413b9546-2293-49b6-a33f-157418a1d3b8",
+  "pillar": "economics",
+  "order": 2,
+  "slug": "relative-value-units",
+  "title": "RVUs: How Physician Payment Works — and Why It Favors Procedures",
+  "summary": "The Resource-Based Relative Value Scale, how RVUs translate to physician pay, why cognitive primary care is systematically undervalued, and CMS efforts to rebalance.",
+  "estimated_minutes": 17,
+  "objectives": [
+    {
+      "id": "obj_rvu1",
+      "text": "Explain how the RBRVS and RVU system determine physician payment in Medicare"
+    },
+    {
+      "id": "obj_rvu2",
+      "text": "Describe why the RVU system systematically undervalues cognitive primary care relative to procedures"
+    },
+    {
+      "id": "obj_rvu3",
+      "text": "Explain the role of the AMA RVS Update Committee (RUC) in setting RVU values"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Medicare pays physicians based on the Resource-Based Relative Value Scale (RBRVS). Every covered service has a Relative Value Unit (RVU) value — a number representing the relative resource intensity of that service. Multiply the RVU by the national conversion factor (~$33 in 2024) and you get the Medicare payment.\n\nA 99213 office visit carries 1.30 work RVUs and a 99214 carries 1.92 (2021 values); the payment uses total RVUs (work plus practice expense plus malpractice), so the work RVU alone understates it. The bias shows up per hour: Sinsky and Dugdale (JAMA Internal Medicine, 2013) found Medicare paid 368% (screening colonoscopy) and 486% (cataract extraction) of the hourly revenue for the same physician time spent on evaluation and management.",
+      "type": "text",
+      "heading": "One number drives most of physician pay"
+    },
+    {
+      "body": "RVU values are recommended by the AMA/Specialty Society Relative Value Scale Update Committee (RUC) — a 32-member body historically dominated by specialists. Primary care has consistently argued the RUC undervalues cognitive work (thinking, coordinating, managing complexity) and overvalues procedural skills. MedPAC has repeatedly found that primary care RVUs are too low, contributing to the primary care–specialty income gap of more than $100,000 annually.",
+      "type": "callout",
+      "heading": "The RUC: specialty-dominated valuation",
+      "variant": "warning"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Annual income gap between primary care and specialist physicians",
+          "value": "$100K+",
+          "source": "AAMC"
+        },
+        {
+          "label": "Medicare conversion factor per RVU (2024)",
+          "value": "~$33",
+          "source": "CMS"
+        },
+        {
+          "label": "Of US health spending goes to primary care",
+          "value": "6%",
+          "source": "RWJF"
+        },
+        {
+          "label": "Of medical school graduates choosing primary care specialties",
+          "value": "35%",
+          "source": "AAMC"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "RVU",
+    "RBRVS",
+    "physician payment",
+    "primary care",
+    "specialty"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T22:13:36.596423+00:00",
+  "updated_at": "2026-10-10T13:31:14.432537+00:00",
+  "sanity_slug": "relative-value-units"
+}

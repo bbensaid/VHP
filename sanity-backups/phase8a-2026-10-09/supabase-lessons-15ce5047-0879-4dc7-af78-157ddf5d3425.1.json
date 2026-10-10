@@ -1,0 +1,85 @@
+{
+  "id": "15ce5047-0879-4dc7-af78-157ddf5d3425",
+  "track_id": "a31a8a75-7474-4142-abc0-427825e26120",
+  "pillar": "technology",
+  "order": 2,
+  "slug": "interface-engines-integration",
+  "title": "Interface Engines: The Plumbing of Health IT",
+  "summary": "How interface engines translate, route, and transform health messages between systems — and why a large hospital may have 500 active interfaces requiring constant maintenance.",
+  "estimated_minutes": 16,
+  "objectives": [
+    {
+      "id": "obj_ie1",
+      "text": "Explain what an interface engine does and why it is needed"
+    },
+    {
+      "id": "obj_ie2",
+      "text": "Compare leading interface engine platforms"
+    },
+    {
+      "id": "obj_ie3",
+      "text": "Describe the challenge of HL7 v2 to FHIR transformation"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Between every two clinical systems that exchange data sits an interface engine — the software that receives a message from one system, transforms it into the format the receiving system expects, routes it correctly, and confirms delivery. Most clinicians are unaware interface engines exist. Most health IT leaders are acutely aware that their interface engines are among the most critical and most fragile components of their infrastructure.\n\nA large academic medical center may run hundreds of active interfaces: the laboratory system sending HL7 v2 ORU messages to the EHR, the pharmacy system receiving medication orders, the radiology PACS receiving orders and returning results, the ADT feed going to the HIE, the billing system receiving charges, the care management platform receiving ADT notifications. Each interface is a custom configuration — a mapping of fields from one system's dialect to another's. When either system is updated, the interface must be retested and often reconfigured.\n\nThe leading interface engine platforms include Mirth Connect (long open source and widely used in smaller organizations and HIEs; proprietary since version 4.6 in 2025), Rhapsody (commercial, strong in large health systems), Infor Cloverleaf (legacy enterprise platform), and InterSystems HealthShare (combines interface engine with clinical data repository). Cloud-based FHIR servers — Microsoft Azure Health Data Services, Google Cloud Healthcare API, AWS HealthLake — are increasingly used as the FHIR layer above or alongside traditional interface engines.",
+      "type": "text",
+      "heading": "The translation layer nobody sees"
+    },
+    {
+      "type": "key_stat",
+      "label": "interfaces in one documented health system",
+      "value": "1,000",
+      "context": "One documented health system runs 1,000 interfaces across 136 connected systems (InterSystems). Every interface carries build, testing, maintenance, and monitoring costs for as long as it runs."
+    },
+    {
+      "body": "Converting HL7 v2 messages to FHIR resources sounds straightforward — both carry similar clinical data — but is technically complex. HL7 v2 is flat pipe-delimited text; FHIR is hierarchical JSON with typed resources. A v2 OBX segment containing a lab result must become a FHIR Observation with the correct LOINC code, value type, reference range, and patient reference. Mapping is not one-to-one, especially where HL7 v2 Z-segments carry local data with no FHIR equivalent. HL7 has published official v2-to-FHIR mapping tables, but organizations still require significant custom work to handle their specific v2 dialects.",
+      "type": "callout",
+      "title": "The HL7 v2 to FHIR transformation challenge",
+      "variant": "warning"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "term": "Mirth Connect",
+          "definition": "Interface engine maintained by NextGen; open source until version 4.6 (2025) moved it to a proprietary licence, prompting the Open Integration Engine community fork. Strong HL7 v2 support; NextGen says it powers a third of U.S. public HIEs."
+        },
+        {
+          "term": "Rhapsody",
+          "definition": "Commercial integration engine from Rhapsody Health Solutions. Strong in large health systems with complex routing requirements and high message volumes."
+        },
+        {
+          "term": "Azure Health Data Services",
+          "definition": "Microsoft's cloud-based FHIR server and integration platform. Supports FHIR R4, DICOM, and MedTech (IoT/device) services. Widely adopted for FHIR API deployments."
+        },
+        {
+          "term": "AWS HealthLake",
+          "definition": "Amazon's FHIR-compatible health data lake. Enables storage, querying, and NLP-powered analysis of FHIR-formatted clinical data at scale."
+        },
+        {
+          "term": "Google Cloud Healthcare API",
+          "definition": "Google's healthcare data services platform supporting FHIR R4, HL7 v2, and DICOM. Strong integration with BigQuery for analytics."
+        },
+        {
+          "term": "InterSystems HealthShare",
+          "definition": "Combined integration engine and clinical data repository. Strong in HIEs and large health systems needing both message routing and a clinical data store."
+        }
+      ],
+      "heading": "Interface engine platforms"
+    }
+  ],
+  "tags": [
+    "interface engine",
+    "Mirth Connect",
+    "Rhapsody",
+    "HL7",
+    "integration"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:50.389966+00:00",
+  "updated_at": "2026-10-10T14:29:08.290061+00:00",
+  "sanity_slug": "interop-interface-engines"
+}

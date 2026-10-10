@@ -1,0 +1,9 @@
+{
+  "id": "09337ce5-c78b-4b49-9a07-633d7d4ef7c5",
+  "quiz_id": "96dffd25-ca23-4198-a8b7-177d23182877",
+  "order": 1,
+  "question_type": "single_choice",
+  "question": "Which of the following plan types is NOT required to implement a Patient Access API under the CMS Interoperability Rule?",
+  "explanation": "ERISA plans — covering approximately 60% of Americans with private insurance through large employers — are a notable gap in the CMS Interoperability Rule. Separate federal action would be needed to reach these plans.",
+  "points": null
+}

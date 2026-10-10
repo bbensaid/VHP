@@ -1,0 +1,233 @@
+[
+  {
+    "_createdAt": "2026-06-15T02:30:14Z",
+    "_id": "ehr-business-case-roi",
+    "_rev": "cYZDD0WgGI3bQOfKbYswsb",
+    "_type": "academyModule",
+    "_updatedAt": "2026-06-15T02:30:14Z",
+    "body": [
+      {
+        "_key": "emqeliinus",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "emqeliinut",
+            "_type": "span",
+            "marks": [],
+            "text": "Choosing and adopting an EHR is one of the largest capital and operational decisions a health system makes — and the business case is notoriously hard to build. The benefits are diffuse and delayed; the costs are concentrated and immediate. This module breaks the decision into the numbers that actually drive it: total cost of ownership, the go-live productivity dip, and the multi-year return."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "emqeliinuu",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "emqeliinuv",
+            "_type": "span",
+            "marks": [],
+            "text": "Why the EHR business case is hard"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "emqeliinuw",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "emqeliinux",
+            "_type": "span",
+            "marks": [],
+            "text": "Unlike a piece of revenue-generating equipment, an EHR's return shows up indirectly — through better coding capture, fewer duplicate orders, reduced transcription, and downstream quality incentives — and it shows up over years, not quarters. Meanwhile the costs hit all at once: licensing, implementation, hardware or cloud subscription, training, and a temporary drop in clinical throughput during go-live. A credible business case has to make those diffuse benefits explicit and time-phased."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "emqeliinuy",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "emqeliinuz",
+            "_type": "span",
+            "marks": [],
+            "text": "The cost components"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "emqeliinu10",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "emqeliinu11",
+            "_type": "span",
+            "marks": [],
+            "text": "Total cost of ownership has four parts. (1) Implementation — configuration, data migration, interface build, and vendor professional services, typically the largest one-time line. (2) Licensing or subscription — per-provider annual cost, higher for on-premise capex-heavy models, recurring for cloud/SaaS. (3) Training — scaled to headcount and to how long the rollout runs. (4) The go-live productivity loss — see below. Hosting model (cloud, on-premise, or hybrid) shifts the balance between upfront capex and recurring opex."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "emqeliinu12",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "emqeliinu13",
+            "_type": "span",
+            "marks": [],
+            "text": "The go-live productivity dip"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "emqeliinu14",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "emqeliinu15",
+            "_type": "span",
+            "marks": [],
+            "text": "During the weeks around go-live, clinicians see fewer patients while they learn the system. A common planning assumption is a peak dip of around 25% in the first weeks, recovering to baseline over the rollout window. That lost clinical revenue is a real cost of adoption — often underestimated — and it scales with both the number of providers and the length of the go-live."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "emqeliinu16",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "emqeliinu17",
+            "_type": "span",
+            "marks": [],
+            "text": "Modeling five-year ROI and break-even"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "emqeliinu18",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "emqeliinu19",
+            "_type": "span",
+            "marks": [],
+            "text": "A defensible model phases the benefit stream: little to no benefit in year one (while the organization is still climbing the learning curve), ramping to a steady state — frequently modeled as a few percent of clinical revenue — by year two or three. Subtract annual cost from annual benefit, accumulate, and find the year the cumulative net turns positive. That break-even year, not the sticker price, is the number executives should anchor on."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "emqeliinu1a",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "emqeliinu1b",
+            "_type": "span",
+            "marks": [],
+            "text": "What to take away"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "emqeliinu1c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "emqeliinu1d",
+            "_type": "span",
+            "marks": [],
+            "text": "The EHR decision is a financial model, not just a feature comparison. Vendor choice and hosting model change the cost profile; the go-live plan changes the productivity loss; and the benefit assumptions determine whether — and when — the investment pays back. Build the model explicitly, stress-test the assumptions, and revisit the hosting and timeline levers before signing."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "emqeliinu1e",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "emqeliinu1f",
+            "_type": "span",
+            "marks": [],
+            "text": "Apply It in the EMR/EHR Lab"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "emqeliinu1g",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "emqeliinu1h",
+            "_type": "span",
+            "marks": [],
+            "text": "Build this exact model in the EMR/EHR Lab's Adoption & Cost mode: set provider count, timeline, hosting, and revenue per provider, pick a vendor, and read off the five-year cost-versus-benefit table and the modeled break-even year."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "emqeliinu1j",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "emqeliinu1k",
+            "_type": "span",
+            "marks": [
+              "emqeliinu1i"
+            ],
+            "text": "Open the EMR/EHR Lab → Adoption & Cost mode"
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "emqeliinu1i",
+            "_type": "link",
+            "href": "/research-lab/interoperability?tab=emr&mode=cost"
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "courseTitle": "Healthcare Interoperability & Data Exchange",
+    "estimatedReadTime": 20,
+    "learningObjectives": [
+      "Break down EHR total cost of ownership: implementation, licensing, training, and go-live productivity loss",
+      "Explain and quantify the go-live productivity dip",
+      "Model a phased five-year benefit stream and identify the break-even year",
+      "Relate hosting model and vendor choice to the financial profile"
+    ],
+    "level": "Intermediate",
+    "moduleNumber": 4,
+    "pillar": "Technology",
+    "publishedAt": "2026-06-15T02:30:13.243Z",
+    "slug": {
+      "_type": "slug",
+      "current": "ehr-business-case-roi"
+    },
+    "summary": "Build the business case for an EHR: total cost of ownership, the go-live productivity dip, and a five-year ROI model with break-even. Complements the EHR market and burden modules with the financial decision they leave out.",
+    "title": "The EHR Business Case: Total Cost of Ownership & 5-Year ROI"
+  }
+]

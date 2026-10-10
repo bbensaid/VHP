@@ -1,0 +1,115 @@
+{
+  "id": "862fd922-8ffc-406d-a9a8-a2d4f516f8a7",
+  "track_id": "bd821302-397d-4c09-8604-cd2739b629c6",
+  "pillar": "technology",
+  "order": 1,
+  "slug": "smart-on-fhir-authorization",
+  "title": "SMART on FHIR: Authorization for Healthcare Apps",
+  "summary": "How SMART on FHIR uses OAuth 2.0 to enable secure, delegated access to FHIR data for patient-facing and clinician-facing applications.",
+  "estimated_minutes": 20,
+  "objectives": [
+    {
+      "id": "obj_smart1",
+      "text": "Explain what SMART on FHIR is and why it is needed"
+    },
+    {
+      "id": "obj_smart2",
+      "text": "Distinguish between EHR launch and standalone launch contexts"
+    },
+    {
+      "id": "obj_smart3",
+      "text": "Describe how SMART scopes control what data an app can access"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "FHIR defines how health data is structured and exchanged — but it does not define who is allowed to access that data, or how an application proves it is acting on behalf of a patient or clinician. That is the job of SMART on FHIR: Substitutable Medical Applications, Reusable Technologies. Developed at Boston Children's Hospital and Harvard Medical School beginning in 2010, SMART on FHIR created a standard authorization framework layered on top of FHIR APIs using OAuth 2.0 — the same authorization protocol used by Google, Facebook, and virtually every major web platform.\n\nThe core insight of SMART is that health apps should work like apps on a smartphone: a patient should be able to connect an app to their EHR the same way they connect Spotify to their Google account — by granting specific permissions, reviewing what data will be shared, and being able to revoke access at any time. Before SMART, every EHR vendor had proprietary APIs with custom authentication — an app built for Epic would not work with Cerner, and vice versa. SMART created a standardized authorization layer that, in combination with FHIR, makes apps genuinely portable across EHR systems.\n\nONC's certification rules require that all certified EHR technology implement SMART on FHIR — specifically the SMART App Launch Framework. This mandate means that any app built on SMART can theoretically connect to any certified EHR, giving patients and clinicians a genuine ecosystem of interoperable applications.",
+      "type": "text",
+      "heading": "The authorization layer that made the app store possible"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "term": "Resource Owner",
+          "definition": "The patient (or clinician) who owns the health data and grants permission to apps to access it on their behalf."
+        },
+        {
+          "term": "Resource Server",
+          "definition": "The FHIR server — typically the EHR system — that holds the actual health data and validates access tokens before serving data."
+        },
+        {
+          "term": "Client Application",
+          "definition": "The third-party app requesting access to FHIR data — a patient portal app, a population health tool, a clinical decision support application."
+        },
+        {
+          "term": "Authorization Server",
+          "definition": "The server that authenticates the user and issues access tokens — often built into the EHR platform alongside the FHIR server."
+        },
+        {
+          "term": "Access Token",
+          "definition": "A short-lived credential issued by the authorization server that the app presents to the FHIR server to prove it has been authorized to access specific data."
+        },
+        {
+          "term": "Refresh Token",
+          "definition": "A longer-lived credential that allows the app to obtain new access tokens without requiring the user to re-authenticate — used for background/ongoing access."
+        }
+      ],
+      "heading": "OAuth 2.0 roles mapped to healthcare"
+    },
+    {
+      "rows": [
+        [
+          "EHR Launch",
+          "Clinician clicks app from within EHR workflow",
+          "Patient ID, Encounter ID, User ID, EHR session",
+          "Clinical decision support, documentation apps launched in context of a specific patient visit"
+        ],
+        [
+          "Standalone Launch",
+          "User opens app directly (not from EHR)",
+          "No pre-set context — app must obtain patient selection",
+          "Patient-facing apps, population health tools, apps used outside clinical workflow"
+        ],
+        [
+          "Backend Services",
+          "System-to-system, no user interaction",
+          "Server credentials only, bulk data scope",
+          "Population analytics, overnight data pulls, payer-to-provider exchange"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Launch Type",
+        "Trigger",
+        "Context Available",
+        "Use Case"
+      ],
+      "heading": "SMART launch contexts"
+    },
+    {
+      "body": "SMART scopes define exactly what data an app can access. The syntax is [context]/[resource].[operation]. For example: patient/Observation.read (read observations for the current patient), user/MedicationRequest.read (read medication requests for any patient the user can access), system/*.read (read all resource types — for backend system access). The EHR's authorization server validates these scopes against user permissions before issuing a token. An app requesting broader scopes than needed is a red flag — users should review requested scopes carefully before granting access.",
+      "type": "callout",
+      "title": "SMART scopes: the permission system",
+      "variant": "info"
+    },
+    {
+      "type": "key_stat",
+      "label": "apps in the Epic App Orchard built on SMART on FHIR",
+      "value": "400+",
+      "context": "Epic's app marketplace (App Orchard) has over 400 certified SMART on FHIR applications as of 2024 — a direct result of the standardized authorization layer that SMART provides. Similar ecosystems exist for Oracle/Cerner and other EHR platforms."
+    }
+  ],
+  "tags": [
+    "SMART",
+    "FHIR",
+    "OAuth",
+    "authorization",
+    "EHR launch"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:41.751373+00:00",
+  "updated_at": "2026-06-01T14:54:56.762531+00:00",
+  "sanity_slug": "interop-smart-fhir"
+}

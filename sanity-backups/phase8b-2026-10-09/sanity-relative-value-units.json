@@ -1,0 +1,620 @@
+{
+  "_createdAt": "2026-05-31T03:19:52Z",
+  "_id": "relative-value-units",
+  "_rev": "rL4Cn5Sfo5Z8rzPmE98gPq",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T03:19:52Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "From Customary Charges to a Standardized Scale: The RBRVS Origin Story"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Before 1992, Medicare paid physicians based on \"customary, prevailing, and reasonable\" (CPR) charges — essentially whatever a doctor had historically billed, benchmarked against regional and specialty norms. This system was both inflationary and opaque. Surgeons and proceduralists, who had established high historical charges, received payments that bore little relationship to the actual time, skill, or effort their work required. Primary care physicians, whose cognitive work left a smaller billing footprint, were systematically underpaid by comparison."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "In the late 1980s, Harvard economist William Hsiao led a landmark study commissioned by the Health Care Financing Administration (now CMS) to develop a more rational basis for physician payment. The resulting system — the Resource-Based Relative Value Scale (RBRVS) — assigned each physician service a relative value unit (RVU) intended to reflect the actual resources required: physician time and effort, practice overhead, and malpractice insurance. The Omnibus Budget Reconciliation Act of 1989 authorized the creation of the Medicare Fee Schedule based on RBRVS, which took effect on January 1, 1992."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The introduction of RBRVS was a genuine improvement over CPR. It replaced an arbitrary, charge-history-based system with one grounded in explicit resource measurement. However, as decades of subsequent evidence would show, the RBRVS contained structural biases — particularly in how it valued procedural work relative to cognitive work — that would persist and intensify over time."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: The Resource-Based Relative Value Scale (RBRVS) is the payment system used by Medicare and most other payers to set physician fees. Each service is assigned relative value units (RVUs) that reflect the estimated resource cost — physician work, practice expense, and malpractice — and then multiplied by a dollar conversion factor to produce the actual payment."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Medicare Physician Fee Schedule based on RBRVS replaced CPR charges beginning January 1, 1992 — Omnibus Budget Reconciliation Act of 1989",
+          "label": "RBRVS Took Effect",
+          "value": "1992"
+        },
+        {
+          "_key": "s2",
+          "context": "CMS set the Medicare PFS conversion factor at $32.3465 per RVU for CY 2025 — CMS Final Rule CY 2025",
+          "label": "2025 Conversion Factor",
+          "value": "$32.35"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Anatomy of an RVU: Three Components, One Payment"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Every Medicare-covered physician service is assigned a total RVU that is the sum of three distinct components. The first is the physician work RVU (wRVU) — intended to capture the time, technical skill, physical effort, mental effort and judgment, and stress associated with the service. The second is the practice expense RVU (PE RVU) — reflecting the overhead costs of running a medical practice: staff, equipment, supplies, and facilities. The third is the malpractice RVU (PLI RVU) — representing the professional liability insurance costs attributable to the service."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "To produce a payment amount, each RVU component is first adjusted by a geographic practice cost index (GPCI) — a locality-based multiplier that reflects cost differences across regions. The adjusted RVUs are then summed and multiplied by the national conversion factor. For example, in 2025 the conversion factor is $32.35. A service assigned 2.0 work RVUs in a locality with a GPCI of 1.0, combined with practice expense and malpractice components, might yield a total payment in the range of $80–$120 depending on the specific service. The formula is: Payment = (wRVU × work GPCI + PE RVU × PE GPCI + PLI RVU × PLI GPCI) × Conversion Factor."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The conversion factor is set annually by CMS through the Physician Fee Schedule rulemaking process. Critically, the conversion factor has largely stagnated or declined in real (inflation-adjusted) terms over the past two decades, even as practice costs have risen. For CY 2025, CMS finalized a conversion factor of $32.3465 — a decrease of $0.94 (approximately 2.83%) from the CY 2024 rate of $33.29. This persistent downward pressure on the conversion factor, combined with rising overhead costs, has squeezed physician practice margins — particularly in primary care specialties that cannot offset revenue declines with high procedure volume."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "The physician selects the Current Procedural Terminology (CPT) code that describes the service rendered — a 99214 office visit, a 27447 total knee replacement, and so on.",
+          "title": "Assign CPT Code"
+        },
+        {
+          "_key": "step2",
+          "description": "CMS publishes the wRVU, PE RVU, and PLI RVU for each CPT code in the annual Medicare Physician Fee Schedule.",
+          "title": "Look Up RVU Components"
+        },
+        {
+          "_key": "step3",
+          "description": "Each RVU component is multiplied by the locality-specific Geographic Practice Cost Index (GPCI) to reflect regional cost differences.",
+          "title": "Apply Geographic Adjustments"
+        },
+        {
+          "_key": "step4",
+          "description": "The three geographically adjusted RVU components are added together to produce total adjusted RVUs for the service.",
+          "title": "Sum Adjusted RVUs"
+        },
+        {
+          "_key": "step5",
+          "description": "Total adjusted RVUs are multiplied by the national conversion factor (e.g., $32.35 in 2025) to produce the Medicare payment amount.",
+          "title": "Multiply by Conversion Factor"
+        }
+      ],
+      "title": "How a Physician Payment Is Calculated Under RBRVS"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The RUC: The Committee That Sets the Scale"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "RVU values are not set unilaterally by CMS. They are developed and recommended primarily through the AMA/Specialty Society Relative Value Scale Update Committee — universally known as the RUC. The RUC is a private advisory body convened by the American Medical Association whose 32 voting members represent physician specialty societies. CMS accepts the vast majority of RUC recommendations, historically in excess of 90% of submitted values."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The composition of the RUC has been a persistent source of criticism. Primary care physicians — family physicians, general internists, general pediatricians — represent only about 19% of RUC seats, despite accounting for nearly a quarter of the physician workforce and handling approximately 35% of all patient visits. Procedural and surgical specialties, by contrast, hold the majority of seats and have historically proposed RVU values that favor their own services. Since CMS adopted most of those recommendations, the result has been a payment schedule that systematically overvalues procedures relative to the cognitive work of primary care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The RUC process has also been criticized for its opacity. RUC deliberations are not public, and the specialty society survey instruments used to estimate physician time and effort have been questioned for their reliability. When the Government Accountability Office (GAO) examined the RUC process in 2012, it found that CMS lacked the independent data it needed to validate RUC recommendations and recommended that CMS develop additional mechanisms to review values. Despite these critiques, the RUC remains the central institution through which RBRVS values are set."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "In 2021, CMS substantially revised the work RVU values for office-based evaluation and management (E/M) codes — the CPT codes used for primary care and specialist office visits. The revision increased wRVUs for complex visits (99214, 99215) by roughly 30–40%, representing the most significant effort in RBRVS history to correct the documented undervaluation of cognitive, relationship-based care.\nHowever, because the Medicare fee schedule is budget-neutral by law, the increases for E/M codes required offsetting reductions in other services. Procedural specialties — including surgery, radiology, and others — saw payment reductions as a consequence. The revaluation also had limited impact on total physician compensation because commercial insurers, which cover the majority of patient visits for most physicians, did not uniformly follow Medicare's revised relativities.",
+      "title": "The 2021 Evaluation and Management Code Revaluation"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why RVUs Favor Procedures Over Primary Care"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The structural bias toward procedures in the RBRVS system is not a subtle phenomenon — it is the defining driver of the specialty income gap in American medicine. A 30-minute surgical procedure routinely generates more wRVUs than an hour of complex cognitive work with a patient managing multiple chronic conditions. This is partly a historical artifact of how the original RVU values were set — based on physician surveys of time and effort conducted in the early 1990s, when procedural work was more clearly demarcated and more easily quantified than the diffuse cognitive labor of primary care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The consequence is a compensation structure that sends powerful signals to medical students choosing specialties. When primary care physicians can earn $250,000–$280,000 annually while surgical subspecialists routinely earn $400,000–$700,000 or more, the RBRVS payment differential is a major factor driving specialty selection. The United States has a well-documented shortage of primary care physicians — a shortage that worsens as each cohort of medical graduates makes rational economic choices in response to the signals embedded in the payment system."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The problem is compounded by the fact that primary care is where prevention, early detection, and chronic disease management happen — the services that could most efficiently reduce downstream high-cost utilization. A payment system that chronically under-reimburses primary care is, in effect, a system that chronically underinvests in the part of the healthcare pipeline most capable of reducing total spending and improving population health."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Procedural / Surgical Services",
+        "points": [
+          "High wRVUs per unit of physician time",
+          "Specialty society majority on RUC → favorable valuations",
+          "Discrete, measurable outputs (surgery, imaging)",
+          "Higher income: often $400K–$700K+ annually",
+          "Strong volume-based revenue in FFS environment"
+        ]
+      },
+      "right": {
+        "label": "Primary Care / Cognitive Services",
+        "points": [
+          "Lower wRVUs for complex cognitive visits",
+          "Minority RUC representation (~19% of seats)",
+          "Diffuse, hard-to-quantify effort (counseling, coordination)",
+          "Lower income: typically $250K–$280K annually",
+          "Revenue constrained by declining conversion factor"
+        ]
+      },
+      "title": "Procedural vs. Cognitive Services: Payment Comparison"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "wRVUs as a Productivity Metric: How Employers Use RVUs"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Beyond Medicare payment, wRVUs have become the dominant productivity benchmark in physician employment contracts. Hospitals, health systems, and large group practices routinely compensate employed physicians based on wRVU production — a physician who generates more wRVUs earns a higher base or bonus. This adoption of the Medicare payment unit as an internal incentive metric has propagated the procedural bias of the RBRVS system into the employment structures of academic medical centers, community hospitals, and private practices across the country."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The wRVU-based compensation model was widely adopted because it seemed to solve the problem of measuring physician productivity in a consistent, specialty-comparable way. A wRVU is a wRVU whether earned by a cardiologist, a hospitalist, or a family physician. However, using wRVUs as the compensation metric imports all the valuation biases of the RBRVS directly into compensation design. A physician whose work consists of managing complex elderly patients with multiple chronic conditions — the kind of patient for whom cognitive coordination is the primary clinical need — will produce fewer wRVUs per hour than a physician who performs high-volume, lower-complexity procedures."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The shift toward value-based care is creating pressure on wRVU-based compensation models because many of the activities that generate value under population health contracts — care gap closure, panel management, preventive outreach, care coordination — do not correspond to any billable CPT code and generate no wRVUs. Forward-thinking health systems are beginning to supplement or replace wRVU compensation with models that include panel quality metrics, total cost of care performance, and population health outcomes. This transition, however, requires significant investment in data infrastructure and a willingness to bear transition risk."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The wRVU is now used in two ways: (1) as the unit for Medicare physician fee calculation, and (2) as the dominant internal productivity metric in physician employment contracts. Both uses carry the same procedural bias — and both will need to evolve as healthcare moves toward value-based payment."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s6h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Conversion Factor Problem: Stagnant Pay in an Inflationary World"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s6p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The conversion factor translates RVU relativities into actual dollar payments. Its trajectory over the past two decades has been a consistent source of concern for physician organizations. The conversion factor has not kept pace with the Medicare Economic Index (MEI) — CMS's own measure of the inflation in physician practice costs — for most of the post-2002 period. The result is that even as the nominal conversion factor has fluctuated, its real purchasing power has declined. Physicians who relied on Medicare payment for a substantial share of their revenue faced compounding economic pressure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CY 2025 conversion factor of $32.3465 represents a 2.83% decrease from the 2024 rate of $33.29. This reduction followed the expiration of a temporary 2.93% increase Congress enacted for 2024. Without periodic congressional action to boost the conversion factor above its statutory baseline, it will continue to decline as the budget-neutrality requirement and the absence of an inflation adjustment built into the fee schedule law compound over time."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s6p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This dynamic has important implications for the transition to value-based care. If FFS payment is declining in real terms but value-based payment models remain in development and carry financial risk, the intermediate period — when providers are partially in FFS and partially in value-based contracts — is economically dangerous for practices. CMS and Congress have repeatedly acknowledged this \"valley of death\" between FFS and value-based payment without fully resolving it. Physician organizations have argued that stabilizing the conversion factor is a precondition for the kind of patient investment in value-based infrastructure that the transition requires."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s6w1",
+      "_type": "warningBlock",
+      "message": "RVUs and CPT codes are related but distinct. A CPT code identifies what service was rendered; an RVU is the assigned value of that service. The same CPT code can have different payment amounts in different payers' fee schedules — commercial insurers negotiate their own conversion factors and may apply different relative values. Medicare's RBRVS is the anchor, but it is not the only fee schedule in use.",
+      "title": "Important Distinction"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "The RBRVS physician payment system was developed by Harvard economist William Hsiao and implemented in 1992 to replace arbitrary CPR charges with a resource-based fee schedule.",
+        "Each Medicare payment is calculated by multiplying geographically adjusted RVUs (work + practice expense + malpractice) by the national conversion factor — set at $32.35 for 2025.",
+        "RVU values are primarily set by the AMA's Relative Value Scale Update Committee (RUC), where procedural specialists hold the majority of seats and primary care is underrepresented at roughly 19%.",
+        "The RBRVS systematically overvalues procedural services relative to cognitive and primary care work, driving the specialty income gap and medical student specialty selection away from primary care.",
+        "wRVUs have become the dominant physician productivity metric in employment contracts, propagating the procedural bias of Medicare's payment system into hospital compensation design.",
+        "The conversion factor has stagnated or declined in real terms over two decades, creating compounding financial pressure on physician practices — particularly those heavily dependent on Medicare.",
+        "The 2021 E/M code revaluation was the most significant attempt to correct cognitive-service undervaluation in RBRVS history, but its impact was limited by budget-neutrality offsets and commercial insurer non-adoption."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The RUC is a private advisory body convened by the American Medical Association. Its 32 voting members represent physician specialty societies and recommend RVU values to CMS. Historically, CMS accepts more than 90% of RUC recommendations. This structure — and the underrepresentation of primary care on the RUC — has been a major driver of the procedural payment bias in the RBRVS system.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The Centers for Medicare & Medicaid Services (CMS), which sets values unilaterally through its actuaries."
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The AMA/Specialty Society Relative Value Scale Update Committee (RUC), whose recommendations CMS accepts over 90% of the time."
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The American Hospital Association (AHA), which negotiates values on behalf of hospital-based physicians."
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The Medicare Payment Advisory Commission (MedPAC), which sets values through Congressional mandate."
+        }
+      ],
+      "question": "Which body is primarily responsible for recommending the relative value unit (RVU) values assigned to physician services under the Medicare Fee Schedule?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] AMA, RBRVS Overview — https://www.ama-assn.org/about/rvs-update-committee-ruc/rbrvs-overview — RBRVS structure, three RVU components, RUC role and composition"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] PMC, \"Diffusion of Medicare's RBRVS and Related Physician Payment Policies\" — https://pmc.ncbi.nlm.nih.gov/articles/PMC4193488/ — RBRVS history, 1989 OBRA authorization, 1992 implementation"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CMS, CY 2025 Medicare Physician Fee Schedule Final Rule — https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2025-medicare-physician-fee-schedule-final-rule — 2025 conversion factor $32.3465, 2.83% decrease from 2024"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] FastRVU, 2025 Medicare RVU Fee Schedule Guide — https://fastrvu.com/articles/medicare-rvu-fee-schedule — Conversion factor history and calculation methodology"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Commonwealth Fund, \"Improving Payments for Primary Care Physicians\" — https://www.commonwealthfund.org/publications/issue-briefs/2025/sep/improving-payments-primary-care-physicians — Primary care RUC underrepresentation, specialty income gap"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] JAMA Internal Medicine, \"Medicare Payment for Cognitive vs Procedural Care: Minding the Gap\" — https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/1754364 — Procedural vs. cognitive payment disparity in RBRVS"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] MedPAC, \"Analysis of Disparities in Physician Compensation\" (Jan 2019) — https://www.medpac.gov/wp-content/uploads/import_data/scrape_files/docs/default-source/contractor-reports/jan19_medpac_disparities_physiciancompensationreport_cvr_contractor_sec.pdf — Compensation disparity data between procedural and cognitive specialties"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "value-based-care",
+  "order": 2,
+  "slug": {
+    "_type": "slug",
+    "current": "relative-value-units"
+  },
+  "title": "RVUs: How Physician Payment Works — and Why It Favors Procedures"
+}

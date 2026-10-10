@@ -1,0 +1,9 @@
+{
+  "id": "62702d5b-48bd-402e-9c43-e85882c551c6",
+  "quiz_id": "a818c71f-1292-4ae7-9452-d1f3ff6973e8",
+  "order": 3,
+  "question_type": "single_choice",
+  "question": "On which date did the ONC Final Rule's information blocking provisions become applicable (the compliance date)?",
+  "explanation": "April 5, 2021 is a landmark date in health IT policy — the day information blocking became legally prohibited and patients gained standardized API access to their health data.",
+  "points": null
+}

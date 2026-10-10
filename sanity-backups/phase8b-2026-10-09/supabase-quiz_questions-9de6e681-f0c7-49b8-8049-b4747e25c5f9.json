@@ -1,0 +1,9 @@
+{
+  "id": "9de6e681-f0c7-49b8-8049-b4747e25c5f9",
+  "quiz_id": "32d89da6-d22f-4baa-a573-c1a25415fd48",
+  "order": 1,
+  "question_type": "single_choice",
+  "question": "What was the main finding from the CMS Oncology Care Model final evaluation?",
+  "explanation": "The OCM showed minimal net savings to Medicare (about 0.2% of episode costs) but meaningful quality improvements — higher hospice use, fewer ED visits.",
+  "points": 1
+}

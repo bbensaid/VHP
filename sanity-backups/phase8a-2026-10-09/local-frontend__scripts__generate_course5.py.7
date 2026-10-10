@@ -850,7 +850,7 @@ course = {
             {
               "type": "text",
               "heading": "Patients have a right to their own data — but it has been poorly enforced",
-              "body": "HIPAA has included a right of access since the Privacy Rule took effect in 2003: patients can request their medical records, and covered entities must provide them within 30 days (with one 30-day extension) in the format requested if readily producible. Fees are limited to the cost of copying, labor, and postage. On paper, this is a strong right. In practice, it was routinely violated without consequence for nearly two decades.\n\nOCR's Right of Access Initiative, launched in 2019, changed this. OCR began actively investigating access complaints and imposing civil monetary penalties for violations — even small ones. A physician practice that takes 6 months to fulfill a simple records request, charges $400 for a simple copy, or refuses to send records directly to a patient's designated app now faces real enforcement risk. By December 2024, OCR had announced 53 HIPAA right of access enforcement actions.\n\nThe Cures Act adds a separate, stronger layer of patient access rights for data held in certified EHR systems. Patients can now direct their EHR provider to share their data with any third-party application that meets the standardized API terms of service — without the covered entity's permission to use a specific app. This patient-directed data sharing is a fundamental new right that goes beyond what HIPAA requires."
+              "body": "HIPAA has included a right of access since the Privacy Rule took effect in 2003: patients can request their medical records, and covered entities must provide them within 30 days (with one 30-day extension) in the format requested if readily producible. Fees are limited to the cost of copying, labor, and postage. On paper, this is a strong right. In practice, it was routinely violated without consequence for nearly two decades.\n\nOCR's Right of Access Initiative, launched in 2019, changed this. OCR began actively investigating access complaints and imposing civil monetary penalties for violations — even small ones. A physician practice that takes 6 months to fulfill a simple records request, charges $400 for a simple copy, or refuses to send records directly to a patient's designated app now faces real enforcement risk. By 2024, OCR had imposed over $10 million in HIPAA right of access settlements.\n\nThe Cures Act adds a separate, stronger layer of patient access rights for data held in certified EHR systems. Patients can now direct their EHR provider to share their data with any third-party application that meets the standardized API terms of service — without the covered entity's permission to use a specific app. This patient-directed data sharing is a fundamental new right that goes beyond what HIPAA requires."
             },
             {
               "type": "comparison_table",
@@ -859,10 +859,10 @@ course = {
               "rows": [
                 ["Timeline", "30 days (60 with extension)", "Real-time or near-real-time"],
                 ["Format", "Requested format if readily producible", "Standardized FHIR R4 API"],
-                ["Scope", "Designated record set", "EHI (ePHI in the designated record set)"],
+                ["Scope", "Designated record set", "EHI (all data in CEHRT)"],
                 ["Third-party direction", "Patient can designate a recipient", "Patient can connect any certified app"],
                 ["Fees", "Cost-based, limited", "Cannot charge patients fees for their own data"],
-                ["Enforcement", "OCR, up to $50,000/violation", "Information blocking: OIG penalties (developers, HIEs/HINs); CMS disincentives (providers)"]
+                ["Enforcement", "OCR, up to $50,000/violation", "ONC/OIG information blocking rules"]
               ]
             },
             {
@@ -873,9 +873,9 @@ course = {
             },
             {
               "type": "key_stat",
-              "value": "53",
-              "label": "HIPAA right of access enforcement actions announced by OCR (2019–Dec 2024)",
-              "context": "OCR's Right of Access Initiative brought real enforcement to a patient right that had been largely theoretical. Actions have run from small-practice settlements to civil monetary penalties such as OHSU\'s $200,000 (finalized December 2024)."
+              "value": "$10M+",
+              "label": "in HIPAA right of access settlements (OCR, 2019–2024)",
+              "context": "OCR's Right of Access Initiative brought real enforcement to a patient right that had been largely theoretical. Settlements range from $3,500 (small practices) to $240,000 (larger organizations) per violation."
             }
           ],
           "quiz": {

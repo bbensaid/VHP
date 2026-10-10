@@ -1,0 +1,113 @@
+{
+  "id": "c99e19b6-63e5-4027-b91f-35238e07439a",
+  "track_id": "a3c63a7e-b87e-490e-9a38-c2fab03c8d1c",
+  "pillar": "policy",
+  "order": 2,
+  "slug": "information-blocking-rules",
+  "title": "Information Blocking: Definition, Eight Exceptions & Enforcement",
+  "summary": "What constitutes information blocking under the Cures Act, the eight regulatory exceptions that define lawful practice, and how ONC and OIG enforce the rules.",
+  "estimated_minutes": 22,
+  "objectives": [
+    {
+      "id": "obj_ib1",
+      "text": "State the statutory definition of information blocking"
+    },
+    {
+      "id": "obj_ib2",
+      "text": "Name the eight information blocking exceptions and describe three in detail"
+    },
+    {
+      "id": "obj_ib3",
+      "text": "Distinguish between ONC and OIG enforcement roles and their respective targets"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "The 21st Century Cures Act defines information blocking as a practice that — the actor knows or should know — is likely to interfere with, prevent, or materially discourage access, exchange, or use of electronic health information. The key elements of this definition deserve careful attention. First, it is intent-sensitive: actors who should have known their practice would interfere cannot claim innocent ignorance. Second, 'materially discourage' is a lower bar than 'prevent' — practices that make data access difficult, slow, expensive, or burdensome without completely blocking it can still constitute information blocking. Third, the definition covers access, exchange, AND use — meaning restrictions on how data can be used after it has been shared also fall within scope.\n\nONC received nearly 700 information blocking complaints in the first two years of enforcement (April 2021–March 2023). The most common complaints involved: providers restricting patient access to their own records, health IT developers charging unreasonable fees for data export, and HIEs refusing to connect with competing networks. ONC publishes complaint data in aggregate, but individual enforcement actions against health IT developers — the highest-penalty category — have been slower to materialize as ONC builds its enforcement infrastructure.\n\nCritically, the information blocking rules do not apply to all health information. They apply specifically to 'electronic health information' (EHI) — a defined term that initially covered the data elements in USCDI v1 (as of April 2021) and was later expanded to cover all EHI that a HIPAA covered entity would include in a designated record set (as of October 2022). This expansion significantly broadened the scope of what must be shared upon request.",
+      "type": "text",
+      "heading": "Defining what cannot be done"
+    },
+    {
+      "rows": [
+        [
+          "Preventing Harm",
+          "Allow withholding data that would endanger patient or third party",
+          "Must be documented, reasonable belief of harm, minimum necessary restriction"
+        ],
+        [
+          "Privacy",
+          "Allow compliance with patient privacy preferences and state law",
+          "Must reflect documented patient request or applicable privacy law"
+        ],
+        [
+          "Security",
+          "Allow security-motivated access restrictions",
+          "Must be consistent with recognized security practices, applied consistently"
+        ],
+        [
+          "Infeasibility",
+          "Allow non-compliance when technically or legally infeasible",
+          "Must document the infeasibility; undue burden has narrow scope"
+        ],
+        [
+          "Health IT Performance",
+          "Allow downtime and maintenance affecting data access",
+          "Must be consistent with industry-standard practices, cannot be used as pretext"
+        ],
+        [
+          "Content & Manner",
+          "Allow actors to limit HOW data is provided (format, timing)",
+          "Must offer at least one compliant method; cannot unreasonably restrict"
+        ],
+        [
+          "Fees",
+          "Allow charging fees for data exchange services",
+          "Must be cost-based, reasonable, applied consistently; no exclusionary pricing"
+        ],
+        [
+          "Licensing",
+          "Allow protecting proprietary interfaces and technology",
+          "Cannot be used to prevent interoperability; narrow scope"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Exception",
+        "Purpose",
+        "Key Conditions"
+      ],
+      "heading": "The eight information blocking exceptions"
+    },
+    {
+      "body": "The Fees Exception allows actors to charge for data exchange services — but with strict conditions. Fees must be based on the cost of exchange (not a markup for competitive advantage), must be applied consistently (you cannot charge a competitor more than you charge a partner), and cannot be used to exclude access that would otherwise be required. Charging $0.10/record for bulk export is likely fine. Charging $50,000 to connect a competing HIE when you charge $1,000 to connect partners is likely information blocking. ONC has seen many complaints in this category.",
+      "type": "callout",
+      "title": "The Fees Exception: when charging is and isn't allowed",
+      "variant": "warning"
+    },
+    {
+      "type": "key_stat",
+      "label": "information blocking complaints received by ONC (first 2 years)",
+      "value": "700+",
+      "context": "ONC received approximately 700 information blocking complaints in the first two years of enforcement. The largest share involved healthcare providers limiting patient access to records, followed by health IT developer practices. ONC refers cases involving healthcare providers to OIG for investigation."
+    },
+    {
+      "body": "ONC has civil monetary penalty authority over health IT developers and health information networks (up to $1M/violation). Healthcare providers are referred to OIG, which can impose 'disincentives' — specifically, impacts on providers' CMS quality payment program participation. The first healthcare provider disincentives were established in rules finalized in 2024. This bifurcated enforcement structure reflects the different leverage available over each actor type.",
+      "type": "callout",
+      "title": "ONC vs. OIG: who enforces what",
+      "variant": "info"
+    }
+  ],
+  "tags": [
+    "information blocking",
+    "ONC",
+    "OIG",
+    "exceptions",
+    "enforcement",
+    "Cures Act"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:38.763665+00:00",
+  "updated_at": "2026-06-01T14:54:57.405762+00:00",
+  "sanity_slug": "interop-info-blocking"
+}

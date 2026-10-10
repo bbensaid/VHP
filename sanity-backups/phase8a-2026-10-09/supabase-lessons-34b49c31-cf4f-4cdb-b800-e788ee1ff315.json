@@ -1,0 +1,97 @@
+{
+  "id": "34b49c31-cf4f-4cdb-b800-e788ee1ff315",
+  "track_id": "a372b50e-de8b-4e68-98e2-2230055090dd",
+  "pillar": "operations",
+  "order": 3,
+  "slug": "query-vs-event-driven-exchange",
+  "title": "Query-Based vs. Event-Driven Exchange",
+  "summary": "How pull-based queries and push-based ADT event notifications serve different care coordination needs — and why both are essential to a complete HIE strategy.",
+  "estimated_minutes": 15,
+  "objectives": [
+    {
+      "id": "obj_qe1",
+      "text": "Distinguish between query-based and event-driven health information exchange"
+    },
+    {
+      "id": "obj_qe2",
+      "text": "Explain the CMS Conditions of Participation ADT notification requirement"
+    },
+    {
+      "id": "obj_qe3",
+      "text": "Describe how ADT notifications reduce readmissions and support care transitions"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Health information exchange traditionally operated on a query model: when a provider needed information about a patient, they would query the HIE and retrieve whatever was available. This pull model works well when a clinician is actively caring for a patient and needs their history. It works poorly for proactive care management — a care manager cannot query for every patient daily to see if any of them went to the emergency department last night.\n\nEvent-driven exchange (also called push-based or subscription-based exchange) flips the model. Rather than waiting to be asked, the HIE proactively notifies subscribed care teams when a patient experiences a clinically significant event — an admission, a transfer, a discharge. This is the ADT notification model: Admission/Discharge/Transfer events, which every hospital already generates in HL7 v2 format, are made available to care teams subscribed to receive them.\n\nCMS recognized the clinical value of ADT notifications and made them mandatory. The 2021 Conditions of Participation rule requires hospitals to send electronic ADT notifications to primary care providers, post-acute facilities, and other relevant care team members within 24 hours of key events. This single rule — requiring hospitals to notify care teams when their patients show up — has had more practical impact on care coordination than many more technically complex interoperability initiatives.",
+      "type": "text",
+      "heading": "Pull vs. push: two models for care coordination"
+    },
+    {
+      "rows": [
+        [
+          "Trigger",
+          "Provider initiates when caring for patient",
+          "Clinical event at hospital/ED triggers notification"
+        ],
+        [
+          "Timing",
+          "On demand — only when queried",
+          "Real-time — within hours of event"
+        ],
+        [
+          "Use case",
+          "Active care, transitions, referrals",
+          "Care management, population health, readmission prevention"
+        ],
+        [
+          "Technology",
+          "FHIR query, IHE XDS, Direct",
+          "HL7 v2 ADT, FHIR Subscriptions, Da Vinci Alerts"
+        ],
+        [
+          "Who receives",
+          "The querying provider",
+          "Subscribed care team members (PCP, care manager, ACO)"
+        ],
+        [
+          "Volume",
+          "Low — only when needed",
+          "High — every event for all attributed patients"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Dimension",
+        "Query-Based (Pull)",
+        "Event-Driven (Push/ADT)"
+      ],
+      "heading": "Query-based vs. event-driven exchange"
+    },
+    {
+      "type": "key_stat",
+      "label": "reduction in readmissions in some ADT notification programs",
+      "value": "40%",
+      "context": "Early ADT notification programs at academic medical centers and ACOs demonstrated readmission rate reductions of 20–40% in high-risk populations. The mechanism: care managers receive same-day notification when a patient is discharged and can arrange follow-up before the patient has a chance to readmit."
+    },
+    {
+      "body": "The Da Vinci Admission, Discharge, Transfer (ADT) Notification Implementation Guide defines how FHIR-based ADT notifications should be structured and transmitted. As healthcare moves from HL7 v2 ADT messages to FHIR, this guide provides the transition path — the same clinical event (patient admitted, patient discharged) expressed as a FHIR notification rather than a v2 message. Hospitals and HIEs implementing FHIR-based notifications use this guide to ensure interoperability.",
+      "type": "callout",
+      "title": "Da Vinci Unsolicited Notifications: the FHIR standard for ADT events",
+      "variant": "info"
+    }
+  ],
+  "tags": [
+    "ADT",
+    "event notification",
+    "query",
+    "HIE",
+    "care coordination",
+    "readmissions"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:47.48742+00:00",
+  "updated_at": "2026-06-01T14:54:57.769767+00:00",
+  "sanity_slug": "interop-query-vs-event"
+}

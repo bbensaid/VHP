@@ -1,0 +1,75 @@
+{
+  "id": "837fc9e7-8084-4c88-a43d-941ad6102158",
+  "track_id": "e02df1ed-dd30-40c3-bfba-49762cca172f",
+  "pillar": "economics",
+  "order": 3,
+  "slug": "oncology-care-model",
+  "title": "The Oncology Care Model: VBC in Cancer Care",
+  "summary": "CMS's Oncology Care Model (OCM) and its successor Enhancing Oncology Model (EOM) — how episode-based payment has been applied to cancer chemotherapy and the evidence on performance.",
+  "estimated_minutes": 15,
+  "objectives": [
+    {
+      "id": "obj_ocm1",
+      "text": "Describe the Oncology Care Model's payment structure"
+    },
+    {
+      "id": "obj_ocm2",
+      "text": "Explain the equity concerns specific to VBC in oncology"
+    },
+    {
+      "id": "obj_ocm3",
+      "text": "Summarize what the OCM evidence showed about savings and quality"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Cancer care is among the most expensive areas of US healthcare — and among the most difficult to apply episode-based payment models to. Treatment courses vary enormously, clinical pathways are rapidly evolving, and drug costs have been exploding.\n\nThe Oncology Care Model (OCM, 2016–2022) covered 6-month episodes anchored by chemotherapy initiation. Practices received a $160/month per-beneficiary-per-month payment for care management, plus shared savings or losses against a benchmark. 187 practices participated at peak.",
+      "type": "text",
+      "heading": "Applying episode payment to cancer"
+    },
+    {
+      "body": "The final OCM evaluation found minimal net savings to Medicare — about 0.2% of episode costs in the best-performing cohort. However, quality improvements were meaningful: participating practices showed higher hospice use, fewer ED visits, and better symptom documentation. The successor Enhancing Oncology Model (EOM, 2023–) focuses on a smaller set of high-cost cancers with a modified payment approach.",
+      "type": "callout",
+      "heading": "OCM results: minimal savings, quality improvement",
+      "variant": "info"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Practices may avoid enrolling complex patients with more comorbidities or limited social support who are more likely to generate losses.",
+          "icon": "ti-scale",
+          "title": "Patient selection risk"
+        },
+        {
+          "body": "Rural practices lack post-acute partners and palliative care resources that urban practices can leverage to control episode costs.",
+          "icon": "ti-map-pin",
+          "title": "Geography"
+        },
+        {
+          "body": "Black cancer patients have historically received less aggressive treatment. VBP models that reward cost reduction must ensure they don't reinforce undertreatment.",
+          "icon": "ti-skin",
+          "title": "Racial disparities"
+        },
+        {
+          "body": "Cancer drug prices have risen 10–15% annually. Episode benchmarks can be overwhelmed by new drug approvals mid-performance period.",
+          "icon": "ti-pill",
+          "title": "Drug costs"
+        }
+      ],
+      "heading": "Equity in oncology VBC"
+    }
+  ],
+  "tags": [
+    "oncology",
+    "OCM",
+    "EOM",
+    "cancer",
+    "chemotherapy bundle"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T22:13:39.098653+00:00",
+  "updated_at": "2026-06-02T21:31:26.296116+00:00",
+  "sanity_slug": "oncology-care-model"
+}

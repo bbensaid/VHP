@@ -1,0 +1,608 @@
+{
+  "_createdAt": "2026-05-29T03:32:27Z",
+  "_id": "interop-bulk-fhir",
+  "_rev": "rL4Cn5Sfo5Z8rzPmDw9dvK",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T04:53:44Z",
+  "body": [
+    {
+      "_key": "s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Individual-Record APIs Are Not Enough"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Standard FHIR REST APIs are brilliant for the single-patient interaction: a clinician clicks into a chart, the app fires a GET /Patient/{id}/$everything, and within seconds the full record arrives. That model works perfectly at the bedside. It falls apart, however, the moment you need data on thousands or millions of patients simultaneously. A payer managing a Medicare Advantage panel of 500,000 members cannot issue half a million sequential HTTP requests to compute a single quality measure. Network latency alone would make the job take days, and the server on the other end would almost certainly throttle or block the traffic long before completion."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Population health analytics, value-based care reporting, actuarial modeling, public health surveillance, and clinical research all share a common requirement: access to cohort-level data in bulk. Quality measure programs such as HEDIS require health plans to assemble longitudinal records spanning years of encounters, lab results, prescriptions, and diagnoses for every enrolled member. Doing that record-by-record through a patient-facing API is not just slow — it is architecturally wrong. The data pipeline breaks down at scale."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Payer-to-payer data exchange introduces a second pressure point. When a member switches insurance plans, the incoming payer must receive the full claims and clinical history for that member from the prior payer. Under CMS rules finalized in 2024, impacted payers must support this exchange via FHIR APIs and must provide data going back five years. Doing that for thousands of concurrent member transitions demands a purpose-built bulk mechanism, not patient-by-patient REST calls. Bulk FHIR was designed precisely for these scenarios, enabling server-side export jobs that run asynchronously and deliver data as downloadable files."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Individual FHIR REST",
+        "points": [
+          "One request per patient per resource type",
+          "Optimized for real-time, interactive workflows",
+          "Hundreds of thousands of round trips for large populations",
+          "Server throttling and rate limits hit quickly",
+          "Impractical for quality reporting or research at scale"
+        ]
+      },
+      "right": {
+        "label": "Bulk FHIR Export",
+        "points": [
+          "Single kick-off request covers an entire group or system",
+          "Asynchronous: server builds files in the background",
+          "Data delivered as NDJSON files, one per resource type",
+          "Designed for pipelines, warehouses, and analytics platforms",
+          "Supports population health, payer exchange, and research"
+        ]
+      },
+      "title": "Individual FHIR API vs. Bulk FHIR"
+    },
+    {
+      "_key": "s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The Bulk FHIR Specification: How It Works"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The normative standard is the HL7 FHIR Bulk Data Access Implementation Guide, currently at version 2.0.0 (STU 2), published by HL7 International and available at hl7.org/fhir/uv/bulkdata/. The specification builds on top of FHIR R4 and defines three export endpoints that correspond to different scopes of data. The Group/$export endpoint exports all FHIR resources for members of a named Group resource — the most common use case for payer populations and clinical cohorts. The Patient/$export endpoint exports resources for all patients on the server. The System/$export endpoint (sometimes written /$export) exports every resource in the system regardless of patient linkage, useful for operational data migrations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The protocol follows an asynchronous kick-off pattern. The client sends a GET or POST request to the chosen export endpoint with the HTTP header Prefer: respond-async. The server immediately returns an HTTP 202 Accepted response — it does not start streaming data yet. Crucially, the 202 response includes a Content-Location header whose value is a polling URL. The client then polls that URL at regular intervals (using exponential back-off as recommended by the specification) until the server returns a 200 OK response with a JSON manifest listing the completed output files. Each output file contains resources of exactly one FHIR type — for example, all Patient resources in one file, all Condition resources in another."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The output format is NDJSON — Newline Delimited JSON — with the MIME type application/fhir+ndjson. NDJSON serializes each FHIR resource as a single line of compact JSON with no internal whitespace, separated from the next resource by a newline character. This design enables streaming parsers to process files line by line without loading the entire document into memory, making it practical to handle files that contain millions of resources. Analytics platforms, data warehouses, and research data pipelines can ingest NDJSON files directly into columnar storage engines such as Apache Parquet or BigQuery without additional transformation overhead."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Client sends GET [base]/Group/{id}/$export with header Prefer: respond-async and optional parameters like _type (resource types to include) and _since (date filter). Server responds 202 Accepted with Content-Location header pointing to a status URL.",
+          "title": "Kick-Off Request"
+        },
+        {
+          "_key": "step2",
+          "description": "Client polls the Content-Location URL. Server returns 202 (still in progress) with optional X-Progress header, or 200 OK (complete) with JSON manifest of output files. Client should use exponential back-off; server may include Retry-After hints.",
+          "title": "Status Polling"
+        },
+        {
+          "_key": "step3",
+          "description": "The 200 OK body is a JSON object with fields: transactionTime, request (original URL), requiresAccessToken (boolean), output (array of file descriptors), and error (array of error file descriptors for any resources that failed to export).",
+          "title": "Manifest Inspection"
+        },
+        {
+          "_key": "step4",
+          "description": "Client downloads each NDJSON file listed in the output array using bearer token authentication if requiresAccessToken is true. Files are organized by resource type; large resource sets may be split across multiple numbered files.",
+          "title": "File Download"
+        },
+        {
+          "_key": "step5",
+          "description": "After successfully retrieving all files, client sends DELETE to the status URL to signal the server that files can be cleaned up, freeing server storage.",
+          "title": "Delete Request"
+        }
+      ],
+      "title": "The Bulk FHIR Async Export Workflow"
+    },
+    {
+      "_key": "s2analogy",
+      "_type": "analogyBlock",
+      "analogy": "Think of bulk FHIR like ordering a freight shipment rather than buying items one by one at a store counter. You place a single order (kick-off request), the warehouse assembles your pallet in the background (server builds NDJSON files), you check the tracking number periodically (status polling), and then you pick up the whole shipment at once (file download). Walking into the store and buying 500,000 items individually would be absurd — yet that is exactly what individual FHIR REST calls require at population scale.",
+      "concept": "Bulk FHIR async export is to population data what freight shipping is to retail: designed for volume, not individual transactions."
+    },
+    {
+      "_key": "s2stats",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Group/$export, Patient/$export, System/$export",
+          "label": "Export Endpoints",
+          "value": "3"
+        },
+        {
+          "_key": "s2",
+          "context": "HL7 Bulk Data Access STU 2, built on FHIR R4",
+          "label": "Current IG Version",
+          "value": "v2.0.0"
+        },
+        {
+          "_key": "s3",
+          "context": "One FHIR resource per line, streaming-friendly",
+          "label": "Output MIME Type",
+          "value": "application/fhir+ndjson"
+        },
+        {
+          "_key": "s4",
+          "context": "Async pattern: server queues job, returns Content-Location",
+          "label": "Kick-Off HTTP Response",
+          "value": "202 Accepted"
+        }
+      ]
+    },
+    {
+      "_key": "s3h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Regulatory Drivers: CMS and ONC Requirements"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Bulk FHIR moved from a promising technical idea to a federal mandate through two landmark rules. The ONC 21st Century Cures Act Final Rule, published in May 2020, required certified health IT developers to support the HL7 FHIR Bulk Data Access IG (v1.0.0, STU 1) as part of their certification criteria. Specifically, the rule mandated support for the Group/$export operation, enabling population-level data extraction from electronic health records. The compliance deadline for certified EHR systems was December 31, 2022, meaning that since January 2023, any CEHRT-certified system must support bulk export of USCDI data elements for defined patient groups."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "On the payer side, CMS issued the Interoperability and Patient Access Final Rule (CMS-9115-F) in 2020, requiring Medicare Advantage organizations, Medicaid managed care plans, CHIP agencies, and QHP issuers to implement FHIR-based Patient Access APIs. The subsequent CMS Interoperability and Prior Authorization Final Rule (CMS-0057-F), published February 2024, extended these requirements and introduced mandatory Payer-to-Payer Bulk Data Exchange. Under CMS-0057-F, impacted payers must implement a FHIR-based payer-to-payer API that uses Bulk FHIR to transfer clinical data, claims and encounter data, and prior authorization records for members transitioning between plans. Payers must exchange data covering the prior five years of a member's history. The enforcement deadline for this requirement is January 1, 2027."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Trusted Exchange Framework and Common Agreement (TEFCA) adds a third layer of momentum. ONC's FHIR Roadmap for TEFCA Exchange version 2 charts a four-stage path toward full FHIR adoption across Qualified Health Information Networks (QHINs). Stage 2 — requiring QHIN-facilitated FHIR API exchange — was completed in 2024. Stage 3, piloting QHIN-to-QHIN FHIR exchange, is targeted for 2025 pilot implementation. While TEFCA does not yet mandate bulk FHIR specifically, its FHIR roadmap creates the network infrastructure through which bulk transfers between organizations will eventually flow. TEFCA-connected QHINs are expected to support bulk exchange as the framework matures toward end-to-end FHIR exchange in Stage 4."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3warn",
+      "_type": "warningBlock",
+      "message": "CMS updated the enforcement date for payer-to-payer bulk FHIR API requirements to January 1, 2027. Payers subject to CMS-0057-F — including Medicare Advantage organizations, Medicaid managed care plans, and QHP issuers — must have compliant Bulk FHIR APIs operational by that date. Non-compliance can result in civil monetary penalties.",
+      "title": "CMS-0057-F Deadline: January 1, 2027"
+    },
+    {
+      "_key": "s3ex",
+      "_type": "exampleBlock",
+      "content": "Under the ONC Cures Act Final Rule, certified health IT must support: (1) the HL7 FHIR Bulk Data Access IG including mandatory Group/$export; (2) SMART Backend Services authorization for system-to-system access; (3) export of all USCDI v1 data elements — over 100 FHIR resource types — for defined patient groups. These requirements apply to any system seeking ONC certification, covering the vast majority of hospitals and large ambulatory practices in the United States.",
+      "title": "What ONC Requires in Certified EHRs"
+    },
+    {
+      "_key": "s4h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Real-World Use Cases: From Quality Measures to Research"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most prominent active initiative involving Bulk FHIR in 2024 and 2025 is the NCQA Bulk FHIR Quality Coalition. The National Committee for Quality Assurance (NCQA) — the organization that administers HEDIS, the industry-standard quality measurement program — launched the coalition to perform end-to-end testing of regulated FHIR data using digital HEDIS measurement as the real-world test case. Representatives from CMS and the Assistant Secretary for Technology Policy (ASTP, formerly ONC) participate as observers. The coalition brings together cohorts of health plans, Data Aggregator Validation (DAV)-certified data partners, and technology vendors to build FHIR data pipelines from clinical and claims data, then test those pipelines against HEDIS-specific FHIR Implementation Guides."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "HEDIS electronic measures represent a paradigm shift in quality reporting. NCQA has converted the lengthy HEDIS Volume 2 measure specifications into Clinical Quality Language (CQL), enabling automated, consistent computation directly against FHIR data rather than relying on manual chart abstraction, fax-based data collection, or proprietary extracts. A Bulk FHIR pipeline for HEDIS measurement works as follows: a health plan kicks off a Group/$export against a network provider's FHIR server for its enrolled members, receives NDJSON files containing claims (via CARIN Blue Button FHIR IG) and clinical data (via US Core FHIR IG), and runs CQL measure logic against the combined dataset. NCQA aims to transition HEDIS reporting to fully digital measures by 2030, and Bulk FHIR is the foundational data transport layer for that transition."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Research platforms represent a third major use case. Academic medical centers and research networks use the HL7 Da Vinci Payer Data Exchange (PDex) Implementation Guide alongside Bulk FHIR to build longitudinal patient datasets for clinical trials, retrospective cohort studies, and machine learning model training. The combination of Group/$export with _type filtering (limiting exports to specific resource types) and _since date parameters enables incremental data updates — a research platform can pull only the new encounters and lab results since its last extract, keeping a population dataset current without re-downloading the entire history. This incremental export pattern dramatically reduces server load and network transfer volumes while maintaining dataset freshness."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex",
+      "_type": "exampleBlock",
+      "content": "When a Medicare Advantage member switches plans on January 1, the incoming payer must request five years of historical data from the prior payer. Under CMS-0057-F, the prior payer's Payer-to-Payer Bulk API must return: US Core clinical data (conditions, medications, allergies, procedures), claims and encounter data with financial fields excluded, and active and pending prior authorization records. The data is exported as NDJSON via Group/$export for the cohort of transitioning members, transferred securely, and ingested into the incoming payer's care management systems — enabling continuity of care without gaps in clinical context.",
+      "title": "Payer-to-Payer Member Transition in Practice"
+    },
+    {
+      "_key": "s4stats",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Target year for all-digital HEDIS reporting via FHIR",
+          "label": "NCQA Digital HEDIS Goal",
+          "value": "2030"
+        },
+        {
+          "_key": "s2",
+          "context": "CMS mandates payers exchange up to 5 years of member data",
+          "label": "P2P History Required",
+          "value": "5 Years"
+        },
+        {
+          "_key": "s3",
+          "context": "FHIR resource types required in certified EHR bulk exports",
+          "label": "USCDI Data Elements",
+          "value": "100+"
+        },
+        {
+          "_key": "s4",
+          "context": "Payer-to-payer Bulk FHIR API enforcement date",
+          "label": "CMS-0057-F Deadline",
+          "value": "Jan 2027"
+        }
+      ]
+    },
+    {
+      "_key": "s5h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Implementation Challenges and Security Considerations"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Authentication for Bulk FHIR is handled by the SMART Backend Services Authorization specification, defined within the SMART App Launch IG (currently v2.2.0) and referenced by the Bulk Data Access IG. Unlike user-facing SMART on FHIR apps, bulk clients operate without a human in the loop — there is no browser redirect or login screen. Instead, the client registers its public key (as a JSON Web Key Set, or JWKS) with the authorization server, then uses an asymmetric key pair to sign a JWT assertion. The authorization server validates the JWT against the registered public key and issues a short-lived OAuth 2.0 bearer token. This token is then presented with each bulk export request. The entire flow requires TLS 1.2 or higher for all connections."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Large file handling presents engineering challenges that developers frequently underestimate. A bulk export for a payer with millions of members can produce tens of thousands of NDJSON files totaling hundreds of gigabytes or more. Servers must implement file expiration policies (the Bulk Data IG notes files may be deleted after retrieval), and clients must download files promptly — implementations commonly expire export files after 24 to 72 hours. On the client side, NDJSON files must be streamed and processed line by line rather than loaded entirely into memory. Parallelizing downloads across multiple files, using S3-compatible object storage as a landing zone, and employing streaming ETL pipelines are standard patterns for production bulk FHIR consumers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Privacy risks at population scale are qualitatively different from single-patient access. A bulk export grants access to the records of thousands or millions of individuals simultaneously, meaning a misconfigured authorization scope or a compromised client credential exposes an entire population's data in a single breach. De-identification requirements apply when bulk FHIR data is used for research under an IRB protocol: HIPAA Safe Harbor de-identification must remove all 18 specified identifiers, or Expert Determination must certify re-identification risk below defined thresholds. Rate limiting is equally important — servers enforce HTTP 429 Too Many Requests responses when clients exceed agreed traffic levels, and production systems must implement tenant-specific rate limits to prevent any single bulk consumer from degrading service for others. Security best practices recommend regular audits of registered backend service credentials and rotation of asymmetric key pairs on a defined schedule."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5warn",
+      "_type": "warningBlock",
+      "message": "Unlike single-patient APIs where a misconfigured scope exposes one record, a bulk FHIR scope error exposes an entire population simultaneously. Organizations must implement least-privilege scoping (e.g., system/Patient.read rather than system/*.read), audit all registered backend service credentials regularly, and monitor export job logs for anomalous access patterns. SMART Backend Services credentials should be treated with the same security controls as privileged database accounts.",
+      "title": "Scope Misconfiguration Is a Population-Scale Risk"
+    },
+    {
+      "_key": "s5cmp",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "SMART Backend Services (Bulk FHIR)",
+        "points": [
+          "No human user in the authorization loop",
+          "Asymmetric JWT (RS384 or ES384) client authentication",
+          "Client registers public JWKS with auth server",
+          "OAuth 2.0 client credentials grant flow",
+          "System-level scopes (system/*.read)",
+          "Used for analytics platforms, data warehouses, payers"
+        ]
+      },
+      "right": {
+        "label": "Patient-Facing SMART on FHIR",
+        "points": [
+          "Human user authenticates via browser redirect",
+          "Standard OAuth 2.0 authorization code flow",
+          "App registered with client_id and redirect URI",
+          "Patient or practitioner grants consent interactively",
+          "Patient-level scopes (patient/*.read)",
+          "Used for patient portals, clinical decision support apps"
+        ]
+      },
+      "title": "SMART Backend Services vs. Patient-Facing SMART"
+    },
+    {
+      "_key": "tkwy",
+      "_type": "takeawayBlock",
+      "points": [
+        "Standard FHIR REST APIs require one request per patient — impractical for populations of thousands or millions. Bulk FHIR solves this with a single async kick-off that exports entire cohorts as downloadable NDJSON files.",
+        "The HL7 Bulk Data Access Implementation Guide (v2.0.0, STU 2) defines three export endpoints: Group/$export for defined cohorts, Patient/$export for all patients, and System/$export for all server resources.",
+        "The async kick-off pattern returns 202 Accepted immediately. Clients poll a status URL until they receive a 200 OK with a JSON manifest listing NDJSON output files ready for download.",
+        "NDJSON (application/fhir+ndjson) encodes one FHIR resource per line, enabling streaming parsers to process files without loading them entirely into memory — critical for files containing millions of resources.",
+        "The ONC 21st Century Cures Act Final Rule mandated that certified EHRs support Bulk FHIR (Group/$export) for USCDI data elements by December 31, 2022. CMS-0057-F requires payer-to-payer Bulk FHIR data exchange by January 1, 2027.",
+        "NCQA's Bulk FHIR Quality Coalition is actively using bulk exports as the data pipeline for digital HEDIS measurement, targeting full digital quality reporting by 2030.",
+        "SMART Backend Services authorization — using asymmetric JWT key pairs and OAuth 2.0 client credentials flow — provides the system-to-system authentication layer required for Bulk FHIR, with no human user in the loop.",
+        "Privacy and security risks are amplified at population scale: a single misconfigured bulk credential can expose millions of records. Least-privilege scoping, credential rotation, and rate limiting are non-negotiable safeguards."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "The Bulk Data Access IG specifies that a successful kick-off request receives an HTTP 202 Accepted response, confirming the export job has been queued but not yet completed. The response also includes a Content-Location header with the URL the client must poll to check progress — 200 OK only arrives when the export files are fully ready for download.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "200 OK — the data is returned synchronously in the response body"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "202 Accepted — the job is queued and a Content-Location polling URL is provided"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "302 Found — the client is redirected to the output file location"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "204 No Content — the server acknowledges the request without further detail"
+        }
+      ],
+      "question": "Which HTTP response code does a FHIR server return immediately after a successful bulk export kick-off request?"
+    },
+    {
+      "_key": "srch",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srchs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] HL7 FHIR Bulk Data Access Implementation Guide v2.0.0 — https://hl7.org/fhir/uv/bulkdata/ — Normative specification for export endpoints, async kick-off pattern, NDJSON format, and SMART Backend Services authorization requirements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] CMS Interoperability and Prior Authorization Final Rule (CMS-0057-F), February 2024 — https://www.cms.gov/priorities/burden-reduction/overview/interoperability/policies-regulations/cms-interoperability-prior-authorization-final-rule-cms-0057-f — Mandates payer-to-payer Bulk FHIR data exchange with January 1, 2027 enforcement deadline; requires five years of member history including claims, clinical data, and prior authorizations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] ONC 21st Century Cures Act Final Rule — https://www.healthit.gov/topic/oncs-cures-act-final-rule — Required certified EHRs to support HL7 Bulk Data Access IG (Group/$export) and SMART Backend Services for population-level USCDI data export, compliance deadline December 31, 2022."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] NCQA Bulk FHIR Quality Coalition — https://www.ncqa.org/bulk-fhir-api-quality-coalition/ — End-to-end testing initiative using digital HEDIS measurement as the real-world use case for Bulk FHIR pipelines; CMS and ASTP participating as observers; goal of all-digital HEDIS by 2030."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] SMART App Launch IG v2.2.0 — Backend Services — https://build.fhir.org/ig/HL7/smart-app-launch/backend-services.html — Defines asymmetric JWT client authentication, JWKS registration, OAuth 2.0 client credentials flow, and TLS 1.2+ requirements for system-to-system Bulk FHIR authorization."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] ONC FHIR Roadmap for TEFCA Exchange v2 — https://www.healthit.gov/buzz-blog/tefca/fhir-roadmap-for-tefca-exchange-v-2-fhir-apis-are-on-their-way-into-tefca-exchange — Four-stage TEFCA FHIR adoption timeline; Stage 2 completed 2024, Stage 3 QHIN-to-QHIN FHIR exchange piloted in 2025, providing network infrastructure for future bulk FHIR exchange."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "interop-bulk-fhir"
+  },
+  "title": "Bulk FHIR: Exporting Population-Level Data at Scale"
+}

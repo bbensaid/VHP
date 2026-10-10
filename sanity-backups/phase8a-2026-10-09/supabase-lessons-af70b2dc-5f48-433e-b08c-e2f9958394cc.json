@@ -1,0 +1,97 @@
+{
+  "id": "af70b2dc-5f48-433e-b08c-e2f9958394cc",
+  "track_id": "402105c4-fe88-4d8e-873c-28b5bc1bdb86",
+  "pillar": "policy",
+  "order": 3,
+  "slug": "hie-data-governance-frameworks",
+  "title": "Data Governance for HIEs: Policies, Participation & Trust",
+  "summary": "How health information exchanges establish governance frameworks, data sharing agreements, and trust relationships — and the ongoing challenge of patient matching without a universal identifier.",
+  "estimated_minutes": 15,
+  "objectives": [
+    {
+      "id": "obj_dg1",
+      "text": "Describe the key components of a health data sharing agreement"
+    },
+    {
+      "id": "obj_dg2",
+      "text": "Explain why the US lacks a national patient identifier and its consequences"
+    },
+    {
+      "id": "obj_dg3",
+      "text": "Identify different HIE governance models"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Technical interoperability enables data to flow. Governance determines whether it should flow, to whom, under what conditions, and with what accountability. An HIE without strong governance is a liability — data flowing without appropriate controls creates HIPAA risk, patient trust violations, and potential competitive harm. An HIE with strong governance is a trusted infrastructure that organizations join because the rules are clear and consistently enforced.\n\nThe foundation of HIE governance is the participation agreement — the legal document that every participating organization signs before joining the network. Participation agreements define what data will be shared, how it may be used, security requirements, breach notification obligations, fees, and liability allocation. Beyond the bilateral participation agreement, HIEs often have operating policies and procedures that govern specific exchange scenarios: what happens when a patient wants to opt out, how disputes are resolved, how the HIE handles a participating organization's security breach.\n\nData sharing agreements (DSAs) and data use agreements (DUAs) govern specific data exchange relationships — particularly when data is used for research, quality improvement, or analytics beyond direct treatment. A DSA might govern a hospital's sharing of ADT data with an ACO care management platform. A DUA governs a researcher's use of a Limited Data Set. These agreements create legal accountability for appropriate data use.",
+      "type": "text",
+      "heading": "Trust cannot be assumed — it must be governed"
+    },
+    {
+      "body": "The US has no universal patient identifier — a deliberate policy choice made in the HIPAA era when Congress prohibited HHS from creating one, citing privacy concerns. The consequences are significant: patient matching across organizations relies on probabilistic algorithms using name, date of birth, address, and phone number — with error rates that create both safety risks (wrong patient's data merged) and exchange failures (same patient not matched). ONC's Patient Matching Algorithm Challenge sought to improve matching accuracy. FHIR's $match operation standardizes the API for matching. But until a universal patient identifier exists — or biometric matching is adopted — patient matching will remain health IT's most persistent unsolved problem.",
+      "type": "callout",
+      "title": "The national patient identifier debate",
+      "variant": "warning"
+    },
+    {
+      "rows": [
+        [
+          "Nonprofit HIE",
+          "Independent nonprofit organization operating exchange on behalf of community",
+          "Board of directors, community stakeholders",
+          "VITL (Vermont), NC HealthConnex"
+        ],
+        [
+          "State-mandated HIE",
+          "Legislatively created HIE with state oversight",
+          "State government, legislature",
+          "Many state HIEs with statutory authority"
+        ],
+        [
+          "Vendor-operated network",
+          "Commercial vendor operating exchange as business service",
+          "Vendor accountability, contract terms",
+          "CommonWell, some regional networks"
+        ],
+        [
+          "Hospital-operated",
+          "Health system operates its own HIE for its network",
+          "Health system governance",
+          "Epic Care Everywhere, Advocate Aurora HIE"
+        ],
+        [
+          "Public utility model",
+          "Government-operated as public infrastructure",
+          "Government accountability",
+          "CMS Blue Button, some state Medicaid HIEs"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Model",
+        "Description",
+        "Accountability",
+        "Examples"
+      ],
+      "heading": "HIE governance models"
+    },
+    {
+      "type": "key_stat",
+      "label": "of provider directory entries are inaccurate in payer systems",
+      "value": "30-50%",
+      "context": "Patient matching and provider directory accuracy are related problems — both stem from the absence of universal identifiers and the manual processes used to maintain identity records. Studies consistently find 30-50% error rates in payer provider directories, undermining network adequacy assessments and patient provider searches."
+    }
+  ],
+  "tags": [
+    "data governance",
+    "HIE",
+    "data sharing agreement",
+    "master patient index",
+    "patient matching"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:57.43766+00:00",
+  "updated_at": "2026-06-01T14:54:57.579627+00:00",
+  "sanity_slug": "interop-data-governance"
+}

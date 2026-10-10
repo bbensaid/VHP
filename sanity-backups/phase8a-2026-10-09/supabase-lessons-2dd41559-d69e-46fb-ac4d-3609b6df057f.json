@@ -1,0 +1,97 @@
+{
+  "id": "2dd41559-d69e-46fb-ac4d-3609b6df057f",
+  "track_id": "bd821302-397d-4c09-8604-cd2739b629c6",
+  "pillar": "policy",
+  "order": 2,
+  "slug": "cms-patient-access-api",
+  "title": "CMS Interoperability Rule: Patient Access & Provider Directory APIs",
+  "summary": "The 2020 CMS rule requiring Medicare Advantage, Medicaid, CHIP, and QHP payers to implement FHIR R4 APIs — what data must be available, who must comply, and what changed for members.",
+  "estimated_minutes": 18,
+  "objectives": [
+    {
+      "id": "obj_pa1",
+      "text": "Identify which payers must comply with the CMS Interoperability Rule"
+    },
+    {
+      "id": "obj_pa2",
+      "text": "Describe what data must be available through the Patient Access API"
+    },
+    {
+      "id": "obj_pa3",
+      "text": "Explain the Provider Directory API requirement and its purpose"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "While ONC's interoperability rules focused on EHR vendors and providers, CMS simultaneously issued the Interoperability and Patient Access Final Rule in May 2020 — targeting the other major holder of health data: health insurance payers. The rule requires Medicare Advantage organizations, state Medicaid and CHIP programs, and Qualified Health Plans on the Federally Facilitated Exchange to implement FHIR R4 APIs that give members access to their own claims, clinical, and formulary data.\n\nThe Patient Access API requirement went into effect July 1, 2021 for MA plans and January 1, 2022 for Medicaid and CHIP programs. This means that members can now connect third-party apps to their health plan's FHIR server and access their complete claims history, clinical data the plan has received, drug formulary information, and cost-sharing details. The data must conform to implementation guides including CARIN Blue Button for consumer-directed exchange and the DaVinci PDex guide for clinical data.\n\nThe practical impact has been significant. Over 20 million patients had connected apps to payer FHIR APIs by 2024. Companies like Manifest MedEx, 1upHealth, and Particle Health have built businesses aggregating FHIR data from payers on behalf of patients. Apple Health Records can pull payer claims data in addition to clinical data from EHRs — giving patients a more complete picture of their health history than any single source provides.",
+      "type": "text",
+      "heading": "Payers join the interoperability mandate"
+    },
+    {
+      "rows": [
+        [
+          "Claims & Encounter Data",
+          "CARIN Blue Button IG",
+          "All claims (medical, pharmacy, dental), explanation of benefits, adjudication details"
+        ],
+        [
+          "Clinical Data",
+          "US Core / PDex IG",
+          "Clinical data the plan has received — lab results, conditions, medications from claims"
+        ],
+        [
+          "Drug Formulary",
+          "DaVinci PDex Drug Formulary IG",
+          "Plan formulary, tier structure, prior auth requirements, costs by tier"
+        ],
+        [
+          "Provider Directory",
+          "DaVinci PDex Plan Net IG",
+          "In-network providers: name, specialty, address, phone, accepting patients status"
+        ],
+        [
+          "Prior Authorization",
+          "DaVinci PAS IG (2026 rule)",
+          "Prior auth decisions, pending requests, required documentation"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Data Category",
+        "Implementation Guide",
+        "Content"
+      ],
+      "heading": "CMS Patient Access API data requirements"
+    },
+    {
+      "type": "key_stat",
+      "label": "patients connected apps to payer FHIR APIs by 2024",
+      "value": "20M+",
+      "context": "The CMS Patient Access API requirement has driven significant patient-facing data access. Over 20 million patients had connected at least one third-party app to their health plan's FHIR API by 2024, accessing claims history, clinical data, and formulary information."
+    },
+    {
+      "body": "CMS requires payers to expose their data through FHIR APIs — but payers hold primarily claims data, not structured clinical data. When payers attempt to expose 'clinical data,' they are typically mapping ICD-10 diagnosis codes from claims to FHIR Condition resources and NDC drug codes to FHIR MedicationRequest resources. This mapping is lossy: claims codes don't capture clinical nuance, and payer data lags by weeks to months. Developers building on payer FHIR APIs must understand they are working with claims-derived clinical data, not EHR-quality records.",
+      "type": "callout",
+      "title": "Why payer API data quality varies",
+      "variant": "warning"
+    },
+    {
+      "body": "The Provider Directory API requires payers to expose their provider networks as FHIR data — including specialty, location, languages spoken, whether the provider is accepting new patients, and telehealth availability. This data is used by patients searching for in-network providers, by regulators evaluating network adequacy, and by researchers studying provider distribution. The DaVinci PDex Plan Net Implementation Guide defines the FHIR profiles for this data.",
+      "type": "callout",
+      "title": "Provider Directory API: the network adequacy use case",
+      "variant": "info"
+    }
+  ],
+  "tags": [
+    "CMS",
+    "patient access API",
+    "FHIR",
+    "payers",
+    "interoperability rule"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:42.669731+00:00",
+  "updated_at": "2026-06-01T14:54:57.63002+00:00",
+  "sanity_slug": "interop-cms-patient-access-api"
+}

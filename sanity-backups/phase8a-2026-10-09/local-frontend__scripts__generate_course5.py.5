@@ -629,7 +629,7 @@ course = {
             {
               "type": "text",
               "heading": "Defining what cannot be done",
-              "body": "The 21st Century Cures Act defines information blocking as a practice that — the actor knows or should know — is likely to interfere with, prevent, or materially discourage access, exchange, or use of electronic health information. The key elements of this definition deserve careful attention. First, it is intent-sensitive: actors who should have known their practice would interfere cannot claim innocent ignorance. Second, 'materially discourage' is a lower bar than 'prevent' — practices that make data access difficult, slow, expensive, or burdensome without completely blocking it can still constitute information blocking. Third, the definition covers access, exchange, AND use — meaning restrictions on how data can be used after it has been shared also fall within scope.\n\nBy July 31, 2026, ONC had logged 2,450 claims of possible information blocking, about 79 percent naming a health care provider. Common allegations involve: providers restricting patient access to their own records, health IT developers charging unreasonable fees for data export, and HIEs refusing to connect with competing networks. ONC publishes complaint data in aggregate, but individual enforcement actions against health IT developers — the highest-penalty category — have been slow to materialize; HHS-OIG, which imposes the penalties, could act only on conduct from September 1, 2023.\n\nCritically, the information blocking rules do not apply to all health information. They apply specifically to 'electronic health information' (EHI) — a defined term that initially covered the data elements in USCDI v1 (as of April 2021) and was later expanded to cover all EHI that a HIPAA covered entity would include in a designated record set (as of October 2022). This expansion significantly broadened the scope of what must be shared upon request."
+              "body": "The 21st Century Cures Act defines information blocking as a practice that — the actor knows or should know — is likely to interfere with, prevent, or materially discourage access, exchange, or use of electronic health information. The key elements of this definition deserve careful attention. First, it is intent-sensitive: actors who should have known their practice would interfere cannot claim innocent ignorance. Second, 'materially discourage' is a lower bar than 'prevent' — practices that make data access difficult, slow, expensive, or burdensome without completely blocking it can still constitute information blocking. Third, the definition covers access, exchange, AND use — meaning restrictions on how data can be used after it has been shared also fall within scope.\n\nONC received nearly 700 information blocking complaints in the first two years of enforcement (April 2021–March 2023). The most common complaints involved: providers restricting patient access to their own records, health IT developers charging unreasonable fees for data export, and HIEs refusing to connect with competing networks. ONC publishes complaint data in aggregate, but individual enforcement actions against health IT developers — the highest-penalty category — have been slower to materialize as ONC builds its enforcement infrastructure.\n\nCritically, the information blocking rules do not apply to all health information. They apply specifically to 'electronic health information' (EHI) — a defined term that initially covered the data elements in USCDI v1 (as of April 2021) and was later expanded to cover all EHI that a HIPAA covered entity would include in a designated record set (as of October 2022). This expansion significantly broadened the scope of what must be shared upon request."
             },
             {
               "type": "comparison_table",
@@ -654,15 +654,15 @@ course = {
             },
             {
               "type": "key_stat",
-              "value": "2,450",
-              "label": "claims of possible information blocking logged by ONC (Apr 2021–Jul 2026)",
-              "context": "ONC logged 2,450 claims of possible information blocking from April 5, 2021 through July 31, 2026; about 79 percent named a healthcare provider and about 14 percent a certified health IT developer. ONC shares claims with HHS-OIG, which investigates."
+              "value": "700+",
+              "label": "information blocking complaints received by ONC (first 2 years)",
+              "context": "ONC received approximately 700 information blocking complaints in the first two years of enforcement. The largest share involved healthcare providers limiting patient access to records, followed by health IT developer practices. ONC refers cases involving healthcare providers to OIG for investigation."
             },
             {
               "type": "callout",
               "variant": "info",
               "title": "ONC vs. OIG: who enforces what",
-              "body": "HHS-OIG has civil monetary penalty authority over health IT developers and health information networks/exchanges (up to $1M/violation). When OIG finds that a healthcare provider committed information blocking, it refers the provider to CMS, which applies 'disincentives' through Medicare programs such as MIPS, Promoting Interoperability, and the Shared Savings Program. The first healthcare provider disincentives were established in rules finalized in 2024. This bifurcated enforcement structure reflects the different leverage available over each actor type."
+              "body": "ONC has civil monetary penalty authority over health IT developers and health information networks (up to $1M/violation). Healthcare providers are referred to OIG, which can impose 'disincentives' — specifically, impacts on providers' CMS quality payment program participation. The first healthcare provider disincentives were established in rules finalized in 2024. This bifurcated enforcement structure reflects the different leverage available over each actor type."
             }
           ],
           "quiz": {
@@ -744,13 +744,13 @@ course = {
             {
               "type": "text",
               "heading": "Certification as the gateway to payment",
-              "body": "Certified EHR Technology (CEHRT) is not just a technical designation — it is a prerequisite for participation in multiple CMS payment programs. Eligible clinicians must use CEHRT to report the Promoting Interoperability category under MIPS. Hospitals must use CEHRT to attest to the Promoting Interoperability program. ACOs in the Medicare Shared Savings Program must use CEHRT. In this sense, ONC's certification program operates as a regulatory lever: by defining what certified technology must do, ONC shapes what health IT capabilities are available across the entire Medicare and Medicaid ecosystem.\n\nThe current baseline is the 2015 Edition Cures Update — a revision to the 2015 Edition certification criteria that incorporates the requirements of the 21st Century Cures Act. The most significant addition is the standardized API criterion: certified technology must offer a FHIR R4 API that supports the US Core Implementation Guide profiles, implements SMART on FHIR for authorization, and is available without special effort for any patient or application that meets the standard terms of service.\n\nCertification is performed by ONC-Authorized Certification Bodies (ONC-ACBs) — private organizations accredited by the ANSI National Accreditation Board and authorized by ONC — after products are tested by ONC-Authorized Testing Laboratories such as Drummond Group and SLI Compliance. Certification is product-specific: each EHR version must be separately tested and certified, which is why the Certified Health IT Product List (CHPL) may show dozens of certifications for a single EHR vendor across different product versions."
+              "body": "Certified EHR Technology (CEHRT) is not just a technical designation — it is a prerequisite for participation in multiple CMS payment programs. Eligible clinicians must use CEHRT to report the Promoting Interoperability category under MIPS. Hospitals must use CEHRT to attest to the Promoting Interoperability program. ACOs in the Medicare Shared Savings Program must use CEHRT. In this sense, ONC's certification program operates as a regulatory lever: by defining what certified technology must do, ONC shapes what health IT capabilities are available across the entire Medicare and Medicaid ecosystem.\n\nThe current baseline is the 2015 Edition Cures Update — a revision to the 2015 Edition certification criteria that incorporates the requirements of the 21st Century Cures Act. The most significant addition is the standardized API criterion: certified technology must offer a FHIR R4 API that supports the US Core Implementation Guide profiles, implements SMART on FHIR for authorization, and is available without special effort for any patient or application that meets the standard terms of service.\n\nCertification is performed by ONC-Authorized Certification Bodies (ONC-ACBs) — private organizations accredited by ONC to test and certify health IT products against the certification criteria. The two largest ONC-ACBs are Drummond Group and ICSA Labs. Certification is product-specific: each EHR version must be separately tested and certified, which is why the Certified Health IT Product List (CHPL) may show dozens of certifications for a single EHR vendor across different product versions."
             },
             {
               "type": "key_stat",
               "value": "96%",
-              "label": "of non-federal acute care hospitals had certified EHR technology (2021)",
-              "context": "EHR adoption driven by the HITECH Act incentive program reached near-saturation in hospitals by 2015. As of 2021, 96% of non-federal acute care hospitals had adopted certified health IT (ONC), compared to 28% of hospitals with an EHR in 2011."
+              "label": "of non-federal acute care hospitals had certified EHR technology (2023)",
+              "context": "EHR adoption driven by the HITECH Act incentive program reached near-saturation in hospitals by 2015. As of 2023, 96% of non-federal acute care hospitals use certified EHR technology, compared to 28% in 2011."
             },
             {
               "type": "callout",
@@ -763,11 +763,11 @@ course = {
               "heading": "2015 Edition Cures Update key criteria",
               "items": [
                 {"term": "Standardized API (g10)", "definition": "Must provide a FHIR R4 API supporting US Core profiles, SMART on FHIR authorization, and bulk FHIR export. The core interoperability requirement."},
-                {"term": "Electronic Prescribing (b3)", "definition": "Must support electronic prescribing to pharmacies via the NCPDP SCRIPT standard (controlled-substance e-prescribing is governed by DEA rules)."},
+                {"term": "Electronic Prescribing (b1)", "definition": "Must support electronic prescribing to pharmacies via NCPDP SCRIPT standard, including controlled substance prescribing (EPCS)."},
                 {"term": "Clinical Information Reconciliation (b2)", "definition": "Must support reconciliation of problem list, medication list, and medication allergy list when receiving C-CDA documents."},
-                {"term": "Real-Time Prescription Benefit (b4)", "definition": "Must support real-time benefit check — displaying patient-specific drug cost and formulary information at time of prescribing (criterion adopted by HTI-4 in 2025; part of the Base EHR definition from January 1, 2028)."},
+                {"term": "Real-Time Prescription Benefit (b11)", "definition": "Must support real-time benefit check — displaying patient-specific drug cost and formulary information at time of prescribing."},
                 {"term": "Patient Demographics (a5)", "definition": "Must capture sexual orientation, gender identity, and expanded race/ethnicity categories per ONC requirements."},
-                {"term": "Conditions & Maintenance of Certification", "definition": "Certified developers must meet real-world testing, transparency disclosure, and assurance conditions (45 CFR 170.402–170.406) — not just pass lab testing."}
+                {"term": "Conditions & Maintenance (d12–d13)", "definition": "Certified products must meet real-world testing, transparency disclosure, and assurance conditions — not just pass lab testing."}
               ]
             }
           ],
@@ -850,7 +850,7 @@ course = {
             {
               "type": "text",
               "heading": "Patients have a right to their own data — but it has been poorly enforced",
-              "body": "HIPAA has included a right of access since the Privacy Rule took effect in 2003: patients can request their medical records, and covered entities must provide them within 30 days (with one 30-day extension) in the format requested if readily producible. Fees are limited to the cost of copying, labor, and postage. On paper, this is a strong right. In practice, it was routinely violated without consequence for nearly two decades.\n\nOCR's Right of Access Initiative, launched in 2019, changed this. OCR began actively investigating access complaints and imposing civil monetary penalties for violations — even small ones. A physician practice that takes 6 months to fulfill a simple records request, charges $400 for a simple copy, or refuses to send records directly to a patient's designated app now faces real enforcement risk. By December 2024, OCR had announced 53 HIPAA right of access enforcement actions.\n\nThe Cures Act adds a separate, stronger layer of patient access rights for data held in certified EHR systems. Patients can now direct their EHR provider to share their data with any third-party application that meets the standardized API terms of service — without the covered entity's permission to use a specific app. This patient-directed data sharing is a fundamental new right that goes beyond what HIPAA requires."
+              "body": "HIPAA has included a right of access since the Privacy Rule took effect in 2003: patients can request their medical records, and covered entities must provide them within 30 days (with one 30-day extension) in the format requested if readily producible. Fees are limited to the cost of copying, labor, and postage. On paper, this is a strong right. In practice, it was routinely violated without consequence for nearly two decades.\n\nOCR's Right of Access Initiative, launched in 2019, changed this. OCR began actively investigating access complaints and imposing civil monetary penalties for violations — even small ones. A physician practice that takes 6 months to fulfill a simple records request, charges $400 for a simple copy, or refuses to send records directly to a patient's designated app now faces real enforcement risk. By 2024, OCR had imposed over $10 million in HIPAA right of access settlements.\n\nThe Cures Act adds a separate, stronger layer of patient access rights for data held in certified EHR systems. Patients can now direct their EHR provider to share their data with any third-party application that meets the standardized API terms of service — without the covered entity's permission to use a specific app. This patient-directed data sharing is a fundamental new right that goes beyond what HIPAA requires."
             },
             {
               "type": "comparison_table",
@@ -859,10 +859,10 @@ course = {
               "rows": [
                 ["Timeline", "30 days (60 with extension)", "Real-time or near-real-time"],
                 ["Format", "Requested format if readily producible", "Standardized FHIR R4 API"],
-                ["Scope", "Designated record set", "EHI (ePHI in the designated record set)"],
+                ["Scope", "Designated record set", "EHI (all data in CEHRT)"],
                 ["Third-party direction", "Patient can designate a recipient", "Patient can connect any certified app"],
                 ["Fees", "Cost-based, limited", "Cannot charge patients fees for their own data"],
-                ["Enforcement", "OCR, up to $50,000/violation", "Information blocking: OIG penalties (developers, HIEs/HINs); CMS disincentives (providers)"]
+                ["Enforcement", "OCR, up to $50,000/violation", "ONC/OIG information blocking rules"]
               ]
             },
             {
@@ -873,9 +873,9 @@ course = {
             },
             {
               "type": "key_stat",
-              "value": "53",
-              "label": "HIPAA right of access enforcement actions announced by OCR (2019–Dec 2024)",
-              "context": "OCR's Right of Access Initiative brought real enforcement to a patient right that had been largely theoretical. Actions have run from small-practice settlements to civil monetary penalties such as OHSU\'s $200,000 (finalized December 2024)."
+              "value": "$10M+",
+              "label": "in HIPAA right of access settlements (OCR, 2019–2024)",
+              "context": "OCR's Right of Access Initiative brought real enforcement to a patient right that had been largely theoretical. Settlements range from $3,500 (small practices) to $240,000 (larger organizations) per violation."
             }
           ],
           "quiz": {

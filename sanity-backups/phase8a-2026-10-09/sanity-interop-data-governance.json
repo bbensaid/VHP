@@ -1,0 +1,590 @@
+{
+  "_createdAt": "2026-05-29T03:54:53Z",
+  "_id": "interop-data-governance",
+  "_rev": "rL4Cn5Sfo5Z8rzPmE3afGz",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T17:24:07Z",
+  "body": [
+    {
+      "_key": "s1h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Who Owns Health Data? The Legal Reality"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "One of the most persistent misconceptions in American health care is that patients \"own\" their medical records. The intuition is understandable — the information is about the patient, generated in service of the patient, and feels intensely personal. Yet federal law does not grant patients ownership of the documents or data in their medical record. What HIPAA actually confers is a right of access — the right to inspect and obtain copies of protected health information held in a covered entity's \"designated record set.\" The covered entity — the hospital, physician practice, or health plan — retains custody and legal control of the originals. This distinction between access rights and ownership rights has profound consequences for every downstream governance question about who can use, sell, or delete health data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "State law adds another layer of complexity. Medical records statutes vary considerably across jurisdictions. Some states grant patients a stronger right to compel disclosure, set shorter response deadlines, or cap the fees providers may charge for copies. A handful of states have begun experimenting with broader patient rights language, but none has fully codified patient ownership in the property-law sense. Meanwhile, EHR vendor contracts routinely include clauses that assert the vendor's right to de-identify and aggregate data from the platform for product improvement, benchmarking, or sale — rights that providers often unknowingly sign away during procurement negotiations. The practical result is a three-way tension among the patient's access interests, the covered entity's custody rights, and the technology vendor's contractual data claims."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The HIPAA Privacy Rule's right of access has been actively enforced. HHS Office for Civil Rights ran a dedicated Right of Access Initiative beginning in 2019, resolving dozens of cases against covered entities that delayed, denied, or overcharged patients seeking their own records. Penalties ranged from thousands to hundreds of thousands of dollars. The message was clear: while patients may not \"own\" their data in a legal sense, covered entities are obligated to make it swiftly and affordably available. The confusion between access and ownership persists because in practical terms the distinction rarely matters to a patient who simply wants their lab results — but it matters enormously to anyone designing governance policy, setting data licensing terms, or building a secondary-use research program."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1w1",
+      "_type": "warningBlock",
+      "message": "HIPAA gives patients the right to obtain copies of their health records, but the covered entity retains legal custody. Patients cannot unilaterally delete their records from a provider's system or prevent a provider from retaining the data for legally required periods.",
+      "title": "Access Right ≠ Ownership"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Covered entities must fulfill access requests within 30 days, with one 30-day extension if needed",
+          "label": "Max HIPAA Response Time",
+          "value": "30 days"
+        },
+        {
+          "_key": "s2",
+          "context": "HHS has identified $6.50 as a safe-harbor flat fee for providing an electronic copy of PHI to the patient",
+          "label": "Flat-fee Safe Harbor",
+          "value": "$6.50"
+        },
+        {
+          "_key": "s3",
+          "context": "Each state layer sits on top of HIPAA, sometimes providing broader patient rights but never narrower ones",
+          "label": "Have Medical Records Statutes",
+          "value": "45+ states"
+        }
+      ]
+    },
+    {
+      "_key": "s2h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Data Stewardship Roles and Frameworks"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Governance frameworks clarify accountability by separating three related but distinct roles: the data owner, the data steward, and the data custodian. These roles, codified in the DAMA International Data Management Body of Knowledge (DAMA-DMBOK), now in its second edition with a third edition under active community development begun in 2025, provide a globally recognized vocabulary for assigning responsibility without conflating technical capability with policy authority. In healthcare, where the stakes of data misuse include regulatory penalties, patient harm, and reputational damage, clearly delineated roles are not administrative overhead — they are a patient safety mechanism."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The data owner is typically a senior executive or department head who bears ultimate accountability for a specific data asset — for example, the Chief Medical Officer who owns the clinical data domain, or the CFO who owns the revenue cycle dataset. The data owner defines the strategic policy: who may access the data, under what conditions, for what purposes, and with what retention schedule. The data steward is the operational role, often filled by a health information manager or clinical informaticist, who translates those policies into day-to-day practice — reviewing data quality exceptions, resolving identity-matching disputes, and serving as the business contact when a downstream team needs access. The data custodian is the technical role, typically an IT professional responsible for the infrastructure that stores, moves, and secures the data — managing encryption, backup schedules, access logs, and disaster recovery. None of these three roles is interchangeable; collapsing them into one person or one title is a governance anti-pattern that healthcare organizations frequently pay for during audits or breaches."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The American Health Information Management Association (AHIMA) published its Information Governance Principles for Healthcare (IGPHC) framework, organizing health information governance around eight principles: accountability, transparency, integrity, protection, compliance, availability, retention, and disposition. These principles apply not just to the EHR but to every information asset in the enterprise — claims data, scheduling systems, research databases, and even the informal data shadows created in spreadsheets and email attachments. AHIMA's emphasis on organization-wide scope was deliberate: data governance failures often occur precisely in the \"shadow IT\" spaces that formal governance programs ignore."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Data Steward",
+        "points": [
+          "Implements governance policies day-to-day",
+          "Resolves data quality and identity disputes",
+          "Acts as business liaison for data access requests",
+          "Monitors metadata and data dictionary entries"
+        ]
+      },
+      "right": {
+        "label": "Data Custodian",
+        "points": [
+          "Manages storage infrastructure and security controls",
+          "Enforces technical access controls and audit logs",
+          "Handles backup, recovery, and encryption",
+          "Ensures systems meet compliance requirements"
+        ]
+      },
+      "title": "Data Stewardship Role Comparison"
+    },
+    {
+      "_key": "s2an1",
+      "_type": "analogyBlock",
+      "analogy": "Think of health data governance like property management: the data owner is the property owner who sets the rules for the building; the data steward is the building manager who enforces those rules daily and handles tenant requests; the data custodian is the maintenance crew that keeps the pipes, locks, and electrical systems running safely.",
+      "concept": "Data governance role hierarchy in healthcare organizations"
+    },
+    {
+      "_key": "s3h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Organizational Data Governance Programs"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Translating governance frameworks into organizational reality requires structures that span clinical, operational, and technical domains. Most mature health systems establish a Data Governance Council — a cross-functional body with representation from clinical informatics, health information management, IT security, compliance, finance, and increasingly, patient experience teams. The council's charter defines its decision rights: which decisions require council approval (data sharing agreements, secondary-use policies), which can be delegated to domain stewards (data dictionary updates, access request approvals), and which are escalated to the executive team (breach response, vendor data-rights disputes). Without a formal charter, governance councils tend to become advisory bodies with no enforcement power — capable of producing policies that nobody follows."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two foundational capabilities underpin any serious governance program: the data dictionary and master data management (MDM). A data dictionary is a centralized catalog that defines every data element in the enterprise — its name, definition, permitted values, source system, owner, and data classification. Without a data dictionary, different departments routinely use the same term to mean different things (\"admission date\" in the EHR versus \"admission date\" in the financial system are often calculated differently), generating inconsistencies that corrupt analytics and reports. Master data management addresses the complementary problem of patient identity integrity — ensuring that John H. Smith born 3/4/1962 in the EHR is correctly recognized as the same person as John Harold Smith born 3/4/1962 in the claims system. Poor patient matching generates duplicate records, which can lead to clinicians treating the wrong patient's history."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Patient identity integrity is not merely an operational inconvenience — it is a clinical safety issue. Duplicate or overlaid medical records are classified as a type of healthcare-acquired patient safety event. Health systems with mature governance programs invest in probabilistic matching algorithms, regular duplicate detection runs, and clear escalation paths when a potential overlay is discovered. Governance programs also extend to the contract review process: before a new technology vendor is onboarded, governance policies should require a review of data-rights clauses to ensure the organization is not inadvertently granting the vendor rights to patient data that exceed the minimum necessary standard or conflict with the organization's own data use agreements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Define the council's scope, decision rights, membership, meeting cadence, and escalation paths. Specify which decisions require quorum versus which can be delegated to domain stewards.",
+          "title": "Draft the Charter"
+        },
+        {
+          "_key": "step2",
+          "description": "Identify executive-level owners for each major data domain: clinical, revenue cycle, supply chain, HR. Owners bear accountability for policy compliance within their domain.",
+          "title": "Appoint Domain Data Owners"
+        },
+        {
+          "_key": "step3",
+          "description": "Produce a current-state map of all data systems, feeds, and repositories. Classify each by sensitivity, regulatory obligation, and business criticality.",
+          "title": "Inventory Data Assets"
+        },
+        {
+          "_key": "step4",
+          "description": "Stand up a centralized catalog with standardized definitions for all high-priority data elements. Begin with the elements that appear in enterprise dashboards and regulatory submissions.",
+          "title": "Establish the Data Dictionary"
+        },
+        {
+          "_key": "step5",
+          "description": "Codify policies for internal data access, research use, secondary analytics, and external sharing. Link policies to specific regulatory obligations (HIPAA, state law, federal research rules).",
+          "title": "Define Access and Use Policies"
+        },
+        {
+          "_key": "step6",
+          "description": "Deploy audit logging for sensitive data access, schedule periodic reviews of user entitlements, and establish a clear process for investigating policy violations.",
+          "title": "Implement Monitoring and Enforcement"
+        }
+      ],
+      "title": "Standing Up a Health System Data Governance Council"
+    },
+    {
+      "_key": "s4h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "TEFCA and National Governance Infrastructure"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Individual health system governance programs, however mature, cannot solve the governance problem at the national scale. Health data routinely crosses organizational and state boundaries as patients seek care from multiple providers, insurers process claims, and public health agencies monitor disease trends. The Trusted Exchange Framework and Common Agreement (TEFCA) is the federal government's framework for governing nationwide health information exchange. Authorized under the 21st Century Cures Act, TEFCA establishes a set of common policies, technical requirements, and legal obligations that all participants in the network must follow as a condition of participation. The Common Agreement, now at Version 2.1 (published November 2024, updated January 17, 2025), is the legally binding document that governs relationships among the Recognized Coordinating Entity, Qualified Health Information Networks, and their downstream participants."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Recognized Coordinating Entity (RCE) role is the linchpin of TEFCA's governance structure. ONC selected The Sequoia Project, a non-profit public-private collaborative, as the RCE in 2019 following a competitive process. In August 2023, ONC renewed The Sequoia Project's contract for a further five years, confirming its ongoing role in developing, implementing, and maintaining the Common Agreement and the QHIN Technical Framework. The Sequoia Project works with ONC's Assistant Secretary for Technology Policy (ASTP) to update governance documents, onboard new QHINs, and operate the RCE Directory Service that allows QHINs to locate and route messages to other participants in the network. This governance structure — a federal agency setting overall policy while a private non-profit manages operational implementation — is intentionally designed to balance government accountability with the flexibility of private-sector execution."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Qualified Health Information Networks (QHINs) are the operational nodes of the TEFCA network. They must meet rigorous technical and governance standards, complete a formal onboarding and designation process overseen by the RCE, and sign the Common Agreement before they can exchange data under TEFCA. As of late 2025, eleven QHINs had been designated, including CommonWell Health Alliance, eHealth Exchange, Epic's Carequality network, Kno2, MedAllies, eClinicalWorks (designated January 2025), Surescripts Health Information Network (designated April 2025), and Oracle Health (designated November 2025). TEFCA exchange is constrained to lawful purposes defined in the Common Agreement — individual treatment, payment, health care operations, public health, benefits determination, and a small set of other permitted purposes. Using the network for marketing, selling data, or other non-enumerated purposes is a material violation of the Common Agreement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "Every TEFCA query must be tagged with one of the defined Exchange Purposes. A clinician looking up a patient's medication history uses XP: Treatment. A health plan verifying a claim uses XP: Payment. A state health department tracking influenza cases uses XP: Public Health. This tagging requirement is not bureaucratic overhead — it is the governance mechanism that limits data use to the purpose for which the exchange was authorized, and it creates an audit trail that the RCE and ONC can use to detect misuse.",
+      "title": "TEFCA's Exchange Purpose (XP) Framework"
+    },
+    {
+      "_key": "s4sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Growing from the original 7 QHINs designated in 2023-2024; new QHINs added throughout 2025",
+          "label": "Designated QHINs by Late 2025",
+          "value": "11"
+        },
+        {
+          "_key": "s2",
+          "context": "Published November 2024, updated January 17, 2025; adds FHIR-based exchange as a major new capability",
+          "label": "Current Common Agreement Version",
+          "value": "v2.1"
+        },
+        {
+          "_key": "s3",
+          "context": "Contract renewed August 2023; ensures governance continuity through at least 2028",
+          "label": "Sequoia Project RCE Contract",
+          "value": "5-year"
+        }
+      ]
+    },
+    {
+      "_key": "s5h2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Patient Data Rights: Access, Correction, and Portability"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The patient data rights landscape has expanded significantly since the original HIPAA Privacy Rule took effect in 2003. The ONC's 21st Century Cures Act Final Rule (effective April 2021, with full scope expanded October 2022) codified the information blocking prohibition, making it unlawful for healthcare providers, health IT developers, and health information networks to interfere with the access, exchange, or use of electronic health information except under specific enumerated exceptions. As of October 6, 2022, the information that must not be blocked encompasses all electronic protected health information in the designated record set — not just a limited subset of structured data. Enforcement includes civil monetary penalties of up to $1 million per violation for health IT developers and networks, with CMS-administered disincentives for providers (effective July 31, 2024) such as reduced payment adjustments under the Merit-based Incentive Payment System."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "State legislatures have moved to fill gaps that federal law leaves unaddressed, particularly for consumer health data held by non-HIPAA entities — fitness apps, period trackers, direct-to-consumer genetic testing companies, and wellness platforms. Washington State's My Health MY Data Act (HB 1155), signed by Governor Jay Inslee on April 27, 2023, was the first U.S. law to specifically regulate consumer health data outside HIPAA's scope. The Act requires regulated entities to obtain consumer consent before collecting or sharing consumer health data, prohibits geofencing around healthcare facilities, grants consumers the right to delete their health data, and — critically — includes a private right of action allowing individuals to sue for violations. Geofencing prohibitions took effect July 23, 2023; full compliance obligations for large entities began March 31, 2024."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Federal Trade Commission has pursued parallel authority over non-HIPAA health data through the Health Breach Notification Rule (HBNR). In April 2024, the FTC finalized significant amendments to the HBNR (effective July 29, 2024) that expanded the rule's scope to clearly cover health apps and connected devices, even those that do not interact with a HIPAA-covered entity. The revised rule defines \"breach of security\" to include unauthorized disclosures — not just hacking events — and requires covered entities to notify the FTC simultaneously with individual notifications for breaches affecting 500 or more people, within 60 days of discovering the breach. Taken together with Washington's My Health MY Data Act and similar state laws under development in other jurisdictions, the regulatory landscape for consumer health data is rapidly converging toward a HIPAA-like accountability regime for previously unregulated actors."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "Apps and platforms that collect health data but do not qualify as HIPAA covered entities or business associates are no longer in a regulatory vacuum. The FTC HBNR amendments and state laws like Washington's My Health MY Data Act impose real obligations and enforcement risk. Organizations in this space should conduct a data mapping exercise and review their consent, sharing, and breach notification practices against both federal and applicable state requirements.",
+      "title": "The Non-HIPAA Health Data Gap Is Closing"
+    },
+    {
+      "_key": "s5sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Applies to health IT developers and networks; CMS disincentives apply separately to providers",
+          "label": "Max Penalty Per Info Blocking Violation",
+          "value": "$1M"
+        },
+        {
+          "_key": "s2",
+          "context": "Post-2024 amendment; covered health apps must notify FTC and individuals within 60 days of breach discovery",
+          "label": "FTC HBNR Breach Notice Deadline",
+          "value": "60 days"
+        },
+        {
+          "_key": "s3",
+          "context": "First U.S. law targeting consumer health data outside HIPAA; private right of action included",
+          "label": "WA My Health MY Data Enacted",
+          "value": "April 27, 2023"
+        }
+      ]
+    },
+    {
+      "_key": "tkwy1",
+      "_type": "takeawayBlock",
+      "points": [
+        "HIPAA grants patients a right of access to their health records — not legal ownership. The covered entity retains custody and control of the original record.",
+        "EHR vendor contracts frequently include broad data rights clauses that organizations should scrutinize before signing; data rights granted to vendors can conflict with patient privacy interests.",
+        "The DAMA-DMBOK (currently v2, with v3 in development) and AHIMA's IGPHC framework define the three core governance roles: data owner (accountability), data steward (operations), and data custodian (technical infrastructure).",
+        "Effective organizational governance requires a formal Data Governance Council with a written charter, domain-level data owners, a maintained data dictionary, and enforceable access policies.",
+        "TEFCA's Common Agreement (v2.1, January 2025) and the Sequoia Project as RCE form the national governance backbone for health data exchange, constraining exchange to enumerated lawful purposes.",
+        "As of late 2025, eleven QHINs have been designated under TEFCA, with exchange required to be tagged by Exchange Purpose — a governance mechanism that limits use and creates an audit trail.",
+        "Patient data rights are expanding beyond HIPAA through the ONC information blocking rule, Washington's My Health MY Data Act (2023), and the FTC Health Breach Notification Rule amendments (effective July 2024).",
+        "Poor patient identity matching is not just an operational problem — duplicate or overlaid records are a recognized patient safety hazard that data governance programs must address through MDM and probabilistic matching."
+      ]
+    },
+    {
+      "_key": "qz1",
+      "_type": "knowledgeCheck",
+      "explanation": "HIPAA's Right of Access gives patients the ability to inspect and obtain copies of their PHI in the designated record set, but does not transfer ownership of the records from the covered entity to the patient. The covered entity retains custody and legal control of the originals, and patients cannot compel deletion under HIPAA alone — though newer state laws like Washington's My Health MY Data Act add deletion rights for some categories of data.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Legal ownership of the health records created about them"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The right to inspect and obtain copies of their protected health information in a covered entity's designated record set"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The right to permanently delete their records from any provider system"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The right to control how their data is used for secondary research purposes"
+        }
+      ],
+      "question": "Under HIPAA, what does the Privacy Rule's Right of Access actually grant to patients?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] HHS Office for Civil Rights — Individuals' Right under HIPAA to Access their Health Information — https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/access/index.html — Confirms that HIPAA's Privacy Rule grants a right of access to the designated record set, not legal ownership; establishes the 30-day response requirement and $6.50 flat-fee safe harbor."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] The Sequoia Project — Common Agreement Version 2.1 (TEFCA RCE) — https://rce.sequoiaproject.org/common-agreement/ — Confirms Common Agreement v2.1 published November 2024 and updated January 17, 2025; details QHIN obligations, lawful exchange purposes, and the RCE's governance role."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Washington State Attorney General — My Health My Data Act — https://www.atg.wa.gov/protecting-washingtonians-personal-health-data-and-privacy — Confirms HB 1155 signed April 27, 2023; geofencing prohibition effective July 23, 2023; full compliance for large entities required March 31, 2024; private right of action included."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Federal Trade Commission — FTC Finalizes Changes to the Health Breach Notification Rule (April 2024) — https://www.ftc.gov/news-events/news/press-releases/2024/04/ftc-finalizes-changes-health-breach-notification-rule — Confirms amendments effective July 29, 2024; expanded scope to health apps; 60-day notice deadline; simultaneous FTC and individual notification required for breaches of 500+."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] DAMA International — DAMA-DMBOK 3.0 Project — https://dama.org/dama-dmbok-3-0-project/ — Confirms DMBOK 2nd edition is the current published standard; DMBOK 3.0 community initiative launched 2025 to modernize the framework for AI, cloud, and modern data platforms."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] ONC / ASTP — Information Blocking and Cures Act Final Rule — https://healthit.gov/regulations/cures-act-final-rule/ — Confirms information blocking prohibition effective April 2021; full EHR scope expanded October 2022; penalties up to $1 million per violation for health IT developers; CMS disincentives for providers effective July 31, 2024."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "interop-data-governance"
+  },
+  "title": "Health Data Governance: Who Owns the Data, Who Controls It, and Who Is Responsible"
+}

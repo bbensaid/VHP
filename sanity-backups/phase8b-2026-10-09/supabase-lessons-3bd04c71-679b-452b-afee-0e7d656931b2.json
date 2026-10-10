@@ -1,0 +1,108 @@
+{
+  "id": "3bd04c71-679b-452b-afee-0e7d656931b2",
+  "track_id": "92eeb98e-030c-499a-be95-79635ca57473",
+  "pillar": "clinical",
+  "order": 1,
+  "slug": "quality-measures-hedis-ecqm",
+  "title": "HEDIS, eCQMs & the Quality Measurement Ecosystem",
+  "summary": "The landscape of quality measures — who creates them, how they are reported, what HEDIS and eCQMs are, and the ongoing debate about measure burden and meaningful measurement.",
+  "estimated_minutes": 20,
+  "objectives": [
+    {
+      "id": "obj_qm1",
+      "text": "Distinguish between HEDIS measures and eCQMs and how each is collected"
+    },
+    {
+      "id": "obj_qm2",
+      "text": "Identify the major measure stewards and their roles"
+    },
+    {
+      "id": "obj_qm3",
+      "text": "Explain why measure burden has become a major issue and what CMS is doing about it"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Healthcare quality measurement involves multiple organizations creating, endorsing, and reporting measures — often with different methodologies, data sources, and populations. The result is a measurement ecosystem that is rich in data but fragmented in practice.",
+      "type": "text",
+      "heading": "The measurement ecosystem"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "National Committee for Quality Assurance. Creates HEDIS measures — the most widely used quality measures in the US, reported by health plans for their populations.",
+          "icon": "ti-certificate",
+          "title": "NCQA"
+        },
+        {
+          "body": "Operates the eCQM (electronic clinical quality measure) program, the Hospital Compare reporting system, and ties measures to payment in VBC programs.",
+          "icon": "ti-building",
+          "title": "CMS"
+        },
+        {
+          "body": "National Quality Forum. Endorses measures through a consensus process — NQF endorsement is required for many federal quality programs.",
+          "icon": "ti-star",
+          "title": "NQF"
+        },
+        {
+          "body": "ACC, ACS, AHA and others create specialty-specific registry measures that complement HEDIS and eCQMs for cardiology, oncology, etc.",
+          "icon": "ti-heart-rate-monitor",
+          "title": "Specialty societies"
+        }
+      ],
+      "heading": "Key players in quality measurement"
+    },
+    {
+      "rows": [
+        {
+          "left": "Health plans (for their members)",
+          "label": "Who reports",
+          "right": "Providers / hospitals (for their patients)"
+        },
+        {
+          "left": "Claims + medical record review (hybrid)",
+          "label": "Data source",
+          "right": "EHR data (structured electronic data)"
+        },
+        {
+          "left": "NCQA",
+          "label": "Steward",
+          "right": "CMS (with measure developers)"
+        },
+        {
+          "left": "Star Ratings, Medicaid managed care",
+          "label": "Used in",
+          "right": "MIPS, hospital programs, APMs"
+        },
+        {
+          "left": "Annual retrospective reporting",
+          "label": "Timing",
+          "right": "Can be near-real-time from EHR"
+        }
+      ],
+      "type": "comparison_table",
+      "heading": "HEDIS vs. eCQMs",
+      "leftLabel": "HEDIS",
+      "rightLabel": "eCQMs"
+    },
+    {
+      "body": "Physicians now spend an estimated 15+ hours per week on documentation and reporting requirements. Studies show that every patient visit generates 2+ hours of EHR time. CMS has acknowledged the problem and has been actively sunsetting low-value measures, aligning measure sets across programs, and investing in digital quality measure infrastructure to reduce manual reporting burden.",
+      "type": "callout",
+      "heading": "Measure burden: the 15-minute visit problem",
+      "variant": "warning"
+    }
+  ],
+  "tags": [
+    "HEDIS",
+    "eCQM",
+    "quality measures",
+    "NCQA",
+    "reporting"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T21:56:20.454815+00:00",
+  "updated_at": "2026-10-08T00:22:18.748604+00:00",
+  "sanity_slug": "vbc-quality-measures-hedis-ecqm"
+}

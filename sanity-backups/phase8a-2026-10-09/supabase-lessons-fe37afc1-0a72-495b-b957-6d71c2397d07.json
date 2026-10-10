@@ -1,0 +1,86 @@
+{
+  "id": "fe37afc1-0a72-495b-b957-6d71c2397d07",
+  "track_id": "a3c63a7e-b87e-490e-9a38-c2fab03c8d1c",
+  "pillar": "policy",
+  "order": 3,
+  "slug": "certified-ehr-technology-requirements",
+  "title": "Certified EHR Technology: What CEHRT Means in Practice",
+  "summary": "ONC's Health IT Certification Program — why CEHRT matters for payment programs, what the 2015 Edition Cures Update requires, and how to look up certification status.",
+  "estimated_minutes": 16,
+  "objectives": [
+    {
+      "id": "obj_cert1",
+      "text": "Explain what certified EHR technology is and why certification matters for CMS payment programs"
+    },
+    {
+      "id": "obj_cert2",
+      "text": "Describe the key requirements of the 2015 Edition Cures Update certification criteria"
+    },
+    {
+      "id": "obj_cert3",
+      "text": "Identify how to look up an EHR product's certification status on the CHPL"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Certified EHR Technology (CEHRT) is not just a technical designation — it is a prerequisite for participation in multiple CMS payment programs. Eligible clinicians must use CEHRT to report the Promoting Interoperability category under MIPS. Hospitals must use CEHRT to attest to the Promoting Interoperability program. ACOs in the Medicare Shared Savings Program must use CEHRT. In this sense, ONC's certification program operates as a regulatory lever: by defining what certified technology must do, ONC shapes what health IT capabilities are available across the entire Medicare and Medicaid ecosystem.\n\nThe current baseline is the 2015 Edition Cures Update — a revision to the 2015 Edition certification criteria that incorporates the requirements of the 21st Century Cures Act. The most significant addition is the standardized API criterion: certified technology must offer a FHIR R4 API that supports the US Core Implementation Guide profiles, implements SMART on FHIR for authorization, and is available without special effort for any patient or application that meets the standard terms of service.\n\nCertification is performed by ONC-Authorized Certification Bodies (ONC-ACBs) — private organizations accredited by ONC to test and certify health IT products against the certification criteria. The two largest ONC-ACBs are Drummond Group and ICSA Labs. Certification is product-specific: each EHR version must be separately tested and certified, which is why the Certified Health IT Product List (CHPL) may show dozens of certifications for a single EHR vendor across different product versions.",
+      "type": "text",
+      "heading": "Certification as the gateway to payment"
+    },
+    {
+      "type": "key_stat",
+      "label": "of non-federal acute care hospitals had certified EHR technology (2023)",
+      "value": "96%",
+      "context": "EHR adoption driven by the HITECH Act incentive program reached near-saturation in hospitals by 2015. As of 2023, 96% of non-federal acute care hospitals use certified EHR technology, compared to 28% in 2011."
+    },
+    {
+      "body": "The Certified Health IT Product List (CHPL) at chpl.healthit.gov is ONC's public database of all certified health IT products. Anyone can search by developer name, product name, or certification ID. The CHPL shows which certification criteria each product meets, any surveillance findings (compliance issues found after certification), and whether certification has been withdrawn. Before implementing an EHR or relying on a system's certification for MIPS reporting, verify its CHPL status.",
+      "type": "callout",
+      "title": "Looking up CEHRT status on the CHPL",
+      "variant": "tip"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "term": "Standardized API (g10)",
+          "definition": "Must provide a FHIR R4 API supporting US Core profiles, SMART on FHIR authorization, and bulk FHIR export. The core interoperability requirement."
+        },
+        {
+          "term": "Electronic Prescribing (b1)",
+          "definition": "Must support electronic prescribing to pharmacies via NCPDP SCRIPT standard, including controlled substance prescribing (EPCS)."
+        },
+        {
+          "term": "Clinical Information Reconciliation (b2)",
+          "definition": "Must support reconciliation of problem list, medication list, and medication allergy list when receiving C-CDA documents."
+        },
+        {
+          "term": "Real-Time Prescription Benefit (b11)",
+          "definition": "Must support real-time benefit check — displaying patient-specific drug cost and formulary information at time of prescribing."
+        },
+        {
+          "term": "Patient Demographics (a5)",
+          "definition": "Must capture sexual orientation, gender identity, and expanded race/ethnicity categories per ONC requirements."
+        },
+        {
+          "term": "Conditions & Maintenance (d12–d13)",
+          "definition": "Certified products must meet real-world testing, transparency disclosure, and assurance conditions — not just pass lab testing."
+        }
+      ],
+      "heading": "2015 Edition Cures Update key criteria"
+    }
+  ],
+  "tags": [
+    "CEHRT",
+    "ONC",
+    "certification",
+    "FHIR",
+    "Meaningful Use",
+    "MIPS"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:39.737587+00:00",
+  "updated_at": "2026-06-01T14:54:57.451363+00:00",
+  "sanity_slug": "interop-cehrt"
+}

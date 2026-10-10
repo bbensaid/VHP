@@ -1,0 +1,1069 @@
+{
+  "_createdAt": "2026-05-29T03:45:07Z",
+  "_id": "interop-snomed-loinc-rxnorm",
+  "_rev": "rL4Cn5Sfo5Z8rzPmE8fsNh",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T02:07:22Z",
+  "body": [
+    {
+      "_key": "k0001",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0002s",
+          "_type": "span",
+          "marks": [],
+          "text": "Every day, billions of clinical observations, diagnoses, prescriptions, and lab results move between hospitals, pharmacies, payers, and public health agencies. But data moving between systems is not the same as data being understood by those systems. A lab result labeled 'Glucose' in one EHR might arrive at a receiving system as a free-text string with no machine-readable meaning. A diagnosis coded 'Type 2 DM' in one notation may be opaque to a clinical decision support engine expecting a different code. Without a shared vocabulary — a universal clinical language — every data exchange risks producing noise instead of knowledge."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0003",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0004s",
+          "_type": "span",
+          "marks": [],
+          "text": "Three terminologies sit at the heart of clinical data interoperability in the United States: SNOMED CT for clinical concepts (diseases, findings, procedures), LOINC for observations and measurements (lab tests, vital signs, assessments), and RxNorm for medications and drugs. Together, these standards form the computable foundation that allows software to reason about patient data rather than merely store it. Federal regulators — ONC, CMS, and the HHS Office of the National Coordinator — mandate their use in certified EHR systems and FHIR-based APIs, making fluency in these vocabularies non-negotiable for any healthcare interoperability professional."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0005",
+      "_type": "analogyBlock",
+      "analogy": "Think of SNOMED CT, LOINC, and RxNorm as three different dictionaries in a single clinical language. SNOMED CT is the medical encyclopedia — it defines what conditions, procedures, and findings are. LOINC is the measurement handbook — it defines what was tested or observed and how. RxNorm is the pharmacy formulary — it defines what was prescribed and in what form. A complete clinical picture requires all three."
+    },
+    {
+      "_key": "k0006",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0007s",
+          "_type": "span",
+          "marks": [],
+          "text": "SNOMED CT: The Clinical Concept Backbone"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0008",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0009s",
+          "_type": "span",
+          "marks": [],
+          "text": "SNOMED CT (Systematized Nomenclature of Medicine — Clinical Terms) is the world's most comprehensive multilingual clinical healthcare terminology. Governed by SNOMED International, a nonprofit standards development organization founded in 2007, SNOMED CT is licensed in more than 40 countries and serves as the preferred vocabulary for encoding clinical findings, diagnoses, symptoms, procedures, body structures, organisms, and substances within electronic health records."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0010",
+      "_type": "statGrid",
+      "items": [
+        {
+          "label": "Active Concepts",
+          "value": "350,000+"
+        },
+        {
+          "label": "Governing Body",
+          "value": "SNOMED International"
+        },
+        {
+          "label": "US Release Cadence",
+          "value": "Twice yearly (March & September)"
+        },
+        {
+          "label": "Countries Licensed",
+          "value": "40+"
+        },
+        {
+          "label": "US Distributor",
+          "value": "NLM via UMLS"
+        },
+        {
+          "label": "License Required",
+          "value": "UMLS Metathesaurus License"
+        }
+      ]
+    },
+    {
+      "_key": "k0011",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0012s",
+          "_type": "span",
+          "marks": [],
+          "text": "The January 2020 International Edition already surpassed 350,000 active concepts, and the terminology continues to grow with each biannual release. In the US, NLM distributes the US Edition of SNOMED CT — which extends the International Edition with US-specific content — through the Unified Medical Language System (UMLS) Terminology Services. Users must accept the UMLS Metathesaurus License Agreement and hold a UMLS account; for US-based healthcare organizations, access is free of charge as part of a national arrangement managed through the NLM."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0013",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0014s",
+          "_type": "span",
+          "marks": [],
+          "text": "Structure: More Than a Code List"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "k0015",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016s",
+          "_type": "span",
+          "marks": [],
+          "text": "Unlike ICD-10-CM — which is a flat classification system built primarily for billing and epidemiology — SNOMED CT is a poly-hierarchical, description logic-based terminology. Each concept has a unique numeric identifier (ConceptID), one or more human-readable descriptions (Fully Specified Name, Preferred Term, synonyms), and a set of relationships to other concepts that define its meaning formally. A concept like 'Type 2 diabetes mellitus' carries relationships expressing that it is a subtype of diabetes mellitus, involves the pancreas, and is associated with insulin resistance — information that a classification code alone cannot convey."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0017",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "",
+        "points": []
+      },
+      "right": {
+        "label": "",
+        "points": []
+      }
+    },
+    {
+      "_key": "k0018",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0019s",
+          "_type": "span",
+          "marks": [],
+          "text": "The two systems are complementary, not competing. The NLM publishes and maintains an official SNOMED CT-to-ICD-10-CM map that enables semi-automated billing code generation from SNOMED CT-encoded clinical data. This means a clinician can document in SNOMED CT for clinical precision, and the EHR can automatically suggest the correct ICD-10-CM billing code — reducing administrative burden while preserving clinical fidelity."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0020",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0020_span",
+          "_type": "span",
+          "marks": [],
+          "text": "USCDI and ONC Mandate: The ONC HTI-1 Final Rule requires certified health IT to use SNOMED CT US Edition for clinical conditions and problems. USCDI v3 — mandatory for certified EHRs by January 2026 — specifies SNOMED CT as the required terminology for the Problems data class. The March and September US Edition releases ensure providers have access to the latest concepts for compliance."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "k0021",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0022s",
+          "_type": "span",
+          "marks": [],
+          "text": "LOINC: Naming What Was Tested or Observed"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0023",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0024s",
+          "_type": "span",
+          "marks": [],
+          "text": "LOINC (Logical Observation Identifiers Names and Codes) provides the universal standard for identifying medical laboratory observations, clinical measurements, and health assessments. Developed and maintained by the Regenstrief Institute — a health informatics research organization at Indiana University — LOINC was created in 1994 and has grown into one of the most widely adopted health data standards in the world. As of 2023, LOINC contains approximately 101,632 terms covering everything from a routine serum albumin level to a zygomatic arch X-ray report, with thousands of new concepts added in each semiannual release."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0025",
+      "_type": "statGrid",
+      "items": [
+        {
+          "label": "Total Terms",
+          "value": "~101,600+"
+        },
+        {
+          "label": "Governing Body",
+          "value": "Regenstrief Institute"
+        },
+        {
+          "label": "Founded",
+          "value": "1994"
+        },
+        {
+          "label": "Release Cadence",
+          "value": "Twice yearly"
+        },
+        {
+          "label": "License Cost",
+          "value": "Free"
+        },
+        {
+          "label": "Languages Supported",
+          "value": "30+"
+        }
+      ]
+    },
+    {
+      "_key": "k0026",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0027s",
+          "_type": "span",
+          "marks": [],
+          "text": "What LOINC Names"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "k0028",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0029s",
+          "_type": "span",
+          "marks": [],
+          "text": "LOINC's primary focus is answering the question: 'What was measured or observed, and how?' Every LOINC code represents a unique combination of up to six defining attributes — the component (analyte), the property being measured (e.g., mass concentration), the time aspect (point in time vs. 24-hour collection), the system (specimen type — serum, urine, blood), the scale of measurement (quantitative, ordinal, narrative), and optionally the method used. This six-part axis structure means that a serum sodium measured on a point-in-time specimen with a quantitative result gets a different LOINC code than a 24-hour urine sodium — even though both measure 'sodium.'"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0030",
+      "_type": "exampleBlock",
+      "content": "LOINC 2951-2: Sodium [Moles/volume] in Serum or Plasma. This code specifies: Component = Sodium; Property = Substance Concentration (SCnc); Time = Point; System = Serum/Plasma; Scale = Quantitative. A receiving laboratory information system can parse this code and know exactly what to render, what units to expect, and how to alert on abnormal values — without any free-text parsing."
+    },
+    {
+      "_key": "k0031",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0032s",
+          "_type": "span",
+          "marks": [],
+          "text": "LOINC's reach extends well beyond the clinical laboratory. Survey instruments and functional assessments — including the PHQ-9 depression screen, the GAD-7 anxiety scale, and dozens of social determinants of health (SDOH) screenings — are encoded in LOINC. Vital signs such as blood pressure, heart rate, body weight, and oxygen saturation have standardized LOINC codes used in FHIR Observation resources. Document types (discharge summaries, progress notes, operative reports) also carry LOINC codes, enabling document-level indexing and retrieval across health systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0033",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0033_span",
+          "_type": "span",
+          "marks": [],
+          "text": "LOINC is the mandated standard for laboratory tests in USCDI v3 and for the Observations data class in US Core FHIR profiles. CMS and ONC require LOINC codes on all structured lab result data exchanged via FHIR APIs as part of the 21st Century Cures Act regulations."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "k0034",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0035s",
+          "_type": "span",
+          "marks": [],
+          "text": "LOINC and the Lab Ecosystem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "k0036",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0037s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Regenstrief Institute collaborates extensively with the FDA, CDC, and the Association of Public Health Laboratories (APHL) to create LOINC codes for emerging needs. During the COVID-19 pandemic, the Regenstrief team rapidly created dedicated LOINC codes for SARS-CoV-2 diagnostic tests — enabling consistent surveillance reporting across all 50 states within weeks of the first tests becoming available. This agility illustrates why LOINC is indispensable for public health response: without standardized observation codes, surveillance data from thousands of labs would have been irreconcilable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0038",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0039s",
+          "_type": "span",
+          "marks": [],
+          "text": "RxNorm: Making Drug Data Interoperable"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0040",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0041s",
+          "_type": "span",
+          "marks": [],
+          "text": "RxNorm is the National Library of Medicine's standardized nomenclature for clinical drugs. First introduced as a full monthly release in 2005, RxNorm celebrated its 20th anniversary in 2025. Its core purpose is deceptively simple but enormously powerful: assign a single normalized name and unique identifier (called an RxCUI — RxNorm Concept Unique Identifier) to each distinct combination of active ingredient, strength, and dose form, regardless of which manufacturer made it or what brand name it carries."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0042",
+      "_type": "statGrid",
+      "items": [
+        {
+          "label": "RxNorm 20th Anniversary",
+          "value": "2025"
+        },
+        {
+          "label": "Base Ingredients (Dec 2025)",
+          "value": "14,592"
+        },
+        {
+          "label": "Brand Names",
+          "value": "5,151"
+        },
+        {
+          "label": "Clinical Drugs",
+          "value": "17,544"
+        },
+        {
+          "label": "Branded Drugs",
+          "value": "9,721"
+        },
+        {
+          "label": "Release Cadence",
+          "value": "Full monthly + weekly updates"
+        }
+      ]
+    },
+    {
+      "_key": "k0043",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0044s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Problem RxNorm Solves"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "k0045",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0046s",
+          "_type": "span",
+          "marks": [],
+          "text": "Drug naming in the United States is a labyrinth. A single active ingredient may appear under dozens of brand names across hundreds of National Drug Code (NDC) entries — each representing a specific manufacturer, package size, and labeler. Metformin hydrochloride 500 mg oral tablet, for instance, might have hundreds of distinct NDC codes from different generic manufacturers. Without normalization, a clinical decision support rule written against one NDC would miss all the others. A pharmacist's allergy alert system would fail to recognize a therapeutic duplicate if the incoming order used a different brand name than the one in its database."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0047",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0048s",
+          "_type": "span",
+          "marks": [],
+          "text": "RxNorm resolves this fragmentation by mapping all NDC codes for equivalent drug products to a single RxCUI representing the normalized clinical drug concept. The December 2025 RxNorm full release contains 14,592 base ingredients, 17,544 clinical drug entries, and 9,721 branded drug entries. NLM normalizes NDCs to the 11-digit HIPAA format without dashes, ensuring consistent identification. RxNorm also models relationships between concepts: an ingredient links to all its dose forms, which link to all their strengths, which link to all NDC packages — creating a navigable drug knowledge graph."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0049",
+      "_type": "exampleBlock",
+      "content": "A patient is prescribed 'Metformin HCl 500 mg oral tablet' (RxCUI: 860975). This single RxCUI represents the normalized concept regardless of whether the dispensed product is from Teva, Mylan, or any other manufacturer. An EHR sending a FHIR MedicationRequest with this RxCUI allows any receiving system — a pharmacy, a care management platform, a payer — to unambiguously identify what was prescribed without needing to know the specific NDC."
+    },
+    {
+      "_key": "k0050",
+      "_type": "warningBlock",
+      "message": "NDC codes are NOT suitable for clinical interoperability on their own. They encode manufacturer, package size, and labeler — not the clinical drug concept. A clinical decision support rule built on NDC codes must be updated every time a manufacturer changes packaging or enters the market. RxNorm abstracts above this variability to support durable, maintainable clinical logic."
+    },
+    {
+      "_key": "k0051",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0052s",
+          "_type": "span",
+          "marks": [],
+          "text": "RxNorm is designated as the required standard for medication information in USCDI, and the HTI-1 Final Rule mandates the July 2022 RxNorm Full Monthly Release (or later) as the minimum standard for certified health IT systems as of December 31, 2025. FHIR MedicationRequest, MedicationDispense, and MedicationAdministration resources in US Core all require RxNorm codes for medication representation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0053",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0054s",
+          "_type": "span",
+          "marks": [],
+          "text": "How SNOMED CT, LOINC, and RxNorm Work Together"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0055",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0056s",
+          "_type": "span",
+          "marks": [],
+          "text": "In a modern EHR or FHIR-based health information exchange, these three terminologies operate as complementary layers of a unified clinical data model. SNOMED CT encodes the clinical context — the patient's conditions, findings, and procedures. LOINC encodes the observations that inform that context — the lab test that confirmed a diagnosis, the vital sign that prompted an intervention. RxNorm encodes the therapeutic response — the medication prescribed as a result. Together, they make a complete clinical record computable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0057",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "k0057_step_0",
+          "title": "A patient presents with fatigue and polyuria. The clinician's EHR problem list captures 'Suspected Type 2 diabetes mellitus' using SNOMED CT concept 73211009."
+        },
+        {
+          "_key": "k0057_step_1",
+          "title": "The clinician orders a fasting plasma glucose and HbA1c. The orders carry LOINC codes 1558-6 (Fasting glucose in serum/plasma) and 4548-4 (Hemoglobin A1c/Hemoglobin.total in Blood)."
+        },
+        {
+          "_key": "k0057_step_2",
+          "title": "Results return from the laboratory with LOINC-coded observation codes and UCUM-coded units, enabling automated interpretation and alert generation."
+        },
+        {
+          "_key": "k0057_step_3",
+          "title": "Diagnosis confirmed: the problem list is updated to 'Type 2 diabetes mellitus' (SNOMED CT 44054006). The ICD-10-CM map automatically suggests E11.9 for billing."
+        },
+        {
+          "_key": "k0057_step_4",
+          "title": "Metformin 500 mg oral tablet is prescribed. The MedicationRequest carries RxCUI 860975 alongside the NDC for the specific dispensed package."
+        },
+        {
+          "_key": "k0057_step_5",
+          "title": "The complete, coded record — conditions in SNOMED CT, labs in LOINC, medications in RxNorm — flows to the payer, care manager, and public health registry without loss of meaning."
+        }
+      ]
+    },
+    {
+      "_key": "k0058",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0059s",
+          "_type": "span",
+          "marks": [],
+          "text": "Value Sets: Curating Subsets for Specific Purposes"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "k0060",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0061s",
+          "_type": "span",
+          "marks": [],
+          "text": "Raw terminologies contain hundreds of thousands of concepts, but most clinical applications need only relevant subsets. A quality measure for diabetes management needs only the SNOMED CT codes for type 2 diabetes mellitus — not all 350,000 concepts. A FHIR-based allergy list needs only the RxNorm codes for common allergens. These curated subsets are called value sets, and the Value Set Authority Center (VSAC) — maintained by the NLM — is the authoritative repository for value sets used in US clinical quality measures and regulatory requirements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0062",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0063s",
+          "_type": "span",
+          "marks": [],
+          "text": "VSAC serves as the official source for value sets used in CMS electronic clinical quality measures (eCQMs) and digital quality measures (dQMs). Each value set consists of carefully selected codes drawn from SNOMED CT, LOINC, RxNorm, ICD-10-CM, and other standard vocabularies, with explicit versioning tied to specific terminology releases. As CMS transitions its eCQMs to FHIR-based dQMs — with FHIR-formatted value sets available for the 2027 reporting period — VSAC becomes an even more critical infrastructure component, linking regulatory requirements directly to computable clinical terminology."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0064",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0064_span",
+          "_type": "span",
+          "marks": [],
+          "text": "VSAC Integration: Any certified EHR or quality reporting system participating in CMS quality programs must implement value sets from VSAC. These value sets reference specific versions of SNOMED CT, LOINC, and RxNorm — meaning a terminology update in one vocabulary can cascade into required value set updates across the entire quality measurement ecosystem."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "k0065",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0066s",
+          "_type": "span",
+          "marks": [],
+          "text": "Cross-Terminology Mapping"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "k0067",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0068s",
+          "_type": "span",
+          "marks": [],
+          "text": "The SNOMED CT-to-ICD-10-CM map is the most widely used cross-terminology map in US healthcare, enabling automated generation of billing codes from clinical documentation. Similarly, the SNOMED CT-to-LOINC collaboration — formalized as the SNOMED-LOINC ontology — defines formal relationships between SNOMED CT clinical concepts and LOINC observation codes, enabling richer semantic queries. For example, the SNOMED CT concept for 'Measurement of serum creatinine' can be formally linked to LOINC 2160-0 (Creatinine [Mass/volume] in Serum or Plasma), allowing a FHIR server to answer queries that span both terminologies seamlessly."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0069",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0070s",
+          "_type": "span",
+          "marks": [],
+          "text": "Real-World Impact: When Vocabularies Fail — and When They Succeed"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0071",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0072s",
+          "_type": "span",
+          "marks": [],
+          "text": "The stakes of clinical terminology interoperability are not abstract. When terminologies are absent, inconsistent, or incorrectly mapped, the consequences range from administrative inefficiency to direct patient harm. The U.S. healthcare system loses an estimated $30 billion annually in avoidable inefficiencies — including unnecessary repeat diagnostics, delayed treatment decisions, and administrative overhead — that can be traced in part to poor data interoperability at the semantic level."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0073",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0074s",
+          "_type": "span",
+          "marks": [],
+          "text": "Terminology Failures in Practice"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "k0075",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0076s",
+          "_type": "span",
+          "marks": [],
+          "text": "Consider a patient with a documented penicillin allergy in one hospital's EHR system. When that patient transfers to a different hospital or visits an urgent care clinic, their record arrives as a PDF or a raw HL7 v2 message with a free-text allergy field reading 'PCN allergy.' The receiving EHR's clinical decision support engine, which checks for SNOMED CT-coded allergy concepts, does not recognize 'PCN allergy' as a coded entry. The alert does not fire. Without the proper SNOMED CT allergy concept code (e.g., 372687004 — Allergy to penicillin), the safety net disappears at the exact moment the patient crosses organizational boundaries."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0077",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0078s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medication errors are another critical failure mode. A clinician attempting to prescribe 3.125 mg of carvedilol (a common heart failure dose) may find the EHR's medication picker lists only 6.25 mg tablets — because the EHR was not mapped to the correct RxNorm concepts for the 3.125 mg strength (RxCUI 200256). The clinician must manually override, creating both cognitive burden and documentation ambiguity. When RxNorm normalization is incomplete or out of date, these gaps propagate across e-prescribing, pharmacy dispensing, and medication reconciliation workflows."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0079",
+      "_type": "exampleBlock",
+      "content": "During the COVID-19 pandemic, the rapid creation of LOINC codes for SARS-CoV-2 tests (e.g., LOINC 94500-6 for the SARS-CoV-2 RNA PCR test) enabled the CDC to aggregate standardized lab results from thousands of testing sites across the country within a unified surveillance framework. States that had already implemented LOINC-coded lab reporting could contribute data within days. Those relying on free-text or non-standard codes required manual curation, introducing delays of days to weeks into public health surveillance — a real-world demonstration of what standardized terminology makes possible at scale."
+    },
+    {
+      "_key": "k0080",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0081s",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC and CMS Enforcement"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "k0082",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0083s",
+          "_type": "span",
+          "marks": [],
+          "text": "Federal regulations have progressively tightened terminology requirements to address these failure modes. The 21st Century Cures Act established information blocking prohibitions and required ONC-certified health IT to support USCDI data elements with required terminologies. The HTI-1 Final Rule (effective 2025) mandates specific minimum releases of SNOMED CT, LOINC, and RxNorm in certified systems. By July 4, 2026, networks participating in TEFCA (Trusted Exchange Framework and Common Agreement) must expose data via FHIR APIs aligned with US Core IG and USCDI v3 — with labs coded in LOINC, medications in RxNorm, and conditions in SNOMED CT. Non-compliance carries information blocking penalties of up to $1 million per violation under ONC enforcement authority."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0084",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0084_span",
+          "_type": "span",
+          "marks": [],
+          "text": "The goal is not just data exchange — it is data understanding. A lab result that cannot be interpreted by the receiving system is not interoperability; it is just file transfer."
+        }
+      ],
+      "markDefs": [],
+      "style": "blockquote"
+    },
+    {
+      "_key": "k0085",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0086s",
+          "_type": "span",
+          "marks": [],
+          "text": "The convergence of regulatory pressure, FHIR adoption, and value-based care incentives is accelerating the transition from free-text and proprietary coding to standardized, computable vocabularies. Health systems that invest in clean SNOMED CT problem lists, LOINC-coded lab results, and RxNorm-normalized medication records today are building the data foundation for AI-driven clinical decision support, population health analytics, and seamless patient data portability that will define the next decade of healthcare."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0087",
+      "_type": "takeawayBlock",
+      "points": [
+        "SNOMED CT (350,000+ concepts) is the world's most comprehensive clinical terminology, governed by SNOMED International and distributed in the US by NLM via UMLS with a free UMLS license.",
+        "LOINC (~101,600 terms) is the universal standard for naming lab tests, vital signs, and clinical observations, maintained by the Regenstrief Institute and required by USCDI for the Observations data class.",
+        "RxNorm, managed by NLM, normalizes drug names to ingredient + strength + dose form (RxCUI), solving the NDC fragmentation problem and enabling durable clinical decision support across all medications.",
+        "SNOMED CT and ICD-10-CM serve different purposes: SNOMED CT captures clinical meaning at the point of care; ICD-10-CM classifies for billing. The NLM SNOMED-to-ICD map bridges them automatically.",
+        "VSAC (Value Set Authority Center) is the NLM-maintained authoritative repository for curated terminology subsets used in CMS quality measures and regulatory reporting, now transitioning to FHIR-based dQMs.",
+        "ONC's HTI-1 Final Rule and USCDI v3 (mandatory for certified EHRs by January 2026) legally require SNOMED CT, LOINC, and RxNorm for specific FHIR data elements across all certified health IT systems.",
+        "Terminology failures — free-text drug names, uncoded allergy entries, non-standard lab identifiers — contribute to $30+ billion in annual US healthcare inefficiency and create direct patient safety risks.",
+        "FHIR US Core Implementation Guide binds these three terminologies to specific resource types: Condition → SNOMED CT, Observation/DiagnosticReport → LOINC, MedicationRequest → RxNorm."
+      ]
+    },
+    {
+      "_key": "k0088",
+      "_type": "knowledgeCheck",
+      "explanation": "LOINC is the standard for laboratory observations, including serum sodium (LOINC 2951-2). Without a LOINC code, the receiving system has no machine-readable way to identify the analyte, units, specimen type, or scale — making automated interpretation, clinical decision support, and duplicate detection impossible. The result exists as data but cannot be acted upon as information.",
+      "options": [
+        {
+          "_key": "k0088_opt_0",
+          "isCorrect": false,
+          "text": "RxNorm — the receiving pharmacy will not be able to dispense the correct electrolyte supplement."
+        },
+        {
+          "_key": "k0088_opt_1",
+          "isCorrect": false,
+          "text": "SNOMED CT — the receiving EHR cannot classify the finding under the correct diagnosis hierarchy."
+        },
+        {
+          "_key": "k0088_opt_2",
+          "isCorrect": false,
+          "text": "LOINC — the receiving system cannot reliably interpret what was measured, risking misinterpretation or duplicate testing."
+        },
+        {
+          "_key": "k0088_opt_3",
+          "isCorrect": false,
+          "text": "ICD-10-CM — the claim for the lab test cannot be submitted without the correct procedure code."
+        }
+      ],
+      "question": "A hospital sends a patient's lab results to a receiving clinic via FHIR. The results include a serum sodium value but use a local proprietary code instead of a standard identifier. Which terminology should have been used, and what is the primary risk of the omission?"
+    },
+    {
+      "_key": "k0089",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0090s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0091",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0092s",
+          "_type": "span",
+          "marks": [],
+          "text": "NLM Technical Bulletin: September 2025 SNOMED CT US Edition — https://www.nlm.nih.gov/pubs/techbull/so25/brief/so25_snomed_ct_available_for_download.html"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0093",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0094s",
+          "_type": "span",
+          "marks": [],
+          "text": "NLM SNOMED CT US Edition — https://www.nlm.nih.gov/healthit/snomedct/us_edition.html"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0095",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0096s",
+          "_type": "span",
+          "marks": [],
+          "text": "IMO Health: SNOMED CT 101 Guide (2025) — https://www.imohealth.com/resources/snomed-ct-101-a-guide-to-the-international-terminology-system/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0097",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0098s",
+          "_type": "span",
+          "marks": [],
+          "text": "SNOMED International: Our Releases — https://www.snomed.org/releases"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0099",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0100s",
+          "_type": "span",
+          "marks": [],
+          "text": "Regenstrief Institute: LOINC Data Standards — https://www.regenstrief.org/real-world-solutions/loinc/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0101",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0102s",
+          "_type": "span",
+          "marks": [],
+          "text": "Wikipedia: LOINC — https://en.wikipedia.org/wiki/LOINC"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0103",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0104s",
+          "_type": "span",
+          "marks": [],
+          "text": "NLM RxNorm 20th Anniversary Technical Bulletin (2025) — https://www.nlm.nih.gov/pubs/techbull/nd25/nd25_rxnorm_20th_anniversary.html"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0105",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0106s",
+          "_type": "span",
+          "marks": [],
+          "text": "NLM RxNorm Overview — https://www.nlm.nih.gov/research/umls/rxnorm/overview.html"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0107",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0108s",
+          "_type": "span",
+          "marks": [],
+          "text": "NLM RxNorm Technical Documentation — https://www.nlm.nih.gov/research/umls/rxnorm/docs/techdoc.html"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0109",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0110s",
+          "_type": "span",
+          "marks": [],
+          "text": "NLM SNOMED CT to ICD-10-CM Map — https://www.nlm.nih.gov/research/umls/mapping_projects/snomedct_to_icd10cm.html"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0111",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0112s",
+          "_type": "span",
+          "marks": [],
+          "text": "VSAC: Value Set Authority Center — https://vsac.nlm.nih.gov/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0113",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0114s",
+          "_type": "span",
+          "marks": [],
+          "text": "eCQI Resource Center: VSAC — https://ecqi.healthit.gov/tool/value-set-authority-center-vsac"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0115",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0116s",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC Standards Bulletin 2024-2 — https://www.healthit.gov/topic/standardsbulletin_24-2"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0117",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0118s",
+          "_type": "span",
+          "marks": [],
+          "text": "ONC HTI-1 Final Rule — Major Certification Changes — https://healthsystemcio.com/2025/01/29/oncs-hti-1-final-rule-major-certification-changes-ahead/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0119",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0120s",
+          "_type": "span",
+          "marks": [],
+          "text": "IMO Health: USCDI v3 Compliance Mandatory by 2026 — https://www.imohealth.com/resources/uscdi-v3-compliance-is-mandatory-by-2026-heres-how-to-get-ready/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0121",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0122s",
+          "_type": "span",
+          "marks": [],
+          "text": "NLM Health Data Standards Tutorial: LOINC — https://www.nlm.nih.gov/oet/ed/healthdatastandards/02-530.html"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0123",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0124s",
+          "_type": "span",
+          "marks": [],
+          "text": "NLM Health Data Standards Tutorial: RxNorm — https://www.nlm.nih.gov/oet/ed/healthdatastandards/02-520.html"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0125",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0126s",
+          "_type": "span",
+          "marks": [],
+          "text": "Hypercare: Challenges and Risks with Data Interoperability in Healthcare — https://www.hypercare.com/blog/challenges-and-risks-with-data-interoperability-in-healthcare"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0127",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0128s",
+          "_type": "span",
+          "marks": [],
+          "text": "IMO Health: RxNorm 101 — https://www.imohealth.com/resources/rxnorm-101-what-you-need-to-know-for-clinical-documentation/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0129",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0130s",
+          "_type": "span",
+          "marks": [],
+          "text": "Regenstrief Institute: LOINC and COVID-19 Surveillance — https://loinc.org/news/coronavirus-surveillance-regenstrief-team-creating-unique-codes-for-disease-tracking/"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "healthcare-interoperability",
+  "order": 23,
+  "slug": {
+    "_type": "slug",
+    "current": "interop-snomed-loinc-rxnorm"
+  },
+  "title": "SNOMED CT, LOINC, and RxNorm: The Vocabularies That Make Clinical Data Computable"
+}

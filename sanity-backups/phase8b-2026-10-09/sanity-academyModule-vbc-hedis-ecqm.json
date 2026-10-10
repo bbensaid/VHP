@@ -1,0 +1,426 @@
+{
+  "_createdAt": "2026-05-27T19:30:36Z",
+  "_id": "academyModule-vbc-hedis-ecqm",
+  "_rev": "SViNJv8mGNFbXfnPbDTDze",
+  "_type": "academyModule",
+  "_updatedAt": "2026-10-08T17:48:04Z",
+  "body": [
+    {
+      "_key": "hedis-intro",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "American healthcare has invested billions of dollars in quality measurement infrastructure over the past three decades. The result is an ecosystem of extraordinary complexity: hundreds of individual measures, maintained by multiple private organizations and government agencies, collected through administrative claims, hybrid abstraction methods, and electronic health records, reported to dozens of programs across CMS, commercial insurers, state agencies, and accreditation bodies. Any serious practitioner of value-based care must understand this ecosystem — not just which measures exist, but how they are constructed, how they are collected, what they actually measure, and why the ecosystem has failed to produce the reliable, actionable quality intelligence its architects envisioned."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hedis-h2-ncqa",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "NCQA and HEDIS: The Dominant Commercial Quality Framework"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hedis-p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Healthcare Effectiveness Data and Information Set (HEDIS) is maintained by the National Committee for Quality Assurance (NCQA) and represents the most widely used quality measurement framework in American healthcare. HEDIS comprises approximately 90 measures across 6 domains: effectiveness of care, access and availability of care, patient experience, utilization, health plan descriptive information, and measures reported using Electronic Clinical Data Systems (ECDS). HEDIS measures are used in NCQA health plan accreditation, Medicare Advantage Star Ratings, Medicaid managed care quality requirements, and commercial health plan quality reporting to employers and consumers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hedis-p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "HEDIS measures are constructed from three data sources, each with different characteristics. Administrative data (claims-based) uses medical and pharmacy claims to identify patients who received or failed to receive a specified service. Administrative data has 100% population coverage and low collection cost but is subject to coding completeness variations and cannot capture clinical nuances not reflected in billing codes. Medical record review (abstraction) supplements claims with chart review to identify services not captured in claims — particularly lab values, clinical findings, and services delivered but not billed. Hybrid measures combine claims and medical record data for higher precision at higher collection cost."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hedis-h3-electronic",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Electronic HEDIS (eHEDIS) and EHR Data Submission"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "hedis-p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "NCQA has been progressively expanding electronic HEDIS (eHEDIS) — versions of HEDIS measures calculated directly from structured EHR data rather than claims or medical record abstraction. eHEDIS has the potential to reduce the administrative burden of HEDIS collection while improving data accuracy, since clinical values like HbA1c results and blood pressure readings can be captured directly rather than inferred from billing codes. However, eHEDIS implementation requires standardized data extraction from EHR systems, which remains technically challenging given the diversity of EHR platforms and the inconsistency of structured data entry across clinical workflows."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hedis-h2-ecqm",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Electronic Clinical Quality Measures (eCQMs) and the CMS Quality Framework"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hedis-p5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Electronic Clinical Quality Measures (eCQMs) are a parallel quality measure infrastructure developed by CMS and the Office of the National Coordinator for Health IT (ONC) specifically for use with certified EHR technology. eCQMs are specified in Health Quality Measure Format (HQMF), with measure logic written in Clinical Quality Language (CQL) since the 2019 reporting period — a machine-readable specification that allows EHR systems to calculate measure results automatically from structured clinical data. CMS uses eCQMs in multiple quality reporting programs including the Inpatient Quality Reporting (IQR) program for hospitals, the Outpatient Quality Reporting (OQR) program, and the MIPS quality category."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hedis-p6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The FHIR plumbing that digital measurement depends on is being laid by two 2020 rules: the CMS Interoperability and Patient Access final rule, which required CMS-regulated payers (Medicare Advantage, Medicaid, CHIP and federal-exchange plans) to offer FHIR-based Patient Access APIs, and the ONC Cures Act final rule, which required certified EHRs to support standardized FHIR APIs. NCQA's shift of HEDIS measures to Electronic Clinical Data Systems (ECDS) reporting, which draws on EHR, registry and HIE data rather than claims alone, represents the convergence of the HEDIS and eCQM frameworks toward a common digital infrastructure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hedis-h2-cms-core",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS Core Measure Sets: Inpatient, Outpatient, and Primary Care"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hedis-p7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS maintains Core Measure Sets for different care settings that serve as the quality reporting basis for hospital and physician payment programs. The Hospital Inpatient Core Measure Set covers domains including heart failure, pneumonia, venous thromboembolism prevention, stroke care, and perinatal care. The Hospital Outpatient Core Measure Set covers cataract surgery, colonoscopy, and emergency department throughput. The Clinician and Group Core Measure Set covers primary care quality domains including preventive care, chronic disease management (diabetes, cardiovascular disease, depression), and care coordination."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hedis-p8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS aligns these core measure sets with HEDIS and endorsed measures (formerly NQF-endorsed, now endorsed through CMS's consensus-based entity) to the extent possible, but alignment across programs is imperfect. A health system reporting quality to CMS under IQR, to NCQA for health plan accreditation, to commercial payers for VBC contracts, and to state agencies for Medicaid managed care quality requirements may be reporting on dozens of overlapping but non-identical measures to multiple audiences simultaneously — a duplication problem that consumes significant resources without proportionate insight."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hedis-h2-nqf",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Measure Endorsement: The Scientific Legitimacy Process"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hedis-p9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "For two decades the National Quality Forum (NQF), a nonprofit, ran the consensus-based endorsement process that federal programs relied on. Since 2023, CMS's consensus-based entity (CBE) contract has been held by Battelle, which runs measure endorsement and pre-rulemaking review through the Partnership for Quality Measurement (PQM). Endorsement signals that a measure meets standards for importance, scientific acceptability, usability, and feasibility; endorsed measures carry a CBE number (legacy NQF numbers were kept), and CMS gives weight to endorsement when selecting measures for its quality reporting and payment programs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hedis-p10",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Endorsement involves technical expert panels, public comment, and committee review — a rigorous procedure that has historically taken a year or more per measure. This thoroughness ensures scientific quality but also slows the introduction of new measures in rapidly evolving clinical areas. The process has also been criticized for favoring measures with strong specialty society backing over measures that might be more clinically important but lack organized constituency support."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hedis-h2-process-outcome",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Process, Outcome, and Structural Measures: The Quality Hierarchy"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hedis-p11",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Quality measures fall into three categories with different strengths and limitations. Process measures assess whether a specific evidence-based clinical action was taken — for example, whether a diabetic patient received an HbA1c test within the measurement year. Process measures are actionable (clinicians know exactly what to do to improve them) and relatively easy to collect, but they measure inputs rather than outcomes and can be gamed by performing the measured process without the broader clinical context that makes it beneficial."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hedis-p12",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Outcome measures assess whether patients achieved a desired health state — for example, whether a diabetic patient achieved HbA1c control below 8%. Outcome measures reflect what patients actually care about but are influenced by factors outside the provider's control including patient adherence, social determinants, and biological factors. Structural measures assess whether an organization has the infrastructure or capabilities associated with quality care — for example, whether a practice uses an electronic health record or has a formal chronic disease management program."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hedis-p13",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The quality measurement field has been moving toward outcome measures for two decades, reflecting the recognition that process compliance does not guarantee outcomes. MIPS requires clinicians to report at least one outcome measure (or another high-priority measure if no outcome measure applies), and the Medicare Advantage Star Ratings weight outcome measures three times as heavily as process measures. However, outcome measures require larger sample sizes for reliable measurement, are more sensitive to case mix and social risk, and demand more sophisticated risk adjustment — creating a tension between measurement validity and operational feasibility."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hedis-h2-proliferation",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Measure Proliferation Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hedis-p14",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The quality measurement ecosystem has grown without systematic coordination, resulting in measure proliferation that burdens providers without proportionate information value. A 2016 Health Affairs study (Casalino et al.) estimated that US physician practices spend more than $15.4 billion a year, about 785 hours per physician, reporting quality measures to CMS and commercial payers. Many of these measures are similar but not identical — measuring hemoglobin A1c with slightly different age cutoffs or different denominator specifications across programs — requiring separate data collection and reporting workflows for technically similar clinical concepts."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hedis-p15",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The Core Quality Measures Collaborative (CQMC) was established by CMS and major commercial payers to develop aligned measure sets for specific clinical conditions, reducing the measure burden on providers through cross-payer alignment. The CQMC has made progress in aligning measures for oncology, cardiovascular care, and behavioral health, but alignment remains incomplete. The fundamental problem is that each payer has incentive to use measures that reflect well on its plan's enrolled population or that align with its specific quality improvement priorities — creating centrifugal pressure toward differentiation that multi-stakeholder alignment efforts must continuously counteract."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hedis-h2-dqm",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Digital Quality Measures: The Next Generation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hedis-p16",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS and NCQA have both committed to transitioning quality measurement to a fully digital infrastructure — digital quality measures (dQMs) — that would replace claims-based and hybrid collection methods with structured EHR and health information exchange data. A fully digital measure infrastructure would dramatically reduce collection costs, increase measurement frequency from annual to near-real-time, and enable more granular analysis of care patterns than claims-based approaches allow."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hedis-p17",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The transition to dQMs requires three preconditions that are not yet universally met: standardized structured data entry in EHRs (particularly for clinical values like vital signs, lab results, and medication records), standardized FHIR-based data exchange APIs across all EHR platforms, and quality measure logic expressed in CQL (Clinical Quality Language) that can run against standardized FHIR data models. Progress on all three fronts has been substantial since the 21st Century Cures Act's interoperability provisions took effect, but the transition from a claims-based to a digital quality measurement ecosystem will take years and significant investment to complete."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hedis-h2-equity",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Equity Stratification: The Missing Dimension"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hedis-p18",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "One of the most significant evolution in quality measurement over the past five years has been the growing imperative to stratify quality data by race, ethnicity, language, income, and disability status. Aggregate quality scores can conceal dramatic disparities: a health plan that achieves the 75th percentile on overall HbA1c control may have excellent performance for white, commercially insured members and significantly lower performance for Black, Hispanic, or Medicaid-enrolled members. Without stratified data, these disparities are invisible and therefore unaddressable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hedis-p19",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "NCQA introduced the Health Equity Accreditation program in 2021 and has been adding race and ethnicity stratification to HEDIS measures. CMS finalized a Health Equity Index reward for the Medicare Advantage Star Ratings (later renamed Excellent Health Outcomes for All), then cancelled it in the CY2027 final rule of April 2026 and kept the historical reward factor, a reminder that equity incentives in federal programs remain politically contingent. The Enhancing Oncology Model requires participants to screen for health-related social needs, collect sociodemographic data and maintain health equity plans. The field is moving from measuring average quality to measuring the distribution of quality across demographic groups, which is a more demanding and more informative standard."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hedis-synthesis",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1",
+          "_type": "span",
+          "marks": [],
+          "text": "The quality measurement ecosystem is both indispensable and dysfunctional. It is indispensable because without standardized, systematically collected quality data, there is no objective basis for value-based care payment, quality improvement, or consumer choice. It is dysfunctional because measure proliferation, data collection burden, gaming risk, and equity gaps have made it expensive, administratively burdensome, and only partially informative. The transition to digital quality measures represents the most promising path forward — enabling richer, more frequent, more equitable quality intelligence at lower operational cost — but requires sustained investment in health information infrastructure and regulatory alignment that the market alone will not produce."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseTitle": "Value-Based Care: From Fee-for-Service to Outcomes",
+  "estimatedReadTime": 20,
+  "level": "Intermediate",
+  "moduleNumber": 10,
+  "pillar": "Clinical",
+  "slug": {
+    "_type": "slug",
+    "current": "vbc-quality-measures-hedis-ecqm"
+  },
+  "summary": "The American quality measurement ecosystem comprises hundreds of measures maintained by dozens of organizations, collected through multiple data streams, and applied inconsistently across payers and programs. This lesson provides a comprehensive map of the ecosystem: HEDIS and the NCQA, electronic Clinical Quality Measures and their EHR infrastructure, the NQF endorsement process, the progression from process to outcome measures, the measure proliferation problem, the emerging shift toward digital quality measures, and the growing imperative to stratify quality data by equity dimensions.",
+  "title": "HEDIS, eCQMs and the Quality Measurement Ecosystem"
+}
