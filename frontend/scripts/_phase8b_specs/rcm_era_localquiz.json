@@ -1,0 +1,34 @@
+{
+ "qid": "q-rcm-payment-001-3",
+ "expectText": "What ERA adoption rate should best-practice organizations target?",
+ "set": {
+  "text": "Which electronic transaction pairs with the ERA (835) to create a fully electronic payment cycle?",
+  "explanation": "The ERA explains how a claim was paid, while EFT (electronic funds transfer) delivers the money directly to the provider's bank account. Together they let payments post automatically and be reconciled to bank deposits; the 837 is the outgoing claim and the 270/271 is an eligibility inquiry.",
+  "options": [
+   {
+    "id": "a",
+    "text": "The 837 claim transaction"
+   },
+   {
+    "id": "b",
+    "text": "The 270/271 eligibility inquiry"
+   },
+   {
+    "id": "c",
+    "text": "EFT (electronic funds transfer)"
+   },
+   {
+    "id": "d",
+    "text": "A paper EOB"
+   }
+  ],
+  "correctId": "c"
+ },
+ "files": [
+  "frontend/content/course_revenue_cycle.json",
+  "frontend/content/courses_tier3.json"
+ ],
+ "claim": "local quiz: 90%+ ERA adoption target",
+ "verdict": "UNVERIFIABLE",
+ "src": "No source for a 90%+ ERA adoption \"best practice\", 1-3% of net revenue recovered from underpayments (only vendor blogs; same claim fixed in payer-contracts), or a 24-48 hour posting rule"
+}

@@ -1,0 +1,65 @@
+{
+ "lessonIds": [
+  "fbbc1a51-cd68-4793-a016-d86e6eb6d7bf"
+ ],
+ "files": [
+  "frontend/content/course_revenue_cycle.json",
+  "frontend/content/courses_tier3.json"
+ ],
+ "edits": [
+  {
+   "match": {
+    "type": "comparison_table",
+    "headers": [
+     "Denial Type",
+     "Appeal Success Rate",
+     "Priority",
+     "Strategy"
+    ]
+   },
+   "set": {
+    "headers": [
+     "Denial Type",
+     "Typical Recoverability",
+     "Priority",
+     "Strategy"
+    ],
+    "rows": [
+     [
+      "Medical necessity",
+      "Often recoverable with documentation",
+      "High",
+      "Attach clinical documentation; peer-to-peer review"
+     ],
+     [
+      "Authorization missing",
+      "Varies by payer",
+      "Medium",
+      "Obtain retrospective auth if payer allows"
+     ],
+     [
+      "Timely filing",
+      "Rarely recoverable",
+      "Low",
+      "Pursue only with proof of prior submission"
+     ],
+     [
+      "Duplicate",
+      "Usually resolvable",
+      "High",
+      "Demonstrate claims are for different dates of service"
+     ],
+     [
+      "Coding/documentation",
+      "Often recoverable via corrected claim",
+      "High",
+      "Submit corrected claim with amended documentation"
+     ]
+    ]
+   },
+   "claim": "fallback table: appeal success rates by denial type (medical necessity 60-75%, auth 30-40%, timely filing 5-10%, duplicate 85-90%, coding 55-70%)",
+   "verdict": "UNVERIFIABLE",
+   "src": "No source given or found for appeal success rates by denial type, a $100-250 threshold norm, or a 2-4 point annual reduction"
+  }
+ ]
+}

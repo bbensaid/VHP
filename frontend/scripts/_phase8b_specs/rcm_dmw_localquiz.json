@@ -1,0 +1,14 @@
+{
+ "qid": "q-rcm-denial-002-2",
+ "expectText": "Which denial type has the highest appeal success rate?",
+ "set": {
+  "text": "Which of these denial types is usually the most recoverable?",
+  "explanation": "Duplicate denials are among the most recoverable because they often result from a processing error rather than a true clinical or administrative problem. Demonstrating the claims are for distinct dates of service typically resolves them."
+ },
+ "files": [
+  "frontend/content/courses_tier3.json"
+ ],
+ "claim": "local quiz q-rcm-denial-002-2: 85-90% appeal success",
+ "verdict": "UNVERIFIABLE",
+ "src": "No source given or found for appeal success rates by denial type, a $100-250 threshold norm, or a 2-4 point annual reduction"
+}

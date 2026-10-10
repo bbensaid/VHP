@@ -1,0 +1,36 @@
+{
+ "edits": [
+  {
+   "table": "quiz_questions",
+   "id": "44f51522-983b-49b8-969a-47d3d1fb066d",
+   "expect": {
+    "question": "Which denial type has the highest appeal success rate?"
+   },
+   "set": {
+    "question": "Which of these denial types is usually the most recoverable?",
+    "explanation": "Duplicate denials are among the most recoverable because they often result from a processing error rather than a true clinical or administrative problem. Demonstrating the claims are for distinct dates of service typically resolves them."
+   },
+   "claim": "quiz: duplicate denials have 85-90% appeal success",
+   "verdict": "UNVERIFIABLE",
+   "src": "No source given or found for appeal success rates by denial type, a $100-250 threshold norm, or a 2-4 point annual reduction"
+  }
+ ],
+ "localPairs": [
+  {
+   "file": "frontend/content/course_revenue_cycle.json",
+   "old": "Which denial type has the highest appeal success rate?",
+   "new": "Which of these denial types is usually the most recoverable?",
+   "claim": "local quiz q-rcm-denial-002-2: 85-90% appeal success",
+   "verdict": "UNVERIFIABLE",
+   "src": "No source given or found for appeal success rates by denial type, a $100-250 threshold norm, or a 2-4 point annual reduction"
+  },
+  {
+   "file": "frontend/content/course_revenue_cycle.json",
+   "old": "Duplicate denials (85\u201390% appeal success) are among the most recoverable",
+   "new": "Duplicate denials are among the most recoverable",
+   "claim": "local quiz q-rcm-denial-002-2: 85-90% appeal success",
+   "verdict": "UNVERIFIABLE",
+   "src": "No source given or found for appeal success rates by denial type, a $100-250 threshold norm, or a 2-4 point annual reduction"
+  }
+ ]
+}

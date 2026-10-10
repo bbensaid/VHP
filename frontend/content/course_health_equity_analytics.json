@@ -99,8 +99,8 @@
                 },
                 {
                   "value": "1.9%",
-                  "label": "Inpatient admissions coded with an SDOH Z-code despite CDC/WHO emphasis",
-                  "source": "PMC, SDOH Z-code adoption study"
+                  "label": "Inpatient admissions coded with an SDOH Z-code, 2016\u20132017",
+                  "source": "Truong et al., Medical Care 2020 (National Inpatient Sample)"
                 }
               ]
             },
@@ -136,7 +136,7 @@
               "type": "callout",
               "variant": "warning",
               "heading": "Important",
-              "body": "Federal incentive infrastructure for this measurement work is not moving in one direction. CMS's 2027 Medicare Advantage Star Ratings final rule declined to implement the previously proposed Health Equity Index reward, keeping the historical Reward Factor instead \u2014 even as NCQA's own stratification requirement keeps expanding. Measurement infrastructure and payment incentive are not the same thing, and they are not currently moving in lockstep."
+              "body": "Federal incentive infrastructure for this measurement work is not moving in one direction. CMS's 2027 Medicare Advantage Star Ratings final rule declined to implement the Health Equity Index reward it had finalized in 2023, keeping the historical Reward Factor instead \u2014 even as NCQA's own stratification requirement keeps expanding. Measurement infrastructure and payment incentive are not the same thing, and they are not currently moving in lockstep."
             }
           ],
           "quiz": {
@@ -213,7 +213,7 @@
                 "type": "true_false",
                 "points": 1,
                 "question": "CMS's 2027 Medicare Advantage Star Ratings final rule implemented a new Health Equity Index reward for plans.",
-                "explanation": "CMS declined to implement the previously proposed Health Equity Index reward (branded 'Excellent Health Outcomes for All') for 2027 and continued the historical Reward Factor instead.",
+                "explanation": "CMS declined to implement the Health Equity Index reward it had finalized in 2023 (branded 'Excellent Health Outcomes for All') for 2027 and continued the historical Reward Factor instead.",
                 "options": [
                   {
                     "id": "o_hea1c1",
@@ -224,7 +224,7 @@
                     "id": "o_hea1c2",
                     "text": "True",
                     "isCorrect": false,
-                    "explanation": "This is the opposite of what happened \u2014 the Health Equity Index reward was proposed but not adopted for 2027."
+                    "explanation": "This is the opposite of what happened \u2014 the Health Equity Index reward was finalized in 2023 but not implemented for 2027."
                   }
                 ]
               },
@@ -300,7 +300,7 @@
             {
               "type": "text",
               "heading": "Two ways to describe the same gap",
-              "body": "Suppose Group A has an outcome rate of 20% and Group B has a rate of 10%. The **rate difference** is 10 percentage points. The **rate ratio** is 2.0 \u2014 Group A's rate is twice Group B's. Both are true simultaneously, and each is the more honest number in a different context: the rate difference tells you the absolute burden (how many more people in Group A are affected), while the rate ratio tells you the relative burden (how much more likely). AHRQ's National Healthcare Quality and Disparities Report (NHQDR), the federally mandated annual disparities report, computes rate ratios between each priority population and a reference group for its headline disparity tables.\n\nA disparity that looks small on one scale can look large on the other. A rate difference of 2 percentage points sounds modest; if the reference rate is 1%, that is a 3x rate ratio."
+              "body": "Suppose Group A has an outcome rate of 20% and Group B has a rate of 10%. The **rate difference** is 10 percentage points. The **rate ratio** is 2.0 \u2014 Group A's rate is twice Group B's. Both are true simultaneously, and each is the more honest number in a different context: the rate difference tells you the absolute burden (how many more people in Group A are affected), while the rate ratio tells you the relative burden (how much more likely). AHRQ's National Healthcare Quality and Disparities Report (NHQDR), the federally mandated annual disparities report, counts a gap as a disparity only when the absolute difference between a priority population and its reference group is statistically significant and the relative difference is at least 10%.\n\nA disparity that looks small on one scale can look large on the other. A rate difference of 2 percentage points sounds modest; if the reference rate is 1%, that is a 3x rate ratio."
             },
             {
               "type": "callout",
@@ -328,8 +328,8 @@
                   "source": "CMS Office of Minority Health"
                 },
                 {
-                  "value": "18+",
-                  "label": "Chronic conditions the MMD Tool tracks by race/ethnicity, geography, and dual-eligibility",
+                  "value": "Up to 60",
+                  "label": "Chronic and potentially disabling conditions the MMD Tool tracks",
                   "source": "CMS OMH"
                 }
               ]
@@ -337,7 +337,7 @@
             {
               "type": "text",
               "heading": "The reference-group problem",
-              "body": "Every disparity ratio needs a denominator group to compare against. AHRQ's own methodology documentation is explicit that this choice matters and is under continuous review: comparing every group to the population's best-performing group produces larger, more visible gaps; comparing every group to the population average produces smaller ones. Neither choice is 'wrong' \u2014 but a report that switches reference groups between years, or between measures, without saying so, can make progress (or its absence) look different than it is."
+              "body": "Every disparity ratio needs a denominator group to compare against. AHRQ's NHQDR methods documentation states its choice explicitly (the largest subgroup or the one that typically receives the best care), and the choice matters: comparing every group to the population's best-performing group produces larger, more visible gaps; comparing every group to the population average produces smaller ones. Neither choice is 'wrong' \u2014 but a report that switches reference groups between years, or between measures, without saying so, can make progress (or its absence) look different than it is."
             },
             {
               "type": "comparison_table",
@@ -366,12 +366,12 @@
               "type": "callout",
               "variant": "warning",
               "heading": "Important",
-              "body": "Small subgroups produce unstable rates. A rate computed from 20 patients can swing from a 5% disparity to a 25% disparity with two additional events. AHRQ and NCQA both apply minimum-cell-size suppression rules before publishing a stratified rate \u2014 a real methodological safeguard, not bureaucratic caution. Any equity dashboard built without a minimum-N rule will manufacture false disparities out of statistical noise."
+              "body": "Small subgroups produce unstable rates. A rate computed from 20 patients can jump from 5% to 15% with two additional events (1 of 20 to 3 of 20). AHRQ and NCQA both apply minimum-cell-size suppression rules before publishing a stratified rate \u2014 a real methodological safeguard, not bureaucratic caution. Any equity dashboard built without a minimum-N rule will manufacture false disparities out of statistical noise."
             },
             {
               "type": "text",
               "heading": "Case study: the Mapping Medicare Disparities Tool",
-              "body": "CMS's Office of Minority Health launched the Mapping Medicare Disparities (MMD) Tool in March 2016 specifically to solve the reference-group and small-numbers problems for public users. It offers two views \u2014 Population View and Hospital View \u2014 letting analysts filter by state or county, sex, age, dual-eligibility status, and race/ethnicity, and it tracks utilization and outcome measures (hospitalizations, readmissions, mortality) across 18-plus chronic conditions. Its design choices \u2014 a fixed set of comparison groups, pre-suppressed small cells, downloadable underlying tables \u2014 are a working example of the tradeoffs this lesson describes, made once by CMS so individual analysts don't have to remake them inconsistently."
+              "body": "CMS's Office of Minority Health launched the Mapping Medicare Disparities (MMD) Tool in March 2016 to increase understanding of disparities among Medicare beneficiaries, and its design settles the reference-group and small-numbers problems for public users. It offers two views \u2014 Population View and Hospital View \u2014 letting analysts filter by state or county, sex, age, dual-eligibility status, and race/ethnicity, and it tracks utilization and outcome measures (hospitalizations, readmissions, mortality) across up to 60 chronic and potentially disabling conditions. Its design choices \u2014 a fixed set of comparison groups, pre-suppressed small cells, downloadable underlying tables \u2014 are a working example of the tradeoffs this lesson describes, made once by CMS so individual analysts don't have to remake them inconsistently."
             }
           ],
           "quiz": {
@@ -595,12 +595,12 @@
               "type": "callout",
               "variant": "warning",
               "heading": "Important \u2014 a live measurement-vs-incentive gap",
-              "body": "CMS's Contract Year 2027 Medicare Advantage and Part D final rule did not implement the 'Excellent Health Outcomes for All' reward \u2014 the payment incentive that had been proposed as a Health Equity Index reward for Star Ratings \u2014 and instead continued the historical Reward Factor, which rewards consistently high performance for all enrollees rather than closing gaps between them. NCQA's own stratified-measure count kept growing in the same period. The measurement infrastructure to detect a disparity and the payment infrastructure to reward closing it are not the same system, and as of this course's writing, they are not moving at the same pace."
+              "body": "CMS's Contract Year 2027 Medicare Advantage and Part D final rule did not implement the 'Excellent Health Outcomes for All' reward \u2014 the renamed Health Equity Index reward CMS had finalized in 2023 for Star Ratings \u2014 and instead continued the historical Reward Factor, which rewards consistently high performance for all enrollees rather than closing gaps between them. NCQA's own stratified-measure count kept growing in the same period. The measurement infrastructure to detect a disparity and the payment infrastructure to reward closing it are not the same system, and as of this course's writing, they are not moving at the same pace."
             },
             {
               "type": "text",
               "heading": "Case study: Rush University Medical Center",
-              "body": "Rush University Medical Center's health equity strategy, described in a 2021 *NEJM Catalyst* case study, treated data stratification as a system-level strategy rather than a compliance exercise: Rush restructured its own operations around what stratified data showed about its West Side Chicago neighborhood, including forming a dedicated Anchor Mission committee to translate what the numbers found into hiring, purchasing, and investment decisions in the surrounding community \u2014 not just clinical protocol changes. It is a working example of what NCQA's stratification requirement is *for*: a plan or system can only act on a gap it can see by subgroup, and Rush built its strategy around making that visibility organizational, not just a report that quality staff filed once a year."
+              "body": "Rush University Medical Center's health equity strategy, described in a 2021 *NEJM Catalyst* case study, treated health equity as a system-level strategy rather than a compliance exercise: starting from the life-expectancy gap its community health needs assessment documented on Chicago's West Side, Rush formed an internal Anchor Mission committee with targets for local hiring, career pathways, local spending, and volunteering, and a Health Equity Governance Committee to steer improvement work on racial, ethnic, gender, and age inequities in patient outcomes \u2014 not just clinical protocol changes. It is a working example of what NCQA's stratification requirement is *for*: a plan or system can only act on a gap it can see by subgroup, and Rush built its strategy around making that visibility organizational, not just a report that quality staff filed once a year."
             }
           ],
           "quiz": {
@@ -677,7 +677,7 @@
                 "type": "true_false",
                 "points": 1,
                 "question": "CMS's 2027 Medicare Advantage Star Ratings final rule expanded payment rewards specifically for closing health equity gaps.",
-                "explanation": "CMS did not implement the previously proposed Health Equity Index reward for 2027 and instead continued the historical Reward Factor, which is not equity-targeted \u2014 the opposite of what this statement claims.",
+                "explanation": "CMS did not implement the Health Equity Index reward it had finalized in 2023 (set to begin with 2027 Star Ratings) and instead continued the historical Reward Factor, which is not equity-targeted \u2014 the opposite of what this statement claims.",
                 "options": [
                   {
                     "id": "o_hea3c1",
@@ -697,11 +697,11 @@
                 "type": "single_choice",
                 "points": 1,
                 "question": "What did Rush University Medical Center's equity strategy add beyond simply collecting stratified data?",
-                "explanation": "Rush's case study is notable for translating what stratified data showed into structural, community-facing action (an anchor-mission committee) \u2014 not stopping at the report.",
+                "explanation": "Rush's case study is notable for translating documented health gaps into structural, community-facing action (an anchor-mission committee) \u2014 not stopping at the report.",
                 "options": [
                   {
                     "id": "o_hea3d1",
-                    "text": "It organized hiring, purchasing, and community investment decisions (an anchor-mission approach) around what the stratified data showed",
+                    "text": "It organized hiring, purchasing, and community investment decisions (an anchor-mission approach) around the health gaps it had documented in its community",
                     "isCorrect": true
                   },
                   {

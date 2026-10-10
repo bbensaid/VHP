@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "old": " This significantly changes the leverage available for patient collection programs and makes proactive financial counseling and payment plans even more important.",
+   "new": " However, in July 2025 a federal court vacated the rule, so it never took effect; medical-debt credit reporting is now governed by a changing patchwork of state laws. Proactive financial counseling and payment plans remain the most reliable levers.",
+   "claim": "fallback: CFPB rule presented as in force (\"significantly changes the leverage\")",
+   "verdict": "OUTDATED",
+   "src": "CFPB final rule Jan 7 2025 (Troutman/CFS Law Monitor coverage): would remove ~$49B in medical bills from reports of ~15M Americans; vacated July 11 2025 by U.S. District Court for E.D. Texas (Brownstein, cited [6] in Sanity body) \u2014 the fallback presented it as in force",
+   "note": ""
+  },
+  {
+   "old": "The CFPB's January 2025 final rule removes medical debt from consumer credit reports and prohibits debt collectors from using credit reporting as leverage to collect medical debts, significantly changing patient collection dynamics.",
+   "new": "The CFPB finalized a rule in January 2025 to remove medical debt from most credit reports, but in July 2025 a federal court vacated it as exceeding the Bureau's authority under the Fair Credit Reporting Act, so the federal ban never took effect.",
+   "claim": "quiz explanation: the rule removes medical debt from credit reports (presented as in force)",
+   "verdict": "OUTDATED",
+   "src": "CFPB final rule Jan 7 2025 (Troutman/CFS Law Monitor coverage): would remove ~$49B in medical bills from reports of ~15M Americans; vacated July 11 2025 by U.S. District Court for E.D. Texas (Brownstein, cited [6] in Sanity body) \u2014 the fallback presented it as in force",
+   "note": ""
+  }
+ ],
+ "supa": [
+  {
+   "table": "lessons",
+   "col": "content_blocks",
+   "ids": [
+    "279f53c3-8e40-4b25-9704-7d377562386c"
+   ]
+  },
+  {
+   "table": "quiz_questions",
+   "col": "explanation",
+   "ids": [
+    "ec5227bf-7dd8-43fa-b0f7-d209559ed539"
+   ]
+  }
+ ],
+ "files": [
+  "frontend/content/course_revenue_cycle.json",
+  "frontend/content/courses_tier3.json"
+ ]
+}

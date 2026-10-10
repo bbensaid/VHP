@@ -1,0 +1,49 @@
+{
+ "pairs": [
+  {
+   "old": "More than 25% in the 90+ bucket signals a systemic problem.",
+   "new": "A 90+ bucket well above the common ~15% target signals a systemic problem.",
+   "claim": "fallback: more than 25% in 90+ signals a systemic problem",
+   "verdict": "UNVERIFIABLE",
+   "src": "No source for a \"25% in 90+\" benchmark; the lesson body uses the common ~15% rule of thumb (internal contradiction). Medicare Claims Processing Manual ch.1 sec. 80.2: clean claims paid within 30 days of receipt \u2014 contradicts \"most payers have not yet adjudicated\" before 60 days",
+   "note": ""
+  },
+  {
+   "old": "Industry benchmark is less than 25% of AR in the 90+ day bucket. A 35% concentration",
+   "new": "Common industry targets keep 90+ AR to roughly 15% or less. A 35% concentration",
+   "claim": "quiz explanation: industry benchmark less than 25% in 90+",
+   "verdict": "UNVERIFIABLE",
+   "src": "No source for a \"25% in 90+\" benchmark; the lesson body uses the common ~15% rule of thumb (internal contradiction). Medicare Claims Processing Manual ch.1 sec. 80.2: clean claims paid within 30 days of receipt \u2014 contradicts \"most payers have not yet adjudicated\" before 60 days",
+   "note": ""
+  },
+  {
+   "old": "Active follow-up before 60 days typically yields few results as most payers have not yet adjudicated the claim.",
+   "new": "Medicare must pay clean claims within 30 days of receipt, so a claim still unpaid at 31\u201360 days warrants a status check, and one still unresolved past 60 days needs active follow-up.",
+   "claim": "quiz explanation: most payers have not yet adjudicated before 60 days",
+   "verdict": "FABRICATED",
+   "src": "No source for a \"25% in 90+\" benchmark; the lesson body uses the common ~15% rule of thumb (internal contradiction). Medicare Claims Processing Manual ch.1 sec. 80.2: clean claims paid within 30 days of receipt \u2014 contradicts \"most payers have not yet adjudicated\" before 60 days",
+   "note": ""
+  }
+ ],
+ "supa": [
+  {
+   "table": "lessons",
+   "col": "content_blocks",
+   "ids": [
+    "a5a18578-caf1-45a4-aaed-f07e0967e84e"
+   ]
+  },
+  {
+   "table": "quiz_questions",
+   "col": "explanation",
+   "ids": [
+    "893b16ee-2837-4a34-a126-cdbdac920933",
+    "3add9ca0-7db3-4c8d-a52c-98d58d837ced"
+   ]
+  }
+ ],
+ "files": [
+  "frontend/content/course_revenue_cycle.json",
+  "frontend/content/courses_tier3.json"
+ ]
+}

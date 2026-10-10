@@ -1,0 +1,152 @@
+[
+ {
+  "lessonId": "01ca0a76-f664-4ef0-b292-d2ce8221cc2a",
+  "slug": "hl7-v2-legacy-messaging",
+  "docId": "interop-hl7-v2",
+  "course": "Healthcare Interoperability & Data Exchange"
+ },
+ {
+  "lessonId": "a4f53b9f-54f9-4430-a52e-c462672eea83",
+  "slug": "hl7-fhir-introduction",
+  "docId": "interop-fhir-intro",
+  "course": "Healthcare Interoperability & Data Exchange"
+ },
+ {
+  "lessonId": "6fdf1917-db8f-4142-9571-a5de6b85744a",
+  "slug": "cda-ccda-clinical-documents",
+  "docId": "interop-cda-ccda",
+  "course": "Healthcare Interoperability & Data Exchange"
+ },
+ {
+  "lessonId": "3bb380bf-eb1e-46a2-a123-d3ec405c40cc",
+  "slug": "21st-century-cures-act-overview",
+  "docId": "interop-cures-act",
+  "course": "Healthcare Interoperability & Data Exchange"
+ },
+ {
+  "lessonId": "c99e19b6-63e5-4027-b91f-35238e07439a",
+  "slug": "information-blocking-rules",
+  "docId": "interop-info-blocking",
+  "course": "Healthcare Interoperability & Data Exchange"
+ },
+ {
+  "lessonId": "fe37afc1-0a72-495b-b957-6d71c2397d07",
+  "slug": "certified-ehr-technology-requirements",
+  "docId": "interop-cehrt",
+  "course": "Healthcare Interoperability & Data Exchange"
+ },
+ {
+  "lessonId": "434bb5a0-1342-4c92-8fc0-3f4a9bb495ed",
+  "slug": "patient-access-rights-hipaa",
+  "docId": "interop-patient-access",
+  "course": "Healthcare Interoperability & Data Exchange"
+ },
+ {
+  "lessonId": "862fd922-8ffc-406d-a9a8-a2d4f516f8a7",
+  "slug": "smart-on-fhir-authorization",
+  "docId": "interop-smart-fhir",
+  "course": "Healthcare Interoperability & Data Exchange"
+ },
+ {
+  "lessonId": "2dd41559-d69e-46fb-ac4d-3609b6df057f",
+  "slug": "cms-patient-access-api",
+  "docId": "interop-cms-patient-access-api",
+  "course": "Healthcare Interoperability & Data Exchange"
+ },
+ {
+  "lessonId": "952c8cac-69e4-4a0b-a545-807e6afcf00f",
+  "slug": "payer-to-payer-exchange",
+  "docId": "interop-payer-to-payer",
+  "course": "Healthcare Interoperability & Data Exchange"
+ },
+ {
+  "lessonId": "2f69eb97-8cfb-4429-a7c2-b27e949df38d",
+  "slug": "bulk-fhir-population-data",
+  "docId": "interop-bulk-fhir",
+  "course": "Healthcare Interoperability & Data Exchange"
+ },
+ {
+  "lessonId": "34b49c31-cf4f-4cdb-b800-e788ee1ff315",
+  "slug": "query-vs-event-driven-exchange",
+  "docId": "interop-query-vs-event",
+  "course": "Healthcare Interoperability & Data Exchange"
+ },
+ {
+  "lessonId": "1914a8e9-23ad-416b-828c-f2dc03701d42",
+  "slug": "hie-consent-models",
+  "docId": "interop-consent-models",
+  "course": "Healthcare Interoperability & Data Exchange"
+ },
+ {
+  "lessonId": "15ce5047-0879-4dc7-af78-157ddf5d3425",
+  "slug": "interface-engines-integration",
+  "docId": "interop-interface-engines",
+  "course": "Healthcare Interoperability & Data Exchange"
+ },
+ {
+  "lessonId": "a30a86fe-59c5-4361-adcc-080554e93175",
+  "slug": "ehr-business-case-roi",
+  "docId": "ehr-business-case-roi",
+  "course": "Healthcare Interoperability & Data Exchange"
+ },
+ {
+  "lessonId": "b681a5cd-c6db-44b5-b9dc-330e63ef4f60",
+  "slug": "snomed-loinc-rxnorm",
+  "docId": "interop-snomed-loinc-rxnorm",
+  "course": "Healthcare Interoperability & Data Exchange"
+ },
+ {
+  "lessonId": "8ced148e-689a-4eff-b4bc-0e1f87e752c9",
+  "slug": "uscdi-us-core-data",
+  "docId": "interop-uscdi",
+  "course": "Healthcare Interoperability & Data Exchange"
+ },
+ {
+  "lessonId": "1ffa0539-e03a-4dce-9e75-97534c56c8da",
+  "slug": "hipaa-security-rule",
+  "docId": "interop-hipaa-security",
+  "course": "Healthcare Interoperability & Data Exchange"
+ },
+ {
+  "lessonId": "af70b2dc-5f48-433e-b08c-e2f9958394cc",
+  "slug": "hie-data-governance-frameworks",
+  "docId": "interop-data-governance",
+  "course": "Healthcare Interoperability & Data Exchange"
+ },
+ {
+  "lessonId": "09c56bf5-1303-4303-94d2-03017f6aeaa9",
+  "slug": "hea-measurement-foundations",
+  "docId": "hea-measurement-foundations",
+  "course": "Health Equity Analytics"
+ },
+ {
+  "lessonId": "aa3ca51d-89ff-4afa-87ed-67b4c4949e0d",
+  "slug": "hea-disparity-decomposition",
+  "docId": "hea-disparity-decomposition",
+  "course": "Health Equity Analytics"
+ },
+ {
+  "lessonId": "86de8359-d3f2-45f6-a373-3492eaccebf7",
+  "slug": "hea-stratified-quality-measurement",
+  "docId": "hea-stratified-quality-measurement",
+  "course": "Health Equity Analytics"
+ },
+ {
+  "lessonId": "f253b20f-00bc-407a-99c7-5030a6d9abd9",
+  "slug": "hea-sdoh-burden-scoring",
+  "docId": "hea-sdoh-burden-scoring",
+  "course": "Health Equity Analytics"
+ },
+ {
+  "lessonId": "5acc634e-e99a-4817-b0da-3f1c2c2ddd90",
+  "slug": "hea-equity-weighted-economics",
+  "docId": "hea-equity-weighted-economics",
+  "course": "Health Equity Analytics"
+ },
+ {
+  "lessonId": "740da3c5-4827-43ec-a26c-0696e93eabfa",
+  "slug": "hea-from-score-to-action",
+  "docId": "hea-from-score-to-action",
+  "course": "Health Equity Analytics"
+ }
+]

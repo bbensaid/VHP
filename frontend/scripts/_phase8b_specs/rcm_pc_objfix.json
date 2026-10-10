@@ -1,0 +1,24 @@
+{
+ "lessonIds": [
+  "279f53c3-8e40-4b25-9704-7d377562386c"
+ ],
+ "files": [
+  "frontend/content/course_revenue_cycle.json",
+  "frontend/content/courses_tier3.json"
+ ],
+ "edits": [
+  {
+   "match": {
+    "label": "Annual US medical bad debt",
+    "value": "$88B"
+   },
+   "set": {
+    "label": "Medical debt on consumer credit reports",
+    "context": "As of June 2021 (CFPB, March 2022 report)"
+   },
+   "claim": "fallback stat: $88B annual US medical bad debt (KFF estimate)",
+   "verdict": "MISATTRIBUTED",
+   "src": "CFPB March 2022 report (Community Catalyst / CFS Law Monitor coverage, search 2026-10-09): $88 billion of medical debt on consumer credit records as of June 2021 \u2014 not a KFF \"annual bad debt\" estimate; KFF Health Care Debt Survey 2022: 41% of adults have health care debt (kept)"
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "pairs": [
+  {
+   "old": " Set minimum dollar thresholds for appeal pursuit ($100\u2013250 is common).",
+   "new": " Set a minimum dollar threshold for appeal pursuit.",
+   "claim": "fallback: $100-250 appeal thresholds are common",
+   "verdict": "UNVERIFIABLE",
+   "src": "No source given or found for appeal success rates by denial type, a $100-250 threshold norm, or a 2-4 point annual reduction",
+   "note": ""
+  },
+  {
+   "old": "\n\nOrganizations that close this feedback loop reduce denial rates by 2\u20134 percentage points annually.",
+   "new": "\n\nClosing this feedback loop is what lowers the denial rate over time.",
+   "claim": "fallback: closing the loop reduces denial rates 2-4 points annually",
+   "verdict": "UNVERIFIABLE",
+   "src": "No source given or found for appeal success rates by denial type, a $100-250 threshold norm, or a 2-4 point annual reduction",
+   "note": ""
+  }
+ ],
+ "supa": [
+  {
+   "table": "lessons",
+   "col": "content_blocks",
+   "ids": [
+    "fbbc1a51-cd68-4793-a016-d86e6eb6d7bf"
+   ]
+  }
+ ],
+ "files": [
+  "frontend/content/course_revenue_cycle.json",
+  "frontend/content/courses_tier3.json"
+ ]
+}

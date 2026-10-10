@@ -1,0 +1,81 @@
+{
+ "pairs": [
+  {
+   "old": "authorization missing or invalid (CO-4, CO-15, CO-197)",
+   "new": "authorization missing or invalid (CO-15, CO-197)",
+   "claim": "fallback: CO-4 listed as an authorization denial",
+   "verdict": "FABRICATED",
+   "src": "X12 CARC list (x12.org, fetched 2026-10-09): 4 = \"procedure code is inconsistent with the modifier used\"; 97 = \"benefit for this service is included in the payment/allowance for another service/procedure\"; B7 = \"provider was not certified/eligible to be paid for this procedure/service\"; 2 = \"Coinsurance Amount\"",
+   "note": "CO-4 is a modifier mismatch, not authorization."
+  },
+  {
+   "old": "credentialing incomplete (CO-97, PR-2)",
+   "new": "credentialing incomplete (CO-B7)",
+   "claim": "fallback: CO-97 and PR-2 listed as contract/credentialing denials",
+   "verdict": "FABRICATED",
+   "src": "X12 CARC list (x12.org, fetched 2026-10-09): 4 = \"procedure code is inconsistent with the modifier used\"; 97 = \"benefit for this service is included in the payment/allowance for another service/procedure\"; B7 = \"provider was not certified/eligible to be paid for this procedure/service\"; 2 = \"Coinsurance Amount\"",
+   "note": "CO-97 = bundled service; PR-2 = coinsurance."
+  },
+  {
+   "old": "Service requires a referral",
+   "new": "Procedure code inconsistent with the modifier used",
+   "claim": "fallback table: CO-4 = \"Service requires a referral\"",
+   "verdict": "FABRICATED",
+   "src": "X12 CARC list (x12.org, fetched 2026-10-09): 4 = \"procedure code is inconsistent with the modifier used\"; 97 = \"benefit for this service is included in the payment/allowance for another service/procedure\"; B7 = \"provider was not certified/eligible to be paid for this procedure/service\"; 2 = \"Coinsurance Amount\"",
+   "note": ""
+  },
+  {
+   "old": "Missing referral/authorization",
+   "new": "Missing or incorrect modifier",
+   "claim": "fallback table: CO-4 root cause missing referral",
+   "verdict": "FABRICATED",
+   "src": "X12 CARC list (x12.org, fetched 2026-10-09): 4 = \"procedure code is inconsistent with the modifier used\"; 97 = \"benefit for this service is included in the payment/allowance for another service/procedure\"; B7 = \"provider was not certified/eligible to be paid for this procedure/service\"; 2 = \"Coinsurance Amount\"",
+   "note": ""
+  },
+  {
+   "old": "Verify auth requirements at registration",
+   "new": "Modifier edits in the claim scrubber",
+   "claim": "fallback table: CO-4 prevention",
+   "verdict": "FABRICATED",
+   "src": "X12 CARC list (x12.org, fetched 2026-10-09): 4 = \"procedure code is inconsistent with the modifier used\"; 97 = \"benefit for this service is included in the payment/allowance for another service/procedure\"; B7 = \"provider was not certified/eligible to be paid for this procedure/service\"; 2 = \"Coinsurance Amount\"",
+   "note": ""
+  },
+  {
+   "old": "Benefit not covered under this plan",
+   "new": "Service included in payment for another service already adjudicated",
+   "claim": "fallback table: CO-97 = \"Benefit not covered under this plan\"",
+   "verdict": "FABRICATED",
+   "src": "X12 CARC list (x12.org, fetched 2026-10-09): 4 = \"procedure code is inconsistent with the modifier used\"; 97 = \"benefit for this service is included in the payment/allowance for another service/procedure\"; B7 = \"provider was not certified/eligible to be paid for this procedure/service\"; 2 = \"Coinsurance Amount\"",
+   "note": ""
+  },
+  {
+   "old": "Wrong payer billed or benefit excluded",
+   "new": "Bundled service billed separately",
+   "claim": "fallback table: CO-97 root cause",
+   "verdict": "FABRICATED",
+   "src": "X12 CARC list (x12.org, fetched 2026-10-09): 4 = \"procedure code is inconsistent with the modifier used\"; 97 = \"benefit for this service is included in the payment/allowance for another service/procedure\"; B7 = \"provider was not certified/eligible to be paid for this procedure/service\"; 2 = \"Coinsurance Amount\"",
+   "note": ""
+  },
+  {
+   "old": "Eligibility verification; benefit review",
+   "new": "NCCI bundling edits before submission",
+   "claim": "fallback table: CO-97 prevention",
+   "verdict": "FABRICATED",
+   "src": "X12 CARC list (x12.org, fetched 2026-10-09): 4 = \"procedure code is inconsistent with the modifier used\"; 97 = \"benefit for this service is included in the payment/allowance for another service/procedure\"; B7 = \"provider was not certified/eligible to be paid for this procedure/service\"; 2 = \"Coinsurance Amount\"",
+   "note": ""
+  }
+ ],
+ "supa": [
+  {
+   "table": "lessons",
+   "col": "content_blocks",
+   "ids": [
+    "ce84ad38-7dd2-41c6-8ee0-ccbd3e45a56a"
+   ]
+  }
+ ],
+ "files": [
+  "frontend/content/course_revenue_cycle.json",
+  "frontend/content/courses_tier3.json"
+ ]
+}

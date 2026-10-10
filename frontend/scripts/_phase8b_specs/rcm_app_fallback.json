@@ -1,0 +1,64 @@
+{
+ "pairs": [
+  {
+   "old": " Studies show peer-to-peer reviews reverse 50\u201380% of medical necessity denials. Request it within the payer\u2019s stated window (usually 5\u201314 business days from denial date).",
+   "new": " Request it within the payer\u2019s stated window, which is often short.",
+   "claim": "fallback: studies show P2P reverses 50-80% of medical necessity denials; usually 5-14 business days",
+   "verdict": "UNVERIFIABLE",
+   "src": "No study found for peer-to-peer reversal of 50-80% of medical necessity denials, a 5-14 business day norm, or a 30-60 day commercial filing norm",
+   "note": ""
+  },
+  {
+   "old": " Studies show peer-to-peer reviews reverse 50\u201380% of medical necessity denials. Request it within the payer's stated window (usually 5\u201314 business days from denial date).",
+   "new": " Request it within the payer's stated window, which is often short.",
+   "claim": "fallback: studies show P2P reverses 50-80% of medical necessity denials; usually 5-14 business days",
+   "verdict": "UNVERIFIABLE",
+   "src": "No study found for peer-to-peer reversal of 50-80% of medical necessity denials, a 5-14 business day norm, or a 30-60 day commercial filing norm",
+   "note": "(ASCII-apostrophe variant)"
+  },
+  {
+   "old": "Standard written appeal with supporting documentation; typically 30\u201360 days to file",
+   "new": "Standard written appeal with supporting documentation, filed within the payer\u2019s deadline",
+   "claim": "fallback: first-level commercial appeal typically 30-60 days to file",
+   "verdict": "UNVERIFIABLE",
+   "src": "No study found for peer-to-peer reversal of 50-80% of medical necessity denials, a 5-14 business day norm, or a 30-60 day commercial filing norm",
+   "note": ""
+  },
+  {
+   "old": "minimum dispute amount ($1,800 in 2024)",
+   "new": "minimum dispute amount ($1,840 in 2024)",
+   "claim": "fallback: federal court minimum $1,800 in 2024",
+   "verdict": "FABRICATED",
+   "src": "CMS/Federal Register amount-in-controversy notices (search 2026-10-09): CY2024 ALJ $180, federal district court $1,840; CY2025 $190 / $1,900",
+   "note": ""
+  },
+  {
+   "old": "a direct physician-to-physician conversation \u2014 reverses medical necessity denials 50\u201380% of the time.",
+   "new": "a direct physician-to-physician conversation \u2014 is often the fastest way to resolve a medical necessity denial.",
+   "claim": "quiz explanation: P2P reverses medical necessity denials 50-80% of the time",
+   "verdict": "UNVERIFIABLE",
+   "src": "No study found for peer-to-peer reversal of 50-80% of medical necessity denials, a 5-14 business day norm, or a 30-60 day commercial filing norm",
+   "note": ""
+  }
+ ],
+ "supa": [
+  {
+   "table": "lessons",
+   "col": "content_blocks",
+   "ids": [
+    "85228bf9-14a2-48cb-aaf1-68ff382b726c"
+   ]
+  },
+  {
+   "table": "quiz_questions",
+   "col": "explanation",
+   "ids": [
+    "9e0cec34-6018-4889-b533-0ee545c8d3c8"
+   ]
+  }
+ ],
+ "files": [
+  "frontend/content/course_revenue_cycle.json",
+  "frontend/content/courses_tier3.json"
+ ]
+}
