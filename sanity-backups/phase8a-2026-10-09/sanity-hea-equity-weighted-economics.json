@@ -1,0 +1,388 @@
+{
+  "_createdAt": "2026-09-22T19:19:05Z",
+  "_id": "hea-equity-weighted-economics",
+  "_rev": "emp4phc5XG2oL4iPFmxLzM",
+  "_type": "academyModule",
+  "_updatedAt": "2026-09-22T19:19:05Z",
+  "body": [
+    {
+      "_key": "l5s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l5s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Standard Cost-Effectiveness Analysis Is Equity-Blind by Design"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l5s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l5s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Conventional cost-effectiveness analysis (CEA) asks one question: for a given budget, which intervention produces the most total health, usually measured in quality-adjusted life years (QALYs)? A QALY gained by a well-off, easy-to-reach population counts exactly the same in that arithmetic as a QALY gained by a disadvantaged, harder-to-reach population."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l5s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l5s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "That is a deliberate simplification that makes standard CEA tractable, and it is also precisely why CEA used alone can systematically favor interventions that help people who are already relatively well off — simply because they are cheaper and easier to reach, not because helping them produces more total value than helping someone worse off."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l5s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l5s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Distributional cost-effectiveness analysis (DCEA) extends standard CEA by explicitly trading off total health gained against the reduction of health inequality, rather than maximizing total health alone."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "l5s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l5s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Distributional Cost-Effectiveness Analysis and the Equity Weight"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l5s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l5s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Richard Cookson, Susan Griffin, Ole Norheim, and Anthony Culyer formalized this field in their 2020 Oxford University Press volume, Distributional Cost-Effectiveness Analysis: Quantifying Health Equity Impacts and Trade-Offs. Its central mechanism is an equity weight derived from the Atkinson index of inequality aversion, denoted ε (epsilon)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l5s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l5s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "At ε = 0, there is no special priority given to the worst-off group, and DCEA collapses back to standard CEA. Cookson and colleagues' 2017 illustrative work used ε = 0.5 as a default representing mild inequality aversion; larger values place sharply more priority on health gains for the worst-off group. The critical methodological point is that ε is a value judgment, not a measured fact — a rigorous DCEA analysis states its chosen ε explicitly, rather than burying that judgment call inside an unexplained final number."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l5an1",
+      "_type": "analogyBlock",
+      "analogy": "A thumb placed lightly on one side of a balance scale (ε = 0.5) tips the result somewhat toward that side without ignoring the other; a thumb pressed down hard (a large ε) can outweigh almost anything on the other side. No thumb at all (ε = 0) means the scale reads exactly as if the two sides were never distinguished — which is what standard, equity-blind cost-effectiveness analysis does.",
+      "concept": "What the equity-weight parameter ε does inside distributional cost-effectiveness analysis"
+    },
+    {
+      "_key": "l5s3sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Oxford University Press",
+          "label": "Year Cookson, Griffin, Norheim & Culyer's DCEA volume was published (Oxford)",
+          "value": "2020"
+        },
+        {
+          "_key": "s2",
+          "context": "Cookson et al.",
+          "label": "ε value at which DCEA collapses to standard, equity-blind CEA",
+          "value": "0"
+        },
+        {
+          "_key": "s3",
+          "context": "Cookson et al., 2017",
+          "label": "Illustrative default ε (mild inequality aversion) used in Cookson et al. 2017",
+          "value": "0.5"
+        }
+      ]
+    },
+    {
+      "_key": "l5s4h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l5s4hs",
+          "_type": "span",
+          "marks": [],
+          "text": "HEROI — This Platform's Worked Example"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l5s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l5s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "This platform's Health Equity Studio computes HEROI (Health Equity Return on Investment) as a weighted average of five 0–100 dimension scores, each fed by a different tab of the same tool: Access Equity (25%), Quality Equity (25%), Outcome Equity (25%), SDOH Burden (15%), and Trust & Engagement (10%)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l5s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l5s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Access Equity blends the racial and ethnic disparity signal from the tool's Disparity Calculator with the metro-versus-isolated-rural gap computed by its Geographic Access Gap Analyzer. Quality Equity and Outcome Equity apply the same disparity-decomposition logic taught in Lesson 2 to quality and outcome measures, respectively. SDOH Burden reuses the exact composite-scoring method built in the tool's SDOH Composite & ROI tab — the same construction method taught in Lesson 4 of this course. Each dimension, in other words, is not an independent invention; it is this course's own methodology, applied consistently, then combined by weighted average into one number."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l5st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Racial/ethnic disparity signal (Disparity Calculator) blended with the geographic access gap (Geographic Access Gap Analyzer).",
+          "title": "Access Equity (25%)"
+        },
+        {
+          "_key": "step2",
+          "description": "Disparity decomposition (Lesson 2 methods) applied to stratified quality measures.",
+          "title": "Quality Equity (25%)"
+        },
+        {
+          "_key": "step3",
+          "description": "The same disparity decomposition applied to outcome measures.",
+          "title": "Outcome Equity (25%)"
+        },
+        {
+          "_key": "step4",
+          "description": "The composite SDOH score from the SDOH Composite & ROI tab, built via the domain-selection/standardization/weighting method taught in Lesson 4.",
+          "title": "SDOH Burden (15%)"
+        },
+        {
+          "_key": "step5",
+          "description": "A documented proxy pending real CAHPS survey data — see the warning below.",
+          "title": "Trust & Engagement (10%)"
+        }
+      ],
+      "title": "How HEROI Combines Its Five Inputs"
+    },
+    {
+      "_key": "l5ex1",
+      "_type": "exampleBlock",
+      "content": "Open /research-lab/population-equity?tab=equity and select the \"HEROI Composite Score\" tab. The platform documents its own dimension notes inline — you can see exactly which upstream tab feeds each weighted input, computed live from whatever population profile you set on the Disparity Calculator tab. This is the same tool referenced in Lesson 1; by this point in the course, every one of its five dimensions should be traceable to a method you have now learned.",
+      "title": "Open the Tool"
+    },
+    {
+      "_key": "l5s5h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l5s5hs",
+          "_type": "span",
+          "marks": [],
+          "text": "An Honestly Labeled Proxy"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l5s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l5s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Health Equity Studio's own documentation states plainly that its Trust & Engagement dimension is a documented proxy, pending real CAHPS (Consumer Assessment of Healthcare Providers and Systems) survey data — not a claim that patient-trust measurement has already been solved. CAHPS is an AHRQ program dating to 1995, covering standardized patient-experience surveys across ambulatory care, hospitals, and other settings; it is the reference standard the proxy is standing in for, and it is covered directly in Lesson 6."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l5w1",
+      "_type": "warningBlock",
+      "message": "A composite score that presents its weakest input with the same visual confidence as its strongest input misleads anyone reading only the final number. Labeling a proxy explicitly — and naming what real data would replace it — is not a weakness of the HEROI score; it is what keeps the other four, better-grounded dimensions from being wrongly discounted alongside the one that is not yet fully real.",
+      "title": "Why Labeling the Proxy Matters"
+    },
+    {
+      "_key": "l5s6h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l5s6hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Case Study: Equity as a Management Discipline, Not a One-Time Score"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l5ex2",
+      "_type": "exampleBlock",
+      "content": "Kaiser Permanente received the American Hospital Association's 2017 Equity of Care Award for embedding disparity reduction into its operating structure system-wide — physicians, nurses, and staff across its integrated system working from shared disparity data rather than each department tracking equity independently and inconsistently.\nThe lesson for anyone building or using a composite like HEROI is the one Kaiser's recognition illustrates directly: a composite score is only as useful as the organizational structure built around acting on what it shows. A HEROI score computed once and filed away is a number. A HEROI score reviewed on the same cadence as a financial scorecard, by people with the authority to act on it, is a management tool — the same distinction this course returns to in its final lesson.",
+      "title": "Kaiser Permanente — Equity of Care Award, 2017"
+    },
+    {
+      "_key": "l5tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Standard cost-effectiveness analysis treats a QALY gained by any group identically, regardless of that group's existing disadvantage — it is equity-blind by design, not by oversight.",
+        "Distributional cost-effectiveness analysis (Cookson, Griffin, Norheim & Culyer, 2020) extends CEA with an equity weight derived from the Atkinson index of inequality aversion, denoted ε.",
+        "At ε = 0, DCEA collapses to standard CEA; Cookson et al.'s 2017 illustrative work used ε = 0.5 as a mild-aversion default — the chosen value is a stated judgment call, not a measured fact.",
+        "This platform's HEROI composite weights Access, Quality, and Outcome Equity at 25% each, SDOH Burden at 15%, and Trust & Engagement at 10%, combining five dimension scores this course teaches how to build.",
+        "The Health Equity Studio explicitly documents its Trust & Engagement dimension as a proxy pending real CAHPS data — an example of honest labeling rather than overstating precision.",
+        "Kaiser Permanente's 2017 AHA Equity of Care Award illustrates that a composite equity score is only as useful as the management structure built to act on it."
+      ]
+    },
+    {
+      "_key": "l5qz",
+      "_type": "knowledgeCheck",
+      "explanation": "At ε = 0 there is no special priority for the worst-off group, so DCEA mathematically reduces to standard CEA — larger ε values, not smaller, are what shift weight toward the worst-off.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": true,
+          "text": "DCEA collapses back to standard, equity-blind cost-effectiveness analysis"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": false,
+          "text": "The analysis becomes undefined and cannot be computed"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The worst-off group receives maximum priority"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "ε = 0 is not a valid value in DCEA"
+        }
+      ],
+      "question": "In distributional cost-effectiveness analysis, what happens to the equity weight when the inequality-aversion parameter ε is set to 0?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Cookson R, Griffin S, Norheim OF, Culyer AJ (eds). Distributional Cost-Effectiveness Analysis: Quantifying Health Equity Impacts and Trade-Offs. Oxford University Press, 2020 — https://global.oup.com/academic/product/distributional-cost-effectiveness-analysis-9780198838197"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Distributional Cost-Effectiveness Analysis Comes of Age — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7813213/ — equity weights, Atkinson index, ε=0.5 illustrative default from Cookson et al. 2017"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] American Hospital Association, AHA Recognizes Kaiser Permanente with 2017 Equity of Care Award — https://www.aha.org/press-releases/2017-06-20-aha-recognizes-kaiser-permanente-2017-equity-care-award"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] AHRQ, About the CAHPS Program — https://www.ahrq.gov/cahps/about-cahps/index.html — program began 1995"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "health-equity-analytics",
+  "order": 5,
+  "slug": {
+    "_type": "slug",
+    "current": "hea-equity-weighted-economics"
+  },
+  "title": "Weighting Equity Into the Dollar: HEROI and Distributional Cost-Effectiveness"
+}

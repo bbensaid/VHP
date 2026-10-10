@@ -1,0 +1,24 @@
+{
+ "edits": [
+  {
+   "table": "quiz_questions",
+   "id": "4fdc561d-528a-497c-b2de-35ad4f55453e",
+   "expect": {
+    "question": "The NHS's National Programme for IT (NPfIT), which cost the UK government more than \u00a310 billion before being dismantled in 2011, is most often cited as a failure of which specific kind?"
+   },
+   "set": {
+    "question": "The NHS's National Programme for IT (NPfIT), dismantled in 2011 at an estimated cost of \u00a39.8 billion, is most often cited as a failure of which specific kind?"
+   },
+   "claim": "quiz: NPfIT cost more than \u00a310 billion",
+   "verdict": "UNVERIFIABLE",
+   "src": "UK Public Accounts Committee HC 294 (2013): estimated cost \u00a39.8bn (likely more) \u2014 \"more than \u00a310 billion\" not supported by the primary source"
+  }
+ ],
+ "localPairs": [
+  {
+   "file": "frontend/content/course_transformation_leadership.json",
+   "old": "The NHS's National Programme for IT (NPfIT), which cost the UK government more than \u00a310 billion before being dismantled in 2011, is most often cited as a failure of which specific kind?",
+   "new": "The NHS's National Programme for IT (NPfIT), dismantled in 2011 at an estimated cost of \u00a39.8 billion, is most often cited as a failure of which specific kind?"
+  }
+ ]
+}

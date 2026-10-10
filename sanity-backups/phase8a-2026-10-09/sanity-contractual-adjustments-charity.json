@@ -1,0 +1,455 @@
+{
+  "_createdAt": "2026-05-31T07:23:23Z",
+  "_id": "contractual-adjustments-charity",
+  "_rev": "rL4Cn5Sfo5Z8rzPmEBWs7b",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T07:23:23Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Gap Between Billed and Collected"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "In the previous lesson, we saw that a hospital’s gross charges (what it bills at chargemaster prices) are far higher than its net revenue (what it actually collects). This lesson dissects exactly where that money goes. The difference between what a hospital bills and what it keeps is not one thing — it is three distinct categories, each with its own cause, accounting treatment, and policy significance: contractual adjustments, charity care, and bad debt."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Confusing these three is one of the most common errors in hospital finance, and it leads to badly wrong conclusions. A contractual adjustment is a planned discount the hospital agreed to. Charity care is care the hospital chose to give away to those who cannot pay. Bad debt is money the hospital expected to collect but never received. They look similar on a statement — all three reduce gross charges down toward net revenue — but they mean completely different things about the hospital and its patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Getting the distinctions right matters enormously. They determine how a hospital reports its finances, whether a nonprofit meets its community-benefit obligations, how much \"uncompensated care\" the sector claims, and how aggressively a hospital pursues patients for unpaid bills. This is where hospital finance, tax law, and medical-debt policy all intersect."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: Three different write-downs separate gross charges from net revenue. Contractual adjustments are agreed payer discounts (not uncompensated care). Charity care is free/discounted care for those who cannot pay. Bad debt is expected payment that was never received. Charity care + bad debt = uncompensated care."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "U.S. hospitals accumulated nearly $745 billion in uncompensated care costs between 2000 and 2022 (American Hospital Association)",
+          "label": "Uncompensated Care, 2000–2022",
+          "value": "~$745B"
+        },
+        {
+          "_key": "s2",
+          "context": "The median hospital uncompensated-care rate rose from 6.4% to 8.7% in the first half of 2023 alone — up by roughly a third in six months (industry data)",
+          "label": "Uncompensated Care Rate Surge",
+          "value": "6.4% → 8.7%"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Contractual Adjustments: The Discount You Agreed To"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A contractual adjustment (or contractual allowance) is the difference between a hospital’s gross charge and the amount a payer is contractually obligated to pay under its negotiated rate. If a hospital bills $5,000 for a procedure and the insurer’s contract says it will pay $1,200, the $3,800 difference is a contractual adjustment. Crucially, this is not money the hospital ever expected to receive — it is the discount baked into the contract the hospital signed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is the single most important point about contractual adjustments: they are not uncompensated care. The IRS is explicit that charity care excludes contractual adjustments with third-party payors, self-pay or prompt-pay discounts, and the gap between Medicare/Medicaid revenue and cost. A contractual adjustment simply reflects the reality that chargemaster prices are fiction and negotiated rates are the truth. By far the largest portion of the gap between gross and net revenue is contractual adjustments — and it represents a planned discount, not a loss or a charitable act."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2w1",
+      "_type": "warningBlock",
+      "message": "Hospitals (and headlines) sometimes describe the gap between inflated chargemaster prices and negotiated payments as money \"lost\" or \"given away.\" It is neither. A contractual adjustment is a discount off a fictional list price the hospital itself set artificially high — not a charitable contribution and not uncompensated care.",
+      "title": "Contractual Adjustments Are Not \"Losses\""
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Charity Care vs. Bad Debt: Intent Is the Dividing Line"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Once contractual adjustments are set aside, the remaining unpaid amounts fall into two categories that look identical on a balance sheet but differ entirely in meaning. The dividing line is intent and expectation. Charity care is free or discounted care provided to patients who are unable to pay and who meet the hospital’s specified income and asset criteria. The hospital never expected payment — it deliberately provided the care for free or at a reduced cost to those in need."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Bad debt is the opposite: it represents services for which the hospital expected payment but never received it. Bad debt arises when patients who could potentially pay — or who never applied for financial assistance — simply do not pay their bills, whether because they cannot, will not, or never engaged with the billing process. The same unpaid $2,000 hospital bill is charity care if the patient qualified for and received financial assistance, but bad debt if the patient simply never paid and never applied."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Charity Care",
+        "points": [
+          "Hospital never expected payment",
+          "Patient qualifies under income/asset criteria",
+          "Deliberately provided free or discounted",
+          "Counts toward nonprofit community benefit",
+          "Reflects the hospital’s charitable mission"
+        ]
+      },
+      "right": {
+        "label": "Bad Debt",
+        "points": [
+          "Hospital expected payment but did not collect",
+          "Patient may not have applied for assistance",
+          "Results from non-payment, not a granted discount",
+          "Treated as a credit loss, not charity",
+          "Often reflects gaps in screening or collections"
+        ]
+      },
+      "title": "Charity Care vs. Bad Debt"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Together, charity care and bad debt make up uncompensated care — the overall measure of hospital care for which no payment was received from patient or insurer. This is the number the hospital industry cites to demonstrate the burden of serving the uninsured and underinsured. Note what it excludes: contractual adjustments and the Medicare/Medicaid shortfall are not part of uncompensated care, which is why precise definitions matter so much in debates about hospital finances."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why the Distinction Has Legal Teeth: Section 501(r)"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "For nonprofit hospitals, the line between charity care and bad debt is not just an accounting nicety — it is a legal obligation tied to their tax exemption. Under Internal Revenue Code Section 501(r), enacted as part of the Affordable Care Act, tax-exempt hospitals must establish a written financial assistance policy (FAP) and a separate written policy for emergency medical care. The FAP must spell out the eligibility criteria for charity care, how patients apply, and how the hospital distinguishes charity care from bad debt."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Section 501(r) goes further, imposing concrete patient protections. It limits the amounts a hospital can charge financial-assistance-eligible patients for emergency or medically necessary care (they cannot be billed more than the amounts generally billed to insured patients), and it restricts \"extraordinary collection actions\" — such as lawsuits, wage garnishment, or reporting to credit agencies — until the hospital has made reasonable efforts to determine whether the patient qualifies for financial assistance. A hospital that fails these requirements risks its tax-exempt status."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "Imagine a uninsured patient treated in the ER who never fills out a financial-assistance application. If the hospital simply sends the bill to collections, the unpaid amount becomes bad debt — and the patient may face aggressive collection actions.\n\nIf instead the hospital screens the patient and determines they would have qualified for financial assistance (sometimes called \"presumptive eligibility\"), the same care is reclassified as charity care. The dollars written off are similar, but the meaning is opposite: one is a failure of process that harms a vulnerable patient and inflates bad debt; the other fulfills the hospital’s charitable mission and its 501(r) obligations. This is why screening patients for assistance is both an ethical and a financial priority.",
+      "title": "Why \"Presumptive Charity\" Matters"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Bigger Picture: A Rising Burden"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "These categories are not static — they move with the economy and with policy. Uncompensated care has been an enormous and growing burden: U.S. hospitals accumulated nearly $745 billion in uncompensated care costs between 2000 and 2022. And it can spike fast: in the first half of 2023, the median hospital uncompensated-care rate jumped from 6.4% to 8.7% — a roughly one-third increase in just six months — as pandemic-era coverage protections unwound and more patients lost insurance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The strain falls unevenly. Rural and safety-net hospitals, which serve disproportionate numbers of uninsured and low-income patients, absorb the most uncompensated care while having the fewest commercial patients to offset it. As uncompensated care rises, these facilities are forced to cut services, delay investments, or close — exactly the institutions whose communities can least afford to lose them. The 2025 Medicaid DSH cuts, discussed in the payer-mix lesson, land directly on top of this rising uncompensated-care burden."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "Think of a hospital’s billed charges as a restaurant tab. The contractual adjustment is the standing discount the regular customer’s membership card always applies — expected and agreed. Charity care is the meal the owner deliberately comps for someone who clearly can’t pay. Bad debt is the diner who quietly walks out without paying a bill the owner fully expected to collect. All three reduce the till, but only a careless bookkeeper would record them the same way.",
+      "concept": "Contractual adjustments vs. charity care vs. bad debt"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For the student of hospital finance, the lesson is precision. When you see that a hospital \"wrote off\" a large sum, the first question is always: which kind of write-off? A mountain of contractual adjustments is normal and meaningless as a measure of charity. A large charity-care figure may reflect genuine community benefit. A swelling bad-debt figure may signal a broken financial-assistance process or a community losing insurance. Three numbers that look alike tell three completely different stories — and knowing which is which is the mark of someone who actually understands how hospitals get paid, and how they don’t."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "The gap between a hospital’s gross charges and net revenue comes from three distinct categories: contractual adjustments, charity care, and bad debt — each with a different cause and meaning.",
+        "A contractual adjustment is the agreed difference between the chargemaster price and a payer’s negotiated rate; it is a planned discount, NOT uncompensated care and NOT a loss.",
+        "Charity care is care the hospital never expected to be paid for, provided free or discounted to patients who meet income/asset criteria; bad debt is care the hospital expected payment for but never received.",
+        "The dividing line between charity care and bad debt is intent and expectation — the same unpaid bill can be either, depending on whether the patient qualified for and received financial assistance.",
+        "Charity care plus bad debt equals uncompensated care; this measure excludes contractual adjustments and the Medicare/Medicaid payment shortfall.",
+        "IRC Section 501(r) requires tax-exempt hospitals to maintain a written financial assistance policy (FAP), limit charges to FAP-eligible patients, and restrict extraordinary collection actions until they determine assistance eligibility.",
+        "Screening patients for assistance (\"presumptive eligibility\") can reclassify bad debt as charity care — fulfilling the charitable mission and 501(r) obligations rather than subjecting vulnerable patients to aggressive collections.",
+        "Uncompensated care is large and rising — nearly $745 billion from 2000–2022, with the median rate jumping from 6.4% to 8.7% in the first half of 2023 — and it falls hardest on rural and safety-net hospitals."
+      ]
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] KFF: \"Hospital Charity Care: How It Works and Why It Matters\" — https://www.kff.org/health-costs/issue-brief/hospital-charity-care-how-it-works-and-why-it-matters/ — definitions of charity care vs. bad debt; uncompensated care as the sum of financial assistance and bad debt."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] IRS: \"General health care & IRC Section 501(r)\" — https://www.irs.gov/charities-non-profits/general-health-care-irc-section-501r — charity care excludes contractual adjustments, self-pay/prompt-pay discounts, and the Medicare/Medicaid shortfall; FAP and emergency-care policy requirements under 501(r)(4)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] IRS: \"Limitation on charges – Section 501(r)(5)\" and \"Billing and collections – Section 501(r)(6)\" — https://www.irs.gov/charities-non-profits/limitation-on-charges-section-501r5 — limits on amounts charged to FAP-eligible patients and restrictions on extraordinary collection actions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Definitive Healthcare: \"Balancing uncompensated care and hospital bad debt\" — https://www.definitivehc.com/blog/balancing-uncompensated-care-and-hospital-bad-debt — accounting treatment of bad debt (expected payment, never received) versus financial assistance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] American Hospital Association: \"Uncompensated Hospital Care Cost Fact Sheet\" — https://www.aha.org/system/files/content/00-10/10uncompensatedcare.pdf — nearly $745 billion in uncompensated care costs accumulated 2000–2022."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] PwC Viewpoint: \"Uncompensated services\" (Health Care Guide §5.2) — https://viewpoint.pwc.com/dt/us/en/pwc/accounting_guides/health-care/health_care_guide/chapter5_othertopics-/52_uncompensatedservices.html — accounting classification of charity care, implicit price concessions, and credit losses (bad debt)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "hospital-finance",
+  "order": 6,
+  "slug": {
+    "_type": "slug",
+    "current": "contractual-adjustments-charity"
+  },
+  "title": "Contractual Adjustments, Charity Care, and Bad Debt: The Three Ways Hospitals Don't Get Paid"
+}

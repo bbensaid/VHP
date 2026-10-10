@@ -243,7 +243,7 @@ l4 = [
 
     h2('l4s3h', 'Area-Level Composite Indices'),
     blk('l4s3p1', 'The CDC/ATSDR Social Vulnerability Index (SVI) uses 16 variables drawn from the 5-year American Community Survey, grouped into four themes — socioeconomic status; household composition and disability; minority status and language; and housing type and transportation — combined into a single percentile ranking (0 to 1, higher meaning more vulnerable) at the census-tract level. It was originally built to help identify communities needing support before, during, and after disasters, and has since been adopted more broadly as a general area-level deprivation signal.'),
-    blk('l4s3p2', 'Amy Kind and William Buckingham published a distinct approach, the Area Deprivation Index (ADI), in a 2018 New England Journal of Medicine perspective, "Making Neighborhood-Disadvantage Metrics Accessible." The ADI ranks census block groups on 17 measures spanning income, education, employment, and housing quality. Kind\'s team at the University of Wisconsin–Madison built the accompanying Neighborhood Atlas specifically to make block-group-level rankings freely downloadable, turning what had been an academic construct into a tool any health system, researcher, or policymaker could apply to a patient address.'),
+    blk('l4s3p2', 'A distinct approach is the Area Deprivation Index (ADI), an older federally developed index that Amy Kind\'s team at the University of Wisconsin–Madison refined, adapted, and validated to the census block-group level; Kind and William Buckingham described that work in a 2018 New England Journal of Medicine perspective, "Making Neighborhood-Disadvantage Metrics Accessible — The Neighborhood Atlas." The ADI ranks census block groups on 17 measures spanning income, education, employment, and housing quality. Kind\'s team at the University of Wisconsin–Madison built the accompanying Neighborhood Atlas specifically to make block-group-level rankings freely downloadable, turning what had been an academic construct into a tool any health system, researcher, or policymaker could apply to a patient address.'),
     stat_grid('l4s4sg1', [
         ('22', 'Social determinants of health factors PRAPARE screens for', 'NACHC'),
         ('26', 'Languages PRAPARE has been translated into', 'NACHC'),
@@ -262,12 +262,12 @@ l4 = [
     table('l4t1', 'Three SDOH Instruments, Side by Side', [
         {'Tool': 'PRAPARE', 'Level': 'Individual patient', 'Built_By': 'NACHC (2013)', 'Factors': '22 SDOH factors'},
         {'Tool': 'CDC/ATSDR SVI', 'Level': 'Census tract', 'Built_By': 'CDC/ATSDR', 'Factors': '16 variables, 4 themes'},
-        {'Tool': 'Area Deprivation Index', 'Level': 'Census block group', 'Built_By': 'Kind & Buckingham, U. Wisconsin', 'Factors': '17 measures'},
+        {'Tool': 'Area Deprivation Index', 'Level': 'Census block group', 'Built_By': 'Federal (HRSA) origin; block-group version by Kind lab, U. Wisconsin', 'Factors': '17 measures'},
     ]),
 
     h2('l4s6h', 'The Claims-Data Gap: SDOH Z-Codes'),
     blk('l4s6p1', 'ICD-10-CM diagnosis codes Z55 through Z65 exist specifically to document social determinants of health inside a clinical encounter — housing instability, food insecurity, transportation barriers, and related factors. The Gravity Project, working with the American Medical Association, has built standardized crosswalks mapping common SDOH screening questions, including CMS\'s own Accountable Health Communities screening tool, directly to the appropriate Z-code and SNOMED CT terms.'),
-    blk('l4s6p2', 'Despite that infrastructure and explicit CDC and WHO emphasis on using these codes, one peer-reviewed study found only about 1.9% of inpatient hospital admissions carried an SDOH Z-code. Any SDOH burden score built primarily from claims data will systematically understate real social risk for exactly this reason — the code being rare in the data does not mean the underlying social need is rare in the population; it means it mostly is not being documented.'),
+    blk('l4s6p2', 'Despite that infrastructure, an analysis of the 2016–2017 National Inpatient Sample (Truong et al., Medical Care, 2020) found only about 1.9% of inpatient hospital admissions carried an SDOH Z-code. Any SDOH burden score built primarily from claims data will systematically understate real social risk for exactly this reason — the code being rare in the data does not mean the underlying social need is rare in the population; it means it mostly is not being documented.'),
 
     takeaway('l4tw', [
         'Individual-level screening (PRAPARE) and area-level composite indices (SVI, ADI) answer different questions and are built by entirely different methods — a strong SDOH scoring system typically uses both.',
@@ -275,7 +275,7 @@ l4 = [
         'The CDC/ATSDR Social Vulnerability Index uses 16 variables across 4 themes; the Area Deprivation Index (Kind & Buckingham, NEJM 2018) uses 17 measures via the Neighborhood Atlas — different, equally valid area-level approaches.',
         'Building any composite index requires four real judgment calls: domain selection, standardization method, weighting scheme, and aggregation — none of them purely neutral or purely technical.',
         'Two well-built indices covering the same reality (SVI and ADI) can rank the same neighborhood differently because of these judgment calls — that is a methods fact, not an error in either index.',
-        'Only about 1.9% of inpatient admissions carry an SDOH Z-code, so any claims-based SDOH burden score will understate true social risk unless it corrects for this documentation gap.',
+        'In 2016–2017 national inpatient data only about 1.9% of admissions carried an SDOH Z-code (Truong et al., 2020), so any claims-based SDOH burden score will understate true social risk unless it corrects for this documentation gap.',
         'This lesson\'s SDOH scoring methodology is the direct input to the SDOH Burden dimension (15% weight) of this platform\'s HEROI composite, covered next in Lesson 5.',
     ]),
 
@@ -293,7 +293,7 @@ l4 = [
     blk('src1', '[1] NACHC, PRAPARE — https://www.nachc.org/resource/prapare/ — 22 factors, developed 2013, EHR availability and language translations'),
     blk('src2', '[2] CDC/ATSDR, Social Vulnerability Index — https://www.atsdr.cdc.gov/place-health/php/svi/index.html — 16 variables, 4 themes'),
     blk('src3', '[3] Kind AJH, Buckingham WR. Making Neighborhood-Disadvantage Metrics Accessible — The Neighborhood Atlas. NEJM 2018;378:2456-2458 — https://www.nejm.org/doi/10.1056/NEJMp1802313 — Area Deprivation Index, 17 measures'),
-    blk('src4', '[4] SDOH ICD-10 Z-code adoption study — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12608873/ — ~1.9% of inpatient admissions coded'),
+    blk('src4', '[4] Truong HP et al., "Utilization of Social Determinants of Health ICD-10 Z-Codes Among Hospitalized Patients in the United States, 2016–2017," Medical Care (2020) — https://pmc.ncbi.nlm.nih.gov/articles/PMC7666017/ — 1.9% of 14.3 million admissions coded'),
     blk('src5', '[5] CMS/Gravity Project SDOH Z-code resource — https://www.cms.gov/files/document/cms-2023-omh-z-code-resource.pdf — Z55–Z65 crosswalks'),
 ]
 
@@ -311,14 +311,14 @@ l5 = [
 
     h2('l5s2h', 'Distributional Cost-Effectiveness Analysis and the Equity Weight'),
     blk('l5s2p1', 'Richard Cookson, Susan Griffin, Ole Norheim, and Anthony Culyer formalized this field in their 2020 Oxford University Press volume, Distributional Cost-Effectiveness Analysis: Quantifying Health Equity Impacts and Trade-Offs. Its central mechanism is an equity weight derived from the Atkinson index of inequality aversion, denoted ε (epsilon).'),
-    blk('l5s2p2', 'At ε = 0, there is no special priority given to the worst-off group, and DCEA collapses back to standard CEA. Cookson and colleagues\' 2017 illustrative work used ε = 0.5 as a default representing mild inequality aversion; larger values place sharply more priority on health gains for the worst-off group. The critical methodological point is that ε is a value judgment, not a measured fact — a rigorous DCEA analysis states its chosen ε explicitly, rather than burying that judgment call inside an unexplained final number.'),
+    blk('l5s2p2', 'At ε = 0, there is no special priority given to the worst-off group, and DCEA collapses back to standard CEA. Larger values place progressively more priority on health gains for the worst-off group. When Robson, Asaria, Cookson, Tsuchiya, and Ali surveyed 244 members of the English public (Health Economics, 2017), the median response implied an Atkinson ε of 10.95 — enough to weight health gains to the poorest fifth of society six to seven times as highly as gains to the richest fifth. The critical methodological point is that ε is a value judgment, not a measured fact — a rigorous DCEA analysis states its chosen ε explicitly, rather than burying that judgment call inside an unexplained final number.'),
     analogy('l5an1',
         'A thumb placed lightly on one side of a balance scale (ε = 0.5) tips the result somewhat toward that side without ignoring the other; a thumb pressed down hard (a large ε) can outweigh almost anything on the other side. No thumb at all (ε = 0) means the scale reads exactly as if the two sides were never distinguished — which is what standard, equity-blind cost-effectiveness analysis does.',
         'What the equity-weight parameter ε does inside distributional cost-effectiveness analysis'),
     stat_grid('l5s3sg1', [
         ('2020', 'Year Cookson, Griffin, Norheim & Culyer\'s DCEA volume was published (Oxford)', 'Oxford University Press'),
         ('0', 'ε value at which DCEA collapses to standard, equity-blind CEA', 'Cookson et al.'),
-        ('0.5', 'Illustrative default ε (mild inequality aversion) used in Cookson et al. 2017', 'Cookson et al., 2017'),
+        ('10.95', 'Median Atkinson ε elicited from the English public (survey, n = 244)', 'Robson et al., Health Economics 2017'),
     ]),
 
     h2('l5s4h', 'HEROI — This Platform\'s Worked Example'),
@@ -340,16 +340,16 @@ l5 = [
 
     h2('l5s6h', 'Case Study: Equity as a Management Discipline, Not a One-Time Score'),
     example('l5ex2', 'Kaiser Permanente — Equity of Care Award, 2017',
-        'Kaiser Permanente received the American Hospital Association\'s 2017 Equity of Care Award for embedding disparity reduction into its operating structure system-wide — physicians, nurses, and staff across its integrated system working from shared disparity data rather than each department tracking equity independently and inconsistently.\n'
-        'The lesson for anyone building or using a composite like HEROI is the one Kaiser\'s recognition illustrates directly: a composite score is only as useful as the organizational structure built around acting on what it shows. A HEROI score computed once and filed away is a number. A HEROI score reviewed on the same cadence as a financial scorecard, by people with the authority to act on it, is a management tool — the same distinction this course returns to in its final lesson.'),
+        'Kaiser Permanente received the American Hospital Association\'s 2017 Equity of Care Award largely for its Equitable Care Health Outcomes (ECHO) program, launched in 2010 to close two specific, measured gaps: hypertension control among African-American members and colorectal cancer screening among Hispanic members. The AHA also cited the diversity of Kaiser\'s board and its community health investment.\n'
+        'The lesson for anyone building or using a composite like HEROI is the one ECHO illustrates: Kaiser picked specific measured gaps and worked them as a standing program, and a composite score is only as useful as the organizational structure built around acting on what it shows. A HEROI score computed once and filed away is a number. A HEROI score reviewed on the same cadence as a financial scorecard, by people with the authority to act on it, is a management tool — the same distinction this course returns to in its final lesson.'),
 
     takeaway('l5tw', [
         'Standard cost-effectiveness analysis treats a QALY gained by any group identically, regardless of that group\'s existing disadvantage — it is equity-blind by design, not by oversight.',
         'Distributional cost-effectiveness analysis (Cookson, Griffin, Norheim & Culyer, 2020) extends CEA with an equity weight derived from the Atkinson index of inequality aversion, denoted ε.',
-        'At ε = 0, DCEA collapses to standard CEA; Cookson et al.\'s 2017 illustrative work used ε = 0.5 as a mild-aversion default — the chosen value is a stated judgment call, not a measured fact.',
+        'At ε = 0, DCEA collapses to standard CEA; a 2017 survey of the English public (Robson et al.) elicited a median ε of 10.95 — the chosen value is a stated judgment call, not a measured fact.',
         'This platform\'s HEROI composite weights Access, Quality, and Outcome Equity at 25% each, SDOH Burden at 15%, and Trust & Engagement at 10%, combining five dimension scores this course teaches how to build.',
         'The Health Equity Studio explicitly documents its Trust & Engagement dimension as a proxy pending real CAHPS data — an example of honest labeling rather than overstating precision.',
-        'Kaiser Permanente\'s 2017 AHA Equity of Care Award illustrates that a composite equity score is only as useful as the management structure built to act on it.',
+        'Kaiser Permanente\'s 2017 AHA Equity of Care Award, earned largely for its ECHO program targeting two specific measured gaps, illustrates that an equity score is only as useful as the sustained work built to act on it.',
     ]),
 
     quiz('l5qz',
@@ -364,8 +364,8 @@ l5 = [
 
     h2('src', 'Sources'),
     blk('src1', '[1] Cookson R, Griffin S, Norheim OF, Culyer AJ (eds). Distributional Cost-Effectiveness Analysis: Quantifying Health Equity Impacts and Trade-Offs. Oxford University Press, 2020 — https://global.oup.com/academic/product/distributional-cost-effectiveness-analysis-9780198838197'),
-    blk('src2', '[2] Distributional Cost-Effectiveness Analysis Comes of Age — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7813213/ — equity weights, Atkinson index, ε=0.5 illustrative default from Cookson et al. 2017'),
-    blk('src3', '[3] American Hospital Association, AHA Recognizes Kaiser Permanente with 2017 Equity of Care Award — https://www.aha.org/press-releases/2017-06-20-aha-recognizes-kaiser-permanente-2017-equity-care-award'),
+    blk('src2', '[2] Cookson R et al., "Distributional Cost-Effectiveness Analysis Comes of Age," Value in Health (2021) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7813213/ — DCEA methods and equity weights; Robson M, Asaria M, Cookson R, Tsuchiya A, Ali S, "Eliciting the level of health inequality aversion in England," Health Economics 2017;26(10):1328-1334 — median Atkinson ε 10.95'),
+    blk('src3', '[3] American Hospital Association, AHA Recognizes Kaiser Permanente with 2017 Equity of Care Award — https://www.aha.org/press-releases/2017-06-20-aha-recognizes-kaiser-permanente-2017-equity-care-award — ECHO program (2010), board diversity, community health investment'),
     blk('src4', '[4] AHRQ, About the CAHPS Program — https://www.ahrq.gov/cahps/about-cahps/index.html — program began 1995'),
 ]
 
@@ -382,13 +382,13 @@ l6 = [
     callout('l6s1c1', 'CAHPS is patient-reported, not administratively derived — it is the closest thing in U.S. healthcare measurement to asking patients directly whether they were treated well, which is exactly why it is difficult to substitute with any proxy.'),
 
     h2('l6s2h', 'The "Measurement Without Action" Failure Mode'),
-    blk('l6s2p1', 'A body of published research on disparity dashboards has converged on a consistent finding: dashboards that stratify data by race, ethnicity, or other subgroup are increasingly common, but dashboards demonstrably tied to a specific accountability structure — someone whose job it is to act when a gap appears — are much rarer. A stratified rate that nobody owns is a fact sitting in a report. The same rate, reviewed by a named committee with the authority to change a staffing model, a referral pathway, or a screening protocol, is the beginning of an actual intervention.'),
+    blk('l6s2p1', 'A 2023 Lancet Digital Health review of the disparity-dashboard literature (Gallifant et al.) found that dashboards stratifying data by race, ethnicity, or other subgroup are increasingly common, but only six of the studies it evaluated used a dashboard as part of a wider process to identify disparities, hypothesize interventions, or track progress toward a goal. Dashboards tied to someone whose job it is to act when a gap appears are the exception. A stratified rate that nobody owns is a fact sitting in a report. The same rate, reviewed by a named committee with the authority to change a staffing model, a referral pathway, or a screening protocol, is the beginning of an actual intervention.'),
     blk('l6s2p2', 'Moffitt Cancer Center\'s Disparities Dashboard is a documented example on the more structured end of this spectrum: it uses hospital clinical metrics stratified by race, ethnicity, gender, and language preference specifically to identify, monitor, and address disparities in patient care outcomes — built as an operational tool for ongoing monitoring, not a one-time report.'),
 
     h2('l6s3h', 'The Governance Loop'),
     steps('l6st1', 'Measure → Assess Cause → Act → Re-Measure', [
         ('Measure', 'Compute the stratified rate, the composite SDOH score, or the HEROI dimension, using the methods from Lessons 2 through 5.'),
-        ('Assess cause', 'Before acting, ask why the gap exists. A staffing gap, a referral-pathway gap, a documentation gap (recall Lesson 4\'s SDOH Z-code problem), and a genuine access barrier each call for a different fix. This maps directly onto Priority 2 of the CMS Framework for Health Equity 2022–2032: assess causes of disparities within an organization\'s own programs and operations, not just document their existence.'),
+        ('Assess cause', 'Before acting, ask why the gap exists. A staffing gap, a referral-pathway gap, a documentation gap (recall Lesson 4\'s SDOH Z-code problem), and a genuine access barrier each call for a different fix. It mirrors Priority 2 of the CMS Framework for Health Equity 2022–2032, in which CMS commits to assess the causes of disparities within its own programs and address inequities in its policies and operations, not just document that disparities exist.'),
         ('Act', 'Change something specific and attributable — a staffing decision, a referral relationship, a screening workflow, a resource allocation — tied to the cause identified in the previous step, not to the symptom alone.'),
         ('Re-measure', 'Run the same stratified measure again on the same cadence. If the gap did not move, the assessed cause was probably wrong, or the action taken did not address it — return to the assess-cause step rather than abandoning measurement.'),
     ]),
@@ -397,10 +397,10 @@ l6 = [
         'A thermostat does not just display the room temperature and stop. It compares the reading to a target, triggers the furnace or air conditioner when they diverge, and checks the temperature again afterward to see whether the action worked. A dashboard that only displays a stratified rate, with no target, no trigger, and no recheck, is a thermometer nailed to the wall — accurate, and inert.',
         'Why the measure → assess cause → act → re-measure governance loop is the operational difference between a dashboard and a management tool'),
 
-    h2('l6s4h', 'Case Study: From Screening Data to an Anchor-Mission Committee'),
-    example('l6ex1', 'Rush University Medical Center — West Side Anchor Committee',
-        'Rush University Medical Center\'s SDOH screening effort, built with community partners including Catholic Charities, the Greater Chicago Food Depository, and CommunityHealth (Chicago\'s largest free clinic), did not stop at collecting screening data. Rush formed a West Side Anchor Committee explicitly to convert what the screening and stratified quality data showed into standing operating processes — shared goals, common referral pathways, and joint investment decisions with those community partners.\n'
-        'That committee is this lesson\'s governance loop made concrete: a named structure whose job is to act when the data shows something, not a report that circulates and is filed.'),
+    h2('l6s4h', 'Case Study: From Screening to Standing Committees'),
+    example('l6ex1', 'Rush University Medical Center — From Screening to Standing Committees',
+        'Rush University Medical Center screens patients routinely for social needs such as housing, food access, and violence, and works with the Greater Chicago Food Depository on food programs. In West Side ConnectED, Rush, the University of Illinois Hospital, AMITA Health Saints Mary and Elizabeth Medical Center, and Mount Sinai Hospital share a seven-question emergency-department screening tool, and Catholic Charities linked the hospitals to about 30 partner agencies ready to take referrals. Inside Rush, an Anchor Mission committee organized in January 2017 sets targets for local hiring, career pathways, local spending, and volunteering and reports to senior leadership twice a year, and a Health Equity Governance Committee steers improvement work on inequities in patient outcomes (Ansell et al., NEJM Catalyst, 2021).\n'
+        'Those committees are this lesson\'s governance loop made concrete: named structures whose job is to act when the data shows something, not a report that circulates and is filed.'),
 
     h2('l6s5h', 'The "So What" Test for a New Equity Metric'),
     blk('l6s5p1', 'Before any new stratified rate, SDOH score, or composite index ships into a dashboard, it is worth applying a simple test: if this number moves in the wrong direction next quarter, what specifically happens? If the honest answer is "nothing, because no one is assigned to look at it," the metric is not yet operationally ready, regardless of how methodologically sound its construction is.'),
@@ -412,10 +412,10 @@ l6 = [
 
     takeaway('l6tw', [
         'CAHPS (AHRQ, since 1995) is the real, patient-reported data source that Lesson 5\'s Trust & Engagement proxy is standing in for — it measures what patients actually report, not what a proxy infers.',
-        'Published research on disparity dashboards finds that stratified dashboards are common, but dashboards tied to a real accountability structure that acts on the data are much rarer — measurement alone does not produce action.',
+        'A 2023 Lancet Digital Health review (Gallifant et al.) found that only six of the dashboard studies it evaluated used the dashboard within a wider process to identify disparities, test interventions, or track progress toward a goal — measurement alone does not produce action.',
         'The governance loop — measure, assess cause, act, re-measure — turns a static number into an iterative accountability process; an unmoved gap sends you back to reassessing the cause, not to abandoning the metric.',
-        'CMS\'s Framework for Health Equity 2022–2032 explicitly calls for assessing causes of disparities within an organization\'s own programs and operations, not only documenting that disparities exist.',
-        'Rush University Medical Center\'s West Side Anchor Committee is a concrete, named structure that converted SDOH and quality data into standing operational decisions with community partners.',
+        'In Priority 2 of its Framework for Health Equity 2022–2032, CMS commits to assessing the causes of disparities within its own programs and operations, not only documenting that disparities exist — a discipline any organization can apply to its own.',
+        'Rush University Medical Center pairs routine social-needs screening (including the West Side ConnectED emergency-department collaborative) with named standing bodies — an Anchor Mission committee and a Health Equity Governance Committee — that own targets and act on what the data show.',
         'The "so what" test — does a named owner, a trigger threshold, a cause hypothesis, and a re-measurement plan exist for this metric — is a practical gate before any new equity metric ships.',
         'Across all six lessons of this course, the same thread holds: a defensible number (Lessons 2–5) only becomes an equity outcome once it is owned, acted on, and re-measured (Lesson 6).',
     ]),
@@ -428,13 +428,13 @@ l6 = [
             ('The dashboard will automatically violate NCQA reporting requirements', False),
             ('There is no risk, since the stratified data itself will drive change once it is visible', False),
         ],
-        'The disparity-dashboard research literature specifically identifies dashboards lacking a defined accountability structure as prone to sitting unused — visibility alone does not reliably produce action without an owner and a governance loop.'),
+        'A 2023 review of the disparity-dashboard literature found few dashboards embedded in a wider process to identify disparities, test interventions, and track progress — visibility alone does not reliably produce action without an owner and a governance loop.'),
 
     h2('src', 'Sources'),
     blk('src1', '[1] AHRQ, About the CAHPS Program — https://www.ahrq.gov/cahps/about-cahps/index.html — program began 1995, survey coverage'),
-    blk('src2', '[2] Disparity dashboards: an evaluation of the literature and framework for health equity improvement — https://pmc.ncbi.nlm.nih.gov/articles/PMC10639125/ — the measurement-without-action finding; Moffitt Cancer Center Disparities Dashboard'),
-    blk('src3', '[3] CMS Office of Minority Health, CMS Framework for Health Equity 2022–2032 — https://www.cms.gov/files/document/cms-framework-health-equity.pdf — Priority 2, assessing causes of disparities'),
-    blk('src4', '[4] Rush University Medical Center, "Health Equity as a System Strategy," NEJM Catalyst 2021 — https://catalyst.nejm.org/doi/full/10.1056/CAT.20.0674 — West Side Anchor Committee'),
+    blk('src2', '[2] Gallifant J et al., "Disparity dashboards: an evaluation of the literature and framework for health equity improvement," Lancet Digital Health (2023) — https://pmc.ncbi.nlm.nih.gov/articles/PMC10639125/ — only six evaluated studies used a dashboard within a wider improvement process. Moffitt Cancer Center Disparities Dashboard: Quality Interactions, "What are leading organizations doing to achieve health equity" — https://www.qualityinteractions.com/blog/what-are-leading-organizations-doing-to-achieve-health-equity'),
+    blk('src3', '[3] CMS Office of Minority Health, CMS Framework for Health Equity 2022–2032 — https://www.cms.gov/files/document/cms-framework-health-equity.pdf — Priority 2, assess causes of disparities within CMS programs'),
+    blk('src4', '[4] Ansell DA et al., "Health Equity as a System Strategy: The Rush University Medical Center Framework," NEJM Catalyst, May 2021 — https://catalyst.nejm.org/doi/full/10.1056/CAT.20.0674 — Anchor Mission committee, Health Equity Governance Committee; Catholic Health World, "Chicago hospitals unite to address socioeconomic needs of West Side residents" (Oct 1, 2019) — West Side ConnectED'),
 ]
 
 # ════════════════════════════════════════════════════════════════════════

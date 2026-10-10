@@ -1,0 +1,50 @@
+{
+ "lessonIds": [
+  "94407bd1-f7ed-470d-be45-703faa7f11ec"
+ ],
+ "files": [
+  "frontend/content/course_revenue_cycle.json",
+  "frontend/content/courses_tier3.json"
+ ],
+ "edits": [
+  {
+   "match": {
+    "label": "Days in AR: <40 days (hospital)",
+    "value": "Top quartile"
+   },
+   "set": {
+    "value": "Rule of thumb",
+    "context": "Common industry target (not an HFMA-published benchmark); MAP Key definitions standardize the calculation"
+   },
+   "claim": "fallback stat: Days in AR <40 = top quartile, HFMA MAP Keys 2023 benchmark",
+   "verdict": "MISATTRIBUTED",
+   "src": "HFMA MAP Keys page (fetched 2026-10-09): 29 keys in 5 groups define calculations only; HFMA publishes no public top-quartile thresholds or medians (no \"MAP Keys 2023 benchmark\" of <40 days, >97% NCR / ~94% median, <2% cost to collect / ~3.5% median). Kept as labelled industry rules of thumb, consistent with the ar-management and rcm-kpis decisions"
+  },
+  {
+   "match": {
+    "label": "Net Collection Rate: >97%",
+    "value": "Top quartile"
+   },
+   "set": {
+    "value": "Rule of thumb",
+    "context": "Common industry target (not an HFMA-published benchmark)"
+   },
+   "claim": "fallback stat: NCR >97% top quartile, median ~94% (HFMA benchmark)",
+   "verdict": "MISATTRIBUTED",
+   "src": "HFMA MAP Keys page (fetched 2026-10-09): 29 keys in 5 groups define calculations only; HFMA publishes no public top-quartile thresholds or medians (no \"MAP Keys 2023 benchmark\" of <40 days, >97% NCR / ~94% median, <2% cost to collect / ~3.5% median). Kept as labelled industry rules of thumb, consistent with the ar-management and rcm-kpis decisions"
+  },
+  {
+   "match": {
+    "label": "Cost to Collect: <2% of net revenue",
+    "value": "Top quartile"
+   },
+   "set": {
+    "value": "Rule of thumb",
+    "context": "Common industry target (not an HFMA-published benchmark)"
+   },
+   "claim": "fallback stat: cost to collect <2% top quartile, median ~3.5% (HFMA benchmark)",
+   "verdict": "MISATTRIBUTED",
+   "src": "HFMA MAP Keys page (fetched 2026-10-09): 29 keys in 5 groups define calculations only; HFMA publishes no public top-quartile thresholds or medians (no \"MAP Keys 2023 benchmark\" of <40 days, >97% NCR / ~94% median, <2% cost to collect / ~3.5% median). Kept as labelled industry rules of thumb, consistent with the ar-management and rcm-kpis decisions"
+  }
+ ]
+}

@@ -1,0 +1,518 @@
+{
+  "_createdAt": "2026-06-01T12:30:32Z",
+  "_id": "pre-registration-insurance-verification",
+  "_rev": "2zkDeD7zc2Ko2DfFHs9PCS",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T12:30:32Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Front Door of the Revenue Cycle"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The revenue cycle begins before any care is delivered, at scheduling and registration. This is the front door, and what happens here quietly determines the fate of the eventual claim. Two activities dominate: pre-registration, which captures the patient's demographic and insurance information, and insurance verification, which confirms that coverage actually exists for the planned service."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Pre-registration ideally happens before the visit — often while the patient is still on the phone scheduling — so that any problem (an inactive plan, a wrong ID, a missing authorization) can be caught and fixed while there is still time. Registration then confirms and completes that information when the patient arrives."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "These steps feel like clerical busywork, but they are among the highest-leverage activities in the entire cycle. A clean front door means clean claims downstream; a sloppy one guarantees denials weeks later, when they are far more expensive to fix."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Pre-registration captures patient demographic and insurance information before the visit; insurance verification confirms active coverage for the planned service. Together they are the front door that determines whether the eventual claim can be paid."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why the Front-End Matters So Much"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The data is blunt: front-end issues cause roughly half of all claim denials, and registration plus eligibility problems alone account for a little over one-quarter of denied claims. The very first step of the cycle is also its single largest source of preventable revenue loss."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Most of these denials are entirely preventable. Over 20 percent of denied claims involve human input errors — a mistyped member ID, a misspelled name, a wrong date of birth. Eligibility systems match patient data against the payer's enrollment records exactly, so even a small mismatch causes an automatic rejection. The care was fine; the data entry was not."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why the front-end deserves disproportionate attention. A denial prevented at registration costs almost nothing; the same denial caught after submission must be researched, corrected, resubmitted, and followed up — at a cost of $25 to $181 per claim and weeks of delay. The economics overwhelmingly favor getting it right at the front door."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Front-end problems cause about half of denials (industry)",
+          "label": "Denials From Front-End Issues",
+          "value": "~50%"
+        },
+        {
+          "_key": "s2",
+          "context": "A little over a quarter of denied claims (industry)",
+          "label": "From Registration/Eligibility",
+          "value": "~25%+"
+        },
+        {
+          "_key": "s3",
+          "context": "Mistyped IDs, names, dates of birth (industry)",
+          "label": "From Human Input Errors",
+          "value": ">20%"
+        },
+        {
+          "_key": "s4",
+          "context": "Largely avoidable with clean intake (industry)",
+          "label": "Most Front-End Denials",
+          "value": "Preventable"
+        }
+      ]
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Verification Works: The 270/271 Transaction"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Insurance verification is largely automated through a standardized electronic exchange. The provider sends the payer an electronic eligibility inquiry — a HIPAA \"270\" transaction — and the payer returns an electronic response, the \"271\" transaction. This 270/271 pair is the technical backbone of eligibility verification."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Done in real time, the round trip typically returns a response within about 10 to 30 seconds — fast enough to verify a patient during check-in. The 271 response is rich: it can confirm whether coverage is active and its effective dates, list benefit details by service type, report copay, coinsurance, deductible, and out-of-pocket maximum status, flag whether prior authorization is required, and confirm network participation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "That last set of details is what makes verification so valuable — it not only confirms the patient is covered but surfaces exactly what they will owe and whether extra steps (like prior authorization) are needed before the service. This is the same standardized-data, EDI machinery that runs throughout RCM, applied to the very first step."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "An electronic eligibility/benefit inquiry to the payer.",
+          "title": "Provider sends a 270 inquiry"
+        },
+        {
+          "_key": "step2",
+          "description": "Typically within 10-30 seconds in real time.",
+          "title": "Payer returns a 271 response"
+        },
+        {
+          "_key": "step3",
+          "description": "Active status, dates, copay/coinsurance/deductible, out-of-pocket, prior-auth flags, network status.",
+          "title": "Response details coverage"
+        },
+        {
+          "_key": "step4",
+          "description": "Fix mismatches, collect estimated patient responsibility, trigger prior authorization if flagged.",
+          "title": "Front-end acts on it"
+        }
+      ],
+      "title": "The Eligibility Verification Exchange"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Coordination of Benefits"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A particular verification challenge is coordination of benefits (COB): determining the correct order of payment when a patient has more than one insurance plan. If a patient has both a primary and a secondary payer, claims must go to the primary first, and only the remaining balance to the secondary."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Getting COB wrong is a common denial cause: a claim sent to the secondary payer first, or to a plan that is actually secondary, will be rejected with instructions to bill the correct primary. The eligibility exchange helps here, since the 270/271 supports coordination-of-benefits information, but it still requires the front-end staff to ask the right questions and record which plan is primary."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "COB is a good example of why verification is more than a yes/no coverage check. It is about establishing the complete, correct picture of who pays, in what order, and for what — so the claim goes to the right payer the first time. A patient with Medicare and a commercial plan, or two employed spouses each with coverage, needs this sorted before the claim ever goes out."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "A patient is covered by their own employer plan and, as a dependent, by their spouse's plan. If the front-end staff bill the spouse's plan as primary when the patient's own plan should be primary, the claim is denied and must be rebilled in the correct order.\nThe care was appropriate and covered — the loss came entirely from getting the payment order wrong at verification, a classic preventable front-end denial.",
+      "title": "A Coordination-of-Benefits Mistake"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Building a Strong Front-End Process"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because the stakes are so high and the errors so preventable, organizations invest heavily in front-end discipline. The core practices are straightforward: verify eligibility before every visit (not just at the first), confirm and re-confirm demographic data against a photo ID, and run real-time 270/271 checks so problems surface while they can still be fixed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Automation is increasingly central. Real-time and batch eligibility tools can verify entire schedules of upcoming patients automatically, flagging inactive coverage, term dates, and authorization requirements before anyone arrives. This shifts the front-end from reactive (fix the denial later) to proactive (prevent it now), which is exactly where the economics point."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The mindset to instill is that the front-end is where money is saved, not spent. Every minute invested verifying coverage and cleaning up patient data at intake prevents a multiplied cost downstream. The next lessons — prior authorization and financial counseling — build directly on this foundation, completing the front-end's job of setting up a claim that can actually be paid."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "Coverage changes — patients switch jobs, plans terminate, benefits reset annually. Verifying eligibility only at the first encounter and assuming it holds is a frequent cause of denials. Re-verify before each visit, ideally with an automated real-time check against the schedule.",
+      "title": "Verify Every Visit, Not Just the First"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Pre-registration captures patient demographic and insurance data before the visit; insurance verification confirms active coverage for the planned service.",
+        "The front-end is the largest source of preventable revenue loss: front-end issues cause about half of denials, and registration/eligibility alone over a quarter.",
+        "Over 20% of denied claims stem from human input errors like mistyped member IDs — eligibility systems require an exact match to payer records.",
+        "Verification runs on the HIPAA 270 (inquiry) and 271 (response) EDI transactions, with real-time responses typically in 10-30 seconds.",
+        "The 271 response reports active status, dates, copay/coinsurance/deductible, out-of-pocket status, prior-auth requirements, and network participation.",
+        "Coordination of benefits (COB) determines payment order when a patient has multiple plans; billing the wrong plan first is a common preventable denial.",
+        "Strong front-ends verify before every visit, confirm demographics against ID, and automate real-time eligibility checks to prevent denials rather than rework them."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The 270/271 pair is the standardized EDI exchange for eligibility verification: the provider sends a 270 inquiry asking about a patient's coverage, and the payer returns a 271 response — typically within 10-30 seconds in real time — reporting active status, dates, copay/coinsurance/deductible, prior-authorization requirements, and network participation.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "270 is the claim and 271 is the payment"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "270 is the provider's eligibility inquiry and 271 is the payer's response with coverage and benefit details"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "270 is a denial code and 271 is an appeal"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "They are CPT procedure codes"
+        }
+      ],
+      "question": "In insurance eligibility verification, what are the HIPAA 270 and 271 transactions?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] What is EDI 270 and EDI 271 Transaction Sets in Healthcare? (Zenbridge) — https://zenbridge.io/insights/what-is-edi-270-and-edi-271-in-healthcare — 270 inquiry / 271 response; coverage, benefits, copay, deductible, prior-auth flags"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] HIPAA 270/271 Eligibility Verification: Real-Time & Batch (HIPAA Atlas) — https://hipaaatlas.com/realtime-batch-eligibility.php — real-time responses ~10-30 seconds; batch verification of schedules"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Prevent Front-End Rejection in Medical Billing (Rivet Health) — https://www.rivethealth.com/blog/front-end-issues-cause-about-half-of-denials — front-end issues cause about half of denials"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Incomplete or Incorrect Patient Demographics (Staffingly) — https://staffingly.com/incomplete-or-incorrect-patient-demographics-preventing-verification-failures/ — demographic errors; exact-match requirement; >20% human input errors"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Patient Registration Process: 5 Signs in Claim Rejections (MBW RCM) — https://www.mbwrcm.com/the-revenue-cycle-blog/patient-registration-process-causing-claim-rejections — registration/eligibility ~one-quarter of denials; preventability"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] EDI 270 — Health Care Eligibility/Benefit Inquiry (ProEDI) — https://www.proedi.com/edi-transactions/edi-270-health-care-eligibility-benefit-inquiry — eligibility inquiry supports coordination of benefits"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "revenue-cycle-management",
+  "order": 4,
+  "slug": {
+    "_type": "slug",
+    "current": "pre-registration-insurance-verification"
+  },
+  "title": "Pre-Registration and Insurance Verification"
+}

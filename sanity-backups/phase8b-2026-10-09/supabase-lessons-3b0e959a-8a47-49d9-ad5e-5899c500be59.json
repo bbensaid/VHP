@@ -1,0 +1,107 @@
+{
+  "id": "3b0e959a-8a47-49d9-ad5e-5899c500be59",
+  "track_id": "fa4f708c-64f6-496c-b5b8-ace2382eadb0",
+  "pillar": "operations",
+  "order": 1,
+  "slug": "covered-benefits-carveins-carveouts",
+  "title": "Covered Benefits: Carve-Ins vs Carve-Outs",
+  "summary": "Explains how states structure Medicaid MCO benefit packages, distinguishing between carved-in services managed by the MCO and carved-out services managed separately.",
+  "estimated_minutes": 22,
+  "objectives": [
+    "Define benefit carve-ins and carve-outs and explain the policy tradeoffs",
+    "Identify which services are most commonly carved out from MCO contracts",
+    "Explain how carve-outs affect care coordination and clinical integration"
+  ],
+  "content_blocks": [
+    {
+      "body": "When states design Medicaid managed care contracts, they must decide which services to include ('carve in') within the MCO's capitation and which to exclude ('carve out') for separate management. Carved-out services are typically delivered through separate contracts — often with PIHPs or PAHPs — or paid FFS directly by the state.\n\n**Common Carve-Outs:**\n- Behavioral health services (most commonly carved out)\n- Long-term services and supports (LTSS)\n- Dental services (often a separate PAHP)\n- Non-emergency medical transportation (NEMT)\n- Pharmacy (increasingly being carved back in)\n- High-cost specialty drugs",
+      "type": "text",
+      "heading": "Carve-Ins vs. Carve-Outs: The Basics"
+    },
+    {
+      "body": "Carving out behavioral health from physical health creates a structural barrier to integrated care. Members with co-occurring mental health and medical conditions often fall through the cracks between their MCO (physical health) and PIHP (behavioral health). This is why a strong trend toward 'carving in' behavioral health has emerged — states like Arizona, Pennsylvania, and New York have integrated behavioral health into MCO contracts to improve whole-person care.",
+      "type": "callout",
+      "title": "The Integration Problem",
+      "variant": "warning"
+    },
+    {
+      "rows": [
+        [
+          "Physical Health",
+          "YES",
+          "Rarely",
+          "Stable"
+        ],
+        [
+          "Behavioral Health (Outpatient)",
+          "Increasingly",
+          "Historically common",
+          "Moving to carve-in"
+        ],
+        [
+          "Pharmacy",
+          "Increasingly (CMS encourages)",
+          "Historically common",
+          "Strong carve-in trend"
+        ],
+        [
+          "Dental",
+          "Rarely",
+          "Most states",
+          "Stable carve-out"
+        ],
+        [
+          "LTSS",
+          "In MLTSS states",
+          "Most states (FFS)",
+          "Growing MLTSS adoption"
+        ],
+        [
+          "NEMT",
+          "Some states",
+          "Many states",
+          "Mixed"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Service",
+        "Commonly Carved In",
+        "Commonly Carved Out",
+        "Trend"
+      ]
+    },
+    {
+      "type": "glossary_terms",
+      "terms": [
+        {
+          "term": "Carve-In",
+          "definition": "A service included within the MCO's capitation — the MCO manages the benefit and bears financial risk for its costs"
+        },
+        {
+          "term": "Carve-Out",
+          "definition": "A service excluded from MCO capitation and managed separately — either through a specialized PIHP/PAHP or fee-for-service"
+        },
+        {
+          "term": "MLTSS (Managed Long-Term Services and Supports)",
+          "definition": "A model where LTSS are carved into managed care capitation, giving MCOs responsibility for nursing home, home care, and HCBS coordination"
+        },
+        {
+          "term": "PIHP (Prepaid Inpatient Health Plan)",
+          "definition": "An entity providing capitated behavioral health inpatient services — often used when states carve out behavioral health from MCOs"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "carve-ins",
+    "carve-outs",
+    "benefit design",
+    "behavioral health"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:12.572412+00:00",
+  "updated_at": "2026-06-01T13:29:15.782901+00:00",
+  "sanity_slug": "covered-benefits-carveins-carveouts"
+}

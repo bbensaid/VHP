@@ -1,0 +1,9 @@
+{
+  "id": "5a67982f-7fe1-4ebb-b016-d2463d0049a0",
+  "quiz_id": "b2272010-2b70-4f04-bdcf-21573d981862",
+  "order": 1,
+  "question_type": "single_choice",
+  "question": "Which of the following is a MANDATORY EQRO activity under 42 CFR §438.358?",
+  "explanation": "Validating PIPs is one of three mandatory EQRO activities under 42 CFR §438.358. CAHPS surveys and focused studies are optional activities.",
+  "points": null
+}

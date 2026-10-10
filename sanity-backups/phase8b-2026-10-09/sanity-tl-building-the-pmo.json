@@ -1,0 +1,400 @@
+{
+  "_createdAt": "2026-09-22T19:15:07Z",
+  "_id": "tl-building-the-pmo",
+  "_rev": "LCntMInbokDNzSR9NF5J0n",
+  "_type": "academyModule",
+  "_updatedAt": "2026-09-22T19:15:07Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Getting the Levels Right"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Project Management Institute draws a hierarchy that most healthcare transformation programs never observe explicitly. A project is a temporary undertaking that produces a defined, unique result on a defined scope, schedule, and budget — deploying a new analytics vendor, certifying a single clinic as a behavioral-health home. A program is a set of related projects managed together to produce benefits that no single project could achieve alone — a technology pillar's combined health-information-exchange and AI-governance work, for example. A portfolio is the full collection of programs, projects, and ongoing operations managed together to achieve organizational strategy — the entire multi-year transformation agenda across every pillar."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Most healthcare systems run their transformation agenda as a flat list of initiatives with no portfolio layer above the individual projects. That absence has a specific, predictable cost: no one is positioned to notice that two initiatives are competing for the same handful of data analysts, or that a delay in one workstream has silently invalidated the timeline of another that depends on it. A portfolio manager's entire job is to see across that boundary; without the role, the boundary simply goes unmonitored."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "PMI, Pulse of the Profession — roughly 11.4% of every dollar invested lost to poor project performance",
+          "label": "Wasted worldwide annually",
+          "value": "$2T"
+        },
+        {
+          "_key": "s2",
+          "context": "PMI — comparing organizations with an established PMO to those without one",
+          "label": "More on-time/on-budget delivery",
+          "value": "38%"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What a PMO Actually Does"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A Project (or Portfolio) Management Office is not a layer of bureaucratic sign-off. Its core functions are specific and largely invisible when done well: maintaining a single register of every active initiative with a named owner and a dated obligation, maintaining a risk register that is actually reviewed rather than filed and forgotten, defining stage gates that a component must pass before moving to the next phase, resolving resource conflicts between components competing for the same limited staff, and producing a single consolidated report that lets an executive or a legislature see the whole portfolio's status at once rather than piecing it together from a dozen separate updates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "PMI defines the ten project management knowledge areas — integration, scope, schedule, cost, quality, resource, communications, risk, procurement, and stakeholder management — as the complete set a mature PMO has to address. A transformation program can have strong analytical content in every one of these areas and still lack the operational infrastructure to manage them day to day; that gap between analytical coverage and operational capacity is precisely what a PMO is built to close."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Worked: The VA's VISN Restructuring"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "By the mid-1990s, the U.S. Department of Veterans Affairs' health system was widely criticized for delivering fragmented, unpredictable care that was expensive and difficult to access. Dr. Kenneth Kizer, a physician trained in emergency medicine and public health, was appointed Director of the Veterans Health Administration in 1994 specifically to modernize the system. In 1995 he launched a restructuring plan that decentralized the VA's national operations into 22 geographically defined Veterans Integrated Service Networks, known as VISNs, and drove the reorganization through 1999."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "The VISN restructuring focused on five things simultaneously: management accountability, care coordination, quality improvement, resource allocation, and information management. Rather than managing the whole VA system as one centralized bureaucracy, Kizer pushed real operational accountability down to the 22 regional networks while holding each one to consistent, measurable standards from the center. Published assessments of the transformation — including analyses in the Annual Review of Public Health — found the restructuring produced dramatically improved quality, service, and operational efficiency, to the point that VA care quality later came to be regarded as among the best in the American health system and the transformation itself is frequently cited as a model for large-scale health-system reform.",
+      "title": "Kenneth Kizer's VA Restructuring, 1995–1999"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Failed: The NHS's National Programme for IT"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The contrast with the NHS's National Programme for IT is direct and instructive precisely because both were large-scale, centrally initiated attempts to transform a national health system's operations. NPfIT, launched in the early 2000s, retained centralized decision-making authority at the national level while leaving the NHS trusts and local organizations responsible for actually implementing the systems those central decisions had specified — the opposite structural choice from the VA's decentralized-with-accountability model. The National Audit Office found this separation of authority from accountability, combined with insufficient engagement of frontline clinicians during design and risk assessments that were produced and then not acted on, to be the core drivers of the programme's collapse. It was stopped in 2011 after an estimated £9.8 billion in direct government spending, with independent retrospectives placing total realized costs, once write-offs are included, as high as £10–12.7 billion."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "VA VISN Restructuring (Worked)",
+        "points": [
+          "Decentralized operational authority to 22 regional networks",
+          "Held networks accountable to consistent, measurable standards from the center",
+          "Reorganization phased over roughly four years (1995–1999)",
+          "Later assessed as producing measurably improved quality and efficiency"
+        ]
+      },
+      "right": {
+        "label": "NHS NPfIT (Failed)",
+        "points": [
+          "Centralized decision-making, separated from local implementation authority",
+          "Insufficient engagement of clinicians and frontline stakeholders in design",
+          "Risk assessments produced but not acted on",
+          "Dismantled in 2011 after ~£9.8B in direct spend; total realized cost estimated up to £10–12.7B"
+        ]
+      },
+      "title": "What Separated the VA's Success From NPfIT's Failure"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Designing Your Own PMO"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A transformation PMO does not need to be built from a blank page. The first and highest-value step, usable by an organization of any size, is a portfolio inventory: listing every statute, grant, model agreement, and initiative touching the transformation, and assigning each one a pillar and a named owner. Most organizations underestimate their own portfolio's real size until they run this exercise, because individual initiatives are typically owned by different departments that do not otherwise compare notes with each other."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Define the PMO's authority, reporting line, and scope in writing before staffing it.",
+          "title": "Charter the office"
+        },
+        {
+          "_key": "step2",
+          "description": "List every initiative touching the transformation with a named owner and dated obligation — repeatable regardless of how many components it turns up.",
+          "title": "Inventory the portfolio"
+        },
+        {
+          "_key": "step3",
+          "description": "Capture material risks per component and, critically, review it on a fixed cadence rather than filing it once.",
+          "title": "Build the risk register"
+        },
+        {
+          "_key": "step4",
+          "description": "Produce one consolidated portfolio report on a fixed schedule for the executive or legislative audience, rather than per-component updates.",
+          "title": "Set the reporting cadence"
+        },
+        {
+          "_key": "step5",
+          "description": "Assign clear ownership for integration, schedule, resource, risk, and stakeholder management — the areas most often left informal.",
+          "title": "Staff for the ten knowledge areas"
+        }
+      ],
+      "title": "Building a Transformation PMO"
+    },
+    {
+      "_key": "s5hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The portfolio inventory exercise is repeatable by any organization regardless of how many components it turns up. The specific number is never the point — the point is that most organizations discover their portfolio is larger and more interdependent than any single department realized before the inventory was done."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "PMI's hierarchy — project, program, portfolio — gives transformation leaders a precise vocabulary for a coordination problem healthcare usually manages informally.",
+        "A missing portfolio layer has a specific, predictable cost: resource conflicts and cross-component dependencies go unmonitored until they cause a visible failure.",
+        "PMI research finds organizations with an established PMO complete 38% more projects on time and on budget than those without one.",
+        "The VA's 1995–99 VISN restructuring under Kenneth Kizer decentralized operational authority to 22 regional networks while holding them to consistent central standards — and is widely credited with producing durable quality gains.",
+        "The NHS's National Programme for IT made the opposite structural choice — centralizing decision-making while leaving local organizations accountable for implementation — and collapsed at an estimated cost of up to £10–12.7 billion.",
+        "A PMO's core functions are a maintained portfolio register, a genuinely reviewed risk register, defined stage gates, resource-conflict resolution, and one consolidated report.",
+        "The single highest-value first step for any organization building this capability is a full portfolio inventory — every initiative, assigned an owner and a pillar."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The VA pushed real operational authority down to 22 regional networks while maintaining consistent central standards and accountability. NPfIT did the opposite — it kept decision-making centralized while leaving NHS trusts accountable for implementing decisions they had little role in shaping, which reviewers identified as the core governance failure.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The VA had a larger budget than the NHS programme"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The VA decentralized operational authority while holding networks to central standards; NPfIT centralized decisions while leaving implementation accountability local"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The VA restructuring involved no new technology"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "NPfIT had strong clinician engagement while the VA restructuring did not"
+        }
+      ],
+      "question": "What is the key structural difference between the VA's 1995–99 VISN restructuring (widely regarded as successful) and the NHS's National Programme for IT (widely regarded as a failure)?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] PMI, Pulse of the Profession research — https://www.pmi.org/learning/library/2022/07/01/21/01/en-2013-pulse-high-cost-low-performance-13511 — PMO value and cost-of-poor-performance statistics"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] \"Extreme Makeover: Transformation of the Veterans Health Care System\" (Annual Review of Public Health) — https://www.annualreviews.org/content/journals/10.1146/annurev.publhealth.29.020907.090940 — VA VISN restructuring under Kenneth Kizer"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] \"The Revitalization of the Veterans Health Administration\" — https://www.businessofgovernment.org/sites/default/files/TransformingVHA.pdf — Kizer's 1995 \"Vision for Change\" restructuring plan"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] National Audit Office / Parliament Public Accounts Committee, \"The dismantled National Programme for IT in the NHS\" — https://publications.parliament.uk/pa/cm201314/cmselect/cmpubacc/294/294.pdf — NPfIT governance failure and cost findings"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Health Transformation Review, Transforming American Healthcare, Chapter 15 §15.2–15.6 — internal manuscript, the book's own PMI-grounded portfolio governance design for Vermont"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "tl-building-the-pmo"
+  },
+  "title": "Building the PMO: Portfolio Governance for a Multi-Year Transformation"
+}

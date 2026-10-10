@@ -1,0 +1,558 @@
+{
+  "_createdAt": "2026-06-02T15:20:21Z",
+  "_id": "medicare-financing",
+  "_rev": "jFV5UM63HEdRp4x3pruZzc",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T15:20:21Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two Trust Funds, Two Very Different Designs"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicare does not run on a single pot of money. It runs on two separate trust funds with fundamentally different financing rules, and understanding the split is the key to understanding every Medicare solvency headline you will ever read. The Hospital Insurance (HI) Trust Fund pays for Part A. The Supplementary Medical Insurance (SMI) Trust Fund pays for Part B and Part D."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The HI Trust Fund works like Social Security: dedicated payroll taxes flow in while workers are employed, and benefits flow out in retirement. When payroll-tax revenue exceeds Part A spending, the surplus accumulates in the trust fund; when spending exceeds revenue, the fund is drawn down. Because its income is capped by what the tax brings in, the HI fund can actually run dry."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The SMI Trust Fund is the opposite. No payroll taxes are dedicated to it. Instead it is filled each year by general federal revenue plus beneficiary premiums, and the federal contribution is set prospectively to cover projected costs. Because Congress simply appropriates whatever is needed, the SMI fund is, by design, always solvent — it cannot \"go broke.\""
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "HI (Part A) is funded by dedicated payroll taxes and can be exhausted. SMI (Parts B and D) is funded by general revenue and premiums set to cover costs, so it is automatically solvent. Almost every \"Medicare is going bankrupt\" story is really about the HI Trust Fund only."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "HI Trust Fund (Part A)",
+        "points": [
+          "Funded by the 2.9% Medicare payroll tax",
+          "Works like a savings account — surplus or drawdown",
+          "Can be depleted if spending outruns tax revenue",
+          "Solvency is a recurring fiscal concern"
+        ]
+      },
+      "right": {
+        "label": "SMI Trust Fund (Parts B & D)",
+        "points": [
+          "Funded ~75% general revenue, ~25% premiums",
+          "Federal contribution set prospectively each year",
+          "Cannot be depleted — automatically solvent",
+          "But it adds to the federal deficit instead"
+        ]
+      },
+      "title": "The Two Medicare Trust Funds"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Part A: The Medicare Payroll Tax"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Part A is financed primarily by the Medicare payroll tax. Employees pay 1.45 percent of their earnings and employers pay a matching 1.45 percent, for a combined 2.9 percent. Self-employed workers pay the full 2.9 percent themselves. Unlike the Social Security tax, the Medicare payroll tax has no wage cap — it applies to every dollar of earnings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Since 2013, an Additional Medicare Tax of 0.9 percent applies to high earners — on wages above $200,000 for individual filers and above $250,000 for joint filers. This extra tax is paid only by the employee, not matched by the employer, and was added by the Affordable Care Act to shore up HI financing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This pay-as-you-go design means today’s workers are largely funding today’s retirees. That works well when there are many workers per beneficiary and strains badly when there are few — which is exactly the demographic squeeze Medicare now faces."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "1.45% employee + 1.45% employer (CMS / Treasury)",
+          "label": "Combined Payroll Tax",
+          "value": "2.9%"
+        },
+        {
+          "_key": "s2",
+          "context": "On wages over $200K single / $250K joint (ACA)",
+          "label": "Additional Tax on High Earners",
+          "value": "+0.9%"
+        },
+        {
+          "_key": "s3",
+          "context": "~75% general revenue, ~25% premiums (KFF)",
+          "label": "Part B & D Funding Split",
+          "value": "75% / 25%"
+        },
+        {
+          "_key": "s4",
+          "context": "Unlike Social Security, applies to all earnings",
+          "label": "On Medicare Payroll Tax",
+          "value": "No cap"
+        }
+      ]
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Parts B and D: General Revenue and Premiums"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Part B and Part D are paid out of the SMI Trust Fund. For Part B, the law sets standard beneficiary premiums to cover about 25 percent of projected per-enrollee costs, with the remaining roughly 75 percent coming from general federal revenue — that is, from the broad federal budget funded by income taxes and borrowing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Higher-income beneficiaries pay more through the Income-Related Monthly Adjustment Amount (IRMAA), a surcharge added to both Part B and Part D premiums above certain income thresholds. Part D is financed similarly: enrollee premiums plus a large federal subsidy, with additional support for low-income beneficiaries."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The trade-off is important. Because SMI leans so heavily on general revenue, it never faces insolvency — but every dollar of growth in Part B and Part D spending directly enlarges the federal deficit. So SMI’s fiscal pressure shows up not as a trust-fund crisis but as a rising claim on the overall federal budget."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "Medicare Advantage (Part C) does not have its own trust fund. CMS pays MA plans a risk-adjusted per-member-per-month capitation rate drawn from both the HI and SMI trust funds, in proportion to the Part A and Part B services those plans cover. So as MA enrollment grows past half of all beneficiaries, a growing share of both trust funds flows through private plans rather than directly to providers.",
+      "title": "Medicare Advantage and Both Trust Funds"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The HI Trust Fund Solvency Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Each year the Medicare Trustees publish projections of when the HI Trust Fund will run short. The 2025 Trustees Report projects HI depletion in 2033 — three years earlier than the prior report’s 2036 estimate, a change driven mainly by higher projected health care costs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Crucially, depletion does not mean Medicare ends or that Part A stops. It means incoming payroll-tax revenue would cover only about 89 percent of Part A costs in 2033 — leaving an 11 percent shortfall that Congress would have to close through higher taxes, lower payments, or other policy changes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The underlying driver is demographic. The worker-to-beneficiary ratio has fallen from about 4.6 workers per beneficiary at Medicare’s founding to roughly 2.9 today, and is projected to drop to about 2.5 by 2030 as baby boomers retire. Fewer workers supporting more retirees is the core arithmetic behind every solvency warning."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "If the HI Trust Fund is depleted in 2033, Part A would still pay roughly 89 cents on the dollar from ongoing payroll taxes — it would not shut down. The depletion date is a policy deadline, not the end of the program.",
+      "title": "\"Trust fund depletion\" is not bankruptcy"
+    },
+    {
+      "_key": "s4sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "2025 Trustees Report (moved up from 2036)",
+          "label": "Projected HI Depletion",
+          "value": "2033"
+        },
+        {
+          "_key": "s2",
+          "context": "Covered by payroll taxes after depletion (Trustees)",
+          "label": "Of Part A Costs Payable",
+          "value": "89%"
+        },
+        {
+          "_key": "s3",
+          "context": "Founding to today (SSA / SeniorLiving)",
+          "label": "Workers Per Beneficiary",
+          "value": "4.6 → 2.9"
+        },
+        {
+          "_key": "s4",
+          "context": "Driven by baby-boomer retirement",
+          "label": "Projected by 2030",
+          "value": "~2.5"
+        }
+      ]
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Financing Drives Payment Reform"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicare’s financing structure is the engine behind decades of payment reform. Because the HI Trust Fund cannot simply print money and SMI growth widens the deficit, CMS has a powerful incentive to slow the rate of spending growth rather than just cut benefits."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "That is why CMS has invested so heavily in delivery-system reform — accountable care organizations, bundled payments, value-based purchasing, and the work of the CMS Innovation Center. Each is an attempt to get the same or better care for less money, extending trust-fund solvency without slashing eligibility or coverage."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For anyone working in health care, the lesson is direct: Medicare’s payment changes are not arbitrary. They are downstream of a financing system under demographic strain, and they will keep coming as long as the worker-to-beneficiary ratio keeps falling."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5q1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5q1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicare’s solvency math — fewer workers funding more retirees — is the quiet force pushing American health care from paying for volume toward paying for value."
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Medicare runs on two separate trust funds: HI (Part A), funded by payroll taxes, and SMI (Parts B and D), funded by general revenue and premiums.",
+        "The Part A payroll tax is 2.9% combined (1.45% employee + 1.45% employer), with an extra 0.9% on high earners and no wage cap.",
+        "Part B premiums are set to cover about 25% of costs, with roughly 75% paid from general federal revenue; Part D is financed similarly.",
+        "The SMI fund cannot be depleted because Congress funds it annually — but that means its growth enlarges the federal deficit instead.",
+        "The 2025 Trustees Report projects the HI Trust Fund will be depleted in 2033, after which payroll taxes would cover about 89% of Part A costs.",
+        "Depletion is not bankruptcy: Part A keeps paying most benefits and the date is really a deadline for Congress to act.",
+        "The worker-to-beneficiary ratio has fallen from about 4.6 to 2.9 and is heading toward ~2.5 by 2030, which is the central reason Medicare keeps pushing payment reform."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Unlike the HI fund (which depends on a fixed payroll tax and can run dry), the SMI fund is filled annually with general federal revenue plus premiums, with the federal contribution set prospectively to match projected costs. That makes it automatically solvent — but it adds to the federal deficit rather than risking depletion.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "SMI is funded by a dedicated payroll tax that always exceeds spending"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "SMI is funded each year by general revenue and premiums set to cover projected costs"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "SMI has no spending because Parts B and D are free to beneficiaries"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "SMI borrows directly from the HI Trust Fund whenever it runs short"
+        }
+      ],
+      "question": "Why does the SMI Trust Fund (Parts B and D) never face insolvency the way the HI Trust Fund (Part A) does?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] What is the Medicare trust fund, and how is it financed? — Tax Policy Center — https://taxpolicycenter.org/briefing-book/what-medicare-trust-fund-and-how-it-financed — HI vs SMI structure, payroll tax, general revenue."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] 2025 Medicare Trustees Report — CMS — https://www.cms.gov/oact/tr/2025 — HI depletion 2033, 89% of costs payable after."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Analysis of the 2025 Medicare Trustees Report — CRFB — https://www.crfb.org/papers/analysis-2025-medicare-trustees-report — 2036→2033 change driven by higher health costs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] FAQs on Medicare Financing and Trust Fund Solvency — KFF — https://www.kff.org/medicare/issue-brief/faqs-on-medicare-financing-and-trust-fund-solvency/ — 75/25 Part B split, payroll tax detail."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Trustees Report Summary — SSA — https://www.ssa.gov/oact/trsum/ — 1.45%/1.45% payroll tax, 0.9% additional tax thresholds, SMI financing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Medicaid and Medicare Statistics in 2026 — SeniorLiving.org — https://www.seniorliving.org/medicare-medicaid/statistics/ — worker-to-beneficiary ratio 4.6 → 2.9, ~2.5 by 2030."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicare-fundamentals",
+  "order": 2,
+  "slug": {
+    "_type": "slug",
+    "current": "medicare-financing"
+  },
+  "title": "How Medicare Is Financed"
+}

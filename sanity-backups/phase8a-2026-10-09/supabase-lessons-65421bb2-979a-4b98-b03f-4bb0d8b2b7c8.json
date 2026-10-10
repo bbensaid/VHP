@@ -1,0 +1,91 @@
+{
+  "id": "65421bb2-979a-4b98-b03f-4bb0d8b2b7c8",
+  "track_id": "af23bf93-ddf7-4501-8c6a-d5ab3f890ef1",
+  "pillar": "clinical",
+  "order": 1,
+  "slug": "dna-genes-variants",
+  "title": "DNA, Genes, and Variants",
+  "summary": "From the double helix to clinical variants — the molecular alphabet of precision medicine.",
+  "estimated_minutes": 20,
+  "objectives": [],
+  "content_blocks": [
+    {
+      "text": "The Molecular Alphabet of Precision Medicine",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "text": "Every human cell contains approximately 3 billion base pairs of DNA organized into 23 chromosome pairs. This sequence encodes roughly 20,000 protein-coding genes — only about 1.5% of the genome — alongside vast regulatory, structural, and non-coding RNA regions. Understanding this architecture is the foundation for interpreting clinical genomic results.",
+      "type": "text"
+    },
+    {
+      "type": "key_stat",
+      "label": "Base pairs in the human genome",
+      "value": "3 billion",
+      "context": "Only ~1.5% encode proteins; the rest regulate, structure, and coordinate gene expression"
+    },
+    {
+      "text": "From Gene to Protein",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "text": "The central dogma — DNA → RNA → Protein — describes how genetic information flows. Transcription converts a DNA gene into messenger RNA (mRNA); translation reads the mRNA codons on ribosomes to assemble amino acid chains. Post-translational modifications then fold and activate proteins. Variants anywhere in this pathway can alter function.",
+      "type": "text"
+    },
+    {
+      "type": "concepts_grid",
+      "concepts": [
+        {
+          "term": "Exon",
+          "definition": "Protein-coding segment of a gene retained after RNA splicing"
+        },
+        {
+          "term": "Intron",
+          "definition": "Non-coding intervening sequence spliced out before translation"
+        },
+        {
+          "term": "Promoter",
+          "definition": "Regulatory DNA upstream of a gene that controls transcription initiation"
+        },
+        {
+          "term": "SNP",
+          "definition": "Single Nucleotide Polymorphism — the most common type of genetic variation"
+        },
+        {
+          "term": "Indel",
+          "definition": "Insertion or deletion of bases — can shift the reading frame and disrupt protein function"
+        },
+        {
+          "term": "CNV",
+          "definition": "Copy Number Variant — extra or missing copies of a chromosomal segment"
+        }
+      ]
+    },
+    {
+      "text": "Variant Classification",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "text": "The American College of Medical Genetics (ACMG) classifies sequence variants on a 5-tier scale: Pathogenic, Likely Pathogenic, Variant of Uncertain Significance (VUS), Likely Benign, and Benign. Classification draws on population frequency databases (gnomAD), functional studies, computational predictions, and family co-segregation data.",
+      "type": "text"
+    },
+    {
+      "body": "Variants of Uncertain Significance (VUS) are neither confirmed disease-causing nor proven benign. Approximately 30–40% of hereditary cancer panel results include at least one VUS. Genetic counselors help patients understand that VUS classification often resolves over time as evidence accumulates.",
+      "type": "callout",
+      "title": "VUS: The Clinical Gray Zone",
+      "variant": "info"
+    },
+    {
+      "text": "Clinically reportable variants include those affecting disease risk (BRCA1/2 for breast/ovarian cancer), drug metabolism (CYP2D6 for codeine), or pathogen susceptibility (G6PD deficiency). The distinction between germline variants (present in every cell, heritable) and somatic variants (acquired in tumor cells, not heritable) is clinically critical.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:20.172693+00:00",
+  "updated_at": "2026-06-01T18:32:23.428455+00:00",
+  "sanity_slug": "dna-genes-variants"
+}

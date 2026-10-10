@@ -1,0 +1,54 @@
+{
+  "id": "e3e9a4e0-605e-4fff-888e-bc95ed0ec6fa",
+  "track_id": "f8cc7879-94d6-49a1-bbaf-59ee5e95913c",
+  "pillar": "clinical",
+  "order": 2,
+  "slug": "heart-failure-hypertension-management",
+  "title": "Heart Failure and Hypertension Programs",
+  "summary": "Heart failure is the leading cause of hospital readmission in the U.S. Hypertension affects 47% of adults and is the primary driver of cardiovascular events. Population programs for these conditions focus on monitoring, medication adherence, and rapid response protocols.",
+  "estimated_minutes": 22,
+  "objectives": [
+    {
+      "id": "obj-ph-008-1",
+      "text": "Describe the readmission risk profile of heart failure patients"
+    },
+    {
+      "id": "obj-ph-008-2",
+      "text": "Explain the components of a transition-of-care program for CHF"
+    },
+    {
+      "id": "obj-ph-008-3",
+      "text": "Identify population-level strategies for hypertension control"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Heart failure (HF) affects 6.5 million Americans and is the #1 cause of hospitalization for adults over 65. The 30-day readmission rate for HF is approximately 25% — the highest of any major diagnosis. CMS penalizes hospitals with excess HF readmissions under the Hospital Readmissions Reduction Program (HRRP), creating strong financial incentives for population management programs.",
+      "type": "text"
+    },
+    {
+      "text": "CHF Transition of Care Programs",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The highest-risk period for HF patients is the 7–30 days following hospital discharge. Transition programs target this window:\n\n**Post-discharge phone call within 48 hours.** Nurses confirm medication reconciliation, review weight monitoring instructions (daily weight gain > 2 lbs = call your provider), and verify PCP follow-up scheduled.\n\n**7-day follow-up visit.** Studies show that 7-day PCP or cardiology follow-up reduces 30-day readmissions by 15–20%. Care managers proactively schedule these appointments before discharge.\n\n**Remote monitoring.** Daily weight, blood pressure, and symptom monitoring via connected devices, with automated alerts to care teams when thresholds are crossed.\n\n**Medication reconciliation.** Up to 40% of HF readmissions involve medication errors or non-adherence. Pharmacist-led medication reconciliation at discharge is a high-impact intervention.",
+      "type": "text"
+    },
+    {
+      "text": "Hypertension at Scale",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Controlling blood pressure in a population requires more than prescriptions:\n\n**Self-measured blood pressure (SMBP).** Providing patients with home BP monitors and coaching on self-monitoring doubles BP control rates compared to office-only monitoring (CDC evidence review).\n\n**Team-based care.** Pharmacist-led hypertension management — where clinical pharmacists adjust medications per protocol — consistently outperforms physician-only management for BP control.\n\n**Addressing therapeutic inertia.** Many patients have documented hypertension but never receive intensified therapy despite persistently elevated BP. Registries and panel management close this gap.\n\n**Community hypertension programs.** Barbershop BP screening (Black Barbershop Health Outreach Program), faith community nurse programs, and pharmacy-based BP checks extend reach into underserved communities.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:59.49618+00:00",
+  "updated_at": "2026-06-01T17:50:35.763597+00:00",
+  "sanity_slug": "heart-failure-hypertension-management"
+}

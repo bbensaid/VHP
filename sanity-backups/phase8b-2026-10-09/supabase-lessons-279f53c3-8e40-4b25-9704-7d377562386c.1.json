@@ -1,0 +1,60 @@
+{
+  "id": "279f53c3-8e40-4b25-9704-7d377562386c",
+  "track_id": "740f7b13-ca71-422c-b21b-1676739bdbc5",
+  "pillar": "economics",
+  "order": 3,
+  "slug": "patient-collections",
+  "title": "Patient Collections and Bad Debt",
+  "summary": "As patient financial responsibility grows, effective and compassionate patient collection strategies are a core revenue cycle competency.",
+  "estimated_minutes": 18,
+  "objectives": [
+    "Describe a tiered patient collection strategy from statement to collection agency",
+    "Explain charity care screening and financial assistance programs",
+    "Identify the CFPB and state law requirements for medical debt collection"
+  ],
+  "content_blocks": [
+    {
+      "body": "Patient balance collection follows a tiered approach:\n\n1. **Upfront collection** — Collect copays, prior balances, and estimates at time of service (highest ROI)\n2. **Statement cycle** — Typically 2–3 paper or electronic statements over 60–90 days\n3. **Early-out program** — Vendor-assisted, patient-friendly outreach (calls, texts, payment plans) at 30–60 days\n4. **Internal collections** — Staff-intensive follow-up for higher balances\n5. **External collection agency** — Final step for balances after 120+ days of failed internal collection\n6. **Bad debt write-off** — Formal write-off with documentation of collection efforts",
+      "type": "text",
+      "heading": "The Patient Collections Continuum"
+    },
+    {
+      "body": "In January 2025, the Consumer Financial Protection Bureau (CFPB) finalized a rule removing medical debt from credit reports. Additionally, the rule prohibits debt collectors from using credit reporting to coerce payment of medical debts. However, in July 2025 a federal court vacated the rule, so it never took effect; medical-debt credit reporting is now governed by a changing patchwork of state laws. Proactive financial counseling and payment plans remain the most reliable levers.",
+      "type": "callout",
+      "title": "CFPB Medical Debt Rules (2025)",
+      "variant": "key"
+    },
+    {
+      "body": "IRS 501(r) regulations require nonprofit hospitals to:\n- Have a written financial assistance policy (FAP) and publicize it\n- Limit charges to FAP-eligible patients to amounts generally billed (AGB) to insured patients\n- Screen patients for FAP eligibility before extraordinary collection actions (reporting to credit, lawsuits, wage garnishment)\n- Not charge FAP-eligible patients more than the AGB amount\n\nFinancial assistance programs (FAPs) should be viewed as both a compliance requirement and a community benefit investment — reducing bad debt while fulfilling the organization's charitable mission.",
+      "type": "text",
+      "heading": "Charity Care and Financial Assistance"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Annual US medical bad debt",
+          "value": "$88B",
+          "context": "KFF estimate; driven by rising patient financial responsibility and HDHP enrollment"
+        },
+        {
+          "label": "Adults with medical debt in 2022",
+          "value": "41%",
+          "context": "KFF survey; disproportionately affects lower-income and uninsured populations"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "patient collections",
+    "bad debt",
+    "charity care",
+    "CFPB",
+    "financial assistance"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:31:29.340515+00:00",
+  "updated_at": "2026-10-10T04:37:01.522154+00:00",
+  "sanity_slug": "patient-collections"
+}

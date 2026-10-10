@@ -1,0 +1,60 @@
+{
+  "id": "4084abb8-7712-4b26-9b3b-627b15128062",
+  "track_id": "97e99967-cfc8-4a05-a35f-98cc12c8e27c",
+  "pillar": "operations",
+  "order": 1,
+  "slug": "tl-why-change-management-matters",
+  "title": "Why Change Management Determines Transformation Success",
+  "summary": "The evidence base for healthcare payment reform is usually adequate. What fails is the organizational change process. This lesson frames the course: why analytically sound transformations still fail, what makes healthcare's change problem specifically harder than a corporate one, and what a statutory deadline changes about the whole exercise.",
+  "estimated_minutes": 22,
+  "objectives": [
+    "Explain why healthcare transformation more often fails from change-management gaps than analytical ones",
+    "State the PMI evidence on the cost of poor project performance and what a PMO changes about it",
+    "Identify at least three structural features that make healthcare change harder to lead than a typical corporate change program"
+  ],
+  "content_blocks": [
+    {
+      "body": "Healthcare transformation programs rarely fail because the underlying analysis was wrong. The financial case for value-based payment, the clinical case for care coordination, and the equity case for closing measured disparities are each well evidenced. What fails, far more often, is the organizational change process: the sequencing, pacing, and management of the human and institutional change that structural reform actually requires.",
+      "type": "text",
+      "heading": "The Execution Gap"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Lost per $1B in failed projects",
+          "value": "$135M",
+          "source": "PMI, Pulse of the Profession — unrecoverable loss on failed initiatives"
+        },
+        {
+          "label": "More projects on time/budget",
+          "value": "38%",
+          "source": "PMI — organizations with a PMO vs. those without one"
+        },
+        {
+          "label": "More projects fail outright",
+          "value": "67%",
+          "source": "PMI — organizations that treat project management as non-strategic"
+        }
+      ],
+      "heading": "The Cost of Skipping This"
+    },
+    {
+      "body": "Change management, project management, and portfolio management are related but distinct: project management delivers a defined scope on schedule and budget; program management coordinates related projects for benefits no single project could produce alone; portfolio management aligns the whole collection with strategy. Change management is the layer underneath all three — the discipline of managing how people and institutions actually adopt the new state.",
+      "type": "callout",
+      "heading": "Definitions That Matter",
+      "variant": "info"
+    }
+  ],
+  "tags": [
+    "change-management",
+    "transformation-leadership",
+    "PMO",
+    "project-management"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-09-22T19:10:29.707752+00:00",
+  "updated_at": "2026-09-22T19:42:10.8811+00:00",
+  "sanity_slug": "tl-why-change-management-matters"
+}

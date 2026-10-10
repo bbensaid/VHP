@@ -1,0 +1,443 @@
+{
+  "_createdAt": "2026-05-31T07:34:47Z",
+  "_id": "volume-to-value-financial-implications",
+  "_rev": "glqH7a4yvZFQerxZdKCXsT",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T07:34:47Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "When Doing the Right Thing Costs You Money"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Imagine a hospital that runs a brilliant program to keep heart-failure patients healthy at home. The program works: admissions for those patients drop sharply. Under fee-for-service, this clinical triumph is a financial disaster — every avoided admission is lost revenue, while the hospital’s fixed costs (the building, the staff, the equipment) remain. The hospital did exactly what good medicine demands and was punished for it by its own payment system. This is the central, uncomfortable truth of the volume-to-value transition, and it is the reason that transition is so financially treacherous."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Value-based care asks hospitals to deliver less of the high-margin, volume-driven care that fee-for-service rewards — fewer admissions, fewer readmissions, fewer unnecessary procedures — in exchange for payments tied to keeping populations healthy. But the shift does not happen overnight, and during the long in-between, hospitals must operate under two contradictory payment logics at once. The financial implications of that contradiction are the subject of this lesson."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is not abstract. It determines whether a hospital can afford to pursue value-based contracts, how fast it can move, and whether its mission to improve health aligns with or fights against its need to stay solvent. For a field built on the promise of paying for outcomes instead of volume, the messy economics of getting there are where most hospitals actually live."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: Under fee-for-service, reducing unnecessary care reduces revenue while fixed costs remain — so a hospital succeeding at value-based care can lose money on the very utilization it eliminated. Managing this contradiction during the transition is the core financial challenge of moving from volume to value."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Inpatient primary knee replacements dropped 21.2% year-over-year as procedures shifted to outpatient settings — a volume-to-value migration of revenue (Strata/Kaufman Hall)",
+          "label": "Inpatient Knee Replacements",
+          "value": "-21.2%"
+        },
+        {
+          "_key": "s2",
+          "context": "Hospitals can lose up to 3% of Medicare payments under the Hospital Readmissions Reduction Program — paying for the volume they fail to prevent (CMS)",
+          "label": "Medicare Readmission Penalty",
+          "value": "Up to 3%"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Two Canoes Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The transition’s defining metaphor is the \"two canoes\" problem: a hospital stands with one foot in the fee-for-service canoe and one foot in the value-based-care canoe, and the two canoes are drifting apart because their incentives point in opposite directions. Value-based contracts demand very different business and clinical practices than those that maximize fee-for-service revenue — yet with most income still anchored to volume, hospitals often cannot afford a wholesale pivot to cost-conscious care. They must straddle both worlds, and straddling is precarious."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The financial mechanics of the straddle are genuinely hard to model. A health system CFO asked \"what is the financial impact of reducing chronic-disease admissions by 25%?\" faces a brutal calculation: the saved direct care costs are real, but so is the lost reimbursement, and the overhead that those admissions used to cover does not disappear. The published research is blunt about the consequence — because preventing a hospitalization leaves overhead costs uncovered, the loss of reimbursement revenue can actually mitigate a hospital’s incentive to reduce readmissions in the first place. The payment system fights the clinical goal."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2w1",
+      "_type": "warningBlock",
+      "message": "Value-based contracts return a portion of the savings a hospital generates — but that share frequently does not fully offset the fee-for-service revenue lost when admissions and procedures fall. A hospital can improve care, generate system-wide savings, and still come out behind financially if it has not shifted enough of its revenue to value-based payment.",
+      "title": "Shared Savings Often Don’t Cover the Loss"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Where the Revenue Goes: The Migration of Care"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The volume-to-value shift is not only about eliminating care — it is also about moving it. Procedures that once required expensive inpatient stays are migrating to lower-cost outpatient settings, and the financial footprint follows. Inpatient primary knee replacements fell 21.2% year over year as those cases moved to outpatient sites, and average length of stay has been declining. Each of these shifts trims the high-revenue inpatient business that hospitals were built around, even when overall volumes remain healthy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Paradoxically, this is happening during a period of strong hospital revenue. Through 2024, hospitals posted 20 consecutive months of year-over-year revenue increases, with outpatient revenue surging 8.7% — outpacing inpatient growth of 4.3% — and full-year median operating margins holding above 4.5% and reaching 6% by December. The headline numbers look healthy, but underneath them the revenue base is migrating from inpatient to outpatient and from volume toward value, reshaping where and how hospitals earn their money."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "A teaching hospital invests in a care-transitions program that successfully prevents readmissions. Clinically and ethically, this is unambiguously good — and under the Hospital Readmissions Reduction Program, avoiding readmissions also dodges penalties of up to 3% of Medicare payments.\n\nBut under fee-for-service, each prevented readmission is also a lost admission: revenue the hospital would have collected, gone, while the fixed overhead remains. Whether the program helps or hurts the hospital financially depends entirely on its payment mix — how much of its revenue is value-based (rewarding the prevention) versus fee-for-service (penalizing the lost volume). The same clinical action is a financial win or loss depending on which canoe carries more of the hospital’s weight.",
+      "title": "The Avoided Readmission Paradox"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Managing the Straddle: Tipping Points and Bridges"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "If straddling two canoes is dangerous, how do hospitals survive it? The strategic answer centers on the concept of a tipping point: the share of revenue under value-based contracts at which it becomes financially rational to fully embrace cost-conscious care. Below that threshold, a hospital that aggressively cuts volume bleeds fee-for-service revenue faster than its value-based payments grow. Above it, reducing unnecessary utilization finally rewards the hospital more than it costs. Much of value-based strategy is about deliberately managing the pace of the shift so the two sides cross over without the hospital capsizing in between."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Hospitals use several bridges to tie the canoes closer together during the crossing. Expanded fee-for-service reimbursement — new billing codes for care coordination, remote patient monitoring, and chronic-care management — lets a hospital get paid for value-promoting activities even while still in the fee-for-service world, acting like bungee cords that keep the canoes from drifting too far apart. Hospitals also sequence their risk-taking, starting with upside-only shared savings before accepting downside risk, and concentrate value-based efforts on the populations and service lines where they can succeed first."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4steps1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Determine what share of revenue is fee-for-service versus value-based — the position between the two canoes.",
+          "title": "Assess the payment mix"
+        },
+        {
+          "_key": "step2",
+          "description": "Bill new care-coordination and monitoring codes to get paid for value activities while still in fee-for-service.",
+          "title": "Use transitional bridges"
+        },
+        {
+          "_key": "step3",
+          "description": "Move from upside-only shared savings toward two-sided risk as value-based revenue grows.",
+          "title": "Sequence the risk"
+        },
+        {
+          "_key": "step4",
+          "description": "Pace the shift so value-based payments grow fast enough to offset declining fee-for-service volume.",
+          "title": "Manage toward the tipping point"
+        }
+      ],
+      "title": "Navigating the Volume-to-Value Transition"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why This Is the Hardest Problem in Hospital Finance"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The volume-to-value transition is uniquely difficult because it asks an organization to undermine its current business model in order to build its future one — while keeping the lights on throughout. Every other industry that has been disrupted got to fail and be replaced; hospitals must transform themselves without interruption, because the community cannot go without a hospital while it figures out its finances. The two-canoes problem is not a temporary inconvenience but a structural feature of a decades-long, incomplete transition."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "Moving from volume to value is like a store that earns most of its money selling cigarettes being told its future is selling gym memberships. As long as cigarettes pay the bills, every successful fitness program cannibalizes the store’s own revenue. It cannot simply stop selling cigarettes (it would go bankrupt) nor ignore the future (memberships are where the market is going). It has to grow the new business fast enough to replace the old one before the old one is taken away — exactly the tightrope hospitals walk.",
+      "concept": "The volume-to-value financial transition"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "External pressure is compressing the timeline. Hospitals are bracing for major revenue hits beginning in 2027 from provisions of the One Big Beautiful Bill Act (OBBBA), pushing many to cut expenses and rethink their revenue base now. As fee-for-service reimbursement grows less sustainable and government payments tighten, the calculus increasingly favors moving toward value — not because value-based contracts are lucrative, but because the volume-based alternative is eroding. The two canoes are being pulled toward the value side whether hospitals are ready or not."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For the student of hospital finance, this lesson reframes everything that came before. Payer mix, margins, cost accounting, and capital structure all take on new meaning when revenue can be reduced by success rather than failure. The hospitals that navigate the transition will be those that understand their cost structure precisely (hence the emphasis on activity-based costing), manage the pace of risk deliberately, and build the population-health capabilities that make value-based payment a strength rather than a threat. The next lessons — on shared savings and risk, and on the business case for population health — are about exactly how to do that."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "Under fee-for-service, reducing unnecessary care (admissions, readmissions, procedures) cuts revenue while fixed overhead remains — so a hospital can succeed clinically at value-based care and lose money doing it.",
+        "The \"two canoes\" problem describes hospitals straddling fee-for-service and value-based payment simultaneously, with one foot in each canoe as the two drift apart because their incentives oppose each other.",
+        "Research shows that because a prevented hospitalization leaves overhead uncovered, the loss of reimbursement can actually mitigate a hospital’s incentive to reduce readmissions — the payment system fighting the clinical goal.",
+        "Shared savings frequently fail to fully offset the fee-for-service revenue lost from reduced utilization, so a hospital can generate system savings and still come out behind if too little of its revenue is value-based.",
+        "Care is migrating as well as shrinking — inpatient knee replacements fell 21.2% year over year to outpatient settings — even amid strong overall revenue (20 straight months of growth, outpatient up 8.7%, margins reaching 6% in late 2024).",
+        "Hospitals manage the straddle by working toward a tipping point: the share of value-based revenue at which cutting unnecessary volume finally rewards more than it costs.",
+        "Transitional bridges — new billing codes for care coordination, remote monitoring, and chronic-care management, plus sequencing from upside-only to two-sided risk — tie the canoes together during the crossing.",
+        "The transition is uniquely hard because hospitals must undermine their current business model to build the future one without interruption, and external pressures like OBBBA revenue cuts beginning in 2027 are compressing the timeline."
+      ]
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] RLDatix: \"One foot in two canoes: why the shift to value-based care demands leadership at every level\" — https://www.rldatix.com/en-nam/resources/one-foot-in-two-canoes-why-the-shift-to-value-based-care-demands-leadership-at-every-level/ — the two-canoes problem and the opposing incentives of fee-for-service and value-based care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Health Data Management: \"Two canoes, one canoeist: The accelerated transition to value-based care\" — https://www.healthdatamanagement.com/articles/two-canoes-one-canoeist-the-accelerated-transition-to-value-based-care — the CFO’s difficulty modeling the financial impact of reducing admissions; expanded FFS codes as bridges between the canoes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] PMC: \"The Financial Impact of an Avoided Readmission for Teaching and Safety-Net Hospitals Under Medicare’s Hospital Readmission Reduction Program\" — https://pmc.ncbi.nlm.nih.gov/articles/PMC6656617/ — avoided readmissions leave overhead uncovered, mitigating incentives to reduce them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] CMS: \"Hospital Readmissions Reduction Program\" — https://www.cms.gov/medicare/quality/value-based-programs/hospital-readmissions — penalties of up to 3% of Medicare payments for excess readmissions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Strata Decision Technology / Kaufman Hall: \"U.S. Hospitals See Financial Performance Stabilize Throughout 2024\" — https://www.stratadecision.com/press-release/us-hospitals-see-financial-performance-stabilize-throughout-2024-according-new-strata — inpatient knee replacements -21.2%, outpatient revenue +8.7%, 20 months of revenue growth, margins reaching 6%."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] HFMA: \"Hospitals reached steadier ground financially as they moved into 2024\" — https://www.hfma.org/cost-effectiveness-of-health/financial-sustainability/hospitals-reached-steadier-ground-financially-as-they-moved-into-2024/ — fee-for-service sustainability concerns and the run-up to OBBBA revenue impacts beginning in 2027."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "hospital-finance",
+  "order": 13,
+  "slug": {
+    "_type": "slug",
+    "current": "volume-to-value-financial-implications"
+  },
+  "title": "Transitioning from Volume to Value: The Financial Implications"
+}

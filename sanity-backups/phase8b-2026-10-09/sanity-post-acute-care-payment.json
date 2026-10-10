@@ -1,0 +1,549 @@
+{
+  "_createdAt": "2026-06-02T16:28:17Z",
+  "_id": "post-acute-care-payment",
+  "_rev": "vgbIiwZpnxA2FcYEhjPZcw",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T16:28:17Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The World Beyond the Hospital"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "When a Medicare patient leaves the hospital, their care often continues elsewhere — in a skilled nursing facility for rehabilitation, at home with a visiting nurse and therapist, or in an inpatient rehabilitation facility for intensive therapy. This is post-acute care (PAC), and it is one of the most consequential and most scrutinized areas of Medicare spending."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Each post-acute setting has its own prospective payment system, all descended from the same 1983 IPPS logic: pay a predetermined amount per episode or period rather than per service. But because so much of post-acute care is therapy-driven, these systems faced a recurring problem — the old rules paid more when providers delivered more therapy, regardless of whether the patient needed it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "That perverse incentive is the thread running through every recent post-acute reform. In setting after setting, CMS has rebuilt payment to reward clinical characteristics and patient needs instead of raw therapy volume. This lesson walks through the three main settings and the reforms that reshaped them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Post-acute care is the care that follows a hospital stay: skilled nursing facilities (SNF), home health, and inpatient rehabilitation facilities (IRF). The defining payment story is the shift from rewarding therapy volume to rewarding patient need."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Skilled Nursing Facilities: From RUG-IV to PDPM"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Skilled nursing facilities are paid a per-diem (daily) rate under the SNF Prospective Payment System. For nearly two decades that rate was set by the Resource Utilization Groups, version IV (RUG-IV), which based payment primarily on the volume of therapy minutes a patient received — more therapy meant more money, largely independent of the patient’s actual clinical needs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This created an obvious incentive to over-deliver therapy. On October 1, 2019, CMS replaced RUG-IV with the Patient-Driven Payment Model (PDPM). PDPM ties payment to clinically relevant patient characteristics — using ICD-10 diagnoses to sort residents into one of ten clinical categories — rather than to the sheer quantity of therapy provided."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "PDPM sets the per-diem from six payment components, five of which are case-mix adjusted based on patient characteristics (such as physical therapy, occupational therapy, speech-language pathology, nursing, and non-therapy ancillaries), plus a non-case-mix component. By breaking payment into need-based components, PDPM aimed to pay more accurately and reduce the administrative burden of constant therapy-minute tracking."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "RUG-IV (pre-Oct 2019)",
+        "points": [
+          "Payment driven mainly by therapy minutes",
+          "More therapy delivered = higher payment",
+          "Incentive to over-provide therapy",
+          "Heavy therapy-minute documentation burden"
+        ]
+      },
+      "right": {
+        "label": "PDPM (Oct 1, 2019+)",
+        "points": [
+          "Payment driven by clinical characteristics",
+          "ICD-10 diagnosis sorts patients into clinical categories",
+          "Six components, five case-mix adjusted",
+          "Pays for patient need, not therapy volume"
+        ]
+      },
+      "title": "SNF Payment: RUG-IV vs. PDPM"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Home Health: From 60-Day Episodes to PDGM"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Home health agencies were historically paid for 60-day episodes of care, with payment heavily influenced by therapy thresholds — the more therapy visits delivered, the higher the payment tier. As with SNFs, this rewarded volume over need."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Bipartisan Budget Act of 2018 mandated reform, and on January 1, 2020, CMS implemented the Patient-Driven Groupings Model (PDGM). PDGM made two major changes: it cut the unit of payment from a 60-day episode to a 30-day period, and it eliminated therapy thresholds entirely, shifting payment toward clinical characteristics drawn from the OASIS assessment and claims data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "PDGM classifies each 30-day period into one of 432 case-mix groups (home health resource groups). It also refined the Low-Utilization Payment Adjustment (LUPA): instead of a single visit threshold, each of the 432 groups has its own threshold below which the period is paid per-visit rather than as a full case. The goal, once again, was to remove the incentive to over-provide therapy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Payment unit shrank from a 60-day episode to a 30-day period of care.",
+          "title": "Define a 30-day period"
+        },
+        {
+          "_key": "step2",
+          "description": "Use the OASIS assessment and claims to capture patient characteristics, not therapy counts.",
+          "title": "Collect clinical data"
+        },
+        {
+          "_key": "step3",
+          "description": "Classify the period into one of 432 home health resource groups.",
+          "title": "Assign a case-mix group"
+        },
+        {
+          "_key": "step4",
+          "description": "If visits fall below that group’s threshold, pay per-visit instead of the full period rate.",
+          "title": "Check the LUPA threshold"
+        }
+      ],
+      "title": "How PDGM Pays a Home Health Period"
+    },
+    {
+      "_key": "s3sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "SNF payment moved to patient-driven model (CMS)",
+          "label": "PDPM Replaced RUG-IV",
+          "value": "Oct 1, 2019"
+        },
+        {
+          "_key": "s2",
+          "context": "Home health reform under BBA 2018 (CMS / Federal Register)",
+          "label": "PDGM Took Effect",
+          "value": "Jan 1, 2020"
+        },
+        {
+          "_key": "s3",
+          "context": "Down from 60-day episodes under PDGM",
+          "label": "Home Health Payment Period",
+          "value": "30-day"
+        },
+        {
+          "_key": "s4",
+          "context": "Each with its own LUPA threshold (CMS)",
+          "label": "PDGM Case-Mix Groups",
+          "value": "432"
+        }
+      ]
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Inpatient Rehabilitation Facilities and the 60% Rule"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Inpatient rehabilitation facilities (IRFs) provide intensive, hospital-level rehabilitation — for example, after a stroke, spinal-cord injury, or major joint replacement. IRFs are paid under their own prospective payment system that classifies patients into Case-Mix Groups (CMGs) using the IRF Patient Assessment Instrument (IRF-PAI), with each CMG carrying a relative weight reflecting expected resource use."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A distinctive feature governs which facilities even qualify as IRFs: the \"60 percent rule.\" To be paid under the IRF PPS rather than as a regular acute-care hospital, at least 60 percent of an IRF’s patients must require intensive rehabilitation for one or more of 13 specified conditions listed in federal regulation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 60 percent rule exists to keep the IRF benefit targeted at patients who genuinely need intensive inpatient rehabilitation, distinguishing true rehab hospitals from facilities that might otherwise reclassify to capture higher payment. Facilities that fail the threshold are paid under the standard inpatient hospital system instead."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "SNF, home health, and IRF each have different payment systems, intensity levels, and eligibility rules. Where a patient goes after the hospital can dramatically change Medicare’s cost and the patient’s out-of-pocket exposure — which is why discharge planning is a major focus of value-based programs.",
+      "title": "Post-acute settings are not interchangeable"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Post-Acute Payment Is a Battleground"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Post-acute care is one of the largest sources of variation in Medicare spending. Two patients with the same hospital diagnosis can generate vastly different total costs depending on whether they go home, to a SNF, or to an IRF — and historically much of that variation reflected payment incentives more than clinical need."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "That is exactly why PDPM and PDGM both deliberately decoupled payment from therapy volume. By paying for patient characteristics instead, CMS aimed to neutralize the incentive to deliver unnecessary therapy and to make spending track actual need."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Post-acute care is also central to bundled payments and accountable care. When a provider is held accountable for the total cost of an episode — say, a joint replacement and the 90 days after — post-acute spending becomes the biggest lever they can pull. Understanding how SNF, home health, and IRF payment works is therefore essential to understanding value-based care, the focus of later lessons."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5q1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5q1s",
+          "_type": "span",
+          "marks": [],
+          "text": "In post-acute care, the question driving every recent reform is the same: are we paying for how much therapy was delivered, or for what the patient actually needed?"
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Post-acute care — SNF, home health, and IRF — is the care that follows a hospital stay and a major, highly scrutinized area of Medicare spending.",
+        "Each post-acute setting has its own prospective payment system descended from the 1983 IPPS logic of paying per episode rather than per service.",
+        "On October 1, 2019, the SNF Patient-Driven Payment Model (PDPM) replaced RUG-IV, basing per-diem payment on clinical characteristics instead of therapy minutes.",
+        "PDPM uses six payment components (five case-mix adjusted) and ICD-10 diagnoses to sort residents into ten clinical categories.",
+        "On January 1, 2020, the home health Patient-Driven Groupings Model (PDGM) cut the payment period from 60 to 30 days and eliminated therapy thresholds, using 432 case-mix groups.",
+        "IRFs are paid via Case-Mix Groups from the IRF-PAI and must satisfy the \"60 percent rule\" — at least 60% of patients needing intensive rehab for one of 13 conditions.",
+        "The unifying theme of PDPM and PDGM is paying for patient need rather than therapy volume, which is also central to bundled payments and value-based care."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Both PDPM and PDGM were designed to remove the old incentive to over-provide therapy. They shifted payment toward clinically relevant patient characteristics (diagnoses, functional status, OASIS data) and away from raw therapy minutes/thresholds — they did not increase therapy-based pay, return to cost-based reimbursement, or merge the two systems.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "They increased payment for every additional therapy minute delivered"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "They tied payment to patient clinical characteristics rather than therapy volume"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "They eliminated prospective payment in favor of cost-based reimbursement"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "They merged SNF and home health into a single payment system"
+        }
+      ],
+      "question": "What is the central change that both the SNF PDPM (2019) and the home health PDGM (2020) made to Medicare post-acute payment?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Medicare issues FY2019 payment & policy changes for SNFs — CMS — https://www.cms.gov/newsroom/fact-sheets/medicare-issues-fiscal-year-2019-payment-policy-changes-skilled-nursing-facilities — PDPM replaced RUG-IV effective Oct 1, 2019; six components, clinical categories."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] SNF PPS Patient-Driven Payment Model — Noridian — https://med.noridianmedicare.com/web/jfa/provider-types/snf/snf-pdpm — PDPM structure, ICD-10 clinical categories, case-mix components."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CY 2020 Home Health PPS / PDGM — CMS / Federal Register — https://www.federalregister.gov/documents/2019/11/08/2019-24026/ — PDGM effective Jan 1, 2020, 30-day periods, therapy thresholds eliminated (BBA 2018)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Home Health Patient-Driven Groupings Model — CMS — https://www.cms.gov/medicare/payment/prospective-payment-systems/home-health/home-health-patient-driven-groupings-model — 432 case-mix groups, OASIS, per-group LUPA thresholds."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Inpatient Rehabilitation Facilities Payment Basics — MedPAC — https://www.medpac.gov/wp-content/uploads/2024/10/MedPAC_Payment_Basics_25_IRF_FINAL_SEC.pdf — CMGs from IRF-PAI, 60% rule, 13 conditions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Inpatient Rehabilitation Facility PPS — CMS — https://www.cms.gov/medicare/payment/prospective-payment-systems/inpatient-rehabilitation — IRF PPS classification and 60% compliance threshold."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicare-fundamentals",
+  "order": 6,
+  "slug": {
+    "_type": "slug",
+    "current": "post-acute-care-payment"
+  },
+  "title": "Post-Acute Care Payment: SNF, Home Health, and PDPM"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "a4c785f0-a3f2-41e5-95a4-bb68a073f26f",
+  "quiz_id": "86c1e184-4b5e-4a2b-9417-e427a62dd078",
+  "order": 3,
+  "question_type": "single_choice",
+  "question": "What ERA adoption rate should best-practice organizations target?",
+  "explanation": "Best-practice organizations target 90%+ ERA adoption to minimize manual EOB processing. The remaining paper EOBs typically come from smaller payers or workers' compensation carriers that do not support 835 transactions.",
+  "points": null
+}

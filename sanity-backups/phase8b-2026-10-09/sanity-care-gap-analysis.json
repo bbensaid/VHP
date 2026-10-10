@@ -1,0 +1,518 @@
+{
+  "_createdAt": "2026-06-01T17:46:35Z",
+  "_id": "care-gap-analysis",
+  "_rev": "IOfxRsA0kr16lzZkUtKL7L",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T17:46:35Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Turning Risk Into a To-Do List"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk stratification tells you who needs attention; predictive analytics sharpens who is about to need it. But \"this patient is high-risk\" is not yet an action. Care gap analysis is what turns risk into a concrete, closeable list of specific things to do for specific patients — it is where population health becomes operational."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A care gap is, simply, a missed service: a clinical service a patient is due for, based on guidelines and quality measures, that has not happened. A diabetic patient overdue for an eye exam. A 55-year-old who has never had a colonoscopy. A heart-failure patient not on a guideline-recommended medication. Each gap is a precise, actionable item — find it, close it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is the workhorse activity of day-to-day population health. While risk models and dashboards set strategy, care gap closure is the relentless operational grind that actually improves measured quality and outcomes: identify every open gap across the panel, and systematically close them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A care gap is a needed clinical service a patient is due for but has not received. Care gap analysis turns abstract risk into a concrete, closeable to-do list — the workhorse operational activity of population health."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Care Gaps and Quality Measures"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Care gaps are defined against quality measures — most prominently HEDIS, the standardized measure set from the National Committee for Quality Assurance (covered in depth in the Clinical Quality Measurement course). A quality measure defines what should happen for a population; a care gap is the missing piece for an individual patient measured against it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The relationship is precise. Recall that a HEDIS measure has a denominator (everyone eligible for the service) and a numerator (everyone who received it). A care gap is exactly the difference: an eligible patient in the denominator who is NOT yet in the numerator. Closing a gap moves that patient into the numerator and raises the measure rate. Care gap analysis is, in effect, HEDIS improvement done one patient at a time."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Gaps span the full range of measures: cancer screenings, immunizations, chronic-disease management (like comprehensive diabetes care, which bundles HbA1c testing, blood pressure control, eye exams, and nephropathy screening), behavioral health follow-up, and more. As open gaps accumulate across a population, measured quality falls; closing them is how the population's quality scores rise."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "A guideline-based measure (e.g., diabetic eye exam in the past year).",
+          "title": "Start with a quality measure"
+        },
+        {
+          "_key": "step2",
+          "description": "All patients who should receive the service.",
+          "title": "Identify the eligible denominator"
+        },
+        {
+          "_key": "step3",
+          "description": "Eligible patients not yet in the numerator = the open care gaps.",
+          "title": "Find who is missing (the gap)"
+        },
+        {
+          "_key": "step4",
+          "description": "Deliver and document the service, moving the patient into the numerator.",
+          "title": "Close the gap"
+        }
+      ],
+      "title": "How a Care Gap Is Defined"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Closure Workflow"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Identifying gaps is necessary but useless without a workflow to close them. Care gap closure is an end-to-end process: identify patients overdue for services, reach out to them, schedule appointments, deliver the service, and document it so the gap actually registers as closed. Each step can fail, so each needs deliberate design."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two workflow moments are especially high-leverage. The first is pre-visit planning: before a patient's scheduled visit, the team reviews their open gaps and pre-populates them so the provider can address them during the visit they are already having. The second is point-of-care alerts: surfacing a patient's open gaps in the EHR while the provider is with them. Evidence shows pre-visit gap alerts increase in-visit gap closure by about 34 percent — catching the patient who is already in the building is far easier than chasing one who is not."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For gaps that cannot be closed during an existing visit, proactive outreach campaigns reach patients who are not coming in — the whole-population behavior that defines population health. The mechanics matter: outreach that includes a direct scheduling link converts roughly three times better than outreach asking patients to call the office. Reducing friction is as important as sending the reminder."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Increase in in-visit gap closure (industry)",
+          "label": "Lift From Pre-Visit Alerts",
+          "value": "34%"
+        },
+        {
+          "_key": "s2",
+          "context": "Share of open gaps closeable via effective outreach (NCQA analysis)",
+          "label": "Closeable by Outreach Alone",
+          "value": "~63%"
+        },
+        {
+          "_key": "s3",
+          "context": "Outreach with scheduling link vs. \"call the office\" (industry)",
+          "label": "Direct-Link Conversion",
+          "value": "3x"
+        },
+        {
+          "_key": "s4",
+          "context": "Moves the patient into the measure numerator",
+          "label": "What Closure Does",
+          "value": "Numerator"
+        }
+      ]
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Closing Gaps Pays"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Care gap closure is not just good medicine — it is directly tied to revenue and reputation through quality programs. Closing gaps improves HEDIS scores, UDS measures (for community health centers), and CMS Star Ratings, all of which feed value-based contract revenue and quality bonuses (the MIPS, ACO, and Star Ratings mechanics from the Clinical Quality Measurement course)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This creates a powerful alignment: the same activity that improves a patient's health — getting them their overdue screening or controlling their chronic disease — also raises the organization's quality scores and earns it more under value-based payment. Care gap closure is one of the cleaner places in health care where doing right by the patient and doing well financially point in the same direction."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Note the honest tension, though: because gaps are tied to bonuses, there is a risk of \"teaching to the test\" — chasing the measured gaps while ignoring unmeasured needs. Good programs treat gap closure as a floor (the minimum, guideline-based care everyone deserves) rather than the ceiling of what they do for patients. The metric is a means to better health, not the end in itself."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "A diabetic patient is in the denominator for several gaps at once: HbA1c testing, blood-pressure control, a retinal eye exam, and nephropathy screening. A care-gap report flags exactly which are open.\nDuring a scheduled visit, point-of-care alerts prompt the team to draw the overdue HbA1c and order the eye exam; an outreach text with a scheduling link gets the patient booked for the screening they keep missing. Each closed gap improves the patient's diabetes control AND the organization's comprehensive-diabetes-care measure.",
+      "title": "Comprehensive Diabetes Care Gaps"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Doing Gap Analysis Well"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Effective care gap analysis rests on the foundations from earlier lessons. It needs solid data infrastructure (a gap is only real if the data is complete — out-of-network care the EHR cannot see can create false gaps for services that actually happened). It uses risk stratification to prioritize (close the highest-risk patients' gaps first). And it depends on accurate documentation and coding so closed gaps actually register."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The operational best practices are concrete: maintain an up-to-date registry of open gaps, run daily huddles and pre-visit planning so the team knows each day's gap opportunities, surface point-of-care alerts to close gaps during existing visits, and run frictionless outreach (direct scheduling links) for the patients who are not coming in. Automation increasingly handles the identification and outreach at scale."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The throughline is that care gap analysis is where population health's strategy meets daily execution. The risk models and predictions point the way, but it is the steady, systematic closing of specific gaps for specific patients — visit by visit, outreach by outreach — that actually moves a population's health and quality scores. The next module turns to the chronic-disease programs where much of this gap closure concentrates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "Care gaps depend entirely on data completeness. If a patient got a screening out-of-network and your EHR cannot see it, you will chase a \"gap\" that does not exist — wasting effort and annoying the patient. Solid data integration (claims + clinical + HIE) is what makes gap lists trustworthy.",
+      "title": "A Gap Is Only Real if the Data Is Complete"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "A care gap is a needed, guideline-based clinical service a patient is due for but has not received; care gap analysis turns risk into a concrete, closeable to-do list.",
+        "Care gaps are defined against quality measures (especially HEDIS): a gap is an eligible patient in the denominator who is not yet in the numerator.",
+        "Closing a gap moves the patient into the numerator and raises the measure rate — care gap closure is HEDIS improvement done one patient at a time.",
+        "The closure workflow runs identify → outreach → schedule → deliver → document; pre-visit planning and point-of-care alerts are especially high-leverage (alerts lift in-visit closure ~34%).",
+        "Proactive outreach reaches patients not coming in; about 63% of gaps are closeable by outreach alone, and direct scheduling links convert ~3x better than \"call the office.\"",
+        "Closing gaps improves HEDIS, UDS, and CMS Star Ratings and earns value-based revenue, aligning good care with good finances — but should be treated as a floor, not a ceiling.",
+        "Good gap analysis depends on complete data (to avoid false gaps), risk stratification (to prioritize), and accurate documentation (so closed gaps register)."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "A quality measure has a denominator (everyone eligible for a service) and a numerator (everyone who received it). A care gap is precisely the difference for an individual: a patient who is eligible (in the denominator) but has not yet received the service (not in the numerator). Closing the gap delivers the service and moves the patient into the numerator, raising the measure rate — HEDIS improvement done one patient at a time.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Any patient who has ever been diagnosed with a chronic disease"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "An eligible patient in a measure's denominator who has not yet received the service (not in the numerator) — the missing service for that individual"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "A billing error on a submitted claim"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "A patient who is not enrolled in any insurance"
+        }
+      ],
+      "question": "In terms of quality measures, what exactly is a \"care gap\"?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] What Are Care Gaps in Healthcare? A Plain-Language Guide (Linear Health) — https://linear.health/blog/what-are-care-gaps-in-healthcare — care gap definition; relationship to quality measures and closure"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] HEDIS and Care Gaps (AmeriHealth Caritas) — https://www.amerihealthcaritasdc.com/provider/resources/hedis-and-care-gaps — gap as denominator-minus-numerator; comprehensive diabetes care measures"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Daily Huddles, Pre-Visit Planning and Care-Gap Closure (MGMA) — https://www.mgma.com/articles/daily-huddles-pre-visit-planning-care-gap-closure-quality — pre-visit planning and workflow integration"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Closing Care Gaps at the Point of Care (Veradigm) — https://veradigm.com/closing-gaps-at-the-point-of-care/ — point-of-care alerts; ~34% lift in in-visit closure"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Care Gap Closure Automation (Linear Health) — https://linear.health/care-gap-closure-automation — ~63% closeable by outreach; direct scheduling links 3x conversion; end-to-end workflow"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Closing Care Gaps to Achieve Quality Goals (FRG Systems) — https://frgsystems.com/healthcare-finance-news/closing-care-gaps-part-1 — gap closure impact on HEDIS, Stars, and value-based revenue"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "population-health-management",
+  "order": 6,
+  "slug": {
+    "_type": "slug",
+    "current": "care-gap-analysis"
+  },
+  "title": "Care Gap Analysis and Quality Metrics"
+}

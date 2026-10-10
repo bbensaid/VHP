@@ -1,0 +1,378 @@
+{
+  "_createdAt": "2026-09-22T19:15:06Z",
+  "_id": "tl-kotters-eight-steps",
+  "_rev": "LCntMInbokDNzSR9NF5I75",
+  "_type": "academyModule",
+  "_updatedAt": "2026-09-22T19:15:06Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A Corporate Model With a Healthcare Track Record"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "John Kotter published his eight-step change model in \"Leading Change\" (Harvard Business School Press, 1996) after studying more than 100 corporate transformation efforts and finding a consistent pattern in why most of them fell short. The steps are: create urgency, form a guiding coalition, develop a vision, communicate the vision, remove obstacles, create short-term wins, sustain acceleration, and institute the change in culture and systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Nearly thirty years after publication, the model has moved well beyond its corporate origins and now has a real healthcare research literature behind it — not case studies written by consultants, but independently designed and published quality-improvement and health-services research. This lesson uses two of those published applications directly, rather than treating the framework as a piece of management theory imported without evidence."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Kotter's Eight Steps: (1) create urgency, (2) form a guiding coalition, (3) develop a vision, (4) communicate the vision, (5) remove obstacles, (6) create short-term wins, (7) sustain acceleration, (8) institute the change in culture and systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Steps 1–4: What Changes Under a Mandatory Deadline"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Mandatory reform changes what several of the early steps mean in practice. Step 1, create urgency, is not a persuasion exercise when a legislature has already set a statutory deadline — the urgency exists whether or not leadership manufactures it. The analytical task shifts from creating urgency to presenting already-real urgency in terms specific and credible enough to produce organizational action rather than paralysis or denial. A public, well-documented financial presentation showing exactly how fragile a hospital system's finances are tends to do this far better than a general appeal to the importance of change."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Step 2, form a guiding coalition, is where the most consequential healthcare-specific risk concentrates. A coalition built only from administrative and financial leadership will produce a transformation plan that clinical staff can quietly decline to implement, regardless of how legally binding the underlying mandate is — because clinical decision-making authority in a hospital sits with medical staff governance, not the administrative org chart. Step 3, develop a vision, has to be specific enough to guide real decisions: an aspiration like \"high-quality, affordable, equitable care for everyone\" cannot be operationalized, while a specific target — a named percentage of patients in a coordinated-care model, a specific quality-measure benchmark, a specific network design — can be. Step 4, communicate the vision, has to reach several genuinely distinct audiences — clinical staff, administrators, the community, legislators, payers — each of whom needs the message calibrated to what they actually decide."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex1",
+      "_type": "exampleBlock",
+      "content": "Researchers studying a federally qualified health center in rural Kentucky applied Kotter's eight-step framework to understand how the clinic implemented a proactive-office-encounter model aimed at closing preventive-care gaps and reducing health disparities, and published the analysis in a peer-reviewed case study. The study found clear evidence of Steps 1 through 7 in the clinic's actual implementation process — urgency was established, a coalition formed, a vision developed and communicated, obstacles removed, and short-term wins produced and sustained. Step 8, institutionalizing the change in the clinic's permanent culture and systems, was the one area the researchers identified as still needing work at the time of publication — a finding that previews this lesson's later point about which step healthcare change efforts most often fail to complete.",
+      "title": "A Rural Kentucky Federally Qualified Health Center"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Steps 5–8: Where Reform Efforts Actually Break"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Step 5, remove obstacles, means clearing the barriers within the coalition's actual control — administrative complexity like prior-authorization requirements or certificate-of-need processes, organizational silos between departments that never share data, and contracting structures that still financially reward volume even after a value-based strategy has been announced on paper. Step 6, create short-term wins, requires results that are genuine, visible, and clearly attributable to the transformation effort — not cherry-picked metrics or coincidental improvements that would have happened anyway. Step 7, sustain acceleration, is specifically about surviving the multi-year span most healthcare reforms require, across multiple budget cycles, at least one election cycle, and the inevitable setbacks that occur along the way."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex2",
+      "_type": "exampleBlock",
+      "content": "A prospective, longitudinal quality-improvement study applied Kotter's eight-step model to hand-hygiene compliance in an intensive care unit over 41 months and published the results. Compliance rose from 35.71% at baseline to 87.75% by the end of the study period — an increase of roughly 146%. The researchers attributed the result specifically to the model's systematic structure: it changed how ICU staff perceived hand hygiene as a practice and built an environment that both advocated for and sustained the improved behavior over more than three years, rather than producing a short-lived spike immediately after a training session.",
+      "title": "A 41-Month ICU Hand-Hygiene Improvement Study"
+    },
+    {
+      "_key": "s3w1",
+      "_type": "warningBlock",
+      "message": "Announcing a metric as a transformation success when it was not actually caused by the transformation — or when it reflects a small, favorable subgroup rather than the whole population — tends to be noticed by exactly the staff whose buy-in the win was meant to build, and it damages trust in every subsequent claim of progress.",
+      "title": "A \"Short-Term Win\" That Is Not Genuine Backfires"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Step Healthcare Skips"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4an1",
+      "_type": "analogyBlock",
+      "analogy": "Institutionalizing a change is like converting a temporary detour into the new permanent road. The detour sign, the barriers, and the construction crew are all Steps 1 through 7 — visible, attention-getting, and clearly temporary. Institutionalization is quietly repaving the detour into the map itself, so that ten years later a new driver has no idea a different road ever existed. Most organizations tear down the detour signs the moment traffic starts flowing smoothly, long before the new route has actually become \"just how people get there.\"",
+      "concept": "Kotter's Step 8 — instituting change in organizational culture and systems"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Step 8 is the step with no natural finish line to celebrate. Steps 1 through 7 each have a visible event attached — a launch, an early win, a period of acceleration. Institutionalization is instead the absence of an event: the new behavior simply continuing to be normal long after the program that created it has stopped being anyone's active, named project. Both the Kentucky FQHC study and the general pattern in healthcare change-management research point to this as the step most often left incomplete, which is why Lesson 6 of this course returns to it directly under the heading of benefits realization and sustainment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Applying the Framework to Your Own Organization"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The eight steps translate into a diagnostic an organization can run on itself at any point in a transformation, not only at the beginning. The questions below are ordered to match the framework and are deliberately specific enough to have a real yes-or-no answer, rather than an aspirational one."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Is there a specific, credible, publicly presented case for why change is needed now — not a general appeal to importance?",
+          "title": "Urgency"
+        },
+        {
+          "_key": "step2",
+          "description": "Does the guiding coalition include clinical leadership with real influence over medical staff, not only administrative and financial leaders?",
+          "title": "Coalition"
+        },
+        {
+          "_key": "step3",
+          "description": "Is the vision specific enough that two people could independently evaluate whether a given decision is consistent with it?",
+          "title": "Vision"
+        },
+        {
+          "_key": "step4",
+          "description": "Has the vision been communicated in language calibrated to each distinct audience — clinical staff, administrators, community, legislators, payers?",
+          "title": "Communication"
+        },
+        {
+          "_key": "step5",
+          "description": "Have at least one administrative, one organizational, and one contracting obstacle been identified and actually removed?",
+          "title": "Obstacle removal"
+        },
+        {
+          "_key": "step6",
+          "description": "Is there a genuine, attributable, visible result to point to yet — not a projection of a future result?",
+          "title": "Short-term wins"
+        },
+        {
+          "_key": "step7",
+          "description": "Is there a plan for maintaining momentum across the next budget cycle and the next election cycle, not just the next quarter?",
+          "title": "Sustained acceleration"
+        },
+        {
+          "_key": "step8",
+          "description": "If the transformation's named leader left tomorrow, would the new behavior continue without them?",
+          "title": "Institutionalization"
+        }
+      ],
+      "title": "An Eight-Step Diagnostic"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Kotter's eight-step model — urgency, coalition, vision, communication, obstacle removal, short-term wins, sustained acceleration, institutionalization — was developed from more than 100 corporate cases and has since been validated in independently published healthcare studies.",
+        "Under a mandatory reform, Step 1 (urgency) already exists by statute; the task shifts to presenting it credibly rather than manufacturing it.",
+        "Step 2 (coalition) carries the highest healthcare-specific risk: a coalition without real clinical leadership will not produce implementation, regardless of legal mandate.",
+        "A published Kentucky FQHC case study found evidence of Steps 1–7 in a real preventive-care transformation, with Step 8 identified as the remaining gap.",
+        "A 41-month ICU study found Kotter's model raised hand-hygiene compliance from 35.71% to 87.75%, evidence specifically for the model's ability to sustain change, not just launch it.",
+        "Step 8, institutionalization, is the step most healthcare change efforts skip, because unlike the other seven it has no visible launch event to mark its completion.",
+        "The eight steps convert into a concrete diagnostic that can be run on any transformation at any point, not only at its start."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "A durable, multi-year compliance gain — rather than a short-lived spike right after training — is exactly what Step 8 is meant to produce: the new behavior becoming the sustained default rather than a temporary intervention effect.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Step 1: create urgency"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Step 8: institute the change in culture and systems"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Step 3: develop a vision"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Step 5: remove obstacles"
+        }
+      ],
+      "question": "A 41-month ICU quality-improvement study found Kotter's model raised hand-hygiene compliance from 35.71% to 87.75%. Which step of the framework is this sustained, multi-year result most directly evidence for?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Kotter, J.P. (1996), Leading Change, Harvard Business School Press — the original eight-step framework"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] \"A Change-Management Approach to Closing Care Gaps in a Federally Qualified Health Center: A Rural Kentucky Case Study\" — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6716404/ — Kotter's model applied to a real FQHC preventive-care initiative"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] \"Kotter's 8-step change model to improve hand hygiene compliance in intensive care unit: A 41-month prospective longitudinal quality improvement study\" — https://pubmed.ncbi.nlm.nih.gov/39561482/ — the ICU compliance results cited above"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Health Transformation Review, Transforming American Healthcare, Chapter 12 §12.4.1 (\"Kotter's Framework Applied to Healthcare Transformation\") — internal manuscript, the book's own Vermont-specific application of the eight steps"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "tl-kotters-eight-steps"
+  },
+  "title": "Kotter's Eight-Step Framework Applied to Mandatory Payment Reform"
+}

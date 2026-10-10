@@ -1,0 +1,91 @@
+{
+  "id": "07427562-d0d0-4776-8e4c-6069e9c851f5",
+  "track_id": "95e1411d-62ce-4872-8f02-04dc41fed7ff",
+  "pillar": "economics",
+  "order": 3,
+  "slug": "hospital-financial-ratios",
+  "title": "Key Financial Ratios for Hospitals",
+  "summary": "Financial ratios translate raw numbers into comparable benchmarks that reveal a hospital's liquidity, profitability, leverage, and efficiency. This lesson covers the ratios used by HFMA, Moody's, and S&P to evaluate hospital financial health.",
+  "estimated_minutes": 25,
+  "objectives": [
+    "Calculate and interpret operating margin, days cash on hand, and debt service coverage ratio",
+    "Explain how rating agencies use financial ratios to assign bond ratings to hospitals",
+    "Compare a hospital's ratios to HFMA national benchmarks to identify strengths and weaknesses"
+  ],
+  "content_blocks": [
+    {
+      "body": "Hospital financial performance is measured across four categories:\n\n**Profitability:**\n- *Operating Margin* = Operating Income / Total Operating Revenue\n- *Total Margin* = (Operating Income + Non-operating Income) / Total Revenue\n\n**Liquidity:**\n- *Days Cash on Hand* = (Cash + Investments) / (Daily Operating Expenses excl. Depreciation)\n- *Current Ratio* = Current Assets / Current Liabilities\n\n**Leverage:**\n- *Debt-to-Capitalization* = Long-term Debt / (Long-term Debt + Net Assets)\n- *Debt Service Coverage* = (Operating Income + Depreciation + Interest) / (Principal + Interest)\n\n**Efficiency:**\n- *Days in Accounts Receivable* = Net AR / (Net Revenue / 365)\n- *Average Payment Period* = Current Liabilities / (Daily Operating Expenses)",
+      "type": "text",
+      "heading": "The Core Hospital Financial Ratios"
+    },
+    {
+      "rows": [
+        [
+          "Operating Margin",
+          "2.0%",
+          ">4.0%"
+        ],
+        [
+          "Days Cash on Hand",
+          "120 days",
+          ">200 days"
+        ],
+        [
+          "Debt Service Coverage",
+          "2.5x",
+          ">3.5x"
+        ],
+        [
+          "Days in AR",
+          "45 days",
+          "<35 days"
+        ],
+        [
+          "Debt-to-Capitalization",
+          "40%",
+          "<30%"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Ratio",
+        "HFMA Median",
+        "Strong Performance"
+      ]
+    },
+    {
+      "body": "Rating agencies weigh a combination of ratios when assigning bond ratings. Moody's Aa-rated hospitals typically show operating margins above 5%, days cash on hand above 200, and debt service coverage above 4x. Hospitals in the Baa range (lowest investment grade) often show margins of 1–3%, days cash on hand of 80–120, and coverage of 1.5–2.5x. A downgrade to below investment grade (Ba or lower) sharply raises borrowing costs and can trigger covenant violations.",
+      "type": "callout",
+      "title": "How Moody's and S&P Use These Ratios",
+      "variant": "info"
+    },
+    {
+      "type": "glossary_terms",
+      "terms": [
+        {
+          "term": "Operating Margin",
+          "definition": "Operating income divided by total operating revenue; the most-watched hospital profitability metric."
+        },
+        {
+          "term": "Debt Service Coverage Ratio (DSCR)",
+          "definition": "Measures ability to cover debt payments: (EBITDA or operating income + depreciation + interest) divided by annual debt service (principal + interest)."
+        },
+        {
+          "term": "Days in Accounts Receivable",
+          "definition": "Average number of days to collect payment after services are rendered; lower is better, with targets typically under 45 days."
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "financial ratios",
+    "HFMA benchmarks",
+    "bond ratings",
+    "operating margin"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:34:36.300942+00:00",
+  "updated_at": "2026-06-01T13:29:14.213706+00:00",
+  "sanity_slug": "hospital-financial-ratios"
+}

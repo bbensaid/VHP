@@ -1,0 +1,518 @@
+{
+  "_createdAt": "2026-06-01T18:19:44Z",
+  "_id": "community-health-workers-equity",
+  "_rev": "cV7vBu21BPCdPK4W4usY0F",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T18:19:44Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Reaching the People the System Misses"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The previous lesson showed how to find disparities by stratifying data. But finding a gap is not closing it — and the groups faring worst are often precisely the ones the health system struggles to reach: people facing language barriers, mistrust born of historical harm, poverty, unstable housing, and social isolation. Conventional clinical outreach frequently fails with exactly these populations. Community health workers (CHWs) are the most effective tool for reaching them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A community health worker is a frontline worker who is a trusted member of, or has a close understanding of, the community they serve. That trust is the entire point. A CHW from the neighborhood, who speaks the language and shares the lived experience, can connect with patients in ways a clinician from outside the community often cannot. The CHW serves as a bridge between the health and social-service systems and the community."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This makes CHWs core population health infrastructure, not a charitable add-on. They are how a program actually reaches the high-risk, hard-to-engage, disparity-affected patients that risk stratification and equity stratification identify. If care management is the human engine of population health, CHWs are the part of that engine purpose-built for the communities the system has historically failed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A community health worker (CHW) is a frontline worker who is a trusted member of the community they serve, bridging health and social services to advance equity. CHWs are how population health reaches the high-risk, disparity-affected patients conventional outreach misses."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What CHWs Do: The C3 Roles"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The roles and skills of CHWs were standardized by the Community Health Worker Core Consensus (C3) Project, carried out from 2014 to 2018, which defined a national consensus set — ten core roles and eleven core skills. This gave the field a shared definition of what CHWs do, supporting training, certification, and workforce development."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The C3 roles span the bridge function: cultural mediation between communities and systems; culturally appropriate health education and information; care coordination, case management, and system navigation; providing coaching and social support; advocating for individuals and communities; building individual and community capacity; providing direct service (like basic screening); implementing assessments; conducting outreach; and participating in evaluation and research."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Notice how these map onto population health needs. System navigation and care coordination address the fragmentation problem; outreach reaches the patients not coming in; cultural mediation and social support engage the disparity-affected groups; and connecting patients to social services addresses the social determinants that drive most of health. CHWs operationalize the social-needs side of population health that clinicians are poorly positioned to handle."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Connect the community to health and social systems with cultural understanding.",
+          "title": "Bridge & cultural mediation"
+        },
+        {
+          "_key": "step2",
+          "description": "Help patients navigate and coordinate fragmented care and services.",
+          "title": "Navigation & coordination"
+        },
+        {
+          "_key": "step3",
+          "description": "Provide culturally appropriate education, coaching, and support.",
+          "title": "Coaching & social support"
+        },
+        {
+          "_key": "step4",
+          "description": "Reach patients not engaged in care and advocate for individuals and communities.",
+          "title": "Outreach & advocacy"
+        }
+      ],
+      "title": "Core CHW Roles (C3 Project)"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Evidence: It Works and It Pays"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CHWs are sometimes dismissed as a \"nice to have\" without hard evidence. That objection is outdated. The strongest evidence comes from the IMPaCT program (Individualized Management for Patient-Centered Targets), developed at Penn and tested in rigorous multi-center randomized controlled trials — the gold standard, addressing the criticism that earlier CHW economic studies were not rigorous enough."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The results are striking. The IMPaCT randomized trial found the program reduced total hospital days by 65 percent and doubled patient satisfaction with primary care, while modestly improving control of conditions like diabetes, obesity, and mental health. IMPaCT works by hiring and training trusted neighborhood residents as CHWs to address unmet social needs — housing, food, transportation — and to provide social support, advocacy, and health-system navigation for underserved patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "And it pays. A Health Affairs economic analysis found that Penn's CHW program returned $2.47 for every $1 invested annually by Medicaid, with the savings driven by reduced hospitalizations. This is the rare population health intervention with randomized-trial evidence of both better outcomes AND positive return on investment — a roughly 2.5-to-1 ROI. CHWs are not charity; they are a high-return investment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Annual ROI to Medicaid from Penn's CHW program (Health Affairs)",
+          "label": "Return Per $1 Invested",
+          "value": "$2.47"
+        },
+        {
+          "_key": "s2",
+          "context": "IMPaCT randomized trial (Penn)",
+          "label": "Reduction in Hospital Days",
+          "value": "65%"
+        },
+        {
+          "_key": "s3",
+          "context": "Doubled in the IMPaCT trial (Penn)",
+          "label": "Primary Care Satisfaction",
+          "value": "2x"
+        },
+        {
+          "_key": "s4",
+          "context": "Multi-center randomized controlled trials (Penn IMPaCT)",
+          "label": "Evidence Quality",
+          "value": "RCT"
+        }
+      ]
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Making CHW Programs Sustainable"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Like collaborative care and care management, CHW programs historically struggled with sustainability because there was no clear way to pay for them outside grants. That is changing: a growing number of state Medicaid programs now reimburse CHW services, increasingly via Medicaid State Plan Amendments and other pathways, giving CHW programs a durable financial footing rather than relying on time-limited grants."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Sustainability also depends on doing CHW programs well. The evidence is strongest for structured, evidence-based programs like IMPaCT — with defined roles, real training (aligned to the C3 competencies), appropriate caseloads, integration into the care team, and clear protocols — rather than loosely-defined \"community outreach.\" A CHW program designed and supported like a serious clinical program produces serious results; one treated as an afterthought does not."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For population health, the practical model is to integrate CHWs into the care-management team (the embedded model from the care-management lesson), deploy them to the disparity-affected and high-social-need patients that stratification identifies, support them with training and supervision, and bill the available reimbursement to sustain the program. Done this way, CHWs become permanent infrastructure for reaching the communities the system most needs to serve."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "Penn's IMPaCT program hires and trains trusted residents from the communities it serves as community health workers. They help underserved, high-risk patients with unmet social needs — finding housing resources, addressing food insecurity, arranging transportation — and provide social support and health-system navigation.\nIn randomized trials this reduced hospital days by 65%, doubled primary-care satisfaction, and returned $2.47 per Medicaid dollar — demonstrating that a structured, evidence-based CHW program is both effective and a sound financial investment.",
+      "title": "The IMPaCT Model"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CHWs and the Equity Mission"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CHWs are the natural answer to the equity challenge this module poses. Stratification reveals which groups are faring worse; the determinants lesson showed those gaps are driven largely by social factors outside the clinic; and CHWs are uniquely equipped to address exactly those social factors for exactly those communities, with the trust and cultural concordance that make engagement possible. The equity diagnosis and the CHW intervention fit together."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "They also embody the course's recurring themes: they are proactive (reaching people not in care), whole-population (focused on the panel, especially its hardest-to-reach members), team-based (one role in a care-management team), and aimed at the social determinants that drive most of health. CHWs are population health's equity strategy made into a workforce."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The broader lesson is that closing disparities requires more than better data and good intentions — it requires people who can actually reach and earn the trust of underserved communities. CHWs are that workforce, with rigorous evidence behind them and a growing payment model to sustain them. A population health program serious about equity builds CHWs into its core, not its margins. The final lessons turn to measuring all of this — the dashboards and quality improvement that prove whether the whole population health effort, equity included, is actually working."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "The strong outcomes and ~2.5:1 ROI come from structured, evidence-based CHW programs (like IMPaCT) — with real training, defined roles, manageable caseloads, care-team integration, and reimbursement. Loosely-defined \"community outreach\" without that structure does not reliably produce results. Treat CHW programs as serious clinical infrastructure, not an afterthought.",
+      "title": "CHWs Need Structure to Deliver Results"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "A community health worker (CHW) is a trusted member of the community served, bridging health and social services — uniquely able to reach the disparity-affected, hard-to-engage patients conventional outreach misses.",
+        "The C3 Project (2014-2018) standardized CHW practice into ten core roles and eleven skills, spanning cultural mediation, navigation, coaching/support, outreach, and advocacy.",
+        "CHW roles map directly onto population health needs: navigation addresses fragmentation, outreach reaches the unengaged, and social support addresses the social determinants driving most of health.",
+        "Rigorous evidence (Penn's IMPaCT randomized trials) shows CHW programs cut hospital days by ~65% and doubled primary-care satisfaction.",
+        "CHWs are a high-return investment: Penn's program returned $2.47 per $1 invested annually by Medicaid, driven by reduced hospitalizations.",
+        "A growing number of state Medicaid programs reimburse CHW services (e.g., via State Plan Amendments), giving programs durable financial footing.",
+        "Results depend on structured, evidence-based programs (training to C3 competencies, defined roles, manageable caseloads, care-team integration) — CHWs are core equity infrastructure, not a margin."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The IMPaCT program, tested in multi-center randomized controlled trials, reduced total hospital days by ~65% and doubled patient satisfaction with primary care, while a Health Affairs economic analysis found it returned $2.47 per $1 invested annually by Medicaid (savings driven by fewer hospitalizations). This rare combination of randomized-trial evidence for both better outcomes and positive ROI shows that structured, evidence-based CHW programs are effective and financially sound — high-return equity infrastructure, not charity.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "They improve satisfaction but increase total costs"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "They reduced hospital days by ~65%, doubled primary-care satisfaction, and returned about $2.47 for every $1 invested by Medicaid — better outcomes AND positive ROI"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "They have no measurable effect on outcomes"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "They only work without any training or structure"
+        }
+      ],
+      "question": "What does the rigorous evidence (Penn's IMPaCT randomized trials and economic analysis) show about structured community health worker programs?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Roles & Competencies (CHW Core Consensus / C3 Council) — https://www.c3council.org/roles-competencies — CHW definition; ten core roles and eleven skills; bridge function"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] The Community Health Worker Core Consensus (C3) Project Story (Springer) — https://link.springer.com/chapter/10.1007/978-3-030-56375-2_2 — C3 Project 2014-2018; standardized roles and competencies"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Penn's Community Health Worker Program Yields $2.47 for Every $1 Invested (Newswise/Penn) — https://www.newswise.com/articles/penn-s-community-health-worker-program-yields-2-47-for-every-1-invested-annually-by-medicaid — $2.47 ROI per Medicaid dollar; savings from reduced hospitalizations"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Evidence-Based Community Health Worker Program Generates Positive ROI (Health Affairs) — https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00981 — RCT-based economic analysis; IMPaCT; addressing unmet social needs"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] The Evidence on Community Health Workers (Penn LDI) — https://ldi.upenn.edu/healthpolicysense/evidence-community-health-workers — IMPaCT randomized-trial outcomes: ~65% fewer hospital days, doubled satisfaction"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Medicaid Reimbursement for Community Health Worker Services (Milbank Memorial Fund) — https://www.milbank.org/publications/medicaid-reimbursement-for-community-health-worker-services-model-state-plan-amendment-other-guidance-november-2025-update/ — Medicaid reimbursement pathways (State Plan Amendments) for CHW sustainability"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "population-health-management",
+  "order": 15,
+  "slug": {
+    "_type": "slug",
+    "current": "community-health-workers-equity"
+  },
+  "title": "Community Health Workers as Population Health Infrastructure"
+}

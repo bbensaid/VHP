@@ -1,0 +1,9 @@
+{
+  "id": "9c160c27-72e0-4443-b258-d6df2978db3d",
+  "quiz_id": "f65fd2db-9e99-4fe3-b077-2f461c41d51c",
+  "order": 2,
+  "question_type": "single_choice",
+  "question": "Roughly 2,200 rural hospitals are eligible for REH designation, yet the UNC Sheps Center tracker lists only 56 operating as REHs. What best explains the low conversion rate?",
+  "explanation": "The documented barriers are financial and operational: conversion forfeits 340B drug pricing, eliminates swing beds (often the only local post-acute option), and eliminates distinct part units such as inpatient psychiatric or rehabilitation wings. Conversions have concentrated at facilities with low swing-bed use and minimal 340B exposure.",
+  "points": 1
+}

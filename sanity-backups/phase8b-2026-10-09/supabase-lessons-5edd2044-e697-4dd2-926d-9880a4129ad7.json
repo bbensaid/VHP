@@ -1,0 +1,60 @@
+{
+  "id": "5edd2044-e697-4dd2-926d-9880a4129ad7",
+  "track_id": "ba7eb589-1b43-4f05-80f4-0d64b0d54839",
+  "pillar": "economics",
+  "order": 1,
+  "slug": "inpatient-pps-drg",
+  "title": "Inpatient Payment: DRGs and the Prospective Payment System",
+  "summary": "Medicare's inpatient Prospective Payment System (IPPS), introduced in 1983, fundamentally transformed how hospitals are paid — shifting from retrospective cost-based reimbursement to fixed payments based on Diagnosis-Related Groups (DRGs). Understanding DRGs is essential for anyone working in hospital finance or health policy.",
+  "estimated_minutes": 23,
+  "objectives": [
+    {
+      "id": "obj-mcare-004-1",
+      "text": "Explain why CMS moved to prospective payment in 1983 and what problem it solved"
+    },
+    {
+      "id": "obj-mcare-004-2",
+      "text": "Describe how DRGs work and what determines the DRG payment rate"
+    },
+    {
+      "id": "obj-mcare-004-3",
+      "text": "Identify the major add-on payments and adjustments to the base DRG rate"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Before 1983, Medicare paid hospitals on a retrospective, cost-based system — whatever it cost to care for a patient, Medicare reimbursed it (with limits). This created perverse incentives: hospitals had no reason to be efficient, and longer stays meant more revenue. Medicare spending grew at 17% annually in the early 1980s, threatening the program's solvency.",
+      "type": "text"
+    },
+    {
+      "text": "The IPPS and DRG System",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The **Inpatient Prospective Payment System (IPPS)**, introduced in 1983, replaced cost-based reimbursement with fixed payments determined *before* the patient is admitted, based on the patient's diagnosis.\n\nThe unit of payment is the **Diagnosis-Related Group (DRG)** — a classification of clinically similar patients that are expected to require similar hospital resources. CMS currently uses Medicare Severity DRGs (MS-DRGs), which have approximately 760 groups. Each MS-DRG has a **relative weight** that reflects how resource-intensive that group is compared to the average.\n\n**Payment formula:**\n\nBase DRG Payment = MS-DRG Relative Weight × Hospital Base Rate\n\nThe **hospital base rate** is set by CMS annually and adjusted for:\n- **Wage index** — labor costs vary significantly by market (high in NYC, lower in rural Vermont)\n- **Teaching status** — academic medical centers receive Graduate Medical Education (GME) add-ons\n- **Disproportionate Share Hospital (DSH)** adjustments for safety-net hospitals serving high proportions of Medicaid/uninsured patients",
+      "type": "text"
+    },
+    {
+      "text": "Add-On Payments",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The base DRG rate is adjusted for several factors:\n\n**Outlier payments.** When a patient's costs dramatically exceed the DRG payment (a 'cost outlier'), CMS pays an additional amount. This protects hospitals from catastrophic losses on extremely complex cases.\n\n**Transfer adjustments.** When a patient is transferred to another acute care hospital before the full geometric mean length of stay, the transferring hospital receives a per-diem rate rather than the full DRG payment.\n\n**Complication and Comorbidity (CC/MCC) levels.** MS-DRGs differentiate by whether a case has a Major Complication/Comorbidity (MCC), a Complication/Comorbidity (CC), or neither — creating three tiers for most DRG categories. Accurate clinical documentation and coding is critical for capturing appropriate CC/MCC designations.",
+      "type": "text"
+    },
+    {
+      "body": "Hospitals employ clinical documentation integrity specialists to review records and query physicians when documentation doesn't capture the full complexity of a patient's condition. Under-documented cases may fall into lower MS-DRG tiers, costing hospitals significant revenue. CDI programs typically generate $2–5 in revenue for every $1 invested.",
+      "type": "callout",
+      "title": "Clinical Documentation Integrity (CDI)",
+      "variant": "info"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:25:01.515635+00:00",
+  "updated_at": "2026-06-02T16:22:59.77285+00:00",
+  "sanity_slug": "inpatient-pps-drg"
+}

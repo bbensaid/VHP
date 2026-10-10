@@ -1,0 +1,9 @@
+{
+  "id": "2ee53b4f-60f2-4a9f-9f86-8ac1abeaf094",
+  "quiz_id": "903b9a07-7542-4a4a-ad5b-d1dde52b5cc6",
+  "order": 2,
+  "question_type": "single_choice",
+  "question": "What percentage of billable hospital services are estimated to go uncaptured due to charge capture failures?",
+  "explanation": "Industry estimates suggest 3–7% of billable services are not captured, representing significant revenue leakage. Common gaps include unbilled implants, missed ancillary charges, and services without corresponding orders.",
+  "points": null
+}

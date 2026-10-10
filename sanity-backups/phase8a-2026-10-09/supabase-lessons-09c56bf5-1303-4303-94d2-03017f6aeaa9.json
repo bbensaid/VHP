@@ -1,0 +1,108 @@
+{
+  "id": "09c56bf5-1303-4303-94d2-03017f6aeaa9",
+  "track_id": "6e36fdab-df2b-42e1-ab3a-dc28c560aee9",
+  "pillar": "equity",
+  "order": 1,
+  "slug": "hea-measurement-foundations",
+  "title": "From Awareness to Measurement: Why Health Equity Needs Analytics",
+  "summary": "Naming a disparity is not the same as measuring it. This lesson introduces the five-dimension analytics framework (Access, Quality, Outcome, SDOH Burden, Trust) this course teaches, the federal measurement infrastructure now built around it, and the data-completeness problems that make measurement harder than it looks.",
+  "estimated_minutes": 20,
+  "objectives": [
+    {
+      "id": "obj_hea1a",
+      "text": "Explain why measurement, not awareness, is the binding constraint on closing a health disparity."
+    },
+    {
+      "id": "obj_hea1b",
+      "text": "Name the five dimensions of this platform's HEROI composite and what each one measures."
+    },
+    {
+      "id": "obj_hea1c",
+      "text": "Describe the scale of the federal/NCQA measurement build-out since 2022 and where it has stalled."
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "The companion course *Health Equity & SDOH* covers what a disparity is and why it matters. This course starts one step further down the pipeline: once a system has decided a disparity is unjust rather than inevitable, how does it actually measure it — reliably enough to act on, and honestly enough to know when the action worked?\n\nThat is a harder problem than it sounds. A disparity is a gap between two rates. Measuring it well requires a denominator, a reference group, a large enough sample to be confident the gap is real, and a decision about which of several defensible ways to summarize the gap you're going to report. Every one of those choices is a methods decision, and different defensible choices produce different-looking pictures of the same underlying reality.",
+      "type": "text",
+      "heading": "Measurement is the missing link"
+    },
+    {
+      "body": "This course treats health equity as a measurement discipline: five analytic dimensions — Access, Quality, Outcome, SDOH Burden, and Trust & Engagement — each with its own data source, its own known weaknesses, and its own place in a composite score.",
+      "type": "callout",
+      "heading": "Key Concept",
+      "variant": "info"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "HEDIS measures NCQA required stratified by race/ethnicity, MY2022",
+          "value": "5",
+          "source": "NCQA"
+        },
+        {
+          "label": "HEDIS measures stratified by race/ethnicity, MY2024",
+          "value": "22",
+          "source": "NCQA"
+        },
+        {
+          "label": "Priorities in the CMS Framework for Health Equity 2022–2032",
+          "value": "5",
+          "source": "CMS Office of Minority Health"
+        },
+        {
+          "label": "Inpatient admissions coded with an SDOH Z-code despite CDC/WHO emphasis",
+          "value": "1.9%",
+          "source": "PMC, SDOH Z-code adoption study"
+        }
+      ],
+      "heading": "The Measurement Build-Out, 2022–2025"
+    },
+    {
+      "body": "This platform's own Health Equity Studio computes a HEROI score — Health Equity Return on Investment — as a weighted composite: Access (25%), Quality (25%), Outcome (25%), SDOH Burden (15%), and Trust & Engagement (10%). Every lesson in this course builds toward one of those five dimensions: Lesson 2 is the decomposition math underneath Access/Quality/Outcome, Lesson 3 is how Quality gets stratified in practice, Lesson 4 is SDOH Burden, and Lesson 5 is the weighting logic itself, using HEROI as the worked example.\n\nTry the tool directly at **/research-lab/population-equity?tab=equity** — open the HEROI Composite Score tab to see all five dimensions computed live from the same underlying disparity, geographic-access, and SDOH data this course teaches you to build.",
+      "type": "text",
+      "heading": "Five dimensions, one composite"
+    },
+    {
+      "rows": [
+        {
+          "left": "What is a disparity, and why is it unjust?",
+          "label": "Core question",
+          "right": "How do you measure it well enough to act on?"
+        },
+        {
+          "left": "Screening tools, policy requirements",
+          "label": "Primary artifact",
+          "right": "Decomposed rates, stratified measures, composite scores"
+        },
+        {
+          "left": "All clinical and policy staff",
+          "label": "Audience",
+          "right": "Analysts, quality staff, equity officers, CFOs"
+        }
+      ],
+      "type": "comparison_table",
+      "heading": "Awareness Course vs. This Course",
+      "leftLabel": "Health Equity & SDOH (awareness)",
+      "rightLabel": "Health Equity Analytics (this course)"
+    },
+    {
+      "body": "Federal incentive infrastructure for this measurement work is not moving in one direction. CMS's 2027 Medicare Advantage Star Ratings final rule declined to implement the previously proposed Health Equity Index reward, keeping the historical Reward Factor instead — even as NCQA's own stratification requirement keeps expanding. Measurement infrastructure and payment incentive are not the same thing, and they are not currently moving in lockstep.",
+      "type": "callout",
+      "heading": "Important",
+      "variant": "warning"
+    }
+  ],
+  "tags": [
+    "measurement",
+    "health-equity",
+    "cms-framework",
+    "ncqa"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-09-22T19:11:30.738437+00:00",
+  "updated_at": "2026-09-22T19:42:02.013259+00:00",
+  "sanity_slug": "hea-measurement-foundations"
+}

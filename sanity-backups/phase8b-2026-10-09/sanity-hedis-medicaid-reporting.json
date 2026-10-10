@@ -1,0 +1,438 @@
+{
+  "_createdAt": "2026-05-31T18:12:05Z",
+  "_id": "hedis-medicaid-reporting",
+  "_rev": "rL4Cn5Sfo5Z8rzPmEH2Rwy",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T18:12:05Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How We Actually Measure Whether a Plan Delivers Good Care"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Throughout this course, the requirement that managed care plans deliver \"quality\" care has appeared again and again — in the contract, in the federal framework, in external quality review. But quality is meaningless unless it can be measured in a standardized, comparable way. How do you actually tell whether one plan delivers better diabetes care than another, or whether a plan is screening children appropriately? The dominant answer in American health care is HEDIS — the Healthcare Effectiveness Data and Information Set — and for Medicaid specifically, a set of mandatory Core Set measures built largely on it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "HEDIS is the closest thing health care has to a universal report card for health plans. Managed by the National Committee for Quality Assurance (NCQA), it defines standardized measures so precisely that a plan in Vermont and a plan in Texas calculate \"the percentage of diabetics whose blood sugar is controlled\" exactly the same way — making their results genuinely comparable. More than 235 million people are enrolled in plans that report HEDIS, and more than 90% of health plans use it. For Medicaid, HEDIS measures and the federal Core Sets are how states judge plan quality, hold plans accountable, and drive improvement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson explains what HEDIS is, how the data is collected and audited, how benchmarks turn raw rates into judgments, and how the mandatory Medicaid Core Sets layer specific reporting requirements on top of HEDIS. It is the measurement engine behind the quality requirements established earlier in the course."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: HEDIS (Healthcare Effectiveness Data and Information Set), managed by NCQA, is a set of precisely standardized quality measures that let health plans be compared on the same basis. Medicaid plans report HEDIS measures and the mandatory federal Core Sets, which became required for all states starting in 2024."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "HEDIS includes more than 90 measures across 6 domains of care, used by over 90% of U.S. health plans (NCQA)",
+          "label": "HEDIS Scope",
+          "value": "90+ measures"
+        },
+        {
+          "_key": "s2",
+          "context": "The Child Core Set and the Adult behavioral health measures became mandatory for all states in 2024, first submission/certification due December 31, 2024 (CMS)",
+          "label": "Medicaid Core Sets",
+          "value": "Mandatory 2024"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What HEDIS Measures and How"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "HEDIS includes more than 90 measures organized across six domains of care: Effectiveness of Care, Access/Availability of Care, Experience of Care, Utilization and Risk-Adjusted Utilization, Health Plan Descriptive Information, and measures collected through electronic data. The measures span the full range of what good care looks like — childhood immunizations, cancer screenings, diabetes and blood pressure control, postpartum care, behavioral health follow-up, and many more. Each is defined with technical precision: exactly which patients are in the denominator, what counts as the numerator, and how to calculate the rate."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The precision is the entire point. Because HEDIS specifies measures so exactly, results are comparable across plans, states, and time — the foundation of any meaningful quality judgment. The data comes from several sources: most HEDIS data is collected through insurance claims, medical charts, and surveys. Clinical measures use either an administrative methodology (drawing purely on electronic records like claims and pharmacy data) or a hybrid methodology (combining administrative data with a sample of medical-record review to capture care that claims miss). The choice of method affects both the accuracy and the cost of measurement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "HEDIS also pairs with CAHPS — the Consumer Assessment of Healthcare Providers and Systems surveys — which capture the patient experience dimension (the patient-reported experience measures, or PREMs, distinct from the clinical outcomes HEDIS emphasizes). Together, HEDIS (largely clinical process and outcome measures) and CAHPS (experience) give a fuller picture of a plan’s performance than either alone, and both feed the plan ratings and benchmarks discussed below."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Audit and the Measurement Year"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Numbers a plan reports about itself are only trustworthy if they are verified — the same self-reporting conflict that motivated external quality review. HEDIS addresses this through a formal audit. HEDIS results must be audited by an NCQA-approved auditing firm before they can be publicly reported, conducted by Certified HEDIS Compliance Auditors who follow NCQA standards. The audit includes an assessment of the plan’s information-systems capabilities and an evaluation of compliance with HEDIS specifications — confirming that the plan calculated the measures correctly rather than in a self-flattering way."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "HEDIS uses specific timing language worth understanding. The Measurement Year (MY) is the calendar year in which the care was delivered; the audit and reporting happen the following year. So MY 2024 measures care provided during 2024, audited and reported in 2025. Plans submit their final, locked rates through NCQA’s Interactive Data Submission System (IDSS), and the audited results are captured in Final Audit Reports (FARs). This MY/reporting-year structure is why HEDIS results always lag the care they describe by roughly a year."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3w1",
+      "_type": "warningBlock",
+      "message": "An unaudited HEDIS rate is just a plan’s claim about itself. The NCQA-approved compliance audit — validating the data systems and the calculation — is what turns a self-reported number into a trustworthy, comparable result. This audit also feeds the mandatory performance-measure validation that external quality review organizations conduct.",
+      "title": "Audit Is What Makes the Numbers Mean Anything"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Benchmarks: Turning Rates Into Judgments"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A HEDIS rate by itself — say, 58% of diabetics with controlled blood sugar — means little without context. Is 58% good or bad? Benchmarks supply the answer by showing how a plan compares to others. NCQA’s Quality Compass provides national, state, and regional HEDIS and CAHPS benchmarks, along with plan-level results, so a plan can see where it stands against peers and competitors. Benchmarks transform an isolated number into a judgment: a rate at the 90th percentile is excellent; one at the 25th percentile signals a problem."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Percentiles are the key tool. Organizations analyze performance against the 25th, 50th (median), 75th, and 90th percentiles to understand where they fall in the distribution and how much room they have to improve. A state can set a contractual quality threshold at, say, the 50th percentile, requiring plans to perform at least as well as the national median. This is how benchmarks become accountability: by attaching consequences (in contracts, ratings, or payment) to where a plan’s HEDIS rates land relative to peers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "These measures also feed broader rating and payment programs. NCQA’s HEDIS measures are used for health plan ratings and payment programs including CMS Star Ratings, state Medicaid quality reporting, and many alternative payment and value-based care programs. A single HEDIS rate can thus ripple outward — informing a plan’s public rating, its standing in a state’s quality strategy, and even its payment under value-based arrangements. This is why plans invest enormous effort in HEDIS performance: the measures are consequential far beyond the report itself."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Medicaid Core Sets"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "For Medicaid specifically, HEDIS connects to a parallel federal requirement: the Medicaid and CHIP Core Sets of Health Care Quality Measures. These are standardized measure sets — the Adult Core Set, the Child Core Set, and a Behavioral Health Core Set — that CMS and states use to measure the quality of care delivered to the roughly 78 million Medicaid and CHIP beneficiaries. Many Core Set measures are HEDIS measures, calculated following HEDIS specifications, which is why HEDIS reporting and Core Set reporting are tightly intertwined for Medicaid plans."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A major change took effect recently: starting in 2024, reporting of the Child Core Set and the behavioral health measures on the Adult Core Set became mandatory for all states, the District of Columbia, Puerto Rico, and the territories, with the first round required to be submitted and certified by December 31, 2024. Before this, much Core Set reporting was voluntary and uneven; the mandate creates, for the first time, a consistent national picture of Medicaid quality. States submit state-level data annually, and CMS publicly publishes measures reported by at least 25 states that meet data-quality standards — building transparency and cross-state comparison."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "HEDIS is like a standardized exam for health plans. Just as the SAT defines each question precisely so a score in one state means the same as in another, HEDIS defines each measure so \"diabetes control rate\" is calculated identically everywhere — making plans comparable. The NCQA audit is the proctor ensuring no one cheats on their own score. Benchmarks (percentiles) are the score report showing how you rank against everyone else. And the Medicaid Core Sets are like a required subset of that exam that every state must now take and report.",
+      "concept": "How HEDIS standardizes quality measurement"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson is the measurement backbone of the care-management-and-quality module and connects to much that came before. The performance-measure validation that EQROs perform (from the oversight lesson) largely validates these HEDIS and Core Set measures. The quality requirements written into MCO contracts are largely defined in terms of HEDIS rates and benchmarks. And the value-based purchasing covered in the next module ties plan and provider payment to performance on exactly these measures. HEDIS is not a standalone report — it is the common currency of quality that flows through contracting, oversight, and payment alike. Master HEDIS and the Core Sets, and you understand how \"quality\" stops being a slogan and becomes a measured, audited, benchmarked, and consequential number."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "HEDIS (Healthcare Effectiveness Data and Information Set), managed by NCQA, is a set of precisely standardized quality measures that make health plans comparable on the same basis; over 90% of U.S. plans use it.",
+        "HEDIS includes more than 90 measures across six domains (effectiveness, access/availability, experience, utilization/risk-adjusted utilization, descriptive information, and electronic data), each defined with exact numerator/denominator specifications.",
+        "Data is collected via administrative methodology (claims and electronic records) or hybrid methodology (administrative data plus medical-record review), and HEDIS pairs with CAHPS surveys to capture patient experience.",
+        "HEDIS results must be audited by NCQA-approved Certified HEDIS Compliance Auditors before public reporting, verifying data systems and correct calculation — the safeguard that makes self-reported rates trustworthy.",
+        "HEDIS uses the \"Measurement Year\" (MY) for the year care was delivered, audited and reported the following year via NCQA’s IDSS, so results lag the care by about a year.",
+        "Benchmarks (via NCQA’s Quality Compass) and percentiles (25th, 50th, 75th, 90th) turn isolated rates into judgments and accountability, and HEDIS measures feed CMS Star Ratings, state Medicaid reporting, and value-based programs.",
+        "The Medicaid/CHIP Core Sets (Adult, Child, Behavioral Health) measure quality for ~78 million beneficiaries and draw heavily on HEDIS specifications; the Child Core Set and Adult behavioral health measures became mandatory for all states in 2024 (first submission due December 31, 2024).",
+        "HEDIS is the common currency of quality across the course — EQROs validate these measures, contracts define quality in their terms, and value-based purchasing ties payment to performance on them."
+      ]
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] NCQA: \"HEDIS Measures and Technical Resources\" — https://www.ncqa.org/hedis/measures/ — HEDIS managed by NCQA, 90+ measures across 6 domains, administrative vs. hybrid data collection, and use in plan ratings and payment programs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] NCQA: \"HEDIS Measures\" overview — https://www.ncqa.org/hedis/ — 235M+ people in plans reporting HEDIS, 90%+ of plans using it, and Quality Compass benchmarks (national/state/regional, percentiles)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Wikipedia: \"Healthcare Effectiveness Data and Information Set\" — https://en.wikipedia.org/wiki/Healthcare_Effectiveness_Data_and_Information_Set — domains of care, data sources, NCQA-approved audit requirement for public reporting, and pairing with CAHPS."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Colorado HCPF: \"MY 2024 HEDIS Compliance Audit Report\" — https://hcpf.colorado.gov/sites/hcpf/files/Physical%20Health%20Care%20Performance%20Measure%20Validation%20DHMP%202025.pdf — Measurement Year concept, Certified HEDIS Compliance Auditor process, IDSS and Final Audit Reports, and Core Set measures validated via HEDIS audit."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] CMS/Medicaid.gov: \"2024 Core Set of Adult Health Care Quality Measures\" and Child/Behavioral Health Core Sets — https://www.medicaid.gov/medicaid/quality-of-care/downloads/2024-adult-core-set.pdf — Core Sets measuring ~78M beneficiaries, drawing on HEDIS specifications."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Federal Register: \"Mandatory Medicaid and CHIP Core Set Reporting\" — https://www.federalregister.gov/documents/2023/08/31/2023-18669/medicaid-program-and-chip-mandatory-medicaid-and-childrens-health-insurance-program-chip-core-set — Child Core Set and Adult behavioral health measures mandatory starting 2024, first submission/certification by December 31, 2024."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicaid-managed-care-operations",
+  "order": 13,
+  "slug": {
+    "_type": "slug",
+    "current": "hedis-medicaid-reporting"
+  },
+  "title": "HEDIS in Medicaid: Reporting Requirements and Benchmarks"
+}

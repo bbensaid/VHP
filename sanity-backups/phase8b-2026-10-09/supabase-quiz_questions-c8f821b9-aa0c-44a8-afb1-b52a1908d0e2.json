@@ -1,0 +1,9 @@
+{
+  "id": "c8f821b9-aa0c-44a8-afb1-b52a1908d0e2",
+  "quiz_id": "be2b2c8b-a554-4f2e-9f3b-4409f2b129dd",
+  "order": 2,
+  "question_type": "single_choice",
+  "question": "What federal authority do most states use to mandate Medicaid managed care enrollment?",
+  "explanation": "Section 1915(b) waivers allow states to waive the freedom-of-choice requirement and mandate enrollment in specific contracted MCOs. They are approved for two-year renewable periods.",
+  "points": null
+}

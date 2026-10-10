@@ -1,0 +1,538 @@
+{
+  "_createdAt": "2026-06-01T12:42:44Z",
+  "_id": "payer-contracts",
+  "_rev": "2zkDeD7zc2Ko2DfFHsESNE",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T12:42:44Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Price Is Not What You Charge"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A fundamental and surprising truth of healthcare billing: the amount a provider charges has almost nothing to do with what it actually gets paid. The real price is set in advance, in a contract between the provider and each payer. That contract — and the fee schedule attached to it — determines how much the provider will collect for every service, no matter what its chargemaster lists."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why a hospital can \"charge\" $5,000 for a procedure and collect $1,200: the $5,000 is the gross charge, but the payer contract says the allowed amount is $1,200, and that is all the provider can collect. The gap is not a discount the provider chose to give at the register — it was negotiated into the contract long before the patient ever arrived."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Understanding payer contracts is therefore essential to understanding the back end of the revenue cycle. Every payment that comes in must be checked against what the contract said it should be — and the difference between charges, allowed amounts, and actual payments is where much of RCM's analytical work lives."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A payer contract and its fee schedule set the \"allowed amount\" — the maximum a provider will be paid for each service — in advance. The provider's gross charge is largely irrelevant; the contracted rate governs what is actually collected."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Allowed Amount and Contractual Adjustment"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The central number in a payer contract is the allowed amount — also called the maximum allowable or contracted rate — the maximum a payer will reimburse for a specific service under the negotiated agreement. It is set when the contract is signed and is typically tied to a fee schedule: a negotiated dollar amount per CPT code, or a percentage of Medicare's rates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The difference between what the provider billed and the allowed amount is the contractual adjustment — the portion of the bill the provider agrees to write off in exchange for being in the payer's network. The formula is simple: Contractual Adjustment = Billed Charges − Allowed Amount. This write-off is not a loss to chase; it is a contractual obligation the provider agreed to."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is a crucial distinction for the back end. A contractual adjustment is a legitimate, expected write-off and should never be pursued as if it were unpaid revenue. The money to actually collect is the allowed amount, split between what the payer pays and what the patient owes (copay, coinsurance, deductible). Confusing a contractual adjustment with an underpayment is a classic RCM error."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "The gross amount from the chargemaster (e.g., $5,000).",
+          "title": "Billed charge"
+        },
+        {
+          "_key": "step2",
+          "description": "The contracted rate the payer recognizes (e.g., $1,200).",
+          "title": "Allowed amount"
+        },
+        {
+          "_key": "step3",
+          "description": "Billed minus allowed — a legitimate write-off (e.g., $3,800).",
+          "title": "Contractual adjustment"
+        },
+        {
+          "_key": "step4",
+          "description": "The allowed amount, split between payer payment and patient responsibility.",
+          "title": "Collectible"
+        }
+      ],
+      "title": "From Charge to Collectible"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "In-Network vs. Out-of-Network"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Whether a contract exists at all is the in-network/out-of-network distinction. When a provider is in-network, there is a signed contract that fixes the allowed amount for each covered code, and the provider agrees to accept that allowed amount as payment in full for a covered service — billing the patient only their cost-sharing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "When a provider is out-of-network, there is no contract setting a negotiated fee. The plan still determines an allowed amount, often using a \"usual, customary, and reasonable\" (UCR) methodology or a percentage of a public fee schedule, but the dynamics are entirely different — typically higher patient cost-sharing and, historically, the risk of balance billing (now constrained for many situations by the No Surprises Act)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For the revenue cycle, network status changes the entire payment picture. In-network claims pay predictably per the contract; out-of-network claims are less predictable and shift more cost to the patient. Knowing a patient's network status — established back at eligibility verification — is essential to setting correct expectations and posting payments accurately."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "In-Network",
+        "points": [
+          "Signed contract fixes the allowed amount",
+          "Provider accepts allowed amount as payment in full",
+          "Predictable, contracted reimbursement",
+          "Patient owes only contracted cost-sharing"
+        ]
+      },
+      "right": {
+        "label": "Out-of-Network",
+        "points": [
+          "No contract setting a negotiated rate",
+          "Plan sets an allowed amount (often UCR)",
+          "Less predictable reimbursement",
+          "Higher patient cost-sharing; balance-billing risk"
+        ]
+      },
+      "title": "In-Network vs. Out-of-Network"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Reimbursement Methodologies"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Contracts do not all pay the same way. A fee schedule that pays a set amount per CPT code is the classic fee-for-service approach, but several other reimbursement methodologies appear in payer contracts, especially for facilities."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Common methodologies include: DRG-based payment (a fixed amount per diagnosis-related group for an inpatient stay, regardless of the individual services); per diem (a fixed amount per day of stay); case rates (a single bundled price for an episode, like a global surgical fee); and capitation (a fixed per-member-per-month amount regardless of services used). A single contract often blends several — a percentage-of-Medicare fee schedule for outpatient, DRGs for inpatient, carve-outs for specific services."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "These methodologies matter because each pays differently and must be modeled differently to know what to expect. A DRG payment is not validated the same way as a fee-schedule line item, and a per-diem stay's expected payment depends on length of stay. The contract's methodology determines how the provider calculates \"expected reimbursement\" for each claim — the benchmark against which actual payment is checked."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4t1",
+      "_type": "code",
+      "code": [
+        {
+          "Methodology": "Fee-for-Service",
+          "Pays": "A set amount per service/CPT code",
+          "Typical_Use": "Outpatient and professional services"
+        },
+        {
+          "Methodology": "DRG",
+          "Pays": "Fixed amount per diagnosis-related group",
+          "Typical_Use": "Inpatient hospital stays"
+        },
+        {
+          "Methodology": "Per_Diem",
+          "Pays": "Fixed amount per day of stay",
+          "Typical_Use": "Inpatient / facility days"
+        },
+        {
+          "Methodology": "Case_Rate",
+          "Pays": "Single bundled price per episode",
+          "Typical_Use": "Surgeries, defined episodes"
+        },
+        {
+          "Methodology": "Capitation",
+          "Pays": "Fixed per-member-per-month",
+          "Typical_Use": "Managed care populations"
+        }
+      ],
+      "language": "json",
+      "title": "Common Reimbursement Methodologies"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Managing Contracts and Catching Underpayments"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because the contract defines expected payment, comparing actual payments to contract terms is how providers catch underpayments — instances where the payer paid less than the contract requires. Without modeling the contract, an underpayment is invisible: the payment looks \"paid,\" and the shortfall is silently lost, much like a missed charge."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Modern payer-contract-management systems extract the structured terms (fee schedules, DRG rates, lesser-of provisions, stop-loss, escalators, timely filing limits) and automatically compare expected reimbursement to actual payment on every claim, flagging underpayments for recovery. Industry estimates suggest providers can recover several percent of annual revenue lost to underpayments this way — real money that contract management surfaces."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Contracts also carry critical operational terms beyond price. Timely filing limits cap how long a provider has to submit a claim (Medicare requires filing within 12 months of the date of service; Medicaid and commercial limits vary) — miss the deadline and the claim is denied with no recourse. Prompt-payment clauses set how fast the payer must pay; dispute-resolution terms define how to challenge payment problems. Mastering these terms is what lets the back-end of the revenue cycle hold payers accountable to what they actually agreed to pay."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "A contractual adjustment (billed minus allowed) is a legitimate, agreed write-off and should not be chased. An underpayment is when the payer pays less than the contract's allowed amount — that IS recoverable. Telling them apart requires modeling the contract; otherwise real underpayments hide inside \"paid\" claims.",
+      "title": "Don't Confuse a Contractual Adjustment With an Underpayment"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "A payer contract and its fee schedule set the allowed amount — the maximum reimbursement per service — in advance; the provider's gross charge is largely irrelevant.",
+        "The contractual adjustment (Billed Charges − Allowed Amount) is a legitimate write-off the provider agreed to for being in-network, not unpaid revenue to chase.",
+        "The collectible amount is the allowed amount, split between payer payment and patient cost-sharing (copay, coinsurance, deductible).",
+        "In-network means a signed contract fixes the allowed amount accepted as payment in full; out-of-network has no contract, often using UCR with higher patient cost-sharing.",
+        "Reimbursement methodologies vary: fee-for-service, DRG (inpatient), per diem, case rate, and capitation — each must be modeled differently to set expected payment.",
+        "Comparing actual payments to contract terms reveals underpayments (paid less than the contract requires), which are recoverable but otherwise invisible.",
+        "Contracts also set timely filing limits (Medicare 12 months), prompt-payment clauses, and dispute-resolution terms that the back-end uses to hold payers accountable."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The $3,800 (billed $5,000 minus allowed $1,200) is the contractual adjustment — the portion the provider agreed to write off in exchange for being in-network. It is legitimate and should not be pursued. The collectible is the $1,200 allowed amount, here split into the payer's $1,000 payment and the patient's $200 coinsurance. An underpayment, by contrast, would be the payer paying less than the $1,200 the contract requires.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "An underpayment the provider should appeal and recover"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "A contractual adjustment — a legitimate write-off the provider agreed to as an in-network participant"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Bad debt to send to collections"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "A coding error"
+        }
+      ],
+      "question": "A provider bills $5,000 for a service; the payer contract's allowed amount is $1,200, and the payer pays $1,000 with the patient owing a $200 coinsurance. What is the $3,800 difference between the charge and the allowed amount?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Understanding Contracted Rates in Healthcare (Rivet Health) — https://www.rivethealth.com/blog/understanding-contracted-rates-in-healthcare — allowed amount / contracted rate; in-network vs out-of-network; UCR"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Contractual Adjustment in Medical Billing (MediBill RCM) — https://www.medibillrcm.com/blog/contractual-adjustment-in-medical-billing/ — contractual adjustment = billed charges − allowed amount; write-off for in-network participation"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] How to Calculate the Allowed Amount in Medical Billing (BellMedEx) — https://bellmedex.com/how-to-calculate-the-allowed-amount-in-medical-billing/ — allowed amount tied to fee schedule or percentage of Medicare; payer payment plus patient responsibility"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Payer Contract Management Software for Hospitals (MD Clarity) — https://www.mdclarity.com/blog/payer-contract-management-software-for-hospitals — reimbursement terms (DRGs, per diem, lesser-of, stop-loss, escalators, timely filing); underpayment detection"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Underpayment Recovery in Healthcare: The Power of Payer Contracts (MBW RCM) — https://www.mbwrcm.com/the-revenue-cycle-blog/payer-contracts-underpayment-appeals — comparing expected vs actual payment; recovering underpayments"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Timely Filing Limit for Medicare vs. Medicaid vs. Commercial Payers (MedCare MSO) — https://medcaremso.com/blog/timely-filing-limit-for-medicare-vs-medicaid-vs-commercial-payers/ — Medicare 12-month filing limit; varying commercial/Medicaid limits"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "revenue-cycle-management",
+  "order": 12,
+  "slug": {
+    "_type": "slug",
+    "current": "payer-contracts"
+  },
+  "title": "Payer Contracts and Fee Schedules"
+}

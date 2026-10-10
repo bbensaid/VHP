@@ -1,0 +1,540 @@
+{
+  "_createdAt": "2026-05-29T22:45:50Z",
+  "_id": "hie-mpi-terminology",
+  "_rev": "glqH7a4yvZFQerxZd1Pka9",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-29T22:45:50Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Patient Identity Matters"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Every clinical decision depends on being confident that the data being viewed belongs to the right patient. When a physician reviews a medication list, orders a blood transfusion, or interprets a lab result, they must be certain the record in front of them is for the person sitting across from them. Patient identity — uniquely identifying each individual and correctly linking all their records — is the foundation on which every other health IT function depends."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The consequences of patient identity failures are severe. Duplicate patient records — two or more separate records created for the same patient — affect 5 to 10 percent of all stored records in most hospitals, and up to 20 percent in multi-facility health systems. A 2018 Black Book survey found that duplicate records cost hospitals an average of $1,950 per patient in rework, redundant testing, and claims denials. More critically, duplicate records are estimated to contribute to nearly 2,000 preventable deaths per year, and patient identification errors account for approximately 70 percent of adverse patient outcomes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most dangerous MPI error is an overlay — when two different patients’ records are merged into a single record. The result is a composite chart that contains data from two people: the first patient may receive a medication they are allergic to (because the allergy was in the second patient’s record), or receive a blood transfusion of the wrong type. Overlays are extremely difficult to detect and correct once they occur, because there is no obvious signal that something is wrong — the chart looks complete and internally consistent."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A Master Patient Index (MPI) is the enterprise system that uniquely identifies each patient and links all their records across clinical and administrative systems. Without a reliable MPI, a health system cannot safely exchange, aggregate, or analyze patient data."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "5–10% in single hospitals; up to 20% in multi-facility systems (industry data)",
+          "label": "Duplicate Record Rate",
+          "value": "5–20%"
+        },
+        {
+          "_key": "s2",
+          "context": "Attributed to duplicate patient records and patient identification failures",
+          "label": "Preventable Deaths/Year",
+          "value": "~2,000"
+        },
+        {
+          "_key": "s3",
+          "context": "Patient identification errors account for ~70% of adverse patient outcomes (Imprivata)",
+          "label": "Adverse Outcomes Linked to ID Errors",
+          "value": "70%"
+        },
+        {
+          "_key": "s4",
+          "context": "Per-patient cost in rework, redundant tests, and claims denials (Black Book 2018)",
+          "label": "Average Cost per Duplicate Record",
+          "value": "$1,950"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Is a Master Patient Index?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A Master Patient Index (MPI) is a centralized database that serves as the authoritative patient identifier repository for a healthcare organization. When a patient registers at a hospital, the MPI checks whether a record already exists for that person. If it does, the new encounter is linked to the existing record. If not, a new record — with a unique patient identifier (UPI), a non-changing alphanumeric key — is created. Every subsequent encounter, lab result, medication record, and clinical note is linked to that UPI, creating a longitudinal patient record across the organization’s systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "An Enterprise Master Patient Index (EMPI) extends the concept across multiple organizations or facilities. Where an MPI serves a single institution, an EMPI identifies, links, and manages unique patient identities across disparate systems in a health system, an HIE, or a multi-state network. The EMPI is what makes it possible to say “this record from Hospital A and this record from Hospital B belong to the same person” — even when the two records were created with slightly different demographic information."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The MPI/EMPI does not store clinical data — it stores identity data. Its output is a set of record links and a master identifier that can be used to retrieve the correct clinical records from each contributing system. In an HIE, the EMPI is paired with a record-locator service (RLS): the EMPI finds that patient Jane Smith at Hospital A is the same as Jane J. Smith-Williams at Clinic B, and the RLS then queries both organizations for her clinical records and presents them to the requesting clinician."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2an1",
+      "_type": "analogyBlock",
+      "analogy": "A Master Patient Index is like the Social Security Administration’s database — not the agency that pays your benefits or issues your passport, but the authoritative system that assigns you a unique number, verifies your identity, and ensures that all records associated with you are correctly linked. In healthcare, the MPI plays the same role: not storing the medical records themselves, but ensuring all records point to the right person.",
+      "concept": "Master Patient Index as Identity Backbone"
+    },
+    {
+      "_key": "s2cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "MPI (Single Organization)",
+        "points": [
+          "Patient identity management within one hospital or clinic",
+          "Matches records across internal systems (EHR, LIS, pharmacy, billing)",
+          "Assigns a local unique patient identifier (MRN)",
+          "Covers one facility’s patient population",
+          "Managed by the facility’s HIM or IT department",
+          "Sufficient for standalone hospitals"
+        ]
+      },
+      "right": {
+        "label": "EMPI (Enterprise / Multi-Org)",
+        "points": [
+          "Patient identity management across multiple facilities or organizations",
+          "Matches records from different EHRs, HIEs, and clinical networks",
+          "Assigns an enterprise-wide unique patient identifier",
+          "Covers patients across a health system, region, or state",
+          "Requires cross-organizational governance and data sharing agreements",
+          "Essential for HIEs, health systems, and ACOs"
+        ]
+      },
+      "title": "MPI vs. EMPI"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Patient Matching Works"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Patient matching — determining whether two records belong to the same individual — is the core function of the MPI. It sounds simple, but it is surprisingly difficult. Names are misspelled, abbreviated, or changed (marriage, divorce). Dates of birth are transposed. The same patient may have registered under a nickname at one facility and a legal name at another. Social Security numbers are frequently withheld or incorrectly entered. No single identifier reliably and uniquely identifies a patient across all settings in the US."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two primary algorithmic approaches are used: deterministic matching and probabilistic matching. Deterministic matching requires an exact match on all specified fields — if the SSN, last name, and date of birth all match exactly, the records are linked; if any field differs, they are not. It is fast and highly precise but fails whenever data entry errors, name changes, or missing fields are present. Probabilistic matching assigns statistical weights to each data element based on how discriminating that element is; it calculates a composite match score and declares a match if the score exceeds a defined threshold. Probabilistic matching handles minor data variations — nickname vs. legal name, transposed birth year digits — but can produce false positives if thresholds are set too loosely."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Modern EMPIs use a hybrid approach: deterministic matching for high-confidence cases (exact SSN + exact DOB + exact last name), probabilistic matching for borderline cases, and referential matching for ambiguous records. Referential matching compares patient demographics against a large external reference database — such as credit bureau records or driver’s license data — to resolve identities with higher confidence. Vendors including Verato offer referential matching as a service integrated with hospital EMPIs. Name fuzzy-matching algorithms like Soundex and Jaro-Winkler are used to catch phonetic variants: “Smith” and “Smyth”, “Katherine” and “Catherine”, “Jose” and “José.”"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "A new patient registration or ADT message arrives; the EMPI standardizes name casing, address format, date format, and phone number to a canonical form before matching.",
+          "title": "Receive & Standardize"
+        },
+        {
+          "_key": "step2",
+          "description": "The EMPI checks for exact matches on high-confidence identifier combinations (e.g., SSN + DOB + last name); exact matches are linked immediately with high confidence.",
+          "title": "Deterministic Pass"
+        },
+        {
+          "_key": "step3",
+          "description": "Records that don’t clear the deterministic pass are scored probabilistically; each demographic field receives a weight; scores are summed; records above threshold are flagged as probable matches.",
+          "title": "Probabilistic Scoring"
+        },
+        {
+          "_key": "step4",
+          "description": "Records near the threshold (potential matches requiring judgment) are routed to an HIM analyst or data steward for manual review and adjudication.",
+          "title": "Human Review Queue"
+        },
+        {
+          "_key": "step5",
+          "description": "Confirmed matches are linked to the existing MPI record; non-matches result in a new unique patient identifier being assigned; the match decision is logged for audit.",
+          "title": "Link or Create"
+        }
+      ],
+      "title": "How an EMPI Matches an Incoming Record"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The National Patient Identifier Gap"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Patient matching in the United States is harder than in almost any other developed country because the US has no national unique patient identifier (UPI). Since 1998, Congress has included a rider on the HHS appropriations bill prohibiting the agency from spending any funds to create or promote a national patient identifier, citing privacy concerns. The prohibition was partially relaxed in 2020, allowing ONC to study the feasibility of a national patient matching strategy — but as of 2026, no national patient identifier exists."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The absence of a national UPI forces every health system and HIE to build its own patient matching infrastructure and to rely on probabilistic algorithms to resolve identities that a single authoritative identifier could resolve instantly. Countries with national health identifiers — the UK’s NHS Number, Canada’s provincial health card numbers, Australia’s Individual Healthcare Identifier — achieve dramatically higher patient matching accuracy at lower cost. Industry groups including AHIMA and HIMSS have long advocated for a US national patient identifier, arguing that the privacy risks of a known identifier are lower than the safety risks of persistent matching failures."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "In the absence of a national identifier, the industry has moved toward voluntary frameworks. The Patient Matching Initiative — a collaboration between ONC, health systems, and vendors — has developed standardized matching attributes and best practices. TEFCA’s governance framework includes requirements for how QHINs must handle patient matching across the national exchange network. Some states (including California and Minnesota) have enacted their own statewide patient identity frameworks to reduce within-state matching failures."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "When two different patients’ records are merged into one (an overlay), the combined record contains medications, allergies, diagnoses, and results from two people. Detecting an overlay requires noticing clinical inconsistencies — a blood type that doesn’t match, an allergy that conflicts with a current prescription — which may not happen until a harmful event has already occurred. Correcting an overlay requires manual HIM review to separate the records, which is time-consuming and may be incomplete. Prevention through strong matching rules and human review queues is far safer than remediation after the fact.",
+      "title": "The Overlay Is Irreversible Without Careful Remediation"
+    },
+    {
+      "_key": "s4hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The US is the only major developed country without a national unique patient identifier. The result: every hospital, HIE, and health system must independently solve the same patient matching problem — spending billions collectively on a challenge that a single authoritative identifier would largely eliminate."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "MPI in Health Information Exchange"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Every health information exchange (HIE) requires a patient matching solution — typically an EMPI — to safely aggregate and exchange records across contributing organizations. When a clinician at Hospital A requests records for a patient who has also been seen at Clinic B and a nursing home, the HIE’s EMPI must first confirm that the “Jane Smith, DOB 1965-04-12” at Hospital A is the same person as “Jane J. Williams-Smith, DOB 04/12/1965” at Clinic B. Without that confirmation, the HIE cannot safely surface Clinic B’s records — the risk of displaying another patient’s data is too high."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The EMPI in an HIE works alongside a record-locator service (RLS). Once the EMPI has resolved that two records belong to the same patient, the RLS knows where that patient’s records are distributed across the network and can direct queries to the appropriate organizations. The clinical data itself may remain at each contributing organization (federated model) or be stored centrally (centralized model) — but the identity layer is always managed by the EMPI regardless of architectural choice."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5ex1",
+      "_type": "exampleBlock",
+      "content": "CommonWell Health Alliance built a national patient identity and record-locator service connecting EHR systems from multiple vendors. When a provider in a CommonWell-enrolled Epic system needs records from a patient who was previously seen at a Cerner-connected facility, CommonWell’s EMPI resolves the patient identity across both systems and returns a record locator that allows the Epic clinician to retrieve the Cerner records. CommonWell uses a combination of deterministic and probabilistic matching, plus an enrollment process that gives patients and providers a mechanism to confirm or dispute matches. As of 2024, CommonWell connects thousands of sites across the US and illustrates how cross-vendor, cross-organization patient matching can be achieved at national scale.",
+      "title": "CommonWell Health Alliance — Cross-Vendor Patient Matching"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "A Master Patient Index (MPI) uniquely identifies each patient within an organization and links all their records; an Enterprise Master Patient Index (EMPI) extends this across multiple organizations or facilities.",
+        "Duplicate patient records affect 5–10% of single-facility records and up to 20% in multi-facility systems — contributing to nearly 2,000 preventable deaths per year and averaging $1,950 per duplicate in rework and waste.",
+        "An overlay — merging two different patients’ records into one — is the most dangerous MPI error; it can cause wrong-medication, wrong-blood-type, and wrong-treatment events that may not be detected until harm has occurred.",
+        "Patient matching uses three algorithmic approaches: deterministic (exact field match), probabilistic (weighted scoring for approximate matches), and referential (comparison against an external identity database); modern EMPIs combine all three.",
+        "The US has no national unique patient identifier — Congress has prohibited HHS from creating one since 1998 — forcing every health system and HIE to independently solve patient matching with probabilistic algorithms.",
+        "Every HIE requires an EMPI to safely match patient identities across contributing organizations; the EMPI works alongside a record-locator service (RLS) to direct queries to the correct organizations once identity is confirmed.",
+        "Common MPI errors include duplicates (multiple records for same patient), overlays (merged records from different patients), and false links (records incorrectly linked across patients) — all requiring active governance, human review queues, and ongoing data stewardship."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "An overlay occurs when the MPI incorrectly merges records belonging to two different patients into a single chart. The resulting record contains medications, allergies, diagnoses, and test results from both individuals — creating a dangerous hybrid that can lead to wrong-medication or wrong-blood-type events. Unlike a duplicate (two records for the same patient), an overlay combines two different people’s data, making it the most dangerous class of MPI error.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "A duplicate record created when the same patient registers twice"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "A merged record containing data from two different patients"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "A patient record that has been archived and is no longer active"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "A temporary identifier assigned before a permanent MRN is generated"
+        }
+      ],
+      "question": "What is an “overlay” in the context of a Master Patient Index?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] TechTarget — What is an Enterprise Master Patient Index (EMPI)? — https://www.techtarget.com/searchhealthit/definition/master-patient-index-MPI — MPI/EMPI definitions, duplicate rates"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Imprivata — 4 Statistics Prove There’s a Patient Identification Crisis — https://www.imprivata.com/blog/4-statistics-prove-theres-patient-identification-crisis — 70% adverse outcomes, ~2,000 deaths"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Verato — Duplicate Medical Records Blog — https://verato.com/blog/duplicate-medical-records/ — $1,950 per duplicate, overlay definition, referential matching"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] informaticspro.com — Probabilistic vs Deterministic eMPI Matching — https://informaticspro.com/general/enterprise-master-patient-index/ — algorithm comparison"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] ONC — Patient Matching — https://www.healthit.gov/topic/patient-identification-and-matching — national patient identifier history, ONC matching initiative"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "hie-mpi-terminology"
+  },
+  "title": "Master Patient Index and Patient Matching"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "f94e9489-b11e-4d07-8375-5e897e6cc50a",
+  "track_id": "8efae48e-1a63-403f-9adc-92e84c9f5914",
+  "pillar": "policy",
+  "order": 1,
+  "slug": "part-d-structure-formulary",
+  "title": "Part D: Structure, Formularies, and the IRA Drug Reforms",
+  "summary": "Medicare Part D is the voluntary outpatient prescription drug benefit, delivered by private plans and subsidized by the federal government. The Inflation Reduction Act of 2022 made the most significant Part D reforms since the benefit was created — including direct Medicare drug price negotiation and a $2,000 out-of-pocket cap.",
+  "estimated_minutes": 22,
+  "objectives": [
+    {
+      "id": "obj-mcare-012-1",
+      "text": "Explain the structure of Part D coverage including formularies and cost-sharing tiers"
+    },
+    {
+      "id": "obj-mcare-012-2",
+      "text": "Describe what the Inflation Reduction Act changed about Part D"
+    },
+    {
+      "id": "obj-mcare-012-3",
+      "text": "Explain how the Medicare Drug Price Negotiation Program works"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Medicare Part D was created by the Medicare Modernization Act (MMA) of 2003 and became effective in January 2006. It introduced voluntary prescription drug coverage to Medicare for the first time — an enormous policy change that affected virtually every Medicare beneficiary.",
+      "type": "text"
+    },
+    {
+      "text": "Part D Basics",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "**Voluntary participation.** Medicare beneficiaries can enroll in a stand-alone Prescription Drug Plan (PDP) for traditional Medicare or receive Part D as part of Medicare Advantage (MA-PD). Beneficiaries who go without creditable drug coverage for 63+ days face late enrollment penalties.\n\n**Formularies.** Each Part D plan maintains a formulary — a list of covered drugs organized into tiers, typically:\n- Tier 1: Preferred generics (lowest cost-sharing)\n- Tier 2: Non-preferred generics\n- Tier 3: Preferred brand-name drugs\n- Tier 4: Non-preferred brand-name drugs\n- Tier 5: Specialty drugs (highest cost-sharing)\n\nFormularies must cover at least two drugs in every drug category/class and all drugs in six 'protected' classes: antidepressants, antipsychotics, anticonvulsants, immunosuppressants, antiretrovirals, and antineoplastics.",
+      "type": "text"
+    },
+    {
+      "text": "Inflation Reduction Act Reforms (IRA 2022)",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The IRA made transformational changes to Part D:\n\n**$2,000 out-of-pocket cap.** Beginning in 2025, Medicare beneficiaries face a $2,000 annual cap on out-of-pocket prescription drug costs — eliminating the 'catastrophic' phase where patients previously had unlimited cost exposure.\n\n**Insulin cap.** Insulin costs capped at $35/month for Part D enrollees (effective 2023).\n\n**Vaccines.** All ACIP-recommended vaccines covered at $0 cost-sharing.\n\n**Drug price negotiation.** For the first time in Medicare's history, CMS is authorized to negotiate prices directly with pharmaceutical manufacturers for selected high-expenditure drugs. The first 10 drugs were selected in 2023; negotiated prices take effect in 2026. CMS has authority to expand to 20+ drugs annually.\n\nThe IRA drug reforms represent the largest change to Part D since its creation and are expected to generate $98 billion in net Medicare savings over 10 years.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:25:02.914955+00:00",
+  "updated_at": "2026-06-02T17:17:18.375228+00:00",
+  "sanity_slug": "part-d-structure-formulary"
+}

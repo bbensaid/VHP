@@ -1,0 +1,20 @@
+{
+ "file": "frontend/content/_build_transformation_leadership_course.py",
+ "claim": "tl-building-the-pmo fallback source: PMI stats; NPfIT more than \u00a310bn in quiz",
+ "verdict": "MISATTRIBUTED",
+ "src": "PMI Pulse 2018: ~$2 trillion wasted a year; 2020: 11.4% average waste \u2014 different years conflated; PMI Pulse 2017: strategy-aligned EPMO -> 38% more projects meet original goals (not PMO vs none, on time/budget); UK Public Accounts Committee HC 294 (2013): estimated cost \u00a39.8bn (likely more) \u2014 \"more than \u00a310 billion\" not supported by the primary source",
+ "pairs": [
+  [
+   "\"PMI, Pulse of the Profession \u2014 roughly 11.4% of every dollar invested lost to poor project performance\"),",
+   "\"PMI, Pulse of the Profession 2018 \u2014 about $1M every 20 seconds; the 2020 edition put average waste at 11.4% of project investment\"),"
+  ],
+  [
+   "(\"38%\", \"More on-time/on-budget delivery\", \"PMI \u2014 organizations with an established PMO\"),",
+   "(\"38%\", \"More projects meet original goals\", \"PMI, Pulse of the Profession 2017 \u2014 organizations whose enterprise PMO is aligned to strategy\"),"
+  ],
+  [
+   "\"The NHS's National Programme for IT (NPfIT), which cost the UK government more than \u00a310 billion \"\n            \"before being dismantled in 2011, is most often cited as a failure of which specific kind?\",",
+   "\"The NHS's National Programme for IT (NPfIT), dismantled in 2011 at an estimated cost of \u00a39.8 billion, \"\n            \"is most often cited as a failure of which specific kind?\","
+  ]
+ ]
+}

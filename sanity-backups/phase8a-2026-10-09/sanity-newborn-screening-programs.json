@@ -1,0 +1,488 @@
+{
+  "_createdAt": "2026-06-02T04:17:06Z",
+  "_id": "newborn-screening-programs",
+  "_rev": "5fFlS5aMKSDl9X7B6V68oV",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T04:17:06Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Most Successful Genetic Program You've Never Thought About"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Almost every person born in the United States has already been screened for genetic disease — at birth, usually before they left the hospital, and almost certainly without remembering it. Newborn screening is the largest and one of the most successful applications of genetics in public health, quietly preventing death and disability in thousands of children every year. It is genomic medicine operating at population scale, and it has been doing so for decades."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Newborn screening is a public-health program that tests every baby shortly after birth for a panel of serious, treatable conditions — many of them genetic or metabolic — so that treatment can begin before irreversible harm occurs. The defining logic is early detection: for these conditions, a baby looks completely healthy at birth, but without prompt treatment will suffer severe, permanent damage. Screening catches them in the narrow window when intervention still works."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson explains how newborn screening works, why it is a model of effective public-health genomics, and how genome sequencing may transform it. It is a concrete example of nearly everything the course has covered — testing, treatable conditions, consent, equity — operating in the real world at the scale of an entire population of newborns."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Newborn screening tests nearly every baby shortly after birth for serious, treatable conditions — so treatment can start before irreversible harm. It is the largest, most successful application of genetics in public health, operating at population scale for decades."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Newborn Screening Works"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Newborn screening has three parts, performed within roughly 24 to 48 hours after birth. The best known is the blood test, or \"heel stick,\" in which a few drops of blood from the baby's heel are placed on a special card and analyzed for dozens of conditions. The other two parts are a hearing screen (for hearing loss) and a pulse-oximetry test (for critical congenital heart defects). Together they screen for the major treatable conditions detectable at birth."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Which conditions are screened is guided by the Recommended Uniform Screening Panel (RUSP) — a list maintained at the federal level (HHS) that recommends conditions for every state to screen. The RUSP includes 35 core conditions plus 26 secondary conditions. Conditions are added based on evidence that screening produces net benefit: the condition must be serious, detectable, and — crucially — treatable, so that early detection actually changes the outcome."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "A key feature is that newborn screening is administered by the states, not nationally, so the exact panel varies somewhat by state even though the RUSP provides a common recommended baseline. This is why a baby in one state may be screened for slightly different conditions than a baby in another — a federalism quirk with real consequences. Newborn screening is also unusual in being typically mandatory or opt-out (rather than opt-in), reflecting its public-health framing: the benefit to children is judged great enough to justify near-universal participation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "A few drops of blood analyzed for dozens of conditions, 24-48 hours after birth.",
+          "title": "Heel stick (blood spot)"
+        },
+        {
+          "_key": "step2",
+          "description": "Detects hearing loss early enough to support language development.",
+          "title": "Hearing screen"
+        },
+        {
+          "_key": "step3",
+          "description": "Screens for critical congenital heart defects.",
+          "title": "Pulse oximetry"
+        },
+        {
+          "_key": "step4",
+          "description": "35 core + 26 secondary conditions recommended; states administer and vary.",
+          "title": "RUSP guides the panel"
+        }
+      ],
+      "title": "The Newborn Screening Process"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why It Works: The Public-Health Logic"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Newborn screening is a textbook case of effective screening because it satisfies the classic criteria. The conditions are serious (causing death or severe disability if untreated). They are detectable before symptoms appear (the baby looks healthy at birth). There is a treatment that works if started early (special diet, medication, or other intervention). And the screening test is accurate enough to use at population scale. When all of these hold, screening saves lives — and for these conditions, they do."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The classic example is phenylketonuria (PKU), a metabolic condition where the body cannot process the amino acid phenylalanine. Undetected, PKU causes severe intellectual disability. Detected at birth, it is managed with a special diet, and the child develops normally. PKU screening — one of the original newborn-screening tests — demonstrated the entire paradigm: a simple test at birth turning a devastating disease into a manageable condition. Many RUSP conditions follow the same logic."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why newborn screening is held up as a model: it shows genetics delivering enormous, measurable public-health benefit through early detection and treatment of conditions that are individually rare but collectively meaningful. It embodies the prevention-and-actionability principle that runs through this course — testing matters most when knowing the result lets you do something about it. Newborn screening is that principle at its most successful."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "A newborn appears perfectly healthy. The heel-stick blood spot reveals elevated phenylalanine — phenylketonuria (PKU). Untreated, PKU would cause severe, irreversible intellectual disability over the following months.\nBecause it was caught at birth, the baby is started on a special low-phenylalanine diet, and develops normally. The same baby, born before newborn screening existed, would likely have been disabled for life. PKU is why newborn screening exists — proof that a simple test at birth can turn a devastating genetic disease into a manageable one.",
+      "title": "PKU: The Paradigm Case"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Genomic Frontier of Newborn Screening"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Today's newborn screening relies mainly on biochemical tests (measuring metabolites and analytes), not DNA sequencing. But a major question facing the field is whether to add — or eventually replace it with — genome sequencing. Genomic newborn screening (NBSeq) would read a baby's DNA directly and could, in principle, screen for hundreds or thousands of conditions rather than dozens, including many not detectable by current biochemical methods."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is being actively studied in large pilot programs. The BabySeq Project (begun in 2013 by Dr. Robert Green) was the first to sequence healthy newborns and study the effects of returning results. The GUARDIAN study, launched in 2022 in New York City with a goal of sequencing 100,000 newborns, analyzes a curated set of conditions (around 255 genes, of which roughly 156 have an established treatment). Major international programs — Generation (UK), FirstSteps (Greece), and Rady's BeginNGS — are pursuing the same question, with more than 30 initiatives worldwide."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Genomic newborn screening is genuinely promising but raises every hard issue from this course's ethics lessons, amplified. Which conditions should be reported — only treatable ones, or also untreatable and adult-onset conditions? How is consent handled for an infant who cannot consent (the pediatric-autonomy problem)? What about variants of uncertain significance and false positives at massive scale? And the diversity deficit means sequencing-based screening could be less accurate for underrepresented populations. The promise is real, but so are the unresolved ethical and equity questions, which is why it remains in carefully studied pilots rather than universal practice."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "Adding genome sequencing to newborn screening could detect far more conditions — but it raises the consent, secondary-findings, VUS, and equity issues from earlier lessons at enormous scale, and for infants who cannot consent. Which conditions to report (treatable only? adult-onset?), false positives, and the ancestry diversity deficit are all unresolved. This is why NBSeq is in studied pilots (BabySeq, GUARDIAN, Generation), not universal practice.",
+      "title": "Genomic Newborn Screening Amplifies Every Ethical Question"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Lessons from Newborn Screening"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Newborn screening teaches several things about genomic medicine done well. First, the actionability principle is everything: the program works because it screens for conditions where early detection changes outcomes, and the RUSP's inclusion criteria are built around treatability. Second, scale is achievable: genetics can be delivered to an entire population reliably and affordably when the program is well-designed. Third, public-health framing changes the ethics: the near-universal, opt-out model is justified by the magnitude of benefit to children."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "It also previews the central tension of genomics' future. Newborn screening is so successful precisely because it is narrow and disciplined — it screens only for serious, treatable conditions. Genome sequencing could vastly expand it, but expansion means confronting the trade-offs the field has so far avoided in this domain: more findings of uncertain value, harder consent, and the risk of generating anxiety or harm rather than benefit. The future of newborn screening is, in miniature, the future of genomic medicine: how to expand capability without losing the discipline that made it valuable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For clinicians and program leaders, newborn screening is both a model and a cautionary lesson. It shows what genomic medicine can achieve when focused on actionable conditions at scale — and it shows that the hard part of expansion is not the technology but the judgment about what to look for, what to report, and how to do so responsibly. The next lessons turn to other population-scale screening (carrier screening) and to the emerging multi-omics-and-AI frontier, before the course concludes with how to build a precision-medicine program in practice."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Newborn screening tests nearly every baby shortly after birth for serious, treatable conditions, so treatment can begin before irreversible harm — the largest, most successful application of genetics in public health.",
+        "It has three parts done at 24-48 hours: the heel-stick blood spot, a hearing screen, and a pulse-oximetry test.",
+        "The Recommended Uniform Screening Panel (RUSP, 35 core + 26 secondary conditions) guides which conditions to screen; states administer it, so panels vary somewhat by state.",
+        "It works because the conditions meet classic screening criteria — serious, pre-symptomatically detectable, treatable if caught early, and accurately testable (e.g., PKU, managed by diet).",
+        "Current screening is mostly biochemical, not DNA-based; genomic newborn screening (NBSeq) could detect far more conditions by reading DNA directly.",
+        "Large pilots (BabySeq from 2013, GUARDIAN from 2022 targeting 100,000 newborns, Generation, FirstSteps, BeginNGS) are studying NBSeq, but it remains in pilots, not universal practice.",
+        "Genomic newborn screening amplifies the consent, secondary-findings, VUS, and equity questions from earlier lessons — its hard part is judgment about what to report, not the technology."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "PKU is the paradigm case because it satisfies every criterion for effective screening: the baby appears completely healthy at birth, the condition causes severe and irreversible intellectual disability if untreated, and there is a treatment (a special low-phenylalanine diet) that works if started early. Detected at birth, a child with PKU develops normally; undetected, they would be permanently disabled. PKU demonstrated the entire newborn-screening paradigm — a simple test at birth turning a devastating genetic disease into a manageable one — which is why screening exists.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Because PKU cannot be treated, so screening provides closure"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Because a baby with PKU looks healthy at birth but suffers severe, irreversible disability if untreated — and early detection allows a special diet that lets the child develop normally"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Because PKU is the most common disease in newborns"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Because PKU can only be detected by genome sequencing"
+        }
+      ],
+      "question": "Why is phenylketonuria (PKU) considered the paradigm case justifying newborn screening?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Recommended Uniform Screening Panel (HRSA) — https://newbornscreening.hrsa.gov/about-newborn-screening/recommended-uniform-screening-panel — RUSP: 35 core + 26 secondary conditions; inclusion criteria"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] The Recommended Uniform Screening Panel (Baby's First Test) — https://www.babysfirsttest.org/newborn-screening/the-recommended-uniform-screening-panel — heel stick, hearing, pulse ox; state administration"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] The BabySeq Project: A clinical trial of genome sequencing in a diverse cohort of infants (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC11480845/ — first sequencing of healthy newborns; Robert Green; diverse cohort"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Universal newborn screening using genome sequencing: early experience from the GUARDIAN study (Pediatric Research / Nature) — https://www.nature.com/articles/s41390-024-03647-w — GUARDIAN, 2022, NYC; ~255 conditions, ~156 treatable; goal 100,000"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Programs around the globe bring newborn screening into the Genome Era (Illumina) — https://www.illumina.com/company/news-center/feature-articles/ngs-nbs-programs-around-the-world-GUARDIAN-and-Generation-studies.html — 30+ NBSeq initiatives; BabySeq, GUARDIAN, FirstSteps, Generation"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] The Future of Newborn Screening: Genomics and Challenges (GeneIQ) — https://geneiq.org/2025/07/07/the-future-of-newborn-screening-genomics-and-challenges/ — genomic NBS promise and ethical/equity challenges"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "genomics-precision-medicine",
+  "order": 12,
+  "slug": {
+    "_type": "slug",
+    "current": "newborn-screening-programs"
+  },
+  "title": "Newborn Screening: Public Health Genomics at Scale"
+}

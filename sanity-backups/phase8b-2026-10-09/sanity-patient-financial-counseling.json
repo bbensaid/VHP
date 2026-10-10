@@ -1,0 +1,502 @@
+{
+  "_createdAt": "2026-06-01T12:33:39Z",
+  "_id": "patient-financial-counseling",
+  "_rev": "rL4Cn5Sfo5Z8rzPmERud8e",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T12:33:39Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Patient Became a Major Payer"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "For most of the history of health insurance, the patient owed relatively little out of pocket — a small copay, perhaps. That has changed dramatically. The rise of high-deductible health plans means patients now shoulder a large and growing share of the bill, often thousands of dollars before insurance pays anything. The patient has become, in effect, one of the provider's major payers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This shift created a new front-end discipline: patient financial counseling. Its job is to help patients understand what they will owe, set up how they will pay, and ideally collect some of it up front — before the patient leaves and the balance becomes much harder to collect. It is the front-end's answer to the reality that patient balances are now a serious revenue stream and a serious collection risk."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Financial counseling also serves the patient. Surprise medical bills are a leading cause of financial distress and medical debt. Clear, upfront estimates and conversations about payment options and assistance are both good revenue-cycle practice and good patient care — one of the places where the financial and ethical interests genuinely align."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Patient financial counseling helps patients understand their out-of-pocket responsibility, arrange payment, and pay up front where possible — a front-end discipline that grew as high-deductible plans made patients a major payer."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Calculating What the Patient Owes"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A good estimate starts with the eligibility data from verification (the earlier lesson). To calculate a patient's estimated out-of-pocket responsibility, the provider combines the negotiated price for the service with the patient's specific benefit details: copay, coinsurance percentage, how much of the deductible remains, and progress toward the out-of-pocket maximum."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is genuinely hard to get right. The provider may not know in real time exactly how much of a patient's deductible has already been spent elsewhere, and some charges (pathology, anesthesia, an affiliated physician's services) come from separate billers the hospital does not control. Facility fees and unforeseen charges from complications or longer stays add further uncertainty."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because of this, an estimate is exactly that — an estimate, not a guarantee. Patients should be told clearly that the final bill may differ. Managing that expectation honestly is part of good counseling; an estimate presented as a promise sets up a dispute later when the real bill arrives."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Use the contracted rate for the planned service, not the gross charge.",
+          "title": "Get the negotiated price"
+        },
+        {
+          "_key": "step2",
+          "description": "Factor in copay, coinsurance, remaining deductible, and out-of-pocket maximum.",
+          "title": "Apply benefit details"
+        },
+        {
+          "_key": "step3",
+          "description": "Note charges from pathology, anesthesia, or affiliated physicians billed separately.",
+          "title": "Account for separate billers"
+        },
+        {
+          "_key": "step4",
+          "description": "Make clear the final bill may differ; set honest expectations.",
+          "title": "Communicate it as an estimate"
+        }
+      ],
+      "title": "Building a Patient Cost Estimate"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Legal Framework: Price Transparency"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two federal rules now require much of this estimation rather than leaving it optional. The Hospital Price Transparency rule, effective January 1, 2021, requires every U.S. hospital to post its standard charges online in two ways: a comprehensive machine-readable file covering all items and services, and a consumer-friendly display of at least 300 \"shoppable\" services (or a compliant price-estimator tool)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The machine-readable file must include gross charges, the discounted cash price, payer-specific negotiated charges, and the de-identified minimum and maximum negotiated charges. The intent is to let patients shop and compare prices — though in practice the data has been criticized as inconsistent and hard for ordinary patients to use."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For the revenue cycle, price transparency is both a compliance obligation and an opportunity. Organizations that build accurate, usable estimator tools satisfy the rule and simultaneously give their financial counselors the data to produce reliable estimates — turning a regulatory burden into a collections advantage."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "Note the distinction: price transparency applies broadly to hospital charges, while the No Surprises Act's Good Faith Estimate (next section) targets the uninsured and self-pay specifically. Both push in the same direction — patients should know costs before care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The No Surprises Act and Good Faith Estimates"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The No Surprises Act, effective January 1, 2022, added specific protections — including the Good Faith Estimate (GFE) requirement for uninsured and self-pay patients. When such a patient schedules a service (or asks), the provider must give a good faith estimate of the expected charges within defined timeframes (generally one to three business days depending on how far out the service is scheduled)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The GFE has real teeth. If the final billed charges exceed the estimate by $400 or more, the patient can use a Patient-Provider Dispute Resolution (PPDR) process — within 120 days of the bill — to challenge the charge. Crucially, while a dispute is underway, the provider may not move the bill to collections, threaten collections, or must pause collections if already started."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For the revenue cycle, this raises the stakes on estimate accuracy for self-pay patients: a lowball estimate is not just bad service, it creates a legal dispute right and a collections freeze. Done well, though, the GFE process can actually support collections — a clear, accurate estimate given upfront makes patients more willing to pay at or near the time of service."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "Under the No Surprises Act, if an uninsured/self-pay patient's final charges exceed their Good Faith Estimate by $400 or more, they can invoke dispute resolution within 120 days — and the provider must not pursue collections while the dispute is pending. Accurate self-pay estimates are both a service and a compliance necessity.",
+      "title": "A Good Faith Estimate Off by $400+ Triggers Dispute Rights"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Point-of-Service Collections and Compassion"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The payoff of good estimation is point-of-service (POS) collections — collecting the patient's expected responsibility at or before the time of care. POS collection is a tracked RCM metric because money collected upfront dramatically improves cash flow and reduces bad debt: once a patient leaves with a balance, the odds of collecting fall sharply, and half of patient balances can go unpaid."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "But POS collections must be balanced with compassion and compliance. Counseling should surface options for patients who cannot pay in full: payment plans, sliding-scale discounts, and — critically — screening for charity care and financial assistance, which nonprofit hospitals are obligated to offer. Aggressively demanding payment from a patient who qualifies for charity care is both unethical and, increasingly, legally risky."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The mature view is that financial counseling sits exactly where revenue and patient welfare meet. Done poorly, it produces surprise bills, disputes, and medical debt. Done well, it gives patients clarity and options while improving collections — converting the front-end's financial conversation from an adversarial one into a transparent, manageable part of care. This completes the front-end; the next module turns to the mid-cycle, where care becomes a coded bill."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5ex1",
+      "_type": "exampleBlock",
+      "content": "When a provider gives a patient a clear, accurate out-of-pocket estimate before a procedure, the patient can plan — and is far more likely to pay at or near the time of service.\nThis is why estimation and POS collections go together: the same data that satisfies price-transparency and Good Faith Estimate rules also gives financial counselors the basis to collect upfront, improving cash flow and reducing the bad debt that piles up once a patient leaves with an unpaid balance.",
+      "title": "Estimates That Drive Point-of-Service Collections"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "High-deductible health plans have made patients a major payer, creating the need for patient financial counseling to explain costs, arrange payment, and collect upfront.",
+        "Estimates combine the negotiated price with the patient's benefit details (copay, coinsurance, remaining deductible, out-of-pocket max) but remain estimates, not guarantees.",
+        "The Hospital Price Transparency rule (effective Jan 1, 2021) requires hospitals to post a machine-readable file of standard charges and at least 300 shoppable services or an estimator tool.",
+        "The No Surprises Act (effective Jan 1, 2022) requires Good Faith Estimates for uninsured/self-pay patients within defined timeframes.",
+        "If final charges exceed a Good Faith Estimate by $400+, the patient can invoke dispute resolution within 120 days, and collections must pause during the dispute.",
+        "Point-of-service collections — collecting the patient's responsibility at or before care — improve cash flow and reduce bad debt, since balances are far harder to collect once the patient leaves.",
+        "Counseling must balance collections with compassion and compliance, offering payment plans and screening for charity care and financial assistance."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "When billed charges exceed the Good Faith Estimate by $400 or more, the uninsured/self-pay patient can challenge the charge through the Patient-Provider Dispute Resolution process within 120 days of the bill, and the provider may not move the bill to collections (or must pause collections) while the dispute is underway. This makes accurate self-pay estimates both a service and a compliance requirement.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The provider can immediately send the full bill to collections"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The patient may use a dispute resolution process within 120 days, and the provider must not pursue collections while the dispute is pending"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The patient automatically owes only the estimate amount with no recourse"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Nothing — Good Faith Estimates are non-binding suggestions"
+        }
+      ],
+      "question": "Under the No Surprises Act, what happens if an uninsured patient's final bill exceeds their Good Faith Estimate by $400 or more?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Providers: Payment Resolution with Patients / No Surprises Act (CMS) — https://www.cms.gov/nosurprises/providers-payment-resolution-with-patients — Good Faith Estimate for uninsured/self-pay; $400 dispute threshold; PPDR; collections pause"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] The No Surprises Act's Good Faith Estimates (Burr & Forman) — https://www.burr.com/newsroom/articles/the-no-surprises-acts-good-faith-estimates-what-every-provider-needs-to-know — effective Jan 1, 2022; GFE timeframes; 120-day dispute window"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Hospital Price Transparency (CMS) — https://www.cms.gov/priorities/key-initiatives/hospital-price-transparency — effective Jan 1, 2021; machine-readable file; 300 shoppable services; charge types"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Point of Service (POS) Collections (MD Clarity) — https://www.mdclarity.com/rcm-metrics/point-of-service-pos-collections — POS collections as RCM metric; cash flow and bad-debt reduction"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Why Your Surgery Bill Can Be Higher Than the Estimate (Carrum Health) — https://carrumhealth.com/your-surgery-bill-can-be-a-lot-higher-than-the-estimate-youre-given/ — separate billers, facility fees, complications driving variance from estimates"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Half of Hospital Bills Go Unpaid (CarePayment) — https://www.carepayment.com/the-price-of-unpaid-medical-bills/ — high-deductible plans, rising patient responsibility, bad debt"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "revenue-cycle-management",
+  "order": 6,
+  "slug": {
+    "_type": "slug",
+    "current": "patient-financial-counseling"
+  },
+  "title": "Patient Financial Counseling and Estimates"
+}

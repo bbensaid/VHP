@@ -1,0 +1,80 @@
+{
+  "id": "55eb9069-6bc6-45c0-8edd-9d51ebfb7b72",
+  "track_id": "95e1411d-62ce-4872-8f02-04dc41fed7ff",
+  "pillar": "economics",
+  "order": 1,
+  "slug": "hospital-business-model",
+  "title": "The Hospital Business Model",
+  "summary": "Hospitals operate as complex enterprises balancing mission and margin across nonprofit, for-profit, and government structures. This lesson examines how hospitals generate revenue and why financial sustainability is a prerequisite for serving communities.",
+  "estimated_minutes": 25,
+  "objectives": [
+    "Distinguish between nonprofit, for-profit, and government hospital ownership structures and their financial implications",
+    "Explain how hospitals earn revenue through patient services, investments, and auxiliary operations",
+    "Describe the relationship between financial margin and mission sustainability"
+  ],
+  "content_blocks": [
+    {
+      "body": "Hospitals in the United States operate under three primary ownership structures, each with distinct financial rules.\n\n**Nonprofit (501(c)(3)):** The majority of U.S. hospitals—about 58%—are nonprofit. They are exempt from federal and most state income taxes and can issue tax-exempt bonds. In exchange, the IRS requires them to provide community benefit and file Form 990, which discloses executive compensation, charity care, and community investment. FASB ASC 954 governs their accounting standards.\n\n**For-Profit:** Investor-owned systems like HCA Healthcare and Tenet report to shareholders and pay corporate income tax. They access capital through equity markets and taxable debt but are not bound by community benefit mandates.\n\n**Government (Public):** County, district, and state hospitals receive tax appropriations and may have political governance through elected boards. They often serve as safety-net providers with higher Medicaid and uninsured patient volumes.",
+      "type": "text",
+      "heading": "Three Ownership Models, Three Financial Realities"
+    },
+    {
+      "type": "concepts_grid",
+      "concepts": [
+        {
+          "term": "FASB ASC 954",
+          "definition": "The FASB accounting standard that governs financial reporting for healthcare entities, including rules for patient service revenue recognition and charity care disclosure."
+        },
+        {
+          "term": "Form 990",
+          "definition": "IRS annual information return required of nonprofit hospitals, disclosing revenues, expenses, executive pay, and community benefit spending."
+        },
+        {
+          "term": "Tax-Exempt Bonds",
+          "definition": "Municipal bonds issued by nonprofit hospitals at lower interest rates because interest income is exempt from federal taxes for bondholders."
+        },
+        {
+          "term": "Community Benefit",
+          "definition": "Goods and services provided by nonprofit hospitals to meet IRS 501(c)(3) requirements, including charity care, Medicaid shortfall, medical education, and community health programs."
+        }
+      ]
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Nonprofit hospitals",
+          "value": "58%",
+          "context": "Share of U.S. hospitals operating as 501(c)(3) nonprofits, exempt from federal income taxes"
+        },
+        {
+          "label": "Target operating margin",
+          "value": "2–4%",
+          "context": "HFMA benchmark for a financially healthy hospital; below 1% signals distress"
+        },
+        {
+          "label": "Annual hospital spending",
+          "value": "$1.3T",
+          "context": "Total U.S. hospital expenditures, making hospitals the single largest component of healthcare spending"
+        }
+      ]
+    },
+    {
+      "body": "The axiom 'no margin, no mission' captures the fundamental tension in hospital finance. Even mission-driven nonprofits must generate operating surplus to fund capital reinvestment, absorb payment cuts, and build reserves against downturns. A hospital running at breakeven cannot replace aging equipment, recruit specialists, or weather a pandemic.",
+      "type": "callout",
+      "title": "No Margin, No Mission",
+      "variant": "key"
+    }
+  ],
+  "tags": [
+    "business model",
+    "nonprofit",
+    "hospital ownership",
+    "revenue"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:34:34.177471+00:00",
+  "updated_at": "2026-06-01T13:29:14.08186+00:00",
+  "sanity_slug": "hospital-business-model"
+}

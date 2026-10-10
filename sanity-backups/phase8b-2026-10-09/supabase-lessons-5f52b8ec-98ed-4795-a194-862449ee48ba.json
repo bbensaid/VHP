@@ -1,0 +1,75 @@
+{
+  "id": "5f52b8ec-98ed-4795-a194-862449ee48ba",
+  "track_id": "3bd5c937-6231-4c89-a48f-02a99487b792",
+  "pillar": "policy",
+  "order": 1,
+  "slug": "rfp-process-mco-selection",
+  "title": "The RFP Process: How States Select MCOs",
+  "summary": "Walks through the competitive procurement process states use to select Medicaid MCOs, from RFP development through evaluation, negotiation, and contract award.",
+  "estimated_minutes": 20,
+  "objectives": [
+    "Describe the key phases of a state Medicaid MCO procurement process",
+    "Explain the role of CMS review and approval in MCO contract awards",
+    "Identify common evaluation criteria states use in scoring MCO proposals"
+  ],
+  "content_blocks": [
+    {
+      "body": "States procure Medicaid MCO contracts through formal competitive procurement, typically a Request for Proposals (RFP). The process must comply with federal procurement standards at 42 CFR §438.3 and state procurement law. CMS must review and approve contracts before they take effect.\n\n**Typical RFP Timeline:**\n1. **Planning Phase** (6–12 months pre-RFP): State defines service regions, populations, benefit packages, and contract terms\n2. **RFP Release**: Public posting with 60–90 day response window; bidder conferences and Q&A\n3. **Proposal Evaluation**: Scored by technical review panels — often includes site visits and oral presentations\n4. **Negotiation and Award**: State negotiates final contract terms; losers may protest\n5. **CMS Review**: State submits executed contract; CMS has 90 days to review\n6. **Implementation**: Enrollment transition, readiness review, go-live",
+      "type": "text",
+      "heading": "The Competitive Procurement Process"
+    },
+    {
+      "body": "Under 42 CFR §438.3, all Medicaid managed care contracts must be submitted to CMS for review. CMS can withhold approval if contracts don't meet federal requirements. States submit contracts via the Medicaid contract review portal. CMS's review focuses on compliance with network adequacy, enrollee protections, quality requirements, and actuarial soundness.",
+      "type": "callout",
+      "title": "CMS Contract Review Authority",
+      "variant": "info"
+    },
+    {
+      "type": "concepts_grid",
+      "concepts": [
+        {
+          "term": "RFP (Request for Proposals)",
+          "definition": "Formal procurement document that defines contract requirements and invites competitive bids from qualified MCOs"
+        },
+        {
+          "term": "Readiness Review",
+          "definition": "Pre-go-live assessment of MCO operational readiness: network, IT systems, care management, grievance processes"
+        },
+        {
+          "term": "Contract Region",
+          "definition": "Geographic service area for which an MCO holds a contract — states may have 1 statewide region or multiple regional contracts"
+        },
+        {
+          "term": "Procurement Protest",
+          "definition": "Formal challenge by a losing bidder contesting the award; states must have a defined protest resolution process"
+        }
+      ]
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "CMS contract review window",
+          "value": "90 days",
+          "context": "CMS has up to 90 days to review and approve submitted Medicaid managed care contracts"
+        },
+        {
+          "label": "Typical number of MCOs per state market",
+          "value": "3–5",
+          "context": "Most state Medicaid programs contract with 3 to 5 MCOs to maintain competition while ensuring viable plan size"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "RFP",
+    "procurement",
+    "MCO selection",
+    "contracting"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:07.175052+00:00",
+  "updated_at": "2026-06-01T13:29:15.148696+00:00",
+  "sanity_slug": "rfp-process-mco-selection"
+}

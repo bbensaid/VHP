@@ -1,0 +1,479 @@
+{
+  "_createdAt": "2026-05-31T18:15:26Z",
+  "_id": "value-based-purchasing-medicaid",
+  "_rev": "rL4Cn5Sfo5Z8rzPmEH4bwP",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T18:15:26Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Pushing Value Down to the Provider"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A subtle but important point runs through this entire course: capitating an MCO transfers risk to the plan, but it does not automatically change how that plan pays the doctors and hospitals delivering care. An MCO can receive a capitated, value-oriented payment from the state and then turn around and pay its providers on straight fee-for-service — recreating the very volume incentives managed care was supposed to escape, just one layer down. Value-based purchasing (VBP) in Medicaid managed care is the effort to close that gap: to push value-based payment all the way down from the state, through the MCO, to the providers who actually deliver care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This matters because the state’s ultimate goal is better care at sustainable cost, and that depends on the incentives facing the people at the bedside, not just the plan’s balance sheet. So states increasingly use their contracts with MCOs to require or encourage the plans to adopt value-based arrangements with their providers — shared savings, bundled payments, capitation, pay-for-performance, and the like. VBP in Medicaid is, in essence, the state using its leverage over MCOs to spread value-based payment throughout the delivery system."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson examines how states drive provider-level value-based payment through their MCOs, the frameworks they use to define it, the targets they set, and the powerful financial mechanism — state directed payments — that increasingly carries these efforts. It connects the risk continuum from the hospital-finance course directly to the Medicaid managed care machinery built throughout this one."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: Value-based purchasing (VBP) in Medicaid managed care is the state’s use of its MCO contracts to require or encourage plans to pay their providers through value-based arrangements (shared savings, bundles, capitation, pay-for-performance) — pushing value-based payment from the state, through the plan, to the provider level."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "About 26 states define the types of value-based payment model their MCOs must use with providers, and 19 set minimum VBP \"saturation\" targets (Guidehouse / MACPAC)",
+          "label": "Define Required VBP Models",
+          "value": "26 states"
+        },
+        {
+          "_key": "s2",
+          "context": "State directed payment arrangements approved as of August 2024 are projected to total $110.2 billion a year — up nearly 60% from $69.3 billion in early 2023 (MACPAC)",
+          "label": "State Directed Payments",
+          "value": "$110.2B/yr"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How States Drive VBP Through MCOs"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "States generally use two approaches to drive value-based payment through their Medicaid MCOs. The first is setting value-based payment targets — requiring that a certain percentage of an MCO’s provider payments flow through value-based arrangements, without dictating exactly which models. The second is prescriptively directing MCOs to adopt specific payment models — telling plans precisely what kind of value-based arrangement to use. Many states blend the two: setting an overall target while specifying acceptable model types."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The trend is unmistakably toward more requirements. More states are requiring the use of VBP or alternative payment models in the contracts between their MCOs and providers, with roughly 26 states defining the types of VBP model that MCOs must use. This reflects a recognition that simply capitating the MCO is not enough — the state must affirmatively require the plan to transmit value-based incentives to providers, or the plan may default to paying providers in ways that perpetuate volume-driven care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "To make targets concrete, states set saturation targets — the share of MCO payments that must be value-based — and often ramp them up over time. About 19 states have set required minimum saturation targets, and a classic example is Arizona, where the required proportion of MCO revenues in value-based arrangements started at 5% in 2013, rose to 10% in 2014, and climbed to 20% in 2015 and 2016. This gradual ramp gives plans and providers time to build the capabilities value-based payment requires while steadily increasing the pressure to adopt it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2steps1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Require a minimum percentage of MCO provider payments to flow through value-based arrangements, ramped up over time.",
+          "title": "Set VBP targets"
+        },
+        {
+          "_key": "step2",
+          "description": "Direct MCOs to adopt particular payment models (e.g., shared savings, bundled payments, or specified arrangements).",
+          "title": "Prescribe specific models"
+        },
+        {
+          "_key": "step3",
+          "description": "Specify which model types qualify, often using a common framework like HCP-LAN categories.",
+          "title": "Define acceptable arrangements"
+        },
+        {
+          "_key": "step4",
+          "description": "Track each MCO’s VBP saturation and tie it to contract compliance.",
+          "title": "Measure and enforce"
+        }
+      ],
+      "title": "Two State Approaches to VBP"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The HCP-LAN Framework: A Common Language"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A challenge in requiring VBP is defining what actually counts as \"value-based.\" Without a common standard, every state and plan might define it differently, making targets meaningless and comparison impossible. To solve this, many states adopt the Health Care Payment Learning & Action Network (HCP-LAN) framework, a widely used classification that sorts payment arrangements into categories by how much they tie payment to value and risk — from pure fee-for-service (Category 1), to fee-for-service linked to quality (Category 2), to alternative payment models built on fee-for-service architecture (Category 3), to population-based payment (Category 4)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The framework gives states a precise vocabulary for their requirements. About 17 states specifically reference the HCP-LAN framework in defining acceptable VBP arrangements, and of those, 10 specify the categories MCOs should use — usually HCP-LAN Category 2C or higher, meaning at least fee-for-service tied to quality and ideally more advanced models. Even states that do not explicitly cite HCP-LAN typically use definitions that align with or overlap its categories. The framework has become the de facto common language for Medicaid VBP, letting a state say exactly how far up the value ladder it expects its plans to push."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This connects directly to the risk continuum from earlier study. HCP-LAN’s categories essentially map the same spectrum — from no risk (fee-for-service) through pay-for-performance and shared savings up to full population-based capitation. When a state requires its MCOs to move providers to \"Category 3 or higher,\" it is requiring them to move providers up the risk continuum into shared savings and beyond. The framework is how that abstract continuum becomes a concrete, measurable contract requirement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "State Directed Payments: The Growing Mechanism"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most consequential and fastest-growing tool for VBP in Medicaid managed care is the state directed payment (SDP). Created when CMS updated the managed care regulations in 2016, SDPs allow a state to direct how its MCOs pay providers — overriding the normal rule that plans set their own provider rates. Through SDPs, a state can require MCOs to use minimum or maximum fee schedules, make uniform rate increases for selected providers, require participation in multi-payer models, or require providers to participate in value-based purchasing arrangements. SDPs are how a state reaches through the MCO to shape provider payment directly."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "SDPs have exploded in scale. Between February 2023 and August 2024, CMS approved 302 state directed payment arrangements across 40 states and Puerto Rico, and the arrangements approved as of August 2024 are projected to spend $110.2 billion a year — nearly a 60% increase over the $69.3 billion projected just eighteen months earlier. This staggering growth reflects how central SDPs have become to state Medicaid strategy, both for raising provider payment (often toward Medicare levels) and for advancing value-based and quality goals. The VBP-oriented SDPs tie payments to metrics like patient satisfaction, reduced readmissions, and improved chronic-disease management."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This rapid growth drew regulatory attention. In 2024, CMS released a managed care rule with additional updates intended to improve the oversight and transparency of directed payments — a response to concerns that SDPs were growing so fast, and channeling so much money, that they needed tighter guardrails. States now report a range of evaluation measures for their SDPs, such as hospitalization and readmission rates, utilization and timeliness of preventive and specialty care, and outcomes for common chronic conditions, so the billions flowing through SDPs can be tied to demonstrable results rather than simply raising payments."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "State directed payments let states reach through MCOs to shape provider payment and advance value-based goals, but their explosive growth to $110+ billion a year prompted CMS to tighten oversight and transparency in 2024. The same mechanism that can drive value-based purchasing can also simply inflate payments, which is why CMS is demanding clearer evaluation of what SDPs actually achieve.",
+      "title": "SDPs Are Powerful — and Under Scrutiny"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why VBP Ties the Course Together"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Value-based purchasing is where Medicaid managed care reconnects with the broader value-based-care movement that this body of study began with. Everything earlier in this course built the machinery of managed care — selecting plans, setting rates, ensuring networks and quality, overseeing performance. VBP is the layer that aims that machinery at the ultimate goal: not just transferring risk to plans, but actually changing how care is paid for and delivered all the way to the provider, so that value, not volume, drives the system from top to bottom."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "A state requiring VBP through its MCOs is like a parent company that pays its regional managers (the MCOs) a fixed budget and then insists those managers also pay their store employees (providers) based on customer satisfaction and results, not just hours worked. Without that insistence, a regional manager might pocket the efficiency and still pay employees the old way — so the incentive to improve never reaches the front line. VBP requirements, HCP-LAN categories, and state directed payments are the parent company’s way of making sure the new incentives flow all the way down to where the work actually happens.",
+      "concept": "Pushing value-based payment to the provider level"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The honest caveat is that requiring VBP does not guarantee it works. As the hospital-finance course showed, value-based payment’s benefits depend on execution — providers must have the data, scale, and capabilities to manage risk, and shared savings must actually offset lost volume. A state can mandate that 50% of MCO payments be \"value-based\" and still see little change if the underlying arrangements are weak (mere pay-for-performance bonuses rather than real risk) or if providers lack the infrastructure to respond. The targets and frameworks are necessary scaffolding, but the building still depends on genuine capability beneath them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson opens the final module by showing Medicaid managed care reaching toward value. The next lesson, on Section 1115 waivers, examines the federal authority that lets states innovate beyond standard rules — including many of the boldest VBP and delivery-reform experiments. And the closing lesson looks at where the whole field is heading, toward social determinants and whole-person care. Value-based purchasing is the bridge: it takes the managed care structure built across this course and points it at the same destination the entire value-based-care movement is pursuing — paying for health and outcomes rather than volume of services."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "Value-based purchasing (VBP) in Medicaid managed care is the state’s use of MCO contracts to require or encourage plans to pay their providers through value-based arrangements, pushing value-based payment from the state through the plan to the provider level.",
+        "It matters because capitating an MCO does not change how the MCO pays providers; without VBP requirements, plans may keep paying providers fee-for-service and recreate volume incentives one layer down.",
+        "States drive VBP two ways: setting value-based payment targets (a minimum share of payments that must be value-based) and prescriptively directing MCOs to adopt specific models, often combined.",
+        "About 26 states define required VBP model types and 19 set minimum saturation targets, frequently ramped over time — Arizona moved from 5% of MCO revenues in value-based arrangements in 2013 to 20% by 2015–2016.",
+        "Many states use the HCP-LAN framework to define \"value-based,\" with ~17 referencing it and 10 specifying categories (usually Category 2C or higher); the framework maps the same risk continuum from fee-for-service to population-based payment.",
+        "State directed payments (SDPs), created by CMS in 2016, let states direct how MCOs pay providers — including requiring VBP participation — and have grown explosively to a projected $110.2 billion a year as of August 2024 (302 arrangements in 40 states), up ~60% in 18 months.",
+        "The rapid SDP growth prompted CMS to tighten oversight and transparency in 2024 and to require evaluation measures (readmissions, preventive care, chronic-disease outcomes), since SDPs can either advance value or simply inflate payments.",
+        "Requiring VBP does not guarantee results — benefits depend on execution, provider capability, and whether the arrangements involve real risk — so targets and frameworks are necessary scaffolding but not sufficient on their own."
+      ]
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Guidehouse: \"Most States Require Managed Care Organizations to Implement VBP Models with Providers\" — https://guidehouse.com/insights/healthcare/2022/blogs/managed-care-implement-vbp-models — ~26 states defining required VBP model types, 17 referencing HCP-LAN, 10 specifying categories (often 2C+), and 19 setting saturation targets."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] MACPAC: \"State Strategies to Promote Value-Based Payment Through Medicaid Managed Care\" — https://www.macpac.gov/wp-content/uploads/2020/03/Final-Report-on-State-Strategies-to-Promote-Value-Based-Payment-through-Medicaid-Mananged-Care-Final-Report.pdf — the two approaches (targets vs. prescriptive models) and Arizona’s 5%→20% saturation ramp."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CHCS: \"Value-Based Payments in Medicaid Managed Care: An Overview of State Approaches\" — https://www.chcs.org/resource/value-based-payments-in-medicaid-managed-care-an-overview-of-state-approaches/ — how states push VBP through MCOs to providers and the HCP-LAN framework."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] MACPAC: \"Directed Payments in Medicaid Managed Care\" (Oct 2024) — https://www.macpac.gov/wp-content/uploads/2024/10/Directed-Payments-in-Medicaid-Managed-Care.pdf — 302 SDP arrangements in 40 states and Puerto Rico; $110.2 billion/year projected as of August 2024, up ~60% from $69.3 billion."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Medicaid.gov: \"State Directed Payments\" — https://www.medicaid.gov/medicaid/managed-care/guidance/state-directed-payments — SDP authority (2016 rule), allowable types including requiring VBP participation, and 2024 oversight/transparency updates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Center for Children and Families (Georgetown): \"Improving Access in Medicaid Managed Care Using State Directed Payments\" — https://ccf.georgetown.edu/2024/07/10/improving-access-in-medicaid-managed-care-using-state-directed-payments/ — quality-incentive metrics (readmissions, preventive/specialty care, chronic-condition outcomes) tied to directed payments."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicaid-managed-care-operations",
+  "order": 15,
+  "slug": {
+    "_type": "slug",
+    "current": "value-based-purchasing-medicaid"
+  },
+  "title": "Value-Based Purchasing in Medicaid Managed Care"
+}

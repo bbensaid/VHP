@@ -1,0 +1,526 @@
+{
+  "_createdAt": "2026-06-01T00:44:44Z",
+  "_id": "medicaid-hcbs-waivers",
+  "_rev": "glqH7a4yvZFQerxZdUMBcB",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T00:44:44Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Institutional Bias Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicaid is the nation's primary payer for long-term services and supports (LTSS) — the help people with disabilities and frail older adults need with daily activities like bathing, dressing, eating, and managing medications. But for much of Medicaid's history, the program was structurally tilted toward providing that help in institutions rather than in people's own homes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The tilt comes from the statute itself. Under federal Medicaid rules, coverage of nursing facility care is mandatory — every state must cover it — while coverage of most home- and community-based services (HCBS) is optional. This asymmetry is known as Medicaid's \"institutional bias.\""
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The bias also appears in eligibility. In many cases, individuals can qualify for Medicaid at a higher income and asset threshold when they receive nursing facility care than when they receive personal care or home health care at home — nudging people toward the very institutional settings that most would prefer to avoid."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicaid's \"institutional bias\" exists because federal law makes nursing facility coverage mandatory but most home- and community-based services (HCBS) optional — historically steering people toward institutions rather than home-based care."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 1915(c) Waiver Solution"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Congress created a fix in 1981: the Section 1915(c) home- and community-based services waiver. This authority lets states offer a broad range of home-based services to people who would otherwise require institutional care — directly countering the institutional bias built into the base program."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The logic of a 1915(c) waiver is a trade. To enroll, a person must have a level of need that would qualify them for an institutional benefit, such as nursing facility care. In exchange, the state can wrap services around them at home — personal care, respite, home modifications, supported employment, day programs, and more — that traditional Medicaid would not otherwise cover."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "There is a financial guardrail: the services a person receives under the waiver must, on average, cost no more than the institutional care they would otherwise need. The waiver is meant to be a cost-effective substitute for institutionalization, not an open-ended new benefit."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "The person must need a level of care that would qualify for an institutional Medicaid benefit, like nursing facility care.",
+          "title": "Establish institutional level of need"
+        },
+        {
+          "_key": "step2",
+          "description": "The state provides HCBS — personal care, respite, home modifications, supported employment, and more.",
+          "title": "Offer home-based alternatives"
+        },
+        {
+          "_key": "step3",
+          "description": "Average waiver costs must not exceed what institutional care would have cost.",
+          "title": "Stay cost-neutral"
+        },
+        {
+          "_key": "step4",
+          "description": "States may limit the waiver to specific groups, such as people with I/DD or older adults.",
+          "title": "Target the population"
+        }
+      ],
+      "title": "How a 1915(c) Waiver Works"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Olmstead: When the Supreme Court Stepped In"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The push toward community-based care got a powerful boost from the courts. In Olmstead v. L.C., decided June 22, 1999, the Supreme Court held that the unjustified institutional segregation of people with disabilities is a form of discrimination prohibited by Title II of the Americans with Disabilities Act."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The case involved two women in Georgia, Lois Curtis and Elaine Wilson, who had been kept confined in a state psychiatric hospital for years after clinicians agreed they were ready for community placement. The Court established a three-part test: community placement is required when treatment professionals deem it appropriate, the individual does not oppose it, and it can be reasonably accommodated given the state's resources and the needs of others."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This principle, known as the ADA's \"integration mandate,\" reframed home- and community-based care as a civil right rather than merely a policy option. It created sustained legal pressure on states to expand HCBS and reduce unnecessary institutionalization."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3q1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3q1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Unjustified institutional segregation of people with disabilities is a form of discrimination under the Americans with Disabilities Act — the core holding of Olmstead v. L.C. (1999)."
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Rebalancing of Long-Term Care"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Together, the 1915(c) waiver authority and the Olmstead decision drove a dramatic \"rebalancing\" of Medicaid long-term care away from institutions and toward the community. The shift over two decades was profound."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "In 1999, when Olmstead was decided, about 27 percent of Medicaid LTSS spending went to home- and community-based services and roughly 73 percent went to institutional care. By 2020, those proportions had essentially flipped: around 63 percent of LTSS spending went to HCBS and only about 38 percent to institutions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This reversal represents one of the most significant structural changes in the history of American long-term care — moving from a system that assumed institutional placement to one in which most Medicaid long-term care dollars now support people living in their own homes and communities."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Authority to offer HCBS as an alternative to institutions (CRS)",
+          "label": "1915(c) Waiver Created",
+          "value": "1981"
+        },
+        {
+          "_key": "s2",
+          "context": "Unjustified institutionalization ruled ADA discrimination (Supreme Court)",
+          "label": "Olmstead Decision",
+          "value": "1999"
+        },
+        {
+          "_key": "s3",
+          "context": "Shift from 1999 to 2020 (KFF / Disability Justice)",
+          "label": "HCBS Share of LTSS Spending",
+          "value": "27% → 63%"
+        },
+        {
+          "_key": "s4",
+          "context": "Declined over the same period (KFF)",
+          "label": "Institutional Share of LTSS",
+          "value": "73% → 38%"
+        }
+      ]
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Waiting Lists: The Catch"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "There is a major catch to HCBS waivers. Because most HCBS are optional, states are allowed to cap the number of people they serve under a waiver — limiting the number of \"slots.\" When demand for home-based services exceeds the available slots, the result is a waiting list."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "These waiting lists are large and persistent. Roughly 700,000 people were on HCBS waiver waiting lists in 2016, and about 710,000 in 2023 — meaning hundreds of thousands of people who qualify for home-based care must wait, sometimes for years, for a slot to open. People with intellectual and developmental disabilities (I/DD) make up about two-thirds of those waiting."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Waiting lists expose the central tension of the HCBS waiver model: institutional care is a mandatory entitlement that no one waits for, while community-based care — the option most people prefer — can be capped and rationed. This is why advocates continue to push for stronger HCBS guarantees, and why waiting-list size is a closely watched measure of how well a state is meeting the spirit of Olmstead."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "Because nursing facility care is a mandatory Medicaid benefit but HCBS is optional and can be capped, a person can be entitled to institutional care immediately while waiting years for a home-based waiver slot — the opposite of what most people want.",
+      "title": "Nursing Homes Have No Waiting List — Home Care Often Does"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Medicaid is the primary payer for long-term services and supports, but the statute creates an \"institutional bias\" because nursing facility care is mandatory while most HCBS is optional.",
+        "The Section 1915(c) waiver, created in 1981, lets states offer home- and community-based services to people who would otherwise need institutional care.",
+        "To use a 1915(c) waiver, a person must meet an institutional level of need, and average waiver costs must not exceed the cost of institutional care.",
+        "In Olmstead v. L.C. (1999), the Supreme Court ruled that unjustified institutionalization of people with disabilities is discrimination under the ADA.",
+        "Olmstead established the ADA's \"integration mandate,\" reframing community-based care as a civil right and pressuring states to expand HCBS.",
+        "Medicaid LTSS spending rebalanced dramatically — from about 27% on HCBS in 1999 to roughly 63% by 2020, with institutional spending falling correspondingly.",
+        "Because HCBS is optional and states can cap waiver slots, roughly 700,000 people sit on HCBS waiting lists, about two-thirds of them people with intellectual/developmental disabilities."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Unlike mandatory nursing facility coverage, most HCBS is optional and offered through waivers that let states limit the number of people served. When demand exceeds the available slots, waiting lists form — which is why someone can be entitled to institutional care immediately yet wait years for home-based services.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Federal law prohibits states from offering HCBS"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Most HCBS is optional, so states are allowed to cap the number of waiver slots they fund"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Nursing facility care is optional and frequently unavailable"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "HCBS waivers were eliminated by the Olmstead decision"
+        }
+      ],
+      "question": "Why can hundreds of thousands of people end up on waiting lists for Medicaid home- and community-based services (HCBS)?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Medicaid Section 1915(c) Home- and Community-Based Services Waivers — https://www.congress.gov/crs-product/R48519 — 1915(c) created 1981; institutional level-of-need requirement; cost-neutrality"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Home & Community-Based Services 1915(c) — https://www.medicaid.gov/medicaid/home-community-based-services/home-community-based-services-authorities/home-community-based-services-1915c — HCBS as alternative to institutional care"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Olmstead v. L.C., 527 U.S. 581 (1999) — https://supreme.justia.com/cases/federal/us/527/581/ — unjustified institutionalization is ADA discrimination; three-part test"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Olmstead v. L.C. — Disability Justice — https://disabilityjustice.org/olmstead-v-lc/ — HCBS share of LTSS spending rose from 27% (1999) to 63% (2020)"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] A Look at Waiting Lists for Medicaid Home- and Community-Based Services — https://www.kff.org/medicaid/a-look-at-waiting-lists-for-medicaid-home-and-community-based-services-from-2016-to-2024/ — ~700,000 on waiting lists; states cap waiver slots"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Key Questions About Medicaid HCBS Waiver Waiting Lists — https://www.kff.org/medicaid/issue-brief/key-questions-about-medicaid-home-and-community-based-services-waiver-waiting-lists/ — people with I/DD ~two-thirds of waiting-list enrollment"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicaid-101",
+  "order": 8,
+  "slug": {
+    "_type": "slug",
+    "current": "medicaid-hcbs-waivers"
+  },
+  "title": "HCBS Waivers: Care at Home Instead of in Institutions"
+}

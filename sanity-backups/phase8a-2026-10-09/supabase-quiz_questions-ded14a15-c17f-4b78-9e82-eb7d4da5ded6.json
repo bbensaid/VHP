@@ -1,0 +1,9 @@
+{
+  "id": "ded14a15-c17f-4b78-9e82-eb7d4da5ded6",
+  "quiz_id": "202fd73e-8023-4fc4-b876-3e33b5e5639d",
+  "order": 2,
+  "question_type": "single_choice",
+  "question": "What does the disparity-dashboard research literature identify as the common failure mode?",
+  "explanation": "The consistent finding is that stratified dashboards are common, but ones tied to a real accountability structure that acts on the data are much rarer — measurement without an owner tends to just sit in a report.",
+  "points": 1
+}

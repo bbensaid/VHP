@@ -1,0 +1,60 @@
+{
+  "id": "7fab9118-9fc5-4001-82e1-004680f158d7",
+  "track_id": "052c58d9-4d92-4fe6-b1b2-7f732cbf8ad3",
+  "pillar": "technology",
+  "order": 2,
+  "slug": "predictive-analytics-population-health",
+  "title": "Predictive Analytics: From Risk Scores to Actionable Insights",
+  "summary": "Modern population health platforms use machine learning to predict specific outcomes — hospital admissions, readmissions, ED visits, medication non-adherence. This lesson covers how predictive models are built, validated, and deployed in care management workflows.",
+  "estimated_minutes": 22,
+  "objectives": [
+    {
+      "id": "obj-ph-005-1",
+      "text": "Describe how predictive models differ from traditional risk scoring"
+    },
+    {
+      "id": "obj-ph-005-2",
+      "text": "Identify common prediction targets in population health analytics"
+    },
+    {
+      "id": "obj-ph-005-3",
+      "text": "Explain what model validation means and why it matters"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Traditional risk scoring asks: *Based on diagnosed conditions, how expensive is this patient likely to be?* Predictive analytics asks something more specific: *What is the probability this patient will be admitted to the hospital in the next 90 days?* — and it uses a much richer feature set to answer.",
+      "type": "text"
+    },
+    {
+      "text": "Common Prediction Targets",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "**30-day readmission** — Which patients discharged from the hospital are likely to return within 30 days? CMS's LACE score (Length of stay, Acuity, Comorbidities, ED visits) is a simple validated tool; ML models now incorporate dozens of additional features.\n\n**Avoidable ED visits** — Which patients with manageable conditions (UTI, asthma exacerbation, CHF decompensation) are likely to visit the ED rather than primary care?\n\n**Medication non-adherence** — Which patients on critical medications (statins, antihypertensives, diabetes drugs) are likely to discontinue? Pharmacy fill data is the most reliable signal.\n\n**Disease progression** — Which patients with pre-diabetes are likely to develop Type 2 diabetes within 2 years? Early intervention changes the trajectory.\n\n**New high-cost diagnosis** — Which currently moderate-risk patients are on a trajectory toward high-cost conditions?",
+      "type": "text"
+    },
+    {
+      "text": "Building and Validating Models",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Effective predictive models require:\n\n**Training data.** Historical claims, clinical, and pharmacy data with labeled outcomes (did this patient get admitted or not?).\n\n**Feature engineering.** Transforming raw data into predictive features — number of ED visits in prior 6 months, gap in medication fills, absence of PCP visit in 12 months.\n\n**Model selection.** Logistic regression, gradient boosting, random forests, and neural networks are all used. Simpler models are often preferred for interpretability in clinical settings.\n\n**Validation.** Models must be tested on held-out data to measure performance — typically using AUROC (area under the ROC curve), sensitivity/specificity, and positive predictive value.\n\n**Fairness auditing.** Models trained on biased historical data can perpetuate disparities. Auditing model performance by race, geography, and socioeconomic status is essential.",
+      "type": "text"
+    },
+    {
+      "body": "A 2021 JAMA Internal Medicine study found Epic's widely-deployed sepsis prediction model performed poorly in real-world validation — AUROC of 0.63 vs. 0.76 claimed. This case underscored the importance of independent external validation before clinical deployment of predictive models.",
+      "type": "callout",
+      "title": "The Epic Sepsis Model Controversy",
+      "variant": "warning"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:59.319444+00:00",
+  "updated_at": "2026-06-01T17:44:36.439022+00:00",
+  "sanity_slug": "predictive-analytics-population-health"
+}

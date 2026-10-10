@@ -1,0 +1,95 @@
+{
+  "id": "d364b782-f8d1-4ed4-bdc9-5c429cbae045",
+  "track_id": "3bd5c937-6231-4c89-a48f-02a99487b792",
+  "pillar": "policy",
+  "order": 2,
+  "slug": "contract-requirements",
+  "title": "Contract Requirements: Network Adequacy, QA, Reporting",
+  "summary": "Details the mandatory contract provisions states must include in Medicaid MCO contracts under federal law, covering network standards, quality assurance programs, and encounter data reporting.",
+  "estimated_minutes": 25,
+  "objectives": [
+    "List the mandatory contract elements required under 42 CFR Part 438",
+    "Explain network adequacy standards including time-and-distance requirements",
+    "Describe encounter data reporting requirements and their role in oversight"
+  ],
+  "content_blocks": [
+    {
+      "body": "Under 42 CFR §438.3, Medicaid MCO contracts must include specific mandatory provisions. These include: enrollee rights and protections; grievance and appeal procedures; coverage and authorization of services; marketing and enrollment standards; confidentiality; information and reporting requirements; program integrity provisions; and quality measurement and improvement requirements.\n\nContracts must also specify the MCO's service area, covered populations, benefit package, and capitation payment methodology. States may not delegate these requirements away — the MCO remains directly responsible for compliance.",
+      "type": "text",
+      "heading": "Mandatory Contract Provisions"
+    },
+    {
+      "body": "MCOs must submit complete and accurate encounter data — records of every service provided to enrollees — to the state. Under 42 CFR §438.818, states must certify encounter data completeness and accuracy to CMS. CMS uses encounter data for rate-setting, quality measurement, and fraud detection. Incomplete encounter data was a major finding in OIG audits of multiple state Medicaid programs in 2019–2022.",
+      "type": "callout",
+      "title": "Encounter Data: A Critical Oversight Tool",
+      "variant": "warning"
+    },
+    {
+      "rows": [
+        [
+          "Maximum Travel Distance (urban)",
+          "30 miles",
+          "75 miles",
+          "75 miles"
+        ],
+        [
+          "Maximum Travel Time (rural)",
+          "60 minutes",
+          "90 minutes",
+          "90 minutes"
+        ],
+        [
+          "Minimum Provider-to-Enrollee Ratio",
+          "1:2,000",
+          "Varies by specialty",
+          "N/A"
+        ],
+        [
+          "Appointment Wait Time (routine)",
+          "10 business days",
+          "15 business days",
+          "N/A"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Network Adequacy Standard",
+        "Primary Care",
+        "Specialty Care",
+        "Hospital"
+      ]
+    },
+    {
+      "type": "glossary_terms",
+      "terms": [
+        {
+          "term": "Network Adequacy",
+          "definition": "The requirement that an MCO's provider network is sufficient in number, type, and geographic distribution to provide timely access to covered services"
+        },
+        {
+          "term": "Encounter Data",
+          "definition": "Claims-like records submitted by MCOs for every service provided to enrollees; used for rate-setting, quality measurement, and program integrity"
+        },
+        {
+          "term": "Quality Assurance Program (QAP)",
+          "definition": "An MCO's internal program for monitoring and improving the quality of care — required under 42 CFR §438.240"
+        },
+        {
+          "term": "EPSDT",
+          "definition": "Early and Periodic Screening, Diagnostic and Treatment — a comprehensive benefit package required for all Medicaid-enrolled children under 21, including all medically necessary services"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "contract requirements",
+    "network adequacy",
+    "encounter data",
+    "quality assurance"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:07.932678+00:00",
+  "updated_at": "2026-06-01T13:29:15.194212+00:00",
+  "sanity_slug": "contract-requirements"
+}

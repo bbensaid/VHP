@@ -1,0 +1,54 @@
+{
+  "id": "59978ad0-adfa-4b25-8f0f-22cf57841fc4",
+  "track_id": "f8cc7879-94d6-49a1-bbaf-59ee5e95913c",
+  "pillar": "clinical",
+  "order": 3,
+  "slug": "behavioral-health-integration-population",
+  "title": "Behavioral Health Integration in Population Programs",
+  "summary": "Depression, anxiety, and substance use disorders are among the most prevalent and costly conditions in any population. Integrating behavioral health into population health programs dramatically improves outcomes and reduces total cost of care.",
+  "estimated_minutes": 20,
+  "objectives": [
+    {
+      "id": "obj-ph-009-1",
+      "text": "Explain why behavioral health conditions amplify medical costs"
+    },
+    {
+      "id": "obj-ph-009-2",
+      "text": "Describe the Collaborative Care Model and its evidence base"
+    },
+    {
+      "id": "obj-ph-009-3",
+      "text": "Identify HEDIS measures relevant to behavioral health"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "People with depression have 2–3 times the medical costs of people without depression — even after adjusting for comorbidities. Diabetes patients with comorbid depression have A1C control rates 50% worse than those without depression. Integrating behavioral health into population programs is one of the highest-ROI interventions in healthcare.",
+      "type": "text"
+    },
+    {
+      "text": "The Collaborative Care Model (CoCM)",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Collaborative Care Model is the most extensively studied approach to primary care–behavioral health integration. It has three core components:\n\n1. **Behavioral health care manager** — typically a social worker or nurse embedded in primary care who provides brief evidence-based interventions (CBT, motivational interviewing), tracks patient progress, and coordinates with the psychiatrist\n2. **Treating physician (PCP)** — prescribes psychiatric medications, supported by the care manager\n3. **Psychiatric consultant** — reviews the care manager's caseload, provides consultation on complex cases, and recommends medication adjustments\n\nCoCM has 79 randomized controlled trials behind it. On average, it reduces depression symptoms by 40–50% more than usual care and improves diabetes and cardiovascular outcomes in comorbid patients.",
+      "type": "text"
+    },
+    {
+      "text": "Screening and Identification at Scale",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Population-level behavioral health management begins with universal screening:\n\n- **PHQ-2/PHQ-9** — 2- and 9-item depression screeners, standard in primary care\n- **GAD-7** — Generalized anxiety disorder screener\n- **AUDIT-C** — 3-item alcohol use disorder screen\n- **PC-PTSD-5** — Primary care PTSD screen for high-risk populations\n\nUSPSTF recommends universal depression screening in adults. States like Vermont embed these screens in Medicaid quality contracts and Blueprint for Health performance metrics.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:59.796819+00:00",
+  "updated_at": "2026-06-01T17:52:31.212429+00:00",
+  "sanity_slug": "behavioral-health-integration-population"
+}

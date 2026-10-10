@@ -1,0 +1,9 @@
+{
+  "id": "ec5227bf-7dd8-43fa-b0f7-d209559ed539",
+  "quiz_id": "b3e87c26-65d0-44c6-a3f8-ff9682075b0d",
+  "order": 1,
+  "question_type": "single_choice",
+  "question": "What did the CFPB's 2025 medical debt rule change?",
+  "explanation": "The CFPB's January 2025 final rule removes medical debt from consumer credit reports and prohibits debt collectors from using credit reporting as leverage to collect medical debts, significantly changing patient collection dynamics.",
+  "points": null
+}

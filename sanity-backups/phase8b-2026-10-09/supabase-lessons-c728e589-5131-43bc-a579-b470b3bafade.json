@@ -1,0 +1,63 @@
+{
+  "id": "c728e589-5131-43bc-a579-b470b3bafade",
+  "track_id": "f8cc7879-94d6-49a1-bbaf-59ee5e95913c",
+  "pillar": "clinical",
+  "order": 1,
+  "slug": "diabetes-population-management",
+  "title": "Managing Diabetes at Scale",
+  "summary": "Diabetes is the highest-volume, highest-cost chronic condition in most health plan populations. Effective diabetes management programs combine registry-based tracking, clinical guideline adherence, self-management support, and SDOH intervention.",
+  "estimated_minutes": 24,
+  "objectives": [
+    {
+      "id": "obj-ph-007-1",
+      "text": "Describe the components of a comprehensive diabetes management program"
+    },
+    {
+      "id": "obj-ph-007-2",
+      "text": "Identify the HEDIS measures relevant to diabetes population management"
+    },
+    {
+      "id": "obj-ph-007-3",
+      "text": "Explain how remote monitoring and digital tools support diabetes self-management"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Diabetes affects 38 million Americans and costs the healthcare system $413 billion annually (2022 ADA estimate). A single poorly controlled diabetic patient can generate $30,000–$50,000 in annual costs from complications — renal disease, amputation, cardiovascular events, and vision loss. Population health programs that keep diabetic patients controlled prevent these catastrophic — and expensive — endpoints.",
+      "type": "text"
+    },
+    {
+      "text": "The Diabetes Registry",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The foundation of population diabetes management is a **diabetes registry** — a list of all patients with a diabetes diagnosis, their current clinical status, and outstanding care gaps. Registries enable panel managers to:\n\n- Identify patients with A1C > 9% for intensified outreach\n- Track patients overdue for nephropathy screening or retinal exams\n- Monitor BP and LDL control across the diabetic panel\n- Generate reports for value-based contract performance",
+      "type": "text"
+    },
+    {
+      "text": "HEDIS Comprehensive Diabetes Care (CDC)",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The CDC HEDIS measure tracks seven components for diabetic members aged 18–75:\n\n1. A1C testing (annually)\n2. A1C poor control > 9% (lower is better)\n3. A1C control < 8%\n4. Blood pressure control < 140/90\n5. Nephropathy screening\n6. Retinal eye exam\n7. Statin therapy",
+      "type": "text"
+    },
+    {
+      "text": "Self-Management Support and Digital Tools",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Evidence shows that diabetes self-management education (DSME) reduces A1C by 0.5–1.0%, hospitalizations by 20%, and costs. Digital tools amplify this:\n\n**Continuous glucose monitors (CGMs)** — Dexterity, Libre, and similar devices provide real-time glucose data to patients and, via connected apps, to care teams. CGM use is now covered for most Type 2 diabetic patients on insulin.\n\n**Digital therapeutics** — Apps like Omada, Noom, and Livongo's Diabetes Management Program provide behavior coaching, tracking, and care manager integration. Studies show 1–2% A1C reduction in engaged users.\n\n**Medication adherence tools** — Pill dispensers, pharmacy blister packs, and refill reminders address the 30–50% non-adherence rate that is the leading cause of poor glycemic control.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:59.450979+00:00",
+  "updated_at": "2026-06-01T17:48:39.581508+00:00",
+  "sanity_slug": "diabetes-population-management"
+}

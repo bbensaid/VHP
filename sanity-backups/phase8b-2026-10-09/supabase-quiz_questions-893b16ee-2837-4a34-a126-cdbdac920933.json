@@ -1,0 +1,9 @@
+{
+  "id": "893b16ee-2837-4a34-a126-cdbdac920933",
+  "quiz_id": "10258468-306a-4e4e-be13-e60a86f0e87b",
+  "order": 2,
+  "question_type": "single_choice",
+  "question": "When should active follow-up calls or portal inquiries begin for an unpaid claim?",
+  "explanation": "Active payer follow-up should begin in the 61–90 day bucket. Claims in the 0–30 day range are within normal adjudication windows; 31–60 day claims warrant status verification. Active follow-up before 60 days typically yields few results as most payers have not yet adjudicated the claim.",
+  "points": null
+}

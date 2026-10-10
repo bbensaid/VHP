@@ -1,0 +1,74 @@
+{
+  "id": "e7e973a4-9924-4f20-8f17-9258ad5037c5",
+  "track_id": "b4856f61-09ed-41d6-b9a5-446d708899ca",
+  "pillar": "policy",
+  "order": 2,
+  "slug": "medicaid-hcbs-waivers",
+  "title": "HCBS Waivers: Care at Home Instead of in Institutions",
+  "summary": "How Home and Community-Based Services waivers let Medicaid pay for care in homes and communities rather than nursing facilities — and the long waitlists that result.",
+  "estimated_minutes": 16,
+  "objectives": [
+    {
+      "id": "obj_mh1b",
+      "text": "Explain what HCBS waivers are and why they were created"
+    },
+    {
+      "id": "obj_mh2b",
+      "text": "Describe the institutional bias in Medicaid and why it persists"
+    },
+    {
+      "id": "obj_mh3b",
+      "text": "Understand the HCBS waitlist problem and its equity implications"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Federal Medicaid law has historically required states to cover nursing facility care for eligible seniors and people with disabilities — but did not require states to cover equivalent care at home. This created an institutional bias: you could get a nursing home bed covered, but not the home aide that would let you stay in your own house.\n\nSection 1915(c) HCBS waivers were created in 1981 to let states pay for home and community-based care as an alternative to institutionalization. States can cap enrollment (unlike nursing home coverage, which is an entitlement), which has created massive waitlists in many states.",
+      "type": "text",
+      "heading": "The institutional bias"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "People on HCBS Medicaid waitlists nationally",
+          "value": "700K+",
+          "source": "KFF"
+        },
+        {
+          "label": "Average daily cost of nursing facility care vs. ~$200 for home care",
+          "value": "$1,300",
+          "source": "Genworth"
+        },
+        {
+          "label": "Of nursing home residents covered by Medicaid",
+          "value": "63%",
+          "source": "KFF"
+        },
+        {
+          "label": "American Rescue Plan investment in HCBS (2021)",
+          "value": "$12.7B",
+          "source": "CMS"
+        }
+      ]
+    },
+    {
+      "body": "'Money Follows the Person' (MFP) is a CMS demonstration program that helps people transition from nursing facilities back to community settings. When someone leaves a nursing facility for home care, their Medicaid funding moves with them. Vermont has been a national leader in this model.",
+      "type": "callout",
+      "heading": "Money follows the person",
+      "variant": "tip"
+    }
+  ],
+  "tags": [
+    "HCBS",
+    "long-term care",
+    "home care",
+    "nursing home",
+    "1915c"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T21:56:18.118076+00:00",
+  "updated_at": "2026-06-01T13:14:51.275857+00:00",
+  "sanity_slug": "medicaid-hcbs-waivers"
+}

@@ -1,0 +1,110 @@
+{
+  "id": "01ca0a76-f664-4ef0-b292-d2ce8221cc2a",
+  "track_id": "6879fdc5-8855-4e38-b046-f0cb80380d60",
+  "pillar": "technology",
+  "order": 2,
+  "slug": "hl7-v2-legacy-messaging",
+  "title": "HL7 v2: The Lingua Franca of Hospital Systems",
+  "summary": "HL7 v2 has carried hospital messages since 1987 and still dominates clinical data exchange — understanding its structure, message types, and limitations is essential for any health IT professional.",
+  "estimated_minutes": 18,
+  "objectives": [
+    {
+      "id": "obj_v2_1",
+      "text": "Describe the structure of an HL7 v2 message including segments and fields"
+    },
+    {
+      "id": "obj_v2_2",
+      "text": "Identify the most common HL7 v2 message types and their clinical triggers"
+    },
+    {
+      "id": "obj_v2_3",
+      "text": "Explain the core limitation of HL7 v2 that makes semantic interoperability difficult"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "HL7 version 2 was developed in 1987 by a small group of health IT pioneers who met at a hotel in Philadelphia. Their goal was modest: create a standard for exchanging data between hospital laboratory systems and clinical systems. What they produced became the most widely implemented healthcare data standard in history — carrying an estimated 95% of all clinical data transactions in US hospitals to this day.\n\nThe staying power of HL7 v2 is remarkable given that it was designed before the internet, before relational databases became ubiquitous, and before anyone imagined the complexity of modern EHR systems. The standard uses a pipe-delimited text format that looks almost primitive by modern standards. Yet every hospital in the country processes thousands of HL7 v2 messages per day. Understanding this format is not optional for health IT professionals — it is the baseline.\n\nThe fundamental structure of HL7 v2 is the message. Each message has a type (determined by its first segment), and each message is made of segments separated by carriage returns. Segments are made of fields separated by pipe characters (|). Within fields, components are separated by carets (^), and sub-components by ampersands (&). A typical ADT^A01 admission message might contain 15–25 segments covering patient demographics, visit information, attending physician, diagnosis, and insurance.",
+      "type": "text",
+      "heading": "The standard that conquered healthcare — by accident"
+    },
+    {
+      "rows": [
+        [
+          "ADT^A01",
+          "Patient admitted",
+          "Inpatient admission notification to downstream systems",
+          "MSH, EVN, PID, PV1"
+        ],
+        [
+          "ADT^A08",
+          "Patient info updated",
+          "Demographics update, insurance change",
+          "MSH, EVN, PID, PV1"
+        ],
+        [
+          "ADT^A03",
+          "Patient discharged",
+          "Discharge notification, billing trigger",
+          "MSH, EVN, PID, PV1, DG1"
+        ],
+        [
+          "ORU^R01",
+          "Observation result",
+          "Lab results from LIS to EHR or ordering system",
+          "MSH, PID, OBR, OBX"
+        ],
+        [
+          "ORM^O01",
+          "Order message",
+          "Lab or radiology order from EHR to ancillary system",
+          "MSH, PID, ORC, OBR"
+        ],
+        [
+          "SIU^S12",
+          "Schedule notification",
+          "Appointment scheduled, modified, or cancelled",
+          "MSH, SCH, PID, RGS, AIS"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Message Type",
+        "Trigger Event",
+        "Clinical Use",
+        "Key Segments"
+      ],
+      "heading": "Key HL7 v2 message types"
+    },
+    {
+      "body": "HL7 v2's greatest weakness is also what made it popular: flexibility. The standard defines required and optional fields, but allows extensive local customization through 'Z-segments' — custom segments with no national definition. Every major EHR vendor has implemented HL7 v2 slightly differently. A Cerner ADT feed and an Epic ADT feed can carry the same data in different fields, with different coding conventions, and with different optional segments populated. This is why interface engines exist: to translate between each organization's HL7 v2 dialect. A large hospital system may have 300+ active HL7 interfaces, each requiring ongoing maintenance.",
+      "type": "callout",
+      "title": "The standard that isn't standard",
+      "variant": "warning"
+    },
+    {
+      "type": "key_stat",
+      "label": "of US hospital data transactions use HL7 v2",
+      "value": "95%",
+      "context": "Despite being developed in 1987, HL7 v2 remains the dominant standard for internal hospital data exchange. It is expected to coexist with FHIR for at least another decade as the installed base of v2 interfaces is enormous."
+    },
+    {
+      "body": "A hospital integrated a new pharmacy system with their EHR via HL7 v2. The pharmacy system sent RxNorm codes for medications in a Z-segment field. The EHR expected drug codes in the standard CE data type field within OBX. Because the interface was not correctly mapped, medications arrived as free text strings with no structured code. Pharmacists could not perform automated drug interaction checks. The error went undetected for 6 months because the data 'looked right' on screen. This pattern — data present but semantically broken — is among the most dangerous in health IT.",
+      "type": "callout",
+      "title": "Real-world HL7 v2 failure: medication errors from interface mismatches",
+      "variant": "example"
+    }
+  ],
+  "tags": [
+    "HL7",
+    "v2",
+    "messaging",
+    "ADT",
+    "ORU",
+    "interoperability"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:34.930064+00:00",
+  "updated_at": "2026-06-01T14:54:57.170657+00:00",
+  "sanity_slug": "interop-hl7-v2"
+}

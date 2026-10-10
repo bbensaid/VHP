@@ -1,0 +1,34 @@
+{
+ "qid": "q-rcm-tech-001-3",
+ "expectText": "What cost-to-collect ratio improvement do organizations with fully integrated RCM systems typically achieve?",
+ "set": {
+  "text": "What is the main risk of a best-of-breed RCM technology strategy?",
+  "explanation": "Best-of-breed picks the leading specialized product for each function, which gains depth (for example in denial analytics) but only works if the systems are connected with robust HL7/FHIR interfaces; poorly integrated tools recreate data silos and manual touchpoints. Integrated single-vendor platforms trade some per-function depth for seamless internal data flow.",
+  "options": [
+   {
+    "id": "a",
+    "text": "Less functional depth in each area"
+   },
+   {
+    "id": "b",
+    "text": "It cannot submit claims in the 837 format"
+   },
+   {
+    "id": "c",
+    "text": "Data silos and manual re-entry if the systems are poorly integrated"
+   },
+   {
+    "id": "d",
+    "text": "It requires every function to come from one vendor"
+   }
+  ],
+  "correctId": "c"
+ },
+ "files": [
+  "frontend/content/course_revenue_cycle.json",
+  "frontend/content/courses_tier3.json"
+ ],
+ "claim": "local quiz: 30-40% lower cost-to-collect",
+ "verdict": "UNVERIFIABLE",
+ "src": "No primary source for \"30-40% lower cost-to-collect\" with fully integrated systems (search 2026-10-09: only vendor case studies and a Black Book self-reported survey citing 27%; nothing matching 30-40%)"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "8772ce18-1d8e-4edc-9d1b-56234e290b0d",
+  "quiz_id": "272065a4-1f41-4ee5-9a78-2b7074b438a9",
+  "order": 1,
+  "question_type": "single_choice",
+  "question": "What have clinical trials found about produce prescription programs for food-insecure diabetic patients?",
+  "explanation": "RCTs of produce prescription programs show A1c reductions of 0.6–1.0% in food-insecure diabetic patients — clinically meaningful reductions comparable to adding a medication.",
+  "points": 1
+}

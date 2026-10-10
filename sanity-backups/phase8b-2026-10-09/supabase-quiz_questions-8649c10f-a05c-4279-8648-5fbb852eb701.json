@@ -1,0 +1,9 @@
+{
+  "id": "8649c10f-a05c-4279-8648-5fbb852eb701",
+  "quiz_id": "a716d1a4-0e34-4c74-b802-ba1edd935735",
+  "order": 1,
+  "question_type": "single_choice",
+  "question": "What happened to CMS's measured savings from the mandatory CJR bundled-payment model after outpatient total knee replacement was made nationally billable outside the bundle?",
+  "explanation": "Once outpatient TKA was excluded from the bundle nationally and some hospitals' participation became voluntary, the boundary-gaming incentive weakened and CJR's savings were no longer statistically significant by the fourth performance year — direct evidence that the earlier savings were partly an artifact of the mandatory boundary itself.",
+  "points": 1
+}

@@ -1,0 +1,94 @@
+{
+  "id": "3d82af3a-598c-427c-9c5f-4fd10403b59e",
+  "track_id": "adbe6950-6277-45b6-aa0f-e195df013212",
+  "pillar": "economics",
+  "order": 2,
+  "slug": "cost-per-case-service-line",
+  "title": "Cost Per Case and Service Line Analysis",
+  "summary": "Service line analysis compares revenue to fully-loaded costs for clinical programs like cardiovascular surgery or orthopedics, revealing which service lines subsidize others. This lesson explains how hospitals build and use these analyses.",
+  "estimated_minutes": 25,
+  "objectives": [
+    "Explain what cost per case means and how it is calculated for a hospital service line",
+    "Describe how service line contribution margin analysis drives strategic decisions",
+    "Identify the limitations of service line profitability analysis and common pitfalls"
+  ],
+  "content_blocks": [
+    {
+      "body": "A **service line** is a clinical program—cardiovascular, orthopedics, oncology, neurosurgery—that a hospital manages as a semi-discrete business unit. Service line analysis builds a profit-and-loss view by comparing net revenue (per payer mix) against total costs (direct + allocated indirect).\n\n**Cost per case** is the fully-loaded cost of treating one patient within a service line or DRG, including:\n- Direct clinical costs (supplies, implants, pharmacy)\n- Direct labor (nursing, techs, physicians if employed)\n- Overhead allocation (facilities, admin, IT)\n\nHigh-margin service lines (cardiovascular surgery, orthopedics, oncology) often generate the operating surplus that cross-subsidizes essential but money-losing services (trauma, emergency, behavioral health, labor & delivery).",
+      "type": "text",
+      "heading": "Service Line Profitability: The Hospital P&L"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Typical cost per cardiac surgery case",
+          "value": "$15,000–$50,000",
+          "context": "Highly variable by case complexity; reimbursement often covers costs with margin"
+        },
+        {
+          "label": "Typical ED visit margin",
+          "value": "–$1,200",
+          "context": "Emergency departments often lose money on a per-visit basis; volume and downstream admissions provide the rationale"
+        },
+        {
+          "label": "Hospital revenues from top 3 service lines",
+          "value": "70%",
+          "context": "Most hospitals generate the majority of margin from 2–3 high-margin clinical service lines"
+        }
+      ]
+    },
+    {
+      "body": "Service line analyses often show behavioral health, obstetrics, and trauma as money-losers. But if a hospital closes these services to improve margins, the overhead costs don't disappear—they get reallocated to the remaining service lines. Decision-makers must distinguish between services that should be closed versus services that lose money due to allocated overhead but contribute positive contribution margin.",
+      "type": "callout",
+      "title": "The Overhead Allocation Trap",
+      "variant": "warning"
+    },
+    {
+      "rows": [
+        [
+          "Cardiovascular Surgery",
+          "High positive margin",
+          "Revenue driver; physician relationship anchor"
+        ],
+        [
+          "Orthopedics (Elective)",
+          "High positive margin",
+          "Shifting to ASC; competitive threat"
+        ],
+        [
+          "Emergency Department",
+          "Often negative",
+          "Entry point; community obligation; upstream admissions"
+        ],
+        [
+          "Behavioral Health",
+          "Negative to breakeven",
+          "Community need; regulatory requirements"
+        ],
+        [
+          "Obstetrics",
+          "Negative to low positive",
+          "Lifetime patient relationship; community mission"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Service Line",
+        "Typical Margin Profile",
+        "Strategic Rationale for Loss Leaders"
+      ]
+    }
+  ],
+  "tags": [
+    "service line",
+    "cost per case",
+    "contribution margin",
+    "profitability"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:34:40.943301+00:00",
+  "updated_at": "2026-06-01T13:29:14.448139+00:00",
+  "sanity_slug": "cost-per-case-service-line"
+}

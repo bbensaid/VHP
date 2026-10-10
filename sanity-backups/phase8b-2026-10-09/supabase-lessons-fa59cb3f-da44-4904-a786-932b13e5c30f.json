@@ -1,0 +1,64 @@
+{
+  "id": "fa59cb3f-da44-4904-a786-932b13e5c30f",
+  "track_id": "f536b762-6a77-44bf-88d3-56297dffeffb",
+  "pillar": "operations",
+  "order": 3,
+  "slug": "patient-financial-counseling",
+  "title": "Patient Financial Counseling and Estimates",
+  "summary": "Proactive patient financial counseling and upfront cost estimates improve collections, reduce bad debt, and increase patient satisfaction.",
+  "estimated_minutes": 18,
+  "objectives": [
+    "Explain the components of effective patient financial counseling",
+    "Describe how price transparency regulations affect patient estimates",
+    "Identify best practices for upfront collection of patient responsibility"
+  ],
+  "content_blocks": [
+    {
+      "body": "High-deductible health plans (HDHPs) have shifted significant financial responsibility to patients. In 2024, over 50% of employer-sponsored plan enrollees are in HDHPs. As a result:\n\n- Patient balances now represent 20–35% of hospital net revenue\n- Bad debt from patient responsibility has increased 11% annually since 2018\n- Patient financial experience is now a top driver of overall patient satisfaction scores\n\nOrganizations that invest in financial counseling and transparent estimates see 15–25% improvement in upfront collection rates.",
+      "type": "text",
+      "heading": "The Rise of Patient Financial Responsibility"
+    },
+    {
+      "body": "Two federal mandates now require providers to publish pricing:\n\n**Hospital Price Transparency Rule (2021):** Hospitals must publish machine-readable files with all standard charges and a consumer-friendly display of 300 shoppable services. CMS enforcement increased in 2023, with penalties up to $2M per year.\n\n**No Surprises Act (2022):** Prohibits surprise billing for emergency care and non-emergency care at in-network facilities. Requires Good Faith Estimates for self-pay patients and advance explanation of benefits for insured patients within 3 business days of scheduling.",
+      "type": "text",
+      "heading": "Price Transparency Requirements"
+    },
+    {
+      "body": "Financial counselors should routinely screen patients for charity care eligibility using income verification. Many organizations use Medicaid presumptive eligibility screening simultaneously. Proactive screening reduces bad debt write-offs and ensures patients receive benefits they are entitled to.",
+      "type": "callout",
+      "title": "Charity Care Screening",
+      "variant": "tip"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Employer plan enrollees in HDHPs (2024)",
+          "value": "50%+",
+          "context": "Kaiser Family Foundation Employer Health Benefits Survey"
+        },
+        {
+          "label": "Patient balances collected if addressed before discharge",
+          "value": "70%",
+          "context": "vs. ~30% collected after a statement is mailed post-discharge"
+        },
+        {
+          "label": "Maximum annual CMS penalty for price transparency non-compliance",
+          "value": "$2M",
+          "context": "Effective 2023; scaled to hospital bed count"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "patient financial counseling",
+    "price transparency",
+    "upfront collections",
+    "patient responsibility"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:31:18.828896+00:00",
+  "updated_at": "2026-06-01T13:14:49.293821+00:00",
+  "sanity_slug": "patient-financial-counseling"
+}

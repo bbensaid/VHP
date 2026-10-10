@@ -1,0 +1,9 @@
+{
+  "id": "46bdfa77-581d-4d92-8618-c277e7ae3d7f",
+  "quiz_id": "b6cc7b5e-7e32-4965-83eb-56878f631d7a",
+  "order": 2,
+  "question_type": "single_choice",
+  "question": "What is the collection rate for patient balances addressed before discharge, compared to after a statement is mailed?",
+  "explanation": "Industry data shows approximately 70% of patient balances can be collected when addressed proactively before or at discharge, compared to only about 30% after a paper statement is mailed.",
+  "points": null
+}

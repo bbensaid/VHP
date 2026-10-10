@@ -1,0 +1,89 @@
+{
+  "id": "2729c853-1fab-48c8-b474-9f444a507412",
+  "track_id": "f536b762-6a77-44bf-88d3-56297dffeffb",
+  "pillar": "operations",
+  "order": 2,
+  "slug": "prior-authorization",
+  "title": "Prior Authorization: Process and Pitfalls",
+  "summary": "Prior authorization is a payer requirement that certain services receive advance approval before delivery — a major administrative burden with significant revenue implications.",
+  "estimated_minutes": 20,
+  "objectives": [
+    "Describe the prior authorization process and its key steps",
+    "Identify the services most commonly requiring authorization",
+    "Explain how authorization failures lead to denials and strategies to prevent them"
+  ],
+  "content_blocks": [
+    {
+      "body": "Prior authorization (PA) — also called pre-authorization, pre-certification, or pre-approval — is a requirement that providers obtain payer approval before delivering certain services. Without authorization, payers may deny the claim regardless of medical necessity.\n\nServices most commonly requiring PA include:\n- Inpatient admissions (especially elective surgeries)\n- High-cost imaging (MRI, CT, PET scans)\n- Specialty drugs and infusion therapy\n- Durable medical equipment (DME)\n- Outpatient procedures (certain interventional services)\n- Behavioral health services beyond initial visits",
+      "type": "text",
+      "heading": "What Prior Authorization Requires"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Average physician time per week on PA",
+          "value": "46 hours",
+          "context": "AMA 2023 survey; one in three physicians report PA has led to a serious adverse event for a patient"
+        },
+        {
+          "label": "PA requests eventually approved",
+          "value": "94%",
+          "context": "KFF analysis showing most PA denials are ultimately overturned — suggesting the system imposes delays more than prevents inappropriate care"
+        },
+        {
+          "label": "Providers who abandon care due to PA delays",
+          "value": "35%",
+          "context": "AMA survey finding; patients may not receive needed care due to administrative friction"
+        }
+      ]
+    },
+    {
+      "body": "CMS finalized rules requiring payers to implement FHIR-based APIs for prior authorization by 2026 (Interoperability and Prior Authorization Final Rule, CMS-0057-F). This will enable electronic, near-real-time PA decisions for many services, reducing the current 1–14 day wait times for manual PA requests.",
+      "type": "callout",
+      "title": "FHIR-Based Prior Authorization (CMS 2026)",
+      "variant": "tip"
+    },
+    {
+      "rows": [
+        [
+          "Service not authorized",
+          "Authorization obtained for wrong CPT code",
+          "Verify CPT code at time of authorization request"
+        ],
+        [
+          "Authorization expired",
+          "Service delivered after auth expiration date",
+          "Track auth expiration dates; re-authorize before date of service"
+        ],
+        [
+          "Provider not on auth",
+          "Different provider rendered service than authorized",
+          "Ensure authorized provider matches rendering provider"
+        ],
+        [
+          "Medical necessity not met",
+          "Documentation insufficient to support auth criteria",
+          "Use clinical decision support; attach clinical notes with request"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "PA Denial Reason",
+        "Root Cause",
+        "Prevention Strategy"
+      ]
+    }
+  ],
+  "tags": [
+    "prior authorization",
+    "medical necessity",
+    "denials",
+    "utilization management"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:31:17.482175+00:00",
+  "updated_at": "2026-06-01T13:14:49.250775+00:00",
+  "sanity_slug": "prior-authorization"
+}

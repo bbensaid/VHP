@@ -1,0 +1,55 @@
+{
+  "id": "0d8fc04d-3ab9-4ad2-addc-6ae6018684e6",
+  "track_id": "97e99967-cfc8-4a05-a35f-98cc12c8e27c",
+  "pillar": "operations",
+  "order": 3,
+  "slug": "tl-building-the-pmo",
+  "title": "Building the PMO: Portfolio Governance for a Multi-Year Transformation",
+  "summary": "PMI's project/program/portfolio hierarchy gives transformation leaders a precise vocabulary for a problem healthcare usually manages informally. This lesson contrasts a large-scale health-system portfolio restructuring that worked (the VA's 1990s VISN reorganization) with one that collapsed under its own governance design (the NHS's National Programme for IT), then walks through what a transformation PMO actually needs to do.",
+  "estimated_minutes": 26,
+  "objectives": [
+    "Distinguish project, program, and portfolio management using PMI's own hierarchy",
+    "Identify the specific governance failure that made the NHS's NPfIT a canonical failure case",
+    "Identify the specific structural choices that made the VA's VISN restructuring a durable success"
+  ],
+  "content_blocks": [
+    {
+      "body": "PMI draws a hierarchy that healthcare transformation programs rarely observe explicitly: projects produce a defined deliverable; programs coordinate related projects to produce benefits no single project could deliver alone; portfolios align the whole collection with organizational strategy. Most healthcare systems run their transformation agenda as a flat list of initiatives with no portfolio layer — which means no one is positioned to see that two initiatives are competing for the same analysts, or that a delay in one silently invalidates the timeline of another.",
+      "type": "text",
+      "heading": "Getting the Levels Right"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Wasted annually worldwide",
+          "value": "$2T",
+          "source": "PMI, Pulse of the Profession — roughly 11.4% of every dollar invested lost to poor project performance"
+        },
+        {
+          "label": "More on-time/on-budget delivery",
+          "value": "38%",
+          "source": "PMI — organizations with an established PMO"
+        }
+      ],
+      "heading": "What a PMO Is Worth"
+    },
+    {
+      "body": "The VA's Veterans Health Administration reorganized into 22 geographic Veterans Integrated Service Networks (VISNs) between 1995 and 1999 under Director Kenneth Kizer, decentralizing authority while holding networks accountable for management, care coordination, quality, and resource allocation. The result is widely cited as having produced measurably better VA care quality — a rare example of a government health system transformation that stuck.",
+      "type": "callout",
+      "heading": "What Worked: The VA's VISN Restructuring",
+      "variant": "info"
+    }
+  ],
+  "tags": [
+    "PMO",
+    "portfolio-management",
+    "governance",
+    "transformation-leadership"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-09-22T19:10:31.662913+00:00",
+  "updated_at": "2026-09-22T19:42:10.8811+00:00",
+  "sanity_slug": "tl-building-the-pmo"
+}

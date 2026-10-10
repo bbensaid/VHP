@@ -1,0 +1,60 @@
+{
+  "id": "80e91612-66ff-47af-8669-d0bb634988f0",
+  "track_id": "f1c708c3-a8b6-48d3-a584-debef8a6946e",
+  "pillar": "technology",
+  "order": 3,
+  "slug": "payer-contracts",
+  "title": "Payer Contracts and Fee Schedules",
+  "summary": "Payer contracts define reimbursement rates, billing requirements, and dispute processes — understanding them is essential for revenue optimization.",
+  "estimated_minutes": 20,
+  "objectives": [
+    "Explain the key components of a payer contract",
+    "Describe different fee schedule methodologies (% of Medicare, RVUs, per diem)",
+    "Identify strategies for contract modeling and renegotiation"
+  ],
+  "content_blocks": [
+    {
+      "body": "A payer contract defines the legal relationship between a provider and an insurance company. Key components:\n\n- **Fee schedule:** The payment rates for specific services, often expressed as a percentage of Medicare rates or as RVU-based calculations\n- **Timely payment provisions:** Deadlines by which the payer must pay clean claims (typically 30–45 days)\n- **Timely filing requirements:** Deadlines for claim submission\n- **Clean claim definition:** What constitutes a clean claim for that payer\n- **Dispute resolution process:** How claim disputes and appeals are handled\n- **Term and termination:** Contract length, auto-renewal provisions, and termination notice requirements\n- **Carve-outs and exclusions:** Services not covered by the contract",
+      "type": "text",
+      "heading": "Anatomy of a Payer Contract"
+    },
+    {
+      "body": "Payers use several approaches to set reimbursement rates:\n\n**Percentage of Medicare:** The most common commercial methodology. A contract paying '120% of Medicare' means each CPT code is reimbursed at 120% of the Medicare Physician Fee Schedule (PFS) or OPPS rate.\n\n**RVU-based:** Payment = RVUs × Conversion Factor. The RVU (Relative Value Unit) system underpins Medicare and many commercial contracts. Three components: Work RVUs (physician effort), Practice Expense RVUs, and Malpractice RVUs.\n\n**Per Diem:** A fixed daily rate for inpatient stays, regardless of services provided. Common in Medicaid managed care.\n\n**Case Rate / DRG-based:** A fixed payment per case type, mirroring Medicare's inpatient DRG methodology.",
+      "type": "text",
+      "heading": "Fee Schedule Methodologies"
+    },
+    {
+      "body": "Before entering contract negotiations, model the financial impact of proposed rate changes across your actual service mix. A 5% rate increase on a service you rarely provide is worth less than a 2% increase on your highest-volume procedure. Use at least 12 months of claims data to model realistic impact.",
+      "type": "callout",
+      "title": "Contract Modeling Before Renegotiation",
+      "variant": "tip"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Typical commercial rate as % of Medicare",
+          "value": "115–145%",
+          "context": "For hospital outpatient services; physician rates often 110–130% of Medicare PFS"
+        },
+        {
+          "label": "Typical payer contract term",
+          "value": "3–5 years",
+          "context": "Most commercial contracts auto-renew annually after the initial term without active renegotiation"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "payer contracts",
+    "fee schedules",
+    "RBRVS",
+    "RVU",
+    "contract management"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:31:24.274479+00:00",
+  "updated_at": "2026-06-01T13:14:49.545741+00:00",
+  "sanity_slug": "payer-contracts"
+}

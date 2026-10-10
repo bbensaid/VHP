@@ -800,7 +800,7 @@
             {
               "type": "text",
               "heading": "The Area Deprivation Index and the Neighborhood Atlas",
-              "body": "Amy Kind and William Buckingham published the Area Deprivation Index (ADI) methodology in a 2018 *New England Journal of Medicine* perspective, 'Making Neighborhood-Disadvantage Metrics Accessible.' The ADI ranks census block groups on 17 measures spanning income, education, employment, and housing quality, and Kind's team at the University of Wisconsin-Madison built the Neighborhood Atlas to make block-group-level rankings freely downloadable \u2014 turning what had been an academic construct into a tool any health system or researcher could plug a patient address into."
+              "body": "The Area Deprivation Index (ADI) is an older federally developed index that Amy Kind's team at the University of Wisconsin-Madison refined, adapted, and validated to the census block-group level; Kind and William Buckingham described that work in a 2018 *New England Journal of Medicine* perspective, 'Making Neighborhood-Disadvantage Metrics Accessible \u2014 The Neighborhood Atlas.' The ADI ranks census block groups on 17 measures spanning income, education, employment, and housing quality, and Kind's team at the University of Wisconsin-Madison built the Neighborhood Atlas to make block-group-level rankings freely downloadable \u2014 turning what had been an academic construct into a tool any health system or researcher could plug a patient address into."
             },
             {
               "type": "steps",
@@ -833,7 +833,7 @@
             {
               "type": "text",
               "heading": "The claims-data gap: SDOH Z-codes",
-              "body": "ICD-10-CM diagnosis codes Z55 through Z65 exist specifically to document social determinants \u2014 housing instability, food insecurity, transportation barriers, and similar factors \u2014 inside a clinical encounter. The Gravity Project, working with the American Medical Association, has built out crosswalks mapping standardized SDOH screening questions (including CMS's own Accountable Health Communities screening tool) directly to the appropriate Z-code and SNOMED CT terms.\n\nDespite that infrastructure and explicit CDC and WHO emphasis on their use, one peer-reviewed study found only about 1.9% of inpatient hospital admissions carried an SDOH Z-code. Any equity-scoring system built primarily from claims data will underrepresent real social risk for exactly this reason \u2014 the code being rare does not mean the underlying need is rare."
+              "body": "ICD-10-CM diagnosis codes Z55 through Z65 exist specifically to document social determinants \u2014 housing instability, food insecurity, transportation barriers, and similar factors \u2014 inside a clinical encounter. The Gravity Project, working with the American Medical Association, has built out crosswalks mapping standardized SDOH screening questions (including CMS's own Accountable Health Communities screening tool) directly to the appropriate Z-code and SNOMED CT terms.\n\nDespite that infrastructure, an analysis of the 2016\u20132017 National Inpatient Sample (Truong et al., Medical Care, 2020) found only about 1.9% of inpatient hospital admissions carried an SDOH Z-code. Any equity-scoring system built primarily from claims data will underrepresent real social risk for exactly this reason \u2014 the code being rare does not mean the underlying need is rare."
             }
           ],
           "quiz": {
@@ -1008,7 +1008,7 @@
             {
               "type": "text",
               "heading": "Distributional cost-effectiveness analysis (DCEA)",
-              "body": "Richard Cookson, Susan Griffin, Ole Norheim, and Anthony Culyer's 2020 Oxford University Press volume, *Distributional Cost-Effectiveness Analysis: Quantifying Health Equity Impacts and Trade-Offs*, formalized DCEA as a field. Its central mechanism is the **equity weight**, derived from the Atkinson index of inequality aversion, denoted \u03b5. At \u03b5 = 0, there is no special priority for the worst-off \u2014 DCEA collapses back to standard CEA. Cookson and colleagues' 2017 illustrative work used \u03b5 = 0.5 as a default representing mild inequality aversion; larger values put sharply more weight on health gains for the worst-off group. The choice of \u03b5 is itself a value judgment that a DCEA analysis should state explicitly, not bury in a footnote."
+              "body": "Richard Cookson, Susan Griffin, Ole Norheim, and Anthony Culyer's 2020 Oxford University Press volume, *Distributional Cost-Effectiveness Analysis: Quantifying Health Equity Impacts and Trade-Offs*, formalized DCEA as a field. Its central mechanism is the **equity weight**, derived from the Atkinson index of inequality aversion, denoted \u03b5. At \u03b5 = 0, there is no special priority for the worst-off \u2014 DCEA collapses back to standard CEA. Larger values put progressively more weight on health gains for the worst-off group; a 2017 survey of the English public (Robson et al., Health Economics) elicited a median Atkinson \u03b5 of 10.95, weighting gains to the poorest fifth six to seven times those to the richest fifth. The choice of \u03b5 is itself a value judgment that a DCEA analysis should state explicitly, not bury in a footnote."
             },
             {
               "type": "key_stat",
@@ -1050,7 +1050,7 @@
             {
               "type": "text",
               "heading": "Case study: system-wide equity as a management discipline",
-              "body": "Kaiser Permanente received the American Hospital Association's 2017 Equity of Care Award for embedding disparity reduction into its operating structure \u2014 physicians, nurses, and staff across its integrated system working from shared disparity data rather than each department tracking equity independently. The lesson for anyone building or using a composite like HEROI is the same one Kaiser's recognition illustrates: a composite score is only as useful as the organizational structure that acts on what it shows. A HEROI score computed once and filed away is a number; a HEROI score reviewed on the same cadence as a financial scorecard is a management tool."
+              "body": "Kaiser Permanente received the American Hospital Association's 2017 Equity of Care Award largely for its Equitable Care Health Outcomes (ECHO) program, launched in 2010 to close measured gaps in hypertension control among African-American members and colorectal cancer screening among Hispanic members. The lesson for anyone building or using a composite like HEROI is the one ECHO illustrates: a composite score is only as useful as the organizational structure that acts on what it shows. A HEROI score computed once and filed away is a number; a HEROI score reviewed on the same cadence as a financial scorecard is a management tool."
             }
           ],
           "quiz": {
@@ -1095,7 +1095,7 @@
                 "type": "single_choice",
                 "points": 1,
                 "question": "In distributional cost-effectiveness analysis (DCEA), what does the equity weight parameter \u03b5 represent?",
-                "explanation": "\u03b5, from the Atkinson index of inequality aversion, controls how much extra weight DCEA gives to health gains for the worst-off group; Cookson et al.'s illustrative work used \u03b5 = 0.5 as a mild-aversion default.",
+                "explanation": "\u03b5, from the Atkinson index of inequality aversion, controls how much extra weight DCEA gives to health gains for the worst-off group; a 2017 survey of the English public (Robson et al.) elicited a median Atkinson \u03b5 of 10.95.",
                 "options": [
                   {
                     "id": "o_hea5b1",
@@ -1118,7 +1118,7 @@
                     "id": "o_hea5b4",
                     "text": "A fixed value set by federal regulation",
                     "isCorrect": false,
-                    "explanation": "\u03b5 is a modeling choice made by the analyst/study, illustrated at 0.5 by Cookson et al. 2017, not a regulatory mandate."
+                    "explanation": "\u03b5 is a modeling choice made by the analyst/study, elicited in studies such as Robson et al. 2017 (median 10.95 among the English public), not a regulatory mandate."
                   }
                 ]
               },
@@ -1225,7 +1225,7 @@
             {
               "type": "text",
               "heading": "The 'measurement without action' failure mode",
-              "body": "A body of published research on disparity dashboards has converged on a consistent finding: dashboards that stratify data by race, ethnicity, or other subgroup are common, but dashboards that are demonstrably tied to a specific accountability structure \u2014 someone whose job it is to act when a gap appears \u2014 are much rarer. A stratified rate that nobody owns is a fact sitting in a report. The same rate, reviewed by a named committee with authority to change a staffing model, a referral pathway, or a screening protocol, is the beginning of an intervention."
+              "body": "A 2023 Lancet Digital Health review of the disparity-dashboard literature (Gallifant et al.) found that stratified dashboards are common, but only six of the studies it evaluated used a dashboard as part of a wider process to identify disparities, hypothesize interventions, or track progress toward a goal. Dashboards tied to someone whose job it is to act when a gap appears are the exception. A stratified rate that nobody owns is a fact sitting in a report. The same rate, reviewed by a named committee with authority to change a staffing model, a referral pathway, or a screening protocol, is the beginning of an intervention."
             },
             {
               "type": "steps",
@@ -1237,7 +1237,7 @@
                 ],
                 [
                   "Assess cause",
-                  "Before acting, ask why the gap exists \u2014 a staffing gap, a referral-pathway gap, a documentation gap (recall Lesson 4's Z-code problem), or a genuine access barrier each call for a different fix. This maps directly to Priority 2 of the CMS Framework for Health Equity 2022\u20132032: assess causes of disparities within programs and operations, not just their existence."
+                  "Before acting, ask why the gap exists \u2014 a staffing gap, a referral-pathway gap, a documentation gap (recall Lesson 4's Z-code problem), or a genuine access barrier each call for a different fix. It mirrors Priority 2 of the CMS Framework for Health Equity 2022\u20132032, in which CMS commits to assess causes of disparities within its own programs and address inequities in its policies and operations."
                 ],
                 [
                   "Act",
@@ -1267,8 +1267,8 @@
             },
             {
               "type": "text",
-              "heading": "Case study: from screening data to an anchor-mission committee",
-              "body": "Rush University Medical Center's SDOH screening effort, built with community partners including Catholic Charities, the Greater Chicago Food Depository, and CommunityHealth (Chicago's largest free clinic), did not stop at collecting screening data. Rush formed a West Side Anchor Committee explicitly to convert what the screening and stratified quality data showed into standing operating processes \u2014 shared goals, common referral pathways, and joint investment decisions with those community partners. That committee is the 'someone whose job it is to act' this lesson's governance loop describes, made concrete."
+              "heading": "Case study: from screening to standing committees",
+              "body": "Rush University Medical Center screens patients routinely for social needs such as housing, food access, and violence, and works with the Greater Chicago Food Depository on food programs. In West Side ConnectED, Rush, the University of Illinois Hospital, AMITA Health Saints Mary and Elizabeth Medical Center, and Mount Sinai Hospital share a seven-question emergency-department screening tool, and Catholic Charities linked the hospitals to about 30 partner agencies ready to take referrals. Inside Rush, an Anchor Mission committee organized in January 2017 sets targets for local hiring, career pathways, local spending, and volunteering and reports to senior leadership twice a year, and a Health Equity Governance Committee steers improvement work on inequities in patient outcomes (Ansell et al., NEJM Catalyst, 2021). Those committees are the 'someone whose job it is to act' this lesson's governance loop describes, made concrete."
             },
             {
               "type": "comparison_table",
@@ -1341,7 +1341,7 @@
                 "type": "single_choice",
                 "points": 1,
                 "question": "What does the disparity-dashboard research literature identify as the common failure mode?",
-                "explanation": "The consistent finding is that stratified dashboards are common, but ones tied to a real accountability structure that acts on the data are much rarer \u2014 measurement without an owner tends to just sit in a report.",
+                "explanation": "A 2023 Lancet Digital Health review found stratified dashboards common but few embedded in a wider process to identify disparities, test interventions, and track progress \u2014 measurement without an owner tends to just sit in a report.",
                 "options": [
                   {
                     "id": "o_hea6b1",
@@ -1404,8 +1404,8 @@
                 "id": "q_hea6d",
                 "type": "true_false",
                 "points": 1,
-                "question": "Rush University Medical Center's West Side Anchor Committee was formed specifically to convert SDOH screening and stratified quality data into standing operational decisions with community partners.",
-                "explanation": "This matches the case study directly: the committee was formed to translate what screening data showed into shared goals, referral pathways, and investment decisions with partners like Catholic Charities and the Greater Chicago Food Depository.",
+                "question": "Rush University Medical Center's internal Anchor Mission committee, organized in January 2017, sets standing targets for local hiring, career pathways, local spending, and volunteering.",
+                "explanation": "This matches the case study (Ansell et al., NEJM Catalyst 2021): the committee owns standing targets and reports to senior leadership twice a year \u2014 a named structure whose job is to act.",
                 "options": [
                   {
                     "id": "o_hea6d1",

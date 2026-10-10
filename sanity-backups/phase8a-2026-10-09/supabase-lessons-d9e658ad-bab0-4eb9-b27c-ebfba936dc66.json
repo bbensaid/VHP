@@ -1,0 +1,94 @@
+{
+  "id": "d9e658ad-bab0-4eb9-b27c-ebfba936dc66",
+  "track_id": "40ccb91d-1fca-473f-89cc-8ce595c26c25",
+  "pillar": "operations",
+  "order": 1,
+  "slug": "hie-workforce-roles",
+  "title": "HIE Workforce & Roles",
+  "summary": "The roles, competencies, and organizational structures of health reform programs — and how to be a T-shaped professional across all five pillars and the Equity Imperative.",
+  "estimated_minutes": 20,
+  "objectives": [
+    {
+      "id": "obj_o1",
+      "text": "Map the key functional roles in an HIE or health reform organization"
+    },
+    {
+      "id": "obj_o2",
+      "text": "Understand the skills most in demand across the five pillars"
+    },
+    {
+      "id": "obj_o3",
+      "text": "Describe the 'T-shaped professional' model and its relevance to your career"
+    },
+    {
+      "id": "obj_o4",
+      "text": "Know who to contact for common cross-functional workflows"
+    }
+  ],
+  "content_blocks": [
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Integration engineers, FHIR developers, MPI specialists. Build and maintain the technical plumbing of the HIE.",
+          "icon": "ti-code",
+          "title": "Health informatics"
+        },
+        {
+          "body": "Population health analysts, quality measure specialists, data scientists. Turn HIE data into insights.",
+          "icon": "ti-chart-dots",
+          "title": "Data analytics"
+        },
+        {
+          "body": "HIPAA compliance officers, privacy analysts, security engineers. Ensure regulatory adherence and patient trust.",
+          "icon": "ti-shield",
+          "title": "Privacy & compliance"
+        },
+        {
+          "body": "Onboard and support data contributors — hospitals, clinics, labs. Train end users on HIE services.",
+          "icon": "ti-users",
+          "title": "Provider relations"
+        },
+        {
+          "body": "Engage with legislators, agencies, and stakeholders to shape HIE governance, funding, and strategic direction.",
+          "icon": "ti-file-certificate",
+          "title": "Policy & strategy"
+        },
+        {
+          "body": "Help desk, training, project management, and organizational effectiveness. The connective tissue of the organization.",
+          "icon": "ti-headset",
+          "title": "Operations & support"
+        }
+      ],
+      "heading": "Key functional roles in HIE organizations"
+    },
+    {
+      "body": "The most effective HIE employees are 'T-shaped': deep expertise in one domain (the vertical bar of the T) combined with broad literacy across all five pillars and the Equity Imperative (the horizontal bar).\n\n- A **technical person** who understands policy context makes better architecture decisions — they know why the information blocking exception matters for their API design.\n- A **policy analyst** who understands FHIR asks better questions of the data team and writes more technically grounded legislation.\n- A **clinician** who understands economics designs better quality measures — ones that are both clinically meaningful and incentive-compatible.\n\nThis course is your horizontal bar. Use it.",
+      "type": "text",
+      "heading": "The T-shaped professional"
+    },
+    {
+      "body": "After completing this course, identify: (1) which pillar is your primary domain, (2) which pillar you feel least confident in, and (3) one person in your organization who is expert in that pillar. Schedule a 30-minute conversation with them in your first month.",
+      "type": "callout",
+      "heading": "Build your pillar map",
+      "variant": "tip"
+    },
+    {
+      "hint": "Recommended: Brief audio introductions (2–3 minutes each) from leaders across teams — informatics, analytics, policy, provider relations, compliance. Stitch them together into one 15–20 minute audio track.",
+      "type": "audio_slot",
+      "label": "Meet our team: roles and career paths at HTR"
+    }
+  ],
+  "tags": [
+    "workforce",
+    "roles",
+    "careers",
+    "T-shaped",
+    "interdisciplinary"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T17:00:46.39038+00:00",
+  "updated_at": "2026-10-05T03:25:14.056569+00:00",
+  "sanity_slug": "hie-workforce-roles"
+}

@@ -1,0 +1,371 @@
+{
+  "_createdAt": "2026-09-22T19:19:06Z",
+  "_id": "hea-from-score-to-action",
+  "_rev": "lK8ThWNLjNn912fmFZWEdq",
+  "_type": "academyModule",
+  "_updatedAt": "2026-09-22T19:19:06Z",
+  "body": [
+    {
+      "_key": "l6s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l6s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "What CAHPS Actually Measures"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l6s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l6s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Consumer Assessment of Healthcare Providers and Systems (CAHPS) program is an AHRQ initiative dating to 1995. It is not a single survey but a family of standardized patient-experience surveys covering ambulatory clinician offices, hospitals, nursing homes, dialysis centers, surgical care, dental plans, home health, behavioral health plans and clinics, and care for American Indian populations — each asking patients to rate concrete aspects of their own experience, such as how well a provider communicated or how easy it was to get needed care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l6s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l6s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "CAHPS is the reference standard Lesson 5's Trust & Engagement proxy is standing in for. Real CAHPS data, stratified by race, ethnicity, and language the way Lesson 3's HEDIS measures are stratified, would let a Trust dimension measure what patients actually report about being heard and treated with respect — rather than the indirect signal a system without direct CAHPS access has to substitute in its place."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l6s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l6s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CAHPS is patient-reported, not administratively derived — it is the closest thing in U.S. healthcare measurement to asking patients directly whether they were treated well, which is exactly why it is difficult to substitute with any proxy."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "l6s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l6s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The \"Measurement Without Action\" Failure Mode"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l6s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l6s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A body of published research on disparity dashboards has converged on a consistent finding: dashboards that stratify data by race, ethnicity, or other subgroup are increasingly common, but dashboards demonstrably tied to a specific accountability structure — someone whose job it is to act when a gap appears — are much rarer. A stratified rate that nobody owns is a fact sitting in a report. The same rate, reviewed by a named committee with the authority to change a staffing model, a referral pathway, or a screening protocol, is the beginning of an actual intervention."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l6s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l6s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Moffitt Cancer Center's Disparities Dashboard is a documented example on the more structured end of this spectrum: it uses hospital clinical metrics stratified by race, ethnicity, gender, and language preference specifically to identify, monitor, and address disparities in patient care outcomes — built as an operational tool for ongoing monitoring, not a one-time report."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l6s3h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l6s3hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The Governance Loop"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l6st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Compute the stratified rate, the composite SDOH score, or the HEROI dimension, using the methods from Lessons 2 through 5.",
+          "title": "Measure"
+        },
+        {
+          "_key": "step2",
+          "description": "Before acting, ask why the gap exists. A staffing gap, a referral-pathway gap, a documentation gap (recall Lesson 4's SDOH Z-code problem), and a genuine access barrier each call for a different fix. This maps directly onto Priority 2 of the CMS Framework for Health Equity 2022–2032: assess causes of disparities within an organization's own programs and operations, not just document their existence.",
+          "title": "Assess cause"
+        },
+        {
+          "_key": "step3",
+          "description": "Change something specific and attributable — a staffing decision, a referral relationship, a screening workflow, a resource allocation — tied to the cause identified in the previous step, not to the symptom alone.",
+          "title": "Act"
+        },
+        {
+          "_key": "step4",
+          "description": "Run the same stratified measure again on the same cadence. If the gap did not move, the assessed cause was probably wrong, or the action taken did not address it — return to the assess-cause step rather than abandoning measurement.",
+          "title": "Re-measure"
+        }
+      ],
+      "title": "Measure → Assess Cause → Act → Re-Measure"
+    },
+    {
+      "_key": "l6hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l6hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "An unmoved gap after an intervention is a diagnostic signal to revisit your cause hypothesis — it is not, by itself, evidence that the underlying metric is wrong or that the disparity is unfixable."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "l6an1",
+      "_type": "analogyBlock",
+      "analogy": "A thermostat does not just display the room temperature and stop. It compares the reading to a target, triggers the furnace or air conditioner when they diverge, and checks the temperature again afterward to see whether the action worked. A dashboard that only displays a stratified rate, with no target, no trigger, and no recheck, is a thermometer nailed to the wall — accurate, and inert.",
+      "concept": "Why the measure → assess cause → act → re-measure governance loop is the operational difference between a dashboard and a management tool"
+    },
+    {
+      "_key": "l6s4h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l6s4hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Case Study: From Screening Data to an Anchor-Mission Committee"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l6ex1",
+      "_type": "exampleBlock",
+      "content": "Rush University Medical Center's SDOH screening effort, built with community partners including Catholic Charities, the Greater Chicago Food Depository, and CommunityHealth (Chicago's largest free clinic), did not stop at collecting screening data. Rush formed a West Side Anchor Committee explicitly to convert what the screening and stratified quality data showed into standing operating processes — shared goals, common referral pathways, and joint investment decisions with those community partners.\nThat committee is this lesson's governance loop made concrete: a named structure whose job is to act when the data shows something, not a report that circulates and is filed.",
+      "title": "Rush University Medical Center — West Side Anchor Committee"
+    },
+    {
+      "_key": "l6s5h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l6s5hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The \"So What\" Test for a New Equity Metric"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l6s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l6s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Before any new stratified rate, SDOH score, or composite index ships into a dashboard, it is worth applying a simple test: if this number moves in the wrong direction next quarter, what specifically happens? If the honest answer is \"nothing, because no one is assigned to look at it,\" the metric is not yet operationally ready, regardless of how methodologically sound its construction is."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l6cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Metric ships without this",
+        "points": [
+          "No one is accountable if it moves the wrong way",
+          "No defined trigger for action exists",
+          "The gap is reported with no hypothesis about its cause",
+          "It is measured once and never revisited"
+        ]
+      },
+      "right": {
+        "label": "Metric passes the test",
+        "points": [
+          "A named person or committee reviews it on a set cadence",
+          "A stated gap size or trend triggers a specific response",
+          "At least one testable hypothesis about cause is attached",
+          "It is scheduled to be re-measured after the action"
+        ]
+      },
+      "title": "The \"So What\" Test"
+    },
+    {
+      "_key": "l6q1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l6q1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A composite score computed once and filed away is a number. The same score reviewed on the same cadence as a financial scorecard, by people with the authority to act on it, is a management tool."
+        }
+      ],
+      "markDefs": [],
+      "style": "quote"
+    },
+    {
+      "_key": "l6tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "CAHPS (AHRQ, since 1995) is the real, patient-reported data source that Lesson 5's Trust & Engagement proxy is standing in for — it measures what patients actually report, not what a proxy infers.",
+        "Published research on disparity dashboards finds that stratified dashboards are common, but dashboards tied to a real accountability structure that acts on the data are much rarer — measurement alone does not produce action.",
+        "The governance loop — measure, assess cause, act, re-measure — turns a static number into an iterative accountability process; an unmoved gap sends you back to reassessing the cause, not to abandoning the metric.",
+        "CMS's Framework for Health Equity 2022–2032 explicitly calls for assessing causes of disparities within an organization's own programs and operations, not only documenting that disparities exist.",
+        "Rush University Medical Center's West Side Anchor Committee is a concrete, named structure that converted SDOH and quality data into standing operational decisions with community partners.",
+        "The \"so what\" test — does a named owner, a trigger threshold, a cause hypothesis, and a re-measurement plan exist for this metric — is a practical gate before any new equity metric ships.",
+        "Across all six lessons of this course, the same thread holds: a defensible number (Lessons 2–5) only becomes an equity outcome once it is owned, acted on, and re-measured (Lesson 6)."
+      ]
+    },
+    {
+      "_key": "l6qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The disparity-dashboard research literature specifically identifies dashboards lacking a defined accountability structure as prone to sitting unused — visibility alone does not reliably produce action without an owner and a governance loop.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": true,
+          "text": "The stratified rate will be measured without a mechanism to turn it into any action — the \"measurement without action\" failure mode"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": false,
+          "text": "Stratifying readmission rates by race and ethnicity is not statistically valid"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The dashboard will automatically violate NCQA reporting requirements"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "There is no risk, since the stratified data itself will drive change once it is visible"
+        }
+      ],
+      "question": "A new disparity dashboard is proposed with a stratified readmission rate by race and ethnicity, but no committee or individual is assigned to review it regularly. According to this lesson, what is the main risk?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] AHRQ, About the CAHPS Program — https://www.ahrq.gov/cahps/about-cahps/index.html — program began 1995, survey coverage"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Disparity dashboards: an evaluation of the literature and framework for health equity improvement — https://pmc.ncbi.nlm.nih.gov/articles/PMC10639125/ — the measurement-without-action finding; Moffitt Cancer Center Disparities Dashboard"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CMS Office of Minority Health, CMS Framework for Health Equity 2022–2032 — https://www.cms.gov/files/document/cms-framework-health-equity.pdf — Priority 2, assessing causes of disparities"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Rush University Medical Center, \"Health Equity as a System Strategy,\" NEJM Catalyst 2021 — https://catalyst.nejm.org/doi/full/10.1056/CAT.20.0674 — West Side Anchor Committee"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "health-equity-analytics",
+  "order": 6,
+  "slug": {
+    "_type": "slug",
+    "current": "hea-from-score-to-action"
+  },
+  "title": "From Score to Action: Trust, Governance, and Closing the Loop"
+}

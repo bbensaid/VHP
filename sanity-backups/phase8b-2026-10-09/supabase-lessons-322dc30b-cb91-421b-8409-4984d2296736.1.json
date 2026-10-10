@@ -1,0 +1,60 @@
+{
+  "id": "322dc30b-cb91-421b-8409-4984d2296736",
+  "track_id": "97e99967-cfc8-4a05-a35f-98cc12c8e27c",
+  "pillar": "operations",
+  "order": 6,
+  "slug": "tl-sustaining-change-benefits-realization",
+  "title": "Sustaining the Change: Benefits Realization and Avoiding Reform Fatigue",
+  "summary": "Most transformation programs achieve visible early wins and then stall once leadership attention moves elsewhere. This closing lesson uses PMI's benefits realization management discipline, Maryland's five-decade regulatory durability, and CMS's CPC+ learning-collaborative infrastructure to show what sustaining a transformation actually requires — set against NPfIT as the counter-example of what happens when no sustainment infrastructure exists.",
+  "estimated_minutes": 24,
+  "objectives": [
+    "Define benefits realization management and its three core elements per PMI's standard",
+    "Explain what made Maryland's global-budget model durable across five decades of course correction",
+    "Design a sustainment plan that keeps reporting and review running after a transformation's launch phase ends"
+  ],
+  "content_blocks": [
+    {
+      "body": "Kotter's eighth step — institute the change in culture and systems — is the step most transformation efforts skip, not because it is theoretically obscure but because it has no natural end point to celebrate. Steps 1 through 7 all have a visible event: a launch, an early win, an acceleration. Institutionalization is the absence of an event — the new behavior simply continuing to be normal five, ten, twenty years after the program that created it stopped being anyone's active project.",
+      "type": "text",
+      "heading": "The Step With No Finish Line"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Maryland's rate-setting authority created",
+          "value": "1971",
+          "source": "Maryland General Assembly — the HSCRC's founding statute"
+        },
+        {
+          "label": "Global budgets extended to all acute hospitals",
+          "value": "2014",
+          "source": "CMS/CMMI + HSCRC — the All-Payer Model"
+        },
+        {
+          "label": "Extended to Total Cost of Care",
+          "value": "2019",
+          "source": "Maryland TCOC Model — added non-hospital spending incentives"
+        }
+      ],
+      "heading": "Five Decades of Course Correction, Not Collapse"
+    },
+    {
+      "body": "PMI's Benefits Realization Management Framework defines three core elements: identify the benefits a program is meant to produce, execute the changes needed to produce them, and sustain those benefits after the program formally ends. The third element is the one most transformation plans never budget for — and it is the exact element the NHS's National Audit Office found missing from NPfIT, concluding that lessons from the failure were not being systematically captured even by the government's later digital programs.",
+      "type": "callout",
+      "heading": "PMI's Three-Part Discipline",
+      "variant": "info"
+    }
+  ],
+  "tags": [
+    "benefits-realization",
+    "sustainability",
+    "PMO",
+    "transformation-leadership"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-09-22T19:10:33.506567+00:00",
+  "updated_at": "2026-10-10T05:01:20.870833+00:00",
+  "sanity_slug": "tl-sustaining-change-benefits-realization"
+}

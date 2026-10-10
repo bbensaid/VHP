@@ -1,0 +1,9 @@
+{
+  "id": "b2522dab-d5c3-43b8-a788-0c21fb96d74c",
+  "quiz_id": "b3249d51-e3e7-4d72-bcec-99aea9460e04",
+  "order": 3,
+  "question_type": "single_choice",
+  "question": "The 2016 Medicaid managed care final rule established a Medical Loss Ratio floor of:",
+  "explanation": "The 2016 final rule established an 85% MLR floor for Medicaid MCOs, meaning at least 85 cents of every premium dollar must be spent on clinical services and quality improvement.",
+  "points": null
+}

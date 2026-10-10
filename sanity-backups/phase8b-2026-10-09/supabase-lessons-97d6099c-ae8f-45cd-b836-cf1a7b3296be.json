@@ -1,0 +1,84 @@
+{
+  "id": "97d6099c-ae8f-45cd-b836-cf1a7b3296be",
+  "track_id": "b4856f61-09ed-41d6-b9a5-446d708899ca",
+  "pillar": "policy",
+  "order": 1,
+  "slug": "medicaid-1115-waivers",
+  "title": "Section 1115 Waivers: Laboratories of Democracy",
+  "summary": "How Section 1115 demonstration waivers allow states to test Medicaid expansions, restrictions, and innovations — and the political battles over work requirements.",
+  "estimated_minutes": 18,
+  "objectives": [
+    {
+      "id": "obj_mw1",
+      "text": "Explain what a Section 1115 waiver is and what it allows states to do"
+    },
+    {
+      "id": "obj_mw2",
+      "text": "Describe the 'budget neutrality' requirement for 1115 waivers"
+    },
+    {
+      "id": "obj_mw3",
+      "text": "Analyze the work requirements debate and court rulings"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Section 1115 of the Social Security Act gives the Secretary of Health and Human Services authority to waive almost any Medicaid requirement for 'experimental, pilot, or demonstration projects' that promote the program's objectives.\n\nStates apply to CMS with a proposed innovation, CMS negotiates terms, and if approved, the state gets a five-year waiver (renewable). The waiver must be 'budget neutral' — the federal government should spend no more than it would have without the waiver.\n\nThis has been used for expansive purposes (covering childless adults before the ACA, adding dental benefits) and restrictive ones (imposing work requirements, charging premiums, limiting retroactive coverage).",
+      "type": "text",
+      "heading": "Waiver authority: flexibility within a framework"
+    },
+    {
+      "body": "Several Republican administrations approved 1115 waivers requiring Medicaid enrollees to document work, volunteering, or job training to maintain coverage. Courts repeatedly struck these down, ruling that work requirements do not promote Medicaid's objective of providing health coverage — they undermine it by causing coverage loss. The legal and policy debate continues.",
+      "type": "callout",
+      "heading": "Work requirements: blocked by the courts",
+      "variant": "warning"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Cover childless adults, undocumented immigrants for emergency care, or people above standard income limits.",
+          "icon": "ti-user-plus",
+          "title": "Cover new populations"
+        },
+        {
+          "body": "Add dental, vision, or housing supports beyond standard Medicaid services.",
+          "icon": "ti-tooth",
+          "title": "Add benefits"
+        },
+        {
+          "body": "Charge premiums or copays to groups that otherwise wouldn't pay them.",
+          "icon": "ti-coin",
+          "title": "Impose cost-sharing"
+        },
+        {
+          "body": "Require documentation of employment or community engagement — legally contested and often blocked.",
+          "icon": "ti-briefcase",
+          "title": "Work requirements"
+        },
+        {
+          "body": "Pay for transitional housing and housing navigation as health-related services.",
+          "icon": "ti-home",
+          "title": "Housing supports"
+        },
+        {
+          "body": "Create integrated managed care systems, global budgets, or value-based payment models.",
+          "icon": "ti-refresh",
+          "title": "Restructure delivery"
+        }
+      ],
+      "heading": "What states have used 1115 waivers to do"
+    }
+  ],
+  "tags": [
+    "1115 waiver",
+    "work requirements",
+    "demonstration",
+    "state flexibility"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T21:56:17.816839+00:00",
+  "updated_at": "2026-06-01T13:14:51.12854+00:00",
+  "sanity_slug": "medicaid-1115-waivers"
+}

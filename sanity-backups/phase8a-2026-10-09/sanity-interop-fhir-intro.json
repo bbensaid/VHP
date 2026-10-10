@@ -1,0 +1,646 @@
+{
+  "_createdAt": "2026-05-29T02:48:54Z",
+  "_id": "interop-fhir-intro",
+  "_rev": "2zkDeD7zc2Ko2DfFHkT8pM",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-30T04:54:15Z",
+  "body": [
+    {
+      "_key": "s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Why FHIR Exists: The Problem It Solves"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "For most of the past four decades, healthcare data exchange ran on a standard called HL7 version 2, first released in 1987. HL7 v2 is a pipe-delimited text format — essentially a structured text file where each field is separated by a vertical bar character. Hospitals still send tens of millions of these messages every day for lab results, admission notifications, and discharge summaries. The problem is that HL7 v2 was never truly standardized: each hospital, lab, and payer customized the format to their own needs. The result was that two organizations could each claim HL7 v2 compliance yet be completely unable to exchange data without expensive custom interface engines sitting between them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "HL7 attempted to solve this chaos with version 3 and its companion standard, the Clinical Document Architecture (CDA). Released in 2005, CDA introduced XML-based documents like the Continuity of Care Document (CCD) and brought more rigorous modeling using a formal Reference Information Model (RIM). On paper, CDA was a major step forward. In practice, it proved so complex to implement that adoption required months of training, and the resulting documents were sprawling XML files sometimes hundreds of kilobytes long for a single patient encounter. Ambiguous specifications meant different vendors interpreted the standard differently, recreating the same fragmentation problem at a higher level of sophistication."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The breakthrough came from an unexpected direction. In 2011, Grahame Grieve — an Australian health informaticist running a small consulting firm called Health Intersections — published a proposal on the HL7 listserv under the name \"Resources for Healthcare.\" He argued that instead of modeling the entire healthcare universe in a single monolithic schema, the industry should define discrete, self-contained data objects — resources — that could be exchanged individually over the web using the same RESTful HTTP conventions already powering every modern web application. HL7 adopted the proposal, renamed the project Fast Healthcare Interoperability Resources (FHIR), and Grieve has served as FHIR Product Director at HL7 International ever since. FHIR's foundational insight was simple and radical: make healthcare data exchange feel like using the internet, not like implementing a mainframe EDI system."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1analogy",
+      "_type": "analogyBlock",
+      "analogy": "HL7 v2 and CDA are like sending a fax — the technology works, but every machine has its own quirks, and you need a human on both ends to interpret the smudged output. FHIR is like sending a JSON API response — any developer with a browser and twenty lines of code can read it immediately.",
+      "concept": "FHIR replaces proprietary healthcare message formats with the same web-native conventions that power modern software, dramatically lowering the barrier to interoperability."
+    },
+    {
+      "_key": "s1stats",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "The original pipe-delimited standard that still carries the majority of clinical messages today",
+          "label": "HL7 v2 Born",
+          "value": "1987"
+        },
+        {
+          "_key": "s2",
+          "context": "XML-based Clinical Document Architecture — powerful but widely criticized for implementation complexity",
+          "label": "CDA Released",
+          "value": "2005"
+        },
+        {
+          "_key": "s3",
+          "context": "Grahame Grieve publishes the resource-oriented framework that becomes HL7 FHIR",
+          "label": "FHIR Proposed",
+          "value": "2011"
+        },
+        {
+          "_key": "s4",
+          "context": "The first normative release of FHIR, establishing a stable regulatory baseline",
+          "label": "FHIR R4 Published",
+          "value": "January 2, 2019"
+        }
+      ]
+    },
+    {
+      "_key": "s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Core Concepts: Resources, RESTful APIs, and Profiles"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The fundamental unit of FHIR is the resource. A resource is a discrete, self-contained piece of healthcare information: a Patient, a Condition, a Medication, an Observation, an Encounter. Each resource has a defined structure — a set of typed fields, cardinality constraints, and a standard identifier — and can be serialized as either JSON or XML. FHIR R4 defines 145 resource types spanning clinical data, administrative data, financial records, and the specification infrastructure itself. Because each resource is independently addressable via a URL, any developer who can make an HTTP GET request can retrieve a patient's medication list without needing to parse thousands of lines of XML or understand a complex proprietary schema."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "FHIR uses standard RESTful HTTP verbs to operate on resources. GET retrieves a resource or a collection of resources. POST creates a new resource. PUT updates an existing resource by replacing it in full. PATCH applies a partial update. DELETE removes a resource. This means that a FHIR server is, at its core, a web API — and developers already experienced building or consuming REST APIs can begin working with FHIR data without a steep learning curve. The specification also defines a $search operation with a rich query syntax, allowing applications to retrieve, for example, all Observations for a given patient with a specific LOINC code within a date range — expressed as a URL query string any web developer would recognize."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because a generic resource like Observation must serve everything from a blood pressure reading to a pregnancy test result, FHIR introduces the concept of profiles to constrain and extend base resources for specific use cases. A profile is a StructureDefinition that narrows the allowable values in certain fields, makes optional elements required, and adds extensions for data elements not present in the base resource. Collections of profiles, terminology bindings, and example instances are packaged into Implementation Guides (IGs). The US Core Implementation Guide, developed by HL7 and referenced by U.S. federal regulation, defines the minimum data set that certified EHR systems must expose — ensuring that a patient's medications, allergies, and problem list are available in a predictable, consistent format regardless of the underlying vendor."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2compare",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "HL7 v2 / CDA",
+        "points": [
+          "Pipe-delimited text or sprawling XML",
+          "No standard transport protocol",
+          "Weeks of training to implement",
+          "Costly custom interface engines required",
+          "No standard query language"
+        ]
+      },
+      "right": {
+        "label": "FHIR R4",
+        "points": [
+          "Compact JSON or XML with defined schemas",
+          "Standard RESTful HTTP over HTTPS",
+          "Days to read documentation and build a prototype",
+          "Any HTTP client can consume the API",
+          "URL-based search with standard parameters"
+        ]
+      },
+      "title": "FHIR vs. Pre-FHIR Standards"
+    },
+    {
+      "_key": "s2example",
+      "_type": "exampleBlock",
+      "content": "A minimal Patient resource looks like: { \"resourceType\": \"Patient\", \"id\": \"12345\", \"name\": [{ \"family\": \"Smith\", \"given\": [\"Jane\"] }], \"birthDate\": \"1975-04-12\", \"gender\": \"female\" }. That entire record — parseable by any JSON library in any language — is retrieved with a single HTTP GET to https://server.example.com/fhir/Patient/12345.",
+      "title": "A FHIR Patient Resource in JSON"
+    },
+    {
+      "_key": "s3h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3hs",
+          "_type": "span",
+          "marks": [],
+          "text": "FHIR R4 vs R4B vs R5: Understanding the Version Landscape"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "FHIR R4, published on January 2, 2019, was a landmark release for one specific reason: for the first time, core components of the FHIR specification — the RESTful API framework, the XML and JSON serialization formats, and a set of foundational data types — passed HL7's normative ballot process. \"Normative\" in HL7 terminology means the specification has been formally reviewed, balloted, and approved as a stable standard that will not undergo breaking changes without a full new normative ballot cycle. This stability was what regulators and health systems needed to mandate FHIR in law: you cannot require vendors to implement a standard that might break next year. R4 became the regulatory baseline for U.S. federal interoperability rules and remains so today."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "FHIR R4B (version 4.3.0) was published on May 28, 2022. Rather than a full new release, R4B was a limited, targeted update designed to bring selected new clinical features — particularly around subscriptions, citations, and evidence-based medicine resources — to maturity without breaking R4 compatibility. R4B maintained full backward compatibility with R4 for the vast majority of resources, meaning an R4 server could largely interoperate with an R4B client. For most implementers, especially those building systems to meet U.S. regulatory requirements, R4B represented a refinement rather than a migration target."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "FHIR R5 was published on March 26, 2023. R5 expanded the normative core, refined the subscription framework, improved support for clinical reasoning and evidence-based medicine, and introduced a number of new resource types and cross-version analysis tools. However, because U.S. regulation explicitly cites FHIR R4 as the required standard, and because certification bodies and major EHR vendors have invested years building R4 implementations, R4 remains the de facto deployment standard for regulated healthcare in the United States. R5 adoption will grow over time — particularly as new Implementation Guides are written against it — but implementers in 2025 still encounter R4 as the universal baseline in production systems."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3steps",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Draft Standard for Trial Use — the first public release, used for early pilots. No normative components.",
+          "title": "FHIR DSTU1 (2014)"
+        },
+        {
+          "_key": "step2",
+          "description": "Expanded resource set; first widely implemented version. Still trial-use only.",
+          "title": "FHIR DSTU2 (2015)"
+        },
+        {
+          "_key": "step3",
+          "description": "Substantial maturation; many large implementations deployed on STU3 and have not migrated.",
+          "title": "FHIR STU3 (2017)"
+        },
+        {
+          "_key": "step4",
+          "description": "First normative release. RESTful API, XML/JSON formats, and core data types become stable. U.S. regulatory baseline.",
+          "title": "FHIR R4 (Jan 2019)"
+        },
+        {
+          "_key": "step5",
+          "description": "Minor update with targeted new resources for subscriptions and evidence. Backward compatible with R4.",
+          "title": "FHIR R4B (May 2022)"
+        },
+        {
+          "_key": "step6",
+          "description": "Major new release with expanded normative core. Adoption growing but R4 remains the U.S. regulatory requirement.",
+          "title": "FHIR R5 (Mar 2023)"
+        }
+      ],
+      "title": "FHIR Version Timeline at a Glance"
+    },
+    {
+      "_key": "s4h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4hs",
+          "_type": "span",
+          "marks": [],
+          "text": "FHIR in U.S. Regulation: Federal Mandates Driving Adoption"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The single most consequential event in FHIR's adoption history was the publication of two companion federal rules on May 1, 2020. The ONC 21st Century Cures Act Final Rule — formally titled \"21st Century Cures Act: Interoperability, Information Blocking, and the ONC Health IT Certification Program\" — required certified EHR developers to implement a new standardized API criterion (§ 170.315(g)(10)) based specifically on HL7 FHIR Release 4. EHR developers were given 24 months from the publication date to update their technology, placing the compliance deadline in May 2022. This rule also codified information blocking prohibitions — making it illegal for EHR vendors, health systems, and health information networks to interfere with the access, exchange, or use of electronic health information."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "On the same day, the Centers for Medicare & Medicaid Services published the CMS Interoperability and Patient Access Final Rule (CMS-9115-F). This rule required Medicare Advantage organizations, Medicaid programs, CHIP programs, and Qualified Health Plan issuers on the federal marketplace to implement FHIR-based Patient Access APIs — giving patients the right to request their claims data and clinical information through any third-party app of their choosing. Payers were required to make this API available by July 1, 2021. Together, these two rules created an unprecedented regulatory pull: the entire U.S. healthcare ecosystem — hospitals, clinics, payers, and health IT vendors — faced federal mandates to deploy FHIR R4 APIs within a defined timeline."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "These rules operate alongside the U.S. Core Data for Interoperability (USCDI), ONC's standardized set of data elements that certified health IT must be capable of exchanging. USCDI defines the \"what\" — the clinical data classes and elements — while FHIR and the US Core Implementation Guide define the \"how\": the technical format and API by which that data is made accessible. TEFCA, the Trusted Exchange Framework and Common Agreement, extends this further by establishing a national framework for health information network interoperability through designated Qualified Health Information Networks (QHINs). The FHIR Roadmap for TEFCA, published by the Sequoia Project in December 2023, laid out a phased four-stage plan requiring all QHINs to progressively implement FHIR API exchange — with Stages 1 and 2 completing in 2024."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4warn",
+      "_type": "warningBlock",
+      "message": "The ONC Cures Act Final Rule prohibits EHR vendors, health systems, and health information networks from taking any action that interferes with the access, exchange, or use of electronic health information. Violations can result in civil monetary penalties. Withholding data from patients or restricting API access without a defined exception is a federal violation, not merely a best-practice failure.",
+      "title": "Information Blocking Is Now Illegal"
+    },
+    {
+      "_key": "s4stats",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "ONC Cures Act Final Rule and CMS Interoperability Rule published simultaneously",
+          "label": "Rules Published",
+          "value": "May 1, 2020"
+        },
+        {
+          "_key": "s2",
+          "context": "Medicare Advantage, Medicaid, and ACA plan Patient Access APIs due",
+          "label": "Payer API Deadline",
+          "value": "July 1, 2021"
+        },
+        {
+          "_key": "s3",
+          "context": "24-month window for EHR developers to implement § 170.315(g)(10) FHIR R4 API",
+          "label": "EHR Developer Deadline",
+          "value": "May 2022"
+        },
+        {
+          "_key": "s4",
+          "context": "QHINs complete first two stages of FHIR roadmap for national network exchange",
+          "label": "TEFCA Stages 1 & 2",
+          "value": "2024"
+        }
+      ]
+    },
+    {
+      "_key": "s5h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5hs",
+          "_type": "span",
+          "marks": [],
+          "text": "SMART on FHIR and Real-World Adoption"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A FHIR API alone tells you what data is available and how to retrieve it. SMART on FHIR answers a different question: how should a third-party application authenticate, identify which patient context it's operating in, and receive the scoped access token it needs to retrieve only the data it's authorized to see? SMART — which stands for Substitutable Medical Applications and Reusable Technologies — originated in 2010 as a project at Harvard Medical School and Boston Children's Hospital, funded by a four-year, $15 million grant from the Office of the National Coordinator for Health Information Technology. The project's goal was radical: write a medical application once and run it, unmodified, across different EHR systems. In the second half of 2013, the SMART team updated their framework to use FHIR as the underlying data model, and SMART on FHIR was publicly demonstrated at HIMSS in February 2014."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "SMART on FHIR works by layering OAuth 2.0 authorization flows on top of FHIR APIs. When a clinician opens a SMART app from within their EHR, the EHR launches the app with a launch context — communicating which patient is currently in view and which practitioner is logged in. The app exchanges this context for an access token scoped to specific FHIR resources and operations (for example, patient/Observation.read or patient/MedicationRequest.read). The app then uses this token to make authenticated FHIR API calls. The entire flow uses industry-standard OAuth 2.0 and OpenID Connect protocols, meaning healthcare apps can leverage the same security infrastructure as consumer and enterprise software. SMART on FHIR 2.0 added backend services authorization for server-to-server use cases — enabling population health analytics, quality reporting, and payer data exchange without a human in the loop."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The major EHR vendors have fully embraced FHIR R4 and SMART on FHIR, in large part because federal regulation left them no choice — but adoption has also created genuine market opportunity. Epic operates fhir.epic.com, a developer portal through which thousands of third-party applications have registered. The Epic App Showroom (formerly App Orchard) hosts over 340 SMART on FHIR applications. Oracle Health's Ignite APIs — the FHIR platform for the former Cerner EHR — operate entirely on R4 and support SMART on FHIR launches from within the clinical workflow. A single SMART on FHIR application can, in principle, be registered with Epic, Oracle Health, and other EHRs separately, but the core application code — the JavaScript, Python, or mobile app logic — remains identical across platforms. This write-once, run-anywhere vision, first articulated in 2010, is now a practical reality across the majority of U.S. hospital beds."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5callout",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5callouts",
+          "_type": "span",
+          "marks": [],
+          "text": "SMART on FHIR real-world examples include: patient-facing apps that pull medication lists and vaccination records directly from hospital EHRs into a personal health record; clinical decision support tools that launch inside the EHR workflow and query live patient data to generate recommendations; payer-facing apps that retrieve prior authorization data and claims history; and research cohort tools that use backend SMART services to query populations across multiple institutions without requiring a human login session."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s5stats",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Harvard Medical School and Boston Children's Hospital launch with $15M ONC grant",
+          "label": "SMART Founded",
+          "value": "2010"
+        },
+        {
+          "_key": "s2",
+          "context": "First public demonstration of SMART + FHIR integration at HIMSS 2014",
+          "label": "SMART on FHIR Debut",
+          "value": "Feb 2014"
+        },
+        {
+          "_key": "s3",
+          "context": "Applications registered in Epic's SMART on FHIR marketplace as of 2025",
+          "label": "Epic App Showroom",
+          "value": "340+"
+        },
+        {
+          "_key": "s4",
+          "context": "All Ignite FHIR APIs for the former Cerner EHR operate on FHIR R4",
+          "label": "Oracle Health Ignite",
+          "value": "R4 Native"
+        }
+      ]
+    },
+    {
+      "_key": "tk1",
+      "_type": "takeawayBlock",
+      "points": [
+        "FHIR (Fast Healthcare Interoperability Resources) was created in 2011 by Grahame Grieve to replace the complexity of HL7 v2 and CDA with a web-native, resource-oriented approach to health data exchange.",
+        "FHIR R4, published January 2, 2019, was the first normative release — meaning core components (REST API, JSON/XML formats, foundational data types) are stable and will not break without a new ballot cycle.",
+        "FHIR R4 defines 145 discrete resource types, each independently addressable over HTTP using standard REST verbs: GET, POST, PUT, PATCH, and DELETE.",
+        "Profiles and Implementation Guides constrain generic FHIR resources for specific use cases. The US Core IG defines the minimum clinical data set all certified U.S. EHRs must expose.",
+        "The ONC 21st Century Cures Act Final Rule (May 2020) and the CMS Interoperability and Patient Access Rule (CMS-9115-F) together mandated FHIR R4 APIs across EHR vendors and payers, with hard compliance deadlines.",
+        "SMART on FHIR — originating at Harvard and Boston Children's Hospital in 2010 — provides the OAuth 2.0 authorization layer that enables third-party applications to securely launch within EHR workflows and retrieve scoped patient data.",
+        "FHIR R4B (May 2022) and R5 (March 2023) have been published, but R4 remains the U.S. regulatory baseline; implementers will encounter R4 in virtually every production healthcare environment.",
+        "Major EHR vendors including Epic and Oracle Health (Cerner) have deployed FHIR R4 + SMART on FHIR developer platforms, with hundreds of certified third-party applications now operating in clinical workflows."
+      ]
+    },
+    {
+      "_key": "q1",
+      "_type": "knowledgeCheck",
+      "explanation": "FHIR R4, published January 2, 2019, was the first release in which core components — specifically the RESTful API framework, XML and JSON serialization formats, and foundational data types — passed HL7's normative ballot process. Previous versions (DSTU1, DSTU2, STU3) were all Draft Standard for Trial Use or Standard for Trial Use, meaning they could change without a full normative ballot cycle. This normative stability was a prerequisite for regulators to mandate FHIR in federal law.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "FHIR DSTU2 (2015)"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": false,
+          "text": "FHIR STU3 (2017)"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": true,
+          "text": "FHIR R4 (2019)"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "FHIR R5 (2023)"
+        }
+      ],
+      "question": "Which version of FHIR was the first to include normative components — meaning core elements of the specification that are stable and will not break without a full ballot cycle?"
+    },
+    {
+      "_key": "srch",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srchs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] HL7 International — \"FHIR R4 Is Published\" — https://onfhir.hl7.org/2019/01/02/fhir-r4-is-published/ — Confirms FHIR R4 publication date of January 2, 2019 and its status as the first normative release of the FHIR standard."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] HCI Innovation Group — \"HL7 Publishes Release 5 of FHIR Standard\" — https://www.hcinnovationgroup.com/interoperability-hie/fast-healthcare-interoperability-resources-fhir/news/53057286/hl7-publishes-release-5-of-fhir-standard — Confirms FHIR R5 publication date of March 26, 2023."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Federal Register — \"21st Century Cures Act: Interoperability, Information Blocking, and the ONC Health IT Certification Program\" — https://www.federalregister.gov/documents/2020/05/01/2020-07419/21st-century-cures-act-interoperability-information-blocking-and-the-onc-health-it-certification — Primary source for the ONC Cures Act Final Rule published May 1, 2020, mandating FHIR R4 API certification criterion § 170.315(g)(10) and information blocking prohibitions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] PMC / JAMIA — \"SMART on FHIR: a standards-based, interoperable apps platform for electronic health records\" — https://pmc.ncbi.nlm.nih.gov/articles/PMC4997036/ — Peer-reviewed paper documenting the origin of the SMART project at Harvard Medical School and Boston Children's Hospital in 2010 and its evolution into SMART on FHIR demonstrated at HIMSS February 2014."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] HL7 International — \"FHIR Celebrates 10th Birthday\" — https://info.hl7.org/fhir-10th-birthday — Official HL7 retrospective confirming Grahame Grieve's authorship of the original FHIR proposal in 2011 and his ongoing role as FHIR Product Director at HL7 International."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] CMS — \"CMS Interoperability and Patient Access Final Rule (CMS-9115-F)\" — https://www.cms.gov/priorities/burden-reduction/overview/interoperability/policies-regulations/cms-interoperability-patient-access-final-rule-cms-9115-f — Official CMS page for the rule requiring Medicare Advantage, Medicaid, CHIP, and ACA plan Patient Access APIs built on FHIR, with a July 1, 2021 compliance deadline."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] Sequoia Project / ASTP TEFCA RCE — \"FHIR Roadmap for TEFCA Exchange Version 2.0\" — https://rce.sequoiaproject.org/wp-content/uploads/2023/12/FHIR-Roadmap-for-TEFCA-Exchange.pdf — Published December 2023; defines the four-stage FHIR implementation plan for Qualified Health Information Networks (QHINs) operating under TEFCA, with Stages 1 and 2 completing in 2024."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src8s",
+          "_type": "span",
+          "marks": [],
+          "text": "[8] Infor Blog — \"HL7 releases FHIR R4B with increased potential for subscriptions\" — https://www.infor.com/blog/hl7-releases-fhir-r4b-with-increased-potential-for-subscriptions — Confirms FHIR R4B (version 4.3.0) publication date of May 28, 2022 and its backward-compatible nature relative to R4."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "interop-fhir-intro"
+  },
+  "title": "FHIR Fundamentals: The Modern Standard for Healthcare Data Exchange"
+}

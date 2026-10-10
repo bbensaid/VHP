@@ -1,0 +1,80 @@
+{
+  "id": "9319601f-c19e-4bc1-977e-8a8709e0290c",
+  "track_id": "b4dfcb09-21a1-4151-8466-ae33057d7b8b",
+  "pillar": "clinical",
+  "order": 2,
+  "slug": "ltss-mltss-care-coordination",
+  "title": "LTSS and MLTSS: Care Coordination for Complex Members",
+  "summary": "Examines how states manage long-term services and supports through managed care, including MLTSS program design, care coordination models, and person-centered planning requirements.",
+  "estimated_minutes": 25,
+  "objectives": [
+    "Define LTSS and MLTSS and explain the policy rationale for managed LTSS",
+    "Describe person-centered planning requirements in MLTSS programs",
+    "Explain the role of conflict-free case management in MLTSS"
+  ],
+  "content_blocks": [
+    {
+      "body": "Managed Long-Term Services and Supports (MLTSS) programs integrate LTSS — including nursing facility care, home and community-based services (HCBS), personal care, and adult day services — into Medicaid managed care capitation. As of 2023, about two dozen states operated MLTSS programs, and CMS counted about 1.9 million MLTSS users nationwide as of July 2024.\n\nThe policy rationale for MLTSS includes: rebalancing care from institutions toward home and community settings; improving care coordination for high-cost, complex members; and achieving cost predictability through capitation. Critics raise concerns about profit motives in a sector where quality is hard to measure and vulnerable populations have limited ability to advocate for themselves.",
+      "type": "text",
+      "heading": "What Is MLTSS?"
+    },
+    {
+      "body": "Federal HCBS regulations (42 CFR §441.301 et seq.) require person-centered service planning for all MLTSS members receiving HCBS waiver services. Plans must: reflect the member's preferences and goals; be developed with the member's full participation; identify supports the member needs and wants; and be reviewed at least annually. MCOs must have qualified care coordinators who facilitate this process.",
+      "type": "callout",
+      "title": "Person-Centered Planning: A Core MLTSS Requirement",
+      "variant": "key"
+    },
+    {
+      "type": "concepts_grid",
+      "concepts": [
+        {
+          "term": "LTSS (Long-Term Services and Supports)",
+          "definition": "A broad category of services supporting daily functioning for people with disabilities and older adults — including nursing facilities, personal care, HCBS, and adult day services"
+        },
+        {
+          "term": "HCBS (Home and Community-Based Services)",
+          "definition": "Medicaid services provided in home and community settings rather than institutions — the preferred setting under the ADA and Olmstead decision"
+        },
+        {
+          "term": "Conflict-Free Case Management",
+          "definition": "A requirement that the entity assessing a member's LTSS needs and developing their plan cannot also be the entity providing those services — preventing financial conflicts of interest"
+        },
+        {
+          "term": "Olmstead Decision",
+          "definition": "1999 Supreme Court ruling under the ADA requiring states to provide community-based services to people with disabilities who can benefit from them — foundational to HCBS expansion"
+        }
+      ]
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "States operating MLTSS programs",
+          "value": "20+",
+          "context": "As of 2023, more than 20 states have integrated LTSS into managed care capitation"
+        },
+        {
+          "label": "Beneficiaries in MLTSS programs",
+          "value": "1.5M",
+          "context": "Approximately 1.5 million Medicaid beneficiaries receive LTSS through managed care arrangements nationally"
+        },
+        {
+          "label": "Annual LTSS Medicaid spending",
+          "value": "$300B+",
+          "context": "LTSS represents the largest single category of Medicaid spending, exceeding $300 billion annually"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "LTSS",
+    "MLTSS",
+    "care coordination",
+    "person-centered planning"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:16.522399+00:00",
+  "updated_at": "2026-10-09T15:08:31.191879+00:00",
+  "sanity_slug": "ltss-mltss-care-coordination"
+}

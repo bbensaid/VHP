@@ -1,0 +1,94 @@
+{
+  "id": "820ef14e-1923-44d2-a8ce-9e72ddb94972",
+  "track_id": "4b72b2af-3497-4a44-8bfd-e9a1581a53ee",
+  "pillar": "economics",
+  "order": 1,
+  "slug": "volume-to-value-financial-implications",
+  "title": "Transitioning from Volume to Value: Financial Implications",
+  "summary": "The shift from fee-for-service to value-based payment fundamentally alters hospital financial logic—reducing revenue as utilization falls while increasing investment in care coordination and prevention. This lesson examines the financial transition path.",
+  "estimated_minutes": 25,
+  "objectives": [
+    "Explain how the volume-to-value shift changes the hospital revenue model",
+    "Describe the dual financial challenge of managing FFS revenue while building value-based capabilities",
+    "Identify the investments required for a hospital to succeed under value-based payment"
+  ],
+  "content_blocks": [
+    {
+      "body": "Under **fee-for-service (FFS)**, hospitals are paid for each service delivered. More procedures, more admissions, more tests = more revenue. This creates an incentive to maximize volume.\n\nUnder **value-based payment**, hospitals are paid based on outcomes, quality, and cost efficiency. Keeping patients out of the hospital, reducing readmissions, preventing complications = financial success. This directly contradicts FFS revenue logic.\n\nThe transition creates a **dual financial challenge**: hospitals must simultaneously:\n1. Maintain FFS revenue (still 80%+ of most hospitals' income) to fund operations\n2. Invest in value-based capabilities (care coordination, analytics, community health) that reduce FFS volume\n\nThis 'burning platform' dynamic requires hospitals to manage a carefully paced transition to avoid financial crisis.",
+      "type": "text",
+      "heading": "The Fundamental Tension in Payment Reform"
+    },
+    {
+      "rows": [
+        [
+          "Revenue driver",
+          "Volume (admissions, procedures, tests)",
+          "Attributed lives and quality performance"
+        ],
+        [
+          "Readmission financial impact",
+          "Revenue per readmission",
+          "Penalty (CMS HRRP) or risk-share loss"
+        ],
+        [
+          "Prevention investment",
+          "Cost center (no revenue)",
+          "Revenue generator (avoidance savings)"
+        ],
+        [
+          "Employed physicians",
+          "Revenue-generating productivity",
+          "Panel management and care coordination"
+        ],
+        [
+          "Success metric",
+          "Market share and volume growth",
+          "Total cost of care and quality outcomes"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Financial Dimension",
+        "Fee-for-Service Logic",
+        "Value-Based Logic"
+      ]
+    },
+    {
+      "body": "CMS operates several mandatory and voluntary value-based programs that directly affect hospital revenue:\n- **Hospital Readmissions Reduction Program (HRRP):** Penalizes up to 3% of Medicare payments for excess readmissions in 6 conditions\n- **Hospital Value-Based Purchasing (VBP):** Redistributes 2% of DRG payments based on quality performance\n- **Hospital-Acquired Condition Reduction Program (HAC):** Penalizes bottom quartile hospitals 1% of payments\n- **ACO/MSSP:** Voluntary shared savings program for physician-hospital partnerships",
+      "type": "callout",
+      "title": "CMS Value-Based Programs",
+      "variant": "info"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Max Medicare penalty (HRRP)",
+          "value": "3%",
+          "context": "Hospitals with excess readmissions face up to 3% reduction in all Medicare inpatient payments"
+        },
+        {
+          "label": "VBP withhold",
+          "value": "2%",
+          "content": "CMS withholds 2% of Medicare DRG payments and redistributes based on quality scores"
+        },
+        {
+          "label": "Annual HRRP penalties",
+          "value": "$1B+",
+          "context": "CMS has levied over $1 billion in cumulative readmission penalties since program inception in 2012"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "value-based care",
+    "fee-for-service",
+    "payment reform",
+    "financial transition"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:34:44.962192+00:00",
+  "updated_at": "2026-06-01T13:29:14.742473+00:00",
+  "sanity_slug": "volume-to-value-financial-implications"
+}

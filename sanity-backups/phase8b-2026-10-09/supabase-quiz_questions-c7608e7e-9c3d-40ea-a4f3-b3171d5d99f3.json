@@ -1,0 +1,9 @@
+{
+  "id": "c7608e7e-9c3d-40ea-a4f3-b3171d5d99f3",
+  "quiz_id": "da62612c-6c1e-4cfc-8d66-3ea7556a4363",
+  "order": 2,
+  "question_type": "single_choice",
+  "question": "A Medicaid MCO received $400M in capitation and spent $330M clinical + $8M QI. Its MLR is 84.5%. What does it owe the state?",
+  "explanation": "The MCO's MLR of 84.5% is 0.5 percentage points below the 85% floor. The remittance owed = 0.5% × $400M = $2 million.",
+  "points": null
+}

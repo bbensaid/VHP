@@ -1,0 +1,53 @@
+{
+ "lessonIds": [
+  "cd225a5b-50c7-485d-ac68-aa156a1071d2"
+ ],
+ "files": [
+  "frontend/content/course_revenue_cycle.json",
+  "frontend/content/courses_tier3.json"
+ ],
+ "edits": [
+  {
+   "match": {
+    "label": "Reduction in PA processing time with AI",
+    "value": "60\u201370%"
+   },
+   "set": {
+    "label": "Organizations deploying AI at scale in the revenue cycle",
+    "value": "27%",
+    "context": "Across multiple functions; another 53% are piloting (HFMA survey, Feb 2026, n=95)"
+   },
+   "claim": "fallback stat: 60-70% reduction in PA processing time with AI",
+   "verdict": "UNVERIFIABLE",
+   "src": "No independent source for 60-70% PA burden/processing-time reduction or 85-95% AI coding accuracy (vendor marketing only; search 2026-10-09); replacement: HFMA, \"The Revenue Cycle of the Future\" (Apr 21 2026; Feb 2026 survey n=95): 27% deploying AI at scale, 53% piloting"
+  },
+  {
+   "match": {
+    "label": "Accuracy of AI-assisted medical coding",
+    "value": "85\u201395%"
+   },
+   "set": {
+    "label": "Users reporting positive ROI from revenue-cycle AI",
+    "value": "15%",
+    "context": "Of the 63% of organizations using AI/automation in the revenue cycle (HFMA poll, May 2025)"
+   },
+   "claim": "fallback stat: 85-95% accuracy of AI-assisted coding",
+   "verdict": "UNVERIFIABLE",
+   "src": "No independent source for 60-70% PA burden/processing-time reduction or 85-95% AI coding accuracy (vendor marketing only; search 2026-10-09); replacement: HFMA poll May 30 2025 (63% use AI/automation; 15% of those positive ROI)"
+  },
+  {
+   "match": {
+    "label": "Projected AI impact on US healthcare admin costs by 2026",
+    "value": "$360B"
+   },
+   "set": {
+    "label": "Potential annual US health spending savings from wider AI adoption",
+    "value": "$200\u2013360B",
+    "context": "5\u201310% of spending, 2019 dollars, within about five years (Sahni, Stein, Zemmel & Cutler, NBER Working Paper 30857, 2023)"
+   },
+   "claim": "fallback stat: $360B projected AI impact on admin costs by 2026 (McKinsey Global Institute)",
+   "verdict": "MISATTRIBUTED",
+   "src": "Sahni, Stein, Zemmel & Cutler, \"The Potential Impact of Artificial Intelligence on Healthcare Spending,\" NBER Working Paper 30857 (Jan 2023, rev. Oct 2023): wider AI adoption could save 5-10% of US health spending, ~$200B-$360B annually (2019 dollars), using today\u2019s technologies within five years \u2014 total spending, not \"admin costs by 2026\", and an NBER paper by McKinsey and Harvard authors, not a McKinsey Global Institute estimate"
+  }
+ ]
+}

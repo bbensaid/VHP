@@ -1,0 +1,509 @@
+{
+  "_createdAt": "2026-06-02T14:03:56Z",
+  "_id": "cross-sector-partnerships",
+  "_rev": "Gtio4gKoJ677Mg6YJHpz4D",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T14:03:56Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "No Health System Can Do This Alone"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The recurring lesson of this entire course is that most of what produces health happens outside the health care system — in housing, food, neighborhoods, education, and social conditions. That fact has an unavoidable implication: a health system, no matter how well-run, cannot fix those upstream conditions by itself. Hospitals do not build housing, run food banks, operate transit systems, or fund early childhood education. The organizations that do those things live in other sectors entirely."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why cross-sector partnership is not an optional add-on to equity work but a structural necessity. Closing disparities requires health systems to work with community-based organizations, social-service agencies, public health departments, housing authorities, schools, and local government — each of which controls levers the health system does not. The hard part is that these sectors have different funding streams, cultures, timelines, and data systems, which makes genuine collaboration difficult."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson covers how that collaboration is structured: the models that connect health care to community resources, the financing and legal mechanisms that fund cross-sector work, and the named programs that show what works and what is hard. The goal is to move from the abstract idea that \"we should partner\" to a concrete understanding of how partnerships are actually built and sustained."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Most health is produced outside health care, so health systems cannot close disparities alone. Cross-sector partnership with community, social-service, public-health, and government organizations is a structural necessity, not an add-on."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Accountable Health Communities Model"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most ambitious federal test of cross-sector partnership was the CMS Accountable Health Communities (AHC) Model, which ran from 2017 to 2023. Its theory was simple and directly tied to the SDOH evidence in this course: systematically screen Medicare and Medicaid beneficiaries for health-related social needs — housing, food, transportation, utilities, and interpersonal safety — and connect those with needs to community resources, then measure whether doing so reduced cost and utilization."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The model was built around \"bridge organizations\" — twenty-eight diverse entities, including community-based organizations, hospitals, health systems, payers, and health information exchanges, that coordinated screening and referral across sectors in their communities. In its assistance track, some beneficiaries were randomly offered navigation services to help them actually connect with resources, allowing a rigorous evaluation. Over its life, AHC organizations screened more than one million beneficiaries — a genuinely large-scale test."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The results were instructive and mixed. In the assistance track, the evaluation found reductions in total expenditures and unplanned inpatient readmissions, with Medicaid expenditures down about 3% and Medicare about 4% for beneficiaries who received navigation. These were meaningful but modest effects, and a central lesson was that screening and referral alone are not enough if the community resources people are referred to do not have the capacity to meet the need. AHC demonstrated both the promise and the limits of the screen-and-refer approach."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex1",
+      "_type": "exampleBlock",
+      "content": "AHC was CMS's flagship cross-sector demonstration: screen Medicare and Medicaid beneficiaries for five core social needs and connect them to community resources through 28 \"bridge organizations.\" It screened over one million beneficiaries.\nIn the randomized assistance track, beneficiaries who received navigation showed reduced total expenditures and unplanned readmissions — Medicaid spending down ~3%, Medicare ~4%. A key lesson: referral only works if community resources have the capacity to meet the identified needs, so investing in community capacity matters as much as screening.",
+      "title": "CMS Accountable Health Communities Model (2017-2023)"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Connecting the Sectors: Referral Networks and Infrastructure"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "For cross-sector partnership to function day to day, health care and community organizations need a shared way to connect patients to services and track what happens. This is the same closed-loop referral infrastructure introduced in the SDOH screening lesson — platforms like Unite Us and findhelp that link clinical settings with community-based organizations, route electronic referrals, and report back whether the patient was actually served."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "These platforms matter for partnership because they create the connective tissue that makes collaboration operational rather than aspirational. Without shared infrastructure, a \"partnership\" is often just a list of phone numbers and a hope that patients follow through. With it, a clinic and a food bank can function as parts of a single coordinated network, with visibility into whether referrals close. The infrastructure does not replace relationships, but it makes the relationships scalable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Crucially, this infrastructure also begins to address the capacity problem that AHC surfaced. By tracking referral outcomes across a network, it makes visible where community resources are overwhelmed or missing — which is the information needed to direct investment toward building community capacity rather than just generating more unfulfilled referrals. Partnership infrastructure, used well, is both an operational tool and a planning instrument."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Identify health-related social needs in clinical settings using validated tools.",
+          "title": "Screen for social needs"
+        },
+        {
+          "_key": "step2",
+          "description": "Route electronic referrals to community organizations via platforms like Unite Us or findhelp.",
+          "title": "Refer through shared infrastructure"
+        },
+        {
+          "_key": "step3",
+          "description": "Help patients connect, and confirm back to the care team whether the need was met.",
+          "title": "Navigate and close the loop"
+        },
+        {
+          "_key": "step4",
+          "description": "Use referral data to see where community resources are overwhelmed or missing.",
+          "title": "Track network capacity"
+        },
+        {
+          "_key": "step5",
+          "description": "Direct funding to strengthen the community organizations the network depends on.",
+          "title": "Invest in community capacity"
+        }
+      ],
+      "title": "How Cross-Sector Partnerships Operate"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Financing Cross-Sector Work: Community Benefit"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Partnerships need money, and one of the most significant funding levers is the community benefit obligation that nonprofit hospitals carry. Most US hospitals are tax-exempt 501(c)(3) organizations, and in exchange for that exemption they are required to provide community benefit. The Affordable Care Act sharpened these requirements considerably, turning a vague expectation into specific, enforceable obligations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Under Section 9007 of the ACA (codified as Internal Revenue Code Section 501(r)), every tax-exempt hospital must conduct a Community Health Needs Assessment (CHNA) at least once every three years, with input from people representing the broad interests of the community, including public health expertise — and must adopt an implementation strategy describing how it will address the priority needs identified. Hospitals report their community benefit spending and compliance on IRS Form 990, Schedule H. The requirements have teeth: a hospital that fails to conduct its triennial CHNA can face a $50,000 excise tax."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For equity work, the CHNA process is a major opportunity. It legally requires hospitals to systematically assess community needs in partnership with community voices, and to commit to addressing them — which is essentially a mandate for cross-sector engagement. Health systems that treat the CHNA as a genuine planning process, rather than a compliance checkbox, can use it to direct community benefit dollars toward the social conditions and community partners that actually move equity. It is one of the clearest places where law, financing, and cross-sector partnership converge."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "For tax-exempt hospitals under ACA Section 9007 / IRC 501(r)(3)",
+          "label": "Required CHNA frequency",
+          "value": "Every 3 years"
+        },
+        {
+          "_key": "s2",
+          "context": "IRS Form 990, Schedule H, for 501(c)(3) hospitals",
+          "label": "Where community benefit is reported",
+          "value": "Schedule H"
+        },
+        {
+          "_key": "s3",
+          "context": "Penalty for missing the triennial requirement",
+          "label": "Excise tax for failing to do a CHNA",
+          "value": "$50,000"
+        },
+        {
+          "_key": "s4",
+          "context": "Must include those with public-health knowledge and broad community interests",
+          "label": "Community voice in the CHNA",
+          "value": "Input required"
+        }
+      ]
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What Makes Partnerships Succeed"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Cross-sector partnerships are easy to announce and hard to sustain. The evidence and experience point to a few factors that separate durable, effective partnerships from press-release collaborations. The first is genuine shared power and trust, especially with community-based organizations. Health systems are large and well-resourced; community organizations are often small and close to the community. Partnerships fail when the health system treats community partners as subcontractors rather than equals — and when it extracts data and effort without sharing resources and decision-making."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The second is sustainable financing for the community side. The AHC lesson — that referrals fail when community capacity is lacking — generalizes: a health system that refers patients to an underfunded food bank or housing agency without investing in that organization's capacity is setting the partnership up to fail. Effective partnerships move money, not just referrals, toward the community organizations doing the upstream work, whether through community benefit dollars, contracts, or shared-savings arrangements."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The third is shared data and aligned goals. Partners need compatible ways to share information (within privacy rules), common definitions of success, and the patience to work across the very different timelines and cultures of health care, social services, and government. None of this is easy, which is exactly why cross-sector partnership is genuinely hard work rather than a slogan. But because the upstream conditions that drive disparities live outside health care, this hard work is unavoidable for any organization serious about equity."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "A common failure mode is the health system extracting data and referrals from community-based organizations while controlling all the resources and decisions. Durable partnerships require shared power, shared data, and shared money — investing in the capacity of community partners rather than offloading work onto under-resourced organizations and expecting them to absorb it.",
+      "title": "Do not treat community partners as subcontractors"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Because most health is produced outside health care, health systems cannot close disparities alone — cross-sector partnership is a structural necessity.",
+        "The CMS Accountable Health Communities Model (2017-2023) screened over 1 million beneficiaries via 28 bridge organizations and connected social needs to community resources.",
+        "AHC's assistance track reduced expenditures (~3% Medicaid, ~4% Medicare) and readmissions — but showed that referral only works if community resources have capacity.",
+        "Shared referral infrastructure (Unite Us, findhelp) makes partnership operational and reveals where community capacity is overwhelmed or missing.",
+        "Nonprofit hospitals must conduct a Community Health Needs Assessment every 3 years under the ACA (501(r)), reporting community benefit on IRS Schedule H — with a $50,000 penalty for noncompliance.",
+        "The CHNA is a powerful equity lever: a legal mandate to assess community needs with community input and commit resources to addressing them.",
+        "Durable partnerships require shared power with community organizations, sustainable financing for the community side, and shared data with aligned goals."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Under ACA Section 9007 (IRC Section 501(r)), tax-exempt hospitals must conduct a Community Health Needs Assessment (CHNA) at least every three years — with input from those representing the broad interests of the community, including public-health expertise — and adopt an implementation strategy to address the priority needs, reporting on IRS Form 990 Schedule H. Failure to do the CHNA carries a $50,000 excise tax. This is essentially a legal mandate for cross-sector engagement and a major lever for directing community benefit dollars toward equity.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Hospitals must eliminate all charity care; it is unrelated to equity"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Hospitals must conduct a Community Health Needs Assessment at least every three years with community input and adopt a strategy to address identified needs — creating a mandate for cross-sector engagement"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Hospitals must screen every patient for social needs daily; it has no financing component"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Hospitals must merge with local social-service agencies; it is purely a structural requirement"
+        }
+      ],
+      "question": "What does the ACA require of tax-exempt hospitals regarding community needs, and why is it relevant to cross-sector equity work?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] CMS — \"Accountable Health Communities Model\" — https://www.cms.gov/priorities/innovation/innovation-models/ahcm — model design (2017-2023), five core social needs, bridge organizations, assistance/alignment tracks."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] CMS — \"Lessons from Five Years of CMS' Accountable Health Communities Model\" — https://www.cms.gov/blog/lessons-five-years-cms-accountable-health-communities-model — over 1 million screened; assistance-track reductions (~3% Medicaid, ~4% Medicare expenditures) and readmissions; capacity lessons."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] IRS — \"Requirements for 501(c)(3) hospitals under the Affordable Care Act — Section 501(r)\" — https://www.irs.gov/charities-non-profits/charitable-organizations/requirements-for-501c3-hospitals-under-the-affordable-care-act-section-501r — triennial CHNA requirement, implementation strategy, $50,000 excise tax."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] IRS — \"Instructions for Schedule H (Form 990)\" — https://www.irs.gov/instructions/i990sh — community benefit and CHNA reporting for tax-exempt hospitals."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Unite Us and findhelp — cross-sector referral infrastructure — https://uniteus.com/ and https://www.findhelp.org/ — platforms linking health care and community-based organizations with closed-loop referral tracking."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "health-equity-sdoh",
+  "order": 15,
+  "slug": {
+    "_type": "slug",
+    "current": "cross-sector-partnerships"
+  },
+  "title": "Cross-Sector Partnerships: Health Systems & Community Organizations"
+}

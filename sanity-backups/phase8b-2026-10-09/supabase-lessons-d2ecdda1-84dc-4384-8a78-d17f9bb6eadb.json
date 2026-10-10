@@ -1,0 +1,89 @@
+{
+  "id": "d2ecdda1-84dc-4384-8a78-d17f9bb6eadb",
+  "track_id": "3f412c46-e54e-421c-9d6b-8cfb3758a4f2",
+  "pillar": "economics",
+  "order": 2,
+  "slug": "risk-adjustment-medicaid",
+  "title": "Risk Adjustment in Medicaid Managed Care",
+  "summary": "Covers the mechanisms states use to adjust capitation payments for MCO member acuity, including prospective and concurrent risk adjustment models and encounter-data-based methodologies.",
+  "estimated_minutes": 25,
+  "objectives": [
+    "Distinguish between prospective and concurrent risk adjustment approaches",
+    "Explain how risk scores are calculated and applied to base PMPM rates",
+    "Identify the role of HCCs and diagnostic groupers in Medicaid risk adjustment"
+  ],
+  "content_blocks": [
+    {
+      "body": "Without risk adjustment, MCOs have incentives to enroll healthier members and avoid complex, high-cost beneficiaries — a phenomenon called 'cream skimming' or favorable selection. Risk adjustment corrects for this by paying MCOs more for sicker members and less for healthier ones, removing the financial incentive to avoid high-need enrollees.\n\nMedicaid risk adjustment has historically lagged Medicare's highly developed HCC (Hierarchical Condition Category) model, but states have increasingly adopted sophisticated risk adjustment, particularly for populations with LTSS needs.",
+      "type": "text",
+      "heading": "Why Risk Adjustment Matters"
+    },
+    {
+      "rows": [
+        [
+          "Prospective",
+          "Prior period diagnosis data predicts future costs",
+          "Prior year claims/encounters",
+          "12+ month data lag"
+        ],
+        [
+          "Concurrent",
+          "Current period diagnosis data adjusts current payment",
+          "Current year claims/encounters",
+          "Encounter data completeness risk"
+        ],
+        [
+          "Blended",
+          "Mix of prospective and concurrent elements",
+          "Multi-year claims/encounters",
+          "Moderate — balances both"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Approach",
+        "Timing",
+        "Data Used",
+        "Lag Risk"
+      ]
+    },
+    {
+      "body": "Hierarchical Condition Categories (HCCs) group ICD-10 diagnosis codes into clinically meaningful categories that predict future healthcare costs. CMS's HHS-HCC model (used in ACA marketplaces) and CMS's Medicare HCC model are commonly adapted for Medicaid. Diagnosis codes from encounter data are mapped to HCCs, which are then weighted and summed to produce a risk score. A risk score of 1.0 represents average expected cost; a score of 2.5 means the member is expected to cost 2.5x the average.",
+      "type": "callout",
+      "title": "HCCs in Medicaid Risk Adjustment",
+      "variant": "info"
+    },
+    {
+      "type": "glossary_terms",
+      "terms": [
+        {
+          "term": "Risk Score",
+          "definition": "A numeric value representing a member's expected cost relative to average; used to adjust PMPM capitation payments"
+        },
+        {
+          "term": "HCC (Hierarchical Condition Category)",
+          "definition": "A clinical grouping of ICD-10 codes that predicts future healthcare costs; the basis for most modern risk adjustment models"
+        },
+        {
+          "term": "Cream Skimming",
+          "definition": "The practice of preferentially enrolling healthier members to reduce costs — risk adjustment is designed to eliminate this incentive"
+        },
+        {
+          "term": "Risk Corridor",
+          "definition": "A financial mechanism limiting MCO profit or loss to a defined range around expected costs, protecting both plans and states from extreme variation"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "risk adjustment",
+    "HCC",
+    "risk scores",
+    "payment equity"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:10.897601+00:00",
+  "updated_at": "2026-06-01T13:29:15.328033+00:00",
+  "sanity_slug": "risk-adjustment-medicaid"
+}

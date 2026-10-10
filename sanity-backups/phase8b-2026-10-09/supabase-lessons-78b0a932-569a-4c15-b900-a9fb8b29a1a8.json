@@ -1,0 +1,85 @@
+{
+  "id": "78b0a932-569a-4c15-b900-a9fb8b29a1a8",
+  "track_id": "4291a5b8-615b-4672-a17c-026bb8be5b86",
+  "pillar": "policy",
+  "order": 2,
+  "slug": "medicaid-delivery-system-models",
+  "title": "MCO vs PCCM vs ACO: Medicaid Delivery System Models",
+  "summary": "Compares the three major Medicaid delivery system models — fully capitated MCOs, Primary Care Case Management, and Accountable Care Organizations — with their respective risk structures and use cases.",
+  "estimated_minutes": 22,
+  "objectives": [
+    "Compare and contrast MCO, PCCM, and ACO delivery models across key dimensions",
+    "Explain how risk transfer differs among the three models",
+    "Identify which populations and states have favored each model"
+  ],
+  "content_blocks": [
+    {
+      "rows": [
+        [
+          "Risk Transfer",
+          "Full risk to MCO",
+          "No risk transfer",
+          "Shared upside/downside"
+        ],
+        [
+          "Payment Model",
+          "PMPM capitation",
+          "FFS + case mgmt fee",
+          "FFS + savings/losses"
+        ],
+        [
+          "State Admin Burden",
+          "Lower (plan manages)",
+          "Higher (state manages)",
+          "Moderate"
+        ],
+        [
+          "Network Control",
+          "Plan-controlled",
+          "State/provider-controlled",
+          "ACO-controlled"
+        ],
+        [
+          "Best For",
+          "Large, urban populations",
+          "Rural, sparse markets",
+          "Provider-led reform"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Feature",
+        "MCO (Fully Capitated)",
+        "PCCM",
+        "ACO/Shared Savings"
+      ]
+    },
+    {
+      "body": "The dominant model in Medicaid, fully capitated MCOs receive a fixed PMPM payment and assume responsibility for all covered services. Commercial insurers (Centene, Molina, UnitedHealthcare Community Plan, Anthem) and non-profit plans (UPMC, WellCare, local CCOs) compete for state contracts. MCOs must meet network adequacy standards, file encounter data, and meet quality benchmarks.\n\nStates like Texas, Florida, and Ohio run large multi-plan MCO markets. Ohio's Medicaid managed care program, for example, contracts with five MCOs covering over 3 million beneficiaries across the state.",
+      "type": "text",
+      "heading": "Fully Capitated MCOs"
+    },
+    {
+      "body": "PCCM programs pay primary care providers a small monthly case management fee (typically $2–$7 PMPM) on top of FFS payments to coordinate care. The state retains financial risk. North Carolina's Community Care of North Carolina (CCNC) was a nationally recognized PCCM model before the state transitioned to MCOs.\n\nPCCM is increasingly rare but remains relevant in states with limited MCO market interest, particularly rural areas where insufficient enrollment density makes capitation financially unviable for commercial insurers.",
+      "type": "text",
+      "heading": "Primary Care Case Management (PCCM)"
+    },
+    {
+      "body": "Medicaid ACOs differ from Medicare ACOs. They typically operate under Section 1115 waivers and may involve shared savings without full capitation. Oregon's Coordinated Care Organizations (CCOs) and Vermont's All-Payer ACO Model represent hybrid approaches where provider-led entities take on population-level accountability with global budget caps.",
+      "type": "callout",
+      "title": "ACOs in Medicaid Context",
+      "variant": "tip"
+    }
+  ],
+  "tags": [
+    "MCO",
+    "PCCM",
+    "ACO",
+    "delivery systems"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:05.457065+00:00",
+  "updated_at": "2026-06-01T13:29:15.059147+00:00",
+  "sanity_slug": "medicaid-delivery-system-models"
+}

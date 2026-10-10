@@ -1,0 +1,42 @@
+{
+ "edits": [
+  {
+   "table": "quiz_options",
+   "id": "ab91d85d-78c2-4f89-8bc6-2d20a3cf8982",
+   "expect": {
+    "explanation": "PMO organizations complete 38% more projects on time and budget \u2014 the opposite conclusion."
+   },
+   "set": {
+    "explanation": "PMI's 2017 research found organizations with a strategy-aligned enterprise PMO report 38% more projects meeting their original goals \u2014 the opposite conclusion."
+   },
+   "claim": "quiz option explanation: PMO organizations complete 38% more projects on time and budget",
+   "verdict": "MISATTRIBUTED",
+   "src": "PMI Pulse of the Profession 2017 \"Success Rates Rise\": organizations aligning their EPMO to strategy report 38% more projects meeting original goals and business intent (not PMO vs none, on time/budget)"
+  },
+  {
+   "table": "quiz_questions",
+   "id": "736ec564-2bca-4358-b48e-1e2db0b60633",
+   "expect": {
+    "question": "According to PMI's Pulse of the Profession research, what happens to organizations that treat project management as a non-strategic function?"
+   },
+   "set": {
+    "explanation": "PMI's 2020 Pulse of the Profession found organizations that undervalue project management as a strategic competency report an average of 67% more of their projects failing outright \u2014 treating execution discipline as optional carries a measurable, large penalty."
+   },
+   "claim": "quiz explanation: 67% finding undated",
+   "verdict": "UPDATED",
+   "src": "PMI Pulse of the Profession 2020 \"Ahead of the Curve\": 67% more projects failing outright where PM is undervalued as a strategic competency"
+  }
+ ],
+ "localPairs": [
+  {
+   "file": "frontend/content/course_transformation_leadership.json",
+   "old": "PMO organizations complete 38% more projects on time and budget \u2014 the opposite conclusion.",
+   "new": "PMI's 2017 research found organizations with a strategy-aligned enterprise PMO report 38% more projects meeting their original goals \u2014 the opposite conclusion."
+  },
+  {
+   "file": "frontend/content/course_transformation_leadership.json",
+   "old": "PMI's research found these organizations report 67% more of their projects failing outright",
+   "new": "PMI's 2020 Pulse of the Profession found organizations that undervalue project management as a strategic competency report an average of 67% more of their projects failing outright"
+  }
+ ]
+}

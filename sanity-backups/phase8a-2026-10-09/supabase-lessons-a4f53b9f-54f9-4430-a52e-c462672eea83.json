@@ -1,0 +1,122 @@
+{
+  "id": "a4f53b9f-54f9-4430-a52e-c462672eea83",
+  "track_id": "6879fdc5-8855-4e38-b046-f0cb80380d60",
+  "pillar": "technology",
+  "order": 3,
+  "slug": "hl7-fhir-introduction",
+  "title": "HL7 FHIR: Healthcare's RESTful Future",
+  "summary": "FHIR (Fast Healthcare Interoperability Resources) is the modern standard enabling API-based health data exchange — understand its resources, REST interactions, profiles, and why R4 is the regulatory baseline.",
+  "estimated_minutes": 22,
+  "objectives": [
+    {
+      "id": "obj_fhir1",
+      "text": "Explain what a FHIR resource is and list five core clinical resources"
+    },
+    {
+      "id": "obj_fhir2",
+      "text": "Describe the four basic FHIR REST interactions: read, search, create, update"
+    },
+    {
+      "id": "obj_fhir3",
+      "text": "Explain why FHIR R4 is the version required by US federal regulations"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "In 2011, a New Zealand health informaticist named Grahame Grieve published a proposal called 'Fresh Look at Healthcare Interoperability.' He argued that healthcare data exchange standards had become too complex, too slow to implement, and too far removed from modern software development practices. His solution was elegant: model clinical data as discrete, web-native resources that could be exchanged using the same RESTful API patterns that power the modern internet.\n\nThe result was FHIR — Fast Healthcare Interoperability Resources — now published and maintained by HL7 International. Where HL7 v2 uses pipe-delimited text messages and HL7 v3 used dense XML schemas that required specialized tooling, FHIR uses JSON or XML in a format familiar to any web developer. A FHIR Patient resource looks like the JSON objects used by thousands of modern APIs. This was intentional: by lowering the barrier to entry, FHIR attracted a generation of software developers who had never built health IT systems before.\n\nFHIR's core architectural decision is the 'resource.' A resource is a discrete, identifiable unit of healthcare information — a Patient, an Observation (lab result or vital sign), a MedicationRequest, a Condition, an Encounter. There are 145+ FHIR resources covering virtually every domain of clinical and administrative healthcare. Each resource has a defined set of elements, a canonical URL, and can be retrieved, created, updated, or searched via standard HTTP methods. This RESTful design means FHIR APIs work with standard HTTP clients, including curl, Postman, or any programming language's HTTP library.",
+      "type": "text",
+      "heading": "A fresh look at health data exchange"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "term": "Patient",
+          "definition": "Demographics and administrative information about a person receiving healthcare — name, DOB, address, identifiers, contact information."
+        },
+        {
+          "term": "Observation",
+          "definition": "Measurements and simple assertions made about a patient — lab results, vital signs, social history responses, SDOH screening answers."
+        },
+        {
+          "term": "MedicationRequest",
+          "definition": "An order or request for supply and administration of a medication — the FHIR equivalent of a prescription."
+        },
+        {
+          "term": "Condition",
+          "definition": "A clinical condition, problem, diagnosis, or other event that has bearing on the patient's health — the problem list."
+        },
+        {
+          "term": "Encounter",
+          "definition": "An interaction between a patient and healthcare provider — an office visit, ED encounter, inpatient stay, or telehealth session."
+        },
+        {
+          "term": "DiagnosticReport",
+          "definition": "The findings and interpretation of diagnostic tests — combines the order (ServiceRequest), results (Observations), and narrative interpretation."
+        }
+      ],
+      "heading": "Core FHIR resources"
+    },
+    {
+      "type": "timeline",
+      "events": [
+        {
+          "year": "2011",
+          "label": "FHIR proposed",
+          "description": "Grahame Grieve publishes 'Fresh Look at Healthcare Interoperability.' HL7 begins FHIR development."
+        },
+        {
+          "year": "2014",
+          "label": "DSTU1 published",
+          "description": "First Draft Standard for Trial Use (DSTU1) released. Early implementers begin building SMART on FHIR apps."
+        },
+        {
+          "year": "2017",
+          "label": "STU3 published",
+          "description": "FHIR STU3 becomes the first version widely implemented in EHR products. Apple Health Records uses STU3."
+        },
+        {
+          "year": "2019",
+          "label": "R4 published",
+          "description": "FHIR R4 published as the first 'normative' version — meaning core resources are stable and won't change in breaking ways."
+        },
+        {
+          "year": "2020",
+          "label": "Federal mandate",
+          "description": "ONC and CMS finalize rules requiring FHIR R4 APIs for certified EHRs and CMS-regulated payers."
+        },
+        {
+          "year": "2023",
+          "label": "R4B and R5",
+          "description": "FHIR R4B (minor update) and R5 (major update) published, but R4 remains the regulatory and implementation baseline."
+        }
+      ],
+      "heading": "FHIR development milestones"
+    },
+    {
+      "type": "key_stat",
+      "label": "FHIR API calls per month across US health systems",
+      "value": "1B+",
+      "context": "As of 2024, FHIR APIs at major US health systems process over 1 billion API calls per month, driven by patient-facing apps, payer integrations, and population health analytics tools."
+    },
+    {
+      "body": "FHIR R5 was published in 2023 with significant improvements, but ONC's certification rules and CMS's interoperability rules both specify FHIR R4 as the required version. Implementation guides like US Core, CARIN Blue Button, and Da Vinci are all built on R4. Health IT vendors will not migrate to R5 until regulatory and implementation guide support catches up — a process that typically takes 3–5 years. R4 is the version that matters for US healthcare today.",
+      "type": "callout",
+      "title": "Why R4, not R5?",
+      "variant": "info"
+    }
+  ],
+  "tags": [
+    "FHIR",
+    "HL7",
+    "REST",
+    "API",
+    "interoperability",
+    "R4"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:35.890702+00:00",
+  "updated_at": "2026-06-01T14:54:56.956663+00:00",
+  "sanity_slug": "interop-fhir-intro"
+}

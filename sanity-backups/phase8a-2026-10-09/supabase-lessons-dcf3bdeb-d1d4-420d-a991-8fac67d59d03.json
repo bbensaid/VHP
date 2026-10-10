@@ -1,0 +1,79 @@
+{
+  "id": "dcf3bdeb-d1d4-420d-a991-8fac67d59d03",
+  "track_id": "3e784043-efb4-454d-8a98-4e9dc43ad047",
+  "pillar": "technology",
+  "order": 3,
+  "slug": "biobanks-genomic-research",
+  "title": "Biobanks and Population Genomic Research",
+  "summary": "All of Us, UK Biobank, Million Veteran Program — large-scale genomic cohorts reshaping discovery.",
+  "estimated_minutes": 18,
+  "objectives": [],
+  "content_blocks": [
+    {
+      "text": "The Era of Mega-Cohorts",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "text": "Individual genomic tests generate clinical insights for one patient. Population-scale biobanks — linking genomic data to longitudinal health records for hundreds of thousands to millions of individuals — generate discovery insights that reshape guidelines for everyone. Several landmark biobanks are now producing clinical-grade evidence across diverse populations.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "UK Biobank",
+          "500,000",
+          "WES + WGS, extensive phenotyping, UK-wide EHR linkage",
+          "GWAS discoveries for CAD, diabetes, mental health; rare variant discovery"
+        ],
+        [
+          "All of Us (NIH)",
+          "1,000,000 target",
+          "Intentionally diverse — 50%+ underrepresented populations; EHR + survey + wearables",
+          "PGx prevalence across ancestries; social determinants × genomics"
+        ],
+        [
+          "Million Veteran Program (VA)",
+          "1,000,000+",
+          "Veterans cohort; largest WGS biobank globally; linked VA EHR",
+          "Cardiovascular GWAS, PTSD genomics, cancer risk in veterans"
+        ],
+        [
+          "deCODE Genetics (Iceland)",
+          "~200,000 (>50% of Iceland)",
+          "Near-complete national coverage, long genealogies",
+          "Rare variant discovery at population scale; founder effects"
+        ],
+        [
+          "FinnGen",
+          "500,000",
+          "Finnish isolate population; GWAS with hospital register linkage",
+          "Novel disease associations; drug target validation"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Biobank",
+        "N",
+        "Key Feature",
+        "Notable Finding"
+      ]
+    },
+    {
+      "text": "Phenome-Wide Association Studies (PheWAS) flip the GWAS paradigm: instead of testing one SNP against one disease, PheWAS tests one genetic variant against hundreds of disease phenotypes extracted from EHR ICD codes. This approach has revealed unexpected pleiotropic effects — variants affecting multiple organ systems — and repurposed drugs by identifying shared genetic architecture across diseases.",
+      "type": "text"
+    },
+    {
+      "body": "Polygenic Risk Scores (PRS) aggregate thousands of common variants, each with small effect, into a composite genomic risk score for complex diseases (coronary artery disease, type 2 diabetes, breast cancer). Individuals in the top 10% of PRS for CAD have a 3-fold elevated lifetime risk — comparable to rare Mendelian variants. PRS are beginning to enter clinical guidance for statin initiation and mammography scheduling.",
+      "type": "callout",
+      "title": "Polygenic Risk Scores: Population → Individual Risk",
+      "variant": "info"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:23.407454+00:00",
+  "updated_at": "2026-06-02T04:10:05.793121+00:00",
+  "sanity_slug": "biobanks-genomic-research"
+}

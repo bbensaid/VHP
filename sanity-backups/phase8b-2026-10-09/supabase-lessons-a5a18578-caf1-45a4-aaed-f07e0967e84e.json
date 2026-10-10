@@ -1,0 +1,80 @@
+{
+  "id": "a5a18578-caf1-45a4-aaed-f07e0967e84e",
+  "track_id": "740f7b13-ca71-422c-b21b-1676739bdbc5",
+  "pillar": "economics",
+  "order": 2,
+  "slug": "ar-management",
+  "title": "AR Management: Aging Buckets and Follow-Up",
+  "summary": "Proactive accounts receivable management — organized by aging buckets and payer — is the key to keeping Days in AR within benchmark.",
+  "estimated_minutes": 20,
+  "objectives": [
+    "Interpret AR aging reports by bucket and payer",
+    "Design an AR follow-up workflow with appropriate frequency and escalation",
+    "Identify when to write off versus continue pursuing outstanding balances"
+  ],
+  "content_blocks": [
+    {
+      "body": "AR aging reports categorize outstanding claims by the number of days since service or claim submission:\n\n- **0–30 days:** Current; within normal payer adjudication window (do not work yet)\n- **31–60 days:** Watch list; verify claim received and in process\n- **61–90 days:** Active follow-up required; contact payer for status\n- **91–120 days:** Escalate; request supervisor review or peer-to-peer\n- **120+ days:** At-risk for write-off; consider appeal deadlines and collection options\n\nThe distribution of AR across these buckets is as diagnostic as the total Days in AR. More than 25% in the 90+ bucket signals a systemic problem.",
+      "type": "text",
+      "heading": "AR Aging Analysis"
+    },
+    {
+      "rows": [
+        [
+          "0–30 days",
+          "Monitor only",
+          "Weekly review",
+          "Claim not acknowledged by day 15"
+        ],
+        [
+          "31–60 days",
+          "Verify receipt and status",
+          "Every 10 days",
+          "No status response in 5 business days"
+        ],
+        [
+          "61–90 days",
+          "Active follow-up call/portal",
+          "Every 7 days",
+          "No payment commitment by day 75"
+        ],
+        [
+          "91–120 days",
+          "Supervisor/appeal escalation",
+          "Every 5 days",
+          "Immediate on entry to bucket"
+        ],
+        [
+          "120+ days",
+          "Appeal or write-off decision",
+          "Daily review",
+          "Approaching appeal deadline"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Aging Bucket",
+        "Action",
+        "Frequency",
+        "Escalation Trigger"
+      ]
+    },
+    {
+      "body": "Writing off balances requires formal policy. Medicare/Medicaid write-offs must follow strict rules — writing off a Medicare balance that is not a contractual adjustment or bad debt determination may constitute fraud. Maintain documentation of collection efforts before any write-off, and never write off a balance as 'bad debt' if it has not been billed to the patient and followed up appropriately.",
+      "type": "callout",
+      "title": "Write-Off Policy Must Be Documented",
+      "variant": "warning"
+    }
+  ],
+  "tags": [
+    "AR aging",
+    "accounts receivable",
+    "follow-up",
+    "write-off"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:31:28.541975+00:00",
+  "updated_at": "2026-06-01T13:14:49.770674+00:00",
+  "sanity_slug": "ar-management"
+}

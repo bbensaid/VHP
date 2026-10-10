@@ -1,0 +1,96 @@
+{
+  "id": "6fdf1917-db8f-4142-9571-a5de6b85744a",
+  "track_id": "6879fdc5-8855-4e38-b046-f0cb80380d60",
+  "pillar": "technology",
+  "order": 4,
+  "slug": "cda-ccda-clinical-documents",
+  "title": "CDA & C-CDA: Clinical Documents in Motion",
+  "summary": "Clinical Document Architecture and Consolidated CDA templates define how clinical documents like care summaries and discharge notes are structured — understanding C-CDA is essential for transitions of care.",
+  "estimated_minutes": 16,
+  "objectives": [
+    {
+      "id": "obj_cda1",
+      "text": "Describe the purpose of CDA and C-CDA in health information exchange"
+    },
+    {
+      "id": "obj_cda2",
+      "text": "Identify the most common C-CDA document templates and when each is used"
+    },
+    {
+      "id": "obj_cda3",
+      "text": "Explain the key limitation of C-CDA compared to FHIR for data exchange"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Before FHIR made discrete data exchange practical, the primary mechanism for sharing clinical information between organizations was the clinical document. The Clinical Document Architecture (CDA), released by HL7 in 2000, provided an XML-based standard for structuring these documents so that receiving systems could at least parse their sections, even if they could not always extract individual data elements.\n\nThe Consolidated CDA (C-CDA) brought order to a proliferating set of CDA templates. Published by HL7 in 2011 and required under Meaningful Use, C-CDA defined specific document types with specific section requirements. The Continuity of Care Document (CCD) became the most widely implemented — a patient summary intended to support care transitions by packaging current problems, medications, allergies, immunizations, vital signs, and lab results in a single XML document.\n\nC-CDA remains central to US health information exchange because it is deeply embedded in certified EHR technology requirements. When a patient transitions from a hospital to a skilled nursing facility, a C-CDA discharge summary is the standard mechanism. When a patient requests their records through a patient portal, they often receive a C-CDA. Despite FHIR's growing prominence, C-CDA is not going away — the challenge is that its quality is highly variable.",
+      "type": "text",
+      "heading": "Clinical documents as the unit of exchange"
+    },
+    {
+      "rows": [
+        [
+          "Continuity of Care Document (CCD)",
+          "Transitions of care, patient summaries",
+          "Problems, medications, allergies, immunizations, vital signs, results"
+        ],
+        [
+          "Discharge Summary",
+          "Hospital-to-post-acute transitions",
+          "Discharge diagnosis, discharge condition, discharge medications, follow-up plan"
+        ],
+        [
+          "Progress Note",
+          "Ongoing outpatient care documentation",
+          "Assessment, plan, subjective/objective findings"
+        ],
+        [
+          "Referral Note",
+          "Specialist referrals",
+          "Reason for referral, relevant history, current medications"
+        ],
+        [
+          "Operative Note",
+          "Surgical procedure documentation",
+          "Pre/post-operative diagnosis, procedure, findings, specimens"
+        ],
+        [
+          "History & Physical",
+          "New patient assessments",
+          "Chief complaint, history of present illness, review of systems, physical exam"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Template",
+        "Use Case",
+        "Key Required Sections"
+      ],
+      "heading": "Common C-CDA document templates"
+    },
+    {
+      "body": "C-CDA quality varies dramatically across EHR implementations. A study published in the Journal of the American Medical Informatics Association found that 60% of C-CDAs received at a large academic medical center had at least one data quality issue — medications listed as allergies, problem lists duplicated across sections, immunization dates missing. The standard defines structure but cannot enforce data quality. Receiving systems must build extensive validation and cleanup logic, and clinicians often cannot trust the structured data, defaulting to reading the narrative text instead.",
+      "type": "callout",
+      "title": "The C-CDA quality problem",
+      "variant": "warning"
+    },
+    {
+      "body": "FHIR supports document exchange through its Document resource profile — essentially packaging FHIR resources into a structured document analogous to C-CDA. For new implementations, FHIR-based documents offer better tooling and developer experience. However, C-CDA remains required for Meaningful Use attestation, most HIE networks, and transition of care workflows. In practice, health systems must support both formats for the foreseeable future.",
+      "type": "callout",
+      "title": "C-CDA vs. FHIR Documents: choosing the right approach",
+      "variant": "info"
+    }
+  ],
+  "tags": [
+    "CDA",
+    "C-CDA",
+    "clinical documents",
+    "Meaningful Use",
+    "transitions of care"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:36.846195+00:00",
+  "updated_at": "2026-06-01T14:54:57.312195+00:00",
+  "sanity_slug": "interop-cda-ccda"
+}

@@ -1,0 +1,536 @@
+{
+  "_createdAt": "2026-06-01T17:48:38Z",
+  "_id": "diabetes-population-management",
+  "_rev": "5fFlS5aMKSDl9X7B6OEF8r",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T17:48:38Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Defining Chronic Disease of Population Health"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "If population health has a signature disease, it is diabetes. It is enormously common, enormously expensive, largely manageable, and heavily driven by the social and behavioral factors population health is built to address. Almost every concept in this course — risk stratification, care gaps, the Chronic Care Model, prevention, equity — comes together in diabetes management."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The scale is staggering. About 38 million Americans — roughly 11.6 percent of the population — have diabetes. Its total annual cost in the U.S. is around $413 billion, making it the most expensive chronic condition in the nation: roughly $1 of every $4 spent on U.S. health care goes to caring for people with diabetes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "And yet diabetes is largely controllable. Good management — keeping blood sugar, blood pressure, and cholesterol in range — dramatically reduces the complications (kidney failure, blindness, amputation, heart attack) that drive most of the cost and suffering. But control is hard to achieve at scale: nationally, only about 26 percent of adults with diabetes meet the combined \"ABCS\" goals (A1c, blood pressure, cholesterol, and smoking cessation). The gap between what is achievable and what is achieved is exactly the opportunity population health exists to close."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Diabetes affects ~38 million Americans (~11.6%), costs ~$413 billion a year (~$1 of every $4 in U.S. health spending), and is largely controllable — yet only ~26% of adults with diabetes meet combined ABCS control goals. That gap is population health's opportunity."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Chronic Care Model"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Managing diabetes at scale requires a framework, and the foundational one is the Chronic Care Model (CCM), developed by Ed Wagner and colleagues. The CCM was created on the recognition that the traditional, reactive, visit-based model of care fails people with chronic disease, who need continuous, proactive, coordinated support — exactly the population health philosophy."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CCM has six interacting elements: the health system (organizational support for quality), delivery system design (team-based, planned care), decision support (embedding guidelines into care), clinical information systems (registries and data to track the population), self-management support (helping patients manage their own condition), and community resources (linking to programs beyond the clinic)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For diabetes specifically, CCM-based interventions work: meta-analyses find they produce statistically significant improvements in glycemic control and blood pressure. The model's power is that it is systemic — it does not rely on heroic individual clinicians but redesigns the system so good chronic-disease care happens reliably for the whole population. Notice how the CCM elements map onto this course: clinical information systems are the data infrastructure, delivery system design is team-based care management, and so on."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Organizational leadership and support for chronic-care quality.",
+          "title": "Health system"
+        },
+        {
+          "_key": "step2",
+          "description": "Team-based, planned, proactive care (not reactive visits).",
+          "title": "Delivery system design"
+        },
+        {
+          "_key": "step3",
+          "description": "Guidelines and evidence embedded into everyday care.",
+          "title": "Decision support"
+        },
+        {
+          "_key": "step4",
+          "description": "Registries and data to track and manage the population.",
+          "title": "Clinical information systems"
+        },
+        {
+          "_key": "step5",
+          "description": "Helping patients set goals and manage their own condition.",
+          "title": "Self-management support"
+        },
+        {
+          "_key": "step6",
+          "description": "Linking patients to programs and support beyond the clinic.",
+          "title": "Community resources"
+        }
+      ],
+      "title": "The Six Elements of the Chronic Care Model"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Managing the Diagnosed Population"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Operationally, diabetes population management applies the tools from earlier in this course to the diabetic panel. It starts with a registry of every patient with diabetes — the clinical-information-systems element of the CCM — so the team can see and act on the whole population, not just those who show up."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Within that registry, the team works the comprehensive-diabetes-care care gaps (from the previous lesson): who is overdue for an A1c test, whose blood pressure is uncontrolled, who has not had a retinal eye exam, who needs nephropathy screening. Risk stratification prioritizes the work — the patient with an A1c of 11 and rising needs intensive outreach before the well-controlled patient. Predictive analytics flags who is deteriorating."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The delivery is team-based: pharmacists adjusting medications, nurses and care managers coaching and following up, community health workers addressing barriers, with the physician focused where their expertise is essential. Self-management support is central — diabetes is managed by the patient 99 percent of the time, between visits, so helping them understand and manage their own condition (diet, activity, medication adherence, glucose monitoring) drives outcomes more than any single office visit."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is the whole course in microcosm: registry + risk stratification + care gaps + team-based delivery + self-management, all aimed at a single high-value, controllable disease."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Prevention: The National Diabetes Prevention Program"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Managing diagnosed diabetes is essential, but population health also looks upstream — to the far larger group with prediabetes who can still avoid the disease entirely. The flagship intervention is the CDC's National Diabetes Prevention Program (National DPP), a structured, evidence-based lifestyle-change program for adults at high risk."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The DPP's results are remarkable. The lifestyle program — delivered by trained coaches over a roughly 12-month curriculum, focused on modest weight loss (5 to 7 percent of body weight) and increasing physical activity to at least 150 minutes per week — reduced the risk of developing type 2 diabetes by 58 percent in high-risk adults. And the effect is durable: a 10-year follow-up found participants were still about one-third less likely to develop diabetes than controls."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The DPP is a model for population health prevention generally: it is structured, evidence-based, delivered by non-physician coaches, scalable (including virtual delivery), and it attacks a condition before it becomes expensive and irreversible. For a population health program, identifying prediabetic patients and connecting them to a DPP is one of the highest-return preventive investments available — exactly the \"rising risk\" intervention the stratification lesson highlighted, applied to diabetes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Reduction in type 2 diabetes risk in high-risk adults (CDC/NIDDK)",
+          "label": "DPP Risk Reduction",
+          "value": "58%"
+        },
+        {
+          "_key": "s2",
+          "context": "Modest weight loss that drives the benefit (National DPP)",
+          "label": "Target Weight Loss",
+          "value": "5-7%"
+        },
+        {
+          "_key": "s3",
+          "context": "Core DPP lifestyle target (National DPP)",
+          "label": "Physical Activity Goal",
+          "value": "150 min/wk"
+        },
+        {
+          "_key": "s4",
+          "context": "Still one-third less likely to develop diabetes a decade later (DPP)",
+          "label": "10-Year Durability",
+          "value": "~1/3 lower"
+        }
+      ]
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Equity and the Bigger Picture"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Diabetes is also a stark equity story, which is why it sits squarely in population health. Its prevalence, control rates, and complications are unequally distributed — higher burden and worse outcomes among lower-income communities and several racial and ethnic groups, driven heavily by the social determinants (food access, neighborhood environment, economic stability) from earlier lessons. A diabetes program that ignores these disparities will improve the average while leaving the gap intact."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This means effective diabetes population management must address the social drivers, not just the clinical ones. Food insecurity undermines dietary management; lack of transportation prevents eye exams; cost drives medication non-adherence. Connecting patients to food resources, community programs, and financial assistance (the community-resources element of the CCM) is often as important to control as the prescription itself."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Diabetes thus ties the whole course together: it demands data infrastructure and registries, risk stratification and prediction, care-gap closure, team-based care management, self-management support, prevention, and an equity lens. Master diabetes management and you have essentially practiced every core competency of population health on the disease where it matters most. The next lessons extend these same methods to heart failure, hypertension, and behavioral health."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "Diabetes is driven heavily by social and behavioral factors, and its burden is unequally distributed. A program that only optimizes prescriptions and labs — ignoring food insecurity, transportation, cost, and self-management support — will plateau and may widen disparities. Effective diabetes population management is as much social and behavioral as clinical.",
+      "title": "Clinical Management Alone Won't Control Diabetes at Scale"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Diabetes is population health's signature disease: ~38 million Americans (~11.6%), ~$413 billion/year (~$1 of every $4 in U.S. health spending), and largely controllable.",
+        "Only about 26% of adults with diabetes meet combined ABCS control goals — the gap between achievable and achieved control is the core opportunity.",
+        "The Chronic Care Model (Wagner) provides the framework, with six elements: health system, delivery system design, decision support, clinical information systems, self-management support, and community resources.",
+        "Operational diabetes management applies the course's tools to the diabetic registry: care-gap closure, risk stratification, prediction, and team-based delivery.",
+        "Self-management support is central because patients manage diabetes themselves between visits; supporting diet, activity, adherence, and monitoring drives outcomes.",
+        "The CDC National DPP cut type 2 diabetes risk by 58% (with ~5-7% weight loss and ~150 min/week activity), with benefit durable at 10 years — a model preventive investment for rising-risk patients.",
+        "Diabetes is an equity issue driven by social determinants, so effective management must address food access, transportation, and cost — not just clinical care — or it will widen disparities."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The National DPP's lifestyle-change program — modest weight loss of 5-7% of body weight and at least 150 minutes of weekly activity, delivered by trained coaches over ~12 months — reduced the risk of developing type 2 diabetes by 58% in high-risk adults, and a 10-year follow-up showed participants remained about one-third less likely to develop diabetes. It exemplifies structured, scalable, coach-delivered prevention aimed at the rising-risk population.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "It cured type 2 diabetes in most participants"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "A structured lifestyle program (~5-7% weight loss, ~150 min/week activity) reduced the risk of developing type 2 diabetes by 58% in high-risk adults, with benefit durable at 10 years"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "It eliminated the need for any clinical diabetes care"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "It only worked when delivered by physicians"
+        }
+      ],
+      "question": "The CDC National Diabetes Prevention Program (DPP) is a model population health prevention intervention. What was its headline result?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] National Diabetes Statistics Report (CDC) — https://www.cdc.gov/diabetes/php/data-research/index.html — ~38 million with diabetes (~11.6% of population)"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Diabetes in America: Prevalence, Statistics, and Economic Impact (ADA) — https://diabetes.org/about-diabetes/statistics/about-diabetes — ~$413B annual cost; $1 of every $4 in U.S. health care spending"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] The Chronic Care Model and Diabetes Management in US Primary Care Settings: A Systematic Review (CDC PCD) — https://www.cdc.gov/pcd/issues/2013/12_0180.htm — six CCM elements; effectiveness for glycemic and blood-pressure control"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] What Is the National DPP? (CDC) — https://www.cdc.gov/diabetes-prevention/programs/what-is-the-national-dpp.html — structured lifestyle program; coaches; 12-month curriculum"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Diabetes Prevention Program (DPP) (NIDDK) — https://www.niddk.nih.gov/about-niddk/research-areas/diabetes/diabetes-prevention-program-dpp — 58% risk reduction; 5-7% weight loss; 150 min/week; 10-year durability"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Population Health Management for Diabetes: System-Level Approaches for Quality and Disparities (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC5536329/ — registry-based management; ABCS goals; addressing disparities and social drivers"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "population-health-management",
+  "order": 7,
+  "slug": {
+    "_type": "slug",
+    "current": "diabetes-population-management"
+  },
+  "title": "Managing Diabetes at Scale"
+}

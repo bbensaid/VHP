@@ -1,0 +1,488 @@
+{
+  "_createdAt": "2026-06-02T04:15:18Z",
+  "_id": "genomic-consent-equity",
+  "_rev": "cV7vBu21BPCdPK4W4x0XGq",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T04:15:18Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Consent for a Test That Sees Everything"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Ordering a single-gene test is relatively simple to consent for: the patient agrees to look at one thing. But genome and exome sequencing is fundamentally different — it reads vastly more than the reason the test was ordered. A sequencing test ordered to diagnose a child's seizures also, incidentally, contains information about that child's risk of inherited cancer, heart disease, and dozens of other conditions. This is what makes informed consent for genomic sequencing uniquely challenging."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The core issue is that the test generates information the patient did not ask for and may not want. Informed consent for sequencing therefore cannot be a simple \"do you want this test?\" — it must address what additional information might surface, whether the patient wants to receive it, and what the implications could be. The breadth of sequencing turns consent into a genuine conversation about uncertainty and choice."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson covers two of the most important ethics-and-policy issues in clinical genomics: how to handle the unexpected information sequencing reveals (secondary findings, and the consent that must precede them), and the diversity-and-equity deficit that determines whether genomic medicine serves everyone or mainly the populations who have been studied. Both are practical realities clinicians and programs must confront, not abstract debates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Genome and exome sequencing reads far more than the reason it was ordered — so informed consent must address what unexpected information might surface and whether the patient wants it. This lesson covers secondary findings, the consent that precedes them, and the diversity deficit at the heart of genomic equity."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Secondary Findings and the ACMG List"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "When sequencing is performed for one reason, it can reveal medically important information unrelated to that reason — for example, a cancer-predisposition variant found during testing for an unrelated condition. The American College of Medical Genetics and Genomics (ACMG) addressed this by publishing a recommended list of genes for which laboratories should actively look for and report such \"secondary findings,\" because the conditions are serious and medically actionable (something can be done to prevent or treat them)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The current list, ACMG SF v3.2, includes 81 genes, and is now updated annually. The genes were chosen because variants in them cause conditions that are clinically actionable — for example, hereditary cancer syndromes (like BRCA1/BRCA2), cardiovascular conditions, and others where early knowledge enables prevention or surveillance. The logic is that if sequencing happens to reveal a high-risk, actionable variant, the patient benefits from knowing, even though that was not why the test was ordered."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Importantly, patients can typically opt out of receiving secondary findings — the choice is theirs. Secondary findings are returned through the ordering clinician, who places the result in the context of the patient's clinical picture and family history (echoing the genetic-counseling theme of earlier lessons). The model balances the value of actionable information against the patient's right not to learn things they did not seek."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "A test for one condition contains data on many others.",
+          "title": "Sequencing reveals more than ordered"
+        },
+        {
+          "_key": "step2",
+          "description": "A curated list of genes with serious, medically actionable conditions to actively report.",
+          "title": "ACMG SF list (v3.2, 81 genes)"
+        },
+        {
+          "_key": "step3",
+          "description": "The patient chooses whether to receive secondary findings — consent comes first.",
+          "title": "Patient can opt out"
+        },
+        {
+          "_key": "step4",
+          "description": "Findings go through the ordering provider, who contextualizes them with counseling.",
+          "title": "Returned via the clinician"
+        }
+      ],
+      "title": "How Secondary Findings Work"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Informed Consent for Sequencing"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because of secondary findings and the breadth of sequencing, informed consent must happen before the test, and it must be substantive. Pre-test counseling should cover the purpose of the test, the kinds of results it can produce (including the possibility of secondary findings and variants of uncertain significance, the VUS from the variant-interpretation lesson), and — critically — the patient's choices about what to receive. Consent for sequencing is meaningfully harder than consent for a targeted test."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Several features make it complex. Patients must decide about information they cannot fully anticipate. There are questions of scope (do you want only the result you came for, or also secondary findings?). There are pediatric complexities (parents consent for children who cannot, raising questions about a child's future autonomy — should a child be tested now for an adult-onset condition?). And the results can implicate relatives who never consented to anything. Good consent acknowledges this complexity rather than glossing over it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The practical upshot is that high-quality genomic medicine is inseparable from high-quality consent and counseling. A program that sequences patients without robust pre-test consent processes is setting itself up for harm and mistrust. This is why genetic counselors and counseling-trained clinicians (from the hereditary-conditions lesson) are central infrastructure for genomics, not an optional add-on — they are how informed choice is actually delivered."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "A clinician orders exome sequencing to diagnose a child's undiagnosed neurological condition. During pre-test counseling, the family is told the test could also reveal secondary findings from the ACMG list — for example, a variant predisposing to a treatable cancer or heart condition — and is asked whether they wish to receive such findings.\nThe family is also told the test may turn up variants of uncertain significance, and that any finding could have implications for relatives. They make an informed choice about scope BEFORE the test runs. That conversation — not the sequencing itself — is what makes the result ethically usable.",
+      "title": "Consent in Action"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Diversity Deficit"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most serious equity problem in genomic medicine is that the data underlying it is overwhelmingly drawn from people of European ancestry. In published genome-wide association studies, roughly 86 percent of participants are of European ancestry, while African-ancestry populations are severely underrepresented at around 1.1 percent, with Indigenous American, Oceanian, and many other groups scarcely represented at all. This is the \"diversity deficit,\" and it is not improving fast enough."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is not merely unfair — it is medically consequential, and it threatens to widen health disparities. Genomic knowledge derived mainly from one population applies less well to others. Variant interpretation is worse for underrepresented groups (more variants of uncertain significance, more misclassifications). Polygenic risk scores (from the biobanks lesson) are markedly less accurate outside European-ancestry populations. And pharmacogenomic findings (from the drug-gene lesson) can differ across populations, so a guideline built on one group may not transfer. The people least represented in the data get the least benefit — and potentially get harmed."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The fix is deliberate diversification of genomic research — which is precisely why programs like the NIH All of Us Research Program prioritize recruiting underrepresented populations, and why African and other ancestry-specific genomic initiatives matter. Ancestrally diverse data improves gene discovery and risk estimation for everyone, not only the added groups. But despite mandates and awareness, progress has been slow, making the diversity deficit one of the defining unsolved challenges of the field."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "About 86% of GWAS participants are of European ancestry; African-ancestry participation is around 1.1%. This \"diversity deficit\" means variant interpretation, polygenic risk scores, and pharmacogenomics all perform worse for underrepresented populations — threatening to widen health disparities. The people least represented in the data benefit least and may be harmed. Diversifying genomic research (e.g., All of Us) is essential and still lagging.",
+      "title": "Genomic Data Is ~86% European Ancestry — and That Harms Everyone Else"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Building Genomics That Serves Everyone"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Consent and equity are connected. The diversity deficit partly reflects historical mistrust — many underrepresented communities have legitimate reasons to be wary of medical research, and rebuilding participation depends on trustworthy consent, transparent data governance, the privacy protections of the previous lesson (GINA and its gaps), and genuine benefit sharing. You cannot solve the diversity problem without solving the trust problem, and you cannot earn trust without honest consent."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "For clinicians and program leaders, the practical implications are concrete: invest in real informed-consent and counseling processes; understand that genomic tools (interpretation, PRS, pharmacogenomics) may be less reliable for patients from underrepresented populations and interpret results with appropriate caution; and support efforts to diversify the data. Knowing the limits of the evidence for a given patient is part of practicing genomic medicine responsibly."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson closes the ethics-and-policy arc of the course: secondary findings and consent define how genomic information is responsibly handled at the individual level, while the diversity deficit defines whether genomic medicine is equitable at the population level. Together with the privacy protections of the GINA lesson, they form the framework within which all the technical capabilities of genomics — sequencing, interpretation, pharmacogenomics, risk scores — must operate to actually help patients. The remaining lessons turn to the emerging frontier and to building a precision-medicine program in practice."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Genome and exome sequencing reads far more than the reason it was ordered, so informed consent must address what unexpected information might surface and whether the patient wants it.",
+        "Secondary findings are medically actionable results unrelated to the test's purpose; the ACMG SF v3.2 list of 81 genes (updated annually) defines which to actively report.",
+        "Patients can typically opt out of secondary findings, which are returned through the ordering clinician with counseling — consent and choice come first.",
+        "Informed consent for sequencing is genuinely complex: patients decide about unanticipated information, with added pediatric, scope, and family-implication dimensions.",
+        "The diversity deficit is genomics' most serious equity problem — roughly 86% of GWAS participants are European-ancestry and African-ancestry only ~1.1%.",
+        "This deficit makes variant interpretation, polygenic risk scores, and pharmacogenomics less accurate for underrepresented populations, threatening to widen health disparities.",
+        "Fixing it requires deliberately diversifying genomic research (e.g., All of Us) and rebuilding trust through honest consent, privacy protection, and benefit sharing."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The ACMG SF list (currently v3.2, 81 genes, updated annually) identifies genes for serious, medically actionable conditions that laboratories should actively look for and report as secondary findings during clinical sequencing — even when unrelated to the reason for testing — because early knowledge enables prevention or treatment. Crucially, patients can typically opt out of receiving these findings, and they are returned through the ordering clinician with counseling. Consent about what the patient wishes to receive must come before the test.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "It lists conditions the test cannot detect, and the patient has no say"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "It is a list of 81 genes with serious, medically actionable conditions that labs should actively report as secondary findings — and the patient can typically opt out of receiving them"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "It requires reporting every variant found, with no opt-out"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "It applies only to single-gene tests, not sequencing"
+        }
+      ],
+      "question": "A clinician orders genome sequencing to diagnose one condition. What is the purpose of the ACMG SF v3.2 list, and what choice does the patient have?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] ACMG SF v3.2 list for reporting of secondary findings in clinical exome and genome sequencing (Genetics in Medicine / PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC10524344/ — 81 genes; annual updates; medically actionable rationale"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] ACMG Recommendations for Reporting of Secondary Findings (NCBI ClinVar) — https://www.ncbi.nlm.nih.gov/clinvar/docs/acmg/ — secondary findings reporting recommendations"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Points to Consider for Informed Consent for Genome/Exome Sequencing (Genetics in Medicine) — https://www.gimjournal.org/article/S1098-3600(21)02732-5/fulltext — informed consent elements; secondary findings; pediatric considerations"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Incidental Findings with Genomic Testing: Implications for Genetic Counseling Practice (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC4633435/ — pre-test counseling; return of findings via the clinician"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Bridging genomics' greatest challenge: The diversity gap (Cell Genomics) — https://www.cell.com/cell-genomics/fulltext/S2666-979X(24)00353-7 — ~86% European, ~1.1% African ancestry; consequences and persistence"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Importance of Diversity in Precision Medicine: Generalizability of Genetic Associations Across Ancestry Groups (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC10720270/ — PRS and association generalizability across ancestries; health disparities"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "genomics-precision-medicine",
+  "order": 11,
+  "slug": {
+    "_type": "slug",
+    "current": "genomic-consent-equity"
+  },
+  "title": "Informed Consent, Secondary Findings, and Genomic Equity"
+}

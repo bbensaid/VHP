@@ -1,0 +1,64 @@
+{
+  "id": "445d7c79-cf76-4b39-aebf-90a5dbd3ea95",
+  "track_id": "3f412c46-e54e-421c-9d6b-8cfb3758a4f2",
+  "pillar": "economics",
+  "order": 1,
+  "slug": "capitation-rate-setting",
+  "title": "How Medicaid Capitation Rates Are Set",
+  "summary": "Explains the actuarial process for developing Medicaid capitation rates, including rate cells, data sources, trend factors, and the actuarial soundness requirement.",
+  "estimated_minutes": 28,
+  "objectives": [
+    "Explain the actuarial soundness requirement and its regulatory basis",
+    "Describe how rate cells are constructed and why they matter for rate equity",
+    "Identify the primary data sources and trend factors used in Medicaid rate development"
+  ],
+  "content_blocks": [
+    {
+      "body": "Under 42 CFR §438.4, all Medicaid capitation rates must be 'actuarially sound' — meaning rates must be sufficient to cover the MCO's reasonable, appropriate, and attainable costs of providing covered services to the enrolled population. Rates must be developed and certified by a qualified actuary (one who meets the American Academy of Actuaries' qualification standards, per 42 CFR §438.2) and certified as actuarially sound before CMS approval.\n\nActuarial soundness has two components: (1) rates must cover expected costs based on the covered population's utilization patterns and (2) rates must be developed in accordance with generally accepted actuarial principles and practices and the federal rate development standards in §438.5.",
+      "type": "text",
+      "heading": "Actuarial Soundness: The Federal Baseline"
+    },
+    {
+      "body": "States develop rates for distinct 'rate cells' — segments of the Medicaid population with similar expected costs. Common rate cells include:\n- Age/sex bands (e.g., children 0–1, children 1–14, adult males 19–44)\n- Eligibility categories (TANF families, SSI individuals, dual eligibles)\n- Geographic regions (reflecting local cost variation)\n- Functional need levels (for MLTSS populations)\n\nPMPM rates vary dramatically across cells. For scale, KFF puts Medicaid spending at about $3,321 a year per child enrollee (roughly $280 a month) versus about $20,950 per enrollee with disabilities (roughly $1,750 a month), reflecting the much higher expected utilization of complex populations.",
+      "type": "text",
+      "heading": "Rate Cells and Population Segmentation"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Typical child PMPM rate",
+          "value": "$180",
+          "context": "Children rate cells are typically among the lowest PMPM rates due to lower average utilization"
+        },
+        {
+          "label": "Typical aged/disabled adult PMPM rate",
+          "value": "$1,200+",
+          "context": "SSI/ABD populations have much higher expected costs, reflecting complex medical and LTSS needs"
+        },
+        {
+          "label": "Typical annual medical trend factor",
+          "value": "3–5%",
+          "context": "Actuaries apply trend factors to base period data to project costs forward to the rating period"
+        }
+      ]
+    },
+    {
+      "body": "Actuaries use a combination of data sources to develop base period costs: MCO encounter data (if complete and credible), state FFS claims data, and commercial benchmarks. CMS's annual Medicaid Managed Care Rate Development Guide provides guidance on acceptable methodologies. States must submit the actuarial rate certification along with rate development documentation (RDD) for CMS review.",
+      "type": "callout",
+      "title": "Data Sources for Rate Development",
+      "variant": "tip"
+    }
+  ],
+  "tags": [
+    "capitation rates",
+    "actuarial soundness",
+    "rate cells",
+    "PMPM"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:10.102135+00:00",
+  "updated_at": "2026-10-09T15:08:30.233641+00:00",
+  "sanity_slug": "capitation-rate-setting"
+}

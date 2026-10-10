@@ -1,0 +1,481 @@
+{
+  "_createdAt": "2026-05-31T07:14:41Z",
+  "_id": "hospital-business-model",
+  "_rev": "rL4Cn5Sfo5Z8rzPmEBUe0R",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T07:14:41Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A Business That Doesn’t Behave Like One"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A hospital is one of the strangest businesses in the American economy. It often cannot tell a patient the price before delivering the service, gets paid different amounts by different customers for the identical procedure, is frequently legally barred from turning anyone away in an emergency, and — in the majority of cases — is not even trying to earn a profit in the conventional sense. Yet a hospital must still bring in more money than it spends, or it closes. Understanding how it does that is the foundation of everything else in hospital finance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The single most important fact about the hospital business model is where the money comes from. Net patient revenue — the money a hospital actually collects for treating patients, after discounts and adjustments — accounts for an average of roughly 90.9% of total hospital revenue. The rest comes from non-patient sources: investment income, philanthropy, grants, and ancillary operations like parking, cafeterias, and retail pharmacy. For most hospitals, the business is overwhelmingly the business of getting paid for patient care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "But \"getting paid for patient care\" hides enormous complexity. A hospital does not have one customer paying one price; it has a portfolio of payers — Medicare, Medicaid, commercial insurers, and patients themselves — each paying a different rate, set by a different mechanism, for the same bed and the same surgeon. The mix of those payers, and how much each pays, largely determines whether the hospital thrives or struggles."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: Net patient revenue is the cash a hospital actually collects for patient care after contractual discounts, charity care, and bad debt are subtracted from its billed charges. It is the engine of the hospital business model — averaging about 90.9% of total hospital revenue."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Net patient revenue as an average share of total hospital revenue; the rest comes from investments, philanthropy, and ancillary operations (Trilliant Health)",
+          "label": "Revenue From Patient Care",
+          "value": "~90.9%"
+        },
+        {
+          "_key": "s2",
+          "context": "Total compensation and related expenses account for roughly 56–60% of total hospital costs — the largest single expense category (Kaufman Hall / AHA)",
+          "label": "Expenses That Are Labor",
+          "value": "~56–60%"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Payer Mix: Many Customers, Many Prices"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The defining feature of hospital revenue is that the same service generates wildly different payments depending on who is paying. A hospital’s payer mix — the proportion of its revenue coming from each type of payer — is therefore one of the most consequential numbers in its finances. Based on recent national data, commercial, private, and self-pay together represent the largest group at about 69.9% of the average payer mix, with Medicare contributing roughly 15.5% and Medicaid roughly 14.6%."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "These payers do not pay equally well. Commercial insurers generally pay rates well above the hospital’s cost. Government payers pay less — often below cost. In 2024, Medicare reimbursed hospitals at roughly 83 cents on the dollar, contributing to more than $100 billion in underpayments relative to the cost of care. Medicaid frequently pays even less. The practical consequence is that a hospital’s financial health depends heavily on how many commercially insured patients it serves relative to Medicare and Medicaid patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Commercial / Private Insurance",
+        "points": [
+          "Largest share of revenue (~69.9% with self-pay)",
+          "Negotiated rates generally above cost",
+          "Effectively subsidizes underpaying payers",
+          "A favorable payer mix strengthens margins"
+        ]
+      },
+      "right": {
+        "label": "Government Payers (Medicare/Medicaid)",
+        "points": [
+          "Medicare ~15.5%, Medicaid ~14.6% of mix",
+          "Administered rates, often below cost",
+          "Medicare paid ~83¢ per dollar of cost in 2024",
+          "A high government mix pressures margins"
+        ]
+      },
+      "title": "How Different Payers Treat the Same Service"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This dynamic produces one of the most important and least understood phenomena in hospital finance: the cross-subsidy. Because government payers often pay below cost, hospitals rely on higher commercial payments to make up the difference. In effect, privately insured patients (and their employers) subsidize the care of Medicare and Medicaid patients. This is why two hospitals with identical clinical operations can have opposite financial fates simply because one sits in a wealthy area with many commercially insured patients and the other serves a low-income community dependent on Medicaid."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Cost Side: Where the Money Goes"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "If revenue is complicated, expenses are comparatively straightforward — and dominated by one category. Total compensation and related expenses account for roughly 56% to 60% of total hospital costs. A hospital is, financially, a labor business: physicians, nurses, technicians, and support staff are the overwhelming majority of what it spends. This is why workforce shortages and wage inflation hit hospital finances so hard, and why the contract-labor surge during and after the pandemic was financially devastating."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The remaining expenses fall into supplies and drugs (which have risen sharply with pharmaceutical prices), capital and facilities (the enormous cost of buildings and equipment), and administrative overhead (billing, compliance, IT, and the machinery required to navigate the multi-payer system described above). Because labor is such a large and relatively fixed cost, hospitals have limited ability to quickly cut expenses when revenue falls — a key reason hospital margins are so sensitive to volume and payer mix."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "In 2024, nonprofit hospitals saw a meaningful financial recovery — Kaufman Hall reported a median operating margin of about 4.9% across the full year, and Fitch noted nonprofit margins flipped positive (a median around 1.2% for early-fiscal-year reporters, up from -0.5% the prior year).\n\nEven so, a 1–5% operating margin is razor-thin for an organization with massive fixed labor and facility costs. A bad flu season, a payer-mix shift toward Medicaid, or a wage spike can erase it. This is why hospital finance treats even profitable years as fragile.",
+      "title": "Why a \"Good Year\" Is Still a Thin Year"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Nonprofit vs. For-Profit: Two Different Models"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "American hospitals come in two broad financial species, and the difference is not cosmetic. For-profit hospitals (such as HCA Healthcare and Tenet Healthcare) are owned by shareholders and exist to generate returns; their margins reflect it. In Q2 2024, HCA posted roughly a 12.8% operating margin and Tenet roughly 14.9% — multiples of the nonprofit median. For-profit systems tend to be disciplined about payer mix, service-line profitability, and cost control because investors demand it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Nonprofit hospitals — the majority of U.S. hospitals — operate under a fundamentally different bargain. They are exempt from federal income, state, and local property taxes, an exemption estimated to cost government authorities upwards of $37.4 billion annually in foregone revenue. In exchange, they must satisfy the community benefit standard: under IRS Revenue Ruling 69-545 and the Affordable Care Act’s IRC Section 501(r), a nonprofit hospital must demonstrate that it benefits the community rather than private individuals — through charity care, unreimbursed Medicaid, community health programs, education, research, and subsidized services."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "A nonprofit hospital still must earn a surplus (revenue above expenses) to fund equipment, buildings, and reserves — it simply reinvests that surplus rather than distributing it to shareholders. The label refers to who owns the profit, not whether the hospital tries to be financially sound. Both species must out-earn their costs to survive.",
+      "title": "“Nonprofit” Does Not Mean “No Margin”"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This bargain is increasingly contested. Critics note that \"community benefit\" has no precise federal statutory definition, enforcement is weak, and some nonprofit hospitals provide less charity care than the value of their tax exemption. The federal revenue loss from the exemption is projected at roughly $260 billion over 2025–2034. For anyone studying hospital finance, the lesson is that a nonprofit hospital’s tax status is not a given — it is a conditional privilege tied to obligations that regulators and the public are scrutinizing more closely."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Putting It Together: The Hospital as a System"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Once the pieces are assembled, the hospital business model resolves into a clear logic. Revenue is overwhelmingly patient revenue, collected from a mix of payers who pay very different amounts; the favorable commercial payments cross-subsidize the below-cost government payments. Expenses are dominated by labor and are largely fixed in the short run. The gap between the two — the operating margin — is typically thin, often in the low single digits for nonprofits, leaving little cushion against shocks."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "A hospital’s finances work like a restaurant where the menu has one price, but the city forces you to charge regulars (Medicare and Medicaid) less than the food costs, while tourists (commercial insurers) pay a premium that keeps the kitchen open. Most of your spending is the cooks’ and servers’ wages, which you can’t cut overnight. If too many regulars show up and too few tourists, you lose money even with a full dining room.",
+      "concept": "Payer mix, cross-subsidy, and fixed labor costs"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why so much of hospital strategy reduces to a few levers: improving the payer mix, negotiating better commercial rates, controlling labor costs, growing profitable service lines, and — increasingly — accepting value-based contracts that pay for keeping people healthy rather than for volume. Every topic that follows in hospital finance, from reading the financial statements to capital budgeting to value-based payment, is ultimately about managing the tension this business model creates: a mission to care for everyone, funded by a payment system that pays unevenly and a cost structure that rarely bends."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For the value-based-care era, the model carries a final implication. A business that earns thin margins by filling beds is structurally fragile and misaligned with population health. The shift toward paying hospitals for outcomes — through shared savings, bundled payments, and global budgets — is, at its core, an attempt to rewire this business model so that a healthy community is a financial asset rather than an empty-bed liability."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "Net patient revenue — money collected for patient care after discounts and adjustments — averages about 90.9% of total hospital revenue, making the hospital fundamentally a patient-care business supplemented by investment income and philanthropy.",
+        "A hospital has many payers paying different prices for the same service; payer mix is roughly 69.9% commercial/private/self-pay, 15.5% Medicare, and 14.6% Medicaid in recent national data.",
+        "Government payers often pay below cost — Medicare reimbursed roughly 83 cents on the dollar in 2024 (over $100 billion in underpayments) — forcing hospitals to rely on a cross-subsidy from higher commercial payments.",
+        "Expenses are dominated by labor: total compensation accounts for roughly 56–60% of hospital costs and is largely fixed in the short term, making margins highly sensitive to volume and payer mix.",
+        "Operating margins are typically thin; even in the recovered year of 2024, nonprofit medians ran from about 1.2% (Fitch early reporters) to 4.9% full-year (Kaufman Hall), versus 12–15% for large for-profit systems like HCA and Tenet.",
+        "Nonprofit hospitals are exempt from income, property, and other taxes (worth upwards of $37.4 billion annually) in exchange for meeting the community benefit standard under IRS Revenue Ruling 69-545 and ACA Section 501(r).",
+        "\"Nonprofit\" describes who owns the surplus, not whether the hospital seeks one — every hospital must earn more than it spends to fund equipment, facilities, and reserves and to survive.",
+        "The thin-margin, volume-dependent business model is structurally misaligned with population health, which is precisely why value-based payment seeks to rewire it so that a healthy community becomes a financial asset rather than a liability."
+      ]
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Trilliant Health: \"Hundreds of Hospitals Rely on Non-Patient Revenue to Maintain Positive Margins\" — https://www.trillianthealth.com/market-research/studies/hundreds-of-hospitals-rely-on-non-patient-revenue-to-maintain-positive-margins — net patient revenue averages 90.9% of total hospital revenue; non-patient income sources."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Definitive Healthcare: \"Understanding Hospital Payor Mixes Across the U.S.\" — https://www.definitivehc.com/resources/healthcare-insights/breaking-down-us-hospital-payor-mixes — payer mix ~69.9% commercial/private/self-pay, 15.5% Medicare, 14.6% Medicaid."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] AHA: \"Costs of Caring\" / Healthcare Finance News on labor costs — https://www.aha.org/costsofcaring — labor as the largest expense category; Medicare reimbursed ~83 cents on the dollar with over $100B in underpayments in 2024."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Kaufman Hall: \"National Hospital Flash Report\" — https://www.kaufmanhall.com/insights-reports/national-hospital-flash-report — 2024 full-year median operating margin ~4.9%; total compensation ~56–60% of expenses."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Fierce Healthcare: \"Nonprofit hospital margins flipped positive in 2024: Fitch\" — https://www.fiercehealthcare.com/providers/nonprofit-hospital-margins-flipped-positive-2024-fitch — nonprofit median margin ~1.2% (up from -0.5%); for-profit HCA ~12.8% and Tenet ~14.9% operating margins in Q2 2024."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] IRS: \"Charitable hospitals — general requirements for tax-exemption under Section 501(c)(3)\" — https://www.irs.gov/charities-non-profits/charitable-hospitals-general-requirements-for-tax-exemption-under-section-501c3 — 501(c)(3) requirements and community benefit standard (Rev. Ruling 69-545, IRC 501(r))."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src7s",
+          "_type": "span",
+          "marks": [],
+          "text": "[7] Committee for a Responsible Federal Budget: \"The Federal Tax Benefits for Nonprofit Hospitals\" — https://www.crfb.org/papers/federal-tax-benefits-nonprofit-hospitals — tax exemption worth upwards of $37.4 billion annually; ~$260 billion federal revenue loss projected 2025–2034."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "hospital-finance",
+  "order": 1,
+  "slug": {
+    "_type": "slug",
+    "current": "hospital-business-model"
+  },
+  "title": "The Hospital Business Model: How Hospitals Actually Make Money"
+}

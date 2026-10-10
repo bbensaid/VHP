@@ -1,0 +1,512 @@
+{
+  "_createdAt": "2026-06-02T13:37:09Z",
+  "_id": "real-data-collection",
+  "_rev": "DVjDzohZY4r79IzyyjWp9s",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T13:37:09Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "You Cannot Improve What You Cannot See"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Every previous lesson in this course points to the same operational prerequisite: to act on a disparity, you first have to be able to see it. That requires data on who your patients are — their race, ethnicity, and language — collected accurately and at sufficient detail to stratify outcomes. This is \"REaL\" data: Race, Ethnicity, and Language. Without it, a health system is effectively colorblind to its own inequities, unable to tell whether its diabetes control, cancer screening, or maternal outcomes differ across the populations it serves."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The single most common reason health systems cannot identify disparities in their own care is poor REaL data quality. Race and ethnicity fields are frequently missing, guessed at by staff rather than self-reported, collapsed into a handful of coarse categories, or recorded inconsistently across registration, the EHR, and claims. When the underlying data is unreliable, every downstream analysis inherits that unreliability."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This makes REaL data collection foundational rather than clerical. It is the substrate on which stratified quality measurement, targeted intervention, and progress tracking all depend. A health system that wants to do equity work but has not invested in high-quality, self-reported, granular REaL data is building on sand."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "REaL data — Race, Ethnicity, and Language — is the foundation of all equity measurement. If it is missing, guessed at, or too coarse, a health system cannot see its own disparities, let alone act on them."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How REaL Data Goes Wrong"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "REaL data quality fails in a handful of predictable ways, and each has a known remedy. The most damaging is collecting race by staff observation rather than patient self-report. A registration clerk guessing a patient's race produces data that is both inaccurate and biased — and it denies patients the basic dignity of defining their own identity. The fix is straightforward: ask patients to self-identify, at registration or through the patient portal."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A second common failure is conflating race and ethnicity — for example, treating \"Hispanic\" as a race rather than collecting Hispanic/Latino ethnicity separately from race. Federal standards keep these distinct (a person can be Hispanic and any race), and collapsing them destroys analytic value. A third failure is excessive coarseness: lumping everyone into five or six broad buckets hides enormous within-group variation. A \"Asian\" category that combines Hmong, Korean, Filipino, and South Asian patients can mask disparities that only appear when the data is disaggregated."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Language is often the most neglected element. Preferred spoken language and preferred written language are frequently not collected at all, or are conflated with ethnicity. Yet language access is directly tied to safety and quality — and, as a later lesson covers, to legal requirements. Finally, missing data is often simply coded \"Unknown\" or \"Declined\" and abandoned, rather than triggering a protocol to ask again at the next encounter."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2t1",
+      "_type": "code",
+      "code": [
+        {
+          "Better_Approach": "Patient self-report at registration or via portal",
+          "Common_Problem": "Recorded by staff observation",
+          "Field": "Race"
+        },
+        {
+          "Better_Approach": "Collected separately from race per federal standards",
+          "Common_Problem": "Collapsed into race (Hispanic as a race)",
+          "Field": "Ethnicity"
+        },
+        {
+          "Better_Approach": "Granular subcategories (e.g., Hmong, Somali, Dominican)",
+          "Common_Problem": "Only broad minimum categories",
+          "Field": "Detail"
+        },
+        {
+          "Better_Approach": "Preferred spoken AND written language collected",
+          "Common_Problem": "Not collected or conflated with ethnicity",
+          "Field": "Language"
+        },
+        {
+          "Better_Approach": "Protocol to re-ask at the next encounter",
+          "Common_Problem": "Coded Unknown and left alone",
+          "Field": "Missing_data"
+        }
+      ],
+      "language": "json",
+      "title": "Common REaL Data Problems and Better Approaches"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Standards: OMB Categories and the IOM Framework"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "REaL data is not collected ad hoc; there are national standards that make data comparable across organizations. The baseline comes from the Office of Management and Budget's Statistical Policy Directive No. 15 (SPD 15), which sets the minimum race and ethnicity categories used across federal data. In March 2024, OMB issued the first major revision to SPD 15 since 1997 — a significant change worth knowing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2024 revision made two notable changes. It moved to a combined race-and-ethnicity question (rather than asking Hispanic ethnicity separately from race), allowing respondents to select one or multiple categories. And it added \"Middle Eastern or North African\" (MENA) as a distinct minimum category; previously, MENA respondents were tabulated as White. The updated minimum categories are American Indian or Alaska Native, Asian, Black or African American, Hispanic or Latino, Middle Eastern or North African, Native Hawaiian or Pacific Islander, and White. The revision also encourages collecting more detailed data beyond these minimums."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For health care specifically, the influential framework is the 2009 Institute of Medicine report \"Race, Ethnicity, and Language Data: Standardization for Health Care Quality Improvement.\" It recommended collecting the OMB categories plus more granular ethnicity and preferred-language data drawn from national standard sets — precisely so that quality metrics can be stratified, disparity-reduction initiatives organized, and progress reported in consistent, comparable ways. The IOM framework is why \"granular ethnicity\" and \"language need\" are now standard concepts in health-system data design."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3ex1",
+      "_type": "exampleBlock",
+      "content": "OMB's Statistical Policy Directive No. 15 sets the federal minimum race/ethnicity categories. The March 28, 2024 revision — the first since 1997 — combined race and ethnicity into one multi-select question and added a Middle Eastern or North African (MENA) category, which had previously been folded into \"White.\"\nThe 2009 IOM report \"Race, Ethnicity, and Language Data\" built the health-care framework: collect OMB categories plus locally selected granular ethnicity and preferred-language data, so quality performance can be stratified and disparities tracked consistently across organizations.",
+      "title": "OMB SPD 15 (2024 Revision) and the IOM REaL Framework"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Aggregate Trap: Why Stratification Matters"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The entire point of collecting REaL data is to stratify outcomes — to break a performance measure down by group rather than reporting a single average. The reason this matters so much is what we can call the aggregate trap: a perfectly respectable overall number can conceal a severe disparity underneath it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Consider a hospital reporting a 72% colorectal cancer screening rate — at or above the national benchmark, apparently fine. But stratified by race, the same data might show white patients at 79%, Black patients at 61%, and Hispanic patients at 54%. The aggregate hides a 25-percentage-point gap. The hospital looks like a strong performer while systematically underserving entire groups of patients. Only stratification reveals the problem, and only revealing it makes action possible."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why \"we treat everyone the same\" is not a defense — and is often the very mechanism that lets disparities persist unexamined. A health system committed to equity reports its key measures stratified by race, ethnicity, language, and ideally payer and geography, and it treats a wide gap between groups as a quality defect demanding a response, not as a statistic to file away."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "The aggregate trap is the most important reason to collect and use REaL data. A clinic can sit at or above a national benchmark in aggregate while one subgroup lags far behind. Reporting only the overall number is not neutral — it actively conceals the inequity. Always stratify key measures by race, ethnicity, and language.",
+      "title": "A good average can hide a serious disparity"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Building the Data Infrastructure"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Turning these principles into reliable data requires deliberate operational work. It starts at the front lines: registration and intake staff need training and scripting to ask self-identification questions respectfully and to explain why the information is collected, which improves both completeness and accuracy. EHR configuration matters too — the system must support separate race, ethnicity, granular-ethnicity, and language fields, and ideally let patients self-report through a portal."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Trust is a real and legitimate barrier. Some patients are wary of providing demographic data, often for understandable historical reasons. The remedy is transparency: explaining that the data is used to ensure all groups receive equitable care and to identify and close gaps — not to discriminate — measurably increases willingness to self-identify. How the question is asked matters as much as whether it is asked."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Finally, REaL data quality has to be measured and managed like any other data quality problem. That means tracking the share of records with complete, self-reported race, ethnicity, and language; auditing for the failure modes above; and building protocols to re-request missing data at subsequent encounters. A health system that monitors its REaL data completeness the way it monitors clinical metrics will steadily improve the foundation everything else rests on."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Ask patients to self-identify race, ethnicity, and language at registration or via the portal — never by staff observation.",
+          "title": "Self-report by default"
+        },
+        {
+          "_key": "step2",
+          "description": "Capture race and ethnicity distinctly, support granular subcategories, and collect preferred spoken and written language.",
+          "title": "Separate, granular fields"
+        },
+        {
+          "_key": "step3",
+          "description": "Tell patients the data is used to ensure equitable care and close gaps, which increases willingness to self-identify.",
+          "title": "Explain the purpose"
+        },
+        {
+          "_key": "step4",
+          "description": "Treat \"Unknown/Declined\" as a follow-up task, requesting self-identification at the next encounter.",
+          "title": "Re-ask missing data"
+        },
+        {
+          "_key": "step5",
+          "description": "Track and audit REaL data completeness and accuracy as a managed data-quality metric over time.",
+          "title": "Monitor completeness"
+        }
+      ],
+      "title": "Building Reliable REaL Data"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "REaL data (Race, Ethnicity, and Language) is the foundation of equity measurement — without it, a health system cannot see its own disparities.",
+        "The most damaging failure is collecting race by staff observation; the fix is patient self-report, with race and ethnicity captured as separate, granular fields.",
+        "OMB's SPD 15 sets minimum federal race/ethnicity categories; the March 2024 revision combined race and ethnicity into one question and added a MENA category.",
+        "The 2009 IOM \"Race, Ethnicity, and Language Data\" report defined the health-care framework: OMB categories plus granular ethnicity and preferred-language data for stratification.",
+        "The aggregate trap means a good overall number can hide a severe subgroup disparity — so key measures must always be stratified.",
+        "\"We treat everyone the same\" is not a defense; reporting only aggregate numbers actively conceals inequities and lets them persist.",
+        "Reliable REaL data requires operational investment: staff training, EHR configuration, patient trust-building, re-asking missing data, and monitoring completeness."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The aggregate trap occurs when an acceptable overall quality score hides a significant gap between demographic subgroups — for example, a 72% screening rate that masks a 25-point gap between white and Hispanic patients. Because the disparity is invisible in the average, only stratifying the measure by race, ethnicity, and language (REaL data) reveals it, which is why high-quality REaL data is foundational to equity work.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "It is collecting so much data that analysis becomes impossible; REaL data simplifies it"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "It is when a good overall (aggregate) performance number conceals a severe disparity between subgroups — making stratification by REaL data essential to reveal it"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "It is using population averages to set individual patient goals; REaL data prevents this"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "It is failing to collect data from patients who decline to self-identify"
+        }
+      ],
+      "question": "What is the \"aggregate trap\" in quality measurement, and why does it make REaL data essential?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Office of Management and Budget — \"Revisions to OMB's Statistical Policy Directive No. 15,\" Federal Register (March 29, 2024) — https://www.federalregister.gov/documents/2024/03/29/2024-06469/revisions-to-ombs-statistical-policy-directive-no-15 — combined race/ethnicity question; added Middle Eastern or North African (MENA) category; effective March 28, 2024."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] U.S. Census Bureau — \"Updates to OMB's Race/Ethnicity Standards\" — https://www.census.gov/newsroom/blogs/random-samplings/2024/04/updates-race-ethnicity-standards.html — the seven minimum categories and the move to detailed data collection."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Institute of Medicine (2009) — \"Race, Ethnicity, and Language Data: Standardization for Health Care Quality Improvement,\" via AHRQ — https://www.ahrq.gov/research/findings/final-reports/iomracereport/index.html — framework of OMB categories plus granular ethnicity and language need, for stratifying quality metrics."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] HHS ASPE — \"HHS Implementation Guidance on Data Collection Standards for Race, Ethnicity, Sex, Primary Language, and Disability Status\" — https://aspe.hhs.gov/reports/hhs-implementation-guidance-data-collection-standards-race-ethnicity-sex-primary-language-disability — federal standards for REaL data in health care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Agency for Healthcare Research and Quality — REaL data and stratified quality measurement — https://www.ahrq.gov/ — use of self-reported race/ethnicity/language to stratify quality and identify disparities (the aggregate trap)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "health-equity-sdoh",
+  "order": 8,
+  "slug": {
+    "_type": "slug",
+    "current": "real-data-collection"
+  },
+  "title": "REaL Data: Collecting Race, Ethnicity & Language"
+}

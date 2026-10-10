@@ -1,0 +1,529 @@
+{
+  "_createdAt": "2026-06-01T12:41:11Z",
+  "_id": "clearinghouses-edi",
+  "_rev": "2zkDeD7zc2Ko2DfFHs9ku0",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T12:41:11Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Post Office of Health Care Billing"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Once a clean claim is built, it has to get to the payer — and there are thousands of payers, each with its own systems, formats, and rules. A provider does not connect directly to every one of them. Instead, claims flow through an intermediary called a clearinghouse, which acts as the central post office of healthcare billing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A clearinghouse receives claims from providers, checks and reformats them to meet each payer's specific requirements, and routes them to the correct payer — then carries the payer's responses back. It is a hub-and-spoke model: providers connect to a clearinghouse, the clearinghouse connects to the payers, and the clearinghouse translates between them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This intermediary role is enormously valuable. Without clearinghouses, every provider would need a custom connection to every payer. With them, a provider maintains one connection and reaches the whole payer universe — while gaining an extra layer of error-checking along the way."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A clearinghouse is the intermediary that receives provider claims, applies payer-specific edits, and routes them to the correct payer (and carries responses back). It lets providers reach thousands of payers through one connection."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What a Clearinghouse Actually Does"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A clearinghouse does more than forward claims. Its core value-add is applying payer-specific edits — checking each claim against the unique rules of the destination payer before sending it. This is a second, payer-aware layer of claim scrubbing on top of the provider's own, catching errors that would otherwise become rejections or denials."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The typical flow: the provider submits a batch of claims to the clearinghouse; the clearinghouse validates and scrubs them, returning any that fail for correction; it then formats the passing claims to each payer's specification and transmits them. When payers respond — with acknowledgments, status updates, or remittances — those come back through the clearinghouse to the provider."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This upfront validation is why clearinghouses are described as preventing avoidable denials: they catch problems at the lowest-cost point, before the payer ever sees the claim. They also consolidate reporting, giving the provider a single view of claim status across all payers rather than separate logins for each."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "A batch of claims (837 transactions) goes to the clearinghouse.",
+          "title": "Provider submits claims"
+        },
+        {
+          "_key": "step2",
+          "description": "Applies payer-specific edits; returns failures for correction.",
+          "title": "Clearinghouse scrubs & validates"
+        },
+        {
+          "_key": "step3",
+          "description": "Formats each claim to the payer's specification and transmits it.",
+          "title": "Routes to payers"
+        },
+        {
+          "_key": "step4",
+          "description": "Acknowledgments, status (277), and remittances (835) return to the provider.",
+          "title": "Carries responses back"
+        }
+      ],
+      "title": "How a Claim Flows Through a Clearinghouse"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "EDI: The Standardized Language"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "All this exchange runs on EDI — Electronic Data Interchange — the standardized electronic format for transmitting healthcare administrative transactions between providers, payers, and clearinghouses. HIPAA mandated these standards in the early 2000s and adopted the ANSI X12 standard (the same family used in industries like banking and logistics) as the format."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Each type of administrative transaction has a numbered X12 standard. You have already met several in this course: the 270/271 eligibility inquiry and response, and the 278 prior-authorization transaction. The submission and payment transactions complete the set."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Knowing the key transaction numbers is part of the working vocabulary of RCM, because people refer to them constantly (\"we got the 835,\" \"check the 277\"). The numbers are not arbitrary trivia — each names a specific, standardized step in the electronic conversation between provider and payer."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3t1",
+      "_type": "code",
+      "code": [
+        {
+          "Name": "Health Care Claim",
+          "Purpose": "Submit the claim (837P/837I/837D)",
+          "Transaction": "837"
+        },
+        {
+          "Name": "Remittance Advice (ERA)",
+          "Purpose": "Communicate payments, adjustments, denials",
+          "Transaction": "835"
+        },
+        {
+          "Name": "Eligibility Inquiry/Response",
+          "Purpose": "Verify coverage and benefits",
+          "Transaction": "270_271"
+        },
+        {
+          "Name": "Claim Status Inquiry/Response",
+          "Purpose": "Check the status of a submitted claim",
+          "Transaction": "276_277"
+        },
+        {
+          "Name": "Prior Authorization",
+          "Purpose": "Request and receive service authorization",
+          "Transaction": "278"
+        }
+      ],
+      "language": "json",
+      "title": "Key HIPAA X12 EDI Transactions"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Two Big Ones: 837 and 835"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two transactions form the heart of the billing exchange. The 837 is the claim itself — it carries the patient, subscriber, provider, diagnosis, procedure, and charge details the payer needs to adjudicate (in its 837P professional, 837I institutional, and 837D dental variants). When you \"submit a claim\" electronically, you are sending an 837."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 835 is the answer: the electronic remittance advice (ERA). It communicates how the payer adjudicated the claim — what was paid, what was adjusted, and what was denied — using standardized codes for the reasons and amounts on each service line. The 835 is what enables automated payment posting and reconciliation, the subject of a later lesson."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Together, 837 out and 835 back form the core loop: the provider sends the claim, the payer sends the remittance. The 276/277 status transactions let the provider check on a claim in between, and the 270/271 and 278 handle the pre-service checks. The whole cycle, electronically, is a structured conversation in these numbered transactions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "A subtle but important point: the 835 (electronic) is not the same as the patient-facing Explanation of Benefits (EOB). They convey related information, but the 835 is the machine-readable remittance used for auto-posting — a distinction the payment-posting lesson revisits."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Critical Infrastructure: The Change Healthcare Lesson"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Clearinghouses are so central that their failure can paralyze the system — a fact made vivid in early 2024. On February 21, 2024, Change Healthcare, the largest medical claims clearinghouse in the United States, was hit by a ransomware cyberattack. Change Healthcare handles roughly half of all U.S. medical claims, so the attack effectively shut down the claims-clearing process for a huge share of the industry."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The fallout was severe and immediate. Tens of thousands of physicians, hospitals, and pharmacies could not submit claims or get paid; cash flow froze; some pharmacies could not confirm insurance or fill prescriptions. Providers reverted to manual workarounds, and the disruption stretched on for weeks. The parent company, UnitedHealth, reportedly paid about $22 million in ransom."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The episode was a stark lesson in concentration risk: the clearinghouse layer is critical infrastructure, and over-reliance on a single dominant vendor created a systemic single point of failure. For RCM, the takeaways are practical — understand your clearinghouse dependency, and recognize that the smooth, invisible flow of EDI transactions is something the entire payment system quietly depends on. With claims now routed and adjudicated, the next lessons turn to what the payer actually owes (payer contracts) and what happens when claims come back denied."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5ex1",
+      "_type": "exampleBlock",
+      "content": "In February 2024, a ransomware attack on Change Healthcare — the largest U.S. clearinghouse, handling about 50% of medical claims — halted claims processing for much of the country for weeks.\nProviders could not submit claims or receive payments, cash flow froze, and the sector scrambled to reroute through other clearinghouses or manual processes. It demonstrated that clearinghouses are critical infrastructure and that concentration in one vendor is a systemic risk.",
+      "title": "The 2024 Change Healthcare Cyberattack"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "A clearinghouse is the intermediary that receives provider claims, applies payer-specific edits, and routes them to the correct payer — letting providers reach thousands of payers through one connection.",
+        "Clearinghouses add a payer-aware scrubbing layer that catches errors before the payer sees the claim, preventing avoidable rejections and denials.",
+        "EDI (Electronic Data Interchange) is the standardized format for these exchanges; HIPAA mandated it and adopted the ANSI X12 standard.",
+        "Key transactions: 837 (claim), 835 (remittance/ERA), 270/271 (eligibility), 276/277 (claim status), and 278 (prior authorization).",
+        "The 837 carries the claim out and the 835 carries the payer's adjudication back — the core billing loop, with 835 enabling automated payment posting.",
+        "The 835 electronic remittance is distinct from the patient-facing Explanation of Benefits (EOB), though they convey related information.",
+        "The 2024 Change Healthcare cyberattack — which halted ~50% of U.S. claims processing for weeks — showed that clearinghouses are critical infrastructure and that vendor concentration is a systemic risk."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "The 837 is the electronic health care claim a provider submits (in 837P, 837I, or 837D variants); the 835 is the electronic remittance advice (ERA) the payer returns, communicating payments, adjustments, and denials with standardized codes. Together, 837 out and 835 back form the core billing loop, and the 835 enables automated payment posting.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "837 is the eligibility inquiry and 835 is the response"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "837 is the health care claim (sent to the payer) and 835 is the remittance advice/ERA (the payer's adjudication sent back)"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "837 is the prior authorization and 835 is the claim status"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "They are both patient-facing Explanation of Benefits documents"
+        }
+      ],
+      "question": "In HIPAA X12 EDI, what are the 837 and 835 transactions, respectively?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] EDI Files in Healthcare: 837, 835, 270/271 (Accountable) — https://www.accountablehq.com/post/edi-files-in-healthcare-what-they-are-common-transactions-837-835-270-271-and-how-they-work — clearinghouse role; EDI definition; 837/835/270/271 transactions"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] 270/271, 835, 837: Decoding the 9 Key Healthcare EDI Transactions (Invene) — https://www.invene.com/blog/demystifying-healthcare-edi-the-9-critical-transactions-explained — transaction set including 276/277 and 278; purposes"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] EDI Transactions and Code Sets (UHC Provider) — https://www.uhcprovider.com/en/resource-library/edi/edi-transactions.html — 837, 835, 270/271, 276/277 definitions and uses"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] HIPAA EDI Transactions Explained: Types, X12 Codes, and Compliance (Accountable) — https://www.accountablehq.com/post/hipaa-edi-transactions-explained-types-x12-codes-and-compliance — HIPAA mandate; ANSI X12 standard; clearinghouse payer-specific edits"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] The Change Healthcare Cyberattack (Congress.gov CRS) — https://www.congress.gov/crs-product/IN12330 — Feb 21, 2024 attack; largest clearinghouse; ~50% of U.S. claims; sector-wide disruption"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] OFR Brief: The Cyberattack on Change Healthcare (Office of Financial Research) — https://www.financialresearch.gov/briefs/files/OFRBrief-24-05-change-healthcare-cyberattack.pdf — scale of disruption; concentration/single-point-of-failure risk; ~$22M ransom"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "revenue-cycle-management",
+  "order": 11,
+  "slug": {
+    "_type": "slug",
+    "current": "clearinghouses-edi"
+  },
+  "title": "Clearinghouses and EDI Transactions"
+}

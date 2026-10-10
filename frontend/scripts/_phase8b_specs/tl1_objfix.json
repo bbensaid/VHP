@@ -1,0 +1,48 @@
+{
+ "lessonIds": [
+  "4084abb8-7712-4b26-9b3b-627b15128062"
+ ],
+ "files": [
+  "frontend/content/course_transformation_leadership.json"
+ ],
+ "edits": [
+  {
+   "match": {
+    "label": "Lost per $1B in failed projects",
+    "value": "$135M"
+   },
+   "set": {
+    "label": "At risk per $1B spent on projects",
+    "source": "PMI, Pulse of the Profession 2013 \u2014 money put at risk by poor project performance"
+   },
+   "claim": "fallback stat: $135M lost per $1B, unrecoverable loss",
+   "verdict": "MISATTRIBUTED",
+   "src": "PMI Pulse of the Profession 2013: \"US$135 million is at risk for every US$1 billion spent on a project\" (at risk, not lost)"
+  },
+  {
+   "match": {
+    "label": "More projects on time/budget",
+    "value": "38%"
+   },
+   "set": {
+    "label": "More projects meet original goals",
+    "source": "PMI, Pulse of the Profession 2017 \u2014 organizations whose enterprise PMO is aligned to strategy"
+   },
+   "claim": "fallback stat: 38% more projects on time/budget with a PMO vs without",
+   "verdict": "MISATTRIBUTED",
+   "src": "PMI Pulse of the Profession 2017 \"Success Rates Rise\": organizations aligning their EPMO to strategy report 38% more projects meeting original goals and business intent (not PMO vs none, on time/budget)"
+  },
+  {
+   "match": {
+    "label": "More projects fail outright",
+    "value": "67%"
+   },
+   "set": {
+    "source": "PMI, Pulse of the Profession 2020 \u2014 organizations that undervalue project management as a strategic competency"
+   },
+   "claim": "fallback stat: 67% more projects fail outright (undated)",
+   "verdict": "UPDATED",
+   "src": "PMI Pulse of the Profession 2020 \"Ahead of the Curve\": 67% more projects failing outright where PM is undervalued as a strategic competency"
+  }
+ ]
+}

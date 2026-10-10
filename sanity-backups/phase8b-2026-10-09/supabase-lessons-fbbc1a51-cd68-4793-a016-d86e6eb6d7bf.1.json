@@ -1,0 +1,85 @@
+{
+  "id": "fbbc1a51-cd68-4793-a016-d86e6eb6d7bf",
+  "track_id": "422c97c2-efbd-49c0-8ab9-c07b7d1e3420",
+  "pillar": "operations",
+  "order": 2,
+  "slug": "denial-management-workflow",
+  "title": "Building an Effective Denial Management Workflow",
+  "summary": "A systematic denial management program combines real-time tracking, root cause analysis, and structured workflows to maximize recovery and prevent recurrence.",
+  "estimated_minutes": 22,
+  "objectives": [
+    "Design a denial management workflow including tracking, assignment, and follow-up",
+    "Explain how to prioritize denials for maximum recovery",
+    "Describe the components of a denial prevention feedback loop"
+  ],
+  "content_blocks": [
+    {
+      "body": "Effective denial management follows a continuous improvement cycle:\n\n1. **Identify** — Capture all denials in a centralized denial tracking system\n2. **Categorize** — Assign root cause category, CARC/RARC codes, payer, and service line\n3. **Prioritize** — Work denials by dollar value, appeal deadline, and recoverability\n4. **Appeal** — Submit clinically and administratively supported appeals within payer timelines\n5. **Analyze** — Perform root cause analysis on denial trends by category and payer\n6. **Prevent** — Feed insights back to registration, coding, CDI, and authorization teams\n7. **Monitor** — Track denial rate, appeal success rate, and recovery rate by category",
+      "type": "text",
+      "heading": "The Denial Management Cycle"
+    },
+    {
+      "body": "Not all denials are worth pursuing equally. Prioritize by: (1) dollar amount, (2) appeal deadline proximity, (3) historical appeal success rate for that denial type, and (4) cost to appeal. A $50 denial with a 20% success rate and $75 in labor cost to appeal has negative ROI. Set a minimum dollar threshold for appeal pursuit.",
+      "type": "callout",
+      "title": "Prioritize by 'Net Recoverable Value'",
+      "variant": "tip"
+    },
+    {
+      "rows": [
+        [
+          "Medical necessity",
+          "60–75%",
+          "High",
+          "Attach clinical documentation; peer-to-peer review"
+        ],
+        [
+          "Authorization missing",
+          "30–40%",
+          "Medium",
+          "Obtain retrospective auth if payer allows"
+        ],
+        [
+          "Timely filing",
+          "5–10%",
+          "Low",
+          "Pursue only with proof of prior submission"
+        ],
+        [
+          "Duplicate",
+          "85–90%",
+          "High",
+          "Demonstrate claims are for different dates of service"
+        ],
+        [
+          "Coding/documentation",
+          "55–70%",
+          "High",
+          "Submit corrected claim with amended documentation"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Denial Type",
+        "Appeal Success Rate",
+        "Priority",
+        "Strategy"
+      ]
+    },
+    {
+      "body": "The most valuable output of denial management is prevention intelligence. Monthly denial trend reports should be shared with:\n\n- **Registration:** To address eligibility, demographic, and authorization failures\n- **Coding/CDI:** To address documentation and code assignment errors\n- **Clinical departments:** To address ordering and documentation patterns\n- **Managed care:** To flag payer behavior patterns and contract compliance issues\n\nClosing this feedback loop is what lowers the denial rate over time.",
+      "type": "text",
+      "heading": "The Prevention Feedback Loop"
+    }
+  ],
+  "tags": [
+    "denial management",
+    "denial tracking",
+    "root cause analysis",
+    "workflow"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:31:25.912063+00:00",
+  "updated_at": "2026-10-10T04:31:28.938913+00:00",
+  "sanity_slug": "denial-management-workflow"
+}

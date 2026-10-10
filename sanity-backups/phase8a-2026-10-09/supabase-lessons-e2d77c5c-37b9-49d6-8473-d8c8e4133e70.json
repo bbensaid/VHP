@@ -1,0 +1,95 @@
+{
+  "id": "e2d77c5c-37b9-49d6-8473-d8c8e4133e70",
+  "track_id": "31cbd7d7-b6fb-4aa8-997a-03b12867a208",
+  "pillar": "operations",
+  "order": 2,
+  "slug": "health-system-integration",
+  "title": "Systemness: Financial Integration Across Health Systems",
+  "summary": "As independent hospitals merge into health systems, financial integration—shared services, consolidated treasury, system-wide capital allocation—offers significant efficiency gains. This lesson examines the financial logic and implementation challenges of health system 'systemness.'",
+  "estimated_minutes": 20,
+  "objectives": [
+    "Explain the financial rationale for hospital mergers and system integration",
+    "Describe shared services consolidation and its typical cost savings",
+    "Identify the financial integration milestones in a typical hospital merger or acquisition"
+  ],
+  "content_blocks": [
+    {
+      "body": "When independent hospitals join health systems, the financial rationale typically includes:\n\n**Scale Economies:** Consolidated purchasing through group purchasing organizations (GPOs), shared IT infrastructure, centralized revenue cycle, and shared administrative services reduce per-unit costs.\n\n**Capital Access:** System membership provides access to investment-grade system bonds at lower rates than a standalone community hospital could achieve. A Baa-rated hospital joining an Aa-rated system may borrow at 100–150 bps lower rates.\n\n**Revenue Enhancement:** System membership may improve payer contract rates (multi-hospital leverage), expand specialty services, and provide employed physician networks that drive referrals.\n\n**Sustainability:** Financially marginal hospitals gain access to system capital allocation and operating support that may be unavailable as standalone organizations.",
+      "type": "text",
+      "heading": "The Financial Logic of System Integration"
+    },
+    {
+      "rows": [
+        [
+          "Revenue cycle management",
+          "2–4% net revenue improvement",
+          "12–24 months"
+        ],
+        [
+          "Supply chain/GPO consolidation",
+          "5–10% supply cost reduction",
+          "6–18 months"
+        ],
+        [
+          "IT systems consolidation",
+          "15–25% IT cost reduction",
+          "24–48 months"
+        ],
+        [
+          "HR and payroll",
+          "10–20% admin cost reduction",
+          "12–24 months"
+        ],
+        [
+          "Finance and accounting",
+          "15–30% function cost reduction",
+          "12–24 months"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Shared Service",
+        "Typical Savings",
+        "Integration Timeline"
+      ]
+    },
+    {
+      "body": "Hospital mergers frequently fail to achieve projected financial synergies. Common failure modes include: (1) Cultural resistance to standardization; (2) IT system integration cost overruns (EHR consolidation can cost $50–200M for large systems); (3) Physician loyalty to local independence; (4) Community opposition to service changes. FTC antitrust review can block mergers in concentrated markets, and post-merger price increases have drawn Congressional scrutiny.",
+      "type": "callout",
+      "title": "Integration Failure Risks",
+      "variant": "warning"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Hospital beds in systems",
+          "value": "60%+",
+          "context": "Over 60% of U.S. hospital beds are now in multi-hospital systems, up from 40% two decades ago"
+        },
+        {
+          "label": "EHR consolidation cost",
+          "value": "$50–200M",
+          "context": "Large health system EHR consolidation projects typically cost $50–200M, often exceeding initial projections"
+        },
+        {
+          "label": "Merger synergy realization timeline",
+          "value": "3–5 years",
+          "context": "Financial synergies from hospital mergers typically take 3–5 years to fully materialize"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "health system",
+    "mergers",
+    "systemness",
+    "shared services",
+    "consolidation"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:34:48.199679+00:00",
+  "updated_at": "2026-06-01T13:29:14.92309+00:00",
+  "sanity_slug": "health-system-integration"
+}

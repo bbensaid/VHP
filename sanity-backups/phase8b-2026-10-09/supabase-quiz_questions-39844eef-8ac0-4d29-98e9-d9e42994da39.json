@@ -1,0 +1,9 @@
+{
+  "id": "39844eef-8ac0-4d29-98e9-d9e42994da39",
+  "quiz_id": "fd3a0991-15c1-4009-93a9-9a5cab5084cb",
+  "order": 3,
+  "question_type": "single_choice",
+  "question": "What is the maximum routine primary care appointment wait time required under federal network adequacy standards?",
+  "explanation": "Federal network adequacy standards (strengthened in the 2024 Access rule) require routine primary care appointments to be available within 10 business days of a request.",
+  "points": null
+}

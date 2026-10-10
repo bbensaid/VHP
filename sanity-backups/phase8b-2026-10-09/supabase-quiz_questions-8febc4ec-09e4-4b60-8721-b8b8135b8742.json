@@ -1,0 +1,9 @@
+{
+  "id": "8febc4ec-09e4-4b60-8721-b8b8135b8742",
+  "quiz_id": "a7826e22-67a5-4e41-b79c-1f159ef6702f",
+  "order": 3,
+  "question_type": "single_choice",
+  "question": "Trend factors in Medicaid rate development are applied to:",
+  "explanation": "Trend factors project historical base period costs forward to the rating period, accounting for medical cost inflation, utilization changes, and benefit changes. Typical Medicaid medical trend factors range from 3–5% annually.",
+  "points": null
+}

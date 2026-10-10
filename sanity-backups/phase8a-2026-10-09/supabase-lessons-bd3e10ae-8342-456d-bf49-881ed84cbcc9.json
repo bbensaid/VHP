@@ -1,0 +1,84 @@
+{
+  "id": "bd3e10ae-8342-456d-bf49-881ed84cbcc9",
+  "track_id": "9d01bcf8-5017-454a-a679-dbade097e565",
+  "pillar": "equity",
+  "order": 1,
+  "slug": "cms-equity-strategy",
+  "title": "CMS Health Equity Strategy: From Aspiration to Requirement",
+  "summary": "CMS's Framework for Health Equity, the Health Equity Index in Medicare Advantage Star Ratings, AHEAD model equity requirements, and Section 1557 non-discrimination obligations.",
+  "estimated_minutes": 18,
+  "objectives": [
+    {
+      "id": "obj_cp1",
+      "text": "Describe the five priorities in CMS's Framework for Health Equity"
+    },
+    {
+      "id": "obj_cp2",
+      "text": "Explain how the Health Equity Index affects Medicare Advantage Star Ratings"
+    },
+    {
+      "id": "obj_cp3",
+      "text": "Summarize Section 1557 non-discrimination obligations for health care organizations"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Health equity has moved from a voluntary aspiration to a regulatory requirement. CMS has embedded equity into payment programs, quality reporting, and plan contracting in ways that give health systems and payers financial and legal incentives to close disparities — not just acknowledge them.",
+      "type": "text",
+      "heading": "From voluntary to required"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Expand collection of REaL and SDOH data across all CMS programs and require stratified reporting.",
+          "icon": "ti-database",
+          "title": "Data collection"
+        },
+        {
+          "body": "Assess and address barriers to participation by underserved communities in CMS programs.",
+          "icon": "ti-users",
+          "title": "Underserved communities"
+        },
+        {
+          "body": "Build evidence on interventions that close disparities and share findings with the field.",
+          "icon": "ti-chart-bar",
+          "title": "Disparities research"
+        },
+        {
+          "body": "Embed equity in payment models — including requiring disparity reduction plans in ACO and APM contracts.",
+          "icon": "ti-coins",
+          "title": "Payment models"
+        },
+        {
+          "body": "Ensure CMS-funded organizations provide culturally and linguistically appropriate services (CLAS standards).",
+          "icon": "ti-home-heart",
+          "title": "Cultural competency"
+        }
+      ],
+      "heading": "CMS Framework for Health Equity — 5 priorities"
+    },
+    {
+      "body": "Beginning with the 2027 Star Ratings, CMS is introducing a Health Equity Index (HEI) reward that gives Medicare Advantage plans additional credit for improving quality for low-income and/or disabled enrollees. Plans that reduce disparities within their enrolled population are rewarded; those that perform worse for vulnerable subgroups are penalized. This is the first time equity performance has been directly linked to MA payment.",
+      "type": "callout",
+      "heading": "Health Equity Index in Star Ratings",
+      "variant": "info"
+    },
+    {
+      "body": "Section 1557 of the ACA prohibits discrimination based on race, color, national origin, sex, age, and disability by any health program or activity receiving federal financial assistance — which includes virtually every hospital, health system, and insurer.\n\nThe 2024 Section 1557 final rule extended protections to LGBTQ+ individuals, required covered entities to provide meaningful access for people with limited English proficiency, and established requirements for accessible communication for people with disabilities. Health systems with federal funding must have a designated coordinator, a grievance procedure, and notice of nondiscrimination posted.",
+      "type": "text",
+      "heading": "Section 1557: Non-discrimination in health care"
+    }
+  ],
+  "tags": [
+    "CMS equity",
+    "Health Equity Index",
+    "Section 1557",
+    "Star Ratings equity"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T21:56:24.176989+00:00",
+  "updated_at": "2026-06-02T13:58:01.882849+00:00",
+  "sanity_slug": "cms-equity-strategy"
+}

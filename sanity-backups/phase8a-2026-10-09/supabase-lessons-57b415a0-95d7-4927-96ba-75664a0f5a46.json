@@ -1,0 +1,84 @@
+{
+  "id": "57b415a0-95d7-4927-96ba-75664a0f5a46",
+  "track_id": "b4dc3110-ae42-46f4-a973-18dd833697e9",
+  "pillar": "economics",
+  "order": 3,
+  "slug": "contractual-adjustments-charity",
+  "title": "Contractual Adjustments, Charity Care, and Bad Debt",
+  "summary": "The gap between gross charges and net revenue is explained by three major revenue deductions: contractual adjustments, charity care, and bad debt. This lesson clarifies how each is defined, measured, and managed.",
+  "estimated_minutes": 20,
+  "objectives": [
+    "Distinguish between contractual adjustments, charity care, and bad debt and explain how each is recorded",
+    "Calculate and interpret the charity care ratio as a community benefit measure",
+    "Describe the financial and regulatory pressure points around bad debt and self-pay collections"
+  ],
+  "content_blocks": [
+    {
+      "body": "**Contractual Adjustments** are the largest revenue deduction. When a commercial insurer agrees to pay $2,000 for a procedure billed at $8,000, the $6,000 difference is a contractual adjustment. Medicare and Medicaid create similar adjustments based on the difference between charges and their fixed payment rates.\n\n**Charity Care** is free or discounted care provided to patients who cannot afford to pay, based on a formal financial assistance policy. Nonprofit hospitals must have and publicize charity care policies to meet IRS 501(c)(3) requirements. Charity care is reported at cost (not charges) in FASB financial statements under ASC 954.\n\n**Bad Debt** is care provided to patients who were expected to pay (and were not identified as charity-eligible) but did not. It reflects collection failure rather than intentional forgiveness. Under ASC 954, hospitals estimate and record bad debt as an operating expense.",
+      "type": "text",
+      "heading": "Three Types of Revenue Deductions"
+    },
+    {
+      "rows": [
+        [
+          "Contractual Adjustments",
+          "Difference between charges and contracted payer rates",
+          "Deducted from gross revenue to arrive at net revenue"
+        ],
+        [
+          "Charity Care",
+          "Free/discounted care per financial assistance policy",
+          "Reported at cost; not included in revenue; disclosed in notes"
+        ],
+        [
+          "Bad Debt",
+          "Unpaid balances from patients expected to pay",
+          "Recorded as operating expense under ASC 954"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Category",
+        "Definition",
+        "Financial Statement Treatment"
+      ]
+    },
+    {
+      "body": "The IRS Schedule H (attached to Form 990) requires nonprofit hospitals to report community benefit spending including charity care, Medicaid shortfall, medical education, research, and community health programs. While no minimum dollar threshold is mandated, hospitals must demonstrate that community benefit justifies their tax exemption. Congressional scrutiny has increased pressure on hospitals with low charity care ratios relative to their tax benefits.",
+      "type": "callout",
+      "title": "IRS Community Benefit and Charity Care",
+      "variant": "key"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Annual charity care (U.S. hospitals)",
+          "value": "~$42B",
+          "context": "AHA estimates U.S. hospitals provided approximately $42 billion in charity care annually in recent years"
+        },
+        {
+          "label": "Typical charity care ratio",
+          "value": "2–3%",
+          "context": "Charity care as % of net patient revenue; varies widely from <1% to >10%"
+        },
+        {
+          "label": "IRS community benefit form",
+          "value": "Schedule H",
+          "context": "Attached to Form 990; requires detailed disclosure of all community benefit categories"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "contractual adjustments",
+    "charity care",
+    "bad debt",
+    "community benefit"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:34:39.141571+00:00",
+  "updated_at": "2026-06-01T13:29:14.35295+00:00",
+  "sanity_slug": "contractual-adjustments-charity"
+}

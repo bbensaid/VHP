@@ -1,0 +1,9 @@
+{
+  "id": "d69505a5-a7f2-40a8-ac11-3a2d124c254b",
+  "quiz_id": "2a8024d6-eaa3-4cac-bc51-bdce09dd58ac",
+  "order": 3,
+  "question_type": "single_choice",
+  "question": "What cost-to-collect ratio improvement do organizations with fully integrated RCM systems typically achieve?",
+  "explanation": "Organizations with fully integrated RCM systems (minimal manual touchpoints between EHR, PMS, clearinghouse, and payer) typically achieve 30–40% lower cost-to-collect ratios compared to fragmented systems requiring significant manual intervention.",
+  "points": null
+}

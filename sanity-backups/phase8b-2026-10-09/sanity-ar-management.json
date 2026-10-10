@@ -1,0 +1,545 @@
+{
+  "_createdAt": "2026-06-01T12:50:33Z",
+  "_id": "ar-management",
+  "_rev": "2zkDeD7zc2Ko2DfFHsEsnW",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T12:50:33Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Money Still Owed"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "After claims are submitted, paid, and posted, there is always a residual: money that has been billed but not yet collected. That outstanding balance — owed by payers and patients — is accounts receivable (AR). Managing AR is the back-end discipline of systematically chasing that unpaid money until it is collected or appropriately written off."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "AR management matters because billed revenue is not collected revenue. A claim can be perfectly submitted and still sit unpaid for weeks because the payer is slow, the claim got stuck, or no one followed up. AR is where revenue goes to wait — and where, without active management, it quietly ages, becomes harder to collect, and eventually dies as bad debt."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The core insight driving all of AR management is that money gets harder to collect the older it gets. Collectibility within the first 60 days runs high — around 90 percent — but once an account passes 90 days, the probability of ever collecting falls dramatically, toward half or less. Time is the enemy, which is why AR is organized entirely around age."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Accounts receivable (AR) is billed-but-uncollected revenue owed by payers and patients. The central truth of AR management: money gets harder to collect the older it gets — collectibility is ~90% within 60 days but falls sharply past 90 days."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Days in AR: The Headline Number"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The single most important AR metric is Days in Accounts Receivable — the average number of days it takes to collect after billing. The calculation is straightforward: Total Accounts Receivable divided by Average Daily Charges (total charges over a period divided by the number of days in that period). The result is \"how many days of billing is currently sitting uncollected.\""
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Lower is better. The widely used benchmark is to keep Days in AR under 40 (per HFMA and MGMA norms), with leading organizations under 30. A rising Days in AR is one of the earliest warning signs that something is wrong upstream — claims are being denied, delayed, or not followed up — because all of that backs up into uncollected receivables."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Days in AR is powerful precisely because it is a summary number that reflects the health of the whole cycle. You cannot fix it directly; you fix it by fixing the things that feed it — cleaner claims, faster denial work, diligent follow-up. It is the thermometer, not the disease."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "HFMA/MGMA norm; leaders under 30 (industry)",
+          "label": "Days in AR Benchmark",
+          "value": "<40"
+        },
+        {
+          "_key": "s2",
+          "context": "AR divided by average daily charges (industry)",
+          "label": "Days in AR Formula",
+          "value": "Total AR / ADC"
+        },
+        {
+          "_key": "s3",
+          "context": "Collectibility high early (industry)",
+          "label": "Collectible Within 60 Days",
+          "value": "~90%"
+        },
+        {
+          "_key": "s4",
+          "context": "High performers keep 90+ AR under ~15% (HFMA)",
+          "label": "AR in 90+ Bucket",
+          "value": "<15%"
+        }
+      ]
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Aging Buckets: Organizing AR by Time"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because age determines collectibility, AR is organized into \"aging buckets\" — groupings of receivables by how long they have been outstanding. The standard buckets are 0-30, 31-60, 61-90, 91-120, and 120+ days, each showing the dollar amount sitting in it. The AR aging report is the back-end's primary worklist and dashboard."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The aging report instantly reveals the shape of the problem. A healthy AR profile is weighted toward the youngest buckets, with little money in 90+ days. When dollars pile up in the older buckets, it signals that claims are getting stuck and not being worked — and that revenue is sliding toward the point of no return. High performers keep less than about 15 percent of total AR in the 90+ day bucket."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Aging buckets also separate the two kinds of AR: insurance (payer) AR and patient AR. They behave differently — patient balances are generally harder and slower to collect, so a higher tolerance for older self-pay AR is normal. Reading the aging report means looking not just at totals but at where the money sits, who owes it, and which buckets are growing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3t1",
+      "_type": "code",
+      "code": [
+        {
+          "Bucket": "0-30_days",
+          "Collectibility": "Highest",
+          "Priority": "Routine monitoring"
+        },
+        {
+          "Bucket": "31-60_days",
+          "Collectibility": "Still strong",
+          "Priority": "Active follow-up begins"
+        },
+        {
+          "Bucket": "61-90_days",
+          "Collectibility": "Declining",
+          "Priority": "Aggressive follow-up"
+        },
+        {
+          "Bucket": "91-120_days",
+          "Collectibility": "Low",
+          "Priority": "Urgent; near filing/recovery limits"
+        },
+        {
+          "Bucket": "120+_days",
+          "Collectibility": "Very low",
+          "Priority": "Recovery or write-off decision"
+        }
+      ],
+      "language": "json",
+      "title": "Standard AR Aging Buckets"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Follow-Up Process"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "AR follow-up is the systematic work of tracking unpaid claims and balances, contacting payers or patients to resolve them, correcting errors, resubmitting claims, and filing appeals when needed. It is the active, hands-on chasing that turns aged receivables back into cash — and it is organized around the aging buckets."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Effective follow-up assigns staff to specific buckets — someone focused on accounts approaching 60 days, another on the 90-plus accounts — and prioritizes the worklist by both age and dollar value. The principle mirrors denial prioritization: work the highest-value and most time-sensitive accounts first, and document every payer call and response so the follow-up has a trail."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Cadence matters. Most organizations review AR reports at least weekly for operational follow-up, because catching a stuck claim at 35 days and resolving it is vastly better than discovering it at 95 days when it is half-uncollectible. The discipline is to keep accounts moving down toward resolution before they age into the low-collectibility buckets — proactive follow-up rather than reactive cleanup."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Group AR into buckets by age; separate payer and patient AR.",
+          "title": "Generate the aging report"
+        },
+        {
+          "_key": "step2",
+          "description": "Work highest-value and most time-sensitive (near-deadline, near-90-day) accounts first.",
+          "title": "Prioritize the worklist"
+        },
+        {
+          "_key": "step3",
+          "description": "Contact payer/patient, correct errors, resubmit, or appeal; document everything.",
+          "title": "Resolve the account"
+        },
+        {
+          "_key": "step4",
+          "description": "Review at least weekly, moving accounts toward resolution before they age out.",
+          "title": "Re-age and repeat"
+        }
+      ],
+      "title": "The AR Follow-Up Loop"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Speed Wins"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The throughline of AR management is that speed wins, because of the collectibility curve. An account worked in the 31-60 bucket is highly collectible; the same account left to reach 120+ days may be worth a fraction of its face value, even though nothing about the underlying claim changed. The decline is not about the claim's validity — it is purely about elapsed time."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why the youngest buckets deserve attention too, not just the old ones. Preventing a claim from aging is cheaper and more effective than rescuing it after it has aged. Strong AR management is therefore front-loaded: catch and resolve issues early, keep the aging report weighted young, and reserve heroic recovery efforts for the genuinely hard cases."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Eventually, some AR is uncollectible and must be written off — but that decision should be deliberate, based on real recovery probability, not the accidental result of neglect. Well-managed AR keeps Days in AR low, the 90+ bucket small, and write-offs intentional. What remains after payer AR is worked is the patient's portion — which is its own distinct challenge, and the subject of the final lesson in this module: patient collections."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "Collectibility falls with age regardless of whether the claim is correct — ~90% within 60 days, dropping sharply past 90 days. Letting accounts drift into older buckets destroys recoverable revenue. Work AR proactively and weekly to keep it young; do not wait until accounts are nearly uncollectible.",
+      "title": "Aged AR Loses Value Even If the Claim Is Valid"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Accounts receivable (AR) is billed-but-uncollected revenue owed by payers and patients; managing it means systematically chasing that money until collected or deliberately written off.",
+        "The central truth: collectibility declines with age — about 90% within 60 days, falling sharply once accounts pass 90 days.",
+        "Days in AR (Total AR ÷ Average Daily Charges) is the headline metric; the benchmark is under 40 (leaders under 30), and a rising figure signals upstream problems.",
+        "AR is organized into aging buckets (0-30, 31-60, 61-90, 91-120, 120+) shown on the AR aging report — the back-end's primary worklist.",
+        "A healthy AR profile is weighted toward young buckets; high performers keep less than ~15% of AR in the 90+ day bucket, and separate payer AR from (slower) patient AR.",
+        "AR follow-up assigns staff to buckets, prioritizes by age and dollar value, documents every contact, and is reviewed at least weekly.",
+        "Speed wins because of the collectibility curve — work accounts before they age out, keep the aging report young, and make write-offs deliberate rather than accidental."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Collectibility falls as accounts age — roughly 90% within 60 days, dropping toward half or less past 90 days — regardless of whether the underlying claim is valid. Aging buckets organize AR by time so teams can work accounts before they slide into low-collectibility ranges. The goal is to keep AR young (low Days in AR, small 90+ bucket), because elapsed time alone destroys recoverable revenue.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Because older claims are worth more money"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Because collectibility declines sharply with age — an account is ~90% collectible within 60 days but much less likely to be collected past 90 days, even if the claim is valid"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Because payers only accept claims older than 90 days"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Because aging buckets are required by HIPAA"
+        }
+      ],
+      "question": "Why does AR management organize receivables into aging buckets and prioritize working the older ones quickly?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] AR Aging Report in Medical Billing: Example, Metrics & Best Practices (MediBill RCM) — https://www.medibillrcm.com/blog/ar-aging-report-in-medical-billing/ — aging buckets (0-30 through 120+); AR aging report as worklist"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Accounts Receivable Healthcare: A Practical Guide (AMS Solutions) — https://ams-solutions.com/accounts-receivable-in-healthcare-aging-explained/ — AR definition; payer vs patient AR; aging and cash flow"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Days in Accounts Receivable (A/R) (MD Clarity) — https://www.mdclarity.com/rcm-metrics/days-in-accounts-receivable-ar — Days in AR formula (Total AR / Average Daily Charges); benchmark under 40"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] AR Aging Reduction Strategies in 30-, 60-, 90-Day Buckets (Right Medical Billing) — https://rightmedicalbilling.com/accounts-receivable-ar-aging-reduction-strategies-that-work-in-30-60-and-90-day-buckets — bucket-based follow-up; staff assignment; weekly review"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] A/R Invoice Collectibility By Age (Leib Solutions) — https://www.leibsolutions.com/a-r-collectibility-by-age/ — ~90% collectible within 60 days; sharp decline past 90 days"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Best Practices for Managing Accounts Receivable in Healthcare (AAA Medical Billing) — https://aaamb.com/best-practices-for-managing-accounts-receivable-in-healthcare/ — HFMA benchmarks: AR days <40, <15% in 90+ bucket; follow-up process"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "revenue-cycle-management",
+  "order": 17,
+  "slug": {
+    "_type": "slug",
+    "current": "ar-management"
+  },
+  "title": "AR Management: Aging Buckets and Follow-Up"
+}

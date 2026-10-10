@@ -1,0 +1,54 @@
+{
+  "id": "a89abdbe-213d-4719-8a9c-de7185e1a7d2",
+  "track_id": "052c58d9-4d92-4fe6-b1b2-7f732cbf8ad3",
+  "pillar": "clinical",
+  "order": 3,
+  "slug": "care-gap-analysis",
+  "title": "Care Gap Analysis and Quality Metrics",
+  "summary": "Care gaps are evidence-based services that eligible patients haven't received — a missed colorectal cancer screening, an overdue A1C test, a lapsed influenza vaccine. Closing care gaps is central to population health quality programs and value-based contracts.",
+  "estimated_minutes": 20,
+  "objectives": [
+    {
+      "id": "obj-ph-006-1",
+      "text": "Define a care gap and explain how they're identified"
+    },
+    {
+      "id": "obj-ph-006-2",
+      "text": "Describe HEDIS measures and their role in population health"
+    },
+    {
+      "id": "obj-ph-006-3",
+      "text": "List common strategies for closing care gaps at scale"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "A **care gap** is the difference between a recommended evidence-based service and whether a patient has received it. If a 52-year-old woman with commercial insurance hasn't had a mammogram in 2 years, that's a care gap. If a diabetic patient hasn't had an A1C test in 12 months, that's a care gap.",
+      "type": "text"
+    },
+    {
+      "text": "HEDIS Measures",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "HEDIS (Healthcare Effectiveness Data and Information Set), maintained by NCQA, is the dominant quality measurement framework in the U.S. Over 90% of health plans report HEDIS measures. Key population health HEDIS measures include:\n\n- **Controlling High Blood Pressure** — % of hypertensive patients with BP < 140/90\n- **Comprehensive Diabetes Care** — A1C testing, nephropathy screening, retinal exam, BP control\n- **Colorectal Cancer Screening** — colonoscopy, FIT, stool DNA for ages 45–75\n- **Breast Cancer Screening** — mammography for women 50–74\n- **Well-Child Visits** — pediatric preventive care rates\n- **Follow-Up After Hospitalization for Mental Illness** — 7- and 30-day follow-up rates",
+      "type": "text"
+    },
+    {
+      "text": "Care Gap Closure Strategies",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "**Patient outreach.** Automated phone calls, SMS, and patient portal messages for due screenings. Digital-first outreach achieves 15–30% response rates at low cost.\n\n**Point-of-care reminders.** EHR alerts prompt clinicians when eligible patients are due for services during encounters — \"Mrs. Smith is due for colorectal cancer screening.\"\n\n**Opportunistic care.** Closing multiple gaps during a single visit — a patient coming in for a follow-up can get an influenza vaccine and depression screening at the same time.\n\n**Community health workers.** CHWs can conduct in-home screenings, accompany patients to appointments, and address barriers to care like transportation or cost.\n\n**Panel management.** Dedicated staff (care coordinators, panel managers) work the care gap list proactively — reaching out to patients before they experience a health event.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:59.363365+00:00",
+  "updated_at": "2026-06-01T17:46:36.503276+00:00",
+  "sanity_slug": "care-gap-analysis"
+}

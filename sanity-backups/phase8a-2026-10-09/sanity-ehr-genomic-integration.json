@@ -1,0 +1,505 @@
+{
+  "_createdAt": "2026-06-02T04:06:32Z",
+  "_id": "ehr-genomic-integration",
+  "_rev": "5fFlS5aMKSDl9X7B6Uxm8H",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-02T04:06:32Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Last Mile of Clinical Genomics"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A genomic result is worthless if it never reaches the clinician at the moment a decision is made. The previous lesson covered the standards that represent genomic data; this lesson covers the \"last mile\" — getting that data into the electronic health record (EHR) and turning it into clinical decision support (CDS) that actually changes care. This is where genomics either becomes useful at the point of care or quietly fails."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The problem is concrete and common. A patient's pharmacogenomic test shows they are a CYP2C19 poor metabolizer (from the pharmacogenomics lesson) — but two years later a different physician prescribes clopidogrel, unaware of the result buried in a PDF somewhere in the chart. The genomic information existed; it simply was not available, in a usable form, at the moment it mattered. Solving that is the work of EHR genomic integration and CDS."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is genomics' version of the integration and decision-support themes from across the HTR curriculum, and it is genuinely hard — because genomic data is unlike any other data the EHR was built to handle. Getting it right is what separates genomics-on-paper from genomics-that-improves-care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "EHR genomic integration is the \"last mile\" — getting genomic results into the record in a usable form and turning them into clinical decision support that reaches the clinician at the moment of decision. Without it, genomic information exists but never changes care."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Genomic Data Breaks the EHR"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "EHRs were designed for lab values, notes, and medication lists — not for genomes. Genomic data has an awkward combination of properties: it is very large (like medical images) and very granular (like lab data) at the same time. That combination is exactly what makes it hard to store, retrieve, and analyze rapidly within systems built for simpler data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The traditional workaround has been to store a genomic result as a PDF report — a static document attached to the chart. This is the core problem: a PDF is human-readable but not computable. The data has no granularity, so it cannot drive decision support, cannot be reinterpreted later, and cannot be reused for any purpose beyond the original report. A CYP2C19 result locked in a PDF cannot trigger an alert when a relevant drug is ordered."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The solution is to store genomic data as discrete, structured data rather than a flat document. Modern EHRs are building genomic modules for this — for example, Epic's Genomic Module introduced a variant (\"VAR\") database to store SNPs, indels, and structural variants in computable form. Discrete storage is the precondition for everything useful: only computable genomic data can drive CDS, be reinterpreted as knowledge evolves, and be reused across a patient's care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "PDF Report (the old way)",
+        "points": [
+          "Human-readable static document",
+          "No granularity / not computable",
+          "Cannot drive decision support",
+          "Cannot be reinterpreted or reused"
+        ]
+      },
+      "right": {
+        "label": "Discrete Structured Data",
+        "points": [
+          "Computable, queryable variant data",
+          "Stored in a genomic module (e.g., Epic VAR)",
+          "Can trigger CDS alerts",
+          "Can be reinterpreted and reused over time"
+        ]
+      },
+      "title": "PDF Report vs. Discrete Genomic Data"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Genomic Clinical Decision Support"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Once genomic data is discrete and computable, it can power clinical decision support — automated guidance delivered to the clinician at the point of care. The flagship use case is pharmacogenomic CDS: when a clinician orders a medication, the system checks the patient's relevant genomic data and, if there is a relevant gene-drug interaction, returns a recommendation (the CPIC guidance from the pharmacogenomics lesson) right then and there."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The technical enablers are FHIR (the genomics standard from the previous lesson) and CDS Hooks — a standard that lets the EHR call out to an external decision-support service at specific workflow moments (like placing a medication order) and display the returned guidance. A pharmacogenomic CDS service, triggered by the medication order, looks up the patient's genetic data and returns the recommendation to the ordering clinician in real time."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is the payoff: the CYP2C19 poor-metabolizer result no longer sits uselessly in a PDF — it actively fires an alert the moment clopidogrel is ordered, prompting the clinician to consider an alternative. Real implementations show the scale: one health system built nearly 200 pharmacogenomic CDS alerts covering dozens of medications. Genomic CDS is how the genotype actually changes the prescription."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Patient's pharmacogenomic results live as computable data in the EHR/genomic module.",
+          "title": "Store discrete genomic data"
+        },
+        {
+          "_key": "step2",
+          "description": "A medication order is a CDS Hooks trigger point.",
+          "title": "Clinician orders a drug"
+        },
+        {
+          "_key": "step3",
+          "description": "A FHIR/CDS Hooks service looks up relevant gene-drug interactions.",
+          "title": "Service checks genetics"
+        },
+        {
+          "_key": "step4",
+          "description": "CPIC-based guidance (e.g., \"use an alternative\") is shown to the ordering clinician in real time.",
+          "title": "Recommendation delivered"
+        }
+      ],
+      "title": "How Pharmacogenomic CDS Works"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Hard Problems: Reinterpretation and Alert Fatigue"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Genomic integration carries two distinctive challenges that ordinary lab data does not. The first is reinterpretation over time. Unlike a glucose value, which is fixed, a genomic variant's meaning can change as knowledge evolves — a variant of uncertain significance (VUS) may later be reclassified as pathogenic or benign. This raises a thorny question: when a variant is reinterpreted, who is responsible for going back to the patient? It has real liability implications for the lab and the ordering clinician, and the EHR must somehow support re-querying stored variants against updated knowledge — something it was never designed to do."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The second is alert fatigue — the same risk from the clinical decision support literature. If genomic CDS fires too many alerts, or low-value ones, clinicians start ignoring them all, including the important ones. Poorly designed CDS is not just ineffective but potentially harmful. Genomic alerts must be carefully curated, high-value, and well-timed, or they become noise that gets clicked through."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "These challenges mean genomic integration is not a one-time technical build but an ongoing clinical and governance discipline: deciding which alerts are worthwhile, maintaining them as guidelines change, managing the reinterpretation of stored variants, and handling the liability and re-contact questions. The technology (discrete storage, FHIR, CDS Hooks) is necessary but not sufficient — it must be paired with thoughtful clinical governance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "Storing genomic data as a static PDF report means it cannot drive decision support, be reinterpreted as knowledge changes, or be reused — so a clinically critical result (like a pharmacogenomic flag) silently fails to surface when it matters. Discrete, computable storage plus well-curated CDS is what makes genomic data actually usable; alert fatigue and the need for variant reinterpretation are the ongoing challenges to manage.",
+      "title": "A Genomic Result in a PDF Is Effectively Invisible"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Genomics as a Lifelong, Reusable Resource"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The deepest implication of doing genomic integration well is that genomic data, unlike most clinical data, is a lifelong, reusable resource. A person's germline genome does not change, so a result captured once — properly, as discrete data — can inform decisions for the rest of their life: this year's pharmacogenomic prescribing, next decade's cancer-risk question, a future drug not yet invented. This is the case for storing genomic data computably rather than as a one-time report."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This reusability is also why preemptive pharmacogenomic testing (from the pharmacogenomics lesson) only pays off with good EHR integration: test once, store the results discretely, and let CDS consult them automatically across a lifetime of prescribing. Without the integration, preemptive testing produces a report no one remembers to check. The integration is what unlocks the value of the test."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The honest state of the field is that EHR genomic integration is improving but still imperfect — genomic data and EHRs are, as one review put it, \"not yet a perfect match.\" Discrete genomic modules, FHIR Genomics, and CDS Hooks are maturing, but reinterpretation, alert governance, and standardization across labs remain works in progress. For anyone in clinical genomics, the takeaway is that delivering genomic medicine at scale depends as much on this informatics last mile as on the science — and that getting the data into a computable, decision-support-ready, lifelong form is the goal. The next lessons turn from the individual clinical record to population-scale genomic research in biobanks."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "EHR genomic integration is the \"last mile\" — getting genomic results into the record usably and into decision support at the point of care, or the information never changes care.",
+        "Genomic data breaks the EHR because it is simultaneously very large (like images) and very granular (like labs), unlike the data EHRs were designed for.",
+        "Storing results as static PDF reports is the core problem: PDFs are not computable, so they cannot drive CDS, be reinterpreted, or be reused; discrete structured storage (e.g., Epic's VAR database) is the fix.",
+        "Genomic clinical decision support — especially pharmacogenomic alerts triggered by medication orders via FHIR and CDS Hooks — turns a stored genotype into a real-time recommendation.",
+        "Variant reinterpretation over time is a distinctive challenge (a VUS may be reclassified), raising re-contact and liability questions the EHR was not designed to handle.",
+        "Alert fatigue is a real danger — too many or low-value genomic alerts get ignored, so CDS must be curated, high-value, and governed over time.",
+        "Because the germline genome is lifelong and unchanging, well-integrated discrete genomic data is a reusable resource — which is what makes preemptive testing pay off."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "A PDF report is a static, human-readable document with no granularity — the genomic data inside it is not computable. So a CYP2C19 poor-metabolizer result locked in a PDF cannot fire an alert when clopidogrel is ordered, cannot be reinterpreted as knowledge evolves, and cannot be reused for other purposes. Discrete, structured storage (e.g., a genomic module's variant database) is required so the data can drive CDS via FHIR and CDS Hooks — the difference between a result that changes care and one that sits uselessly in the chart.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "PDFs are too small to hold genomic data"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "A PDF is human-readable but not computable, so the result cannot trigger an alert when a relevant drug is ordered, cannot be reinterpreted later, and cannot be reused — it is effectively invisible to decision support"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "PDFs automatically delete after one year"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Decision support does not apply to genomics"
+        }
+      ],
+      "question": "Why is storing a patient's pharmacogenomic result as a PDF report in the EHR inadequate for clinical decision support?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Practical Challenges in Integrating Genomic Data into the EHR (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC4201621/ — genomic data large-like-images and granular-like-labs; PDF vs discrete data; reinterpretation; alert fatigue"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Integration of Pharmacogenetic Data in Epic Genomic Module Drives CDS Alerts (Frontiers in Pharmacology) — https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2024.1458095/full — Epic Genomic Module / VAR database; discrete variant storage; ~195 PGx alerts"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] A Pharmacogenomics CDS Service Based on FHIR and CDS Hooks (PubMed) — https://pubmed.ncbi.nlm.nih.gov/30605914/ — FHIR + CDS Hooks; medication-order-triggered PGx CDS"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Storing and Interpreting Genomic Information in Widely Deployed EHR Systems (Genetics in Medicine) — https://www.nature.com/articles/gim2013111 — discrete storage requirement; CDS, reinterpretation, and reuse"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Electronic Health Records and Genomic Data — Not Yet a Perfect Match (Inside Precision Medicine) — https://www.insideprecisionmedicine.com/news-and-features/electronic-health-records-and-genomic-data-not-yet-a-perfect-match/ — ongoing integration challenges; standardization across labs"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Pragmatic and Ethical Challenges of Incorporating the Genome into the EHR (Current Genetic Medicine Reports) — https://link.springer.com/article/10.1007/s40142-014-0051-9 — variant reinterpretation and liability; lifelong reusable genomic data"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "genomics-precision-medicine",
+  "order": 8,
+  "slug": {
+    "_type": "slug",
+    "current": "ehr-genomic-integration"
+  },
+  "title": "EHR Integration and Clinical Decision Support for Genomics"
+}

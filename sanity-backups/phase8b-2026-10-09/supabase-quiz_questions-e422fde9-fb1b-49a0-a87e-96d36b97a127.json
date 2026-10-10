@@ -1,0 +1,9 @@
+{
+  "id": "e422fde9-fb1b-49a0-a87e-96d36b97a127",
+  "quiz_id": "026d5f70-67df-4c42-b32e-2f7cdb895683",
+  "order": 3,
+  "question_type": "single_choice",
+  "question": "Which legal statute creates liability for upcoding, with penalties up to three times the damages per false claim?",
+  "explanation": "The False Claims Act (31 U.S.C. § 3729) creates civil liability for knowingly submitting false claims to federal programs including Medicare and Medicaid. Penalties include treble damages plus $13,000–27,000 per claim.",
+  "points": null
+}

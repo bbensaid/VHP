@@ -1,0 +1,69 @@
+{
+  "id": "415d4418-44be-4d81-82bf-7a5358b33a89",
+  "track_id": "052c58d9-4d92-4fe6-b1b2-7f732cbf8ad3",
+  "pillar": "technology",
+  "order": 1,
+  "slug": "risk-stratification-models",
+  "title": "Risk Stratification: Models and Methods",
+  "summary": "Risk stratification is the process of categorizing patients by their likelihood of future health events or costs. This lesson covers the major risk models — HCC, ACG, CDPS — and how they're used to prioritize care management interventions.",
+  "estimated_minutes": 25,
+  "objectives": [
+    {
+      "id": "obj-ph-004-1",
+      "text": "Explain what risk stratification is and why it's foundational to population health"
+    },
+    {
+      "id": "obj-ph-004-2",
+      "text": "Compare HCC, ACG, and CDPS risk adjustment models"
+    },
+    {
+      "id": "obj-ph-004-3",
+      "text": "Describe how risk scores are used to prioritize care management outreach"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Risk stratification answers a fundamental question: *Among all the patients we're responsible for, who is most likely to have a bad outcome or generate high costs — and who can benefit most from proactive intervention?* Without it, care managers are reactive rather than proactive.",
+      "type": "text"
+    },
+    {
+      "text": "The Risk Spectrum",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Populations are typically divided into risk tiers:\n\n- **Tier 1 — High risk/high complexity** (~5% of members, ~50% of costs): Multiple chronic conditions, frequent hospitalizations or ED visits, complex social needs. These patients need intensive care management.\n- **Tier 2 — Rising risk** (~15–20%): One or two chronic conditions, adherence challenges, recent acute events. These are the \"prevention target\" — intervening now prevents them from becoming Tier 1.\n- **Tier 3 — Moderate risk** (~30%): Managed conditions, lower utilization. Population health programs include wellness outreach, preventive screenings, and chronic disease education.\n- **Tier 4 — Low risk** (~50–60%): Healthy or minimal health needs. Covered by broad population wellness programs.",
+      "type": "text"
+    },
+    {
+      "text": "Major Risk Adjustment Models",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "**HCC (Hierarchical Condition Categories)** — Used by CMS for Medicare Advantage and ACOs. Assigns condition categories based on ICD-10 diagnoses from the prior year, weighted by cost. HCC scores predict expected annual Medicare spending. A score of 1.0 means average cost; 2.0 means twice average.\n\n**ACG (Adjusted Clinical Groups)** — Johns Hopkins model that uses diagnoses, age, and sex to group patients into categories based on their overall morbidity burden. ACG is widely used in commercial and Medicaid populations.\n\n**CDPS (Chronic Illness and Disability Payment System)** — Developed for Medicaid. Groups ICD codes into condition-based categories that predict Medicaid spending. Vermont's VCCI program uses CDPS-based risk scoring to identify the highest-cost 5% of Medicaid members for intensive case management.\n\n**Proprietary machine learning models** — Many PHM platforms layer in predictive models trained on local data that incorporate claims, clinical data, pharmacy fills, and SDOH to generate composite risk scores.",
+      "type": "text"
+    },
+    {
+      "body": "These terms are related but distinct. Risk *adjustment* is a payment mechanism — it modifies capitation payments to reflect the expected costs of a plan's enrolled population. Risk *stratification* is a care management tool — it ranks individuals by risk to prioritize interventions. Both use similar underlying models.",
+      "type": "callout",
+      "title": "Risk Adjustment vs. Risk Stratification",
+      "variant": "info"
+    },
+    {
+      "text": "Operationalizing Risk Scores",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Risk scores only create value when they drive action. Operationalization means:\n\n1. **Generating scores** from claims/clinical data at regular intervals (monthly or quarterly)\n2. **Surfacing scores** in care manager dashboards and EHR workflows\n3. **Triggering outreach** — high-risk patients with care gaps get care manager calls\n4. **Attribution** — assigning patients to specific care teams responsible for outreach\n5. **Tracking outcomes** — did the intervention reduce utilization or improve metrics?",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:24:58.999038+00:00",
+  "updated_at": "2026-06-01T15:20:13.480395+00:00",
+  "sanity_slug": "risk-stratification-models"
+}

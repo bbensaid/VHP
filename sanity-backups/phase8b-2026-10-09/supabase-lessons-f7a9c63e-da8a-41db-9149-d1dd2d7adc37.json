@@ -1,0 +1,63 @@
+{
+  "id": "f7a9c63e-da8a-41db-9149-d1dd2d7adc37",
+  "track_id": "c72d32a9-da2b-4b30-bc85-7e662ee2cd38",
+  "pillar": "economics",
+  "order": 1,
+  "slug": "hospital-vbp-hrrp-hacrp",
+  "title": "Hospital Value-Based Programs: VBP, HRRP, and HACRP",
+  "summary": "CMS runs three major value-based programs for hospitals under traditional Medicare: the Hospital Value-Based Purchasing Program (VBP), the Hospital Readmissions Reduction Program (HRRP), and the Hospital-Acquired Condition Reduction Program (HACRP). Together, they tie approximately 6% of DRG payments to quality performance.",
+  "estimated_minutes": 22,
+  "objectives": [
+    {
+      "id": "obj-mcare-009-1",
+      "text": "Describe how the Hospital VBP Program adjusts DRG payments based on quality"
+    },
+    {
+      "id": "obj-mcare-009-2",
+      "text": "Explain the conditions targeted by HRRP and the magnitude of potential penalties"
+    },
+    {
+      "id": "obj-mcare-009-3",
+      "text": "Identify the hospital-acquired conditions measured by HACRP"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "The Affordable Care Act of 2010 introduced three mandatory value-based purchasing programs for hospitals that participate in Medicare — creating financial consequences for quality performance rather than simply paying for volume.",
+      "type": "text"
+    },
+    {
+      "text": "Hospital Value-Based Purchasing (VBP) Program",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "VBP withholds 2% of all DRG payments and redistributes them based on hospital quality scores across four domains:\n\n1. **Clinical outcomes** — mortality rates for AMI, HF, pneumonia, COPD, CABG; PSI-90 (patient safety composite)\n2. **Safety** — healthcare-associated infections (CLABSI, CAUTI, MRSA, CDI)\n3. **Person and Community Engagement** — HCAHPS patient experience survey scores\n4. **Efficiency and Cost Reduction** — Medicare spending per beneficiary\n\nHospitals that score above average receive bonuses; those below average receive net reductions. Budget-neutral design means total dollars redistributed equal total dollars withheld.",
+      "type": "text"
+    },
+    {
+      "text": "Hospital Readmissions Reduction Program (HRRP)",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "HRRP penalizes hospitals with excess 30-day readmission rates for six conditions: **AMI, HF, pneumonia, COPD, hip/knee replacement, and CABG.** Maximum penalty is 3% of all Medicare DRG payments — a significant financial exposure for high-readmission hospitals.\n\nHRRP has been controversial. Critics argue it has worsened patient outcomes in some cases (patients diverted from admission when they needed hospitalization) and disproportionately penalizes safety-net hospitals that serve higher-risk, sicker populations. A 2022 adjustment stratifies hospitals by the proportion of dual-eligible patients they serve, partially addressing the equity critique.",
+      "type": "text"
+    },
+    {
+      "text": "Hospital-Acquired Condition Reduction Program (HACRP)",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "HACRP imposes a **1% payment reduction** on the lowest-performing quartile of hospitals for hospital-acquired conditions, including:\n\n- Central line-associated bloodstream infections (CLABSI)\n- Catheter-associated urinary tract infections (CAUTI)\n- Surgical site infections (SSI)\n- Methicillin-resistant Staphylococcus aureus (MRSA) bacteremia\n- Clostridium difficile infections (CDI)\n- Patient Safety Indicator composite (PSI-90)\n\nUnlike VBP (which sets absolute and improvement thresholds), HACRP always penalizes the bottom 25% regardless of absolute performance — creating persistent pressure even as overall rates improve.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-26T17:25:02.440177+00:00",
+  "updated_at": "2026-06-02T17:11:26.000691+00:00",
+  "sanity_slug": "hospital-vbp-hrrp-hacrp"
+}

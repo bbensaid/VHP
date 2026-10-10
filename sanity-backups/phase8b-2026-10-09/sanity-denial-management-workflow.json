@@ -1,0 +1,518 @@
+{
+  "_createdAt": "2026-06-01T12:45:48Z",
+  "_id": "denial-management-workflow",
+  "_rev": "glqH7a4yvZFQerxZdaymGr",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T12:45:48Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Knowing Why Isn't Enough"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The previous lesson explained why claims are denied. But understanding root causes does nothing for revenue unless an organization actually works the denials it receives — and, just as importantly, learns from them to prevent the next ones. That requires a structured denial management workflow: a repeatable system for handling denials, not a pile of rejected claims someone gets to eventually."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The stakes of not having one are alarming. By industry estimates, somewhere between 35 and 65 percent of denied claims are never reworked at all — not appealed, not resubmitted, just abandoned. That is earned revenue, already worked for and delivered, simply written off because no one got to it in time or at all. A weak denial workflow is one of the largest silent revenue losses in health care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "A denial workflow turns that around. As one practitioner put it bluntly: if you are not tracking denials by type, payer, date received, and appeal outcome, you do not have a denial management workflow — you have a \"hope-and-resubmit\" strategy. This lesson lays out what a real workflow looks like."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A denial management workflow is a repeatable system to work and learn from denials. Without one, 35-65% of denied claims are never reworked — earned revenue abandoned simply because no one got to it."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The IMMP Framework"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A useful structure for the workflow is the IMMP framework — Identify, Manage, Monitor, and Prevent. It captures the full lifecycle: catch the denial, work it, track the outcome, and feed the lessons back upstream to stop it recurring. The framework's power is that it links the tactical (working today's denials) to the strategic (reducing tomorrow's)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Identify means promptly catching every denial as remittances come in and categorizing each by root cause — administrative errors (missing info, authorization), clinical denials (medical necessity, coding), and technical rejections (electronic submission problems). Manage means routing each denial to the right person to correct, resubmit, or appeal it. Monitor means tracking outcomes — what was recovered, what was lost, which payers and reasons dominate."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Prevent is the part that actually shrinks the denial rate. It uses the patterns from Monitor to fix the upstream process responsible — registration training, authorization workflow redesign, coding education. Without Prevent, a team is on a treadmill, working the same denials forever; with it, the denial volume itself falls over time."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Promptly catch every denial and categorize it by root cause.",
+          "title": "Identify"
+        },
+        {
+          "_key": "step2",
+          "description": "Route each denial to the right responder to correct, resubmit, or appeal.",
+          "title": "Manage"
+        },
+        {
+          "_key": "step3",
+          "description": "Track outcomes, recovery rates, and which payers/reasons dominate.",
+          "title": "Monitor"
+        },
+        {
+          "_key": "step4",
+          "description": "Feed patterns upstream to fix the process and stop recurrence.",
+          "title": "Prevent"
+        }
+      ],
+      "title": "The IMMP Denial Workflow"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Prioritization: You Can't Work Them All at Once"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Denials arrive faster than any team can work them instantly, so prioritization is the difference between recovering revenue and watching it expire. A good worklist sorts every denied claim by three factors: dollar value, days until the timely filing window closes, and the specific denial reason and its historical reversal rate."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The rules that fall out are practical. High-dollar claims generally get worked first, because the recovery is largest. But claims approaching their timely filing deadline get worked immediately regardless of dollar amount — because once that window closes, the claim becomes a hard denial with no recourse. And claims with a high historical reversal rate are prioritized over those payers rarely overturn, so effort goes where it actually pays off."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is triage. Just as an emergency department does not treat patients first-come-first-served, a denial team should not work denials in the order they arrived. The timely-filing clock is the unforgiving constraint — a high-value claim worked a day after its filing deadline is worth nothing, while the same claim worked the day before is fully recoverable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3w1",
+      "_type": "warningBlock",
+      "message": "High-dollar denials usually get worked first — but a claim nearing its timely filing deadline must be worked immediately regardless of amount. Once that window closes (e.g., 90 days for some commercial plans), the denial becomes hard and unrecoverable. Let a deadline lapse and the revenue is simply gone.",
+      "title": "The Timely-Filing Clock Overrides Dollar Value"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Root-Cause Analysis and Tracking"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Monitor and Prevent steps depend on disciplined tracking. High-performing organizations track denials by type, payer, origin point in the revenue cycle, date received, and appeal disposition. This data is what turns anecdote (\"we get a lot of authorization denials\") into actionable insight (\"Payer X denied 40% of imaging claims for missing authorization in Q2\")."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "With that data, root-cause analysis pinpoints where in the cycle the problem originated, enabling targeted correction. If denials cluster at registration, the fix is registration training and verification. If they cluster in authorization, the fix is the authorization workflow. If in coding, the fix is coder education or documentation. The CARC distribution (from the previous lesson) is the diagnostic readout that drives this."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This tracking also feeds the KPIs from earlier in the course — denial rate, clean claim rate, days in AR — closing the loop between denial management and overall revenue-cycle performance. A denial workflow without tracking can recover individual claims but can never reduce the denial rate, because it has no way to know what to fix."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "A denial team's tracking shows that one commercial payer accounts for a disproportionate share of \"no authorization\" denials on advanced imaging. Root-cause analysis traces it to schedulers not checking that payer's specific authorization requirements.\nThe fix is upstream — a targeted update to the scheduling/verification workflow for that payer. Months later, that denial category has fallen sharply. That is the Prevent step working: the data identified the leak, and fixing the process stopped it at the source.",
+      "title": "Turning Tracking Into Prevention"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Automation, Speed, and the Payoff"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Denial volume has grown faster than staffing, which is why automation is increasingly central. AI and automation now handle much of the classification and triage that most denials require, rank claims by urgency and collectability, draft payer-specific appeals, and learn over time which approaches work for which payers. This makes it economical to work smaller-dollar denials that would otherwise be abandoned."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Speed is a recurring theme. Best-performing practices resolve denials within about 30 days, because every day a denial sits unworked is a day closer to a filing deadline and a day longer in AR. A workflow that moves denials quickly — automated triage, clear ownership, fast resubmission — directly protects revenue that a slow process would lose."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The payoff of a strong denial workflow is large and measurable: structured workflows combined with automation have been shown to cut accounts-receivable days substantially while recovering revenue that would otherwise vanish. The discipline is straightforward to state — catch every denial, prioritize by deadline and value, work them fast, track everything, and fix the root causes — and it converts the denial problem from a silent leak into a managed, shrinking cost. The next lesson covers what to do when working a denial means formally fighting it: the appeals process."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Earned revenue abandoned (industry estimates)",
+          "label": "Denials Never Reworked",
+          "value": "35-65%"
+        },
+        {
+          "_key": "s2",
+          "context": "Top performers resolve denials within ~30 days (industry)",
+          "label": "Best-Practice Resolution",
+          "value": "~30 days"
+        },
+        {
+          "_key": "s3",
+          "context": "Identify, Manage, Monitor, Prevent",
+          "label": "Workflow Framework",
+          "value": "IMMP"
+        },
+        {
+          "_key": "s4",
+          "context": "Timely-filing clock can override dollar value",
+          "label": "Prioritization Rule",
+          "value": "Deadline > $"
+        }
+      ]
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "A denial management workflow is a repeatable system to work and learn from denials; without one, 35-65% of denied claims are never reworked and the revenue is abandoned.",
+        "The IMMP framework structures the workflow: Identify (catch and categorize), Manage (route and work), Monitor (track outcomes), and Prevent (fix root causes upstream).",
+        "Prevent is what actually lowers the denial rate; without it, a team works the same denials forever on a treadmill.",
+        "Prioritize the worklist by dollar value, days until the timely filing deadline, and the denial's historical reversal rate.",
+        "The timely-filing clock overrides dollar value — a claim near its deadline must be worked immediately, or it becomes a hard, unrecoverable denial.",
+        "Track denials by type, payer, origin point, date, and disposition so root-cause analysis can pinpoint and fix the responsible upstream process.",
+        "Automation/AI handle triage, ranking, and appeal drafting, making small denials economical to work; best performers resolve denials within ~30 days."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "High-dollar claims are generally prioritized, but the timely-filing clock is the overriding constraint. The $800 claim must be worked immediately because if its deadline lapses it becomes a hard denial with no recourse, losing 100% of the recoverable amount. The $4,000 claim, received today, still has time. Good prioritization weighs deadline urgency, dollar value, and reversal likelihood together.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The $4,000 denial, because dollar value always wins"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The $800 denial, because once its timely filing deadline passes it becomes a hard, unrecoverable denial — the deadline overrides dollar value"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Neither — denials should be worked in the order received"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Both should be written off to save staff time"
+        }
+      ],
+      "question": "A denial team has a $4,000 denial received today and an $800 denial whose timely filing deadline is tomorrow. Which should generally be worked first, and why?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] What's Missing in Your Denial Management Workflow Process? (Medical Billers and Coders) — https://www.medicalbillersandcoders.com/article/denial-management-workflow.html — IMMP framework; categorization; routing; tracking"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Denials Triage: A Practical System to Sort, Fix, Appeal, and Prevent (Billing Dynamix) — https://billingdynamix.com/denials-management-workflow/ — prioritization by dollar value, filing deadline, and reversal rate"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Denial Management Crisis: Why 65% of Claims Are Never Reworked (TSICO) — https://tsico.com/denial-management-crisis/ — 35-65% of denied claims never reworked"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Denial Management: A Root Cause Analysis Framework (Harris CareTracker) — https://harriscaretracker.com/denial-management-a-root-cause-analysis-framework/ — categorize by origin point; targeted corrective action"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] How to Stop Claims from Expiring — Timely Filing Denials (MBW RCM) — https://www.mbwrcm.com/the-revenue-cycle-blog/timely-filing-denials-prevent-expired-claims — timely filing deadlines (Medicare 1 year, some commercial 90 days); work near-deadline claims first"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Building an Effective Denial Management Workflow (Aspect Billing Solutions) — https://www.aspectbillingsolutions.com/building-an-effective-denial-management-workflow/ — tracking, prevention, automation; ~30-day resolution best practice"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "revenue-cycle-management",
+  "order": 14,
+  "slug": {
+    "_type": "slug",
+    "current": "denial-management-workflow"
+  },
+  "title": "Building an Effective Denial Management Workflow"
+}

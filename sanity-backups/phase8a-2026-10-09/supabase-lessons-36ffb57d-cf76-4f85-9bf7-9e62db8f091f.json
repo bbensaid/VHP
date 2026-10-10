@@ -1,0 +1,90 @@
+{
+  "id": "36ffb57d-cf76-4f85-9bf7-9e62db8f091f",
+  "track_id": "0e78285d-e6f2-4f97-8ce1-207bb6a2eb0c",
+  "pillar": "equity",
+  "order": 1,
+  "slug": "newborn-screening-programs",
+  "title": "Newborn Screening: Early Identification and Treatment",
+  "summary": "The RUSP, dried blood spot testing, expanded panels, and the future of NBS with genomic sequencing.",
+  "estimated_minutes": 18,
+  "objectives": [],
+  "content_blocks": [
+    {
+      "text": "The Original Precision Medicine Program",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "text": "Newborn screening (NBS) is one of public health's greatest success stories — a systematic population-based program that identifies babies with treatable metabolic, endocrine, hemoglobin, and other disorders before symptoms appear, enabling pre-symptomatic treatment that prevents death and disability. All 50 US states mandate NBS; the federal Recommended Uniform Screening Panel (RUSP) establishes minimum standards.",
+      "type": "text"
+    },
+    {
+      "type": "key_stat",
+      "label": "US newborns screened annually",
+      "value": "~4 million",
+      "context": "NBS identifies approximately 12,500 affected infants per year across the ~35 RUSP core conditions; treatment prevents >1,000 infant deaths annually"
+    },
+    {
+      "rows": [
+        [
+          "PKU (Phenylketonuria)",
+          "PAH enzyme deficiency → phenylalanine accumulation → brain damage",
+          "Amino acid quantification by MS/MS",
+          "Phenylalanine-restricted diet; sapropterin (BH4) for responsive variants"
+        ],
+        [
+          "Congenital Hypothyroidism",
+          "Thyroid hormone deficiency → intellectual disability, growth failure",
+          "TSH immunoassay",
+          "Levothyroxine — normal development if started within 2 weeks"
+        ],
+        [
+          "Sickle Cell Disease",
+          "HbS polymerization → vaso-occlusion, hemolysis",
+          "Hemoglobin HPLC/IEF",
+          "Penicillin prophylaxis, hydroxyurea, transcranial doppler screening"
+        ],
+        [
+          "SCID (Severe Combined Immunodeficiency)",
+          "T-cell lymphopenia → fatal infections without BMT",
+          "TREC assay (T-cell excision circles)",
+          "Hematopoietic stem cell transplant before infection exposure"
+        ],
+        [
+          "Spinal Muscular Atrophy (SMA)",
+          "SMN1 deletion → motor neuron loss → respiratory failure",
+          "SMN1 copy number by PCR",
+          "Gene therapy (onasemnogene) before symptom onset achieves near-normal outcomes"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Condition",
+        "Mechanism",
+        "NBS Method",
+        "Treatment if Identified Early"
+      ]
+    },
+    {
+      "text": "Genomic NBS: The Next Frontier",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "text": "Traditional NBS uses biochemical assays (MS/MS, enzyme assays, HPLC) that detect metabolic abnormalities — not genomic variants directly. Genomic NBS pilots (BabySeq, NC NEXUS, BeginNGS) are testing whether WGS or WES at birth can identify actionable conditions beyond the current RUSP panel, including rare conditions missed by biochemical screening and pharmacogenomic variants relevant to future drug exposures.",
+      "type": "text"
+    },
+    {
+      "body": "Spinal muscular atrophy (SMA) added to the RUSP in 2018, and 50 states now screen for it. Onasemnogene abeparvovec (Zolgensma) — a $2.1M single-dose gene therapy — replaces the non-functional SMN1 gene. When given before symptom onset (days to weeks of life), >90% of treated infants achieve normal motor milestones. After symptom onset, outcomes are dramatically worse. NBS makes the difference between a normal life and severe disability.",
+      "type": "callout",
+      "title": "SMA Gene Therapy: Timing Is Everything",
+      "variant": "info"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:24.630372+00:00",
+  "updated_at": "2026-06-02T04:27:28.61209+00:00",
+  "sanity_slug": "newborn-screening-programs"
+}

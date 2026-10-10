@@ -1,0 +1,518 @@
+{
+  "_createdAt": "2026-06-01T17:50:34Z",
+  "_id": "heart-failure-hypertension-management",
+  "_rev": "cV7vBu21BPCdPK4W4upCa7",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T17:50:34Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Cardiovascular Core of Population Health"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "After diabetes, the conditions that most define chronic-disease population health are cardiovascular: hypertension and heart failure. They are connected — uncontrolled high blood pressure is a leading cause of heart failure — and together they represent a huge, costly, and highly manageable target. The same population health methods apply, but the specific programs and signals differ, which is what this lesson covers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Hypertension is almost unimaginably common. About 120 million U.S. adults — roughly 48 percent — have high blood pressure. Yet control is poor: only about 1 in 4 adults with hypertension have it controlled. Because hypertension is usually symptomless (\"the silent killer\"), patients often do not feel sick and do not prioritize it — making it a classic population health problem of reaching people who are not seeking care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Heart failure is less common but far more acute and expensive: about 6.2 million U.S. adults have it, at an estimated national cost of $30.7 billion a year. Its defining population health challenge is the hospital readmission — heart-failure patients have roughly a 25 percent 30-day readmission rate nationally, and each readmission is costly and often preventable. Hypertension is a chronic control problem; heart failure is an acute-decompensation-and-readmission problem. Both are squarely population health territory."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Hypertension (~120M U.S. adults, only ~1 in 4 controlled) is a silent chronic-control problem; heart failure (~6.2M, ~$30.7B/year, ~25% 30-day readmission) is an acute decompensation-and-readmission problem. Both are common, costly, and highly manageable."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Managing Hypertension at Scale"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because hypertension is symptomless and common, managing it is a numbers game: find everyone with it, get them on effective treatment, and keep their blood pressure controlled over time. The registry-and-care-gap machinery from earlier in this course is the engine — a hypertension registry, with gaps for undiagnosed high readings, untreated patients, and uncontrolled patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most effective hypertension programs share two features. The first is self-measured blood pressure (SMBP) monitoring — having patients measure their own pressure at home and report it, which gives far more data than occasional office readings and engages patients in their own control. The second is team-based care, especially pharmacist involvement to titrate medications between physician visits."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The results are striking. One program found that 74 percent of patients with resistant high blood pressure gained control within 12 months using a Bluetooth-enabled home monitor combined with regular pharmacist interaction. This is the population health pattern: technology (home monitoring) plus team-based care (pharmacist titration) plus data (reported readings) achieving control rates far above the dismal national average. The physician is not the bottleneck; the system is."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex1",
+      "_type": "exampleBlock",
+      "content": "In a program for patients with hard-to-control (resistant) hypertension, patients used a Bluetooth-enabled blood-pressure cuff that transmitted home readings, while a pharmacist reviewed the data and adjusted medications regularly between physician visits.\nAbout 74% of these difficult patients achieved blood-pressure control within 12 months — far above the ~25% national control rate — by combining home monitoring, team-based titration, and continuous data rather than relying on sporadic office visits.",
+      "title": "SMBP Plus Pharmacist Management"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Heart Failure Readmission Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Heart failure population health centers on a specific, high-stakes event: the hospital readmission. Heart-failure patients decompensate — fluid builds up, symptoms worsen — and end up back in the hospital, often within 30 days of a prior discharge. With a national 30-day readmission rate around 25 percent and each readmission costing many thousands of dollars, preventing readmissions is where the clinical and financial stakes concentrate."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Readmissions are also a quality-and-payment focal point: the Hospital Readmissions Reduction Program (from the Clinical Quality Measurement course) penalizes hospitals for excess heart-failure readmissions, so reducing them improves both patient outcomes and the bottom line. The key insight is that many heart-failure readmissions are preventable with timely intervention — they result from a gradual decompensation that, if caught early, can be managed at home instead of in the hospital."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two interventions dominate. Transitional care — structured follow-up in the vulnerable post-discharge window (the ADT-alert-driven outreach from the data-infrastructure lesson, medication reconciliation, an early follow-up visit) — directly attacks the readmission risk. And remote patient monitoring (RPM) catches decompensation before it becomes a crisis."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "ADT alerts notify the team the day a heart-failure patient is discharged.",
+          "title": "Catch the discharge in real time"
+        },
+        {
+          "_key": "step2",
+          "description": "Medication reconciliation and an early follow-up visit in the vulnerable window.",
+          "title": "Transitional care"
+        },
+        {
+          "_key": "step3",
+          "description": "Daily home weight/vitals to catch fluid buildup before crisis.",
+          "title": "Remote monitoring"
+        },
+        {
+          "_key": "step4",
+          "description": "Adjust medications at home instead of waiting for a readmission.",
+          "title": "Intervene early"
+        }
+      ],
+      "title": "Preventing Heart Failure Readmissions"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Remote Patient Monitoring"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Remote patient monitoring (RPM) is the signature heart-failure intervention and a powerful example of population health technology. Patients are equipped with connected devices — most importantly a scale, because a sudden weight gain signals fluid retention and impending decompensation — plus blood-pressure cuffs. Readings transmit automatically to the care team, which is alerted to abnormal values via a dashboard."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The logic is anticipation, the same theme as predictive analytics: a heart-failure patient who gains several pounds over a few days is decompensating, and a phone call to adjust their diuretic can prevent a hospitalization that is still days away. RPM converts the invisible gradual decline into a visible, actionable signal — catching the problem in the window where a cheap intervention works."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The evidence is strong. Remote monitoring programs have cut heart-failure 30-day readmission rates roughly in half — one program reported a 10 percent readmission rate versus the ~25 percent national rate — and reduced monthly costs substantially for monitored Medicare heart-failure patients. RPM is increasingly reimbursed and increasingly standard for high-risk heart-failure populations, exactly because the math is so favorable: a modest monitoring cost prevents a very expensive readmission."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Heart-failure readmission rate without intervention (research)",
+          "label": "National HF 30-Day Readmission",
+          "value": "~25%"
+        },
+        {
+          "_key": "s2",
+          "context": "Remote monitoring roughly halves HF readmissions (industry/research)",
+          "label": "RPM Readmission Reduction",
+          "value": "~half"
+        },
+        {
+          "_key": "s3",
+          "context": "One program vs. ~25% national (RPM study)",
+          "label": "Readmission With RPM",
+          "value": "~10%"
+        },
+        {
+          "_key": "s4",
+          "context": "Sudden weight gain flags fluid retention/decompensation",
+          "label": "The Key HF Signal",
+          "value": "Weight gain"
+        }
+      ]
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Common Threads and the Bigger Picture"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Hypertension and heart failure management share the population health DNA seen throughout this course. Both rely on registries and risk stratification to find and prioritize patients; both use home monitoring and continuous data rather than sporadic office visits; both depend on team-based care (pharmacists, nurses, care managers) rather than physician visits alone; and both aim to intervene early, in the cheap window, before a costly event."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "And like diabetes, both are equity issues. Hypertension prevalence and control, and heart-failure outcomes and readmissions, are unequally distributed — worse among several racial and ethnic groups and lower-income communities, driven by access, the social determinants, and structural factors. A cardiovascular program that does not address these disparities will improve the average while leaving the gap, so equity-aware design (the focus of a later module) is essential."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The strategic point is that these chronic-disease programs are where population health delivers its clearest return: well-controlled hypertension prevents strokes, heart attacks, and heart failure downstream; prevented heart-failure readmissions save large, immediate costs. They are concrete proof that the proactive, data-driven, team-based, whole-population approach works — and they set up the next lesson, behavioral health integration, which addresses a dimension of health that profoundly affects these very conditions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "Hypertension and heart failure change continuously, but office visits are occasional snapshots. Programs that rely only on periodic visits miss the silent rise in blood pressure or the gradual fluid buildup that precedes a crisis. Continuous data — home BP monitoring, RPM weight tracking — plus team-based response is what actually achieves control and prevents readmissions.",
+      "title": "Sporadic Office Visits Cannot Control These Conditions"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Hypertension (~120M U.S. adults, ~48%) is largely symptomless and poorly controlled (only ~1 in 4), making it a classic problem of reaching people who do not feel sick.",
+        "Heart failure (~6.2M adults, ~$30.7B/year) centers on the preventable 30-day readmission, which runs ~25% nationally without intervention.",
+        "Effective hypertension management combines self-measured (home) blood pressure monitoring with team-based care, especially pharmacist medication titration.",
+        "One SMBP-plus-pharmacist program controlled ~74% of resistant-hypertension patients within 12 months, far above the national rate.",
+        "Heart-failure readmissions are largely preventable with transitional care (post-discharge follow-up, medication reconciliation) and remote patient monitoring.",
+        "Remote monitoring (especially daily weight to catch fluid retention) has roughly halved heart-failure readmissions and lowered costs, making it increasingly standard.",
+        "Both conditions rely on the population health pattern — registries, continuous home data, team-based care, early intervention — and both are equity issues requiring disparity-aware design."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "In heart failure, fluid retention precedes acute decompensation, and it shows up as a rapid weight gain over a few days. A connected scale turns that invisible early decline into a visible, actionable signal — the care team can call and adjust medications (like a diuretic) at home, preventing a hospitalization that is still days away. This anticipation is why RPM has roughly halved heart-failure readmissions.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Because weight is the only thing insurers will pay to monitor"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Because a sudden weight gain signals fluid retention and impending decompensation, letting the team intervene (e.g., adjust a diuretic) before a readmission occurs"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Because heart failure is primarily a weight-management disease"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Because scales are cheaper than blood-pressure cuffs"
+        }
+      ],
+      "question": "In a heart-failure remote patient monitoring program, why is a connected scale the single most important device?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] High Blood Pressure Facts (CDC) — https://www.cdc.gov/high-blood-pressure/data-research/facts-stats/index.html — ~120M U.S. adults with hypertension; control rates"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Estimated Hypertension Prevalence, Treatment, and Control (Million Hearts) — https://millionhearts.hhs.gov/data-reports/hypertension-prevalence.html — ~48% prevalence; only ~1 in 4 controlled"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Cost of Inpatient Heart Failure Care and 30-Day Readmissions in the US (ScienceDirect) — https://www.sciencedirect.com/science/article/abs/pii/S0167527320342686 — ~6.2M with HF; ~$30.7B; readmission counts and costs"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Remote Monitoring Program Cuts Heart Failure Readmissions in Half (AJMC) — https://www.ajmc.com/view/remote-monitoring-program-cuts-heart-failure-readmissions-in-half — RPM roughly halving HF readmissions; ~10% vs ~25%"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Remote Patient Monitoring Is Associated with Improved Outcomes in Hypertension (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC11353537/ — SMBP/RPM with pharmacist; ~74% resistant-HTN control in 12 months"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Outpatient Follow-Up Visits to Reduce 30-Day Readmissions for Heart Failure (CDC PCD) — https://www.cdc.gov/pcd/issues/2024/24_0138.htm — transitional care and post-discharge follow-up to reduce HF readmissions"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "population-health-management",
+  "order": 8,
+  "slug": {
+    "_type": "slug",
+    "current": "heart-failure-hypertension-management"
+  },
+  "title": "Heart Failure and Hypertension Programs"
+}

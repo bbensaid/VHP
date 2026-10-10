@@ -1,0 +1,502 @@
+{
+  "_createdAt": "2026-06-01T17:52:15Z",
+  "_id": "behavioral-health-integration-population",
+  "_rev": "5fFlS5aMKSDl9X7B6OFKkj",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T17:52:15Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "You Cannot Manage the Body Without the Mind"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A population health program focused only on physical disease will hit a wall, because mental and physical health are deeply intertwined. Depression makes diabetes harder to control; anxiety drives ER use; serious mental illness shortens lifespan dramatically, largely through untreated physical disease. The chronic-disease programs from the last two lessons cannot fully succeed without addressing behavioral health."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The comorbidity is the rule, not the exception. A patient with diabetes, hypertension, and depression is a common population health profile — and the depression is not a side issue. Untreated depression undermines the self-management (diet, activity, medication adherence) that diabetes and hypertension control depend on. Treating the behavioral health condition often improves the physical ones, and vice versa."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Yet behavioral health has historically been siloed — separated from medical care by different systems, providers, payment, and even buildings. Patients fall through the gap between them. Behavioral health integration is the work of closing that gap, bringing mental health care into the medical setting where most patients are actually seen. It is essential infrastructure for population health."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Mental and physical health are inseparable: untreated depression undermines chronic-disease self-management, and behavioral health has historically been siloed from medical care. Integration brings mental health care into the medical setting where patients are actually seen."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Collaborative Care Model"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The gold-standard approach to behavioral health integration is the Collaborative Care Model (CoCM), developed at the University of Washington in the 1990s. It is, by a wide margin, the most evidence-backed integration model: more than 90 randomized controlled trials, beginning with the landmark IMPACT trial published in 2002, have shown it more effective than usual care for depression, anxiety, and other conditions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "CoCM works through a defined three-role team. The primary care provider (PCP) leads overall care and prescribes. A behavioral health care manager (typically a licensed clinician) does the hands-on work — regular check-ins, brief evidence-based interventions, tracking the patient, and coordinating. And a psychiatric consultant provides expert guidance, reviewing the caseload with the care manager and advising on treatment, without needing to see every patient directly. This structure lets one psychiatrist effectively support a large population — solving the chronic shortage of psychiatric access."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Note how purely this is a population health model: it is team-based (not physician-only), it operates on a caseload/registry, the scarce specialist (psychiatrist) is leveraged across many patients via consultation, and it lives inside primary care where patients already are. CoCM is population health applied to mental health."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Leads care, prescribes, and integrates behavioral and physical health.",
+          "title": "Primary care provider"
+        },
+        {
+          "_key": "step2",
+          "description": "Regular check-ins, brief interventions, tracking, coordination — the hands-on role.",
+          "title": "Behavioral health care manager"
+        },
+        {
+          "_key": "step3",
+          "description": "Reviews the caseload with the care manager and advises, without seeing every patient.",
+          "title": "Psychiatric consultant"
+        },
+        {
+          "_key": "step4",
+          "description": "A tracked caseload so the team manages the whole population, not just walk-ins.",
+          "title": "The registry"
+        }
+      ],
+      "title": "The Collaborative Care Team"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Measurement-Based Care: Treat to Target"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A defining principle of CoCM — and a direct bridge to the quality-measurement and care-gap themes of this curriculum — is measurement-based care. Rather than treating depression by impression, CoCM uses a validated, quantitative measure to track each patient and treat toward a specific goal, just as a diabetes program treats toward an A1c target."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The standard tool for depression is the PHQ-9, a nine-item questionnaire scored 0 to 27. The care manager administers it at regular intervals, and the team treats \"to target\" — for example, aiming for a PHQ-9 score of 10 or lower, or a 50 percent reduction. If a patient is not improving on the measure, the team escalates: adjusts medication (with psychiatric-consultant input), changes the intervention, or intensifies follow-up. The number drives the action."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is profound because it brings the rigor of chronic-disease management to mental health. Just as you would not manage hypertension without measuring blood pressure, CoCM does not manage depression without measuring symptoms — and it does not accept \"no improvement\" passively. Measurement-based, treat-to-target care is a large part of why CoCM outperforms usual care: it systematically catches and acts on patients who are not getting better."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "A primary care patient screens positive for depression and is enrolled in collaborative care. The behavioral health care manager administers the PHQ-9 at baseline (score 18, moderately severe) and re-measures every few weeks.\nWhen the score has not improved after several weeks, the care manager reviews the case with the psychiatric consultant, who recommends a medication change. The team tracks the PHQ-9 down toward the target (≤10) — actively escalating rather than waiting, which is exactly why measurement-based collaborative care beats usual care.",
+      "title": "PHQ-9 Treat-to-Target in Action"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Making It Sustainable: Payment"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A model is only sustainable if it can be paid for, and a major barrier to behavioral health integration was historically the lack of reimbursement for the care-manager and consultation work that happens outside a face-to-face visit. CMS addressed this by creating specific billing codes for the Collaborative Care Model."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CoCM codes — CPT 99492 (initial month, ~70 minutes), 99493 (subsequent month), and 99494 (additional time), plus G2214 — let a practice bill for the time the behavioral health care manager and psychiatric consultant spend managing a patient in coordination with the billing provider. This created a financial pathway for the team-based, between-visit work that CoCM depends on."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This matters for population health generally: the proactive, team-based, between-visit work that defines the whole field (care management, monitoring, coordination) only scales when there is a way to pay for it. The CoCM codes are one example of payment evolving to support population health activities; chronic care management (CCM) and remote monitoring (RPM) codes are others. Where payment follows, programs become sustainable rather than grant-dependent pilots."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p4s",
+          "_type": "span",
+          "marks": [],
+          "text": "A real-world note: a single complex patient — say, with type 2 diabetes, hypertension, and depression — may be served by several of these programs at once (collaborative care for the depression, chronic care management and remote monitoring for the physical conditions), all coordinated in one care plan. Integration is what keeps that from being three disconnected efforts."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Integration Is Population Health"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Behavioral health integration is not a niche add-on to population health — it is core to it, for three reasons. First, the comorbidity: behavioral health conditions cluster with and worsen the expensive physical conditions population health targets, so ignoring them caps how much a program can achieve. Second, the cost: patients with untreated behavioral health conditions are disproportionately high utilizers, exactly the high-risk group risk stratification surfaces."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Third, the model fit: CoCM is population health in microcosm — registry-based, team-based, measurement-driven, specialist-leveraged, embedded in primary care, and increasingly payable. Everything this course teaches about managing physical chronic disease applies to behavioral health through CoCM, and the two reinforce each other when managed together."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The practical takeaway is that a serious population health program must integrate behavioral health from the start — screening for depression and anxiety as routinely as it checks blood pressure, building a collaborative care team, treating to target with validated measures, and billing the available codes to sustain it. The next module turns from disease-specific programs to the care management roles and models that deliver all of this work across conditions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "Managing physical chronic disease while ignoring co-occurring depression or anxiety caps results, because untreated behavioral health undermines self-management and drives utilization. The evidence-based fix is integration — the Collaborative Care Model with measurement-based, treat-to-target care embedded in primary care — not referring patients off to a disconnected mental health silo.",
+      "title": "Don't Treat Behavioral Health as Separate"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Mental and physical health are inseparable: untreated depression and anxiety undermine chronic-disease self-management and drive high utilization, so population health must address them.",
+        "Behavioral health was historically siloed from medical care; integration brings mental health into the primary care setting where patients are actually seen.",
+        "The Collaborative Care Model (CoCM), developed at UW with 90+ RCTs (starting with IMPACT, 2002), is the most evidence-backed integration model and beats usual care.",
+        "CoCM uses a three-role team: primary care provider, behavioral health care manager (hands-on), and psychiatric consultant (leveraged across a caseload via consultation).",
+        "Measurement-based care is central: validated tools like the PHQ-9 track patients and the team treats \"to target\" (e.g., PHQ-9 ≤10), escalating when patients don't improve.",
+        "CMS billing codes (99492/99493/99494, G2214) reimburse the team-based, between-visit CoCM work, making integration financially sustainable.",
+        "CoCM is population health in microcosm — registry-based, team-based, measurement-driven, specialist-leveraged, embedded in primary care — and is core to, not separate from, population health."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "In CoCM, the psychiatric consultant works through the team rather than seeing every patient directly: they review the tracked caseload with the behavioral health care manager and advise on treatment, while the care manager and primary care provider deliver the day-to-day care. This caseload-consultation structure lets one psychiatrist effectively support a large population, addressing the chronic shortage of psychiatric access — a population health solution to a specialist-scarcity problem.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Every patient is seen directly by a psychiatrist"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "A psychiatric consultant reviews the caseload with a behavioral health care manager and advises on treatment without needing to see every patient, while the care manager and PCP deliver the care"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "It eliminates the need for any mental health specialist"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "It refers all patients to a separate behavioral health clinic"
+        }
+      ],
+      "question": "What makes the Collaborative Care Model (CoCM) able to extend scarce psychiatric expertise across a large population?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Evidence Base for Collaborative Care (CoCM) (UW AIMS Center) — https://aims.uw.edu/evidence-base-for-cocm/ — CoCM developed at UW; 90+ RCTs; IMPACT trial (2002); more effective than usual care"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Learn About the Collaborative Care Model (American Psychiatric Association) — https://www.psychiatry.org/psychiatrists/practice/professional-interests/collaborative-care/learn — three-role team; measurement-based treat-to-target (PHQ-9 ≤10)"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] The Collaborative Care Model (CoCM) (Meadows Mental Health Policy Institute) — https://mmhpi.org/cocm/ — team structure; caseload/registry; psychiatric consultant leverage"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Behavioral Health Integration Services (CMS MLN) — https://www.cms.gov/files/document/mln909432-behavioral-health-integration-services.pdf — CoCM billing codes 99492/99493/99494 and G2214"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] CPT 99492: Psychiatric Collaborative Care (Behave Health) — https://behavehealth.com/99492.html — 99492 covers the first ~70 minutes of CoCM; care manager + psychiatric consultant + billing provider"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Behavioral Health Integration in Primary Care: 2026 Billing Guide (Nsight Health) — https://blog.nsightcare.com/blog-/behavioral-health-integration-primary-care-guide — medical-behavioral comorbidity; combining CoCM with CCM/RPM in one care plan"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "population-health-management",
+  "order": 9,
+  "slug": {
+    "_type": "slug",
+    "current": "behavioral-health-integration-population"
+  },
+  "title": "Behavioral Health Integration in Population Programs"
+}

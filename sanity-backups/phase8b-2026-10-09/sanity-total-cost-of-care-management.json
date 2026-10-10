@@ -1,0 +1,518 @@
+{
+  "_createdAt": "2026-06-01T18:15:20Z",
+  "_id": "total-cost-of-care-management",
+  "_rev": "5fFlS5aMKSDl9X7B6OPdsp",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T18:15:20Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Number an ACO Lives or Dies By"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The previous lesson showed that an ACO earns savings by keeping spending below a benchmark. This lesson is about the spending itself: total cost of care (TCOC), the single number that determines whether a value-based organization succeeds or fails financially. If population health is the method and the ACO is the contract, TCOC is the scoreboard."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Total cost of care is a holistic view of all healthcare spending for an entire population over a period — inpatient, outpatient, professional, pharmacy, and ancillary services, everything. It is typically expressed as a risk-adjusted per-member-per-month (PMPM) figure, so populations of different sizes and health profiles can be compared fairly. The HealthPartners TCOC framework is a widely used standard for measuring it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The discipline of managing TCOC is different from managing a single disease or a single patient. It requires zooming out to the whole population's spending, finding where the money actually goes, and pulling the levers that reduce avoidable cost without harming care. This lesson covers where the cost concentrates and how to manage it down."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Total cost of care (TCOC) is all healthcare spending for a population over a period — inpatient, outpatient, professional, pharmacy, ancillary — usually expressed as a risk-adjusted per-member-per-month (PMPM) figure. It is the scoreboard for value-based success."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "PMPM and Risk Adjustment"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The standard unit of TCOC is per member per month (PMPM): total healthcare spending divided by the number of member-months in the population. PMPM normalizes cost to a comparable per-person, per-month figure, which is how value-based contracts, budgets, and benchmarks are expressed. A population's PMPM is the headline number leaders watch."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "But raw PMPM is misleading without risk adjustment, because populations differ in how sick they are. A practice serving older, sicker patients will have a higher PMPM than one serving young, healthy patients — not because it is wasteful, but because its patients are genuinely more costly. Risk adjustment (the HCC/RAF methods from the risk-stratification lesson) corrects for this, so a risk-adjusted PMPM reflects efficiency rather than just patient mix."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This connects directly to the equity and risk-adjustment debates elsewhere in the curriculum: how you risk-adjust shapes whether comparisons are fair, and poorly done risk adjustment can either penalize those serving the sickest or mask real inefficiency. For TCOC management, the practical point is that you manage the risk-adjusted number — comparing your population's cost to what it \"should\" be given its risk, then attacking the gap."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Inpatient, outpatient, professional, pharmacy, and ancillary for the whole population.",
+          "title": "Sum all spending"
+        },
+        {
+          "_key": "step2",
+          "description": "Total cost divided by member-months = per-member-per-month figure.",
+          "title": "Divide to PMPM"
+        },
+        {
+          "_key": "step3",
+          "description": "Correct for the population's health profile so comparisons reflect efficiency, not patient mix.",
+          "title": "Risk-adjust"
+        },
+        {
+          "_key": "step4",
+          "description": "Measure the risk-adjusted PMPM against the target and attack the gap.",
+          "title": "Compare to benchmark"
+        }
+      ],
+      "title": "How TCOC Is Measured"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Where the Money Actually Goes"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Managing TCOC starts with knowing where cost concentrates — and it concentrates dramatically, echoing the risk-stratification lesson. High-cost claimants (HiCCs) are a tiny fraction of the population but a huge share of spend: patients with $100,000+ in annual claims are under 1 percent of claimants but nearly 30 percent of total medical and pharmacy expense, and the very highest-cost claimants (over $250,000/year) are around 0.16 percent of the insured population yet about 9 percent of all healthcare costs."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A second concentrated and fast-growing driver is specialty pharmacy. Specialty drugs are only about 2 percent of prescriptions but often drive 50 percent or more of total pharmacy spend. A small number of patients on high-cost specialty and infused medications can dominate a population's pharmacy budget, and this spend is growing rapidly — making pharmacy management a central TCOC concern, not an afterthought."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "A third driver is avoidable acute utilization, especially emergency department visits. An estimated 18 million avoidable ED visits occur each year, and treating the same problem in the ED is roughly 3 to 10 times more expensive than in urgent care, primary care, or telehealth. Each prevented avoidable ED visit can save on the order of $1,500 to $3,000. Knowing this map — high-cost claimants, specialty pharmacy, avoidable acute care — tells you exactly where to aim TCOC management."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "$100K+ claimants are <1% of people but ~30% of spend (industry)",
+          "label": "High-Cost Claimants",
+          "value": "<1% / ~30%"
+        },
+        {
+          "_key": "s2",
+          "context": "~2% of prescriptions, often 50%+ of pharmacy spend (industry)",
+          "label": "Specialty Pharmacy",
+          "value": "~2% / 50%+"
+        },
+        {
+          "_key": "s3",
+          "context": "ED is ~3-10x costlier than alternative sites (industry)",
+          "label": "Avoidable ED Visits/Year",
+          "value": "~18M"
+        },
+        {
+          "_key": "s4",
+          "context": "Direct cost avoided (industry)",
+          "label": "Saved Per Prevented ED Visit",
+          "value": "$1.5-3K"
+        }
+      ]
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Levers to Pull"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "With the cost map in hand, TCOC management deploys specific levers at each concentration. For high-cost claimants, the lever is intensive care management — the population health toolkit aimed at the highest tier of the pyramid, preventing the complications and acute events that drive their cost (often combined with case-by-case review of these expensive patients)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "For specialty pharmacy, the levers are pharmacy-specific: prior authorization and step therapy to ensure appropriate use, biosimilar adoption (lower-cost versions of biologic drugs), rebate negotiation, and especially site-of-care steerage. Site-of-care steerage means directing where a patient receives an expensive infusion — a hospital outpatient setting can cost dramatically more than a physician's office or the patient's home for the identical drug. Eliminating site-of-care price differentials for specialty drugs can save in the range of 4 to 36 percent depending on the medication."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For avoidable acute utilization, the levers are the prevention and access strategies from across this course: strong primary care and same-day access so patients do not default to the ED, care management and chronic-disease programs to prevent the crises that lead to admissions, transitional care to prevent readmissions, and patient education on appropriate care settings. The throughline is that almost every TCOC lever is a population health activity from an earlier lesson, now aimed explicitly at the dollars."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "A patient needs a regular high-cost infused medication. Administered in a hospital outpatient department, it might cost several times more than the identical drug given in a physician's office or at home.\nA TCOC program identifies these patients and works with the PBM/medical vendor to steer the infusions to the lower-cost site — saving anywhere from a few percent to a third of the cost per the EBRI estimate, with no change in the actual treatment the patient receives. Same drug, same dose, lower total cost of care.",
+      "title": "Site-of-Care Steerage for an Infusion"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Managing Cost Without Harming Care"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The defining discipline of TCOC management is reducing cost without reducing necessary care — and the distinction is everything. The legitimate target is avoidable, low-value spending: the preventable admission, the duplicate test, the ED visit that should have been a primary care visit, the specialty drug given in a needlessly expensive setting. Cutting these improves value. Cutting necessary care to hit a number is both unethical and, in a value-based contract with a quality gate, financially self-defeating."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is why TCOC is always managed alongside quality. An ACO that lowers its PMPM by skimping on care will fail its quality measures and forfeit savings (and harm patients). The right framing is efficiency: deliver the same or better outcomes at lower cost by eliminating waste, not by withholding value. Risk adjustment and quality gates are the guardrails that keep TCOC management honest."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "TCOC ties the financial story of this course together. Population health's clinical activities — risk stratification, care management, chronic-disease programs, prevention — all ultimately express themselves in this one risk-adjusted PMPM number. Master where cost concentrates and which levers move it without harming care, and you have the financial discipline that makes value-based population health sustainable. The final module turns to ensuring all of this reaches everyone equitably, and to measuring whether it actually works."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5w1",
+      "_type": "warningBlock",
+      "message": "The only legitimate way to reduce total cost of care is to eliminate avoidable, low-value spending — preventable admissions, duplicate tests, misplaced sites of care — never necessary care. In a value-based contract, skimping on care fails the quality gate and forfeits savings anyway. Risk adjustment and quality measures are the guardrails that keep TCOC management honest.",
+      "title": "Lower Cost by Cutting Waste, Not Care"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Total cost of care (TCOC) is all spending for a population over a period (inpatient, outpatient, professional, pharmacy, ancillary), usually a risk-adjusted per-member-per-month (PMPM) figure.",
+        "PMPM normalizes cost per person per month; risk adjustment corrects for the population's health profile so the number reflects efficiency, not just patient mix.",
+        "Cost concentrates: high-cost claimants ($100K+) are <1% of people but ~30% of spend; the highest (>$250K) are ~0.16% but ~9% of all cost.",
+        "Specialty pharmacy is ~2% of prescriptions but often 50%+ of pharmacy spend, and avoidable ED visits (~18M/year, 3-10x costlier than alternatives) are major drivers.",
+        "Levers: intensive care management for high-cost claimants; prior auth, step therapy, biosimilars, rebates, and site-of-care steerage for specialty pharmacy; prevention and access for avoidable acute care.",
+        "Site-of-care steerage (e.g., moving infusions to lower-cost settings) can save ~4-36% on specialty drugs with no change to treatment.",
+        "TCOC must be lowered by cutting avoidable waste, never necessary care; risk adjustment and quality gates keep it honest, and almost every lever is a population health activity aimed at the dollars."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "TCOC must be reduced by cutting avoidable, low-value spending — not necessary care. Cutting necessary care harms patients and, in a value-based contract with a quality gate, fails quality measures and forfeits savings anyway. Legitimate levers target waste: intensive care management for high-cost claimants, site-of-care steerage for specialty drugs, and prevention/access strategies for avoidable ED and inpatient use. Risk adjustment and quality gates are the guardrails that keep cost management honest.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Reduce the PMPM by limiting necessary care and tests for all patients"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Eliminate avoidable, low-value spending — preventable admissions, duplicate tests, misplaced sites of care — while meeting quality measures"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "Stop risk-adjusting so the number looks better"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Avoid managing high-cost claimants since they are few"
+        }
+      ],
+      "question": "A value-based organization wants to lower its total cost of care. Which approach is legitimate and sustainable?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Total Cost of Care and Resource Use Technical Guidelines (HealthPartners) — https://www.healthpartners.com/content/dam/corporate/tcoc/tcoc-technical-implementation-guidelines.pdf — TCOC definition; risk-adjusted PMPM; all-services scope"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Per Member Per Month (PMPM) (MD Clarity) — https://www.mdclarity.com/glossary/per-member-per-month-pmpm — PMPM definition and calculation"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Practical Approaches to Manage High-Cost Claimants (Baldwin) — https://us.bbrown.com/blog/practical-approaches-for-employers-to-manage-high-cost-claimants-in-health-plans — high-cost claimant concentration (<1% / ~30%; >$250K ~0.16% / ~9%)"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Specialty Prescription Drugs: Advanced Cost Containment Strategies (Roundstone) — https://roundstoneinsurance.com/blog/specialty-prescription-drugs/ — specialty ~2% of scripts / 50%+ of pharmacy spend; cost levers"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Specialty Pharmacy Benefits & Total Cost of Care / Site of Care (Anthem; EBRI) — https://www.ebri.org/content/full/unlocking-health-benefits--where-employer-high-cost-spending-often-goes — site-of-care steerage savings ~4-36%"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Reducing Avoidable Emergency Department Utilization in Value-Based Care (Illustra Health) — https://illustra.health/blog/reducing-avoidable-emergency-department-utilization-in-value-based-care/ — ~18M avoidable ED visits; ED 3-10x costlier; ~$1,500-3,000 saved per prevented visit"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "population-health-management",
+  "order": 13,
+  "slug": {
+    "_type": "slug",
+    "current": "total-cost-of-care-management"
+  },
+  "title": "Managing Total Cost of Care"
+}

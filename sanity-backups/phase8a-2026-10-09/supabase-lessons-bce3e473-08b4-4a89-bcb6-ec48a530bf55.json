@@ -1,0 +1,88 @@
+{
+  "id": "bce3e473-08b4-4a89-bcb6-ec48a530bf55",
+  "track_id": "a40f98c2-16bf-4d9e-accd-49b18214e5d5",
+  "pillar": "policy",
+  "order": 1,
+  "slug": "gina-genetic-privacy",
+  "title": "GINA, Genetic Privacy, and Legal Protections",
+  "summary": "GINA, state laws, HIPAA applicability, and the remaining gaps in genetic discrimination protection.",
+  "estimated_minutes": 18,
+  "objectives": [],
+  "content_blocks": [
+    {
+      "text": "The Legal Landscape of Genetic Privacy",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "text": "Fear of genetic discrimination is a primary barrier to genetic testing uptake — studies show 40–50% of at-risk individuals decline recommended testing due to insurance or employment discrimination fears. The Genetic Information Nondiscrimination Act (GINA), enacted in 2008, provides federal protections but has critical gaps that patients and providers must understand.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "GINA Title I",
+          "Health insurance",
+          "Prohibits use of genetic information in premiums, coverage, or underwriting; no 'pre-existing condition' based on genotype",
+          "Does NOT cover life, disability, or long-term care insurance"
+        ],
+        [
+          "GINA Title II",
+          "Employment",
+          "Prohibits employers (15+ employees) from using genetic information in hiring, firing, compensation",
+          "Does NOT cover military, Indian tribes, small employers (<15)"
+        ],
+        [
+          "ADA",
+          "Disability",
+          "Covers manifested conditions — protects someone WITH Lynch syndrome cancer, not the gene carrier",
+          "Asymptomatic carriers generally not protected"
+        ],
+        [
+          "HIPAA Privacy Rule",
+          "Protected health information",
+          "Genetic information is PHI; limits disclosure; minimum necessary standard",
+          "Applies to covered entities — DTC companies have different rules"
+        ],
+        [
+          "State Laws",
+          "Varies by state",
+          "Many states extend GINA to life/disability insurance; some add stronger employment protections",
+          "Patchwork; patients must know their state law"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Law",
+        "Scope",
+        "Coverage",
+        "Gaps"
+      ]
+    },
+    {
+      "text": "Critical GINA Gaps: Life and Disability Insurance",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "text": "GINA's most significant gap: life insurance, disability insurance, and long-term care insurance are NOT covered. An insurer can legally ask about genetic test results and use them in underwriting decisions. A BRCA1 carrier who has not developed cancer can be denied life insurance or charged prohibitive premiums. This has a chilling effect on genetic testing uptake, particularly in younger adults considering hereditary cancer panels.",
+      "type": "text"
+    },
+    {
+      "body": "GINA protects against health insurance discrimination based on genetic information held by healthcare providers and insurers. It does NOT directly regulate DTC genomics companies. 23andMe's terms of service allow data sharing with third parties. Patients who share DTC results with healthcare providers create HIPAA-protected records — but the original DTC data remains governed by the company's privacy policy, not GINA.",
+      "type": "callout",
+      "title": "DTC Genomics and GINA: A Misunderstood Boundary",
+      "variant": "warning"
+    },
+    {
+      "text": "Genomic data also raises concerns beyond discrimination: re-identification risk (genome sequences are inherently identifying), law enforcement access (multiple cases where forensic genealogy identified suspects via relative DNA in consumer databases), and return of incidental findings in research contexts. The Presidential Commission for the Study of Bioethical Issues (2012) and ASHG have published frameworks for responsible genomic data stewardship.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:23.843507+00:00",
+  "updated_at": "2026-06-02T04:13:37.934188+00:00",
+  "sanity_slug": "gina-genetic-privacy"
+}

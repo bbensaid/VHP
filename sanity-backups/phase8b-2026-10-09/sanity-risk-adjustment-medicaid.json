@@ -1,0 +1,465 @@
+{
+  "_createdAt": "2026-05-31T18:03:26Z",
+  "_id": "risk-adjustment-medicaid",
+  "_rev": "rL4Cn5Sfo5Z8rzPmEGxGO6",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T18:03:26Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Problem That Risk Adjustment Solves"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The previous lesson showed how states set capitation rates and organize them into rate cells by age, gender, eligibility, and region. But those broad cells leave a dangerous gap. Within the same cell — say, adult expansion enrollees in one region — one plan might enroll relatively healthy members while another enrolls people with diabetes, serious mental illness, and disabilities. If both plans receive the same capitation, the plan with sicker members is badly underpaid and the plan with healthier members is overpaid. Worse, every plan now has a powerful incentive to attract the healthy and avoid the sick. This is the cherry-picking problem, and risk adjustment is the tool built to solve it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk adjustment modifies the capitation payment to each plan based on the measured health status of the members it actually enrolls. A plan that enrolls sicker, more expensive members receives more; a plan that enrolls healthier, cheaper members receives less. The goal, in the words of the field, is to align expected revenues with expected costs so that both high- and low-cost enrollees are attractive to plans. When risk adjustment works, a plan no longer profits by avoiding sick people — it is paid fairly to care for them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This makes risk adjustment one of the most important safeguards in all of Medicaid managed care. It directly attacks the central risk of capitation — that plans will select healthy members and shun expensive ones — by changing the economics so that caring for the sick is financially viable. Understanding how it works is essential to understanding how managed care can serve vulnerable, high-need populations at all."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: Risk adjustment modifies capitation payments based on the measured health status of each plan’s enrolled members — paying more for sicker members and less for healthier ones — to align expected revenue with expected cost and remove the incentive to cherry-pick healthy enrollees."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Of the 38 Medicaid programs that risk-adjust MCO payments, 33 use the Chronic Illness and Disability Payment System (CDPS) or a related model (Institute for Medicaid Innovation)",
+          "label": "States Using CDPS",
+          "value": "33 of 38"
+        },
+        {
+          "_key": "s2",
+          "context": "CDPS uses ICD-10-CM diagnosis codes grouped into condition categories to measure each member’s illness burden (UC San Diego / Find-A-Code)",
+          "label": "How CDPS Measures Risk",
+          "value": "Diagnosis-based"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Risk Adjustment Works"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "At its core, risk adjustment assigns each member a risk score reflecting their predicted health care costs relative to the average. A member with no significant conditions might have a risk score near 1.0 (average); a member with multiple chronic illnesses might score 3.0 or higher, signaling expected costs three times the average. The plan’s overall risk score is the average across its members, and its capitation is adjusted up or down accordingly. A plan with a population risk score of 1.2 enrolls members who are 20% costlier than average and is paid more to reflect that."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "These risk scores are built from data the program already collects. Risk-adjustment models typically use diagnosis or pharmaceutical codes from claims or encounter data to measure illness burden among enrolled members. This is another reason the encounter data emphasized in the contract and oversight lessons matters so much: it is the raw material from which risk scores — and therefore payments — are calculated. Inaccurate or incomplete encounter data produces inaccurate risk scores and unfair payments."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk adjustment can be applied prospectively (using a member’s diagnoses from a prior period to set payment for the coming period) or concurrently/retrospectively (adjusting for conditions in the same period being paid). Prospective adjustment is more common and predictable, but retrospective adjustment can better reduce a plan’s worry about unexpectedly sick enrollees. Either way, the model translates clinical reality into a payment signal that follows the patient to whichever plan enrolls them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CDPS: The Workhorse Model"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The dominant risk-adjustment model in Medicaid is the Chronic Illness and Disability Payment System (CDPS), developed at the University of California, San Diego. CDPS is a diagnosis-based model: it uses ICD-10-CM diagnosis codes, grouped into categories for different diseases and conditions (such as psychiatric or cancer categories), to measure each member’s illness burden. Its adoption is striking — of the 38 Medicaid programs that risk-adjust MCO payments, 33 use CDPS or a related model, making it the de facto standard for Medicaid."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "CDPS was designed specifically for the Medicaid population, which is exactly why it dominates. Unlike models built for commercial or Medicare populations, CDPS accounts for the chronic illnesses, disabilities, and complex conditions disproportionately present among Medicaid enrollees, helping ensure more accurate funding for complex care needs. This Medicaid-specific calibration matters: a risk model that underweighted the conditions common in Medicaid would systematically underpay the plans serving the neediest members."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The model has enhanced variants that add pharmacy data. Medicaid Rx (MRx) is a pharmacy-based system that uses National Drug Code (NDC) data to infer conditions from the drugs a member takes, and CDPS+Rx combines diagnosis-based CDPS with pharmacy-based MRx for a fuller picture. Pharmacy data can capture conditions that diagnosis codes miss and can be timelier. The model is also periodically updated — the Institute for Medicaid Innovation partnered with UC San Diego to refresh the weights using national Medicaid managed care data, producing CDPS+Rx version 7 — so the payment signal stays calibrated to current clinical and cost patterns."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3steps1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Gather the diagnosis (ICD-10-CM) and pharmacy (NDC) codes for each member.",
+          "title": "Collect encounter/claims data"
+        },
+        {
+          "_key": "step2",
+          "description": "CDPS/CDPS+Rx groups codes into disease categories reflecting cost burden.",
+          "title": "Map codes to condition categories"
+        },
+        {
+          "_key": "step3",
+          "description": "Combine the member’s conditions into a risk score relative to the average (1.0).",
+          "title": "Calculate a risk score"
+        },
+        {
+          "_key": "step4",
+          "description": "Pay each plan according to the average risk score of its enrolled members.",
+          "title": "Adjust the capitation payment"
+        }
+      ],
+      "title": "From Diagnosis to Adjusted Payment"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Reallocation, Budget Neutrality, and Limits"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk adjustment is typically applied in a budget-neutral way: it does not change the total amount the state spends, but reallocates it among plans. The mechanism effectively shifts capitation payments away from plans with healthier-than-average members toward plans with sicker-than-average members, bringing each plan’s payment closer to the expected cost of the members it actually enrolls. The total pie stays the same; risk adjustment just slices it according to who is caring for whom. This is what makes it a fairness mechanism rather than a spending increase."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The better the model predicts cost, the better it works. The stronger a risk-adjustment tool’s predictive capacity, the less incentive plans have to cherry-pick healthy enrollees, because plans can trust that the system will adequately compensate them if they end up with relatively expensive members. A precise model makes sick members no less attractive than healthy ones, which is the entire point. A crude model leaves residual incentives to select, undermining the goal."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "No risk model predicts cost perfectly. Research from Medicare Advantage shows that even after risk adjustment, plans can enroll members with high risk scores but lower-than-predicted actual costs — \"overpriced\" enrollees. Risk adjustment dramatically reduces the incentive to cherry-pick, but it does not eliminate selection entirely, which is why oversight of enrollment and quality remains necessary.",
+      "title": "Risk Adjustment Is Powerful but Imperfect"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Risk Adjustment Holds the System Together"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Risk adjustment is the quiet linchpin that makes Medicaid managed care viable for vulnerable populations. Without it, the financial logic of capitation would steadily push plans to compete for the healthy and shun the sick, leaving the most expensive and most needy members — people with disabilities, serious mental illness, and complex chronic conditions — as financial liabilities no plan wants. Risk adjustment flips that logic: by paying more for sicker members, it makes those members financially viable to enroll and care for, which is a precondition for serving them at all."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "Risk adjustment is like adjusting a potluck contribution by what each guest will actually eat. If everyone paid the same flat amount, hosts would compete to invite light eaters and shun anyone with a big appetite. Instead, the organizer estimates each guest’s appetite (risk score) and pays the host accordingly, so a host who welcomes the hungriest guests is funded to feed them — and no host has a reason to turn anyone away. The total budget is the same; it is just shared out to match who is actually being fed.",
+      "concept": "How risk adjustment reallocates capitation"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson sits at the center of the rate-setting module for a reason. The previous lesson built the base capitation rate; this one refines it to match the actual health of enrolled members; and the next lesson, on medical loss ratios, ensures that whatever a plan is paid, enough of it goes to care. Together they form the financial spine of managed care: a sound rate, adjusted for risk, with a floor on how much must be spent on members. Risk adjustment is the part that makes the system fair across plans serving different populations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "For the student, the essential takeaway is that risk adjustment is what allows a capitated system to serve the sick. It is imperfect — no model captures cost perfectly, and residual selection incentives remain — but it transforms the economics enough that plans can compete on managing care well rather than on avoiding expensive people. When you see a Medicaid program risk-adjust its payments with CDPS, you are watching the mechanism that keeps the promise of managed care honest for the members who need care the most."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "Risk adjustment modifies capitation payments based on the measured health status of each plan’s enrolled members — more for sicker members, less for healthier ones — to align expected revenue with expected cost.",
+        "Its central purpose is to remove the cherry-picking incentive: by paying fairly for sick members, it makes both high- and low-cost enrollees attractive to plans.",
+        "Each member gets a risk score relative to the average (1.0); a plan’s payment is adjusted by the average risk score of its members, calculated from diagnosis and pharmacy codes in claims/encounter data.",
+        "Risk adjustment can be prospective (prior-period diagnoses set future payment) or concurrent/retrospective; prospective is more common, while retrospective can better reduce plans’ fear of unexpectedly sick enrollees.",
+        "The dominant model is the diagnosis-based Chronic Illness and Disability Payment System (CDPS) from UC San Diego — used by 33 of the 38 Medicaid programs that risk-adjust — designed specifically for the Medicaid population’s chronic and disabling conditions.",
+        "Enhanced variants add pharmacy data: MRx uses NDC drug codes, and CDPS+Rx combines diagnosis- and pharmacy-based measurement; the model is periodically updated (e.g., CDPS+Rx version 7) to stay calibrated.",
+        "Risk adjustment is typically budget-neutral, reallocating the same total spending away from healthier plans toward sicker plans rather than increasing overall cost.",
+        "It is powerful but imperfect — even after risk adjustment, plans can enroll high-scoring but lower-cost \"overpriced\" members — so it greatly reduces but does not eliminate selection, and oversight remains necessary."
+      ]
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Find-A-Code: \"What is the Medicaid Chronic Illness and Disability Payment System (CDPS)?\" — https://www.findacode.com/articles/medicaid-chronic-illness-disability-payment-system-37547.html — CDPS as a diagnosis-based (ICD-10-CM) risk-adjustment model developed at UC San Diego; CDPS+Rx adding pharmacy data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Institute for Medicaid Innovation: \"Medicaid Risk Adjustment\" (CDPS Fact Sheet) — https://medicaidinnovation.org/wp-content/uploads/2023/04/CDPS_April_Fact-Sheet_FINAL.pdf — 33 of 38 risk-adjusting Medicaid programs use CDPS; how risk-adjusted capitation works."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] PMC: \"Updating the Chronic Illness and Disability Payment System\" — https://pmc.ncbi.nlm.nih.gov/articles/PMC10871574/ — CDPS+Rx version update using national Medicaid managed care data; diagnosis and pharmacy code methodology."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Find-A-Code: \"Medicaid Payment Systems (CDPS, CDPS+Rx, MRX)\" — https://www.findacode.com/medicaid/ — MRx as a pharmacy-based (NDC) model and CDPS+Rx as the combined diagnosis-plus-pharmacy model."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Center on Budget and Policy Priorities: \"Ensuring Effective Risk Adjustment\" — https://www.cbpp.org/research/ensuring-effective-risk-adjustment — aligning expected revenue with expected cost; better prediction reduces cherry-picking; budget-neutral reallocation toward sicker plans."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] American Economic Review (Brown et al.): \"How Does Risk Selection Respond to Risk Adjustment? New Evidence from the Medicare Advantage Program\" — https://www.aeaweb.org/articles?id=10.1257%2Faer.104.10.3335 — evidence that risk adjustment is imperfect, with plans enrolling high-scoring but lower-cost (\"overpriced\") members."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicaid-managed-care-operations",
+  "order": 8,
+  "slug": {
+    "_type": "slug",
+    "current": "risk-adjustment-medicaid"
+  },
+  "title": "Risk Adjustment in Medicaid Managed Care"
+}

@@ -1,0 +1,90 @@
+{
+  "id": "d2b1dd6b-0b0e-4d92-b4a2-345963cd6e25",
+  "track_id": "2c58d470-d155-465e-8b19-d29a12e77ef0",
+  "pillar": "clinical",
+  "order": 1,
+  "slug": "medicaid-quality-measures",
+  "title": "Measuring Medicaid Quality: HEDIS, CAHPS & State Reporting",
+  "summary": "How Medicaid quality is measured and reported, the role of HEDIS measures, member experience surveys, and CMS's push toward value-based payment.",
+  "estimated_minutes": 17,
+  "objectives": [
+    {
+      "id": "obj_mq1",
+      "text": "Identify the key Medicaid quality measures and why they matter"
+    },
+    {
+      "id": "obj_mq2",
+      "text": "Explain how value-based payment is being introduced into Medicaid managed care"
+    },
+    {
+      "id": "obj_mq3",
+      "text": "Describe what CAHPS measures and how member experience data is used"
+    }
+  ],
+  "content_blocks": [
+    {
+      "body": "Medicaid serves populations with significant health complexity — high rates of chronic conditions, behavioral health needs, social determinants challenges, and limited prior access to care. Measuring quality in this context requires measures that account for acuity and capture what matters to enrollees.\n\nCMS requires states to collect and report standardized quality data through the managed care quality rules (42 CFR Part 438, including annual external quality review), the Adult and Child Core Sets (mandatory for the Child Core Set and adult behavioral health measures since 2024), and state data submissions to CMS's Transformed Medicaid Statistical Information System (T-MSIS).",
+      "type": "text",
+      "heading": "The quality measurement challenge"
+    },
+    {
+      "type": "concepts_grid",
+      "items": [
+        {
+          "body": "Childhood Immunization Status (CIS) — one of the most watched pediatric quality measures in Medicaid.",
+          "icon": "ti-vaccine",
+          "title": "Child immunizations"
+        },
+        {
+          "body": "Timely prenatal visits, postpartum follow-up at 7–84 days. Critical given Medicaid's role covering 40% of births.",
+          "icon": "ti-heart-rate-monitor",
+          "title": "Prenatal & postpartum care"
+        },
+        {
+          "body": "Follow-up after ED visit for mental illness, follow-up after hospitalization for mental illness (FUH/FUM).",
+          "icon": "ti-brain",
+          "title": "Behavioral health follow-up"
+        },
+        {
+          "body": "PDC measures for diabetes, hypertension, and cholesterol medications — linked to long-term outcomes.",
+          "icon": "ti-pill",
+          "title": "Medication adherence"
+        },
+        {
+          "body": "Consumer Assessment of Healthcare Providers and Systems — member experience surveys covering access, communication, and care coordination.",
+          "icon": "ti-users",
+          "title": "CAHPS"
+        },
+        {
+          "body": "Cervical cancer screening, colorectal cancer screening, diabetes eye exams — preventive services often underprovided to Medicaid populations.",
+          "icon": "ti-chart-line",
+          "title": "Prevention"
+        }
+      ],
+      "heading": "Key Medicaid quality measures"
+    },
+    {
+      "body": "CMS increasingly pushes states to include value-based payment (VBP) requirements in MCO contracts. Under VBP, MCOs pass some financial risk to providers — paying primary care practices based on quality and outcomes rather than pure volume.",
+      "type": "callout",
+      "heading": "Value-based payment in Medicaid managed care",
+      "variant": "info"
+    },
+    {
+      "hint": "Interview a Medicaid MCO or state quality director about the practical challenges of quality measurement — data gaps, attribution, adjusting for social determinants. Recommended: 6–8 minutes.",
+      "type": "audio_slot",
+      "label": "Quality director perspective: measuring what matters"
+    }
+  ],
+  "tags": [
+    "quality",
+    "HEDIS",
+    "CAHPS",
+    "value-based",
+    "measurement"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-25T21:56:18.47583+00:00",
+  "updated_at": "2026-10-09T14:47:46.249262+00:00",
+  "sanity_slug": "medicaid-quality-measures"
+}

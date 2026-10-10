@@ -1,0 +1,12 @@
+{
+ "file": "frontend/content/_build_transformation_leadership_course.py",
+ "claim": "tl-sustaining-change-benefits-realization fallback callout: NAO finding overstated as the missing sustain element",
+ "verdict": "MISATTRIBUTED",
+ "src": "NAO \"Digital transformation in the NHS\" (May 2020): \"not convinced that all the lessons are being applied now\" \u2014 a lessons-learning gap, not a finding that the PMI \"sustain\" element was missing; the NAO is the UK auditor, not the NHS's",
+ "pairs": [
+  [
+   "\"transformation plans never budget for \u2014 and it is the exact element the NHS's National \"\n                \"Audit Office found missing from NPfIT, concluding that lessons from the failure were not \"\n                \"being systematically captured even by the government's later digital programs.\",",
+   "\"transformation plans never budget for. A related gap followed NPfIT: in 2020 the UK's National \"\n                \"Audit Office said it was not convinced the programme's lessons were all being applied to \"\n                \"later NHS digital programmes.\","
+  ]
+ ]
+}

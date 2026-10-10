@@ -1,0 +1,92 @@
+{
+  "id": "680b805f-39f0-45d5-8ce3-a7355c8fc034",
+  "track_id": "800ba332-22c6-48f5-a688-361c0728d568",
+  "pillar": "clinical",
+  "order": 1,
+  "slug": "pharmacogenomics-drug-therapy",
+  "title": "Pharmacogenomics: Right Drug, Right Dose",
+  "summary": "How genetic variation in drug-metabolizing enzymes shapes drug response and prevents adverse events.",
+  "estimated_minutes": 22,
+  "objectives": [],
+  "content_blocks": [
+    {
+      "text": "Why the Same Drug Causes Toxicity in Some and Fails in Others",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "text": "Adverse drug reactions (ADRs) cause over 100,000 deaths and 2 million hospitalizations annually in the United States. An estimated 7% of ADRs are attributable to pharmacogenomic (PGx) variation — predictable, preventable differences in how individuals metabolize and respond to medications based on genetic variants in drug-metabolizing enzymes, transporters, and targets.",
+      "type": "text"
+    },
+    {
+      "type": "key_stat",
+      "label": "Americans carry at least one actionable PGx variant",
+      "value": "95%",
+      "context": "CPIC (Clinical Pharmacogenomics Implementation Consortium) guidelines cover >90 drug-gene pairs; PGx affects virtually every major drug class"
+    },
+    {
+      "text": "The CYP450 System",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "text": "Cytochrome P450 (CYP) enzymes in the liver metabolize approximately 75% of all clinically used drugs. Key CYP genes with well-established clinical PGx include CYP2D6 (antidepressants, antipsychotics, codeine, tamoxifen), CYP2C19 (clopidogrel, PPIs, SSRIs), CYP2C9 (warfarin, NSAIDs), and CYP3A4/5 (statins, immunosuppressants, many oncology drugs).",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Poor Metabolizer (PM)",
+          "No functional enzyme — variant alleles on both copies",
+          "Drug accumulates → toxicity; prodrugs fail (e.g., codeine → no morphine)"
+        ],
+        [
+          "Intermediate Metabolizer (IM)",
+          "Reduced enzyme activity — one functional + one non-functional allele",
+          "Elevated drug exposure; increased ADR risk"
+        ],
+        [
+          "Normal Metabolizer (NM)",
+          "Two functional alleles — standard activity",
+          "Expected drug response at standard doses"
+        ],
+        [
+          "Rapid/Ultrarapid Metabolizer (UM)",
+          "Gene duplication — markedly increased enzyme activity",
+          "Drug cleared too fast → therapeutic failure; prodrug toxicity risk"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Metabolizer Phenotype",
+        "Definition",
+        "Clinical Consequence"
+      ]
+    },
+    {
+      "text": "High-Impact PGx Examples",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "text": "Codeine and CYP2D6: Codeine is a prodrug converted to morphine by CYP2D6. Ultrarapid metabolizers (1–7% of Europeans, up to 29% of North Africans) produce dangerous morphine levels. The FDA black-boxed codeine in nursing mothers and children post-tonsillectomy. Poor metabolizers receive no analgesia. CPIC Guidelines recommend alternative opioids for both extreme phenotypes.",
+      "type": "text"
+    },
+    {
+      "body": "Clopidogrel (Plavix) is a prodrug requiring CYP2C19 activation to its active antiplatelet metabolite. CYP2C19 poor and intermediate metabolizers (20–30% of patients) have reduced activation and higher rates of stent thrombosis. The FDA added a black box warning in 2010. CPIC and ACC/AHA guidelines recommend prasugrel or ticagrelor for PCI patients who are CYP2C19 poor metabolizers.",
+      "type": "callout",
+      "title": "Clopidogrel and CYP2C19: A High-Stakes Example",
+      "variant": "warning"
+    },
+    {
+      "text": "Warfarin dosing is jointly influenced by CYP2C9 (metabolism), VKORC1 (target sensitivity), and CYP4F2 (vitamin K processing). The FDA-approved warfarin label includes PGx dosing tables. Multiple clinical decision support algorithms (Gage, International Warfarin Pharmacogenomics Consortium) incorporate these variants to predict therapeutic dose, reducing time-to-therapeutic INR.",
+      "type": "text"
+    }
+  ],
+  "tags": [],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:21.399736+00:00",
+  "updated_at": "2026-06-01T18:37:49.698803+00:00",
+  "sanity_slug": "pharmacogenomics-drug-therapy"
+}

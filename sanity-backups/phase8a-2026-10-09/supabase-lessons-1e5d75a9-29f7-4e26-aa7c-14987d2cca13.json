@@ -1,0 +1,80 @@
+{
+  "id": "1e5d75a9-29f7-4e26-aa7c-14987d2cca13",
+  "track_id": "adbe6950-6277-45b6-aa0f-e195df013212",
+  "pillar": "economics",
+  "order": 3,
+  "slug": "activity-based-costing",
+  "title": "Activity-Based Costing in Hospitals",
+  "summary": "Activity-based costing (ABC) assigns costs to services based on actual resource consumption rather than average allocations, producing more accurate cost-per-procedure data. This lesson explains how ABC works in healthcare and why it matters for value-based payment.",
+  "estimated_minutes": 25,
+  "objectives": [
+    "Explain how activity-based costing differs from traditional cost allocation methods",
+    "Describe how ABC data can guide physician practice variation reduction",
+    "Identify the data infrastructure requirements for implementing ABC in a hospital"
+  ],
+  "content_blocks": [
+    {
+      "body": "Traditional hospital costing allocates overhead using broad averages—dividing total department cost by total RVUs or patient days. This creates a 'cost smoothing' effect where high-complexity, high-resource cases appear less costly than they truly are, and simple cases appear more expensive.\n\n**Activity-Based Costing (ABC)** traces costs to activities (e.g., blood draw, wound care, radiology read, medication administration), then assigns activity costs to patients based on actual consumption. A patient who requires 12 labs, three imaging studies, and daily wound care will show a higher cost than one who requires two labs and a standard medication regimen—even if they share the same DRG.",
+      "type": "text",
+      "heading": "Why Traditional Costing Misleads"
+    },
+    {
+      "type": "concepts_grid",
+      "concepts": [
+        {
+          "term": "Cost Driver",
+          "definition": "The factor that causes a cost to be incurred—for an imaging department, it might be the number of scans performed; for pharmacy, the number of medication administrations."
+        },
+        {
+          "term": "Time-Driven ABC (TDABC)",
+          "definition": "A simplified ABC variant developed by Kaplan and Porter that uses time as the primary cost driver, making it practical for complex healthcare settings."
+        },
+        {
+          "term": "Physician Variation",
+          "definition": "Differences in resource use (labs, imaging, length of stay) between physicians treating similar patients—a key target for ABC-informed cost reduction."
+        },
+        {
+          "term": "Cost-to-Charge Ratio (CCR)",
+          "definition": "A Medicare cost report-based ratio used to estimate costs from charges; less precise than ABC but widely used in the absence of ABC infrastructure."
+        }
+      ]
+    },
+    {
+      "body": "ABC data is most powerful when used to facilitate physician-level conversations about practice variation. When two surgeons performing the same procedure show a 30% cost difference—driven by implant choice, length of stay, and lab ordering—that data creates a fact-based foundation for standardization conversations. Leading health systems like Mayo Clinic and Kaiser have used ABC to reduce cost per case by 15–25% in targeted surgical service lines.",
+      "type": "callout",
+      "title": "ABC and Physician Engagement",
+      "variant": "tip"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Cost reduction via ABC-informed standardization",
+          "value": "15–25%",
+          "context": "Health systems targeting physician variation with ABC data have achieved 15–25% cost reduction in surgical service lines"
+        },
+        {
+          "label": "Variation in cost per case (same DRG)",
+          "value": "30–50%",
+          "context": "Cost variation between physicians treating the same DRG can exceed 30–50%, often driven by implant choice and LOS"
+        },
+        {
+          "label": "Preferred ABC method in healthcare",
+          "value": "TDABC",
+          "context": "Time-Driven Activity-Based Costing is the most widely implemented ABC variant in hospitals due to its manageable data requirements"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "activity-based costing",
+    "ABC",
+    "cost management",
+    "physician variation"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:34:41.663188+00:00",
+  "updated_at": "2026-06-01T13:29:14.49513+00:00",
+  "sanity_slug": "activity-based-costing"
+}

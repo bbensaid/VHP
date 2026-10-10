@@ -1,0 +1,60 @@
+{
+  "id": "cd225a5b-50c7-485d-ac68-aa156a1071d2",
+  "track_id": "5f7fc507-a352-415c-b804-c361dd2d9f3f",
+  "pillar": "technology",
+  "order": 2,
+  "slug": "predictive-analytics-rcm",
+  "title": "Predictive Analytics and AI in Revenue Cycle",
+  "summary": "AI and machine learning are moving RCM from reactive to predictive — identifying denial risk, optimizing work queues, and automating routine billing tasks.",
+  "estimated_minutes": 22,
+  "objectives": [
+    "Describe the AI applications currently deployed in revenue cycle management",
+    "Explain how predictive denial management works and its ROI",
+    "Identify the risks and limitations of AI-driven RCM automation"
+  ],
+  "content_blocks": [
+    {
+      "body": "Artificial intelligence is being applied across the revenue cycle:\n\n- **Prior authorization automation:** AI predicts which cases require PA and auto-submits requests, reducing manual burden\n- **Predictive denial scoring:** ML models score each claim pre-submission with a denial probability, allowing targeted intervention before submission\n- **Autonomous coding:** NLP-based tools read clinical documentation and suggest ICD-10 and CPT codes for human review\n- **Intelligent work queue management:** AI prioritizes AR follow-up by expected recovery value rather than dollar amount alone\n- **Payment prediction:** Models predict when each claim will pay and flag claims deviating from predicted payment patterns\n- **Robotic Process Automation (RPA):** Bots handle repetitive tasks like eligibility checks, claim status inquiries, and payment posting",
+      "type": "text",
+      "heading": "AI Applications in RCM"
+    },
+    {
+      "type": "key_stat",
+      "stats": [
+        {
+          "label": "Reduction in PA processing time with AI",
+          "value": "60–70%",
+          "context": "For organizations using intelligent PA automation platforms"
+        },
+        {
+          "label": "Accuracy of AI-assisted medical coding",
+          "value": "85–95%",
+          "context": "Varies by specialty and documentation quality; human review still required for complex cases"
+        },
+        {
+          "label": "Projected AI impact on US healthcare admin costs by 2026",
+          "value": "$360B",
+          "context": "McKinsey Global Institute estimate of potential administrative savings from AI automation"
+        }
+      ]
+    },
+    {
+      "body": "AI in RCM carries risks: (1) Predictive models trained on historical data may perpetuate existing billing biases, under-prioritizing claims from low-reimbursement payers; (2) NLP coding tools can 'hallucinate' codes not supported by documentation, creating compliance risk; (3) Payer AI denial systems may flag human-reviewed claims as 'not medically necessary' based on criteria that differ from clinical judgment. Maintain human oversight for all AI-generated coding and clinical necessity determinations.",
+      "type": "callout",
+      "title": "AI Risks in RCM: Bias and Hallucination",
+      "variant": "warning"
+    }
+  ],
+  "tags": [
+    "AI",
+    "machine learning",
+    "predictive analytics",
+    "automation",
+    "RCM technology"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:31:30.95666+00:00",
+  "updated_at": "2026-10-10T04:46:45.339797+00:00",
+  "sanity_slug": "predictive-analytics-rcm"
+}

@@ -1,0 +1,372 @@
+{
+  "_createdAt": "2026-09-22T19:15:10Z",
+  "_id": "tl-managing-resistance-global-budgets",
+  "_rev": "LCntMInbokDNzSR9NF5K4d",
+  "_type": "academyModule",
+  "_updatedAt": "2026-09-22T19:15:10Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why This Reform Type Is Different"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A payment reform that adds a bonus on top of existing fee-for-service revenue asks an organization to do something extra for more money — a relatively easy sell. A global budget or a mandatory bundle asks an organization to accept that growing volume no longer grows revenue at all. That is a zero-sum reframing of every department's underlying incentive to do more, and it is why fixed-revenue reforms produce a resistance pattern that milder value-based arrangements typically do not: the threat to an individual department, service line, or physician group's existing model is not hypothetical or marginal. It is structural and immediate."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Resistance under this specific reform type tends to follow a small number of predictable patterns rather than a diffuse, unstructured objection to change in general. Naming those patterns in advance — rather than discovering them in the first year's performance data — is the difference between managing resistance proactively and reacting to it after it has already produced a measurable result."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Pattern One: Gaming the Boundary"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CMS's Comprehensive Care for Joint Replacement model made a 90-day bundled payment mandatory for lower-extremity joint replacement in a defined set of metropolitan statistical areas, launching in April 2016. It is one of the most directly documented examples in Medicare policy of how organizations respond, in practice, to a hard payment boundary imposed on them rather than one they chose."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2ex1",
+      "_type": "exampleBlock",
+      "content": "Research on hospital behavior under CJR found that in the metropolitan areas where participation was mandatory, hospitals tended to treat healthier patients on average than in areas without the mandate, and were more likely to perform knee replacements in the inpatient setting — which the bundle covered — even when the same procedure performed outpatient, which the bundle did not cover, would have been the less costly option. Roughly 77% of CJR participant hospitals earned reconciliation payments in one or both of the model's first two performance years. Once CMS subsequently made participation voluntary for some hospitals and separately made outpatient total knee replacement billable nationally outside the bundle, the boundary-optimization incentive weakened — and CJR's measured savings were no longer statistically significant by the fourth performance year.",
+      "title": "CMS's Mandatory CJR Bundle"
+    },
+    {
+      "_key": "s2c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CJR pattern is not evidence of bad faith. It is evidence that organizations respond rationally to whatever boundary a payment reform draws. A fixed-revenue or fixed-bundle boundary will be optimized around unless the reform's design anticipates that response — which is why monitoring for boundary-shifting behavior has to be built into a transformation from its first year, not added after the data has already revealed a problem."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Pattern Two: Autonomy Anxiety"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The second predictable pattern is resistance driven not by the financial mechanics of the reform but by the perceived loss of institutional independence — a hospital board or leadership team's anxiety about ceding operational control to an outside regulator, even when the regulator has no intention of dictating day-to-day decisions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Maryland's own governance design, discussed in the previous lesson, treated this directly: \"protecting hospital autonomy\" was named explicitly, alongside close communication and calibrated budgets, as one of the specific themes leaders identified as necessary to manage the shift to global budgets. The lesson generalizes: a regulator or state agency that can credibly demonstrate it is not seeking to control operational decisions beyond the budget itself will face measurably less resistance than one whose intentions on that point remain ambiguous to the organizations being regulated."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Pattern Three: The Missing Coalition Seat"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The third pattern connects directly back to Kotter's Step 2. Clinical staff who have no real seat in the guiding coalition — who experience the reform as something decided about them rather than with them — will disengage from implementation even when they have no legal ability to block the mandate itself. Disengagement is quieter than open opposition and correspondingly harder to detect: a clinician who simply does not change documentation habits, does not refer into a new care-management program, or does not flag early warning signs of a process breaking down produces exactly the kind of silent underperformance that shows up in outcome data a year later with no obvious single cause."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "Transformation that clinical leaders oppose will fail regardless of administrative mandate, because clinical decision-making authority in a hospital sits with medical staff governance, not the administrative org chart that issued the mandate.",
+      "title": "A Mandate Cannot Substitute for Coalition Membership"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A Resistance-Management Playbook"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The three patterns above point toward a common structural response: name the zero-sum trade-off explicitly rather than letting departments discover it on their own, build a data-informed reallocation process instead of an opaque top-down cut, create a visible pipeline of genuine early wins, monitor for boundary-shifting behavior from the reform's first year rather than its third, and formalize clinical leadership's coalition seat rather than treating clinical input as optional consultation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Observed Symptom",
+        "points": [
+          "Coding or site-of-service patterns shift right after go-live",
+          "Board delays or repeatedly requests more information before approving next steps",
+          "Clinicians disengage from new workflows without open objection"
+        ]
+      },
+      "right": {
+        "label": "Underlying Driver",
+        "points": [
+          "Boundary-optimization incentive — the reform drew a line and the organization is responding to it rationally",
+          "Autonomy anxiety — perceived loss of institutional independence, not necessarily disagreement with the reform's goals",
+          "No genuine coalition seat — the change was decided about them, not with them"
+        ]
+      },
+      "title": "Resistance Symptom vs. Underlying Driver"
+    },
+    {
+      "_key": "s5st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "State explicitly, in writing, what department or service line loses under the new revenue structure — do not let it be discovered informally.",
+          "title": "Name the trade-off"
+        },
+        {
+          "_key": "step2",
+          "description": "Give departments a transparent, data-informed process for adjusting to the new envelope rather than an opaque top-down cut.",
+          "title": "Build a reallocation process"
+        },
+        {
+          "_key": "step3",
+          "description": "Identify genuine early wins specifically for the groups most exposed to the reform's downside, not only system-level wins.",
+          "title": "Create a short-term-win pipeline"
+        },
+        {
+          "_key": "step4",
+          "description": "Build the CJR-style monitoring — service-mix shifts, site-of-care shifts, patient-selection patterns — into year one, not year three.",
+          "title": "Monitor for boundary behavior early"
+        },
+        {
+          "_key": "step5",
+          "description": "Give clinical leadership real influence over implementation decisions, not a consultative role added after the design is set.",
+          "title": "Formalize the clinical coalition seat"
+        }
+      ],
+      "title": "A Resistance-Management Playbook"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "A fixed-revenue-envelope reform reframes every department's incentive to grow volume into a zero-sum trade-off, producing more resistance than a bonus-on-top value-based arrangement.",
+        "CMS's mandatory CJR bundle produced documented boundary-gaming: hospitals selected healthier patients and shifted procedures into the inpatient setting the bundle covered.",
+        "CJR's measured savings were no longer statistically significant by year four once the mandatory boundary was loosened — direct evidence the earlier savings were partly an artifact of the boundary itself.",
+        "A second resistance pattern is autonomy anxiety — Maryland's own governance design named \"protecting hospital autonomy\" explicitly as a necessary theme for managing its global budget conversion.",
+        "A third pattern is quiet clinical disengagement when clinical leadership lacks a genuine coalition seat — harder to detect than open opposition because it produces no formal objection.",
+        "A working playbook names the zero-sum trade-off explicitly, builds a transparent reallocation process, creates genuine early wins, monitors for boundary behavior from year one, and formalizes a real clinical coalition seat.",
+        "Resistance under this reform type is predictable, not random — the goal is to anticipate the pattern rather than discover it in the second or third year's performance data."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Once outpatient TKA was excluded from the bundle nationally and some hospitals' participation became voluntary, the boundary-optimization incentive weakened, and CJR's measured savings were no longer statistically significant by the fourth year — evidence that part of the earlier savings reflected boundary-gaming rather than genuine efficiency gains.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Savings increased further"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Savings were no longer statistically significant by the fourth performance year"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The model was cancelled immediately"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "Hospital participation became mandatory nationwide"
+        }
+      ],
+      "question": "What happened to CMS's measured savings under the mandatory CJR bundled-payment model after outpatient total knee replacement was made billable nationally outside the bundle?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Commonwealth Fund, \"How Hospitals Respond to Incentives: Bundled Payment for Joint Surgery\" (2021) — https://www.commonwealthfund.org/publications/journal-article/2021/may/hospital-incentives-bundled-payment-joint-surgery — CJR boundary-gaming findings"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] CMS, \"Findings at a Glance: Comprehensive Care for Joint Replacement (CJR) Model\" — https://www.cms.gov/files/document/cjr-fg-secondannrptpdf.pdf — CJR participation and reconciliation-payment data"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] \"Health Care Leaders' Perspectives on the Maryland All-Payer Model\" — https://pmc.ncbi.nlm.nih.gov/articles/PMC8903109/ — the \"protecting hospital autonomy\" governance theme"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Health Transformation Review, Transforming American Healthcare, Chapter 12 §12.4.1, Step 2 — internal manuscript, the coalition-seat argument applied to Vermont"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "tl-managing-resistance-global-budgets"
+  },
+  "title": "Managing Organizational Resistance in a Fixed-Revenue-Envelope Transition"
+}

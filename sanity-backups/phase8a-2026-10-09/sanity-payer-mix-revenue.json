@@ -1,0 +1,455 @@
+{
+  "_createdAt": "2026-05-31T07:20:27Z",
+  "_id": "payer-mix-revenue",
+  "_rev": "glqH7a4yvZFQerxZdKAXqJ",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T07:20:27Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Most Important Number You’ve Never Heard Of"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Ask a hospital CFO what keeps them up at night, and \"payer mix\" will be near the top of the list. Payer mix is the proportion of a hospital’s patients — or revenue — coming from each type of payer: commercial insurers, Medicare, Medicaid, and the uninsured (self-pay). It is one of the single most powerful determinants of whether a hospital thrives or struggles, because the same exact service generates dramatically different payment depending on who is footing the bill."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The reason payer mix matters so much is a structural quirk of American healthcare: government payers reimburse hospitals below the cost of providing care, while commercial insurers pay well above it. A hospital does not control its prices the way an ordinary business does; instead, its revenue is dictated by the blend of payers walking through its doors. Two hospitals delivering identical care can have completely different financial fates simply because one serves more commercially insured patients and the other more Medicaid patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson unpacks how payer mix works, why the gap between payers is so large, how it produces the cross-subsidy that holds American hospital finance together, and why a single policy change — like the 2025 Medicaid DSH cuts — can threaten the survival of the hospitals serving the most vulnerable communities."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: Payer mix is the distribution of a hospital’s patients or revenue across payer types (commercial, Medicare, Medicaid, self-pay). Because each payer reimburses at a very different rate, payer mix is a primary driver of a hospital’s financial health."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "In 2022, private insurers paid hospitals on average 254% of what Medicare would pay for the same services — up from 224% in 2020 (RAND, 2024)",
+          "label": "Commercial vs. Medicare Prices",
+          "value": "254%"
+        },
+        {
+          "_key": "s2",
+          "context": "Hospitals experienced roughly a -12% margin on fee-for-service Medicare services in 2024 — paid below the cost of care (industry/CMS data)",
+          "label": "Medicare FFS Margin (2024)",
+          "value": "-12%"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Volume–Revenue Paradox"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The most revealing fact about payer mix is that patient volume and revenue do not line up. Medicare and Medicaid together accounted for about two-thirds (67%) of all hospital discharges in 2023 — Medicare nearly half (46%) and Medicaid more than a fifth (21%) — while private insurance covered just 24% of discharges and self-pay 4%. Yet when you look at revenue, the picture inverts: commercial, private, and self-pay together generate roughly 69.9% of hospital net revenue, while Medicare contributes about 15.5% and Medicaid about 14.6%."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Read those two sets of numbers side by side and the paradox is stark. Government payers fill most of the beds but provide less than half the money; commercial payers fill a minority of beds but provide the lion’s share of revenue. A bed occupied by a commercially insured patient is worth far more to the hospital’s bottom line than the same bed occupied by a Medicaid patient — even though the care delivered is identical."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Share of Discharges (Volume)",
+        "points": [
+          "Medicare ~46% of discharges",
+          "Medicaid ~21% of discharges",
+          "Private insurance ~24% of discharges",
+          "Self-pay ~4% of discharges",
+          "Government payers fill ~67% of beds"
+        ]
+      },
+      "right": {
+        "label": "Share of Net Revenue (Money)",
+        "points": [
+          "Commercial/private/self-pay ~69.9%",
+          "Medicare ~15.5%",
+          "Medicaid ~14.6%",
+          "Government payers provide <50% of revenue",
+          "Commercial dollars dominate the bottom line"
+        ]
+      },
+      "title": "Discharges vs. Revenue: The Inversion"
+    },
+    {
+      "_key": "s2w1",
+      "_type": "warningBlock",
+      "message": "A hospital can run at full occupancy and still lose money if too many of those patients are covered by below-cost government payers. Volume alone says nothing about financial health — payer mix is what turns volume into solvency or into deeper losses.",
+      "title": "Why \"Filling Beds\" Is Not the Same as \"Making Money\""
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why the Payment Gap Is So Large"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The chasm between what commercial and government payers pay is not subtle. The RAND Corporation, analyzing billions of dollars in claims across thousands of hospitals, found that in 2022 employers and private insurers paid on average 254% of what Medicare would have paid for the same services at the same facilities — a figure that has climbed from 224% in 2020 and 247% in 2018. In some states, commercial prices averaged above 300% of Medicare. Meanwhile, hospitals reported roughly a -12% margin on fee-for-service Medicare in 2024, and Medicaid often pays even less."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "These divergent trajectories compound over time. Inpatient hospital prices paid by private insurers rose about 50% from mid-2014 to late 2024 — twice the 25% growth in Medicare inpatient prices and more than twice the 19% growth in Medicaid prices over the same span. Government rates are administratively set and grow slowly; commercial rates are negotiated and have escalated rapidly. The result is an ever-widening gap that makes commercial patients increasingly valuable and government patients increasingly costly to serve."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This gap is the engine behind the cross-subsidy that defines hospital finance. Because Medicare and Medicaid pay below cost, hospitals depend on commercial payments above cost to cover the shortfall. In effect, privately insured patients and their employers subsidize the care of government-insured patients. A hospital with a rich commercial payer mix has a built-in cushion; a hospital dependent on Medicaid and the uninsured has none."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Safety-Net Hospitals and the Limits of Cost-Shifting"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The cross-subsidy mechanism has a brutal corollary: it only works if you have commercial patients to shift costs onto. Safety-net hospitals — those serving large numbers of Medicaid and uninsured patients — usually have a low percentage of commercially insured patients, which means they cannot cost-shift their losses to private insurers. They are squeezed from both sides: more below-cost patients, fewer above-cost patients to make up the difference."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "To keep these essential hospitals afloat, federal law requires states to make Disproportionate Share Hospital (DSH) payments — supplemental funding to hospitals that serve a disproportionate share of low-income, uninsured, and Medicaid patients. DSH payments help offset the cost of uncompensated care and, for many safety-net and teaching hospitals, constitute a significant portion of total revenue. DSH is, in essence, the government’s acknowledgment that its own below-cost payments would otherwise bankrupt the hospitals serving the neediest patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "After more than a decade of repeated delays, the Medicaid DSH payment cuts finally took effect on October 1, 2025, when the One Big Beautiful Bill Act (OBBBA) failed to extend the subsidies.\n\nThe impact lands squarely on safety-net hospitals: roughly $8 billion in losses during FY 2026 and around $16 billion more over the following two years. Because these hospitals cannot cost-shift to commercial payers, the cuts arrive at the same time tightened Medicaid eligibility is projected to increase the number of uninsured patients — compounding uncompensated care exactly as the cushion is removed. It is a textbook illustration of how a payer-mix-dependent hospital lives or dies by policy decisions it does not control.",
+      "title": "The 2025 Medicaid DSH Cuts"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Managing Payer Mix: Strategy and Its Ethical Edge"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because payer mix is so consequential, hospitals actively try to influence it — and here the financial logic collides with the mission. Strategies to improve payer mix include locating new facilities and service lines in commercially insured areas, marketing profitable elective services (orthopedics, cardiology) that attract well-insured patients, negotiating harder with commercial payers, and improving the revenue cycle so that more of what is billed is actually collected. Each of these can shift the blend toward higher-paying payers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "Payer mix works like a restaurant whose city mandates that it serve some customers at a loss. The restaurant survives only by attracting enough full-price diners to subsidize the discounted ones. A bistro in a wealthy neighborhood manages easily; one required to serve mostly discounted customers, with few full-price diners nearby, slowly bleeds out — no matter how good its food. DSH payments are the city’s subsidy to keep that second restaurant’s doors open.",
+      "concept": "How payer mix and the cross-subsidy work"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "But payer-mix management has a sharp ethical edge. Strategies that optimize the payer mix can shade into \"payer-mix avoidance\" — quietly steering away from Medicaid and uninsured patients toward commercially insured ones. Taken too far, this undermines access for vulnerable populations and, for nonprofit hospitals, conflicts directly with the community-benefit obligations that justify their tax exemption. The tension between financial survival (which rewards a commercial-heavy mix) and mission (which demands serving everyone) is one of the defining dilemmas of hospital management."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This tension is also a central argument for value-based care and global budgets. As long as hospitals are paid per service, payer mix dictates their fate and rewards them for chasing well-insured patients. Models that pay for keeping a defined population healthy — regardless of each patient’s insurance — begin to loosen the grip of payer mix on hospital strategy. Understanding payer mix is therefore not just an accounting exercise; it is the key to understanding why American hospitals behave the way they do, and why reformers are so determined to change how they are paid."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "Payer mix — the distribution of a hospital’s patients or revenue across commercial, Medicare, Medicaid, and self-pay — is a primary driver of financial health because each payer reimburses at very different rates.",
+        "Volume and revenue diverge sharply: Medicare and Medicaid filled about 67% of discharges in 2023 but provided under half of revenue, while commercial/private/self-pay generated roughly 69.9% of revenue from only ~28% of discharges.",
+        "Government payers reimburse below cost (hospitals saw roughly a -12% Medicare fee-for-service margin in 2024), while commercial payers pay well above it — RAND found private plans paid 254% of Medicare rates in 2022.",
+        "The payment gap is widening: private inpatient prices rose ~50% from 2014–2024 versus 25% for Medicare and 19% for Medicaid, deepening the cross-subsidy in which commercial payments cover below-cost government care.",
+        "Safety-net hospitals serve many Medicaid and uninsured patients but have few commercial patients, so they cannot cost-shift losses — making them structurally vulnerable.",
+        "Disproportionate Share Hospital (DSH) payments are federally required supplemental funds that help safety-net hospitals offset uncompensated care, often forming a significant share of their revenue.",
+        "Medicaid DSH cuts took effect October 1, 2025 (after OBBBA failed to extend them), imposing roughly $8 billion in FY 2026 losses and $16 billion more over two years, just as tightened eligibility threatens to raise uncompensated care.",
+        "Hospitals actively manage payer mix through facility location, service-line strategy, and payer negotiation — but pushing toward \"payer-mix avoidance\" of Medicaid/uninsured patients conflicts with access and nonprofit community-benefit obligations, a core argument for value-based payment."
+      ]
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Definitive Healthcare: \"Understanding Hospital Payor Mixes Across the U.S.\" — https://www.definitivehc.com/resources/healthcare-insights/breaking-down-us-hospital-payor-mixes — payer mix ~69.9% commercial/private/self-pay, 15.5% Medicare, 14.6% Medicaid (2023)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] KFF: \"Key Facts About Hospitals — Spending by Payer\" — https://www.kff.org/health-costs/key-facts-about-hospitals/ — discharge shares (~46% Medicare, 21% Medicaid, 24% private, 4% self-pay) vs. revenue shares; government payers >70% of inpatient days but <half of revenue."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] RAND: \"Private Health Plans During 2022 Paid Hospitals 254 Percent of What Medicare Would Pay\" (May 2024) — https://www.rand.org/news/press/2024/05/13.html — 254% in 2022 (224% in 2020, 247% in 2018); several states above 300% of Medicare."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Milliman: \"Commercial reimbursement benchmarking — commercial payment rates as a percentage of Medicare FFS rates\" — https://www.milliman.com/en/insight/commercial-reimbursement-benchmarking-medicare-ffs-rates — commercial roughly 190% of fully loaded Medicare FFS; ~-12% hospital margin on Medicare FFS in 2024; price-growth comparison 2014–2024."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Medicaid.gov: \"Medicaid Disproportionate Share Hospital (DSH) Payments\" — https://www.medicaid.gov/medicaid/financial-management/medicaid-disproportionate-share-hospital-dsh-payments — federal requirement and purpose of DSH payments for hospitals serving low-income, uninsured, and Medicaid patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Spencer Fane: \"Dual Pressures on Hospitals: OBBBA and $24 Billion in DSH Reductions\" — https://www.spencerfane.com/insight/dual-pressures-on-hospitals-obbba-and-24-billion-in-dsh-reductions/ — DSH cuts effective Oct 1, 2025; ~$8B FY2026 and ~$16B additional losses; safety-net hospitals cannot cost-shift."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "hospital-finance",
+  "order": 4,
+  "slug": {
+    "_type": "slug",
+    "current": "payer-mix-revenue"
+  },
+  "title": "Payer Mix and Its Impact on Hospital Revenue"
+}

@@ -1,0 +1,535 @@
+{
+  "_createdAt": "2026-06-01T00:46:17Z",
+  "_id": "medicaid-quality-measures",
+  "_rev": "glqH7a4yvZFQerxZdUMFUZ",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T00:46:17Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Measure Medicaid Quality?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Covering people is only half of Medicaid's job; the other half is making sure the care they receive is actually good. Because most Medicaid enrollees now get care through private managed care plans paid a fixed amount per member, there is a built-in risk that a plan could cut corners to save money. Quality measurement is how states and the federal government keep watch."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Quality measurement turns vague questions — \"Are kids getting their vaccines?\" \"Can adults get appointments when they need them?\" — into standardized numbers that can be compared across plans, across states, and over time. Those numbers feed oversight, public reporting, and increasingly, payment."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Three pillars dominate Medicaid quality measurement: HEDIS (clinical process and outcome measures), CAHPS (patient experience surveys), and the federal Adult and Child Core Sets (a standardized national reporting set). This lesson walks through each and how they fit together."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicaid quality measurement converts care into standardized, comparable numbers. The three pillars are HEDIS (clinical measures), CAHPS (patient experience), and the federal Adult and Child Core Sets (national reporting)."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "HEDIS: The Clinical Yardstick"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "HEDIS — the Healthcare Effectiveness Data and Information Set — is the most widely used set of health plan performance measures in the United States. It is developed and maintained by the National Committee for Quality Assurance (NCQA), a private nonprofit, and used by commercial, Medicare, and Medicaid plans alike."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "HEDIS consists of more than 70 measures spanning the full spectrum of care — prevention, acute care, and chronic care. It captures structure, process, and outcomes: things like childhood immunization status, follow-up after a hospitalization for mental illness, controlling high blood pressure, and screening for cancer. Because the specifications are standardized, one plan's diabetes-control rate can be compared directly with another's."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Standardization is the whole point. Without common definitions, every plan could define \"well-child visit\" or \"blood pressure control\" differently, making comparison meaningless. HEDIS provides the shared yardstick that lets states benchmark plans against each other and against national norms."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Spanning prevention, acute, and chronic care (NCQA / AHRQ)",
+          "label": "HEDIS Measures",
+          "value": "70+"
+        },
+        {
+          "_key": "s2",
+          "context": "Develops and maintains the measure specifications (NCQA)",
+          "label": "HEDIS Steward",
+          "value": "NCQA"
+        },
+        {
+          "_key": "s3",
+          "context": "Structure, process, and outcome measures (AHRQ)",
+          "label": "What HEDIS Captures",
+          "value": "Process + Outcome"
+        },
+        {
+          "_key": "s4",
+          "context": "Up to 40 states use HEDIS Compliance Audits (NCQA)",
+          "label": "Use the HEDIS Audit",
+          "value": "40 states"
+        }
+      ]
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "CAHPS: Asking Patients Directly"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "HEDIS tells you what was done clinically, but it cannot tell you what care felt like to the person receiving it. That is the job of CAHPS — the Consumer Assessment of Healthcare Providers and Systems. CAHPS is a family of standardized patient-experience surveys originally developed under the federal Agency for Healthcare Research and Quality (AHRQ)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The CAHPS Health Plan Survey asks members directly about their experiences. It produces four global ratings — overall health care, the health plan, the personal doctor, and the specialist seen most often — plus composite scores in areas like getting care quickly, getting needed care, customer service, and how well doctors communicate."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "CAHPS is tightly integrated with HEDIS: NCQA asks plans to submit results from a modified version of the CAHPS Health Plan Survey as part of HEDIS reporting. Together, the two give a fuller picture — HEDIS for clinical performance, CAHPS for the patient's lived experience."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "HEDIS (clinical measures)",
+        "points": [
+          "What care was actually delivered",
+          "Drawn from claims and clinical records",
+          "70+ process and outcome measures",
+          "Maintained by NCQA"
+        ]
+      },
+      "right": {
+        "label": "CAHPS (patient experience)",
+        "points": [
+          "How care felt to the patient",
+          "Collected by surveying members",
+          "Global ratings and composite scores",
+          "Originated with AHRQ"
+        ]
+      },
+      "title": "HEDIS vs. CAHPS"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Adult and Child Core Sets"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "To make quality comparable across all 50 states, CMS maintains standardized national measure sets specifically for Medicaid and CHIP: the Core Set of Adult Health Care Quality Measures and the Core Set of Children's Health Care Quality Measures. Many of these draw on HEDIS and CAHPS specifications."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "For years, state reporting on these Core Sets was voluntary, which meant patchy and inconsistent national data. That changed in 2024: reporting of the Child Core Set and of the behavioral health measures within the Adult Core Set became mandatory for all states, the District of Columbia, and the territories. The first round of mandatory reporting had to be submitted and certified by states by December 31, 2024."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Mandatory reporting is a significant step. It gives CMS and the public a consistent, nationwide view of how Medicaid and CHIP are performing on priorities like children's preventive care and behavioral health — and creates accountability that voluntary reporting never could."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "The 2024 mandatory behavioral health measure set drew 7 measures from the Child Core Set and 11 from the Adult Core Set, covering areas such as follow-up after mental health hospitalization and monitoring for people on certain medications.\nCMS uses these measures to track and push progress on behavioral health across state Medicaid and CHIP programs — an area of intense need that consistent national reporting can finally illuminate.",
+      "title": "Behavioral Health in the Core Sets"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Turning Measures Into Accountability: The EQRO"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Measures are only useful if the underlying data is trustworthy and someone acts on it. In Medicaid managed care, that role falls to the External Quality Review Organization (EQRO). Federal rules require every state that contracts with managed care plans to hire at least one independent EQRO to conduct an annual external quality review of each plan."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The EQRO evaluates each plan on quality, timeliness, and access to care, and produces an annual technical report. Two of its core activities are validating the performance-measure data plans report and conducting HEDIS Compliance Audits — the industry's gold-standard check that a plan can produce valid, reliable measure data. Up to 40 states use the HEDIS Audit for exactly this purpose."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This is the loop that ties the whole system together: plans report HEDIS and CAHPS results, states fold many of those into the federal Core Sets, and independent EQROs validate the data and hold plans accountable. Quality measurement is not paperwork for its own sake — it is the mechanism that protects enrollees in a program where most care is delivered by private plans paid a fixed amount."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "MCOs report HEDIS clinical measures and CAHPS patient-experience results.",
+          "title": "Plans collect and report measures"
+        },
+        {
+          "_key": "step2",
+          "description": "States submit standardized data through the Adult and Child Core Sets to CMS.",
+          "title": "States compile and report"
+        },
+        {
+          "_key": "step3",
+          "description": "Independent EQROs audit data validity and conduct annual external quality reviews.",
+          "title": "EQROs validate"
+        },
+        {
+          "_key": "step4",
+          "description": "Findings inform plan oversight, public reporting, and increasingly payment.",
+          "title": "Results drive oversight"
+        }
+      ],
+      "title": "How Quality Accountability Flows"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Quality measurement is how states and CMS ensure Medicaid enrollees get good care, especially since most care is delivered by capitated managed care plans.",
+        "HEDIS, maintained by NCQA, is the dominant clinical measure set — over 70 process and outcome measures spanning prevention, acute, and chronic care.",
+        "CAHPS, originating with AHRQ, surveys members directly about their experience, producing global ratings and composite scores.",
+        "HEDIS and CAHPS are integrated: NCQA collects a modified CAHPS survey as part of HEDIS reporting, pairing clinical performance with patient experience.",
+        "CMS maintains the Adult and Child Core Sets to standardize Medicaid/CHIP quality data across states, drawing on HEDIS and CAHPS specifications.",
+        "In 2024, reporting of the Child Core Set and Adult Core Set behavioral health measures became mandatory for all states and territories, with first reports due December 31, 2024.",
+        "External Quality Review Organizations (EQROs) independently audit and validate plan data each year — including HEDIS Compliance Audits — turning measures into real accountability."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "HEDIS, maintained by NCQA, captures clinical process and outcome measures — what care was actually delivered, such as immunization or blood-pressure-control rates. CAHPS is a patient-experience survey that asks members directly how their care felt. The two are complementary and are reported together.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "HEDIS measures patient satisfaction while CAHPS measures clinical care"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "HEDIS measures clinical performance (what care was delivered) while CAHPS measures patient experience (how care felt)"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "HEDIS is for children and CAHPS is for adults"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "HEDIS is federal and CAHPS is run by private insurers"
+        }
+      ],
+      "question": "What is the key difference between HEDIS and CAHPS in Medicaid quality measurement?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] Child and Adult Health Care Quality Measures — https://www.medicaid.gov/medicaid/quality-of-care/performance-measurement/adult-and-child-health-care-quality-measures — Adult and Child Core Sets; mandatory reporting began 2024"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Medicaid Program and CHIP; Mandatory Core Set Reporting (Federal Register) — https://www.federalregister.gov/documents/2023/08/31/2023-18669/medicaid-program-and-chip-mandatory-medicaid-and-childrens-health-insurance-program-chip-core-set — mandatory Child Core Set and Adult behavioral health reporting; Dec 31, 2024 deadline"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] HEDIS Measures and Technical Resources (NCQA) — https://www.ncqa.org/hedis/measures/ — HEDIS developed by NCQA; 70+ measures; HEDIS Compliance Audit used by up to 40 states"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] CAHPS Health Plan Survey (AHRQ) — https://www.ahrq.gov/cahps/surveys-guidance/hp/index.html — CAHPS patient-experience survey, global ratings and composites"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] CAHPS Health Plan Survey 5.1H, Adult Version (NCQA) — https://www.ncqa.org/report-cards/health-plans/state-of-health-care-quality-report/cahps-health-plan-survey-5-1h-adult-version-cpa/ — NCQA collects modified CAHPS as part of HEDIS; four global ratings"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Quality of Care External Quality Review — https://www.medicaid.gov/medicaid/quality-of-care/medicaid-managed-care-quality/quality-of-care-external-quality-review — EQRO annual review requirement; performance measure validation; HEDIS compliance audits"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicaid-101",
+  "order": 9,
+  "slug": {
+    "_type": "slug",
+    "current": "medicaid-quality-measures"
+  },
+  "title": "Measuring Medicaid Quality: HEDIS, CAHPS & State Reporting"
+}

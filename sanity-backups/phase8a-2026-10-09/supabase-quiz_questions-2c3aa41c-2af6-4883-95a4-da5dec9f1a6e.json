@@ -1,0 +1,9 @@
+{
+  "id": "2c3aa41c-2af6-4883-95a4-da5dec9f1a6e",
+  "quiz_id": "9dfabeb5-9db5-407e-8750-c42a33272750",
+  "order": 1,
+  "question_type": "single_choice",
+  "question": "A hospital implements pharmacogenomic clinical decision support that only fires an alert when a clinician attempts to prescribe a drug. Alert override rates are 75%. Which strategy is most likely to improve appropriate PGx utilization?",
+  "explanation": "Evidence from the IGNITE network shows that proactive (pre-emptive) display of PGx results in patient summary views — before the prescribing decision is made — dramatically improves appropriate utilization compared to reactive alerts at prescription time. Reactive alerts are often dismissed as interruptions; proactive display integrates genomic information into the natural clinical reasoning process.",
+  "points": null
+}

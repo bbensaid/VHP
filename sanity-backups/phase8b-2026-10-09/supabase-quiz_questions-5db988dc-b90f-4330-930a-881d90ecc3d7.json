@@ -1,0 +1,9 @@
+{
+  "id": "5db988dc-b90f-4330-930a-881d90ecc3d7",
+  "quiz_id": "da62612c-6c1e-4cfc-8d66-3ea7556a4363",
+  "order": 3,
+  "question_type": "single_choice",
+  "question": "Which of the following expenses counts toward the MLR numerator?",
+  "explanation": "Quality improvement expenses, including disease management programs, count toward the MLR numerator (capped at 3% of premium). Marketing, executive compensation, and administrative costs do not count.",
+  "points": null
+}

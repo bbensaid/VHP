@@ -1,0 +1,438 @@
+{
+  "_createdAt": "2026-05-31T07:26:24Z",
+  "_id": "cost-per-case-service-line",
+  "_rev": "rL4Cn5Sfo5Z8rzPmEBX101",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T07:26:24Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "From \"What Does Care Cost?\" to \"Which Care Makes Money?\""
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The previous lesson established that hospitals must allocate overhead to know the full cost of care. This lesson takes the next step: using cost information to answer the questions that actually drive hospital strategy. What does a single case — one knee replacement, one heart catheterization, one delivery — cost the hospital? And which clinical service lines are financially carrying the institution versus quietly draining it? These are the questions that determine where a hospital invests, what it markets, and sometimes what it stops doing altogether."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Two analytical tools answer them. Cost-per-case analysis estimates the cost of treating an individual patient or procedure. Service-line analysis aggregates those cases into clinical lines — cardiology, orthopedics, obstetrics, oncology — and measures the financial contribution of each. Together they turn the abstract idea of \"cost\" into concrete management decisions, and they reveal a truth that surprises many: a hospital’s busiest services are not always its most profitable, and its profitable services are not always the ones it promotes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: Cost-per-case analysis estimates what treating one patient or procedure costs the hospital. Service-line analysis aggregates cases into clinical lines (e.g., cardiology) to measure each line’s financial contribution — guiding investment, growth, and divestment decisions."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "Orthopedic surgeons generate an average of roughly $2.7 million in annual revenue for their affiliated hospitals — among the highest of any specialty (industry analyses)",
+          "label": "Orthopedic Surgeon Hospital Revenue",
+          "value": "~$2.7M"
+        },
+        {
+          "_key": "s2",
+          "context": "Contribution margins for total hip replacement ran about $5,889 higher in concentrated hospital markets than in competitive ones (AJMC, Robinson)",
+          "label": "Hip Replacement Margin Gap",
+          "value": "$5,889"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Hospitals Estimate Cost Per Case"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "There is no single perfect way to cost an individual case; hospitals use several methods that trade accuracy against effort. The simplest is the ratio of cost to charges (RCC): a department divides its total cost by its total charges to get a ratio (say, $40 million in cost against $100 million in charges equals 0.4), then multiplies a case’s charges by that ratio to estimate its cost. RCC is fast and useful for high-level departmental monitoring, but because it applies a single average ratio to every case, it is unreliable for individual case-level decisions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "A more refined approach is RVU-based costing, which uses relative value units — standardized measures of the resources (physician time, staff time, equipment, supplies) a procedure consumes. The hospital divides total expenses by total RVUs to get a cost per RVU, then multiplies by the RVUs assigned to a given procedure. This better reflects relative resource intensity, though it can misstate cost when local workflows or patient mix differ from the national averages embedded in the RVU scale. The most precise (and most labor-intensive) method is microcosting, which tallies the actual individual resources consumed by a specific case."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2steps1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Multiply a case’s charges by the department’s cost-to-charge ratio. Fast and good for high-level monitoring; too crude for case-level decisions.",
+          "title": "Ratio of cost to charges (RCC)"
+        },
+        {
+          "_key": "step2",
+          "description": "Divide total expenses by total RVUs to get cost per RVU, then multiply by a procedure’s RVUs. Reflects relative resource intensity.",
+          "title": "RVU-based costing"
+        },
+        {
+          "_key": "step3",
+          "description": "Tally the actual resources a specific case consumes. Most accurate, most labor-intensive — reserved for high-value analyses.",
+          "title": "Microcosting"
+        }
+      ],
+      "title": "Three Common Cost-Per-Case Methods"
+    },
+    {
+      "_key": "s2w1",
+      "_type": "warningBlock",
+      "message": "RCC and similar average-based methods apply one ratio across every case, masking the real variation in resource use. They are fine for monitoring trends but dangerous for deciding whether a specific procedure or contract is profitable — that requires methods that reflect actual case-level resources.",
+      "title": "Don’t Use Average Ratios for Specific Decisions"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Contribution Margin: The Service-Line Workhorse"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Once cases can be costed, the central tool for comparing them is contribution margin. Contribution margin measures the profitability of a case or service exclusive of indirect costs — that is, revenue minus the variable (direct) costs of providing the care, before subtracting overhead like administration, capital depreciation, and the cost of charity care. For a hospital paid a fixed amount per DRG (diagnosis-related group), contribution margin is calculated by comparing the case-related variable costs against the DRG payment for that case."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The reason contribution margin, rather than full cost, is the preferred tool for comparing treatments within a service line is subtle but important. Overhead is largely fixed and will be incurred whether or not a particular case is performed. So when deciding whether one more procedure is worth doing — or which procedures to grow — what matters is whether its revenue exceeds the additional variable cost it triggers. A procedure with a positive contribution margin helps cover the hospital’s fixed overhead even if, after full overhead allocation, it appears only marginally profitable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The numbers vary enormously by procedure and market. One analysis found contribution margins running thousands of dollars higher in concentrated (less competitive) hospital markets — about $5,259 higher for angioplasty, $4,123 for total knee replacement, $5,889 for total hip replacement, and $7,931 for lumbar spine fusion — than in competitive markets, reflecting the pricing power that comes with market concentration. The same procedure can be a financial winner or a loser depending on the payment rate, the patient’s payer, and the hospital’s cost structure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Which Service Lines Carry the Hospital?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Aggregate the contribution margins across a clinical line and you get service-line profitability — the financial scorecard hospital executives live by. The pattern is consistent across American hospitals: procedure-heavy specialties such as cardiovascular surgery, interventional cardiology, orthopedics, and neurosurgery consistently rank among the most profitable, while services like primary care, behavioral health, and obstetrics often run thin or negative margins despite being essential. An orthopedic surgeon generating around $2.7 million in annual hospital revenue illustrates why these lines command so much strategic attention."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "This profitability is exactly what funds the rest of the hospital. Positive contribution margins on orthopedic and cardiac procedures — especially for privately insured patients — are used to subsidize less remunerative procedures and patient groups, from money-losing behavioral health to charity care. Service-line analysis thus reveals the internal cross-subsidy that mirrors the payer-mix cross-subsidy: a handful of profitable lines keep the doors open for the mission-driven but unprofitable ones."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "A community hospital might assume its high-volume emergency department or its busy primary care clinics are financial pillars, simply because they are always full.\n\nService-line profitability reporting often overturns that assumption: those high-activity areas may carry thin or negative margins, while a lower-volume cardiac or orthopedic line quietly generates most of the contribution to margin. Leaders who assume a service line is profitable based on volume, referrals, or \"downstream revenue\" frequently find those assumptions don’t survive scrutiny — high activity does not guarantee positive margin. This is why CFOs insist on actual margin data rather than volume as the basis for strategy.",
+      "title": "Why Volume Can Deceive"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Turning Analysis Into Strategy — Carefully"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "With reliable cost-per-case and service-line data, leadership can make deliberate choices: grow the service lines with strong margins, invest in the staff and equipment that expand them, scrutinize lines that consume heavy resources for little contribution, and renegotiate or restructure money-losing arrangements. The purest financial logic says concentrate on the profitable lines and shed the unprofitable ones. Many hospital strategies — the marketing push behind a new orthopedic institute, the expansion of a cardiac program — flow directly from this analysis."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "A hospital’s service lines are like a grocery store’s departments. The store may sell mountains of low-margin staples like milk and bread (the high-volume ED and primary care), but it earns its real profit on the prepared foods and specialty items (cardiac and orthopedic procedures). A manager who judged each department only by how many customers it served would mismanage the store; the one who tracks margin by department knows which aisles fund the rest — and which loss leaders are worth keeping anyway.",
+      "concept": "Service-line profitability analysis"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "But pure financial logic runs straight into the hospital’s mission and obligations. The unprofitable service lines — behavioral health, obstetrics in rural areas, primary care, charity care — are often the ones a community most needs and, for nonprofit hospitals, the ones their tax-exempt community-benefit obligations require. A hospital that shed every money-losing line would betray its purpose and likely its legal standing. Service-line analysis must therefore inform strategy without dictating it; the goal is a sustainable portfolio, not the elimination of everything that loses money."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "There is also a methodological humility required. As the previous lesson showed, overhead allocation is judgment, so a line’s \"profitability\" depends partly on how costs were assigned. Good analysts distinguish contribution margin (clean, based on variable costs) from fully allocated margin (which carries allocation assumptions), and they incorporate downstream and total-cost-of-care effects rather than viewing each line in isolation. Done well, cost-per-case and service-line analysis are among the most powerful tools in hospital finance. Done carelessly, they can justify abandoning exactly the care a community depends on — which is why the numbers must always be read alongside the mission."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "Cost-per-case analysis estimates what treating one patient or procedure costs; service-line analysis aggregates cases into clinical lines to measure each line’s financial contribution and guide strategy.",
+        "Common cost-per-case methods trade accuracy for effort: ratio of cost to charges (RCC) is fast but crude, RVU-based costing reflects relative resource intensity, and microcosting is most accurate but labor-intensive.",
+        "Average-ratio methods like RCC are appropriate for high-level monitoring but unreliable for specific case- or contract-level decisions, which require methods that capture actual resource use.",
+        "Contribution margin — revenue minus variable (direct) costs, before overhead — is the preferred tool for comparing treatments, because fixed overhead is incurred regardless and a positive contribution margin helps cover it.",
+        "Procedure margins vary widely by market and payer; contribution margins ran thousands of dollars higher in concentrated markets (e.g., ~$5,889 for total hip replacement) than in competitive ones.",
+        "Procedure-heavy lines (cardiovascular surgery, interventional cardiology, orthopedics, neurosurgery) are consistently most profitable, while primary care, behavioral health, and obstetrics often run thin or negative margins.",
+        "Profitable lines internally cross-subsidize unprofitable but essential ones; high volume does not guarantee positive margin, so strategy should rest on actual margin data, not activity.",
+        "Service-line analysis must inform but not dictate strategy — unprofitable lines are often mission-critical and required by nonprofit community-benefit obligations, and \"profitability\" depends partly on overhead-allocation judgment."
+      ]
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] BCS ProSoft: \"Cost Accounting in Healthcare: 9 Strategies for Maximizing Margin\" — https://www.bcsprosoft.com/cost-accounting-in-healthcare-9-strategies-for-maximizing-margin/ — RCC, RVU-based costing, microcosting, and contribution-margin analysis as service-line tools."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Physicians Practice: \"Cost Accounting in the Medical Practice via RVU\" — https://www.physicianspractice.com/view/cost-accounting-medical-practice-rvu — RVU costing method (total expenses ÷ total RVUs × RVUs per procedure) and its limitations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] AJMC (Robinson): \"Hospital Market Concentration, Pricing, and Profitability in Orthopedic Surgery and Interventional Cardiology\" — https://www.ajmc.com/view/ajmc_11jun_robinson_e241_248 — contribution-margin definition and procedure-level margin gaps between concentrated and competitive markets (e.g., $5,889 hip replacement, $7,931 lumbar fusion)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Strata Decision Technology: \"Community Hospital Uses Service-Line Profitability Reporting to Drive Margin\" — https://www.stratadecision.com/article/community-hospital-uses-service-line-profitability-reporting-to-drive-margin — using service-line profitability data to guide growth and divestment decisions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Vizient: \"Optimizing service lines: better business, less busy-ness\" (2025) — https://www.vizientinc.com/insights/all/2025/optimizing-service-lines-better-business-less-busyness — high activity does not guarantee positive margin; reviewing direct margins across care settings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] SocialClimb: \"Why Your Most Profitable Service Lines Are Probably Undermarketed\" — https://socialclimb.com/blog/profitable-service-lines-are-undermarketed/ — cardiology/orthopedics/neurosurgery profitability, orthopedic surgeon ~$2.7M annual hospital revenue, and using positive margins to subsidize less remunerative care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "hospital-finance",
+  "order": 8,
+  "slug": {
+    "_type": "slug",
+    "current": "cost-per-case-service-line"
+  },
+  "title": "Cost Per Case and Service Line Analysis: Finding the Money in the Mix"
+}

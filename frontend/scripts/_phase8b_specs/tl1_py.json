@@ -1,0 +1,28 @@
+{
+ "file": "frontend/content/_lessons_transformation_leadership.py",
+ "claim": "tl-why-change-management-matters source: PMI stats misattributed; NPfIT \u00a310-12.7bn; risk assessments set aside; PMO on-time claim in takeaway/quiz",
+ "verdict": "MISATTRIBUTED",
+ "src": "PMI Pulse 2013 ($135M at risk per $1B; $20M vs $280M), 2017 (38% more projects meet original goals with strategy-aligned EPMO), 2020 (67% more fail outright); PAC HC 294 (2013) \u00a39.8bn estimated cost; no source for \u00a310-12.7bn or risk assessments set aside",
+ "pairs": [
+  [
+   "        ('$135M', 'Lost per $1B in failed projects', 'PMI, Pulse of the Profession \u2014 unrecoverable loss on projects that fail outright'),\n        ('$20M vs. $280M', 'Risk per $1B spent, high- vs. low-performers', 'PMI \u2014 the gap between organizations with strong project delivery discipline and those without'),\n        ('38%', 'More projects delivered on time and on budget', 'PMI \u2014 organizations with an established Project Management Office (PMO) vs. those without one'),\n        ('67%', 'More projects fail outright', 'PMI \u2014 organizations that treat project management as a non-strategic function'),",
+   "        ('$135M', 'At risk per $1B spent on projects', 'PMI, Pulse of the Profession 2013 \u2014 money put at risk by poor project performance'),\n        ('$20M vs. $280M', 'Risk per $1B spent, high- vs. low-performers', 'PMI, Pulse of the Profession 2013 \u2014 the gap between high-performing organizations and low performers'),\n        ('38%', 'More projects meet original goals', 'PMI, Pulse of the Profession 2017 \u2014 organizations whose enterprise PMO is aligned to strategy'),\n        ('67%', 'More projects fail outright', 'PMI, Pulse of the Profession 2020 \u2014 organizations that undervalue project management as a strategic competency'),"
+  ],
+  [
+   "        'Service, NPfIT was stopped early in 2011 after the UK government had spent an estimated \u00a39.8 billion '\n        'on it \u2014 with independent reviews and retrospectives placing total realized and sunk costs as high as '\n        '\u00a310\u201312.7 billion once contract terminations and write-offs are included. The core information-'",
+   "        'Service, NPfIT was dismantled in 2011; in 2013 Parliament\\'s Public Accounts Committee put its '\n        'estimated cost at \u00a39.8 billion and warned the final bill was likely to be higher. The core information-'"
+  ],
+  [
+   "        'engagement with clinicians and other frontline stakeholders during design, and risk assessments that '\n        'were produced and then set aside rather than acted on.\\n'",
+   "        'engagement with clinicians and other frontline stakeholders during design.\\n'"
+  ],
+  [
+   "        'PMI\\'s research finds organizations without a PMO complete fewer projects on time and on budget, and organizations",
+   "        'PMI\\'s research finds organizations with a strategy-aligned enterprise PMO see more projects meet their original goals, and organizations"
+  ],
+  [
+   "        'PMI\\'s research found organizations that do not treat project management as a strategic competency '\n        'report an average of 67% more of their projects failing outright, and separately found PMO '\n        'organizations complete 38% more projects on time and on budget than those without one.'),",
+   "        'PMI\\'s 2020 Pulse of the Profession found organizations that undervalue project management as a strategic competency '\n        'report an average of 67% more of their projects failing outright; its 2017 edition separately found organizations '\n        'with a strategy-aligned enterprise PMO report 38% more projects meeting their original goals.'),"
+  ]
+ ]
+}

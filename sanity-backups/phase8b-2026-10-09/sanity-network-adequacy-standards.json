@@ -1,0 +1,465 @@
+{
+  "_createdAt": "2026-05-31T18:08:30Z",
+  "_id": "network-adequacy-standards",
+  "_rev": "glqH7a4yvZFQerxZdPdpOv",
+  "_type": "academyModule",
+  "_updatedAt": "2026-05-31T18:08:30Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A Network Is Only Real If You Can Reach It"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A managed care plan’s most basic promise is access: that its enrollees can actually get the care they need from the providers in its network. But \"having a network\" on paper means nothing if the listed doctors are too far away, booked for months, no longer practicing, or not accepting Medicaid patients. Network adequacy is the set of standards and oversight that turns the promise of a network into a reality enrollees can use. It is where the abstract idea of \"access to care\" becomes measurable — in miles, minutes, ratios, and days."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The stakes are not theoretical. Medicaid serves people who often face transportation barriers, limited time off work, disabilities, and language barriers. For them, a provider 90 minutes away or with a three-month wait is effectively no provider at all. Network adequacy standards exist precisely because a capitated plan has a financial incentive to keep its network lean — and because a thin network is one of the quietest ways a plan can under-deliver care while still technically covering the benefit."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson goes deeper into the network adequacy requirements introduced in the federal-framework lesson, focusing on how adequacy is actually defined and measured — and confronting the persistent gap between networks as reported and networks as experienced, the problem of \"ghost networks.\""
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Key Concept: Network adequacy standards require a plan to maintain enough accessible providers to serve its enrollees, measured through time-and-distance limits, provider-to-enrollee ratios, and appointment wait-time standards (42 CFR 438.68). The challenge is ensuring the network is real in practice, not just on paper."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "More than one-third of doctors listed in Medicaid networks did not provide care to Medicaid patients in 2023 — inflating networks on paper (Lown Institute)",
+          "label": "Medicaid \"Ghost\" Providers",
+          "value": ">1 in 3"
+        },
+        {
+          "_key": "s2",
+          "context": "In one study of Oregon Medicaid, 58.2% of behavioral health network listings were \"phantom\" providers who did not see Medicaid patients (Health Affairs / PMC)",
+          "label": "Phantom Providers (Oregon BH)",
+          "value": "58.2%"
+        }
+      ]
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How Network Adequacy Is Measured"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "States use several complementary types of standards to measure network adequacy, and most use more than one. Time-and-distance standards limit how far or how long an enrollee should have to travel to reach a provider of a given type — for example, a primary care physician within 30 minutes or 15 miles. Provider-to-enrollee ratios require a minimum number of providers relative to the enrolled population, ensuring there are enough providers to go around. And appointment wait-time standards, added by the 2024 final rule, limit how long an enrollee must wait to be seen."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Under 42 CFR 438.68, states must develop quantitative network adequacy standards (other than wait times) for specified provider types if covered under the contract — primary care (adult and pediatric), OB/GYN, behavioral health, specialists, hospitals, pharmacy, and pediatric dental, among others. In setting time-and-distance standards, states must consider the geographic location of providers and enrollees, the distance and travel time involved, and the means of transportation Medicaid enrollees ordinarily use — a recognition that a car-owning suburbanite and a bus-dependent rural enrollee face very different \"distances\" to the same provider."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The 2024 final rule added the appointment wait-time standards covered in the federal-framework lesson: routine appointments within 15 business days for primary care and OB/GYN, and within 10 business days for outpatient mental health and substance use care. These standards phase in over time — the rule’s key provisions apply to contracts beginning roughly three to four years after the rule’s July 9, 2024 effective date — giving states and plans time to build the monitoring infrastructure. Wait-time standards matter because they capture a dimension that geography misses: a provider can be close by and still inaccessible if they cannot see the patient for months."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2steps1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "Limit how far/long an enrollee travels to reach each provider type, considering transportation actually used.",
+          "title": "Time-and-distance standards"
+        },
+        {
+          "_key": "step2",
+          "description": "Require enough providers relative to the enrolled population.",
+          "title": "Provider-to-enrollee ratios"
+        },
+        {
+          "_key": "step3",
+          "description": "Cap how long an enrollee waits (15 days primary/OB-GYN, 10 days behavioral health under the 2024 rule).",
+          "title": "Appointment wait-time standards"
+        },
+        {
+          "_key": "step4",
+          "description": "Account for telemedicine and innovative access, especially where in-person providers are scarce.",
+          "title": "Telehealth and flexibility"
+        }
+      ],
+      "title": "The Tools for Measuring Network Adequacy"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Ghost Network Problem"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "For decades, network adequacy was judged largely on the provider lists plans submitted — and that created a gaping vulnerability. Plans can report large networks that bear little relation to the care enrollees can actually obtain, a phenomenon known as \"ghost networks\" or \"phantom networks.\" The numbers are alarming: research found that more than one-third of doctors listed in Medicaid networks did not provide care to Medicaid patients in 2023, and in one study of Oregon Medicaid behavioral health, 58.2% of network directory listings were phantom providers who did not see Medicaid patients."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Ghost networks arise in several ways. A listed provider may have moved, retired, or died; may not actually accept the plan’s Medicaid product; or may not be taking new patients. Sometimes the directory information is simply wrong. The effect is the same regardless of cause: the network looks adequate on paper while enrollees, especially those seeking behavioral health care, call provider after provider and cannot get an appointment. The problem is most severe precisely where access is most critical — behavioral health, where directories are notoriously inaccurate and HHS oversight has repeatedly found limited networks padded with inactive providers."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3w1",
+      "_type": "warningBlock",
+      "message": "A plan can fully satisfy a count-based or distance-based standard while delivering little actual access, because the listed providers are inactive, mislisted, or closed to new Medicaid patients. This is why modern oversight tests directories against reality rather than trusting the plan’s submitted lists.",
+      "title": "A Paper Network Is Not a Real Network"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Testing the Network Against Reality"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Closing the gap between reported and real networks requires verification, and the 2024 rule’s central tool is the secret shopper survey. States must use annual secret shopper surveys to test plan compliance with appointment wait-time standards and to assess the accuracy of provider directories. A third party — independent of both the state and the plans — poses as an enrollee and tries to schedule an appointment with a directory-listed provider. This directly tests what a real member experiences, exposing the ghost providers that paper reviews miss."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Network adequacy verification is also built into the oversight system covered earlier: validation of plan network adequacy is a mandatory External Quality Review activity, with states and EQROs required to use a network adequacy validation protocol. This layers independent EQRO validation on top of secret-shopper testing and the plans’ own Network Adequacy and Access Assurances Reports — multiple checks designed to catch the discrepancy between what plans claim and what enrollees can actually access."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Yet verification means little without enforcement, and here the record has been weak. Enforcement of network adequacy standards has been notably limited: from 2016 to 2022, CMS sent letters to only five insurers whose plans failed network adequacy requirements, and had imposed no sanctions for network adequacy failures as of 2024. Penalties, when assessed, often fail to produce sustained change. The 2024 rule’s stronger measurement tools are a meaningful step, but the persistent gap between detecting inadequacy and penalizing it remains the field’s central unsolved problem."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Network Adequacy Is the Truest Test of Access"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Network adequacy is where managed care’s promise is most directly tested, because it concerns the single thing enrollees care about most: can I actually see a doctor when I need one? Every other element — the capitation rate, the quality measures, the contract terms — is ultimately in service of this. A program can be financially sound and well-governed and still fail its members if they cannot get appointments. This is why network adequacy has become a focal point of regulation, and why the 2024 rule invested so heavily in measuring it more honestly."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5an1",
+      "_type": "analogyBlock",
+      "analogy": "A provider directory without verification is like a restaurant guide that lists hundreds of places without checking which are still open. The guide looks impressive and the \"network\" seems vast — until you drive across town to three listings that turned out to be closed, moved, or not taking reservations. The secret shopper survey is the guide’s editor actually calling each restaurant to confirm it exists and can seat you. A directory is only as good as the verification behind it; the same is true of a provider network.",
+      "concept": "Reported networks vs. verified access"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The flexibility states have in defining standards is both a strength and a weakness. It lets a state tailor standards to its geography — a rural state needs different time-and-distance limits than a dense urban one, and telehealth can legitimately extend access where in-person providers are scarce. But that same flexibility means standards vary widely in rigor, and a state can set standards loose enough that almost any network passes. Combined with weak enforcement, this is how inadequate networks persist despite a framework designed to prevent them. Stronger measurement helps only if states are willing to set meaningful standards and act on violations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This lesson connects the benefits-and-network module to the access goals at the heart of the federal framework. The carve-in/carve-out decision set the scope of what a plan covers; network adequacy ensures the plan has real providers for those covered services; and the next lesson, on provider credentialing, concerns how plans actually bring providers into the network. Network adequacy is the bridge between a covered benefit and a delivered service — and the place where the difference between a network that exists on paper and one that works in practice is decided."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tk",
+      "_type": "takeawayBlock",
+      "points": [
+        "Network adequacy standards require a plan to maintain enough accessible providers to serve its enrollees, turning the abstract promise of \"access\" into measurable limits — and they counter a capitated plan’s incentive to keep networks lean.",
+        "States measure adequacy with multiple complementary tools: time-and-distance standards, provider-to-enrollee ratios, and (from the 2024 rule) appointment wait-time standards, often supplemented by telehealth.",
+        "Under 42 CFR 438.68, states set quantitative standards for specified provider types and, for time-and-distance, must consider providers’ and enrollees’ locations, travel time, and the transportation enrollees ordinarily use.",
+        "The 2024 final rule added wait-time standards (15 business days for primary care/OB-GYN, 10 for outpatient behavioral health) that phase in roughly three to four years after the July 9, 2024 effective date.",
+        "\"Ghost networks\" are a pervasive problem: more than one-third of Medicaid network doctors did not see Medicaid patients in 2023, and 58.2% of listings were phantom in one Oregon behavioral health study — networks that look adequate on paper but fail in practice.",
+        "Verification tools test directories against reality: annual secret shopper surveys by independent third parties, plus network adequacy validation as a mandatory External Quality Review activity.",
+        "Enforcement has been weak — CMS sent only five network-adequacy letters from 2016–2022 and had imposed no sanctions as of 2024 — leaving a persistent gap between detecting inadequacy and penalizing it.",
+        "Network adequacy is the truest test of access (can a member actually see a doctor?), and state flexibility in setting standards is both a strength (tailoring to geography and telehealth) and a weakness (loose standards plus weak enforcement let inadequate networks persist)."
+      ]
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] eCFR: \"42 CFR 438.68 — Network adequacy standards\" — https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-438/subpart-B/section-438.68 — quantitative standards for specified provider types, time-and-distance factors (location, travel time, transportation), and phase-in timing for the 2024 provisions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] KFF: \"Medicaid Managed Care Network Adequacy & Access: Current Standards and Proposed Changes\" — https://www.kff.org/medicaid/medicaid-managed-care-network-adequacy-access-current-standards-and-proposed-changes/ — the array of standards (time-and-distance, provider-to-enrollee ratios, wait times) and state flexibility in defining them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Policy Center for Maternal Mental Health: \"New CMS Rules Finalized Addressing Medicaid Provider Network Adequacy and Appointment Wait Times\" — https://policycentermmh.org/new-cms-rules-finalized-addressing-medicaid-provider-network-adequacy-and-appointment-wait-times/ — 2024 wait-time standards and the independent secret shopper survey requirement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Lown Institute: \"Ghost networks abound in Medicare Advantage and Medicaid, research shows\" — https://lowninstitute.org/ghost-networks-abound-in-medicare-advantage-and-medicaid-research-shows/ — more than one-third of Medicaid network doctors not providing care to Medicaid patients in 2023."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] PMC / Health Affairs: \"Phantom Networks: Discrepancies Between Reported And Realized Mental Health Care Access In Oregon Medicaid\" — https://pmc.ncbi.nlm.nih.gov/articles/PMC9876384/ — 58.2% phantom provider listings in Oregon Medicaid behavioral health."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] KFF: \"Network Adequacy Standards and Enforcement\" — https://www.kff.org/affordable-care-act/issue-brief/network-adequacy-standards-and-enforcement/ — weak enforcement record (five CMS letters 2016–2022, no sanctions as of 2024) and network adequacy validation as a mandatory EQR activity."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicaid-managed-care-operations",
+  "order": 11,
+  "slug": {
+    "_type": "slug",
+    "current": "network-adequacy-standards"
+  },
+  "title": "Network Adequacy Standards and Time-Distance Requirements"
+}

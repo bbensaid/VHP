@@ -1,0 +1,46 @@
+{
+  "id": "f8655541-41f0-4e3d-b1a5-d8f6a035c87b",
+  "track_id": "740f7b13-ca71-422c-b21b-1676739bdbc5",
+  "pillar": "economics",
+  "order": 1,
+  "slug": "era-eob-reconciliation",
+  "title": "ERA/EOB Reconciliation and Payment Posting",
+  "summary": "Accurate and timely payment posting from electronic remittance advices is essential for maintaining clean AR and identifying underpayments.",
+  "estimated_minutes": 18,
+  "objectives": [
+    "Distinguish between ERA (835) and paper EOB and explain how each is processed",
+    "Describe the payment posting workflow including contractual adjustment posting",
+    "Explain how to identify and pursue payer underpayments"
+  ],
+  "content_blocks": [
+    {
+      "body": "**Electronic Remittance Advice (ERA / 835):** The HIPAA-standard electronic transaction that payers send to providers detailing claim adjudication — payment amounts, contractual adjustments, and denial codes. ERAs enable automated payment posting and significantly reduce manual processing.\n\n**Explanation of Benefits (EOB):** The paper or PDF equivalent of an ERA, sent to both the provider and patient. EOBs are processed manually, increasing labor costs and error rates.\n\nBest-practice organizations achieve 90%+ ERA adoption rates, limiting paper EOB processing to payers that do not support 835 transactions.",
+      "type": "text",
+      "heading": "ERA vs. EOB"
+    },
+    {
+      "body": "Payer underpayments — where the payer pays less than the contracted rate — are common and often overlooked. Causes include:\n\n- Incorrect fee schedule loaded in the payer's system\n- Modifier not recognized or applied incorrectly\n- Bundling of services that should be paid separately\n- Wrong DRG assignment on inpatient claims\n\nPayment variance analysis compares expected payment (based on contract) to actual payment for every claim. Organizations with automated contract management systems recover 1–3% of net revenue from identified underpayments.",
+      "type": "text",
+      "heading": "Identifying Underpayments"
+    },
+    {
+      "body": "Payment posting must occur within 24–48 hours of receipt to maintain accurate AR visibility. Delayed posting makes it impossible to identify truly outstanding claims versus paid claims not yet posted — leading to duplicate follow-up calls, wasted staff time, and inaccurate financial reporting.",
+      "type": "callout",
+      "title": "Timely Posting is Critical",
+      "variant": "tip"
+    }
+  ],
+  "tags": [
+    "ERA",
+    "EOB",
+    "payment posting",
+    "835",
+    "underpayments",
+    "remittance"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:31:27.714967+00:00",
+  "updated_at": "2026-06-01T13:14:49.729077+00:00",
+  "sanity_slug": "era-eob-reconciliation"
+}

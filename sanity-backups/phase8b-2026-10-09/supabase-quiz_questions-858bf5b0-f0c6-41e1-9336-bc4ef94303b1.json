@@ -1,0 +1,9 @@
+{
+  "id": "858bf5b0-f0c6-41e1-9336-bc4ef94303b1",
+  "quiz_id": "8f6a536a-1162-4c18-91c7-c322ec46cfc0",
+  "order": 2,
+  "question_type": "single_choice",
+  "question": "Under 42 CFR §438.214, how often must MCOs recredential network providers?",
+  "explanation": "42 CFR §438.214 requires MCOs to recredential all network providers at minimum every three years, ensuring that credentials remain current and adverse actions are identified.",
+  "points": null
+}

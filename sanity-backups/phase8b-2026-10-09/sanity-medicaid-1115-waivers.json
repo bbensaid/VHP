@@ -1,0 +1,517 @@
+{
+  "_createdAt": "2026-06-01T00:43:08Z",
+  "_id": "medicaid-1115-waivers",
+  "_rev": "rL4Cn5Sfo5Z8rzPmELP7BF",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T00:43:08Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How States Bend the Rules"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Medicaid is governed by a detailed set of federal requirements in the Social Security Act. But the law also contains a powerful escape hatch: Section 1115. This provision lets the Secretary of Health and Human Services approve experimental, pilot, or demonstration projects that depart from the normal rules, as long as the Secretary finds they are likely to promote the objectives of the Medicaid program."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "In practice, Section 1115 lets a state ask the federal government for permission to run its Medicaid program differently than the statute would otherwise allow — covering populations or services that are not normally eligible, testing new payment models, or restructuring delivery. It is the single most flexible tool in Medicaid, and it has made the program a genuine laboratory for policy experimentation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The breadth of the authority is striking: under Section 1115, the Secretary can waive almost any of the state plan requirements in Section 1902 of the Act to the extent necessary to carry out the demonstration. That is why 1115 waivers can reshape a state's program in ways that look very different from \"textbook\" Medicaid."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A Section 1115 demonstration waiver lets the HHS Secretary approve state Medicaid projects that depart from normal federal rules, as long as they are found likely to promote the objectives of Medicaid. It is the program's most flexible authority."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The Budget Neutrality Guardrail"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The flexibility of Section 1115 is not unlimited. The central guardrail is \"budget neutrality\": over the life of the demonstration, federal Medicaid spending under the waiver may not exceed what federal spending would have been without it. In other words, a state can rearrange how federal dollars are used, but it generally cannot use a waiver to draw down more federal money than it otherwise would have."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Budget neutrality is a longstanding policy and practice rather than an explicit statutory command, and it is typically calculated on a per-enrollee basis. This lets a state reinvest projected savings from one part of its program into new services elsewhere — funding innovations without increasing net federal cost."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This requirement is why waiver negotiations are so technical. Much of the back-and-forth between a state and CMS is about how to project the \"without-waiver\" baseline and demonstrate that the proposed demonstration will stay within it over the approval period."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2hl1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2hl1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Budget neutrality is the core guardrail of Section 1115: federal spending under the waiver cannot exceed what it would have been without the waiver, usually measured on a per-enrollee basis."
+        }
+      ],
+      "markDefs": [],
+      "style": "highlight"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "How a Waiver Gets Approved"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Getting an 1115 waiver is a deliberate, transparent process. Before a state even submits its application to CMS, federal rules require it to provide public notice and hold a state-level public comment period of at least 30 days, publishing the application, objectives, and estimated impact on enrollment and spending."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Once the state submits a complete application, CMS opens its own 30-day federal public comment period, posting the application and collecting comments online. CMS then reviews each proposed policy case by case to judge whether it aligns with Medicaid's objectives, and negotiates terms with the state — a process that can stretch from several months to a couple of years."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Because 1115 authority is meant for research and demonstration, states must also commit to evaluation. They are required to have an approved, publicly available evaluation strategy and to submit interim and final (\"summative\") evaluation reports, so that the lessons of each experiment are documented."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3st1",
+      "_type": "stepBlock",
+      "steps": [
+        {
+          "_key": "step1",
+          "description": "The state publishes its proposal and holds a state-level comment period of at least 30 days.",
+          "title": "State public notice & comment"
+        },
+        {
+          "_key": "step2",
+          "description": "The state submits the application; CMS confirms completeness within 15 days.",
+          "title": "Submission to CMS"
+        },
+        {
+          "_key": "step3",
+          "description": "CMS opens a 30-day federal comment period and negotiates terms — often taking months to years.",
+          "title": "Federal comment & negotiation"
+        },
+        {
+          "_key": "step4",
+          "description": "CMS approves for an initial 5-year period; the state must evaluate results and report back.",
+          "title": "Approval & evaluation"
+        }
+      ],
+      "title": "The 1115 Waiver Lifecycle"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "What States Use Waivers For"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Section 1115 waivers have been used for an enormous range of purposes, and the dominant uses shift with each administration's priorities. Some states have used waivers to expand coverage to new populations; others to restructure financing; others to test conditions on eligibility. The same tool can be pointed in very different policy directions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Three recurring categories illustrate the range. Some administrations approved work and community-engagement requirements, conditioning coverage for some adults on employment or related activities. Many states have used Delivery System Reform Incentive Payment (DSRIP) waivers to fund provider-led delivery system transformation. And more recently, states have used waivers to address health-related social needs (HRSN) such as housing and nutrition."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This flexibility is why people call 1115 waivers \"laboratories of democracy\" — they let individual states test approaches that, if successful, can inform national policy, and if unsuccessful, are contained to the demonstration rather than imposed everywhere."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Coverage & Eligibility",
+        "points": [
+          "Expanding coverage to new populations",
+          "Testing work / community-engagement requirements",
+          "Modifying benefit packages"
+        ]
+      },
+      "right": {
+        "label": "Delivery & Social Needs",
+        "points": [
+          "DSRIP delivery system transformation",
+          "Health-related social needs (housing, nutrition)",
+          "New payment and care-coordination models"
+        ]
+      },
+      "title": "Common Uses of Section 1115 Waivers"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Real Demonstrations in Action"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Concrete examples show how varied these demonstrations are. In 2011, CMS approved Texas's 1115 waiver, which paired an uncompensated-care funding pool with a DSRIP program to fund innovative initiatives for Medicaid beneficiaries. New York launched its own DSRIP program under an 1115 waiver approved in 2014, focused on reducing avoidable hospital use, before it expired in 2020."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "More recently, the federal government approved a wave of waivers addressing health-related social needs. As of early 2024, eight states — including Arizona, Arkansas, California, Massachusetts, New Jersey, New York, Oregon, and Washington — had approved demonstrations authorizing evidence-based housing and nutrition services for specific high-need populations."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Across the country, 1115 demonstrations are now widespread: there were roughly 64 approved waivers spanning about 47 states as of 2024. That near-universal adoption is why understanding 1115 authority is essential to understanding how Medicaid actually operates state by state — the \"rules\" in any given state are often shaped as much by its waivers as by the base statute."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5ex1",
+      "_type": "exampleBlock",
+      "content": "Beginning in the 2020s, CMS approved Section 1115 waivers letting states use Medicaid to pay for evidence-based health-related social needs — such as short-term housing supports and medically tailored nutrition — for targeted high-need populations.\nStates including California, Massachusetts, and others used this authority to test whether addressing social drivers of health can improve outcomes and reduce costly medical care, exactly the kind of experiment Section 1115 was designed to enable.",
+      "title": "HRSN Waivers for Housing and Nutrition"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Section 1115 of the Social Security Act lets the HHS Secretary approve demonstration projects that depart from normal Medicaid rules if they promote the program's objectives.",
+        "Under 1115, the Secretary can waive almost any state plan requirement in Section 1902 to the extent needed to run the demonstration.",
+        "The central guardrail is budget neutrality: federal spending under the waiver cannot exceed what it would have been without it, usually measured per enrollee.",
+        "Approval requires both state and federal public comment periods (30 days each) and case-by-case CMS review and negotiation, often taking months to years.",
+        "Demonstrations are generally approved for an initial five-year period and require an evaluation strategy with interim and final reports.",
+        "States use waivers for very different goals — expanding coverage, testing work requirements, DSRIP delivery reform, and health-related social needs like housing and nutrition.",
+        "1115 waivers are nearly universal (roughly 64 approved waivers across about 47 states in 2024), so a state's real Medicaid program is often shaped as much by its waivers as by the base statute."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Budget neutrality means that over the life of the demonstration, federal Medicaid spending under the waiver cannot exceed projected federal spending without it — typically calculated on a per-enrollee basis. It lets states reinvest projected savings into innovations without increasing net federal cost.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The state must balance its overall budget before applying"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "Federal Medicaid spending under the waiver may not exceed what it would have been without the waiver"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The waiver must save the federal government money every year"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The state and federal government must each pay exactly 50%"
+        }
+      ],
+      "question": "What is the \"budget neutrality\" requirement for a Section 1115 demonstration waiver?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] About Section 1115 Demonstrations — https://www.medicaid.gov/medicaid/section-1115-demonstrations/about-section-1115-demonstrations/index.html — Secretary authority to approve demonstrations promoting Medicaid objectives"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] Section 1115 research and demonstration waivers — https://www.macpac.gov/subtopic/section-1115-research-and-demonstration-waivers/ — waives §1902 requirements; budget neutrality; 5-year terms; evaluation requirements"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Medicaid Section 1115 Waivers: The Basics — https://www.kff.org/medicaid/medicaid-section-1115-waivers-the-basics/ — budget neutrality per-enrollee; uses including work requirements, DSRIP, HRSN"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Improved Review and Approval Process for Section 1115 Demonstrations (CMS) — https://www.cms.gov/newsroom/fact-sheets/improved-review-and-approval-process-section-1115-medicaid-demonstration-projects — state and federal 30-day public comment periods; 15-day completeness review"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Section 1115 Medicaid Waiver Watch: HRSN Approvals — https://www.kff.org/medicaid/section-1115-medicaid-waiver-watch-a-closer-look-at-recent-approvals-to-address-health-related-social-needs-hrsn/ — eight states with HRSN housing/nutrition waivers as of early 2024"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Medicaid Waiver Tracker: Approved and Pending Section 1115 Waivers by State — https://www.kff.org/medicaid/medicaid-waiver-tracker-approved-and-pending-section-1115-waivers-by-state/ — ~64 approved waivers across ~47 states; Texas and New York DSRIP examples"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "medicaid-101",
+  "order": 7,
+  "slug": {
+    "_type": "slug",
+    "current": "medicaid-1115-waivers"
+  },
+  "title": "Section 1115 Waivers: Laboratories of Democracy"
+}

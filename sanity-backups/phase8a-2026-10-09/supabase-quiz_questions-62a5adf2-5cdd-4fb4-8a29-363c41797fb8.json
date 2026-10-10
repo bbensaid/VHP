@@ -1,0 +1,9 @@
+{
+  "id": "62a5adf2-5cdd-4fb4-8a29-363c41797fb8",
+  "quiz_id": "019a8d4c-3ed9-440c-8115-bde4f76f6e56",
+  "order": 1,
+  "question_type": "single_choice",
+  "question": "A hospital has operating income of $10M on total operating revenue of $250M. What is its operating margin?",
+  "explanation": "Operating Margin = Operating Income / Total Operating Revenue = $10M / $250M = 4.0%. This puts the hospital at the high end of the HFMA healthy range of 2–4%.",
+  "points": null
+}

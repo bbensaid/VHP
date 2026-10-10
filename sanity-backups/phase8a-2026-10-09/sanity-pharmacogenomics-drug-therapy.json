@@ -1,0 +1,493 @@
+{
+  "_createdAt": "2026-06-01T18:37:48Z",
+  "_id": "pharmacogenomics-drug-therapy",
+  "_rev": "IOfxRsA0kr16lzZkUtxPaS",
+  "_type": "academyModule",
+  "_updatedAt": "2026-06-01T18:37:48Z",
+  "body": [
+    {
+      "_key": "s1h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Why the Same Drug Works Differently in Different People"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Every prescriber has seen it: the same medication, at the same dose, helps one patient, does nothing for another, and causes a dangerous reaction in a third. Much of that variability is not random — it is genetic. Pharmacogenomics is the study of how a person's genetic variations affect their response to medications, and it is one of the most immediately practical applications of genomics in everyday care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The core idea is that genes — especially those encoding drug-metabolizing enzymes — vary between people, and those variations change how a drug is processed. A patient who metabolizes a drug too slowly can accumulate it to toxic levels at a standard dose; one who metabolizes it too fast may never reach an effective level; and for \"prodrugs\" that must be activated by an enzyme, a poor metabolizer may get no benefit at all. The genotype predicts the response."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "This matters enormously because adverse drug reactions are a major cause of harm and cost, and much of it is preventable with genetic information. Pharmacogenomics lets clinicians move from one-size-fits-all prescribing toward the precision-medicine ideal of \"the right drug, at the right dose, for the right patient\" — guided by the patient's genes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Pharmacogenomics studies how genetic variation affects drug response. Variants in drug-metabolizing genes change how a drug is processed, so genotype can predict who will respond, who won't, and who is at risk of harm — enabling \"right drug, right dose.\""
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "s2h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Metabolizer Phenotypes"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The central concept is the metabolizer phenotype. Many important drugs are processed by enzymes in the cytochrome P450 family — particularly CYP2D6 and CYP2C19 — and genetic variants change how active those enzymes are. Based on their variants, patients are classified into metabolizer categories that predict drug handling."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "There are four main phenotypes. Poor metabolizers (PM) have little or no enzyme activity. Intermediate metabolizers (IM) have reduced activity. Normal metabolizers (NM) have typical activity (the assumption standard dosing is built on). And ultrarapid metabolizers (UM) have unusually high activity. For CYP2D6, this is quantified with an \"activity score\": 0 is a poor metabolizer, around 0.5 intermediate, 1-2 normal, and above 2 ultrarapid."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s2p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "The clinical consequence flips depending on whether the drug is active as given or a prodrug. For an active drug cleared by the enzyme, a poor metabolizer accumulates it (toxicity risk) and an ultrarapid metabolizer clears it too fast (treatment failure). For a prodrug that the enzyme must activate, it is reversed: a poor metabolizer gets little active drug (no effect) and an ultrarapid metabolizer can generate dangerously high levels. This prodrug reversal is the source of some of the most dramatic pharmacogenomic events."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s2t1",
+      "_type": "code",
+      "code": [
+        {
+          "Active_Drug": "Accumulates (toxicity risk)",
+          "Enzyme_Activity": "Little or none",
+          "Phenotype": "Poor_(PM)",
+          "Prodrug": "Little activation (no effect)"
+        },
+        {
+          "Active_Drug": "Somewhat elevated",
+          "Enzyme_Activity": "Reduced",
+          "Phenotype": "Intermediate_(IM)",
+          "Prodrug": "Reduced activation"
+        },
+        {
+          "Active_Drug": "Expected",
+          "Enzyme_Activity": "Typical",
+          "Phenotype": "Normal_(NM)",
+          "Prodrug": "Expected activation"
+        },
+        {
+          "Active_Drug": "Cleared too fast (failure)",
+          "Enzyme_Activity": "Very high",
+          "Phenotype": "Ultrarapid_(UM)",
+          "Prodrug": "Over-activation (toxicity risk)"
+        }
+      ],
+      "language": "json",
+      "title": "CYP Metabolizer Phenotypes"
+    },
+    {
+      "_key": "s3h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Classic Clinical Examples"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Pharmacogenomics is not theoretical — specific, well-established drug-gene pairs change prescribing today. Clopidogrel (Plavix), an antiplatelet drug given after cardiac stenting, is a prodrug activated by CYP2C19. Patients with loss-of-function CYP2C19 variants (around 3 percent of Europeans and 15-20 percent of East Asians) activate it poorly, get reduced protection, and face higher rates of adverse cardiac events and stent thrombosis — so genotype guides whether to use clopidogrel or an alternative."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Warfarin, the blood thinner with a notoriously narrow therapeutic window, is dosed partly by CYP2C9 and VKORC1 genotype — its FDA label includes a genotype-based dosing table. Codeine is a prodrug activated by CYP2D6 to morphine; ultrarapid metabolizers can generate dangerously high morphine levels, and reports of harm to breastfed neonates of ultrarapid-metabolizer mothers led to major safety warnings."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s3p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s3p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Some of the most striking examples are HLA-related severe reactions. Abacavir (an HIV drug) causes life-threatening hypersensitivity in patients carrying HLA-B*5701 — so testing is required before prescribing, and it is contraindicated if positive. Carbamazepine (an anticonvulsant) can cause Stevens-Johnson syndrome and toxic epidermal necrolysis in patients of East Asian ancestry carrying HLA-B*1502, so the FDA label recommends screening first. These are cases where a single genetic test prevents catastrophic, sometimes fatal, drug reactions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4ex1",
+      "_type": "exampleBlock",
+      "content": "Before the pharmacogenomic link was known, the HIV drug abacavir caused unpredictable, sometimes fatal hypersensitivity reactions in some patients. Researchers discovered the reaction is strongly tied to carrying the HLA-B*5701 allele.\nNow HLA-B*5701 testing is standard before prescribing abacavir, and the drug is contraindicated (with a black-box warning) in those who test positive — a single genetic test that essentially eliminates a life-threatening reaction. It is one of pharmacogenomics' clearest success stories.",
+      "title": "HLA-B*5701 and Abacavir"
+    },
+    {
+      "_key": "s4h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Turning Genotype Into Prescribing: CPIC"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Knowing a patient is a CYP2C19 poor metabolizer is useless unless the clinician knows what to DO about it. Translating genotype into prescribing guidance is the job of the Clinical Pharmacogenetics Implementation Consortium (CPIC), which publishes peer-reviewed, regularly updated guidelines for specific drug-gene pairs — telling clinicians exactly how to adjust drug choice or dose for each phenotype."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "CPIC guidelines cover the major actionable pairs — CYP2C19 and clopidogrel, CYP2C9/VKORC1 and warfarin, SLCO1B1 and statins (muscle-toxicity risk), CYP2D6/CYP2C19 and antidepressants, and many more. They convert a genotype result into a concrete recommendation (\"use an alternative antiplatelet,\" \"reduce the starting dose,\" \"avoid this drug\"), which is what makes pharmacogenomics usable at the point of care. The FDA also annotates many drug labels with pharmacogenomic information."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s4p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "A practical caution: genotype is powerful but not the whole story. A patient's effective metabolizer status can also be influenced by age, diet, other medications (drug-drug interactions can mimic a poor-metabolizer state), smoking, pregnancy, and comorbidities. Pharmacogenomics informs prescribing; it does not replace clinical judgment. The genotype is a strong input, interpreted in the full clinical context."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s4w1",
+      "_type": "warningBlock",
+      "message": "For a normally active drug, poor metabolizers risk toxicity (drug accumulates) and ultrarapid metabolizers risk failure (drug cleared too fast). For a PRODRUG that must be activated by the enzyme (e.g., clopidogrel, codeine), it reverses: poor metabolizers get no effect, and ultrarapid metabolizers can reach dangerous levels. Always know whether the drug is active or a prodrug before interpreting a metabolizer result.",
+      "title": "Prodrugs Reverse the Logic"
+    },
+    {
+      "_key": "s5h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5h1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Preemptive Testing and the Path Forward"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "s5p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Pharmacogenomic testing can be done reactively (test when a specific drug is being considered) or preemptively (test once, store the results, and consult them whenever any pharmacogenomically relevant drug is prescribed). Because a person's germline pharmacogenes never change, preemptive testing is increasingly favored: sequence the relevant genes once, and the information is available for a lifetime of prescribing decisions — drug and dose selection, avoiding adverse events, before the first prescription is even written."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Preemptive testing is a natural fit for population health and the cheap-sequencing era: a single panel of pharmacogenes covers dozens of common drugs, and the results, integrated into the EHR with decision support (the subject of a later lesson), can alert prescribers automatically. This is precision medicine operationalized — the genotype quietly shaping safer prescribing across a patient's care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "s5p3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "s5p3s",
+          "_type": "span",
+          "marks": [],
+          "text": "Pharmacogenomics is arguably the most \"ready for primetime\" application of clinical genomics: the science is solid for many drug-gene pairs, CPIC provides actionable guidance, the FDA annotates labels, and the testing is cheap. Its main barriers are now implementation — getting testing done, results into the EHR, and guidance to the prescriber at the right moment — rather than the underlying science. It is a concrete, everyday example of how reading a patient's genes makes care safer and more effective, and it sets up the broader clinical-genomics applications in the next lessons."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Pharmacogenomics studies how genetic variation affects drug response, enabling \"right drug, right dose\" and preventing many adverse drug reactions.",
+        "Drug-metabolizing enzymes (especially CYP2D6 and CYP2C19) vary genetically, classifying patients as poor, intermediate, normal, or ultrarapid metabolizers.",
+        "For an active drug, poor metabolizers risk toxicity and ultrarapid metabolizers risk treatment failure; for a prodrug, the logic reverses.",
+        "Classic examples: clopidogrel-CYP2C19 (reduced effect in poor metabolizers), warfarin-CYP2C9/VKORC1 (genotype-guided dosing), codeine-CYP2D6 (UM toxicity risk), abacavir-HLA-B*5701 and carbamazepine-HLA-B*1502 (severe-reaction risk).",
+        "CPIC publishes guidelines translating genotype into concrete prescribing recommendations, and the FDA annotates many drug labels with pharmacogenomic information.",
+        "Effective metabolizer status can also be affected by age, diet, drug-drug interactions, smoking, and comorbidities, so genotype informs but does not replace clinical judgment.",
+        "Preemptive testing (test once, consult for a lifetime) is increasingly favored; pharmacogenomics is the most \"ready for primetime\" clinical genomics application, with implementation now the main barrier."
+      ]
+    },
+    {
+      "_key": "qz",
+      "_type": "knowledgeCheck",
+      "explanation": "Clopidogrel is a prodrug, so it must be activated by CYP2C19 to work. A poor metabolizer activates little of it, gets reduced antiplatelet effect, and faces higher rates of adverse cardiac events and stent thrombosis. (This is the reverse of an active drug, where a poor metabolizer would accumulate it.) CPIC guidelines therefore recommend considering an alternative antiplatelet for CYP2C19 poor metabolizers — a concrete example of genotype guiding prescribing.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "The drug accumulates to toxic levels"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The patient activates little of the drug, gets reduced antiplatelet protection, and faces higher risk of adverse cardiac events — so an alternative antiplatelet is often used"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "The genotype has no effect on a prodrug"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The patient becomes an ultrarapid metabolizer"
+        }
+      ],
+      "question": "Clopidogrel is a prodrug that must be activated by the CYP2C19 enzyme. What happens in a patient who is a CYP2C19 poor metabolizer?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] CPIC Guideline for CYP2D6 and CYP2C19 Genotypes and SSRI Dosing (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC4512908/ — metabolizer phenotypes (PM/IM/NM/UM); activity scores; CPIC guidance"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] CPIC: The Clinical Pharmacogenetics Implementation Consortium (RPh Labs) — https://rphlabs.com/cpic/ — CPIC guidelines for major drug-gene pairs (clopidogrel, warfarin, statins)"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] Clinical Use of Pharmacogenomic Tests (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC2702214/ — clopidogrel-CYP2C19 (3% Europeans, 15-20% Asians); warfarin; abacavir HLA-B*5701; carbamazepine HLA-B*1502"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] Pharmacogenetic Gene-Drug Associations: FDA Perspective (AAFP) — https://www.aafp.org/pubs/afp/issues/2021/0700/p16.html — FDA drug-label annotations; actionable gene-drug associations"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] Using Pharmacogenomics to Personalise Drug Therapy: Which Drugs, When and How (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC12187479/ — preemptive testing; prodrug vs active drug logic; clinical application"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src6s",
+          "_type": "span",
+          "marks": [],
+          "text": "[6] Pharmacogenetics: An Important Part of Drug Development (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC7255432/ — codeine-CYP2D6 ultrarapid metabolizer risk; HLA-related severe reactions"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "genomics-precision-medicine",
+  "order": 4,
+  "slug": {
+    "_type": "slug",
+    "current": "pharmacogenomics-drug-therapy"
+  },
+  "title": "Pharmacogenomics: Right Drug, Right Dose"
+}

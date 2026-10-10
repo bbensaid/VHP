@@ -1,0 +1,420 @@
+{
+  "_createdAt": "2026-09-22T19:18:59Z",
+  "_id": "hea-measurement-foundations",
+  "_rev": "emp4phc5XG2oL4iPFmxKXq",
+  "_type": "academyModule",
+  "_updatedAt": "2026-09-22T19:18:59Z",
+  "body": [
+    {
+      "_key": "l1s1h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l1s1hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Naming a Gap Is Not Measuring It"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l1s1p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l1s1p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "A companion course on this platform, \"Health Equity & SDOH: From Awareness to Action,\" covers what a disparity is, why the United States has more of them than peer nations, and why they are treated as unjust rather than inevitable. This course starts one step further down the pipeline. Assume a system has already accepted that a disparity is a problem worth solving. The next question is entirely different in kind: how do you measure it reliably enough to act on, and honestly enough to know later whether the action actually worked?"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l1s1p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l1s1p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "That turns out to be a genuinely hard analytic problem, not a simple counting exercise. Every disparity measurement requires a numerator, a denominator, a reference group to compare against, a sample large enough to trust, and a choice among several defensible ways to summarize the resulting gap. Different defensible choices, applied to the exact same underlying reality, produce different-looking pictures of it. This course is about making those choices well and disclosing them honestly — the discipline the book calls the Equity Imperative, translated into method."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l1s1c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l1s1c1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Health equity analytics is the set of methods for turning a suspected disparity into a defensible, actionable number — and for being explicit about every judgment call embedded in that number."
+        }
+      ],
+      "markDefs": [],
+      "style": "callout"
+    },
+    {
+      "_key": "l1s1sg1",
+      "_type": "statGrid",
+      "stats": [
+        {
+          "_key": "s1",
+          "context": "NCQA — nearly a 4.4x expansion in two measurement years",
+          "label": "NCQA HEDIS measures stratified by race/ethnicity, MY2022 → MY2024",
+          "value": "5 → 22"
+        },
+        {
+          "_key": "s2",
+          "context": "CMS Office of Minority Health",
+          "label": "Priorities in the CMS Framework for Health Equity 2022–2032",
+          "value": "5"
+        },
+        {
+          "_key": "s3",
+          "context": "Peer-reviewed SDOH Z-code adoption study, PMC",
+          "label": "Inpatient admissions coded with an SDOH Z-code",
+          "value": "1.9%"
+        },
+        {
+          "_key": "s4",
+          "context": "CMS Office of Minority Health",
+          "label": "Year CMS launched the Mapping Medicare Disparities Tool",
+          "value": "2016"
+        }
+      ]
+    },
+    {
+      "_key": "l1s2h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l1s2hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The Five-Dimension Framework This Course Teaches"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l1s2p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l1s2p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "This platform's own Health Equity Studio computes a composite it calls HEROI — Health Equity Return on Investment — as a weighted average across five dimensions: Access Equity (25%), Quality Equity (25%), Outcome Equity (25%), SDOH Burden (15%), and Trust & Engagement (10%). Those five weights are not arbitrary; they come from the book's own definition of the metric (Chapter 10, section 13.1) and they map directly onto the five lessons in this course."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l1s2p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l1s2p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "Lesson 2 covers the decomposition arithmetic underneath Access, Quality, and Outcome equity — rate differences, rate ratios, and summary indices. Lesson 3 covers how quality gets stratified in practice through HEDIS and NCQA reporting. Lesson 4 covers how SDOH Burden actually gets scored, from individual screening tools to area-level composite indices. Lesson 5 covers the weighting logic itself — how five separate 0–100 scores become one number — using HEROI as a fully worked, hands-on example. Lesson 6 closes the loop from score to organizational action."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l1ex1",
+      "_type": "exampleBlock",
+      "content": "This platform's Health Equity Studio implements the exact five-dimension framework this course teaches, live, in the Research Lab. Open /research-lab/population-equity?tab=equity and select the \"HEROI Composite Score\" tab.\nYou will see all five dimensions computed from the same underlying disparity, geographic-access, and SDOH data — with the tool's own inline notes documenting exactly which upstream tab feeds each weighted input. Adjust the population sliders on the Disparity Calculator tab first, then return to the HEROI tab to see the composite update. Treat this as a running reference through the rest of the course, not a one-time visit.",
+      "title": "Try the Tool Directly"
+    },
+    {
+      "_key": "l1s3h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l1s3hs",
+          "_type": "span",
+          "marks": [],
+          "text": "The Measurement Build-Out — and Where It Has Stalled"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l1s3p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l1s3p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "The infrastructure for this kind of measurement has expanded rapidly since 2022. NCQA began requiring race and ethnicity stratification for HEDIS measures in Measurement Year 2022, starting with 5 measures; that grew to 22 measures by Measurement Year 2024, part of what NCQA describes as folding health equity into all of its offerings rather than treating it as a side program. Separately, the CMS Office of Minority Health published a ten-year Framework for Health Equity 2022–2032, organized around five priorities, the first of which is expanding the collection, reporting, and analysis of standardized demographic data — the raw material every method in this course depends on."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l1s3p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l1s3p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "But measurement infrastructure and payment incentive are not the same system, and they are not currently moving at the same speed. CMS's Contract Year 2027 Medicare Advantage and Part D final rule did not implement the previously proposed Health Equity Index reward for Star Ratings — a reward that would have specifically incentivized closing gaps for disadvantaged enrollees. Instead, CMS continued the historical Reward Factor, which rewards consistently high performance across all enrollees rather than the narrowing of gaps between them. NCQA's own stratification requirement kept expanding in the same period. A careful analyst reads both facts together: the ability to see a disparity is not the same as an entity being financially rewarded for closing it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l1w1",
+      "_type": "warningBlock",
+      "message": "Watch for this pattern across every lesson in this course: measurement infrastructure (the ability to see a gap) tends to move ahead of incentive infrastructure (a financial or regulatory reason to close it). A well-built analytic tool can tell you precisely how large a disparity is without anyone being obligated to act on the number.",
+      "title": "A Recurring Pattern"
+    },
+    {
+      "_key": "l1t1",
+      "_type": "code",
+      "code": [
+        {
+          "Focus": "Expand the collection, reporting, and analysis of standardized demographic data",
+          "Priority": "1"
+        },
+        {
+          "Focus": "Assess causes of disparities within CMS programs; address inequities in policies and operations",
+          "Priority": "2"
+        },
+        {
+          "Focus": "Build capacity of health care organizations and the workforce to reduce disparities",
+          "Priority": "3"
+        },
+        {
+          "Focus": "Advance language access, health literacy, and culturally tailored services",
+          "Priority": "4"
+        },
+        {
+          "Focus": "Increase all forms of accessibility to health care services and coverage",
+          "Priority": "5"
+        }
+      ],
+      "language": "json",
+      "title": "CMS Framework for Health Equity 2022–2032 — Five Priorities"
+    },
+    {
+      "_key": "l1an1",
+      "_type": "analogyBlock",
+      "analogy": "A home inspector does not issue one overall \"condition score\" for a house. They check the roof, the foundation, the wiring, and the plumbing separately, because a house can be sound in three of those and failing in the fourth — and averaging the four into one number would hide exactly the failure a buyer needs to know about.",
+      "concept": "Why health equity analytics scores five separate dimensions (Access, Quality, Outcome, SDOH Burden, Trust) instead of one blended equity number"
+    },
+    {
+      "_key": "l1s4h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l1s4hs",
+          "_type": "span",
+          "marks": [],
+          "text": "Why Data Completeness Breaks Naive Measurement"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "l1s4p1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l1s4p1s",
+          "_type": "span",
+          "marks": [],
+          "text": "Every method in this course depends on demographic and social-risk data actually existing for the population being measured — and that data is frequently incomplete in ways that are easy to miss. Race and ethnicity fields go unanswered at enrollment. Social risk factors go undocumented in a clinical encounter even when a patient discloses them verbally, because documenting them requires an extra coding step a busy clinician may skip."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l1s4p2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "l1s4p2s",
+          "_type": "span",
+          "marks": [],
+          "text": "The scale of that gap is measurable in its own right. ICD-10-CM has carried a dedicated block of diagnosis codes for social determinants — Z55 through Z65, covering housing instability, food insecurity, transportation barriers, and similar factors — for years, and the Gravity Project has partnered with the American Medical Association to build standardized crosswalks from common screening tools directly to those codes. Despite that infrastructure, one peer-reviewed study found that only about 1.9% of inpatient hospital admissions carried an SDOH Z-code. A scoring system built on top of that data does not see zero social risk where a code is absent — it sees an absence of documentation, and it will systematically understate the true burden unless it corrects for that gap."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "l1cmp1",
+      "_type": "comparisonBlock",
+      "left": {
+        "label": "Under-measurement",
+        "points": [
+          "Real disparities go undetected because demographic/SDOH data is incomplete",
+          "A composite score looks better than the underlying reality because bad news never gets coded",
+          "Resources get allocated as if the problem does not exist"
+        ]
+      },
+      "right": {
+        "label": "Over-interpretation",
+        "points": [
+          "A rate built from a handful of patients is treated as a stable, real disparity",
+          "Small-cell noise gets reported as an actionable finding",
+          "An analyst chases a \"gap\" that disappears with the next quarter's data"
+        ]
+      },
+      "title": "Two Ways a Measurement Program Can Fail"
+    },
+    {
+      "_key": "l1tw",
+      "_type": "takeawayBlock",
+      "points": [
+        "Health equity analytics is the discipline of measuring a disparity reliably and honestly, not just naming that one exists.",
+        "This platform's HEROI composite weights five dimensions — Access (25%), Quality (25%), Outcome (25%), SDOH Burden (15%), Trust & Engagement (10%) — and this course is built lesson-by-lesson around those five dimensions.",
+        "NCQA expanded race/ethnicity-stratified HEDIS measures from 5 (MY2022) to 22 (MY2024), a real and rapid build-out of measurement infrastructure.",
+        "CMS declined to implement a proposed Health Equity Index reward for 2027 Medicare Advantage Star Ratings, continuing the historical Reward Factor instead — measurement and incentive are not moving at the same pace.",
+        "Only about 1.9% of inpatient admissions carry an SDOH Z-code despite the codes and crosswalks existing — a documentation gap that will understate any claims-based social-risk score.",
+        "Both under-measurement (missing real gaps due to incomplete data) and over-interpretation (treating small-sample noise as a real finding) are failure modes this course teaches you to guard against.",
+        "The Health Equity Studio's HEROI Composite Score tab is a live, hands-on implementation of the framework this course teaches — use it throughout, not just once."
+      ]
+    },
+    {
+      "_key": "l1qz",
+      "_type": "knowledgeCheck",
+      "explanation": "National data shows SDOH Z-code use around 1.9% of inpatient admissions despite CDC/WHO emphasis on their use and active crosswalk tools from the Gravity Project and AMA — the low rate reflects a documentation gap, not a true absence of need.",
+      "options": [
+        {
+          "_key": "opt1",
+          "isCorrect": false,
+          "text": "Only 2% of patients have any social risk factors"
+        },
+        {
+          "_key": "opt2",
+          "isCorrect": true,
+          "text": "The documentation rate is low; the true prevalence of social risk is very likely higher than the coded rate suggests"
+        },
+        {
+          "_key": "opt3",
+          "isCorrect": false,
+          "text": "SDOH Z-codes are not a real part of ICD-10-CM"
+        },
+        {
+          "_key": "opt4",
+          "isCorrect": false,
+          "text": "The hospital is legally barred from coding social risk factors"
+        }
+      ],
+      "question": "A hospital reports that only 2% of its admissions carry an SDOH Z-code. What is the most defensible interpretation?"
+    },
+    {
+      "_key": "src",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "srcs",
+          "_type": "span",
+          "marks": [],
+          "text": "Sources"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "src1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src1s",
+          "_type": "span",
+          "marks": [],
+          "text": "[1] NCQA, Race and Ethnicity Stratification of HEDIS Measures — https://www.ncqa.org/health-equity/data-and-measurement/ — MY2022 (5 measures) to MY2024 (22 measures) stratification expansion"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src2s",
+          "_type": "span",
+          "marks": [],
+          "text": "[2] CMS Office of Minority Health, CMS Framework for Health Equity 2022–2032 — https://www.cms.gov/files/document/cms-framework-health-equity.pdf — the five priorities"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src3s",
+          "_type": "span",
+          "marks": [],
+          "text": "[3] CMS, Contract Year 2027 Medicare Advantage and Part D Final Rule Fact Sheet — https://www.cms.gov/newsroom/fact-sheets/contract-year-2027-medicare-advantage-part-d-final-rule — Health Equity Index reward not implemented; historical Reward Factor continued"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src4s",
+          "_type": "span",
+          "marks": [],
+          "text": "[4] SDOH ICD-10 Z-code adoption study — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12608873/ — ~1.9% of inpatient admissions coded with an SDOH Z-code"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "src5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "src5s",
+          "_type": "span",
+          "marks": [],
+          "text": "[5] CMS, Mapping Medicare Disparities (MMD) Tool — https://www.cms.gov/priorities/health-equity/minority-health/research-data/mapping-medicare-disparities-tool-mmd — launched March 2016"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "courseSlug": "health-equity-analytics",
+  "order": 1,
+  "slug": {
+    "_type": "slug",
+    "current": "hea-measurement-foundations"
+  },
+  "title": "From Awareness to Measurement: Why Health Equity Needs Analytics"
+}

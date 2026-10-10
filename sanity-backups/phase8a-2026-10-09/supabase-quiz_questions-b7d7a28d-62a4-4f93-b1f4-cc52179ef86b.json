@@ -1,0 +1,9 @@
+{
+  "id": "b7d7a28d-62a4-4f93-b1f4-cc52179ef86b",
+  "quiz_id": "6583b757-55eb-43b5-958f-289b34b541ac",
+  "order": 1,
+  "question_type": "single_choice",
+  "question": "What percentage of U.S. hospitals were estimated to be operating at negative margins in 2022–2023?",
+  "explanation": "Following the pandemic, approximately 30% of U.S. hospitals operated at negative operating margins in 2022–2023, driven by labor cost inflation (especially travel nursing premiums), supply chain disruption, and below-inflation Medicare rate updates.",
+  "points": null
+}

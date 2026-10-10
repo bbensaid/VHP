@@ -1,0 +1,99 @@
+{
+  "id": "c0250996-29ce-4fd6-81bb-c602473d7a43",
+  "track_id": "4291a5b8-615b-4672-a17c-026bb8be5b86",
+  "pillar": "policy",
+  "order": 3,
+  "slug": "federal-framework-438",
+  "title": "Federal Framework: 42 CFR Part 438 and CHIP Rules",
+  "summary": "Provides a detailed overview of the federal regulatory framework governing Medicaid managed care, focusing on 42 CFR Part 438 subparts and key 2016 and 2024 regulatory updates.",
+  "estimated_minutes": 25,
+  "objectives": [
+    "Identify the major subparts of 42 CFR Part 438 and their regulatory scope",
+    "Explain the key changes introduced by the 2016 Medicaid managed care final rule",
+    "Describe how CHIP managed care rules relate to and differ from Medicaid rules"
+  ],
+  "content_blocks": [
+    {
+      "body": "Title 42, Code of Federal Regulations, Part 438 is the primary federal regulatory framework for Medicaid managed care. First substantially revised in 2002 and comprehensively overhauled in 2016, it governs how states structure, procure, and oversee managed care contracts.\n\n**Key Subparts:**\n- **Subpart A** — General provisions, definitions (MCO, PAHP, PIHP, PCCM)\n- **Subpart B** — State responsibilities: contract requirements, actuarial soundness\n- **Subpart C** — Enrollee rights and protections, marketing standards\n- **Subpart D** — Access and availability: network adequacy, timely access\n- **Subpart E** — Quality measurement and improvement (QAP requirements)\n- **Subpart F** — Grievance and appeal systems\n- **Subpart G** — External Quality Review (EQRO requirements)\n- **Subpart H** — Payments: actuarial soundness, MLR, risk corridors",
+      "type": "text",
+      "heading": "42 CFR Part 438: The Regulatory Backbone"
+    },
+    {
+      "body": "CMS's 2016 Medicaid managed care final rule (81 FR 27498) was the most comprehensive update since 2002. Key provisions included: mandatory Medical Loss Ratio (MLR) floor of 85% for MCOs; new network adequacy standards with time and distance requirements; enhanced enrollee protections; strengthened EQRO requirements; and new encounter data reporting mandates. The 2024 Access rule further strengthened network adequacy and added new appointment wait time standards.",
+      "type": "callout",
+      "title": "The 2016 Final Rule: Modernizing Managed Care Oversight",
+      "variant": "key"
+    },
+    {
+      "type": "glossary_terms",
+      "terms": [
+        {
+          "term": "MCO (Managed Care Organization)",
+          "definition": "An entity bearing full financial risk for a comprehensive set of Medicaid services, paid via capitation under 42 CFR Part 438"
+        },
+        {
+          "term": "PAHP (Prepaid Ambulatory Health Plan)",
+          "definition": "An entity providing only ambulatory services on a capitated basis — e.g., dental or vision carve-outs"
+        },
+        {
+          "term": "PIHP (Prepaid Inpatient Health Plan)",
+          "definition": "An entity providing inpatient services on a capitated basis, commonly used for behavioral health carve-outs"
+        },
+        {
+          "term": "Actuarial Soundness",
+          "definition": "Federal requirement under 42 CFR §438.4 that capitation rates be sufficient to cover expected costs for the covered population, determined by a qualified actuary"
+        },
+        {
+          "term": "EQRO",
+          "definition": "External Quality Review Organization — an independent entity contracted to assess MCO quality, access, and timeliness of care under 42 CFR §438.350–370"
+        }
+      ]
+    },
+    {
+      "rows": [
+        [
+          "MCO",
+          "Comprehensive (physical, BH, LTSS)",
+          "Full capitation risk",
+          "Most Medicaid beneficiaries"
+        ],
+        [
+          "PIHP",
+          "Inpatient/specialty (e.g., BH)",
+          "Capitated, limited scope",
+          "Behavioral health carve-outs"
+        ],
+        [
+          "PAHP",
+          "Ambulatory only",
+          "Capitated, ambulatory",
+          "Dental, vision, transportation"
+        ],
+        [
+          "PCCM",
+          "Care coordination only",
+          "No financial risk",
+          "Rural/low-density markets"
+        ]
+      ],
+      "type": "comparison_table",
+      "headers": [
+        "Entity Type",
+        "Services Covered",
+        "Risk Level",
+        "Common Use"
+      ]
+    }
+  ],
+  "tags": [
+    "42 CFR Part 438",
+    "federal regulation",
+    "CMS",
+    "CHIP"
+  ],
+  "related_lesson_ids": [],
+  "is_published": true,
+  "created_at": "2026-05-27T02:35:06.200848+00:00",
+  "updated_at": "2026-06-01T13:29:15.105008+00:00",
+  "sanity_slug": "federal-framework-438"
+}
