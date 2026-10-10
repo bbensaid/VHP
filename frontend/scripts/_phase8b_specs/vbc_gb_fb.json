@@ -1,0 +1,42 @@
+{
+ "pairs": [
+  {
+   "old": "Results after 5 years: Maryland hospitals generated $1.2B in Medicare savings, achieved lower per-capita cost growth than national trends, and showed quality improvements — particularly in preventable hospitalizations and readmissions.",
+   "new": "Results after 5 years: the independent evaluation (RTI International, 2019) found $975 million in Medicare savings from 2014 to 2018 — total Medicare spending grew 2.8 percent more slowly than in a comparison group, with $796 million of the savings from hospital spending.",
+   "claim": "fallback: 'Results after 5 years: Maryland hospitals generated $1.2B in Medicare savings ... quality improvements in preventable hospitalizations and readmissions'",
+   "verdict": "FABRICATED",
+   "src": "RTI International final evaluation of the Maryland All-Payer Model (Nov 2019): $975M Medicare savings 2014-2018 (2.8% slower total spending growth), $796M from hospital spending",
+   "note": ""
+  },
+  {
+   "old": "now runs in Maryland, Connecticut, Hawaii, Rhode Island and downstate New York;",
+   "new": "began performance in Maryland in 2026, with Connecticut, Hawaii, Rhode Island and downstate New York slated to follow;",
+   "claim": "fallback: AHEAD 'now runs in Maryland, Connecticut, Hawaii, Rhode Island and downstate New York'",
+   "verdict": "FABRICATED",
+   "src": "AHEAD: Maryland in performance from Jan 2026; Connecticut, Hawaii, Rhode Island and five downstate New York counties in later cohorts (Becker's / AHCA-NCAL / LeadingAge on CMS AHEAD changes)",
+   "note": ""
+  },
+  {
+   "old": "Maryland: the only all-payer global budget state",
+   "new": "Maryland: the statewide all-payer global budget pioneer",
+   "claim": "fallback heading: 'the only all-payer global budget state' (Pennsylvania Rural Health Model also used all-payer global budgets 2019-2024)",
+   "verdict": "MISATTRIBUTED",
+   "src": "Health Affairs Forefront on PRHM (all-payer global budgets for rural hospitals, 2019-2024), matching lesson body s4p2",
+   "note": ""
+  }
+ ],
+ "supa": [
+  {
+   "table": "lessons",
+   "col": "content_blocks",
+   "ids": [
+    "6b9ad961-e44e-4d4b-bd8f-c24f239a56f1"
+   ]
+  }
+ ],
+ "files": [
+  "frontend/content/course_value_based_care.json",
+  "frontend/content/courses_tier1.json",
+  "frontend/content/expand_vbc.json"
+ ]
+}

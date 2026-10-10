@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "old": "CMS has begun incorporating PROs into several programs: joint replacement bundles require functional outcome reporting, MIPS has PRO-based quality measures, and the ACO PC Flex model incorporates patient experience measures.",
+   "new": "CMS has begun incorporating PROs into several programs: the CJR joint replacement model rewarded hospitals for submitting HOOS JR and KOOS JR functional outcome data, the Hospital IQR Program adopted a hip and knee replacement PRO performance measure, and MIPS includes PRO-based quality measures.",
+   "claim": "fallback callout: joint replacement bundles 'require' functional outcome reporting; ACO PC Flex 'incorporates patient experience measures' (patient experience is not a PRO)",
+   "verdict": "MISATTRIBUTED",
+   "src": "CMS CJR: voluntary PRO data submission rewarded in composite quality score since 2016; Hospital IQR THA/TKA PRO-PM (matches lesson body pro-p9/pro-p12)",
+   "note": ""
+  }
+ ],
+ "supa": [
+  {
+   "table": "lessons",
+   "col": "content_blocks",
+   "ids": [
+    "8627c012-ae45-451a-82f6-0ae0b1f45a93"
+   ]
+  }
+ ],
+ "files": [
+  "frontend/content/course_value_based_care.json",
+  "frontend/content/courses_tier1.json",
+  "frontend/content/expand_vbc.json"
+ ]
+}

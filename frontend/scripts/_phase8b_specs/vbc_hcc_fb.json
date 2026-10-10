@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "old": "2. Diagnoses map to one of 86 HCC categories (e.g., HCC 19 = diabetes without complications, HCC 18 = diabetes with chronic complications)",
+   "new": "2. Diagnoses map to one of 115 payment HCC categories in the current V28 model (the V24 model it replaced had 86; there, HCC 19 = diabetes without complications, HCC 18 = diabetes with chronic complications)",
+   "claim": "fallback: diagnoses map to 'one of 86 HCC categories' (V24; V28 has 115, fully phased in 2026)",
+   "verdict": "MISATTRIBUTED",
+   "src": "CMS V28: 115 payment HCCs, 100% of 2026 payment (V24: 86)",
+   "note": ""
+  }
+ ],
+ "supa": [
+  {
+   "table": "lessons",
+   "col": "content_blocks",
+   "ids": [
+    "48247e64-0e6f-434f-8c38-2d497d909c76"
+   ]
+  }
+ ],
+ "files": [
+  "frontend/content/course_value_based_care.json",
+  "frontend/content/courses_tier1.json",
+  "frontend/content/expand_vbc.json"
+ ]
+}
