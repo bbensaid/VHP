@@ -1,0 +1,70 @@
+{
+ "edits": [
+  {
+   "table": "quiz_questions",
+   "id": "a4c785f0-a3f2-41e5-95a4-bb68a073f26f",
+   "expect": {
+    "question": "What ERA adoption rate should best-practice organizations target?"
+   },
+   "set": {
+    "question": "Which electronic transaction pairs with the ERA (835) to create a fully electronic payment cycle?",
+    "explanation": "The ERA explains how a claim was paid, while EFT (electronic funds transfer) delivers the money directly to the provider's bank account. Together they let payments post automatically and be reconciled to bank deposits; the 837 is the outgoing claim and the 270/271 is an eligibility inquiry."
+   },
+   "claim": "quiz: best-practice organizations should target 90%+ ERA adoption",
+   "verdict": "UNVERIFIABLE",
+   "src": "No source for a 90%+ ERA adoption \"best practice\", 1-3% of net revenue recovered from underpayments (only vendor blogs; same claim fixed in payer-contracts), or a 24-48 hour posting rule; replacement question tests the lesson\u2019s ERA+EFT cycle (HIPAA 835 + EFT)"
+  },
+  {
+   "table": "quiz_options",
+   "id": "5541e296-9379-460a-8399-a6074bfa3920",
+   "expect": {
+    "text": "50%"
+   },
+   "set": {
+    "text": "The 837 claim transaction"
+   },
+   "claim": "quiz option rewritten with question",
+   "verdict": "UNVERIFIABLE",
+   "src": "No source for a 90%+ ERA adoption \"best practice\", 1-3% of net revenue recovered from underpayments (only vendor blogs; same claim fixed in payer-contracts), or a 24-48 hour posting rule"
+  },
+  {
+   "table": "quiz_options",
+   "id": "1df8ee0c-21e3-4483-96b9-e7f2dd924c48",
+   "expect": {
+    "text": "70%"
+   },
+   "set": {
+    "text": "The 270/271 eligibility inquiry"
+   },
+   "claim": "quiz option rewritten with question",
+   "verdict": "UNVERIFIABLE",
+   "src": "No source for a 90%+ ERA adoption \"best practice\", 1-3% of net revenue recovered from underpayments (only vendor blogs; same claim fixed in payer-contracts), or a 24-48 hour posting rule"
+  },
+  {
+   "table": "quiz_options",
+   "id": "99a39fb3-2c94-444c-98fb-0a1137e513f0",
+   "expect": {
+    "text": "90%+"
+   },
+   "set": {
+    "text": "EFT (electronic funds transfer)"
+   },
+   "claim": "quiz correct option rewritten with question",
+   "verdict": "UNVERIFIABLE",
+   "src": "No source for a 90%+ ERA adoption \"best practice\", 1-3% of net revenue recovered from underpayments (only vendor blogs; same claim fixed in payer-contracts), or a 24-48 hour posting rule"
+  },
+  {
+   "table": "quiz_options",
+   "id": "d7ecabc4-6b8e-4867-b624-7f15de2c2ebb",
+   "expect": {
+    "text": "100% is not achievable"
+   },
+   "set": {
+    "text": "A paper EOB"
+   },
+   "claim": "quiz option rewritten with question",
+   "verdict": "UNVERIFIABLE",
+   "src": "No source for a 90%+ ERA adoption \"best practice\", 1-3% of net revenue recovered from underpayments (only vendor blogs; same claim fixed in payer-contracts), or a 24-48 hour posting rule"
+  }
+ ]
+}

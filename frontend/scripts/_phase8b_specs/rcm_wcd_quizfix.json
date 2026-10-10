@@ -1,0 +1,44 @@
+{
+ "edits": [
+  {
+   "table": "quiz_questions",
+   "id": "c22f6a57-807c-45b9-8e02-87e589bc7fe4",
+   "expect": {
+    "question": "What percentage of claim denials are considered preventable according to MGMA data?"
+   },
+   "set": {
+    "question": "According to Change Healthcare's 2020 Denials Index, what share of claim denials are potentially avoidable?",
+    "explanation": "Change Healthcare's 2020 Denials Index found that 86% of denials are potentially avoidable through better registration and eligibility checks, authorization tracking, documentation, coding, and pre-submission edits."
+   },
+   "claim": "quiz: 67% of denials preventable according to MGMA data",
+   "verdict": "MISATTRIBUTED",
+   "src": "Change Healthcare 2020 Revenue Cycle Denials Index (Becker's, search 2026-10-09): 86% of denials potentially avoidable; Change Healthcare Healthy Hospital Revenue Cycle Index (2016 data): ~3.3% of net patient revenue put at risk by denials. No MGMA source for 67% preventable; no source for 9% net revenue lost"
+  },
+  {
+   "table": "quiz_options",
+   "id": "536c5906-6c94-41f4-b431-4689b219d8c1",
+   "expect": {
+    "text": "67%"
+   },
+   "set": {
+    "text": "86%"
+   },
+   "claim": "quiz option: 67% (MGMA) correct answer",
+   "verdict": "MISATTRIBUTED",
+   "src": "Change Healthcare 2020 Revenue Cycle Denials Index (Becker's, search 2026-10-09): 86% of denials potentially avoidable; Change Healthcare Healthy Hospital Revenue Cycle Index (2016 data): ~3.3% of net patient revenue put at risk by denials. No MGMA source for 67% preventable; no source for 9% net revenue lost"
+  },
+  {
+   "table": "quiz_options",
+   "id": "725f8c81-004a-4c79-9829-7f10e74116e6",
+   "expect": {
+    "text": "90%"
+   },
+   "set": {
+    "text": "10%"
+   },
+   "claim": "quiz distractor 90% too close to corrected 86% answer",
+   "verdict": "UPDATED",
+   "src": "Change Healthcare 2020 Revenue Cycle Denials Index (Becker's, search 2026-10-09): 86% of denials potentially avoidable; Change Healthcare Healthy Hospital Revenue Cycle Index (2016 data): ~3.3% of net patient revenue put at risk by denials. No MGMA source for 67% preventable; no source for 9% net revenue lost"
+  }
+ ]
+}

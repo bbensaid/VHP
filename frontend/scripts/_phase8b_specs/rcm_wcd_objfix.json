@@ -1,0 +1,39 @@
+{
+ "lessonIds": [
+  "ce84ad38-7dd2-41c6-8ee0-ccbd3e45a56a"
+ ],
+ "files": [
+  "frontend/content/course_revenue_cycle.json",
+  "frontend/content/courses_tier3.json"
+ ],
+ "edits": [
+  {
+   "match": {
+    "label": "Denials that are preventable",
+    "value": "67%"
+   },
+   "set": {
+    "value": "86%",
+    "label": "Denials that are potentially avoidable",
+    "context": "Change Healthcare 2020 Revenue Cycle Denials Index"
+   },
+   "claim": "fallback stat: 67% of denials preventable (MGMA data)",
+   "verdict": "MISATTRIBUTED",
+   "src": "Change Healthcare 2020 Revenue Cycle Denials Index (Becker's, search 2026-10-09): 86% of denials potentially avoidable; Change Healthcare Healthy Hospital Revenue Cycle Index (2016 data): ~3.3% of net patient revenue put at risk by denials. No MGMA source for 67% preventable; no source for 9% net revenue lost"
+  },
+  {
+   "match": {
+    "label": "Average net revenue lost to unrecovered denials",
+    "value": "9%"
+   },
+   "set": {
+    "value": "3.3%",
+    "label": "Net patient revenue put at risk by denials",
+    "context": "Typical health system, 2016 (Change Healthcare Healthy Hospital Revenue Cycle Index)"
+   },
+   "claim": "fallback stat: 9% average net revenue lost to unrecovered denials",
+   "verdict": "UNVERIFIABLE",
+   "src": "Change Healthcare 2020 Revenue Cycle Denials Index (Becker's, search 2026-10-09): 86% of denials potentially avoidable; Change Healthcare Healthy Hospital Revenue Cycle Index (2016 data): ~3.3% of net patient revenue put at risk by denials. No MGMA source for 67% preventable; no source for 9% net revenue lost"
+  }
+ ]
+}

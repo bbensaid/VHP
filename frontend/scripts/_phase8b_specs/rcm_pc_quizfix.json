@@ -1,0 +1,64 @@
+{
+ "edits": [
+  {
+   "table": "quiz_questions",
+   "id": "ec5227bf-7dd8-43fa-b0f7-d209559ed539",
+   "expect": {
+    "question": "What did the CFPB's 2025 medical debt rule change?"
+   },
+   "set": {
+    "question": "What happened to the CFPB's January 2025 rule removing medical debt from credit reports?"
+   },
+   "claim": "quiz question presents vacated CFPB rule as in force",
+   "verdict": "OUTDATED",
+   "src": "CFPB final rule Jan 7 2025 (Troutman/CFS Law Monitor coverage): would remove ~$49B in medical bills from reports of ~15M Americans; vacated July 11 2025 by U.S. District Court for E.D. Texas (Brownstein, cited [6] in Sanity body) \u2014 the fallback presented it as in force"
+  },
+  {
+   "table": "quiz_options",
+   "id": "f8571e93-f12d-47da-926c-99c128c27df0",
+   "expect": {
+    "text": "It removed medical debt from credit reports and prohibited using credit reporting to coerce payment"
+   },
+   "set": {
+    "text": "A federal court vacated it in July 2025, so the federal ban never took effect"
+   },
+   "claim": "quiz correct option: rule removed medical debt from credit reports",
+   "verdict": "OUTDATED",
+   "src": "CFPB final rule Jan 7 2025 (Troutman/CFS Law Monitor coverage): would remove ~$49B in medical bills from reports of ~15M Americans; vacated July 11 2025 by U.S. District Court for E.D. Texas (Brownstein, cited [6] in Sanity body) \u2014 the fallback presented it as in force"
+  }
+ ],
+ "localPairs": [
+  {
+   "file": "frontend/content/course_revenue_cycle.json",
+   "old": "What did the CFPB's 2025 medical debt rule change?",
+   "new": "What happened to the CFPB's January 2025 rule removing medical debt from credit reports?",
+   "claim": "local quiz q-rcm-payment-003-1: vacated CFPB rule presented as in force",
+   "verdict": "OUTDATED",
+   "src": "CFPB final rule Jan 7 2025 (Troutman/CFS Law Monitor coverage): would remove ~$49B in medical bills from reports of ~15M Americans; vacated July 11 2025 by U.S. District Court for E.D. Texas (Brownstein, cited [6] in Sanity body) \u2014 the fallback presented it as in force"
+  },
+  {
+   "file": "frontend/content/course_revenue_cycle.json",
+   "old": "It removed medical debt from credit reports and prohibited using credit reporting to coerce payment",
+   "new": "A federal court vacated it in July 2025, so the federal ban never took effect",
+   "claim": "local quiz q-rcm-payment-003-1: vacated CFPB rule presented as in force",
+   "verdict": "OUTDATED",
+   "src": "CFPB final rule Jan 7 2025 (Troutman/CFS Law Monitor coverage): would remove ~$49B in medical bills from reports of ~15M Americans; vacated July 11 2025 by U.S. District Court for E.D. Texas (Brownstein, cited [6] in Sanity body) \u2014 the fallback presented it as in force"
+  },
+  {
+   "file": "frontend/content/courses_tier3.json",
+   "old": "What did the CFPB's 2025 medical debt rule change?",
+   "new": "What happened to the CFPB's January 2025 rule removing medical debt from credit reports?",
+   "claim": "local quiz q-rcm-payment-003-1: vacated CFPB rule presented as in force",
+   "verdict": "OUTDATED",
+   "src": "CFPB final rule Jan 7 2025 (Troutman/CFS Law Monitor coverage): would remove ~$49B in medical bills from reports of ~15M Americans; vacated July 11 2025 by U.S. District Court for E.D. Texas (Brownstein, cited [6] in Sanity body) \u2014 the fallback presented it as in force"
+  },
+  {
+   "file": "frontend/content/courses_tier3.json",
+   "old": "It removed medical debt from credit reports and prohibited using credit reporting to coerce payment",
+   "new": "A federal court vacated it in July 2025, so the federal ban never took effect",
+   "claim": "local quiz q-rcm-payment-003-1: vacated CFPB rule presented as in force",
+   "verdict": "OUTDATED",
+   "src": "CFPB final rule Jan 7 2025 (Troutman/CFS Law Monitor coverage): would remove ~$49B in medical bills from reports of ~15M Americans; vacated July 11 2025 by U.S. District Court for E.D. Texas (Brownstein, cited [6] in Sanity body) \u2014 the fallback presented it as in force"
+  }
+ ]
+}

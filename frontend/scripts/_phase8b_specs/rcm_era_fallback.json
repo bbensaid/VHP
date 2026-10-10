@@ -1,0 +1,41 @@
+{
+ "pairs": [
+  {
+   "old": "\n\nBest-practice organizations achieve 90%+ ERA adoption rates, limiting paper EOB processing to payers that do not support 835 transactions.",
+   "new": "\n\nOrganizations aim to receive ERAs from as many payers as possible, limiting paper EOB processing to payers that do not support 835 transactions.",
+   "claim": "fallback: best-practice organizations achieve 90%+ ERA adoption",
+   "verdict": "UNVERIFIABLE",
+   "src": "No source for a 90%+ ERA adoption \"best practice\", 1-3% of net revenue recovered from underpayments (only vendor blogs; same claim fixed in payer-contracts), or a 24-48 hour posting rule",
+   "note": ""
+  },
+  {
+   "old": " Organizations with automated contract management systems recover 1\u20133% of net revenue from identified underpayments.",
+   "new": " Automated contract management systems make this comparison routine, so shortfalls are flagged for recovery.",
+   "claim": "fallback: automated contract management recovers 1-3% of net revenue",
+   "verdict": "UNVERIFIABLE",
+   "src": "No source for a 90%+ ERA adoption \"best practice\", 1-3% of net revenue recovered from underpayments (only vendor blogs; same claim fixed in payer-contracts), or a 24-48 hour posting rule",
+   "note": ""
+  },
+  {
+   "old": "Payment posting must occur within 24\u201348 hours of receipt to maintain accurate AR visibility.",
+   "new": "Payment posting should happen promptly after receipt to maintain accurate AR visibility.",
+   "claim": "fallback: posting must occur within 24-48 hours",
+   "verdict": "UNVERIFIABLE",
+   "src": "No source for a 90%+ ERA adoption \"best practice\", 1-3% of net revenue recovered from underpayments (only vendor blogs; same claim fixed in payer-contracts), or a 24-48 hour posting rule",
+   "note": ""
+  }
+ ],
+ "supa": [
+  {
+   "table": "lessons",
+   "col": "content_blocks",
+   "ids": [
+    "f8655541-41f0-4e3d-b1a5-d8f6a035c87b"
+   ]
+  }
+ ],
+ "files": [
+  "frontend/content/course_revenue_cycle.json",
+  "frontend/content/courses_tier3.json"
+ ]
+}

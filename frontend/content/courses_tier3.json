@@ -1922,7 +1922,7 @@
               {
                 "type": "text",
                 "heading": "Denial Root Cause Categories",
-                "body": "Claim denials fall into five primary root cause categories:\n\n1. **Eligibility/Authorization:** Patient not covered, authorization missing or invalid (CO-4, CO-15, CO-197)\n2. **Coding/Documentation:** Incorrect codes, missing modifier, medical necessity not supported (CO-4, CO-11, CO-16)\n3. **Timely Filing:** Claim submitted after the payer's deadline (CO-29)\n4. **Duplicate Claim:** Same claim submitted more than once (CO-18)\n5. **Contract/Credentialing:** Provider not in-network or credentialing incomplete (CO-97, PR-2)\n\nUnderstanding which category drives your denials determines which front-end or back-end process needs improvement."
+                "body": "Claim denials fall into five primary root cause categories:\n\n1. **Eligibility/Authorization:** Patient not covered, authorization missing or invalid (CO-15, CO-197)\n2. **Coding/Documentation:** Incorrect codes, missing modifier, medical necessity not supported (CO-4, CO-11, CO-16)\n3. **Timely Filing:** Claim submitted after the payer's deadline (CO-29)\n4. **Duplicate Claim:** Same claim submitted more than once (CO-18)\n5. **Contract/Credentialing:** Provider not in-network or credentialing incomplete (CO-B7)\n\nUnderstanding which category drives your denials determines which front-end or back-end process needs improvement."
               },
               {
                 "type": "comparison_table",
@@ -1935,9 +1935,9 @@
                 "rows": [
                   [
                     "CO-4",
-                    "Service requires a referral",
-                    "Missing referral/authorization",
-                    "Verify auth requirements at registration"
+                    "Procedure code inconsistent with the modifier used",
+                    "Missing or incorrect modifier",
+                    "Modifier edits in the claim scrubber"
                   ],
                   [
                     "CO-11",
@@ -1965,9 +1965,9 @@
                   ],
                   [
                     "CO-97",
-                    "Benefit not covered under this plan",
-                    "Wrong payer billed or benefit excluded",
-                    "Eligibility verification; benefit review"
+                    "Service included in payment for another service already adjudicated",
+                    "Bundled service billed separately",
+                    "NCCI bundling edits before submission"
                   ],
                   [
                     "PR-2",
@@ -1987,14 +1987,14 @@
                 "type": "key_stat",
                 "stats": [
                   {
-                    "value": "67%",
-                    "label": "Denials that are preventable",
-                    "context": "MGMA data; most denials result from correctable front-end and mid-cycle process failures"
+                    "value": "86%",
+                    "label": "Denials that are potentially avoidable",
+                    "context": "Change Healthcare 2020 Revenue Cycle Denials Index"
                   },
                   {
-                    "value": "9%",
-                    "label": "Average net revenue lost to unrecovered denials",
-                    "context": "For organizations without systematic denial management programs"
+                    "value": "3.3%",
+                    "label": "Net patient revenue put at risk by denials",
+                    "context": "Typical health system, 2016 (Change Healthcare Healthy Hospital Revenue Cycle Index)"
                   }
                 ]
               }
@@ -2054,7 +2054,7 @@
                 },
                 {
                   "id": "q-rcm-denial-001-3",
-                  "text": "What percentage of claim denials are considered preventable according to MGMA data?",
+                  "text": "According to Change Healthcare's 2020 Denials Index, what share of claim denials are potentially avoidable?",
                   "options": [
                     {
                       "id": "a",
@@ -2066,15 +2066,15 @@
                     },
                     {
                       "id": "c",
-                      "text": "67%"
+                      "text": "86%"
                     },
                     {
                       "id": "d",
-                      "text": "90%"
+                      "text": "10%"
                     }
                   ],
                   "correctId": "c",
-                  "explanation": "MGMA and other industry sources estimate approximately 67% of denials are preventable through improved front-end processes, better documentation, and pre-submission edits."
+                  "explanation": "Change Healthcare's 2020 Denials Index found that 86% of denials are potentially avoidable through better registration and eligibility checks, authorization tracking, documentation, coding, and pre-submission edits."
                 }
               ]
             }
@@ -2108,53 +2108,17 @@
                 "type": "callout",
                 "variant": "tip",
                 "title": "Prioritize by 'Net Recoverable Value'",
-                "body": "Not all denials are worth pursuing equally. Prioritize by: (1) dollar amount, (2) appeal deadline proximity, (3) historical appeal success rate for that denial type, and (4) cost to appeal. A $50 denial with a 20% success rate and $75 in labor cost to appeal has negative ROI. Set minimum dollar thresholds for appeal pursuit ($100\u2013250 is common)."
+                "body": "Not all denials are worth pursuing equally. Prioritize by: (1) dollar amount, (2) appeal deadline proximity, (3) historical appeal success rate for that denial type, and (4) cost to appeal. A $50 denial with a 20% success rate and $75 in labor cost to appeal has negative ROI. Set a minimum dollar threshold for appeal pursuit."
               },
               {
                 "type": "comparison_table",
-                "headers": [
-                  "Denial Type",
-                  "Appeal Success Rate",
-                  "Priority",
-                  "Strategy"
-                ],
-                "rows": [
-                  [
-                    "Medical necessity",
-                    "60\u201375%",
-                    "High",
-                    "Attach clinical documentation; peer-to-peer review"
-                  ],
-                  [
-                    "Authorization missing",
-                    "30\u201340%",
-                    "Medium",
-                    "Obtain retrospective auth if payer allows"
-                  ],
-                  [
-                    "Timely filing",
-                    "5\u201310%",
-                    "Low",
-                    "Pursue only with proof of prior submission"
-                  ],
-                  [
-                    "Duplicate",
-                    "85\u201390%",
-                    "High",
-                    "Demonstrate claims are for different dates of service"
-                  ],
-                  [
-                    "Coding/documentation",
-                    "55\u201370%",
-                    "High",
-                    "Submit corrected claim with amended documentation"
-                  ]
-                ]
+                "headers": ["Denial Type","Typical Recoverability","Priority","Strategy"],
+                "rows": [["Medical necessity","Often recoverable with documentation","High","Attach clinical documentation; peer-to-peer review"],["Authorization missing","Varies by payer","Medium","Obtain retrospective auth if payer allows"],["Timely filing","Rarely recoverable","Low","Pursue only with proof of prior submission"],["Duplicate","Usually resolvable","High","Demonstrate claims are for different dates of service"],["Coding/documentation","Often recoverable via corrected claim","High","Submit corrected claim with amended documentation"]]
               },
               {
                 "type": "text",
                 "heading": "The Prevention Feedback Loop",
-                "body": "The most valuable output of denial management is prevention intelligence. Monthly denial trend reports should be shared with:\n\n- **Registration:** To address eligibility, demographic, and authorization failures\n- **Coding/CDI:** To address documentation and code assignment errors\n- **Clinical departments:** To address ordering and documentation patterns\n- **Managed care:** To flag payer behavior patterns and contract compliance issues\n\nOrganizations that close this feedback loop reduce denial rates by 2\u20134 percentage points annually."
+                "body": "The most valuable output of denial management is prevention intelligence. Monthly denial trend reports should be shared with:\n\n- **Registration:** To address eligibility, demographic, and authorization failures\n- **Coding/CDI:** To address documentation and code assignment errors\n- **Clinical departments:** To address ordering and documentation patterns\n- **Managed care:** To flag payer behavior patterns and contract compliance issues\n\nClosing this feedback loop is what lowers the denial rate over time."
               }
             ],
             "quiz": {
@@ -2188,7 +2152,7 @@
                 },
                 {
                   "id": "q-rcm-denial-002-2",
-                  "text": "Which denial type has the highest appeal success rate?",
+                  "text": "Which of these denial types is usually the most recoverable?",
                   "options": [
                     {
                       "id": "a",
@@ -2208,7 +2172,7 @@
                     }
                   ],
                   "correctId": "c",
-                  "explanation": "Duplicate denials (85\u201390% appeal success) are among the most recoverable because they often result from a processing error rather than a true clinical or administrative problem. Demonstrating the claims are for distinct dates of service typically resolves them."
+                  "explanation": "Duplicate denials are among the most recoverable because they often result from a processing error rather than a true clinical or administrative problem. Demonstrating the claims are for distinct dates of service typically resolves them."
                 },
                 {
                   "id": "q-rcm-denial-002-3",
@@ -2260,18 +2224,18 @@
               {
                 "type": "text",
                 "heading": "The Levels of Appeal",
-                "body": "For commercial insurance claims, appeals typically proceed through:\n\n1. **First-level appeal (reconsideration):** Standard written appeal with supporting documentation; typically 30\u201360 days to file\n2. **Second-level appeal:** Review by a different or senior payer reviewer; often required before external review\n3. **Peer-to-peer review:** Direct physician-to-physician conversation between the treating provider and the payer's medical director; most effective for medical necessity denials\n4. **External Independent Review:** Available for medical necessity denials under state and federal law; binding on payers in most states\n5. **Legal action:** For high-value disputes or systematic payer non-compliance with contract terms"
+                "body": "For commercial insurance claims, appeals typically proceed through:\n\n1. **First-level appeal (reconsideration):** Standard written appeal with supporting documentation, filed within the payer\u2019s deadline\n2. **Second-level appeal:** Review by a different or senior payer reviewer; often required before external review\n3. **Peer-to-peer review:** Direct physician-to-physician conversation between the treating provider and the payer's medical director; most effective for medical necessity denials\n4. **External Independent Review:** Available for medical necessity denials under state and federal law; binding on payers in most states\n5. **Legal action:** For high-value disputes or systematic payer non-compliance with contract terms"
               },
               {
                 "type": "callout",
                 "variant": "key",
                 "title": "Peer-to-Peer Review: The Most Effective Tool",
-                "body": "Physician peer-to-peer review \u2014 where the treating physician speaks directly with the payer's medical director \u2014 is the most effective intervention for medical necessity denials. Studies show peer-to-peer reviews reverse 50\u201380% of medical necessity denials. Request it within the payer's stated window (usually 5\u201314 business days from denial date)."
+                "body": "Physician peer-to-peer review \u2014 where the treating physician speaks directly with the payer's medical director \u2014 is the most effective intervention for medical necessity denials. Request it within the payer's stated window, which is often short."
               },
               {
                 "type": "text",
                 "heading": "Medicare Appeals Process",
-                "body": "Medicare has a structured five-level appeals process:\n\n1. **Redetermination** \u2014 MAC (Medicare Administrative Contractor) review; 120 days to file; decision within 60 days\n2. **Reconsideration** \u2014 Qualified Independent Contractor (QIC) review; 180 days to file\n3. **ALJ Hearing** \u2014 Office of Medicare Hearings and Appeals; minimum dispute amount ($180 in 2024)\n4. **Medicare Appeals Council** \u2014 Review by the Departmental Appeals Board\n5. **Federal District Court** \u2014 Final judicial review; minimum dispute amount ($1,800 in 2024)"
+                "body": "Medicare has a structured five-level appeals process:\n\n1. **Redetermination** \u2014 MAC (Medicare Administrative Contractor) review; 120 days to file; decision within 60 days\n2. **Reconsideration** \u2014 Qualified Independent Contractor (QIC) review; 180 days to file\n3. **ALJ Hearing** \u2014 Office of Medicare Hearings and Appeals; minimum dispute amount ($180 in 2024)\n4. **Medicare Appeals Council** \u2014 Review by the Departmental Appeals Board\n5. **Federal District Court** \u2014 Final judicial review; minimum dispute amount ($1,840 in 2024)"
               },
               {
                 "type": "callout",
@@ -2307,7 +2271,7 @@
                     }
                   ],
                   "correctId": "c",
-                  "explanation": "Physician peer-to-peer review \u2014 a direct physician-to-physician conversation \u2014 reverses medical necessity denials 50\u201380% of the time. It should be the first step for any clinical medical necessity denial before escalating to formal written appeals."
+                  "explanation": "Physician peer-to-peer review \u2014 a direct physician-to-physician conversation \u2014 is often the fastest way to resolve a medical necessity denial. It should be the first step for any clinical medical necessity denial before escalating to formal written appeals."
                 },
                 {
                   "id": "q-rcm-denial-003-2",
@@ -2397,18 +2361,18 @@
               {
                 "type": "text",
                 "heading": "ERA vs. EOB",
-                "body": "**Electronic Remittance Advice (ERA / 835):** The HIPAA-standard electronic transaction that payers send to providers detailing claim adjudication \u2014 payment amounts, contractual adjustments, and denial codes. ERAs enable automated payment posting and significantly reduce manual processing.\n\n**Explanation of Benefits (EOB):** The paper or PDF equivalent of an ERA, sent to both the provider and patient. EOBs are processed manually, increasing labor costs and error rates.\n\nBest-practice organizations achieve 90%+ ERA adoption rates, limiting paper EOB processing to payers that do not support 835 transactions."
+                "body": "**Electronic Remittance Advice (ERA / 835):** The HIPAA-standard electronic transaction that payers send to providers detailing claim adjudication \u2014 payment amounts, contractual adjustments, and denial codes. ERAs enable automated payment posting and significantly reduce manual processing.\n\n**Explanation of Benefits (EOB):** The paper or PDF equivalent of an ERA, sent to both the provider and patient. EOBs are processed manually, increasing labor costs and error rates.\n\nOrganizations aim to receive ERAs from as many payers as possible, limiting paper EOB processing to payers that do not support 835 transactions."
               },
               {
                 "type": "text",
                 "heading": "Identifying Underpayments",
-                "body": "Payer underpayments \u2014 where the payer pays less than the contracted rate \u2014 are common and often overlooked. Causes include:\n\n- Incorrect fee schedule loaded in the payer's system\n- Modifier not recognized or applied incorrectly\n- Bundling of services that should be paid separately\n- Wrong DRG assignment on inpatient claims\n\nPayment variance analysis compares expected payment (based on contract) to actual payment for every claim. Organizations with automated contract management systems recover 1\u20133% of net revenue from identified underpayments."
+                "body": "Payer underpayments \u2014 where the payer pays less than the contracted rate \u2014 are common and often overlooked. Causes include:\n\n- Incorrect fee schedule loaded in the payer's system\n- Modifier not recognized or applied incorrectly\n- Bundling of services that should be paid separately\n- Wrong DRG assignment on inpatient claims\n\nPayment variance analysis compares expected payment (based on contract) to actual payment for every claim. Automated contract management systems make this comparison routine, so shortfalls are flagged for recovery."
               },
               {
                 "type": "callout",
                 "variant": "tip",
                 "title": "Timely Posting is Critical",
-                "body": "Payment posting must occur within 24\u201348 hours of receipt to maintain accurate AR visibility. Delayed posting makes it impossible to identify truly outstanding claims versus paid claims not yet posted \u2014 leading to duplicate follow-up calls, wasted staff time, and inaccurate financial reporting."
+                "body": "Payment posting should happen promptly after receipt to maintain accurate AR visibility. Delayed posting makes it impossible to identify truly outstanding claims versus paid claims not yet posted \u2014 leading to duplicate follow-up calls, wasted staff time, and inaccurate financial reporting."
               }
             ],
             "quiz": {
@@ -2466,27 +2430,27 @@
                 },
                 {
                   "id": "q-rcm-payment-001-3",
-                  "text": "What ERA adoption rate should best-practice organizations target?",
+                  "text": "Which electronic transaction pairs with the ERA (835) to create a fully electronic payment cycle?",
                   "options": [
                     {
                       "id": "a",
-                      "text": "50%"
+                      "text": "The 837 claim transaction"
                     },
                     {
                       "id": "b",
-                      "text": "70%"
+                      "text": "The 270/271 eligibility inquiry"
                     },
                     {
                       "id": "c",
-                      "text": "90%+"
+                      "text": "EFT (electronic funds transfer)"
                     },
                     {
                       "id": "d",
-                      "text": "100% is not achievable"
+                      "text": "A paper EOB"
                     }
                   ],
                   "correctId": "c",
-                  "explanation": "Best-practice organizations target 90%+ ERA adoption to minimize manual EOB processing. The remaining paper EOBs typically come from smaller payers or workers' compensation carriers that do not support 835 transactions."
+                  "explanation": "The ERA explains how a claim was paid, while EFT (electronic funds transfer) delivers the money directly to the provider's bank account. Together they let payments post automatically and be reconciled to bank deposits; the 837 is the outgoing claim and the 270/271 is an eligibility inquiry."
                 }
               ]
             }
@@ -2514,7 +2478,7 @@
               {
                 "type": "text",
                 "heading": "AR Aging Analysis",
-                "body": "AR aging reports categorize outstanding claims by the number of days since service or claim submission:\n\n- **0\u201330 days:** Current; within normal payer adjudication window (do not work yet)\n- **31\u201360 days:** Watch list; verify claim received and in process\n- **61\u201390 days:** Active follow-up required; contact payer for status\n- **91\u2013120 days:** Escalate; request supervisor review or peer-to-peer\n- **120+ days:** At-risk for write-off; consider appeal deadlines and collection options\n\nThe distribution of AR across these buckets is as diagnostic as the total Days in AR. More than 25% in the 90+ bucket signals a systemic problem."
+                "body": "AR aging reports categorize outstanding claims by the number of days since service or claim submission:\n\n- **0\u201330 days:** Current; within normal payer adjudication window (do not work yet)\n- **31\u201360 days:** Watch list; verify claim received and in process\n- **61\u201390 days:** Active follow-up required; contact payer for status\n- **91\u2013120 days:** Escalate; request supervisor review or peer-to-peer\n- **120+ days:** At-risk for write-off; consider appeal deadlines and collection options\n\nThe distribution of AR across these buckets is as diagnostic as the total Days in AR. A 90+ bucket well above the common ~15% target signals a systemic problem."
               },
               {
                 "type": "comparison_table",
@@ -2591,7 +2555,7 @@
                     }
                   ],
                   "correctId": "b",
-                  "explanation": "Industry benchmark is less than 25% of AR in the 90+ day bucket. A 35% concentration signals systemic problems \u2014 likely inadequate follow-up, high denial rates, or claims not submitted timely."
+                  "explanation": "Common industry targets keep 90+ AR to roughly 15% or less. A 35% concentration signals systemic problems \u2014 likely inadequate follow-up, high denial rates, or claims not submitted timely."
                 },
                 {
                   "id": "q-rcm-payment-002-2",
@@ -2615,7 +2579,7 @@
                     }
                   ],
                   "correctId": "b",
-                  "explanation": "Active payer follow-up should begin in the 61\u201390 day bucket. Claims in the 0\u201330 day range are within normal adjudication windows; 31\u201360 day claims warrant status verification. Active follow-up before 60 days typically yields few results as most payers have not yet adjudicated the claim."
+                  "explanation": "Active payer follow-up should begin in the 61\u201390 day bucket. Claims in the 0\u201330 day range are within normal adjudication windows; 31\u201360 day claims warrant status verification. Medicare must pay clean claims within 30 days of receipt, so a claim still unpaid at 31–60 days warrants a status check, and one still unresolved past 60 days needs active follow-up."
                 },
                 {
                   "id": "q-rcm-payment-002-3",
@@ -2674,7 +2638,7 @@
                 "type": "callout",
                 "variant": "key",
                 "title": "CFPB Medical Debt Rules (2025)",
-                "body": "In January 2025, the Consumer Financial Protection Bureau (CFPB) finalized a rule removing medical debt from credit reports. Additionally, the rule prohibits debt collectors from using credit reporting to coerce payment of medical debts. This significantly changes the leverage available for patient collection programs and makes proactive financial counseling and payment plans even more important."
+                "body": "In January 2025, the Consumer Financial Protection Bureau (CFPB) finalized a rule removing medical debt from credit reports. Additionally, the rule prohibits debt collectors from using credit reporting to coerce payment of medical debts. However, in July 2025 a federal court vacated the rule, so it never took effect; medical-debt credit reporting is now governed by a changing patchwork of state laws. Proactive financial counseling and payment plans remain the most reliable levers."
               },
               {
                 "type": "text",
@@ -2686,8 +2650,8 @@
                 "stats": [
                   {
                     "value": "$88B",
-                    "label": "Annual US medical bad debt",
-                    "context": "KFF estimate; driven by rising patient financial responsibility and HDHP enrollment"
+                    "label": "Medical debt on consumer credit reports",
+                    "context": "As of June 2021 (CFPB, March 2022 report)"
                   },
                   {
                     "value": "41%",
@@ -2704,7 +2668,7 @@
               "questions": [
                 {
                   "id": "q-rcm-payment-003-1",
-                  "text": "What did the CFPB's 2025 medical debt rule change?",
+                  "text": "What happened to the CFPB's January 2025 rule removing medical debt from credit reports?",
                   "options": [
                     {
                       "id": "a",
@@ -2712,7 +2676,7 @@
                     },
                     {
                       "id": "b",
-                      "text": "It removed medical debt from credit reports and prohibited using credit reporting to coerce payment"
+                      "text": "A federal court vacated it in July 2025, so the federal ban never took effect"
                     },
                     {
                       "id": "c",
@@ -2724,7 +2688,7 @@
                     }
                   ],
                   "correctId": "b",
-                  "explanation": "The CFPB's January 2025 final rule removes medical debt from consumer credit reports and prohibits debt collectors from using credit reporting as leverage to collect medical debts, significantly changing patient collection dynamics."
+                  "explanation": "The CFPB finalized a rule in January 2025 to remove medical debt from most credit reports, but in July 2025 a federal court vacated it as exceeding the Bureau's authority under the Fair Credit Reporting Act, so the federal ban never took effect."
                 },
                 {
                   "id": "q-rcm-payment-003-2",
