@@ -1,0 +1,233 @@
+<blockquote>
+<p><em>The deployment of Vermont’s health IT infrastructure reveals the Technology pillar’s most consequential sequencing vulnerability: the analytics vendor gap that must close before global budgets take effect in FY2028.</em></p>
+</blockquote>
+<p>FHIR interoperability, AI clinical governance, and cybersecurity are not three separate technology initiatives — they are three implementation risks that any organization building on a data infrastructure foundation will encounter, in roughly this order, as that foundation comes online. A standards mandate (FHIR) without a governance framework for the AI tools that will consume that data produces ungoverned clinical AI; a connected, data-rich system without cybersecurity investment produces a larger attack surface. None of this is specific to Vermont’s timeline or its CIN structure — it is the standard risk profile of any health system’s technology buildout, and Vermont’s FY2028 global budget deadline simply compresses the timeline enough to make the sequencing visible.</p>
+<h2 id="from-architecture-to-implementation">5.1 <strong>From Architecture to Implementation</strong></h2>
+<p>Chapter 4 established Vermont’s technology architecture — the five-layer infrastructure from VHCURES and VUHDDS through the HIE and FHIR exchange layer to population health analytics and AI applications. This chapter develops the implementation side: how organizations actually build FHIR-based data exchange, what an AI clinical governance program looks like in practice, how clinical decision support is designed and deployed for population health management, and what cybersecurity requirements apply to the distributed rural health infrastructure Vermont is building.</p>
+<h2 id="fhir-implementation-from-standard-to-working-system">5.2 <strong>FHIR Implementation — From Standard to Working System</strong></h2>
+<h3 id="the-fhir-implementation-reality">5.2.1 <strong>The FHIR Implementation Reality</strong></h3>
+<p>FHIR R4 is a standard, not a product. Its existence does not mean that any two FHIR-compliant systems can exchange data automatically. Like all standards, FHIR specifies a framework within which compliant systems must operate — but the specific data elements populated, the implementation patterns used, and the business rules applied vary substantially across implementations. A hospital’s Epic FHIR implementation and a CAH’s TruBridge FHIR implementation may both be ‘FHIR R4 compliant’ while exchanging data with entirely different content, triggering entirely different workflows, and requiring custom integration work to interoperate effectively.</p>
+<p>Vermont’s CIN technology strategy must account for this reality. The goal is not FHIR compliance as a checkbox — it is functional interoperability: the ability for a care coordinator at Northeastern Vermont Regional Hospital to see, in real time, that their patient’s Medicaid claim for an ER visit at Dartmouth Hitchcock Medical Center in New Hampshire was just processed, enabling a care management follow-up call before the patient discharges. That outcome requires FHIR compliance plus patient matching plus event notifications plus care coordinator workflow integration. FHIR makes it theoretically possible; CIN implementation makes it practically achievable.</p>
+<h3 id="the-three-fhir-use-cases-vermont-needs-most">5.2.2 <strong>The Three FHIR Use Cases Vermont Needs Most</strong></h3>
+<p>Vermont’s technology investments should prioritize three FHIR use cases that deliver the highest value for the transformation agenda:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>FHIR use case</strong></th>
+<th style="text-align: left;"><strong>What it enables</strong></th>
+<th style="text-align: left;"><strong>Implementation requirements</strong></th>
+<th style="text-align: left;"><strong>Vermont priority</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Patient access API (§170.315(g)(10))</td>
+<td style="text-align: left;">Patients can access their health records through third-party apps, supporting patient engagement and longitudinal care coordination. Required by CMS for hospitals and clinicians receiving Medicare/Medicaid payments.</td>
+<td style="text-align: left;">EHR must expose FHIR R4 patient access endpoint; practice must register with Smart Health IT or similar app authorization framework; patient-facing app must be certified.</td>
+<td style="text-align: left;">Required compliance — all Vermont hospitals must be compliant. Monitor for compliance at smaller CAHs without robust IT departments.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Provider access API (care coordination)</td>
+<td style="text-align: left;">Care coordinators at one organization can query clinical records from another organization for shared patients, enabling real-time care coordination across the Vermont CIN.</td>
+<td style="text-align: left;">EHR-to-EHR FHIR query capability; master patient index for patient matching across organizations; trust framework (CommonWell/Carequality membership); consent management.</td>
+<td style="text-align: left;">Highest value use case for Vermont CIN. Enables inter-hospital care coordination that the regionalization blueprint requires. Priority RHT IT advance investment.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Payer-to-provider API (prior authorization and formulary)</td>
+<td style="text-align: left;">Electronic prior authorization using FHIR-based DA Vinci implementation guides eliminates manual PA processes; formulary information exchange reduces prescription errors.</td>
+<td style="text-align: left;">EHR must support CRD (Coverage Requirements Discovery) and DTR (Documentation Templates and Rules) Da Vinci implementation guides; payers (BCBS VT, MVP) must implement complementary APIs.</td>
+<td style="text-align: left;">Administrative simplification priority. Vermont’s prior authorization reform agenda is accelerated by FHIR-based electronic PA. GMCB should require payer FHIR API compliance as condition of rate approval.</td>
+</tr>
+</tbody>
+</table></div>
+<p class="figure-caption">Figure 5.1 — Vermont’s three priority FHIR use cases. Sources: CMS Interoperability and Patient Access Rule; ONC 21st Century Cures Rule; the Technology pillar framework.</p>
+<h3 id="the-master-patient-index-vermonts-identity-management-challenge">5.2.3 <strong>The Master Patient Index — Vermont’s Identity Management Challenge</strong></h3>
+<p>Every FHIR use case that involves sharing records between organizations requires patient matching — reliably identifying that the ‘John Smith, DOB 1952-03-14’ at UVMMC is the same person as the ‘John Smith, DOB 1952-03-14’ at North Country Hospital and the ‘Jonathan Smith, DOB 1952-03-14’ (with a name variant) in the Medicaid enrollment file. Vermont’s VITL network provides a master patient index for VHIE-connected providers, but it does not cover all Vermont providers, does not include all out-of-state encounters, and does not have validated match rates documented publicly.</p>
+<p>Vermont’s CIN implementation should include a dedicated master patient index as a shared service — a centralized patient identity management system that all CIN member facilities use to match patients across organizations. The investment cost is modest relative to the value: a reliable MPI is the prerequisite for virtually every care coordination use case the CIN is designed to enable.</p>
+<aside class="callout callout-teal"><div class="callout-title">BEYOND VERMONT</div>
+<p>A master patient index is the unglamorous, easy-to-defer piece of infrastructure that every multi-organization care network eventually discovers it cannot do without — whether that network is a Vermont CIN, a Medicaid managed-care plan’s provider network in another state, or a regional clinically integrated network anywhere else. The pattern is consistent nationally: organizations invest first in the visible technology (a portal, a dashboard, an AI tool) and defer the MPI because it produces no demo-able output on its own, then discover that every care-coordination feature they actually wanted depends on it. Treat “do we have a reliable MPI” as a go/no-go gate for any care-coordination initiative, in any state.</p></aside>
+<h2 id="ai-clinical-governance-the-complete-framework">5.3 <strong>AI Clinical Governance — The Complete Framework</strong></h2>
+<p>AI clinical governance is evolving from a best practice to a regulatory requirement. FDA’s AI/ML-based Software as Medical Device (SaMD) framework, ONC’s Health Data, Technology and Interoperability rule, and emerging CMS guidance on AI in Medicare Advantage all establish governance expectations for clinical AI. Vermont’s CIN AI governance framework, described in Chapter 4, must be operationally detailed enough to guide the specific governance decisions that CIN member facilities need to make when deploying AI scribe technology, RPM algorithms, diagnostic AI, and population health analytics.</p>
+<h3 id="the-ai-clinical-governance-lifecycle">5.3.1 <strong>The AI Clinical Governance Lifecycle</strong></h3>
+<p>This section organizes governance requirements across four lifecycle stages; the platform’s AI Clinical Governance Lab cross-cuts the same material as a 62-item checklist over eight governance domains.</p>
+<h3 id="stage-1-pre-deployment-evaluation">5.3.2 <strong>Stage 1: Pre-Deployment Evaluation</strong></h3>
+<p>Before any clinical AI tool is deployed, the organization must evaluate: (1) FDA clearance or de novo classification status — is this a Software as Medical Device, and if so, what FDA clearance has it received? (2) Training data provenance — was the model trained on data representative of the Vermont population? Rural Medicare beneficiaries? Elderly patients with multiple comorbidities? (3) Bias testing — has the developer tested and published performance data stratified by race/ethnicity, age, sex, and disability? (4) Clinical validation — has the tool been validated in a clinical environment comparable to the deployment setting, not just the academic medical centers where most AI research originates? (5) Intended use clarity — is the clinical use case for this tool unambiguous, and is it the use case for which the tool was designed and validated?</p>
+<h3 id="stage-2-implementation-and-training">5.3.3 <strong>Stage 2: Implementation and Training</strong></h3>
+<p>Deployment requires: (1) Workflow integration planning — where does the AI output appear in the clinical workflow, and how does the clinician interact with it? AI that generates alerts ignored by busy clinicians adds no value and may add risk. (2) Clinician training — not just ‘how to use the tool’ but ‘what the tool does and does not know, where it performs well and poorly, and how to recognize when its outputs may be unreliable.’ (3) Override protocols — clear documentation of when and how clinicians should override AI-generated recommendations. (4) Baseline performance measurement — establishing pre-deployment performance metrics against which post-deployment performance can be compared.</p>
+<h3 id="stage-3-active-monitoring">5.3.4 <strong>Stage 3: Active Monitoring</strong></h3>
+<p>Ongoing operational governance requires: (1) Performance drift monitoring — AI model performance can degrade over time as the patient population or clinical practice patterns change. Monthly or quarterly performance monitoring against pre-deployment baselines detects drift early. (2) Equity monitoring — performance must be tracked separately for Vermont’s equity priority populations (Northeast Kingdom rural patients, elderly Medicaid patients, BIPOC Vermonters) to detect differential performance that average metrics would hide. (3) Adverse event reporting — a formal mechanism for clinicians to report cases where AI output contributed to adverse outcomes, delayed appropriate care, or produced clearly erroneous outputs. (4) Override rate tracking — systematic high override rates are a signal that the AI output is not clinically trustworthy.</p>
+<h3 id="stage-4-vendor-management">5.3.5 <strong>Stage 4: Vendor Management</strong></h3>
+<p>AI vendors must be held accountable through contract terms: (1) Performance SLAs with meaningful remedies — not just ‘best efforts’ commitments but specific accuracy thresholds with financial consequences for underperformance. (2) Update notification requirements — when the vendor updates the model, the organization must be notified in advance and given opportunity to re-evaluate before update deployment. (3) Bias testing disclosure — vendors must provide demographic performance data for any clinical AI tool deployed in Vermont. (4) Data use transparency — clear contractual provisions about what patient data the vendor collects, how it is used, and whether it is used to train future model versions.</p>
+<h3 id="ai-specific-issues-for-vermont-rural-hospitals">5.3.6 <strong>AI-Specific Issues for Vermont Rural Hospitals</strong></h3>
+<p>Vermont’s rural hospitals face three AI governance challenges that are more acute than in urban academic medical center settings. First, training data representativeness: most clinical AI is trained on large urban academic medical center datasets. The patient populations at North Country Hospital or Gifford Medical Center — elderly, rural, with high rates of agricultural occupational exposures, differing comorbidity patterns, and different social determinants — may perform differently under AI models trained elsewhere. Vermont’s CIN should require training data documentation as a condition of CIN-funded AI deployments.</p>
+<p>Second, implementation support capacity: a small rural hospital with one IT staff member cannot implement the monitoring infrastructure that AI governance requires. The CIN’s shared services model addresses this — a shared AI governance function within the CIN monitors all member hospital AI deployments with professional data analytics staff that individual hospitals cannot afford. Vermont’s RHT technology grants should include CIN AI governance infrastructure as an allowable use.</p>
+<p>Third, the AI scribe equity question: ambient clinical intelligence tools transcribe clinical conversations in English. Vermont has a growing multilingual population — immigrant communities in Burlington and surrounding areas, seasonal agricultural workers. AI scribe tools not trained on multilingual clinical conversations will perform poorly for these patients. Vermont’s RHT AI scribe grants should require multilingual capability documentation as an evaluation criterion.</p>
+<h2 id="clinical-decision-support-from-alerts-to-intelligence">5.4 <strong>Clinical Decision Support — From Alerts to Intelligence</strong></h2>
+<p>Clinical decision support (CDS) encompasses any technology that uses data to influence clinical decisions at the point of care. The range is vast: from simple medication allergy alerts that every EHR includes, to sophisticated population health stratification tools that identify patients at highest risk of hospitalization in the next 30 days and recommend specific care management actions. The challenge with CDS is not building it — it is building it well enough that clinicians use it rather than ignoring it.</p>
+<h3 id="alert-fatigue-the-cds-effectiveness-crisis">5.4.1 <strong>Alert Fatigue — The CDS Effectiveness Crisis</strong></h3>
+<p>Studies consistently show that the majority of EHR clinical alerts are overridden without meaningful engagement. Alert fatigue — the tendency of clinicians to automatically dismiss alerts after being overwhelmed by their volume and poor specificity — is one of the most documented failures of health information technology implementation. Alert fatigue is not a clinician behavior problem; it is a CDS design problem. When 90% of alerts are overridden, the alerts are generating noise rather than signal, and the alert system has failed.</p>
+<p>Effective CDS design requires three principles that are violated by most EHR default configurations: specificity (alerts fire only when the clinical evidence strongly supports action, not whenever a vague threshold is crossed), actionability (every alert should present a recommended action that the clinician can take immediately with minimal additional clicks), and workflow integration (alerts appear at the moment when the clinician is making the relevant decision, not before or after).</p>
+<h3 id="population-health-cds-vermonts-priority-application">5.4.2 <strong>Population Health CDS — Vermont’s Priority Application</strong></h3>
+<p>For Vermont’s transformation agenda, the highest-value CDS application is not medication alerts — it is population health intelligence: risk stratification that identifies patients likely to deteriorate, care gap identification that triggers outreach before patients present in crisis, SDOH screening tools that flag patients for CHT navigation at the moment of a primary care visit, and medication-safety and adherence monitoring across multiple prescribers.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>CDS type</strong></th>
+<th style="text-align: left;"><strong>What it does</strong></th>
+<th style="text-align: left;"><strong>Implementation requirement</strong></th>
+<th style="text-align: left;"><strong>Vermont application</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Predictive risk stratification</td>
+<td style="text-align: left;">Uses machine learning on claims, EHR, and demographic data to predict which patients are likely to be hospitalized or visit the ED in the next 30-90 days, generating a risk score and recommended care management action</td>
+<td style="text-align: left;">Attribution data, historical claims, EHR access, trained risk model; care management workflow to receive and act on high-risk alerts</td>
+<td style="text-align: left;">VHCURES-based risk stratification for the attributed Medicare population; identify the top 5% highest-risk patients for intensive CHT engagement before global budgets take effect</td>
+</tr>
+<tr>
+<td style="text-align: left;">Care gap identification</td>
+<td style="text-align: left;">Identifies patients due for preventive services, overdue for chronic disease management follow-up, or missing guideline-recommended medications at the moment of a primary care visit</td>
+<td style="text-align: left;">EHR integration; HEDIS measure definitions; patient registry with last service date tracking</td>
+<td style="text-align: left;">Blueprint PCMH practices: care gap report generated for each scheduled patient appointment, enabling care coordinator to prepare outreach materials before the visit</td>
+</tr>
+<tr>
+<td style="text-align: left;">SDOH screening and navigation</td>
+<td style="text-align: left;">Presents standardized HRSN screening questions at the appropriate point in a primary care visit; flags positive screens for CHT follow-up; tracks referral completion</td>
+<td style="text-align: left;">EHR-integrated screening tool; CHT workflow to receive referrals; community resource directory integration</td>
+<td style="text-align: left;">Vermont Blueprint universal HRSN screening: operational in PCMH practices. Gap: CHT follow-up completion tracking and outcome measurement not consistently linked back to clinical record</td>
+</tr>
+<tr>
+<td style="text-align: left;">Medication safety and adherence</td>
+<td style="text-align: left;">Identifies patients with medication adherence gaps from pharmacy claims data; flags potential drug interactions from concurrent prescriptions across multiple providers</td>
+<td style="text-align: left;">Pharmacy claims data access; prescriber notification workflow</td>
+<td style="text-align: left;">VHCURES pharmacy claims linked to primary care EHR for medication adherence alerts; particularly valuable for high-complexity elderly patients with multiple prescribers</td>
+</tr>
+</tbody>
+</table></div>
+<p class="figure-caption">Figure 5.2 — Population health CDS types and Vermont applications. Sources: the Technology pillar framework; Vermont Blueprint for Health; VHCURES documentation.</p>
+<h2 id="cybersecurity-in-rural-health-infrastructure">5.5 <strong>Cybersecurity in Rural Health Infrastructure</strong></h2>
+<p>Cybersecurity is the technology investment that does not generate efficiency or quality returns — it generates insurance against catastrophic failure. Rural healthcare cybersecurity is a specific and serious national vulnerability. The 2024 Change Healthcare cyberattack — which disrupted claims processing for thousands of providers for months, causing cash flow crises at rural hospitals already operating on thin margins — demonstrated that a single vulnerability in a broadly used healthcare technology vendor can cascade across the entire healthcare system.</p>
+<p>Vermont’s rural hospitals are disproportionately vulnerable to cybersecurity attacks for three reasons: limited internal IT staff who cannot maintain enterprise-level security operations, legacy EHR and financial systems that may not receive regular security patches, and high-value data assets (patient records, financial systems) that cybercriminals specifically target.</p>
+<h3 id="the-cin-cybersecurity-shared-services-model">5.5.1 <strong>The CIN Cybersecurity Shared Services Model</strong></h3>
+<p>Vermont’s CIN shared services model is the appropriate delivery vehicle for cybersecurity in the state’s rural hospital network. Individual hospitals cannot afford a 24/7 security operations center; the CIN can. The shared cybersecurity services model provides:</p>
+<p>Security operations center (SOC) monitoring: 24/7 network monitoring for intrusion attempts, malware, and anomalous activity. Contracted through a healthcare-specialized managed security service provider (MSSP).</p>
+<p>Endpoint detection and response (EDR): Security software on all network-connected devices that detects and responds to threats automatically, escalating to SOC when needed.</p>
+<p>Vendor risk management: Assessment of all third-party technology vendors used by CIN member hospitals for cybersecurity posture and contractual security requirements.</p>
+<p>Incident response planning: Documented incident response procedures for ransomware, data breach, and system outage scenarios, with regular tabletop exercises and recovery time objectives established for critical clinical systems.</p>
+<p>Staff training: Regular phishing simulation and security awareness training — most healthcare cyberattacks begin with a staff member clicking a phishing link.</p>
+<p>Vermont’s RHT Program IT advance investments explicitly include cybersecurity capability development. This is not an optional add-on; for rural hospitals that are simultaneously digitalizing their operations (AI scribes, RPM, telehealth) and connecting to shared data infrastructure (VHIE, CIN analytics), the cybersecurity attack surface is growing exactly as cybersecurity capability needs to grow to match it.</p>
+<h2 id="technology-pillar-implementation-matrix">5.6 <strong>Technology Pillar Implementation Matrix</strong></h2>
+<p>The following matrix provides implementation guidance for the key Technology pillar investments — estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs are indicative ranges; actual costs vary by organizational size, existing infrastructure, and implementation approach.</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 13%" />
+<col style="width: 10%" />
+<col style="width: 14%" />
+<col style="width: 31%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Investment</strong></th>
+<th style="text-align: left;"><strong>Estimated cost</strong></th>
+<th style="text-align: left;"><strong>Timeline to value</strong></th>
+<th style="text-align: left;"><strong>ROI crossover</strong></th>
+<th style="text-align: left;"><strong>Vermont benchmark</strong></th>
+</tr>
+<tr>
+<th style="text-align: left;">FHIR R4 compliance and API development</th>
+<th style="text-align: left;">$150K-$500K per org</th>
+<th style="text-align: left;">12-18 months</th>
+<th style="text-align: left;">18-24 months</th>
+<th style="text-align: left;">Vermont VITL FHIR mandate; CMS interoperability rule compliance</th>
+</tr>
+<tr>
+<th style="text-align: left;">Clinical AI deployment with governance framework</th>
+<th style="text-align: left;">$200K-$1M setup</th>
+<th style="text-align: left;">6-12 months</th>
+<th style="text-align: left;">12-24 months</th>
+<th style="text-align: left;">Vermont AI scribe grants (RHT); ambient scribes save ~15–25 min/day/provider (NEJM AI RCT, 2025; JAMA, 2026)</th>
+</tr>
+<tr>
+<th style="text-align: left;">VHCURES analytics platform access and training</th>
+<th style="text-align: left;">$20K-$60K annually</th>
+<th style="text-align: left;">3-6 months</th>
+<th style="text-align: left;">6 months</th>
+<th style="text-align: left;">Vermont hospitals: pre-global-budget HCC gap analysis; attribution modeling</th>
+</tr>
+<tr>
+<th style="text-align: left;">CIN shared analytics infrastructure</th>
+<th style="text-align: left;">$500K-$2M network cost</th>
+<th style="text-align: left;">18-36 months</th>
+<th style="text-align: left;">36-48 months</th>
+<th style="text-align: left;">Vermont CIN: RHT-funded shared analytics for all 14 hospitals</th>
+</tr>
+<tr>
+<th style="text-align: left;">EHR optimization for structured data capture</th>
+<th style="text-align: left;">$15K-$40K per practice</th>
+<th style="text-align: left;">1-3 months</th>
+<th style="text-align: left;">6 months</th>
+<th style="text-align: left;">Blueprint PCMH prerequisite; HEDIS measure reporting accuracy</th>
+</tr>
+<tr>
+<th style="text-align: left;">Cybersecurity assessment and hardening</th>
+<th style="text-align: left;">$50K-$200K per org</th>
+<th style="text-align: left;">3-6 months</th>
+<th style="text-align: left;">Risk avoidance immediate</th>
+<th style="text-align: left;">Vermont rural CAH vulnerability; ransomware risk at Grace Cottage scale</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p class="figure-caption">Figure 5.3 — Technology pillar implementation matrix. Sources: HTR Advisory; Vermont RHT Program (2025); CMS interoperability rule.</p>
+<h2 id="work-this-chapter-on-the-platform-3">5.7 <strong>Work This Chapter on the Platform</strong></h2>
+<p>Chapter 5’s implementation reality — AI governance, CDS, clinical data exchange, and the statewide-EHR question — maps to four working labs.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Do this</strong></th>
+<th style="text-align: left;"><strong>On this tool</strong></th>
+<th style="text-align: left;"><strong>What to look for</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Build an AI clinical governance framework across the model lifecycle</td>
+<td style="text-align: left;"><strong>AI Clinical Governance Lab</strong> — /research-lab/technology-ai?tab=ai</td>
+<td style="text-align: left;">The 62-item checklist across eight governance domains as a go/no-go gate before any clinical AI deployment.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Model RPM and telehealth ROI by condition and CPT code</td>
+<td style="text-align: left;"><strong>Digital Health Lab</strong> — /research-lab/technology-ai?tab=digital</td>
+<td style="text-align: left;">Where digital health earns its cost — and where it adds alert fatigue without value.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Exercise clinical data exchange and HL7 messaging</td>
+<td style="text-align: left;"><strong>Clinical Data Exchange</strong> — /research-lab/vbc-clinical-quality?tab=hl7</td>
+<td style="text-align: left;">The integration work that makes near-real-time care management possible.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Test whether FHIR-based exchange can deliver what a statewide EHR would, at lower cost</td>
+<td style="text-align: left;"><strong>Statewide EHR Modeler</strong> — /research-lab/interoperability?tab=statewide-ehr</td>
+<td style="text-align: left;">Where FHIR closes the gap and where it does not — the question Vermont’s feasibility assessment must answer.</td>
+</tr>
+</tbody>
+</table></div>
+<p class="figure-caption">Figure 5.4 — Hands-on platform tools for the Technology Pillar in practice.</p>
+<h2 id="implications-for-you-4">5.8 <strong>Implications for You</strong></h2>
+<p>If you are a Vermont hospital executive: FHIR-based data exchange is not a future capability — it is a current federal requirement under the CMS Interoperability Rule. If your EHR is not producing FHIR R4 patient access APIs or does not have a roadmap to do so, your technology vendor is out of compliance with federal requirements and your organization is at risk of reduced CMS reimbursement. More practically: FHIR is the protocol through which the AHS-GMCB analytics vendor will receive your clinical data for global budget performance tracking. If your FHIR infrastructure is not production-ready before global budgets take effect in FY2028, you will not be able to receive the real-time feedback the global budget management system is designed to provide.</p>
+<p>If you are an AHS or GMCB official: AI governance for healthcare transformation in Vermont requires a policy framework that does not currently exist. As AI scribes, predictive risk stratification tools, and clinical decision support systems are deployed through the RHT Program, Vermont needs governance standards that address: How is AI tool performance validated before deployment? Who is accountable when an AI tool produces a clinically consequential error? How are AI tools evaluated for equity impact — specifically, whether they perpetuate or reduce the disparities Vermont’s transformation is designed to close? The governance framework should be written before the tools are deployed, not after.</p>
+<p>If you are a Vermont legislator: Vermont’s AI governance gap is a legislative opportunity. Vermont has the regulatory infrastructure — GMCB, DVHA, AHS — to create AI standards for healthcare that most states lack. A Vermont AI governance framework for healthcare applications, developed in parallel with Act 68 implementation, would both protect Vermont patients and position Vermont as a national model for responsible AI adoption in healthcare transformation. The alternative — deploying AI tools without governance and creating the framework after problems emerge — is more expensive and less credible.</p>
+<p>If you are a national health policy professional: Vermont’s technology chapter is, at its core, about a small state trying to build the analytics infrastructure that national health policy has assumed into existence for thirty years without actually funding. The gap between what CMMI models assume about state data infrastructure and what states actually have is the most underappreciated obstacle in American health reform. Vermont’s experience — the specific decisions, the specific failures, the specific investments that worked — will be the best available evidence on how to close that gap for states that have less.</p>
+<h2 id="key-concepts-in-this-chapter-4">5.9 <strong>Key Concepts in This Chapter</strong></h2>
+<p><strong>FHIR R4</strong> The fourth version of the HL7 FHIR standard, mandated by CMS for healthcare data exchange since 2021. Defines data formats and APIs for patient access, provider access, and payer-to-provider exchange. A standard, not a product — compliance requires implementation work beyond meeting the technical specification.</p>
+<p><strong>Da Vinci Implementation Guides</strong> HL7-published FHIR implementation guides developed by the Da Vinci Project (a collaboration of payers, providers, and vendors) for specific use cases: Coverage Requirements Discovery (CRD), Documentation Templates and Rules (DTR), and others for prior authorization, formulary, and care coordination.</p>
+<p><strong>Master patient index (MPI)</strong> A centralized database that maintains a consistent patient identity across multiple healthcare organizations, enabling reliable matching of records from different systems for the same patient.</p>
+<p><strong>SaMD (Software as Medical Device)</strong> FDA regulatory category for software that performs medical functions: diagnosing, treating, mitigating, or preventing disease. Clinical AI tools that influence clinical decisions may be SaMDs subject to FDA clearance requirements.</p>
+<p><strong>Alert fatigue</strong> The tendency of clinicians to automatically override EHR alerts due to their excessive volume and poor specificity, rendering the alert system ineffective. A design problem, not a clinician behavior problem — effective CDS is specific, actionable, and workflow-integrated.</p>
+<p><strong>CommonWell / Carequality</strong> National health data exchange networks that enable FHIR-based record sharing between health systems across organizational boundaries. VITL participates in CommonWell; Vermont CIN membership would enable access to both networks for out-of-state record retrieval.</p>
+<p><strong>Change Healthcare attack</strong> A 2024 cyberattack on Change Healthcare (a claims processing subsidiary of UnitedHealth Group) that disrupted healthcare claims processing nationally for months, causing cash flow crises at rural hospitals dependent on timely claims payment. Demonstrated systemic healthcare cybersecurity vulnerability.</p>
+<p><strong>MSSP (Managed Security Service Provider)</strong> A third-party vendor providing outsourced security operations services — monitoring, threat detection, incident response — enabling organizations without internal security staff to maintain enterprise-level cybersecurity posture.</p>
+<p class="sources">Sources: CMS Interoperability and Patient Access Final Rule (2020); ONC 21st Century Cures Final Rule (2020); HL7 FHIR R4 specification; Da Vinci Project implementation guides; FDA SaMD framework; the Technology pillar framework; Vermont VITL documentation; Vermont RHT Program Application (November 2025); NEJM AI ambient scribe randomized trial (2025); JAMA ambient scribe study (2026).</p>

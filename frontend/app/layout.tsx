@@ -15,6 +15,16 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import WebVitalsReporter from "@/components/WebVitalsReporter";
 import ClientOnlyShell from "@/components/ClientOnlyShell";
 import WelcomeRedirect from "@/components/WelcomeRedirect";
+import StartAtHome from "@/components/StartAtHome";
+
+// One id per server process (globalThis survives dev hot reloads). Null in
+// production — see components/StartAtHome.tsx.
+function getBootId(): string | null {
+  if (process.env.NODE_ENV === "production") return null;
+  const g = globalThis as { __htrBootId?: string };
+  g.__htrBootId ??= `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+  return g.__htrBootId;
+}
 import { VoiceProvider } from "@/components/VoiceContext";
 import TesterHubButton from "@/components/TesterHubButton";
 
@@ -120,6 +130,7 @@ export default async function RootLayout({
             Skip to main content
           </a>
           <WelcomeRedirect />
+          <StartAtHome bootId={getBootId()} />
           <TickerProvider>
             <SidebarProvider>
               <VoiceProvider>

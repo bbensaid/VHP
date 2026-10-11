@@ -85,6 +85,10 @@ def main():
     lines = text.count("\n") + 1
     print(f"HTR_Book_v42.md refreshed from the .docx — {lines:,} lines.")
     print("The .docx was not touched.")
+
+    # The web reader (/read/<slug>) renders from the same .docx; keep it in step.
+    subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                                 "make_reader_html.py")], check=True)
     return 0
 
 

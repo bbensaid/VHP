@@ -5,6 +5,9 @@
 @variant dark (&:is(.dark *));
 
 @theme {
+  /* 3xl: the header has room for the mega-menu AND the full inline search box. */
+  --breakpoint-3xl: 115.625rem; /* 1850px — rem, like the built-in breakpoints, or Tailwind sorts it out of order */
+
   /* ── Z-index scale — use these instead of arbitrary z-[n] values ────────
      z-sticky   20  sticky bars (breadcrumbs, sub-nav)
      z-dropdown 30  dropdowns, mega-menus

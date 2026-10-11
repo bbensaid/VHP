@@ -18,6 +18,7 @@ import {
 import { resolvePlatformLink, PILLARS } from "@/lib/taxonomy";
 import BookmarkChapterButton from "@/components/BookmarkChapterButton";
 import ChapterNotes from "@/components/ChapterNotes";
+import "./book-reader.css";
 
 // ─── Static params (generates one page per chapter at build time) ───────────
 
@@ -37,6 +38,26 @@ export async function generateMetadata(
     title: `${track.title} | Read | HTR`,
     description: track.desc,
   };
+}
+
+// ─── Read the typeset chapter from content/book-html/<slug>.html ────────────
+// Generated from HTR_Book_v42.docx by book-build/make_reader_html.py. The
+// narration .txt is only a fallback: it is a TTS transcript, not a reading text.
+
+interface BookChapter {
+  html: string;
+  toc: { id: string; text: string }[];
+}
+
+async function readBookChapter(slug: string): Promise<BookChapter | null> {
+  const dir = path.join(process.cwd(), "content", "book-html");
+  try {
+    const html = await readFile(path.join(dir, `${slug}.html`), "utf-8");
+    const toc = JSON.parse(await readFile(path.join(dir, `${slug}.toc.json`), "utf-8").catch(() => "[]"));
+    return { html, toc };
+  } catch {
+    return null;
+  }
 }
 
 // ─── Read the narration text from public/audio/narration/*.txt ──────────────
@@ -81,7 +102,8 @@ export default async function ChapterReaderPage(
   const track = getTrackBySlug(slug);
   if (!track) notFound();
 
-  const text = await readNarrationText(track);
+  const book = await readBookChapter(track.slug);
+  const text = book ? null : await readNarrationText(track);
   const { prev, next } = getAdjacentTracks(slug);
   const numLabel = /^\d+$/.test(track.num) ? `Chapter ${track.num}` : track.num;
   const pillar = track.chapter.pillar ? PILLARS.find((p) => p.id === track.chapter.pillar) : null;
@@ -127,7 +149,9 @@ export default async function ChapterReaderPage(
             <p className="text-sm text-slate-500 leading-relaxed">{track.desc}</p>
           </header>
 
-          {text ? (
+          {book ? (
+            <article className="book-prose" dangerouslySetInnerHTML={{ __html: book.html }} />
+          ) : text ? (
             <NarrationBody text={text} />
           ) : (
             <div className="rounded-xl border border-amber-200 bg-amber-50 p-6 text-sm text-amber-800">
@@ -191,6 +215,27 @@ export default async function ChapterReaderPage(
               Download full book PDF
             </a>
           </div>
+
+          {/* Section contents for this chapter */}
+          {book && book.toc.length > 0 && (
+            <div className="rounded-xl border border-slate-200 bg-white p-4">
+              <h3 className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-3">
+                In this chapter
+              </h3>
+              <ol className="space-y-0.5 text-[11px]">
+                {book.toc.map((s) => (
+                  <li key={s.id}>
+                    <a
+                      href={`#${s.id}`}
+                      className="block px-2 py-1 rounded text-slate-600 hover:bg-slate-100 hover:text-slate-900 leading-snug"
+                    >
+                      {s.text}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
 
           {/* Private notes for this chapter */}
           <ChapterNotes slug={track.slug} />

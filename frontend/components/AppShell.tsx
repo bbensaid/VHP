@@ -70,7 +70,7 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
 
   const activeTickerData = tickerData;
 
-  const showBreadcrumbs = !isStudio && !isCoursePage;
+  const showBreadcrumbs = !isStudio;
   const showTicker = !!activeTickerData && !isStudio;
   const isStickyBarVisible = showBreadcrumbs || showTicker;
   const sidebarTop = isStickyBarVisible ? "2.5rem" : "0rem"; // 2.5rem = --sticky-bar-height
@@ -90,8 +90,18 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
         <div className="sticky top-0 z-(--z-sticky) h-10 flex justify-center transition-all duration-300 pointer-events-none bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700 shadow-[0_4px_8px_-2px_rgba(0,0,0,0.12)]">
           <div className="w-full px-4 h-full pointer-events-auto">
             <div className="h-full flex items-center w-full">
-              <div className="shrink-0 flex items-center h-full w-85">
+              {/* The separator line sits on the left edge of the word "PILLARS" in
+                  the header: header nav starts at 16 + 500 (w-125) - 160 (-ml-40)
+                  = 356px, plus the button's px-3 = 368px. Column = 368 - 16 (px-4)
+                  + 12 (pr-3) + 1 (line) = 365px. A trail too long to keep the gap
+                  inside that width grows the column and only then pushes it right. */}
+              <div className="flex items-center h-full min-w-0 max-w-full lg:min-w-[365px] lg:max-w-[45%] shrink-0">
                 {showBreadcrumbs && <Breadcrumbs />}
+                {showTicker && (
+                  <div className="hidden lg:flex items-center h-full ml-auto pl-4 pr-3 shrink-0" aria-hidden="true">
+                    <div className="h-5 w-px bg-slate-400 dark:bg-slate-500" />
+                  </div>
+                )}
               </div>
 
               {showTicker && (
@@ -108,7 +118,9 @@ export default function AppShell({ children, tickerData }: AppShellProps) {
                       </div>
                     </div>
                   </div>
-                  <div className="hidden lg:block w-87.5 shrink-0" />
+                  {/* w-28 (112) + pr-12 (48) + px-4 (16) = 176px: the strip ends under the
+                      right edge of COMPANY in the black bar (right-aligned, 175px in). */}
+                  <div className="hidden lg:block w-28 shrink-0" />
                 </>
               )}
             </div>

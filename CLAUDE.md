@@ -263,6 +263,10 @@ into the site — one was a full day stale on 2026-07-27. Check by searching for
 (chapter browser, FromTheBook callouts, AI Analyst context). It currently
 matches v42's 16 chapters.
 
+The web reader `/read/<slug>` renders `frontend/content/book-html/<slug>.html`,
+generated from the `.docx` (read-only, via pandoc) by `book-build/make_reader_html.py`.
+`refresh_md.py` runs it automatically; the narration `.txt` files are only its fallback.
+
 `/book` and `/read` serve `frontend/public/HTR_Book_v42.pdf` from five places
 ([book/page.tsx](frontend/app/book/page.tsx) lines 200, 246, 252 and
 [read/[slug]/page.tsx](frontend/app/read/[slug]/page.tsx) line 186, plus its

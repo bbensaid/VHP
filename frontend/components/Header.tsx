@@ -582,6 +582,18 @@ const Header = () => {
   const [activeMegaMenu, setActiveMegaMenu] = useState<MegaMenuType>(null);
   const megaMenuTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
+  // The mega-menu (~810px) only fits from 2xl (1536px); below that the "All
+  // Topics" menu replaces it. Where the inline search box would be crushed —
+  // md to lg (tablet) and 2xl to 3xl (1850px, mega-menu present) — it collapses
+  // to an icon that opens it as a full-width row under the nav bar.
+  const [compactSearchOpen, setCompactSearchOpen] = useState(false);
+  useEffect(() => { setCompactSearchOpen(false); }, [pathname]);
+  useEffect(() => {
+    if (!compactSearchOpen) return;
+    const close = () => setCompactSearchOpen(false);
+    window.addEventListener("resize", close);
+    return () => window.removeEventListener("resize", close);
+  }, [compactSearchOpen]);
   const { isHeaderVisible, setHeaderVisible, headlines } = useTicker();
   const { toggleLeft, toggleRight, setLeftOpen, setRightOpen } = useSidebar();
   const voice = useVoice();
@@ -666,12 +678,20 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 flex flex-col font-sans bg-white dark:bg-slate-900" style={{ paddingTop: "env(safe-area-inset-top)" }}>
       {/* 1. TOP BAR — hidden on mobile, visible lg+ */}
-      <div className="hidden lg:block bg-black text-zinc-300 text-[10px] font-bold tracking-wider uppercase py-1 border-b border-neutral-800 w-full relative z-50">
+      {/* h-10 matches the System Vitals bar in AppShell. */}
+      <div className="hidden lg:block h-10 bg-black text-zinc-300 text-[10px] font-bold tracking-wider uppercase border-b border-neutral-800 w-full relative z-50">
+        {/* Column geometry mirrors the System Vitals bar in AppShell exactly:
+            px-4 | 365px column ending in a separator line (pr-3) | flex-1 strip
+            with pr-12 | w-87.5 right column. Separator lines, checkboxes and the
+            strips' right ends therefore share the same x in both bars. */}
         <div className="w-full px-4 flex items-center h-full gap-0">
-          <div className="w-85 shrink-0 flex items-center">
-            <span className="hidden lg:block opacity-70 whitespace-nowrap">{dateString}</span>
+          <div className="w-[365px] shrink-0 flex items-center h-full">
+            <span className="opacity-70 whitespace-nowrap">{dateString}</span>
+            <div className="flex items-center h-full ml-auto pr-3 shrink-0" aria-hidden="true">
+              <div className="h-5 w-px bg-neutral-600" />
+            </div>
           </div>
-          <div className="flex-1 flex items-center overflow-hidden min-w-0 pr-32">
+          <div className="flex-1 flex items-center h-full overflow-hidden min-w-0 pr-12">
             <TickerStrip
               tickerData={{ headlines }}
               isVisible={isHeaderVisible}
@@ -682,7 +702,7 @@ const Header = () => {
               duration={300}
             />
           </div>
-          <div className="hidden lg:flex items-center gap-6 whitespace-nowrap">
+          <div className="w-87.5 shrink-0 flex items-center justify-end gap-3 whitespace-nowrap">
             <Link href="/book" className="flex items-center gap-1.5 text-white hover:text-zinc-300 transition-colors font-bold">
               <span className="text-[10px]">📖</span>
               THE BOOK
@@ -712,11 +732,11 @@ const Header = () => {
       </div>
 
       {/* 2. MAIN NAV BAR */}
-      <div className="bg-white dark:bg-slate-900 py-1 border-b border-slate-200 dark:border-slate-700 w-full">
+      <div className="bg-white dark:bg-slate-900 pt-1 pb-0.5 border-b border-slate-200 dark:border-slate-700 w-full">
         <div className="w-full px-4 flex items-center gap-0 relative">
 
-          {/* LEFT: Toggle + Logo — w-125 matches AppShell breadcrumbs spacer for column alignment */}
-          <div className="w-125 shrink-0 flex items-center gap-2 md:gap-3">
+          {/* LEFT: Toggle + Logo — fixed w-125 only at 2xl, where the mega-menu overlaps it (-ml-40); below that a fixed width pushed the right-hand buttons off-screen. */}
+          <div className="2xl:w-125 shrink-0 flex items-center gap-2 md:gap-3 md:mr-4 2xl:mr-0">
             {showLeftToggle && (
               <button
                 onClick={handleToggleLeft}
@@ -725,7 +745,7 @@ const Header = () => {
                 aria-label="Toggle navigation sidebar"
               >
                 <Bars3BottomLeftIcon className="w-6 h-6 shrink-0" aria-hidden="true" />
-                <span className="text-xs font-bold uppercase tracking-wide xl:hidden hidden sm:inline">Menu</span>
+                <span className="text-xs font-bold uppercase tracking-wide 2xl:hidden hidden sm:inline">Menu</span>
               </button>
             )}
             <Link href="/" className="z-50 relative">
@@ -734,7 +754,7 @@ const Header = () => {
           </div>
 
           {/* NAV: Mega-menu buttons */}
-          <nav className="hidden xl:flex items-center gap-6 h-8 shrink-0 mr-4 -ml-40">
+          <nav className="hidden 2xl:flex items-center gap-6 h-8 shrink-0 mr-4 -ml-40">
             {megaMenuItems.map(({ type, label, activeCheck }) => {
               const active = isMenuActive(activeCheck);
               const isOpen = activeMegaMenu === type;
@@ -805,8 +825,44 @@ const Header = () => {
             </div>
           )}
 
-          {/* SEARCH: fills all remaining space */}
-          <form onSubmit={handleSearchSubmit} className="hidden md:flex flex-1 min-w-0">
+          {/* COMPACT SEARCH TOGGLE — md–lg and 2xl–3xl only (see compactSearchOpen) */}
+          <div className="hidden md:flex lg:hidden 2xl:flex 3xl:hidden flex-1 justify-end pr-2">
+            <button
+              type="button"
+              onClick={() => {
+                const next = !compactSearchOpen;
+                setCompactSearchOpen(next);
+                if (next) setTimeout(() => searchInputRef.current?.focus(), 50);
+              }}
+              className={`flex items-center justify-center w-9 h-9 rounded-lg border text-sm transition-colors ${
+                compactSearchOpen
+                  ? "border-sky-400 bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-100"
+                  : "border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-700"
+              }`}
+              title="Search"
+              aria-label={compactSearchOpen ? "Close search" : "Open search"}
+              aria-expanded={compactSearchOpen}
+            >
+              {compactSearchOpen ? (
+                <XMarkIcon className="w-4 h-4" aria-hidden="true" />
+              ) : (
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              )}
+            </button>
+          </div>
+
+          {/* SEARCH: fills all remaining space. Where the toggle shows it is hidden unless
+              opened from the toggle above, and then drops in as a full-width row. */}
+          <form
+            onSubmit={(e) => { handleSearchSubmit(e); setCompactSearchOpen(false); }}
+            className={`flex-1 min-w-0 ${
+              compactSearchOpen
+                ? "flex absolute inset-x-0 top-full z-40 px-4 py-2 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700 shadow-md"
+                : "hidden lg:flex 2xl:hidden 3xl:flex"
+            }`}
+          >
             <div className="relative w-full">
               <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -816,9 +872,9 @@ const Header = () => {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                onKeyDown={(e) => e.key === "Escape" && setSearchQuery("")}
+                onKeyDown={(e) => { if (e.key === "Escape") { setSearchQuery(""); setCompactSearchOpen(false); } }}
                 placeholder="Search articles, modules, definitions…"
-                className="w-full pl-9 pr-24 py-2 border border-slate-200 dark:border-slate-700 rounded-lg text-sm bg-slate-50 dark:bg-slate-800 text-slate-800 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-sky-400 focus:bg-white dark:focus:bg-slate-700 transition-all"
+                className="w-full pl-9 pr-40 py-2 border border-slate-200 dark:border-slate-700 rounded-lg text-sm bg-slate-50 dark:bg-slate-800 text-slate-800 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-sky-400 focus:bg-white dark:focus:bg-slate-700 transition-all"
               />
               <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-2">
                 <span className="text-[10px] font-bold bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 px-1.5 py-0.5 rounded text-slate-400 dark:text-slate-500 hidden lg:block">⌘K</span>
@@ -844,7 +900,7 @@ const Header = () => {
           </form>
 
           {/* RIGHT: w-87.5 mirrors AppShell right spacer — search flex-1 ends at same x as tickers */}
-          <div className="w-87.5 shrink-0 flex items-center justify-end gap-2">
+          <div className="ml-auto md:ml-4 2xl:ml-0 3xl:w-87.5 shrink-0 flex items-center justify-end gap-2">
             <span className="hidden md:inline-flex">
               <BackendStatus />
             </span>
@@ -874,7 +930,7 @@ const Header = () => {
                 <Bars3BottomRightIcon className="w-6 h-6" aria-hidden="true" />
               </button>
             )}
-            <div className="xl:hidden">
+            <div className="2xl:hidden">
               <button
                 className="flex items-center gap-1.5 px-3 py-2 min-h-11 text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg transition-colors font-bold text-xs uppercase tracking-wide border border-slate-200 dark:border-slate-700"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -902,7 +958,7 @@ const Header = () => {
         {mobileMenuOpen && (
           <div
             id="mobile-menu"
-            className="w-full bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700 xl:hidden flex flex-col animate-in slide-in-from-top-2 duration-200 max-h-[75vh] overflow-y-auto shadow-lg"
+            className="w-full bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700 2xl:hidden flex flex-col animate-in slide-in-from-top-2 duration-200 max-h-[75vh] overflow-y-auto shadow-lg"
           >
             {/* Mobile Search — pinned at top */}
             <div className="px-4 py-3 border-b-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 sticky top-0 z-10">

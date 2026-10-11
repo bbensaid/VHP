@@ -68,7 +68,7 @@ const Logo: React.FC = () => {
       {/* 4. TAGLINE */}
       <div className="mt-0 w-full hidden sm:block">
         <div className="w-full border-t border-gray-300" />
-        <div className="mt-0.5 text-center text-[10px] font-semibold tracking-wide uppercase flex justify-center items-center gap-1.5 text-slate-600 subpixel-antialiased">
+        <div className="mt-0.5 text-center text-[10px] leading-3 font-semibold tracking-wide uppercase flex justify-center items-center gap-1.5 text-slate-600 subpixel-antialiased">
           <span>SHAPING</span>
           <span>HEALTHCARE</span>
           <span>TOGETHER</span>
