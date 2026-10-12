@@ -8,9 +8,12 @@ import type { CourseWithProgress } from "@/types/course";
 export function LessonPageClient({
   course,
   enrollmentId,
+  initialLessonSlug,
 }: {
   course: CourseWithProgress;
   enrollmentId: string;
+  /** The lesson named in the URL — a deep link must open that lesson. */
+  initialLessonSlug?: string;
 }) {
   const handleProgress = useCallback(
     async (lessonId: string, status: "in_progress" | "completed") => {
@@ -31,6 +34,7 @@ export function LessonPageClient({
     <div className="flex-1 min-h-0 flex flex-col">
       <CoursePlayer
         course={course}
+        initialLessonSlug={initialLessonSlug}
         onProgressUpdate={handleProgress}
         onQuizAttempt={handleQuiz}
       />

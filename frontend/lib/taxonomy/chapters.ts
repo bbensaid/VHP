@@ -257,7 +257,7 @@ export const CHAPTERS: readonly Chapter[] = [
     desc: "Project, program, and portfolio levels. Vermont's 19-component transformation portfolio. The portfolio risk register, benefits realization, and the case for a transformation portfolio office.",
     group: "Future & Strategy",
     pillar: null,
-    platformLinks: ["impact-simulation", "transformation-scorecard", "transformation-friction-index"],
+    platformLinks: ["portfolio-sequencing-test", "impact-simulation", "transformation-scorecard", "transformation-friction-index"],
   },
   {
     num: "16",

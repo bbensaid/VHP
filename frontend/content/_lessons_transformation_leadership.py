@@ -383,9 +383,10 @@ lesson_3_body = [
         'legislature see the whole portfolio\'s status at once rather than piecing it together from a dozen '
         'separate updates.'),
     callout('s2c1',
-        'PMI defines the ten project management knowledge areas — integration, scope, schedule, cost, '
+        'PMI\'s PMBOK Guide (sixth edition, 2017) defines ten project management knowledge areas — integration, scope, schedule, cost, '
         'quality, resource, communications, risk, procurement, and stakeholder management — as the complete '
-        'set a mature PMO has to address. A transformation program can have strong analytical content in '
+        'set a mature PMO has to address. The 2025 eighth edition reorganizes the same ground into principles and '
+        'performance domains, but the ten areas remain the clearest checklist of what a PMO has to run. A transformation program can have strong analytical content in '
         'every one of these areas and still lack the operational infrastructure to manage them day to day; '
         'that gap between analytical coverage and operational capacity is precisely what a PMO is built to '
         'close.'),

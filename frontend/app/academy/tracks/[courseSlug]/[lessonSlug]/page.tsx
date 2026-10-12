@@ -65,5 +65,11 @@ export default async function LessonPage({ params }: PageProps) {
   // Hydrate all lessons that have a Sanity slug with rich content
   course = await hydrateWithSanityContent(course);
 
-  return <LessonPageClient course={course} enrollmentId={course.enrollment?.id ?? ""} />;
+  return (
+    <LessonPageClient
+      course={course}
+      enrollmentId={course.enrollment?.id ?? ""}
+      initialLessonSlug={lessonSlug}
+    />
+  );
 }

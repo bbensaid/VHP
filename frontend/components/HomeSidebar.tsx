@@ -299,6 +299,7 @@ const SECTIONS: Section[] = [
       { href: "/the-wire",                       label: "The Wire",            icon: BoltIcon },
       { href: "/investment-tracker",             label: "Investment Tracker",   icon: BanknotesIcon },
       { href: "/transformation-friction-index",  label: "Friction Index",       icon: BeakerIcon },
+      { href: "/portfolio-sequencing-test",      label: "Portfolio Sequencing", icon: TableCellsIcon },
       { href: "/impact-simulation",              label: "Impact Simulation",    icon: SparklesIcon },
       { href: "/multimedia",                     label: "Multimedia",          icon: FilmIcon },
       { href: "/trending-topics",                label: "Trending Topics",     icon: ArrowTrendingUpIcon },
@@ -363,7 +364,7 @@ function getSectionForPath(path: string, searchParams: URLSearchParams | null): 
   const statesPrefixes = PROGRAMS.map((p) => p.href.split("?")[0]);
   if (statesPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "states";
 
-  const toolsPrefixes = ["/htr-simulator", "/medicaid-eligibility-simulator", "/hti-dashboard", "/the-wire", "/investment-tracker", "/transformation-friction-index", "/impact-simulation", "/multimedia", "/trending-topics"];
+  const toolsPrefixes = ["/htr-simulator", "/medicaid-eligibility-simulator", "/hti-dashboard", "/the-wire", "/investment-tracker", "/transformation-friction-index", "/portfolio-sequencing-test", "/impact-simulation", "/multimedia", "/trending-topics"];
   if (toolsPrefixes.some((p) => path === p || path.startsWith(p + "/"))) return "tools";
 
   const advisoryPrefixes = ["/advisory", "/connect", "/community"];

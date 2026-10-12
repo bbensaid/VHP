@@ -229,6 +229,14 @@ CATALOG = [
         "keywords": ["friction index", "transformation friction", "implementation barriers", "change resistance"],
     },
     {
+        "id": "portfolio-sequencing-test",
+        "label": "Portfolio Sequencing Test",
+        "url": "/portfolio-sequencing-test",
+        "category": "Tools & Simulators",
+        "description": "Run the Portfolio Manager's sequencing test (book Chapter 15) on Vermont's 19-component transformation portfolio or your own register: which components are correctly waiting, late by dependency order, or running ahead of their gate, and where schedule pressure belongs.",
+        "keywords": ["portfolio management", "PMO", "portfolio register", "sequencing test", "critical path", "dependency order", "PMI", "portfolio manager", "transformation portfolio", "19 components", "stage gate"],
+    },
+    {
         "id": "investment-tracker",
         "label": "Investment Tracker",
         "url": "/investment-tracker",
