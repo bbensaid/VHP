@@ -937,7 +937,10 @@ interface GovernanceDomain {
 
 // Grounded in six published healthcare-AI-governance frameworks (verified 2026-09-22):
 //  - FDA/Health Canada/MHRA "Good Machine Learning Practice" (GMLP) 10 Guiding Principles (Oct 2021; IMDRF final, Jan 2025)
+//  - 45 CFR § 92.210 (Section 1557 final rule, 2024) — patient care decision support tools; applicable May 1, 2025;
+//    NOT among the provisions vacated in Tennessee v. Kennedy (HHS Notice of Vacatur, 91 FR, June 2, 2026)
 //  - ONC HTI-1 Final Rule — Predictive DSI transparency requirements: FAVES criteria (Fair/Appropriate/Valid/Effective/Safe)
+//    (HTI-5 proposed rule, Dec 29 2025, would remove most source-attribute requirements — not final as of Oct 2026)
 //    and 31 source attributes for Predictive Decision Support Interventions
 //  - NIST AI Risk Management Framework 1.0 (AI RMF) — 4 functions (Govern/Map/Measure/Manage), 76 subcategories total
 //  - Coalition for Health AI (CHAI) Governance Playbooks (May 2026) — 8 governance domains for health systems
@@ -981,7 +984,7 @@ const GOVERNANCE_DOMAINS: GovernanceDomain[] = [
     name: "Bias & Equity",
     icon: <Scale className="w-4 h-4" />,
     color: "purple",
-    source: "ONC HTI-1 FAVES (\"Fair\"); NIST AI RMF Measure 2.11; WHO Principle 5 — Inclusiveness & Equity",
+    source: "45 CFR § 92.210 (Section 1557 rule — identify & mitigate discrimination risk in decision-support tools, since May 1, 2025); ONC HTI-1 FAVES (\"Fair\"); NIST AI RMF Measure 2.11; WHO Principle 5 — Inclusiveness & Equity",
     questions: [
       "Was bias testing performed across protected demographic groups?",
       "Are equity-focused performance metrics tracked (e.g., recall by race)?",
@@ -997,7 +1000,7 @@ const GOVERNANCE_DOMAINS: GovernanceDomain[] = [
     name: "Transparency",
     icon: <Eye className="w-4 h-4" />,
     color: "blue",
-    source: "ONC HTI-1 Predictive DSI source attributes; FDA transparency guiding principles; model-card documentation practice",
+    source: "ONC HTI-1 Predictive DSI source attributes (ASTP/ONC's Dec 2025 HTI-5 proposal would remove most); FDA transparency guiding principles; model-card documentation practice",
     questions: [
       "Can clinicians understand why a specific alert fired (explainability)?",
       "Is there a published model card or technical documentation?",

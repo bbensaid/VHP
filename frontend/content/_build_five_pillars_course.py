@@ -3507,8 +3507,8 @@ TECHNOLOGY = [{'id': 'lesson_5p_data_infrastructure_gate',
                              '\n'
                              'In Vermont those are VHCURES, the all-payer claims database managed '
                              'by the Green Mountain Care Board with Onpoint Health Data as '
-                             'aggregation vendor; VITL, the nonprofit designated by Act 61 of 2009 '
-                             'as the exclusive operator of the Vermont Health Information '
+                             'aggregation vendor; VITL, the nonprofit that Vermont statute (18 '
+                             'V.S.A. § 9352) designates as the exclusive operator of the Vermont Health Information '
                              'Exchange; and the analytics layer that AHS and GMCB have been '
                              'jointly procuring, now organized around the Unified Health Data '
                              'Space.\n'
@@ -3599,9 +3599,9 @@ TECHNOLOGY = [{'id': 'lesson_5p_data_infrastructure_gate',
                              'performed. It does not carry the result. This is why the hybrid '
                              'measures Act 68 depends on — CMS 167 for hypertension control, CMS '
                              '204 for diabetes control — cannot be produced from claims alone. '
-                             'Absent clinical linkage they can only be produced by paying staff to '
-                             "read charts by hand, a burden Vermont's own program materials put at "
-                             'over $14 million annually statewide.'},
+                             'Absent clinical linkage, AHS told the Legislature in January 2026, '
+                             'provider groups and payers "must resort to manual chart abstraction" '
+                             '— paying staff to read charts by hand.'},
                     {'type': 'callout',
                      'variant': 'warning',
                      'heading': 'Gobeille is a federal ceiling, not a local failure',
@@ -3710,11 +3710,13 @@ TECHNOLOGY = [{'id': 'lesson_5p_data_infrastructure_gate',
                              '\n'
                              'The operational decision worth studying is which claims feed the '
                              'state built on. Vermont routes integration primarily through the '
-                             'Medicaid Data Warehouse and Analytics Solution, live since November '
-                             '2024, rather than through VHCURES. MDWAS refreshes weekly and '
-                             'carries an opt-out consent model compliant with Act 53. VHCURES does '
-                             'not. For research, the lag is tolerable; for management, a weekly '
-                             'refresh on one payer beat an annual refresh on all of them. That is '
+                             'Medicaid Data Warehouse and Analytics Solution, which went live in '
+                             'early January 2026, rather than through VHCURES. MDWAS links '
+                             "Medicaid members' clinical data from the exchange with Medicaid "
+                             "claims inside the State's own system; VHCURES runs on a reporting "
+                             'lag of a year or more. For research, the lag is tolerable; for '
+                             'management, a timely feed on one payer beats a lagging feed on all '
+                             'of them. That is '
                              'the correct trade, and it comes with an obligation: Medicaid is '
                              "roughly a quarter of Vermont's primary coverage, so multi-payer "
                              'scaling through 2029-2030 is not an enhancement to the plan, it is '
@@ -3722,8 +3724,8 @@ TECHNOLOGY = [{'id': 'lesson_5p_data_infrastructure_gate',
                     {'type': 'comparison_table',
                      'heading': 'Two claims feeds, two different jobs',
                      'rows': [{'label': 'Refresh cadence',
-                               'left': 'VHCURES: 9-12 month reporting lag',
-                               'right': 'MDWAS: weekly refresh'},
+                               'left': 'VHCURES: reporting lag of a year or more',
+                               'right': "MDWAS: linked Medicaid claims and clinical data in the State's own system"},
                               {'label': 'Population',
                                'left': 'All payers, but only 60% of commercial',
                                'right': 'Medicaid only, scaling to Medicare 2026-2028'},
@@ -3921,9 +3923,10 @@ TECHNOLOGY = [{'id': 'lesson_5p_data_infrastructure_gate',
                           'points': 1,
                           'question': 'Vermont routes its integration work primarily through MDWAS '
                                       'rather than VHCURES. What is the trade being made?',
-                          'explanation': 'MDWAS refreshes weekly with an Act 53-compliant opt-out '
-                                         'model but covers Medicaid only; VHCURES covers all '
-                                         'payers but lags 9-12 months. Vermont chose timeliness '
+                          'explanation': 'MDWAS links Medicaid claims with exchange clinical '
+                                         "data in the State's own system but covers Medicaid "
+                                         'only; VHCURES covers all payers but runs on a reporting '
+                                         'lag of a year or more. Vermont chose timeliness '
                                          'over breadth for management purposes, which makes '
                                          'multi-payer scaling a requirement rather than an '
                                          'enhancement.',
@@ -4261,8 +4264,9 @@ TECHNOLOGY = [{'id': 'lesson_5p_data_infrastructure_gate',
                              'alongside terminology services and the integration engine.\n'
                              '\n'
                              'The operational picture the state is matching across is genuinely '
-                             "fragmented. Vermont's 14 hospitals run four different EHR platforms "
-                             '— Epic, Oracle Health, TruBridge and Meditech — before accounting '
+                             "fragmented. Vermont's 14 hospitals do not share an EHR — UVM Health "
+                             "Network's hospitals run Epic, the independent hospitals a mix of "
+                             "other vendors' systems — before accounting "
                              'for community mental health agencies, skilled nursing facilities, '
                              'home health agencies and independent practices, many of which have '
                              "no FHIR-capable system at all. Oliver Wyman's community engagement "
@@ -4781,7 +4785,26 @@ TECHNOLOGY = [{'id': 'lesson_5p_data_infrastructure_gate',
                              'Neither regime relieves the deploying organization of anything. FDA '
                              'clearance addresses the device as submitted. HTI-1 addresses '
                              'disclosure. How the tool performs on your patients remains yours to '
-                             'measure.'},
+                             'measure.\n'
+                             '\n'
+                             'Two developments since then pull in opposite directions. ASTP/ONC\'s '
+                             'HTI-5 proposed rule, published December 29, 2025, would remove most of '
+                             "HTI-1's source-attribute and risk-management requirements for "
+                             'predictive decision support; it was not final as of October 2026. '
+                             'Meanwhile a different federal rule reaches the hospital directly: since '
+                             'May 1, 2025, the Section 1557 nondiscrimination rule (45 CFR § 92.210) '
+                             'has required covered health programs to make reasonable efforts to '
+                             'identify patient care decision support tools that use race, color, '
+                             'national origin, sex, age, or disability as inputs, and to mitigate the '
+                             'risk of discrimination from each. That provision was not among those a '
+                             'federal court vacated in October 2025.\n'
+                             '\n'
+                             'Vermont has begun legislating as well. Act 156 of 2026 makes it '
+                             'unprofessional conduct for a mental health professional to deliver '
+                             'therapy through AI systems alone, and Act 101 of 2026 directs the '
+                             "State's Artificial Intelligence Advisory Council to recommend statutory "
+                             'changes — including on generative AI in the regulated professions and AI '
+                             'in insurance utilization review — by January 15, 2027.'},
                     {'type': 'key_stat',
                      'stats': [{'value': '1,451',
                                 'label': 'AI-enabled medical devices authorized by the FDA through '

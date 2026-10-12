@@ -392,17 +392,17 @@ const PA_SERVICES = [
 const PA_DECISIONS: ("approved" | "denied" | "pended")[] = ["approved", "denied", "pended"];
 
 const COMPLIANCE_ITEMS = [
-  { id: "c1", category: "Information Blocking", label: "TEFCA participation or good-faith onboarding initiated" },
+  { id: "c1", category: "National Exchange", label: "Connected to national exchange — through a TEFCA QHIN or eHealth Exchange / Carequality / CommonWell (voluntary)" },
   { id: "c2", category: "Information Blocking", label: "No practices that unreasonably restrict access to EHI" },
   { id: "c3", category: "Information Blocking", label: "Exceptions to information blocking properly documented" },
   { id: "c4", category: "FHIR APIs", label: "SMART on FHIR / OAuth 2.0 patient-access API implemented (R4)" },
   { id: "c5", category: "FHIR APIs", label: "Provider directory API available and public" },
-  { id: "c6", category: "FHIR APIs", label: "Payer-to-payer data exchange API operational" },
-  { id: "c7", category: "ONC HTI-1", label: "Predictive DSI transparency attestations complete" },
+  { id: "c6", category: "FHIR APIs", label: "(Impacted payers) Payer-to-Payer FHIR API live per CMS-0057-F (by Jan 1, 2027)" },
+  { id: "c7", category: "ONC HTI-1", label: "Predictive DSI source attributes obtained from your EHR developer for each AI/ML tool" },
   { id: "c8", category: "ONC HTI-1", label: "USCDI v3 data classes supported in certified EHR" },
-  { id: "c9", category: "ONC HTI-1", label: "Real-world testing plans submitted and executed" },
+  { id: "c9", category: "ONC HTI-1", label: "(EHR developers) Real-world testing plans submitted and executed" },
   { id: "c10", category: "21st Century Cures", label: "Patients can access their EHI at no cost" },
-  { id: "c11", category: "21st Century Cures", label: "Electronic prior authorization implemented per HIPAA" },
+  { id: "c11", category: "Prior Authorization", label: "Electronic prior authorization (Da Vinci CRD/DTR/PAS) ready for payers' 2027 Prior Authorization APIs" },
   { id: "c12", category: "Prior Authorization", label: "Prior auth decisions returned within 72h (urgent) / 7 days (standard)" },
   { id: "c13", category: "Prior Authorization", label: "PA-specific FHIR APIs (CRD, DTR, PAS) implemented" },
   { id: "c14", category: "Interoperability", label: "HL7 Da Vinci implementation guides adopted" },
@@ -1824,18 +1824,18 @@ function ComplianceTab() {
   const gaps = COMPLIANCE_ITEMS.filter((c) => !checks[c.id]);
 
   const recommendations: Record<string, string> = {
-    c1: "Register with TEFCA at sequoiaproject.org and initiate QHIN onboarding",
+    c1: "Connect through a QHIN or national network — usually via your EHR vendor or HIE. TEFCA participation is voluntary; organizations join through a QHIN rather than becoming one",
     c2: "Conduct information blocking risk assessment and document policies",
     c3: "Review ONC Cures Rule exceptions (privacy, security, infeasibility, etc.)",
     c4: "Implement SMART on FHIR with HL7 FHIR R4 patient-access API",
     c5: "Publish FHIR R4 provider directory endpoint per NPPES standards",
-    c6: "Implement payer-to-payer exchange per CMS Interoperability Rule §156.221",
-    c7: "Complete DSI transparency attestations for all AI/ML clinical tools",
+    c6: "Impacted payers (MA, Medicaid, CHIP, FFE plans): implement the Payer-to-Payer FHIR API required by CMS-0057-F by January 1, 2027",
+    c7: "Request HTI-1 source attributes for every predictive DSI in your EHR. Note: ASTP/ONC's HTI-5 proposal (Dec 2025) would remove most of this developer requirement — keep your own inventory either way",
     c8: "Upgrade certified EHR to support all USCDI v3 data elements",
     c9: "Submit and execute real-world testing plans per ONC §170.315(g)(3)",
     c10: "Remove cost barriers for patients accessing their EHI",
-    c11: "Implement X12 278 electronic PA transactions per HIPAA",
-    c12: "Configure PA decision workflows to meet CMS timing requirements",
+    c11: "Have your EHR support Da Vinci CRD, DTR and PAS so it can use impacted payers' Prior Authorization APIs (CMS-0057-F, January 2027); HIPAA's X12 278 remains the adopted transaction standard",
+    c12: "Impacted payers: return decisions within 72 hours (expedited) and 7 calendar days (standard), required by CMS-0057-F since January 1, 2026",
     c13: "Implement Da Vinci CRD, DTR, and PAS FHIR implementation guides",
     c14: "Adopt relevant HL7 Da Vinci IGs for your use case",
     c15: "Implement Bulk FHIR API ($export) for population-level data access",
@@ -1966,7 +1966,7 @@ function ComplianceTab() {
               <div className="rounded-lg bg-green-50 border border-green-200 p-4 text-center">
                 <CheckCircle className="w-8 h-8 text-green-500 mx-auto mb-1" />
                 <p className="font-bold text-green-800">Full Compliance Achieved</p>
-                <p className="text-xs text-green-600 mt-1">All ONC HTI-1 and 21st Century Cures requirements are met. Maintain documentation for audits.</p>
+                <p className="text-xs text-green-600 mt-1">Every item on this checklist is checked. This is a planning aid, not a compliance determination — maintain documentation for audits.</p>
               </div>
             )}
 
