@@ -72,7 +72,7 @@ export default function StatewideEHRLab() {
       <p className="text-sm text-slate-600 leading-relaxed bg-slate-50 rounded-lg px-4 py-3 border border-slate-100">
         Vermont&apos;s Act 167 feasibility assessment asks: build <strong>one statewide EHR</strong> (every
         provider on a single platform) or invest in <strong>FHIR interoperability</strong> across the
-        existing ~4 platforms? The book&apos;s framing: if FHIR can deliver real-time exchange at acceptable
+        existing EHR platforms (modeled here as ~4)? The book&apos;s framing: if FHIR can deliver real-time exchange at acceptable
         cost, the case for a disruptive statewide migration weakens. Model it.
       </p>
 

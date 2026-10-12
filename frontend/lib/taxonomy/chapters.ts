@@ -133,7 +133,7 @@ export const CHAPTERS: readonly Chapter[] = [
     desc: "FHIR implementation reality. AI scribe, remote patient monitoring, telehealth, and diagnostic AI. The AI Clinical Governance Lifecycle. Alert fatigue and CDS effectiveness.",
     group: "Technology Pillar",
     pillar: "technology",
-    platformLinks: ["clinical-data-exchange", "ai-governance-lab", "digital-health-lab"],
+    platformLinks: ["clinical-data-exchange", "ai-governance-lab", "digital-health-lab", "fhir-implementation-guide", "statewide-ehr-lab"],
   },
 
   // ── Economics Pillar ────────────────────────────────────────────────────
