@@ -360,6 +360,14 @@ export const TOOLS: readonly Tool[] = [
     desc: "Quantify implementation barriers to health transformation across all five pillars for any state or organization.",
   },
   {
+    id: "portfolio-sequencing-test",
+    label: "Portfolio Sequencing Test",
+    href: "/portfolio-sequencing-test",
+    pillars: ["policy", "technology", "economics", "clinical", "operations"],
+    chapters: ["15"],
+    desc: "Run the Portfolio Manager's sequencing test on a transformation portfolio: correctly waiting, late by dependency, or running ahead of its gate.",
+  },
+  {
     id: "investment-tracker",
     label: "Investment Tracker",
     href: "/investment-tracker",

@@ -328,10 +328,75 @@ LESSONS = [
         ),
     },
     {
-        "id": "lesson_tl_04",
+        # Added 2026-10-12. Rich body in Sanity: frontend/content/_lesson_tl_sequencing_test.py
+        "id": "lesson_tl_seq",
         "trackId": TRACK["id"],
         "pillar": "operations",
         "order": 4,
+        "slug": "tl-running-the-sequencing-test",
+        "title": "Running the Sequencing Test: A Portfolio Register Workshop",
+        "summary": (
+            "A hands-on companion to the book's Chapter 15: build a portfolio register, run the Portfolio "
+            "Manager's four-step sequencing test against it, and read the verdicts alongside the risk register "
+            "— worked on Vermont's 19 components and contrasted with the HealthCare.gov and Cover Oregon launches."
+        ),
+        "estimatedMinutes": 25,
+        "isPublished": True,
+        "tags": ["PMO", "portfolio-management", "sequencing", "hands-on", "transformation-leadership"],
+        "objectives": obj("tlseq", [
+            "Build a portfolio register with the five fields the sequencing test needs",
+            "Apply the four-step sequencing test and name each component's verdict",
+            "Explain why design work and stand-alone care-model work do not wait for a gate",
+            "Interpret Vermont's Fall 2026 results and identify where schedule pressure belongs",
+            "Use the HealthCare.gov and Cover Oregon reviews to argue for a single owner of portfolio sequencing",
+        ]),
+        "content_blocks": [
+            text_block(
+                "This lesson's full content is delivered from the Academy's rich lesson body. Run the "
+                "Portfolio Sequencing Test at /portfolio-sequencing-test.",
+                heading="Running the Sequencing Test",
+            ),
+        ],
+        "quiz": {
+            "id": "quiz_tlseq",
+            "passingScore": 75,
+            "shuffleOptions": True,
+            "questions": [
+                {"id": "q_tlseq1", "type": "single_choice", "points": 1,
+                 "question": "In the Vermont, Fall 2026 run of the sequencing test, the statewide AI-governance framework has a FY2028 adoption target, has not started, and its Technology gate is open. What does the test conclude?",
+                 "explanation": "The test never uses the calendar target to decide a verdict. A component whose gate is open and that is not running is late by dependency order, however distant its deadline.",
+                 "options": q_opts("tlseq1", [
+                     ("It is late by dependency order, because nothing upstream is holding it", True, None),
+                     ("It is correctly waiting, because its deadline is two years away", False, None),
+                     ("It is running ahead of its gate", False, None),
+                     ("It cannot be assessed until the Economics gate opens", False, None),
+                 ])},
+                {"id": "q_tlseq2", "type": "single_choice", "points": 1,
+                 "question": "While the Technology gate is still closed, Economics payment-model design work is underway. What verdict does the sequencing test give it?",
+                 "explanation": "Book Chapter 1's Economics-as-design rule: specifying what the payment model must measure runs in parallel with the Technology stage. Only implementation waits for the gate.",
+                 "options": q_opts("tlseq2", [
+                     ("Design in parallel — allowed and useful", True, None),
+                     ("Running ahead of its gate", False, None),
+                     ("Correctly waiting — it should not have started", False, None),
+                     ("Late by dependency order", False, None),
+                 ])},
+                {"id": "q_tlseq3", "type": "single_choice", "points": 1,
+                 "question": "What did the HHS Office of Inspector General's 2016 case study identify as the most critical misstep in the HealthCare.gov launch?",
+                 "explanation": "The OIG found that the absence of clear leadership caused delays in decisionmaking, and that no entity formally served as systems integrator — the gap a portfolio owner exists to close.",
+                 "options": q_opts("tlseq3", [
+                     ("The absence of clear leadership, which delayed decisions", True, None),
+                     ("Insufficient federal appropriations for the website", False, None),
+                     ("A shortage of server hosting capacity alone", False, None),
+                     ("States refusing to share eligibility data", False, None),
+                 ])},
+            ],
+        },
+    },
+    {
+        "id": "lesson_tl_04",
+        "trackId": TRACK["id"],
+        "pillar": "operations",
+        "order": 5,
         "slug": "tl-stakeholder-board-management",
         "title": "Stakeholder and Governing Board Management Under Mandatory Payment Reform",
         "summary": (
@@ -400,7 +465,7 @@ LESSONS = [
         "id": "lesson_tl_05",
         "trackId": TRACK["id"],
         "pillar": "operations",
-        "order": 5,
+        "order": 6,
         "slug": "tl-managing-resistance-global-budgets",
         "title": "Managing Organizational Resistance in a Fixed-Revenue-Envelope Transition",
         "summary": (
@@ -470,7 +535,7 @@ LESSONS = [
         "id": "lesson_tl_06",
         "trackId": TRACK["id"],
         "pillar": "operations",
-        "order": 6,
+        "order": 7,
         "slug": "tl-sustaining-change-benefits-realization",
         "title": "Sustaining the Change: Benefits Realization and Avoiding Reform Fatigue",
         "summary": (

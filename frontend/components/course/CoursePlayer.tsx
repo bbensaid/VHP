@@ -16,16 +16,19 @@ interface CoursePlayerProps {
   onProgressUpdate: (lessonId: string, status: "in_progress" | "completed") => void;
   onQuizAttempt: (lessonId: string, quizId: string, score: number, passed: boolean) => void;
   onAudioUpload?: (lessonId: string, file: File, slotKey: string) => Promise<string>;
+  /** Lesson named in the URL. Takes precedence over saved progress so deep links work. */
+  initialLessonSlug?: string;
 }
 
-export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioUpload }: CoursePlayerProps) {
+export function CoursePlayer({ course, onProgressUpdate, onQuizAttempt, onAudioUpload, initialLessonSlug }: CoursePlayerProps) {
   const { isRightOpen, setRightOpen } = useSidebar();
   const allLessons = course.tracks.flatMap((t) => t.lessons);
 
   const initialLesson =
-    course.enrollment?.currentLessonId
+    (initialLessonSlug && allLessons.find((l) => l.slug === initialLessonSlug)) ||
+    (course.enrollment?.currentLessonId
       ? allLessons.find((l) => l.id === course.enrollment!.currentLessonId) ?? allLessons[0]
-      : allLessons[0];
+      : allLessons[0]);
 
   const [currentLesson, setCurrentLesson] = useState(initialLesson);
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);

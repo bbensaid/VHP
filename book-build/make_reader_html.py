@@ -22,6 +22,7 @@ import html, json, os, re, subprocess, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, 'HTR_Book_v42.docx')
 OUT = os.path.join(ROOT, 'frontend', 'content', 'book-html')
+FIG_OUT = os.path.join(ROOT, 'frontend', 'public', 'book-figures')
 
 # Callout title prefix -> CSS kind. Order matters (first match wins).
 CALLOUT_KINDS = [
@@ -106,14 +107,40 @@ def polish(body):
     # Headings that are wholly bold: the reader's CSS already weights them.
     body = re.sub(r'<(h[2-4])([^>]*)><strong>(.*?)</strong></\1>', r'<\1\2>\3</\1>', body, flags=re.S)
     body = re.sub(r'<p>\s*</p>', '', body)
+    body = re.sub(r'<p><img src="([^"]+)"[^>]*/?>\s*</p>\s*<p class="figure-caption">(.*?)</p>',
+                  lambda m: ('<figure class="book-figure"><img src="%s" alt="%s" loading="lazy" '
+                             'style="max-width:100%%;height:auto" /><figcaption class="figure-caption">%s</figcaption></figure>'
+                             % (m.group(1), html.escape(strip_tags(m.group(2)).split(' Source')[0], quote=True), m.group(2))),
+                  body, flags=re.S)
     return body.strip() + '\n'
 
 
 def main():
     if not os.path.exists(SRC):
         sys.exit(f'missing {SRC}')
-    doc = subprocess.run(['pandoc', SRC, '-t', 'html5', '--wrap=none'],
+    import hashlib, shutil, tempfile
+    media_tmp = tempfile.mkdtemp(prefix='htr_reader_media_')
+    doc = subprocess.run(['pandoc', SRC, '-t', 'html5', '--wrap=none', f'--extract-media={media_tmp}'],
                          check=True, capture_output=True, text=True).stdout
+    # Figures: pandoc points <img> at the extracted file. Publish each under a
+    # content-hash name (Google Docs renames media on every round-trip, so the
+    # docx's image2.png is not a stable identity) and rewrite the src.
+    os.makedirs(FIG_OUT, exist_ok=True)
+
+    def publish(m):
+        src = m.group(1)
+        path = src if os.path.isabs(src) else os.path.join(media_tmp, src)
+        if not os.path.exists(path):
+            return m.group(0)
+        data = open(path, 'rb').read()
+        name = hashlib.sha1(data).hexdigest()[:16] + os.path.splitext(path)[1].lower()
+        dest = os.path.join(FIG_OUT, name)
+        if not os.path.exists(dest):
+            with open(dest, 'wb') as f:
+                f.write(data)
+        return f'<img src="/book-figures/{name}"'
+    doc = re.sub(r'<img src="([^"]+)"', publish, doc)
+    shutil.rmtree(media_tmp, ignore_errors=True)
     parts = re.split(r'(?=<h1\b)', doc)
     os.makedirs(OUT, exist_ok=True)
     written = []

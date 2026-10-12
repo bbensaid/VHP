@@ -408,7 +408,7 @@ Table of Contents
 >
 > [15.4 The Case for a Portfolio Manager 232](#the-case-for-a-portfolio-manager)
 >
-> [15.5 Pillar-Level Project Managers: Five Roles, One Framework 232](#pillar-level-project-managers-five-roles-one-framework)
+> [15.5 Pillar-Level Program Managers: Five Roles, One Framework 232](#pillar-level-program-managers-five-roles-one-framework)
 >
 > [15.6 Governance Architecture and the Ten Knowledge Areas 233](#governance-architecture-and-the-ten-knowledge-areas)
 >
@@ -424,7 +424,7 @@ Table of Contents
 >
 > [15.12 Implementation Roadmap 237](#implementation-roadmap)
 >
-> [15.13 Answering the Four Objections 237](#answering-the-four-objections)
+> [15.13 Answering the Five Objections 237](#answering-the-five-objections)
 >
 > [15.14 Work This Chapter on the Platform 238](#work-this-chapter-on-the-platform-13)
 >
@@ -5911,7 +5911,7 @@ Reform cascade --- a legislatively structured sequence in which each interventio
 
 # **Chapter 15: Healthcare Transformation as Portfolio Management --- Applying PMI Standards to Five-Pillar Reform**
 
-> *Vermont's five-pillar transformation is not a project, and not a single program. It is a portfolio --- a structured collection of interdependent programs and projects managed toward a strategic objective. This chapter applies PMI portfolio-management standards to Vermont's transformation, makes the case for a dedicated Portfolio Manager at the state level and Project Managers at each pillar, and provides the governance architecture, role definitions, performance framework, and risk register the Statewide Strategic Plan requires.*
+> *Vermont's five-pillar transformation is not a project, and not a single program. It is a portfolio --- a structured collection of interdependent programs and projects managed toward a strategic objective. This chapter applies PMI portfolio-management standards to Vermont's transformation, makes the case for a dedicated Portfolio Manager at the state level and Program Managers at each pillar, and provides the governance architecture, role definitions, performance framework, and risk register the Statewide Strategic Plan requires.*
 
 PMI's portfolio, program, and project standards are not Vermont-specific, or even healthcare-specific --- they are a general-purpose discipline for managing interdependent work toward a strategic objective, used across industries. Any organization running a five-pillar transformation, in any state, is by definition running a portfolio whether or not it has named it one, and the governance gap this chapter identifies --- multiple interdependent initiatives with no portfolio-level accountability --- is the default state of most transformation efforts, not a Vermont peculiarity. Vermont's 19-component portfolio is this chapter's worked example of what naming and structuring that portfolio looks like once a state's various mandates, programs, and grants are inventoried against the five-pillar framework.
 
@@ -5919,14 +5919,14 @@ PMI's portfolio, program, and project standards are not Vermont-specific, or eve
 
 Every concept in the preceding chapters maps to a project-management discipline, whether or not it was introduced in those terms. Pillar definition is scope management. The execution sequence is schedule management with dependency logic. The failure cascade is risk management. The implementation matrix is cost and resource management. The Vermont Scorecard is benefits-realization management. The five-pillar framework is, in its entirety, a portfolio-management architecture --- and Vermont's transformation is failing to be managed as one.
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **10 of 10**                                 **19**                                        **7**                                         **14+**
-  -------------------------------------------- --------------------------------------------- --------------------------------------------- -----------------------------------------------
-  PMI knowledge areas addressed by this book   Vermont transformation portfolio components   Statutory deadlines requiring PM discipline   AHS programs requiring portfolio coordination
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **10 of 10**                                                        **19**                                        **10**                                                 **14**
+  ------------------------------------------------------------------- --------------------------------------------- ------------------------------------------------------ -------------------------------------------------------------
+  PMI knowledge areas (PMBOK Guide, 6th ed.) addressed by this book   Vermont transformation portfolio components   Scored risks in the portfolio register (Figure 15.6)   Hospital transformation plans the portfolio must coordinate
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-*Figure 15.1 --- The project-management gap. Sources: PMI Standard for Portfolio Management (5th ed.); Oliver Wyman Act 167 Report; AHS November 2025 Transformation Report.*
+*Figure 15.1 --- The project-management gap. Sources: PMBOK Guide, 6th ed. (2017); Figures 15.3 and 15.6; Act 68 of 2025.*
 
 ## 15.2 **Project, Program, and Portfolio: Getting the Levels Right**
 
@@ -5942,55 +5942,55 @@ PMI draws a useful hierarchy: projects produce deliverables; programs coordinate
   Portfolio   A collection of programs/projects/operations managed as a group to achieve strategy.   Vermont's full five-pillar transformation: all 19 components across the pillars, aligned to Act 167's five goals and the January 2028 plan.                      Portfolio Manager (AHS Secretary-level or dedicated CPO)   Strategic objectives achieved; resources optimally allocated.
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-*Figure 15.2 --- PMI hierarchy applied to Vermont's transformation. Sources: PMI Standard for Portfolio Management (5th ed.); PMBOK Guide 7th ed.; PMI Program Management Standard.*
+*Figure 15.2 --- PMI hierarchy applied to Vermont's transformation. Sources: PMI Standard for Portfolio Management (4th ed., 2017); PMBOK Guide, 7th ed.; PMI Standard for Program Management (4th ed., 2017).*
 
 AHS is managing Vermont's transformation as a collection of projects without the program or portfolio infrastructure to coordinate them --- sequenced by who is available rather than by what the portfolio needs. This is not a criticism of AHS staff, who are executing against an extraordinary mandate with insufficient capacity. It is a structural observation: the capacity does not exist yet. This chapter is the case for building it before the January 2028 deadline makes the gap irreversible.
 
 ## 15.3 **Vermont's Transformation Portfolio: 19 Components**
 
-PMI's standard requires the portfolio to be defined --- every component identified, classified, and assigned governance. Vermont has never published such a definition; the inventory below is HTR's, assembled by reading Act 68, the AHEAD State Agreement, the RHT Program application, and the AHS transformation reports for every initiative that carries a named owner and a dated obligation, then assigning each to the pillar whose function it serves. Nineteen is what that exercise produces as of early 2026; it is not a number Vermont has adopted, and a reader repeating the exercise against later reports should expect it to move.
+PMI's standard requires the portfolio to be defined --- every component identified, classified, and assigned governance. Vermont has never published such a definition; the inventory below is HTR's, assembled by reading Act 68, the AHEAD State Agreement, the RHT Program application, and the AHS transformation reports for every initiative that carries a named owner and a dated obligation, then assigning each to the pillar whose function it serves. Nineteen is what that exercise produces as of early 2026; it is not a number Vermont has adopted, and a reader repeating the exercise against later reports should expect it to move. The chapter in parentheses after each component is where the book analyses it.
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Pillar**   **Portfolio component**                     **Type**                 **Priority**   **Lead**                     **2026 status → stage gate**
-  ------------ ------------------------------------------- ------------------------ -------------- ---------------------------- ------------------------------------------------------
-  Policy       Act 68 RBP-methodology rulemaking           Compliance project       Critical       GMCB                         In progress → FY2027
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Pillar**   **Portfolio component**                              **Type**                 **Priority**   **Lead**                     **2026 status → stage gate**
+  ------------ ---------------------------------------------------- ------------------------ -------------- ---------------------------- ------------------------------------------------------
+  Policy       Act 68 RBP-methodology rulemaking (Ch. 2)            Compliance project       Critical       GMCB                         In progress → FY2027
 
-  Policy       AHEAD State Agreement closeout              Ongoing program          Critical       AHS                          Withdrawn Jul 2026 → FY2027 closeout reporting
+  Policy       AHEAD State Agreement closeout (Ch. 3)               Ongoing program          Critical       AHS                          Withdrawn Jul 2026 → FY2027 closeout reporting
 
-  Policy       RHT Program contract management             Compliance project       High           AHS Health Reform            Active → annual federal reporting
+  Policy       RHT Program contract management (Ch. 2)              Compliance project       High           AHS Health Reform            Active → annual federal reporting
 
-  Policy       Statewide Strategic Plan development        Strategic project        Critical       AHS + HCAC                   In progress → Jan 2028
+  Policy       Statewide Strategic Plan development (Ch. 16)        Strategic project        Critical       AHS + HCAC                   In progress → Jan 2028
 
-  Technology   AHS-GMCB analytics-vendor deployment        Strategic project        Critical       AHS + GMCB                   Procurement → Jan 2027 operational
+  Technology   AHS-GMCB analytics-vendor deployment (Ch. 4)         Strategic project        Critical       AHS + GMCB                   Procurement → Jan 2027 operational
 
-  Technology   Vermont CIN build-out                       Strategic program        High           AHS + RHT                    Design → FY2028 operational
+  Technology   Vermont CIN build-out (Ch. 4)                        Strategic program        High           AHS + RHT                    Design → FY2028 operational
 
-  Technology   VITL HIE expansion / FHIR compliance        Technical project        High           VITL + AHS                   In progress → FY2027 mandatory
+  Technology   VITL HIE expansion / FHIR compliance (Chs. 4--5)     Technical project        High           VITL + AHS                   In progress → FY2027 mandatory
 
-  Technology   Statewide AI-governance framework           Policy project           Medium         AHS + CIN                    Not started → FY2028 adoption
+  Technology   Statewide AI-governance framework (Ch. 5)            Policy project           Medium         AHS + CIN                    Not started → FY2028 adoption
 
-  Economics    RBP implementation (all hospitals)          Compliance program       Critical       GMCB                         Methodology design → FY2028 rates in effect
+  Economics    RBP implementation (all hospitals) (Ch. 6)           Compliance program       Critical       GMCB                         Methodology design → FY2028 rates in effect
 
-  Economics    Global-budget design & implementation       Strategic program        Critical       GMCB + AHS                   Design → FY2028 non-CAH
+  Economics    Global-budget design & implementation (Ch. 6)        Strategic program        Critical       GMCB + AHS                   Design → FY2028 non-CAH
 
-  Economics    RHT Program deployment                      Operational program      High           DVHA + AHS                   Active → annual targets
+  Economics    RHT Program deployment (Ch. 2)                       Operational program      High           DVHA + AHS                   Active → annual targets
 
-  Economics    Social-risk-adjustment methodology          Analytical project       High           GMCB + Econ PM               Design → FY2028 adoption
+  Economics    Social-risk-adjustment methodology (Ch. 10)          Analytical project       High           GMCB + Econ PM               Design → FY2028 adoption
 
-  Clinical     Blueprint PCMH                              Operational program      Critical       Blueprint + DVHA             Active → 100% PCMH by FY2028
+  Clinical     Blueprint PCMH (Ch. 8)                               Operational program      Critical       Blueprint + DVHA             Active → 100% PCMH by FY2028
 
-  Clinical     CCBHC certification (5 entities)            Compliance project       High           AHS + providers              In progress → FY2026
+  Clinical     CCBHC certification (5 entities) (Ch. 8)             Compliance project       High           AHS + providers              4 of 5 certified Jul 2026 → fifth pending
 
-  Clinical     CoCM statewide deployment                   Operational program      High           MHI + Blueprint              Pilot → 80%+ practices FY2028
+  Clinical     CoCM statewide deployment (Ch. 9)                    Operational program      High           MHI + Blueprint              Pilot → 80%+ practices FY2028
 
-  Clinical     HEROI equity-scoring methodology            Analytical project       High           AHS + Health Equity Studio   In development → iterative refinement through FY2028
+  Clinical     HEROI equity-scoring methodology (Ch. 10)            Analytical project       High           AHS + Health Equity Studio   In development → iterative refinement through FY2028
 
-  Operations   14-hospital transformation planning         Operational program      Critical       AHS + RHRC successor         Plan submission → FY2026 approved
+  Operations   14-hospital transformation planning (Ch. 11)         Operational program      Critical       AHS + RHRC successor         Final plans Mar 2026 → implementation
 
-  Operations   AHS restructuring (HSA-coordinator model)   Organizational project   Critical       AHS Secretary                In progress → FY2027 staffed
+  Operations   AHS restructuring (HSA-coordinator model) (Ch. 16)   Organizational project   Critical       AHS Secretary                In progress → FY2027 staffed
 
-  Operations   AHS PMO establishment                       Organizational project   Critical       AHS                          Not started → Q1 2027 operational
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Operations   AHS PMO establishment (Ch. 12)                       Organizational project   Critical       AHS                          Not started → Q2 2027 operational
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure 15.3 --- Vermont's 19-component transformation portfolio. Sources: Act 68 of 2025; AHS Transformation Reports; Vermont RHT Program Application; CMS AHEAD documentation.*
 
@@ -6005,27 +6005,27 @@ PMI's standard requires the portfolio to be defined --- every component identifi
 
 Nineteen components. Shared stage gates. A single January 2028 deadline. Three statutory predecessors --- Acts 167, 51, and 68 --- plus the AHEAD State Agreement's closeout obligations, each with their own federal and state reporting obligations. This is not a program-management problem. It is a portfolio-management problem, and it cannot be solved by component managers acting independently, no matter how skilled each one is. It requires a Portfolio Manager: a designated authority with the mandate and the access to manage Vermont's transformation as a whole, not as a collection of programs each doing their best.
 
-This is not a new idea for Vermont. Oliver Wyman's Act 167 report explicitly recommended that AHS hire a dedicated project-management function and establish the "project management infrastructure needed to manage Vermont's transformation portfolio." The November 2025 report repeated the finding. The AHS Restructuring Roadmap (Chapter 16 of this book) identifies PMO establishment as a critical organizational project. What this chapter adds is a precise, PMI-grounded definition of the role, its authority, and its connection to the pillar-level Project Managers below it.
+This is not a new idea for Vermont. Oliver Wyman's Act 167 report explicitly recommended that AHS hire a dedicated project-management function and establish the "project management infrastructure needed to manage Vermont's transformation portfolio." The November 2025 report repeated the finding. The AHS Restructuring Roadmap (Chapter 16 of this book) identifies PMO establishment as a critical organizational project. What this chapter adds is a precise, PMI-grounded definition of the role, its authority, and its connection to the pillar-level Program Managers below it.
 
 Role and authority (summary). The Portfolio Manager chairs the monthly portfolio review board; maintains the portfolio register (Figure 15.3) and risk register; authorizes component additions and removals; ensures all components stay aligned to Act 167's five goals; resolves cross-component resource conflicts; owns the Vermont Scorecard reporting to HCAC and the AHS Secretary; manages portfolio-level stakeholder relationships with HCAC, GMCB, hospital CEOs, the Legislature, and CMS; and tracks benefits realization, recommending component termination when benefits are no longer achievable. The role requires a direct report to the AHS Secretary, a GMCB co-reporting relationship, budget authority over the transformation PMO, and authority to require reporting from all 19 component leads. The appropriate credential is PMI's Portfolio Management Professional (PfMP), with 8+ years of program/portfolio experience and health-system or large-scale government program experience.
 
-## 15.5 **Pillar-Level Project Managers: Five Roles, One Framework**
+## 15.5 **Pillar-Level Program Managers: Five Roles, One Framework**
 
-Below the Portfolio Manager, each pillar needs a Project (or Program) Manager. These roles are not AHS-exclusive --- for hospital-owned components the manager may sit in a hospital PMO; for state-administered components, in AHS. What matters is that each pillar has a designated accountability point with the skills and authority to manage its components as a coherent program.
+Below the Portfolio Manager, each pillar needs a Program Manager --- in PMI's terms (Figure 15.2), each pillar is a program. These roles are not AHS-exclusive --- for hospital-owned components the manager may sit in a hospital PMO; for state-administered components, in AHS. What matters is that each pillar has a designated accountability point with the skills and authority to manage its components as a coherent program.
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Pillar**   **Role**                                  **Recommended credential**                                      **Key deliverables**                                                                       **Reports to**
-  ------------ ----------------------------------------- --------------------------------------------------------------- ------------------------------------------------------------------------------------------ ----------------------------------------------------------------
-  Policy       Policy Transformation Program Manager     PMP + health-policy experience; PMI-ACP for agile rulemaking    RBP methodology (FY2027); Strategic Plan (Jan 2028); monthly Act 68 compliance             Portfolio Manager + AHS Secretary
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Pillar**   **Role**                                  **Recommended credential**                                      **Key deliverables**                                                                 **Reports to**
+  ------------ ----------------------------------------- --------------------------------------------------------------- ------------------------------------------------------------------------------------ ----------------------------------------------------------------
+  Policy       Policy Transformation Program Manager     PMP + health-policy experience; PMI-ACP for agile rulemaking    RBP methodology (FY2027); Strategic Plan (Jan 2028); monthly Act 68 compliance       Portfolio Manager + AHS Secretary
 
-  Technology   Health IT Program Manager                 PMP + health informatics; PMI-ACP                               Analytics vendor operational (Jan 2027); CIN Phase 1 (FY2028); FHIR certified              Portfolio Manager + AHS technology lead
+  Technology   Health IT Program Manager                 PMP + health informatics; PMI-ACP                               Analytics vendor operational (Jan 2027); CIN Phase 1 (FY2028); FHIR certified        Portfolio Manager + AHS technology lead
 
-  Economics    Payment Reform Program Manager            PMP + healthcare finance; actuarial/financial-modeling skills   RBP rates in effect (FY2028); non-CAH global budgets (FY2028); EAST Fund closeout          Portfolio Manager + GMCB Executive Director
+  Economics    Payment Reform Program Manager            PMP + healthcare finance; actuarial/financial-modeling skills   RBP rates in effect (FY2028); non-CAH global budgets (FY2028); EAST Fund closeout    Portfolio Manager + GMCB Executive Director
 
-  Clinical     Clinical Transformation Program Manager   PMP + clinical background (RN/LCSW); CoCM preferred             100% PCMH (FY2028); 5 CCBHCs (FY2026); CoCM 80%+ (FY2028)                                  Portfolio Manager + Blueprint Director + DVHA Medical Director
+  Clinical     Clinical Transformation Program Manager   PMP + clinical background (RN/LCSW); CoCM preferred             100% PCMH (FY2028); fifth new CCBHC certified; CoCM 80%+ (FY2028)                    Portfolio Manager + Blueprint Director + DVHA Medical Director
 
-  Operations   Hospital Transformation Program Manager   PMP + hospital-operations/turnaround experience                 14 plans approved (FY2026); HSA coordinators staffed (FY2027); PMO operational (Q1 2027)   Portfolio Manager + AHS Secretary
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Operations   Hospital Transformation Program Manager   PMP + hospital-operations/turnaround experience                 14 plans implemented; HSA coordinators staffed (FY2027); PMO operational (Q2 2027)   Portfolio Manager + AHS Secretary
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure 15.4 --- Pillar-level role matrix. Sources: PMI credential requirements; Act 68 governance structure; Vermont RHT Program organizational design.*
 
@@ -6033,13 +6033,39 @@ Below the Portfolio Manager, each pillar needs a Project (or Program) Manager. T
 
 PMI defines three governance tiers: the Portfolio Governance Body (strategic oversight --- for Vermont, the AHS Secretary + HCAC + GMCB), the Portfolio Management Office (operational coordination --- currently the under-resourced AHS Health Reform Office), and the component level (individual programs and projects). The PMO establishment must fill the gaps: a dedicated Portfolio Manager (PfMP), 2 PMO analysts, portfolio-management software, standardized reporting, five pillar Program Managers, and formalized project leads for all 19 components.
 
-Mapping the ten PMI knowledge areas to Vermont's situation reveals the consistent gap: the book addresses each knowledge area analytically, but Vermont lacks the operational infrastructure to manage it. There is no formal work-breakdown structure for any pillar; statutory deadlines are tracked in isolation rather than as an integrated master schedule; RHT spending is tracked for federal compliance rather than portfolio performance; quality is measured program-by-program without portfolio aggregation; AHS staff are overcommitted with no formal resource leveling; communications, procurement, and stakeholder management all operate at the component level without a portfolio-level strategy; and risk is analyzed in this book but not managed operationally through a maintained register. Integration management --- the dependency map, the execution sequence, the scorecard --- exists analytically; operational integration does not yet exist.
+Mapping the ten knowledge areas of the PMBOK Guide's sixth edition (2017) to Vermont's situation reveals a consistent gap (Figure 15.5): the book addresses each area analytically, but Vermont lacks the operational infrastructure to manage it. The 2025 eighth edition reorganizes the same ground into principles and performance domains; the ten areas remain the clearest checklist of what a PMO has to run.
+
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+  **Knowledge area**   **Vermont's operational gap**
+  -------------------- -----------------------------------------------------------------------------------------------------------------------------
+  **Integration**      The dependency map, execution sequence, and scorecard exist analytically; operational integration does not yet exist.
+
+  **Scope**            No formal work-breakdown structure for any pillar.
+
+  **Schedule**         Statutory deadlines tracked in isolation, not as an integrated master schedule.
+
+  **Cost**             RHT spending tracked for federal compliance, not portfolio performance.
+
+  **Quality**          Measured program by program, with no portfolio aggregation.
+
+  **Resource**         AHS staff overcommitted, with no formal resource leveling.
+
+  **Communications**   Reporting runs component by component; no portfolio-level communications strategy.
+
+  **Risk**             Analyzed in this book but not managed operationally through a maintained register.
+
+  **Procurement**      Contracts --- analytics, technical assistance --- are let one component at a time; no portfolio-level procurement strategy.
+
+  **Stakeholder**      Hospitals, GMCB, HCAC, the Legislature and CMS are engaged component by component; no portfolio-level stakeholder strategy.
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+*Figure 15.5 --- The ten PMI knowledge areas against Vermont's operational capacity. Sources: PMBOK Guide, 6th ed. (2017); AHS Transformation Reports (2025--2026); HTR analysis.*
 
 ## 15.7 **Portfolio Sequence Is Dependency Sequence**
 
 The nineteen components are not a flat list of work to be scheduled by deadline and resource availability. They inherit an order from the dependency structure established in Chapter 1, and a portfolio manager who schedules them by statutory date alone will produce exactly the failures that chapter documents.
 
-Read Figure 15.3 by its first column and the point is immediate: the components are already grouped by pillar. What the PMI framing adds is that each pillar's components carry the *inbound dependencies of that pillar*. The Economics components --- RBP implementation, global-budget design, RHT Program deployment --- cannot be productively worked before the Technology components that make them measurable. That is not a scheduling preference. It is the same critical-path constraint that produced the OneCare failure in Section 1.2, restated in portfolio terms.
+Read Figure 15.3 by its first column and the point is immediate: the components are already grouped by pillar. What the PMI framing adds is that each pillar's components carry the *inbound dependencies of that pillar*. The Economics components --- RBP implementation, global-budget implementation, RHT Program deployment --- cannot be productively worked before the Technology components that make them measurable; only their design runs in parallel (Economics-as-design, Section 1.11.2). That is not a scheduling preference. It is the same critical-path constraint that produced the OneCare failure in Section 1.2, restated in portfolio terms.
 
 This gives the portfolio manager a decision rule that a Gantt chart does not:
 
@@ -6047,22 +6073,22 @@ This gives the portfolio manager a decision rule that a Gantt chart does not:
 
 The inverse rule matters as much. **A component with no unmet upstream dependency should be running now, regardless of how distant its own deadline is.** Social-risk-adjustment methodology (R-08) has a FY2028 target and no upstream blocker; it can and should proceed in parallel today. Treating it as a FY2028 problem because that is when it is due is the scheduling error that leaves equity work perpetually late.
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **THE PORTFOLIO MANAGER'S SEQUENCING TEST**                                                                                                                |
-|                                                                                                                                                            |
-| For each component, in order:                                                                                                                              |
-|                                                                                                                                                            |
-| 1.  **Which pillar does it belong to?** (Figure 15.3, column one.)                                                                                         |
-|                                                                                                                                                            |
-| 2.  **Is that pillar's upstream gate open?** (Section 1.2's gate definition: open means the enabling work is finished, not that a milestone was declared.) |
-|                                                                                                                                                            |
-| 3.  **If closed --- what is the gating component, and is it resourced?** That component, not this one, is where the schedule pressure belongs.             |
-|                                                                                                                                                            |
-| 4.  **If open --- is this component running?** If not, it is late by dependency order even when it is early by calendar.                                   |
-|                                                                                                                                                            |
-| Applied across all nineteen, this test produces the portfolio's true critical path, which will not match the order of statutory deadlines.                 |
-+============================================================================================================================================================+
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **THE PORTFOLIO MANAGER'S SEQUENCING TEST**                                                                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                        |
+| For each component, in order:                                                                                                                                                                                                                                          |
+|                                                                                                                                                                                                                                                                        |
+| 1.  **Which pillar does it belong to?** (Figure 15.3, column one.)                                                                                                                                                                                                     |
+|                                                                                                                                                                                                                                                                        |
+| 2.  **Is that pillar's upstream gate open?** (Section 1.4's gate definition: open means the enabling work is finished, not that a milestone was declared. Design work, and care-model work that produces value on its own, does not wait: Section 1.11.2, Figure 1.8.) |
+|                                                                                                                                                                                                                                                                        |
+| 3.  **If closed --- what is the gating component, and is it resourced?** That component, not this one, is where the schedule pressure belongs.                                                                                                                         |
+|                                                                                                                                                                                                                                                                        |
+| 4.  **If open --- is this component running?** If not, it is late by dependency order even when it is early by calendar.                                                                                                                                               |
+|                                                                                                                                                                                                                                                                        |
+| Applied across all nineteen, this test produces the portfolio's true critical path, which will not match the order of statutory deadlines.                                                                                                                             |
++========================================================================================================================================================================================================================================================================+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 ## 15.8 **Predictive vs. Adaptive Approaches**
 
@@ -6070,31 +6096,37 @@ Not all 19 components should be managed identically. Predictive (waterfall) mana
 
 ## 15.9 **The Portfolio Risk Register**
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **ID**   **Risk**                                                                                                                      **Pillars**    **Prob.**   **Impact**   **Score**   **Response**                                                                                                   **Owner**
-  -------- ----------------------------------------------------------------------------------------------------------------------------- -------------- ----------- ------------ ----------- -------------------------------------------------------------------------------------------------------------- -------------------------------
-  R-01     Analytics vendor not operational by Jan 2027; hospitals enter Act 68 global budgets without financial-management capability   Tech, Econ     High        Critical     20          Accelerate: parallel VHCURES direct-access; HCC gap closure as compensating investment                         Tech PM + Portfolio Mgr
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **ID**   **Risk**                                                                                                                      **Pillars**    **Prob.**   **Impact**   **Score**   **Response**                                                                                                         **Owner**
+  -------- ----------------------------------------------------------------------------------------------------------------------------- -------------- ----------- ------------ ----------- -------------------------------------------------------------------------------------------------------------------- -------------------------------
+  R-01     Analytics vendor not operational by Jan 2027; hospitals enter Act 68 global budgets without financial-management capability   Tech, Econ     High        Critical     20          Accelerate: parallel VHCURES direct-access; HCC gap closure as compensating investment                               Tech PM + Portfolio Mgr
 
-  R-02     RBP methodology hollowed by regulatory process; no meaningful repricing                                                       Policy, Econ   Medium      Critical     15          Mitigate: hospital data submission; equity review embedded; HCAC oversight                                     Policy PM + GMCB
+  R-02     RBP methodology hollowed by regulatory process; no meaningful repricing                                                       Policy, Econ   Medium      Critical     15          Mitigate: hospital data submission; equity review embedded; HCAC oversight                                           Policy PM + GMCB
 
-  R-03     AHS overcommitment produces a descriptive (non-binding) Jan 2028 Strategic Plan                                               Ops, Policy    High        High         16          Mitigate: PMO by Q1 2027; resource-conflict authority; external plan support                                   Ops PM + Portfolio Mgr
+  R-03     AHS overcommitment produces a descriptive (non-binding) Jan 2028 Strategic Plan                                               Ops, Policy    High        High         16          Mitigate: PMO by Q2 2027; resource-conflict authority; external plan support                                         Ops PM + Portfolio Mgr
 
-  R-04     2026 governor committed to Act 68 modification; mandatory architecture at risk                                                Policy         Low--Med    Critical     12.5        Accept + monitor: build irreversibility; document progress; legislative relationships                          Portfolio Mgr + AHS Secretary
+  R-04     2026 governor committed to Act 68 modification; mandatory architecture at risk                                                Policy         Low--Med    Critical     12.5        Accept + monitor: build irreversibility; document progress; legislative relationships                                Portfolio Mgr + AHS Secretary
 
-  R-05     H.R. 1 Medicaid cuts constrain Medicaid-funded Clinical investments; no EAST Fund backstop after the AHEAD withdrawal         Clin, Econ     Med--High   High         15          Mitigate: scenario plan for 30% reduction; alternative financing; prioritize ROI                               Econ PM + DVHA
+  R-05     H.R. 1 Medicaid cuts constrain Medicaid-funded Clinical investments; no EAST Fund backstop after the AHEAD withdrawal         Clin, Econ     Med--High   High         15          Mitigate: scenario plan for 30% reduction; alternative financing; prioritize ROI                                     Econ PM + DVHA
 
-  R-06     VITL connectivity gaps persist; global-budget population-health management incomplete                                         Tech, Clin     High        High         16          Mitigate: CIN shared services for small providers; VITL as Blueprint condition                                 Tech PM
+  R-06     VITL connectivity gaps persist; global-budget population-health management incomplete                                         Tech, Clin     High        High         16          Mitigate: CIN shared services for small providers; VITL as Blueprint condition                                       Tech PM
 
-  R-07     RHRC engagement not replaced by adequate successor; planning loses momentum                                                   Ops            Med--High   High         15          Mitigate: PMO includes hospital-transformation PM; document RHRC lessons; CIN continuation                     Ops PM
+  R-07     RHRC engagement not replaced by adequate successor; planning loses momentum                                                   Ops            Med--High   High         15          Mitigate: PMO includes hospital-transformation PM; document RHRC lessons; CIN continuation                           Ops PM
 
-  R-08     Social-risk adjustment not adopted before FY2028 budgets; safety-net hospitals penalized                                      Econ           Medium      High         12          Accelerate: Economics PM leads SRA as co-equal to global-budget design; HCAC equity review required            Econ PM + GMCB
+  R-08     Social-risk adjustment not adopted before FY2028 budgets; safety-net hospitals penalized                                      Econ           Medium      High         12          Accelerate: Economics PM leads SRA as co-equal to global-budget design; HCAC equity review required                  Econ PM + GMCB
 
-  R-09     Insufficient clinical-leader engagement; global budgets driven by administrators without clinical ownership                   Clinical       High        Medium       12          Mitigate: clinical advisory structure in HCAC; physician/nursing co-chairs; clinical KPIs in monthly reports   Clinical PM + HCAC
+  R-09     Insufficient clinical-leader engagement; global budgets driven by administrators without clinical ownership                   Clinical       High        Medium       12          Mitigate: clinical advisory structure in HCAC; physician/nursing co-chairs; clinical KPIs in monthly reports         Clinical PM + HCAC
 
-  R-10     Portfolio-management infrastructure not established before 2027 deadlines; managed as a collection of projects                All            High        Critical     20          Avoid: hire Portfolio Manager by Q2 2026; PMO by Q1 2027 (the primary motivation for this chapter)             AHS Secretary
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  R-10     Portfolio-management infrastructure not established before 2027 deadlines; managed as a collection of projects                All            High        Critical     20          Avoid: Portfolio Manager in seat by Jan 2027; PMO operational by Q2 2027 (the primary motivation for this chapter)   AHS Secretary
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-*Figure 15.5 --- Vermont's portfolio risk register (PMI format). Risk score = probability (Low=1, Low--Med=2.5, Medium=3, Med--High=3.75, High=4) × impact (Low=1, Medium=3, High=4, Critical=5); hyphenated bands are scored at the midpoint. Sources: PMI Standard for Portfolio Management (5th ed.); analytical risk assessment throughout this book; AHS November 2025 Report.*
+*Figure 15.6 --- Vermont's portfolio risk register (PMI format). Risk score = probability (Low=1, Low--Med=2.5, Medium=3, Med--High=3.75, High=4) × impact (Low=1, Medium=3, High=4, Critical=5); hyphenated bands are scored at the midpoint. Sources: PMI Standard for Portfolio Management (4th ed.); analytical risk assessment throughout this book; AHS November 2025 Report.*
+
+Plotted by probability and impact (Figure 15.7), the register's shape is clearer than its rows: the two risks scored 20 share the critical corner, and one of them is the absence of the portfolio function itself. Social-risk adjustment (R-08) sits mid-map at 12 --- a reminder that a moderate score is not a licence to wait, since the sequencing test above says it should already be running.
+
+![](media/image2.png){width="6.2in" height="4.189189632545932in"}
+
+*Figure 15.7 --- The portfolio risk register plotted by probability and impact; cell values are the register's own scores. Source: Figure 15.6.*
 
 ## 15.10 **Benefits Realization: Connecting the PMO to Act 167's Five Goals**
 
@@ -6114,16 +6146,16 @@ The Portfolio Manager's job is to ensure every component can trace its contribut
   Health equity                   HEROI; HRSN screening; social-risk adjustment; SDOH data   BIPOC access; NEK uninsurance; HEDIS equity gaps               BIPOC access \>87%; NEK uninsurance \<5%; gaps documented and targeted
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-*Figure 15.6 --- Benefits-realization plan. Sources: Act 167 of 2022; PMI Standard for Portfolio Management (5th ed.); Vermont Scorecard (Appendix E).*
+*Figure 15.8 --- Benefits-realization plan. Sources: Act 167 of 2022; PMI Standard for Portfolio Management (4th ed.); Vermont Scorecard (Appendix E).*
 
 ## 15.11 **The Business Case**
 
-The objection to building a PMO is always the same: we cannot afford it. The cost-benefit analysis in **Figure 15.7** answers that objection directly. The \~\$4--6.4M cost of a staffed PMO over four to five years is roughly 2% of the portfolio value it protects.
+The objection to building a PMO is always the same: we cannot afford it. The cost-benefit analysis in **Figure 15.9** answers that objection directly. The \~\$4--6.4M cost of a staffed PMO over four to five years is less than 2% of a single year of the value it protects --- \$195M a year in RHT funds and \$300M+ a year in projected RBP savings.
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   **Investment**                     **Annual cost**    **Total (4--5 yr)**   **Benefit**
-  ---------------------------------- ------------------ --------------------- -------------------------------------------------------------------------------------------------------------------------------------------------
-  Portfolio Manager (PfMP, senior)   \$180K--\$220K     \~\$900K--\$1.1M      R-10 avoided; coordinates \$195M RHT capital and the EAST Fund's wind-down after Vermont's AHEAD withdrawal; single accountability for Jan 2028
+  ---------------------------------- ------------------ --------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------
+  Portfolio Manager (PfMP, senior)   \$180K--\$220K     \~\$900K--\$1.1M      R-10 avoided; coordinates \$195M/yr in RHT capital and the EAST Fund's wind-down after Vermont's AHEAD withdrawal; single accountability for Jan 2028
 
   2 PMO Analysts                     \$120K--\$160K     \~\$480K--\$640K      Master schedule; risk register; stakeholder comms; dashboard
 
@@ -6131,38 +6163,34 @@ The objection to building a PMO is always the same: we cannot afford it. The cos
 
   Five pillar PMs (shared)           \$500K--\$850K     \~\$2.5M--\$4.2M      Pillar-level delivery accountability; critical-path management
 
-  Total                              \~\$850K--\$1.3M   \~\$4M--\$6.4M        \<2% of the portfolio value managed vs. \$195M RHT + \$300M+ RBP savings
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Total                              \~\$850K--\$1.3M   \~\$4M--\$6.4M        \<2% of one year's value managed: \$195M/yr RHT + \$300M+/yr projected RBP savings
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-*Figure 15.7 --- Business case for portfolio-management investment. Sources: PMI Pulse of the Profession (2017); Vermont RHT Program Application; AHEAD State Agreement (EAST Fund); PMI salary data.*
+*Figure 15.9 --- Business case for portfolio-management investment. Sources: PMI Pulse of the Profession (2017); Vermont RHT Program Application; AHEAD State Agreement (EAST Fund); PMI salary data.*
 
 The cost-benefit table omits the cost of failure. Without adequate PMO infrastructure, Vermont risks delivering the January 2028 plan as a descriptive document rather than a binding commitment --- the political-sustainability chapter's most dangerous failure mode. That is not a \$0 outcome. It is a multi-billion-dollar one: the continuation of the Oliver Wyman deficit trajectory, the failure of 13 of 14 hospitals to reach sustainability, and the loss of the political window that Vermont's mandatory architecture has opened.
 
 ## 15.12 **Implementation Roadmap**
 
-Q1--Q2 2026: Post the Portfolio Manager position (PfMP preferred); begin recruitment (AHS Secretary).
+The roadmap is anchored to the one date that cannot move: the Statewide Strategic Plan, due January 15, 2028. AHS's March 2026 Act 68 report lists contracted transformation support (Manatt, Phelps & Phillips; a new hospital technical-assistance vendor; an analytics contract for regional planning still under negotiation) but describes no portfolio-management function. Figure 15.10 schedules the recommended build-out backward from that deadline and against the components it exists to sequence. A Portfolio Manager hired by January 2027 has nine months before FY2028 hospital budgets take effect in October 2027 --- enough only if the PMO is running before the Technology gate it is meant to protect.
 
-Q2 2026: Portfolio Manager hired; portfolio register (Figure 15.3) and risk register formalized.
+![](media/image3.png){width="6.2in" height="4.411538713910761in"}
 
-Q3 2026: Integrated master schedule developed; all 19 component leads identified; PMO analyst positions posted.
+*Figure 15.10 --- Implementation roadmap: the PMO build-out (top) scheduled against the gating components of Figure 15.3 (bottom); dashed bars mark design work permitted before the Technology gate opens. Sources: Figures 15.3 and 15.6; Act 68 of 2025; AHS Act 68 Transformation Report (March 2026).*
 
-Q4 2026: PMO software deployed; monthly dashboard live; first formal Portfolio Governance Board meeting.
+From mid-2027 the PMO runs on a fixed cadence: monthly governance reviews, quarterly performance reviews against the Vermont Scorecard, and annual portfolio rebalancing. The January 2028 Strategic Plan should arrive with portfolio-management evidence --- benefits tracked, risks managed, resources deployed in dependency order --- after which the PMO carries the portfolio into the plan's three-year update cycle.
 
-Q1 2027: Five pillar PMs designated; weekly pillar-level reporting; resource-conflict resolution operational.
-
-Q2 2027 onward: Monthly governance reviews; quarterly performance reviews vs. the Vermont Scorecard; annual portfolio rebalancing.
-
-January 2028: Strategic Plan delivered with portfolio-management evidence --- benefits realized, risks managed, resources optimally deployed; PMO transitions to the three-year update cycle.
-
-## 15.13 **Answering the Four Objections**
+## 15.13 **Answering the Five Objections**
 
 1.  "We already manage this --- we have the HCAC and monthly reports." The HCAC is a governance body, not a PMO; it provides oversight, not an integrated master schedule, resource-conflict resolution, a maintained risk register, or earned-value tracking. The monthly reports track activities, not performance metrics. The HCAC is the Portfolio Governance Body; it needs a Portfolio Manager and a PMO to give it the data it needs to govern.
 
 2.  "This is government --- we don't run projects like the private sector." Vermont's transformation is a time-bounded, outcome-specified, heavily financed portfolio of interdependent programs with legally binding deadlines. The RHT Program is a federal grant with deliverables and reporting obligations; the withdrawn AHEAD State Agreement still carries federal closeout requirements; Act 68 is a statutory mandate with a January 2028 deliverable. Federal partners expect professional project management --- the GAO uses PMI's PMBOK as a reference standard.
 
-3.  "We can't afford a Portfolio Manager when we're cutting budgets." Vermont cannot afford not to have one. RHT funds are contingent on demonstrated progress; a portfolio that misses its components risks federal clawback. The \~\$4--6.4M cost is roughly 2% of the value it protects, and the alternative is the multi-billion-dollar partial-transformation outcome.
+3.  "We can't afford a Portfolio Manager when we're cutting budgets." Vermont cannot afford not to have one. RHT funds are contingent on demonstrated progress; a portfolio that misses its components risks federal clawback. The \~\$4--6.4M cost is less than 2% of a single year of the value it protects, and the alternative is the multi-billion-dollar partial-transformation outcome.
 
 4.  "The hospitals won't accept being managed by AHS." The Portfolio Manager does not manage the hospitals --- it manages AHS's contribution to the portfolio. Hospital plans are produced by hospitals, approved by AHS, and monitored through GMCB. The Portfolio Manager is Vermont's transformation orchestrator, not its controller.
+
+5.  "AHS already has expert help --- consultants, a technical-assistance vendor, an analytics contractor." It does: AHS's March 2026 Act 68 report lists contracted transformation support from Manatt, Phelps & Phillips, a new hospital technical-assistance vendor, and analytics support under negotiation. But a contractor delivers a defined scope. It cannot hold a state component back until its upstream gate opens, reassign AHS staff between components, or answer to the Legislature for the portfolio as a whole. Contracted support adds capacity, not authority --- and every new contract is one more component, with its own deliverables and deadline, that someone has to sequence.
 
 ## 15.14 **Work This Chapter on the Platform**
 
@@ -6171,6 +6199,8 @@ A portfolio is easier to manage when you can see it. The [HTR platform](https://
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   **Do this**                                                                                              **On this tool**                                                                                            **What to look for**
   -------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Run the sequencing test on Figure 15.3 --- or on your own register                                       **Portfolio Sequencing Test** --- /portfolio-sequencing-test                                                Which components are correctly waiting, which are late by dependency order, which are running ahead of a closed gate --- and the unfinished components where schedule pressure belongs.
+
   Identify which pillar is the binding constraint on the whole portfolio right now                         [**Transformation Friction Index**](https://healthtransformationreview.org/transformation-friction-index)   The tool finds this by sensitivity, not by the highest bar: the pillar whose improvement would lift delivered readiness most is where the portfolio manager's attention belongs --- not the component with the nearest deadline.
 
   Track the capital committed against each pillar and see where funding and dependency order disagree      [**Investment Tracker**](https://healthtransformationreview.org/investment-tracker)                         Components funded ahead of their upstream gate. Money moving faster than dependency order is the early signal of premature investment.
@@ -6184,7 +6214,7 @@ A portfolio is easier to manage when you can see it. The [HTR platform](https://
   Model what a single component slipping does to the rest of the portfolio                                 **Impact Simulation** --- /impact-simulation                                                                Which components have no slack: the ones whose slip moves other pillars' outcomes.
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-*Figure 15.8 --- Hands-on platform tools for Chapter 15: running the transformation portfolio.*
+*Figure 15.11 --- Hands-on platform tools for Chapter 15: running the transformation portfolio.*
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **TRY THIS --- Find your own portfolio's binding constraint.**                                                                                                                                                                                                                                                                                                                                                                           |
@@ -6205,9 +6235,9 @@ A portfolio is easier to manage when you can see it. The [HTR platform](https://
 
 ## 15.16 **Key Concepts in This Chapter**
 
-Portfolio · Portfolio Manager · Portfolio Management Professional (PfMP) · PMP · PMI-ACP · benefits-realization management · portfolio risk register · earned value management (EVM) · integrated master schedule · Portfolio Governance Body --- all as defined by the PMI Standard for Portfolio Management (5th ed.) and the PMBOK Guide (7th ed.), applied to Vermont's 19-component transformation portfolio measured against Act 167's five goals.
+Portfolio · Portfolio Manager · Portfolio Management Professional (PfMP) · PMP · PMI-ACP · benefits-realization management · portfolio risk register · earned value management (EVM) · integrated master schedule · Portfolio Governance Body --- all as defined by the PMI Standard for Portfolio Management (4th ed.) and the PMBOK Guide (6th and 7th eds.), applied to Vermont's 19-component transformation portfolio measured against Act 167's five goals.
 
-*Sources: PMI Standard for Portfolio Management, 5th ed. (2017); PMBOK Guide, 7th ed. (2021); PMI Program Management Standard, 3rd ed. (2017); PMI Agile Practice Guide (2017); PMI Pulse of the Profession 2017; PMI-ACP and PfMP Examination Content Outlines (2023); GAO Schedule Assessment Guide (2016); Vermont Act 68 of 2025; Act 167 of 2022; Oliver Wyman Act 167 Recommendations (August 2024); AHS Transformation Reports (August, November 2025); Vermont RHT Program Application (November 2025); AHS Hospital Transformation Analytical Support RFP (2025).*
+*Sources: PMI Standard for Portfolio Management, 4th ed. (2017); PMBOK Guide, 6th ed. (2017), 7th ed. (2021) and 8th ed. (2025); PMI Standard for Program Management, 4th ed. (2017); PMI Agile Practice Guide (2017); PMI Pulse of the Profession 2017; PMI-ACP and PfMP Examination Content Outlines (2023); GAO Schedule Assessment Guide (2016); Vermont Act 68 of 2025; Act 167 of 2022; Oliver Wyman Act 167 Recommendations (August 2024); AHS Transformation Reports (August, November 2025); Vermont RHT Program Application (November 2025); AHS Hospital Transformation Analytical Support RFP (2025); AHS Act 68 Health Care System Transformation Report (March 2026).*
 
 # **Chapter 16: The AHS Restructuring Roadmap --- A Five-Pillar Framework for System Architects**
 
@@ -7382,21 +7412,27 @@ The Stage 5 question: *Is operational capacity keeping pace with the statutory t
 
 *Figure 14.3 --- Hands-on platform tools for Chapter 14: monitoring political risk.*
 
-*Figure 15.1 --- The project-management gap. Sources: PMI Standard for Portfolio Management (5th ed.); Oliver Wyman Act 167 Report; AHS November 2025 Transformation Report.*
+*Figure 15.1 --- The project-management gap. Sources: PMBOK Guide, 6th ed. (2017); Figures 15.3 and 15.6; Act 68 of 2025.*
 
-*Figure 15.2 --- PMI hierarchy applied to Vermont's transformation. Sources: PMI Standard for Portfolio Management (5th ed.); PMBOK Guide 7th ed.; PMI Program Management Standard.*
+*Figure 15.2 --- PMI hierarchy applied to Vermont's transformation. Sources: PMI Standard for Portfolio Management (4th ed., 2017); PMBOK Guide, 7th ed.; PMI Standard for Program Management (4th ed., 2017).*
 
 *Figure 15.3 --- Vermont's 19-component transformation portfolio. Sources: Act 68 of 2025; AHS Transformation Reports; Vermont RHT Program Application; CMS AHEAD documentation.*
 
 *Figure 15.4 --- Pillar-level role matrix. Sources: PMI credential requirements; Act 68 governance structure; Vermont RHT Program organizational design.*
 
-*Figure 15.5 --- Vermont's portfolio risk register (PMI format). Risk score = probability (Low=1, Low--Med=2.5, Medium=3, Med--High=3.75, High=4) × impact (Low=1, Medium=3, High=4, Critical=5); hyphenated bands are scored at the midpoint. Sources: PMI Standard for Portfolio Management (5th ed.); analytical risk assessment throughout this book; AHS November 2025 Report.*
+*Figure 15.5 --- The ten PMI knowledge areas against Vermont's operational capacity. Sources: PMBOK Guide, 6th ed. (2017); AHS Transformation Reports (2025--2026); HTR analysis.*
 
-*Figure 15.6 --- Benefits-realization plan. Sources: Act 167 of 2022; PMI Standard for Portfolio Management (5th ed.); Vermont Scorecard (Appendix E).*
+*Figure 15.6 --- Vermont's portfolio risk register (PMI format). Risk score = probability (Low=1, Low--Med=2.5, Medium=3, Med--High=3.75, High=4) × impact (Low=1, Medium=3, High=4, Critical=5); hyphenated bands are scored at the midpoint. Sources: PMI Standard for Portfolio Management (4th ed.); analytical risk assessment throughout this book; AHS November 2025 Report.*
 
-*Figure 15.7 --- Business case for portfolio-management investment. Sources: PMI Pulse of the Profession (2017); Vermont RHT Program Application; AHEAD State Agreement (EAST Fund); PMI salary data.*
+*Figure 15.7 --- The portfolio risk register plotted by probability and impact; cell values are the register's own scores. Source: Figure 15.6.*
 
-*Figure 15.8 --- Hands-on platform tools for Chapter 15: running the transformation portfolio.*
+*Figure 15.8 --- Benefits-realization plan. Sources: Act 167 of 2022; PMI Standard for Portfolio Management (4th ed.); Vermont Scorecard (Appendix E).*
+
+*Figure 15.9 --- Business case for portfolio-management investment. Sources: PMI Pulse of the Profession (2017); Vermont RHT Program Application; AHEAD State Agreement (EAST Fund); PMI salary data.*
+
+*Figure 15.10 --- Implementation roadmap: the PMO build-out (top) scheduled against the gating components of Figure 15.3 (bottom); dashed bars mark design work permitted before the Technology gate opens. Sources: Figures 15.3 and 15.6; Act 68 of 2025; AHS Act 68 Transformation Report (March 2026).*
+
+*Figure 15.11 --- Hands-on platform tools for Chapter 15: running the transformation portfolio.*
 
 *Figure 16.1 --- Act 68 statutory requirements for the Strategic Plan. Sources: Act 68 of 2025; HCAC mandate (healthcarereform.vermont.gov).*
 

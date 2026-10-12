@@ -95,6 +95,7 @@ const staticRoutes: { path: string; priority: number; changeFrequency: MetadataR
   { path: "/htr-simulator",                   priority: 0.8, changeFrequency: "monthly" },
   { path: "/impact-simulation",               priority: 0.7, changeFrequency: "monthly" },
   { path: "/transformation-friction-index",   priority: 0.7, changeFrequency: "monthly" },
+  { path: "/portfolio-sequencing-test",       priority: 0.7, changeFrequency: "monthly" },
   { path: "/medicaid-eligibility-simulator",  priority: 0.7, changeFrequency: "monthly" },
   { path: "/bed-capacity",                    priority: 0.6, changeFrequency: "weekly" },
 

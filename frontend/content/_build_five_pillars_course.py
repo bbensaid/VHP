@@ -10713,13 +10713,13 @@ SUSTAIN = [{'id': 'lesson_5p_portfolio_management',
                                           'RHT Program application, and AHS Transformation '
                                           'Reports, early 2026'},
                                {'value': '10/10',
-                                'label': "PMI portfolio-management knowledge areas this book's "
-                                         'framework addresses analytically',
-                                'source': 'PMI Standard for Portfolio Management, 5th ed. (2017)'},
-                               {'value': '7',
-                                'label': 'Statutory deadlines inside the portfolio that require '
-                                         'active project-management discipline',
-                                'source': 'Act 68 of 2025'}]},
+                                'label': "PMI project-management knowledge areas (PMBOK Guide, 6th "
+                                         "ed.) this book's framework addresses analytically",
+                                'source': 'PMBOK Guide, 6th ed. (2017)'},
+                               {'value': '10',
+                                'label': "Scored risks in Vermont's portfolio risk register -- two "
+                                         'of them at the maximum score of 20',
+                                'source': 'HTR portfolio risk register (book Chapter 15, Figure 15.6)'}]},
                     {'type': 'text',
                      'heading': 'Project, Program, Portfolio: Getting the Levels Right',
                      'body': 'The diagnostic question is not whether this '
@@ -10805,9 +10805,11 @@ SUSTAIN = [{'id': 'lesson_5p_portfolio_management',
                      'body': 'The nineteen components are not a flat list to be scheduled by '
                              'deadline and available resources. They inherit an order from the '
                              'pillar dependency structure this course established earlier: the '
-                             'Economics components -- RBP implementation, global-budget design, '
-                             'EAST Fund deployment -- cannot be productively worked before the '
-                             'Technology components that make them measurable. That is the same '
+                             'Economics components -- RBP implementation, global-budget implementation, '
+                             'RHT Program deployment -- cannot be productively worked before the '
+                             'Technology components that make them measurable. Only their design '
+                             'work runs in parallel: specifying what the payment model must measure '
+                             'is what tells the technology build what to deliver. That is the same '
                              'critical-path constraint that produced the OneCare failure, restated '
                              'in portfolio terms.\n'
                              '\n'
@@ -10895,8 +10897,8 @@ SUSTAIN = [{'id': 'lesson_5p_portfolio_management',
                              'reveals about the equity sequencing error '
                              'covered earlier in this course: social-risk '
                              'adjustment not being adopted before FY2028 '
-                             'budgets scores only 12, precisely because its '
-                             'formal deadline is comparatively distant -- yet '
+                             'budgets scores only 12 -- a medium probability '
+                             'times a high impact -- yet '
                              'it is exactly the kind of component the '
                              'sequencing test above says should be running in '
                              'parallel right now, not scheduled by its own '
@@ -10931,19 +10933,19 @@ SUSTAIN = [{'id': 'lesson_5p_portfolio_management',
                      'body': "The United Kingdom's National Programme for IT (NPfIT) is the "
                              'clearest non-Vermont evidence of what a large, interdependent '
                              'transformation portfolio costs when it never builds this governance '
-                             'layer. Launched by the National Health Service in 2002 with an '
-                             'initial budget of roughly 6.2 billion pounds, the programme was '
-                             'formally dismantled in September 2011, with cost estimates by then '
-                             'running as high as 12.7 billion pounds against '
-                             'government-acknowledged realized benefits of only about 2.6 billion '
-                             'pounds. Independent reviews -- including analyses published by '
+                             'layer. Launched by the National Health Service in 2002, the '
+                             'programme was formally dismantled in September 2011. In 2013 '
+                             "Parliament's Public Accounts Committee put its expected cost at 9.8 "
+                             'billion pounds -- a figure that still excluded large outstanding '
+                             'contract liabilities -- against just 3.7 billion pounds of benefits '
+                             'realized to March 2012. Independent reviews -- including analyses published by '
                              'Computer Weekly and the University of Cambridge -- identified a '
                              'common driver: a single, top-down program structure imposed on '
                              'locally operated NHS organizations, with contracts awarded faster '
                              'than the underlying scope had actually been specified.\n'
                              '\n'
                              "Vermont's nineteen components are smaller in dollar terms than "
-                             "NPfIT's roughly twelve billion pounds, but the structural risk is "
+                             "NPfIT's roughly ten billion pounds, but the structural risk is "
                              'the same shape: many interdependent components, one strategic '
                              'objective, and no single accountable authority for the portfolio as '
                              'a whole. The lesson from NPfIT is not to do less -- Vermont cannot '
@@ -10985,7 +10987,10 @@ SUSTAIN = [{'id': 'lesson_5p_portfolio_management',
                              'they had counted, that several have no named owner, and that two or '
                              'three are downstream of a gate nobody is tracking.\n'
                              '\n'
-                             'Then run the sequencing test above against your own list. The '
+                             'Then run the sequencing test above against your own list -- the '
+                             'Portfolio Sequencing Test on the platform (/portfolio-sequencing-test) '
+                             "runs it on Vermont's nineteen components or on a register you "
+                             'enter. The '
                              'components correctly waiting are not your problem. The ones running '
                              'ahead of their dependencies -- funded because their calendar '
                              'deadline feels urgent, not because their gate is open -- are where '
@@ -11111,8 +11116,9 @@ SUSTAIN = [{'id': 'lesson_5p_portfolio_management',
                           'type': 'single_choice',
                           'points': 1,
                           'question': 'The NHS National Programme for IT was dismantled in 2011 '
-                                      'after cost estimates reached roughly 10-12.7 billion pounds '
-                                      'against about 2.6 billion pounds in realized benefit. '
+                                      "after Parliament's Public Accounts Committee put its expected "
+                                      'cost at 9.8 billion pounds against 3.7 billion pounds of '
+                                      'benefits realized to March 2012. '
                                       'Independent reviews identified its top-down structure, '
                                       'imposed on locally operated NHS organizations, as a primary '
                                       'failure driver. Which lesson concept does this best '
