@@ -12,7 +12,7 @@ This is the record the Stop hook checks. It cannot be satisfied by claiming
 file. See .claude/hooks/stop-gate.sh, which refuses to end a turn if the
 .docx was edited more recently than the last logged render.
 """
-import os, subprocess, sys, time
+import os, shutil, subprocess, sys, time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCX = os.path.join(ROOT, 'HTR_Book_v42.docx')
@@ -24,7 +24,8 @@ if not os.path.exists(DOCX):
 os.makedirs(OUT, exist_ok=True)
 
 soffice = None
-for cand in ('/usr/local/bin/soffice', '/Applications/LibreOffice.app/Contents/MacOS/soffice'):
+for cand in ('/usr/local/bin/soffice', '/usr/bin/soffice',
+             '/Applications/LibreOffice.app/Contents/MacOS/soffice'):
     if os.path.exists(cand):
         soffice = cand
         break
@@ -41,13 +42,22 @@ pdf = os.path.join(OUT, 'HTR_Book_v42.pdf')
 first = sys.argv[1] if len(sys.argv) > 1 else '1'
 last = sys.argv[2] if len(sys.argv) > 2 else '999'
 
-args = ['gs', '-sDEVICE=png16m', '-r150',
-        '-dFirstPage=%s' % first, '-dLastPage=%s' % last,
-        '-o', os.path.join(OUT, 'page_%04d.png'),
-        '-dBATCH', '-dNOPAUSE', '-dQUIET', pdf]
+for f in os.listdir(OUT):
+    if f.startswith('page_'):
+        os.remove(os.path.join(OUT, f))
+if shutil.which('gs'):
+    args = ['gs', '-sDEVICE=png16m', '-r150',
+            '-dFirstPage=%s' % first, '-dLastPage=%s' % last,
+            '-o', os.path.join(OUT, 'page_%04d.png'),
+            '-dBATCH', '-dNOPAUSE', '-dQUIET', pdf]
+elif shutil.which('pdftoppm'):
+    args = ['pdftoppm', '-png', '-r', '150', '-f', first, '-l', last,
+            pdf, os.path.join(OUT, 'page_')]
+else:
+    sys.exit('neither ghostscript nor pdftoppm found — cannot render pages')
 r = subprocess.run(args, capture_output=True, text=True, timeout=180)
 if r.returncode != 0:
-    sys.exit('ghostscript render failed: %s' % r.stderr[:300])
+    sys.exit('page render failed: %s' % r.stderr[:300])
 
 pages = sorted(f for f in os.listdir(OUT) if f.startswith('page_'))
 docx_mtime = os.path.getmtime(DOCX)
