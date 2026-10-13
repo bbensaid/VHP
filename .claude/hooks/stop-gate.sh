@@ -17,7 +17,7 @@ STAMP="$DIR/.claude/.last-book-gate"
 
 # Avoid an infinite stop-loop: if we already blocked for this exact version of
 # the book, don't block again — Claude has been told once.
-sig=$(stat -f %m "$BOOK" 2>/dev/null || stat -c %Y "$BOOK" 2>/dev/null)
+sig=$(stat -c %Y "$BOOK" 2>/dev/null || stat -f %m "$BOOK" 2>/dev/null)
 [ -f "$STAMP" ] && [ "$(cat "$STAMP" 2>/dev/null)" = "$sig" ] && exit 0
 
 # Only gate when the book was touched in this working session (last 4 hours).
