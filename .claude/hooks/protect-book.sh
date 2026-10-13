@@ -35,7 +35,7 @@ case "$tool" in
       LOG="$DIR/.claude/book-session.log"
       fresh=0
       if [ -f "$LOG" ]; then
-        mt=$(stat -f %m "$LOG" 2>/dev/null || stat -c %Y "$LOG" 2>/dev/null)
+        mt=$(stat -c %Y "$LOG" 2>/dev/null || stat -f %m "$LOG" 2>/dev/null)
         [ $(( $(date +%s) - mt )) -le 14400 ] && fresh=1
       fi
       if [ "$fresh" -ne 1 ]; then

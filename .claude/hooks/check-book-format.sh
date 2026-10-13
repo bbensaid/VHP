@@ -34,7 +34,7 @@ fi
 # claim in the same turn, before ever attempting to stop. This fires the
 # instant the edit lands.
 BOOK="$DIR/HTR_Book_v42.docx"
-sig=$(stat -f %m "$BOOK" 2>/dev/null || stat -c %Y "$BOOK" 2>/dev/null)
+sig=$(stat -c %Y "$BOOK" 2>/dev/null || stat -f %m "$BOOK" 2>/dev/null)
 RLOG="$DIR/.claude/render-log"
 rendered=0
 if [ -f "$RLOG" ]; then
