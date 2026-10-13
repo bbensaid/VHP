@@ -167,25 +167,25 @@ export default function VermontAct68Page() {
             {
               number: "01",
               title: "Reference-Based Pricing (RBP) — Effective Hospital FY2028",
-              body: "Requires hospitals to accept payment at a set percentage of Medicare rates for commercial payers — Vermont hospitals currently charge commercial payers roughly 250–300% of Medicare. The GMCB's 2026 price transparency analysis showed hospital outpatient prices ranging from 279% to 697% of Medicare, providing the data foundation for RBP implementation. Act 68 set an FY2027 start; the GMCB's February 2026 Act 68 update puts the methodology into rule in 2027, effective hospital FY2028. Commercial insurers must pass RBP savings through to consumers in the form of lower premiums.",
+              body: "Requires hospitals to accept payment at a set percentage of Medicare rates for commercial payers — Vermont hospitals currently charge commercial payers roughly 250–300% of Medicare. The GMCB's 2026 price transparency analysis showed hospital outpatient prices ranging from 279% to 697% of Medicare, providing the data foundation for RBP implementation. Act 68 set an FY2027 start; the GMCB's February 2026 Act 68 update puts the methodology into rule in 2027, effective hospital FY2028. The GMCB, with the Department of Financial Regulation, must monitor whether lower hospital prices show up as lower premiums and post its findings annually.",
               tag: "Economics Pillar",
             },
             {
               number: "02",
               title: "Hospital Global Budgets — Mandatory FY2028–2030",
-              body: "Establishes statutory prospective annual global budgets for Vermont hospitals. Unlike AHEAD's Medicare FFS hospital global budgets — which Vermont will not adopt, having withdrawn from AHEAD in July 2026 — Act 68 global budgets are set by the State for commercial payers and Medicaid; Medicare alignment is unresolved. Each hospital receives a fixed prospective budget at the beginning of the year — converting the financial incentive from maximizing volume to managing population health. Non-CAH hospitals must have their budget methodology finalized by GMCB by end of FY2027.",
+              body: "Establishes statutory prospective annual global budgets for Vermont hospitals. Unlike AHEAD's Medicare FFS hospital global budgets — which Vermont will not adopt, having withdrawn from AHEAD in July 2026 — Act 68 global budgets include Medicare to the extent federal law permits and expressly exclude Medicaid; Medicare participation is unresolved after the AHEAD withdrawal. Each hospital receives a fixed prospective budget at the beginning of the year — converting the financial incentive from maximizing volume to managing population health. The GMCB must establish global budgets for one or more non-critical-access hospitals beginning no later than hospital FY2028 and for all hospitals by FY2030 — in both cases \"to the extent that resources are available\".",
               tag: "Economics Pillar",
             },
             {
               number: "03",
               title: "Statewide Health Care Delivery Strategic Plan — Due January 15, 2028",
-              body: "Directs the Vermont Agency of Human Services to produce a comprehensive Statewide Health Care Delivery Strategic Plan on or before January 15, 2028 (updated every three years from December 1, 2030), to be submitted to the Vermont Legislature. The plan must specify measurable outcomes for affordability, quality, equity, and access across all five transformation pillars. It must address the 14-hospital tiered network design, Centers of Excellence designation, and population health management infrastructure.",
+              body: "Directs the Vermont Agency of Human Services to produce a comprehensive Statewide Health Care Delivery Strategic Plan on or before January 15, 2028 (updated every three years from December 1, 2030), to be submitted to the Vermont Legislature. The plan must promote universal access across acute, primary, mental-health, substance-use, long-term and emergency services; set shared goals with benchmarks, including for reducing disparities; give annual total-cost-of-care targets and targets for the share of spending on primary and preventive care; and provide a phased implementation timeline (18 V.S.A. § 9403(b)).",
               tag: "Operations Pillar",
             },
             {
               number: "04",
-              title: "AHS Restructuring Mandate",
-              body: "Requires AHS to restructure from a program-administration agency to a population health system operator — aligning its organizational design with the geographic Hospital Service Areas used for global budget management. Includes authority for a new Division of Planning and Effectiveness and an HSA Coordinator model to manage cross-agency coordination in each of Vermont's 14 hospital service areas.",
+              title: "AHS Leads the Plan — Restructuring Is Recommended, Not Mandated",
+              body: "Makes AHS the lead on the Statewide Strategic Plan, the 18-member Health Care Delivery Advisory Committee's partner, the coordinator of the FY2026 hospital-spending reduction, and the developer of the Unified Health Data Space. Act 68 does not order AHS to reorganize: the Division of Planning and Effectiveness and HSA alignment are Oliver Wyman's recommendations, and AHS's own Act 119 review (February 2026) chose to keep the agency unified and strengthen coordination. Chapter 16 sets out the operating model the plan's obligations demand.",
               tag: "Operations Pillar",
             },
             {
@@ -243,7 +243,7 @@ export default function VermontAct68Page() {
           <PillarTag
             pillar="Policy"
             color="blue"
-            note="Converts voluntary payment reform to statutory mandate. Removes the opt-out provision that allowed high-cost hospitals to remain outside the global budget framework."
+            note="Converts voluntary payment reform to statutory mandate: RBP by FY2027 and global budgets from FY2028 (all hospitals by FY2030, resources permitting) — set by the GMCB, not elected by hospitals."
           />
           <PillarTag
             pillar="Economics"
@@ -253,7 +253,7 @@ export default function VermontAct68Page() {
           <PillarTag
             pillar="Technology"
             color="indigo"
-            note="Mandates hospital HIE connectivity (VITL/VHIE). Requires the VHCURES data infrastructure that global budget attribution and TCOC measurement demand."
+            note="Keeps the hospital-budget requirement to connect to the VHIE and directs AHS to build the Unified Health Data Space with the HIE Steering Committee (clinical–claims integration no earlier than January 1, 2027)."
           />
           <PillarTag
             pillar="Clinical"
@@ -447,7 +447,7 @@ export default function VermontAct68Page() {
             },
             {
               term: "Statewide Health Care Delivery Strategic Plan",
-              def: "The comprehensive plan AHS must deliver to the Vermont Legislature on or before January 15, 2028. Must include measurable commitments for affordability, quality, equity, and access; the 14-hospital tiered network design; Centers of Excellence designations; and population health management infrastructure investments.",
+              def: "The comprehensive plan AHS must deliver to the Vermont Legislature on or before January 15, 2028. Must set shared goals with benchmarks, annual total-cost-of-care targets, primary-care and preventive-care spending-share targets, and a phased implementation timeline (18 V.S.A. § 9403(b)).",
             },
             {
               term: "Rural Health Transformation (RHT) Program",

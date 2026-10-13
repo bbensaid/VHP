@@ -44,9 +44,9 @@ const PILLARS: PillarConfig[] = [
       { label: "Waiver strategy", benchmark: "1115 waiver strategy or roadmap" },
     ],
     milestones: [
-      { label: "FY2026: 2.5% commercial rate reduction", date: "FY2026", status: "active", vermont: "GMCB -1% commercial benchmark — first negative in Vermont history" },
+      { label: "FY2026: ≥2.5% hospital spending reduction", date: "FY2026", status: "active", vermont: "Act 68 directs AHS to secure it; GMCB then set FY2027 commercial rates −2.9% statewide (Sept 2026)" },
       { label: "FY2028: RBP prices effective (Act 68)", date: "FY2028", status: "upcoming", vermont: "GMCB sets the Medicare-based RBP method by rule in 2027; maximum commercial rates take effect hospital FY2028" },
-      { label: "FY2028: Global budgets (non-CAH)", date: "FY2028", status: "upcoming", vermont: "Mandatory for all non-CAH Vermont hospitals" },
+      { label: "FY2028: Global budgets (non-CAH)", date: "FY2028", status: "upcoming", vermont: "Required for one or more non-CAH hospitals, resources permitting; all hospitals by FY2030" },
       { label: "Jan 15, 2028: Statewide Strategic Plan", date: "Jan 2028", status: "upcoming", vermont: "AHS delivers plan to Vermont Legislature on or before January 15, 2028 (18 V.S.A. § 9403(d)(3))" },
     ],
   },
@@ -136,7 +136,7 @@ const PILLARS: PillarConfig[] = [
     ],
     milestones: [
       { label: "FY2026: Hospital transformation plans (Act 68, all 14)", date: "FY2026", status: "active", vermont: "$2M AHS transformation grants; RHRC technical assistance underway" },
-      { label: "FY2026: AHS restructuring implementation", date: "FY2026", status: "active", vermont: "Division of Planning and Effectiveness established; HSA alignment" },
+      { label: "FY2026: AHS re-envisioning review (Act 119)", date: "FY2026", status: "active", vermont: "AHS report (Feb 2026): keep the agency unified; move clinical substance-use functions into DMH" },
       { label: "FY2027: RHT investments operational", date: "FY2027", status: "upcoming" },
     ],
   },

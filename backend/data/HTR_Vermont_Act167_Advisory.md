@@ -323,7 +323,7 @@ The Wyman Report documents equity problems with genuine care. However, the recom
 - [ ] Hospital-at-Home pilot launched in Burlington and Barre HSAs (Q1 2026)
 - [ ] Reference-based pricing at 250% Medicare implemented (Q1 2027)
 - [ ] Statewide risk stratification platform operational (Q2 2027)
-- [ ] Dual-Eligible Integration Program expanded to all 14 HSAs (Q4 2027)
+- [ ] Dual-Eligible Integration Program expanded to all 13 HSAs (Q4 2027)
 - [ ] FHIR R4 compliance achieved by ≥80% of hospitals (Q4 2027)
 - [ ] Mental Health COE designations finalized and operational (Q4 2027)
 

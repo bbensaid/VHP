@@ -170,8 +170,7 @@ export default function VermontAct51Page() {
         <p className="text-sm text-slate-600 leading-relaxed mb-4">
           This matters because Act 51 is frequently summarized as having established Vermont&apos;s
           reform architecture or mandated the restructuring of the Agency of Human Services. Neither
-          is in the text. The AHS restructuring mandate and the Statewide Health Care Delivery
-          Strategic Plan are <Link href="/vermont-act-68" className="text-sky-700 underline underline-offset-2 hover:text-sky-900">Act 68 of 2025</Link>.
+          is in the text. The Statewide Health Care Delivery Strategic Plan is <Link href="/vermont-act-68" className="text-sky-700 underline underline-offset-2 hover:text-sky-900">Act 68 of 2025</Link>.
           The five-pillar framework used across this platform is an analytical model, not a
           Vermont statutory scheme.
         </p>

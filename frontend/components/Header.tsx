@@ -722,7 +722,7 @@ const Header = () => {
               Login
             </Link>
             <Link
-              href="/subscribe"
+              href="/pricing"
               className="bg-white text-black px-3 py-0.5 rounded-sm hover:bg-zinc-100 transition-colors"
             >
               Subscribe
@@ -1123,7 +1123,7 @@ const Header = () => {
                   Log In
                 </Link>
                 <Link
-                  href="/subscribe"
+                  href="/pricing"
                   onClick={() => setMobileMenuOpen(false)}
                   className="flex-1 text-center bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-bold py-3 rounded-xl transition-colors min-h-12 flex items-center justify-center"
                 >

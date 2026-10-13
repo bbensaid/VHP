@@ -11,7 +11,7 @@ const faqs = [
     items: [
       {
         q: "Is HTR content free to access?",
-        a: "We operate on a freemium model. Core news and public policy briefs are free to all registered users. Deep-dive economic models, Clinical and Equity research, Performance Index sub-metric data, and HTR Academy masterclasses require a Professional (Strategist) or Enterprise membership.",
+        a: "We operate on a freemium model. Core news and public policy briefs are free to all registered users. Deep-dive economic models, Clinical and Equity research, Performance Index sub-metric data, and HTR Academy masterclasses require a paid plan — Subscriber, Student, or Professional (see Pricing).",
       },
       {
         q: "Do you offer enterprise licenses for health systems and payer organizations?",
@@ -19,11 +19,11 @@ const faqs = [
       },
       {
         q: "Can I access historical Performance Index data?",
-        a: "Historical Index data — including year-over-year scoring changes by state and pillar — is available to Strategist and Enterprise subscribers. The full 2021–2026 data archive is accessible via the State Dashboard with subscription authentication.",
+        a: "Historical Index data — including year-over-year scoring changes by state and pillar — is available on paid plans. The full 2021–2026 data archive is accessible via the State Dashboard with subscription authentication.",
       },
       {
         q: "Is there a mobile app?",
-        a: "HTR is fully responsive and optimized for mobile browsers. A native app is on our 2026 roadmap. Strategist and Enterprise subscribers receive real-time alert notifications via email when a state's Index status changes.",
+        a: "HTR is fully responsive and optimized for mobile browsers. A native app is on our 2026 roadmap. Paid subscribers receive real-time alert notifications via email when a state's Index status changes.",
       },
     ],
   },
@@ -117,7 +117,7 @@ const faqs = [
     items: [
       {
         q: "What is HTR Academy?",
-        a: "HTR Academy is our executive education platform offering masterclasses, faculty-led webinars, a searchable case study library, and a professional glossary. Masterclasses are designed for C-suite and VP-level healthcare leaders and typically run 4–6 hours across asynchronous modules. Strategist subscribers receive a 20% discount on all Academy enrollment.",
+        a: "HTR Academy is our executive education platform offering masterclasses, faculty-led webinars, a searchable case study library, and a professional glossary. Masterclasses are designed for C-suite and VP-level healthcare leaders and typically run 4–6 hours across asynchronous modules. Academy courses are included in the Student and Professional plans (see Pricing).",
       },
       {
         q: "Do Academy masterclasses include continuing education credits?",

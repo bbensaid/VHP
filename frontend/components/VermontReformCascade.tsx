@@ -116,19 +116,19 @@ const REFORM_CASCADE: Act[] = [
       "Reference-based pricing: GMCB sets the method by rule in 2027; prices effective hospital FY2028 (statutory deadline FY2027)",
       "Hospital global budgets mandatory FY2028–2030 (non-CAH hospitals first; Medicare alignment unresolved)",
       "Statewide Health Care Delivery Strategic Plan due on or before January 15, 2028",
-      "AHS organizational restructuring mandate",
+      "Health Care Delivery Advisory Committee (18 members) created",
       "$2M transformation grants authorized",
-      "Mandatory hospital HIE connectivity (VITL/VHIE)",
-      "2.5% commercial spending reduction required FY2026",
+      "Unified Health Data Space directed (with the HIE Steering Committee)",
+      "Hospital spending reduced at least 2.5% in FY2026",
     ],
     nextMilestone: "GMCB sets RBP method by rule in 2027",
   },
 ];
 
 const UPCOMING_MILESTONES = [
-  { date: "FY2026 (Current)", title: "2.5% Commercial Rate Reduction + Transformation Planning", desc: "All Vermont hospitals reduce commercial rates by 2.5%. RHRC technical assistance process for 14-hospital transformation plans underway. AHS restructuring in progress." },
-  { date: "2027 → FY2028", title: "Reference-Based Pricing", desc: "GMCB sets the RBP method by rule in 2027; mandatory RBP prices take effect in hospital FY2028, replacing negotiated hospital-payer contracts. First observable premium reduction for Vermont consumers expected." },
-  { date: "FY2028–2030", title: "Hospital Global Budgets — Mandatory", desc: "Non-CAH hospitals operate under statutory global budgets from FY2028, all hospitals by FY2030. Set by the State for commercial payers and Medicaid; Medicare alignment is unresolved after the AHEAD withdrawal." },
+  { date: "FY2026 (Current)", title: "2.5% Hospital Spending Reduction + Transformation Planning", desc: "AHS facilitates at least a 2.5% reduction in hospital spending for hospital FY2026 (Act 68). Hospital transformation plans drafted January 2026 with RHRC technical assistance." },
+  { date: "2027 → FY2028", title: "Reference-Based Pricing", desc: "GMCB sets the RBP method by rule in 2027; mandatory RBP prices take effect in hospital FY2028, setting the maximum amounts hospitals may accept from commercial payers; the GMCB must track whether lower prices reach premiums. First observable premium reduction for Vermont consumers expected." },
+  { date: "FY2028–2030", title: "Hospital Global Budgets — Mandatory", desc: "Global budgets for one or more non-CAH hospitals from FY2028 and all hospitals by FY2030, resources permitting. They include Medicare where federal law permits and exclude Medicaid; Medicare participation is unresolved after the AHEAD withdrawal." },
   { date: "January 15, 2028", title: "Statewide Strategic Plan Due", desc: "AHS delivers the Statewide Health Care Delivery Strategic Plan to the Vermont Legislature on or before January 15, 2028 (18 V.S.A. § 9403(d)(3)), with updates every three years from December 1, 2030." },
 ];
 

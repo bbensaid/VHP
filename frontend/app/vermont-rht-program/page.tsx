@@ -165,7 +165,7 @@ export default function VermontRHTProgramPage() {
               {[
                 "AI scribes → expand provider capacity without hiring",
                 "Remote patient monitoring → prevent hospitalizations, reduce costs",
-                "FHIR infrastructure → enable global budget management",
+                "Shared EMR + VHIE interoperability → enable global budget management",
                 "EMS regionalization → reduce ED utilization",
                 "Broadband → enable telehealth at scale",
                 "CIN shared services → reduce administrative overhead",
@@ -208,44 +208,42 @@ export default function VermontRHTProgramPage() {
           <InvestmentCard
             icon="🖥️"
             category="AI Scribe & Clinical Documentation Technology"
-            amount="Technology grants"
-            description="Grants for rural and independent practices to purchase AI scribe technology — systems that listen to clinical encounters and automatically generate structured clinical documentation. Vermont's RHT application cites AI scribes automating over two hours of daily administrative work per clinician."
+            amount="$1.03M first-year grants"
+            description="Grants to providers — aimed at smaller, rural, and independent practices that cannot afford what larger practices buy — to purchase AI scribe technology that transcribes clinician–patient conversations and drafts clinical notes and follow-up materials. The application's own claim is 'over two hours' of daily administrative work automated; the strongest published evidence is smaller (below)."
             outcomes={[
-              "Addresses Vermont's projected 370 primary care FTE shortage by 2030 — in a randomized trial, ambient AI scribes saved clinicians about 22 minutes of documentation a day (NEJM AI, 2025)",
-              "Reduces clinician burnout, a primary driver of provider attrition in rural Vermont",
-              "Enables billing process improvement and clinical decision support simultaneously",
-              "CIN enterprise contract negotiated for all 14 hospitals — better economics than individual purchases",
+              "Measured effect: about 16 fewer documentation minutes per 8 scheduled patient hours (JAMA, 2026); a UCLA randomized trial found a 9.5% cut in time-in-note for one product (NEJM AI, 2025)",
+              "Targets the access gap between independent practices and large systems that already license scribes",
+              "First-year line: $1,030,000 (JFO, Feb 2026); applications were due June 5, 2026, so effects are not yet measurable",
             ]}
           />
           <InvestmentCard
             icon="📡"
             category="Remote Patient Monitoring (RPM) Equipment"
-            amount="RPM grants"
+            amount="$0.9M first-year grants"
             description="Grants for RPM equipment in home health, primary care/specialty, and community paramedicine settings. Vermont's aging population — with high CHF, COPD, and diabetes rates among the 65+ cohort — is precisely the population where RPM produces the largest clinical and financial benefit."
             outcomes={[
               "Prevents hospital admissions and readmissions for Vermont's highest-cost chronic disease populations",
               "Under global budgets, every prevented admission improves margin — RPM becomes a direct financial tool",
-              "Eliminates 2-hour round trips for rural patients requiring twice-weekly monitoring",
-              "Community paramedicine integration enables EMTs to provide extended home care with physician telehealth supervision",
+              "Monitoring happens in the home, so rural patients avoid repeat trips for routine checks",
+              "Used in community paramedicine settings alongside home health and primary/specialty care",
             ]}
           />
           <InvestmentCard
             icon="🌐"
-            category="Broadband Infrastructure & Telehealth Expansion"
-            amount="Infrastructure grants"
-            description="Vermont's broadband penetration is 80% in rural areas vs. 85% non-rural — a gap that makes home-based telehealth inaccessible for 20% of rural Vermonters. RHT funds close this gap and expand specialty telehealth access at rural hospitals, allowing COE specialists to consult remotely."
+            category="Telehealth & e-Consult Technology"
+            amount="Technology grants"
+            description="Grants to rural independent practices for secure telehealth platforms, connected diagnostic tools, and related infrastructure — the application states the funds will not be used for broadband — plus a statewide e-Consult platform giving primary care an interoperable route to specialists. Access still depends on connectivity: 80% of Vermonters outside Chittenden County have broadband vs. 85% inside it, and 9.9% of locations lack 100/20 Mbps service (Department of Public Service, 2025)."
             outcomes={[
-              "Enables home-based telehealth for the 20% of rural Vermonters currently without broadband access",
-              "Specialty consultations (neurology, psychiatry, oncology) at rural hospitals via telehealth — no patient transfer required",
-              "Tele-ICU support for rural hospitals managing critical patients before stabilization and transfer",
-              "Tele-behavioral health for CCBHC and community mental health services — expands capacity without adding clinicians",
+              "Telehealth platforms, connected diagnostic tools, and technical assistance on selection, cybersecurity, and compliance for independent practices",
+              "Statewide e-Consult platform: primary care consults specialists without a separate patient trip",
+              "Real-time psychiatric consultation, training, and resources for pediatric and perinatal providers managing mild-to-moderate mental health needs",
             ]}
           />
           <InvestmentCard
             icon="🔗"
             category="Vermont Clinically Integrated Network (CIN) & Shared Services"
             amount="Infrastructure + operations"
-            description="Creation of a Clinically Integrated Network linking Vermont's 14 hospitals and community providers into a shared clinical and data infrastructure. Vermont is one of four states (with Arkansas, Nevada, and Oregon) that explicitly included CIN creation in their RHT applications."
+            description="Creation of a Clinically Integrated Network linking Vermont's 14 hospitals and community providers into a shared clinical and data infrastructure."
             outcomes={[
               "Shared analytics platform for transformation and regionalization planning across all 14 hospitals",
               "Group purchasing for medical supplies and technology — scale economies individual small hospitals cannot achieve",
@@ -261,21 +259,20 @@ export default function VermontRHTProgramPage() {
             description="Vermont has 31 separate EMS agencies — extreme fragmentation that creates care coordination gaps and drives unnecessary ED utilization. RHT funds EMS regionalization and community paramedicine programs that enable treat-and-refer capability, keeping patients out of ED for non-emergency conditions."
             outcomes={[
               "EMS regionalization reduces operational fragmentation across Vermont's 31 separate EMS agencies",
-              "Community paramedicine: EMTs provide extended care in patients' homes, reducing 911 calls and ED visits",
-              "Treat-and-refer capability for appropriate conditions — major source of preventable ED utilization reduction",
-              "Real-time physician supervision via telehealth during community paramedicine encounters",
+              "Community paramedicine: paramedics, Advanced EMTs, and EMTs deliver protocol-driven care in patients' homes under physician/NP oversight",
+              "Core services: post-discharge and primary-care follow-up, with modules for surgical recovery or substance use",
+              "Scope-of-practice and reimbursement changes, including flexibility to \"triage and treat\" in the community",
             ]}
           />
           <InvestmentCard
             icon="🧬"
-            category="FHIR Interoperability & Health IT Infrastructure"
-            amount="IT advance funds"
-            description="RHT IT advance investments specifically target FHIR compliance gaps at smaller community hospitals (TruBridge, Meditech legacy) and community-based providers that lack FHIR-capable systems. Vermont's global budgets require real-time attribution and TCOC tracking that current systems cannot support."
+            category="Shared EMR & Interoperability"
+            amount="Shared EMR + interoperability grants"
+            description="Two application lines carry interoperability: incentives for voluntary adoption of a shared EMR that complements and keeps contributing data to the Vermont Health Information Exchange (VHIE), and regionalization grants that may buy tools and technical assistance to connect different EMR systems. Neither line names FHIR or specific vendor platforms."
             outcomes={[
-              "Upgrades smaller CAHs to FHIR R4 compliance — prerequisite for CIN care coordination use cases",
-              "Provider access API implementation: care coordinators at one hospital can query records from another in real time",
-              "Attribution accuracy for Act 68 hospital global budgets — FHIR enables more precise patient tracking across providers",
-              "Shared technical staff through CIN for facilities without internal IT capacity",
+              "Shared EMR: seamless data exchange, better image and lab sharing, stronger cybersecurity, and advanced analytics (application text)",
+              "Builds on the VHIE's existing statewide infrastructure rather than replacing it",
+              "Regionalization grants can fund EMR-to-EMR interoperability tools and technical assistance",
             ]}
           />
         </div>
@@ -322,33 +319,6 @@ export default function VermontRHTProgramPage() {
               ))}
             </tbody>
           </table>
-        </div>
-      </section>
-
-      {/* ── COMPARISON TO OTHER STATES ────────────────────────────────────── */}
-      <section className="mb-16">
-        <SectionHeader label="National Context" title="Vermont vs. Peer RHT Recipients" />
-        <p className="text-sm text-slate-600 leading-relaxed mb-6 max-w-3xl">
-          Vermont is one of four states that explicitly included Clinically Integrated Network
-          creation in their RHT applications — reflecting a national trend toward CINs as the
-          organizational vehicle for rural health system integration. This approach distinguishes
-          Vermont from states using RHT for more dispersed, hospital-by-hospital investments.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {[
-            { state: "Vermont", award: "$195M", approach: "CIN-first, system-level transformation. All 14 hospitals coordinated through RHRC technical assistance. AHS restructuring as system operator. Act 68 transformation mandate provides the mandatory framework.", color: "border-teal-200 bg-teal-50" },
-            { state: "Arkansas", award: "Est. comparable", approach: "Also included CIN creation. Rural hospital network integration with shared services focus. Medicaid expansion in place since 2013 — different policy context.", color: "border-slate-200 bg-white" },
-            { state: "Nevada", award: "Est. comparable", approach: "CIN creation included. High rural population with significant frontier health challenges. Focus on telehealth and workforce development.", color: "border-slate-200 bg-white" },
-            { state: "Oregon", award: "Est. comparable", approach: "CIN creation included. CCO model provides an existing all-payer coordination infrastructure that Vermont's AHEAD Model parallels.", color: "border-slate-200 bg-white" },
-          ].map((s) => (
-            <div key={s.state} className={`border rounded-xl p-5 ${s.color}`}>
-              <div className="flex items-center justify-between mb-2">
-                <h4 className="font-bold text-slate-900 text-sm">{s.state}</h4>
-                <span className="text-xs font-black text-teal-700">{s.award}</span>
-              </div>
-              <p className="text-xs text-slate-600 leading-relaxed">{s.approach}</p>
-            </div>
-          ))}
         </div>
       </section>
 
