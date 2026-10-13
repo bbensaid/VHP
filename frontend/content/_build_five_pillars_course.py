@@ -3584,7 +3584,8 @@ TECHNOLOGY = [{'id': 'lesson_5p_data_infrastructure_gate',
                              'state database. Every state APCD in the country operates under the '
                              'same ceiling.\n'
                              '\n'
-                             'Second, latency. A 12-to-18-month lag is serviceable for '
+                             'Second, latency. VHCURES is collected quarterly, and analysts allow '
+                             'about six months for late claims to arrive — serviceable for '
                              "retrospective research and useless for intervening in a patient's "
                              'care. The November 2025 AHS transformation report acknowledged that '
                              'most available measures reflected 2023 or earlier data.\n'
@@ -5287,9 +5288,8 @@ ECONOMICS = [{'id': 'lesson_5p_global_budgets_rbp',
                              'than adding it years later, as Maryland did. '
                              'The AHEAD State Agreement linked hospital '
                              'global budgets to the Equity, Access, and '
-                             'Statewide Transformation (EAST) Fund, intended '
-                             'to provide up to $150 million annually '
-                             'beginning in 2027 for primary care, mental '
+                             'Statewide Transformation (EAST) Fund '
+                             'for primary care, mental '
                              'health, home health, and long-term care '
                              'investment -- a plan undone when CMS capped the '
                              'expected EAST Fund near $10 million and Vermont '
@@ -7113,7 +7113,7 @@ CLINICAL = [{'id': 'lesson_5p_care_model_redesign',
                              'Transformation without field support. States that distribute a PCMH '
                              'toolkit and wait get PCMH-badged practices that behave as they '
                              "always did. Vermont's Blueprint puts a quality improvement "
-                             'facilitator in each of its 14 Hospital Service Areas to do readiness '
+                             'facilitator in each of its 13 Hospital Service Areas to do readiness '
                              'assessment, data coaching and workflow redesign inside the practice. '
                              'That field staff line is the first thing cut in a budget transition '
                              'and the least recoverable.\n'
@@ -8065,7 +8065,7 @@ OPERATIONS = [{'id': 'lesson_5p_regionalization_right_sizing',
                              "Vermont's version of this problem is 14 independent non-profit "
                              'hospitals across a rural state of roughly 647,000 people, ranging '
                              "from an academic medical center that anchors the state's economy to "
-                             '19-bed critical access hospitals in the Northeast Kingdom where any '
+                             'critical access hospitals of 25 beds or fewer in the Northeast Kingdom where any '
                              'service reduction has immediate community consequences. The numbers '
                              "are Vermont's. The problem is not. Any system attempting structural "
                              'transformation faces some version of it.'},
@@ -10939,10 +10939,7 @@ SUSTAIN = [{'id': 'lesson_5p_portfolio_management',
                                          'portfolio value it protects '
                                          '(roughly $195M a year in RHT '
                                          'capital and $300M-plus in projected '
-                                         'RBP savings; the EAST Fund, once '
-                                         'expected at about $150M a year, '
-                                         'fell away when Vermont left AHEAD '
-                                         'in July 2026)',
+                                         'RBP savings)',
                                 'source': 'PMI Pulse of the Profession (2017); Vermont RHT Program '
                                           'Application'},
                                {'value': '$4M-$6.4M',
@@ -12456,9 +12453,9 @@ SUSTAIN = [{'id': 'lesson_5p_portfolio_management',
                                'left': 'Question: does the data make disparities visible, or bury '
                                        'them in an average?',
                                'right': 'Vermont evidence: HEDIS stratification and VHCURES '
-                                        'county-level data are built to disaggregate; a two-year '
-                                        'data lag limits how quickly a widening gap can be '
-                                        'caught.'},
+                                        'county-level data are built to disaggregate; published '
+                                        'measures running about two years behind limit how quickly '
+                                        'a widening gap can be caught.'},
                               {'label': 'Economics',
                                'left': 'Question: do the incentives reward serving the '
                                        'hardest-to-reach populations, or penalize it?',

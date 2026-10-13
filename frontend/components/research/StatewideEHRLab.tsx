@@ -14,7 +14,7 @@ import { Building2, GitCompare, AlertTriangle, CheckCircle, Clock } from "lucide
 // renders the verdict the book frames: does FHIR make a statewide EHR unnecessary?
 //
 // Self-contained; Vermont-anchored planning figures (14 hospitals, 4 platforms,
-// VHCURES 12–18 mo data lag). Illustrative — not a procurement model.
+// VHCURES quarterly collection with ~6-month claims run-out). Illustrative — not a procurement model.
 // ─────────────────────────────────────────────────────────────────────────────
 
 const fmtUSD = (n: number) =>

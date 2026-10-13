@@ -549,7 +549,7 @@ export default function AboutPage() {
           <Link href="/dashboard" className="inline-flex items-center gap-2 bg-indigo-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-indigo-700 transition-colors">
             Launch Dashboard
           </Link>
-          <Link href="/subscribe" className="inline-flex items-center gap-2 bg-indigo-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-indigo-700 transition-colors">
+          <Link href="/pricing" className="inline-flex items-center gap-2 bg-indigo-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-indigo-700 transition-colors">
             Choose Your Intelligence Level
           </Link>
         </div>

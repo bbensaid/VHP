@@ -195,6 +195,11 @@ const SectionTitle = ({ children }: { children: React.ReactNode }) => (
 // ─────────────────────────────────────────────
 // TAB 1 – RPM ROI Calculator
 // ─────────────────────────────────────────────
+// CY2026 Medicare Physician Fee Schedule (CMS-1832-F) national non-facility rates for remote
+// physiologic monitoring, as published in multiple 2026 billing summaries (verified 2026-10-12;
+// new codes 99445/99470 confirmed in Maryland MHCC's 2026 PFS summary). Localities differ.
+const RPM_RATES = { "99453": 21.71, "99454": 52.11, "99445": 52.11, "99457": 51.77, "99458": 41.42, "99470": 26.05 } as const;
+
 const CONDITIONS = {
   heart_failure: {
     label: "Heart Failure",
@@ -262,6 +267,7 @@ function RPMCalculator() {
   const [platformPMPM, setPlatformPMPM] = useState(25);
   const [pct99457, setPct99457] = useState(70);
   const [pct99458, setPct99458] = useState(40);
+  const [pct99470, setPct99470] = useState(10);
 
   const cond = CONDITIONS[condition];
 
@@ -273,12 +279,17 @@ function RPMCalculator() {
     const platformAnnual = patients * platformPMPM * 12;
     const annualProgramCost = deviceTotal + monthlyMonitoringAnnual + nurseAnnual + platformAnnual;
 
-    // Medicare reimbursement
-    const cpt99453 = patients * 21; // one-time setup
-    const cpt99454 = patients * 63 * 12; // monthly device supply
-    const cpt99457 = patients * (pct99457 / 100) * 52 * 12;
-    const cpt99458 = patients * (pct99458 / 100) * 43 * 12;
-    const annualReimbursement = cpt99453 + cpt99454 + cpt99457 + cpt99458;
+    // Medicare reimbursement — CY2026 national non-facility rates (RPM_RATES).
+    // Device supply is billed as 99454 (16+ reading days) or 99445 (2–15 days, new for 2026);
+    // both pay the same, so they are summed here. Management is 99457 (20+ min) or 99470
+    // (10–19 min with a real-time interaction, new for 2026) — never both in one month.
+    const pct99470Capped = Math.min(pct99470, 100 - pct99457);
+    const cpt99453 = patients * RPM_RATES["99453"]; // one-time setup
+    const cpt99454 = patients * RPM_RATES["99454"] * 12; // monthly device supply (99454 / 99445)
+    const cpt99457 = patients * (pct99457 / 100) * RPM_RATES["99457"] * 12;
+    const cpt99470 = patients * (pct99470Capped / 100) * RPM_RATES["99470"] * 12;
+    const cpt99458 = patients * (Math.min(pct99458, pct99457) / 100) * RPM_RATES["99458"] * 12;
+    const annualReimbursement = cpt99453 + cpt99454 + cpt99457 + cpt99470 + cpt99458;
 
     // Savings
     const baseHospPerYear = patients * (hospRate / 100);
@@ -320,6 +331,7 @@ function RPMCalculator() {
       cpt99454,
       cpt99457,
       cpt99458,
+      cpt99470,
     };
   }, [
     patients,
@@ -334,6 +346,7 @@ function RPMCalculator() {
     platformPMPM,
     pct99457,
     pct99458,
+    pct99470,
     cond,
   ]);
 
@@ -437,12 +450,14 @@ function RPMCalculator() {
         {/* CMS Reimbursement */}
         <div className="bg-slate-800/40 border border-slate-700 rounded-2xl p-5">
           <SectionTitle>CMS Reimbursement (CPT Codes)</SectionTitle>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-4">
             {[
-              { code: "99453", rate: "$21", desc: "Device setup (one-time)" },
-              { code: "99454", rate: "$63/mo", desc: "Device supply & transmission" },
-              { code: "99457", rate: "$52/20min", desc: "Remote monitoring mgmt" },
-              { code: "99458", rate: "$43/20min", desc: "Additional 20-min" },
+              { code: "99453", rate: "$21.71", desc: "Device setup (one-time)" },
+              { code: "99454", rate: "$52.11/mo", desc: "Device supply, 16+ reading days" },
+              { code: "99445", rate: "$52.11/mo", desc: "Device supply, 2–15 days (new 2026)" },
+              { code: "99457", rate: "$51.77/mo", desc: "Mgmt, first 20 min" },
+              { code: "99470", rate: "$26.05/mo", desc: "Mgmt, first 10 min (new 2026)" },
+              { code: "99458", rate: "$41.42", desc: "Each additional 20 min" },
             ].map((c) => (
               <div key={c.code} className="bg-slate-900/60 rounded-lg p-3 text-center">
                 <div className="text-cyan-400 font-bold text-sm">{c.code}</div>
@@ -460,7 +475,16 @@ function RPMCalculator() {
               <Label>% Patients Eligible for 99458</Label>
               <SliderInput value={pct99458} onChange={setPct99458} min={0} max={100} suffix="%" />
             </div>
+            <div>
+              <Label>% Patients at 10–19 min (99470)</Label>
+              <SliderInput value={pct99470} onChange={setPct99470} min={0} max={100} suffix="%" />
+            </div>
           </div>
+          <p className="text-slate-500 text-xs mt-3 leading-relaxed">
+            CY2026 Medicare national non-facility rates. 99445 and 99470 (new for 2026) cover months with only 2–15
+            reading days or 10–19 minutes of management; 99470 cannot be billed with 99457 in the same month, and 99458
+            only adds to 99457. Rates vary by locality — check the CMS fee schedule before budgeting.
+          </p>
         </div>
       </div>
 
@@ -540,6 +564,7 @@ function RPMCalculator() {
             { label: "99454 (Device)", value: results.cpt99454 },
             { label: "99457 (Monitoring)", value: results.cpt99457 },
             { label: "99458 (Additional)", value: results.cpt99458 },
+            { label: "99470 (10-min mgmt)", value: results.cpt99470 },
           ].map((item) => (
             <div key={item.label} className="flex justify-between py-1.5 border-b border-slate-700/50 last:border-0">
               <span className="text-slate-300 text-sm">{item.label}</span>
