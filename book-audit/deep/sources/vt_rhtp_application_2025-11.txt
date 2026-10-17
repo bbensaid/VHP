@@ -1,0 +1,4294 @@
+=== PAGE 1
+   
+ 
+ 
+CMS-RHT-26-001 
+Rural Health 
+Transformation 
+Program 
+Application Submission from the State of Vermont 
+Judith Morse 
+Financial Manager 
+(802) 279-2319 
+Judith.Morse@vermont.gov 
+11-3-2025 
+ 
+CMS-RHT-26-001 
+Rural Health 
+Transformation 
+Program 
+ 
+=== PAGE 2
+ - 1 -  
+ 
+ 
+Table of Contents 
+Acronym List .................................................................................................................................. 2 
+Project Narrative ............................................................................................................................. 4 
+Rural Health Needs and Target Population ................................................................................ 4 
+Background and the Case for Transformation ........................................................................ 4 
+Vermont’s Criteria for Identifying Rural Areas ...................................................................... 5 
+Key Vermont Demographic Information ................................................................................ 5 
+Health Care Delivery System.................................................................................................. 8 
+Health Care Workforce ......................................................................................................... 10 
+Health Outcomes ................................................................................................................... 11 
+Health Care Access in Rural Areas ....................................................................................... 12 
+Financial Health of Rural Facilities ...................................................................................... 12 
+Geographic Areas of Focus ................................................................................................... 13 
+Rural Health Transformation Plan Overview ........................................................................... 13 
+Initiatives and Use of Funds ..................................................................................................... 18 
+Metrics and Evaluation Plan ..................................................................................................... 46 
+Legislative and Regulatory Action ........................................................................................... 53 
+Governance Structure and Project Management ....................................................................... 56 
+Stakeholder Engagement .......................................................................................................... 57 
+Appendix ....................................................................................................................................... 60 
+List of Supporting Documentation............................................................................................ 60 
+ 
+ 
+  
+=== PAGE 3
+- 2 - 
+Acronym List 
+Acronym Full Spelling 
+AAP Adults’ access to preventive/ambulatory health services (HEDIS measure) 
+Act 167 Vermont Act 167 (2022) 
+AHEAD Achieving Healthcare Efficiency Through Accountable Design  
+AHS Vermont Agency For Human Services 
+AI Artificial Intelligence 
+APCD All-Payer Claims Database 
+APRN Advanced Practice Registered Nurse 
+CAHs Critical Access Hospitals  
+CBP Controlling high blood pressure (HEDIS measure) 
+CCBHC Certified Community Behavioral Health Clinic 
+CHF Congestive Heart Failure 
+CLIA Clinical Laboratory Improvement Amendments  
+CME Continuing Medical Education  
+CMS Centers For Medicare & Medicaid Services 
+CON Certificate of Need  
+COPD Chronic Obstructive Pulmonary Disease 
+CRNA Certified Registered Nurse Anesthetist 
+CY Calendar Year 
+DA Designated [Mental Health] Agency 
+DFR Vermont Department of Financial Regulation 
+DSH Disproportionate Share Hospital 
+DVHA Department of Vermont Health Access 
+ED Emergency Department 
+EMR Electronic Medical Record 
+eCQM Electronic Clinical Quality Measure 
+EMS Emergency Medical Services 
+EMT Emergency Medical Technician 
+FFY Federal Fiscal Year  
+FTE Full-Time Equivalent  
+FQHC Federally Qualified Health Center 
+FUA Follow-up after ED visit for substance use (HEDIS measure) 
+FUM Follow-up after ED visit for mental illness (HEDIS measure) 
+GCRSA Governor-Certified Rural Shortage Area  
+GMCB Green Mountain Care Board 
+=== PAGE 4
+- 3 - 
+Acronym Full Spelling 
+GSD Glycemic status assessment for patients with diabetes (HEDIS measure) 
+HEDIS Healthcare Effectiveness Data and Information Set 
+(developed by the National Committee for Quality Assurance)  
+HFY Hospital Fiscal Year 
+HPSA Health Professional Shortage Area 
+HRIS Human Resources Information System 
+HRSA Health Resources and Services Administration 
+HSA Health Service Area 
+HV AC Heating, Ventilation, and Air Conditioning  
+IMLC Interstate Medical Licensure Compact 
+IT Information Technology 
+LNA Licensed Nursing Assistant  
+MH Mental Health  
+NP Nurse Practitioner 
+OBGYN Obstetrician-Gynecologists 
+PA Physician Assistant 
+PCR Plan all-cause readmissions (HEDIS measure) 
+PMPM Per Member Per Month 
+RHC Rural Health Clinic 
+RHT Rural Health Transformation [Program] 
+RN Registered Nurse 
+RPM Remote Patient Monitoring 
+RSA Rational Service Area  
+SFY State Fiscal Year  
+SNAP Supplemental Nutrition Assistance Program 
+SPRY State Plan Rate Year  
+SSA Specialized Service Agency 
+STLDI Short-Term, Limited-Duration Insurance 
+SUD Substance Use Disorder 
+USDA United States Department of Agriculture  
+UVMMC University of Vermont Medical Center  
+VHIE Vermont’s Health Information Exchange 
+WCV Child and adolescent well-care visits (HEDIS measure) 
+ 
+=== PAGE 5
+- 4 - 
+Project Narrative 
+Rural Health Needs and Target Population 
+Background and the Case for Transformation 
+For a small, rural state, Vermont has a well-established health care system, nearly universal 
+insurance coverage, and a robust set of health reform initiatives planned or underway. However, 
+Vermont, like other states, is facing a rural health care crisis. In 2022, Vermont passed a law 
+(Act 167) to request development of a report summarizing the state’s health care problems, many 
+of which affect rural communities more than others.1,2 Through this historic opportunity, the 
+state seeks funding to address the key challenges identified by Act 167 and ongoing stakeholder 
+feedback: 
+• Health insurance costs and out-of-pocket limits have gone up significantly over the past ten 
+years. 
+• Vermont’s health insurers are facing financial sustainability issues. Claims have far 
+exceeded premiums in recent years, requiring them to use reserves at an unsustainable rate. 
+• More than half of the state’s hospitals are operating at a loss and experiencing financial 
+distress. 
+• Vermont is experiencing a housing crisis, which is contributing to significant health care 
+workforce shortages. 
+• Vermonters are experiencing long wait times for primary and specialty care. 
+• There are gaps in community-based care that result in increased use of hospitals. 
+• People with low incomes in rural areas have a hard time getting health care and often need 
+help with housing and transportation. 
+• The state is experiencing a rise in adult and youth MH and SUD needs and is facing 
+challenges meeting demand for services. 
+=== PAGE 6
+- 5 - 
+• Though the state’s labor participation rate is high, the overall population is aging, which 
+places pressure on the health care workforce and the state’s total cost of care. 
+Vermont's transformation plan, outlined in detail below, aligns with CMS’s RHT Program 
+strategic goals and will be informed by the state’s prior work and planning. Ultimately, 
+Vermont’s vision for transformation is to ensure that rural residents have access to the right care, 
+at the right time, in the right place, at an affordable cost. 
+Vermont’s Criteria for Identifying Rural Areas 
+Vermont’s State Office of Rural Health and Primary Care uses the HRSA Federal Office Of 
+Rural Health Policy definition based on updated USDA Rural-Urban Commuting Area codes and 
+Road Ruggedness Scales, updated as of Sept. 12, 2025.3 This definition indicates that all 
+locations in Chittenden County in the state of Vermont are considered non-rural for grant making 
+purposes, while all locations outside of Chittenden County are considered “rural.” Thus, nearly 
+two-thirds of Vermont residents live in rural areas. Vermont recognizes that there are several 
+different ways to define a rural area, which vary by source. 
+Key Vermont Demographic Information 
+Vermont’s unique population demographics and health care delivery system characteristics 
+informed development of the state’s RHT Program vision and approach.  
+General 
+Population 
+Characteristics 
+and Trends 
+• The current population in the state of Vermont is approximately 
+647,000 people, according to state Department of Health data from July 
+2024.4 The 2020 Census indicates that Vermont’s population density is 
+70 people per square mile, which is well below the national average.5,6 
+For more information on population by town, county, and age/gender 
+over time, please see Supporting Documentation, Exhibit 1. 
+• Vermont has 14 counties and 255 towns and cities. People in Vermont 
+are governed by the state and their local town or city, not by the 
+county.7 
+• According to July 2024 Vermont Department of Health data, more than 
+one-quarter of people live in Chittenden County. Rutland and 
+Washington counties are the second and third most populous. 
+Caledonia, Essex, and Orleans, the counties that make up what is 
+=== PAGE 7
+- 6 - 
+known as the “Northeast Kingdom,” are some of the least populated 
+and the most rural.8 9 
+• Vermont’s population is aging. One in four residents are over the age of 
+60 (28% or 183,000 adults), making it the fourth oldest population in 
+the country (the American Community Survey reports that the median 
+age in Vermont is 43.9 years, and the national median is 39.2 years10). 
+• Since 2001, Vermont has experienced a decreasing youth population.11 
+• Adult physical and cognitive disability rates vary across the state. 
+Counties in the Northeast Kingdom have more people with disabilities 
+than other counties.12 
+• Vermont’s foreign-born population is lower than the national average 
+(4.5% compared with 14.8%).13 
+• 5.7% of residents are veterans.14 
+• The state does not have any federally recognized tribal communities. 
+Income The 2020 Census data reports that Vermont’s median household income is 
+$82,730 but rural counties report higher poverty rates (e.g., Essex, 
+Windham, and Orleans).15,16 
+Employment 
+and 
+Unemployment 
+• 2020 Census data reports that Vermont’s employment rate is 63% 
+(higher than the national average: 61%). Health care is one of the most 
+common industries in the state.17 
+• As of August 2025, the Vermont Department of Labor reported that the 
+overall unemployment rate is 2.5% (lower than the national rate: 4.3%). 
+The civilian labor force participation rate was 65%. The unemployment 
+rates for Vermont’s 14 counties ranged from 2.4% in Addison and 
+Chittenden Counties to 3.6% in Essex County.18 Previous years 
+demonstrate similar trends, with higher unemployment rates in rural 
+counties.19,20  
+Education Vermont residents have a high degree of educational attainment: 94% of 
+adults age 25 and older have a high school education or more, and 42% 
+have at least a bachelor’s degree.21 However, Essex, Orleans, and Franklin 
+(all rural counties) have the highest rate of adults over 25 without a high 
+school diploma.22,23  
+Transportation Public transportation is limited or unreliable in many rural counties, 
+particularly in the Northeast Kingdom and Rutland County.24  
+Broadband 80% of people living in rural areas in Vermont (outside of Chittenden 
+County) have access to broadband, as do 85% of people in non-rural areas 
+(Chittenden County).25  
+Housing • Vermont has a long-standing, statewide shortage of affordable homes 
+available to lower income households, which became more severe with 
+the COVID-19 pandemic and resulting market shifts.26 
+o Half of all Vermont renters are cost-burdened and one-in-four pay 
+more than 50% of their income on housing costs, putting them at 
+high risk of eviction. 
+=== PAGE 8
+- 7 - 
+o Renters at all income levels struggle to find an apartment. Vermont’s 
+rental vacancy rate of 3% is among the lowest in the country and 
+well below the 5% rate of a healthy market. 
+o Vermont has a per capita homelessness rate of 51 per 10,000 people, 
+the second highest nationally. 
+o Along with the rest of the country, construction of new homes in 
+Vermont dropped to a low point following the Great Recession, with 
+fewer than 1,500 homes statewide permitted each year in 2008–
+2012. 
+o About 20,000 homes across the state have indications of housing 
+quality concerns, according to 2022 Census microdata. 
+o Compared to national averages, Vermont has higher rates of SUD 
+and disability among residents in addition to a sizeable population of 
+people older than 75 with mobility and independent living 
+challenges. The state’s limited supply of service-enriched housing 
+struggles to meet these growing and complex needs. 
+Health 
+Insurance 
+• 97%, or an estimated 621,700, Vermont residents are covered by health 
+insurance. Over half of Vermont residents (52%) are primarily covered 
+by private health insurance in 2025 (approximately 336,900 persons) 
+while 23% are enrolled in Medicare and 19% Medicaid.27 
+• 31% of the state’s Medicare eligible population is enrolled in Medicare 
+Advantage.28 
+• Approximately 22,500 individuals were dually enrolled in Medicare 
+and Medicaid in 2024.29 
+• Approximately 32,000 people are enrolled in individual coverage 
+through the state-based exchange (Marketplace coverage).30 
+• Just 3% of Vermont residents reported no health care coverage 
+(approximately 10,700 persons).31  
+o The age group most likely to be uninsured is 25- to 34-year-olds— 
+8% of Vermont residents in this age range are uninsured.  
+o The income groups most likely to be uninsured are between 251% 
+and 400% of the federal poverty line.  
+o The uninsured rate is significantly higher in the Northeast part of the 
+state (Caledonia, Essex, Lamoille, and Orleans Counties) at 6%, 
+with Essex County having an uninsurance rate of 8%—far higher 
+than the statewide 3%.  
+• Health care affordability is a major challenge in Vermont.32,33 
+o Both individual and small group market premiums have increased 
+significantly between 2022 and 2025. For example, in the individual 
+market, the average monthly premium has increased from $675 in 
+2022 to $1,049 in 2025 (55%); and from $591 in 2022 to $894 a 
+month in the small group market (51%).34  
+o State residents have experienced a 100% increase in plans’ out of 
+pocket maximums in the past five years.35  
+=== PAGE 9
+- 8 - 
+o A 2025 state survey revealed that many Vermonters, even those who 
+are insured, delay care due to fears of medical debt.36 
+ 
+Health Care Delivery System 
+People in Vermont can access health care services from providers across the state, and most of 
+these providers accept Medicaid patients. The table below summarizes the state’s health care 
+delivery system.37,38 
+Category Total Rural Non-
+Rural 
+Academic Medical Centers 
+UVMMC has the largest market share in the state (~50%). 
+1 0 1 
+FQHC*(11 FQHCs operating over 50 primary care sites) 70 61 9 
+Skilled Nursing Facility 34 29 5 
+RHC* 10 10 0 
+Home Health Agency 9 8 1 
+CAHs** 8 8 0 
+Psychiatric Hospital*** 2 2 0 
+Ambulatory Surgical Center 2 0 2 
+Veterans Affairs Hospital 1 1 0 
+Notes: 
+*Vermont’s FQHC sites and RHC sites have facility-based HPSA designations based on 
+specific criteria for their defined service areas. 
+**All Vermont’s hospitals are not-for-profit. The state does not have rural emergency 
+hospitals. 
+***Vermont has six “Designated Hospitals” that have inpatient psychiatric units.39 
+ 
+There is an extensive system of health and social services throughout the state offered by 
+community organizations. Vermont’s AHS supports statewide coverage of these services through 
+12 local health district offices. Vermont also has an interstate relationship with Dartmouth Health 
+in neighboring New Hampshire, and both Dartmouth and UVMMC have strong medical 
+education programs. 
+Vermont was selected by CMS to participate in the AHEAD Model (Cohort 2), which will hold 
+participating states accountable for controlling overall growth in health care expenditures and 
+=== PAGE 10
+- 9 - 
+improving population health outcomes.40 The primary components of the model are (1) state 
+accountability for reducing growth in total cost of care for health care services, increasing 
+investment in primary care, and improving health care outcomes; (2) Hospital Global Budgets, 
+where hospitals will be paid a fixed amount of revenue to provide services to Medicare fee-for-
+service beneficiaries. Hospital Global Budgets will provide predictable funding and a basis to 
+keep small rural hospitals open while they retool to meet modern challenges; and (3) Primary 
+Care AHEAD, which is a voluntary program for primary care practices to receive an additional 
+payment from Medicare to provide coordinated care to Vermonters.41 As will be discussed 
+further in this application, Vermont’s participation in AHEAD is a sustainability factor for the 
+state’s RHT Program funding initiatives.  
+Certified Community Behavioral Health Clinics 
+Notably, Vermonters can receive care from state-specific MH and developmental disability 
+providers, called DAs and SSAs, respectively.42 While the state’s DAs and CCBHCs provide 
+similar services, not all DAs are CCBHCs.  
+The state has two CCBHC entities. (For more detailed information on active sites of care for 
+both entities, see Supporting Documentation, Exhibit 2.) These sites do not have any formal 
+contracts, called Designated Collaborating Organizations, as part of their CCBHC services. The 
+current sites are not expected to grow significantly over the next five years.  
+On July 1, 2026, the state plans to certify the following organizations as CCBHCs if sites meet 
+the required certification criteria: 
+Name Address 
+Health Care and Rehabilitation Services 390 River Street, Springfield, VT, 05156 
+Howard Center 102 South Winooski Ave, Burlington, VT, 05401 
+Northwest Counseling and Support 
+Services 
+107 Fisher Pond Road, St. Albans, VT, 05478 
+Northeast Kingdom Human Services 181 Crawford Farm Road, PO Box 724, Newport, 
+VT, 05855 
+=== PAGE 11
+- 10 - 
+Name Address 
+Washington County Mental Health 
+Services, Inc. 
+885 South Barre Road, Barre, VT, 05670 
+ 
+Medicaid DSH Payments 
+There are 14 Vermont hospitals (not including psychiatric hospitals). 13 of these hospitals 
+received a Medicaid DSH payment for the most recent SPRY, SFY 2024 for FFY 2025 
+(10/01/2024–09/30/2025), as defined at 42 CFR 455.301: Brattleboro Memorial Hospital, 
+Central Vermont Medical Center, Copley Hospital, Gifford Medical Center, Mt. Ascutney 
+Hospital, North Country Hospital, Northeastern Vermont Regional Hospital, Northwestern 
+Medical Center, Porter Hospital, Rutland Regional Medical Center, Southwestern Vermont 
+Medical Center, Springfield Hospital, and UVMMC.1 Grace Cottage hospital, Vermont’s 
+smallest hospital, a 19-bed hospital specializing in serving patients with acute, rehabilitative, and 
+palliative care needs, is the one remaining hospital ineligible for DSH. 
+Health Care Workforce 
+Over 3,000 physicians (~1,400 FTEs) provide patient care in the state (30% of FTEs are primary 
+care).43 Further, there are nearly 400 dentists in Vermont (300 FTEs).44 More health care 
+workers in Vermont work in rural areas (60%) than in non-rural areas (40%).45,46,47 
+Vermont has only a few RSAs (specific counties or groups of towns) that meet the federal 
+criteria to qualify for designation as a HPSA: Brighton and Ludlow.48 RSAs that currently 
+qualify for GCRSA designations are Hardwick, Brighton, Newport, and Castleton RSAs.49 
+Despite these facts, the state has been experiencing a shortage in its health care workforce for 
+nearly a decade and faces challenges employing physicians to balance population densities in 
+many of its counties, especially in the Northeast Kingdom, the most rural region of the state. A 
+ 
+1 Consistent with 42 United States Code 1396a(a)(13)(A)(iv). 
+=== PAGE 12
+- 11 - 
+2018 study found that while Chittenden County had a surplus of practicing practitioners, counties 
+such as Essex, Orleans, Caledonia, and Lamoille had no more than 2–5 primary care sites 
+available to the public.50 Further, the state predicts that the supply of primary care physicians is 
+370 FTEs short of what the state will need in 2030 (112 short in family medicine, 190 short in 
+internal medicine, 52 short in OBGYNs and 2 short in pediatrics).51 The state also has a shortage 
+of nurses52 and MH/SUD practitioners.53 
+Health Outcomes 
+Data shows that people living in rural Vermont have worse health than people in other areas. 
+Chronic 
+Conditions 
+• Rural Vermonters experience higher rates of chronic disease burden, 
+including hypertension, COPD and other conditions.54,55,56,57  
+• Counties in the Northeast Kingdom as well as Rutland and Bennington 
+have higher rates of adult obesity.58  
+Dental • Counties in the Northeast Kingdom have higher rates of older adults 
+who have lost all of their teeth.59 
+Maternal and 
+Child Health 
+• In general, women in Vermont have a very low vulnerability to 
+adverse outcomes due to the availability of maternal health services.60  
+• Vermont’s child health outcomes show strong support in the state for 
+early childhood and maternal health, with data highlighting recent 
+improvements in breastfeeding rates, access to healthy food through 
+the Women, Infant, and Children’s program, and prenatal care.61 
+However, some rural counties report access to care challenges.62 
+MH and SUD • The rate of suicide deaths in Vermont is 19 per 100,000 people, which 
+is higher than the national average (14.1 per 100,000 people).63,64 
+• The opioid-related death rate is higher in Vermont than the national 
+rate.65  
+• Less than half of people began treatment for alcohol related conditions 
+within 14 days of diagnosis in the state.66  
+• Rural areas face elevated suicide rates67,68, depression69, and opioid-
+related adverse outcomes.70,71 
+• Like other states, Vermont is experiencing a youth MH crisis, with 
+significant prevalence and increasing incidence of depression and 
+anxiety among youth and adolescents.72,73,74  
+Life Expectancy • Residents of rural counties in the Northeast Kingdom and southern 
+counties of the state live approximately 2–5 years less than residents 
+living in non-rural Chittenden County.75 
+=== PAGE 13
+- 12 - 
+Health Care Access in Rural Areas 
+In many rural areas, Vermonters face barriers to care: 
+• Vermonters that reported long wait times to access care said that they experienced physical 
+and psychological pain and declines in overall health as a result.76,77 
+• According to recent mapping of urgent care locations and drive times, Essex County 
+experiences the longest drive times (over an hour). For MH urgent care specifically, drive 
+times are longest in Essex, Windsor, and Rutland Counties for youth and Essex, Windham, 
+and Bennington for adults. (See Supporting Documentation, Exhibit 3 for more 
+information on drive times, including drive times to hospitals, which demonstrate similar 
+patterns.) 
+• Mapping of primary care practices by RSA shows differential access to primary care 
+practices across the state. The counties with the fewest provider FTEs to 100,000 residents 
+are Essex, Washington, and Windham Counties. (See Supporting Documentation, 
+Exhibit 4.) 
+• Though annual physical check-up rates are similar across the state (ranging from 69% in 
+Windham County to 74% in Franklin County), dental visit rates within the past year are 
+lower in Rutland, Windham, and Bennington Counties.78 
+• Studies found that both emergency and regular transportation are often late or unreliable, 
+making it hard for people to get health care.79 
+Financial Health of Rural Facilities 
+The Act 167 report and other state data highlight the financial vulnerabilities providers face in 
+Vermont: 
+Hospital 
+Closures 
+Vermont has not experienced recent rural hospital closures, but several 
+facilities are at risk. Nine of the state’s 14 hospitals reported operating losses 
+(up to -8.9%) in 2023. Trends are projected to worsen with 13 of the 14 
+hospitals expected to report losses by 2028.80,81 The state has provided 
+=== PAGE 14
+- 13 - 
+emergency financial relief to a number of hospitals at risk of closure in recent 
+years (e.g., Gifford Medical Center, Brattleboro Retreat, and Springfield 
+Hospital). More information on the finances of Vermont’s hospitals is 
+available in the Supporting Documentation, Exhibit 5 of this application. 
+Utilization and 
+Patient 
+Volumes82 
+• In 2022, there were a total of 238,919 visits to Vermont hospital EDs that 
+did not result in admission to the hospital. 
+• The state had a total of 140,554 outpatient visits in 2022. 
+• Statewide, approximately 13% of total inpatient discharges were for out 
+of state residents (New York accounted for 9%). Discharge counts vary 
+widely by hospital/region. 
+Workforce 
+Costs 
+Rising labor costs and difficulty recruiting providers have strained rural 
+facility budgets.83 As noted above, housing shortages have also created 
+barriers to workforce recruitment and retention. For example, Vermont’s 
+Psychiatric Care Hospital has been unable provide staffing for beds lost during 
+the COVID-19 pandemic and is experiencing workforce vacancy challenges 
+that require reliance on costly travel nursing staff.84,85 
+ 
+Geographic Areas of Focus 
+Vermont envisions that RHT Program funds will benefit all hospitals, health clinics, and 
+community health centers in rural areas statewide. However, several rural high-need counties are 
+of particular focus: Essex, Orleans, Caledonia, Windham, Bennington, and Rutland. 
+Rural Health Transformation Plan Overview 
+Vermont’s RHT Plan uses work from past years to identify the state’s main health care problems 
+and set goals for improving health care. Vermont has set concrete goals and a comprehensive 
+approach for how to leverage this funding opportunity. These goals include: 
+1. Strengthening Vermont’s Rural Health Care Workforce; 
+2. Increasing Access to Timely Care Across Rural Communities; and 
+3. Leveraging Innovative Strategies to Increase Quality and Reduce Health Care Costs. 
+Vermont’s RHT Plan, as enacted through the initiatives supported by RHT Program funds, will 
+transform rural health in the following ways: 
+=== PAGE 15
+- 14 - 
+Element of 
+Transformation 
+Vermont’s RHT Plan Activities 
+Improving 
+Access 
+• Expand access to high-quality, affordable care across Vermont’s rural 
+regions by realigning services to ensure residents in rural areas can 
+obtain care closer to home, including through strengthened 
+community-based and non-hospital-based options. 
+• Advance regionally coordinated service planning to better match 
+provider capacity with population health needs, while maintaining 
+timely access to care for all state residents. 
+• Support expanded access to care through urgent care centers, mobile 
+units, and home-based care models to reduce reliance on hospital EDs 
+and improve timeliness of care. 
+• Leverage telehealth and e-Consult technologies to extend specialist 
+capacity and ensure timely consultation for rural primary care and MH 
+and SUD health providers. 
+• Invest in existing facility improvements and equipment that enable 
+providers to adapt to population health needs. 
+• Enable data-informed policymaking through new transparency tools to 
+address gaps in access. 
+Improving 
+Outcomes 
+• Target measurable improvements in chronic disease outcomes by 
+supporting evidence-based, proactive condition management, home-
+based monitoring, and care coordination for high-risk rural 
+populations, such as dual eligibles. 
+• Reduce avoidable ED visits and hospital readmissions through 
+enhanced access to urgent care, post-discharge follow-up, and 
+community paramedicine services that deliver timely intervention in 
+the home and community. 
+• Improve MH and SUD outcomes by integrating treatment into primary 
+care and urgent care settings, ensuring earlier identification and 
+ongoing management. 
+• Improve maternal and child health outcomes by improving prenatal 
+and postpartum access, care coordination, and continuity of care for 
+women and infants in rural regions via regionalization efforts and 
+performance payments to increase the capacity of primary care 
+practices. 
+• Empower primary care providers to practice at the top of their 
+capabilities and enabling specialty care support, when appropriate, to 
+deliver high quality care.  
+Technology Use • Modernize Vermont’s digital health infrastructure through 
+interoperability and transparency projects. 
+• Enhance cybersecurity protections to protect rural providers.  
+• Expand the use of telehealth, RPM, and AI-enabled tools to support 
+chronic disease management, preventive care, and administrative 
+efficiency in rural and primary care settings. 
+=== PAGE 16
+- 15 - 
+Element of 
+Transformation 
+Vermont’s RHT Plan Activities 
+• Facilitate adoption of emerging technologies among small and 
+independent practices.  
+Partnerships • Foster statewide and regional partnerships among hospitals, FQHCs, 
+independent practices, MH/SUD providers, EMS, home health 
+agencies, and community-based organizations through health care 
+transformation planning.  
+• Establish and expand operational networks and technologies that 
+support shared services (e.g., EMR, analytics platform, telehealth and 
+e-Consult infrastructure, and centralized transfer coordination) among 
+providers to maximize economies of scale and reduce administrative 
+costs. 
+• Improve transportation timeliness, and to appropriate settings of care 
+through new clinical partnerships and data tools. 
+• Promote through all projects collaborative learning, information 
+sharing, and transparent dissemination of data and best practices. 
+• Leverage existing advisory bodies to provide a formal governance and 
+decision-making structure to ensure provider, payer, and community 
+representation in RHT Program implementation.  
+Workforce • Expand access to financial incentives and on-the-job training for health 
+care providers to increase rural placement and retention, particularly 
+among young workers. 
+• Invest in new training pathways (e.g., residency programs) to 
+encourage the workforce to train and remain in rural practice settings. 
+• Support shared human resources infrastructure to reduce barriers to 
+recruitment and enable flexible deployment of staff across the state. 
+• Expand provider scopes of practice (e.g., pharmacists operating in test-
+to-treat models, EMS triage and treat and community paramedicine, 
+CRNA supervision waiver) and telehealth-supported collaboration to 
+enhance team-based care and bridge primary and specialty care. 
+Data-Driven 
+Solutions 
+• Develop user-friendly dashboards and data tools to monitor access, 
+cost, and quality metrics, supporting transparency and informed 
+decision-making by providers, policymakers, and the public. 
+• Strengthen provider participation in statewide health information 
+exchange and data-sharing networks to enable real-time coordination 
+of care. 
+• Support primary care practices’ capacity for data-driven quality 
+improvement through investment in analytic tools, risk stratification, 
+and referral tracking systems. 
+=== PAGE 17
+- 16 - 
+Element of 
+Transformation 
+Vermont’s RHT Plan Activities 
+Financial 
+Solvency 
+Strategies 
+• Absent regionalizing services, reducing business efficiencies, and 
+modernizing the system of care, it is likely that over the next five years 
+Vermont will see significant erosion of health and social services. The 
+RHT Program will allow Vermont to address dual affordability and 
+access challenges to prevent this erosion. 
+• Regionalization reforms will enable evaluation of service lines, 
+development of centers of excellence, and facilitation of novel service 
+delivery models that focus on prevention and early intervention. It will 
+also right-size facilities and transition appropriate services to lower-
+cost community or home-based settings to ensure long-term 
+sustainability. 
+• Other initiatives in this Plan build financial resilience by supporting 
+operational efficiencies through us of shared service platforms, 
+workforce upskilling/pipeline development, and digital infrastructure 
+investments.2 
+Cause 
+Identification 
+• Vermont’s rural hospitals face systemic challenges including low 
+patient volume, workforce shortages, aging infrastructure, and high 
+fixed costs relative to service demand. 
+• Many rural facilities experience competition from larger systems, 
+including those operating in neighboring states, threatening financial 
+viability and local access to care. 
+• Vermont’s RHT Plan mitigates these risks by optimizing and 
+diversifying services by region and making targeted facility 
+investments that maintain essential care capacity while improving 
+efficiency and quality of care. 
+• Workforce and technology initiatives in this plan also address key 
+operational drivers of instability, reducing reliance on expensive 
+temporary staffing and enabling collaboration to produce efficiencies. 
+• Through coordinated planning and shared governance, the state aims to 
+right-size the rural health delivery system, preserve local access to 
+essential services, and align community resources with population 
+health needs. 
+ 
+Vermont’s specific funding initiatives are described in detail below. For information on the 
+budget and associated costs of each initiative, refer to the accompanying Budget Narrative. 
+ 
+2 Separately, Vermont's hospitals are actively working on improving provider productivity with support from 
+consultants. 
+=== PAGE 18
+- 17 - 
+Program Key Performance Objectives 
+By the end of the RHT Program period (FY 2031), Vermont’s RHT Plan seeks to achieve the 
+following program-wide key performance objectives relative to the state’s overarching goals:  
+• Goal #1 - Strengthening Vermont’s Rural Health Care Workforce: The aging workforce 
+and declines in numbers of FTEs in key provider types, especially in rural areas, are a 
+significant concern in Vermont. Key performance objectives include: 1) Reducing the rate 
+of decline and achieving stability in select providers practicing in rural areas, as measured 
+in FTEs and numbers of providers relative to the rural population (targets under 
+development); and 2) Achieving increases in the number of people supported by health care 
+workforce training and financial assistance programs (baseline is 276 people; target is 300 
+people). 
+• Goal #2 - Increasing Access to Timely Care Across Rural Communities: A cornerstone of 
+improving access to timely care is ensuring that rural residents can obtain care closer to 
+home, by increasing and strengthening home-based and community-based options. Key 
+performance objectives include: 1) Reducing all-cause readmissions and/or ambulatory 
+care sensitive ED visits (baselines and targets under development); 2) Successfully 
+implementing one or more community-based options in each of Vermont’s rural HSAs 
+(options include community paramedicine, urgent care, pharmacist test-to-treat, mobile 
+units, RPM, e-consults, and telehealth support); and 3) Increasing the number of Vermont 
+hospitals with completed transformation plans (baseline is zero; target is all fourteen of 
+Vermont’s hospitals). 
+• Goal #3 – Leveraging Innovative Strategies to Increase Quality and Reduce Health Care 
+Costs: Innovations in Vermont’s RHT Plan are focused on ensuring that rural residents 
+have access to the right care, at the right time, in the right place, at an affordable cost. Key 
+=== PAGE 19
+- 18 - 
+performance objectives include: 1) Improving quality of care for people with chronic 
+illness; specifically, improvement in controlling high blood pressure for people with 
+hypertension, depression screening and follow-up, and glycemic control for individuals 
+with diabetes (see the Metrics and Evaluation Plan section below for specific baselines 
+and targets); 2) Increasing the number of patients with complex health needs who are 
+engaged with their primary care community health teams (baseline is an average of 26,800 
+per quarter in 2024; target is an average of 27,000 per quarter); and 3) Reducing the rate of 
+growth in hospital operating expenses (baseline is 8.9% from HFY 2023 to 2024) and/or 
+total cost of care (baseline is 10.3% from CY 2022 to 2023). Targets for these cost metrics 
+will be determined after further analysis. 
+More information on the measures that will promote these objectives and baseline data is 
+available in the Metrics and Evaluation Plan section below. 
+Initiatives and Use of Funds 
+Initiative 1: Regionalization and Innovative Care Strategies 
+Description While some services, such as primary care, are essential in every 
+community, other services, such as orthopedics or specialized trauma care, 
+need a higher number of patients to maintain staff expertise and deliver 
+safe, high-quality outcomes. It can also be expensive for every provider to 
+offer the same full range of services. In these circumstances, there is value 
+in coordinating care at a regional or statewide level. Specifically, 
+duplicating services where there is not enough demand creates 
+inefficiencies, increases costs, and has negative impacts on quality of care. 
+A key output of Act 167’s investigations on health system sustainability and 
+hospitals’ financial health was a consensus that the state needed to 
+implement strategic “regionalization” of health care services to address 
+these issues.86  
+The goal of regionalization is to make sure health care services are right-
+sized and optimally distributed in the state so that Vermonters can get the 
+care they need, when and where they need it, and at a price they can afford. 
+Regionalization works toward this goal by redesigning how clinical services 
+are delivered at the local, regional, and state level based on analysis of 
+population needs. The state’s vision is that certain essential services are 
+available in local communities, while other services are in either regional 
+=== PAGE 20
+- 19 - 
+hubs around the state or, for the most complex care, a single location 
+statewide. Regionalization protects access to care over the long term by 
+ensuring non-duplication of services and redirection of resources to high-
+value, essential services. 
+RHT Program funds will be used by the state to conduct detailed strategic 
+planning and implementation of a transformed, regional system of care, 
+which will ensure sustainable access to services in rural communities 
+beyond this award. The state has already completed initial stakeholder 
+engagement and discussions to inform this effort.  
+In parallel with broader transformation work, Vermont also plans to use 
+RHT funds to expand access to community-based care through urgent care 
+and mobile units as well as invest in equipment such as dialysis units and 
+ventilators to provide high-acuity services to nursing home residents. These 
+investments support the goals of regionalization by ensuring that 
+Vermonters have the foundational services they need in their communities. 
+Potential Use 
+of Funds 
+The state’s use cases for RHT Program funds as part of this initiative 
+include: 
+Regionalization Planning and Implementation 
+• Transformation, innovation, and regionalization support grants: 
+Support health care providers in adopting tactical regional care 
+strategies that will shift appropriate services from hospitals to non-
+hospital settings and create regional hospital services or centers of 
+excellence. Grants will be made by AHS to health care providers to 
+support the implementation of regional care changes that sustain high-
+quality, cost-effective care for Vermonters, and the grants will 
+primarily be provided to non-hospital providers to strengthen the 
+continuum of care, encourage care delivery innovation, and better align 
+services with population needs. AHS will allocate a proportion of grant 
+funding to provider proposals to implement innovative care models in 
+line with the state’s regionalization and transformation goals (e.g., 
+hospital-home health partnerships, regional workforce sharing models, 
+maternity care network development). Grants may also be used to 
+purchase tools and technical assistance to enable interoperability 
+between EMR systems. Vermont will design the grant initiative to 
+ensure that only permissible uses of RHT Program funds are allowed. 
+• Transformation analytics and support: Hire a vendor(s) to gather 
+and study data that will inform hospital and regional transformation 
+planning over the next five years; and provide project management 
+support. The vendor(s) will provide modeling to assess the impacts of 
+proposed reforms on cost, quality, access, and sustainability across 
+Vermont’s hospitals and regions. Analytics support will be made 
+available to hospitals and non-hospital providers to support 
+transformation and regionalization efforts (e.g., identifying areas most 
+=== PAGE 21
+- 20 - 
+in need of enhanced maternity care capacity). The selected vendor(s) 
+will also support onsite transformation activities with providers 
+throughout the state in alignment with Vermont’s regionalization goals, 
+including backend office support, efficiency studies, and other 
+administrative functions that can be streamlined. The state may require 
+the vendor(s) to provide project management or other transformation 
+support to the other Initiatives in this application, as needed. 
+• Facility upgrades to support regionalization: Support renovations or 
+upgrades to existing buildings and equipment in hospitals and clinics, 
+so they can better serve their communities. Investments may include 
+HVAC and sewer system upgrades, reconfigured office or clinical 
+areas, and other limited physical modifications to support service 
+realignment, shared operations, and integrated care delivery envisioned 
+under Vermont’s regionalization strategy.  
+• Development of a statewide health care delivery strategic plan: 
+Cover costs associated with hiring a consultant to develop and 
+implement a Statewide Health Care Delivery Strategic Plan for 
+Vermont. The plan will provide a roadmap for health care delivery 
+system reform and promote access to high-quality, cost-effective 
+services across the system. Key elements of the plan may include a 
+shared statewide vision, goals, and objectives; annual total cost of care 
+targets and related spending targets for primary and preventive care; 
+identification of the resources, infrastructure, and supports necessary 
+for implementation/monitoring. AHS intends for this plan to build on 
+prior transformation and regionalization initiatives to ensure a 
+coordinated, data-driven approach to organizing and sustaining 
+Vermont’s health care delivery system statewide. 
+Innovative Clinical Services to Support Regionalization 
+• Community paramedicine/Mobile Integrated Health model: 
+Establish a mobile integrated health care and community paramedicine 
+model that uses specially trained paramedics, Advanced EMTs, and 
+EMTs working under physician/NP oversight, to deliver protocol 
+driven care in patients’ homes, shifting care out of the hospital. A 
+phased statewide rollout will establish the legal framework, pilot and 
+refine care protocols, and expand to all regions with standardized data, 
+training, and quality assurance infrastructure. Core services will focus 
+on post-discharge and primary-care follow-up, with the flexibility to 
+add modules for surgical recovery, substance use, or other locally 
+prioritized needs. This project will also include changes to the EMS 
+scope of practice and associated reimbursement model, such as 
+flexibility to “triage and treat” in the community (see Supporting 
+Legislative and Regulatory Actions below). 
+• MH and substance use urgent care expansion: Support targeted 
+expansion of urgent care centers to enable immediate, walk-in access to 
+MH and SUD care as a lower-cost, community-anchored alternative to 
+=== PAGE 22
+- 21 - 
+EDs. Investments in urgent care expansion will include minor 
+renovations within the blueprint of existing buildings to improve 
+service capacity. This project aims to create new and long-term access 
+points to preventive care at the community level. 
+• Mobile units offering medical, dental, and integrated MH/SUD 
+services: Support mobile clinic units to provide medical, dental, and 
+integrated MH and SUD services for remote areas in the state. Several 
+of the state’s DAs have already piloted the model and lessons learned 
+will inform deployment of new mobile units to rural areas where 
+schools and homes do not have the necessary supportive services 
+available. Dental mobile units will deliver oral health services to 
+schools and residential facilities. 
+• Improving availability and access to high-acuity services for 
+nursing home residents including dialysis services and ventilators: 
+Provide funding support for new grants to providers to purchase 
+dialysis and nursing home ventilator equipment. Dialysis access for 
+rural skilled nursing facilities is an ongoing challenge, with 
+transportation constraints complicating patients’ treatment progress. 
+Vermont currently has only one nursing home ventilator unit, located at 
+the Pines in Rutland, which is insufficient to meet demand, and 
+Vermont has no nursing home-based dialysis options. Funding would 
+support new dialysis units to serve Vermont nursing home residents, 
+and funds would be used to invest in a second nursing home ventilator 
+unit to enable the state to double its capacity for this critical service. 
+Funds would cover equipment installation for dialysis services with 
+necessary upgrades to facility infrastructure to serve patients—the state 
+will also consider a mobile unit in place of facility units based on 
+review of business plans. This project will be particularly important for 
+individuals dually eligible for Medicare and Medicaid to support their 
+ability to receive long-term care within their communities.  
+Estimated Budget Range: $300–$400 million total across the five budget 
+periods (not inclusive of state administrative costs). See the Budget 
+Narrative for more information. 
+Relevant CMS 
+Use of Funds 
+Categories 
+A, B, D, E, F, G, H, J, K 
+Main CMS 
+Strategic 
+Goal(s) 
+Make Rural America Healthy Again, Sustainable Access, Workforce 
+Development, Innovative Care, Tech Innovation 
+Relevant 
+Technical 
+Score Factors  
+B.1, C.1, C.2, D.3, E.2, F.2  
+=== PAGE 23
+- 22 - 
+Key 
+Stakeholders 
+AHS Interdepartmental Partners, Health Care Delivery Advisory 
+Committee, Health Care Reform Oversight Committee, Hospitals, Health 
+Systems, Community-Based and Long-Term Care Providers, Community-
+Based Organizations, EMS, Clinicians and Other Health Care Professionals, 
+Patients. 
+Sub awardees/ 
+Subcontractors  
+To be determined at a later date in accordance with state procurement rules. 
+Supporting 
+Legislative and 
+Regulatory 
+Actions 
+Vermont plans to expand the authority of the Department of Health to 
+regulate EMS agencies and personnel to provide community paramedicine. 
+AHS will make regulatory changes and design a reimbursement model 
+associated with expanding EMS’s ability to “triage and treat” in the 
+community without requiring transport to EDs (i.e., enabling triage in the 
+field and transfer to an alternate location, such as an urgent care center). 
+Additional scope of practice changes may be pursued during the course of 
+the RHT Program period. 
+Sustainability 
+Plan 
+Vermont’s regionalization initiative is meant to be a permanent change in 
+how care is organized statewide. The goal is to reduce waste from 
+redundant and low-value services and to redirect those dollars to services 
+that communities need. Regional and hospital plans built under the RHT 
+Program will set a shared statewide plan that the state will use when it 
+makes future investments, reviews hospital budgets, and updates the State 
+Health Improvement Plan. 
+Instead of funding duplicative capacity (for example, two hospitals trying to 
+run the same low-volume specialty service), Vermont will move those 
+dollars to higher-value uses such as preventive care, primary care, and MH 
+and substance use treatment. 
+Many RHT-funded activities—such as updating facilities, awarding targeted 
+support grants, building regional strategic plans, or standing up urgent 
+care—are one-time costs. These one-time investments are designed to yield 
+permanent effects: more efficient operations, better access close to home, 
+and stronger rural hospital finances. 
+When writing regionalization plans, the state will examine whether service 
+lines that are important to community health are financially sustainable. If 
+certain high-value services are chronically under-paid and at risk of closure, 
+the state will redirect savings from avoided low-value care to raise payment 
+levels and keep those services open. 
+Finally, lessons from the RHT Program will shape the next generation of 
+Medicaid and Medicare reforms—including Vermont’s work under the 
+AHEAD model and future value-based payment arrangements that reward 
+hospitals, EMS, and community providers for working together. By 
+building permanent regional governance, shared analytics, and structured 
+decision-making into state processes, Vermont will ensure that RHT 
+=== PAGE 24
+- 23 - 
+investments produce durable gains in access, efficiency, and health 
+outcomes well past FY31. 
+Impacted 
+Counties 
+Statewide 
+ 
+Implementation Plan and Key Milestones for Initiative 1: Regionalization and Innovative 
+Care Strategies 
+Stage 
+Timeline 
+(FFY) Activities Milestones 
+0: Planning 2026 • Draft project charter and 
+detailed plan for 
+regionalization work  
+• Identify staff roles, post 
+and recruit positions, and 
+assign personnel  
+• Engage stakeholder 
+advisory group  
+• Develop partnership and 
+procurement plans 
+• Develop program 
+guidance and application 
+materials for grant 
+programs  
+• Develop project plans for 
+implementation of 
+community 
+paramedicine, urgent 
+care expansion, mobile 
+unit deployment and 
+dialysis/ventilator 
+purchases 
+• Stakeholder advisory 
+group (Health Care 
+Delivery Advisory 
+Committee) convened by 
+October 15, 2025 
+• Post new staff positions 
+by February 28, 2026 
+• Approval of project 
+charter and project plans 
+by April 30, 2026 
+1: Launch 2026 • Hire project staff 
+• Convene stakeholder 
+advisory group 
+• Post requests for 
+proposals and execute 
+contracts for vendor 
+support 
+• Open grant application 
+periods for provider 
+grants 
+• Staff hiring and 
+onboarding completed by 
+June 30, 2026 
+• Contracts executed for 
+Transformation analytics 
+vendor support by 
+January 30, 2026, and 
+Statewide Strategic 
+Delivery Plan 
+Development by July 30, 
+2026. Other vendor 
+=== PAGE 25
+- 24 - 
+Stage 
+Timeline 
+(FFY) Activities Milestones 
+contracts execute by 
+December 31, 2026. 
+• Grant application period 
+opened for grant 
+program(s) by September 
+30, 2026 
+• Convene stakeholder 
+advisory group at least 
+quarterly 
+2: 
+Implementation 
+2026 and 
+2027 
+(October 
+2025–
+September 
+2027) 
+• Convene regional 
+transformation meetings 
+with hospital leadership 
+• Expand regional 
+transformation meetings 
+and workgroups to 
+include non-hospital 
+providers 
+• Leverage analytics 
+support and technical 
+assistance to develop and 
+implement 
+transformation plans 
+• Develop draft hospital, 
+regional, and statewide 
+transformation plans 
+• Select and award 
+applicants for provider 
+grants (round 1)  
+• Convene stakeholder 
+advisory group 
+• Plan to introduce state 
+policy and regulatory 
+changes (EMS) 
+• Begin implementation of 
+community 
+paramedicine, urgent 
+care expansion, mobile 
+unit deployment and 
+dialysis/ventilator 
+purchase projects 
+• Convene regional 
+transformation meetings 
+at least quarterly in FFY 
+2026 and 2027 
+• Execute round one of 
+provider grant awards by 
+December 31, 2026, with 
+quarterly reporting on 
+outcomes 
+• Initial regional and 
+statewide hospital 
+transformation plans 
+completed by Jun 30, 
+2026  
+• Draft Statewide Health 
+Care Strategic Delivery 
+Plan completed by June 
+30, 2027  
+• Convene stakeholder 
+advisory group at least 
+quarterly 
+ 
+3: Midpoint 2028 • Data analyses and 
+program evaluation of 
+round 1 provider grants 
+• Interim Report on 
+provider grants by 
+December 31, 2027 
+=== PAGE 26
+- 25 - 
+Stage 
+Timeline 
+(FFY) Activities Milestones 
+• Select and award 
+applicants for provider 
+grants (round 2) 
+• Leverage analytics 
+support and technical 
+assistance to develop and 
+implement 
+transformation plans 
+• As needed, convene 
+regional transformation 
+meetings and 
+workgroups to gather 
+stakeholder input and 
+align initiatives 
+• Convene stakeholder 
+advisory group 
+• Execute second round of 
+provider grant awards by 
+December 31, 2027, with 
+quarterly reporting on 
+outcomes 
+• Finalize Health Care 
+Strategic Delivery Plan by 
+January 15, 2028  
+• Interim implementation 
+reports from selected 
+vendors for urgent care 
+expansion, mobile unit 
+deployment and 
+dialysis/ventilator 
+purchase projects by 
+January 15, 2028. 
+• Introduce and implement 
+state policy and 
+regulatory changes (EMS) 
+by December 31, 2027 
+• Implement community 
+paramedicine, urgent care 
+expansion, mobile unit 
+deployment and 
+dialysis/ventilator 
+purchase projects by 
+September 1, 2028, with 
+quarterly reporting on 
+outcomes 
+4: Finalizing 2029 • Continued 
+implementation of 
+provider grants 
+• Data analyses and 
+program evaluation of 
+round 1 and 2 provider 
+grants  
+• Leverage analytics 
+support and technical 
+assistance to develop and 
+implement 
+transformation plans 
+• As needed, convene 
+regional transformation 
+• Interim report on provider 
+grants by December 31, 
+2028 
+• As needed, update Health 
+Care Strategic Delivery 
+Plan by January 15, 2029 
+• Interim reports from 
+selected vendors for 
+community paramedicine 
+urgent care expansion, 
+mobile unit deployment 
+and dialysis/ventilator 
+purchase projects by 
+December 31, 2028  
+=== PAGE 27
+- 26 - 
+Stage 
+Timeline 
+(FFY) Activities Milestones 
+meetings and 
+workgroups to gather 
+stakeholder input and 
+align initiatives 
+• Refine and update the 
+Health Care Strategic 
+Delivery Plan  
+5: Fully 
+implemented 
+2030 
+(Some 
+activities 
+may 
+continue 
+into FY 
+2031, as 
+needed) 
+• As needed, convene 
+regional transformation 
+meetings and 
+workgroups to gather 
+stakeholder input and 
+align initiatives 
+• Close out of provider 
+grant programs 
+• Final data analyses and 
+program evaluation of 
+provider grants 
+• Develop sustainability 
+plan and scaling 
+recommendations  
+• Prepare final reports for 
+oversight and public 
+dissemination  
+• Final outcome report for 
+provider grants by 
+September 30, 2030 
+• As needed, update Health 
+Care Strategic Delivery 
+Plan by January 15, 2030 
+• Final implementation 
+reports from selected 
+vendors for community 
+paramedicine urgent care 
+expansion, mobile unit 
+deployment and 
+dialysis/ventilator 
+• Final outcome report for 
+community paramedicine 
+urgent care expansion, 
+mobile unit deployment 
+and dialysis/ventilator 
+purchase projects by 
+September 30, 2030 
+ 
+Initiative 2: Establishing a Clinically Integrated Network of Shared Services 
+Description Vermont’s independent hospitals and other providers deliver value to 
+patients across the state but lack the scale and associated operational 
+efficiencies that are characteristic of larger hospital networks. This 
+initiative is designed to foster collaboration and partnerships across the 
+continuum of independent providers in the state and implement a system of 
+shared services to produce operational efficiencies. This “horizontal” 
+collaboration will ensure choice and competition in the state’s health care 
+system, which will have downstream impacts on the affordability of care 
+and patient access. Grant funding to providers will also enable purchase of 
+necessary technologies to improve care delivery, to include telehealth, 
+eConsult, RPM, and AI/scribe technologies. 
+Vermont providers and clinical staff currently must access multiple 
+systems in a patient’s care, which creates inefficiencies, risks for poor 
+=== PAGE 28
+- 27 - 
+outcomes, and turnover. All of these different systems limit the ability to 
+collect patient care data and coordinate care across settings. 
+AHS plans to collaborate with an organizing entity to implement key 
+components of this initiative. This partnership of health care organizations 
+will be established to enhance economic and financial stability, support 
+clinical excellence, and adoption of leading-edge technologies. 
+Use of Funds 
+and Estimated 
+Cost 
+The state’s use cases for RHT Program funds as part of this initiative 
+include: 
+• Incentivizing adoption of a shared EMR platform: Build upon 
+Vermont’s existing health data infrastructure, including VHIE, to 
+strengthen data sharing and care coordination across the state. While 
+the VHIE provides a robust platform for secure health data exchange, 
+Vermont’s hospitals and providers currently use a variety of EMR 
+systems that cause administrative burden, increase complexity, and 
+cause staff who work at multiple facilities to use different tools. This 
+initiative would implement a shared EMR that complements and 
+continues to contribute data to the VHIE. Participation would be 
+voluntary and designed to achieve seamless data exchange, support 
+improved image and lab sharing, enhance cybersecurity, and allow 
+advanced data analytics. Leveraging the VHIE’s existing 
+infrastructure for state-wide sharing, while promoting a shared EMR, 
+would reduce administrative burden, improve care coordination—
+particularly for rural populations—and advance statewide health 
+system integration. 
+• Establishing a shared HRIS system: Invest in the development of a 
+unified HRIS that will centralize core human resources functions, 
+including benefits administration, payroll, recruitment, onboarding, 
+licensure tracking, and compliance, while allowing each participating 
+hospital and community partners to securely manage organization-
+specific tasks such as performance evaluations and regulatory 
+reporting. The system will streamline workforce management, reduce 
+administrative costs, and support staff scheduling flexibility, allowing 
+clinical teams to be shared or shifted to meet fluctuating patient 
+volumes across regions. 
+• Statewide e-Consult expansion and workforce capacity building: 
+Support the implementation of a statewide e-Consult platform to 
+ensure an interoperable means of access for primary care providers to 
+consult with specialists. Grants will be provided to providers to enable 
+purchase of technologies to support the build and function of an e-
+Consult platform. Funding will also be used for technology upgrades 
+as well as startup program coordination costs that do not have an 
+alternative funding source. Lastly, funding will be used to build 
+capacity for pediatric and perinatal providers through a program that 
+provides real-time psychiatric consultation, training, and resources, so 
+=== PAGE 29
+- 28 - 
+they can confidently care for patients with mild to moderate MH needs 
+in their primary care hub (Note: federal funding for this program 
+concludes in SFY 2025–2026). Access to e-Consult services will save 
+patients from having to travel to separate appointments and help 
+strengthen local primary care capacity.  
+• Supporting a statewide closed-loop referral system: Purchase a 
+digital care coordination platform to strengthen communication and 
+collaboration among health care, MH/SUD, and social service 
+providers.3 The system would ensure patients successfully connect to 
+needed community supports, such as housing, food assistance, and 
+transportation. By enabling real-time data sharing and tracking of 
+referral outcomes, the platform would reduce duplication of services, 
+improve accountability, and promote cost efficiency while ensuring 
+more seamless, person-centered care across Vermont’s health and 
+social service systems. 
+• Creating a centralized tool to guide interfacility transfers: Develop 
+a shared subscription to a real-time digital tool that tracks bed capacity 
+and service availability across Vermont’s hospitals and health care 
+facilities, modeled after Oregon’s Capacity Center and Behavioral 
+Health Coordination Center.87,88 The system will enable more efficient 
+and appropriate patient transfers by providing up-to-date visibility into 
+available beds, specialty services, and transportation resources. 
+Improved coordination would reduce ED boarding, prevent 
+unnecessary transfers out of state, and ensure patients receive timely 
+care at the most appropriate facility.  
+• Grants to providers to adopt RPM: Provide grants to provider 
+organizations for the purchase of RPM equipment. RPM would be 
+used in home health, primary care/specialty, and community 
+paramedicine settings. RPM enables earlier interventions and ongoing 
+monitoring for chronic conditions (e.g., CHF, COPD, diabetes, 
+hypertension, asthma for pediatric populations, etc.) in the home to 
+prevent hospital admissions or readmissions. 
+• Grant funds to providers to adopt telehealth technology: Provide 
+grants to rural independent medical practices to purchase and 
+implement telehealth technology solutions statewide. Funds would 
+support investments in secure telehealth platforms, connected 
+diagnostic tools, and related infrastructure necessary to deliver high-
+quality virtual visits (funds will not be used for broadband). Funds will 
+be used to provide technical assistance and training to grantees on 
+technology selection, implementation, cybersecurity, and compliance. 
+By enabling smaller and independent practices to fully participate in 
+ 
+3 A closed-loop referral system ensures that a member's needs are met by tracking a referral from the initial request 
+to the confirmation of services received. This process involves coordinating with community- based organizations, 
+confirming with the member they received the service, and providing feedback to the referring provider to close the 
+communication cycle. This system is designed to improve care coordination, track outcomes, and efficiently connect 
+members with resources for health-related social needs like housing or transportation.  
+=== PAGE 30
+- 29 - 
+Vermont’s evolving digital health ecosystem, this initiative will reduce 
+barriers to access, improve continuity of care, and enhance the overall 
+resilience of the state’s rural health system. 
+• Grants to providers to adopt AI transcription/scribe technology: 
+Provide grants to providers to purchase AI scribe technology. 
+Currently, smaller and more rural and independent practices are 
+struggling with access to the same technology that larger practices can 
+afford. AI scribe technology is proven to increase efficiency and 
+reduce burden in primary care sites. Providers and patients in Vermont 
+are expressing high satisfaction with scribe technology at those 
+practices where it is already available. Scribes automate an average of 
+over two hours of daily administrative work, transcribing and 
+processing clinician-patient conversations, producing clinical notes 
+and follow-up materials so clinicians can focus on delivering quality 
+care to their patients. Investing in these services will produce clinical 
+and administrative efficiencies for providers that will lead to 
+improvements in the quality of care. 
+Estimated Budget Range: $100–$200 million total across the five budget 
+periods (not inclusive of state administrative costs). See the Budget 
+Narrative for more information. 
+Relevant CMS 
+Use of Funds 
+Categories 
+A, C, D, F, G, H, K 
+Main CMS 
+Strategic 
+Goal(s) 
+Make Rural America Healthy Again, Sustainable Access, Tech Innovation 
+Relevant 
+Technical Score 
+Factors  
+B.1, C.1, E.2, F.1, F.2, F.3 
+Key 
+Stakeholders 
+Hospitals, Health Systems, Community Providers Across the Health Care 
+Continuum (Primary, Specialty, FQHCs, RHCs, etc.), Community-Based 
+Organizations, Clinicians and Other Health Care Professionals, Patients. 
+Sub awardees/ 
+Subcontractors  
+To be determined at a later date in accordance with state procurement 
+rules. 
+Supporting 
+Legislative and 
+Regulatory 
+Actions 
+None at this time. 
+Sustainability 
+Plan 
+Vermont’s investments in shared services are designed to produce lasting 
+system efficiencies and operational improvements that extend well beyond 
+the RHT funding period. The state will sustain these initiatives by 
+=== PAGE 31
+- 30 - 
+embedding shared infrastructure within existing providers’ governance and 
+financing structures, leveraging state and provider partnerships to manage 
+ongoing operations. Cost savings achieved through reduced administrative 
+duplication, improved care coordination, and lower readmissions can be 
+reinvested by providers into higher value activities. Once implemented, 
+these shared systems will operate on subscription or cost-sharing models 
+supported by participating providers leveraging dollars previously spent on 
+duplicative administrative functions, allowing for continued maintenance, 
+upgrades, and vendor support without reliance on federal funds. 
+The state’s robust Medicaid and private telehealth, RPM, e-Consult, and 
+other virtual care coverage policies will be a key sustainability mechanism. 
+The continuation of Medicare telehealth flexibilities will also contribute to 
+sustainability for these services.  
+Impacted 
+Counties 
+Statewide 
+ 
+Implementation Plan and Key Milestones for Initiative 2: Establishing a Clinically 
+Integrated Network of Shared Services 
+Stage Timeline 
+(FFY) 
+Activities Milestones 
+0: Planning 2026 • Conduct stakeholder 
+engagement 
+• Define governance for 
+shared services 
+• Assess readiness across 
+providers 
+• Identify key technology 
+and workforce gaps 
+• Develop data-sharing and 
+privacy frameworks 
+• Governance structure 
+approved by March 2026 
+• Baseline technical and 
+workforce assessment 
+completed by April 2026 
+1: Launch 2026 • Finalize project charters 
+and funding priorities for 
+each shared-service 
+project (i.e., HRIS, EMR, 
+interfacility transfer tool, 
+closed-loop referral, e-
+Consult.) 
+• Execute initial contracts 
+• Launch statewide 
+coordination meetings 
+• Project charters approved 
+by June 2026 
+• Initial contracting started 
+by July 2026 
+=== PAGE 32
+- 31 - 
+Stage Timeline 
+(FFY) 
+Activities Milestones 
+2: 
+Implementation 
+2027 • Deploy foundational 
+infrastructure 
+• Begin integration of 
+shared HRIS and EMR 
+systems 
+• Implement early e-
+Consult and telehealth 
+expansion pilots 
+• Issue grants to providers 
+for telehealth, RPM and 
+AI 
+• Shared HRIS and EMR 
+pilot sites operational by 
+March 2027 
+• e-Consult live statewide 
+by December 2027 
+• Interfacility transfer tool 
+and closed-loop referral 
+platform live statewide by 
+December 2027 
+• All provider grants issued 
+by December 2027 
+3: Midpoint 2028 • Conduct midpoint 
+evaluation  
+• Expand provider 
+participation 
+• Refine operational 
+policies based on data and 
+stakeholder feedback 
+• Midpoint evaluation 
+completed by June 2028 
+4: Finalizing 2030 • Refine statewide rollout 
+of all shared service tools 
+• Formalize sustainability 
+and governance models 
+• Document quality, 
+efficiency, and cost 
+outcomes 
+• All shared systems live 
+statewide by September 
+2030 
+5: Fully 
+implemented 
+2030 • Maintain full network 
+operation across all 
+domains 
+• Integrate continuous 
+quality improvement 
+• Report on system-wide 
+outcomes 
+• Ensure long-term funding 
+and oversight alignment 
+• Comprehensive outcome 
+report delivered by 
+September 2030 
+ 
+Initiative 3: Strengthening Primary Care 
+Description The Vermont Blueprint for Health is an existing initiative in the state that 
+designs community-led strategies for improving health and well-being. 
+RHT Program funds will create a modern, enhanced iteration of the 
+=== PAGE 33
+- 32 - 
+Blueprint model.4 There are no existing funding sources for updating the 
+Blueprint’s current model, which originated in 2005 and is now outdated. 
+The new initiative will focus on four core areas: 
+1. Integrated and Coordinated Treatment for Complex Chronic 
+Conditions: Vermont’s primary care-based community health teams 
+are under-resourced and insufficiently integrated with specialty care. 
+Modern teams, supported by a new payment model, will include a 
+broad range of professionals. These teams will address the root causes 
+of diseases and provide coordination for patients with complex chronic 
+conditions or risk factors for complex conditions. A special focus will 
+be on establishing a prescribed mix of professionals able to help 
+patients with conditions such as diabetes, MH/SUD, COPD, CHF, and 
+hypertension as well as social service needs, such as recovery housing. 
+Vermont will establish new standards for services to be implemented 
+within practices to improve team-based chronic disease care. For 
+example, standardized screening and risk-stratification will allow care 
+to be tailored to the needs of the patients. Community health team staff 
+will bridge primary and specialty care, ensuring each patient receives 
+consistent, person-centered support aligned with their individual goals 
+and community resources. 
+2. Evidence-Based Practice and Workforce Training: To standardize care 
+and ensure consistency across the state, providers will adopt clear, 
+Vermont-specific guidelines aligned with national best practices and 
+guidelines promoted by the U.S. Department of Health and Human 
+Services. Training and competency-building for the treatment team 
+will promote evidence-based care, while enhanced patient education 
+will strengthen self-management skills and confidence. Centralized 
+resources and shared learning will ensure community health teams use 
+the most current, effective interventions to achieve measurable 
+outcome goals. 
+3. Transformation Assistance for Primary Care Practices: Many primary 
+care practices need analytic and technical support to identify and 
+manage high risk populations. The new Blueprint model will offer 
+transformation assistance to integrate data-driven care coordination 
+and close gaps across disciplines.  
+4. Continuous Quality Improvement and Learning: The new model will 
+create a statewide learning network to support ongoing performance 
+monitoring, shared of best practices, and continuous refinement of care 
+models. Using real-time data and defined outcome measures, teams 
+conduct continued quality improvement to improve patient health, 
+provider satisfaction, and system efficiency. 
+ 
+4 The state can produce a list of primary care practices, including those affiliated with Blueprint for Health, upon 
+request.  
+=== PAGE 34
+- 33 - 
+Use of Funds 
+and Estimated 
+Cost 
+The state’s use cases for RHT Program funds as part of this initiative 
+include:  
+• Providing enhanced capacity for team-based care: Fund payments 
+to improve team-based care implementation to support care 
+coordination and prevention-focused interventions such as chronic 
+disease management, nutrition, and exercise programs. This payment 
+will be a prospective PMPM amount to support community health 
+team staff, who do not bill their activities. Practices will receive 
+payment based on agreeing to implement new standards and their 
+performance on these standards. The PMPM will help increase access 
+to services, including provision of care, and evidence-based chronic 
+disease prevention and management for all Vermonters. 
+• Incentivizing access to primary care: As part of the modernized 
+Blueprint model, primary care practices that meet access requirements 
+will receive a PMPM capacity payment, supported by RHT Program 
+funds. Enhanced access requirements will improve patients’ ability to 
+receive the care they need when and where they need it. Examples of 
+the types of requirements needed to earn the capacity payments 
+include waitlist reduction for new patients, ensuring availability of 
+after-hours and/or weekend appointments, RPM, mobile health or 
+home-visiting, telehealth, and same-day appointments for existing 
+patients. 
+• Specialty and primary care performance payments: Funds will 
+provide performance payments, as PMPM payments, that will be 
+shared between specialty and primary care providers to incentivize 
+consultation, co-management, and coordination of care for the 
+following conditions: diabetes, MH/SUD, COPD, CHF and 
+hypertension (additional conditions may be added in future years). 
+These payments are intended to incent providers to work together 
+differently, facilitated by technology (e.g., e-Consults, telehealth). 
+These payments will depend on the shared performance of providers. 
+• MH and community support integration into primary care teams: 
+Funds expanded staffing recruitment efforts at primary care practices 
+to provide comprehensive, team-based care for activities that have no 
+reimbursement model. Embedding MH and community support 
+specialists within existing clinical teams will strengthen coordination 
+between physical, MH, and social services. This allows patients to 
+access timely, whole-person support in a familiar setting. The model 
+will enhance screening, early intervention, and care planning for 
+patients with intertwining needs, reduce barriers to care access, and 
+improve outcomes through closer collaboration between clinicians, 
+care coordinators, and community-based partners, including 
+transportation partners. 
+• Enhancing Blueprint transformation network capacity: Invest in 
+the Blueprint’s statewide network of practices to allow for the 
+=== PAGE 35
+- 34 - 
+modernization of the model. The project will support technical 
+assistance, training, and practice transformation resources that help 
+providers implement new care standards and evidence-based 
+approaches. Priority areas include chronic disease prevention and 
+management, integration of MH/SUD and physical health, and 
+improved use of data to drive quality and outcomes.  
+• Workforce support and system integration development: Support 
+efforts to strengthen the health workforce and provide tools used for 
+patient/family engagement, referral/consultation workflows and 
+systems, and bilateral communication mechanisms. Funds will also 
+serve to implement evidence-based chronic disease prevention and 
+management, training and technical assistance, and training for the 
+clinical workforce.  
+• Enhancing primary care-focused data and analytics 
+infrastructure: Provide funding to expand statewide access to eCQM 
+calculation tools, risk stratification modules, referral tracking, and 
+team-based care documentation. This will strengthen data-driven care 
+coordination and performance improvement. Investments will support 
+practices in leveraging these tools to identify high-risk populations, 
+monitor outcomes, and streamline reporting. Further, investments will 
+enable primary care practices to harness data and technology to 
+furnish high-quality health care services. 
+• Expanding access to FQHC primary care services: Provide funding 
+to an FQHC to adapt existing clinical sites through minor 
+infrastructure renovations/refurbishments and equipment upgrades to 
+expand access to care (in alignment with HRSA’s approved scope). 
+Funds will also be used to pay for resources related to formal 
+onboarding and training of staff and investments in IT. In addition, 
+funding will support costs related to health data information transfer 
+and community engagement and public relations activities. 
+• Expanding access to recovery housing for individuals with SUD 
+needs: Provide grants for the minor renovation and refurbishment of 
+existing housing to increase capacity to support individuals in 
+recovery. Through this investment, the state will ensure that 
+individuals provided primary care through the Blueprint for Health’s 
+community health teams will be able to access recovery housing. 
+Recovery housing’s evidence-based model will provide a stable 
+environment for individuals with SUD and co-occurring conditions to 
+focus on recovery through encouraging peer support, personal growth, 
+and long-term recovery skills. 
+Estimated Budget Range: $200–$300 million total across the five budget 
+periods (not inclusive of state administrative costs). See the Budget 
+Narrative for more information. 
+=== PAGE 36
+- 35 - 
+Relevant CMS 
+Use of Funds 
+Categories 
+A, B, C, D, E, F, H, I, J, K 
+Main CMS 
+Strategic 
+Goal(s) 
+Make Rural America Healthy Again, Sustainable Access, Workforce 
+Development, Innovative Care, Tech Innovation 
+Relevant 
+Technical Score 
+Factors  
+B.1, B.2, C.1, D.1, E.1, E.2, F.1, F.2, F.3 
+Key 
+Stakeholders 
+AHS Interdepartmental Partners, Payers, Provider Networks, 
+FQHCs/RHCs, Primary Care and Specialty Care Clinics, Community-
+Based Organizations, Blueprint Executive Committee, Blueprint Payment 
+Implementation Workgroup, Vermont Steering Committee for 
+Comprehensive Primary Health Care, Health Care Delivery Advisory 
+Council, Health Care Reform Oversight Committee, Patients 
+Sub awardees/ 
+Subcontractors  
+To be determined at a later date in accordance with state procurement 
+rules. 
+Supporting 
+Legislative and 
+Regulatory 
+Actions 
+None at this time. 
+Sustainability 
+Plan 
+Vermont’s strengthening primary care initiative is designed to create 
+lasting improvements in access, coordination, and quality that extend 
+beyond the RHT funding period. The state will sustain these investments 
+by leveraging and expanding existing reimbursement models (Medicaid, 
+Medicare, private) for primary care service delivery. Engagement with 
+CMS’s AHEAD Model will enable Vermont to test and scale sustainable 
+payment approaches for advanced primary care, care management, and 
+community health team services that were started using RHT funding. 
+Specifically, AHEAD will sustain investments in targeted care 
+management across the state’s rural primary care practices. The state will 
+also engage commercial payers in the modernization of the model to 
+ensure the investment is sustained by all payers. 
+RHT-funded data and analytics infrastructure, referral systems, and 
+evaluation capacity improvements will be institutionalized within the 
+Blueprint model, replacing existing infrastructure. These improvements 
+will be maintained through the shared State and payer contributions and 
+operational efficiencies and savings created by high quality, coordinated 
+care. The Blueprint’s existing governance and accountability structures 
+will support ongoing use of this model to improve population health, care 
+quality, and system sustainability beyond FY 2031.  
+=== PAGE 37
+- 36 - 
+Impacted 
+Counties 
+Statewide 
+ 
+Implementation Plan and Key Milestones for Initiative 3: Strengthening Primary Care 
+Stage Timeline 
+(FFY) 
+Activities Milestones 
+0: Planning 2026 • Project planning 
+• Advisory group 
+identification 
+• Scoping process 
+• Staff need determinations  
+• (FQHC project only): Add 
+service area to scope, 
+lease properties, hire or 
+contract for staffing, 
+renovate sites and perform 
+data integration 
+• Advisory groups 
+determined by March 
+2026 
+• Project plan finalized by 
+March 2026 
+1: Launch 2026 • Hire project staff 
+• Conduct contracting 
+process 
+• Advisory group 
+engagement sessions 
+• Standard development and 
+deployment 
+• Baseline data collection 
+• (FQHC project only): 
+Conduct training, data 
+collection, and analysis 
+• Advisory groups 
+convened by May 30, 
+2026 
+• Standards determined by 
+June 30, 2026 
+• Community health team 
+staff hiring begins by July 
+1, 2026 
+• Contracts executed by 
+September 30, 2026 
+• Baseline data collected by 
+September 30, 2026 
+2: 
+Implementation 
+2027 • Community Health Teams 
+hire staff and reorganize to 
+meet new standards 
+• Conduct training for staff 
+and technical assistance 
+for practices 
+• Begin complex care 
+management 
+• Implement statewide 
+referral system 
+• Begin telehealth and EMR 
+improvements 
+• Begin recovery housing 
+refurbishments 
+• Statewide referral system 
+implemented by January 
+1, 2027 
+• Practices attest to new 
+standards by September 
+30, 2027 
+• Recovery housing 
+refurbishments completed 
+by September 30, 2027 
+• (FQHC project only): 
+Expanded sites 
+operational by September 
+30, 2027 
+=== PAGE 38
+- 37 - 
+Stage Timeline 
+(FFY) 
+Activities Milestones 
+• Introduce policy or 
+regulatory changes as 
+needed 
+• Policy/regulatory changes 
+introduced by December 
+31, 2027 
+3: Midpoint 2028 • Midpoint evaluation 
+• Program expansion to 
+increase service provision 
+• Update plan based on 
+evaluation 
+• Project plan updates by 
+June 30, 2028 
+• Midpoint evaluation 
+completed by September 
+30, 2028 
+• (FQHC project only): 
+Submit interim report by 
+September 30, 2028 
+4: Finalizing 2029 • Quantitative final 
+evaluation 
+• Develop sustainability 
+plan 
+• Claims-based evaluation 
+by September 30, 2029 
+• Sustainability plan by 
+September 30, 2029 
+5: Fully 
+implemented 
+2030 • Full operation with 
+measurable outcomes 
+• Ongoing evaluation, 
+measurement, and quality 
+improvement 
+• Full operation outcome 
+report by September 30, 
+2030 
+• (FQHC project only): 
+Submit final report by 
+September 30, 2028 
+ 
+Initiative 4: Health Care Workforce Development 
+Description This initiative is designed to strengthen the state’s rural health care 
+workforce pipeline and enable providers in the state to operate at the top of 
+their license through strategic investments in recruitment, training, and 
+retention. 
+Vermont’s health care workforce faces persistent challenges stemming 
+from aging demographics and limited educational pathways in rural 
+regions. Further, there is a shortage of housing stock for health care 
+workers. Increased interstate competition and resulting turnover are 
+significantly impacting workforce costs and/or creating significant gaps in 
+care. While many organizations have independently developed successful 
+health care workforce programs to address some of these challenges, 
+efforts remain fragmented and vary in scale. RHT Program funds present 
+an opportunity to align and expand these programs. The goal of this 
+initiative is to foster collaboration and partnerships among hospitals, 
+educational institutions, and community partners to develop coordinated, 
+regionally focused recruitment and training approaches that build a 
+sustainable health workforce for the future. This application’s workforce 
+development plan dovetails with the initiatives described above, by 
+=== PAGE 39
+- 38 - 
+ensuring a dedicated and highly trained workforce will be available to 
+drive these complementary efforts. 
+The state will ensure that health care professionals participating in the 
+projects below, where relevant, commit to practice in-state for at least five 
+years (or longer), with clear protections to ensure that no provider is bound 
+by non-compete agreements. Sub-recipients are responsible for 
+implementing a comprehensive five-year service agreement process, and 
+AHS will provide oversight. Sub-recipients must draft service agreements 
+that outline the five-year commitment, specify program/recipient 
+obligations, and define consequences for breaches, while allowing for 
+exceptions in unforeseen circumstances. AHS will conduct annual reviews 
+to ensure adherence, and sub-grantees must report annually on the status of 
+individuals provided assistance through the training and financial 
+assistance/housing programs below. 
+Use of Funds 
+and Estimated 
+Cost 
+The state’s use cases for RHT Program funds as part of this initiative 
+include: 
+Training Programs 
+• Expand access to LNA training programs: Invest in new LNA 
+training opportunities across Vermont through hybrid education models 
+and coordinated clinical partnerships. Today, Vermont offers several 
+accessible, work-based training options for LNA candidates, allowing 
+them to gain paid experience while completing required coursework. 
+However, these programs are fragmented. RHT Program funds would 
+support creation of a new centralized training hub and shared clinical 
+placement opportunities for small and rural providers that lack the 
+capacity to host their own programs. This project will help strengthen 
+Vermont’s long-term care and hospital workforce pipeline while 
+supporting career advancement within the nursing profession. 
+• Establish the Maple Mountain Consortium Family Medicine 
+Residency program: Invest in startup and the first four years of 
+operations for Vermont’s first rural teaching health center family 
+medicine residency programs. [The state will be contributing from its 
+own funds to support startup in collaboration with but not supplanted 
+by RHT’s funds.] This accredited residency program is ready to launch 
+and would strengthen the state’s primary care workforce by training 
+physicians in rural and community-based settings where they are most 
+needed. RHT funds may also support the program’s efforts to expand 
+training for additional health professionals (e.g., dental residents and 
+APRNs). Upon full implementation, the program will produce at least 
+12 family medicine physician graduates annually. 
+• Health care professions residency program: Provide grant funding to 
+support the ability of providers, such as rural home health agencies, 
+rural hospitals, and other health care organizations, to identify 
+preceptors, recruit residents, conduct training and education, and 
+=== PAGE 40
+- 39 - 
+incentivize program participants to remain employed at the provider 
+organization. Funds will enable statewide promotion of the program to 
+educational institutions and prospective residents, provide recruitment 
+materials, coordinate peer learning and support groups among 
+residents, create preceptor support structures, provide curriculum 
+support and materials, and assist with program reporting to state. 
+Financial Assistance and Housing 
+• Health care workforce development tuition assistance program: 
+Funds would extend new coverage of licensing renewal fees, exam 
+costs, continuing education unit training, and stipends to pay interns for 
+community-based providers, including but not limited to MH, SUD, 
+and intellectual and developmental disability providers. This project is 
+crucial toward promoting access to essential community services.   
+• Health care “critical occupations” no-cost tuition program: Fund 
+new activities to expand a “critical occupations” no-cost tuition 
+program to enable access to education and training for high-demand 
+health professions, including registered nursing, radiologic science, 
+respiratory therapy, dental hygiene, and others. The program will 
+provide last-dollar tuition support, covering any remaining tuition and 
+fees after institutional, state, and federal gift aid is applied. Combined 
+aid would not exceed a student’s total cost of attendance, ensuring 
+responsible use of funds.  
+• Health care workforce conditional financial assistance program: 
+Invest in attracting and retaining qualifying students (e.g., nurses, 
+radiology technicians, medical technicians) through the provision of 
+financial assistance. The program will reduce financial barriers to 
+entering and remaining in provider organizations within the state. 
+Scholarships are granted once participants sign a promissory note and 
+fulfill their required in-state service obligation.  
+• Health care workforce housing program: Fund a new workforce 
+housing program to increase the amount of housing stock available to 
+health care workers in rural parts of the state. This program would 
+provide grants of up to $50,000 per unit to property owners for minor 
+renovations and refurbishments needed to bring vacant rental units up 
+to Vermont Rental Housing Health Code guidelines, add new units to 
+an existing building within the current building footprint, or convert 
+commercial or retail space into housing. Property owners are required 
+to provide a 20% match for project grants and maintain the Department 
+of Housing and Urban Development Fair Market Rent prices. More 
+specifically, funds will (1) rehabilitate existing vacant units; (2) 
+rehabilitate structural elements affecting multiple units, such as the 
+lighting/electrical/plumbing/HVAC systems of a multi-family property, 
+interior modifications, and accessibility improvements; and (3) create 
+new units within an existing structure or convert commercial or retail 
+space to residential. Health care organizations may apply to AHS to 
+=== PAGE 41
+- 40 - 
+receive an allocation. The health care organizations will partner with 
+one of the five Vermont Homeownership Centers based on their region, 
+which will be the fiscal agent and administrator of the agreements. 
+Property owners will submit an application to their regional Center. 
+Recipients of the grants must agree to only allow qualifying health care 
+providers to occupy the unit. 
+Scope of Practice 
+• Expand pharmacists’ scope to include test-to-treat in more 
+scenarios (i.e., COVID-19, flu, strep throat): Fund a pilot program to 
+broaden access to timely diagnosis and treatment through enhanced 
+utilization of pharmacists operating at the top of their license. RHT 
+funds would support the development of training modules, the 
+establishment of necessary infrastructure (including technology and 
+equipment), and pilot reimbursement mechanisms for expanded 
+pharmacy-based services. By leveraging pharmacists as accessible, 
+community-based providers, this initiative will enhance primary care 
+capacity, reduce unnecessary emergency visits, and strengthen 
+Vermont’s integrated rural care delivery system. 
+Estimated Budget Range: $100–$200 million total across the five budget 
+periods (not inclusive of state administrative costs). See the Budget 
+Narrative for more information. 
+Relevant CMS 
+Use of Funds 
+Categories 
+D, E, H, J, K 
+Main CMS 
+Strategic 
+Goal(s) 
+Workforce Development, Innovative Care 
+Relevant 
+Technical Score 
+Factors  
+C.1, D.1, D.3 
+Key 
+Stakeholders 
+Educational/Workforce Institutions, Providers, Hospitals, Vermont 
+Housing Improvement Program, Vermont Housing Finance Agency, 
+Housing Developers, Vermont Homeownership Centers, Agency of 
+Commerce and Community Development, Clinicians and Other Health 
+Care Professionals 
+Sub awardees/ 
+Subcontractors 
+Maple Mountain Residency Program; other recipients to be determined at a 
+later date in accordance with state procurement rules. 
+Supporting 
+Legislative and 
+Regulatory 
+Actions 
+Changes are required to current statute to support and accommodate broad 
+expansion of test-to-treat in pharmacies. For example, 26 Vermont Statutes 
+Annotated § 2023(b)(2)(A) currently authorizes the creation of two 
+pharmacist prescribing protocols related to administering COVID-19 
+=== PAGE 42
+- 41 - 
+testing only. Neither protocol was developed, to date, because pharmacists 
+are still authorized to test-and-treat for COVID under the amendments to 
+the declaration of the Public Readiness and Emergency Preparedness Act, 
+which has been extended until the end of 2029. Vermont will pursue state 
+policy and regulatory changes to enable expansion of pharmacists’ scope 
+of practice to allow for test-to-treat for additional situations. 
+As mentioned in other areas of this application, Vermont is also expanding 
+the scope of EMS (see Initiative 1) and CRNA providers (see Legislative 
+and Regulatory Action section).  
+Sustainability 
+Plan 
+The sustainability of Vermont’s projects within this initiative will be 
+strengthened by the state's ongoing strategic planning for health care 
+workforce development, conducted in collaboration with stakeholders and 
+community members. The state is committed to establishing self-sustaining 
+partnerships and models to ensure the longevity and evolution of rural 
+workforce programs. The proposed training, residency, and recruitment 
+and retention initiative models can be easily adapted and implemented 
+across various settings, ensuring consistent and widespread impact. These 
+investments, along with five-year commitments to remain in the state, will 
+strengthen the state’s pipeline for a time long after funds from the RHT 
+Program expire.  
+The scope of practice policy initiatives also have the potential for 
+replication in other areas as the state identifies and refines the processes 
+involved. By developing clear guidelines and best practices, these 
+initiatives can be adapted to different health care settings, allowing for 
+broader implementation and impact. The housing project leverages lessons 
+learned in the state for similar efforts, which will enhance its sustainability 
+by building on proven frameworks and resources. 
+By pursuing diversified funding sources, such as increased state 
+appropriations and public-private partnerships with health care providers 
+and employers, we aim to co-fund initiatives that will remain viable 
+beyond the RHT funding period. This approach leverages a mix of state 
+appropriations, private sector contributions, and community support to 
+maintain and evolve these programs over time, reducing the risk of relying 
+on a single funding source. 
+Vermont’s projects within this initiative can easily be ramped up or down 
+pending availability of funds, which the state has done in the past. RHT 
+Program funds are a critical resource for the state that will have lasting 
+impacts even if sustainability is not assured in future years. 
+Impacted 
+Counties 
+Statewide 
+ 
+=== PAGE 43
+- 42 - 
+Implementation Plan and Key Milestones for Initiative 4: Health Care Workforce 
+Development 
+Stage Timeline 
+(FFY) 
+Activities Milestones 
+0: Planning 2026 • Conduct project planning 
+• Identify work teams 
+• Develop the scope for all 
+health care workforce 
+development programs 
+• Determine staffing needs 
+• Work teams identified by 
+January 30, 2026 
+• Health Care Workforce 
+Advisory group informed 
+by March 2026 
+• Project plan finalized by 
+March 2026 
+1: Launch 2026 • Hire project staff 
+• Conduct staff training 
+• Engage work teams 
+• Conduct contracting 
+process 
+• Develop and deploy 
+contract and sub awards 
+(launch date for projects 
+above may vary) 
+• Hold information sessions 
+• Collect baseline data 
+• Plan for state policy and 
+regulatory changes related 
+to pharmacist test-to-treat 
+project 
+• All work teams convened 
+by April 30, 2026 
+• Staff onboarding 
+completed by May 30, 
+2026 
+• Contract and sub award 
+standards determined by 
+June 30, 2026 
+• Information sessions held 
+by July 30, 2026 
+• Contracts and sub awards 
+executed by September 
+30, 2026 
+• Baseline data collected by 
+September 30, 2026 
+2: 
+Implementation 
+2027 • Monitor contracts and 
+manage applications, and 
+compliance 
+• Implement policy or 
+regulatory changes 
+• Provide support and 
+oversee grants, training 
+partnerships, and 
+reporting 
+• Coordinate payments with 
+agencies and track 
+outcomes 
+• Conduct annual 
+evaluations 
+• Annual reports due by 
+September 30, 2027 
+• Introduce and implement 
+state policy and regulatory 
+changes by September 
+December 31, 2027 
+3: Midpoint 2028 • Conduct midpoint 
+evaluations and analytics  
+• Identify and implement 
+necessary changes to 
+• Midpoint evaluation 
+completed by Sept 30, 
+2028 
+=== PAGE 44
+- 43 - 
+Stage Timeline 
+(FFY) 
+Activities Milestones 
+health care workforce 
+development programs, as 
+needed 
+• Update project plan based 
+on evaluation 
+• Project plan updates by 
+November 30, 2028 
+4: Finalizing 2029 • Conduct annual 
+evaluations  
+• Develop a sustainability 
+plan 
+• Annual evaluations by 
+September 30, 2029 
+• Sustainability plan by 
+November 30, 2029 
+5: Fully 
+implemented 
+2030 • Conduct final evaluations 
+• Achieve full operation  
+• Continue ongoing 
+evaluation, measurement, 
+and quality improvement 
+for each health care 
+workforce development 
+program 
+• Final evaluations by 
+September 30, 2029 
+• Full operation outcome 
+report by November 30, 
+2030 
+ 
+Initiative 5: Price Transparency and Insurance Competition 
+Description This initiative aims to increase access to affordable, high-quality care for 
+rural Vermonters by improving transparency, strengthening insurance 
+market participation, and expanding affordable coverage options. As noted 
+above, Vermont’s rural communities continue to face rising health care 
+costs, limited plan choices, and barriers to understanding and comparing 
+health care prices and quality.  
+RHT Program funds will support two complementary projects:  
+• The first will enhance the state’s ability to produce timely, accurate, 
+and comprehensive analysis of cost, quality, and access metrics through 
+a technical platform. This investment will allow policymakers, 
+regulators, and the public to evaluate health system performance, 
+identify improvement opportunities, and track progress toward 
+statewide health reform goals.  
+• The second will support a statewide assessment to evaluate options to 
+enhance health care coverage affordability for Vermonters. Findings 
+from this assessment will inform state decision-making, guiding near- 
+and long-term policy actions to improve sustainability of the state’s 
+Marketplace, called Vermont Health Connect, and explore new 
+affordability strategies (e.g., reinsurance, Basic Health Plan). 
+Use of Funds 
+and Estimated 
+Cost 
+The state’s use cases for RHT Program funds as part of this initiative 
+include: 
+=== PAGE 45
+- 44 - 
+• Statewide health care data platform modernization and 
+transparency project: This project aims to modernize how cost, 
+quality and access data is managed and used in Vermont by scaling 
+existing infrastructure. RHT funds will support development of a scaled 
+solution that will replace older tools and make it easier for state leaders, 
+health care providers, and the public to see how well the health care 
+system is working according to defined metrics. Additionally, the 
+solution will use dashboards and reports to show important facts and 
+trends, like how much health care costs are rising, the quality of care 
+provided, and access to care. By using modern technology, the project 
+will help people make smarter decisions about health care and track 
+progress toward improving health services across the state. 
+• Statewide assessment of options to improve health coverage 
+affordability: Invest in a statewide assessment and associated technical 
+assistance to identify and advance policy options to improve access and 
+affordability in Vermont’s Marketplace. The assessment will explore 
+options to promote marketplace sustainability for insurers and 
+consumers, including small businesses. The assessment will identify 
+what the state can do now, what requires near-term analysis, and what 
+could be implemented in 2028. Funds will provide technical support to 
+analyze reinsurance and Basic Health Program affordability options, 
+prepare federal waiver applications, and support marketplace plan 
+design innovation. DVHA/AHS will undertake a Request for 
+Information or other pre-procurement vehicle(s) to collect information 
+from the national issuer community on perceived barriers to entering 
+the Vermont market.  
+Estimated Budget Range: $10–$50 million total across the five budget 
+periods (not inclusive of state administrative costs). See the Budget 
+Narrative for more information. 
+Relevant CMS 
+Use of Funds 
+Categories 
+D, F, G 
+Main CMS 
+Strategic 
+Goal(s) 
+Sustainable Access, Tech Innovation 
+Relevant 
+Technical Score 
+Factors 
+F.2 
+Key 
+Stakeholders 
+DVHA, DFR, Insurance Carriers, Consumers 
+Sub awardees/ 
+Subcontractors 
+To be determined at a later date in accordance with state procurement rules. 
+=== PAGE 46
+- 45 - 
+Supporting 
+Legislative and 
+Regulatory 
+Actions 
+Vermont will pursue the Marketplace request for information and plan 
+design work without legislation; however, some policies will have 
+legislative and budget implications for SFY 2028 that the state will make 
+available to CMS.  
+Sustainability 
+Plan 
+Vermont will sustain the statewide health care data platform modernization 
+and transparency initiative beyond FY 2031 using state funding. RHT 
+Program funding represents a one-time investment to make upgrades to the 
+state’s platform. During the project, experts will train state employees and 
+provide guides and documentation to build internal knowledge to sustain 
+the initiative beyond the RHT Program. 
+Vermont plans to use non-RHT dollars to fund the implementation of any 
+options identified through the statewide assessment of options to improve 
+health coverage affordability. Following the completion of the assessment, 
+Vermont will pursue a combination of state and federal funding to 
+implement identified policy actions. For example, Vermont may seek 
+federal approval from CMS to implement a reinsurance program or 
+establish a basic health program in the state. Vermont intends to take 
+identified policy actions by January 2028 to align with other changes made 
+to the Marketplace under the H.R.1 - One Big Beautiful Bill Act of 2025. 
+Impacted 
+Counties 
+Statewide 
+ 
+Implementation Plan and Key Milestones for Initiative 5: Price Transparency and 
+Insurance Competition 
+Stage Timeline 
+(FFY) 
+Activities Milestones 
+0: Planning 2026 • Form teams to guide both 
+projects; hire external 
+contractors or partner 
+resources to design and 
+execute data builds for the 
+transparency project  
+• Identify data sources for 
+the transparency project 
+to include, success 
+metrics, and key 
+performance indicators 
+for cost, quality, and 
+access 
+• Develop initial 
+governance, staffing, and 
+contracting plans 
+• Governance groups 
+formed and plans 
+approved by March 2026 
+• Scopes of work finalized 
+by June 2026 
+• Vendor and staffing plans 
+completed by September 
+2026 
+=== PAGE 47
+- 46 - 
+Stage Timeline 
+(FFY) 
+Activities Milestones 
+1: Launch 2026 • Begin transparency 
+project platform design 
+and contracting; and 
+develop baseline data 
+models and dashboards 
+• Begin analysis for 
+marketplace insurance 
+and reinsurance 
+• Technical contracts 
+executed by September 
+2026 
+• Baseline cost, access, and 
+quality requirements 
+defined for the 
+transparency project by 
+December 2026 
+2: 
+Implementation 
+2027 • Operationalize the unified 
+data environment for the 
+transparency project to 
+enable timely, accurate, 
+and comprehensive 
+analysis of health system 
+performance  
+• Complete analysis of 
+marketplace insurance 
+and reinsurance 
+• Operationalize the new 
+data environment by 
+March 2027 
+• Complete analysis of 
+marketplace insurance 
+and reinsurance by 
+December 2027 
+3: Midpoint 2028 • Evaluate progress for both 
+projects 
+• Midpoint evaluation 
+complete by June 2028 
+4: Finalizing 2030 • Develop a final report for 
+both projects, including 
+sustainability assessment 
+• Final report complete by 
+December 2029 
+5: Fully 
+implemented 
+2030 • Maintain regular updates 
+for both projects 
+• Continue stakeholder 
+input and quality 
+improvement 
+• Deliver annual report by 
+September 2030 
+ 
+Metrics and Evaluation Plan 
+Below are the performance metrics and outcomes Vermont will track to evaluate success for 
+each initiative, as well as Vermont’s plans for evaluating the program. The data and targets in the 
+table are for the whole state, but Vermont will also look for ways to break down the information 
+by rural areas and different groups of people. As noted in the table, many of the proposed metrics 
+can be reported at the HSA level, which is similar in location and size to counties and reflective 
+of where people receive their care. Vermont has selected these metrics based on feasibility of 
+=== PAGE 48
+- 47 - 
+measurement and collection of required data and relevance to the state’s RHT Program 
+objectives and initiatives. 
+Metric Data Source Timing of 
+Data 
+Updates 
+State or 
+Provider 
+Data 
+Collection 
+Baseline Data Targets 
+Initiative 1. Regionalization and Innovative Care Strategies: Projects within this scope are 
+intended to reduce the need for acute care and right-size care delivery across the state. 
+Follow-Up After 
+ED Visits for 
+Mental Illness, 
+ages 6 and older: 
+30-Day Rate 
+(HEDIS FUM) 
+Claims from 
+APCD 
+Annual; 
+1–2 CY 
+lag for 
+claims 
+data to be 
+compiled 
+State; can be 
+reported by 
+HSA 
+Statewide 
+baseline was 
+76.3% in 2023  
+Greater than 
+or equal to 
+78% by the 
+end of 
+budget 
+period 5 
+Follow-Up After 
+ED Visits for 
+Substance Use, 
+ages 13 and 
+older: 30-Day 
+Rate (HEDIS 
+FUA) 
+Claims from 
+APCD 
+Annual; 
+1–2 CY 
+lag for 
+claims 
+data to be 
+compiled 
+State; can be 
+reported by 
+HSA 
+Statewide 
+baseline was 
+67.7% in 2023  
+Greater than 
+or equal to 
+69% by the 
+end of 
+budget 
+period 5 
+Plan All-Cause 
+Readmissions, 
+ages 18 and 
+older (HEDIS 
+PCR) 
+Claims from 
+APCD 
+Annual; 
+1–2 CY 
+lag for 
+claims 
+data to be 
+compiled 
+State; can be 
+reported by 
+HSA; 
+potential 
+small 
+numbers for 
+some HSAs 
+Pending all-
+payer 
+calculation 
+Pending all-
+payer 
+baseline data 
+Number of 
+hospitals with 
+completed 
+transformation 
+plans (Vermont-
+specific metric) 
+Project 
+report (state 
+determines 
+completion) 
+Annual State; can be 
+reported by 
+hospital type 
+and location  
+Zero; 
+transformation 
+plans to be 
+developed 
+All hospitals 
+by budget 
+period 5 
+CAH operating 
+margins 
+(Vermont-
+specific metric) 
+Hospital 
+year-end 
+budget 
+submissions 
+to State 
+(GMCB) 
+Annual, 
+for prior 
+HFY 
+Providers 
+submit data; 
+state 
+analyzes, 
+aggregates, 
+and reports; 
+can be 
+reported by 
+hospital and 
+HSA 
+50% of CAHs 
+had positive 
+operating 
+margins in HFY 
+2024. Margin 
+was negative 
+1.2% when 
+aggregating all 
+CAHs 
+Target to be 
+determined 
+after further 
+analysis 
+=== PAGE 49
+- 48 - 
+Metric Data Source Timing of 
+Data 
+Updates 
+State or 
+Provider 
+Data 
+Collection 
+Baseline Data Targets 
+Number of 
+Community 
+Paramedicine 
+Visits and/or 
+Patients 
+(Vermont-
+specific metric) 
+Project 
+report; may 
+eventually 
+be able to 
+obtain via 
+claims from 
+APCD 
+Quarterly Provider 
+submission to 
+state; state 
+will 
+aggregate 
+For the two-
+year period 
+10/1/2023 
+through 
+9/30/2025:  
+353 referrals, 
+309 active 
+patients and 
+1737 visits 
+600 patients 
+served and 
+3,400 visits 
+by the end 
+of budget 
+period 5 
+Initiative 2. Establishing a Clinically Integrated Network of Shared Services: Projects within 
+this scope are intended to increase adoption of technologies to enable operational efficiencies 
+for independent providers and facilitate delivery of comprehensive care closer to home. 
+Number of rural 
+independent 
+practices 
+obtaining 
+telehealth 
+equipment 
+(Vermont-
+specific metric) 
+Project 
+report 
+Quarterly State; can be 
+reported by 
+HSA 
+Zero; program 
+to be developed 
+Target to be 
+determined 
+Numbers of 
+providers and/or 
+patients using 
+RPM (Vermont-
+specific metric) 
+Project 
+report 
+Quarterly  State; can be 
+reported by 
+HSA 
+Unknown; 
+program to be 
+developed 
+Target to be 
+determined 
+Implementation 
+of statewide 
+closed-loop 
+referral system; 
+number of 
+providers 
+(Vermont-
+specific metric) 
+Project 
+report 
+Quarterly State; can be 
+reported by 
+HSA 
+Zero; program 
+to be developed 
+Target to be 
+determined 
+Prevention 
+Quality Indicator 
+Chronic 
+Conditions 
+Composite 
+(Agency for 
+Healthcare 
+Research and 
+Quality 
+Hospital 
+Discharge 
+Database 
+Annual; 
+1–2-year 
+lag 
+State; can be 
+reported by 
+HSA; 
+potential 
+small 
+numbers for 
+some rural 
+HSAs 
+Statewide 
+baseline was 
+559.83 per 
+100,000 
+population in 
+2022 (lower is 
+better) 
+550 per 
+100,000 
+population 
+average by 
+the end of 
+budget 
+period 5 
+=== PAGE 50
+- 49 - 
+Metric Data Source Timing of 
+Data 
+Updates 
+State or 
+Provider 
+Data 
+Collection 
+Baseline Data Targets 
+Prevention 
+Quality Indicator 
+92) 
+Initiative 3. Strengthening Primary Care: Projects within this scope are intended to improve 
+primary care outcomes and engagement in primary care services.  
+Glycemic Status 
+Assessment for 
+Patients with 
+Diabetes, ages 
+18-75: Glycemic 
+Status >9.0% 
+(HEDIS GSD) 
+Claims from 
+APCD; 
+Clinical 
+Data from 
+Health 
+Information 
+Exchange 
+Annual; 
+one CY 
+lag for 
+claims 
+data to be 
+compiled 
+State; can be 
+reported by 
+HSA 
+Statewide 
+baseline was 
+21.8% in 2023 
+(lower rate is 
+better) 
+Less than or 
+equal to 
+21% by the 
+end of 
+budget 
+period 5  
+Controlling High 
+Blood Pressure 
+for People with 
+Hypertension, 
+ages 18-85 
+(HEDIS CBP) 
+Claims from 
+APCD; 
+Clinical 
+Data from 
+Health 
+Information 
+Exchange 
+Annual; 
+one CY 
+lag for 
+claims 
+data to be 
+compiled 
+State; can be 
+reported by 
+HSA 
+Statewide 
+baseline was 
+75.8% in 2023  
+Greater than 
+or equal to 
+78% by the 
+end of 
+budget 
+period 5 
+Screening for 
+Depression and 
+Follow-up Plan, 
+ages 12 and 
+older 
+(CMS eCQM 2) 
+Provider 
+reports 
+submitted to 
+state portal 
+Annual Providers 
+report 
+measure 
+results to 
+state portal; 
+state 
+aggregates; 
+can be 
+reported by 
+HSA 
+Statewide 
+baseline 
+(weighted 
+average) was 
+63.2% in 2024 
+for practices 
+participating in 
+Blueprint 
+Model 
+Greater than 
+or equal to 
+66% by the 
+end of 
+budget 
+period 5 
+Patients with 
+Community 
+Health Team 
+engagement 
+(Vermont-
+specific metric) 
+Provider 
+reports 
+submitted to 
+state portal 
+Quarterly 
+(annual 
+reporting 
+is average 
+per 
+quarter) 
+Providers 
+report results 
+to state 
+portal; state 
+aggregates; 
+can report by 
+HSA 
+Average of 
+26,800 patients 
+per quarter in 
+2024 
+Greater than 
+or equal to 
+27,000 
+patients per 
+quarter in 
+budget 
+period 5 
+Child and 
+Adolescent 
+Well-Care Visits, 
+ages 3-21 
+(HEDIS WCV) 
+Claims from 
+APCD 
+Annual; 
+one CY 
+lag for 
+claims 
+data to be 
+compiled 
+State; can be 
+reported by 
+HSA 
+Statewide 
+baseline was 
+59.4% in 2023  
+Greater than 
+or equal to 
+61% by the 
+end of 
+budget 
+period 5 
+=== PAGE 51
+- 50 - 
+Metric Data Source Timing of 
+Data 
+Updates 
+State or 
+Provider 
+Data 
+Collection 
+Baseline Data Targets 
+Adults’ Access 
+to Preventive/ 
+Ambulatory 
+Health Services, 
+ages 20 and 
+older (HEDIS 
+AAP) 
+Claims from 
+APCD or 
+Global 
+Commitment 
+Scorecard 
+(Medicaid 
+only) 
+Annual; 
+one CY 
+lag for 
+claims 
+data to be 
+compiled 
+State; can be 
+reported by 
+HSA 
+Statewide 
+Medicaid 
+baseline was 
+76.7% in 2024 
+Target to be 
+determined 
+after 
+obtaining 
+baseline all-
+payer data 
+Initiative 4. Health Care Workforce Development: Projects within this scope are intended to 
+increase the state’ s workforce and address provider shortages, improving accessibility to care 
+and downstream population health outcomes. 
+Number of FTEs 
+practicing in 
+various 
+disciplines 
+showing stable 
+or upward trends 
+(Vermont-
+specific metric) 
+Vermont 
+Department 
+of Health 
+Census of 
+Selected 
+Health Care 
+Providers 
+Every two 
+years, 
+during 
+provider 
+re-
+licensure 
+State 
+conducts 
+provider 
+survey during 
+re-licensure 
+and performs 
+analysis; can 
+report by 
+County 
+The following 
+providers have 
+been showing 
+stable or 
+upward trends 
+in FTE counts 
+in recent years: 
+ 
+MH 
+Counselors: 
+658.6 (2023) 
+ 
+APRNs-
+Primary Care: 
+323.5 (2023) 
+ 
+Pharmacists: 
+489.3 (2023) 
+ 
+Social Workers: 
+860.8 (2024) 
+ 
+Aging 
+workforce is 
+a significant 
+concern in 
+Vermont. 
+The goal is 
+to maintain 
+growth in 
+provider 
+types that 
+are stable or 
+increasing. 
+ 
+Target for 
+provider 
+types that 
+are 
+increasing: 
+Increase 
+FTEs by at 
+least 2% by 
+the end of 
+budget 
+period 5. 
+Number of FTEs 
+practicing in 
+various 
+disciplines 
+showing 
+decreases in FTE 
+counts in recent 
+years or at risk 
+Vermont 
+Department 
+of Health 
+Census of 
+Selected 
+Health Care 
+Providers 
+Every two 
+years, 
+during 
+provider 
+re-
+licensure 
+State 
+conducts 
+provider 
+survey during 
+re-licensure 
+and performs 
+analysis; can 
+The following 
+providers have 
+been showing 
+decreases in 
+FTE counts in 
+recent years or 
+are at risk of 
+decreasing: 
+The goal is 
+to stabilize 
+provider 
+types that 
+are 
+declining. 
+ 
+=== PAGE 52
+- 51 - 
+Metric Data Source Timing of 
+Data 
+Updates 
+State or 
+Provider 
+Data 
+Collection 
+Baseline Data Targets 
+of decreasing 
+due to aging 
+workforce or 
+other factors 
+(Vermont-
+specific metric) 
+report by 
+County 
+ 
+LNAs: 2204.4 
+(2022) 
+ 
+RNs: 4203.3 
+(2023) 
+ 
+Physicians-
+Primary Care: 
+406.3 (2022) 
+ 
+PAs-Primary 
+Care: 76.4 
+(2024) 
+Target for 
+provider 
+types that 
+are 
+decreasing: 
+Reduce 
+downward 
+trend in 
+FTEs by at 
+least 2% by 
+the end of 
+budget 
+period 5. 
+Number of 
+pharmacists 
+engaging in 
+expanded test-
+to-treat 
+(Vermont-
+specific metric)  
+Project 
+reporting 
+and/or 
+claims 
+Annual Likely to be 
+state; could 
+report by 
+County or 
+HSA 
+Zero; program 
+to be developed 
+Target to be 
+determined 
+Number of 
+people supported 
+by workforce 
+training and 
+financial 
+assistance 
+programs 
+(Vermont-
+specific metric) 
+Project 
+reporting 
+Annual Providers or 
+project leads 
+will submit 
+data; state 
+will 
+aggregate; 
+could report 
+by County or 
+HSA 
+Zero residents 
+in Maple 
+Mountain 
+Consortium 
+(2025); 276 
+people in other 
+programs 
+300 people 
+in workforce 
+training and 
+financial 
+assistance 
+programs by 
+the end of 
+budget 
+period 5 
+DA/SSA Overall 
+Vacancy Rate 
+(Vermont-
+specific metric) 
+Department 
+of Mental 
+Health 
+DA/SSA 
+Workforce 
+Recruitment 
+and 
+Retention 
+Strategic 
+Plan 
+Monthly  Providers 
+submit data 
+to state; state 
+aggregates, 
+analyzes, and 
+reports 
+Statewide 
+baseline rate 
+was 14% on 
+July 1, 2025 
+(lower is better) 
+Less than or 
+equal to 
+12.5% by 
+budget 
+period 5 
+Initiative 5. Price Transparency and Insurance Competition: Projects within this scope are 
+intended to improve care affordability, transparency, and reverse health care cost trends. 
+=== PAGE 53
+- 52 - 
+Metric Data Source Timing of 
+Data 
+Updates 
+State or 
+Provider 
+Data 
+Collection 
+Baseline Data Targets 
+Growth in 
+hospital 
+operating 
+expenses, 
+including CAHs 
+(Vermont-
+specific metric) 
+Hospital 
+year-end 
+budget 
+submissions 
+to State 
+(GMCB) 
+Annual, 
+for prior 
+HFY 
+Providers 
+submit data; 
+state 
+analyzes, 
+aggregates, 
+and reports; 
+can be 
+reported by 
+HSA 
+Rate of growth 
+from HFY 2023 
+to HFY 2024 
+was 8.9% 
+Targets to be 
+determined 
+pending 
+further 
+analysis 
+Growth in total 
+cost of care 
+(Vermont-
+specific metric) 
+Claims from 
+APCD and 
+non-claims 
+data 
+Annual;  
+1–2 CY 
+lag for 
+claims 
+data to be 
+compiled 
+State; can be 
+reported by 
+HSA 
+Rate of growth 
+for all-payer 
+total cost of 
+care was 10.3% 
+from CY 2022 
+to CY 2023 
+Targets to be 
+determined 
+pending 
+further 
+analysis 
+Vermont Health 
+Connect insurer 
+and plan options 
+(Vermont-
+specific metric) 
+Insurers 
+submit 
+filings to 
+state  
+Annual, 
+for 
+subsequent 
+CY 
+State, based 
+on insurer 
+filings 
+In 2025-2026, 
+there are two 
+insurers 
+offering 
+standard 
+(required) and 
+nonstandard 
+qualified health 
+plans to 
+individuals and 
+small 
+businesses 
+Maintain at 
+least two 
+insurers by 
+the end of 
+budget 
+period 5; 
+create at 
+least one 
+new plan 
+design in 
+response to 
+market 
+demand by 
+the end of 
+budget 
+period 5  
+Marketplace 
+sustainability 
+and affordability 
+options 
+(Vermont-
+specific metric) 
+Project 
+report; likely 
+qualitative 
+information 
+Annual State Documented 
+issues regarding 
+health and 
+affordability of 
+marketplace 
+Produce a 
+report 
+summarizing 
+options by 
+the end of 
+budget 
+period 5 
+Unique users of 
+new health care 
+cost, quality, and 
+access tools 
+Various data 
+sources; new 
+data build 
+Annual State  Not available; 
+systems do not 
+exist currently 
+Augment 
+systems by 
+the end of 
+budget 
+=== PAGE 54
+- 53 - 
+Metric Data Source Timing of 
+Data 
+Updates 
+State or 
+Provider 
+Data 
+Collection 
+Baseline Data Targets 
+(Vermont-
+specific metric) 
+period 5; 
+target to be 
+determined 
+Vermont will select an external evaluator through a competitive procurement that will be 
+initiated during the first budget period. The selected vendor will be responsible for overall 
+assessment and evaluation of the program, including: 
+• Understanding the context of Vermont’s RHT program; 
+• Developing a deep knowledge of the activities undertaken as part of each initiative 
+described above; 
+• Designing the evaluation; 
+• Using existing data sources and collecting additional data and information, as needed;  
+• Analyzing the data and information; and  
+• Presenting results, conclusions, and recommendations.  
+Vermont will fully cooperate with CMS-led evaluation, monitoring, and reporting requirements. 
+Legislative and Regulatory Action 
+Vermont’s current state policy related to the “State policy actions” technical score factors and 
+planned policy actions are described in the table below.5 
+Technical Score 
+Factor 
+Vermont’s Current State Policy Commitment to Legislative or 
+Regulatory Action and 
+Timeline  
+Health and 
+Lifestyle 
+Vermont has not implemented the 
+Presidential Fitness Test as a mandate 
+in schools.  
+ 
+None at this time. 
+ 
+5 For legislative and regulatory actions specific to each initiative, see the Initiatives and Use of Funds  section. 
+=== PAGE 55
+- 54 - 
+Technical Score 
+Factor 
+Vermont’s Current State Policy Commitment to Legislative or 
+Regulatory Action and 
+Timeline  
+The Vermont State Board of Education 
+adopted the 2024 National Physical 
+Education Standards to guide physical 
+education curriculum development in 
+2024. These standards focus on 
+building physical activity skills and 
+knowledge over the public school 
+years so that students will be life-long 
+physical activity participants. 
+SNAP Waivers The state does not have any pending 
+bills or regulation related to SNAP 
+waivers at the time of this application 
+submission. 
+The Governor has directed AHS 
+to pursue submission of a USDA 
+SNAP Food Restriction Waiver 
+that will prohibit the purchase of 
+non-nutritious items. The state 
+will provide an update on the 
+legislative timeline as part of 
+continuing collaboration and will 
+pursue completion of policy 
+actions by the end of the CY 
+2027 to align with CMS 
+guidelines. 
+Nutrition CME The state does not have any pending 
+bills or regulation related to Nutrition 
+CME at the time of this application 
+submission. 
+None at this time. 
+CON Vermont has universal CON rules 
+across all facility categories.89 
+The state passed legislation in 2025 
+that increases the monetary thresholds 
+at which a CON is required for a new 
+health care project, purchase, or 
+service. Under Act 15 (H.96), as of 
+July 1st, 2025, a CON will be required 
+for any construction, development, 
+purchase, renovation, or other 
+establishment of a health care facility, 
+or any capital expenditure by or on 
+behalf of a health care facility, for 
+which the capital costs exceeds $10 
+million (previous limit was $1.5 
+million).90 
+No additional policy changes are 
+planned at this time. 
+Licensure 
+Compacts 
+Vermont participates in the following 
+compacts91:  
+Vermont has fully enacted the 
+IMLC but has not been able to 
+=== PAGE 56
+- 55 - 
+Technical Score 
+Factor 
+Vermont’s Current State Policy Commitment to Legislative or 
+Regulatory Action and 
+Timeline  
+• Audiology and Speech-Language 
+Pathology Interstate Compact 
+• Counseling Compact 
+• Dietitian Compact 
+• IMLC 
+• Nurses Licensure Compact 
+• Occupational Therapy Compact 
+• Psychology Interjurisdictional 
+Compact  
+• Physical Therapy Compact 
+• Social Work Licensure Compact 
+ 
+The state does not yet participate in 
+the EMS or PA Compacts [though 
+legislation (H.572) was introduced in 
+January 2024]. 
+act as the State of Principal 
+License because the Federal 
+Bureau of Investigation has not 
+yet approved the Board of 
+Medical Practice to receive the 
+criminal background reports 
+necessary to confirm that an 
+applicant has no disqualifying 
+convictions and thus is eligible 
+to be licensed in other states via 
+the Compact. The Board of 
+Medical Practice is working to 
+get a technical amendment to 
+Vermont law that may overcome 
+Federal Bureau of Investigation 
+concerns about the way the 
+Vermont medical licensing law is 
+structured. No further policy 
+changes are planned at this time. 
+Scope of Practice Vermont’s scores related to practice 
+authority are as follows: 
+• PAs92: Advanced  
+• NPs93: Full Practice 
+• Pharmacists94:  
+o Overall: Improvements Needed 
+o Drug Administration: Full 
+Authority 
+o Laboratory Testing: 
+Improvements Needed, CLIA-
+Waived Authority  
+o Independent Prescribing: 
+Improvements Needed, 
+Formulary-Based Authority 
+• Dental Hygienists95: Full 
+Authority (except diagnosis) 
+The state is planning to make 
+changes to expand the 
+pharmacist and EMS scope of 
+practice per the initiatives 
+described above. 
+The state is also pursuing policy 
+change to opt out of the 
+Medicare supervision 
+requirement for CRNAs.  
+No additional scope of practice 
+changes are planned at this time. 
+STLDI STLDIs are restricted in the state. None at this time. 
+Remote Care 
+Services 
+Vermont has broad remote care 
+policies for all modalities (e.g., live 
+video, store and forward, RPM, audio-
+only) across Medicaid and private 
+payers. The state has a telehealth 
+license/registration process.96 
+None at this time. 
+ 
+=== PAGE 57
+- 56 - 
+Governance Structure and Project Management 
+AHS will lead the RHT Program and manage program administration and operations. (See the 
+Supporting Documentation, Exhibit 6 for more information about AHS and its departments.) 
+The Secretary’s Office will provide strategic leadership for the RHT Program. AHS may engage 
+the subrecipient(s) supporting Initiative 1(transformation analytics and support) to support 
+project management, particularly for the initial budget periods of the RHT Program performance 
+period before transferring management to the state. As noted above, the state also plans to 
+procure an independent evaluator to support clinical design and change management work 
+related to specific initiatives. The governance, final headcount and functions of the team 
+supporting the RHT Program are included in Supporting Documentation, Exhibit 7. Additional 
+detail on costs associated with AHS staff positions is located in the Budget Narrative. 
+Optimizing collaboration within and across state government will be vital to the success of the 
+RHT Program. The Agency’s Health Care Reform Care Transformation Meetings, a cross-
+departmental AHS-led meeting series, will be leveraged by the Secretary’s Office to ensure 
+ongoing internal communication and operational support for the RHT Program, in partnership 
+with relevant state agencies and partners, as needed (e.g., GMCB, DFR). To support effective 
+internal coordination and oversight, AHS will leverage existing structures used to successfully 
+manage large-scale, cross-departmental initiatives. These structures include a central 
+coordination team with representatives from program, policy, and budget offices, and 
+standardized processes for project reporting, budget management, and milestone monitoring. 
+AHS will develop a project charter that outlines the key aspects of the state’s ongoing decision-
+making process for the RHT Program. The charter will describe the State of Vermont’s functions 
+in the RHT Program, RHT Program objectives, the roles of agencies and departments as part of 
+=== PAGE 58
+- 57 - 
+the state’s agreement with CMS, and responsibilities and level of contributions of each entity to 
+accomplish the goals of the RHT Program in alignment with CMS’s requirements. The charter 
+will also include a formal decision-making and accountability structure to ensure ongoing 
+engagement and collaboration to meet RHT Program milestones and requirements. 
+Key agencies and partners that will have detailed roles in the charter will include AHS, the 
+Governor’s Office, the GMCB, the DFR, Agency of Commerce and Community Development 
+(for housing-related initiatives) and others. AHS will collaborate with GMCB and DFR to inform 
+program design and implementation, while the Governor’s Office will provide oversight and 
+strategic guidance for AHS’s leadership of the program. Within AHS, roles and responsibilities 
+will be delineated across the Agency, including the Vermont Department of Health and its Office 
+of Rural Health, the DVHA, the Department of Mental Health, the Department of Disabilities, 
+Aging and Independent Living, and the Office of Health Care Reform. 
+Stakeholder Engagement 
+Given the statewide nature of the RHT Program, AHS will coordinate and communicate closely 
+with a wide variety of state agency, health system, and community stakeholders throughout the 
+Program’s implementation timeline. AHS has consulted the following stakeholders to shape the 
+state’s RHT Program application narrative and transformation plan (non-exhaustive list): 
+Key Stakeholders 
+• Federal Delegation Staff 
+• Legislators (i.e., Health Reform Oversight Committee, Joint Fiscal Office, Legislative 
+Counsel) 
+• Governor’s Office 
+• Department of Taxes 
+• Department of Financial Regulation 
+• Agency of Agriculture, Food, and Markets 
+• Agency of Education 
+• Agency of Commerce and Community Development  
+• GMCB 
+• Office of the Healthcare Advocate 
+=== PAGE 59
+- 58 - 
+Key Stakeholders 
+• Medicaid Advisory Committee 
+• Vermont Medical Society 
+• Vermont Dental Society 
+• Vermont Program for Quality in Health Care 
+• Bi-State Primary Care Association 
+• Vermont Healthfirst 
+• Vermont Care Partners 
+• Vermont Association of Hospitals and Health Systems  
+• Vermont Hospital Chief Executive Officers and leadership teams 
+ 
+AHS plans to leverage the following, existing advisory committees to formally engage key 
+stakeholders on a regular basis as part of RHT Program: 
+Vermont 
+Steering 
+Committee for 
+Comprehensive 
+Primary Care 
+A 16-member committee, which convenes every other month, comprised 
+primarily of primary care providers. The committee’s primary task is to 
+work with state government, including the Blueprint for Health and the 
+Office of Health Care Reform in the AHS, as it relates to access to, delivery 
+of, and payment for primary care services in Vermont. 
+Health Care 
+Delivery 
+Advisory 
+Committee 
+An 18-member committee, which convenes on a quarterly basis, focused on 
+transforming Vermont’s health care system. Members include the following: 
+• Key representatives from AHS, GMCB, and the Office of the Health 
+Care Advocate. 
+• Members from Vermont’s health care sectors, including hospitals, health 
+centers, insurers, and various health care professionals. 
+• Representatives from small businesses and long-term care facilities. 
+Note: Agendas, minutes, and materials from these Committees meetings are public. These 
+committees are also required to provide an opportunity for public comment.  
+These advisory committees reflect a wide variety of health care communities (e.g., providers 
+payers, advocates, etc.) with a direct connection to the RHT Program and its initiatives. AHS 
+will also leverage existing patient-facing groups, such as the state’s Medicaid Advisory 
+Committee (run by DVHA), and the Office of the Health Care Advocate, to solicit feedback on 
+the RHT Program’s initiatives. AHS has existing offices and communication channels within the 
+state in order to communicate directly with the state’s tribal residents to solicit feedback. 
+Vermont has a successful history of working closely with tribal communities as part of previous 
+grants and will consult these lessons learned for this funding opportunity.97 
+=== PAGE 60
+- 59 - 
+AHS established a Health Care Transformation website to communicate with the broader public 
+and share updates related to the state’s work implementing the RHT Program.98 The website 
+includes a contact form, which will be kept open throughout the length of the state’s award as an 
+opportunity for the public to submit ongoing comments and questions. AHS will field and 
+respond to all submissions, funneling relevant insights and feedback through the Health Care 
+Reform Care Transformation Meeting series and committees described above, as applicable. In 
+addition, AHS will update the website with relevant reports and materials as a resource for the 
+broader public to stay informed about RHT Program implementation in the state. AHS is 
+committed to transparency and frequent communication through its internal and external 
+channels to ensure the successful implementation of the RHT Program. 
+  
+=== PAGE 61
+- 60 - 
+Appendix 
+List of Supporting Documentation 
+• Exhibit 1. Population by County, Town, Gender, and Age  
+• Exhibit 2. RHT CCBHC Data Submission 
+• Exhibit 3. Health Care Access Drive Times 
+• Exhibit 4. Primary Care Practices by RSA 
+• Exhibit 5. FY26 Approved Hospital Budgets 
+• Exhibit 6. AHS Organization Structure and Functions 
+• Exhibit 7. VT RHT Program Governance Model 
+• Exhibit 8. Vermont Provider Association Letter of Support 
+ 
+1 Hospital Sustainability and Act 167. State of Vermont GMCB. (n.d.). 
+https://gmcboard.vermont.gov/hospitalsustainability.  
+2 Oliver Wyman. (2024, August). Act 167 Community engagement: Recommendations. GMCB. 
+https://gmcboard.vermont.gov/sites/gmcb/files/documents/Act%20167%20Community%20Engagement_OW%20E
+xec%20Summary%20Report%20-%20revised%2010.21.2024.pdf.  
+3 How We Define Rural. Health Resources & Services Administration . (2025, September). 
+https://www.hrsa.gov/rural-health/about-us/what-is-rural.   
+4 Population Data. Vermont Department of Health. (2025, October 2). https://www.healthvermont.gov/stats/data -
+reporting-topic/population-data.   
+5 U.S. Census Bureau. (n.d.). Vermont profile. U.S. Department of Commerce. https://www.census.gov. 
+6 The state’s population data files are located here: https://www.healthvermont.gov/stats/data-reporting-
+topic/population-data.     
+7 III.B. Overview of the State - Vermont - 2024. U.S. Department of Health and Human Services Maternal & Child 
+Health. (n.d.). https://mchb.tvisdata.hrsa.gov/Narratives/Overview/33889f9d- 065a-4a3b-9f22-c723a1692b28. 
+8 Population Data. Vermont Department of Health. (2025, October 2). https://www.healthvermont.gov/stats/data -
+reporting-topic/population-data.   
+9 Vermont State Health Assessment 2024 . Vermont Department of Health. (2024). 
+https://www.healthvermont.gov/sites/default/files/document/2024-vermont-state-health-assessment-report.pdf.   
+10 U.S. Census Bureau. (n.d.). Vermont profile. U.S. Department of Commerce. https://www.census.gov. 
+11 Vermont State Health Assessment 2024. Vermont Department of Health. (2024). 
+https://www.healthvermont.gov/sites/default/files/document/2024-vermont-state-health-assessment-report.pdf.   
+12 Rural Health Insights for Each State & Congressional District. Stroudwater Associates. (2025, September). 
+https://www.stroudwater.com/services/rural-health-insights-for-each-state-and-congressional-district/.   
+13 U.S. Census Bureau. (n.d.). Vermont profile. U.S. Department of Commerce. https://www.census.gov. 
+14 U.S. Census Bureau. (n.d.). Vermont profile. U.S. Department of Commerce. https://www.census.gov. 
+15 U.S. Census Bureau. (n.d.). Vermont profile. U.S. Department of Commerce. https://www.census.gov. 
+16 Rural Health Insights for Each State & Congressional District. Stroudwater Associates. (2025, September). 
+https://www.stroudwater.com/services/rural-health-insights-for-each-state-and-congressional-district/.   
+17 U.S. Census Bureau. (n.d.). Vermont profile. U.S. Department of Commerce. https://www.census.gov.  
+18 Vermont’s Unemployment Rate Declined to 2.5 Percent in August. State of Vermont Department of Labor. (2025, 
+September 19). https://labor.vermont.gov/press-release/vermonts-unemployment-rate-declined-25-percent-august.  
+19 Social Vulnerability in Vermont - Socioeconomic Themes. Vermont Department of Health Agency of Human 
+Services. (n.d.). https://ahs-
+vt.maps.arcgis.com/apps/MapSeries/index.html?appid=d0266b8035cf427a94778d3883a3105a .  
+20 Rural Health Insights for Each State & Congressional District. Stroudwater Associates. (2025, September). 
+https://www.stroudwater.com/services/rural-health-insights-for-each-state-and-congressional-district/.   
+ 
+=== PAGE 62
+- 61 - 
+ 
+21 Vermont State Health Assessment 2024 . Vermont Department of Health. (2024). 
+https://www.healthvermont.gov/sites/default/files/document/2024-vermont-state-health-assessment-report.pdf.   
+22 Rural Health Insights for Each State & Congressional District. Stroudwater Associates. (2025, September). 
+https://www.stroudwater.com/services/rural-health-insights-for-each-state-and-congressional-district/.   
+23 Social Vulnerability in Vermont - Socioeconomic Themes. Vermont Department of Health Agency of Human 
+Services. (n.d.). https://ahs-
+vt.maps.arcgis.com/apps/MapSeries/index.html?appid=d0266b8035cf427a94778d3883a3105a . 
+24 Rural Health Insights for Each State & Congressional District. Stroudwater Associates. (2025, September). 
+https://www.stroudwater.com/services/rural-health-insights-for-each-state-and-congressional-district/.   
+25 Vermont State Health Assessment 2024. Vermont Department of Health. (2024). 
+https://www.healthvermont.gov/sites/default/files/document/2024-vermont-state-health-assessment-report.pdf.  
+26 Vermont Housing Needs Assessment 2025-2029. Vermont Housing Needs Assessment | Agency of Commerce 
+and Community Development. 
+27 2025 Vermont Household Health Insurance Survey. Vermont Department of Health. (2025, May). 
+https://www.healthvermont.gov/sites/default/files/document/hsi-hhis-2025-report.pdf.  
+28 Rural Health Insights for Each State & Congressional District. Stroudwater Associates. (2025, September). 
+https://www.stroudwater.com/services/rural-health-insights-for-each-state-and-congressional-district/.   
+29 Langweil, N. (2025). Vermont’s Health Care System Overview. Vermont Legislative Joint Fiscal Office. 
+https://ljfo.vermont.gov/assets/Subjects/Issues-Briefs-and-Other-Health-Care-Related-
+Information/7731f39d65/Vermonts-Health-Care-System-2019-FINAL.pdf.  
+30 Marketplace Plan Selections by Enrollment Type. KFF. (n.d.). https://www.kff.org/affordable -care-act/state-
+indicator/marketplace-plan-selections-by-enrollment-type-
+2/?currentTimeframe=0&selectedRows=%7B%22states%22%3A%7B%22vermont%22%3A%7B%7D%7D%7D&s
+ortModel=%7B%22colId%22%3A%22Location%22%2C%22sort%22%3A%22asc%22%7D .  
+31 2025 Vermont Household Health Insurance Survey. Vermont Department of Health. (2025, May). 
+https://www.healthvermont.gov/sites/default/files/document/hsi-hhis-2025-report.pdf.  
+32 Oliver Wyman. (2024, August). Act 167 Community engagement: Recommendations. GMCB. 
+https://gmcboard.vermont.gov/sites/gmcb/files/documents/Act%20167%20Community%20Engagement_OW%20E
+xec%20Summary%20Report%20-%20revised%2010.21.2024.pdf. 
+33 KFF Health News. In Vermont, Where Almost Everyone Has Insurance, Many Can’t Find or Afford Care.  
+(November 6, 2024). 
+34 A Technical Analysis Relating to Vermont’s Health Insurance Markets. DVHA-Marketplace-Report-FINAL.pdf. 
+(January 15, 2025). 
+35 Oliver Wyman. (2024, August). Act 167 Community engagement: Recommendations. GMCB. 
+https://gmcboard.vermont.gov/sites/gmcb/files/documents/Act%20167%20Community%20Engagement_OW%20E
+xec%20Summary%20Report%20-%20revised%2010.21.2024.pdf. 
+36 2025 Vermont Household Health Insurance Survey. 
+https://www.healthvermont.gov/sites/default/files/document/hsi-hhis-2025-report.pdf. (May 2025).  
+37 Rural Health Insights for Each State & Congressional District. Stroudwater Associates. (2025, September). 
+https://www.stroudwater.com/services/rural-health-insights-for-each-state-and-congressional-district/. 
+38 An overview of Vermont’s health care delivery system is available here: 
+https://ljfo.vermont.gov/assets/Subjects/Issue-Briefs-and-Other-Health-Care-Related-Information/GENERAL-
+379716-v1-Vermonts_Health_Care_System_-_2025_Update.pdf.  
+39 Langweil, N. (2025). Vermont’s Health Care System Overview. Vermont Legislative Joint Fiscal Office. 
+https://ljfo.vermont.gov/assets/Subjects/Issues-Briefs-and-Other-Health-Care-Related-
+Information/7731f39d65/Vermonts-Health-Care-System-2019-FINAL.pdf.  
+40 Achieving Healthcare Efficiency through Accountable Design (AHEAD) Model. CMS. (n.d.). 
+https://www.cms.gov/priorities/innovation/innovation-models/ahead.  
+41 AHEAD (Achieving Healthcare Efficiency through Accountable Design). State of Vermont Health Care Reform. 
+(n.d.). https://healthcarereform.vermont.gov/all-payer-health-equity-approaches-and-development-ahead.  
+ 
+=== PAGE 63
+- 62 - 
+ 
+42 Vermont Department of Disabilities, Aging and Independent Living. https://ddsd.vermont.gov/services-
+providers/providers. 
+43 Langweil, N. (2025). Vermont’s Health Care System Overview. Vermont Legislative Joint Fiscal Office. 
+https://ljfo.vermont.gov/assets/Subjects/Issues-Briefs-and-Other-Health-Care-Related-
+Information/7731f39d65/Vermonts-Health-Care-System-2019-FINAL.pdf. 
+44 Langweil, N. (2025). Vermont’s Health Care System Overview. Vermont Legislative Joint Fiscal Office. 
+https://ljfo.vermont.gov/assets/Subjects/Issues-Briefs-and-Other-Health-Care-Related-
+Information/7731f39d65/Vermonts-Health-Care-System-2019-FINAL.pdf. 
+45 The Vermont Department of Health collects information about many types of health care jobs every two years. 
+This helps Vermont see where there are enough workers and where there are shortages, so they can send extra help 
+to the places that need it most. 
+46 Rural Health Insights for Each State & Congressional District. Stroudwater Associates. (2025, September). 
+https://www.stroudwater.com/services/rural-health-insights-for-each-state-and-congressional-district/.   
+47 The state’s most recent workforce census is located here: https://www.healthvermont.gov/systems/health-
+professionals/health-care-workforce-census.  
+48 Designations are pending for: Chelsea-Corinth RSA, Windsor RSA, Ludlow RSA, Arlington RSA and Waitsfield 
+RSA. 
+49 Shortages and Designations. Vermont Department of Health. (n.d.). 
+https://www.healthvermont.gov/systems/health-professionals/shortages-and-designations.  
+50 The Vermont Primary Care Practitioner Workforce 2018 Snapshot . University Of Vermont Larner College of 
+Medicine Area Health Education Centers. (n.d.). 
+https://www.med.uvm.edu/ahec/workforceresearchdevelopment/reports.  
+51 Vermont’s Primary Care Shortage - State Level 2022. Vermont Medical Society. (n.d.). 
+https://vtmd.org/client_media/files/VMS%20Primary%20Care%20Workforce%20Shortage%2020254.pdf .  
+52 VBR Research and Education Foundation Nursing Needs Assessment 2024-2026. Vermont Talent Pipeline 
+Management | VBR Research and Education Foundation. (2024, March 5). https://htv -prod-
+media.s3.amazonaws.com/files/vtpm-healthcare-summary-needs-assessment-2024-2026-65f021da2a9dd.pdf.  
+53 Substance Use System of Care Needs Assessment: A Community Perspective Report of Findings. Vermont 
+Department of Health. (2024, December 18). https://www.healthvermont.gov/sites/default/files/document/dsu -
+community-needs-assessment-report-2024.pdf.  
+54 Heart Disease & Diabetes Surveillance Data Pages. Vermont Department of Health. (2023, February). 
+https://www.healthvermont.gov/sites/default/files/document/HSI_DataPages_DiabetesHeartDisease_2023.pdf .  
+55 Data & Results. Vermont Department of Health. (n.d.). https://www.healthvermont.gov/wellness/3 -4-50-prevent-
+chronic-disease/data-results.  
+56 Rural Health Insights for Each State & Congressional District. Stroudwater Associates. (2025, September). 
+https://www.stroudwater.com/services/rural-health-insights-for-each-state-and-congressional-district/.  
+57 Behavioral Risk Factor Surveillance System 2023 Report. Vermont Department of Health. (2023). 
+https://www.healthvermont.gov/sites/default/files/document/hsi-brfss-2023-datasummary.pdf.  
+58 Rural Health Insights for Each State & Congressional District. Stroudwater Associates. (2025, September). 
+https://www.stroudwater.com/services/rural-health-insights-for-each-state-and-congressional-district/.   
+59 Rural Health Insights for Each State & Congressional District. Stroudwater Associates. (2025, September). 
+https://www.stroudwater.com/services/rural-health-insights-for-each-state-and-congressional-district/.  
+60 Mishkin, K., Jones, E., Hubbard, K., Brigance, C., Stoneburner, A., Lucas, R., & Fontenot, J. (2023). Where You 
+Live Matters: Maternity Care Deserts and the Crisis of Access and Equity in Vermont. March of Dimes. 
+https://www.marchofdimes.org/peristats/assets/s3/reports/mcd/Maternity-Care-Report-Vermont.pdf.  
+61 Health Data. Vermont Department of Health. (n.d.). https://www.healthvermont.gov/family/plans-reports/health-
+data.  
+62 Mishkin, K., Jones, E., Hubbard, K., Brigance, C., Stoneburner, A., Lucas, R., & Fontenot, J. (2023). Where You 
+Live Matters: Maternity Care Deserts and the Crisis of Access and Equity in Vermont. March of Dimes. 
+https://www.marchofdimes.org/peristats/assets/s3/reports/mcd/Maternity-Care-Report-Vermont.pdf.  
+ 
+=== PAGE 64
+- 63 - 
+ 
+63 Vermont State Health Assessment 2024. Vermont Department of Health. (2024). 
+https://www.healthvermont.gov/sites/default/files/document/2024-vermont-state-health-assessment-report.pdf.   
+64 U.S. Department of Health and Human Services. (2025, August). Suicide . National Institute of Mental Health. 
+https://www.nimh.nih.gov/health/statistics/suicide#:~:text=The%20total%20age%2Dadjusted%20suicide,14.1%20p
+er%20100%2C000%20in%202023.  
+65 Opioid Overdose Death Rates and All Drug Overdose Death Rates per 100,000 Population (Age -Adjusted). KFF. 
+(n.d.). https://www.kff.org/mental-health/state-indicator/opioid-overdose-death-
+rates/?currentTimeframe=0&sortModel=%7B%22colId%22%3A%22Location%22%2C%22sort%22%3A%22asc%
+22%7D.  
+66 Substance Use Dashboard. Vermont Department of Health. (n.d.). https://www.healthvermont.gov/alcohol -
+drugs/substance-use-data-reports/substance-use-dashboard.  
+67 Suicide Mortality in Rural Vermonters . Vermont Department of Health. (2022, December). 
+https://www.healthvermont.gov/sites/default/files/2023-02/HSI-Injury-RuralVermonters-Suicide-Mortality-
+2022.pdf.  
+68 Rural Health Insights for Each State & Congressional District. Stroudwater Associates. (2025, September). 
+https://www.stroudwater.com/services/rural-health-insights-for-each-state-and-congressional-district/.   
+69 Rural Health Insights for Each State & Congressional District. Stroudwater Associates. (2025, September). 
+https://www.stroudwater.com/services/rural-health-insights-for-each-state-and-congressional-district/.   
+70 Opioid Overdose Dashboard. Vermont Department of Health. (n.d.). https://www.healthvermont.gov/stats/data-
+reporting-topic/opioid-overdose-dashboard.  
+71 Rural Health Insights for Each State & Congressional District. Stroudwater Associates. (2025, September). 
+https://www.stroudwater.com/services/rural-health-insights-for-each-state-and-congressional-district/.   
+72 Krupp, L. (2025, August 20). Research finds depression rates in Vermont youth have nearly doubled in recent 
+years. Vermont Public. https://www.vermontpublic.org/local-news/2025-08-20/research-depression-rates-youth-
+have-nearly-doubled.  
+73 2025 Kids Count Data Book. The Annie E. Casey Foundation. (2025, June 9). 
+https://www.aecf.org/resources/2025-kids-count-data-book.  
+74 Youth Risk Behavior Survey (YRBS). Vermont Department of Health. (n.d.). 
+https://www.healthvermont.gov/stats/population-health-surveys-data/youth-risk-behavior-survey-yrbs.  
+75 Rural Health Insights for Each State & Congressional District. Stroudwater Associates. (2025, September). 
+https://www.stroudwater.com/services/rural-health-insights-for-each-state-and-congressional-district/.   
+76 Vermont’s Health Care Reform Efforts. Vermont Agency of Human Services. (2024, December 6). 
+https://ljfo.vermont.gov/assets/Meetings/Health-Reform-Oversight-Committee/2024-12-06/Vermonts-Health-Care-
+Reform-Efforts-AHS.pdf.  
+77 Vermont State Health Assessment 2024 . Vermont Department of Health. (2024). 
+https://www.healthvermont.gov/sites/default/files/document/2024-vermont-state-health-assessment-report.pdf.  
+78 Rural Health Insights for Each State & Congressional District. Stroudwater Associates. (2025, September). 
+https://www.stroudwater.com/services/rural-health-insights-for-each-state-and-congressional-district/.   
+79 Oliver Wyman. (2024, August). Act 167 Community engagement: Recommendations. GMCB. 
+https://gmcboard.vermont.gov/sites/gmcb/files/documents/Act%20167%20Community%20Engagement_OW%20E
+xec%20Summary%20Report%20-%20revised%2010.21.2024.pdf. 
+80 Oliver Wyman. (2024, August). Act 167 Community engagement: Recommendations. GMCB. 
+https://gmcboard.vermont.gov/sites/gmcb/files/documents/Act%20167%20Community%20Engagement_OW%20E
+xec%20Summary%20Report%20-%20revised%2010.21.2024.pdf. 
+81 Financials for Vermont Hospital Report Cards. Tableau. (2025, May 12). 
+https://public.tableau.com/app/profile/state.of.vermont/viz/FinancialsforVermontHospitalReportCards_1747063395
+8500/Story?publish=yes.  
+82 Langweil, N. (2025). Vermont’s Health Care System Overview. Vermont Legislative Joint Fiscal Office. 
+https://ljfo.vermont.gov/assets/Subjects/Issues-Briefs-and-Other-Health-Care-Related-
+Information/7731f39d65/Vermonts-Health-Care-System-2019-FINAL.pdf. 
+ 
+=== PAGE 65
+- 64 - 
+ 
+83 Oliver Wyman. (2024, August). Act 167 Community engagement: Recommendations. GMCB. 
+https://gmcboard.vermont.gov/sites/gmcb/files/documents/Act%20167%20Community%20Engagement_OW%20E
+xec%20Summary%20Report%20-%20revised%2010.21.2024.pdf. 
+84 VT Digger. New numbers highlight Covid-19’s impact on inpatient mental health care and emergency 
+departments. https://vtdigger.org/2023/01/27/new-numbers-highlight-covid-19s-impact-on-inpatient-mental-health-
+care-and-emergency-departments/ (January 2023). 
+85 VT Digger. 2 of every 3 beds empty as state psychiatric hospital tackles doctor transitions, staffing costs. 
+https://vtdigger.org/2023/09/08/2-of-every-3-beds-empty-as-state-psychiatric-hospital-tackles-doctor-transitions-
+staffing-costs/ (January 2023). 
+86 Oliver Wyman. (2024, August). Act 167 Community engagement: Recommendations. GMCB. 
+https://gmcboard.vermont.gov/sites/gmcb/files/documents/Act%20167%20Community%20Engagement_OW%20E
+xec%20Summary%20Report%20-%20revised%2010.21.2024.pdf. 
+87 Oregon Health and Science University, New tool allows OHSU, partners to coordinate behavioral health bed 
+capacity across region. https://news.ohsu.edu/2023/05/01/new-tool-allows-ohsu-partners-to-coordinate-behavioral-
+health-bed-capacity-across-region (May 1, 2023). 
+88 Oregon Capacity System (OCS) Information. Oregon Health Authority. (n.d.). 
+https://www.oregon.gov/oha/ph/preparedness/partners/healthalertnetwork/pages/updates.aspx.   
+89 Jones, C., & Jones, T. H. (2024, December). A policymaking Playbook for Certificate of Need Repeal: Ranking 
+Certificate of Need Laws in All 50 States. Cicero Institute. https://ciceroinstitute.org/wp -
+content/uploads/2024/12/50-State-CON-Rankings-Report-12-5-2024.pdf.  
+90 Vermont General Assembly. H. 96. https://legislature.vermont.gov/bill/status/2026/H.96  (May 13, 2025). 
+91 State Telehealth Laws and Medicaid Program Policies. Center for Connected Health Policy. (2024). 
+https://www.cchpca.org/2024/11/Fall2024_SummaryChartFINAL.pdf.  
+92 PA State Practice Environment. American Academy of Physician Associates. (2025, July). 
+https://www.aapa.org/advocacy-central/state-advocacy/state-maps/pa-state-practice-environment/  
+93 State Practice Environment. American Association of Nurse Practitioners. (n.d.). 
+https://www.aanp.org/advocacy/state/state-practice-environment.  
+94 2025 Policy Strategies for Full Practice Authority. Cicero Institute. (2025, August 20). 
+https://ciceroinstitute.org/research/2025-policy-strategies-for-full-practice-authority/.  
+95 Variation in Dental Hygiene Scope of Practice by State. Oral Health Workforce Research Center. (2024, 
+November). https://oralhealthworkforce.org/infographics/variation-in-dental-hygiene-scope-of-practice-by-state/.   
+96 State Telehealth Laws and Medicaid Program Policies. Center for Connected Health Policy. (2024). 
+https://www.cchpca.org/2024/11/Fall2024_SummaryChartFINAL.pdf. 
+97 Vermont Department of Health. Advancing Health Equity in Vermont: Community Success Stories. ohei -health-
+equity-impact-report.pdf. (2025, June 1).  
+98 Health Care Transformation. (n.d.). https://healthcarereform.vermont.gov/health -care-transformation#.  
+=== PAGE 66
+ 
+ 
+
+=== PAGE 67
+ 
+ 
+  
+
+=== PAGE 68
+ 
+
+=== PAGE 69
+ 
+ 
+
+=== PAGE 70
+Active Site of Care Name Street Address City State ZIP Code Corresponding CCBHC 
+Entity/Institution Name
+Demonstration
+State-certified
+SAMHSA
+HRSA Rurality
+(Y/N)
+Clara Martin Center 11 North Main Street Randolph VT 05060 Clara Martin Center Y Y Y Y
+24 South Main 24 South Main Street Randolph VT 05060 Clara Martin Center Y Y Y Y
+Bradford Main Site 1483 Lower Plain Bradford VT 05033 Clara Martin Center Y Y Y Y
+Bradford Farmhouse 1740 Lower Plain Bradford VT 05033 Clara Martin Center Y Y Y Y
+78 South Main Street Rutland VT 05701
+Community Care Network, Rutland 
+Mental Health Services Y Y Y Y
+7 Court Square Rutland VT 05701
+Community Care Network, Rutland 
+Mental Health Services Y Y Y Y
+=== PAGE 71
+R
+R
+R
+R
+R
+R
+R
+R
+RR
+R
+F
+F
+FFF
+FF
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+FF
+F
+F
+FF
+F
+F
+F
+Barre
+Burlington
+Morrisville
+Randolph
+Newport
+St. Johnsbury
+St. Albans
+Middlebury
+Rutland
+Bennington
+Springfield
+White
+River Jct
+Brattleboro
+Upper Connecticut
+Valley Hospital
+Dartmouth-Hitchcock
+Medical Center
+Cottage
+Hospital
+Grace
+Cottage
+Hospital
+Northwestern
+Medical
+Center
+Central
+Vermont
+Medical Center
+Northeastern VT
+Regional
+Hospital
+Franklin
+Medical
+Center
+Cheshire
+Medical
+Center
+Littleton
+Regional
+Hospital
+Weeks
+Medical
+Center
+Valley
+Regional
+Hospital
+Alice Peck
+Day Memorial
+Hospital
+Moses
+Ludington
+Hospital
+CVPH
+Medical
+Center
+Veterans
+Affairs
+Medical Center
+Gifford
+Medical
+Center
+Mt Ascutney
+Hospital
+Springfield
+Hospital
+Southwestern VT
+Medical Center
+Brattleboro
+Memorial
+Hospital
+UVM
+Medical
+Center
+Copley
+Hospital
+Rutland
+Regional
+Medical Center
+Porter
+Medical
+Center
+North
+Country
+Hospital
+North Adams
+Campus
+of BMC
+Rural Health Clinics, Federally Qualified Health Centers & Hospitals 
+by Hospital Service Areas & Travel Time to Nearest Hospital
+Legend
+Level 1 Trauma Center
+Hospital
+VA Hospital
+Critical Access
+F Federally Qualified Health
+Centers
+R Rural Health Clinics
+Travel Time to Nearest
+Hospital
+0-15 Minutes
+15-30 Minutes
+30-45 Minutes
+45-60 Minutes
+> 60 Minutes
+Local/State Highways
+US Highways
+Interstate Highways
+Town Boundary
+Lake Champlain
+AHS.VDHGIS@Vermont.gov
+May 2016
+0 10 20 30 405
+Miles
+; May 2020
+October 2025
+
+=== PAGE 72
+ 
+URGENT CARE LOCATIONS AND DRIVE TIMES 
+Includes all locations that note “Urgent Care,” “Express Care, ” or “Walk-In Appointments” within 
+Vermont or adjacent counties. Excludes FQHC locations without walk-in option. 
+=== PAGE 73
+ 
+MENTAL HEALTH URGENT CARE (ALT TO ED) LOCATIONS - ADULTS 
+As designated in DMH’s Mental Health Response Service Guidelines 
+=== PAGE 74
+ 
+ 
+MENTAL HEALTH URGENT CARE (ALT TO ED) LOCATIONS - YOUTH 
+As designated in DMH’s Mental Health Response Service Guidelines 
+=== PAGE 75
+ 
+1 
+ 
+ 
+ 
+Map of Rational Service Areas (RSAs) that Reﬂect Primary Care-Seeking 
+Patterns 
+
+=== PAGE 76
+ 
+2 
+ 
+ 
+ 
+Notes 
+• The map shows 38 Rational Service Areas (RSAs) that reﬂect primary care-
+seeking patterns. 
+• These RSAs are used for our Health Professional Shortage Area (HPSA) 
+designation process for PC and Dental. 
+o Shading for FTEs:100,000 population – combining FTEs for PC 
+Physicians (2022), PAs (2022)  and APRNs (2023) 
+• Ratios standardize relative service or under-service across different 
+geographies  
+• Primary care locations are from Blueprint, VDH, Bi-State, etc. 
+o Icons for FQHCs (49), RHCs (10), Free & Referral Clinics (10), Veterans 
+Affairs clinics (6), and  
+o Dots for Other PC Practices owned by hospitals (50),  multi-site groups 
+(30), and independent practices (69) 
+o Multiple PC practices may be located near enough that their dots / 
+icons overlap visually. 
+=== PAGE 77
+Hospital
+Hospital
+Proposed Approved ∆%
+Hospital
+Proposed Approved ∆$ ∆%
+Hospital
+Proposed Approved ∆$ ∆%
+Hospital
+Proposed Approved ∆$ ∆%
+Brattleboro Memorial Hospital 3.0% 2.4% -0.6% 115,415,847 113,499,959 -1,915,888 -1.7% 34,698,710 32,782,822 -1,915,888 -5.5% 121,108,874 119,192,986 -1,915,888 -1.6%
+Central Vermont Medical Center 3.0% 2.9% -0.1% 301,705,016 301,641,023 -63,993 0.0% 156,320,994 156,257,001 -63,993 0.0% 317,894,060 317,830,067 -63,993 0.0%
+C opley Hospital 4.2% 3.0% -1.2% 129,637,240 128,904,314 -732,926 -0.6% 60,954,720 60,221,794 -732,926 -1.2% 127,856,556 127,856,556 0 0.0%
+Gifford Medical Center 3.0% 3.0% 0.0% 65,060,532 65,060,532 0 0.0% 29,175,160 29,175,160 0 0.0% 65,721,059 65,721,059 0 0.0%
+Grace Cottage Hospital* 0.0% 0.0% 0.0% 30,201,165 30,201,165 0 0.0% 7,777,865 7,777,865 0 0.0% 32,408,481 32,408,481 0 0.0%
+Mt. Ascutney Hospital & Health Ctr 3.0% 3.0% 0.0% 75,343,734 75,343,734 0 0.0% 25,402,822 25,402,822 0 0.0% 80,643,414 80,643,414 0 0.0%
+North Country Hospital* 0.5% 0.5% 0.0% 107,314,867 107,314,867 0 0.0% 53,124,632 53,124,632 0 0.0% 110,896,623 110,896,623 0 0.0%
+Northeastern VT Regional Hospital* 3.0% 3.0% 0.0% 131,373,037 131,373,037 0 0.0% 64,029,182 64,029,182 0 0.0% 135,466,166 135,466,166 0 0.0%
+Northwestern Medical Center 2.6% 2.6% 0.0% 130,887,475 130,887,475 0 0.0% 83,700,251 83,700,251 0 0.0% 146,596,865 146,596,865 0 0.0%
+Porter Medical Center 3.0% 2.9% -0.1% 134,850,642 134,821,993 -28,649 0.0% 68,297,072 68,268,423 -28,649 0.0% 131,967,684 131,939,035 -28,649 0.0%
+Rutland Regional Medical Center 1.5% 1.5% 0.0% 336,642,584 336,642,584 0 0.0% 165,151,422 165,151,422 0 0.0% 362,432,388 362,432,388 0 0.0%
+Southwestern VT Medical Center 5.2%
+(Orig. 2.7%) 3.0% -2.2% 218,054,234 214,723,065 -3,331,169 -1.5% 99,253,903 95,922,734 -3,331,169 -3.4% 230,491,761
+(Orig. 231.4M) 230,491,761 0 0.0%
+Springfield Hospital 3.0% 3.0% 0.0% 69,804,489 69,804,489 0 0.0% 33,449,140 33,449,140 0 0.0% 70,578,940 70,578,940 0 0.0%
+The University of Vermont Medical Center 2.4% -6.4% -8.9% 1,986,591,292 1,898,078,939 -88,512,353 -4.5% 1,157,427,345 1,068,914,992 -88,512,353 -7.6% 2,347,880,836 2,347,415,128 -465,708 0.0%
+Total VT Community Hospitals 2.6% -2.0% -4.7% 3,832,882,154 3,738,297,176 -94,584,978 -2.5% 2,038,763,217 1,944,178,240 -94,584,978 -4.6% 4,281,943,707 4,279,469,469 -2,474,238 -0.1%
+*Exempt from hearings; approved as submitted Total commercial revenue in Adaptive less Medicare Adv.
+Commercial Rate Net Patient Revenue Cap Commercial Net Patient Revenue Cap Operating Expenses
+=== PAGE 78
+July, 2025 |  1
+AHS Structure
+The Agency of Human Services has six Departments and a Central Office (Secretary’s Office). 
+Department Mission 
+Department of Aging, Disabilities, and 
+Independent Living (DAIL)
+Make Vermont the best state in which to grow old or live with a disability – with 
+dignity, respect, and independence.
+Department for Children and Families (DCF) Foster the healthy development, safety, well-being, and self-sufficiency of 
+Vermonters.
+Department of Corrections (DOC) Support safe communities by providing leadership in crime prevention, repairing 
+harm done, addressing needs of crime victims, ensuring offender accountability, 
+and managing risk posed by offenders.
+Department of Mental Health (DMH) Promote and improve the health of Vermonters.
+Department of Vermont Health Access (DVHA) Improve overall access, quality, and affordability of health care and to assist 
+Medicaid members in Vermont.
+Vermont Department of Health (VDH) Protect and promote the best health for all Vermonters.
+The Secretary’s Office includes the Medicaid Policy Unit and the Office of Health Care Reform, which encompasses the Blueprint for 
+Health program, Vermont Chronic Care Initiative, Field Services Directors, Health Data Unit, Healthcare Workforce Development Team, 
+and Care Transformation Team. 
+=== PAGE 79
+July, 2025 |  2
+AHS Structure
+Agency of Human Services
+Vermont Health 
+AccessHealth Mental HealthChildren & 
+Families
+Disabilities, Aging, 
+and Independent 
+Living
+Corrections
+Secretary’s Office
+Medicaid Policy Health Care 
+Reform
+=== PAGE 80
+AHS Secretary 
+Grant Program 
+Manager 
+(100% FTE)
+Administrative Services 
+Manager, Grants 
+(50% FTE)
+Administrative Services 
+Manager, Contracts 
+(50% FTE)
+Initiative 1: Regionalization and Innovative Care Strategies
+• Administrative Services Director (100% FTE)
+• Administrative Services Director (50% FTE)
+• Administrative Services Manager (100% FTE)
+Initiative 2: Establishing a Clinically Integrated Network of Shared Services 
+• Project Director (100% FTE)
+Initiative 3: Strengthening Primary Care
+• Project Administrator (100% FTE)
+• Project Administrator (100% FTE)
+• Clinical Specialist Support (100%)
+• Standards/QI Support (100% FTE)
+• Data/Payment Support (100% FTE)
+Initiative 4: Health Care Workforce Development  
+• Health Care Workforce Development Director (100% FTE)
+• Administrative Services Manager (100% FTE)
+Initiative 5: Price Transparency and Insurance Competition
+• Project Director (100% FTE) 
+Key:
+Current Employee =
+New Employee (Limited Service, Vacant) =
+=== PAGE 81
+ 
+1 
+ 
+Dr. Mehmet Oz 
+Administrator  
+Centers for Medicare & Medicaid Services  
+7500 Security Boulevard  
+Baltimore, MD 21244 
+ 
+Subject: Health Care Provider Associations Letter of Support – CMS Rural Health 
+Transformation Program, State of Vermont 
+ 
+Dear Administrator Oz: 
+ 
+On behalf of the undersigned health care associations, please accept this letter of support for 
+Vermont’s application to the Centers for Medicare & Medicaid Services (CMS) for the Rural 
+Health Transformation Program (CMS-RHT-26-001).  
+ 
+We represent a wide range of health care providers across Vermont and write to express our 
+strong support for Vermont’s plan to improve our state’s rural health care system and population 
+health through this funding opportunity. Due to our small and rural nature, Vermont faces a 
+variety of challenges as it relates to rural health care delivery and population health needs. 
+However, we are also well positioned to address these challenges through the RHT Program 
+opportunity. In particular, our organizations support Vermont’s RHT Program initiatives related 
+to continuing our state’s efforts to regionalize and optimally distribute health care resources; 
+achieve scale and operational efficiencies through shared clinical services; incentivize adoption of 
+telehealth, remote patient monitoring and artificial intelligence technologies; strengthen primary 
+care and the rural health care workforce; and improve health care transparency and affordability.  
+ 
+Due to our small size, our state also benefits from the ability to maintain close partnerships and 
+strong collaborations. Our organizations stand ready to work together with the state to implement 
+the initiatives in the state’s application to collectively strengthen our rural system of care.  
+ 
+Thank you for considering our letter of support for this critical funding opportunity to improve 
+care for rural Vermonters. 
+ 
+ 
+Sincerely, 
+ 
+ 
+Jessa Barnard 
+Executive Director 
+Vermont Medical Society  
+jbarnard@vtmd.org  
+ 
+ 
+ 
+ 
+
+=== PAGE 82
+ 
+2 
+ 
+ 
+Eric Covey 
+Interim Executive Director 
+VNAs of Vermont 
+eric@vnavt.org  
+ 
+ 
+ 
+  
+ 
+Tenylle Critchlow, DNP, APRN, CRNA 
+President, Vermont Association of Nurse Anesthetists 
+Tea.Critchlow@gmail.com 
+ 
+ 
+ 
+ 
+Michael Del Trecco 
+President and CEO 
+Vermont Association of Hospitals and Health Systems  
+Michael@vahhs.org 
+ 
+ 
+ 
+ 
+ 
+ 
+Eric Fritz 
+President       
+Vermont Association of Adult Day Services 
+efritz@uvadultdaycare.com   
+ 
+ 
+Patrick J. Gallivan 
+Executive Director 
+Vermont State Dental Society 
+Patrick.Gallivan@vsds.org  
+ 
+
+=== PAGE 83
+ 
+3 
+ 
+ 
+ 
+Betsy Hassan, DNP, RN, NEA-BC, NPD-BC, FAAN 
+President 
+American Nurses Association - Vermont 
+Betsy.Hassan.DNP@gmail.com  
+ 
+ 
+ 
+Mary H. Hayden 
+Executive Director 
+Vermont Association of Area Agencies on Aging 
+maryh@vermont4a.org  
+ 
+ 
+ 
+Helen Labun 
+Executive Director 
+Vermont Health Care Association 
+hlabun@vhca.net  
+ 
+ 
+Mary Kate Mohlman, PhD, MS 
+Director, Vermont Public Policy 
+Bi-State Primary Care Association 
+mmohlman@bistatepca.org  
+ 
+ 
+Susan Ridzon 
+Executive Director 
+Vermont HealthFirst  
+sr@vermonthealthfirst.org 
+ 
+
+=== PAGE 84
+ 
+4 
+ 
+ 
+ 
+ 
+ 
+Simone Rueschemeyer 
+Executive Director 
+Vermont Care Partners 
+Simone@vermontcarepartners.org  
+  
+ 
+Michelle Wade MSN/Ed, APRN, AGNP-C, ACNPC-AG, 
+FAANP  
+President  
+Vermont Nurse Practitioners Association                   
+VermontNP@gmail.com  
+ 
+ 
+ 
+ 
+Stephanie Winters 
+Executive Director 
+American Academy of Pediatrics Vermont Chapter 
+Vermont Academy of Family Physicians 
+swinters@vtmd.org  
+ 
+ 
+ 
+ 
+Hillary Wolfley, MSPH 
+Executive Director 
+Vermont Program for Quality in Health Care, Inc.  
+HillaryW@vpqhc.org  
+ 
+ 
+
+=== PAGE 85
+ 
+5 
+ 
+ 
+Emily Zolten, DNP, APRN, CNM, PMHNP-BC 
+President 
+Vermont Affiliate of the American College of Nurse 
+Midwives   
+Vermontacnm@gmail.com  
+ 
+ 

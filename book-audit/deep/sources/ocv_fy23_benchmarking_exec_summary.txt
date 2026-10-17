@@ -1,0 +1,133 @@
+   
+ 
+  1 of 4 
+ 
+ 
+OneCare March 2023 Medicare Benchmarking Report – Executive Summary 
+ 
+The updated benchmarking report includes adjustments as requested by the GMCB:  
+• Added a comparator to all Medicare ACOs combined (referred to as the National All ACO 
+Cohort throughout). Similar to other cohorts, data have been actuarially adjusted to 
+accommodate differences in population risk profiles and pricing. 
+• Incorporated 10th, 50th, and 90th percentiles for the National All ACO Cohort for each 
+metric independently. The previous iteration compared Vermont healthcare delivery 
+patterns as a system to other high-performing ACO systems demonstrating effective 
+cost control. 
+o The report is mostly structured such that low cost or utilization corresponds with 
+a high percentile score (i.e., lower is better). It’s important to note that lower is 
+not always better across all metrics and some of the color formatting has been 
+inverted accordingly.1 
+• Updated the report with CMS data through Q2 of 2022, which resulted in approximately 
+10% more attributed beneficiaries to ACOs nationally.   
+ 
+The attached reports (2019-2021) demonstrate that Vermont providers generate excellent cost 
+outcomes relative to both the National Peer ACO Comparison Cohort Average (20 ACOs 
+deemed similar to OneCare) and National All ACO Cohort (513 ACOs). 
+• Total cost of care: 
+o 8.0% lower than the National Peer ACO Comparison Cohort Average in 2021 
+(11.6% lower for 2019; 13.8% lower 2020). 
+o 1.8% lower than the National All ACO Cohort 90th percentile in 2021 (6.1% lower 
+for 2019; 7.2% lower 2020). 
+                                                           
+1Example inverse metrics where higher PMPMs and utilization may indicate strong performance: Primary Care Visits/1000; Primary Care Cost of 
+Care PBPM; Home Health Care Cost of Care PBPM; Percent of Members with an Annual Wellness Visit; Percent of Inpatient Admissions 
+Discharged to Home Health; Percent of Members with a Primary Care Visit; Percent of Inpatient Admissions Discharged to Home Health; 
+Percent of Members with a Primary Care Visit. More definitive conclusions on desired directionality requires detailed analysis of relational 
+impact. For example, concluding that an increase to Home Health utilization is desirable should incorporate evaluation of Home Health’s 
+effectiveness reducing utilization at higher cost care settings such as ED or SNF. 
+ 
+
+   
+ 
+  2 of 4 
+ 
+These data align with and validate many of the other publicly available Medicare analyses2 
+showing Vermont as one of the lowest cost states. 
+Other notable strengths include: 
+• Low inpatient facility spend across all measured years 
+o Medical: 9.5% lower than the National Peer ACO Cohort Average in 2021 and 
+13.0% lower than the National All ACO Cohort 50th percentile in 2021.  
+o Surgical: 11.1% lower than the National Peer ACO Cohort Average in 2021 and 
+12.4% lower than the National All ACO Cohort 50th percentile in 2021 
+• Low outpatient surgery spend across all measured years 
+o Facility component 21.3% lower than the National Peer ACO Cohort Average in 
+2021 and 18.2 % lower than the National All ACO Cohort 50th percentile in 2021 
+o Professional component 68.9% lower than the National Peer ACO Cohort 
+Average in 2021 and 75.4 % lower than the National All ACO Cohort 50th 
+percentile in 2021 
+• Low inpatient facility rehabilitation spend across all measured years 
+o 70.4% lower than the National Peer ACO Cohort average in 2021 
+o 31.0% lower than the National All ACO Cohort 90th percentile in 2021 
+• Low Part B pharmacy (combined outpatient and professional) spend across all measured 
+years 
+o 12.4% lower than the National Peer ACO Cohort average in 2021  
+o 2.7% lower than the National All ACO Cohort 50th percentile in 2021 
+• Low preference sensitive or outpatient sensitive preventable admissions across all 
+measured years  
+o 44% lower than the National Peer ACO Comparison Cohort Average in 2021  
+o 29.5% lower than the National All ACO Cohort 50th percentile in 2021 
+o 14 of 15 measures of individual Preference Sensitive or Outpatient Sensitive 
+Preventable Admissions per 1000 consistently demonstrated higher than 
+average performance against both the National Peer ACO Comparison Cohort 
+and National All ACO Cohort 50th percentile 
+• High percentage of inpatient admissions discharged to Home Health (higher is assumed 
+to be better for this metric) across all measured years  
+o 6.4% higher than the National Peer ACO Comparison Cohort Average in 2021 
+o 0.1% higher than the National All ACO Cohort 90th percentile (shows up as the 
+10th percentile on the report due to the inverse nature of the measure) in 2021 
+Identified unfavorable cost and utilization dynamics include: 
+• High emergency department utilization and cost across all measured years 
+                                                           
+2 Medicare Reimbursements - Dartmouth Atlas of Health Care;    Medicare Spending Per Beneficiary | KFF 
+   
+ 
+  3 of 4 
+ 
+o ED Visits/1000: 
+ 36.6% higher than the National Peer ACO Comparison Cohort Average in 
+2021 
+ 45.4% higher than National All ACO Comparison Cohort 50th percentile in 
+2021 
+o ED Cost of Care PBPM 
+ 35.1% higher than the National Peer ACO Cohort Average in 2021 
+ 49.2% higher than the National All ACO Cohort 50th percentile in 2021 
+• Low primary care utilization and rate of annual wellness visits across all measured years  
+o Percent of members with a primary care visit 
+ 13.6% lower than the National Peer ACO Cohort Average in 2021 
+ 3.4% lower than the National All ACO Cohort 10th percentile in 2021 
+(shows up as the 90th percentile on the report due to the inverse nature 
+of the measure) 
+o Primary Care Visits/1000: 
+ 18.7% lower than the National Peer ACO Comparison Cohort Average in 
+2021  
+ 36.3% lower than the National All ACO Cohort 90th percentile in 2021 
+(shows up as the 10th percentile on the report due to the inverse nature 
+of the measure) 
+o Percent of members with an annual wellness visit (AWV): 
+ 13.0% lower than the National Peer ACO Comparison Cohort Average in 
+2021 (Note a pattern of decreasing utilization of AWV from pre-pandemic 
+(3.2% lower in 2019) to during pandemic (2020-2021)) 
+ 34.4% lower than the National All ACO Cohort 90th percentile (shows up 
+as the 10th percentile on the report due to the inverse nature of the 
+measure) 
+It is worth noting that while Vermont providers continue to generate extremely low Medicare 
+costs relative to the comparison groups, the gap may be shrinking. The results in 2021, while 
+still extremely favorable, were closer to the National Peer ACO Cohort Average and the 
+National All ACO Cohort 90th percentile than in prior years. Further, access is likely a key 
+contributor to many of the dynamics highlighted on the report. Low primary care utilization and 
+high ED utilization, for example, may result from challenges accessing a primary care provider 
+combined with comparatively easy access to an emergency department. Finally, post-acute care 
+dynamics are mixed. Inpatient rehabilitation spend declined across the measured years, but 
+skilled nursing costs grew from 11.9% higher to 27.1% higher than the National All ACO Cohort 
+50th percentile between 2019 and 2021. Home Health expenditures grew as well, but not in a 
+way that offset the growing SNF costs. 
+As a next step, OneCare intends to outreach to other high-performing peer ACOs in areas that 
+align with our clinical priorities and/or key performance indicators to identify possible best 
+   
+ 
+  4 of 4 
+ 
+practices and their applicability to the Vermont context. Particular emphasis in this outreach 
+will be placed on pandemic-recovery efforts that may have stabilized or increased access to 
+optimize the lowest cost, appropriate site of care (e.g. doctor on call, public education 
+campaigns on use of primary and urgent care for non-urgent conditions).  

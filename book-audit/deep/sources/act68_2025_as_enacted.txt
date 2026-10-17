@@ -1,0 +1,1116 @@
+=== PAGE 1
+No. 68 Page 1 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+No. 68.  An act relating to health care payment and delivery system 
+reform. 
+(S.126) 
+It is hereby enacted by the General Assembly of the State of Vermont:  
+* * * Purpose of the Act; Goals * * * 
+Sec. 1.  PURPOSE; GOALS 
+The purpose of this act is to achieve transformation of and structural 
+changes to Vermont’s health care system.  In enacting this legislation, the 
+General Assembly intends to advance the following goals: 
+(1)  improvements in health outcomes, population health, quality of care, 
+regional access to services, and reducing disparities in access resulting from 
+demographic factors or health status; 
+(2)  an integrated system of care, with robust care coordination and 
+increased investments in primary care, home health care, and long-term care; 
+(3)  stabilizing health care providers, controlling the costs of commercial 
+health insurance, and managing hospital costs based on the total cost of care, 
+beginning with reference-based pricing and continuing on to global hospital 
+budgets;  
+(4)  evaluating progress in achieving system transformation and 
+structural changes by creating and applying standardized accountability 
+metrics; and 
+=== PAGE 2
+No. 68 Page 2 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(5)  establishing a health care system that will attract and retain high-
+quality health care professionals to practice in Vermont and that supports, 
+develops, and preserves the dignity of Vermont’s health care workforce. 
+* * * Hospital Budgets and Payment Reform * * * 
+Sec. 2.  18 V.S.A. § 9375 is amended to read: 
+§ 9375.  DUTIES 
+(a)  The Board shall execute its duties consistent with the principles 
+expressed in section 9371 of this title. 
+(b)  The Board shall have the following duties: 
+(1)  Oversee the development and implementation, and evaluate the 
+effectiveness, of health care payment and delivery system reforms designed to 
+control the rate of growth in health care costs; promote seamless care, 
+administration, and service delivery; and maintain health care quality in 
+Vermont, including ensuring that the payment reform pilot projects set forth in 
+this chapter are consistent with such reforms. 
+(A)  Implement by rule, pursuant to 3 V.S.A. chapter 25, 
+methodologies for achieving payment reform and containing costs that may 
+include the participation of Medicare and Medicaid, which may include the 
+creation of health care professional cost-containment targets, reference-based 
+pricing, global payments, bundled payments, global budgets, risk-adjusted 
+capitated payments, or other uniform payment methods and amounts for 
+=== PAGE 3
+No. 68 Page 3 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+integrated delivery systems, health care professionals, or other provider 
+arrangements. 
+* * * 
+(5)  Set rates for health care professionals pursuant to section 9376 of 
+this title, to be implemented over time beginning with reference-based pricing 
+as soon as practicable, but not later than hospital fiscal year 2027, and make 
+adjustments to the rules on reimbursement methodologies as needed. 
+(6)  Approve, modify, or disapprove requests for health insurance rates 
+pursuant to 8 V.S.A. § 4062, taking into consideration the requirements in the 
+underlying statutes,; changes in health care delivery,; changes in payment 
+methods and amounts, including implementation of reference-based pricing; 
+protecting insurer solvency,; and other issues at the discretion of the Board. 
+(7)  Review and establish hospital budgets pursuant to chapter 221, 
+subchapter 7 of this title, including establishing standards for global hospital 
+budgets that reflect the implementation of reference-based pricing and the total 
+cost of care targets determined in collaboration with federal partners and other 
+stakeholders or as set by the Statewide Health Care Delivery Plan developed 
+pursuant to section 9403 of this title, once established.  Beginning not later 
+than hospital fiscal year 2028, to the extent that resources are available, the 
+Board shall establish global hospital budgets for one or more Vermont 
+hospitals that are not critical access hospitals.  By hospital fiscal year 2030, to 
+=== PAGE 4
+No. 68 Page 4 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+the extent that resources are available, the Board shall establish global hospital 
+budgets for all Vermont hospitals.   
+* * * 
+Sec. 3.  18 V.S.A. § 9376 is amended to read: 
+§ 9376.  PAYMENT AMOUNTS; METHODS 
+(a)  Intent.  It is the intent of the General Assembly to ensure payments to 
+health care professionals that are consistent with efficiency, economy, and 
+quality of care and will permit them to provide, on a solvent basis, effective 
+and efficient health services that are in the public interest.  It is also the intent 
+of the General Assembly to eliminate the shift of costs between the payers of 
+health services to ensure that the amount paid to health care professionals is 
+sufficient to enlist enough providers to ensure that health services are available 
+to all Vermonters and are distributed equitably. 
+(b)  Rate-setting. 
+(1)  The Board shall set reasonable rates for health care professionals, 
+health care provider bargaining groups created pursuant to section 9409 of this 
+title, manufacturers of prescribed products, medical supply companies, and 
+other companies providing health services or health supplies based on 
+methodologies pursuant to section 9375 of this title, in order to have a 
+consistent reimbursement amount accepted by these persons.  In its discretion, 
+the Board may implement rate-setting for different groups of health care 
+professionals over time and need not set rates for all types of health care 
+=== PAGE 5
+No. 68 Page 5 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+professionals.  In establishing rates, the Board may consider legitimate 
+differences in costs among health care professionals, such as the cost of 
+providing a specific necessary service or services that may not be available 
+elsewhere in the State, and the need for health care professionals in particular 
+areas of the State, particularly in underserved geographic or practice shortage 
+areas. 
+(2)  Nothing in this subsection shall be construed to: 
+(A)  limit the ability of a health care professional to accept less than 
+the rate established in subdivision (1) of this subsection (b) from a patient 
+without health insurance or other coverage for the service or services received; 
+or 
+(B)  reduce or limit the covered services offered by Medicare or 
+Medicaid. 
+(c)  Methodologies.  The Board shall approve payment methodologies that 
+encourage cost-containment; provision of high-quality, evidence-based health 
+services in an integrated setting; patient self-management; access to primary 
+care health services for underserved individuals, populations, and areas; and 
+healthy lifestyles.  Such methodologies shall be consistent with payment 
+reform and with evidence-based practices, and may include fee-for-service 
+payments if the Board determines such payments to be appropriate. 
+(d)  Supervision.  To the extent required to avoid federal antitrust violations 
+and in furtherance of the policy identified in subsection (a) of this section, the 
+=== PAGE 6
+No. 68 Page 6 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+Board shall facilitate and supervise the participation of health care 
+professionals and health care provider bargaining groups in the process 
+described in subsection (b) of this section.  
+(e)  Reference-based pricing. 
+(1)(A)  The Board shall establish reference-based prices that represent 
+the maximum amounts that hospitals shall accept as payment in full for items 
+provided and services delivered in Vermont.  The Board may also implement 
+reference-based pricing for services delivered outside a hospital by setting the 
+minimum amounts that shall be paid for items provided and services delivered 
+by nonhospital-based health care professionals.  The Board shall consult with 
+health insurers, hospitals, other health care professionals as applicable, the 
+Office of the Health Care Advocate, and the Agency of Human Services in 
+developing reference-based prices pursuant to this subsection (e), including on 
+ways to achieve all-payer alignment on the design and implementation of 
+reference-based pricing. 
+(B)  The Board shall implement reference-based pricing in a manner 
+that does not allow health care professionals to charge or collect from patients 
+or health insurers any amount in excess of the reference-based amount 
+established by the Board.  
+(2)(A)  Reference-based prices established pursuant to this subsection (e) 
+shall be based on a percentage of the Medicare reimbursement for the same or 
+a similar item or service or on another benchmark, as appropriate, provided 
+=== PAGE 7
+No. 68 Page 7 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+that if the Board establishes prices that are referenced to Medicare, the Board 
+may opt to update the prices in the future based on a reasonable rate of growth 
+that is separate from Medicare rates, such as the Medicare Economic Index 
+measure of inflation, in order to provide predictability and consistency for 
+health care professionals and payers and to protect against federal funding 
+pressures that may impact Medicare rates in an unpredictable manner.  The 
+Board may also reference to, and update based on, other payment or pricing 
+systems where appropriate. 
+(B)  In establishing reference-based prices for a hospital pursuant to 
+this subsection (e), the Board shall consider the composition of the 
+communities served by the hospital, including the health of the population, 
+demographic characteristics, acuity, payer mix, labor costs, social risk factors, 
+and other factors that may affect the costs of providing care in the hospital 
+service area, as well as the hospital’s role in Vermont’s health care system. 
+(3)(A)  The Board shall begin implementing reference-based pricing as 
+soon as practicable but not later than hospital fiscal year 2027 by establishing 
+the maximum amounts that Vermont hospitals shall accept as payment in full 
+for items provided and services delivered.  After initial implementation, the 
+Board shall review the reference-based prices for each hospital annually as part 
+of the hospital budget review process set forth in chapter 221, subchapter 7 of 
+this title. 
+=== PAGE 8
+No. 68 Page 8 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(B)  The Board, in collaboration with the Department of Financial 
+Regulation, shall monitor the implementation of reference-based pricing to 
+ensure that any decreases in amounts paid to hospitals also result in decreases 
+in health insurance premiums.  The Board shall post its findings regarding the 
+alignment between price decreases and premium decreases annually on its 
+website. 
+(4)  The Board shall identify factors that would necessitate terminating 
+or modifying the use of reference-based pricing in one or more hospitals, such 
+as a measurable reduction in access to or quality of care.   
+(5)  The Green Mountain Care Board, in consultation with the Agency of 
+Human Services and the Vermont Steering Committee for Comprehensive 
+Primary Health Care established pursuant to section 9403b of this title, may 
+implement reference-based pricing for services delivered outside a hospital, 
+such as primary care services, and may increase or decrease the percentage of 
+Medicare or another benchmark as appropriate, first to enhance access to 
+primary care and later for alignment with the Statewide Health Care Delivery 
+Strategic Plan established pursuant to section 9403 of this title, once 
+established.  The Board may consider establishing reference-based pricing for 
+services delivered outside a hospital by setting minimum amounts that shall be 
+paid for the purpose of prioritizing access to high-quality health care services 
+in settings that are appropriate to patients’ needs in order to contain costs and 
+improve patient outcomes. 
+=== PAGE 9
+No. 68 Page 9 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(6)  The Board’s authority to establish reference-based prices pursuant to 
+this subsection shall not include the authority to set amounts applicable to 
+items provided or services delivered to patients who are enrolled in Medicare 
+or Medicaid. 
+Sec. 3a.  18 V.S.A. § 9451 is amended to read:  
+§ 9451.  DEFINITIONS 
+As used in this subchapter: 
+(1)  “Hospital” means a hospital licensed under chapter 43 of this title, 
+except a hospital that is conducted, maintained, or operated by the State of 
+Vermont. 
+(2)  “Hospital network” means a system comprising two or more 
+affiliated hospitals, and may include other health care professionals and 
+facilities, that derives 50 percent or more of its operating revenue, at the 
+consolidated network level, from Vermont hospitals and in which the affiliated 
+hospitals deliver health care services in a coordinated manner using an 
+integrated financial and governance structure. 
+(3)  “Volume” means the number of inpatient days of care or admissions 
+and the number of all inpatient and outpatient ancillary services rendered to 
+patients by a hospital.  
+=== PAGE 10
+No. 68 Page 10 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+Sec. 4.  18 V.S.A. § 9454 is amended to read: 
+§ 9454.  HOSPITALS; DUTIES 
+* * * 
+(b)  Hospitals shall submit information as directed by the Board in order to 
+maximize hospital budget data standardization and allow the Board to make 
+direct comparisons of hospital expenses across the health care system.  
+(c)  Hospitals shall adopt a fiscal year that shall begin on October 1.  
+Sec. 5.  18 V.S.A. § 9456 is amended to read: 
+§ 9456.  BUDGET REVIEW 
+(a)  The Board shall conduct reviews of each hospital’s proposed budget 
+based on the information provided pursuant to this subchapter and in 
+accordance with a schedule established by the Board. 
+(b)  In conjunction with budget reviews, the Board shall: 
+(1)  review utilization information; 
+(2)  consider the Statewide Health Care Delivery Strategic Plan 
+developed pursuant to section 9403 of this title, once established, including the 
+total cost of care targets, and consult with the Agency of Human Services to 
+ensure compliance with federal requirements regarding Medicare and 
+Medicaid; 
+(3)  consider the Health Resource Allocation Plan identifying Vermont’s 
+critical health needs, goods, services, and resources developed pursuant to 
+section 9405 of this title; 
+=== PAGE 11
+No. 68 Page 11 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(3)(4)  consider the expenditure analysis for the previous year and the 
+proposed expenditure analysis for the year under review; 
+(4)(5)  consider any reports from professional review organizations; 
+(6)  for a hospital that operates within a hospital network, review the 
+hospital network’s financial operations as they relate to the budget of the 
+individual hospital; 
+(5)(7)  solicit public comment on all aspects of hospital costs and use and 
+on the budgets proposed by individual hospitals; 
+(6)(8)  meet with hospitals to review and discuss hospital budgets for the 
+forthcoming fiscal year; 
+(7)(9)  give public notice of the meetings with hospitals, and invite the 
+public to attend and to comment on the proposed budgets; 
+(8)(10)  consider the extent to which costs incurred by the hospital in 
+connection with services provided to Medicaid beneficiaries are being charged 
+to non-Medicaid health benefit plans and other non-Medicaid payers; 
+(9)(11)  require each hospital to file an analysis that reflects a reduction 
+in net revenue needs from non-Medicaid payers equal to any anticipated 
+increase in Medicaid, Medicare, or another public health care program 
+reimbursements, and to any reduction in bad debt or charity care due to an 
+increase in the number of insured individuals; 
+=== PAGE 12
+No. 68 Page 12 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(10)(12)  require each hospital to provide information on administrative 
+costs, as defined by the Board, including specific information on the amounts 
+spent on marketing and advertising costs;  
+(11)(13)  require each hospital to create or maintain connectivity to the 
+State’s Health Information Exchange Network in accordance with the criteria 
+established by the Vermont Information Technology Leaders, Inc., pursuant to 
+subsection 9352(i) of this title, provided that the Board shall not require a 
+hospital to create a level of connectivity that the State’s Exchange is unable to 
+support; 
+(12)(14)  review the hospital’s investments in workforce development 
+initiatives, including nursing workforce pipeline collaborations with nursing 
+schools and compensation and other support for nurse preceptors; and 
+(13)(15)  consider the salaries for the hospital’s executive and clinical 
+leadership, including variable payments and incentive plans, and the hospital’s 
+salary spread, including a comparison of median salaries to the medians of 
+northern New England states and a comparison of the base salaries and total 
+compensation for the hospital’s executive and clinical leadership with those of 
+the hospital’s lowest-paid employees who deliver health care services directly 
+to hospital patients; and 
+(16)  consider the number of employees of the hospital whose duties are 
+primarily administrative in nature, as defined by the Board, compared with the 
+=== PAGE 13
+No. 68 Page 13 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+number of employees whose duties primarily involve delivering health care 
+services directly to hospital patients. 
+(c)  Individual hospital budgets established under this section shall: 
+(1)  be consistent, to the extent practicable, with the Statewide Health 
+Care Delivery Strategic Plan, once established, including the total cost of care 
+targets, and with the Health Resource Allocation Plan; 
+(2)  reflect the reference-based prices established by the Board pursuant 
+to section 9376 of this title; 
+(3)  take into consideration national, regional, or in-state peer group 
+norms, according to indicators, ratios, and statistics established by the Board; 
+(3)(4)  promote efficient and economic operation of the hospital and, if a 
+hospital is affiliated with a hospital network, ensure that hospital spending on 
+the hospital network’s operations is consistent with the principles for health 
+care reform expressed in section 9371 of this title and with the Statewide 
+Health Care Delivery Strategic Plan, once established; 
+(4)(5)  reflect budget performances for prior years; 
+(5)(6)  include a finding that the analysis provided in subdivision (b)(9) 
+(b)(11) of this section is a reasonable methodology for reflecting a reduction in 
+net revenues for non-Medicaid payers; and 
+(6)(7)  demonstrate that they support equal access to appropriate mental 
+health care that meets standards of quality, access, and affordability equivalent 
+=== PAGE 14
+No. 68 Page 14 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+to other components of health care as part of an integrated, holistic system of 
+care; and 
+(8)  include meaningful variable payments and incentive plans for 
+hospitals that are consistent with this section and with the principles for health 
+care reform expressed in section 9371 of this title. 
+(d)(1)(A)  Annually, the Board shall establish a budget for each hospital on 
+or before September 15, followed by a written decision by October 1.  Each 
+hospital shall operate within the budget established under this section. 
+(B)(i)  Beginning not later than hospital fiscal year 2028, to the extent 
+that resources are available, the Board shall establish global hospital budgets 
+for one or more Vermont hospitals that are not critical access hospitals.  Not 
+later than hospital fiscal year 2030, to the extent that resources are available, 
+the Board shall establish global hospital budgets for all Vermont hospitals.   
+(ii)  Global hospital budgets established pursuant to this section 
+shall include Medicare to the extent permitted under federal law but shall not 
+include Medicaid. 
+* * * 
+(e)(1)  The Board, in consultation with the Vermont Program for Quality in 
+Health Care, shall utilize mechanisms to measure hospital costs, quality, and 
+access and alignment with the Statewide Health Care Delivery Strategic Plan, 
+once established.   
+=== PAGE 15
+No. 68 Page 15 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(2)(A)  Except as provided in subdivision (D) of this subdivision (e)(2), a 
+hospital that proposes to reduce or eliminate any service in order to comply 
+with a budget established under this section shall provide a notice of intent to 
+the Board, the Agency of Human Services, the Office of the Health Care 
+Advocate, and the members of the General Assembly who represent the 
+hospital service area not less than 45 days prior to the proposed reduction or 
+elimination.  
+(B)  The notice shall explain the rationale for the proposed reduction 
+or elimination and describe how it is consistent with the Statewide Health Care 
+Delivery Strategic Plan, once established, and the hospital’s most recent 
+community health needs assessment conducted pursuant to section 9405a of 
+this title and 26 U.S.C. § 501(r)(3).   
+(C)  The Board may evaluate the proposed reduction or elimination 
+for consistency with the Statewide Health Care Delivery Strategic Plan, once 
+established and the community health needs assessment, and may modify the 
+hospital’s budget or take such additional actions as the Board deems 
+appropriate to preserve access to necessary services.  
+(D)  A service that has been identified for reduction or elimination in 
+connection with the transformation efforts undertaken by the Board and the 
+Agency of Human Services pursuant to 2022 Acts and Resolves No. 167 does 
+not need to comply with subdivisions (A)–(C) of this subdivision (e)(2). 
+=== PAGE 16
+No. 68 Page 16 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(3)  The Board, in collaboration with the Department of Financial 
+Regulation, shall monitor the implementation of any authorized decrease in 
+hospital services to determine its benefits to Vermonters or to Vermont’s 
+health care system, or both.  
+(4)  The Board may establish a process to define, on an annual basis, 
+criteria for hospitals to meet, such as utilization and inflation benchmarks.  
+(5)  The Board may waive one or more of the review processes listed in 
+subsection (b) of this section. 
+* * * 
+Sec. 6.  18 V.S.A. § 9458 is added to read: 
+§ 9458.  HOSPITAL NETWORKS; STRUCTURE; FINANCIAL  
+              OPERATIONS 
+(a)  The Board may review and evaluate the structure of a hospital network 
+to determine: 
+(1)  whether any network operations should be organized and operated 
+out of a hospital instead of at the network; and 
+(2)  whether the existence and operation of a network provides value to 
+Vermonters, is in the public interest, and is consistent with the principles for 
+health care reform expressed in section 9371 of this title and with the 
+Statewide Health Care Delivery Strategic Plan, once established. 
+=== PAGE 17
+No. 68 Page 17 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(b)  In order to protect the public interest, the Board may, on its own 
+initiative, investigate the financial operations of a hospital network, including 
+compensation of the network’s employees and executive leadership.   
+(c)  The Board may recommend any action it deems necessary to correct 
+any aspect of the structure of a hospital network or its financial operations that 
+are inconsistent with the principles for health care reform expressed in section 
+9371 of this title or with the Statewide Health Care Delivery Strategic Plan, 
+once established. 
+* * * Health Care Contracts * * *  
+Sec. 7.  18 V.S.A. § 9418c is amended to read: 
+§ 9418c.  FAIR CONTRACT STANDARDS 
+* * * 
+(e)(1)  The requirements of subdivision (b)(5) of this section do not prohibit 
+a contracting entity from requiring a reasonable confidentiality agreement 
+between the provider and the contracting entity regarding the terms of the 
+proposed health care contract.   
+(2)  Upon request, a contracting entity or provider shall provide an 
+unredacted copy of an executed or proposed health care contract to the 
+Department of Financial Regulation or the Green Mountain Care Board, or 
+both. 
+=== PAGE 18
+No. 68 Page 18 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+* * * Statewide Health Care Delivery Strategic Plan; Health Care Delivery 
+Advisory Committee; Vermont Steering Committee for Comprehensive 
+Primary Health Care * * * 
+Sec. 8.  18 V.S.A. § 9403 is added to read: 
+§ 9403.  STATEWIDE HEALTH CARE DELIVERY STRATEGIC PLAN 
+(a)  The Agency of Human Services, in collaboration with the Green 
+Mountain Care Board, the Department of Financial Regulation, the Vermont 
+Program for Quality in Health Care, the Office of the Health Care Advocate, 
+the Health Care Delivery Advisory Committee established in section 9403a of 
+this title, the Vermont Steering Committee for Comprehensive Primary Health 
+Care established pursuant to section 9403b of this title, and other interested 
+stakeholders, shall lead development of an integrated Statewide Health Care 
+Delivery Strategic Plan as set forth in this section.  
+(b)  The Plan shall: 
+(1)  Align with the principles for health care reform expressed in section 
+9371 of this title.   
+(2)  Identify existing services and promote universal access across 
+Vermont to high-quality, cost-effective acute care; primary care, including 
+primary mental health services; chronic care; long-term care; substance use 
+disorder treatment services; emergency medical services; nonemergency 
+medical services; nonmedical services and supports; and hospital-based, 
+independent, and community-based services. 
+=== PAGE 19
+No. 68 Page 19 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(3)  Define a shared vision and shared goals and objectives for improving 
+access to and the quality, efficiency, and affordability of health care services in 
+Vermont and for reducing disparities in access resulting from demographic 
+factors or health status, including benchmarks for evaluating progress.  
+(4)  Identify the resources, infrastructure, and support needed to achieve 
+established targets, which will ensure the feasibility and sustainability of 
+implementation. 
+(5)  Provide a phased implementation timeline with milestones and 
+regular reporting to ensure adaptability as needs evolve. 
+(6)  Promote accountability and continuous quality improvement across 
+Vermont’s health care system through the use of data, scientifically grounded 
+methods, and high-quality performance metrics to evaluate effectiveness and 
+inform decision making.  
+(7)  Provide annual targets for the total cost of care across Vermont’s 
+health care system.  Using these total cost of care targets, the Plan shall 
+identify appropriate allocations of health care resources and services across the 
+State that balance quality, access, and cost containment.  The Plan shall also 
+establish targets for the percentages of overall health care spending that should 
+reflect spending on primary care services, including mental health services, 
+and on preventive care services, which targets shall be aligned with the total 
+cost of care targets. 
+=== PAGE 20
+No. 68 Page 20 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(8)  Build on data and information from: 
+(A)  the transformation planning resulting from 2022 Acts and 
+Resolves No. 167, Secs. 1 and 2; 
+(B)  the expenditure analysis and health care spending estimate 
+developed pursuant to section 9383 of this title; 
+(C)  the State Health Improvement Plan adopted pursuant to 
+subsection 9405(a) of this title; 
+(D)  the Health Resource Allocation Plan published by the Green 
+Mountain Care Board in accordance with subsection 9405(b) of this title;  
+(E)  hospitals’ community health needs assessments and strategic 
+planning conducted in accordance with section 9405a of this title; 
+(F)  hospital and ambulatory surgical center quality information 
+published by the Department of Health pursuant to section 9405b of this title; 
+(G)  the statewide quality assurance program maintained by the 
+Vermont Program for Quality in Health Care pursuant to section 9416 of this 
+title; 
+(H)  the 2020 report determining the proportion of health care 
+spending in Vermont that is allocated to primary care, submitted to the General 
+Assembly by the Green Mountain Care Board and the Department of Vermont 
+Health Access in accordance with 2019 Acts and Resolves No. 17, Sec. 2; 
+(I)  the 2024 report on Blueprint for Health payments to patient-
+centered medical homes, submitted to the General Assembly by the Agency of 
+=== PAGE 21
+No. 68 Page 21 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+Human Services in accordance with 2023 Acts and Resolves No. 51, Sec. 5; 
+and 
+(J)  such additional sources of data and information as the Agency and 
+other stakeholders deem appropriate. 
+(9)  Identify: 
+(A)  opportunities to improve the quality of care across the health care 
+delivery system, including exemplars of high-quality care to stimulate best 
+practice dissemination; 
+(B)  gaps in access to care, as well as unnecessary duplication of 
+services, including circumstances in which service closures or consolidations 
+may result in improvements in quality, access, and affordability; 
+(C)  opportunities to reduce administrative burdens;  
+(D)  federal, State, and other barriers to achieving the Plan’s goals 
+and, to the extent feasible, how those barriers can be removed or mitigated; 
+(E)  priorities in steps for achieving the goals of the Plan; 
+(F)  barriers to access to appropriate mental health and substance use 
+disorder services that meet standards of quality, access, and affordability 
+equivalent to other components of health care; 
+(G)  opportunities to integrate health care services for individuals in 
+the custody of the Department of Corrections as part of Vermont’s health care 
+delivery system; 
+=== PAGE 22
+No. 68 Page 22 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(H)  enhancements in quality reporting and data collection to provide 
+a more current and accurate picture of the quality of health care delivery across 
+Vermont; and 
+(I)  systems to ensure that reported data is shared with and is 
+accessible to the health care professionals who are providing care, enabling 
+them to track performance and inform improvement. 
+(c)  State agencies shall cooperate with all reasonable requests from the 
+Agency of Human Services for data and other information and assistance 
+needed for the Agency to prepare and update the Plan pursuant to this section. 
+(d)(1)  In 2025 and 2026, the Agency of Human Services shall engage with 
+stakeholders; collect and analyze data; gather information obtained through the 
+processes established in 2022 Acts and Resolves No. 167, Secs. 1 and 2; and 
+solicit input from the public. 
+(2)  In 2027, the Agency shall prepare the Plan. 
+(3)  On or before January 15, 2028, the Agency shall provide the Plan to 
+the House Committees on Health Care and on Human Services and the Senate 
+Committee on Health and Welfare. 
+(4)  The Agency shall prepare an updated Plan every three years and 
+shall provide it to the General Assembly on or before December 1 of every 
+third year, beginning on December 1, 2030. 
+=== PAGE 23
+No. 68 Page 23 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+Sec. 9.  18 V.S.A. § 9403a is added to read: 
+§ 9403a.  HEALTH CARE DELIVERY ADVISORY COMMITTEE      
+(a)  There is created the Health Care Delivery Advisory Committee to: 
+(1)  establish health care affordability benchmarks; 
+(2)  evaluate and monitor the performance of Vermont’s health care 
+system and its impacts on population health outcomes; 
+(3)  collaborate with the Agency of Human Services and other interested 
+stakeholders in the development and maintenance of the Statewide Health Care 
+Delivery Strategic Plan developed pursuant to section 9403 of this title;  
+(4)  consider the recommendations of the Vermont Steering Committee 
+for Comprehensive Primary Health Care established pursuant to section 9403b 
+of this title; 
+(5)  advise the Green Mountain Care Board on the design and 
+implementation of an ongoing evaluation process to continuously monitor 
+current performance in the health care delivery system; and 
+(6)  provide coordinated and consensus recommendations to the General 
+Assembly on issues related to health care delivery, including primary care, and 
+population health. 
+(b)(1)  The Advisory Committee shall be composed of the following 18 
+members: 
+(A)  the Secretary of Human Services or designee; 
+(B)  the Chair of the Green Mountain Care Board or designee; 
+=== PAGE 24
+No. 68 Page 24 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(C)  the Chief Health Care Advocate from the Office of the Health 
+Care Advocate or designee; 
+(D)  two members of the Vermont Steering Committee for 
+Comprehensive Primary Health Care, selected by the Steering Committee; 
+(E)  one representative of commercial health insurers offering major 
+medical health insurance plans in Vermont, selected by the Commissioner of 
+Financial Regulation; 
+(F)  two representatives of Vermont hospitals, selected by the 
+Vermont Association of Hospitals and Health Systems, who shall represent 
+hospitals that are located in different regions of the State and that face different 
+levels of financial stability; 
+(G)  one representative of Vermont’s federally qualified health 
+centers, selected by Bi-State Primary Care Association; 
+(H)  one representative of physicians, selected by the Vermont 
+Medical Society; 
+(I)  one representative of independent physician practices, selected by 
+HealthFirst; 
+(J)  one representative of advanced practice registered nurses, selected 
+by the Vermont Nurse Practitioners Association; 
+(K)  one representative of Vermont’s designated and specialized 
+service agencies, selected by Vermont Care Partners; 
+=== PAGE 25
+No. 68 Page 25 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(L)  one preferred provider from outside the designated and 
+specialized service agency system, selected by the Commissioner of Health; 
+(M)  one Vermont-licensed mental health professional from an 
+independent practice, selected by the Commissioner of Mental Health; 
+(N)  one representative of Vermont’s home health agencies, selected 
+jointly by the VNAs of Vermont and Bayada Home Health Care; and 
+(O)  one representative of long-term care facilities, selected by the 
+Vermont Health Care Association; and 
+(P)  one representative of small businesses, selected by the Vermont 
+Chamber of Commerce. 
+(2)  The Advisory Committee shall consult with and solicit input from 
+the Health Equity Advisory Commission; physician assistants, physical 
+therapists, and other health care professionals who are not members of the 
+Advisory Committee; Vermont’s free clinic programs; the Vermont Program 
+for Quality in Health Care; and other relevant stakeholders. 
+(3)  The Secretary of Human Services or designee shall be the Chair of 
+the Advisory Committee. 
+(4)  The Agency of Human Services shall provide administrative and 
+technical assistance to the Advisory Committee. 
+(c)  Members of the Advisory Committee shall not receive per diem 
+compensation or reimbursement of expenses for their participation on the 
+Advisory Committee. 
+=== PAGE 26
+No. 68 Page 26 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+Sec. 9a.  18 V.S.A. § 9403b is added to read:  
+§ 9403b.  VERMONT STEERING COMMITTEE FOR COMPREHENSIVE  
+                PRIMARY HEALTH CARE  
+(a)  There is created the Vermont Steering Committee for Comprehensive 
+Primary Health Care to inform the work of State government, including the 
+Blueprint for Health and the Office of Health Care Reform in the Agency of 
+Human Services, as it relates to access to, delivery of, and payment for primary 
+care services in Vermont. 
+(b)  The Steering Committee shall be composed of the following members: 
+(1)  the Chair of the Department of Family Medicine at the University of 
+Vermont Larner College of Medicine or designee; 
+(2)  the Chair of the Department of Pediatrics at the University of 
+Vermont Larner College of Medicine or designee; 
+(3)  the Associate Dean for Primary Care at the University of Vermont 
+Larner College of Medicine or designee; 
+(4)  the Executive Director of the Vermont Child Health Improvement 
+Program at the University of Vermont Larner College of Medicine or designee; 
+(5)  the President of the Vermont Academy of Family Physicians or 
+designee; 
+(6)  the President of the American Academy of Pediatrics, Vermont 
+Chapter, or designee; 
+=== PAGE 27
+No. 68 Page 27 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(7)  a member of the Green Mountain Care Board’s Primary Care 
+Advisory Committee, selected by the Green Mountain Care Board; 
+(8)  the Executive Director of the Blueprint for Health; 
+(9)  a primary care clinician who practices at an independent practice, 
+selected by HealthFirst; 
+(10)  a primary care clinician who practices at a federally qualified health 
+center, selected by Bi-State Primary Care Association; 
+(11)  a primary care physician, selected by the Vermont Medical Society; 
+(12)  a primary care physician assistant, selected by the Physician 
+Assistant Academy of Vermont; 
+(13)  a primary care nurse practitioner, selected by the Vermont Nurse 
+Practitioners Association; 
+(14)  a mental health provider who practices at a community mental 
+health center designated pursuant to section 8907 of this title, selected by 
+Vermont Care Partners; 
+(15)  a licensed independent clinical social worker, selected by the 
+National Association of Social Workers, Vermont Chapter; and 
+(16)  a psychologist, selected by the Vermont Psychological Association. 
+(c)  The Steering Committee shall: 
+(1)  engage in an ongoing assessment of comprehensive primary care 
+needs in Vermont; 
+=== PAGE 28
+No. 68 Page 28 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(2)  provide recommendations for recruiting and retaining high-quality 
+primary care providers, including on ways to encourage new talent to join 
+Vermont’s primary care workforce;  
+(3)  develop proposals for sustainable payment models for primary care; 
+(4)  identify methods for enhancing Vermonters’ access to primary care; 
+(5)  recommend opportunities to reduce administrative burdens on 
+primary care providers; 
+(6)  recommend mechanisms for measuring the quality of primary care 
+services delivered in Vermont;  
+(7)  provide input regarding comprehensive primary health care for the 
+Statewide Health Care Delivery Strategic Plan as it is developed, updated, and 
+implemented pursuant to section 9403 of this title; 
+(8)  consult with the Green Mountain Care Board in the event that the 
+Board develops reference-based pricing for primary care providers as 
+permitted under subdivision 9376(e)(5) of this title; and 
+(9)  offer additional recommendations and guidance to the Blueprint for 
+Health, the Office of Health Care Reform, the General Assembly, and others in 
+State government on ways to increase access to primary care services and to 
+improve patient and provider satisfaction with primary care delivery in 
+Vermont.  
+(d)  The Steering Committee shall receive administrative and technical 
+assistance from the Agency of Human Services. 
+=== PAGE 29
+No. 68 Page 29 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(e)(1)  The Executive Director of the Blueprint for Health shall call the first 
+meeting of the Steering Committee to occur on or before September 1, 2025. 
+(2)  The Steering Committee shall select a chair from among its members 
+at the first meeting. 
+(3)  A majority of the membership of the Steering Committee shall 
+constitute a quorum. 
+(f)  Members of the Steering Committee shall not receive per diem 
+compensation or reimbursement of expenses for their participation on the 
+Steering Committee. 
+* * * Data Integration; Data Sharing * * * 
+Sec. 10.  18 V.S.A. § 9353 is added to read: 
+§ 9353.  INTEGRATION OF HEALTH CARE DATA; REPORTS 
+(a)  The Agency of Human Services shall collaborate with the Health 
+Information Exchange Steering Committee in the development of the Unified 
+Health Data Space in order to improve patient and provider access to relevant 
+information, increase efficiencies and decrease administrative burdens on 
+providers, and reduce health care system costs.   
+(b)  The Agency’s development of the Unified Health Data Space shall: 
+(1)  align with the statewide Health Information Technology Plan 
+established pursuant to section 9351 of this title; 
+(2)  utilize the expertise of the Health Information Exchange Steering 
+Committee; 
+=== PAGE 30
+No. 68 Page 30 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(3)  incorporate appropriate privacy and security standards that are 
+aligned with the best privacy and security interests of patients; 
+(4)  determine whether to integrate clinical data, claims data, data 
+regarding social drivers of health and health-related social needs, and other 
+data types and, if so, how to do so in a manner that protects proprietary 
+information relating to payers and providers; provided, however, that 
+integration of these data types or a subset of them shall not begin prior to 
+January 1, 2027 and shall occur only upon the favorable vote of a majority of 
+all voting members of the Health Information Exchange Steering Committee 
+and only for the specific uses approved by a majority of all voting members of 
+the Steering Committee; 
+(5)  if data is integrated in accordance with subdivision (4) of this 
+subsection, limit the use of the integrated data to the specific uses approved by 
+the Health Information Exchange Steering Committee; 
+(6)  ensure interoperability among contributing data sources and 
+applications to enable use of the Unified Health Data Space; 
+(7)  identify the resources necessary to complete data linkages for policy, 
+health surveillance, population health management, and research usage and for 
+the data integration uses approved by the Health Information Exchange 
+Steering Committee pursuant to subdivisions (4) and (5) of this subsection;  
+=== PAGE 31
+No. 68 Page 31 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(8)  establish a timeline for setup and access to the integrated system; 
+(9)  develop and implement a system that ensures rapid access for 
+patients and providers; and 
+(10)  identify additional opportunities for future development, including 
+incorporating new data types and larger populations. 
+(c)  The Agency shall provide access to data to State agencies and health 
+care providers as needed to support the goals of the Statewide Health Care 
+Delivery Strategic Plan established pursuant to section 9403 of this title, once 
+established, to the extent permitted by the data use agreements in place for 
+each data set and the uses approved pursuant to subdivision (b)(4) of this 
+section. 
+(d)(1) On or before January 15, 2026, the Agency of Human Services shall 
+report to the House Committees on Health Care and on Human Services and 
+the Senate Committee on Health and Welfare regarding the advantages and 
+disadvantages of integrating clinical data, claims data, data regarding social 
+drivers of health and health-related social needs, and other data types in the 
+Unified Health Data Space; how an integrated system can improve patient and 
+provider access to relevant information, increase efficiencies and decrease 
+administrative burdens on providers, increase access to and quality of health 
+care for Vermonters, and reduce health care system costs; and how an 
+integrated system can be implemented in a manner that protects proprietary 
+information relating to payers and providers.   
+=== PAGE 32
+No. 68 Page 32 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(2)  On or before January 15 annually beginning in 2027, the Agency of 
+Human Services shall provide an update to the House Committees on Health 
+Care and on Human Services and the Senate Committee on Health and Welfare 
+regarding the development and implementation of the Unified Health Data 
+Space in accordance with this section. 
+Sec. 11.  18 V.S.A. § 9374 is amended to read: 
+§ 9374.  BOARD MEMBERSHIP; AUTHORITY 
+* * * 
+(i)(1)  In addition to any other penalties and in order to enforce the 
+provisions of this chapter and empower the Board to perform its duties, the 
+Chair of the Board may issue subpoenas, examine persons, administer oaths, 
+and require production of papers and records.  Any subpoena or notice to 
+produce may be served by registered or certified mail or in person by an agent 
+of the Chair.  Service by registered or certified mail shall be effective three 
+business days after mailing.  Any subpoena or notice to produce shall provide 
+at least six business days’ time from service within which to comply, except 
+that the Chair may shorten the time for compliance for good cause shown.  
+Any subpoena or notice to produce sent by registered or certified mail, postage 
+prepaid, shall constitute service on the person to whom it is addressed.   
+(2)  Each witness who appears before the Chair under subpoena shall 
+receive a fee and mileage as provided for witnesses in civil cases in Superior 
+=== PAGE 33
+No. 68 Page 33 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+Courts; provided, however, any person subject to the Board’s authority shall 
+not be eligible to receive fees or mileage under this section. 
+(3)  The Board may share any information, papers, or records it receives 
+pursuant to a subpoena or notice to produce issued under this section with the 
+Agency of Human Services or the Department of Financial Regulation, or 
+both, as appropriate to the work of the Agency or Department, provided that 
+the Agency or Department agrees to maintain the confidentiality of any 
+information, papers, or records that are exempt from public inspection and 
+copying under the Public Records Act. 
+* * * 
+* * * Health Care Reforms Addressing Exigent Needs * * *  
+Sec. 11a.  HEALTH CARE SPENDING REDUCTIONS;  
+                 AGENCY OF HUMAN SERVICES; REPORTS 
+(a)(1)  The Agency of Human Services shall facilitate collaboration and 
+coordination among health care providers in order to encourage cooperation in 
+developing rapid responses to the urgent financial pressures facing the health 
+care system and to identify opportunities to increase efficiency, improve the 
+quality of health care services, reduce spending on prescription drugs, and 
+increase access to essential services, including primary care, emergency 
+departments, mental health and substance use disorder treatment services, 
+prenatal care, and emergency medical services and transportation, while 
+=== PAGE 34
+No. 68 Page 34 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+reducing hospital spending for hospital fiscal year 2026 by not less than 2.5 
+percent. 
+(2)  The Agency of Human Services shall facilitate and supervise the 
+participation of hospitals and other health care providers in the process set 
+forth in subdivision (1) of this subsection as necessary for this collaborative 
+process to be afforded state-action immunity under applicable federal and State 
+antitrust laws. 
+(b)  The Agency of Human Services shall report on the proposed reductions 
+that it has approved pursuant to this section, including applicable timing and 
+appropriate accountability measures, to the Health Reform Oversight 
+Committee and the Joint Fiscal Committee on or before July 1, 2025.  On or 
+before the first day of each month of hospital fiscal year 2026, beginning on 
+October 1, 2025, the Agency shall provide updates to the Health Reform 
+Oversight Committee and the Joint Fiscal Committee when the General 
+Assembly is not in session, and to the House Committee on Health Care and 
+the Senate Committee on Health and Welfare when the General Assembly is in 
+session, regarding progress in implementing and achieving the hospital 
+spending reductions identified pursuant to this section. 
+Sec. 11b.  HEALTH CARE SYSTEM TRANSFORMATION; AGENCY OF  
+                 HUMAN SERVICES; REPORTS 
+(a)  The Agency of Human Services shall identify specific outcome 
+measures for determining whether, when, and to what extent each of the 
+=== PAGE 35
+No. 68 Page 35 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+following goals of its health care system transformation efforts pursuant to 
+2022 Acts and Resolves No. 167 (Act 167) has been met: 
+(1)  reduce inefficiencies; 
+(2)  lower costs; 
+(3)  improve health outcomes; 
+(4)  reduce health inequities; and 
+(5)  increase access to essential services. 
+(b)(1)  The Agency of Human Services shall report to the Health Reform 
+Oversight Committee and the Joint Fiscal Committee: 
+(A)  the specific outcome measures developed pursuant to subsection 
+(a) of this section, along with a timeline for accomplishing them; 
+(B)  how the Agency will determine its progress in accomplishing the 
+outcome measures and achieving the transformation goals, including how it 
+will determine the amount of savings attributable to each inefficiency reduced 
+and how it will evaluate increases in access to essential services; 
+(C)  the impact that each transformation decision made by an 
+individual hospital as part of the Act 167 transformation process has or will 
+have on the State’s health care system, including on health care costs and on 
+health insurance premiums; 
+(D)  how the Agency is tracking and coordinating the transformation 
+efforts of individual hospitals to ensure that they complement the 
+transformation efforts of other hospitals and other health care providers and 
+=== PAGE 36
+No. 68 Page 36 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+that they will contribute in a positive way to a transformed health care system 
+that meets the Act 167 goals; and 
+(E)  the amount of State funds, and federal funds, if applicable, that 
+the Agency has spent on Act 167 transformation efforts to date or has obligated 
+for those purposes and the amount of unspent State funds appropriated for Act 
+167-related purposes that remain for the Agency’s Act 167 transformation 
+efforts. 
+(2)  On or before the first day of each month beginning on August 1, 
+2025 through January 1, 2027, the Agency shall provide the Health Reform 
+Oversight Committee and the Joint Fiscal Committee when the General 
+Assembly is not in session, and to the House Committee on Health Care and 
+the Senate Committee on Health and Welfare when the General Assembly is in 
+session, with updates on each of the items set forth in subdivisions (1)(A)–(E) 
+of this subsection. 
+Sec. 11c.  HEALTH CARE SYSTEM TRANSFORMATION; INCENTIVES;  
+                 TELEHEALTH 
+(a)  To encourage hospitals to engage proactively, think expansively, and 
+propose transformation initiatives that will reduce costs to Vermont’s health 
+care system without negatively affecting health care quality or jeopardizing 
+access to necessary services, the Agency of Human Services shall award grants 
+to the hospitals in State fiscal year 2026 that actively participate in health care 
+transformation efforts to assist them in building partnerships, reducing hospital 
+=== PAGE 37
+No. 68 Page 37 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+costs for hospital fiscal year 2026, and expanding Vermonters’ access to health 
+care services, including those delivered using telehealth.  It is the intent of the 
+General Assembly that the funds appropriated in Sec. 18(b) of this act should 
+be awarded on a first-come, first-served basis until all of the funds have been 
+distributed. 
+(b)  On or before December 1, 2025, the Agency of Human Services shall 
+report to the Health Reform Oversight Committee and the Joint Fiscal 
+Committee regarding how much of the $2,000,000.00 appropriated to the 
+Agency pursuant to Sec. 18(b) of this act was obligated as of November 15, 
+2025 and how much had already been disbursed to hospitals as of that date. 
+Sec. 11d.  DEPARTMENT OF FINANCIAL REGULATION;  
+                 DOMESTIC HEALTH INSURER SUSTAINABILITY;  
+                 REPORT 
+On or before November 1, 2025, the Department of Financial Regulation 
+shall provide to the Health Reform Oversight Committee a plan for preserving 
+the sustainability of domestic health insurers in Vermont, which may include 
+utilizing reinsurance. 
+* * * Retaining Accountable Care Organization Capabilities * * * 
+Sec. 12.  RETAINING ACCOUNTABLE CARE ORGANIZATION  
+               CAPABILITIES; REPORT 
+The Agency of Human Services shall explore opportunities to retain 
+capabilities developed by or on behalf of a certified accountable care 
+=== PAGE 38
+No. 68 Page 38 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+organization that were funded in whole or in part using State or federal monies, 
+or both, and that have the potential to make beneficial contributions to 
+Vermont’s health care system, such as capabilities related to comprehensive 
+payment reform and quality data measurement and reporting.  On or before 
+December 1, 2025, the Agency of Human Services shall report its findings and 
+recommendations to the Health Reform Oversight Committee. 
+* * * Implementation Updates * * * 
+Sec. 13.  [Deleted.] 
+Sec. 14.  GREEN MOUNTAIN CARE BOARD; IMPLEMENTATION;  
+               REPORT 
+On or before February 15, 2026, the Green Mountain Care Board shall 
+provide an update to the House Committee on Health Care and the Senate 
+Committee on Health and Welfare regarding the Board’s implementation of 
+this act, including the status of its efforts to establish methodologies for and 
+begin implementation of reference-based pricing and development of global 
+hospital budgets, and the effects of these efforts and activities on increasing 
+access to care, improving the quality of care, and reducing the cost of care in 
+Vermont. 
+Sec. 15.  3 V.S.A. § 3027 is amended to read: 
+§ 3027.  HEALTH CARE SYSTEM REFORM; IMPROVING QUALITY  
+              AND AFFORDABILITY; REPORT 
+=== PAGE 39
+No. 68 Page 39 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(a)  The Director of Health Care Reform in the Agency of Human Services 
+shall be responsible for the coordination of health care system reform efforts 
+among Executive Branch agencies, departments, and offices, and for 
+coordinating with the Green Mountain Care Board established in 18 V.S.A. 
+chapter 220.  
+(b)  On or before February 15 annually, the Agency of Human Services 
+shall provide an update to the House Committee on Health Care and the Senate 
+Committee on Health and Welfare regarding all of the following: 
+(1)  The status of the Agency’s efforts to develop, update, and implement 
+the Statewide Health Care Delivery Strategic Plan in accordance with 18 
+V.S.A. § 9403.  The Agency shall adopt an evaluation framework using an 
+evidence-based approach to assess both the effectiveness of Plan development 
+and implementation and the Plan’s overall impact.  The evaluation shall 
+include identifying what was accomplished, how well it was executed, and the 
+benefits to specific cohorts within Vermont’s health care system, and the 
+Agency shall include updated evaluation results annually as part of its report. 
+(2)  The activities of the Health Care Delivery Advisory Committee 
+established pursuant to 18 V.S.A. § 9403a during the previous calendar year.  
+(3)  The effects of the Statewide Health Care Delivery Strategic Plan, the 
+efforts and activities of the Health Care Delivery Advisory Committee, and 
+other efforts and activities engaged in or directed by the Agency on increasing 
+=== PAGE 40
+No. 68 Page 40 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+access to care, improving the quality of care, and reducing the cost of care in 
+Vermont. 
+Sec. 16.  18 V.S.A. § 9375(d) is amended to read: 
+(d)  Annually on or before January 15, the Board shall submit a report of its 
+activities for the preceding calendar year to the House Committee on Health 
+Care and the Senate Committee on Health and Welfare. 
+(1)  The report shall include: 
+* * * 
+(G)  the status of its efforts to establish methodologies for and begin 
+implementation of reference-based pricing and development of global hospital 
+budgets, and the effects of these efforts and activities on increasing access to 
+care, improving the quality of care, and reducing the cost of care in Vermont; 
+(H)  any recommendations for modifications to Vermont statutes; and 
+(H)(I)  any actual or anticipated impacts on the work of the Board as a 
+result of modifications to federal laws, regulations, or programs. 
+* * * 
+* * * Positions; Appropriations * * * 
+Sec. 17.  GREEN MOUNTAIN CARE BOARD; POSITIONS 
+(a)  The establishment of the following three new permanent classified 
+positions is authorized at the Green Mountain Care Board in fiscal year 2026: 
+(1)  one Director, Reference-Based Pricing; 
+=== PAGE 41
+No. 68 Page 41 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(2)  one Project Manager, Reference-Based Pricing; and 
+(3)  one Operations, Procurement, and Contractual Oversight Manager.  
+(b)  These positions shall be transferred and converted from existing vacant 
+positions in the Executive Branch. 
+Sec. 18.  APPROPRIATIONS 
+(a)  The sum of $2,200,000.00 is appropriated from the General Fund to the 
+Agency of Human Services in fiscal year 2026 for use as follows: 
+(1)  $2,000,000.00 for feasibility analysis and transformation plan 
+development with hospitals, designated agencies, primary care organizations, 
+and other community-based providers;  
+(2)  $100,000.00 for development of quality and access measures, 
+targets, and monitoring strategies for the Statewide Health Care Delivery 
+Strategic Plan; and  
+(3)  $100,000.00 to support the development of alternative payment 
+models. 
+(b)  Notwithstanding any provision of 32 V.S.A. § 10301 to the contrary, 
+the sum of $2,000,000.00 is appropriated from the Health IT-Fund to the 
+Agency of Human Services in fiscal year 2026 for grants to hospitals for the 
+collaborative efforts to reduce hospital costs in accordance with Secs. 11a and 
+11c of this act and to expand access to health care services, such as by 
+enhancing telehealth infrastructure development.   
+=== PAGE 42
+No. 68 Page 42 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+(c)(1)  The sum of $1,062,500.00 is appropriated to the Green Mountain 
+Care Board in fiscal year 2026 for use as follows: 
+(A)  $512,500.00 for the positions authorized in Sec. 17 of this act, as 
+set forth in subdivision (2) of this subsection (c);  
+(B)  $500,000.00 from the General Fund for contracts, including 
+contracts for assistance with implementing reference-based pricing in 
+accordance with this act; and 
+(C)  $50,000.00 from the General Fund for a contract with the 
+Vermont Program for Quality in Health Care to engage in quality initiatives in 
+accordance with this act. 
+(2)  Of the funds appropriated in subdivision (1)(A) of this subsection: 
+(A)  $205,000.00 is appropriated from the General Fund; and 
+(B)  $307,500.00 is appropriated from the Green Mountain Care 
+Board Regulatory and Administrative Fund. 
+(d)  Notwithstanding any provision of 32 V.S.A. § 10301 to the contrary, 
+the sum of $150,000.00 is appropriated from the Health IT-Fund to the Green 
+Mountain Care Board in fiscal year 2026 for expenses associated with 
+increased standardization of electronic hospital budget data submissions in 
+accordance with Sec. 4 of this act. 
+(e)  It is the intent of the General Assembly to provide sufficient resources 
+in future fiscal years to enable the Green Mountain Care Board to fully 
+=== PAGE 43
+No. 68 Page 43 of 43 
+2025 
+ 
+VT LEG #384284 v.1 
+implement global hospital budgets in accordance with 18 V.S.A. 
+§ 9456(d)(1)(B). 
+* * * Effective Dates * * * 
+Sec. 19.  EFFECTIVE DATES 
+(a)  Sec. 16 (18 V.S.A. § 9375(d); Green Mountain Care Board annual 
+report) shall take effect on July 1, 2026. 
+(b)  Secs. 17 (Green Mountain Care Board; positions) and 18 
+(appropriations) shall take effect on July 1, 2025. 
+(c)  The remaining sections shall take effect on passage. 
+Date Governor signed bill:  June 12, 2025 

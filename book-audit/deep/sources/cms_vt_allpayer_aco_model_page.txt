@@ -1,0 +1,14 @@
+Source: https://www.cms.gov/priorities/innovation/innovation-models/vermont-all-payer-aco-model (fetched 2026-10-17 via WebFetch summary)
+"began on January 1, 2017, and concluded on December 31, 2025." Nine performance years, PY0 through PY8.
+
+Source: https://vtdigger.org/2026/03/13/vermonts-8-year-all-payer-health-care-experiment-sunset-at-the-end-of-2025-what-did-it-teach-us/ (fetched 2026-10-17)
+"When 2025 ended, so too did Vermont's eight-year experiment in systemwide health care payment reform."
+"the agreement between Vermont and the federal government launched in 2018"
+"OneCare Vermont remains open only in skeletal form" ; "OneCare will continue its staged wind down, finalizing its layoffs and data offloading."
+"OneCare, which started as a for-profit entity in 2013"
+"emergency room visits were 36.6% higher for OneCare than their national ACO peers in 2021" ; "primary care visits were 18.7% lower than that same peer group average" -- from a third-party benchmarking report presented to GMCB, NOT the State Auditor.
+State Auditor: "Vermont Medicaid spent over $25 million more on ACO operations between 2017 and 2020"
+"OneCare's administrative expenses totaled $70.35 million from 2018 through 2022."
+
+Source: https://vtdigger.org/2022/12/20/blue-cross-vermont-onecare/
+Blue Cross withdrawal "cuts the number of Vermonters enrolled in OneCare's portfolio by around 93,000 people, roughly one-third of its total." Will "not contract with OneCare Vermont in 2023"; data-protection terms; objection to outsourcing analytics to UVM Health Network ("UVM Health Network now offers a Medicare Advantage health plan in conjunction with MVP Health, a direct competitor"); "not seeing evidence among their members participating with OneCare of progress on health outcomes".

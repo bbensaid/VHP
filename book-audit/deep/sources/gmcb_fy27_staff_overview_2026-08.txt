@@ -1,0 +1,1925 @@
+=== PAGE 1
+1
+Hospital Budget Review:
+Overview and 
+Preliminary Staff Analysis
+August 3, 2026
+=== PAGE 2
+2
+Agenda
+• Statute, Rule, and FY27 Hospital Budget Guidance
+• History
+• Statute
+• Changes to Hospital Budget Rule
+• Standard Budget Order Conditions (Draft)
+• FY27 Hospital Budget Submissions: Preliminary Staff Analysis
+• Financials
+• Quality & Access
+• Federal and State context: An Evolving Policy Landscape
+=== PAGE 3
+3
+STATUTE, RULE,& ORDERS
+=== PAGE 4
+4
+Vermont’s Regulation of 
+Hospital Budgets: A Brief History 
+Vermont 
+establishes 
+Hospital Budget 
+Review
+18. V.S.A. § 9456
+Vermont Health 
+Care Authority 
+Established 
+Merges Health Policy 
+Council, Health Data 
+Council and 
+Certificate of Need 
+Review Board
+Banking, 
+Insurance, 
+Securities, and 
+Health Care 
+Administration 
+(BISHCA) 
+Established authority 
+to limit hospital 
+budgets
+Green 
+Mountain Care 
+Board 
+Transfers some 
+authorities 
+previously at BISHCA 
+to GMCB renaming 
+BISHCA to Dept. of 
+Financial Regulation 
+(DFR)
+1983
+ 1992
+ 1995
+ 2011
+=== PAGE 5
+5
+FY27 Hospital Budget Review Process
+5
+March 31
+GMCB Issues 
+Written 
+Guidance
+July 1
+Hospitals 
+Submit  
+Budget to 
+GMCB
+Sept 15
+GMCB will  
+approve, 
+modify, or 
+deny budget
+Oct 1 
+Hospital Fiscal 
+Year Begins
+ November: Staff meet with hospital CFOs to debrief FY26.
+ January-March: Staff meet with stakeholders to solicit input 
+on benchmarks and other aspects of the process.
+ February: GMCB opens special public comment period.
+ February-March: Staff continue collecting input on guidance 
+from interested parties.
+ March: Board issues written guidance to hospitals for FY27.
+ April-July: Hospitals continue to develop FY27 budgets.
+ July: GMCB receives budgets (due 7/1). Staff begin review.
+ August: GMCB holds hospital Budget hearings.
+ September: Board publicly deliberates to approve, modify, 
+or deny budgets by 9/15.
+ October: Budget orders are delivered to hospitals by 10/1 
+(start of hospital fiscal year).
+=== PAGE 6
+6
+Background
+The GMCB must establish a budget for each general hospital by September 
+15, with a written decision by October 1. 18 V.S.A. § 9456(d)(1)(A).
+The GMCB must establish hospital budgets that are consistent with the 
+state’s health care goals as defined in statute.
+The GMCB has a process to set hospital budget benchmarks, which can be 
+used to guide hospitals in developing and preparing their proposed budgets, 
+and as consideration for the Board’s review of proposed budgets. GMCB 
+Rule 3.000, § 3.103(a); § 3.203; § 3.305(b)(1).
+Hospitals bear the burden of persuasion in justifying their proposed budgets. 
+GMCB Rule 3.000, § 3.305(a).
+If a hospital does not meet its burden, the GMCB must adjust the budget to 
+ensure consistency with the state’s health care goals.
+=== PAGE 7
+7
+Principles for Health Care Reform 
+18 V.S.A. § 9371
+The GMCB must execute its charge consistent with the principles for health care reform. 
+These principles include, in part:
+• Universal access to high-quality, medically necessary health services. Systemic 
+barriers, such as cost, must not prevent people from accessing necessary care. 18 
+V.S.A. § 9371(1).
+• Health costs must be contained. Growth in spending must balance the “needs of the 
+population with the ability to pay for such care.” 18 V.S.A. § 9371(2).
+• The system must be evaluated regularly to improve quality, access, and cost 
+containment. 18 V.S.A. § 9371(9).
+• Unnecessary expenditures must be eliminated. This includes administrative costs or 
+other costs that do not contribute to efficient, high-quality services or improve health 
+outcomes. 18 V.S.A. § 9371(10).
+• The financing of health care in Vermont must be sufficient, fair, predictable, transparent, 
+sustainable, and shared equitably. 18 V.S.A. § 9371(11).
+=== PAGE 8
+8
+General Assembly’s Intent for GMCB
+18 V.S.A. § 9372
+It is the intent of the General Assembly to create an independent 
+board to promote the general good of the State by:
+1. improving the health of the population;
+2. reducing the per-capita rate of growth in expenditures for health 
+services in Vermont across all payers while ensuring that access to 
+care and quality of care are not compromised;
+3. enhancing the patient and health care professional experience of 
+care;
+4. recruiting and retaining high-quality health care professionals; and
+5. achieving administrative simplification in health care financing and 
+delivery.
+=== PAGE 9
+9
+Hospital Budget Criteria
+18 V.S.A. § 9456
+For review of a hospital’s proposed budget, the GMCB considers, in part:
+• Vermont’s critical health needs and resources; (§ 9456(b)(2))
+• Actual hospital performance with respect to past budgets; (§ 9456(c)(5))
+• Utilization information; (§ 9456(b)(1))
+• The efficiency of the hospital’s operations; (§ 9456(c)(4))
+• Hospital administrative costs; (§ 9456(b)(12))
+• Financial contributions to a hospital network, and if those expenses are consistent with the 
+principles for health care reform; (§ 9456(c)(4))
+• The salaries for hospital executives, including variable payments and incentive plans, and if these 
+are consistent with the principles for health care reform; (§ 9456(b)(15))
+• A comparison of hospital executive salaries to the salaries of the lowest-paid hospital employees 
+who deliver direct care; (§ 9456(b)(15))
+• Public comment on all aspects of hospital costs and use and on individual budgets; (§ 9456(b)(7))
+• The benchmarks established by the Board; (§ 9456(e)(4))
+=== PAGE 10
+10
+Changes to Hospital Budget Rule: History
+• The prior version of Rule 3.000 was adopted in 2013, as required by Act 
+171 (2012). The current version was revised, with the process starting in late 
+2025 and the revisions being effective June 15, 2026.
+• There have been minor amendments to the Board’s budget review statute 
+since 2013, but revisions to Rule 3.000 were not necessary.
+• Last year there were significant amendments to the Board’s budget review 
+authorities in Act 49, Act 62, and Act 68.
+• The revisions to Rule 3.000 incorporate amendments to statute, better 
+describe the current budget review process, and streamline and simplify 
+certain parts of the rule.
+=== PAGE 11
+11
+Changes to Hospital Budget Rule: Timeline
+• Nov. 3 – Draft proposed rule shared with hospitals, HCA, and public
+• Nov. 5 – Draft proposed rule presented at public meeting
+• Nov. 19 – Board voted to approve draft proposed rule and proceed with 
+rulemaking process
+• Dec. 8 – ICAR Hearing
+• Dec. 11 – Proposed Rule filed with Secretary of State
+• Feb. 18 – Public Hearing and Board voted to submit to LCAR for Review
+• Apr. 9 – LCAR Hearing
+• May 13 – Filed with Secretary of State’s Office
+• June 15, 2026 – Effective date for revised Rule 3.000
+=== PAGE 12
+12
+Summary of Changes to Rule 3.000 (1)
+Redlined Document Showing the Bulk of the Differences (PDF pages 24-39)
+Presentation at GMCB Board Hearing on Nov. 5, 2025 going over the changes in detail
+Section 3.103 Definitions
+• Added or updated the definitions for “benchmark,” “Hospital Budget Guidance,” “Uniform Reporting” 
+Manual,” as well as for “general hospital” vs “psychiatric hospital”
+Section 3.203 Benchmarks
+• The Board may set benchmarks each year (previously the rule used “will establish benchmarks”).
+• “Benchmark” is defined as the criteria a hospital can use to develop and prepare their budget. 
+(3.103(a))
+• Benchmarks are included in the Hospital Budget Guidance (previously included in Uniform Reporting 
+Manual). (3.203(a))
+• Benchmarks are considered for determining whether to exempt a hospital from public hearing (3.304) 
+and during review of a hospital’s proposed budget (3.305) (previously they were used to “determine 
+whether a budget may be adjusted” in addition to being a factor for consideration during budget 
+review)
+=== PAGE 13
+13
+Summary of Changes to Rule 3.000 (2)
+Section 3.205 Hospital Duties; Effect of Noncompliance
+• Removed a long list of specific items to be filed each year (for example costs of operation, utilization, 
+inpatient services by type) in favor of utilizing the Hospital Budget Guidance and Uniform Reporting 
+Manual to specify the required items at this granular of level (3.205(a))
+• Clarifies that the Budget Submission Deadline is different for general vs psychiatric hospitals (3.205(a))
+• Includes requirement that all filings are also submitted to the Office of the Health Care Advocate (which 
+is a statutory requirement) (3.205(b))
+• Allows the board to “decline to consider the relevant portions of a hospital’s submission” if the hospital 
+fails to file by the deadline, file the required information, file in the manner contained in the Uniform 
+Reporting Manual, or submit the filing to the Office of the Health Care Advocate (3.205(c))
+Section 3.301 Information Available to the Public
+• Clarifies that since the GMCB is a public agency, all nonconfidential information filed by a hospital is 
+available to the public upon request, consistent with the Vermont Public Records Act or other law 
+(previously the rule used language specific to information filed as part of the budget review process and 
+to the Public Records Act alone.)
+=== PAGE 14
+14
+Summary of Changes to Rule 3.000 (3)
+Section 3.302 Confidentiality
+• Added a brand-new section regarding the procedure for a hospital to request confidentiality of a 
+document in accordance with the allowed reasons under the Public Records Act or other law.
+• Allows the Board to designate material as confidential (3.302(a))
+• Must include the Office of the Health Care Advocate on a confidentiality request (3.302(c))
+• Outlines what must be included in a confidentiality request (3.302(d))
+Section 3.303 Public Hearings
+• Requires public hearings (previously the rule said the Board “may hold public hearings”)
+Section 3.304 Exemptions from Public Hearings
+• Allows exemption from public hearings for any number of hospitals (previously the limit was four 
+hospitals, and exemption was not allowed from the four largest hospitals by net patient revenue)
+=== PAGE 15
+15
+Summary of Changes to Rule 3.000 (4)
+Section 3.305 Review Process
+• Updated the factors for consideration for a hospital’s proposed budget to reference and reflect the 
+statutory requirements (for example the hospital budget review criteria at 18 V.S.A. § 9456 and the 
+principles for health care reform at 18 V.S.A. § 9371) (previously the language included some of these 
+items but not all)
+Section 3.306 Establishment of Hospital Budgets; Decisions
+• Breaks out the requirement differences between general hospitals vs psychiatric hospitals
+=== PAGE 16
+16
+Summary of Changes to Rule 3.000 (5)
+Section 3.400 Budget Adjustments, Deviations, and Corrective Measures
+• Added a process for the optional mid-year budget review by the GMCB of a hospital’s current year 
+budget to ensure that a hospital is not likely to significantly deviate from its current year budget (3.401)
+• The previous rule conflated the processes for prior-year budget performance review and a hospital’s 
+application for adjustment; the new rule separates these processes into two separate sections (3.402 
+and 3.403)
+• Updated the prior-year budget review process to require the GMCB to account for any significant 
+deviations in a hospital’s established budget, unless the hospital demonstrates that it could not have 
+reasonably taken action to avoid the significant deviation; the previous process gave more discretion to 
+the GMCB to consider factors and allowing the GMCB to determine whether to adjust the hospital’s 
+budget or not (3.402)
+• Adds a deadline for hospital current-year requests for budget adjustments (3.403(a))
+• Requires a showing of need based on an exceptional or unforeseen circumstance in order to adjust a 
+hospital’s budget upon request; the previous rule listed several additional factors to consider (3.403(b))
+=== PAGE 17
+17
+Standard Budget Conditions – DRAFT (1)
+Restrictions on Revenue and Price Growth
+A. [HOSPITAL]’s FY27 NPR/FPP (“NPR”) budget is approved at a growth rate of not more than [X]% over its FY26 budget, with a 
+total NPR of not more than $[X] for FY27.
+B. [HOSPITAL]’s FY27 commercial NPR budget, based on either its submitted budget or its budget as adjusted in this Order, is 
+approved at no more than $[X]. [HOSPITAL] shall report its actual expected commercial NPR not later than March 15, 2027, or 
+such later date as specified by the Director of Health Systems Finance and explain any variations from the expected commercial 
+NPR.
+C. [HOSPITAL]’s commercial reimbursement rate is approved at not more than [X]% over current approved levels, with no 
+commercial reimbursement rate for any payer at more than [X]% over current approved levels. The commercial reimbursement 
+rate overall or with respect to any payer may be less than [X]% as negotiated between the hospital and payer. [HOSPITAL]’s 
+overall change in charge is approved at the minimum necessary amount to effectuate its commercial reimbursement rate, but 
+no greater than the amount identified in its budget submission or its budget as adjusted by this order.
+D. This commercial reimbursement rate cap shall apply only to services not capped at 120% ASP for outpatient prescription drugs, 
+as defined in Act 55, Sec. 4 (18 V.S.A. § 9407).
+E. The commercial reimbursement rate in Paragraph C is a maximum subject to negotiation between [HOSPITAL] and commercial 
+insurers. [HOSPITAL] shall not represent the maximum reimbursement rate approved by the GMCB in Paragraph C or the 
+commercial NPR based on that rate as an amount set or guaranteed by the GMCB in the hospital’s negotiations with insurers.
+=== PAGE 18
+18
+Standard Budget Conditions – DRAFT (2)
+F. The cap on commercial reimbursement rate in Paragraph C shall not apply to Medicare Advantage plans.
+Reporting Requirements
+G. [HOSPITAL] shall file an updated Rate Decomposition Sheet with the Board no more than 30 days after its FY27 
+contracts have been finalized with commercial payers.
+H. [HOSPITAL] shall report its actual variable payments and incentive plans for executive and clinical leadership no 
+more than 15 days after being adopted by its Board of Directors.
+I. Beginning on or before November 20, 2026, and every month thereafter, [HOSPITAL] shall file with the Board the 
+actual year-to-date FY27 operating results as of the end of the prior month. The report shall be in a form and 
+manner as prescribed by GMCB staff.
+J. Beginning on or before November 20, 2026, [HOSPITAL] shall include with each year-to-date monthly report a 
+letter, if applicable, identifying any material changes to its FY27 budgeted revenues and expenses, or to the 
+assumptions used in determining its budget, including: changes in Medicaid, Medicare, or commercial 
+reimbursement; additions or reductions in programs or services to patients; and any other event that could 
+materially change the approved NPR budget.
+K. On or before January 31, 2027, [HOSPITAL] shall file with the Board, in a form and manner prescribed by GMCB 
+staff, such information as the Board determines necessary to review the hospital’s FY26 actual operating results.
+=== PAGE 19
+19
+Standard Budget Conditions – DRAFT (3)
+L. [HOSPITAL] shall file with the Board one copy of its FY26 audited financial statements and associated 
+management letter(s), as well as the parent organization’s audited consolidated financial statements, if 
+applicable, 15 days after the hospital receives its statements, or by January 31, 2027, whichever is earlier. If a 
+financial audit is not available by this date, [HOSPITAL] shall provide a letter explaining the delay and an audit in 
+draft form.
+M. [HOSPITAL] shall file with the Board its actual year-to-date FY27 operating results on April 30, 2027 for October 1, 
+2026 through March 31, 2027. The report shall be in a form and manner as prescribed by GMCB staff.
+N. [HOSPITAL] shall timely file all forms and information required for practice acquisitions and/or transfers as 
+determined by GMCB staff, if applicable.
+O. [HOSPITAL] shall participate in check-ins to be scheduled at the discretion of the Director of Health Systems 
+Finance based on the hospital’s FY27 year-to-date operating performance. 
+Reporting Practices
+P. [HOSPITAL] shall file all requested data and other information in a timely and accurate manner.
+=== PAGE 20
+20
+Standard Budget Conditions – DRAFT (4)
+Q. [HOSPITAL] shall report on any changes it makes to the methods it uses to calculate any information it reports to 
+the GMCB. Any such report shall include a detailed explanation as to the reason for the change and the inclusion 
+of a comparison report that shows the results using the hospital’s prior method of calculation.
+R. All materials required above shall be provided electronically, unless doing so is not practicable, as determined by 
+the Director of Health Systems Finance.
+Other Conditions
+S. After notice and an opportunity to be heard, the GMCB may amend the provisions contained herein, and issue 
+an amended order, consistent with its authority as set forth in 18 V.S.A. Chapter 220, Subchapter 1, 18 V.S.A. 
+Chapter 221, Subchapter 7, and GMCB Rule 3.000.
+T. The findings and orders contained in this decision do not constrain the Board’s decisions in future hospital 
+budget reviews, future certificate of need reviews, or any other future regulatory or policy decisions. 
+=== PAGE 21
+21
+SYSTEMWIDE ANALYSIS
+=== PAGE 22
+22
+Systemwide Hospital Rate Changes
+8.0%
+5.1%
+6.8%
+4.4%
+1.8% 2.1%
+2.9%
+3.7%
+5.9%
+6.7%
+13.2%
+4.2%
+0.8%
+-2.2% -2.6%
+8.3%
+5.4%
+6.8%
+4.4%
+2.3% 2.4%
+3.9% 3.8%
+7.4%
+12.2%
+16.4%
+10.5%
+5.6%
+2.6%
+0.0%
+4.0%
+-5.0%
+0.0%
+5.0%
+10.0%
+15.0%
+20.0%
+FY13 FY14 FY15 FY16 FY17 FY18 FY19 FY20 FY21 FY22 FY23 FY24 FY25 FY26 FY27
+Hospital Submitted Unapproved
+Rate Change
+GMCB Approved Rate Change
+Approved CAGR (Since FY12)
+NOTE: For FY27, these figures 
+reflect the systemwide rate change 
+resulting from guidance (green) 
+and submitted rate changes above 
+guidance (blue)
+=== PAGE 23
+23
+Vermont Hospital System
+Summary Income Statement
+FY23 FY24 FY25 FY26 FY26 FY27
+Actuals Actuals Actuals Budget Projections Submitted
+Operating income ($M) 31.80 59.63 58.69 24.90 -53.44 -44.74
+Operating margin 0.87% 1.48% 1.38% 0.60% -1.25% -1.02%
+FY23 FY24 FY25 FY26 FY26 FY27
+Actuals ($M) Actuals ($M) Actuals ($M) Budget ($M) Projections ($M) Submitted ($M)
+Gross patient care revenue 7,790 8,542 8,787 8,630 8,230 8,254 -4.6% -4.3% 0.3%
+Net revenue deductions -4,940 -5,420 -5,575 -5,224 -4,876 -4,746 -6.6% -9.1% -2.7%
+Net patient care revenue (NPR) 2,851 3,122 3,212 3,406 3,354 3,508 -1.5% 3.0% 4.6%
+Fixed prospective payments (FPP) 388 408 437 222 251 193 12.9% -13.2% -23.1%
+NPR + FPP 3,238 3,530 3,650 3,628 3,605 3,700 -0.6% 2.0% 2.7%
+Other operating revenue 422 486 602 550 688 690 25.0% 25.4% 0.4%
+Total operating revenue 3,660 4,016 4,252 4,178 4,292 4,390 2.7% 5.1% 2.3%
+Fees, salaries & benefits 2,051 2,224 2,341 2,424 2,390 2,483 -1.4% 2.4% 3.9%
+All other operating expenses 1,577 1,732 1,853 1,729 1,956 1,952 13.1% 12.9% -0.2%
+Total operating expense 3,629 3,956 4,193 4,153 4,346 4,435 4.6% 6.8% 2.1%
+FY27 Submitted vs. 
+FY26 Projections
+FY26 Projections 
+vs. FY26 Budget
+FY27 Submitted 
+vs. FY26 Budget
+Excludes Brattleboro Memorial Hospital
+=== PAGE 24
+24
+Vermont Hospital System
+Excludes Brattleboro Memorial Hospital
+1,992 
+1,893 
+1,904 
+54.6%
+52.5%
+51.4%
+49.5%
+50.0%
+50.5%
+51.0%
+51.5%
+52.0%
+52.5%
+53.0%
+53.5%
+54.0%
+54.5%
+55.0%
+ 1,840
+ 1,860
+ 1,880
+ 1,900
+ 1,920
+ 1,940
+ 1,960
+ 1,980
+ 2,000
+FY2025 FY2026 FY2027
+Systemwide Commercial NPR+FPP (Excluding Medicare Advantage)
+Commercial net patient revenue Commercial % of total net patient revenue
+• Systemwide, the 
+FY27 hospital 
+submissions 
+include a -4.4% 
+reduction in 
+commercial NPR 
+compared to 
+FY25
+• As a % of total 
+NPR, commercial 
+payers represent 
+51.4% compared 
+to 54.6% in FY25
+=== PAGE 25
+25
+FY27 Operating Income ($M)
+• Systemwide, Vermont 
+hospitals have submitted 
+budgets with -$44.7M in 
+operating losses
+• Nearly 96% of the system 
+losses are being 
+generated by the 
+University of Vermont 
+Medical Center (-$42.9M)
+$(42.86)
+$(8.67)
+$(4.51)
+$(3.50)
+$(3.25) $-
+$0.00 $0.06 $0.83 $1.04 $1.11 
+$2.64 
+$12.36 
+$(44.74)
+$-
+$(10.00)
+$(20.00)
+$(30.00)
+$(40.00)
+$(50.00)
+$(60.00)
+$(70.00)
+Increase
+Decrease
+Total
+Excludes Brattleboro Memorial Hospital
+=== PAGE 26
+26
+Vermont Hospital System
+Summary Commercial NPR & Reimbursement Rate Benchmarks
+1. Numbers based on Budget Orders 
+2. Includes impacts of enforcement on FY26 Commercial NPR only
+3. Numbers presented are unadjusted, with the exceptions of corrections (see footnote 5) RRMC has requested carve-outs of Worker’s Compensation, ChampVA, Tricare and Indian Health Services
+4. Reimbursement Rate Request reflects Aggregated Major Commercial Payers as reflected in the rate decomp. System-wide weighted on FY27 Commercial NPR
+5. FY26 Commercial NPR numbers NMC, SVMC assume corrections to the budget orders that will be discussed separately
+6. System-wide views exclude BMH
+Hospital Commercial NPR 
+growth (unadjusted) $ Change1 FY27 Commercial 
+NPR Requested
+FY27 Reimbursement 
+Rate Request4
+Brattleboro Memorial Hospital
+Central Vermont Medical Center2 -1.0% -$1,445,658 $143,120,162 -0.8%
+Copley Hospital 8.1% $4,853,545 $65,075,339 5.4%
+Gifford Medical Center -8.8% -$2,580,843 $26,594,317 -3.7%
+Grace Cottage Hospital -0.7% -$56,492 $7,721,373 -1.4%
+Mt. Ascutney Hospital & Health Ctr 5.4% $1,372,534 $26,775,356 1.1%
+North Country Hospital -5.0% -$2,660,083 $50,464,549 -1.2%
+Northeastern VT Regional Hospital -0.6% -$361,435 $63,667,747 -1.2%
+Northwestern Medical Center5 28.3% $19,108,417 $86,686,524 5.7%
+Porter Medical Center -1.0% -$682,684 $67,585,739 0.0%
+Rutland Regional Medical Center3 1.2% $2,033,393 $167,184,815 -2.6%
+Southwestern VT Medical Center5 -0.9% -$1,035,431 $111,028,596 -1.0%
+Springfield Hospital -1.8% -$618,573 $32,830,567 3.3%
+The University of Vermont Medical Center2 -1.3% -$14,065,638 $1,054,849,354 0.0%
+System-Wide Total6 0.2% $3,861,052 $1,903,584,438 0.0%
+=== PAGE 27
+27
+Vermont Hospital System
+Summary Expense Benchmarks
+1. Hospitals are held harmless from Provider Tax, Depreciation & Grant Revenue - shown here is the unadjusted Expense Growth. Hospitals have additional carve-out requests that will be 
+presented on in individual hearings.
+2. Adult Day Care has been removed for FY27
+3. Gifford includes reallocation of expenses amongst shared expenses
+4. System-Wide Total Excludes BMH 
+Hospital Expense Growth 
+(unadjusted) Expense Growth $ FY27 Budget
+Brattleboro Memorial Hospital
+Central Vermont Medical Center 8.6% $27,364,978 $344,674,967
+Copley Hospital 2.2% $2,803,319 $130,659,875
+Gifford Medical Center3 2.7% $1,780,030 $67,501,089
+Grace Cottage Hospital 1.8% $588,225 $32,996,706
+Mt. Ascutney Hospital & Health Ctr 2.4% $1,908,759 $82,552,173
+North Country Hospital 4.5% $4,983,772 $115,880,395
+Northeastern VT Regional Hospital 2.6% $3,507,122 $138,973,288
+Northwestern Medical Center 6.1% $9,023,010 $158,089,419
+Porter Medical Center -0.2% -$298,885 $131,285,449
+Rutland Regional Medical Center 5.7% $20,542,068 $382,974,456
+Southwestern VT Medical Center 4.2% $9,787,001 $240,278,762
+Springfield Hospital2 6.0% $4,222,641 $74,801,591
+The University of Vermont Medical Center 8.4% $196,034,080 $2,534,546,075
+System-Wide Total4 6.8% $282,246,121 $4,435,214,245
+=== PAGE 28
+28
+Vermont Hospital System
+ $3,000,000,000
+ $3,200,000,000
+ $3,400,000,000
+ $3,600,000,000
+ $3,800,000,000
+ $4,000,000,000
+ $4,200,000,000
+ $4,400,000,000
+ $4,600,000,000
+FY23 FY24 FY25 FY26 FY27
+Budget vs. Actuals:
+NPR, Total Operating Revenue, Total Operating Expenses
+NPR Budget
+NPR Actual
+Operating Revenue Budget
+Operating Revenue Actual
+Operating Expense Budget
+Operating Expense Actual
+Excludes Brattleboro Memorial Hospital
+=== PAGE 29
+29
+Vermont Hospital System
+From FY17 to FY27 (submitted), net 
+patient care revenue at the Critical 
+Access Hospitals has grown at an 
+average annual rate of 5.0%. 
+Mid-Size Community Hospitals have 
+grown 4.0%, and the Academic 
+Medical Center has grown at an 
+average 4.7% over this same period.
+Percentages reflect compound growth from FY17
+4.7%
+4.0%
+5.0%
+-1.0%
+0.0%
+1.0%
+2.0%
+3.0%
+4.0%
+5.0%
+6.0%
+7.0%
+8.0%
+FY17 FY18 FY19 FY20 FY21 FY22 FY23 FY24 FY25 FY26P FY27S
+NPR+FPP
+Compound average growth since FY17
+AMC
+MSCH
+CAH
+Excludes Brattleboro Memorial HospitalFY17 – FY25: Actuals, FY26: Projections, FY27: Budgets
+=== PAGE 30
+30
+Vermont Hospital System
+Percentages reflect compound growth from FY17
+6.6%
+4.3%
+4.9%
+0.0%
+1.0%
+2.0%
+3.0%
+4.0%
+5.0%
+6.0%
+7.0%
+8.0%
+9.0%
+10.0%
+FY17 FY18 FY19 FY20 FY21 FY22 FY23 FY24 FY25 FY26P FY27S
+Total Operating Revenue
+Compound average growth since FY17
+7.4%
+4.6%
+4.7%
+0.0%
+1.0%
+2.0%
+3.0%
+4.0%
+5.0%
+6.0%
+7.0%
+8.0%
+9.0%
+10.0%
+FY17 FY18 FY19 FY20 FY21 FY22 FY23 FY24 FY25 FY26P FY27S
+Total Operating Expense
+Compound average growth since FY17
+AMC
+MSCH
+CAH
+FY17 – FY25: Actuals, FY26: Projections, FY27: Budgets
+Excludes Brattleboro Memorial Hospital
+=== PAGE 31
+31
+Operating Margin
+Formula:
+Operating income
+/
+Total operating revenue
+Excludes Brattleboro Memorial Hospital
+Hospital
+FY21
+Actual
+FY22
+Actual
+FY23
+Actual
+FY24
+Actual
+FY25
+Actual
+FY26 
+Projected
+FY27 
+Submitted
+FY27 vs. 
+FY21 (∆)
+FY27 vs. 
+FY26 (∆)
+CVMC -1.0% -6.5% -6.5% 1.7% -0.7% -3.2% -1.0% 0.1% 2.2%
+CH 5.1% -0.7% -1.8% 1.4% 1.0% 0.6% 2.0% -3.1% 1.4%
+GMC 8.8% 7.0% -8.3% -18.2% 1.9% -4.5% 1.2% -7.6% 5.7%
+GCH 8.0% -6.8% -7.2% -9.9% -3.6% 0.0% 0.2% -7.8% 0.2%
+MAHHC 9.1% 1.7% 2.0% 1.2% 0.8% -1.4% 0.0% -9.1% 1.4%
+NCH 4.6% -10.3% -8.9% -2.5% 2.8% 4.7% -3.1% -7.7% -7.8%
+NVRH 2.9% 0.2% 0.5% 0.1% -2.0% 0.1% 0.7% -2.1% 0.6%
+NMC 4.7% -4.3% -6.6% -2.5% -3.5% -6.3% -2.9% -7.7% 3.3%
+PMC 7.7% 3.1% 7.6% 4.7% 4.9% 1.6% 8.6% 0.9% 7.0%
+RRMC 2.2% -3.8% 2.1% 0.9% 5.6% -1.2% -2.3% -4.6% -1.1%
+SVMC 4.5% -0.2% -3.8% 0.0% 1.3% 0.0% 0.0% -4.5% 0.0%
+SH 1.2% 5.4% -0.9% -1.1% 0.7% -5.2% 1.5% 0.3% 6.6%
+UVMMC 2.3% -1.2% 3.1% 2.7% 1.3% -1.2% -1.7% -4.0% -0.5%
+SYSTEM* 2.9% -1.7% 0.9% 1.5% 1.4% -1.2% -1.0% -3.9% 0.2%
+Operating Margin
+=== PAGE 32
+32
+Days Cash on Hand
+FY21 DCOH may appear inflated due to large COVID-related grants being reflected in cash 
+balance. Because of this, FY27 is being compared against FY22 in the table above.
+Formula:
+(Cash Investments + Unrestricted Funded Depreciation +
+Unrestricted Other Board Designated Assets) * 365
+ /
+(Operating Expenses - Depreciation Amortization)
+Excludes Brattleboro Memorial Hospital
+Hospital
+FY21
+Actual
+FY22
+Actual
+FY23
+Actual
+FY24
+Actual
+FY25
+Actual
+FY26 
+Projected
+FY27 
+Submitted
+FY27 vs. 
+FY22 (%)
+FY27 vs. 
+FY26 (%)
+CVMC 114.1 68.7 78.5 78.1 81.6 69.6 59.7 -13% -14%
+CH 125.7 65.8 42.5 63.4 56.0 59.5 48.8 -26% -18%
+GMC 326.4 203.5 146.4 78.1 114.8 89.1 97.4 -52% 9%
+GCH 249.0 99.1 87.9 82.3 83.1 85.4 87.2 -12% 2%
+MAHHC 246.1 207.5 220.0 221.4 220.2 194.2 176.6 -15% -9%
+NCH 315.3 212.6 182.7 201.3 190.3 183.0 156.4 -26% -15%
+NVRH 189.2 105.7 98.2 101.0 92.5 94.7 97.5 -8% 3%
+NMC 297.9 251.9 223.9 256.8 230.1 199.0 175.7 -30% -12%
+PMC 173.9 120.0 98.2 118.0 138.8 128.4 162.1 35% 26%
+RRMC 274.3 181.9 188.7 244.1 250.6 248.7 232.7 28% -6%
+SVMC 52.5 37.5 48.8 52.9 34.2 22.0 24.2 -35% 10%
+SH 42.2 70.4 71.0 42.9 55.4 28.7 37.4 -47% 30%
+UVMMC 198.8 112.5 115.4 136.5 147.7 136.2 136.0 21% 0%
+SYSTEM* 196.1 120.9 119.8 137.6 143.2 132.2 129.3 4% -2%
+Days Cash on Hand
+=== PAGE 33
+33
+Days Accounts Receivable
+Formula:
+(Gross Patient Accounts Receivable – Allowance 
+for Uncollectable Accounts) 
+/
+(Net Patient Care Revenue / 365)
+Excludes Brattleboro Memorial Hospital
+Hospital
+FY21
+Actual
+FY22
+Actual
+FY23
+Actual
+FY24
+Actual
+FY25
+Actual
+FY26 
+Projected
+FY27 
+Submitted
+FY27 vs. 
+FY21 (%)
+FY27 vs. 
+FY26 (%)
+CVMC 69.2 64.5 41.7 41.3 36.8 43.1 41.1 -36% -5%
+CH 48.5 50.7 58.2 57.9 57.7 55.0 55.0 8% 0%
+GMC 40.4 61.5 41.6 72.6 51.3 67.7 69.7 13% 3%
+GCH 42.5 35.5 39.4 41.1 39.9 36.5 36.3 2% -1%
+MAHHC 34.1 30.4 35.9 45.1 37.9 47.4 46.9 54% -1%
+NCH 45.5 70.9 60.5 50.5 50.7 55.4 45.2 -36% -18%
+NVRH 39.9 42.1 36.7 35.6 45.6 43.2 40.8 -3% -6%
+NMC 35.0 39.4 47.3 47.2 47.8 44.0 44.5 13% 1%
+PMC 67.2 50.0 58.9 40.6 44.8 43.3 38.0 -24% -12%
+RRMC 27.9 26.3 32.3 33.3 34.9 38.1 38.3 46% 0%
+SVMC 36.1 34.3 41.5 38.7 45.5 37.0 37.0 8% 0%
+SH 58.3 49.7 55.6 76.6 78.0 74.1 58.1 17% -22%
+UVMMC 60.5 50.1 49.8 46.8 48.7 48.1 45.8 -9% -5%
+SYSTEM* 52.0 46.9 46.7 45.3 46.5 46.7 44.6 -14% -4%
+Days Patient Accounts Receivable
+=== PAGE 34
+34
+Current Ratio
+Formula:
+(Current Assets + Unrestricted Funded 
+Depreciation)
+ / 
+Current Liabilities
+Excludes Brattleboro Memorial Hospital
+Hospital
+FY21
+Actual
+FY22
+Actual
+FY23
+Actual
+FY24
+Actual
+FY25
+Actual
+FY26 
+Projected
+FY27 
+Submitted
+FY27 vs. 
+FY21 (%)
+FY27 vs. 
+FY26 (%)
+CVMC 2.1 1.6 1.3 1.4 1.3 1.2 1.1 -32% -7%
+CH 1.7 2.9 2.4 2.0 2.0 2.4 2.5 -13% 2%
+GMC 2.8 3.1 2.3 1.5 2.4 2.4 2.9 -6% 18%
+GCH 2.4 1.8 1.3 1.0 0.9 1.0 0.9 -50% -9%
+MAHHC 1.5 1.3 1.5 1.7 1.6 1.3 1.2 -10% -13%
+NCH 4.7 3.1 2.5 2.5 2.0 4.2 3.5 15% -17%
+NVRH 2.0 2.1 2.7 2.6 2.4 2.8 2.7 27% -1%
+NMC 6.8 5.2 4.9 5.1 5.6 6.5 5.9 13% -10%
+PMC 3.7 3.6 4.5 3.2 5.7 6.3 7.2 101% 15%
+RRMC 4.1 4.0 5.3 5.3 6.5 6.3 6.6 63% 4%
+SVMC 1.0 0.9 1.1 0.8 0.9 0.8 0.7 -25% -7%
+SH 1.6 1.8 1.5 1.3 2.0 1.8 2.0 9% 9%
+UVMMC 3.9 3.8 4.1 3.9 4.3 4.5 4.4 17% -2%
+SYSTEM* 3.3 3.1 3.2 3.1 3.4 3.6 3.5 7% -2%
+Current Ratio
+=== PAGE 35
+35
+Vermont Hospital Bad Debt and Free Care 
+FY18 – FY25: Actuals, FY26: Projections, FY27: Budgets
+*FY26 and FY27 exclude data 
+from Brattleboro as it was not yet 
+available to GMCB staff
+Systemwide, the total dollar 
+amount of bad debt incurred 
+and free care delivered at 
+hospitals increased at an 
+average annual rate of 8.4% 
+from FY18 to FY25.
+During the same time, total 
+gross revenue across 
+Vermont hospitals increased 
+at an average annual rate of 
+8.0%.
+=== PAGE 36
+36
+Vermont Hospital Bad Debt and Free Care 
+FY18 – FY25: Actuals, FY26: Projections, FY27: Budgets
+*FY26 and FY27 exclude data 
+from Brattleboro as it was not yet 
+available to GMCB staff
+Bad debt and free care 
+decreased as a share of total 
+gross hospital revenue 
+during the height of the 
+pandemic, but we are 
+now back to systemwide 
+pre-pandemic levels.
+=== PAGE 37
+37
+CAH Cost-Sharing: Information Gathered
+The Issue:
+At Critical Access Hospitals (CAHs), Medicare beneficiaries pay 20% of charges rather than 20% of the FFS Medicare 
+payment amounts for outpatient services. Hospital charges are often far higher than both the hospitals’ actual costs 
+and the Medicare rate, resulting in a potentially significantly higher cost-sharing burden for Medicare beneficiaries 
+who receive outpatient services at CAHs.
+GMCB RFIs and Public Meetings:
+The Board requested additional information from Vermont's eight CAHs and VAHHS to explore the CAH cost-sharing 
+issue and potential solutions and held public meetings on this matter throughout February – June 2026.
+VAHHS provided a letter to GMCB on June 5th, 2026, that outlined voluntary actions CAHs could take to address the 
+cost-sharing issue. Additionally, VAHHS provided a draft patient notification template.
+FY27 Hospital Budget Guidance
+If your hospital is a Critical Access Hospital, how does your budget address the Medicare cost-sharing issue 
+discussed in a board meeting on 3/24/2026 and in the RFI sent out on 2/18/2026?
+=== PAGE 38
+38
+CAH Cost-Sharing: CAH Proposed Actions
+Additional Questions for CAHs:
+• What are the top 10 highest-charge 
+services and top 10 services with the 
+highest volume provided in outpatient 
+settings for FY24, FY25, and FY26 to 
+Medicare beneficiaries?
+• What percentage of Medicare 
+beneficiaries lacking other source of 
+coverage qualified for financial 
+assistance policy in FY24, FY25, and 
+FY26?
+General Themes
+Increase transparency of hospital prices and patient cost-sharing 
+obligations through website and advance notice
+Enhance financial assistance by connecting patients to existing 
+programs and individualizing where applicable
+Support Federal action by continuing to engage with Vermont's 
+congressional delegation and commenting on OPPS proposed rule
+Other Reported Actions
+Move away from contracting with payers as a % discount 
+off charges
+Assess outpatient chargemaster and identify high-price outliers 
+(i.e. 500% of Medicare)
+Increase financial assistance program sliding scale
+=== PAGE 39
+39
+SYSTEMWIDE QUALITY AND 
+ACCESS ANALYSIS
+=== PAGE 40
+40
+Guiding Legislation
+18 V.S.A. § 9375 states that “[t]he Board shall execute its duties consistent with the principles expressed in section 
+9371 of this title.” These principles recognize the need for "universal access to and coverage for high-quality, medically 
+necessary health services for all Vermonters” and the need for Vermont's health care system to continuously evaluate 
+and improve health care quality and safety. The principles also recognize that cost is barrier to accessing necessary 
+health care. 
+Specific duties of the Board include:
+• Overseeing the development and implementation, and evaluating the effectiveness, of health care payment and delivery system 
+reforms designed to “control the rate of growth in health care costs; promote seamless care, administration, and service delivery; and 
+maintain health care quality in Vermont . . . .” 18 V.S.A. § 9375(b)(1)(A). 
+• Developing and maintaining a method for evaluating systemwide performance and quality, including identifying appropriate process and 
+outcome measures. 18 V.S.A. § 9375(b)(10).
+• In consultation with VPQHC, utilizing mechanisms in the hospital budget review process to measure hospital costs, quality, and access, 
+as well as alignment with the Statewide Health Care Delivery Strategic Plan, once established. 18 V.S.A. § 9456(e)(1). 
+• Monitoring the implementation of hospital service eliminations to determine their benefits. 18 V.S.A. § 9456(e)(3). 
+• Determining whether new health care projects “will improve the quality of health care in the State or provide greater access to health 
+care for Vermont’s residents, or both,” and will “support equal access to appropriate mental health care that meets standardsof quality, 
+access, and affordability equivalent to other components of health care as part of an integrated, holistic system of care, asappropriate.” 
+18 V.S.A. § 9437(4).
+=== PAGE 41
+41
+Quality, Access 
+and Planning 
+Team Process 
+& Theory of 
+Change
+1. We are learning from others in the field - 
+building cross-agency partnerships and 
+identifying opportunities to collaborate.
+2. We are doing deep dives - reflecting on our 
+internal processes and compiling data and 
+research to aid in our efforts.
+3. We are seeking to better understand – where, 
+why, and how is quality changing?
+4. We are exploring - what are the ways the 
+Board can support improvement?
+=== PAGE 42
+42
+Quality of Care: CMS Star Rating
+• Composite score of a hospital’s performance on 52 measures across the Mortality, 
+Safety of Care, Readmission, Patient Experience, and Timely and Effective Care 
+domains.
+• Ratings are generated if hospitals report at least three measures within at least three 
+domains (one needs to be Safety of Care or Mortality).*
+• Data Caveats 
+• Data Lag: Measure data for the 2026 (FY27) star ratings was collected between 
+7/1/2021-12/31/24 and measure data for the FY25 and FY26 star ratings was 
+collected during the COVID-19 Pandemic. 
+• Reporting Differences: Variable case volumes, patient mix, and data capabilities 
+can cause differences among how hospitals report measures that make up domain 
+scores and overall star ratings.**
+*FY27 star rating methodology and data updates can be referenced in the presentation shared by the Healthcare Association of New York State (HANYS) 
+(2026), “CMS Hospital Star Ratings and Pay for Performance Programs” and Regulation: 42 CFR 412 – Prospective Payment Systems for Inpatient Hospital 
+Services
+**Overall Hospital Quality Star Rating: Provider Data Catalog; Survey of patient experience – HCAHPS: Provider Data Catalog
+=== PAGE 43
+43
+CMS Star Ratings  
+CMS Star 
+Rating
+Number of 
+Vermont 
+Hospitals FY27
+National  
+Distribution 
+FY27*
+5/5 9.1% (1) 12%
+4/5 18.2% (2) 29.8%
+3/5 54.5% (6) 30.9%
+2/5 9.1% (1) 20.9%
+1/5 9.1% (1) 6.4%
+Star Rating Distribution FY2027
+CMS Star 
+Rating
+Number of 
+Vermont 
+Hospitals FY26
+National  
+Distribution 
+FY26*
+5/5 0% (0) 10.1%
+4/5 16.7% (2) 26.5%
+3/5 50% (6) 32.5%
+2/5 25% (3) 22.9%
+1/5 8.3% (1) 8.1%
+*HANYS (2026); CMS Data (Data.Cms.gov), National Distribution, accessed July 2026
+Star Rating Distribution FY2026
+FY27 star ratings have generally improved as compared to FY26. However, year-over-year 
+comparisons need to be made with caution.  
+=== PAGE 44
+44
+CMS Star Ratings
+CMS Star Rating FY2026 FY2027
+Gifford Medical Center 4 5
+Northwestern Medical Center 3 4
+University of Vermont Medical 
+Center 3 4
+Brattleboro Memorial Hospital 3 3
+Central Vermont Medical Center 2 3
+Northeastern VT Regional Hospital 3 3
+Porter Medical Center 3 3
+Rutland Regional Medical Center 1 3
+Southwestern VT Medical Center 4 3
+Copley Hospital 3 2
+North Country Hospital 2 1
+Grace Cottage Hospital No Star Rating* No Star Rating*
+Mt. Ascutney Hospital and Health 
+Center No Star Rating* No Star Rating* 
+Springfield Hospital 2 No Star Rating*
+*Hospital either did not meet the reporting threshold to generate an overall 
+star rating due to too few cases or requested (only applies to CAHs) to 
+withhold their overall rating from the CMS Care Compare and public input 
+file. 
+VT Hospital Quality Star Rating
+• 5 hospitals improved their star ratings 
+in the last year by at least one star 
+• 3 hospitals lowered their star ratings 
+between FY26 and FY27
+• 1 VT hospital received a 5-star rating 
+for FY27
+Regulation: 42 CFR 412 – Prospective Payment Systems for Inpatient 
+Hospital Services
+=== PAGE 45
+45
+CMS Star Rating: Safety of Care and 
+Mortality Domains  
+VT hospitals perform worse on the Safety of Care and Mortality domains as 
+compared to hospitals nationally.* 
+Safety of Care Domain**
+• North Country and Mt. Ascutney 
+have the worst performance on 
+Safety of Care as compared to 
+other VT hospitals. 
+• Gifford, NVRH, and Springfield 
+have the highest performance on 
+Safety of Care scores across the 
+state. 
+Mortality** 
+• North Country and Springfield 
+have the worst performance on 
+mortality rates as compared to 
+other VT hospitals. 
+• UVMMC and Porter have the 
+highest performance on mortality 
+scores across the state.
+*HANYS (2026), Slide 23.
+**Smaller hospitals may see higher fluctuations in either direction due to a smaller set of measures with less data to draw from.
+=== PAGE 46
+46
+CMS Star Rating: Patient Experience and 
+Timely & Effective Care 
+VT hospitals have better performance scores on the Patient Experience of Care 
+and Timely and Effective Care domains as compared to hospitals nationally.* 
+Patient Experience of Care Domain**
+• Northwestern and Porter had the 
+lowest performance on Patient 
+Experience of Care as compared to 
+other VT hospitals. 
+• Copley and Mt. Ascutney had the 
+highest performance on Patient 
+Experience of Care scores across the 
+state. 
+Timely & Effective Care Domain** 
+• UVMMC and Springfield had the 
+lowest performance on Timely & 
+Effective Care rates as compared 
+to other VT hospitals. 
+• Grace Cottage and Gifford had 
+the highest performance on 
+Timely & Effective Care scores 
+across the state.
+*HANYS (2026), Slide 23.
+**Smaller hospitals may see higher fluctuations in either direction due to a smaller set of measures with less data to draw from
+=== PAGE 47
+47
+CMS Value-Based Programs 
+• Vermont's 6 PPS hospitals participate in the CMS Medicare Value-Based 
+Programs
+• Three CMS Medicare Value-Based Programs:
+• Value-Based Purchasing Program (began in 2012)
+• Hospital Acquired Conditions (HAC) Program (began in 2014)
+• Hospital Readmissions Reduction Program (began in 2012)
+• Incentivizes value-based, high-quality care that focuses on improving patient 
+safety, experience of care, mortality rates and discharge processes.  
+• CMS measures that were used to generate the star rating are also used to 
+measure performance in these programs.
+For more information and data related to these programs: FY 2027 IPPS Proposed Rule Home Page | 
+CMS
+=== PAGE 48
+48
+CMS Value-Based Programs: Value-Based 
+Purchasing Program CMS Value-Based Purchasing (VBP) Program***
+• Utilizes a 2% payment withhold, where a hospital can 
+earn back the 2%, receive less than the 2% for poor 
+performance, or obtain more than the 2% for strong 
+performance.
+• CMS calculates a hospital's score for each measure 
+based on either its:
+• Achievement score: how well a hospital performed 
+compared to its peers; or
+• Improvement score: how much a hospital improved 
+since the previous performance year.
+• No hospitals in Vermont received a 
+payment reduction for FY26.
+Value-Based 
+Purchasing 
+Program 
+Number of 
+Hospitals that 
+Received Any 
+Penalty 
+Reduction 
+Average Value-
+Based Incentive 
+Payment 
+Percentage**
+FY2026 0/6 +0.67%
+FY2025 4/6 -0.066%
+FY2024 2/5* +0.44% Measures in this program include: 
+• Mortality and complications 
+• Healthcare-associated infections
+• Patient safety
+• Patient experience 
+• Efficiency and cost reduction
+*No public data available for Northwestern Medical Center in FY2024
+**Files for FY 2024 Final Rule and Correction Notice | CMS; Files for FY 2025 
+Final Rule and Correction Notice | CMS; FY 2026 IPPS Final Rule Home Page | 
+CMS
+***Hospital Value-Based Purchasing | CMS
+=== PAGE 49
+49
+CMS Value-Based Programs: Hospital 
+Acquired Condition Reduction Program 
+CMS Hospital Acquired Condition (HAC)** 
+Reduction Program 
+• Applies a 1% payment reduction to hospitals 
+in the bottom quartile. 
+• 67% (4/6) of VT hospitals fell in 
+the lowest-performing quartile, 
+receiving a 1% penalty 
+reduction.
+Hospital-
+Acquired 
+Condition 
+Reduction 
+Program 
+Number of 
+Hospitals that 
+Received a 1% 
+Penalty 
+Reduction 
+Total HAC Score 
+Average* 
+FY2026 4/6 (67%) 0.63
+FY2025 4/6 (67%) 0.45
+FY2024 3/6 (50%) 0.29 Measures in this program include: 
+• CMS Patient Safety and Adverse Events 
+Composite 
+• Healthcare-associated infections
+VT hospitals have experienced worsened performance since FY24 
+as shown by the increasing average HAC score (a lower HAC 
+score is better). 
+*Files for FY 2024 Final Rule and Correction Notice | CMS; Files for FY 2025 Final Rule 
+and Correction Notice | CMS; FY 2026 IPPS Final Rule Home Page | CMS
+**Hospital Acquired Conditions | CMS
+=== PAGE 50
+50
+CMS Value-Based Programs: Hospital 
+Readmissions Reduction Program 
+CMS Hospital Readmissions Reduction 
+Program**
+• Hospitals can receive up to a 3% payment 
+reduction for excess readmission rates for a 
+subset of conditions.
+• VT hospitals have received lower 
+payment reduction percentages 
+over the last three fiscal years. 
+Hospital 
+Readmissions 
+Reduction 
+Program
+Number of 
+Hospitals that 
+Received Any 
+Penalty 
+Reduction 
+Average 
+Payment 
+Reduction 
+Percentage* 
+FY2026 5/6 (83.3%) 0.21%
+FY2025 6/6 (100%) 0.49%
+FY2024 6/6 (100%) 0.59%
+Measures in this program include the 30-day unplanned 
+readmission measures for: 
+• Acute myocardial infarction
+• Chronic obstructive pulmonary disease
+• Heart failure 
+• Pneumonia 
+• Coronary artery bypass graft surgery
+• Elective primary total hip arthroplasty and/or total knee 
+arthroplasty
+*Files for FY 2024 Final Rule and Correction Notice | CMS; Files for FY 2025 
+Final Rule and Correction Notice | CMS; FY 2026 IPPS Final Rule Home Page | 
+CMS
+**Hosp. Readmission Reduction | CMS
+=== PAGE 51
+51
+Quality of Care: Priority Areas Mentioned 
+in Hospital Narratives 
+Related to Safety of Care: 
+• Increasing accountability among clinical staff and leadership (i.e. using a quality metric dashboard accessible to 
+staff, adding FTE positions dedicated towards quality improvement initiatives, and providing update reports to 
+leadership teams). 
+• Providing training opportunities for clinical staff (i.e. Operating Room Simulation Lab).
+• Developing best practice protocols (i.e. hand hygiene practices).
+Related to Reducing Readmissions:
+• Improving care transitions for patients (i.e. identifying high-risk patients, engaging patients in community 
+resources, educating patients in self-management strategies, and integrating primary care physicians into 
+discharge planning meetings).
+Related to Mortality: 
+• Identifying specific areas of concern (i.e. analyzing rates by diagnosis).
+Additional: 
+• Engaging a quality taskforce dedicated to identifying areas of improvement. 
+=== PAGE 52
+52
+Wait Times: Introduction
+• Wait time data provides important information on accessibility of care, but in some cases 
+also can be used in determining safety and quality of care, for example in emergency 
+settings.
+• GMCB has collected the data in its current format for four years. 
+• For FY27, hospitals* submitted data to GMCB for all appointments requested from April 1, 
+2026 to April 14, 2026, reporting:
+• Referral lags: The percentage of appointments scheduled within 3 business days of 
+referral
+• Visit lags: The percentage of new patient appointments scheduled for the patient to be 
+seen within 14 days, 30 days, 90 days, and 180 days of their scheduling date 
+(including holidays and weekends)
+• CMS data on emergency department wait times is also analyzed, particularly measures 
+under OP-18: Median number of minutes spent in emergency department before leaving 
+visit**
+*Data at this time does not include Brattleboro Memorial Hospital due to missing submission
+**Not all VT hospitals appear on this measure – some may elect not to submit, not have the required data, or if they are CAHs, may ask the 
+data to be suppressed in CMS reporting. Case volumes that make up the measures may also differ from hospital to hospital.
+=== PAGE 53
+53
+Wait Times: Average Hospital Performance
+Year
+Percent of Patients 
+Scheduled for Visit 
+Within 3 Business 
+Days of Referral
+Percent of 
+Patients 
+Scheduled to 
+be Seen Within 
+14 Days
+Percent of 
+Patients Scheduled 
+to be Seen Within 
+15-30 Days
+Percent of 
+Patients 
+Scheduled to 
+be Seen 
+Within 31-90 
+Days
+Percent of 
+Patients 
+Scheduled to be 
+Seen Within 91-
+180 days
+Percent of 
+Patients 
+Scheduled to be 
+Seen Beyond 
+180 Days
+FY2027 64% 42% 18% 26% 11% 3%
+FY2026 59% 37% 21% 27% 9% 6%
+FY2025 64% 40% 21% 26% 10% 4%
+Referral Lag Visit Lag
+Source: Collected by GMCB - can be found under "Supplemental Workbook" for each hospital here
+=== PAGE 54
+54
+Hospital Owned Primary Care Wait Times: 
+Average Hospital Performance
+Year
+Percent of Patients 
+Scheduled for Visit Within 
+3 Business Days of 
+Referral
+Percent of Patients 
+Scheduled to be 
+Seen Within 14 Days
+Percent of 
+Patients Scheduled to be 
+Seen Within 15-30 Days
+Percent of Patients 
+Scheduled to be Seen 
+Within 31-90 Days
+Percent of Patients 
+Scheduled to be Seen 
+Within 91-180 days
+Percent of Patients 
+Scheduled to be Seen 
+Beyond 180 Days
+FY2027 63% 28% 22% 31% 16% 3%
+FY2026 66% 21% 21% 39% 12% 7%
+FY2025 42% 27% 16% 40% 14% 4%
+Referral Lag Visit Lag
+Source: Collected by GMCB - can be found under "Supplemental Workbook" for each hospital here
+=== PAGE 55
+55
+Median ED Arrival to Discharge Times: All Patients
+Hospital 1/1/2024-12/31/2024 7/1/2024-6/30/2025
+Gifford Medical Center N/A N/A
+Northwestern Medical Center 154 170
+University of Vermont Medical Center 261 270
+Brattleboro Memorial Hospital 180 186
+Central Vermont Medical Center 173 174
+Northeastern VT Regional Hospital N/A N/A
+Porter Medical Center 173 173
+Rutland Regional Medical Center 225 189
+Southwestern VT Medical Center 210 204
+Copley Hospital N/A 150
+North Country Hospital N/A N/A
+Grace Cottage Hospital 114 110
+Mt. Ascutney Hospital and Health Center N/A N/A
+Springfield Hospital N/A N/A
+• Measure OP-18a reports 
+median time in minutes 
+from arrival to discharge 
+for all discharged ED 
+patients, including 
+psychiatric/mental health 
+as well as transfer 
+patients
+• 8 hospitals reported 
+2024, 9 hospitals 
+reported mid-2024 to mid-
+2025. Some may elect not 
+to submit, not have the 
+required data, or if they 
+are CAHs, may ask 
+the data to be suppressed 
+in CMS reporting
+• Source: CMS Hospital 
+data archives (5-13-2026 
+release and 11-26-25 
+release)
+=== PAGE 56
+56
+Median ED Arrival to Discharge Times: 
+State/National Comparison – All Patients
+State/National 
+Overall
+1/1/2024-
+12/31/2024
+7/1/2024-
+6/30/2025
+Vermont 191 185
+National 167 167
+State by ED Volume 1/1/2024-
+12/31/2024
+7/1/2024-
+6/30/2025
+Vermont – Very High 
+Volume 261 270
+Vermont – High Volume N/A N/A
+Vermont – Medium Volume 186 183
+Vermont – Low Volume 167 162
+National by ED 
+Volume
+1/1/2024-
+12/31/2024
+7/1/2024-
+6/30/2025
+National – Very High 
+Volume 200 203
+National – High Volume 216 207
+National – Medium Volume 180 170
+National – Low Volume 128 129
+Very High: 60,000 or more patients per year
+University of Vermont Medical Center
+High: 40,000 to 59,999 patients per year
+Medium: 20,000 to 39,999 patients per year
+Central Vermont Medical Center
+Rutland Regional Medical Center
+Southwestern Vermont Medical Center
+Northwestern Medical Center
+Low: 19,999 patients or less per year
+Grace Cottage Hospital
+Brattleboro Memorial Hospital
+Source: CMS Hospital data archives (5-13-2026 release 
+and 11-26-25 release)
+=== PAGE 57
+57
+Median ED Arrival to Discharge Times: Psychiatric Patients
+Hospital 1/1/2024-12/31/2024 7/1/2024-6/30/2025
+Gifford Medical Center N/A N/A
+Northwestern Medical Center 156 229
+University of Vermont Medical Center 342 353
+Brattleboro Memorial Hospital 920 1022
+Central Vermont Medical Center 268 387
+Northeastern VT Regional Hospital N/A N/A
+Porter Medical Center 193 N/A
+Rutland Regional Medical Center 452 557
+Southwestern VT Medical Center 346 346
+Copley Hospital N/A 293
+North Country Hospital N/A N/A
+Grace Cottage Hospital N/A N/A
+Mt. Ascutney Hospital and Health Center N/A N/A
+Springfield Hospital N/A N/A
+• Measure OP-18c reports 
+median time in minutes from 
+arrival to discharge for 
+discharged 
+psychiatric/mental health ED 
+patients
+• 7 hospitals reported 2024, 7 
+hospitals reported mid-2024 
+to mid-2025. As with other 
+CMS measures, some may 
+elect not to submit, not have 
+the required data, or if 
+they are CAHs, 
+may ask the data to be 
+suppressed in CMS 
+reporting. Lower case 
+volumes for this measure 
+may also affect results.
+• Source: CMS 
+Hospital data archives (5-13-
+2026 release and 11-26-
+25 release)
+• Additional reporting by 
+VAHHS here
+=== PAGE 58
+58
+Median ED Arrival to Discharge Times: 
+State/National Comparison – Psychiatric Patients
+State/National 
+Overall
+1/1/2024-
+12/31/2024
+7/1/2024-
+6/30/2025
+Vermont 349 387
+National 262 259
+State by ED Volume 1/1/2024-
+12/31/2024
+7/1/2024-
+6/30/2025
+Vermont – Very High 
+Volume 342 353
+Vermont – High Volume N/A N/A
+Vermont – Medium Volume 330 402
+Vermont – Low Volume 878 726
+National by ED 
+Volume
+1/1/2024-
+12/31/2024
+7/1/2024-
+6/30/2025
+National – Very High 
+Volume 313 307
+National – High Volume 349 314
+National – Medium Volume 270 252
+National – Low Volume 195 194
+Very High: 60,000 or more patients per year
+University of Vermont Medical Center
+High: 40,000 to 59,999 patients per year
+Medium: 20,000 to 39,999 patients per year
+Central Vermont Medical Center
+Rutland Regional Medical Center
+Southwestern Vermont Medical Center
+Northwestern Medical Center
+Low: 19,999 patients or less per year
+Grace Cottage Hospital
+Brattleboro Memorial Hospital
+Source: CMS Hospital data archives (5-13-2026 release 
+and 11-26-25 release)
+=== PAGE 59
+59
+Key Takeaways
+• Observed hospital owned primary and specialty care appointment wait times 
+often exceed commonly cited standards such as those set for federal 
+marketplace plans under the ACA* – 15 days and 30 days, respectively
+• Overall referral and visit lags have remained relatively consistent; primary 
+care referral lags have improved since 2024, and visit lags have remained 
+relatively consistent
+• Median ED arrival-to-discharge times in Vermont appear higher compared to 
+nationwide medians, with particularly stark differences for psychiatric patient 
+visit times (Note: Low patient volumes as well as boarding/transfer 
+availability may skew some of these figures)
+*Source: Appointment Wait Time Secret Shopper Survey Technical Guidance for Qualified Health Plan (QHP) Issuers in the 
+Federally-facilitated Exchanges (FFEs)
+=== PAGE 60
+60
+Essential* Service Lines by Hospital
+Reported 
+available
+Not 
+reported 
+available
+*As defined by Act 146 (2026). Service line reporting submitted by hospitals to GMCB here
+Note: Brattleboro 
+data missing due to 
+lack of submission
+=== PAGE 61
+61
+Disclosed* FY27 Hospital Service Line 
+Changes
+Hospital Name Services Reduced / Eliminated /Consolidated Services Expanded
+Brattleboro Memorial Hospital (BMH) Birthing Center
+Copley Hospital Laboratory Services, Behavioral Health Services
+Gifford Medical Center Orthopedics
+Mt. Ascutney Hospital and Health Center Non-operative Outpatient Orthopedics and Sports 
+Medicine 
+North Country Hospital Sleep Lab, Primary Care, Cardiology 
+Rutland Regional Medical Center Cardiology, Digestive Services / Endoscopy, PET/CT, 
+Sleep Center, MH/SUD, preventative gynecologic 
+and obstetrical care
+Southwestern Vermont Medical Center Primary Care, Adolescent Inpatient Mental Health 
+(AIM) unit, Orthopedics, Mental Health/SUD 
+services
+Springfield Hospital Adult Day Program, ENT Gynecology, Orthopedics
+*Table above reflects changes mentioned in FY27 hospital budget narratives as well as recent media coverage and may not be exhaustive.
+=== PAGE 62
+62
+FEDERAL & STATE CONTEXT 
+AN EVOLVING POLICY LANDSCAPE
+=== PAGE 63
+63
+Federal Landscape
+Policy Description/Implication
+ACA marketplace subsidy 
+expiration
+Lower marketplace enrollment due to higher premiums without subsidy and lower cost (and 
+coverage) options for healthier people  more un- and under-insured
+Medicaid Financing/Changes 
+HR1
+Eligibility requirements  reduce Medicaid coverage  more uninsured
+Provider tax rate reduction  reduction in VT Medicaid funding ($18M General Fund Revenue/Yr)
+State Directed payment limited to 100% of Medicare (2028)  Funding for Blueprint for Health 
+PCMH & CHTs require to reduce payments 10%/year until achieving 100% of Medicare
+Rural Health Transformation 
+Fund (RHTP)
+One-time federal funding opportunity annually for five years, pending eligibility; more on Vermont-
+specific implementation later
+340 B/Other Rx changes in 
+Hospital setting
+OPPS FY27 proposed rule – reimburses 340B-aquired drugs at ASP –33.4% (while keeping non-340B 
+drugs at ASP +6%), while also increasing the OPPS conversion factor for non-drug items and services 
+by 8.44% to meet budget neutrality requirements.
+CMS Proposed Payment Rate 
+Increases
+2.4% for each IPPS and OPPS
+CMS ending Part D premium 
+stabilization program
+Part D premiums will go up; no option for VT seniors to switch to MA
+=== PAGE 64
+64
+Across the United States, hospitals 
+and service lines are closing, rural 
+communities often hit the hardest
+Nowhere to Go: Maternity Care Deserts Across the US | March of Dimes
+Fewer Beds, Bigger Questions: Addressing America’s Pediatric Inpatient Care Crisis | Pediatrics | American Academy of 
+Pediatrics
+Rural Hospital Closures - Sheps Center
+=== PAGE 65
+65
+Rural Health Transformation Program (RHTP)
+• The Rural Health Transformation (RHT) Program was authorized by the One Big Beautiful Bill Act (Section 71401 of Public Law 119-21) in 
+July 2025. It is a $50 billion federal initiative by CMS to strengthen rural healthcare access, quality, and outcomes across the United States.
+• The RHT Program seeks to further the following Strategic Goals:
+• Make rural America healthy again
+• Sustainable access
+• Workforce development
+• Innovative care
+• Tech innovation
+• The RHT Program is funded by the Centers for Medicare and Medicaid Services (CMS). 
+• Vermont’s Year 1 (FederalFiscal year 2026) award is $195 million.
+• Important to note that there are claw back provisions and that funding will be recalculated annually, giving the administration the authority to 
+claw back funds if states don't pass promised policies or demonstrate adequate progress toward stated goals. NRHA's Rural Health Voices 
+Blog | National Rural Health Association - NRHA - NRHA
+• Vermont’s RHT Program Goals are:
+1. Strengthening Vermont’s Rural Health Care Workforce;
+2. Increasing Access to Timely Care Across Rural Communities; and
+3. Leveraging Innovative Strategies to Increase Quality and Reduce Health Care Costs.
+Vermont's Rural Health Transformation Program | Health Care Reform
+=== PAGE 66
+66
+How RHTP Funding is Awarded
+• RHT is a cooperative agreement with 
+CMS. 
+• The vast majority of the RHTP funding 
+for year 1 is still being awarded. RHT-
+JFC-7.29.26.pdf
+• Funds flow through Notice of Funding 
+Opportunities (NOFOs) and Requests 
+for Proposals (RFPs) so hospitals and 
+provider entities have to watch for 
+funding opportunities and decide to 
+apply. Then their application has to be 
+selected. RHT Program RFPs/NOFOs 
+| Health Care Reform
+
+=== PAGE 67
+67
+Summary of Transformation and RHTP 
+Themes Identified in Hospital Narratives
+• Outside of the use of RHTP funding to support Blueprint Mental Health Integration 
+program, most hospitals state that these funds are not included in their FY27 budgets.
+• Hospital identified RHTP and transformation goal/target areas:
+• Information technology - unified HER, shared HRIS, AI clinical tools, AI Transcription
+• Specialty access and telehealth 
+• Transfers and transport
+• Home health, hospice, and palliative care 
+• Primary care residency program
+• Shared services
+• Mobil integrated health
+• Workforce development 
+• Facility capital improvements
+• GMCB will continue to monitor how these efforts are impacting hospital budgets
+=== PAGE 68
+68
+State Landscape
+Policy Description/Implication
+AHEAD & Hospital Global 
+Budgets
+No Option for Medicare GB at this time since state left AHEAD model; Medicaid Global Budgets are also no 
+longer an option given Federal position on VT authority.
+Transformation At this time, transformation is largely hospital-driven with AHS analytic and consultative support, but there 
+may be other areas the state may be able to better support transformation and essential services – for 
+example, through payment reform/rate setting, which could be used as a tool to establish guardrails and 
+incentives for hospital price reallocation from high margin/high volume service lines to those that have 
+been historically under funding (primary care, behavioral health, obgyn etc.)
+State-wide Strategic Plan AHS in collaboration with stakeholder to develop a plan, due January 15, 2028, that defines a shared vision 
+for improving access, quality, efficiency, and affordability of health care services in Vermont and identifies 
+relevant resources, opportunities, deficiencies, barriers, and strategies. 
+Reference-based pricing Veto of S.190 limits what is possible for implementation in FY2027; GMCB considering other tools to 
+establish readiness expectations for 2028; GMCB will also be exploring what can be done for Primary Care 
+in line with Act 68.
+Vermont Continues to Grapple with Two Key Problems:
+1. Health Care Affordability
+2. Maintaining Access to Essential Services
+=== PAGE 69
+69
+Affordability
+=== PAGE 70
+70
+Vermont Affordability Trends, 2000 - 2025
+• VT healthcare spending (255.4%) 
+has grown much faster than the 
+broader VT economy (48.6%). 
+• VT healthcare spending per person 
+(234.1%) rose dramatically faster 
+than household purchasing power 
+(median household income grew 
+115.4%). 
+• VT healthcare spending is not just 
+rising faster than overall inflation (80.8% 
+in New England); it is outpacing 
+most other major 
+affordability pressures impacting the 
+cost of living.
+=== PAGE 71
+71
+Vermont Health Care Affordability Crisis
+• In 2025, one in three (33%) households with private 
+insurance had a deductible over $4,000.
+• Average annual premiums for employer-sponsored 
+family plans grew 61.4% in Vermont between 2013 and 
+2024, compared to 49.2% nationally.
+• In Vermont's QHP market, average monthly premiums for 
+the lowest-cost bronze plan grew 95.3% between 2018 
+and 2026, far outpacing the national trend (33.7%) and 
+all other states.
+• The average commercial price across all Vermont 
+hospitals grew 36.9% between 2019 and 2025.
+Vermont 
+households spend 
+an average of 
+15-20%
+of their income on 
+health care.
+Sources: Bureau of Economic Analysis, KFF State Health Facts, GMCB Hospital Price Transparency Tool – Release 2
+=== PAGE 72
+72
+Vermont Hospital Market Concentration
+• Vermont has extremely high 
+hospital market concentration, 
+which is one of the primary 
+drivers of hospital price 
+increases.
+• 15 hospitals (including 
+Dartmouth-Hitchcock), average 
+VT hospital market HHI (range 0 
+– 10,000) was 7,608 in 2025.* 
+• 2 hospitals (13%) – High
+• 8 hospitals (53%) – Higher
+• 5 hospitals (33%) - Monopoly
+Figure displays a map of Vermont hospital market concentration as of 2025. *Introduction | Evolution of U.S. Hospital Markets | Health Care 
+Affordability Lab at Yale
+=== PAGE 73
+73
+Impact of Rising Health Care Prices
+Source: Zack Cooper: Who Pays for Rising Health Care Prices in the US? (VT Senate Committee on Health and Welfare Presentation, February 2025)
+When health care prices increase, patients and local economies bear the burden beyond 
+the health care market...
+=== PAGE 74
+74
+QHP Rate Requests 
+In 2026, approved average rate increases in 
+Vermont’s QHP market were the second lowest 
+in the country.
+Likewise, proposed average rate increases 
+requested by BCBS-VT and MVP for 2027 are 
+among the lowest in the U.S.
+… However, Vermont's starting point is the 
+highest marketplace premiums in the country.
+Carrier BCBS-VT MVP
+Market Individual Small Group Individual Small Group
+GMCB Approved 
+Rate Increase 9.6% 4.4% 1.3% 2.5%
+2026 Approved QHP Rate Increases
+Carrier BCBS-VT MVP
+Market Individual Small Group Individual Small Group
+Carrier Proposed 
+Rate Increase 5.2% 3.1% 7.8% 9.1%
+2027 Proposed QHP Rate Increases
+Source: KFF State Health Facts, Georgetown CHIR
+=== PAGE 75
+75
+Act 68 (2025)
+• Directs GMCB to implement hospital reference-based pricing (RBP) through 
+its provider rate setting authority, as soon as practicable, but not later than 
+hospital FY27.
+• In establishing rates, the Board shall consider:
+• Composition of communities served by the hospital (e.g., population health, 
+demographics, acuity, payer mix, labor costs, social risk factors)
+• Other factors that may affect the costs of providing care
+• Hospital’s role in Vermont’s health care system
+• Medicare or other benchmarks as appropriate
+• Align integration with the hospital budget review process.
+=== PAGE 76
+76
+Act 68 (2025)
+Establish 
+reference-based 
+pricing (RBP) for 
+hospital services 
+by FY27
+Review and 
+monitor RBPs 
+annually as 
+part of GMCB's 
+hospital budget 
+review process
+Identify 
+conditions for 
+modifications or 
+termination of 
+RBPs
+Expand to non-
+hospital services 
+(e.g. primary care)
+=== PAGE 77
+77
+VT Hospital Prices – Commercial Market
+• In 2025, the average commercial price 
+across all hospital services in Vermont was 
+453% of the Medicare-equivalent estimated 
+payment.
+• The average commercial price was 503% of 
+Medicare for outpatient services and 333% 
+of Medicare for inpatient services in 2025.
+• In 2022, Vermont's hospital commercial prices, 
+relative to Medicare, were the 14th highest in 
+the country according to RAND's methodology.
+Source: GMCB Hospital Price Transparency Tool – Release 2
+=== PAGE 78
+78
+VT Hospital Prices – Outpatient Outliers
+Service
+Category/Subcategory
+Lowest
+Avg. Price (%)
+Highest
+Avg. Price (%)
+Imaging - Total 507.9% 803.7%
+Imaging - CT 870.5% 1433.1%
+General Labs 334.9% 1169.7%
+Injections/Infusions
+(non-oncologic) 669.6% 4445.5%
+Chemotherapy 331.9% 5623.6%
+Service
+Category/Subcategory
+Lowest
+Avg. Price (%)
+Highest
+Avg. Price (%)
+Imaging - Total 434.2% 839.3%
+Imaging - CT 452.2% 910.5%
+General Labs 603.1% 920.5%
+Injections/Infusions
+(non-oncologic) 536.1% 5547.7%
+Chemotherapy* 950.4% 5706.1%
+VT PPS Hospitals VT Critical Access Hospitals
+*Chemotherapy services among CAHs only includes data from Copley, North Country, and 
+Porter due to low or no service countsSource: GMCB Hospital Price Transparency Tool – Release 2
+In 2025, imaging, labs, non-oncologic injections and infusions, and chemotherapy were 
+some of the highest priced services relative to Medicare across Vermont hospitals.
+=== PAGE 79
+79
+Efficiency – Operating Expense Growth
+
+=== PAGE 80
+80
+Efficiency – Expenses Exceeding Revenues
+
+=== PAGE 81
+81
+Maintaining Vermonters’ Access to 
+Essential Services
+=== PAGE 82
+82
+Hospitals are Needing to Make Difficult 
+Decisions
+
+=== PAGE 83
+83
+The Vermont Agency of Human Services 
+(AHS) is Implementing Multiyear 
+Transformation and RHTP Initiatives
+Act 68 mandate to reduce hospital spending for hospital fiscal year 2026 by not less than 2.5%. 
+Act 68 allocated $2 million to the Agency of Human Services (AHS) to award grants to hospitals in state 
+fiscal year 2026 that, “actively participate in health care transformation efforts to assist them in building 
+partnerships, reducing hospital costs for hospital fiscal year 2026, and expanding Vermonters’ access to 
+health care services, including those delivered via telehealth.”
+Vermont received $195 million in Year 1 (FederalFiscal year 2026) through the Rural Health 
+Transformation (RHT) Fund. The RHT Program is funded by the Centers for Medicare and Medicaid 
+Services (CMS). 
+ACT068 As Enacted.pdf
+=== PAGE 84
+84
+AHS Transformation Timeline
+Vermont Health Care Transformation
+=== PAGE 85
+85
+Overview of Board’s Role Around Hospital 
+Proposed Service Changes
+In 2025 the Vermont Legislature passed Act 68 (S.126), which gave 
+the State a stronger role in protecting patient access when a hospital 
+elects to reduce or eliminate services to stay within their established 
+budget.
+Act 146 of 2026 replaced Act 68, reimagining the process hospitals 
+must follow when proposing to eliminate a service line. This new 
+process now provides an opportunity for hospitals to confidentially 
+consult with the State as they contemplate an elimination and 
+requires the hospital to facilitate a community engagement period, 
+among other steps, if they decide to move forward with the 
+elimination.
+=== PAGE 86
+86
+Summary of Guiding Legislation
+Act 68 (2025)
+• Included reductions and eliminations (defined 
+in an interim policy)
+• Service change being proposed to comply with 
+a GMCB budget order
+• Service changes identified by AHS as part of 
+Act 167 transformation efforts exempt
+• Required 45-day advance notice to State and 
+public
+• Board authority to modify the hospital’s 
+budget or take such additional actions as the 
+Board deems appropriate to preserve access to 
+necessary services
+• Board must monitor impact
+Act 146 (2026)
+• Applies only to elimination of certain services
+• Provides a confidential period for the hospital 
+and State to explore situation and alternatives
+• Agency of Human Services required to evaluate 
+financial impact on health care system and 
+impact on access in the region 
+• Requires 60-day advance notice to State and 
+public
+• Hospital must facilitate a community 
+engagement process
+• Board authority to adjust the hospital’s budget
+• Board must monitor impact
+ACT146 As Enacted.pdfACT068 As Enacted.pdf
+=== PAGE 87
+87
+Tools for Exploring Service Line Changes 
+& Options for Avoiding Closure of 
+Essential Services
+• HRAP, while historically underfunded and not realized to its full potential, is an additional opportunity 
+for the Board to monitor access, gaps in care, and resources needed to address those gaps.
+• AHS transformation, RHTP, and statewide strategic plan (due in 2028) efforts are supporting the state 
+in looking forward to achieve system stability while preserving access to essential services.
+• Medicaid and commercial payment policies also present opportunities to address systemic 
+reimbursement challenges.
+• Important to recognize hospital autonomy in this area and strategic pricing decisions that lead to 
+particular services being more at risk.
+=== PAGE 88
+August 3, 2026  |  88
+Timeline and Public Comment
+• A special public comment period on the 
+FY27 hospital budget review is now 
+open through Friday, September 11
+• A schedule of upcoming hearings is 
+available on the GMCB webpage here.
+=== PAGE 89
+89
+Accessibility 
+Requests
+To receive this information in an 
+alternative format or for other 
+accessibility requests, please contact:
+Kristen LaJeunesse
+Communication & Information Officer
+Green Mountain Care Board
+Kristen.LaJeunesse@vermont.gov
+(802) 622-4134

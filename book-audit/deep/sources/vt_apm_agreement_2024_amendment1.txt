@@ -1,0 +1,555 @@
+=== PAGE 1
+1 
+ 
+Vermont All-Payer Accountable Care Organization Model 
+First Amended and Restated Vermont All-Payer Accountable Care Organization Model 
+Agreement 
+Amendment to Sections 1, 2, 6, 8, 9, 12 and Appendix 1 
+2024 Amendment No. 1 
+This amendment is made to the First Amended and Restated Vermont All-Payer Accountable 
+Care Organization Model Agreement (the “Agreement”) between the Centers for Medicare & 
+Medicaid Services (“CMS”), and the Governor of Vermont, the Green Mountain Care Board 
+(“GMCB”), and the Vermont Agency of Human Services (“AHS”) (collectively, “State” or 
+“Vermont”). Each Vermont entity and CMS are collectively referred to as “the parties.” 
+CMS wishes to amend the Agreement in order to: 
+1. extend the Performance Period of the Model so that the final Performance Year will end 
+on December 31, 2025; 
+2. revise and update the terms of the Agreement to reflect the extended Performance Period, 
+including updating formulas for calculating statewide financial targets and reporting 
+requirements;   
+3. include three new benefit enhancements as part of the Vermont Medicare ACO Initiative 
+beginning in PY8 related to home health, concurrent care for hospice beneficiaries, and 
+conditions of payment for inpatient services at Critical Access Hospitals (CAHs), and 
+expand on the existing Telehealth benefit enhancement;  
+4. in the event that one or more VMA ACOs selects an asymmetric risk arrangement for 
+PY8, require the GMCB to use its authority, as applicable, to eliminate annual 
+recoupment of funds from providers by such VMA ACOs in the absence of Shared 
+Losses at the end of PY8; 
+5. require additional reporting on the experience of providers and suppliers participating in 
+all-inclusive population-based payments in PY8; and 
+6.  require additional reporting on trends in usage of the Model’s benefit enhancements. 
+The parties therefore agree to amend the Agreement as set forth herein.  
+1. Effective Date. Unless otherwise specified, this amendment shall be effective when it is 
+signed by the last party to sign it (as indicated by the date associated with that party’s 
+signature).  
+2. Amendments to the Agreement. 
+ 
+a. Amendments to Section 1 (Definitions)  
+i. Sections 1.t and 1.u of the Agreement are hereby amended in their entirety 
+to read as follows: 
+ 
+t. “Performance Period” means the Performance Years this Agreement 
+will be in effect.  The Performance Period of this Model will begin on 
+=== PAGE 2
+2 
+ 
+January 1, 2017 and end at 11:59 PM (EST) on December 31, 2025, 
+unless this Agreement is terminated sooner in accordance with section 21, 
+in which case the Performance Period will conclude on the effective date 
+of termination. 
+ 
+u. “Performance Year (“PY”)” means the 12-month period beginning on 
+January 1 of each year during the Performance Period of this Agreement. 
+The first Performance Year is Performance Year 0 (2017), and the last 
+Performance Year is Performance Year 8 (2025).  
+ 
+b. Amendment to Section 2 (Agreement Term) 
+ 
+i. Section 2.c is hereby amended in its entirety to read as follows: 
+ 
+The Performance Period of this Model began on January 1, 2017, and will 
+end at 11:59PM (EST) on December 31, 2025, unless this Agreement is 
+sooner terminated in accordance with section 21, in which case the 
+Performance Period concludes on the effective date of termination. 
+ 
+c. Amendments to Section 6 (ACO Scale Targets) 
+ 
+i. Section 6.a of the Agreement is hereby amended in its entirety to read as 
+follows: 
+ 
+a. Percentage of Vermont Beneficiaries Aligned to an ACO.   Vermont 
+shall make efforts to maximize the percentage of Vermont Medicare 
+Beneficiaries and the percentage of Vermont All-payer Scale Target 
+Beneficiaries aligned to a Scale Target ACO Initiative, as defined in 
+section 6.b, relative to the following percentages for each Performance 
+Year (“ACO Scale Targets”):  
+ 
+ 
+   
+There are no ACO Scale Targets for PY6 (2023) through PY8 (2025).  
+ 
+Percent (%) By end of 
+PY1 (2018) 
+By end of 
+PY2 (2019) 
+By end of 
+PY3 (2020) 
+By end of 
+PY4 (2021) 
+By end of 
+PY5 (2022) 
+Vermont All-
+Payer Scale 
+Target 
+Beneficiaries 
+36% 50% 58% 62% 70% 
+Vermont 
+Medicare 
+Beneficiaries 
+60% 75% 79% 83% 90% 
+=== PAGE 3
+3 
+ 
+ii. Section 6.j.ii of the Agreement is hereby amended in its entirety to read as 
+follows: 
+ 
+The GMCB shall submit to CMS for its approval (1) no later than June 
+30th of the year following the conclusion of each of the Performance Years 
+1 through 5, the State’ s performance on the ACO Scale Targets described 
+in sections 6.a, 6.b, and 6.c; and (2) no later than June 30th of the year 
+following the conclusion of each of the Performance Years 6 through 8, 
+the percentage of Vermont All-Payer Scale Target Beneficiaries aligned to 
+a Scale Target ACO Initiative for each such Performance Year. 
+ 
+d. Amendments to Section 8 (Vermont Medicare ACO Initiative) 
+ 
+i. Section 8.a.iv is hereby amended in its entirety to read as follows: 
+ 
+iv. CMS will include as part of the Vermont Medicare ACO Initiative the 
+following benefit enhancements: Telehealth, Care Management Home 
+Visits, Post-discharge home visits, and 3-day SNF Rule payment waivers. 
+Beginning with Performance Year 8, CMS will include as part of the 
+Vermont Medicare ACO Initiative an expanded Telehealth benefit 
+enhancement, as well as the following additional benefit enhancements: 
+Home Health Homebound, Concurrent Care for Hospice Beneficiaries, 
+and Conditions of Payment for Inpatient Services Furnished at CAHs 
+(CAH 96-Hour Certification). 
+ 
+ii.  Section 8.b.vi is hereby amended in its entirety to read as follows: 
+ 
+vi. To the extent that is has the authority, the GMCB shall: 
+1. Review and approve an annual budget for each VMA ACO, 
+according to which budget, or as authorized by GMCB Rule 5.000 
+Section 5.400, the ACO shall expend Shared Savings Advance 
+Payments. 
+2. In the event that one or more VMA ACOs selects an asymmetric 
+risk arrangement in PY8, require each VMA ACO that has selected 
+an asymmetric risk arrangement to eliminate annual recoupment 
+of funds from providers and suppliers participating in all-inclusive 
+population-based payments in PY8 in the absence of VMA ACO 
+Shared Losses at the end of PY8.   
+ 
+iii. Section 8.b is hereby amended by adding the following paragraph as 
+Section 8.b.viii: 
+ 
+viii. In the event that one or more VMA ACOs selects an asymmetric risk 
+arrangement in PY8, no later than September 30, 2025, and in a form and 
+=== PAGE 4
+4 
+ 
+manner proposed by the State and approved by CMS, the GMCB shall 
+provide a report to CMS on the experience of providers and suppliers 
+participating in all-inclusive population-based payments in PY 8 with 
+payments made by such VMA ACOs in the first six months of 2025.  
+ 
+e. Amendments to Section 9 (Statewide Financial Targets) 
+ 
+i. Section 9.b.i.1 of the Agreement is hereby amended by striking the 
+formulas for calculating Vermont Medicare Total Cost of Care per 
+Beneficiary Growth for PYs 1-6 and PYs 1-7 and replacing with the 
+formula below:  
+Vermont Medicare Total Cost of Care per Beneficiary Growth: 
+ 
+For PYs 1-8: 
+�
+� 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀
+𝑀𝑀𝑀𝑀𝑀𝑀
+𝑉𝑉𝑉𝑉 𝑇𝑇
+𝑇𝑇𝑇𝑇𝑇𝑇2018
+𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝐴𝐴𝑇𝑇 𝑇𝑇 − 𝑀𝑀 𝑎𝑎𝑀𝑀 𝑎𝑎𝑉𝑉 𝑉𝑉𝑀𝑀 𝑀𝑀𝑉𝑉𝑀𝑀 𝑀𝑀𝑀𝑀𝑀𝑀 𝑉𝑉𝑉𝑉 𝑏𝑏𝑉𝑉𝑉𝑉 𝑉𝑉 𝑏𝑏 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑉𝑉𝑀𝑀𝑉𝑉 𝑏𝑏2018
+�
+� 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀
+𝑀𝑀𝑀𝑀𝑀𝑀
+𝑉𝑉𝑉𝑉 𝑇𝑇
+𝑇𝑇𝑇𝑇𝑇𝑇2017
+𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝐴𝐴𝑇𝑇 𝑇𝑇 𝑀𝑀 𝑉𝑉𝑉𝑉𝑐𝑐𝑀𝑀 𝑉𝑉𝑀𝑀𝑏𝑏𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀 𝑀𝑀𝑀𝑀𝑀𝑀 𝑉𝑉𝑉𝑉 𝑏𝑏𝑉𝑉𝑉𝑉 𝑉𝑉 𝑏𝑏 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑉𝑉𝑀𝑀𝑉𝑉 𝑏𝑏2017
+�
+∗
+� 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀
+𝑀𝑀𝑀𝑀𝑀𝑀
+𝑉𝑉𝑉𝑉 𝑇𝑇
+𝑇𝑇𝑇𝑇𝑇𝑇2019
+𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝐴𝐴𝑇𝑇 𝑇𝑇 − 𝑀𝑀 𝑎𝑎𝑀𝑀 𝑎𝑎𝑉𝑉 𝑉𝑉𝑀𝑀 𝑀𝑀𝑉𝑉𝑀𝑀 𝑀𝑀𝑀𝑀𝑀𝑀 𝑉𝑉𝑉𝑉 𝑏𝑏𝑉𝑉𝑉𝑉 𝑉𝑉 𝑏𝑏 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑉𝑉𝑀𝑀𝑉𝑉 𝑏𝑏2019
+�
+� 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀
+𝑀𝑀𝑀𝑀𝑀𝑀
+𝑉𝑉𝑉𝑉 𝑇𝑇
+𝑇𝑇𝑇𝑇𝑇𝑇2018
+𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝐴𝐴𝑇𝑇 𝑇𝑇 𝑀𝑀 𝑉𝑉𝑉𝑉𝑐𝑐𝑀𝑀 𝑉𝑉𝑀𝑀𝑏𝑏𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀 𝑀𝑀𝑀𝑀𝑀𝑀 𝑉𝑉𝑉𝑉 𝑏𝑏𝑉𝑉𝑉𝑉 𝑉𝑉 𝑏𝑏 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑉𝑉𝑀𝑀𝑉𝑉 𝑏𝑏2018
+�
+∗
+� 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀
+𝑀𝑀𝑀𝑀𝑀𝑀
+𝑉𝑉𝑉𝑉 𝑇𝑇
+𝑇𝑇𝑇𝑇𝑇𝑇2020
+𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀 𝑀𝑀𝑀𝑀𝑀𝑀 𝑉𝑉𝑉𝑉 𝐴𝐴𝑇𝑇 𝑇𝑇 − 𝑀𝑀 𝑎𝑎𝑀𝑀 𝑎𝑎𝑉𝑉 𝑉𝑉𝑀𝑀  𝑀𝑀𝑉𝑉𝑀𝑀 𝑀𝑀𝑀𝑀𝑀𝑀 𝑉𝑉𝑉𝑉 𝑏𝑏𝑉𝑉𝑉𝑉 𝑉𝑉 𝑏𝑏 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑉𝑉𝑀𝑀𝑉𝑉 𝑏𝑏2020
+�
+� 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀
+𝑀𝑀𝑀𝑀𝑀𝑀
+𝑉𝑉𝑉𝑉 𝑇𝑇
+𝑇𝑇𝑇𝑇𝑇𝑇2019
+𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝐴𝐴𝑇𝑇 𝑇𝑇 𝑀𝑀 𝑉𝑉𝑉𝑉𝑐𝑐𝑀𝑀 𝑉𝑉𝑀𝑀𝑏𝑏𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀 𝑀𝑀𝑀𝑀𝑀𝑀 𝑉𝑉𝑉𝑉 𝑏𝑏𝑉𝑉𝑉𝑉 𝑉𝑉 𝑏𝑏 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑉𝑉𝑀𝑀𝑉𝑉 𝑏𝑏2019
+�
+∗
+� 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀
+𝑀𝑀𝑀𝑀𝑀𝑀
+𝑉𝑉𝑉𝑉 𝑇𝑇
+𝑇𝑇𝑇𝑇𝑇𝑇2021
+𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀 𝑀𝑀𝑀𝑀𝑀𝑀 𝑉𝑉𝑉𝑉 𝑏𝑏𝑉𝑉𝑉𝑉 𝑉𝑉 𝑏𝑏 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑉𝑉𝑀𝑀𝑉𝑉 𝑏𝑏2021
+�
+� 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀
+𝑀𝑀𝑀𝑀𝑀𝑀
+𝑉𝑉𝑉𝑉 𝑇𝑇
+𝑇𝑇𝑇𝑇𝑇𝑇2020
+𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀 𝑀𝑀𝑀𝑀𝑀𝑀 𝑉𝑉𝑉𝑉 𝑏𝑏𝑉𝑉𝑉𝑉 𝑉𝑉 𝑏𝑏 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑉𝑉𝑀𝑀𝑉𝑉 𝑏𝑏2020
+�
+∗
+� 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀
+𝑀𝑀𝑀𝑀𝑀𝑀
+𝑉𝑉𝑉𝑉 𝑇𝑇
+𝑇𝑇𝑇𝑇𝑇𝑇2022
+𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀 𝑀𝑀𝑀𝑀𝑀𝑀 𝑉𝑉𝑉𝑉 𝑏𝑏𝑉𝑉𝑉𝑉 𝑉𝑉 𝑏𝑏 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑉𝑉𝑀𝑀𝑉𝑉 𝑏𝑏2022
+�
+� 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀
+𝑀𝑀𝑀𝑀𝑀𝑀
+𝑉𝑉𝑉𝑉 𝑇𝑇
+𝑇𝑇𝑇𝑇𝑇𝑇2021
+𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀 𝑀𝑀𝑀𝑀𝑀𝑀 𝑉𝑉𝑉𝑉 𝑏𝑏𝑉𝑉𝑉𝑉 𝑉𝑉 𝑏𝑏 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑉𝑉𝑀𝑀𝑉𝑉 𝑏𝑏2021
+�
+∗
+� 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀
+𝑀𝑀𝑀𝑀𝑀𝑀
+𝑉𝑉𝑉𝑉 𝑇𝑇
+𝑇𝑇𝑇𝑇𝑇𝑇2023
+𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀 𝑀𝑀𝑀𝑀𝑀𝑀 𝑉𝑉𝑉𝑉 𝑏𝑏𝑉𝑉𝑉𝑉 𝑉𝑉 𝑏𝑏 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑉𝑉𝑀𝑀𝑉𝑉 𝑏𝑏2023
+�
+� 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀
+𝑀𝑀𝑀𝑀𝑀𝑀
+𝑉𝑉𝑉𝑉 𝑇𝑇
+𝑇𝑇𝑇𝑇𝑇𝑇2022
+𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀 𝑀𝑀𝑀𝑀𝑀𝑀 𝑉𝑉𝑉𝑉 𝑏𝑏𝑉𝑉𝑉𝑉 𝑉𝑉 𝑏𝑏 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑉𝑉𝑀𝑀𝑉𝑉 𝑏𝑏2022
+�
+∗
+� 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀
+𝑀𝑀𝑀𝑀𝑀𝑀
+𝑉𝑉𝑉𝑉 𝑇𝑇
+𝑇𝑇𝑇𝑇𝑇𝑇2024
+𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀 𝑀𝑀𝑀𝑀𝑀𝑀 𝑉𝑉𝑉𝑉 𝑏𝑏𝑉𝑉𝑉𝑉 𝑉𝑉 𝑏𝑏 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑉𝑉𝑀𝑀𝑉𝑉 𝑏𝑏2024
+�
+� 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀
+𝑀𝑀𝑀𝑀𝑀𝑀
+𝑉𝑉𝑉𝑉 𝑇𝑇
+𝑇𝑇𝑇𝑇𝑇𝑇2023
+𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀 𝑀𝑀𝑀𝑀𝑀𝑀 𝑉𝑉𝑉𝑉 𝑏𝑏𝑉𝑉𝑉𝑉 𝑉𝑉 𝑏𝑏 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑉𝑉𝑀𝑀𝑉𝑉 𝑏𝑏2023
+�
+∗
+� 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀
+𝑀𝑀𝑀𝑀𝑀𝑀
+𝑉𝑉𝑉𝑉 𝑇𝑇
+𝑇𝑇𝑇𝑇𝑇𝑇2025
+𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀 𝑀𝑀𝑀𝑀𝑀𝑀 𝑉𝑉𝑉𝑉 𝑏𝑏𝑉𝑉𝑉𝑉 𝑉𝑉 𝑏𝑏 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑉𝑉𝑀𝑀𝑉𝑉 𝑏𝑏2025
+�
+� 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀
+𝑀𝑀𝑀𝑀𝑀𝑀
+𝑉𝑉𝑉𝑉 𝑇𝑇
+𝑇𝑇𝑇𝑇𝑇𝑇2024
+𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 𝑀𝑀𝑉𝑉𝑀𝑀 𝑀𝑀𝑀𝑀𝑀𝑀 𝑉𝑉𝑉𝑉 𝑏𝑏𝑉𝑉𝑉𝑉 𝑉𝑉 𝑏𝑏 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑉𝑉𝑀𝑀𝑉𝑉 𝑏𝑏2024
+�
+�
+1
+8
+− 1 
+ii. Section 9.b.i.2 of the Agreement is hereby amended by striking the 
+formulas for calculating the Performance Period Projected National 
+Medicare Total Cost of Care per Beneficiary Growth for PYs 1-6 and PYs 
+1-7 and replacing with the formula below:  
+Performance Period Projected National Medicare Total Cost of Care per 
+Beneficiary Growth: 
+ 
+PYs 1-8: 
+=== PAGE 5
+5 
+ 
+��𝑀𝑀 𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇 𝐹𝐹 𝐹𝐹𝑈𝑈2018
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇  𝐹𝐹 𝐹𝐹𝑈𝑈2017
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖 𝐴𝐴 2 017
+∗ �𝑀𝑀 𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇 𝐹𝐹 𝐹𝐹𝑈𝑈2019
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇  𝐹𝐹 𝐹𝐹𝑈𝑈2018
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖 𝐴𝐴 2 018
+∗ �𝑀𝑀 𝐴𝐴 𝑈𝑈 𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇 𝐹𝐹 𝐹𝐹𝑈𝑈2020
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇  𝐹𝐹 𝐹𝐹𝑈𝑈2019
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖 𝐴𝐴 2 019
+∗ �𝑀𝑀 𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇 𝐹𝐹 𝐹𝐹𝑈𝑈2021
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇  𝐹𝐹 𝐹𝐹𝑈𝑈2020
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖 𝐴𝐴 2 020
+∗ �𝑀𝑀 𝐴𝐴 𝑈𝑈 𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇 𝐹𝐹 𝐹𝐹𝑈𝑈2022
+𝑀𝑀𝐴𝐴 𝑈𝑈 𝑈𝑈𝑈𝑈 𝑇𝑇 𝑇𝑇  𝐹𝐹 𝐹𝐹𝑈𝑈2021
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖 𝐴𝐴 2 021
+∗ �𝑀𝑀 𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇 𝐹𝐹 𝐹𝐹𝑈𝑈2023
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇  𝐹𝐹 𝐹𝐹𝑈𝑈2022
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖 𝐴𝐴 2 022
+∗ �𝑀𝑀 𝐴𝐴 𝑈𝑈 𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇 𝐹𝐹 𝐹𝐹𝑈𝑈2024
+𝑀𝑀𝐴𝐴 𝑈𝑈 𝑈𝑈𝑈𝑈 𝑇𝑇 𝑇𝑇  𝐹𝐹 𝐹𝐹𝑈𝑈2023
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖 𝐴𝐴 2 023
+∗ �𝑀𝑀 𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇 𝐹𝐹 𝐹𝐹𝑈𝑈2025
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇  𝐹𝐹 𝐹𝐹𝑈𝑈2024
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖 𝐴𝐴 2 024
+�
+1
+8
+− 1 
+ 
+ 
+iii. Section 9.b.iv. is hereby amended in its entirety to read as follows:  
+ 
+iv. Projected National Medicare Total Cost of Care per Beneficiary 
+Growth Target Floor for Performance Year 1.  If the Annual Projected 
+National Medicare Total Cost of Care per Beneficiary Growth for 
+Performance Year 1, calculated as a growth rate using 2017 as a baseline, 
+is less than 3.7 percent but greater than or equal to 2.7 percent, then 3.7 
+percent will be used as the Performance Period Projected National 
+Medicare Total Cost of Care per Beneficiary Growth for purposes of 
+calculating Vermont’ s performance in Performance Year 1 on the 
+Medicare Total Cost of Care per Beneficiary Growth Target. In such a 
+case, the following formula will be used to calculate Performance Period 
+Projected National Medicare Total Cost of Care per Beneficiary Growth, 
+except as adjusted in sections 9.b.iii and 9.c. The Medicare Total Cost of 
+Care per Beneficiary Growth Target shall remain as 0.2 percentage points 
+less than Performance Period Projected National Medicare Total Cost of 
+Care per Beneficiary Growth, as described in section 9.b.i.3. 
+ 
+Performance Period Projected National Medicare Total Cost of Care per 
+Beneficiary Growth: 
+ 
+For PYs 1-8: 
+ 
+�1.037 ∗ �𝑀𝑀 𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇 𝐹𝐹 𝐹𝐹𝑈𝑈2019
+𝑀𝑀𝐴𝐴 𝑈𝑈 𝑈𝑈𝑈𝑈 𝑇𝑇 𝑇𝑇  𝐹𝐹 𝐹𝐹𝑈𝑈2018
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖 𝐴𝐴 2 018
+∗ �𝑀𝑀 𝐴𝐴 𝑈𝑈 𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇 𝐹𝐹 𝐹𝐹𝑈𝑈2020
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇  𝐹𝐹 𝐹𝐹𝑈𝑈2019
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖 𝐴𝐴 2 019
+∗ �𝑀𝑀 𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇 𝐹𝐹 𝐹𝐹𝑈𝑈2021
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇  𝐹𝐹 𝐹𝐹𝑈𝑈2020
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖 𝐴𝐴 2 020
+∗ �𝑀𝑀 𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇 𝐹𝐹 𝐹𝐹𝑈𝑈2022
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇  𝐹𝐹 𝐹𝐹𝑈𝑈2021
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖 𝐴𝐴 2 021
+∗ �𝑀𝑀 𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇 𝐹𝐹 𝐹𝐹𝑈𝑈2023
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇  𝐹𝐹 𝐹𝐹𝑈𝑈2022
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖 𝐴𝐴 2 022
+∗ �𝑀𝑀 𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇 𝐹𝐹 𝐹𝐹𝑈𝑈2024
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇  𝐹𝐹 𝐹𝐹𝑈𝑈2023
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖 𝐴𝐴 2 023
+∗ �𝑀𝑀 𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇 𝐹𝐹 𝐹𝐹𝑈𝑈2025
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇 𝑇𝑇  𝐹𝐹 𝐹𝐹𝑈𝑈2024
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖 𝐴𝐴 2 024
+�
+1
+8
+− 1 
+ 
+If the Annual Projected National Medicare Total Cost of Care per 
+Beneficiary Growth in Performance Year 1, calculated as a growth rate 
+using 2017 as a baseline, is less than 2.7 percent, then for purposes of 
+=== PAGE 6
+6 
+ 
+calculating Vermont’ s performance on the Medicare Total Cost of Care 
+per Beneficiary Growth Target, the Performance Period Projected 
+National Medicare Total Cost of Care per Beneficiary Growth for 
+Performance Year 1 will be calculated as 1.2 percentage points above the 
+MA USPCC FFS Projections for the same time period. In such a case, the 
+below formula will be used to calculate Performance Period Projected 
+National Medicare Total Cost of Care per Beneficiary Growth, except as 
+adjusted in sections 9.b.iii and 9.c. The Medicare Total Cost of Care per 
+Beneficiary Growth Target shall remain as 0.2 percentage points less than 
+Performance Period Projected National Medicare Total Cost of Care per 
+Beneficiary Growth, as described in section 9.b.i.3. 
+ 
+Performance Period Projected National Medicare Total Cost of Care per 
+Beneficiary Growth: 
+ 
+For PYs 1-8: 
+���𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇𝑇𝑇 𝐹𝐹𝐹𝐹𝑈𝑈2018
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇𝑇𝑇 𝐹𝐹𝐹𝐹𝑈𝑈2017
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖𝐴𝐴 2017
++ 0.012� ∗ �𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇𝑇𝑇 𝐹𝐹𝐹𝐹𝑈𝑈2019
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇𝑇𝑇 𝐹𝐹𝐹𝐹𝑈𝑈2018
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖𝐴𝐴 2018
+∗ �𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇𝑇𝑇 𝐹𝐹𝐹𝐹𝑈𝑈2020
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇𝑇𝑇 𝐹𝐹𝐹𝐹𝑈𝑈2019
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖𝐴𝐴 2019
+∗ �𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇𝑇𝑇 𝐹𝐹𝐹𝐹𝑈𝑈2021
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇𝑇𝑇 𝐹𝐹𝐹𝐹𝑈𝑈2020
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖𝐴𝐴 2020
+∗ �𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇𝑇𝑇 𝐹𝐹𝐹𝐹𝑈𝑈2022
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇𝑇𝑇 𝐹𝐹𝐹𝐹𝑈𝑈2021
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖𝐴𝐴 2021
+∗ �𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇𝑇𝑇 𝐹𝐹𝐹𝐹𝑈𝑈2023
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇𝑇𝑇 𝐹𝐹𝐹𝐹𝑈𝑈2022
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖𝐴𝐴 2022
+∗ �𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇𝑇𝑇 𝐹𝐹𝐹𝐹𝑈𝑈2024
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇𝑇𝑇 𝐹𝐹𝐹𝐹𝑈𝑈2023
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖𝐴𝐴 2023
+∗ �𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇𝑇𝑇 𝐹𝐹𝐹𝐹𝑈𝑈2025
+𝑀𝑀𝐴𝐴 𝑈𝑈𝑈𝑈𝑈𝑈𝑇𝑇𝑇𝑇 𝐹𝐹𝐹𝐹𝑈𝑈2024
+�
+𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 𝑖𝑖𝐴𝐴 2024
+�
+1
+8
+− 1 
+ 
+ 
+If the Annual Projected National Medicare Total Cost of Care per 
+Beneficiary Growth in Performance Year 1, calculated as a growth rate 
+using 2017 as a baseline, is equal to or greater than 3.7 percent, then the 
+Medicare Total Cost of Care per Beneficiary Growth Target shall be 0.1 
+percentage points less than the Performance Period Projected National 
+Medicare Total Cost of Care per Beneficiary Growth. That is, Vermont 
+shall limit the Vermont Medicare Total Cost of Care per Beneficiary 
+Growth to at least 0.1 percentage points less than the Performance Period 
+Projected National Medicare Total Cost of Care per Beneficiary Growth. 
+In such a case, the following formula will be used in lieu of the formula 
+described in 9.b.i.3. to calculate Vermont’ s performance on the Medicare 
+Total Cost of Care per Beneficiary Growth Target: 
+ 
+Medicare Total Cost of Care per Beneficiary Growth Target performance: 
+ 
+Performance Period Projected National Medicare Total Cost of Care per 
+Beneficiary Growth-Vermont Medicare Total Cost of Care per Beneficiary 
+=== PAGE 7
+7 
+ 
+Growth ≥0.001. 
+ 
+iv. Section 9.f of the Agreement is hereby amended in its entirety to read as 
+follows: 
+ 
+f. Financial Reports: For Performance Years 1 through 4, the GMCB, in 
+collaboration with AHS, shall submit to CMS quarterly reports on the 
+State’ s performance on the All-payer Total Cost of Care per Beneficiary 
+Growth Target (“Quarterly Financial Report”). For Performance Years 5 
+through 8, the GMCB, in collaboration with AHS, shall submit to CMS 
+two reports on the State’ s performance on the All-payer Total Cost of Care 
+per Beneficiary Growth Target (“Semi-Annual Financial Report”). The 
+first report will capture the State’ s performance over the first six months of 
+the PY, with six months of claims runout. The second report will capture 
+the State’ s performance for the entire PY, with six months of claims 
+runout. The second report will include information relevant to changes to 
+Medicaid payment rates, if any. Each Performance Year’ s All-payer Total 
+Cost of Care per Beneficiary Growth Target performance results shall be 
+finalized by December 31st of the following year. The Semi-Annual 
+Financial Report shall be submitted in a form and manner proposed by 
+the State and approved by CMS, and by a deadline determined by CMS. 
+ 
+f.     Amendment to Section 12 (Collaboration to Inform Potential Future Model)  
+i. Section 12 is hereby amended by adding the following paragraph as 
+Section 12.a. 
+ 
+a. No later than September 30, 2025, and in a form and manner proposed 
+by the State and approved by CMS, AHS shall provide a report to CMS on 
+trends in usage of the Model’ s benefit enhancements from PY1 through 
+mid-year of PY8, including any barriers AHS identified to uptake of 
+benefit enhancements by VMA ACOs or providers.  
+g.   Amendment to Appendix 1 (Statewide Health Outcomes and Quality of Care 
+Targets) 
+ 
+i. Appendix 1.b.iv is hereby amended in its entirety to read as follows:  
+ 
+iv. Suicide and Substance Use Disorder Target – Mental Health and 
+Substance Abuse-related Emergency Department Visits. The State must 
+reduce the rate of growth of emergency department (ED) visits with a 
+primary diagnosis of mental health or substance abuse condition across 
+=== PAGE 8
+8 
+ 
+payers in Vermont hospitals to 5% in PYs 1 and 2, 4% in PYs 3 and 4,  
+and 3% in PYs 5 through 8, using 2016-2017 growth as a baseline.  
+1) Calculation methodology. The State’ s performance for any given 
+Performance Year will be measured using Vermont Department of 
+Health’ s hospital discharge data and counting the number of ED 
+visits at Vermont hospitals with a primary diagnosis of mental 
+health or substance abuse condition. 
+2) CMS may determine that the State is not on track to meet this 
+milestone if, from Performance Year to Performance Year, the rate 
+of growth of ED visits due to mental health and substance abuse 
+conditions increases across payers in the State. For Performance 
+Years 3 and 4, due to the COVID-19 pandemic and its impact on 
+utilization and care patterns, any such increase as compared to the 
+preceding Performance Year will not be considered in determining 
+a Triggering Event.  
+ 
+ 
+3. Effect of Amendment. All other terms and conditions of the Agreement shall remain in full 
+force and effect. In the event of any inconsistency between the provisions of this amendment and 
+the provisions of the Agreement, the provisions of this amendment shall prevail. 
+ 
+[SIGNATURE PAGE FOLLOWS] 
+  
+=== PAGE 9
+9 
+ 
+Each party is signing this amendment on the date stated above that party’s signature.  If a party signs but 
+fails to date a signature, the date that the party receives the signing party’s signature will be deemed to be 
+the date that the signing party signed this amendment. This amendment may be executed in counterparts, 
+each of which shall be deemed to be an original, but all of which, taken together, shall constitute one and 
+the same amendment. This amendment may be signed by autopen or electronic signature (e.g., DocuSign 
+or similar electronic signature technology) and may be transmitted by electronic means.  Copies of this 
+amendment that are so executed and delivered have the same force and effect as if executed with 
+handwritten signatures and physically delivered. 
+ 
+CENTERS FOR MEDICARE & MEDICAID SERVICES  
+Date  _______________  
+By:  _________________________________________ 
+Liz Fowler, Director, Center for Medicare and Medicaid Innovation 
+ 
+GOVERNOR OF THE STATE OF VERMONT 
+Date  _______________ 
+By: _______________________________________________ 
+Philip B. Scott, Governor 
+ 
+GREEN MOUNTAIN CARE BOARD 
+Date  _______________ 
+By: _______________________________________________ 
+Owen Foster, Chair, Green Mountain Care Board 
+ 
+ 
+VERMONT AGENCY OF HUMAN SERVICES 
+Date  _______________ 
+By: ________________________________________________ 
+Jenney Samuelson, Secretary, Vermont Agency of Human Services 
+ 

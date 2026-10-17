@@ -1,0 +1,1049 @@
+State Health and Value Strategies is a program of the Robert Wood Johnson Foundation
+Prepared by Freedman HealthCare, LLC—Linda Green, Amy Lischko, and  
+Tanya Bernstein
+Introduction
+States and regional collaboratives are moving ahead with creating all-payer claims 
+databases (APCDs) to support health system measurement and improvement activities. 
+While aggregated claims databases provide an unprecedented view of care across 
+all settings, the process of collecting claims information alone does not improve 
+health care quality or reduce costs. T o effectively utilize the APCD and realize its full 
+potential, states have begun to produce reports and analyses based on APCD data—a 
+task requiring careful consideration and planning that has yielded many important 
+lessons.
+This paper examines the critical components of states’ APCD reporting efforts to date 
+and suggests essential steps to creating credible and robust analytics. Drawn from 
+interviews with APCD leaders, state-specific documents, and the experience of the 
+authors, this paper is intended to help states with functioning and developing APCDs 
+identify the building blocks necessary to create and evolve a comprehensive analytic 
+program. This information may also be useful to those charged with designing APCD 
+outputs, such as datasets and reports.
+This paper is the second in a series of two briefs sponsored by the Robert Wood 
+Johnson Foundation that aim to inform states on the quality and value of APCDs. 
+The first brief, written by the APCD Council, provides an overview of basic 
+APCD principles and future challenges, and lays the groundwork for this in-depth 
+examination. This paper discusses considerations for states that are planning for the 
+delivery of robust, meaningful data reports to support health system analysis.
+What Will the APCD Do?
+Creating the Reporting Plan
+During the initial development of an APCD, potential users describe wish lists 
+of reports, files, and analyses. The APCD team* may underestimate the urgency 
+of framing downstream resource requirements. An up-front statement of APCD 
+reporting goals prior to data collection reinforces data transparency and collaboration 
+across the stakeholder community. Enabling legislation usually articulates these goals, 
+which are often further refined in the rules or regulations for data collection and 
+data use. In some states, a data release review committee develops guidelines to assess 
+whether a data use application meets the APCD’s expressed goals.
+Engage stakeholders early and often: Health care stakeholders question how APCDs 
+will deliver information about quality, cost, and relative value. APCD teams find that 
+discussing the process of developing measures with stakeholders and setting out basic 
+* APCD teams are often comprised of the core staff responsible for managing all aspects of the APCD 
+process, and may include members from a single state agency, multiple state agencies, and any APCD 
+vendors.
+JANUARY 2014
+Realizing the Potential of All-Payer Claims Databases
+Creating the Reporting Plan
+ABOUT FREEDMAN HEALTHCARE
+Freedman HealthCare (FHC) is dedicated 
+to helping create a more efficient 
+health care system and ensuring broad 
+community buy-in to a future vision of 
+health care delivery. Through its work 
+with state health organizations, policy-
+makers, providers, and payers, FHC 
+assists diverse stakeholder groups in 
+adopting policies and programmatic 
+changes and using actionable data 
+to drive cost containment and quality 
+improvement. FHC has provided 
+exploratory analyses, customized 
+project management, sustainability 
+planning, and ongoing support to 
+11 states and regional organizations 
+launching consolidated data warehouses 
+with multipayer claims data.
+ABOUT STATE HEALTH AND VALUE 
+STRATEGIES
+State Health and Value Strategies, a 
+program funded by the Robert Wood 
+Johnson Foundation, provides technical 
+assistance to support state efforts 
+to enhance the value of health care 
+by improving population health and 
+reforming the delivery of health care 
+services. The program is directed by 
+Heather Howard at the Woodrow Wilson 
+School of Public and International 
+Affairs at Princeton University.
+ABOUT THE ROBERT WOOD 
+JOHNSON FOUNDATION
+For more than 40 years the Robert Wood 
+Johnson Foundation has worked to 
+improve the health and health care of all 
+Americans. We are striving to build  
+a national culture of health that will 
+enable all Americans to live longer, 
+healthier lives now and for generations 
+to come. For more information, visit 
+www.rwjf.org . Follow the Foundation 
+on Twitter at www.rwjf.org/twitter  or on 
+Facebook at www.rwjf.org/facebook .
+State Health and Value Strategies
+2  |  Realizing the Potential of All-Payer Claims Databases
+principles are critical elements in building trust. Stakeholders 
+can—and should—participate in developing the foundational 
+approach.
+APCD teams find that ongoing discussions with stakeholders 
+about the types of reports, the measurement strategy, the process 
+of rolling out reports, and the projected timeline help build 
+consensus about the approach and focus of data uses. Some states 
+convene advisory committees to provide input and feedback 
+about the overall design, implementation, and operations of an 
+APCD. At a minimum, as the reporting strategy evolves, the 
+APCD team should seek input from its advisory committee. 
+Meetings also offer an opportunity for open public comment 
+periods. Meeting with medical societies, hospital associations, and 
+consumer groups provide opportunities to explain methodologies. 
+Continuing the transparency theme improves the APCD’s 
+credibility well before the release of any public reports.
+Establish foundational principles for reporting: Massachusetts, 
+T ennessee, and Colorado, for example, have used some form 
+of the following concepts to shape the message about using an 
+APCD to compare providers:
+ § “No surprises”: Those entities being measured will have 
+an opportunity for review and comment prior to public 
+reporting.
+ § Show variation: Measurement should show meaningful 
+difference.
+ § Drive change: APCDs should measure activity or outcomes 
+that result from the measured entity’s behavior.
+These guidelines can be published as a statement of principle 
+incorporated into an advisory committee report (Colorado1, 
+T ennessee2) or posted in explanatory material on a website 
+(Massachusetts3).
+Confirm the overarching purpose of the APCD: States present 
+both very broad and very narrow data uses as justification for 
+developing APCDs. (For more information on what details 
+should be included in legislation or regulation, see The Basics 
+of All-Payer Claims Databases: A Primer for States.)4 When the 
+expressed use is narrow, the opportunity to use data outputs for 
+purposes not explicitly stated at the outset may curtail important 
+projects. This may come as a disappointment to potential data 
+users who have high expectations about the potential effect of 
+APCD data products. Conversely, with a broad range of reporting 
+and analytic possibilities, policy-makers must balance managing 
+expectations across a wide range of potential users.
+Some of the questions the APCD team should ask include:
+ § Will users be limited to representatives from state agencies?
+ § Are research projects by academics anticipated?
+ § May providers obtain data outputs and reports?
+ § What uses of the data should be explicitly excluded from 
+consideration?
+Establish a realistic, phased in timeline for reports: The plan 
+also sets expectations for rolling out analytics and reports. Data 
+collection startup usually consumes the better part of a year. At 
+that point, the pent-up demand for outputs is just slightly less 
+than the need to show something from the initial months or years 
+of planning and investment. A reporting plan with phases or tiers 
+of reporting demonstrates that the APCD team has a clear view 
+of how reports will evolve.
+When prioritizing types of reports and creating a timeline, the 
+APCD team needs to recognize that the data sets become more 
+accurate as more users work with the data and flag potential 
+issues. That information becomes the basis of a continuous 
+quality improvement cycle that connects data users to the APCD 
+team to data submitter to data manager.
+Considerations for Report Recipients
+Reports for Policy-Makers
+Include comprehensive information on disease incidence, 
+treatment costs, and health outcomes for informing and 
+evaluating state health policies and programs. APCD data can 
+provide state policy-makers with standardized and transparent 
+data to assess the financial effects of health care transformation 
+projects, assess demographic and geographic variations in health 
+care utilization, and provide a statewide overview of health care 
+costs and quality. APCD data supports analysis of:
+ § the cost of adverse health events
+ § differences in cost and utilization between the Medicaid and 
+commercially insured population
+ § variation in provider reimbursement rates and total medical 
+expenditures by type of service
+ § out-of-state health care migration patterns
+ § gaps in health prevention and promotion programs
+ § total cost of care for state residents
+States also use APCD data to evaluate the impact of existing 
+health care initiatives on targeted populations, such as evaluating 
+the comparative effectiveness of a patient-centered medical home 
+pilot for high-cost patients5 and the impact of tobacco cessation 
+programs before and after a public education campaign.
+Public program administrators use aggregated claims data to 
+examine patterns of utilization and the value of care delivered to 
+a given population in a geographic region. A well-known example 
+is the Dartmouth Atlas of Health Care, an ongoing policy project 
+conducted by the Dartmouth Institute for Health Policy and 
+Clinical Practice, which analyzes unexplained variations in health 
+care system utilization and costs. In a 2009 meta-analysis using 
+a large Medicare claims database, Dartmouth Atlas researchers 
+found that differences in nationwide Medicare spending had no 
+correlation to the health outcomes of beneficiaries6, a finding that 
+supported exploration of value-based purchasing arrangements in 
+lieu of traditional fee-for-service models.
+State Health and Value Strategies
+3  |  Realizing the Potential of All-Payer Claims Databases
+In a separate effort to document regional variations, Maine, New 
+Hampshire, and Vermont issued a tri-state comparative report 
+of health care utilization and costs by hospital service area.7 This 
+was the first multistate analysis of its kind using APCD data, and 
+it set the precedent for future regional analyses using aggregated, 
+multipayer health care claims.
+Peer Comparison Reports
+These reports are based on APCD data to create benchmarks 
+against which payers and providers can compare payment rates, 
+conduct performance analyses, and improve clinical quality. In 
+addition to informing policy and evaluating the effectiveness 
+of programs, APCDs offer important opportunities to compare 
+providers on cost and quality, and to identify promising practices 
+for improving care statewide.
+Cross-provider comparisons also provide state policy-makers 
+and insurers the tools to redesign benefit offerings. By using 
+standardized metrics across a variety of health care settings 
+and over time, APCD reports highlight high-quality, low-cost 
+providers. This information supports identification of highly 
+effective clinicians for use in a high-value provider network. 
+Finally, information about provider performance may be useful to 
+public payers that are designing alternative payment models such 
+as global payment and integrated programs for populations with 
+particular medical conditions.
+Minnesota has developed the most robust statewide peer 
+comparison-reporting program in support of health system 
+payment transformation. As mentioned in the previous section, 
+accurate provider identification is essential for states wishing 
+to measure providers’ performance over time, across medical 
+procedures, and to use these findings for cross-payer comparisons. 
+States using APCD data toward this goal have highlighted the 
+need for the following, described in more detail below:
+ § attribution methodology
+ § selection of process, quality, and outcome measures
+Consult with providers and carriers to review and select 
+a provider-patient attribution methodology: T o create 
+an effective peer comparison report, it is important to have 
+processes for assigning or “linking” patients to their providers, 
+and for creating an episode of care that identifies all services 
+rendered and providers visited for a particular illness, disease, 
+or medical event. A transparent process that establishes ground 
+rules and methodologies builds trust and engages state medical 
+societies and practitioners before a report rollout. Patient 
+attribution methods vary by state. Drawing from the Minnesota 
+experience, state considerations should include whether patients 
+are attributed to primary care physicians only or whether to 
+allow specialist attribution. In addition to determining the role 
+providers play in validating the final attribution list, the APCD 
+team should consider whether attribution should be:
+ § done prospectively or retrospectively;
+ § based on the number of health care encounters with a 
+specific practitioner or on the dollars spent at each one; or
+ § done at the individual or group level (such as a multisite 
+practice or an accountable care organization).
+Qualified Entity (QE) Certification Program
+Section 10332 of the Affordable Care Act created the QE 
+Certification Program to create a legal methodology for 
+publicly reporting physician-level quality measurements 
+based on Medicare claims data combined with other 
+payers’ data. States and data organizations may apply for 
+certification, which includes an extensive review of data 
+security; measurement calculation methodology; and prior 
+review by the provider community. This program is the only 
+avenue for publicly reporting Medicare quality data at the 
+provider level.
+Consult with provider representatives to review the potential 
+array of measures that can be calculated from claims data 
+and confirm that the measures report a meaningful aspect 
+of health system performance: APCD teams should consult 
+with provider representatives to review the potential array of 
+measures that can be calculated from claims data and confirm 
+that the measures report a meaningful aspect of the health 
+system performance, to provoke thoughtful discussion and 
+analysis of cross-payer variation. As a second level of review, an 
+advisory committee can provide input from a broader group of 
+stakeholders about whether the measures are consistent with the 
+APCD’s purpose. In selecting these measures, APCD teams must 
+consider:
+ § Whether measures are widely recognized and/or validated.
+ § Whether measures are actionable and provide a framework 
+for improvement. For example, process measures capture the 
+percentage of time that providers conform with standards 
+of clinical care. Public reporting may increase adherence 
+to national guidelines and in turn, improve health-related 
+outcomes in patients.
+ § Whether measures can be risk-adjusted to account for case-
+mix and severity.
+ § How measures will be calculated, whether to display means 
+or medians, and whether these calculations are statistically 
+stable.
+ § Criteria for redacting measures and excluding them from 
+publications.
+T o narrow the conversation, the APCD team might start 
+reviewing the list of the 459 measures identified by the federal 
+Qualified Entity Certification Program8 drawn largely from the 
+National Quality Foundation’s approved measure set created by 
+expert panels. Calculation methodologies for these measures are 
+widely available. CMS and national expert groups have reviewed 
+State Health and Value Strategies
+4  |  Realizing the Potential of All-Payer Claims Databases
+and approved these measures. Working with stakeholders, the 
+APCD team can assess whether these measures meet the state’s 
+health system reporting needs.
+Develop and implement a process to share findings with 
+providers before making peer comparison reports public: This 
+private preview allows providers time to review the measures, 
+understand the calculation methodology, and identify any 
+discrepancies with their own independent assessment. Providers 
+may also wish to review the underlying data to determine whether 
+the findings are representative of their patient population and 
+practice for which states need a secure data-sharing model. An 
+extended pilot period of provider previews over several reporting 
+cycles may also allay concerns.
+During this extended preview period, the APCD teams may 
+be able to report aggregated measures for all providers in ways 
+that do not require naming providers. For example, report 
+the performance of all providers in a particular category by 
+geographic area (e.g., east vs. west). Other groupings include 
+measures stratified by provider specialty. Aggregated information 
+allows providers to compare themselves against all providers, 
+across all payers, and across types of coverage.
+Unique provider identifiers similarly capture all the different 
+identifiers for a single provider into one identifier. Neither 
+National Provider Identifiers nor carrier-assigned names and 
+numbers allow accurate identity resolution. State licensing boards 
+include non-practicing clinicians. When building provider 
+comparisons or average costs-per-procedure, APCD teams 
+should allow sufficient time for creation and validation of the 
+provider registry. For example, simply adding a room or suite 
+number to the provider file allows the APCD to mail hard copy 
+confirmations or reports.
+Consumer Decision Support
+An initial impetus for an APCD is the state’s interest in providing 
+consumers with health care quality and cost information through 
+an interactive, web-based decision support tool. In light of recent 
+experience in designing such websites, APCD teams should assess 
+the effectiveness of such initiatives against the investment needed 
+for design and operation of the consumer-facing tools.
+Consumer Engagement and Experience with Similar 
+Websites
+A cornerstone of the Institute for Healthcare Improvement’s 
+T riple Aim is patient satisfaction and engagement.9 Activated 
+patients, those who take an active role in their own health 
+care, participate in the health care decision-making process, 
+including providers’ relative cost and quality. Research suggests 
+that this group has improved health outcomes and experience 
+a higher quality of care, as compared to their less activated 
+counterparts. 10,11 Other research asserts that those enrolled in 
+consumer-driven (CDHPs) and high-deductible health plans 
+(HDHPs) were more likely than those enrolled in traditional 
+plans to exhibit “cost-conscious behaviors” such as using cost 
+information and trying to find information about their doctors’ 
+costs from sources other than their health plan.12 T o date, none 
+of the states with consumer-facing reporting tools has conducted 
+studies to examine whether consumer health care decision-
+making has shifted based on use of this information. Anecdotal 
+reports from states and health plans suggest that consumers are 
+not yet using available tools to compare costs across providers. 
+Looking ahead, the growing prevalence of CDHPs and HDHPs 
+may help drive more traffic to these resources.
+Understanding the long lead time for developing reports and 
+data, the APCD team might anticipate greater interest and 
+therefore plan for provider comparison tools and reports. These 
+comparisons foster two streams of health system improvement—
+first, increasing consumer activation through access to reports that 
+support informed health care decisions. Second, the comparative 
+data create a standard information base to support provider 
+competition based on quality and value.
+Several APCDs support consumer choice with reports on websites 
+and other publicly available information platforms. Three states 
+that have used the APCD in this way are Massachusetts, New 
+Hampshire, and Colorado. The Massachusetts “My Health Care 
+Options” website displays cost and quality measures for hospital-
+based procedures. Consumers are able to search by provider 
+name, condition, or procedure, or a radius around a particular 
+ZIP code  .13 The New Hampshire “Health Cost” website provides 
+procedure-specific cost information by provider to generate 
+an estimated cost of a procedure or test by facility. Using 
+additional information provided by insurers, the tool also uses the 
+consumer’s deductibles and co-pays to show estimated out-of-
+pocket and total costs, and the precision of the estimate.14 The 
+Colorado APCD website has reports showing regional variation 
+in amounts paid for “procedures of interest” to Colorado’s active 
+lifestyle.15
+When the purpose of the website is defined and possibly 
+narrowed, APCD teams must address the following topics:
+ § Design requirements: Comply with state requirements for 
+website access standards, including low vision, literacy levels, 
+and multiple languages.
+ § Privacy and security: State websites may not support tools and 
+functions (e.g., auto-populate, returning visitors) that Web 
+users have come to expect. Therefore, APCD teams must 
+identify the limitations on functionality and expectations.
+ § Clearly portraying measures: Consumers’ preferences for health 
+care information appear to diverge from other purchases. Star 
+and dollar sign ratings accompany most online products and 
+services, as well as the number of “likes.” But, as Hibbard16 
+notes in a 2012 Health Affairs article, consumers responded 
+more favorably to words such as “careful with your health 
+care dollars” than to symbols when comparing health care 
+services.
+State Health and Value Strategies
+5  |  Realizing the Potential of All-Payer Claims Databases
+Consumer-Facing Website Design and Maintenance: Since 
+public reporting from APCDs is still in early stages, a national 
+template like MONAHRQ®, which is used for hospital discharge 
+data, is not yet in place. APCD teams may therefore rely on the 
+data management contractor handling the intake and production 
+of analytic files to obtain relevant expertise and capacity to guide 
+website development. APCD teams may also seek assistance 
+from other states with operational websites. New Hampshire, 
+for example, shared its in-house developed HealthCost website 
+structure and code with Maine. Massachusetts outsourced the 
+design and construction of its website. Some measure design 
+information is available on the Massachusetts website as well.
+Once established, websites require frequent updates and new 
+content to retain the public’s attention. APCDs teams might 
+refresh a website once or twice a year. The state’s reporting plan 
+should therefore include adding new or expanded measures on an 
+established timeline.
+In lieu of a state-designed and maintained website, APCD teams 
+can contract or collaborate with a private firm that specializes 
+in providing consumer-oriented health care cost comparisons. 
+Although not fully tested, examples of companies with this type 
+of capacity include Consumer Reports, Castlight Health, and 
+Healthcare BlueBook, as well as Angie’s List that collects and 
+displays user reviews.
+Finally, if the level of investment in a website is prohibitive, 
+APCD teams should consider publishing cost and quality 
+information in PDF format and made available for download 
+from a state agency website. Report options include a single 
+overall document or smaller regional subsets. APCD teams can 
+optimize documents for searches with browser-based search tools 
+to allow distribution of the information.
+Developing Meaningful APCD Reports
+The Action Plan
+Create a Public Relations Strategy to Inform and Engage 
+Multiple Stakeholders
+Given that many states are just beginning to create uniform 
+quality and performance measures, stakeholders greet new APCD 
+reports with doubt and resistance. T o mitigate these challenges, 
+APCD teams can develop briefing materials tailored to the 
+questions and concerns of particular subgroups. Even within 
+the spirit of transparency and engagement, the APCD team 
+must develop a strong response to difficult issues. The APCD 
+team should develop talking points and FAQs developed in 
+advance (without the pressure of an editorial deadline), as well as 
+periodically update these documents with new materials.
+Typical concerns—and suggestions for addressing them—
+include:
+ § Concern: “The researcher will make incorrect conclusions 
+when analyzing data from the APCD.”
+ § Sample response: “A rigorous formal data use application 
+process confirms the researcher’s experience and capability to 
+manage and analyze this data. The researcher must describe 
+the purpose of the project and the qualifications of the 
+research team.”
+ § Concern: “Individual patients will be identified.”
+ § Sample response: “Privacy and confidentiality are critical 
+to the integrity of the APCD. The state will never identify 
+individual patients in reports. We will create rules to 
+maximize privacy by restricting when certain information 
+can be displayed, also called the ‘minimum number of 
+observations’; using only the first three digits of ZIP codes in 
+public reports; and grouping information into age bands (e.g. 
+adults ages 18 to 54).”
+ § Concern: “My health information will be available to anyone 
+who wants it.”
+ § Sample response: “Researchers and analysts that want to use 
+APCD data must submit a formal application describing the 
+purpose of the project and the researcher’s qualifications. A 
+limited APCD file displays a unique identification number 
+and does not show name and address. None of the APCDs 
+in operation and delivering data currently have the capability 
+to obtain personal records.”
+ § Concern: “As a physician, I am going to be unfairly rated 
+based on this data.”
+ § Sample response: “The APCD’s reporting plan contains 
+reporting principles. The APCD will meet with providers 
+to discuss measurement principles, anticipated reports, and 
+related methodologies. In addition, preliminary private 
+previews of an anticipated public report will allow time 
+to review outliers and provide explanations. This principle 
+is consistent with the reporting standards for the CMS 
+Qualified Entity Program (see inset) that provides a rigorous 
+framework for public, provider-specific report development 
+and dissemination.”
+Design and Monitor Data Quality Processes
+Accurate and credible reporting rests on the quality of the 
+incoming data and continuous efforts to monitor data standards. 
+Once the APCD data collection process is developed, APCD 
+teams must ensure the process includes a multifaceted approach 
+to reviewing metrics, baselines, and trends on a periodic basis.
+An effective process combines knowledge of health care claims, 
+knowledge of the state or regional health insurance market, and 
+awareness of the organization and relationships among clinicians, 
+hospitals, group practices, and accountable care organizations. 
+Data management firms and aggregators often provide support 
+and assistance in these areas. Local health care system insight is 
+also an asset for this process.
+State Health and Value Strategies
+6  |  Realizing the Potential of All-Payer Claims Databases
+Actively Manage Approvals to Waive Data Submission 
+Requirements
+The APCD data manager receives files and reviews the structure 
+and format of the incoming information against a set of 
+established criteria. Existing APCDs’ lists of intake edits range 
+from several hundred to nearly 1,000 separate tests at intake. 
+These standards, sometimes called intake “edits” or “checks,” 
+should answer the following questions:
+ § Does the file contain the required information in the 
+required format?
+ § Do the data elements conform to the established 
+specifications?
+ § Are insurance carriers complying with the data submission 
+standards?
+APCD teams must play an active role in data compliance efforts. 
+Exemptions or waivers to data submission requirements create 
+gaps or holes in some aspects of the data. Therefore, APCD teams 
+should work closely with data analysts who are building APCD 
+reports to understand the implications of these exemptions before 
+agreeing to such. If unfamiliar with data intake processes, APCD 
+teams may defer entirely to the data intake manager to review 
+carriers’ requests to waive certain requirements (sometimes called 
+“waivers,” “variances,” or “exceptions”). In such arrangements, 
+the data manager should provide regular reports showing the 
+approved waivers, the reason for the approval, and the effect on 
+the accuracy and completeness of the data.
+Require the Data Manager to Deliver Expanded Data Quality 
+Reports as New Uses are Phased-In
+As the APCD matures and the volume of data grows, APCD 
+teams should require the data manager to add additional 
+reporting requirements based on increasingly sophisticated quality 
+checks and trend analyses. These include but are not limited to:
+ § Adding and reviewing unique member identifiers and 
+ensuring consistency over time.
+ § Adding analytic enhancements such as risk scores, episode 
+groupers, and geocoding based on intended reporting 
+objective and state-specific preferences.
+ § Benchmarking to other data sources that report on similar or 
+overlapping cohorts (e.g., hospital discharge datasets, carrier 
+Medical Loss Ratio reports, System for Electronic Rate and 
+Form Filing, data submitted to state insurance departments).
+ § Examining population trends using per member per month 
+calculations, pharmacy claims, percentage of members 
+utilizing specific services each month, number of covered 
+lives, etc.
+ § Running cross-file comparisons (i.e., do all members with 
+claims have a valid member record for the corresponding the 
+month of service).
+Custom Reports or Off-the-Shelf Products?
+APCD data collection and reporting structures are still 
+evolving. Of the nine states that have issued any reports or 
+data sets:
+ § Six states use one vendor for data collection, 
+production, and report development. Vendors have 
+different approaches to altering existing reporting 
+packages and providing custom reports.
+ § Two states use at least two vendors, one for data 
+collection and production and at least one other vendor 
+for report development/analysis.
+ § One state performs all of the work on state-managed 
+systems.
+APCDs find that using a single vendor results in fewer hand-
+offs between vendors, increases accountability for data 
+quality, and may produce reports and data more quickly 
+than if a second vendor must also load and review the data. 
+APCDs may want to maximize flexibility by requiring any 
+data collection vendor to produce one or more data extracts 
+as deliverables in addition to any specific reports.
+Conduct Data Quality Processes and Create Feedback Cycles 
+with Carriers
+Recognizing that data quality improves incrementally, APCD 
+teams must allow sufficient time to conduct data quality 
+processes, including validation and benchmarking. Furthermore, 
+prerequisites for detailed provider comparisons include 
+meticulous provider identification, agreement upon attribution 
+methodologies, and a mechanism for previewing reports with 
+providers.
+Given the complexities of provider-level reporting, APCD teams 
+have turned to population-based reporting to demonstrate that 
+data has been collected and has been used to develop information. 
+Examples of measures in this category include counts- or rates-
+per-thousand-per-year of:
+ § insured individuals by type of payer
+ § individuals with certain disease conditions
+ § prescriptions in general
+ § variations in cost of a particular procedure (e.g., MRI) by 
+geographic region
+A second reporting phase could look at variation by type of 
+facility, illness burden (risk scores), and smaller geographic units 
+as well as adding quality of care measures. Subsequent phases 
+would layer on provider specific reporting.
+State Health and Value Strategies
+7  |  Realizing the Potential of All-Payer Claims Databases
+Throughout all phases of the quality assurance process, APCD 
+teams should maintain consistent communication with carriers 
+and offer feedback cycles. APCD teams should ask carriers to 
+identify a single point of contact for questions or concerns related 
+to data submission. Moreover, APCD teams should provide 
+timely reports to each carrier about the status of submitted claims 
+information and annual summary reports on the quality of data. 
+Finally, APCD teams should hold one-on-one meetings with data 
+submitters to discuss specific concerns or goals.
+Delivering the Data
+Frequency of Data Releases and Reports
+Similar to other complex datasets with multiple sources and 
+years of data, APCDs become more robust over time. As data 
+submitters improve compliance and more data is gathered and 
+analyzed, the APCD can offer more highly aggregated and 
+complex information. Once the data are more robust and the 
+production process routinized, APCD teams should plan to 
+release increasingly detailed reports in chronological waves; 
+effectively building off preliminary datasets to generate more 
+detailed examinations of health care services.
+Reporting Formats
+States should provide APCD data and reports at varying levels of 
+granularity and in varied formats to meet the needs of different 
+types of users. The table below shows the most common types of 
+APCD data deliverables and the likely user groups for each. Each 
+common type of data deliverable is also discussed below.
+Public and Limited Datasets
+The most common method of providing APCD data is via 
+standardized data packages released semi-annually or annually 
+through a data release review process. These datasets support cost 
+and utilization evaluations as well as for analyses of episodes of 
+care, readmissions, ambulatory care visits, and other projects that 
+look at care delivered in multiple settings. The most likely user 
+group of a public dataset are researchers and analysts for projects 
+that do not require member-specific information. Examples 
+include frequency and average cost of specific procedures by 
+geographic area or member age and sex; incidence of chronic 
+disease; and the frequency of claims for prescription drug 
+categories. A limited dataset typically includes no more than 
+two of the following items from the HIPAA list of protected 
+health information: dates of service, date of birth, or ZIP code. 
+Academic researchers typically use Limited datasets to examine 
+topics such as patient safety; outcomes based on administrative 
+data; relative illness burden through risk score analysis; and 
+patterns of care.
+Pre-Defined Reports
+States have the option to deliver a slate of reports that examine 
+some aspect of health system performance. The Colorado APCD 
+presented pre-defined reports during its first year of operation 
+and expects to incorporate the information into its interactive 
+Web tool. While Colorado provided these reports to the public 
+at no charge, this type of report—whether publicly displayed or 
+available only to a limited set of users—may be of value to state 
+agencies that monitor aspects of health system utilization and 
+cost.
+Web-Enabled Data Analysis Tools for State Agency 
+Users
+In developing APCD reporting plans for state agencies, a frequent 
+question is whether state employees will be able to access the 
+data without requiring the services of a programmer. Existing 
+data analysis tools based on a data warehouse or “mart” is an 
+option for APCD teams. As a part of upgrading Medicaid MMIS 
+and implementing business intelligence tools, states that receive 
+processed APCD datasets should consider extending the MMIS 
+tools to the APCD files to allow state employees to access the data 
+without requiring the services of a programmer. Some states see 
+APCD files as the driver to overall expansion and improvement of 
+health care analytic capacity among state staff.
+Custom Datasets
+When needed, APCD teams should consider one-time specialty 
+requests. For example, the Colorado APCD currently provides 
+custom data extracts to approved data users. In considering this 
+reporting category, APCD teams should take into account the 
+additional work needed to produce these custom datasets and the 
+Table 1: Common Data Dissemination Strategies
+Public and 
+Limited 
+Datasets
+Predefined 
+Reports
+Web-
+Enabled 
+Data 
+Analysis
+Custom 
+Datasets
+Web 
+Displays
+Secure Data 
+Review
+State Agency Users ü ü ü ü
+Researchers ü ü
+Policy-makers ü ü ü
+Provider Performance Measures ü ü
+Consumers ü
+State Health and Value Strategies
+8  |  Realizing the Potential of All-Payer Claims Databases
+time needed to conduct quality reviews to determine the volume 
+of these reports to produce.
+Web Displays
+Interactive features on websites allow the user to customize a 
+publicly available report. For example, “heat maps” based on 
+geocoding show variation across a state or city. The codes are 
+based on street, city, and ZIP code information. Public health 
+officials highly value heat map displays to monitor health status 
+and particular types of service utilization. Codes based on 
+information in the member eligibility file will be sufficient for 
+annual updates. Geocodes themselves are not publicly reported 
+unless the state explicitly allows the release of such data to 
+qualified users.
+Secure Data Review Tools
+Secure data exchanges allow review of the records used to 
+calculate a particular measure, particularly when developing 
+provider-level reports. Accepted practice is to create capacity for 
+providers to retrieve a report showing this information. States 
+can fulfill this capacity by creating a secure file access point 
+where registered users may retrieve reports. Other data systems 
+offer a secure portal for data retrieval. Planning for this capacity 
+is especially important if the state plans to become a Qualified 
+Entity and include Medicare data in provider-level quality 
+reporting.
+The Future of APCD Reporting Programs
+Among promising uses discussed in this brief, APCD teams are 
+increasingly exploring ways in which APCD analytics can support 
+evaluation of health reform initiatives, analysis of alternative 
+benefit structures, support for comparative effectiveness research, 
+and greater overall transparency for consumers.
+In addition to producing valuable data and reports, APCDs can 
+offer organizational efficiencies by establishing a consolidated 
+database from which state agencies, qualified researchers, and 
+certain other private entities can request customized databases 
+to serve various state-approved purposes. This administrative 
+simplification is a primary aim of the current Massachusetts APCD 
+program, and affords increased data security; creation of a shared, 
+standardized resource among all state agencies; increased speed 
+in generating customized reports and datasets; and reduction in 
+duplicative data requests and their associated costs for payers. In 
+addition, Massachusetts has also used its APCD to support an 
+alternative risk adjustment methodology under the Affordable 
+Care Act’s Premium Stabilization Programs, and plans to use 
+APCD data to review and compare public payers at increasingly 
+detailed levels of service.
+Looking ahead, the next generation of APCDs in states like 
+Connecticut and New York hope to build even greater reporting 
+capacity by aligning claims-based quality information with 
+outcome results drawn from clinical data sources like health 
+information exchanges. T o accomplish these ambitious visions, 
+technical designers are building processes that uniquely identify 
+each individual in the APCD so that other data sets can use the 
+same processes to facilitate matching. Analysis drawn from both 
+data sources could then support clinical effectiveness research 
+to identify best practices statewide. States that take the time to 
+carefully consider and develop their APCD reporting programs 
+will maximize the use of these databases and set an important 
+foundation for the credibility and usefulness of their data.
+Case Study: Vermont
+Reporting Objective
+The Vermont APCD, known as the Vermont Healthcare Claims 
+Uniform Reporting and Evaluation System (VHCURES), began 
+collecting claims data in 2007. On July 1, 2013, the Green 
+Mountain Care Board assumed responsibility for VHCURES. 
+Originally conceptualized to serve as a resource for provider 
+performance measurement and outpatient health care utilization, 
+administrators have since expanded their objective to more 
+broadly focus on policy and program evaluation. Specifically, 
+policy-makers in Vermont are interested in using APCD data to 
+support changes to statewide health care delivery; shifting the 
+state from its current reactive “sick care” approach, to one that 
+emphasizes proactive prevention and wellness programs. T owards 
+this end, the Vermont APCD has been used to study the flow 
+of patients and dollars among Vermont’s primary care providers 
+using newly defined primary care service areas, and has been 
+mined as part of a tri-state study and report on the variation 
+in health service utilization and expenditures in northern New 
+England.
+Setting their sights on future reporting objectives, Vermont has 
+expressed strong interest in using APCD analytics to evaluate the 
+effectiveness of PCMH and accountable care organization models, 
+and explore their longitudinal impact on health care costs.
+Successes
+Important state successes have included open sharing of APCD 
+claims data with the Health Care Cost Institute, a not-for-profit 
+corporation that maintains commercial claims contributed by 
+four of the nation’s largest health insurers (Aetna, Humana, 
+Kaiser Permanente, and United Healthcare), and continuous 
+engagement of physicians and stakeholders in the APCD 
+implementation process.
+State Health and Value Strategies
+9  |  Realizing the Potential of All-Payer Claims Databases
+Challenges
+In pursuit of their reporting objectives, the state has encountered 
+several challenges, including patient-provider attribution issues 
+(i.e., determining which patients go to which providers), difficulty 
+in maintaining unique member ID’s over time, and difficulty 
+in linking citizens’ claims data to the prevention, wellness, and 
+medical care coordination programs in which they participate. 
+While these issues have not been completely resolved, Vermont 
+is trying to fill in some of the gaps by exploring the possibility of 
+integrating their health insurance exchange data, as well as claims 
+from other sources, with the APCD.
+Key Lessons Learned
+Having a clear vision and strong political will increase likelihood 
+of producing meaningful reporting outputs on time and within 
+budget; capturing and regularly updating provider registries 
+facilitate accurate patient-provider attribution; and utility of 
+APCD to serve program evaluation purposes (assuming complete 
+and sufficient data).
+Case Study: Minnesota
+Reporting Objective
+In an effort to address privacy concerns surrounding the 
+collection of claims data, Minnesota’s enabling legislation 
+restricted the use of the APCD solely for purposes of provider-
+peer comparisons. T oward this end, administrators outlined a 
+reporting program divided into three stages:
+ § Stage One: Consisted of calculating peer groupings based on 
+various categories of illness and delivering these reports back 
+to the providers for their review.
+ § Stage Two: Consisted of using APCD reports on provider 
+variability (including quality and cost) to support broader 
+policy messages.
+ § Stage Three (not realized to date): Will focus on developing a 
+consumer-facing interface to share these peer comparisons 
+and provider tiering reports with the public.
+Successes
+Specific APCD reporting objective, as initially defined by the 
+legislation, allowed Minnesota administrators to move forward 
+with implementing the APCD very quickly. The Minnesota 
+Department of Health, administrator of the APCD, was also 
+recently certified by CMS as one of four new qualified entities, 
+allowing them to publicly report on providers using Medicare 
+data and certifying their methodology on cost and quality 
+measures.
+Challenges
+The narrow nature of Minnesota’s enabling statute has posed 
+considerable challenges to optimizing the APCD’s potential. 
+Only having de-identified data has made it difficult for providers 
+to validate the peer grouping reports generated from the APCD; 
+that is, if something in the reports looks “off,” providers currently 
+have no way of cross-referencing their electronic health records 
+or medical practice notes. Minnesota has also encountered 
+budgetary challenges in developing the consumer decision-
+support tool, and has experienced push back from payers and 
+providers concerned that publicly available comparisons may 
+adversely impact their market share and revenue.
+Key Lessons Learned
+Best practices include carefully selecting language used in 
+enabling legislation, with particular consideration of how 
+this language may impact APCD reporting and future uses; 
+concentrating on specific health and quality-related reporting 
+objectives before considering cost comparisons; and maintaining 
+carrier and provider engagement throughout entire APCD 
+implementation process.
+Case Study: New Hampshire
+Reporting Objective
+The New Hampshire Comprehensive Healthcare Information 
+System began collecting claims data in 2005, and launched the 
+public-facing website, www.nhhealthcost.org, two years later. 
+New Hampshire originally envisioned using the APCD as an 
+“available resource for insurers, employers, providers, purchasers of 
+health care and state agencies to continuously review health care 
+utilization, expenditures and performance in New Hampshire 
+and to enhance the ability of New Hampshire consumers and 
+employers to make informed and cost-effective health care 
+choices.” Since implementation, New Hampshire state agencies 
+have generated reports that focus on health care service and 
+health insurance premium costs and cost drivers, enrollment, and 
+disease patterns. These reports have included information on 
+the prices of various health procedures by region and provider, 
+benchmarking of carrier payment rates, legislative changes to 
+insurance laws, and robust analyses of the differences between the 
+Medicaid and commercially insured populations.
+State Health and Value Strategies
+10  |  Realizing the Potential of All-Payer Claims Databases
+Successes
+The APCD and New Hampshire cost website remain 
+trusted sources of health care information. Throughout 
+their implementation efforts, New Hampshire has worked 
+collaboratively with carriers and stakeholders to preemptively 
+identify barriers to claims collection and reporting, improve 
+efficiencies, and discuss mediation efforts.
+Challenges
+One of the biggest challenges currently facing New Hampshire’s 
+HealthCost website is developing a cost-effective resource that 
+responds to the needs of all users, including patients, employers, 
+health care providers, insurers, and policy-makers. Providing 
+data on a full range of health care services in such a way the 
+data are useful, appropriate, and reliable to an array of users will 
+continue to be an ongoing challenge. New Hampshire hopes to 
+make better use of Medicaid and Medicare data on these fronts, 
+recognizing the uses of public payer data will differ than those of 
+commercial insurance data.
+Key Lessons Learned
+Maintaining similar data submission rules among states with 
+APCD laws will help to facilitate data collection and reduce errors 
+in the claims submission process. Maintaining relationships with 
+all interested stakeholders and creating an effective process for 
+reporting data in the public domain are key components of a 
+project like this.
+Case Study: Colorado
+Reporting Objective
+The Colorado APCD, administered by the Center for Improving 
+Value in Health Care (CIVHC), began collection of claims data 
+in early 2012. As part of the initial planning process, Colorado 
+policy-makers identified “improving the health of all Coloradans” 
+and achieving the T riple Aim of better health, better health care, 
+and lower costs, as their broad mission.
+T o achieve these goals, the Colorado APCD Advisory Committee 
+established specific, increasingly complex public reporting 
+milestones with corresponding target completion dates. From 
+the outset, three reporting “tiers” set very clear analytic and 
+reporting priorities and expectations that were included as 
+mandatory requirements in CIVHC’s procurement of an outside 
+data management vendor. The objective of Tier 1 reports, first 
+made available on www.cohealthdata.org in the same year data 
+collection began, was to support the public health community 
+and inform statewide health reform policy activities. These 
+reports illuminate high-level variation in state and regional cost 
+patterns and utilization rates of common health care services. All 
+reports available on the Colorado APCD website can be displayed 
+by county and three digit ZIP code groupings and can be further 
+stratified by age range and gender.
+Tier 2 reports released in 2013 include data that has been 
+processed to reflect the underlying health status of individual 
+patients. This data processing (or risk adjustment) facilitates 
+reporting on the prevalence and costs to treat chronic diseases 
+(asthma and diabetes, initially), analysis of cost drivers and 
+comparison of observed to expected values based on underlying 
+health status. Tier 3 reports, which will be available beginning 
+in 2014, will provide consumer-focused information including 
+comparative cost and quality data on a named facility and 
+provider group basis. These reports are intended to allow 
+consumers to meaningfully shop for and make informed, value-
+based decisions regarding their health care. In addition to the 
+reports available on www.cohealthdata.org, the Colorado APCD 
+has developed a data release process under which entities may 
+request access to custom reports and analytic data sets for public 
+health, research, and health care operations purposes.
+Successes
+The Colorado APCD has served as a model for working 
+collaboratively with various stakeholders, including insurance 
+carriers and the medical community, to advance the APCD 
+mission with the least amount of resistance. Clear expectations 
+for what the APCD was expected to achieve, and the vetting of 
+this vision with the data management vendor, has resulted in 
+meaningful reporting outputs completed on time and within 
+budget.
+Challenges
+Although established by legislation, the Colorado APCD 
+receives no state general fund dollars to support development, 
+implementation or ongoing operations. This, along with the 
+Colorado APCD’s broad mission, have created some tension 
+between public reporting requirements and a need to release data 
+in ways that generate revenues to support ongoing operations. 
+All releases of APCD data for public health, research, and health 
+care operations purposes must comply with all HIPAA and other 
+privacy and security requirements as well as joint FTC/DOJ anti-
+trust, safe-harbor guidelines. CIVHC is also currently working to 
+enhance their consumer-facing website by thinking strategically 
+about what types of data to present to the public, and exploring 
+ways to present it (i.e. minimizing the number of clicks it takes to 
+access information).
+Key Lessons Learned
+Consumer-facing reports and Web applications require a 
+significant investment of resources; importance of fostering strong 
+collaborative relationships with all interested stakeholder groups, 
+providing them with regular updates, and asking for continuous 
+feedback on an ongoing basis; value of defining an APCD vision, 
+State Health and Value Strategies
+11  |  Realizing the Potential of All-Payer Claims Databases
+public reporting objectives, and a data release process that allow 
+for the broadest potential use of data.
+Case Study: Massachusetts
+Reporting Objective
+In 2008, Massachusetts conferred authority on the Division of 
+Healthcare Finance and Policy (DHCFP) to create an APCD that, 
+among other things, would provide policy-makers with important 
+information on the variations in health insurance premiums, 
+variations in the benefit mix offered by carriers, and statewide 
+variations in health care utilization.
+Following a two-year planning phase in which DHCFP 
+engaged payers and other stakeholders in a collaborative process 
+to address potential concerns, the final APCD regulations 
+identified “administrative simplification” as the main vision 
+for the APCD, and provided a clear framework for data release. 
+Up until that point, several Massachusetts state agencies 
+were separately collecting claims data from payers for various 
+policy and research purposes, and were struggling with the 
+substantial lag time between requesting and receiving the 
+necessary claims information from multiple payers, as well as 
+the consistency in data across payers. The APCD would create 
+a single data warehouse, updated monthly, from which state 
+agencies, providers, payers, researchers and others could request 
+information for a variety of purposes detailed in the data release 
+regulations. This would ensure that all agencies were using the 
+same data, as well as relieve the burden on carriers.
+Successes
+The Massachusetts APCD is successfully used as a shared data 
+source, achieving the goal of administrative simplification. 
+Currently, several Massachusetts state agencies are using the 
+APCD data including the Massachusetts Health Insurance 
+Exchange, the Massachusetts Health Policy Commission, 
+the Department of Public Health, and more than a dozen 
+researchers. APCD data is used for population analyses, cost 
+trend monitoring, development and operation of a state-based 
+risk adjustment program under the ACA, and there are plans 
+for a consumer website. Massachusetts continues to hold regular 
+meetings with carriers to vet potential concerns as the state 
+amends its claims data requests and validates findings based on 
+APCD data. Massachusetts has also convened a committee of 
+external stakeholders to review data requests from researchers and 
+others. In addition, recent health reform legislation (Chapter 224 
+passed in 2012), codified the APCD as a source for mandated 
+state analysis, introducing a new administrative architecture and 
+giving it clear legal authority.
+Challenges
+Storing, securing, and maintaining large amounts of data can 
+present a challenge. Hardware, software, and operations need to 
+be tuned to accept data from more than 120 payers that submit 
+data to the Massachusetts APCD monthly. Releasing detailed 
+data in a HIPAA compliant manner poses legal, policy, and 
+operational challenges.
+Key Lessons Learned
+Collecting detailed and standardized information about cost, 
+utilization, plan design, and providers from public and private 
+payers substantially increased interest in the APCD and expanded 
+its potential uses among state agencies; importance of continuous 
+stakeholder engagement; and importance of identifying “state 
+purpose” as the “business model” of the database.
+Endnotes
+1.  Report to the Governor and General Assembly. Center for Improving Value in Health Care, Report to the Governor and General Assembly, March 
+2011, http://civhc.org/getmedia/dea9fe16-b5e0-4afa-a7f8-0275a500deff/Report-to-Colorado-Governor-and-General-Assembly-2011-03-01.pdf.aspx 
+(accessed December 2013).
+2.  Public Reporting Subcommittee: Recommendations for Public Reporting Principles. T ennessee Health Insurance Commission, (no date given), 
+http://www.civhc.org/getattachment/News-Events/Events-List/All-Payer-Claims-Database-Advisory-Committee/TN-recommendations-for-public-
+reporting.pdf.aspx/ (accessed December 2013).
+3. MyHealthCareOptions: About The Ratings. Commonwealth of Massachusetts, 2010, http://hcqcc.hcf.state.ma.us/Content/AboutTheRatings.aspx 
+(accessed January 2014).
+4.  The Basics of All-Payer Claims Databases: A Primer for States. The Robert Wood Johnson Foundation, January 2014.
+5.  Maine Patient Centered Medical Home Pilot Halfway Report. Dirigo Health Agency. 2011. http://www.dirigohealth.maine.gov/Documents/
+ME%20PCMH%20Pilot_Halfway%20Report%20WEB%20version_March%202012.pdf (accessed December 2013).
+6. Fisher, E et al. Health Care Spending, Quality and Outcomes: A Dartmouth Atlas Project T opic Brief. The Dartmouth Institute for Health Policy 
+and Clinical Practice, February 2009.
+State Health and Value Strategies
+12  |  Realizing the Potential of All-Payer Claims Databases
+7. Finison, K et al. Tri-State Variation in Health Services Utilization and Expenditures in Northern New England: Commercially Insured Population 
+Under Age 65 in ME, NH, and VT . Onpoint Health Data, June 2010.
+8. List of Standard Measures under the Qualified Entity Certification Program. Qualified Entity Certification Program for Medicare Data, 
+January 2012, https://www.qemedicaredata.org/_layouts/QECP_Docs/QECP_Standard_Measures_List.xlsx (accessed December 2013).
+9. Berwick, DM, Nolan TW , and Whittington J. “The T riple Aim: Care, Health, and Cost.” Health Affairs, 27(3): 759-769, May 2008, http://
+content.healthaffairs.org/content/27/3/759.abstract (accessed December 2013).
+10. Hibbard JH, Stockard J, Mahoney ER, T usler M. “Development of the Patient Activation Measure (PAM): Conceptualizing and Measuring 
+Activation in Patients and Consumers.” Health Services Research, 39(4 Pt 1):1005-26, August 2004, http://www.ncbi.nlm.nih.gov/pmc/articles/
+PMC1361049/ (accessed December 2013).
+11. Hibbard, JH and Greene J. “What the Evidence Shows about Patient Activation: Better Health Outcomes and Care Experiences; Fewer Data 
+on Costs.” Health Affairs, 32(2):207-214, February 2013, http://www.ncbi.nlm.nih.gov/pubmed/23381511 (accessed December 2013).
+12.  Findings from the 2012 EBRI/MGA Consumer Engagement in Health Care Survey. Employee Benefit Research Institute, December 2012, http://
+www.ebri.org/publications/ib/index.cfm?fa=ibDisp&content_id=5139 (accessed December 2013).
+13. MyHealthCareOptions. Commonwealth of Massachusetts, 2010, http://hcqcc.hcf.state.ma.us/Content/AboutTheRatings.aspx (accessed October 
+2013).
+14. NH HealthCost, 2013, www.nhhealthcost.org (accessed October 2013).
+15. Colorado All Payer Claims Database, 2013, http://www.cohealthdata.org/#/home (accessed October 2013).
+16. Hibbard, JH, and Greene J. “An Experiment Shows That A Well-Designed Report on Costs and Quality Can Help Consumers Choose High-
+Value Health Care.” Health Affairs, 31(3): 566, March 2012, http://www.ncbi.nlm.nih.gov/pubmed/22392666 (accessed December 2013).
