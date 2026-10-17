@@ -1,0 +1,259 @@
+=== PAGE 1
+Race and Ethnicity: 
+Population in Focus Report
+Vermont Behavioral Risk Factor Surveillance 
+System (BRFSS), 2024
+March 2026
+
+=== PAGE 2
+Introduction – Race and Ethnicity
+The Vermont Department of Health recognizes that many social, economic and environmental inequities made worse by structural 
+oppression, marginalization and racism influence the data we collect and report. We are continuously working to better collect and share 
+data that reflect the lived experiences of all Vermonters. If you have questions or concerns on how this data was sourced or analyzed that 
+are not addressed in the report, please refer to our BRFSS Webpage. For more information on different data sources managed by the 
+Health Department, including what indicators are available and who to contact to find out more, please check our Data Encyclopedia. This 
+report focuses on health-related factors and behaviors experienced by adults who self-reported having any disability and adults who 
+reported having no disability, compared to the overall statewide rate.
+Data on the prevalence of certain indicators may be influenced by differences in age distribution across racial and ethnic groups. 
+This report focuses on race and ethnicity to understand disparities in health-related factors, behaviors and outcomes experienced by 
+Vermont adults. Respondents were asked to provide their ethnicity and race in a series of questions.
+Their responses are categorized into the following groupings for final reporting: 
+• American Indian or Alaska Native
+• Asian, Native Hawaiian or Other Pacific Islander
+• Black or African American
+• Hispanic
+• Another Race
+• Multi-racial (persons who selected more than one race or ethnicity), and 
+• White.
+Vermont Department of Health 2
+=== PAGE 3
+Methodology
+The Behavioral Risk Factor Surveillance System (BRFSS) is a telephone survey conducted annually among adults aged 18 and older. The 
+Vermont BRFSS is completed by the Vermont Department of Health in collaboration with the Centers for Disease Control and Prevention 
+(CDC). All U.S. states, Washington D.C., and most U.S. territories participate in the BRFSS. BRFSS surveys are completed by approximately 
+7,000 adults each year, from across the state. Completion of the BRFSS depends on a participant’s ability to independently complete an 
+over-the-phone survey with a personal cellphone or on a landline phone in a private residence. Adults who are incarcerated, living in group 
+housing, without a personal phone, or who have hearing impairments or other physical, emotional, or cognitive disabilities that preclude 
+their ability to independently complete such a survey may not be adequately represented in this data. Results are weighted to be 
+representative of the entire adult population. 
+Throughout this report, all estimates reported represent percentages. To ensure statistical reliability and decrease instances of data 
+suppression, estimates represent the average of 2 years of data combined. Statistical significance is calculated by comparing the 95% 
+confidence intervals of two or more values. A 95% confidence interval is a range of values and can vary due to the size of a particular 
+population or how consistently participants responded to an item. All comparisons are made to the overall statewide estimate, and 
+statistically significant differences are noted. Sometimes, when comparing the responses of two or more groups, the overall percentage 
+may look very different, but the two numbers are not statistically different. Other times, the two values may be very close but differ 
+statistically. While this report notes statistical differences, we encourage you to consider meaningful differences: does the disparity merit 
+a targeted intervention, show a real change in health, or otherwise mean something important to the community (statistics aside). 
+For more information on the BRFSS and to see other reports, please visit the Vermont Department of Health BRFSS webpage at: 
+https://www.HealthVermont.gov/BRFSS
+3Vermont Department of Health
+=== PAGE 4
+Demographics
+Race and Ethnicity N %
+American Indian or Alaska Native (AIAN) 71 1
+Asian, Native Hawaiian, Pacific Islander (ANHPI) 274 2
+Black or African American 156 1
+Hispanic 353 3
+Multiracial 257 3
+Another race 102 1
+White 14,068 89
+N = Unweighted number of respondents; % = Weighted percent 
+BRFSS 2023-2024 results
+Vermont Department of Health 4
+=== PAGE 5
+Health Status Indicators
+VT AIAN ANHPI Black Hispanic Multiracial
+Another 
+race White
+General health fair or 
+poor1 14 33* 11 17 13 22* . 14
+Health insurance 
+coverage (ages 18-64)1 94 94 98 88 91 91 99 95
+Have a personal health 
+care provider1 91 82 90 85 78* 87 93 91
+Delayed health care due 
+to cost, past year1 8 . . . 17* 17* . 7
+All numbers are percentages.
+1BRFSS 2023-2024, 2BRFSS 2022, 2024 
+AIAN: American Indian or Alaska Native 
+ANHPI: Asian, Native Hawaiian, Pacific Islander
+. = Too few responses to report; * = Statistically different compared to VT overall 
+Vermont Department of Health
+5
+=== PAGE 6
+Quality of Life
+VT AIAN ANHPI Black Hispanic Multiracial
+Another 
+race White
+Physical health not good1 13 28* . . 11 25* . 12
+Mental health not good1 15 31* 14 15 21 26* . 15
+Has a disability1 27 67* 18 29 26 41* 37 26
+Dissatisfied or very 
+dissatisfied with life2 6 . . . . 12* . 5
+Rarely or never receives 
+social and emotional 
+support2
+7 28* 13 . . 9 . 7
+All numbers are percentages.
+1BRFSS 2023-2024, 2BRFSS 2022, 2024 
+AIAN: American Indian or Alaska Native 
+ANHPI: Asian, Native Hawaiian, Pacific Islander
+. = Too few responses to report; * = Statistically different compared to VT overall 
+Vermont Department of Health
+6
+=== PAGE 7
+Chronic Conditions
+VT AIAN ANHPI Black Hispanic Multiracial
+Another 
+race White
+Arthritis1 30 45 10* 9* 19* 34 30 30
+Asthma1 12 20 . 9 14 14 . 12
+Cancer (non-skin) 1 10 . . . . 8 . 10
+Cardiovascular disease1 9 28* . . . 15* . 9
+Chronic obstructive 
+pulmonary disease 
+(COPD) 1
+6 23* . . . 12* . 6
+Depressive disorder1 26 48* 19 19 24 43* 22 26
+Diabetes1 9 24* 8 . 5 9 . 9
+Kidney disease1 3 . . . . . . 3
+Skin cancer1 7 . . . . . . 8
+Subjective cognitive 
+decline (ages 45+)2 13 . . . 14 21* . 12
+All numbers are percentages.
+1BRFSS 2023-2024, 2BRFSS 2022, 2024 
+AIAN: American Indian or Alaska Native 
+ANHPI: Asian, Native Hawaiian, Pacific Islander
+. = Too few responses to report; * = Statistically different compared to VT overall 
+Vermont Department of Health
+7
+=== PAGE 8
+Risk Factors and Behaviors
+VT AIAN ANHPI Black Hispanic Multiracial
+Another 
+race White
+No leisure time physical 
+activity1 18 30 22 20 14 17 18 18
+Employment insecurity2 9 . 12 18* 14 11 . 9
+Food insecurity2 8 29* . 14 14* 13* . 7
+Housing insecurity2 7 . . 14* 18* 13 . 7
+Transportation 
+insecurity2 5 . . . 11* 17* . 5
+Participated in a high-risk 
+behavior for HIV^2 5 . . . 21* . . 5
+Considered suicide past 
+year2 5 . . . . 8 . 5
+^High-risk behaviors include any of the following: intravenous drug use, treatment for a sexually transmitted disease, gave or received sex for drugs or money, and anal sex without a condom.  
+All numbers are percentages.
+1BRFSS 2023-2024, 2BRFSS 2022, 2024 
+AIAN: American Indian or Alaska Native 
+ANHPI: Asian, Native Hawaiian, Pacific Islander
+. = Too few responses to report; * = Statistically different compared to VT overall 
+Vermont Department of Health
+8
+=== PAGE 9
+Substance Use – Alcohol and Cannabis
+VT AIAN ANHPI Black Hispanic Multiracial
+Another 
+race White
+Drink any alcohol, past 
+month1 61 32* 54 50 61 49* 65 62
+Binge drinking, past 
+month1 16 . 12 . 24* 11 . 17
+Heavy drinking, past 
+month1 8 . . . 7 5 . 9
+VT AIAN ANHPI Black Hispanic Multiracial
+Another 
+race White
+Cannabis use, past 30 
+days1 24 24 17 12* 36* 35* 29 24
+Driving under the 
+influence of cannabis, 
+past month1
+19 . . . 21 . . 19
+All numbers are percentages.
+1BRFSS 2023-2024, 2BRFSS 2022, 2024 
+AIAN: American Indian or Alaska Native 
+ANHPI: Asian, Native Hawaiian, Pacific Islander
+. = Too few responses to report; * = Statistically different compared to VT overall 
+Vermont Department of Health
+9
+=== PAGE 10
+Substance Use - Tobacco
+VT AIAN ANHPI Black Hispanic Multiracial
+Another 
+race White
+Current cigarette 
+smoking1 11 36* . . 13 20* . 10
+Current e-cigarette use1 5 . . . 8 12* . 5
+Current smokeless 
+tobacco use1 2 . . . . . . 2
+Attempted to quit 
+smoking, past year1 50 56 66 94* 57 54 85* 48
+All numbers are percentages.
+1BRFSS 2023-2024, 2BRFSS 2022, 2024 
+AIAN: American Indian or Alaska Native 
+ANHPI: Asian, Native Hawaiian, Pacific Islander
+. = Too few responses to report; * = Statistically different compared to VT overall 
+Vermont Department of Health
+10
+=== PAGE 11
+Preventative Behaviors and Screenings
+VT AIAN ANHPI Black Hispanic Multiracial
+Another 
+race White
+Routine doctor visit1 78 79 79 69 76 69* 84* 78
+Had HIV screening, ever1 38 46 23* 47 46 50* 52* 37
+Had HIV screening, past 
+year1 6 . . . . . . 6
+Colorectal cancer 
+screening (ages 45-75)2 73 63 47* 49* 62 60* 70 74
+Birth control use 
+(females^ ages 18-49)2 88 . 86 67 92 87 . 88
+^Questions were asked among females ages 18-49 who a) were not currently pregnant or did not know or refused to answer if they were pregnant, and b) never had a hysterectomy or did not 
+know or refused to answer if they had a hysterectomy.
+All numbers are percentages.
+1BRFSS 2023-2024, 2BRFSS 2022, 2024 
+AIAN: American Indian or Alaska Native 
+ANHPI: Asian, Native Hawaiian, Pacific Islander
+. = Too few responses to report; * = Statistically different compared to VT overall 
+Vermont Department of Health
+11
+=== PAGE 12
+Immunizations
+VT AIAN ANHPI Black Hispanic Multiracial
+Another 
+race White
+Flu shot, past year (ages 
+65+)1 71 59 . 74 70 69 48 72
+Pneumonia shot (ages 
+65+)1 71 77 . . 83 66 56 71
+All numbers are percentages.
+1BRFSS 2023-2024, 2BRFSS 2022, 2024 
+AIAN: American Indian or Alaska Native 
+ANHPI: Asian, Native Hawaiian, Pacific Islander
+. = Too few responses to report; * = Statistically different compared to VT overall 
+Vermont Department of Health
+12
+=== PAGE 13
+Oral Health
+VT AIAN ANHPI Black Hispanic Multiracial
+Another 
+race White
+Dentist visit, past year2 69 43* 66 58 59* 57* 70 70
+Had at least 1 tooth 
+extracted (ages 45-64)2 42 . 54 44 36 50 . 42
+All numbers are percentages.
+1BRFSS 2023-2024, 2BRFSS 2022, 2024 
+AIAN: American Indian or Alaska Native 
+ANHPI: Asian, Native Hawaiian, Pacific Islander
+. = Too few responses to report; * = Statistically different compared to VT overall 
+Vermont Department of Health
+13
+=== PAGE 14
+For Questions and More Information
+Email: AHS.VDHBRFSS@Vermont.gov 
+Web: www.healthvermont.gov/brfss
+Social: @HealthVermont
+Vermont Department of Health
+14

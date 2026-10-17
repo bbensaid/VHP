@@ -37,7 +37,7 @@ interface Act68Recommendation {
 // ─── Vermont Hospital Data — GMCB Budget Filing FY2023 + CMS HCRIS FY2022 ────
 // Sources: VT GMCB Hospital Budget Filings (gmcboard.vermont.gov),
 //          CMS Healthcare Cost Report Information System (HCRIS),
-//          AHA Annual Survey 2023, Vermont Hospital Association
+//          AHA Annual Survey 2023, Vermont Association of Hospitals and Health Systems
 const HOSPITALS: Hospital[] = [
   {
     id: 'uvmmc', name: 'UVM Medical Center', shortName: 'UVMMC', city: 'Burlington',
