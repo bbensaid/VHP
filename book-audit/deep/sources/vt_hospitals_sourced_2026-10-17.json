@@ -1,0 +1,376 @@
+{
+ "sources": {
+  "ow": "Oliver Wyman, Act 167 Community Engagement: Recommendations (rev. 10/21/2024), per-hospital pages 68-114 (book-audit/deep/sources/oliver_wyman_act167_recs_rev2024-10-21.txt)",
+  "cms_cr": "CMS Hospital Provider Cost Report FY2023 (data.cms.gov dataset f08d4c46-c0e4-4bcb-a54a-c62c87d59251)",
+  "vdh": "Vermont Department of Health, Population by HSA, July 1 2025",
+  "cms_cc": "CMS Care Compare Hospital General Information (xubh-q36u)"
+ },
+ "notes": {
+  "loss": "$M 2023 operating loss (negative = gain), OW",
+  "p28": "OW FY2028 projected loss $M: [5% expense growth, 7-8% expense growth]",
+  "dis": "total discharges FY2023 (CMS cost report)",
+  "fte": "FTE employees on payroll FY2023 (CMS cost report)",
+  "urgency": "HTR rule: OW at-risk list -> urgent; else 2023 margin < -3% major, < 0 significant, >= 0 modest",
+  "coes": "OW recommended COEs; empty = 'further discussion' (Grace Cottage, Gifford, North Country, Porter)"
+ },
+ "hospitals": {
+  "uvmmc": {
+   "cms_type": "Acute",
+   "margin": 3.1,
+   "loss": -64.6,
+   "ed": 34314,
+   "avoid": 26.9,
+   "p28": [
+    105,
+    486.4
+   ],
+   "beds": 448,
+   "dis": 20252,
+   "fte": 7475,
+   "hsa": "Burlington",
+   "pop": 189898,
+   "p65": 19.5,
+   "star": 4,
+   "aff": "UVM Health Network",
+   "coes": [
+    "Cancer Surgery (Complex)",
+    "Cancer Surgery (Non-Complex)",
+    "Robotic Surgery",
+    "Minimally Invasive Surgery",
+    "Infusion Therapy Clinic",
+    "Neurology",
+    "Radiation Therapy",
+    "Orthopedics",
+    "Rheumatology",
+    "Obstetrics",
+    "Psych-Adolescent",
+    "Psych-Adult",
+    "Geriatric Care",
+    "Hospice",
+    "Memory Care",
+    "Rehabilitation"
+   ],
+   "urgency": "modest"
+  },
+  "rrmc": {
+   "cms_type": "Acute",
+   "margin": 2.1,
+   "loss": -7.4,
+   "ed": 18216,
+   "avoid": 28.4,
+   "p28": [
+    20.6,
+    79.9
+   ],
+   "beds": 142,
+   "dis": 5482,
+   "fte": 1306,
+   "hsa": "Rutland",
+   "pop": 60368,
+   "p65": 28.0,
+   "star": 3,
+   "aff": "Independent",
+   "coes": [
+    "Acute General Surgery",
+    "Geriatric Care",
+    "Minimally Invasive Surgery",
+    "Neurology",
+    "Psych-Adult"
+   ],
+   "urgency": "modest"
+  },
+  "svmc": {
+   "cms_type": "Acute",
+   "margin": -3.8,
+   "loss": 7.4,
+   "ed": 22272,
+   "avoid": 25.4,
+   "p28": [
+    24.5,
+    58.0
+   ],
+   "beds": 53,
+   "dis": 2828,
+   "fte": 823,
+   "hsa": "Bennington",
+   "pop": 40237,
+   "p65": 28.1,
+   "star": 3,
+   "aff": "Dartmouth Health",
+   "coes": [
+    "Cancer Surgery (Non-Complex)",
+    "Geriatric Care",
+    "Infusion Therapy Clinic",
+    "Minimally Invasive Surgery",
+    "Orthopedics",
+    "Psych-Adult",
+    "Psych-Adolescent",
+    "Radiation Therapy",
+    "Rheumatology"
+   ],
+   "urgency": "major"
+  },
+  "cvmc": {
+   "cms_type": "Acute",
+   "margin": -6.5,
+   "loss": 17.8,
+   "ed": 16376,
+   "avoid": 31.2,
+   "p28": [
+    44.0,
+    74.3
+   ],
+   "beds": 88,
+   "dis": 3514,
+   "fte": 1297,
+   "hsa": "Barre",
+   "pop": 67856,
+   "p65": 23.8,
+   "star": 3,
+   "aff": "UVM Health Network",
+   "coes": [
+    "Geriatric Care",
+    "Infusion Therapy Clinic",
+    "Neurology",
+    "Psych-Adult",
+    "Radiation Therapy"
+   ],
+   "urgency": "major"
+  },
+  "bmh": {
+   "cms_type": "Acute",
+   "margin": -1.7,
+   "loss": 1.9,
+   "ed": 7540,
+   "avoid": 29.4,
+   "p28": [
+    12.4,
+    29.8
+   ],
+   "beds": 47,
+   "dis": 2010,
+   "fte": 519,
+   "hsa": "Brattleboro",
+   "pop": 33290,
+   "p65": 27.8,
+   "star": 3,
+   "aff": "Independent",
+   "coes": [
+    "Acute General Surgery",
+    "Cancer Surgery (Non-Complex)",
+    "Geriatric Care",
+    "Orthopedics",
+    "Rheumatology",
+    "Robotic Surgery"
+   ],
+   "urgency": "significant"
+  },
+  "nmc": {
+   "cms_type": "Acute",
+   "margin": -6.6,
+   "loss": 8.2,
+   "ed": 15719,
+   "avoid": 32.7,
+   "p28": [
+    20.9,
+    44.4
+   ],
+   "beds": 53,
+   "dis": 2301,
+   "fte": 566,
+   "hsa": "St. Albans",
+   "pop": 46985,
+   "p65": 21.4,
+   "star": 4,
+   "aff": "Independent",
+   "coes": [
+    "Cancer Surgery (Non-Complex)",
+    "Infusion Therapy Clinic",
+    "Neurology",
+    "Radiation Therapy"
+   ],
+   "urgency": "major"
+  },
+  "nvrh": {
+   "cms_type": "CAH",
+   "margin": 0.5,
+   "loss": -0.6,
+   "ed": 9128,
+   "avoid": 32.7,
+   "p28": [
+    5.2,
+    19.2
+   ],
+   "beds": 25,
+   "dis": 1331,
+   "fte": 390,
+   "hsa": "St. Johnsbury",
+   "pop": 27742,
+   "p65": 25.7,
+   "star": 3,
+   "aff": "Independent",
+   "coes": [
+    "Cancer Surgery (Non-Complex)",
+    "Infusion Therapy Clinic",
+    "Minimally Invasive Surgery",
+    "Radiation Therapy"
+   ],
+   "urgency": "modest"
+  },
+  "copley": {
+   "cms_type": "CAH",
+   "margin": -1.8,
+   "loss": 1.7,
+   "ed": 8783,
+   "avoid": 32.8,
+   "p28": [
+    7.0,
+    16.5
+   ],
+   "beds": 25,
+   "dis": 1380,
+   "fte": 404,
+   "hsa": "Morrisville",
+   "pop": 27986,
+   "p65": 23.6,
+   "star": 2,
+   "aff": "Independent",
+   "coes": [
+    "Orthopedics",
+    "Rheumatology"
+   ],
+   "urgency": "significant"
+  },
+  "springfield": {
+   "cms_type": "CAH",
+   "margin": -0.9,
+   "loss": 0.6,
+   "ed": 13191,
+   "avoid": 30.5,
+   "p28": [
+    5.0,
+    10.4
+   ],
+   "beds": 25,
+   "dis": 584,
+   "fte": 244,
+   "hsa": "Springfield",
+   "pop": 27880,
+   "p65": 29.5,
+   "star": null,
+   "aff": "Independent",
+   "coes": [
+    "Memory Care",
+    "Psych-Adult"
+   ],
+   "urgency": "urgent"
+  },
+  "grace-cottage": {
+   "cms_type": "CAH",
+   "margin": -8.9,
+   "loss": 2.3,
+   "ed": 3637,
+   "avoid": 31.0,
+   "p28": [
+    4.6,
+    9.9
+   ],
+   "beds": 19,
+   "dis": 102,
+   "fte": 133,
+   "hsa": "Brattleboro (Townshend)",
+   "pop": 33290,
+   "p65": 27.8,
+   "star": null,
+   "aff": "Independent",
+   "coes": [],
+   "urgency": "urgent"
+  },
+  "gifford": {
+   "cms_type": "CAH",
+   "margin": -8.3,
+   "loss": 4.7,
+   "ed": 5146,
+   "avoid": 28.5,
+   "p28": [
+    1.3,
+    6.0
+   ],
+   "beds": 25,
+   "dis": 815,
+   "fte": 310,
+   "hsa": "Randolph",
+   "pop": 14550,
+   "p65": 28.4,
+   "star": 5,
+   "aff": "Independent",
+   "coes": [],
+   "urgency": "urgent"
+  },
+  "north-country": {
+   "cms_type": "CAH",
+   "margin": -8.9,
+   "loss": 8.8,
+   "ed": 10748,
+   "avoid": 37.0,
+   "p28": [
+    17.3,
+    28.9
+   ],
+   "beds": 25,
+   "dis": 1363,
+   "fte": 349,
+   "hsa": "Newport",
+   "pop": 28148,
+   "p65": 26.3,
+   "star": 1,
+   "aff": "Independent",
+   "coes": [],
+   "urgency": "urgent"
+  },
+  "mt-ascutney": {
+   "cms_type": "CAH",
+   "margin": 2.0,
+   "loss": -1.4,
+   "ed": 3666,
+   "avoid": 36.1,
+   "p28": [
+    1.4,
+    8.2
+   ],
+   "beds": 25,
+   "dis": 319,
+   "fte": 317,
+   "hsa": "White River Junction",
+   "pop": 50236,
+   "p65": 26.6,
+   "star": null,
+   "aff": "Dartmouth Health",
+   "coes": [
+    "Rehabilitation"
+   ],
+   "urgency": "modest"
+  },
+  "porter": {
+   "cms_type": "CAH",
+   "margin": 7.6,
+   "loss": -9.0,
+   "ed": 11876,
+   "avoid": 31.2,
+   "p28": [
+    3.5,
+    10.8
+   ],
+   "beds": 25,
+   "dis": 1545,
+   "fte": 467,
+   "hsa": "Middlebury",
+   "pop": 29487,
+   "p65": 26.1,
+   "star": 3,
+   "aff": "UVM Health Network",
+   "coes": [],
+   "urgency": "modest"
+  }
+ }
+}
