@@ -1320,7 +1320,7 @@
                 "type": "single_choice",
                 "points": 1,
                 "question": "What documented evidence supports OneCare's 'Managing Blind' failure mode?",
-                "explanation": "OneCare's own staff told GMCB regulators its analytics lagged newer available systems, and the State Auditor found OneCare-attributed patients had about 36% higher ED visit rates and 18% fewer primary care visits than peer ACOs — the utilization signature of reactive rather than proactive care management.",
+                "explanation": "OneCare's own staff told GMCB regulators its analytics lagged newer available systems, and OneCare's own benchmarking found its attributed patients had about 36% higher ED visit rates and 18% fewer primary care visits than peer ACOs — the utilization signature of reactive rather than proactive care management.",
                 "options": [
                   {
                     "id": "o_5p5b1",
@@ -2582,7 +2582,7 @@
             {
               "type": "text",
               "heading": "Managing blind — the OneCare case",
-              "body": "OneCare Vermont was founded in 2013 by the University of Vermont Medical Center and Dartmouth-Hitchcock, and became the accountable care organization through which Vermont ran the federal All-Payer ACO Model from 2017. It wound down at the close of 2025.\n\nOneCare took on downside financial risk for an attributed population. What it never assembled was the integrated data capability that managing that risk requires: a claims feed timely enough to act on, joined to a clinical feed complete enough to know what was happening to the patient. OneCare's own staff told the Green Mountain Care Board that its analytics lagged the newer software the UVM Health Network was adopting — an ACO at risk for a population's total cost, running behind one of its own members on the tooling.\n\nThe State Auditor's performance audits document what that looked like in outcomes. Patients attributed to OneCare had roughly 36% higher emergency department utilization and roughly 18% fewer primary care visits than peer ACOs — the exact pattern you would predict from an organization that could not identify rising-risk patients early enough to route them to primary care. A 2019 audit found OneCare did not reliably monitor or accurately report on community programs it was funding. Administrative costs ran $70.35 million between 2018 and 2022.\n\nThe financial bottom line is genuinely contested and should not be reduced to a single number — published estimates range from $18.23 million in savings to a net cost of tens of millions depending on whether the pandemic year is included. What is not contested is the mechanism. And the payer side closed the same way: Blue Cross Blue Shield of Vermont, the state's largest insurer, declined to renew effective January 1, 2023, withdrawing roughly 93,000 enrollees — about a third of total enrollment — citing data-protection concerns over OneCare's analytics subcontracting and the absence of evidence of improved outcomes or cost."
+              "body": "OneCare Vermont was founded in 2013 by the University of Vermont Medical Center and Dartmouth-Hitchcock, and became the accountable care organization through which Vermont ran the federal All-Payer ACO Model from 2017. It wound down at the close of 2025.\n\nOneCare took on downside financial risk for an attributed population. What it never assembled was the integrated data capability that managing that risk requires: a claims feed timely enough to act on, joined to a clinical feed complete enough to know what was happening to the patient. OneCare's own staff told the Green Mountain Care Board that its analytics lagged the newer software the UVM Health Network was adopting — an ACO at risk for a population's total cost, running behind one of its own members on the tooling.\n\nOneCare's own benchmarking against peer ACOs, filed with the Green Mountain Care Board, documented what that looked like in outcomes. Patients attributed to OneCare had roughly 36% higher emergency department utilization and roughly 18% fewer primary care visits than peer ACOs — the exact pattern you would predict from an organization that could not identify rising-risk patients early enough to route them to primary care. A 2019 audit found OneCare did not reliably monitor or accurately report on community programs it was funding. Administrative costs ran $70.35 million between 2018 and 2022.\n\nThe financial bottom line is genuinely contested and should not be reduced to a single number — published estimates range from $18.23 million in savings to a net cost of tens of millions depending on whether the pandemic year is included. What is not contested is the mechanism. And the payer side closed the same way: Blue Cross Blue Shield of Vermont, the state's largest insurer, declined to renew effective January 1, 2023, withdrawing roughly 93,000 enrollees — about a third of total enrollment — citing data-protection concerns over OneCare's analytics subcontracting and the absence of evidence of improved outcomes or cost."
             },
             {
               "type": "key_stat",
@@ -2590,12 +2590,12 @@
                 {
                   "value": "~36%",
                   "label": "Higher ED utilization among OneCare-attributed patients vs. peer ACOs",
-                  "source": "Vermont State Auditor performance audit"
+                  "source": "OneCare Vermont benchmarking report filed with the GMCB"
                 },
                 {
                   "value": "~18%",
                   "label": "Fewer primary care visits among OneCare-attributed patients vs. peer ACOs",
-                  "source": "Vermont State Auditor performance audit"
+                  "source": "OneCare Vermont benchmarking report filed with the GMCB"
                 },
                 {
                   "value": "93,000",
@@ -2749,7 +2749,7 @@
                 "type": "single_choice",
                 "points": 1,
                 "question": "OneCare Vermont assumed downside financial risk while its analytics lagged the software one of its own member systems was adopting. In five-pillar terms, what failed?",
-                "explanation": "This is the managing-blind failure mode: an Economics-pillar commitment taken on before the Technology pillar could support it. The State Auditor's finding of roughly 36% higher ED use and 18% fewer primary care visits than peer ACOs is the operational signature of an organization unable to identify rising-risk patients in time.",
+                "explanation": "This is the managing-blind failure mode: an Economics-pillar commitment taken on before the Technology pillar could support it. OneCare's own benchmarking finding of roughly 36% higher ED use and 18% fewer primary care visits than peer ACOs is the operational signature of an organization unable to identify rising-risk patients in time.",
                 "options": [
                   {
                     "id": "o_5p9c1",
@@ -3610,7 +3610,7 @@
             {
               "type": "text",
               "heading": "Vermont's Price Extraction Problem, in Numbers",
-              "body": "Fee-for-service creates a second structural problem distinct from the volume incentive: in concentrated hospital markets -- which describes the majority of U.S. hospital markets, and all of Vermont's -- it lets hospitals with market power charge commercial payers far above their actual cost of care. Vermont's data, documented in the Green Mountain Care Board's February 2026 report, is among the most extreme in the country: UVMMC's commercial prices run 358% of Medicare (RAND, 2018-2020 data), the average Vermont hospital charges commercial payers 250-300% of Medicare, and the approximate break-even point is roughly 136% of Medicare.\n\nThe consequence for insurance premiums is direct and arithmetically straightforward. Vermont's average monthly silver marketplace premium rose from $456 in 2018 to $948 in 2024 -- a 108% increase in six years -- tracking hospital charge growth with high fidelity (Oliver Wyman Act 167 Report; GMCB analysis). These are not coincidental trends; they are the mathematical output of a price structure with no regulatory discipline.\n\nOliver Wyman's analysis found no relationship between price and quality across Vermont's hospital system. The gap between break-even and actual commercial charges is not explained by complexity or outcomes. It is market power -- the ability of a dominant provider to demand above-cost prices from payers with no viable network alternative."
+              "body": "Fee-for-service creates a second structural problem distinct from the volume incentive: in concentrated hospital markets -- which describes the majority of U.S. hospital markets, and all of Vermont's -- it lets hospitals with market power charge commercial payers far above their actual cost of care. Vermont's data, documented in the Green Mountain Care Board's February 2026 report, sits well above the national average: UVMMC's commercial prices ran 358% of Medicare in RAND's 2020 study, the average Vermont hospital charges commercial payers 250-300% of Medicare, and the approximate break-even point is roughly 136% of Medicare.\n\nThe consequence for insurance premiums is direct and arithmetically straightforward. Vermont's average monthly silver marketplace premium rose from $456 in 2018 to $948 in 2024 -- a 108% increase in six years -- tracking hospital charge growth with high fidelity (Oliver Wyman Act 167 Report; GMCB analysis). These are not coincidental trends; they are the mathematical output of a price structure with no regulatory discipline.\n\nOliver Wyman's analysis found no relationship between price and quality across Vermont's hospital system. The gap between break-even and actual commercial charges is not explained by complexity or outcomes. It is market power -- the ability of a dominant provider to demand above-cost prices from payers with no viable network alternative."
             },
             {
               "type": "text",
@@ -3668,7 +3668,7 @@
                 {
                   "value": "358%",
                   "label": "UVMMC commercial hospital prices as a share of Medicare",
-                  "source": "RAND Hospital Price Transparency Study, 2018-2020 data"
+                  "source": "RAND hospital price study (2020)"
                 },
                 {
                   "value": "~136%",
@@ -6398,12 +6398,12 @@
                 "id": "q_5p19a",
                 "type": "single_choice",
                 "points": 1,
-                "question": "According to the Vermont Department of Health's January 2025 Health Equity Data Report, what is the approximate gap between Vermont's overall primary care access rate and the rate for BIPOC Vermont adults?",
+                "question": "According to the Vermont Department of Health's 2023–2024 survey data (BRFSS, published March 2026), how many percentage points separate white adults and Hispanic adults in having a personal health care provider?",
                 "explanation": "Vermont's statewide personal-provider rate is roughly 91%, while the rate for Hispanic adults is 78% — a 13-point gap concealed by the statewide average.",
                 "options": [
                   {
                     "id": "o_5p19a1",
-                    "text": "About 11 percentage points (roughly 91% overall vs. 79–81% for BIPOC adults)",
+                    "text": "About 13 percentage points (91% of white adults vs. 78% of Hispanic adults)",
                     "isCorrect": true
                   },
                   {
@@ -6605,8 +6605,8 @@
                   "source": "NCQA"
                 },
                 {
-                  "value": "91% vs. 79–81%",
-                  "label": "Vermont primary care access rate, statewide vs. BIPOC adults — the gap stratification exists to surface",
+                  "value": "91% vs. 78%",
+                  "label": "Vermont primary care access rate, white vs. Hispanic adults (BRFSS 2023–2024) — the gap stratification exists to surface",
                   "source": "Vermont Department of Health, January 2025"
                 }
               ]

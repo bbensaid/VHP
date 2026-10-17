@@ -191,10 +191,10 @@ LESSONS = [
                     "id": "q_5p19a",
                     "type": "single_choice",
                     "points": 1,
-                    "question": "According to the Vermont Department of Health's January 2025 Health Equity Data Report, what is the approximate gap between Vermont's overall primary care access rate and the rate for BIPOC Vermont adults?",
+                    "question": "According to the Vermont Department of Health's 2023–2024 survey data (BRFSS, published March 2026), how many percentage points separate white adults and Hispanic adults in having a personal health care provider?",
                     "explanation": "Vermont's statewide personal-provider rate is roughly 91%, while the rate for Hispanic adults is 78% — a 13-point gap concealed by the statewide average.",
                     "options": [
-                        {"id": "o_5p19a1", "text": "About 11 percentage points (roughly 91% overall vs. 79–81% for BIPOC adults)", "isCorrect": True},
+                        {"id": "o_5p19a1", "text": "About 13 percentage points (91% of white adults vs. 78% of Hispanic adults)", "isCorrect": True},
                         {"id": "o_5p19a2", "text": "About 2 percentage points — coverage and access track closely", "isCorrect": False, "explanation": "Vermont's near-universal coverage does not close its access gap; the two move separately, and the access gap is far larger than 2 points."},
                         {"id": "o_5p19a3", "text": "About 30 percentage points — Vermont's access gap is among the largest in the country", "isCorrect": False, "explanation": "Vermont's gap is real and consequential but smaller than this; overstating it is as misleading as ignoring it."},
                         {"id": "o_5p19a4", "text": "There is no measurable gap once insurance coverage is accounted for", "isCorrect": False, "explanation": "These gaps persist even where coverage is not the barrier — they reflect structural access barriers, not just insurance status."},
@@ -295,7 +295,7 @@ LESSONS = [
                 "type": "key_stat",
                 "stats": [
                     {"value": "22", "label": "HEDIS measures NCQA stratifies by race and ethnicity, as of Measurement Year 2024", "source": "NCQA"},
-                    {"value": "91% vs. 79–81%", "label": "Vermont primary care access rate, statewide vs. BIPOC adults — the gap stratification exists to surface", "source": "Vermont Department of Health, January 2025"},
+                    {"value": "91% vs. 78%", "label": "Vermont primary care access rate, white vs. Hispanic adults (BRFSS 2023–2024) — the gap stratification exists to surface", "source": "Vermont Department of Health, January 2025"},
                 ],
             },
             {

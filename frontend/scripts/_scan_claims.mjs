@@ -8,6 +8,6 @@ const show = (where, t) => { for (const re of pats) for (const m of t.matchAll(r
 const nd = await (await fetch(`https://${env.NEXT_PUBLIC_SANITY_PROJECT_ID}.api.sanity.io/v2023-10-01/data/export/production`, { headers: { Authorization: `Bearer ${env.SANITY_API_TOKEN}` } })).text();
 for (const l of nd.split('\n').filter(Boolean)) { const d = JSON.parse(l); if (d._id.startsWith('drafts.') || d._type.startsWith('sanity.')) continue; show('SANITY ' + d._id, JSON.stringify(d)); }
 const sb = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_KEY);
-for (const t of ['lessons', 'quiz_questions', 'quiz_options', 'courses', 'tracks']) { const { data } = await sb.from(t).select('*'); for (const r of data ?? []) show(`SUPA ${t} ${r.slug ?? r.id}`, JSON.stringify(r)); }
+for (const t of ['lessons', 'quiz_questions', 'quiz_options', 'courses', 'tracks']) { let data = [], from = 0; for (;;) { const r = await sb.from(t).select('*').range(from, from + 999); if (r.error || !r.data) break; data = data.concat(r.data); if (r.data.length < 1000) break; from += 1000; } for (const r of data ?? []) show(`SUPA ${t} ${r.slug ?? r.id}`, JSON.stringify(r)); }
 const files = execSync("git ls-files app components lib content ../backend/data | grep -E '\\.(tsx?|json|md|py)$' | grep -v book-html", { encoding: 'utf8' }).split('\n').filter(Boolean);
 for (const f of files) show('FILE ' + f, fs.readFileSync(f, 'utf8'));
