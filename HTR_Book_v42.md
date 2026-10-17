@@ -6911,7 +6911,7 @@ D.15 Workforce Modeler --- Physician Supply/Demand Projector (12 specialties, 10
 
 D.16 Research Workspace --- Analysis Scenario Manager (50 scenarios, JSON import/export); Report Builder (Policy Brief, Financial Analysis, QI, Technology Assessment); Scenario Comparison Dashboard (up to 4); Research Notes and Citation Manager (AMA/APA).
 
-D.17 Innovation Leaderboard --- State Health Transformation Rankings (50 states + DC); Hospital System VBC Maturity Index (30 systems); Payer Innovation Index (20 payers, 3-year trajectory).
+D.17 Innovation Leaderboard --- five-pillar comparison of all 50 states (DC listed, not ranked): Policy and Clinical from real, cited data; Technology, Economics, and Operations as disclosed simulated estimates; Vermont from the book's sourced pillar readiness.
 
 D.18 VBC Transformation Readiness Assessment --- 30-dimension, 6-domain assessment (120 points): Strategic Clarity, Data & Technology, Care Delivery Capability, Network & Partnerships, Revenue Cycle, Workforce Operations. \<60 Pre-transition; 60--80 Developing; 80--100 Operational; 100--120 Optimized.
 

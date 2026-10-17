@@ -272,7 +272,7 @@ export const PILLAR_OVERVIEW: Partial<Record<FrameworkId, PillarOverviewContent>
       { href: "/research-lab/policy-quality", emoji: "🏛️", title: "Policy & Quality Lab", desc: "Policy Simulator, H.R. 1 Cliff Scenario, Work Requirements Calculator" },
       { href: "/vermont-act-68", emoji: "🍁", title: "Vermont Act 68", desc: "Mandatory global budgets — the most legislatively complete state reform" },
       { href: "/ahead-model", emoji: "📋", title: "AHEAD Model", desc: "Medicare's entry into state-level all-payer alignment" },
-      { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "All 24 tools including Innovation Leaderboard and feasibility studies" },
+      { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "Every Research Lab tool, including the Innovation Leaderboard and feasibility studies" },
     ],
   },
 };
