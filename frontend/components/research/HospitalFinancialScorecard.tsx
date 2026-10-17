@@ -698,7 +698,7 @@ export default function HospitalFinancialScorecard() {
     const act167Id = activePreset ? ACT167_ID_BY_PRESET[activePreset] : undefined;
     if (!act167Id) return null;
     const h = ACT167_HOSPITALS.find(x => x.id === act167Id);
-    return h ? { name: h.name, services: h.services, coes: h.coes } : null;
+    return h ? { name: h.name, services: h.coes, coes: h.coes } : null;
   }, [activePreset]);
 
   const results = useMemo(() => {
@@ -1160,19 +1160,19 @@ export default function HospitalFinancialScorecard() {
           {/* ── SERVICE LINES ── */}
           {serviceLines && (
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
-              <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Service Lines Exposed to RBP</p>
+              <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Recommended Centers of Excellence (Oliver Wyman)</p>
               <div className="flex flex-wrap gap-1.5">
-                {serviceLines.services.map(s => (
+                {serviceLines.services.map((s: string) => (
                   <span key={s} className="px-2 py-0.5 rounded-md bg-white border border-slate-200 text-[10px] font-bold text-slate-600">{s}</span>
                 ))}
                 {serviceLines.services.length === 0 && (
-                  <span className="text-[10px] text-slate-400">No specialty service lines recorded.</span>
+                  <span className="text-[10px] text-slate-400">No COE recommended yet — Oliver Wyman left this hospital for further discussion.</span>
                 )}
               </div>
               <p className="text-[9px] text-slate-400 mt-2 leading-relaxed flex gap-1.5">
                 <Info size={10} className="shrink-0 mt-0.5" />
                 <span>
-                  Service lines {serviceLines.name} operates, from the Act 167 dataset. Vermont
+                  Service lines Oliver Wyman recommended {serviceLines.name} concentrate as Centers of Excellence (Act 167 report, 2024). Vermont
                   publishes commercial prices as a % of Medicare only at the <strong>hospital</strong> level
                   (GMCB price-transparency dashboard), never by service line — so this tool ranks
                   hospital-level exposure, not which individual service line sits furthest above the

@@ -28,7 +28,7 @@ const VT_BORDER: [number, number][] = [
   [45.017, -73.432],
 ];
 
-import { HOSPITALS, type Hospital, type HospitalUrgency } from "./data";
+import { HOSPITALS, type Hospital, type HospitalUrgency, kmToNearestHospital } from "./data";
 
 export type MapLayer = "urgency" | "financial" | "equity" | "access";
 
@@ -61,17 +61,19 @@ function hospitalFill(h: Hospital, layer: MapLayer): string {
     return "#ef4444";
   }
   if (layer === "equity") {
-    const score = (h.noCarPct + h.lowIncomePct) / 2;
-    if (score > 25) return "#ef4444";
-    if (score > 18) return "#f97316";
-    if (score > 12) return "#eab308";
+    // Sourced proxy: share of HSA residents aged 65+ (Vermont Department of Health, 2025)
+    const score = h.popOver65Pct;
+    if (score > 28) return "#ef4444";
+    if (score > 26) return "#f97316";
+    if (score > 24) return "#eab308";
     return "#22c55e";
   }
   // access
-  const t = h.avgTravelToNextHospitalMin;
-  if (t > 55) return "#ef4444";
-  if (t > 40) return "#f97316";
-  if (t > 28) return "#eab308";
+  // Straight-line km to the nearest other hospital (computed from coordinates)
+  const t = kmToNearestHospital(h);
+  if (t > 40) return "#ef4444";
+  if (t > 30) return "#f97316";
+  if (t > 20) return "#eab308";
   return "#22c55e";
 }
 
@@ -202,7 +204,7 @@ export default function LeafletMap({
                   Margin: {h.operatingMarginPct > 0 ? "+" : ""}{h.operatingMarginPct}%
                   {h.annualLossM > 0 ? ` (–$${h.annualLossM}M/yr)` : ""}
                 </div>
-                <div style={{ color: "#64748b" }}>Travel to next hospital: {h.avgTravelToNextHospitalMin} min</div>
+                <div style={{ color: "#64748b" }}>Nearest other hospital: {kmToNearestHospital(h)} km (straight line)</div>
               </div>
             </Tooltip>
 
@@ -216,13 +218,13 @@ export default function LeafletMap({
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 6, marginBottom: 8 }}>
                   {[
                     ["Beds",             String(h.beds)],
-                    ["ICU Beds",         String(h.icuBeds)],
+                    ["Type",             h.hospitalType],
                     ["Op. Margin",       `${h.operatingMarginPct > 0 ? "+" : ""}${h.operatingMarginPct}%`],
                     ["ED Visits/yr",     h.annualEDVisits.toLocaleString()],
                     ["FTEs",             h.fteCount.toLocaleString()],
-                    ["Travel to next",   `${h.avgTravelToNextHospitalMin} min`],
-                    ["No-car households",`${h.noCarPct}%`],
-                    ["Low-income",       `${h.lowIncomePct}%`],
+                    ["Nearest hospital", `${kmToNearestHospital(h)} km`],
+                    ["CMS stars",        h.cmsStarRating == null ? "Not rated" : `${h.cmsStarRating}/5`],
+                    ["ED avoidable",     `${h.edAvoidablePct}%`],
                     ["Over 65",          `${h.popOver65Pct}%`],
                     ["HSA population",   h.populationHSA.toLocaleString()],
                   ].map(([l, v]) => (

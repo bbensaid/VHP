@@ -2,8 +2,7 @@
 
 import { useState, useMemo } from "react";
 import {
-  HOSPITALS, RECOMMENDATIONS, COUNTY_DATA,
-} from "../data";
+  HOSPITALS, RECOMMENDATIONS, COUNTY_DATA, kmToNearestHospital } from "../data";
 import { Badge, InfoCard, PillarGauge, MetricCard, TabBtn } from "../atoms";
 import { StickyOutputPanel } from "@/components/StickyOutputPanel";
 
@@ -217,28 +216,24 @@ export function EquityAnalysis({ selectedRecs }: { selectedRecs: Set<string> }) 
             <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-4">Transportation Coverage by At-Risk Hospital HSA</div>
             <div className="space-y-3">
               {HOSPITALS.filter((h) => h.urgency === "urgent" || h.urgency === "major").map((h) => {
-                const coverage = transportScenario === "baseline" ? 100 - h.noCarPct : transportScenario === "enhanced" ? Math.min(90, 100 - h.noCarPct * 0.4) : Math.min(98, 100 - h.noCarPct * 0.1);
+                const km = kmToNearestHospital(h);
                 return (
                   <div key={h.id}>
                     <div className="flex justify-between mb-1">
                       <div>
                         <span className="text-xs font-bold text-slate-700">{h.name}</span>
-                        <span className="text-[10px] text-slate-400 ml-2">{h.avgTravelToNextHospitalMin}min to next hospital</span>
+                        <span className="text-[10px] text-slate-400 ml-2">{km} km (straight line) to nearest other hospital</span>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <span className={`text-xs font-black ${coverage < 70 ? "text-red-600" : coverage < 85 ? "text-amber-600" : "text-emerald-600"}`}>{Math.round(coverage)}% covered</span>
-                      </div>
+                      <span className={`text-xs font-black ${h.popOver65Pct > 28 ? "text-red-600" : h.popOver65Pct > 26 ? "text-amber-600" : "text-emerald-600"}`}>{h.popOver65Pct}% aged 65+</span>
                     </div>
                     <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
-                      <div className={`h-full rounded-full ${coverage < 70 ? "bg-red-400" : coverage < 85 ? "bg-amber-400" : "bg-emerald-400"}`}
-                        style={{ width: `${coverage}%` }} />
+                      <div className={`h-full rounded-full ${km > 40 ? "bg-red-400" : km > 25 ? "bg-amber-400" : "bg-emerald-400"}`}
+                        style={{ width: `${Math.min(100, (km / 60) * 100)}%` }} />
                     </div>
-                    {transportScenario === "baseline" && h.noCarPct > 18 && (
-                      <div className="text-[10px] text-red-600 mt-0.5">⚠ {h.noCarPct}% of HSA residents lack vehicle — {Math.round(h.populationHSA * h.noCarPct / 100).toLocaleString()} people with no transport access</div>
-                    )}
                   </div>
                 );
               })}
+              <p className="text-[10px] text-slate-400">Distances are straight-line from hospital coordinates; age shares are Vermont Department of Health 2025 HSA estimates. No sourced household-vehicle data by HSA is loaded, so transport scenarios are shown qualitatively.</p>
             </div>
           </InfoCard>
 

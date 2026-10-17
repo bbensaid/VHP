@@ -331,12 +331,13 @@ export default function HospitalCompareClient() {
                   style={{ gridTemplateColumns: `180px repeat(${comparedHospitals.length}, 1fr)` }}
                 >
                   <div className="p-4 pl-5 text-xs font-semibold text-slate-600 border-r border-slate-100 flex items-start pt-5">
-                    Services
+                    Recommended COEs (Oliver Wyman)
                   </div>
                   {comparedHospitals.map(h => (
                     <div key={h.id} className="p-4 border-r border-slate-100 last:border-r-0">
                       <div className="flex flex-wrap gap-1">
-                        {h.services.map(s => (
+                        {h.coes.length === 0 && <span className="text-[10px] text-slate-400">Further discussion (no COE yet)</span>}
+                        {h.coes.map(s => (
                           <span key={s} className="text-[10px] bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded border border-indigo-100 font-medium">
                             {s}
                           </span>

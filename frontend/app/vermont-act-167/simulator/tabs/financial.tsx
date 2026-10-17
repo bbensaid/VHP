@@ -19,22 +19,21 @@ export function FinancialModeling({ selectedRecs }: { selectedRecs: Set<string> 
 
   const handleExportCSV = () => {
     const rows: string[][] = [
-      ["Hospital", "Short Name", "City", "HSA", "Beds", "ICU Beds", "Annual Admissions", "Annual ED Visits",
-       "Operating Margin (%)", "Annual Loss ($M)", "Projected 2028 Loss ($M)", "FTEs", "Pop Over 65 (%)",
-       "Low Income (%)", "Avg Travel to Next Hospital (min)", "Urgency"],
+      ["Hospital", "Short Name", "City", "HSA", "Type", "Beds (FY2023)", "Discharges (FY2023)", "ED Visits (2022)",
+       "Operating Margin FY2023 (%)", "FY2023 Loss ($M)", "FY2028 Loss, 5% scenario ($M)", "FY2028 Loss, 7-8% scenario ($M)",
+       "FTEs (FY2023)", "Pop Over 65 (%)", "CMS Star Rating", "Urgency"],
     ];
     for (const h of HOSPITALS) {
       rows.push([
         h.name, h.shortName, h.city, h.hsa,
-        String(h.beds), String(h.icuBeds),
+        h.hospitalType, String(h.beds),
         String(h.annualAdmissions), String(h.annualEDVisits),
         String(h.operatingMarginPct), String(h.annualLossM),
-        String(h.projectedLoss2028M), String(h.fteCount),
-        String(h.popOver65Pct), String(h.lowIncomePct),
-        String(h.avgTravelToNextHospitalMin), h.urgency,
+        String(h.projectedLoss2028M), String(h.projectedLoss2028HighM), String(h.fteCount),
+        String(h.popOver65Pct), h.cmsStarRating == null ? "Not rated" : String(h.cmsStarRating), h.urgency,
       ]);
     }
-    rows.push([], ["Exported", new Date().toISOString(), `Projection: ${projectionYear}yr`, `Inflation: ${assumedInflation}%/yr`]);
+    rows.push([], ["Sources: Oliver Wyman Act 167 report (2024) hospital pages; CMS cost reports FY2023; Vermont Dept. of Health 2025; CMS Care Compare"], ["Exported", new Date().toISOString(), `Projection: ${projectionYear}yr`, `Inflation: ${assumedInflation}%/yr`]);
     const csv = rows.map(r => r.map(c => `"${c}"`).join(",")).join("\n");
     const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
     const url  = URL.createObjectURL(blob);
