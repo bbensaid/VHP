@@ -1389,6 +1389,18 @@ export const STATE_BENCHMARKS: StateBenchmark[] = [
   },
 ];
 
+export interface CountyData {
+  county: string;
+  population: number;
+  over65Pct: number;
+  noVehiclePct: number;
+  belowPovertyPct: number;
+  minorityPct: number;
+  uninsuredPct: number;
+  primaryHospital: string;
+  travelTimeToHospitalMin: number;
+}
+
 export const COUNTY_DATA: CountyData[] = [
   { county: "Addison", population: 37000, over65Pct: 23, noVehiclePct: 8, belowPovertyPct: 12, minorityPct: 5, uninsuredPct: 4.2, primaryHospital: "porter", travelTimeToHospitalMin: 18 },
   { county: "Bennington", population: 37500, over65Pct: 27, noVehiclePct: 12, belowPovertyPct: 15, minorityPct: 6, uninsuredPct: 5.1, primaryHospital: "svmc", travelTimeToHospitalMin: 22 },
