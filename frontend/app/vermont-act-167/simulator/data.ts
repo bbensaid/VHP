@@ -1336,122 +1336,58 @@ export interface StateBenchmark {
   state: string;
   model: string;
   year: number;
-  hospitalConsolidation: number; // % reduction in acute hospitals
-  costReduction: number; // % total cost reduction
-  adminCostReduction: number;
-  ruralAccessScore: number; // 0-100
-  qualityImprovement: number; // % improvement
-  equityImprovement: number; // % improvement in disparity reduction
-  keyLessons: string[];
+  scope: string;
+  results: string[]; // each sourced; no derived scores
   source: string;
 }
 
+// Rebuilt 2026-10-17 from sources only (earlier numeric "impact scores" and lessons had no source and were removed).
 export const STATE_BENCHMARKS: StateBenchmark[] = [
   {
     state: "Maryland",
-    model: "HSCRC All-Payer Hospital Global Budget",
+    model: "All-Payer Model — hospital global budgets",
     year: 2014,
-    hospitalConsolidation: 12,
-    costReduction: 3.2,
-    adminCostReduction: 18,
-    ruralAccessScore: 72,
-    qualityImprovement: 14,
-    equityImprovement: 22,
-    keyLessons: [
-      "Global budgets eliminated volume incentive and reduced unnecessary admissions",
-      "Hospital-specific rate regulation required sophisticated regulatory capacity",
-      "Rural hospitals required supplemental payments to remain viable",
-      "Transition to value required 5+ years to show full financial benefit",
+    scope: "All 46 general acute care hospitals under global budgets by July 2014; all payers.",
+    results: [
+      "Medicare spending grew 2.8% more slowly than in a comparison group over the first 4.5 years (about $975M), driven by 4.1% slower growth in hospital spending ($796M)",
+      "Admissions for ambulatory-care-sensitive conditions fell 6.7% more than in the comparison group (Medicare)",
+      "The model was not associated with population health improvement",
     ],
-    source: "HSCRC, NEJM 2019 (Haber et al.)",
-  },
-  {
-    state: "Pennsylvania",
-    model: "Rural Health Redesign (PARHP)",
-    year: 2019,
-    hospitalConsolidation: 18,
-    costReduction: 4.8,
-    adminCostReduction: 22,
-    ruralAccessScore: 68,
-    qualityImprovement: 11,
-    equityImprovement: 16,
-    keyLessons: [
-      "EMS regionalization was critical prerequisite for rural hospital conversion",
-      "Community paramedicine reduced 30-day readmissions by 28%",
-      "Telemedicine kiosk program reached 40% of eligible rural population",
-      "COE designation improved surgical outcomes: 19% complication reduction",
-    ],
-    source: "RWJF Pennsylvania Rural Health Initiative 2022",
-  },
-  {
-    state: "Minnesota",
-    model: "Critical Access Hospital Network Transformation",
-    year: 2016,
-    hospitalConsolidation: 8,
-    costReduction: 2.1,
-    adminCostReduction: 28,
-    ruralAccessScore: 78,
-    qualityImprovement: 9,
-    equityImprovement: 18,
-    keyLessons: [
-      "Shared services consortium achieved 28% admin cost reduction among CAHs",
-      "Regional specialty centers for orthopedics reduced travel burden by 35%",
-      "Workforce development pipeline (in-state medical school rural track) addressed shortage",
-      "Housing investment for healthcare workers in rural areas was necessary",
-    ],
-    source: "Minnesota Rural Health Research Center 2020",
+    source: "RTI International, Evaluation of the Maryland All-Payer Model, Final Report (CMS, November 2019)",
   },
   {
     state: "Oregon",
-    model: "Coordinated Care Organization (CCO) Model",
-    year: 2012,
-    hospitalConsolidation: 6,
-    costReduction: 9.1,
-    adminCostReduction: 14,
-    ruralAccessScore: 74,
-    qualityImprovement: 22,
-    equityImprovement: 31,
-    keyLessons: [
-      "Community health worker investment was highest ROI equity intervention",
-      "Medicaid transformation achieved $2.8B savings in 3 years",
-      "Social determinants of health integration (housing, food) reduced ED visits 18%",
-      "Tribal health partnership was model for culturally competent care design",
-    ],
-    source: "OHA CCO Annual Report 2015; Dartmouth Atlas 2016",
+    model: "State employee plan hospital price cap",
+    year: 2019,
+    scope: "State employee plan only; 200% of Medicare in-network, 185% out-of-network; exemptions for rural and critical access hospitals.",
+    results: ["Savings of more than $100M in the first 27 months"],
+    source: "Green Mountain Care Board, Act 68 update on reference-based pricing (February 17, 2026)",
   },
   {
     state: "Montana",
-    model: "Frontier Health Network Hub-and-Spoke",
-    year: 2018,
-    hospitalConsolidation: 22,
-    costReduction: 3.8,
-    adminCostReduction: 24,
-    ruralAccessScore: 62,
-    qualityImprovement: 8,
-    equityImprovement: 12,
-    keyLessons: [
-      "Hub-and-spoke model worked best with strong EMS and air transport backbone",
-      "Telehealth was insufficient without reliable broadband — critical infrastructure gap",
-      "Mental health integration at primary care sites reduced psychiatric hospitalizations 24%",
-      "Financial sustainability required state subsidy for most isolated facilities",
-    ],
-    source: "HRSA Frontier Health Research Center 2021",
+    model: "State employee plan reference-based pricing",
+    year: 2016,
+    scope: "State employee plan; direct contracting with hospitals at a percentage of Medicare.",
+    results: ["About $48M in savings", "Initial success, but politically fragile without a statutory mandate"],
+    source: "Green Mountain Care Board, Act 68 update on reference-based pricing (February 17, 2026)",
+  },
+  {
+    state: "Washington",
+    model: "Cascade Care public option",
+    year: 2021,
+    scope: "Public option plans; hospital reimbursement capped at 160% of Medicare for participating networks; voluntary participation.",
+    results: ["Participation voluntary; expanding to state employee plans"],
+    source: "Green Mountain Care Board, Act 68 update on reference-based pricing (February 17, 2026)",
+  },
+  {
+    state: "Vermont",
+    model: "Act 68 reference-based pricing and global budgets",
+    year: 2025,
+    scope: "Mandatory statewide maximum allowable commercial payment rates for all hospitals, set by GMCB rule in 2027 and effective hospital FY2028; global budgets for one or more non-CAH hospitals by FY2028 and all by FY2030, as resources allow.",
+    results: ["Act 68 signed June 12, 2025; GMCB FY2027 budget orders cut commercial rates 2.9% statewide (September 2026)"],
+    source: "Act 68 of 2025; GMCB Act 68 update (February 17, 2026); GMCB FY27 hospital budget decisions (September 15, 2026)",
   },
 ];
-
-// ── Vermont Population Data (synthetic, based on Census / GMCB data) ────────
-
-export interface CountyData {
-  county: string;
-  population: number;
-  over65Pct: number;
-  noVehiclePct: number;
-  belowPovertyPct: number;
-  minorityPct: number;
-  uninsuredPct: number;
-  primaryHospital: string;
-  travelTimeToHospitalMin: number;
-}
 
 export const COUNTY_DATA: CountyData[] = [
   { county: "Addison", population: 37000, over65Pct: 23, noVehiclePct: 8, belowPovertyPct: 12, minorityPct: 5, uninsuredPct: 4.2, primaryHospital: "porter", travelTimeToHospitalMin: 18 },
