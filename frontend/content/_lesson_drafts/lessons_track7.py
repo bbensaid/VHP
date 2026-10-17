@@ -43,7 +43,7 @@ LESSONS = [
             {
                 "type": "key_stat",
                 "stats": [
-                    {"value": "91% vs. 80%", "label": "Vermont adults with a personal primary care provider, statewide vs. BIPOC adults — an 11-point gap concealed by the statewide figure", "source": "Vermont Department of Health, Health Equity Data Report, January 2025"},
+                    {"value": "91% vs. 78%", "label": "Vermont adults with a personal health care provider: statewide vs. Hispanic adults, the one group statistically below the state rate (BRFSS 2023–2024)", "source": "Vermont Department of Health, BRFSS 2024 Population in Focus: Race & Ethnicity (March 2026)"},
                     {"value": "1.2–1.4M", "label": "US adults in the ACA Medicaid ‘coverage gap’ — too much income to qualify for Medicaid, too little for marketplace subsidies, in states that have not expanded Medicaid", "source": "KFF, 2026"},
                 ],
             },
@@ -192,7 +192,7 @@ LESSONS = [
                     "type": "single_choice",
                     "points": 1,
                     "question": "According to the Vermont Department of Health's January 2025 Health Equity Data Report, what is the approximate gap between Vermont's overall primary care access rate and the rate for BIPOC Vermont adults?",
-                    "explanation": "Vermont's statewide personal-provider rate is roughly 91%, while the rate for BIPOC adults runs 79–81% — an 11-point gap concealed by the statewide average.",
+                    "explanation": "Vermont's statewide personal-provider rate is roughly 91%, while the rate for Hispanic adults is 78% — a 13-point gap concealed by the statewide average.",
                     "options": [
                         {"id": "o_5p19a1", "text": "About 11 percentage points (roughly 91% overall vs. 79–81% for BIPOC adults)", "isCorrect": True},
                         {"id": "o_5p19a2", "text": "About 2 percentage points — coverage and access track closely", "isCorrect": False, "explanation": "Vermont's near-universal coverage does not close its access gap; the two move separately, and the access gap is far larger than 2 points."},

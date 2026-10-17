@@ -9522,7 +9522,7 @@ EQUITY = [{'id': 'lesson_5p_calibrate_gap',
                              'every policy, technology, economic design, clinical model, and '
                              'operational change: who moved, and who did not?'},
                     {'type': 'key_stat',
-                     'stats': [{'value': '91% vs. 80%',
+                     'stats': [{'value': '91% vs. 78%',
                                 'label': 'Vermont adults with a personal primary care provider, '
                                          'statewide vs. BIPOC adults — an 11-point gap concealed '
                                          'by the statewide figure',
@@ -11996,7 +11996,7 @@ SUSTAIN = [{'id': 'lesson_5p_portfolio_management',
                      'body': "The HTR platform's four components -- The Wire, Research Lab, "
                              'Academy, Advisory Services -- exist because knowledge and '
                              'implementation infrastructure are two different things and both are '
-                             'required. Nearly forty interactive tools in the Research Lab '
+                             'required. More than thirty interactive tools in the Research Lab '
                              'implement the frameworks in this course; the Academy is the '
                              'knowledge layer; Advisory Services is where technical assistance for '
                              "a specific organization's decision gets delivered when internal "
@@ -12997,7 +12997,7 @@ BOOK_REFS = {
     "calibrate-for-the-gap-not-the-average": (
         "Chapter 10",
         "chapter-10",
-        "Chapter 10 is the Equity Imperative in full — closing gaps rather than averaging them, with Vermont's own 11-point access gap as the anchor.",
+        "Chapter 10 is the Equity Imperative in full — closing gaps rather than averaging them, with Vermont's own access gaps by race and ethnicity as the anchor.",
     ),
     "heroi-stratified-hedis-vbc-safeguards": (
         "Chapter 10",

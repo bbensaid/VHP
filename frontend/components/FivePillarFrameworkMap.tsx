@@ -24,7 +24,7 @@ const PILLAR_DESCS: Record<PillarId, string> = {
 // node, not a directed edge (book v46 §1.3).
 const EQUITY_CHECK: Record<PillarId, string> = {
   policy: "Does the mandate close disparities or widen them? Acts 167 and 68 require equity metrics to be tracked and reported — equity accountability is built into the statutory architecture, not appended to it.",
-  technology: "Does the data make disparities visible, or bury them in averages? Demographic stratification of VHCURES data is what makes a disparity measurable at all — Vermont's 91% primary care access rate hides an 11-point white/BIPOC gap.",
+  technology: "Does the data make disparities visible, or bury them in averages? Demographic stratification of VHCURES data is what makes a disparity measurable at all — Vermont's 91% primary care access rate hides a 13-point white/Hispanic gap.",
   economics: "Do the incentives reward serving the hardest-to-reach, or penalize it? A VBC contract without social risk adjustment penalizes providers serving high-SDOH populations — the opposite of the intended effect.",
   clinical: "Effective — and effective for whom? Blueprint and CCBHC expansion are the primary mechanism for closing geographic access gaps; a care model can improve the average while leaving the gap untouched.",
   operations: "Executable — and executable everywhere, including rural and under-resourced settings? A transformation that only the best-resourced hospitals can execute widens the gap it was meant to close.",

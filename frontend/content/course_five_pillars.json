@@ -687,7 +687,7 @@
               "type": "callout",
               "variant": "warning",
               "heading": "The average that hides the gap",
-              "body": "Vermont's primary care access rate is roughly 91% — about four points above the national benchmark, and a genuine achievement. It also conceals an 11-point gap between white Vermont adults and BIPOC Vermont adults. Nothing in the aggregate number reveals that gap. It becomes visible only when the underlying data is stratified by race and ethnicity — which is a Technology pillar capability, not a good intention."
+              "body": "Vermont's primary care access rate is roughly 91% — about four points above the national benchmark, and a genuine achievement. It also conceals gaps: in the Health Department's 2023–2024 survey data, 78% of Hispanic adults have a personal health care provider, against 91% of white adults. Nothing in the aggregate number reveals that gap. It becomes visible only when the underlying data is stratified by race and ethnicity — which is a Technology pillar capability, not a good intention."
             },
             {
               "type": "text",
@@ -775,7 +775,7 @@
                 "id": "q_5p3b",
                 "type": "single_choice",
                 "points": 1,
-                "question": "Vermont's ~91% primary care access rate sits above the national benchmark but conceals an 11-point gap between white and BIPOC adults. Which pillar's capability is required to see that gap at all?",
+                "question": "Vermont's ~91% primary care access rate sits above the national benchmark but conceals a 13-point gap between white and Hispanic adults. Which pillar's capability is required to see that gap at all?",
                 "explanation": "Disparities hidden in aggregates only become visible through demographic stratification of the underlying data — a Technology pillar capability.",
                 "options": [
                   {
@@ -2654,7 +2654,7 @@
             {
               "type": "text",
               "heading": "The Equity Imperative at the gate",
-              "body": "The sixth question — is it just? — is not a separate workstream. It is a test the Technology pillar has to pass on its own terms, and at the data layer it fails silently.\n\nVermont's own architecture documentation flags that race and ethnicity data is incomplete in commercial claims. That single gap propagates upward through every layer above it. Stratified quality reporting inherits it. Risk models inherit it. Equity monitoring under Act 68 inherits it. A state can hold a documented 11-point gap between white and BIPOC Vermonters on a 91% overall access measure, commit to closing it, and still be unable to demonstrate progress, because the denominator it needs is missing from the database it is measuring with.\n\nThis is what it means to say equity is a cross-cutting test rather than a pillar. Nobody has to oppose equity for the measurement to fail. The gap closes only if demographic completeness is a design requirement of the data layer itself — specified in the analytics procurement, not added as a reporting request afterward."
+              "body": "The sixth question — is it just? — is not a separate workstream. It is a test the Technology pillar has to pass on its own terms, and at the data layer it fails silently.\n\nVermont's own architecture documentation flags that race and ethnicity data is incomplete in commercial claims. That single gap propagates upward through every layer above it. Stratified quality reporting inherits it. Risk models inherit it. Equity monitoring under Act 68 inherits it. A state can hold a documented 13-point gap between white and Hispanic Vermonters on a 91% overall access measure, commit to closing it, and still be unable to demonstrate progress, because the denominator it needs is missing from the database it is measuring with.\n\nThis is what it means to say equity is a cross-cutting test rather than a pillar. Nobody has to oppose equity for the measurement to fail. The gap closes only if demographic completeness is a design requirement of the data layer itself — specified in the analytics procurement, not added as a reporting request afterward."
             },
             {
               "type": "callout",
@@ -6261,9 +6261,9 @@
               "type": "key_stat",
               "stats": [
                 {
-                  "value": "91% vs. 80%",
-                  "label": "Vermont adults with a personal primary care provider, statewide vs. BIPOC adults — an 11-point gap concealed by the statewide figure",
-                  "source": "Vermont Department of Health, Health Equity Data Report, January 2025"
+                  "value": "91% vs. 78%",
+                  "label": "Vermont adults with a personal health care provider: statewide vs. Hispanic adults, the one group statistically below the state rate (BRFSS 2023–2024)",
+                  "source": "Vermont Department of Health, BRFSS 2024 Population in Focus: Race & Ethnicity (March 2026)"
                 },
                 {
                   "value": "1.2–1.4M",
@@ -6385,7 +6385,7 @@
               "type": "callout",
               "variant": "info",
               "heading": "From the Book — Chapter 10",
-              "body": "Chapter 10 is the Equity Imperative in full — closing gaps rather than averaging them, with Vermont's own 11-point access gap as the anchor.\n\nRead it at /read/chapter-10.",
+              "body": "Chapter 10 is the Equity Imperative in full — closing gaps rather than averaging them, with Vermont's own access gaps by race and ethnicity as the anchor.\n\nRead it at /read/chapter-10.",
               "_bookRef": true
             }
           ],
@@ -6399,7 +6399,7 @@
                 "type": "single_choice",
                 "points": 1,
                 "question": "According to the Vermont Department of Health's January 2025 Health Equity Data Report, what is the approximate gap between Vermont's overall primary care access rate and the rate for BIPOC Vermont adults?",
-                "explanation": "Vermont's statewide personal-provider rate is roughly 91%, while the rate for BIPOC adults runs 79–81% — an 11-point gap concealed by the statewide average.",
+                "explanation": "Vermont's statewide personal-provider rate is roughly 91%, while the rate for Hispanic adults is 78% — a 13-point gap concealed by the statewide average.",
                 "options": [
                   {
                     "id": "o_5p19a1",
@@ -7778,7 +7778,7 @@
             {
               "type": "text",
               "heading": "The Platform as a Second Instance of the Same Principle",
-              "body": "The HTR platform's four components -- The Wire, Research Lab, Academy, Advisory Services -- exist because knowledge and implementation infrastructure are two different things and both are required. Nearly forty interactive tools in the Research Lab implement the frameworks in this course; the Academy is the knowledge layer; Advisory Services is where technical assistance for a specific organization's decision gets delivered when internal capacity or bandwidth runs short.\n\nExternal advisory support earns its cost under specific conditions: the decision carries real financial or political risk and benefits from independent validation; the organization lacks specific technical expertise (FHIR implementation, HCC coding analysis, waiver negotiation) that would take longer to build internally than the decision timeline allows; the challenge involves multi-stakeholder dynamics that need a neutral facilitator; or the regulatory environment is moving faster than internal monitoring capacity can track. Most of the analytical frameworks in this course can be implemented by a capable internal team with access to the right tools -- external support is not the default, it is the answer to a specific capacity gap."
+              "body": "The HTR platform's four components -- The Wire, Research Lab, Academy, Advisory Services -- exist because knowledge and implementation infrastructure are two different things and both are required. More than thirty interactive tools in the Research Lab implement the frameworks in this course; the Academy is the knowledge layer; Advisory Services is where technical assistance for a specific organization's decision gets delivered when internal capacity or bandwidth runs short.\n\nExternal advisory support earns its cost under specific conditions: the decision carries real financial or political risk and benefits from independent validation; the organization lacks specific technical expertise (FHIR implementation, HCC coding analysis, waiver negotiation) that would take longer to build internally than the decision timeline allows; the challenge involves multi-stakeholder dynamics that need a neutral facilitator; or the regulatory environment is moving faster than internal monitoring capacity can track. Most of the analytical frameworks in this course can be implemented by a capable internal team with access to the right tools -- external support is not the default, it is the answer to a specific capacity gap."
             },
             {
               "type": "key_stat",
@@ -8121,7 +8121,7 @@
                 {
                   "label": "Clinical",
                   "left": "Question: effective -- and effective for whom?",
-                  "right": "Vermont evidence: an 11-point primary-care access gap between white and BIPOC Vermonters is the number the Clinical pillar's equity test is measured against."
+                  "right": "Vermont evidence: a 13-point gap in having a personal health care provider between white (91%) and Hispanic (78%) Vermonters is the number the Clinical pillar's equity test is measured against."
                 },
                 {
                   "label": "Operations",

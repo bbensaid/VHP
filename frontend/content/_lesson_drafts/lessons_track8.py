@@ -818,7 +818,7 @@ LESSONS = [
             {
                 "type": "text",
                 "heading": "The Platform as a Second Instance of the Same Principle",
-                "body": "The HTR platform's four components -- The Wire, Research Lab, Academy, Advisory Services -- exist because knowledge and implementation infrastructure are two different things and both are required. Nearly forty interactive tools in the Research Lab implement the frameworks in this course; the Academy is the knowledge layer; Advisory Services is where technical assistance for a specific organization's decision gets delivered when internal capacity or bandwidth runs short.\n\nExternal advisory support earns its cost under specific conditions: the decision carries real financial or political risk and benefits from independent validation; the organization lacks specific technical expertise (FHIR implementation, HCC coding analysis, waiver negotiation) that would take longer to build internally than the decision timeline allows; the challenge involves multi-stakeholder dynamics that need a neutral facilitator; or the regulatory environment is moving faster than internal monitoring capacity can track. Most of the analytical frameworks in this course can be implemented by a capable internal team with access to the right tools -- external support is not the default, it is the answer to a specific capacity gap.",
+                "body": "The HTR platform's four components -- The Wire, Research Lab, Academy, Advisory Services -- exist because knowledge and implementation infrastructure are two different things and both are required. More than thirty interactive tools in the Research Lab implement the frameworks in this course; the Academy is the knowledge layer; Advisory Services is where technical assistance for a specific organization's decision gets delivered when internal capacity or bandwidth runs short.\n\nExternal advisory support earns its cost under specific conditions: the decision carries real financial or political risk and benefits from independent validation; the organization lacks specific technical expertise (FHIR implementation, HCC coding analysis, waiver negotiation) that would take longer to build internally than the decision timeline allows; the challenge involves multi-stakeholder dynamics that need a neutral facilitator; or the regulatory environment is moving faster than internal monitoring capacity can track. Most of the analytical frameworks in this course can be implemented by a capable internal team with access to the right tools -- external support is not the default, it is the answer to a specific capacity gap.",
             },
             {
                 "type": "key_stat",
@@ -1157,7 +1157,7 @@ LESSONS = [
                     {
                         "label": "Clinical",
                         "left": "Question: effective -- and effective for whom?",
-                        "right": "Vermont evidence: an 11-point primary-care access gap between white and BIPOC Vermonters is the number the Clinical pillar's equity test is measured against.",
+                        "right": "Vermont evidence: a 13-point gap in having a personal health care provider between white (91%) and Hispanic (78%) Vermonters is the number the Clinical pillar's equity test is measured against.",
                     },
                     {
                         "label": "Operations",

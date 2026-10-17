@@ -76,7 +76,7 @@ BOOK_REF_TEXT = {
     "calibrate-for-the-gap-not-the-average": (
         "Chapter 10", "chapter-10",
         "Chapter 10 is the Equity Imperative in full — closing gaps rather than "
-        "averaging them, with Vermont's own 11-point access gap as the anchor."),
+        "averaging them, with Vermont's own access gaps by race and ethnicity as the anchor."),
     "heroi-stratified-hedis-vbc-safeguards": (
         "Chapter 10", "chapter-10",
         "Chapter 10 introduces the HEROI Index and the stratified-measurement "

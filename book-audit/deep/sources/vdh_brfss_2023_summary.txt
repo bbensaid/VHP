@@ -1,0 +1,5387 @@
+=== PAGE 1
+Behavioral Risk Factor 
+Surveillance System
+2023 Report
+Division of Health Statistics & Informatics
+Published March 2025
+
+=== PAGE 2
+Table of Contents
+2023 Vermont Behavioral Risk Factor Surveillance System Report
+Page
+Introduction, 
+New in 2023 & Methodology 3
+Executive Summary 4
+Demographics 7
+Health Status Indicators
+General Health Status 13
+Medical Health Plan Coverage 15
+Medical Health Care Access 18
+Quality of Life 22
+Reactions to Race 26
+Disability 28
+Falls 31
+Chronic Conditions
+Arthritis 36
+Asthma 38
+Non-Melanoma Skin Cancer 40
+Cancer (including Melanoma) 42
+Cardiovascular Disease 44
+Chronic Kidney Disease 46
+COPD 48
+COVID-19 Long-Term Effects 50
+Depressive Disorder 52
+Prediabetes 54
+Diabetes 56
+High Cholesterol 58
+Hypertension 60
+2
+Page
+Risk Factors & Behaviors
+Alcohol Consumption 63
+Cannabis Use 71
+Tobacco Use 76
+BMI-Defined Obesity 84
+BMI-Defined Overweight 86
+Community Safety for Walking 88
+Firearm Storage 90
+Housing and Health 92
+No Leisure Time Physical Activity 94
+Seatbelt Use 96
+Sunburns 98
+Preventive Behaviors & Screenings
+Immunizations 101
+Routine Doctor Visits 108
+Physical Activity Recommendations 110
+Strength Building Recommendations 112
+Cholesterol Screening 114
+HIV Screening 116
+Local Fish Consumption 120
+=== PAGE 3
+Introduction
+The Behavioral Risk Factor Surveillance System (BRFSS) is a telephone survey conducted 
+annually among adults 18 and older. The Vermont BRFSS is completed by the Vermont 
+Department of Health in collaboration with the Centers for Disease Control and Prevention 
+(CDC). All U.S. states, Washington D.C., and most U.S. territories participate in the BRFSS.
+In Vermont, each year, more than 6,000 adults are randomly and anonymously selected and 
+interviewed as part of the BRFSS. All respondents are asked a uniform set of questions and 
+results are weighted to represent the adult population of the state.
+Additional information about the BRFSS can be found on the Department of Health and CDC 
+websites:
+www.healthvermont.gov/brfss
+www.cdc.gov/brfss 
+New in 2023
+The 2023 Vermont BRFSS questionnaire included new questions on:
+• Local fish consumption
+Methodology
+In 2023, in addition to the main data collected by the Vermont BRFSS, an oversample was 
+conducted among Black, Indigenous and people of color in Vermont. For this oversample, 
+respondents received advanced letters with notification of being selected. They were 
+instructed to complete a web version of the survey and received compensation for their time.
+This oversample was conducted to attempt to collect data that more accurately represents the 
+entire Vermont population, as data collection often historically underrepresents communities 
+of color and does not allow for analysis with strong statistical confidence.
+Weights were calculated by ICF Macro, Inc. using an iterative proportional fitting or raking 
+methodology, which allows for the data to accurately represent the adult population. The 
+weighting method incorporates and adjusts for select demographic variables, including age, 
+race and ethnicity, sex, education, marital status, home ownership, subgeography and phone 
+ownership.
+Trend estimates in this report are provided for all years in which data were collected since 
+2014.
+Select questions are asked among respondents of a certain sex. Respondents may report their 
+sex assigned at birth. For respondents in which sex assigned at birth is not reported, screening 
+questions are used to determine sex.
+32023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 4
+Executive Summary
+The Behavioral Risk Factor Surveillance System (BRFSS) is a telephone survey conducted 
+annually among adults 18 and older. The Vermont BRFSS is completed by the Vermont 
+Department of Health in collaboration with the Centers for Disease Control and Prevention 
+(CDC). All U.S. states, Washington D.C., and most U.S. territories participate in the BRFSS.
+In 2023, BRFSS surveys were completed among 9,055 adults from across the state. This 
+included an oversample among Black, Indigenous and people of color. These results are 
+weighted to be representative of the entire Vermont adult population. The annual summary 
+provides data on most survey questions broken down by sex, age, education, income, race and 
+ethnicity, sexual orientation and gender identity, disability status, survey year, and county.
+The Vermont Department of Health acknowledges that data presented in this report are driven 
+by complex upstream factors, including social, economic and environmental inequities. We are 
+continually working to further include information that highlights social determinants of health 
+and is informed by the communities and partners we seek to serve.
+Health Status Indicators
+Overall, most Vermont adults report good to excellent general health, with only one in seven 
+reporting fair or poor health (14%). Disparities are seen in general health, as fair or poor health 
+is more common among adults with less education or lower household income, LGBTQ+ adults 
+and those with a disability.
+More than nine in ten adults ages 18-64 have health care coverage (95%). Males, adults with 
+less education and adults with lower household income are less likely to have a health plan. 
+Ninety-one percent of adults have a personal health care provider. Males, younger adults and 
+BIPOC adults are less likely to have a personal health care provider. Only 8% of adults say there 
+was a time in the past year that they did not go to a provider because of cost. Adults with less 
+education or lower income, BIPOC adults, LGBTQ+ adults and those with a disability are more 
+likely to delay medical care due to cost. Across each of these measures, Vermont reported 
+statistically better general health and access to health care than U.S. adults.
+Twelve percent of Vermont adults report poor physical health. Poor physical health is more 
+common among adults ages 45 and older, adults with less education or lower income and 
+those with a disability. One in six adults report poor mental health (16%). Poor mental health is 
+more common among females, younger adults, adults with less education or lower income, 
+LGBTQ+ adults and those with a disability.
+Two percent of adults report in the past month experiencing physical symptoms as a result of 
+how they were treated based on their race. BIPOC adults and those with a disability are more 
+likely to report experiencing physical symptoms based on reactions to their race.
+42023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 5
+Executive Summary
+Health Status Indicators (continued)
+Falls are reported at a statistically higher rate for Vermont adults 45 and older compared to 
+U.S. adults of the same age (27% vs. 25%). However, falls that have resulted in an injury are 
+statistically less common among Vermont adults ages 45 and older than among U.S. adults of 
+the same age (34% vs. 41%). BIPOC adults, heterosexual and cisgender adults, and those with 
+a disability more commonly experience falls that result in injury.
+Chronic Conditions
+Vermont adults have statistically lower rates of certain chronic conditions when compared to 
+U.S. adults, including: chronic kidney disease (3% vs. 4%), diabetes (9% vs. 12%), high 
+cholesterol (34% vs. 38%), and hypertension (33% vs. 34%). Vermont adults have statistically 
+higher rates of other chronic conditions when compared to U.S. adults, including: arthritis (29% 
+vs. 25%), asthma (11% vs. 10%), skin cancer (7% vs. 5%), and non-skin cancer or melanoma 
+(10% vs. 8%). Higher rates of chronic disease are generally reported among older Vermont 
+adults, adults with less education or lower income, white, non-Hispanic adults, and those with 
+a disability.
+Eleven percent of adults who ever tested positive for COVID-19 report experiencing symptoms 
+for three months or longer. Females, adults with lower income and those with a disability are 
+more likely to experience COVID-19 long-term effects. Vermont adults report a higher rate of 
+depressive disorders than U.S. adults (26% vs. 20%). Depressive disorders are more common 
+among females, adults with lower income, LGBTQ+ adults and those with a disability.
+Risk Factors & Behaviors
+Alcohol use (61%) and heavy drinking (8%) are reported at statistically higher rates in Vermont 
+than among U.S. adults (52%, and 6%, respectively). Alcohol use and binge drinking (16%) are 
+more common among males, adults with higher household income and those with a disability.
+Twenty-four percent of Vermont adults use cannabis. Cannabis use is more common among 
+males, LGBTQ+ adults and adults with a disability.
+E-cigarette use (5%) and smokeless tobacco use (2%) among Vermont adults are statistically 
+lower than U.S. adults (7% and 3%, respectively). E-cigarette use is more common among 
+younger adults, adults with less education, LGBTQ+ adults and those with a disability. More 
+than one in ten adults report smoking cigarettes (11%). Cigarette smoking is more common 
+among adults with less education, lower income and who have a disability.
+BMI-defined obesity among Vermont adults ages 20 and older is statistically lower than U.S. 
+adults of the same age (30% vs. 34%), but higher BMI is more common among adults with 
+lower to middle income and those with a disability.
+Twelve percent of Vermont adults rate their community as either only slightly safe or not at all 
+safe for walking. Adults with less education or lower income, BIPOC adults, LGBTQ+ adults and 
+those with a disability are more likely to report their community is not safe for walking.
+5
+=== PAGE 6
+Executive Summary
+Risk Factors & Behaviors (continued)
+Among the 40% of Vermont adults with a firearm in or around their home, 17% keep a firearm 
+loaded. Fifty-seven percent of those with a loaded firearm keep a loaded firearm unlocked.
+Nearly one in ten adults had an illness or symptom that was caused or made worse by their 
+home environment in the past year (9%). Females, LGBTQ+ adults and those with a disability 
+are more likely to report that their health was affected by their home. Not participating in any 
+leisure time physical activity is statistically lower among Vermont adults than U.S. adults (20% 
+vs. 25%), and is more common among ages 45 and older, adults with less education or lower 
+income and those with a disability.
+Three percent of adults rarely or never wear their seatbelt while driving or riding in a car. Rarely 
+or never wearing a seatbelt is more common among males, adults with less education and 
+those with a disability. Nearly four in ten Vermont adults had at least one sunburn in the past 
+year (38%). Adults with higher household income, white, non-Hispanic adults, LGBTQ+ adults 
+and those with no disability are more likely to report a recent sunburn.
+Preventive Behaviors & Screenings
+More than nine in 10 Vermont adults have ever received a COVID-19 vaccine (91%). Males, 
+adults with less education or lower income, and heterosexual and cisgender adults are less 
+likely to have ever had a COVID-19 vaccine. Flu vaccination rates among adults ages 65 and 
+older and shingles vaccination rates among adults 50 and older are statistically higher for 
+Vermont than the U.S. (70% vs. 63%, and 59% vs. 44%, respectively).
+Vermont adults are statistically more likely to meet aerobic physical activity recommendations 
+than U.S. adults (67% vs. 60%). Adults with less education or lower income and those with a 
+disability are less likely to meet these recommendations.
+Eighty-six percent of Vermont adults report having their cholesterol checked within the past 
+five years, statistically less than U.S. adults (88%). Recent cholesterol screening is less 
+common among males, adults 64 or younger, and those with less education. Ever or recent 
+testing for HIV is statistically lower among Vermont adults than U.S. adults (37% vs. 39% and 
+7% vs. 11%, respectively).
+New in 2023, adults were asked about how often they eat fish caught by themselves, a friend, 
+or a relative in Vermont waters. Six percent of adults report eating locally caught fish at least 
+once in the past month. Females and white, non-Hispanic adults are less likely to eat locally 
+caught fish.
+62023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 7
+Demographics
+7
+=== PAGE 8
+Demographics
+Using weighted BRFSS data, the next 
+few pages describe the demographics 
+of Vermont adult residents.
+Half of Vermont adults are female (51% 
+vs. 49%). Twelve percent of adults are 
+ages 18-24, and 29% are ages 25-44. 
+Thirty-one percent of adults are 
+between 45 and 64 and 28% are 65 
+and older.
+Thirty-five percent of adults have a high 
+school education or less. Twenty-seven 
+percent have some college education 
+and 38% of adults have a college 
+education or more.
+Thirty-six percent of adults live in 
+households earning less than $50,000 
+annually. Half of adults live in homes 
+earning $50,000 to less than 
+$150,000 annually (51%), and 13% live 
+in homes earning $150,000 or more.
+Twenty-eight percent of Vermont adults 
+have a disability.
+Note: The demographic sex category in 
+this report reflects sex assigned at 
+birth, unless this information was not 
+reported. In those cases, information 
+from a sex question in the screening 
+section of the questionnaire was used.
+Demographic Characteristics, 2023 Percent
+Sex Male 49%
+Female 51%
+Age 18-24 12%
+25-44 29%
+45-64 31%
+65+ 28%
+Education 
+Level
+High School or Less 35%
+Some College 27%
+College or More 38%
+Household 
+Income 
+Level
+Lower (<$50K) 36%
+Middle ($50K-<$150K) 51%
+Higher ($150K+) 13%
+Disability Any Disability 28%
+No Disability 72%
+82023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 9
+Demographics
+Ninety percent of adults identify as 
+white, non-Hispanic. Three percent of 
+adults are Hispanic; and non-Hispanic 
+Asian, Native Hawaiian or Pacific 
+Islander. Two percent of adults identify 
+as multi-racial and 1% identify as Black. 
+Less than one percent of adults are 
+Alaskan Native or American Indian; and 
+another race.
+Eighty-nine percent of Vermont adults 
+are heterosexual. Five percent of adults 
+are bisexual and 3% are lesbian or gay. 
+Adults of another sexual orientation 
+make up 3% of Vermont’s adult 
+population.
+One percent of adults identify as 
+transgender.
+Note: The number of sampled Vermont 
+adults of each race (other than white, 
+non-Hispanic) does not allow for 
+analysis with strong statistical 
+confidence. To have enough confidence 
+for analysis in this report, all Black, 
+Indigenous and people of color were 
+grouped into a “BIPOC” category to 
+compare to white, non-Hispanic. For 
+similar reasons, lesbian, gay, bisexual, 
+other sexual orientation and 
+transgender Vermont adults were 
+grouped into a “LGBTQ+” category to 
+compare to heterosexual and cisgender 
+(HetCis) adults.
+Demographic Characteristics, 2023 Percent
+Race/
+Ethnicity
+White 90%
+Hispanic 3%
+Asian, Native Hawaiian, 
+Pacific Islander 3%
+Multi-racial 2%
+Black 1%
+Alaskan Native, 
+American Indian 0.6%
+Another race 0.5%
+Sexual 
+Orientation
+Heterosexual 89%
+Bisexual 5%
+Lesbian/Gay 3%
+Another Sexual 
+Orientation 3%
+Gender 
+Identity
+Transgender 1%
+Cisgender 99%
+92023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 10
+Demographics
+Four percent of Vermont females 18-44 
+were pregnant in 2023.
+Nine percent of adults have ever been 
+on active duty in the military. This 
+includes the National Guard or 
+reservists ever activated to active duty.
+Half of Vermont adults report being 
+married (50%). Twenty-three percent 
+have never been married, 12% are 
+divorced, 8% are widowed and 6% are 
+part of an unmarried couple. Few are 
+separated (1%).
+Fifty-nine percent of Vermont adults are 
+employed, which includes those 
+employed for wages or self-employed. 
+One-quarter of adults are retired (25%). 
+Five percent of adults report their 
+employment status as: student or 
+currently unable to work. Three percent 
+of adults report their employment 
+status as: unemployed or homemaker.
+Three-quarters of Vermont adults own 
+their home (75%). Eighteen percent 
+rent and 7% have some other 
+arrangement.
+Nearly three-quarters of Vermont adults 
+have no children under the age of 18 in 
+their home (74%). Twelve percent have 
+one child and 10% have two children in 
+their home. Three percent have three 
+children and 1% have four or more 
+children in their home.
+Demographic Characteristics, 2023 Percent
+Pregnancy 
+Status
+Pregnant 4%
+Not Pregnant 96%
+Veteran 
+Status
+Veteran 9%
+Non-Veteran 91%
+Marital 
+Status
+Married 50%
+Never Married 23%
+Divorced 12%
+Widowed 8%
+Unmarried Couple 6%
+Separated 1%
+Employment 
+Status
+Employed 59%
+Retired 25%
+Student 5%
+Unable to Work 5%
+Unemployed 3%
+Homemaker 3%
+Homeowner 
+Status
+Own 75%
+Rent 18%
+Other Arrangement 7%
+Children 
+Under 18 
+Years of Age 
+in the Home
+No Children 74%
+One Child 12%
+Two Children 10%
+Three Children 3%
+Four or More Children 1%
+102023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 11
+Demographics
+More than one-quarter of Vermont adults report living in Chittenden County (27%).
+Nine percent live in Rutland, Washington and Windsor counties. Between five and 8% live in: 
+Franklin, Windham, Addison, Bennington, Caledonia and Orange counties. Less than five 
+percent live in Lamoille, Orleans Grand Isle and Essex counties.
+6%
+6%
+5%
+27%
+1%
+8%
+1%
+4%
+5%
+4%
+9%
+9%
+7%
+9%
+Addison
+Bennington
+Caledonia
+Chittenden
+Essex
+Franklin
+Grand Isle
+Lamoille
+Orange
+Orleans
+Rutland
+Washington
+Windham
+Windsor
+County of Residence, 2023
+112023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 12
+Health Status Indicators
+12
+=== PAGE 13
+General Health Status
+One in seven Vermont adults report fair or poor 
+general health (14%), this is statistically lower 
+compared to 19% of U.S. adults.
+Males and females report statistically similar 
+rates of fair or poor health.
+Adults 65 and older are statistically more likely to 
+report fair or poor health than those 18-44. Adults 
+45-64 are statistically more likely to report fair or 
+poor health than those 18-24.
+Adults with a high school education or less are 
+more than two times as likely to report fair or poor 
+health than those with some college or more.
+• All differences by education level are 
+statistically significant.
+Adults in lower income homes are over four times 
+as likely to have fair or poor health than those in 
+higher income homes.
+• All differences by income are statistically 
+significant, except between adults in homes 
+with middle and higher incomes.
+There are no statistical differences in fair or poor 
+health by race and ethnicity.
+LGBTQ+ adults are statistically more likely to 
+report fair or poor health.
+Adults with a disability are nearly six times more 
+likely to report fair or poor health than adults with 
+no disability. This is a statistical difference.
+The percent of Vermont adults with fair or poor 
+health is statistically similar to 2022, but 
+statistically higher than 2014.
+19%
+14%
+15%
+14%
+9%
+12%
+15%
+17%
+21%
+14%
+8%
+25%
+8%
+6%
+16%
+14%
+21%
+14%
+35%
+6%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults with 
+Fair or Poor Health, 2023
+12% 13% 13% 14% 14% 14% 11% 12% 14% 14%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults with Fair or Poor Health
+132023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 14
+Vermont Adults with Fair or Poor Health
+by County, 2022-2023
+Eleven percent of adults 
+in Chittenden County 
+have fair or poor health, 
+statistically lower than 
+the percent of all 
+Vermont adults.
+Nineteen percent of 
+adults in Orleans County 
+have fair or poor health, 
+statistically higher than 
+the percent of all 
+Vermont adults.
+All other counties have 
+similar rates of fair or 
+poor health compared 
+to Vermont overall.
+142023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (14%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 15
+Medical Health Plan Coverage
+More than nine in ten Vermont adults ages 
+18-64 have health plan coverage (95%). This 
+is statistically higher than the 89% of U.S. 
+adults ages 18-64.
+Females are statistically more likely to have a 
+health plan.
+Adults 45-64 are statistically more likely to 
+have a health plan than those 25-44.
+Adults with a college degree or more are 
+statistically more likely to have a health plan.
+Adults in higher income homes are 
+statistically more likely to have a health plan 
+than those in lower income homes.
+There are no statistical differences in health 
+plan coverage by race and ethnicity, sexual 
+orientation and gender identity, or disability 
+status.
+The percent of adults reporting health plan 
+coverage is the same as 2022, but 
+statistically higher than 2014.
+89%
+95%
+93%
+98%
+96%
+93%
+97%
+92%
+95%
+98%
+94%
+96%
+98%
+93%
+96%
+96%
+95%
+95%
+95%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults 18-64 with a 
+Medical Health Plan, 2023
+92% 93% 94% 92% 92% 93% 92% 94% 95% 95%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults 18-64 with a Medical Health Plan
+152023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 16
+Vermont Adults Ages 18-64 with a Medical Health Plan
+by County, 2022-2023
+All counties have a 
+similar percent of adults 
+18-64 with a medical 
+health plan compared to 
+Vermont overall.
+162023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (95%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 17
+Medical Health Plan Coverage – Source
+Among Vermont adults with a health plan, regardless of age: 
+• Forty-four percent have a plan purchased through their or someone else’s employer or 
+union.
+• Twenty-seven percent have Medicare or Medigap.
+• Eleven percent have Medicaid or Children’s Health Insurance Program (CHIP).
+• Eight percent purchased a private health plan themselves.
+• Other health plans include state programs (4%), military related health care (3%), and Indian 
+Health Service or some other government program (2%).
+Compared to all Vermont adults, those 18-64:
+• Are statistically more likely to have an employer or union purchased health plan (59%), 
+Medicaid or CHIP (15%), or a private self-purchased plan (10%).
+• Are statistically less likely to have Medicare or Medigap (6%).
+• Are statistically just as likely to have some other state program (6%), military related health 
+care (2%), or Indian Health Service or some other government program (2%) as their primary 
+source of coverage.
+The type of health plans all Vermont adults and those 18-64 have are statistically similar to 
+2022.
+44%
+27%
+11%
+8%
+4%
+3%
+2%
+59%
+6%
+15%
+10%
+6%
+2%
+2%
+Employer or Union
+Medicare or Medigap
+Medicaid or CHIP
+Private Self-Purchased
+Other State Program
+Military
+Indian Health Service or
+Other Government Program
+Vermont Adults with a Medical Health Plan, 2023
+All Vermont Adults Adults 18-64
+2023 Vermont Behavioral Risk Factor Surveillance System Report 17
+=== PAGE 18
+Medical Health Care Access – Provider
+Nine in ten Vermont adults report having a 
+personal health care provider (PCP) (91%), 
+statistically higher than the 83% reported by 
+U.S. adults.
+Females are statistically more likely to have a 
+PCP.
+The percent of adults with a PCP increases 
+with age.
+• All differences by age are statistically 
+significant, except between adults 18-24 
+and 25-44.
+Adults with a college degree or more are 
+statistically more likely to have a PCP than 
+those with a high school education or less.
+Having a PCP is not statistically different by 
+household income level, sexual orientation 
+and gender identity, or disability status.
+White, non-Hispanic adults are statistically 
+more likely to have a PCP.
+The percent of adults with a PCP is 
+statistically higher than 2022 and 2014.
+83%
+91%
+88%
+94%
+85%
+85%
+94%
+97%
+90%
+91%
+93%
+90%
+92%
+93%
+88%
+92%
+89%
+92%
+93%
+91%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults 18-64 with a 
+Personal Health Care Provider, 2023
+87% 88% 88% 87% 86% 86% 85% 90% 89% 91%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults with a Personal Health Care Provider
+182023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 19
+Vermont Adults with a Personal Health Care Provider
+by County, 2022-2023
+All counties have a 
+similar percent of adults 
+with a personal health 
+care provider compared 
+to Vermont overall.
+192023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (90%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 20
+Medical Health Care Access – Delay Due to Cost
+Eight percent of Vermont adults say there was 
+a time in the past year they did not go to the 
+doctor because of cost. This is statistically 
+lower than the 12% of U.S. adults.
+Males and females report not seeing a doctor 
+due to cost at statistically similar rates.
+Adults 25-44 are statistically more likely to 
+delay medical care due to cost than those 45-
+64. Adults 65 and older are statistically less 
+likely to delay medical care due to cost than 
+younger adults.
+Adults with some college or less are 
+statistically more likely to delay medical care 
+due to cost than those with a college degree 
+or more.
+The percent of adults delaying medical care 
+due to cost statistically decreases as 
+household income increases.
+BIPOC adults, LGBTQ+ adults and adults with 
+a disability are statistically more likely to 
+delay care due to cost.
+The percent of adults delaying medical care 
+due to cost is statistically similar to 2022 and 
+2014.
+12%
+8%
+7%
+8%
+10%
+12%
+8%
+2%
+9%
+9%
+5%
+13%
+6%
+2%
+12%
+7%
+14%
+7%
+12%
+6%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults who Did Not Visit 
+Doctor Due to Cost, 2023
+9% 8% 8% 9% 8% 9% 8% 6% 6% 8%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults who Did Not Visit Doctor Due to Cost
+202023 Vermont Behavioral Risk Factor Surveillance System Report
+Note: This measure is a Healthy Vermonters 2030 indicator.
+=== PAGE 21
+Vermont Adults who Did Not Visit Doctor Due to Cost
+by County, 2022-2023
+Four percent of adults in 
+Windsor County delayed 
+medical care due to 
+cost. This is statistically 
+lower than the percent 
+of all Vermont adults.
+Adults in all other 
+counties delay medical 
+care due to cost at a 
+similar rate to Vermont 
+overall.
+212023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (7%)
+Statistically Lower than VT
+Too few data
+*Vermont estimate represents two years of data.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 22
+Quality of Life – Physical Health
+Twelve percent of Vermont adults report poor 
+physical health°, statistically similar to the 
+13% of U.S. adults.
+Poor physical health is reported at statistically 
+similar rates for males and females.
+Adults 45 and older are statistically more 
+likely to report poor physical health than 
+younger adults.
+Adults with less education and lower 
+household incomes are more likely to report 
+poor physical health.
+• Poor physical health is statistically higher 
+among adults with some college or less.
+• Adults in homes with lower incomes are 
+statistically more likely to report poor 
+physical health.
+There are no statistical differences in physical 
+health by race and ethnicity, or sexual 
+orientation and gender identity.
+Adults with a disability are over five times 
+more likely to report poor physical health than 
+adults with no disability. This is a statistical 
+difference.
+The percent of adults with poor physical 
+health is statistically similar to 2022, but 
+statistically higher than 2014.
+13%
+12%
+12%
+13%
+7%
+10%
+15%
+15%
+16%
+12%
+9%
+19%
+9%
+6%
+14%
+12%
+15%
+12%
+31%
+6%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults with 
+Poor Physical Health, 2023
+10% 11% 11% 12% 12% 12% 9% 10% 11% 12%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults with Poor Physical Health
+222023 Vermont Behavioral Risk Factor Surveillance System Report
+°Poor physical health defined as 14+ days in the last 30 where physical health self-reported as not good.
+=== PAGE 23
+Vermont Adults with Poor Physical Health°
+by County, 2022-2023
+Twenty-one percent of 
+adults in Essex County 
+and 17% in Bennington 
+County had 14 or more 
+poor physical health 
+days in the past month. 
+These rates are 
+statistically higher than 
+the percent of all 
+Vermont adults.
+All other counties report 
+poor physical health at 
+a similar rate to all 
+Vermont adults.
+°Poor physical health defined as 14+ days in the last 30 where physical health self-reported as not good.
+*Vermont estimate represents two years of data.
+2023 Vermont Behavioral Risk Factor Surveillance System Report 23
+Statistically Higher than VT
+Similar to VT* (12%)
+Statistically Lower than VT
+=== PAGE 24
+Quality of Life – Mental Health
+One in six Vermont adults report poor mental 
+health° (16%), the same as U.S. adults.
+Females are statistically more likely to report 
+poor mental health.
+Younger adults are most likely to report poor 
+mental health. Poor mental health statistically 
+decreases with age.
+Adults with less education and lower 
+household incomes are more likely to report 
+poor mental health.
+• Poor mental health is statistically higher 
+among adults with some college or less.
+• Adults in homes with lower incomes are 
+statistically more likely to report poor 
+mental health.
+There are no statistical differences in mental 
+health by race and ethnicity.
+LGBTQ+ adults are more than two times as 
+likely to report poor mental health than 
+HetCis adults. This is a statistical difference.
+Adults with a disability are nearly four times 
+as likely to report poor mental health than  
+adults with no disability. This is a statistical 
+difference.
+The percent of adults reporting poor mental 
+health is the same as 2022, but statistically 
+higher than 2014.
+16%
+16%
+14%
+18%
+29%
+20%
+15%
+8%
+19%
+18%
+11%
+25%
+11%
+9%
+19%
+16%
+34%
+13%
+34%
+9%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults with 
+Poor Mental Health, 2023
+10% 11% 12% 13% 12% 14% 14% 16% 16% 16%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults with Poor Mental Health
+°Poor mental health defined as 14+ days in the last 30 where mental health self-reported as not good.
+242023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 25
+Vermont Adults with Poor Mental Health°
+by County, 2022-2023
+All counties report poor 
+mental health at a 
+similar rate to all 
+Vermont adults.
+°Poor mental health defined as 14+ days in the last 30 where mental health self-reported as not good.
+*Vermont estimate represents two years of data.
+252023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (16%)
+Statistically Lower than VT
+=== PAGE 26
+Reactions to Race
+In the past month, 2% of Vermont adults 
+report experiencing any physical symptoms as 
+a result of how they were treated based on 
+their race.
+Physical symptoms include sensations such 
+as a headache, an upset stomach, tensing of 
+muscles or a pounding heart.
+Males and females report statistically similar 
+rates of experiencing physical symptoms 
+based on reactions to their race.
+Adults ages 25-44 are statistically more likely 
+than those 45-64 to experience physical 
+symptoms based on reactions to their race.
+Adults in homes with lower incomes are 
+statistically more likely to experience physical 
+symptoms based on reactions to their race 
+than those in homes with middle incomes.
+There are no statistical differences by 
+education level or sexual orientation and 
+gender identity.
+BIPOC adults are four times more likely to 
+experience physical symptoms based on 
+reactions to their race than white, non-
+Hispanic adults. This is a statistical 
+difference.
+Adults with a disability are five times more 
+likely to experience physical symptoms based 
+on reactions to their race than adults no 
+disability. This is a statistical difference.
+The percent of adults who report experiencing 
+physical symptoms based on reactions to 
+their race is the same as 2022 (2%).
+Note: Due to this question only be asked in 
+two survey years, a trend line is not provided.
+2%
+2%
+3%
+4%
+2%
+2%
+3%
+2%
+2%
+4%
+1%
+8%
+2%
+4%
+2%
+5%
+1%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults who Experience 
+Physical Symptoms Based on 
+Reactions to their Race, 2023
+262023 Vermont Behavioral Risk Factor Surveillance System Report
+*
+**
+*No national estimate available.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+**
+=== PAGE 27
+Vermont Adults who Experience Physical Symptoms Based on 
+Reactions to Their Race, by County, 2022-2023
+All counties have a 
+similar percent of adults 
+who experience physical 
+symptoms based on 
+reactions to their race 
+compared to Vermont 
+overall.
+Statistically Higher than VT
+Similar to VT* (2%)
+Statistically Lower than VT
+272023 Vermont Behavioral Risk Factor Surveillance System Report
+*Vermont estimate represents two years of data.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 28
+Disability
+Disability includes anyone who reports having 
+serious difficulty walking or climbing stairs, 
+concentrating or making decisions, hearing, 
+seeing, dressing or bathing, or who, because 
+of a physical, mental, or emotional condition, 
+has difficulty doing errands alone.
+Twenty-eight percent of Vermont adults have 
+a disability. This is statistically lower than the 
+30% of U.S. adults.
+Males and females report statistically similar 
+rates of disability.
+Adults 65 and older are statistically more 
+likely to have a disability than those 25-64. 
+Adults 18-24 and 45-64 are statistically more 
+likely to have a disability than those 25-44.
+Adults with less education and lower 
+household incomes are more likely to report a 
+disability.
+• All differences in disability by education 
+and household income level are 
+statistically significant.
+There are no statistical differences in 
+reported disability by race and ethnicity.
+LGBTQ+ adults are statistically more likely to 
+report a disability.
+The percent of adults with a disability is 
+statistically similar to 2022, but statistically 
+higher than 2016.
+30%
+28%
+28%
+28%
+31%
+20%
+25%
+38%
+37%
+31%
+17%
+44%
+19%
+12%
+29%
+27%
+40%
+26%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Vermont Adults with
+Any Disability, 2023
+24% 23% 22% 25% 24% 24% 23% 25% 27% 28%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults with Any Disability
+Note: Due to changes in the questions used to define disability in 2016, comparisons to prior years 
+cannot be made.
+282023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 29
+Vermont Adults with Any Disability°
+by County, 2022-2023
+More than one-third of 
+adults in Orleans County 
+have a disability (35%). 
+This is statistically higher 
+than all Vermont adults.
+More than two in ten 
+adults in Chittenden 
+County have a disability 
+(22%). This is statistically 
+lower than all Vermont 
+adults.
+All other counties have a 
+similar percent of adults 
+with a disability 
+compared to Vermont 
+overall.
+°Disability includes anyone who reports having serious difficulty walking or climbing stairs, 
+concentrating or making decisions, hearing, seeing, dressing or bathing, or who, because of a physical, 
+mental, or emotional condition has difficulty doing errands alone.
+*Vermont estimate represents two years of data.
+Statistically Higher than VT
+Similar to VT* (27%)
+Statistically Lower than VT
+292023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 30
+Disability – Type
+Individual questions are asked about specific disabilities or challenges that adults may face.
+• Thirteen percent of Vermont adults have serious difficulty concentrating, remembering or 
+making decisions due to a physical, mental or emotional condition. This is statistically 
+higher than the 9% in 2015.
+• Eleven percent have serious difficulty walking or climbing stairs.
+• Eight percent are deaf or have serious difficulty hearing. This is statistically higher than the 
+6% in 2016.
+• Eight percent have difficulty doing errands alone. This is statistically higher than the 6% in 
+2015.
+• Three percent are blind or have serious difficulty seeing.
+• Three percent have difficulty dressing or bathing.
+The percent of Vermont adults with all other types of disability are statistically similar to 2022 
+and 2015.
+9%
+9%
+10%
+10%
+9%
+9%
+12%
+12%
+13%
+11%
+11%
+12%
+11%
+11%
+10%
+11%
+11%
+11%
+6%
+8%
+7%
+7%
+7%
+7%
+8%
+8%
+6%
+6%
+6%
+6%
+7%
+6%
+6%
+6%
+8%
+3%
+3%
+4%
+3%
+4%
+4%
+4%
+4%
+3%
+3%
+3%
+3%
+3%
+2%
+3%
+3%
+2%
+3%
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+Type of Disability Among Vermont Adults
+Concentrating, Remembering or Making Decisions Walking or Climbing Stairs
+Hearing Doing Errands Alone
+Visual Dressing or Bathing
+Note: Serious difficulty hearing was first asked on the 2016 BRFSS.
+302023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 31
+Falls, Adults 45+
+More than one-quarter of Vermont adults 
+ages 45 and older fell in the past year (27%). 
+This is statistically higher compared to 25% of 
+U.S. adults ages 45 and over.
+Males and females report statistically similar 
+rates of experiencing at least one fall in the 
+past year.
+Adults 65 and older are statistically more 
+likely to experience a recent fall.
+Adults in homes with lower incomes are 
+statistically more likely to experience a recent 
+fall.
+Adults with a disability are two times as likely 
+to experience a recent fall than adults with no 
+disability. This is a statistical difference.
+There are no statistical differences in recent 
+falls by education level, race and ethnicity, or 
+sexual orientation and gender identity.
+The percent of adults experiencing at least 
+one fall in the past year is statistically lower 
+than 2020 and 2014.
+25%
+27%
+28%
+27%
+24%
+32%
+27%
+29%
+27%
+33%
+25%
+19%
+23%
+28%
+27%
+27%
+42%
+21%
+U.S.
+Vermont
+Male
+Female
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults 45+ who Fell 
+in the Past Year, 2023
+31% 35% 33% 31% 27%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults Ages 45+ who Fell in the Past Year
+312023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 32
+Vermont Adults Ages 45+ who Fell in Past Year 
+by County, 2020, 2023
+All counties have a 
+similar percent of adults 
+ages 45 and older who 
+fell in the past year 
+compared to Vermont 
+overall.
+Statistically Higher than VT
+Similar to VT* (29%)
+Statistically Lower than VT
+322023 Vermont Behavioral Risk Factor Surveillance System Report
+*Vermont estimate represents two years of data.
+=== PAGE 33
+Falls Resulting in Injury, Adults 45+
+Of the Vermont adults ages 45 and older who 
+fell at least once in the past year, one third 
+say a fall resulted in an injury (34%). This is 
+statistically lower compared to 41% of U.S. 
+adults ages 45 and over.
+An injury is defined as a fall that caused 
+limitations in regular activities for at least a 
+day or a visit to the doctor.
+Males and females report statistically similar 
+rates of a fall resulting in an injury.
+There are no statistical differences in falls 
+resulting in injury by age, education level or 
+household income level.
+BIPOC adults, HetCis adults and adults with a 
+disability are statistically more likely to report 
+a fall that resulted in an injury.
+The percent of adults reporting a fall resulting 
+in an injury is statistically similar to 2020 and 
+2014.
+41%
+34%
+29%
+39%
+38%
+30%
+35%
+36%
+31%
+34%
+30%
+40%
+53%
+33%
+21%
+35%
+45%
+25%
+U.S.
+Vermont
+Male
+Female
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults 45+ who had a Fall 
+Resulting in an Injury in the Past Year, 2023
+38% 36% 34% 31% 34%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults Ages 45+ who had a Fall Resulting in an Injury in the Past Year
+332023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 34
+Vermont Adults Ages 45+ who had a Fall Resulting in Injury° in 
+Past Year, by County, 2020, 2023
+Among adults 45 and 
+older that fell in the past 
+year, the percent with a 
+fall that resulted in an 
+injury in all counties is 
+similar to Vermont.
+Statistically Higher than VT
+Similar to VT* (32%)
+Statistically Lower than VT
+342023 Vermont Behavioral Risk Factor Surveillance System Report
+°Injury is defined as a fall that caused limitations in regular activities for at least a day or a visit to the 
+doctor.
+*Vermont estimate represents two years of data.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 35
+Chronic Conditions
+35
+=== PAGE 36
+Arthritis
+Nearly three in ten Vermont adults have 
+arthritis (29%). This is statistically higher than 
+the 25% of U.S. adults.
+Females are statistically more likely to have 
+arthritis.
+Arthritis prevalence statistically increases 
+with age. 
+The prevalence of arthritis is statistically 
+higher among adults with some college or 
+less.
+The prevalence of arthritis statistically 
+decreases as household income increases.
+White, non-Hispanic adults and HetCis adults 
+are statistically more likely to report having 
+arthritis.
+Adults with a disability are more than two 
+times as likely to report having arthritis than 
+adults with no disability. This is a statistical 
+difference.
+The percent of adults with arthritis is 
+statistically similar to 2022 and 2014.
+25%
+29%
+25%
+33%
+12%
+33%
+53%
+32%
+30%
+26%
+40%
+24%
+18%
+21%
+30%
+21%
+30%
+49%
+22%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults 
+with Arthritis, 2023
+28% 27% 28% 28% 28% 27% 26% 29% 29% 29%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults with Arthritis
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+362023 Vermont Behavioral Risk Factor Surveillance System Report
+**
+=== PAGE 37
+Vermont Adults with Arthritis
+by County, 2022-2023
+More than one-third of 
+adults in Bennington 
+(35%) and Rutland 
+(34%) counties have 
+arthritis. These rates 
+are statistically higher 
+than all Vermont adults.
+Twenty-two percent of 
+adults in Chittenden 
+County have arthritis, 
+statistically lower than 
+all Vermont adults.
+Other counties have a 
+similar arthritis 
+prevalence compared to 
+all Vermont adults.
+372023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (29%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 38
+Asthma
+More than one in 10 Vermont adults currently 
+have asthma (11%), statistically higher than 
+the 10% of U.S. adults.
+Females are statistically more likely to have 
+asthma.
+Adults with lower household incomes are 
+statistically more likely to have asthma.
+There are no statistical differences in asthma 
+prevalence by age, education level, race and 
+ethnicity, or sexual orientation and gender 
+identity.
+Adults with a disability are more than two 
+times as likely to have asthma than those 
+with no disability. This is a statistical 
+difference.
+The prevalence of asthma among Vermont 
+adults is statistically similar to 2022 and 
+2014.
+10%
+11%
+9%
+14%
+9%
+13%
+11%
+11%
+13%
+11%
+10%
+16%
+9%
+7%
+12%
+11%
+12%
+11%
+19%
+9%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults 
+with Asthma, 2023
+11% 11% 10% 12% 12% 12% 11% 12% 13% 11%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults with Asthma
+382023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 39
+Vermont Adults with Asthma
+by County, 2022-2023
+All counties have a 
+similar asthma 
+prevalence compared to 
+all Vermont adults.
+392023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (12%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 40
+Non-Melanoma Skin Cancer
+Seven percent of Vermont adults have ever 
+been diagnosed with non-melanoma skin 
+cancer. This is statistically higher than the 5% 
+of U.S. adults.
+Males and females report statistically similar 
+rates of skin cancer.
+Skin cancer prevalence statistically increases 
+with age.
+There are no statistical differences in skin 
+cancer prevalence by education level or 
+household income level.
+Statistical comparisons were not made for 
+skin cancer prevalence by race and ethnicity 
+due to data suppression.
+HetCis adults and adults with a disability are 
+statistically more likely to have ever had skin 
+cancer.
+The prevalence of skin cancer among 
+Vermont adults is statistically higher than the 
+6% in 2022.
+Note: Due to changes in the question in 
+2022, comparisons to prior years cannot be 
+made. Additionally, due to this question only 
+be asked in two survey years, a trend line is 
+not provided.
+5%
+7%
+7%
+8%
+1%
+6%
+18%
+6%
+7%
+8%
+6%
+7%
+5%
+8%
+3%
+8%
+9%
+6%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults Ever Diagnosed with 
+Non-Melanoma Skin Cancer, 2023
+402023 Vermont Behavioral Risk Factor Surveillance System Report
+**
+**
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 41
+Vermont Adults with Non-Melanoma Skin Cancer
+by County, 2022-2023
+Nine percent of adults 
+in Bennington County 
+have skin cancer. This is 
+statistically higher than 
+all Vermont adults.
+All other counties have 
+a similar skin cancer 
+prevalence compared to 
+all Vermont adults.
+412023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (6%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 42
+Cancer (including Melanoma)
+One in ten Vermont adults have ever been 
+diagnosed with cancer (10%), statistically 
+higher than the 8% of U.S. adults. 
+This definition excludes skin cancer, with the 
+exception of melanoma.
+Males and females report statistically similar 
+rates of cancer.
+The prevalence of cancer statistically 
+increases with age.
+There are no statistical differences in cancer 
+prevalence by education level or sexual 
+orientation and gender identity.
+Adults living in homes with lower annual 
+incomes are statistically more likely to have 
+ever had cancer.
+White, non-Hispanic adults and adults with a 
+disability are statistically more likely to have 
+ever had cancer.
+The prevalence of skin cancer among 
+Vermont adults is the same as in 2022.
+Note: Due to changes in the question in 
+2022, comparisons to prior years cannot be 
+made. Additionally, due to this question only 
+be asked in two survey years, a trend line is 
+not provided.
+8%
+10%
+9%
+11%
+3%
+9%
+23%
+11%
+9%
+11%
+13%
+9%
+7%
+5%
+11%
+8%
+11%
+16%
+8%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults Ever Diagnosed 
+with Cancer, 2023
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+422023 Vermont Behavioral Risk Factor Surveillance System Report
+**
+=== PAGE 43
+Vermont Adults with Cancer (including Melanoma)
+by County, 2022-2023
+All counties have a 
+similar cancer 
+prevalence compared to 
+all Vermont adults.
+432023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (10%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 44
+Cardiovascular Disease
+Eight percent of Vermont adults have ever 
+been diagnosed with CVD. This is statistically 
+similar to the 9% of U.S. adults.
+Cardiovascular disease (CVD) is defined as 
+ever having been diagnosed with coronary 
+heart disease, a myocardial infarction (heart 
+attack) or a stroke.
+Four percent of Vermont adults have coronary 
+heart disease, 5% have had a myocardial 
+infarction and 3% have had a stroke.
+Males are statistically more likely to have 
+CVD.
+The prevalence of CVD statistically increases 
+with age.
+Adults with some college education or less 
+are statistically more likely to have CVD.
+The prevalence of CVD is highest among 
+adults in lower income households.
+• All differences by income are statistically 
+significant.
+There are no statistical differences in CVD 
+prevalence by race and ethnicity.
+HetCis adults are more than two times as 
+likely to report having CVD than LGBTQ+ 
+adults. This is a statistical difference.
+Adults with a disability are more than three 
+times as likely to report having CVD than 
+adults with no disability. This is a statistical 
+difference.
+The prevalence of CVD among Vermont adults 
+is statistically similar to 2022 and 2014.
+9%
+8%
+11%
+6%
+2%
+8%
+19%
+12%
+9%
+5%
+14%
+5%
+3%
+8%
+8%
+4%
+9%
+18%
+5%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults with 
+Cardiovascular Disease, 2023
+7% 8% 8% 8% 8% 9% 8% 8% 9% 8%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults with Cardiovascular Disease
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+442023 Vermont Behavioral Risk Factor Surveillance System Report
+**
+=== PAGE 45
+Vermont Adults with Cardiovascular Disease°
+by County, 2022-2023
+Fifteen percent of 
+Orleans County adults 
+have CVD. This is 
+statistically higher than 
+all Vermont adults.
+Seven percent of 
+Chittenden County 
+adults have CVD, which 
+is statistically lower 
+than all Vermont adults.
+All other counties have 
+a similar CVD 
+prevalence to Vermont 
+overall.
+452023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (9%)
+Statistically Lower than VT
+°Cardiovascular disease (CVD) is defined as ever having been diagnosed with coronary heart disease, a 
+myocardial infarction (heart attack) or a stroke.
+*Vermont estimate represents two years of data.
+=== PAGE 46
+Chronic Kidney Disease
+Three percent of Vermont adults have chronic 
+kidney disease. This is statistically lower than 
+the 4% among U.S. adults.
+Excluded from chronic kidney disease are 
+kidney stones, bladder infections and 
+incontinence.
+Males and females report having chronic 
+kidney disease at statistically similar rates.
+The prevalence of chronic kidney disease 
+statistically increases with age.
+There are no statistical differences in the 
+prevalence of chronic kidney disease by 
+education level, race and ethnicity or sexual 
+orientation and gender identity.
+Adults in homes with lower incomes are five 
+times more likely to have chronic kidney 
+disease than those in homes with higher 
+incomes. This is a statistical difference.
+Adults with a disability are over three times as 
+likely than those without a disability to report 
+chronic kidney disease. This is a statistical 
+difference.
+The percent of adults with chronic kidney 
+disease is statistically similar to 2022 and 
+2014.
+Chronic kidney disease is a concern for adults 
+with diabetes. Among adults with diabetes, 
+13% have chronic kidney disease, statistically 
+higher than the 2% of Vermont adults without 
+diabetes.
+4%
+3%
+3%
+3%
+1%
+3%
+6%
+3%
+4%
+2%
+5%
+3%
+1%
+2%
+3%
+3%
+3%
+7%
+2%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults with 
+Chronic Kidney Disease, 2023
+3% 3% 3% 2% 2% 2% 2% 2% 3% 3%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults with Chronic Kidney Disease
+462023 Vermont Behavioral Risk Factor Surveillance System Report
+**
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 47
+Vermont Adults with Chronic Kidney Disease
+by County, 2022-2023
+All counties have a 
+similar percent of adults 
+with chronic kidney 
+disease compared to 
+Vermont overall. 
+472023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (3%)
+Statistically Lower than VT
+Too few data
+*Vermont estimate represents two years of data.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 48
+Chronic Obstructive Pulmonary Disease (COPD)
+Six percent of Vermont adults have ever been 
+told they have chronic obstructive pulmonary 
+disease (COPD). This is the same rate as U.S. 
+adults.
+Males and females report having COPD at 
+statistically similar rates.
+The prevalence of COPD among Vermont 
+adults statistically increases with age.
+Adults with less education and lower 
+household incomes are more likely to have 
+COPD.
+• All differences by education level are 
+statistically significant.
+• Adults in homes with lower incomes are 
+statistically more likely to have COPD.
+There are no statistical differences in the 
+prevalence of COPD by race and ethnicity.
+HetCis adults are over three times as likely to 
+report having COPD than LGBTQ+ adults. This 
+is a statistical difference.
+Adults with a disability are five times as likely 
+to report having COPD than adults without a 
+disability. This is a statistical difference.
+The percent of Vermont adults with COPD is 
+statistically similar to 2022 and 2014.
+6%
+6%
+6%
+7%
+3%
+7%
+12%
+10%
+6%
+3%
+11%
+4%
+2%
+7%
+6%
+2%
+7%
+15%
+3%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults 
+with COPD, 2023
+6% 6% 6% 6% 6% 7% 6% 7% 7% 6%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults with COPD
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+482023 Vermont Behavioral Risk Factor Surveillance System Report
+**
+=== PAGE 49
+Vermont Adults with COPD
+by County, 2022-2023
+Eleven percent of 
+Orleans County adults 
+have COPD. This is 
+statistically higher than 
+Vermont overall.
+Five percent of 
+Chittenden County 
+adults have COPD. This 
+is statistically lower 
+than all Vermont adults.
+All other counties have 
+a similar prevalence of 
+COPD compared to 
+Vermont.
+492023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (7%)
+Statistically Lower than VT
+Too few data
+*Vermont estimate represents two years of data.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 50
+COVID-19 Long-Term Effects
+Among the 57% of Vermont adults who have 
+ever tested positive for COVID-19, 11% report 
+experiencing symptoms (that did not exist 
+prior to having the virus) that lasted for three 
+months or longer.
+A positive test includes being diagnosed by a 
+health care provider or receiving a positive 
+home test.
+Females report statistically higher rates of 
+long-term effects from COVID-19.
+Adults ages 45-64 are statistically more likely 
+than those 65 and older to experience long-
+term effects.
+There are no statistical differences in 
+experiencing long-term effects by education 
+level, race and ethnicity, or sexual orientation 
+and gender identity.
+The prevalence of long-term effects from 
+COVID-19 statistically decreases as 
+household income level increases.
+Adults with a disability are nearly two times as 
+likely to report long-term effects from COVID-
+19 than those with no disability.
+The percent of Vermont adults with long-term 
+effects from COVID-19 is statistically lower 
+than the 16% in 2022.
+Note: Due to changes in methodology in 
+2023, use caution when comparing to 
+previous years. Additionally, due to this 
+question only be asked in its current form in 
+two survey years, a trend line is not provided.
+11%
+8%
+14%
+9%
+11%
+14%
+9%
+12%
+13%
+10%
+17%
+11%
+6%
+12%
+11%
+15%
+11%
+17%
+9%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults with 
+Long-Term COVID-19 Effects, 2023
+*No national estimate available.
+502023 Vermont Behavioral Risk Factor Surveillance System Report
+*
+=== PAGE 51
+Vermont Adults with COVID-19 Long-Term Effects
+by County, 2022-2023
+All counties have a 
+similar prevalence of 
+long-term effects from 
+COVID-19 compared to 
+Vermont overall.
+512023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (13%)
+Statistically Lower than VT
+Too few data
+*Vermont estimate represents two years of data.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 52
+Depressive Disorder
+More than one-quarter of Vermont adults 
+report ever being told they have a depressive 
+disorder (26%). This is statistically higher 
+than the 20% of U.S. adults. 
+Depressive disorders include depression, 
+major depression, dysthymia or minor 
+depression.
+Females are statistically more likely to report 
+having a depressive disorder.
+Adults 18-64 are statistically more likely to 
+have a depressive disorder compared to older 
+adults. Adults 25-44 are statistically more 
+likely to have a depressive disorder than 
+those 45-64.
+There are no statistical differences in the 
+prevalence of depressive disorders by 
+education level or race and ethnicity.
+The prevalence of depressive disorders 
+statistically decreases with household income 
+level.
+LGBTQ+ adults are more than two times as 
+likely to have a depressive disorder than 
+HetCis adults. This is a statistical difference.
+Adults with a disability are more than two 
+times as likely to report having a depressive 
+disorder than those with no disability. This is 
+a statistical difference.
+Depressive disorders among Vermont adults 
+is statistically similar to 2022, but statistically 
+higher than 2014.
+20%
+26%
+19%
+33%
+30%
+33%
+24%
+19%
+26%
+27%
+24%
+33%
+23%
+17%
+29%
+26%
+51%
+23%
+45%
+19%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults with 
+a Depressive Disorder, 2023
+22% 23% 22% 25% 21% 22% 23% 25% 25% 26%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults with a Depressive Disorder
+522023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 53
+Vermont Adults with a Depressive Disorder
+by County, 2022-2023
+All counties have a 
+similar prevalence of 
+depressive disorder 
+compared to Vermont 
+overall.
+532023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (25%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 54
+Prediabetes
+One in ten Vermont adults have ever been 
+diagnosed with borderline or prediabetes.
+Males and females report statistically similar 
+rates of prediabetes.
+Adults 45 and older are statistically more likely 
+to have prediabetes than adults 25-44.
+Adults with a high school education or less are 
+statistically more likely to have prediabetes 
+than those with a college degree or more.
+Adults in homes with lower incomes are 
+statistically more likely to have prediabetes 
+than those in higher income homes.
+There are no statistical differences in 
+prediabetes prevalence by race and ethnicity.
+HetCis adults are nearly two times as likely to 
+have prediabetes than LGBTQ+ adults. This is a 
+statistical difference. 
+Adults with a disability are statistically more 
+likely to have prediabetes.
+The prevalence of diabetes among Vermont 
+adults is statistically similar to 2021, but 
+statistically higher than 2014.
+Prediabetes is likely underreported due to a 
+relatively low rate of testing. Seventy-six 
+percent of Vermont adults were tested for 
+diabetes or high blood sugar in the prior three 
+years.
+Seventeen percent of adults with prediabetes 
+have participated in a lifestyle change program 
+to improve their health or prevent diabetes.
+10%
+10%
+9%
+6%
+13%
+15%
+11%
+10%
+8%
+12%
+9%
+7%
+12%
+10%
+6%
+11%
+13%
+9%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults with 
+Prediabetes, 2023
+6% 7% 8% 9% 10%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults with Prediabetes
+542023 Vermont Behavioral Risk Factor Surveillance System Report
+**
+*No national estimate available.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+*
+=== PAGE 55
+Vermont Adults with Prediabetes
+by County, 2021, 2023
+All counties have a 
+similar prevalence of 
+prediabetes compared 
+to Vermont overall.
+552023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (9%)
+Statistically Lower than VT
+Too few data
+*Vermont estimate represents two years of data.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 56
+Diabetes
+Nine percent of Vermont adults have ever been 
+diagnosed with diabetes, statistically lower 
+than the 12% among U.S. adults.
+The average age of diagnosis in Vermont is 48 
+years old.
+Males and females report statistically similar 
+rates of diabetes.
+The prevalence of diabetes statistically 
+increases with age.
+Diabetes rates are higher among adults with 
+less education and lower household incomes.
+• Adults with some college or less education 
+are statistically more likely to have diabetes.
+• The prevalence of diabetes statistically 
+decreases as household income level 
+increases.
+There are no differences in diabetes 
+prevalence by race and ethnicity.
+HetCis adults are statistically more likely to 
+have diabetes.
+Adults with a disability are more than two times 
+as likely to report having diabetes than those 
+with no disability. This is a statistical difference.
+The prevalence of diabetes among Vermont 
+adults is statistically similar to 2022 and 2014.
+12%
+9%
+10%
+8%
+4%
+11%
+17%
+13%
+10%
+5%
+12%
+8%
+4%
+9%
+9%
+6%
+10%
+16%
+6%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults with 
+Diabetes, 2023
+8% 8% 8% 8% 9% 9% 8% 9% 8% 9%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults with Diabetes
+562023 Vermont Behavioral Risk Factor Surveillance System Report
+**
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 57
+Vermont Adults with Diabetes
+by County, 2022-2023
+Thirteen percent of 
+Caledonia County adults 
+have diabetes. This is 
+statistically higher than 
+Vermont overall.
+Seven percent of 
+Chittenden County and 
+5% of Lamoille County 
+adults have diabetes, 
+which is statistically 
+lower than Vermont 
+overall.
+All other counties have 
+a similar prevalence of 
+diabetes compared to 
+Vermont overall.
+572023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (9%)
+Statistically Lower than VT
+Too few data
+*Vermont estimate represents two years of data.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 58
+High Cholesterol
+More than one-third of Vermont adults report 
+they have ever been told they have high 
+cholesterol (34%). This is statistically lower 
+compared to 38% of U.S. adults.
+This is likely an underestimate as only 86% of 
+adults have had their cholesterol checked in 
+the last five years.
+• Nearly six in ten adults with high 
+cholesterol are taking medication to 
+reduce it (57%).
+Males are statistically more likely to have high 
+cholesterol.
+The prevalence of high cholesterol statistically 
+increases with age.
+There are no differences in high cholesterol 
+prevalence by education level or race and 
+ethnicity.
+The prevalence of high cholesterol is 
+statistically higher among adults with lower 
+household incomes. 
+HetCis adults and adults with a disability are 
+statistically more likely to report high 
+cholesterol.
+The prevalence of high cholesterol among 
+Vermont adults is statistically similar to 2021 
+and 2015.
+38%
+34%
+37%
+31%
+20%
+35%
+49%
+36%
+34%
+31%
+37%
+32%
+27%
+29%
+34%
+26%
+35%
+42%
+31%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults with 
+High Cholesterol, 2023
+34% 28% 28% 32% 34%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults with High Cholesterol
+582023 Vermont Behavioral Risk Factor Surveillance System Report
+**
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 59
+Vermont Adults with High Cholesterol
+by County, 2021, 2023
+Nearly three in ten 
+Chittenden County 
+adults have high 
+cholesterol (29%). This 
+is statistically lower 
+than Vermont overall.
+All other counties have 
+a similar prevalence of 
+high cholesterol 
+compared to Vermont 
+overall.
+592023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (33%)
+Statistically Lower than VT
+Too few data
+*Vermont estimate represents two years of data.
+=== PAGE 60
+Hypertension
+One-third of Vermont adults have been told 
+they have hypertension, also known as high 
+blood pressure (33%). This is statistically 
+lower compared to 34% of U.S. adults.
+Among diagnosed adults, 77% are taking 
+prescription medicine for their hypertension.
+Males are statistically more likely to have 
+been diagnosed with hypertension.
+Hypertension statistically increases with age.
+Adults with some college or less are 
+statistically more likely to have hypertension 
+compared to those with a college degree or 
+more.
+Adults in homes with lower to middle incomes 
+are statistically more likely to have 
+hypertension than those in homes with higher 
+incomes.
+There are no differences in hypertension 
+prevalence by race and ethnicity.
+HetCis adults and adults with a disability are 
+statistically more likely to report having 
+hypertension.
+The prevalence of hypertension among 
+Vermont adults is statistically similar to 2022, 
+but statistically higher than 2015.
+34%
+33%
+37%
+29%
+9%
+17%
+36%
+54%
+38%
+34%
+26%
+37%
+32%
+25%
+29%
+33%
+20%
+34%
+47%
+28%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults with 
+Hypertension, 2023
+29% 30% 30% 30% 30% 30% 32% 33%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults with Hypertension
+602023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 61
+Vermont Adults with Hypertension
+by County, 2022-2023
+More than four in ten 
+adults in Orleans County 
+have hypertension 
+(41%). This is 
+statistically higher than 
+Vermont overall.
+More than one-quarter 
+of adults in Chittenden 
+County have 
+hypertension (27%), 
+which is statistically 
+lower than Vermont 
+overall.
+All other counties have 
+a similar rate of 
+hypertension compared 
+to Vermont.
+612023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (32%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 62
+Risk Factors and Behaviors
+62
+=== PAGE 63
+Alcohol Consumption – Any in Past Month
+Six in ten Vermont adults had any alcohol in 
+the past month (61%). This is statistically 
+higher than the 52% of U.S. adults.
+Males report using alcohol at a statistically 
+higher rate.
+Adults ages 25-64 are statistically more likely 
+to report using alcohol than older adults.
+The prevalence of alcohol use statistically 
+increases with education level and household 
+income level.
+There are no statistical differences in alcohol 
+use by race and ethnicity, or sexual 
+orientation and gender identity.
+Adults with no disability are statistically more 
+likely to use alcohol.
+The prevalence of alcohol use among adults 
+is statistically similar to 2022, but statistically 
+lower than 2014.
+52%
+61%
+64%
+57%
+57%
+66%
+64%
+54%
+48%
+60%
+72%
+50%
+69%
+79%
+58%
+61%
+61%
+61%
+48%
+65%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults with Any 
+Alcohol Consumption, 2023
+64% 61% 64% 63% 61% 64% 62% 61% 61% 61%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults with Any Alcohol Consumption
+632023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 64
+Vermont Adults with Any Alcohol Consumption
+by County, 2022-2023
+Nearly seven in ten 
+adults in Lamoille 
+(69%), Addison (67%), 
+and Chittenden (67%) 
+counties consumed 
+alcohol in the past 
+month. These rates are 
+statistically higher than 
+Vermont overall.
+Fifty-six percent of 
+adults in Rutland, 55% 
+in Windsor, and 52% in 
+Orange and Orleans 
+counties consumed any 
+alcohol in the past 
+month. These rates are 
+statistically lower than 
+Vermont overall.
+All other counties have 
+a similar prevalence of 
+alcohol use in the past 
+month compared to 
+Vermont.
+642023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (61%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 65
+Alcohol Consumption – Binge Drinking
+Sixteen percent of Vermont adults report 
+binge drinking in the past month, statistically 
+similar to the 15% of U.S. adults.
+Binge drinking is defined as five or more 
+drinks on an occasion for males and four or 
+more for females.
+Males are statistically more likely to binge 
+drink.
+Binge drinking statistically decreases with 
+age.
+Adults in homes with higher incomes are 
+statistically more likely to binge drink than 
+those in homes with lower incomes.
+There are no statistical differences in binge 
+drinking by education level, race and 
+ethnicity, sexual orientation and gender 
+identity, or disability status.
+The percent of Vermont adults binge drinking 
+is statistically similar to 2022 and 2014.
+15%
+16%
+20%
+13%
+32%
+23%
+15%
+5%
+15%
+18%
+16%
+15%
+18%
+23%
+14%
+17%
+21%
+16%
+15%
+17%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults who
+Report Binge Drinking, 2023
+18% 17% 18% 17% 17% 18% 18% 17% 18% 16%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults who Report Binge Drinking
+652023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 66
+Vermont Adults who Report Binge Drinking°
+by County, 2022-2023
+Two in ten Chittenden 
+County adults binge 
+drank in the past 
+month. This is 
+statistically higher than 
+all Vermont adults.
+All other counties have 
+a similar binge drinking 
+rate compared to 
+Vermont.
+662023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (17%)
+Statistically Lower than VT
+°Binge drinking is defined as five or more drinks on an occasion for males and four or more for females.
+*Vermont estimate represents two years of data.
+=== PAGE 67
+Alcohol Consumption – Heavy Drinking
+Eight percent of Vermont adults report 
+drinking heavily in the past month, which is 
+statistically higher than the 6% of U.S. adults. 
+Heavy drinking is defined as more than two 
+drinks per day for males and more than one 
+drink for females.
+Males and females report statistically similar 
+rates of heavy drinking.
+Adults ages 18-64 are statistically more likely 
+to report heavy drinking than those 65 and 
+older.
+There are no statistical differences in heavy 
+drinking by education level, household 
+income level, race and ethnicity, sexual 
+orientation and gender identity, or disability 
+status.
+The percent of adults drinking heavily is 
+statistically similar to 2022 and 2014.
+6%
+8%
+7%
+9%
+12%
+8%
+9%
+6%
+7%
+9%
+9%
+9%
+9%
+11%
+6%
+9%
+10%
+8%
+8%
+8%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults who
+Report Heavy Drinking, 2023
+9% 8% 9% 8% 8% 9% 10% 9% 10% 8%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults who Report Heavy Drinking
+672023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 68
+Vermont Adults who Report Heavy Drinking°
+by County, 2022-2023
+Twelve percent of 
+Washington County 
+adults report 
+heavy drinking in the 
+past month. This is 
+statistically higher than 
+all Vermont adults.
+All other counties have 
+similar rates of heavy 
+drinking compared to 
+Vermont overall.
+682023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (9%)
+Statistically Lower than VT
+Too few data
+°Heavy drinking is defined as more than two drinks per day for males and more than one for females.
+*Vermont estimate represents two years of data.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 69
+Alcohol Consumption – Driving Under the Influence
+Among adults using any alcohol in the past 
+month, three percent report driving after 
+having too much to drink at least once. This is 
+the same as U.S. adults.
+Males and females report statistically similar 
+rates of drinking and driving.
+Adults 25-64 are statistically more likely to 
+drink and drive than older adults.
+There are no statistical differences in drinking 
+and driving by education level, household 
+income level or disability status.
+Statistical comparisons were not made for 
+drinking and driving by race and ethnicity or 
+sexual orientation and gender identity due to 
+data suppression.
+Adults report drinking and driving at 
+statistically similar rates to 2020 and 2014. 
+3%
+3%
+3%
+2%
+4%
+4%
+1%
+3%
+2%
+3%
+4%
+3%
+3%
+3%
+3%
+3%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults who Report Driving 
+After Drinking Alcohol, 2023
+3% 4% 3% 2% 3%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults who Report Driving After Drinking Alcohol 
+among those who Drink
+692023 Vermont Behavioral Risk Factor Surveillance System Report
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+**
+**
+**
+**
+=== PAGE 70
+Vermont Adults who Report Driving After Drinking Alcohol
+by County, 2020, 2023
+All counties have a 
+similar rate of driving 
+after drinking alcohol 
+compared to Vermont 
+overall.
+702023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (3%)
+Statistically Lower than VT
+Too few data
+*Vermont estimate represents two years of data.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 71
+Cannabis Use
+Nearly one-quarter of Vermont adults report 
+using cannabis in the past month (24%).
+Males are statistically more likely to use 
+cannabis.
+Cannabis use decreases with age.
+• All differences in cannabis use by age are 
+statistically significant, except between 
+adults 18-24 and those 25-44.
+There are no statistical differences in 
+cannabis use by education level, household 
+income level, or race and ethnicity.
+LGBTQ+ adults are two times as likely to use 
+cannabis than HetCis adults. This is a 
+statistical difference.
+Adults with a disability are statistically more 
+likely to use cannabis.
+The prevalence of cannabis use is statistically 
+similar to 2022, but statistically higher than 
+2015.
+24%
+27%
+20%
+33%
+36%
+22%
+10%
+24%
+25%
+22%
+27%
+25%
+22%
+25%
+23%
+43%
+21%
+29%
+22%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults who
+Use Cannabis, 2023
+11% 12% 15% 17% 20% 18% 22% 24% 24%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults who Use Cannabis
+712023 Vermont Behavioral Risk Factor Surveillance System Report
+*
+*No national estimate available.
+=== PAGE 72
+Vermont Adults who Use Cannabis 
+by County, 2022-2023
+All counties have a 
+similar rate of cannabis 
+use compared to 
+Vermont overall.
+722023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (24%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 73
+Cannabis Use – Primary Method & Reason
+Vermont adults using cannabis were asked about their primary method of use:
+• Most users say their primary method was smoking (63%).
+• Nearly two in ten users mainly consume it in food or drink (19%).
+• Thirteen percent of users mainly vape.
+• Five percent of users mainly dab or use cannabis in some other way.
+• All methods of use are statistically similar to 2022.
+Vermont adults using cannabis in the past month were asked about their reason for use:
+• More than half of users say it is usually for non-medical reasons (51%).
+• One-third of users mainly use it for both medical and non-medical reasons (33%).
+• Sixteen percent of users mainly use it for medical reasons.
+• All reasons for use are statistically similar to 2022.
+Smoked 
+63%
+Consumed 
+in food or 
+drink, 
+19%
+Vaped, 13%
+Dabbed or used in 
+some other way, 5%
+Primary Method of Cannabis Use 
+among Vermont Adults 
+Using in the Past Month, 2023
+Non-Medical 
+51%
+Both 
+Medical and 
+Non-Medical 
+33%
+Medical 
+16%
+Reason for Cannabis Use 
+among Vermont Adults 
+Using in the Past Month, 2023
+732023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 74
+Cannabis Use – Driving Under the Influence
+Nineteen percent of cannabis users drove 
+within three hours of use at least once in the 
+past month.
+Males are statistically more likely to drive 
+after using cannabis.
+There are no statistical differences in driving 
+after cannabis use by age, education level, 
+household income level, race and ethnicity, 
+sexual orientation and gender identity, or 
+disability status.
+The prevalence of driving after cannabis use 
+is statistically similar to 2022, but statistically 
+lower than 2016.
+19%
+24%
+12%
+19%
+22%
+16%
+16%
+20%
+20%
+17%
+17%
+22%
+18%
+26%
+18%
+19%
+20%
+19%
+20%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults who Report Driving 
+After Using Cannabis, 2023
+31% 26% 23% 26% 18% 22% 19%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults who Report Driving After Using Cannabis
+*No national estimate available.
+*
+2023 Vermont Behavioral Risk Factor Surveillance System Report 74
+=== PAGE 75
+Vermont Adults who Report Driving After Using Cannabis
+by County, 2022-2023
+Compared to the 
+Vermont rate, adults in 
+all counties have similar 
+rates of driving within 
+three hours of using 
+cannabis.
+*Vermont estimate represents two years of data.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+752023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (21%)
+Statistically Lower than VT
+Too few data
+=== PAGE 76
+Tobacco Use – E-Cigarette Use
+Five percent of Vermont adults report 
+currently using electronic cigarettes (e-
+cigarettes) or other electronic vaping 
+products. This is statistically lower compared 
+to the 7% of U.S. adults.
+Males and females report statistically similar 
+rates of e-cigarette use.
+E-cigarette use statistically decreases with 
+age.
+Adults with some college education or less 
+are statistically more likely to use e-cigarettes 
+than those with a college degree or more.
+There are no statistical differences in e-
+cigarette use by household income level or 
+race and ethnicity.
+LGBTQ+ adults are nearly three times as likely 
+to use e-cigarettes than non-LGBTQ+ adults. 
+This is a statistical difference.
+Adults with a disability are two times as likely 
+to use e-cigarettes than adults with no 
+disability. This is a statistical difference.
+The rate of e-cigarette use among Vermont 
+adults is statistically similar to 2022 and 
+2016.
+Among adults who currently use e-cigarettes, 
+17% report usually smoking menthol 
+e-cigarettes.
+7%
+5%
+6%
+4%
+14%
+8%
+3%
+7%
+6%
+2%
+6%
+5%
+4%
+6%
+5%
+11%
+4%
+8%
+4%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults who Currently 
+Use E-Cigarettes, 2023
+3% 3% 4% 5% 6% 5%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults who Currently Use E-Cigarettes
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+Note: In 2022, changes were made to the question used to measure e-cigarette use. Due to this, use 
+caution when comparing to previous years.
+762023 Vermont Behavioral Risk Factor Surveillance System Report
+**
+=== PAGE 77
+Vermont Adults who Currently Use E-Cigarettes
+by County, 2022-2023
+Compared to the 
+Vermont rate, adults in 
+all counties have similar 
+rates of e-cigarette use.
+772023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (6%)
+Statistically Lower than VT
+Too few data
+*Vermont estimate represents two years of data.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 78
+Tobacco Use – Smokeless Tobacco
+Two percent of Vermont adults use smokeless 
+tobacco, statistically lower than the 3% of U.S. 
+adults. 
+Smokeless tobacco includes products such 
+as chewing tobacco, snuff and snus.
+Males are statistically more likely to use 
+smokeless tobacco.
+There are no statistical differences in 
+smokeless tobacco use by age, household 
+income level or disability status.
+Smokeless tobacco use is statistically higher 
+among adults with a high school education or 
+less compared to those with a college degree 
+or more.
+Statistical comparisons were not made for 
+smokeless tobacco use by race and ethnicity 
+or sexual orientation and gender identity due 
+to data suppression.
+The percent of adults using smokeless 
+tobacco is statistically similar to 2022, but 
+statistically lower than 2014.
+3%
+2%
+3%
+1%
+3%
+2%
+3%
+2%
+1%
+2%
+2%
+2%
+2%
+3%
+2%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults who 
+Use Smokeless Tobacco, 2023
+3% 4% 3% 3% 3% 3% 2% 3% 3% 2%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults who Use Smokeless Tobacco
+782023 Vermont Behavioral Risk Factor Surveillance System Report
+**
+**
+**
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+**
+**
+=== PAGE 79
+Vermont Adults who Use Smokeless Tobacco
+ by County, 2022-2023
+Compared to the 
+Vermont rate, adults in 
+all counties have similar 
+rates of smokeless 
+tobacco use.
+792023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (2%)
+Statistically Lower than VT
+Too few data
+*Vermont estimate represents two years of data.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 80
+Tobacco Use – Cigarette Smoking
+More than one in ten Vermont adults report 
+smoking cigarettes (11%). This is the same 
+rate as U.S. adults.
+Males and females report statistically similar 
+rates of cigarette smoking.
+Adults 25-64 are statistically more likely to 
+smoke cigarettes than adults 18-24 and 
+those 65 and older.
+Smoking is higher among adults with less 
+education and lower household incomes.
+• All differences in smoking by education 
+level are statistically significant.
+• All differences in smoking by household 
+income level are statistically significant, 
+except between homes with middle and 
+higher incomes.
+There are no statistical differences in 
+smoking by race and ethnicity, or sexual 
+orientation and gender identity.
+Adults with a disability are more than two 
+times as likely to smoke cigarettes than 
+adults with no disability. This is a statistical 
+difference.
+The smoking rate among Vermont adults is 
+statistically similar to 2022, but statistically 
+lower than 2014.
+Among adults who currently smoke, 16% 
+report usually smoking menthol cigarettes.
+11%
+11%
+12%
+10%
+5%
+13%
+16%
+6%
+18%
+12%
+4%
+18%
+8%
+5%
+13%
+11%
+11%
+11%
+18%
+8%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults who Currently 
+Smoke Cigarettes, 2023
+16% 16% 17% 16% 14% 15% 13% 15% 13% 11%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults who Currently Smoke Cigarettes
+802023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 81
+Vermont Adults who Currently Smoke Cigarettes
+by County, 2022-2023
+Eighteen percent of 
+Caledonia County adults 
+smoke cigarettes. This 
+is statistically higher 
+than Vermont adults 
+overall.
+Eight percent of adults 
+in Chittenden County 
+smoke cigarettes, which 
+is statistically less than 
+Vermont adults overall.
+All other counties have 
+smoking rates similar to 
+Vermont.
+812023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (12%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 82
+Tobacco Use – Quit Attempts
+Nearly half of Vermont adults who smoke 
+cigarettes have tried to quit smoking in the 
+past year (47%).
+There are no statistical differences in trying to 
+quit smoking by sex, age, education level, 
+household income level, race and ethnicity, 
+sexual orientation and gender identity, or 
+disability status.
+The percent of adults who smoke cigarettes 
+and have tried to quit is statistically similar to 
+2022, but statistically lower than 2014.
+47%
+47%
+48%
+54%
+47%
+38%
+44%
+55%
+45%
+56%
+41%
+43%
+55%
+46%
+63%
+46%
+52%
+43%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults who 
+Tried to Quit Smoking, 2023
+60% 58% 50% 59% 57% 52% 53% 45% 44% 47%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults who Tried to Quit Smoking
+822023 Vermont Behavioral Risk Factor Surveillance System Report
+*No national estimate available.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+**
+*
+=== PAGE 83
+Vermont Adults who Tried to Quit Smoking
+by County, 2022-2023
+Compared with 
+Vermont, all counties 
+have a similar percent 
+of adults who have tried 
+to quit smoking 
+cigarettes.
+832023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (45%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+Too few data
+=== PAGE 84
+BMI-Defined Obesity, Adults 20+
+Three in ten Vermont adults ages 20 and 
+older have BMI-defined obesity (30%), 
+statistically lower than the 34% among U.S. 
+adults of the same age.
+Obesity status is defined as a body mass 
+index (BMI) of 30 or greater. BMI is a singular, 
+indirect indicator of body fat meant to identify 
+weight-related health risk. Though useful at 
+the population level, BMI has limited 
+usefulness at the individual level.
+Males and females report statistically similar 
+rates of obesity.
+All differences in obesity by age are 
+statistically significant, except between adults 
+25-44 and those 45-64.
+Adults with some college education or less 
+are statistically more likely to have obesity 
+than those with a college degree or more.
+Adults in homes with lower to middle incomes 
+are statistically more likely to have obesity 
+than those in homes with higher incomes.
+There are no statistical differences in obesity 
+status by race and ethnicity, or sexual 
+orientation and gender identity.
+Adults with a disability are statistically more 
+likely to have obesity.
+The prevalence of obesity is statistically 
+similar to 2022, but statistically higher than 
+2014.
+34%
+30%
+29%
+30%
+16%
+32%
+35%
+25%
+35%
+33%
+23%
+32%
+31%
+24%
+29%
+30%
+32%
+29%
+36%
+27%
+U.S.
+Vermont
+Male
+Female
+20-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults 20+ 
+with BMI-Defined Obesity, 2023
+26% 26% 28% 28% 28% 27% 27% 30% 27% 30%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults 20+ with BMI-Defined Obesity
+842023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 85
+Vermont Adults Ages 20+ with BMI-Defined Obesity
+by County, 2022-2023
+Essex (48%), Orleans 
+(38%), and Franklin 
+(36%) counties have 
+statistically higher rates 
+of obesity compared to 
+all Vermont adults 20 
+and older.
+Nearly one-quarter of 
+Chittenden County 
+adults 20 and older 
+have obesity (24%). This 
+is statistically lower 
+than all Vermont adults 
+of the same age.
+All other counties have 
+a similar percent of 
+adults with obesity 
+compared to the 
+Vermont rate.
+852023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (29%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 86
+BMI-Defined Overweight, Adults 20-59
+One-third of Vermont adults ages 20 to 59 are 
+overweight (33%) according to their BMI. This 
+is statistically similar to the 35% of U.S. 
+adults of the same age.
+Overweight status is defined as a body mass 
+index (BMI) of 25 to less than 30. BMI is a 
+singular, indirect indicator of body fat meant 
+to identify weight-related health risks. Though 
+useful at the population level, BMI has limited 
+usefulness at the individual level.
+Males are statistically more likely to be 
+overweight.
+There are no statistical differences in 
+overweight status by age, education level, 
+race and ethnicity, sexual orientation and 
+gender identity, or disability status.
+Adults in homes with higher incomes are 
+statistically more likely to be overweight than 
+those in homes with lower incomes.
+The prevalence of being overweight is 
+statistically similar to 2022 and 2014.
+35%
+33%
+39%
+27%
+34%
+32%
+35%
+33%
+31%
+35%
+28%
+35%
+38%
+30%
+34%
+29%
+34%
+32%
+34%
+U.S.
+Vermont
+Male
+Female
+20-24
+25-44
+45-59
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults 20-59 with 
+BMI-Defined Overweight Status, 2023
+34% 34% 32% 33% 33% 31% 34% 31% 34% 33%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults 20-59 with BMI-Defined Overweight Status
+862023 Vermont Behavioral Risk Factor Surveillance System Report
+Note: Current research has found a protective effect of overweight BMIs in adults 60 and older 
+compared to younger adults.
+=== PAGE 87
+Vermont Adults Ages 20-59 with BMI-Defined Overweight 
+Status, by County, 2022-2023
+All counties have a 
+similar percent of adults 
+ages 20-59 who are 
+overweight according to 
+their BMI compared to 
+Vermont adults of the 
+same age.
+872023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (33%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 88
+Community Safety for Walking
+Twelve percent of Vermont adults say their 
+community is only slightly safe or not at all 
+safe for walking.
+Males and females report their community is 
+not safe for walking at statistically similar 
+rates.
+Adults 18-24 are statistically more likely to 
+say their community is not safe for walking 
+than those 45 and older. Adults 25-64 are 
+statistically more likely to say the same as 
+older adults.
+Adults with less education and lower 
+household income are more likely to say their 
+community is not safe for walking.
+• Adults with some college education or less 
+are statistically more likely to say their 
+community is not safe for walking than 
+adults with a college degree or more.
+• Rating one’s community as not safe for 
+walking statistically decreases as 
+household income level increases.
+BIPOC adults, LGBTQ+ adults and adults with 
+a disability are statistically more likely to say 
+their community is not safe for walking.
+The percent of adults that report their 
+community is not safe for walking is 
+statistically similar to 2019, but statistically 
+higher than 2017.
+12%
+10%
+13%
+21%
+14%
+11%
+7%
+15%
+13%
+8%
+16%
+11%
+6%
+19%
+11%
+16%
+11%
+17%
+9%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults who Rated Community 
+Not Safe for Walking, 2023
+2% 7%
+37%
+54%
+2% 9%
+38%
+52%
+2% 10%
+43% 46%
+Not at all Safe Slightly Safe Quite Safe Extremely Safe
+Community Safety for Walking
+2017 2019 2023
+882023 Vermont Behavioral Risk Factor Surveillance System Report
+*
+*No national estimate available.
+=== PAGE 89
+Vermont Adults who Rated Community Not Safe for Walking
+by County, 2019, 2023
+Adults in Rutland 
+County (16%) are 
+statistically more likely 
+to say their community 
+is either only slightly 
+safe or not at all safe for 
+walking.
+Adults in Lamoille (6%) 
+and Addison (5%) 
+counties are statistically 
+less likely to say their 
+community is not safe 
+for walking.
+In all other counties, a 
+similar percent of adults 
+say their community is 
+not safe for walking 
+compared to the 
+Vermont rate.
+892023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (11%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+Too few data
+=== PAGE 90
+Firearm Storage
+Among adults with a firearm in the home, 
+17% have a loaded firearm.
+More broadly, among all Vermont adults:
+• 40% have a firearm in the home.
+• 7% have a loaded firearm in the home.
+• 4% have an unlocked, loaded firearm in the 
+home.
+Males are statistically more likely to keep a 
+loaded firearm in the home.
+Adults with a high school education or less 
+are statistically more likely to keep a loaded 
+firearm in the home than those with a college 
+degree or more.
+BIPOC adults are statistically more likely to 
+keep a loaded firearm in the home.
+There are no statistical differences in whether 
+a firearm is stored loaded by age, household 
+income level, sexual orientation and gender 
+identity, or disability status.
+Among Vermont households with a firearm in 
+the home, the percent of those that store a 
+firearm loaded is statistically similar to the 
+18% in 2020.
+Among Vermont households with a loaded 
+firearm in the home, 57% keep a loaded 
+firearm unlocked. This is statistically similar 
+to the 60% in 2020.
+17%
+21%
+12%
+19%
+18%
+17%
+21%
+18%
+13%
+17%
+18%
+16%
+28%
+16%
+15%
+17%
+22%
+16%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Households with a Loaded Firearm, 
+among Vermont Adults with a 
+Firearm in the Home, 2023
+17% 18% 17%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Households with a Loaded Firearm, 
+among Vermont Adults with a Firearm in the Home
+902023 Vermont Behavioral Risk Factor Surveillance System Report
+*
+**
+*No national estimate available.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+For more information, refer to the Vermont Department of Health Firearm Safety Webpage.
+=== PAGE 91
+Vermont Households with a Loaded Firearm in the Home
+by County, 2020, 2023
+All counties have a similar 
+percent of adults who 
+have a firearm in or 
+around the home that is 
+loaded, when compared 
+to Vermont overall.
+912023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (18%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 92
+Housing and Health
+In the past year, nearly one in ten Vermont 
+adults had an illness or symptom that was 
+caused or made worse by air quality, mold, 
+pests, furnishings, or excessive heat or cold 
+inside their home (9%).
+Females are statistically more likely to 
+recently experience an illness or symptom 
+caused or made worse by their home 
+environment.
+There are no statistical differences in housing 
+and health by age or race and ethnicity.
+Adults with some college education or more 
+are statistically more likely to report their 
+health was affected by their home 
+environment.
+Adults with lower household incomes are 
+statistically more likely to report their health 
+was affected by their home environment than 
+those with middle household incomes.
+LGBTQ+ adults and adults with a disability are 
+more than two times as likely to report their 
+health was affected by their home 
+environment than HetCis adults and adults 
+with no disability, both statistically significant 
+differences.
+The percent of adults that report their health 
+was affected by their home environment is 
+statistically higher than the 3% in 2020.
+Note: Due to this question only be asked in 
+two survey years, a trend line is not provided.
+9%
+8%
+11%
+13%
+10%
+9%
+8%
+7%
+11%
+11%
+12%
+8%
+8%
+11%
+9%
+18%
+8%
+16%
+6%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults with Illness or Symptom 
+Caused or Made Worse by Home 
+Environment in Past Year, 2023
+922023 Vermont Behavioral Risk Factor Surveillance System Report
+*No national estimate available.
+*
+=== PAGE 93
+Vermont Adults with Illness or Symptom Caused or Made Worse 
+by Home Environment in Past Year, by County, 2020, 2023
+All counties have similar 
+percent of adults with a 
+recent illness or symptom 
+that was caused or made 
+worse by their home 
+environment compared to 
+all Vermont adults.
+932023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (6%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 94
+No Leisure Time Physical Activity
+Two in ten Vermont adults report they did not 
+participate in any leisure time physical activity 
+during the previous month (20%). This is 
+statistically lower than the 25% among U.S. 
+adults.
+Males and females report not participating in 
+leisure time physical activity at statistically 
+similar rates.
+Adults 45 and older are statistically more 
+likely to not participate in leisure time 
+physical activity compared to younger adults.
+Adults with less education and lower 
+household income are more likely to not 
+participate in leisure time physical activity.
+• All differences by education and household 
+income level are statistically significant.
+There are no statistical differences in no 
+leisure time physical activity by race and 
+ethnicity, or sexual orientation and gender 
+identity.
+Adults with a disability are nearly two and a 
+half times as likely to report no leisure time 
+physical activity than those with no disability. 
+This is a statistical difference.
+No leisure time physical activity is statistically 
+similar to 2022 and 2014.
+25%
+20%
+19%
+21%
+11%
+16%
+22%
+25%
+31%
+19%
+10%
+26%
+16%
+7%
+22%
+20%
+17%
+20%
+34%
+14%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults with No Leisure 
+Time Physical Activity, 2023
+19% 22% 20% 22% 19% 20% 18% 18% 20% 20%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults with No Leisure Time Physical Activity
+942023 Vermont Behavioral Risk Factor Surveillance System Report
+Note: This measure is a Healthy Vermonters 2030 indicator.
+=== PAGE 95
+Vermont Adults with No Leisure Time Physical Activity
+by County, 2022-2023
+Adults in Orange (28%), 
+Caledonia (27%), and 
+Orleans (25%) counties 
+report not participating in 
+any leisure time physical 
+activity at statistically 
+higher rates than the 
+statewide rate.
+Fifteen percent of adults 
+in Chittenden County do 
+not participate in any 
+leisure time physical 
+activity. This is statistically 
+lower than the Vermont 
+rate.
+All other counties have a 
+similar percent of adults 
+reporting no leisure time 
+physical activity compared 
+to the Vermont rate.
+952023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (20%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 96
+Seatbelt Use
+Three percent of Vermont adults say they 
+rarely or never wear their seatbelt when 
+driving or riding in a car. This is the same rate 
+as U.S. adults.
+Males are statistically more likely to rarely or 
+never wear a seatbelt.
+The percent of adults rarely or never wearing 
+a seatbelt statistically decreases as 
+education level increases.
+Adults in homes with lower incomes are 
+statistically more likely to rarely or never wear 
+a seatbelt than those in homes with middle 
+incomes.
+There are no statistical differences in rarely or 
+never wearing a seatbelt by age, race and 
+ethnicity or sexual orientation and gender 
+identity.
+Adults with a disability are more than two 
+times as likely to rarely or never wear their 
+seatbelt compared to adults with no disability. 
+This is a statistical difference.
+The percent of Vermont adults rarely or never 
+wearing their seatbelt is the same as 2020 
+and statistically similar to 2014.
+3%
+3%
+4%
+2%
+3%
+3%
+2%
+6%
+3%
+1%
+5%
+3%
+3%
+3%
+3%
+5%
+2%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults who Rarely or Never 
+Wear Seatbelt, 2023
+4% 4% 4% 3% 4% 3% 3%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults who Rarely or Never Wear Seatbelt
+962023 Vermont Behavioral Risk Factor Surveillance System Report
+**
+**
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 97
+Vermont Adults who Rarely or Never Wear Seatbelt
+by County, 2020, 2023
+Adults in Orleans (7%) 
+and Caledonia (6%) 
+counties are statistically 
+more likely to rarely or 
+never wear a seatbelt 
+compared to Vermont 
+overall.
+The percent of adults who 
+rarely or never wear a 
+seatbelt in all other 
+counties is similar to 
+Vermont.
+972023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (3%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 98
+Sunburns
+Nearly four in ten Vermont adults had at least 
+one sunburn in the past year (38%).
+Males and females report a recent sunburn 
+at statistically similar rates.
+All differences by age are statistically 
+significant except between adults 18-24 and 
+those 25-44.
+Adults with some college education or more 
+are statistically more likely to report a recent 
+sunburn than adults with a high school 
+education or less.
+Having a recent sunburn statistically 
+increases with household income.
+White, non-Hispanic adults, LGBTQ+ adults 
+and adults with no disability are statistically 
+more likely to report a recent sunburn.
+The percent of Vermont adults with a sunburn 
+in the past year is statistically lower than the 
+44% in 2019.
+Note: Due to this question only be asked in 
+two survey years, a trend line is not provided.
+38%
+37%
+38%
+60%
+55%
+38%
+16%
+32%
+39%
+43%
+32%
+42%
+52%
+26%
+39%
+52%
+36%
+28%
+42%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults with Sunburn 
+in Past Year, 2023
+62%
+18% 10% 10%
+Zero One Two Three or More
+Number of Sunburns in Past Year
+among Vermont Adults, 2023
+982023 Vermont Behavioral Risk Factor Surveillance System Report
+*No national estimate available.
+*
+=== PAGE 99
+Vermont Adults with Sunburn in Past Year
+by County, 2019, 2023
+Forty-six percent of 
+Chittenden County adults 
+had at least one sunburn 
+in the past year. This is 
+statistically higher than 
+the statewide rate.
+The percent of adults with 
+a sunburn in the past year 
+in all other counties is 
+similar to the Vermont 
+rate.
+992023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (41%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 100
+Preventive Behaviors and Screenings 
+100
+=== PAGE 101
+Immunizations – COVID-19 Vaccine
+More than nine in ten Vermont adults have 
+ever received a COVID-19 vaccine (91%).
+Females are statistically more likely to have 
+ever received a COVID-19 vaccine.
+Adults 65 and older are statistically more 
+likely to have received a COVID-19 vaccine 
+than adults 18-64. Adults 45-64 received a 
+COVID-19 vaccine at a statistically higher rate 
+than adults 25-44.
+The percent of adults ever receiving a COVID-
+19 vaccine statistically increases with 
+education level.
+Adults with middle to higher incomes and 
+LGBTQ+ adults are statistically more likely to 
+have received a COVID-19 vaccine.
+There are no statistical differences in COVID-
+19 vaccination by race and ethnicity or 
+disability status.
+Among adults who have not received a COVID-
+19 vaccine, 3% percent say they will definitely 
+or probably get a vaccine, 14% say they will 
+probably not get one, and 83% say they will 
+definitely not get a COVID-19 vaccine.
+Note: Due to changes in methodology in 
+2023, trend and county-level data are not 
+available.
+91%
+89%
+93%
+90%
+87%
+92%
+96%
+86%
+91%
+96%
+87%
+93%
+95%
+89%
+92%
+95%
+91%
+89%
+92%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults who Had 
+a COVID-19 Vaccine, 2023
+4%
+20%
+37% 28%
+11%
+One Two Three Four Five or More
+Number of COVID-19 Vaccines Received
+among Vermont Adults, 2023
+1012023 Vermont Behavioral Risk Factor Surveillance System Report
+*
+*No national estimate available.
+=== PAGE 102
+Immunizations – Flu Vaccine, Adults 65+
+Seven in ten Vermont adults ages 65 and 
+older had a flu vaccine in the past year (70%). 
+This is statistically higher than the 63% of 
+U.S. adults ages 65 and older.
+A flu vaccine includes either a shot in the 
+arm, or spray or mist in the nose.
+Males and females 65 and older report 
+getting a recent flu vaccine at statistically 
+similar rates.
+Older adults with a college degree or more 
+are statistically more likely to have received a 
+recent flu vaccine.
+Older adults in homes with middle to higher 
+incomes are statistically more likely to have 
+had a recent flu vaccine.
+White, non-Hispanic adults are statistically 
+more likely to have had a recent flu vaccine.
+There are no statistical differences among 
+older adults by sexual orientation and gender 
+identity, or disability status.
+The percent of adults 65 and older receiving 
+a flu vaccine in the past year is statistically 
+similar to 2022, but statistically higher than 
+2014.
+The percent of all adults receiving a flu 
+vaccine in the past year is statistically similar 
+to 2022, but statistically higher than 2014.
+63%
+70%
+67%
+72%
+60%
+69%
+79%
+60%
+76%
+86%
+49%
+71%
+70%
+70%
+68%
+71%
+U.S.
+Vermont
+Male
+Female
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults 65+ who 
+Had a Flu Vaccine in Past Year, 2023
+44% 44% 42% 42% 37% 48% 53% 54% 57% 54%
+63% 61% 59% 60% 54% 64% 69% 73% 75% 70%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults and Adults 65+ who Had a Flu Vaccine in Past Year
+1022023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 103
+Vermont Adults Ages 65+ who Had a Flu Vaccine in Past Year
+by County, 2022-2023
+Flu vaccination rates 
+among adults ages 65 
+and older in all counties 
+are similar to Vermont 
+adults of the same age.
+1032023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (72%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 104
+Immunizations – Pneumococcal Vaccine, Adults 65+
+Seven in ten Vermont adults ages 65 and 
+older have ever received a pneumococcal 
+vaccine (70%). This is the same as U.S. adults 
+ages 65 and older.
+Females 65 and older are statistically more to 
+have ever received a pneumococcal vaccine.
+There are no statistical differences in adults 
+65 and older receiving the pneumococcal 
+vaccine by education level, household income 
+level, race and ethnicity, sexual orientation 
+and gender identity, or disability status.
+The percent of adults 65 and older ever 
+having a pneumococcal vaccine is statistically 
+similar to 2022 and 2014.
+The percent of all adults ever having a 
+pneumococcal vaccine is statistically similar 
+to 2022, but statistically higher than 2014.
+70%
+70%
+64%
+75%
+67%
+70%
+72%
+68%
+70%
+68%
+58%
+70%
+76%
+69%
+73%
+68%
+U.S.
+Vermont
+Male
+Female
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults 65+ who Ever Had a 
+Pneumococcal Vaccine, 2023
+34% 36% 39% 45% 39% 41% 39% 36% 37% 40%
+72% 76% 77% 81% 75% 72% 73% 71% 71% 70%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults and Adults 65+ who Ever Had a Pneumococcal Vaccine
+1042023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 105
+Vermont Adults Ages 65+ who Ever Had a 
+Pneumococcal Vaccine, by County, 2022-2023
+More than eight in ten 
+adults 65 and older in 
+Caledonia County have 
+ever received a 
+pneumococcal vaccine 
+(81%). This is 
+statistically higher than 
+all Vermont adults of 
+the same age.
+Pneumococcal 
+vaccination rates 
+among adults 65 and 
+older in all other 
+counties are similar to 
+Vermont adults of the 
+same age.
+1052023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (71%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 106
+Immunizations – Shingles Vaccine, Adults 50+
+Nearly six in ten Vermont adults ages 50 and 
+older have ever had a shingles vaccination 
+(59%). This is statistically higher than the 
+44% of U.S. adults ages 50 and older.
+Males and females 50 and older report 
+receipt of a shingles vaccine at statistically 
+similar rates.
+Older adults with a college degree or more 
+are statistically more likely to have received a 
+shingles vaccine.
+Older adults in homes with middle to higher 
+incomes are statistically more likely to have 
+had a shingles vaccine.
+There are no statistical differences in receipt 
+of a shingles vaccine among adults 50 and 
+older by race and ethnicity, sexual orientation 
+and gender identity, or disability status.
+The percent of adults 50 and older receiving 
+a shingles vaccine is statistically higher than 
+2020 and 2014.
+44%
+59%
+57%
+61%
+53%
+58%
+66%
+53%
+63%
+63%
+51%
+60%
+59%
+60%
+56%
+61%
+U.S.
+Vermont
+Male
+Female
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults 50+ who Ever
+Had a Shingles Vaccine, 2023
+30% 32% 37% 39%
+59%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults 50+ who Ever Had a Shingles Vaccine
+1062023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 107
+Vermont Adults Ages 50+ who Ever Had a Shingles Vaccine
+by County, 2020, 2023
+Adults 50 and older in 
+Addison (60%) and 
+Chittenden (56%) 
+counties have 
+statistically higher rates 
+of adults ever receiving 
+a shingles vaccine 
+compared to the 
+Vermont rate of adults 
+of the same age.
+Shingles vaccination 
+rates among adults 
+ages 50 and older in all 
+other counties are 
+similar to the Vermont 
+rate for that age group.
+1072023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (50%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 108
+Routine Doctor Visits
+More than three-quarters of Vermont adults 
+had a routine doctor visit in the past year 
+(77%). This is statistically similar to the 78% 
+of U.S. adults.
+Females are statistically more likely to have 
+had a routine doctor visit in the past year.
+All differences in doctor visits by age are 
+statistically significant, except between adults 
+18-24 and adults 25-44.
+There are no statistical differences in doctor 
+visits by education level, household income 
+level, race and ethnicity, or sexual orientation 
+and gender identity.
+Adults with a disability are statistically more 
+likely to have seen a doctor for a routine visit 
+in the past year.
+Routine doctor visits are statistically similar to 
+2022, but statistically higher than 2014.
+78%
+77%
+72%
+82%
+68%
+68%
+78%
+90%
+76%
+77%
+78%
+77%
+76%
+76%
+73%
+78%
+75%
+78%
+81%
+76%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults who Had a Routine 
+Doctor Visit in Past Year, 2023
+68% 70% 70% 70% 76% 75% 72% 72% 75% 77%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults who Had a Routine Doctor Visit in Past Year
+1082023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 109
+Vermont Adults who Had a Routine Doctor Visit in Past Year
+by County, 2022-2023
+More than eight in ten 
+adults in Orleans County 
+have had a doctor visit 
+in the past year (82%). 
+This is statistically 
+higher than the Vermont 
+rate.
+Seven in ten adults in 
+Lamoille County have 
+had a doctor visit in the 
+past year (70%). This is 
+statistically lower than 
+the Vermont rate.
+All other counties are 
+similar to Vermont 
+overall for routine doctor 
+visits in the past year.
+1092023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (76%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 110
+Physical Activity Recommendations
+Nearly seven in ten Vermont adults meet 
+aerobic physical activity recommendations 
+(67%), statistically higher than the 60% of 
+U.S. adults.
+Aerobic physical activity recommendations for 
+adults are defined as 150 minutes of 
+moderate activity or 75 minutes of vigorous 
+activity per week.
+There are no statistical differences in meeting 
+aerobic physical activity recommendations by 
+sex, age, race and ethnicity or sexual 
+orientation and gender identity.
+The percent of adults meeting physical 
+activity recommendations statistically 
+increases with education level.
+Adults in homes with middle to higher 
+incomes and adults with no disability are 
+statistically more likely to meet the 
+recommendations.
+The percent of Vermont adults meeting 
+aerobic physical activity recommendations is 
+statistically higher than 2019 and 2015.
+60%
+67%
+68%
+66%
+66%
+66%
+68%
+68%
+55%
+68%
+76%
+62%
+71%
+74%
+61%
+68%
+64%
+67%
+53%
+72%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults who Meet Physical 
+Activity Recommendations, 2023
+59% 60% 61% 67%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults who Meet Physical Activity Recommendations
+1102023 Vermont Behavioral Risk Factor Surveillance System Report
+For additional information, refer to the CDC Physical Activity Recommendations.
+=== PAGE 111
+Vermont Adults who Meet Physical Activity Recommendations°
+by County, 2019, 2023
+Nearly seven in ten 
+Washington County 
+adults meet aerobic 
+physical activity 
+recommendations 
+(69%). This is 
+statistically higher than 
+the Vermont rate.
+Fifty-seven percent of 
+Orleans County and 
+51% of Essex County 
+adults meet aerobic 
+physical activity 
+recommendations. This 
+is statistically lower 
+than the statewide rate.
+All other counties have 
+a similar percent of 
+adults meeting physical 
+activity 
+recommendations 
+compared to Vermont 
+overall.
+1112023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (64%)
+Statistically Lower than VT
+°Aerobic physical activity recommendations for adults are defined as 150 minutes of moderate activity or 
+75 minutes of vigorous activity per week.
+*Vermont estimate represents two years of data.
+=== PAGE 112
+Strength Building Recommendations
+More than four in ten Vermont adults 
+participate in muscle strengthening activities 
+at least twice per week (42%). This is 
+statistically similar to the 41% of U.S. adults.
+Males are statistically more likely to meet 
+strength building recommendations.
+Adults 18-24 are statistically more likely to 
+meet strength building recommendations 
+than those 25-64.
+Adults with a college degree or more are 
+statistically more likely to meet strength 
+building recommendations than those with a 
+high school degree or less.
+Adults in homes with higher incomes are 
+statistically more likely to meet strength 
+building recommendations.
+There are no statistical differences in meeting 
+strength building recommendations by race 
+and ethnicity, or sexual orientation and 
+gender identity.
+Adults with no disability are statistically more 
+likely to meet strength building 
+recommendations.
+The percent of Vermont adults participating in 
+muscle strengthening activities at least twice 
+per week is statistically similar to 2019, but 
+statistically higher than 2015.
+41%
+42%
+45%
+39%
+49%
+40%
+40%
+43%
+37%
+42%
+47%
+39%
+42%
+50%
+42%
+42%
+38%
+43%
+37%
+44%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults who Meet Strength 
+Building Recommendations, 2023
+30% 31% 40% 42%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults who Meet Strength Building Recommendations
+2023 Vermont Behavioral Risk Factor Surveillance System Report
+For additional information, refer to the CDC Physical Activity Recommendations.
+112
+=== PAGE 113
+Vermont Adults who Meet Strength Building Recommendations°
+by County, 2019, 2023
+All counties have a 
+similar percent of adults 
+meeting strength 
+building 
+recommendations 
+compared to Vermont 
+overall.
+1132023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (41%)
+Statistically Lower than VT
+°Muscle strengthening recommendations for adults are defined as participating in muscle strengthening 
+activities at least twice per week.
+*Vermont estimate represents two years of data.
+=== PAGE 114
+Cholesterol Screening
+Eighty-six percent of Vermont adults report 
+having their cholesterol checked within the 
+past five years. This is statistically lower than 
+the 88% of U.S. adults.
+Females are statistically more likely to have 
+recently checked their cholesterol.
+The prevalence of recent cholesterol 
+screening statistically increases with age.
+Adults with a college degree or more are 
+statistically more likely to have had their 
+cholesterol checked within the past five years.
+There are no statistical differences in recent 
+cholesterol screening rates by household 
+income level, race and ethnicity, sexual 
+orientation and gender identity, or disability 
+status.
+The percent of adults having their cholesterol 
+checked within the past five years is 
+statistically similar to 2021, but statistically 
+higher than 2015.
+88%
+86%
+84%
+88%
+60%
+77%
+93%
+96%
+83%
+85%
+89%
+83%
+87%
+87%
+85%
+86%
+83%
+86%
+88%
+85%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults who Had Cholesterol 
+Screening in Past 5 Years, 2023
+80% 86% 84% 85% 86%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults who Had Cholesterol Screening in Past 5 Years
+1142023 Vermont Behavioral Risk Factor Surveillance System Report
+Note: In 2019, question methodology was updated to include additional response options for number of 
+years since last cholesterol screening. Due to this, use caution when comparing to previous years.
+=== PAGE 115
+Vermont Adults who Had Cholesterol Screening in Past 5 Years
+by County, 2021, 2023
+Nearly eight in 10 
+Lamoille County adults 
+have had a recent 
+cholesterol screening 
+(79%). This is 
+statistically lower than 
+all Vermont adults.
+All other counties have 
+a similar percent of 
+adults that have had 
+recent cholesterol 
+screening compared to 
+Vermont overall.
+1152023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (85%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 116
+HIV Screening – Ever
+Thirty-seven percent of Vermont adults have 
+ever been tested for HIV. 
+• This increases to 45% for adults ages 18-64.
+Vermont adults report a statistically lower rate 
+of ever being tested for HIV compared to the 
+39% of U.S. adults. 
+• Adults 18-64 report being tested for HIV at 
+the same rate as U.S. adults in that age 
+group.
+Among all Vermont adults regardless of age, 
+males and females report ever testing for HIV 
+at statistically similar rates.
+All differences in HIV testing prevalence by age 
+are statistically significant, except between 
+adults 25-44 and those 45-64.
+Adults with some college education or more are 
+statistically more likely to have ever had an HIV 
+test.
+Adults with higher household incomes are 
+statistically more likely to have ever had an HIV 
+test compared to those with lower household 
+incomes.
+There are no statistical differences in HIV 
+testing by race and ethnicity or disability status.
+LGBTQ+ adults are statistically more likely to 
+have ever had an HIV test.
+HIV testing among all adults and those 18-64 is 
+statistically similar to 2022, but statistically 
+higher than 2014.
+39%
+37%
+36%
+38%
+31%
+50%
+45%
+18%
+30%
+38%
+42%
+36%
+40%
+46%
+42%
+37%
+51%
+35%
+36%
+38%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults 
+Ever Tested for HIV, 2023
+31% 34% 37% 36% 38% 40% 37% 39% 37% 37%
+37% 40% 44% 43% 45% 48% 43% 46% 44% 45%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults and Adults 18-64 Ever Tested for HIV
+1162023 Vermont Behavioral Risk Factor Surveillance System Report
+=== PAGE 117
+Vermont Adults who Have Ever Been Tested for HIV
+by County, 2022-2023
+Forty-one percent of 
+adults in Chittenden 
+County have ever been 
+tested for HIV. This is 
+statistically higher than 
+all Vermont adults.
+Thirty-one percent of 
+adults in Rutland 
+County have ever been 
+tested for HIV. This is 
+statistically lower than 
+all Vermont adults.
+HIV testing rates for 
+adults in all other 
+counties are similar to 
+Vermont adults overall.
+1172023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (37%)
+Statistically Lower than VT
+*Vermont estimate represents two years of data.
+=== PAGE 118
+HIV Screening – In Past Year
+Six percent of adults have had an HIV test in 
+the past year. This increases to 9% for adults 
+ages 18-64.
+Recent HIV testing is statistically lower among 
+Vermont adults compared to all U.S. adults 
+(10%) and U.S. adults 18-64 (13%).
+Among all Vermont adults, males and females 
+report recent HIV testing at statistically 
+similar rates.
+HIV screening in the past year decreases with 
+age.
+• All differences in HIV screening by age are 
+statistically significant, except between 
+adults 18-24 and those 25-44.
+There are no statistical differences in HIV 
+screening in the past year by education level, 
+household income level, race and ethnicity, or 
+disability status.
+LGBTQ+ adults are more than two times as 
+likely to have had an HIV test in the past year 
+than HetCis adults. This is a statistical 
+difference.
+HIV screening in the past year among all 
+adults and those 18-64 is statistically similar 
+to 2022 and 2014.
+10%
+6%
+6%
+7%
+14%
+11%
+5%
+1%
+6%
+7%
+7%
+7%
+7%
+6%
+8%
+6%
+13%
+5%
+7%
+6%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults Tested for 
+HIV in Past Year, 2023
+6% 7% 7% 7% 7% 8% 6% 7% 6% 6%
+7% 8% 9% 9% 9% 10% 8% 9% 8% 9%
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Vermont Adults and Adults 18-64 Tested for HIV in Past Year
+1182023 Vermont Behavioral Risk Factor Surveillance System Report
+Note: The methodology of analysis for this indicator has been updated.
+=== PAGE 119
+Vermont Adults who Have Been Tested for HIV in Past Year
+by County, 2022-2023
+Four percent of adults in 
+Windsor County have 
+been tested for HIV in 
+the past year. This is 
+statistically lower than 
+all Vermont adults.
+Recent HIV testing rates 
+for adults in all other 
+counties are similar to 
+Vermont overall.
+1192023 Vermont Behavioral Risk Factor Surveillance System Report
+Statistically Higher than VT
+Similar to VT* (6%)
+Statistically Lower than VT
+Too few data
+*Vermont estimate represents two years of data.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+=== PAGE 120
+New in 2022
+Local Fish Consumption
+In the past month, 6% of Vermont adults ate 
+fish caught in local waters. This includes self-
+caught fish or fish caught by a friend or 
+relative. These data do not include fish 
+bought from a store.
+Males are statistically more likely to eat fish 
+caught in Vermont waters.
+Adults with some college education are 
+statistically more likely to eat fish caught in 
+local waters than those with a college degree 
+or more.
+BIPOC adults are two times as likely to eat 
+locally caught fish than white, non-Hispanic 
+adults. This is a statistical difference.
+There are no statistical differences in eating 
+locally caught fish by age, household income 
+level, or disability status.
+Statistical comparisons were not made for 
+sexual orientation and gender identity due to 
+data suppression.
+Among adults who ate fish caught in Vermont 
+waters, 16% did so less than one time in the 
+past month, 65% did so one to four times in 
+the past month and 19% did so five or more 
+times in the past month.
+Note: 2023 is the first year data was 
+collected for this measure, so trend and 
+county-level data are not available.
+6%
+7%
+4%
+7%
+6%
+4%
+6%
+6%
+7%
+4%
+6%
+6%
+5%
+10%
+5%
+6%
+7%
+5%
+U.S.
+Vermont
+Male
+Female
+18-24
+25-44
+45-64
+65+
+High School or Less
+Some College
+College or More
+Lower <$50K
+Middle $50K-<$150K
+Higher $150K+
+BIPOC
+WnH
+LGBTQ+
+HetCis
+Any Disability
+No Disability
+Vermont Adults who Eat Fish Caught 
+in Vermont Waters, 2023
+16%
+65%
+19%
+Less than 1 Time per Month 1-4 Times per Month 5+ Times per Month
+How Often Adults Eat Locally Caught Fish
+among Vermont Adults who Eat Fish Caught in Vermont Waters, 2023
+1202023 Vermont Behavioral Risk Factor Surveillance System Report
+*
+*No national estimate available.
+**Value suppressed because sample size is too small or relative standard error (RSE) is >30. 
+Statistical comparisons are not completed on suppressed values.
+For more information, refer to the Vermont Department of Health Fish Consumption Recommendations.
+**
+=== PAGE 121
+Report Prepared By:
+Vermont Department of Health 
+Division of Health Statistics & Informatics
+280 State Drive Waterbury, Vermont 05671
+For More Information:
+Visit: www.healthvermont.gov/brfss 
+Email: ahs.vdhbrfss@vermont.gov 
+Call: (800) 869-2871 

@@ -1,0 +1,533 @@
+=== PAGE 1
+1 
+ 
+• Act 68 of 2025 charged the Agency of Human Services (AHS) with identifying and tracking 
+outcome measures to assess progress toward health care transformation goals outlined in Act 
+167 of 2022.  
+• Updates Measures:  
+o 30-Day All Cause Readmission rates and the national benchmark have been updated. 
+There are neither statistically significant differences between the past and current values 
+nor between current Vermont hospital and national average values for this measure. 
+o Neither Opioid Overdose ED Visit nor Suicide Ideation and Self Harm ED Visit 
+meaningfully changed since the previous report. ED visits for opioid overdose remain 
+near a three-year low while those for suicide ideation and self-harm are unchanged. 
+• Care Transformation Planning and Measurement: AHS continues to advance hospital 
+transformation planning. In addition to regional convenings, the Act 68 Hospital Transformation 
+Grant Opportunity, launched in September 2025, funds the development and implementation 
+of hospital and regional transformation plans, with all eligible hospitals demonstrating strong 
+engagement by submitting applications or receiving extensions. To further support these 
+efforts, AHS is partnering with the Green Mountain Care Board (GMCB) to procure an analytics 
+vendor to enhance modeling capacity. This initiative will enable the State to evaluate hospital 
+proposals in terms of quality, cost, and access, assess alignment with regional and statewide 
+goals, and quantify potential cost savings using evidence-based methods. As transformation 
+strategies and goals are finalized, AHS will identify specific clinical and financial outcome metrics 
+to measure progress over time, ensuring alignment with transformation goals and the 
+availability of timely and reliable data.
+Agency of Human Services Office 
+of Health Care Reform 
+Health Care System Transformation Report 
+REPORT DATE:  SENT TO:  SENT FROM:  HOURS SPENT 
+PREPARING THIS REPORT: 
+11/1/2025 
+Health Reform Oversight 
+Committee, Joint Fiscal 
+Committee 
+Sarah Rosenblum, Interim 
+Director of Health Care 
+Reform 
+8 
+KEY TAKEAWAYS 
+=== PAGE 2
+2 
+ 
+HEALTH CARE SYSTEM TRANSFORMATION: SUMMARY OF KEY OUTCOME MEASURES  
+ 
+ 
+Measure 
+Act 167 of 2022 Goals 
+VT Current 
+Performance 
+VT Benchmark 
+Performance*  
+Diff. Between 
+Current & 
+Benchmark 
+Performance 
+Reduce 
+Inefficiencies 
+Lower 
+Costs 
+Improve 
+Access 
+Improve 
+Health 
+Outcomes 
+Reduce 
+Health 
+Inequities 
+30-Day All-Cause Readmission Rate      14.8% 14.5% 0.3% 
+Potentially Avoidable Emergency 
+Department (ED) Visits as a 
+Percentage of all ED Visits      32.3% - - 
+Operating Profit per Adjusted 
+Discharge      PPS: $5,345  
+CAH: $938 
+PPS: $4,162  
+CAH: $2,784  
+PPS: $1,183  
+ CAH: -$1,846  
+Management and Administrative Cost 
+per Adjusted Discharge      PPS: $2,730  
+No CAH data 
+PPS: $1,427 
+No CAH data 
+PPS: $1,303 
+No CAH data 
+Direct Patient Care Labor Cost per 
+Adjusted Discharge      PPS: $6,183 
+No CAH data 
+PPS: $6,270  
+No CAH data 
+PPS: -$87  
+No CAH data 
+Life-Weighted Federal Medical Loss 
+Ratio for Marketplace Plans      89.2% - - 
+Insurance Rate Affordability for 
+Medium-High Utilization Families of 
+Four on Individual Market 
+     Not affordable - - 
+Percent of Vermonters Who Report 
+Having a Personal Health Care 
+Provider (PCP) 
+     91% 87% -4% 
+Percent of Primary Care Practices 
+Accepting New Medicaid Patients      59% - - 
+
+=== PAGE 3
+3 
+ 
+Measure 
+Act 167 of 2022 Goals 
+VT Current 
+Performance 
+VT Benchmark 
+Performance*  
+Diff. Between 
+Current & 
+Benchmark 
+Performance 
+Reduce 
+Inefficiencies 
+Lower 
+Costs 
+Improve 
+Access 
+Improve 
+Health 
+Outcomes 
+Reduce 
+Health 
+Inequities 
+Vermont Adults Who Have Been Told 
+They Have Hypertension      33% 37% -3% 
+Vermont Adults Who Have Ever Been 
+Diagnosed with Diabetes      9% 13% -4% 
+Blueprint Patient-Centered Medical 
+Home (PCMH)-attributed Patients with 
+Hypertension Who Have Blood 
+Pressure Under Control 
+     77% - - 
+Blueprint PCMH-attributed Patients 
+with Diabetes Who Have HbA1c Not 
+Under Control 
+     22% - - 
+ED Visits for Suicide Ideation or Self-
+Harm per 10,000 ED Visits      245.5 - - 
+ED Visits for Opioid Overdose per 
+10,000 ED Visits      16.1 - - 
+30-Day Follow-Up After ED Visit for 
+Mental Illness       76% - - 
+30-Day Follow-Up After ED Visit for 
+Alcohol Use       68% - - 
+* Note. Benchmarks are set at the 75th percentile of national peers’ performance. “Per adjusted discharge” benchmarks relate to US non-profit hospitals 
+and are weighted by adjusted discharge. “PPS” or “Prospective Payment System” hospitals are larger institutions that provide higher-intensity care. 
+“CAH” or “Critical Access Hospitals” are smaller institutions that provide less-intensive care and rely disproportionately on Medicaid dollars. Please note 
+that CAH values do not include Copley or Porter data, which are not reported in the source data. All other benchmarks relate to performance at the state 
+level, i.e., “the state ranked at the 75th percentile for a given measure’s performance.”
+
+=== PAGE 4
+4 
+ 
+BACKGROUND 
+ 
+Act 68 of 2025, an act relating to health care payment and delivery system reform, charged the Agency 
+of Human Services (AHS) with identifying “specific outcome measures for determining whether, when, 
+and to what extent” the following goals of its health care system transformation efforts have been met, 
+pursuant to Act 167 of 2022: reduce inefficiencies; lower costs; improve health outcomes; reduce 
+health inequities; and increase access to essential services. 
+Earlier iterations of this report can be found on the Health Care Reform website. This report and future 
+iterations highlight changes in selected measures and their outcomes as they occur. 
+HEALTH CARE SYSTEM TRANSFORMATION OUTCOME MEASURES 
+ 
+Summary of Updates Since Last Submission 
+Few updates are available to the measures and their benchmarks since the previous submission on 
+October 1, 2025. Please note the following changes:  
+1. 30-Day All Cause Readmission rates and the national benchmark have been updated with the 
+most recent data. There have been no statistically significant changes since the last report. All 
+Vermont hospitals perform in line with the national average. Vermont remains among a 
+minority of states where all hospitals perform at or above the national average. 
+2. ED Visit for Opioid Overdose rates have not meaningfully changed since the previous report. 
+Sixteen of every 10,000 ED visits from January to mid-October 2025 were attributed to opioid 
+overdose. Rates are statistically higher than the state average among residents of Chittenden, 
+Bennington, and Windham counties and among Vermonters aged 30 to 49 years old.  
+3. ED Visit for Suicide Ideation or Self Harm rates also have not changed since the previous 
+report. Two hundred forty-six of every 10,000 ED visits from January to mid-October 2025 were 
+attributed to suicide ideation or self-harm. Rates are statistically higher than the state average 
+among residents of Rutland and Windham counties and among Vermonters aged 15 to 44 years 
+old. 
+Activities to Impact Outcome Measure Performance 
+The Act 68 grant opportunity, which allocated $2 million to AHS for fiscal year 2026, is designed to 
+support hospitals actively participating in health care transformation efforts. On September 22, 2025, 
+the Agency launched this grant opportunity to provide funding for the development and 
+implementation of hospital and regional transformation plans. Details on the opportunity can be found 
+here. All eligible hospitals have submitted applications, indicating strong engagement with AHS in 
+developing their transformation plans. Hospitals will progress from Draft Care Transformation Strategy 
+Outlines to Draft Plans and Final Plans, with AHS reviewing and approving each phase. Final hospital 
+Care Transformation Plans are anticipated by early 2026. 
+In October, the Health Care Reform and Blueprint for Health teams convened hospital leadership by 
+geographical regions for a second series of meetings to review statewide regionalization themes, 
+including inter-facility transfer coordination, group purchasing, clinical service redesign, regulatory and 
+=== PAGE 5
+5 
+ 
+financing, electronic medical record interoperability, and workforce. These meetings provided a 
+platform for hospital leaders to ask questions and share strategies identified in their Act 68 grant 
+applications, as well as to discuss next steps. AHS gathered valuable input, and hospital leaders 
+demonstrated a strong commitment to transformation efforts and a willingness to explore 
+collaboration opportunities. 
+To support the prioritization and evaluation of proposed transformation strategies, AHS is partnering 
+with the Green Mountain Care Board (GMCB) to procure an analytics vendor to enhance modeling 
+capacity. This partnership will enable the state to evaluate hospital proposals in terms of quality, cost, 
+and access, assess alignment with regional and statewide goals, and quantify potential cost savings 
+using evidence-based methods. As transformation strategies and goals are finalized, AHS will identify 
+specific clinical and financial outcome metrics, such as anticipated savings, for each strategy to measure 
+progress over time. These measures will be selected based on their alignment with transformation 
+goals and the availability of timely and reliable data. 
+AHS FUNDING FOR CARE TRANSFORMATION 
+ 
+The table below summarizes State and Federal funds received by AHS to support care transformation 
+efforts as of October 25, 2025: 
+ State Funds Federal Funds 
+Appropriated, 
+not yet obligated $4.02M $1.2M  
+(contingent upon participation with AHEAD) 
+Obligated $2.2M $0.0 
+Spent $605,000 $0.0 
+State funds spent to date have supported AHS’s work with the Rural Health Redesign Center (RHRC) and 
+support for a recent Vermont Health Care Workforce Leadership Summit to inform our statewide health 
+care workforce strategy. The RHRC contract concluded on October 9th. Obligated funds currently reflect 
+the remaining contract value, including deliverables not yet invoiced and anticipated unspent funds. 
+Obligated funds also include contractor support from Manatt, Phelps, and Phillips LLP to assist with 
+development of the State’s application for the federal Rural Health Transformation Program established 
+by H.R.1. Remaining appropriated state funds from Act 68 include $2.02 million from the General Fund 
+and $2 million from the Health Information Technology (HIT) fund. In September, AHS launched the 
+Hospital Transformation Grant Opportunity, which will utilize the $2 million from the HIT fund.  
+For Federal funds, the Centers for Medicaid and Medicare Services Innovation Center (CMMI) has 
+approved $1.2 million in funds for health system transformation grants, available through Vermont’s 
+participation in the AHEAD Model and beginning in Cooperative Agreement Year 3 (2027). Potential 
+changes to the AHEAD Model timeline may lead the Agency to use these funds in later years; final 
+decisions will be made once the updated timeline is confirmed. Should the State choose not to 
+=== PAGE 6
+6 
+ 
+participate in the AHEAD Model, any unspent funds from the Cooperative Agreement would need to be 
+returned to CMMI within 90 days. 
+CLOSING 
+ 
+AHS continues to advance the critical work of developing, implementing, and evaluating and 
+monitoring a health care transformation strategy that aligns with the goals of Act 167 of 2022. We look 
+forward to continuing to work closely with you and other legislative partners to evaluate and monitor 
+the state of Vermont’s health care system and the progress towards these goals in a manner that is 
+both timely and comprehensive. 
+=== PAGE 7
+7 
+ 
+APPENDIX A: SOURCES OF OUTCOME MEASURES 
+ 
+Measure 
+Act 167 of 2022 Goals 
+Latest Data Source Reduce 
+Inefficiencies 
+Lower 
+Costs 
+Improve 
+Access 
+Improve 
+Outcomes 
+Reduce 
+Inequities 
+30-Day All-Cause Readmission Rate      2021-2024 VDH via CMS 
+Potentially Avoidable ED Visits as a Percentage of 
+all ED Visits       2020-2022 Oliver Wyman via 
+VUHDDS/VHCURES 
+Operating Profit per Adjusted Discharge      2023 NASHP via CMS 
+Management and Administrative Labor Cost per 
+Adjusted Discharge      2023 NASHP via CMS 
+Direct Patient Care Labor Cost per Adjusted 
+Discharge      2023 NASHP via CMS 
+Life-Weighted Federal Medical Loss Ratio for 
+Marketplace Plans      2026 (as 
+approved) GMCB Decision 
+Insurance Rate Affordability for Marketplace 
+Plans      2026 (as 
+approved) GMCB Decision 
+Percent of Vermonters Who Report Having a 
+Personal Health Care Provider (PCP)      2023 VDH via BRFSS 
+Percent of Primary Care Practices Accepting New 
+Medicaid Patients      June 2025 VCCI 
+Vermont Adults Who Have Been Told They Have 
+Hypertension      2023 VDH via BRFSS 
+Vermont Adults Who Have Ever Been Diagnosed 
+with Diabetes      2023 VDH via BRFSS 
+Blueprint PCMH-attributed Patients with 
+Hypertension Who Have Blood Pressure Under 
+Control 
+     2023 Blueprint for 
+Health 
+Blueprint PCMH-attributed Patients with 
+Diabetes Who Have Hba1c Not Under Control      2023 Blueprint for 
+Health 
+
+=== PAGE 8
+8 
+ 
+Measure 
+Act 167 of 2022 Goals 
+Latest Data Source Reduce 
+Inefficiencies 
+Lower 
+Costs 
+Improve 
+Access 
+Improve 
+Outcomes 
+Reduce 
+Inequities 
+ED Visits for Suicide Ideation or Self-Harm      
+October 
+2025 VDH 
+ED Visits for Opioid Overdose      
+October 
+2025 VDH  
+30-Day Follow-Up After ED Visit for Alcohol Use 
+among PCMH-attributed Patients      2023 Blueprint via 
+VHCURES 
+30-Day Follow-Up After ED Visit for Alcohol Use 
+among PCMH-attributed Patients      2023 Blueprint via 
+VHCURES 
+  
+
+=== PAGE 9
+9 
+ 
+APPENDIX B: WHY EACH MEASURE IS INCLUDED 
+ 
+Domain Measure Why This Measure is Included 
+Providers 
+30-Day All-Cause Readmission Rate 
+This metric indicates how often patients return to the hospital within 30 days of discharge, 
+serving as a key indicator of care quality, discharge planning effectiveness, and care continuity 
+across the healthcare system. 
+Potentially Avoidable ED Visits as a 
+Percentage of all ED Visits 
+This metric indicates how effectively the health care system manages routine or non-urgent care 
+outside of emergency settings, highlighting gaps in primary care access or care coordination. 
+Operating Profit per Adjusted 
+Discharge 
+This measure reflects the financial health and sustainability of hospitals by showing how much 
+profit is generated per patient, adjusted for case mix and service intensity. 
+Management and Administrative 
+Cost per Adjusted Discharge 
+This metric helps assess hospital operational efficiency by revealing how much is spent on non-
+clinical overhead relative to patient volume and complexity. 
+Direct Patient Care Labor Cost per 
+Adjusted Discharge 
+This measure captures staffing intensity and labor investment in patient care, providing insight 
+into resource allocation and potential quality of care. 
+Payers 
+Life-Weighted Federal Medical Loss 
+Ratio (MLR) for Marketplace Plans 
+This metric shows the proportion of premium revenue spent on medical care and quality 
+improvement, weighted by enrollment, offering insight into how effectively insurers are using 
+funds to deliver value to enrollees in the health insurance marketplace. 
+Insurance Rate Affordability for 
+Medium-High Utilization Families of 
+Four on Individual Market 
+GMCB’s metric of health insurance affordability establishes that a plan is considered affordable 
+for a given household only if post-subsidy plan premiums, cost sharing, and deductibles fall 
+below an established standard. 
+Patients 
+Percent of Vermonters who Report 
+Having a Personal Health Care 
+Provider (PCP) 
+This measure reflects Vermonters’ connection to a health care provider for regular, preventative 
+care visits. 
+Percent of Primary Care Practices 
+Accepting New Medicaid Patients 
+This measure reflects access to care for low-income populations; higher acceptance rates signal 
+better access and equity for Medicaid enrollees, who often face systemic barriers to care. 
+Vermont Adults Who Have Been 
+Told They Have Hypertension 
+High rates of hypertension can indicate unmet needs in preventive and chronic care, especially in 
+underserved populations, contributing to worse long-term health outcomes and health 
+inequities. 
+Vermont Adults Who Have Ever 
+Been Diagnosed with Diabetes 
+This measure signals the burden of chronic disease and reflects both individual and systemic 
+factors, such as access to primary care, and disease management resources. 
+=== PAGE 10
+10 
+ 
+Domain Measure Why This Measure is Included 
+Blueprint PCMH-attributed Patients 
+with Hypertension Who Have Blood 
+Pressure Under Control 
+This measure reflects those who have been diagnosed with hypertension and have blood 
+pressure below 140/90. Those with hypertension can expect better health outcomes if their 
+blood pressure is under control. 
+Blueprint PCMH-attributed Patients 
+with Diabetes Who Have HbA1c Not 
+Under Control 
+This measure reflects those with diabetes whose blood sugar levels over a two- to three-month 
+period exceed 9%. Those with diabetes can expect more complications related to their condition 
+if their HbA1c remains not under control.  
+ED Visits for Suicide Ideation or Self-
+Harm per 10,000 ED Visits 
+Tracking mental health crises through ED utilization helps identify gaps in behavioral health 
+services and points to urgent needs in vulnerable populations disproportionately affected by 
+mental illness. 
+ED Visits for Opioid Overdose per 
+10,000 ED Visits 
+This measure highlights the impact of the opioid crisis and can uncover geographic or 
+demographic disparities in addiction, access to treatment, and social determinants of health. 
+30-Day Follow-Up After ED Visit for 
+Mental Illness 
+This measure highlights the importance of follow-up to improve outcomes for mental illness, 
+reducing the likelihood that a patient will require emergent care for their condition in the future. 
+30-Day Follow-Up After ED Visit for 
+Alcohol Use 
+This measure highlights the importance of follow-up to improve outcomes for alcohol use, 
+reducing the likelihood that a patient will require emergent care for their condition in the future. 
+ 
+ 
+ 
+  
+=== PAGE 11
+11 
+ 
+APPENDIX C: HOSPITAL EFFICIENCY AND COST MEASURES 
+Hospital 
+30-Day All-
+Cause 
+Readmission 
+Rate 
+Potentially 
+Avoidable ED Visits 
+/ All ED Visits 
+Operating Profit per 
+Adj. Discharge 
+Mgmt. and Admin 
+Labor Cost per Adj. 
+Discharge 
+Direct Patient Care 
+Labor Cost per Adj. 
+Discharge 
+University of Vermont Medical Center 
+(PPS) 14.7% 29.9%  $ 11,043   $ 3,826   $ 7,704  
+Rutland Regional Medical Center (PPS) 14.7% 30.7%  $ 3,734   $ 2,432   $ 6,784  
+Central Vermont Medical Center (PPS) 15.3% 33.4%   $ (1,492)  $ 1,651   $ 5,116  
+Southwestern (PPS) 15.8% 30.7%  $ 294   $ 1,676   $ 3,231  
+Northwestern (PPS) 14.0% 37.9%   $ (496)  $ 1,599   $ 4,829  
+Brattleboro (PPS) 14.4% 33.7%  $ 208   $ 1,462   $ 3,928  
+North Country (CAH) 14.6% 39.5%  $ 636  -  -  
+Northeastern (CAH) 15.4% 34.8%  $ 1,632  -  -  
+Springfield (CAH) 15.1% 33.2%  $ 461  -  -  
+Gifford (CAH) 14.7% 33.2%  $ 129  -  -  
+Mt. Ascutney (CAH) 14.7% 37.7%  $ 4,462  -  -  
+Grace Cottage (CAH) 14.8% 34.1%   $ (2,747) -  -  
+Copley (CAH) 14.9% 35.6% -  -  -  
+Porter (CAH) 14.7% 39.1% -  -  - 
+VT Average (weighted by adj. discharges) 14.8% 32.3% $ 5,345 (PPS) 
+$ 938 (CAH) 
+$ 2,730 (PPS) 
+No CAH data 
+$ 6,183 (PPS) 
+No CAH data 
+Benchmark (US 75th Percentile Hospital, 
+weighted by adj. discharges)  14.5% No data available $ 4,162 (PPS) 
+$ 2,784 (CAH) 
+$ 1,427 (PPS)  
+No CAH data 
+$ 6,270 (PPS) 
+No CAH data 
+Difference (VT Average - Benchmark, 
+weighted by adj. discharges) 0.3% No data available $ 1,183 (PPS) 
+-$ 1,846 (CAH) 
+$ 1,303 (PPS) 
+No CAH data 
+-$ 87 (PPS) 
+No CAH data 
+Note: Data are derived from Hospital Provider Cost Reports submitted annually by hospitals to the Centers for Medicare & Medicaid Services. Copley and 
+Porter lack adjusted discharge data for the CY 2023 reporting year. Critical access hospitals do not report management and admin or direct patient care 
+labor costs. US averages do not account for differences in the characteristics of US hospitals and Vermont hospitals—including hospital size, payer mix, 
+hospitals’ role in the broader health care system, or the propensity to report certain data components to CMS. 
+=== PAGE 12
+12 
+ 
+APPENDIX D: HEALTH OUTCOMES AND THEIR INEQUITIES 
+ 
+Measure and Population U.S. Benchmark Vermont 
+Outcome Vermont Outcome Inequities 
+Vermont Adults Who Have Been Told They Have 
+Hypertension 37% 33% 
+▪ 37% of low-income cohort. 
+▪ 47% of those with disabilities. 
+▪ Hypertension rates increase with age. 
+Vermont Adults Who Have Ever Been Diagnosed 
+with Diabetes 13% 9% 
+▪ 12% for low-income cohort. 
+▪ 16% for those with disabilities.  
+▪ Diabetes rates increase with age. 
+Blueprint PCMH-attributed Patients with 
+Hypertension Who Have Blood Pressure Under 
+Control 
+No concurrent data 
+available 77% ▪ Rates are lower around Springfield (67%), Rutland 
+(67%) and Bennington (68%). 
+Blueprint PCMH-attributed Patients with Diabetes 
+Who Have Hba1c Not Under Control 
+No concurrent data 
+available 22% ▪ Regional breakdowns have not been published. 
+ED Visits for Suicide Ideation or Self-Harm per 
+10,000 ED Visits by Vermont residents  
+No concurrent data 
+available 245.5 ▪ Rates are higher in Rutland and Windham counties 
+and among those aged 15- 44 years old. 
+ED Visits for Opioid Overdose per 10,000 ED Visits 
+by Vermont residents 
+No concurrent data 
+available 16.1 
+▪ Rates are higher in Chittenden, Caledonia, 
+Bennington and Windham counties and among those 
+aged 30-49 years old. 
+30-Day Follow-Up After ED Visit for Mental Illness 
+among PCMH-attributed Patients 
+No concurrent data 
+available 81% ▪ Rates are lower in the Addison, Lamoille, Rutland, and 
+Washington counties.  
+30-Day Follow-Up After ED Visit for Alcohol Use 
+among PCMH-attributed Patients 
+No concurrent data 
+available 67% ▪ Rates are lower in southern Vermont outside Rutland 
+County and the Northeast Kingdom. 
+ 
