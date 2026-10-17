@@ -4,8 +4,7 @@ import { useState, useMemo } from "react";
 import {
   HOSPITALS, RECOMMENDATIONS, PILLARS,
   CATEGORY_LABELS, CATEGORY_COLORS,
-  type Hospital,
-} from "../data";
+  type Hospital, kmToNearestHospital } from "../data";
 import { Badge, InfoCard, PillarGauge, HBar, UrgencyBadge } from "../atoms";
 import { StickyOutputPanel } from "@/components/StickyOutputPanel";
 
@@ -35,7 +34,7 @@ export function HospitalDeepDive({ selectedRecs }: { selectedRecs: Set<string> }
     const teleFactor = telehealthScope / 100;
     const speedFactor = timelineAggressiveness / 100;
 
-    const baseEquityRisk = hospital.noCarPct * 0.8 + (hospital.avgTravelToNextHospitalMin / 62) * 40;
+    const baseEquityRisk = Math.max(0, hospital.popOver65Pct - 18) * 2 + (kmToNearestHospital(hospital) / 60) * 40; // sourced inputs: 65+ share (VDH 2025), straight-line km
     // Aggressive speed increases equity risk (rushed transitions stress vulnerable populations)
     const speedEquityPenalty = (speedFactor - 0.5) * 0.15; // +7.5% risk at max speed, -7.5% at min
     const mitigatedEquityRisk = baseEquityRisk * (1 - transportFactor * 0.65 - teleFactor * 0.2 + speedEquityPenalty);
@@ -51,15 +50,15 @@ export function HospitalDeepDive({ selectedRecs }: { selectedRecs: Set<string> }
 
     const newLoss = hospital.annualLossM * (1 - financialImprovement);
     const transfersPerYear = hospital.annualAdmissions;
-    const avgTransferMin = hospital.avgTravelToNextHospitalMin;
+    const avgTransferKm = kmToNearestHospital(hospital);
     // Aggressive speed increases transfer risk (less preparation time for care transitions)
     const speedTransferPenalty = (speedFactor - 0.5) * 0.12;
-    const transferRisk = Math.min(100, (avgTransferMin / 60) * (1 - transportFactor * 0.7) * 100 * (1 + speedTransferPenalty));
+    const transferRisk = Math.min(100, (avgTransferKm / 45) * (1 - transportFactor * 0.7) * 100 * (1 + speedTransferPenalty));
     const implementationMonths = Math.round(18 * (1 - speedFactor * 0.4));
 
     const psychiatricBeds = restructuringOption === "cacc-mh" ? Math.floor(hospital.beds * 0.72) : restructuringOption === "reh" ? Math.floor(hospital.beds * 0.15) : 0;
 
-    return { newLoss, financialImprovement, transfersPerYear, avgTransferMin, transferRisk, mitigatedEquityRisk, implementationMonths, psychiatricBeds };
+    return { newLoss, financialImprovement, transfersPerYear, avgTransferKm, transferRisk, mitigatedEquityRisk, implementationMonths, psychiatricBeds };
   }, [hospital, restructuringOption, transportInvestment, telehealthScope, timelineAggressiveness]);
 
   const affectedRecs = RECOMMENDATIONS.filter((r) => r.sourceHospitals.includes(selectedHospital));
@@ -103,8 +102,8 @@ export function HospitalDeepDive({ selectedRecs }: { selectedRecs: Set<string> }
             { v: hospital.annualAdmissions.toLocaleString(), l: "Annual Admissions" },
             { v: hospital.annualEDVisits.toLocaleString(), l: "ED Visits/yr" },
             { v: `$${hospital.annualLossM}M`, l: "Annual Loss" },
-            { v: `${hospital.noCarPct}%`, l: "No Vehicle" },
-            { v: `${hospital.avgTravelToNextHospitalMin}min`, l: "Next Hospital" },
+            { v: `${hospital.popOver65Pct}%`, l: "Aged 65+" },
+            { v: `${kmToNearestHospital(hospital)} km`, l: "Next Hospital" },
           ].map(({ v, l }) => (
             <div key={l} className="text-center">
               <div className="text-lg font-black text-white">{v}</div>
@@ -195,7 +194,7 @@ export function HospitalDeepDive({ selectedRecs }: { selectedRecs: Set<string> }
               {/* Faster timelines increase regulatory complexity (more approvals needed in less time) */}
               <HBar value={Math.round(5 + timelineAggressiveness * 0.05)} max={10} color="bg-violet-500" label="Regulatory Complexity" sublabel={`${Math.round(5 + timelineAggressiveness * 0.05)}/10`} />
               <div className="text-[10px] text-slate-500 leading-relaxed">
-                <strong>Key actions:</strong> CMS REH designation, GMCB budget renegotiation, CON amendment, transfer agreement with {hospital.avgTravelToNextHospitalMin}min regional center
+                <strong>Key actions:</strong> CMS REH designation, GMCB budget renegotiation, CON amendment, transfer agreement with the regional center ({kmToNearestHospital(hospital)} km away)
               </div>
               <div className="text-[10px] text-amber-700 font-bold">Timeline: {outcomes.implementationMonths} months</div>
             </div>
@@ -233,10 +232,10 @@ export function HospitalDeepDive({ selectedRecs }: { selectedRecs: Set<string> }
             </div>
             <div className="text-[10px] text-slate-500 mb-2">equity risk score</div>
             <div className="text-[10px] text-slate-600">
-              {outcomes.transfersPerYear} acute transfers/yr · {outcomes.avgTransferMin}min to next hospital
+              {outcomes.transfersPerYear} discharges/yr (FY2023) · {outcomes.avgTransferKm} km to next hospital
             </div>
             <div className="text-[10px] text-slate-600 mt-1">
-              {hospital.noCarPct}% no vehicle · {hospital.popOver65Pct}% age 65+
+              {hospital.popOver65Pct}% age 65+ · CMS stars: {hospital.cmsStarRating ?? "not rated"}
             </div>
             {outcomes.transferRisk > 60 && (
               <div className="text-[10px] text-red-600 font-bold mt-1">⚠ High transfer risk — transport investment required</div>

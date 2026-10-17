@@ -4,8 +4,7 @@ import { useState, useMemo } from "react";
 import dynamic from "next/dynamic";
 import {
   HOSPITALS, RECOMMENDATIONS,
-  type Hospital, type HospitalUrgency,
-} from "../data";
+  type Hospital, type HospitalUrgency, kmToNearestHospital } from "../data";
 
 // Leaflet must be loaded client-only (uses window/document).
 const LeafletMap = dynamic(() => import("../LeafletMap"), { ssr: false });
@@ -41,17 +40,17 @@ function hospitalFill(h: Hospital, layer: MapLayer): string {
     return "#ef4444";
   }
   if (layer === "equity") {
-    const score = (h.noCarPct + h.lowIncomePct) / 2;
-    if (score > 25) return "#ef4444";
-    if (score > 18) return "#f97316";
-    if (score > 12) return "#eab308";
+    const score = h.popOver65Pct; // sourced: VDH 2025 HSA share aged 65+
+    if (score > 28) return "#ef4444";
+    if (score > 26) return "#f97316";
+    if (score > 24) return "#eab308";
     return "#22c55e";
   }
   // access
-  const t = h.avgTravelToNextHospitalMin;
-  if (t > 55) return "#ef4444";
-  if (t > 40) return "#f97316";
-  if (t > 28) return "#eab308";
+  const t = kmToNearestHospital(h); // straight-line km
+  if (t > 40) return "#ef4444";
+  if (t > 30) return "#f97316";
+  if (t > 20) return "#eab308";
   return "#22c55e";
 }
 
@@ -237,7 +236,7 @@ export function GeographicMap({ selectedRecs }: { selectedRecs: Set<string> }) {
                   { v: String(selectedH.beds), l: "Beds" },
                   { v: `${selectedH.operatingMarginPct > 0 ? "+" : ""}${selectedH.operatingMarginPct}%`, l: "Op. Margin", red: selectedH.operatingMarginPct < 0 },
                   { v: selectedH.annualEDVisits.toLocaleString(), l: "ED Visits/yr" },
-                  { v: `${selectedH.avgTravelToNextHospitalMin} min`, l: "To Next Hospital" },
+                  { v: `${kmToNearestHospital(selectedH)} km`, l: "To Next Hospital" },
                 ].map(({ v, l, red }) => (
                   <div key={l} className="bg-slate-50 rounded-lg p-2 text-center">
                     <div className={`text-base font-black ${red ? "text-rose-600" : "text-slate-900"}`}>{v}</div>
@@ -275,8 +274,8 @@ export function GeographicMap({ selectedRecs }: { selectedRecs: Set<string> }) {
                 <div className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1.5">Population Served</div>
                 {[
                   { l: "HSA population",       v: selectedH.populationHSA.toLocaleString() },
-                  { l: "No vehicle households", v: `${selectedH.noCarPct}%` },
-                  { l: "Low income",            v: `${selectedH.lowIncomePct}%` },
+                  { l: "CMS star rating",       v: selectedH.cmsStarRating == null ? "Not rated" : `${selectedH.cmsStarRating} of 5` },
+                  { l: "ED visits avoidable",   v: `${selectedH.edAvoidablePct}%` },
                   { l: "Over 65",               v: `${selectedH.popOver65Pct}%` },
                 ].map(({ l, v }) => (
                   <div key={l} className="flex justify-between text-[11px] mb-1">
@@ -323,12 +322,12 @@ export function GeographicMap({ selectedRecs }: { selectedRecs: Set<string> }) {
                 <span className="font-bold text-rose-700">${HOSPITALS.reduce((s, h) => s + h.projectedLoss2028M, 0).toFixed(1)}M</span>
               </div>
               <div className="flex justify-between text-[11px]">
-                <span className="text-slate-500">Avg. travel to next hospital</span>
-                <span className="font-bold text-slate-800">{Math.round(HOSPITALS.reduce((s, h) => s + h.avgTravelToNextHospitalMin, 0) / HOSPITALS.length)} min</span>
+                <span className="text-slate-500">Avg. straight-line km to next hospital</span>
+                <span className="font-bold text-slate-800">{Math.round(HOSPITALS.reduce((s, h) => s + kmToNearestHospital(h), 0) / HOSPITALS.length)} km</span>
               </div>
               <div className="flex justify-between text-[11px]">
-                <span className="text-slate-500">Population without a car</span>
-                <span className="font-bold text-slate-800">{Math.round(HOSPITALS.reduce((s, h) => s + h.noCarPct, 0) / HOSPITALS.length)}% avg</span>
+                <span className="text-slate-500">HSA population aged 65+</span>
+                <span className="font-bold text-slate-800">{(HOSPITALS.reduce((s, h) => s + h.popOver65Pct, 0) / HOSPITALS.length).toFixed(1)}% avg</span>
               </div>
             </div>
           </div>

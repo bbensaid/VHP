@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { HOSPITALS } from "@/app/vermont-act-167/simulator/data";
+import { HOSPITALS, kmToNearestHospital } from "@/app/vermont-act-167/simulator/data";
 import type { Metadata } from "next";
 
 // ── Static params for all 14 hospitals ───────────────────────────────────────
@@ -224,14 +224,14 @@ export default async function HospitalProfilePage({ params }: { params: Promise<
         <h2 className="text-xs font-black uppercase tracking-widest text-violet-600 mb-2">Operations</h2>
         <h3 className="text-xl font-black text-slate-900 mb-5">Hospital Operations</h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <StatCard label="Licensed Beds" value={String(h.beds)} sub={`${h.icuBeds} ICU beds`} />
-          <StatCard label="Annual Admissions" value={h.annualAdmissions.toLocaleString()} sub="Inpatient" />
-          <StatCard label="Annual ED Visits" value={h.annualEDVisits.toLocaleString()} sub="Emergency department" />
+          <StatCard label="Beds" value={String(h.beds)} sub={`${h.hospitalType} · CMS cost report FY2023`} />
+          <StatCard label="Discharges" value={h.annualAdmissions.toLocaleString()} sub="FY2023, CMS cost report" />
+          <StatCard label="ED Visits" value={h.annualEDVisits.toLocaleString()} sub={`2022 · ${h.edAvoidablePct}% potentially avoidable (Oliver Wyman)`} />
           <StatCard
-            label="Travel to Next Hospital"
-            value={`${h.avgTravelToNextHospitalMin} min`}
-            sub="Average drive time"
-            accent={h.avgTravelToNextHospitalMin > 50 ? "red" : h.avgTravelToNextHospitalMin > 35 ? "amber" : "slate"}
+            label="Nearest Other Hospital"
+            value={`${kmToNearestHospital(h)} km`}
+            sub="Straight-line distance"
+            accent={kmToNearestHospital(h) > 40 ? "red" : kmToNearestHospital(h) > 25 ? "amber" : "slate"}
           />
         </div>
       </section>
@@ -244,7 +244,7 @@ export default async function HospitalProfilePage({ params }: { params: Promise<
           <StatCard
             label="HSA Population"
             value={h.populationHSA.toLocaleString()}
-            sub={`${h.hsa} Health Service Area`}
+            sub={`${h.hsa} HSA · Vermont Dept. of Health, 2025`}
           />
           <StatCard
             label="Population Over 65"
@@ -253,29 +253,25 @@ export default async function HospitalProfilePage({ params }: { params: Promise<
             accent={h.popOver65Pct > 28 ? "red" : h.popOver65Pct > 22 ? "amber" : "slate"}
           />
           <StatCard
-            label="Low Income (%)"
-            value={`${h.lowIncomePct.toFixed(1)}%`}
-            sub="Below 200% FPL"
-            accent={h.lowIncomePct > 25 ? "red" : "slate"}
+            label="CMS Star Rating"
+            value={h.cmsStarRating == null ? "Not rated" : `${h.cmsStarRating} of 5`}
+            sub="CMS Care Compare overall rating"
           />
           <StatCard
-            label="No Vehicle (%)"
-            value={`${h.noCarPct.toFixed(1)}%`}
-            sub="Transportation barrier"
-            accent={h.noCarPct > 15 ? "amber" : "slate"}
+            label="Staff (FTEs)"
+            value={h.fteCount.toLocaleString()}
+            sub="CMS cost report FY2023"
           />
         </div>
 
-        {(h.noCarPct > 15 || h.avgTravelToNextHospitalMin > 45) && (
+        {kmToNearestHospital(h) > 30 && (
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">
             <div className="font-bold text-amber-900 text-sm mb-2">Geographic Isolation Risk</div>
             <p className="text-xs text-amber-800 leading-relaxed">
-              {h.name} serves a population with significant transportation barriers —{" "}
-              <strong>{h.noCarPct.toFixed(0)}% of households lack a vehicle</strong> and the nearest
-              alternative hospital is <strong>{h.avgTravelToNextHospitalMin} minutes away</strong>.
-              Service closures or consolidations carry acute access risk for vulnerable residents.
-              The Oliver Wyman Report identifies EMS capacity and transportation as critical pre-conditions
-              for any restructuring at this hospital.
+              The nearest other Vermont hospital is <strong>{kmToNearestHospital(h)} km away</strong> in a straight line,
+              and {h.popOver65Pct.toFixed(1)}% of the service area&apos;s residents are 65 or older. Service closures or
+              consolidations here carry real access risk; the Oliver Wyman report treats EMS and transportation capacity
+              as pre-conditions for restructuring.
             </p>
           </div>
         )}
@@ -284,18 +280,14 @@ export default async function HospitalProfilePage({ params }: { params: Promise<
       {/* Services */}
       <section className="mb-12">
         <h2 className="text-xs font-black uppercase tracking-widest text-violet-600 mb-2">Clinical Capabilities</h2>
-        <h3 className="text-xl font-black text-slate-900 mb-5">Active Service Lines</h3>
+        <h3 className="text-xl font-black text-slate-900 mb-5">Outlook and Centers of Excellence</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-white border border-slate-200 rounded-xl p-6">
-            <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-3">Current Services</div>
-            <div className="flex flex-wrap gap-2">
-              {h.services.map(s => (
-                <span key={s} className="text-xs bg-indigo-50 text-indigo-700 border border-indigo-100 px-3 py-1 rounded-full font-medium">
-                  {s}
-                </span>
-              ))}
-              {h.services.length === 0 && <span className="text-xs text-slate-400">No active specialty services</span>}
-            </div>
+            <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-3">Financial Outlook (Oliver Wyman)</div>
+            <p className="text-sm text-slate-600 leading-relaxed">
+              FY2023 operating margin <strong>{h.operatingMarginPct > 0 ? "+" : ""}{h.operatingMarginPct}%</strong>. Projected FY2028 loss:{" "}
+              <strong>${h.projectedLoss2028M}M</strong> if expenses grow 5% a year, <strong>${h.projectedLoss2028HighM}M</strong> at 7–8%.
+            </p>
           </div>
           <div className="bg-white border border-slate-200 rounded-xl p-6">
             <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-3">
