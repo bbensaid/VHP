@@ -41,7 +41,7 @@ const TABS = [
   },
   {
     id: 'leaderboard', icon: '🏆', label: 'Innovation Leaderboard', badge: 'Benchmarking',
-    desc: 'Rank all 50 states on a composite health transformation index, score 30 major health systems on VBC maturity, and compare 20 payers on innovation leadership.',
+    desc: "Compare all 50 states across the five pillars: Policy and Clinical from real, cited data; Technology, Economics, and Operations as disclosed simulated estimates; Vermont from the book's sourced pillar readiness.",
   },
   {
     id: 'scorecard', icon: '🎯', label: 'Transformation Scorecard', badge: 'Executive',

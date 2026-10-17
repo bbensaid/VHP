@@ -13,8 +13,6 @@ import {
   Search,
   Download,
   BarChart2,
-  Building2,
-  Shield,
   Globe,
   ArrowUpDown,
   Info,
@@ -24,7 +22,7 @@ import {
 // TYPES
 // ─────────────────────────────────────────────────────────────
 
-type TabId = "states" | "hospitals" | "payers";
+type TabId = "states";
 
 type SortDirection = "asc" | "desc";
 
@@ -62,34 +60,6 @@ interface StateRecord {
   /** Per-dimension: true where the number is a disclosed simulated estimate rather than
    *  derived from a real published multi-state dataset. Always false when readinessSourced. */
   simulated: { technology: boolean; economics: boolean; operations: boolean };
-}
-
-interface HospitalSystem {
-  rank: number;
-  name: string;
-  state: string;
-  region: "Northeast" | "South" | "Midwest" | "West";
-  type: "Non-profit" | "For-profit" | "Government" | "Integrated";
-  maturity: number;
-  revenueRisk: number;
-  acoApm: number;
-  qualityPerf: number;
-  dataAnalytics: number;
-  patientEngagement: number;
-  trend: number;
-}
-
-interface Payer {
-  rank: number;
-  name: string;
-  payerType: "Commercial" | "Medicare Advantage" | "Medicaid" | "Integrated" | "Government";
-  innovationScore: number;
-  apmPaymentPct: number;
-  apmModelTypes: number;
-  qualityMetrics: number;
-  sdohInvestment: number;
-  dataSharing: number;
-  trend: number;
 }
 
 // ─────────────────────────────────────────────────────────────
@@ -237,94 +207,6 @@ const DC_UNRANKED = {
   policy: 30,
   policyProgram: "—",
   note: "Listed, not ranked. Policy uses this table's tier rule (no AHEAD cohort, no all-payer/global-budget program). America's Health Rankings does not score DC, and no basis exists for the simulated Technology/Economics/Operations estimates, so DC has no composite or rank.",
-};
-
-// ─────────────────────────────────────────────────────────────
-// DATA: HOSPITAL SYSTEMS
-// ─────────────────────────────────────────────────────────────
-
-const RAW_HOSPITALS: Omit<HospitalSystem, "rank">[] = [
-  { name: "Kaiser Permanente",                  state: "CA", region: "West",      type: "Integrated",  maturity: 95, revenueRisk: 98, acoApm: 96, qualityPerf: 94, dataAnalytics: 97, patientEngagement: 92, trend: 1.2 },
-  { name: "Geisinger Health",                   state: "PA", region: "Northeast", type: "Non-profit",  maturity: 88, revenueRisk: 88, acoApm: 90, qualityPerf: 89, dataAnalytics: 87, patientEngagement: 85, trend: 0.8 },
-  { name: "Intermountain Health",               state: "UT", region: "West",      type: "Non-profit",  maturity: 85, revenueRisk: 84, acoApm: 86, qualityPerf: 87, dataAnalytics: 85, patientEngagement: 82, trend: 1.0 },
-  { name: "Univ. of Vermont Health Network",    state: "VT", region: "Northeast", type: "Non-profit",  maturity: 79, revenueRisk: 77, acoApm: 80, qualityPerf: 81, dataAnalytics: 78, patientEngagement: 78, trend: 2.1 },
-  { name: "Atrium Health",                      state: "NC", region: "South",     type: "Non-profit",  maturity: 80, revenueRisk: 79, acoApm: 81, qualityPerf: 82, dataAnalytics: 79, patientEngagement: 78, trend: 1.3 },
-  { name: "Advocate Aurora Health",             state: "IL", region: "Midwest",   type: "Non-profit",  maturity: 78, revenueRisk: 77, acoApm: 79, qualityPerf: 79, dataAnalytics: 78, patientEngagement: 76, trend: 0.9 },
-  { name: "MaineHealth",                        state: "ME", region: "Northeast", type: "Non-profit",  maturity: 76, revenueRisk: 74, acoApm: 77, qualityPerf: 78, dataAnalytics: 75, patientEngagement: 76, trend: 1.8 },
-  { name: "Northwell Health",                   state: "NY", region: "Northeast", type: "Non-profit",  maturity: 75, revenueRisk: 73, acoApm: 76, qualityPerf: 76, dataAnalytics: 75, patientEngagement: 74, trend: 0.7 },
-  { name: "Dartmouth-Hitchcock Health",         state: "NH", region: "Northeast", type: "Non-profit",  maturity: 74, revenueRisk: 73, acoApm: 75, qualityPerf: 75, dataAnalytics: 74, patientEngagement: 73, trend: 1.2 },
-  { name: "Mass General Brigham",               state: "MA", region: "Northeast", type: "Non-profit",  maturity: 74, revenueRisk: 72, acoApm: 75, qualityPerf: 77, dataAnalytics: 76, patientEngagement: 71, trend: 0.5 },
-  { name: "Beth Israel Lahey Health",           state: "MA", region: "Northeast", type: "Non-profit",  maturity: 72, revenueRisk: 71, acoApm: 73, qualityPerf: 74, dataAnalytics: 72, patientEngagement: 70, trend: 0.6 },
-  { name: "Providence Health & Services",       state: "WA", region: "West",      type: "Non-profit",  maturity: 73, revenueRisk: 71, acoApm: 74, qualityPerf: 74, dataAnalytics: 73, patientEngagement: 72, trend: 0.9 },
-  { name: "UPMC",                               state: "PA", region: "Northeast", type: "Non-profit",  maturity: 77, revenueRisk: 76, acoApm: 78, qualityPerf: 78, dataAnalytics: 77, patientEngagement: 75, trend: 0.8 },
-  { name: "Ochsner Health",                     state: "LA", region: "South",     type: "Non-profit",  maturity: 71, revenueRisk: 69, acoApm: 72, qualityPerf: 73, dataAnalytics: 71, patientEngagement: 71, trend: 1.1 },
-  { name: "Cleveland Clinic",                   state: "OH", region: "Midwest",   type: "Non-profit",  maturity: 71, revenueRisk: 67, acoApm: 71, qualityPerf: 78, dataAnalytics: 73, patientEngagement: 68, trend: 0.4 },
-  { name: "ChristianaCare",                     state: "DE", region: "Northeast", type: "Non-profit",  maturity: 71, revenueRisk: 70, acoApm: 72, qualityPerf: 72, dataAnalytics: 71, patientEngagement: 70, trend: 1.3 },
-  { name: "Spectrum Health / Corewell",         state: "MI", region: "Midwest",   type: "Non-profit",  maturity: 70, revenueRisk: 69, acoApm: 71, qualityPerf: 71, dataAnalytics: 70, patientEngagement: 69, trend: 1.0 },
-  { name: "Banner Health",                      state: "AZ", region: "West",      type: "Non-profit",  maturity: 69, revenueRisk: 68, acoApm: 70, qualityPerf: 70, dataAnalytics: 69, patientEngagement: 68, trend: 0.7 },
-  { name: "RWJBarnabas Health",                 state: "NJ", region: "Northeast", type: "Non-profit",  maturity: 67, revenueRisk: 65, acoApm: 68, qualityPerf: 68, dataAnalytics: 67, patientEngagement: 66, trend: 0.5 },
-  { name: "Trinity Health",                     state: "MI", region: "Midwest",   type: "Non-profit",  maturity: 68, revenueRisk: 66, acoApm: 69, qualityPerf: 69, dataAnalytics: 68, patientEngagement: 67, trend: 0.6 },
-  { name: "Mayo Clinic",                        state: "MN", region: "Midwest",   type: "Non-profit",  maturity: 68, revenueRisk: 55, acoApm: 65, qualityPerf: 91, dataAnalytics: 78, patientEngagement: 70, trend: 0.3 },
-  { name: "Sanford Health",                     state: "SD", region: "Midwest",   type: "Non-profit",  maturity: 66, revenueRisk: 64, acoApm: 67, qualityPerf: 67, dataAnalytics: 66, patientEngagement: 65, trend: 0.4 },
-  { name: "CommonSpirit Health",                state: "IL", region: "Midwest",   type: "Non-profit",  maturity: 72, revenueRisk: 71, acoApm: 73, qualityPerf: 73, dataAnalytics: 72, patientEngagement: 71, trend: 0.7 },
-  { name: "Ascension Health",                   state: "MO", region: "Midwest",   type: "Non-profit",  maturity: 65, revenueRisk: 63, acoApm: 66, qualityPerf: 66, dataAnalytics: 65, patientEngagement: 64, trend: 0.2 },
-  { name: "Prisma Health",                      state: "SC", region: "South",     type: "Non-profit",  maturity: 64, revenueRisk: 62, acoApm: 65, qualityPerf: 65, dataAnalytics: 64, patientEngagement: 63, trend: 0.5 },
-  { name: "Bon Secours Mercy Health",           state: "OH", region: "Midwest",   type: "Non-profit",  maturity: 62, revenueRisk: 60, acoApm: 63, qualityPerf: 63, dataAnalytics: 62, patientEngagement: 61, trend: 0.3 },
-  { name: "Ballad Health",                      state: "TN", region: "South",     type: "Non-profit",  maturity: 58, revenueRisk: 56, acoApm: 59, qualityPerf: 59, dataAnalytics: 58, patientEngagement: 57, trend: 0.1 },
-  { name: "HCA Healthcare",                     state: "TN", region: "South",     type: "For-profit",  maturity: 58, revenueRisk: 52, acoApm: 57, qualityPerf: 61, dataAnalytics: 64, patientEngagement: 57, trend: -0.2 },
-  { name: "Tenet Healthcare",                   state: "TX", region: "South",     type: "For-profit",  maturity: 55, revenueRisk: 48, acoApm: 54, qualityPerf: 58, dataAnalytics: 60, patientEngagement: 54, trend: -0.4 },
-  { name: "Community Health Systems",           state: "TN", region: "South",     type: "For-profit",  maturity: 50, revenueRisk: 42, acoApm: 49, qualityPerf: 53, dataAnalytics: 55, patientEngagement: 50, trend: -0.6 },
-];
-
-const HOSPITALS: HospitalSystem[] = [...RAW_HOSPITALS]
-  .sort((a, b) => b.maturity - a.maturity)
-  .map((h, i) => ({ ...h, rank: i + 1 }));
-
-const HOSPITAL_AVG = {
-  revenueRisk: 68,
-  acoApm: 69,
-  qualityPerf: 71,
-  dataAnalytics: 71,
-  patientEngagement: 69,
-};
-
-// ─────────────────────────────────────────────────────────────
-// DATA: PAYERS
-// ─────────────────────────────────────────────────────────────
-
-const RAW_PAYERS: Omit<Payer, "rank">[] = [
-  { name: "CMS / Medicare",               payerType: "Government",          innovationScore: 90, apmPaymentPct: 92, apmModelTypes: 10, qualityMetrics: 92, sdohInvestment: 85, dataSharing: 88, trend: 1.5 },
-  { name: "Kaiser Foundation Health Plan",payerType: "Integrated",          innovationScore: 88, apmPaymentPct: 90, apmModelTypes: 9,  qualityMetrics: 90, sdohInvestment: 86, dataSharing: 91, trend: 0.8 },
-  { name: "BCBS Massachusetts (AQC)",     payerType: "Commercial",          innovationScore: 82, apmPaymentPct: 84, apmModelTypes: 8,  qualityMetrics: 84, sdohInvestment: 79, dataSharing: 80, trend: 1.2 },
-  { name: "BCBS Vermont (BCBSVT)",        payerType: "Commercial",          innovationScore: 78, apmPaymentPct: 80, apmModelTypes: 7,  qualityMetrics: 79, sdohInvestment: 80, dataSharing: 76, trend: 2.0 },
-  { name: "Humana",                       payerType: "Medicare Advantage",  innovationScore: 75, apmPaymentPct: 77, apmModelTypes: 7,  qualityMetrics: 76, sdohInvestment: 73, dataSharing: 73, trend: 1.0 },
-  { name: "CDPHP (NY)",                   payerType: "Commercial",          innovationScore: 76, apmPaymentPct: 77, apmModelTypes: 7,  qualityMetrics: 77, sdohInvestment: 74, dataSharing: 74, trend: 1.4 },
-  { name: "BCBS Michigan (PGIP)",         payerType: "Commercial",          innovationScore: 74, apmPaymentPct: 75, apmModelTypes: 7,  qualityMetrics: 75, sdohInvestment: 71, dataSharing: 73, trend: 0.9 },
-  { name: "UnitedHealthcare",             payerType: "Commercial",          innovationScore: 72, apmPaymentPct: 73, apmModelTypes: 7,  qualityMetrics: 73, sdohInvestment: 69, dataSharing: 71, trend: 0.6 },
-  { name: "CVS / Aetna",                  payerType: "Commercial",          innovationScore: 70, apmPaymentPct: 71, apmModelTypes: 6,  qualityMetrics: 71, sdohInvestment: 68, dataSharing: 70, trend: 0.8 },
-  { name: "Point32Health (Harvard/Tufts)",payerType: "Commercial",          innovationScore: 71, apmPaymentPct: 72, apmModelTypes: 6,  qualityMetrics: 72, sdohInvestment: 69, dataSharing: 70, trend: 1.1 },
-  { name: "Priority Health (MI)",         payerType: "Commercial",          innovationScore: 73, apmPaymentPct: 74, apmModelTypes: 6,  qualityMetrics: 73, sdohInvestment: 71, dataSharing: 71, trend: 1.0 },
-  { name: "Cigna",                        payerType: "Commercial",          innovationScore: 68, apmPaymentPct: 69, apmModelTypes: 6,  qualityMetrics: 69, sdohInvestment: 66, dataSharing: 67, trend: 0.5 },
-  { name: "Independence BCBS PA",         payerType: "Commercial",          innovationScore: 67, apmPaymentPct: 68, apmModelTypes: 6,  qualityMetrics: 68, sdohInvestment: 65, dataSharing: 66, trend: 0.4 },
-  { name: "Medicaid (National Avg)",      payerType: "Medicaid",            innovationScore: 65, apmPaymentPct: 66, apmModelTypes: 5,  qualityMetrics: 65, sdohInvestment: 72, dataSharing: 62, trend: 0.7 },
-  { name: "Elevance Health (Anthem)",     payerType: "Commercial",          innovationScore: 65, apmPaymentPct: 66, apmModelTypes: 5,  qualityMetrics: 66, sdohInvestment: 62, dataSharing: 64, trend: 0.3 },
-  { name: "BCBS (National Avg)",          payerType: "Commercial",          innovationScore: 62, apmPaymentPct: 63, apmModelTypes: 5,  qualityMetrics: 63, sdohInvestment: 59, dataSharing: 61, trend: 0.2 },
-  { name: "AmeriHealth Caritas",          payerType: "Medicaid",            innovationScore: 60, apmPaymentPct: 60, apmModelTypes: 4,  qualityMetrics: 61, sdohInvestment: 67, dataSharing: 57, trend: 0.4 },
-  { name: "Molina Healthcare",            payerType: "Medicaid",            innovationScore: 58, apmPaymentPct: 58, apmModelTypes: 4,  qualityMetrics: 59, sdohInvestment: 63, dataSharing: 55, trend: 0.2 },
-  { name: "Centene Corporation",          payerType: "Medicaid",            innovationScore: 55, apmPaymentPct: 55, apmModelTypes: 3,  qualityMetrics: 56, sdohInvestment: 60, dataSharing: 51, trend: 0.0 },
-  { name: "WellCare Health Plans",        payerType: "Medicaid",            innovationScore: 52, apmPaymentPct: 52, apmModelTypes: 3,  qualityMetrics: 53, sdohInvestment: 57, dataSharing: 48, trend: -0.3 },
-];
-
-const PAYERS: Payer[] = [...RAW_PAYERS]
-  .sort((a, b) => b.innovationScore - a.innovationScore)
-  .map((p, i) => ({ ...p, rank: i + 1 }));
-
-const PAYER_AVG = {
-  apmPaymentPct: 69,
-  apmModelTypes: 6,
-  qualityMetrics: 70,
-  sdohInvestment: 68,
-  dataSharing: 67,
 };
 
 // ─────────────────────────────────────────────────────────────
@@ -632,340 +514,6 @@ function StateRankings() {
 }
 
 // ─────────────────────────────────────────────────────────────
-// TAB 2: HOSPITAL SYSTEMS
-// ─────────────────────────────────────────────────────────────
-
-type HospSort = "rank" | "maturity" | "revenueRisk" | "acoApm" | "qualityPerf" | "dataAnalytics" | "patientEngagement" | "trend";
-
-function HospitalRankings() {
-  const [search, setSearch] = useState("");
-  const [typeFilter, setTypeFilter] = useState<string>("All");
-  const [regionFilter, setRegionFilter] = useState<string>("All");
-  const [sortKey, setSortKey] = useState<HospSort>("rank");
-  const [sortDir, setSortDir] = useState<SortDirection>("asc");
-  const [expandedHosp, setExpandedHosp] = useState<string | null>(null);
-
-  const toggleSort = (key: HospSort) => {
-    if (sortKey === key) setSortDir(d => d === "asc" ? "desc" : "asc");
-    else { setSortKey(key); setSortDir(key === "rank" ? "asc" : "desc"); }
-  };
-
-  const filtered = useMemo(() => {
-    let data = [...HOSPITALS];
-    if (search) data = data.filter(h => h.name.toLowerCase().includes(search.toLowerCase()) || h.state.toLowerCase().includes(search.toLowerCase()));
-    if (typeFilter !== "All") data = data.filter(h => h.type === typeFilter);
-    if (regionFilter !== "All") data = data.filter(h => h.region === regionFilter);
-    data.sort((a, b) => {
-      const av = a[sortKey] as number;
-      const bv = b[sortKey] as number;
-      return sortDir === "asc" ? av - bv : bv - av;
-    });
-    return data;
-  }, [search, typeFilter, regionFilter, sortKey, sortDir]);
-
-  const ColHeader = ({ label, k }: { label: string; k: HospSort }) => (
-    <th
-      onClick={() => toggleSort(k)}
-      className="px-3 py-2 text-left text-xs font-semibold text-fuchsia-300 cursor-pointer select-none whitespace-nowrap hover:text-fuchsia-100 transition-colors"
-    >
-      <span className="inline-flex items-center gap-1">{label}<ArrowUpDown className="w-3 h-3 opacity-60" /></span>
-    </th>
-  );
-
-  const typeBadgeColor: Record<string, string> = {
-    "Non-profit": "bg-blue-900/60 text-blue-300",
-    "For-profit": "bg-orange-900/60 text-orange-300",
-    "Government": "bg-purple-900/60 text-purple-300",
-    "Integrated": "bg-emerald-900/60 text-emerald-300",
-  };
-
-  const handleExport = () => {
-    const lines = ["Rank\tSystem\tState\tType\tMaturity\tVBC Revenue%\tTrend", ...filtered.map(h =>
-      `${h.rank}\t${h.name}\t${h.state}\t${h.type}\t${h.maturity}\t${h.revenueRisk}%\t${h.trend > 0 ? "+" : ""}${h.trend}`
-    )];
-    navigator.clipboard.writeText(lines.join("\n"));
-  };
-
-  return (
-    <div className="space-y-4">
-      <div className="flex flex-wrap gap-3 items-center">
-        <div className="relative flex-1 min-w-[180px]">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-fuchsia-400" />
-          <input
-            className="w-full pl-9 pr-3 py-2 bg-gray-800 border border-fuchsia-700/40 rounded-lg text-sm text-white placeholder-gray-500 focus:outline-none focus:border-fuchsia-500"
-            placeholder="Search health systems..."
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-          />
-        </div>
-        <select className="px-3 py-2 bg-gray-800 border border-fuchsia-700/40 rounded-lg text-sm text-white focus:outline-none focus:border-fuchsia-500" value={typeFilter} onChange={e => setTypeFilter(e.target.value)}>
-          {["All", "Non-profit", "For-profit", "Government", "Integrated"].map(t => <option key={t}>{t}</option>)}
-        </select>
-        <select className="px-3 py-2 bg-gray-800 border border-fuchsia-700/40 rounded-lg text-sm text-white focus:outline-none focus:border-fuchsia-500" value={regionFilter} onChange={e => setRegionFilter(e.target.value)}>
-          {["All", "Northeast", "South", "Midwest", "West"].map(r => <option key={r}>{r}</option>)}
-        </select>
-        <button onClick={handleExport} className="flex items-center gap-2 px-4 py-2 bg-fuchsia-700 hover:bg-fuchsia-600 rounded-lg text-sm font-medium text-white transition-colors">
-          <Download className="w-4 h-4" /> Export Rankings
-        </button>
-      </div>
-
-      <div className="overflow-x-auto rounded-xl border border-fuchsia-800/40">
-        <table className="w-full text-sm">
-          <thead className="bg-fuchsia-950/60">
-            <tr>
-              <ColHeader label="Rank" k="rank" />
-              <th className="px-3 py-2 text-left text-xs font-semibold text-fuchsia-300">System</th>
-              <th className="px-3 py-2 text-left text-xs font-semibold text-fuchsia-300">State</th>
-              <th className="px-3 py-2 text-left text-xs font-semibold text-fuchsia-300">Type</th>
-              <ColHeader label="Maturity" k="maturity" />
-              <ColHeader label="% Risk Rev." k="revenueRisk" />
-              <ColHeader label="ACO/APM" k="acoApm" />
-              <ColHeader label="Quality" k="qualityPerf" />
-              <ColHeader label="Data & Analytics" k="dataAnalytics" />
-              <ColHeader label="Pt. Engagement" k="patientEngagement" />
-              <ColHeader label="Trend" k="trend" />
-              <th className="px-3 py-2" />
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-gray-800">
-            {filtered.map(h => {
-              const isExpanded = expandedHosp === h.name;
-              return (
-                <>
-                  <tr
-                    key={h.name}
-                    className="hover:bg-fuchsia-950/30 transition-colors cursor-pointer"
-                    onClick={() => setExpandedHosp(isExpanded ? null : h.name)}
-                  >
-                    <td className="px-3 py-2.5"><MedalIcon rank={h.rank} /></td>
-                    <td className="px-3 py-2.5 font-semibold text-white">{h.name}</td>
-                    <td className="px-3 py-2.5 text-slate-400">{h.state}</td>
-                    <td className="px-3 py-2.5">
-                      <span className={`text-xs px-2 py-0.5 rounded-full ${typeBadgeColor[h.type]}`}>{h.type}</span>
-                    </td>
-                    <td className="px-3 py-2.5">
-                      <span className={`font-bold text-base ${scoreColor(h.maturity)}`}>{h.maturity}</span>
-                    </td>
-                    <td className="px-3 py-2.5 text-slate-300">{h.revenueRisk}%</td>
-                    <td className="px-3 py-2.5 text-slate-300">{h.acoApm}</td>
-                    <td className="px-3 py-2.5 text-slate-300">{h.qualityPerf}</td>
-                    <td className="px-3 py-2.5 text-slate-300">{h.dataAnalytics}</td>
-                    <td className="px-3 py-2.5 text-slate-300">{h.patientEngagement}</td>
-                    <td className="px-3 py-2.5">
-                      <TrendArrow val={h.trend} />
-                      <span className={`ml-1 text-xs ${h.trend > 0.5 ? "text-emerald-400" : h.trend < -0.1 ? "text-red-400" : "text-slate-400"}`}>
-                        {h.trend > 0 ? "+" : ""}{h.trend.toFixed(1)}
-                      </span>
-                    </td>
-                    <td className="px-3 py-2.5 text-slate-500">
-                      {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
-                    </td>
-                  </tr>
-                  {isExpanded && (
-                    <tr key={`${h.name}-expand`} className="bg-fuchsia-950/20">
-                      <td colSpan={12} className="px-6 py-4">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                          {[
-                            { label: "% Revenue in Risk Contracts", val: h.revenueRisk, avg: HOSPITAL_AVG.revenueRisk },
-                            { label: "ACO / APM Participation", val: h.acoApm, avg: HOSPITAL_AVG.acoApm },
-                            { label: "Quality Performance Composite", val: h.qualityPerf, avg: HOSPITAL_AVG.qualityPerf },
-                            { label: "Data & Analytics Capability", val: h.dataAnalytics, avg: HOSPITAL_AVG.dataAnalytics },
-                            { label: "Patient Engagement Level", val: h.patientEngagement, avg: HOSPITAL_AVG.patientEngagement },
-                          ].map(d => (
-                            <div key={d.label}>
-                              <div className="flex justify-between text-xs mb-1">
-                                <span className="text-slate-400">{d.label}</span>
-                                <span className={scoreColor(d.val)}>{d.val} <span className="text-slate-500">/ avg {d.avg}</span></span>
-                              </div>
-                              <ScoreBar score={d.val} avg={d.avg} color={scoreBg(d.val)} />
-                            </div>
-                          ))}
-                        </div>
-                        <p className="text-xs text-slate-500 mt-3">White marker = peer average. VBC Maturity Index assesses transition from fee-for-service to value-based models across 5 dimensions.</p>
-                      </td>
-                    </tr>
-                  )}
-                </>
-              );
-            })}
-          </tbody>
-        </table>
-      </div>
-      <p className="text-xs text-slate-500">Showing {filtered.length} of {HOSPITALS.length} health systems. | Last Updated: Q1 2025</p>
-    </div>
-  );
-}
-
-// ─────────────────────────────────────────────────────────────
-// TAB 3: PAYER INNOVATION INDEX
-// ─────────────────────────────────────────────────────────────
-
-type PayerSort = "rank" | "innovationScore" | "apmPaymentPct" | "apmModelTypes" | "qualityMetrics" | "sdohInvestment" | "dataSharing" | "trend";
-
-function PayerRankings() {
-  const [search, setSearch] = useState("");
-  const [typeFilter, setTypeFilter] = useState<string>("All");
-  const [sortKey, setSortKey] = useState<PayerSort>("rank");
-  const [sortDir, setSortDir] = useState<SortDirection>("asc");
-  const [expandedPayer, setExpandedPayer] = useState<string | null>(null);
-
-  const toggleSort = (key: PayerSort) => {
-    if (sortKey === key) setSortDir(d => d === "asc" ? "desc" : "asc");
-    else { setSortKey(key); setSortDir(key === "rank" ? "asc" : "desc"); }
-  };
-
-  const filtered = useMemo(() => {
-    let data = [...PAYERS];
-    if (search) data = data.filter(p => p.name.toLowerCase().includes(search.toLowerCase()));
-    if (typeFilter !== "All") data = data.filter(p => p.payerType === typeFilter);
-    data.sort((a, b) => {
-      const av = a[sortKey] as number;
-      const bv = b[sortKey] as number;
-      return sortDir === "asc" ? av - bv : bv - av;
-    });
-    return data;
-  }, [search, typeFilter, sortKey, sortDir]);
-
-  const ColHeader = ({ label, k }: { label: string; k: PayerSort }) => (
-    <th
-      onClick={() => toggleSort(k)}
-      className="px-3 py-2 text-left text-xs font-semibold text-fuchsia-300 cursor-pointer select-none whitespace-nowrap hover:text-fuchsia-100 transition-colors"
-    >
-      <span className="inline-flex items-center gap-1">{label}<ArrowUpDown className="w-3 h-3 opacity-60" /></span>
-    </th>
-  );
-
-  const typeBadgeColor: Record<string, string> = {
-    "Commercial":         "bg-blue-900/60 text-blue-300",
-    "Medicare Advantage": "bg-purple-900/60 text-purple-300",
-    "Medicaid":           "bg-orange-900/60 text-orange-300",
-    "Integrated":         "bg-emerald-900/60 text-emerald-300",
-    "Government":         "bg-yellow-900/60 text-yellow-300",
-  };
-
-  const handleExport = () => {
-    const lines = ["Rank\tPayer\tType\tInnovation Score\tAPM Payment %\tAPM Model Types\tQuality Metrics\tSDOH Investment\tData Sharing\tTrend", ...filtered.map(p =>
-      `${p.rank}\t${p.name}\t${p.payerType}\t${p.innovationScore}\t${p.apmPaymentPct}%\t${p.apmModelTypes}\t${p.qualityMetrics}\t${p.sdohInvestment}\t${p.dataSharing}\t${p.trend > 0 ? "+" : ""}${p.trend}`
-    )];
-    navigator.clipboard.writeText(lines.join("\n"));
-  };
-
-  return (
-    <div className="space-y-4">
-      <div className="flex flex-wrap gap-3 items-center">
-        <div className="relative flex-1 min-w-[180px]">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-fuchsia-400" />
-          <input
-            className="w-full pl-9 pr-3 py-2 bg-gray-800 border border-fuchsia-700/40 rounded-lg text-sm text-white placeholder-gray-500 focus:outline-none focus:border-fuchsia-500"
-            placeholder="Search payers..."
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-          />
-        </div>
-        <select className="px-3 py-2 bg-gray-800 border border-fuchsia-700/40 rounded-lg text-sm text-white focus:outline-none focus:border-fuchsia-500" value={typeFilter} onChange={e => setTypeFilter(e.target.value)}>
-          {["All", "Commercial", "Medicare Advantage", "Medicaid", "Integrated", "Government"].map(t => <option key={t}>{t}</option>)}
-        </select>
-        <button onClick={handleExport} className="flex items-center gap-2 px-4 py-2 bg-fuchsia-700 hover:bg-fuchsia-600 rounded-lg text-sm font-medium text-white transition-colors">
-          <Download className="w-4 h-4" /> Export Rankings
-        </button>
-      </div>
-
-      <div className="overflow-x-auto rounded-xl border border-fuchsia-800/40">
-        <table className="w-full text-sm">
-          <thead className="bg-fuchsia-950/60">
-            <tr>
-              <ColHeader label="Rank" k="rank" />
-              <th className="px-3 py-2 text-left text-xs font-semibold text-fuchsia-300">Payer</th>
-              <th className="px-3 py-2 text-left text-xs font-semibold text-fuchsia-300">Type</th>
-              <ColHeader label="Innovation Score" k="innovationScore" />
-              <ColHeader label="APM Pay %" k="apmPaymentPct" />
-              <ColHeader label="APM Models" k="apmModelTypes" />
-              <ColHeader label="Quality Metrics" k="qualityMetrics" />
-              <ColHeader label="SDOH Programs" k="sdohInvestment" />
-              <ColHeader label="Data Sharing" k="dataSharing" />
-              <ColHeader label="Trend" k="trend" />
-              <th className="px-3 py-2" />
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-gray-800">
-            {filtered.map(p => {
-              const isExpanded = expandedPayer === p.name;
-              const isLeader = p.rank <= 5;
-              return (
-                <>
-                  <tr
-                    key={p.name}
-                    className="hover:bg-fuchsia-950/30 transition-colors cursor-pointer"
-                    onClick={() => setExpandedPayer(isExpanded ? null : p.name)}
-                  >
-                    <td className="px-3 py-2.5"><MedalIcon rank={p.rank} /></td>
-                    <td className="px-3 py-2.5">
-                      <div className="flex items-center gap-2">
-                        <span className="font-semibold text-white">{p.name}</span>
-                        {isLeader && (
-                          <span className="inline-flex items-center gap-1 text-xs px-1.5 py-0.5 rounded-full bg-fuchsia-900/80 text-fuchsia-300 border border-fuchsia-700/50">
-                            <Star className="w-3 h-3" /> Leader
-                          </span>
-                        )}
-                      </div>
-                    </td>
-                    <td className="px-3 py-2.5">
-                      <span className={`text-xs px-2 py-0.5 rounded-full ${typeBadgeColor[p.payerType]}`}>{p.payerType}</span>
-                    </td>
-                    <td className="px-3 py-2.5">
-                      <span className={`font-bold text-base ${scoreColor(p.innovationScore)}`}>{p.innovationScore}</span>
-                    </td>
-                    <td className="px-3 py-2.5 text-slate-300">{p.apmPaymentPct}%</td>
-                    <td className="px-3 py-2.5 text-slate-300">{p.apmModelTypes}/10</td>
-                    <td className="px-3 py-2.5 text-slate-300">{p.qualityMetrics}</td>
-                    <td className="px-3 py-2.5 text-slate-300">{p.sdohInvestment}</td>
-                    <td className="px-3 py-2.5 text-slate-300">{p.dataSharing}</td>
-                    <td className="px-3 py-2.5">
-                      <TrendArrow val={p.trend} />
-                      <span className={`ml-1 text-xs ${p.trend > 0.5 ? "text-emerald-400" : p.trend < -0.1 ? "text-red-400" : "text-slate-400"}`}>
-                        {p.trend > 0 ? "+" : ""}{p.trend.toFixed(1)}
-                      </span>
-                    </td>
-                    <td className="px-3 py-2.5 text-slate-500">
-                      {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
-                    </td>
-                  </tr>
-                  {isExpanded && (
-                    <tr key={`${p.name}-expand`} className="bg-fuchsia-950/20">
-                      <td colSpan={11} className="px-6 py-4">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                          {[
-                            { label: "% of Payments in APMs", val: p.apmPaymentPct, avg: PAYER_AVG.apmPaymentPct },
-                            { label: "APM Model Type Diversity (×10)", val: p.apmModelTypes * 10, avg: PAYER_AVG.apmModelTypes * 10 },
-                            { label: "Quality Metric Sophistication", val: p.qualityMetrics, avg: PAYER_AVG.qualityMetrics },
-                            { label: "SDOH Investment Programs", val: p.sdohInvestment, avg: PAYER_AVG.sdohInvestment },
-                            { label: "Data Sharing with Providers", val: p.dataSharing, avg: PAYER_AVG.dataSharing },
-                          ].map(d => (
-                            <div key={d.label}>
-                              <div className="flex justify-between text-xs mb-1">
-                                <span className="text-slate-400">{d.label}</span>
-                                <span className={scoreColor(d.val)}>{d.label.includes("APM Model") ? `${p.apmModelTypes}/10` : d.val} <span className="text-slate-500">/ avg {d.label.includes("APM Model") ? `${PAYER_AVG.apmModelTypes}/10` : d.avg}</span></span>
-                              </div>
-                              <ScoreBar score={d.val} avg={d.avg} color={scoreBg(d.val)} />
-                            </div>
-                          ))}
-                        </div>
-                        <p className="text-xs text-slate-500 mt-3">White marker = peer average. Innovation Index measures aggressiveness of APM portfolio and commitment to value-based payment reform.</p>
-                      </td>
-                    </tr>
-                  )}
-                </>
-              );
-            })}
-          </tbody>
-        </table>
-      </div>
-      <p className="text-xs text-slate-500">Showing {filtered.length} of {PAYERS.length} payers. | Last Updated: Q1 2025</p>
-    </div>
-  );
-}
-
-// ─────────────────────────────────────────────────────────────
 // MAIN COMPONENT
 // ─────────────────────────────────────────────────────────────
 
@@ -976,18 +524,6 @@ const TABS: { id: TabId; label: string; icon: React.ReactNode; description: stri
     icon: <Globe className="w-4 h-4" />,
     description: "Five-pillar comparison across all 50 states — Policy and Clinical are real, cited data; Technology/Economics/Operations are disclosed simulated estimates; Vermont uses the book's sourced pillar readiness",
   },
-  {
-    id: "hospitals",
-    label: "Hospital System VBC Maturity",
-    icon: <Building2 className="w-4 h-4" />,
-    description: "Value-Based Care maturity index for 30 major U.S. health systems",
-  },
-  {
-    id: "payers",
-    label: "Payer Innovation Index",
-    icon: <Shield className="w-4 h-4" />,
-    description: "APM portfolio aggressiveness ranking for 20 national payers",
-  },
 ];
 
 export default function InnovationLeaderboard() {
@@ -995,8 +531,6 @@ export default function InnovationLeaderboard() {
   const [showMethodology, setShowMethodology] = useState(false);
 
   const topState   = STATES[0];
-  const topHosp    = HOSPITALS[0];
-  const topPayer   = PAYERS[0];
 
   return (
     <div className="min-h-screen bg-gray-950 text-white">
@@ -1012,13 +546,13 @@ export default function InnovationLeaderboard() {
                 <h1 className="text-2xl font-bold text-white">Innovation Leaderboard &amp; Benchmarks</h1>
               </div>
               <p className="text-slate-400 text-sm max-w-2xl">
-                Comprehensive rankings of healthcare transformation performance across states, health systems, and payers.
-                Data reflects 2024 performance with Q1 2025 updates.
+                Five-pillar comparison of health transformation across the 50 states. Policy and Clinical use real, cited data;
+                Technology, Economics, and Operations are disclosed simulated estimates; Vermont uses the book&apos;s sourced pillar readiness.
               </p>
             </div>
             <div className="flex items-center gap-3 text-xs text-slate-400">
               <span className="px-2.5 py-1 rounded-full bg-fuchsia-900/40 border border-fuchsia-700/30 text-fuchsia-300">
-                Last Updated: Q1 2025
+                Updated: September 2026
               </span>
               <button
                 onClick={() => setShowMethodology(v => !v)}
@@ -1047,25 +581,13 @@ export default function InnovationLeaderboard() {
                     Index use — so it cannot show a different number here than it does everywhere else in the platform.</li>
                 </ul>
               </div>
-              <p className="mb-2">
-                <strong className="text-white">Hospital VBC Maturity Index:</strong> Five-dimension framework assessing
-                % revenue in risk contracts, ACO/APM program participation breadth, quality performance composite (HEDIS/CMS Star),
-                data &amp; analytics infrastructure capability, and patient engagement program sophistication.
-              </p>
-              <p>
-                <strong className="text-white">Payer Innovation Index:</strong> Measures aggressiveness of Alternative Payment Model portfolio.
-                Dimensions: % of total payments flowing through APMs, diversity of APM model types (MSSP, REACH, bundles, episode payments, P4P, global caps),
-                quality metric sophistication, SDOH investment program scope, and bidirectional data-sharing infrastructure with provider partners.
-              </p>
             </div>
           )}
 
           {/* Summary cards */}
-          <div className="grid grid-cols-3 gap-4 mt-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
             {[
               { label: "Top State",  val: topState.state,  score: topState.composite,  icon: <Globe className="w-4 h-4 text-fuchsia-400" /> },
-              { label: "Top System", val: topHosp.name,    score: topHosp.maturity,    icon: <Building2 className="w-4 h-4 text-fuchsia-400" /> },
-              { label: "Top Payer",  val: topPayer.name,   score: topPayer.innovationScore, icon: <Shield className="w-4 h-4 text-fuchsia-400" /> },
             ].map(c => (
               <div key={c.label} className="flex items-center gap-3 bg-gray-900/60 rounded-xl px-4 py-3 border border-fuchsia-800/20">
                 <div className="p-1.5 bg-fuchsia-900/40 rounded-lg">{c.icon}</div>
@@ -1111,8 +633,6 @@ export default function InnovationLeaderboard() {
         {/* Tab content */}
         <div className="pb-16">
           {activeTab === "states"    && <StateRankings />}
-          {activeTab === "hospitals" && <HospitalRankings />}
-          {activeTab === "payers"    && <PayerRankings />}
         </div>
       </div>
     </div>

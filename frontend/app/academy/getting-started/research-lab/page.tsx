@@ -211,7 +211,7 @@ const LAB_GROUPS = [
         tab: "?tab=leaderboard",
         name: "Innovation Leaderboard",
         who: "Executives, consultants, investors, researchers",
-        when: "When benchmarking your state, health system, or payer against peers on health transformation maturity.",
+        when: "When comparing your state with peers across the five pillars, and checking which numbers are sourced and which are simulated.",
         tip: "Use the state composite index to identify which states are leading on which pillars — it surfaces specific program models worth studying.",
       },
       {

@@ -576,8 +576,8 @@ CATALOG = [
         "url": "/research-lab/knowledge-workspace?tab=leaderboard",
         "category": "Research Lab",
         "subcategory": "Knowledge & Workspace",
-        "description": "Rank all 50 states on a composite health transformation index, score 30 major health systems on VBC maturity, and compare 20 payers on innovation leadership.",
-        "keywords": ["innovation leaderboard", "state ranking", "vbc maturity", "health system ranking", "payer innovation"],
+        "description": "Compare all 50 states across the five pillars: Policy and Clinical from real, cited data; Technology, Economics, and Operations as disclosed simulated estimates; Vermont from the book's sourced pillar readiness.",
+        "keywords": ["innovation leaderboard", "state ranking", "five pillars by state", "state comparison"],
     },
     {
         "id": "lab-evidence-library",
