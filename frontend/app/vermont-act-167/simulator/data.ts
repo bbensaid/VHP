@@ -324,7 +324,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
           "Apply for CMS Rural Emergency Hospital (REH) designation per 42 CFR § 485.500",
           "Negotiate new GMCB global budget for REH operating model",
           "Amend CON (Certificate of Need) for bed reduction and service reconfiguration",
-          "Establish transfer agreements with RRMC (38 min), BMH (45 min), and UVMMC",
+          "Establish transfer agreements with RRMC (53 km), BMH (50 km), and UVMMC",
           "Coordinate with Springfield EMS for enhanced transfer protocols",
           "Engage community stakeholders via 6-month engagement process (Act 167 mandate)",
           "Obtain state Medicaid REH carve-out payment rates",
@@ -360,10 +360,10 @@ export const RECOMMENDATIONS: Recommendation[] = [
       },
       equity: {
         score: 55, direction: "mixed",
-        headline: "9,500 Springfield HSA residents lose acute inpatient access; psychiatric and elder care improves",
+        headline: "Springfield HSA residents (27,880, VDH 2025) lose local acute inpatient access; psychiatric and elder care improves",
         actions: [
-          "Acute IP loss: 640 admissions/yr must transfer — avg 38 min to RRMC",
-          "High-risk groups: 29% of HSA population is 65+; 18% no car; 28% low income",
+          "Acute IP loss: about 584 discharges/yr (CMS FY2023) would transfer — RRMC is 53 km away",
+          "High-risk groups: 29.5% of the HSA population is 65+ (VDH 2025), the oldest HSA in Vermont",
           "Mitigation: Fund dedicated transport for acute transfers (2 vehicles, $380K/yr)",
           "Expand PACE program to 150+ participants in Springfield catchment",
           "Mobile health unit to serve Windham County rural areas (4 days/wk)",
@@ -406,7 +406,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
           "Amend CON to convert acute IP beds to psychiatric/memory care",
           "Apply for Medicaid psychiatric carve-out payment rates",
           "Negotiate GMCB budget reflecting new service mix",
-          "Establish formal transfer agreements: CVMC (32 min), UVMMC (65 min)",
+          "Establish formal transfer agreements: CVMC (31 km), UVMMC (75 km)",
           "Change ED staffing model to Advanced Practice Provider + physician telehealth backup",
           "Engage Randolph community via Act 167 engagement process",
           "Form New England Collaborative Network CAH consortium with Springfield, Grace Cottage, North Country",
@@ -440,10 +440,10 @@ export const RECOMMENDATIONS: Recommendation[] = [
       },
       equity: {
         score: 50, direction: "mixed",
-        headline: "8,000 Randolph HSA residents; 420 acute transfers needed; mental health access improves significantly",
+        headline: "14,550 Randolph HSA residents (VDH 2025); about 815 discharges/yr (CMS FY2023) would need another site; mental health access improves",
         actions: [
-          "420 acute admissions/yr transferred to CVMC (32 min avg) or UVMMC (65 min)",
-          "30% of HSA is 65+; 19% no vehicle — high transport vulnerability",
+          "About 815 discharges/yr (CMS FY2023) transferred to CVMC (31 km) or UVMMC (75 km)",
+          "28.4% of the HSA is 65+ (VDH 2025) — high transport vulnerability",
           "Fund Gifford-CVMC transport shuttle ($280K/yr, 5 days/wk)",
           "Memory care expansion addresses rapidly growing elder care gap",
           "Geriatric psychiatry beds address unmet need in rural Central Vermont",
@@ -480,7 +480,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     pillars: {
       policy: {
         score: 68, direction: "positive",
-        headline: "CACC model requires new state designation; 62-min distance to next hospital is critical equity concern",
+        headline: "CACC model requires new state designation; 59 km to the next hospital (NVRH) is a critical equity concern",
         actions: [
           "Create Vermont CACC designation legislation (no federal analog exists)",
           "Negotiate GMCB global budget for CACC model",
@@ -493,7 +493,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
       },
       technology: {
         score: 68, direction: "positive",
-        headline: "Remote ICU monitoring and telehealth are essential given 62-min distance to nearest hospital",
+        headline: "Remote monitoring and telehealth are essential given 59 km to the nearest hospital",
         actions: [
           "Deploy remote ICU (eICU) monitoring system: $380K",
           "24/7 telehealth physician coverage for urgent care: $210K/yr",
@@ -518,10 +518,10 @@ export const RECOMMENDATIONS: Recommendation[] = [
       },
       equity: {
         score: 38, direction: "negative",
-        headline: "HIGHEST EQUITY RISK: Newport is most isolated at 62 min; 20% no vehicle; 29% low income",
+        headline: "HIGH EQUITY RISK: Newport is 59 km (straight line) from the nearest other hospital; 26.3% of the HSA is 65+ (VDH 2025)",
         actions: [
-          "780 acute admissions/yr must transfer — avg 62 min to nearest hospital (NVRH)",
-          "Critical vulnerability: no vehicle 20% + rural isolation + aging population (29% 65+)",
+          "About 1,363 discharges/yr (CMS FY2023) would transfer — NVRH is 59 km away",
+          "Critical vulnerability: rural isolation + aging population (26.3% 65+, VDH 2025)",
           "MANDATORY: Fund county medical transport program — 3 vehicles, $450K/yr",
           "MANDATORY: EMS upgrade to ALS level across all Orleans County stations",
           "Establish air medevac protocol for time-critical conditions (STEMI, stroke, major trauma)",
@@ -533,7 +533,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
       },
       clinical: {
         score: 45, direction: "mixed",
-        headline: "780 acute transfers to NVRH (62 min) — pre-hospital protocols critical; SNF/MH improves",
+        headline: "About 1,363 discharges/yr to NVRH (59 km) — pre-hospital protocols critical; SNF/MH improves",
         actions: [
           "Stop acute IP care; convert to SNF (20 beds) + Rehab (10 beds)",
           "16-hour urgent care replaces 24/7 ED — must develop after-hours telehealth protocol",
@@ -565,7 +565,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
           "Apply for CMS REH designation for Grace Cottage",
           "Negotiate GMCB budget for REH + FQHC co-location model",
           "Explore FQHC (Federally Qualified Health Center) designation for primary care arm",
-          "Establish transfer agreements with BMH (45 min) and UVMMC (90 min)",
+          "Establish transfer agreements with BMH (24 km) and UVMMC (164 km)",
           "Community engagement for Townshend and southern Windham County",
           "Apply for Rural Health Transformation grants (HHS HRSA) — potential $2M",
         ],
@@ -597,10 +597,10 @@ export const RECOMMENDATIONS: Recommendation[] = [
       },
       equity: {
         score: 48, direction: "mixed",
-        headline: "5,500 residents; 52-min to BMH; 32% over 65; 22% no car — highest elder vulnerability",
+        headline: "Townshend area sits inside the Brattleboro HSA (33,290 residents, 27.8% aged 65+, VDH 2025); BMH is 24 km away",
         actions: [
-          "310 acute admissions/yr transfer to BMH (52 min) or UVMMC (90 min)",
-          "32% of HSA is 65+ — highest rate in Vermont — requires elder-specific transport",
+          "About 102 discharges/yr (CMS FY2023) transfer to BMH (24 km) or UVMMC",
+          "27.8% of the Brattleboro HSA is 65+ (VDH 2025) — requires elder-specific transport",
           "22% no vehicle — requires ride program (partner with NCAT/VTrans rural transit)",
           "Mobile health unit covers 4 Windham County towns weekly",
           "PACE program (target 60 participants) addresses elder care gap",
@@ -678,7 +678,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
         headline: "Surgical access improves for complex cases; some communities face longer travel for routine surgery",
         actions: [
           "Map surgical volume shifts: 2,400 cases/yr redirected to COE sites",
-          "Identify communities where travel time to COE exceeds 60 min: 3 HSAs affected",
+          "Identify communities where travel time to a COE exceeds 60 minutes",
           "Implement surgical transport voucher program for low-income patients",
           "Mobile pre-op clinic visits to reduce travel burden",
           "Ensure ASU sites are located in underserved corridors (WRJ, Newport, Randolph)",
@@ -1065,8 +1065,8 @@ export const RECOMMENDATIONS: Recommendation[] = [
         score: 92, direction: "positive",
         headline: "EMS is the critical safety net for the most isolated Vermonters; essential for any hospital restructuring",
         actions: [
-          "Current: 8+ towns in VT have average EMS response time >20 min",
-          "Newport, Townshend, Randolph: nearest hospital 42–62 min; ALS EMS is life-critical",
+          "Map EMS response times by town to find coverage gaps",
+          "Newport, Townshend, Randolph: ALS EMS coverage is life-critical where the nearest hospital is distant",
           "Regionalization ensures 24/7 ALS coverage in all Vermont towns",
           "Community paramedicine: proactive home visits to elderly/disabled patients",
           "EMS workforce: recruit from immigrant communities with medical training",
@@ -1079,7 +1079,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
         headline: "ALS EMS is non-negotiable clinical prerequisite for rural hospital restructuring",
         actions: [
           "ALS EMS capability: administer 25+ medications, perform 12-lead ECG, CPAP, IO access",
-          "STEMI alert: ECG transmission reduces door-to-balloon time by 30 min on average",
+          "STEMI alert: pre-hospital ECG transmission to shorten door-to-balloon time",
           "Sepsis recognition protocol in field → earlier treatment initiation",
           "Community paramedicine: CHF, COPD, diabetes monitoring prevents 28% readmissions",
           "Track: EMS response time by town, ALS capability rate, inter-facility transfer time",
@@ -1305,8 +1305,8 @@ export const RECOMMENDATIONS: Recommendation[] = [
         actions: [
           "21% of Vermont rural households have no vehicle access",
           "Transportation barriers cause 25% of missed medical appointments (Vermont rural estimate)",
-          "Priority communities: Newport (20% no car), Grace Cottage (22%), Gifford (19%)",
-          "Elder-specific transport: 29–34% of at-risk HSA populations are 65+",
+          "Priority communities: Newport, Townshend (Grace Cottage), and Randolph (Gifford)",
+          "Elder-specific transport: 26–30% of at-risk HSA populations are 65+ (VDH 2025)",
           "Language-accessible dispatch for 5 non-English speaking communities",
           "Coordinate with Green Mountain Transit, ACTR, and rural volunteer transport",
           "Special transport for dialysis patients (3x/week trips — massive burden)",
