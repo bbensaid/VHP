@@ -36,7 +36,7 @@ https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT068/ACT068%20As%20En
 - Medicaid hospital global budget (6 hospitals, launched Jan 1, 2026): CMS letter July 7, 2026 — not approved under
   Global Commitment STCs; payments stopped July 31, 2026; Jan–Jul payments reprocessed as FFS by Jan 7, 2027
   (GCR 26-089). Global Commitment waiver expires Dec 31, 2027.
-- Vermont All-Payer ACO Model: 2018–2022, extended 2023, transition year 2024 (concluded 2024).
+- Vermont All-Payer ACO Model: performance years from 2018; agreement with CMS ended at the end of 2025 (8 years; VTDigger 3/13/2026). NOT 2024.
 - RHT: Vermont FY2026 award $195,053,740 (Dec 29, 2025); later years set annually through FY2030. RHT application
   activity list: no tele-ICU, no neurology/oncology tele-consult line, no broadband funding; voluntary shared EMR
   (program-manager solicitation RHT_AHS_004_FY26, May 20, 2026); e-Consult; RPM ($0.9M yr1); AI scribes ($1.03M yr1).
