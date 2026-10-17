@@ -97,29 +97,3 @@ export async function getAllPerformanceIndexes(): Promise<
   return Object.fromEntries(docs.map((d) => [d.id, d]));
 }
 
-// ── Hospitals ─────────────────────────────────────────────────────────────────
-
-export type SanityHospital = {
-  id: string;
-  name: string;
-  city: string;
-  type: "Critical Access" | "Rural PPS" | "Urban";
-  totalDischarges: number;
-  avgLengthOfStay: number;
-  qualityScore: number;
-};
-
-export async function getHospitalsByState(stateSlug: string): Promise<SanityHospital[]> {
-  return client.fetch(
-    `*[_type == "hospital" && stateSlug == $stateSlug] | order(name asc) {
-      "id": _id,
-      name,
-      city,
-      type,
-      totalDischarges,
-      avgLengthOfStay,
-      qualityScore
-    }`,
-    { stateSlug }
-  );
-}

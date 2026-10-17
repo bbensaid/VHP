@@ -1,9 +1,9 @@
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
-import { getRhtState, getPerformanceIndex, getHospitalsByState } from "@/lib/sanity-dashboard-queries";
+import { getRhtState, getPerformanceIndex } from "@/lib/sanity-dashboard-queries";
+import { getCmsHospitals } from "@/lib/cms-hospitals";
 import { getStateMetrics, type StateHealthRow } from "@/lib/db/states";
 import { getRhtProfile, type RhtProfileRow } from "@/lib/db/rht-profiles";
-import { getHospitals, type HospitalRow } from "@/lib/db/hospitals";
 import { performanceIndexData } from "@/lib/data/performance-index-data";
 import { rhtProgramData } from "@/lib/data/rht-program";
 import StateDetailClientPage from "./StateDetailClientPage";
@@ -81,28 +81,15 @@ export default async function DynamicStatePage({
   const resolvedParams = await params;
   const stateSlug = resolvedParams.state.toLowerCase();
 
-  const [sanityIndex, sanityProgram, sanityHospitals, dbMetrics, dbProfile, dbHospitals] =
+  const [sanityIndex, sanityProgram, dbMetrics, dbProfile, hospitals] =
     await Promise.all([
       getPerformanceIndex(stateSlug),
       getRhtState(stateSlug),
-      getHospitalsByState(stateSlug),
       getStateMetrics(stateSlug),
       getRhtProfile(stateSlug),
-      getHospitals(stateSlug),
+      // Real hospital list from CMS Care Compare (cached daily); see lib/cms-hospitals.ts.
+      getCmsHospitals(stateSlug),
     ]);
-
-  // Prefer Sanity hospitals; fall back to CMS-loaded Supabase data
-  const hospitals = sanityHospitals.length > 0
-    ? sanityHospitals
-    : dbHospitals.map((h: HospitalRow) => ({
-        id:               h.id,
-        name:             h.name,
-        city:             h.city,
-        type:             h.hospital_type as "Critical Access" | "Rural PPS" | "Urban",
-        totalDischarges:  h.total_discharges,
-        avgLengthOfStay:  h.avg_length_of_stay,
-        qualityScore:     h.quality_score,
-      }));
 
   // Priority: Sanity CMS → Supabase DB → static data file → 404
   const indexData =
