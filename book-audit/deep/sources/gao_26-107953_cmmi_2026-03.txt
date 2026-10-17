@@ -1,0 +1,1994 @@
+CMS INNOVATION CENTER 
+ 
+Obligations and Model Testing 
+Progress
+Report to the Chairman  
+Committee on the Budget  
+House of Representatives
+March 2026
+GAO-26-107953
+United States Government Accountability Office
+Accessible Version
+
+GAO Highlights
+CMS INNOVATION CENTER 
+Obligations and Model Testing Progress
+GAO-26-107953
+March 2026
+A report to the Chairman, Committee on the Budget, House of Representatives
+For more information, contact: Leslie V. Gordon at GordonLV@gao.gov
+What GAO Found
+The Center for Medicare and Medicaid Innovation (Innovation Center) was established within the Centers for 
+Medicare & Medicaid Services (CMS) to test new approaches to health care delivery and payment— known as 
+models— for use in Medicare or Medicaid. From 2011 through 2024, the Innovation Center obligated $11.4 
+billion for its activities. These included the testing of 70 models— 24 of which were actively being tested as of 
+January 2025. Total annual obligations peaked at $1.3 billion in fiscal year 2015 and have since decreased by 
+nearly 40 percent to $789 million in fiscal year 2024. According to officials, these trends reflect the number of 
+models the Innovation Center tests, among other factors. 
+Center for Medicare and Medicaid Innovation (Innovation Center) General Process for Model Development and Testing
+Accessible Data for Center for Medicare and Medicaid Innovation (Innovation Center) General Process for Model Development 
+and Testing
+Category Category information
+Idea & concept · Identify ideas for new models from internal and external stakeholders
+· Assess concepts in the context of the current portfolio of models and CMS and administration priorities
+
+Category Category information
+Planning & design · Develop a model proposal that includes an estimation of model effect on federal spending
+· Select models for testing based on factors including feasibility and potential impact
+Solicit & build · Solicit and select contractors to evaluate the model and support operation (e.g., build information 
+technology and learning systems)
+· Solicit, select, and establish agreements with participants
+Operate & evaluate · Operate model, generally for less than 10 years
+· Evaluate model effect on federal spending and quality of care
+· Make changes to the model as necessary based on regular monitoring  
+Source: GAO and Centers for Medicare & Medicaid Services (information); GAO (icons). I GAO-26-107953 
+Of 70 models tested, the Innovation Center has expanded four models to be implemented nationwide. These 
+four models achieved net savings during the testing period. In addition to expanding certain models, the 
+Innovation Center has also incorporated elements into Medicare and tested successor models that iterate upon 
+previous concepts.
+The Innovation Center uses selected performance management practices to regularly assess the performance 
+of its efforts to test new health care delivery and payment approaches. For example, in May 2025, the 
+Innovation Center established new long-term goals to outline the agency’s vision for its activities. It also 
+developed corresponding near-term goals, including performance measures with targets and time frames. The 
+Innovation Center uses this information to evaluate its progress toward its long-term goals, according to 
+officials, and plans to regularly assess the outcomes of its activities against these near-term goals.
+Why GAO Did This Study
+In 2010, the Patient Protection and Affordable Care Act established the Innovation Center to test new health 
+care delivery and payment approaches to reduce federal health spending. In 2012 and 2018, GAO reported on 
+the Innovation Center’s progress in testing models, use of resources, and its assessment of its overall 
+performance. 
+GAO was asked to update its earlier work. In this report, GAO (1) describes the Innovation Center’s obligations 
+from 2011 through 2024 and how it obligated the funds to develop and test models; (2) describes the outcomes 
+of model testing; and (3) examines the extent to which the Innovation Center follows selected practices of 
+performance management to assess its performance. 
+GAO reviewed obligations data from fiscal years 2011 through 2024, reviewed model documentation and 
+performance information, and compared efforts against selected performance management practices. GAO 
+interviewed officials from the Innovation Center and CMS’s Office of the Actuary.
+Page i GAO-26-107953  CMS Innovation Center
+Contents
+GAO Highlights ii
+What GAO Found ii
+Why GAO Did This Study iii
+Letter  1
+Background 3
+Innovation Center Obligated $11.4 Billion and Operated 70 Models Testing Payment and Delivery 
+Approaches 8
+CMS Certified Four Models for Expansion and Applied Lessons Learned; Agency Also Identified Factors 
+That Affect Savings Potential 16
+The Innovation Center Established Goals and Performance Measures with Targets 20
+Agency Comments 21
+Appendix I: Models Tested by the Center for Medicare and Medicaid Innovation (Innovation Center) 23
+Appendix II: GAO Contact and Staff Acknowledgments 37
+Tables
+Table 1: Selected Characteristics of Active Models, as of January 2025 13
+Table 2: Active Models as of January 2025 with Participation by Health Care Provider Organizations 14
+Table 3: Active Models as of January 2025 with Participation by States 15
+Table 4: Characteristics of Four Models Certified for Expansion, as of January 2025 16
+Table 5: Center for Medicare and Medicaid Innovation (Innovation Center) Long-Term Goals and Examples 
+of Related Near-Term Goals and Performance Measures, as of December 2025 21
+Table 6: Active Models Tested by the Center for Medicare and Medicaid Innovation (Innovation Center), as 
+of January 2025 23
+Table 7: Completed Models Tested by the Center for Medicare and Medicaid Innovation (Innovation Center), 
+2011–2024 27
+Figures
+Center for Medicare and Medicaid Innovation (Innovation Center) General Process for Model Development 
+and Testing ii
+Accessible Data for Center for Medicare and Medicaid Innovation (Innovation Center) General Process for 
+Model Development and Testing ii
+Figure 1: Center for Medicare and Medicaid Innovation (Innovation Center) General Process for Model 
+Development and Testing 5
+Page ii GAO-26-107953  CMS Innovation Center
+Accessible Data for Figure 1: Center for Medicare and Medicaid Innovation (Innovation Center) General 
+Process for Model Development and Testing 5
+Figure 2: Center for Medicare and Medicaid Innovation (Innovation Center) Obligations, by Year and 
+Category, Fiscal Years 2011–2024 9
+Accessible Data for Figure 2: Center for Medicare and Medicaid Innovation (Innovation Center) Obligations, 
+by Year and Category, Fiscal Years 2011–2024 9
+Figure 3: Number of Annual Active and Cumulative Models Tested by the Center for Medicare and Medicaid 
+Innovation (Innovation Center), 2011–January 2025 11
+Accessible Data for Figure 3: Number of Annual Active and Cumulative Models Tested by the Center for 
+Medicare and Medicaid Innovation (Innovation Center), 2011–January 2025 11
+Abbreviations
+· ACO accountable care organization
+· CBO Congressional Budget Office
+· CHIP Children’s Health Insurance Program
+· CMS Centers for Medicare & Medicaid Services
+· HHS Department of Health and Human Services
+· Innovation Center  Center for Medicare and Medicaid Innovation
+· PPACA Patient Protection and Affordable Care Act
+· PTAC Physician-Focused Payment Model Technical Advisory Committee
+This is a work of the U.S. government and is not subject to copyright protection in the United States. The published product may be 
+reproduced and distributed in its entirety without further permission from GAO. However, because this work may contain copyr ighted 
+images or other material, permission from the copyright holder may be necessary if you wish to reproduce this material separa tely.
+Letter
+Page 1 GAO-26-107953  CMS Innovation Center
+Letter
+March 27, 2026
+The Honorable Jodey Arrington 
+Chairman 
+Committee on the Budget 
+House of Representatives
+Dear Mr. Chairman:
+Federal spending on Medicare, Medicaid, and the Children’s Health Insurance Program (CHIP) is expected to 
+reach $1.6 trillion in fiscal year 2025 and to continue increasing.1 In 2010, the Patient Protection and Affordable 
+Care Act (PPACA) established the Center for Medicare and Medicaid Innovation (Innovation Center), within the 
+Centers for Medicare & Medicaid Services (CMS), to reduce federal health care spending as well as improve 
+quality of care for beneficiaries.2 To do so, the Innovation Center is tasked with testing new ways for delivering 
+and paying for services. Specifically, the Innovation Center operates and evaluates pilot programs— known as 
+models— to test the effects of new health care delivery and payment approaches in Medicare, Medicaid, and 
+CHIP.3
+The law provided a dedicated appropriation for testing models— $10 billion for the Innovation Center’s activities 
+for fiscal years 2011 through 2019 and $10 billion per decade beginning in fiscal year 2020.4 In addition, the 
+law provided CMS, within the Department of Health and Human Services (HHS), with authority to expand the 
+duration and scope of successful models through rulemaking.
+Though initially projected to produce net savings, in September 2023, the Congressional Budget Office (CBO) 
+determined that the Innovation Center had increased federal spending by $5.4 billion from fiscal years 2011 
+through 2020.5 Specifically, CBO estimated that the Innovation Center spent $7.9 billion to operate models and 
+those models reduced federal health care spending by $2.6 billion during this period. CBO noted its initial 
+projection involved considerable uncertainty because of the lack of available data. After further reviewing the 
+Innovation Center’s model activities, CBO subsequently projected that the Innovation Center would increase 
+federal spending by $1.3 billion from fiscal years 2021 through 2030.
+1Congressional Budget Office, The Budget and Economic Outlook: 2025 to 2035, (Washington, D.C.: Jan. 2025). Medicare is the 
+federal health insurance program for persons aged 65 or over, certain individuals with disabilities, and individuals with end -stage renal 
+disease. Medicaid is a joint federal -state health care financing progra m for certain low -income individuals and medically needy 
+individuals. CHIP is a federal -state program that provides health care coverage to children 18 years of age and younger living in low -
+income families whose incomes exceed the eligibility requirement for Medicaid.
+2The Innovation Center was established by section 1115A of the Social Security Act, as added by section 3021 of PPACA. See Pub . L. 
+No. 111-148, §§ 3021, 10306, 124 Stat. 119, 389, 939 (2010) (codified at 42 U.S.C. § 1315a).
+3See appendix I for details on the delivery and payment approaches tested by the Innovation Center models.
+4These appropriations remain available until expended. 
+5Congressional Budget Office, Federal Budgetary Effects of the Activities of the Center for Medicare & Medicaid Innovation, 
+(Washington, D.C.: Sept. 2023). 
+Letter
+Page 2 GAO-26-107953  CMS Innovation Center
+We previously reported on the Innovation Center. In November 2012, we reported on the Innovation Center’s 
+early activities following its establishment.6 In March 2018, we reported on the Innovation Center’s progress in 
+testing models, its use of resources to operate the Innovation Center, and its assessment of its overall 
+performance.7 We found that the Innovation Center had tested 37 models as of March 2018 and used the 
+evaluation results to make changes to models and to inform the development of new models. We also found 
+that the Innovation Center had reported meeting targets for some of its performance goals as of 2015.
+You asked us to update our previous work and to provide information on the activities of the Innovation Center. 
+In this report we
+1. describe the Innovation Center’s obligations from 2011 through 2024 and how it obligated the funds to 
+develop and test models;
+2. describe the outcomes of model testing undertaken by the Innovation Center as of January 2025; and
+3. examine the extent to which the Innovation Center follows selected practices of performance management 
+to assess its performance.
+To describe the Innovation Center’s obligations from 2011 through 2024 and how it obligated the funds to 
+develop and test models, we analyzed data provided by CMS on Innovation Center obligations under section 
+1115A of the Social Security Act by year and by category. Fiscal year 2024 was the most recent year of data 
+available at the time of analysis. We also reviewed the Innovation Center’s model summary data and model 
+documentation to identify the models operated from January 2011 through January 2025 and to compile 
+information on the key characteristics of these models.8 We included models tested under section 1115A and 
+those that were statutorily required.9 In addition, we reviewed CMS data on the model participants (such as 
+health care provider organizations or states) for models operated as of January 2025. We also interviewed and 
+obtained written responses from CMS officials about its obligations and model testing activities. We assessed 
+the reliability of the obligation data by comparing it to outlays reported by CBO in September 2023, to 
+obligations data reported in our previous work on the Innovation Center, and to obligations reported in the 
+Innovation Center’s biennial reports to Congress.10 We assessed the reliability of the model summary data and 
+model participants data by comparing it to model documentation. We also obtained written responses 
+regarding these data from CMS officials. We determined all these data were sufficiently reliable for the 
+purposes of describing the Innovation Center’s obligations and how it obligated funds to develop and test 
+models.
+To describe the outcomes of model testing undertaken by the Innovation Center, we reviewed CMS Innovation 
+Center and CMS Office of the Actuary documentation of model outcomes, including those related to model 
+6See GAO, CMS Innovation Center: Early Implementation Efforts Suggest Need for Additional Actions to Help Ensure Coordination with 
+Other CMS Offices, GAO-13-12 (Washington, D.C.: Nov. 15, 2012). We also found that the Innovation Center had initiated 
+implementation of a process to review and eliminate unnecessary duplication in the contracts awarded in one of its models. We  
+recommended completing the implementatio n expeditiously. CMS implemented this recommendation in August 2013. 
+7GAO, CMS Innovation Center: Model Implementation and Center Performance , GAO-18-302 (Washington, D.C.: Mar. 26, 2018).
+8The Innovation Center has implemented various initiatives that do not result in evaluations, which we did not count as models  because 
+these did not test a payment or delivery approach. 
+9Models tested and funded under section 1115A are those that are developed by the Innovation Center. Congress may also statuto rily 
+require CMS to test certain demonstrations, which may be operated by the Innovation Center. These statutorily required models  may be 
+funded separately from the section 1115A appropriations.
+10For example, see Department of Health and Human Services, Center for Medicare and Medicaid Innovation, 2024 Report to 
+Congress (Dec. 2024). 
+Letter
+Page 3 GAO-26-107953  CMS Innovation Center
+evaluations, model expansion, and how information on model performance was used. From model evaluations, 
+we compiled information on health care participant attrition— including the change in participation during testing 
+and reasons participants cited for dropping out. Specifically, we reviewed information on the attrition of 
+participating health care provider organizations for models that have concluded testing and for which a final 
+evaluation, with results for the entire test period, was available as of March 2025. We also reviewed model 
+documentation and the Innovation Center’s biennial reports to Congress to identify successor models that were 
+influenced by prior models among the models active as of January 2025. Additionally, we reviewed the 
+Innovation Center’s biennial reports to Congress and publications synthesizing the results of model testing to 
+obtain information about factors that affect the potential to achieve savings during model testing. We 
+interviewed and obtained written responses from Innovation Center officials and Office of the Actuary officials 
+regarding model outcomes and how information on model outcomes is used.
+To evaluate the extent to which the Innovation Center follows selected practices of performance management, 
+we reviewed Innovation Center documentation related to its goals and assessment of its performance for 2025 
+and its plans moving forward. We also interviewed and obtained written responses from CMS officials on the 
+Innovation Center’s efforts for assessing program performance. We evaluated the Innovation Center’s efforts 
+to assess its performance by comparing the agency’s activities to three selected practices for performance 
+management.11 We selected the most relevant practices among those identified in our prior work. These 
+practices are (1) establishing long-term goals that communicate the results that an agency seeks to achieve, 
+(2) establishing near-term goals that define expected results in the near-term and that include performance 
+measures, and (3) using performance information to assess results.
+We conducted this performance audit from November 2024 to March 2026 in accordance with generally 
+accepted government auditing standards. Those standards require that we plan and perform the audit to obtain 
+sufficient, appropriate evidence to provide a reasonable basis for our findings and conclusions based on our 
+audit objectives. We believe that the evidence obtained provides a reasonable basis for our findings and 
+conclusions based on our audit objectives.
+Background
+Requirements for Models
+Section 1115A establishes certain requirements for the Innovation Center that relate to the selection of models, 
+use of resources, and evaluation of models. These requirements include the following:
+· Consulting with representatives of relevant federal agencies, as well as clinical and analytical experts in 
+medicine or health care management, when carrying out its duties as described in the law.
+· Ensuring models address deficits in care that have led to poor clinical outcomes or potentially avoidable 
+spending.
+· Making no less than $25 million of the Innovation Center’s dedicated funding available for model design, 
+implementation, and evaluation each fiscal year starting in 2011.
+11GAO, Evidence-Based Policymaking: Practices to Help Manage and Assess the Results of Federal Efforts , GAO-23-105460 
+(Washington, D.C.: July 12, 2023), and Comparative Effectiveness Research: HHS Should Evaluate Its Performance of Related 
+Activities, GAO-25-107462 (Washington, D.C.: July 14, 2025).
+Letter
+Page 4 GAO-26-107953  CMS Innovation Center
+· Evaluating each model to analyze its effects on spending and quality of care and making these evaluations 
+public.
+· Modifying or terminating a model unless it determines after testing has begun that the model either 
+improves quality of care without increasing spending levels, reduces spending without reducing quality, or 
+both.
+In addition, certain requirements previously cited by the Medicare Payment Advisory Commission as 
+administrative barriers to the timely completion of demonstrations are inapplicable.12 Specifically, section 
+1115A provides the following:
+· CMS cannot require that an Innovation Center model initially be budget neutral— that is, designed so that 
+estimated federal expenditures under the model are expected to be no more than they would have been 
+without the model— prior to approving a model for testing.
+· Certain CMS actions in testing and expanding Innovation Center models such as the termination or 
+modification of a model cannot be subject to administrative or judicial review.
+· The Paperwork Reduction Act— which generally requires agencies to submit all proposed information 
+collection efforts to the Office of Management and Budget for approval and provides a 60-day period for 
+public comment when agencies want to collect data on 10 or more individuals— does not apply to 
+Innovation Center models.13
+Model Development and T esting Process
+The Innovation Center generally follows four phases to develop and test a model.14 (See fig. 1.)
+12See Medicare Payment Advisory Commission, Report to Congress: Aligning Incentives in Medicare  (Washington, D.C.: 2010).
+1344 U.S.C. §§ 3501-3520. The Office of Management and Budget assists the President in overseeing the preparation of the federal 
+budget and in supervising its administration in executive branch agencies. It also oversees and coordinates the administratio n’s 
+procurement, financial management, information, and regulatory policies.
+14See GAO-18-302 for additional details on the Innovation Center ’s process for model development and testing.
+Letter
+Page 5 GAO-26-107953  CMS Innovation Center
+Figure 1: Center for Medicare and Medicaid Innovation (Innovation Center) General Process for Model Development and 
+Testing
+Accessible Data for Figure 1: Center for Medicare and Medicaid Innovation (Innovation Center) General Process for Model 
+Development and Testing
+Category Category information
+Idea & concept · Identify ideas for new models from internal and external stakeholders
+· Assess concepts in the context of the current portfolio of models and CMS and administration priorities
+Planning & design · Develop a model proposal that includes an estimation of model effect on federal spending
+· Select models for testing based on factors including feasibility and potential impact
+Solicit & build · Solicit and select contractors to evaluate the model and support operation (e.g., build information 
+technology and learning systems)
+· Solicit, select, and establish agreements with participants
+Operate & evaluate · Operate model, generally for less than 10 years
+· Evaluate model effect on federal spending and quality of care
+· Make changes to the model as necessary based on regular monitoring  
+Source: GAO and Centers for Medicare & Medicaid Services (information); GAO (icons). I GAO-26-107953 
+
+Letter
+Page 6 GAO-26-107953  CMS Innovation Center
+Physician-Focused Payment Model Technical Advisory Committee (PTAC)
+PTAC reviewed and made recommendations to the Secretary of Health and Human Services on 
+28 stakeholder model proposals from 2017 through 2020. Of the 28 proposals, PTAC 
+recommended 20 proposals for testing or other consideration.
+The Center for Medicare and Medicaid Innovation (Innovation Center) has cited nine of the 
+proposals recommended by PTAC as influencing six models it has tested, though it has not tested 
+any of the PTAC proposals in full. For example, one proposal influenced several elements of the 
+Kidney Care Choices Model, including a provider bonus for successful kidney transplants and a 
+focus on care coordination. Several proposals influenced three primary care models — Primary 
+Care First, Making Care Primary, and Global Professional and Direct Contracting. For instance, 
+based on one proposal, the Making Care Primary Model created payment codes to incentivize 
+electronic consultations and care coordination, according to CMS officials. In addition, multiple 
+oncology -related proposals influenced the Oncology Care and Enhancing Oncology models.
+While PTAC has not received new proposal submissions from stakeholders since 2020, it has 
+continued to gather information from stakeholders— through its public meetings and requests for 
+information — on topics related to payment models and to report its findings to the Department of 
+Health and Human Services.
+Source: PTAC and Centers for Medicare & Medicaid Services.  |  GAO-26-107953
+Idea and concept. The Innovation Center identifies ideas for health care payment and delivery approaches 
+that may be tested in a model from across the agency, other federal agencies, and from external sources.15
+For instance, the Innovation Center may solicit ideas from experts across the health care field through listening 
+sessions and requests for information. In addition, the Innovation Center has considered model ideas 
+recommended by the Physician-Focused Payment Model Technical Advisory Committee (PTAC), based on 
+proposals submitted by stakeholders, such as physicians, provider associations, and health systems.16
+The Innovation Center reviews ideas to determine if they may be developed into proposed models. 
+Specifically, the Innovation Center assesses these model concepts in the context of its current portfolio of 
+models as well as CMS and administration priorities. 
+Planning and design. The Innovation Center develops a model proposal that outlines the model design and 
+evaluation plan as well as the potential effects of models. Specifically, proposals summarize supporting 
+evidence and outline size and scope of a model; proposed research questions and measures; an 
+implementation plan, including how participants will be selected; and the model’s potential effect on cost and 
+quality. In addition, the Office of the Actuary estimates the likely effect on federal spending for each proposed 
+model, according to Office of the Actuary officials. According to these officials, there is a great deal of 
+uncertainty in these initial projections because, for instance, there may be limited existing research on the 
+potential effects of a model.
+The Innovation Center considers multiple factors when determining if a proposal should be tested. These 
+factors may include feasibility— including the likelihood it can be successfully operated and the potential it can 
+be scaled beyond the test— and potential effect on health and federal savings. Once proposals receive 
+approval from CMS, HHS, and the Office of Management and Budget, the Innovation Center can begin 
+preparations to test the model.
+15Some models may be mandated by Congress. 
+16PTAC is an independent federal advisory committee chartered by HHS in 2016. Pub. L. No. 114-10, § 101(e)(1), 129 Stat. 115 (2015) 
+(codified at 42 U.S.C. § 1395ee). 
+Letter
+Page 7 GAO-26-107953  CMS Innovation Center
+Solicit and build. The Innovation Center builds the infrastructure needed to operate and evaluate the model. 
+The Innovation Center estimates that this part of the process typically takes between 18 and 36 months to 
+complete. The Innovation Center and its contractors will develop information technology systems (for instance 
+to collect data necessary to monitor the model), develop learning supports for participants, and finalize an 
+evaluation plan.
+The Innovation Center also solicits, selects, and establishes agreements with model participants, such as 
+health care provider organizations or states.17 The requirements that the Innovation Center sets for participants 
+vary by model. For example, participants may be required to have certain organizational capacities, like the 
+availability of electronic health records. In addition, the participants may be selected to achieve a balance of 
+characteristics for evaluation purposes, like geographic location. The nature of participation also varies by 
+model. Models may have voluntary participation— meaning participants choose to join the model— or 
+mandatory participation— meaning participants are required to join the model.
+Operate and evaluate. The Innovation Center operates models for a defined testing period and evaluates the 
+effects of the model on federal spending and health care quality. The model testing period is determined by the 
+Innovation Center and has typically been less than 10 years, according to CMS. The Innovation Center 
+monitors models, including annually reviewing model results to determine if the agency should make changes 
+to the model, expand the model, or terminate it.
+Model Expansion
+Based on model results, CMS may expand the duration and scope of Innovation Center models if the following 
+conditions are met:
+· The agency determines that the expansion is expected to reduce spending without reducing the quality of 
+care, or to improve quality without increasing spending.
+· The agency determines that the expansion would not deny or limit coverage or benefits for beneficiaries.
+· CMS’s Office of the Actuary certifies that the expansion will reduce or not increase net program spending.
+To determine whether to certify a model for expansion, the Office of the Actuary assesses the likelihood that an 
+expanded model would reduce federal spending, according to Office of the Actuary officials. To estimate an 
+expanded model’s likely effect on federal spending, the Office of the Actuary reviews model evaluations from 
+the testing period as well as other evidence and considers differences between the tested model and the 
+potential expansion, according to officials.18 For instance, when expanding a model, there may be differences 
+in the characteristics of the participants or beneficiaries. Office of the Actuary officials told us that a model 
+17Certain laws may also affect participation and model designs. For instance, rules related to the Stark law and anti -kickback statute—
+which restrict certain financial relationships among providers and referral practices in federally funded health care — were revised in 
+2021 to remove potential barriers to provider engagement in certain care coordination and value -based care arrangements. For 
+example, the revised rules created a safe harbor under the anti -kickback statute for providers participating in Innovati on Center value -
+based models, which previously required model -by-model waivers. Safe harbor regulations describe various payment and business 
+practices that, although they could potentially implicate the anti -kickback statute, are not treated as offenses. However, Innovation 
+Center officials could not quantify the effect of the updated rules on provider participation and told us these rules have he lped the 
+Innovation Center streamline its development of models. 85 Fed. Reg. 77,492 (Dec. 2, 2020); 85 Fed. Re g. 77,684 (Dec. 2, 2020).
+18While the Office of the Actuary reviews the model evaluation, its analysis of expanded models may not result in the same find ings 
+because it differs in purpose and methods, according to Office of the Actuary officials.
+Letter
+Page 8 GAO-26-107953  CMS Innovation Center
+would be certified for expansion if they estimate there is a 90 to 95 percent likelihood the model would reduce 
+federal spending.
+Innovation Center Obligated $11.4 Billion and Operated 70 Models 
+Testing Payment and Delivery Approaches
+Innovation Center Obligated $1 1.4 Billion from Fiscal Years 2011 Through 2024
+Innovation Center obligations totaled $11.4 billion from fiscal years 2011 through 2024, according to CMS 
+obligations data.19 These obligations come from the $20 billion that PPACA appropriated to the Innovation 
+Center during this time period.20 Specifically, the Innovation Center obligated $7.9 billion of its first $10 billion 
+appropriation for fiscal years 2011 through 2019 and $3.5 billion in fiscal years 2020 through 2024, after 
+receiving its second $10 billion appropriation for fiscal years 2020 through 2029.21 Because these appropriated 
+funds remain available until expended, $8.0 billion remained unobligated as of the end of fiscal year 2024.
+Total annual obligations peaked at $1.3 billion in fiscal year 2015. Annual obligations have since decreased by 
+nearly 40 percent to $789 million in fiscal year 2024. (See fig. 2.)
+19An obligation is a definite commitment that creates a legal liability of the government for the payment of goods and services  ordered 
+or received, or a legal duty on the part of the United States that could mature into a legal liability by virtue of action s on the part of the 
+other party beyond the control of the United States. Payment may be made immediately or in the future. 
+20PPACA also appropriated $5 million to the Innovation Center in fiscal year 2010. 
+21The $10 billion appropriation from fiscal year 2020 was subject to sequestration, which reduced the amount provided in fiscal  year 
+2020 by $590 million.
+Letter
+Page 9 GAO-26-107953  CMS Innovation Center
+Figure 2: Center for Medicare and Medicaid Innovation (Innovation Center) Obligations, by Year and Category, Fiscal Years 
+2011–2024
+Accessible Data for Figure 2: Center for Medicare and Medicaid Innovation (Innovation Center) Obligations, by Year and 
+Category, Fiscal Years 2011 –2024
+Fiscal year Innovation Activities Innovation Supports Administration
+2011 56.2 12.7 14.2
+2012 694.4 36.1 25.2
+2013 829.2 33.8 58.7
+2014 920.5 78.1 87.7
+2015 1054.1 124.1 107.7
+2016 968 136.9 116.1
+2017 685.5 143.3 122.6
+2018 567.7 163.9 120.9
+2019 429.7 221.8 119.1
+2020 535.7 190.2 118.2
+2021 352.1 204.6 120.3
+2022 271.7 195.1 121.9
+2023 258.5 223.4 129.9
+2024 426.5 209.1 152.9
+Source: Centers for Medicare & Medicaid Services obligations data. I GAO-26-107953 
+Note: Innovation activities include obligations that can be directly attributed to a specific model. Innovation supports include obligations that support the 
+development or operation of multiple models. Administration includes payroll expenses and non -payr oll administrative costs. 
+
+Letter
+Page 10 GAO-26-107953  CMS Innovation Center
+Center for Medicare and Medicaid Innovation (Innovation Center) Obligations Categories
+According to CMS officials, the Innovation Center’s obligations fall into three categories: innovation 
+activities, innovation supports, and administration.
+Innovation activities include obligations that can be directly attributed to a specific model or 
+initiative — such as contracts for implementation, monitoring, or evaluation and model payments to 
+participants .
+Innovation supports include obligations that support the development or operation of multiple 
+models, such as information technology.
+Administration includes payroll expenses and non -payroll administrative costs.
+Source: Centers for Medicare & Medicaid Services (CMS) . | GAO-26-107953
+The decrease in total annual obligations since fiscal year 2015 was driven by a decrease in obligations toward 
+model-specific innovation activities.22 Innovation activities have represented the largest share of the Innovation 
+Center’s annual obligations. Since fiscal year 2015, obligations for innovation activities have generally 
+decreased— both in total and as a share of all obligations. Specifically, annual obligations for innovation 
+activities decreased from over $1 billion (or 82 percent of obligations) in fiscal year 2015 to $427 million (or 54 
+percent of obligations) in fiscal year 2024.
+According to CMS officials, the decrease in Innovation Center obligations since fiscal year 2015 reflects a 
+leveling off in the number of models the Innovation Center operates as well as changes in how certain activities 
+are tracked and reported.23 Specifically, the Innovation Center has centralized common model functions to be 
+more cost efficient, according to officials. For example, officials noted that the agency created centralized 
+resources to support certain activities— like information technology and quality measure development— which 
+simplified contract administration. These activities were thus recategorized from model-specific activities 
+included under innovation activities to common innovation supports.
+While total obligations have decreased, obligations for innovation supports (that spanned multiple models) and 
+administration have increased— both in total and as a share of all obligations— since fiscal year 2015. 
+Specifically, the annual obligations for innovation supports increased from $124 million (or 10 percent of 
+obligations) in fiscal year 2015 to $209 million (or 27 percent of obligations) in fiscal year 2024. Obligations for 
+administration increased from $108 million (or 8 percent of obligations) in fiscal year 2015 to $153 million (or 
+19 percent of obligations) in fiscal year 2024.
+The Innovation Center Operated 70 Models Testing Payment and Delivery Approaches 
+That Engaged a Range of Providers and Other Participants
+As of January 2025, the Innovation Center had tested 70 models, ranging from six in 2011 to 31 in 2016. (See 
+fig. 3.) The Innovation Center had concluded the testing of 46 of these models and was actively testing 24 
+models— referred to in this report as “active models.” (See app. 1 for details on the Innovation Center’s 70 
+models.)
+22Obligated amounts for individual models reflect commitments made to model participants (including health care providers, stat es, and 
+others), if any, as well as other commitments to support model development and testing. Amounts do not include Medicare, Me dicaid, 
+and CHIP payments that health care providers or others receive for services provided to the beneficiaries.
+23In addition, as we previously reported in GAO-18-302, officials noted that certain early models were expensive. For instance, the 
+Health Care Innovation Awards and State Innovation Awards models provided funding to organizations and states, respectively, to test 
+innovations. 
+Letter
+Page 11 GAO-26-107953  CMS Innovation Center
+Figure 3: Number of Annual Active and Cumulative Models Tested by the Center for Medicare and Medicaid Innovation 
+(Innovation Center), 2011 –January 2025
+Accessible Data for Figure 3: Number of Annual Active and Cumulative Models Tested by the Center for Medicare and 
+Medicaid Innovation (Innovation Center), 2011 –January 2025
+Calendar year Annual Number of Active Models  Cumulative Number of Models Operated
+2011 6 6
+2012 15 15
+2013 23 23
+2014 25 27
+2015 28 31
+2016 31 38
+2017 30 44
+2018 30 47
+2019 25 49
+2020 26 52
+2021 30 59
+2022 24 61
+2023 25 63
+2024 22 66
+2025 24 70
+Source: GAO analysis of Centers for Medicare & Medicaid Services model documentation. I GAO-26-107953 
+
+Letter
+Page 12 GAO-26-107953  CMS Innovation Center
+Note: The counts of models for 2011 through 2024 include models that were in operation at any point during the calendar year. The count of models for 
+2025 includes only those models that were in operation as of January 2025. 
+The 24 active models tested payment and delivery approaches with a range of focus areas, payment 
+arrangements, and federal health programs. Specifically,
+· Focus area. The Innovation Center sorted models into one or more categories based on the focus of each 
+model. For example, there were nine models that focused on a specific disease or set of services (disease-
+specific or episode-based), including dementia, opioid misuse, and cancer.
+· Payment arrangement. Models also varied by payment arrangement to participants. For instance, two 
+models included bundled payments— a single payment for the cost of services provided during a defined 
+episode of care— and five models included capitated payments— a set prepayment to cover predicted costs 
+of all or some of the health care services for a specific patient over a certain period of time.
+· Federal health program covered. Models also differed in terms of the programs covered, with 13 models 
+covering Medicare only, four models covering Medicaid (two of which also covered CHIP), and seven 
+models covering both Medicare and Medicaid.
+See table 1 for a breakdown of active models across these selected characteristics as of January 2025. 
+(Appendix I provides a full description of all 70 models tested by the Innovation Center).
+Letter
+Page 13 GAO-26-107953  CMS Innovation Center
+Table 1: Selected Characteristics of Active Models, as of January 2025 
+Model Characteristics Description of models
+Focus areaa · Nine disease -specific and episode -based models, which aim to address deficits in care for a defined 
+population with a shared specific disease or medical condition, procedure, or care episode
+· Nine accountable care models, in which accountable care organizations (ACO), hospitals, or other 
+providers take financial responsibility for improving quality of care b
+· Nine state and community -based models, in which a state or community-based organization serves as 
+the main participant
+· Three health plan models, which include Medicare Advantage plans c
+· Two statutory demonstrations, which have been required by law. Currently, both of these models focus 
+on rural or critical access hospitals
+· One prescription drug model, which seeks to improve access to and the affordability of prescription 
+drugs
+Payment arrangement 
+to participants a
+· 10 advanced alternative payment models, which are part of CMS’s Quality Payment Program and give 
+incentive payments to reward high -quality care for participants that share in the financial rewards and 
+risk of caring for beneficiaries
+· Five capitated payment models, in which providers receive a set prepayment to cover predicted costs 
+of all or some of the health care services for a specific patient over a certain period of time
+· Two bundled payment models, in which providers receive a single payment for the combined cost of 
+eligible services and supplies provided during a defined episode of care
+Federal program 
+covered
+· 13 Medicare models
+· Four Medicaid models, two of which also covered the Children’s Health Insurance Program
+· Seven Medicare and Medicaid models 
+Source: Centers for Medicare & Medicaid Services (CMS) model documentation.  |  GAO-26-107953
+aA model may be included in more than one focus area or payment arrangement.
+bAn ACO refers to a group of providers and suppliers of services, such as hospitals and physicians, that work together to coordinate care for the patients 
+they serve.
+cMedicare Advantage is the private plan alternative to Medicare fee -for-service.
+In addition, these 24 active models included participants such as health care provider organizations, states, 
+and others. Further, the nature of participation differed by model. Specifically, 22 models had voluntary 
+participation and two had mandatory participation.
+Most (16) of the 24 active models included health care provider organizations as participants. Participants in 
+these models included many types of provider organizations, such as accountable care organizations (ACO)—
+in which a group of providers and suppliers of services, such as hospitals and physicians, work together to 
+coordinate care— as well as hospitals; primary care practices; and specialized providers, like dialysis facilities. 
+These models also reached different numbers of participants and providers.24 For example, among the four 
+models targeting ACOs, the number of participants ranged from one ACO with 3,721 providers to 103 ACOs 
+with 136,665 providers, according to model data provided by CMS. (See table 2.)
+24Participants are entities that have direct contractual relationship with CMS to implement the model, and providers are typica lly 
+Medicare-enrolled providers and suppliers, such as individual clinicians, that engage in models through the participant, accord ing to 
+CMS officials.
+Letter
+Page 14 GAO-26-107953  CMS Innovation Center
+Table 2: Active Models as of January 2025 with Participation by Health Care Provider Organizations
+Category Health care provider 
+organization and model
+Number of 
+participants
+Type of participant Number of providers 
+affiliated with 
+participants
+Accountable care organizations 
+(ACO)a
+ACO REACH Model b 103 ACOs 136,665
+Accountable care organizations 
+(ACO)a
+Kidney Care Choices Model 94 Kidney contracting 
+entities and kidney care 
+first practices c
+8,074 
+Accountable care organizations 
+(ACO)a
+ACO Primary Care Flex Model 24 ACOs 18,538
+Accountable care organizations 
+(ACO)a
+Vermont All -Payer ACO Model 1 ACO 3,721 
+Hospitals Rural Community Hospital 
+Demonstration d
+20 Hospitals n/a
+Hospitals Pennsylvania Rural Health 
+Model
+18 Hospitals n/a
+Hospitals Frontier Community Health 
+Integration Project 
+Demonstration d
+5 Critical access hospitals n/a
+Hospitals and practices Maryland Total Cost of Care 
+Model
+67
+495 
+Hospitals
+Primary care practices
+6,170 
+Primary care practices Primary Care First Model 1,810 Primary care practices 12,225 
+Primary care practices Making Care Primary Model 117 Primary care practices 2,319 
+Specialized care providers Expanded Home Health Value -
+Based Purchasing Model e
+About 12,000 Home health agencies n/a
+Specialized care providers End-Stage Renal Disease 
+Treatment Choices Model e
+2,396 Dialysis facilities 2,986 
+Specialized care providers Medicare Diabetes Prevention 
+Program Expanded Model 
+928 Program suppliers 
+including physicians, 
+hospitals, 
+community -based 
+organizations, gyms, and 
+other qualifying entities
+n/a
+Specialized care providers Bundled Payments for Care 
+Improvement Advanced Model
+42
+128 
+Conveners f
+Non-conveners f
+7,313 
+Specialized care providers Guiding an Improved Dementia 
+Experience Model
+95 Dementia care program 
+providers or suppliers
+1,399 
+Specialized care providers Enhancing Oncology Model 37
+2 
+Oncology practices
+Commercial payers
+2,813 
+Legend: n/a = not applicable
+Source: Centers for Medicare & Medicaid Services (CMS).  |  GAO-26-107953
+Notes: Models included are those active as of January 2025 with health care provider organization participants. Participation  data are current as of 
+January to February 2025. Participants are entities that have a direct contractual relationship with CMS to implement the model, and providers are 
+typically Medicare-enrolled providers and suppliers, such as individual clinicians, that engage in models through the participant, according to CMS 
+officials.
+aAn ACO refers to a group of providers and suppliers of services, such as hospitals and physicians, that work together to coordinate care for the patients 
+they serve.
+bACO REACH was previously called ACO Realizing Equity, Access, and Community Health.
+Letter
+Page 15 GAO-26-107953  CMS Innovation Center
+cA kidney contracting entity includes nephrologists or nephrology practices and transplant providers and may include dialysis facilities and other 
+providers and suppliers.
+dStatutorily required model.
+eModel has mandatory participation.
+fA convener facilitates coordination among multiple entities and bears risk on behalf of those entities, while a non-convener only bears financial risk for 
+itself. In this model, conveners include physician group practices (16), home health agencies (13), health systems (5), and other organizations (8). Non-
+conveners in this model include physician group practices (70) and acute care hospitals (58).
+According to CMS officials, the Innovation Center has made a concerted effort to include more provider 
+organizations that are safety-net providers that serve primarily low-income people and typically did not 
+participate in early Innovation Center models. For example, the ACO Primary Care Flex Model targeted low-
+revenue ACOs, which tend to be made up of physicians and might include federally qualified health centers or 
+serve rural areas. The model also strengthened incentives for providers to form ACOs in underserved areas.
+Seven of the 24 active models included state participants. In these models, state participants included 
+hospitals and other providers, drug manufacturers, and payers (e.g., health plans) as partners or as 
+downstream participants.25 For example, states participating in the Innovation in Behavioral Health Model 
+recruited specialty behavioral health practices as participants. (See table 3.)
+Table 3: Active Models as of January 2025 with Participation by States
+Model Number of states Other participants
+Cell and Gene Therapy Access Model a 35 States work with two drug manufacturers of gene 
+therapies for the treatment of sickle cell disease.
+Transforming Maternal Health Model 15 States may partner with managed care organizations, 
+hospitals, birth centers, health centers and rural health 
+clinics, maternity care providers, and community -based 
+organizations.
+Financial Alignment Initiative for Medicare -
+Medicaid Enrollees
+9 States participating in the capitated model option may 
+partner with health plans. b
+Integrated Care for Kids Model 6 States partner with hospitals or health systems (5), a 
+mental health care provider (1), or a local health 
+department (1). c
+Maternal Opioid Misuse Model 7 States partner with hospitals or health systems (6) and a 
+managed care organization (1).
+Innovation in Behavioral Health Model 4 States recruit specialty behavioral health practices, 
+including community mental health centers, opioid 
+treatment programs, and public or private practices.
+Achieving Healthcare Efficiency Through 
+Accountable Design Model d
+3 States recruit hospitals and primary care practices.
+Source: Centers for Medicare & Medicaid Services (CMS).  |  GAO-26-107953
+Note: Models included are those active as of January 2025 with state participants. Participation data are current as of January to February 2025 unless 
+otherwise noted.
+aState participation as of July 2025. The count of states includes the District of Columbia and Puerto Rico. CMS maintains the  model arrangement 
+directly with the two drug manufacturers.
+25Arrangements between CMS, states, and other participants vary by model. For example, in the Cell and Gene Therapy Access 
+Model, CMS partners with participating state Medicaid programs and with drug manufacturers. In the Innovation in Behavioral H ealth 
+Model, CMS partners with participating state Medicaid programs that in turn recruit providers to participate.
+Letter
+Page 16 GAO-26-107953  CMS Innovation Center
+bEight states operate a capitated model in which a health plan receives a prospective blended payment to provide comprehensive, coordinated care. 
+One state operates a managed fee-for-service model in which the state is eligible to benefit from savings resulting from initiatives designed to improve 
+quality and reduce costs for both Medicare and Medicaid.
+cIn total, seven models operated across six states.
+dAlso called the AHEAD Model. This model was previously called States Advancing All-Payer Health Equity Approaches and Development Model.
+Finally, one of the 24 models included payers as the sole participant type.26 The Medicare Advantage Value-
+Based Insurance Design Model included 62 Medicare Advantage organizations as participants.
+CMS Certified Four Models for Expansion and Applied Lessons 
+Learned; Agency Also Identified Factors That Affect Savings Potential
+Four Certified Models Were Expected to Produce Savings and CMS Applied Lessons 
+Learned from Successful Model Elements
+The primary outcome of model testing is CMS’s decision on whether to certify each model for expansion—
+something CMS has done for four of the 70 models tested as of January 2025. These four models achieved 
+net savings during the testing period. Based on its analysis, which includes the testing period results and other 
+factors, the CMS Chief Actuary certified that, if expanded, the models were expected to reduce federal 
+spending and thereby produce savings.27 CMS also determined these models would maintain or improve 
+patient care without limiting coverage or benefits. CMS has expanded four models through rulemaking or 
+notice. In two cases, it launched a new nationwide version of the tested model within the Innovation Center. In 
+two other cases, CMS incorporated the expanded model into other CMS programs. (See table 4.)
+Table 4: Characteristics of Four Models Certified for Expansion, as of January 2025 
+Model and years tested Delivery or payment approach 
+tested
+Amount saved during testing Implementation after 
+certification (implementation 
+year)
+Pioneer Accountable Care 
+Organization Model (2012 -
+2016)
+Offer experienced accountable 
+care organization providers 
+more responsibility for costs and 
+potential savings 
+$384 million in Medicare 
+savings in first 2 years 
+Elements incorporated into 
+another CMS program —
+Medicare Shared Savings 
+Program (2015)
+Medicare Diabetes Prevention 
+Program a (2012-2015)
+Provide coaching for Medicare 
+beneficiaries with prediabetes, 
+facilitating lifestyle changes and 
+weight loss 
+$2,650 saved per beneficiary 
+during first 15 months of testing
+Expanded model within 
+Innovation Center portfolio as 
+the Medicare Diabetes 
+Prevention Program Expanded 
+Model (2018)
+Repetitive Scheduled Non -
+Emergent Ambulance Transport 
+Model (Prior Authorization) 
+(2014-2020)
+Require prior approval before 
+Medicare pays for repeated, 
+non-emergency ambulance 
+rides (e.g., for dialysis)
+$1 billion in Medicare savings 
+over 5 years 
+Expanded model into other 
+CMS programs — Medicare Fee-
+for-Service Compliance 
+Programs (2020)
+26Other models that included payers in addition to health care provider organizations or states are included in tables 2 and 3 in this 
+report.
+27Models may achieve savings during testing  according to evaluations  but not be expanded. Three other models (Accountable Care 
+Organization Investment Model, Maryland All-Payer Model, and Medicare Care Choices Model) achieved net savings in testing. These 
+models were not expanded for various reasons including limited parti cipation, according to officials. 
+Letter
+Page 17 GAO-26-107953  CMS Innovation Center
+Model and years tested Delivery or payment approach 
+tested
+Amount saved during testing Implementation after 
+certification (implementation 
+year)
+Home Health Value -Based 
+Purchasing Model (2016 -2020)
+Reward home health providers 
+that offer improved care, based 
+on factors such as 
+hospitalizations and quality 
+outcomes
+$949 million in Medicare 
+savings from 2016 -2020
+Expanded model within 
+Innovation Center portfolio as 
+the Expanded Home Health 
+Value-Based Purchasing Model 
+(2022)
+Source: Centers for Medicare & Medicaid Services (CMS).  |  GAO-26-107953
+Note: Three of the four models— Pioneer Accountable Care Organization Model, Medicare Diabetes Prevention Program, and Repetitive Scheduled 
+Non -Emergent Ambulance Transport Model (Prior Authorization)— were voluntary, meaning participants chose to join the m odel. The Home Health 
+Value-Based Purchasing Model was mandatory.
+aThe Medicare Diabetes Prevention Program was part of the Innovation Center’s Health Care Innovation Awards Round One Model, which funded 
+awardees to test payment and delivery approaches.
+In the Innovation Center’s 2024 report to Congress and other sources, CMS has reported on its ability to 
+expand models on the basis of quality improvements. Specifically, CMS has reported that it has not expanded 
+any models primarily based on quality improvements, although it may do so by law if the model does not 
+increase spending. The model testing process assessed quality improvement, as required by statute, but the 
+agency has reported that models designed in the Innovation Center’s first decade focused on decreasing 
+spending— rather than improving quality— as their primary aim.28 Further, CMS has reported that model 
+evaluations typically focused on claims-based quality indicators, which offered information about what services 
+were provided— often targeting a reduction in avoidable services— but which have limited information about 
+any quality improvements related to patient experience. As of 2024, CMS reported developing a new strategy 
+to enhance its ability to expand models primarily on the basis of quality improvements. For example, the 
+agency indicated that the model development and evaluation processes now include earlier identification of 
+quality goals and expanded use of patient-reported quality measures, to inform model evaluation methods.
+In addition to expanding models, the Innovation Center may also identify promising model elements that it may 
+then incorporate into new models for further testing— known as successor models— or incorporate into 
+Medicare programs.
+· Develop successor models. To build upon elements of prior models, the Innovation Center has tested 
+successor models that make progress toward possible expansion through multiple iterations of a concept. 
+As of January 2025, the Innovation Center was testing nine successor models included among the 24 
+active models.29 The Innovation Center continues to develop successor models, including two new 
+models.30 A successor model may represent a direct follow-on to an individual model. For example, the 
+Bundled Payments for Care Improvement Advanced Model refines prior models— the Bundled Payments 
+for Care Improvement Models— with features such as a streamlined model design that ties payment to 
+quality measures. Alternately, a successor model may instead build upon elements of models related by 
+disease category or payment method. For example, the Increasing Organ Transplant Access Model shares 
+a focus on kidney disease with two prior models, Kidney Care Choices and End-Stage Renal Disease 
+2842 U.S.C. § 1315a(b)(4)(A)(i). 
+29The nine successor models include two expanded models within the Innovation Center portfolio. In March 2025, the Innovation 
+Center announced that, following a data -driven review of the model portfolio, it planned to end four of the nine successor models by  the 
+end of 2025. 
+30The Increasing Organ Transplant Access Model began testing on July 1, 2025. The Transforming Episode Accountability Model 
+began testing on January 1, 2026. 
+Letter
+Page 18 GAO-26-107953  CMS Innovation Center
+Treatment Choices and builds upon the prior models’ use of direct financial incentives to increase the 
+number of kidney transplants, but specifically focuses on transplant hospitals.31
+· Incorporate into Medicare programs. Outside of the formal expansion process, CMS has formalized 
+successful model elements as permanent features of Medicare. For example, CMS incorporated an 
+element of the ACO Investment Model— providing rural or small ACOs with up-front payments to invest in 
+infrastructure and staffing— into the Medicare Shared Savings Program in 2023.32 CMS also incorporated 
+an element of Partnership for Patients— providing hospitals with technical assistance in implementing best 
+practices for reducing preventable patient harm and hospital readmissions— into its Quality Improvement 
+Organization program.
+In addition to building upon successful model elements, the Innovation Center produces and distributes 
+knowledge generated from the model testing process. It conducts this outreach through webinars and blog 
+posts targeting audiences such as providers, beneficiary groups, and researchers. For example, the Innovation 
+Center encouraged health care providers to adopt a screening tool for health-related social needs developed in 
+the Accountable Health Communities Model by making it publicly available for providers.
+CMS Has Identified Factors That Affect the Potential for Models to Generate Savings
+The Innovation Center has identified factors that affect the potential for models to generate savings during 
+testing, including incentive payments to participants, selection bias, and participant attrition, which are all 
+factors associated with voluntary models.
+· Incentive payments. Voluntary models often employ generous financial incentive payments to ensure 
+robust participation, but these payments may make it difficult for models to demonstrate net savings during 
+the testing period.
+· Selection bias. Voluntary models make savings difficult to achieve because they often produce selection 
+bias, meaning that participants may only join models in which they anticipate generating financial savings, 
+thus qualifying for shared savings or bonus payments.
+· Participant attrition. Participants in voluntary models may end their participation when facing possible 
+financial losses. In such scenarios, participants often leave before the model has the opportunity to realize 
+savings. (See text box.) 
+31The Kidney Care Choices and End -Stage Renal Disease Treatment Choices models were themselves successor models that built 
+upon the earlier Comprehensive End -Stage Renal Disease Care Model. 
+32The Medicare Shared Savings Program is a voluntary program that encourages groups of doctors, hospitals, and other health car e 
+providers to form ACOs.
+Letter
+Page 19 GAO-26-107953  CMS Innovation Center
+Participant Attrition in Center for Medicare and Medicaid Innovation (Innovation Center) 
+Models
+· Participant attrition varies greatly across models. Specifically, participant attrition 
+among health care provider organizations ranged from zero to 78 percent among the 
+18 models that had completed testing and had final evaluations.
+· Model evaluations reported participants’ stated reasons for leaving these models. 
+Common reasons included
+o financial losses or the prospect of assuming financial risk;
+o administrative burden;
+o organizational changes (such as leadership changes or mergers);
+o shifting participation to another model or value-based payment arrangement, 
+such as accountable care organizations within the Medicare Shared Savings 
+Program; and
+o unable to meet model criteria (e.g., serving a minimum number of Medicare 
+beneficiaries) for participation.
+· In addition, several model evaluations noted that participants that dropped out tended 
+to be smaller in size.
+· According to CMS officials, the agency has tried to address participant attrition through 
+various strategies. For instance, strategies have included implementing more 
+predictable payment mechanisms, streamlining reporting requirements, and offering 
+technical assistance.
+Source: GAO analysis of model evaluations and interviews with Centers for Medicare & Medicaid Services (CMS) officials.  |  GAO-26-107953
+Most models tested have been voluntary. Officials told us voluntary models may be appropriate when new 
+payment approaches are not sufficiently tested to support implementation in a mandatory model or where the 
+Innovation Center has confidence that a voluntary model will not experience selection bias. However, voluntary 
+models may make it more difficult to reduce spending during the testing period because payment approaches 
+must be designed to attract participants. It is also challenging to expand a voluntary model into a mandatory 
+model because of difficulties predicting future savings, according to officials. While the Innovation Center was 
+testing two mandatory models out of 24 active models in January 2025, it plans to increase the proportion of 
+mandatory models in its portfolio, according to officials. For example, the Innovation Center began testing the 
+mandatory Increasing Organ Transplant Access Model in July 2025 and the mandatory Transforming Episode 
+Accountability Model in January 2026. It plans to begin testing the mandatory Ambulatory Specialty Model in 
+January 2027.
+Additionally, the typical model test duration of less than 10 years may make federal savings difficult to achieve. 
+CMS has noted that models that focus on primary care may require longer testing periods to demonstrate 
+savings, as their emphasis on preventive care often takes time to observe changes. Providers participating in 
+Letter
+Page 20 GAO-26-107953  CMS Innovation Center
+primary care models may require additional time to invest in care coordination staffing and health information 
+technology, which could also extend the test duration necessary to reduce spending.
+The Innovation Center Established Goals and Performance Measures 
+with Targets
+The Innovation Center uses selected performance management practices to regularly assess the performance 
+of its efforts to test the effects of new health care delivery and payment approaches, ultimately supporting its 
+mandate to reduce federal health care spending and improve quality of care. These selected performance 
+management practices include establishing long-term and near-term goals, as well as using performance 
+information to assess evidence. 
+Selected Practices for Performance Management
+Performance management practices define what an agency is trying to achieve, determine 
+how well programs are performing, and identify how to improve results. These practices 
+include the following:
+· Establishing long-term goals, which are the desired outcomes for the agency’s program 
+and set a general direction for a program’s efforts. To ensure progress can be assessed, 
+each long-term goal is broken down into one or more near-term goals.
+· Establishing near-term goals, which define the specific results a program is expected to 
+achieve in the near-term. They align with an agency’s long-term goals and include 
+performance measures— quantitative targets and time frames against which to track the 
+progress of agency efforts. Agencies collect evidence, such as performance measures, to 
+measure actual performance toward results.
+· Using performance information, which allows an agency to regularly assess evidence to 
+inform decisions and ensure further progress toward achieving goals.
+Source: GAO.  |  GAO-26-107953
+In May 2025, the Innovation Center established new long-term goals to outline the agency’s vision for its 
+activities (see table 5). These long-term goals will shape the Innovation Center’s portfolio of models, including 
+by guiding the development of new models and by informing any decisions to alter or terminate active models, 
+according to officials. To support these goals, the Innovation Center also identified a foundational principle—
+protecting federal taxpayers— in line with its mandate to reduce federal spending and improve quality of care. 
+Additionally, the Innovation Center developed near-term goals, including performance measures with targets 
+and time frames, to accompany the May 2025 long-term goals. (See table 5.)
+Letter
+Page 21 GAO-26-107953  CMS Innovation Center
+Table 5: Center for Medicare and Medicaid Innovation (Innovation Center) Long-Term Goals and Examples of Related Near -
+Term Goals and Performance Measures, as of December 2025
+Long-Term goals Near-Term goals (examples) Performance measures (examples) 
+Promoting evidence -based prevention - 
+incentivize preventive care and health 
+promotion to help people avoid illness and 
+optimally manage chronic disease.
+Increase weighting of outcomes measures 
+across Centers for Medicare & Medicaid 
+Services’s value-based programs. 
+Share of measures across models that are 
+outcome -based.
+2025 baseline: 52%
+2026 target: 53%
+Empowering people to achieve their health 
+goals - feature tools, information, and 
+processes that better connect people to 
+their health data and empower them to 
+make informed health decisions. 
+Increase the percent of models that 
+promote health data management tools, 
+shared decision -making guides, tracking 
+technology, or artificial intelligence health 
+guides. 
+Share of models that promote health data 
+management tools.
+2025 baseline: 10%
+2026 target: 30%
+Driving choice and competition - test 
+models and features aimed at promoting 
+competition in health care markets.
+Maintain or increase the share of 
+accountable care organizations (ACO) and 
+providers under two -sided risk 
+arrangements and reduce benchmark 
+arbitrage in ACO programs. a,b,c,d
+Percent of original Medicare beneficiaries 
+in a two-sided risk arrangement, including 
+those in Innovation Center models.
+2025 baseline: 40%
+2026 target: 45% 
+Source: Centers for Medicare & Medicaid Services (CMS).  |  GAO-26-107953
+aThis near-term goal also applies to the Innovation Center’s foundational principle— protecting federal taxpayers— that is associated with these long-term 
+goals.
+bAn ACO refers to a group of providers and suppliers of services, such as hospitals and physicians, that work together to coordinate care for the patients 
+they serve.
+cTwo-sided risk arrangements include both upside and downside risk in which participants who deliver quality care at a lower cost may be eligible to 
+receive a payment from CMS, while participants who increase overall spending may owe a payment to CMS.
+dBenchmarks are spending targets against which CMS measures ACO financial performance and, ultimately, eligibility for an additional payment based 
+on shared savings between CMS and the ACO. An ACO may have the opportunity for arbitrage if it is able to achieve favorable performance relative to 
+the benchmark without improving efficiency. For example, ACOs can improve their financial performance by dropping high -spending practices or 
+practices with sicker patients; this would result in lower spending for the ACO without an improvement in efficiency.
+According to officials, the Innovation Center began assessing the outcomes of its activities against these near-
+term goals in the summer of 2025. It plans to use the performance information obtained through these regular 
+assessments internally to track progress against the Innovation Center’s long-term goals, according to officials.
+Agency Comments
+We provided a draft of this report to HHS for review and comment. HHS provided technical comments, which 
+we incorporated as appropriate.
+We are sending copies of this report to the appropriate congressional committees, the Secretary of Health and 
+Human Services, the Administrator of CMS, and other interested parties. In addition, the report will be available 
+at no charge on GAO’s website athttp://www.gao.gov.
+If you or your staff have any questions about this report, please contact me at GordonLV@gao.gov. Contact 
+points for our Offices of Congressional Relations and Media Relations may be found on the last page of this 
+report. Other major contributors to this report are listed in appendix II.
+Sincerely,
+Letter
+Page 22 GAO-26-107953  CMS Innovation Center
+Leslie V. Gordon 
+Director, Health Care
+
+Appendix I: Models Tested by the Center for Medicare and Medicaid Innovation (Innovation 
+Center)
+Page 23 GAO-26-107953  CMS Innovation Center
+Appendix I: Models Tested by the Center for 
+Medicare and Medicaid Innovation (Innovation 
+Center)
+As of January 2025, the Innovation Center was actively testing 24 models and had concluded the testing of 46 
+models. Tables 6 and 7 describe these models, when they were tested, how the Innovation Center categorized 
+them, and obligations for these models.
+Table 6: Active Models Tested by the Center for Medicare and Medicaid Innovation (Innovation Center), as of January 2025
+Model name and description Calendar 
+years tested
+Focus area(s) Obligations, fiscal 
+years 2011–2024 a 
+(in millions)
+Accountable Care Organization (ACO) Primary Care Flex 
+Model – tests the effectiveness of prospective payments and 
+increased funding for primary care in ACOs to impact health 
+outcomes as well as the quality and cost of care. b This model 
+aims to increase the number of low -revenue ACOs in the 
+Medicare Shared Savings Program. 
+2025–2029 · Accountable care models $14
+ACO REACH Model – tests higher and lower risk -sharing 
+options with either primary care or total care capitation for 
+provider-led ACOs managing Medicare fee -for-service 
+beneficiaries. This model offers tracks for ACOs predominantly 
+serving high -need populat ions and newer ACOs. This model 
+was previously called ACO Realizing Equity, Access, and 
+Community Health. 
+2023–2026 · Accountable care models $142 c
+Achieving Healthcare Efficiency Through Accountable Design 
+Model – tests a state-based total cost of care approach 
+whereby participating states will assume responsibility for 
+managing the cost and quality across all payers, including 
+Medicare, Medicaid, an d private coverage. Participating states 
+receive funding and targeted support from CMS to develop and 
+implement strategies to improve quality and reduce costs 
+including hospital global budgets, advanced primary care, 
+multi -payer alignment, and investments in population health 
+activities. Also called the AHEAD Model. This model was 
+previously called States Advancing All -Payer Health Equity 
+Approaches and Development.
+2024–2034 · State & community -based 
+models
+$21
+Bundled Payments for Care Improvement Advanced Model – 
+tests a bundled payment approach where the participating 
+hospitals and practices are responsible for the quality and total 
+cost of care during a clinical episode (from hospital admission 
+or outpatient procedure through 90 days after discharge or the 
+procedure).
+2018–2025 · Disease-specific & 
+episode -based models
+$115
+Cell and Gene Therapy Access Model – tests outcomes-based 
+agreements, negotiated by CMS on behalf of states, for cell 
+and gene therapies. This model initially aims to increase 
+access to treatments for Medicaid beneficiaries living with 
+sickle cell disease.
+2025–tbdd · Prescription drug models $15
+Appendix I: Models Tested by the Center for Medicare and Medicaid Innovation (Innovation 
+Center)
+Page 24 GAO-26-107953  CMS Innovation Center
+Model name and description Calendar 
+years tested
+Focus area(s) Obligations, fiscal 
+years 2011–2024 a 
+(in millions)
+End-Stage Renal Disease Treatment Choices Model – tests 
+payment adjustments for dialysis facilities and use of patient 
+education to encourage greater use of home dialysis and 
+kidney transplants for Medicare beneficiaries with end -stage 
+renal disease. This model has mandatory participation. 
+2021–2025 · Disease-specific & 
+episode -based models
+$31
+Enhancing Oncology Model – tests a bundled payment for 
+oncology practices to take accountability for episodes of care 
+surrounding cancer treatment. This model focuses on oncology 
+care coordination for Medicare fee -for-service beneficiaries with 
+certain com mon cancer types. 
+2023–2030 · Disease-specific & 
+episode -based models
+· Accountable care models
+$21
+Expanded Home Health Value -Based Purchasing Model – tests 
+the effectiveness of tying payments for Medicare -certified home 
+health agencies to the quality of care provided. This model 
+expanded the Home Health Value -Based Purchasing Model to 
+all fifty states, District of Columbia, and the U.S. territories. This 
+model has mandatory participation.
+2022–tbd · Disease-specific & 
+episode -based models
+$58e
+Financial Alignment Initiative for Medicare -Medicaid Enrollees – 
+tests improved financial alignment between Medicare and 
+Medicaid to improve care coordination for beneficiaries in both 
+programs. Participating states may choose (1) the capitated 
+model — in which health plans receive an upfront payment to 
+provide care; or (2) the managed fee -for-service model — in 
+which states are eligible to share in savings from initiatives 
+designed to improve quality and reduce costs for Medicare and 
+Medicaid.
+2013–2025 · State & community -based 
+models
+· Health plan  models
+$292
+Frontier Community Health Integration Project Demonstration – 
+tests strategies to encourage critical access hospitals to 
+provide essential services in rural communities to increase 
+access to care for Medicare beneficiaries living in rural 
+communities. 
+2016–2019, 
+2022–2027
+· Statutory demonstrations 
+and other projects
+n/a
+Guiding an Improved Dementia Experience Model – tests an 
+alternative payment methodology for the delivery of dementia 
+care. This model requires participants to provide 
+comprehensive care coordination and care management to 
+Medicare beneficiaries with demen tia, caregiver education and 
+support, and respite-like services to beneficiaries with dementia 
+in certain situations.
+2024–2032 · Disease-specific & 
+episode -based models
+$27
+Innovation in Behavioral Health Model – tests monthly care 
+management and performance -based payments to behavioral 
+health providers that deliver integrated care across behavioral, 
+physical, and social needs for beneficiaries of Medicare or 
+Medicaid with me ntal health conditions or substance use 
+disorders. 
+2025–2032 · State & community -based 
+models
+$6
+Integrated Care for Kids Model – tests state-designed 
+alternative payment models for children covered by Medicaid 
+and the Children’s Health Insurance Program (CHIP). This 
+model encourages prevention, early identification, and 
+treatment of behavioral and ph ysical health needs.
+2020–2026 · State & community -based 
+models
+$116
+Kidney Care Choices Model – tests risk-based payment 
+arrangements to hold kidney care focused ACOs responsible 
+for the cost and quality of Medicare patients who have late -
+stage chronic kidney disease, end -stage renal disease, or a 
+kidney transplant. 
+2022–2027 · Accountable care models
+· Disease-specific & 
+episode -based models
+$103
+Appendix I: Models Tested by the Center for Medicare and Medicaid Innovation (Innovation 
+Center)
+Page 25 GAO-26-107953  CMS Innovation Center
+Model name and description Calendar 
+years tested
+Focus area(s) Obligations, fiscal 
+years 2011–2024 a 
+(in millions)
+Making Care Primary Model – tests strategies to enable 
+primary care clinicians with varying levels of experience in 
+value-based care to gradually adopt prospective, population -
+based payments while building infrastructure to improve 
+behavioral health and specialty integration and increase access 
+to care.
+2024–2025 · Accountable care models $32
+Maryland Total Cost of Care Model – tests a capitated payment 
+for the total cost of care, which holds the state fully accountable 
+for Medicare beneficiaries in Maryland. This model aims to 
+improve the overall health of Marylanders and reduce 
+avoidable hosp ital readmissions and emergency department 
+visits.
+2019–2025 · State & community -based 
+models
+· Accountable care models
+$74
+Maternal Opioid Misuse Model – tests state-specific 
+approaches to integrating maternal physical and behavioral 
+health with treatment for opioid use disorder. This model aims 
+to improve the quality of care for pregnant and postpartum 
+women and their infants  while also reducing overall associated 
+Medicaid costs.
+2020–2025 · State & community -based 
+models
+· Disease-specific & 
+episode -based models
+$54
+Medicare Advantage Value -Based Insurance Design Model – 
+tests the effectiveness of offering Medicare Advantage plans 
+the flexibility to design and offer reduced cost sharing or 
+additional supplemental benefits to enrollees with chronic 
+conditions with the goal of incentivizing beneficiaries to use 
+high-value services.
+2017–2025 · Health plan models
+· Disease-specific & 
+episode -based models
+$50
+Medicare Diabetes Prevention Program Expanded Model – 
+tests the effectiveness of an evidence -based intervention 
+targeted to prevent the onset of type 2 diabetes among 
+Medicare beneficiaries with an indication of prediabetes. This 
+model expanded the Medicar e Diabetes Prevention Program 
+that was part of the Health Care Innovation Awards Round One 
+model.
+2018–tbd · Disease-specific & 
+episode -based models
+· Health plan models
+$22
+Pennsylvania Rural Health Model – tests use of fixed upfront 
+payments for participating rural hospitals enabling them to 
+redesign care delivery to improve quality of care and meet the 
+needs of their local communities. 
+2019–2026 · State & community -based 
+models
+· Accountable care models
+$29
+Primary Care First Model – tests payment arrangements 
+including upside and downside financial risk to hold participants 
+responsible for care and to support the delivery of advanced 
+primary care. Participants must take a patient -centered 
+approach to care th rough features such as 24 hours a day, 7 
+days a week clinician access.
+2021–2025 · Accountable care models $149
+Rural Community Hospital Demonstration – tests the provision 
+of higher Medicare payments for covered inpatient hospital 
+services to support participating small rural community 
+hospitals— that are too large to be critical access hospitals — to 
+meet the needs o f people with Medicare.
+2004–2028 · Statutory demonstrations 
+and other projects
+n/a
+Appendix I: Models Tested by the Center for Medicare and Medicaid Innovation (Innovation 
+Center)
+Page 26 GAO-26-107953  CMS Innovation Center
+Model name and description Calendar 
+years tested
+Focus area(s) Obligations, fiscal 
+years 2011–2024 a 
+(in millions)
+Transforming Maternal Health Model – tests state strategies to 
+improve health outcomes, safety, and overall patient 
+experiences for mothers and their newborns in Medicaid and 
+CHIP, while also reducing total program expenditures. This 
+model provides technic al assistance support to state Medicaid 
+agencies and providers, including those in rural and other high -
+need areas, and financial incentives to participating state 
+Medicaid agencies. 
+2025–2034 · State & community -based 
+models
+$8
+Vermont All-Payer ACO Model – tests whether an ACO aligned 
+across Medicare, Medicaid, and commercial insurance will 
+incentivize broad delivery system transformation to reduce 
+statewide spending and improve population health outcomes. 
+The model establishes state and ACO-level accountability for 
+health outcomes. 
+2017–2025 · State & community -based 
+models
+· Accountable care models
+$36
+Legend: n/a = not applicable; tbd = to be determined
+Source: Centers for Medicare & Medicaid Services (CMS) documentation.  |  GAO 26-107953
+aObligated amounts reflect commitments to participants in the testing of models, such as health care providers of services, st ates, conveners, and 
+others. These commitments may include care management fees and cooperative agreement awards and are paid through Innovation Center funds as 
+appropriated under section 1115A of the Social Security Act. Some statutory models are not funded through section 1115A oblig ations.
+bAn ACO refers to a group of providers and suppliers of services, such as hospitals and physicians, that work together to coordinate care for the patients 
+they serve.
+cAmount includes obligations for both the ACO REACH Model and its predecessor model (Global and Professional Direct Contractin g Model).
+dThis model started between January 1, 2025, and January 1, 2026, and will be tested for up to approximately 11 years, dependi ng on the state.
+eAmount includes obligations for both the Expanded Home Health Value-Based Purchasing Model and its predecessor model (Home Health Value -
+Based Purchasing Model).
+Appendix I: Models Tested by the Center for Medicare and Medicaid Innovation (Innovation 
+Center)
+Page 27 GAO-26-107953  CMS Innovation Center
+Table 7: Completed Models Tested by the Center for Medicare and Medicaid Innovation (Innovation Center), 2011 –2024
+Model name and description Calendar years tested Focus area(s) Obligations, fiscal years 
+2011–2024 a (in millions)
+Accountable Care Organization 
+(ACO) Investment Model – 
+tested the effectiveness of 
+prepaid shared savings in 
+encouraging new Medicare 
+Shared Savings Program ACOs 
+to form in rural and underserved 
+areas and in encouraging 
+current Medicare Shared 
+Savings Prog ram ACOs to 
+transition to arrangements with 
+greater financial risk. b
+2015–2018 · Accountable care models $110
+ACO Track 1 Plus Model – 
+tested the effectiveness of 
+offering an advanced alternative 
+payment model with a more 
+limited risk track than what was 
+available in the Medicare 
+Shared Savings Program to 
+encourage more Medicare 
+Shared Savings Program 
+ACOs, especi ally ACOs 
+composed solely of small 
+physician practices and small 
+rural hospitals, to take on 
+financial risk.
+2018–2021 · Accountable care models $30
+Accountable Health 
+Communities Model – tested the 
+effectiveness of systematically 
+identifying and addressing the 
+health-related social needs of 
+beneficiaries at reducing health 
+care costs and utilization among 
+Medicare and Medicaid 
+beneficiaries. 
+2017–2023 · State & community -based 
+models
+$148
+Advance Payment ACO Model 
+– tested the effectiveness of 
+providing physician -based and 
+rural Medicare Shared Savings 
+Program ACOs with upfront and 
+monthly payments that they 
+could use to invest in care 
+coordination activities
+2012–2015 · Accountable care models $72
+Appendix I: Models Tested by the Center for Medicare and Medicaid Innovation (Innovation 
+Center)
+Page 28 GAO-26-107953  CMS Innovation Center
+Model name and description Calendar years tested Focus area(s) Obligations, fiscal years 
+2011–2024 a (in millions)
+Bundled Payments for Care 
+Improvement Model 1, 
+Retrospective Acute Care 
+Hospital Stay Only – tested the 
+effectiveness of a payment 
+arrangement for inpatient 
+hospital stays of Medicare 
+beneficiaries. In this model, 
+hospitals received discounted 
+payments and  physicians were 
+paid their standard rates. 
+Hospitals were held financially 
+responsible for the cost of all 
+Medicare services provided 30 
+days after discharge that 
+exceeded historical trends.
+2013–2016 · Disease-specific & episode-
+based models
+$105 c
+Bundled Payments for Care 
+Improvement Model 2, 
+Retrospective Acute & Post-
+Acute Care Episode – tested 
+the effectiveness of a payment 
+arrangement in which acute 
+care hospitals and physician 
+group practices received 
+additional payments or made 
+recoupment pay ments if the 
+total costs for Medicare services 
+provided during an inpatient 
+hospital stay and up to 90 days 
+after discharge were over or 
+under a predetermined target 
+price.
+2013–2018 · Disease-specific & episode-
+based models
+$105 c
+Bundled Payments for Care 
+Improvement Model 3, 
+Retrospective Post-Acute Care 
+Only – tested the effectiveness 
+of a payment arrangement in 
+which post-acute care 
+providers— such as a skilled 
+nursing facility, inpatient 
+rehabilitation facility, long -term 
+care hospital or home health 
+agency— or physician group 
+practices received payments or 
+made recoupment payments if 
+total costs for certain Medicare 
+services were over or under a 
+predetermined target price. 
+These services were those 
+provided during a clinical 
+episode beginning with post -
+acute care services and 
+included all services up to 90 
+days after the hospital 
+discharge that preceded the 
+post-acute care services.
+2013–2018 · Disease-specific & episode-
+based models
+$105 c
+Appendix I: Models Tested by the Center for Medicare and Medicaid Innovation (Innovation 
+Center)
+Page 29 GAO-26-107953  CMS Innovation Center
+Model name and description Calendar years tested Focus area(s) Obligations, fiscal years 
+2011–2024 a (in millions)
+Bundled Payments for Care 
+Improvement Model 4, 
+Prospective Acute Care 
+Hospital Stay Only – tested the 
+effectiveness of making a 
+single, predetermined payment 
+in advance for all Medicare 
+services furnished by a hospital, 
+physicians, and other 
+practitioners during an inpatient 
+stay in an acute care hospital. 
+Physicians and other 
+practitioners submitted “no-pay” 
+claims to Medicare and were 
+paid by the hospital out of the 
+advance bundled payment.
+2013–2018 · Disease-specific & episode-
+based models
+$105 c
+Community -Based Care 
+Transitions Program – tested 
+approaches to reduce 
+unnecessary hospital 
+readmissions by improving the 
+transition of Medicare 
+beneficiaries from the inpatient 
+hospital setting to home or to 
+other care settings. 
+2012–2017 · Statutory demonstrations 
+and other projects
+· State & community -based 
+models
+n/a
+Community Health Access and 
+Rural Transformation Model – 
+tested seed funding, payment 
+structures, operational and 
+regulatory flexibilities, and 
+technical and learning support 
+to empower rural communities 
+to develop a high -quality care 
+delivery system.
+2021–2023 · State & community -based 
+models
+$9
+Comprehensive Care for Joint 
+Replacement Model – tested 
+the effectiveness of a payment 
+arrangement in which acute 
+care hospitals received 
+additional payments or made 
+recoupment payments if the 
+total costs for certain Medicare 
+services were over or under a 
+predetermined target price. 
+These services were those 
+provided during a clinical 
+episode that includes an 
+inpatient hospital stay related to 
+a hip or knee replacement 
+surgery and all services up to 
+90 days after discharge.
+2016–2024 · Disease-specific & episode-
+based models
+$79
+Appendix I: Models Tested by the Center for Medicare and Medicaid Innovation (Innovation 
+Center)
+Page 30 GAO-26-107953  CMS Innovation Center
+Model name and description Calendar years tested Focus area(s) Obligations, fiscal years 
+2011–2024 a (in millions)
+Comprehensive End -Stage 
+Renal Disease Care Model – 
+tested the effectiveness of an 
+ACO delivery and payment 
+approach for providing care to 
+end-stage renal disease 
+beneficiaries.
+2015–2021 · Accountable care models
+· Disease-specific & episode-
+based models
+$111
+Comprehensive Primary Care 
+Initiative – tested the impact of 
+enhanced primary care 
+services, including care 
+coordination, prevention, and 
+24-hour access. The initiative 
+included multiple payers, and 
+participating providers received 
+a monthly care managemen t fee 
+and an opportunity to share in 
+any net savings to the Medicare 
+program.
+2013–2016 · Accountable care models $390
+Comprehensive Primary Care 
+Plus Model – tested the impact 
+of enhanced primary care 
+services for Medicare and 
+Medicaid beneficiaries, 
+including care coordination, 
+prevention, and 24-hour access. 
+The initiative included multiple 
+payers, and participating 
+providers received a monthly 
+care management fee, 
+performance -based incentive 
+payments, and payments under 
+the Medicare physician fee 
+schedule.
+2017–2021 · Accountable care models $492
+Emergency Triage, Treat, and 
+Transport Model – tested 
+approaches that provided 
+greater ambulance care team 
+flexibility to transport Medicare 
+beneficiaries to alternative 
+treatment sites following a 911 
+call. This model aimed to lower 
+costs through a reduction in 
+avoidable transports to an 
+emergency department, and 
+avoidable hospitalizations 
+following those transports.
+2021–2023 · Disease-specific & episode-
+based models
+$32
+Appendix I: Models Tested by the Center for Medicare and Medicaid Innovation (Innovation 
+Center)
+Page 31 GAO-26-107953  CMS Innovation Center
+Model name and description Calendar years tested Focus area(s) Obligations, fiscal years 
+2011–2024 a (in millions)
+Federally Qualified Health 
+Center Advanced Primary Care 
+Practice Demonstration – tested 
+the effectiveness of paying a 
+monthly care management fee 
+for each eligible Medicare 
+beneficiary receiving primary 
+care services from federally 
+qualified health centers  to 
+support team -led care, 
+improved access and enhanced 
+primary care services. d
+2011–2014 · Statutory demonstrations 
+and other projects
+· Accountable care models
+$69
+Global and Professional Direct 
+Contracting Model – tested 
+alternative approaches to risk -
+sharing arrangements and 
+payments — with higher and 
+lower risk-sharing options — for 
+ACOs managing Medicare fee -
+for-service beneficiaries. 
+2021–2022 · Accountable care models $142 e
+Graduate Nurse Education 
+Demonstration – tested the 
+effect of offsetting the costs of 
+clinical training for advanced 
+practice registered nurses on 
+the availability of graduate 
+nursing students enrolled in 
+training programs. 
+2012–2018 · Statutory demonstrations 
+and other projects
+n/a
+Health Care Innovation Awards 
+Round One – provided funding 
+to awardees, including 
+providers, local government, 
+and public -private partnerships, 
+to test new care delivery and 
+payment models for 
+beneficiaries enrolled in 
+Medicare, Medicaid, or the 
+Children’s Health Insurance 
+Program (CHIP).
+2012–2015 · Statutory demonstrations 
+and other projects
+$1,290 f
+Health Care Innovation Awards 
+Round Two – provided funding 
+to awardees to test new care 
+delivery and payment models 
+for beneficiaries enrolled in 
+Medicare, Medicaid, or CHIP.
+2014–2017 · Statutory demonstrations 
+and other projects
+$1,290 f
+Home Health Value -Based 
+Purchasing Model – tested the 
+effectiveness of tying payments 
+for Medicare -certified home 
+health agencies to the quality of 
+care provided.
+2016–2020 · Disease-specific & episode-
+based models
+$58g
+Appendix I: Models Tested by the Center for Medicare and Medicaid Innovation (Innovation 
+Center)
+Page 32 GAO-26-107953  CMS Innovation Center
+Model name and description Calendar years tested Focus area(s) Obligations, fiscal years 
+2011–2024 a (in millions)
+Hyperbaric Oxygen Therapy 
+Model (Prior Authorization) – 
+tested the effectiveness of prior 
+authorization of non -emergent 
+hyperbaric oxygen therapy.
+2015–2018 · Statutory demonstrations 
+and other projects
+$5
+Independence at Home 
+Demonstration – tested the 
+effectiveness of delivering an 
+expanded scope of primary care 
+services in a home setting on 
+improving care for Medicare 
+beneficiaries with multiple 
+chronic conditions.
+2012–2023 · Statutory demonstrations 
+and other projects
+n/a
+Initiative to Reduce Avoidable 
+Hospitalizations Among Nursing 
+Facility Residents: Phase One – 
+tested effectiveness of 
+partnerships between 
+independent organizations and 
+long-term care facilities to 
+enhance onsite services to 
+reduce hospitalizations for 
+Medicare-Medicaid 
+beneficiaries.
+2012–2016 · Disease-specific & episode-
+based models
+$239 h
+Initiative to Reduce Avoidable 
+Hospitalizations Among Nursing 
+Facility Residents: Phase Two – 
+tested whether a new payment 
+model for a new set of long-term 
+care facilities, as well as for 
+long-term care facilities that 
+participated in the initial phase 
+of the model and continued to 
+offer enhanced onsite services, 
+would improve quality of care by 
+reducing avoidable 
+hospitalizations, while also 
+lowering combined Medicare 
+and Medicaid spending.
+2016–2020 · Disease-specific & episode-
+based models
+$239 h
+Maryland All -Payer Model – 
+tested the effectiveness of an 
+all-payer system for hospital 
+payment on quality of care and 
+cost.
+2014–2018 · State & community -based 
+models
+· Accountable care models
+$21
+Medicaid Emergency 
+Psychiatric Demonstration – 
+tested whether reimbursing 
+private psychiatric hospitals for 
+certain psychiatric services for 
+which Medicaid reimbursement 
+has generally been unavailable 
+would support higher quality 
+care at a lower total cost.
+2012–2015 · Statutory demonstrations 
+and other projects
+· Health plan models
+n/a
+Appendix I: Models Tested by the Center for Medicare and Medicaid Innovation (Innovation 
+Center)
+Page 33 GAO-26-107953  CMS Innovation Center
+Model name and description Calendar years tested Focus area(s) Obligations, fiscal years 
+2011–2024 a (in millions)
+Medicaid Incentives for the 
+Prevention of Chronic Diseases 
+Model – tested states providing 
+incentives for Medicaid 
+beneficiaries to participate in 
+prevention programs and 
+demonstrate changes in health 
+risks and outcomes.
+2011–2015 · Statutory demonstrations 
+and other projects
+n/a
+Medicare Care Choices Model – 
+tested the effectiveness of 
+providing Medicare beneficiaries 
+the option to receive hospice -
+like support services from 
+certain hospice providers while 
+concurrently receiving curative 
+services.
+2016–2021 · Disease-specific & episode-
+based models
+$27
+Medicare Imaging 
+Demonstration – tested whether 
+the use of decision support 
+systems could improve quality 
+of care by promoting 
+appropriate ordering of certain 
+advanced imaging services.
+2011–2013 · Statutory demonstrations 
+and other projects 
+n/a
+Medicare Intravenous Immune 
+Globulin Demonstration – tested 
+the effectiveness of providing 
+payment and items for services 
+needed for in -home 
+administration of intravenous 
+immune globulin for the 
+treatment of primary 
+immunodeficiency disorders.
+2014–2023 · Statutory demonstrations 
+and other projects 
+n/a
+Million Hearts®: Cardiovascular 
+Disease Risk Reduction Model 
+– tested the effectiveness of 
+providing financial incentives for 
+health care providers to reduce 
+the patients’ risk of heart attack 
+and stroke on outcomes and 
+accountability for costs among 
+Medicare beneficiaries.
+2017–2021 · Disease-specific & episode-
+based models
+$50
+Multi-Payer Advanced Primary 
+Care Practice Demonstration – 
+tested payment of care 
+management fees to cover 
+advanced primary care services 
+provided by participants 
+including care coordination and 
+improved access. Participating 
+states also included 
+mechanism s to offer 
+participating practices 
+community support and linkages 
+to states health promotion 
+initiatives.
+2011–2016 · Statutory demonstrations 
+and other projects
+· Accountable care models
+n/a
+Appendix I: Models Tested by the Center for Medicare and Medicaid Innovation (Innovation 
+Center)
+Page 34 GAO-26-107953  CMS Innovation Center
+Model name and description Calendar years tested Focus area(s) Obligations, fiscal years 
+2011–2024 a (in millions)
+Next Generation ACO Model – 
+tested the effect of strong 
+financial incentives for ACOs, 
+coupled with tools to support 
+better patient engagement and 
+care management. Participating 
+ACOs assumed higher levels of 
+risk and reward than in other 
+Centers for Medica re & 
+Medicaid Services (CMS) ACO 
+initiatives.
+2016–2021 · Accountable care models $131
+Oncology Care Model – tested 
+the effectiveness of a payment 
+arrangement in which providers 
+received a monthly payment for 
+each Medicare beneficiary 
+during a 6-month episode of 
+care following the administration 
+of chemotherapy and could earn 
+additional perf ormance -based 
+payments if the total costs for 
+Medicare services provided 
+during the episode were under a 
+predetermined target price. 
+Starting in 2017, practices 
+received higher performance -
+based payments by taking on 
+risk for costs that exceed the 
+target price.
+2016–2022 · Disease-specific & episode-
+based models
+$134
+Part D Enhanced Medication 
+Therapy Management Model – 
+tested the effectiveness of 
+providing certain Medicare 
+prescription drug plans with the 
+regulatory flexibility to design 
+and implement innovative 
+medication therapy 
+management programs. The 
+goal of the model was to 
+optimize medication use.
+2017–2021 · Health plan models
+· Prescription drug models
+$38
+Part D Payment Modernization 
+Model – tested the impact of 
+changes to prescription drug 
+plan benefit design and 
+payment structure on overall 
+Medicare Part D expenditures 
+and beneficiary out -of-pocket 
+costs.
+2020–2021 · Prescription drug models $3
+Part D Senior Savings Model – 
+tested the effect of enhanced 
+alternative Part D plan options 
+that offered lower out -of-pocket 
+costs for insulin as 
+supplemental benefits.
+2021–2023 · Prescription drug models 
+· Health plan models
+$9
+Appendix I: Models Tested by the Center for Medicare and Medicaid Innovation (Innovation 
+Center)
+Page 35 GAO-26-107953  CMS Innovation Center
+Model name and description Calendar years tested Focus area(s) Obligations, fiscal years 
+2011–2024 a (in millions)
+Partnership for Patients – tested 
+whether a coordinated, goal -
+directed, national collaborative 
+approach for systematically 
+spreading known best practices 
+in patient safety could make 
+acute care hospitals safer, more 
+reliable, and less costly by 
+reducing ho spital acquired 
+conditions and readmissions.
+2011–2016 · Disease-specific & episode-
+based models
+$561
+Pioneer ACO Model – tested 
+the effectiveness of allowing 
+experienced ACOs to take on 
+greater financial risk and reward 
+than ACOs that participated in 
+the Medicare Shared Savings 
+Program. Participants that met 
+certain levels of savings in the 
+first two years were eligible to 
+receive prospective per-
+beneficiary  per-month 
+payments. 
+2012–2016 · Accountable care models $109
+Repetitive Scheduled Non -
+Emergent Ambulance Transport 
+Model (Prior Authorization) – 
+tested the effectiveness of prior 
+authorization for repetitive 
+scheduled non -emergent 
+ambulance transport.
+2014–2020 · Statutory demonstrations 
+and other projects
+$38
+State Innovation Models 
+Initiative: Round One – tested 
+the effectiveness of financial, 
+technical, and other support to 
+states that were either prepared 
+to test or were committed to 
+design and test new payment 
+and service delivery models for 
+beneficiaries e nrolled in 
+Medicare, Medicaid, or CHIP.
+2013–2016 · State & community -based 
+models
+$984i 
+State Innovation Models 
+Initiative: Round Two – tested 
+the effectiveness of financial, 
+technical, and other support to 
+states that were either prepared 
+to test or were committed to 
+designing and testing new 
+payment and service delivery 
+models for beneficia ries 
+enrolled in Medicare, Medicaid, 
+or CHIP.
+2015–2019 · State & community -based 
+models
+$984 i
+Appendix I: Models Tested by the Center for Medicare and Medicaid Innovation (Innovation 
+Center)
+Page 36 GAO-26-107953  CMS Innovation Center
+Model name and description Calendar years tested Focus area(s) Obligations, fiscal years 
+2011–2024 a (in millions)
+Strong Start for Mothers and 
+Newborns Initiative: Enhanced 
+Prenatal Care Models – tested 
+three approaches to enhance 
+care delivery and address the 
+medical, behavioral, and 
+psychosocial factors that may 
+be present during pregnancy 
+and contribute to preterm -
+related poor birth outcomes.
+2013–2017 · Health plan models $82
+Treatment of Certain Complex 
+Diagnostic Lab Tests 
+Demonstration  – tested the 
+effect of making separate 
+payments for certain complex 
+diagnostic laboratory tests on 
+access to care, quality of care, 
+health outcomes, and 
+expenditures.
+2012–2013 · Statutory demonstrations 
+and other projects
+n/a
+Value in Opioid Use Disorder 
+Treatment Demonstration – 
+tested payments for care 
+management and performance -
+based incentive payments for 
+opioid use disorder treatment 
+services aimed at increasing 
+access to these services.
+2021–2024 · Statutory demonstrations 
+and other projects
+n/a
+Legend: n/a = not applicable; tbd = to be determined
+Source: CMS.  |  GAO-26-107953
+aObligated amounts reflect commitments to participants in the testing of models, such as health care providers of services, st ates, conveners, and 
+others. These commitments may include care management fees and cooperative agreement awards and were paid through Innovation Center funds as 
+appropriated under section 1115A of the Social Security Act. Some statutory models were not funded through section 1115A obli gations.
+bAn ACO refers to a group of providers and suppliers of services, such as hospitals and physicians, that work together to coordinate care for the patients 
+they serve. The Medicare Shared Savings Program is a voluntary program that encourages groups of doctors, hospitals, and other health care providers 
+to form ACOs.
+cAmount includes obligations for all four Bundled Payments for Care Improvement models.
+dFederally qualified health centers provide comprehensive community-based primary and preventive care services in medically underserved areas or to 
+medically underserved populations.
+eAmount includes obligations for both the Global and Professional Direct Contracting Model and its successor ACO REACH Model.
+fAmount includes obligations for both rounds one and two of the Health Care Innovation Awards models.
+gAmount includes obligations for both the Home Health Value -Based Purchasing Model and its successor Expanded Home Health Value -Based 
+Purchasing Model.
+hAmount includes obligations for both phases of the Initiative to Reduce Avoidable Hospitalizations Among Nursing Facility Res idents models.
+iAmount includes obligations for both rounds one and two of the State Innovation Models Initiative.
+Appendix II: GAO Contact and Staff Acknowledgments
+Page 37 GAO-26-107953  CMS Innovation Center
+Appendix II: GAO Contact and Staff 
+Acknowledgments
+GAO Contact
+Leslie V. Gordon, GordonLV@gao.gov
+Acknowledgments
+In addition to the contact named above, Greg Giusto (Assistant Director), Kelly Krinn (Analyst-in-Charge), Leila 
+Braun, Laura Elsberg, Ariel Landa-Seiersen, and Roxanna Sun made key contributions to this report.
+
+Appendix II: GAO Contact and Staff Acknowledgments
+GAO’s Mission
+The Government Accountability Of fice, the audit, evaluation, and investigative arm of  Congress, exists to support 
+Congress in meeting its constitutional responsibilities and to help improve the perf ormance and accountability of  the 
+federal government f or the American people. GAO examines the use of  public f unds; evaluates f ederal programs and 
+policies; and provides analyses, recommendations, and other assistance to help Congress make inf ormed oversight, 
+policy, and f unding decisions. GAO’s commitment to goo d government is ref lected in its core values of  accountability, 
+integrity, and reliability.
+Obtaining Copies of GAO Reports and T estimony
+The fastest and easiest way to obtain copies of  GAO documents at no cost is through our website. Each weekday 
+afternoon, GAO posts on its website newly released reports, testimony, and correspondence. You can also subscribe to 
+GAO’s email updates to receive notif ication of  newly posted products.
+Order by Phone
+The price of  each GAO publication ref lects GAO’s actual cost of  production and distribution and depends on the number 
+of  pages in the publication and whether the publication is printed in color or black and white. Pricing and ordering 
+information is posted  on GAO’s website, https://www.gao.gov/ordering.htm . 
+Place orders by calling (202) 512 -6000, toll f ree (866) 801-7077, or  
+TDD (202) 512-2537.
+Orders may be paid f or using American Express, Discover Card, MasterCard, Visa, check, or money order. Call f or 
+additional inf ormation.
+Connect with GAO
+Connect with GAO on X, LinkedIn, Instagram, and YouTube. 
+Subscribe to our Email Updates . Listen to our Podcasts . 
+Visit GAO on the web at https://www.gao.gov .
+To Report Fraud, Waste, and Abuse in Federal Programs
+Contact FraudNet:
+Website: https://www.gao.gov/about/what -gao-does/f raudnet
+Automated answering system: (800) 424-5454
+Media Relations
+Sarah Kaczmarek, Managing Director, Media@gao.gov
+Congressional Relations
+David A. Powner, Acting Managing Director, CongRel@gao.gov
+Appendix II: GAO Contact and Staff Acknowledgments
+General Inquiries
+https://www.gao.gov/about/contact -us

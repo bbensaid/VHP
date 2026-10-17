@@ -1,0 +1,500 @@
+=== PAGE 1
+1
+Act 68 Update on Hospital 
+Reference-Based Pricing 
+and Global Budgets
+=== PAGE 2
+2
+Act 68 – GMCB RBP Update
+On or before February 15, 2026, the Green Mountain Care Board shall 
+provide an update to the House Committee on Health Care and the 
+Senate Committee on Health and Welfare regarding the Board’s 
+implementation of this act, including the status of its efforts to establish 
+methodologies for and begin implementation of reference-based pricing 
+and development of global hospital budgets, and the effects of these 
+efforts and activities on increasing access to care, improving the quality 
+of care, and reducing the cost of care in Vermont.
+=== PAGE 3
+3
+Agenda
+1. Requirements of Act 68
+2. Hospital Reference Based Pricing
+3. Hospital Global Budgets
+=== PAGE 4
+4
+Act 68 (2025)
+Establish 
+reference-based 
+pricing (RBP) for 
+hospital services 
+by FY27
+Review and 
+monitor RBPs 
+annually as 
+part of GMCB's 
+hospital budget 
+review process
+Identify 
+conditions for 
+modifications or 
+termination of 
+RBPs
+Expand to non-
+hospital services 
+(e.g. primary care)
+=== PAGE 5
+5
+Our Directive
+The Vermont legislature passed Act 68 (2025):
+Directs GMCB to implement hospital reference-based pricing 
+(RBP) through its provider rate setting authority, as soon as 
+practicable, but not later than hospital FY27.
+=== PAGE 6
+6
+The Problem: VT Hospital Prices
+100%
+136%
+289%
+0%
+50%
+100%
+150%
+200%
+250%
+300%
+350%
+Medicare Breakeven Commercial
+Payment Levels (2023)
+Payment levels
+Figure 1: Payment levels received by Vermont hospitals, reflecting that hospitals charge commercial 
+payers roughly 250%-300% of Medicare rates on average for inpatient and outpatient services. It 
+should be noted that the breakeven point is approximately 136%.
+• In VT, hospitals charge commercial payers 
+~
+250% - 300% of Medicare rates on 
+average, far above what is necessary to 
+cover reasonable costs.
+• Rising hospital prices translate directly into 
+p
+remium increases and higher out of 
+pocket costs.
+• Prices vary widely w ithin and across 
+Vermont hospitals for the same service, 
+with no relationship to quality.
+*Aggregated payment levels derived from the NASHP Hospital Cost Tool and the GMCB x 
+HMA Reference-Based Pricing Report. 
+**Medicare rates are constructed to represent an approximate “break-even” payment rate 
+for efficient hospitals.
+***Breakeven, as shown above, represents the reimbursement rate commercial payers 
+need to pay a hospital to cover all its costs, expressed as a multiple of the Medicare rate to 
+show how much more commercial payers need to pay to ensure a hospital breaks even. 
+(NASHP Hospital Cost Tool)
+=== PAGE 7
+7
+Commercial prices vary by Hospital as a % of Medicare
+Outpatient Services
+Figure 2: Horizontal bar chart showing commercial outpatient payments as a percentage of 
+Medicare by hospital, ranging from about 279% to 697%, with five hospitals falling above the 
+average reference line.
+Inpatient Services
+Figure 3: Horizontal bar chart showing commercial inpatient payments as a percentage of Medicare by 
+hospital, ranging from approximately 158% to 941% of Medicare. Most hospitals cluster between 230% 
+and 396%, with two hospitals falling above the average reference line. Mt Ascutney and UVM Health are 
+the only facilities offering specialized inpatient rehab in VT.
+Note: These data are snapshots from GMCB’s forthcoming hospital price transparency tool based on 2024 claims data. Medicare defined as base price before any wage, geographic, policy, or 
+patient-specific adjustment. Some price variation year to year for small hospitals may be disproportionally affected by fluctuations in service mix for the particular year.
+=== PAGE 8
+8
+Prices Vary Within Hospitals & Across Service Lines
+Figure 4: Horizontal bar chart comparing commercial spending relative to Medicare for 
+inpatient mental health services and outpatient imaging across five Vermont hospitals in 2024. 
+For every hospital, commercial spending is higher for outpatient imaging, ranging from about 
+715% to 944% of Medicare, compared with 123% to 409% for inpatient mental health services.
+• Prices for inpatient and outpatient services 
+v
+ary wildly relative to Medicare across 
+hospitals and service lines, with 
+important considerations for selecting an 
+RBP threshold.
+• For example, outpatient imaging can 
+r
+each up to 7–9× Medicare compared with 
+1–4× Medicare for inpatient mental health 
+across hospitals.
+=== PAGE 9
+9
+The Solution: Fair Prices Vermonters Can Afford
+• Average VT commercial 
+paym
+ents ~289% of Medicare.
+• At 200% of Medicare, VSEA + 
+V
+EHI could have saved ~$400M 
+(2018 – 2023), including $79M in 
+2022 alone.
+• Ample room to rationalize prices 
+w
+ithout harming access or quality. 
+$107.5M
+$48M
+$429M
+Oregon (State 
+Employee Plan)
+Montana (State 
+Employee Plan)
+Maryland (All-
+Payer Global 
+Budget
+=== PAGE 10
+10
+What Does RBP Do?
+ Reduces hospital leverage to demand excessive prices
+ Narrows unjustified price variation across hospitals
+ Protects patient affordability
+ Limits monopolistic pricing power
+ Incentives operational efficiencies over price increases
+ Acts as a necessary input for systemic payment and delivery reform
+=== PAGE 11
+11
+What Does RBP Not Do?
+ Does not set prices across the system
+ Does not alone control total hospital spending (volume)
+ Does not alone guarantee savings, nor that they are passed to 
+consum
+ers (without explicit targets & oversight)
+ Does not inherently restructure incentives around prevention or 
+care del
+ivery
+ Does not guarantee hospital efficiency/sustainability or quality 
+perf
+ormance
+=== PAGE 12
+12
+Cross-State Differences in Design
+Program Distinct Features
+Vermont Act 68 Mandatory statewide reference-based maximum allowable payment rates applied through 
+GMCB’s rate-setting authority for all Vermont hospitals; methodology set by rule in 2027, 
+effective HFY28.
+Oregon (2019) State employee plan only; 200% in-network / 185% out-of-network cap; exemptions for 
+rural/CAHs; savings >$100M in first 27 months.
+Montana (2016) State employee plan; direct contracting at % Medicare; initial success ($48M savings) but 
+politically fragile without statutory mandate.
+Washington (2021) Public option (“Cascade Care”); capped hospital reimbursement at 160% of Medicare for 
+participating networks; voluntary participation; expanding to state employee plans.
+Maryland Global 
+Budgets (2014 – 
+Present)
+All-payer system; only provider-side rate-setting model; hospitals receive fixed annual revenue 
+based on standardized prices and volume expectations; includes Medicare waiver; strong 
+incentives to manage population health and quality.
+Table 1: Table titled “Cross-State Differences in Design” comparing hospital payment reforms across states. Rows summarize Vermont Act 68, Oregon, Montana, Washington, and Maryland, highlighting differences in 
+scope, use of reference-based pricing or rate caps tied to Medicare, participation requirements, and reported outcomes such as s avings or global budget structures.
+=== PAGE 13
+13
+Phased Approach
+Phase I – Differential Hospital Price Growth (Hospital Budget 
+Guidance) 
+Policy Scan 
+(Sept-Oct 
+2025)
+(Dec 2025)
+Develop Policy 
+Options & 
+Model Impact
+Public 
+Comment
+(Jan 2026)
+(Mar 2026)
+FY27 HBR 
+Guidance
+Phase II – Hospital Referenced Based Pricing (Rate Setting) 
+Discovery & Design
+(Aug ‘25- Aug ’26)
+(Aug ’26 – Dec ‘26) 
+Model Baseline, Policy 
+Options & Data 
+Validation
+Report to Legislature on 
+Implementation Update
+(Feb ’26)
+Policy & Regulatory 
+Development
+(Jan ‘26– Jan ‘27)
+FY28 Rate Setting 
+Guidance & HBR 
+Guidance
+(Mar ’27)
+Timelines are Contingent Upon: 
+1. Expedient, smooth contracting 
+processes, and 
+2. No major challenges in developing data 
+infrastructure.
+Figure 5: Horizontal timeline labeled “Phased Approach,” showing 
+Phase I milestones from 2025 to 2026 (policy scan, public comment, 
+and guidance development) and Phase II milestones from 2025 to 
+2027 (discovery and design, modeling and validation, legislative 
+update, and rate-setting guidance).
+=== PAGE 14
+14
+Rationale for Phased Approach
+• Policy
+• Balances early affordability gains with health system stability
+• Statewide approach reflecting varying community needs and hospital role 
+i
+n the system 
+• Borrowing best practices, localizing solutions, consider stakeholder input
+• Ensure adaptable to evolving environments, avoid unnecessary disruption, 
+ens
+ure long-term sustainability
+• Operational
+• Rule-m aking and stakeholder engagement for rate- setting
+• Competitive procurement (Bulletin 3.5)
+=== PAGE 15
+15
+GMCB work to date to rationalize hospital 
+prices
+Though rate setting is still getting off the ground, GMCB has made 
+significant efforts through regulatory action to reduce hospital prices 
+relative to national trends:
+Table 2: Table showing FY26 commercial revenue reductions totaling -$230.65 million, including -$104.30 million 
+from Act 55 outpatient drug cap, -$94.58 million from hospital budget orders, and -$31.76 million from hospital 
+budget enforcement.
+=== PAGE 16
+16
+Preview of FY 2027 Hospital Budget Review
+Growth benchmarks 
+recommended by staff 
+for FY2027 Hospital 
+Budget Guidance:
+Commercial Rate: -1%
+Commercial NPR: -1%
+Operating Expense: 0%
+*Benchmarks are not final until 
+the Board adopts guidance (on 
+or before March 31)
+4.3%
+4.1%
+4.6%
+3.6%
+-1.0%
+0.0%
+1.0%
+2.0%
+3.0%
+4.0%
+5.0%
+6.0%
+7.0%
+8.0%
+Compound Growth in Patient Care Revenue (NPR) by since FY2017
+APM Targeted
+Growth Range
+VT Academic
+Medical Center
+VT Hospital
+Average
+VT Critical
+Access Hospital
+Avg.
+VT PPS Hospital
+Avg.
+Figure 6: Line graph showing Vermont hospital patient care revenue growth since FY2017, with a dip in 2020, 
+peak above the 3.5–4.5% APM target range in 2023–2024, and decline toward the target by 2027 guidance; 
+FY2027 benchmarks include -1% commercial rate and NPR growth and 0% operating expense growth.
+=== PAGE 17
+17
+RBP in FY 2027 Hospital Budget Review
+GMCB to establish systemwide and hospital commercial revenue 
+reduction targets through benchmarks in FY2027 HBR guidance.
+GMCB recommends legislative language to require hospitals’ 
+application of any commercial revenue reductions to “outlier 
+services” i.e. highest priced and volume of services.
+Legislative language could target immediate savings to health plans 
+with the greatest affordability concerns by establishing an aggregate 
+cap on hospital commercial prices at 200% of Medicare (e.g. QHP , 
+VEHI, VSEA) from an insurer perspective (no insurer shall pay more 
+than X%).
+=== PAGE 18
+18
+Activities to Date
+Fall 2025 – Winter 2026: 
+• Hired Affordability and Pricing Project Director
+• Initial Stakeholder Discussions, Capacity Building, and Public Presentations (e.g., Primary Care Steering Committee)
+• Brown University Analysis of VT’s Medicare Payment Landscape
+• RFP Development to support program design and impact modeling
+• Policy Development and State-to-S tate Engagement
+• FY27 Hospital Budget Guidance Development
+• Review of existing data
+December 2025
+• RFP Released
+January 2026
+• RBP & Medicare Payment 101 Speaker Series (Event 1)
+• RFP Bids Received (Currently Under Review)
+February 2026
+• Update to legislature on Act 68 (this report)
+• Publish Price Transparency Dashboard (First Release Forthcoming)
+=== PAGE 19
+19
+Important Insights to date…
+Key driver of affordability is high prices for hospital care
+Strive for methodological simplicity and predictability to guard against 
+regulatory capture or failure
+Base price – best approach for apples-to-apples across hospitals, and 
+reduces noise from Medicare-specific policy adjustments 
+CAHs reimbursed differently
+Comprehensive approach ensures no squeezing of the balloon: i.e. apply 
+methods in aggregate and at the service level
+RBP does not prevent against volume gaming, requiring complementary 
+approach (e.g. hospital global budgets)
+=== PAGE 20
+20
+Here’s where we are thinking about going
+• Medicare adjusted base rate to allow apples to apples approach across 
+hospi
+tals
+• Not one-s ize fits all (e.g. CAH adjustment, glide -path for financially 
+distressed hospitals)
+• Other considerations we are exploring
+• How to best integrate RBP into hospital budget review? 
+• How to monitor adherence to price caps?
+• How best to incentivize competition on quality and quality improvement?
+• How to ensure regulatory alignment with insurance rate review?
+• How to best support transformation and preserving access to essential services?
+• Conditions for termination or modification?
+=== PAGE 21
+21
+Up Next
+March 2026: RBP Vendor Selection & FY2027 Hospital Budget 
+Guidance
+April/May 2026: Rate-Setting and RBP Discussion Draft Release
+Spring 2026 – Winter 2027: RBP Modeling, Methodological 
+Development, and Stakeholder Engagement
+Summer 2026 – Winter 2027: Rate-Setting Rulemaking
+March 2027: Final RBP Methodology Released for FY28 Hospital 
+Budget Guidance
+=== PAGE 22
+22
+Background: Act 167 & Act 68
+Act 167 (2022): Required the GMCB (in collaboration with AHS, and stakeholders) 
+to develop value-based payments including global payments for Vermont hospitals 
+that would 
+1. Help move hospitals away from fee-for- service
+2. Provide hospitals with predictable, sustainable funding that is aligned across multiple payers, 
+s
+ufficient to enable the hospitals to deliver high-quality, affordable health care services to patients
+3. Is consistent with the principles of health care reform (18 V.S.A. § 9371)
+Act 68 (2025): requires GMCB to establish a global hospital budget for non-critical 
+access hospitals by 2028 and for all Vermont hospitals by 2030.
+=== PAGE 23
+23
+Hospital Global Budgets
+What? A prospective budget set in advance for a hospital to deliver 
+services to a defined population, typically determined by formula rather 
+than volume of services provided.
+Why? Controls total hospital spending while reducing incentives for 
+unnecessary utilization inherent in fee-for-service payment; serves as a 
+complement to rate setting approaches that control price, by limiting the 
+volume of services delivered.
+Total spending = Price x Volume
+=== PAGE 24
+24
+Hospital Global Budgets
+How is a HGB designed/calculated?
+• Scope: Which services are included vs. excluded (e.g., capital, outpatient care, high-
+c
+ost drugs)
+• Population adjustment: How budgets account for patient demographics, complexity, 
+and socioeconomic factors
+• Volume treatment: Whether and how budgets adjust for changes in patient volume
+• Quality linkage: Integration of performance metrics or outcomes into budget levels
+• Flexibility mechanisms: Provisions for mid-year adjustments, carryover of savings, 
+o
+r risk corridors
+Key tradeoffs: Greater cost control vs. potential access restrictions; 
+administrative simplicity vs. sophisticated risk adjustment; flexibility for 
+hospitals vs. predictability for payers.
+=== PAGE 25
+25
+History of Hospital Global Budgets in VT
+Approach Detail Year
+GMCB Regulation 
+(Current)
+Establishes cap on net patient revenue (NPR) hospitals can receive. 2012
+Rutland Regional 
+Medical Center Pliot
+GMCB to establish payments for hospital based on historical revenue with 
+inflation, adjusting for patient demographics (not implemented).
+2014
+Vermont All Payer 
+ACO Model
+Voluntary commercial payer/provider participation in hospital global payments 
+aligned across Medicare, Medicaid, and Commercial based on historical spend, 
+reconciled to FFS equivalent.
+2017-2025
+Act 167/Act68 Directs GMCB to continue pursuing design and implementation of hospital 
+global budgets.
+2022 to 
+present
+Table 3: Table titled “History of Hospital Global Budgets in VT” listing four approaches: GMCB Regulation (2012) establishing a cap on net patient revenue; Rutland Regional Medical 
+Center Pilot (2014) proposing payments based on historical revenue (not implemented); Vermont All -Payer ACO Model (2017–2025) aligning global payments across payers; and Act 
+167/Act 68 (2022–present) directing GMCB to continue hospital global budget design and implementation.
+=== PAGE 26
+26
+Work to date on Hospital Global Budgets 
+(HGB) in Vermont (Act167/Act68)
+Scenario Medicare Medicaid Commercial
+AHEAD 1.0 
+(Biden Admin.)
+VT Designed HGB 
+(GMCB)
+Vermont designed 
+hospital global 
+budget (DVHA)
+Beginning Jan 
+2026
+Vermont designed 
+hospital global 
+budget (GMCB)
+TBD*
+AHEAD 2.0 
+(Trump Admin.)
+CMS FFS HGB 
+Methodology + 
+Med Adv
+Jan 2028 (Cohort 2)
+No AHEAD CMS Traditional FFS 
++ Med Adv
+*Direction for GMCB to implement hospital global budgets is contingent on provision of necessary resources at the Board.
+Table 4: Table comparing Medicare, Medicaid, and Commercial hospital global budget approaches in Vermont under AHEAD 1.0, AHEAD 2.0, a nd 
+No AHEAD, including CMS FFS methodology starting January 2028 for Medicare, Vermont -designed Medicaid HGB beginning January 2026, and 
+commercial HGB listed as TBD; implementation contingent on Board resources.
+=== PAGE 27
+27
+What’s next?
+• Is Vermont going to participate in AHEAD?
+• How can Vermont strike the right balance of simplicity vs. precision 
+i
+n controlling hospital spending, i.e. hospital global budgets? 
+*GMCB Hospital global budget statutory requirement is predicated on receipt of necessary 
+resources
+=== PAGE 28
+28
+Discussion
+=== PAGE 29
+29
+Thank You!
+GMCB Staff Contacts 
+ Alena Berube, Director of Policy (alena.berube@vermont.gov) 
+ Kirk Williamson,  Project Director, Affordability and Pricing (kirk.williamson@vermont.gov)
+=== PAGE 30
+30
+Accessibility 
+Requests
+To receive this information in an 
+alternative format or for other 
+accessibility requests, please contact:
+Kristen LaJeunesse
+Communication & Information Officer
+Green Mountain Care Board
+Kristen.LaJeunesse@vermont.gov
+(802) 622-4134

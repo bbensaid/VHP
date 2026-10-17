@@ -1,0 +1,523 @@
+Milbank Memorial Fund • www.milbank.org 1
+How Payment Caps Can Reduce 
+Hospital Prices and Spending: 
+Lessons from the Oregon State 
+Employee Plan
+Issue Brief 
+JULY 2024
+Roslyn C. Murray, Christopher M. Whaley, Erin C. Fuse Brown, and Andrew M. Ryan
+ABSTRACT
+The State of Oregon passed legislation in 2017 that prohibits hospitals from charging 
+the state employee plan more than 200% of what Medicare pays for in-network hospi-
+tal facility services and 185% for out-of-network prices. The law took effect starting in 
+October 2019 and led to reductions in hospital services that generated more than $100 
+million in savings for the state employee plan in the first 27 months of implementation. 
+Oregon’s experience can inform other state employee plans’ efforts to control health 
+care price and spending growth. We offer key lessons for states considering payment 
+cap policies, which include:
+• By setting the payment cap well above Medicare prices but below the state em-
+ployee plan’s prices, Oregon effectively curbed prices while maintaining provider 
+participation in the network. 
+• Oregon’s decision to exempt small, rural, critical access, and certain sole com-
+munity hospitals helped protect the financial stability of vulnerable facilities and 
+maintain hospital participation in the network. 
+• Oregon established a cap on out-of-network services at 185% of Medicare, which 
+was below the in-network payment limit. All of the hospitals subject to the legisla-
+tion remained in-network.
+• Oregon mandated payment caps through legislation, which will make them more 
+durable against repeal or abandonment. 
+Policy Points
+> States grappling with 
+high and rising health 
+care spending can draw 
+inspiration from the Oregon 
+State Employee Plan’s 
+hospital payment cap 
+program, which was found 
+to reduce hospital prices 
+and spending.
+> Tailoring the cap to states’ 
+specific price levels and 
+market dynamics may 
+help enhance the efficacy 
+of hospital payment cap 
+initiatives across different 
+states.
+.
+Milbank Memorial Fund • www.milbank.org 2
+INTRODUCTION
+A major reason the United States spends significant-
+ly more per capita on health care compared to similar 
+countries is its high prices for medical services.1-6 
+Hospital prices, in particular, have played a pivotal role in 
+driving US health care spending growth, with spending on 
+hospital care representing $1.4 trillion or 30% of annual 
+national health care expenditures.7  Particularly notewor-
+thy is the growing divide between commercial and Medi-
+care payments for hospital services. Commercial prices 
+are more than-two-and-a-half times higher than what 
+Medicare pays, and they vary widely not only across and 
+within markets, but also within hospitals.8-11 This price 
+variation indicates that commercial prices are influenced 
+by a hospital’s reputation and negotiating leverage. 
+States have become a key player in the pursuit of inno-
+vative purchasing strategies to control commercial price 
+growth, driven by the pressing need to address rising 
+health insurance premiums, out-of-pocket expenses, and 
+stagnant wages among their residents.12,13 Moreover, giv-
+en requirements that states balance their budgets every 
+year, rising health care costs for public employees crowd 
+out resources that could be spent on other state prior-
+ities, including education, infrastructure, public health 
+and safety, or economic development. State employee 
+plans, with their sizable purchasing power and fiduciary 
+responsibility of prudently managing state funds, are 
+uniquely positioned to pursue procurement approaches 
+aimed at controlling hospital prices for their members—
+and generating savings for the state.14 The Oregon state 
+employee plan’s novel initiative to cap hospital payments 
+is a noteworthy example of an innovative state purchas-
+ing strategy. 
+OVERVIEW OF THE OREGON STATE 
+EMPLOYEE PLAN’S HOSPITAL PAYMENT 
+CAP LEGISLATION AND SUMMARY OF 
+FINDINGS
+In 2017 Oregon passed legislation requiring insurers and 
+third party administrators that contract with the state 
+employee plan to cap payments for hospital facility 
+services at 200% of Medicare for in-network and 185% 
+of Medicare for out-of-network services. The intention 
+of the payment cap is to effectively manage health care 
+spending by preventing payments in excess of two times 
+what Medicare pays, while allowing for market negoti-
+ations under the established limit. The state employee 
+plan includes both the Public Employees Benefit Board 
+(“public employees”) and the Oregon Educators Benefit 
+Board (“Oregon educators”), which together provide ben-
+efits for approximately 15% of the employer-sponsored 
+insurance population in Oregon.15,16 The hospital payment 
+cap went into effect in October 2019 for the Oregon edu-
+cators and January 2020 for the public employees. Only 
+24 of Oregon’s 62 hospitals are subject to the policy. Ex-
+empt hospitals include rural or critical access hospitals, 
+or sole community hospitals that were in a county with 
+less than 70,000 people and received at least 40 percent 
+of their revenue from Medicare. 
+As we reported in a recent Health Affairs article, our anal-
+ysis found that the hospital payment cap led to reduc-
+tions in the prices that the state employee plan paid for 
+hospital facility services. Specifically, there was a 25% 
+reduction in outpatient prices per procedure and a 3% 
+reduction in inpatient prices per admission in the first 
+two years and three months of the policy. Price reduc-
+tions were smaller in the inpatient setting because low-
+priced hospitals initially increased their prices to the cap 
+but were prohibited from doing so after the first year. We 
+estimated that these price reductions resulted in $107.5 
+million in savings for the state in the first 27 months of 
+the policy, amounting to 4% of plan spending. All of the 
+targeted hospitals remained in-network and there was 
+no evidence that hospitals increased their prices for the 
+non-state employee commercial population to compen-
+sate for revenue losses.17 Drawing from this assessment 
+of Oregon’s initiative, this issue brief outlines key insights 
+for other state employee plans considering payment cap 
+strategies to manage hospital prices and spending (see 
+Table 1).
+Lessons for Other State Employee Plans
+Establishing the payment cap 
+When deciding how and where to set the payment cap, 
+states must first determine what to use as a benchmark, 
+typically relying on Medicare and commercial payments 
+as primary approaches. Medicare payments are useful 
+and broadly familiar for benchmarking purposes. They 
+approximate the cost of care provision, formulas have 
+been refined over time, some hospital commercial 
+contracts are already paid based on Medicare, and they 
+Milbank Memorial Fund • www.milbank.org 3
+adjust for important geographic, facility, and patient 
+factors. However, Medicare payments may not accurate-
+ly reflect costs for certain services, such as maternity 
+care or pediatric services, and could pose difficulties for 
+payers not paying based on Medicare rates. 
+The absence of readily available information on commer-
+cial rates poses a challenge for many states considering 
+commercial payments as a benchmark, although states 
+with all-payer claims databases (APCDs) may have the 
+necessary commercial claims data. Another drawback 
+of using commercial payments is that they incorporate 
+the bargaining leverage of providers and insurers.18,19 
+States could combine approaches and establish that the 
+payment cap be the lesser of a percentage of Medicare or 
+the median in-network commercial rate (favoring median 
+commercial rates over mean to mitigate the influence 
+of high-priced hospitals).20 States could also consider 
+Medicaid or TRICARE payment rates, which may better 
+approximate the cost of maternity, newborn, or pediatric 
+services. 
+Second, the level of the payment cap is crucial. A cap set 
+too high will limit savings, while one set too low could 
+strain hospitals financially, potentially impacting patient 
+access and quality of care. States may opt for a higher 
+initial cap, gradually reducing it over time. However, 
+there is a risk that low-priced hospitals will seek signifi-
+cant, potentially unjustified price increases, as observed 
+in Oregon.17 The original legislation stated that payment 
+“shall not exceed” the cap. But price increases in the 
+first year prompted the state to revise the legislation to 
+specify that payment shall be “the lesser of” the negoti-
+ated rate, billed charges, or the cap. Payments in excess 
+are returned to the state by its third-party administrator 
+(TPA).21 States could consider multiple caps because 
+relative prices, and thus potential savings, may differ 
+between inpatient and outpatient settings, or for specif-
+ic services like maternity care. However, implementing 
+separate caps for different settings or services may add 
+significant complexity compared to a uniform cap. 
+Several sources of data are available to assist states with 
+setting the payment cap: 
+1. State employee health plan claims and pricing data 
+can be used to identify average prices relative to 
+Medicare payments to reference in establishing a 
+benchmark. 
+2. States APCDs allow for comparisons of state em-
+ployee plan prices (or commercial prices if unable to 
+identify state employee claims) relative to Medicare 
+payments or to identify in-network median commer-
+cial rates for benchmarking purposes. 
+3. Data from the Transparency in Coverage rule, which 
+requires insurers and TPAs to disclose price and 
+cost-sharing information by federal law, can be lev-
+eraged to identify relative prices or the in-network 
+median commercial rate.22 
+4. The National Academy for State Health Policy’s Hos-
+pital Cost Tool provides policymakers and research-
+ers with insights into how hospitals’ input costs 
+relate to their prices and how to calculate a hospital’s 
+commercial “breakeven” rate relative to Medicare 
+rates, and can inform the cap level decision.23
+In-house economists, actuaries, accountants, or external 
+consultants may be needed to conduct data analysis to 
+establish the payment cap.
+Key lesson(s). Oregon’s decision to set the payment cap 
+above Medicare rates but slightly below the estimated 
+average payment for facility services relative to Medicare 
+proved effective in controlling prices without jeopar-
+dizing provider participation. While using the median 
+relative price would minimize the influence of outliers, 
+this approach provides a valuable starting point for other 
+states considering similar policies. However, successful 
+implementation hinges on access to data to accurately 
+assess facility prices relative to Medicare rates or the 
+median in-network commercial rate and the data analytic 
+capacity to model savings and market impacts of differ-
+ent payment levels. 
+Milbank Memorial Fund • www.milbank.org 4
+Safeguarding small, rural hospitals
+States should consider what, if any, safeguards to 
+provide for hospitals that may struggle to absorb losses 
+associated with payment caps. For instance, exemptions 
+can provide relief for smaller or rural hospitals that may 
+find it challenging to operate under payment caps due 
+to their fixed patient base and limited ability to adjust 
+operations or revenues. Instead of relying solely on ex-
+emptions, states could adopt a more nuanced approach 
+by adjusting payment caps based on hospital-specific 
+financial indicators such as operating margins for patient 
+services only or days cash on hand. Alternatively, states 
+could establish a payment floor to guarantee that hospi-
+tals can adequately cover their costs.
+Key lesson(s). Oregon’s choice to exempt small and 
+rural hospitals, critical access hospitals, and some sole 
+community hospitals appears to have been effective at 
+safeguarding the financial stability of more vulnerable 
+hospitals and allowing the continued participation of the 
+targeted hospitals. As evidenced by the lack of hospital 
+departures from insurance networks or closures, those 
+subject to the legislation demonstrated resilience in 
+managing the impacts of the payment cap. It remains 
+uncertain how exempted hospitals would have been 
+affected by the policy. 
+Including out-of-network payment caps
+Payment caps will not be effective unless they also apply 
+to out-of-network prices. In the absence of caps on out-
+of-network rates, hospitals can choose not to participate 
+to secure a higher payment rate in lieu of state employee 
+service volume. Thus, out-of-network hospitals would 
+have the freedom to charge high rates to the state 
+employee plan when their members receive care at an 
+out-of-network facility. This dynamic could exacerbate 
+states’ concerns about health care affordability and ac-
+cess to care. States could set out-of-network caps at the 
+same limit as in-network caps or go a step further and 
+set the out-of-network cap below the in-network limit, as 
+Table 1. Lessons for States from the Oregon State Employee Plan’s Hospital Payment Cap
+ Considerations Lessons
+Establishing the  
+payment cap 
+States must decide on a benchmark for setting 
+payment caps. Medicare and commercial pay-
+ments are the primary options, but Medicaid or 
+TRICARE rates may better approximate certain 
+service costs.
+Oregon set the payment cap well above Medi-
+care payments but slightly below the state’s 
+estimated average facility prices relative to 
+Medicare payments, effectively curbing prices 
+while maintaining provider participation. 
+The level of the payment cap is critical, with 
+a balance needed to avoid limiting savings or 
+straining hospitals financially.
+States need access to data sources, such as 
+all-payer claims databases or transparency in 
+coverage data, to help determine where to set 
+the cap. 
+Safeguarding small, 
+rural hospitals
+States should consider safeguarding hospitals 
+that may struggle to absorb losses associated 
+with payment caps through exemptions, varying 
+caps based on hospital financial metrics, or insti-
+tuting a payment floor.
+Oregon’s decision to exempt small, rural, 
+critical access, and certain sole community 
+hospitals helped protect the financial stability 
+of vulnerable facilities and maintain hospital 
+participation. 
+Including out-of-net-
+work payment caps
+States should include out-of-network payment 
+caps, established either at the same limit as 
+in-network caps or below the in-network limit.
+Oregon established an out-of-network cap at 
+185% of Medicare, below the in-network pay-
+ment limit. All of the hospitals subject to the 
+legislation remained in-network.
+Legislation versus ne-
+gotiation
+States should attempt to mandate payment 
+caps through legislation, which offers durability 
+against repeal. Alternatively, states could lever-
+age procurement power to pay hospitals based 
+on Medicare, as seen in Montana.
+Oregon mandated payment caps through 
+legislation, which will make them more durable 
+against repeal or abandonment. 
+Milbank Memorial Fund • www.milbank.org 5
+Oregon did. In this case, hospitals that refuse to partic-
+ipate in the state employee plan’s insurance networks      
+might secure a lower rate than if they participated, along 
+with losing significant service volume. Thus, the lower 
+out-of-network limit encourages providers to remain 
+in-network and at the negotiating table, shifting negoti-
+ating leverage to the state and its TPAs.
+Key lesson(s). Oregon’s legislation includes a cap on out-
+of-network services, set at 185% of Medicare, which is 
+lower than the in-network payment limit. Hospitals that 
+choose not to participate in the state employee plan’s 
+insurance networks might secure a lower rate than if 
+they participated. To date, all 24 hospitals targeted by 
+the legislation have stayed in-network, underscoring the 
+effectiveness of this provision. 
+Legislation versus negotiation
+Legislatively mandated payment caps offer several 
+advantages, including clear mandates, enforcement 
+mechanisms like penalties for non-compliance, and dura-
+bility against repeal or abandonment. The Oregon state 
+employee plan was able to secure passage of the pay-
+ment cap by incorporating it into the budget bill.24 This 
+not only ensured the policy’s passage but also under-
+scored its ability to alleviate pressure on the state’s fiscal 
+budget. Despite the advantages of legislation, many 
+states have struggled to pass payment cap legislation 
+due to hospitals’ influence on policymaking. If passing 
+legislation is too big a hurdle, state employee plans could 
+instead leverage their procurement process or purchas-
+ing power to require TPAs to negotiate contracts based 
+on a percentage of Medicare payments. For instance, 
+the Montana state employee plan implemented a refer-
+ence-based pricing approach in 2016. Instead of impos-
+ing an upper limit on prices, the state paid hospitals a 
+set percentage of Medicare rates for facility services. 
+Therefore, payment also increased for some services. 
+An audit estimated that the initiative saved the state 
+employee plan $47.8 million over the first three years.25 
+However, despite its success, the program was eventu-
+ally discontinued due to political pressure, underscoring 
+the benefits of legislation. 
+Key lesson(s). Oregon’s decision to mandate payment 
+caps through legislation enhances their durability 
+against repeal or abandonment, a lesson learned from 
+the experience in Montana. 
+Open questions and policy considerations
+There are questions that have yet to be answered that 
+states should consider as they contemplate payment 
+caps. First, states should consider how payment caps 
+will affect hospitals’ financial positions, as well as state 
+employee plan member premiums, benefits, earnings, 
+access, and care quality. While the absence of hospi-
+tal closures or network exits in Oregon suggests that 
+hospitals did not struggle financially and patients did not 
+experience serious access barriers under the payment 
+cap, policymakers may want to consider modeling the 
+impacts of various payment cap levels and exemptions 
+on critical access or other essential or financially pre-
+carious hospitals. Moreover, legislation could authorize 
+the state employee plan to adjust payment caps in the 
+future to address adverse effects on access or hospital 
+financial viability. However, this flexibility comes with the 
+tradeoff that powerful hospitals may exert pressure on 
+the state to weaken the payment caps and erase the sav-
+ings.26 Further, state employee plans should track price 
+and utilization data internally or through the state’s APCD 
+to detect potential unintended effects, such as increases 
+in prices for non-regulated services (e.g., professional 
+fees), changes in service volumes or utilization patterns, 
+or recruitment challenges following the implementation 
+of payment caps.27,28
+Second, states with successful state employee plan 
+hospital payment caps might seek to expand caps to 
+private employers for greater impact. If payment caps 
+are applied to the broader market of privately insured en-
+rollees, the state may need to consider granting a health 
+care agency or office authority to establish and oversee 
+the provider payment caps through regulation, or adding 
+oversight mechanisms for the insurance department to 
+ensure that health plans pass savings on to enrollees. 
+However, with few state controls over self-insured  
+employer-based plans due to ERISA, it may be difficult 
+for the state to track or enforce whether private employ-
+ers pass savings from payment caps to enrollees. States 
+may also have limited visibility through their APCDs or 
+health insurance rate review authority over the impact 
+of the policy on private employer-sponsored health plan 
+prices or contracts with third-party administrators. 
+Milbank Memorial Fund • www.milbank.org 6
+CONCLUSION
+The Oregon state employee plan’s hospital payment cap 
+is an innovative example of how state employee plans 
+can use their purchasing power and fiduciary obliga-
+tions to effectively control hospital prices and spending. 
+Oregon’s experience, which led to more than $100 million 
+in savings within the first 27 months of implementation, 
+provides valuable insights for other state employee plans 
+that are looking for ways to control health care price and 
+spending growth. However, other states’ success will 
+require a nuanced approach, tailored to the price levels 
+and market dynamics of each state. By drawing on these 
+lessons, states can harness the potential of hospital pay-
+ment caps to achieve meaningful reductions in hospital 
+prices and health care spending.
+Milbank Memorial Fund • www.milbank.org 7
+NOTES 
+1.  Anderson GF, Reinhardt UE, Hussey PS, Petrosyan V. It’s the prices, stupid: why the United States is so different 
+from other countries. Health Aff (Millwood). 2003;22(3):89-105
+2.  Anderson GF, Hussey P, Petrosyan V. It’s still the prices, stupid: why the US spends so much on health care, and a 
+tribute to Uwe Reinhardt. Health Aff (Millwood). 2019;38(1):87-95
+3.  Papanicolas I, Woskie LR, Jha AK. Health care spending in the United States and other high income countries. 
+JAMA. 2018;319(10):1024–1039.
+4.  Health Care Cost Institute. 2017 health care cost and utilization report [Internet]. Washington (DC): HCCI; 2019 Feb 
+11 [cited 2024 March 12]. Available from:  https://healthcostinstitute.org/images/easyblog_articles/276/HCCI-
+2017-Health-Care-Cost-and-Utilization-Report-02.12.19.pdf
+5.  Cooper Z, Craig SV, Gaynor M, Van Reenen J. The price ain’t right? Hospital prices and health spending on the pri-
+vately insured. Q J Econ. 2019;134(1):51-107.
+6.  Hartman M, Martin AB, Benson J, Catlin A. National health care spending in 2018: growth driven by accelerations in 
+Medicare and private insurance spending. Health Aff (Millwood). 2019;39(1):8–17.
+7.  Centers for Medicare and Medicaid Services. National health-expenditures data: historical [Internet]. Balti-
+more (MD): CMS; 2023 Dec 13 [cited 2024 Feb 19]. Available from: https://www.cms.gov/data-research/statis-
+tics-trends-and-reports/national-health-expenditure-data/nhe-fact-sheet
+8.  Whaley CM, Kerber R, Wang D, Kofner A, Briscombe B. Prices paid to hospitals by private health plans [Internet]. 
+Santa Monica (CA): RAND Corporation; 2024 May [cited 2024 June 27]. Available from: https://www.rand.org/pubs/
+research_reports/RRA1144-2.html
+9.  Ginsburg PB. Wide variation in hospital and physician payment rates evidence of provider market power [Internet]. 
+Washington (DC): Center for Studying Health System Change; 2010 Nov [cited 2024 Feb 12] (Research Brief, No. 10). 
+Available from: http://www.hschange.org/CONTENT/1162/1162.pdf
+10.  Kronick R, Neyaz SH. Private insurance payments to California hospitals average more than double Medicare 
+payments [Internet]. Washington (DC): West Health Policy Center; 2019 May [cited 2024 Jan 12]. Available from: 
+https://westhealth.org/wp-content/uploads/2023/11/West-Health-Policy-Center-Hospital-Pricing-Analy-
+sis-May-2019.pdf
+11.  Selden TM, Karaca Z, Keenan P, White C, Kronick R. The growing difference between public and private payment 
+rates for inpatient hospital care. Health Aff (Millwood). 2015;34(12):2147-2150.
+12.  Arnold DR, Whaley CM. Who pays for health care costs? The effects of health care prices on wages [Internet]. 
+Working Paper; 2020 June. Available from: https://www.ftc.gov/system/files/documents/public_events/1567421/
+whaleyarnold.pdf
+13.  Hayes SL, Collins SR, Radley DC. How much U.S. households with employer sponsored insurance spend on premi-
+ums and out-of-pocket costs: a state-by-state look [Internet]. The Commonwealth Fund; 2019 May 23. [cited 2023 
+Aug 8]. Available from: https://www.commonwealthfund.org/publications/issue-briefs/2019/may/how-much-us-
+households-employer-insurance-spend-premiums-out-of-pocket
+Milbank Memorial Fund • www.milbank.org 8
+14.  Corlette S, Davenport K. In an era of premium and provider price increases, state employee health plans target key 
+cost drivers. Health Affairs Forefront. Published 2023 Nov 16 [cited 2024 Apr 24]. Available from:  
+https://www.healthaffairs.org/content/forefront/era-premium-and-provider-price-increases-state-employee-
+health-plans-target-key-cost
+15.  Oregon SB 1067. Relating to government cost containment; and declaring an emergency [Internet]. 79th Oregon 
+Legislative Assembly, chapter 746 (2017). Salem (OR): Oregon State Legislature; 2017 [cited 2024 Jan 12]. Available 
+from: https://olis.oregonlegislature.gov/liz/2017R1/Measures/Overview/SB1067
+16.  National Academy for State Health Policy. New NASHP model legislation: limiting out-of-network provider rates to 
+lower costs & increase network participation [Internet]. Washington (DC): NASHP; 2022 Nov 29 [cited 2024 Jan 
+12]. Available from: https://eadn-wc03-8290287.nxedge.io/wp-content/uploads/2023/01/Final-NASHP-Webinar-
+Slide-Deck-11.29.22.pdf
+17.  Murray RC, Brown ZY, Miller S, Norton EC, Ryan AM. Hospital facility prices declined as a result of Oregon’s hospital 
+payment cap. Health Aff (Millwood). 2024;43(3):424-432.
+18.  Berenson RA, Murray RB. Guiding the invisible hand: practical policy steps to limit provider prices in commercial 
+health insurance markets [Internet]. Washington (DC): Urban Institute; 2023 May [cited 2024 Jan 12]. Available 
+from: https://www.urban.org/sites/default/files/2023-05/Guiding%20the%20Invisible%20Hand.pdf
+19.  Chernew ME, Dafny LS, Pany MJ. A proposal to cap provider prices and price growth in the commercial health-care 
+market [Internet]. Washington (DC): The Hamilton Project; 2020 Mar [cited 2024 Jan 12]. Available from: https://
+www.brookings.edu/wp-content/uploads/2020/03/CDP_PP_WEB_FINAL.pdf
+20.  Butler J, Hensley-Quinn M. Q&A on NASHP’s model act to limit out-of-network provider rates [Internet]. Washing-
+ton (DC): NASHP; 2022 Nov 29 [cited 2024 May 8]. Available from: https://nashp.org/qa-on-nashps-model-act-to-
+limit-out-of-network-provider-rates/
+21.  Mercer. Hospital payment cap monitoring report. Paper presented at: OEBB/PEBB Joint Innovation Workgroup; 
+2021 Oct 19; virtual.
+22.  KFF. Transparency in coverage [Internet]. Washington (DC): KFF [cited 2024 May 8]. Available from: https://www.
+kff.org/transparency-in-coverage/
+23.   National Academy for State Health Policy. Hospital cost tool and resources [Internet]. Washington (DC): NASHP; 
+2022 Apr 5 [cited 2024 May 8]. Available from: https://nashp.org/hospital-cost-tool-and-resources/
+24.  Gray C. Senate clears hospital price controls for public worker health plans [Internet]. The Lund Report. 2017 [cit-
+ed 2024 Apr 25]. Available from: https://www.thelundreport.org/content/senate-clears-hospital-price-controls-
+public-worker-health-plans
+25.  Patient Rights Advocate. From insolvency to surplus: how Montana rescued its state health plan through refer-
+ence-based pricing [Internet]. PatientRightsAdvocate.org. [cited 2024 April 2]. Available from: https://www.
+patientrightsadvocate.org/montana-case-study
+26.  Murray R. Rate regulation revisited: managing regulatory failure and regulatory capture in health care [Internet]. 
+Milbank Memorial Fund. 2022 Oct [cited 2024 Apr 25]. Available from: https://www.milbank.org/publications/
+rate-regulation-revisited-managing-regulatory-failure-and-regulatory-capture-in-health-care/
+Milbank Memorial Fund • www.milbank.org 9
+27.  Office of the Health Insurance Commissioner. Next generation affordability standards: concept, rationale, and 
+additional information [Internet]. Providence (RI): OHIC; 2021 [cited 2024 Mar 25]. Available from: https://ohic.
+ri.gov/sites/g/files/xkgbur736/files/2022-05/OHIC%20Next%20Generation%20Affordability%20Standards%20
+Concept%20Paper.pdf
+28 .  Whaley CM, Brown TT. Firm responses to targeted consumer incentives: evidence from reference pricing for sur-
+gical services. J Health Econ. 2018;61:111-133.
+Milbank Memorial Fund • www.milbank.org 10
+ABOUT THE AUTHORS
+Roslyn C. Murray is Assistant Professor of Health Services, Policy, and Practice at the Brown University School of 
+Public Health. 
+Christopher M. Whaley is Associate Professor of Health Services, Policy, and Practice at the Brown University School 
+of Public Health. 
+Erin C. Fuse Brown is Professor of Health Services, Policy, and Practice at the Brown University School of Public 
+Health. 
+Andrew M. Ryan is Professor of Health Services, Policy, and Practice and the founding director of the Center for  
+Advancing Health Policy through Research at the Brown University School of Public Health.
+ACKNOWLEDGMENTS
+We would like to thank Arnold Ventures for funding this research.
+Milbank Memorial Fund • www.milbank.org 11
+About the Milbank Memorial Fund
+The Milbank Memorial Fund is an endowed operating foundation that works to improve the health of populations 
+and health equity by collaborating with leaders and decision makers and connecting them with experience and 
+sound evidence. Founded in 1905, the Fund engages in nonpartisan analysis, collaboration, and communication on 
+significant issues in health policy. It does this work by publishing high-quality, evidence-based reports, books, and 
+The Milbank Quarterly, a peer-reviewed journal of population health and health policy; convening state health policy 
+decision makers on issues they identify as important to population health; and building communities of health 
+policymakers to enhance their effectiveness.
+Milbank Memorial Fund  
+645 Madison Avenue  
+New York, NY 10022  
+www.milbank.org
+The Milbank Memorial Fund is an endowed operating foundation that engages in nonpartisan analysis, study, research, and communica-
+tion on significant issues in health policy. In the Fund’s own publications, in reports, films, or books it publishes with other organizations, 
+and in articles it commissions for publication by other organizations, the Fund endeavors to maintain the highest standards for accuracy 
+and fairness. Statements by individual authors, however, do not necessarily reflect opinions or factual determinations of the Fund.
+© 2024 Milbank Memorial Fund. All rights reserved. This publication may be redistributed digitally for noncommercial purposes only as 
+long as it remains wholly intact, including this copyright notice and disclaimer.

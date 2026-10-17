@@ -1,0 +1,171 @@
+Race and Ethnicity 
+Data in the GMCB 
+Health Care Database
+Green Mountain Care Board
+February 2021
+• Introduction to GMCB’s health care database
+• Current limitations for race and ethnicity data in health care
+• Strategies for addressing limitations
+• Applications for more robust data
+2
+Overview
+VHCURES 
+•All-Payer Claims Database (APCD)
+•Data submitted by most insurers (e.g. Medicare, Medicaid, 
+Blue Cross Blue Shield of Vermont) for care delivered to 
+Vermonters both in Vermont and out-of-state
+•Medical and pharmaceutical claims
+•Data from 2007 to present
+VUHDDS
+•Data submitted by Vermont hospitals for care delivered in 
+state to patients who live in Vermont and out-of-state
+•Limited to facility portion of care
+•Data from 1980’s to present
+3
+GMCB Health Care Database
+4
+Resident Location vs 
+Provider Location
+Where care delivered
+Vermont Outside Vermont
+Where 
+person 
+lives
+Vermont VHCURES
+(most insured residents)
+Outside 
+Vermont
+Where care delivered
+Vermont Outside Vermont
+Where 
+person 
+lives
+Vermont VUHDDS
+(facility discharges from
+14 community hospitals,
+Brattleboro Retreat, and 
+ambulatory surgical centers)
+NH, NY, MA
+(discharges for VT residents)
+Outside 
+Vermont
+5
+Known Unknowns
+• The first step in addressing health disparities is DETECTING them, which 
+depends on having access to valid and reliable data.
+• Across the United States, informational gaps related to race, ethnicity, and 
+language have been identified and persist.
+VUHDDS
+Each facility collects race and 
+ethnicity data.
+De-identified discharges are 
+reported to GMCB, including 
+reported race and ethnicity data.
+VHCURES
+Each payer may or may not 
+collect race and ethnicity data.
+Submission of race and ethnicity 
+to GMCB is currently optional.
+6
+Race and Ethnicity Data in 
+Current Health Care Database
+• Develop standardized approach for collecting race, ethnicity, and 
+language information
+• Require race and ethnicity data to be submitted to VHCURES
+• Integrate VHCURES data with Health Information Exchange
+7
+Strategies for Improving Data
+• By collecting race, ethnicity, and language information in a uniform way, 
+data will be more meaningful to aggregate across time, settings, and 
+data sources.
+• Conventions may be adopted to foster more complete information by 
+having fewer respondents skip the questions.
+• A consistent format will increase familiarity and reduce confusion.
+• Current CDC code set allows for over 900 locally meaningful values 
+associated with racial identity that can be grouped into categories 
+defined by the Federal Office of Management and Budget (OMB).
+• A standardized approach could be extended across the health care 
+delivery system and the State of Vermont.
+8
+STANDARDIZED DATA 
+COLLECTION
+• The GMCB is currently assessing the quality and completeness of race 
+and ethnicity data as part of its Enhanced Data Validation Workgroup.
+• Until issues with the data quality are addressed, requiring submission is 
+unlikely to provide much value.
+9
+REQUIRE RACE AND 
+ETHNICITY DATA
+IMPROVE DATA QUALITY
+Understand current state 
+of race and ethnicity data 
+and determine methods 
+for improvement
+(Now thru May 2021)
+CHANGE VHCURES RULE
+Split current rule into two:
+- Data submission
+- Data release
+Move data elements from 
+rule to accompanying 
+guide.
+(Spring thru Winter 2021)
+AMEND SUBMISSION 
+GUIDE
+Update data elements
+Require submission of 
+race and ethnicity data
+Spring 2022
+• Integrating data sources enriches the information available.  For 
+example, if the claims data are integrated with vital records, additional 
+information can be gained about a birth or death that is not available 
+through the medical claim.
+• The Vermont Health Information Exchange (VHIE) contains clinical 
+information related to patients’ health care.
+• Integrated medical claims and clinical information could help enhance 
+data available to providers, researchers, and public health workers.
+• The VHIE already contains race and ethnicity data, which could be one 
+of the benefits of pursuing this integration.
+10
+DATA INTEGRATION
+• By improving our ability to capture race and ethnicity data in a more 
+valid and reliable manner, we can bolster existing initiatives designed to 
+understand and/or reduce disparities along these dimensions.
+11
+Applications for Improved 
+Race and Ethnicity Data
+
+• Collecting more valid and reliable race and ethnicity data in the APCD 
+will help refine the ability to investigate patterns among subgroups.
+12
+Race and Ethnicity Data 
+in VHCURES
+2.7 2.5 5.4
+146.8 142.2
+321.0
+0
+100
+200
+300
+Total White Black
+Under 65 65+
+Estimated Fatality Rate for COVID-19 in the United Kingdom
+by Age and Race (Fenton, et al.)
+• VHCURES is particularly strong in that it has a record of individuals 
+enrolled with coverage whether or not they seek care.  Therefore, 
+potential systematic differences in the deferral of care can be 
+examined, which would be strengthened with better race and ethnicity 
+data.
+• Since data are submitted in a de-identified form, submitters may include 
+records associated with substance use treatment.  Access to these data 
+are often highly restricted in order to protect the confidentiality for 
+patients, according to federal rules (known as 42 CFR Part 2).
+• Therefore, understanding potential disparities based on race, ethnicity, 
+language, or culture can be particularly challenging.  Better information 
+about race and ethnicity attached to medical and pharmaceutical 
+claims could help fill in some critical informational gaps.
+13
+Race and Ethnicity Data 
+in Substance Use Treatment
+14
+Questions?

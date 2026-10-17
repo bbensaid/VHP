@@ -1,0 +1,375 @@
+4/14/2016 1
+ 1
+Department of Vermont
+Health Access
+4/14/2016 1
+Vermont Blueprint for Health
+House Appropriations Committee
+April 13, 2016
+4/14/2016 2
+Department of Vermont
+Health Access
+ Statewide foundation of primary care medical homes
+ Community Health Teams providing supportive services
+ Statewide transformation and learning network
+ Local innovation through community collaboratives
+ Statewide self-management programs
+ Maturing health information & data systems, comparative reporting
+ Potential for a unified accountable health system and all payer model
+Current State of Play in Vermont
+4/14/2016 3
+Department of Vermont
+Health Access
+Payment Model
+CHT Payments
+$2.77
+Base
+Payment
+to all eligible
+practices
+Quality
+Utilization
+0.00
+0.50
+1.00
+1.50
+2.00
+2.50
+3.00
+3.50
+4.00
+CHT - Community Payment Practice Payments
+$PPPM
+Payment tied to practice results on Health
+Partners Total Utilization Index
+Payment tied to service area results*
+based achieving benchmarks or percent
+change ACO measures:
+• Diabetes in control
+• Ambulatory sensitive admission (PQI)
+• Developmental screening
+• Adolescent well child visits
+Payment tied to practice activity
+• Participation in community initiatives**
+• Recognition on NCQA standards***
+*Incentive to work with community partners to improve service area results.
+**Organize practice and CHT activity as part of at least one community quality initiative per year.
+***Payment tied to recognition on NCQA PCMH standards with any qualifying score.
+****Payments are for Commercial and Medicaid. Medicare pays a different rate
+4/14/2016 4
+Statewide Network for Comparative Learning
+ 31 Community Health Team Leaders
+ 19 Blueprint Practice Facilitators
+ 14 Blueprint Project Managers
+ 4 ACO Clinical Quality Leaders
+ 6 ACO Clinical Consultants
+
+Onpoint Health Analytics
+Department of Vermont
+Health Access
+4/14/2016 5
+Claims data
+from APCD
+Data Use for a Learning Health System
+Clinical data
+from registry
+BRFSS data
+from VDH
+Patient
+experience
+data
+Corrections
+data
+•Process data sets
+•Check data quality
+•Address data gaps
+•Link data sets
+•Analytics
+•Reporting
+Data
+extracts
+Other?
+ Utilization Measures
+ Expenditure Measures
+ Unit Costs
+ Quality Measures
+ Patient Experience Measures
+ Comparative Evaluation
+ Practice Profiles
+ HSA Profiles
+ PCMH + CHT Evaluation
+ Hub & Spoke Evaluation
+ Associations & Predictive Models
+ Planning, Coordination, Quality
+ Performance Payments
+4/14/2016 6
+ 6
+Department of Vermont
+Health Access
+4/14/2016 6
+Total Resource Use Index
+A 0.01 change in TRUI is
+associated with a $66.80 change
+in expenditures per person
+4/14/2016 7
+Health IT Infrastructure
+Evaluation & Comparative Reporting
+Advanced
+Primary
+Care
+Hospitals
+Public Health
+Programs & Services
+Community Health Team
+Nurse Coordinator
+Social Workers
+Nutrition Specialists
+Community Health Workers
+Public Health Specialist
+Extended Community Health Team
+Medicaid Care Coordinators
+SASH Teams
+Spoke (MAT) Staff
+Specialty Care & Disease
+Management Programs
+Mental Health &
+Substance Abuse
+Specialty Programs
+Social & Economic
+Services
+Self Management
+Programs
+7
+Advanced
+Primary
+Care
+Advanced
+Primary
+Care
+Advanced
+Primary
+Care
+Department of Vermont
+Health Access
+4/14/2016 7
+All-Insurer Payment Reforms
+Transformation Network (Project Managers, Practice Facilitators, CHT Leaders, ACO Quality Leaders)
+Unified Community Collaboratives & Statewide Learning Forums
+Home & Long Term
+Support Services
+4/14/2016 8
+Department of Vermont
+Health Access
+ Support development of an accountable health system
+ Next generation payment models (All-Payer, Accountability)
+ Continue to improve the foundation (primary care, community services)
+ Best use of the transformation network (PFs, PMs, CHT leaders)
+ Strengthen self management programs (HLWs, DPP, Tobacco)
+ Continue to develop the data utility (quality, aggregation, linkage)
+ Continue to advance the use of data (learning, QI, predictive models)
+Planning for the Future
+Organization for Economic Cooperation and Development
+
+4/14/2016 11
+Department of Vermont
+Health Access
+Expenditures on healthcare
+for the whole population
+Medicaid expenditures
+on special services
+Population Health Management 2015
+Figure 2. Expenditures Per Person
+4/14/2016 12
+Department of Vermont
+Health Access
+Members by Stage of Program 2008 – 2014 All Insurers Ages 1 and Older
+Non Blueprint
+Stage of Program Member Count
+Pre-Year 181,628
+Implementation Year 122,247
+NCQA Scoring Year 160,196
+Post year 1 100,107
+Post year 2 81,855
+Post Year 3 67,542
+Blueprint
+Stage of Program Member Count
+Pre-Year 267,327
+Implementation Year 291,881
+NCQA Scoring Year 333,470
+Post year 1 343,373
+Post year 2 300,770
+Post Year 3 242,879
+Blueprint
+Stage of Program Average Members
+Pre-Year 246,214
+Implementation Year 271,071
+NCQA Scoring Year 311,245
+Post year 1 320,586
+Post year 2 279,064
+Post Year 3 225,974
+Non Blueprint
+Stage of Program Average Members
+Pre-Year 246,214
+Implementation Year 271,071
+NCQA Scoring Year 311,245
+Post year 1 320,586
+Post year 2 279,064
+Post Year 3 225,974
+4/14/2016 13
+Department of Vermont
+Health Access
+Total Expenditures Per Capita 2008 – 2014 All Insurers Ages 1 and older
+$5,780
+$6,554
+$5,822
+$7,046
+$5,600
+$5,800
+$6,000
+$6,200
+$6,400
+$6,600
+$6,800
+$7,000
+$7,200
+$7,400
+Pre-Year Implementation
+Year
+NCQA Scoring
+Year
+Post Year 1 Post Year 2 Post Year 3
+2014 Blueprint Practices
+2014 Comparison Practices
+4/14/2016 14
+Department of Vermont
+Health Access
+Total SMS Expenditures Per Capita 2008 – 2014 Medicaid Ages 1 and older
+$424
+$476
+$438
+$391
+$350
+$370
+$390
+$410
+$430
+$450
+$470
+$490
+$510
+Pre-Year Implementation
+Year
+NCQA Scoring
+Year
+Post Year 1 Post Year 2 Post Year 3
+2014 Blueprint Practices
+2014 Comparison Practices
+4/14/2016 15
+Department of Vermont
+Health Access
+Inpatient Discharges Per 1000 Members 2008 – 2014 All Insurers Ages 1 and older
+88.0
+91.8
+88.8
+95.6
+80.0
+82.0
+84.0
+86.0
+88.0
+90.0
+92.0
+94.0
+96.0
+98.0
+Pre-Year Implementation
+Year
+NCQA Scoring
+Year
+Post Year 1 Post Year 2 Post Year 3
+2014 Blueprint Practices
+2014 Comparison Practices
+4/14/2016 16
+Department of Vermont
+Health Access
+Emergency Department Visits Per 1000 Members 2008 – 2014 All Insurers Ages 1 and older
+356.9
+375.8
+368.2
+384.1
+330.0
+340.0
+350.0
+360.0
+370.0
+380.0
+390.0
+Pre-Year Implementation
+Year
+NCQA Scoring
+Year
+Post Year 1 Post Year 2 Post Year 3
+2014 Blueprint Practices
+2014 Comparison Practices
+4/14/2016 17
+Department of Vermont
+Health Access
+Estimated Return on Investment for All Payers in Calendar Year 2014
+Note: Blueprint Program Budget is the average of the FY2014 and FY2015 budgets to estimate the
+calendar year 2015 budget. Also note the budgeted amount does not reflect actual programmatic
+expenditures, which may be lower.
+All-Payer Investment Reduction in total
+expenditures w/ SMS
+Reduction in expenditures $123,142,342
+PCMH Payments $6,590,964
+Core CHT Payments $8,893,643
+Total Payments $15,484,607
+Blueprint Program Budget $5,633,236
+Total investment $21,117,843
+Return on investment 5.8
+4/14/2016 18
+Department of Vermont
+Health Access
+Estimated Return on Investment for Medicaid in Calendar Year 2014
+Note: Blueprint Program Budget is the average of the FY2014 and FY2015 budgets to estimate the
+calendar year 2015 budget. Also note the budgeted amount does not reflect actual programmatic
+expenditures, which may be lower.
+Medicaid Investment:
+Reduction in
+expenditures w/
+SMS
+Reduction in
+expenditures w/o
+SMS
+Reduction in expenditures $8,644,011 $29,554,703
+PCMH Payments $2,202,342
+Core CHT Payments $2,172,308
+Total Payments $4,374,650
+Blueprint Program Budget $5,633,236
+Total investment $10,007,886
+Return on investment 0.9 3.0
+4/14/2016 19
+Department of Vermont
+Health Access
+Projected Impact on All Payers of Increased PCMH and CHT Payments in 2016
+All-Payer Investment
+Reduction in total
+expenditures w/
+SMS
+Reduction in
+expenditures w/o
+SMS
+Reduction in expenditures $123,142,342 $136,284,263
+PCMH Payments $10,460,883
+Core CHT Payments $9,498,458
+Total Payments $19,959,341
+Blueprint Program Budget $5,633,236*
+Total investment $25,592,577
+Return on investment 4.8 5.3
+*Planned budget cuts will reduce the Blueprint Program Budget to $4,780,961 for CY 2016.
+This will increase the ROI estimate to 4.97 with SMS included.
+
+4/14/2016 21
+Department of Vermont
+Health Access
+Questions & Discussion

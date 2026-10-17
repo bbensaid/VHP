@@ -1,0 +1,457 @@
+=== PAGE 1
+   
+ 
+   
+ 
+ 
+ 
+ 
+Report to 
+The Vermont Legislature 
+ 
+ 
+ 
+ 
+Health Equity Data 
+2025 Report to the Legislature 
+ 
+ 
+In Accordance  with 18 V.S.A. § 253 
+ 
+ 
+Submitted to: House Committee on Health Care and Human Services Senate Committee 
+on Health and Welfare 
+  
+ 
+Submitted by:  Mark A. Levine, MD  
+Commissioner, Vermont Department of Health  
+  
+Prepared by:  The Health Statistics and Informatics Division  
+Vermont Department of Health  
+  
+Report Date:   January 15, 2025  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+VT Dept of Health   
+280 State Drive  
+Waterbury, VT 05671 -8300  
+healthvermont.gov
+
+=== PAGE 2
+   
+ 
+   
+ 
+ 
+Contents 
+Introduction ................................ ................................ ................................ ................................ .1 
+Health Equity Analysis and Reports ................................ ................................ ............................ 1 
+The State of Health Equity in Vermont Report ................................ ................................ .....1 
+Health Insurance and Access to Care ................................ ................................ .............................  1 
+Physical and Mental Health ................................ ................................ ................................ ..........  2 
+Youth Risk Factors ................................ ................................ ................................ .....................  2 
+Community Resilience Index ................................ ................................ ................................ 2 
+Healthy Vermonters 2030 ................................ ................................ ................................ .....2 
+State Health Assessment and Improvement Plan................................ ................................ .2 
+Data Collection Standards and Planning ................................ ................................ ...................... 3 
+Data Encyclopedia ................................ ................................ ................................ ................. 3 
+Health Department Strategic Plan ................................ ................................ ........................ 4 
+Data Visualization Workgroup ................................ ................................ .............................. 4 
+Office of Health Equity Integration (OHEI) ................................ ................................ ........ 4 
+Data Collection Best Practices ................................ ................................ ............................... 5 
+Partner Coordination ................................ ................................ ................................ ............ 5 
+Limitations ................................ ................................ ................................ ............................. 6 
+Next Steps/Checklist ................................ ................................ ................................ .................... 7 
+ 
+=== PAGE 3
+Vermont Department  of Health 
+ 
+ 
+1 
+Health Equity Data Report 
+  
+ 
+ 
+Health Equity Data 
+2025 Report to the Legislature 
+ 
+Introduction 
+This report is prepared  in accordance with  18 V.S.A. § 253(b)(1), that requires the Vermont 
+Department  of Health (Department)  to systematically analyze “health equity data  using the smallest 
+appropriate  units of  analysis feasible  to detect racial and  ethnic disparities, as well as disparities 
+along the lines of primary  language, sex, disability  status, sexual orientation, gender identity, and 
+socioeconomic status.”  
+ 
+Data are critical to our understanding  of the health of people and their  communities. It  is with 
+data that we can describe and contextualize what  promotes health, drives disparities, and how 
+structural racism and other forms  of oppression  influence  health outcomes.  
+ 
+This year major progress was made  at the Department. An easy-to-access page , on the 
+Department’s healthvermont.gov website , was created that collates the various health equity 
+related data analyses and projects into one location. Data analys es included program and 
+population specific briefs, longer populations of focus reports as well as a comprehensive 
+report on the state of health equity and the State Health Assessment  (SHA). The SHA included 
+an explicit focus on six key populations and a qualitative data collection process designed to 
+ensure as much inclusion as possible.  While more can always be done, this collective body of 
+work is an important demonstration of the focus and effort to address the need for thoughtful 
+and inclusi ve data collection, analysis , and dissemination.  
+ 
+Health Equity Analysis and Reports 
+ 
+Data analysis specifically examining disparities in health equity can be found on the Health 
+Equity Data  page. This page was created to centralize all analysis related to health equity, 
+creating a one -stop-shop on the Health Department site for those seeking information . Data 
+analyses  are done on a large range of data sources, surveys, registries and records . Topics of 
+focus range widely from substance use to heat vulnerability.  The list includes The State of Health 
+Equity in Vermont 2024  comprehensive report. The report utilizes data from the Behavior Risk 
+Surveillance System (BRFSS), Youth Risk Behavior Survey (YRBS) and Vermont Vital 
+Statistics and a brief summery follows here . Additionally, the Community Resiliency Index, 
+Healthy Vermonters 2030 and the State Health Assessment have all seen updates this past year  
+and short summaries are provided below.  
+ 
+The State of Health Equity in Vermont Report 
+ 
+Health Insurance and Access to Care 
+Statewide, 94% of Vermont adults have health insurance. However, only 82% of Black adults 
+report having health insurance. Similarly, a lot of Vermont adults (90%) have access to a primary 
+care physician. Adults who are Asian or Native Hawaiian or Pacific I slander (81%), Black (80%) 
+or another race (79%) are significantly less likely to have a primary care provider.  
+ 
+=== PAGE 4
+Vermont Department  of Health 
+ 
+ 
+2 
+Health Equity Data Report 
+  
+ 
+Physical and Mental Health 
+Thirteen percent of Vermonters report "fair or poor health." Disparities are seen across many 
+populations including American Indian or Alaska Native adults (32% report "fair or poor health") 
+and adults 65+ (21%).  
+ 
+Compared to the statewide rate reporting "not good" mental health (16%), adults who are 
+Bisexual (34%), another sexual orientation (38%) and Transgender (55%) report poor mental 
+health at statistically higher rates. All LGBTQ+ student populations report po or mental health 
+and feeling anxious at higher rates than the statewide number. Students who are Transgender 
+have the highest rates of these indicators (72% and 75% respectively).  Transgender students are 
+also statistically more likely to seriously conside r suicide, make a suicide plan , and attempt 
+suicide. 
+ 
+Youth Risk Factors 
+Students with a disability, who are Gay/Lesbian, Bisexual, Transgender, Asian or Native 
+Hawaiian or Pacific Islander, Black and Hispanic are statistically more likely to report they don't 
+get at least an hour of exercise per week.  
+ 
+Two percent of Vermont students report they most of the time/always go hungry due to lack of 
+food at home. Significant disparities are seen among students who are Hispanic (5%), 
+Gay/Lesbian (3%), another sexual orientation (3%), Transgender (6%), questioni ng their gender 
+(3%) or have any disability indicator . 
+ 
+Community Resilience Index 
+In 2023, the  Department released  the Community  Resilience Index, an interactive dashboard 
+with local geographic viewpoints to approach the data. This health equity tool  is intended to help 
+public health officials examine community resilience among populations across the state  and is 
+updated biannually . For the purposes of this tool, community  resilience is defined  as the ability  
+of a population  to mitigate and recover from public health crises and personal health emergencies 
+in a manner that sustains physical, social, and  mental health. This tool also presents the ability to 
+examine the prevalence  of specific  indicators used  in the construction  of the index, such  as 
+manageable housing expenses,  reliable internet access,  supportive  income  level, and 
+employment status. Additionally, the Vermont Community Resilience Index disaggregates 
+indicator data by race  and ethnicity groups when the data is available.  
+ 
+Healthy Vermonters 2030 
+The Department is  in the process of  developin g Healthy Vermonters 20 30, a system of 
+Department -wide assessments  and plans regarding the health of Vermonters.  Each 
+measure includes a story behind the curve and provides an integrated health equity lens to 
+all of the Department’s  work. The analyses from these integrated data sets will allow the 
+Department to measure health and wellbeing  disaggregated by a variety of variables 
+including race, ethnicity, primary language, sex, disability status, sexual orientation, gender 
+identity, and socioeconomic status.  The Healthy Vermonters  data sets was used to create a 
+new set of public dashboards  (to be published by February 2025) that create interactive tools 
+to measure a variety of  outcomes  for populations  living in Vermont.  
+ 
+State Health Assessment and Improvement Plan 
+=== PAGE 5
+Vermont Department  of Health 
+ 
+ 
+3 
+Health Equity Data Report 
+  
+ 
+The Vermont State Health  Assessment (SHA) is conducted  every five years and  provides  an 
+overview  of what we know about the health of people in Vermont at a point in  time. The SHA is an  
+analysis of  quantitative and  qualitative data that examines health  inequities by  race and ethnicity, 
+gender, age, sexual orientation, disability, socioeconomic status and  geography. The  assessment  
+takes data from around  the state, presents it in a way that summarizes the main health issues facing  
+Vermonters,  and identifies  3-5 priorities that  the state will focus on for the next five years. 
+ 
+Results of  the State Health Assessment are used to develop the State Health Improvement Plan  
+(SHIP). The SHIP outlines how the Department and other state and community partners will  
+prioritize efforts  to promote health  and equity in Vermont  over a five -year period.  It is a way for 
+different  sectors and  organizations to coordinate on  key issues to improve the lives of  people in 
+Vermont.  
+ 
+The Department, with guidance and direction from an external Steering Committee,  began the 
+process of updating  the State Health Assessment in the summer of  2023. The updated SHA findings 
+were published May 2024 with the formal report coming  by February 2025 . The SHIP to follow in  
+2025. The Department and the SHA/SHIP Steering Committee  are committed to using an equity lens 
+in both the process for developing the SHA/SHIP and  in the final product.  
+ 
+Key findings  from the SHA show continued health inequities in Vermont . Critical social 
+determinants of health, like homelessness and ability to afford food are both on the rise for 
+Vermonters at large, and much higher for Vermonters in the six communities of focus : Indigenous 
+people, older Vermonters, people of color, people with disabilities, people who are un housed,  and 
+people wh o identify as LGBTQ +. Based on the findings in the qualitative and quantitative data , 
+overwhelmingly the following four issues emerged and will be the  goals of the SHIP: access to 
+housing, cost of living, access to care, mental health , and substance use. The qualitative and 
+quantitative data are broken out by population, providing a detailed look at the health disparities in 
+Vermont.  
+ 
+Of note, this is the first Vermont SHA with in-depth qualitative findings, allowing for a much more 
+in-depth look at some of the disparities that do not always appear in quantitative data in Vermont. 
+While findings are primarily aimed at generating the SHIP, the SHA is also meant for broader use 
+for planning and decision making, and Vermonters are encouraged  to use these data in the work of 
+making a healthier, more equitable Vermont.  
+ 
+Data Collection Standards and Planning 
+ 
+Data Encyclopedia 
+The Department maintains a Data Encycloped ia that provides  an overview of  the majority of 
+data sources owned  or consistently  used by the Department. Types of  sources  include 
+population - based surveys, registries and surveillance systems, regulatory and licensing data,  
+insurance claims, and  hospital discharge data. The data owned  and used by the Department is 
+not all integrated and standardized. This limitation impacts the Department’s ability to take its  
+existing data and complete a comprehensive  analysis that measures health equity across lines of 
+race, ethnicity, primary language, sex, disability status, sexual orientation, gender identity, and 
+socioeconomic  status. The Department initiated  the first of  several steps that are  required  to 
+optimize the use of  these data by categorizing the health equity data available within  the Data 
+=== PAGE 6
+Vermont Department  of Health 
+ 
+ 
+4 
+Health Equity Data Report 
+  
+ 
+Encyclopedia.  
+ 
+The Data Encyclopedia is a piece of the Department’s emerging infrastructure  and augments the 
+Department’s capacity  to collect and analyze  health equity data across the  Department and  the 
+Agency of Human  Services. The Encyclopedia  is updated  regularly to account for  data source 
+changes and document  new information  as needs arise. The Department’s goal is to  standardize 
+data collection practices when  possible (i.e. when the Department has control over  the design of 
+the survey,  question  construction,  etc.). While in many cases the Department  does not have 
+control over the design (e.g., US Census), the Department  does have control over how the data are 
+analyzed, and to that end, is establishing standards and best practices to optimize health equity 
+analyses. When possible, the Department advocates for the incorporation of health equity data 
+collection and analysis  best practices into externally owned (i.e. not state owned) data sources  and 
+data products.  
+ 
+Health Department Strategic Plan 
+The current Strategic Plan runs from 2024 -2029. In this plan, t he Department has identified  
+main goals that include increasing data accessibility, equitable data collection, and  meaningful 
+analysis.  Efforts to  address this goal may include creating, documenting, and  training staff on 
+consistent and  clear recommendations and  expectations for equitable  data methodology, 
+interpretation, and  communication. Efforts may  also address elevating the importance of  
+qualitative data alongside  quantitative data  (exemplified in the current SHA) , and increasing 
+community -held, appropriate, and respectful interpretation and communication about data.  The 
+collective goal identified by the Department in its Strategic Plan will contribute to the 
+prioritization across  all divisions  within the Department. Through this initiative, the Department 
+anticipates operationalizing the data collection, documentation, and  analysis of  health equity 
+metrics, standards,  and guidelines in a manner  consistent with  the charge in required  in 18 
+V.S.A. § 253(b)(1).  
+ 
+Data Visualization Workgroup 
+A Health Department work group is updating our Data Visualization Style Guide. The updated 
+guidelines will provide more information on document and chart accessibility along with brand 
+standards on colors, fonts, and templates. With the new guidance and te mplates, analysts will be 
+able to create accessible data products while adhering to visual standards that create trust and brand 
+consistency in the eyes of the public.  
+ 
+Office of Health Equity Integration (OHEI) 
+In 2022, The Office of  Health Equity Integration was created with the mission of  reimagining 
+and rebuilding public health systems that have historically prevented individuals and  
+communities  in Vermont from living their healthiest lives. The Office  oversees  a federal 
+grant from the Center Disease Control and Prevention (CDC) which provided resources to  
+increase the Department’s capacity to collect, analyze, report health equity metrics , and support 
+state level collaborations on initiatives like the VT Health I nformation Exchange . Data 
+activities continue to be enhanced through  trainings, cross divisional collaborations, and 
+feedback from community partners to  improve health equity data knowledge and integration  
+throughout the Department.  In partnership with the Department’s Office of Workforce 
+Development, a mandatory 3-part training series was offered to all staff across the Department 
+focus ing on key concepts and conditions contributing to racial inequities in public health . This 
+=== PAGE 7
+Vermont Department  of Health 
+ 
+ 
+5 
+Health Equity Data Report 
+  
+ 
+training highlighted each staff member s role in addressing  and implementing an  equity 
+perspective  in their work, including those working with  data equity. The Office of Health 
+Equity Integration continues to collaborate cross divisionally  to inform data guiding resources 
+and best practices reporting on health outcomes, with particular attention to how health 
+surveillance affects historically marginalized population s.  
+ 
+Data Collection Best Practices 
+The Department is also in the process of improving its health equity data collection practices. 
+Guidelines and best  practices are currently being drafted advising Department staff  how to ask 
+health equity -based questions. Guidelines addressing a consistent approach in asking race - and 
+ethnicity-based questions are important for the development of trust with surveyed communities. 
+The first of these guidelines  were to be released  on race, ethnicity , sexual orientation and 
+gender identity. The Department plans to work on further guidance on disability in the coming 
+year.  
+ 
+Partner Coordination 
+Vermont Information Technology Leaders (VITL) 
+In SFY24 the Department collaborated with Vermont Information Technology Leaders (VITL) on 
+developing and piloting dashboards, as well as designing communications for the Race -Ethnicity-
+Language (REL) data Use Cases, prioritizing the commitment to expanding the collection, 
+reporting, and analysis of standardized Health Equity data. VITL is a non -profit organization that 
+operates VHIE, a secure, statewide data network that gives health care organizations in Vermont 
+the ability to electronically exchange and access their patients’ h ealth information. This database 
+facilitates information sharing between health care providers with no overlapping affiliation. The 
+Department uses VHIE’s data in a variety of ways, including the Department’s Health Equity 
+analysis. These efforts are essen tial for addressing disparities and improving the health outcomes 
+of the Vermonters.  
+ 
+Agency of Human Services Unified Health Data Space (UHDS) 
+The Agency of Human Services is working hard on the UHDS, and the Department collaborates 
+on this work and shares best practices in data collection through this integrated process.  The 
+UHDS will be an integrated, comprehensive data repository, combining data from multiple 
+sources including clinical, claims, social drivers of health , and more.  The goals of the UHDS are 
+to create one health record for every person, improve health outcomes, improve healthcare 
+operations , and enable data to be used for invest ment and policy decisions.  Additionally, the 
+Department will be able to utilize the resulting analytics and reporting functions of the UHDS  in 
+its work. 
+ 
+Partner coordination for the SHA 
+ Over 130 organizations were contacted to help arrange focus groups and interviews with people 
+representing the communities of focus and subject matter experts. Partner organizations helped 
+to connect the interview team with participants, schedule focus gr oups, and create the conditions 
+that allowed for meaningful and authentic conversations to take place. In all, 45 focus groups 
+(with 351 participants) were conducted with community members and staff from organizations 
+that serve the community. In addition,  40 key informant interviews were conducted with subject 
+matter experts.   
+ 
+=== PAGE 8
+Vermont Department  of Health 
+ 
+ 
+6 
+Health Equity Data Report 
+  
+ 
+Limitations 
+Staffing the full -time analyst position supporting health equity analysis continued to be a 
+challenge. To meet this challenge, the Department adjusted its strategy and was able to increase 
+accessibility of health equity related data on the website , complete a comprehensive health 
+equity report , and complete data collection guidance related to health equity. Efforts to integrate 
+health equity work into the ongoing functioning of staff is an ongoing activity.  
+The Department’s Office of Health Equity  Integration, a key internal  partner for this work, also 
+faced  challenges in 2023.  These included  staff  changes,  competing priorities,  and concerns 
+regarding continuation of  position funding.  
+SHA limitations: The SHA encountered a number of common limitations and challenges that are 
+fully listed on the SHA webpage. They are all common to secondary data reviews and community -
+based qualitative data collection and do not undermine the value of the findings.  Particular 
+limitations were around finding data on the unhoused population and Indigenous People.  
+ 
+The nature of Vermont’s  small population poses  challenges to health equity analysis  when data 
+sources  are not focused  on Vermont specifically.  National data  sources  pose significant 
+challenges for analysis  and application  to Vermont populations. When  the Department uses 
+national data for application  to Vermont’s population, the Department must methodologically 
+reduce the data to reflect  Vermont’s small  population. Reducing  national data proportionately to 
+Vermont’s  population  decreases the  confidence  of the data. Therefore,  the Department is 
+working on  alternative methodology  to make national data as useful  as possible.  
+=== PAGE 9
+Vermont Department  of Health 
+ 
+ 
+7 
+Health Equity Data Report 
+  
+ 
+ 
+Next Steps/Checklist 
+ 
+Item Progress  Next Steps 
+Continue to hold forums to  document best 
+practices for inclusive data collection  for 
+the purposes of  health equity data analysis 
+Completed for Race 
+and Ethnicity, 
+Sexual Orientation 
+and Gender Identity.  
+Identify staff to complete 
+similar processes for 
+disability and socio -
+economic status.  
+Continue to  provide context to  the data 
+and underscore the root causes of  health 
+disparities, particularly  for populations of  
+focus  
+SHA, Healthy 
+Vermonters 
+Dashboard  
+completed.  
+Continue in future reports.  
+Support the Agency of  Human Services to 
+ensure consistency in health equity data 
+collection across the Agency  
+In progress.  Following AHS needs.  
+Integrate equity data into the Healthy 
+Vermonters  2030  analysis and dashboard Completed   
+Maintain the data equity page and ensure 
+regular updates.  
+In progress   
+Document best practices and alternatives  
+related to data suppression and  statistical 
+confidence  when sample size is less 
+than what is generally recommended  
+In progress  Data Standards Guide 
+updated, additional review 
+and work needs to be 
+completed to address 
+additional situations.  
+Publish a comprehensive  health equity 
+analysis including as many data sources  
+as possible 
+Completed   
+Develop  and encourage the inclusion of an 
+acknowledgement  of data limitations in the 
+Department’s publications  
+Completed , 
+published to HIVE 
+and shared 
+internally. 
+Review periodically, 
+making updates as 
+appropriate.  
+Prepare for the analysis and reporting of 
+the race and ethnicity oversample  data 
+collected by the BRFSS in 2022 and 2023. 
+(Note: data will not be available until Fall of  
+2024, with reporting anticipated in 2025.)  
+ 
+Preparation 
+complete, awaiting 
+final data. Expected 
+in October 2024 .   
+Statewide report expected to 
+be released around the end 
+of 2024.  
+ 
+ 

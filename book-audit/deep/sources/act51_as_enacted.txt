@@ -1,0 +1,234 @@
+=== PAGE 1
+No. 51 Page 1 of 9 
+2023 
+ 
+VT LEG #371079 v.1 
+No. 51.  An act relating to miscellaneous changes affecting the duties of the 
+Department of Vermont Health Access. 
+(H.206) 
+It is hereby enacted by the General Assembly of the State of Vermont:  
+Sec. 1.  33 V.S.A. § 1992 is amended to read: 
+§ 1992.  MEDICAID COVERAGE FOR ADULT DENTAL SERVICES 
+(a)  Vermont Medicaid shall provide coverage for medically necessary 
+dental services provided by a dentist, dental therapist, or dental hygienist 
+working within the scope of the provider’s license as follows: 
+(1)  Preventive services, including prophylaxis and fluoride treatment, 
+with no co-payment.  These services shall not be counted toward the annual 
+maximum benefit amount set forth in subdivision (2) of this subsection. 
+(2)(A)  Diagnostic, restorative, and endodontic procedures, to a 
+maximum of $1,000.00 per calendar year, provided that the Department of 
+Vermont Health Access may approve expenditures in excess of that amount 
+when exceptional medical circumstances so require.  Exceptional medical 
+circumstances include emergency dental services, as defined by the 
+Department by rule. 
+(B)  The following individuals shall not be subject to the annual 
+maximum benefit amount set forth in this subdivision (2): 
+(i)  individuals served through the Community Rehabilitation and 
+Treatment and Developmental Disability Services programs pursuant to 
+Vermont’s Global Commitment to Health Section 1115 demonstration; and 
+=== PAGE 2
+No. 51 Page 2 of 9 
+2023 
+ 
+VT LEG #371079 v.1 
+(ii)  Medicaid beneficiaries who are pregnant or in the postpartum 
+eligibility period, as defined by the Department by rule. 
+(3)  Other dental services as determined by the Department by rule. 
+* * * 
+Sec. 2.  33 V.S.A. chapter 19, subchapter 1 is amended to read: 
+Subchapter 1.  Medicaid 
+* * * 
+§ 1908.  MEDICAID; PAYER OF LAST RESORT; RELEASE OF  
+              INFORMATION 
+* * * 
+(d)  On and after July 1, 2016, an insurer shall: 
+(1)  accept Accept the Agency’s right of recovery and the assignment of 
+rights and shall not charge the Agency or any of its authorized agents fees for 
+the processing of claims or eligibility requests.  Data files requested by or 
+provided to the Agency shall provide the Agency with eligibility and coverage 
+information that will enable the Agency to determine the existence of third-
+party coverage for Medicaid recipients, the period during which Medicaid 
+recipients may have been covered by the insurer, and the nature of the 
+coverage provided, including information such as the name, address, and 
+identifying number of the plan. 
+(2)  If the insurer requires prior authorization for an item or service, 
+accept the Agency’s authorization that the item or service is covered under the 
+=== PAGE 3
+No. 51 Page 3 of 9 
+2023 
+ 
+VT LEG #371079 v.1 
+Medicaid state plan or waiver as if such authorization were the insurer’s prior 
+authorization. 
+* * * 
+§ 1909.  DIRECT PAYMENTS TO AGENCY; DISCHARGE OF  
+              INSURER’S OBLIGATION 
+* * * 
+(c)(1)  An insurer that receives notice that the Agency has made payments 
+to the provider shall pay benefits or send notice of denial directly to the 
+Agency.  Receipt of an Agency claim form by an insurer constitutes notice that 
+payment of the claim was made by the Agency to the provider and that form 
+supersedes any contract requirements of the insurer relating to the form of 
+submission. 
+(2)  An insurer shall respond to any request made by the Agency 
+regarding a claim for payment for any health care item or service that is 
+submitted not later than three years after the date of the provision of such 
+health care item or service. 
+(3)  An insurer shall not: 
+(A)  deny a claim submitted by the Agency solely on the basis of the 
+date of submission of the claim, the type or format of the claim form, or a 
+failure to present proper documentation at the point-of-sale that is the basis of 
+the claim, if the claim is submitted by the Agency within the three-year period 
+beginning on the date on which the item or service was furnished and any 
+=== PAGE 4
+No. 51 Page 4 of 9 
+2023 
+ 
+VT LEG #371079 v.1 
+action by the Agency to enforce its rights with respect to a claim is 
+commenced within six years of following the Agency’s submission of the 
+claim.; or 
+(B)  deny a claim submitted by the Agency on the basis of failing to 
+obtain a prior authorization for the item or service for which the claim is being 
+submitted, if the Agency has transmitted authorization that the item or service 
+is covered by the Medicaid state plan or waiver under subdivision 1908(d)(2) 
+of this title. 
+* * * 
+Sec. 3.  18 V.S.A. § 4284 is amended to read: 
+§ 4284.  PROTECTION AND DISCLOSURE OF INFORMATION 
+* * * 
+(b)(1)  The Department shall provide only the following persons with access 
+to query the VPMS: 
+(A)  a health care provider, dispenser, or delegate who is registered 
+with the VPMS and certifies that the requested information is for the purpose 
+of providing medical or pharmaceutical treatment to a bona fide current 
+patient; 
+(B)  personnel or contractors, as necessary for establishing and 
+maintaining the VPMS; 
+(C)  the Medical Director of the Department of Vermont Health 
+Access and the Director’s designee, for the purposes of Medicaid quality 
+=== PAGE 5
+No. 51 Page 5 of 9 
+2023 
+ 
+VT LEG #371079 v.1 
+assurance, utilization, and federal monitoring requirements with respect to 
+Medicaid recipients for whom a Medicaid claim for a Schedule II, III, or IV 
+controlled substance has been submitted; 
+(D)  a medical examiner or delegate from the Office of the Chief 
+Medical Examiner, for the purpose of conducting an investigation or inquiry 
+into the cause, manner, and circumstances of an individual’s death; and 
+(E)  a health care provider or medical examiner licensed to practice in 
+another state, to the extent necessary to provide appropriate medical care to a 
+Vermont resident or to investigate the death of a Vermont resident.  
+* * * 
+Sec. 4.  FEDERALLY QUALIFIED HEALTH CENTERS; ALTERNATIVE  
+             PAYMENT METHODOLOGY; REPORT 
+The Department of Vermont Health Access shall collaborate with 
+representatives of Vermont’s federally qualified health centers (FQHCs) to 
+develop a mutually agreeable alternative payment methodology for Medicaid 
+payments to the FQHCs that is at least equal to the amount that would be paid 
+under the prospective payment system established under the Benefits 
+Improvement and Protection Act of 2000.  On or before October 1, 2023, the 
+Department shall provide a final report on the development of the methodology 
+to the Joint Fiscal Committee, the House Committee on Health Care, and the 
+Senate Committee on Health and Welfare. 
+=== PAGE 6
+No. 51 Page 6 of 9 
+2023 
+ 
+VT LEG #371079 v.1 
+Sec. 5.  BLUEPRINT FOR HEALTH; PAYMENTS TO PATIENT- 
+             CENTERED MEDICAL HOMES; REPORT 
+On or before January 15, 2024, the Director of Health Care Reform in the 
+Agency of Human Services shall recommend to the House Committees on 
+Health Care and on Appropriations and the Senate Committees on Health and 
+Welfare, on Appropriations, and on Finance the amounts by which health 
+insurers and Vermont Medicaid should increase the amount of the per-person, 
+per-month payments they make to Blueprint for Health patient-centered 
+medical homes in furtherance of the goal of providing the additional resources 
+necessary for delivery of comprehensive primary care services to Vermonters 
+and in order to sustain access to primary care services in Vermont.  The 
+Agency shall provide an estimate of the State funding that would be needed to 
+support the increase for Medicaid, both with and without federal financial 
+participation.  The Agency shall also evaluate and report on potential 
+mechanisms for ensuring that all payers are contributing equitably to the 
+Blueprint on behalf of their covered lives in Vermont, including a 
+consideration of supporting Blueprint initiatives through the health care claims 
+tax established in 32 V.S.A. chapter 243. 
+Sec. 6.  REPEAL OF PROSPECTIVE REPEAL OF 18 V.S.A. § 9473(g) 
+2021 Acts and Resolves No. 74, Sec. E.227.2 (prospective repeal; pharmacy 
+benefit managers; 340B entities), as amended by 2022 Acts and Resolves No. 
+131, Sec. 7, is repealed. 
+=== PAGE 7
+No. 51 Page 7 of 9 
+2023 
+ 
+VT LEG #371079 v.1 
+Sec. 7.  18 V.S.A. § 2251 is amended to read: 
+§ 2251.  LIEN ESTABLISHED 
+(a)  A Except as otherwise provided in this section, a hospital in Vermont, 
+as defined in section 1801 of this title, furnishing medical or other service, 
+including charges of private duty nurses, to a patient injured by reason of an 
+accident not covered by the Workers’ Compensation Act, 21 V.S.A. § 601 et 
+seq. chapter 9, shall have may file a lien upon any recovery for damages to be 
+received by the patient, or by his or her the patient’s heirs or personal 
+representatives in the case of his or her the patient’s death, whether by 
+judgment or by settlement or compromise after the date of the services.  This 
+lien shall not attach to one-third of the recovery or $500.00, whichever shall be 
+the lesser, and in addition the lien shall be subordinate to an attorney’s lien.  
+(b)(1)  Notwithstanding subsection (a) of this section, a hospital shall not 
+have a lien under this chapter if the patient has health insurance, including 
+coverage under Medicare, Medicaid, or a health plan issued by a health insurer, 
+as defined in section 9402 of this title, and the patient, or the patient’s heirs or 
+personal representatives in the case of the patient’s death, provides the hospital 
+with proof of health insurance not later than 90 days after the patient’s 
+discharge from or death at the hospital. 
+(2)  Notwithstanding subdivision (1) of this subsection, a hospital may 
+file a lien pursuant to subsection (a) of this section for any amount owed to the 
+hospital for the patient’s deductible or coinsurance, or both, under the health 
+=== PAGE 8
+No. 51 Page 8 of 9 
+2023 
+ 
+VT LEG #371079 v.1 
+insurance plan for the medical or other services furnished by the hospital by 
+filing notice of a lien at least 120 days after the hospital billed the patient’s 
+health insurance plan for the amount owed to the hospital for services 
+furnished to the patient.   
+(3)  The patient’s health insurance plan shall not deny payment for 
+services furnished by the hospital to the patient on the basis that some or all of 
+the patient’s medical costs may be covered by a property and casualty 
+insurance plan, unless such denial is required or expressly permitted by State 
+or federal law.  
+(c)(1)  A hospital that recovers under this chapter shall be responsible for a 
+pro rata share of the legal and administrative expenses incurred in obtaining 
+the judgment, settlement, or compromise.   
+(2)  In no event shall the hospital lien exceed one-third of the net 
+judgment, settlement, or compromise received by the injured patient. 
+Sec. 8.  2022 Acts and Resolves No. 167, Sec. 2a is added to read: 
+Sec. 2a.  GREEN MOUNTAIN CARE BOARD; HOSPITAL SYSTEM  
+        TRANSFORMATION; PILOT PROJECTS; REPORT 
+(a)  The Agency of Human Services shall engage in transformation planning 
+with up to four hospitals, or other number of hospitals if possible with alternate 
+funds, to reduce inefficiencies, lower costs, improve population health 
+outcomes, reduce health inequities, and increase access to essential services 
+while maintaining sufficient capacity for emergency management.  The 
+=== PAGE 9
+No. 51 Page 9 of 9 
+2023 
+ 
+VT LEG #371079 v.1 
+transformation planning shall be informed by the data analysis and community 
+engagement required in Sec. 2 of this act.  The Secretary of Human Services or 
+designee and the Chair and staff of the Green Mountain Care Board shall 
+consult with each other on the engagements in this section and the data 
+analysis and community engagement required in Sec. 2 of this act to ensure the 
+work is aligned. 
+(b)  On or before February 15, 2024, the Agency of Human Services shall 
+update the Senate Committee on Health and Welfare and the House Committee 
+on Health Care on the progress of this work. 
+Sec. 9.  EFFECTIVE DATES 
+This act shall take effect on July 1, 2023, except that Sec. 7 (hospital liens) 
+shall take effect on January 1, 2024. 
+Date Governor signed bill:  June 6, 2023 
