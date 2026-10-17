@@ -65,7 +65,20 @@ def main():
                 continue
             old, new = md2docx(q).strip(), md2docx(r['proposed_new_text'] or '').strip()
             try:
-                x = replace_text(x, old, new, 1)
+                if new == '':
+                    try:
+                        x = replace_text(x, ' ' + old, '', 1)
+                    except SystemExit:
+                        x = replace_text(x, old, '', 1)
+                else:
+                    # guard: a replacement that ends a sentence must not be followed by leftover text of the
+                    # same sentence (agent quoted only the start of a sentence but proposed a whole one)
+                    from docx_text import doc_text as _dt
+                    para = next((p for p in _dt(x).split('\n') if old in p), '')
+                    rest = para[para.find(old) + len(old):] if old in para else ''
+                    if new.rstrip().endswith(('.', ';', ')')) and not old.rstrip().endswith(('.', ';', ')')) and rest.strip() and not re.match(r'\s+[A-Z(“‘]', rest):
+                        raise SystemExit('guard: sentence-ending replacement for a partial-sentence quote; rest=%r' % rest[:60])
+                    x = replace_text(x, old, new, 1)
                 ok += 1
             except SystemExit as e:
                 failed.append((r['id'], str(e)[:160]))
