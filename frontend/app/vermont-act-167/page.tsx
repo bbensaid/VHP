@@ -202,8 +202,8 @@ export default function VermontAct167Page() {
               <p className="ty-body text-slate-600 leading-relaxed mb-4">
                 Commissioned by the Green Mountain Care Board under a fixed-price $1,050,000 contract
                 (August 2023 – September 2024), this 144-page study — led by <strong>Bruce Hamory, MD</strong>,
-                a physician-consultant and partner at <strong>Oliver Wyman Group</strong> — represents the
-                most comprehensive external assessment of Vermont's hospital system ever undertaken.
+                a physician-consultant and partner at <strong>Oliver Wyman Group</strong> — is a detailed, public,
+                hospital-by-hospital assessment of Vermont's hospital system.
               </p>
               <p className="ty-body text-slate-600 leading-relaxed">
                 The report synthesized data from two rounds of community engagement involving hundreds
