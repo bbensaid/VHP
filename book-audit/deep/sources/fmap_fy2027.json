@@ -1,0 +1,222 @@
+{
+ "Alabama": {
+  "fmap": 72.55,
+  "efmap": 80.79
+ },
+ "Alaska": {
+  "fmap": 51.37,
+  "efmap": 65.96
+ },
+ "American Samoa": {
+  "fmap": 83.0,
+  "efmap": 85.0
+ },
+ "Arizona": {
+  "fmap": 63.81,
+  "efmap": 74.67
+ },
+ "Arkansas": {
+  "fmap": 70.52,
+  "efmap": 79.36
+ },
+ "California": {
+  "fmap": 50.0,
+  "efmap": 65.0
+ },
+ "Colorado": {
+  "fmap": 50.0,
+  "efmap": 65.0
+ },
+ "Connecticut": {
+  "fmap": 50.0,
+  "efmap": 65.0
+ },
+ "Delaware": {
+  "fmap": 60.33,
+  "efmap": 72.23
+ },
+ "Florida": {
+  "fmap": 55.43,
+  "efmap": 68.8
+ },
+ "Georgia": {
+  "fmap": 66.63,
+  "efmap": 76.64
+ },
+ "Guam": {
+  "fmap": 83.0,
+  "efmap": 85.0
+ },
+ "Hawaii": {
+  "fmap": 58.39,
+  "efmap": 70.87
+ },
+ "Idaho": {
+  "fmap": 67.31,
+  "efmap": 77.12
+ },
+ "Illinois": {
+  "fmap": 52.91,
+  "efmap": 67.04
+ },
+ "Indiana": {
+  "fmap": 65.24,
+  "efmap": 75.67
+ },
+ "Iowa": {
+  "fmap": 63.33,
+  "efmap": 74.33
+ },
+ "Kansas": {
+  "fmap": 62.5,
+  "efmap": 73.75
+ },
+ "Kentucky": {
+  "fmap": 71.56,
+  "efmap": 80.09
+ },
+ "Louisiana": {
+  "fmap": 68.14,
+  "efmap": 77.7
+ },
+ "Maine": {
+  "fmap": 60.62,
+  "efmap": 72.43
+ },
+ "Maryland": {
+  "fmap": 50.0,
+  "efmap": 65.0
+ },
+ "Massachusetts": {
+  "fmap": 50.0,
+  "efmap": 65.0
+ },
+ "Michigan": {
+  "fmap": 65.7,
+  "efmap": 75.99
+ },
+ "Minnesota": {
+  "fmap": 51.36,
+  "efmap": 65.95
+ },
+ "Mississippi": {
+  "fmap": 77.32,
+  "efmap": 84.12
+ },
+ "Missouri": {
+  "fmap": 64.58,
+  "efmap": 75.21
+ },
+ "Montana": {
+  "fmap": 60.01,
+  "efmap": 72.01
+ },
+ "Nebraska": {
+  "fmap": 54.54,
+  "efmap": 68.18
+ },
+ "Nevada": {
+  "fmap": 59.31,
+  "efmap": 71.52
+ },
+ "New Hampshire": {
+  "fmap": 50.0,
+  "efmap": 65.0
+ },
+ "New Jersey": {
+  "fmap": 50.0,
+  "efmap": 65.0
+ },
+ "New Mexico": {
+  "fmap": 71.47,
+  "efmap": 80.03
+ },
+ "New York": {
+  "fmap": 50.0,
+  "efmap": 65.0
+ },
+ "North Carolina": {
+  "fmap": 64.16,
+  "efmap": 74.91
+ },
+ "North Dakota": {
+  "fmap": 52.91,
+  "efmap": 67.04
+ },
+ "Northern Mariana Islands": {
+  "fmap": 83.0,
+  "efmap": 85.0
+ },
+ "Ohio": {
+  "fmap": 65.12,
+  "efmap": 75.58
+ },
+ "Oklahoma": {
+  "fmap": 65.86,
+  "efmap": 76.1
+ },
+ "Oregon": {
+  "fmap": 58.18,
+  "efmap": 70.73
+ },
+ "Pennsylvania": {
+  "fmap": 57.41,
+  "efmap": 70.19
+ },
+ "Puerto Rico": {
+  "fmap": 76.0,
+  "efmap": 83.2
+ },
+ "Rhode Island": {
+  "fmap": 57.81,
+  "efmap": 70.47
+ },
+ "South Carolina": {
+  "fmap": 69.28,
+  "efmap": 78.5
+ },
+ "South Dakota": {
+  "fmap": 50.56,
+  "efmap": 65.39
+ },
+ "Tennessee": {
+  "fmap": 63.34,
+  "efmap": 74.34
+ },
+ "Texas": {
+  "fmap": 58.54,
+  "efmap": 70.98
+ },
+ "Utah": {
+  "fmap": 61.95,
+  "efmap": 73.37
+ },
+ "Vermont": {
+  "fmap": 57.76,
+  "efmap": 70.43
+ },
+ "Virgin Islands": {
+  "fmap": 83.0,
+  "efmap": 85.0
+ },
+ "Virginia": {
+  "fmap": 50.02,
+  "efmap": 65.01
+ },
+ "Washington": {
+  "fmap": 50.0,
+  "efmap": 65.0
+ },
+ "West Virginia": {
+  "fmap": 74.25,
+  "efmap": 81.98
+ },
+ "Wisconsin": {
+  "fmap": 61.23,
+  "efmap": 72.86
+ },
+ "Wyoming": {
+  "fmap": 50.0,
+  "efmap": 65.0
+ }
+}
