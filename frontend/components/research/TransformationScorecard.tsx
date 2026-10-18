@@ -110,7 +110,7 @@ const PILLARS: PillarConfig[] = [
       { label: "HEDIS composite performance", benchmark: "≥75th percentile on priority measures" },
       { label: "Care management penetration", benchmark: "≥90% of high-risk members in program" },
       { label: "30-day readmission rate", benchmark: "Below Vermont's 14.8% (AHS, Nov 2025)" },
-      { label: "Primary care investment ratio", benchmark: "≥Act 68 primary care investment floor" },
+      { label: "Primary care investment ratio", benchmark: "Strategic Plan primary-care spending target (due Jan 2028)" },
     ],
     milestones: [
       { label: "Jan 2028: Strategic Plan sets primary-care spending-share targets (Act 68)", date: "Jan 2028", status: "upcoming", vermont: "18 V.S.A. § 9403(b)(7). Vermont withdrew from AHEAD in July 2026, so no federal primary-care floor applies" },
