@@ -75,7 +75,7 @@ type PeerGroup = "cah" | "rural_pps" | "urban_community" | "urban_tertiary";
 // SCENARIO PRESETS (extended 2026-09-28 to match HTR_Book_v42 §7.6.2, which
 // tells a CFO they can run FOUR scenarios: RBP at 200% of Medicare (Oliver
 // Wyman) or 250% (GMCB Dec 2024 upper scenario); a global budget revenue cap; H.R. 1 Medicaid
-// cuts phasing in across 2027–2031; and a transformation-investment scenario.)
+// cuts phasing in across 2027–2032; and a transformation-investment scenario.)
 interface Preset {
   id: string;
   label: string;
@@ -94,7 +94,7 @@ interface Preset {
   sourced: boolean;
   /** Reference-based-pricing cap, as a % of Medicare. null = RBP not modeled. */
   rbpCapPct?: number | null;
-  /** H.R. 1 Medicaid-cut phase-in year (2027–2031). null = not modeled. */
+  /** H.R. 1 Medicaid-cut phase-in year (2027–2032). null = not modeled. */
   hr1PhaseYear?: number | null;
   /** Years elapsed since the transformation investment. null = not modeled. */
   transformYears?: number | null;
@@ -130,16 +130,16 @@ const COMMERCIAL_PRICE_DEFAULT = 300;
 const COMMERCIAL_SHARE_DEFAULT = 35;
 
 // ─── H.R. 1 MEDICAID CUTS ─────────────────────────────────────────────────────
-// The book (§7.6.2) has the cuts PHASING IN across 2027–2031, not landing as a
-// single post-2030 cliff (which is how this tool's earlier preset was labeled).
-// Full-phase reduction in Medicaid revenue at 2031 = 12% — a MODEL ASSUMPTION with
+// The book (§7.6.2) has the cuts PHASING IN across 2027–2032 (work requirements from
+// 2027; provider-tax safe harbor stepping down FY2028–FY2032), not a single post-2030 cliff.
+// Full-phase reduction in Medicaid revenue at 2032 = 12% — a MODEL ASSUMPTION with
 // no published per-hospital source (labelled as such in the UI); intervening years are
 // a linear phase-in.
 const HR1_FULL_CUT_PCT = 12;
 const HR1_PHASE: Record<number, number> = {
-  2027: 0.2, 2028: 0.4, 2029: 0.6, 2030: 0.8, 2031: 1.0,
+  2027: 1 / 6, 2028: 2 / 6, 2029: 3 / 6, 2030: 4 / 6, 2031: 5 / 6, 2032: 1.0,
 };
-const HR1_YEARS = [2027, 2028, 2029, 2030, 2031];
+const HR1_YEARS = [2027, 2028, 2029, 2030, 2031, 2032];
 
 // ─── TRANSFORMATION INVESTMENT ────────────────────────────────────────────────
 // The book's $195M Rural Health Transformation (RHT) award. Allocated to a
@@ -460,7 +460,7 @@ const VERMONT_PRESETS: Preset[] = [
   },
   {
     id: "hr1_cliff",
-    label: "H.R. 1 Medicaid Cuts (Phasing 2027–2031)",
+    label: "H.R. 1 Medicaid Cuts (Phasing 2027–2032)",
     badge: "Stress Test · $911B Cuts, phased",
     peerGroup: "cah" as PeerGroup,
     totalRevenue: 133_959_077,
@@ -474,7 +474,7 @@ const VERMONT_PRESETS: Preset[] = [
     volumeChangePct: -5,
     travelNurseIncreasePct: 15,
     sourced: false,
-    hr1PhaseYear: 2031, // fully phased; drag the year control back to 2027
+    hr1PhaseYear: 2032, // fully phased; drag the year control back to 2027
   },
   {
     id: "rht_transformation",
@@ -649,7 +649,7 @@ export default function HospitalFinancialScorecard() {
   const [rbpCapPct, setRbpCapPct] = useState<number | null>(null);
   const [commercialPricePct, setCommercialPricePct] = useState(COMMERCIAL_PRICE_DEFAULT);
   const [commercialSharePct, setCommercialSharePct] = useState(COMMERCIAL_SHARE_DEFAULT);
-  // Scenario 3 — H.R. 1 Medicaid cuts, phasing 2027–2031
+  // Scenario 3 — H.R. 1 Medicaid cuts, phasing 2027–2032
   const [hr1PhaseYear, setHr1PhaseYear] = useState<number | null>(null);
   // Scenario 4 — transformation investment
   const [transformYears, setTransformYears] = useState<number | null>(null);
@@ -712,7 +712,7 @@ export default function HospitalFinancialScorecard() {
         ? (commercialSharePct / 100) * (1 - rbpCapPct / commercialPricePct) * 100
         : 0;
 
-    // ── Scenario 3: H.R. 1 Medicaid cuts, phasing 2027–2031 ──
+    // ── Scenario 3: H.R. 1 Medicaid cuts, phasing 2027–2032 ──
     // A selected phase year overrides the manual Medicaid slider.
     const effectiveMedicaidCutPct =
       hr1PhaseYear != null
@@ -1037,7 +1037,7 @@ export default function HospitalFinancialScorecard() {
             )}
           </div>
 
-          {/* ── SCENARIO 3: H.R. 1 Medicaid cuts, phasing 2027–2031 ── */}
+          {/* ── SCENARIO 3: H.R. 1 Medicaid cuts, phasing 2027–2032 ── */}
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 space-y-3">
             <div className="flex items-center justify-between">
               <p className="text-[10px] font-black uppercase tracking-widest text-amber-700">3 · H.R. 1 Medicaid Cuts — Phase-In</p>
@@ -1067,7 +1067,7 @@ export default function HospitalFinancialScorecard() {
               ))}
             </div>
             <p className="text-[9px] text-slate-500 leading-relaxed">
-              The cuts phase in across 2027–2031 rather than landing as a single post-2030
+              The cuts phase in across 2027–2032 rather than landing as a single post-2030
               cliff. Selecting a year overrides the Medicaid slider above with that year&apos;s
               phased share of an assumed {HR1_FULL_CUT_PCT}% Medicaid revenue reduction (HTR assumption — no published per-hospital estimate)
               {hr1PhaseYear != null && <> — currently <strong>{fmt(results.effectiveMedicaidCutPct, 1)}%</strong></>}.
