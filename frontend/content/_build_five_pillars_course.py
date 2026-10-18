@@ -5956,7 +5956,7 @@ ECONOMICS = [{'id': 'lesson_5p_global_budgets_rbp',
                                {'value': '12%',
                                 'label': 'Average HCC coding gap at Vermont critical access '
                                          'hospitals',
-                                'source': '2025 Vermont Rural Health Redesign Center assessment'}]},
+                                'source': 'GMCB VHCURES documentation'}]},
                     {'type': 'callout',
                      'variant': 'info',
                      'heading': "What Pioneer ACO's Attrition Actually Shows",
@@ -6413,7 +6413,7 @@ ECONOMICS = [{'id': 'lesson_5p_global_budgets_rbp',
                                {'value': '12%',
                                 'label': 'Average HCC coding gap at Vermont critical access '
                                          'hospitals',
-                                'source': '2025 Vermont Rural Health Redesign Center assessment'},
+                                'source': 'GMCB VHCURES documentation'},
                                {'value': '$556M',
                                 'label': 'Kaiser Permanente DOJ settlement for Medicare Advantage '
                                          'risk-adjustment fraud, January 2026',
