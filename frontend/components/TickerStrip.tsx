@@ -11,6 +11,7 @@ interface TickerItem {
   value?: string;
   trend?: string;
   status?: string;
+  source?: string;
   type?: "vital" | "bed";
 
   // News Headlines fields
@@ -185,7 +186,7 @@ export default function TickerStrip({
 
               <div className="mb-4">
                 <span className="text-xs font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400 block mb-1">
-                  {selectedItem.type === "bed" ? "Vermont Hospital · Bed Availability" : "System Vital"}
+                  {selectedItem.type === "bed" ? "Vermont Hospital · Bed Availability" : "Vermont Indicator"}
                 </span>
                 <h3 className="ty-h3 font-black text-slate-900 dark:text-slate-100">
                   {selectedItem.label}
@@ -220,13 +221,7 @@ export default function TickerStrip({
                   </p>
                 ) : (
                   <p>
-                    Detailed analytics and historical data for{" "}
-                    <strong>{selectedItem.label}</strong> would appear here. This
-                    metric is currently flagged as{" "}
-                    <span className={`font-bold uppercase ${getTickerColor(selectedItem.status)}`}>
-                      {selectedItem.status || "Normal"}
-                    </span>
-                    .
+                    Source: {selectedItem.source ?? "not recorded"}.
                   </p>
                 )}
               </div>
