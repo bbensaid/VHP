@@ -1,18 +1,17 @@
-import { getAllPerformanceIndexes } from "@/lib/sanity-dashboard-queries";
 import { getUser, roleAtLeast } from "@/lib/auth";
 import UpgradePrompt from "@/components/UpgradePrompt";
 
 export const metadata = {
   title: "50-State Dashboard | HTR",
-  description: "State-by-state healthcare performance dashboard — compare Medicaid, hospital, and health system transformation metrics across all 50 states.",
+  description: "Sourced state-by-state indicators — coverage, access, hospitals, Medicaid expansion and federal Rural Health Transformation awards — for all 50 states.",
 };
 import DashboardIndexClient from "./DashboardIndexClient";
 import Link from "next/link";
 
-export const revalidate = 3600; // re-fetch from Sanity at most once per hour
+export const revalidate = 3600;
 
 export default async function DashboardIndex() {
-  const [allStates, user] = await Promise.all([getAllPerformanceIndexes(), getUser()]);
+  const user = await getUser();
   const isSubscriber = user ? roleAtLeast(user.role, "subscriber") : false;
 
   return (
@@ -34,7 +33,7 @@ export default async function DashboardIndex() {
           Compare states →
         </Link>
       </div>
-      <DashboardIndexClient allStates={allStates} />
+      <DashboardIndexClient />
     </>
   );
 }

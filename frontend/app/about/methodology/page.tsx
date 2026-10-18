@@ -1,454 +1,85 @@
 "use client";
 
+// Rewritten 2026-10-17. The earlier page described an "HTR Health System Performance Index" — eighteen weighted
+// sub-metrics "calculated from primary government data sources". No such calculation existed: the stored scores were
+// hand-entered. The dashboard now shows sourced indicators only (lib/data/state-indicators.ts), described below.
+
 import { Suspense } from "react";
-import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+import { ArrowLeftIcon } from "@heroicons/react/24/outline";
+import { INDICATORS, INDICATOR_SOURCES, INDICATORS_GENERATED } from "@/lib/data/state-indicators";
 
-// ── Metric Detail Component ────────────────────────────────────────────────────
-const MetricDetail = ({
-  pillar,
-  metric,
-  description,
-  weight,
-}: {
-  pillar: string;
-  metric: string;
-  description: string;
-  weight?: string;
-}) => {
-  const styles: Record<string, { label: string; bar: string; text: string; bg: string; border: string }> = {
-    Policy:     { label: "Policy",     bar: "bg-blue-600",     text: "text-blue-700",    bg: "bg-blue-50",     border: "border-blue-200" },
-    Economics:  { label: "Economics",  bar: "bg-emerald-500", text: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" },
-    Technology: { label: "Technology", bar: "bg-indigo-500",  text: "text-indigo-700",  bg: "bg-indigo-50",  border: "border-indigo-200" },
-    Clinical:   { label: "Clinical",   bar: "bg-rose-500",    text: "text-rose-700",    bg: "bg-rose-50",    border: "border-rose-200" },
-    Equity:     { label: "Equity",     bar: "bg-violet-500",  text: "text-violet-700",  bg: "bg-violet-50",  border: "border-violet-200" },
-    "Equity Imperative": { label: "Equity Imperative", bar: "bg-violet-500", text: "text-violet-700", bg: "bg-violet-50", border: "border-violet-200" },
-    Operations: { label: "Operations", bar: "bg-amber-500",  text: "text-amber-700",  bg: "bg-amber-50",  border: "border-amber-200" },
-  };
-  const s = styles[pillar] ?? styles["Policy"];
-
-  return (
-    <div className={`border ${s.border} rounded-xl p-5 ${s.bg}`}>
-      <div className="flex items-center justify-between mb-2">
-        <span className={`text-[10px] font-black tracking-[0.15em] uppercase ${s.text} flex items-center gap-2`}>
-          <span className={`w-2 h-2 rounded-full ${s.bar}`} />
-          {pillar}
-        </span>
-        {weight && (
-          <span className={`text-[10px] font-black ${s.text} border ${s.border} px-2 py-0.5 rounded`}>
-            weight: {weight}
-          </span>
-        )}
-      </div>
-      <dt className="text-base font-bold text-slate-900">{metric}</dt>
-      <dd className="mt-1 ty-body text-slate-600 leading-relaxed">{description}</dd>
-    </div>
-  );
+const PILLAR_LABEL: Record<string, string> = {
+  policy: "Policy", technology: "Technology", economics: "Economics", clinical: "Clinical", operations: "Operations", equity: "Equity Imperative",
 };
 
-// ── Pillar Score Block ─────────────────────────────────────────────────────────
-const PillarBlock = ({
-  pillar,
-  weight,
-  metrics,
-  barColor,
-  textColor,
-}: {
-  pillar: string;
-  weight: string;
-  metrics: string[];
-  barColor: string;
-  textColor: string;
-}) => (
-  <div className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-    <div className={`${barColor} px-4 py-3 flex items-center justify-between`}>
-      <span className="text-white font-black text-sm uppercase tracking-wider">{pillar}</span>
-      <span className="text-white/80 text-xs font-bold">Index weight: {weight}</span>
-    </div>
-    <ul className="p-4 space-y-2">
-      {metrics.map((m) => (
-        <li key={m} className="flex items-center gap-2 text-sm text-slate-700">
-          <span className={`w-1.5 h-1.5 rounded-full ${barColor} shrink-0`} />
-          {m}
-        </li>
-      ))}
-    </ul>
-  </div>
-);
-
 function MethodologyPageInner() {
-  const searchParams = useSearchParams();
-  const from = searchParams.get("from");
-  const backHref = from || "/dashboard";
-  const backText = from ? "Back to State Page" : "Back to the Index Dashboard";
-
+  const from = useSearchParams().get("from");
   return (
-    <div className="bg-white font-sans text-slate-800 min-h-screen">
+    <div className="max-w-4xl mx-auto px-6 py-12 text-slate-800">
+      {from && (
+        <Link href={from} className="inline-flex items-center text-sm font-bold text-slate-500 hover:text-indigo-600 mb-6">
+          <ArrowLeftIcon className="w-4 h-4 mr-1.5" /> Back
+        </Link>
+      )}
+      <p className="text-xs font-black uppercase tracking-widest text-indigo-600 mb-2">Methodology</p>
+      <h1 className="ty-h1 font-black text-slate-900 mb-4">How HTR Sources Its Numbers</h1>
+      <p className="ty-hero text-slate-600 leading-relaxed mb-10">
+        Every figure on the platform names its source. Where a number could not be traced to one, it was removed rather
+        than estimated. Models — the simulators and calculators — are labelled as models and show their assumptions.
+      </p>
 
-      {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <div className="bg-indigo-700 text-white py-10 md:py-14 relative overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-[0.04]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.4) 1px, transparent 1px)",
-            backgroundSize: "48px 48px",
-          }}
-        />
-        <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl translate-x-1/4 -translate-y-1/4 pointer-events-none" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
-            <Link
-              href={backHref}
-              className="inline-flex items-center text-sm font-bold text-slate-400 hover:text-indigo-400 transition-colors"
-            >
-              <ArrowLeftIcon className="w-4 h-4 mr-1.5" />
-              {backText}
-            </Link>
-          </div>
-          <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-400 mb-5 block">
-            Our Methodology
-          </span>
-          <h1 className="ty-h1 font-black tracking-tight leading-tight mb-5">
-            The HTR Health System <span className="text-indigo-400">Performance Index</span>
-          </h1>
-          <p className="ty-hero text-slate-300 max-w-2xl leading-relaxed">
-            A proprietary composite metric — built across five pillars and fifteen sub-metrics, checked against the Equity Imperative — designed to provide a standardized, cross-dimensional measure of each state&rsquo;s healthcare system performance and readiness for transformation.
-          </p>
-        </div>
-      </div>
+      <section className="mb-12">
+        <h2 className="text-xl font-black text-slate-900 mb-3">The framework</h2>
+        <p className="text-slate-600 leading-relaxed">
+          The five pillars — Policy, Technology, Economics, Clinical and Operations — and the Equity Imperative that tests
+          each of them come from the book&apos;s Chapter 1, with the dependency logic that sets their order. See the{" "}
+          <Link href="/about/framework" className="text-indigo-700 underline">framework page</Link>. Pillar readiness is
+          scored only where the book sources it — Vermont, in the{" "}
+          <Link href="/htr-simulator" className="text-indigo-700 underline">HTR Simulator</Link> — and is never presented as a
+          maturity ranking of states.
+        </p>
+      </section>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 space-y-20">
-
-        {/* ── OVERVIEW ─────────────────────────────────────────────────── */}
-        <section>
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-8 h-8 bg-indigo-600 text-white rounded-lg flex items-center justify-center font-black text-sm">1</div>
-            <h2 className="ty-h1 font-black text-slate-900">Framework Overview</h2>
-          </div>
-          <p className="text-slate-600 ty-hero leading-relaxed mb-6">
-The HTR Performance Index scores health system transformation readiness across five pillars: Policy, Technology, Economics, Clinical, and Operations. Each pillar addresses a distinct structural variable that determines whether a proposed transformation is permissible, possible, sustainable, effective, and executable — and every pillar is checked against the Equity Imperative: is it just? The Index reflects fifteen weighted sub-metrics across those five pillars, plus three Equity Imperative indicators tracked separately, each normalized to a 0–100 scale where a higher score is always better.
-          </p>
-          <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-6">
-            <p className="text-indigo-900 font-semibold text-sm leading-relaxed">
-              <strong>Why five pillars, and why is Equity not a sixth?</strong> Policy, Technology, and Economics determine whether a transformation is authorized, infrastructurally possible, and funded. Clinical and Operations determine whether it actually works and whether the institution can execute it at scale. All five are structural variables a composite score can weigh against each other. The Equity Imperative cannot be traded off the same way — a state cannot buy back a justice failure with a higher Policy score — which is why it is tracked as a check on the result rather than blended into the weighted average.
-            </p>
-          </div>
-          <Link
-            href="/about/framework"
-            className="mt-5 flex items-center justify-between gap-4 px-5 py-4 rounded-xl border-2 border-indigo-200 bg-white hover:border-indigo-400 hover:bg-indigo-50 transition-all group"
-          >
-            <div className="flex items-center gap-3">
-              <span className="text-2xl leading-none">🕸️</span>
-              <div>
-                <p className="text-sm font-black text-indigo-700">See how the five pillars interrelate</p>
-                <p className="text-xs text-slate-500">Interactive dependency map — click any pillar to trace its connections</p>
-              </div>
-            </div>
-            <span className="text-sm font-bold text-indigo-600 group-hover:text-indigo-800 whitespace-nowrap">
-              Open Map →
-            </span>
-          </Link>
-        </section>
-
-        {/* ── INPUT METRICS ────────────────────────────────────────────── */}
-        <section>
-          <div className="flex items-center gap-3 mb-8">
-            <div className="w-8 h-8 bg-indigo-600 text-white rounded-lg flex items-center justify-center font-black text-sm">2</div>
-            <h2 className="ty-h1 font-black text-slate-900">Input Data &amp; Sub-Metrics</h2>
-          </div>
-          <p className="text-slate-600 leading-relaxed mb-8">
-            Eighteen sub-metrics are calculated from primary government data sources — CMS, HRSA, FCC, CDC, HFMA, and state-level filings — and normalized to a 0–100 scale. Each pillar contributes three metrics to the composite score.
-          </p>
-          <div className="space-y-4">
-            {/* Policy */}
-            <MetricDetail
-              pillar="Policy"
-              metric="Value-Based Payment (VBP) Adoption"
-              description="The extent to which payers and providers in the state have adopted VBP models over fee-for-service. Scored on CMS AHEAD enrollment, ACO participation, and Medicaid alternative payment model penetration."
-              weight="0.20"
-            />
-            <MetricDetail
-              pillar="Policy"
-              metric="Telehealth Policy Permissiveness"
-              description="Measures the breadth of reimbursement parity, geographic eligibility, and originating site flexibility in state telehealth law. Updated quarterly as legislative sessions advance."
-              weight="0.10"
-            />
-            <MetricDetail
-              pillar="Policy"
-              metric="Scope of Practice Index"
-              description="Reflects the degree to which state law allows nurse practitioners, physician assistants, and other advanced practice providers to operate at the full extent of their training — a key determinant of rural access."
-              weight="0.10"
-            />
-            {/* Economics */}
-            <MetricDetail
-              pillar="Economics"
-              metric="Per-Capita Healthcare Spending Efficiency"
-              description="An efficiency score where a higher value indicates lower per-capita spending relative to national average, adjusted for population complexity. Captures resource allocation discipline."
-              weight="0.10"
-            />
-            <MetricDetail
-              pillar="Economics"
-              metric="Workforce Availability Index"
-              description="Measures the availability of primary care physicians, NPs, and PAs per 100,000 rural residents. A higher score indicates a smaller rural workforce gap and better primary access."
-              weight="0.10"
-            />
-            <MetricDetail
-              pillar="Economics"
-              metric="Insurance Coverage Rate"
-              description="Population-weighted score based on the percentage of residents with any form of health insurance, with additional weighting for rural county coverage rates."
-              weight="0.10"
-            />
-            {/* Technology */}
-            <MetricDetail
-              pillar="Technology"
-              metric="Health Information Exchange (HIE) Maturity"
-              description="Represents the maturity, adoption rate, and bidirectional interoperability of the state's HIE infrastructure. Draws from ONC Health IT Dashboard data."
-              weight="0.05"
-            />
-            <MetricDetail
-              pillar="Technology"
-              metric="Rural Broadband Access"
-              description="FCC-sourced measurement of broadband availability and minimum qualifying speed in rural census blocks. Critical infrastructure for telehealth and remote monitoring viability."
-              weight="0.05"
-            />
-            <MetricDetail
-              pillar="Technology"
-              metric="Certified EHR Adoption Rate"
-              description="Adoption rate of ONC-certified Electronic Health Record systems among rural providers, sourced from CMS Medicare and Medicaid EHR Incentive Program data."
-              weight="0.05"
-            />
-            {/* Clinical */}
-            <MetricDetail
-              pillar="Clinical"
-              metric="Preventable Hospitalization Rate"
-              description="Age-adjusted ambulatory care-sensitive condition (ACSC) hospitalization rate per 10,000 rural residents. Lower rates indicate more effective primary and preventive care delivery."
-              weight="0.05"
-            />
-            <MetricDetail
-              pillar="Clinical"
-              metric="Rural Hospital Operational Viability"
-              description="Composite of rural hospital operating margin, days cash on hand, and 30-day readmission rates. Identifies clinical infrastructure sustainability."
-              weight="0.05"
-            />
-            <MetricDetail
-              pillar="Clinical"
-              metric="Advanced Care Access Index"
-              description="Measures availability of specialist care, behavioral health services, and maternal health within 60 minutes of rural residents. Draws from HRSA Health Professional Shortage Area designations."
-              weight="0.05"
-            />
-            {/* Equity Imperative — tracked, not weighted into the composite (see step 2 below) */}
-            <MetricDetail
-              pillar="Equity Imperative"
-              metric="Rural-Urban Outcome Disparity Gap"
-              description="Composite mortality and hospitalization gap between rural and urban populations, covering cardiovascular, maternal, and behavioral health. Narrower gaps score higher."
-              weight="0.05"
-            />
-            <MetricDetail
-              pillar="Equity Imperative"
-              metric="SDOH Screening & Referral Completion Rate"
-              description="Percentage of Medicaid-attributed patients receiving standardized SDOH screening with documented referral completion. Sourced from CMS Quality Payment Program data."
-              weight="0.05"
-            />
-            <MetricDetail
-              pillar="Equity Imperative"
-              metric="Algorithmic Disparity Index"
-              description="Measures documented evidence of algorithmic bias in risk stratification tools deployed in the state, sourced from HHS Office for Civil Rights reports and peer-reviewed audits. Higher scores indicate lower documented bias."
-              weight="0.05"
-            />
-            {/* Operations */}
-            <MetricDetail
-              pillar="Operations"
-              metric="Administrative Cost Ratio"
-              description="Administrative expenditures as a percentage of total health spending in the state, benchmarked against national average. Lower administrative overhead relative to peer states scores higher — reflecting a leaner, more execution-ready system."
-              weight="0.05"
-            />
-            <MetricDetail
-              pillar="Operations"
-              metric="Revenue Cycle Performance Index"
-              description="Composite of clean claim submission rate, claims denial rate, and days in accounts receivable across the state's major health systems. Sources: CMS cost reports and HFMA benchmark data. Higher scores indicate lower friction in payer-provider payment workflows."
-              weight="0.05"
-            />
-            <MetricDetail
-              pillar="Operations"
-              metric="Workforce Operational Readiness"
-              description="Composite of clinical staff vacancy rates, turnover rates, and credentialing cycle times across key workforce categories. Sourced from HRSA workforce data and ACHE operational surveys. Higher scores indicate a more stable and administratively capable workforce."
-              weight="0.05"
-            />
-          </div>
-        </section>
-
-        {/* ── CALCULATION ──────────────────────────────────────────────── */}
-        <section>
-          <div className="flex items-center gap-3 mb-8">
-            <div className="w-8 h-8 bg-indigo-600 text-white rounded-lg flex items-center justify-center font-black text-sm">3</div>
-            <h2 className="ty-h1 font-black text-slate-900">Calculation Methodology</h2>
-          </div>
-
-          <p className="text-slate-600 leading-relaxed mb-8">
-            The final <code className="bg-slate-100 px-1.5 py-0.5 rounded text-sm font-mono text-indigo-700">performanceScore</code> is calculated in two steps: pillar scores first, then a weighted composite.
-          </p>
-
-          {/* Step 1: Pillar Scores */}
-          <div className="space-y-4 mb-10">
-            <div className="flex gap-4 items-start p-6 bg-white border border-slate-200 rounded-xl shadow-sm">
-              <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center font-black text-slate-700 shrink-0">1</div>
-              <div className="flex-1">
-                <h3 className="font-bold text-slate-900 mb-2">Pillar Scores</h3>
-                <p className="ty-body text-slate-600 mb-4">
-                  Each pillar score is the simple average of its three normalized sub-metrics:
-                </p>
-                <code className="block bg-slate-50 border border-slate-200 rounded-lg p-4 text-sm font-mono text-slate-800">
-                  Pillar Score = (Metric₁ + Metric₂ + Metric₃) ÷ 3
-                </code>
-              </div>
-            </div>
-
-            <div className="flex gap-4 items-start p-6 bg-white border border-slate-200 rounded-xl shadow-sm">
-              <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center font-black text-slate-700 shrink-0">2</div>
-              <div className="flex-1">
-                <h3 className="font-bold text-slate-900 mb-2">Composite Performance Score</h3>
-                <p className="ty-body text-slate-600 mb-4">
-                  The final score is a weighted average of the five pillar scores. Policy and Economics carry the greatest weight as the foundational structural drivers; Operations and Clinical carry equal secondary weights; Technology carries the base weight. The Equity Imperative is deliberately NOT a sixth weighted term — see below for how it factors into the result instead:
-                </p>
-                <code className="block bg-slate-50 border border-slate-200 rounded-lg p-4 text-sm font-mono text-slate-800">
-                  Score = (Policy × 0.28) + (Economics × 0.28) + (Operations × 0.17) + (Clinical × 0.17) + (Technology × 0.10)
-                </code>
-                <p className="text-xs text-slate-400 mt-3 italic">
-                  Note: weights were rebalanced in the 2026 Index version when Equity moved out of the weighted composite and into the Equity Imperative check described below.
-                </p>
-                <p className="ty-body text-slate-600 mt-4 mb-2">
-                  <strong>The Equity Imperative check:</strong> after the weighted score above is computed, the three Equity Imperative sub-metrics (disparity gap, SDOH referral completion, algorithmic disparity) are evaluated against a fixed threshold. A state that clears the five-pillar weighted average but fails the Equity Imperative threshold is flagged on the Dashboard rather than assigned a higher composite score — the imperative can only lower a state’s standing, never raise it, since a strong equity showing is the baseline expectation, not a bonus.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Pillar Weight Grid */}
-          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4 mb-10">
-            <PillarBlock
-              pillar="Policy" weight="28%"
-              barColor="bg-blue-600"
-              textColor="text-blue-700"
-              metrics={["VBP Adoption", "Telehealth Policy", "Scope of Practice"]}
-            />
-            <PillarBlock
-              pillar="Economics" weight="28%"
-              barColor="bg-emerald-500"
-              textColor="text-emerald-700"
-              metrics={["Per-Capita Efficiency", "Workforce Availability", "Insurance Coverage"]}
-            />
-            <PillarBlock
-              pillar="Operations" weight="17%"
-              barColor="bg-amber-500"
-              textColor="text-amber-700"
-              metrics={["Admin Cost Ratio", "Revenue Cycle Performance", "Workforce Readiness"]}
-            />
-            <PillarBlock
-              pillar="Technology" weight="10%"
-              barColor="bg-indigo-500"
-              textColor="text-indigo-700"
-              metrics={["HIE Maturity", "Broadband Access", "EHR Adoption"]}
-            />
-            <PillarBlock
-              pillar="Clinical" weight="17%"
-              barColor="bg-rose-500"
-              textColor="text-rose-700"
-              metrics={["Preventable Hospitalization", "Operational Viability", "Care Access Index"]}
-            />
-          </div>
-
-          {/* The Equity Imperative check -- outside the 5-tile weight grid above, since
-              it is not a weighted composite input. Same visual language, but no
-              "Index weight" label -- replaced with what it actually does. */}
-          <div className="bg-white border-2 border-violet-300 ring-4 ring-violet-50 rounded-xl overflow-hidden shadow-sm mb-10">
-            <div className="bg-violet-600 px-4 py-3 flex items-center justify-between">
-              <span className="text-white font-black text-sm uppercase tracking-wider">The Equity Imperative</span>
-              <span className="text-white/80 text-xs font-bold">Threshold check, not a weight</span>
-            </div>
-            <ul className="p-4 space-y-2">
-              {["Outcome Disparity Gap", "SDOH Referral Rate", "Algorithmic Disparity"].map((m) => (
-                <li key={m} className="flex items-center gap-2 text-sm text-slate-700">
-                  <span className="w-1.5 h-1.5 rounded-full bg-violet-500 shrink-0" />
-                  {m}
-                </li>
+      <section className="mb-12">
+        <h2 className="text-xl font-black text-slate-900 mb-3">The fifty-state dashboard</h2>
+        <p className="text-slate-600 leading-relaxed mb-4">
+          The <Link href="/dashboard" className="text-indigo-700 underline">dashboard</Link> shows each indicator as its source
+          reports it. There is no composite score and no &quot;leading&quot; or &quot;at risk&quot; label: a single number
+          cannot carry the dependency logic the framework is built on. Data built {INDICATORS_GENERATED}.
+        </p>
+        <div className="overflow-x-auto border border-slate-200 rounded-xl">
+          <table className="w-full text-left text-sm">
+            <thead className="bg-slate-50 text-xs uppercase text-slate-500"><tr><th className="p-3">Indicator</th><th className="p-3">Speaks to</th><th className="p-3">Source</th></tr></thead>
+            <tbody className="divide-y divide-slate-100">
+              {INDICATORS.map((i) => (
+                <tr key={i.key}>
+                  <td className="p-3"><div className="font-semibold">{i.label}</div>{i.note && <div className="text-xs text-slate-500">{i.note}</div>}</td>
+                  <td className="p-3 text-xs text-slate-500">{PILLAR_LABEL[i.pillar]}</td>
+                  <td className="p-3 text-xs"><a className="underline" href={INDICATOR_SOURCES[i.source].url} target="_blank" rel="noopener noreferrer">{INDICATOR_SOURCES[i.source].label}</a></td>
+                </tr>
               ))}
-            </ul>
-          </div>
-        </section>
-
-        {/* ── OUTPUT & INTERPRETATION ──────────────────────────────────── */}
-        <section>
-          <div className="flex items-center gap-3 mb-8">
-            <div className="w-8 h-8 bg-indigo-600 text-white rounded-lg flex items-center justify-center font-black text-sm">4</div>
-            <h2 className="ty-h1 font-black text-slate-900">Output &amp; Interpretation</h2>
-          </div>
-          <p className="text-slate-600 leading-relaxed mb-6">
-            The Index produces a quantitative score and a qualitative status tier for rapid executive interpretation. Status tiers are designed to communicate urgency, not to rank states against each other — two states with identical scores may face entirely different structural challenges.
-          </p>
-          <div className="space-y-3">
-            {[
-              { range: "80–100", label: "Leading", desc: "National leaders with strong cross-pillar performance. States setting replication-worthy standards in at least four of the six dimensions.", borderColor: "border-emerald-500", bg: "bg-emerald-50", titleColor: "text-emerald-800", bodyColor: "text-emerald-700" },
-              { range: "70–79", label: "Improving", desc: "States with solid structural foundations and measurable positive momentum. Typically strong in Policy and Economics with Technology and Clinical gains in progress.", borderColor: "border-green-500", bg: "bg-green-50", titleColor: "text-green-800", bodyColor: "text-green-700" },
-              { range: "60–69", label: "Stable", desc: "Mixed performance across pillars — typically strong in one or two dimensions and structurally lagging in others. At risk of slipping to At Risk without targeted intervention.", borderColor: "border-yellow-500", bg: "bg-yellow-50", titleColor: "text-yellow-800", bodyColor: "text-yellow-700" },
-              { range: "< 60", label: "At Risk", desc: "States facing significant structural deficits across multiple pillars. Typically characterized by persistent equity gaps, workforce shortages, or operating margin crises that undermine cross-pillar gains.", borderColor: "border-red-500", bg: "bg-red-50", titleColor: "text-red-800", bodyColor: "text-red-700" },
-            ].map((tier) => (
-              <div key={tier.label} className={`${tier.bg} border-l-4 ${tier.borderColor} p-5 rounded-r-xl`}>
-                <div className="flex items-center gap-3 mb-1">
-                  <p className={`font-black text-lg ${tier.titleColor}`}>{tier.label}</p>
-                  <span className={`text-xs font-bold ${tier.titleColor} opacity-60`}>{tier.range}</span>
-                </div>
-                <p className={`text-sm ${tier.bodyColor} leading-relaxed`}>{tier.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* ── DATA SOURCES ─────────────────────────────────────────────── */}
-        <section>
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-8 bg-indigo-600 text-white rounded-lg flex items-center justify-center font-black text-sm">5</div>
-            <h2 className="ty-h1 font-black text-slate-900">Primary Data Sources</h2>
-          </div>
-          <div className="grid md:grid-cols-2 gap-4">
-            {[
-              { source: "CMS Quality Payment Program", use: "VBP adoption, SDOH screening rates" },
-              { source: "HRSA Area Health Resources Files", use: "Workforce availability, HPSA designations" },
-              { source: "FCC Broadband Data Collection", use: "Rural broadband access and speed" },
-              { source: "ONC Health IT Dashboard", use: "HIE maturity, EHR adoption rates" },
-              { source: "CDC BRFSS & WONDER Database", use: "Rural-urban outcome disparity metrics" },
-              { source: "HHS Office for Civil Rights", use: "Algorithmic bias documentation" },
-              { source: "CMS Cost Reports", use: "Hospital operational viability metrics" },
-              { source: "State Legislative Databases", use: "Telehealth policy, scope of practice law" },
-              { source: "HFMA Benchmark Data", use: "Revenue cycle performance, clean claim rates, days in AR" },
-              { source: "ACHE & MGMA Operational Surveys", use: "Workforce vacancy, turnover, and credentialing cycle times" },
-            ].map((d) => (
-              <div key={d.source} className="flex gap-3 p-4 bg-slate-50 border border-slate-200 rounded-xl">
-                <span className="text-indigo-600 font-black text-sm shrink-0">→</span>
-                <div>
-                  <p className="font-bold text-slate-900 text-sm">{d.source}</p>
-                  <p className="text-xs text-slate-500 mt-0.5">{d.use}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* ── FOOTER CTA ───────────────────────────────────────────────── */}
-        <div className="bg-indigo-700 text-white rounded-2xl p-8 md:p-10 text-center">
-          <h3 className="text-xl font-black mb-3">Explore the Performance Index</h3>
-          <p className="text-indigo-100 text-sm mb-6">
-            See how every state scores across all five pillars — and drill into sub-metric detail.
-          </p>
-          <Link
-            href="/dashboard"
-            className="inline-flex items-center gap-2 bg-indigo-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-indigo-700 transition-colors"
-          >
-            Launch Dashboard
-          </Link>
+              <tr><td className="p-3 font-semibold">Medicaid expansion status</td><td className="p-3 text-xs text-slate-500">Policy</td><td className="p-3 text-xs"><a className="underline" href={INDICATOR_SOURCES.kff.url} target="_blank" rel="noopener noreferrer">{INDICATOR_SOURCES.kff.label}</a></td></tr>
+              <tr><td className="p-3 font-semibold">AHEAD Model participation</td><td className="p-3 text-xs text-slate-500">Policy</td><td className="p-3 text-xs"><a className="underline" href={INDICATOR_SOURCES.ahead.url} target="_blank" rel="noopener noreferrer">{INDICATOR_SOURCES.ahead.label}</a></td></tr>
+            </tbody>
+          </table>
         </div>
-      </div>
+        <p className="text-xs text-slate-500 mt-3 leading-relaxed">
+          BRFSS figures are the CDC&apos;s weighted state estimates for adults 18 and over, latest survey year available for
+          each state. CMS star ratings average the hospitals CMS rates; many small and critical access hospitals have too
+          few measures to be rated. No fifty-state Technology measure is shown yet because none was found that is current,
+          comparable across states and published by a primary source.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-black text-slate-900 mb-3">Corrections</h2>
+        <p className="text-slate-600 leading-relaxed">
+          Facts are checked against primary sources — statutes as enacted, agency reports, federal datasets — and corrected
+          in the book, the tools and the Academy together. If you find a figure you cannot trace, we want to hear about it.
+        </p>
+      </section>
     </div>
   );
 }

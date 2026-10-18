@@ -13,16 +13,19 @@ import {
   ChevronUpIcon,
   ChevronDownIcon,
 } from "@heroicons/react/24/outline";
-import type { PerformanceIndexProfile } from "@/lib/data/performance-index-data";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
-const getScoreColor = (score?: number): string => {
-  if (score === undefined) return "#cbd5e1"; // slate-300
-  if (score >= 80) return "#16a34a";      // green-600
-  if (score >= 70) return "#22c55e";      // green-500
-  if (score >= 60) return "#facc15";      // yellow-400
-  return "#ef4444";                      // red-500
+// Quintile shading of whichever sourced indicator is selected (see lib/data/state-indicators.ts). Darker = higher
+// value; whether higher is better depends on the indicator, so the map does not label states good or bad.
+const SHADES = ["#e0e7ff", "#a5b4fc", "#818cf8", "#6366f1", "#4338ca"];
+function quintileBreaks(values: number[]): number[] {
+  const v = [...values].sort((a, b) => a - b);
+  return [0.2, 0.4, 0.6, 0.8].map((q) => v[Math.min(v.length - 1, Math.floor(q * v.length))]);
+}
+const shadeFor = (value: number | null | undefined, breaks: number[]): string => {
+  if (value == null) return "#cbd5e1"; // slate-300
+  return SHADES[breaks.filter((b) => value >= b).length];
 };
 
 const stateNameToId = (name: string) => {
@@ -42,12 +45,19 @@ const REGION_VIEWS: Record<string, { coordinates: [number, number]; zoom: number
 };
 
 interface NationalMapProps {
-  data: Record<string, PerformanceIndexProfile>;
+  /** Indicator value keyed by state id ("vermont", "new_hampshire"). */
+  values: Record<string, number | null>;
+  label: string;
+  format: (v: number) => string;
+  /** Detail-page slug for a state id. */
+  hrefFor: (stateId: string) => string;
   searchQuery?: string;
   selectedRegion?: string;
 }
 
-export function NationalMap({ data, searchQuery = "", selectedRegion = "All" }: NationalMapProps) {
+export function NationalMap({ values, label, format, hrefFor, searchQuery = "", selectedRegion = "All" }: NationalMapProps) {
+  const present = Object.values(values).filter((v): v is number => v != null);
+  const breaks = quintileBreaks(present);
   const router = useRouter();
   const [tooltip, setTooltip] = useState({ visible: false, x: 0, y: 0, content: null as React.ReactNode });
   const [position, setPosition] = useState({ coordinates: [-96, 37] as [number, number], zoom: 1 });
@@ -80,7 +90,8 @@ export function NationalMap({ data, searchQuery = "", selectedRegion = "All" }: 
             {({ geographies }) => geographies.map((geo) => {
               const stateName = geo.properties.name;
               const stateId = stateNameToId(stateName);
-              const stateData = data[stateId];
+              const value = values[stateId];
+              const stateData = value != null ? value : undefined;
 
               // All filtering logic is now self-contained in this component
               const region = REGION_MAP[stateId] || "Other";
@@ -92,8 +103,8 @@ export function NationalMap({ data, searchQuery = "", selectedRegion = "All" }: 
               let hoverFill = "#f1f5f9"; // No hover effect for inactive
 
               if (isVisible) {
-                fill = getScoreColor(stateData?.performanceScore);
-                if (stateData) {
+                fill = shadeFor(value, breaks);
+                if (stateData != null) {
                   hoverFill = "#3b82f6"; // blue-500
                 } else {
                   hoverFill = "#94a3b8"; // slate-400
@@ -104,7 +115,7 @@ export function NationalMap({ data, searchQuery = "", selectedRegion = "All" }: 
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
-                  onClick={() => { if (stateData && isVisible) router.push(`/dashboard/${stateId}`); }}
+                  onClick={() => { if (stateData != null && isVisible) router.push(hrefFor(stateId)); }}
                   onMouseEnter={(evt) => {
                     if (isVisible) {
                       // Boundary calculations to prevent clipping
@@ -121,10 +132,10 @@ export function NationalMap({ data, searchQuery = "", selectedRegion = "All" }: 
                         content: (
                           <div className="min-w-[150px]">
                             <div className="font-bold text-sm mb-2 border-b pb-1">{stateName}</div>
-                            {stateData ? (
+                            {stateData != null ? (
                               <div className="flex justify-between items-center gap-4 text-xs">
-                                <span>Index Score</span>
-                                <span className="font-bold text-lg" style={{ color: getScoreColor(stateData.performanceScore) }}>{stateData.performanceScore}</span>
+                                <span>{label}</span>
+                                <span className="font-bold text-lg text-indigo-700">{format(stateData)}</span>
                               </div>
                             ) : (
                               <div className="text-xs text-slate-500">No data available</div>
@@ -171,19 +182,23 @@ export function NationalMap({ data, searchQuery = "", selectedRegion = "All" }: 
 
       <div className="absolute bottom-4 right-4 w-48 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border text-xs overflow-hidden">
         <button onClick={() => setIsLegendOpen(!isLegendOpen)} className="flex items-center justify-between gap-2 p-2 w-full font-bold text-slate-700">
-          <span>Performance Index</span>
+          <span className="text-left">{label}</span>
           {isLegendOpen ? <ChevronDownIcon className="w-4 h-4" /> : <ChevronUpIcon className="w-4 h-4" />}
         </button>
         {isLegendOpen && (
           <div className="px-3 pb-3 space-y-1.5">
-            {[ { score: "80+", label: "Leading" }, { score: "70-79", label: "Improving" }, { score: "60-69", label: "Stable" }, { score: "<60", label: "At Risk" }, { score: "N/A", label: "No Data" }
-            ].map(item => (
-              <div key={item.label} className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full border border-black/10" style={{ backgroundColor: getScoreColor(item.label === "Leading" ? 80 : item.label === "Improving" ? 70 : item.label === "Stable" ? 60 : item.label === "At Risk" ? 59 : undefined) }}></div>
-                <span className="text-slate-600 font-medium w-16">{item.label}</span>
-                <span className="text-slate-400 font-mono text-[10px]">{item.score}</span>
+            {SHADES.map((c, i) => (
+              <div key={c} className="flex items-center gap-2">
+                <div className="w-3 h-3 rounded-full border border-black/10" style={{ backgroundColor: c }}></div>
+                <span className="text-slate-500 font-mono text-[10px]">
+                  {i === 0 ? `< ${format(breaks[0])}` : i === SHADES.length - 1 ? `≥ ${format(breaks[3])}` : `${format(breaks[i - 1])} – ${format(breaks[i])}`}
+                </span>
               </div>
             ))}
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded-full border border-black/10" style={{ backgroundColor: "#cbd5e1" }}></div>
+              <span className="text-slate-500 text-[10px]">No data</span>
+            </div>
           </div>
         )}
       </div>
