@@ -343,12 +343,12 @@ export default function VermontAct68Page() {
             </ul>
           </div>
           <div className="bg-white border border-slate-200 rounded-xl p-5">
-            <h4 className="font-bold text-slate-900 text-sm mb-3">Vermont's Framing (AHS Secretary Samuelson)</h4>
+            <h4 className="font-bold text-slate-900 text-sm mb-3">Vermont's Framing (AHS Secretary Jenney Samuelson, February 2026)</h4>
             <blockquote className="border-l-4 border-rose-300 pl-4 text-xs text-slate-600 italic leading-relaxed mb-3">
-              "The RHT funding is a tool for executing reform, not a substitute for reform."
+              "It's the tool that lets us put affordability plans into action."
             </blockquote>
             <p className="text-xs text-slate-500 leading-relaxed">
-              If Vermont uses RHT capital to reduce structural costs — AI scribes, RPM, broadband, CIN
+              If Vermont uses RHT capital to reduce structural costs — AI scribes, RPM, EMS, CIN
               shared services — the efficiency gains position Vermont to absorb post-2030 Medicaid
               reductions. If RHT funds are used to sustain unsustainable operations, Vermont faces
               the Medicaid cliff without structural improvements. Act 68's mandatory transformation
