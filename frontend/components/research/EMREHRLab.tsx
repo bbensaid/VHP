@@ -432,9 +432,9 @@ const LEVERS = [
 ] as const;
 type LeverId = typeof LEVERS[number]["id"];
 
-// Published benchmark: clinicians spend ~6 hrs of an 11.4-hr day in the EHR,
-// incl. ~1.5 hrs after-hours "pajama time" (Annals of Internal Medicine, 2016;
-// AMA digital-health & burnout research). Used only as a reference line.
+// Published benchmark: family physicians spent 5.9 hrs of an 11.4-hr workday in the
+// EHR, incl. 1.4 hrs after hours (Arndt et al., Annals of Family Medicine, 2017).
+// Used only as a reference line.
 const BENCHMARK_EHR_MIN_PER_DAY = 360;
 
 function WorkflowSim({ vendor }: { vendor: Vendor }) {
@@ -465,7 +465,7 @@ function WorkflowSim({ vendor }: { vendor: Vendor }) {
     // into after-hours "pajama time".
     const afterHours = Math.max(0, ehrMinPerDay - 360);
     // Annual burnout/turnover cost proxy: after-hours minutes → attrition risk.
-    // ~$500k to replace a physician; risk scales with chronic after-hours load.
+    // ~$500k to replace a physician (model assumption); risk scales with chronic after-hours load.
     const attritionRisk = Math.min(0.35, (afterHours / 120) * 0.18);
     const annualBurnoutCost = attritionRisk * 500_000;
 
@@ -540,7 +540,7 @@ function WorkflowSim({ vendor }: { vendor: Vendor }) {
           <div className="absolute top-0 bottom-0 w-0.5 bg-slate-700" style={{ left: `${benchPct}%` }} title="National benchmark" />
         </div>
         <p className="text-[11px] text-slate-400 mt-1">
-          Marker = ~360 min/day national average (Annals of Internal Medicine, 2016; AMA burnout research).
+          Marker = ~355 min/day in the EHR for family physicians (Arndt et al., Annals of Family Medicine, 2017). The attrition-cost estimate is a model assumption.
         </p>
       </div>
       <Disclaimer text="Illustrative model for discussing documentation burden and the ROI of usability interventions — not a time-motion study of any specific system." />
