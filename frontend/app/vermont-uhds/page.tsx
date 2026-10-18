@@ -190,8 +190,8 @@ export default function VermontUHDSPage() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           {[
-            { y: "2024 — complete", d: "Medicaid clinical and claims data live in MDWAS on a weekly refresh.", pct: "~24% of coverage" },
-            { y: "2026–2028", d: "Scale to Medicare data — supporting hospital global-budget monitoring under Act 68 (Vermont withdrew from the AHEAD Model in July 2026).", pct: "~21–25% of coverage" },
+            { y: "January 2026 — live", d: "Medicaid clinical and claims data live in MDWAS (rolling go-live from November 2025; AHS report, January 15, 2026).", pct: "~24% of coverage" },
+            { y: "2028–2029", d: "Add Medicare, statewide clinical and HRSN data — supporting hospital global-budget monitoring under Act 68 (Vermont withdrew from the AHEAD Model in July 2026).", pct: "~21–25% of coverage" },
             { y: "2029–2030", d: "Full multi-payer integration: commercial claims and standardized SDOH/HRSN data, enabling true Total Cost of Care predictive modeling.", pct: "~45–49% of coverage" },
           ].map((p) => (
             <div key={p.y} className="bg-white border border-slate-200 rounded-xl p-5">
@@ -257,10 +257,10 @@ export default function VermontUHDSPage() {
             <tbody>
               {[
                 ["Act 61 (2009)", "Original statutory basis for Vermont's HIE program (18 V.S.A. §§ 9351–9352), designating VITL as the exclusive legislatively designated operator of the statewide exchange."],
-                ["HITECH (2009)", "Federal “Meaningful Use” program that seeded Vermont's HIE and EHR-adoption funding — from ~$1.4M in 2009 to well over $100M cumulatively by the late 2010s."],
+                ["HITECH (2009)", "Federal “Meaningful Use” program that seeded Vermont's HIE and EHR-adoption funding."],
                 ["Act 167 (2022)", "Directed redesign of care delivery — and repealed 18 V.S.A. § 9410(e), so direct patient identifiers could finally be used for accurate record matching."],
                 ["Act 62 (2025)", "From July 1, 2025, ended GMCB review and approval of the statewide Health IT Plan, the HIE connectivity criteria and VITL's budget; DVHA, which already coordinated the Plan, now runs it with its HIE Steering Committee. The Plan is revised annually and fully updated every five years."],
-                ["Act 68 (2025), §10", "Mandated integration of clinical, claims and SDOH data into a single record, and required AHS to report to the Legislature by January 15, 2026 — delivered on schedule."],
+                ["Act 68 (2025), §10", "Directs AHS, with the HIE Steering Committee, to develop the Unified Health Data Space and decide whether and how to integrate clinical, claims and social-needs data — no clinical–claims integration before January 1, 2027, and only on a Steering Committee majority vote. AHS reported on January 15, 2026."],
                 ["42 CFR Part 2", "Federal enhanced confidentiality for substance use disorder records."],
                 ["TEFCA", "Federal framework for nationwide exchange interoperability."],
               ].map((r) => (
@@ -298,12 +298,9 @@ export default function VermontUHDSPage() {
               UVM Health Network ransomware (Oct 2020)
             </h4>
             <p className="text-xs text-slate-600 leading-relaxed">
-              A ransomware attack forced six hospitals offline for nearly a month — no EHR, no
-              phones, back to paper. Estimated cost <strong>$50–65 million</strong>. A DOJ
-              prosecution described the medical center as “unable to provide many critical patient
-              services for over two weeks.” Throughout the outage, the VHIE gave providers, EMS,
-              and referral hospitals a continuity-of-access channel while UVMMC&apos;s own systems
-              were dark.
+              A ransomware attack in October 2020 took the network&apos;s electronic health record
+              offline for weeks and sent clinicians back to paper; the network put its cost at about
+              <strong>$63 million</strong>. It is the case for resilient, shared data infrastructure.
             </p>
           </div>
         </div>
@@ -319,8 +316,8 @@ export default function VermontUHDSPage() {
           </Link>{" "}
           as a parallel funding stream. That understates the coupling: RHT pays for a portfolio of
           care-redesign shared services, and the UHDS is the substrate nearly every one of them
-          runs on. Year 1 (FFY2026) award: <strong>$195,053,740</strong>, with five-year funding
-          projected at nearly <strong>$1 billion</strong>.
+          runs on. Year 1 (FFY2026) award: <strong>$195,053,740</strong>; later years&apos; awards are
+          set annually through FY2030.
         </p>
         <div className="overflow-x-auto mb-6">
           <table className="w-full text-xs border border-slate-200 rounded-xl overflow-hidden">
@@ -333,13 +330,11 @@ export default function VermontUHDSPage() {
             </thead>
             <tbody>
               {[
-                ["Centralized Transfer Center & Bed Availability", "$2.925M", "Real-time statewide view of bed and service availability, coordinating inter-facility transfers."],
-                ["Shared EHR Platform Feasibility Assessment", "$17.85M*", "Evaluates consolidating independent hospitals onto a common EHR platform."],
-                ["Statewide e-Consult Expansion", "$920,000", "Secure asynchronous specialist consultations, reducing unnecessary in-person referrals."],
-                ["Closed-Loop Referral System", "$460,000", "Digital infrastructure connecting medical, behavioral health, and social services."],
+                ["Shared EMR adoption incentives", "Not itemized", "Voluntary adoption of a shared EMR that keeps contributing data to the VHIE."],
+                ["Statewide e-Consult Expansion", "$1,550,000", "Secure asynchronous specialist consultations, reducing unnecessary in-person referrals."],
+                ["Closed-Loop Referral System", "$455,000", "Digital care-coordination platform connecting medical, behavioral health, and social services."],
                 ["Remote Patient Monitoring support", "IT Advances", "Chronic-care management in the home, enabling earlier intervention."],
                 ["Mobile Integrated Health support", "Prevention", "Community paramedics delivering pre- and post-operative care in the home."],
-                ["Vendor-Neutral Imaging Archive", "IT Advances", "Statewide standards-based imaging archive shared across independent centers."],
               ].map((r) => (
                 <tr key={r[0]} className="border-t border-slate-200">
                   <td className="p-3 font-semibold text-slate-700 align-top">{r[0]}</td>
@@ -350,13 +345,13 @@ export default function VermontUHDSPage() {
             </tbody>
           </table>
         </div>
-        <p className="text-[11px] text-slate-400 mb-4">* allocated pending assessment</p>
+        <p className="text-[11px] text-slate-400 mb-4">Amounts: Joint Fiscal Office, RHT projects by department (February 2026); activities from Vermont&apos;s RHT application (November 2025).</p>
         <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-5">
           <p className="text-xs text-slate-700 leading-relaxed">
             <strong className="text-slate-900">The point.</strong> Each project is, on its own, a
             vendor-supplied point solution. What turns it into measurable transformation is the
-            UHDS layer beneath: the Centralized Transfer Center only works if bed and capacity data
-            ties to a correctly matched patient record across every facility in real time. Strip
+            UHDS layer beneath: a closed-loop referral only closes if every provider and service agency
+            can see the same correctly matched patient record. Strip
             the UHDS out and these become disconnected purchases that cannot be attributed to a
             patient record, linked to cost data, or reported to CMS as evidence the investment
             worked.
@@ -381,7 +376,7 @@ export default function VermontUHDSPage() {
         </div>
         <div className="space-y-3">
           {[
-            { h: "Completed (2024–2025)", t: "Foundational compliance", d: "MDWAS go-live ✓ · MDAAP closeout ✓ · Act 68 statutory report delivered January 15, 2026 ✓", done: true },
+            { h: "Completed (2025 – January 2026)", t: "Foundational compliance", d: "MDWAS go-live (January 2026) ✓ · MDAAP closeout ✓ · Act 68 statutory report delivered January 15, 2026 ✓", done: true },
             { h: "Mid-term (2026–2028)", t: "Analytics and scaling", d: "Advanced Analytics Layer procurement · scale to Medicare data for global-budget monitoring · Centralized Transfer Center · shared EHR feasibility assessment · Statewide Health Care Delivery Strategic Plan due (on or before Jan 15, 2028)", done: false },
             { h: "Long-term (2029–2030)", t: "Full multi-payer utility", d: "Commercial claims integration · Total Cost of Care predictive modeling live · “staffing flip” from contracted staff to permanent state-led operations by Year 5", done: false },
           ].map((p) => (
@@ -430,7 +425,7 @@ export default function VermontUHDSPage() {
         <SectionHeader label="Related" title="Continue Your Research" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
-            { href: "/vermont-rht-program", label: "Vermont RHT Program", desc: "The $195M-a-year federal award (annual awards FY2026–FY2030) funding the care-redesign services the UHDS carries.", color: "border-teal-200 hover:border-teal-400" },
+            { href: "/vermont-rht-program", label: "Vermont RHT Program", desc: "The $195M FY2026 federal award (annual awards through FY2030) funding the care-redesign services the UHDS carries.", color: "border-teal-200 hover:border-teal-400" },
             { href: "/vermont-act-68", label: "Vermont Act 68", desc: "§10 mandates the clinical + claims + SDOH integration this page describes.", color: "border-rose-200 hover:border-rose-400" },
             { href: "/technology", label: "Technology Pillar", desc: "VHCURES, FHIR, AI governance, and the rest of Vermont's data infrastructure.", color: "border-indigo-200 hover:border-indigo-400" },
           ].map((p) => (
