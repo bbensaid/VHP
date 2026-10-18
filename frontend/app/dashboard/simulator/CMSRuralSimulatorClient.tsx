@@ -13,7 +13,7 @@ const SOURCE_URL = 'https://www.cms.gov/newsroom/press-releases/cms-announces-50
 // FY2026 awards, CMS, December 29, 2025. Sum: $10,000,000,003.
 const AWARDS: { name: string; award: number }[] = [
   { name: "Alaska", award: 272174856 },
-  { name: "Amount Alabama", award: 203404327 },
+  { name: "Alabama", award: 203404327 },
   { name: "Arizona", award: 166988956 },
   { name: "Arkansas", award: 208779396 },
   { name: "California", award: 233639308 },
