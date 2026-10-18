@@ -68,12 +68,11 @@ export function APMTab() {
   const finalRow = projection[9];
   const cumSavingsTotal = projection.reduce((s, r) => s + r.savings, 0);
 
-  // VT ACO comparison benchmarks (approximate)
+  // Vermont All-Payer ACO Model agreement (2018–2025): all-payer per-capita growth target 3.5%, ceiling 4.3%.
+  // The earlier "actual growth 4.2%", "quality score 78" and "SDOH investment 1.2%" had no source and were removed.
   const vtBenchmarks = {
     growthTarget: 3.5,
-    actualGrowth: 4.2,
-    qualityScore: 78,
-    sdohInvestment: 1.2,
+    growthCeiling: 4.3,
   };
 
   return (
@@ -200,7 +199,7 @@ export function APMTab() {
         <div className="bg-white border border-slate-200 rounded-xl p-5">
           <SectionTitle>Comparison Mode</SectionTitle>
           <ToggleRow
-            label="Vermont ACO Report Card"
+            label="Vermont All-Payer Model targets"
             value={compareMode}
             onChange={setCompareMode}
           />
@@ -213,23 +212,10 @@ export function APMTab() {
                 </span>
               </div>
               <div className="flex justify-between text-slate-600">
-                <span>VT Actual Growth</span>
-                <span
-                  className={`font-bold ${vtBenchmarks.actualGrowth > vtBenchmarks.growthTarget ? "text-red-600" : "text-emerald-600"}`}
-                >
-                  {vtBenchmarks.actualGrowth}%
-                </span>
+                <span>VT Growth Ceiling</span>
+                <span className="font-bold text-blue-700">{vtBenchmarks.growthCeiling}%</span>
               </div>
-              <div className="flex justify-between text-slate-600">
-                <span>VT Quality Score</span>
-                <span className="font-bold">{vtBenchmarks.qualityScore}/100</span>
-              </div>
-              <div className="flex justify-between text-slate-600">
-                <span>VT SDOH Investment</span>
-                <span className="font-bold">
-                  {vtBenchmarks.sdohInvestment}%
-                </span>
-              </div>
+              <p className="text-[11px] text-slate-400">All-payer per-capita growth, Vermont All-Payer ACO Model agreement (2018–2025).</p>
             </div>
           )}
         </div>
