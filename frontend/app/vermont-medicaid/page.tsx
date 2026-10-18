@@ -270,7 +270,7 @@ export default function VermontMedicaidPage() {
             tagline="Comprehensive coverage for children"
             who="Children age 0–18 (and pregnant women). Vermont's flagship children's health program covers preventive care, dental, vision, mental health, and all acute care services."
             incomePct="≤ 317%"
-            incomeNote="~$95,400/yr for a family of 4 (2026 estimate)"
+            incomeNote="~$103,600/yr for a family of 4 (2026)"
             color="border-sky-200 hover:border-sky-400"
             badge="bg-sky-100 text-sky-700"
           />
@@ -278,8 +278,8 @@ export default function VermontMedicaidPage() {
             name="Pregnant Women"
             tagline="Full coverage through postpartum year"
             who="Pregnant women and those up to 12 months postpartum. Vermont expanded postpartum coverage to a full 12 months in 2022. Covers all prenatal, delivery, and postpartum care."
-            incomePct="≤ 208%"
-            incomeNote="~$31,200/yr for a single woman (2026 estimate)"
+            incomePct="≤ 213%"
+            incomeNote="~$34,000/yr for a pregnant woman alone, a household of 2 counting the baby is ~$46,100 (2026)"
             color="border-violet-200 hover:border-violet-400"
             badge="bg-violet-100 text-violet-700"
           />
@@ -296,8 +296,8 @@ export default function VermontMedicaidPage() {
             name="AABD Medicaid"
             tagline="Aged, blind & disabled adults"
             who="Vermont residents who are age 65+, blind, or have a qualifying disability and receive SSI or have low income/assets. Covers all standard Medicaid benefits plus long-term care."
-            incomePct="≤ 100%"
-            incomeNote="~$15,060/yr for an individual (SSI-level, 2026)"
+            incomePct="$1,375/mo"
+            incomeNote="2026 protected income level for one person outside Chittenden County; $1,483/mo in Chittenden (VT Law Help)"
             color="border-amber-200 hover:border-amber-400"
             badge="bg-amber-100 text-amber-700"
           />
@@ -328,24 +328,24 @@ export default function VermontMedicaidPage() {
             <thead>
               <tr className="bg-slate-50 border-b border-slate-200">
                 <th className="py-3 px-4 text-xs font-black uppercase tracking-wide text-slate-500">Household Size</th>
-                <th className="py-3 px-4 text-xs font-black uppercase tracking-wide text-slate-500 text-center">100% FPL<br /><span className="text-[10px] font-normal">(AABD)</span></th>
+                <th className="py-3 px-4 text-xs font-black uppercase tracking-wide text-slate-500 text-center">100% FPL<br /><span className="text-[10px] font-normal">(reference)</span></th>
                 <th className="py-3 px-4 text-xs font-black uppercase tracking-wide text-rose-600 text-center">138% FPL<br /><span className="text-[10px] font-normal">(Adults)</span></th>
-                <th className="py-3 px-4 text-xs font-black uppercase tracking-wide text-amber-600 text-center">208% FPL<br /><span className="text-[10px] font-normal">(Pregnant)</span></th>
+                <th className="py-3 px-4 text-xs font-black uppercase tracking-wide text-amber-600 text-center">213% FPL<br /><span className="text-[10px] font-normal">(Pregnant)</span></th>
                 <th className="py-3 px-4 text-xs font-black uppercase tracking-wide text-emerald-600 text-center">317% FPL<br /><span className="text-[10px] font-normal">(Dr. Dynasaur)</span></th>
               </tr>
             </thead>
             <tbody>
-              <IncomeRow household="1 person"   fpl100="$1,255/mo" fpl138="$1,732/mo" fpl208="$2,611/mo" fpl317="$3,979/mo" />
-              <IncomeRow household="2 people"   fpl100="$1,703/mo" fpl138="$2,350/mo" fpl208="$3,542/mo" fpl317="$5,399/mo" />
-              <IncomeRow household="3 people"   fpl100="$2,152/mo" fpl138="$2,970/mo" fpl208="$4,476/mo" fpl317="$6,821/mo" />
-              <IncomeRow household="4 people"   fpl100="$2,601/mo" fpl138="$3,590/mo" fpl208="$5,410/mo" fpl317="$8,245/mo" />
-              <IncomeRow household="5 people"   fpl100="$3,050/mo" fpl138="$4,209/mo" fpl208="$6,344/mo" fpl317="$9,669/mo" />
-              <IncomeRow household="6 people"   fpl100="$3,498/mo" fpl138="$4,827/mo" fpl208="$7,276/mo" fpl317="$11,090/mo" />
+              <IncomeRow household="1 person"   fpl100="$1,330/mo" fpl138="$1,835/mo" fpl208="$2,833/mo" fpl317="$4,216/mo" />
+              <IncomeRow household="2 people"   fpl100="$1,803/mo" fpl138="$2,489/mo" fpl208="$3,841/mo" fpl317="$5,717/mo" />
+              <IncomeRow household="3 people"   fpl100="$2,277/mo" fpl138="$3,142/mo" fpl208="$4,849/mo" fpl317="$7,217/mo" />
+              <IncomeRow household="4 people"   fpl100="$2,750/mo" fpl138="$3,795/mo" fpl208="$5,858/mo" fpl317="$8,718/mo" />
+              <IncomeRow household="5 people"   fpl100="$3,223/mo" fpl138="$4,448/mo" fpl208="$6,866/mo" fpl317="$10,218/mo" />
+              <IncomeRow household="6 people"   fpl100="$3,697/mo" fpl138="$5,101/mo" fpl208="$7,874/mo" fpl317="$11,718/mo" />
             </tbody>
           </table>
         </div>
         <p className="text-[11px] text-slate-400 mt-2">
-          * Income figures are estimates based on 2026 FPL guidelines. Actual limits are set annually by CMS and DVHA. Always verify at{" "}
+          * Monthly figures computed from the HHS 2026 poverty guidelines ($15,960 + $5,680 per additional person; Federal Register, Jan 15, 2026). Percentages from VT Law Help (2026). MABD uses its own protected income level, not a percentage of FPL. Actual limits are set annually by CMS and DVHA. Always verify at{" "}
           <ExternalLink href="https://dvha.vermont.gov">dvha.vermont.gov</ExternalLink>.
         </p>
       </div>

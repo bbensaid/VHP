@@ -5,9 +5,9 @@ import Link from "next/link";
 import { ArrowTopRightOnSquareIcon, CheckCircleIcon, XCircleIcon, ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 
 // ── 2026 Vermont FPL base amounts (annual) ────────────────────────────────────
-// Source: HHS 2026 poverty guidelines (48 contiguous states)
-const FPL_BASE = 15650;   // 1-person household
-const FPL_INCR = 5500;    // each additional person
+// Source: HHS 2026 poverty guidelines (48 contiguous states), Federal Register 91 FR, Jan 15, 2026
+const FPL_BASE = 15960;   // 1-person household
+const FPL_INCR = 5680;    // each additional person
 
 function getFPL(householdSize: number): number {
   return FPL_BASE + FPL_INCR * Math.max(0, householdSize - 1);
@@ -128,11 +128,11 @@ function computeResults(inputs: SimInputs): EligibilityResult[] {
 
   // ── Dr. Dynasaur — Pregnancy ───────────────────────────────────────────────
   if (inputs.isPregnant) {
-    if (fplPct <= 208) {
+    if (fplPct <= 213) {
       results.push({
         program: "Dr. Dynasaur — Pregnancy",
         eligible: "likely",
-        reason: `Income (${fplPct.toFixed(0)}% FPL) is at or below the 208% FPL threshold for pregnant women`,
+        reason: `Income (${fplPct.toFixed(0)}% FPL) is at or below the 213% FPL threshold for pregnant women`,
         details: "Full Medicaid coverage beginning with pregnancy confirmation through 60 days postpartum (see Postpartum extension below). Covers all prenatal care, labor & delivery, and newborn care.",
         color: "border-violet-300",
         badge: "bg-violet-100 text-violet-700",
@@ -142,7 +142,7 @@ function computeResults(inputs: SimInputs): EligibilityResult[] {
       results.push({
         program: "Dr. Dynasaur — Pregnancy",
         eligible: "unlikely",
-        reason: `Income (${fplPct.toFixed(0)}% FPL) exceeds the 208% FPL threshold`,
+        reason: `Income (${fplPct.toFixed(0)}% FPL) exceeds the 213% FPL threshold`,
         details: "You may still qualify for subsidized maternity coverage through Vermont Health Connect. Contact Vermont Health Connect to review your options.",
         color: "border-slate-200",
         badge: "bg-slate-100 text-slate-600",
@@ -153,7 +153,7 @@ function computeResults(inputs: SimInputs): EligibilityResult[] {
 
   // ── Postpartum Medicaid (12-month extension) ───────────────────────────────
   if (inputs.isPostpartum) {
-    if (fplPct <= 208) {
+    if (fplPct <= 213) {
       results.push({
         program: "Postpartum Medicaid (12 months)",
         eligible: "likely",
@@ -295,10 +295,10 @@ function computeTransitions(inputs: SimInputs): Transition[] {
       body: `At ${fplPct.toFixed(0)}% FPL you are ${usd(((138 - fplPct) / 100) * fpl)} a year below the 138% line. Cross it and adult Medicaid ends; coverage moves to a Vermont Health Connect plan with premiums and cost-sharing — the point where people most often go uninsured between programs.`,
     });
   }
-  if ((inputs.isPregnant || inputs.isPostpartum) && fplPct > 138 && fplPct <= 208) {
+  if ((inputs.isPregnant || inputs.isPostpartum) && fplPct > 138 && fplPct <= 213) {
     out.push({
       title: "Pregnancy coverage ends; the adult limit does not move with it",
-      body: `Pregnancy and postpartum coverage run to 208% FPL, through 12 months after birth. At ${fplPct.toFixed(0)}% FPL the parent is above the 138% adult limit, so when the postpartum year ends Medicaid ends with it — mid-way through the year a new infant needs the most care.`,
+      body: `Pregnancy and postpartum coverage run to 213% FPL, through 12 months after birth. At ${fplPct.toFixed(0)}% FPL the parent is above the 138% adult limit, so when the postpartum year ends Medicaid ends with it — mid-way through the year a new infant needs the most care.`,
     });
   }
   if (inputs.hasChildren && inputs.childrenUnder19 > 0 && fplPct > 138 && fplPct <= 317) {
@@ -507,7 +507,7 @@ function FPLIndicator({ annualIncome, householdSize }: { annualIncome: number; h
   const zones = [
     { label: "AABD", pct: 100, color: "bg-amber-400" },
     { label: "Adult Medicaid", pct: 138, color: "bg-rose-400" },
-    { label: "Pregnant", pct: 208, color: "bg-violet-400" },
+    { label: "Pregnant", pct: 213, color: "bg-violet-400" },
     { label: "Dr. Dynasaur", pct: 317, color: "bg-sky-400" },
   ];
 
