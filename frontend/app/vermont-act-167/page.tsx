@@ -3,7 +3,7 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 export const metadata = {
   title: "Vermont Act 167 (2022) | HTR States",
-  description: "Analysis of Vermont's Act 167 — the 2022 health care affordability law establishing the Green Mountain Care Board's expanded authority over hospital and insurance spending.",
+  description: "Analysis of Vermont's Act 167 (2022) — the law that directed a successor all-payer model proposal and the GMCB-led hospital engagement process behind the Oliver Wyman report.",
 };
 
 // ── External link helper ──────────────────────────────────────────────────────
@@ -99,9 +99,9 @@ export default function VermontAct167Page() {
           Vermont Act 167
         </h1>
         <p className="ty-hero text-slate-600 leading-relaxed max-w-3xl mb-6">
-          Vermont's landmark hospital transformation law directing a comprehensive overhaul of
-          the state's healthcare delivery system — including an all-payer model agreement
-          with the federal government and value-based payment reform across all 14 Vermont hospitals.
+          Vermont's 2022 hospital transformation law: it directed a proposal for a successor all-payer
+          model agreement with the federal government and a data-informed engagement process across all of
+          Vermont's hospital service areas — the work behind the Oliver Wyman report.
         </p>
         <div className="flex flex-wrap gap-3">
           <ExternalLink href="https://legislature.vermont.gov/Documents/2022/Docs/ACTS/ACT167/ACT167%20As%20Enacted.pdf">
@@ -131,8 +131,7 @@ export default function VermontAct167Page() {
               (originating as S.285) and signed by Governor Phil Scott.
             </p>
             <p className="ty-body text-slate-600 leading-relaxed">
-              It represents Vermont's most ambitious statutory framework for hospital transformation
-              since the original All-Payer ACO Model. It underpinned the state's entry into the
+              It underpinned the state's entry into the
               federal <Link href="/ahead-model" className="text-violet-700 hover:text-violet-900 underline underline-offset-2">AHEAD Model</Link> —
               from which Vermont withdrew in July 2026, before its performance period began.
             </p>
@@ -141,11 +140,11 @@ export default function VermontAct167Page() {
             <h3 className="font-bold text-slate-900 mb-3">Core Directives</h3>
             <ul className="space-y-2 ty-body text-slate-600">
               {[
-                "Direct the Agency of Human Services (AHS) to negotiate a new All-Payer Model agreement with CMS",
-                "Direct the Green Mountain Care Board (GMCB) to develop value-based payment models for all Vermont hospitals",
-                "Conduct robust community and stakeholder engagement across all 14 hospitals",
-                "Reduce inefficiencies, lower total cost of care, and address health inequities",
-                "Set a reform implementation target date of 2028",
+                "Direct AHS to develop a proposal for a successor All-Payer Model agreement with CMS (Sec. 1)",
+                "Direct the GMCB, with AHS, to run a data-informed, patient-focused, community-inclusive engagement process for Vermont's hospitals (Sec. 2)",
+                "Explore value-based payments for hospitals, including global payments and global budgets",
+                "Goals: reduce inefficiencies, lower costs, improve population health outcomes, reduce health inequities, increase access to essential services",
+                "Appropriate $900,000 to AHS and $4.1M to the GMCB for this work (Sec. 3)",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
                   <span className="text-violet-500 font-bold shrink-0 mt-0.5">✓</span>
@@ -164,15 +163,12 @@ export default function VermontAct167Page() {
             <div className="space-y-5">
               {[
                 { date: "2022", event: "Act 167 enacted (S.285 signed by Gov. Phil Scott)" },
-                { date: "Aug 2023", event: "Green Mountain Care Board awards Oliver Wyman Group a $1.05M contract to lead community engagement" },
-                { date: "Oct–Nov 2023", event: "Round 1 community engagement: hundreds of interviews, public meetings across Vermont" },
-                { date: "Jun 2024", event: "Oliver Wyman publicly characterizes Vermont's health care system as 'badly broken'" },
+                { date: "Aug–Nov 2023", event: "Phase 1 engagement: Oliver Wyman interviews and working sessions across Vermont's hospital service areas" },
                 { date: "Jul 2, 2024", event: "CMS announces Connecticut and Hawaii joining Maryland and Vermont in the AHEAD Model" },
-                { date: "Jul–Aug 2024", event: "Round 2 community engagement: statewide meetings, updated data collection" },
+                { date: "Mar–Sep 2024", event: "Phase 2 engagement: 230+ meetings in all, 3,100+ participants, 100+ organizations" },
                 { date: "Sep 18, 2024", event: "Oliver Wyman delivers final 144-page report to GMCB — recommends hospital consolidations, service line closures" },
-                { date: "Oct 2024", event: "Gifford Medical Center uncovers major data errors; multiple hospitals push back" },
+                { date: "Oct 2024", event: "North Country and Gifford identify data errors in the report (Gifford statement, Oct 28)" },
                 { date: "Oct 23, 2024", event: "Oliver Wyman admits errors but holds firm on overall conclusions" },
-                { date: "Dec 2024", event: "Vermont Legislature examines EMS reform as near-term priority stemming from Act 167 findings" },
                 { date: "Jan 1, 2026", event: "Vermont Medicaid hospital global budget launches with six hospitals" },
                 { date: "Jul 7, 2026", event: "CMS letter: the Medicaid hospital global budget is not approved under Global Commitment terms; payments to cease within 60 days" },
                 { date: "Jul 2026", event: "Vermont withdraws from AHEAD after CMS renegotiation cuts the expected EAST Fund from ~$138M to a cap near $10M — before its Cohort 2 performance period (Jan 2028)" },
@@ -200,22 +196,19 @@ export default function VermontAct167Page() {
                 Act 167 Community Engagement: Recommendations
               </h3>
               <p className="ty-body text-slate-600 leading-relaxed mb-4">
-                Commissioned by the Green Mountain Care Board under a fixed-price $1,050,000 contract
-                (August 2023 – September 2024), this 144-page study — led by <strong>Bruce Hamory, MD</strong>,
+                Commissioned by the Green Mountain Care Board (engagement August 2023 – September 2024), this 144-page study — led by <strong>Bruce Hamory, MD</strong>,
                 a physician-consultant and partner at <strong>Oliver Wyman Group</strong> — is a detailed, public,
                 hospital-by-hospital assessment of Vermont's hospital system.
               </p>
               <p className="ty-body text-slate-600 leading-relaxed">
-                The report synthesized data from two rounds of community engagement involving hundreds
-                of interviews, public meetings across the state, and thousands of Vermonters — patients,
-                nurses, physicians, hospital administrators, and community advocates.
+                The report synthesized data and two phases of engagement: more than 230 meetings with over
+                3,100 participants from more than 100 organizations.
               </p>
             </div>
             <div className="md:w-56 shrink-0 space-y-3">
               {[
                 { label: "Released", value: "September 18, 2024" },
                 { label: "Length", value: "144 pages" },
-                { label: "Contract Value", value: "$1,050,000" },
                 { label: "Lead Consultant", value: "Bruce Hamory, MD" },
                 { label: "Firm", value: "Oliver Wyman Group" },
                 { label: "Client", value: "Green Mountain Care Board" },
@@ -243,12 +236,12 @@ export default function VermontAct167Page() {
           <FindingCard
             number="1"
             title="Rising Healthcare Costs"
-            detail="Vermont already has some of the highest per-capita healthcare costs in the nation, driven by high hospital prices and an aging, high-need population."
+            detail="The lowest-cost silver marketplace premium rose 108% from 2018 to 2024 while household income rose 22% — driven by high hospital prices and an aging, high-need population."
           />
           <FindingCard
             number="2"
             title="Hospital Financial Losses"
-            detail="Most Vermont hospitals are operating at a loss. By 2028, 13 of Vermont's 14 hospitals are projected to face even deeper deficits without immediate structural changes."
+            detail="Most Vermont hospitals are operating at a loss. By 2028, 13 of Vermont's 14 hospitals are projected to be operating at a loss without structural changes (9 of 14 lost money in 2023)."
           />
           <FindingCard
             number="3"
@@ -268,8 +261,9 @@ export default function VermontAct167Page() {
           <div className="bg-rose-50 border border-rose-200 rounded-xl p-5">
             <div className="font-bold text-rose-800 text-sm mb-1">Financial Crisis Projection</div>
             <p className="text-xs text-rose-700 leading-relaxed">
-              Without action, Vermont's hospitals could require up to <strong>$3 billion in subsidies</strong> over the
-              next five years — funded by commercial insurance increases or taxpayers — to remain solvent.
+              Without action, Vermont&apos;s hospitals face a five-year gap of <strong>$0.7 billion to $2.4 billion</strong> just
+              to break even (up to $3.1 billion for a 3% operating margin), depending on expense growth — to be funded by
+              commercial insurance increases or taxpayers.
             </p>
           </div>
         </div>
@@ -378,24 +372,23 @@ export default function VermontAct167Page() {
             </div>
           </div>
           <p className="text-sm text-amber-800 leading-relaxed">
-            <strong>Root cause:</strong> The discharge data was drawn from Vermont's VHCURES system
-            (Vermont Health Care Uniform Reporting and Evaluation System), which covers only approximately
-            60% of Vermonters on private insurance — an incomplete dataset that underrepresents actual
-            hospital utilization.
+            Gifford&apos;s figures (2022): 1,188 admissions against the report&apos;s 742, and 7,494 ED visits against
+            5,146; it also reported 412 births over two years where the report showed fewer than 240. Oliver Wyman
+            separately acknowledged wrong birth and ED figures for North Country Hospital, which its author said came
+            from hospital-reported data (Gifford statement, October 28, 2024; Vermont Public, October 23, 2024).
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <div className="bg-white border border-slate-200 rounded-xl p-5">
-            <h4 className="font-bold text-slate-900 mb-3">Hospitals That Pushed Back</h4>
+            <h4 className="font-bold text-slate-900 mb-3">Who Pushed Back</h4>
             <ul className="space-y-1.5 text-sm text-slate-600">
               {[
-                "Gifford Medical Center (most vocal; cited 'broken trust')",
-                "Grace Cottage Hospital, Townshend",
-                "UVM Health Network",
-                "North Country Hospital, Newport",
-                "Northeastern Vermont Regional Hospital, St. Johnsbury",
-                "Springfield Hospital",
+                "Gifford Health Care, Randolph — 'broken trust'; no longer a credible basis for planning",
+                "North Country Hospital, Newport — wrong birth and ED figures",
+                "Grace Cottage Hospital, Townshend — 'wins and losses'; concerned about converting inpatient beds",
+                "Vermont chapter, American College of Emergency Physicians — opposed non-physician ED models",
+                "Vermont Association of Hospitals and Health Systems — questioned capacity to absorb shifted volume",
               ].map((h) => (
                 <li key={h} className="flex items-start gap-2">
                   <span className="text-rose-400 shrink-0 mt-0.5">✗</span>
@@ -426,9 +419,8 @@ export default function VermontAct167Page() {
         <div className="bg-slate-50 border border-slate-200 rounded-xl p-5">
           <h4 className="font-bold text-slate-900 mb-2">Gifford's Position</h4>
           <p className="ty-body text-slate-600 leading-relaxed">
-            Gifford Medical Center held a public community forum citing "broken trust" with the consultant
-            and announced its intent to fight for its current service lines — particularly its birthing center —
-            which Oliver Wyman had recommended for closure or consolidation.
+            Gifford said the report had created &quot;broken trust&quot; and defended its service lines — particularly its
+            Birthing Center, which Oliver Wyman had recommended closing or repurposing.
           </p>
           <div className="mt-3 flex gap-3 flex-wrap">
             <ExternalLink href="https://giffordhealthcare.org/gifford-health-care-uncovers-inaccurate-data-in-oliver-wyman-report/">
