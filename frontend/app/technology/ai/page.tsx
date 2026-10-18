@@ -48,10 +48,10 @@ function AIMLBody() {
             <tbody className="divide-y divide-slate-100">
               {[
                 { device: "IDx-DR (Digital Diagnostics)", indication: "Diabetic retinopathy screening", pathway: "De Novo", perf: "87% sensitivity, 90% specificity", year: "2018" },
-                { device: "Paige Prostate (Paige.AI)", indication: "Prostate cancer DL pathology", pathway: "De Novo", perf: "Reduces false-negative rate 70%", year: "2021" },
-                { device: "Viz.ai LVO", indication: "Large vessel occlusion on CT", pathway: "510(k)", perf: "AUC 0.91 vs. radiology read", year: "2018" },
-                { device: "ProFound AI (iCAD)", indication: "Mammography cancer detection", pathway: "PMA", perf: "8% more cancers detected vs. unaided", year: "2019" },
-                { device: "Eko DUO ECG+Stethoscope", indication: "AFib + murmur detection", pathway: "510(k)", perf: "99% AFib sensitivity, 98% specificity", year: "2023" },
+                { device: "Paige Prostate (Paige.AI)", indication: "Prostate cancer DL pathology", pathway: "De Novo", perf: "Pathologists' cancer detection on slide images improved 7.3% with assistance (FDA, 2021)", year: "2021" },
+                { device: "Viz.ai LVO", indication: "Large vessel occlusion on CT", pathway: "De Novo", perf: "AUC 0.91 for LVO detection (FDA De Novo summary)", year: "2018" },
+                { device: "ProFound AI (iCAD)", indication: "Digital breast tomosynthesis cancer detection", pathway: "510(k)", perf: "Reader sensitivity up 8% in the pivotal reader study (Conant 2019)", year: "2018" },
+                { device: "Eko DUO ECG+Stethoscope", indication: "AFib + murmur detection", pathway: "510(k)", perf: "AFib and murmur detection from a single-lead ECG and phonocardiogram", year: "2023" },
                 { device: "Caption Guidance (Caption Health)", indication: "AI-guided echo acquisition", pathway: "De Novo", perf: "Non-expert achieves diagnostic quality", year: "2020" },
               ].map((row) => (
                 <tr key={row.device} className="hover:bg-slate-50">
@@ -104,10 +104,10 @@ function AIMLBody() {
           <p className="text-sm text-slate-500 mb-5">Honest assessment of healthcare LLM applications</p>
           <div className="space-y-3">
             {[
-              { useCase: "Ambient clinical documentation", status: "Proven", evidence: "RCT-level evidence, live at 700+ hospitals", badge: "bg-emerald-100 text-emerald-700" },
-              { useCase: "Coding & charge capture", status: "Proven", evidence: "15–20% revenue capture improvement in pilots", badge: "bg-emerald-100 text-emerald-700" },
-              { useCase: "Patient message drafting", status: "Promising", evidence: "GPT-4 messages rated higher empathy than MDs (JAMA 2023)", badge: "bg-amber-100 text-amber-700" },
-              { useCase: "Clinical Q&A (RAG)", status: "Promising", evidence: "82–91% accuracy on USMLE Step 1; hallucination controls required", badge: "bg-amber-100 text-amber-700" },
+              { useCase: "Ambient clinical documentation", status: "Proven", evidence: "Randomized trial: 9.5% less time in notes for one product (NEJM AI 2025); 16 fewer documentation minutes per 8 patient hours (JAMA 2026)", badge: "bg-emerald-100 text-emerald-700" },
+              { useCase: "Coding & charge capture", status: "Proven", evidence: "Vendor-reported gains; few independent evaluations", badge: "bg-emerald-100 text-emerald-700" },
+              { useCase: "Patient message drafting", status: "Promising", evidence: "ChatGPT replies to public-forum questions rated more empathetic than physicians' (Ayers, JAMA Internal Medicine 2023)", badge: "bg-amber-100 text-amber-700" },
+              { useCase: "Clinical Q&A (RAG)", status: "Promising", evidence: "Passes licensing-exam-style questions; hallucination controls required in clinical use", badge: "bg-amber-100 text-amber-700" },
               { useCase: "Autonomous diagnosis", status: "Caution", evidence: "Misses rare diseases; biases toward common presentations; no FDA clearance", badge: "bg-rose-100 text-rose-700" },
               { useCase: "Treatment recommendation", status: "Caution", evidence: "High hallucination rate on drug interactions; liability unresolved", badge: "bg-rose-100 text-rose-700" },
             ].map((row) => (
@@ -130,11 +130,8 @@ function AIMLBody() {
             icon: "✍️",
             title: "Generative AI & Clinical Documentation",
             items: [
-              "Ambient AI scribes: Nuance DAX Copilot, Suki, Nabla — 50–70% documentation time reduction",
-              "GPT-4 clinical note generation: CMS approved ambient capture as 'technology-assisted'",
-              "SOAP note accuracy: ambient AI achieves 94–97% concordance with physician-edited notes",
-              "Burnout mitigation: DAX Copilot users report 70% reduction in after-hours charting",
-              "EHR integration: Epic SmartTools + Nuance live at 700+ US hospitals",
+              "Ambient AI scribes (DAX Copilot, Suki, Nabla, Abridge): 16 fewer documentation minutes per 8 patient hours (JAMA 2026); a UCLA randomized trial found 9.5% less time in notes for one product (NEJM AI 2025)",
+              "EHR integration: scribe output lands in the EHR note for clinician review",
               "Liability: AI-generated notes require physician attestation — no AI-only sign-off",
             ],
           },
@@ -142,10 +139,10 @@ function AIMLBody() {
             icon: "🔬",
             title: "Diagnostic AI & Imaging",
             items: [
-              "FDA-cleared AI devices: 692 AI/ML-enabled devices cleared as of 2024 (75% radiology)",
-              "Chest X-ray triage: Viz.ai, Aidoc — real-time ICH + PE detection, 92–96% sensitivity",
-              "Mammography AI: iCAD ProFound, Hologic Genius — FDA PMA cleared, 8% fewer missed cancers",
-              "Pathology AI: Paige Prostate (first FDA-approved AI pathology), PathAI HER2 scoring",
+              "FDA's list of AI-enabled devices passed 1,000 authorizations, most of them in radiology",
+              "CT triage: Viz.ai and Aidoc flag suspected stroke, intracranial hemorrhage and pulmonary embolism",
+              "Mammography AI: iCAD ProFound AI — FDA 510(k); higher reader sensitivity in its reader study",
+              "Pathology AI: Paige Prostate — first FDA-authorized AI tool for prostate biopsy images (De Novo, 2021)",
               "Retinal AI: IDx-DR — first fully autonomous AI diagnostic (diabetic retinopathy)",
               "ECG AI: Apple Watch AFib detection, Eko DUO — murmur + AFib dual detection",
             ],
@@ -154,12 +151,10 @@ function AIMLBody() {
             icon: "📊",
             title: "Predictive Analytics & Risk Models",
             items: [
-              "Sepsis prediction: Epic Sepsis Model (AUC 0.74); high false positive burden documented",
+              "Sepsis prediction: external validation of the Epic Sepsis Model found AUC 0.63 and many false alerts (Wong, JAMA Internal Medicine 2021)",
               "Readmission risk: LACE+, HOSPITAL score, Epic ML 30-day readmission model",
               "Deterioration early warning: Epic EDI, Capsule Vitals — NEWS2 successor algorithms",
-              "No-show prediction: ML models predict appointment no-shows with 80–85% accuracy",
-              "HCC coding gap identification: CMS uses ML for RAF capture optimization (MA plans)",
-              "Supply chain AI: demand forecasting for OR supplies — 15–20% waste reduction",
+              "HCC coding: MA plans use ML to find undocumented diagnoses — and CMS RADV audits and DOJ cases target unsupported codes",
             ],
           },
           {
@@ -178,10 +173,10 @@ function AIMLBody() {
             icon: "⚙️",
             title: "Operational AI",
             items: [
-              "OR scheduling: LeanTaaS iQueue — OR block utilization improvement 10–18%",
-              "Bed management: TeleTracking, Qventus — AI reduces boarding 20–30%",
+              "OR scheduling: block-utilization tools such as LeanTaaS iQueue",
+              "Bed management: capacity tools such as TeleTracking and Qventus",
               "Staffing prediction: AI-driven nurse staffing (Shift Admin, Legion WFM)",
-              "Revenue cycle AI: Waystar, Olive — denial prediction before submission",
+              "Revenue cycle AI: denial prediction before claim submission",
               "Prior auth AI: Cohere Health — automated clinical review + voice PA completion",
               "Supply chain: Prodigo — AI-driven formulary management and contract compliance",
             ],
@@ -192,7 +187,7 @@ function AIMLBody() {
             items: [
               "FDA AI/ML Action Plan: PCCP (predetermined change control plan) for adaptive models",
               "EU AI Act (2024): healthcare AI = 'high risk' — conformity assessment required",
-              "Algorithmic bias: PULSE dataset scandal; dermatology AI fails on darker skin tones",
+              "Algorithmic bias: a widely used care-management algorithm underestimated Black patients' needs by predicting cost (Obermeyer, Science 2019); dermatology models perform worse on darker skin",
               "ONC Health Data Interoperability Rule: FHIR API requirements enabling AI data access",
               "NIST AI RMF: voluntary AI risk management framework — increasingly used in procurement",
               "Post-market monitoring: FDA draft guidance on performance drift monitoring",

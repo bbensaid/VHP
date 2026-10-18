@@ -47,10 +47,10 @@ function SecurityBody() {
             </thead>
             <tbody className="divide-y divide-slate-100">
               {[
-                { org: "Change Healthcare (UHC)", year: "2024", records: "~100M+", type: "Ransomware (ALPHV)", impact: "$872M claims disruption; 6-week outage" },
-                { org: "HCA Healthcare", year: "2023", records: "11.27M", type: "Data theft (external)", impact: "Patient scheduling data; $3.35B stock drop" },
+                { org: "Change Healthcare (UnitedHealth)", year: "2024", records: "192.7M notified", type: "Ransomware (ALPHV)", impact: "UnitedHealth reported $872M of Q1 2024 costs; nationwide claims disruption" },
+                { org: "HCA Healthcare", year: "2023", records: "11.27M", type: "Data theft (external)", impact: "Patient contact and scheduling data" },
                 { org: "Advocate Aurora Health", year: "2022", records: "3.0M", type: "Pixel tracking (Meta)", impact: "PHI via third-party analytics code" },
-                { org: "CommonSpirit Health", year: "2022", records: "623,774", type: "Ransomware", impact: "$160M financial impact; EHR offline 5 weeks" },
+                { org: "CommonSpirit Health", year: "2022", records: "623,774", type: "Ransomware", impact: "EHR and other systems taken offline" },
                 { org: "Shields Health Care Group", year: "2022", records: "2.0M", type: "Data theft", impact: "Imaging center billing data exposure" },
                 { org: "Roper St. Francis Healthcare", year: "2023", records: "187,979", type: "Phishing", impact: "Patient portal + payment data" },
               ].map((row) => (
@@ -65,7 +65,7 @@ function SecurityBody() {
             </tbody>
           </table>
         </div>
-        <p className="text-xs text-slate-400 mt-4">Source: HHS OCR Breach Portal, public disclosures. Records exposed may include duplicates across payer/provider data sharing.</p>
+        <p className="text-xs text-slate-400 mt-4">Source: HHS OCR Breach Portal and company disclosures. Change Healthcare's count is notifications reported to OCR (July 2025) and may include duplicates.</p>
       </div>
 
       {/* Core Domains */}
@@ -75,12 +75,11 @@ function SecurityBody() {
             icon: "🔒",
             title: "Ransomware & Cyber Threats",
             items: [
-              "Healthcare is #1 targeted sector: 725 breaches in 2023 (HHS/OCR breach portal)",
-              "Change Healthcare attack (Feb 2024): $872M+ claims processing disruption — largest healthcare cyberattack",
-              "Ransomware groups: ALPHV/BlackCat, Rhysida — healthcare-specific RaaS operators",
-              "Attack vector: 74% via phishing + credential theft; 22% via unpatched vulnerabilities",
-              "Downtime cost: avg $1.3M/day for large hospital system during ransomware lockdown",
-              "Cyber insurance: premiums up 300% 2020–2023; healthcare excluded from many standard policies",
+              "725 large breaches (500+ records) reported to HHS OCR in 2023",
+              "Change Healthcare (Feb 2024): 192.7 million notifications; UnitedHealth booked $872M of first-quarter costs",
+              "Ransomware groups active against health care include ALPHV/BlackCat (Change Healthcare) and Rhysida",
+              "Phishing and stolen credentials remain common entry points — MFA closes most of them",
+              "Plan for weeks, not days, of downtime: several 2022–2024 attacks kept EHRs offline for weeks",
             ],
           },
           {
@@ -88,10 +87,10 @@ function SecurityBody() {
             title: "HIPAA & Regulatory Framework",
             items: [
               "HIPAA Security Rule: administrative, physical, technical safeguards — 45 CFR §164.300",
-              "OCR enforcement: $135M+ in HIPAA penalties collected 2023; Right of Access cases rising",
-              "HIPAA Omnibus (2013): Business Associates directly liable; breach notification ≤60 days",
-              "HHS proposed HIPAA Security Rule update (2024): MFA required, 72-hour incident response",
-              "FTC Health Breach Notification Rule: applies to non-HIPAA health apps (expanded 2023)",
+              "OCR 2023: 30,968 new complaints; monetary settlements of $7.4M from compliance reviews and $0.3M from complaint investigations (Report to Congress)",
+              "HIPAA Omnibus (2013): Business Associates directly liable; breach notice without unreasonable delay, ≤60 days",
+              "Proposed HIPAA Security Rule update (published January 2025, not yet final): would require MFA, encryption and restoring critical systems within 72 hours",
+              "FTC Health Breach Notification Rule: applies to non-HIPAA health apps (updated 2024)",
               "State breach laws: CCPA (CA), NY SHIELD Act — stricter than federal floor in many states",
             ],
           },
@@ -116,14 +115,13 @@ function SecurityBody() {
               "Microsegmentation: isolate clinical devices (infusion pumps, imaging) from EHR network",
               "Endpoint detection & response (EDR): CrowdStrike Falcon, SentinelOne in healthcare",
               "NIST SP 800-207: Zero Trust Architecture — federal standard, adopted in healthcare",
-              "Medical device security: FDA pre-market cybersecurity guidance (2022) + SBOM requirements",
+              "Medical device security: FDA premarket cybersecurity guidance (final 2023) and SBOMs required under FD&C Act §524B",
             ],
           },
           {
             icon: "☁️",
             title: "Cloud & Data Governance",
             items: [
-              "Cloud adoption: 87% of health systems using AWS/Azure/GCP for at least one workload (2024)",
               "BAA requirements: cloud vendors must execute HIPAA Business Associate Agreement",
               "De-identification: Safe Harbor (18 identifiers removed) or Expert Determination methods",
               "Federated learning: train AI models across hospitals without sharing raw patient data",
@@ -140,7 +138,7 @@ function SecurityBody() {
               "Downtime procedures: paper-based fallback for EHR, med admin, imaging — tested annually",
               "Cyber recovery: immutable backup (3-2-1-1 strategy) — air-gapped backup critical for ransomware",
               "Third-party risk: vendor risk management program (VRM) for all 3rd-party data access",
-              "Tabletop exercises: CISA recommends quarterly cybersecurity drills for health systems",
+              "Tabletop exercises: rehearse downtime and recovery with clinical leaders, not only IT",
             ],
           },
         ].map((card) => (
