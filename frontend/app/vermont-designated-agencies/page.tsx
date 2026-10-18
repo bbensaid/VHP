@@ -86,7 +86,7 @@ const DESIGNATED_AGENCIES = [
     counties: ["Rutland"],
     website: "https://rmhsccn.org",
     designation: "Mental Health & Developmental Disabilities Designated Agency",
-    highlight: "Certified CCBHC (one of Vermont's first two demonstration sites, selected fall 2023). Serves Rutland City and county — Vermont's second-largest city, with among the highest rates of MH/SUD burden, opioid overdose, and poverty in the state. One of the highest-acuity DA service areas.",
+    highlight: "Certified CCBHC (one of Vermont's first two demonstration sites, selected fall 2023). Serves Rutland City and county — one of Vermont's largest cities, with among the highest rates of MH/SUD burden, opioid overdose, and poverty in the state. One of the highest-acuity DA service areas.",
     sustainability: true,
   },
   {
@@ -279,7 +279,7 @@ export default function VermontDesignatedAgenciesPage() {
           {[
             { href: "/vermont-blueprint", label: "Blueprint for Health / CHTs", desc: "Blueprint's Mental Health Integration (MHI) initiative routes BH screening and brief treatment within primary care visits, with warm handoffs to DAs for patients needing specialty BH services. Co-location pilots exist in several regions.", color: "border-emerald-200 hover:bg-emerald-50", text: "text-emerald-700" },
             { href: "/vermont-vcci", label: "VCCI Case Management", desc: "VCCI case managers coordinate with DA staff for members with co-occurring MH/SUD and medical complexity. The PHQ-9 (depression screen) and AUDIT-C (alcohol screen) that feed VCCI SDOH scoring are often administered by DA-affiliated CHT staff.", color: "border-rose-200 hover:bg-rose-50", text: "text-rose-700" },
-            { href: "/vermont-act-68", label: "Act 68 (2025)", desc: "Act 68 includes provisions for mental health payment reform and expanded BH integration into primary care. DA Medicaid rate sustainability is a central Act 68 implementation challenge tracked by the AHS Office of Health Care Reform.", color: "border-indigo-200 hover:bg-indigo-50", text: "text-indigo-700" },
+            { href: "/vermont-act-68", label: "Act 68 (2025)", desc: "Act 68's Statewide Strategic Plan must cover mental-health and substance-use services and set targets for the share of spending on primary care, including mental health; designated agencies hold a seat on its Health Care Delivery Advisory Committee.", color: "border-indigo-200 hover:bg-indigo-50", text: "text-indigo-700" },
           ].map(item => (
             <Link key={item.href} href={item.href} className={`block border rounded-xl p-4 transition-all ${item.color} hover:border-opacity-100`}>
               <p className={`font-black text-sm mb-1.5 ${item.text}`}>{item.label}</p>
