@@ -46,9 +46,9 @@ export const GMCH = {
   medicarePct: 45,
   commercialPct: 37,
   selfPayPct: 1,
-  // FTEs: statewide ~17,000 hospital employees (VAHHS) scaled by GMCH's share of
+  // FTEs: the 14 hospitals' ~14,600 FTEs (CMS FY2023 cost reports) scaled by GMCH's share of
   // statewide NPR (~$2.89B, GMCB FY2023) — an apportionment, not a count.
-  fteCount: Math.round((17_000 * 90_261_079) / 2_890_000_000),
+  fteCount: Math.round((14_600 * 90_261_079) / 2_890_000_000),
 } as const;
 
 /** Operating margin implied by the median revenue and expense (≈ −0.2%). */
