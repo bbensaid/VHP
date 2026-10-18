@@ -169,11 +169,11 @@ CATALOG = [
     },
     {
         "id": "cms-rural-simulator",
-        "label": "CMS Rural Health Transformation Simulator",
+        "label": "Rural Health Transformation Program — State Awards",
         "url": "/dashboard/simulator",
         "category": "States & Programs",
         "subcategory": "Simulator",
-        "description": "Model the multi-pillar impact of the $50B CMS Rural Health Transformation Program across participating states.",
+        "description": "CMS FY2026 Rural Health Transformation Program awards for all 50 states, the equal/scored split of the $10B a year, and what states are funding.",
         "keywords": ["cms rural health", "rural health transformation", "cms rural simulator", "rural transformation program"],
     },
 

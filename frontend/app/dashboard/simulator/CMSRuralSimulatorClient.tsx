@@ -1,119 +1,91 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+// Rebuilt 2026-10-17. The earlier version modelled "12 participating states", a "$1.8B program budget" and
+// invented per-initiative costs, savings, pillar scores and state metrics. All 50 states were awarded; the
+// figures below are CMS's own (press release, December 29, 2025; book-audit/deep/sources/cms_rht_fy26_awards.json).
+
+import { useMemo, useState } from 'react'
 import Link from 'next/link'
-import { CheckCircleIcon, ExclamationTriangleIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
-import { StickyOutputPanel } from '@/components/StickyOutputPanel'
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
 
-type PillarKey = 'policy' | 'technology' | 'financial' | 'equity'
+const SOURCE_URL = 'https://www.cms.gov/newsroom/press-releases/cms-announces-50-billion-awards-strengthen-rural-health-all-50-states'
 
-interface ParticipatingState {
-  id: string
-  name: string
-  abbr: string
-  cahCount: number
-  rhtAwardM: number
-  ruralPop: number
-  medicaidRuralPct: number
-  broadbandGapPct: number
-  transformationPhase: 'planning' | 'early' | 'active' | 'advanced'
-}
-
-interface RHTPRecommendation {
-  id: string
-  title: string
-  category: 'payment' | 'telehealth' | 'workforce' | 'equity' | 'data' | 'capital'
-  pillarScores: Record<PillarKey, number>
-  implementationComplexity: number
-  annualCostM: number
-  annualSavingsM: number
-  timelineMonths: number
-  status: 'required' | 'optional'
-}
-
-const STATES: ParticipatingState[] = [
-  { id: 'vermont', name: 'Vermont', abbr: 'VT', cahCount: 8, rhtAwardM: 195, ruralPop: 380000, medicaidRuralPct: 38, broadbandGapPct: 12, transformationPhase: 'active' },
-  { id: 'montana', name: 'Montana', abbr: 'MT', cahCount: 48, rhtAwardM: 285, ruralPop: 820000, medicaidRuralPct: 32, broadbandGapPct: 28, transformationPhase: 'early' },
-  { id: 'south-dakota', name: 'South Dakota', abbr: 'SD', cahCount: 36, rhtAwardM: 220, ruralPop: 560000, medicaidRuralPct: 29, broadbandGapPct: 22, transformationPhase: 'planning' },
-  { id: 'wyoming', name: 'Wyoming', abbr: 'WY', cahCount: 24, rhtAwardM: 168, ruralPop: 420000, medicaidRuralPct: 25, broadbandGapPct: 18, transformationPhase: 'early' },
-  { id: 'alaska', name: 'Alaska', abbr: 'AK', cahCount: 28, rhtAwardM: 310, ruralPop: 510000, medicaidRuralPct: 44, broadbandGapPct: 42, transformationPhase: 'planning' },
-  { id: 'west-virginia', name: 'West Virginia', abbr: 'WV', cahCount: 32, rhtAwardM: 248, ruralPop: 1100000, medicaidRuralPct: 52, broadbandGapPct: 35, transformationPhase: 'early' },
-  { id: 'mississippi', name: 'Mississippi', abbr: 'MS', cahCount: 52, rhtAwardM: 340, ruralPop: 1800000, medicaidRuralPct: 58, broadbandGapPct: 31, transformationPhase: 'planning' },
-  { id: 'kentucky', name: 'Kentucky', abbr: 'KY', cahCount: 44, rhtAwardM: 280, ruralPop: 1600000, medicaidRuralPct: 46, broadbandGapPct: 24, transformationPhase: 'active' },
+// FY2026 awards, CMS, December 29, 2025. Sum: $10,000,000,003.
+const AWARDS: { name: string; award: number }[] = [
+  { name: "Alaska", award: 272174856 },
+  { name: "Amount Alabama", award: 203404327 },
+  { name: "Arizona", award: 166988956 },
+  { name: "Arkansas", award: 208779396 },
+  { name: "California", award: 233639308 },
+  { name: "Colorado", award: 200105604 },
+  { name: "Connecticut", award: 154249106 },
+  { name: "Delaware", award: 157394964 },
+  { name: "Florida", award: 209938195 },
+  { name: "Georgia", award: 218862170 },
+  { name: "Hawaii", award: 188892440 },
+  { name: "Idaho", award: 185974368 },
+  { name: "Illinois", award: 193418216 },
+  { name: "Indiana", award: 206927897 },
+  { name: "Iowa", award: 209040064 },
+  { name: "Kansas", award: 221898008 },
+  { name: "Kentucky", award: 212905591 },
+  { name: "Louisiana", award: 208374448 },
+  { name: "Maine", award: 190008051 },
+  { name: "Maryland", award: 168180838 },
+  { name: "Massachusetts", award: 162005238 },
+  { name: "Michigan", award: 173128201 },
+  { name: "Minnesota", award: 193090618 },
+  { name: "Mississippi", award: 205907220 },
+  { name: "Missouri", award: 216276818 },
+  { name: "Montana", award: 233509359 },
+  { name: "Nebraska", award: 218529075 },
+  { name: "Nevada", award: 179931608 },
+  { name: "New Hampshire", award: 204016550 },
+  { name: "New Jersey", award: 147250806 },
+  { name: "New Mexico", award: 211484741 },
+  { name: "New York", award: 212058208 },
+  { name: "North Carolina", award: 213008356 },
+  { name: "North Dakota", award: 198936970 },
+  { name: "Ohio", award: 202030262 },
+  { name: "Oklahoma", award: 223476949 },
+  { name: "Oregon", award: 197271578 },
+  { name: "Pennsylvania", award: 193294054 },
+  { name: "Rhode Island", award: 156169931 },
+  { name: "South Carolina", award: 200030252 },
+  { name: "South Dakota", award: 189477607 },
+  { name: "Tennessee", award: 206888882 },
+  { name: "Texas", award: 281319361 },
+  { name: "Utah", award: 195743566 },
+  { name: "Vermont", award: 195053740 },
+  { name: "Virginia", award: 189544888 },
+  { name: "Washington", award: 181257515 },
+  { name: "West Virginia", award: 199476099 },
+  { name: "Wisconsin", award: 203670005 },
+  { name: "Wyoming", award: 205004743 },
 ]
 
-const RECOMMENDATIONS: RHTPRecommendation[] = [
-  { id: 'global-budget-demo', title: 'Rural Global Budget Payment Demonstration', category: 'payment', status: 'required', timelineMonths: 18, pillarScores: { policy: 88, technology: 60, financial: 82, equity: 65 }, implementationComplexity: 72, annualCostM: 45, annualSavingsM: 180 },
-  { id: 'essential-hospital', title: 'Essential Hospital Designation & Payment Floor', category: 'payment', status: 'required', timelineMonths: 12, pillarScores: { policy: 85, technology: 50, financial: 78, equity: 72 }, implementationComplexity: 55, annualCostM: 28, annualSavingsM: 120 },
-  { id: 'telehealth-infra', title: 'Rural Telehealth Infrastructure Investment', category: 'telehealth', status: 'required', timelineMonths: 24, pillarScores: { policy: 72, technology: 90, financial: 65, equity: 80 }, implementationComplexity: 68, annualCostM: 88, annualSavingsM: 145 },
-  { id: 'broadband-rural', title: 'Rural Broadband & Connectivity Program', category: 'telehealth', status: 'required', timelineMonths: 36, pillarScores: { policy: 65, technology: 95, financial: 55, equity: 85 }, implementationComplexity: 80, annualCostM: 140, annualSavingsM: 90 },
-  { id: 'workforce-pipeline', title: 'Rural Physician & Nursing Workforce Pipeline', category: 'workforce', status: 'required', timelineMonths: 48, pillarScores: { policy: 70, technology: 45, financial: 60, equity: 88 }, implementationComplexity: 85, annualCostM: 110, annualSavingsM: 85 },
-  { id: 'cin-development', title: 'Rural Clinically Integrated Network Development', category: 'payment', status: 'optional', timelineMonths: 30, pillarScores: { policy: 78, technology: 72, financial: 75, equity: 62 }, implementationComplexity: 76, annualCostM: 65, annualSavingsM: 140 },
-  { id: 'ai-scribe', title: 'AI Scribe & Administrative Automation', category: 'data', status: 'optional', timelineMonths: 12, pillarScores: { policy: 60, technology: 85, financial: 70, equity: 55 }, implementationComplexity: 45, annualCostM: 32, annualSavingsM: 58 },
-  { id: 'sdoh-rural', title: 'Rural SDOH Navigation & Community Health Workers', category: 'equity', status: 'optional', timelineMonths: 18, pillarScores: { policy: 65, technology: 48, financial: 48, equity: 95 }, implementationComplexity: 70, annualCostM: 55, annualSavingsM: 40 },
+// Public Law 119-21: half of each year's $10B is split equally among approved states, half by CMS's scoring factors.
+const EQUAL_SHARE = 10_000_000_000 / 2 / 50
+
+// CMS's own summary of what states are planning (same press release).
+const PRIORITIES = [
+  { title: 'Bring more care within reach', body: 'Preventive, primary, maternal and behavioral health services; new access points; chronic disease prevention; EMS communication, treat-in-place and coordinated transfers.' },
+  { title: 'Strengthen the rural clinical workforce', body: 'Training, residencies, recruitment and retention incentives, and pathways for students to start health careers in their own communities.' },
+  { title: 'Modernize infrastructure and technology', body: 'Facilities and equipment; cybersecurity and interoperability; telehealth, remote patient monitoring and digital tools; AI scribes and workflow tools.' },
+  { title: 'Structural efficiency and community providers', body: 'Streamlined operations, hub-and-spoke models, rural regional centers of excellence, data-sharing platforms and rural clinically integrated networks.' },
+  { title: 'Innovative care models and payment reform', body: 'New primary care and value-based care models, partnerships among rural and other providers, and regional collaboration.' },
 ]
 
-const PILLARS: { key: PillarKey; label: string; color: string }[] = [
-  { key: 'policy',     label: 'Policy',     color: 'text-blue-700' },
-  { key: 'technology', label: 'Technology', color: 'text-indigo-700' },
-  { key: 'financial',  label: 'Financial',  color: 'text-emerald-700' },
-  { key: 'equity',     label: 'Equity',     color: 'text-violet-700' },
-]
-
-const CAT_LABELS: Record<string, string> = {
-  payment: 'Payment Reform', telehealth: 'Telehealth', workforce: 'Workforce',
-  equity: 'Equity', data: 'Data & AI', capital: 'Capital',
-}
-
-const PHASE_COLORS: Record<string, string> = {
-  planning: 'bg-slate-100 text-slate-600',
-  early: 'bg-amber-100 text-amber-700',
-  active: 'bg-emerald-100 text-emerald-700',
-  advanced: 'bg-blue-100 text-blue-700',
-}
-
-function ScoreGauge({ score }: { score: number }) {
-  const r = 28; const circ = 2 * Math.PI * r; const dash = (score / 100) * circ
-  const col = score >= 70 ? '#10b981' : score >= 50 ? '#f59e0b' : '#ef4444'
-  return (
-    <svg width="68" height="68" viewBox="0 0 68 68">
-      <circle cx="34" cy="34" r={r} fill="none" stroke="#e2e8f0" strokeWidth="6" />
-      <circle cx="34" cy="34" r={r} fill="none" stroke={col} strokeWidth="6"
-        strokeDasharray={`${dash} ${circ - dash}`} strokeLinecap="round" transform="rotate(-90 34 34)" />
-      <text x="34" y="39" textAnchor="middle" fontSize="13" fontWeight="800" fill="#0f172a">{score}</text>
-    </svg>
-  )
-}
+const usdM = (n: number) => `$${(n / 1e6).toFixed(1)}M`
 
 export default function CMSRuralSimulatorClient() {
-  const [selectedRecs, setSelectedRecs] = useState<string[]>(['global-budget-demo', 'essential-hospital', 'telehealth-infra', 'ai-scribe'])
-  const [selectedState, setSelectedState] = useState('vermont')
-  const [activeTab, setActiveTab] = useState<'scenario' | 'states' | 'timeline'>('scenario')
+  const [selected, setSelected] = useState('Vermont')
+  const [tab, setTab] = useState<'awards' | 'priorities'>('awards')
 
-  const toggle = (id: string) =>
-    setSelectedRecs(p => p.includes(id) ? p.filter(r => r !== id) : [...p, id])
-
-  const selected = RECOMMENDATIONS.filter(r => selectedRecs.includes(r.id))
-  const state = STATES.find(s => s.id === selectedState)!
-
-  const pillarScores = useMemo((): Record<PillarKey, number> => {
-    if (!selected.length) return { policy: 0, technology: 0, financial: 0, equity: 0 }
-    return Object.fromEntries(
-      (['policy', 'technology', 'financial', 'equity'] as PillarKey[]).map(k => [
-        k, Math.round(selected.reduce((s, r) => s + r.pillarScores[k], 0) / selected.length)
-      ])
-    ) as Record<PillarKey, number>
-    // `selected` is derived from `selectedRecs` on every render — depending
-    // on `selectedRecs` is equivalent.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedRecs])
-
-  const totalCostM = selected.reduce((s, r) => s + r.annualCostM, 0)
-  const totalSavingsM = selected.reduce((s, r) => s + r.annualSavingsM, 0)
-  const netM = totalSavingsM - totalCostM
-  const maxTimeline = selected.length ? Math.max(...selected.map(r => r.timelineMonths)) : 0
-  const totalRHTPool = STATES.reduce((s, st) => s + st.rhtAwardM, 0)
-  const stateImpactM = state ? (netM * state.rhtAwardM) / totalRHTPool : 0
+  const ranked = useMemo(() => [...AWARDS].sort((a, b) => b.award - a.award), [])
+  const state = AWARDS.find((s) => s.name === selected)!
+  const rank = ranked.findIndex((s) => s.name === selected) + 1
+  const max = ranked[0].award
 
   return (
     <div className="min-h-screen bg-white">
@@ -124,14 +96,14 @@ export default function CMSRuralSimulatorClient() {
             <span className="text-slate-300">/</span>
             <span className="text-[10px] font-black uppercase tracking-widest text-rose-600 bg-rose-50 border border-rose-200 px-2.5 py-1 rounded">US · National</span>
           </div>
-          <h1 className="text-3xl font-black text-slate-900 mb-3 leading-tight">CMS Rural Health Transformation Simulator</h1>
+          <h1 className="text-3xl font-black text-slate-900 mb-3 leading-tight">Rural Health Transformation Program — State Awards</h1>
           <p className="text-slate-600 max-w-2xl text-sm leading-relaxed mb-6">
-            Model the multi-pillar impact of CMS&apos;s $50B Rural Health Transformation Program — global budget
-            demonstrations, essential hospital designations, telehealth infrastructure, and payment reforms
-            across 12 participating states and 1,300+ critical access hospitals.
+            The $50 billion federal program created by Public Law 119-21 (H.R. 1) pays out $10 billion a year from 2026
+            through 2030. CMS awarded all 50 states for FY2026: half of the money split equally, half by CMS&apos;s scoring
+            of rurality, state policy actions and the strength of each plan. Later years&apos; awards are set annually.
           </p>
           <div className="flex flex-wrap gap-3">
-            {[['12', 'Participating States'], ['1,300+', 'CAHs Modeled'], ['$1.8B', 'Program Budget'], ['$50B', 'H.R. 1 Authorization']].map(([v, l]) => (
+            {[['$50B', 'FY2026–2030'], ['$10B', 'Per year'], ['50', 'States awarded'], ['$147M–$281M', 'FY2026 range']].map(([v, l]) => (
               <div key={l} className="bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-center">
                 <div className="text-lg font-black text-slate-900">{v}</div>
                 <div className="text-[11px] text-slate-500">{l}</div>
@@ -143,172 +115,63 @@ export default function CMSRuralSimulatorClient() {
 
       <div className="max-w-5xl mx-auto px-6 py-10">
         <div className="flex gap-2 mb-8 border-b border-slate-200">
-          {(['scenario', 'states', 'timeline'] as const).map(tab => (
-            <button key={tab} onClick={() => setActiveTab(tab)}
-              className={`px-5 py-2.5 text-sm font-bold capitalize border-b-2 -mb-px transition-all ${
-                activeTab === tab ? 'border-rose-600 text-rose-700' : 'border-transparent text-slate-500 hover:text-slate-700'
-              }`}>
-              {tab === 'scenario' ? 'Scenario Builder' : tab === 'states' ? 'State Explorer' : 'Timeline'}
+          {(['awards', 'priorities'] as const).map((t) => (
+            <button key={t} onClick={() => setTab(t)}
+              className={`px-5 py-2.5 text-sm font-bold border-b-2 -mb-px transition-all ${tab === t ? 'border-rose-600 text-rose-700' : 'border-transparent text-slate-500 hover:text-slate-700'}`}>
+              {t === 'awards' ? 'State Awards' : 'What States Are Funding'}
             </button>
           ))}
         </div>
 
-        {activeTab === 'scenario' && (
+        {tab === 'awards' && (
           <div className="grid lg:grid-cols-3 gap-6">
-            <div className="lg:col-span-2 space-y-3">
-              <h2 className="text-base font-black text-slate-900 mb-4">Select RHTP Initiatives</h2>
-              {RECOMMENDATIONS.map(rec => {
-                const isSel = selectedRecs.includes(rec.id)
-                return (
-                  <button key={rec.id} onClick={() => toggle(rec.id)}
-                    className={`w-full text-left p-4 rounded-xl border-2 transition-all ${isSel ? 'border-rose-500 bg-rose-50' : 'border-slate-200 hover:border-slate-300 bg-white'}`}>
-                    <div className="flex items-start gap-3">
-                      <div className={`w-5 h-5 rounded mt-0.5 shrink-0 border-2 flex items-center justify-center ${isSel ? 'bg-rose-600 border-rose-600' : 'border-slate-300'}`}>
-                        {isSel && <CheckCircleIcon className="w-3.5 h-3.5 text-white" />}
-                      </div>
-                      <div className="flex-1">
-                        <div className="flex flex-wrap items-center gap-2 mb-1">
-                          <span className="text-sm font-black text-slate-900">{rec.title}</span>
-                          <span className={`text-[10px] font-bold px-2 py-0.5 rounded uppercase ${rec.status === 'required' ? 'bg-rose-100 text-rose-700' : 'bg-slate-100 text-slate-600'}`}>{rec.status}</span>
-                          <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-rose-50 text-rose-700">{CAT_LABELS[rec.category]}</span>
-                        </div>
-                        <div className="flex flex-wrap gap-3 text-[11px] text-slate-500">
-                          <span>Cost: <span className="font-bold text-slate-700">${rec.annualCostM}M/yr</span></span>
-                          <span>Savings: <span className="font-bold text-emerald-700">${rec.annualSavingsM}M/yr</span></span>
-                          <span>Timeline: <span className="font-bold">{rec.timelineMonths} mo</span></span>
-                          <span>Complexity: <span className="font-bold text-amber-700">{rec.implementationComplexity}/100</span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </button>
-                )
-              })}
-            </div>
-
-            <div className="space-y-4">
-              <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5">
-                <h3 className="text-xs font-black uppercase tracking-wider text-slate-500 mb-4">Pillar Scores</h3>
-                <div className="grid grid-cols-2 gap-4">
-                  {PILLARS.map(p => (
-                    <div key={p.key} className="flex flex-col items-center gap-1">
-                      <ScoreGauge score={pillarScores[p.key]} />
-                      <span className={`text-[10px] font-bold ${p.color}`}>{p.label}</span>
-                    </div>
-                  ))}
-                </div>
+            <div className="lg:col-span-1">
+              <label className="text-xs font-black uppercase tracking-wider text-slate-500" htmlFor="rht-state">State</label>
+              <select id="rht-state" value={selected} onChange={(e) => setSelected(e.target.value)}
+                className="mt-2 w-full border border-slate-300 rounded-lg px-3 py-2 text-sm">
+                {AWARDS.map((s) => <option key={s.name} value={s.name}>{s.name}</option>)}
+              </select>
+              <div className="mt-4 bg-rose-50 border border-rose-200 rounded-xl p-4 space-y-2 text-sm">
+                <div className="flex justify-between"><span className="text-slate-600">FY2026 award</span><span className="font-black text-slate-900">{usdM(state.award)}</span></div>
+                <div className="flex justify-between"><span className="text-slate-600">Rank of 50</span><span className="font-bold">{rank}</span></div>
+                <div className="flex justify-between"><span className="text-slate-600">Equal share</span><span className="font-bold">{usdM(EQUAL_SHARE)}</span></div>
+                <div className="flex justify-between"><span className="text-slate-600">Scored share</span><span className="font-bold">{usdM(state.award - EQUAL_SHARE)}</span></div>
               </div>
-              <div className="bg-white border border-slate-200 rounded-2xl p-5 space-y-3 text-sm">
-                <h3 className="text-xs font-black uppercase tracking-wider text-slate-500 mb-2">Financial Summary</h3>
-                <div className="flex justify-between"><span className="text-slate-600">Annual Cost</span><span className="font-black text-rose-700">${totalCostM}M</span></div>
-                <div className="flex justify-between"><span className="text-slate-600">Annual Savings</span><span className="font-black text-emerald-700">${totalSavingsM}M</span></div>
-                <div className="border-t border-slate-100 pt-3 flex justify-between">
-                  <span className="font-bold">Net Impact</span>
-                  <span className={`font-black ${netM >= 0 ? 'text-emerald-700' : 'text-rose-700'}`}>{netM >= 0 ? '+' : ''}${netM}M</span>
-                </div>
-                <div className="flex justify-between"><span className="text-slate-600">Full Implementation</span><span className="font-bold">{maxTimeline} months</span></div>
-              </div>
-              {!selected.length && (
-                <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 flex gap-2">
-                  <ExclamationTriangleIcon className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
-                  <p className="text-xs text-amber-800">Select initiatives to see scores.</p>
-                </div>
-              )}
+              <p className="text-[11px] text-slate-500 mt-3 leading-relaxed">
+                Equal share = half of $10B divided among 50 states. Scored share = the rest of the state&apos;s award.
+              </p>
             </div>
-          </div>
-        )}
-
-        {activeTab === 'states' && (
-          <div className="space-y-4">
-            <div className="flex flex-wrap gap-2 mb-4">
-              {STATES.map(s => (
-                <button key={s.id} onClick={() => setSelectedState(s.id)}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-all ${selectedState === s.id ? 'bg-rose-600 text-white border-rose-600' : 'bg-white text-slate-600 border-slate-200 hover:border-rose-300'}`}>
-                  {s.abbr} — {s.name}
+            <div className="lg:col-span-2 space-y-1.5">
+              {ranked.map((s, i) => (
+                <button key={s.name} onClick={() => setSelected(s.name)} className="w-full flex items-center gap-3 text-left">
+                  <span className="w-6 text-[11px] text-slate-400 text-right">{i + 1}</span>
+                  <span className={`w-32 text-xs ${s.name === selected ? 'font-black text-rose-700' : 'text-slate-700'}`}>{s.name}</span>
+                  <span className="flex-1 h-3 bg-slate-100 rounded">
+                    <span className={`block h-3 rounded ${s.name === selected ? 'bg-rose-600' : 'bg-slate-400'}`} style={{ width: `${(s.award / max) * 100}%` }} />
+                  </span>
+                  <span className="w-16 text-[11px] text-slate-600 text-right">{usdM(s.award)}</span>
                 </button>
               ))}
             </div>
-
-            <div className="bg-white border border-slate-200 rounded-2xl p-6">
-              <div className="flex flex-wrap justify-between gap-4 mb-6">
-                <div>
-                  <h2 className="text-xl font-black text-slate-900">{state.name}</h2>
-                  <p className="text-sm text-slate-500">{state.cahCount} critical access hospitals · {(state.ruralPop / 1000).toFixed(0)}K rural residents</p>
-                </div>
-                <span className={`px-3 py-1.5 rounded-lg text-xs font-bold capitalize self-start ${PHASE_COLORS[state.transformationPhase]}`}>
-                  {state.transformationPhase} phase
-                </span>
-              </div>
-
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
-                {[
-                  { v: `$${state.rhtAwardM}M`, l: 'RHT Award' },
-                  { v: `${state.cahCount}`, l: 'Critical Access Hospitals' },
-                  { v: `${state.medicaidRuralPct}%`, l: 'Rural Medicaid Rate' },
-                  { v: `${state.broadbandGapPct}%`, l: 'Broadband Gap' },
-                ].map(({ v, l }) => (
-                  <div key={l} className="bg-slate-50 rounded-xl p-3 text-center border border-slate-100">
-                    <div className="text-lg font-black text-slate-900">{v}</div>
-                    <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wide">{l}</div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="bg-rose-50 border border-rose-200 rounded-xl p-4">
-                <div className="text-sm font-bold text-rose-900 mb-1">Scenario Impact on {state.name}</div>
-                <p className="text-xs text-rose-800 leading-relaxed">
-                  Under this scenario, {state.name} is projected to realize a net financial impact of{' '}
-                  <span className="font-black">{stateImpactM >= 0 ? '+' : ''}${stateImpactM.toFixed(1)}M annually</span> — scaled by
-                  this state&apos;s RHT award share.
-                  {state.broadbandGapPct > 25 && ` Broadband gap of ${state.broadbandGapPct}% makes connectivity investment a prerequisite for effective telehealth deployment.`}
-                  {state.transformationPhase === 'planning' && ' This state is in the planning phase — implementation timelines may extend beyond standard projections.'}
-                </p>
-              </div>
-            </div>
           </div>
         )}
 
-        {activeTab === 'timeline' && (
-          <div className="space-y-4">
-            <h2 className="text-base font-black text-slate-900 mb-4">Implementation Roadmap</h2>
-            {!selected.length ? (
-              <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 text-center text-sm text-amber-800">
-                Select initiatives in the Scenario Builder to see the timeline.
+        {tab === 'priorities' && (
+          <div className="grid md:grid-cols-2 gap-4">
+            {PRIORITIES.map((p) => (
+              <div key={p.title} className="bg-white border border-slate-200 rounded-xl p-5">
+                <div className="text-sm font-black text-slate-900 mb-1">{p.title}</div>
+                <p className="text-xs text-slate-600 leading-relaxed">{p.body}</p>
               </div>
-            ) : (
-              <>
-                {selected.sort((a, b) => a.timelineMonths - b.timelineMonths).map(rec => {
-                  const w = (rec.timelineMonths / maxTimeline) * 100
-                  return (
-                    <div key={rec.id}>
-                      <div className="flex justify-between mb-1">
-                        <span className="text-xs font-bold text-slate-700">{rec.title}</span>
-                        <span className="text-[11px] text-slate-400">{rec.timelineMonths} mo</span>
-                      </div>
-                      <div className="h-6 bg-slate-100 rounded-full overflow-hidden">
-                        <div className="h-full rounded-full bg-rose-500 flex items-center px-2" style={{ width: `${w}%` }}>
-                          <span className="text-[10px] font-bold text-white whitespace-nowrap overflow-hidden">{CAT_LABELS[rec.category]}</span>
-                        </div>
-                      </div>
-                    </div>
-                  )
-                })}
-                <div className="flex justify-between text-[10px] text-slate-400 mt-2">
-                  <span>Month 0</span><span>Month {maxTimeline}</span>
-                </div>
-                <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 mt-4">
-                  <h3 className="font-black text-lg text-slate-900 mb-3">Scenario Summary</h3>
-                  <div className="grid md:grid-cols-3 gap-4 text-sm">
-                    <div><div className="text-slate-500 text-xs mb-1">Initiatives</div><div className="font-black text-xl text-slate-900">{selected.length}</div></div>
-                    <div><div className="text-slate-500 text-xs mb-1">Full Implementation</div><div className="font-black text-xl text-slate-900">{maxTimeline} months</div></div>
-                    <div><div className="text-slate-500 text-xs mb-1">Net Annual Impact</div><div className={`font-black text-xl ${netM >= 0 ? 'text-emerald-700' : 'text-rose-700'}`}>{netM >= 0 ? '+' : ''}${netM}M</div></div>
-                  </div>
-                </div>
-              </>
-            )}
+            ))}
           </div>
         )}
 
-        <div className="mt-12 pt-8 border-t border-slate-200 flex flex-wrap gap-3 pb-72 md:pb-64">
+        <p className="text-[11px] text-slate-400 mt-8">
+          Source: <a href={SOURCE_URL} target="_blank" rel="noopener noreferrer" className="underline">CMS, &quot;CMS Announces $50 Billion in Awards to Strengthen Rural Health in All 50 States,&quot; December 29, 2025</a>.
+        </p>
+
+        <div className="mt-8 pt-8 border-t border-slate-200 flex flex-wrap gap-3 pb-16">
           <Link href="/vermont-rht-program" className="flex items-center gap-1.5 text-xs font-bold text-rose-700 bg-rose-50 border border-rose-200 px-3 py-1.5 rounded-lg hover:bg-rose-100 transition-colors">
             Vermont RHT Program <ArrowTopRightOnSquareIcon className="w-3.5 h-3.5" />
           </Link>
@@ -320,48 +183,6 @@ export default function CMSRuralSimulatorClient() {
           </Link>
         </div>
       </div>
-
-      {/* Sticky scenario summary — pinned so impact stays visible as the
-          user scrolls through provisions, states, or the timeline. */}
-      <StickyOutputPanel
-        mode="bottom-collapsible"
-        show={selected.length > 0}
-        defaultCollapsed={true}
-        compactSummary={
-          <span className="flex items-center gap-3 flex-wrap text-[11px]">
-            <span className="font-black uppercase tracking-widest text-rose-700">CMS Rural Impact</span>
-            <span className="text-slate-600">{selected.length} provisions</span>
-            <span className="text-rose-700">Cost ${totalCostM}M</span>
-            <span className="text-emerald-700">Savings ${totalSavingsM}M</span>
-            <span className={netM >= 0 ? 'text-emerald-700' : 'text-rose-700'}>Net {netM >= 0 ? '+' : ''}${netM}M</span>
-            <span className="text-slate-600">{maxTimeline} mo</span>
-          </span>
-        }
-      >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
-            <h3 className="text-xs font-black uppercase tracking-wider text-slate-500 mb-3">Pillar Scores</h3>
-            <div className="grid grid-cols-4 gap-2">
-              {PILLARS.map(p => (
-                <div key={p.key} className="flex flex-col items-center gap-1">
-                  <ScoreGauge score={pillarScores[p.key]} />
-                  <span className={`text-[10px] font-bold text-center leading-tight ${p.color}`}>{p.label}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="bg-white border border-slate-200 rounded-xl p-4 space-y-2 text-sm">
-            <h3 className="text-xs font-black uppercase tracking-wider text-slate-500 mb-2">Financial Summary</h3>
-            <div className="flex justify-between"><span className="text-slate-600">Annual Cost</span><span className="font-black text-rose-700">${totalCostM}M</span></div>
-            <div className="flex justify-between"><span className="text-slate-600">Annual Savings</span><span className="font-black text-emerald-700">${totalSavingsM}M</span></div>
-            <div className="border-t border-slate-100 pt-2 flex justify-between">
-              <span className="font-bold text-slate-700">Net Impact</span>
-              <span className={`font-black ${netM >= 0 ? 'text-emerald-700' : 'text-rose-700'}`}>{netM >= 0 ? '+' : ''}${netM}M</span>
-            </div>
-            <div className="flex justify-between"><span className="text-slate-600">Full Implementation</span><span className="font-bold text-slate-700">{maxTimeline} mo</span></div>
-          </div>
-        </div>
-      </StickyOutputPanel>
     </div>
   )
 }

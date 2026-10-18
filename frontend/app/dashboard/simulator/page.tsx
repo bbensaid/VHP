@@ -1,8 +1,8 @@
 import CMSRuralSimulatorClient from './CMSRuralSimulatorClient'
 
 export const metadata = {
-  title: 'CMS Rural Health Transformation Simulator | HTR',
-  description: "Model the multi-pillar impact of CMS's $50B Rural Health Transformation Program — global budget demonstrations, essential hospital designations, and payment reforms across 50-state rural and critical access hospital networks.",
+  title: 'Rural Health Transformation Program — State Awards | HTR',
+  description: "CMS's FY2026 Rural Health Transformation Program awards for all 50 states ($147M–$281M), how the $10B a year is split, and what states are funding.",
 }
 
 export default function CMSRuralSimulatorPage() {
