@@ -24,6 +24,9 @@ export default function StartAtHome({ bootId }: { bootId: string | null }) {
 
   useEffect(() => {
     if (!bootId) return;
+    // Automated browsers (Playwright) open every test in a fresh context, so each one would look like
+    // an app start and be sent home before it could reach the page under test.
+    if (navigator.webdriver) return;
     let seen: string | null = null;
     try {
       seen = localStorage.getItem(BOOT_KEY);
