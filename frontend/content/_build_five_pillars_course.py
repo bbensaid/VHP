@@ -3553,7 +3553,7 @@ TECHNOLOGY = [{'id': 'lesson_5p_data_infrastructure_gate',
                                {'value': '60%',
                                 'label': 'Commercially insured Vermonters captured in VHCURES',
                                 'source': 'Green Mountain Care Board'},
-                               {'value': '12-18 mo',
+                               {'value': '~6 mo',
                                 'label': 'Typical lag between service date and analyzable VHCURES '
                                          'record',
                                 'source': 'GMCB VHCURES documentation; AHS Transformation Report, '
@@ -3723,11 +3723,11 @@ TECHNOLOGY = [{'id': 'lesson_5p_data_infrastructure_gate',
                     {'type': 'comparison_table',
                      'heading': 'Two claims feeds, two different jobs',
                      'rows': [{'label': 'Refresh cadence',
-                               'left': 'VHCURES: reporting lag of a year or more',
+                               'left': 'VHCURES: quarterly, with ~6 months of claims run-out',
                                'right': "MDWAS: linked Medicaid claims and clinical data in the State's own system"},
                               {'label': 'Population',
                                'left': 'All payers, but only 60% of commercial',
-                               'right': 'Medicaid only, scaling to Medicare 2026-2028'},
+                               'right': 'Medicaid only, adding Medicare 2028-2029'},
                               {'label': 'Consent model',
                                'left': 'No patient opt-out mechanism',
                                'right': 'Integrated opt-out, compliant with Act 53'},
@@ -5895,7 +5895,7 @@ ECONOMICS = [{'id': 'lesson_5p_global_budgets_rbp',
                      'body': 'The VBC Transformation Readiness Assessment scores an organization '
                              'across 30 dimensions in six domains -- strategic clarity, data and '
                              'technology, care delivery capability, network and partnerships, '
-                             'revenue cycle, and workforce operations -- each rated 0 to 4. The platform reports an overall readiness percentage -- the average across all answered dimensions -- rather than a raw point total: 80%+ indicates Global Budget Readiness, 60-79% indicates Advanced stage (12-18 months to readiness), and below 60% signals the organization is not ready for full downside risk.\n'
+                             'revenue cycle, and workforce operations -- each rated 0 to 4. The platform reports an overall readiness percentage -- the average across all answered dimensions -- rather than a raw point total: 80%+ indicates Global Budget Readiness, 60-79% indicates Advanced stage (~6 months to readiness), and below 60% signals the organization is not ready for full downside risk.\n'
                              '\n'
                              'For Vermont specifically, Domain 2 (Data and Technology) is the '
                              'binding constraint: most Vermont hospitals score only 25-45% in this domain, while Blueprint-participating patient-centered medical homes with active Community Health Team support score 40-60% in Domain 3 (care delivery) -- strong by national standards. The gap is not clinical capability; it is the '
