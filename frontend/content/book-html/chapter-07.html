@@ -13,7 +13,7 @@
 <h3 id="historical-spending-baseline">7.2.2 <strong>Historical Spending Baseline</strong></h3>
 <p>The most common approach — the benchmark is set at the organization’s own historical cost of care, typically with a trend adjustment. Advantage: organizations with above-average historical spending start with a higher benchmark, making savings easier to achieve. Disadvantage: organizations with below-average historical spending (already efficient) face a lower benchmark with less room for savings — the ‘efficient provider disadvantage.’</p>
 <aside class="callout callout-green"><div class="callout-title">VERMONT AHEAD CONTEXT</div>
-<p>Under AHEAD, CMMI would have set global budget baselines for hospitals from their historical Medicare FFS spending, with adjustments; Act 68’s global budgets inherit the same benchmark logic. Vermont’s hospitals with historically lower spending may face benchmarks that limit their financial upside under global budgets.</p></aside>
+<p>Under AHEAD, CMMI would have set prospective Medicare FFS global budgets for hospitals. Act 68 instead directs GMCB to set global budget standards that reflect reference-based pricing and the state’s total cost of care targets; the revenue-setting methodology has not yet been published. Vermont’s hospitals with historically lower spending may face benchmarks that limit their financial upside under global budgets.</p></aside>
 <h3 id="regional-benchmark">7.2.3 <strong>Regional Benchmark</strong></h3>
 <p>The benchmark is set at regional average cost of care, not the organization’s own history. Advantage: eliminates the efficient provider disadvantage. Disadvantage: organizations in high-cost regions compete against a lower benchmark than their own history would produce.</p>
 <aside class="callout callout-green"><div class="callout-title">VERMONT RBP CONTEXT</div>
@@ -21,7 +21,7 @@
 <h3 id="prospective-benchmark">7.2.4 <strong>Prospective Benchmark</strong></h3>
 <p>The benchmark is set at the beginning of the performance year based on projected population needs. Used in global budgets and capitation models. Advantage: provides revenue certainty for planning. Disadvantage: risk adjustment quality determines fairness — poor risk adjustment produces winners and losers based on case mix differences, not care management quality.</p>
 <aside class="callout callout-green"><div class="callout-title">VERMONT GLOBAL BUDGET CONTEXT</div>
-<p>Vermont’s Act 68 global budgets for non-CAH hospitals must specify how the prospective budget is set and adjusted for patient complexity — the risk adjustment methodology is a key design question currently under development.</p></aside>
+<p>Act 68 does not prescribe how a global budget is set or adjusted for patient complexity — GMCB has not yet published that methodology, so risk adjustment remains a key open design question for the first non-CAH global budgets.</p></aside>
 <h3 id="the-shared-savings-calculation-a-working-model">7.2.5 <strong>The Shared Savings Calculation — A Working Model</strong></h3>
 <p>For organizations entering ACO REACH, MSSP, or similar shared savings models, the following framework captures the core financial logic. The APM Shared Savings Calculator implements this model with organization-specific data inputs.</p>
 <div class="table-wrap"><table>
@@ -44,7 +44,7 @@
 <td style="text-align: left;">2. Performance measurement</td>
 <td style="text-align: left;">Actual total cost of care for attributed population</td>
 <td style="text-align: left;">Includes all Medicare Part A and Part B spending for attributed beneficiaries, regardless of where care is delivered. Out-of-network spending counts against the ACO.</td>
-<td style="text-align: left;">AHEAD would have tracked total cost of care for Medicare FFS beneficiaries attributed to Vermont hospitals across all payer settings; Act 68’s global budgets apply the same all-payer accounting.</td>
+<td style="text-align: left;">AHEAD would have held Vermont to statewide Medicare FFS and all-payer total cost of care targets; Act 68’s global budgets are hospital revenue budgets that include Medicare where federal law permits but exclude Medicaid.</td>
 </tr>
 <tr>
 <td style="text-align: left;">3. Savings calculation</td>
@@ -54,15 +54,15 @@
 </tr>
 <tr>
 <td style="text-align: left;">4. Minimum savings rate (MSR)</td>
-<td style="text-align: left;">In most shared savings models, savings must exceed a minimum threshold (typically 2-3.5%) before the organization shares in them</td>
+<td style="text-align: left;">In most shared savings models, savings must exceed a minimum threshold before the organization shares in them (in MSSP’s one-sided track, 2.0-3.9% depending on ACO size)</td>
 <td style="text-align: left;">Protects against natural year-to-year cost variation triggering shared savings or losses that don’t reflect genuine performance changes.</td>
-<td style="text-align: left;">AHEAD used a different structure — state-level TCOC targets rather than individual ACO MSRs — and Act 68’s state-level global budget targets apply the minimum threshold concept the same way.</td>
+<td style="text-align: left;">AHEAD used a different structure — state-level TCOC targets rather than individual ACO MSRs. Act 68 has no MSR equivalent: it sets hospital-by-hospital global budgets, with statewide TCOC targets to come from the Statewide Health Care Delivery Strategic Plan.</td>
 </tr>
 <tr>
 <td style="text-align: left;">5. Shared savings calculation</td>
 <td style="text-align: left;">Gross savings × sharing rate = Organization’s shared savings payment (or loss obligation)</td>
-<td style="text-align: left;">Sharing rates vary by model and risk track — typically 50-75% for one-sided models, and reaches 100% in global-risk models such as ACO REACH.</td>
-<td style="text-align: left;">Vermont RBP: savings to payers from price reduction; 100% of premium passthrough per GMCB monitoring requirement.</td>
+<td style="text-align: left;">Sharing rates vary by model and risk track — up to 40% in MSSP’s one-sided levels, 50-75% in its two-sided tracks, and 100% in global-risk models such as ACO REACH’s Global option (succeeded in 2027 by CMS’s LEAD model).</td>
+<td style="text-align: left;">Vermont RBP: savings to payers from price reduction; GMCB and DFR must monitor whether those price decreases reach premiums and report annually.</td>
 </tr>
 </tbody>
 </table></div>
@@ -74,11 +74,11 @@
 <thead>
 <tr>
 <th style="text-align: center;"><p><strong>$15,000</strong></p>
-<p><strong>Avg. Inpatient Cost Prevented</strong></p></th>
+<p><strong>Assumed Cost per Hospitalization (example)</strong></p></th>
 <th style="text-align: center;"><p><strong>$1,800</strong></p>
-<p><strong>Avg. Preventable ED Visit</strong></p></th>
-<th style="text-align: center;"><p><strong>3–5x</strong></p>
-<p><strong>Care Management ROI Range</strong></p></th>
+<p><strong>Assumed Cost per Avoidable ED Visit (examples)</strong></p></th>
+<th style="text-align: center;"><p><strong>3.75x</strong></p>
+<p><strong>Care Management Return in the Worked Example</strong></p></th>
 <th style="text-align: center;"><p><strong>32.3%</strong></p>
 <p><strong>VT Potentially Avoidable ED Visits</strong></p></th>
 </tr>
@@ -108,8 +108,8 @@
 <th style="text-align: left;">HCC gap analysis and closure program</th>
 <th style="text-align: left;">$25K-$100K annually</th>
 <th style="text-align: left;">3-6 months setup</th>
-<th style="text-align: left;">Year 1: 3-8% RAF improvement</th>
-<th style="text-align: left;">Vermont CAHs: avg 12% HCC gap (2025 RHRC assessment)</th>
+<th style="text-align: left;">Varies with baseline coding completeness</th>
+<th style="text-align: left;">No published Vermont HCC gap estimate; see §11.12 for the gap-closure process</th>
 </tr>
 <tr>
 <th style="text-align: left;">APM shared savings model financial preparation</th>
@@ -155,14 +155,13 @@
 <p>The VBC Readiness Assessment evaluates organizational readiness for APM entry across 30 dimensions in six domains. The framework is designed to identify the gaps that are most likely to prevent an organization from achieving shared savings — or most likely to produce shared losses — before a contract is signed.</p>
 <h3 id="the-six-readiness-domains">7.4.1 <strong>The Six Readiness Domains</strong></h3>
 <p>Domain 1: Strategic Clarity assesses whether the organization has a clear rationale for APM participation, an appropriate governance structure, and leadership alignment on the risk appetite and timeline for VBC transition. Organizations that enter APMs without genuine executive commitment — treating VBC as a compliance exercise rather than a strategic priority — consistently underperform.</p>
-<p>Domain 2: Data and Technology evaluates the analytics infrastructure needed to manage a VBC population: attribution list generation, total cost of care measurement, care gap identification, risk stratification, and quality reporting automation. This domain is Vermont’s most significant organizational gap — most Vermont community hospitals lack the internal analytics capability to use VHCURES data effectively for population health management. The joint AHS-GMCB analytics vendor procurement addresses the statewide gap; individual hospital analytics capacity must be built alongside it.</p>
+<p>Domain 2: Data and Technology evaluates the analytics infrastructure needed to manage a VBC population: attribution list generation, total cost of care measurement, care gap identification, risk stratification, and quality reporting automation. This domain is a significant organizational gap for Vermont — most Vermont community hospitals lack the internal analytics capability to use VHCURES data effectively for population health management. The joint AHS-GMCB analytics vendor procurement addresses the statewide gap; individual hospital analytics capacity must be built alongside it.</p>
 <p>Domain 3: Care Delivery Capability assesses the clinical programs needed to act on risk stratification insights: care management programs organized around risk tiers, primary care PCMH readiness, behavioral health integration, post-acute care network relationships, community health worker deployment, and patient outreach and engagement capability. Vermont’s Blueprint for Health PCMHs and CHTs provide a strong care delivery foundation; the gap is in building on this foundation to serve the more complex patients that Act 68’s global budget population health requirements target.</p>
-<p>Domain 4: Network and Partnerships evaluates the relationships the organization has with the specialists, post-acute facilities, and community organizations that determine whether high-risk patients receive coordinated care or fragmented care after a hospitalization or specialist referral. Vermont’s Oliver Wyman-designed COE regionalization framework and CIN development address this domain systematically.</p>
+<p>Domain 4: Network and Partnerships evaluates the relationships the organization has with the specialists, post-acute facilities, and community organizations that determine whether high-risk patients receive coordinated care or fragmented care after a hospitalization or specialist referral. Oliver Wyman’s Act 167 recommendations for regional Centers of Excellence speak directly to this domain.</p>
 <p>Domain 5: Revenue Cycle examines the billing and coding practices that determine whether the organization’s VBC contracts are financially managed correctly: HCC coding completeness (essential for risk adjustment accuracy), RAF gap identification, attribution denial management, and VBC contract payment reconciliation. This domain is covered in depth in Chapter 11 (§11.11–11.12).</p>
 <p>Domain 6: Workforce Operations evaluates the staffing model, credentialing efficiency, retention rates, and training capability that determine whether the care coordination programs identified in Domain 3 can actually be implemented and sustained.</p>
 <h3 id="vbc-readiness-scoring-what-the-numbers-mean">7.4.2 <strong>VBC Readiness Scoring — What the Numbers Mean</strong></h3>
 <p>Each of the 30 dimensions is scored 0-4: Not Started (0), Early Stage (1), In Progress (2), Advanced (3), Optimized (4). The platform reports an overall readiness percentage — the average score across all answered dimensions — rather than a raw point total: 80%+ indicates Global Budget Readiness, 60-79% indicates Advanced stage (12-18 months to readiness), and below 60% indicates the organization is not yet ready for full-risk VBC; the gap analysis identifies the highest-priority investments before contract entry.</p>
-<p>Vermont-specific benchmarks: Blueprint-participating PCMH practices with active CHT support typically score 40-60% in Domain 3 (care delivery) — strong by national standards. Most Vermont hospitals score 25-45% in Domain 2 (data and technology). The RHRC engagement’s explicit focus on developing analytic dashboards for hospitals reflects the recognition that Domain 2 is the binding constraint for most Vermont providers.</p>
 <h2 id="contract-analysis-reading-an-apm-contract-for-financial-risk">7.5 <strong>Contract Analysis — Reading an APM Contract for Financial Risk</strong></h2>
 <p>APM contracts are complex, and the financial risk embedded in them is often not apparent from the headline terms. A shared savings contract that appears attractive at the summary level may contain provisions — benchmark methodology choices, quality withhold structures, attribution methodology, carve-out provisions — that substantially change the financial calculus. Every organization entering a significant APM contract should apply the following analysis framework.</p>
 <h3 id="the-65-item-vbc-contract-review-checklist-key-categories">7.5.1 <strong>The 65-Item VBC Contract Review Checklist: Key Categories</strong></h3>
@@ -185,7 +184,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">Quality withhold</td>
-<td style="text-align: left;">What percentage of shared savings is withheld pending quality performance? What measures are used? Are they measures the organization currently tracks with reliable data? A 30% quality withhold on 50% of gross savings means quality performance determines 15% of total financial outcome — understand the measures before signing.</td>
+<td style="text-align: left;">What percentage of shared savings is withheld pending quality performance? What measures are used? Are they measures the organization currently tracks with reliable data? A 30% quality withhold on a 50% share of gross savings puts 15% of gross savings — 30% of the organization’s own payment — at stake on quality performance; understand the measures before signing.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Risk corridors and stop-loss</td>
@@ -203,7 +202,7 @@
 </table></div>
 <p class="figure-caption">Figure 7.3 — APM contract review framework: provisions and key questions. Source: HTR Advisory framework.</p>
 <h2 id="hospital-financial-modeling-under-global-budgets-the-vermont-framework">7.6 <strong>Hospital Financial Modeling Under Global Budgets — The Vermont Framework</strong></h2>
-<p>For Vermont hospitals, the most operationally relevant financial modeling challenge is not APM shared savings calculation — it is global budget management. As Act 68’s mandatory global budgets take effect for non-CAH hospitals beginning FY2028, hospital CFOs need to transition from FFS revenue optimization to global budget management. These are fundamentally different financial disciplines.</p>
+<p>For Vermont hospitals, the most operationally relevant financial modeling challenge is not APM shared savings calculation — it is global budget management. As Act 68’s global budgets arrive — for one or more non-CAH hospitals beginning not later than FY2028 and for every hospital by FY2030, in each case to the extent resources are available — hospital CFOs need to transition from FFS revenue optimization to global budget management. These are fundamentally different financial disciplines.</p>
 <h3 id="the-global-budget-financial-management-model">7.6.1 <strong>The Global Budget Financial Management Model</strong></h3>
 <p>Under a global budget, a Vermont hospital’s annual revenue is set prospectively. The financial management objective shifts from maximizing volume and revenue to achieving the highest quality population health outcomes within the fixed revenue envelope. The key financial metrics change accordingly:</p>
 <div class="table-wrap"><table>
@@ -254,7 +253,7 @@
 <ul>
 <li><p>RBP scenario: What does our financial position look like if commercial prices are set at 200% of Medicare (Oliver Wyman’s recommended benchmark) or 250% (an upper scenario GMCB modeled in its December 2024 RBP report)? What service lines have prices furthest above the benchmark and face the most revenue reduction?</p></li>
 <li><p>Global budget scenario: Under a prospective revenue cap equal to our current net patient revenue minus X%, what is our operating margin? What cost reductions or service redesigns are required to maintain solvency?</p></li>
-<li><p>Medicaid cut scenario: With H.R. 1’s Medicaid revenue reductions phasing in from 2027–2031, what is our projected total revenue under conservative, base, and optimistic assumptions about our Medicaid payer mix?</p></li>
+<li><p>Medicaid cut scenario: With H.R. 1’s Medicaid revenue reductions phasing in from 2027–2032, what is our projected total revenue under conservative, base, and optimistic assumptions about our Medicaid payer mix?</p></li>
 <li><p>Transformation investment scenario: If we invest $X million in care management, CHW deployment, and telehealth, what reduction in avoidable hospitalizations and ED visits is required to achieve positive ROI within our VBC contract or global budget framework?</p></li>
 </ul>
 <h2 id="the-roi-of-transformation-building-the-financial-case">7.7 <strong>The ROI of Transformation — Building the Financial Case</strong></h2>
@@ -275,18 +274,18 @@
 <td style="text-align: left;">Care management program</td>
 <td style="text-align: left;">Prevents hospitalizations and ED visits that, under VBC, are costs without offsetting revenue</td>
 <td style="text-align: left;">(Prevented events) × (average cost per event) - (program operating cost) = Net savings. Divide by program cost for ROI.</td>
-<td style="text-align: left;">Vermont: 32.3% of ED visits potentially avoidable. CHT program preventing 500 avoidable ED visits/year at $1,800 each = $900K savings. If CHT costs $300K/year, ROI = 200%.</td>
+<td style="text-align: left;">Vermont: 32.3% of ED visits potentially avoidable. CHT program preventing 500 avoidable ED visits/year at an assumed $1,800 each = $900K savings. If CHT costs $300K/year, ROI = 200%.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Behavioral health integration (CoCM)</td>
 <td style="text-align: left;">Reduces downstream high-cost utilization — hospitalizations, ED visits for MH crisis — for patients receiving earlier MH intervention</td>
-<td style="text-align: left;">Estimate reduction in MH-related ED visits and hospitalizations for CoCM-managed patients vs. usual care. Vermont: 245.5 suicide/SH ED visits per 10,000 — each prevented = $1,800 saved plus downstream cost avoidance.</td>
-<td style="text-align: left;">Vermont Blueprint MHI pilot: 80% of administrative entities increased CHT staffing. Every MH-related hospitalization prevented saves $15,000 on average — a material offset against the cost of a CoCM behavioral health care manager.</td>
+<td style="text-align: left;">Estimate reduction in MH-related ED visits and hospitalizations for CoCM-managed patients vs. usual care. Vermont: 245.5 suicide/SH ED visits per 10,000 — each prevented saves an assumed $1,800 plus downstream cost avoidance.</td>
+<td style="text-align: left;">Vermont Blueprint CHT Expansion pilot: mental health and substance use staffing rose from 8.5 to 27 FTE in its first year. Every MH-related hospitalization prevented saves $15,000 on average — a material offset against the cost of a CoCM behavioral health care manager.</td>
 </tr>
 <tr>
 <td style="text-align: left;">SDOH program investment</td>
 <td style="text-align: left;">Reduces avoidable utilization driven by unmet social needs — housing-related ED visits, medication non-adherence from food insecurity, missed appointments from transportation barriers</td>
-<td style="text-align: left;">Literature suggests 5-15% reduction in total cost of care for high-SDOH-burden populations receiving coordinated SDOH intervention. Apply to Vermont’s identified high-SDOH populations.</td>
+<td style="text-align: left;">Estimate the reduction in avoidable utilization for high-SDOH-burden populations receiving coordinated SDOH intervention, using program-specific evidence. Apply to Vermont’s identified high-SDOH populations.</td>
 <td style="text-align: left;">Blueprint HRSN screening + CHT navigation: SDOH intervention for the 9% of Vermonters who are food insecure, if it reduces avoidable hospitalizations by even 10%, produces system savings exceeding program cost at scale.</td>
 </tr>
 <tr>
@@ -299,7 +298,7 @@
 <td style="text-align: left;">Telehealth for rural access</td>
 <td style="text-align: left;">Reduces transportation-related care avoidance and enables earlier intervention before crisis; reduces specialist transport costs for rural hospitals</td>
 <td style="text-align: left;">Travel cost savings + avoided emergency transport + reduced length of stay for patients manageable via telehealth specialty consultation. RPM: each prevented CHF hospitalization saves $15,000.</td>
-<td style="text-align: left;">Vermont RHT Program RPM grants: CHF readmission prevention via RPM in a population of 200 high-risk patients, preventing 10% of 30-day readmissions at 30% readmission rate, saves $90,000/year — ROI positive at $10,000/year RPM program cost.</td>
+<td style="text-align: left;">Vermont RHT Program RPM grants: CHF readmission prevention via RPM in a population of 200 high-risk patients, preventing 10% of 30-day readmissions at 30% readmission rate, saves $90,000/year — ROI positive only if the RPM program costs less than that.</td>
 </tr>
 </tbody>
 </table></div>
