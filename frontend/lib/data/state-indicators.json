@@ -1,0 +1,1027 @@
+{
+ "generated": "2026-10-18",
+ "sources": {
+  "brfss": {
+   "label": "CDC BRFSS Prevalence Data",
+   "url": "https://data.cdc.gov/Behavioral-Risk-Factors/Behavioral-Risk-Factor-Surveillance-System-BRFSS-P/dttw-5yxu"
+  },
+  "cms": {
+   "label": "CMS Care Compare — Hospital General Information",
+   "url": "https://data.cms.gov/provider-data/dataset/xubh-q36u"
+  },
+  "rht": {
+   "label": "CMS, Rural Health Transformation awards (Dec 29, 2025)",
+   "url": "https://www.cms.gov/newsroom/press-releases/cms-announces-50-billion-awards-strengthen-rural-health-all-50-states"
+  },
+  "kff": {
+   "label": "KFF, Status of State Medicaid Expansion Decisions",
+   "url": "https://www.kff.org/medicaid/status-of-state-medicaid-expansion-decisions/"
+  },
+  "ahead": {
+   "label": "CMS AHEAD Model",
+   "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead"
+  }
+ },
+ "states": {
+  "AL": {
+   "name": "Alabama",
+   "medicaidExpansion": false,
+   "ahead": null,
+   "rhtAwardFY26": 203404327,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 91.8,
+    "costBarrierPct": 14.7,
+    "checkupPct": 81.1,
+    "personalProviderPct": 84,
+    "providerGapEducation": 15.6
+   },
+   "cms": {
+    "hospitals": 99,
+    "criticalAccess": 9,
+    "ratedHospitals": 58,
+    "meanStarRating": 2.74
+   }
+  },
+  "AK": {
+   "name": "Alaska",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 272174856,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 92.3,
+    "costBarrierPct": 12.2,
+    "checkupPct": 72.7,
+    "personalProviderPct": 78.4,
+    "providerGapEducation": 23.5
+   },
+   "cms": {
+    "hospitals": 25,
+    "criticalAccess": 13,
+    "ratedHospitals": 10,
+    "meanStarRating": 2.9
+   }
+  },
+  "AZ": {
+   "name": "Arizona",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 166988956,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 89.5,
+    "costBarrierPct": 13.6,
+    "checkupPct": 74.9,
+    "personalProviderPct": 81.5,
+    "providerGapEducation": 15
+   },
+   "cms": {
+    "hospitals": 108,
+    "criticalAccess": 17,
+    "ratedHospitals": 55,
+    "meanStarRating": 3.11
+   }
+  },
+  "AR": {
+   "name": "Arkansas",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 208779396,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 89.6,
+    "costBarrierPct": 14.9,
+    "checkupPct": 78.8,
+    "personalProviderPct": 85,
+    "providerGapEducation": 20.4
+   },
+   "cms": {
+    "hospitals": 90,
+    "criticalAccess": 29,
+    "ratedHospitals": 43,
+    "meanStarRating": 2.86
+   }
+  },
+  "CA": {
+   "name": "California",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 233639308,
+   "brfss": {
+    "year": 2024,
+    "insuredPct": 92.6,
+    "costBarrierPct": 11.6,
+    "checkupPct": 75,
+    "personalProviderPct": 79.7,
+    "providerGapEducation": 22.9
+   },
+   "cms": {
+    "hospitals": 377,
+    "criticalAccess": 38,
+    "ratedHospitals": 279,
+    "meanStarRating": 3.1
+   }
+  },
+  "CO": {
+   "name": "Colorado",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 200105604,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 90.7,
+    "costBarrierPct": 13.9,
+    "checkupPct": 73.2,
+    "personalProviderPct": 80.7,
+    "providerGapEducation": 28.3
+   },
+   "cms": {
+    "hospitals": 96,
+    "criticalAccess": 32,
+    "ratedHospitals": 49,
+    "meanStarRating": 3.96
+   }
+  },
+  "CT": {
+   "name": "Connecticut",
+   "medicaidExpansion": true,
+   "ahead": "Participant",
+   "rhtAwardFY26": 154249106,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 92.3,
+    "costBarrierPct": 11.7,
+    "checkupPct": 83,
+    "personalProviderPct": 87,
+    "providerGapEducation": 29
+   },
+   "cms": {
+    "hospitals": 36,
+    "criticalAccess": 0,
+    "ratedHospitals": 26,
+    "meanStarRating": 3.42
+   }
+  },
+  "DE": {
+   "name": "Delaware",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 157394964,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 92,
+    "costBarrierPct": 11.7,
+    "checkupPct": 82.9,
+    "personalProviderPct": 86.9,
+    "providerGapEducation": 29.7
+   },
+   "cms": {
+    "hospitals": 13,
+    "criticalAccess": 0,
+    "ratedHospitals": 7,
+    "meanStarRating": 3.14
+   }
+  },
+  "FL": {
+   "name": "Florida",
+   "medicaidExpansion": false,
+   "ahead": null,
+   "rhtAwardFY26": 209938195,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 90.2,
+    "costBarrierPct": 13.7,
+    "checkupPct": 79.8,
+    "personalProviderPct": 81,
+    "providerGapEducation": 22.8
+   },
+   "cms": {
+    "hospitals": 221,
+    "criticalAccess": 12,
+    "ratedHospitals": 168,
+    "meanStarRating": 3.06
+   }
+  },
+  "GA": {
+   "name": "Georgia",
+   "medicaidExpansion": false,
+   "ahead": null,
+   "rhtAwardFY26": 218862170,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 88.5,
+    "costBarrierPct": 15.9,
+    "checkupPct": 80,
+    "personalProviderPct": 84.4,
+    "providerGapEducation": 18.5
+   },
+   "cms": {
+    "hospitals": 149,
+    "criticalAccess": 31,
+    "ratedHospitals": 84,
+    "meanStarRating": 2.94
+   }
+  },
+  "HI": {
+   "name": "Hawaii",
+   "medicaidExpansion": true,
+   "ahead": "Participant",
+   "rhtAwardFY26": 188892440,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 97.3,
+    "costBarrierPct": 7.3,
+    "checkupPct": 80.1,
+    "personalProviderPct": 88.6,
+    "providerGapEducation": 14.4
+   },
+   "cms": {
+    "hospitals": 23,
+    "criticalAccess": 9,
+    "ratedHospitals": 11,
+    "meanStarRating": 3.18
+   }
+  },
+  "ID": {
+   "name": "Idaho",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 185974368,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 91.2,
+    "costBarrierPct": 11.9,
+    "checkupPct": 76.6,
+    "personalProviderPct": 80.2,
+    "providerGapEducation": 22.8
+   },
+   "cms": {
+    "hospitals": 48,
+    "criticalAccess": 26,
+    "ratedHospitals": 22,
+    "meanStarRating": 3.55
+   }
+  },
+  "IL": {
+   "name": "Illinois",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 193418216,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 90.5,
+    "costBarrierPct": 13,
+    "checkupPct": 78.4,
+    "personalProviderPct": 82.2,
+    "providerGapEducation": 21.6
+   },
+   "cms": {
+    "hospitals": 193,
+    "criticalAccess": 55,
+    "ratedHospitals": 136,
+    "meanStarRating": 3.03
+   }
+  },
+  "IN": {
+   "name": "Indiana",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 206927897,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 92.6,
+    "costBarrierPct": 12.3,
+    "checkupPct": 80.3,
+    "personalProviderPct": 87.7,
+    "providerGapEducation": 19
+   },
+   "cms": {
+    "hospitals": 148,
+    "criticalAccess": 33,
+    "ratedHospitals": 91,
+    "meanStarRating": 3.36
+   }
+  },
+  "IA": {
+   "name": "Iowa",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 209040064,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 94.2,
+    "costBarrierPct": 8.6,
+    "checkupPct": 78.6,
+    "personalProviderPct": 82.3,
+    "providerGapEducation": 22.1
+   },
+   "cms": {
+    "hospitals": 118,
+    "criticalAccess": 82,
+    "ratedHospitals": 62,
+    "meanStarRating": 3.24
+   }
+  },
+  "KS": {
+   "name": "Kansas",
+   "medicaidExpansion": false,
+   "ahead": null,
+   "rhtAwardFY26": 221898008,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 93,
+    "costBarrierPct": 11.5,
+    "checkupPct": 78.9,
+    "personalProviderPct": 84.5,
+    "providerGapEducation": 22.1
+   },
+   "cms": {
+    "hospitals": 139,
+    "criticalAccess": 83,
+    "ratedHospitals": 55,
+    "meanStarRating": 3.18
+   }
+  },
+  "KY": {
+   "name": "Kentucky",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 212905591,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 92.9,
+    "costBarrierPct": 12,
+    "checkupPct": 82.5,
+    "personalProviderPct": 88.6,
+    "providerGapEducation": 13
+   },
+   "cms": {
+    "hospitals": 103,
+    "criticalAccess": 29,
+    "ratedHospitals": 67,
+    "meanStarRating": 2.76
+   }
+  },
+  "LA": {
+   "name": "Louisiana",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 208374448,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 93.4,
+    "costBarrierPct": 14.6,
+    "checkupPct": 83.7,
+    "personalProviderPct": 86.1,
+    "providerGapEducation": 10.9
+   },
+   "cms": {
+    "hospitals": 161,
+    "criticalAccess": 27,
+    "ratedHospitals": 59,
+    "meanStarRating": 2.81
+   }
+  },
+  "ME": {
+   "name": "Maine",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 190008051,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 93.6,
+    "costBarrierPct": 9.9,
+    "checkupPct": 82.7,
+    "personalProviderPct": 88.8,
+    "providerGapEducation": 12.9
+   },
+   "cms": {
+    "hospitals": 36,
+    "criticalAccess": 18,
+    "ratedHospitals": 24,
+    "meanStarRating": 3.21
+   }
+  },
+  "MD": {
+   "name": "Maryland",
+   "medicaidExpansion": true,
+   "ahead": "Participant",
+   "rhtAwardFY26": 168180838,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 92.6,
+    "costBarrierPct": 11.2,
+    "checkupPct": 81.7,
+    "personalProviderPct": 87.1,
+    "providerGapEducation": 23.1
+   },
+   "cms": {
+    "hospitals": 56,
+    "criticalAccess": 0,
+    "ratedHospitals": 42,
+    "meanStarRating": 3.31
+   }
+  },
+  "MA": {
+   "name": "Massachusetts",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 162005238,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 96.8,
+    "costBarrierPct": 8.9,
+    "checkupPct": 82,
+    "personalProviderPct": 89.7,
+    "providerGapEducation": 18.4
+   },
+   "cms": {
+    "hospitals": 84,
+    "criticalAccess": 4,
+    "ratedHospitals": 54,
+    "meanStarRating": 3.2
+   }
+  },
+  "MI": {
+   "name": "Michigan",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 173128201,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 94.8,
+    "costBarrierPct": 11,
+    "checkupPct": 81.9,
+    "personalProviderPct": 89.3,
+    "providerGapEducation": 15.7
+   },
+   "cms": {
+    "hospitals": 149,
+    "criticalAccess": 35,
+    "ratedHospitals": 94,
+    "meanStarRating": 3.09
+   }
+  },
+  "MN": {
+   "name": "Minnesota",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 193090618,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 93.8,
+    "costBarrierPct": 10.4,
+    "checkupPct": 75.1,
+    "personalProviderPct": 84.2,
+    "providerGapEducation": 25.8
+   },
+   "cms": {
+    "hospitals": 136,
+    "criticalAccess": 76,
+    "ratedHospitals": 56,
+    "meanStarRating": 3.77
+   }
+  },
+  "MS": {
+   "name": "Mississippi",
+   "medicaidExpansion": false,
+   "ahead": null,
+   "rhtAwardFY26": 205907220,
+   "brfss": {
+    "year": 2024,
+    "insuredPct": 92.3,
+    "costBarrierPct": 14.7,
+    "checkupPct": 82.5,
+    "personalProviderPct": 83,
+    "providerGapEducation": 8.8
+   },
+   "cms": {
+    "hospitals": 109,
+    "criticalAccess": 30,
+    "ratedHospitals": 52,
+    "meanStarRating": 2.33
+   }
+  },
+  "MO": {
+   "name": "Missouri",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 216276818,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 92.9,
+    "costBarrierPct": 12.5,
+    "checkupPct": 80.6,
+    "personalProviderPct": 83.2,
+    "providerGapEducation": 13.8
+   },
+   "cms": {
+    "hospitals": 120,
+    "criticalAccess": 35,
+    "ratedHospitals": 79,
+    "meanStarRating": 3.14
+   }
+  },
+  "MT": {
+   "name": "Montana",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 233509359,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 92.5,
+    "costBarrierPct": 12.6,
+    "checkupPct": 74.5,
+    "personalProviderPct": 80.7,
+    "providerGapEducation": 25.8
+   },
+   "cms": {
+    "hospitals": 63,
+    "criticalAccess": 50,
+    "ratedHospitals": 20,
+    "meanStarRating": 3.25
+   }
+  },
+  "NE": {
+   "name": "Nebraska",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 218529075,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 90.9,
+    "costBarrierPct": 11.3,
+    "checkupPct": 76,
+    "personalProviderPct": 80.9,
+    "providerGapEducation": 32.1
+   },
+   "cms": {
+    "hospitals": 93,
+    "criticalAccess": 62,
+    "ratedHospitals": 36,
+    "meanStarRating": 3.5
+   }
+  },
+  "NV": {
+   "name": "Nevada",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 179931608,
+   "brfss": {
+    "year": 2024,
+    "insuredPct": 86,
+    "costBarrierPct": 16.7,
+    "checkupPct": 73.7,
+    "personalProviderPct": 73.2,
+    "providerGapEducation": 30.2
+   },
+   "cms": {
+    "hospitals": 46,
+    "criticalAccess": 13,
+    "ratedHospitals": 25,
+    "meanStarRating": 3
+   }
+  },
+  "NH": {
+   "name": "New Hampshire",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 204016550,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 95.5,
+    "costBarrierPct": 9.3,
+    "checkupPct": 80.5,
+    "personalProviderPct": 91.1,
+    "providerGapEducation": 11.2
+   },
+   "cms": {
+    "hospitals": 27,
+    "criticalAccess": 13,
+    "ratedHospitals": 23,
+    "meanStarRating": 3.17
+   }
+  },
+  "NJ": {
+   "name": "New Jersey",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 147250806,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 90.7,
+    "costBarrierPct": 13.4,
+    "checkupPct": 80.1,
+    "personalProviderPct": 84.5,
+    "providerGapEducation": 34.7
+   },
+   "cms": {
+    "hospitals": 78,
+    "criticalAccess": 0,
+    "ratedHospitals": 61,
+    "meanStarRating": 3.15
+   }
+  },
+  "NM": {
+   "name": "New Mexico",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 211484741,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 89.8,
+    "costBarrierPct": 12.5,
+    "checkupPct": 71.8,
+    "personalProviderPct": 75.4,
+    "providerGapEducation": 32.4
+   },
+   "cms": {
+    "hospitals": 45,
+    "criticalAccess": 13,
+    "ratedHospitals": 23,
+    "meanStarRating": 2.48
+   }
+  },
+  "NY": {
+   "name": "New York",
+   "medicaidExpansion": true,
+   "ahead": "Participant (sub-state region)",
+   "rhtAwardFY26": 212058208,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 94.5,
+    "costBarrierPct": 11.2,
+    "checkupPct": 83.2,
+    "personalProviderPct": 87.9,
+    "providerGapEducation": 14.7
+   },
+   "cms": {
+    "hospitals": 192,
+    "criticalAccess": 21,
+    "ratedHospitals": 136,
+    "meanStarRating": 2.77
+   }
+  },
+  "NC": {
+   "name": "North Carolina",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 213008356,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 90.8,
+    "costBarrierPct": 11,
+    "checkupPct": 83.4,
+    "personalProviderPct": 82.5,
+    "providerGapEducation": 29.9
+   },
+   "cms": {
+    "hospitals": 120,
+    "criticalAccess": 20,
+    "ratedHospitals": 90,
+    "meanStarRating": 3.3
+   }
+  },
+  "ND": {
+   "name": "North Dakota",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 198936970,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 93.7,
+    "costBarrierPct": 9.3,
+    "checkupPct": 76.3,
+    "personalProviderPct": 83.1,
+    "providerGapEducation": 15.1
+   },
+   "cms": {
+    "hospitals": 47,
+    "criticalAccess": 37,
+    "ratedHospitals": 16,
+    "meanStarRating": 3.25
+   }
+  },
+  "OH": {
+   "name": "Ohio",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 202030262,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 93.5,
+    "costBarrierPct": 11.9,
+    "checkupPct": 79.7,
+    "personalProviderPct": 87.9,
+    "providerGapEducation": 8.7
+   },
+   "cms": {
+    "hospitals": 193,
+    "criticalAccess": 33,
+    "ratedHospitals": 128,
+    "meanStarRating": 3.58
+   }
+  },
+  "OK": {
+   "name": "Oklahoma",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 223476949,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 89.8,
+    "costBarrierPct": 15.1,
+    "checkupPct": 76.9,
+    "personalProviderPct": 82.8,
+    "providerGapEducation": 18.3
+   },
+   "cms": {
+    "hospitals": 136,
+    "criticalAccess": 39,
+    "ratedHospitals": 62,
+    "meanStarRating": 3.29
+   }
+  },
+  "OR": {
+   "name": "Oregon",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 197271578,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 95,
+    "costBarrierPct": 11.8,
+    "checkupPct": 75.2,
+    "personalProviderPct": 83.6,
+    "providerGapEducation": 16.4
+   },
+   "cms": {
+    "hospitals": 62,
+    "criticalAccess": 25,
+    "ratedHospitals": 44,
+    "meanStarRating": 3.25
+   }
+  },
+  "PA": {
+   "name": "Pennsylvania",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 193294054,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 92,
+    "costBarrierPct": 11.4,
+    "checkupPct": 81.6,
+    "personalProviderPct": 86.1,
+    "providerGapEducation": 22.1
+   },
+   "cms": {
+    "hospitals": 186,
+    "criticalAccess": 17,
+    "ratedHospitals": 131,
+    "meanStarRating": 3.48
+   }
+  },
+  "RI": {
+   "name": "Rhode Island",
+   "medicaidExpansion": true,
+   "ahead": "Participant",
+   "rhtAwardFY26": 156169931,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 94.5,
+    "costBarrierPct": 10.9,
+    "checkupPct": 84,
+    "personalProviderPct": 88.1,
+    "providerGapEducation": 18.4
+   },
+   "cms": {
+    "hospitals": 13,
+    "criticalAccess": 0,
+    "ratedHospitals": 11,
+    "meanStarRating": 3.55
+   }
+  },
+  "SC": {
+   "name": "South Carolina",
+   "medicaidExpansion": false,
+   "ahead": null,
+   "rhtAwardFY26": 200030252,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 90.8,
+    "costBarrierPct": 11.7,
+    "checkupPct": 82.9,
+    "personalProviderPct": 83.8,
+    "providerGapEducation": 18.5
+   },
+   "cms": {
+    "hospitals": 66,
+    "criticalAccess": 3,
+    "ratedHospitals": 49,
+    "meanStarRating": 3.43
+   }
+  },
+  "SD": {
+   "name": "South Dakota",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 189477607,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 93.3,
+    "costBarrierPct": 9.5,
+    "checkupPct": 76.6,
+    "personalProviderPct": 80.2,
+    "providerGapEducation": null
+   },
+   "cms": {
+    "hospitals": 61,
+    "criticalAccess": 39,
+    "ratedHospitals": 18,
+    "meanStarRating": 3.89
+   }
+  },
+  "TN": {
+   "name": "Tennessee",
+   "medicaidExpansion": false,
+   "ahead": null,
+   "rhtAwardFY26": 206888882,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 92.1,
+    "costBarrierPct": 13.3,
+    "checkupPct": 80.8,
+    "personalProviderPct": 83.3,
+    "providerGapEducation": 6
+   },
+   "cms": {
+    "hospitals": 121,
+    "criticalAccess": 15,
+    "ratedHospitals": 72,
+    "meanStarRating": 3.08
+   }
+  },
+  "TX": {
+   "name": "Texas",
+   "medicaidExpansion": false,
+   "ahead": null,
+   "rhtAwardFY26": 281319361,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 85.3,
+    "costBarrierPct": 18.1,
+    "checkupPct": 75.8,
+    "personalProviderPct": 77.3,
+    "providerGapEducation": 27.2
+   },
+   "cms": {
+    "hospitals": 467,
+    "criticalAccess": 93,
+    "ratedHospitals": 216,
+    "meanStarRating": 3.38
+   }
+  },
+  "UT": {
+   "name": "Utah",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 195743566,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 91.3,
+    "costBarrierPct": 12.4,
+    "checkupPct": 71,
+    "personalProviderPct": 80,
+    "providerGapEducation": 31
+   },
+   "cms": {
+    "hospitals": 52,
+    "criticalAccess": 13,
+    "ratedHospitals": 29,
+    "meanStarRating": 4.24
+   }
+  },
+  "VT": {
+   "name": "Vermont",
+   "medicaidExpansion": true,
+   "ahead": "Withdrew July 2026",
+   "rhtAwardFY26": 195053740,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 95.9,
+    "costBarrierPct": 8.3,
+    "checkupPct": 81.1,
+    "personalProviderPct": 91.3,
+    "providerGapEducation": 9.6
+   },
+   "cms": {
+    "hospitals": 17,
+    "criticalAccess": 8,
+    "ratedHospitals": 12,
+    "meanStarRating": 3.25
+   }
+  },
+  "VA": {
+   "name": "Virginia",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 189544888,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 93.4,
+    "costBarrierPct": 10.1,
+    "checkupPct": 81.8,
+    "personalProviderPct": 85.1,
+    "providerGapEducation": 17.9
+   },
+   "cms": {
+    "hospitals": 96,
+    "criticalAccess": 8,
+    "ratedHospitals": 76,
+    "meanStarRating": 3.68
+   }
+  },
+  "WA": {
+   "name": "Washington",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 181257515,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 92.3,
+    "costBarrierPct": 11.7,
+    "checkupPct": 74.5,
+    "personalProviderPct": 83.5,
+    "providerGapEducation": 27.6
+   },
+   "cms": {
+    "hospitals": 100,
+    "criticalAccess": 39,
+    "ratedHospitals": 60,
+    "meanStarRating": 3.23
+   }
+  },
+  "WV": {
+   "name": "West Virginia",
+   "medicaidExpansion": true,
+   "ahead": null,
+   "rhtAwardFY26": 199476099,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 94.1,
+    "costBarrierPct": 12.1,
+    "checkupPct": 82,
+    "personalProviderPct": 87.4,
+    "providerGapEducation": 10.2
+   },
+   "cms": {
+    "hospitals": 55,
+    "criticalAccess": 21,
+    "ratedHospitals": 34,
+    "meanStarRating": 2.76
+   }
+  },
+  "WI": {
+   "name": "Wisconsin",
+   "medicaidExpansion": false,
+   "ahead": null,
+   "rhtAwardFY26": 203670005,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 92.6,
+    "costBarrierPct": 10.7,
+    "checkupPct": 78.8,
+    "personalProviderPct": 85.5,
+    "providerGapEducation": 24
+   },
+   "cms": {
+    "hospitals": 140,
+    "criticalAccess": 58,
+    "ratedHospitals": 86,
+    "meanStarRating": 3.78
+   }
+  },
+  "WY": {
+   "name": "Wyoming",
+   "medicaidExpansion": false,
+   "ahead": null,
+   "rhtAwardFY26": 205004743,
+   "brfss": {
+    "year": 2025,
+    "insuredPct": 89.7,
+    "costBarrierPct": 13.2,
+    "checkupPct": 68.8,
+    "personalProviderPct": 78.9,
+    "providerGapEducation": 25.7
+   },
+   "cms": {
+    "hospitals": 31,
+    "criticalAccess": 19,
+    "ratedHospitals": 16,
+    "meanStarRating": 3.38
+   }
+  }
+ }
+}
