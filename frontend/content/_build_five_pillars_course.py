@@ -1877,15 +1877,15 @@ POLICY = [{'id': 'lesson_5p_legislative_architecture',
                      'body': 'Act 167 of 2022 directed the Green Mountain Care Board to analyze '
                              "how to improve the sustainability of Vermont's hospital system, and "
                              'to develop community- and data-informed options for transforming it. '
-                             'GMCB commissioned an independent consultant — Oliver Wyman — under a '
-                             'roughly $1 million engagement. The resulting report, *Act 167 '
+                             'GMCB commissioned an independent consultant, Oliver Wyman. '
+                             'The resulting report, *Act 167 '
                              'Community Engagement: Recommendations*, was issued on September 18, '
                              '2024.\n'
                              '\n'
-                             'The process was deliberately slow and deliberately public. GMCB ran '
-                             'two rounds of community engagement, in October–November 2023 and '
-                             "again in July–August 2024, across all fourteen of Vermont's hospital "
-                             'service areas, with a data-analysis period in between. The '
+                             'The process was deliberately slow and deliberately public. The '
+                             'engagement ran in two phases — August to mid-November 2023 and '
+                             "March to September 2024 — across all of Vermont's hospital service "
+                             'areas, with more than 230 meetings and 3,100 participants. The '
                              'engagement came before the recommendations, not after them — the '
                              'meetings were structured as inputs to a shared diagnosis rather than '
                              'as hearings on a finished plan.\n'
@@ -1993,8 +1993,7 @@ POLICY = [{'id': 'lesson_5p_legislative_architecture',
                              'insurers above the established reference price, '
                              'which closes the billing workarounds that '
                              'undermined earlier price-transparency efforts. '
-                             "Act 68's RBP provision is the most expansive of "
-                             'its kind in the country: it applies '
+                             "Act 68's RBP provision applies "
                              'Medicare-benchmarked prices across the entire '
                              'commercial market rather than to one '
                              "purchaser's book of business.\n\nAct 68 also "
@@ -2043,15 +2042,14 @@ POLICY = [{'id': 'lesson_5p_legislative_architecture',
                     {'type': 'text',
                      'heading': 'The price problem reference-based pricing is aimed at',
                      'body': 'Reference-based pricing is a response to measured variation, not to '
-                             "an abstract objection to hospital prices. RAND's Hospital Price "
-                             'Transparency Study, reported in Vermont in October 2020, found that '
-                             'commercial prices at the seven Vermont hospitals in its sample '
-                             'ranged from 178% of Medicare at Springfield Hospital to 358% of '
-                             "Medicare at the University of Vermont Medical Center. UVMMC's "
-                             'outpatient prices ran roughly 40% above the national benchmark.\n'
+                             "an abstract objection to hospital prices. RAND's 2020 hospital "
+                             'price study put commercial prices at the University of Vermont '
+                             'Medical Center at 358% of Medicare, the highest in Vermont; GMCB\'s '
+                             '2024 claims data show hospital outpatient prices ranging from 279% '
+                             'to 697% of Medicare.\n'
                              '\n'
-                             'A nearly two-fold spread between the cheapest and most expensive '
-                             'hospital in a state of 650,000 people is not explained by case mix '
+                             'A spread that wide among the hospitals of a state of 650,000 people '
+                             'is not explained by case mix '
                              'or quality. It is explained by negotiating leverage. Reference-based '
                              'pricing removes the leverage from the equation by fixing the '
                              'benchmark administratively — which is exactly why it requires '

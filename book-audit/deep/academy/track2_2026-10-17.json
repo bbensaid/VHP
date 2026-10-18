@@ -1,0 +1,31 @@
+{
+ "tag": "track2",
+ "note": "Five Pillars Track 2 (Ch2) fact pass. OW engagement: Phase 1 Aug–mid-Nov 2023, Phase 2 Mar–Sep 2024, across all HSAs (OW p.5; VDH counts 13 HSAs). OW contract value unverifiable. 'Most expansive in the country' unsourced. RAND Springfield 178% and 'UVMMC outpatient 40% above national benchmark' unsourced. Montana 2022 'step back / $28M' unsourced. CORRECTION: Montana Oct 2022 step-back IS sourced (KFF Health News/STAT, Oct 27 2022) — restored by montana_restore_2026-10-17.json.",
+ "pairs": [
+  [
+   "GMCB commissioned an independent consultant — Oliver Wyman — under a roughly $1 million engagement.",
+   "GMCB commissioned an independent consultant, Oliver Wyman."
+  ],
+  [
+   "GMCB ran two rounds of community engagement, in October–November 2023 and again in July–August 2024, across all fourteen of Vermont's hospital service areas, with a data-analysis period in between.",
+   "The engagement ran in two phases — August to mid-November 2023 and March to September 2024 — across all of Vermont's hospital service areas, with more than 230 meetings and 3,100 participants."
+  ],
+  [
+   "Act 68's RBP provision is the most expansive of its kind in the country: it applies Medicare-benchmarked prices across the entire commercial market rather than to one purchaser's book of business.",
+   "Act 68's RBP provision applies Medicare-benchmarked prices across the entire commercial market rather than to one purchaser's book of business."
+  ],
+  [
+   "RAND's Hospital Price Transparency Study, reported in Vermont in October 2020, found that commercial prices at the seven Vermont hospitals in its sample ranged from 178% of Medicare at Springfield Hospital to 358% of Medicare at the University of Vermont Medical Center.",
+   "RAND's 2020 hospital price study put commercial prices at the University of Vermont Medical Center at 358% of Medicare, the highest in Vermont; GMCB's 2024 claims data show hospital outpatient prices ranging from 279% to 697% of Medicare."
+  ],
+  [
+   " UVMMC's outpatient prices ran roughly 40% above the national benchmark.",
+   ""
+  ],
+  [
+   "A nearly two-fold spread between the cheapest and most expensive hospital in a state of 650,000 people is not explained by case mix or quality.",
+   "A spread that wide among the hospitals of a state of 650,000 people is not explained by case mix or quality."
+  ]
+ ],
+ "residue": "roughly \\$1 million engagement|all fourteen of Vermont's hospital service areas|most expansive of its kind|178% of Medicare at Springfield|40% above the national benchmark"
+}
