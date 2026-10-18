@@ -1,220 +1,141 @@
 "use client";
 
+// Fifty-state dashboard. Rebuilt 2026-10-17 on sourced indicators (lib/data/state-indicators.ts); the earlier
+// "Health System Performance Index" scores, "Leading / At Risk" labels and watchlist had no source.
+
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
+import { FunnelIcon, MagnifyingGlassIcon, XMarkIcon, ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
+import {
+  INDICATORS, INDICATOR_SOURCES, INDICATORS_GENERATED, STATE_INDICATORS, slugFor, rankOf, type Indicator,
+} from "@/lib/data/state-indicators";
 
 const NationalMap = dynamic(
   () => import("@/components/dashboard/NationalMap").then((m) => m.NationalMap),
-  {
-    ssr: false,
-    loading: () => <div className="animate-pulse bg-slate-200 rounded-xl h-96" />,
-  }
+  { ssr: false, loading: () => <div className="animate-pulse bg-slate-200 rounded-xl h-96" /> }
 );
-import type { PerformanceIndexProfile } from "@/lib/data/performance-index-data";
-import {
-  StarIcon,
-  ExclamationTriangleIcon,
-  ChartBarIcon,
-  BuildingLibraryIcon,
-  FunnelIcon,
-  MagnifyingGlassIcon,
-  XMarkIcon,
-  ChevronUpIcon,
-  ChevronDownIcon,
-  InformationCircleIcon,
-} from "@heroicons/react/24/outline";
-import { getScoreColor } from "@/lib/utils";
 
-const REGION_MAP: Record<string, string> = {
-  vermont: "Northeast", maine: "Northeast", new_hampshire: "Northeast", massachusetts: "Northeast", connecticut: "Northeast", rhode_island: "Northeast", new_york: "Northeast", pennsylvania: "Northeast", new_jersey: "Northeast", district_of_columbia: "Northeast",
-  texas: "South", florida: "South", georgia: "South", north_carolina: "South", south_carolina: "South", virginia: "South", alabama: "South", mississippi: "South", louisiana: "South", tennessee: "South", kentucky: "South", arkansas: "South", oklahoma: "South",
-  ohio: "Midwest", michigan: "Midwest", indiana: "Midwest", illinois: "Midwest", wisconsin: "Midwest", minnesota: "Midwest", iowa: "Midwest", missouri: "Midwest", kansas: "Midwest", nebraska: "Midwest", north_dakota: "Midwest", south_dakota: "Midwest",
-  california: "West", washington: "West", oregon: "West", idaho: "West", montana: "West", wyoming: "West", colorado: "West", utah: "West", nevada: "West", arizona: "West", new_mexico: "West", alaska: "West", hawaii: "West",
+const REGIONS: Record<string, string[]> = {
+  Northeast: ["VT", "ME", "NH", "MA", "CT", "RI", "NY", "PA", "NJ"],
+  South: ["TX", "FL", "GA", "NC", "SC", "VA", "AL", "MS", "LA", "TN", "KY", "AR", "OK", "WV", "MD", "DE"],
+  Midwest: ["OH", "MI", "IN", "IL", "WI", "MN", "IA", "MO", "KS", "NE", "ND", "SD"],
+  West: ["CA", "WA", "OR", "ID", "MT", "WY", "CO", "UT", "NV", "AZ", "NM", "AK", "HI"],
 };
+const regionOf = (code: string) => Object.entries(REGIONS).find(([, cs]) => cs.includes(code))?.[0] ?? "Other";
+const mapId = (code: string) => STATE_INDICATORS[code].name.toLowerCase().replace(/\s+/g, "_");
 
-interface Props {
-  allStates: Record<string, PerformanceIndexProfile>;
-  loading?: boolean;
-}
-
-export default function DashboardIndexClient({ allStates, loading = false }: Props) {
-  // All hooks must run on every render. Early returns (e.g. the loading
-  // skeleton) come AFTER all hooks. Without this discipline, React's hook
-  // ordering invariant is violated and rules-of-hooks fires.
+export default function DashboardIndexClient() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedRegion, setSelectedRegion] = useState("All");
-  const [sortConfig, setSortConfig] = useState<{ key: string; direction: "asc" | "desc" }>({ key: 'performanceScore', direction: 'desc' });
+  const [indKey, setIndKey] = useState("insured");
+  const [sort, setSort] = useState<{ key: string; dir: "asc" | "desc" }>({ key: "insured", dir: "desc" });
+  const ind = INDICATORS.find((i) => i.key === indKey) as Indicator;
 
-  const tableRows = useMemo(() => {
-    const states = Object.values(allStates).filter(state =>
-      state.stateName.toLowerCase().includes(searchQuery.toLowerCase()) &&
-      (selectedRegion === "All" || (REGION_MAP[state.id] || "Other") === selectedRegion)
-    );
-    states.sort((a, b) => {
-      if (sortConfig.key === 'stateName') {
-        return sortConfig.direction === 'asc' ? a.stateName.localeCompare(b.stateName) : b.stateName.localeCompare(a.stateName);
-      }
-      const valA = a.performanceScore || -1;
-      const valB = b.performanceScore || -1;
-      if (valA < valB) return sortConfig.direction === "asc" ? -1 : 1;
-      if (valA > valB) return sortConfig.direction === "asc" ? 1 : -1;
-      return 0;
+  const codes = useMemo(
+    () => Object.keys(STATE_INDICATORS).filter((c) =>
+      STATE_INDICATORS[c].name.toLowerCase().includes(searchQuery.toLowerCase()) &&
+      (selectedRegion === "All" || regionOf(c) === selectedRegion)),
+    [searchQuery, selectedRegion],
+  );
+
+  const rows = useMemo(() => {
+    const byKey = INDICATORS.find((i) => i.key === sort.key);
+    return [...codes].sort((a, b) => {
+      if (!byKey) return sort.dir === "asc" ? STATE_INDICATORS[a].name.localeCompare(STATE_INDICATORS[b].name) : STATE_INDICATORS[b].name.localeCompare(STATE_INDICATORS[a].name);
+      const va = byKey.get(STATE_INDICATORS[a]) ?? -Infinity, vb = byKey.get(STATE_INDICATORS[b]) ?? -Infinity;
+      return sort.dir === "asc" ? va - vb : vb - va;
     });
-    return states;
-  }, [allStates, searchQuery, selectedRegion, sortConfig]);
+  }, [codes, sort]);
 
-  const metrics = useMemo(() => {
-    const statesWithScores = tableRows.filter(s => s.performanceScore);
-    const totalScore = statesWithScores.reduce((acc, curr) => acc + (curr.performanceScore || 0), 0);
-    return {
-      averageScore: statesWithScores.length > 0 ? Math.round(totalScore / statesWithScores.length) : 0,
-      leadingCount: statesWithScores.filter((s) => s.status === "Leading").length,
-      atRiskCount: statesWithScores.filter((s) => s.status === "At Risk").length,
-    };
-  }, [tableRows]);
+  const mapValues = useMemo(
+    () => Object.fromEntries(Object.keys(STATE_INDICATORS).map((c) => [mapId(c), ind.get(STATE_INDICATORS[c])])),
+    [ind],
+  );
+  const hrefForMapId = (id: string) => `/dashboard/${id.replace(/_/g, "-")}`;
+  const vtRank = rankOf(ind, "VT");
+  const expanded = Object.values(STATE_INDICATORS).filter((s) => s.medicaidExpansion).length;
+  const brfssYears = [...new Set(Object.values(STATE_INDICATORS).map((s) => s.brfss?.year).filter(Boolean))].sort().join("/");
 
-  const watchlist = useMemo(() => {
-    return [...Object.values(allStates)]
-      .sort((a, b) => a.performanceScore - b.performanceScore)
-      .slice(0, 3);
-  }, [allStates]);
-
-  // Loading skeleton — after all hooks, never before.
-  if (loading) {
-    return (
-      <div className="w-full font-sans text-slate-800 flex flex-col pb-20 animate-pulse">
-        <div className="bg-white border border-slate-200 rounded-2xl p-8 mb-6 shadow-sm">
-          <div className="h-10 bg-slate-200 rounded-xl w-2/3 mb-4" />
-          <div className="h-5 bg-slate-200 rounded-lg w-1/2 mb-8" />
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-            {Array.from({ length: 4 }).map((_, i) => (
-              <div key={i} className="bg-slate-200 rounded-xl h-24" />
-            ))}
-          </div>
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {Array.from({ length: 6 }).map((_, i) => (
-            <div key={i} className="animate-pulse bg-slate-200 rounded-xl h-24" />
-          ))}
-        </div>
-      </div>
-    );
-  }
-
-  const handleSort = (key: string) => {
-    setSortConfig((current) => ({
-      key,
-      direction: current.key === key && current.direction === "asc" ? "desc" : "asc",
-    }));
-  };
-
-  const totalCount = Object.keys(allStates).length;
+  const th = (key: string, label: string) => (
+    <th className="p-3 cursor-pointer whitespace-nowrap" onClick={() => setSort((c) => ({ key, dir: c.key === key && c.dir === "desc" ? "asc" : "desc" }))}>
+      <span className="inline-flex items-center gap-1">{label}{sort.key === key && (sort.dir === "asc" ? <ChevronUpIcon className="w-3 h-3" /> : <ChevronDownIcon className="w-3 h-3" />)}</span>
+    </th>
+  );
 
   return (
     <div className="w-full font-sans text-slate-800 flex flex-col pb-20">
-      {/* HEADER CARD */}
-      <div className="bg-white border border-slate-200 rounded-2xl p-8 mb-6 shadow-sm relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-50 rounded-bl-full -mr-20 -mt-20 opacity-50 pointer-events-none"></div>
-        <div className="relative z-10">
-          <div className="flex flex-col md:flex-row justify-between items-start gap-6 mb-8">
-            <div className="max-w-3xl">
-              <h1 className="ty-h1 font-black text-slate-900 tracking-tight mb-3">Health System Performance Index</h1>
-              <p className="text-slate-500 text-lg leading-relaxed">National analysis of value-based care readiness and system transformation.</p>
-            </div>
-            <div className="shrink-0">
-              <Link
-                href="/about/methodology"
-                title="Learn how the HTR Performance Index is calculated."
-                className="inline-flex items-center gap-2 text-xs font-bold text-slate-500 bg-slate-100 border border-slate-200 rounded-lg px-3 py-1.5 hover:bg-slate-200 hover:border-slate-300 hover:text-slate-700 transition-all"
-              >
-                <InformationCircleIcon className="w-4 h-4" />
-                <span>Index Methodology</span>
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-8">
-            <div className="flex gap-2 w-full md:w-auto">
-              <div className="relative">
-                <select value={selectedRegion} onChange={(e) => setSelectedRegion(e.target.value)} className="appearance-none bg-slate-50 border border-slate-200 text-sm font-bold text-slate-700 rounded-full pl-4 pr-10 py-2.5 cursor-pointer hover:border-indigo-500 hover:bg-white transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm">
-                  <option value="All">All Regions</option>
-                  <option value="Northeast">Northeast</option>
-                  <option value="South">South</option>
-                  <option value="Midwest">Midwest</option>
-                  <option value="West">West</option>
-                </select>
-                <FunnelIcon className="w-4 h-4 text-slate-500 absolute right-3 top-3 pointer-events-none" />
-              </div>
-              <div className="relative flex-1 md:w-96">
-                <MagnifyingGlassIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
-                <input
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Search states..."
-                  className="w-full pl-10 pr-10 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-full focus:outline-none focus:ring-2 focus:ring-slate-200 focus:border-slate-400 shadow-sm hover:bg-white hover:border-slate-300 transition-all"
-                />
-                {searchQuery && <button onClick={() => setSearchQuery("")} className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-slate-400 hover:text-slate-600 rounded-full hover:bg-slate-200 transition-colors"><XMarkIcon className="w-4 h-4" /></button>}
-              </div>
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-              <div className="bg-indigo-50 border border-indigo-100 p-4 rounded-xl"><div className="flex items-center gap-2 text-indigo-600 mb-1"><ChartBarIcon className="w-4 h-4" /><span className="text-[10px] font-bold uppercase">Avg. Index Score</span></div><div className="text-2xl font-black text-slate-900">{metrics.averageScore}</div><div className="text-xs text-slate-500">Across {tableRows.length} states</div></div>
-              <div className="bg-emerald-50 border border-emerald-200 p-4 rounded-xl"><div className="flex items-center gap-2 text-emerald-600 mb-1"><StarIcon className="w-4 h-4" /><span className="text-[10px] font-bold uppercase">Leading States</span></div><div className="text-2xl font-black text-slate-900">{metrics.leadingCount}</div><div className="text-xs text-slate-500">Score 80+</div></div>
-              <div className="bg-red-50 border border-red-200 p-4 rounded-xl"><div className="flex items-center gap-2 text-red-600 mb-1"><ExclamationTriangleIcon className="w-4 h-4" /><span className="text-[10px] font-bold uppercase">At Risk States</span></div><div className="text-2xl font-black text-slate-900">{metrics.atRiskCount}</div><div className="text-xs text-slate-500">Score &lt;60</div></div>
-              <div className="bg-white border border-slate-200 p-4 rounded-xl"><div className="flex items-center gap-2 text-slate-500 mb-1"><BuildingLibraryIcon className="w-4 h-4" /><span className="text-[10px] font-bold uppercase">States Visible</span></div><div className="text-2xl font-black text-slate-900">{tableRows.length}</div><div className="text-xs text-slate-500">of {totalCount} total</div></div>
-            </div>
-          </div>
+      <div className="bg-white border border-slate-200 rounded-2xl p-8 mb-6 shadow-sm">
+        <h1 className="ty-h1 font-black text-slate-900 tracking-tight mb-3">Fifty-State Dashboard</h1>
+        <p className="text-slate-500 text-lg leading-relaxed max-w-3xl">
+          Coverage, access, hospital and federal-program indicators for every state, each shown as its source reports it.
+          Pick an indicator to map it; open a state for its full profile.
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+          <div className="bg-indigo-50 border border-indigo-100 p-4 rounded-xl"><div className="text-[10px] font-bold uppercase text-indigo-600 mb-1">Medicaid expansion</div><div className="text-2xl font-black text-slate-900">{expanded} of 50</div><div className="text-xs text-slate-500">states (KFF)</div></div>
+          <div className="bg-white border border-slate-200 p-4 rounded-xl"><div className="text-[10px] font-bold uppercase text-slate-500 mb-1">AHEAD Model</div><div className="text-2xl font-black text-slate-900">5</div><div className="text-xs text-slate-500">participants; Vermont withdrew July 2026</div></div>
+          <div className="bg-white border border-slate-200 p-4 rounded-xl"><div className="text-[10px] font-bold uppercase text-slate-500 mb-1">RHT awards, FY2026</div><div className="text-2xl font-black text-slate-900">$10B</div><div className="text-xs text-slate-500">all 50 states (CMS)</div></div>
+          <div className="bg-white border border-slate-200 p-4 rounded-xl"><div className="text-[10px] font-bold uppercase text-slate-500 mb-1">Vermont on this indicator</div><div className="text-2xl font-black text-slate-900">{vtRank ? `#${vtRank.rank}` : "—"}</div><div className="text-xs text-slate-500">of {vtRank?.of ?? 50}, highest value first</div></div>
         </div>
       </div>
 
-      <div className="w-full space-y-12">
-        <div className="grid lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-2 h-full"><NationalMap data={allStates} searchQuery={searchQuery} selectedRegion={selectedRegion} /></div>
-          <div className="space-y-4">
-            <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest px-1">Priority Watchlist</h3>
-            {watchlist.map((state) => (
-              <Link key={state.id} href={`/dashboard/${state.id}`} className="block bg-white p-5 rounded-xl border border-slate-200 border-l-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all" style={{ borderLeftColor: getScoreColor(state.performanceScore) }}>
-                <div className="flex justify-between items-start mb-2"><h4 className="font-black text-slate-900">{state.stateName}</h4><span className="text-lg font-bold" style={{ color: getScoreColor(state.performanceScore) }}>{state.performanceScore}</span></div>
-                <p className="text-xs text-slate-500 mb-3 line-clamp-2">{state.narrative.summary}</p>
-                <div className="w-full bg-slate-100 h-1.5 rounded-full"><div className="h-full rounded-full" style={{ width: `${state.performanceScore}%`, backgroundColor: getScoreColor(state.performanceScore) }}></div></div>
-              </Link>
-            ))}
-          </div>
+      <div className="flex flex-wrap gap-2 mb-4">
+        <select value={indKey} onChange={(e) => { setIndKey(e.target.value); setSort({ key: e.target.value, dir: "desc" }); }}
+          className="bg-white border border-slate-300 text-sm font-bold text-slate-700 rounded-full px-4 py-2.5">
+          {INDICATORS.map((i) => <option key={i.key} value={i.key}>{i.label}</option>)}
+        </select>
+        <div className="relative">
+          <select value={selectedRegion} onChange={(e) => setSelectedRegion(e.target.value)} className="appearance-none bg-slate-50 border border-slate-200 text-sm font-bold text-slate-700 rounded-full pl-4 pr-10 py-2.5">
+            {["All", ...Object.keys(REGIONS)].map((r) => <option key={r} value={r}>{r === "All" ? "All Regions" : r}</option>)}
+          </select>
+          <FunnelIcon className="w-4 h-4 text-slate-500 absolute right-3 top-3 pointer-events-none" />
         </div>
-        <div className="w-full bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm flex flex-col">
-          <div className="px-6 py-4 border-b border-slate-200"><h2 className="text-sm font-bold uppercase tracking-widest text-slate-900">State Performance Registry</h2><p className="text-xs text-slate-500">Showing {tableRows.length} states</p></div>
-          <div className="overflow-x-auto">
-          <table className="w-full text-left text-sm">
-            <thead className="bg-slate-50 border-b border-slate-200 text-xs font-bold text-slate-500 uppercase">
-              <tr>
-                <th className="p-4 pl-6 cursor-pointer" onClick={() => handleSort("stateName")}><div className="flex items-center gap-1">State {sortConfig?.key === 'stateName' && (sortConfig.direction === 'asc' ? <ChevronUpIcon className="w-3 h-3" /> : <ChevronDownIcon className="w-3 h-3" />)}</div></th>
-                <th className="p-4 cursor-pointer" onClick={() => handleSort("performanceScore")}><div className="flex items-center gap-1">Index Score {sortConfig?.key === 'performanceScore' && (sortConfig.direction === 'asc' ? <ChevronUpIcon className="w-3 h-3" /> : <ChevronDownIcon className="w-3 h-3" />)}</div></th>
-                <th className="p-4">Region</th>
-                <th className="p-4">Status</th>
-                <th className="p-4 text-right pr-6">Action</th>
-              </tr>
+        <div className="relative flex-1 min-w-[200px] md:max-w-sm">
+          <MagnifyingGlassIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+          <input value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} placeholder="Search states..."
+            className="w-full pl-10 pr-10 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-full" />
+          {searchQuery && <button onClick={() => setSearchQuery("")} className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-slate-400"><XMarkIcon className="w-4 h-4" /></button>}
+        </div>
+      </div>
+      {ind.note && <p className="text-xs text-slate-500 mb-4">{ind.note}</p>}
+
+      <div className="mb-10">
+        <NationalMap values={mapValues} label={ind.label} format={ind.format} hrefFor={hrefForMapId} searchQuery={searchQuery} selectedRegion={selectedRegion} />
+      </div>
+
+      <div className="w-full bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+        <div className="px-6 py-4 border-b border-slate-200"><h2 className="text-sm font-bold uppercase tracking-widest text-slate-900">All indicators</h2><p className="text-xs text-slate-500">Showing {rows.length} states · click a column to sort</p></div>
+        <div className="overflow-x-auto">
+          <table className="w-full text-left text-xs">
+            <thead className="bg-slate-50 border-b border-slate-200 font-bold text-slate-500 uppercase">
+              <tr>{th("name", "State")}{INDICATORS.map((i) => <React.Fragment key={i.key}>{th(i.key, i.label)}</React.Fragment>)}<th className="p-3">Medicaid expansion</th></tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
-              {tableRows.map((state) => (
-                <tr key={state.id} className="hover:bg-slate-50">
-                  <td className="p-4 pl-6 font-bold text-slate-900">{state.stateName}</td>
-                  <td className="p-4 font-mono font-bold" style={{ color: getScoreColor(state.performanceScore) }}>{state.performanceScore || 'N/A'}</td>
-                  <td className="p-4 text-slate-500">{REGION_MAP[state.id] || "Other"}</td>
-                  <td className="p-4">
-                    {state.status ? (
-                      <span className="text-xs font-bold px-2 py-1 rounded-full" style={{ backgroundColor: getScoreColor(state.performanceScore) + '20', color: getScoreColor(state.performanceScore) }}>{state.status}</span>
-                    ) : (
-                      <span className="text-xs font-bold text-slate-400">No Data</span>
-                    )}
-                  </td>
-                  <td className="p-4 text-right pr-6"><Link href={`/dashboard/${state.id}`} className="font-bold text-xs text-slate-400 group-hover:text-indigo-600">View Profile &rarr;</Link></td>
-                </tr>
-              ))}
+              {rows.map((c) => {
+                const s = STATE_INDICATORS[c];
+                return (
+                  <tr key={c} className={c === "VT" ? "bg-indigo-50/50" : "hover:bg-slate-50"}>
+                    <td className="p-3 font-bold text-slate-900 whitespace-nowrap"><Link href={`/dashboard/${slugFor(c)}`} className="hover:text-indigo-700">{s.name}</Link></td>
+                    {INDICATORS.map((i) => { const v = i.get(s); return <td key={i.key} className={`p-3 font-mono ${i.key === indKey ? "font-bold text-indigo-700" : "text-slate-600"}`}>{v == null ? "—" : i.format(v)}</td>; })}
+                    <td className="p-3 text-slate-600">{s.medicaidExpansion ? "Yes" : "No"}</td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
-          </div>
         </div>
+      </div>
+
+      <div className="mt-6 text-[11px] text-slate-500 leading-relaxed">
+        <p className="font-bold text-slate-600 mb-1">Sources (built {INDICATORS_GENERATED})</p>
+        <ul className="space-y-0.5">
+          <li><a className="underline" href={INDICATOR_SOURCES.brfss.url} target="_blank" rel="noopener noreferrer">{INDICATOR_SOURCES.brfss.label}</a> — survey year {brfssYears}; adults 18+.</li>
+          <li><a className="underline" href={INDICATOR_SOURCES.cms.url} target="_blank" rel="noopener noreferrer">{INDICATOR_SOURCES.cms.label}</a> — hospital counts and overall star ratings.</li>
+          <li><a className="underline" href={INDICATOR_SOURCES.rht.url} target="_blank" rel="noopener noreferrer">{INDICATOR_SOURCES.rht.label}</a>.</li>
+          <li><a className="underline" href={INDICATOR_SOURCES.kff.url} target="_blank" rel="noopener noreferrer">{INDICATOR_SOURCES.kff.label}</a>.</li>
+          <li><a className="underline" href={INDICATOR_SOURCES.ahead.url} target="_blank" rel="noopener noreferrer">{INDICATOR_SOURCES.ahead.label}</a>.</li>
+        </ul>
+        <p className="mt-2">Map shading divides states into fifths on the selected indicator; it does not rank states as better or worse.</p>
       </div>
     </div>
   );

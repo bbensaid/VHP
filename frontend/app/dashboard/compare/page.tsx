@@ -1,9 +1,10 @@
-import { getAllPerformanceIndexes } from "@/lib/sanity-dashboard-queries";
 import CompareClient from "./CompareClient";
 
-export const revalidate = 3600;
+export const metadata = {
+  title: "Compare States | HTR",
+  description: "Compare up to four states side by side on sourced coverage, access, hospital and federal-program indicators.",
+};
 
-export default async function ComparePage() {
-  const allStates = await getAllPerformanceIndexes();
-  return <CompareClient allStates={allStates} />;
+export default function ComparePage() {
+  return <CompareClient />;
 }
