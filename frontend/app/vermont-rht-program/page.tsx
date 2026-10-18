@@ -256,9 +256,9 @@ export default function VermontRHTProgramPage() {
             icon="🚑"
             category="EMS Transformation & Community Paramedicine"
             amount="EMS grants"
-            description="Vermont has 31 separate EMS agencies — extreme fragmentation that creates care coordination gaps and drives unnecessary ED utilization. RHT funds EMS regionalization and community paramedicine programs that enable treat-and-refer capability, keeping patients out of ED for non-emergency conditions."
+            description="Vermont licenses about 174 ambulance and first-response services across 13 EMS districts (EMS Advisory Committee, 2020) — fragmentation that complicates transfers (one provider told Oliver Wyman a single transfer can mean calling up to 31 of them) and drives unnecessary ED utilization. RHT funds EMS regionalization and community paramedicine programs that enable treat-and-refer capability, keeping patients out of ED for non-emergency conditions."
             outcomes={[
-              "EMS regionalization reduces operational fragmentation across Vermont's 31 separate EMS agencies",
+              "EMS regionalization reduces operational fragmentation across Vermont's EMS services and 13 districts",
               "Community paramedicine: paramedics, Advanced EMTs, and EMTs deliver protocol-driven care in patients' homes under physician/NP oversight",
               "Core services: post-discharge and primary-care follow-up, with modules for surgical recovery or substance use",
               "Scope-of-practice and reimbursement changes, including flexibility to \"triage and treat\" in the community",
