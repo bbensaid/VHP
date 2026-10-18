@@ -16,9 +16,10 @@ import {
   type StateTimeSeries,
   type QuarterlySnapshot,
 } from "@/lib/data/hti-timeseries-data";
-import { pillarSeriesFor, policyDataAvailable, frameworkReadiness, pillarTrend } from "@/lib/framework/pillar-mapping";
+import { policyDataAvailable, frameworkReadiness } from "@/lib/framework/pillar-mapping";
 import type { PillarId } from "@/lib/taxonomy/pillars";
 import StrategicPlanPace from "@/components/framework/StrategicPlanPace";
+import { pillarDirection, pillarEvents, TREND_SINCE } from "@/lib/data/vt-pillar-history";
 
 ChartJS.register(...registerables);
 
@@ -463,6 +464,15 @@ export default function HTIDashboard() {
         ))}
       </nav>
 
+      {activeTab !== "pillars" && (
+        <div className="mb-6 text-xs text-amber-800 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 leading-relaxed" data-testid="hti-modeled-notice">
+          <strong>Modeled index, not measurement.</strong> The quarterly HTI domain scores on this tab are an
+          illustrative series built for exploring the index&rsquo;s mechanics; they are not drawn from a published
+          source and should not be read as any state&rsquo;s actual performance. For Vermont&rsquo;s sourced
+          five-pillar status and dated milestones, use the Five-Pillar View.
+        </div>
+      )}
+
       {/* ── TAB: SIMULATION ─────────────────────────────────────────────────── */}
       {activeTab === "simulation" && (
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -818,8 +828,6 @@ export default function HTIDashboard() {
           {(() => {
             const state = stateTimeSeries.find(s => s.stateId === trendState);
             if (!state) return null;
-            const series = pillarSeriesFor(state);
-            const latest = series[series.length - 1];
             const hasPolicy = policyDataAvailable(trendState);
             const readiness = frameworkReadiness(trendState);
             const rows: { id: PillarId; label: string; icon: string }[] = [
@@ -836,7 +844,7 @@ export default function HTIDashboard() {
                     <div>
                       <h3 className="font-black text-slate-900 text-xl">{state.stateName} — Five-Pillar Status</h3>
                       <p className="text-sm text-slate-400 mt-1">
-                        Latest quarter: {latest.quarter}. Equity is reported separately and is never
+                        Status as of July 2026. Equity is reported separately and is never
                         averaged into a pillar score.
                       </p>
                     </div>
@@ -858,23 +866,23 @@ export default function HTIDashboard() {
                     <strong className="text-slate-700">Readiness</strong>{" "}is the pillar&rsquo;s ability to
                     issue what the pillars downstream of it need — the same sourced scores{" "}
                     <a href="/htr-simulator" className="text-indigo-600 underline">the HTR Simulator</a>{" "}
-                    runs. <strong className="text-slate-700">Trend</strong>{" "}is the direction this
-                    platform&rsquo;s adoption and maturity index has moved over{" "}
-                    {series.length}{" "}quarters. They are different measurements and they can point
-                    opposite ways: Vermont&rsquo;s digital maturity has risen steadily while its
-                    Technology gate stays closed, because exchange between those systems is still
-                    voluntary and incomplete. A rising trend is not an open gate.
+                    runs. <strong className="text-slate-700">Trend</strong>{" "}is the net of the sourced milestones
+                    each pillar has logged since January 2026 (advances minus setbacks), listed below
+                    the table with their sources. They are different measurements and they can point
+                    opposite ways: Technology has logged steady advances while its gate stays closed,
+                    because the analytics vendor is not yet operational and exchange is still voluntary
+                    and incomplete. A rising trend is not an open gate.
                   </div>
                   <div className="flex items-center gap-4 pb-2 mb-1 border-b border-slate-100 text-[10px] font-bold uppercase tracking-widest text-slate-400">
                     <span className="w-28">Pillar</span>
                     <span className="flex-1">Readiness (sourced)</span>
                     <span className="w-12 text-right">Score</span>
-                    <span className="w-36 text-right">Trend (maturity index)</span>
+                    <span className="w-36 text-right">Trend since Jan 2026</span>
                   </div>
                   <div className="space-y-4">
                     {rows.map(r => {
                       const score = readiness ? readiness.scores[r.id] : null;
-                      const trend = pillarTrend(series, r.id);
+                      const trend = readiness ? pillarDirection(r.id) : null;
                       return (
                         <div key={r.id} className="flex items-center gap-4" data-testid={`pillar-row-${r.id}`}>
                           <span className="w-28 text-sm font-bold text-slate-700 flex items-center gap-1.5">
@@ -904,8 +912,8 @@ export default function HTIDashboard() {
                             trend == null ? "text-slate-300" : trend.direction === "improving" ? "text-emerald-600" : trend.direction === "decaying" ? "text-rose-600" : "text-slate-400"
                           }`}>
                             {trend == null
-                              ? "no trend data"
-                              : `${trend.direction} ${trend.delta >= 0 ? "+" : ""}${trend.delta}`}
+                              ? "no sourced history"
+                              : `${trend.direction} (${trend.advances}▲ ${trend.setbacks}▼)`}
                           </span>
                         </div>
                       );
@@ -914,23 +922,48 @@ export default function HTIDashboard() {
                       <span className="w-28 text-sm font-bold text-violet-700 flex items-center gap-1.5">
                         <span>⚖️</span> Equity
                       </span>
-                      <div className="flex-1 h-3 bg-violet-50 rounded-full overflow-hidden">
-                        <div className="h-full rounded-full bg-violet-400" style={{ width: `${latest.equity}%` }} />
-                      </div>
-                      <span className="w-12 text-right text-sm font-black text-violet-700 tabular-nums">{latest.equity}</span>
-                      <span className="w-36 text-right text-[10px] font-bold uppercase tracking-wider text-violet-400">
-                        maturity index
+                      <span className="flex-1 text-xs text-violet-700">
+                        A test every pillar must pass, not a score —{" "}
+                        <a href="/research-lab/population-equity?tab=equity" className="underline">Health Equity Studio</a>
                       </span>
                     </div>
                   </div>
+                  {readiness && (
+                    <div className="mt-8" data-testid="pillar-history">
+                      <h4 className="font-bold text-slate-900 text-sm mb-1">Sourced milestones by pillar</h4>
+                      <p className="text-xs text-slate-500 mb-4">
+                        Each entry is a dated fact from its primary source; ▲ advance, ▼ setback, ● neither.
+                        The trend column counts entries from {TREND_SINCE.slice(0, 4)} on.
+                      </p>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        {rows.map(r => (
+                          <div key={r.id} className="border border-slate-200 rounded-xl p-4">
+                            <div className="text-xs font-bold text-slate-700 mb-2">{r.icon} {r.label}</div>
+                            <ul className="space-y-2">
+                              {pillarEvents(r.id).map(e => (
+                                <li key={e.date + e.text} className="text-xs text-slate-600 leading-snug flex gap-2">
+                                  <span className={e.effect === "advance" ? "text-emerald-600" : e.effect === "setback" ? "text-rose-600" : "text-slate-400"}>
+                                    {e.effect === "advance" ? "▲" : e.effect === "setback" ? "▼" : "●"}
+                                  </span>
+                                  <span>
+                                    <span className="font-semibold tabular-nums">{e.date.slice(0, 7)}</span> {e.text}
+                                    <span className="block text-[10px] text-slate-400">{e.source}</span>
+                                  </span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                   {readiness && <StrategicPlanPace operations={readiness.scores.operations} />}
                   {!hasPolicy && (
                     <p className="mt-6 text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3">
                       Policy is not yet scored for {state.stateName}, and neither is any other pillar&rsquo;s
                       readiness. This platform has sourced, book-verified pillar readiness only for
                       Vermont (Acts 167/51/68, §1.14); every other state is left unscored rather than
-                      estimated. The trend column still works for every state, because it reads this
-                      platform&rsquo;s own maturity index rather than the book&rsquo;s sourced scores.
+                      estimated, and the trend column stays empty for the same reason.
                     </p>
                   )}
                 </div>
