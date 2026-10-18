@@ -90,7 +90,7 @@ const PILLARS: PillarConfig[] = [
       { label: "Telehealth / RPM penetration", benchmark: "≥20% of chronic disease panel" },
     ],
     milestones: [
-      { label: "July 2025: Act 62 HIE governance transfer to DVHA", date: "Jul 2025", status: "complete" },
+      { label: "July 2025: Act 62 ends GMCB approval of HIE planning (DVHA runs the HIT Plan)", date: "Jul 2025", status: "complete" },
       { label: "FY2026: RHT AI scribe + RPM deployment", date: "FY2026", status: "active", vermont: "Vermont RHT-funded AI scribe and remote patient monitoring investments" },
       { label: "FY2027: VITL mandatory connectivity (Act 68)", date: "FY2027", status: "upcoming" },
       { label: "FY2028: FHIR interoperability for global budget data exchange", date: "FY2028", status: "upcoming" },
