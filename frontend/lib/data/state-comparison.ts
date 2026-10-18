@@ -95,7 +95,7 @@ export const SCALE_ROWS: ComparisonRow[] = [
   {
     label: "Population",
     cells: {
-      vermont:    { value: "647,000",     detail: "Smallest state by Medicaid enrollment" },
+      vermont:    { value: "645,000", detail: "Census Vintage 2025 estimate (644,663)" },
       oregon:     { value: "4.2 million",  detail: "≈6.5× Vermont" },
       california: { value: "39.2 million", detail: "≈60× Vermont" },
     },
