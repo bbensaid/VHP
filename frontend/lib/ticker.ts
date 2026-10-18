@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import { VT_HOSPITALS, totalAvail, totalBeds } from "@/lib/data/system-vitals-data";
 
 export interface TickerItem {
   label: string;
@@ -8,12 +7,15 @@ export interface TickerItem {
   trend?: string;
   status?: string;
   type?: "vital" | "bed";
+  /** Where the figure comes from — shown in the ticker detail view. */
+  source?: string;
 }
 
+// 2026-10-17: the earlier vitals ("VT Health Index 42/100", ER wait, ICU occupancy, per-hospital "beds available")
+// had no source and were shown site-wide as live data. Every vital now names its source (data/vitals.csv).
 export const DEFAULT_TICKER_DATA: TickerItem[] = [
-  { label: "VT Health Index",  value: "42/100", trend: "-2.4%", status: "critical" },
-  { label: "Hospital Margins", value: "-4.1%",  trend: "DOWN",  status: "warning"  },
-  { label: "Workforce Gap",    value: "1,240",  trend: "RISING",status: "warning"  },
+  { label: "VT adults with health insurance", value: "95.9%", trend: "2025", status: "good", source: "CDC BRFSS Prevalence Data, 2025" },
+  { label: "VT hospitals with operating losses", value: "9 of 14", trend: "2023", status: "critical", source: "Oliver Wyman, Act 167 Community Engagement: Recommendations (2024)" },
 ];
 
 // ─── Minimal CSV parser (handles double-quoted fields with embedded commas) ───
@@ -74,39 +76,21 @@ function parseCSV(content: string): TickerItem[] {
         value:  obj.value  ?? "",
         trend:  obj.trend  || undefined,
         status,
+        source: obj.source || undefined,
       };
     })
     .filter((item) => item.label && item.value);
 }
 
-// ─── Bed rows derived from the shared hospital data (always in sync) ──────────
-function bedRowsFromHospitalData(): TickerItem[] {
-  return VT_HOSPITALS.map((h) => {
-    const avail = totalAvail(h);
-    const total = totalBeds(h);
-    const pct = total > 0 ? avail / total : 0;
-    const status = pct < 0.10 ? "critical" : pct < 0.25 ? "warning" : "good";
-    return {
-      type: "bed" as const,
-      label: h.name,
-      value: `${avail} avail`,
-      trend: `of ${total} beds`,
-      status,
-    };
-  });
-}
-
 // ─── Main export ──────────────────────────────────────────────────────────────
 export async function getTickerData(): Promise<TickerItem[]> {
-  // 1. CSV spreadsheet — only the non-bed vital rows are read from here.
-  //    Bed rows are always generated from VT_HOSPITALS (single source of truth).
+  // 1. CSV spreadsheet (data/vitals.csv) — sourced vitals only; rows without a source are dropped.
   try {
     const csvPath = path.join(process.cwd(), "data", "vitals.csv");
     const content = fs.readFileSync(csvPath, "utf-8");
     const items = parseCSV(content);
     if (items.length > 0) {
-      const vitals = items.filter((i) => i.type !== "bed");
-      return [...vitals, ...bedRowsFromHospitalData()];
+      return items.filter((i) => i.type !== "bed" && i.source);
     }
   } catch {
     // CSV not present or unreadable — fall through

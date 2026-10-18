@@ -1,23 +1,9 @@
-type,label,value,trend,status
-vital,VT Health Index,42/100,-2.4% YoY,critical
-vital,Hospital Margins,-4.1%,DOWN,warning
-vital,Workforce Gap,"1,240 FTEs",RISING,warning
-vital,ER Wait Time (VT Avg),4.2 hrs,+12% YoY,warning
-vital,ICU Occupancy (VT),87%,↑ 3pts,critical
-vital,Medicaid Enrollment,22.4%,Stable,neutral
-vital,30-Day Readmit Rate,14.8%,-0.3pts,good
-vital,VBC Contract Adoption,38%,+6pts YoY,good
-bed,UVM Medical Center,17 avail,of 236 beds,
-bed,Dartmouth-Hitchcock (VT),30 avail,of 218 beds,
-bed,Rutland Regional MC,15 avail,of 108 beds,
-bed,Central Vermont MC,32 avail,of 110 beds,
-bed,Southwestern VT MC,20 avail,of 80 beds,
-bed,Brattleboro Memorial,10 avail,of 49 beds,
-bed,Copley Hospital,15 avail,of 41 beds,
-bed,Gifford Medical Center,17 avail,of 45 beds,
-bed,Grace Cottage Hospital,10 avail,of 29 beds,
-bed,Mt. Ascutney Hospital,13 avail,of 34 beds,
-bed,Northeastern VT Regional,12 avail,of 43 beds,
-bed,North Country Hospital,14 avail,of 41 beds,
-bed,Porter Medical Center,20 avail,of 39 beds,
-bed,Springfield Hospital,4 avail,of 33 beds,
+type,label,value,trend,status,source
+vital,VT adults with health insurance,95.9%,2025,good,"CDC BRFSS Prevalence Data, 2025"
+vital,VT adults with a personal health care provider,91.3%,2025,good,"CDC BRFSS Prevalence Data, 2025"
+vital,VT hospitals with operating losses,9 of 14,2023,critical,"Oliver Wyman, Act 167 Community Engagement: Recommendations (2024)"
+vital,30-day hospital readmission rate (VT),14.8%,AHS Nov 2025,warning,"Agency of Human Services, Act 68 outcome-measure report, November 2025"
+vital,Potentially avoidable ED visits (VT),32.3%,2020–2022,warning,"Agency of Human Services, Act 68 report, November 2025 (Oliver Wyman analysis of VUHDDS/VHCURES)"
+vital,Lowest-cost silver premium growth (VT),+169%,2018–2025,critical,"Green Mountain Care Board, testimony to Senate Health & Welfare, January 15, 2026"
+vital,FY2027 commercial hospital rates (VT),−2.9%,GMCB Sep 2026,neutral,"Green Mountain Care Board, FY2027 hospital budget decisions, September 2026"
+vital,VT Rural Health Transformation award,$195.1M,FY2026,neutral,"CMS, Rural Health Transformation awards, December 29, 2025"
