@@ -10937,8 +10937,8 @@ SUSTAIN = [{'id': 'lesson_5p_portfolio_management',
                                 'label': 'Cost of a staffed Portfolio '
                                          'Management Office as a share of the '
                                          'portfolio value it protects '
-                                         '(roughly $195M a year in RHT '
-                                         'capital and $300M-plus in projected '
+                                         '($195M in FY2026 RHT capital alone, '
+                                         'and $300M-plus in projected '
                                          'RBP savings)',
                                 'source': 'PMI Pulse of the Profession (2017); Vermont RHT Program '
                                           'Application'},

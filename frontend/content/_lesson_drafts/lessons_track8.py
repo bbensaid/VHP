@@ -161,7 +161,7 @@ LESSONS = [
                     },
                     {
                         "value": "<2%",
-                        "label": "Cost of a staffed Portfolio Management Office as a share of the portfolio value it protects (roughly $195M a year in RHT capital and $300M-plus in projected RBP savings; the EAST Fund, once expected at about $150M a year, fell away when Vermont left AHEAD in July 2026)",
+                        "label": "Cost of a staffed Portfolio Management Office as a share of the portfolio value it protects ($195M in FY2026 RHT capital alone, and $300M-plus in projected RBP savings; the EAST Fund, once expected at about $150M a year, fell away when Vermont left AHEAD in July 2026)",
                         "source": "PMI Pulse of the Profession (2017); Vermont RHT Program Application",
                     },
                     {

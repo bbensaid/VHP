@@ -36,7 +36,7 @@ const HR1_PROVISIONS: Provision[] = [
     status: "enacted",
     impact: "Opportunity",
     impactColor: "text-emerald-700 bg-emerald-100 border-emerald-200",
-    desc: "50-state competitive grant program for rural hospital transformation. Vermont awarded $195M a year (FY2026 award, December 2025). Funds telehealth, AI scribe, broadband, and CIN development.",
+    desc: "$10B a year to all 50 states, FY2026–FY2030 — half split equally, half scored by CMS. Vermont: $195M for FY2026 (December 2025), later years set annually. Vermont's plan funds telehealth and e-Consult, AI scribes, remote monitoring and a clinically integrated network — not broadband.",
     date: "July 4, 2025",
     tools: [{ label: "Vermont RHT Program", href: "/vermont-rht-program" }],
   },

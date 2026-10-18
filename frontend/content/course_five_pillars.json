@@ -2350,7 +2350,7 @@
                 "type": "single_choice",
                 "points": 1,
                 "question": "Vermont signed the AHEAD State Agreement in January 2025 and withdrew in July 2026. What triggered the withdrawal?",
-                "explanation": "CMS renegotiated the model's terms. Vermont had projected roughly $138 million in additional federal funds; the renegotiation capped additional payments at approximately $10 million. The state withdrew before its 2028 performance period began and redirected to the Rural Health Transformation Program's $195 million per year.",
+                "explanation": "CMS renegotiated the model's terms. Vermont had projected roughly $138 million in additional federal funds; the renegotiation capped additional payments at approximately $10 million. The state withdrew before its 2028 performance period began; its technology build now leans on the separate Rural Health Transformation Program ($195 million for FY2026, an annual award).",
                 "options": [
                   {
                     "id": "o_5p8c1",
@@ -7113,7 +7113,7 @@
                 },
                 {
                   "value": "<2%",
-                  "label": "Cost of a staffed Portfolio Management Office as a share of the portfolio value it protects (roughly $195M a year in RHT capital and $300M-plus in projected RBP savings)",
+                  "label": "Cost of a staffed Portfolio Management Office as a share of the portfolio value it protects ($195M in FY2026 RHT capital alone, and $300M-plus in projected RBP savings)",
                   "source": "PMI Pulse of the Profession (2017); Vermont RHT Program Application"
                 },
                 {
