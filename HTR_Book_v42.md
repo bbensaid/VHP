@@ -3559,9 +3559,9 @@ A care management program that prevents 50 hospitalizations in a population of 1
 
 The following matrix provides implementation guidance for the key Economics pillar investments --- estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs are indicative ranges; actual costs vary by organizational size, existing infrastructure, and implementation approach.
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   **Investment**                                        **Estimated cost**          **Timeline to value**   **ROI crossover**                 **Vermont benchmark**
-  ----------------------------------------------------- --------------------------- ----------------------- --------------------------------- ---------------------------------------------------------------------------------
+  ----------------------------------------------------- --------------------------- ----------------------- --------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   HCC gap analysis and closure program                  \$25K-\$100K annually       3-6 months setup        Year 1: 3-8% RAF improvement      Vermont CAHs: avg 12% HCC gap (2025 RHRC assessment)
 
   APM shared savings model financial preparation        \$75K-\$200K per org        6-9 months              12-24 months                      VHCURES attribution; Act 68 global budget benchmark methodology setup
@@ -3572,8 +3572,8 @@ The following matrix provides implementation guidance for the key Economics pill
 
   Commercial payer VBC contract negotiation             \$75K-\$200K per contract   6-12 months             18-36 months                      Vermont Blue Cross VBC arrangements; MVP Health Care negotiations
 
-  Reference-based pricing methodology (state level)     \$500K-\$2M state cost      18-24 months            FY2028: systemwide savings        Vermont mandatory RBP effective FY2028; Oliver Wyman: \$300M+ annual projection
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Reference-based pricing methodology (state level)     \$500K-\$2M state cost      18-24 months            FY2028: systemwide savings        Vermont mandatory RBP effective FY2028; Oliver Wyman projects \>\$400M of direct savings over five years from its hospital recommendations, separate from payment reform
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure 7.2 --- Economics pillar implementation matrix. Sources: HTR Research Lab; Oliver Wyman Act 167 Report; Vermont AHEAD documentation.*
 
@@ -6164,7 +6164,7 @@ The Portfolio Manager's job is to ensure every component can trace its contribut
 
 ## 15.11 **The Business Case**
 
-The objection to building a PMO is always the same: we cannot afford it. The cost-benefit analysis in **Figure 15.9** answers that objection directly. The \~\$4--6.4M cost of a staffed PMO over four to five years is less than 2% of a single year of the value it protects --- \$195M a year in RHT funds and \$300M+ a year in projected RBP savings.
+The objection to building a PMO is always the same: we cannot afford it. The cost-benefit analysis in **Figure 15.9** answers that objection directly. A staffed PMO costs about \$0.85--1.3M a year --- \$4--6.4M over four to five years --- which is under 1% a year of the \$195M a year in RHT funds it coordinates, before counting any savings from reference-based pricing.
 
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   **Investment**                     **Annual cost**    **Total (4--5 yr)**   **Benefit**
@@ -6177,7 +6177,7 @@ The objection to building a PMO is always the same: we cannot afford it. The cos
 
   Five pillar PMs (shared)           \$500K--\$850K     \~\$2.5M--\$4.2M      Pillar-level delivery accountability; critical-path management
 
-  Total                              \~\$850K--\$1.3M   \~\$4M--\$6.4M        \<2% of one year's value managed: \$195M/yr RHT + \$300M+/yr projected RBP savings
+  Total                              \~\$850K--\$1.3M   \~\$4M--\$6.4M        \<1% a year of the \$195M/yr RHT capital it coordinates
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure 15.9 --- Business case for portfolio-management investment. Sources: PMI Pulse of the Profession (2017); Vermont RHT Program Application; AHEAD State Agreement (EAST Fund); PMI salary data.*

@@ -1,0 +1,4 @@
+{"tag":"pmo-300m","note":"No source for $300M+/yr RBP savings (see book-audit/deep/fix_rbp_300m_2026-10-18.py).",
+ "pairs":[["\"value\": \"<2%\",\n                  \"label\": \"Cost of a staffed Portfolio Management Office as a share of the portfolio value it protects ($195M in FY2026 RHT capital alone, and $300M-plus in projected RBP savings)\"","\"value\": \"<1%\",\n                  \"label\": \"Annual cost of a staffed Portfolio Management Office as a share of the RHT capital it coordinates ($195M in FY2026)\""],
+          ["Cost of a staffed Portfolio Management Office as a share of the portfolio value it protects ($195M in FY2026 RHT capital alone, and $300M-plus in projected RBP savings)","Annual cost of a staffed Portfolio Management Office as a share of the RHT capital it coordinates ($195M in FY2026)"]],
+ "residue":"300M-plus in projected RBP"}
