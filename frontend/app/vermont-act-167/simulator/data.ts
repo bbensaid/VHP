@@ -1389,34 +1389,7 @@ export const STATE_BENCHMARKS: StateBenchmark[] = [
   },
 ];
 
-export interface CountyData {
-  county: string;
-  population: number;
-  over65Pct: number;
-  noVehiclePct: number;
-  belowPovertyPct: number;
-  minorityPct: number;
-  uninsuredPct: number;
-  primaryHospital: string;
-  travelTimeToHospitalMin: number;
-}
 
-export const COUNTY_DATA: CountyData[] = [
-  { county: "Addison", population: 37000, over65Pct: 23, noVehiclePct: 8, belowPovertyPct: 12, minorityPct: 5, uninsuredPct: 4.2, primaryHospital: "porter", travelTimeToHospitalMin: 18 },
-  { county: "Bennington", population: 37500, over65Pct: 27, noVehiclePct: 12, belowPovertyPct: 15, minorityPct: 6, uninsuredPct: 5.1, primaryHospital: "svmc", travelTimeToHospitalMin: 22 },
-  { county: "Caledonia", population: 30000, over65Pct: 26, noVehiclePct: 14, belowPovertyPct: 16, minorityPct: 4, uninsuredPct: 5.8, primaryHospital: "nvrh", travelTimeToHospitalMin: 25 },
-  { county: "Chittenden", population: 168000, over65Pct: 14, noVehiclePct: 11, belowPovertyPct: 11, minorityPct: 14, uninsuredPct: 3.2, primaryHospital: "uvmmc", travelTimeToHospitalMin: 14 },
-  { county: "Essex", population: 6200, over65Pct: 29, noVehiclePct: 18, belowPovertyPct: 22, minorityPct: 2, uninsuredPct: 8.1, primaryHospital: "north-country", travelTimeToHospitalMin: 45 },
-  { county: "Franklin", population: 49000, over65Pct: 20, noVehiclePct: 9, belowPovertyPct: 13, minorityPct: 7, uninsuredPct: 4.4, primaryHospital: "nmc", travelTimeToHospitalMin: 20 },
-  { county: "Grand Isle", population: 7200, over65Pct: 25, noVehiclePct: 7, belowPovertyPct: 8, minorityPct: 3, uninsuredPct: 3.8, primaryHospital: "nmc", travelTimeToHospitalMin: 32 },
-  { county: "Lamoille", population: 26000, over65Pct: 22, noVehiclePct: 10, belowPovertyPct: 12, minorityPct: 4, uninsuredPct: 4.6, primaryHospital: "copley", travelTimeToHospitalMin: 24 },
-  { county: "Orange", population: 29000, over65Pct: 27, noVehiclePct: 15, belowPovertyPct: 14, minorityPct: 3, uninsuredPct: 5.4, primaryHospital: "gifford", travelTimeToHospitalMin: 28 },
-  { county: "Orleans", population: 27500, over65Pct: 28, noVehiclePct: 18, belowPovertyPct: 18, minorityPct: 4, uninsuredPct: 6.2, primaryHospital: "north-country", travelTimeToHospitalMin: 30 },
-  { county: "Rutland", population: 62000, over65Pct: 25, noVehiclePct: 10, belowPovertyPct: 14, minorityPct: 5, uninsuredPct: 4.8, primaryHospital: "rrmc", travelTimeToHospitalMin: 19 },
-  { county: "Washington", population: 59000, over65Pct: 20, noVehiclePct: 9, belowPovertyPct: 12, minorityPct: 6, uninsuredPct: 4.1, primaryHospital: "cvmc", travelTimeToHospitalMin: 17 },
-  { county: "Windham", population: 44000, over65Pct: 26, noVehiclePct: 14, belowPovertyPct: 16, minorityPct: 7, uninsuredPct: 5.6, primaryHospital: "bmh", travelTimeToHospitalMin: 22 },
-  { county: "Windsor", population: 56000, over65Pct: 28, noVehiclePct: 12, belowPovertyPct: 13, minorityPct: 4, uninsuredPct: 4.9, primaryHospital: "mt-ascutney", travelTimeToHospitalMin: 26 },
-];
 
 // ── Pillar definitions ─────────────────────────────────────────────────────
 

@@ -1,0 +1,86 @@
+{
+ "Addison": {
+  "population": 19152,
+  "over65Pct": 62.5,
+  "minorityPct": 10.2,
+  "check": 76096
+ },
+ "Bennington": {
+  "population": 18740,
+  "over65Pct": 64.0,
+  "minorityPct": 9.6,
+  "check": 73260
+ },
+ "Caledonia": {
+  "population": 15374,
+  "over65Pct": 62.7,
+  "minorityPct": 8.1,
+  "check": 60828
+ },
+ "Chittenden": {
+  "population": 87178,
+  "over65Pct": 59.7,
+  "minorityPct": 15.3,
+  "check": 338230
+ },
+ "Essex": {
+  "population": 2998,
+  "over65Pct": 64.8,
+  "minorityPct": 7.4,
+  "check": 12102
+ },
+ "Franklin": {
+  "population": 25498,
+  "over65Pct": 60.0,
+  "minorityPct": 8.9,
+  "check": 102354
+ },
+ "Grand Isle": {
+  "population": 3762,
+  "over65Pct": 64.4,
+  "minorityPct": 9.3,
+  "check": 15022
+ },
+ "Lamoille": {
+  "population": 13297,
+  "over65Pct": 61.0,
+  "minorityPct": 9.5,
+  "check": 52588
+ },
+ "Orange": {
+  "population": 15068,
+  "over65Pct": 63.1,
+  "minorityPct": 7.5,
+  "check": 60004
+ },
+ "Orleans": {
+  "population": 13799,
+  "over65Pct": 63.0,
+  "minorityPct": 8.1,
+  "check": 55200
+ },
+ "Rutland": {
+  "population": 30221,
+  "over65Pct": 64.0,
+  "minorityPct": 7.9,
+  "check": 119306
+ },
+ "Washington": {
+  "population": 30162,
+  "over65Pct": 62.0,
+  "minorityPct": 9.3,
+  "check": 119304
+ },
+ "Windham": {
+  "population": 22763,
+  "over65Pct": 64.1,
+  "minorityPct": 9.8,
+  "check": 90408
+ },
+ "Windsor": {
+  "population": 29286,
+  "over65Pct": 64.0,
+  "minorityPct": 8.6,
+  "check": 114624
+ }
+}

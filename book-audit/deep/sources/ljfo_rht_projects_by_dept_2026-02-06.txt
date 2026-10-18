@@ -1,0 +1,423 @@
+=== PAGE 1
+Lead Department Title Amount Allocated Description Type Activity #
+CO/HCR/Health 
+Data/Blueprint
+Development of a statewide health care 
+delivery strategic plan
+$2,527,500 Cover costs associated with hiring a consultant to develop and implement a Statewide Health Care Delivery 
+Strategic Plan for Vermont. The plan will provide a roadmap for health care delivery system reform and promote 
+access to high-quality, cost-effective services across the system. Key elements of the plan may include a shared 
+statewide vision, goals, and objectives; annual total cost of care targets and related spending targets for primary 
+and preventive care; identification of the resources, infrastructure, and supports necessary for 
+implementation/monitoring. AHS intends for this plan to build on prior transformation and regionalization 
+initiatives to ensure a coordinated, data-driven approach to organizing and
+sustaining Vermont’s health care delivery system statewide.
+Consultant (Contract) 1
+CO/HCR/Health 
+Data/Blueprint
+Independent evaluator $1,000,000 Vermont will select an external evaluator through a competitive procurement that will be initiated during the first 
+budget period. The selected vendor will be responsible for overall assessment and evaluation of the program, 
+including: Understanding the context of Vermont’s RHT program;  Developing a deep knowledge of the activities 
+undertaken as part of each initiative described above; Designing the evaluation; Using existing data sources and 
+collecting additional data and information, as needed; Analyzing the data and information; and Presenting results, 
+conclusions, and recommendations. Vermont will fully cooperate with Centers for Medicare and Medicaid 
+Services (CMS)-led evaluation, monitoring, and
+reporting requirements.
+Contractor (Contract) 1
+CO/HCR/Health 
+Data/Blueprint
+Transformation analytics and support $15,000,000 Hire a vendor(s) to gather and study data that will inform hospital and regional transformation planning over the 
+next five years; and provide project management support. The vendor(s) will provide modeling to assess the 
+impacts of proposed reforms on cost, quality, access, and sustainability across Vermont’s hospitals and regions. 
+Analytics support will be made available to hospitals and non-hospital providers to support transformation and 
+regionalization efforts (e.g., identifying areas most in need of enhanced maternity care capacity). The selected 
+vendor(s) will also support onsite transformation activities with providers throughout the state in alignment with 
+Vermont’s regionalization goals, including backend office support, efficiency studies, and other administrative 
+functions that can be streamlined. The state may require the vendor(s) to provide project management or other 
+transformation support to the other Initiatives in this application, as needed.
+Contractor (Contract) 2
+CO/HCR/Health 
+Data/Blueprint
+Facility upgrades to support 
+regionalization
+$21,500,000 Support renovations or upgrades to existing buildings and equipment in hospitals and clinics, so they can better 
+serve their communities. Investments may include heating, ventilation, and air conditioning (HVAC) and sewer 
+system upgrades, reconfigured office or clinical areas, and other limited physical modifications to support service 
+realignment, shared
+operations, and integrated care delivery envisioned under Vermont’s regionalization strategy.
+Subrecipient (Grant) 2
+CO/HCR/Health 
+Data/Blueprint
+Support a statewide closed-loop referral 
+system
+$455,000 Purchase a digital care coordination platform to strengthen communication and collaboration among health care, 
+Mental Health/Substance Use Disorder, and social service providers. The system would ensure patients 
+successfully connect to needed community supports, such as housing, food assistance, and transportation. By 
+enabling real-time data sharing and tracking of referral outcomes, the platform would reduce duplication of 
+services, improve accountability, and promote cost
+efficiency while ensuring more seamless, person-centered care across Vermont’s health and social service 
+systems.
+Contractor (Contract) 4
+=== PAGE 2
+Lead Department Title Amount Allocated Description Type Activity #
+CO/HCR/Health 
+Data/Blueprint
+Transformation, innovation, and 
+regionalization support grants
+$26,923,184 Support health care providers in adopting tactical regional care strategies that will shift appropriate services from 
+hospitals to nonhospital settings and create regional hospital services or centers of excellence. Grants will be 
+made by AHS to health care providers to support the implementation of regional care changes that sustain high-
+quality, cost-effective care for Vermonters, and the grants will primarily be provided to non-hospital providers to 
+strengthen the continuum of care, encourage care delivery innovation, and better align services with population 
+needs. AHS will allocate a proportion of grant funding to provider proposals to implement innovative care models 
+in line with the state’s regionalization and transformation goals (e.g., hospital-home health partnerships, regional 
+workforce sharing models, maternity care network development). Grants may also be used to purchase tools and 
+technical assistance to enable interoperability between EMR systems. Vermont will design the grant initiative to 
+ensure that only permissible uses of RHT Program funds are allowed.
+Subrecipient (Grant) 4
+CO/HCR/Health 
+Data/Blueprint
+Statewide health care data platform 
+modernization and transparency 
+initiative
+$2,635,000 This project aims to modernize how cost, quality and access data is managed and used in Vermont by scaling 
+existing infrastructure. RHT funds will support development of a scaled solution that will replace older tools and 
+make it easier for state leaders, health care providers, and the public to see how well the health care system is 
+working according to defined metrics. Additionally, the solution will use dashboards and reports to show 
+important facts and trends, like how much health care costs are rising, the quality of care provided, and access to 
+care. By using modern technology, the project will help people make smarter decisions about health care and 
+track progress toward improving health services across the
+state.
+Contractor (Contract) 5
+CO/HCR/Health 
+Data/Blueprint
+Establishing a shared Human Resources 
+Information System (HRIS) system
+$1,502,000 Invest in the development of a unified HRIS that will centralize core human resources functions, including benefits 
+administration, payroll, recruitment, onboarding, licensure tracking, and compliance, while allowing each 
+participating hospital and community partners to securely manage organization specific tasks such as 
+performance evaluations and regulatory reporting. The system will streamline workforce management, reduce 
+administrative costs, and support staff
+scheduling flexibility, allowing clinical teams to be shared or shifted to meet fluctuating patient volumes across 
+regions.
+Subrecipient (Grant) 8
+CO/HCR/Health 
+Data/Blueprint
+Incentivizing adoption of a shared 
+Electronic Health Record 
+(EHR)/Electronic Medical Record (EMR) 
+platform
+$17,250,000 Build upon Vermont’s existing health data infrastructure, including VHIE, to strengthen data sharing and care 
+coordination across the state. While the VHIE provides a robust platform for secure health data exchange, 
+Vermont’s hospitals and providers currently use a variety of EMR systems that cause administrative burden, 
+increase complexity, and cause staff who work at multiple facilities to use different tools. This initiative would 
+implement a shared EMR that complements and continues to contribute data to the VHIE. Participation would be 
+voluntary and designed to achieve seamless data exchange, support improved image and lab sharing, enhance 
+cybersecurity, and allow advanced data analytics. Leveraging the VHIE’s existing infrastructure for state-wide 
+sharing, while promoting a shared EMR, would reduce administrative
+burden, improve care coordination— particularly for rural populations—and advance statewide health system 
+integration.
+Subrecipient (Grant) 9
+CO/HCR/Health 
+Data/Blueprint
+Statewide e-Consult expansion and 
+workforce capacity building
+$1,550,000 Support the implementation of a statewide e-Consult platform to ensure an interoperable means of access for primary care 
+providers to consult with specialists. Grants will be provided to providers to enable purchase of technologies to support the 
+build and function of an eConsult platform. Funding will also be used for technology upgrades as well as startup program 
+coordination costs that do not have an alternative funding source. [SEE BELOW FOR NEXT SENTENCE ON VTCPAP]. 
+Access to e-Consult services will save patients from having to travel to separate appointments and help strengthen local primary 
+care capacity.
+Subrecipient (Grant) 10
+CO/HCR/Health 
+Data/Blueprint
+Grants to providers to adopt Remote 
+Patient Monitoring (RPM) equipment
+$900,000 Provide grants to provider organizations for the purchase of RPM equipment. RPM would be used in home health, 
+primary care/specialty, and community paramedicine settings. RPM enables earlier interventions and ongoing 
+monitoring for chronic conditions (e.g., Congestive Heart Failure (CHF), Chronic Obstructive Pulmanory Disease 
+(COPD), diabetes,
+hypertension, asthma for pediatric populations, etc.) in the home to prevent hospital admissions or readmissions.
+Subrecipient (Grant) 11
+=== PAGE 3
+Lead Department Title Amount Allocated Description Type Activity #
+CO/HCR/Health 
+Data/Blueprint
+Grant funds to providers to adopt 
+telehealth technology
+$8,000,000 Provide grants to rural independent medical practices to purchase and implement telehealth technology solutions 
+statewide. Funds would support investments in secure telehealth platforms, connected diagnostic tools, and 
+related infrastructure necessary to deliver high-quality virtual visits (funds will not be used for broadband). Funds 
+will be used to provide technical assistance and training to grantees on technology selection, implementation, 
+cybersecurity, and compliance. By enabling smaller and independent practices to fully participate in Vermont’s 
+evolving digital health ecosystem, this initiative will reduce barriers to access, improve continuity of care, and 
+enhance the overall resilience of the
+state’s rural health system.
+Subrecipient (Grant) 12
+CO/HCR/Health 
+Data/Blueprint
+Grants to providers to adopt Artificial 
+Intelligence (AI) transcription/scribe 
+technology
+$1,030,000 Provide grants to providers to purchase AI scribe technology. Currently, smaller and more rural and independent 
+practices are struggling with access to the same technology that larger practices can afford. AI scribe technology 
+is proven to increase efficiency and reduce burden in primary care sites. Providers and patients in Vermont are 
+expressing high satisfaction with scribe technology at those practices where it is already available. Scribes 
+automate an average of over two hours of daily administrative work, transcribing and processing clinician-patient 
+conversations, producing clinical notes and follow-up materials so clinicians can focus on delivering quality care to 
+their patients. Investing in these services will produce clinical
+and administrative efficiencies for providers that will lead to improvements in the quality of care.
+Subrecipient (Grant) 13
+CO/HCR/Health 
+Data/Blueprint
+Providing enhanced capacity for team-
+based care
+$18,000,000 Fund payments to improve team-based care implementation to support care coordination and prevention-
+focused interventions such as chronic disease management, nutrition, and exercise programs. This payment will 
+be a prospective Per Member Per Month (PMPM) amount to support community health team staff, who do not 
+bill their activities. Practices will receive payment based on agreeing to implement new standards and their 
+performance on these standards. The PMPM will help increase access to services, including provision of care, and 
+evidence-based chronic disease prevention and
+management for all Vermonters.
+Subrecipient (Grant) 14
+CO/HCR/Health 
+Data/Blueprint
+Mental Health and community support 
+integration into primary care teams
+$600,000 Funds expanded staffing recruitment efforts at primary care practices to provide comprehensive, team-based 
+care for activities that have no reimbursement model. Embedding MH and community support specialists within 
+existing clinical teams will strengthen coordination between physical, MH, and social services. This allows patients 
+to access timely, whole-person support in a familiar setting. The model will enhance screening, early intervention, 
+and care planning for patients with intertwining needs, reduce barriers to care access, and improve outcomes 
+through closer collaboration between
+clinicians, care coordinators, and community-based partners, including transportation partners.
+Subrecipient (Grant) 15
+CO/HCR/Health 
+Data/Blueprint
+Enhancing Blueprint transformation 
+network capacity
+$1,800,000 Invest in the Blueprint’s statewide network of practices to allow for the modernization of the model. The project 
+will support technical assistance, training, and practice transformation resources that help providers implement 
+new care standards and evidence-based approaches. Priority areas include chronic disease prevention and 
+management, integration of
+MH/SUD and physical health, and improved use of data to drive quality and outcomes.
+Subrecipient (Grant) 16
+CO/HCR/Health 
+Data/Blueprint
+Workforce support and system 
+integration development
+$1,200,000 Support efforts to strengthen the health workforce and provide tools used for patient/family engagement, 
+referral/consultation workflows and systems, and bilateral communication mechanisms. Funds will also serve to 
+implement evidence-based chronic disease prevention and management, training and technical assistance, and 
+training
+for the clinical workforce.
+Subrecipient (Grant) 17
+=== PAGE 4
+Lead Department Title Amount Allocated Description Type Activity #
+CO/HCR/Health 
+Data/Blueprint
+Enhancing primary care-focused data 
+and analytics infrastructure
+$1,160,000 Provide funding to expand statewide access to Electronic Clinical Quality Measures (eCQM) calculation tools, risk 
+stratification modules, referral tracking, and team-based care documentation. This will strengthen data-driven 
+care coordination and performance improvement. Investments will support practices in leveraging these tools to 
+identify high-risk populations, monitor outcomes, and streamline reporting. Further, investments will enable 
+primary care practices to
+harness data and technology to furnish high-quality health care services.
+Subrecipient (Grant) 18
+CO/HCR/Health 
+Data/Blueprint
+Expanding access to Federally Qualified 
+Health Center (FQHC) primary care 
+services
+$1,800,000 Provide funding to an FQHC to adapt existing clinical sites through minor infrastructure 
+renovations/refurbishments and equipment upgrades to expand access to care. Funds will also be used to pay for 
+resources related to formal onboarding and training of staff and investments in IT. In addition, funding will 
+support costs related to health data information transfer
+and community engagement and public relations activities.
+Subrecipient (Grant) 19
+CO/HCR/Health 
+Data/Blueprint
+Incentivizing access to primary care $15,000,000 As part of the modernized Blueprint model, primary care practices that meet access requirements will receive a 
+Per Member Per Month (PMPM) capacity payment, supported by RHT Program funds. Enhanced access 
+requirements will improve patients’ ability to receive the care they need when and where they need it. Examples 
+of the types of requirements needed to earn the capacity payments include waitlist reduction for new patients, 
+ensuring availability of after-hours and/or weekend appointments, RPM, mobile health or home-visiting, 
+telehealth, and same-day appointments for existing patients.
+Subrecipient (Grant) 20
+CO/HCR/Health 
+Data/Blueprint
+Specialty and primary care performance 
+payments
+$15,000,000 Funds will provide performance payments, as Per Member Per Month (PMPM) payments, that will be shared 
+between specialty and primary care providers to incentivize consultation, co-management, and coordination of 
+care for the following conditions: diabetes, MH/SUD, Chronic Obstructive Pulmonary Disease (COPD), Congestive 
+Heart Failure (CHF) and hypertension (additional conditions may be added in future years). These payments are 
+intended to incent providers to work together differently, facilitated by technology (e.g., e-Consults, telehealth). 
+These payments will depend on the shared
+performance of providers.
+Subrecipient (Grant) 21
+DAIL Improve availability and access to high-
+acuity services for nursing home 
+residents including dialysis services and 
+ventilators
+$1,450,000 Provide funding support for new grants to providers to purchase dialysis and nursing home ventilator equipment. 
+Dialysis access for rural skilled nursing facilities is an ongoing challenge, with transportation constraints 
+complicating patients’ treatment progress. Vermont currently has only one nursing home ventilator unit, located 
+at the Pines in Rutland, which is insufficient to meet demand, and Vermont has no nursing home-based dialysis 
+options. Funding would support new dialysis units to serve Vermont nursing home residents, and funds would be 
+used to invest in a second nursing home ventilator unit to enable the state to double its capacity for this critical 
+service. Funds would cover equipment installation for dialysis services with necessary upgrades to facility 
+infrastructure to serve patients—the state will also consider a mobile unit in place of facility units based on review 
+of business plans. This project will be particularly important for individuals dually eligible for Medicare and 
+Medicaid to support their ability to receive long-term care within their communities.
+Subrecipient (Grant) 7
+DAIL Expand access to Licensed Nursing 
+Assistant (LNA) training programs
+$810,000 Invest in new LNA training opportunities across Vermont through hybrid education models and coordinated 
+clinical partnerships. Today, Vermont offers several accessible, work-based training options for LNA candidates, 
+allowing them to gain paid experience while completing required coursework. However, these programs are 
+fragmented. RHT Program funds would support creation of a new centralized training hub and shared clinical 
+placement opportunities for small and rural providers that lack the capacity to host their own programs. This 
+project will help strengthen Vermont’s long-term care and
+hospital workforce pipeline while supporting career advancement within the nursing profession.
+Subrecipient (Grant) 23
+=== PAGE 5
+Lead Department Title Amount Allocated Description Type Activity #
+DMH Mental Health (MH) and Substance Use 
+Disorder (SUD) urgent care expansion
+$2,050,000 Support targeted expansion of urgent care centers to enable immediate, walk-in access to MH and SUD care as a 
+lower-cost, community-anchored alternative to Emergency Departments (EDs). Investments in urgent care 
+expansion will include minor renovations within the blueprint of existing buildings to improve service capacity. 
+This project aims to create new and
+long-term access points to preventive care at the community level.
+Subrecipient (Grant) 3
+DMH Statewide e-Consult expansion and 
+workforce capacity building/VTCPAP
+$750,000 Lastly, funding will be used to build capacity for pediatric and perinatal providers through a program that provides 
+real-time psychiatric consultation, training, and resources, so they can confidently care for patients with mild to 
+moderate MH needs
+in their primary care hub (Note: federal funding for this program concludes in State Fiscal Year (SFY) 2025–2026).
+Subrecipient (Grant) 10
+DVHA/Blueprint 
+Business Office
+Statewide assessment of options to 
+improve health coverage affordability
+$500,000 Invest in a statewide assessment and associated technical assistance to identify and advance policy options to 
+improve access and affordability in Vermont’s Marketplace. The assessment will explore options to promote 
+marketplace sustainability for insurers and consumers, including small businesses. The assessment will identify 
+what the state can do now, what requires near-term analysis, and what could be implemented in 2028. Funds will 
+provide technical support to analyze reinsurance and Basic Health Program affordability options, prepare federal 
+waiver applications, and support marketplace plan design innovation. The Department of Vermont Health Access 
+(DVHA) and the Agency of Human Services (AHS) will undertake a Request for Information or other pre-
+procurement vehicle(s) to collect information from the national
+issuer community on perceived barriers to entering the Vermont market.
+Consultant (Contract) 2
+DVHA/Blueprint 
+Business Office
+Mobile units offering medical, and 
+integrated Mental Health (MH) and 
+Substance Use Disorder (SUD) 
+treatment
+$1,940,000 Support mobile clinic units to provide medical, dental, and integrated MH and SUD services for remote areas in 
+the state. Several of the state’s Designated Agencies (DAs) have already piloted the model and lessons learned will 
+inform deployment of new mobile units to rural areas where schools and homes do not have the necessary 
+supportive services
+available.
+Subrecipient (Grant) 5
+DVHA/Blueprint 
+Business Office
+Mobile units offering dental care $732,570 Dental mobile units will deliver oral health services to schools and residential facilities. Subrecipient (Grant) 6
+DVHA/Blueprint 
+Business Office
+Establish the Maple Mountain 
+Consortium Family Medicine Residency 
+Program
+$985,000 Invest in startup and the first four years of operations for Vermont’s first rural teaching health center family 
+medicine residency programs. [The state will be contributing from its own funds to support startup in 
+collaboration with but not supplanted by RHT’s funds.]  This accredited residency program is ready to launch and 
+would strengthen the state’s primary care workforce by training physicians in rural and community-based settings 
+where they are most needed. RHT funds may also support the program’s efforts to expand training for additional 
+health professionals (e.g., dental residents and Advanced Practice Registered Nurses (APRNs)). Upon full 
+implementation, the program will produce at least 12 family
+medicine physician graduates annually.
+Subrecipient (Grant) 26
+DVHA/Blueprint 
+Business Office
+Expand pharmacists’ scope to include 
+test-to-treat in more scenarios
+$1,070,000 Fund a pilot program to broaden access to timely diagnosis and treatment through enhanced utilization of 
+pharmacists operating at the top of their license. RHT funds would support the development of training modules, 
+the establishment of necessary infrastructure (including technology and equipment), and pilot reimbursement 
+mechanisms for expanded pharmacy-based services. By leveraging pharmacists as accessible, community-based 
+providers, this initiative will enhance primary care capacity, reduce unnecessary emergency visits, and strengthen 
+Vermont’s integrated rural care
+delivery system.
+Subrecipient (Grant) 27
+=== PAGE 6
+Lead Department Title Amount Allocated Description Type Activity #
+VDH Community paramedicine/Mobile 
+Integrated Health model
+$5,370,000 Establish a mobile integrated health care and community paramedicine model that uses specially trained 
+paramedics, Advanced Emergency Medical Technicians (EMTs), and EMTs working under physician/nurse 
+practitioner (NP) oversight, to deliver protocol driven care in patients’ homes, shifting care out of the hospital. A 
+phased statewide rollout will establish the legal framework, pilot and refine care protocols, and expand to all 
+regions with standardized data, training, and quality assurance infrastructure. Core services will focus on post-
+discharge and primary-care follow-up, with the flexibility to add modules for surgical recovery, substance use, or 
+other locally prioritized needs. This project will also include changes to the Emergency Medical Services (EMS) 
+scope of practice and associated reimbursement model, such as flexibility to “triage
+and treat” in the community
+Subrecipient (Grant) 1
+VDH Creating a centralized tool to guide 
+interfacility transfers
+$2,900,000 Develop a shared subscription to a real-time digital tool that tracks bed capacity and service availability across 
+Vermont’s hospitals and health care facilities, modeled after Oregon’s Capacity Center and Behavioral Health 
+Coordination Center. The system will enable more efficient and appropriate patient transfers by providing up-to-
+date visibility into available beds, specialty services, and transportation resources. Improved coordination would 
+reduce Emergency Department (ED)
+boarding, prevent unnecessary transfers out of state, and ensure patients receive timely
+Contractor (Contract) 3
+VDH Expanding access to recovery housing 
+for individuals with Substance Use 
+Disorder (SUD) needs
+$8,000,000 Provide grants for the minor renovation and refurbishment of existing housing to increase capacity to support 
+individuals in recovery. Through this investment, the state will ensure that individuals provided primary care 
+through the Blueprint for Health’s community health teams will be able to access recovery housing. Recovery 
+housing’s evidence-based model will provide a stable environment for individuals with SUD and co-occurring 
+conditions to focus on recovery through
+encouraging peer support, personal growth, and long-term recovery skills.
+Subrecipient (Grant) 22
+VDH Workforce development tuition 
+assistance program
+$811,000 Funds would extend new coverage of licensing renewal fees, exam costs, continuing education unit training, and 
+stipends to
+pay interns for community-based providers, including but not limited to Mental Health (MH), Substance Use 
+Disorder (SUD), and intellectual and developmental disability providers.
+Subrecipient (Grant) 24
+VDH Invest in Vermont’s “critical 
+occupations” no-cost tuition program
+$934,500 (Vermont State University) Fund new activities to expand a “critical occupations” no-cost tuition program to 
+enable access to education and training for high-demand health professions, including registered nursing, 
+radiologic science, respiratory therapy, dental hygiene, and others. The program will provide last-dollar tuition 
+support, covering any remaining tuition and fees after institutional, state, and federal gift aid is applied. 
+Combined aid would not exceed a student’s total cost of
+attendance, ensuring responsible use of funds.
+Subrecipient (Grant) 25
+VDH Vermont conditional financial 
+assistance program
+$4,812,500 (VSAC) Invest in attracting and retaining qualifying students (e.g., nurses, radiology technicians, medical 
+technicians) through the provision of financial assistance. The program will reduce financial barriers to entering 
+and remaining in provider organizations within the state. Scholarships are granted once participants sign a 
+promissory note and fulfill their
+required in-state service obligation
+Subrecipient (Grant) 28
+VDH Health care professions residency 
+program
+$4,000,000 Provide grant funding to support the ability of providers, such as rural home health agencies, rural hospitals, and 
+other health care organizations, to identify preceptors, recruit residents, conduct training and education, and 
+incentivize program participants to remain employed at the provider organization. Funds will enable statewide 
+promotion of the program to educational institutions and prospective residents, provide recruitment materials, 
+coordinate peer learning and support groups among residents, create preceptor support structures, provide 
+curriculum support and materials, and assist with
+program reporting to state.
+Subrecipient (Grant) 29

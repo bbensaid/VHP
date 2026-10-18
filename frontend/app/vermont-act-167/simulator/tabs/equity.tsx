@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import {
-  HOSPITALS, RECOMMENDATIONS, COUNTY_DATA, kmToNearestHospital } from "../data";
+  HOSPITALS, RECOMMENDATIONS, kmToNearestHospital } from "../data";
 import { Badge, InfoCard, PillarGauge, MetricCard, TabBtn } from "../atoms";
 import { StickyOutputPanel } from "@/components/StickyOutputPanel";
 
@@ -18,14 +18,13 @@ export function EquityAnalysis({ selectedRecs }: { selectedRecs: Set<string> }) 
   const [transportScenario, setTransportScenario] = useState<"baseline" | "enhanced" | "full">("baseline");
 
   const countyData = useMemo(() => {
-    return COUNTY_DATA.map((c) => {
-      const hasHospitalRec = RECOMMENDATIONS.some((r) =>
-        r.sourceHospitals.includes(c.primaryHospital) && selectedRecs.has(r.id)
-      );
-      const hospital = HOSPITALS.find((h) => h.id === c.primaryHospital);
-      const adjustedTravelTime = c.travelTimeToHospitalMin * (hasHospitalRec && hospital?.urgency === "urgent" ? 1.6 : 1);
-      const accessScore = Math.max(0, 100 - (c.noVehiclePct * 1.5) - (c.belowPovertyPct * 0.8) - (adjustedTravelTime * 0.4) * TRANSPORT_MULTIPLIERS[transportScenario]);
-      return { ...c, adjustedTravelTime, accessScore, hasHospitalRec, hospital };
+    // HTR model on sourced inputs: HSA 65+ share (VDH 2025) and straight-line km to the nearest other hospital.
+    return HOSPITALS.map((hospital) => {
+      const hasHospitalRec = RECOMMENDATIONS.some((r) => r.sourceHospitals.includes(hospital.id) && selectedRecs.has(r.id));
+      const km = kmToNearestHospital(hospital);
+      const adjustedKm = km * (hasHospitalRec && hospital.urgency === "urgent" ? 1.6 : 1);
+      const accessScore = Math.max(0, 100 - Math.max(0, hospital.popOver65Pct - 18) * 2.5 - adjustedKm * 0.6 * TRANSPORT_MULTIPLIERS[transportScenario]);
+      return { county: hospital.hsa, population: hospital.populationHSA, over65Pct: hospital.popOver65Pct, km, adjustedKm, accessScore, hasHospitalRec, hospital };
     });
   }, [selectedRecs, transportScenario]);
 
@@ -87,13 +86,13 @@ export function EquityAnalysis({ selectedRecs }: { selectedRecs: Set<string> }) 
       {view === "county" && (
         <div className="space-y-4">
           <InfoCard>
-            <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-4">Vermont County Access Equity Scores</div>
+            <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-4">Access Equity by Hospital Service Area (HTR model: 65+ share and distance)</div>
             <div className="space-y-3">
               {countyData.sort((a, b) => a.accessScore - b.accessScore).map((c) => (
                 <div key={c.county} className={`p-3 rounded-lg ${c.accessScore < 50 ? "bg-red-50 border border-red-200" : c.accessScore < 70 ? "bg-amber-50 border border-amber-100" : "bg-slate-50"}`}>
                   <div className="flex items-start justify-between mb-2">
                     <div>
-                      <span className="text-xs font-black text-slate-800">{c.county} County</span>
+                      <span className="text-xs font-black text-slate-800">{c.county} HSA</span>
                       {c.hasHospitalRec && (
                         <Badge color="bg-violet-100 text-violet-700 ml-2">Reform Impact</Badge>
                       )}
@@ -102,12 +101,10 @@ export function EquityAnalysis({ selectedRecs }: { selectedRecs: Set<string> }) 
                       {Math.round(c.accessScore)}<span className="text-xs font-normal">/100</span>
                     </div>
                   </div>
-                  <div className="grid grid-cols-5 gap-2 text-center text-[10px]">
+                  <div className="grid grid-cols-3 gap-2 text-center text-[10px]">
                     <div><div className="font-black text-slate-700">{c.population.toLocaleString()}</div><div className="text-slate-400">Population</div></div>
                     <div><div className={`font-black ${c.over65Pct > 28 ? "text-orange-600" : "text-slate-700"}`}>{c.over65Pct}%</div><div className="text-slate-400">65+ years</div></div>
-                    <div><div className={`font-black ${c.noVehiclePct > 15 ? "text-red-600" : "text-slate-700"}`}>{c.noVehiclePct}%</div><div className="text-slate-400">No vehicle</div></div>
-                    <div><div className={`font-black ${c.belowPovertyPct > 18 ? "text-red-600" : "text-slate-700"}`}>{c.belowPovertyPct}%</div><div className="text-slate-400">Below poverty</div></div>
-                    <div><div className={`font-black ${c.travelTimeToHospitalMin > 35 ? "text-red-600" : "text-slate-700"}`}>{c.travelTimeToHospitalMin} min</div><div className="text-slate-400">Travel time</div></div>
+                    <div><div className={`font-black ${c.km > 40 ? "text-red-600" : "text-slate-700"}`}>{c.km} km</div><div className="text-slate-400">Nearest other hospital</div></div>
                   </div>
                   <div className="mt-2 h-1.5 bg-slate-200 rounded-full overflow-hidden">
                     <div className={`h-full rounded-full ${c.accessScore < 50 ? "bg-red-400" : c.accessScore < 70 ? "bg-amber-400" : "bg-emerald-400"}`}

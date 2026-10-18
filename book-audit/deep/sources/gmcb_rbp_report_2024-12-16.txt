@@ -1,0 +1,1030 @@
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+1 
+ 
+ 
+ 
+ 
+ 
+ 
+Green Mountain  
+Care Board 
+ 
+2024 REFERENCE -BASED PRICING  AND DATA ANALYSIS REPORT  
+  
+The Green Mountain Care Board seeks to improve the health of Vermonters 
+through a high-quality, accessible, affordable, and sustainable health care 
+system. 
+ 
+ 
+ 
+Submitted December 16, 2024 
+ 
+In accordance with Act 113 of 2024, Sec. E.345.2  
+
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+2 
+ 
+Act 113 of 2024, Sec. E.345.2 
+GREEN MOUNTAIN CARE BOARD; REFERENCE-BASED PRICING; 
+DATA ANALYSIS; REPORT 
+(a) The funds appropriated to the Green Mountain Care Board in Sec. B.1100(s)(1) of this act 
+shall be for a contract with a qualified entity for a reference-based pricing analysis that will 
+analyze commercial medical claims for all inpatient and outpatient hospital services and 
+supplies incurred by active and retired members and their dependents enrolled in the State 
+Employees’ Health Benefit Plan and in the health benefit plans offered by the Vermont 
+Education Health Initiative during calendar years 2018 to the most recent year for which data 
+are available, to determine what savings, if any, could have been realized for that period if a 
+reference-based pricing methodology benchmarked to Medicare rates had been applied. 
+(b) On or before December 15, 2024, the Green Mountain Care Board shall report to the House 
+Committees on Health Care and on Government Operations and Military Affairs and the 
+Senate Committees on Health and Welfare and on Government Operations with the results of 
+the analysis and any recommendations for legislative action, as well as identifying the other 
+aspects of Vermont’s health care system that likely would be affected by the use of reference-
+based pricing, such as hospital margins, health insurance premiums, and the State’s health 
+care reform efforts. 
+ 
+  
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+3 
+Contents 
+Contents ................................ ................................ ................................ ................................ ................. 3 
+Executive Summary ................................ ................................ ................................ ................................ 4 
+Introduction ................................ ................................ ................................ ................................ ............ 4 
+Evidence on the Impacts of Reference-Based Pricing ................................ ................................ ...........5 
+Description of beneficiaries included in the Pricing Study ................................ ................................ .....8 
+Type of insurance products ................................ ................................ ................................ ................ 9 
+Hospital Use ................................ ................................ ................................ ................................ .......9 
+Inpatient Use ................................ ................................ ................................ ................................ .9 
+Outpatient Use ................................ ................................ ................................ ...........................  10 
+Systemwide Use: Demographics, Diagnosis Categories, Providers................................ .................  10 
+Systemwide Use: Where Beneficiaries Live ................................ ................................ .....................  13 
+Health Management Associates Reference-based Pricing Study ................................ .......................  14 
+HMA’s key findings included in the report: ................................ ................................ ......................  14 
+Summary of HMA Methodology ................................ ................................ ................................ ....... 15 
+Summary of pricing study findings ................................ ................................ ................................ .. 16 
+Recommendations for Legislative Action if RBP is Implemented ................................ .......................  23 
+Glossary ................................ ................................ ................................ ................................ ...............  24 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+4 
+Executive Summary 
+In 20 23, the Vermont State Employees’ Health Benefit Plan (VSEA) and the Vermont Education Health 
+Initiative (VEHI) requested legislative support to generate savings estimates had reference-based pricing 
+(RBP) been implemented for Vermont hospital services provided to their members; this resulted in Act 113 
+of 2024, Sec. E.345.2 (a). Language was also added in Sec. E.345.2 (b) that tasks the Green Mountain Care 
+Board with making “any recommendations for legislative action” and “ identifying the other aspects of 
+Vermont’s health care system that likely would be affected by the use of reference -based pricing . . . .” The 
+study analyzes commercial medical claims covering inpatient and outpatient hospital services from 2018  
+through the third quarter of 2023, and findings indicate significant opportunity for cost savings. 
+Key findings: 
+• Vermont hospital payments for VSEA and VEHI members averaged 289% of Medicare rates during 
+the study period.  Adjusting these payments to 200% of Medicare could have saved the VSEA/VEHI 
+health plans approximately $400 million during the study period, with $79 million of savings 
+estimated in 2022. 
+• Outpatient services accounted for the majority of estimated savings ($321 million), with the 
+remainder from inpatient services ($78 million). 
+• Critical Access Hospitals  (CAH) and Prospective Payment System (PPS) hospitals showed varying 
+impacts, with most savings occurring at PPS hospitals. 
+• VEHI and VSEA collectively represent approximately 59,000 beneficiaries. 
+ 
+Commercial prices at some Vermont hospitals are high, and moving to reference-based pricing could mitigate 
+the need for ongoing large tax increases and protect the affordability of healthcare for Vermont teachers and 
+State employees.  Moreover, reference -based pricing could protect the solvency of the VSEA and VEHI  and 
+the richness of benefits offered. At the same time, Vermont hospitals are experiencing financial strain and if 
+reference-based pricing is pursued the State should do so in a manner consistent with ensuring healthcare 
+access and quality in our communities and to ensure hospitals receive fair and adequate compensation. 
+Introduction 
+The rising cost of healthcare remains a critical concern nationally and in Vermont.  The United States leads 
+the world in healthcare expenditures, but lags in resources, such as hospital beds and physicians, 
+compared to OECD nations.1 Vermont reflects these trends, with rapidly escalating costs straining 
+individual incomes, employer budgets, and statewide financial sustainability.2, 3  These trends are 
+particularly concerning for self-insured plans like VEHI and VSEA, where rising healthcare expenses 
+translate directly into higher state taxes and operational pressures on local businesses.4 
+ 
+At the same time, provider sustainability is vital.  Vermont healthcare providers, including hospitals, face 
+challenges including an aging population, labor shortages, and mounting financial pressures.5 Recognizing 
+these dual concerns, Act 167 called for a detailed study with potential solutions that minimize impacts on 
+providers and citizens. One of the recommendations was to ‘begin movement to reference-based pricing 
+ideally at 200% of Medicare or less for PPS hospitals.6  
+ 
+Vermont hospital spending accounts for 41% of the total Personal Health Care expenditure of $8.1 billion in 
+ 
+1 It’s Still The Prices, Stupid: Why The US Spends So Much On Health Care, And A Tribute To Uwe Reinhardt | Health 
+Affairs 
+2 PowerPoint Presentation : Presentation by RAND to the Green Mountain Care Board. 
+3 https://dashboard.sagetransparency.org/  RAND Hospital Price Tool 
+4 Scott chooses not to veto school health benefits bill | Vermont Business Magazine 
+5 STATE OF VERMONT  Green Mountain Care Board FY24 Hospital Budget Decision and Order 
+6 Hospital Sustainability and Act 167 | Green Mountain Care Board 
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+5 
+2022. Hospital spending in 2022 was $3.4 billion, up from $2.7 billion in 2018.7 Vermont ranked 7th in the 
+nation for per-capita ‘Personal Health Care’ spending, and 4th nationally for per-capita hospital spending in 
+2020; many of the states in the top 10 of per-capita hospital spending are also small states. 8  
+ 
+A RAND Corporation study using facility claims shows unexplained variation in prices across payers and 
+settings in Vermont, with commercial prices significantly higher than what Medicare charges for identical 
+services.9 Similarly, a GMCB price variation report using the sub-set of the Vermont population included in 
+the All-Payer Claims Database VHCURES, shows prices are significantly different by hospital, even with the 
+same type of coverage.10 Finally, using data directly from Blue Cross Blue Shield, the Vermont State Auditor 
+found unexplained price variation. For example, the median price for an echocardiograph ranged from 
+$310 at the lowest priced Vermont hospital, to $2,880 at the most expensive. The Auditor estimated that 
+reference-based pricing for State employees could save an average of 13% on the 39 sampled services.11  
+In 2024, the 16% increase in school health insurance costs was a large driver of property tax increases in 
+Vermont.12 
+Evidence on the Impacts of Reference-Based Pricing 
+Six states’ reference-based pricing models are briefly summarized herein. Washington and Nevada 
+initiatives included individual market exchange plans. Colorado included individual and small group market 
+plans. Montana, North Carolina, and Oregon included public employees and their dependents (Montana 
+with state employees; Oregon with state and school employees; North Carolina with teachers, state 
+employees, current and former legislators, and state university and colleges employees).13 
+Washington implemented reference-based pricing with Cascade Care public option insurance plans on the 
+exchange starting in 2021.  Reference points are no more than 160% of Medicare for all covered benefits, 
+excluding pharmacy benefits, in aggregate, no less than 101% of allowable costs for CAH/SCH, and no less 
+than 135% of Medicare for primary care. Plans are offered by five insurers.14 Legislation includes that a 
+carrier may not require a provider or facility participating in the carrier's public option plan to, as a condition 
+of participation, accept a reimbursement rate for the carrier's other health plans that is the same as the 
+reimbursement rate for the public option plan.15  Similarly, Nevada will be implementing reference-based 
+contracts for their public option plan starting in 2026.  No specific reimbursement rate was established 
+under legislation, with rates required to be comparable to or better than reimbursements offered by 
+Medicare.16, 17  
+Colorado adopted reference-based pricing for individual and small group Standardized Health Benefit Plans 
+beginning with coverage starting in 2023. Rates for hospitals were set at 155% of Medicare, with the 
+following adjustments: an additional 20% for essential hospitals (rural with <25 beds) or 40% for 
+independent essential hospitals, an additional 30% for hospitals with above average public payer-mix, an 
+additional 40% for efficient hospitals (based on margins, operating costs, net patient revenue) and an 
+additional 55% for pediatric hospitals (if no other adjustments).18, 19 
+Montana required reference-based contracts for the State Employee Health Plan for all facility services with 
+ 
+7 GMCB Historical Expenditure Analysis, sent to the Joint Fiscal Office 12/4/24 
+8 NHE_State_Health_Expenditures_5_Dashboards | Tableau Public 
+9 PowerPoint Presentation: Presentation by RAND to the Green Mountain Care Board. 
+10 Reimbursement Variation Report | Green Mountain Care Board 
+11 20211110 State Employee Health Care Price Variation Report.pdf 
+12 Interim Secretary Heather Bouchey, Ph.D., Nicole Lee | Testimony to Senate Finance Committee 
+13 Overview of States' Hospital Reference-Based Pricing to Medicare Initiatives - NASHP 
+14 Overview of States' Hospital Reference-Based Pricing to Medicare Initiatives - NASHP 
+15 5526-S.SL.pdf 
+16 SB420 Text 
+17 Overview of States' Hospital Reference-Based Pricing to Medicare Initiatives - NASHP 
+18 C:\1232_enr.txt 
+19 Overview of States' Hospital Reference-Based Pricing to Medicare Initiatives - NASHP 
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+6 
+all 11 acute care hospitals in 2015 (31K beneficiaries). Simultaneous interventions included a transparent 
+pass-through prescription drug benefit eliminating costs associated with pharmacy chains, on-site primary 
+care clinics, and a new TPA, PBM, data warehouse, and administration system. Inpatient prices were set at 
+220-222% of Medicare prices, and outpatient prices at 230-250% of Medicare.  Impacts included no rate 
+increases for 7 years (2017-2023), pay raises for State employees, and lowered health plan reserves to 
+increase state budget and enhanced plan benefits.  SFY 17 to SFY 19 generated $47.8 million in savings; 
+note that COVID occurred during this period, so results should be interpreted with caution. 20, 21 The 
+Montana plan was partially walked back ’without a formal evaluation’ because of political pressures.22 
+Montana did not experience any rural hospital closures during this period,23 and the stability of many non-
+network CAH hospitals was improved with the savings from this plan.24 
+ 
+North Carolina’s reference-based pricing initiative was launched in 2021.  Beneficiaries included the State 
+Health Plan for teachers and State employees and other public employees.  Contracts included 196% of 
+Medicare for hospital inpatient/outpatient aggregate. The initiative was projected to save $300 million a 
+year at 177% of Medicare which was initially proposed.25 However, as of August 17th, 2022, North Carolina 
+had zero major hospitals sign on to reference based pricing, reportedly due to political opposition from 
+interest groups.26 
+ 
+Oregon started reference-based pricing contracts in 2019 for Public Employees’ Benefit Board (PEBB) and 
+Oregon Educators Benefit Board (OEBB).  Inpatient and outpatient hospital prices were capped at 200% in-
+network and 185% out-of-network.  Exempted were small hospitals (with 50 or fewer beds, Type A and B), 
+Critical Access Hospitals, Sole Community Hospitals in counties with less than 70K people, and hospitals 
+with Medicare comprising over 40% of patient revenue. 27 The initiative generated $59 million in savings in 
+2020 and $113 million in 2021.28 The initiative led to a 25% reduction in outpatient prices and a 3% 
+reduction in inpatient prices per admission. No evidence emerged that hospitals raised prices for other 
+commercial beneficiaries to compensate,29 however some low-price hospitals did raise inpatient prices that 
+were below the 200% of Medicare benchmark towards the cap, until Oregon revised the legislation to 
+prevent this.30 Oregon did not experience any departures from the insurance network or hospital closures 
+during this period. Oregon saw a reduction in price variation with prices converging towards the cap.31 
+ 
+A Brown University study on reference-based pricing made a few predictions for Vermont assuming a cap at 
+200% of Medicare was set on hospital facility payments for the state employee plan. These results were 
+based off of the Hospital Price Transparency Study (RAND V), the NASHP Hospital Cost Tool, and the 
+Georgetown 2022 State Employee Health Plan Survey. 
+The study generated the following projections:32 
+ 
+20 Marilyn Bartlett, Senior Policy Fellow, NASHP  PowerPoint Presentation.  
+21 MT-Eval-Analysis-Final-4-2-2021.pdf 
+22 Hospital Payment Caps Could Save State Employee Health Plans Millions While Keeping Hospital Operating Margins 
+Healthy | Murray, Whaley et. Al. 
+23 Rural Hospital Closures Map | Sheps Center 
+24 Email with Marilyn Bartlett, former Plan Administrator 12/8/2024 
+25 Overview of States' Hospital Reference-Based Pricing to Medicare Initiatives - NASHP 
+26 TACIR, 2023 https://www.tn.gov/content/dam/tn/tacir/commission-
+meetings/2023january/2023Jan_Tab5ReferenceBasedPricing_Report.pdf 
+27 https://www.oregon.gov/oha/HPA/ANALYTICS/HospitalReporting/Hospital%20Type%20Document.pdf 
+28 Overview of States' Hospital Reference-Based Pricing to Medicare Initiatives - NASHP 
+29 HospitalPriceCaps_Final.pdf : Millbank Issue Brief, July 2024 
+30 Hospital Payment Caps Could Save State Employee Health Plans Millions While Keeping Hospital Operating Margins 
+Healthy | Murray, Whaley et. Al. 
+31 Hospital Facility Prices Declined As A Result Of Oregon’s Hospital Payment Cap | Murray, Whaley et. Al. 
+32 Hospital Payment Caps Could Save State Employee Health Plans Millions While Keeping Hospital Operating Margins 
+Healthy | Health Affairs 
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+7 
+State Employee health plan savings at the state level, 2022 (Appendix A2): 
+State State 
+employee 
+health 
+plan 
+savings 
+State 
+employee 
+facility 
+revenue  
+Percent 
+change 
+in facility 
+revenue 
+Relative 
+price for 
+inpatient 
+facility 
+services 
+Relative 
+price for 
+outpatient 
+facility 
+services 
+Share of 
+individuals 
+with ESI 
+enrolled in 
+state 
+employee 
+plan  
+Number of 
+hospitals 
+[in the 
+sample] 
+VT $62.66M $188.30M -33.3% 229.7% 348.9% 14.4% 11 
+Estimated annual state employee health plan savings under alternative design choices at the state level, 
+2022 (Appendix A5): 
+ Cap at 200% 
+Medicare 
+  Alternative 
+Cap 
+  
+State Savings, 
+main model 
+Savings, exempt 
+small/rural 
+hospitals 
+Savings, 
+exempt safety 
+net hospitals 
+Savings, cap 
+at median 
+relative 
+prices 
+Inpatient 
+relative 
+prices 
+Outpatient 
+relative 
+prices 
+VT $62.66M $55.09M $22.35M $65.44M 152.6% 237.9% 
+Estimated annual state employee health plan savings with 200% cap under alternative assumptions at the 
+state level, 2022 (Appendix A8): 
+State Savings, main model Savings, no volume 
+response 
+Savings, low-priced 
+hospitals respond 
+VT $62.66M $63.15M $55.80M 
+Detailed estimates of commercial hospital operating margins under two cap scenarios compared with no 
+cap, 2022 (Appendix, A10): 
+State Margins, no cap Margins, cap at 200% Margins, cap at median 
+relative prices 
+VT 41.88% 39.46% 39.35% 
+ 
+GMCB recommends readers review the full report to understand its findings on benefits and arguments 
+raised in response to proposed use of reference-based pricing,33 GMCB further recommends readers 
+consider potential concerns and unintended consequences discussed in the American Hospital Association 
+(AHA) Fact Sheet on Reference-based Pricing.34 
+ 
+Balance billing is a tool whereby hospitals can make up the difference between the reference price and the 
+cost of the service by billing the patient out of pocket. Thus, a hospital using balance billing would shift the 
+lower payment from the plan to patients in the form of higher out of pocket costs. Should Vermont pursue 
+reference-based pricing, GMCB recommends considering policies that address balance billing. While 
+Vermont patients have some protections from balance billing for out of network services, further review is 
+recommended.35  
+ 
+33 Hospital Payment Cap Simulator | Brown University School of Public Health 
+34 Fact Sheet on Reference-based Pricing | AHA 
+35 No Surprises Act | Department of Financial Regulation 
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+8 
+Description of beneficiaries included in the Pricing Study 
+Primary health insurance types that cover Vermonters include Medicaid (150K people), Medicare (130K) 
+and private health insurance (304K) in 2021.36 The cohort of VSEA/VEHI beneficiaries in the pricing study 
+includes 59K people (teachers and school staff, state employees, and their dependents combined). There 
+is little change over time in beneficiary counts across the years included in the study. 
+Figure 1. VHCURES monthly eligibility files, annual beneficiary counts and % change year over year 
+ 
+  
+ 
+36https://www.healthvermont.gov/sites/default/files/documents/pdf/HSVR-VHHIS-2021-Report.pdf 
+ 
+
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+9 
+Type of insurance products 
+A majority of Vermonters have insurance coverage through their employer, where the employer self-insures 
+their employees using an insurance company to administer medical benefits.  VEHI/VSEA employees and 
+their dependents are the largest self-insured group of employees in the State, and the State of Vermont 
+serves as its fiduciary through boards and committees. Four insurance product types are included in the 
+pricing study. 
+ 
+Figure 2. VHCURES monthly eligibility files, unduplicated person counts, duplicated across product 
+ types 
+  
+ 
+Hospital Use 
+Inpatient Use 
+For both groups, UVM Medical Center (UVMMC) in Burlington, VT was the most frequently accessed hospital 
+for inpatient services.  Dartmouth Hitchcock Medical Center in Lebanon, NH, Central Vermont Medical 
+Center in Barre, VT and Rutland Regional Medical Center in Rutland, VT were also frequently accessed by 
+both groups. 
+Figure 3. VHCURES facility claims, inpatient unduplicated people count, >30 people, duplicated across 
+providers 
+ 
+  
+
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+10 
+Outpatient Use 
+Outpatient hospital use by VEHI beneficiaries is concentrated in the UVM Health Network (UVM-HN), with 
+outpatient facility VSEA beneficiary use fairly evenly split between UVM-MC and CVMC.   
+Figure 4. VHCURES Facility claims, top 25 providers, outpatient unduplicated people counts, duplicated 
+across providers 
+ 
+Systemwide Use: Demographics, Diagnosis Categories, Providers 
+The majority (about 70%) of beneficiaries included in the pricing study are between the ages of 19-64, with 
+VSEA skewing slightly older. 
+Figure 5. VHCURES monthly eligibility files, age  
+ 
+
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+11 
+Both VSEA and VEHI beneficiaries are disproportionally female (>50%).  
+Figure 6. VHCURES monthly eligibility files, gender 
+ 
+COVID impacts are evident during the study period with a significant decrease in people-counts in 2020 for 
+all top 20 diagnosis code groups, except for notable exceptions ‘exposure encounters screening or contact 
+with infectious disease’, ‘anxiety and fear-related disorders’, and ‘trauma and stressor-related disorder’ 
+which increased.  
+Figure 6. VHCURES facility and professional claims, VEHI/VSEA combined, top 20 primary diagnosis 
+groupers in 2023, unduplicated people >30, duplicated across providers, % change indicated by color 
+ 
+  
+
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+12 
+The top three billing providers in facility claims are also top providers in professional claims. The non-
+hospital system-based providers that see the largest number of patients are Primary Health Partners 
+(several independent primary care practices), Virtual Radiologic Professionals, Four Seasons Dermatology, 
+and ClearChoiceMD (several urgent care sites). 
+Figure 7. 2023 VHCURES top 25 professional claims providers, billing providers, unduplicated people >30, 
+duplicated across providers 
+ 
+  
+
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+13 
+Systemwide Use: Where Beneficiaries Live  
+Both VSEA and VEHI employees live in geographically spread-out areas throughout the state, accessing a 
+range of providers. State employees are more concentrated in Montpelier while VEHI employees are most 
+concentrated in Burlington, with pockets of beneficiaries organized around the larger school systems 
+throughout the state. 
+Figure 8. VHCURES Eligibility files, 2023 beneficiary counts, >30 people 
+ 
+  
+
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+14 
+Health Management Associates Reference-based Pricing Study 
+Link to the HMA analysis can be found here. 
+HMA’s key findings included in the report: 
+• “Overall percent for (Total Allowed Amount / Medicare Pricing at 100%) is 289.33% when 
+considering all calendar years (CY) and both Inpatient and Outpatient utilization. 
+• Inpatient and Outpatient Medicare Pricing both have similar trends across CY18-CY23 with 
+percents increasing across this timeframe for (Total Allowed / Medicare Repriced). 
+• CY18-CY21 percents for Medicare Pricing (Total Allowed / Medicare Repriced) held static 
+at approximately 275% for each CY in Inpatient and at approximately 290% in Outpatient. 
+• CY22-CY23 percents for Medicare Pricing (Total Allowed / Medicare Repriced) are 
+increasing in each CY for both Inpatient (~288%) and Outpatient (~300%). 
+• Percents for CAH hospitals as seen in tab 2 (Mcare Pricing by CAH_Non_CAH) are higher 
+than the PPS/Other peer group of hospitals with the exception of CY18 and CY23. 
+• The overall percents when including all hospitals are very similar to the percents for just 
+the PPS hospitals. 
+• The overall percent for all hospitals in CY20 is 289.7% with the PPS/Other hospitals at 
+286.3%. 
+• The volume of utilization for the CAHs is a small percentage of the total at approximately 
+17% of total allowed amount in each CY. 
+• Percents for the VSEA group as seen in tab 3 (Mcare Pricing by VEHI_VSEA) are lower than 
+the VEHI group with the exception of CY18. 
+• The volume of utilization for the VSEA group as a percentage of the total is approximately 
+38%-40% of total allowed amount in each CY.” 
+ 
+  
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+15 
+Summary of HMA Methodology  
+Medicare reimbursement approximates the cost of care for most services, with adjustment to rates based 
+on geographic, facility and patient factors.  Exceptions are services such as pediatric and maternity 
+services.37 The HMA study uses Medicare pricing data publicly available through the Centers for Medicare 
+and Medicaid Services (CMS) and compares Medicare prices to inpatient and outpatient hospital prices in 
+Vermont’s All-Payer Claims Dataset (VHCURES).38  Estimated savings are generated by subtracting the 
+Medicare price from allowed amounts, a proxy for price in VHCURES.  Facilities outside of Vermont (except 
+for Dartmouth Hitchcock Medical Center) are excluded from the study.  'Allowed Amount’ in the All-Payer 
+Database is used as a proxy for price, which combines insurance paid amount plus patient share. 
+Figure 9. Service type inclusions in the pricing study 
+Inpatient service categories: 
+Well Babies 
+NICU Babies 
+Deliveries 
+Behavioral/SUD 
+Nervous System 
+Respiratory System 
+Circulatory System 
+Digestive System 
+Musculoskeletal 
+Kidney Related 
+Infections 
+All Other 
+ 
+ 
+Outpatient service categories: 
+ED Visits 
+Clinic Visits 
+Imaging with Contrast 
+Imaging without Contrast 
+Musculoskeletal Procedures 
+Cardiac Procedures 
+GI Procedures 
+Urology 
+Pathology 
+Radiation 
+Neurostimulator 
+Ear, Nose, Throat, Eye 
+Skin Procedures 
+Minor Procedures 
+Drug Administration 
+ 
+  
+ 
+37 HospitalPriceCaps_Final.pdf Millbank Issue Brief July 2024 
+38 Vermont Health Care Uniform Reporting and Evaluation System - VHCURES | Green Mountain Care Board 
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+16 
+Summary of pricing study findings  
+VEHI/VSEA hospital costs averaged $186 million annually with an average of $46 million in inpatient 
+hospital spending and $140 in outpatient spending across study years.  Inpatient spending represents an 
+average of 22% of hospital spending.  
+If prices had been set to levels recommended by Oliver Wyman in the Act 167 report39 at 200% of 
+Medicare, estimates of savings are projected at $400 million, or $79 million in the most recent full year 
+included in the study (2022).  Allowed amounts total to 289% of Medicare base prices across years. 
+Figure 10. Inpatient and outpatient hospital costs combined, compared to National Medicare base price, in 
+millions 
+Year 
+Total 
+Allowed 
+Amount 
+RBP 150% 
+of Medicare  
+Savings 
+Amount at 
+150% 
+RBP 180% 
+of Medicare 
+Savings 
+Amount at 
+180% 
+RBP 
+200% of 
+Medicare 
+Savings 
+Amount at 
+200% 
+RBP 
+250% of 
+Medicare 
+ Savings 
+Amount at 
+250% 
+2018 $168 $85 $83 $101 $68 $111 $58 $136 $32 
+2019 $181 $93 $88 $110 $72 $121 $60 $149 $33 
+2020 $178 $88 $90 $104 $74 $115 $64 $141 $37 
+2021 $206 $103 $103 $122 $84 $134 $72 $166 $41 
+2022 $211 $102 $109 $121 $91 $133 $79 $164 $48 
+Q1-Q3 2023 $171 $80 $91 $94 $77 $104 $67 $128 $43 
+TOTAL $1,117 $552 $565 $651 $466 $718 $400 $883 $234 
+ 
+Year Total Allowed As a % of Medicare Price 
+2018 281% 
+2019 278% 
+2020 290% 
+2021 286% 
+2022 297% 
+Q1-Q3 2023 306% 
+Total 289% 
+ 
+  
+ 
+39 Hospital Sustainability and Act 167 | Green Mountain Care Board 
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+17 
+ 
+If inpatient prices had been set at 200% of Medicare, total estimated inpatient savings is projected to have 
+been $78 million, or $15 million in the most recent full year included in the study (2022).  Allowed amounts 
+during the study period were 278% of Medicare base prices. 
+Figure 11. Inpatient hospital costs, compared to National Medicare base price, in millions 
+Year 
+Total 
+Allowed 
+Amount 
+RBP 150% 
+of Medicare  
+Savings 
+Amount at 
+150% 
+RBP 180% 
+of 
+Medicare 
+Savings 
+Amount 
+at 180% 
+RBP 200% 
+of Medicare 
+Savings 
+Amount at 
+200% 
+RBP 250% 
+of Medicare 
+ Savings 
+Amount at 
+250% 
+2018 $47 $26 $21 $31 $16 $34 $13 $43 $4 
+2019 $48 $26 $22 $31 $17 $35 $14 $44 $5 
+2020 $45 $25 $21 $30 $16 $33 $12 $41 $4 
+2021 $48 $26 $22 $32 $16 $35 $13 $44 $4 
+2022 $50 $26 $24 $32 $19 $35 $15 $44 $6 
+Q1-Q3 2023 $39 $20 $19 $24 $15 $27 $12 $34 $5 
+TOTAL  $278 $150 $128 $180 $98 $199 $78 $249 $28 
+ 
+Year Total Allowed As a % of Medicare Price 
+2018 274% 
+2019 277% 
+2020 274% 
+2021 273% 
+2022 285% 
+Q1-Q3 2023 288% 
+Total 278% 
+ 
+  
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+18 
+If outpatient prices had been set to at 200% of Medicare, total estimated outpatient savings is projected to 
+have been $321 million, or $64 million in the most recent full year included in the study (2022).  Allowed 
+amounts during the study period were 293% of Medicare base price across the study timeframe. 
+Figure 12. Outpatient hospital costs, compared to National Medicare base price, in millions 
+Year 
+Total 
+Allowed 
+Amount 
+RBP 150% 
+of Medicare  
+Savings 
+Amount 
+at 150% 
+RBP 180% 
+of 
+Medicare 
+Savings 
+Amount 
+at 180% 
+RBP 200% 
+of 
+Medicare 
+Savings 
+Amount at 
+200% 
+RBP 250% 
+of Medicare 
+ Savings 
+Amount at 
+250% 
+2018 $122 $60 $62 $70 $52 $77 $45 $94 $28 
+2019 $133 $67 $66 $78 $55 $86 $47 $105 $28 
+2020 $133 $63 $70 $74 $59 $82 $51 $100 $33 
+2021 $158 $77 $81 $90 $68 $99 $59 $122 $37 
+2022 $161 $76 $86 $89 $72 $98 $64 $120 $42 
+Q1-Q3 2023 $132 $60 $73 $70 $62 $77 $56 $94 $38 
+TOTAL  $840 $402 $437 $472 $368 $518 $321 $634 $206 
+ 
+Year Total Allowed As a % of Medicare Price 
+2018 284% 
+2019 278% 
+2020 295% 
+2021 290% 
+2022 300% 
+Q1-Q3 2023 312% 
+Total 293% 
+ 
+  
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+19 
+Pricing study results stratify savings estimates into two hospital types: facilities reimbursed under 
+Prospective Payment Systems (PPS) and Critical Access Hospitals (CAH).  Predicted savings at PPS 
+hospitals at 200% is $287 million, with $57 million in savings in 2022, the most recent complete year in 
+the study.  Allowed amounts during the study period were 289% of Medicare base pricing levels. 
+Figure 13. PPS Inpatient and outpatient hospital, compared to National Medicare base price, in millions40 
+Year 
+Total 
+Allowed 
+Amount 
+RBP 150% 
+of Medicare  
+Savings 
+Amount 
+at 150% 
+RBP 180% 
+of Medicare 
+Savings 
+Amount at 
+180% 
+RBP 200% of 
+Medicare 
+Savings 
+Amount at 
+200% 
+RBP 250% of 
+Medicare 
+ Savings 
+Amount at 
+250% 
+2018 $140 $73 $67 $88 $52 $98 $42 $122 $18 
+2019 $150 $82 $68 $98 $52 $109 $41 $136 $14 
+2020 $149 $78 $71 $94 $55 $104 $45 $130 $19 
+2021 $171 $90 $81 $108 $63 $121 $51 $151 $21 
+2022 $176 $89 $86 $107 $69 $119 $57 $149 $27 
+Q1-Q3 2023 $144 $70 $74 $84 $60 $93 $51 $117 $27 
+TOTAL  $930 $483 $447 $579 $351 $643 $287 $804 $126 
+ 
+Year Total Allowed As a % of Medicare Price 
+2018 287% 
+2019 276% 
+2020 286% 
+2021 284% 
+2022 296% 
+Q1-Q3 2023 309% 
+Total 289% 
+ 
+  
+ 
+40 Medicare reference amounts and savings estimates at different Medicare reference levels are slightly less precise 
+than for the combined group estimates (Figures 10., 11.,12.).  This is due to a small amount of the utilization not 
+being part of the outpatient pricing methodology, and the subgroup estimates not excluding these outpatient services. 
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+20 
+Critical Access hospitals had predicted total savings of $58 million at 200%, with $12 million in estimated 
+savings in the most recent full year included in the study (2022).  Allowed amounts during the study period 
+were 291% above Medicare national base rates. 
+Figure 14. CAH Inpatient and outpatient hospital, compared to National Medicare base price, in millions41 
+Year 
+Total 
+Allowed 
+Amount 
+RBP 150% 
+of Medicare  
+Savings 
+Amount at 
+150% 
+RBP 
+180% of 
+Medicare 
+Savings 
+Amount at 
+180% 
+RBP 200% 
+of Medicare 
+Savings 
+Amount at 
+200% 
+RBP 250% of 
+Medicare 
+ Savings 
+Amount at 
+250% 
+2018 $28 $16 $12 $20 $8 $22 $6 $27 $1 
+2019 $31 $16 $15 $20 $12 $22 $10 $27 $4 
+2020 $29 $14 $15 $17 $12 $19 $10 $24 $6 
+2021 $35 $18 $17 $21 $14 $24 $11 $30 $5 
+2022 $36 $18 $18 $21 $15 $24 $12 $30 $6 
+Q1-Q3 2023 $28 $14 $14 $17 $11 $19 $9 $23 $4 
+TOTAL  $187 $97 $91 $116 $71 $129 $58 $161 $26 
+ 
+Year Total Allowed As a % of Medicare Price 
+2018 257% 
+2019 288% 
+2020 309% 
+2021 295% 
+2022 303% 
+Q1-Q3 2023 294% 
+Total 291% 
+ 
+  
+ 
+41 Medicare reference amounts and savings estimates at different Medicare reference levels are slightly less precise 
+than for the combined group estimates (Figures: 10., 11.,12.).  This is due to a small amount of the utilization not 
+being part of the outpatient pricing methodology, and the subgroup estimates not excluding these outpatient services. 
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+21 
+Finally, pricing study results are stratified into the two publicly funded groups included in the study.  At 
+200%, VEHI had predicted savings of $230 million during the study period, with $48 million estimated 
+savings in the most recent complete year in the study (2022).  Allowed amounts during the study period 
+were 301% above Medicare national base rates. 
+Figure 15. VEHI Inpatient and outpatient hospital, compared to National Medicare base price, in millions42 
+Year 
+Total 
+Allowed 
+Amount 
+RBP 150% 
+of Medicare  
+Savings 
+Amount 
+at 150% 
+RBP 180% 
+of 
+Medicare 
+Savings 
+Amount at 
+180% 
+RBP 200% 
+of Medicare 
+Savings 
+Amount at 
+200% 
+RBP 250% of 
+Medicare 
+ Savings 
+Amount at 
+250% 
+2018 $100 $54 $46 $65 $35 $72 $28 $91 $10 
+2019 $113 $60 $53 $72 $41 $80 $33 $100 $13 
+2020 $111 $55 $57 $65 $46 $73 $39 $91 $20 
+2021 $127 $64 $64 $76 $51 $85 $42 $106 $21 
+2022 $131 $62 $69 $75 $56 $83 $48 $104 $27 
+Q1-Q3 2023 $103 $47 $55 $57 $46 $63 $40 $79 $24 
+TOTAL  $685 $342 $343 $410 $275 $456 $230 $570 $116 
+ 
+Year Total Allowed As a % of Medicare Price 
+2018 276% 
+2019 283% 
+2020 306% 
+2021 300% 
+2022 316% 
+Q1-Q3 2023 326% 
+Total 301% 
+ 
+  
+ 
+42 Medicare reference amounts and savings estimates at different Medicare reference levels are slightly less precise 
+than for the combined group estimates (Figures 10., 11.,12.).  This is due to a small amount of the utilization not 
+being part of the outpatient pricing methodology, and the subgroup estimates not excluding these outpatient services. 
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+22 
+VSEA estimated savings at 200% of Medicare was $115 million during the study period, with $21 million in 
+savings estimated for the most recent full year included in the study (2022).  Allowed amounts during the 
+study period were 273% above Medicare national base rates. 
+Figure 16. VSEA Inpatient and outpatient hospital, compared to National Medicare base price, in millions 
+Year 
+Total 
+Allowed 
+Amount 
+RBP 150% 
+of Medicare  
+Savings 
+Amount 
+at 150% 
+RBP 180% of 
+Medicare 
+Savings 
+Amount 
+at 180% 
+RBP 200% 
+of Medicare 
+Savings 
+Amount at 
+200% 
+RBP 250% 
+of Medicare 
+ Savings 
+Amount at 
+250% 
+2018 $68 $35 $33 $43 $26 $47 $21 $59 $9 
+2019 $68 $38 $30 $46 $23 $51 $17 $64 $5 
+2020 $67 $38 $29 $45 $22 $50 $17 $63 $4 
+2021 $79 $45 $34 $53 $26 $59 $20 $74 $5 
+2022 $81 $45 $36 $54 $27 $60 $21 $75 $6 
+Q1-Q3 2023 $69 $37 $32 $44 $25 $49 $20 $61 $7 
+TOTAL  $432 $237 $194 $285 $147 $317 $115 $396 $36 
+ 
+Year Total Allowed As a % of Medicare Price 
+2018 289% 
+2019 268% 
+2020 266% 
+2021 266% 
+2022 271% 
+Q1-Q3 2023 280% 
+Total 273% 
+ 
+In summary, allowed amounts during the study period were 289% of what Medicare would have paid for 
+the same services. If prices for hospital-based services were paid at 200% of the Medicare base rate, this 
+report estimates a potential savings of $400m over the study period. If hospital-based prices were paid at a 
+higher level, there would have been less savings.  
+If these allowed amounts (prices) were applied to both inpatient and outpatient services, this study finds 
+that there would have been savings in both areas. The majority of savings come from care provided at 
+Prospective Payment System hospitals, and less at Critical Access Hospitals. Both VEHI and VSEA would 
+have experienced substantial savings if allowed amounts/prices were set to 200% of the Medicare base 
+price. 
+  
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+23 
+Recommendations for Legislative Action if RBP is Implemented 
+Recommendation 1: Implementation Considerations.  
+Reference-based pricing could reduce the financial pressures on VEHI and VSEA by lowering prices paid on 
+services, thereby reducing the need to increase taxes or reduce benefits to ensure the future solvency of 
+the funds.  Hospital prices should be fair to VEHI and VSEA, hospitals, non-hospital providers, taxpayers, 
+and other commercially insured Vermonters. Hospitals are critically important to our communities, 
+providing round-the-clock care, and should be paid a fair price that ensures their sustainability and allows 
+for appropriate margins. 
+Should reference-based pricing be pursued for VEHI and VSEA, GMCB recommends that the cost reductions 
+do not result in other commercially insured Vermonters paying more.  Important implementation 
+considerations include Vermonters’ ability to absorb further property and other tax increases to pay for 
+healthcare, the financial health of the plans, and the impact of rising healthcare costs on school and State 
+budgets. The financial health of hospitals and whether the reference-based prices are fair and appropriate 
+to ensure access to care are likewise important considerations.   
+ 
+The Vermont Legislature could consider implementing reference-based pricing for VEHI and VSEA plans 
+either in full or gradually. Examples of gradual implementation could include starting with PPS hospitals 
+then considering adding CAH hospitals, or starting at a certain percentage of Medicare and reducing it over 
+time to a level deemed adequate, fair, and consistent with State healthcare reform objectives. 
+ 
+Recommendation 2: Balance Billing Protections.  
+Vermont patients have some protections against balance billing for out of network services. However, 
+legislators should carefully consider whether additional safeguards are necessary to ensure that savings 
+from implementation of reference-based pricing are not placed on individual members. 
+ 
+Recommendation 3: Implementation Analysis.   
+If implemented, additional study is recommended to:   
+(a) Investigate the feasibility of future adjustments (up or down) to referenced prices for certain 
+services. For example, referenced prices could be set at higher levels for Mental Health services, 
+Substance Use Disorder treatment, Primary Care, Long Term Care and Home Health, and/or 
+Obstetrics/Gynecology care. 
+(b) Estimate potential impacts of reference-based pricing on Qualified Health Plan Exchange market 
+beneficiaries, and/or other plans used by Vermonters.  
+(c) Measure the impacts on providers, including in connection with providers that may receive 
+increased reimbursements (such as some small hospitals and non-hospital providers), and those 
+that may experience a reduction (such as large PPS hospitals).   
+The study finds that the VEHI and VSEA would have seen significant savings had reference-based pricing 
+been implemented; however, it is unknown which specific providers and services would be impacted.  It is 
+possible that some hospitals would see reimbursement increases from some Medicare reference points.    
+ 
+Contractors have expressed concern with generating a report with proprietary information such as provider-
+level pricing.  However, provider and/or service level pricing details would allow for nuanced RBP 
+implementation, such as the Department of Vermont Health Access (DVHA) uses in their RBP program with 
+Medicaid and would strengthen any implementation efforts. More detailed information (provider and 
+service level pricing and savings information) would also allow for a more tailored assessment of potential 
+unintended consequences. 
+ 
+Recommendation 4: Alignment with Payment Reform.  Align any RBP legislation with payment reform 
+initiative models, goals and objectives. 
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+24 
+Discussions about how reference-based pricing approaches intersect with Vermont’s existing and proposed 
+payment reform initiatives are ongoing. Any decisions on implementing reference-based pricing should be 
+informed by the content of these discussions.   
+ 
+Glossary 
+Balance Billing:  
+From Healthcare.gov: “When a provider bills you for the difference between the provider’s charge and the 
+allowed amount. For example, if the provider’s charge is $100 and the allowed amount is $70, the provider 
+may bill you for the remaining $30. A preferred provider may not balance bill you for covered services.”43 
+CAH:  
+Critical Access Hospital. Smaller, more remote hospitals. Vermont has 8: Grace Cottage, Gifford, Mt. 
+Ascutney, Northeastern Vermont, North Country, Copley, Springfield, and Porter Hospitals. 
+CMS: 
+Centers for Medicare and Medicaid Studies. The Federal Agency that administers the Medicare program 
+and assists with Medicaid. 
+DVHA: 
+Department of Vermont Health Access. 
+GMCB: 
+Green Mountain Care Board. 
+HMA: 
+Health Management Associates. Contracted for the Reference-based Pricing Study. 
+Inpatient: 
+Patients who are admitted to the hospital/spend the night. 
+NASHP: 
+National Academy for State Health Policy. 
+Outpatient: 
+Patients who visit a healthcare facility without being admitted to the hospital/spending the night. 
+PPS/Other:  
+Pay Per Service Hospital. Larger hospitals, get paid fixed amounts for service by Medicare. The PPS/Other 
+category includes the Brattleboro Retreat, Brattleboro Memorial Hospital, Dartmouth Hitchcock, Central 
+Vermont, UVM, Rutland Regional, Southwestern Vermont, and Northwestern Medical Centers for this study. 
+Price Variation: 
+The price of a particular service can vary significantly across different hospitals. For example, a 2020 study 
+by the State Auditor found that the price of an echocardiograph varied from $310 dollars at the cheapest 
+hospital in Vermont, to $2,880 at the most expensive.44 
+RAND: 
+Nonprofit research group. Conducted the Hospital Price Transparency Study. 
+Reference-based Pricing: 
+A form of payment where the employer sets a ceiling on what they are willing to pay for a service. 
+ 
+43 Balance Billing | Healthcare.gov 
+44 20211110 State Employee Health Care Price Variation Report.pdf 
+Green Mountain Care Board 
+Reference-Based Pricing; Data Analysis; Report 
+Submitted December 16, 2024 
+25 
+Type A Hospital (Oregon specific): 
+From the Oregon Health Authority: “Type A hospitals are small hospitals (with 50 or fewer beds) that are 
+located more than 30 miles from another hospital.”45 
+Type B Hospital (Oregon specific): 
+From the Oregon Health Authority: “Type B hospitals are small hospitals (with 50 or fewer beds) that are 
+located within 30 miles of another hospital.”46 
+UVM-HN: 
+University of Vermont Health Network. Includes three Vermont hospitals: University of Vermont Medical 
+Center (UVM-MC), Central Vermont Medical Center (CVMC) and Porter Medical Center (PMC). 
+VEHI: 
+Vermont Education Health Initiative. A nonprofit serving health benefit plans to school districts, teachers, 
+retired teachers, and dependents.  
+VSEA: 
+Vermont State Employees Association. The union representing Vermont State Employees. 
+VHCURES: 
+Vermont Health Care Uniform Reporting and Evaluation System, the Vermont All-Payer Claims Database 
+(APCD). Contains claims and eligibility data from private and public payers. 
+ 
+ 
+ 
+45 Hospital Types | Oregon Health Authority 
+46 Hospital Types | Oregon Health Authority 

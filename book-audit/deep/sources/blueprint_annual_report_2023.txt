@@ -1,0 +1,1894 @@
+  
+ 
+REPORT TO THE VERMONT LEGISLATURE 
+ 
+ 
+Agency of Human Services                                             
+280 State Drive                                                                    [phone] 802-241-0440                                  
+Waterbury, VT                                                                       [fax]  802-241-0450                                                          
+www.humanservices.vermont.gov 
+ 
+It’s the Agency of Human Services’ mission to improve the conditions 
+and well-being of Vermonters and protect those who cannot protect 
+themselves.  
+ 
+Annual Report on Blueprint for Health 
+  
+In accordance with Act NUMBER. 18 V.S.A. § 709 
+ 
+ 
+  
+Submitted to:  House Committee on Health Care,  
+Senate Committee on Health and Welfare 
+Health Care Oversight Committee 
+ 
+  
+ 
+Submitted by: Jenney Samuelson 
+Secretary 
+ 
+  
+Prepared by:  Dr. John M. Saroyan 
+Executive Director 
+ 
+  
+Report Date:  January 31, 2024 
+  
+2023 Blueprint Annual Report 
+ 
+ 
+3 
+ 
+VERMONT  
+I. EXECUTIVE SUMMARY ........................................................................................................................ 4 
+II. INTRODUCTION ................................................................................................................................... 8 
+A. Executive Committee ...................................................................................................................... 8 
+B. Program Evolution: Community Health Team Expansion Pilot .................................................. 9 
+1. Community Health Team Expansion ......................................................................................... 9 
+2. Developmental Understanding and Legal Collaboration for Everyone ............................... 10 
+3. Community Health Team Expansion Pilot Evaluation ........................................................... 10 
+III. PROGRAMMATIC UPDATES ............................................................................................................. 11 
+1. Patient-Centered Medical Homes ........................................................................................... 11 
+2. Community Health Team Data ................................................................................................ 13 
+3. Hub & Spoke............................................................................................................................... 19 
+4. Pregnancy Intention Initiative (formerly Women’s Health Initiative) .................................. 20 
+5. Self-Management Programming ............................................................................................. 21 
+IV. EVALUATION ...................................................................................................................................... 23 
+A. Health Care Measurement Results for Blueprint Target Populations ...................................... 23 
+1. Health Care Claims and Clinical Data ..................................................................................... 23 
+2. Population Counts and Demographics .................................................................................... 25 
+B. Expenditures and savings for the period .................................................................................... 26 
+1. Blueprint Expenditures .............................................................................................................. 26 
+C. Results of patient and provider satisfaction surveys ................................................................ 28 
+D. Results of Act 167 Data Extract Analysis .................................................................................... 28 
+V. HEALTH SERVICE AREAS .................................................................................................................. 30 
+VI. APPENDIX: EVALUATION MEASURE RESULTS ............................................................................... 73 
+ 
+ 
+  
+2023 Blueprint Annual Report 
+ 
+ 
+4 
+ 
+VERMONT  
+ 
+I. EXECUTIVE SUMMARY  
+ 
+Legislation & Report Contents 
+ 
+18 V.S.A. § 709. requires the Blueprint for Health (Blueprint) to make an annual report to the 
+legislature:  
+(a) The director of the Blueprint shall report annually, no later than January 31, on the status 
+of implementation of the Vermont Blueprint for Health for the prior calendar year and shall 
+provide the report to the House Committee on Health Care, the Senate Committee on Health 
+and Welfare, and the Health Care Oversight Committee. (b) The report required by 
+subsection (a) of this section shall include the number of participating insurers, health care 
+professionals, and patients; the progress made in achieving statewide participation in the 
+chronic care management plan, including the measures established under this subchapter; 
+the expenditures and savings for the period; the results of health care professional and 
+patient satisfaction surveys; the progress mad e toward creation and implementation of 
+privacy and security protocols; information on the progress made toward the requirements 
+in this subchapter; and other information as requested by the committees. The provisions of 
+2 V.S.A. § 20(d) (expiration of req uired reports) shall not apply to the report to be made 
+under subsection (a) of this section. 
+ 
+The Blueprint for Health was established to promote high quality care that integrates 
+advanced primary care, specialty care and  community-based services to impact 
+Vermonters’ health and wellbeing. Advanced primary care encompasses prevention 
+services as well  as integration of care and services for people with complex health and 
+social needs. Supported by multi-payer participation, the Blueprint has built a foundation 
+of advanced primary care based on the Patient -Centered Medical Home (PCMH) model 
+and bolstered by multi -disciplinary Community Health Teams (CHTs) that provide care 
+coordination and linkages to services across the care continuum  and in the community . 
+Essential to the success of the PCMHs and CHTs is a network of locally hired Program 
+Managers, Community Health Team Leaders, and Quality Improvement Facilitators. This 
+network has been integral to facilitating local transformations and increasing collaboration 
+across community partners.  
+ 
+Building on the PCMH and CHT model, the Blueprint program has expanded to include the 
+Hub and Spoke System of Care for individuals with opioid use disorder and specifically 
+supports primary care practices providing medication for opioid use disorder. The Blueprint 
+also created the Women’s Health Initiative  (renamed Pregnancy Intention Initiative) , to 
+ensure access to services that support pregnancy intention. In 2023, the Blueprint program 
+was further expanded to include a CHT Expansion Pilot Program to address mental health, 
+substance use disorder, and social determinants of health within primary care. 
+2023 Blueprint Annual Report 
+ 
+ 
+5 
+ 
+VERMONT  
+Program Evolution 
+ 
+Act 78 of 2023 provided two years of funding for several pilot projects targeted at the 
+expansion of health services related to mental health and substance use in Vermont, 
+including expansions of the Blueprint for Health’s CHT s and the Health Department’s Hub 
+opioid use treatment centers and Developmental Understanding  and Legal Collaboration 
+for Everyone family specialist program. In close coordination with the Secretary, 
+Department of Health, Department of Mental Health, Department of Vermont Health 
+Access and Director of Health Care Reform, the Blueprint staff convened workgroups and 
+scheduled stakeholder meetings to develop the CHT Expansion Pilot. The result was a 
+recommendation for payments to CHTs so that Health Service Area Administrative Entities 
+can expand vital services to address the mental health and substance use needs of the 
+population in an integrated way. 
+ 
+Patient-Centered Medical Homes  
+ 
+The PCMH is a model of care that has transformed how primary care is organized and 
+delivered in Vermont. There are currently 131 participating primary care practices in this 
+initiative representing close to 90% of known primary care practices operating in Vermont. 
+Of these practices, 130 have sustained National Committee of Quality Assurance (NCQA) 
+PCMH recognition from previous years and one newly opened practice is working towards 
+achieving this recognition. Participation of practices in the PCMH program has remained 
+relatively stable over the last five years, with small amounts of attrition occurring annually 
+due to retirements or consolidations, and small increases due to newly opened practices or 
+acquisitions.  
+ 
+Community Health Teams 
+ 
+Along with the PCMH model, CHTs are integral to the success of the Blueprint. These teams, 
+funded by commercial and public payers, provide services to patients that are not generally 
+covered by insurance. Services can include care coordination, social work, brief mental 
+health interventions, referrals to services, and numerous other interventions, free of charge 
+and without regard to insurance status. Currently, there are a total of 223 staff (151 full-
+time equivalent staff) working as members of the CHTs  across the state. These positions 
+include nurses , social workers, mental health counselors, health educators, registered 
+dietitians, community health workers, panel managers, and others who work to provide 
+whole person care for Vermonters. 
+ 
+The Blueprint tracks the numbers of patients served by CHT staff, including their insurance 
+type where possible. This information indicates that CHTs serve individuals with a variety 
+of insurance types, highlighting the importance of the Blueprint’s universal approach. In 
+2023, practices continued to build the capacity to track patients, encounters, and payers 
+without compromising patient confidentiality.  
+ 
+2023 Blueprint Annual Report 
+ 
+ 
+6 
+ 
+VERMONT  
+Hub and Spoke 
+ 
+Hub & Spoke is Vermont’s system of medication for opioid use disorder support for people 
+in recovery from opioid use disorder. The Blueprint administers the Spoke part of the Hub & 
+Spoke system while the Department of Health administers the Hubs. Vermont continues to 
+demonstrate substantial access to medication- assisted treatment for Vermonters with 
+opioid use disorder by providing registered nurses, and licensed, Master’s-prepared, mental 
+health/substance use disorder clinicians as a team to offer evidence-based treatment and 
+provide Health Home services for Vermonters with opioid use disorder.  
+ 
+Pregnancy Intention Initiative (Formerly Women’s Health Initiative) 
+ 
+The Pregnancy Intention Initiative (PII) strives to support any persons who can become 
+pregnant in their efforts to experience healthy pregnancies, avoid unintended pregnancies, 
+and build thriving families. The PII provides increased mental health staffing at specialty 
+practices and utilizes the existing CHT at Blueprint PCMH practices. If a patient identifies 
+as needing support they have access to a mental health clinician for brief interventions, 
+counseling, and navigation to community -based services and treatment as needed. See 
+below for further explanation of the name change.  
+ 
+Self-Management Programming 
+ 
+The Blueprint and the Vermont Department of Health maintain a Memorandum of 
+Understanding to work closely together for the provision of Self-Management Programming 
+through My Healthy Vermont workshops. While the Blueprint still provides the funding and 
+oversight of the programming, the Health Promotion and Disease Prevention (HPDP) unit 
+within the Department of Health administers the programs through grants to local hospitals 
+and Federally Qualified Health Centers. This partnership takes advantage of the additional 
+funding and content expertise that exists within HPDP  through the My Healthy Vermont 
+program, and pairs it with Blueprint’s influence at the local level.  
+ 
+From October 2022 through September 2023, the Department of Health and the Blueprint 
+offered 100 workshops, with a total of 435 individuals completing a program. The Diabetes 
+Prevention Program and the Blood Pressure Management Program had the largest numbers 
+of workshop completers.  
+ 
+Evaluation 
+ 
+Population health measures for CY 2021  are beginning to show a return to pre -pandemic 
+levels in many areas of screenings, well visits, and specialist and primary care encounters. 
+Inpatient hospital stays, potentially avoidable e mergency department visits, and overall 
+health care expenditures are still showing lower rates post-pandemic. 
+2023 Blueprint Annual Report 
+ 
+ 
+7 
+ 
+VERMONT  
+In June of 2023, the Blueprint received an extract of claims data for the fiscal years ending 
+in 2019, 2020, 2021, and 2022. This data was categorized in multiple ways, including a 
+breakdown between patients attributed to Blueprint affiliated PCMH practices and those 
+attributed to other primary care practices. The dataset also included an attribution of 
+individuals to a Mental Health and Substance Use (MH/SUD) category if the individual had 
+at least two outpatient claims or one inpatient claim with specific diagnosis codes. Analysis 
+of this data resulted in several valuable insights regarding the state of health care in 
+Vermont and the effectiveness of the Blueprint’s initiatives. Details on this analysis are 
+available in Section D. 
+Additionally, t he Blueprint reports annually patient s’ experience of care as required by 
+Vermont statute. Since 2011, this task has been fulfilled through the administration of the 
+Consumer Assessment of Healthcare Providers Sur vey (CAHPS) for Clinicians and Groups 
+with PCMH questions included.  The results of this survey provide the broadest statewide 
+look at patient experience of primary care in Vermont. The results are also used to support 
+PCMH recognition by NCQA, and, most recently, as part of the quality reporting under payer 
+contracts with OneCare Vermont under the All-Payer Accountable Care Organization Model. 
+ 
+Health Service Areas (HSAs) 
+ 
+The Blueprint staff in each H SA are responsible for the continued success of the program 
+and have worked during 2023 to address the ongoing needs of their communities. Section 
+V of this report includes in-depth information provided by each HSA, such as details about 
+CHT staffing and structure, community health priorities and special projects, and other 
+details that describe the important work of the Blueprint field teams.  
+ 
+  
+2023 Blueprint Annual Report 
+ 
+ 
+8 
+ 
+VERMONT  
+II. INTRODUCTION  
+ 
+The Vermont Blueprint for Health (Blueprint) was established to promote high quality 
+primary care that is integrated with services outside of the medical setting that affect 
+health and wellbeing. Supported by multi -payer participation, the Blueprint has built a 
+foundation of primary care based on the P atient-Centered Medical Home (PCMH) model1 
+and bolstered by multi -disciplinary Community Health Teams (CHTs) that provide care 
+coordination and linkages to services across the care continuum. Essential to the success 
+of the PCMHs and CHTs is a network of locally hired Program Managers, CHT Leaders, and 
+Quality Improvement (QI) Facilitators. This network has been integral to facilitating local 
+transformations and increasing collaboration across community partners2.  
+ 
+Building on the PCMH and CHT model, the Blueprint program has expanded to include the 
+Hub and Spoke System of Care for individuals with opioid use disorder and specifically 
+supports primary care and specialty practices providing medication for opioid use disorder. 
+The Blueprint also created the Women’s Health Initiative, renamed the Pregnancy Intention 
+Initiative (PII), to ensure access to services that support pregnancy intention.  In 2023, the 
+Blueprint program was further expanded to include a CHT  Expansion Pilot Program to 
+address mental health, substance use disorder, and social determinants of health within 
+primary care.  
+ 
+While the program has evolved beyond the original “chronic care management plan” 
+described in legislation, it remains true to the original vision of all -payer supported, 
+community-directed health reform that promotes the health of all Vermonters. This report 
+describes the activities and progress of the Blueprint during 2023. 
+ 
+A. Executive Committee  
+The Blueprint for Health statute defines the membership and role of the Blueprint Executive 
+Committee as an advisory body for the Executive Director. The Blueprint Executive 
+Committee is currently complete with assigned members representing each of the required 
+stakeholders. The committee met 8 times in 2023, providing guidance and input for all 
+Blueprint proposals and analyses. The minutes and materials for each meeting can be found 
+on the Blueprint website.  
+ 
+ 
+1 The National Committee on Quality Assurance (NCQA) sets standards around the following elements of the PCMH 
+model: 1) team-based care; 2) understanding and managing patient needs; 3) patient -centered access and 
+continuity; 4) care management protocols; 5) care coordination and transition protocols; and 6) continual 
+performance measurement and quality improvement. https://www.ncqa.org/wp-
+content/uploads/2019/06/06142019_WhitePaper_Milliman_BusinessCasePCMH.pdf  
+2 Community Partners include home health agencies, mental health agencies, developmental disability service 
+providers, emergency medical service providers, adult day service providers, area agencies on aging, 
+transportation services, foodbanks, and community action agencies.  
+2023 Blueprint Annual Report 
+ 
+ 
+9 
+ 
+VERMONT  
+B. Program Evolution: Community Health Team Expansion Pilot  
+Act 78 of 2023 provided two years of funding for a pilot project targeted at enhancing health 
+services related to mental health and substance use in Vermont  through expansion of the 
+Blueprint for Health’s CHTs , including  Developmental Understanding and Legal 
+Collaboration for Everyone ( DULCE) family specialist program. Act 78 also expand ed 
+funding for the Health Department’s Hub opioid use treatment centers.  
+In close coordination with the Secretary, Department of Health, Department of Mental 
+Health, Department of Vermont Health Access and Director of Health Care Reform, the 
+Blueprint staff convened workgroups  and scheduled stakeholder meetings to develop the 
+CHT Expansion Pilot . The result was a recommendation for payments to CHTs so that 
+Health Service Area Administrative Entities can expand vital services to address the mental 
+health and substance use needs of the population in an integrated way. Expanded CHTs  
+include additional staff serving as Community Health Workers, Mental Health Counselors , 
+and Social Workers, and an addition of Family Specialists to serve in a pediatric or family 
+medicine primary care practice with the DULCE model.    
+1. Community Health Team Expansion 
+The Blueprint created three i mplementation workgroups—Program Design, Measurement 
+and Evaluation, and Payment—consisting of key stakeholders throughout the state. These 
+workgroups met virtually throughout the spring and summer and helped to determine both 
+overall direction and focus of the Pilot as well as specific implementation goals and targets. 
+Information about the Blueprint CHT Expansion Pilot can be found here, including slides, 
+presentations, workgroup materials, and meeting minutes. 
+Practices were required to submit an attestation form to indicate their participation in the 
+CHT Expansion Pilot. As of December 1, 2023, a total of 113 practices (representing 86% of 
+PCMHs in Vermont) have submitted attestations to participate in this pilot.  
+At the end of October 2023, a survey was distributed to all Blueprint for Health PCMHs  to 
+collect information about Expansion Pilot implementation progress. A total of 48 responses 
+were received (representing more than 70 practices). Most of these practices indicated that 
+they were in the planning and job description and posting creation stage of implementation 
+at the time of the survey. 
+Positions that are filled using CHT Expansion funding are tracked centrally; as of December 
+1, 2023, a total of 18.21 full-time equivalent staff positions have been hired using available 
+pilot funding. 
+All practices participating in the CHT Expansion Pilot engaged in chart review to establish 
+baseline understanding of screening patterns, how patients are identified for CHT services, 
+CHT interventions provided, and CHT support for navigation to services. Evaluation data 
+was also collected in the CHT Expansion Practice and Provider Survey regarding 
+2023 Blueprint Annual Report 
+ 
+ 
+10 
+ 
+VERMONT  
+acceptability of CHT services to providers and patients. Detailed results of the Chart Review 
+and Provider/Practice Survey will be available in the first quarter of 2024.    
+The Blueprint for Health is increasing the number  of supports available to practices for 
+implementation, training, quality improvement, and evaluation. Contracts are in the final 
+stages or have been executed for Specialized QI  Facilitators and training providers. The 
+central office surveyed the field on training needs and facilitated one work group to discuss 
+findings from the survey. Key training areas requested by the field include motivational 
+interviewing, diversity/equity/inclusion, social determinants of h ealth, and the role of 
+Community Health W orkers. The c entral office will also engage with A gency of Human 
+Services teams to support team- based care in each H ealth Service Area with community 
+partners to support patients with complex medical and social needs.  
+2. Developmental Understanding and Legal Collaboration for Everyone 
+Vermont’s Developmental Understanding and L egal Collaboration for E veryone (DULCE) 
+program is overseen by the V ermont Department of Health  (VDH) Division of Family and 
+Child Health with the approach’s required Continuous Quality Improvement led by the 
+Vermont Child Health Improvement Program (VCHIP) at the University of Vermont.  VDH 
+and Blueprint work collaboratively to achieve DULCE implementation through the CHTs , 
+including partnering on sustainability and expansion planning for DULCE Family Specialists 
+to serve the needs of infants 0- 6 months as well as the needs of children up to age 5 in 
+pediatric practices. A total of $913,600.00 dollars has been included to support embedding 
+Family Specialists at six sites, including f ive sites curre ntly engaged with DULCE  and an 
+additional sixth primary care site.  Funding for Family Specialists will be delivered to the 
+relevant Administrative Entity, with the Blueprint Program Manager working closely with 
+the local Parent Child Center to hire and support the Family Specialist in the HSA. 
+The Blueprint has created a M emorandum of Understanding with VDH to support Family 
+and Child Health in  building a pediatric model that will take components of  the DULCE 
+approach and extend this beneficial work  beyond six months of age to provide universal 
+screening, referrals, and supports to practices that serve families with children ages 0-17.   
+3. Community Health Team Expansion Pilot Evaluation 
+Contracting is in progress for a qualitative and quantitative evaluation of the Blueprint CHT 
+Expansion Pilot. Contractors will provide outside evaluation of the Expansion Pilot initiative, 
+including historical overviews of relevant data. 
+  
+2023 Blueprint Annual Report 
+ 
+ 
+11 
+ 
+VERMONT  
+ 
+III. PROGRAMMATIC UPDATES  
+1. Patient-Centered Medical Homes 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The Patient-Centered Medical Home (PCMH) is a model of care that has transformed how 
+primary care is organized and delivered in Vermont. Delivering this model of care means:  
+ 
+• clinician-led teams coordinate care, especially for disease prevention and chronic 
+condition management;  
+• Medical Homes coordinate with other care providers and community resources; and  
+• all members of the Medical Home team are committed to improving patient 
+experience of care, health outcomes, and overall value of care.  
+  
+Vermont selected the National Committee for Quality Assurance (NCQA) PCMH recognition 
+model in 2008, which is now the most widely adopted PCMH evaluation program in the 
+country.  
+ 
+In 2023, practices that were recognized PCMHs provided evidence and/or attestation that 
+they:  
+ 
+• clearly define practice leadership organization, care team responsibilities, and 
+protocols for how the practice partners with patients, families, and caregivers;  
+
+2023 Blueprint Annual Report 
+ 
+ 
+12 
+ 
+VERMONT  
+• meet s tandards for data collection, medication reconciliation, evidence -based 
+clinical decision support, and other activities;  
+• follow c are management protocols to identify patients who need more closely 
+managed care;  
+• maintain systems and protocols for information sharing and management of patient 
+referrals between primary care and specialty care practices; and  
+• implement processes and practices for performance measurement, goal setting, and 
+ongoing participation in quality improvement activities.  
+  
+One practice initiated a new transformation into a P CMH in 2023. Three other previously 
+recognized practices changed organizational affiliation or had a substantial enough change 
+in location, population served, or providers employed to require that they were required to 
+undergo a more substantial review process with NCQA.  
+ 
+One hundred twenty -eight (128) practices sustained recognition as a P CMH in 2023 by 
+attesting that they meet the core requirements and providing additional evidence required 
+for annual reporting. Typically, these practices began active preparation work six to nine 
+months ahead of their anniversary date, working on ensuring that they understood any new 
+standard requirements, were sufficiently able to provide the required evidence for 
+standards that must be reported on an annual basis (e.g. medication reconciliation rates), 
+and selected and worked on a minimum of six quality improvement projects across the 
+domains of clinical quality measures, resource stewardship measures, appointment 
+availability, and patient experience of care. Five of these practices were randomly selected 
+for an in-depth NCQA audit in 2023, although one was given an exemption from this audit 
+due to timing coinciding with the catastrophic floods that affected the practice in July 2023. 
+Four recognized practices closed in 2023 due to retirement and consolidation.  
+ 
+This evolution of the recognition process has allowed for a greater focus on continuous 
+quality improvement work in the practice while continuing to raise the quality standard of 
+care in PCMHs . Practices are currently preparing to meet new standard requirements  for 
+2024 related to electronic health record utilization and standardized measure reporting.  
+ 
+With more than a decade of support for primary care through the PCMH initiative, Vermont 
+is well poised for embracing novel  federal models focused on primary care quality and 
+investment. 
+ 
+  
+2023 Blueprint Annual Report 
+ 
+ 
+13 
+ 
+VERMONT  
+QUALITY IMPROVEMENT FACILITATION  
+ 
+The Blueprint currently offers participating practices the services of a Quality Improvement 
+(QI) Facilitator to support practices to improve the care they deliver, by focusing on 
+implementation of evidence -based care or models of care to improve patient outcomes 
+and experiences. QI Facilitators are highly skilled in quality planning (using data, feedback 
+from patients, community members, employees, and other key stakeholders to guide 
+strategy) and continuous quality improvement (applying the science of improvement to 
+achieve desired aims and address performance). 
+ 
+Presently, there are twelve general QI Facilitators assigned to work with Blueprint  
+participating practices in a geographic area, and one s pecialized QI Facilitator working 
+across the State. General QI Facilitators are considered local experts in the P CMH Model 
+and coach practices to achieve and retain NCQA recognition. These facilitators work on an 
+ongoing basis to support continuous quality improvement activities within their practices 
+and regions and assist with quality improvement efforts related to panel management and 
+outreach, care coordination, promotion of individual health and wellness, chronic condition 
+management, and ongoing value -based care transformation in alignment with state -led 
+health care reform priorities.  
+ 
+The specialized QI Facilitator  will be d eveloping quality tools and resources for the 
+Community Health Team Expansion Pilot, working directly with practices who will engage  
+in provider coaching and/or academic detailing interventions, coordinating expansion pilot 
+learning collaboratives, and s upporting quality improvement efforts that bridge PCMHs, 
+hospitals, specialty mental health and substance use providers, and community service 
+organizations. 
+ 
+Both general and specialized QI facilitators provide support to practices for implementation 
+and quality improvement efforts related to enhanced mental health/substance use/social 
+determinants of health screening, further integration of mental health and substance use 
+CHT services in PCMHs, and care coordination  across the spectrum of medical and social 
+service providers as a component of the CHT Expansion Pilot.  
+ 
+In partnership with the Care Transformation Collaborative of Rhode Island, all facilitators  
+will receive training on the core competencies of mental health and substance use 
+integration facilitation in primary care settings in early 2024.  
+ 
+2. Community Health Team Data  
+Along with the PCMH model, CHTs are integral to the success of the Blueprint. These teams, 
+funded by commercial and public payers, provide services to patients that are not generally 
+covered by insurance. A CHT member can provide screening, brief intervention, referral to 
+treatment, care coordination, and self-management support, among other interventions . 
+The Blueprint strives to provide person-centered care to all Vermonters.  It is essential that 
+2023 Blueprint Annual Report 
+ 
+ 
+14 
+ 
+VERMONT  
+the CHT work with community partners as a team to support patient s as part of each 
+person’s care plan, especially those with complex physical and social needs. These services 
+are provided free of charge and without regard to insurance status.  The types and 
+distribution of CHT staff members in 2023 is highlighted on the following page. The graphs 
+show the immediate impact of the CHT Expansion Pilot on increasing staff in critical areas. 
+Evaluation of the impact of the Pilot will proceed as  the CHT Expansion Pilot contin ues 
+through its first and second years. 
+  
+2023 Blueprint Annual Report 
+ 
+ 
+15 
+ 
+VERMONT  
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+16 
+ 
+VERMONT  
+ 
+ 
+During 2022, the Blueprint began to track the numbers of patients served by CHT staff , 
+including their insurance type where possible, for the first time. This information indicated 
+that Community Health Teams serve individuals with a variety of insurance types, 
+highlighting the importance of the Blueprint’s universal approach.  The Blueprint will 
+continue to build the capacity to track patients, encounters, and payers without 
+compromising patient confidentiality.  
+ 
+  
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+17 
+ 
+VERMONT  
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+18 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+19 
+ 
+VERMONT  
+3. Hub & Spoke  
+Hub & Spoke is Vermont’s system of medication for opioid use disorder (MOUD) supporting 
+people in recovery from opioid use disorder  (OUD). The Department of Health and the 
+Blueprint for Health have been longstanding partners to support Vermont’s Hub and Spoke 
+providers, partners, and provider leaders together to share expertise and continue to 
+improve the quality of care in the system. 
+ 
+The Blueprint administers the Spoke part of the Hub & Spoke system of care, while the 
+Department of Health administers the Hubs . For every 100  Medicaid patients that are 
+prescribed buprenorphine or vivitrol, the Blueprint supports communities to hire a full-time 
+nurse and mental health clinician.   
+ 
+The Blueprint contract ed with the Center for Technology and Behavioral Health at  
+Dartmouth College for Medication Assisted Treatment Learning Collaboratives provided to 
+the Hub & Spoke Opioid Use Disorder care network. The curriculum, delivered from January 
+through June 2023, included six virtual monthly events. Three webinars featured national 
+presenters and three virtual workshops featured Vermont -based content experts  and 
+sessions alternated between didactic care management webinars and multidisciplinary 
+care management workshops. An average of 49 OUD care specialist nurses or mental health 
+clinicians attended each event.  
+ 
+Vermont continues to demonstrate substantial access to MOUD  by funding  registered 
+nurses and licensed, Master’s-prepared, mental health/substance use disorder clinicians as 
+a team. These Spoke teams offer evidence-based treatment and provide Health Home 
+services for Vermonters with opioid use disorder. The Blueprint continues to encourage the 
+use of VT Help link , a free and confidential referral service available to connect people to 
+resources and treatment (802-565-LINK or Vermont Help Link). 
+ 
+2023 Blueprint Annual Report 
+ 
+ 
+20 
+ 
+VERMONT  
+ 
+ 
+4. Pregnancy Intention Initiative (formerly Women’s Health Initiative) 
+The Women’s Health Initiative (WHI) has strived to support people  who can become 
+pregnant in their efforts to experience healthy pregnancies, avoid unintended pregnancies, 
+and build thriving f amilies. This year the Women’s Health Initiative program changed its 
+name to the Pregnancy Intention Initiative (PII) to focus  on being more inclusive  for 
+transgender and non- binary patients . The Blueprint  surveyed the field and held focus 
+groups to gather input on the name change.  
+The PII provides mental health staffing at specialty practices and utilizes the existing CHT 
+at participating Blueprint PCMH practices. Practices attest to support the goals of PII.  
+People with a desire to become pregnant  or prevent pregnancy can receive services to 
+support decision making. If an  individual would like to prevent pregnancy, providers 
+conduct comprehensive family planning counseling and provide patients with options for 
+most and moderately effective contraception, which could include access to same -day 
+long-acting reversible contrac eptives (LARC) if clinically indicated.  If a person would like 
+to become pregnant, they receive support for a healthy pregnancy. The practice screens for 
+social determinants of health such as food security, housing security, interpersonal violence, 
+depression, anxiety, harm to self or others,  mental health issues, and substance use.  
+Positive screens are addressed with brief interventions and treatment by the embedded PII 
+mental health clinician if indicated. These clinicians also communicate programmatic 
+information to community partners to build meaningful relationships , support patients 
+more closely, and create seamless transitions of care when referral is necessary. 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+21 
+ 
+VERMONT  
+In 2023, the Blueprint reinstated quarterly in-person hands-on trainings to support the PII 
+network of providers in contraceptive care. In collaboration with the University of Vermont, 
+Dr. Lauren MacAfee trained more than 50 providers this year from Blueprint PII sites in LARC 
+insertion and best practices around patient choice  of contraception in the past year.  The 
+community providers r equested further training and support for individuals who want to 
+increase comfortability and knowledge in gender -affirming care. In January , t he Area 
+Health Education Centers and  University of Vermont  Project Echo began supporting the 
+network and provided six monthly trainings for clinicians in gender-affirming care. 
+ 
+ 
+ 
+5. Self-Management Programming  
+ 
+The Blueprint and the Vermont Department of Health maintain a Memorandum of 
+Understanding to work closely together for the provision of Self-Management Programming 
+through My Healthy Vermont workshops. While the Blueprint still provides the funding and 
+oversight of the programming, the Health Promotion and Disease Prevention (HPDP) unit 
+within the Department of Health administers the programs through grants to local hospitals 
+and Federally Qualified Health Centers (FQHCs). This partnership takes advantage of the 
+additional funding and content expertise that exists within HPDP through the My Healthy 
+Vermont program, and pairs it with Blueprint’s influence at the local level.  
+ 
+Health Service Areas offered six types of Self-Management Programs during 2023: 
+ 
+• Blood Pressure Management 
+
+2023 Blueprint Annual Report 
+ 
+ 
+22 
+ 
+VERMONT  
+• Chronic Disease Management 
+• Chronic Pain Management 
+• Diabetes Self-Management Program 
+• Diabetes Prevention Program 
+• Quit Smoking 
+ 
+From October 2022 through September 2023, the Department of Health and the Blueprint 
+offered 100 workshops, with a total of 435 individuals completing a program. The Diabetes 
+Prevention Program and the Blood Pressure Management Program had the largest numbers 
+of workshop completers.  
+ 
+ 
+ 
+ 
+ 
+  
+2023 Blueprint Annual Report 
+ 
+ 
+23 
+ 
+VERMONT  
+IV. EVALUATION 
+ 
+A. Health Care Measurement Results for Blueprint Target Populations 
+ 
+1. Health Care Claims and Clinical Data  
+ 
+Since its inception, a core mission and statutory responsibility of the Blueprint has been to 
+support service delivery reform and evaluate quality and cost outcomes through analysis 
+of multi-payer claims and clinical data. For analysis of multi-payer populations (given the 
+Blueprint’s statutory multi -payer responsibilities), the Blueprint partnered with the Green 
+Mountain Care Board (GMCB) to add Blueprint evaluation work to the GMCB’s existing all-
+payer analytics contract. Calendar Year (CY) 2021 is the latest year for which Blueprint has 
+multi-payer, population-level health care measurement data for Vermont . The following 
+annual health care evaluation measures were calculated by Onpoint Health Data, under 
+contract with the GMCB and Blueprint program.  Claims-based measurement results are 
+derived from the Vermont Health Care Uniform Reporting and Evaluation System 
+(VHCURES), Vermont’s all-payer claims database managed by the GMCB . Clinical/hybrid 
+measures for CY 2019 used records from the Blueprint’s recently discontinued Vermont 
+Clinical Registry, and clinical/hybrid measures for CY 2020 and 2021 used clinical data from 
+Vermont Information Technology Leaders (VITL). Blueprint practice and provider registry 
+information used for primary-care patient attribution was derived from the Blueprint’s own 
+web portal database.  Further details related to the Blueprint CY 2021 community health 
+profile measures are posted on the Blueprint for Health website.  
+ 
+Populations of Analysis 
+  
+In CY 2021, 65.1% of VHCURES members who received primary care services were served 
+by Blueprint Patient -Centered Medical Homes (PCMHs).  Because of the large degree of 
+overlap, measurement results for the total VHCURES population and for the PCMH -
+attributed population are generally similar. Consistent with prior annual reports, results are 
+presented for the wider primary-care service target population of VHCURES members (i.e., 
+individuals enrolled in a health plan reporting to VHCURES), minus a small number of 
+exceptions. This represents a multi -payer member sample, independent of primary -care 
+attribution and independent of Accountable Care Organization attribution.  In 2021, this 
+VHCURES data represented 444,895 people, or 69.0% of Vermont’s 2021 population. 
+ 
+As in prior Blueprint annual reports, this report attempts to address the significant shift in 
+the VHCURES data due to the 2016 Gobeille vs. Liberty Mutual Insurance Company U.S. 
+Supreme Court decision. This decision allowed health care plans falling under  Employee 
+Retirement Income Security Act of 1974 authority to opt out of submitting data to all-payer 
+claims databases, resulting in many of these plans ceasing to submit data to VHCURES. 
+The remaining population represented in VHCURES tended to be older and sicker resulting 
+2023 Blueprint Annual Report 
+ 
+ 
+24 
+ 
+VERMONT  
+in higher average per member per year costs and utilization rates relative to previous years. 
+To address this change and allow comparability with earlier years the Blueprint removed 
+claims associated with self-insured plans no longer submitting after 2016 from all previous 
+years. Analysis indicated that this step achieved greater consistency in age, payer mix, 
+health status, and gender across all years. Of note, this approach has been explored by 
+other states. 
+  
+In addition to data from self-insured plans no longer submitting, this analysis excludes data 
+from ages less than one year of age due to frequent challenges in separating their claims 
+from their parents’ claims during this period, and from ages 65 and olde r for whom 
+commercial or Medicaid is the primary payer due to difficulties in identifying total cost of 
+care across multiple payers. VHCURES data also does not include federal employees, 
+members of the military, veterans, and people who are uninsured. 
+ 
+Even with these limitations in the data, the following analyses represent health care 
+outcomes for the majority of Vermont residents. 
+ 
+  
+2023 Blueprint Annual Report 
+ 
+ 
+25 
+ 
+VERMONT  
+ 
+ 
+2. Population Counts and Demographics  
+ 
+ Statewide Demographics CY 2021 CY 2021  
+ U.S. Census Population Estimate for 
+Vermont for 2020: 643,077. 
+Total VHCURES 
+(Excluding Self -Insured) 
+Members 
+Blueprint PCMH Primary 
+Care Attributed 
+Members 
+Population N 444,895 263,179 
+N Adults 18+   77.10% 
+N Pediatric 1-17   22.90% 
+Avg. Age 44.7 43.4 
+% Female 52.00% 54.00% 
+% Medicaid 32.00% 33.00% 
+% Medicare 31.00% 30.00% 
+% Commercial 47.00% 37.00% 
+% ACG* Healthy Users 9.00% 9.00% 
+% ACG* Low Risk 13.00% 14.00% 
+% ACG* Medium Risk 41.00% 45.00% 
+% ACG* High Risk 16.00% 17.00% 
+% ACG* Very High Risk 9.00% 10.00% 
+*ACG risk scores refer to the John’s Hopkins Adjusted Clinical Group risk stratification methodology.  
+ 
+Evaluation measure results  are presented in the appendix of this report. In those results , 
+regional breakouts are based on Vermont Department of Health HSA4 Hospital Service 
+Areas. A map of these Hospital Service Areas can be found on the Vermont Department of 
+Health website. 
+ 
+ 
+2023 Blueprint Annual Report 
+ 
+ 
+26 
+ 
+VERMONT  
+B. Expenditures and savings for the period 
+1. Blueprint Expenditures 
+ 
+Blueprint for Health Annual Budget by Program Elements and Funding Source 
+ 
+Blueprint Program 
+Elements 
+Annualized 
+Budget for 
+2023 
+Description Money Flow Payer 
+Participation 
+Patient-Centered 
+Medical Home  
+(PCMH) Payments 
+ 
+$12.257,240 
+PCMH Per Member Per Month 
+(PMPM) Quality Payments to 
+Practices for NCQA Recognition 
+From Payers to 
+Practices (Parent 
+Organizations) 
+All Payers 
+(Includes 
+Medicare) 
+Community Health 
+Teams (Core/Primary 
+Care) 
+$10,061,010 Teams support PCMH practice 
+and interface with community 
+services 
+From Payers to 
+Local Hospital (or 
+FQHC) 
+All Payers 
+(Includes 
+Medicare) 
+Spoke Staff 
+(Extended CHT)*  
+$7,442,438 RN & Counselor teams support 
+MOUD prescribers 
+From Payer to 
+Local Hospital (or 
+FQHC) 
+DVHA/Medicaid 
+PII PMPM Payment to 
+Specialty Practices 
+$166,778^ Attestation to program elements From Payer to 
+Practices  
+DVHA/Medicaid 
+PII PMPM Payment to 
+PCMH Practices 
+$87,138^ Attestation to program elements From Payer to 
+Practices  
+DVHA/Medicaid 
+PII One-Time Practice 
+Payments 
+$2,485 Workflow changes for screening, 
+same-day long-acting reversable 
+contraception 
+From Payer to 
+Practices 
+DVHA/Medicaid 
+PII Social Workers 
+(Extended CHT) 
+$980,182 Staff for brief interventions and 
+navigation to services 
+From Payer to 
+Local Hospitals 
+(or FQHC) 
+DVHA/Medicaid 
+PII Program 
+Management 
+$19,250 Program Administration and staff 
+supervision 
+Grant to PPNNE DVHA/Medicaid 
+Program 
+Management 
+$1,427,000 Change management & program 
+administration 
+Grant to Local 
+Hospital (or 
+FQHC) 
+DVHA/Medicaid 
+Quality Improvement 
+Facilitators 
+$1,238,044 In-practice QI coaching for NCQA, 
+ACO priorities, and practice 
+priorities 
+Grant to Local 
+Hospital (or  
+FQHC) or Contract 
+w/QI facilitator 
+DVHA/Medicaid 
+Community Self -
+Management 
+Programs 
+$664,163 Memorandum of Understanding 
+with Department of Health to 
+support local Self -Management 
+Programs 
+VDH grants to 
+Local Hospital (or 
+FQHC)  
+DVHA/Medicaid 
+2023 Blueprint Annual Report 
+ 
+ 
+27 
+ 
+VERMONT  
+Training 
+Contracts/Grant(s) 
+13,100.00 
+184,983.00 
+PII UVM Faculty Trainings 
+Dartmouth Spoke Provider 
+Trainings 
+Contracts with 
+Vendors 
+DVHA/Medicaid 
+VDH 
+Health IT Grant  
+for staffing to manage 
+Support and Services at 
+Home (SASH) care 
+management system 
+$205,000 Grant to administrative entity for 
+the Vermont SASH program, for 
+staffing. 
+Grant to Senior 
+Housing 
+Organization 
+DVHA/Medicaid 
+Data and Analytics Contracts 
+All-Payer and 
+Medicaid Analytics 
+$604,600 Program evaluation for 
+performance payments and for 
+State and Federal reporting 
+Contract with 
+Vendor 
+DVHA/Medicaid 
+Patient Experience of 
+Care Survey 
+$237,290 Survey of Vermonters served in 
+primary care in accordance with 
+statute 
+Contract with 
+Vendor 
+DVHA/Medicaid 
+Blueprint  
+Central Office Staff 
+$1,058,566 Central office Blueprint program 
+staff 
+State Employees  DVHA/Medicaid 
+* Vermont Department of Health manages Hubs 
+^Fourth quarter data is not yet available for PII PMPM payments, therefore  
+an estimated fourth quarter dollar amount was used when calculating annual PII PMPM costs. 
+ 
+2023 Blueprint Annual Report 
+ 
+ 
+28 
+ 
+VERMONT  
+ 
+  
+C. Results of patient and provider satisfaction surveys 
+ 
+The Blueprint for Health (Blueprint) reports annually the patient experience of care as 
+required by Vermont Statute. Since 2011, this task has been fulfilled through the 
+administration of the CAHPS Clinician and Group Survey with Patient -Centered Medical 
+Home (PCMH) questions included.  The outcomes for this survey  provide the broadest 
+statewide look at patient experience of primary care in Vermont . The number of practices 
+that participated in the 2022 survey was 128, which is an increase from 123 practices in 
+2021 and an increase from 120 practices in 2020. The number of surveys that were fielded 
+were 57,384 with 10,577 adults and 1,632 pediatric patients responding. The combined 
+response rate was 21.3% which is up from 17.6% in 2021 
+ 
+The results are also used to support PCMH recognition by the National Committee for 
+Quality Assurance (NCQA), and, most recently, as part of the quality reporting under payer 
+contracts with OneCare Vermont under the All-Payer Accountable Care Organization Model. 
+ 
+ 
+D. Results of Act 167 Data Extract Analysis  
+ 
+In June of 2023, the Blueprint  for Health received an extract of claims data for the fiscal 
+years ending in 2019, 2020, 2021, and 2022. This data was categorized in multiple ways, 
+including a breakdown between patients attributed to Blueprint affiliated PCMH practices 
+and those attributed to other primary care practices. The dataset also included an 
+attribution of individuals to a Mental Health and Substance Use (MH/SUD) category if the 
+individual had at least two outpatient claims or one inpatient claim with specific diagnosis 
+codes. Analysis of this data resulted in several valuable insights regarding the state of 
+health care in Vermont and the effectiveness of the Blueprint’s initiatives. 
+Insights gained into the overall Vermont population included the following: 
+• The proportion of individuals with MH/SUD claims has been increasing from 25.1% in 
+2019 to 26.1% in 2022. 
+• The proportion of emergency department claims with a relevant MH/SUD diagnosis 
+code has not changed in a statistically significant way over the past four years.  
+• The proportion of individuals with a primary care visit has declined from 71.5% in 
+2019 to 69.0% in 2022. 
+• Overall pharmacy costs per person have risen 11.2% after adjustment for inflation 
+since 2019. 
+• Overall medical costs per person have declined 8.2% after adjustment for inflation 
+since 2019. 
+2023 Blueprint Annual Report 
+ 
+ 
+29 
+ 
+VERMONT  
+ 
+In addition, the data analysis provided support for the effectiveness of Blueprint 
+initiatives, including the following: 
+• Blueprint PCMH practices have a higher proportion of individuals in the MH/SUD 
+category than non- Blueprint practices. The difference is statistically significant at 
+the p=0.01 level and is growing over time. 
+• There is no statistically significant difference in the overall proportion of individuals 
+with Emergency Department claims between individuals attributed to Blueprint 
+PCMH practices and those attributed to non-Blueprint primary care practices. 
+• A lower proportion of individuals in the  MH/SUD category attributed to Blueprint 
+primary care practices have ED claims than of individuals in the MH/SUD category  
+attributed to non- Blueprint primary care practices. This difference is statistically 
+significant at the p=0.01 level and has been consistent throughout all studied years. 
+ 
+Beyond these utilization measures, individuals attributed to Blueprint PCMH practices 
+showed a lower overall health claims cost, as shown in the table below. 
+Per Member Per Year Medical and Pharmacy Claims for All Individuals 
+Year Ending Blueprint Attributed Non-Blueprint Attributed Difference 
+2019 $8,059.97 $10,435.74 $2,376.17 
+2020 $7,711.31 $10,298.18 $2,586.86 
+2021 $8,254.25 $11,005.17 $2,750.91 
+2022 $8,580.73 $11,253.14 $2,672.41 
+ 
+Furthermore, the annualized rate of increase of overall claims is 1.6% for Blueprint PCMH  
+attributed individuals compared to 1.9% for non- Blueprint attributed individuals (not 
+adjusted for inflation). 
+ 
+This analysis provides a recent year update to past work done on the Blueprint’s 
+effectiveness at controlling health care costs and providing high quality primary care to 
+Vermonters. 
+ 
+  
+2023 Blueprint Annual Report 
+ 
+ 
+30 
+ 
+VERMONT  
+ 
+V. HEALTH SERVICE AREAS  
+ 
+The Blueprint staff in each Health Service A rea (HSA) are responsible for the continued 
+success of the program and have worked during 2023 to address the ongoing needs of their 
+communities. The following section of the report includes information provided by each 
+HSA.  
+ 
+ 
+Blueprint Leadership Gathering  
+October 2, 2023  
+at the Waterbury State Office Complex   
+
+2023 Blueprint Annual Report 
+ 
+ 
+31 
+ 
+VERMONT  
+ 
+ 
+ 
+ 
+  
+2023 Blueprint Annual Report 
+ 
+ 
+32 
+ 
+VERMONT  
+  
+2023 Blueprint Annual Report 
+ 
+ 
+33 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+34 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+35 
+ 
+VERMONT  
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+36 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+37 
+ 
+VERMONT  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+38 
+ 
+VERMONT  
+
+2023 Blueprint Annual Report 
+ 
+ 
+39 
+ 
+VERMONT  
+
+2023 Blueprint Annual Report 
+ 
+ 
+40 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+41 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+42 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+43 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+44 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+45 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+46 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+47 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+48 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+49 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+50 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+51 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+52 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+53 
+ 
+VERMONT  
+
+2023 Blueprint Annual Report 
+ 
+ 
+54 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+55 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+56 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+57 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+58 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+59 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+60 
+ 
+VERMONT  
+
+2023 Blueprint Annual Report 
+ 
+ 
+61 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+62 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+63 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+64 
+ 
+VERMONT  
+
+2023 Blueprint Annual Report 
+ 
+ 
+65 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+66 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+67 
+ 
+VERMONT  
+ 
+ 
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+68 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+69 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+70 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+71 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+72 
+ 
+VERMONT  
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+73 
+ 
+VERMONT  
+VI. APPENDIX: EVALUATION MEASURE RESULTS  
+ 
+The following charts display various health care quality measures reported in the Vermont Health 
+Care Uniform Reporting and Evaluation System (VHCURES), Vermont’s all payer claims database. 
+These measures are provided as an overview of health utilization trends in Vermont. 
+ 
+Population N (Person Counts) By HSA: 
+ 
+Total VHCURES (Excluding Self-Insured) Population 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+74 
+ 
+VERMONT  
+Health Care Expenditures 
+ 
+Expenditures Total Per Member Per Year, Risk-Adjusted, by HSA (Dollars, Inflation-Adjusted): 
+ 
+Total VHCURES (Excluding Self-Insured) Population 
+ 
+ 
+  
+
+2023 Blueprint Annual Report 
+ 
+ 
+75 
+ 
+VERMONT  
+Expenditures Special Medicaid Services Per Member Per Year, Risk-Adjusted,  
+Statewide (Dollars, Inflation-Adjusted): 
+ 
+Medicaid-Primary Population 
+ 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+76 
+ 
+VERMONT  
+Health Care Quality Measures (Risk -Adjusted By HSA) Used for Blueprint Performance 
+Payments to Primary Care Practices 
+ 
+NQF1448 Developmental Screening in the First Three Years of Life (DEV), By HSA (Proportions): 
+ 
+PCMH Primary-Care-Attributed Population 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+77 
+ 
+VERMONT  
+HEDIS Adolescent Well-Care (AWC) Visit 12-17 Years Old, By HSA (Proportions): 
+ 
+PCMH Primary-Care-Attributed Population 
+ 
+ 
+ 
+ 
+0.000
+0.100
+0.200
+0.300
+0.400
+0.500
+0.600
+0.700
+0.800
+0.900
+HEDIS Child and Adolescent Well-Care Visits (WCV) 12-17: PCMH 
+Primary Care Attributed, ALL Payer, ALL Subgroup(s)
+2019
+2020
+2021
+2023 Blueprint Annual Report 
+ 
+ 
+78 
+ 
+VERMONT  
+NQF0018 HEDIS Hypertension with Blood Pressure in Control (<140/90 mmHg) (CBP), By HSA 
+(Proportions): 
+ 
+PCMH Primary-Care-Attributed Population 
+ 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+79 
+ 
+VERMONT  
+NQF0059 Diabetes HbA1c Not in Control (>9%) (DPC), By HSA (Proportions) [Lower is Better]: 
+ 
+PCMH Primary-Care-Attributed Population 
+ 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+80 
+ 
+VERMONT  
+Other Chronic Conditions 
+ 
+NQF1800 HEDIS Asthma Medication Ratio (AMR) of Controller Medications to Total Asthma 
+Medications of .50 or Greater (Proportions), by HSA: 
+ 
+Total VHCURES (Excluding Self-Insured) Population 
+ 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+81 
+ 
+VERMONT  
+NQF0275 COPD & Asthma Admissions, 40 Years Old Plus (COPD -PQI05) (Admissions Per 100K 
+Population), by HSA: 
+ 
+Total VHCURES (Excluding Self-Insured) Population 
+ 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+82 
+ 
+VERMONT  
+NQF0277 Heart Failure Admissions (PQI08) (Admissions Per 100K Population), by HSA: 
+ 
+Total VHCURES (Excluding Self-Insured) Population 
+ 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+83 
+ 
+VERMONT  
+Women’s Preventative Health Care Measures 
+ 
+NQF0032 HEDIS Cervical Cancer Screening (CCS) (Proportions), by HSA: 
+ 
+Total VHCURES (Excluding Self-Insured) Population 
+ 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+84 
+ 
+VERMONT  
+NQF0033 HEDIS Chlamydia Screening in Women, 16-24 Years Old (CHL) (Proportions), by HSA: 
+ 
+Total VHCURES (Excluding Self-Insured) Population 
+ 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+85 
+ 
+VERMONT  
+Access-To-Care and Health Care Utilization Measures 
+ 
+As stated above, 65.1% of VHCURES members who received primary care services were served by 
+PCMHs in CY 2021. 91.0% of VHCURES members had a primary care visit during CY 2021, which was 
+a decrease from 92.0% in CY 2020. 
+ 
+NQF1448 Developmental Screening in the First Three Years of Life (DEV), (Proportions), by HSA: 
+ 
+Total VHCURES (Excluding Self-Insured) Population 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+86 
+ 
+VERMONT  
+ 
+HEDIS Child and Adolescent Well-Care Visits (WCV) 3-21, by HSA: Total VHCURES (Excluding Self-
+Insured) Population 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+87 
+ 
+VERMONT  
+HEDIS Child and Adolescent Well-Care Visits (WCV) 3-11, by HSA: Total VHCURES (Excluding Self-
+Insured) Population 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+88 
+ 
+VERMONT  
+HEDIS Child and Adolescent Well-Care Visits (WCV) 12-17: Total VHCURES (Excluding Self-Insured) 
+Population 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0.000
+0.100
+0.200
+0.300
+0.400
+0.500
+0.600
+0.700
+0.800
+HEDIS Child and Adolescent Well-Care Visits (WCV) 12-17: Total 
+VHCURES (Excluding Self-Insured), ALL Payer, ALL Subgroup(s)
+2019
+2020
+2021
+2023 Blueprint Annual Report 
+ 
+ 
+89 
+ 
+VERMONT  
+HEDIS CHILD and Adolescent Well -Care Visits (WCV) 18 -21, by HSA : Total VHCURES (Excluding 
+Self-Insured) Population 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+90 
+ 
+VERMONT  
+Primary Care Encounters / 1000 Member Years, Risk-adjusted, by HSA: 
+ 
+Total VHCURES (Excluding Self-Insured) Population 
+ 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+91 
+ 
+VERMONT  
+Medical Specialist Encounters / 1000 Member Years, Risk-adjusted, by HSA: 
+ 
+Total VHCURES (Excluding Self-Insured) Population 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+92 
+ 
+VERMONT  
+Surgical Specialist Encounters / 1000 Member Years, Risk-adjusted, by HSA: 
+ 
+Total VHCURES (Excluding Self-Insured) Population 
+ 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+93 
+ 
+VERMONT  
+Outpatient Emergency Department Visits / 1000 Member Years, Risk-Adjusted, by HSA: 
+ 
+Total VHCURES (Excluding Self-Insured) Population 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+94 
+ 
+VERMONT  
+Inpatient Discharges / 1000 Member Years, by HSA: 
+ 
+Total VHCURES (Excluding Self-Insured) Population 
+ 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+95 
+ 
+VERMONT  
+Measures of Potentially Low-Value Health Care Utilization 
+ 
+Outpatient Potentially Avoidable Emergency Department Visits / 1000 Member Years, Risk -
+adjusted, by HSA: 
+ 
+Total VHCURES (Excluding Self-Insured) Population 
+ 
+ 
+ 
+ 
+ 
+
+2023 Blueprint Annual Report 
+ 
+ 
+96 
+ 
+VERMONT  
+PQI92 Chronic Composite -  Ambulatory Care Sensitive Condition Inpatient Discharges / 1000 
+Member Years, Risk-Adjusted, by HSA: 
+ 
+Total VHCURES (Excluding Self-Insured) Population 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
