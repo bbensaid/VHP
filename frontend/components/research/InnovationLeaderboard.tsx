@@ -69,7 +69,7 @@ interface StateRecord {
 // SOURCING (full detail in the on-screen Methodology panel and PILLAR_METHODOLOGY_NOTES below):
 //   Policy    — REAL. Classified from CMS's AHEAD Model cohort assignments (cms.gov/priorities/
 //               innovation/innovation-models/ahead; AHA News 2024-07-11) and Pennsylvania's Rural
-//               Health Model (CMMI). Cohort 1 (MD) = 92, Cohort 2 (CT, HI) = 72, Cohort 3 (RI)
+//               Health Model (CMMI). Cohort 1 (MD) = 92, Cohort 2 (CT, HI) = 72, Cohort 3 (RI; NY downstate region, CMS Oct 28, 2024)
 //               = 66, (Vermont signed as Cohort 2 in Jan 2025 and withdrew Jul 2026; its row uses
 //               the readiness override below, not this tier rule) PA Rural Health Model = 55, no known state all-payer/global-budget program
 //               = 30. The tier-to-number mapping is this table's own transparent rule; the
@@ -106,7 +106,7 @@ const RAW_STATES: Omit<StateRecord, "rank" | "composite">[] = [
   { state: "Connecticut", abbr: "CT", region: "Northeast", policy: 72, technology: 69, economics: 67, clinical: 94, operations: 61, policyProgram: "AHEAD Cohort 2 (CMS, performance from Jan 2028)", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "Washington", abbr: "WA", region: "West", policy: 30, technology: 73, economics: 68, clinical: 88, operations: 59, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "Hawaii", abbr: "HI", region: "West", policy: 72, technology: 65, economics: 67, clinical: 84, operations: 63, policyProgram: "AHEAD Cohort 2 (CMS, performance from Jan 2028)", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
-  { state: "New York", abbr: "NY", region: "Northeast", policy: 30, technology: 70, economics: 66, clinical: 51, operations: 58, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
+  { state: "New York", abbr: "NY", region: "Northeast", policy: 66, technology: 70, economics: 66, clinical: 51, operations: 58, policyProgram: "AHEAD Cohort 3, downstate region (Bronx, Kings, Queens, Richmond, Westchester)", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "California", abbr: "CA", region: "West", policy: 30, technology: 71, economics: 65, clinical: 53, operations: 57, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "Maine", abbr: "ME", region: "Northeast", policy: 30, technology: 66, economics: 65, clinical: 76, operations: 58, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "New Hampshire", abbr: "NH", region: "Northeast", policy: 30, technology: 67, economics: 64, clinical: 100, operations: 58, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
