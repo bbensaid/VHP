@@ -237,7 +237,7 @@ LESSONS = [
             },
             {"type": "text", "heading": "The Readiness Domain That Actually Predicts Success", "body":
                 "The VBC Transformation Readiness Assessment scores an organization across 30 dimensions in six domains -- strategic clarity, data and technology, care delivery capability, network and partnerships, revenue cycle, and workforce operations -- each rated 0 to 4. The platform reports an overall readiness percentage -- the average across all answered dimensions -- rather than a raw point total: 80%+ indicates Global Budget Readiness, 60-79% indicates Advanced stage (~6 months to readiness), and below 60% signals the organization is not ready for full downside risk.\n\n"
-                "For Vermont specifically, Domain 2 (Data and Technology) is the binding constraint: most Vermont hospitals score only 25-45% in this domain, while Blueprint-participating patient-centered medical homes with active Community Health Team support score 40-60% in Domain 3 (care delivery) -- strong by national standards. The gap is not clinical capability; it is the analytics infrastructure needed to act on what clinical teams already know how to do.\n\n"
+                "For Vermont specifically, the book argues that Domain 2 (Data and Technology) is the binding constraint, while the Blueprint's patient-centered medical homes and Community Health Teams give Domain 3 (care delivery) a long head start. The gap is not clinical capability; it is the analytics infrastructure needed to act on what clinical teams already know how to do.\n\n"
                 "An organization should score itself against this framework, or an equivalent one, before signing a downside-risk contract -- not after the first year-end reconciliation reveals the gap the hard way."
             },
             {"type": "text", "heading": "Before Your Next Contract Cycle", "body":
@@ -254,12 +254,12 @@ LESSONS = [
             {"type": "key_stat", "stats": [
                 {"value": "2-3.9%", "label": "Minimum savings rate before an ACO shares in savings (MSSP one-sided track)", "source": "CMS Medicare Shared Savings Program methodology"},
                 {"value": "50-60%", "label": "Maximum shared-savings rate, one-sided vs. two-sided MSSP tracks", "source": "CMS ACO model documentation"},
-                {"value": "12%", "label": "Average HCC coding gap at Vermont critical access hospitals", "source": "2025 Vermont Rural Health Redesign Center assessment"},
+                {"value": "12%", "label": "Claims run-out allowed after each quarterly VHCURES collection", "source": "GMCB VHCURES documentation"},
             ]},
             {"type": "callout", "variant": "info", "heading": "What Pioneer ACO's Attrition Actually Shows", "body":
                 "CMS's Pioneer ACO Model began in 2012 with 32 organizations chosen for their risk experience; only 8 remained by the program's final performance year in 2016. Several exits were driven by benchmark design and financial losses, not clinical failure -- a reminder that a well-run clinical program can still fail financially under a poorly fitted benchmark."},
             {"type": "callout", "variant": "tip", "heading": "Vermont's Binding Constraint Isn't Clinical", "body":
-                "Blueprint-participating PCMH practices with active Community Health Team support score 40-60% on the care-delivery readiness domain -- strong by national standards. Most Vermont hospitals score only 25-45% on the data-and-technology domain. Before assuming downside risk, close the second gap, not the first -- it is already closed."},
+                "Vermont's Blueprint practices and Community Health Teams give it a head start on care delivery; data and technology is the weaker domain. Before assuming downside risk, close that gap first."},
             {"type": "comparison_table", "heading": "Benchmark Construction Methods", "rows": [
                 {"label": "Historical baseline", "left": "Advantage: high past spenders get more savings headroom to work with", "right": "Disadvantage: already-efficient organizations face the 'efficient provider disadvantage' -- a lower benchmark, less room to save"},
                 {"label": "Regional benchmark", "left": "Advantage: eliminates the efficient-provider disadvantage", "right": "Disadvantage: organizations in genuinely high-cost regions compete against a benchmark lower than their own cost history"},
@@ -359,9 +359,9 @@ LESSONS = [
                 "None of this exists automatically once a global budget is signed into law. It has to be built, and building it typically takes longer than the design phase everyone spent years negotiating -- which is exactly the mismatch this lesson is about."
             },
             {"type": "text", "heading": "The Technology Gate: A Metric You Cannot See You Cannot Manage", "body":
-                "This is where the Economics pillar runs directly into the Technology pillar's precondition. Vermont's own readiness data makes the point concretely: most Vermont hospitals score only 25-45% on the Data and Technology domain of the VBC Transformation Readiness Assessment -- the domain covering attribution list generation and total cost of care measurement. A hospital that cannot accurately attribute its patient population cannot manage a global budget, regardless of how well GMCB designs the budget itself.\n\n"
+                "This is where the Economics pillar runs directly into the Technology pillar's precondition. The Data and Technology domain of the VBC Readiness Assessment covers exactly this: attribution list generation and total cost of care measurement. A hospital that cannot accurately attribute its patient population cannot manage a global budget, regardless of how well GMCB designs the budget itself.\n\n"
                 "VHCURES, Vermont's all-payer claims database, is the data infrastructure that makes this measurement possible in principle. But having the database is not the same as having the internal analytics capability to use it -- precisely the gap the joint AHS-GMCB analytics vendor procurement is meant to close, and precisely the gap that determines whether a well-designed budget produces the incentive change this course describes, or just confusion at the first year-end reconciliation.\n\n"
-                "The deadline is not abstract. This is Vermont's own stated framing of Domain 2: the gap must be closed before FY2027, the year GMCB sets reference-based pricing by rule (prices take effect for commercial payers in hospital FY2028) -- not after, once the first year of binding prices has already exposed which hospitals could not see their own numbers."
+                "The deadline is not abstract. Run the arithmetic on Domain 2: the gap has to close before FY2027, the year GMCB sets reference-based pricing by rule (prices take effect for commercial payers in hospital FY2028) -- not after, once the first year of binding prices has already exposed which hospitals could not see their own numbers."
             },
             {"type": "text", "heading": "Maryland Designed It Right in 2014 and Still Had to Learn to Manage It", "body":
                 "Maryland's HSCRC had every design advantage: a unique, decades-old statutory authority and a federal waiver dating to 1977. Its 2014 Global Budget Revenue methodology is, on the design side, the most mature all-payer model in the country. But the Milbank Fund's evaluation found the model's early years reduced hospital utilization without improving population health measures like smoking or obesity rates -- because the accountability structure connecting quality and community outcomes to the budget, the Medicare Performance Adjustment and the Quality Based Reimbursement program, was strengthened over years of operation, not fully present at launch.\n\n"
@@ -385,8 +385,8 @@ LESSONS = [
                 "This is also why this course sequences Technology before Economics: the data infrastructure, attribution capability, and analytics maturity a global budget or APM contract requires are not something an organization builds in the six months before go-live. Organizations that start that build now, ahead of Vermont's FY2027-2028 deadlines, will manage the model the legislature designed. Organizations that wait will have a well-designed policy and no way to operate inside it."
             },
             {"type": "key_stat", "stats": [
-                {"value": "25-45%", "label": "Most Vermont hospitals' score on the Data and Technology readiness domain", "source": "HTR VBC Readiness Assessment / AHEAD preparation baseline"},
-                {"value": "12%", "label": "Average HCC coding gap at Vermont critical access hospitals", "source": "2025 Vermont Rural Health Redesign Center assessment"},
+                {"value": "2027", "label": "Earliest year Act 68 allows clinical–claims integration in the Unified Health Data Space (Steering Committee vote required)", "source": "Act 68 of 2025, Sec. 10 (18 V.S.A. § 9353)"},
+                {"value": "12%", "label": "Claims run-out allowed after each quarterly VHCURES collection", "source": "GMCB VHCURES documentation"},
                 {"value": "$556M", "label": "Kaiser Permanente DOJ settlement for Medicare Advantage risk-adjustment fraud, January 2026", "source": "U.S. Department of Justice"},
             ]},
             {"type": "callout", "variant": "warning", "heading": "Design Without Management Is Not Transformation", "body":
@@ -446,7 +446,7 @@ LESSONS = [
                  ]},
                 {"id": "q_5p14e", "type": "true_false", "points": 1,
                  "question": "According to this lesson, a payment model an organization cannot measure is a payment model it cannot manage, regardless of how well it was designed.",
-                 "explanation": "This is the lesson's central argument: Vermont's own readiness data show most hospitals scoring 25-45% on the data-and-technology domain, meaning the measurement capability required to manage a well-designed global budget or APM is the actual binding constraint, not the design itself.",
+                 "explanation": "This is the lesson's central argument: the book treats data and technology as Vermont's weakest readiness domain, meaning the measurement capability required to manage a well-designed global budget or APM is the actual binding constraint, not the design itself.",
                  "options": [
                      {"id": "o_5p14e1", "text": "True", "isCorrect": True},
                      {"id": "o_5p14e2", "text": "False", "isCorrect": False, "explanation": "This lesson argues exactly the opposite -- design quality cannot substitute for the measurement and analytics capability needed to manage a payment model in practice."},

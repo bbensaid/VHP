@@ -3,7 +3,8 @@
 import { useState, useMemo } from "react";
 import { Info, AlertTriangle, CheckCircle } from "lucide-react";
 
-// ─── Reference QALY values for common conditions ──────────────────────────────
+// ─── Illustrative starting values (2026-10-18: no study is cited for these numbers, so the
+// UI labels them as illustrative — users replace them with evidence for their own program) ──
 const CONDITION_PRESETS = [
   { label: "Custom", costPerPatient: 0, efficacyRate: 0, qalyGain: 0 },
   { label: "Type 2 Diabetes — Intensive Glycemic Control", costPerPatient: 4200, efficacyRate: 62, qalyGain: 0.18 },
@@ -21,7 +22,7 @@ const CONDITION_PRESETS = [
 
 // WTP thresholds (USD/QALY)
 const WTP_THRESHOLDS = [
-  { label: "NICE (UK)", value: 30000, color: "text-emerald-600" },
+  { label: "NICE (UK, upper bound ≈£30k)", value: 30000, color: "text-emerald-600" },
   { label: "ICER Standard", value: 100000, color: "text-sky-600" },
   { label: "ICER High", value: 150000, color: "text-amber-600" },
   { label: "CMS Informal", value: 200000, color: "text-rose-600" },
@@ -110,7 +111,7 @@ export default function CEACalculator() {
         <div className="lg:col-span-2 p-6 space-y-6">
           <div>
             <label className="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">
-              Condition Preset
+              Condition Preset (illustrative values)
             </label>
             <select
               value={preset}
@@ -121,6 +122,7 @@ export default function CEACalculator() {
                 <option key={i} value={i}>{p.label}</option>
               ))}
             </select>
+            <p className="text-[11px] text-slate-400 mt-1.5">Presets are illustrative starting points, not values from a specific study — replace cost, response rate and QALY gain with evidence for your own program.</p>
           </div>
 
           {[

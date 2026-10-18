@@ -753,8 +753,8 @@ LESSONS = [
                 "stats": [
                     {
                         "value": "12%",
-                        "label": "Average HCC coding gap at Vermont's critical access hospitals, identified in RHRC's 2025 assessment",
-                        "source": "RHRC 2025 assessment, cited in AHS Transformation Reports",
+                        "label": "Vermont hospitals with transformation plans developed with AHS (RHRC supported the 2025 planning process)",
+                        "source": "AHS Act 68 report, June 2026",
                     },
                     {
                         "value": "$1,846",

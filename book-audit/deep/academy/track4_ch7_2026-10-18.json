@@ -1,0 +1,75 @@
+{
+ "tag": "track4-ch7",
+ "note": "Track 4 L13/L14 (Ch7). No source for '25-45%' / '40-60%' readiness scores or '12% HCC gap (2025 RHRC)' — removed from book (ch07 findings 12, 20). Replacement stats: Act 68 Sec. 10 (clinical–claims integration not before 1/1/2027, Steering Committee vote); VHCURES quarterly with ~6-month run-out (GMCB).",
+ "pairs": [
+  [
+   "For Vermont specifically, Domain 2 (Data and Technology) is the binding constraint: most Vermont hospitals score only 25-45% in this domain, while Blueprint-participating patient-centered medical homes with active Community Health Team support score 40-60% in Domain 3 (care delivery) -- strong by national standards. The gap is not clinical capability;",
+   "For Vermont specifically, the book argues that Domain 2 (Data and Technology) is the binding constraint, while the Blueprint's patient-centered medical homes and Community Health Teams give Domain 3 (care delivery) a long head start. The gap is not clinical capability;"
+  ],
+  [
+   "Blueprint-participating PCMH practices with active Community Health Team support score 40-60% on the care-delivery readiness domain -- strong by national standards. Most Vermont hospitals score only 25-45% on the data-and-technology domain. Before assuming downside risk, close the second gap, not the first -- it is already closed.",
+   "Vermont's Blueprint practices and Community Health Teams give it a head start on care delivery; data and technology is the weaker domain. Before assuming downside risk, close that gap first."
+  ],
+  [
+   "Vermont's own readiness data makes the point concretely: most Vermont hospitals score only 25-45% on the Data and Technology domain of the VBC Transformation Readiness Assessment -- the domain covering attribution list generation and total cost of care measurement.",
+   "The Data and Technology domain of the VBC Readiness Assessment covers exactly this: attribution list generation and total cost of care measurement."
+  ],
+  [
+   "This is Vermont's own stated framing of Domain 2: the gap must be closed before FY2027",
+   "Run the arithmetic on Domain 2: the gap has to close before FY2027"
+  ],
+  [
+   "Most Vermont hospitals' score on the Data and Technology readiness domain",
+   "Earliest year Act 68 allows clinical–claims integration in the Unified Health Data Space (Steering Committee vote required)"
+  ],
+  [
+   "HTR VBC Readiness Assessment / AHEAD preparation baseline",
+   "Act 68 of 2025, Sec. 10 (18 V.S.A. § 9353)"
+  ],
+  [
+   "\"value\":\"25-45%\"",
+   "\"value\":\"2027\""
+  ],
+  [
+   "\"value\": \"25-45%\"",
+   "\"value\": \"2027\""
+  ],
+  [
+   "Average HCC coding gap at Vermont critical access hospitals",
+   "Claims run-out allowed after each quarterly VHCURES collection"
+  ],
+  [
+   "2025 Vermont Rural Health Redesign Center assessment",
+   "GMCB VHCURES documentation"
+  ],
+  [
+   "Average HCC coding gap at Vermont's critical access hospitals, identified in RHRC's 2025 assessment",
+   "Vermont hospitals with transformation plans developed with AHS (RHRC supported the 2025 planning process)"
+  ],
+  [
+   "RHRC 2025 assessment, cited in AHS Transformation Reports",
+   "AHS Act 68 report, June 2026"
+  ],
+  [
+   "\"label\":\"Vermont hospitals with transformation plans developed with AHS (RHRC supported the 2025 planning process)\",\"value\":\"12%\"",
+   "\"label\":\"Vermont hospitals with transformation plans developed with AHS (RHRC supported the 2025 planning process)\",\"value\":\"14 of 14\""
+  ],
+  [
+   "\"value\": \"12%\",\n                  \"label\": \"Vermont hospitals with transformation plans developed with AHS (RHRC supported the 2025 planning process)\"",
+   "\"value\": \"14 of 14\",\n                  \"label\": \"Vermont hospitals with transformation plans developed with AHS (RHRC supported the 2025 planning process)\""
+  ],
+  [
+   "\"label\":\"Claims run-out allowed after each quarterly VHCURES collection\",\"value\":\"12%\"",
+   "\"label\":\"Claims run-out allowed after each quarterly VHCURES collection\",\"value\":\"~6 mo\""
+  ],
+  [
+   "\"value\": \"12%\",\n                  \"label\": \"Claims run-out allowed after each quarterly VHCURES collection\"",
+   "\"value\": \"~6 mo\",\n                  \"label\": \"Claims run-out allowed after each quarterly VHCURES collection\""
+  ],
+  [
+   "Vermont's own readiness data show most hospitals scoring 25-45% on the data-and-technology domain, meaning",
+   "the book treats data and technology as Vermont's weakest readiness domain, meaning"
+  ]
+ ],
+ "residue": "25-45%|40-60% (in|on) |Average HCC coding gap at Vermont|own stated framing of Domain 2|identified in RHRC's 2025 assessment|\"value\":\"12%\",\"label\":\"Claims"
+}

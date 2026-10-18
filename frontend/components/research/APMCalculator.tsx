@@ -60,7 +60,7 @@ const APM_MODELS: CalcModel[] = [
       { upToPct: 50, providerShare: 0.25 },
       { upToPct: Infinity, providerShare: 0.1 },
     ],
-    desc: "Full-risk REACH option. 3.5% discount off the benchmark; ACO keeps 100% of savings or losses up to 10% of benchmark, then 50% / 25% / 10% through risk corridors. 5% quality withhold.",
+    desc: "Full-risk REACH option (REACH ends in 2026; CMS's LEAD model succeeds it from 2027). 3.5% discount off the benchmark; ACO keeps 100% of savings or losses up to 10% of benchmark, then 50% / 25% / 10% through risk corridors. 5% quality withhold.",
   },
   {
     id: "bpci",
