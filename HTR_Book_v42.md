@@ -5199,7 +5199,7 @@ Provider credentialing --- the process of verifying a clinician's education, tra
 
 Vermont's transformation agenda accelerates the credentialing importance for two specific reasons. First, regionalization --- moving to a tiered hospital network where patients follow clinical protocols to Centers of Excellence --- requires providers to have privileges at multiple facilities, not just their home institution. A surgeon designated as a COE orthopedic provider must be credentialed at the regional COE facility to practice there, and the credentialing process must occur before the regionalization takes effect. Vermont hospitals that do not begin cross-facility credentialing before COE designations are finalized will face delays in implementing the regionalization blueprint.
 
-Second, scope-of-practice expansion --- enabling APRNs, PAs, and other non-physician clinicians to practice at the top of their licensure --- requires updated credentialing standards and privilege delineations at every facility. Oliver Wyman's workforce recommendation to expand professional licensure and practice scope is not a paperwork exercise; it requires systematic credentialing policy updates at 14 hospitals, coordinated through the Vermont CIN's shared services infrastructure.
+Second, scope-of-practice expansion --- enabling APRNs, PAs, and other non-physician clinicians to practice at the top of their licensure --- requires updated credentialing standards and privilege delineations at every facility. Oliver Wyman's workforce recommendation to expand professional licensure and practice scope is not a paperwork exercise; it requires systematic credentialing policy updates at all 14 hospitals, which the RHT-funded CIN's shared services can coordinate for the independent hospitals that join it.
 
 ### 11.13.2 **The Credentialing Efficiency Framework**
 
@@ -5209,7 +5209,7 @@ Primary source verification automation: Replace manual verification of medical s
 
 Continuous monitoring replacing point-in-time verification: Implement ongoing license and sanction monitoring that alerts the credentialing office when a provider's license status changes, rather than discovering changes at 2-year re-credentialing intervals. Continuous monitoring reduces risk while eliminating the administrative burden of complete re-verification at each cycle.
 
-Unified credentialing for the Vermont CIN: Vermont's 14 hospitals sharing a common credentialing database --- so that a provider credentialed at one CIN member facility has their verified credentials available to all member facilities --- reduces the per-facility credentialing burden for providers practicing at multiple sites. This is a direct shared service application that Oliver Wyman's CIN design makes possible.
+Unified credentialing for the Vermont CIN: member hospitals sharing a common credentialing database --- so that a provider credentialed at one CIN member facility has their verified credentials available to all member facilities --- reduces the per-facility credentialing burden for providers practicing at multiple sites. It is a direct application of the shared services Oliver Wyman recommended and the RHT-funded CIN is designed to provide.
 
 ## 11.14 **Workforce Operations --- Managing the Care Team in a Transformed System**
 
