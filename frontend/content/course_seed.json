@@ -522,7 +522,7 @@
                 {
                   "year": "2025",
                   "title": "Vermont Act 62",
-                  "body": "Transfers Vermont's Health Information Technology Plan responsibility from GMCB to DVHA. Requires annual HIE Strategic Plan updates.",
+                  "body": "Ends GMCB review and approval of the Health Information Technology Plan, the HIE connectivity criteria and VITL's budget (from July 1, 2025). DVHA, which already coordinated the Plan, revises it annually.",
                   "pillar": "policy"
                 }
               ]
@@ -548,8 +548,8 @@
                 },
                 {
                   "icon": "ti-database",
-                  "title": "DVHA / VHCURES",
-                  "body": "Department of Vermont Health Access administers Medicaid and VHCURES — Vermont's all-payer claims database. Now coordinates the HIT Plan per Act 62."
+                  "title": "DVHA",
+                  "body": "Department of Vermont Health Access administers Medicaid and coordinates the HIT Plan with the HIE Steering Committee. VHCURES, Vermont's all-payer claims database, is run by the Green Mountain Care Board."
                 }
               ]
             },

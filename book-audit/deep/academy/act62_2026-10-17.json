@@ -1,0 +1,11 @@
+{"tag": "act62",
+ "note": "Act 62 of 2025 (S.63) eliminated GMCB review/approval of the HIT Plan, HIE connectivity criteria and VITL budget; Nov 1 submission repealed; DVHA already coordinated the Plan. VHCURES is the GMCB's all-payer claims database, not DVHA's. Sources: book-audit/deep/sources/act62_2025_as_enacted.txt, act62_2025_summary.txt",
+ "pairs": [
+  ["The Plan is submitted annually to the Green Mountain Care Board (GMCB) by November 1 and must be approved, rejected, or modified by GMCB within 45 days.", "Until Act 62 of 2025, DVHA submitted the Plan to the Green Mountain Care Board (GMCB) each November 1 for approval; since July 1, 2025 the Board no longer approves it, and DVHA revises it annually with its HIE Steering Committee, with a comprehensive update every five years."],
+  ["Note: As of July 1, 2025, Act 62 transferred VITL oversight away from the GMCB, restructuring Vermont's health IT governance.", "Act 62 also ended the GMCB's review of VITL's annual budget and of the HIE connectivity criteria."],
+  ["Transfers Vermont's Health Information Technology Plan responsibility from GMCB to DVHA. Requires annual HIE Strategic Plan updates.", "Ends GMCB review and approval of the Health Information Technology Plan, the HIE connectivity criteria and VITL's budget (from July 1, 2025). DVHA, which already coordinated the Plan, revises it annually."],
+  ["Department of Vermont Health Access administers Medicaid and VHCURES — Vermont's all-payer claims database. Now coordinates the HIT Plan per Act 62.", "Department of Vermont Health Access administers Medicaid and coordinates the HIT Plan with the HIE Steering Committee. VHCURES, Vermont's all-payer claims database, is run by the Green Mountain Care Board."],
+  ["\"title\":\"DVHA / VHCURES\"", "\"title\":\"DVHA\""],
+  ["\"title\": \"DVHA / VHCURES\"", "\"title\": \"DVHA\""]
+ ],
+ "residue": "transferred (VITL oversight|responsibility for the (statewide )?Health Information Technology Plan) (away )?from|administers Medicaid and VHCURES|by November 1 and must be approved"}

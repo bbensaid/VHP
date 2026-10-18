@@ -174,7 +174,7 @@ export const PILLAR_ROWS: ComparisonRow[] = [
     label: "State HIE governance",
     pillar: "technology",
     cells: {
-      vermont:    { value: "Act 62 (2025)", detail: "HIT Plan and VITL oversight moved from GMCB to DVHA, effective July 1, 2025", verdict: "best" },
+      vermont:    { value: "Act 62 (2025)", detail: "GMCB approval of the HIT Plan, HIE connectivity criteria and VITL budget ended July 1, 2025; DVHA runs the Plan", verdict: "best" },
       oregon:     { value: "Mature",        detail: "OHA leads, regional HIEs converge" },
       california: { value: "Fragmented",    detail: "Data Exchange Framework launching 2024–2026", verdict: "worst" },
     },

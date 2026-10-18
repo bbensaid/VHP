@@ -5,7 +5,7 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import VermontReformCascade from "@/components/VermontReformCascade";
 
 export async function generateMetadata(): Promise<Metadata> {
-  return brandedMetadata("Vermont Act 68 (2025)", "Vermont Act 68 of 2025 — the most consequential healthcare legislation in Vermont since the Green Mountain Care Board's creation. Mandates reference-based pricing (GMCB methodology by rule in 2027, effective hospital FY2028), hospital global budgets (FY2028–2030), and a Statewide Health Care Delivery Strategic Plan due on or before January 15, 2028.");
+  return brandedMetadata("Vermont Act 68 (2025)", "Vermont Act 68 of 2025 mandates reference-based pricing (GMCB methodology by rule in 2027, effective hospital FY2028), hospital global budgets (FY2028–2030), and a Statewide Health Care Delivery Strategic Plan due on or before January 15, 2028.");
 }
 
 function ExternalLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -190,14 +190,14 @@ export default function VermontAct68Page() {
             },
             {
               number: "05",
-              title: "Administrative Simplification Agenda",
-              body: "Initiates a study commission on site-neutral payment reform. Requires hospitals to maintain HIE connectivity (Act 68 mandates hospital connection to VITL/VHIE). Establishes prior authorization reform requirements building on the 2024 CMS Interoperability Rule. Authorizes the Green Mountain Care Board to set administrative overhead benchmarks.",
+              title: "Wider Hospital Budget Review",
+              body: "Adds to what the Green Mountain Care Board weighs in each hospital budget: administrative costs, including marketing and advertising; the number of primarily administrative employees compared with those delivering care; executive and clinical leadership pay, compared with northern New England; and whether Medicaid costs are being shifted to other payers. Hospitals must still keep connectivity to the State's Health Information Exchange (18 V.S.A. § 9456).",
               tag: "Policy Pillar",
             },
             {
               number: "06",
               title: "Transformation Grants — $2M Authorized",
-              body: "Authorizes $2M in Act 68 transformation grants for Vermont hospitals developing transformation plans under the RHRC technical assistance process. Grants support the analytical work, organizational redesign, and care delivery transformation planning that the statutory timeline requires — specifically for hospitals without the internal capacity to conduct this work independently. Status (AHS report, May 1, 2026): all 14 hospitals filed transformation plans; 13 eligible hospitals applied for transformation grants and 5 grant agreements had been signed.",
+              body: "Appropriates $2M to AHS for feasibility analysis and transformation-plan development with hospitals, designated agencies, primary care organizations and other community providers (Sec. 18), and a further $2M from the Health IT Fund for grants to hospitals to reduce costs and expand access. Status (AHS report, June 2026): all 14 hospitals have transformation plans; all 13 eligible hospitals applied for grants, 11 had executed grant agreements and 2 were still in negotiation.",
               tag: "Operations Pillar",
             },
           ].map((item) => (
@@ -319,7 +319,7 @@ export default function VermontAct68Page() {
                 including work requirements and six-month eligibility redeterminations (both from January 1, 2027), and caps on state provider
                 taxes. Vermont's hospitals, already financially fragile, absorb these Medicaid revenue reductions
                 at the same time they are executing Act 68 transformation plans. Vermont's Rural Health
-                Transformation Program award ($195M for FY2026, about that much each year through FY2030) partially offsets this pressure, but the RHT Program is
+                Transformation Program award ($195M for FY2026; later years' awards are set annually through FY2030) partially offsets this pressure, but the RHT Program is
                 time-limited (FY2026–2030) while Medicaid cuts are permanent and back-loaded after 2030.
               </p>
             </div>
@@ -333,7 +333,7 @@ export default function VermontAct68Page() {
                 "Vermont Medicaid covers ~19% of insured population — Medicaid revenue cuts affect every Vermont hospital's financial position",
                 "Work requirements beginning January 1, 2027 may reduce Medicaid enrollment, shrinking the insured base global budgets are designed to manage",
                 "Six-month eligibility redeterminations (from January 1, 2027) increase DVHA administrative burden during the same period AHS is restructuring",
-                "Vermont's RHT Program (about $195M a year, FY2026–2030) must be invested in structural transformation — not operating revenue replacement — to survive post-2030",
+                "Vermont's RHT Program ($195M for FY2026; awards set annually through FY2030) must be invested in structural transformation — not operating revenue replacement — to survive post-2030",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
                   <span className="text-rose-500 shrink-0 mt-0.5">•</span>
@@ -443,7 +443,7 @@ export default function VermontAct68Page() {
             },
             {
               term: "Hospital Global Budget",
-              def: "A prospective annual budget set for each hospital at the beginning of the year, covering all-payer revenue. Hospitals receive their budget amount regardless of utilization volume — converting the financial incentive from maximizing services to managing population health. Under Act 68, global budgets begin for non-critical-access hospitals in FY2028 and extend to all hospitals by FY2030.",
+              def: "A prospective annual budget set for each hospital at the beginning of the year, covering all-payer revenue. Hospitals receive their budget amount regardless of utilization volume — converting the financial incentive from maximizing services to managing population health. Under Act 68, global budgets begin no later than FY2028 for one or more non-critical-access hospitals and extend to all hospitals by FY2030, in both cases to the extent resources are available.",
             },
             {
               term: "Statewide Health Care Delivery Strategic Plan",
@@ -451,11 +451,11 @@ export default function VermontAct68Page() {
             },
             {
               term: "Rural Health Transformation (RHT) Program",
-              def: "The $50B federal program (FY2026–FY2030) included in H.R. 1 to offset the impact of its Medicaid cuts on rural hospitals. Vermont's FY2026 award was $195,053,740 (CMS, December 29, 2025), with awards of roughly that size each year through FY2030. RHT capital is for infrastructure investment (technology, broadband, EMS), not operating revenue replacement.",
+              def: "The $50B federal program (FY2026–FY2030) included in H.R. 1 to offset the impact of its Medicaid cuts on rural hospitals. Vermont's FY2026 award was $195,053,740 (CMS, December 29, 2025); later years' awards are set annually through FY2030. Vermont's plan funds transformation projects — data analytics, e-Consult, remote monitoring, regionalization grants — not operating revenue replacement.",
             },
             {
               term: "Reform Cascade",
-              def: "Vermont's legislatively structured reform sequence: Act 167 (2022) → Act 51 (2023) → Act 55 (2024) → Act 68 (2025). Each act builds on the institutional capacity and political legitimacy created by its predecessor, converting voluntary reform into statutory obligation progressively.",
+              def: "Vermont's legislatively structured reform sequence: Act 167 (2022) → Act 51 (2023) → Act 68 (2025), alongside Act 55 (2025, hospital drug-charge cap) and Act 62 (2025, GMCB approval of HIE planning ended). Each act builds on the institutional capacity and political legitimacy created by its predecessor, converting voluntary reform into statutory obligation progressively.",
             },
             {
               term: "RHRC (Rural Health Redesign Center)",

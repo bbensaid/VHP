@@ -259,7 +259,7 @@ export default function VermontUHDSPage() {
                 ["Act 61 (2009)", "Original statutory basis for Vermont's HIE program (18 V.S.A. §§ 9351–9352), designating VITL as the exclusive legislatively designated operator of the statewide exchange."],
                 ["HITECH (2009)", "Federal “Meaningful Use” program that seeded Vermont's HIE and EHR-adoption funding — from ~$1.4M in 2009 to well over $100M cumulatively by the late 2010s."],
                 ["Act 167 (2022)", "Directed redesign of care delivery — and repealed 18 V.S.A. § 9410(e), so direct patient identifiers could finally be used for accurate record matching."],
-                ["Act 62 (2025)", "Transferred the statewide Health IT Plan from GMCB to DVHA, effective July 1, 2025. Annual revisions due November 1; full update every five years."],
+                ["Act 62 (2025)", "From July 1, 2025, ended GMCB review and approval of the statewide Health IT Plan, the HIE connectivity criteria and VITL's budget; DVHA, which already coordinated the Plan, now runs it with its HIE Steering Committee. The Plan is revised annually and fully updated every five years."],
                 ["Act 68 (2025), §10", "Mandated integration of clinical, claims and SDOH data into a single record, and required AHS to report to the Legislature by January 15, 2026 — delivered on schedule."],
                 ["42 CFR Part 2", "Federal enhanced confidentiality for substance use disorder records."],
                 ["TEFCA", "Federal framework for nationwide exchange interoperability."],

@@ -25,13 +25,13 @@ const REFORM_CASCADE: Act[] = [
     pillar: "Policy",
     pillarColor: "bg-blue-100 text-blue-700 border-blue-200",
     summary:
-      "The enabling framework. Directed negotiation of a successor all-payer agreement with CMS (later AHEAD). Commissioned the Oliver Wyman $1M statewide hospital systems analysis that diagnosed Vermont's crisis. Established community engagement process without mandating specific outcomes.",
+      "The enabling framework. Directed AHS to develop a proposal for a successor all-payer agreement with CMS (later AHEAD) and the GMCB, with AHS, to run a data-informed, community-inclusive engagement process for Vermont's hospitals — which produced the Oliver Wyman hospital systems analysis. It appropriated $900,000 to AHS and $4.1M to the GMCB for this work, without mandating specific outcomes.",
     keyProvisions: [
       "Directed negotiation of a successor all-payer agreement with CMS (later AHEAD)",
-      "Commissioned Oliver Wyman hospital systems analysis (released September 2024)",
-      "Established community and stakeholder engagement across all 14 hospitals",
-      "Authorized GMCB to develop value-based payment models",
-      "Set aspirational 2028 reform implementation target",
+      "Hospital system engagement process (GMCB with AHS) — the Oliver Wyman analysis, presented September 2024",
+      "Five goals: reduce inefficiencies, lower costs, improve population health outcomes, reduce health inequities, increase access to essential services",
+      "GMCB to determine how to bring value-based payments, including global payments, into hospital budget review",
+      "$900,000 to AHS and $4.1M to the GMCB (FY2023), including for consultants",
     ],
   },
   {
@@ -49,23 +49,6 @@ const REFORM_CASCADE: Act[] = [
       "Required AHS–GMCB consultation to keep planning aligned with the Act 167 analysis",
       "Expanded Medicaid adult dental coverage; FQHC and Blueprint payment reports",
       "Restricted hospital liens where a patient has health insurance",
-    ],
-  },
-  {
-    year: "2024",
-    shortName: "Act 55",
-    fullName: "Act 55 — Pharmaceutical Affordability",
-    status: "completed",
-    href: "/policy",
-    pillar: "Economics",
-    pillarColor: "bg-emerald-100 text-emerald-700 border-emerald-200",
-    summary:
-      "Drug pricing reform. Capped pharmaceutical manufacturer price increases. GMCB estimates $135M in Vermont savings over five years — addressing the prescription drug component of the premium crisis that hospital prices primarily drive.",
-    keyProvisions: [
-      "Caps on pharmaceutical manufacturer price increases above CPI",
-      "GMCB affordability review authority for high-cost drugs",
-      "Estimated $135M in Vermont savings over 5 years",
-      "Complements RBP by addressing the drug cost component of premium inflation",
     ],
   },
   {
@@ -87,19 +70,36 @@ const REFORM_CASCADE: Act[] = [
   },
   {
     year: "2025",
+    shortName: "Act 55",
+    fullName: "Act 55 — 340B Drug Pricing and Hospital Drug Charges (H.266)",
+    status: "completed",
+    href: "/policy",
+    pillar: "Economics",
+    pillarColor: "bg-emerald-100 text-emerald-700 border-emerald-200",
+    summary:
+      "Hospital drug prices. Signed June 11, 2025. From January 1, 2026, caps what hospitals may charge health insurers for outpatient-administered drugs at 120% of the average sales price (or the lower percentage a hospital charged on April 1, 2025). Independent critical access hospitals are exempt. The GMCB counts $104.3M in FY2026 commercial revenue reductions from the cap (GMCB, February 2026).",
+    keyProvisions: [
+      "Outpatient drug charges capped at 120% of ASP from January 1, 2026 (18 V.S.A. § 9407)",
+      "Protects 340B covered entities and contract pharmacies from manufacturer restrictions",
+      "Annual 340B participation reports from covered entities (first due January 31, 2026)",
+      "$104.3M FY2026 commercial revenue reduction attributed to the cap (GMCB)",
+    ],
+  },
+  {
+    year: "2025",
     shortName: "Act 62",
-    fullName: "Act 62 — HIE Governance Transfer",
+    fullName: "Act 62 — GMCB Regulatory Duties (S.63)",
     status: "completed",
     href: "/technology",
     pillar: "Technology",
     pillarColor: "bg-indigo-100 text-indigo-700 border-indigo-200",
     summary:
-      "Technology governance. Transferred responsibility for Vermont's statewide Health Information Technology Plan from GMCB to DVHA (effective July 1, 2025). Aligns HIT strategy with DVHA's operational relationships with providers through Medicaid and Blueprint.",
+      "Technology governance. From July 1, 2025, ended the GMCB's review and approval of the statewide Health Information Technology Plan, the HIE connectivity criteria and VITL's annual budget, leaving the Plan with DVHA, which already coordinated it. Also rewrote ACO certification and budget review.",
     keyProvisions: [
-      "HIE Strategic Plan authority transferred from GMCB to DVHA",
-      "Annual HIT Plan revisions due November 1; comprehensive updates every 5 years",
+      "GMCB approval of the HIT Plan, HIE connectivity criteria and VITL budget eliminated",
+      "HIT Plan revised annually; comprehensive update every 5 years",
       "DVHA coordination with HIE Steering Committee",
-      "Aligns technology strategy with DVHA's Medicaid and Blueprint operations",
+      "From January 1, 2027, every ACO operating in Vermont must be GMCB-certified; streamlined path for Medicare-only ACOs",
     ],
   },
   {
@@ -111,7 +111,7 @@ const REFORM_CASCADE: Act[] = [
     pillar: "Policy",
     pillarColor: "bg-blue-100 text-blue-700 border-blue-200",
     summary:
-      "Mandatory structural reform. The culmination of the cascade — converts voluntary payment reform into statutory mandate. Requires reference-based pricing (statutory deadline FY2027; GMCB method by rule in 2027, prices effective hospital FY2028), hospital global budgets (FY2028–2030), and a Statewide Strategic Plan (on or before January 15, 2028). The most consequential Vermont healthcare legislation since Act 48 created the GMCB in 2011.",
+      "Mandatory structural reform. The culmination of the cascade — converts voluntary payment reform into statutory mandate. Requires reference-based pricing (statutory deadline FY2027; GMCB method by rule in 2027, prices effective hospital FY2028), hospital global budgets (FY2028–2030), and a Statewide Strategic Plan (on or before January 15, 2028).",
     keyProvisions: [
       "Reference-based pricing: GMCB sets the method by rule in 2027; prices effective hospital FY2028 (statutory deadline FY2027)",
       "Hospital global budgets mandatory FY2028–2030 (non-CAH hospitals first; Medicare alignment unresolved)",
