@@ -505,7 +505,7 @@ LESSONS = [
                     "type": "single_choice",
                     "points": 1,
                     "question": "Vermont signed the AHEAD State Agreement in January 2025 and withdrew in July 2026. What triggered the withdrawal?",
-                    "explanation": "CMS renegotiated the model's terms. Vermont had projected roughly $138 million in additional federal funds; the renegotiation capped additional payments at approximately $10 million. The state withdrew before its 2028 performance period began and redirected to the Rural Health Transformation Program's $195 million per year.",
+                    "explanation": "CMS renegotiated the model's terms. Vermont had projected roughly $138 million in additional federal funds; the renegotiation capped additional payments at approximately $10 million. The state withdrew before its 2028 performance period began; its technology build now leans on the separate Rural Health Transformation Program ($195 million for FY2026, an annual award).",
                     "options": [
                         {"id": "o_5p8c1", "text": "A CMS renegotiation cut Vermont's expected additional federal funding from roughly $138 million to a cap near $10 million", "isCorrect": True},
                         {"id": "o_5p8c2", "text": "The Vermont legislature repealed Act 68, removing the state authority AHEAD required", "isCorrect": False, "explanation": "Act 68 remains in force. Its reference-based pricing mandate, global budget schedule and January 15, 2028 Strategic Plan deadline were unaffected by the withdrawal — which is the point of the example."},

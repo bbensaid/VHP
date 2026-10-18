@@ -1,0 +1,15 @@
+{
+ "tag": "rht-annual",
+ "note": "RHT: Vermont FY2026 award $195,053,740 (CMS 12/29/2025); later years' awards set annually through FY2030 (P.L. 119-21: half equal, half scored). '$195M a year' for every year is not established. AHEAD withdrawal did not 'redirect' funds to RHT (separate federal program).",
+ "pairs": [
+  [
+   "(roughly $195M a year in RHT capital and $300M-plus in projected RBP savings",
+   "($195M in FY2026 RHT capital alone, and $300M-plus in projected RBP savings"
+  ],
+  [
+   "The state withdrew before its 2028 performance period began and redirected to the Rural Health Transformation Program's $195 million per year.",
+   "The state withdrew before its 2028 performance period began; its technology build now leans on the separate Rural Health Transformation Program ($195 million for FY2026, an annual award)."
+  ]
+ ],
+ "residue": "roughly \\$195M a year|redirected to the Rural Health Transformation"
+}

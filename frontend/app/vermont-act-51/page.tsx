@@ -281,7 +281,7 @@ export default function VermontAct51Page() {
             {
               act: "Act 167 (2022)",
               role: "Diagnostic mandate",
-              body: "Commissioned the independent system-wide analysis and the community engagement across all 14 hospitals that became the Oliver Wyman report.",
+              body: "Required the data-informed, community-inclusive hospital engagement process across all of Vermont's hospital service areas that became the Oliver Wyman report.",
               href: "/vermont-act-167",
               tone: "bg-white border-slate-200",
             },
@@ -295,7 +295,7 @@ export default function VermontAct51Page() {
             {
               act: "Act 68 (2025)",
               role: "Operational mandate",
-              body: "Mandatory reference-based pricing (FY2027), hospital global budgets (FY2028–FY2030), AHS restructuring, and the Statewide Strategic Plan due on or before January 15, 2028.",
+              body: "Mandatory reference-based pricing (statutory deadline FY2027; GMCB prices effective FY2028), hospital global budgets (FY2028–FY2030, resources permitting), and the Statewide Strategic Plan due on or before January 15, 2028.",
               href: "/vermont-act-68",
               tone: "bg-white border-slate-200",
             },
