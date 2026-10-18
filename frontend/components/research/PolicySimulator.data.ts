@@ -8,203 +8,74 @@
 
 export type Tab = "waiver" | "apm" | "expansion" | "transparency";
 
+// State profiles — sourced 2026-10-17 (book-audit/deep/sources/). The earlier per-capita spending and
+// "budget share" fields had no source and were removed.
 export const STATE_DATA: Record<
   string,
   {
     enrollees: number;
-    perCapitaSpending: number;
     fmap: number;
-    budgetPct: number;
-    uninsuredRate: number;
+    uninsuredAdultsPct: number;
     population: number;
   }
 > = {
   Vermont: {
-    enrollees: 218000,
-    perCapitaSpending: 9800,
-    fmap: 56.87,
-    budgetPct: 28.4,
-    uninsuredRate: 4.2,
-    population: 647000,
-  },
-  "New York": {
-    enrollees: 7800000,
-    perCapitaSpending: 11200,
-    fmap: 50.0,
-    budgetPct: 35.1,
-    uninsuredRate: 5.8,
-    population: 19800000,
+    enrollees: 146383, // CMS Medicaid & CHIP enrollment, May 2026 (updated)
+    fmap: 57.76, // FY2027, Federal Register Nov 28, 2025
+    uninsuredAdultsPct: 4.1, // CDC BRFSS 2025, adults 18+
+    population: 644663, // Census Vintage 2025
   },
   California: {
-    enrollees: 14500000,
-    perCapitaSpending: 7900,
-    fmap: 50.0,
-    budgetPct: 21.3,
-    uninsuredRate: 7.2,
-    population: 39200000,
+    enrollees: 11837741, // CMS Medicaid & CHIP enrollment, May 2026 (updated)
+    fmap: 50.0, // FY2027, Federal Register Nov 28, 2025
+    uninsuredAdultsPct: 7.4, // CDC BRFSS 2024, adults 18+
+    population: 39355309, // Census Vintage 2025
   },
   Texas: {
-    enrollees: 4900000,
-    perCapitaSpending: 5600,
-    fmap: 58.77,
-    budgetPct: 18.9,
-    uninsuredRate: 18.4,
-    population: 30000000,
+    enrollees: 3971026, // CMS Medicaid & CHIP enrollment, May 2026 (updated)
+    fmap: 58.54, // FY2027, Federal Register Nov 28, 2025
+    uninsuredAdultsPct: 14.7, // CDC BRFSS 2025, adults 18+
+    population: 31709821, // Census Vintage 2025
   },
   Ohio: {
-    enrollees: 3100000,
-    perCapitaSpending: 7200,
-    fmap: 63.18,
-    budgetPct: 26.7,
-    uninsuredRate: 6.5,
-    population: 11800000,
+    enrollees: 2620167, // CMS Medicaid & CHIP enrollment, May 2026 (updated)
+    fmap: 65.12, // FY2027, Federal Register Nov 28, 2025
+    uninsuredAdultsPct: 6.5, // CDC BRFSS 2025, adults 18+
+    population: 11900510, // Census Vintage 2025
   },
   Michigan: {
-    enrollees: 2800000,
-    perCapitaSpending: 7800,
-    fmap: 67.42,
-    budgetPct: 29.8,
-    uninsuredRate: 5.6,
-    population: 10000000,
+    enrollees: 2170730, // CMS Medicaid & CHIP enrollment, May 2026 (updated)
+    fmap: 65.7, // FY2027, Federal Register Nov 28, 2025
+    uninsuredAdultsPct: 5.2, // CDC BRFSS 2025, adults 18+
+    population: 10127884, // Census Vintage 2025
   },
 };
 
+// Descriptions only. The earlier "approvalBase" probabilities and "cmsAlignment" labels had no source, and scored
+// work requirements as unlikely to be approved — H.R. 1 (2025) now requires them for expansion adults from 2027.
 export const WAIVER_TYPES = [
-  {
-    id: "global_commitment",
-    label: "Global Commitment to Health (Vermont)",
-    approvalBase: 0.82,
-    cmsAlignment: "High",
-  },
-  {
-    id: "dsrip",
-    label: "DSRIP (NY/NJ/TX model)",
-    approvalBase: 0.68,
-    cmsAlignment: "Moderate",
-  },
-  {
-    id: "community_engagement",
-    label: "Community Engagement Requirements",
-    approvalBase: 0.35,
-    cmsAlignment: "Low",
-  },
-  {
-    id: "expansion_premium",
-    label: "Expansion with Premium",
-    approvalBase: 0.55,
-    cmsAlignment: "Moderate",
-  },
-  {
-    id: "managed_care",
-    label: "Managed Care",
-    approvalBase: 0.72,
-    cmsAlignment: "High",
-  },
-  {
-    id: "behavioral_health",
-    label: "Behavioral Health Focus",
-    approvalBase: 0.78,
-    cmsAlignment: "High",
-  },
-  {
-    id: "global_budget",
-    label: "Global Budget",
-    approvalBase: 0.6,
-    cmsAlignment: "Moderate",
-  },
+  { id: "global_commitment", label: "Global Commitment to Health (Vermont)", note: "Vermont's Section 1115 demonstration; expires December 31, 2027." },
+  { id: "dsrip", label: "DSRIP (NY/NJ/TX model)", note: "Delivery System Reform Incentive Payment pools used in several Section 1115 demonstrations." },
+  { id: "community_engagement", label: "Community Engagement Requirements", note: "Required nationally for expansion adults from January 1, 2027 under H.R. 1; no waiver needed." },
+  { id: "expansion_premium", label: "Expansion with Premium", note: "Premiums or contributions for expansion adults under an 1115 demonstration." },
+  { id: "managed_care", label: "Managed Care", note: "Mandatory managed care via 1115 or 1915(b) authority." },
+  { id: "behavioral_health", label: "Behavioral Health Focus", note: "e.g., IMD exclusion waivers for SUD and serious mental illness treatment." },
+  { id: "global_budget", label: "Global Budget", note: "Hospital or system global budgets financed through the demonstration — Vermont's 2026 attempt was ruled outside its terms (CMS, July 2026)." },
 ];
 
-export const NON_EXPANSION_STATES: Record<
-  string,
-  {
-    uninsuredRate: number;
-    coverageGap: number;
-    uncomp: number;
-    population: number;
-    fmap: number;
-    label: string;
-  }
-> = {
-  Texas: {
-    uninsuredRate: 18.4,
-    coverageGap: 1200000,
-    uncomp: 5800000000,
-    population: 30000000,
-    fmap: 58.77,
-    label: "Texas",
-  },
-  Florida: {
-    uninsuredRate: 13.2,
-    coverageGap: 780000,
-    uncomp: 3900000000,
-    population: 22600000,
-    fmap: 55.14,
-    label: "Florida",
-  },
-  Georgia: {
-    uninsuredRate: 13.8,
-    coverageGap: 410000,
-    uncomp: 2100000000,
-    population: 10900000,
-    fmap: 67.19,
-    label: "Georgia",
-  },
-  Tennessee: {
-    uninsuredRate: 11.0,
-    coverageGap: 190000,
-    uncomp: 1200000000,
-    population: 7100000,
-    fmap: 66.57,
-    label: "Tennessee",
-  },
-  Alabama: {
-    uninsuredRate: 11.5,
-    coverageGap: 165000,
-    uncomp: 890000000,
-    population: 5100000,
-    fmap: 77.96,
-    label: "Alabama",
-  },
-  Mississippi: {
-    uninsuredRate: 13.4,
-    coverageGap: 143000,
-    uncomp: 720000000,
-    population: 2960000,
-    fmap: 77.96,
-    label: "Mississippi",
-  },
-  SouthCarolina: {
-    uninsuredRate: 12.1,
-    coverageGap: 170000,
-    uncomp: 980000000,
-    population: 5300000,
-    fmap: 70.54,
-    label: "South Carolina",
-  },
-  Kansas: {
-    uninsuredRate: 9.0,
-    coverageGap: 96000,
-    uncomp: 540000000,
-    population: 2940000,
-    fmap: 56.95,
-    label: "Kansas",
-  },
-  Wisconsin: {
-    uninsuredRate: 6.8,
-    coverageGap: 89000,
-    uncomp: 470000000,
-    population: 5900000,
-    fmap: 59.9,
-    label: "Wisconsin",
-  },
-  Wyoming: {
-    uninsuredRate: 10.8,
-    coverageGap: 21000,
-    uncomp: 130000000,
-    population: 581000,
-    fmap: 50.0,
-    label: "Wyoming",
-  },
+// KFF, "Characteristics of Poor Uninsured Adults Ages 19-64 in the ACA Coverage Gap" (2024 ACS; total 1,208,000;
+// Georgia and Wisconsin cover adults to 100% FPL by waiver, so no gap); Census Vintage 2025; FMAP FY2027 (Federal Register).
+export const NON_EXPANSION_STATES: Record<string, { coverageGap: number; population: number; fmap: number }> = {
+  "Alabama": { coverageGap: 86000, population: 5193088, fmap: 72.55 },
+  "Florida": { coverageGap: 267000, population: 23462518, fmap: 55.43 },
+  "Georgia": { coverageGap: 0, population: 11302748, fmap: 66.63 },
+  "Kansas": { coverageGap: 33000, population: 2977220, fmap: 62.5 },
+  "Mississippi": { coverageGap: 56000, population: 2954160, fmap: 77.32 },
+  "South Carolina": { coverageGap: 63000, population: 5570274, fmap: 69.28 },
+  "Tennessee": { coverageGap: 89000, population: 7315076, fmap: 63.34 },
+  "Texas": { coverageGap: 605000, population: 31709821, fmap: 58.54 },
+  "Wisconsin": { coverageGap: 0, population: 5972787, fmap: 61.23 },
+  "Wyoming": { coverageGap: 8000, population: 588753, fmap: 50.0 },
 };
 
 /**
