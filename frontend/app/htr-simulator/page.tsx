@@ -139,13 +139,13 @@ const USE_CASES = [
     stateCode: "VT",
     status: "live",
     description:
-      "Models the 18+ recommendations from the Oliver Wyman Report for restructuring Vermont's hospital network — including Centers of Excellence consolidation, global budgeting, telehealth expansion, and rural access preservation.",
+      "Models 15 recommendations drawn from the Oliver Wyman Report for restructuring Vermont's hospital network — including Centers of Excellence consolidation, global budgeting, telehealth expansion, and rural access preservation.",
     pillars: ["policy", "technology", "financial", "equity", "clinical", "operations"],
     href: "/vermont-act-167/simulator",
     color: "violet",
     stats: [
       { label: "Hospitals Modeled", value: "14" },
-      { label: "Recommendations", value: "18+" },
+      { label: "Recommendations", value: "15" },
       { label: "Pillars Scored", value: "5" },
     ],
   },
@@ -157,13 +157,11 @@ const USE_CASES = [
     stateCode: "CA",
     status: "live",
     description:
-      "CalAIM — California's $6.7B Medi-Cal transformation — introduces whole-person care, enhanced care management, community supports, and population health management across 58 counties.",
+      "CalAIM — California's Medi-Cal transformation — introduces whole-person care, enhanced care management, community supports, and population health management across 58 counties.",
     pillars: ["policy", "financial", "equity", "clinical"],
     href: "/california-calaim/simulator",
     color: "blue",
     stats: [
-      { label: "Managed Care Plans", value: "24" },
-      { label: "Beneficiaries", value: "14.2M" },
       { label: "Counties", value: "58" },
     ],
   },
@@ -181,8 +179,6 @@ const USE_CASES = [
     color: "emerald",
     stats: [
       { label: "CCOs", value: "16" },
-      { label: "OHP Members", value: "1.4M" },
-      { label: "Global Budget", value: "$3.2B" },
     ],
   },
   {
@@ -193,14 +189,14 @@ const USE_CASES = [
     stateCode: "US",
     status: "live",
     description:
-      "Models CMS's Rural Health Transformation Program — global budget demonstrations, essential hospital designations, and payment reforms across 50-state rural and critical access hospital networks.",
+      "CMS's Rural Health Transformation Program: FY2026 awards for all 50 states, how the $10B a year is split, and what states are funding (CMS, December 2025).",
     pillars: ["policy", "technology", "financial", "equity"],
     href: "/dashboard/simulator",
     color: "rose",
     stats: [
-      { label: "Participating States", value: "12" },
-      { label: "CAHs Modeled", value: "1,300+" },
-      { label: "Program Budget", value: "$1.8B" },
+      { label: "States Awarded", value: "50" },
+      { label: "Per Year", value: "$10B" },
+      { label: "FY2026–2030", value: "$50B" },
     ],
   },
 ];

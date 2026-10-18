@@ -467,7 +467,7 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
             <div className="space-y-0.5">
               {[
                 { href: "/dashboard",           label: "50-State RHTP Dashboard",        desc: "Rural hospital performance index — national view" },
-                { href: "/dashboard/simulator", label: "CMS Rural Health Transformation", desc: "Model CMS rural health transformation scenarios" },
+                { href: "/dashboard/simulator", label: "CMS Rural Health Transformation", desc: "FY2026 Rural Health Transformation awards for all 50 states" },
                 { href: "/research-lab/vbc-clinical-quality?tab=risk", label: "VCCI Risk Stratification Lab", desc: "CDPS scoring, composite risk tiers & Vermont VCCI patient scenarios" },
                 { href: "/research-lab/vbc-clinical-quality?tab=quality", label: "VBC Quality Measures Lab",  desc: "HEDIS, 30-day readmissions & avoidable ED for Vermont populations" },
               ].map((item) => (
