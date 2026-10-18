@@ -5727,7 +5727,7 @@ A forecast is only useful if you can watch it resolve. These tools track the ind
 
   Follow the policy and regulatory record as it is made                                                               [**The Wire**](https://healthtransformationreview.org/the-wire)                                                         GMCB decisions, AHS reports, and CMS model changes --- the raw material from which the next version of this chapter's forecast will be written.
 
-  Score a state's readiness on the five pillars and test the chapter's scenarios yourself                             [**HTR Simulator**](https://healthtransformationreview.org/htr-simulator)                                               What has to be true, pillar by pillar, for the optimistic scenario rather than the pessimistic one to hold.
+  Score a state's readiness on the five pillars and test the chapter's scenarios yourself                             [**HTR Simulator**](https://healthtransformationreview.org/htr-simulator)                                               What has to be true, pillar by pillar, for the transformation-success scenario rather than the partial-transformation one to hold.
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure 13.5 --- Hands-on platform tools for Chapter 13: tracking the forecast against the record.*
@@ -5746,7 +5746,7 @@ In the Academy: Track 8 closes with "Capstone --- Apply the Framework to Your Ow
 
 ## 13.9 **Key Concepts in This Chapter**
 
-Five forces · five-pillar forecast · optimistic and pessimistic scenario · national template · transformation trajectory · falsifiable forecast · decision points
+Five forces · five-pillar forecast · transformation-success and partial-transformation scenarios · national template · transformation trajectory · falsifiable forecast · decision points
 
 ## 13.10 **A Closing Note: What This Book Is Betting On**
 
