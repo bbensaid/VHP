@@ -67,8 +67,8 @@ const PILLARS: PillarConfig[] = [
       { label: "RBP revenue impact modeled", benchmark: "10-year projection with 3 scenarios" },
     ],
     milestones: [
-      { label: "FY2026: Vermont Blue Cross 2.5% rate reduction", date: "FY2026", status: "active" },
-      { label: "FY2028: First RBP-driven premium reduction", date: "FY2028", status: "upcoming" },
+      { label: "FY2027: Commercial hospital rates −2.9% statewide (GMCB)", date: "Sep 2026", status: "complete", vermont: "GMCB FY2027 hospital budget decisions, September 2026" },
+      { label: "FY2028: First RBP-driven premium effect (expected)", date: "FY2028", status: "upcoming", vermont: "GMCB and DFR must monitor whether lower hospital prices reach premiums (Act 68)" },
       { label: "FY2028: Global budget financial model live", date: "FY2028", status: "upcoming" },
       { label: "Post-2030: H.R. 1 Medicaid cliff management", date: "Post-2030", status: "upcoming", vermont: "Permanent Medicaid revenue reduction; RHT capital exhausted" },
     ],
@@ -109,13 +109,12 @@ const PILLARS: PillarConfig[] = [
       { label: "PCMH / NCQA recognition", benchmark: "≥80% of primary care practices recognized" },
       { label: "HEDIS composite performance", benchmark: "≥75th percentile on priority measures" },
       { label: "Care management penetration", benchmark: "≥90% of high-risk members in program" },
-      { label: "30-day readmission rate", benchmark: "≤15% (CMS national benchmark)" },
+      { label: "30-day readmission rate", benchmark: "Below Vermont's 14.8% (AHS, Nov 2025)" },
       { label: "Primary care investment ratio", benchmark: "≥Act 68 primary care investment floor" },
     ],
     milestones: [
-      { label: "FY2026: Primary care investment reporting begins (Act 68)", date: "FY2026", status: "active", vermont: "Vermont withdrew from AHEAD in July 2026; primary care floor accountability now runs on Act 68's state mandate" },
-      { label: "FY2027: HEDIS equity stratification mandatory (Act 68)", date: "FY2027", status: "upcoming" },
-      { label: "FY2028: COE designation system operational (Statewide Plan)", date: "FY2028", status: "upcoming" },
+      { label: "Jan 2028: Strategic Plan sets primary-care spending-share targets (Act 68)", date: "Jan 2028", status: "upcoming", vermont: "18 V.S.A. § 9403(b)(7). Vermont withdrew from AHEAD in July 2026, so no federal primary-care floor applies" },
+      { label: "FY2028: Centers of Excellence designations (Oliver Wyman recommendation)", date: "FY2028", status: "upcoming" },
     ],
   },
   {
@@ -135,7 +134,7 @@ const PILLARS: PillarConfig[] = [
       { label: "RHT investment deployment timeline", benchmark: "All awards contracted by FY2027" },
     ],
     milestones: [
-      { label: "FY2026: Hospital transformation plans (Act 68, all 14)", date: "FY2026", status: "active", vermont: "$2M AHS transformation grants; RHRC technical assistance underway" },
+      { label: "FY2026: Hospital transformation plans (Act 68, all 14)", date: "FY2026", status: "active", vermont: "All 14 hospitals have transformation plans; 11 of 13 eligible hospitals had executed grant agreements (AHS, June 2026)" },
       { label: "FY2026: AHS re-envisioning review (Act 119)", date: "FY2026", status: "active", vermont: "AHS report (Feb 2026): keep the agency unified; move clinical substance-use functions into DMH" },
       { label: "FY2027: RHT investments operational", date: "FY2027", status: "upcoming" },
     ],
@@ -164,9 +163,8 @@ const EQUITY_IMPERATIVE: PillarConfig = {
     { label: "Act 68 equity benchmark status", benchmark: "On track vs. Vermont statutory targets" },
   ],
   milestones: [
-    { label: "FY2026: Equity baseline measurement (Act 68)", date: "FY2026", status: "active", vermont: "Baseline HEROI and HEDIS stratification for each Vermont HSA" },
-    { label: "FY2027: Act 68 equity targets enforced", date: "FY2027", status: "upcoming", vermont: "AHEAD's CMS-set equity targets no longer apply after Vermont's July 2026 withdrawal; Act 68's state-level equity reporting mandate continues" },
-    { label: "FY2028: Statewide equity benchmarks in Strategic Plan", date: "FY2028", status: "upcoming" },
+    { label: "FY2026: AHS outcome-measure reports, incl. reducing health inequities (Act 68 Sec. 11b)", date: "FY2026", status: "active", vermont: "Monthly reports to the Health Reform Oversight Committee, August 2025 – January 2027" },
+    { label: "Jan 2028: Strategic Plan benchmarks for reducing disparities in access (Act 68)", date: "Jan 2028", status: "upcoming", vermont: "AHEAD's CMS-set equity targets no longer apply after Vermont's July 2026 withdrawal" },
   ],
 };
 
