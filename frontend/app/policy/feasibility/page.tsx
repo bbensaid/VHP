@@ -114,7 +114,7 @@ function FeasibilityBody() {
             title: "All-Payer Rate Setting",
             items: [
               "Maryland All-Payer Model: since 1977 — global hospital budget; all payers pay same rates",
-              "Maryland results: hospital cost growth 2.3% below national trend; $1.4B Medicare savings 2014–2023",
+              "Maryland results (CMS/RTI evaluation, 2019): Medicare spending $975M lower over the first 4.5 years, $796M of it hospital spending",
               "Hospital Global Budget: Vermont Act 68 — statutory global budgets from FY2028 (Vermont withdrew from the federal AHEAD Model in July 2026)",
               "All-payer rate setting (national): could reduce hospital price variation — US prices 3× higher than Canada",
               "Political obstacle: hospital and insurer opposition; requires federal waiver or legislation",

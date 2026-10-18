@@ -3590,7 +3590,7 @@
             },
             {
               "id": "obj_5p12b",
-              "text": "Describe how reference-based pricing sets a binding price ceiling and why Vermont set that ceiling at roughly 200% of Medicare."
+              "text": "Describe how reference-based pricing sets a binding price ceiling and why Oliver Wyman recommended 200% of Medicare or less."
             },
             {
               "id": "obj_5p12c",
@@ -3610,17 +3610,17 @@
             {
               "type": "text",
               "heading": "Vermont's Price Extraction Problem, in Numbers",
-              "body": "Fee-for-service creates a second structural problem distinct from the volume incentive: in concentrated hospital markets -- which describes the majority of U.S. hospital markets, and all of Vermont's -- it lets hospitals with market power charge commercial payers far above their actual cost of care. Vermont's data, documented in the Green Mountain Care Board's February 2026 report, sits well above the national average: UVMMC's commercial prices ran 358% of Medicare in RAND's 2020 study, the average Vermont hospital charges commercial payers 250-300% of Medicare, and the approximate break-even point is roughly 136% of Medicare.\n\nThe consequence for insurance premiums is direct and arithmetically straightforward. Vermont's average monthly silver marketplace premium rose from $456 in 2018 to $948 in 2024 -- a 108% increase in six years -- tracking hospital charge growth with high fidelity (Oliver Wyman Act 167 Report; GMCB analysis). These are not coincidental trends; they are the mathematical output of a price structure with no regulatory discipline.\n\nOliver Wyman's analysis found no relationship between price and quality across Vermont's hospital system. The gap between break-even and actual commercial charges is not explained by complexity or outcomes. It is market power -- the ability of a dominant provider to demand above-cost prices from payers with no viable network alternative."
+              "body": "Fee-for-service creates a second structural problem distinct from the volume incentive: in concentrated hospital markets -- which describes the majority of U.S. hospital markets, and all of Vermont's -- it lets hospitals with market power charge commercial payers far above their actual cost of care. Vermont's data, documented in the Green Mountain Care Board's February 2026 report, sits well above the national average: UVMMC's commercial prices ran 358% of Medicare in RAND's 2020 study, the average Vermont hospital charges commercial payers 250-300% of Medicare, and the approximate break-even point is roughly 136% of Medicare.\n\nThe consequence for insurance premiums is direct and arithmetically straightforward. Vermont's lowest-cost silver marketplace premium rose from $456 a month in 2018 to $948 in 2024 -- a 108% increase in six years -- and GMCB reports 169% growth from 2018 to 2025, tracking hospital charge growth closely (Oliver Wyman Act 167 Report; GMCB, January 2026). These are not coincidental trends; they are the mathematical output of a price structure with no regulatory discipline.\n\nOliver Wyman's analysis found no relationship between price and quality across Vermont's hospital system. The gap between break-even and actual commercial charges is not explained by complexity or outcomes. It is market power -- the ability of a dominant provider to demand above-cost prices from payers with no viable network alternative."
             },
             {
               "type": "text",
               "heading": "What Reference-Based Pricing Actually Does, Mechanically",
-              "body": "Reference-based pricing (RBP) addresses the price extraction problem directly. Rather than letting hospitals and payers negotiate bilaterally -- where hospital market power determines the outcome -- RBP establishes a transparent external benchmark, typically a percentage of Medicare reimbursement, as the maximum a hospital may accept as payment in full. Vermont's Act 68 directs the GMCB to implement mandatory RBP for commercial payers no later than hospital fiscal year 2027, targeting roughly 200% of Medicare -- the level Oliver Wyman's Act 167 study recommended as sufficient to move the system toward a sustainable trajectory while still covering hospitals' actual costs.\n\nAct 68's architecture rests on four design principles: mandatory, not voluntary, for every hospital and every commercial payer; a binding ceiling, not advisory guidance, meaning hospitals cannot charge or collect more than the established rate; a transparent, nationally comparable Medicare benchmark; and premium passthrough monitoring, so GMCB and Vermont's Department of Financial Regulation can verify that price reductions actually reach premiums rather than being absorbed as insurer margin.\n\nGMCB's February 2026 report added a refinement reflecting Vermont's varied 14-hospital system: rather than one statewide multiplier, GMCB will weigh each hospital's payer mix, labor costs, social risk factors, and role in the system -- a critical access hospital serving a largely Medicaid and Medicare rural population has different cost economics than a large academic medical center, even under one binding ceiling principle."
+              "body": "Reference-based pricing (RBP) addresses the price extraction problem directly. Rather than letting hospitals and payers negotiate bilaterally -- where hospital market power determines the outcome -- RBP establishes a transparent external benchmark, typically a percentage of Medicare reimbursement, as the maximum a hospital may accept as payment in full. Vermont's Act 68 directs the GMCB to implement mandatory RBP for commercial payers no later than hospital fiscal year 2027. The statute sets no single multiplier; Oliver Wyman's Act 167 study recommended 200% of Medicare or less for PPS hospitals as a level that moves the system toward a sustainable trajectory while still covering hospitals' actual costs.\n\nAct 68's architecture rests on four design principles: mandatory, not voluntary, for every hospital and every commercial payer; a binding ceiling, not advisory guidance, meaning hospitals cannot charge or collect more than the established rate; a transparent, nationally comparable Medicare benchmark; and premium passthrough monitoring, so GMCB and Vermont's Department of Financial Regulation can verify that price reductions actually reach premiums rather than being absorbed as insurer margin.\n\nGMCB's February 2026 report added a refinement reflecting Vermont's varied 14-hospital system: rather than one statewide multiplier, GMCB will weigh each hospital's payer mix, labor costs, social risk factors, and role in the system -- a critical access hospital serving a largely Medicaid and Medicare rural population has different cost economics than a large academic medical center, even under one binding ceiling principle."
             },
             {
               "type": "text",
               "heading": "The Cross-State Evidence Behind Vermont's 200%",
-              "body": "Vermont is not designing RBP in a vacuum. Oregon implemented RBP for its state employee health plans in 2019, capping in-network payments at 200% of Medicare and out-of-network at 185%, covering roughly 300,000 lives. A Health Affairs study found the program saved an estimated $107.5 million over its first 27 months -- and, critically, all 24 hospitals affected by the cap remained in-network. That finding directly answers the most common objection to RBP: that hospitals will simply walk away from a regulated rate. At 200% of Medicare, they did not, because 200% of Medicare is still substantially above their actual cost of care.\n\nMontana's 2016 state-employee-plan RBP program produced roughly $48 million in initial savings but proved politically fragile without a statutory mandate behind it -- a cautionary data point that helps explain why Vermont chose to legislate RBP rather than negotiate a smaller demonstration. Washington's 'Cascade Care' public option caps participating network payments at 160% of Medicare and is expanding toward state employee plans.\n\nNone of these programs, however, is a full statewide, all-hospital, all-commercial-payer mandate. Vermont's Act 68 is: it is the most specific mandatory all-payer price target enacted by any state to date."
+              "body": "Vermont is not designing RBP in a vacuum. Oregon implemented RBP for its state employee health plans in 2019, capping in-network payments at 200% of Medicare and out-of-network at 185%, covering roughly 300,000 lives. A Health Affairs study found the program saved an estimated $107.5 million over its first 27 months -- and, critically, all 24 hospitals affected by the cap remained in-network. That finding directly answers the most common objection to RBP: that hospitals will simply walk away from a regulated rate. At 200% of Medicare, they did not, because 200% of Medicare is still substantially above their actual cost of care.\n\nMontana's 2016 state-employee-plan RBP program produced roughly $48 million in initial savings but proved politically fragile without a statutory mandate behind it -- a cautionary data point that helps explain why Vermont chose to legislate RBP rather than negotiate a smaller demonstration. Washington's 'Cascade Care' public option caps participating network payments at 160% of Medicare and is expanding toward state employee plans.\n\nNone of these programs, however, is a full statewide, all-hospital, all-commercial-payer mandate. Vermont's Act 68 is."
             },
             {
               "type": "text",
@@ -3640,7 +3640,7 @@
             {
               "type": "text",
               "heading": "Maryland: A Decade of Global Budget Evidence",
-              "body": "Maryland's Health Services Cost Review Commission (HSCRC) was created by the Maryland General Assembly in 1971 with a unique statutory authority to set hospital rates for all commercial payers, and received a Medicare demonstration waiver in 1977 to extend that authority to Medicare as well. The current Global Budget Revenue (GBR) methodology, operating under a renegotiated federal waiver since 2014, fixes each hospital's total annual revenue before the year begins; prices for individual services then adjust during the year to hit that fixed target.\n\nMaryland is the only U.S. state to have run mandatory all-payer hospital global budgets for more than a decade, and its results are the closest empirical evidence available for what Vermont is attempting: roughly $1.4 billion in Medicare hospital savings relative to the projected national trend, a 7% reduction in hospital admissions for Medicare patients (with avoidable admissions down more than 6%), and, per the CMS-commissioned evaluation, $975 million less total Medicare spending (2.8% slower growth), $796 million of it in hospital spending.\n\nThe model's accountability structure extends beyond the budget cap itself: a Medicare Performance Adjustment worth 1% of Medicare revenue tied to total cost of care, and a Quality Based Reimbursement program worth 2% of all-payer revenue tied to patient experience, safety, and outcomes. The budget constraint is non-negotiable; the quality components are calibrated to reward the population-health behavior the fixed budget is designed to produce."
+              "body": "Maryland's Health Services Cost Review Commission (HSCRC) was created by the Maryland General Assembly in 1971 with a unique statutory authority to set hospital rates for all commercial payers, and received a Medicare demonstration waiver in 1977 to extend that authority to Medicare as well. The current Global Budget Revenue (GBR) methodology, operating under a renegotiated federal waiver since 2014, fixes each hospital's total annual revenue before the year begins; prices for individual services then adjust during the year to hit that fixed target.\n\nMaryland is the only U.S. state to have run mandatory all-payer hospital global budgets for more than a decade, and its results are the closest empirical evidence available for what Vermont is attempting: per the CMS-commissioned evaluation (RTI, 2019), $975 million less total Medicare spending over the first 4.5 years (2.8% slower growth), $796 million of it in hospital spending, and 6.7% fewer admissions for ambulatory-care-sensitive conditions; Maryland's regulator, measuring against the national trend, reports roughly $1.4 billion in Medicare hospital savings.\n\nThe model's accountability structure extends beyond the budget cap itself: a Medicare Performance Adjustment worth 1% of Medicare revenue tied to total cost of care, and a Quality Based Reimbursement program worth 2% of all-payer revenue tied to patient experience, safety, and outcomes. The budget constraint is non-negotiable; the quality components are calibrated to reward the population-health behavior the fixed budget is designed to produce."
             },
             {
               "type": "text",
@@ -3677,7 +3677,7 @@
                 },
                 {
                   "value": "108%",
-                  "label": "Increase in Vermont's average silver marketplace premium, 2018-2024 ($456 to $948)",
+                  "label": "Increase in Vermont's lowest-cost silver marketplace premium, 2018-2024 ($456 to $948)",
                   "source": "Oliver Wyman Act 167 Report / GMCB analysis"
                 }
               ]
@@ -3747,12 +3747,12 @@
                 {
                   "label": "Maryland (2014-present)",
                   "left": "All-payer rate setting; fixed annual global budget revenue; Medicare waiver",
-                  "right": "$1.4B Medicare savings; 7% fewer admissions; $800M spending reduction"
+                  "right": "$975M lower Medicare spending in 4.5 years ($796M hospital); 6.7% fewer avoidable admissions (CMS/RTI)"
                 },
                 {
                   "label": "Vermont Act 68 (FY2027)",
-                  "left": "Mandatory statewide RBP at roughly 200% of Medicare; commercial payers first, all hospitals",
-                  "right": "Implementation underway; a negative 1% commercial rate benchmark already in effect FY2026 as a transition step"
+                  "left": "Mandatory statewide RBP, hospital-specific prices set by GMCB rule (Oliver Wyman recommended 200% of Medicare or less)",
+                  "right": "Implementation underway; FY2027 commercial hospital rates cut 2.9% statewide (GMCB, September 2026) as a transition step"
                 }
               ]
             },
@@ -3799,8 +3799,8 @@
                 "id": "q_5p12a",
                 "type": "single_choice",
                 "points": 1,
-                "question": "Under Vermont Act 68, roughly what percentage of Medicare reimbursement is GMCB's reference-based pricing target for commercial hospital prices?",
-                "explanation": "Act 68 targets roughly 200% of Medicare -- the level Oliver Wyman's Act 167 study identified as high enough to cover hospitals' actual costs while eliminating the excessive markup driving premium inflation.",
+                "question": "Oliver Wyman's Act 167 report recommended moving Vermont's PPS hospitals to reference-based prices at roughly what percentage of Medicare?",
+                "explanation": "Oliver Wyman recommended reference-based pricing 'ideally at 200% of Medicare or less' for PPS hospitals -- high enough to cover hospitals' actual costs while removing the markup driving premium inflation. Act 68 itself sets no multiplier: GMCB sets hospital-specific prices by rule in 2027.",
                 "options": [
                   {
                     "id": "o_5p12a1",
@@ -3823,7 +3823,7 @@
                     "id": "o_5p12a4",
                     "text": "~358%",
                     "isCorrect": false,
-                    "explanation": "358% is UVMMC's current commercial rate versus Medicare (RAND), the highest in Vermont -- again the problem, not the target."
+                    "explanation": "358% was UVMMC's commercial price versus Medicare in RAND's 2020 study, the highest in Vermont -- again the problem, not the target."
                   }
                 ]
               },

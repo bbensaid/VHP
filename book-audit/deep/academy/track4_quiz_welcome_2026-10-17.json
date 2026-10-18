@@ -1,0 +1,10 @@
+{"tag": "track4-quiz",
+ "note": "Quiz premise fix: Act 68 sets no RBP multiplier; OW recommended <=200% (ideally) for PPS hospitals. Welcome course: premium series is lowest-cost silver (OW).",
+ "pairs": [
+  ["Under Vermont Act 68, roughly what percentage of Medicare reimbursement is GMCB's reference-based pricing target for commercial hospital prices?", "Oliver Wyman's Act 167 report recommended moving Vermont's PPS hospitals to reference-based prices at roughly what percentage of Medicare?"],
+  ["Act 68 targets roughly 200% of Medicare -- the level Oliver Wyman's Act 167 study identified as high enough to cover hospitals' actual costs while eliminating the excessive markup driving premium inflation.", "Oliver Wyman recommended reference-based pricing 'ideally at 200% of Medicare or less' for PPS hospitals -- high enough to cover hospitals' actual costs while removing the markup driving premium inflation. Act 68 itself sets no multiplier: GMCB sets hospital-specific prices by rule in 2027."],
+  ["358% is UVMMC's current commercial rate versus Medicare (RAND), the highest in Vermont -- again the problem, not the target.", "358% was UVMMC's commercial price versus Medicare in RAND's 2020 study, the highest in Vermont -- again the problem, not the target."],
+  ["The average silver exchange premium had risen 108% between 2018 and 2024", "The lowest-cost silver exchange premium had risen 108% between 2018 and 2024"],
+  ["Average silver exchange premium, 2018 to 2024 ($456 to $948/month)", "Lowest-cost silver exchange premium, 2018 to 2024 ($456 to $948/month)"]
+ ],
+ "residue": "GMCB's reference-based pricing target for commercial|Act 68 targets roughly 200%|[Aa]verage silver exchange premium"}
