@@ -74,7 +74,7 @@ type PeerGroup = "cah" | "rural_pps" | "urban_community" | "urban_tertiary";
 //
 // SCENARIO PRESETS (extended 2026-09-28 to match HTR_Book_v42 §7.6.2, which
 // tells a CFO they can run FOUR scenarios: RBP at 200% of Medicare (Oliver
-// Wyman) or 250% (GMCB phased); a global budget revenue cap; H.R. 1 Medicaid
+// Wyman) or 250% (GMCB Dec 2024 upper scenario); a global budget revenue cap; H.R. 1 Medicaid
 // cuts phasing in across 2027–2031; and a transformation-investment scenario.)
 interface Preset {
   id: string;
@@ -107,16 +107,17 @@ interface Preset {
 // ─── REFERENCE-BASED PRICING (Act 68) ─────────────────────────────────────────
 // The two benchmarks the book names. 200% is the Oliver Wyman / Act 167
 // recommendation (≤200% of Medicare — the same figure /impact-simulation uses
-// as its reference-price default); 250% is the GMCB's phased landing point.
+// as its reference-price default); 250% is the upper scenario GMCB modeled in its
+// December 2024 RBP report (book §7.6.2).
 const RBP_BENCHMARKS = [
   { pct: 200, label: "200% of Medicare", source: "Oliver Wyman / Act 167 recommendation" },
-  { pct: 250, label: "250% of Medicare", source: "GMCB phased benchmark" },
+  { pct: 250, label: "250% of Medicare", source: "Upper scenario in GMCB's December 2024 RBP report" },
 ];
 const RBP_DEFAULT_CAP = 200; // the book treats the Oliver Wyman figure as primary
 // Vermont commercial prices today. GMCB's February 2026 price-transparency
 // dashboard puts Vermont hospital commercial prices at 279%–697% of Medicare
-// (the range /vermont-act-68 cites); Act 68 materials cite 250%–417% as the
-// typical band. No per-hospital figure is published, so the CURRENT price level
+// (the range /vermont-act-68 cites); GMCB's February 2026 Act 68 update puts the
+// average at roughly 250%–300% of Medicare. No per-hospital figure is published, so the CURRENT price level
 // is a user input bounded by that published range, not a filing. Default 300%
 // sits just inside the dashboard's low end — deliberately conservative, so the
 // modeled RBP revenue loss understates rather than overstates.
@@ -131,9 +132,9 @@ const COMMERCIAL_SHARE_DEFAULT = 35;
 // ─── H.R. 1 MEDICAID CUTS ─────────────────────────────────────────────────────
 // The book (§7.6.2) has the cuts PHASING IN across 2027–2031, not landing as a
 // single post-2030 cliff (which is how this tool's earlier preset was labeled).
-// Full-phase reduction in Medicaid revenue at 2031 = 12% (the figure the old
-// preset used); intervening years are the linear phase-in the statute's
-// work-requirement / provider-tax schedule implies.
+// Full-phase reduction in Medicaid revenue at 2031 = 12% — a MODEL ASSUMPTION with
+// no published per-hospital source (labelled as such in the UI); intervening years are
+// a linear phase-in.
 const HR1_FULL_CUT_PCT = 12;
 const HR1_PHASE: Record<number, number> = {
   2027: 0.2, 2028: 0.4, 2029: 0.6, 2030: 0.8, 2031: 1.0,
@@ -1068,7 +1069,7 @@ export default function HospitalFinancialScorecard() {
             <p className="text-[9px] text-slate-500 leading-relaxed">
               The cuts phase in across 2027–2031 rather than landing as a single post-2030
               cliff. Selecting a year overrides the Medicaid slider above with that year&apos;s
-              phased share of the full {HR1_FULL_CUT_PCT}% Medicaid revenue reduction
+              phased share of an assumed {HR1_FULL_CUT_PCT}% Medicaid revenue reduction (HTR assumption — no published per-hospital estimate)
               {hr1PhaseYear != null && <> — currently <strong>{fmt(results.effectiveMedicaidCutPct, 1)}%</strong></>}.
             </p>
           </div>
