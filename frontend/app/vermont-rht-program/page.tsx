@@ -142,9 +142,9 @@ export default function VermontRHTProgramPage() {
         <SectionHeader label="Strategic Context" title="Infrastructure Fund, Not Revenue Replacement" />
         <div className="bg-teal-50 border border-teal-200 rounded-xl p-6 mb-8">
           <blockquote className="text-base font-bold text-teal-900 italic leading-relaxed mb-2">
-            "The RHT funding is a tool for executing reform, not a substitute for reform."
+            "It's the tool that lets us put affordability plans into action."
           </blockquote>
-          <div className="text-xs text-teal-700 font-medium">— Vermont AHS Secretary Samuelson</div>
+          <div className="text-xs text-teal-700 font-medium">— Vermont AHS Secretary Jenney Samuelson, February 2026 (Manchester Journal)</div>
         </div>
         <p className="text-sm text-slate-600 leading-relaxed mb-6 max-w-3xl">
           The federal guidance for the RHT Program is explicit: funds are for technology investments,
@@ -167,7 +167,7 @@ export default function VermontRHTProgramPage() {
                 "Remote patient monitoring → prevent hospitalizations, reduce costs",
                 "Shared EMR + VHIE interoperability → enable global budget management",
                 "EMS regionalization → reduce ED utilization",
-                "Broadband → enable telehealth at scale",
+                "Telehealth + e-Consult grants → specialist access without the trip",
                 "CIN shared services → reduce administrative overhead",
               ].map((i) => <li key={i} className="flex items-start gap-2"><span className="shrink-0">→</span><span>{i}</span></li>)}
             </ul>
