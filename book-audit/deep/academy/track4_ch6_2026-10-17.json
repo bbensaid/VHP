@@ -1,0 +1,51 @@
+{
+ "tag": "track4-ch6",
+ "note": "Track 4 L12 (Ch6). Premium series = lowest-cost silver (OW chart; Ch6 Fig 6.2). Act 68 sets no 200% target — OW recommended <=200%; GMCB (Feb 2026) will set hospital-specific prices. Maryland: $1.4B is HSCRC's own claim; CMS/RTI 2019: $975M total Medicare, $796M hospital, ACSC admissions -6.7% over 4.5 yrs. GMCB -1% was FY2027 guidance, became -2.9% statewide commercial rates (Sep 2026).",
+ "pairs": [
+  [
+   "Vermont's average monthly silver marketplace premium rose from $456 in 2018 to $948 in 2024 -- a 108% increase in six years -- tracking hospital charge growth with high fidelity (Oliver Wyman Act 167 Report; GMCB analysis).",
+   "Vermont's lowest-cost silver marketplace premium rose from $456 a month in 2018 to $948 in 2024 -- a 108% increase in six years -- and GMCB reports 169% growth from 2018 to 2025, tracking hospital charge growth closely (Oliver Wyman Act 167 Report; GMCB, January 2026)."
+  ],
+  [
+   "Increase in Vermont's average silver marketplace premium, 2018-2024 ($456 to $948)",
+   "Increase in Vermont's lowest-cost silver marketplace premium, 2018-2024 ($456 to $948)"
+  ],
+  [
+   "Vermont's Act 68 directs the GMCB to implement mandatory RBP for commercial payers no later than hospital fiscal year 2027, targeting roughly 200% of Medicare -- the level Oliver Wyman's Act 167 study recommended as sufficient to move the system toward a sustainable trajectory while still covering hospitals' actual costs.",
+   "Vermont's Act 68 directs the GMCB to implement mandatory RBP for commercial payers no later than hospital fiscal year 2027. The statute sets no single multiplier; Oliver Wyman's Act 167 study recommended 200% of Medicare or less for PPS hospitals as a level that moves the system toward a sustainable trajectory while still covering hospitals' actual costs."
+  ],
+  [
+   "Vermont's Act 68 is: it is the most specific mandatory all-payer price target enacted by any state to date.",
+   "Vermont's Act 68 is."
+  ],
+  [
+   "roughly $1.4 billion in Medicare hospital savings relative to the projected national trend, a 7% reduction in hospital admissions for Medicare patients (with avoidable admissions down more than 6%), and, per the CMS-commissioned evaluation, $975 million less total Medicare spending (2.8% slower growth), $796 million of it in hospital spending.",
+   "per the CMS-commissioned evaluation (RTI, 2019), $975 million less total Medicare spending over the first 4.5 years (2.8% slower growth), $796 million of it in hospital spending, and 6.7% fewer admissions for ambulatory-care-sensitive conditions; Maryland's regulator, measuring against the national trend, reports roughly $1.4 billion in Medicare hospital savings."
+  ],
+  [
+   "All-payer rate setting; fixed annual global budget revenue; Medicare waiver → $1.4B Medicare savings; 7% fewer admissions; $800M spending reduction",
+   "All-payer rate setting; fixed annual global budget revenue; Medicare waiver → $975M lower Medicare spending in 4.5 years ($796M hospital); 6.7% fewer avoidable admissions (CMS/RTI)"
+  ],
+  [
+   "Mandatory statewide RBP at roughly 200% of Medicare; commercial payers first, all hospitals → Implementation underway; a negative 1% commercial rate benchmark already in effect FY2026 as a transition step",
+   "Mandatory statewide RBP, hospital-specific prices set by GMCB rule (Oliver Wyman recommended 200% of Medicare or less) → Implementation underway; FY2027 commercial hospital rates cut 2.9% statewide (GMCB, September 2026) as a transition step"
+  ],
+  [
+   "Describe how reference-based pricing sets a binding price ceiling and why Vermont set that ceiling at roughly 200% of Medicare.",
+   "Describe how reference-based pricing sets a binding price ceiling and why Oliver Wyman recommended 200% of Medicare or less."
+  ],
+  [
+   "Implementation underway; a negative 1% commercial rate benchmark already in effect FY2026 as a transition step",
+   "Implementation underway; FY2027 commercial hospital rates cut 2.9% statewide (GMCB, September 2026) as a transition step"
+  ],
+  [
+   "Mandatory statewide RBP at roughly 200% of Medicare; commercial payers first, all hospitals",
+   "Mandatory statewide RBP, hospital-specific prices set by GMCB rule (Oliver Wyman recommended 200% of Medicare or less)"
+  ],
+  [
+   "$1.4B Medicare savings; 7% fewer admissions; $800M spending reduction",
+   "$975M lower Medicare spending in 4.5 years ($796M hospital); 6.7% fewer avoidable admissions (CMS/RTI)"
+  ]
+ ],
+ "residue": "average monthly silver|average silver marketplace premium|targeting roughly 200%|most specific mandatory all-payer|negative 1% commercial rate benchmark already in effect FY2026|set that ceiling at roughly 200%|\\$1\\.4B Medicare savings; 7% fewer"
+}
