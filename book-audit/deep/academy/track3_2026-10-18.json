@@ -1,0 +1,67 @@
+{
+ "tag": "track3",
+ "note": "Track 3 (Ch4-5) residuals after 10-12 pass. VHCURES: quarterly collection, ~6-month run-out (GMCB guide) — no '12–18 month'/'year or more' lag source. Act 68 §10 (18 V.S.A. §9353): AHS develops UHDS and determines whether to integrate; no clinical–claims integration before 1/1/2027, majority vote. MDWAS Medicare phase 2028–29. RHT plan has no transfer center or imaging archive (application; JFO). 'First law of its kind' unsourced.",
+ "pairs": [
+  [
+   "12 to 18 months from service to analyzable record in VHCURES → Near-real-time where the provider is connected; absent where they are not",
+   "Collected quarterly, with about six months allowed for late claims → Near-real-time where the provider is connected; absent where they are not"
+  ],
+  [
+   "VHCURES runs on a reporting lag of a year or more.",
+   "VHCURES is collected quarterly with about six months of claims run-out, and its published measures run older still."
+  ],
+  [
+   "VHCURES: reporting lag of a year or more → MDWAS: linked Medicaid claims and clinical data in the State's own system",
+   "VHCURES: quarterly, with ~6 months of claims run-out → MDWAS: linked Medicaid claims and clinical data in the State's own system"
+  ],
+  [
+   "A claims database with an 18-month lag and an exchange that most community providers have not joined",
+   "A claims database refreshed quarterly with months of run-out and an exchange that most community providers have not joined"
+  ],
+  [
+   "Act 68 of 2025, section 10, mandated integration of clinical, claims and social determinant data into a single record per person.",
+   "Act 68 of 2025, section 10, directed AHS and the HIE Steering Committee to develop the Unified Health Data Space and decide whether and how to integrate clinical, claims and social-needs data — with no clinical–claims integration before January 1, 2027, and only on a Steering Committee majority vote."
+  ],
+  [
+   "All payers, but only 60% of commercial → Medicaid only, scaling to Medicare 2026-2028",
+   "All payers, but only 60% of commercial → Medicaid only, adding Medicare 2028-2029"
+  ],
+  [
+   "The transfer center and bed-availability tool, statewide e-consult, closed-loop referral, remote patient monitoring and the vendor-neutral imaging archive are each, in isolation, a vendor point solution.",
+   "Shared-EMR incentives, statewide e-consult, closed-loop referral and remote patient monitoring are each, in isolation, a vendor point solution."
+  ],
+  [
+   "A transfer center works only if bed capacity and provider availability can be tied to a correctly matched patient record across every facility in real time.",
+   "A closed-loop referral closes only if every provider and service agency can see the same correctly matched patient record."
+  ],
+  [
+   "effective October 1, 2022 — the first law of its kind in the United States.",
+   "effective October 1, 2022."
+  ],
+  [
+   "12 to 18 months from service to analyzable record in VHCURES",
+   "Collected quarterly, with about six months allowed for late claims"
+  ],
+  [
+   "VHCURES: reporting lag of a year or more",
+   "VHCURES: quarterly, with ~6 months of claims run-out"
+  ],
+  [
+   "Medicaid only, scaling to Medicare 2026-2028",
+   "Medicaid only, adding Medicare 2028-2029"
+  ],
+  [
+   "but runs on a reporting lag of a year or more.",
+   "but is collected quarterly with about six months of claims run-out."
+  ],
+  [
+   "12-18 mo",
+   "~6 mo"
+  ],
+  [
+   "Typical lag between service date and analyzable VHCURES record",
+   "Claims run-out GMCB allows after each quarterly VHCURES collection"
+  ]
+ ],
+ "residue": "12 to 18 months from service|lag of a year or more|18-month lag|section 10, mandated|scaling to Medicare 2026-2028|transfer center and bed-availability|first law of its kind|12-18 mo"
+}

@@ -2533,7 +2533,7 @@
                 },
                 {
                   "label": "Typical latency",
-                  "left": "12 to 18 months from service to analyzable record in VHCURES",
+                  "left": "Collected quarterly, with about six months allowed for late claims",
                   "right": "Near-real-time where the provider is connected; absent where they are not"
                 },
                 {
@@ -2557,8 +2557,8 @@
                   "source": "Green Mountain Care Board"
                 },
                 {
-                  "value": "12-18 mo",
-                  "label": "Typical lag between service date and analyzable VHCURES record",
+                  "value": "~6 mo",
+                  "label": "Claims run-out GMCB allows after each quarterly VHCURES collection",
                   "source": "GMCB VHCURES documentation; AHS Transformation Report, November 2025"
                 },
                 {
@@ -2617,7 +2617,7 @@
             {
               "type": "text",
               "heading": "The UHDS and the decision to lead with the faster feed",
-              "body": "Vermont's answer is the Unified Health Data Space — not a second health information exchange but an implementation of the health data utility model, in which the combined clinical, claims, social and public health asset is treated as public infrastructure rather than any one participant's property.\n\nTwo statutory changes made it possible. Act 68 of 2025, section 10, mandated integration of clinical, claims and social determinant data into a single record per person. The quieter and more important change came in Act 167, which repealed 18 V.S.A. section 9410(e) — the provision that had barred the use of direct patient identifiers for record matching. Until that repeal Vermont's own statute forbade the technique its integration mandate requires.\n\nThe operational decision worth studying is which claims feed the state built on. Vermont routes integration primarily through the Medicaid Data Warehouse and Analytics Solution, which went live in early January 2026, rather than through VHCURES. MDWAS links Medicaid members' clinical data from the exchange with Medicaid claims inside the State's own system; VHCURES runs on a reporting lag of a year or more. For research, the lag is tolerable; for management, a timely feed on one payer beats a lagging feed on all of them. That is the correct trade, and it comes with an obligation: Medicaid is roughly a quarter of Vermont's primary coverage, so multi-payer scaling through 2029-2030 is not an enhancement to the plan, it is the plan."
+              "body": "Vermont's answer is the Unified Health Data Space — not a second health information exchange but an implementation of the health data utility model, in which the combined clinical, claims, social and public health asset is treated as public infrastructure rather than any one participant's property.\n\nTwo statutory changes made it possible. Act 68 of 2025, section 10, directed AHS and the HIE Steering Committee to develop the Unified Health Data Space and decide whether and how to integrate clinical, claims and social-needs data — with no clinical–claims integration before January 1, 2027, and only on a Steering Committee majority vote. The quieter and more important change came in Act 167, which repealed 18 V.S.A. section 9410(e) — the provision that had barred the use of direct patient identifiers for record matching. Until that repeal Vermont's own statute forbade the technique its integration mandate requires.\n\nThe operational decision worth studying is which claims feed the state built on. Vermont routes integration primarily through the Medicaid Data Warehouse and Analytics Solution, which went live in early January 2026, rather than through VHCURES. MDWAS links Medicaid members' clinical data from the exchange with Medicaid claims inside the State's own system; VHCURES is collected quarterly with about six months of claims run-out, and its published measures run older still. For research, the lag is tolerable; for management, a timely feed on one payer beats a lagging feed on all of them. That is the correct trade, and it comes with an obligation: Medicaid is roughly a quarter of Vermont's primary coverage, so multi-payer scaling through 2029-2030 is not an enhancement to the plan, it is the plan."
             },
             {
               "type": "comparison_table",
@@ -2625,13 +2625,13 @@
               "rows": [
                 {
                   "label": "Refresh cadence",
-                  "left": "VHCURES: reporting lag of a year or more",
+                  "left": "VHCURES: quarterly, with ~6 months of claims run-out",
                   "right": "MDWAS: linked Medicaid claims and clinical data in the State's own system"
                 },
                 {
                   "label": "Population",
                   "left": "All payers, but only 60% of commercial",
-                  "right": "Medicaid only, scaling to Medicare 2026-2028"
+                  "right": "Medicaid only, adding Medicare 2028-2029"
                 },
                 {
                   "label": "Consent model",
@@ -2649,7 +2649,7 @@
               "type": "callout",
               "variant": "info",
               "heading": "Beyond Vermont: Maryland made the exchange a utility by statute",
-              "body": "Maryland runs hospital global budgets through the HSCRC and needed the same substrate. In 2022 the General Assembly passed House Bill 1127, requiring the state-designated exchange, CRISP, to operate as a health data utility effective October 1, 2022 — the first law of its kind in the United States. It obliges the Maryland Department of Health, nursing homes, electronic health networks and prescription drug dispensers to supply data to the exchange, and obliges the exchange to deliver data in real time for treatment, care coordination and public health. The instructive point is the direction of travel: Maryland did not fund the exchange harder. It changed what the exchange was legally required to be. That is a Policy-pillar action taken in service of the Technology pillar, and it is the pattern any state should examine before writing another check."
+              "body": "Maryland runs hospital global budgets through the HSCRC and needed the same substrate. In 2022 the General Assembly passed House Bill 1127, requiring the state-designated exchange, CRISP, to operate as a health data utility effective October 1, 2022. It obliges the Maryland Department of Health, nursing homes, electronic health networks and prescription drug dispensers to supply data to the exchange, and obliges the exchange to deliver data in real time for treatment, care coordination and public health. The instructive point is the direction of travel: Maryland did not fund the exchange harder. It changed what the exchange was legally required to be. That is a Policy-pillar action taken in service of the Technology pillar, and it is the pattern any state should examine before writing another check."
             },
             {
               "type": "text",
@@ -2660,12 +2660,12 @@
               "type": "callout",
               "variant": "tip",
               "heading": "The diagnostic question",
-              "body": "For any data asset, the question is not \"do we have one?\" It is: can an operator act on this inside the decision window that matters? A claims database with an 18-month lag and an exchange that most community providers have not joined can both be technically operational and jointly useless for managing risk. Ask what decision the data is supposed to support, then ask whether it arrives before that decision is made. If it does not, the asset is a research tool and the organization is not ready for downside risk."
+              "body": "For any data asset, the question is not \"do we have one?\" It is: can an operator act on this inside the decision window that matters? A claims database refreshed quarterly with months of run-out and an exchange that most community providers have not joined can both be technically operational and jointly useless for managing risk. Ask what decision the data is supposed to support, then ask whether it arrives before that decision is made. If it does not, the asset is a research tool and the organization is not ready for downside risk."
             },
             {
               "type": "text",
               "heading": "What follows for sequencing",
-              "body": "Vermont's Rural Health Transformation portfolio makes the dependency concrete. The transfer center and bed-availability tool, statewide e-consult, closed-loop referral, remote patient monitoring and the vendor-neutral imaging archive are each, in isolation, a vendor point solution. What converts any of them into measurable transformation is the data layer beneath. A transfer center works only if bed capacity and provider availability can be tied to a correctly matched patient record across every facility in real time.\n\nStrip the substrate out and a large capital award becomes a set of disconnected purchases that cannot be attributed to a patient, linked to cost, or reported to CMS as evidence the investment worked. Capital arriving ahead of the data capability meant to carry it does not buy transformation.\n\nThat is the gate. Technology does not outrank Economics in importance — it precedes it in order, because the financial model cannot be operated without the visibility the data layer provides."
+              "body": "Vermont's Rural Health Transformation portfolio makes the dependency concrete. Shared-EMR incentives, statewide e-consult, closed-loop referral and remote patient monitoring are each, in isolation, a vendor point solution. What converts any of them into measurable transformation is the data layer beneath. A closed-loop referral closes only if every provider and service agency can see the same correctly matched patient record.\n\nStrip the substrate out and a large capital award becomes a set of disconnected purchases that cannot be attributed to a patient, linked to cost, or reported to CMS as evidence the investment worked. Capital arriving ahead of the data capability meant to carry it does not buy transformation.\n\nThat is the gate. Technology does not outrank Economics in importance — it precedes it in order, because the financial model cannot be operated without the visibility the data layer provides."
             },
             {
               "type": "callout",
@@ -2781,7 +2781,7 @@
                 "type": "single_choice",
                 "points": 1,
                 "question": "Vermont routes its integration work primarily through MDWAS rather than VHCURES. What is the trade being made?",
-                "explanation": "MDWAS links Medicaid claims with exchange clinical data in the State's own system but covers Medicaid only; VHCURES covers all payers but runs on a reporting lag of a year or more. Vermont chose timeliness over breadth for management purposes, which makes multi-payer scaling a requirement rather than an enhancement.",
+                "explanation": "MDWAS links Medicaid claims with exchange clinical data in the State's own system but covers Medicaid only; VHCURES covers all payers but is collected quarterly with about six months of claims run-out. Vermont chose timeliness over breadth for management purposes, which makes multi-payer scaling a requirement rather than an enhancement.",
                 "options": [
                   {
                     "id": "o_5p9d1",
@@ -4031,7 +4031,7 @@
             {
               "type": "text",
               "heading": "The Readiness Domain That Actually Predicts Success",
-              "body": "The VBC Transformation Readiness Assessment scores an organization across 30 dimensions in six domains -- strategic clarity, data and technology, care delivery capability, network and partnerships, revenue cycle, and workforce operations -- each rated 0 to 4. The platform reports an overall readiness percentage -- the average across all answered dimensions -- rather than a raw point total: 80%+ indicates Global Budget Readiness, 60-79% indicates Advanced stage (12-18 months to readiness), and below 60% signals the organization is not ready for full downside risk.\n\nFor Vermont specifically, Domain 2 (Data and Technology) is the binding constraint: most Vermont hospitals score only 25-45% in this domain, while Blueprint-participating patient-centered medical homes with active Community Health Team support score 40-60% in Domain 3 (care delivery) -- strong by national standards. The gap is not clinical capability; it is the analytics infrastructure needed to act on what clinical teams already know how to do.\n\nAn organization should score itself against this framework, or an equivalent one, before signing a downside-risk contract -- not after the first year-end reconciliation reveals the gap the hard way."
+              "body": "The VBC Transformation Readiness Assessment scores an organization across 30 dimensions in six domains -- strategic clarity, data and technology, care delivery capability, network and partnerships, revenue cycle, and workforce operations -- each rated 0 to 4. The platform reports an overall readiness percentage -- the average across all answered dimensions -- rather than a raw point total: 80%+ indicates Global Budget Readiness, 60-79% indicates Advanced stage (~6 months to readiness), and below 60% signals the organization is not ready for full downside risk.\n\nFor Vermont specifically, Domain 2 (Data and Technology) is the binding constraint: most Vermont hospitals score only 25-45% in this domain, while Blueprint-participating patient-centered medical homes with active Community Health Team support score 40-60% in Domain 3 (care delivery) -- strong by national standards. The gap is not clinical capability; it is the analytics infrastructure needed to act on what clinical teams already know how to do.\n\nAn organization should score itself against this framework, or an equivalent one, before signing a downside-risk contract -- not after the first year-end reconciliation reveals the gap the hard way."
             },
             {
               "type": "text",
