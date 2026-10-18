@@ -6,10 +6,12 @@ import { TrendingUp, Clock } from "lucide-react";
 // ─────────────────────────────────────────────────────────────────────────────
 // CIN & Shared Services Modeler — Vermont RHT investment category.
 //
-// Vermont's RHT application funds a Clinically Integrated Network linking its 14
-// hospitals into shared clinical + data infrastructure, explicitly to attack the
-// ~$1,303/discharge administrative cost premium via shared billing, coding,
-// credentialing, HR, IT, and group purchasing. This models the savings vs. the
+// Vermont's RHT application (Initiative 2) funds a Clinically Integrated Network of Shared Services
+// for the state's INDEPENDENT hospitals and other providers — "horizontal" collaboration, shared EMR
+// incentives and shared services (corrected 2026-10-18; it is not a network of all 14 hospitals).
+// The ~$1,303/discharge PPS administrative premium (AHS) is concentrated at UVMMC (UVM Health Network,
+// outside the CIN) and Rutland, so the model shows what shared billing, coding, credentialing, HR, IT
+// and group purchasing could save for the hospitals that join. This models the savings vs. the
 // CIN setup + operating cost, and the break-even.
 //
 // Self-contained; Vermont-anchored planning figures. Illustrative.
@@ -66,9 +68,9 @@ export default function CINSharedServicesLab() {
   return (
     <div className="space-y-5">
       <p className="text-sm text-slate-600 leading-relaxed bg-slate-50 rounded-lg px-4 py-3 border border-slate-100">
-        Vermont&apos;s RHT-funded <strong>Clinically Integrated Network</strong> consolidates back-office
-        functions across its 14 hospitals to attack the <strong>~$1,303/discharge administrative cost
-        premium</strong>. Toggle which functions to share and see the savings against CIN setup and
+        Vermont&apos;s RHT application funds a <strong>Clinically Integrated Network of Shared Services</strong>
+        for its independent hospitals and other providers. Vermont&apos;s PPS hospitals carry a{" "}
+        <strong>~$1,303/discharge administrative cost premium</strong> (AHS), concentrated at UVMMC and Rutland. Toggle which functions to share and see the savings against CIN setup and
         operating cost.
       </p>
 

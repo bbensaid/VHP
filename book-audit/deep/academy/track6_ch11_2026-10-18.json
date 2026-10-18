@@ -1,0 +1,87 @@
+{
+ "tag": "track6-ch11",
+ "note": "Track 6 L17/L18 (Ch11) synced to Ch11 corrections (ch11_findings + fix_ch11_tail). EMS: ~174 licensed services, 13 districts (EMS Advisory Committee 2020); '31' is an OW community quote. Tiers are this course's grouping of OW's plan. RHT app: community paramedicine/MIH, centralized interfacility transfer tool, eConsult/telehealth; workforce = training, tuition & conditional financial assistance, housing, LNA hub, pharmacist test-to-treat; Vermont already in IMLC (not an RHT investment). Credentialing '90–120 days' unsourced. Also restores Track 3 L9 transfer-tool example removed in error 2026-10-18 (the tool IS in the RHT application).",
+ "pairs": [
+  [
+   "The average credentialing cycle runs 90 to 120 days, so designations take effect three to four months before the clinicians named in them hold privileges at the receiving facilities.",
+   "Credentialing a new provider commonly takes months, so designations can take effect before the clinicians named in them hold privileges at the receiving facilities."
+  ],
+  [
+   "Operations — credentialing takes 90-120 days, so the designation is in force months before the clinical capability to honour it exists",
+   "Operations — credentialing takes months, so the designation is in force before the clinical capability to honour it exists"
+  ],
+  [
+   "participants described needing to contact 31 separate EMS agencies to arrange patient transfers.",
+   "one participant described having to call up to 31 EMS agencies to arrange a single transfer."
+  ],
+  [
+   "a rural state of roughly 647,000 people",
+   "a rural state of about 645,000 people"
+  ],
+  [
+   "Separate EMS agencies a Vermont provider may need to contact to arrange a transfer",
+   "EMS agencies one Vermont provider described calling to arrange a single transfer (Oliver Wyman community engagement)"
+  ],
+  [
+   "Oliver Wyman's regionalization blueprint for Vermont organizes the hospital network into three facility types, each with a defined role.",
+   "Building on Oliver Wyman's regional plan, this course groups Vermont's hospitals into three facility types, each with a defined role."
+  ],
+  [
+   "The blueprint's proposal is orderly conversion rather than unexpected closure:",
+   "Oliver Wyman's report lays out restructuring options rather than unexpected closure:"
+  ],
+  [
+   "Vermont's 31 separate EMS agencies are the concrete version of this problem.",
+   "One Vermont provider's account — calling up to 31 EMS agencies to arrange a single transfer, in a state with about 174 licensed ambulance and first-response services — is the concrete version of this problem."
+  ],
+  [
+   "EMS professionalization and regionalization, inter-facility transfer coordination, and telehealth to avoid unnecessary transfers are named priorities in Vermont's Rural Health Transformation Program application.",
+   "community paramedicine and mobile integrated health, a centralized interfacility transfer tool, and telehealth to avoid unnecessary transfers are named priorities in Vermont's Rural Health Transformation Program application."
+  ],
+  [
+   "The fragmentation number is the diagnosis: 31 separate EMS agencies that a Vermont provider may need to contact to arrange a transfer.",
+   "The fragmentation is the diagnosis: about 174 licensed EMS services in 13 districts, and one provider's account of calling up to 31 of them to arrange a single transfer."
+  ],
+  [
+   "Vermont's RHT Program application makes EMS transformation a priority investment on exactly these grounds: professionalization and regionalization of EMS, improved inter-facility transfer coordination, and expanded telehealth to reduce transfers that do not need to happen at all.",
+   "Vermont's RHT Program application responds on exactly these grounds: a statewide community paramedicine and mobile integrated health model, a centralized tool showing bed capacity and service availability to guide interfacility transfers, and expanded telehealth to reduce transfers that do not need to happen at all."
+  ],
+  [
+   "The average credentialing cycle for a new provider runs 90 to 120 days. ",
+   "Credentialing a new provider commonly takes months. "
+  ],
+  [
+   "has built a three-to-four-month gap into its own plan.",
+   "has built a months-long gap into its own plan."
+  ],
+  [
+   "a 90-120 day dead zone in which",
+   "a months-long dead zone in which"
+  ],
+  [
+   "its workforce initiatives include tuition assistance, recruitment incentives with 5-year service obligations, scope-of-practice training",
+   "its workforce initiatives include training programs, tuition and conditional financial assistance with 5-year service commitments, workforce housing, and scope-of-practice changes"
+  ],
+  [
+   "tuition assistance and loan forgiveness for nurses, physicians, APRNs, licensed nursing assistants and home health aides, carrying 5-year in-state service obligations.",
+   "tuition and conditional financial assistance — including no-cost tuition for critical occupations such as registered nursing — carrying 5-year in-state service commitments, plus workforce housing."
+  ],
+  [
+   ", and Interstate Medical Licensure Compact participation, which allows out-of-state specialists to reach Vermont patients by telehealth without relocating.",
+   ". Vermont also already belongs to the Interstate Medical Licensure Compact, which lets out-of-state physicians obtain Vermont licenses faster."
+  ],
+  [
+   "the RHT investments in APRN and community health worker training are the enabling condition",
+   "the RHT training investments, including a licensed nursing assistant training hub, are the enabling condition"
+  ],
+  [
+   "Administrative reduction was estimated to contribute over $100 million of the $400 million-plus transformation savings target.",
+   "Oliver Wyman projected more than $400 million of direct savings over five years, with administrative reductions and shared services among the largest sources."
+  ],
+  [
+   "Shared-EMR incentives, statewide e-consult, closed-loop referral and remote patient monitoring are each, in isolation, a vendor point solution.",
+   "Shared-EMR incentives, the interfacility transfer tool, statewide e-consult, closed-loop referral and remote patient monitoring are each, in isolation, a vendor point solution."
+  ]
+ ],
+ "residue": "647,000|31 separate EMS|90 to 120 days|90-120 day|loan forgiveness for nurses|community health worker training are|over \\$100 million of the \\$400"
+}

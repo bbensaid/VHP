@@ -331,6 +331,7 @@ export default function VermontUHDSPage() {
             <tbody>
               {[
                 ["Shared EMR adoption incentives", "Not itemized", "Voluntary adoption of a shared EMR that keeps contributing data to the VHIE."],
+                ["Centralized interfacility transfer tool", "Not itemized", "Shared real-time view of bed capacity and service availability across Vermont's hospitals, modeled on Oregon's Capacity Center."],
                 ["Statewide e-Consult Expansion", "$1,550,000", "Secure asynchronous specialist consultations, reducing unnecessary in-person referrals."],
                 ["Closed-Loop Referral System", "$455,000", "Digital care-coordination platform connecting medical, behavioral health, and social services."],
                 ["Remote Patient Monitoring support", "IT Advances", "Chronic-care management in the home, enabling earlier intervention."],
@@ -350,8 +351,9 @@ export default function VermontUHDSPage() {
           <p className="text-xs text-slate-700 leading-relaxed">
             <strong className="text-slate-900">The point.</strong> Each project is, on its own, a
             vendor-supplied point solution. What turns it into measurable transformation is the
-            UHDS layer beneath: a closed-loop referral only closes if every provider and service agency
-            can see the same correctly matched patient record. Strip
+            UHDS layer beneath: the transfer tool only works if bed and capacity data ties to a correctly
+            matched patient record across every facility, and a closed-loop referral only closes if every
+            provider and service agency can see the same record. Strip
             the UHDS out and these become disconnected purchases that cannot be attributed to a
             patient record, linked to cost data, or reported to CMS as evidence the investment
             worked.

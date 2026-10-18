@@ -8061,7 +8061,7 @@ OPERATIONS = [{'id': 'lesson_5p_regionalization_right_sizing',
                              'financial plan for the hospital that just lost a service line.\n'
                              '\n'
                              "Vermont's version of this problem is 14 independent non-profit "
-                             'hospitals across a rural state of roughly 647,000 people, ranging '
+                             'hospitals across a rural state of about 645,000 people, ranging '
                              "from an academic medical center that anchors the state's economy to "
                              'critical access hospitals of 25 beds or fewer in the Northeast Kingdom where any '
                              'service reduction has immediate community consequences. The numbers '
@@ -8405,7 +8405,7 @@ OPERATIONS = [{'id': 'lesson_5p_regionalization_right_sizing',
                              'provider must hold privileges at the receiving facility before the '
                              'COE designation means anything clinically. A hospital network that '
                              'finalizes tier assignments and then begins cross-facility '
-                             'credentialing has built a three-to-four-month gap into its own plan. '
+                             'credentialing has built a months-long gap into its own plan. '
                              'The fixes are known — automated primary source verification against '
                              'the NPDB and state licensing boards, continuous license and sanction '
                              'monitoring in place of point-in-time re-verification at two-year '
@@ -8440,7 +8440,7 @@ OPERATIONS = [{'id': 'lesson_5p_regionalization_right_sizing',
                                'left': 'Required before: COE-designated clinicians hold privileges '
                                        'at every facility where the design expects them to '
                                        'practice.',
-                               'right': 'Failure mode if skipped: a 90-120 day dead zone in which '
+                               'right': 'Failure mode if skipped: a months-long dead zone in which '
                                         'the tier change is official and the clinical capability '
                                         'to honour it does not yet exist.'},
                               {'label': 'Replacement volume verified',
