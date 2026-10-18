@@ -1,0 +1,525 @@
+1 
+ 
+MEMORANDUM 
+ 
+TO: Owen Foster, Chair, GMCB 
+CC: Susan Barrett, Executive Director, GMCB; Michael Barber, General Counsel, GMCB 
+FROM: Marisa Melamed, Deputy Director of Health Systems Policy and Regulation, GMCB; 
+Michelle Sawyer, Health Policy Project Director, GMCB 
+RE: OneCare Vermont “Return on Investment” Analysis 
+DATE: May 9, 2024 
+Background and Objective 
+The Green Mountain Care Board (GMCB) is tasked with oversight of ACOs operating in Vermont, 
+which includes certiﬁcation and annual budget review. The annual budget review process requires 
+GMCB approval or modiﬁcation of a proposed ACO budget and provides an opportunity to assess 
+ACOs’ programs, as well as the cost of administering such programs. GMCB has approved the 
+OneCare Vermont (OneCare or OCV) submitted budgets subject to conditions since 2018. Since the 
+FY2020 budget review, and earlier in some form, GMCB has mandated OCV ’s health care savings 
+exceed OCV’s administrative costs; speciﬁcally:    
+“Over the duration of the APM Agreement, OneCare’s administrative expenses must be less than the 
+healthcare savings, including an estimate of cost avoidance and the value of improved health, 
+projected to be generated through the Model. ” 
+To verify fulﬁllment of this budget order condition, a return-on-investment (ROI) analysis is required. 
+An analysis was not run until 2023 .1 OneCare retained a consultant to conduct the analysis and 
+submitted the results in November of that year. OneCare’s assessment is included in this memo and 
+attached hereto as Exhibit 1. 
+An ROI analyzes the cost or investment, and the resulting return or beneﬁt. In all the analyses 
+explored within this document, save one, OneCare’s administrative expenses are one side of this 
+equation: the required investment or cost. The other side of the equation, the return, is more difficult 
+to calculate for this ACO due in part to the challenges of quantifying the health of the population, of 
+isolating the impact of OneCare in Vermont, and of measuring external forces that have affected the 
+recent health care landscape (e.g. COVID). Despite the inherent challenges and limitations to an ROI 
+analysis in this context, this memo outlines several methodological approaches and provides an ROI 
+under each approach. GMCB reviewed the June 2020  and June 2021  State Auditor’s Office (SAO) 
+reports related to OneCare, and GMCB has included ROI analyses consistent with the methodology 
+utilized therein.   
+This memorandum does not assess the ROI of the All -Payer Model as a whole. Notably, the federal 
+All-Payer Model evaluation, discussed below, is performed by nearly 20 consultants and experts from 
+the University of Chicago with additional support from other organizations. Absent adequate 
+ 
+1 The calendar year and ﬁscal year are used interchangeably as the ACO’s ﬁscal year runs from January 
+through December. 
+2 
+ 
+ﬁnancial resources to conduct a similar analysis of the All -Payer Model from the state of Vermont’s 
+perspective, GMCB is unable to provide a Vermont-speciﬁc programmatic review at this time. GMCB 
+would welcome the opportunity to independently lead such a n evaluation should the S tate 
+appropriate the necessary resources. GMCB is supportive of such an evaluation as it would inform 
+current and future policy makers of the successes and failures of the All-Payer Model and allow the 
+State to better design and implement future health care reform efforts.   
+These limitations notwithstanding, GMCB has dedicated some of its limited  internal resources to 
+transparently evaluate ways in which OCV’s ﬁnancial outcomes could be measured, as outlined in 
+several GMCB Orders on the OCV Budget. This memorandum aligns not only with GMCB’s budgetary 
+conditions but overlaps in important respect s with the State Auditor’s re commendation that the 
+GMCB perform an ROI of the All-Payer Model, since OCV is Vermont’s only multi-payer ACO. Further, 
+this memo outlines and includes co sts and beneﬁts external to OneCare Vermont’s speciﬁc 
+performance, including identiﬁcation of additional costs borne by the State and beneﬁts accrued 
+from contractual terms with the federal government, such as Medicare funding for Blueprint and 
+Supports and Services at Home ( SASH). The following sections outline work by GMCB and OCV to 
+comply with the Orders.  
+This GMCB staff memo reviews: 
+1. Note on the State Auditor’s Office Report 
+2. Approaches/Methods for Analysis and Results 
+3. Discussion 
+  
+3 
+ 
+Note on the State Auditor’s Office Reports 
+In June 2020 the State Auditor’s Office ( SAO) issued a report on Vermont’s All- Payer ACO Model,2 
+which amongst other things found: 
+• ACO operating costs should be less than the healthcare savings the ACO generates. The 
+GMCB has cited complexities in measuring 1) whether healthcare  spending would have 
+occurred absent the ACO’s performance, and 2) incorporating quality of care into this 
+measurement of healthcare savings. 
+• Six of the 22 quality measures in the All -Payer Agreement have updated baselines that are 
+either the same or higher than their corresponding 2022 targets. That means the quality of 
+care could decline and yet the quality targets may be achieved. Therefore, should this occur, 
+the public could be misled if the GMCB emphasizes that a target was met without also 
+acknowledging that quality had declined.  
+ 
+The SAO report included recommendations for GMCB. The GMCB responded to the Auditor’s 2020 
+recommendations with a letter dated September 8, 2021, and a 1-year follow-up was reported to the 
+Legislature via the Auditor in December 2021.  In November 2023, the SAO requested a 3-year follow-
+up on implementation of its recommendations. The SAO’s 2023 follow -up recommended that the 
+GMCB analyze the cost of implementing the All -Payer ACO Model in comparison to the Model’s 
+savings. The federal g overnment analyzes the Medicare performance of the All -Payer ACO Model.  
+The federal Medicare analyses are attached hereto as Exhibits 2, 3, and 4.  The ﬁnal federal evaluation 
+of the Model is expected later this year.  Importantly, the federal evaluations do not evaluate Vermont-
+speciﬁc impacts of OCV on the All -Payer Model. In connection with implementing the All -Payer 
+Model, the State of Vermont did not plan for, require, or resource a Vermont-speciﬁc evaluation.   
+In June 2021, the SAO issued another report on the ACO and its relationship with Vermont’s 
+Medicaid agency, the Department of Vermont Health Access (DVHA).3 Findings from this report 
+include: 
+• The State (DVHA and GMCB) spent at least $29.8 million from 2016-2020 on 
+implementation of the All-Payer ACO Model. 
+ 
+• From 2017 through 2020, DVHA made $25.1 million in payments to OneCare to support 
+ACO operations. Medicaid was the only payer to provide this type of support for the 
+ACO. Some of this funding was intended for speciﬁc waiver-based uses; however, 
+oversight of this funding was insufficient to ensure it was used for its intended 
+purposes. 
+ 
+2 “Vermont’s All-Payer Accountable Care Organization (ACO) Model; An Overview of the All-Payer ACO Model 
+and the State’s Oversight of Vermont’s Only ACO, OneCare Vermont, LLC. ” 26 June 2020. 
+https://auditor.vermont.gov/sites/auditor/ﬁles/documents/ACO%20Model%20Final%20Report_0.pdf 
+3 “All-Payer ACO Model Implementation Costs; Department of Vermont Health Access Provided Substantial 
+Funding for OneCare’s Operating Costs (Which Have Exceeded Reported Savings) But Has No Assurance that 
+OneCare Used All Funds for Their Intended Purposes. ” 18 June 2021. 
+https://auditor.vermont.gov/sites/auditor/ﬁles/documents/ACO%20Implementation%20Costs%20with%20L
+etter%202.pdf 
+4 
+ 
+ 
+• From 2017 to 2019, the amount of OneCare’s performance against Medicaid targets 
+assessed against the operating costs funded by DVHA shows a net loss of $25.6 million 
+for DVHA. 
+ 
+The 2021 report did not include recommendations for GMCB, but some of the analyses within this 
+report addressed costs and returns associated with DVHA’s involvement with and support of the 
+ACO. Two of these analyses are expanded upon later in this memorandum with updated ﬁgures.  
+5 
+ 
+Approaches/Methods for Analysis 
+It should be noted and should be a caveat for all ROI -related considerations during the term of the 
+All-Payer ACO Model (the agreement) from 2018 -2022, that the COVID -19 pandemic signiﬁcantly 
+impacted health  care spending. Disentangling the effects of the pandemic from the ROI is not 
+something explored in this document, but a consideration readers should keep in mind when 
+interpreting any of these analyses.  See Exhibits 1, 2, 3, and 4 for further discussion on the effects of 
+the COVID-19 pandemic on the health care landscape. 
+Because health care utilization was heavily impacted by the pandemic during most of 2020,  there 
+were large amounts of “savings” realized for the ACO. These results are outliers; the extreme 2020 
+savings are likely due to  pandemic-induced reduction of health  care spending . Including 2020 
+performance inﬂates experienced savings and lessens losses during the period of the APM.  Thus, for 
+each analysis there is a version in which 2020 is included, and a version where 2020 is excluded. 
+OneCare’s administrative expenses during the agreement totaled $ 70.35 million. The sources of 
+these funds varied from year to year but largely consisted of hospital participation fees .  Hospital 
+participation fees are the cost of entry into the ACO network for participating hospitals. The fees 
+provide the operating revenue for the ACO and are calculated proportionally based on the hospital’s 
+net patient service revenue, CAH or non-CAH4 designation, and an adjustment for population health 
+payments.  The amount of administrative spending each year varied as well. For each year in this 
+analysis – 2018, 2019, 2020, 2021, and 2022  – the GMCB approved the amounts submitted in 
+OneCare’s budget.  In FY23 and FY24 , the GMCB ordered OneCare to reduce its proposed budgets 
+by $303,799 and $ 957,245 respectively.  FY23 and FY24 are identiﬁed and described in this memo, 
+but not included in this analysis (FY18-FY22). Preliminary performance results for FY23 show varying 
+performance among payer programs. Once the ﬁnal settlement amounts have been determined and 
+released, the information for FY23 can be applied to most of the analyses included in this document. 
+The amounts used in the calculations for the ROI are actuals and thus vary from the budgeted 
+amounts that appear in the ACO budget submissions and budget orders. 
+  
+ 
+4 CAH = Critical Access Hospital 
+6 
+ 
+1. Administrative expenses compared to performance against ﬁnancial 
+targets. 
+The most straightforward and reliable measurement of ROI is ACO administrative expenses 
+compared to the ACO’s performance (over or under) against ﬁnancial targets during the course of the 
+agreement. This is consistent with the approach taken in Table 3 in  the State Auditor’s 2021 Report 
+but does have some methodological differences. 
+Savings occur when the ACO network spends less on providing care to Vermonters than the preset 
+benchmark or target, which is negotiated between the ACO and the payer prior to the start of the 
+program year.  A higher negotiated benchmark makes it easier for the ACO to achieve savings, while 
+a lower benchmark makes it more difficult to achieve savings. The ACO has the ability to deduct 
+amounts designated for budgeted expenses from the savings (e.g., administrative costs, Population 
+Health Management Expenses,  and contributions to reserves) if determined appropriate by 
+OneCare’s Board of Managers before distributions to the network are made.  The amount of those 
+savings released back to the ACO network is called the settlement amount.  This memorandum 
+explains the impact of the ACO deducting  amounts from distributed shared savings (settlement) in 
+Section 2, infra. 
+For the purposes of this ﬁrst section, ROI is calculated in three ways. The ﬁrst, in Table 1a, is inclusive 
+of all payer programs for each performance year and does not include funding for Blueprint for Health 
+and SASH, the rationale for which is discussed below . The second, in Table 1b, omits the Medicare 
+benchmark and only includes a combined total of the Medicaid and commercial benchmarks from 
+each performance year. This calculates savings or losses for Vermont- based payers (i.e. Medicaid 
+and commercial payers). The third, in Table 1c, is a closer look at the Medicaid performance of the 
+ACO and includes ACO operating costs paid by Medicaid for each program year.  This analysis is the 
+only calculation included in this document in which OneCare’s full administrative budget amount is 
+not the input used to calculate the return, instead focusing strictly on the experience of a single 
+payer. 
+The Medicare benchmark is set to incorporate the annual Blueprint for Health and SASH funding that 
+ﬂow through the ACO to the designated recipients. Because of this pass- through funding, when 
+calculating the targets for each year in Table 1a, the amount of funding for Blueprint and SASH were 
+deducted from the overall benchmark. Blueprint and SASH funding provided by Medicare as a 
+function of the All -Payer Model are noted in this memorandum as an additional, non- ACO 
+performance-based beneﬁt of the Model. 
+A note about the formatting of the tables in this memo: because negative numbers can mean both 
+performance under a target (which is desirable) and overall losses (which is not desirable), the cells 
+are color -coded in an attempt to clarify desirable and und esirable results. Green cells indicate 
+savings and performance under targets, while red cells indicate losses or performance over targets. 
+  
+7 
+ 
+ 
+Table 1a: OneCare’s Administrative Expenses Compared to Performance against Combined All-Payer Targets. 
+ 
+2018 2019 2020 2021 2022 TOTAL 
+TOTAL 
+omitting 
+2020 
+OneCare's 
+Administrative 
+Expenses 
+$13.74M $15.34M $14.04M $13.61M $13.61M $70.35M $56.30M 
+Over/Under 
+Target* -$6.15M $17.80M -$79.93M -$1.13M -$15.60M -$85.02M5 -$5.09M 
+Savings -$7.59M -$33.14M $65.89M -$12.47M $1.99M $14.67M -$51.22M 
+*Negative amounts indicate savings for performance under target in this row. 
+ 
+The method in Table 1a is the most closely aligned to the Net Financial Performance calculation in 
+the second SAO report (6/18/2021, Table 3) carried forward through 2022. However, some ﬁgures 
+vary due to differences in data sources, availability of actuals, and the lack of data available to GMCB 
+staff regarding the UVMMC Self-Funded payer program.  It should be noted that the SAO’s calculation 
+included funding for Blueprint and SASH, which totaled over $42M between 2018 and 2022.  While 
+the $42M was an important beneﬁt the State received as part of the All-Payer Model for Blueprint and 
+SASH, the authors of this memo are of the opinion that analysis of OneCare’s  performance should 
+not include this beneﬁt.  
+ 
+Table 1 b: OneCare’s Administrative Expenses Compared to Performance against A ggregate Medicaid and 
+Commercial Insurer Targets (Medicare omitted) 
+ 
+2018 2019 2020 2021 2022 TOTAL 
+TOTAL 
+omitting 
+2020 
+OneCare’s 
+Administrative 
+Expenses 
+$13.74M $15.34M $14.04M $13.61M $13.61M $70.35M $56.30M 
+Over/Under 
+Target* $3.09M $21.26M -$61.33M $12.42M -$3.51M -$28.07M $33.26M 
+Savings -$16.83M -$36.60M $47.29M -$26.03M -$10.10M -$42.28M -$89.56M 
+*Aggregate targets of Medicaid and Commercial payers. Negative amounts indicate savings  for performance 
+under target in this row. 
+ 
+From 2017 through 2021 Medicaid contributed funds towards the operating costs of the ACO. Since 
+2022, all funds provided by Medicaid to the ACO ﬂow directly to providers per the contract. Table 1c 
+expands upon an analysis in the SAO Report that explored OneCare’s ﬁnancial performance in the 
+Medicaid program and assesses this performance against funds contributed to the ACO’s operating 
+ 
+5 Preliminary performance results for FY23 are available for three of four payer programs.  Final 
+results will be available in the fall of 2024. Preliminary results indicate the ACO will experience 
+modest savings, breakeven, and small losses across these payer programs. 
+8 
+ 
+costs. The SAO Report included the years 2017 through 2019. While not included in Table 1 c, the 
+2017 experience resulted in a $2.4 million savings for Medicaid. 
+ 
+Table 1c: Expansion of SAO Report Table 1  
+2018 2019 2020 2021 2022 TOTAL 
+TOTAL 
+omitting 
+2020 
+Administrative 
+Costs funded by 
+Medicaid 
+$3.08M $5.40M $5.40M $3.89M $0 $17.77M $12.37M 
+Over/Under 
+Medicaid Target* $1.54M $13.49M -$16.83M -$21.60M -$15.8M -$39.20M -$22.37M 
+Savings -$4.62M -$18.89M $11.44M $17.70M $15.80M $21.43M $9.99M 
+*Negative amounts indicate savings for performance under target in this row. 
+ 
+  
+9 
+ 
+2. Administrative expenses compared to settlement payments. 
+A second method to calculate the ACO’s ROI during the agreement would be to compare the ACO’s 
+administrative expenses to the settlement payments made to the ACO’s  network. These amounts, 
+referred to as “settlement,” are closely related to how the ACO performed against its set benchmark 
+target in the ﬁrst ROI calculations. As described in Section 1, the amount that the ACO saved with its 
+performance under its benchmark is not the amount distributed to the ACO network. The settlement 
+is a representation of what the network experiences as savings and is the result of the ACO’s ﬁnancial 
+performance, any quality adjustments and risk corridors, as well as any sequestration amounts that 
+are in the ACO’s contracts with the payers. Based on the ACO’s performance in speciﬁc quality 
+metrics as speciﬁed in the payer contracts, the settlement amount can be adjusted up or down. 
+When quality performance is high, the shared savings earned would be higher than if the ACO had 
+saved the same amount but had lower quality performance.6 
+Settlement amounts as calculated in the Medicare program include funding for Blueprint and SASH. 
+Table 2 below omits this funding for reasons previously discussed. 
+It should be noted that risk corridors are subject to negotiation between the ACO and payers. In the 
+case of the Medicare payer program, the ACO is able to choose the risk corridor for each year from a 
+set of options outlined by CMS. Savings have been realized every year under the Medicare program. 
+However, due to the ACO choosing a narrower risk corridor, the settlement amounts experienced by 
+the network have been smaller than they could have been had the ACO chosen to take on more risk.  
+Table 2: OneCare’s Administrative Expenses Compared to Performance against All-Payer Settlement Amounts  
+2018 2019 2020 2021 2022 TOTAL 
+TOTAL 
+omitting 
+2020 
+OneCare’s 
+Administrative 
+Expenses 
+$13.74M $15.34M $14.04M $13.61M $13.61M $70.35M $56.30M 
+Settlement* $3.12M -$5.03M $20.71M $5.46M $6.57M $30.83M $10.12M 
+Savings -$10.62M -$20.37M $6.67M -$8.15M $7.04M -$39.52M -$46.18M 
+*Not including Blueprint and SASH funding. 
+  
+ 
+6 OneCare’s Quality Performance can be found at https://www.onecarevt.org/aco-
+results/#scorecardsbyyear 
+10 
+ 
+3. OneCare’s Submitted ROI Memo 
+The FY21 and FY22 OCV ACO Reporting Manuals designated the ROI analysis report to the FY23 
+Reporting Manual, following the conclusion of the original APM Agreement in effect 2018 through 
+2022. OneCare submitted a memo to the GMCB on November 14, 2023, “Ret urn on Investment 
+Analysis for OneCare Vermont. ” The memo reviewed how ACOs are assessed for ROI elsewhere, 
+proposed methods for calculating ROI or similar metrics, discussed limitations on an analysis of ROI 
+for the ACO, and presented recommendations for future analysis. Notably, the memorandum does 
+not propose a calculation, nor calculate results for the GMCB to assess fulﬁllment of the Budget 
+Order requirement, except for one metric: ROI Calculation Using Shared Savings Compared with 
+OneCare’s Administrative Expenses. 
+GMCB staff identiﬁed errors in calculations within the memo and notiﬁed OneCare of these ﬁndings. 
+The staff found that an incorrect amount was in the “Shared Savings/Losses” box for 2019, and that 
+the “Administrative Expenses” amount in 2021 was a budge ted amount rather than an actual 
+amount. It should be noted that not all calculations within the memo were veriﬁed for accuracy by 
+GMCB staff and additional corrections may need to be made. The memo was reissued to GMCB on 
+April 15, 2024, with the 2019 co rrection made. This corrected report is attached as Exhibit 1.  See 
+Table 6 below from the reissued OCV memo. 
+ 
+This calculation results in a total of $57.6 million in savings from 2019-2021. This is an incomplete 
+analysis as it omits data from 2018 and 2022. There were also some differences in the vendor’s 
+choice of methodology and language as follows: 
+1) The Administrative Expenses included in this table are actuals for 2019 and 2020, but the 
+budgeted amount was used for 2021 rather than the actual expense. The actual amount of 
+administrative expense for 2021 is $13,608,548.  As mentioned, GMCB staff notiﬁed OneCare 
+of this discrepancy, but the memo was reissued with this ﬁgure unchanged. 
+2) “Shared Savings and Losses” in this table are network settlement amounts plus the ﬁxed 
+prospective payment (FPP) beneﬁt amount for each year. The FPP beneﬁt amount is 
+associated with the Medicaid payer program, which provides unreconciled FPP to the 
+network. If the amount spent by the network is less than what they w ere paid in FPP , that 
+amount is retained by the network, and the difference is the beneﬁt amount. 
+3) Over $42 million in Blueprint and SASH funding are included in OneCare’s calculations of 
+shared savings amounts. These funds are not a reﬂection of OneCare performance or 
+programmatic efforts as it is a contract term negotiated between the State of Vermont and 
+
+11 
+ 
+CMMI. Nor did OneCare deduct other costs borne by the State of Vermont in establishing, 
+implementing, and regulating the All-Payer Model. The GMCB staff chose not to include the 
+Blueprint and SASH funds in most of the calculations discussed earlier in this document. 
+To complete the analysis started by OneCare’s vendor, FY2018 and FY2022 must be included. The 
+result of expanding this is seen below in Table 3, but excludes  Blueprint and SASH funding, and  
+includes only actual administrative expenses and not budgeted expenses for all years. 
+Table 3. OneCare Vermont’s Table 6, expanded and corrected with actual administrative expenses. 
+ 2018 2019 2020 2021 2022 TOTAL 
+TOTAL 
+omitting 
+2020 
+OneCare's 
+Administrative 
+Expenses 
+$13.74M $15.34M $14.04M $13.61M $13.61M $70.35M $56.30M 
+Shared 
+Savings and 
+Losses* 
+$3.42M $4.78M $64.66M $8.27M $7.45M $88.58M $23.92M 
+Savings -$10.32M -$10.56M $50.61M -$5.34M -$6.16M $18.23M -$32.38M 
+*Not including Blueprint and SASH funding. 
+As noted earlier, preliminary performance for 2023 shows varying performance among  payer 
+programs. Using OneCare’s methodology in Table 6, this will likely result in a small positive return for 
+2023. Once the ﬁnal settlement amounts have been determined and released, this information can 
+be included in any of the analyses provided in this document. 
+  
+12 
+ 
+4. Other: Administrative expenses compared to the value of shared 
+services with the ACO; administrative expenses compared to the value 
+of improved health and/or improved quality of care delivery 
+As discussed here and in OneCare’s submitted ROI analysis, there is no standard way of calculating 
+an ROI for an ACO at the entity-level. This section attempts to document some additional potential 
+“returns” that the ACO might have produced during the agreement, that may or may not have 
+materialized into ﬁnancial savings or costs reﬂected in the above calculations. This section does not 
+attempt to calculate ﬁnancial gain or loss due to the nature of these returns. 
+One potential advantage of the ACO is the value of shared services for its network. OneCare Vermont 
+offered its network data analytics, data reporting, and a universal care coordination software 
+platform during the agreement. In theory, these services are a beneﬁt to the network as they have the 
+potential to save providers the expense associated with producing these services in -house. The 
+associated beneﬁt would vary depending on  the provider, given each provider’s pre-existing data 
+abilities and the perc eived value of Care Navigator, the care coordination tool ultimately 
+discontinued by the ACO.  The value  of the ACO’s shared services is not readily amenable to a 
+mathematical formula.  It is unclear whether any ﬁnancial savings were accrued or if they are 
+demonstrated in performance as against the benchmark targets. 
+Another potential advantage of the ACO is the value of improved health for patients in Vermont.  
+While better health outcomes are important to Vermonters, it is difficult to assign a dollar amount to 
+these outcomes for the purpose of conducting an ROI. Four potential ways to review the “return” to 
+Vermont in health outcomes would be through 1) analyzing the ACO’s quality performance during the 
+agreement, 2)  analyzing the change in chronic disease burden,  3) measuring changes in life 
+expectancy, and 4) measuring changes in hospitals’ actual versus expected mortality rates.  The ﬁrst 
+two methods are discussed in OneCare’s submitted ROI document along with the associated 
+shortfalls and data-related difficulties.  Improvements, if any, in health may also be a result that can 
+be observed many years later; increased preventative care today may not show a decrease in chronic 
+illness until decades later.  Health outcomes could additionally be a function of myriad factors 
+unrelated to the ACO, such as a change in state demographics, broader environmental factors, 
+accessibility of health care, costs of health care, improvements in pharmaceuticals, other reforms, 
+and numerous other factors. 
+As discussed above, t he State additionally beneﬁted from the All -Payer Model through Medicare 
+funding $42.04M for Blueprint and SASH.   
+  
+13 
+ 
+5. Other: Additional costs incurred implementing and regulating the 
+ACO 
+The main purpose of this memorandum is to analyze compliance with the budget order condition 
+which instructed OneCare to ensure that its administrative costs were less than the savings that its 
+programs produced. However, these administrative costs are far from the only ones that have been 
+incurred in supporting the efforts of the ACO during the APM. This section discusses additional 
+costs incurred while implementing and regulating the ACO, and includes actuals wherever data 
+was available. 
+GMCB Regulatory Costs 
+The GMCB is funded in part from the State’s General Fund and in part from assessments on the 
+entities that GMCB regulates through a practice known as “billback. ” The following table shows the 
+amounts that OneCare was assessed from 2019 – 2022, and the commensurate State share of the 
+costs covered by these assessments. ACOs were not part of the billback prior to 2019. 
+Table 4: Costs associated with GMCB regulation of OneCare Vermont 
+ 2019 2020 2021 2022 TOTAL 
+General Fund 
+(40%) $138,764 $244,074 $265,611 $293,914 $942,363 
+Billback paid by 
+OneCare (60%) $208,145 $366,111 $398,416 $440,872 $1,413,544 
+Total (100%) $346,909 $610,185 $664,027 $734,786 $2,355,907 
+*18 V .S.A. § 9374(h) did not authorize GMCB to include Accountable Care Organizations in billback until 2019. 
+Mathematica Contract 
+Since 2017, GMCB has contracted with the vendor Mathematica to fulﬁll the State’s reporting 
+requirements under the All-Payer Model. Through the GMCB the State pays Mathematica 
+approximately $1M annually for these services, and the State expended approximately $5M 
+between 2018-2022. The total amount paid to Mathematica will total approximately $7M at the 
+conclusion of State FY26. 
+State Innovation Model (SIM) Grant 
+As mentioned in the 2021 SAO Report, Vermont was the recipient of a $45 million SIM Grant in 2013 
+to, in part, set up the All-Payer Model. This grant required that the State experience savings equal to 
+the amount of the grant; this requirement was met. The amount of money spent directly 
+implementing the ACO is unknown as there were various projects funded by this grant.  
+Pre-APM DVHA-Funded Operation Costs 
+This memo previously described Medicaid’s funding to support OneCare’s operating costs. Because 
+the analyses completed focused on the years of 2018 through 2022, any funds spent prior to this 
+were not described. It should be noted that in 2017, Medicaid also contributed $2.5 million towards 
+OneCare’s operating costs, while OneCare saved $2.4 million against the Medicaid target, resulting 
+in a net loss of approximately $200,000. 
+14 
+ 
+Other Potential Costs 
+GMCB staff have limited insight into additional State funds that may have been spent on the 
+implementation or operation of the ACO but wish to acknowledge that there may be additional costs 
+not captured within this memo.  
+15 
+ 
+Discussion 
+The analyses in this memo demonstrate a range of results, from $42.28 million in losses for Medicaid 
+and commercial payers up to $21.43 million in savings for Medicaid.  When removing 2020 from any 
+of these analyses, savings signiﬁcantly decrease, and losses signiﬁcantly increase.   
+Table 5: Summary of Results 
+METHOD Page RESULT RESULT w/o 2020 
+1a. OneCare’s Administrative Expenses 
+Compared to Performance against all-payer 
+target 
+Pg 7 $14.67 million in 
+savings 
+$51.22 million in 
+losses 
+1b. OneCare’s Administrative Expenses 
+Compared to Performance against Medicaid 
+and Commercial Insurer-blended target 
+(Medicare omitted) 
+Pg 7 $42.28 million in 
+losses 
+$89.56 million in 
+losses 
+1c. Medicaid’s contribution towards 
+Administrative Expenses against 
+Performance against Medicaid Target 
+Pg 8 $21.43 million in 
+savings 
+$9.99 million in 
+savings 
+2. OneCare’s Administrative Expenses 
+Compared to all-payer settlement 
+Pg 9 $39.52 million in 
+losses 
+$46.18 million in 
+losses 
+3. OneCare’s Administrative Expenses 
+Compared to all-payer settlement 
+[OneCare’s submission] 
+Pg 11 $18.23 million in 
+savings 
+$32.38 million in 
+losses 
+ 
+Continued analysis of any of these  or other methods will require additional analytics support. One 
+consideration that could be explored is the effect on health care pricing on the observed ﬁnancial 
+performance of OneCare. While reducing utilization and improving outcomes are two goals of the 
+ACO, ﬁnancial performance could ultimately be  a reﬂection of , or at least impacted by,  what 
+providers are charging for health  care services  rather than a sign of decreased utilization and 
+improved health. 
+It is the opinion of the staff authors of this memo that it is unlikely there will be consensus around a 
+single metric that accurately measures the value of the ACO, and that any follow-up analysis 
+should be ﬁnancial performance-based in nature given the likely impossibility of parsing out 
+OneCare’s effect on health outcomes. 
+  
+16 
+ 
+Exhibits 
+Exhibit 1: Return on Investment Analysis for OneCare Vermont 
+o Return on Investment Analysis for OneCare Vermont 
+Exhibit 2: First Evaluation Report, Performance Years 1-2 (2018-2019) (August 2021) 
+o First Evaluation Report: Evaluation of the Vermont All-Payer Accountable Care 
+Organization Model 
+o Findings at a Glance: Vermont All-Payer Model Evaluation of the First Two Performance 
+Years: 2018-2019 
+o Technical Appendices: First Evaluation Report, Evaluation of the Vermont All-Payer 
+Accountable Care Organization Model 
+Exhibit 3: Second Evaluation Report, Performance Years 1-3 (December 2022) 
+o Second Evaluation Report: Evaluation of the Vermont All-Payer Accountable Care 
+Organization Model 
+o Findings at a Glance: Vermont All-Payer Model Evaluation of the First Three Performance 
+Years: 2018-2020 
+o Technical Appendices: Second Evaluation Report, Evaluation of the Vermont All-Payer 
+Accountable Care Organization Model 
+Exhibit 4: Third Evaluation Report, Performance Years 1-4 (July 2023) 
+o Third Evaluation Report: Evaluation of the Vermont All-Payer Accountable Care 
+Organization Model 
+o Findings at a Glance: Vermont All-Payer Model Evaluation of the First Four Performance 
+Years: 2018-2021 
+o Technical Appendices: Third Evaluation Report, Evaluation of the Vermont All-Payer 
+Accountable Care Organization Model 
+ 

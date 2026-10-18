@@ -1,0 +1,67 @@
+{
+ "tag": "track1",
+ "note": "Five Pillars Track 1 (Ch1) fact pass. GMCB memo 'OneCare Vermont ROI Analysis' May 9 2024 (sources/gmcb_onecare_roi_analysis_2024-05-13.txt): admin $70.35M 2018-2022; net -$42.28M (-$89.56M excl 2020) vs payer targets; shared-savings basis +$18.23M (-$32.38M excl 2020); Medicaid +$21.43M. State Auditor 2021 (VTDigger 6/21/2021): 2017-2019 missed Medicaid targets $11.1M, state paid OneCare $14.5M. OneCare formed 2012, MSSP 2013 (VTDigger 1/21/2013; UVM Health retrospective). AHS PCP benchmark 87%. Act 68 global budgets: non-CAH from FY2028, all by FY2030, resources permitting.",
+ "pairs": [
+  [
+   "OneCare Vermont was founded in 2013 by the University of Vermont Medical Center and Dartmouth-Hitchcock Medical Center as a shared ACO vehicle",
+   "OneCare Vermont was formed in 2012 by the University of Vermont Medical Center (then Fletcher Allen) and Dartmouth-Hitchcock Medical Center as a shared ACO vehicle, joining the Medicare Shared Savings Program in 2013"
+  ],
+  [
+   "It wound down at the close of 2025, twelve years after founding;",
+   "It wound down at the close of 2025, thirteen years after it was formed;"
+  ],
+  [
+   "One projection found the ACO's total cost of care ran $42.28 million higher than a no-ACO counterfactual over the period studied — $89.56 million higher excluding the pandemic-distorted year.",
+   "The Green Mountain Care Board's own analysis (May 2024) found that, counting those administrative expenses against performance on payer targets, OneCare was a net cost of $42.28 million over 2018–2022 — $89.56 million excluding the pandemic-distorted year 2020."
+  ],
+  [
+   "Vermont's State Auditor separately found more than $25 million in additional spending on ACO operations from 2017 through 2020 compared with traditional fee-for-service.",
+   "Vermont's State Auditor separately found (2021) that over 2017–2019 OneCare missed its Medicaid targets by $11.1 million while the state paid it $14.5 million to operate."
+  ],
+  [
+   "One calculation found $18.23 million in net savings — though excluding 2020 from that same calculation flips it to a $32.38 million cost.",
+   "A second GMCB calculation, based on shared savings and losses, found $18.23 million in net savings — though excluding 2020 flips it to a $32.38 million cost."
+  ],
+  [
+   "A Medicaid-specific measure found $21.43 million in savings under that program alone.",
+   "Its Medicaid-specific measure found $21.43 million in savings under that program alone."
+  ],
+  [
+   "OneCare Vermont's decade-long collapse is the clearest documented sequencing failure in recent US health policy.",
+   "OneCare Vermont's decade-long decline is a closely documented sequencing failure."
+  ],
+  [
+   "Vermont's primary care access rate is roughly 91% — about four points above the national benchmark, and a genuine achievement.",
+   "Vermont's primary care access rate is roughly 91% — about four points above the Agency of Human Services' 87% benchmark, and a genuine achievement."
+  ],
+  [
+   "Policy: Acts 167 and 68 make reference-based pricing and global budgets binding on all hospitals.",
+   "Policy: Act 68 makes reference-based pricing binding on hospitals and requires global budgets — one or more non-critical-access hospitals from FY2028, all hospitals by FY2030, resources permitting."
+  ],
+  [
+   "OneCare Vermont was founded in 2013 by the University of Vermont Medical Center and Dartmouth-Hitchcock Medical Center",
+   "OneCare Vermont was formed in 2012 by the University of Vermont Medical Center (then Fletcher Allen) and Dartmouth-Hitchcock Medical Center"
+  ],
+  [
+   "twelve years after founding",
+   "thirteen years after it was formed"
+  ],
+  [
+   "Vermont's primary care access rate is roughly 91%, four points above the national benchmark.",
+   "Vermont's primary care access rate is roughly 91%, four points above the Agency of Human Services' 87% benchmark."
+  ],
+  [
+   "91% of Vermonters report a personal health care provider, which is four points above the national benchmark and genuinely good.",
+   "91% of Vermonters report a personal health care provider, which is four points above the Agency of Human Services' 87% benchmark and genuinely good."
+  ],
+  [
+   "primary care access rate sits above the national benchmark but conceals",
+   "primary care access rate sits above the Agency of Human Services' 87% benchmark but conceals"
+  ],
+  [
+   "OneCare Vermont was founded in 2013 by the University of Vermont Medical Center and Dartmouth-Hitchcock, and",
+   "OneCare Vermont was formed in 2012 by the University of Vermont Medical Center (then Fletcher Allen) and Dartmouth-Hitchcock, and"
+  ]
+ ],
+ "residue": "founded in 2013 by the University|twelve years after founding|no-ACO counterfactual|more than \\$25 million in additional spending|clearest documented sequencing failure|91%[^.]{0,60}national benchmark|Acts 167 and 68 make reference-based pricing"
+}
