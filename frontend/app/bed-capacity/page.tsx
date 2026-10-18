@@ -1323,6 +1323,13 @@ export default function SystemVitalsPage() {
             Bed capacity, interfacility transfer routing, and repatriation queue for Vermont&apos;s
             14-hospital network. Hover any hospital card to update counts or flag for AHS review.
           </p>
+          <div className="mt-4 max-w-2xl rounded-lg border border-amber-300 bg-amber-50 px-4 py-3 text-xs leading-relaxed text-amber-900">
+            <strong>Demonstration data.</strong> Vermont publishes no real-time bed-availability feed. The bed counts,
+            availability, alerts and repatriation patients shown here are illustrative — they show how a statewide
+            coordination tool would work, not current conditions. Counts change only when an authorized user enters them.
+            For each hospital&apos;s reported beds, see the{" "}
+            <a href="/dashboard/vermont?tab=hospitals" className="underline font-bold">CMS hospital list</a>.
+          </div>
           {/* Action bar */}
           <div className="flex flex-wrap gap-2 mt-4">
             <button onClick={() => setShowLogTray(true)}

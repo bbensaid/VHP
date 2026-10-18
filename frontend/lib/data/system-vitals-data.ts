@@ -1,4 +1,5 @@
-// Single source of truth for Vermont hospital bed capacity data.
+// ILLUSTRATIVE demonstration data for the Bed Capacity & Transfer prototype — not sourced bed counts and not
+// current availability (Vermont publishes no real-time bed feed). The page says so in a banner (2026-10-17).
 // Used by: app/system-vitals/page.tsx (capacity grid + transfer routing + repatriation)
 //          lib/ticker.ts (vitals.csv bed rows are derived from this via scripts/sync-vitals-csv.ts)
 
