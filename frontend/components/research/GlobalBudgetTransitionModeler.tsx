@@ -14,10 +14,10 @@ const ORG_PRESETS = [
     commercialPct: 37,
     selfPayPct: 1,
     operatingMarginPct: -1.5, // illustrative composite — see sourced note below when selected
-    fteCount: 17000, // VAHHS: Vermont hospitals employ ~17,000 statewide
+    fteCount: 14600, // CMS hospital cost reports, FY2023: sum of the 14 hospitals' FTEs (≈14,600)
     recommendedGrowthPct: 3.5, // Vermont All-Payer Model NPR growth target, GMCB FY25 hospital budget guidance
     note:
-      'Statewide aggregate, not one hospital: 14 Vermont community hospitals. Net patient revenue ≈$2.89B (FY2023 actuals, GMCB). Payer mix is share of gross patient revenue statewide (GMCB Hospital Community Report). 9 of 14 hospitals ran negative operating margins in each of the last two fiscal years (GMCB FY25 hospital budget decisions) — the −1.5% operating margin above is an illustrative composite, not a reported statewide figure. Global budget growth rate defaults to the 3.5% net-patient-revenue target GMCB set for FY25 under the Vermont All-Payer Model agreement.',
+      'Statewide aggregate, not one hospital: 14 Vermont community hospitals. Net patient revenue ≈$2.89B (FY2023 actuals, GMCB). Payer mix is share of gross patient revenue statewide (GMCB Hospital Community Report). 9 of 14 hospitals had operating losses in 2023 (Oliver Wyman, Act 167 report) — the −1.5% operating margin above is an illustrative composite, not a reported statewide figure. Global budget growth rate defaults to the 3.5% net-patient-revenue target GMCB set for FY25 under the Vermont All-Payer Model agreement.',
   },
   {
     id: 'rural-cah',
@@ -371,10 +371,11 @@ export default function GlobalBudgetTransitionModeler() {
       </div>
 
       <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-xs text-slate-500 leading-relaxed">
-        <span className="font-bold text-slate-700">Methodology:</span> Global budget growth benchmarked to Vermont GMCB methodology
-        and Maryland Total Cost of Care model experience. FFS baseline growth from CMS National Health Expenditure projections.
-        Administrative savings estimates from NEJM Catalyst and Health Affairs research on global budget programs.
-        Risk corridor structure modeled on Maryland TCOC program design. All outputs are directional estimates.
+        <span className="font-bold text-slate-700">Methodology:</span> The Vermont preset uses GMCB figures (net patient revenue,
+        FY2023 actuals; statewide payer mix), the All-Payer Model&apos;s 3.5% growth target and CMS FY2023 cost-report FTEs. The other
+        presets are illustrative hospitals. Every slider — FFS trend, admin reduction, utilization change, corridor and quality
+        bonus — is your assumption, and the model splits any utilization change 40% lost revenue / 60% avoided cost. Outputs are
+        directional estimates, not forecasts.
       </div>
     </div>
   )
