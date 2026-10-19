@@ -3,7 +3,7 @@ import AcademyCard from "@/components/academy/AcademyCard";
 
 export const metadata = {
   title: "Webinars & Roundtables | HTR Academy",
-  description: "Live and recorded HTR webinars featuring policy experts, health system executives, and researchers — organized by the Five-Pillar Framework.",
+  description: "HTR Academy webinars and roundtables, organized by the Five-Pillar Framework, listed here as they are scheduled.",
 };
 
 interface Webinar {
@@ -40,7 +40,7 @@ export default async function WebinarsPage() {
             Live Intelligence
           </span>
           <h1 className="ty-h1 font-black text-slate-900 mb-3">Webinars &amp; Roundtables</h1>
-          <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed">Join live discussions with global leaders. Q&amp;A included in every session.</p>
+          <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed">Live and recorded sessions will be listed here as they are scheduled.</p>
         </div>
       </div>
 

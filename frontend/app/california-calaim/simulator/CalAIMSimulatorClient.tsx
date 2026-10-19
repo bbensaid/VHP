@@ -182,12 +182,12 @@ export default function CalAIMSimulatorClient() {
           </div>
           <h1 className="text-3xl font-black text-slate-900 tracking-tight mb-3 leading-tight">California CalAIM Simulator</h1>
           <p className="text-slate-600 max-w-2xl leading-relaxed text-sm mb-6">
-            Model the multi-pillar impact of California&apos;s $6.7B Medi-Cal transformation — whole-person care,
+            Model the multi-pillar impact of California&apos;s Medi-Cal transformation — whole-person care,
             enhanced care management, community supports, and population health management across 24 managed care
             plans and 58 counties serving 14.2M beneficiaries.
           </p>
           <div className="flex flex-wrap gap-3 text-sm">
-            {[['24', 'Managed Care Plans'], ['14.2M', 'Beneficiaries'], ['58', 'Counties'], ['$6.7B', 'Transformation Budget']].map(([v, l]) => (
+            {[['24', 'Managed Care Plans'], ['14.2M', 'Beneficiaries'], ['58', 'Counties'], ['2022–26', 'Waiver term']].map(([v, l]) => (
               <div key={l} className="bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-center">
                 <div className="text-lg font-black text-slate-900">{v}</div>
                 <div className="text-[11px] text-slate-500">{l}</div>

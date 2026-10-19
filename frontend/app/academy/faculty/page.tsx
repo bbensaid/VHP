@@ -38,7 +38,7 @@ export default async function FacultyPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {faculty.length === 0 && (
             <div className="col-span-2 text-center py-12 bg-slate-50 rounded-xl border border-dashed border-slate-300">
-              <p className="text-slate-500">No faculty found. Run the seed script to populate data.</p>
+              <p className="text-slate-500">Faculty profiles will be added here as instructors join the Academy.</p>
             </div>
           )}
           {(faculty as Person[]).map((person, idx) => {

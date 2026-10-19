@@ -138,7 +138,7 @@ export const PILLAR_ROWS: ComparisonRow[] = [
     cells: {
       vermont:    { value: "1115 waiver",        detail: "Global Commitment to Health; withdrew from AHEAD July 2026" },
       oregon:     { value: "1115 waiver",        detail: "Section 1115 Medicaid demonstration" },
-      california: { value: "1115 waiver ($6.7B)", detail: "Largest state Medicaid waiver in U.S." },
+      california: { value: "1115 + 1915(b) waivers (CalAIM)", detail: "CMS approved Dec 29, 2021; through Dec 31, 2026" },
     },
   },
   // Economics
@@ -246,7 +246,7 @@ export const PROGRAM_ROWS: ComparisonRow[] = [
     cells: {
       vermont:    { value: "Act 68",          detail: "Mandatory hospital global budgets" },
       oregon:     { value: "CCO 3.0",         detail: "Coordinated Care Organizations, 2025–2030" },
-      california: { value: "CalAIM",          detail: "$6.7B Medi-Cal transformation" },
+      california: { value: "CalAIM",          detail: "Medi-Cal transformation (waivers 2022–2026)" },
     },
   },
   {

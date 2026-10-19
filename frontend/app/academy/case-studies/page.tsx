@@ -54,7 +54,7 @@ export default async function CaseStudiesPage() {
           {[
             { href: "/vermont-rht-program", title: "Vermont Rural Health Transformation Program", sub: "The $195M federal RHT award and what it finances" },
             { href: "/vermont-act-167", title: "Vermont Act 167", sub: "Oliver Wyman's recommendations, with the hospital-level simulator" },
-            { href: "/california-calaim", title: "California CalAIM", sub: "The $6.7B Medi-Cal transformation" },
+            { href: "/california-calaim", title: "California CalAIM", sub: "Medi-Cal transformation (1115 + 1915(b) waivers, 2022–2026)" },
           ].map((p) => (
             <Link key={p.href} href={p.href} className="block rounded-xl border border-slate-200 bg-white p-5 hover:border-indigo-300 hover:shadow-md transition">
               <p className="text-sm font-black text-slate-900">{p.title}</p>

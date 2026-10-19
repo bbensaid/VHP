@@ -7035,7 +7035,7 @@ The Health Transformation Review (HTR) platform is the living, interactive compa
 
 ## F.2 **Navigating the Platform**
 
-The home screen presents three things immediately: The Wire (a real-time intelligence feed organized by pillar), Quick Start cards (four intent-based entry points: Explore Intelligence, Start Learning, Analyze Data, Talk to an Advisor), and Platform Capabilities (a directory of major tools with direct links). On desktop, the left sidebar is the primary navigation and can be collapsed for reading space; on mobile, a bottom bar gives one-tap access to Home, Academy, Tools, Advisory, and the AI Analyst. The AI Analyst is accessible from any page, and search spans articles, courses, tools, glossary terms, and reports simultaneously.
+The home screen presents three things immediately: The Wire (a real-time intelligence feed organized by pillar), Quick Start cards (four intent-based entry points: Explore Intelligence, Start Learning, Analyze Data, Talk to an Advisor), and What's on the Platform (a directory of major tools with direct links). On desktop, the left sidebar is the primary navigation and can be collapsed for reading space; on mobile, a bottom bar gives one-tap access to Home, Academy, Tools, and Advisory, with a toggle for the AI Analyst. The AI Analyst is accessible from any page, and search spans articles, courses, tools, glossary terms, and reports simultaneously.
 
 ## F.3 **The Five Pillars of Intelligence**
 
@@ -7057,15 +7057,15 @@ The knowledge base is organized around the same five-pillar framework that struc
 
 ## F.4 **The Academy**
 
-The Academy is the structured learning center, organized around the same architecture as the book. Personalized Learning uses an AI-driven assessment to build a path tailored to your role and goals; Learning Tracks are curated multi-course programs (value-based care, population health, health equity, rural transformation) with capstone assessments. Formats include courses (parallel to the analytical chapters), webinars (practitioner sessions, valuable for Vermont practitioners), and case studies (the RHT Program, Vermont Act 167, California CalAIM). Reference materials include the Glossary (the source of each chapter's Key Concepts), the Vermont-specific Medicaid Learning Center, and faculty profiles.
+The Academy is the structured learning center, organized around the same architecture as the book. Personalized Learning uses an AI-driven assessment to build a path tailored to your role and goals. Courses are organized into tracks and lessons; the Five Pillars, One Imperative course follows this book chapter by chapter. Case studies include Vermont's All-Payer ACO, the Camden Coalition, and Intermountain's hospital-at-home program, with deep-dives on the Vermont RHT Program, Vermont Act 167, and California CalAIM. Reference materials include the Glossary (the source of each chapter's Key Concepts) and the Vermont-specific Medicaid Learning Center.
 
 ## F.5 **The Research Lab**
 
-The Research Lab is a suite of more than thirty interactive analytical tools organized into the same five-pillar structure --- working environments for modeling, analysis, and scenario planning rather than reference tools. They span Interoperability & Risk (FHIR Interoperability Lab, Risk Stratification Engine, EMR/EHR Lab, Statewide EHR Deployment Modeler); Payment Models & VBC (APM Design Lab, APM Shared Savings Calculator, Population Health Modeler); Policy & Quality Sciences (Policy Simulator, Hospital Financial Stress Test, Actuarial Lab, Clinical Quality Optimizer); Population & Equity (Health Equity Studio/HEROI); Technology & AI (HTA Studio, AI Clinical Governance Lab, Digital Health Lab); and Knowledge & Workspace (Evidence Library, Workforce Modeler, Research Workspace, Innovation Leaderboard, VBC Readiness Assessment, CIN & Shared Services Modeler, EMS Transformation Modeler). Specifications for the 19 core tools are in Appendix D.
+The Research Lab is a suite of more than thirty interactive analytical tools organized into the same five-pillar structure --- working environments for modeling, analysis, and scenario planning rather than reference tools. They span Interoperability & Risk (FHIR Interoperability Lab, Risk Stratification Engine, EMR/EHR Lab, Statewide EHR Deployment Modeler); Payment Models & VBC (APM Design Lab, APM Shared Savings Calculator, CEA Calculator, Global Budget Transition Modeler, VBC Contract Review Checklist); Policy & Quality Sciences (Policy Simulator, Hospital Financial Stress Test, Actuarial Lab, Clinical Quality Optimizer); Population & Equity (Population Health Modeler, Health Equity Studio/HEROI); Technology & AI (HTA Studio, AI Clinical Governance Lab, Digital Health Lab); and Knowledge & Workspace (Evidence Library, Workforce Modeler, Research Workspace, Innovation Leaderboard, VBC Readiness Assessment, CIN & Shared Services Modeler, EMS Transformation Modeler). Specifications for the 19 core tools are in Appendix D.
 
 ## F.6 **States & Programs**
 
-In-depth coverage of active state programs --- the real-world laboratories where the book's frameworks are applied. Vermont resources include the comprehensive Vermont Act 167 analysis (with a hospital-level budget simulator), Vermont Medicaid, the Bed Capacity & Transfer dashboard (System Vitals), Vermont Act 68, and the Vermont RHT Program. National resources include the 50-State RHTP Dashboard, the AHEAD Model analysis (five participating states, and why Vermont withdrew), California CalAIM (\$6.7B Medi-Cal transformation), and the All States Explorer.
+In-depth coverage of active state programs --- the real-world laboratories where the book's frameworks are applied. Vermont resources include the comprehensive Vermont Act 167 analysis (with a hospital-level budget simulator), Vermont Medicaid, the Bed Capacity & Transfer dashboard (System Vitals), Vermont Act 68, and the Vermont RHT Program. National resources include the 50-State Dashboard and the CMS Rural Health Transformation awards view, the AHEAD Model analysis (five participating states, and why Vermont withdrew), California CalAIM (the Medi-Cal transformation under waivers approved in December 2021), and the All States Explorer.
 
 ## F.7 **Advisory & Services and the AI Analyst**
 
@@ -7073,9 +7073,9 @@ For readers whose work moves from analysis into implementation, the platform con
 
 ## F.8 **Reader Profiles and Recommended Paths**
 
-Policy Professional: the Policy pillar, Trending Topics, the Policy Simulator, the All States Explorer, and the 50-State RHTP Dashboard; The Wire filtered to Policy as a daily briefing.
+Policy Professional: the Policy pillar, Trending Topics, the Policy Simulator, the All States Explorer, and the 50-State Dashboard; The Wire filtered to Policy as a daily briefing.
 
-Executive/Administrator: the HTR Simulator (five-pillar readiness score), the VBC Readiness Assessment and Hospital Financial Stress Test, and the Vermont Act 167 and RHTP Dashboard sections for benchmarks; the AI Analyst for organization-specific scenarios.
+Executive/Administrator: the HTR Simulator (five-pillar readiness score), the VBC Readiness Assessment and Hospital Financial Stress Test, and the Vermont Act 167 and 50-State Dashboard sections for benchmarks; the AI Analyst for organization-specific scenarios.
 
 Vermont Practitioner: the Vermont Act 167 section (with the hospital-level simulator), Vermont Medicaid, the Bed Capacity & Transfer dashboard, the Medicaid Eligibility Simulator, and the Medicaid Learning Center.
 
