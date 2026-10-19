@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:27Z",
+ "_id": "rhtState-florida",
+ "_rev": "ZDU5b4qioPbFp0EQfvWY2M",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:27Z",
+ "awardAmount": "$210,000,000",
+ "description": "Using Community Paramedicine for post-discharge care and formalizing Regional Collaboratives for shared infrastructure.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Paramedics providing on-site support for minor illnesses and post-discharge.",
+   "title": "Community Paramedicine"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Formal sharing of planning and infrastructure among local providers.",
+   "title": "Regional Collaboratives"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Readmissions",
+   "status": "Pending",
+   "target": "-15%"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Collaboratives Formed",
+   "status": "In Progress",
+   "target": "5 Regions"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "florida"
+ },
+ "stateName": "Florida",
+ "status": "Active",
+ "strategicFocus": "Regional Collaboratives & Paramedicine"
+}

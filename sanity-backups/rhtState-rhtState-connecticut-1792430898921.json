@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:18Z",
+ "_id": "rhtState-connecticut",
+ "_rev": "G7Tfo59YVwcDW2O5CBreA5",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:18Z",
+ "awardAmount": "$154,000,000",
+ "description": "Implementing universal nurse home-visiting for newborns and 23-hour crisis stabilization centers to offload rural EDs.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Expansion of home visiting for all new/expecting rural families.",
+   "title": "Universal Nurse Home-Visits"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Stabilization centers linked to rural hospitals.",
+   "title": "23-Hour Crisis Centers"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Nurse Visits",
+   "status": "In Progress",
+   "target": "100% Eligible"
+  },
+  {
+   "_key": "metric-1",
+   "label": "ED Psych Diversion",
+   "status": "Pending",
+   "target": "40%"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "connecticut"
+ },
+ "stateName": "Connecticut",
+ "status": "Active",
+ "strategicFocus": "Crisis Stabilization & Home Visits"
+}

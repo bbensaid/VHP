@@ -1,0 +1,53 @@
+{
+ "_createdAt": "2026-03-10T13:54:23Z",
+ "_id": "rhtState-delaware",
+ "_rev": "G7Tfo59YVwcDW2O5CBreYv",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:23Z",
+ "awardAmount": "$157,000,000",
+ "description": "Delaware is leveraging its compact geography to build a fully integrated behavioral health network co-located in primary care settings, supported by a statewide care navigation platform to reduce avoidable ED utilization.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Embedding licensed behavioral health clinicians in rural primary care practices statewide.",
+   "title": "Behavioral Health Integration"
+  },
+  {
+   "_key": "ini-1",
+   "description": "A centralized digital platform connecting patients to community resources and specialist referrals.",
+   "title": "Care Navigation Platform"
+  },
+  {
+   "_key": "ini-2",
+   "description": "Capital grants for Federally Qualified Health Centers to expand access in underserved Sussex County.",
+   "title": "Rural FQHC Expansion"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "BH Co-Location Sites",
+   "status": "In Progress",
+   "target": "25 Practices"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Avoidable ED Visits",
+   "status": "Pending",
+   "target": "-18%"
+  },
+  {
+   "_key": "metric-2",
+   "label": "FQHC Capacity",
+   "status": "Pending",
+   "target": "+2,000 Patients"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "delaware"
+ },
+ "stateName": "Delaware",
+ "status": "Active",
+ "strategicFocus": "Integrated Behavioral Health & Care Navigation"
+}
