@@ -322,7 +322,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/knowledge-workspace?tab=cin",
     pillars: ["operations", "economics"],
     chapters: ["11"],
-    desc: "Model Vermont's RHT-funded Clinically Integrated Network: shared billing/coding/credentialing/HR/IT and group purchasing across the 14 hospitals vs. the $1,303/discharge admin-cost premium.",
+    desc: "Model Vermont's RHT-funded Clinically Integrated Network: shared billing/coding/credentialing/HR/IT and group purchasing for participating independent hospitals and providers vs. the $1,303/discharge admin-cost premium.",
   },
   {
     id: "ems-transformation",
