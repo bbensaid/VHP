@@ -220,7 +220,7 @@ export const TOOLS: readonly Tool[] = [
     // chs 8-9 use it for panel-level care management.
     pillars: ["technology", "clinical", "equity"],
     chapters: ["4", "8", "9"],
-    desc: "Apply HCC v28 RAF scoring and segment populations by clinical complexity.",
+    desc: "Apply CMS-HCC (V24-based) RAF scoring and segment populations by clinical complexity.",
   },
   {
     id: "risk-stratification-methodology",
@@ -228,7 +228,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/vbc-clinical-quality?tab=risk",
     pillars: ["clinical"],
     chapters: ["8", "9"],
-    desc: "Step-by-step HCC v28 RAF calculation per patient, population tier pyramid, and comparison of HCC vs. ACG vs. CDPS vs. Charlson algorithms.",
+    desc: "Step-by-step CMS-HCC (V24 codes) RAF calculation per patient, population tier pyramid, and comparison of HCC vs. ACG vs. CDPS vs. Charlson algorithms.",
   },
   {
     id: "hcc-gap-closure-playbook",

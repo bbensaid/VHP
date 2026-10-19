@@ -34,7 +34,7 @@ const TABS = [
   },
   {
     id: 'risk', icon: '📊', label: 'Risk Stratification Engine', badge: 'Clinical Risk',
-    desc: 'Apply HCC v28 RAF scoring, segment populations by risk tier, build custom risk models, and analyze comorbidity interactions using Elixhauser and Charlson indices.',
+    desc: 'Apply CMS-HCC (V24-based) RAF scoring, segment populations by risk tier, build custom risk models, and analyze comorbidity interactions using Elixhauser and Charlson indices.',
   },
   {
     id: 'emr', icon: '🏥', label: 'EMR/EHR Lab', badge: 'EHR Systems',
@@ -70,7 +70,7 @@ export default function InteroperabilityClient() {
     <LabPageShell
       icon="🧬"
       label="Technology & Clinical Tools"
-      desc="FHIR Interoperability Lab (Technology pillar) — validate FHIR R4 resources, test CDS Hooks, check ONC compliance. Risk Stratification Engine (Clinical pillar) — apply HCC v28 RAF scoring and segment populations by clinical complexity."
+      desc="FHIR Interoperability Lab (Technology pillar) — validate FHIR R4 resources, test CDS Hooks, check ONC compliance. Risk Stratification Engine (Clinical pillar) — apply CMS-HCC (V24-based) RAF scoring and segment populations by clinical complexity."
       accentClass="bg-indigo-600"
       accentLight="bg-indigo-100 text-indigo-700"
       currentHref="/research-lab/interoperability"
