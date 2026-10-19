@@ -5960,47 +5960,47 @@ AHS is managing Vermont's transformation as a collection of projects without the
 
 PMI's standard requires the portfolio to be defined --- every component identified, classified, and assigned governance. Vermont has never published such a definition; the inventory below is HTR's, assembled by reading Act 68, the AHEAD State Agreement, the RHT Program application, and the AHS transformation reports for every initiative that carries a named owner and a dated obligation, then assigning each to the pillar whose function it serves. Nineteen is what that exercise produces as of early 2026; it is not a number Vermont has adopted, and a reader repeating the exercise against later reports should expect it to move. The chapter in parentheses after each component is where the book analyses it.
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Pillar**   **Portfolio component**                              **Type**                 **Priority**   **Lead**                     **2026 status → stage gate**
-  ------------ ---------------------------------------------------- ------------------------ -------------- ---------------------------- ------------------------------------------------------
-  Policy       Act 68 RBP-methodology rulemaking (Ch. 2)            Compliance project       Critical       GMCB                         In progress → FY2027
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Pillar**   **Portfolio component**                            **Type**                 **Priority**   **Lead**                     **2026 status → stage gate**
+  ------------ -------------------------------------------------- ------------------------ -------------- ---------------------------- ---------------------------------------------------------
+  Policy       Act 68 RBP-methodology rulemaking (Ch. 2)          Compliance project       Critical       GMCB                         In progress → FY2027
 
-  Policy       AHEAD State Agreement closeout (Ch. 3)               Ongoing program          Critical       AHS                          Withdrawn Jul 2026 → FY2027 closeout reporting
+  Policy       AHEAD State Agreement closeout (Ch. 3)             Ongoing program          Critical       AHS                          Withdrawn Jul 2026 → FY2027 closeout reporting
 
-  Policy       RHT Program contract management (Ch. 2)              Compliance project       High           AHS Health Reform            Active → annual federal reporting
+  Policy       RHT Program contract management (Ch. 2)            Compliance project       High           AHS Health Reform            Active → annual federal reporting
 
-  Policy       Statewide Strategic Plan development (Ch. 16)        Strategic project        Critical       AHS + HCAC                   In progress → Jan 2028
+  Policy       Statewide Strategic Plan development (Ch. 16)      Strategic project        Critical       AHS + HCAC                   In progress → Jan 2028
 
-  Technology   AHS-GMCB analytics-vendor deployment (Ch. 4)         Strategic project        Critical       AHS + GMCB                   Procurement → Jan 2027 operational
+  Technology   AHS-GMCB analytics-vendor deployment (Ch. 4)       Strategic project        Critical       AHS + GMCB                   Procurement → Jan 2027 operational
 
-  Technology   Vermont CIN build-out (Ch. 4)                        Strategic program        High           AHS + RHT                    Design → FY2028 operational
+  Technology   Vermont CIN build-out (Ch. 4)                      Strategic program        High           AHS + RHT                    Design → FY2028 operational
 
-  Technology   VITL HIE expansion / FHIR compliance (Chs. 4--5)     Technical project        High           VITL + AHS                   In progress → FY2027 mandatory
+  Technology   VITL HIE expansion / FHIR compliance (Chs. 4--5)   Technical project        High           VITL + AHS                   In progress → FY2027 mandatory
 
-  Technology   Statewide AI-governance framework (Ch. 5)            Policy project           Medium         AHS + CIN                    Not started → FY2028 adoption
+  Technology   Statewide AI-governance framework (Ch. 5)          Policy project           Medium         AHS + CIN                    Not started → FY2028 adoption
 
-  Economics    RBP implementation (all hospitals) (Ch. 6)           Compliance program       Critical       GMCB                         Methodology design → FY2028 rates in effect
+  Economics    RBP implementation (all hospitals) (Ch. 6)         Compliance program       Critical       GMCB                         Methodology design → FY2028 rates in effect
 
-  Economics    Global-budget design & implementation (Ch. 6)        Strategic program        Critical       GMCB + AHS                   Design → FY2028 non-CAH
+  Economics    Global-budget design & implementation (Ch. 6)      Strategic program        Critical       GMCB + AHS                   Design → FY2028 non-CAH
 
-  Economics    RHT Program deployment (Ch. 2)                       Operational program      High           DVHA + AHS                   Active → annual targets
+  Economics    RHT Program deployment (Ch. 2)                     Operational program      High           DVHA + AHS                   Active → annual targets
 
-  Economics    Social-risk-adjustment methodology (Ch. 10)          Analytical project       High           GMCB + Econ PM               Design → FY2028 adoption
+  Economics    Social-risk-adjustment methodology (Ch. 10)        Analytical project       High           GMCB + Econ PM               Design → FY2028 adoption
 
-  Clinical     Blueprint PCMH (Ch. 8)                               Operational program      Critical       Blueprint + DVHA             Active → 100% PCMH by FY2028
+  Clinical     Blueprint PCMH (Ch. 8)                             Operational program      Critical       Blueprint + DVHA             Active → 100% PCMH by FY2028
 
-  Clinical     CCBHC certification (5 entities) (Ch. 8)             Compliance project       High           AHS + providers              4 certified Jul 1, 2026 → six in all
+  Clinical     CCBHC certification (5 entities) (Ch. 8)           Compliance project       High           AHS + providers              4 certified Jul 1, 2026 → six in all
 
-  Clinical     CoCM statewide deployment (Ch. 9)                    Operational program      High           MHI + Blueprint              Pilot → 80%+ practices FY2028
+  Clinical     CoCM statewide deployment (Ch. 9)                  Operational program      High           MHI + Blueprint              Pilot → 80%+ practices FY2028
 
-  Clinical     HEROI equity-scoring methodology (Ch. 10)            Analytical project       High           AHS + Health Equity Studio   In development → iterative refinement through FY2028
+  Clinical     HEROI equity-scoring methodology (Ch. 10)          Analytical project       High           AHS + Health Equity Studio   In development → iterative refinement through FY2028
 
-  Operations   14-hospital transformation planning (Ch. 11)         Operational program      Critical       AHS + RHRC successor         Final plans Mar 2026 → implementation
+  Operations   14-hospital transformation planning (Ch. 11)       Operational program      Critical       AHS + RHRC successor         Final plans Mar 2026 → implementation
 
-  Operations   AHS restructuring (HSA-coordinator model) (Ch. 16)   Organizational project   Critical       AHS Secretary                In progress → FY2027 staffed
+  Operations   AHS restructuring (Ch. 16 design)                  Organizational project   Critical       AHS Secretary                Not adopted: Act 119 report (Feb 2026) kept AHS unified
 
-  Operations   AHS PMO establishment (Ch. 12)                       Organizational project   Critical       AHS                          Not started → Q2 2027 operational
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Operations   AHS PMO establishment (Ch. 12)                     Organizational project   Critical       AHS                          Not started → Q2 2027 operational
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure 15.3 --- Vermont's 19-component transformation portfolio. Sources: Act 68 of 2025; AHS Transformation Reports; Vermont RHT Program Application; CMS AHEAD documentation.*
 
@@ -6907,123 +6907,123 @@ D.19 The Wire --- HTR Intelligence Feed --- real-time intelligence across all fi
 
 # **Appendix E --- Vermont Transformation Scorecard: 2022 Baseline, 2026 Status, 2028 Target**
 
-This scorecard consolidates the Vermont evidence from across the book into a single reference. For each pillar it answers three questions: Vermont's starting point in 2022 (before Act 167), the current state in early 2026, and what success looks like by the January 2028 Strategic Plan deadline. Where 2028 targets are set in statute or GMCB guidance they are noted as statutory; where they represent HTR's assessment of what success requires, they are noted as HTR benchmark.
+This scorecard consolidates the Vermont evidence from across the book into a single reference. For each pillar it answers three questions: Vermont's starting point in 2022 (before Act 167), the current state in mid-2026, and what success looks like by the January 2028 Strategic Plan deadline. Where 2028 targets are set in statute or GMCB guidance they are noted as statutory; where they represent HTR's assessment of what success requires, they are noted as HTR benchmark.
 
 ### E.0.1 **Policy Pillar**
 
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Metric**                   **2022 baseline**                     **2026 status**                                                              **2028 target**                                                **Source**
-  ---------------------------- ------------------------------------- ---------------------------------------------------------------------------- -------------------------------------------------------------- ----------------------------------------
-  Payment-reform mandate       Voluntary only (OneCare ACO)          Mandatory RBP (FY2027) and global budgets (FY2028) enacted                   All hospitals under mandatory global budgets                   Act 68; statutory
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Metric**                   **2022 baseline**                                                       **2026 status**                                                                                                     **2028 target**                                                         **Source**
+  ---------------------------- ----------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------- ----------------------------------------
+  Payment-reform mandate       Voluntary ACO model (OneCare) under the All-Payer ACO Model agreement   RBP (rule 2027; maximum rates from FY2028) and global budgets (one or more non-CAH hospitals from FY2028) enacted   First non-CAH hospitals under global budgets; all hospitals by FY2030   Act 68; statutory
 
-  Hospital-system diagnostic   No comprehensive analysis             Oliver Wyman Act 167 analysis complete; 230+ meetings, 3,100+ participants   Annual updates to diagnostic methodology                       Oliver Wyman Act 167 Report (Aug 2024)
+  Hospital-system diagnostic   No comprehensive analysis                                               Oliver Wyman Act 167 analysis complete; 230+ meetings, 3,100+ participants                                          Annual updates to diagnostic methodology                                Oliver Wyman Act 167 Report (Aug 2024)
 
-  Statewide Strategic Plan     Does not exist                        Framework under development; HCAC convened                                   Plan delivered to legislature January 2028                     Act 68; statutory deadline
+  Statewide Strategic Plan     Does not exist                                                          Framework under development; HCAC convened                                                                          Plan delivered to legislature January 2028                              Act 68; statutory deadline
 
-  Federal-state alignment      No all-payer agreement                AHEAD State Agreement signed Jan 2025; Vermont withdrew July 2026            Successor federal-state agreement negotiated post-AHEAD        CMS AHEAD State Agreement
+  Federal-state alignment      All-Payer ACO Model agreement with CMS (2018--2025)                     AHEAD State Agreement signed Jan 2025; Vermont withdrew July 2026                                                   Successor federal-state agreement negotiated post-AHEAD                 CMS AHEAD State Agreement
 
-  Capital investment           No dedicated transformation capital   RHT Program: \$195M awarded for FY2026, first year                           \$195M deployed; CIN operational; IT infrastructure complete   Vermont RHT Application (Nov 2025)
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Capital investment           No dedicated transformation capital                                     RHT Program: \$195M awarded for FY2026, first year                                                                  \$195M deployed; CIN operational; IT infrastructure complete            Vermont RHT Application (Nov 2025)
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure E.1 --- Policy-pillar scorecard. Sources: Act 68 of 2025; Oliver Wyman Act 167 Report; CMS AHEAD documentation; Vermont RHT Program Application.*
 
 ### E.0.2 **Technology Pillar**
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Metric**                    **2022 baseline**                                                **2026 status**                                                                          **2028 target**                                                           **Source**
-  ----------------------------- ---------------------------------------------------------------- ---------------------------------------------------------------------------------------- ------------------------------------------------------------------------- --------------------------------------------------
-  All-payer claims database     VHCURES operational; published measures about two years behind   VHCURES solid; attribution modeling in progress; analytics-vendor procurement underway   VHCURES real-time/near-real-time; vendor fully deployed                   GMCB VHCURES documentation
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Metric**                    **2022 baseline**                                                **2026 status**                                                                                             **2028 target**                                                           **Source**
+  ----------------------------- ---------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------- --------------------------------------------------
+  All-payer claims database     VHCURES operational; published measures about two years behind   VHCURES solid; attribution modeling in progress; analytics-vendor contract under negotiation (April 2026)   VHCURES real-time/near-real-time; vendor fully deployed                   GMCB VHCURES documentation
 
-  Health information exchange   VITL operational but voluntary; incomplete adoption              VITL voluntary; CIN under development; small providers disconnected                      VITL connectivity required for all Blueprint practices; CIN operational   VITL annual report; Act 62 of 2025
+  Health information exchange   VITL operational but voluntary; incomplete adoption              VITL voluntary; CIN under development; small providers disconnected                                         VITL connectivity required for all Blueprint practices; CIN operational   VITL annual report; Act 62 of 2025
 
-  FHIR compliance               Minimal across the system                                        CMS interoperability rule driving compliance; RHT grants funding upgrades                Full FHIR R4 compliance at all hospitals                                  CMS interoperability rule; RHT IT grants
+  FHIR compliance               Minimal across the system                                        CMS interoperability rule driving compliance; RHT grants funding upgrades                                   Full FHIR R4 compliance at all hospitals                                  CMS interoperability rule; RHT IT grants
 
-  AI-governance framework       Does not exist                                                   AI-scribe grant program funded (\$1.03M); governance absent in most institutions         Statewide AI-governance framework; bias testing required                  Vermont RHT Program; HTR AI Governance Checklist
+  AI-governance framework       Does not exist                                                   AI-scribe grant program funded (\$1.03M); governance absent in most institutions                            Statewide AI-governance framework; bias testing required                  Vermont RHT Program; HTR AI Governance Checklist
 
-  Race/ethnicity data quality   Incomplete VHCURES demographic fields                            Acknowledged gap; improvement underway                                                   Complete stratification for 90%+ of encounters                            Vermont DOH Health Equity Data Report (Jan 2025)
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Race/ethnicity data quality   Incomplete VHCURES demographic fields                            Acknowledged gap; improvement underway                                                                      Complete stratification for 90%+ of encounters                            Vermont DOH Health Equity Data Report (Jan 2025)
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure E.2 --- Technology-pillar scorecard. Sources: GMCB VHCURES; VITL; Vermont DOH Health Equity Data Report (January 2025); Vermont RHT Application.*
 
 ### E.0.3 **Economics Pillar**
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Metric**                                   **2022 baseline**                                **2026 status**                                                                                **2028 target**                                                               **Source**
-  -------------------------------------------- ------------------------------------------------ ---------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------- -----------------------------------------------------------------------
-  Hospital operating margins                   9 of 14 reporting losses (FY2023); worst -8.9%   6 of 14 in losses (FY2024, GMCB); CAH operating profit \$938/discharge vs. \$2,784 benchmark   13 of 14 within sustainable margin range                                      Oliver Wyman; AHS Nov 2025 Report; GMCB FY2025 Hospital Budget Review
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Metric**                                   **2022 baseline**                                                                                  **2026 status**                                                                                                                                                                       **2028 target**                                                               **Source**
+  -------------------------------------------- -------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------- ------------------------------------------------------------------------------------------
+  Hospital operating margins                   9 of 14 reporting losses (FY2023); worst -8.9%                                                     FY2026 system operating margin projected at −1.25%, with 7 of 13 reporting hospitals projecting losses (GMCB, Aug 2026); CAH operating profit \$938/discharge vs. \$2,784 benchmark   13 of 14 within sustainable margin range                                      Oliver Wyman; AHS Nov 2025 Report; GMCB FY2027 Hospital Budget Staff Overview (Aug 2026)
 
-  Commercial-to-Medicare price ratio           UVMMC 300%+; system average 250--300%            Mandatory RBP (FY2027) enacted; methodology under design                                       All hospitals at or below statutory RBP ceiling; cross-subsidy reduced 40%+   GMCB price-transparency data; Act 68
+  Commercial-to-Medicare price ratio           UVMMC 300%+; system average 250--300%                                                              RBP enacted (rule 2027; maximum rates from FY2028); methodology under design                                                                                                          All hospitals at or below statutory RBP ceiling; cross-subsidy reduced 40%+   GMCB price-transparency data; Act 68
 
-  Administrative cost per adjusted discharge   UVMMC \$3,826 (267% of \$1,427 benchmark)        \$3,826 (unchanged); RHRC engagement underway                                                  System average below 150% of benchmark                                        AHS Nov 2025 Report; NASHP
+  Administrative cost per adjusted discharge   UVMMC \$3,826 (268% of \$1,427 benchmark)                                                          No newer figure published; RHRC engagement concluded October 2025                                                                                                                     System average below 150% of benchmark                                        AHS Nov 2025 Report; NASHP
 
-  VBC contract penetration                     AHEAD not launched; commercial VBC minimal       Act 68 global budgets take effect FY2028; commercial VBC growing                               Medicare: fee-for-service (AHEAD withdrawn); commercial: 40%+ VBC             CMS AHEAD; GMCB commercial reports
+  VBC contract penetration                     All-Payer ACO Model; OneCare contracts with Medicare, Medicaid, and BCBSVT (BCBSVT left in 2023)   OneCare dissolved at the end of 2025; Act 68 global budgets begin FY2028 (non-CAH hospitals first)                                                                                    Medicare: fee-for-service (AHEAD withdrawn); commercial: 40%+ VBC             CMS AHEAD; GMCB commercial reports
 
-  5-year cumulative deficit projection         \$700M--\$2.4B (Oliver Wyman 2024)               Trajectory unchanged without RBP/global-budget implementation                                  Deficit trajectory reversed; system break-even by FY2030                      Oliver Wyman; Act 68 financial targets
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  5-year cumulative deficit projection         \$700M--\$2.4B (Oliver Wyman 2024)                                                                 Trajectory unchanged without RBP/global-budget implementation                                                                                                                         Deficit trajectory reversed; system break-even by FY2030                      Oliver Wyman; Act 68 financial targets
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure E.3 --- Economics-pillar scorecard. Sources: Oliver Wyman Act 167 Report; AHS November 2025 Report; GMCB price-transparency data; CMS AHEAD.*
 
 ### E.0.4 **Clinical Pillar**
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Metric**                                **2022 baseline**                      **2026 status**                                               **2028 target**                                     **Source**
-  ----------------------------------------- -------------------------------------- ------------------------------------------------------------- --------------------------------------------------- --------------------------------------------
-  Primary-care PCMH coverage                Blueprint: 90% of PCPs participating   Blueprint 90%+                                                100% PCMH                                           Vermont Blueprint Annual Report 2024
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Metric**                                         **2022 baseline**                                                    **2026 status**                                                 **2028 target**                                     **Source**
+  -------------------------------------------------- -------------------------------------------------------------------- --------------------------------------------------------------- --------------------------------------------------- --------------------------------------------------
+  Primary-care PCMH coverage                         Blueprint PCMH network statewide (most primary-care practices)       Statewide; no published participation percentage                100% PCMH                                           Vermont Blueprint Annual Report 2024
 
-  BH ED follow-up (mental health, 30-day)   76%                                    76% (unchanged); MHI pilot in progress                        90%+; CoCM deployed at all PCMH practices           Blueprint data; HEDIS FUM
+  30-day follow-up after ED visit (mental illness)   76%                                                                  No newer measurement; MHI pilot in progress                     90%+; CoCM deployed at all PCMH practices           Blueprint data; HEDIS FUM
 
-  BH ED follow-up (SUD, 30-day)             68%                                    68% (improving slowly); Hub-and-Spoke operational             85%+; CCBHC network operational                     Blueprint data; HEDIS FUA
+  30-day follow-up after ED visit (alcohol use)      68%                                                                  No newer measurement; Hub-and-Spoke operational                 85%+; CCBHC network operational                     Blueprint data; HEDIS FUA
 
-  CCBHC network                             0 certified                            5 planned by 2026; 4 certified July 1, 2026 (six statewide)   7 certified; statewide BH coverage                  Vermont AHS; SAMHSA
+  CCBHC network                                      None state-certified (Clara Martin a SAMHSA-grant CCBHC from 2021)   4 certified July 1, 2026, joining 2 earlier --- six statewide   7 certified; statewide BH coverage                  Vermont AHS; SAMHSA
 
-  Primary-care workforce                    370-FTE gap projected by 2030          Shortage intensifying; team-based care deployment underway    FTE gap \<200 via team-based care and telehealth    Blueprint; Oliver Wyman workforce analysis
+  Primary-care workforce                             370-FTE gap projected by 2030                                        Team-based care deployment underway                             FTE gap \<200 via team-based care and telehealth    Vermont RHT Application (Nov 2025); Oliver Wyman
 
-  30-day readmission rate                   14.8% statewide                        14.8% (minimal change)                                        Below 12%; CHT care-transition protocol statewide   GMCB quality data; Blueprint
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  30-day readmission rate                            14.8% statewide                                                      No newer measurement (14.8% covers 2021--2024)                  Below 12%; CHT care-transition protocol statewide   AHS Nov 2025 Report (VDH via CMS)
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure E.4 --- Clinical-pillar scorecard. Sources: Vermont Blueprint Annual Report 2024; Vermont AHS; GMCB quality reporting; Oliver Wyman workforce analysis.*
 
 ### E.0.5 **Equity Imperative**
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Metric**                                 **2022 baseline**                          **2026 status**                                    **2028 target**                                         **Source**
-  ------------------------------------------ ------------------------------------------ -------------------------------------------------- ------------------------------------------------------- --------------------------------------------
-  Primary-care access --- statewide          91% (4 pts above benchmark)                91% (stable)                                       93%+; gap to benchmark maintained                       Vermont DOH Health Equity Data Report 2025
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Metric**                                  **2022 baseline**                                                                            **2026 status**                                               **2028 target**                                         **Source**
+  ------------------------------------------- -------------------------------------------------------------------------------------------- ------------------------------------------------------------- ------------------------------------------------------- --------------------------------------------
+  Primary-care access --- statewide           91% (4 pts above benchmark)                                                                  91% (stable)                                                  93%+; gap to benchmark maintained                       VDH BRFSS 2023--2024 report (March 2026)
 
-  Primary-care access --- BIPOC adults       79--81% (11--12 pt gap vs. white adults)   79--81% (gap unchanged)                            Gap \<6 pts; 87%+ BIPOC access                          Vermont DOH Health Equity Data Report 2025
+  Primary-care access --- by race/ethnicity   Hispanic adults 78% vs. White 91% (2023--24; the only group statistically below the state)   No newer data                                                 Gap \<6 pts; 87%+ for every group                       VDH BRFSS 2023--2024 report (March 2026)
 
-  Essex County uninsurance                   8% (highest in Vermont)                    8% (unchanged)                                     Below 5%; CCBHC/FQHC expansion in NEK                   Vermont DOH county data
+  Essex County uninsurance                    Highest county rate in Vermont (10% in the 2014 household survey)                            No newer county estimate in this book's sources               Below 5%; CCBHC/FQHC expansion in NEK                   Vermont DOH county data
 
-  HEROI equity scoring                       No systematic HSA-level measurement        HEROI framework developed; scoring underway        HEROI scores for all 13 HSAs; gaps documented in plan   HTR HEROI framework; GMCB equity reporting
+  HEROI equity scoring                        No systematic HSA-level measurement                                                          HEROI tool available (runs on user-entered data)              HEROI scores for all 13 HSAs; gaps documented in plan   HTR HEROI framework; GMCB equity reporting
 
-  HRSN screening coverage                    Minimal systematic SDOH screening          Blueprint HRSN screening: 60%+ of practices        Universal HRSN screening at all Blueprint PCMHs         Vermont Blueprint Annual Report 2024
+  HRSN screening coverage                     Minimal systematic SDOH screening                                                            Screening expanding; no statewide coverage figure published   Universal HRSN screening at all Blueprint PCMHs         Vermont Blueprint Annual Report 2024
 
-  Social-risk adjustment in global budgets   N/A (no global budgets)                    Methodology under design; active policy question   SRA embedded in FY2028 global-budget methodology        Act 68; GMCB design process
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Social-risk adjustment in global budgets    N/A (no global budgets)                                                                      Methodology under design; active policy question              SRA embedded in FY2028 global-budget methodology        Act 68; GMCB design process
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure E.5 --- Equity Imperative scorecard. Sources: Vermont DOH Health Equity Data Report (January 2025); Act 68; GMCB equity reporting; HTR HEROI framework.*
 
 ### E.0.6 **Operations Pillar**
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Metric**                         **2022 baseline**                                   **2026 status**                                               **2028 target**                                                   **Source**
-  ---------------------------------- --------------------------------------------------- ------------------------------------------------------------- ----------------------------------------------------------------- ------------------------------------
-  Hospital transformation planning   No systematic process                               RHRC engaged all 14; plans in development                     All 14 with approved plans; RHRC engagement complete              AHS Aug/Nov 2025 Reports; RHRC
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Metric**                         **2022 baseline**                            **2026 status**                                                                                   **2028 target**                                                   **Source**
+  ---------------------------------- -------------------------------------------- ------------------------------------------------------------------------------------------------- ----------------------------------------------------------------- ------------------------------------
+  Hospital transformation planning   No systematic process                        RHRC engagement concluded Oct 2025; all 14 submitted final plans (April 2026)                     All 14 plans in implementation                                    AHS Aug/Nov 2025 Reports; RHRC
 
-  AHS organizational capacity        Program-administration model; minimal PMO           PMO establishment underway; HSA-coordinator model deploying   Full transformation PMO; AHS restructured for system management   Act 68; AHS organizational design
+  AHS organizational capacity        Program-administration model; minimal PMO    PMO establishment underway; Act 119 review kept AHS unified (Feb 2026)                            Full transformation PMO; AHS restructured for system management   Act 68; AHS organizational design
 
-  Vermont CIN                        Does not exist                                      Under development; RHT capital awarded                        CIN operational; shared analytics/care management for all 14      Vermont RHT Application (Nov 2025)
+  Vermont CIN                        Does not exist                               Under development; RHT capital awarded                                                            CIN operational; shared analytics/care management for all 14      Vermont RHT Application (Nov 2025)
 
-  Administrative-cost reduction      UVMMC 267% of benchmark; PPS avg 91% above          RHRC engagement in progress; no significant reduction yet     System average below 150% of benchmark by 2030                    AHS Nov 2025 Report; NASHP
+  Administrative-cost reduction      UVMMC 267% of benchmark; PPS avg 91% above   RHRC engagement in progress; no significant reduction yet                                         System average below 150% of benchmark by 2030                    AHS Nov 2025 Report; NASHP
 
-  EMS regionalization                Fragmented local EMS; 12+ separate rural agencies   Act 68 framework enacted; planning underway                   Regional EMS in all HSAs; response-time targets met               Act 68; Vermont EMS planning
+  EMS regionalization                Fragmented local EMS                         Act 68 framework enacted; planning underway                                                       Regional EMS in all HSAs; response-time targets met               Act 68; Vermont EMS planning
 
-  Monthly transformation reporting   Does not exist                                      Required by Act 68; two reports delivered (Aug, Nov 2025)     Monthly reports demonstrating progress against Act 167 metrics    Act 68; AHS reports
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Monthly transformation reporting   Does not exist                               Required by Act 68; monthly AHS reports since October 2025 (outcome measures since August 2025)   Monthly reports demonstrating progress against Act 167 metrics    Act 68; AHS reports
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure E.6 --- Operations-pillar scorecard. Sources: AHS Transformation Reports (August, November 2025); RHRC; Vermont RHT Program Application; Act 68.*
 
-How to use this scorecard. It is a snapshot as of April 2026, and several metrics that show no change in 2026 will shift in 2027--2028 as Act 68 global budgets take effect, RBP takes effect, and the hospital plans move from draft to implementation. Its most important use is not tracking individual metrics in isolation but reading the five pillars together. A 2028 scorecard showing Policy and Economics at target while Technology and Operations remain at 2026 status would indicate financial accountability without management capability --- precisely the sequencing failure Chapters 2 and 3 identify as the most dangerous. The scorecard is a system document, not a collection of independent measures.
+How to use this scorecard. It is a snapshot as of July 2026, and several metrics that show no change in 2026 will shift in 2027--2028 as Act 68 global budgets take effect, RBP takes effect, and the hospital plans move into implementation. Its most important use is not tracking individual metrics in isolation but reading the five pillars together. A 2028 scorecard showing Policy and Economics at target while Technology and Operations remain at 2026 status would indicate financial accountability without management capability --- precisely the sequencing failure Chapters 2 and 3 identify as the most dangerous. The scorecard is a system document, not a collection of independent measures.
 
 # **Appendix F --- A Reader's Guide to the Health Transformation Review Platform**
 
