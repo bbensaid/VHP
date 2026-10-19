@@ -6797,57 +6797,57 @@ Act 68 of 2025 (S.126) established a comprehensive sequence of transformation mi
 
 Estimated cost, timeline to value, ROI crossover, and Vermont benchmark for the key Policy-pillar investments.
 
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Investment**                                               **Estimated cost**              **Timeline to value**    **ROI crossover**                              **Vermont benchmark**
-  ------------------------------------------------------------ ------------------------------- ------------------------ ---------------------------------------------- ----------------------------------------------------------------------------------------------------
-  CMMI model participation and APM-readiness assessment        \$50K--\$150K per org           6--12 months             12--18 months                                  Vermont AHEAD preparation (withdrawn July 2026); HTR VBC Readiness Assessment tool
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Investment**                                               **Estimated cost**              **Timeline to value**    **ROI crossover**                                **Vermont benchmark**
+  ------------------------------------------------------------ ------------------------------- ------------------------ ------------------------------------------------ ----------------------------------------------------------------------------------------------------
+  CMMI model participation and APM-readiness assessment        \$50K--\$150K per org           6--12 months             12--18 months                                    Vermont AHEAD preparation (withdrawn July 2026); HTR VBC Readiness Assessment tool
 
-  1115 waiver application development                          \$200K--\$500K state cost       18--36 months            Multi-year waiver term                         Vermont Global Commitment waiver; current term expires December 31, 2027 --- renewal needed
+  1115 waiver application development                          \$200K--\$500K state cost       18--36 months            Multi-year waiver term                           Vermont Global Commitment waiver; current term expires December 31, 2027 --- renewal needed
 
-  State-employee-plan direct contracting (reference pricing)   \$100K--\$300K design + admin   6--12 months design      Year 1 (Montana: \$47.8M saved, SFY2017--19)   No Vermont program yet; Montana (2016) benchmark: about 220--250% of Medicare
+  State-employee-plan direct contracting (reference pricing)   \$100K--\$300K design + admin   6--12 months design      Year 1 (Montana: \$47.8M saved, SFY2017--19)     No Vermont program yet; Montana (2016) benchmark: about 220--250% of Medicare
 
-  Federal grant application (RHT Program model)                \$50K--\$100K application       12--18 months to award   Capital deployment 3--5 yrs                    Vermont RHT: \$195M FY2026 award, with annual awards through FY2030, for CIN and IT infrastructure
+  Federal grant application (RHT Program model)                \$50K--\$100K application       12--18 months to award   Each annual award spent within about two years   Vermont RHT: \$195M FY2026 award, with annual awards through FY2030, for CIN and IT infrastructure
 
-  Regulatory engagement and public-comment infrastructure      \$25K--\$75K annually           Ongoing                  Risk-avoidance ROI                             GMCB rate-setting participation; RBP methodology comment process
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Regulatory engagement and public-comment infrastructure      \$25K--\$75K annually           Ongoing                  Risk-avoidance ROI                               GMCB rate-setting participation; RBP methodology comment process
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure B.2 --- Policy-pillar implementation matrix. Sources: HTR Advisory methodology; Vermont RHT Program Application (2025); GMCB rate-setting documentation.*
 
 # **Appendix C --- The 14-Hospital Centers of Excellence Assignment Framework**
 
-Oliver Wyman's Act 167 Recommendations proposed a Centers of Excellence (COE) framework organizing Vermont's 14 hospitals by specialty concentration. The proposed assignments below are frameworks from the Oliver Wyman analysis; final designations are subject to the AHS and hospital transformation planning process.
+Oliver Wyman's Act 167 Recommendations proposed a Centers of Excellence (COE) framework organizing Vermont's 14 hospitals by specialty concentration. The COE counts and specialties below are Oliver Wyman's proposed assignments (page 40 of the recommendations); the tier column is this book's grouping, not Oliver Wyman's. Final designations are subject to the AHS and hospital transformation planning process.
 
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Hospital (HSA)**                                       **COE count**   **Key COE specialties**                                                                                                        **Tier**                           **RHT rural status**
-  -------------------------------------------------------- --------------- ------------------------------------------------------------------------------------------------------------------------------ ---------------------------------- ------------------------
-  University of Vermont Medical Center (Burlington)        16              All major specialties incl. cardiac surgery, neurosurgery, complex oncology, NICU, transplant, trauma                          Tier 1 --- Primary RSC             Non-rural (Chittenden)
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Hospital (HSA)**                                            **COE count**   **Key COE specialties**                                                                                                                                                   **Tier**                           **RHT rural status**
+  ------------------------------------------------------------- --------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------- ------------------------
+  University of Vermont Medical Center (Burlington)             16              All COE specialties except acute general surgery, mental-health ED, pediatric psychiatry, and skilled nursing                                                             Tier 1 --- Primary RSC             Non-rural (Chittenden)
 
-  Southwestern Vermont Medical Center (Bennington)         9               Acute general surgery, cardiology, orthopedics, psychiatry (adult & adolescent), rehab, dermatology, endocrinology, GI, pain   Tier 1 --- Secondary RSC           Rural
+  Southwestern Vermont Medical Center (Bennington)              9               Non-complex cancer surgery, geriatric care, infusion therapy, minimally invasive surgery, orthopedics, adult and adolescent psychiatry, radiation therapy, rheumatology   Tier 1 --- Secondary RSC           Rural
 
-  Brattleboro Memorial Hospital (Brattleboro)              6               Acute general surgery, cardiology, OB/high-risk OB, adult psychiatry, outpatient oncology, GI                                  Tier 1 --- Secondary RSC           Rural
+  Brattleboro Memorial Hospital (Brattleboro)                   6               Acute general surgery, non-complex cancer surgery, geriatric care, orthopedics, rheumatology, robotic surgery                                                             Tier 1 --- Secondary RSC           Rural
 
-  Rutland Regional Medical Center (Rutland)                5               Neurology, adult psychiatry, cancer surgery, radiation therapy, orthopedics                                                    Tier 1 --- Secondary RSC           Rural
+  Rutland Regional Medical Center (Rutland)                     5               Acute general surgery, geriatric care, minimally invasive surgery, neurology, adult psychiatry                                                                            Tier 1 --- Secondary RSC           Rural
 
-  Central Vermont Medical Center (Barre)                   5               Radiation therapy, neurology, cardiac, general surgery, obstetrics                                                             Tier 1 --- Secondary RSC           Rural
+  Central Vermont Medical Center (Barre)                        5               Geriatric care, infusion therapy, neurology, adult psychiatry, radiation therapy                                                                                          Tier 1 --- Secondary RSC           Rural
 
-  Northwestern Medical Center (St. Albans)                 4               Cancer surgery, radiation oncology, orthopedics, cardiology                                                                    Tier 2 --- Focused scope           Rural
+  Northwestern Medical Center (St. Albans)                      4               Non-complex cancer surgery, infusion therapy, neurology, radiation therapy                                                                                                Tier 2 --- Focused scope           Rural
 
-  Northeastern Vermont Regional Hospital (St. Johnsbury)   4               Cancer surgery, infusion/chemotherapy, orthopedics, general surgery                                                            Tier 2 --- Focused scope           Rural
+  Northeastern Vermont Regional Hospital (St. Johnsbury)        4               Non-complex cancer surgery, infusion therapy, minimally invasive surgery, radiation therapy                                                                               Tier 2 --- Focused scope           Rural
 
-  Springfield Hospital (Springfield)                       2               Memory care/dementia, adult psychiatry                                                                                         Tier 2 --- Focused scope           Rural
+  Springfield Hospital (Springfield)                            2               Memory care, adult psychiatry                                                                                                                                             Tier 2 --- Focused scope           Rural
 
-  Copley Hospital (Morrisville)                            2               Orthopedics, rheumatology                                                                                                      Tier 2 --- Focused scope           Rural
+  Copley Hospital (Morrisville)                                 2               Orthopedics, rheumatology                                                                                                                                                 Tier 2 --- Focused scope           Rural
 
-  Mount Ascutney Hospital (Windsor)                        1               Rehabilitation                                                                                                                 Tier 2 --- Focused scope           Rural
+  Mount Ascutney Hospital (Windsor; White River Junction HSA)   1               Rehabilitation                                                                                                                                                            Tier 2 --- Focused scope           Rural
 
-  Porter Medical Center (Middlebury)                       TBD             Assessment ongoing --- UVM-network affiliation                                                                                 Tier 2 --- Focused scope           Rural
+  Porter Medical Center (Middlebury)                            TBD             Further discussion needed (Oliver Wyman); UVM Health network                                                                                                              Tier 2 --- Focused scope           Rural
 
-  Grace Cottage Hospital (Townshend)                       TBD             Palliative-care specialty worth preserving; 19-bed, Vermont's smallest                                                         Tier 3 --- Transition assessment   Rural
+  Grace Cottage Hospital (Townshend)                            TBD             Further discussion needed (Oliver Wyman); 19 beds, Vermont's smallest hospital                                                                                            Tier 3 --- Transition assessment   Rural
 
-  Gifford Medical Center (Randolph)                        TBD             Among most financially vulnerable --- comprehensive assessment needed                                                          Tier 3 --- Transition assessment   Rural
+  Gifford Medical Center (Randolph)                             TBD             Further discussion needed (Oliver Wyman); one of the four hospitals it identified as at risk                                                                              Tier 3 --- Transition assessment   Rural
 
-  North Country Hospital (Newport)                         TBD             Northeast Kingdom anchor; REH candidacy under assessment                                                                       Tier 3 --- Transition assessment   Rural
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  North Country Hospital (Newport)                              TBD             Further discussion needed (Oliver Wyman); Northeast Kingdom anchor; Oliver Wyman judged REH conversion likely not supportable in its worst case                           Tier 3 --- Transition assessment   Rural
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Sources: Oliver Wyman, Act 167 Community Engagement: Recommendations (August 2024, revised October 2024 and January 2025). COE designations are proposed; final designations subject to the AHS and hospital transformation planning process.*
 
