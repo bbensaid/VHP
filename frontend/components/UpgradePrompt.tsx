@@ -1,5 +1,6 @@
 "use client";
 
+import { RESEARCH_LAB_TOOL_COUNT } from "@/lib/taxonomy/tools";
 import Link from "next/link";
 import { LockClosedIcon, SparklesIcon, ChartBarIcon, AcademicCapIcon, BriefcaseIcon } from "@heroicons/react/24/outline";
 
@@ -39,7 +40,7 @@ const TIER_CONFIG: Record<Tier, {
     perks: [
       "Full AI Analyst powered by Llama 3.3 70b",
       "The Wire — real-time healthcare intelligence",
-      "Research Lab — 24 interactive tools",
+      `Research Lab — ${RESEARCH_LAB_TOOL_COUNT} interactive tools`,
       "Unlimited policy analysis access",
     ],
     cta: "Subscribe Now",
