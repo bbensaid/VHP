@@ -1,6 +1,3 @@
-import { createClient } from '@supabase/supabase-js'
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-
-export const supabase = createClient(supabaseUrl, supabaseAnonKey)
+// Anon client, created lazily (see lib/db/client.ts) so builds without
+// Supabase env vars do not throw at import time.
+export { db as supabase } from "@/lib/db/client";

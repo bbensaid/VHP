@@ -1,13 +1,8 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
-import { createClient } from "@supabase/supabase-js";
 import { XMarkIcon, ChatBubbleLeftIcon } from "@heroicons/react/24/outline";
-
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
+import { db as supabase } from "@/lib/db/client";
 
 interface Profile { full_name: string | null; avatar_url: string | null }
 
