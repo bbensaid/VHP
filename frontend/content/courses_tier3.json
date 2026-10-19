@@ -13645,7 +13645,7 @@
                   {
                     "_type": "span",
                     "_key": "ac1mile2s",
-                    "text": "Vermont has not been a passive observer in this history. The University of Vermont Medical Center has been an All of Us enrollment site, and Vermont's Green Mountain Care Board has tracked precision medicine's cost and utilization implications as it develops reimbursement policy for genomic tests under the state's all-payer model.",
+                    "text": "Vermont has not been a passive observer in this history. UVM Medical Center provides clinical genetics services, and Vermont's Green Mountain Care Board has tracked precision medicine's cost and utilization implications as it develops reimbursement policy for genomic tests under the state's all-payer model.",
                     "marks": []
                   }
                 ],
@@ -14044,7 +14044,7 @@
                   {
                     "_type": "span",
                     "_key": "af3vermont3s",
-                    "text": "Understanding this equity dimension is not a minor footnote \u2014 it is central to responsible precision medicine implementation. A tool that improves outcomes for the majority while worsening them for minority populations does not represent medical progress in any meaningful sense. Vermont's health equity commitments, codified in Act 175 and the state's Health Equity Blueprint, explicitly require that new technologies be evaluated through an equity lens.",
+                    "text": "Understanding this equity dimension is not a minor footnote \u2014 it is central to responsible precision medicine implementation. A tool that improves outcomes for the majority while worsening them for minority populations does not represent medical progress in any meaningful sense.",
                     "marks": []
                   }
                 ],
@@ -15422,7 +15422,7 @@
                   {
                     "_type": "span",
                     "_key": "m3s00011",
-                    "text": "Vermont context: Vermont's All-Payer Model \u2014 one of the most advanced value-based payment systems in the United States \u2014 gives the state practical infrastructure for experimenting with outcomes-based drug contracts. As gene therapies reach Vermont's Medicaid population, the state's existing risk-sharing frameworks make it a laboratory for national payment innovation.",
+                    "text": "Vermont context: Vermont's All-Payer Model \u2014 one of the most advanced value-based payment systems in the United States \u2014 gives the state practical infrastructure for experimenting with outcomes-based drug contracts.",
                     "marks": []
                   }
                 ],
@@ -15433,7 +15433,7 @@
                 "_key": "m3ex0001",
                 "eyebrow": "Real-World Example",
                 "title": "Bluebird Bio and Massachusetts Medicaid: A Gene Therapy Payment Pilot",
-                "body": "When bluebird bio launched betibeglogene (Zynteglo) for beta-thalassemia at $2.8 million, Massachusetts Medicaid negotiated an outcomes-based contract: the state pays in installments over five years, with refunds if patients do not maintain transfusion independence. This model became a template studied by Vermont's Department of Vermont Health Access as it prepares for additional gene therapy approvals.",
+                "body": "When bluebird bio launched betibeglogene (Zynteglo) for beta-thalassemia at $2.8 million, Massachusetts Medicaid negotiated an outcomes-based contract: the state pays in installments over five years, with refunds if patients do not maintain transfusion independence.",
                 "outcome": "Five-year outcome-linked payment reduced Massachusetts Medicaid's upfront liability by approximately 60% while maintaining patient access to the therapy.",
                 "source": "ICER Evidence Report on Gene Therapies, 2023; Massachusetts Executive Office of Health and Human Services"
               },
@@ -15602,7 +15602,7 @@
                   {
                     "_type": "span",
                     "_key": "m3s00018",
-                    "text": "Genomic testing coverage is particularly uneven. Medicare covers next-generation sequencing (NGS) for advanced cancer through a national coverage determination, but coverage for hereditary cancer screening (like BRCA testing), pharmacogenomic testing, and rare disease genomic panels varies dramatically by commercial insurer and state Medicaid program. In Vermont, Medicaid's prior authorization requirements for genomic tests are among the more progressive in New England, but gaps remain.",
+                    "text": "Genomic testing coverage is particularly uneven. Medicare covers next-generation sequencing (NGS) for advanced cancer through a national coverage determination, but coverage for hereditary cancer screening (like BRCA testing), pharmacogenomic testing, and rare disease genomic panels varies dramatically by commercial insurer and state Medicaid program.",
                     "marks": []
                   }
                 ],
@@ -16087,7 +16087,7 @@
                   {
                     "_type": "span",
                     "_key": "m3s00047",
-                    "text": "The mismatch between who pays and who saves is a structural problem in precision medicine economics. A drug that prevents hospitalizations ten years from now may be covered by a different insurer than the one paying for the drug today \u2014 giving current payers little incentive to invest in long-term prevention. This misaligned incentive problem is why Vermont's unified, population-based payment model is watched closely by health economists nationally.",
+                    "text": "The mismatch between who pays and who saves is a structural problem in precision medicine economics. A drug that prevents hospitalizations ten years from now may be covered by a different insurer than the one paying for the drug today \u2014 giving current payers little incentive to invest in long-term prevention.",
                     "marks": []
                   }
                 ],
@@ -16104,7 +16104,7 @@
                   "The economic case FOR precision medicine rests on avoided waste: fewer failed treatment cycles, fewer hospitalizations for side effects, and earlier diagnosis at lower treatment cost \u2014 but capturing those savings requires aligned incentives across the system.",
                   "Insurance coverage gaps are not random \u2014 they systematically disadvantage rural patients, those on Medicaid, and those without specialist advocates who can navigate prior authorization and appeal processes.",
                   "Pharmacogenomics offers a relatively affordable entry point into precision medicine economics, with cost-effectiveness demonstrated in primary care settings over 5-year horizons.",
-                  "Vermont's All-Payer Model provides structural advantages for implementing outcomes-based drug contracts and population-level precision medicine investment, making it a national laboratory for payment innovation."
+                  "Vermont's All-Payer Model aligns hospital incentives with avoiding preventable admissions, which is the economic case for population-level precision medicine investment."
                 ]
               }
             ],
@@ -16737,7 +16737,7 @@
                   {
                     "_type": "span",
                     "_key": "m4s00028",
-                    "text": "Vermont context: UVM Medical Center uses Epic as its primary EHR. The hospital has implemented a pharmacogenomics CDS program that surfaces PGx alerts for clopidogrel (CYP2C19), codeine/tramadol (CYP2D6), and warfarin (CYP2C9/VKORC1). Critical access hospitals across Vermont using MEDITECH face a steeper climb \u2014 MEDITECH's genomics capabilities require third-party integrations and custom development that smaller facilities lack resources to implement.",
+                    "text": "Vermont context: UVM Medical Center uses Epic as its primary EHR. The hospital has implemented a pharmacogenomics CDS program that surfaces PGx alerts for clopidogrel (CYP2C19), codeine/tramadol (CYP2D6), and warfarin (CYP2C9/VKORC1). Smaller hospitals using MEDITECH face a steeper climb \u2014 MEDITECH's genomics capabilities require third-party integrations and custom development that smaller facilities lack resources to implement.",
                     "marks": []
                   }
                 ],
@@ -16872,7 +16872,7 @@
                   {
                     "_type": "span",
                     "_key": "m4s00037",
-                    "text": "Vermont has participated in the All of Us Research Program through recruitment at UVM Medical Center and Vermont community health centers. The program's diversity mandate \u2014 explicit recruitment of populations historically underrepresented in genomic research \u2014 is particularly relevant for Vermont, where the state's homogeneous demographic history means many common reference databases have limited applicability to its specific population's ancestral genetic background.",
+                    "text": "Vermont residents can join the NIH All of Us Research Program through its direct online enrollment. The program's diversity mandate \u2014 explicit recruitment of populations historically underrepresented in genomic research \u2014 is particularly relevant for Vermont, where the state's homogeneous demographic history means many common reference databases have limited applicability to its specific population's ancestral genetic background.",
                     "marks": []
                   }
                 ],
@@ -16962,7 +16962,7 @@
                   {
                     "_type": "span",
                     "_key": "m4s00043",
-                    "text": "Vermont's 14 critical access hospitals and numerous federally qualified health centers (FQHCs) illustrate the rural technology gap precisely. Most lack on-site NGS capacity \u2014 specimens are shipped to reference laboratories (typically Labcorp Genetics or Quest's genomics division), adding 7\u201321 days to result turnaround. EHR systems at rural Vermont facilities vary widely; several still operate on legacy MEDITECH systems without genomics module support. Broadband infrastructure gaps in northeastern Vermont further complicate cloud-based bioinformatics and telegenetics consultation.",
+                    "text": "Vermont's eight critical access hospitals and its federally qualified health centers (FQHCs) illustrate the rural technology gap. Most lack on-site NGS capacity \u2014 specimens are shipped to reference laboratories (typically Labcorp Genetics or Quest's genomics division), adding 7\u201321 days to result turnaround. EHR systems at rural Vermont facilities vary widely, and not all have genomics module support. Broadband infrastructure gaps in northeastern Vermont further complicate cloud-based bioinformatics and telegenetics consultation.",
                     "marks": []
                   }
                 ],
@@ -16976,7 +16976,7 @@
                   {
                     "_type": "span",
                     "_key": "m4s00044",
-                    "text": "The workforce gap compounds the technology gap. Genetic counselors \u2014 the clinical specialists who order, interpret, and communicate genomic test results \u2014 are concentrated in urban academic centers. Vermont has fewer than 30 licensed genetic counselors statewide, most employed at UVM Medical Center. Telegenetics \u2014 the delivery of genetic counseling services via video \u2014 has expanded access substantially, but requires reliable broadband that remains intermittent across Vermont's most rural communities.",
+                    "text": "The workforce gap compounds the technology gap. Genetic counselors \u2014 the clinical specialists who order, interpret, and communicate genomic test results \u2014 are concentrated in urban academic centers. Vermont's genetic counselors are concentrated at UVM Medical Center. Telegenetics \u2014 the delivery of genetic counseling services via video \u2014 has expanded access substantially, but requires reliable broadband that remains intermittent across Vermont's most rural communities.",
                     "marks": []
                   }
                 ],
@@ -17829,7 +17829,7 @@
                   {
                     "_type": "span",
                     "_key": "m5spn040",
-                    "text": "The Recommended Uniform Screening Panel (RUSP) in the United States currently includes 35 core conditions and 26 secondary conditions. States implement the RUSP at their own pace; Vermont screens for all RUSP core conditions plus several additional disorders. Phenylketonuria (PKU), congenital hypothyroidism, and sickle cell disease are among the most well-known conditions detected through NBS.",
+                    "text": "The Recommended Uniform Screening Panel (RUSP) in the United States currently includes 35 core conditions and 26 secondary conditions. States implement the RUSP at their own pace, so newborn screening panels differ from state to state. Phenylketonuria (PKU), congenital hypothyroidism, and sickle cell disease are among the most well-known conditions detected through NBS.",
                     "marks": []
                   }
                 ],
@@ -18484,8 +18484,8 @@
                 "_key": "m6ex0001",
                 "eyebrow": "Real-World Example",
                 "title": "NIH All of Us Research Program in Vermont",
-                "body": "Vermont has been an active participant in the All of Us program, with enrollment sites at the University of Vermont Medical Center and community health centers across the state. The program's emphasis on rural participants \u2014 one of the most underrepresented groups in prior genomic research \u2014 has made Vermont an important recruiting ground. Vermont participants include residents from the Northeast Kingdom and other rural regions who would rarely have access to academic genomic research programs.",
-                "outcome": "Vermont's All of Us enrollment has contributed to the program's goal of including rural Americans as a distinct population of interest, generating data relevant to understanding how geography, environmental exposures, and rural social determinants interact with genomic risk factors.",
+                "body": "Vermont residents can take part in the All of Us program through its direct online enrollment. The program's emphasis on rural participants \u2014 one of the most underrepresented groups in prior genomic research \u2014 has made Vermont an important recruiting ground.",
+                "outcome": "Rural participation helps the program study how geography, environmental exposures and rural social determinants interact with genomic risk factors.",
                 "source": "NIH All of Us Research Program, Vermont Enrollment Reports, 2024"
               },
               {
@@ -18756,7 +18756,7 @@
                     "_key": "m6st003a",
                     "value": "3.5x",
                     "label": "More genetic counselors per capita in urban vs. rural areas",
-                    "context": "Urban areas have approximately 3.5 times more genetic counselors per capita than rural areas, creating a profound service desert in rural states like Vermont. (NSGC Workforce Survey, 2023)",
+                    "context": "Genetic counselors are concentrated in urban academic centers, leaving rural states like Vermont with thin coverage. (NSGC Workforce Survey, 2023)",
                     "trend": "down"
                   },
                   {
