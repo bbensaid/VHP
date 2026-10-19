@@ -157,10 +157,10 @@ export const VERMONT_PORTFOLIO: readonly PortfolioComponent[] = [
   { id: "rht-deploy", name: "RHT Program deployment", pillar: "economics", status: "implementing", gated: true, due: "Annual targets", chapter: "2" },
   { id: "sra", name: "Social-risk-adjustment methodology", pillar: "economics", status: "design", gated: false, due: "FY2028 adoption", chapter: "10" },
   { id: "pcmh", name: "Blueprint PCMH", pillar: "clinical", status: "implementing", gated: false, due: "100% PCMH by FY2028", chapter: "8" },
-  { id: "ccbhc", name: "CCBHC certification (5 entities)", pillar: "clinical", status: "implementing", gated: false, due: "4 of 5 certified Jul 2026", chapter: "8" },
+  { id: "ccbhc", name: "CCBHC certification (6 entities)", pillar: "clinical", status: "implementing", gated: false, due: "4 certified Jul 1, 2026, joining 2 earlier", chapter: "8" },
   { id: "cocm", name: "CoCM statewide deployment", pillar: "clinical", status: "implementing", gated: false, due: "80%+ practices FY2028", chapter: "9" },
   { id: "heroi", name: "HEROI equity-scoring methodology", pillar: "clinical", status: "design", gated: false, due: "Iterative through FY2028", chapter: "10" },
   { id: "hospital-plans", name: "14-hospital transformation planning", pillar: "operations", status: "implementing", gated: false, due: "Final plans Mar 2026 → implementation", chapter: "11" },
-  { id: "ahs-restructure", name: "AHS restructuring (HSA-coordinator model)", pillar: "operations", status: "implementing", gated: false, due: "FY2027 staffed", chapter: "16" },
+  { id: "ahs-restructure", name: "AHS restructuring (Chapter 16 design)", pillar: "operations", status: "not-started", gated: false, due: "Not adopted: Act 119 report (Feb 2026) kept AHS unified", chapter: "16" },
   { id: "pmo", name: "AHS PMO establishment", pillar: "operations", status: "not-started", gated: false, due: "Q2 2027 operational", chapter: "12" },
 ];

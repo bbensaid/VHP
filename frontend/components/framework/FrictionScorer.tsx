@@ -69,8 +69,8 @@ const DEFAULT_FRICTION: Record<PillarId, number> = {
 };
 
 // A saved scoring, kept in this browser only, so a reader can re-score later and see which
-// pillar's friction is RISING (Chapter 14 §14.6: rising friction shows in the operating data
-// a year before it becomes a legislative problem). Per-viewer convenience — not shared state.
+// pillar's friction is RISING (Chapter 14 §14.6: rising friction tends to show in the operating data
+// before it becomes a legislative problem). Per-viewer convenience — not shared state.
 const SNAPSHOT_KEY = "htr-friction-snapshot-v1";
 interface Snapshot {
   savedAt: string;
