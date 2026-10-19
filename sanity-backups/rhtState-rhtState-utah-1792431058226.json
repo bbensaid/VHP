@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:59Z",
+ "_id": "rhtState-utah",
+ "_rev": "G7Tfo59YVwcDW2O5CBrjx7",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:59Z",
+ "awardAmount": "$196,000,000",
+ "description": "'PATH' for preventive built environments and 'SUPPORT' for AI tools to reduce admin burden.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Nutrition, physical activity, and built environment.",
+   "title": "PATH Initiative"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Reducing admin burden via AI.",
+   "title": "SUPPORT Tools"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Obesity Rates",
+   "status": "Pending",
+   "target": "Reduced"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Admin Hours",
+   "status": "In Progress",
+   "target": "Reduced"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "utah"
+ },
+ "stateName": "Utah",
+ "status": "Active",
+ "strategicFocus": "PATH & SUPPORT"
+}

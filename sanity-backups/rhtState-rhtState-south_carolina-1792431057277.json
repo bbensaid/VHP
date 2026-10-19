@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:37Z",
+ "_id": "rhtState-south_carolina",
+ "_rev": "GIKqHwCOFsUvADyibzke8A",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:37Z",
+ "awardAmount": "$200,000,000",
+ "description": "Investing in rural health tech startups and a statewide digital literacy campaign.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Digital health literacy improvement.",
+   "title": "Connections to Care"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Investment in rural health technology startups.",
+   "title": "Tech Catalyst Fund"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Digital Literacy",
+   "status": "In Progress",
+   "target": "10,000 Certified"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Startups Funded",
+   "status": "Pending",
+   "target": "5 Companies"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "south_carolina"
+ },
+ "stateName": "South Carolina",
+ "status": "Active",
+ "strategicFocus": "Digital Literacy & Startups"
+}

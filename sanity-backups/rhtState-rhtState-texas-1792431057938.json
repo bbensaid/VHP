@@ -1,0 +1,58 @@
+{
+ "_createdAt": "2026-03-10T13:54:26Z",
+ "_id": "rhtState-texas",
+ "_rev": "G7Tfo59YVwcDW2O5CBreqz",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:26Z",
+ "awardAmount": "$281,000,000",
+ "description": "Texas proposes a massive technological overhaul to address the severe fragmentation of specialty care in its vast rural regions. The state is leveraging its RHT award to build a unified 'Lone Star' digital backbone while simultaneously investing in physical 'Wellness Centers' to address upstream social determinants of health.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Connecting fragmented specialty telehealth services into a unified statewide AI-driven network. This allows rural primary care providers to instantly consult with urban specialists, reducing unnecessary transfers.",
+   "title": "Lone Star Advanced AI Network"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Converting underutilized rural spaces into 'Wellness Centers' that offer preventative screenings, nutrition classes, and physical fitness programs to address chronic disease roots.",
+   "title": "Community Wellness Centers"
+  },
+  {
+   "_key": "ini-2",
+   "description": "Deploying a statewide cybersecurity shield for rural hospitals to protect patient data and ensure continuity of operations during cyberattacks.",
+   "title": "Unified Care Cyber Infrastructure"
+  },
+  {
+   "_key": "ini-3",
+   "description": "Aggressive workforce expansion focused on retaining medical students in rural areas through residency stipends and housing support.",
+   "title": "Next Gen Doctor Pipeline"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "AI Consult Volume",
+   "status": "Pending",
+   "target": "10,000/yr"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Wellness Centers Opened",
+   "status": "Pending",
+   "target": "12 Sites"
+  },
+  {
+   "_key": "metric-2",
+   "label": "Cybersecurity Compliance",
+   "status": "In Progress",
+   "target": "100% Rural Hospitals"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "texas"
+ },
+ "stateName": "Texas",
+ "status": "Active",
+ "strategicFocus": "AI Specialty Networks & Wellness"
+}
