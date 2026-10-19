@@ -1,0 +1,90 @@
+
+######## caseStudy-001 | Vermont's All-Payer ACO: A Decade-Plus Test of Voluntary, Total-Cost-of-Care Reform
+Background
+OneCare Vermont was formed in 2012 by the University of Vermont Medical Center (then Fletcher Allen) and Dartmouth-Hitchcock Medical Center as a shared Accountable Care Organization vehicle. It became the lead entity under Vermont's federal All-Payer ACO Model, a Total Cost of Care arrangement intended to align Medicare, Medicaid, and commercial payers under a single accountability framework — the first statewide model of its kind in the U.S. OneCare Vermont wound down its operations at the close of 2025, thirteen years after it was formed; the federal all-payer agreement that defined its most consequential years ran about eight of those years before its own scheduled sunset.
+Model Structure
+OneCare Vermont served as the ACO responsible for managing care for attributed beneficiaries across participating payers, using prospective capitation for Medicaid and shared savings for Medicare, with commercial contracts varying by plan. At its broadest, participation reached all fourteen Vermont hospitals and thousands of providers. Participation itself, however, was voluntary rather than mandated for every payer — a design choice with structural consequences covered below.
+The Policy Constraint: Why “Voluntary” Had Teeth
+In 2016, the U.S. Supreme Court decided Gobeille v. Liberty Mutual Insurance Co., 6–2, holding that ERISA preempts state laws requiring health plans — including self-insured employer plans — to report claims data into a state's all-payer claims database. The practical effect: Vermont could not compel every private payer into its data and payment infrastructure. That limit became concrete on January 1, 2023, when Blue Cross Blue Shield of Vermont — the state's largest insurer — declined to renew its OneCare contract, removing roughly 93,000 enrollees, about a third of OneCare's total enrollment, in a single step. Blue Cross cited inadequate contractual protection for its members' claims data under a plan to subcontract analytics to UVM Health Network (a competitor), and no evidence among its own members of progress on health outcomes or cost of care.
+Outcomes
+The financial record is genuinely contested, not a clean success or failure, and any summary that offers a single tidy number should be treated with suspicion. OneCare's administrative costs ran $70.35 million from 2018 through 2022. The Green Mountain Care Board's own analysis (May 2024) found that, counting those administrative expenses against performance on payer targets, OneCare was a net cost of $42.28 million over 2018–2022 — $89.56 million excluding the pandemic-distorted year 2020. Vermont's State Auditor separately found (2021) that over 2017–2019 OneCare missed its Medicaid targets by $11.1 million while the state paid it $14.5 million to operate. Other analyses point the other way: one calculation found $18.23 million in net savings, though excluding 2020 from that same calculation flips it to a $32.38 million cost; a Medicaid-specific measure found $21.43 million in savings under that program alone.
+On utilization, OneCare's own benchmarking against 20 peer ACOs, filed with the Green Mountain Care Board, found that Vermonters attributed to OneCare visited the emergency department at a rate roughly 36% higher than peer ACOs nationally and had about 18% fewer primary care visits — the signature of a population managed reactively rather than proactively. A 2019 audit separately found OneCare "did not reliably monitor or accurately report" several community-based programs it had funded, producing no evidence of results from those investments.
+Lessons for Other States
+Vermont's experience is most useful read as a specific, documented mechanism rather than a generic caution about "voluntary programs." Three lessons hold up: (1) a state cannot assume it can compel every private payer's participation — federal ERISA preemption is a real, binding constraint on how far any state mandate can legally reach, as Gobeille v. Liberty Mutual demonstrated; (2) real-time analytics need to precede the assumption of downside financial risk, not follow it — OneCare's own staff acknowledged to state regulators that its analytics lagged newer available systems; and (3) "savings" claims for a total-cost-of-care model are highly sensitive to which years and cost categories are included, so expect a genuinely contested verdict rather than a clean one. Vermont's legislative response, Act 68 of 2025, makes reference-based pricing and hospital global budgets mandatory for all Vermont hospitals — closing the hospital-side version of this gap, though it has no power to override the federal, payer-side constraint that Gobeille established.
+Wound down at the close of 2025, after 12 years (2013–2025)
+BCBS Vermont exit (Jan. 2023) removed ~93,000 enrollees — about a third of total enrollment
+Financial verdict contested: one analysis found $18.23M in savings; excluding 2020, the same method shows a $32.38M cost
+36% higher ED visit rate than peer ACOs nationally (OneCare benchmarking filed with the GMCB)
+vermont-all-payer-aco-case-study
+OneCare Vermont operated the first statewide all-payer ACO in the U.S. from 2013 until winding down at the close of 2025. Its record is genuinely contested — a documented Policy-pillar constraint (Gobeille v. Liberty Mutual) let the state's largest insurer exit in 2023, and independent financial analyses reach conflicting conclusions on net savings vs. net cost.
+Vermont's All-Payer ACO: A Decade-Plus Test of Voluntary, Total-Cost-of-Care Reform
+
+######## caseStudy-002 | Kaiser Permanente Northern California: AI-Augmented Sepsis Detection at Scale
+The Clinical Challenge
+Sepsis affects 1.7M Americans annually and is responsible for 270,000 deaths — the leading cause of in-hospital mortality. Early identification is the single most important determinant of outcomes, but clinical signs are often subtle in early sepsis, and busy clinical environments create cognitive overload that delays recognition.
+Algorithm Development
+KPNC's machine learning sepsis model was trained on 648,000 patient encounters and uses 70+ input variables including vital signs, lab values, nursing assessments, and medication administration patterns. The model produces a risk score updated every 15 minutes with a positive predictive value of 32% for sepsis onset within 12 hours — compared to 7% for SIRS-based criteria.
+Implementation Approach
+The implementation team learned from failed earlier alert systems that alert fatigue is the primary barrier to clinical adoption. Key design decisions: alerts fire to the bedside RN rather than through the EHR notification system, alert threshold set to generate no more than 2 alerts per nurse per shift, clear escalation protocol attached to every alert, and daily feedback to clinical units on alert performance.
+Outcomes
+At 24-month follow-up, sepsis mortality decreased 17% across the 21-hospital system. Time from first clinical deterioration signal to antibiotic administration decreased by 4.2 hours. The cost-effectiveness analysis estimates $34M in annual savings from prevented mortality, shorter ICU stays, and reduced sepsis complications. Alert acceptance rates exceeded 78%, unusually high for clinical decision support.
+Integrated Delivery Network
+17% reduction in sepsis mortality
+21 hospitals deployed
+4.2-hour earlier detection
+$34M estimated annual savings from prevented deaths and complications
+kaiser-permanente-ai-sepsis-detection
+Kaiser Permanente Northern California deployed an ML-based sepsis early warning system across 21 hospitals, reducing sepsis mortality by 17% over two years through earlier detection and standardized response protocols.
+Kaiser Permanente Northern California: AI-Augmented Sepsis Detection at Scale
+
+######## caseStudy-003 | Camden Coalition: The Original Hotspotting Model for High-Need Patients
+The Hotspotting Concept
+The Camden Coalition, founded by Dr. Jeffrey Brenner in Camden, NJ, pioneered the concept of 'hotspotting' — using claims data to identify patients who cycle repeatedly through emergency departments and hospitals at enormous cost and personal suffering. The top 1% of Camden patients by cost accounted for 30% of all healthcare spending.
+The RCT Result
+A 2020 New England Journal of Medicine RCT tested the Camden Coalition's intensive care management intervention against usual care in 800 super-utilizers. The primary finding: no statistically significant difference in 180-day readmissions. This result generated significant attention and soul-searching about what intensive care management can and cannot achieve.
+What the RCT Taught
+Post-trial analysis revealed important nuance: the intervention showed significant benefit for patients with behavioral health comorbidities and unstable housing — populations where social needs were driving utilization — but no benefit for patients whose repeated utilization reflected purely clinical complexity. The null overall result masked heterogeneous treatment effects.
+Redesign and Legacy
+The Coalition redesigned its intervention to focus explicitly on patients with modifiable social needs driving utilization, and has documented improved outcomes in this sub-population. More broadly, the hotspotting model has been replicated in 40+ communities nationally. The NEJM RCT's honest reporting — even a null result — became a model for the field's willingness to learn from rigorously evaluated failures.
+Super-utilizer focus: top 1% of cost
+180-day RCT found null readmission result
+Subsequent redesign targeting most amenable sub-populations
+National replication in 40+ communities
+camden-coalition-hotspotting-complex-patients
+The Camden Coalition of Healthcare Providers pioneered the health 'hotspotting' approach — intensive care management for the highest-cost, highest-need patients — including lessons from a landmark randomized controlled trial that found no reduction in 180-day readmissions.
+Camden Coalition: The Original Hotspotting Model for High-Need Patients
+
+######## caseStudy-004 | Intermountain Health: Hospital-at-Home Program Design and Operations
+Program Overview
+Intermountain Health's Advanced Care at Home (ACH) program treats patients with acute-level medical conditions in their home environment. Approved under the CMS Acute Hospital Care at Home waiver, the program covers conditions including pneumonia, COPD exacerbation, cellulitis, heart failure, UTI, and post-operative monitoring.
+Patient Selection
+Not all acute admissions are appropriate for home-based care. Intermountain's inclusion criteria require: clinical stability appropriate for twice-daily in-person nursing visits, home environment meeting safety and space requirements, caregiver availability for 8+ hours daily, reliable cellular connectivity for monitoring devices, and patient and family preference for home-based care. Approximately 15-18% of eligible acute admissions are enrolled.
+Clinical Operations Model
+Each ACH patient receives: twice-daily in-person visits from a mobile nurse or advanced practice provider, real-time continuous monitoring via a cellular hub transmitting vitals to a clinical operations center, 24/7 physician telemedicine coverage with in-person rapid response backup, daily physician review, and same-day laboratory and medication delivery through contracted pharmacy and laboratory partners.
+Economics
+Intermountain's published cost analysis shows ACH episodes average 32% below matched inpatient stays. The savings source is primarily reduced overhead allocation (no room-and-board cost), shorter length of stay (4.1 days ACH vs. 5.8 days inpatient for comparable DRGs), and near-elimination of hospital-acquired conditions. The program requires $8-12M in infrastructure investment to reach the 400-patient concurrent census needed for operational efficiency.
+400+ concurrent patients at scale
+32% lower cost vs. inpatient
+6.2% 30-day readmission (vs. 9.8% inpatient matched)
+97% patient satisfaction
+intermountain-hospital-at-home-operations
+Intermountain Health's Advanced Care at Home program, one of the largest Hospital-at-Home programs in the U.S., provides operational detail on patient selection, clinical logistics, technology infrastructure, and the economics of scaling home-based acute care.
+Intermountain Health: Hospital-at-Home Program Design and Operations
+
+######## caseStudy-005 | California Maternal Quality Care Collaborative: Reducing Maternal Mortality Through Clinical Bundles
+CMQCC Background
+The California Maternal Quality Care Collaborative (CMQCC) was established in 2006 as a public-private partnership to improve maternal outcomes in California's 250+ birthing hospitals. California's maternal mortality rate at inception was 17.2 per 100,000 — comparable to the national average. By 2024, California achieved 7.3 per 100,000 — the lowest in the nation and approaching European benchmarks.
+The Bundle Approach
+CMQCC's clinical toolkits — now adopted nationally as the Alliance for Innovation on Maternal Health (AIM) bundles — provide standardized, evidence-based protocols for the leading causes of maternal death: obstetric hemorrhage, severe hypertension and preeclampsia, venous thromboembolism, and peripartum cardiomyopathy. Each toolkit includes: recognition triggers, standardized response protocols, simulation training materials, and measurement tools.
+Implementation Infrastructure
+CMQCC's model includes a real-time mortality surveillance system that identifies every maternal death within 30 days and conducts structured case review. This rapid feedback loop — unusual in quality improvement — allows identification of emerging safety signals before they become trends. The surveillance system also enabled California to identify that COVID-19 significantly increased maternal mortality risk 18 months before national data showed the trend.
+Replication Strategy
+The AIM program has now been adopted in 41 states, with CMQCC providing technical assistance and training. Early adopter states show 20-35% reduction in severe maternal morbidity within 24 months of full bundle implementation. States with the weakest outcomes — primarily those without state-level perinatal quality collaboratives — are the least engaged with AIM, creating a troubling quality gap that maps directly onto the states with highest maternal mortality.
+Quality Collaborative
+7.3/100K maternal mortality (lowest in U.S.)
+55% reduction in hemorrhage deaths
+40% reduction in VTE-related deaths
+15 years of sustained implementation
+california-cmqcc-maternal-mortality-bundles
+California achieved the lowest maternal mortality rate in the U.S. (7.3/100K) through 15 years of CMQCC clinical bundles, real-time surveillance, and a culture of safety. This case study details the bundle development, implementation, and measurement approach that other states are now replicating.
+California Maternal Quality Care Collaborative: Reducing Maternal Mortality Through Clinical Bundles

@@ -1,0 +1,371 @@
+
+######## rhtState-alabama | Alabama
+Deploying telerobotic ultrasound for high-risk pregnancy and establishing cancer prevention hubs.
+Remote-controlled ultrasound units for high-risk pregnancy monitoring.
+Telerobotic Ultrasound
+Establishing 5 IT/telehealth hubs for cancer prevention.
+Maternal & Cancer Digital Regionalization
+
+######## rhtState-alaska | Alaska
+Drone delivery pilots and remote fetal monitoring for off-road communities.
+Utilizing drones and remote pharmacy dispensing units.
+Devices for high-risk pregnancies in frontier areas.
+Remote Fetal Monitoring
+Frontier Logistics & Pharmacy Innovation
+
+######## rhtState-arizona | Arizona
+New rural residency slots and mobile satellite clinics to close the '20-mile gap'.
+Establishing new residency slots for rural placement.
+Rural Clinical Rotations
+Deploying units to close the travel gap.
+Mobile & Satellite Clinics
+Mobile Access & Workforce Pipeline
+
+######## rhtState-arkansas | Arkansas
+Shared service agreements to stabilize vulnerable hospitals (SAFE) and a 6-pronged heart health initiative.
+Shared service agreements to stabilize financially vulnerable hospitals.
+Focus on local food access and recreation infrastructure.
+System Stabilization & Heart Health
+
+######## rhtState-california | California
+California's RHT plan focuses on formalizing regional networks to ensure rural hospital survival amidst climate risks and payer consolidation. The state is establishing a 'Hub and Spoke' model where financially stronger rural hospitals support smaller clinics and Tribal health programs.
+Formalizing 'Hub and Spoke' networks where rural hospitals serve as hubs for FQHCs and Tribal health programs, sharing administrative burdens and clinical resources.
+Transformative Care Model
+Development and deployment of a live GIS tool to track workforce gaps in real-time and direct 'Train-the-Trainer' resources to the counties with the highest vacancy rates.
+Statewide Workforce Mapping
+Modernizing connectivity and facility resilience against climate and wildfire risks, ensuring rural hospitals remain operational during natural disasters.
+Infrastructure Hardening
+Hub-and-Spoke Resilience
+
+######## rhtState-colorado | Colorado
+Formalizing regional partnerships to diversify revenue and expanding mobile health tools.
+Increasing adoption of mobile tools and dashboards.
+Legal structures to bind rural hospitals together.
+Regional Partnerships
+Regional Partnerships & Mobile Health
+
+######## rhtState-connecticut | Connecticut
+Implementing universal nurse home-visiting for newborns and 23-hour crisis stabilization centers to offload rural EDs.
+Expansion of home visiting for all new/expecting rural families.
+Universal Nurse Home-Visits
+Stabilization centers linked to rural hospitals.
+23-Hour Crisis Centers
+Crisis Stabilization & Home Visits
+
+######## rhtState-delaware | Delaware
+Delaware is leveraging its compact geography to build a fully integrated behavioral health network co-located in primary care settings, supported by a statewide care navigation platform to reduce avoidable ED utilization.
+Embedding licensed behavioral health clinicians in rural primary care practices statewide.
+Behavioral Health Integration
+A centralized digital platform connecting patients to community resources and specialist referrals.
+Care Navigation Platform
+Capital grants for Federally Qualified Health Centers to expand access in underserved Sussex County.
+Integrated Behavioral Health & Care Navigation
+
+######## rhtState-florida | Florida
+Using Community Paramedicine for post-discharge care and formalizing Regional Collaboratives for shared infrastructure.
+Paramedics providing on-site support for minor illnesses and post-discharge.
+Community Paramedicine
+Formal sharing of planning and infrastructure among local providers.
+Regional Collaboratives
+Collaboratives Formed
+Regional Collaboratives & Paramedicine
+
+######## rhtState-georgia | Georgia
+Preparing rural hospitals for the CMS AHEAD global budget model and deploying Obstetric Carts to emergency departments.
+Deploying carts with hemorrhage/neonatal supplies to rural EDs.
+Preparing hospitals to adopt the CMS AHEAD global budget model.
+AHEAD Model Readiness
+Obstetric Access & AHEAD Model
+
+######## rhtState-hawaii | Hawaii
+Statewide Rural Health Information Network (RHIN) and medical respite for the unhoused.
+Statewide digital backbone connecting all rural entities.
+Medical respite for unhoused patients.
+Rural Respite Network
+Digital Backbone & Respite
+
+######## rhtState-idaho | Idaho
+Remote tele-pharmacy dispensing and facility renovations for code compliance.
+Dispensing units to expand medication access.
+Renovations to bring aging facilities into safety code compliance.
+Tele-Pharmacy & Compliance
+
+######## rhtState-illinois | Illinois
+'Treat-Not-Transport' payment models for EMS and community care infrastructure.
+Expanding payment models to allow EMS to treat patients on-site.
+Funding for staffing/workflows to integrate primary/behavioral health.
+Community Infrastructure
+EMS Transformation & Infrastructure
+
+######## rhtState-indiana | Indiana
+Centralized Medical Operations Coordination Center and meds at outpatient prices post-discharge.
+Centralized transfer coordination and diversion management.
+Providing meds to patients before they leave hospital at outpatient prices.
+Coordination Center & ED Readiness
+
+######## rhtState-iowa | Iowa
+Distributing dermatoscopes for melanoma detection and improving digital health literacy.
+Equipping rural providers to detect melanoma.
+Improving digital health literacy to boost telehealth usage.
+Skin Cancer & Digital Literacy
+
+######## rhtState-kansas | Kansas
+Expanding PACE for the elderly and providing centralized back-office services for clinics.
+Expanding 'Program of All-Inclusive Care for the Elderly' to rural regions.
+State-level service for credentialing and contract negotiation.
+Centralized Back-Office
+PACE Expansion & Back-Office Support
+
+######## rhtState-kentucky | Kentucky
+Community-based maternal teams for 1-year postpartum support and Diabetes Hubs.
+Community teams supporting women through 1 year post-partum.
+PoWERing Maternal Health
+Interventions focused on the diabetes continuum.
+Maternal Teams & Diabetes Hubs
+
+######## rhtState-louisiana | Louisiana
+Providing subsidized smartphones with health apps to rural residents and offering tax credits to clinicians.
+Providing subsidized smartphones with health apps/data to residents.
+Tax-credit incentives for high-need parishes.
+Clinician Credit Bank
+Digital Equity & Smartphones
+
+######## rhtState-maine | Maine
+Maine is partnering with Duke University to create a Rural AI Hub while simultaneously expanding community paramedicine to address its aging, geographically dispersed population.
+Innovation institute for deploying AI tools in rural clinics.
+Strengthened reimbursement models for EMS home visits.
+Community Paramedicine
+AI Innovation & Paramedicine
+
+######## rhtState-maryland | Maryland
+Maryland’s RHT plan ($168.2 million in Budget Period 1) is organized in three pillars — transforming the rural health workforce, promoting sustainable access and innovative care, and helping rural Marylanders eat for health — layered on a hospital system already paid under all-payer global budgets, which moved from the Total Cost of Care Model (ended December 31, 2025) into the CMS AHEAD Model in January 2026.
+Maryland Health Care Commission grants ($6.3 million in Budget Period 1) to establish and expand rural primary care and strengthen chronic disease management to reduce avoidable hospital use. Maryland hospitals were already on all-payer global budgets, now under the CMS AHEAD Model.
+Expand Access to Primary Care
+Targeted workforce recruitment, mobile health units, and broadband expansion for the underserved Eastern Shore region.
+Eastern Shore Equity Initiative
+Maryland Department of Labor funding ($15 million in Budget Period 1) for workforce pipeline training and for training, recruitment and retention of rural physicians, PAs, dentists and other advanced practice professionals, plus expanded registered apprenticeships.
+Workforce Pipeline & Retention
+Rural Primary Care Access Funding
+$6.3M (Budget Period 1)
+Eastern Shore Screenings
+Clinician Retention Rate
+Rural Workforce, Access & Food for Health
+
+######## rhtState-massachusetts | Massachusetts
+Focusing on high-tech Mobile Health Units with a projected $36:1 ROI and a 'Beds Not Buildings' platform for behavioral health tracking.
+High-tech units with diagnostic/AI capabilities.
+Live cross-agency platform to track behavioral health bed availability.
+Mobile ROI & Bed Tracking
+
+######## rhtState-michigan | Michigan
+High School to Health Care workforce pipelines and an 'Aging in Place' blueprint for the Upper Peninsula.
+Funding to transition high school students into local health professions.
+Community-based care focus for the Upper Peninsula.
+Healthy Aging Blueprint
+Nursing Home Avoidance
+Aging in Place & Pipelines
+
+######## rhtState-minnesota | Minnesota
+Establishing Mental Health Urgent Care centers and regional cardiometabolic collaboratives.
+Centers for crisis intervention to divert from EDs.
+Mental Health Urgent Care
+Collaboratives to improve cardiometabolic health outcomes.
+Mental Health Urgent Care & Cardio
+
+######## rhtState-mississippi | Mississippi
+Creating 'Rural Healthcare Districts' (CRIS) and piloting EMS Treat-in-Place protocols.
+Coordinated Regional Integrated Systems creating Healthcare Districts.
+Pilot program for on-site EMS care without transport.
+CRIS & Regional Integration
+
+######## rhtState-missouri | Missouri
+Hub-and-spoke 'ToRCH' networks and an APM incentivizing reduced ED visits.
+Transformation of Rural Community Health hub-and-spoke model.
+Alternative Payment Model incentivizing reduced ED utilization.
+Network Participation
+ToRCH Care & Value-Based Payment
+
+######## rhtState-montana | Montana
+A 'Rural Center of Excellence' to oversee system restructuring and eliminate negative margins.
+Body to oversee restructuring of care availability.
+Extending access to lower-cost care from pharmacists.
+Center of Excellence & Restructuring
+
+######## rhtState-nebraska | Nebraska
+'School Food Learning Labs' connecting farms to schools, and VR/AR training for providers.
+Connecting schools with farms for 'Food as Medicine'.
+Using virtual reality to train rural providers.
+School Food & VR Training
+
+######## rhtState-nevada | Nevada
+$30M Accelerator for value-based care and $80M in provider incentives.
+Investing in value-based care models and AI.
+$80M investment for living/serving in rural areas.
+Outcomes Accelerator & Incentives
+
+######## rhtState-new_hampshire | New Hampshire
+New Hampshire is tackling polypharmacy risks in seniors via community lockboxes and expanding prevention access points in schools and libraries.
+Community lockboxes and AI tools for polypharmacy risk reduction.
+Pharmacy Transformation
+Community access points in libraries and schools.
+Prevention-First Model
+Pharmacy Lockboxes & Prevention
+
+######## rhtState-new_jersey | New Jersey
+Transitioning mental health centers to the CCBHC model and installing public telehealth access points.
+Transitioning centers from federal to Medicaid funding.
+Developing telehealth access in public areas.
+Public Telehealth Points
+Public Telehealth Use
+CCBHC Transition & Telehealth Points
+
+######## rhtState-new_mexico | New Mexico
+'Healthy Horizons' specialty networks and housing/mentorship for workforce.
+Regionalized specialty and maternal care networks.
+Housing and mentorship for rural workforce.
+Specialty Networks & Workforce
+
+######## rhtState-new_york | New York
+Addressing maternal deserts with the 'Rural Roots' workforce model and scaling a statewide eConsult platform.
+Workforce model focusing on maternal care deserts and simulation training.
+Statewide implementation to address specialty access.
+OB Simulation Training
+Rural Roots & eConsult
+
+######## rhtState-north_carolina | North Carolina
+Establishing 6 'ROOTS' regional hubs and deploying mobile opioid treatment units.
+6 regional hubs for medical/social/behavioral integration.
+Mobile units for SUD treatment in rural counties.
+Mobile Opioid Treatment
+
+######## rhtState-north_dakota | North Dakota
+Automated pharmacy kiosks and drone delivery for supplies/labs in frontier areas.
+Self-service medication access points.
+Rapid delivery of supplies and lab samples.
+
+######## rhtState-ohio | Ohio
+Expanding School-Based Health Centers and 'OH SEE' mobile vision clinics.
+Clinics on K-12 and college campuses.
+Statewide expansion of mobile vision/hearing/dental clinics.
+School Clinics & Mobile Vision
+
+######## rhtState-oklahoma | Oklahoma
+'Moving Upstream' consumer tech and $50k wellness microgrants for local departments.
+Consumer-facing tech and remote monitoring.
+Grants up to $50k for local health departments.
+Upstream Prevention & Microgrants
+
+######## rhtState-oregon | Oregon
+Rural-Urban provider exchange program and secure pharmacy pickup lockers.
+Rural providers training in urban centers, and vice-versa.
+Secure pickup lockers to expand access.
+Exchange Participants
+Provider Exchange & Pharmacy Lockers
+
+######## rhtState-pennsylvania | Pennsylvania
+Establishing 8 Regional Hubs to provide technical expertise and competitive grants for Value-Based Care adoption.
+8 hubs providing technical expertise (IT, workflow) to local providers.
+Competitive grants building on the now-ended Pennsylvania Rural Health Model (2017–2024), which paid participating rural hospitals all-payer global budgets.
+Value-Based Care Grants
+Regional Hubs & Value-Based Care
+
+######## rhtState-rhode_island | Rhode Island
+Specific infrastructure for Block Island and Narragansett Tribe, combined with a Hospital-at-Home program.
+Infrastructure hardening for Block Island and Narragansett.
+Island/Tribal Support
+Enabling acute care in home settings.
+Island EMS & Hospital-at-Home
+
+######## rhtState-south_carolina | South Carolina
+Investing in rural health tech startups and a statewide digital literacy campaign.
+Digital health literacy improvement.
+Investment in rural health technology startups.
+Digital Literacy & Startups
+
+######## rhtState-south_dakota | South Dakota
+Regional Maternal/Infant Hubs and a capitated Medicaid Primary Care model.
+Clinical care plus social support network.
+Flexible, capitated payments for rural primary care.
+Medicaid Transformation
+Maternal Hubs & Medicaid APM
+
+######## rhtState-tennessee | Tennessee
+Hub-and-spoke model for dementia care and a tech-enabled non-emergency transport system.
+Hub-and-spoke model for dementia diagnosis/treatment.
+Tech-enabled non-emergency transportation coordination.
+
+######## rhtState-texas | Texas
+Texas proposes a massive technological overhaul to address the severe fragmentation of specialty care in its vast rural regions. The state is leveraging its RHT award to build a unified 'Lone Star' digital backbone while simultaneously investing in physical 'Wellness Centers' to address upstream social determinants of health.
+Connecting fragmented specialty telehealth services into a unified statewide AI-driven network. This allows rural primary care providers to instantly consult with urban specialists, reducing unnecessary transfers.
+Lone Star Advanced AI Network
+Converting underutilized rural spaces into 'Wellness Centers' that offer preventative screenings, nutrition classes, and physical fitness programs to address chronic disease roots.
+Community Wellness Centers
+Deploying a statewide cybersecurity shield for rural hospitals to protect patient data and ensure continuity of operations during cyberattacks.
+Unified Care Cyber Infrastructure
+Aggressive workforce expansion focused on retaining medical students in rural areas through residency stipends and housing support.
+Next Gen Doctor Pipeline
+Wellness Centers Opened
+Cybersecurity Compliance
+AI Specialty Networks & Wellness
+
+######## rhtState-utah | Utah
+'PATH' for preventive built environments and 'SUPPORT' for AI tools to reduce admin burden.
+Nutrition, physical activity, and built environment.
+Reducing admin burden via AI.
+
+######## rhtState-vermont | Vermont
+The Vermont RHT Program seeks to advance a cohesive suite of health care innovations and reforms that address the State's rural health care access, quality, and affordability challenges. The Program is designed to ensure long-term health care system sustainability in the face of rising costs and population health needs.
+Implementing a statewide transformation planning initiative to ensure non-duplication of services. The vision is that essential services remain local, while other services move to regional hubs or a single statewide location for complex care.
+Regionalization & Innovative Care Strategies
+Fostering collaboration across independent providers to produce operational efficiencies, facilitate patient choice, and promote patient-facing technologies that deliver care closer to home.
+Clinically Integrated Network (CIN)
+Enhancing the 'Blueprint for Health' initiative to improve team-based chronic disease care, deliver workforce training, and create a statewide quality improvement learning network.
+Strengthening Primary Care
+Strategic investments in workforce programs to strengthen the rural pipeline and address housing shortages, enabling providers to practice at the top of their license.
+Health Care Workforce Development
+Investments in new accountability tools and strategies to address rising health care costs and affordability barriers.
+Price Transparency & Insurance Competition
+Regional Hubs Designated
+Primary Care Transformation
+Workforce Housing Units
+Regionalization & Innovative Care Strategies
+
+######## rhtState-virginia | Virginia
+Investing in health tech startups via 'CareIQ' and scaling 'Food as Medicine' produce prescriptions.
+Investing in health tech startups and modernizing EHRs.
+Produce prescriptions for food-insecure patients.
+CareIQ & Food Prescriptions
+
+######## rhtState-washington | Washington
+Value-based models for hospital solvency and dedicated funding for Tribal health.
+Value-based models to support hospital financial health.
+Dedicated funding for Tribal workforce and coordination.
+Invest in Native Families
+Hospital Solvency & Native Families
+
+######## rhtState-west_virginia | West Virginia
+West Virginia confronts the nation's most acute opioid crisis alongside severe rural hospital financial distress. The RHT program focuses on a dual strategy: stabilizing critical access hospitals through shared service networks while building a comprehensive SUD recovery continuum.
+Funding peer recovery coaches, mobile MAT units, and community recovery centers in the hardest-hit counties.
+Recovery Community Networks
+Shared credentialing, group purchasing, and IT infrastructure support for financially distressed CAHs.
+Critical Access Hospital Collaborative
+Per-member-per-month prospective payments to stabilize rural primary care practices.
+Primary Care PMPM Model
+Co-investment with the state broadband office to connect unserved hollows and enable telehealth delivery.
+Broadband & Telehealth Infrastructure
+Primary Care PMPM Enrollees
+SUD Recovery Networks & Primary Care Stabilization
+
+######## rhtState-wisconsin | Wisconsin
+24-hour Farmer Wellness Helpline and equipment grants for rural dental clinics.
+Helpline, counseling vouchers, and support groups for farmers.
+Equipment upgrades for rural dental clinics.
+Farmer Wellness & Dental
+
+######## rhtState-wyoming | Wyoming
+Incentivizing CAHs to limit elective services and focus on essentials (ED/Ambulance), plus statewide telepsych.
+Incentivizing hospitals to focus on essentials.
+Crisis intervention services.
+Statewide Telepsychiatry
+Incentive Participation
+CAH Incentives & Telepsychiatry
