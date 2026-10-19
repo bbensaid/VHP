@@ -54,7 +54,7 @@ function GenomicsContent() {
             title: "Polygenic Risk Scores (PRS)",
             items: [
               "Methodology: GWAS-derived allele weights, LD pruning, validation cohorts",
-              "Coronary artery disease PRS: 10-fold risk stratification improvement",
+              "Coronary artery disease PRS: the top 8% of the population carries at least three-fold risk (Khera et al., Nature Genetics, 2018)",
               "Breast cancer PRS: refining absolute risk with BRCA carriers",
               "Type 2 diabetes PRS: early lifestyle intervention targeting",
               "Population screening applications vs. individual clinical utility",
@@ -80,7 +80,7 @@ function GenomicsContent() {
               "Variant interpretation: AI-assisted ACMG classification (Alamut, InterVar)",
               "Phenotype-to-gene matching: Face2Gene, Phenomizer for rare disease",
               "Radiogenomics: imaging features correlating with molecular subtypes",
-              "AI-driven sepsis prediction: Epic Sepsis Model, Johns Hopkins ACG",
+              "AI-driven sepsis prediction: Epic Sepsis Model, TREWS (Johns Hopkins / Bayesian Health)",
               "Deterioration early warning: NEWS2, MEWS, Epic Deterioration Index",
               "Real-time clinical decision support integration in EHR workflows",
             ],
@@ -91,8 +91,7 @@ function GenomicsContent() {
             items: [
               "CPT codes: 81161 (BRCA1/2), 81206-81208 (BCR-ABL), 81455 (solid tumor panels)",
               "LCD/NCD coverage: MolDX program, ADLT/MAAA code pathways",
-              "Prior authorization burden: 74% of genomic tests require PA",
-              "Preventive vs. diagnostic billing: USPSTF grade A/B implications",
+                            "Preventive vs. diagnostic billing: USPSTF grade A/B implications",
               "Program economics: lab build vs. buy, reference lab partnerships",
               "Informed consent, re-contact obligations, return of incidental findings",
             ],
@@ -134,7 +133,7 @@ function GenomicsContent() {
             </thead>
             <tbody className="divide-y divide-slate-100">
               {[
-                { gene: "CYP2D6", drugs: "Codeine, Oxycodone, Tamoxifen", risk: "PM: no effect; UM: toxicity", action: "Avoid codeine in PM/UM; alternative opioid", severity: "high" },
+                { gene: "CYP2D6", drugs: "Codeine, Tramadol, Tamoxifen", risk: "PM: reduced effect; UM: toxicity", action: "Avoid codeine and tramadol in PM/UM; use a non-CYP2D6 analgesic", severity: "high" },
                 { gene: "CYP2C19", drugs: "Clopidogrel, Escitalopram, PPIs", risk: "PM/IM: reduced clopidogrel activation → MACE risk", action: "Use prasugrel/ticagrelor in PM/IM for ACS", severity: "high" },
                 { gene: "TPMT / NUDT15", drugs: "Azathioprine, 6-MP, Thioguanine", risk: "Poor metabolizer: severe myelosuppression", action: "Reduce dose 10-fold or use alternative in PM", severity: "high" },
                 { gene: "SLCO1B1", drugs: "Simvastatin, Atorvastatin", risk: "c.521T>C: statin myopathy / rhabdomyolysis", action: "Use ≤20mg simvastatin or switch to pravastatin", severity: "moderate" },
@@ -161,96 +160,28 @@ function GenomicsContent() {
         <p className="text-xs text-slate-400 mt-4">Source: CPIC Guidelines (cpicpgx.org), FDA Table of Pharmacogenomic Biomarkers. PM = Poor Metabolizer, UM = Ultra-Rapid Metabolizer, IM = Intermediate Metabolizer.</p>
       </div>
 
-      {/* Genomic Testing ROI Model */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-        {/* Carrier Screening Economics */}
-        <div className="bg-white rounded-2xl border border-slate-200 p-6">
-          <h3 className="font-bold text-slate-900 mb-1">Carrier Screening Program Economics</h3>
-          <p className="text-sm text-slate-500 mb-5">Cost per case identified — population-level analysis</p>
-          <div className="space-y-4">
-            {[
-              { condition: "BRCA1/2 (expanded criteria)", costPerTest: 250, prevalence: 1, casesPerK: 10, costPerCase: 25000 },
-              { condition: "Cystic Fibrosis carrier", costPerTest: 180, prevalence: 4, casesPerK: 40, costPerCase: 4500 },
-              { condition: "Spinal Muscular Atrophy", costPerTest: 195, prevalence: 0.54, casesPerK: 5.4, costPerCase: 36111 },
-              { condition: "Fragile X syndrome", costPerTest: 210, prevalence: 0.4, casesPerK: 4, costPerCase: 52500 },
-            ].map((row) => (
-              <div key={row.condition} className="p-3 bg-slate-50 rounded-xl">
-                <div className="font-medium text-slate-800 text-sm mb-2">{row.condition}</div>
-                <div className="grid grid-cols-3 gap-2 text-center">
-                  <div>
-                    <div className="text-base font-black text-rose-600">${row.costPerTest}</div>
-                    <div className="text-[10px] text-slate-400">Cost/test</div>
-                  </div>
-                  <div>
-                    <div className="text-base font-black text-indigo-600">1 in {Math.round(1000 / row.casesPerK)}</div>
-                    <div className="text-[10px] text-slate-400">Prevalence</div>
-                  </div>
-                  <div>
-                    <div className="text-base font-black text-emerald-600">${(row.costPerCase / 1000).toFixed(0)}k</div>
-                    <div className="text-[10px] text-slate-400">Cost/case ID</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Predictive Medicine Tools */}
-        <div className="bg-white rounded-2xl border border-slate-200 p-6">
-          <h3 className="font-bold text-slate-900 mb-1">AI Predictive Medicine Toolbox</h3>
-          <p className="text-sm text-slate-500 mb-5">Validated clinical AI models in active clinical use</p>
-          <div className="space-y-3">
-            {[
-              {
-                tool: "Epic Sepsis Model (ESM)",
-                use: "ICU/floor early sepsis detection",
-                auc: "0.74",
-                sensitivity: "63%",
-                implementation: "Epic EHR — real-time alert",
-                badge: "bg-rose-100 text-rose-700",
-              },
-              {
-                tool: "CMS Hierarchical Condition Cat. (HCC)",
-                use: "Annual risk score for Medicare Advantage",
-                auc: "~0.87",
-                sensitivity: "Population-level",
-                implementation: "CMS payment methodology",
-                badge: "bg-sky-100 text-sky-700",
-              },
-              {
-                tool: "Epic Deterioration Index (EDI)",
-                use: "General ward rapid deterioration risk",
-                auc: "0.87",
-                sensitivity: "79%",
-                implementation: "Epic EHR — NEWS2 successor",
-                badge: "bg-emerald-100 text-emerald-700",
-              },
-              {
-                tool: "Optum Clinical Risk Grouper",
-                use: "Population stratification, care management",
-                auc: "0.82",
-                sensitivity: "Predictive cost",
-                implementation: "Payer/ACO analytics platform",
-                badge: "bg-indigo-100 text-indigo-700",
-              },
-            ].map((tool) => (
-              <div key={tool.tool} className="p-3 rounded-xl border border-slate-200">
-                <div className="flex items-start justify-between gap-2 mb-1">
-                  <div className="font-semibold text-slate-800 text-sm">{tool.tool}</div>
-                  <span className={`text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${tool.badge}`}>AUC {tool.auc}</span>
-                </div>
-                <div className="text-xs text-slate-500">{tool.use}</div>
-                <div className="text-[10px] text-slate-400 mt-1">{tool.implementation} · Sensitivity: {tool.sensitivity}</div>
-              </div>
-            ))}
-          </div>
-        </div>
+      {/* Predictive Medicine Tools */}
+      <div className="bg-white rounded-2xl border border-slate-200 p-8 mb-10">
+        <h3 className="font-bold text-slate-900 mb-1">Clinical Prediction Models — Validate Locally</h3>
+        <p className="text-sm text-slate-500 mb-5">Vendor-reported accuracy rarely survives external validation. The best-documented case:</p>
+        <ul className="space-y-2">
+          {[
+            "Epic Sepsis Model: in an external validation across 27,697 patients at Michigan Medicine, it had an AUC of 0.63 and missed 67% of sepsis cases while alerting on 18% of all hospitalized patients (Wong et al., JAMA Internal Medicine, 2021).",
+            "Deterioration indices (Epic Deterioration Index, NEWS2, MEWS) and sepsis tools such as TREWS should be tested on your own population before alerts go live.",
+            "CMS-HCC is a payment risk-adjustment model, not a clinical predictor — it explains spending variation, not who will deteriorate.",
+          ].map((item) => (
+            <li key={item} className="flex items-start gap-2 text-sm text-slate-600">
+              <span className="text-rose-500 mt-0.5 shrink-0">›</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
       </div>
 
       {/* ACMG Variant Classification Framework */}
       <div className="bg-indigo-700 text-white rounded-2xl p-8 mb-10">
         <h2 className="text-xl font-bold mb-2">ACMG/AMP Variant Classification Framework</h2>
-        <p className="text-indigo-100 text-sm mb-6">Five-tier system for germline variant interpretation — used by all clinical genomics labs</p>
+        <p className="text-indigo-100 text-sm mb-6">Five-tier system for germline variant interpretation — the standard for clinical genomics labs</p>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
           {[
             { tier: "1", label: "Pathogenic", abbr: "P", color: "bg-rose-600", desc: "Strong evidence of disease causation. Clinical action warranted.", action: "Report + Act" },
@@ -269,7 +200,7 @@ function GenomicsContent() {
             </div>
           ))}
         </div>
-        <p className="text-xs text-slate-500 mt-4">Richards et al., Genet Med 2015. VUS rate varies: ~40% in BRCA panels for unaffected individuals, ~10% for high-risk probands.</p>
+        <p className="text-xs text-slate-500 mt-4">Richards et al., Genet Med 2015. VUS rates rise with panel size and are higher in under-represented ancestries.</p>
       </div>
 
       {/* Section divider */}
