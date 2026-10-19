@@ -74,9 +74,9 @@ export default function OperationsPage() {
             </div>
             <div className="bg-white border border-amber-200 rounded-xl p-6 shadow-sm">
               <p className="text-[11px] font-black uppercase tracking-widest text-amber-700 mb-3">The Scale</p>
-              <p className="text-3xl font-black text-slate-900">$1 Trillion</p>
+              <p className="text-3xl font-black text-slate-900">~$950 Billion</p>
               <p className="ty-body text-slate-600 mt-2 leading-relaxed">
-                Estimated annual US healthcare administrative spend — 25% of total healthcare expenditure. The single largest operational cost driver and the most underanalyzed lever for transformation.
+                Estimated annual US healthcare administrative spending — about a quarter of national health expenditure (McKinsey &amp; Company, 2021). One of the largest operational cost drivers, and one of the least analyzed levers for transformation.
               </p>
             </div>
             <div className="bg-white border border-amber-200 rounded-xl p-6 shadow-sm">
@@ -156,7 +156,7 @@ export default function OperationsPage() {
                 The execution layer has been the missing analysis.
               </h2>
               <p className="text-base text-slate-600 leading-relaxed mb-5">
-                For decades, healthcare transformation analysis focused on policy frameworks, economic models, and clinical evidence — treating operations as an implementation detail. The evidence of 30 years of failed transformations proves otherwise.
+                For decades, healthcare transformation analysis focused on policy frameworks, economic models, and clinical evidence — treating operations as an implementation detail. Decades of stalled transformations suggest otherwise.
               </p>
               <p className="text-base text-slate-600 leading-relaxed">
                 Revenue cycles that cannot adapt to new payment models. Credentialing systems that cannot onboard the workforce a reform requires. Supply chains that break under the procurement demands of a new care model. These are not implementation problems — they are foundational analytical failures that occur when operations are not included from the beginning.
@@ -164,10 +164,10 @@ export default function OperationsPage() {
             </div>
             <div className="space-y-4">
               {[
-                { stat: "40%+", label: "of submitted claims are not paid electronically on first submission", color: "text-amber-700" },
-                { stat: "17M", label: "healthcare workers employed in administration — more than in direct patient care", color: "text-amber-700" },
-                { stat: "25%", label: "of total US healthcare spending attributed to administrative overhead", color: "text-amber-700" },
-                { stat: "18 months", label: "average delay when transformation plans outpace operational readiness", color: "text-amber-600" },
+                { stat: "34.2%", label: "of US health spending went to administration in 2017 — twice Canada's 17.0% (Himmelstein et al., Annals of Internal Medicine, 2020)", color: "text-amber-700" },
+                { stat: "$266B", label: "estimated annual US spending lost to administrative complexity (Shrank et al., JAMA, 2019)", color: "text-amber-700" },
+                { stat: "~50M", label: "prior authorization requests processed by Medicare Advantage plans in 2023, 6.4% of them denied (KFF)", color: "text-amber-700" },
+                { stat: "1.4 hrs", label: "a day that primary care physicians spent in the EHR after clinic hours (Arndt et al., Annals of Family Medicine, 2017)", color: "text-amber-600" },
               ].map((item) => (
                 <div key={item.label} className="bg-white border border-slate-200 rounded-xl p-5 flex gap-4 items-start">
                   <span className={`text-2xl font-black ${item.color} shrink-0`}>{item.stat}</span>
