@@ -348,7 +348,7 @@ function ToolsPanel({ onClose }: { onClose: () => void }) {
               { href: "/trending-topics", label: "Trending Topics", desc: "Real-time intelligence signals" },
               { href: "/the-wire", label: "The Wire", desc: "Live health industry news feed" },
               { href: "/investment-tracker", label: "Investment Tracker", desc: "M&A, PE & capital flow monitoring" },
-              { href: "/hti-dashboard", label: "HTI Dashboard", desc: "Health Transformation Index metrics" },
+              { href: "/hti-dashboard", label: "HTI Dashboard", desc: "Vermont five-pillar status and milestones" },
             ].map((item) => (
               <Link key={item.href} href={item.href} onClick={onClose}
                 className="flex flex-col px-3 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors group">

@@ -381,7 +381,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/hti-dashboard",
     pillars: ["policy", "technology", "economics", "clinical", "operations", "equity"],
     chapters: ["13", "15", "16"],
-    desc: "Interactive Health Transformation Index scoring engine — composite scores across the five pillars plus the Equity Imperative, sub-indices, and state rankings.",
+    desc: "Vermont five-pillar status: sourced pillar readiness, dated milestones per pillar, and pace to the January 2028 Strategic Plan deadline.",
   },
   {
     id: "medicaid-eligibility-simulator",

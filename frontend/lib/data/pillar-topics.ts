@@ -137,7 +137,7 @@ export const PILLAR_OVERVIEW: Partial<Record<FrameworkId, PillarOverviewContent>
     tools: [
       { href: "/research-lab/payment-models", emoji: "💰", title: "Payment Models Lab", desc: "APM Design, Global Budget Modeler, Shared Savings & CEA calculators" },
       { href: "/investment-tracker", emoji: "📈", title: "Investment Tracker", desc: "M&A, PE activity, capital flows & digital-health rounds in real time" },
-      { href: "/hti-dashboard", emoji: "📊", title: "HTI Dashboard", desc: "State-level Health Transformation Index across all five pillars plus the Equity Imperative" },
+      { href: "/hti-dashboard", emoji: "📊", title: "HTI Dashboard", desc: "Vermont five-pillar readiness, dated milestones, and Strategic Plan pace" },
       { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "All 24 tools including financial stress test & HTA Studio" },
     ],
   },
@@ -227,7 +227,7 @@ export const PILLAR_OVERVIEW: Partial<Record<FrameworkId, PillarOverviewContent>
     tools: [
       { href: "/research-lab/population-equity", emoji: "👥", title: "Population & Equity Lab", desc: "Population Health Modeler + Health Equity Studio" },
       { href: "/vermont-sdoh", emoji: "🍁", title: "Vermont SDOH", desc: "Vermont's 8 SDOH domains and 2-1-1 referral network" },
-      { href: "/hti-dashboard", emoji: "📊", title: "HTI Dashboard", desc: "Equity-stratified outcomes across all states" },
+      { href: "/hti-dashboard", emoji: "📊", title: "HTI Dashboard", desc: "Vermont five-pillar status, with Equity as the cross-cutting test" },
       { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "All 24 tools including HEROI and equity-stratified HEDIS" },
     ],
   },
