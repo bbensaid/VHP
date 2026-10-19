@@ -1,0 +1,53 @@
+{
+ "_createdAt": "2026-03-10T13:54:52Z",
+ "_id": "rhtState-california",
+ "_rev": "ZDU5b4qioPbFp0EQfvWjl4",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:52Z",
+ "awardAmount": "$234,000,000",
+ "description": "California's RHT plan focuses on formalizing regional networks to ensure rural hospital survival amidst climate risks and payer consolidation. The state is establishing a 'Hub and Spoke' model where financially stronger rural hospitals support smaller clinics and Tribal health programs.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Formalizing 'Hub and Spoke' networks where rural hospitals serve as hubs for FQHCs and Tribal health programs, sharing administrative burdens and clinical resources.",
+   "title": "Transformative Care Model"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Development and deployment of a live GIS tool to track workforce gaps in real-time and direct 'Train-the-Trainer' resources to the counties with the highest vacancy rates.",
+   "title": "Statewide Workforce Mapping"
+  },
+  {
+   "_key": "ini-2",
+   "description": "Modernizing connectivity and facility resilience against climate and wildfire risks, ensuring rural hospitals remain operational during natural disasters.",
+   "title": "Infrastructure Hardening"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Spokes Integrated",
+   "status": "Pending",
+   "target": "25 FQHCs"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Workforce Map Users",
+   "status": "In Progress",
+   "target": "58 Counties"
+  },
+  {
+   "_key": "metric-2",
+   "label": "Climate Retrofits",
+   "status": "Pending",
+   "target": "15 Facilities"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "california"
+ },
+ "stateName": "California",
+ "status": "At Risk",
+ "strategicFocus": "Hub-and-Spoke Resilience"
+}

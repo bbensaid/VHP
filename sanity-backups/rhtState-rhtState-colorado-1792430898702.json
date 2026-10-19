@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:58Z",
+ "_id": "rhtState-colorado",
+ "_rev": "ZDU5b4qioPbFp0EQfvWkfq",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:58Z",
+ "awardAmount": "$200,000,000",
+ "description": "Formalizing regional partnerships to diversify revenue and expanding mobile health tools.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Increasing adoption of mobile tools and dashboards.",
+   "title": "Mobile Health"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Legal structures to bind rural hospitals together.",
+   "title": "Regional Partnerships"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Partnerships Signed",
+   "status": "Pending",
+   "target": "Executed"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Mobile Usage",
+   "status": "In Progress",
+   "target": "Increased"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "colorado"
+ },
+ "stateName": "Colorado",
+ "status": "Active",
+ "strategicFocus": "Regional Partnerships & Mobile Health"
+}
