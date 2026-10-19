@@ -115,7 +115,7 @@ const CAPABILITIES = [
     href: "/california-calaim",
     emoji: "🌎",
     title: "California CalAIM",
-    desc: "Inside the $6.7B Medi-Cal transformation — whole-person care, housing, and equity initiatives.",
+    desc: "Inside the Medi-Cal transformation — whole-person care, housing, and equity initiatives.",
     accent: "border-rose-200 hover:border-rose-400 hover:bg-rose-50",
     tag: "State Program",
     tagColor: "bg-rose-100 text-rose-700",

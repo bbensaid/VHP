@@ -114,7 +114,7 @@ CATALOG = [
         "label": "California CalAIM",
         "url": "/california-calaim",
         "category": "States & Programs",
-        "description": "Deep-dive into California's $6.7B CalAIM Medi-Cal transformation — whole-person care, enhanced care management, and community supports.",
+        "description": "Deep-dive into California's CalAIM Medi-Cal transformation — whole-person care, enhanced care management, and community supports.",
         "keywords": ["calaim", "california medicaid", "medi-cal transformation", "whole person care", "california calaim"],
     },
     {

@@ -1533,7 +1533,7 @@ export const STATE_INITIATIVES: Record<string, StateInitiativesProfile> = {
     region: "West",
     heroColor: "bg-teal-100 text-teal-800",
     summary:
-      "California's $6.7B+ CalAIM Medi-Cal transformation is the largest single Medicaid reform in US history. CalAIM integrates whole-person care, funds housing and social needs for the first time under Medicaid, and launches community health worker and justice re-entry programs at unprecedented scale. California is also reshaping its behavioral health system through Proposition 1 and BHCIP.",
+      "California's CalAIM Medi-Cal transformation (1115 and 1915(b) waivers approved December 2021, through 2026) integrates whole-person care, funds housing-related and other social needs through Community Supports, and launches community health worker and justice re-entry programs. California is also reshaping its behavioral health system through Proposition 1 and BHCIP.",
     initiatives: [
       {
         id: "ca-calaim",

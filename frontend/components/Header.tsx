@@ -452,7 +452,7 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
           <p className={hdr}>Other State Models</p>
           <div className="space-y-0.5">
             {[
-              { href: "/california-calaim",   label: "California CalAIM",              desc: "$6.7B Medi-Cal transformation — SDOH, justice re-entry, Enhanced Care Mgmt" },
+              { href: "/california-calaim",   label: "California CalAIM",              desc: "Medi-Cal transformation — SDOH, justice re-entry, Enhanced Care Mgmt" },
               { href: "/oregon-cco",          label: "Oregon CCO 3.0",                  desc: "Coordinated Care Organizations — Medicaid global budget model" },
               { href: "/states",              label: "All States Explorer",             desc: "50-state health reform initiatives map" },
             ].map((item) => (
@@ -466,7 +466,7 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
             <p className={hdr}>Dashboards &amp; Simulators</p>
             <div className="space-y-0.5">
               {[
-                { href: "/dashboard",           label: "50-State RHTP Dashboard",        desc: "Rural hospital performance index — national view" },
+                { href: "/dashboard",           label: "50-State Dashboard",        desc: "Sourced indicators for all 50 states — coverage, access, hospitals, RHT awards" },
                 { href: "/dashboard/simulator", label: "CMS Rural Health Transformation", desc: "FY2026 Rural Health Transformation awards for all 50 states" },
                 { href: "/research-lab/vbc-clinical-quality?tab=risk", label: "VCCI Risk Stratification Lab", desc: "CDPS scoring, composite risk tiers & Vermont VCCI patient scenarios" },
                 { href: "/research-lab/vbc-clinical-quality?tab=quality", label: "VBC Quality Measures Lab",  desc: "HEDIS, 30-day readmissions & avoidable ED for Vermont populations" },

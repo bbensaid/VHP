@@ -89,7 +89,7 @@ export default function CaliforniaCalAIMPage() {
             CMS Approved Dec 29, 2021
           </span>
           <span className="bg-teal-700 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded">
-            $6.7B Federal Investment
+            CMS-approved Dec 2021
           </span>
         </div>
         <h1 className="ty-h1 font-black text-slate-900 mb-2 leading-tight">
@@ -125,7 +125,7 @@ export default function CaliforniaCalAIMPage() {
         <SectionHeader label="Scale" title="California at a Glance" />
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
           <StatBox value="14M+" label="Medi-Cal Enrollees" sub="~1 in 3 Californians" />
-          <StatBox value="$6.7B" label="New Federal Funding" sub="2022–2026 (initial)" />
+          <StatBox value="Dec 2021" label="CMS waiver approval" sub="1115 + 1915(b), through Dec 31, 2026" />
           <StatBox value="58" label="Counties Implementing" sub="All California counties" />
           <StatBox value="14" label="Community Supports" sub="Non-medical services authorized" />
         </div>
@@ -166,7 +166,7 @@ export default function CaliforniaCalAIMPage() {
             </p>
             <p className="ty-body text-slate-600 leading-relaxed">
               WPC's success across 25 counties gave DHCS and Governor Newsom the evidence base to
-              take the model statewide — and to negotiate the $6.7B federal investment with CMS
+              take the model statewide — and to negotiate the waivers with CMS
               that makes CalAIM possible at scale.
             </p>
           </div>
