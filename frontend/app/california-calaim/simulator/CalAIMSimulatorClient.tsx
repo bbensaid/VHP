@@ -47,10 +47,10 @@ interface CalAIMRecommendation {
 const PLANS: ManagedCarePlan[] = [
   { id: 'la-care', name: 'L.A. Care Health Plan', shortName: 'LA Care', region: 'Los Angeles', enrollees: 2400000, counties: 1, medicaidRevM: 8200, operatingMarginPct: 1.2, sdohBurdenScore: 8, ecmReadiness: 72, commSupportsReady: true },
   { id: 'hpsj', name: 'Health Plan of San Joaquin', shortName: 'HPSJ', region: 'San Joaquin', enrollees: 310000, counties: 2, medicaidRevM: 1100, operatingMarginPct: 2.1, sdohBurdenScore: 9, ecmReadiness: 55, commSupportsReady: false },
-  { id: 'partnership', name: 'Partnership HealthPlan', shortName: 'Partnership', region: 'Northern CA', enrollees: 620000, counties: 14, medicaidRevM: 2100, operatingMarginPct: 0.8, sdohBurdenScore: 7, ecmReadiness: 68, commSupportsReady: true },
+  { id: 'partnership', name: 'Partnership HealthPlan', shortName: 'Partnership', region: 'Northern CA', enrollees: 620000, counties: 24, medicaidRevM: 2100, operatingMarginPct: 0.8, sdohBurdenScore: 7, ecmReadiness: 68, commSupportsReady: true },
   { id: 'inland', name: 'Inland Empire Health Plan', shortName: 'IEHP', region: 'Inland Empire', enrollees: 1400000, counties: 2, medicaidRevM: 4800, operatingMarginPct: 1.5, sdohBurdenScore: 8, ecmReadiness: 61, commSupportsReady: true },
-  { id: 'molina', name: 'Molina Healthcare of CA', shortName: 'Molina', region: 'Statewide', enrollees: 1900000, counties: 22, medicaidRevM: 6500, operatingMarginPct: 3.2, sdohBurdenScore: 6, ecmReadiness: 78, commSupportsReady: true },
-  { id: 'central', name: 'Central California Alliance', shortName: 'Alliance', region: 'Central CA', enrollees: 380000, counties: 3, medicaidRevM: 1400, operatingMarginPct: 1.1, sdohBurdenScore: 9, ecmReadiness: 49, commSupportsReady: false },
+  { id: 'molina', name: 'Molina Healthcare of CA', shortName: 'Molina', region: 'Southern CA + Sacramento', enrollees: 1200000, counties: 5, medicaidRevM: 6500, operatingMarginPct: 3.2, sdohBurdenScore: 6, ecmReadiness: 78, commSupportsReady: true },
+  { id: 'central', name: 'Central California Alliance', shortName: 'Alliance', region: 'Central CA', enrollees: 380000, counties: 5, medicaidRevM: 1400, operatingMarginPct: 1.1, sdohBurdenScore: 9, ecmReadiness: 49, commSupportsReady: false },
 ]
 
 const RECOMMENDATIONS: CalAIMRecommendation[] = [
@@ -167,7 +167,7 @@ export default function CalAIMSimulatorClient() {
   const avgComplexity = selected.length ? Math.round(selected.reduce((s, r) => s + r.implementationComplexity, 0) / selected.length) : 0
   const maxTimeline = selected.length ? Math.max(...selected.map(r => r.timelineMonths)) : 0
 
-  const planImpactM = plan ? (netM * plan.medicaidRevM) / 98000 : 0 // scale by plan size vs CA total
+  const planImpactM = plan ? (netM * plan.enrollees) / 12969979 : 0 // share of Medi-Cal managed care enrollment (12,969,979, DHCS June 2026)
 
   return (
     <div className="min-h-screen bg-white">
@@ -184,10 +184,11 @@ export default function CalAIMSimulatorClient() {
           <p className="text-slate-600 max-w-2xl leading-relaxed text-sm mb-6">
             Model the multi-pillar impact of California&apos;s Medi-Cal transformation — whole-person care,
             enhanced care management, community supports, and population health management across 24 managed care
-            plans and 58 counties serving 14.2M beneficiaries.
+            plans and 58 counties serving about 13.7M members. Initiative costs, savings, timelines and plan figures
+            are illustrative model assumptions, not DHCS estimates.
           </p>
           <div className="flex flex-wrap gap-3 text-sm">
-            {[['24', 'Managed Care Plans'], ['14.2M', 'Beneficiaries'], ['58', 'Counties'], ['2022–26', 'Waiver term']].map(([v, l]) => (
+            {[['24', 'Managed Care Plans'], ['13.7M', 'Members'], ['58', 'Counties'], ['2022–26', 'Waiver term']].map(([v, l]) => (
               <div key={l} className="bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-center">
                 <div className="text-lg font-black text-slate-900">{v}</div>
                 <div className="text-[11px] text-slate-500">{l}</div>
@@ -311,6 +312,7 @@ export default function CalAIMSimulatorClient() {
                 <div>
                   <h2 className="text-xl font-black text-slate-900">{plan.name}</h2>
                   <p className="text-sm text-slate-500">{plan.region} · {plan.counties} {plan.counties === 1 ? 'county' : 'counties'}</p>
+                  <p className="text-[11px] text-amber-700 mt-1">Enrollment, revenue, margin, ECM readiness and SDOH scores are illustrative model inputs, not DHCS-reported figures.</p>
                 </div>
                 <div className={`px-3 py-1.5 rounded-lg text-xs font-bold ${plan.operatingMarginPct >= 2 ? 'bg-emerald-100 text-emerald-700' : plan.operatingMarginPct >= 0 ? 'bg-amber-100 text-amber-700' : 'bg-rose-100 text-rose-700'}`}>
                   {plan.operatingMarginPct >= 0 ? '+' : ''}{plan.operatingMarginPct}% margin
@@ -336,7 +338,7 @@ export default function CalAIMSimulatorClient() {
                 <p className="text-xs text-blue-800 leading-relaxed">
                   Based on your selected initiatives, {plan.shortName} is projected to realize a net financial impact
                   of <span className="font-black">{planImpactM >= 0 ? '+' : ''}${planImpactM.toFixed(0)}M annually</span> — scaled
-                  by this plan&apos;s share of statewide Medi-Cal revenue.
+                  by this plan&apos;s share of statewide Medi-Cal managed care enrollment.
                   ECM readiness of {plan.ecmReadiness}% suggests {plan.ecmReadiness >= 70 ? 'strong' : plan.ecmReadiness >= 50 ? 'moderate' : 'limited'} capacity
                   to launch enhanced care management within 12 months.
                   Community supports {plan.commSupportsReady ? 'infrastructure is in place' : 'infrastructure requires significant buildout'}.

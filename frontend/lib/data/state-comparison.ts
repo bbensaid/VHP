@@ -128,7 +128,7 @@ export const PILLAR_ROWS: ComparisonRow[] = [
     caption: "Is the payment regime statutorily required?",
     cells: {
       vermont:    { value: "Mandatory",  detail: "Act 68 (2025), all hospitals", verdict: "best" },
-      oregon:     { value: "Voluntary",  detail: "CCO 3.0, opt-in regional", verdict: "middle" },
+      oregon:     { value: "Voluntary",  detail: "CCO 2.0 contracts, regional", verdict: "middle" },
       california: { value: "Hybrid",     detail: "Sector-by-sector via CalAIM waiver", verdict: "middle" },
     },
   },
@@ -245,7 +245,7 @@ export const PROGRAM_ROWS: ComparisonRow[] = [
     label: "Flagship payment-reform program",
     cells: {
       vermont:    { value: "Act 68",          detail: "Mandatory hospital global budgets" },
-      oregon:     { value: "CCO 3.0",         detail: "Coordinated Care Organizations, 2025–2030" },
+      oregon:     { value: "CCO 2.0",         detail: "Coordinated Care Organizations, contracts 2020–2024, extended" },
       california: { value: "CalAIM",          detail: "Medi-Cal transformation (waivers 2022–2026)" },
     },
   },

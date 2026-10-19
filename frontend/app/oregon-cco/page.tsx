@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
 
 export async function generateMetadata(): Promise<Metadata> {
-  return brandedMetadata("Oregon CCO 3.0", "Oregon's third-generation Coordinated Care Organizations model — integrating physical, behavioral, and oral health under global budgets with equity accountability and community advisory boards.");
+  return brandedMetadata("Oregon CCOs", "Oregon's Coordinated Care Organizations — integrating physical, behavioral, and oral health under global budgets with equity accountability and community advisory councils.");
 }
 
 function StatBox({ value, label, sub }: { value: string; label: string; sub?: string }) {
@@ -40,14 +40,21 @@ function InvestCard({ icon, title, desc, items }: { icon: string; title: string;
 }
 
 const CCO_LIST = [
-  { name: 'CareOregon (Health Share of Oregon)', region: 'Portland Metro', members: 410000, counties: 9 },
-  { name: 'PacificSource Community Solutions', region: 'Central Oregon', members: 95000, counties: 7 },
-  { name: 'Umpqua Health Alliance', region: 'Douglas County', members: 32000, counties: 1 },
-  { name: 'AllCare Health', region: 'Southern Oregon', members: 48000, counties: 3 },
-  { name: 'Willamette Valley Community Health', region: 'Mid-Willamette', members: 115000, counties: 5 },
-  { name: 'Eastern Oregon CCO', region: 'Eastern Oregon', members: 44000, counties: 12 },
-  { name: 'FamilyCare Health', region: 'Washington County', members: 88000, counties: 1 },
-  { name: 'Cascade Health Alliance', region: 'Klamath County', members: 22000, counties: 1 },
+  { name: 'Advanced Health', area: 'Coos and Curry counties' },
+  { name: 'AllCare CCO', area: 'Curry, Josephine, and Jackson counties; part of Douglas' },
+  { name: 'Cascade Health Alliance', area: 'Part of Klamath County' },
+  { name: 'Columbia Pacific CCO', area: 'Clatsop, Columbia, and Tillamook counties' },
+  { name: 'Eastern Oregon CCO', area: 'Baker, Gilliam, Grant, Harney, Lake, Malheur, Morrow, Sherman, Umatilla, Union, Wallowa, and Wheeler counties' },
+  { name: 'Health Share of Oregon', area: 'Clackamas, Multnomah, and Washington counties' },
+  { name: 'InterCommunity Health Network CCO', area: 'Benton, Lincoln, and Linn counties' },
+  { name: 'Jackson Care Connect', area: 'Jackson County' },
+  { name: 'PacificSource Community Solutions – Central Oregon', area: 'Deschutes, Crook, and Jefferson counties; part of Klamath' },
+  { name: 'PacificSource Community Solutions – Columbia Gorge', area: 'Hood River and Wasco counties' },
+  { name: 'PacificSource Community Solutions – Marion/Polk', area: 'Marion and Polk counties' },
+  { name: 'Trillium Community Health Plan – Southwest', area: 'Lane County; western Linn and Douglas' },
+  { name: 'Trillium Community Health Plan – Tri-County', area: 'Clackamas, Multnomah, and Washington counties' },
+  { name: 'Umpqua Health Alliance', area: 'Most of Douglas County' },
+  { name: 'Yamhill Community Care', area: 'Yamhill County; parts of Polk and Washington' },
 ]
 
 export default function OregonCCOPage() {
@@ -58,13 +65,14 @@ export default function OregonCCOPage() {
       <div className="mb-10">
         <div className="flex flex-wrap items-center gap-2 mb-3">
           <span className="text-xs font-black uppercase tracking-widest text-emerald-600">Oregon · Medicaid Transformation</span>
-          <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-700 border border-emerald-200">CCO 3.0 · 2025–2030</span>
+          <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-700 border border-emerald-200">CCO 3.0 · next contract round, in planning</span>
         </div>
-        <h1 className="text-3xl font-black text-slate-900 mb-4">Oregon CCO 3.0</h1>
+        <h1 className="text-3xl font-black text-slate-900 mb-4">Oregon CCOs</h1>
         <p className="text-slate-600 max-w-3xl leading-relaxed">
-          Oregon&apos;s third-generation Coordinated Care Organizations model integrates physical, behavioral, and oral health
-          under global budgets with strong equity accountability metrics and community advisory boards. CCO 3.0 deepens
-          the state&apos;s commitment to value-based payment and whole-person care for 1.4M Oregon Health Plan members.
+          Oregon&apos;s Coordinated Care Organizations integrate physical, behavioral, and oral health under global budgets,
+          with community advisory councils and health equity accountability. Today&apos;s CCOs operate under CCO 2.0 contracts
+          (signed for 2020–2024 and since extended); &ldquo;CCO 3.0&rdquo; is OHA&apos;s name for the next contract round, which it is
+          still planning. CCOs serve most of Oregon&apos;s 1.4M Oregon Health Plan members.
         </p>
         <div className="flex flex-wrap gap-3 mt-6">
           <Link href="/oregon-cco/simulator"
@@ -80,55 +88,52 @@ export default function OregonCCOPage() {
 
       {/* Stats */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-        <StatBox value="16" label="CCOs" sub="coordinated care orgs" />
+        <StatBox value="15" label="CCOs" sub="since Feb 2026" />
         <StatBox value="1.4M" label="OHP Members" sub="Oregon Health Plan" />
-        <StatBox value="$3.2B" label="Global Budget" sub="annual spend" />
+        <StatBox value="$325M" label="2024 Quality Pool" sub="4.25% of CCO capitation" />
         <StatBox value="36" label="Counties" sub="covered statewide" />
       </div>
 
       {/* What CCO 3.0 Does */}
       <section className="mb-12">
-        <h2 className="text-xl font-black text-slate-900 mb-2">What CCO 3.0 Changes</h2>
+        <h2 className="text-xl font-black text-slate-900 mb-2">What CCO 2.0 Requires</h2>
         <p className="text-slate-500 mb-6 text-sm max-w-2xl">
-          Building on CCO 2.0&apos;s global budget framework, the third iteration strengthens equity accountability,
-          deepens behavioral health integration, and expands community health worker infrastructure.
+          CCO 2.0 contracts (2020 onward) were built on four state priorities: behavioral health, value-based payment,
+          social determinants and health equity, and sustainable cost growth. The next round (CCO 3.0) is still in OHA planning.
         </p>
         <div className="grid md:grid-cols-2 gap-4">
-          <InvestCard icon="📊" title="Enhanced Equity Metrics"
-            desc="25 new equity-weighted performance measures tracking disparities by race, language, and geography."
-            items={['Race/ethnicity stratified HEDIS reporting', 'Language access compliance audits', 'Geographic access standards for rural CCOs', 'Equity withhold: 5% of CCO incentive pool tied to disparity reduction']} />
+          <InvestCard icon="📊" title="Social Determinants & Health Equity"
+            desc="CCOs must increase their investment in strategies that address social determinants of health and health equity."
+            items={['Increased SDOH and health equity investment', 'Stronger engagement with tribes and community advisory councils', 'Expanded use of traditional health workers']} />
           <InvestCard icon="🧠" title="Behavioral Health Integration"
-            desc="Full physical-behavioral-oral health integration under a single capitated payment by 2027."
-            items={['Co-located BH in primary care: 80% CCO target', 'Same-day BH access standards', 'Integrated care coordination for dual-eligible members', 'Substance use disorder parity enforcement']} />
-          <InvestCard icon="🤝" title="Community Health Workers"
-            desc="Statewide CHW infrastructure investment with CCO-funded workforce pipelines."
-            items={['State-funded CHW certification program', 'CCO CHW ratio: 1 per 1,500 high-risk members', 'Housing navigation and food security referrals', 'SDOH screening at 80% of primary care encounters']} />
+            desc="Under CCO 2.0, CCOs are fully accountable for the behavioral health benefit."
+            items={['Person-centered mental health and substance use disorder system', 'Remove barriers between behavioral, physical and oral health', 'Expand programs integrating primary care into behavioral health settings']} />
+          <InvestCard icon="🤝" title="Traditional Health Workers"
+            desc="CCO 2.0 calls for increased use of traditional health workers, a category that includes community health workers."
+            items={['Traditional health workers include community health workers', 'Supports the SDOH and health equity priority']} />
           <InvestCard icon="💰" title="Global Budget Methodology"
-            desc="PMPM growth rate tied to state economic growth plus equity adjustment factors."
-            items={['Global budget growth cap: GDP + 0.5%', 'Shared savings: up to 50% retained by CCO', 'Downside risk introduced at CCO scale ≥100K members', 'Quality withhold: 3.5% of capitation at risk']} />
+            desc="CCO global budgets may grow no more than 3.4% per member per year, in line with the state cost growth target."
+            items={['Growth cap: 3.4% per member per year', 'Goal: 70% of CCO provider payments value-based by the end of the contract period', 'Quality Pool bonus on top of capitation: 4.25% of total PMPM ($325M in 2024)']} />
         </div>
       </section>
 
       {/* CCO Directory */}
       <section className="mb-12">
         <h2 className="text-xl font-black text-slate-900 mb-4">Oregon CCO Directory</h2>
+        <p className="text-xs text-slate-500 mb-3">Service areas per Oregon Health Authority, 2026. PacificSource left Lane County on Feb 1, 2026.</p>
         <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden">
           <table className="w-full text-sm">
             <thead className="bg-slate-50 border-b border-slate-200">
               <tr>
                 <th className="text-left px-4 py-3 font-black text-slate-600 text-xs uppercase tracking-wide">CCO</th>
-                <th className="text-left px-4 py-3 font-black text-slate-600 text-xs uppercase tracking-wide">Region</th>
-                <th className="text-right px-4 py-3 font-black text-slate-600 text-xs uppercase tracking-wide">Members</th>
-                <th className="text-right px-4 py-3 font-black text-slate-600 text-xs uppercase tracking-wide">Counties</th>
+                <th className="text-left px-4 py-3 font-black text-slate-600 text-xs uppercase tracking-wide">Service Area</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
               {CCO_LIST.map(cco => (
                 <tr key={cco.name} className="hover:bg-slate-50 transition-colors">
                   <td className="px-4 py-3 font-bold text-slate-900">{cco.name}</td>
-                  <td className="px-4 py-3 text-slate-500">{cco.region}</td>
-                  <td className="px-4 py-3 text-right text-slate-700 font-bold">{cco.members.toLocaleString()}</td>
-                  <td className="px-4 py-3 text-right text-slate-500">{cco.counties}</td>
+                  <td className="px-4 py-3 text-slate-500">{cco.area}</td>
                 </tr>
               ))}
             </tbody>
@@ -143,7 +148,7 @@ export default function OregonCCOPage() {
           <h2 className="text-xl font-black text-slate-900 mb-3">H.R. 1 Risk for Oregon CCOs</h2>
           <p className="text-slate-600 text-sm leading-relaxed mb-4">
             Oregon&apos;s CCO model is highly exposed to H.R. 1 Medicaid cuts — OHP members represent 34% of the state&apos;s
-            population. CBO projects Oregon faces $2.1B in Medicaid revenue reduction by 2034. CCO global budgets
+            population. KFF&apos;s allocation of CBO&apos;s estimate places Oregon among the four hardest-hit states, with federal Medicaid cuts of 19% or more through 2034. CCO global budgets
             will need to absorb this reduction while maintaining equity performance standards.
           </p>
           <div className="flex flex-wrap gap-3">

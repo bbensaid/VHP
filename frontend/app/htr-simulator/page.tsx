@@ -167,7 +167,7 @@ const USE_CASES = [
   },
   {
     id: "oregon-cco",
-    name: "Oregon CCO 3.0",
+    name: "Oregon CCOs",
     subtitle: "Coordinated Care Organizations",
     state: "Oregon",
     stateCode: "OR",
