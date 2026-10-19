@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:28Z",
+ "_id": "rhtState-georgia",
+ "_rev": "GIKqHwCOFsUvADyibzkc2U",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:28Z",
+ "awardAmount": "$219,000,000",
+ "description": "Preparing rural hospitals for the CMS AHEAD global budget model and deploying Obstetric Carts to emergency departments.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Deploying carts with hemorrhage/neonatal supplies to rural EDs.",
+   "title": "Obstetric Carts"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Preparing hospitals to adopt the CMS AHEAD global budget model.",
+   "title": "AHEAD Model Readiness"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "AHEAD Participation",
+   "status": "Pending",
+   "target": "10 Hospitals"
+  },
+  {
+   "_key": "metric-1",
+   "label": "OB Cart Deployment",
+   "status": "In Progress",
+   "target": "40 EDs"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "georgia"
+ },
+ "stateName": "Georgia",
+ "status": "Active",
+ "strategicFocus": "Obstetric Access & AHEAD Model"
+}

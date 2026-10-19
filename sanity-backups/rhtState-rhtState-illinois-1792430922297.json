@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:43Z",
+ "_id": "rhtState-illinois",
+ "_rev": "GIKqHwCOFsUvADyibzkhAC",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:43Z",
+ "awardAmount": "$193,000,000",
+ "description": "'Treat-Not-Transport' payment models for EMS and community care infrastructure.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Expanding payment models to allow EMS to treat patients on-site.",
+   "title": "Treat-Not-Transport"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Funding for staffing/workflows to integrate primary/behavioral health.",
+   "title": "Community Infrastructure"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Treat-on-Site",
+   "status": "Pending",
+   "target": "10% of Calls"
+  },
+  {
+   "_key": "metric-1",
+   "label": "BH Integration",
+   "status": "In Progress",
+   "target": "Expanded"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "illinois"
+ },
+ "stateName": "Illinois",
+ "status": "Active",
+ "strategicFocus": "EMS Transformation & Infrastructure"
+}

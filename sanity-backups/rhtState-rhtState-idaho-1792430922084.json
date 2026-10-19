@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:55Z",
+ "_id": "rhtState-idaho",
+ "_rev": "G7Tfo59YVwcDW2O5CBrjf3",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:55Z",
+ "awardAmount": "$186,000,000",
+ "description": "Remote tele-pharmacy dispensing and facility renovations for code compliance.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Dispensing units to expand medication access.",
+   "title": "Remote Tele-Pharmacy"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Renovations to bring aging facilities into safety code compliance.",
+   "title": "Facility Compliance"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Scripts Dispensed",
+   "status": "Pending",
+   "target": "Volume"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Code Citations",
+   "status": "In Progress",
+   "target": "Resolved"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "idaho"
+ },
+ "stateName": "Idaho",
+ "status": "Active",
+ "strategicFocus": "Tele-Pharmacy & Compliance"
+}

@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:42Z",
+ "_id": "rhtState-indiana",
+ "_rev": "ZDU5b4qioPbFp0EQfvWe54",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:42Z",
+ "awardAmount": "$207,000,000",
+ "description": "Centralized Medical Operations Coordination Center and meds at outpatient prices post-discharge.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Centralized transfer coordination and diversion management.",
+   "title": "Coordination Center"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Providing meds to patients before they leave hospital at outpatient prices.",
+   "title": "Post-Discharge Meds"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Transfer Time",
+   "status": "Pending",
+   "target": "-30 Minutes"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Med Adherence",
+   "status": "In Progress",
+   "target": "+15%"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "indiana"
+ },
+ "stateName": "Indiana",
+ "status": "Active",
+ "strategicFocus": "Coordination Center & ED Readiness"
+}
