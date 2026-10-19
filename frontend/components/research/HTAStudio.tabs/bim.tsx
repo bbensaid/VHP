@@ -366,12 +366,13 @@ export function BudgetImpactTab() {
           <AlertTriangle className="text-amber-500 mt-0.5 shrink-0" size={18} />
           <div>
             <p className="text-sm font-semibold text-amber-800">
-              ICER Affordability Threshold Exceeded
+              Budget-Impact Flag Exceeded
             </p>
             <p className="text-xs text-amber-700 mt-0.5">
-              The 5-year net budget impact ({fmtUSD(base.total5yr)}) exceeds the
-              ICER affordability threshold of $500M. ICER guidance recommends
-              policy mechanisms to manage population-level spend.
+              The 5-year net budget impact ({fmtUSD(base.total5yr)}) exceeds this
+              tool&apos;s illustrative $500M flag. ICER sets its own potential
+              budget-impact threshold each year, as annual spending — compare
+              against the current value before drawing conclusions.
             </p>
           </div>
         </div>
