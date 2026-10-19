@@ -11938,7 +11938,7 @@ SUSTAIN = [{'id': 'lesson_5p_portfolio_management',
                                'left': 'Original formulation: clear barriers within the '
                                        "coalition's control.",
                                'right': 'Vermont: Acts 167 and 68 are institutional obstacle '
-                                        "removal -- Act 68 eliminated RBP's voluntary status; the "
+                                        "removal -- Act 68 turned RBP from a study into a statutory requirement; the "
                                         'AHS restructuring removes the program-silo obstacle '
                                         'directly.'},
                               {'label': 'Create short-term wins (Step 6)',
@@ -13015,7 +13015,7 @@ BOOK_REFS = {
     "knowledge-infrastructure-technical-assistance": (
         "Chapter 12",
         "chapter-12",
-        'Chapter 12 argues that knowledge without implementation infrastructure produces nothing — the RHRC technical-assistance model is its case.',
+        'Chapter 12 argues that knowledge without implementation infrastructure produces nothing; Chapter 11 documents the RHRC technical-assistance model this lesson uses as its case.',
     ),
     "capstone-apply-the-framework": (
         "Chapters 13 and 16",

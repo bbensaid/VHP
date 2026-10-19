@@ -1,0 +1,55 @@
+{
+"tag": "ch12-l23",
+"note": "Ch12 lesson aligned to corrected chapter: unsourced OW claims removed; HTR risk register; OW deficit range; Act 68 RBP history (Act 113 study); RBP/GB dates; AI checklist 8 domains; RHRC documented in Ch11",
+"pairs": [
+[
+"Treating it as overhead gets the accounting backwards. Vermont's Oliver Wyman analysis found that hospitals can absorb financial analysis without changing behavior, engage in planning processes that produce documents rather than action, and participate in change-management programs without addressing their underlying financial unsustainability.",
+"Treating it as overhead gets the accounting backwards. Transformation efforts commonly fail in three ways: hospitals absorb financial analysis without changing behavior, engage in planning processes that produce documents rather than action, and participate in change-management programs without addressing their underlying financial unsustainability."
+],
+[
+"three functions most consulting engagements deliver separately, and that Oliver Wyman's own experience had shown fail when kept apart.",
+"three functions most consulting engagements deliver separately."
+],
+[
+"This is the diagnostic Oliver Wyman found missing -- without it, hospitals negotiate transformation from opinion rather than evidence.",
+"Without it, hospitals negotiate transformation from opinion rather than evidence."
+],
+[
+"Vermont's own portfolio risk register flags 'RHRC engagement not replaced by an adequate successor' as a distinct, tracked risk for exactly this reason.",
+"the book's Chapter 15 portfolio risk register flags 'RHRC engagement not replaced by an adequate successor' as a distinct, tracked risk for exactly this reason."
+],
+[
+"Vermont's own coalition -- AHS leadership, GMCB, hospital CEOs, and the legislature's Health Reform Oversight Committee -- has been assembled without systematically integrating hospital medical-staff governance, which the framework identifies as a live gap, not a footnote.",
+"Vermont's coalition -- AHS leadership, GMCB, hospital CEOs, and the legislature's Health Reform Oversight Committee -- needs hospital medical-staff governance built in systematically; the framework treats that as a live gap, not a footnote."
+],
+[
+"9 of 14 hospitals in losses, a $2.4B five-year deficit",
+"9 of 14 hospitals in losses, a $0.7B-$2.4B five-year deficit"
+],
+[
+"Act 68 eliminated RBP's voluntary status;",
+"Act 68 turned RBP from a study into a statutory requirement;"
+],
+[
+"premium-reduction data from RBP will not be available until FY2027-2028.",
+"premium-reduction data from RBP will not be available until after maximum rates take effect in FY2028."
+],
+[
+"Vermont's statutory deadlines -- RBP by FY2027, global budgets by FY2028 -- set the required pace;",
+"Vermont's statutory deadlines -- an RBP rule in 2027 with maximum rates from FY2028, and the first global budgets from FY2028 -- set the required pace;"
+],
+[
+"Governance-evaluation length of the AI Clinical Governance Checklist, across six deployment lifecycle stages",
+"Governance-evaluation length of the AI Clinical Governance Checklist, across eight governance domains"
+],
+[
+"RHRC is Vermont's instance of a much older and more general idea: that a learning collaborative or coordinated technical-assistance network can transfer implementation capability faster than any single organization could build it alone.",
+"RHRC is Vermont's instance of a much older and more general idea: that a coordinated technical-assistance network can transfer implementation capability faster than any single organization could build it alone."
+],
+[
+"Chapter 12 argues that knowledge without implementation infrastructure produces nothing — the RHRC technical-assistance model is its case.",
+"Chapter 12 argues that knowledge without implementation infrastructure produces nothing; Chapter 11 documents the RHRC technical-assistance model this lesson uses as its case."
+]
+],
+"residue": "Oliver Wyman (found|'s own experience)|eliminated RBP|six deployment lifecycle"
+}
