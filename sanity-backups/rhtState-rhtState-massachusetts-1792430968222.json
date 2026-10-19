@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:17Z",
+ "_id": "rhtState-massachusetts",
+ "_rev": "GIKqHwCOFsUvADyibzkZtZ",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:17Z",
+ "awardAmount": "$162,000,000",
+ "description": "Focusing on high-tech Mobile Health Units with a projected $36:1 ROI and a 'Beds Not Buildings' platform for behavioral health tracking.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "High-tech units with diagnostic/AI capabilities.",
+   "title": "Mobile Health Units"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Live cross-agency platform to track behavioral health bed availability.",
+   "title": "Beds Not Buildings"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Mobile Unit ROI",
+   "status": "Pending",
+   "target": "$36:1"
+  },
+  {
+   "_key": "metric-1",
+   "label": "BH Boarding Time",
+   "status": "In Progress",
+   "target": "-20%"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "massachusetts"
+ },
+ "stateName": "Massachusetts",
+ "status": "Active",
+ "strategicFocus": "Mobile ROI & Bed Tracking"
+}
