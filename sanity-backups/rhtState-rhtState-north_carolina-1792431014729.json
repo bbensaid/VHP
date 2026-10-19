@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:29Z",
+ "_id": "rhtState-north_carolina",
+ "_rev": "ZDU5b4qioPbFp0EQfvWYP4",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:29Z",
+ "awardAmount": "$213,000,000",
+ "description": "Establishing 6 'ROOTS' regional hubs and deploying mobile opioid treatment units.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "6 regional hubs for medical/social/behavioral integration.",
+   "title": "ROOTS Hubs"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Mobile units for SUD treatment in rural counties.",
+   "title": "Mobile Opioid Treatment"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "ROOTS Hubs",
+   "status": "Pending",
+   "target": "6 Operational"
+  },
+  {
+   "_key": "metric-1",
+   "label": "SUD Treatment Access",
+   "status": "In Progress",
+   "target": "+25%"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "north_carolina"
+ },
+ "stateName": "North Carolina",
+ "status": "Active",
+ "strategicFocus": "ROOTS Hubs & SUD"
+}

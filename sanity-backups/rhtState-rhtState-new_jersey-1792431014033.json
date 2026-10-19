@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:22Z",
+ "_id": "rhtState-new_jersey",
+ "_rev": "ZDU5b4qioPbFp0EQfvWXX8",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:22Z",
+ "awardAmount": "$147,000,000",
+ "description": "Transitioning mental health centers to the CCBHC model and installing public telehealth access points.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Transitioning centers from federal to Medicaid funding.",
+   "title": "CCBHC Support"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Developing telehealth access in public areas.",
+   "title": "Public Telehealth Points"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "CCBHC Transition",
+   "status": "Pending",
+   "target": "100%"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Public Telehealth Use",
+   "status": "In Progress",
+   "target": "1,000 Sessions"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "new_jersey"
+ },
+ "stateName": "New Jersey",
+ "status": "Active",
+ "strategicFocus": "CCBHC Transition & Telehealth Points"
+}

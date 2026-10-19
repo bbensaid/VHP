@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:55:02Z",
+ "_id": "rhtState-new_mexico",
+ "_rev": "G7Tfo59YVwcDW2O5CBrkAf",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:55:02Z",
+ "awardAmount": "$211,000,000",
+ "description": "'Healthy Horizons' specialty networks and housing/mentorship for workforce.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Regionalized specialty and maternal care networks.",
+   "title": "Healthy Horizons"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Housing and mentorship for rural workforce.",
+   "title": "Rooted in New Mexico"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Specialty Wait Times",
+   "status": "Pending",
+   "target": "Reduced"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Workforce Retention",
+   "status": "In Progress",
+   "target": "Improved"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "new_mexico"
+ },
+ "stateName": "New Mexico",
+ "status": "Active",
+ "strategicFocus": "Specialty Networks & Workforce"
+}
