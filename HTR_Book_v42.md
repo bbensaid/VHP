@@ -6859,7 +6859,7 @@ Category 1 --- Interoperability & Risk
 
 D.1 FHIR Interoperability Lab --- five-tab environment: FHIR R4 Resource Builder (10 resource types); Terminology Mapper (ICD-10-CM, SNOMED CT, LOINC, RxNorm, CPT, NDC, HCPCS); CDS Hooks Simulator (5 scenarios); Prior Authorization Workflow Simulator; ONC Compliance Checker.
 
-D.2 Risk Stratification Engine --- CMS HCC v28 risk adjustment across 20 hierarchical condition categories. Sub-tools: HCC v28 RAF Calculator; Population Risk Segmentation; Custom Risk Model Builder (3 templates); Comorbidity Matrix (Elixhauser 30-condition + Charlson CCI).
+D.2 Risk Stratification Engine --- simplified CMS-HCC risk adjustment across 20 hierarchical condition categories (condition codes and coefficients follow the V24 model). Sub-tools: HCC RAF Calculator; Population Risk Segmentation; Custom Risk Model Builder (3 templates); Comorbidity Matrix (Elixhauser 30-condition + Charlson CCI).
 
 Also on the Interoperability & Risk bench: the EMR/EHR Lab (vendor comparison, five-year adoption-cost model, USCDI data-quality audit, and documentation-workflow simulation); the Statewide EHR Deployment Modeler (ten-year cost, data timeliness, disruption, and vendor lock-in of one statewide EHR versus FHIR exchange across existing platforms); and the FHIR Implementation Guide (the three priority FHIR use cases step by step, with CMS-0057-F and CHPL checks). On the VBC & Clinical Quality bench, Clinical Data Exchange parses HL7 v2 messages, renders FHIR bundles, and browses USCDI data classes side by side.
 
@@ -6875,11 +6875,11 @@ D.6 Health Equity Studio (HEROI) --- HEROI composite across five dimensions: Acc
 
 Category 3 --- Policy & Quality Sciences
 
-D.7 Policy Simulator --- seven 1115 waiver types with six pre-loaded state scenarios; All-Payer Global Budget Designer; Medicaid Expansion Impact Calculator (KFF/CBO methodology); Price Transparency and Site-Neutral Analyzer (20 services).
+D.7 Policy Simulator --- seven 1115 waiver types with five pre-loaded state scenarios; All-Payer Global Budget Designer; Medicaid Expansion Impact Calculator (KFF coverage-gap data); Price Transparency and Site-Neutral Analyzer (20 services).
 
 D.8 Clinical Quality Optimizer --- 15 HEDIS measures with NCQA 2024 benchmarks; CMS Star Ratings Predictor (5 domains, 32 sub-measures); QPP/MIPS Optimizer (2024 weighted scoring) with payment-adjustment estimate.
 
-D.9 Hospital Financial Stress Test --- models hospital position under RBP, global-budget, and Medicaid-cut scenarios; 10-year projections under three scenarios with sensitivity analysis. Vermont: GMCB FY2026 data and Oliver Wyman scenarios pre-loaded.
+D.9 Hospital Financial Stress Test --- models hospital position under RBP, global-budget, and Medicaid-cut scenarios; projections of up to 10 years with sensitivity analysis. Vermont: GMCB FY2025 audited actuals for all 14 hospitals and Oliver Wyman's growth scenarios pre-loaded.
 
 D.10 Actuarial Lab --- Actuarial Value Calculator (ACA metallic tiers); Premium Rating Workbench; Adverse Selection Death Spiral Model (5-year dynamic simulation); Medicare Drug Pricing IRA Calculator.
 
@@ -6889,11 +6889,11 @@ D.11 HTA Studio --- Budget Impact Model Builder (5-year, 3 uptake scenarios); Mu
 
 D.12 AI Clinical Governance Lab --- Predictive Model Performance Comparator (AUC-ROC, sensitivity, specificity, PPV, NPV, F1, Brier for up to 3 models); Algorithmic Bias Detector (demographic parity, equal opportunity, predictive parity, calibration; flags outside 0.80--1.25); AI Clinical Governance Framework Builder (62-item checklist, 8 governance domains); AI ROI Calculator.
 
-D.13 Digital Health Lab --- Remote Patient Monitoring ROI Calculator (CY2026 Medicare rates for CPT 99453, 99454, 99445, 99457, 99470, and 99458; 6 condition modules); Telehealth Utilization Modeler; Patient Engagement Platform Comparison (PAM model, 5 types); EHR Optimization and Interoperability ROI.
+D.13 Digital Health Lab --- Remote Patient Monitoring ROI Calculator (CY2026 Medicare rates for CPT 99453, 99454, 99445, 99457, 99470, and 99458; 6 condition modules); Telehealth Utilization Modeler; Patient Engagement Platform Comparison (PAM model, 8 platform types); EHR Optimization and Interoperability ROI.
 
 Category 5 --- Knowledge & Workspace
 
-D.14 Evidence Library --- CEA/CUA Study Database (25 landmark studies); CMMI Innovation Center Model Tracker (20 models incl. Vermont All-Payer, Maryland TCOC, Making Care Primary, ACO REACH, AHEAD); Policy Brief Library (15 briefs).
+D.14 Evidence Library --- CEA/CUA Study Database (25 landmark studies); CMMI Innovation Center Model Tracker (21 models incl. Vermont All-Payer, Maryland TCOC, Making Care Primary, ACO REACH, AHEAD); Policy Brief Library (15 briefs).
 
 D.15 Workforce Modeler --- Physician Supply/Demand Projector (12 specialties, 10-year, AAMC methodology); Nurse Staffing Ratio Simulator (7 unit types); Total Cost of Turnover Calculator (5 roles, 7 retention ROI models); Rural Workforce Distribution and Incentive Modeler (7 programs).
 

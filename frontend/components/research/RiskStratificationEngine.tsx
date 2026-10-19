@@ -65,7 +65,7 @@ const HCC_CONDITIONS: HCCCondition[] = [
   { id: "hcc166", label: "Severe Head Injury", raf: 0.412, category: "Neurological" },
 ];
 
-// Demographic base RAF lookup (simplified CMS v28 approximation)
+// Demographic base RAF lookup (simplified approximation; condition codes/coefficients follow CMS-HCC V24)
 function getDemographicRAF(age: number, gender: "M" | "F"): number {
   if (age < 45) return gender === "M" ? 0.18 : 0.17;
   if (age < 55) return gender === "M" ? 0.21 : 0.20;
@@ -139,7 +139,7 @@ function HCCCalculator() {
       <div className="bg-rose-50 border border-rose-200 rounded-lg p-4 flex gap-3">
         <Info className="text-rose-500 mt-0.5 shrink-0" size={18} />
         <p className="text-sm text-rose-800">
-          <strong>HCC v28 Risk Adjustment Factor (RAF)</strong> — CMS uses Hierarchical Condition
+          <strong>HCC Risk Adjustment Factor (RAF), simplified V24-based model</strong> — CMS uses Hierarchical Condition
           Categories to adjust Medicare Advantage capitated payments. A RAF of 1.0 represents the
           average beneficiary. Higher scores reflect greater expected cost and trigger higher monthly
           payments to plans. Scores are additive across demographic base and condition categories.
@@ -196,7 +196,7 @@ function HCCCalculator() {
       {/* Conditions */}
       <div className="bg-white border border-rose-100 rounded-xl p-5 shadow-sm">
         <h3 className="font-semibold text-rose-900 mb-4 text-sm uppercase tracking-wide">
-          Chronic Condition Checklist (HCC v28)
+          Chronic Condition Checklist (CMS-HCC V24 codes)
         </h3>
         <div className="space-y-2">
           {HCC_CATEGORIES.map((cat) => {
@@ -1558,7 +1558,7 @@ function ComorbidityVisualizer() {
               <div className="text-2xl font-bold text-rose-900">
                 {CONDITION_META[selectedCondition].avgRAF.toFixed(3)}
               </div>
-              <div className="text-xs text-slate-500 mt-1">CMS v28 contribution</div>
+              <div className="text-xs text-slate-500 mt-1">CMS-HCC (V24) contribution</div>
             </div>
             <div>
               <div className="text-xs text-rose-600 font-semibold uppercase mb-2">
@@ -1728,7 +1728,7 @@ const TABS: { id: Tab; label: string; icon: React.ReactNode; subtitle: string }[
     id: "hcc",
     label: "HCC Risk Score Calculator",
     icon: <Activity size={16} />,
-    subtitle: "CMS v28 RAF scoring",
+    subtitle: "CMS-HCC RAF scoring (V24-based)",
   },
   {
     id: "population",
@@ -1770,7 +1770,7 @@ export default function RiskStratificationEngine() {
         </div>
         <div className="flex flex-wrap gap-3 mt-3">
           <span className="text-xs bg-rose-100 text-rose-700 px-2.5 py-1 rounded-full font-medium">
-            CMS HCC v28
+            CMS-HCC (V24-based)
           </span>
           <span className="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full font-medium">
             Population Health
@@ -1820,7 +1820,7 @@ export default function RiskStratificationEngine() {
         <TrendingUp size={14} className="text-slate-400 mt-0.5 shrink-0" />
         <p className="text-xs text-slate-400">
           All calculations are estimates for research and educational purposes only. CMS RAF values
-          reflect HCC v28 (2024). Cost benchmarks derived from AHRQ MEPS and CMS Medicare FFS data.
+          follow the CMS-HCC V24 model (simplified; CMS has since phased in V28). Cost benchmarks derived from AHRQ MEPS and CMS Medicare FFS data.
           Charlson survival estimates based on the original 1987 Charlson cohort study. Do not use
           for clinical decision-making, billing, or regulatory compliance without validation.
         </p>

@@ -11,15 +11,15 @@ const VCCIScenario = dynamic(() => import("@/components/research/VCCIScenario"),
 
 const HCC_HIERARCHY_RULES = [
   { rule: 'HCC 18 trumps HCC 19', explanation: 'When both "Diabetes with Chronic Complications" (HCC 18, coeff 0.302) and "Diabetes without Complication" (HCC 19, coeff 0.105) are coded, CMS only counts HCC 18. The hierarchy prevents double-counting the same clinical condition at two severity levels.', icd10Examples: ['E11.65 → HCC 18 (with complications)', 'E11.9 → HCC 19 (base, superseded)'] },
-  { rule: 'HCC 85 (CHF) interacts with HCC 111 (COPD)', explanation: 'CMS v28 HCC has explicit disease interaction coefficients. A patient with both CHF and COPD gets an additional interaction coefficient (0.139) added on top of the individual HCC weights, because the co-occurrence is known to substantially increase cost beyond the additive individual costs.', icd10Examples: ['I50.x + J44.x → Interaction HCC bonus'] },
-  { rule: 'Severe malnutrition (HCC 21) has the highest single coefficient', explanation: 'HCC 21 (Protein-Calorie Malnutrition) carries a coefficient of 0.455 in v28 — higher than CHF, COPD, or T2DM with complications. It is chronically undercoded because clinicians focus on the primary diagnosis. Nutritional status should be assessed and coded for every complex patient.', icd10Examples: ['E43 → HCC 21 (0.455)', 'E44.0 → HCC 21 (moderate)'] },
+  { rule: 'HCC 85 (CHF) interacts with HCC 111 (COPD)', explanation: 'CMS-HCC (V24 shown) has explicit disease interaction coefficients. A patient with both CHF and COPD gets an additional interaction coefficient (0.139) added on top of the individual HCC weights, because the co-occurrence is known to substantially increase cost beyond the additive individual costs.', icd10Examples: ['I50.x + J44.x → Interaction HCC bonus'] },
+  { rule: 'Severe malnutrition (HCC 21) has the highest single coefficient', explanation: 'HCC 21 (Protein-Calorie Malnutrition) carried a coefficient of 0.455 in V24 (V28 removed it from the payment model) — higher than CHF, COPD, or T2DM with complications. It is chronically undercoded because clinicians focus on the primary diagnosis. Nutritional status should be assessed and coded for every complex patient.', icd10Examples: ['E43 → HCC 21 (0.455)', 'E44.0 → HCC 21 (moderate)'] },
   { rule: 'Age/sex demographic baseline is always added', explanation: 'Every RAF score starts with a demographic factor based on age and sex (e.g., Female 65–69 = 0.378). Disease HCC coefficients are added on top. A patient with no chronic conditions still has a RAF > 0 based purely on demographics.', icd10Examples: ['Female 65–69: +0.378', 'Male 75–79: +0.495'] },
   { rule: 'Enrollment type modifies the final score', explanation: 'CMS applies different RAF multipliers based on enrollment type: Community Non-Dual Institutional = 1.0 (reference), Institutional (nursing home) = separate model, New Enrollee = simplified demographic model only.', icd10Examples: [] },
 ];
 
 const ALGORITHM_COMPARISON = [
   {
-    name: 'CMS HCC v28',
+    name: 'CMS-HCC (V24 codes shown)',
     owner: 'Centers for Medicare & Medicaid Services',
     public: true,
     primaryUse: 'Medicare ACOs, MSSP, ACO REACH, Medicare Advantage',
@@ -436,7 +436,7 @@ export default function RiskStratificationMethodology() {
         <div>
           <div className="mb-4 p-4 bg-indigo-50 border border-indigo-200 rounded-xl">
             <p className="text-xs text-indigo-800 leading-relaxed">
-              <strong>CMS HCC v28 RAF Scoring:</strong> The Hierarchical Condition Category (HCC) model assigns each ICD-10 diagnosis to one of 115 HCC categories, each with a published regression coefficient. A patient&apos;s RAF score = Demographic Factor + sum of applicable HCC coefficients. The &quot;hierarchical&quot; element means that when diagnoses overlap (e.g., diabetes with and without complications), only the most severe applies. The RAF score is the risk adjustment multiplier used in all Medicare VBC contracts.
+              <strong>CMS-HCC RAF Scoring (V24 codes shown; CMS has since phased in V28):</strong> The Hierarchical Condition Category (HCC) model assigns each ICD-10 diagnosis to one of 115 HCC categories, each with a published regression coefficient. A patient&apos;s RAF score = Demographic Factor + sum of applicable HCC coefficients. The &quot;hierarchical&quot; element means that when diagnoses overlap (e.g., diabetes with and without complications), only the most severe applies. The RAF score is the risk adjustment multiplier used in all Medicare VBC contracts.
             </p>
           </div>
 

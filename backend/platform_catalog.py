@@ -473,7 +473,7 @@ CATALOG = [
         "url": "/research-lab/interoperability?tab=risk",
         "category": "Research Lab",
         "subcategory": "Interoperability & Risk",
-        "description": "Apply HCC v28 RAF scoring, segment populations by risk tier, build custom risk models, and analyze comorbidity interactions using Elixhauser and Charlson indices.",
+        "description": "Apply CMS-HCC (V24-based) RAF scoring, segment populations by risk tier, build custom risk models, and analyze comorbidity interactions using Elixhauser and Charlson indices.",
         "keywords": ["risk stratification", "hcc scoring", "raf score", "risk tier", "elixhauser", "charlson", "comorbidity", "patient risk"],
     },
     {
@@ -518,8 +518,8 @@ CATALOG = [
         "url": "/research-lab/vbc-clinical-quality?tab=risk",
         "category": "Research Lab",
         "subcategory": "VBC, Clinical & Quality",
-        "description": "Walk through HCC v28 RAF score calculation step by step, build a population risk-tier pyramid, and compare major risk adjustment algorithms including Johns Hopkins ACG, CDPS, and Charlson.",
-        "keywords": ["risk adjustment methodology", "hcc v28", "raf calculation", "acg", "johns hopkins acg", "cdps", "charlson", "risk tier pyramid", "algorithm comparison"],
+        "description": "Walk through CMS-HCC (V24 codes) RAF score calculation step by step, build a population risk-tier pyramid, and compare major risk adjustment algorithms including Johns Hopkins ACG, CDPS, and Charlson.",
+        "keywords": ["risk adjustment methodology", "cms-hcc", "raf calculation", "acg", "johns hopkins acg", "cdps", "charlson", "risk tier pyramid", "algorithm comparison"],
     },
     {
         "id": "lab-vbc-quality-measures",
