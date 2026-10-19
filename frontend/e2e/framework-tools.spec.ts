@@ -24,7 +24,7 @@ async function gotoSimulator(page: Page, preset = "Vermont, Fall 2026") {
   // actionable, but not for React to hydrate, and this page is heavy.
   await expect(async () => {
     await page.getByRole("button", { name: preset }).click({ timeout: 5_000 });
-    await expect(page.getByText(/Policy gate open \(Acts 167\/51\/68\)/)).toBeVisible({ timeout: 2_000 });
+    await expect(page.getByText(/Policy gate open on state authority \(Acts 167\/51\/68\)/)).toBeVisible({ timeout: 2_000 });
   }).toPass({ timeout: 60_000 });
 }
 

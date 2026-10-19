@@ -1,0 +1,155 @@
+
+Running 57 tests using 2 workers
+
+[1A[2K[1/57] [chromium] › e2e/book-tool-promises.spec.ts:51:7 › risk stratification engine (/research-lab/interoperability?tab=risk) › zero SDOH burden moves nobody
+[1A[2K[2/57] [chromium] › e2e/book-tool-promises.spec.ts:34:7 › risk stratification engine (/research-lab/interoperability?tab=risk) › reports how many patients change tier once social risk is included
+[1A[2K[3/57] [chromium] › e2e/book-tool-promises.spec.ts:64:7 › risk stratification engine (/research-lab/interoperability?tab=risk) › names the high-tier patients receiving no care management
+[1A[2K[4/57] [chromium] › e2e/book-tool-promises.spec.ts:101:7 › HTI dashboard five-pillar view (/hti-dashboard) › shows all five pillars, with equity reported separately
+[1A[2K[5/57] [chromium] › e2e/book-tool-promises.spec.ts:116:7 › HTI dashboard five-pillar view (/hti-dashboard) › pillar readiness matches the simulator's sourced Vermont preset
+[1A[2K[6/57] [chromium] › e2e/book-tool-promises.spec.ts:136:7 › HTI dashboard five-pillar view (/hti-dashboard) › refuses to score Policy for states without sourced policy data
+[1A[2K[7/57] [chromium] › e2e/book-tool-promises.spec.ts:159:5 › investment tracker carries a dependency-order check
+[1A[2K[8/57] [chromium] › e2e/chat-api.spec.ts:14:5 › chat API rejects invalid request body with 400
+[1A[2K[9/57] [chromium] › e2e/chat-api.spec.ts:24:5 › chat API rejects empty message with 400
+[1A[2K[10/57] [chromium] › e2e/chat-api.spec.ts:32:5 › chat API accepts valid request (200 or 503 if backend down)
+[1A[2K[11/57] [chromium] › e2e/chat-api.spec.ts:47:5 › health API reports backend status
+[1A[2K[12/57] [chromium] › e2e/framework-tools.spec.ts:36:7 › execution-sequence simulator (/htr-simulator) › the OneCare profile collapses, and reordering rescues the same spending
+[1A[2K[13/57] [chromium] › e2e/framework-tools.spec.ts:57:7 › execution-sequence simulator (/htr-simulator) › dropping an upstream pillar to zero penalizes downstream readiness
+[1A[2K  1) [chromium] › e2e/framework-tools.spec.ts:57:7 › execution-sequence simulator (/htr-simulator) › dropping an upstream pillar to zero penalizes downstream readiness 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByText(/Policy gate open \(Acts 167\/51\/68\)/)
+    Expected: visible
+    Timeout: 2000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 2000ms[22m
+    [2m  - waiting for getByText(/Policy gate open \(Acts 167\/51\/68\)/)[22m
+
+
+    Call Log:
+    - Timeout 60000ms exceeded while waiting on the predicate
+
+      26 |     await page.getByRole("button", { name: preset }).click({ timeout: 5_000 });
+      27 |     await expect(page.getByText(/Policy gate open \(Acts 167\/51\/68\)/)).toBeVisible({ timeout: 2_000 });
+    > 28 |   }).toPass({ timeout: 60_000 });
+         |      ^
+      29 | }
+      30 |
+      31 | test.describe("execution-sequence simulator (/htr-simulator)", () => {
+        at gotoSimulator (/Users/baba/Vermont-Health-Platform/frontend/e2e/framework-tools.spec.ts:28:6)
+        at /Users/baba/Vermont-Health-Platform/frontend/e2e/framework-tools.spec.ts:58:5
+
+    Error Context: test-results/framework-tools-execution--42a08-alizes-downstream-readiness-chromium/error-context.md
+
+
+[1A[2K[14/57] [chromium] › e2e/framework-tools.spec.ts:73:7 › execution-sequence simulator (/htr-simulator) › the equity verdict is reported and never moves the score
+[1A[2K  2) [chromium] › e2e/framework-tools.spec.ts:36:7 › execution-sequence simulator (/htr-simulator) › the OneCare profile collapses, and reordering rescues the same spending 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByText(/Policy gate open \(Acts 167\/51\/68\)/)
+    Expected: visible
+    Timeout: 2000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 2000ms[22m
+    [2m  - waiting for getByText(/Policy gate open \(Acts 167\/51\/68\)/)[22m
+
+
+    Call Log:
+    - Timeout 60000ms exceeded while waiting on the predicate
+
+      26 |     await page.getByRole("button", { name: preset }).click({ timeout: 5_000 });
+      27 |     await expect(page.getByText(/Policy gate open \(Acts 167\/51\/68\)/)).toBeVisible({ timeout: 2_000 });
+    > 28 |   }).toPass({ timeout: 60_000 });
+         |      ^
+      29 | }
+      30 |
+      31 | test.describe("execution-sequence simulator (/htr-simulator)", () => {
+        at gotoSimulator (/Users/baba/Vermont-Health-Platform/frontend/e2e/framework-tools.spec.ts:28:6)
+        at /Users/baba/Vermont-Health-Platform/frontend/e2e/framework-tools.spec.ts:37:5
+
+    Error Context: test-results/framework-tools-execution--54dd6-g-rescues-the-same-spending-chromium/error-context.md
+
+
+[1A[2K[15/57] [chromium] › e2e/framework-tools.spec.ts:92:5 › friction index names the binding constraint
+[1A[2K[16/57] [chromium] › e2e/framework-tools.spec.ts:102:5 › impact simulation shows the Technology gap reaching Economics a year later
+[1A[2K[17/57] [chromium] › e2e/hero-briefings.spec.ts:14:5 › hero shows the five pillars in the book's execution sequence
+[1A[2K[18/57] [chromium] › e2e/hero-briefings.spec.ts:34:7 › slide links deliver what they promise: policy
+[1A[2K[19/57] [chromium] › e2e/hero-briefings.spec.ts:34:7 › slide links deliver what they promise: technology
+[1A[2K[20/57] [chromium] › e2e/hero-briefings.spec.ts:34:7 › slide links deliver what they promise: economics
+[1A[2K[21/57] [chromium] › e2e/hero-briefings.spec.ts:34:7 › slide links deliver what they promise: clinical
+[1A[2K[22/57] [chromium] › e2e/hero-briefings.spec.ts:34:7 › slide links deliver what they promise: operations
+[1A[2K[23/57] [chromium] › e2e/hero-briefings.spec.ts:59:5 › the retired reports page sends readers to the briefings
+[1A[2K  3) [chromium] › e2e/framework-tools.spec.ts:73:7 › execution-sequence simulator (/htr-simulator) › the equity verdict is reported and never moves the score 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByText(/Policy gate open \(Acts 167\/51\/68\)/)
+    Expected: visible
+    Timeout: 2000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 2000ms[22m
+    [2m  - waiting for getByText(/Policy gate open \(Acts 167\/51\/68\)/)[22m
+
+
+    Call Log:
+    - Timeout 60000ms exceeded while waiting on the predicate
+
+      26 |     await page.getByRole("button", { name: preset }).click({ timeout: 5_000 });
+      27 |     await expect(page.getByText(/Policy gate open \(Acts 167\/51\/68\)/)).toBeVisible({ timeout: 2_000 });
+    > 28 |   }).toPass({ timeout: 60_000 });
+         |      ^
+      29 | }
+      30 |
+      31 | test.describe("execution-sequence simulator (/htr-simulator)", () => {
+        at gotoSimulator (/Users/baba/Vermont-Health-Platform/frontend/e2e/framework-tools.spec.ts:28:6)
+        at /Users/baba/Vermont-Health-Platform/frontend/e2e/framework-tools.spec.ts:74:5
+
+    Error Context: test-results/framework-tools-execution--4b16c-d-and-never-moves-the-score-chromium/error-context.md
+
+
+[1A[2K[24/57] [chromium] › e2e/launch-readiness.spec.ts:37:7 › sitemap.xml › lists the key public routes on the requesting host and omits gated ones
+[1A[2K[25/57] [chromium] › e2e/launch-readiness.spec.ts:64:9 › page metadata › / has a title, description and Open Graph site name
+[1A[2K[26/57] [chromium] › e2e/launch-readiness.spec.ts:19:7 › robots.txt › is served, names a sitemap on the same host, and blocks private paths
+[1A[2K[27/57] [chromium] › e2e/launch-readiness.spec.ts:64:9 › page metadata › /book has a title, description and Open Graph site name
+[1A[2K[28/57] [chromium] › e2e/launch-readiness.spec.ts:64:9 › page metadata › /briefings has a title, description and Open Graph site name
+[1A[2K[29/57] [chromium] › e2e/launch-readiness.spec.ts:64:9 › page metadata › /academy has a title, description and Open Graph site name
+[1A[2K[30/57] [chromium] › e2e/launch-readiness.spec.ts:64:9 › page metadata › /research-lab has a title, description and Open Graph site name
+[1A[2K[31/57] [chromium] › e2e/launch-readiness.spec.ts:64:9 › page metadata › /vermont-act-167 has a title, description and Open Graph site name
+[1A[2K[32/57] [chromium] › e2e/launch-readiness.spec.ts:64:9 › page metadata › /faq has a title, description and Open Graph site name
+[1A[2K[33/57] [chromium] › e2e/launch-readiness.spec.ts:64:9 › page metadata › /htr-simulator has a title, description and Open Graph site name
+[1A[2K[34/57] [chromium] › e2e/launch-readiness.spec.ts:64:9 › page metadata › /pricing has a title, description and Open Graph site name
+[1A[2K[35/57] [chromium] › e2e/launch-readiness.spec.ts:76:7 › page metadata › client-page layouts carry the brand in the title
+[1A[2K[36/57] [chromium] › e2e/launch-readiness.spec.ts:81:7 › page metadata › auth pages are noindex
+[1A[2K[37/57] [chromium] › e2e/launch-readiness.spec.ts:87:7 › page metadata › pages carry a self-canonical URL on the requesting host and the default OG image
+[1A[2K[38/57] [chromium] › e2e/launch-readiness.spec.ts:100:9 › crawler access without the beta cookie › /robots.txt is served, not redirected to the beta gate
+[1A[2K[39/57] [chromium] › e2e/launch-readiness.spec.ts:100:9 › crawler access without the beta cookie › /sitemap.xml is served, not redirected to the beta gate
+[1A[2K[40/57] [chromium] › e2e/launch-readiness.spec.ts:100:9 › crawler access without the beta cookie › /opengraph-image is served, not redirected to the beta gate
+[1A[2K[41/57] [chromium] › e2e/launch-readiness.spec.ts:106:7 › crawler access without the beta cookie › ordinary pages are still gated
+[1A[2K[42/57] [chromium] › e2e/launch-readiness.spec.ts:114:7 › security headers › baseline headers and CSP are present
+[1A[2K[43/57] [chromium] › e2e/launch-readiness.spec.ts:129:7 › error pages › an unknown route returns the branded 404
+[1A[2K[44/57] [chromium] › e2e/smoke.spec.ts:46:7 › renders /
+[1A[2K[45/57] [chromium] › e2e/smoke.spec.ts:46:7 › renders /book
+[1A[2K[46/57] [chromium] › e2e/smoke.spec.ts:46:7 › renders /book/listen
+[1A[2K[47/57] [chromium] › e2e/smoke.spec.ts:46:7 › renders /about/framework
+[1A[2K[48/57] [chromium] › e2e/smoke.spec.ts:46:7 › renders /policy
+[1A[2K[49/57] [chromium] › e2e/smoke.spec.ts:46:7 › renders /economics
+[1A[2K[50/57] [chromium] › e2e/smoke.spec.ts:46:7 › renders /technology
+[1A[2K[51/57] [chromium] › e2e/smoke.spec.ts:46:7 › renders /clinical
+[1A[2K[52/57] [chromium] › e2e/smoke.spec.ts:46:7 › renders /equity
+[1A[2K[53/57] [chromium] › e2e/smoke.spec.ts:46:7 › renders /operations
+[1A[2K[54/57] [chromium] › e2e/smoke.spec.ts:56:5 › research lab landing page lists at least one tool
+[1A[2K[55/57] [chromium] › e2e/smoke.spec.ts:64:5 › vermont act 68 page mentions Act 68
+[1A[2K[56/57] [chromium] › e2e/smoke.spec.ts:69:5 › book page has download link
+[1A[2K[57/57] [chromium] › e2e/smoke.spec.ts:75:5 › listen page lists all 22 narration tracks
+[1A[2K  3 failed
+    [chromium] › e2e/framework-tools.spec.ts:36:7 › execution-sequence simulator (/htr-simulator) › the OneCare profile collapses, and reordering rescues the same spending 
+    [chromium] › e2e/framework-tools.spec.ts:57:7 › execution-sequence simulator (/htr-simulator) › dropping an upstream pillar to zero penalizes downstream readiness 
+    [chromium] › e2e/framework-tools.spec.ts:73:7 › execution-sequence simulator (/htr-simulator) › the equity verdict is reported and never moves the score 
+  54 passed (5.7m)
