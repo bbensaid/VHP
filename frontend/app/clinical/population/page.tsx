@@ -82,7 +82,7 @@ function PopulationHealthTools() {
           <span className="text-2xl">📋</span>
           <div>
             <h2 className="ty-h3 font-bold text-slate-900">Key HEDIS Measures — Quick Reference</h2>
-            <p className="text-sm text-slate-500">NCQA Healthcare Effectiveness Data & Information Set — population health benchmarks</p>
+            <p className="text-sm text-slate-500">NCQA Healthcare Effectiveness Data & Information Set — measures most value-based contracts use</p>
           </div>
         </div>
         <div className="overflow-x-auto">
@@ -91,20 +91,17 @@ function PopulationHealthTools() {
               <tr className="border-b border-slate-200">
                 <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">Measure</th>
                 <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">Condition</th>
-                <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">National 50th %ile</th>
-                <th className="text-left py-2 text-xs font-bold uppercase tracking-wider text-slate-500">National 90th %ile</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
               {[
-                { measure: "Glycemic Control (HbA1c < 8%)", condition: "Diabetes", p50: "73%", p90: "83%" },
-                { measure: "Controlling High Blood Pressure", condition: "Hypertension", p50: "72%", p90: "82%" },
-                { measure: "30-Day Readmission Rate (CHF)", condition: "Heart Failure", p50: "22%", p90: "16%" },
-                { measure: "Breast Cancer Screening", condition: "Prevention", p50: "74%", p90: "83%" },
-                { measure: "Colorectal Cancer Screening", condition: "Prevention", p50: "65%", p90: "77%" },
-                { measure: "Depression Screening (PHQ-9)", condition: "Behavioral Health", p50: "78%", p90: "90%" },
-                { measure: "Medication Adherence (Statins)", condition: "Cardiovascular", p50: "85%", p90: "91%" },
-                { measure: "COPD All-Cause Readmission", condition: "COPD", p50: "20%", p90: "14%" },
+                { measure: "Glycemic Status Assessment for Patients With Diabetes (GSD)", condition: "Diabetes" },
+                { measure: "Controlling High Blood Pressure (CBP)", condition: "Hypertension" },
+                { measure: "Plan All-Cause Readmissions (PCR)", condition: "Utilization" },
+                { measure: "Breast Cancer Screening (BCS-E)", condition: "Prevention" },
+                { measure: "Colorectal Cancer Screening (COL-E)", condition: "Prevention" },
+                { measure: "Depression Screening and Follow-Up (DSF-E)", condition: "Behavioral Health" },
+                { measure: "Statin Therapy for Patients With Cardiovascular Disease (SPC)", condition: "Cardiovascular" },
               ].map((row) => (
                 <tr key={row.measure} className="hover:bg-slate-50">
                   <td className="py-3 pr-4 font-medium text-slate-800">{row.measure}</td>
@@ -113,22 +110,20 @@ function PopulationHealthTools() {
                       {row.condition}
                     </span>
                   </td>
-                  <td className="py-3 pr-4 text-slate-600">{row.p50}</td>
-                  <td className="py-3 font-semibold text-emerald-700">{row.p90}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-        <p className="text-xs text-slate-400 mt-4">Source: NCQA HEDIS 2024 National Averages & Benchmarks. Readmission rates: lower is better; all others: higher is better.</p>
+        <p className="text-xs text-slate-400 mt-4">Measure names per NCQA HEDIS MY2025. National percentile benchmarks are published by NCQA (Quality Compass) under license — use the edition your contracts specify.</p>
       </div>
 
       {/* Risk Stratification Framework */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
         {/* LACE+ Score Guide */}
         <div className="bg-white rounded-2xl border border-slate-200 p-6">
-          <h3 className="font-bold text-slate-900 mb-1">LACE+ Readmission Risk Index</h3>
-          <p className="text-sm text-slate-500 mb-5">Validated tool for predicting 30-day unplanned readmission</p>
+          <h3 className="font-bold text-slate-900 mb-1">LACE Readmission Risk Index</h3>
+          <p className="text-sm text-slate-500 mb-5">Validated tool for predicting 30-day death or unplanned readmission (van Walraven et al., CMAJ 2010)</p>
           <div className="space-y-3">
             {[
               { label: "L — Length of stay", max: "up to 7 pts", note: "1 day = 1pt; ≥14 days = 7pts" },
@@ -155,13 +150,12 @@ function PopulationHealthTools() {
         {/* Population Segmentation Model */}
         <div className="bg-white rounded-2xl border border-slate-200 p-6">
           <h3 className="font-bold text-slate-900 mb-1">Population Segmentation Framework</h3>
-          <p className="text-sm text-slate-500 mb-5">Kaiser Permanente-derived stratification pyramid</p>
+          <p className="text-sm text-slate-500 mb-5">Illustrative tiers — set cut points from your own panel, not from a fixed percentage</p>
           <div className="space-y-3">
             {[
               {
                 tier: "Tier 4",
                 label: "Complex / High-Need",
-                pct: "1–5%",
                 desc: "Multiple chronic conditions, high utilization, active care management",
                 bg: "bg-rose-100",
                 text: "text-rose-800",
@@ -170,7 +164,6 @@ function PopulationHealthTools() {
               {
                 tier: "Tier 3",
                 label: "High Risk",
-                pct: "15–20%",
                 desc: "2+ chronic conditions or rising risk; care coordination + proactive outreach",
                 bg: "bg-orange-100",
                 text: "text-orange-800",
@@ -179,7 +172,6 @@ function PopulationHealthTools() {
               {
                 tier: "Tier 2",
                 label: "Moderate Risk",
-                pct: "25–30%",
                 desc: "1 chronic condition or SDOH risk; disease management programs",
                 bg: "bg-amber-100",
                 text: "text-amber-800",
@@ -188,7 +180,6 @@ function PopulationHealthTools() {
               {
                 tier: "Tier 1",
                 label: "Healthy / Low Risk",
-                pct: "50–60%",
                 desc: "Preventive care, wellness programs, population health campaigns",
                 bg: "bg-emerald-100",
                 text: "text-emerald-800",
@@ -196,7 +187,7 @@ function PopulationHealthTools() {
               },
             ].map((tier) => (
               <div key={tier.tier} className={`flex items-start gap-3 p-3 ${tier.bg} border ${tier.border} rounded-lg`}>
-                <div className={`shrink-0 text-xs font-bold ${tier.text}`}>{tier.tier}<br />{tier.pct}</div>
+                <div className={`shrink-0 text-xs font-bold ${tier.text}`}>{tier.tier}</div>
                 <div>
                   <div className={`font-semibold text-sm ${tier.text}`}>{tier.label}</div>
                   <div className="text-xs text-slate-600 mt-0.5">{tier.desc}</div>
@@ -211,7 +202,7 @@ function PopulationHealthTools() {
       <div className="bg-indigo-700 text-white rounded-2xl p-8 mb-10">
         <h2 className="text-xl font-bold mb-2">ED Super-Utilizer Intervention Framework</h2>
         <p className="text-indigo-100 text-sm mb-6">
-          The top 5% of ED users account for 40–60% of all ED visits. Evidence-based intervention pathways:
+          Frequent ED users — roughly 4.5–8% of ED patients — account for about 21–28% of all ED visits (LaCalle & Rabin, Annals of Emergency Medicine, 2010). An intervention pathway:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           {[
@@ -233,7 +224,7 @@ function PopulationHealthTools() {
             {
               step: "04",
               title: "Measure",
-              desc: "Track ED utilization at 30/90/180 days. Target ≥40% reduction in high-risk cohort.",
+              desc: "Track ED use and readmissions against a comparison group — high utilizers regress toward the mean on their own.",
             },
           ].map((step) => (
             <div key={step.step} className="bg-white/10 rounded-xl p-4">
@@ -243,7 +234,7 @@ function PopulationHealthTools() {
             </div>
           ))}
         </div>
-        <p className="text-xs text-slate-500 mt-4">Evidence: Camden Coalition, Hennepin Healthcare, NEJM Catalyst 2023 meta-analysis</p>
+        <p className="text-xs text-slate-500 mt-4">Caution: the Camden Coalition’s randomized trial of this model found no reduction in readmissions versus usual care (Finkelstein et al., NEJM, 2020).</p>
       </div>
 
       {/* Section divider before article feed */}
