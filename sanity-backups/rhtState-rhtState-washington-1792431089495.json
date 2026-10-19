@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:53Z",
+ "_id": "rhtState-washington",
+ "_rev": "G7Tfo59YVwcDW2O5CBrjPF",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:53Z",
+ "awardAmount": "$181,000,000",
+ "description": "Value-based models for hospital solvency and dedicated funding for Tribal health.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Value-based models to support hospital financial health.",
+   "title": "Ignite Innovation"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Dedicated funding for Tribal workforce and coordination.",
+   "title": "Invest in Native Families"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Hospital Margins",
+   "status": "Pending",
+   "target": "Neutral/Positive"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Tribal Providers",
+   "status": "In Progress",
+   "target": "Trained"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "washington"
+ },
+ "stateName": "Washington",
+ "status": "Active",
+ "strategicFocus": "Hospital Solvency & Native Families"
+}

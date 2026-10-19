@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:31Z",
+ "_id": "rhtState-virginia",
+ "_rev": "ZDU5b4qioPbFp0EQfvWYdG",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:31Z",
+ "awardAmount": "$190,000,000",
+ "description": "Investing in health tech startups via 'CareIQ' and scaling 'Food as Medicine' produce prescriptions.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Investing in health tech startups and modernizing EHRs.",
+   "title": "CareIQ"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Produce prescriptions for food-insecure patients.",
+   "title": "Food as Medicine"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Tech Startups Funded",
+   "status": "Pending",
+   "target": "10 Startups"
+  },
+  {
+   "_key": "metric-1",
+   "label": "A1C Improvement",
+   "status": "Pending",
+   "target": "-1.5 pts"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "virginia"
+ },
+ "stateName": "Virginia",
+ "status": "Active",
+ "strategicFocus": "CareIQ & Food Prescriptions"
+}

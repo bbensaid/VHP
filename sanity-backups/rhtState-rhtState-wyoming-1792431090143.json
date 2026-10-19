@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:57Z",
+ "_id": "rhtState-wyoming",
+ "_rev": "GIKqHwCOFsUvADyibzkmY7",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:57Z",
+ "awardAmount": "$205,000,000",
+ "description": "Incentivizing CAHs to limit elective services and focus on essentials (ED/Ambulance), plus statewide telepsych.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Incentivizing hospitals to focus on essentials.",
+   "title": "CAH Basic Incentive"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Crisis intervention services.",
+   "title": "Statewide Telepsychiatry"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Incentive Participation",
+   "status": "Pending",
+   "target": "High"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Crisis Response",
+   "status": "In Progress",
+   "target": "Faster"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "wyoming"
+ },
+ "stateName": "Wyoming",
+ "status": "Active",
+ "strategicFocus": "CAH Incentives & Telepsychiatry"
+}
