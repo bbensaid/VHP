@@ -12226,7 +12226,7 @@ SUSTAIN = [{'id': 'lesson_5p_portfolio_management',
   'pillar': 'general',
   'order': 24,
   'slug': 'capstone-apply-the-framework',
-  'title': 'Capstone -- Apply the Framework to Your Own System',
+  'title': 'Capstone — Apply the Framework to Your Own System',
   'summary': 'A five-step working method for running your own organization or state through the '
              'five diagnostic questions and the Equity Imperative, finding your binding '
              'constraint, and naming your own sequencing errors before they cascade. Uses OneCare '
