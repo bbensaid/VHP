@@ -14,7 +14,7 @@ function SDOHHero() {
         </span>
         <h1 className="ty-h1 font-black text-slate-900 mb-3">Social Determinants of Health</h1>
         <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed">
-          Addressing the non-medical factors driving 80% of health outcomes — housing, food security,
+          Addressing the non-clinical factors that population-health models estimate drive most health outcomes — housing, food security,
           transportation, economic stability, and the clinical workflows and payment models to act on them.
         </p>
       </div>
@@ -30,7 +30,7 @@ function SDOHBody() {
         <div className="flex items-center gap-3 mb-6">
           <span className="text-2xl">📋</span>
           <div>
-            <h2 className="ty-h3 font-bold text-slate-900">SDOH Screening Domains & Prevalence</h2>
+            <h2 className="ty-h3 font-bold text-slate-900">SDOH Screening Domains</h2>
             <p className="text-sm text-slate-500">PRAPARE / AHC HRSN screener domains with typical positive screening rates in safety-net settings</p>
           </div>
         </div>
@@ -40,31 +40,29 @@ function SDOHBody() {
               <tr className="border-b border-slate-200">
                 <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">Domain</th>
                 <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">Screener Question Example</th>
-                <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">Positive Rate (Safety Net)</th>
                 <th className="text-left py-2 text-xs font-bold uppercase tracking-wider text-slate-500">Actionable Resource</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
               {[
-                { domain: "Housing Instability", question: "Are you worried about losing your housing?", rate: "18–24%", resource: "HUD-VASH, rapid rehousing programs" },
-                { domain: "Food Insecurity", question: "Within the past 12 months, did you worry food would run out?", rate: "28–35%", resource: "SNAP enrollment, food bank referral" },
-                { domain: "Transportation", question: "Do you have transportation problems affecting medical care?", rate: "22–30%", resource: "NEMT voucher, Lyft Health" },
-                { domain: "Utility Needs", question: "In the past year, have you had trouble paying utility bills?", rate: "20–28%", resource: "LIHEAP, utility assistance programs" },
-                { domain: "Interpersonal Safety", question: "Do you feel safe where you currently live?", rate: "12–18%", resource: "DV hotline, safe discharge planning" },
-                { domain: "Financial Strain", question: "How often do you worry about being able to pay your bills?", rate: "38–45%", resource: "Financial counseling, charity care" },
-                { domain: "Education/Employment", question: "What is your highest level of education?", rate: "Varies", resource: "Job training, GED programs, ESL" },
+                { domain: "Housing Instability", question: "Are you worried about losing your housing?", resource: "HUD-VASH, rapid rehousing programs" },
+                { domain: "Food Insecurity", question: "Within the past 12 months, did you worry food would run out?", resource: "SNAP enrollment, food bank referral" },
+                { domain: "Transportation", question: "Do you have transportation problems affecting medical care?", resource: "NEMT voucher, Lyft Health" },
+                { domain: "Utility Needs", question: "In the past year, have you had trouble paying utility bills?", resource: "LIHEAP, utility assistance programs" },
+                { domain: "Interpersonal Safety", question: "Do you feel safe where you currently live?", resource: "DV hotline, safe discharge planning" },
+                { domain: "Financial Strain", question: "How often do you worry about being able to pay your bills?", resource: "Financial counseling, charity care" },
+                { domain: "Education/Employment", question: "What is your highest level of education?", resource: "Job training, GED programs, ESL" },
               ].map((row) => (
                 <tr key={row.domain} className="hover:bg-slate-50">
                   <td className="py-3 pr-4 font-bold text-orange-700">{row.domain}</td>
                   <td className="py-3 pr-4 text-slate-600 text-xs italic">&ldquo;{row.question}&rdquo;</td>
-                  <td className="py-3 pr-4 font-bold text-rose-600">{row.rate}</td>
                   <td className="py-3 text-slate-500 text-xs">{row.resource}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-        <p className="text-xs text-slate-400 mt-4">Source: NACHC PRAPARE implementation studies, CMS AHC HRSN pilot data. Safety-net setting = FQHC, safety-net hospital, or Medicaid-dominant primary care.</p>
+        <p className="text-xs text-slate-400 mt-4">Question wording adapted from the CMS Accountable Health Communities HRSN screening tool and NACHC PRAPARE. Positive rates vary widely by population — measure your own.</p>
       </div>
 
       {/* Core Domains */}
@@ -74,11 +72,9 @@ function SDOHBody() {
             icon: "🏠",
             title: "Housing & Health",
             items: [
-              "Housing instability linked to 3× higher ED utilization vs. stable-housed patients",
-              "Medicaid supportive housing: CMS 1115 waiver authority — 6 months housing coverage approved",
-              "Health-related social needs (HRSN): CMS expanded Medicaid HRSN benefit framework (2023)",
-              "Housing CPT codes: CMS new SDOH risk assessment codes effective Jan 2024 (Z55–Z65)",
-              "Permanent supportive housing (PSH) ROI: $3,600 Medicaid savings per person annually",
+              "Housing instability is linked to higher ED use and readmissions",
+              "Medicaid housing supports: CMS's 2023 HRSN framework allowed up to 6 months of transitional rent under 1115 waivers; CMS rescinded that guidance on March 4, 2025",
+              "SDOH risk assessment: HCPCS G0136 was created for 2024 but redefined for 2026 as a physical-activity and nutrition assessment; Z55–Z65 are ICD-10-CM diagnosis codes, not CPT",
               "HUD-HHS partnerships: Health Homes model linking housing assistance + primary care",
             ],
           },
@@ -86,23 +82,23 @@ function SDOHBody() {
             icon: "🥗",
             title: "Food Security & Nutrition",
             items: [
-              "Food insecurity prevalence: 13.5% of US households (44.2M people) — USDA 2023",
-              "Food insecurity → health: 2× higher hospitalization risk, worse glycemic control in T2D",
+              "Food insecurity: 13.5% of US households in 2023 (USDA Economic Research Service)",
+              "Food insecurity → health: higher hospitalization risk and worse glycemic control in type 2 diabetes",
               "Medically tailored meals (MTM): SNAP + Medicare Advantage supplemental benefit",
               "FVRx (Fruit & Vegetable Prescriptions): Wholesome Wave, Produce Rx — clinic-based programs",
-              "SNAP enrollment barriers: 18% of eligible households not enrolled — outreach opportunity",
-              "WIC program: 7.3M participants; evidence of improved birth outcomes + reduced preterm birth",
+              "SNAP: H.R. 1 (2025) expanded work requirements and shifts more program cost to states — expect enrollment losses",
+              "WIC program: evidence of improved birth outcomes",
             ],
           },
           {
             icon: "🚗",
             title: "Transportation Access",
             items: [
-              "Transportation barriers: 3.6M Americans miss medical appointments annually due to transport",
-              "NEMT (Non-Emergency Medical Transportation): Medicaid-covered — $5.5B/year federal spend",
+              "Transportation barriers: about 3.6 million Americans miss or delay care each year for lack of transport (Wallace et al., 2005)",
+              "NEMT (Non-Emergency Medical Transportation): a required Medicaid benefit",
               "Lyft/Uber Health partnerships: Epic-integrated ride scheduling at point of care",
-              "Virtual care substitution: telehealth reduces transport burden for 22% of rural patients",
-              "Social driver screening: PRAPARE tool includes transportation domain (one of 7 core domains)",
+              "Virtual care substitution: telehealth removes the trip for suitable visits",
+              "Social driver screening: PRAPARE includes a transportation item",
               "CMS Quality Measure: Transportation Domain now included in Star Ratings methodology",
             ],
           },
@@ -110,24 +106,20 @@ function SDOHBody() {
             icon: "💼",
             title: "Economic Stability & Employment",
             items: [
-              "Poverty health burden: below 100% FPL → 60% higher all-cause mortality risk",
-              "Medical debt: 41% of US adults carry healthcare debt; #1 driver of personal bankruptcy",
-              "ACA Medicaid expansion: 14.5M newly insured; reduced uncompensated care by $6.2B annually",
-              "SNAP/Medicaid dual enrollment: 62% of Medicaid enrollees also receive SNAP (targeted outreach)",
-              "Community health workers (CHW): $2.47 return per $1 invested in economic stability navigation",
-              "Employer wellness programs: financial wellness + EAP integration — 23% productivity improvement",
+              "Medical debt: 41% of US adults carry health care debt (KFF, 2022)",
+              "Medicaid expansion: reduced uncompensated care costs for hospitals in expansion states",
+              "Community health workers (CHW): the IMPaCT model returned $2.47 to Medicaid per $1 invested (Kangovi et al., Health Affairs, 2020)",
             ],
           },
           {
             icon: "🎓",
             title: "Education & Health Literacy",
             items: [
-              "Health literacy: 36% of US adults have below basic health literacy (NCES data)",
-              "Low health literacy → 2× higher hospital admissions, 4× more medication errors",
-              "Plain language standards: AHA requires 6th grade reading level for patient materials",
-              "Culturally adapted education: patient education in ≥150 languages at FQHC systems",
-              "Numeracy in health decisions: 22% of patients cannot calculate medication dosing correctly",
-              "Digital literacy gap: 25% of adults ≥65 lack basic digital skills — telehealth access barrier",
+              "Health literacy: 36% of US adults have basic or below-basic health literacy (National Assessment of Adult Literacy, 2003)",
+              "Low health literacy → more hospital admissions and medication errors",
+              "Plain language: AMA and NIH recommend patient materials at a sixth- to eighth-grade reading level or below",
+              "Culturally adapted education: materials in patients' own languages",
+              "Digital literacy gap: older adults are least likely to have the skills telehealth assumes",
             ],
           },
           {
@@ -138,7 +130,7 @@ function SDOHBody() {
               "Epic Social Care Network: closed-loop referral to community-based organizations (CBO)",
               "Unite Us / FindHelp: social care coordination platforms — EHR-embedded CBO referral network",
               "Z-codes (ICD-10-CM): Z55–Z65 — social determinants billable as secondary diagnoses",
-              "CMS AWV: Annual Wellness Visit includes SDOH assessment — billable G0438/G0439",
+              "CMS AWV: the Annual Wellness Visit (G0438/G0439) can include an optional SDOH risk assessment",
               "Value-based SDOH incentives: CMS AHEAD Model includes SDOH performance domain",
             ],
           },
@@ -164,12 +156,12 @@ function SDOHBody() {
         <p className="text-slate-500 text-sm mb-6">How payers and CMS are funding social care integration</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
-            { title: "CMS 1115 Waivers — HRSN", body: "15+ states approved for health-related social needs coverage: up to 6 months of transitional housing, meals, utility assistance, transportation for high-risk Medicaid enrollees." },
-            { title: "Medicare Advantage Supplemental Benefits", body: "Chronically Ill Enrollee benefits: food, transportation, home modifications. 94% of MA plans offer ≥1 supplemental benefit addressing SDOH (KFF 2024)." },
-            { title: "CMMI Innovation Models", body: "AHEAD Model global budget includes SDOH performance domain. ACO REACH includes equity bonus. Health Equity Benchmark Adjustment in MA rates (2024)." },
-            { title: "Z-Code Billing (ICD-10)", body: "Z55–Z65 codes document social determinants as secondary diagnoses. CMS added Z-codes to PHE/quality reporting. Payer coverage inconsistent but growing." },
-            { title: "Community Benefit / CHNA", body: "IRS 501(r): tax-exempt hospitals must conduct Community Health Needs Assessment every 3 years. SDOH intervention often largest community benefit expenditure category." },
-            { title: "Value-Based SDOH Incentives", body: "Some commercial payers offer P4P bonuses for SDOH screening completion rates. HEDIS Social Need Screening measure (2024) drives employer plan reporting." },
+            { title: "CMS 1115 Waivers — HRSN", body: "Several states won approval under CMS's 2023 health-related social needs framework (transitional housing, meals, other supports). CMS rescinded that guidance on March 4, 2025 and now reviews HRSN requests case by case; existing approvals (about 25 states as of February 2025) are unaffected but face harder renewals." },
+            { title: "Medicare Advantage Supplemental Benefits", body: "Special Supplemental Benefits for the Chronically Ill (SSBCI) let MA plans offer non-medical benefits such as food, transportation and home modifications to eligible enrollees." },
+            { title: "CMMI Innovation Models", body: "AHEAD's September 2025 redesign replaced its Statewide Health Equity Plan with Population Health Accountability Plans. ACO REACH, which ends in December 2026, includes a health equity benchmark adjustment." },
+            { title: "Z-Code Billing (ICD-10)", body: "Z55–Z65 codes document social needs as secondary diagnoses. They support risk stratification and research; payment rarely depends on them." },
+            { title: "Community Benefit / CHNA", body: "IRS 501(r): tax-exempt hospitals must conduct a Community Health Needs Assessment every 3 years. Financial assistance and Medicaid shortfalls are the largest community-benefit categories; direct SDOH spending is a small share." },
+            { title: "Value-Based SDOH Incentives", body: "NCQA's Social Need Screening and Intervention (SNS-E) HEDIS measure, introduced for measurement year 2023, gives health plans a reporting incentive." },
           ].map((item) => (
             <div key={item.title} className="bg-white border border-slate-200 rounded-xl p-4">
               <div className="font-bold text-slate-800 text-sm mb-2">{item.title}</div>
