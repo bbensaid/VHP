@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:51Z",
+ "_id": "rhtState-south_dakota",
+ "_rev": "G7Tfo59YVwcDW2O5CBrix1",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:51Z",
+ "awardAmount": "$189,000,000",
+ "description": "Regional Maternal/Infant Hubs and a capitated Medicaid Primary Care model.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Clinical care plus social support network.",
+   "title": "Maternal Hubs"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Flexible, capitated payments for rural primary care.",
+   "title": "Medicaid Transformation"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Maternal Outcomes",
+   "status": "Pending",
+   "target": "Improved"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Capitation Adoption",
+   "status": "In Progress",
+   "target": "30 Practices"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "south_dakota"
+ },
+ "stateName": "South Dakota",
+ "status": "Active",
+ "strategicFocus": "Maternal Hubs & Medicaid APM"
+}

@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:35Z",
+ "_id": "rhtState-tennessee",
+ "_rev": "GIKqHwCOFsUvADyibzkdYV",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:35Z",
+ "awardAmount": "$207,000,000",
+ "description": "Hub-and-spoke model for dementia care and a tech-enabled non-emergency transport system.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Hub-and-spoke model for dementia diagnosis/treatment.",
+   "title": "Memory Care Network"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Tech-enabled non-emergency transportation coordination.",
+   "title": "Rural NEMT System"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Dementia Screening",
+   "status": "Pending",
+   "target": "+30%"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Transport Volume",
+   "status": "In Progress",
+   "target": "10,000 Rides"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "tennessee"
+ },
+ "stateName": "Tennessee",
+ "status": "Active",
+ "strategicFocus": "Memory Care & NEMT"
+}
