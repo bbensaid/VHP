@@ -1,0 +1,35 @@
+{
+"tag": "briefs-nat",
+"note": "Briefs national pass 10-19: NP FPA count 34->~27-30 (AANP map 2026 per Barton/CMF/NPO); AHEAD renamed Sept 2025; superlatives; AHEAD results timing (Cohorts 2-3 2028). BPCI Adv final eval verified (CMS ~$800M).",
+"pairs": [
+[
+"As of 2025, 34 states and the District of Columbia grant NPs full practice authority;",
+"As of 2026, roughly 27 to 30 states and the District of Columbia grant NPs full practice authority, depending on how transition-to-practice rules are counted;"
+],
+[
+"\"Finding\":\"34 states + DC grant NP full practice authority\"",
+"\"Finding\":\"~27-30 states + DC grant NP full practice authority\""
+],
+[
+"34 states + DC now grant full practice authority",
+"roughly 27 to 30 states plus DC now grant full practice authority"
+],
+[
+"CMS's AHEAD Model is the federal government's most ambitious bet on hospital global budgets",
+"CMS's AHEAD Model is the federal government's main bet on hospital global budgets"
+],
+[
+"AHEAD — States Advancing All-Payer Health Equity Approaches and Development — is a voluntary",
+"AHEAD — originally States Advancing All-Payer Health Equity Approaches and Development, renamed Achieving Healthcare Efficiency through Accountable Design in CMS's September 2025 redesign — is a voluntary"
+],
+[
+"— represents the most ambitious federal VBC policy experiment currently active in the United States.",
+"— is one of the most ambitious federal VBC policy experiments currently active in the United States."
+],
+[
+"AHEAD’s early results will not be statistically meaningful until 2027 at the earliest, but its structural design represents the most coherent attempt yet",
+"AHEAD’s results will not be statistically meaningful for several years — Cohorts 2 and 3 begin performance only in January 2028 — but its structural design is one of the most coherent attempts yet"
+]
+],
+"residue": "34 states (\\+|and) (the )?D"
+}
