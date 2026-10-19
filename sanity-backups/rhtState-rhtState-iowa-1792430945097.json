@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:46Z",
+ "_id": "rhtState-iowa",
+ "_rev": "ZDU5b4qioPbFp0EQfvWg8o",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:46Z",
+ "awardAmount": "$209,000,000",
+ "description": "Distributing dermatoscopes for melanoma detection and improving digital health literacy.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Equipping rural providers to detect melanoma.",
+   "title": "Dermatoscopes"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Improving digital health literacy to boost telehealth usage.",
+   "title": "Connections to Care"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Melanoma Screening",
+   "status": "In Progress",
+   "target": "Expanded"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Telehealth Usage",
+   "status": "Pending",
+   "target": "+20%"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "iowa"
+ },
+ "stateName": "Iowa",
+ "status": "Active",
+ "strategicFocus": "Skin Cancer & Digital Literacy"
+}

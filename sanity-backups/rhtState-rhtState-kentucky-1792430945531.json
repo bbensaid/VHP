@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:36Z",
+ "_id": "rhtState-kentucky",
+ "_rev": "ZDU5b4qioPbFp0EQfvWamg",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:36Z",
+ "awardAmount": "$213,000,000",
+ "description": "Community-based maternal teams for 1-year postpartum support and Diabetes Hubs.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Community teams supporting women through 1 year post-partum.",
+   "title": "PoWERing Maternal Health"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Interventions focused on the diabetes continuum.",
+   "title": "Rural Community Hubs"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Postpartum Visits",
+   "status": "Pending",
+   "target": "80% Attendance"
+  },
+  {
+   "_key": "metric-1",
+   "label": "A1C Control",
+   "status": "In Progress",
+   "target": "Improved"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "kentucky"
+ },
+ "stateName": "Kentucky",
+ "status": "Active",
+ "strategicFocus": "Maternal Teams & Diabetes Hubs"
+}
