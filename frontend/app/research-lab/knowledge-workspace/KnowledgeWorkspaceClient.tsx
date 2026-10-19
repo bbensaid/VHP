@@ -41,7 +41,7 @@ const TABS = [
   },
   {
     id: 'leaderboard', icon: '🏆', label: 'Innovation Leaderboard', badge: 'Benchmarking',
-    desc: "Compare all 50 states across the five pillars: Policy and Clinical from real, cited data; Technology, Economics, and Operations as disclosed simulated estimates; Vermont from the book's sourced pillar readiness.",
+    desc: "Compare all 50 states on the two pillars with real 50-state data (Policy, Clinical); Technology, Economics and Operations are not scored because no 50-state dataset exists; Vermont from the book’s sourced pillar readiness.",
   },
   {
     id: 'scorecard', icon: '🎯', label: 'Transformation Scorecard', badge: 'Executive',

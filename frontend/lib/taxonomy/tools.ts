@@ -73,7 +73,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/knowledge-workspace?tab=leaderboard",
     pillars: ["policy"],
     chapters: ["13"],
-    desc: "Rank all 50 states on health transformation and innovation activity.",
+    desc: "Rank all 50 states on Policy (AHEAD cohorts, state programs) and Clinical (population-health) — the two pillars with real 50-state data.",
   },
   {
     id: "clinical-quality-optimizer",
