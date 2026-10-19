@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:56Z",
+ "_id": "rhtState-montana",
+ "_rev": "G7Tfo59YVwcDW2O5CBrjkh",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:56Z",
+ "awardAmount": "$234,000,000",
+ "description": "A 'Rural Center of Excellence' to oversee system restructuring and eliminate negative margins.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Body to oversee restructuring of care availability.",
+   "title": "Center of Excellence"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Extending access to lower-cost care from pharmacists.",
+   "title": "Pharmacist Access"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Restructuring Plans",
+   "status": "Pending",
+   "target": "Implemented"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Pharmacist Services",
+   "status": "In Progress",
+   "target": "Expanded"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "montana"
+ },
+ "stateName": "Montana",
+ "status": "Active",
+ "strategicFocus": "Center of Excellence & Restructuring"
+}

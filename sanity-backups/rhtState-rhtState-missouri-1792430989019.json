@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:47Z",
+ "_id": "rhtState-missouri",
+ "_rev": "GIKqHwCOFsUvADyibzkj69",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:47Z",
+ "awardAmount": "$216,000,000",
+ "description": "Hub-and-spoke 'ToRCH' networks and an APM incentivizing reduced ED visits.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Transformation of Rural Community Health hub-and-spoke model.",
+   "title": "ToRCH Care"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Alternative Payment Model incentivizing reduced ED utilization.",
+   "title": "ED Reduction APM"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Network Participation",
+   "status": "Pending",
+   "target": "High"
+  },
+  {
+   "_key": "metric-1",
+   "label": "ED Reduction",
+   "status": "In Progress",
+   "target": "-10%"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "missouri"
+ },
+ "stateName": "Missouri",
+ "status": "Active",
+ "strategicFocus": "ToRCH Care & Value-Based Payment"
+}
