@@ -160,7 +160,7 @@ const RURAL_INTERVENTIONS = [
     physicianIncrease: 0,
     accessImprovement: 40,
     pipeline: "6–18 months",
-    description: "Capital investment, 30–50% access improvement",
+    description: "Capital investment; access gain is a model assumption — adjust to your setting",
   },
   {
     id: "chw",
@@ -170,7 +170,7 @@ const RURAL_INTERVENTIONS = [
     physicianIncrease: 0,
     accessImprovement: 20,
     pipeline: "Immediate",
-    description: "$45K/FTE, +20% care access for underserved",
+    description: "Cost per FTE and access gain are model assumptions",
   },
   {
     id: "fqhc",

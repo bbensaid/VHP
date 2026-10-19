@@ -21,12 +21,12 @@ interface RoleDefaults {
 const ROLE_DEFAULTS: Record<string, RoleDefaults> = {
   RN: {
     salary: 85000,
-    turnoverRate: 22,
+    turnoverRate: 16.4,
     recruitCost: 5000,
     onboardCost: 10000,
-    vacancyDays: 75,
+    vacancyDays: 83,
     agencyFillPremium: 120,
-    benchmark: "~22% national avg",
+    benchmark: "16.4% hospital RN turnover in 2024; 83 days to fill (NSI Nursing Solutions, 2025)",
   },
   Physician: {
     salary: 300000,
@@ -35,7 +35,7 @@ const ROLE_DEFAULTS: Record<string, RoleDefaults> = {
     onboardCost: 30000,
     vacancyDays: 120,
     agencyFillPremium: 180,
-    benchmark: "~6% national avg",
+    benchmark: "Illustrative default — enter your own rate",
   },
   "Advanced Practice Provider": {
     salary: 130000,
@@ -44,7 +44,7 @@ const ROLE_DEFAULTS: Record<string, RoleDefaults> = {
     onboardCost: 12000,
     vacancyDays: 90,
     agencyFillPremium: 150,
-    benchmark: "~14% national avg",
+    benchmark: "Illustrative default — enter your own rate",
   },
   Technician: {
     salary: 55000,
@@ -53,7 +53,7 @@ const ROLE_DEFAULTS: Record<string, RoleDefaults> = {
     onboardCost: 5000,
     vacancyDays: 45,
     agencyFillPremium: 80,
-    benchmark: "~28% national avg",
+    benchmark: "Illustrative default — enter your own rate",
   },
   "Clinical Support": {
     salary: 42000,
@@ -62,7 +62,7 @@ const ROLE_DEFAULTS: Record<string, RoleDefaults> = {
     onboardCost: 4000,
     vacancyDays: 30,
     agencyFillPremium: 60,
-    benchmark: "~32% national avg",
+    benchmark: "Illustrative default — enter your own rate",
   },
 };
 
@@ -358,6 +358,7 @@ export function TurnoverROITab() {
                 <span className="font-semibold">Est. turnover reduction:</span>{" "}
                 {RETENTION_PROGRAMS[retentionProgram].turnoverReduction}%
               </p>
+              <p className="mt-1 text-slate-400">Planning assumptions, not measured program effects — calibrate to your own retention data.</p>
             </div>
           </div>
           <div>
