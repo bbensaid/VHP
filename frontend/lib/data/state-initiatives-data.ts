@@ -63,7 +63,7 @@ export const STATE_INITIATIVES: Record<string, StateInitiativesProfile> = {
         id: "vt-ahead",
         name: "AHEAD Model (Vermont)",
         description:
-          "Vermont signed its state agreement for CMS's AHEAD (States Advancing All-Payer Health Equity Approaches and Development) Model in January 2025 and withdrew in July 2026, after CMS renegotiation cut the expected EAST Fund from roughly $138M to a cap near $10M — before its Cohort 2 performance period (January 2028) began.",
+          "Vermont signed its state agreement for CMS's AHEAD Model (originally States Advancing All-Payer Health Equity Approaches and Development; renamed Achieving Healthcare Efficiency through Accountable Design in September 2025) in January 2025 and withdrew in July 2026, after CMS renegotiation cut the expected EAST Fund from roughly $138M to a cap near $10M — before its Cohort 2 performance period (January 2028) began.",
         type: "Federal Program",
         status: "Withdrawn",
         year: 2025,
