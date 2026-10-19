@@ -1,0 +1,136 @@
+{
+ "_createdAt": "2026-03-10T14:00:39Z",
+ "_id": "caseStudy-002",
+ "_rev": "1jJ4sZyHE3MNejrOV85A2B",
+ "_type": "caseStudy",
+ "_updatedAt": "2026-07-31T18:27:15Z",
+ "body": [
+  {
+   "_key": "k473",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k474",
+     "_type": "span",
+     "marks": [],
+     "text": "The Clinical Challenge"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "k475",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k476",
+     "_type": "span",
+     "marks": [],
+     "text": "Sepsis affects 1.7M Americans annually and is responsible for 270,000 deaths — the leading cause of in-hospital mortality. Early identification is the single most important determinant of outcomes, but clinical signs are often subtle in early sepsis, and busy clinical environments create cognitive overload that delays recognition."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "k477",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k478",
+     "_type": "span",
+     "marks": [],
+     "text": "Algorithm Development"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "k479",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k480",
+     "_type": "span",
+     "marks": [],
+     "text": "KPNC's machine learning sepsis model was trained on 648,000 patient encounters and uses 70+ input variables including vital signs, lab values, nursing assessments, and medication administration patterns. The model produces a risk score updated every 15 minutes with a positive predictive value of 32% for sepsis onset within 12 hours — compared to 7% for SIRS-based criteria."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "k481",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k482",
+     "_type": "span",
+     "marks": [],
+     "text": "Implementation Approach"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "k483",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k484",
+     "_type": "span",
+     "marks": [],
+     "text": "The implementation team learned from failed earlier alert systems that alert fatigue is the primary barrier to clinical adoption. Key design decisions: alerts fire to the bedside RN rather than through the EHR notification system, alert threshold set to generate no more than 2 alerts per nurse per shift, clear escalation protocol attached to every alert, and daily feedback to clinical units on alert performance."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "k485",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k486",
+     "_type": "span",
+     "marks": [],
+     "text": "Outcomes"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "k487",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k488",
+     "_type": "span",
+     "marks": [],
+     "text": "At 24-month follow-up, sepsis mortality decreased 17% across the 21-hospital system. Time from first clinical deterioration signal to antibiotic administration decreased by 4.2 hours. The cost-effectiveness analysis estimates $34M in annual savings from prevented mortality, shorter ICU stays, and reduced sepsis complications. Alert acceptance rates exceeded 78%, unusually high for clinical decision support."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  }
+ ],
+ "chapterRef": "4",
+ "clientType": "Integrated Delivery Network",
+ "metrics": [
+  "17% reduction in sepsis mortality",
+  "21 hospitals deployed",
+  "4.2-hour earlier detection",
+  "$34M estimated annual savings from prevented deaths and complications"
+ ],
+ "pillar": "Technology",
+ "slug": {
+  "_type": "slug",
+  "current": "kaiser-permanente-ai-sepsis-detection"
+ },
+ "summary": "Kaiser Permanente Northern California deployed an ML-based sepsis early warning system across 21 hospitals, reducing sepsis mortality by 17% over two years through earlier detection and standardized response protocols.",
+ "title": "Kaiser Permanente Northern California: AI-Augmented Sepsis Detection at Scale"
+}

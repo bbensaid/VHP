@@ -1,0 +1,33 @@
+{
+"caseStudy-002": {
+ "title": "Kaiser Permanente Northern California: Automated Early Warning for Clinical Deterioration",
+ "summary": "Kaiser Permanente Northern California's Advance Alert Monitor scores adult ward patients hourly from the EHR and routes high-risk alerts to remote nurses who activate rapid-response teams. A staggered deployment across 19 hospitals, reported in NEJM in 2020, found lower 30-day mortality after an alert.",
+ "metrics": ["Adjusted relative risk 0.84 for 30-day mortality after an alert (NEJM 2020)", "19 hospitals in the staggered evaluation; 21 hospitals today", "548,838 non-ICU hospitalizations studied (2016–2019)", "An estimated 520 deaths avoided over the study period"],
+ "sections": [
+  ["The Clinical Challenge", "Many unplanned ICU transfers and deaths among hospital ward patients follow hours of measurable decline in vital signs and lab values. Busy ward teams often miss the early pattern, and rapid-response teams arrive late."],
+  ["The System", "The Advance Alert Monitor (AAM) program scans nearly 100 data elements from each adult non-ICU patient's electronic record every hour and produces a deterioration risk score. When a score crosses the alert threshold, the alert goes not to a bedside pop-up but to a team of remote nurses, who review the record and contact the on-site rapid-response team when action is needed. The model flags clinical deterioration broadly, not sepsis alone."],
+  ["The Evaluation", "Escobar and colleagues (New England Journal of Medicine, 2020) studied the program's staggered rollout across 19 hospitals between August 2016 and February 2019, covering 548,838 non-ICU hospitalizations. Mortality within 30 days of an alert was lower in the intervention cohort than in hospitals not yet using the program (adjusted relative risk 0.84; 95% CI 0.78–0.90), an estimated 520 deaths avoided over the study period."],
+  ["What Transfers", "Three design choices matter for any system copying this: a dedicated remote team absorbs the alert volume so bedside staff are not flooded; every alert is tied to a standardized response pathway; and a staggered rollout made a rigorous comparison possible. Kaiser now runs the system across 21 Northern California hospitals."]
+ ]
+},
+"caseStudy-004": {
+ "summary": "Intermountain Health's hospital-at-home program, launched in 2020 and run through its Castell population-health organization, delivers acute care at home to patients living near 16 Utah hospitals. Its results so far are self-reported by program leadership.",
+ "metrics": ["About 1,000 patients treated at home by late 2023 (Intermountain)", "Readmissions roughly 40% lower than comparable inpatients, as reported by program leadership (not independently audited)", "Available to patients near 16 Utah hospitals", "Operates under CMS's Acute Hospital Care at Home waiver"],
+ "sections": [
+  ["Program Overview", "Intermountain Health launched its hospital-at-home program in 2020, run through Castell, its population-health organization. Patients who would otherwise be admitted for an acute condition, and who live near one of 16 Intermountain hospitals in Utah, can receive that care at home under CMS's Acute Hospital Care at Home waiver."],
+  ["Clinical Operations Model", "Each patient receives remote vital-sign monitoring, daily in-home nursing visits, daily telehealth visits, and access to on-call nurses and physicians around the clock. Program leaders describe the coordination load as the hardest part: a home-care agency, the hospital, pharmacy, an infusion company and a durable-medical-equipment supplier all have to work as one team."],
+  ["Results to Date", "By late 2023 the program had treated about 1,000 patients at home. Its medical director reported readmission rates roughly 40% lower than for comparable patients treated entirely in the hospital, no serious adverse events at home, and lower overall costs; before launch, executives had projected savings of 15–30% per patient. These figures are self-reported and have not been published in a peer-reviewed evaluation."],
+  ["What Transfers", "Hospital at home depends on the federal waiver continuing, on a dense enough local population to keep visiting staff productive, and on contracts with the supply partners that replace the hospital's in-house services. Systems weighing the model should ask for audited outcomes, not only program-reported ones."]
+ ]
+},
+"caseStudy-005": {
+ "summary": "The California Maternal Quality Care Collaborative (CMQCC), founded in 2006, built hospital toolkits for the leading causes of maternal death. California's maternal mortality fell by nearly half between 2005–09 and 2011–13 while the national rate rose, and its hemorrhage toolkit became the template for national safety bundles.",
+ "metrics": ["Maternal mortality 13.1 → 7.0 per 100,000 live births (2005–09 to 2011–13)", "Hemorrhage toolkit adopted by 92% of California hospitals by 2016", "Severe maternal morbidity down 20.8% in collaborative hospitals vs 1.2% elsewhere (2014–2016)", "Founded 2006"],
+ "sections": [
+  ["CMQCC Background", "The California Maternal Quality Care Collaborative (CMQCC) was established in 2006 as a partnership of state public-health officials, hospitals and clinicians to reduce preventable maternal deaths and complications. California's maternal mortality fell from 13.1 deaths per 100,000 live births in 2005–09 to 7.0 in 2011–13, while the national rate continued to rise."],
+  ["The Toolkit Approach", "CMQCC's toolkits give hospitals standardized, evidence-based protocols for the leading preventable causes of maternal death, starting with obstetric hemorrhage (introduced in 2010) and severe hypertension. Each pairs recognition triggers with a standardized response, drills and measurement. By 2016, 92% of California hospitals had adopted the hemorrhage toolkit."],
+  ["Measured Results", "In a large quality-improvement collaborative, severe maternal morbidity among hemorrhage patients fell 20.8% from 2014 to 2016 in participating hospitals, compared with 1.2% in non-participating hospitals. A separate analysis found the hemorrhage toolkit saved hospitals money and was cost-effective."],
+  ["Replication", "The toolkits became the model for the national maternal safety bundles promoted through the Alliance for Innovation on Maternal Health (AIM). The transferable lesson is the combination: a statewide data system that finds every case, standardized bundles, and a collaborative that helps hospitals implement them rather than simply publishing guidance."]
+ ]
+}
+}
