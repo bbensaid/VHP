@@ -30,8 +30,8 @@ function GlobalPolicyBody() {
         <div className="flex items-center gap-3 mb-6">
           <span className="text-2xl">🌍</span>
           <div>
-            <h2 className="ty-h3 font-bold text-slate-900">OECD Health System Comparison (2023 Data)</h2>
-            <p className="text-sm text-slate-500">Key performance metrics across peer nations — GDP spend, life expectancy, coverage, and administrative burden</p>
+            <h2 className="ty-h3 font-bold text-slate-900">Peer Health System Models</h2>
+            <p className="text-sm text-slate-500">How peer nations organize coverage</p>
           </div>
         </div>
         <div className="overflow-x-auto">
@@ -40,36 +40,30 @@ function GlobalPolicyBody() {
               <tr className="border-b border-slate-200">
                 <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">Country</th>
                 <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">System Type</th>
-                <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">% GDP on Health</th>
-                <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">Life Expectancy</th>
-                <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">Coverage</th>
-                <th className="text-left py-2 text-xs font-bold uppercase tracking-wider text-slate-500">Admin Cost % Spend</th>
+                <th className="text-left py-2 text-xs font-bold uppercase tracking-wider text-slate-500">Coverage</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
               {[
-                { country: "United States", type: "Multi-payer hybrid", gdp: "16.6%", le: "76.4 yrs", coverage: "~92% (8M+ uninsured)", admin: "~34%" },
-                { country: "Germany", type: "Bismarck (SHI)", gdp: "12.8%", le: "80.6 yrs", coverage: "99.9%", admin: "~14%" },
-                { country: "France", type: "Bismarck + UHC", gdp: "12.1%", le: "82.1 yrs", coverage: "99.9%", admin: "~12%" },
-                { country: "Canada", type: "Single-payer (provincial)", gdp: "11.9%", le: "81.3 yrs", coverage: "100%", admin: "~12%" },
-                { country: "United Kingdom", type: "Beveridge (NHS)", gdp: "10.9%", le: "80.7 yrs", coverage: "100%", admin: "~13%" },
-                { country: "Japan", type: "SHI with tight regulation", gdp: "11.5%", le: "84.3 yrs", coverage: "100%", admin: "~11%" },
-                { country: "Switzerland", type: "Regulated multi-payer", gdp: "11.3%", le: "83.4 yrs", coverage: "100%", admin: "~16%" },
-                { country: "Australia", type: "Medicare + private mix", gdp: "9.8%", le: "83.2 yrs", coverage: "100%", admin: "~13%" },
+                { country: "United States", type: "Multi-payer hybrid", coverage: "92% insured — 26.4M uninsured (Census, 2023)" },
+                { country: "Germany", type: "Bismarck (SHI)", coverage: "99.9%" },
+                { country: "France", type: "Bismarck + UHC", coverage: "99.9%" },
+                { country: "Canada", type: "Single-payer (provincial)", coverage: "100%" },
+                { country: "United Kingdom", type: "Beveridge (NHS)", coverage: "100%" },
+                { country: "Japan", type: "SHI with tight regulation", coverage: "100%" },
+                { country: "Switzerland", type: "Regulated multi-payer", coverage: "100%" },
+                { country: "Australia", type: "Medicare + private mix", coverage: "100%" },
               ].map((row) => (
                 <tr key={row.country} className={`hover:bg-slate-50 ${row.country === "United States" ? "bg-blue-50" : ""}`}>
                   <td className="py-3 pr-4 font-bold text-slate-800">{row.country}</td>
                   <td className="py-3 pr-4 text-slate-500 text-xs">{row.type}</td>
-                  <td className={`py-3 pr-4 font-bold text-xs ${row.country === "United States" ? "text-rose-600" : "text-emerald-700"}`}>{row.gdp}</td>
-                  <td className={`py-3 pr-4 font-bold text-xs ${row.country === "United States" ? "text-rose-600" : "text-slate-700"}`}>{row.le}</td>
                   <td className="py-3 pr-4 text-slate-600 text-xs">{row.coverage}</td>
-                  <td className={`py-3 font-bold text-xs ${row.country === "United States" ? "text-rose-600" : "text-slate-600"}`}>{row.admin}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-        <p className="text-xs text-slate-400 mt-4">Sources: OECD Health Statistics 2023, Commonwealth Fund Mirror, Mirror 2023. US life expectancy from CDC National Vital Statistics 2023. SHI = Statutory Health Insurance.</p>
+        <p className="text-xs text-slate-400 mt-4">US health spending was 18.0% of GDP in 2024 (CMS National Health Expenditure Accounts); US life expectancy was 78.4 years in 2023 (CDC NCHS). For cross-country spending and outcomes, use the current OECD Health Statistics release. SHI = Statutory Health Insurance.</p>
       </div>
 
       {/* Core Domains */}
@@ -80,10 +74,10 @@ function GlobalPolicyBody() {
             title: "International Drug Pricing Models",
             items: [
               "AMNOG (Germany): new drugs assessed for added benefit vs. standard of care — negotiated price or reference pricing",
-              "NICE (UK): cost-effectiveness threshold £20K–£30K per QALY — drugs above threshold must negotiate",
+              "NICE (UK): cost-effectiveness threshold, historically £20,000–£30,000 per QALY",
               "HTA (Health Technology Assessment): France, Germany, Australia all use HTA gating for formulary entry",
-              "Reference pricing: 35+ countries use external reference pricing vs. a basket of peer nations",
-              "IRA drug negotiation: US first attempt at Medicare price negotiation — 10 drugs in 2026 at 64%–79% discounts",
+              "Reference pricing: many countries set drug prices against a basket of peer nations",
+              "IRA drug negotiation: the first US Medicare price negotiation — 10 drugs from 2026 at 38%–79% below list (CMS)",
               "US vs. peers: US drug prices average 2.56× higher than OECD median (RAND 2021)",
             ],
           },
@@ -91,11 +85,11 @@ function GlobalPolicyBody() {
             icon: "🏥",
             title: "Single-Payer & Universal Coverage Models",
             items: [
-              "NHS (UK): government owns hospitals, employs physicians — Beveridge model; per-capita spend $4,315 vs. US $12,318",
+              "NHS (UK): government owns most hospitals and employs most physicians — the Beveridge model",
               "Medicare Canada: provincial single-payer for hospital + physician services; private supplemental common",
               "Taiwan NHI: single-payer universal coverage since 1995; smart card at every encounter; global budget",
-              "German SHI: 100+ non-profit sickness funds; income-based premiums; all funds cover same benefits",
-              "Medicare for All (US): Sanders/Jayapal bill — eliminates private insurance; $30–$40T federal cost 10yr",
+              "German SHI: competing non-profit sickness funds; income-based contributions; a common benefit package",
+              "Medicare for All (US): Sanders/Jayapal bills would replace private insurance; estimated $32–34T in new federal spending over 10 years",
               "Public option models: state-based (WA, CO, OR) — government plan competes alongside private insurance",
             ],
           },
@@ -105,7 +99,7 @@ function GlobalPolicyBody() {
             items: [
               "2023 Commonwealth Fund Mirror, Mirror: US ranks last of 10 wealthy nations overall",
               "US ranks last: access to care, equity, administrative efficiency — ranks high on specialty care quality",
-              "Top performers (2023): Australia, Netherlands, New Zealand — strong primary care, lower admin burden",
+              "Top performers: Commonwealth Fund Mirror, Mirror 2024 ranked Australia, the Netherlands and the UK highest of 10 countries; the US last",
               "Access dimension: US worst on affordability and timeliness — cost barriers unique in peer group",
               "Equity dimension: US last — largest income-based disparities in care access and quality outcomes",
               "Health outcomes: US 10th of 10 — life expectancy, infant mortality, preventable deaths all lag peers",
@@ -118,20 +112,17 @@ function GlobalPolicyBody() {
               "UK GP gatekeeping: registered GP required for specialist referral — controls specialist utilization + cost",
               "Dutch family medicine: all citizens register with a GP; capitation payment model per registered patient",
               "Canadian fee-for-service primary care transitioning to capitation — family health teams in Ontario",
-              "Direct Primary Care (US parallel): membership-based; avoids insurance billing; 1,000+ DPC practices",
+              "Direct Primary Care (US parallel): membership-based practices that avoid insurance billing",
               "Patient-centered medical home (PCMH): US model aligned with UK GP approach — NCQA certification",
-              "Primary care spend: US 5–7% of health spend on primary care vs. 10–12% in UK/Canada/Australia",
+              "Primary care spend: the US devotes a smaller share of health spending to primary care than most peers",
             ],
           },
           {
             icon: "🧮",
             title: "Administrative Cost Drivers",
             items: [
-              "US administrative costs: 34% of health spend — $1,055 per capita vs. Canada $551 (NEJM 2019)",
-              "Billing complexity: US payers require 1,800+ unique prior auth forms vs. 1 form in single-payer systems",
-              "CATO/McKinsey: simplified billing in single-payer could save $220B–$600B annually",
-              "Physician admin time: US physicians spend 16.6% of professional time on admin vs. 2.5% in Canada",
-              "Claims denials: 17% of in-network claims initially denied in US — no parallel in single-payer systems",
+              "US administrative costs: 34.2% of health expenditures vs. 17.0% in Canada — $2,497 vs. $551 per capita in 2017 (Himmelstein et al., Annals of Internal Medicine, 2020)",
+              "Claims denials: HealthCare.gov insurers denied about 17% of in-network claims in 2021 (KFF)",
               "EHR interoperability: US fragmentation increases admin burden; NHS Spine achieves near-universal data sharing",
             ],
           },
@@ -139,10 +130,10 @@ function GlobalPolicyBody() {
             icon: "🎓",
             title: "Lessons for US Reform",
             items: [
-              "Lesson 1 — Primary care investment: universal systems spend 2× more on primary care relative to specialty",
+              "Lesson 1 — Primary care investment: peer systems put a larger share of spending into primary care",
               "Lesson 2 — Global budgeting: Canadian/UK global budgets control spending without rationing access",
               "Lesson 3 — Drug price negotiation: all peer nations negotiate or regulate drug prices systematically",
-              "Lesson 4 — Administrative simplification: standardized billing + single payer reduces overhead 20–30%",
+              "Lesson 4 — Administrative simplification: standardized billing and fewer payers lower overhead",
               "Lesson 5 — Universal coverage: 100% coverage correlates with better outcomes at lower per-capita cost",
               "Lesson 6 — Social safety net: health outcomes correlated with housing, food, childcare spending levels",
             ],
@@ -170,7 +161,7 @@ function GlobalPolicyBody() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
             { label: "US Leads", color: "bg-white border-emerald-200", icon: "✅", items: ["Specialty care quality and innovation output", "Cancer 5-year survival rates (breast, prostate, colon)", "Medical device and biopharma R&D investment", "Rare disease treatment availability + FDA innovation pathway"] },
-            { label: "US Lags", color: "bg-white border-rose-200", icon: "⚠️", items: ["Life expectancy (76.4 yrs — last in peer group)", "Maternal and infant mortality rates", "Administrative cost efficiency (34% vs. 11–16%)", "Coverage universality (8M+ remain uninsured)"] },
+            { label: "US Lags", color: "bg-white border-rose-200", icon: "⚠️", items: ["Life expectancy (78.4 years in 2023 — below peer nations)", "Maternal and infant mortality rates", "Administrative cost efficiency (34% vs. 17% in Canada)", "Coverage universality (8M+ remain uninsured)"] },
             { label: "Reform Levers", color: "bg-white border-blue-200", icon: "🔧", items: ["Universal coverage: public option or Medicaid expansion in remaining 10 states", "Drug negotiation: IRA precedent → expand to all Medicare + Medicaid drugs", "Admin simplification: single claim form, uniform prior auth standards", "Primary care investment: redirect 2–3% specialty spend to primary + prevention"] },
           ].map((col) => (
             <div key={col.label} className={`rounded-xl p-5 border ${col.color}`}>
