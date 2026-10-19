@@ -49,11 +49,12 @@ function ValueBasedCareBody() {
             </thead>
             <tbody className="divide-y divide-slate-100">
               {[
-                { model: "MSSP Basic A/B", upside: "40–50%", downside: "None (upside only)", cap: "N/A", aapm: false },
-                { model: "MSSP Basic C/D/E", upside: "40–50%", downside: "30% of losses", cap: "4–8% of benchmark", aapm: true },
-                { model: "MSSP Enhanced", upside: "60%", downside: "60% of losses", cap: "8% of benchmark", aapm: true },
-                { model: "ACO REACH (Pro/Gbl)", upside: "Up to 100%", downside: "Up to 100% of losses", cap: "Corridor mechanism", aapm: true },
-                { model: "BPCI-A (bundles; ended 2025)", upside: "Gain vs. target price", downside: "Repay vs. target price", cap: "Stop-loss option", aapm: true },
+                { model: "MSSP Basic, Levels A–B", upside: "Up to 40%", downside: "None (upside only)", cap: "N/A", aapm: false },
+                { model: "MSSP Basic, Levels C–D", upside: "Up to 50%", downside: "30% of losses", cap: "Small revenue-based cap", aapm: false },
+                { model: "MSSP Basic, Level E", upside: "Up to 50%", downside: "30% of losses", cap: "8% of revenue, max 4% of benchmark", aapm: true },
+                { model: "MSSP Enhanced", upside: "Up to 75%", downside: "40–75% of losses", cap: "15% of benchmark", aapm: true },
+                { model: "ACO REACH (ends Dec 2026; LEAD from 2027)", upside: "50% Professional / 100% Global", downside: "Same as upside", cap: "Risk corridors", aapm: true },
+                { model: "TEAM (mandatory episodes from Jan 2026; Tracks 2–3 qualify as Advanced APMs)", upside: "Gain vs. target price", downside: "Repay vs. target price", cap: "Stop-gain / stop-loss limits", aapm: true },
                 { model: "Medicare Advantage", upside: "Full capitation retained", downside: "Full insurance risk", cap: "MLR ≥85% floor", aapm: false },
               ].map((row) => (
                 <tr key={row.model} className="hover:bg-slate-50">
@@ -74,11 +75,11 @@ function ValueBasedCareBody() {
         <p className="text-xs text-slate-400 mt-4">AAPM = Advanced APM (qualifies for QP bonus of +3.5% of Medicare payments). Risk cap = maximum loss exposure as % of benchmark expenditures. Sources: CMS Innovation Center, MSSP program specifications.</p>
       </div>
 
-      {/* Shared Savings Math + VBC Performance */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+      {/* Shared Savings Math */}
+      <div className="grid grid-cols-1 gap-6 mb-10">
         <div className="bg-white rounded-2xl border border-slate-200 p-6">
           <h3 className="font-bold text-slate-900 mb-1">Shared Savings Worked Example</h3>
-          <p className="text-sm text-slate-500 mb-5">Hypothetical 15,000-life MSSP Enhanced ACO, PY2024</p>
+          <p className="text-sm text-slate-500 mb-5">Hypothetical 15,000-life MSSP Enhanced ACO — illustrative arithmetic</p>
           <div className="space-y-4">
             {[
               { label: "Attributed lives", value: "15,000", note: "Part A + B beneficiaries" },
@@ -87,7 +88,7 @@ function ValueBasedCareBody() {
               { label: "Actual expenditure", value: "$176M", note: "Claims paid by CMS" },
               { label: "Gross savings", value: "$13M", note: "Benchmark − Actual" },
               { label: "MSR threshold (2%)", value: "$3.78M", note: "Must exceed to earn savings" },
-              { label: "ACO share (60%)", value: "$7.8M", note: "60% × $13M (if quality = 100%)" },
+              { label: "ACO share (75%)", value: "$9.75M", note: "75% × $13M (maximum rate, full quality)" },
             ].map((row) => (
               <div key={row.label} className="flex items-center justify-between p-2 rounded-lg hover:bg-slate-50">
                 <div>
@@ -99,40 +100,11 @@ function ValueBasedCareBody() {
             ))}
             <div className="border-t border-slate-200 pt-3 flex justify-between font-black text-slate-900 text-lg">
               <span>ACO Net Shared Savings</span>
-              <span className="text-emerald-700">$7.8M</span>
+              <span className="text-emerald-700">$9.75M</span>
             </div>
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl border border-slate-200 p-6">
-          <h3 className="font-bold text-slate-900 mb-1">VBC Performance Benchmarks</h3>
-          <p className="text-sm text-slate-500 mb-5">Top-quartile ACO performance metrics (CMS program data)</p>
-          <div className="space-y-4">
-            {[
-              { metric: "Total cost savings vs. benchmark", top: "8–12%", median: "3–5%", unit: "%" },
-              { metric: "30-day readmission rate reduction", top: "18–24%", median: "8–12%", unit: "%" },
-              { metric: "Preventable ED visit reduction", top: "15–20%", median: "5–9%", unit: "%" },
-              { metric: "Generic dispensing rate", top: ">92%", median: "82–87%", unit: "%" },
-              { metric: "HCC coding accuracy (RAF delta)", top: "+0.12–0.18", median: "+0.04–0.08", unit: "RAF" },
-              { metric: "Quality composite score (MSSP)", top: "95–100%", median: "75–85%", unit: "%" },
-            ].map((row) => (
-              <div key={row.metric} className="p-3 bg-slate-50 rounded-xl">
-                <div className="font-semibold text-slate-800 text-sm mb-2">{row.metric}</div>
-                <div className="flex items-center gap-6">
-                  <div className="text-center">
-                    <div className="font-black text-emerald-600 text-base">{row.top}</div>
-                    <div className="text-[10px] text-slate-400 uppercase tracking-wider">Top Quartile</div>
-                  </div>
-                  <div className="h-8 w-px bg-slate-200" />
-                  <div className="text-center">
-                    <div className="font-bold text-slate-500 text-base">{row.median}</div>
-                    <div className="text-[10px] text-slate-400 uppercase tracking-wider">Median ACO</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
 
       {/* Core Domains */}
@@ -142,21 +114,20 @@ function ValueBasedCareBody() {
             icon: "📊",
             title: "Alternative Payment Model (APM) Spectrum",
             items: [
-              "Category 1: FFS with reporting — quality bonuses, no financial risk",
-              "Category 2: FFS with performance linkage — MIPS, PCMH incentives",
-              "Category 3: APM with upside risk only — shared savings Track 1, Track 1+",
-              "Category 4: APM with two-sided risk — MSSP Enhanced, REACH, direct contracting",
-              "Category 5: Capitation — Medicare Advantage, FIDE-SNP, full-risk global budgets",
-              "Advanced APM (AAPM): threshold: ≥50% Medicare payments in AAPM for QP bonus",
+              "Category 1: fee-for-service with no link to quality or value",
+              "Category 2: fee-for-service linked to quality and value — pay-for-reporting, pay-for-performance (e.g., MIPS)",
+              "Category 3: APMs built on fee-for-service — 3A shared savings, 3B shared savings with downside risk (MSSP)",
+              "Category 4: population-based payment — condition-specific, comprehensive (capitation, global budgets), integrated finance and delivery",
+              "Advanced APM: Qualifying APM Participant status needs 75% of Medicare Part B payments or 50% of patients through Advanced APMs (from performance year 2025)",
             ],
           },
           {
             icon: "🏥",
             title: "Medicare ACO Models",
             items: [
-              "MSSP (Medicare Shared Savings Program): 480+ ACOs, 10.8M attributed beneficiaries",
-              "MSSP Basic: 5-year glide path from shared savings to two-sided risk (B/C/D/E tracks)",
-              "MSSP Enhanced: immediate two-sided risk; 60% sharing rate; risk cap: 8% of benchmark",
+              "MSSP (Medicare Shared Savings Program): 476 ACOs and 11.2 million assigned beneficiaries in 2025 (CMS)",
+              "MSSP Basic: glide path from upside-only (Levels A–B) to two-sided risk (Levels C–E)",
+              "MSSP Enhanced: two-sided risk; up to 75% sharing; loss cap 15% of benchmark",
               "ACO REACH (Realizing Equity, Access, Coordination): global capitation option",
               "Performance year benchmark: 3-year blended historical expenditure (risk-adjusted)",
               "Minimum savings rate (MSR): 2–3.9% before ACO earns any shared savings",
@@ -166,10 +137,10 @@ function ValueBasedCareBody() {
             icon: "⚖️",
             title: "Risk Adjustment Methodology",
             items: [
-              "CMS-HCC model: Hierarchical Condition Categories — 86 HCCs from ICD-10 codes",
+              "CMS-HCC model: 86 payment HCCs in V24, 115 in V28 (fully phased in for 2026)",
               "RAF score: average beneficiary = 1.0; complex patients = 2.0–4.0+",
               "Encounter data: Part A/B claims + Part D data — accurate coding critical for benchmark",
-              "Coding intensity adjustment: CMS applies 3.3–5.9% downward adjustment to MA plans",
+              "Coding intensity adjustment: statutory minimum 5.9% reduction to MA risk scores",
               "Prospective vs. concurrent risk scoring: REACH uses prospective (prior year) model",
               "Risk score normalization: prevents gaming through aggressive HCC coding",
             ],
@@ -178,12 +149,11 @@ function ValueBasedCareBody() {
             icon: "💰",
             title: "Shared Savings Calculation",
             items: [
-              "Benchmark = prior 3-year risk-adjusted per capita expenditures (blend ratio: 25/25/50)",
+              "Benchmark = prior 3-year risk-adjusted per capita expenditures (weights 10/30/60, most recent year heaviest)",
               "Actual expenditure = PBPM × attributed lives (Parts A + B, excluding Part D)",
               "Savings = Benchmark − Actual (if positive). Losses = Actual − Benchmark (two-sided)",
-              "Sharing rate: 40–60% of savings (MSSP Enhanced: 60%; Basic Track A: 40%)",
+              "Sharing rate: up to 40% (Basic A–B), 50% (Basic C–E), 75% (Enhanced)",
               "Quality performance multiplier: high-quality ACO earns full sharing rate",
-              "Typical ACO net shared savings: $300–$800 PMPY for high-performing ACOs",
             ],
           },
           {
@@ -256,10 +226,10 @@ function ValueBasedCareBody() {
               title: "Revenue Optimization",
               icon: "💹",
               levers: [
-                "Annual Wellness Visits (AWV): HCC capture at scale — $300–$600/patient",
+                "Annual Wellness Visits (AWV): preventive planning and accurate documentation",
                 "Hierarchical Condition Category (HCC) coding accuracy",
                 "Quality performance: HEDIS gap closure = full sharing rate retention",
-                "AAPM qualification: QP bonus = 3.5% of Medicare revenue",
+                "QP status: 1.88% incentive payment in 2026 (on 2024 performance), then a higher annual fee-schedule update (0.75% vs. 0.25%)",
               ],
             },
           ].map((cat) => (
