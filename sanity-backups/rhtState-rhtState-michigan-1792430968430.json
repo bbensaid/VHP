@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:41Z",
+ "_id": "rhtState-michigan",
+ "_rev": "G7Tfo59YVwcDW2O5CBrgsJ",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:41Z",
+ "awardAmount": "$173,000,000",
+ "description": "High School to Health Care workforce pipelines and an 'Aging in Place' blueprint for the Upper Peninsula.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Funding to transition high school students into local health professions.",
+   "title": "Workforce Pipeline"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Community-based care focus for the Upper Peninsula.",
+   "title": "Healthy Aging Blueprint"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Student Pipeline",
+   "status": "In Progress",
+   "target": "500 Students"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Nursing Home Avoidance",
+   "status": "Pending",
+   "target": "Increased"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "michigan"
+ },
+ "stateName": "Michigan",
+ "status": "Active",
+ "strategicFocus": "Aging in Place & Pipelines"
+}

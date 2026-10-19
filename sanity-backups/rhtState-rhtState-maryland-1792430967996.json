@@ -1,0 +1,53 @@
+{
+ "_createdAt": "2026-03-10T13:54:24Z",
+ "_id": "rhtState-maryland",
+ "_rev": "eq5oAYPsLy0PFYEDJSOcMK",
+ "_type": "rhtState",
+ "_updatedAt": "2026-10-08T01:48:32Z",
+ "awardAmount": "$168,000,000",
+ "description": "Maryland’s RHT plan ($168.2 million in Budget Period 1) is organized in three pillars — transforming the rural health workforce, promoting sustainable access and innovative care, and helping rural Marylanders eat for health — layered on a hospital system already paid under all-payer global budgets, which moved from the Total Cost of Care Model (ended December 31, 2025) into the CMS AHEAD Model in January 2026.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Maryland Health Care Commission grants ($6.3 million in Budget Period 1) to establish and expand rural primary care and strengthen chronic disease management to reduce avoidable hospital use. Maryland hospitals were already on all-payer global budgets, now under the CMS AHEAD Model.",
+   "title": "Expand Access to Primary Care"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Targeted workforce recruitment, mobile health units, and broadband expansion for the underserved Eastern Shore region.",
+   "title": "Eastern Shore Equity Initiative"
+  },
+  {
+   "_key": "ini-2",
+   "description": "Maryland Department of Labor funding ($15 million in Budget Period 1) for workforce pipeline training and for training, recruitment and retention of rural physicians, PAs, dentists and other advanced practice professionals, plus expanded registered apprenticeships.",
+   "title": "Workforce Pipeline & Retention"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Rural Primary Care Access Funding",
+   "status": "In Progress",
+   "target": "$6.3M (Budget Period 1)"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Eastern Shore Screenings",
+   "status": "In Progress",
+   "target": "+15,000/yr"
+  },
+  {
+   "_key": "metric-2",
+   "label": "Clinician Retention Rate",
+   "status": "Pending",
+   "target": "+12%"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "maryland"
+ },
+ "stateName": "Maryland",
+ "status": "Active",
+ "strategicFocus": "Rural Workforce, Access & Food for Health"
+}

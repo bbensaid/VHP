@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:32Z",
+ "_id": "rhtState-mississippi",
+ "_rev": "ZDU5b4qioPbFp0EQfvWZMg",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:32Z",
+ "awardAmount": "$206,000,000",
+ "description": "Creating 'Rural Healthcare Districts' (CRIS) and piloting EMS Treat-in-Place protocols.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Coordinated Regional Integrated Systems creating Healthcare Districts.",
+   "title": "CRIS Initiative"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Pilot program for on-site EMS care without transport.",
+   "title": "EMS Treat-in-Place"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Districts Formed",
+   "status": "Pending",
+   "target": "3 Districts"
+  },
+  {
+   "_key": "metric-1",
+   "label": "EMS Diversion",
+   "status": "In Progress",
+   "target": "15%"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "mississippi"
+ },
+ "stateName": "Mississippi",
+ "status": "Active",
+ "strategicFocus": "CRIS & Regional Integration"
+}
