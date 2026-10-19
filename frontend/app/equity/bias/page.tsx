@@ -48,10 +48,10 @@ function AlgorithmicBiasBody() {
               {[
                 { algo: "eGFR (CKD-EPI 2009)", bias: "Race adjustment inflated GFR for Black patients → delayed CKD staging", status: "Removed", statusColor: "bg-emerald-100 text-emerald-700", guideline: "CKD-EPI 2021 race-free equation — KDIGO/NKF endorsed" },
                 { algo: "VBAC Success Calculator", bias: "Race/ethnicity lowered predicted success for Black + Hispanic women", status: "Removed", statusColor: "bg-emerald-100 text-emerald-700", guideline: "ACOG 2021 guidance: remove race from VBAC counseling" },
-                { algo: "Spirometry Reference Values", bias: "Race-based lung function 'correction' reduced disability recognition for Black patients", status: "Revised", statusColor: "bg-amber-100 text-amber-700", guideline: "ATS 2022: race/ethnicity-neutral GLI reference equations recommended" },
-                { algo: "Cardiac Surgery Risk (STS)", bias: "Race included as risk variable in STS mortality model", status: "Under Review", statusColor: "bg-amber-100 text-amber-700", guideline: "STS reviewing racial variable inclusion — interim guidance issued" },
-                { algo: "Pulse Oximetry (SpO2)", bias: "Melanin absorbs IR light → SpO2 overestimation in darker skin", status: "Device Issue", statusColor: "bg-rose-100 text-rose-700", guideline: "FDA Safety Communication 2021; device manufacturers updating validation" },
-                { algo: "ASCVD 10-Year Risk (PCE)", bias: "Pooled Cohort Equations: race-specific equations may overestimate in some populations", status: "Evolving", statusColor: "bg-amber-100 text-amber-700", guideline: "ACC/AHA 2023: assess individual patient context; race not required input" },
+                { algo: "Spirometry Reference Values", bias: "Race-based lung function 'correction' reduced disability recognition for Black patients", status: "Revised", statusColor: "bg-amber-100 text-amber-700", guideline: "ATS 2023: race-neutral GLI Global reference equations recommended" },
+                { algo: "Cardiac Surgery Risk (STS)", bias: "Race included as risk variable in STS mortality model", status: "Under Review", statusColor: "bg-amber-100 text-amber-700", guideline: "Race variables under review by risk-model developers" },
+                { algo: "Pulse Oximetry (SpO2)", bias: "Melanin absorbs IR light → SpO2 overestimation in darker skin", status: "Device Issue", statusColor: "bg-rose-100 text-rose-700", guideline: "FDA Safety Communication 2021; draft guidance on testing across skin tones (January 2025)" },
+                { algo: "ASCVD 10-Year Risk (PCE)", bias: "Pooled Cohort Equations: race-specific equations may overestimate in some populations", status: "Evolving", statusColor: "bg-amber-100 text-amber-700", guideline: "AHA PREVENT equations (2023) estimate risk without race" },
               ].map((row) => (
                 <tr key={row.algo} className="hover:bg-slate-50">
                   <td className="py-3 pr-4 font-bold text-slate-800 text-sm">{row.algo}</td>
@@ -74,10 +74,9 @@ function AlgorithmicBiasBody() {
             icon: "⚠️",
             title: "Documented Algorithmic Bias Cases",
             items: [
-              "Optum Health algorithm (2019): used cost as proxy for health need — reduced care referrals for Black patients by 50% at equal actual need (Science 2019)",
+              "Care-management algorithm (Obermeyer et al., Science, 2019): used cost as a proxy for need; correcting it would raise the share of Black patients flagged for extra care from 17.7% to 46.5%",
               "Pulse oximetry: SpO2 overestimates O2 saturation in darker skin tones → 3× higher undetected hypoxemia in Black patients (NEJM 2020)",
               "Dermatology AI: trained on predominantly light-skin datasets — lower sensitivity on Fitzpatrick skin types V–VI",
-              "Epic Sepsis Model: Black patients 50% less likely to receive sepsis care bundle despite equal ESM score",
               "eGFR race correction: race-adjusted GFR formula delayed CKD diagnosis for Black patients; removed 2021",
               "VBAC calculator: included race/ethnicity as input — systematically underestimated VBAC success in Black + Hispanic women",
             ],
@@ -89,7 +88,7 @@ function AlgorithmicBiasBody() {
               "Training data bias: historical data encodes past discriminatory care patterns",
               "Label bias: proxy labels (cost, hospitalization) reflect access barriers, not true need",
               "Feature selection bias: including race as input variable rather than as stratification check",
-              "Representation gaps: clinical trial datasets 72% white male — generalizability failures",
+              "Representation gaps: training and trial datasets under-represent many groups — a generalizability risk",
               "Feedback loops: biased model → biased care → biased outcome data → retrained biased model",
               "Measurement bias: pulse ox, spirometry, GFR — physiological tools not validated across populations",
             ],
@@ -98,12 +97,12 @@ function AlgorithmicBiasBody() {
             icon: "📋",
             title: "Regulatory Response",
             items: [
-              "FDA Action Plan (2021): bias and equity as explicit pre-market submission requirement for AI/ML SaMD",
+              "FDA AI/ML SaMD Action Plan (2021): commits to methods for identifying and reducing bias — guidance, not a binding premarket requirement",
               "ONC HTI-1 Rule (2024): information blocking + decision support algorithm transparency requirements",
               "HHS Civil Rights Office: Section 1557 (ACA) prohibits discriminatory algorithms in covered entities",
-              "EU AI Act (2024): prohibited AI practices include discriminatory decision systems; health AI = high risk",
+              "EU AI Act (2024): most medical-device AI is classified high-risk, with data-governance and bias-mitigation obligations",
               "NIST AI RMF Playbook: GOVERN, MAP, MEASURE, MANAGE — bias as explicit risk category",
-              "CMS conditions: health equity data collection required for hospital inpatient quality reporting (2023)",
+              "CMS added health-equity and social-drivers screening measures to hospital quality reporting from 2023; the FY2026 IPPS rule dropped the social-drivers screening requirements",
             ],
           },
           {
@@ -115,7 +114,7 @@ function AlgorithmicBiasBody() {
               "Disparate impact analysis: 80% rule — minority group outcome rate ≥80% of majority group rate",
               "Calibration by subgroup: predicted vs. observed outcome rates disaggregated by race",
               "Intersectionality testing: Black women, elderly Hispanic men — compound subgroup analysis",
-              "Tools: IBM AI Fairness 360, Google What-If Tool, Aequitas (CMU), FairML open-source",
+              "Tools: IBM AI Fairness 360, Google What-If Tool, Aequitas (University of Chicago), Fairlearn",
             ],
           },
           {
@@ -134,7 +133,7 @@ function AlgorithmicBiasBody() {
             icon: "🏥",
             title: "Clinical Implementation",
             items: [
-              "EHR race/ethnicity data quality: improve self-reported collection; 32% of EHRs have incomplete race data",
+              "EHR race/ethnicity data quality: improve self-reported collection; missing and misclassified race data is common",
               "Physician education: implicit bias training + algorithm transparency CME requirements",
               "Remove race from clinical equations: eGFR, VBAC, ASCVD risk — race-free alternatives available",
               "Alert for equity gaps: EHR dashboard showing care gap disparities by patient demographics",
