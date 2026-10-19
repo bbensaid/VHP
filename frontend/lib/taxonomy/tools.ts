@@ -98,7 +98,7 @@ export const TOOLS: readonly Tool[] = [
     label: "APM Shared Savings Calculator",
     href: "/research-lab/payment-models?tab=apm-calc",
     pillars: ["economics"],
-    chapters: ["7"],
+    chapters: ["7", "12"],
     desc: "Model MSSP, ACO REACH, and global budget shared savings scenarios.",
   },
   {
@@ -133,7 +133,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/policy-quality?tab=scorecard",
     // Featured in the ch 6, 7 and 11 "Work This Chapter" tables.
     pillars: ["economics", "operations"],
-    chapters: ["6", "7", "11"],
+    chapters: ["6", "7", "11", "12"],
     desc: "Stress-test hospital financials against payer mix, Medicaid cuts, and global budget scenarios.",
   },
   {
@@ -198,7 +198,7 @@ export const TOOLS: readonly Tool[] = [
     label: "AI Clinical Governance Lab",
     href: "/research-lab/technology-ai?tab=ai",
     pillars: ["technology"],
-    chapters: ["5"],
+    chapters: ["5", "12"],
     desc: "Compare predictive models, detect algorithmic bias, build AI governance frameworks.",
   },
   {
@@ -271,7 +271,7 @@ export const TOOLS: readonly Tool[] = [
     label: "Health Equity Studio",
     href: "/research-lab/population-equity?tab=equity",
     pillars: ["equity"],
-    chapters: ["10"],
+    chapters: ["10", "12"],
     desc: "Analyze disparities across 10 outcomes and compute equity-weighted ICER via HEROI.",
   },
 
@@ -281,7 +281,7 @@ export const TOOLS: readonly Tool[] = [
     label: "Transformation Scorecard",
     href: "/research-lab/knowledge-workspace?tab=scorecard",
     pillars: ["operations"],
-    chapters: ["1", "11", "15"],
+    chapters: ["1", "11", "15", "12"],
     desc: "Executive five-pillar dashboard — score all five pillars, with the Equity Imperative as a cross-cutting indicator and Vermont RHT Program milestone tracking.",
   },
   {
@@ -289,7 +289,7 @@ export const TOOLS: readonly Tool[] = [
     label: "VBC Readiness Assessment",
     href: "/research-lab/knowledge-workspace?tab=readiness",
     pillars: ["operations", "economics"],
-    chapters: ["7", "11"],
+    chapters: ["7", "11", "12"],
     desc: "30-dimension, 6-domain self-assessment producing a readiness score and prioritized gap analysis. Vermont Act 68 presets included.",
   },
   {
