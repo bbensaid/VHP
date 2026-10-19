@@ -1,0 +1,22 @@
+
+######## analystNote-001 | 
+The V28 HCC model recalibration is materially compressing MA plan margins. Watch for benefit cuts in 2027 plan filings — particularly vision, dental, and OTC benefits — as plans absorb $31B in payment reductions over 3 years.
+CMS Risk Adjustment V28
+
+######## analystNote-002 | 
+HTR Clinical Intelligence
+CMS is actively reviewing SEP-1 in response to mounting evidence that strict bundle compliance doesn't correlate with mortality outcomes. Expect proposed rule changes by Q3 2026 shifting toward treat-to-target lactate protocols. Hospitals should avoid over-investing in current SEP-1 workflow automation.
+Sepsis Bundle Reform Coming
+
+######## analystNote-003 | 
+Travel RN rates have stabilized around $1,820/week but may find a new floor. Healthcare staffing agencies report contract volumes up 8% sequentially — early signal of demand recovery. The structural nursing shortage (450K gap projected by 2030) suggests rates won't return to 2021 lows.
+Travel Nurse Market: Watch Floors
+
+######## analystNote-004 | 
+Ambient AI documentation tools show 2.1-4.7% error rates in clinical note generation — including clinically significant errors. Mandatory clinician attestation (not passive sign-off) should be a non-negotiable governance requirement before any health system goes live. Passive acceptance creates liability exposure.
+GenAI Hallucination Risk
+
+######## analystNote-005 | 
+HTR Policy Intelligence
+Vermont's universal primary care mandate (Act 167) hinges on a CMS 1115 waiver approval worth ~$920M in federal matching funds. CMS has not pre-approved. If denied, Vermont faces a structural deficit that could force program rollback before 2028 implementation. This is the most consequential state health policy experiment of 2026.
+Vermont Act 167: Watch Waiver

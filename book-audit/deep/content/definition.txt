@@ -1,0 +1,133 @@
+
+######## definition-001 | ACO (Accountable Care Organization)
+A network of doctors, hospitals, and other healthcare providers that voluntarily coordinates care for Medicare patients, with the goal of delivering high-quality care and reducing costs. ACOs that meet quality standards and reduce spending below a benchmark share in the savings with CMS.
+ACO (Accountable Care Organization)
+
+######## definition-002 | All-Payer Model
+A healthcare payment system in which all payers — commercial insurance, Medicare, Medicaid, and others — pay the same rate for the same services from the same provider. Vermont and Maryland operate the only two all-payer systems in the U.S.
+
+######## definition-003 | Algorithmic Bias
+Systematic and repeatable errors in a computer system that create unfair outcomes, such as privileging one race, gender, or socioeconomic group over others. In healthcare, algorithmic bias has been documented in risk stratification, diagnostic imaging AI, and insurance underwriting systems.
+
+######## definition-004 | Benchmark (VBC)
+In value-based care, the expected or target cost for a defined population over a specified time period, against which actual spending is compared to determine shared savings or losses. Benchmark methodologies vary significantly across payers and programs.
+
+######## definition-005 | Bundled Payment
+A single combined payment to providers for all services related to a treatment or condition, such as a knee replacement from surgery through rehabilitation. Bundles incentivize coordination across the care continuum and shift episode-level risk to providers.
+
+######## definition-006 | Capitation
+A payment model in which a provider or health system receives a fixed amount per enrolled patient per month, regardless of how many services that patient uses. Capitation transfers insurance risk from payer to provider and incentivizes preventive care and care management.
+
+######## definition-007 | Certificate of Need (CON)
+A regulatory requirement in 36 states and Washington DC that healthcare facilities must obtain state approval before adding beds, acquiring major equipment, or opening new facilities. CON laws were designed to prevent duplication and control costs but are debated for limiting competition.
+Certificate of Need (CON)
+
+######## definition-008 | CHW (Community Health Worker)
+A frontline public health worker who is a trusted member of and has close understanding of the community served. CHWs bridge the gap between healthcare providers and the community, providing culturally competent health education, advocacy, and referrals to social services.
+CHW (Community Health Worker)
+
+######## definition-009 | CMMI (Center for Medicare and Medicaid Innovation)
+The federal center within CMS authorized under the ACA to test, evaluate, expand, and implement innovative health care payment and service delivery models. CMMI models include ACOs, bundled payments, direct contracting, and state innovation waivers.
+CMMI (Center for Medicare and Medicaid Innovation)
+
+######## definition-010 | CMS (Centers for Medicare and Medicaid Services)
+The federal agency within HHS that administers Medicare, Medicaid, the Children's Health Insurance Program (CHIP), and the Health Insurance Marketplace. CMS is the largest single payer in U.S. healthcare, covering approximately 160M Americans.
+CMS (Centers for Medicare and Medicaid Services)
+
+######## definition-011 | ERISA
+The Employee Retirement Income Security Act of 1974, a federal law that sets minimum standards for most voluntarily established retirement and health plans in private industry. ERISA Section 514 preempts state laws that relate to employee benefit plans, limiting states' ability to regulate self-insured employer health plans.
+
+######## definition-012 | eGFR (Estimated Glomerular Filtration Rate)
+A laboratory value used to assess kidney function, calculated from serum creatinine, age, sex, and historically race. The race-based correction factor was removed in 2021 following evidence that it systematically overestimated kidney function in Black patients, delaying access to transplant evaluation.
+eGFR (Estimated Glomerular Filtration Rate)
+
+######## definition-013 | Fee-for-Service (FFS)
+A payment model in which providers are paid for each service, test, or procedure performed. FFS is the dominant payment model in U.S. healthcare and has been criticized for incentivizing volume over value and contributing to overutilization of low-value services.
+Fee-for-Service (FFS)
+
+######## definition-014 | FQHC (Federally Qualified Health Center)
+Community-based healthcare providers that receive funds from the HRSA Health Center Program to provide primary care services in underserved areas. FQHCs serve patients on a sliding-fee scale based on ability to pay and receive enhanced Medicare and Medicaid reimbursement rates.
+FQHC (Federally Qualified Health Center)
+
+######## definition-015 | HEDIS (Healthcare Effectiveness Data and Information Set)
+A set of standardized performance measures developed by NCQA used by more than 90% of U.S. health plans to measure performance in key areas of care, service, and health. HEDIS measures are used for plan accreditation, provider contracting, and public reporting.
+HEDIS (Healthcare Effectiveness Data and Information Set)
+
+######## definition-016 | HCC (Hierarchical Condition Category)
+A risk adjustment methodology used by CMS to estimate expected healthcare costs for Medicare Advantage and ACO beneficiaries. HCC codes derived from ICD-10 diagnoses are used to calculate risk scores that adjust benchmark payments for patient health status.
+HCC (Hierarchical Condition Category)
+
+######## definition-017 | HIPAA (Health Insurance Portability and Accountability Act)
+A 1996 federal law that created national standards for the protection of sensitive patient health information (PHI). The Privacy Rule and Security Rule establish requirements for how covered entities and business associates handle, store, and transmit individually identifiable health information.
+HIPAA (Health Insurance Portability and Accountability Act)
+
+######## definition-018 | Hospital-at-Home
+A care model in which acute-level hospital services — including IV medications, monitoring, physician visits, and nursing care — are delivered in the patient's home. CMS's Acute Hospital Care at Home waiver allows approved hospitals to bill for home-based acute admissions.
+
+######## definition-019 | ICD-10-CM
+The International Classification of Diseases, 10th Revision, Clinical Modification — the standard diagnostic coding system used for documenting diagnoses in all U.S. healthcare settings. ICD-10-CM contains more than 70,000 codes and is updated annually by CMS and the CDC.
+
+######## definition-020 | IDR (Independent Dispute Resolution)
+The arbitration process established under the No Surprises Act (2022) to resolve payment disputes between out-of-network providers and health plans. The system has been overwhelmed with filings — exceeding 700,000 annually versus CMS's projected 22,000.
+IDR (Independent Dispute Resolution)
+
+######## definition-021 | LEP (Limited English Proficiency)
+A designation for individuals who do not speak English as their primary language and have a limited ability to read, speak, write, or understand English. Under Section 1557 of the ACA, healthcare entities receiving federal funds must provide meaningful access to services for LEP individuals.
+LEP (Limited English Proficiency)
+
+######## definition-022 | LLM (Large Language Model)
+A type of artificial intelligence model trained on large text datasets that can generate, summarize, and reason about natural language. In healthcare, LLMs are being deployed for clinical documentation assistance, prior authorization drafting, coding support, and patient-facing chatbots.
+LLM (Large Language Model)
+
+######## definition-023 | MSSP (Medicare Shared Savings Program)
+CMS's primary ACO program, allowing groups of providers to form ACOs that share in savings generated below a Medicare spending benchmark. MSSP offers Basic and Enhanced tracks with different risk levels, quality requirements, and shared savings rates.
+MSSP (Medicare Shared Savings Program)
+
+######## definition-024 | PBM (Pharmacy Benefit Manager)
+Third-party administrators that manage prescription drug benefits on behalf of health insurers, Medicare Part D plans, large employers, and other payers. PBMs negotiate drug prices with manufacturers, develop formularies, process claims, and contract with pharmacy networks. Major PBMs include CVS Caremark, Express Scripts, and OptumRx.
+PBM (Pharmacy Benefit Manager)
+
+######## definition-025 | PCMH (Patient-Centered Medical Home)
+A primary care model that provides comprehensive, coordinated, accessible, patient-centered care facilitated by appropriate use of technology and team-based care. NCQA PCMH recognition is a common standard for primary care practices seeking value-based contracts.
+PCMH (Patient-Centered Medical Home)
+
+######## definition-026 | Pharmacogenomics (PGx)
+The study of how genes affect a person's response to drugs. PGx testing identifies genetic variants that predict drug metabolism, efficacy, and adverse reactions, enabling more precise prescribing. Drug-gene pairs with strong clinical evidence include CYP2C19/clopidogrel and TPMT/thiopurines.
+Pharmacogenomics (PGx)
+
+######## definition-027 | QHIN (Qualified Health Information Network)
+A network certified under the Trusted Exchange Framework and Common Agreement (TEFCA) to enable nationwide health information exchange. QHINs serve as the backbone of ONC's interoperability initiative, connecting EHR systems, payers, public health agencies, and other participants.
+QHIN (Qualified Health Information Network)
+
+######## definition-028 | Risk Adjustment
+A statistical process used to account for differences in patient health status when comparing costs and outcomes across plans, providers, or populations. Risk adjustment prevents adverse selection by ensuring that providers or plans serving sicker populations receive higher payments.
+
+######## definition-029 | SDOH (Social Determinants of Health)
+The conditions in the environments where people are born, live, learn, work, play, worship, and age that affect a wide range of health, functioning, and quality-of-life outcomes and risks. SDOH are estimated to account for 30-55% of health outcomes, far exceeding the contribution of clinical care.
+SDOH (Social Determinants of Health)
+
+######## definition-030 | TEFCA (Trusted Exchange Framework and Common Agreement)
+ONC's framework for creating a universal floor for interoperability in the U.S. health system. TEFCA establishes common rules, terms, and governance for health information exchange through Qualified Health Information Networks (QHINs).
+TEFCA (Trusted Exchange Framework and Common Agreement)
+
+######## glossary-accountable-care-organization--aco- | Accountable Care Organization (ACO)
+A group of providers who come together voluntarily to give coordinated high-quality care to their Medicare patients.
+Accountable Care Organization (ACO)
+
+######## glossary-certificate-of-need--con- | Certificate of Need (CON)
+A legal document required in many states before proposed acquisitions, expansions, or creations of facilities are allowed.
+Certificate of Need (CON)
+
+######## glossary-interoperability | Interoperability
+The ability of different information systems to access, exchange, integrate and cooperatively use data.
+
+######## glossary-machine-learning--ml- | Machine Learning (ML)
+The use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy.
+Machine Learning (ML)
+
+######## glossary-relative-value-unit--rvu- | Relative Value Unit (RVU)
+A measure of value used in the United States Medicare reimbursement formula for physician services.
+Relative Value Unit (RVU)
+
+######## glossary-value-based-care | Value-Based Care
+A healthcare delivery model in which providers are paid based on patient health outcomes.

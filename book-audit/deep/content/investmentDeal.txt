@@ -1,0 +1,152 @@
+
+######## investmentDeal-abridge-series-e | Abridge raises $300M Series E, hits $5.3B valuation for ambient AI documentation
+Andreessen Horowitz and Khosla Ventures (Series E co-leads)
+One of the largest single AI/health-data rounds in this feed — a market signal for how much capital is flowing into the Technology pillar relative to Policy or Operations.
+https://www.fiercehealthcare.com/ai-and-machine-learning/ambient-ai-startup-abridge-scores-300m-series-e-backed-a16z-and-khosla
+Ambient AI clinical-documentation startup Abridge closed a $300M Series E led by Andreessen Horowitz and Khosla Ventures, valuing the company at $5.3B.
+clinical-documentation
+Abridge raises $300M Series E, hits $5.3B valuation for ambient AI documentation
+
+######## investmentDeal-aledade-ares-credit-facility | Aledade secures $500M senior secured credit facility from Ares
+Ares Credit funds (lender)
+A debt-financed bet on the Economics pillar specifically — the facility exists to bridge cash flow while fee-for-service revenue converts to value-based incentive payments.
+https://www.businesswire.com/news/home/20251201751473/en/Aledade-Secures-$500-Million-Credit-Facility-from-Ares-to-Support-Growth
+Ares Commercial Finance provided Aledade a $500M senior secured credit facility (expandable to $650M) to fund working capital as Aledade's ACO network transitions practices from fee-for-service to value-based, shared-savings contracts.
+Aledade secures $500M senior secured credit facility from Ares
+
+######## investmentDeal-aledade-cca-holding | Aledade acquires CCA Holding Company's Michigan value-based care operations
+Aledade's business is monetizing shared-savings incentives for independent practices — this is INCENTIVES-currency infrastructure consolidating.
+https://aledade.com/newsroom/aledade-news/aledade-acquires-michigan-vbc
+ACO enabler Aledade acquired the Michigan-based value-based care operations of CCA Holding Company, an ACO and physician organization serving over 500 independent primary-care and specialty practices in Southeast Michigan. Terms were not disclosed.
+CCA Holding Company (Michigan ACO and physician-organization operations)
+Aledade acquires CCA Holding Company's Michigan value-based care operations
+
+######## investmentDeal-amazon-one-medical | Amazon closes $3.9B acquisition of One Medical
+A non-traditional acquirer entering care delivery directly — a signal that Clinical-pillar delivery models are seen as valuable independent of an existing payer or health-system parent.
+https://www.mobihealthnews.com/news/amazon-closes-39b-acquisition-one-medical
+Amazon completed its $3.9B acquisition of primary-care provider One Medical, giving it roughly 815,000 members and 200+ physical clinics, after the FTC declined to sue to block the deal while continuing to investigate it.
+Amazon closes $3.9B acquisition of One Medical
+
+######## investmentDeal-cityblock-homeward-series-e | Cityblock Health raises $116M Series E and agrees to acquire Homeward Health
+General Catalyst (lead Series E investor)
+The most recent deal in this feed (a month before this audit) — good evidence the Economics pillar's VBC-for-underserved-populations thesis is still funded going into late 2026.
+https://www.fiercehealthcare.com/health-tech/cityblock-acquires-homeward-health-move-rural-healthcare-lands-116m-funding-round
+Value-based care provider Cityblock Health raised a $116M Series E led by General Catalyst and signed an all-stock agreement to acquire rural-health provider Homeward Health, extending its Medicaid- and Medicare-focused value-based model from urban into rural markets. The combined organization will serve nearly 250,000 people.
+Cityblock Health (with a signed all-stock agreement to acquire Homeward Health)
+Cityblock Health raises $116M Series E and agrees to acquire Homeward Health
+
+######## investmentDeal-cvs-oak-street-health | CVS Health completes $10.6B acquisition of Oak Street Health
+The largest care-delivery-redesign deal in this feed — a bet that payment incentives (Economics) can be captured by owning the clinical delivery model outright.
+https://www.cvshealth.com/news/company-news/cvs-health-completes-acquisition-of-oak-street-health.html
+CVS Health completed its all-cash acquisition of Oak Street Health, a value-based primary care provider for Medicare patients, in a deal valued at approximately $10.6B enterprise value.
+value-based-primary-care
+CVS Health completes $10.6B acquisition of Oak Street Health
+
+######## investmentDeal-hinge-health-ipo | Hinge Health IPO raises $437M, values company above $3B on debut
+A down-round-on-exit alongside Omada's up valuation the same month — public markets are pricing digital-Clinical-delivery companies unevenly, not rewarding the category uniformly.
+https://www.cnbc.com/2025/05/22/hinge-health-shares.html
+Musculoskeletal-care company Hinge Health priced its IPO at $32/share, raising $437M, and debuted on the NYSE on May 22, 2025, opening at $39.25 (up 23%) for a market cap above $3B — about half its $6.2B 2021 private valuation.
+Hinge Health IPO raises $437M, values company above $3B on debut
+
+######## investmentDeal-innovaccer-series-f | Innovaccer raises $275M Series F to scale its Healthcare Intelligence Cloud
+B Capital Group, Kaiser Permanente, Banner Health, Danaher Ventures, Generation Investment Management, M12 (Series F syndicate)
+A data/analytics-infrastructure raise — the INFORMATION currency the Technology pillar issues downstream to Economics and Clinical.
+https://techcrunch.com/2025/01/09/innovaccer-aims-to-become-healthcares-ai-powerhouse-with-275m-series-f/
+Innovaccer, a healthcare data platform vendor, raised $275M in a Series F combining primary and secondary shares to expand its AI and cloud data-analytics capabilities for health systems and payers.
+Innovaccer raises $275M Series F to scale its Healthcare Intelligence Cloud
+
+######## investmentDeal-model-n-kalderos | Model N acquires Kalderos to expand 340B compliance and gross-to-net analytics
+The clearest Policy-pillar deal in this feed: the entire product category exists because of the 340B statute's compliance requirements — AUTHORITY is the currency being capitalized on here, not INFORMATION or INCENTIVES.
+https://hitconsultant.net/2026/06/17/model-n-acquires-kalderos-340b-gtn/
+Model N acquired Kalderos, whose Truzo platform gives drug manufacturers and covered entities claims-level visibility into 340B Drug Pricing Program compliance — a federal statutory mandate, not a discretionary product category. Financial terms were not disclosed.
+Model N acquires Kalderos to expand 340B compliance and gross-to-net analytics
+
+######## investmentDeal-omada-health-ipo | Omada Health IPO values digital chronic-care company at $1.1B
+Public-market validation for virtual chronic-condition management, a Clinical-pillar care-delivery-redesign category rather than a pure data/IT play.
+https://www.cnbc.com/2025/06/06/omada-shares-open-at-23-in-nasdaq-debut-after-companys-ipo.html
+Omada Health priced its IPO at $19/share, raising $150M, and began trading on Nasdaq under OMDA on June 6, 2025, opening at $23/share (up 21%) for a roughly $1.1B valuation — the second major digital-health IPO of 2025.
+Omada Health IPO values digital chronic-care company at $1.1B
+
+######## investmentDeal-onecare-vermont-heidi-health | OneCare Vermont invests $320K in Heidi Health AI scribes for independent primary care
+OneCare Vermont Accountable Care Organization
+The one Vermont-specific, book-relevant deal in this feed: a real dollar figure, dated after OneCare's November 2025 wind-down announcement, tagged Technology because it is a documentation/data-tooling investment, not a care-delivery-model change.
+https://vermontbiz.com/news/2025/september/26/onecare-vermont-partnership-use-ai-assist-independent-primary-care-practices
+OneCare Vermont, the state's ACO, invested $320,000 to provide 12-month subscriptions of Heidi Health's AI medical scribe to independent Vermont primary-care practices and federally qualified health centers, starting with six practices and expanding to 13-15 more in phase two.
+OneCare Vermont invests $320K in Heidi Health AI scribes for independent primary care
+
+######## investmentDeal-optum-lhc-group | Optum (UnitedHealth Group) closes $5.4B acquisition of LHC Group
+UnitedHealth Group / Optum Health
+Home-based care delivery redesign at national scale — the same Clinical-pillar thesis as Oak Street/One Medical, applied to post-acute and home health instead of primary care.
+https://www.healthcaredive.com/news/unitedhealth-lhc-group-closes-buy-home-health/643245/
+UnitedHealth Group's Optum Health closed its $5.4B acquisition of LHC Group, one of the largest home-health and hospice providers in the U.S., after a delay for regulatory review.
+Optum (UnitedHealth Group) closes $5.4B acquisition of LHC Group
+
+######## investmentDeal-oracle-health-tefca-qhin | Oracle Health secures TEFCA QHIN designation
+Not a capital deal — logged as a partnership because it is a real, dated interoperability milestone with no disclosed dollar value, and TEFCA governance is exactly the Technology-pillar infrastructure Chapter 1's INFORMATION currency describes.
+https://www.oracle.com/news/announcement/oracle-health-secures-tefca-qhin-designation-2025-11-20/
+Oracle Health's subsidiary was designated a Qualified Health Information Network (QHIN) under TEFCA, the federal framework for nationwide health data exchange created under the 21st Century Cures Act, joining eHealth Exchange, Health Gorilla, Epic Nexus, MedAllies, KONZA and CommonWell.
+Oracle Health Information Network Inc.
+Oracle Health secures TEFCA QHIN designation
+
+######## investmentDeal-privia-evolent-aco | Privia Health to acquire Evolent Health's value-based ACO business for up to $113M
+Marked pending rather than closed: the source confirms the signed agreement and expected Q4 2025 close but not a verified completion date, so this entry does not assert a closing that hasn't been independently confirmed.
+https://ir.evolent.com/2025-09-23-Evolent-Announces-Strategic-Divestiture-of-its-Value-Based-Primary-Care-Business,-Evolent-Care-Partners
+Privia Health agreed to pay $100M in cash at closing (plus up to $13M more tied to 2025 MSSP shared-savings performance) for Evolent Health's value-based primary care ACO business, Evolent Care Partners. Evolent said it would use the proceeds to pay down its credit facility. The deal was expected to close in Q4 2025.
+Evolent Care Partners (Evolent Health's value-based primary care/ACO business)
+Privia Health to acquire Evolent Health's value-based ACO business for up to $113M
+
+######## investmentDeal-r1-rcm-take-private | TowerBrook and Clayton, Dubilier & Rice take R1 RCM private for $8.9B
+TowerBrook Capital Partners and Clayton, Dubilier & Rice
+Revenue-cycle management is administrative execution capacity — CAPACITY is the Operations pillar's currency, and PE is betting AI can compress the cost of that capacity.
+https://www.fiercehealthcare.com/finance/towerbrook-cdr-take-health-tech-company-r1-rcm-89b-deal
+Private equity firms TowerBrook Capital Partners and Clayton, Dubilier & Rice completed the take-private acquisition of revenue-cycle-management company R1 RCM for $8.9B ($14.30/share cash), delisting it from Nasdaq.
+TowerBrook and Clayton, Dubilier & Rice take R1 RCM private for $8.9B
+
+######## investmentDeal-risant-cone-health | Risant Health finalizes acquisition of Cone Health, its second health system
+Risant Health (Kaiser Foundation Hospitals)
+Second of Risant's planned five acquisitions — the pattern (not the single deal) is the Operations-pillar signal: capital consolidating hospital execution capacity nationally.
+https://www.wfdd.org/2024-12-04/risant-health-finalizes-acquisition-of-cone-health
+Risant Health closed its acquisition of North Carolina-based Cone Health nine months after Geisinger, adding four acute-care hospitals, a behavioral-health facility, a health plan and an ACO. Cone Health retains its name, governance and leadership. Per-deal purchase price was not disclosed, though Risant has separately said it would invest $1B in Cone Health.
+Risant Health finalizes acquisition of Cone Health, its second health system
+
+######## investmentDeal-risant-geisinger | Kaiser-backed Risant Health completes acquisition of Geisinger
+Risant Health (Kaiser Foundation Hospitals)
+Health-system M&A is execution-capacity consolidation — tagged Operations. Kaiser's $5B commitment is across Risant's whole multi-system roadmap, not this deal alone, so it is not booked here as this deal's value.
+https://about.kaiserpermanente.org/news/press-release-archive/risant-health-completes-acquisition-of-geisinger
+Risant Health, the nonprofit Kaiser Permanente formed to acquire and scale value-based nonprofit health systems (backed by a pledged $5B over five years across all planned acquisitions), completed its first acquisition, Pennsylvania-based Geisinger, in March 2024. Per-deal price was not disclosed.
+Kaiser-backed Risant Health completes acquisition of Geisinger
+
+######## investmentDeal-sanford-marshfield-merger | Sanford Health and Marshfield Clinic complete merger, forming $10B rural system
+Rural hospital consolidation is a direct Operations-pillar response to the execution-capacity strain rural systems face independently.
+https://www.fiercehealthcare.com/providers/sanford-health-marshfield-clinic-finalize-10b-health-system-merger
+Sanford Health and Marshfield Clinic Health System completed their merger on January 2, 2025, forming a combined $10B nonprofit system with 56 hospitals and roughly 56,000 employees across the Upper Midwest, six months after announcing intent to combine.
+Marshfield Clinic Health System
+Sanford Health and Marshfield Clinic complete merger, forming $10B rural system
+
+######## investmentDeal-truveta-series-c | Truveta lands $320M Series C to build a genomics-scale health-data platform
+Providence Health & Services, Trinity Health, Regeneron, Illumina and 17 health systems (Series C syndicate)
+Provider-funded data infrastructure — health systems investing upstream in their own Technology-pillar dependency rather than waiting on a vendor.
+https://www.geekwire.com/2025/seattles-newest-unicorn-truveta-lands-320m-to-fuel-creation-of-massive-new-genome-project/
+Truveta, a health-data company founded and funded by a consortium of health systems, raised $320M in a Series C that pushed its valuation above $1B, with Regeneron and Illumina among the investors backing a new genome-scale data project.
+Truveta lands $320M Series C to build a genomics-scale health-data platform
+
+######## investmentDeal-turquoise-health-series-c | Turquoise Health raises $40M Series C to run healthcare's price-transparency infrastructure
+Oak HC/FT (lead), with Andreessen Horowitz, Adams Street Partners and Yosemite
+Tagged Policy rather than Technology: Turquoise Health's product exists to operationalize the federal Hospital Price Transparency Rule and No Surprises Act — the capital is being deployed against a statutory mandate, which is the Policy pillar's AUTHORITY currency, even though the deliverable is a data platform.
+https://www.businesswire.com/news/home/20260317136906/en/Turquoise-Health-Announces-$40-Million-Series-C-to-Become-the-Operating-System-for-Healthcare-Contracts-and-Payments
+Turquoise Health, which turns hospital and payer price-transparency-rule and No Surprises Act filings into usable contract and payment data, raised a $40M Series C led by Oak HC/FT, bringing its total raised to roughly $100M.
+Turquoise Health raises $40M Series C to run healthcare's price-transparency infrastructure
+
+######## investmentDeal-vytalize-health-2025-raise | Vytalize Health raises $55M to scale its value-based primary care platform
+Jory Capital and existing investors
+Same INCENTIVES-currency category as Aledade — a second, independent data point that Economics-pillar VBC enablement is still attracting fresh capital in 2025.
+https://www.trysignalbase.com/news/funding/vytalize-health-secures-55m-to-transform-value-based-care-for-independent-physicians-nationwide
+Vytalize Health, a value-based care enabler for independent primary-care physicians serving Medicare patients, raised $55M to continue scaling its ACO and shared-savings platform.
+Vytalize Health raises $55M to scale its value-based primary care platform
+
+######## investmentDeal-waystar-iodine-software | Waystar closes $1.25B acquisition of Iodine Software
+A second large RCM/Operations-pillar deal within three months of R1 RCM going private — consistent capital pressure on administrative execution capacity.
+https://www.fiercehealthcare.com/health-tech/waystar-buy-iodine-software-125b-boost-ai-enabled-revenue-cycle-management
+Revenue-cycle payments platform Waystar completed its $1.25B acquisition of AI-driven clinical-intelligence company Iodine Software from shareholders led by Advent International, funded 50/50 in cash and stock, to extend AI automation across the revenue cycle.
+clinical-intelligence
+Waystar closes $1.25B acquisition of Iodine Software
