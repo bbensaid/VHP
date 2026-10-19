@@ -350,13 +350,11 @@ Table of Contents
 >
 > [12.6 A Framework for Selecting Advisory Support 207](#a-framework-for-selecting-advisory-support)
 >
-> [12.7 The Role of External Technical Assistance in State-Level Transformation 207](#the-role-of-external-technical-assistance-in-state-level-transformation)
+> [12.7 Work This Chapter on the Platform 208](#work-this-chapter-on-the-platform-10)
 >
-> [12.8 Work This Chapter on the Platform 208](#work-this-chapter-on-the-platform-10)
+> [12.8 Implications for You 208](#implications-for-you-11)
 >
-> [12.9 Implications for You 208](#implications-for-you-11)
->
-> [12.10 Key Concepts in This Chapter 209](#key-concepts-in-this-chapter-11)
+> [12.9 Key Concepts in This Chapter 209](#key-concepts-in-this-chapter-11)
 
 [**Chapter 13: The Future of Healthcare Transformation --- 2026, What Vermont Proves, and What Remains 211**](#chapter-13-the-future-of-healthcare-transformation-2026-what-vermont-proves-and-what-remains)
 
@@ -5475,11 +5473,7 @@ The regulatory environment is moving faster than internal policy monitoring capa
 
 The most common advisory failure in healthcare transformation is engaging external consultants for analysis and stopping before implementation. A report that produces recommendations without supporting the organizational capacity to implement them has limited value --- and often produces a brief period of executive attention followed by quiet shelving when organizational bandwidth is consumed by operational demands. The transformation advisory practice is explicitly designed to avoid this failure mode by connecting analysis to implementation support and change management.
 
-## 12.7 **The Role of External Technical Assistance in State-Level Transformation**
-
-Vermont's transformation experience runs through this book as both an analytical case study and an active advisory engagement. HTR has worked with Vermont hospitals, state agencies, and community organizations on specific transformation questions --- APM readiness assessments, equity analytics, technology architecture reviews, policy impact analysis. The Vermont case study in this book draws on that engagement experience as well as the extensive public record of Vermont's transformation.
-
-## 12.8 **Work This Chapter on the Platform**
+## 12.7 **Work This Chapter on the Platform**
 
 This chapter argues that knowledge without implementation infrastructure produces nothing. The [HTR platform](https://healthtransformationreview.org/research-lab) is one instance of that infrastructure --- the tools below are where the book's frameworks become working instruments.
 
@@ -5497,7 +5491,7 @@ This chapter argues that knowledge without implementation infrastructure produce
 
 In the Academy: Track 8's lesson "Knowledge Infrastructure and Technical Assistance" (/academy/tracks/five-pillars-one-imperative) works this chapter, and the Transformation Leadership course (/academy/tracks/transformation-leadership) covers change management, the PMO, and stakeholder management under mandatory reform.
 
-## 12.9 **Implications for You**
+## 12.8 **Implications for You**
 
 If you are a Vermont hospital executive: Shared implementation infrastructure --- such as the shared services and analytics that Vermont's RHT plan funds through a Clinically Integrated Network of independent providers --- is not an academic exercise. It is the mechanism by which the transformation investments being made at Vermont's more advanced hospitals become available to the smaller, less resourced hospitals that cannot independently build the same capabilities. If you lead one of Vermont's larger systems, your participation in knowledge transfer is not optional generosity. It is a system obligation, and increasingly, a strategic interest: a system in which 9 of 14 hospitals reported operating losses in 2023 cannot produce the population health improvement global budgets depend on, because the fragile hospitals serve the populations whose outcomes most need to improve.
 
@@ -5509,7 +5503,7 @@ If you are a national health policy professional: This chapter is among the most
 
 Vermont's transformation is a high-stakes, real-time experiment that HTR takes seriously as an obligation as well as an opportunity. If Vermont succeeds in demonstrating that mandatory payment reform, organized as a coherent five-pillar transformation, can stabilize a rural hospital system while reducing costs and improving outcomes, the policy toolkit for the country improves. If Vermont struggles, the analytical lessons of that struggle are equally valuable. Either way, this book and Health Transformation Review are designed to make Vermont's experience legible, transferable, and actionable for the healthcare leaders and policymakers who face comparable challenges in their own systems.
 
-## 12.10 **Key Concepts in This Chapter**
+## 12.9 **Key Concepts in This Chapter**
 
 **The Wire** The continuously updated policy and practice intelligence feed, with a daily briefing, providing curated analysis of healthcare transformation developments organized around the five-pillar framework.
 
