@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:15Z",
+ "_id": "rhtState-maine",
+ "_rev": "GIKqHwCOFsUvADyibzkZjq",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:15Z",
+ "awardAmount": "$190,000,000",
+ "description": "Maine is partnering with Duke University to create a Rural AI Hub while simultaneously expanding community paramedicine to address its aging, geographically dispersed population.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Innovation institute for deploying AI tools in rural clinics.",
+   "title": "Rural AI Hub"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Strengthened reimbursement models for EMS home visits.",
+   "title": "Community Paramedicine"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "AI Pilots Launched",
+   "status": "Pending",
+   "target": "5 Pilots"
+  },
+  {
+   "_key": "metric-1",
+   "label": "EMS Home Visits",
+   "status": "In Progress",
+   "target": "5,000/yr"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "maine"
+ },
+ "stateName": "Maine",
+ "status": "Active",
+ "strategicFocus": "AI Innovation & Paramedicine"
+}

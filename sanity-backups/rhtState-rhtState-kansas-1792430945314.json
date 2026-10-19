@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:48Z",
+ "_id": "rhtState-kansas",
+ "_rev": "ZDU5b4qioPbFp0EQfvWhYo",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:48Z",
+ "awardAmount": "$222,000,000",
+ "description": "Expanding PACE for the elderly and providing centralized back-office services for clinics.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Expanding 'Program of All-Inclusive Care for the Elderly' to rural regions.",
+   "title": "PACE Expansion"
+  },
+  {
+   "_key": "ini-1",
+   "description": "State-level service for credentialing and contract negotiation.",
+   "title": "Centralized Back-Office"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "PACE Enrollment",
+   "status": "Pending",
+   "target": "Growth"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Admin Cost",
+   "status": "In Progress",
+   "target": "Reduced"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "kansas"
+ },
+ "stateName": "Kansas",
+ "status": "Active",
+ "strategicFocus": "PACE Expansion & Back-Office Support"
+}

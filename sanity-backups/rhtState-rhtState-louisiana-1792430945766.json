@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:34Z",
+ "_id": "rhtState-louisiana",
+ "_rev": "GIKqHwCOFsUvADyibzkd5K",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:34Z",
+ "awardAmount": "$208,000,000",
+ "description": "Providing subsidized smartphones with health apps to rural residents and offering tax credits to clinicians.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Providing subsidized smartphones with health apps/data to residents.",
+   "title": "Rural Tech Fund"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Tax-credit incentives for high-need parishes.",
+   "title": "Clinician Credit Bank"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "App Activation",
+   "status": "In Progress",
+   "target": "50,000 Users"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Clinician Vacancy",
+   "status": "Pending",
+   "target": "-10%"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "louisiana"
+ },
+ "stateName": "Louisiana",
+ "status": "Active",
+ "strategicFocus": "Digital Equity & Smartphones"
+}
