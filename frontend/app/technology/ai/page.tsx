@@ -67,48 +67,21 @@ function AIMLBody() {
             </tbody>
           </table>
         </div>
-        <p className="text-xs text-slate-400 mt-4">Source: FDA AIML-enabled Medical Devices database (692+ cleared as of 2024). Radiology accounts for ~75% of cleared AI devices.</p>
+        <p className="text-xs text-slate-400 mt-4">Source: FDA list of AI-enabled medical devices — more than 1,000 authorizations by 2025, roughly three-quarters of them in radiology.</p>
       </div>
 
       {/* Investment + GenAI Assessment */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-        <div className="bg-white rounded-2xl border border-slate-200 p-6">
-          <h3 className="font-bold text-slate-900 mb-1">AI Investment Priorities (2024)</h3>
-          <p className="text-sm text-slate-500 mb-5">Where health systems are allocating AI budget</p>
-          <div className="space-y-3">
-            {[
-              { area: "Ambient AI documentation", pct: 78, color: "bg-indigo-500" },
-              { area: "Revenue cycle automation", pct: 72, color: "bg-indigo-500" },
-              { area: "Clinical decision support", pct: 61, color: "bg-indigo-400" },
-              { area: "Diagnostic imaging AI", pct: 54, color: "bg-indigo-400" },
-              { area: "Operational scheduling AI", pct: 48, color: "bg-indigo-300" },
-              { area: "Predictive deterioration models", pct: 43, color: "bg-indigo-300" },
-              { area: "GenAI for patient education", pct: 31, color: "bg-indigo-200" },
-            ].map((row) => (
-              <div key={row.area}>
-                <div className="flex justify-between text-sm mb-1">
-                  <span className="text-slate-700">{row.area}</span>
-                  <span className="font-bold text-indigo-700">{row.pct}%</span>
-                </div>
-                <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
-                  <div className={`h-2 ${row.color} rounded-full`} style={{ width: `${row.pct}%` }} />
-                </div>
-              </div>
-            ))}
-          </div>
-          <p className="text-xs text-slate-400 mt-4">Source: Reaction Data Health System AI Survey, n=312 leaders, 2024.</p>
-        </div>
-
+      <div className="grid grid-cols-1 gap-6 mb-10">
         <div className="bg-white rounded-2xl border border-slate-200 p-6">
           <h3 className="font-bold text-slate-900 mb-1">GenAI Use Cases: Proof vs. Promise</h3>
           <p className="text-sm text-slate-500 mb-5">Honest assessment of healthcare LLM applications</p>
           <div className="space-y-3">
             {[
               { useCase: "Ambient clinical documentation", status: "Proven", evidence: "Randomized trial: 9.5% less time in notes for one product (NEJM AI 2025); 16 fewer documentation minutes per 8 patient hours (JAMA 2026)", badge: "bg-emerald-100 text-emerald-700" },
-              { useCase: "Coding & charge capture", status: "Proven", evidence: "Vendor-reported gains; few independent evaluations", badge: "bg-emerald-100 text-emerald-700" },
+              { useCase: "Coding & charge capture", status: "Promising", evidence: "Vendor-reported gains; few independent evaluations", badge: "bg-emerald-100 text-emerald-700" },
               { useCase: "Patient message drafting", status: "Promising", evidence: "ChatGPT replies to public-forum questions rated more empathetic than physicians' (Ayers, JAMA Internal Medicine 2023)", badge: "bg-amber-100 text-amber-700" },
               { useCase: "Clinical Q&A (RAG)", status: "Promising", evidence: "Passes licensing-exam-style questions; hallucination controls required in clinical use", badge: "bg-amber-100 text-amber-700" },
-              { useCase: "Autonomous diagnosis", status: "Caution", evidence: "Misses rare diseases; biases toward common presentations; no FDA clearance", badge: "bg-rose-100 text-rose-700" },
+              { useCase: "Autonomous diagnosis", status: "Caution", evidence: "Beyond narrow FDA-authorized uses such as IDx-DR, no autonomous diagnostic AI is authorized; LLMs miss rare presentations", badge: "bg-rose-100 text-rose-700" },
               { useCase: "Treatment recommendation", status: "Caution", evidence: "High hallucination rate on drug interactions; liability unresolved", badge: "bg-rose-100 text-rose-700" },
             ].map((row) => (
               <div key={row.useCase} className="p-3 border border-slate-200 rounded-xl">
@@ -153,7 +126,7 @@ function AIMLBody() {
             items: [
               "Sepsis prediction: external validation of the Epic Sepsis Model found AUC 0.63 and many false alerts (Wong, JAMA Internal Medicine 2021)",
               "Readmission risk: LACE+, HOSPITAL score, Epic ML 30-day readmission model",
-              "Deterioration early warning: Epic EDI, Capsule Vitals — NEWS2 successor algorithms",
+              "Deterioration early warning: Epic Deterioration Index, NEWS2 and other early-warning scores — validate locally",
               "HCC coding: MA plans use ML to find undocumented diagnoses — and CMS RADV audits and DOJ cases target unsupported codes",
             ],
           },
