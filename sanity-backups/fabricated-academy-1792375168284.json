@@ -1,0 +1,190 @@
+[
+ {
+  "_createdAt": "2026-02-23T03:39:06Z",
+  "_id": "case-ai-in-ed",
+  "_rev": "1jJ4sZyHE3MNejrOV85A2B",
+  "_type": "caseStudy",
+  "_updatedAt": "2026-07-31T18:27:15Z",
+  "body": [
+   {
+    "_type": "block",
+    "children": [
+     {
+      "_type": "span",
+      "text": "Overcrowding in the ED led to record 'Left Without Being Seen' rates..."
+     }
+    ],
+    "style": "normal"
+   }
+  ],
+  "chapterRef": "4",
+  "clientType": "Academic Medical Center",
+  "metrics": [
+   "40% Faster Triage",
+   "LWBS reduced by 60%"
+  ],
+  "pillar": "Technology",
+  "slug": {
+   "_type": "slug",
+   "current": "ai-in-ed"
+  },
+  "summary": "Reducing triage times by 40% using predictive machine learning models for patient intake.",
+  "title": "AI in the ED"
+ },
+ {
+  "_createdAt": "2026-02-23T03:39:06Z",
+  "_id": "case-saving-mercy-regional",
+  "_rev": "1jJ4sZyHE3MNejrOV85A2B",
+  "_type": "caseStudy",
+  "_updatedAt": "2026-07-31T18:27:15Z",
+  "body": [
+   {
+    "_type": "block",
+    "children": [
+     {
+      "_type": "span",
+      "text": "Mercy Regional was facing a $4M annual deficit..."
+     }
+    ],
+    "style": "normal"
+   }
+  ],
+  "chapterRef": "6",
+  "clientType": "Rural Hospital",
+  "metrics": [
+   "$12M OpEx Reduction",
+   "Negotiated Rates +15%"
+  ],
+  "pillar": "Economics",
+  "slug": {
+   "_type": "slug",
+   "current": "saving-mercy-regional"
+  },
+  "summary": "How a rural Vermont hospital avoided closure through strategic service line consolidation and payer renegotiation.",
+  "title": "Saving Mercy Regional"
+ },
+ {
+  "_createdAt": "2026-02-23T03:39:03Z",
+  "_id": "inst-aris",
+  "_rev": "xELs1FF23jyje7Lo0o7qwF",
+  "_type": "instructor",
+  "_updatedAt": "2026-02-23T03:39:03Z",
+  "bio": "Former Chief Medical Information Officer at Mayo Clinic. Pioneer in clinical AI deployment.",
+  "name": "Dr. Aris Thorne",
+  "role": "Chair of Technology Pillar",
+  "tags": [
+   "AI",
+   "Clinical Ops"
+  ]
+ },
+ {
+  "_createdAt": "2026-02-23T03:39:03Z",
+  "_id": "inst-elena",
+  "_rev": "xELs1FF23jyje7Lo0o7qwF",
+  "_type": "instructor",
+  "_updatedAt": "2026-02-23T03:39:03Z",
+  "bio": "Designed value-based contracts for major national payer covering 15M lives.",
+  "name": "Elena Roza",
+  "role": "Senior Fellow, Population Health",
+  "tags": [
+   "VBC",
+   "Payer Strategy"
+  ]
+ },
+ {
+  "_createdAt": "2026-02-23T03:39:03Z",
+  "_id": "inst-marcus",
+  "_rev": "xELs1FF23jyje7Lo0o7qwF",
+  "_type": "instructor",
+  "_updatedAt": "2026-02-23T03:39:03Z",
+  "bio": "Founder of 3 digital health unicorns. Expert in go-to-market strategy and venture finance.",
+  "name": "Marcus Chen",
+  "role": "Visiting Fellow, Economics",
+  "tags": [
+   "Venture Capital",
+   "Strategy"
+  ]
+ },
+ {
+  "_createdAt": "2026-02-23T03:39:03Z",
+  "_id": "inst-sarah",
+  "_rev": "xELs1FF23jyje7Lo0o7qwF",
+  "_type": "instructor",
+  "_updatedAt": "2026-02-23T03:39:03Z",
+  "bio": "Served 10 years at CMS, architecting key components of the ACA and MACRA legislation.",
+  "name": "Sarah Jenkins, MPH",
+  "role": "Chair of Policy Pillar",
+  "tags": [
+   "Regulation",
+   "CMS"
+  ]
+ },
+ {
+  "_createdAt": "2026-02-23T03:39:10Z",
+  "_id": "webinar-antitrust-healthcare",
+  "_rev": "1jJ4sZyHE3MNejrOV85A2B",
+  "_type": "webinar",
+  "_updatedAt": "2026-07-31T18:27:15Z",
+  "chapterRef": "2",
+  "date": "2026-04-04T02:39:10.601Z",
+  "description": "The FTC's new stance on cross-market mergers.",
+  "duration": "45 Min",
+  "pillar": "Policy",
+  "slug": {
+   "_type": "slug",
+   "current": "antitrust-healthcare"
+  },
+  "title": "Antitrust in Healthcare"
+ },
+ {
+  "_createdAt": "2026-02-23T03:39:10Z",
+  "_id": "webinar-gen-ai-er",
+  "_rev": "1jJ4sZyHE3MNejrOV85A2B",
+  "_type": "webinar",
+  "_updatedAt": "2026-07-31T18:27:15Z",
+  "chapterRef": "4",
+  "date": "2026-03-28T02:39:10.601Z",
+  "description": "Case study with Mercy Health on reducing triage times.",
+  "duration": "60 Min",
+  "pillar": "Technology",
+  "slug": {
+   "_type": "slug",
+   "current": "gen-ai-er"
+  },
+  "title": "Generative AI in the ER"
+ },
+ {
+  "_createdAt": "2026-02-23T03:39:10Z",
+  "_id": "webinar-glp1-cost",
+  "_rev": "1jJ4sZyHE3MNejrOV85A2B",
+  "_type": "webinar",
+  "_updatedAt": "2026-07-31T18:27:15Z",
+  "chapterRef": "6",
+  "date": "2026-04-23T02:39:10.603Z",
+  "description": "Employer coverage strategies for high-cost weight loss drugs.",
+  "duration": "60 Min",
+  "pillar": "Economics",
+  "slug": {
+   "_type": "slug",
+   "current": "glp1-cost"
+  },
+  "title": "The Cost of GLP-1s"
+ },
+ {
+  "_createdAt": "2026-02-23T03:39:10Z",
+  "_id": "webinar-telehealth-2025",
+  "_rev": "1jJ4sZyHE3MNejrOV85A2B",
+  "_type": "webinar",
+  "_updatedAt": "2026-07-31T18:27:15Z",
+  "chapterRef": "2",
+  "date": "2026-03-23T02:39:10.601Z",
+  "description": "A critical town-hall style meeting regarding the expiring telehealth waivers and what the new fee schedule means for digital health companies.",
+  "duration": "90 Min",
+  "pillar": "Policy",
+  "slug": {
+   "_type": "slug",
+   "current": "telehealth-2025"
+  },
+  "title": "The Future of Telehealth Reimbursement (2025 Outlook)"
+ }
+]
