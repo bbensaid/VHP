@@ -1,0 +1,322 @@
+[
+ {
+  "file": "frontend/app/oregon-cco/page.tsx",
+  "old": "Oregon's third-generation Coordinated Care Organizations model — integrating physical, behavioral, and oral health under global budgets with equity accountability and community advisory boards.",
+  "new": "Oregon's Coordinated Care Organizations — integrating physical, behavioral, and oral health under global budgets with equity accountability and community advisory councils."
+ },
+ {
+  "file": "frontend/app/oregon-cco/page.tsx",
+  "old": "CCO 3.0 · 2025–2030",
+  "new": "CCO 3.0 · next contract round, in planning"
+ },
+ {
+  "file": "frontend/app/oregon-cco/page.tsx",
+  "old": "          Oregon&apos;s third-generation Coordinated Care Organizations model integrates physical, behavioral, and oral health\n          under global budgets with strong equity accountability metrics and community advisory boards. CCO 3.0 deepens\n          the state&apos;s commitment to value-based payment and whole-person care for 1.4M Oregon Health Plan members.",
+  "new": "          Oregon&apos;s Coordinated Care Organizations integrate physical, behavioral, and oral health under global budgets,\n          with community advisory councils and health equity accountability. Today&apos;s CCOs operate under CCO 2.0 contracts\n          (signed for 2020–2024 and since extended); &ldquo;CCO 3.0&rdquo; is OHA&apos;s name for the next contract round, which it is\n          still planning. CCOs serve most of Oregon&apos;s 1.4M Oregon Health Plan members."
+ },
+ {
+  "file": "frontend/app/oregon-cco/page.tsx",
+  "old": "<StatBox value=\"16\" label=\"CCOs\" sub=\"coordinated care orgs\" />",
+  "new": "<StatBox value=\"15\" label=\"CCOs\" sub=\"since Feb 2026\" />"
+ },
+ {
+  "file": "frontend/app/oregon-cco/page.tsx",
+  "old": "<StatBox value=\"$3.2B\" label=\"Global Budget\" sub=\"annual spend\" />",
+  "new": "<StatBox value=\"$325M\" label=\"2024 Quality Pool\" sub=\"4.25% of CCO capitation\" />"
+ },
+ {
+  "file": "frontend/app/oregon-cco/page.tsx",
+  "old": "What CCO 3.0 Changes</h2>",
+  "new": "What CCO 2.0 Requires</h2>"
+ },
+ {
+  "file": "frontend/app/oregon-cco/page.tsx",
+  "old": "          Building on CCO 2.0&apos;s global budget framework, the third iteration strengthens equity accountability,\n          deepens behavioral health integration, and expands community health worker infrastructure.",
+  "new": "          CCO 2.0 contracts (2020 onward) were built on four state priorities: behavioral health, value-based payment,\n          social determinants and health equity, and sustainable cost growth. The next round (CCO 3.0) is still in OHA planning."
+ },
+ {
+  "file": "frontend/app/oregon-cco/page.tsx",
+  "old": "          <InvestCard icon=\"📊\" title=\"Enhanced Equity Metrics\"\n            desc=\"25 new equity-weighted performance measures tracking disparities by race, language, and geography.\"\n            items={['Race/ethnicity stratified HEDIS reporting', 'Language access compliance audits', 'Geographic access standards for rural CCOs', 'Equity withhold: 5% of CCO incentive pool tied to disparity reduction']} />",
+  "new": "          <InvestCard icon=\"📊\" title=\"Social Determinants & Health Equity\"\n            desc=\"CCOs must increase their investment in strategies that address social determinants of health and health equity.\"\n            items={['Increased SDOH and health equity investment', 'Stronger engagement with tribes and community advisory councils', 'Expanded use of traditional health workers']} />"
+ },
+ {
+  "file": "frontend/app/oregon-cco/page.tsx",
+  "old": "          <InvestCard icon=\"🧠\" title=\"Behavioral Health Integration\"\n            desc=\"Full physical-behavioral-oral health integration under a single capitated payment by 2027.\"\n            items={['Co-located BH in primary care: 80% CCO target', 'Same-day BH access standards', 'Integrated care coordination for dual-eligible members', 'Substance use disorder parity enforcement']} />",
+  "new": "          <InvestCard icon=\"🧠\" title=\"Behavioral Health Integration\"\n            desc=\"Under CCO 2.0, CCOs are fully accountable for the behavioral health benefit.\"\n            items={['Person-centered mental health and substance use disorder system', 'Remove barriers between behavioral, physical and oral health', 'Expand programs integrating primary care into behavioral health settings']} />"
+ },
+ {
+  "file": "frontend/app/oregon-cco/page.tsx",
+  "old": "          <InvestCard icon=\"🤝\" title=\"Community Health Workers\"\n            desc=\"Statewide CHW infrastructure investment with CCO-funded workforce pipelines.\"\n            items={['State-funded CHW certification program', 'CCO CHW ratio: 1 per 1,500 high-risk members', 'Housing navigation and food security referrals', 'SDOH screening at 80% of primary care encounters']} />",
+  "new": "          <InvestCard icon=\"🤝\" title=\"Traditional Health Workers\"\n            desc=\"CCO 2.0 calls for increased use of traditional health workers, a category that includes community health workers.\"\n            items={['Traditional health workers include community health workers', 'Supports the SDOH and health equity priority']} />"
+ },
+ {
+  "file": "frontend/app/oregon-cco/page.tsx",
+  "old": "          <InvestCard icon=\"💰\" title=\"Global Budget Methodology\"\n            desc=\"PMPM growth rate tied to state economic growth plus equity adjustment factors.\"\n            items={['Global budget growth cap: GDP + 0.5%', 'Shared savings: up to 50% retained by CCO', 'Downside risk introduced at CCO scale ≥100K members', 'Quality withhold: 3.5% of capitation at risk']} />",
+  "new": "          <InvestCard icon=\"💰\" title=\"Global Budget Methodology\"\n            desc=\"CCO global budgets may grow no more than 3.4% per member per year, in line with the state cost growth target.\"\n            items={['Growth cap: 3.4% per member per year', 'Goal: 70% of CCO provider payments value-based by the end of the contract period', 'Quality Pool bonus on top of capitation: 4.25% of total PMPM ($325M in 2024)']} />"
+ },
+ {
+  "file": "frontend/app/oregon-cco/page.tsx",
+  "old": "const CCO_LIST = [\n  { name: 'CareOregon (Health Share of Oregon)', region: 'Portland Metro', members: 410000, counties: 9 },\n  { name: 'PacificSource Community Solutions', region: 'Central Oregon', members: 95000, counties: 7 },\n  { name: 'Umpqua Health Alliance', region: 'Douglas County', members: 32000, counties: 1 },\n  { name: 'AllCare Health', region: 'Southern Oregon', members: 48000, counties: 3 },\n  { name: 'Willamette Valley Community Health', region: 'Mid-Willamette', members: 115000, counties: 5 },\n  { name: 'Eastern Oregon CCO', region: 'Eastern Oregon', members: 44000, counties: 12 },\n  { name: 'FamilyCare Health', region: 'Washington County', members: 88000, counties: 1 },\n  { name: 'Cascade Health Alliance', region: 'Klamath County', members: 22000, counties: 1 },\n]",
+  "new": "const CCO_LIST = [\n  { name: 'Advanced Health', area: 'Coos and Curry counties' },\n  { name: 'AllCare CCO', area: 'Curry, Josephine, and Jackson counties; part of Douglas' },\n  { name: 'Cascade Health Alliance', area: 'Part of Klamath County' },\n  { name: 'Columbia Pacific CCO', area: 'Clatsop, Columbia, and Tillamook counties' },\n  { name: 'Eastern Oregon CCO', area: 'Baker, Gilliam, Grant, Harney, Lake, Malheur, Morrow, Sherman, Umatilla, Union, Wallowa, and Wheeler counties' },\n  { name: 'Health Share of Oregon', area: 'Clackamas, Multnomah, and Washington counties' },\n  { name: 'InterCommunity Health Network CCO', area: 'Benton, Lincoln, and Linn counties' },\n  { name: 'Jackson Care Connect', area: 'Jackson County' },\n  { name: 'PacificSource Community Solutions – Central Oregon', area: 'Deschutes, Crook, and Jefferson counties; part of Klamath' },\n  { name: 'PacificSource Community Solutions – Columbia Gorge', area: 'Hood River and Wasco counties' },\n  { name: 'PacificSource Community Solutions – Marion/Polk', area: 'Marion and Polk counties' },\n  { name: 'Trillium Community Health Plan – Southwest', area: 'Lane County; western Linn and Douglas' },\n  { name: 'Trillium Community Health Plan – Tri-County', area: 'Clackamas, Multnomah, and Washington counties' },\n  { name: 'Umpqua Health Alliance', area: 'Most of Douglas County' },\n  { name: 'Yamhill Community Care', area: 'Yamhill County; parts of Polk and Washington' },\n]"
+ },
+ {
+  "file": "frontend/app/oregon-cco/page.tsx",
+  "old": "                <th className=\"text-left px-4 py-3 font-black text-slate-600 text-xs uppercase tracking-wide\">Region</th>\n                <th className=\"text-right px-4 py-3 font-black text-slate-600 text-xs uppercase tracking-wide\">Members</th>\n                <th className=\"text-right px-4 py-3 font-black text-slate-600 text-xs uppercase tracking-wide\">Counties</th>",
+  "new": "                <th className=\"text-left px-4 py-3 font-black text-slate-600 text-xs uppercase tracking-wide\">Service Area</th>"
+ },
+ {
+  "file": "frontend/app/oregon-cco/page.tsx",
+  "old": "                  <td className=\"px-4 py-3 text-slate-500\">{cco.region}</td>\n                  <td className=\"px-4 py-3 text-right text-slate-700 font-bold\">{cco.members.toLocaleString()}</td>\n                  <td className=\"px-4 py-3 text-right text-slate-500\">{cco.counties}</td>",
+  "new": "                  <td className=\"px-4 py-3 text-slate-500\">{cco.area}</td>"
+ },
+ {
+  "file": "frontend/app/oregon-cco/page.tsx",
+  "old": "<h2 className=\"text-xl font-black text-slate-900 mb-4\">Oregon CCO Directory</h2>",
+  "new": "<h2 className=\"text-xl font-black text-slate-900 mb-4\">Oregon CCO Directory</h2>\n        <p className=\"text-xs text-slate-500 mb-3\">Service areas per Oregon Health Authority, 2026. PacificSource left Lane County on Feb 1, 2026.</p>"
+ },
+ {
+  "file": "frontend/app/oregon-cco/page.tsx",
+  "old": "CBO projects Oregon faces $2.1B in Medicaid revenue reduction by 2034. CCO global budgets",
+  "new": "KFF&apos;s allocation of CBO&apos;s estimate places Oregon among the four hardest-hit states, with federal Medicaid cuts of 19% or more through 2034. CCO global budgets"
+ },
+ {
+  "file": "frontend/app/oregon-cco/simulator/page.tsx",
+  "old": "Model the multi-pillar impact of Oregon's third-generation Coordinated Care Organizations — global budgets, equity metrics, behavioral health integration, and CHW infrastructure across 16 CCOs.",
+  "new": "Model next-round (CCO 3.0) policy options for Oregon's Coordinated Care Organizations — global budgets, equity metrics, behavioral health integration, and CHW infrastructure across 15 CCOs."
+ },
+ {
+  "file": "frontend/app/oregon-cco/simulator/OregonCCOSimulatorClient.tsx",
+  "old": "{ id: 'health-share', name: 'Health Share of Oregon', shortName: 'Health Share', region: 'Portland Metro', members: 410000, counties: 9,",
+  "new": "{ id: 'health-share', name: 'Health Share of Oregon', shortName: 'Health Share', region: 'Portland Metro', members: 440000, counties: 3,"
+ },
+ {
+  "file": "frontend/app/oregon-cco/simulator/OregonCCOSimulatorClient.tsx",
+  "old": "region: 'Central Oregon', members: 95000, counties: 7,",
+  "new": "region: 'Central Oregon', members: 95000, counties: 4,"
+ },
+ {
+  "file": "frontend/app/oregon-cco/simulator/OregonCCOSimulatorClient.tsx",
+  "old": "{ id: 'willamette', name: 'Willamette Valley Community Health', shortName: 'WVCH', region: 'Mid-Willamette', members: 115000, counties: 5,",
+  "new": "{ id: 'willamette', name: 'PacificSource Community Solutions – Marion/Polk', shortName: 'PS Marion/Polk', region: 'Marion/Polk', members: 115000, counties: 2,"
+ },
+ {
+  "file": "frontend/app/oregon-cco/simulator/OregonCCOSimulatorClient.tsx",
+  "old": "const ccoImpactM = cco ? (netM * cco.globalBudgetM) / 3200 : 0",
+  "new": "const ccoImpactM = cco ? (netM * cco.members) / 1328786 : 0 // share of CCO enrollment (1,328,786 CCO members, OHA via Oregon Legislature, Dec 2024)"
+ },
+ {
+  "file": "frontend/app/oregon-cco/simulator/OregonCCOSimulatorClient.tsx",
+  "old": "            Model the impact of Oregon&apos;s third-generation Coordinated Care Organizations — integrating physical,\n            behavioral, and oral health under global budgets with equity accountability and CHW infrastructure\n            across 16 CCOs serving 1.4M OHP members.",
+  "new": "            Model policy options for Oregon&apos;s next CCO contract round (CCO 3.0, still in OHA planning) — integrating physical,\n            behavioral, and oral health under global budgets with equity accountability and CHW infrastructure\n            across Oregon&apos;s 15 CCOs serving most of its 1.4M OHP members. Initiative costs, savings, timelines and the\n            per-CCO figures below are illustrative model assumptions, not OHA estimates."
+ },
+ {
+  "file": "frontend/app/oregon-cco/simulator/OregonCCOSimulatorClient.tsx",
+  "old": "[['16', 'CCOs'], ['1.4M', 'OHP Members'], ['$3.2B', 'Global Budget'], ['36', 'Counties']]",
+  "new": "[['15', 'CCOs'], ['1.4M', 'OHP Members'], ['$325M', '2024 Quality Pool'], ['36', 'Counties']]"
+ },
+ {
+  "file": "frontend/app/oregon-cco/simulator/OregonCCOSimulatorClient.tsx",
+  "old": "title: 'Enhanced Equity Performance Metrics (25 new measures)'",
+  "new": "title: 'Enhanced Equity Performance Metrics'"
+ },
+ {
+  "file": "frontend/app/oregon-cco/simulator/OregonCCOSimulatorClient.tsx",
+  "old": "title: 'GDP+0.5% Global Budget Growth Methodology'",
+  "new": "title: 'Global Budget Growth Methodology (current cap: 3.4%/member/yr)'"
+ },
+ {
+  "file": "frontend/app/oregon-cco/simulator/OregonCCOSimulatorClient.tsx",
+  "old": "title: 'Downside Risk for Large CCOs (≥100K members)'",
+  "new": "title: 'Value-Based Payment Targets (CCO 2.0 goal: 70% of provider payments)'"
+ },
+ {
+  "file": "frontend/app/oregon-cco/simulator/OregonCCOSimulatorClient.tsx",
+  "old": "title: 'Universal SDOH Screening (80% primary care target)'",
+  "new": "title: 'Universal SDOH Screening'"
+ },
+ {
+  "file": "frontend/app/oregon-cco/simulator/OregonCCOSimulatorClient.tsx",
+  "old": "<p className=\"text-sm text-slate-500\">{cco.region} · {cco.counties} {cco.counties === 1 ? 'county' : 'counties'} · {cco.ruralPct}% rural members</p>",
+  "new": "<p className=\"text-sm text-slate-500\">{cco.region} · {cco.counties} {cco.counties === 1 ? 'county' : 'counties'} · {cco.ruralPct}% rural members</p>\n                  <p className=\"text-[11px] text-amber-700 mt-1\">Members, budget, margin, and BH/equity scores are illustrative model inputs, not OHA-reported figures.</p>"
+ },
+ {
+  "file": "frontend/app/oregon-cco/simulator/OregonCCOSimulatorClient.tsx",
+  "old": "for full physical-behavioral integration by 2027.",
+  "new": "for deeper physical-behavioral integration."
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "          <ExternalLink href=\"https://www.dhcs.ca.gov/Documents/DHCS-CalAIM-Proposal-01072021.pdf\">\n            CalAIM Proposal (PDF)\n          </ExternalLink>",
+  "new": "          <ExternalLink href=\"https://www.dhcs.ca.gov/providers-partners/calaim-1115-demonstration-1915b-waiver/\">\n            CalAIM Waiver Documents (DHCS)\n          </ExternalLink>"
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "href=\"https://www.medicaid.gov/medicaid/section-1115-demonstration/downloads/ca-medi-cal-2020-ca.pdf\"",
+  "new": "href=\"https://www.medicaid.gov/medicaid/section-1115-demonstrations/downloads/ca-calaim-ca1.pdf\""
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "<StatBox value=\"14M+\" label=\"Medi-Cal Enrollees\" sub=\"~1 in 3 Californians\" />",
+  "new": "<StatBox value=\"13.7M\" label=\"Medi-Cal Enrollees\" sub=\"~1 in 3 Californians (June 2026)\" />"
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "<StatBox value=\"14\" label=\"Community Supports\" sub=\"Non-medical services authorized\" />",
+  "new": "<StatBox value=\"15\" label=\"Community Supports\" sub=\"Transitional Rent added Jan 2026\" />"
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "<StatBox value=\"~40%\" label=\"Californians on Medi-Cal\" sub=\"Nation's largest Medicaid\" />",
+  "new": "<StatBox value=\"24\" label=\"Managed Care Plans\" sub=\"Contracting with DHCS\" />"
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "<StatBox value=\"5yr\" label=\"Initial Waiver Term\" sub=\"Extended through 2027\" />",
+  "new": "<StatBox value=\"5yr\" label=\"Waiver Term\" sub=\"2022–2026; 2027–2031 renewal pending\" />"
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "CalAIM builds directly on California's 2016–2022{\" \"}",
+  "new": "CalAIM builds directly on California's 2016–2021{\" \"}"
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "WPC's success across 25 counties gave DHCS and Governor Newsom the evidence base to",
+  "new": "WPC's 25 pilots across 26 counties gave DHCS and Governor Newsom the evidence base to"
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "detail=\"14 non-medical services that Medi-Cal managed care plans can now authorize as covered benefits — including housing deposits, housing navigation, short-term post-hospitalization housing, meal delivery, asthma remediation, transportation, and environmental accessibility modifications.\"",
+  "new": "detail=\"15 non-medical services that Medi-Cal managed care plans can now offer as covered benefits — including housing deposits, housing navigation, short-term post-hospitalization housing, medically tailored meals, asthma remediation, transitional rent, and environmental accessibility adaptations.\""
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "detail=\"Landmark expansion of Medi-Cal dental benefits — restoring adult dental coverage that had been eliminated during the 2009 recession, adding periodontal care, and establishing population-level oral health quality metrics. Affects 14M Californians who had limited or no dental coverage.\"",
+  "new": "detail=\"Statewide preventive dental initiatives launched with CalAIM in January 2022 — a Caries Risk Assessment bundle for young children, silver diamine fluoride for young children and high-risk groups, and pay-for-performance payments for preventive services. (Adult dental benefits cut in 2009 were fully restored in 2018, before CalAIM.)\""
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "Targets over 50,000 individuals annually.",
+  "new": "More than 42,000 people were identified as eligible in its first 13 months (Oct 2024–Nov 2025)."
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "All 14 Community Supports — A Historic First",
+  "new": "All 15 Community Supports"
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "For the first time in U.S. Medicaid history, California won CMS approval to pay for",
+  "new": "Under CalAIM, California won CMS approval to pay for"
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "              \"Housing transition navigation services\",\n              \"Housing deposits (security, first/last month's rent)\",\n              \"Housing tenancy & sustaining services\",\n              \"Short-term post-hospitalization housing\",\n              \"Recuperative care (medical respite)\",\n              \"Day habilitation programs\",\n              \"Nursing facility transition / diversion to assisted living\",\n              \"Community transition services\",\n              \"Sobering centers\",\n              \"Respite services (for caregivers)\",\n              \"Meal/nutrition assistance\",\n              \"Transportation to social services\",\n              \"Asthma remediation (home-based environmental fixes)\",\n              \"Environmental accessibility adaptations\",",
+  "new": "              \"Housing transition navigation services\",\n              \"Housing deposits\",\n              \"Housing tenancy & sustaining services\",\n              \"Short-term post-hospitalization housing\",\n              \"Recuperative care (medical respite)\",\n              \"Respite services (for caregivers)\",\n              \"Day habilitation programs\",\n              \"Nursing facility transition / diversion to assisted living\",\n              \"Community transition services / nursing facility transition to a home\",\n              \"Personal care and homemaker services\",\n              \"Environmental accessibility adaptations (home modifications)\",\n              \"Medically tailored meals / medically supportive food\",\n              \"Sobering centers\",\n              \"Asthma remediation\",\n              \"Transitional rent (added January 2026)\","
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "              stat: \"1.3M+\",\n              statLabel: \"Medi-Cal members with SMI/SUD\",",
+  "new": "              stat: \"45%\",\n              statLabel: \"Of Medi-Cal's top-5% cost group have SMI\","
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "Without healthcare coverage at release, formerly incarcerated people face a 12-fold increase in overdose death risk in the first two weeks of freedom.",
+  "new": "In the first two weeks after prison release, people face 12.7 times the death risk of other residents, with drug overdose the leading cause (Binswanger et al., NEJM 2007)."
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "              stat: \"50K+\",\n              statLabel: \"Annual transitions from incarceration\",",
+  "new": "              stat: \"42K+\",\n              statLabel: \"Identified eligible, Oct 2024–Nov 2025\","
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "              stat: \"80K+\",\n              statLabel: \"Children in California foster care\",",
+  "new": "              stat: \"38K+\",\n              statLabel: \"Children in CA foster care (Sept 2024)\","
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "stat: \"2x\",",
+  "new": "stat: \"3.6x\","
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "                { date: \"Jan 2016\", event: \"Whole Person Care pilots launch in 25 California counties — the proof-of-concept that will become CalAIM\" },\n                { date: \"2019–2020\", event: \"DHCS begins designing CalAIM; extensive stakeholder engagement with counties, plans, providers, and advocates\" },\n                { date: \"Jan 7, 2021\", event: \"DHCS submits formal CalAIM Section 1115 waiver proposal to CMS\" },\n                { date: \"Dec 29, 2021\", event: \"CMS approves CalAIM 1115 waiver — one of the most expansive Medicaid waivers ever approved\" },\n                { date: \"Jan 1, 2022\", event: \"CalAIM officially launches. Community Supports go live for managed care plans. Population Health Management requirements begin.\" },\n                { date: \"Jan 2022\", event: \"Justice-involved pre-release Medi-Cal benefit launches — first in U.S. history\" },\n                { date: \"Jul 2022\", event: \"Enhanced Care Management (ECM) fully operational across all 58 counties. Priority populations: homelessness, SMI, high-risk pregnancy, foster youth.\" },\n                { date: \"Jan 2023\", event: \"Medi-Cal dental benefit expansion takes effect — restoring periodontal and other services eliminated in 2009\" },\n                { date: \"2023\", event: \"Behavioral health integration reforms begin phased implementation; counties and plans negotiate new data-sharing agreements\" },\n                { date: \"Jan 2024\", event: \"Medi-Cal expanded to all income-eligible Californians regardless of immigration status — CalAIM infrastructure supports new enrollees\" },\n                { date: \"2024–2025\", event: \"Mid-waiver evaluation results begin emerging; DHCS, RAND, and UCLA publish early outcomes data on ECM and Community Supports utilization\" },\n                { date: \"2026–2027\", event: \"Waiver renewal negotiations with CMS; DHCS expected to seek expanded authorities based on early outcomes, particularly for behavioral health integration and housing\" },",
+  "new": "                { date: \"2016–2017\", event: \"Whole Person Care authorized under the Medi-Cal 2020 waiver (2016); 25 pilots in 26 counties begin enrolling in 2017 — the proof-of-concept that will become CalAIM\" },\n                { date: \"2019–2020\", event: \"DHCS begins designing CalAIM; extensive stakeholder engagement with counties, plans, providers, and advocates\" },\n                { date: \"Jan 2021\", event: \"DHCS releases its revised CalAIM proposal\" },\n                { date: \"Jun 30, 2021\", event: \"DHCS submits the CalAIM Section 1115 and 1915(b) waiver requests to CMS\" },\n                { date: \"Dec 29, 2021\", event: \"CMS approves the CalAIM 1115 and 1915(b) waivers, effective through Dec 31, 2026\" },\n                { date: \"Jan 1, 2022\", event: \"CalAIM officially launches. Community Supports go live; ECM goes live in former Whole Person Care and Health Homes counties; new preventive dental benefits begin.\" },\n                { date: \"Jul 2022\", event: \"ECM goes live in all remaining counties for the adult Populations of Focus (homelessness, avoidable hospital/ED use, SMI/SUD)\" },\n                { date: \"Jan 2023\", event: \"Population Health Management Program begins. On Jan 26, CMS approves California's justice-involved reentry amendment — the first in the nation.\" },\n                { date: \"Jul 2023\", event: \"ECM goes live for the Children & Youth Populations of Focus, including youth in foster care\" },\n                { date: \"2023\", event: \"Behavioral health integration reforms begin phased implementation; counties and plans negotiate new data-sharing agreements\" },\n                { date: \"Jan 2024\", event: \"Medi-Cal expanded to all income-eligible Californians regardless of immigration status; ECM Birth Equity Population of Focus goes live\" },\n                { date: \"Oct 2024\", event: \"Justice-involved pre-release services launch; correctional facilities phase in through Oct 2026\" },\n                { date: \"Jan 2026\", event: \"Transitional Rent becomes the 15th Community Support\" },\n                { date: \"May 2026\", event: \"DHCS submits a five-year CalAIM 1115 renewal request to CMS for Jan 2027–Dec 2031; the current waiver expires Dec 31, 2026\" },"
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "\"California Medi-Cal managed care plans (22 plans)\",",
+  "new": "\"California Medi-Cal managed care plans (24 plans)\","
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "California accounts for roughly <strong>1 in 7 Medicaid enrollees nationwide</strong>.",
+  "new": "California accounts for roughly <strong>1 in 5 Medicaid and CHIP enrollees nationwide</strong>."
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "has already influenced waiver negotiations in Oregon, Washington, and New York.",
+  "new": "sits alongside similar health-related social needs approvals in Oregon, Washington, and New York."
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "Since California's approval in 2022, CMS has opened",
+  "new": "Since California's approval in January 2023, CMS has opened"
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "The Community Supports framework is being\n                replicated in Oregon, Washington, and beyond.",
+  "new": "Oregon, Washington, and New York\n                hold their own approvals for health-related social needs services."
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "          <PressCard\n            publication=\"CalMatters\"\n            date=\"2022\"\n            title=\"California's Medi-Cal overhaul aims to house, feed and care for 14 million people\"\n            summary=\"CalMatters' definitive explainer on CalAIM's scope — the first major statewide coverage to frame CalAIM as a social services expansion, not just a healthcare reform.\"\n            href=\"https://calmatters.org/health/2022/01/california-medi-cal-reform-calaim/\"\n          />\n          <PressCard\n            publication=\"Los Angeles Times\"\n            date=\"2022\"\n            title=\"California wants to pay for housing to help the homeless — with Medi-Cal dollars\"\n            summary=\"The LA Times investigates the unprecedented Community Supports authorization — Medicaid funding for housing deposits and navigation — and what it means for California's homelessness crisis.\"\n            href=\"https://www.latimes.com/california/story/2022-01-03/california-medi-cal-homeless-housing\"\n          />\n          <PressCard\n            publication=\"KFF Health News\"\n            date=\"2023\"\n            title=\"States Look to California's Medicaid for Ideas on Housing, Social Services\"\n            summary=\"National health policy coverage of CalAIM's influence — how California's Community Supports model is reshaping what other states ask CMS to approve in their own 1115 waivers.\"\n            href=\"https://kffhealthnews.org/news/article/medicaid-california-calaim-housing-community-supports-states/\"\n          />\n          <PressCard\n            publication=\"STAT News\"\n            date=\"2023\"\n            title=\"California's 'Care Court' and CalAIM: A one-two punch on mental illness\"\n            summary=\"STAT News examines the intersection of CalAIM's behavioral health integration with Governor Newsom's CARE Court — and whether the two programs together can address California's most intractable mental health crisis.\"\n            href=\"https://www.statnews.com/2023/03/california-care-court-calaim-mental-health/\"\n          />\n          <PressCard\n            publication=\"California Healthline\"\n            date=\"2022\"\n            title=\"Medi-Cal's Big Bet: Can It House the Homeless and Heal the Sick?\"\n            summary=\"California Healthline profiles ECM care managers working with people experiencing homelessness in Los Angeles — the human story behind CalAIM's data.\"\n            href=\"https://californiahealthline.org/news/article/medi-cal-calaim-homeless-housing-ecm/\"\n          />\n          <PressCard\n            publication=\"Politico\"\n            date=\"2022\"\n            title=\"California's Medicaid experiment could reshape U.S. health care\"\n            summary=\"Politico frames CalAIM as a national test case — the argument that whatever California proves in Medi-Cal will become the blueprint for the next generation of federal Medicaid policy.\"\n            href=\"https://www.politico.com/news/2022/california-medicaid-calaim-reform/\"\n          />\n          <PressCard\n            publication=\"San Francisco Chronicle\"\n            date=\"2023\"\n            title=\"Medi-Cal now pays for housing. Here's how that works in practice.\"\n            summary=\"The SF Chronicle follows an unhoused Medi-Cal member through the CalAIM Community Supports process — from ECM enrollment to housing deposit authorization to stable housing — illustrating both the promise and the bureaucratic friction of the model.\"\n            href=\"https://www.sfchronicle.com/bayarea/article/medi-cal-calaim-housing-community-support/\"\n          />\n          <PressCard\n            publication=\"CalMatters\"\n            date=\"2024\"\n            title=\"As CalAIM hits its stride, gaps in mental health care persist\"\n            summary=\"A progress check two years in — CalAIM's wins on housing and ECM enrollment, but the persistent gaps in behavioral health integration that advocates say undermine the whole-person care vision.\"\n            href=\"https://calmatters.org/health/2024/calaim-mental-health-behavioral-health-gaps/\"\n          />",
+  "new": "          <PressCard\n            publication=\"Associated Press (via CBS Sacramento)\"\n            date=\"Dec 29, 2021\"\n            title=\"Overhaul Of California's Medicaid Approved By US Government\"\n            summary=\"Wire coverage of the federal approval of CalAIM, which lets Medi-Cal money be spent on housing-related services.\"\n            href=\"https://www.cbsnews.com/sacramento/news/overhaul-of-californias-medicaid-approved-by-us-government/\"\n          />\n          <PressCard\n            publication=\"CalMatters\"\n            date=\"Feb 14, 2022\"\n            title=\"California launches ambitious effort to transform Medi-Cal\"\n            summary=\"CalMatters on the CalAIM launch: care coordination, Community Supports, and the social needs the program targets.\"\n            href=\"https://calmatters.org/health/2022/02/california-medi-cal-reform/\"\n          />"
+ },
+ {
+  "file": "frontend/app/california-calaim/page.tsx",
+  "old": "              { label: \"KFF — California Medicaid Policy\", href: \"https://www.kff.org/medicaid/state-indicator/medicaid-spending/california/\" },\n",
+  "new": ""
+ },
+ {
+  "file": "frontend/app/california-calaim/simulator/CalAIMSimulatorClient.tsx",
+  "old": "plans and 58 counties serving 14.2M beneficiaries.",
+  "new": "plans and 58 counties serving about 13.7M members. Initiative costs, savings, timelines and plan figures\n            are illustrative model assumptions, not DHCS estimates."
+ },
+ {
+  "file": "frontend/app/california-calaim/simulator/CalAIMSimulatorClient.tsx",
+  "old": "[['24', 'Managed Care Plans'], ['14.2M', 'Beneficiaries'], ['58', 'Counties'], ['2022–26', 'Waiver term']]",
+  "new": "[['24', 'Managed Care Plans'], ['13.7M', 'Members'], ['58', 'Counties'], ['2022–26', 'Waiver term']]"
+ },
+ {
+  "file": "frontend/app/california-calaim/simulator/CalAIMSimulatorClient.tsx",
+  "old": "region: 'Northern CA', enrollees: 620000, counties: 14,",
+  "new": "region: 'Northern CA', enrollees: 620000, counties: 24,"
+ },
+ {
+  "file": "frontend/app/california-calaim/simulator/CalAIMSimulatorClient.tsx",
+  "old": "region: 'Statewide', enrollees: 1900000, counties: 22,",
+  "new": "region: 'Southern CA + Sacramento', enrollees: 1200000, counties: 5,"
+ },
+ {
+  "file": "frontend/app/california-calaim/simulator/CalAIMSimulatorClient.tsx",
+  "old": "region: 'Central CA', enrollees: 380000, counties: 3,",
+  "new": "region: 'Central CA', enrollees: 380000, counties: 5,"
+ },
+ {
+  "file": "frontend/app/california-calaim/simulator/CalAIMSimulatorClient.tsx",
+  "old": "const planImpactM = plan ? (netM * plan.medicaidRevM) / 98000 : 0 // scale by plan size vs CA total",
+  "new": "const planImpactM = plan ? (netM * plan.enrollees) / 12969979 : 0 // share of Medi-Cal managed care enrollment (12,969,979, DHCS June 2026)"
+ },
+ {
+  "file": "frontend/app/california-calaim/simulator/CalAIMSimulatorClient.tsx",
+  "old": "by this plan&apos;s share of statewide Medi-Cal revenue.",
+  "new": "by this plan&apos;s share of statewide Medi-Cal managed care enrollment."
+ },
+ {
+  "file": "frontend/app/california-calaim/simulator/CalAIMSimulatorClient.tsx",
+  "old": "<p className=\"text-sm text-slate-500\">{plan.region} · {plan.counties} {plan.counties === 1 ? 'county' : 'counties'}</p>",
+  "new": "<p className=\"text-sm text-slate-500\">{plan.region} · {plan.counties} {plan.counties === 1 ? 'county' : 'counties'}</p>\n                  <p className=\"text-[11px] text-amber-700 mt-1\">Enrollment, revenue, margin, ECM readiness and SDOH scores are illustrative model inputs, not DHCS-reported figures.</p>"
+ }
+]
