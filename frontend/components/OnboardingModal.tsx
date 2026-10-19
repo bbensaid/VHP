@@ -1,5 +1,6 @@
 "use client";
 
+import { RESEARCH_LAB_TOOL_COUNT } from "@/lib/taxonomy/tools";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { XMarkIcon, SparklesIcon, ChartBarIcon, AcademicCapIcon, NewspaperIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
@@ -118,7 +119,7 @@ export default function OnboardingModal() {
                 {[
                   { icon: NewspaperIcon, label: "The Wire", desc: "Real-time intelligence feed" },
                   { icon: SparklesIcon, label: "AI Analyst", desc: "Ask any healthcare question" },
-                  { icon: ChartBarIcon, label: "Research Lab", desc: "24 analytical tools" },
+                  { icon: ChartBarIcon, label: "Research Lab", desc: `${RESEARCH_LAB_TOOL_COUNT} analytical tools` },
                   { icon: AcademicCapIcon, label: "Academy", desc: "Structured learning paths" },
                 ].map(({ icon: Icon, label, desc }) => (
                   <div key={label} className="flex items-start gap-2.5 bg-slate-50 dark:bg-slate-800 rounded-xl p-3">

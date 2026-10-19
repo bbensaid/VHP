@@ -13,6 +13,7 @@ import { ArrowLeftIcon } from '@heroicons/react/24/outline'
 import dynamic from 'next/dynamic'
 import ErrorBoundary from '@/components/ErrorBoundary'
 import { toolBadgeClass } from '@/lib/taxonomy/badges'
+import { RESEARCH_LAB_TOOL_COUNT } from '@/lib/taxonomy/tools'
 
 /* ── Tool loading skeleton ──────────────────────────────────────────────── */
 function ToolSkeleton() {
@@ -37,7 +38,7 @@ const loadOpts = (label: string) => ({
   // so they share vendor splitting with chart.js / recharts
 } as const)
 
-/* ── Lazy-load all 24 tools with loading skeletons ──────────────────────── */
+/* ── Lazy-load all tools with loading skeletons ──────────────────────── */
 const FHIRLab                    = dynamic(() => import(/* webpackChunkName: "tool-fhir" */        '@/components/research/FHIRLab'),                    { ...loadOpts('FHIR'), ssr: false })
 const RiskStratificationEngine   = dynamic(() => import(/* webpackChunkName: "tool-risk" */        '@/components/research/RiskStratificationEngine'),   { ...loadOpts('Risk'), ssr: false })
 const EMREHRLab                  = dynamic(() => import(/* webpackChunkName: "tool-emr" */         '@/components/research/EMREHRLab'),                  { ...loadOpts('EMR'), ssr: false })
@@ -285,7 +286,7 @@ function ResearchLabHubInner() {
                 HTR Research Lab
               </h1>
               <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">
-                24 interactive analytical tools spanning every dimension of health system transformation — from FHIR interoperability to the five-pillar transformation scorecard.
+                {RESEARCH_LAB_TOOL_COUNT} interactive analytical tools spanning every dimension of health system transformation — from FHIR interoperability to the five-pillar transformation scorecard.
               </p>
             </div>
           </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import { RESEARCH_LAB_TOOL_COUNT } from "@/lib/taxonomy/tools";
 import { useState } from "react";
 import Link from "next/link";
 import PillarHero from "@/components/home/PillarHero";
@@ -79,9 +80,9 @@ const CAPABILITIES = [
     href: "/research-lab",
     emoji: "🧪",
     title: "Research Lab",
-    desc: "24 interactive analytical tools — payment models, policy quality, population equity, and more.",
+    desc: `${RESEARCH_LAB_TOOL_COUNT} interactive analytical tools — payment models, policy quality, population equity, and more.`,
     accent: "border-amber-200 hover:border-amber-400 hover:bg-amber-50",
-    tag: "24 tools",
+    tag: `${RESEARCH_LAB_TOOL_COUNT} tools`,
     tagColor: "bg-amber-100 text-amber-700",
   },
   {

@@ -3,7 +3,7 @@ import { ArrowLeftIcon, ArrowTopRightOnSquareIcon } from "@heroicons/react/24/ou
 
 export const metadata = {
   title: "Research Lab Guide | HTR Getting Started",
-  description: "How to use HTR's 22 research lab tools — what each tool does and when to use it.",
+  description: "How to use HTR's Research Lab tools — what each tool does and when to use it.",
 };
 
 const LAB_GROUPS = [

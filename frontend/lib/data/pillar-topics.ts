@@ -94,7 +94,7 @@ export const PILLAR_OVERVIEW: Partial<Record<FrameworkId, PillarOverviewContent>
       { href: "/research-lab/population-equity", emoji: "👥", title: "Population & Equity Lab", desc: "Risk stratification models, chronic care analytics & equity dashboards" },
       { href: "/htr-simulator", emoji: "⚙️", title: "HTR Simulator", desc: "Score clinical quality & outcomes in your transformation scenario" },
       { href: "/dashboard", emoji: "🗺️", title: "50-State Dashboard", desc: "Hospital-level clinical performance data across all RHTP participants" },
-      { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "All 24 tools including clinical decision support & care model analysis" },
+      { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "Every Research Lab tool, including clinical decision support & care model analysis" },
     ],
   },
 
@@ -138,7 +138,7 @@ export const PILLAR_OVERVIEW: Partial<Record<FrameworkId, PillarOverviewContent>
       { href: "/research-lab/payment-models", emoji: "💰", title: "Payment Models Lab", desc: "APM Design, Global Budget Modeler, Shared Savings & CEA calculators" },
       { href: "/investment-tracker", emoji: "📈", title: "Investment Tracker", desc: "M&A, PE activity, capital flows & digital-health rounds in real time" },
       { href: "/hti-dashboard", emoji: "📊", title: "HTI Dashboard", desc: "Vermont five-pillar readiness, dated milestones, and Strategic Plan pace" },
-      { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "All 24 tools including financial stress test & HTA Studio" },
+      { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "Every Research Lab tool, including financial stress test & HTA Studio" },
     ],
   },
 
@@ -182,7 +182,7 @@ export const PILLAR_OVERVIEW: Partial<Record<FrameworkId, PillarOverviewContent>
       { href: "/research-lab/interoperability", emoji: "🔗", title: "Interoperability Lab", desc: "FHIR, EMR/EHR adoption & vendor analysis, risk stratification & data-exchange tools" },
       { href: "/research-lab/technology-ai", emoji: "🤖", title: "Technology & AI Lab", desc: "AI Clinical Governance Lab + Digital Health Lab" },
       { href: "/the-wire", emoji: "📡", title: "The Wire", desc: "Daily intelligence feed on AI, cybersecurity & digital health" },
-      { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "All 24 tools including FHIR maturity assessment & AI lifecycle audit" },
+      { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "Every Research Lab tool, including FHIR maturity assessment & AI lifecycle audit" },
     ],
   },
 
@@ -228,7 +228,7 @@ export const PILLAR_OVERVIEW: Partial<Record<FrameworkId, PillarOverviewContent>
       { href: "/research-lab/population-equity", emoji: "👥", title: "Population & Equity Lab", desc: "Population Health Modeler + Health Equity Studio" },
       { href: "/vermont-sdoh", emoji: "🍁", title: "Vermont SDOH", desc: "Vermont's 8 SDOH domains and 2-1-1 referral network" },
       { href: "/hti-dashboard", emoji: "📊", title: "HTI Dashboard", desc: "Vermont five-pillar status, with Equity as the cross-cutting test" },
-      { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "All 24 tools including HEROI and equity-stratified HEDIS" },
+      { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "Every Research Lab tool, including HEROI and equity-stratified HEDIS" },
     ],
   },
 

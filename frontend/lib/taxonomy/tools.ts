@@ -411,6 +411,9 @@ export const TOOLS: readonly Tool[] = [
   },
 ] as const;
 
+/** Tools that live inside the Research Lab — the number the site quotes. */
+export const RESEARCH_LAB_TOOL_COUNT = TOOLS.filter((t) => t.href.startsWith("/research-lab")).length;
+
 export function getTool(id: string): Tool {
   const t = TOOLS.find((t) => t.id === id);
   if (!t) throw new Error(`Unknown tool id: ${id}`);
