@@ -522,10 +522,10 @@ function PremiumRating() {
     const annualPremium = weightedAvgPremium * 12;
     const employeeShare = annualPremium * (1 - inputs.employerContribution / 100);
     const affordabilityPct = (employeeShare / inputs.medianHouseholdIncome) * 100;
-    const acaThreshold = 9.12; // 2024
+    const acaThreshold = 9.96; // 2026 employer-coverage affordability percentage (IRS Rev. Proc. 2025-25)
 
     // Medicaid eligibility estimate (income <= 138% FPL)
-    // FPL 2024 ≈ $15,060 individual; 138% = $20,783
+    // Rough heuristic, not an eligibility rule. FPL 2025 = $15,650 for one person; 138% = $21,597
     const medicaidEligiblePct = Math.max(0, Math.min(60, (25000 / inputs.medianHouseholdIncome) * 25));
 
     return {
@@ -546,7 +546,7 @@ function PremiumRating() {
 
   const stateRegs: Record<string, string> = {
     Vermont: "Vermont uses community rating with merged individual/small group market. Green Mountain Care Board oversees rates.",
-    California: "Covered California uses standardized plans. California allows 10:1 age bands (vs federal 3:1).",
+    California: "Covered California requires standardized plans and uses the federal 3:1 age-rating limit.",
     "New York": "New York uses pure community rating — no age rating allowed. State-specific AV standards.",
     Massachusetts: "Commonwealth Connector operates the exchange. Tobacco surcharge prohibited.",
   };
@@ -710,7 +710,7 @@ function PremiumRating() {
             <StatBox
               label="ACA Affordability"
               value={fmtPct(result.affordabilityPct, 1)}
-              sub={`${result.affordable ? "AFFORDABLE" : "UNAFFORDABLE"} (threshold: 9.12%)`}
+              sub={`${result.affordable ? "AFFORDABLE" : "UNAFFORDABLE"} (threshold: ${result.acaThreshold}%)`}
               color={result.affordable ? "emerald" : "red"}
             />
             <StatBox
@@ -1016,9 +1016,9 @@ function MedicareDrugPricing() {
   const manufacturerRevLoss = federalSavings * 0.7; // simplified
 
   function mfpReduction_beneficiaryOOP(d: IRADrugData, mfp: number, annualCost: number) {
-    // 20% coinsurance in Part D catastrophic; OOP cap $2,000 in 2025+
-    const oldOOP = Math.min(annualCost * 0.20, 3800);
-    const newOOP = Math.min(annualCost * (mfp / d.currentListPrice) * 0.20, 2000);
+    // Simplified: 25% coinsurance; pre-IRA out-of-pocket threshold $7,400 (2023), 2026 cap $2,100
+    const oldOOP = Math.min(annualCost * 0.25, 7400);
+    const newOOP = Math.min(annualCost * (mfp / d.currentListPrice) * 0.25, 2100);
     return Math.max(0, oldOOP - newOOP);
   }
 
@@ -1026,33 +1026,26 @@ function MedicareDrugPricing() {
   const partDOOP = useMemo(() => {
     const cost = patientAnnualDrugCost;
 
-    // OLD structure (pre-2025)
-    const oldDeductible = Math.min(cost, 545); // 2024 deductible
+    // OLD structure — pre-IRA, 2023 parameters (simplified: only the
+    // beneficiary's own payments count toward the $7,400 out-of-pocket threshold)
+    const OLD_DED = 505, OLD_ICL = 4660, OLD_TROOP = 7400;
+    const oldDeductible = Math.min(cost, OLD_DED);
     let oldRemaining = cost - oldDeductible;
+    let oldTotalOOP = oldDeductible;
+    const oldInitialSpend = Math.min(oldRemaining, OLD_ICL - OLD_DED);
+    oldTotalOOP += oldInitialSpend * 0.25;
+    oldRemaining -= oldInitialSpend;
+    // Coverage gap: 25% until out-of-pocket spending reaches the threshold
+    const oldGapSpend = Math.min(oldRemaining, Math.max(0, (OLD_TROOP - oldTotalOOP) / 0.25));
+    oldTotalOOP += oldGapSpend * 0.25;
+    oldRemaining -= oldGapSpend;
+    // Catastrophic: 5% coinsurance, no cap
+    oldTotalOOP += oldRemaining * 0.05;
 
-    const oldInitialPhaseLimit = 4660 - 545; // 2024 ICL
-    const oldInitialOOP = Math.min(oldRemaining, oldInitialPhaseLimit) * 0.25;
-    oldRemaining = Math.max(0, oldRemaining - oldInitialPhaseLimit);
-
-    // Donut hole (coverage gap): 25% of drug costs
-    const oldDonutLimit = 7400 - 4660;
-    const oldDonutOOP = Math.min(oldRemaining, oldDonutLimit) * 0.25;
-    oldRemaining = Math.max(0, oldRemaining - oldDonutLimit);
-
-    // Catastrophic: 5% coinsurance
-    const oldCatastrophicOOP = oldRemaining * 0.05;
-
-    const oldTotalOOP = oldDeductible + oldInitialOOP + oldDonutOOP + oldCatastrophicOOP;
-
-    // NEW structure (2025+)
-    const newDeductible = Math.min(cost, 590); // 2025
-    const newRemaining = cost - newDeductible;
-
-    const newInitialPhaseLimit = 2000 - newDeductible;
-    const newInitialOOP = Math.min(newRemaining, newInitialPhaseLimit) * 0.25;
-
-    // No donut hole. OOP cap = $2,000
-    const newTotalOOP = Math.min(newDeductible + newInitialOOP, 2000);
+    // NEW structure — 2026 parameters ($615 deductible, $2,100 out-of-pocket cap)
+    const NEW_DED = 615, NEW_CAP = 2100;
+    const newDeductible = Math.min(cost, NEW_DED);
+    const newTotalOOP = Math.min(newDeductible + Math.max(0, cost - newDeductible) * 0.25, NEW_CAP);
 
     // Low income subsidy adjustments
     const liSubsidy = patientIncomeLevel === "low" ? 0.85 : patientIncomeLevel === "mid" ? 0.30 : 0;
@@ -1062,14 +1055,14 @@ function MedicareDrugPricing() {
 
     // Determine spending phase (new)
     let newPhase = "Deductible";
-    if (cost > 2000) newPhase = "Catastrophic (No Donut Hole)";
-    else if (cost > 590) newPhase = "Initial Coverage";
+    if (newTotalOOP >= NEW_CAP) newPhase = "Catastrophic ($0 after cap)";
+    else if (cost > NEW_DED) newPhase = "Initial Coverage";
 
     // Determine spending phase (old)
     let oldPhase = "Deductible";
-    if (cost > 7400) oldPhase = "Catastrophic";
-    else if (cost > 4660) oldPhase = "Coverage Gap (Donut Hole)";
-    else if (cost > 545) oldPhase = "Initial Coverage";
+    if (oldRemaining > 0) oldPhase = "Catastrophic";
+    else if (oldGapSpend > 0) oldPhase = "Coverage Gap (Donut Hole)";
+    else if (cost > OLD_DED) oldPhase = "Initial Coverage";
 
     return { oldTotalOOP: oldFinalOOP, newTotalOOP: newFinalOOP, savings: Math.max(0, oldFinalOOP - newFinalOOP), oldPhase, newPhase };
   }, [patientAnnualDrugCost, patientIncomeLevel]);
@@ -1089,7 +1082,7 @@ function MedicareDrugPricing() {
       <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 flex gap-3">
         <Info className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
         <div className="text-sm text-emerald-800">
-          <strong>Inflation Reduction Act (IRA) 2022</strong> enacted three major drug pricing reforms: Medicare negotiation of Maximum Fair Prices for high-cost drugs, Part D benefit redesign with a $2,000 OOP cap, and inflation rebates when drug prices exceed CPI.
+          <strong>Inflation Reduction Act (IRA) 2022</strong> enacted three major drug pricing reforms: Medicare negotiation of Maximum Fair Prices for high-cost drugs, Part D benefit redesign with an out-of-pocket cap ($2,000 in 2025, indexed to $2,100 in 2026), and inflation rebates when drug prices exceed CPI.
         </div>
       </div>
 
@@ -1169,7 +1162,7 @@ function MedicareDrugPricing() {
       </IRASec>
 
       {/* Section B */}
-      <IRASec title="Section B — Part D Benefit Redesign (2025+): No Donut Hole, $2,000 OOP Cap">
+      <IRASec title="Section B — Part D Benefit Redesign: No Donut Hole, Out-of-Pocket Cap ($2,100 in 2026)">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-4">
           <div>
             <Slider label="Annual Drug Costs (total allowed)" value={patientAnnualDrugCost} min={0} max={30000} step={500} prefix="$" onChange={setPatientAnnualDrugCost} />
@@ -1203,7 +1196,7 @@ function MedicareDrugPricing() {
               <div className="text-xs font-semibold text-slate-700 mb-3">Spending Phase Comparison</div>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
-                  <span className="text-xs w-16 text-slate-500">Old 2024</span>
+                  <span className="text-xs w-16 text-slate-500">Pre-IRA 2023</span>
                   <div className={`flex-1 px-2 py-1 rounded text-xs font-medium text-center ${
                     partDOOP.oldPhase.includes("Catastrophic") ? "bg-red-100 text-red-700" :
                     partDOOP.oldPhase.includes("Donut") ? "bg-amber-100 text-amber-700" :
@@ -1214,7 +1207,7 @@ function MedicareDrugPricing() {
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-xs w-16 text-slate-500">New 2025</span>
+                  <span className="text-xs w-16 text-slate-500">2026</span>
                   <div className={`flex-1 px-2 py-1 rounded text-xs font-medium text-center ${
                     partDOOP.newPhase.includes("Catastrophic") ? "bg-purple-100 text-purple-700" :
                     partDOOP.newPhase.includes("Initial") ? "bg-emerald-100 text-emerald-700" :
@@ -1229,7 +1222,7 @@ function MedicareDrugPricing() {
 
           <div className="space-y-3">
             <StatBox label="OOP Under Old Design" value={fmtDollar(partDOOP.oldTotalOOP, 0)} sub="deductible + initial + gap + catastrophic" color="red" />
-            <StatBox label="OOP Under New Design" value={fmtDollar(partDOOP.newTotalOOP, 0)} sub="deductible + initial, $2,000 cap" color="emerald" />
+            <StatBox label="OOP Under New Design" value={fmtDollar(partDOOP.newTotalOOP, 0)} sub="deductible + 25% coinsurance, $2,100 cap" color="emerald" />
             <StatBox
               label="Annual OOP Savings"
               value={fmtDollar(partDOOP.savings, 0)}
@@ -1242,11 +1235,11 @@ function MedicareDrugPricing() {
               <div className="text-xs font-semibold text-slate-700 mb-3">Part D Structure Comparison</div>
               <div className="space-y-2 text-xs">
                 {[
-                  { phase: "Deductible", old: "$545", new: "$590", change: "Slight increase" },
+                  { phase: "Deductible", old: "$505", new: "$615", change: "Higher" },
                   { phase: "Initial Coverage", old: "25% coins.", new: "25% coins.", change: "Same" },
                   { phase: "Coverage Gap", old: "25% coins.", new: "Eliminated", change: "REMOVED" },
-                  { phase: "Catastrophic", old: "5% coins.", new: "OOP Cap $2,000", change: "Major improvement" },
-                  { phase: "OOP Max", old: "No cap (unlimited)", new: "$2,000 hard cap", change: "Key protection" },
+                  { phase: "Catastrophic", old: "5% coins. after $7,400 OOP", new: "$0 after $2,100 OOP", change: "Major improvement" },
+                  { phase: "OOP Max", old: "No cap (unlimited)", new: "$2,100 cap (2026)", change: "Key protection" },
                 ].map((row) => (
                   <div key={row.phase} className="grid grid-cols-4 gap-1 items-center">
                     <div className="text-slate-600 font-medium">{row.phase}</div>
