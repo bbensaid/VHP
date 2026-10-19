@@ -31,10 +31,10 @@ function DigitalHealthBody() {
           <span className="text-2xl">💰</span>
           <div>
             <h2 className="ty-h3 font-bold text-slate-900">Digital Health Funding Landscape</h2>
-            <p className="text-sm text-slate-500">VC/PE investment by sector and year — Rock Health + CB Insights data</p>
+            <p className="text-sm text-slate-500">US digital health venture funding by year (Rock Health)</p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8">
           <div>
             <h4 className="text-sm font-bold text-slate-700 mb-4">Annual Investment ($B)</h4>
             <div className="space-y-3">
@@ -42,7 +42,7 @@ function DigitalHealthBody() {
                 { year: "2021 (Peak)", amount: 29.1, color: "bg-indigo-600" },
                 { year: "2022", amount: 15.3, color: "bg-indigo-500" },
                 { year: "2023", amount: 10.7, color: "bg-indigo-400" },
-                { year: "2024 (H1 run rate)", amount: 12.4, color: "bg-indigo-500" },
+                { year: "2024", amount: 10.1, color: "bg-indigo-500" },
               ].map((row) => (
                 <div key={row.year}>
                   <div className="flex justify-between text-sm mb-1">
@@ -56,32 +56,8 @@ function DigitalHealthBody() {
               ))}
             </div>
           </div>
-          <div>
-            <h4 className="text-sm font-bold text-slate-700 mb-4">2023 Investment by Category</h4>
-            <div className="space-y-2">
-              {[
-                { category: "Mental Health", amount: 1.8, pct: 17 },
-                { category: "Clinical AI & Decision Support", amount: 1.5, pct: 14 },
-                { category: "Chronic Disease Management", amount: 1.3, pct: 12 },
-                { category: "Telehealth / Virtual Care", amount: 1.1, pct: 10 },
-                { category: "Revenue Cycle & Admin", amount: 0.9, pct: 8 },
-                { category: "Oncology", amount: 0.8, pct: 7 },
-                { category: "Other / Emerging", amount: 3.3, pct: 31 },
-              ].map((row) => (
-                <div key={row.category} className="flex items-center justify-between text-sm">
-                  <span className="text-slate-600 text-xs">{row.category}</span>
-                  <div className="flex items-center gap-2">
-                    <div className="h-2 w-20 bg-slate-100 rounded-full overflow-hidden">
-                      <div className="h-2 bg-indigo-400 rounded-full" style={{ width: `${row.pct * 3}%` }} />
-                    </div>
-                    <span className="font-bold text-slate-700 text-xs w-12 text-right">${row.amount}B</span>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
-        </div>
-        <p className="text-xs text-slate-400 mt-6">Sources: Rock Health Digital Health Funding Database, CB Insights State of Digital Health Report 2024.</p>
+        <p className="text-xs text-slate-400 mt-6">Source: Rock Health annual digital health funding reports (US, venture).</p>
       </div>
 
       {/* Core Domains */}
@@ -91,12 +67,11 @@ function DigitalHealthBody() {
             icon: "📡",
             title: "Remote Patient Monitoring (RPM)",
             items: [
-              "CMS billing: CPT 99453/99454 (setup), 99457/99458 (management) — $52–$65/month",
-              "Cardiac RPM: iRhythm Zio patch (14-day continuous ECG) — AFib detection rate 6.2%",
-              "CHF weight/BP monitoring: 40–50% reduction in 30-day readmissions (NEJM 2023)",
-              "Hypertension RPM + virtual visit: −11.6 mmHg SBP improvement vs. usual care (JAMA)",
-              "CMS requirement: at least 16 days of data per 30-day period for billing eligibility",
-              "Reimbursement growth: RPM claims up 1,294% 2019–2022 (CMS data)",
+              "CMS billing: 99453/99454 setup and supply, 99457/99458 management; new for CY2026: 99445 (2–15 days of data) and 99470 (10-minute management)",
+              "Cardiac monitoring: extended-wear ECG patches (e.g., Zio) for arrhythmia detection",
+              "Heart failure: non-invasive telemonitoring has mixed evidence — Tele-HF found no readmission benefit (NEJM 2010); implanted pressure monitoring cut HF hospitalizations (CHAMPION, Lancet 2011)",
+              "Hypertension: home BP telemonitoring with pharmacist management improved BP control (Margolis et al., JAMA 2013)",
+              "CMS requirement: 99454 needs 16+ days of data in a 30-day period",
             ],
           },
           {
@@ -104,21 +79,21 @@ function DigitalHealthBody() {
             title: "Digital Therapeutics (DTx)",
             items: [
               "FDA Software as a Medical Device (SaMD): Class I–III risk-based classification",
-              "Somryst (insomnia CBT-I): FDA De Novo cleared — first FDA-cleared digital therapeutic for sleep",
-              "reSET (Pear Therapeutics): first FDA-cleared DTx for substance use disorder (acquired 2023)",
+              "Somryst (insomnia CBT-I): FDA-cleared prescription digital therapeutic (510(k), 2020)",
+              "reSET (substance use disorder): first FDA-authorized prescription digital therapeutic (De Novo, 2017) — maker Pear Therapeutics went bankrupt in 2023",
               "EndeavorRx: FDA-cleared game-based ADHD treatment for children 8–12",
               "Prescription digital therapeutics (PDT): physician-prescribed, payer-reimbursed DTx pathway",
-              "Coverage challenge: only 7 US payers have formal PDT coverage policies as of 2024",
+              "Coverage: Medicare created digital mental health treatment codes (G0552–G0554) in the CY2025 fee schedule; commercial coverage remains patchy",
             ],
           },
           {
             icon: "⌚",
             title: "Wearables & Biometric Data",
             items: [
-              "Apple Watch Series 9: FDA-cleared AFib history, irregular rhythm notification, ECG app",
-              "Dexcom G7/Libre 3: continuous glucose monitor (CGM) — OTC availability expanding 2024",
+              "Apple Watch: FDA-cleared ECG app, irregular rhythm notification and AFib History",
+              "Continuous glucose monitors: first over-the-counter CGMs cleared in 2024 (Dexcom Stelo, Abbott Lingo)",
               "Garmin/Whoop: HRV, sleep staging — not FDA-cleared but used in clinical research",
-              "Oura Ring Gen 3: skin temperature, SpO2, readiness score — validated in COVID detection study",
+              "Consumer wearables (rings, watches): wellness data, not FDA-cleared diagnostics",
               "FDA Digital Health Center of Excellence: streamlined clearance pathway for wearable SaMD",
               "Data integration: Apple HealthKit, Google Fit, CommonHealth → FHIR conversion tools",
             ],
@@ -127,10 +102,10 @@ function DigitalHealthBody() {
             icon: "🏥",
             title: "Digital Front Door",
             items: [
-              "Patient self-scheduling: Zocdoc, Kyruus, Relatient — reduces scheduling FTE 30–40%",
+              "Patient self-scheduling: Zocdoc, Kyruus, Relatient",
               "AI chatbots for intake: Hyro, Orbita — symptom triage + appointment booking automation",
               "Digital check-in: patient intake forms, insurance verification, e-consent — day-of workflow",
-              "Epic MyChart adoption: 240M+ patients enrolled (2024); 73% of US health system patients",
+              "Patient portals: Epic MyChart is the most widely used",
               "Price transparency tools: Turquoise Health, Healthcare Bluebook — consumer-facing estimates",
               "Patient payment automation: Waystar, Flywire — contactless payment, payment plans",
             ],
@@ -151,12 +126,11 @@ function DigitalHealthBody() {
             icon: "📊",
             title: "Health Information Technology",
             items: [
-              "EHR market share: Epic 36.9%, Oracle Cerner 24.3%, Meditech 9.5% (hospital beds, KLAS 2024)",
-              "Ambulatory EHR: Epic 30.1%, Athenahealth 9.0%, EClinicalWorks 7.8%",
-              "Interoperability: CommonWell Health Alliance + Carequality — 1B+ records linked",
-              "SMART on FHIR apps: 500+ apps in Epic App Orchard marketplace",
-              "EHR optimization: documentation burden reduction is #1 CIO/CMO priority (CHIME 2024)",
-              "Cloud EHR: Epic on AWS, Oracle Cerner on OCI — full cloud migration underway at 40+ systems",
+              "Acute-care EHR market: Epic leads, followed by Oracle Health and Meditech (KLAS market share reports)",
+              "Interoperability: TEFCA — QHINs exchanging under the Common Agreement since December 2023; CommonWell and Carequality networks",
+              "SMART on FHIR apps: distributed through vendor marketplaces such as Epic Showroom (formerly App Orchard)",
+              "EHR optimization: documentation burden reduction is a top CIO/CMO priority",
+              "Cloud EHR hosting: Epic on public cloud, Oracle Health on OCI",
             ],
           },
         ].map((card) => (
