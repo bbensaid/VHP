@@ -25,13 +25,13 @@ function RegulationHero() {
 function RegulationBody() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-0 pb-12">
-      {/* 2024 Regulatory Rule Tracker */}
+      {/* Regulatory Rule Tracker */}
       <div className="bg-white rounded-2xl border border-slate-200 p-8 mb-10">
         <div className="flex items-center gap-3 mb-6">
           <span className="text-2xl">📜</span>
           <div>
-            <h2 className="ty-h3 font-bold text-slate-900">2024–2025 CMS Final Rules Tracker</h2>
-            <p className="text-sm text-slate-500">Major rules finalized or proposed by CMS, ONC, and HHS in the current rulemaking cycle</p>
+            <h2 className="ty-h3 font-bold text-slate-900">Federal Rules & Laws Tracker</h2>
+            <p className="text-sm text-slate-500">Major laws and rules in force or pending as of October 2026</p>
           </div>
         </div>
         <div className="overflow-x-auto">
@@ -47,14 +47,14 @@ function RegulationBody() {
             </thead>
             <tbody className="divide-y divide-slate-100">
               {[
-                { rule: "IPPS FY2025 Final Rule", agency: "CMS", status: "Final", statusColor: "bg-emerald-100 text-emerald-700", effective: "Oct 2024", provision: "+3.5% hospital payment update; nursing home staffing mandate" },
-                { rule: "Medicare Physician Fee Schedule 2025", agency: "CMS", status: "Final", statusColor: "bg-emerald-100 text-emerald-700", effective: "Jan 2025", provision: "−2.8% conversion factor; new behavioral health codes" },
-                { rule: "MA & Part D Rate Notice 2025", agency: "CMS", status: "Final", statusColor: "bg-emerald-100 text-emerald-700", effective: "Jan 2025", provision: "+3.7% MA revenue; IRA IRA drug negotiation phase-in" },
-                { rule: "HTI-1 (ONC Health Data Rule)", agency: "ONC", status: "Final", statusColor: "bg-emerald-100 text-emerald-700", effective: "Jun 2024", provision: "USCDI v3, SMART on FHIR, algorithm transparency requirement" },
-                { rule: "Prior Authorization FHIR Rule", agency: "CMS", status: "Final", statusColor: "bg-emerald-100 text-emerald-700", effective: "Jan 2026", provision: "Payers must expose prior auth via FHIR API; 72-hr urgent PA turnaround" },
-                { rule: "HIPAA Security Rule Update", agency: "HHS OCR", status: "Proposed", statusColor: "bg-amber-100 text-amber-700", effective: "TBD 2025", provision: "MFA required; 72-hr incident response; inventory of all ePHI systems" },
-                { rule: "Nursing Home Staffing Final Rule", agency: "CMS", status: "Final", statusColor: "bg-emerald-100 text-emerald-700", effective: "Phased 2026–2029", provision: "0.55 RN hrs/resident/day minimum; 24/7 RN on-site requirement" },
-                { rule: "Short-Term Limited Duration Plans", agency: "HHS/DOL/Treasury", status: "Final", statusColor: "bg-emerald-100 text-emerald-700", effective: "Sep 2024", provision: "STLD plans limited to 3 months; closed loophole on bare-bones plans" },
+                { rule: "One Big Beautiful Bill Act (H.R. 1)", agency: "Congress", status: "Enacted", statusColor: "bg-emerald-100 text-emerald-700", effective: "Jul 2025", provision: "Medicaid work requirements from Jan 2027; provider-tax limits; $50B Rural Health Transformation Program FY2026–2030; nursing-home staffing rule enforcement barred to 2034" },
+                { rule: "Consolidated Appropriations Act, 2026", agency: "Congress", status: "Enacted", statusColor: "bg-emerald-100 text-emerald-700", effective: "Feb 2026", provision: "Medicare telehealth flexibilities through Dec 31, 2027; Hospital-at-Home waiver through Sep 30, 2030" },
+                { rule: "Physician Fee Schedule CY2026", agency: "CMS", status: "Final", statusColor: "bg-emerald-100 text-emerald-700", effective: "Jan 2026", provision: "Separate APM and non-APM conversion factors with a one-year increase; −2.5% efficiency adjustment; new RPM codes 99445/99470" },
+                { rule: "IPPS FY2026", agency: "CMS", status: "Final", statusColor: "bg-emerald-100 text-emerald-700", effective: "Oct 2025", provision: "Net inpatient payment update of about 2.6%" },
+                { rule: "Interoperability & Prior Authorization (CMS-0057-F)", agency: "CMS", status: "Final", statusColor: "bg-emerald-100 text-emerald-700", effective: "Jan 2026 / Jan 2027", provision: "72-hour urgent and 7-day standard decision deadlines from 2026; FHIR prior-auth APIs from 2027" },
+                { rule: "HIPAA Security Rule update", agency: "HHS OCR", status: "Proposed", statusColor: "bg-amber-100 text-amber-700", effective: "Not final", provision: "MFA, encryption, restoring critical systems within 72 hours" },
+                { rule: "Nursing home staffing minimums", agency: "CMS", status: "Vacated", statusColor: "bg-rose-100 text-rose-700", effective: "—", provision: "Struck down (N.D. Tex., April 2025); H.R. 1 bars enforcement through September 2034" },
+                { rule: "Enhanced premium tax credits", agency: "Congress", status: "Expired", statusColor: "bg-rose-100 text-rose-700", effective: "Dec 31, 2025", provision: "House passed a three-year extension in January 2026; not enacted" },
               ].map((row) => (
                 <tr key={row.rule} className="hover:bg-slate-50">
                   <td className="py-3 pr-4 font-semibold text-slate-800 text-sm">{row.rule}</td>
@@ -79,31 +79,29 @@ function RegulationBody() {
             icon: "🏛️",
             title: "ACA & Coverage Regulation",
             items: [
-              "ACA Section 1557: nondiscrimination rule — HHS 2024 rule restores sex ≡ gender identity protections",
-              "Essential Health Benefits (EHBs): benchmark plan update cycle — states select 2027 EHB benchmark",
-              "ACA marketplace enrollment: 21.4M enrolled in 2024 OEP — record high since ACA passage",
-              "Enhanced PTCs (ARP/IRA): extended through 2025; zero-premium silver plan for ≤150% FPL",
-              "Short-term plans rollback: 2024 rule limits STLD to 3 months + 3-month extension maximum",
-              "ACA Section 1332 waivers: state innovation waivers — reinsurance programs in 15+ states",
+              "ACA Section 1557: nondiscrimination rule — parts of the 2024 rule enjoined or vacated in court",
+              "ACA marketplace: 24.3 million plan selections in the 2025 open enrollment, a record (CMS)",
+              "Enhanced premium tax credits (ARPA/IRA) expired December 31, 2025; the 400% FPL eligibility cap returned for 2026",
+              "ACA Section 1332 waivers: state reinsurance programs are the most common use",
             ],
           },
           {
             icon: "💊",
             title: "Drug Pricing Legislation",
             items: [
-              "IRA drug negotiation: CMS negotiated 10 drugs in 2026 (first round) — 64%–79% list price reduction",
+              "IRA drug negotiation: first 10 negotiated prices took effect January 2026, 38%–79% below list price (CMS)",
               "IRA inflation rebates: manufacturers pay rebates when drug prices exceed CPI-U — effective 2023",
               "Part D redesign (IRA): $2,000 OOP cap for Medicare enrollees effective Jan 2025",
               "PBM reform (pending): multiple bills targeting spread pricing, rebate pass-through, transparency",
-              "FTC PBM report (2024): 3 PBMs control 80% market; spread pricing cost Medicaid $7.9B 2017–2022",
-              "Drug importation: FDA final rule (2024) allows state programs to import drugs from Canada",
+              "FTC PBM reports (2024–2025): the three largest PBMs handle nearly 80% of US prescriptions",
+              "Drug importation: FDA authorized Florida's Canadian importation program (January 2024)",
             ],
           },
           {
             icon: "🏥",
             title: "Provider Payment Rules",
             items: [
-              "IPPS update formula: market basket minus productivity adjustment — FY2025 net +3.5% for hospitals",
+              "IPPS update formula: market basket minus productivity adjustment — FY2026 net update about 2.6%",
               "340B controversy: SCOTUS (2022) ruled CMS improperly cut 340B reimbursement — $9B+ repayment ordered",
               "Physician payment fix: SGR repealed (MACRA 2015); MIPS + APM pathways remain underfunded",
               "Site-neutral payment: CMS expanding site-neutral rules — reduces HOPD premium vs. physician office",
@@ -116,7 +114,7 @@ function RegulationBody() {
             title: "Quality & Value-Based Regulation",
             items: [
               "MIPS (Merit-based Incentive Payment System): composite score 0–100; +9%/−9% Medicare payment at stake",
-              "Advanced APM pathway: qualifying participation exempts from MIPS; 5% bonus (expired 2022)",
+              "Advanced APM pathway: QPs are exempt from MIPS; the incentive fell from 5% to 3.5% and then 1.88% (2026 payment) before a higher fee-schedule update replaces it",
               "ACO REACH model: risk-adjusted global capitation; health equity benchmark adjustment",
               "CMS Star Ratings: 5-star hospital, nursing home, MA plan ratings — public reporting + financial stakes",
               "Hospital Acquired Conditions Reduction Program: bottom 25% quality hospitals → 1% payment penalty",
@@ -127,12 +125,12 @@ function RegulationBody() {
             icon: "📡",
             title: "Telehealth & Digital Health Policy",
             items: [
-              "COVID telehealth flexibilities: extended through Dec 2024 by Congress — permanent extension pending",
+              "Medicare telehealth flexibilities: extended through December 31, 2027 (Consolidated Appropriations Act, 2026)",
               "Ryan Haight Act: DEA special telemedicine registration for controlled substance prescribing (proposed)",
-              "Audio-only telehealth: permanently covered under Medicare for rural/underserved (Consolidated Appropriations Act 2023)",
+              "Audio-only telehealth: covered through December 31, 2027; permanent for behavioral health from the home",
               "FHIR mandate: ONC HTI-1 requires USCDI v3 + SMART on FHIR for certified EHR technology",
               "AI/ML SaMD: FDA pre-market guidance for AI-based software; predetermined change control plan",
-              "Digital therapeutics (DTx): FDA cleared 100+ DTx products; payer coverage remains fragmented",
+              "Digital therapeutics (DTx): Medicare digital mental health treatment codes since 2025; other coverage remains fragmented",
             ],
           },
           {
@@ -140,11 +138,11 @@ function RegulationBody() {
             title: "State Legislative Landscape",
             items: [
               "Medicaid expansion: 40 states + DC expanded; NC (2023) and SD (2022) most recent adopters",
-              "State drug pricing transparency: 47 states passed drug pricing transparency laws 2016–2024",
-              "Certificate of Need (CON): 36 states retain CON laws for hospital/facility capacity control",
-              "Balance billing laws: 33 states have surprise billing protections in addition to federal NSA",
-              "Scope of practice: 28 states allow NP full practice authority; PA Modernization Act advancing in states",
-              "All-payer claims databases (APCD): 22 states operate APCDs for price + quality transparency",
+              "State drug pricing transparency: most states have enacted transparency laws",
+              "Certificate of Need (CON): about 35 states and DC run some CON program (NCSL)",
+              "Balance billing laws: many states layer their own surprise-billing protections on the federal No Surprises Act",
+              "Scope of practice: roughly 27 to 30 states plus DC allow NP full practice authority",
+              "All-payer claims databases (APCD): 24 states have one (APCD Council)",
             ],
           },
         ].map((card) => (
@@ -165,13 +163,13 @@ function RegulationBody() {
 
       {/* Legislative Calendar */}
       <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 mb-10">
-        <h2 className="ty-h3 font-bold text-slate-900 mb-2">2025 Congressional Healthcare Calendar</h2>
-        <p className="text-slate-500 text-sm mb-6">Key legislative deadlines and must-pass vehicles for healthcare policy</p>
+        <h2 className="ty-h3 font-bold text-slate-900 mb-2">Healthcare Policy Watchlist, 2026–2027</h2>
+        <p className="text-slate-500 text-sm mb-6">Dated deadlines already set in law or rule</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
-            { quarter: "Q1 2025", color: "bg-white border-blue-200", items: ["Reconciliation budget instructions — healthcare spending targets", "IRA drug negotiation Round 2 (15 drugs) — price publication", "HIPAA Security Rule comment period closes", "Telehealth extension expiration trigger — Congress must act"] },
-            { quarter: "Q2–Q3 2025", color: "bg-white border-amber-200", items: ["Medicare physician payment fix — conversion factor cliff", "CHIP reauthorization — expires Sep 2027 but funding debate ongoing", "340B repayment implementation — CMS guidance expected", "PBM reform legislation — markup in Senate Finance Committee"] },
-            { quarter: "Q4 2025", color: "bg-white border-emerald-200", items: ["FY2026 IPPS proposed rule — comment period", "MA 2026 advance notice and rate notice cycle", "No Surprises Act IDR arbitration — potential statutory fix", "ARP enhanced PTCs extension vote — must-pass by Dec 2025"] },
+            { quarter: "Late 2026", color: "bg-white border-blue-200", items: ["Rural Health Transformation Program FY2027 awards (CMS)", "ACO REACH ends December 31, 2026", "IRA round-two negotiated prices (15 drugs) take effect January 1, 2027"] },
+            { quarter: "2027", color: "bg-white border-amber-200", items: ["Medicaid work requirements due from January 1, 2027 (states may seek extensions)", "LEAD Model replaces ACO REACH from January 2027", "Payer prior-authorization FHIR APIs due January 2027 (CMS-0057-F)"] },
+            { quarter: "End of 2027", color: "bg-white border-emerald-200", items: ["Medicare telehealth flexibilities expire December 31, 2027 unless extended", "Vermont: reference-pricing maximum rates and first hospital global budgets in FY2028", "Enhanced premium tax credits: no extension enacted as of October 2026"] },
           ].map((q) => (
             <div key={q.quarter} className={`rounded-xl p-5 border ${q.color}`}>
               <div className="font-bold text-slate-800 text-sm mb-3">{q.quarter}</div>
