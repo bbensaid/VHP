@@ -93,7 +93,7 @@ export const PILLAR_OVERVIEW: Partial<Record<FrameworkId, PillarOverviewContent>
     tools: [
       { href: "/research-lab/population-equity", emoji: "👥", title: "Population & Equity Lab", desc: "Risk stratification models, chronic care analytics & equity dashboards" },
       { href: "/htr-simulator", emoji: "⚙️", title: "HTR Simulator", desc: "Score clinical quality & outcomes in your transformation scenario" },
-      { href: "/dashboard", emoji: "🗺️", title: "50-State Dashboard", desc: "Hospital-level clinical performance data across all RHTP participants" },
+      { href: "/dashboard", emoji: "🗺️", title: "50-State Dashboard", desc: "Sourced state indicators — coverage, access, hospitals, and Rural Health Transformation awards for all 50 states" },
       { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "Every Research Lab tool, including clinical decision support & care model analysis" },
     ],
   },
@@ -136,7 +136,7 @@ export const PILLAR_OVERVIEW: Partial<Record<FrameworkId, PillarOverviewContent>
     ],
     tools: [
       { href: "/research-lab/payment-models", emoji: "💰", title: "Payment Models Lab", desc: "APM Design, Global Budget Modeler, Shared Savings & CEA calculators" },
-      { href: "/investment-tracker", emoji: "📈", title: "Investment Tracker", desc: "M&A, PE activity, capital flows & digital-health rounds in real time" },
+      { href: "/investment-tracker", emoji: "📈", title: "Investment Tracker", desc: "Curated, sourced M&A, private-equity and digital-health deals" },
       { href: "/hti-dashboard", emoji: "📊", title: "HTI Dashboard", desc: "Vermont five-pillar readiness, dated milestones, and Strategic Plan pace" },
       { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "Every Research Lab tool, including financial stress test & HTA Studio" },
     ],
@@ -193,7 +193,7 @@ export const PILLAR_OVERVIEW: Partial<Record<FrameworkId, PillarOverviewContent>
     eyebrow: "The Equity Imperative",
     title: "Is It Just?",
     tagline: "Not a sixth pillar — the test every pillar must pass. Fair and just opportunities for health across all populations, measured against every policy, technology, payment, and care decision.",
-    topicGridXlCols: 4,
+    topicGridXlCols: 3,
     topics: [
       {
         label: "SDOH Integration",
@@ -215,13 +215,6 @@ export const PILLAR_OVERVIEW: Partial<Record<FrameworkId, PillarOverviewContent>
         description: "Closing gaps in underserved and under-resourced care.",
         details: ["Underserved Communities", "Medicaid Access", "Safety Net"],
         scope: "Analysis of healthcare access barriers across underserved communities — rural, urban, and suburban — including provider shortages, insurance coverage gaps, and geographic isolation.",
-      },
-      {
-        label: "Community Engagement",
-        href: "/equity/community",
-        description: "Building trust and partnerships with local communities.",
-        details: ["CBO Partnerships", "Health Literacy", "Trust Building"],
-        scope: "Best practices for engaging communities in health initiatives, building trust, and partnering with Community-Based Organizations (CBOs).",
       },
     ],
     tools: [
@@ -270,8 +263,8 @@ export const PILLAR_OVERVIEW: Partial<Record<FrameworkId, PillarOverviewContent>
     ],
     tools: [
       { href: "/research-lab/policy-quality", emoji: "🏛️", title: "Policy & Quality Lab", desc: "Policy Simulator, H.R. 1 Cliff Scenario, Work Requirements Calculator" },
-      { href: "/vermont-act-68", emoji: "🍁", title: "Vermont Act 68", desc: "Mandatory global budgets — the most legislatively complete state reform" },
-      { href: "/ahead-model", emoji: "📋", title: "AHEAD Model", desc: "Medicare's entry into state-level all-payer alignment" },
+      { href: "/vermont-act-68", emoji: "🍁", title: "Vermont Act 68", desc: "Reference-based pricing and hospital global budgets, with statutory deadlines" },
+      { href: "/ahead-model", emoji: "📋", title: "AHEAD Model", desc: "CMS's state total-cost-of-care model with hospital global budgets" },
       { href: "/research-lab", emoji: "🧪", title: "Full Research Lab", desc: "Every Research Lab tool, including the Innovation Leaderboard and feasibility studies" },
     ],
   },
