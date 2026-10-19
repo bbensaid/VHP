@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:55:04Z",
+ "_id": "rhtState-hawaii",
+ "_rev": "G7Tfo59YVwcDW2O5CBrkGJ",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:55:04Z",
+ "awardAmount": "$189,000,000",
+ "description": "Statewide Rural Health Information Network (RHIN) and medical respite for the unhoused.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Statewide digital backbone connecting all rural entities.",
+   "title": "RHIN"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Medical respite for unhoused patients.",
+   "title": "Rural Respite Network"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "RHIN Integration",
+   "status": "Pending",
+   "target": "100%"
+  },
+  {
+   "_key": "metric-1",
+   "label": "ALOS (Unhoused)",
+   "status": "In Progress",
+   "target": "Reduced"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "hawaii"
+ },
+ "stateName": "Hawaii",
+ "status": "Active",
+ "strategicFocus": "Digital Backbone & Respite"
+}
