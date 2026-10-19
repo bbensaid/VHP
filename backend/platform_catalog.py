@@ -128,7 +128,7 @@ CATALOG = [
     },
     {
         "id": "oregon-cco",
-        "label": "Oregon CCO 3.0",
+        "label": "Oregon CCOs",
         "url": "/oregon-cco",
         "category": "States & Programs",
         "description": "Explore Oregon's third-generation Coordinated Care Organizations — global budgets, equity accountability, and behavioral health integration.",
@@ -136,11 +136,11 @@ CATALOG = [
     },
     {
         "id": "oregon-cco-simulator",
-        "label": "Oregon CCO 3.0 Simulator",
+        "label": "Oregon CCO Simulator",
         "url": "/oregon-cco/simulator",
         "category": "States & Programs",
         "subcategory": "Simulator",
-        "description": "Model multi-pillar impact of Oregon's CCO 3.0 across 16 CCOs.",
+        "description": "Model multi-pillar impact of Oregon's coordinated care organizations (15 CCOs, CCO 2.0 contracts).",
         "keywords": ["oregon cco simulator", "oregon health model"],
     },
     {

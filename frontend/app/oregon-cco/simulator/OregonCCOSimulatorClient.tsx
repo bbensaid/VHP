@@ -34,22 +34,22 @@ interface CCORecommendation {
 }
 
 const CCOS: CCO[] = [
-  { id: 'health-share', name: 'Health Share of Oregon', shortName: 'Health Share', region: 'Portland Metro', members: 410000, counties: 9, globalBudgetM: 940, operatingMarginPct: 1.8, bhIntegrationScore: 78, equityScore: 72, ruralPct: 4 },
-  { id: 'pacific-source', name: 'PacificSource Community Solutions', shortName: 'PacificSource', region: 'Central Oregon', members: 95000, counties: 7, globalBudgetM: 218, operatingMarginPct: 2.1, bhIntegrationScore: 65, equityScore: 60, ruralPct: 42 },
-  { id: 'willamette', name: 'Willamette Valley Community Health', shortName: 'WVCH', region: 'Mid-Willamette', members: 115000, counties: 5, globalBudgetM: 264, operatingMarginPct: 1.4, bhIntegrationScore: 70, equityScore: 65, ruralPct: 28 },
+  { id: 'health-share', name: 'Health Share of Oregon', shortName: 'Health Share', region: 'Portland Metro', members: 440000, counties: 3, globalBudgetM: 940, operatingMarginPct: 1.8, bhIntegrationScore: 78, equityScore: 72, ruralPct: 4 },
+  { id: 'pacific-source', name: 'PacificSource Community Solutions', shortName: 'PacificSource', region: 'Central Oregon', members: 95000, counties: 4, globalBudgetM: 218, operatingMarginPct: 2.1, bhIntegrationScore: 65, equityScore: 60, ruralPct: 42 },
+  { id: 'willamette', name: 'PacificSource Community Solutions – Marion/Polk', shortName: 'PS Marion/Polk', region: 'Marion/Polk', members: 115000, counties: 2, globalBudgetM: 264, operatingMarginPct: 1.4, bhIntegrationScore: 70, equityScore: 65, ruralPct: 28 },
   { id: 'allcare', name: 'AllCare Health', shortName: 'AllCare', region: 'Southern Oregon', members: 48000, counties: 3, globalBudgetM: 110, operatingMarginPct: 0.9, bhIntegrationScore: 55, equityScore: 58, ruralPct: 55 },
   { id: 'eastern', name: 'Eastern Oregon CCO', shortName: 'Eastern OR', region: 'Eastern Oregon', members: 44000, counties: 12, globalBudgetM: 101, operatingMarginPct: -0.4, bhIntegrationScore: 42, equityScore: 52, ruralPct: 71 },
   { id: 'umpqua', name: 'Umpqua Health Alliance', shortName: 'Umpqua', region: 'Douglas County', members: 32000, counties: 1, globalBudgetM: 73, operatingMarginPct: 1.2, bhIntegrationScore: 60, equityScore: 63, ruralPct: 38 },
 ]
 
 const RECOMMENDATIONS: CCORecommendation[] = [
-  { id: 'equity-metrics', title: 'Enhanced Equity Performance Metrics (25 new measures)', category: 'equity', status: 'required', timelineMonths: 12, pillarScores: { policy: 80, financial: 55, equity: 95, clinical: 70 }, implementationComplexity: 65, annualCostM: 28, annualSavingsM: 15 },
+  { id: 'equity-metrics', title: 'Enhanced Equity Performance Metrics', category: 'equity', status: 'required', timelineMonths: 12, pillarScores: { policy: 80, financial: 55, equity: 95, clinical: 70 }, implementationComplexity: 65, annualCostM: 28, annualSavingsM: 15 },
   { id: 'bh-integration', title: 'Full Physical-Behavioral-Oral Health Integration', category: 'bh', status: 'required', timelineMonths: 36, pillarScores: { policy: 75, financial: 60, equity: 80, clinical: 90 }, implementationComplexity: 88, annualCostM: 145, annualSavingsM: 210 },
   { id: 'chw-workforce', title: 'Statewide CHW Workforce Infrastructure', category: 'chw', status: 'required', timelineMonths: 24, pillarScores: { policy: 70, financial: 50, equity: 92, clinical: 75 }, implementationComplexity: 72, annualCostM: 88, annualSavingsM: 65 },
-  { id: 'global-budget-reform', title: 'GDP+0.5% Global Budget Growth Methodology', category: 'global-budget', status: 'required', timelineMonths: 12, pillarScores: { policy: 85, financial: 78, equity: 60, clinical: 65 }, implementationComplexity: 55, annualCostM: 12, annualSavingsM: 180 },
-  { id: 'downside-risk', title: 'Downside Risk for Large CCOs (≥100K members)', category: 'payment', status: 'required', timelineMonths: 18, pillarScores: { policy: 88, financial: 70, equity: 55, clinical: 60 }, implementationComplexity: 70, annualCostM: 8, annualSavingsM: 95 },
+  { id: 'global-budget-reform', title: 'Global Budget Growth Methodology (current cap: 3.4%/member/yr)', category: 'global-budget', status: 'required', timelineMonths: 12, pillarScores: { policy: 85, financial: 78, equity: 60, clinical: 65 }, implementationComplexity: 55, annualCostM: 12, annualSavingsM: 180 },
+  { id: 'downside-risk', title: 'Value-Based Payment Targets (CCO 2.0 goal: 70% of provider payments)', category: 'payment', status: 'required', timelineMonths: 18, pillarScores: { policy: 88, financial: 70, equity: 55, clinical: 60 }, implementationComplexity: 70, annualCostM: 8, annualSavingsM: 95 },
   { id: 'rural-equity', title: 'Rural & Frontier CCO Equity Strategy', category: 'equity', status: 'optional', timelineMonths: 24, pillarScores: { policy: 65, financial: 40, equity: 98, clinical: 68 }, implementationComplexity: 80, annualCostM: 55, annualSavingsM: 30 },
-  { id: 'sdoh-screening', title: 'Universal SDOH Screening (80% primary care target)', category: 'chw', status: 'required', timelineMonths: 18, pillarScores: { policy: 72, financial: 48, equity: 88, clinical: 78 }, implementationComplexity: 62, annualCostM: 42, annualSavingsM: 58 },
+  { id: 'sdoh-screening', title: 'Universal SDOH Screening', category: 'chw', status: 'required', timelineMonths: 18, pillarScores: { policy: 72, financial: 48, equity: 88, clinical: 78 }, implementationComplexity: 62, annualCostM: 42, annualSavingsM: 58 },
   { id: 'data-platform', title: 'Shared CCO Data & Analytics Platform', category: 'data', status: 'optional', timelineMonths: 30, pillarScores: { policy: 68, financial: 72, equity: 65, clinical: 85 }, implementationComplexity: 58, annualCostM: 65, annualSavingsM: 90 },
 ]
 
@@ -104,7 +104,7 @@ export default function OregonCCOSimulatorClient() {
   const totalSavingsM = selected.reduce((s, r) => s + r.annualSavingsM, 0)
   const netM = totalSavingsM - totalCostM
   const maxTimeline = selected.length ? Math.max(...selected.map(r => r.timelineMonths)) : 0
-  const ccoImpactM = cco ? (netM * cco.globalBudgetM) / 3200 : 0
+  const ccoImpactM = cco ? (netM * cco.members) / 1328786 : 0 // share of CCO enrollment (1,328,786 CCO members, OHA via Oregon Legislature, Dec 2024)
 
   return (
     <div className="min-h-screen bg-white">
@@ -115,14 +115,15 @@ export default function OregonCCOSimulatorClient() {
             <span className="text-slate-300">/</span>
             <span className="text-[10px] font-black uppercase tracking-widest text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded">OR · Oregon</span>
           </div>
-          <h1 className="text-3xl font-black text-slate-900 mb-3 leading-tight">Oregon CCO 3.0 Simulator</h1>
+          <h1 className="text-3xl font-black text-slate-900 mb-3 leading-tight">Oregon CCO Simulator</h1>
           <p className="text-slate-600 max-w-2xl text-sm leading-relaxed mb-6">
-            Model the impact of Oregon&apos;s third-generation Coordinated Care Organizations — integrating physical,
+            Model policy options for Oregon&apos;s next CCO contract round (CCO 3.0, still in OHA planning) — integrating physical,
             behavioral, and oral health under global budgets with equity accountability and CHW infrastructure
-            across 16 CCOs serving 1.4M OHP members.
+            across Oregon&apos;s 15 CCOs serving most of its 1.4M OHP members. Initiative costs, savings, timelines and the
+            per-CCO figures below are illustrative model assumptions, not OHA estimates.
           </p>
           <div className="flex flex-wrap gap-3">
-            {[['16', 'CCOs'], ['1.4M', 'OHP Members'], ['$3.2B', 'Global Budget'], ['36', 'Counties']].map(([v, l]) => (
+            {[['15', 'CCOs'], ['1.4M', 'OHP Members'], ['$325M', '2024 Quality Pool'], ['36', 'Counties']].map(([v, l]) => (
               <div key={l} className="bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-center">
                 <div className="text-lg font-black text-slate-900">{v}</div>
                 <div className="text-[11px] text-slate-500">{l}</div>
@@ -222,6 +223,7 @@ export default function OregonCCOSimulatorClient() {
                 <div>
                   <h2 className="text-xl font-black text-slate-900">{cco.name}</h2>
                   <p className="text-sm text-slate-500">{cco.region} · {cco.counties} {cco.counties === 1 ? 'county' : 'counties'} · {cco.ruralPct}% rural members</p>
+                  <p className="text-[11px] text-amber-700 mt-1">Members, budget, margin, and BH/equity scores are illustrative model inputs, not OHA-reported figures.</p>
                 </div>
                 <span className={`px-3 py-1.5 rounded-lg text-xs font-bold self-start ${cco.operatingMarginPct >= 1 ? 'bg-emerald-100 text-emerald-700' : cco.operatingMarginPct >= 0 ? 'bg-amber-100 text-amber-700' : 'bg-rose-100 text-rose-700'}`}>
                   {cco.operatingMarginPct >= 0 ? '+' : ''}{cco.operatingMarginPct}% margin
@@ -247,7 +249,7 @@ export default function OregonCCOSimulatorClient() {
                   <span className="font-black">{ccoImpactM >= 0 ? '+' : ''}${ccoImpactM.toFixed(1)}M annually</span> — scaled by
                   this CCO&apos;s share of Oregon&apos;s statewide global budget.
                   BH integration score of {cco.bhIntegrationScore}% suggests {cco.bhIntegrationScore >= 70 ? 'good' : cco.bhIntegrationScore >= 50 ? 'moderate' : 'limited'} readiness
-                  for full physical-behavioral integration by 2027.
+                  for deeper physical-behavioral integration.
                   {cco.ruralPct > 40 && ` With ${cco.ruralPct}% rural members, rural equity strategy investment is strongly recommended.`}
                 </p>
               </div>

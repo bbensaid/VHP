@@ -181,7 +181,7 @@ const ALL_PLATFORM_SECTIONS = [
       { label: "All States Explorer",        prompt: "Compare Vermont to neighboring states on health transformation metrics." },
       { label: "50-State Dashboard",         prompt: "Rank all 50 states on health transformation activity and innovation." },
       { label: "California CalAIM",          prompt: "What is California's CalAIM initiative and what can other states learn from it?" },
-      { label: "Oregon CCO 3.0",             prompt: "What is Oregon's CCO 3.0 model and how does it differ from traditional Medicaid managed care?" },
+      { label: "Oregon CCOs",                prompt: "How do Oregon's coordinated care organizations (CCO 2.0 contracts) differ from traditional Medicaid managed care?" },
       { label: "CMS Rural Health",           prompt: "What is the CMS Rural Health Transformation program and who qualifies?" },
     ],
   },

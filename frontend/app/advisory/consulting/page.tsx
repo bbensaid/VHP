@@ -173,22 +173,6 @@ export default function ConsultingPage() {
               ))}
             </ul>
           </div>
-          <div className="md:w-1/2 mt-8 md:mt-0">
-            <h2 className="text-2xl font-bold text-slate-900 mb-6">Case Study: Epic Go-Live Recovery</h2>
-            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
-              <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Anonymized Engagement</p>
-              <p className="text-slate-700 text-sm leading-relaxed mb-4">
-                A 600-bed integrated delivery network in the Northeast had just completed a $280M Epic implementation — on time, over budget, and with clinical adoption rates at 34% after 90 days. Claim denials had spiked 22%, and physician satisfaction scores dropped to the 12th percentile.
-              </p>
-              <p className="text-slate-700 text-sm leading-relaxed mb-4">
-                HTR Advisory was engaged on Day 97 post-go-live. We conducted a full 5-pillar diagnostic: the root cause was not the technology. It was a mismatch between Epic&apos;s workflow design and the clinical operations model, compounded by inadequate front-end revenue cycle training.
-              </p>
-              <p className="text-slate-700 text-sm leading-relaxed">
-                Within 180 days of engagement, denial rates returned to baseline, physician adoption reached 78%, and the health system recovered $14.2M in previously denied claims through a targeted appeals program.
-              </p>
-              <p className="text-xs text-slate-400 mt-4">Names and identifying details changed. Results may vary.</p>
-            </div>
-          </div>
         </div>
       </div>
 

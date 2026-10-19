@@ -381,10 +381,10 @@ export const ADVISORY_SERVICES: AdvisoryService[] = [
     deliverables: [
       "Customized Training Curriculum & Facilitator Guide",
       "Participant Workbooks & Reference Materials",
-      "Case Study Library (anonymized real engagements)",
+      "Case Study Library (published, sourced cases)",
       "Pre/Post Knowledge Assessment Tools",
       "Executive Coaching Session Notes & Action Plans",
-      "Certificate of Completion (CEU-eligible where applicable)",
+      "Certificate of Completion",
       "Post-Training 30-Day Support Access",
       "Custom Curriculum Development for Organizations",
     ],

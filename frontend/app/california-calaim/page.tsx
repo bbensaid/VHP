@@ -108,10 +108,10 @@ export default function CaliforniaCalAIMPage() {
           <ExternalLink href="https://www.dhcs.ca.gov/calaim">
             DHCS CalAIM Official Hub
           </ExternalLink>
-          <ExternalLink href="https://www.dhcs.ca.gov/Documents/DHCS-CalAIM-Proposal-01072021.pdf">
-            CalAIM Proposal (PDF)
+          <ExternalLink href="https://www.dhcs.ca.gov/providers-partners/calaim-1115-demonstration-1915b-waiver/">
+            CalAIM Waiver Documents (DHCS)
           </ExternalLink>
-          <ExternalLink href="https://www.medicaid.gov/medicaid/section-1115-demonstration/downloads/ca-medi-cal-2020-ca.pdf">
+          <ExternalLink href="https://www.medicaid.gov/medicaid/section-1115-demonstrations/downloads/ca-calaim-ca1.pdf">
             CMS Section 1115 Waiver
           </ExternalLink>
           <ExternalLink href="https://medi-cal.ca.gov">
@@ -124,16 +124,16 @@ export default function CaliforniaCalAIMPage() {
       <section className="mb-16">
         <SectionHeader label="Scale" title="California at a Glance" />
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-          <StatBox value="14M+" label="Medi-Cal Enrollees" sub="~1 in 3 Californians" />
+          <StatBox value="13.7M" label="Medi-Cal Enrollees" sub="~1 in 3 Californians (June 2026)" />
           <StatBox value="Dec 2021" label="CMS waiver approval" sub="1115 + 1915(b), through Dec 31, 2026" />
           <StatBox value="58" label="Counties Implementing" sub="All California counties" />
-          <StatBox value="14" label="Community Supports" sub="Non-medical services authorized" />
+          <StatBox value="15" label="Community Supports" sub="Transitional Rent added Jan 2026" />
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <StatBox value="1115" label="Waiver Authority" sub="CMS Section 1115" />
           <StatBox value="2022" label="Effective Date" sub="January 1, 2022" />
-          <StatBox value="~40%" label="Californians on Medi-Cal" sub="Nation's largest Medicaid" />
-          <StatBox value="5yr" label="Initial Waiver Term" sub="Extended through 2027" />
+          <StatBox value="24" label="Managed Care Plans" sub="Contracting with DHCS" />
+          <StatBox value="5yr" label="Waiver Term" sub="2022–2026; 2027–2031 renewal pending" />
         </div>
       </section>
 
@@ -159,13 +159,13 @@ export default function CaliforniaCalAIMPage() {
           <div className="bg-white border border-slate-200 rounded-xl p-6">
             <h3 className="font-bold text-slate-900 mb-3">What Came Before: Whole Person Care</h3>
             <p className="ty-body text-slate-600 leading-relaxed mb-3">
-              CalAIM builds directly on California's 2016–2022{" "}
+              CalAIM builds directly on California's 2016–2021{" "}
               <strong>Whole Person Care (WPC) pilots</strong> — county-run programs that demonstrated
               that integrated medical, behavioral, and social services for people experiencing
               homelessness reduced ER visits, hospitalizations, and costs.
             </p>
             <p className="ty-body text-slate-600 leading-relaxed">
-              WPC's success across 25 counties gave DHCS and Governor Newsom the evidence base to
+              WPC's 25 pilots across 26 counties gave DHCS and Governor Newsom the evidence base to
               take the model statewide — and to negotiate the waivers with CMS
               that makes CalAIM possible at scale.
             </p>
@@ -211,7 +211,7 @@ export default function CaliforniaCalAIMPage() {
           <PillarCard
             icon="🥦"
             title="Community Supports"
-            detail="14 non-medical services that Medi-Cal managed care plans can now authorize as covered benefits — including housing deposits, housing navigation, short-term post-hospitalization housing, meal delivery, asthma remediation, transportation, and environmental accessibility modifications."
+            detail="15 non-medical services that Medi-Cal managed care plans can now offer as covered benefits — including housing deposits, housing navigation, short-term post-hospitalization housing, medically tailored meals, asthma remediation, transitional rent, and environmental accessibility adaptations."
           />
           <PillarCard
             icon="🧠"
@@ -221,12 +221,12 @@ export default function CaliforniaCalAIMPage() {
           <PillarCard
             icon="🦷"
             title="Dental Transformation"
-            detail="Landmark expansion of Medi-Cal dental benefits — restoring adult dental coverage that had been eliminated during the 2009 recession, adding periodontal care, and establishing population-level oral health quality metrics. Affects 14M Californians who had limited or no dental coverage."
+            detail="Statewide preventive dental initiatives launched with CalAIM in January 2022 — a Caries Risk Assessment bundle for young children, silver diamine fluoride for young children and high-risk groups, and pay-for-performance payments for preventive services. (Adult dental benefits cut in 2009 were fully restored in 2018, before CalAIM.)"
           />
           <PillarCard
             icon="⚖️"
             title="Justice-Involved Populations"
-            detail="First-in-the-nation federal approval for California to provide Medi-Cal benefits to incarcerated individuals 90 days before release — covering medication, care coordination, and behavioral health services during the highest-risk transition period back to the community. Targets over 50,000 individuals annually."
+            detail="First-in-the-nation federal approval for California to provide Medi-Cal benefits to incarcerated individuals 90 days before release — covering medication, care coordination, and behavioral health services during the highest-risk transition period back to the community. More than 42,000 people were identified as eligible in its first 13 months (Oct 2024–Nov 2025)."
           />
           <PillarCard
             icon="📊"
@@ -237,27 +237,28 @@ export default function CaliforniaCalAIMPage() {
 
         {/* Community Supports detail */}
         <div className="bg-white border border-slate-200 rounded-xl p-6">
-          <h3 className="font-bold text-slate-900 mb-4">All 14 Community Supports — A Historic First</h3>
+          <h3 className="font-bold text-slate-900 mb-4">All 15 Community Supports</h3>
           <p className="text-sm text-slate-500 mb-5 leading-relaxed">
-            For the first time in U.S. Medicaid history, California won CMS approval to pay for
+            Under CalAIM, California won CMS approval to pay for
             these non-medical services through managed care for high-need enrollees:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
             {[
               "Housing transition navigation services",
-              "Housing deposits (security, first/last month's rent)",
+              "Housing deposits",
               "Housing tenancy & sustaining services",
               "Short-term post-hospitalization housing",
               "Recuperative care (medical respite)",
+              "Respite services (for caregivers)",
               "Day habilitation programs",
               "Nursing facility transition / diversion to assisted living",
-              "Community transition services",
+              "Community transition services / nursing facility transition to a home",
+              "Personal care and homemaker services",
+              "Environmental accessibility adaptations (home modifications)",
+              "Medically tailored meals / medically supportive food",
               "Sobering centers",
-              "Respite services (for caregivers)",
-              "Meal/nutrition assistance",
-              "Transportation to social services",
-              "Asthma remediation (home-based environmental fixes)",
-              "Environmental accessibility adaptations",
+              "Asthma remediation",
+              "Transitional rent (added January 2026)",
             ].map((s, i) => (
               <div key={s} className="flex items-start gap-2 py-1.5 border-b border-slate-50">
                 <span className="text-teal-500 font-black text-xs shrink-0 w-5 pt-0.5">{i + 1}.</span>
@@ -284,28 +285,28 @@ export default function CaliforniaCalAIMPage() {
               color: "bg-teal-700",
               label: "People with Serious Mental Illness or SUD",
               detail: "California's behavioral health crisis intersects directly with homelessness, incarceration, and emergency department overuse. CalAIM's behavioral health integration reforms create financial incentives for counties and managed care plans to work together on the highest-acuity cases — rather than passing them back and forth.",
-              stat: "1.3M+",
-              statLabel: "Medi-Cal members with SMI/SUD",
+              stat: "45%",
+              statLabel: "Of Medi-Cal's top-5% cost group have SMI",
             },
             {
               color: "bg-teal-600",
               label: "Justice-Involved Individuals",
-              detail: "Without healthcare coverage at release, formerly incarcerated people face a 12-fold increase in overdose death risk in the first two weeks of freedom. California's groundbreaking 90-day pre-release Medi-Cal benefit — the first CMS ever approved for any state — addresses this deadly gap with medication management, behavioral health, and care coordination starting before the cell door opens.",
-              stat: "50K+",
-              statLabel: "Annual transitions from incarceration",
+              detail: "In the first two weeks after prison release, people face 12.7 times the death risk of other residents, with drug overdose the leading cause (Binswanger et al., NEJM 2007). California's groundbreaking 90-day pre-release Medi-Cal benefit — the first CMS ever approved for any state — addresses this deadly gap with medication management, behavioral health, and care coordination starting before the cell door opens.",
+              stat: "42K+",
+              statLabel: "Identified eligible, Oct 2024–Nov 2025",
             },
             {
               color: "bg-slate-600",
               label: "Children and Youth in Foster Care",
               detail: "Children involved in the child welfare system have dramatically higher rates of trauma, mental health conditions, and unmet health needs. CalAIM designates foster youth as a priority ECM population and creates new pathways for coordinated care across the medical, behavioral health, and child welfare systems.",
-              stat: "80K+",
-              statLabel: "Children in California foster care",
+              stat: "38K+",
+              statLabel: "Children in CA foster care (Sept 2024)",
             },
             {
               color: "bg-teal-800",
               label: "High-Risk Pregnant Women & Infants",
               detail: "California's maternal mortality crisis — and stark racial disparities in birth outcomes — drove CalAIM to designate pregnant women at risk for preterm birth, pregnancy complications, or postpartum mental health conditions as a priority ECM population. ECM wraps intensive support around the highest-risk pregnancies.",
-              stat: "2x",
+              stat: "3.6x",
               statLabel: "Maternal mortality for Black women in CA vs. white women",
             },
             {
@@ -338,18 +339,20 @@ export default function CaliforniaCalAIMPage() {
             <div className="absolute left-4 top-0 bottom-0 w-px bg-teal-100" />
             <div className="space-y-5">
               {[
-                { date: "Jan 2016", event: "Whole Person Care pilots launch in 25 California counties — the proof-of-concept that will become CalAIM" },
+                { date: "2016–2017", event: "Whole Person Care authorized under the Medi-Cal 2020 waiver (2016); 25 pilots in 26 counties begin enrolling in 2017 — the proof-of-concept that will become CalAIM" },
                 { date: "2019–2020", event: "DHCS begins designing CalAIM; extensive stakeholder engagement with counties, plans, providers, and advocates" },
-                { date: "Jan 7, 2021", event: "DHCS submits formal CalAIM Section 1115 waiver proposal to CMS" },
-                { date: "Dec 29, 2021", event: "CMS approves CalAIM 1115 waiver — one of the most expansive Medicaid waivers ever approved" },
-                { date: "Jan 1, 2022", event: "CalAIM officially launches. Community Supports go live for managed care plans. Population Health Management requirements begin." },
-                { date: "Jan 2022", event: "Justice-involved pre-release Medi-Cal benefit launches — first in U.S. history" },
-                { date: "Jul 2022", event: "Enhanced Care Management (ECM) fully operational across all 58 counties. Priority populations: homelessness, SMI, high-risk pregnancy, foster youth." },
-                { date: "Jan 2023", event: "Medi-Cal dental benefit expansion takes effect — restoring periodontal and other services eliminated in 2009" },
+                { date: "Jan 2021", event: "DHCS releases its revised CalAIM proposal" },
+                { date: "Jun 30, 2021", event: "DHCS submits the CalAIM Section 1115 and 1915(b) waiver requests to CMS" },
+                { date: "Dec 29, 2021", event: "CMS approves the CalAIM 1115 and 1915(b) waivers, effective through Dec 31, 2026" },
+                { date: "Jan 1, 2022", event: "CalAIM officially launches. Community Supports go live; ECM goes live in former Whole Person Care and Health Homes counties; new preventive dental benefits begin." },
+                { date: "Jul 2022", event: "ECM goes live in all remaining counties for the adult Populations of Focus (homelessness, avoidable hospital/ED use, SMI/SUD)" },
+                { date: "Jan 2023", event: "Population Health Management Program begins. On Jan 26, CMS approves California's justice-involved reentry amendment — the first in the nation." },
+                { date: "Jul 2023", event: "ECM goes live for the Children & Youth Populations of Focus, including youth in foster care" },
                 { date: "2023", event: "Behavioral health integration reforms begin phased implementation; counties and plans negotiate new data-sharing agreements" },
-                { date: "Jan 2024", event: "Medi-Cal expanded to all income-eligible Californians regardless of immigration status — CalAIM infrastructure supports new enrollees" },
-                { date: "2024–2025", event: "Mid-waiver evaluation results begin emerging; DHCS, RAND, and UCLA publish early outcomes data on ECM and Community Supports utilization" },
-                { date: "2026–2027", event: "Waiver renewal negotiations with CMS; DHCS expected to seek expanded authorities based on early outcomes, particularly for behavioral health integration and housing" },
+                { date: "Jan 2024", event: "Medi-Cal expanded to all income-eligible Californians regardless of immigration status; ECM Birth Equity Population of Focus goes live" },
+                { date: "Oct 2024", event: "Justice-involved pre-release services launch; correctional facilities phase in through Oct 2026" },
+                { date: "Jan 2026", event: "Transitional Rent becomes the 15th Community Support" },
+                { date: "May 2026", event: "DHCS submits a five-year CalAIM 1115 renewal request to CMS for Jan 2027–Dec 2031; the current waiver expires Dec 31, 2026" },
               ].map((item) => (
                 <div key={item.date} className="flex gap-6 pl-10 relative">
                   <div className="absolute left-2.5 top-1 w-3 h-3 rounded-full bg-teal-500 border-2 border-white shadow-sm" />
@@ -427,7 +430,7 @@ export default function CaliforniaCalAIMPage() {
                 {[
                   "DHCS — Director Michelle Baass",
                   "Governor Gavin Newsom (champion)",
-                  "California Medi-Cal managed care plans (22 plans)",
+                  "California Medi-Cal managed care plans (24 plans)",
                   "County Health and Human Services agencies",
                   "Community-based organizations (CBOs)",
                   "California Primary Care Association",
@@ -487,17 +490,17 @@ export default function CaliforniaCalAIMPage() {
             <div>
               <div className="text-xs font-black uppercase tracking-widest text-teal-600 mb-2">Scale as Signal</div>
               <p className="ty-body text-slate-600 leading-relaxed">
-                California accounts for roughly <strong>1 in 7 Medicaid enrollees nationwide</strong>.
+                California accounts for roughly <strong>1 in 5 Medicaid and CHIP enrollees nationwide</strong>.
                 What DHCS tests at scale in Medi-Cal becomes the template that other states — and CMS —
                 use to design the next generation of Medicaid policy. CalAIM's Community Supports model
-                has already influenced waiver negotiations in Oregon, Washington, and New York.
+                sits alongside similar health-related social needs approvals in Oregon, Washington, and New York.
               </p>
             </div>
             <div>
               <div className="text-xs font-black uppercase tracking-widest text-teal-600 mb-2">Justice-Involved Precedent</div>
               <p className="ty-body text-slate-600 leading-relaxed">
                 California's 90-day pre-release Medi-Cal benefit was the <strong>first CMS ever
-                approved for any state</strong>. Since California's approval in 2022, CMS has opened
+                approved for any state</strong>. Since California's approval in January 2023, CMS has opened
                 this authority to all states as part of Medicaid's broader "reentry" policy — a direct
                 result of California proving the model works at scale.
               </p>
@@ -527,60 +530,18 @@ export default function CaliforniaCalAIMPage() {
         <SectionHeader label="Press Coverage" title="How California Media Covered CalAIM" />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
           <PressCard
-            publication="CalMatters"
-            date="2022"
-            title="California's Medi-Cal overhaul aims to house, feed and care for 14 million people"
-            summary="CalMatters' definitive explainer on CalAIM's scope — the first major statewide coverage to frame CalAIM as a social services expansion, not just a healthcare reform."
-            href="https://calmatters.org/health/2022/01/california-medi-cal-reform-calaim/"
-          />
-          <PressCard
-            publication="Los Angeles Times"
-            date="2022"
-            title="California wants to pay for housing to help the homeless — with Medi-Cal dollars"
-            summary="The LA Times investigates the unprecedented Community Supports authorization — Medicaid funding for housing deposits and navigation — and what it means for California's homelessness crisis."
-            href="https://www.latimes.com/california/story/2022-01-03/california-medi-cal-homeless-housing"
-          />
-          <PressCard
-            publication="KFF Health News"
-            date="2023"
-            title="States Look to California's Medicaid for Ideas on Housing, Social Services"
-            summary="National health policy coverage of CalAIM's influence — how California's Community Supports model is reshaping what other states ask CMS to approve in their own 1115 waivers."
-            href="https://kffhealthnews.org/news/article/medicaid-california-calaim-housing-community-supports-states/"
-          />
-          <PressCard
-            publication="STAT News"
-            date="2023"
-            title="California's 'Care Court' and CalAIM: A one-two punch on mental illness"
-            summary="STAT News examines the intersection of CalAIM's behavioral health integration with Governor Newsom's CARE Court — and whether the two programs together can address California's most intractable mental health crisis."
-            href="https://www.statnews.com/2023/03/california-care-court-calaim-mental-health/"
-          />
-          <PressCard
-            publication="California Healthline"
-            date="2022"
-            title="Medi-Cal's Big Bet: Can It House the Homeless and Heal the Sick?"
-            summary="California Healthline profiles ECM care managers working with people experiencing homelessness in Los Angeles — the human story behind CalAIM's data."
-            href="https://californiahealthline.org/news/article/medi-cal-calaim-homeless-housing-ecm/"
-          />
-          <PressCard
-            publication="Politico"
-            date="2022"
-            title="California's Medicaid experiment could reshape U.S. health care"
-            summary="Politico frames CalAIM as a national test case — the argument that whatever California proves in Medi-Cal will become the blueprint for the next generation of federal Medicaid policy."
-            href="https://www.politico.com/news/2022/california-medicaid-calaim-reform/"
-          />
-          <PressCard
-            publication="San Francisco Chronicle"
-            date="2023"
-            title="Medi-Cal now pays for housing. Here's how that works in practice."
-            summary="The SF Chronicle follows an unhoused Medi-Cal member through the CalAIM Community Supports process — from ECM enrollment to housing deposit authorization to stable housing — illustrating both the promise and the bureaucratic friction of the model."
-            href="https://www.sfchronicle.com/bayarea/article/medi-cal-calaim-housing-community-support/"
+            publication="Associated Press (via CBS Sacramento)"
+            date="Dec 29, 2021"
+            title="Overhaul Of California's Medicaid Approved By US Government"
+            summary="Wire coverage of the federal approval of CalAIM, which lets Medi-Cal money be spent on housing-related services."
+            href="https://www.cbsnews.com/sacramento/news/overhaul-of-californias-medicaid-approved-by-us-government/"
           />
           <PressCard
             publication="CalMatters"
-            date="2024"
-            title="As CalAIM hits its stride, gaps in mental health care persist"
-            summary="A progress check two years in — CalAIM's wins on housing and ECM enrollment, but the persistent gaps in behavioral health integration that advocates say undermine the whole-person care vision."
-            href="https://calmatters.org/health/2024/calaim-mental-health-behavioral-health-gaps/"
+            date="Feb 14, 2022"
+            title="California launches ambitious effort to transform Medi-Cal"
+            summary="CalMatters on the CalAIM launch: care coordination, Community Supports, and the social needs the program targets."
+            href="https://calmatters.org/health/2022/02/california-medi-cal-reform/"
           />
         </div>
 
@@ -595,7 +556,6 @@ export default function CaliforniaCalAIMPage() {
               { label: "Medi-Cal Behavioral Health (DHCS)", href: "https://www.dhcs.ca.gov/services/MH/Pages/BH-Integration.aspx" },
               { label: "CMS 1115 Waiver Approval Documents", href: "https://www.medicaid.gov/medicaid/section-1115-demonstrations/1115-medicaid-demonstration-projects/index.html" },
               { label: "California Health Care Foundation — CalAIM Resources", href: "https://www.chcf.org/topic/medi-cal/calaim/" },
-              { label: "KFF — California Medicaid Policy", href: "https://www.kff.org/medicaid/state-indicator/medicaid-spending/california/" },
               { label: "Medi-Cal.ca.gov — Enrollee Information", href: "https://www.medi-cal.ca.gov" },
             ].map((item) => (
               <ExternalLink key={item.label} href={item.href}>
@@ -634,8 +594,8 @@ export default function CaliforniaCalAIMPage() {
               <div className="text-xs font-black uppercase tracking-widest text-emerald-400 mb-2">The Irreversible Bet</div>
               <p className="text-sm text-slate-300 leading-relaxed">
                 CalAIM has already changed what CMS will approve for other states. The justice-involved
-                pre-release benefit is now a national option. The Community Supports framework is being
-                replicated in Oregon, Washington, and beyond. Whether CalAIM succeeds or struggles in
+                pre-release benefit is now a national option. Oregon, Washington, and New York
+                hold their own approvals for health-related social needs services. Whether CalAIM succeeds or struggles in
                 California, the ideas it operationalized are now permanent features of the American
                 Medicaid landscape.
               </p>
