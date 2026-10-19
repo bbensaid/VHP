@@ -16,7 +16,6 @@ import instructor  from './instructor'
 import definition  from './definition'
 import audio       from './audio'
 import rhtState from './rhtState'
-import statePerformanceIndex from './statePerformanceIndex'
 import subscriber from './subscriber'
 import investmentDeal from './investmentDeal'
 
@@ -39,7 +38,6 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     definition,
     audio,
     rhtState,
-    statePerformanceIndex,
     subscriber,
     investmentDeal,
   ],
