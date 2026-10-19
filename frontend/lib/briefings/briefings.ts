@@ -266,7 +266,7 @@ export const BRIEFINGS: Briefing[] = [
       {
         heading: "What the model needs",
         paragraphs: [
-          "Chapter 8 describes the Collaborative Care Model as the only integrated behavioral health model with designated Medicare billing codes: a behavioral health care manager and a consulting psychiatrist working inside the primary care practice.{book-ch8} Chapter 1 is blunt about what that implies: a care model is a diagram until it has workforce, credentialing, administrative infrastructure and operational management.{book-ch1}",
+          "Chapter 8 describes the Collaborative Care Model, which has its own designated Medicare billing codes: a behavioral health care manager and a consulting psychiatrist working inside the primary care practice.{book-ch8} Chapter 1 is blunt about what that implies: a care model is a diagram until it has workforce, credentialing, administrative infrastructure and operational management.{book-ch1}",
         ],
       },
       {
