@@ -27,45 +27,20 @@ function AccessDisparityBody() {
     <div className="max-w-7xl mx-auto px-6 pt-0 pb-12">
       {/* Disparity by Condition */}
       <div className="bg-white rounded-2xl border border-slate-200 p-8 mb-10">
-        <div className="flex items-center gap-3 mb-6">
-          <span className="text-2xl">📉</span>
-          <div>
-            <h2 className="ty-h3 font-bold text-slate-900">Health Outcome Disparities by Race/Ethnicity</h2>
-            <p className="text-sm text-slate-500">Key outcome metrics vs. white non-Hispanic baseline (CDC / KFF / AHRQ data)</p>
-          </div>
-        </div>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-slate-200">
-                <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">Condition / Outcome</th>
-                <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">Black (vs. White)</th>
-                <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">Hispanic (vs. White)</th>
-                <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">AIAN (vs. White)</th>
-                <th className="text-left py-2 text-xs font-bold uppercase tracking-wider text-slate-500">Primary Driver</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-100">
-              {[
-                { condition: "Maternal mortality rate", black: "3.1× higher", hispanic: "1.4× higher", aian: "2.4× higher", driver: "Access to OB, preeclampsia undertreatment" },
-                { condition: "Diabetes prevalence", black: "1.6× higher", hispanic: "1.7× higher", aian: "2.3× higher", driver: "SDOH, diet access, PCM screening gaps" },
-                { condition: "Hypertension control", black: "14% lower BP control rate", hispanic: "9% lower", aian: "12% lower", driver: "Medication adherence, access, distrust" },
-                { condition: "COVID-19 age-adj. mortality", black: "1.4× higher (peak)", hispanic: "1.8× higher (peak)", aian: "2.4× higher (peak)", driver: "Frontline work exposure, comorbidities" },
-                { condition: "Life expectancy (years)", black: "−4.2 yrs", hispanic: "+3.1 yrs (Hispanic Paradox)", aian: "−6.8 yrs", driver: "SDOH, chronic disease, violence, opioids" },
-                { condition: "Infant mortality rate", black: "2.2× higher", hispanic: "0.7× (lower than white)", aian: "1.9× higher", driver: "Preterm birth, access to NICU, SDOH" },
-              ].map((row) => (
-                <tr key={row.condition} className="hover:bg-slate-50">
-                  <td className="py-3 pr-4 font-semibold text-slate-800 text-sm">{row.condition}</td>
-                  <td className="py-3 pr-4 font-bold text-rose-600 text-xs">{row.black}</td>
-                  <td className="py-3 pr-4 font-bold text-amber-600 text-xs">{row.hispanic}</td>
-                  <td className="py-3 pr-4 font-bold text-rose-700 text-xs">{row.aian}</td>
-                  <td className="py-3 text-slate-500 text-xs">{row.driver}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <p className="text-xs text-slate-400 mt-4">AIAN = American Indian / Alaska Native. Sources: CDC Wonder, KFF State Health Facts, AHRQ National Healthcare Quality and Disparities Report 2023.</p>
+        <h2 className="ty-h3 font-bold text-slate-900 mb-4">Health Outcome Disparities — Sourced Examples</h2>
+        <ul className="space-y-2">
+          {[
+            "Maternal mortality, 2023: 50.3 deaths per 100,000 live births for Black women vs. 14.5 for white women — about 3.5 times higher (CDC NCHS)",
+            "About 84% of pregnancy-related deaths were judged preventable by maternal mortality review committees (CDC, 2017–2019 data)",
+            "Uninsured: 8.0% of Americans (26.4 million) in 2023, down from 16.3% in 2010 (Census Bureau)",
+            "For other measures, use the AHRQ National Healthcare Quality and Disparities Report, which tracks disparities by race, ethnicity and income every year",
+          ].map((item) => (
+            <li key={item} className="flex items-start gap-2 text-sm text-slate-600">
+              <span className="text-amber-500 mt-0.5 shrink-0">›</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
       </div>
 
       {/* Core Domains */}
@@ -75,47 +50,46 @@ function AccessDisparityBody() {
             icon: "🗺️",
             title: "Geographic Access Disparities",
             items: [
-              "Health Professional Shortage Areas (HPSAs): 8,128 primary care HPSAs covering 82M Americans",
-              "Medically Underserved Areas (MUAs): 2,200+ areas with shortage of primary care, OB, mental health",
-              "Rural hospital closures: 140+ rural hospitals closed 2010–2024; 600+ at risk of closure",
-              "Drive time analysis: 30% of rural Americans >60-minute drive to nearest trauma center",
-              "Mental health deserts: 29% of US counties have zero mental health providers (NAMI)",
-              "Ob/Gyn shortage: 47% of US counties are maternity care deserts (March of Dimes 2023)",
+              "Health Professional Shortage Areas (HPSAs): HRSA designates thousands of primary care HPSAs — current counts at data.HRSA.gov",
+              "Medically Underserved Areas (MUAs): HRSA designations for shortage of primary care services",
+              "Rural hospital closures: tracked since 2005 by the UNC Sheps Center, including conversions to Rural Emergency Hospitals",
+              "Mental health deserts: most rural counties have shortages of mental health professionals (HRSA HPSA data)",
+              "Maternity care deserts: about 35% of US counties have no birthing hospital, birth center or obstetric clinician (March of Dimes, 2024)",
             ],
           },
           {
             icon: "💳",
             title: "Insurance Coverage & Medicaid",
             items: [
-              "Uninsured rate: 8.0% (26.4M Americans) — ACA reduced from 16.3% in 2010 (CDC 2023)",
-              "Medicaid expansion (ACA): 40 states + DC expanded; non-expansion gap = 2.4M uninsured",
+              "Uninsured rate: 8.0% (26.4M Americans) in 2023, down from 16.3% in 2010 (Census Bureau)",
+              "Medicaid expansion (ACA): 40 states + DC expanded; adults in the 10 non-expansion states fall into a coverage gap",
               "Medicaid coverage gap: earn too much for Medicaid, too little for ACA subsidies in holdout states",
-              "CHIP: 9.7M children enrolled — effective but renewal barriers cause churn",
-              "Enhanced ACA subsidies (ARP): benchmark premium reduced 50%+ for 10M+ enrollees",
-              "Continuous Medicaid enrollment (COVID unwind): 10M+ disenrollments 2023–2024 — access cliff",
+              "CHIP: covers children above Medicaid income limits — renewal barriers cause churn",
+              "Enhanced ACA subsidies (ARPA/IRA): expired December 31, 2025, raising net premiums for most marketplace enrollees",
+              "Medicaid unwinding: more than 25 million people disenrolled in 2023–2024, many for procedural reasons (KFF)",
             ],
           },
           {
             icon: "🏥",
             title: "Safety Net & FQHC System",
             items: [
-              "FQHCs: 1,400 health centers serving 32M patients at 15,000 sites — sliding scale fees",
-              "FQHC reimbursement: Prospective Payment System (PPS) — all-inclusive per-visit rate ($182–$285)",
-              "Section 330 grants: $6.5B federal funding for FQHCs (2024) — enables comprehensive care delivery",
-              "Critical Access Hospitals (CAH): 1,346 CAHs — cost-based Medicare reimbursement (101% of cost)",
-              "Rural Health Clinics (RHC): 4,900+ RHCs — enhanced Medicare/Medicaid rates for rural primary care",
-              "Disproportionate Share Hospital (DSH): $19.8B annually for hospitals serving high Medicaid/uninsured",
+              "FQHCs: about 1,400 health centers serving roughly 32 million patients (HRSA UDS) — sliding-scale fees",
+              "FQHC reimbursement: Prospective Payment System (PPS) — an all-inclusive per-visit rate",
+              "Section 330 grants: federal funding that enables comprehensive care at health centers",
+              "Critical Access Hospitals (CAH): cost-based Medicare reimbursement (101% of reasonable cost)",
+              "Rural Health Clinics (RHC): enhanced Medicare/Medicaid rates for rural primary care",
+              "Disproportionate Share Hospital (DSH): Medicare and Medicaid payments to hospitals serving many low-income patients",
             ],
           },
           {
             icon: "👩‍⚕️",
             title: "Provider Shortage Solutions",
             items: [
-              "National Health Service Corps (NHSC): 22,000+ providers in HPSAs — loan repayment + scholarships",
+              "National Health Service Corps (NHSC): loan repayment and scholarships for clinicians who serve in HPSAs",
               "J-1 visa waiver (Conrad 30): 30 IMGs/year per state → practice in underserved areas for 3 years",
-              "NP/PA full-practice authority: 28 states allow independent practice — increases rural access",
-              "Loan repayment: NHSC up to $75K; NURSE Corps $40K — recruitment lever for shortage areas",
-              "Community health workers (CHW): bridges trust gap in underserved communities — $2.47 ROI per $1",
+              "NP full practice authority: roughly 27 to 30 states plus DC — linked to more NPs in rural primary care",
+              "Loan repayment: NHSC and NURSE Corps programs — a recruitment lever for shortage areas",
+              "Community health workers (CHW): the IMPaCT model returned $2.47 to Medicaid for every $1 invested (Kangovi et al., Health Affairs, 2020)",
               "Telehealth: rural access supplement — reduces travel burden; no evidence of quality compromise",
             ],
           },
@@ -123,12 +97,10 @@ function AccessDisparityBody() {
             icon: "🤱",
             title: "Maternal & Infant Health Disparities",
             items: [
-              "Maternal mortality rate: Black women 3× higher rate than white women (CDC 2022 — 69.9 vs. 26.6)",
-              "Preterm birth disparity: Black infants 1.5× higher preterm rate — highest in developed nations",
+              "Maternal mortality rate: Black women 50.3 vs. white women 14.5 per 100,000 in 2023 (CDC NCHS)",
+              "Preterm birth disparity: Black infants are born preterm about 1.5 times as often as white infants (CDC)",
               "Maternal mortality causes: 84% preventable; hemorrhage, cardiovascular, mental health leading causes",
-              "Maternity care deserts: 36% of US counties have no OB, no midwife, no birthing hospital",
-              "Doula access programs: Medicaid doula coverage in 11+ states — reduces C-section + preterm birth",
-              "Strong Start initiative: CMS prenatal care enhancement for Medicaid — 16% NICU reduction",
+              "Doula access programs: a growing number of state Medicaid programs cover doula care",
             ],
           },
           {
@@ -136,8 +108,8 @@ function AccessDisparityBody() {
             title: "Measuring & Reporting Equity",
             items: [
               "CMS Health Equity Stratified Reporting: race/ethnicity breakdown required for QRs (2023+)",
-              "HEDIS Stratification: NCQA mandates stratified reporting for 6 clinical domains by 2025",
-              "HHS Disparities Report: annual tracking of 250+ measures across race, ethnicity, socioeconomic status",
+              "HEDIS stratification: NCQA requires race and ethnicity stratification on a growing list of measures",
+              "AHRQ National Healthcare Quality and Disparities Report: annual tracking across race, ethnicity and income",
               "Leapfrog Group: hospital safety grade with equity lens — racial disparity in patient safety outcomes",
               "CMS Star Rating equity adjustment: dual-eligible + LIS adjustment to prevent penalizing safety-net plans",
               "Community Health Needs Assessment (CHNA): required every 3 years; health equity as core priority",
@@ -168,37 +140,37 @@ function AccessDisparityBody() {
             {
               title: "Medicaid Expansion",
               evidence: "Strong (NEJM, Health Affairs)",
-              body: "ACA Medicaid expansion reduced uninsured rate 40%, improved cancer screening rates 20–25%, and reduced cardiovascular mortality 6.1% in expansion vs. non-expansion states.",
+              body: "Medicaid expansion was associated with significantly lower mortality among low-income adults (Miller, Johnson & Wherry, Quarterly Journal of Economics, 2021).",
               badge: "bg-emerald-100 text-emerald-700",
             },
             {
               title: "Community Health Workers",
               evidence: "Strong (RCT evidence)",
-              body: "CHW programs reduce diabetes A1c 0.5–1.2%, reduce ED visits 18–24%, and improve hypertension control 15%. ROI: $2.47 per $1 invested across 12 RCTs.",
+              body: "In randomized trials, the IMPaCT community health worker model reduced hospital days and returned $2.47 to Medicaid for every dollar invested (Kangovi et al., Health Affairs, 2020).",
               badge: "bg-emerald-100 text-emerald-700",
             },
             {
               title: "Doula Support Programs",
               evidence: "Moderate (RCTs + observational)",
-              body: "Medicaid-covered doulas reduce C-section rate 25%, preterm birth 14%, and improve breastfeeding initiation 8%. 11+ states have enacted Medicaid doula coverage.",
+              body: "Doula support is associated with fewer cesarean births and better birth outcomes in observational studies; states are expanding Medicaid coverage.",
               badge: "bg-amber-100 text-amber-700",
             },
             {
               title: "Language Concordant Care",
               evidence: "Strong (observational)",
-              body: "Patients cared for in their primary language: 40% lower medication errors, 20% higher screening completion, and 2× more likely to have chronic disease controlled.",
+              body: "Language-concordant care and professional interpreters reduce communication errors and improve outcomes for patients with limited English proficiency.",
               badge: "bg-emerald-100 text-emerald-700",
             },
             {
               title: "FQHC Expansion",
               evidence: "Strong (HRSA program data)",
-              body: "FQHCs reduce preventable ED visits 18%, lower uncompensated care costs, and achieve comparable quality to private practices despite serving 3× more complex patients.",
+              body: "Health centers provide comprehensive primary care to low-income and uninsured patients at quality comparable to other providers.",
               badge: "bg-emerald-100 text-emerald-700",
             },
             {
               title: "Telehealth for Rural Access",
               evidence: "Moderate (strong for specialty)",
-              body: "Telestroke reduces door-to-needle time 35%, tele-dermatology improves biopsy yield, and telepsychiatry in rural EDs reduces transfer rates 35%.",
+              body: "Telestroke, tele-dermatology and telepsychiatry extend specialist access to rural hospitals and clinics that cannot staff them.",
               badge: "bg-amber-100 text-amber-700",
             },
           ].map((item) => (
