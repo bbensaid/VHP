@@ -1,0 +1,151 @@
+{
+"tag": "briefs-vt",
+"note": "Policy briefs Vermont/AHEAD/Act 68 pass 10-19: Act 68 sets global budgets; GMCB Aug 2026 FY26 projections 7 of 13; VDH 2020 33% PCPs 60+ (nurse 'over 48' unsourced); MA exits 2026 (WCAX/Insurance Business); no evidence of a Vermont VHIE->CRISP debate; WalletHub 19.6%; OW range \\$0.7-2.4B",
+"pairs": [
+[
+"AHEAD Model Year One: Early Financial Outcomes and the Lessons Rural Hospital CFOs Cannot Afford to Miss",
+"AHEAD Model Year One: Why Financial Outcomes Are Not Yet In, and What Rural Hospital CFOs Should Watch"
+],
+[
+"It reflects a growing conclusion, visible also in Vermont's Act 167,",
+"It reflects a growing conclusion, visible also in Vermont's Act 68,"
+],
+[
+"The End of the All-Payer Dream: Transitioning to Global Budgets Under Act 167",
+"The End of the All-Payer Dream: Transitioning to Global Budgets Under Acts 167 and 68"
+],
+[
+"That dream has largely given way to a different one — global hospital budgets under Act 167.",
+"That dream has largely given way to a different one — global hospital budgets under Act 68 of 2025, built on the Act 167 sustainability work."
+],
+[
+"Act 167 represents the pivot:",
+"Act 68 of 2025 represents the pivot:"
+],
+[
+"because global budgets also require all payers to participate, so Vermont's years of building multi-payer infrastructure feed directly into the new model.",
+"because global budgets still require multi-payer participation (Act 68's include Medicare where federal law permits, though not Medicaid), so Vermont's years of building multi-payer infrastructure carry over."
+],
+[
+"{\"Phase\":\"Act 167 pivot\",\"Mechanism\":\"Replace the base with all-payer global hospital budgets\"}",
+"{\"Phase\":\"Act 68 pivot\",\"Mechanism\":\"Replace the base with hospital global budgets\"}"
+],
+[
+"Act 167's pivot to global budgets is the logical next step",
+"Act 68's pivot to global budgets is the logical next step"
+],
+[
+"Act 167's pivot to global budgets changes the payment base itself.",
+"Act 68's pivot to global budgets changes the payment base itself."
+],
+[
+"whether Vermont's statewide Act 167 implementation succeeds",
+"whether Vermont's statewide Act 68 implementation succeeds"
+],
+[
+"Vermont's Act 167 is now the experiment that will test this",
+"Vermont's Act 68 is now the experiment that will test this"
+],
+[
+"In the most recent reporting cycle, six Vermont hospitals lost money on operations, according to the Green Mountain Care Board.",
+"In the Green Mountain Care Board's August 2026 budget review, seven of the 13 hospitals reporting projected operating losses for fiscal 2026."
+],
+[
+"The financial reality forcing the choices: six Vermont hospitals lost money on operations in the latest GMCB reporting;",
+"The financial reality forcing the choices: seven of 13 reporting Vermont hospitals project FY2026 operating losses (GMCB, August 2026);"
+],
+[
+"where roughly one in three primary-care physicians is over 60 and half the state's nurses are over 48, so the permanent workforce",
+"where about a third of primary-care physicians are 60 or older (Vermont Department of Health, 2020), so the permanent workforce"
+],
+[
+"Six Vermont hospitals lost money on operations in the latest reporting cycle even after years of premium growth",
+"Seven of 13 reporting Vermont hospitals project operating losses for FY2026 (GMCB, August 2026) even after years of premium growth"
+],
+[
+"whether Vermont hits the FY2027 first-hospital and FY2030 all-hospital global-budget deadlines",
+"whether Vermont hits the FY2028 first-hospital and FY2030 all-hospital global-budget deadlines"
+],
+[
+"As the most ambitious state hospital-payment reform in the country,",
+"As one of the most ambitious state hospital-payment reforms in the country,"
+],
+[
+"Vermont is now the country's foremost natural experiment",
+"Vermont is now a leading natural experiment"
+],
+[
+"Vermont's destination is a system in which hospitals are paid fixed budgets by all payers rather than per service.",
+"Vermont's destination is a system in which hospitals are paid fixed budgets rather than per service."
+],
+[
+"and why Vermont is the nation's most-watched state hospital-payment experiment.",
+"and why Vermont's hospital-payment experiment is so closely watched."
+],
+[
+" Vermont, for instance, credits CON with sustaining its rural hospitals.",
+""
+],
+[
+"Strategic Pivot: Transitioning VHIE to the CRISP Shared Services Utility Model",
+"Build or Join: Small-State HIEs and the CRISP Shared-Services Utility Model"
+],
+[
+"Vermont's debate over transitioning its Health Information Exchange (VHIE) toward a shared-services utility model — exemplified by Maryland's CRISP — captures a choice every state HIE now confronts.",
+"Whether a small state's health information exchange, such as Vermont's VHIE, should keep building its own infrastructure or join a shared-services utility like Maryland's CRISP is a choice every state HIE now confronts."
+],
+[
+"The pivot Vermont is weighing is from being an infrastructure builder",
+"The pivot such states weigh is from being an infrastructure builder"
+],
+[
+"Maryland's CRISP is the reference model for where Vermont and other states are looking.",
+"Maryland's CRISP is the reference model for this option."
+],
+[
+"whether Vermont and similar states formalize transitions",
+"whether small states formalize transitions"
+],
+[
+"But the underlying logic is compelling, and Vermont's deliberation over a CRISP-style pivot reflects a choice every state HIE now faces.",
+"But the underlying logic is compelling for small states, and it is a choice every state HIE now faces."
+],
+[
+"Vermont's debate over pivoting its VHIE to a CRISP-style shared-services utility captures the build-vs-join choice every state HIE now faces.",
+"The build-vs-join choice — keep a state-built HIE or move to a CRISP-style shared-services utility — is one every state HIE now faces."
+],
+[
+"The strategic-pivot work around the Vermont Health Information Exchange points toward inheriting and integrating wherever possible — using CRISP-style shared services and national networks rather than maintaining a fully custom stack.",
+"For the Vermont Health Information Exchange, the logic points toward inheriting and integrating wherever possible — national networks and shared services rather than a fully custom stack."
+],
+[
+"The Uninhabitable Math: Decoding Vermont's $2.4 Billion Healthcare Cliff",
+"The Uninhabitable Math: Decoding Vermont's $0.7–2.4 Billion Healthcare Cliff"
+],
+[
+"roughly one in three Vermont primary-care physicians is over 60, and half the state's nurses are over 48, so supply is contracting precisely as demand rises.",
+"about a third of Vermont's primary-care physicians are 60 or older (Vermont Department of Health, 2020), so supply is contracting precisely as demand rises."
+],
+[
+"for 2026, all but one Medicare Advantage carrier exited Vermont after concluding federal payments did not match local costs, stranding tens of thousands of seniors.",
+"for 2026, every major Medicare Advantage carrier except Humana, which stayed in six counties, left Vermont, and about 50,000 enrollees had to find new coverage."
+],
+[
+"roughly one in three primary-care physicians over 60 and half of nurses over 48",
+"about a third of primary-care physicians 60 or older"
+],
+[
+"with a third of the state's primary-care physicians over 60 and half its nurses over 48 heading toward retirement",
+"with about a third of the state's primary-care physicians 60 or older and heading toward retirement"
+],
+[
+"Vermonters spend the highest share of household income on health insurance premiums of any state — around 19.6%, nearly double the national average —",
+"By WalletHub's estimate, Vermonters spend the highest share of median income on health insurance premiums of any state — around 19.6% —"
+],
+[
+"in a state where residents spend ~19.6% of income on premiums, the highest in the nation",
+"in a state where residents spend ~19.6% of income on premiums, the highest in the nation by WalletHub's estimate"
+]
+],
+"residue": "nurses (are )?over 48|Vermont's debate over|six Vermont hospitals lost"
+}
