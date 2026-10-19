@@ -16,7 +16,7 @@ const SURROGATE_ENDPOINTS = [
     clinicalFactor: 0.21,
     clinicalEvent: "reduction in diabetes complications",
     validationStrength: "Strong" as const,
-    note: "UKPDS meta-analysis: each 1% HbA1c reduction → 0.04 QALY gain",
+    note: "UKPDS 35: each 1% HbA1c reduction → 21% fewer diabetes-related deaths, 37% fewer microvascular complications. The 0.04 QALY per 1% is a model assumption.",
     studies: [
       "UKPDS 35 (BMJ 2000)",
       "Stratton et al. (BMJ 2000)",
@@ -44,9 +44,9 @@ const SURROGATE_ENDPOINTS = [
     unit: "mmHg reduction",
     qalyPerUnit: 0.01,
     clinicalFactor: 0.02,
-    clinicalEvent: "reduction in stroke risk per 5 mmHg",
+    clinicalEvent: "reduction in major cardiovascular events per 5 mmHg",
     validationStrength: "Strong" as const,
-    note: "BPLTTC: 5 mmHg SBP reduction → ~10% stroke risk reduction",
+    note: "BPLTTC: 5 mmHg SBP reduction → ~10% fewer major cardiovascular events (stroke ~13%)",
     studies: [
       "BPLTTC (Lancet 2021)",
       "SPRINT trial",
