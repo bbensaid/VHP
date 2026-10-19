@@ -25,49 +25,6 @@ function WorkflowHero() {
 function WorkflowBody() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-0 pb-12">
-      {/* Automation ROI Quick Reference */}
-      <div className="bg-white rounded-2xl border border-slate-200 p-8 mb-10">
-        <div className="flex items-center gap-3 mb-6">
-          <span className="text-2xl">💹</span>
-          <div>
-            <h2 className="ty-h3 font-bold text-slate-900">Workflow Automation ROI Reference</h2>
-            <p className="text-sm text-slate-500">Expected financial impact by automation initiative — 500-bed health system baseline</p>
-          </div>
-        </div>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-slate-200">
-                <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">Initiative</th>
-                <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">Annual Savings</th>
-                <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">Implementation Cost</th>
-                <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">Payback</th>
-                <th className="text-left py-2 text-xs font-bold uppercase tracking-wider text-slate-500">Primary Benefit</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-100">
-              {[
-                { initiative: "Ambient AI documentation (physicians)", savings: "$1.8M–$2.4M", cost: "$450K–$650K", payback: "3–4 months", benefit: "2.5 hrs/MD/day time savings" },
-                { initiative: "RPA — prior authorization", savings: "$600K–$900K", cost: "$120K–$180K", payback: "2–3 months", benefit: "4–6 FTEs reallocated" },
-                { initiative: "AI claim denial prevention", savings: "$1.2M–$1.8M", cost: "$200K–$350K", payback: "2–3 months", benefit: "40% denial rate reduction" },
-                { initiative: "Predictive scheduling + no-show AI", savings: "$400K–$700K", cost: "$80K–$150K", payback: "3–4 months", benefit: "18–22% no-show reduction" },
-                { initiative: "EHR alert optimization", savings: "$280K–$420K", cost: "$60K–$100K", payback: "3–5 months", benefit: "63% alert volume reduction" },
-                { initiative: "AI bed management / flow", savings: "$900K–$1.4M", cost: "$300K–$500K", payback: "4–6 months", benefit: "0.8 day LOS reduction" },
-              ].map((row) => (
-                <tr key={row.initiative} className="hover:bg-slate-50">
-                  <td className="py-3 pr-4 font-semibold text-slate-800 text-sm">{row.initiative}</td>
-                  <td className="py-3 pr-4 font-bold text-emerald-700">{row.savings}</td>
-                  <td className="py-3 pr-4 text-slate-500 text-xs">{row.cost}</td>
-                  <td className="py-3 pr-4 font-bold text-indigo-600 text-xs">{row.payback}</td>
-                  <td className="py-3 text-slate-500 text-xs">{row.benefit}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <p className="text-xs text-slate-400 mt-4">Estimates based on published vendor case studies and peer-reviewed implementation reports. Actual results vary by baseline workflows, EHR platform, and organizational readiness.</p>
-      </div>
-
       {/* Core Domains */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
         {[
@@ -75,12 +32,12 @@ function WorkflowBody() {
             icon: "🖥️",
             title: "EHR Optimization",
             items: [
-              "In-basket management: AI-assisted message routing reduces physician in-basket volume 35%",
+              "In-basket management: AI-assisted message routing and drafted replies",
               "SmartPhrase / SmartText optimization: pre-built documentation templates per specialty",
               "Epic Autocompletion (Dragon Ambient): ambient note + SmartPhrases → completed note",
               "Inbox triage: AI urgency scoring routes patient messages (Low/Medium/High/Urgent)",
-              "EHR pajama time: physicians spend 1–2 hrs/night on charts — ambient AI primary solution",
-              "Signal vs. noise: EHR alert fatigue — avg physician receives 63 alerts/day, overrides 96%",
+              "EHR after-hours work: primary care physicians spent about 1.4 hours a day in the EHR after clinic (Arndt et al., Annals of Family Medicine, 2017)",
+              "Alert fatigue: clinicians override roughly half to over 90% of drug-safety alerts in published studies (van der Sijs et al., JAMIA, 2006)",
             ],
           },
           {
@@ -89,9 +46,9 @@ function WorkflowBody() {
             items: [
               "Revenue cycle automation: prior auth initiation, eligibility verification, claim scrubbing",
               "RPA platforms: UiPath, Automation Anywhere, Blue Prism — healthcare-specific bots",
-              "Prior auth automation: 78% of PA requests require no additional information (AMA survey)",
+              "Prior auth automation: electronic prior authorization APIs required of Medicare Advantage, Medicaid and ACA plans from January 2027 (CMS-0057-F)",
               "Eligibility verification bot: real-time insurance check at scheduling — reduces bad debt",
-              "Claims status automation: bot checks payer portals — replaces 4–6 biller FTEs per 500 beds",
+              "Claims status automation: bots check payer portals instead of billers",
               "Discharge summary automation: structured EHR data → draft discharge summary",
             ],
           },
@@ -99,10 +56,10 @@ function WorkflowBody() {
             icon: "💡",
             title: "Clinical Decision Support (CDS)",
             items: [
-              "Best Practice Advisories (BPAs): Epic/Cerner alert system — 600+ standard BPAs available",
-              "Alert fatigue: reduce BPA volume by 40–60% via relevance scoring + role-based filtering",
+              "Best Practice Advisories (BPAs): vendor-built and locally built interruptive alerts",
+              "Alert governance: retire low-value alerts using override data and role-based targeting",
               "CDS Hooks: HL7 standard for embedding 3rd-party CDS into EHR workflow (FHIR-based)",
-              "Antimicrobial stewardship: CDS-driven antibiotic de-escalation reduces C.diff 18%",
+              "Antimicrobial stewardship: CDS-driven antibiotic de-escalation",
               "Sepsis bundles: time-to-antibiotic alert — PDSA cycles using CDS to meet SEP-1 measure",
               "Drug-drug interaction: precision DDI alerting (eliminate low-risk alerts that cause override fatigue)",
             ],
@@ -111,8 +68,8 @@ function WorkflowBody() {
             icon: "📅",
             title: "Scheduling & Access Optimization",
             items: [
-              "AI scheduling optimization: LeanTaaS iQueue, QGenda — reduces OR idle time 12–18%",
-              "Patient self-scheduling: 47% of patients prefer online booking (Kyruus 2024)",
+              "AI scheduling optimization: OR block and infusion-chair scheduling tools (e.g., LeanTaaS iQueue)",
+              "Patient self-scheduling: online booking integrated with the EHR",
               "No-show prediction: ML model triggers proactive reminder at 48–72 hours pre-appointment",
               "Demand forecasting: AI predicts daily ED census by hour — staffing optimization",
               "Referral management: Epic Referral Tracking + Salesforce Health Cloud CRM integration",
@@ -135,10 +92,10 @@ function WorkflowBody() {
             icon: "💬",
             title: "Patient Engagement Tools",
             items: [
-              "Patient portal activation: Epic MyChart — 73% of health system patients activated (2024)",
+              "Patient portal activation: track and raise MyChart (or other portal) activation",
               "Automated post-visit surveys: HCAHPS digital collection (Press Ganey, NRC Health)",
               "Population outreach: TACOS (Target, Act, Close, Outreach, Schedule) — Epic population health",
-              "Appointment reminders: SMS/email automated workflow — 18–22% no-show reduction",
+              "Appointment reminders: automated SMS/email workflows",
               "Patient education: health literacy-adjusted content delivery via Healthwise, Krames",
               "Shared decision-making tools: Staywell, Emmi — video + decision aid integration at point of care",
             ],
