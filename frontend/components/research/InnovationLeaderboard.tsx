@@ -89,7 +89,7 @@ interface StateRecord {
 //               informed by this platform's pre-existing adoption/maturity index, NOT a published
 //               pillar-specific figure. They carry a visible "SIM" tag in the UI per this
 //               instruction from the author: disclose invented data with a clear on-screen label.
-//   Vermont's row — OVERRIDDEN with the book's actual sourced pillar READINESS (policy 95,
+//   Vermont's row — OVERRIDDEN with the book's actual sourced pillar READINESS (policy 80,
 //               technology 45, economics 55, clinical 65, operations 50) from
 //               lib/framework/sequence-engine.ts PRESETS "vermont-2026" via lib/framework/
 //               pillar-mapping.ts frameworkReadiness(). This is not this table's own indicator —
@@ -99,7 +99,7 @@ interface StateRecord {
 //               week; it must not reappear in a third tool).
 const RAW_STATES: Omit<StateRecord, "rank" | "composite">[] = [
   { state: "Massachusetts", abbr: "MA", region: "Northeast", policy: 30, technology: 79, economics: 78, clinical: 98, operations: 71, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
-  { state: "Vermont", abbr: "VT", region: "Northeast", policy: 95, technology: 45, economics: 55, clinical: 65, operations: 50, policyProgram: "Act 68 state mandate (signed AHEAD Cohort 2 Jan 2025; withdrew Jul 2026)", readinessSourced: true, simulated: { technology: false, economics: false, operations: false } },
+  { state: "Vermont", abbr: "VT", region: "Northeast", policy: 80, technology: 45, economics: 55, clinical: 65, operations: 50, policyProgram: "Act 68 state mandate (signed AHEAD Cohort 2 Jan 2025; withdrew Jul 2026)", readinessSourced: true, simulated: { technology: false, economics: false, operations: false } },
   { state: "Minnesota", abbr: "MN", region: "Midwest", policy: 30, technology: 74, economics: 73, clinical: 90, operations: 67, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "Colorado", abbr: "CO", region: "West", policy: 30, technology: 75, economics: 71, clinical: 78, operations: 68, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
   { state: "Oregon", abbr: "OR", region: "West", policy: 30, technology: 72, economics: 69, clinical: 63, operations: 65, policyProgram: "—", readinessSourced: false, simulated: { technology: true, economics: true, operations: true } },
@@ -576,7 +576,7 @@ export default function InnovationLeaderboard() {
                   <li><strong className="text-amber-300">Economics</strong> — {PILLAR_METHODOLOGY_NOTES.economics}</li>
                   <li><strong className="text-amber-300">Operations</strong> — {PILLAR_METHODOLOGY_NOTES.operations}</li>
                   <li><strong className="text-indigo-300">Vermont</strong> — exception to all of the above: its five numbers are read directly from
-                    lib/framework/sequence-engine.ts <code className="text-indigo-200">PRESETS[&quot;vermont-2026&quot;]</code> (policy 95,
+                    lib/framework/sequence-engine.ts <code className="text-indigo-200">PRESETS[&quot;vermont-2026&quot;]</code> (policy 80,
                     technology 45, economics 55, clinical 65, operations 50) — the same sourced pillar readiness the HTR Simulator and Friction
                     Index use — so it cannot show a different number here than it does everywhere else in the platform.</li>
                 </ul>

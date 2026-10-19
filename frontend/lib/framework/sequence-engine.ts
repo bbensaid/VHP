@@ -316,8 +316,8 @@ export const PRESETS: readonly Preset[] = [
     id: "vermont-2026",
     label: "Vermont, Fall 2026",
     blurb:
-      "Policy gate open (Acts 167/51/68). Technology partially open and still the bottleneck; Economics staged behind it for FY2027–28.",
-    scores: { policy: 95, technology: 45, economics: 55, clinical: 65, operations: 50 },
+      "Policy gate open on state authority (Acts 167/51/68), but narrower than planned after July 2026: AHEAD withdrawn and the Medicaid hospital global budget halted, so Medicare and Medicaid alignment must be rebuilt. Technology partially open and still the bottleneck; Economics staged behind it for FY2027–28.",
+    scores: { policy: 80, technology: 45, economics: 55, clinical: 65, operations: 50 },
     bookRef: "§1.14 Vermont's Implementation Timeline",
   },
 ];
