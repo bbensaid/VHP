@@ -62,7 +62,7 @@ export const COMMANDS: CommandItem[] = [
   { id: "nav-5b", title: "The Equity Imperative", category: "Navigation", href: "/equity", icon: ScaleIcon, shortcut: "Q" },
   { id: "dash-1", title: "National Dashboard", category: "Navigation", href: "/dashboard", icon: MapIcon },
   { id: "dash-2", title: "Investment Tracker", category: "Navigation", href: "/economics/investment", icon: DocumentTextIcon },
-  { id: "dash-3", title: "HTI Simulator", category: "Tool", href: "/hti-dashboard", icon: ChartBarIcon },
+  { id: "dash-3", title: "HTI Dashboard (five-pillar status)", category: "Tool", href: "/hti-dashboard", icon: ChartBarIcon },
   { id: "nav-6", title: "Go to AI Analyst", category: "Navigation", href: "/chat", icon: ChatBubbleLeftRightIcon },
   { id: "nav-7", title: "Go to Research Lab", category: "Navigation", href: "/research-lab", icon: BeakerIcon },
   { id: "nav-8", title: "Go to State Dashboard", category: "Navigation", href: "/dashboard", icon: MapIcon },

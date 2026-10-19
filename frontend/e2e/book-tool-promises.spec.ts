@@ -137,8 +137,12 @@ test.describe("HTI dashboard five-pillar view (/hti-dashboard)", () => {
     await gotoPillars(page);
     await expect(page.getByText(/Policy is not yet scored/i)).toHaveCount(0); // Vermont: scored
 
-    await page.locator("select").first().selectOption("massachusetts");
-    await expect(page.getByText(/Policy is not yet scored for Massachusetts/i)).toBeVisible();
+    // The pillar view is server-rendered, so retry the selection until hydration has attached the handler.
+    await expect(async () => {
+      await page.locator("select").first().selectOption("vermont");
+      await page.locator("select").first().selectOption("massachusetts");
+      await expect(page.getByText(/Policy is not yet scored for Massachusetts/i)).toBeVisible({ timeout: 2_000 });
+    }).toPass({ timeout: 60_000 });
     // No pillar may show a borrowed number for a state with no sourced readiness.
     for (const pillar of ["policy", "technology", "economics", "clinical", "operations"]) {
       await expect(page.getByTestId(`pillar-readiness-${pillar}`)).toHaveText("—");

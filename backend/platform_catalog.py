@@ -209,7 +209,7 @@ CATALOG = [
         "label": "HTI Dashboard",
         "url": "/hti-dashboard",
         "category": "Tools & Simulators",
-        "description": "Interactive Health Transformation Index scoring engine — explore composite scores, sub-indices, and state rankings.",
+        "description": "Vermont five-pillar status: sourced pillar readiness, dated milestones per pillar, and pace to the January 2028 Strategic Plan deadline.",
         "keywords": ["hti dashboard", "health transformation index", "hti score", "transformation index"],
     },
     {

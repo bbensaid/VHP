@@ -3,7 +3,7 @@ import { brandedMetadata } from "@/lib/brand-server";
 import HTIDashboard from "@/components/HTIDashboard";
 
 export async function generateMetadata(): Promise<Metadata> {
-  return brandedMetadata("HTI Dashboard", "Health Transformation Index (HTI) Simulation Engine");
+  return brandedMetadata("HTI Dashboard", "Vermont five-pillar status: sourced pillar readiness, dated milestones per pillar, and pace to the January 2028 Strategic Plan deadline.");
 }
 
 export default function Page() {

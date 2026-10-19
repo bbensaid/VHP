@@ -94,7 +94,7 @@ function getPageContext(path: string): string | undefined {
   }
 
   // HTI Dashboard
-  if (path.startsWith("/hti-dashboard")) return "Health Transformation Index (HTI) Dashboard";
+  if (path.startsWith("/hti-dashboard")) return "HTI Dashboard — Vermont five-pillar status";
   if (path.startsWith("/bed-capacity")) return "Vermont Hospital Bed Capacity & Transfer Tool";
   if (path.startsWith("/impact-simulation")) return "Health System Impact Simulation";
 
