@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:55:01Z",
+ "_id": "rhtState-arizona",
+ "_rev": "GIKqHwCOFsUvADyibzknXi",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:55:01Z",
+ "awardAmount": "$167,000,000",
+ "description": "New rural residency slots and mobile satellite clinics to close the '20-mile gap'.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Establishing new residency slots for rural placement.",
+   "title": "Rural Clinical Rotations"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Deploying units to close the travel gap.",
+   "title": "Mobile & Satellite Clinics"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Student Retention",
+   "status": "Pending",
+   "target": "High"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Patient Volume",
+   "status": "In Progress",
+   "target": "Increased"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "arizona"
+ },
+ "stateName": "Arizona",
+ "status": "Active",
+ "strategicFocus": "Mobile Access & Workforce Pipeline"
+}
