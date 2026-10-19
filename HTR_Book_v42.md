@@ -3883,10 +3883,6 @@ The Collaborative Care Model merits extended treatment because it is the clinica
 
 The financial sustainability of CoCM in Vermont's environment depends on Medicare and Medicaid coverage of the billing codes. Vermont Medicaid's coverage of CoCM codes is a prerequisite for practices serving high-Medicaid rural populations to implement the model --- and DVHA's coordination with the Blueprint is the mechanism for ensuring that coverage is in place. With the AHEAD EAST Fund lost to Vermont's July 2026 withdrawal, Medicaid coverage and RHT-funded BHCM workforce training are the remaining vehicles for funding the BHCM positions that primary care practices need to implement CoCM at scale.
 
-*"The MHI initiative allowed primary care teams to serve more patients and provide more consistent follow-up. Flexible and team-based care models helped patients engage in services, particularly those facing complex medical and social challenges."*
-
---- Vermont Blueprint Mental Health Integration Pilot Qualitative Outcomes Evaluation, 2025
-
 ### 8.3.3 **The SUD Continuum: Vermont's Hub and Spoke Model**
 
 Vermont's substance use disorder treatment system is organized around a Hub and Spoke model that has been nationally recognized as a model for rural SUD treatment. Hubs provide intensive addiction treatment services; Spokes --- office-based opioid treatment (OBOT) practices --- provide medication-assisted treatment in primary care settings. The Blueprint's practice finder maps active Spoke locations across Vermont's primary care network. AHS actions consistent with Act 167 have expanded this system: rate increases for residential SUD treatment, creation of 'hublets' in treatment deserts, support for co-occurring mental health and SUD treatment at hubs, contingency management for stimulant use disorder, and completion of gaps analyses to identify communities without adequate access.
