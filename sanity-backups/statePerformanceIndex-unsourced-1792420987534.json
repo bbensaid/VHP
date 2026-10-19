@@ -1,0 +1,1552 @@
+[
+ {
+  "_createdAt": "2026-03-10T13:55:49Z",
+  "_id": "perfIndex-alabama",
+  "_rev": "GIKqHwCOFsUvADyibzlCqo",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:49Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 72,
+   "spendingPerCapita": 78,
+   "workforceGaps": 28
+  },
+  "narrativeSummary": "Alabama faces severe health disparities, particularly in maternal outcomes and cancer mortality rates in its Black Belt region. Telerobotic ultrasound and cancer prevention hubs represent targeted digital infrastructure investments in historically underserved communities.",
+  "narrativeTitle": "Maternal Mortality and Cancer Burden Requiring Targeted Investment",
+  "performanceScore": 32,
+  "policyMetrics": {
+   "scopeOfPractice": 35,
+   "telehealth": 40,
+   "vbpAdoption": 30
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "alabama"
+  },
+  "stateName": "Alabama",
+  "status": "At Risk",
+  "technologyMetrics": {
+   "broadbandAccess": 38,
+   "ehrAdoption": 62,
+   "hieAdoption": 48
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:22Z",
+  "_id": "perfIndex-alaska",
+  "_rev": "ZDU5b4qioPbFp0EQfvWxP0",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:22Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 72,
+   "spendingPerCapita": 55,
+   "workforceGaps": 42
+  },
+  "narrativeSummary": "Alaska's off-road communities face healthcare logistics challenges unmatched anywhere in the country. Drone delivery, remote pharmacy dispensing, and fetal monitoring devices are not incremental improvements — they are existential requirements for frontier community health.",
+  "narrativeTitle": "Frontier Logistics Innovation as an Existential Necessity",
+  "performanceScore": 45,
+  "policyMetrics": {
+   "scopeOfPractice": 55,
+   "telehealth": 60,
+   "vbpAdoption": 44
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "alaska"
+  },
+  "stateName": "Alaska",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 42,
+   "ehrAdoption": 68,
+   "hieAdoption": 60
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:20Z",
+  "_id": "perfIndex-arizona",
+  "_rev": "GIKqHwCOFsUvADyibzlIBU",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:20Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 74,
+   "spendingPerCapita": 68,
+   "workforceGaps": 50
+  },
+  "narrativeSummary": "Arizona's mobile satellite clinics and rural residency expansion target the geographic access barrier that defines health outcomes in its vast rural and tribal regions, where the nearest care is often more than 20 miles away.",
+  "narrativeTitle": "Closing the 20-Mile Gap Through Residency and Mobile Clinics",
+  "performanceScore": 58,
+  "policyMetrics": {
+   "scopeOfPractice": 62,
+   "telehealth": 64,
+   "vbpAdoption": 56
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "arizona"
+  },
+  "stateName": "Arizona",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 56,
+   "ehrAdoption": 76,
+   "hieAdoption": 65
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:55Z",
+  "_id": "perfIndex-arkansas",
+  "_rev": "G7Tfo59YVwcDW2O5CBrn7Z",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:55Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 78,
+   "spendingPerCapita": 74,
+   "workforceGaps": 30
+  },
+  "narrativeSummary": "Arkansas faces significant hospital financial distress alongside deep chronic disease burdens. The SAFE shared service model targets financial stabilization while the HEART initiative addresses cardiovascular disease through food access and community infrastructure.",
+  "narrativeTitle": "Hospital Stabilization and Upstream Prevention as Twin Priorities",
+  "performanceScore": 34,
+  "policyMetrics": {
+   "scopeOfPractice": 36,
+   "telehealth": 42,
+   "vbpAdoption": 32
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "arkansas"
+  },
+  "stateName": "Arkansas",
+  "status": "At Risk",
+  "technologyMetrics": {
+   "broadbandAccess": 36,
+   "ehrAdoption": 60,
+   "hieAdoption": 50
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:10Z",
+  "_id": "perfIndex-california",
+  "_rev": "ZDU5b4qioPbFp0EQfvWvZS",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:10Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 88,
+   "spendingPerCapita": 65,
+   "workforceGaps": 70
+  },
+  "narrativeSummary": "California's progressive policies on telehealth and scope of practice are a model for the nation. The Hub-and-Spoke resilience model extends this sophistication to rural and Tribal communities facing climate-driven infrastructure risk.",
+  "narrativeTitle": "Leader in Policy and Tech, Faces Cost Pressures",
+  "performanceScore": 78,
+  "policyMetrics": {
+   "scopeOfPractice": 85,
+   "telehealth": 90,
+   "vbpAdoption": 80
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "california"
+  },
+  "stateName": "California",
+  "status": "Improving",
+  "technologyMetrics": {
+   "broadbandAccess": 75,
+   "ehrAdoption": 90,
+   "hieAdoption": 85
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:17Z",
+  "_id": "perfIndex-colorado",
+  "_rev": "GIKqHwCOFsUvADyibzlH8e",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:17Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 88,
+   "spendingPerCapita": 62,
+   "workforceGaps": 72
+  },
+  "narrativeSummary": "Colorado's formal regional partnership structures give rural hospitals the legal and financial scaffolding to survive consolidation pressure. Mobile health tool expansion complements a strong existing telehealth infrastructure.",
+  "narrativeTitle": "Regional Partnerships and Mobile Health Diversifying Revenue",
+  "performanceScore": 76,
+  "policyMetrics": {
+   "scopeOfPractice": 76,
+   "telehealth": 80,
+   "vbpAdoption": 76
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "colorado"
+  },
+  "stateName": "Colorado",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 72,
+   "ehrAdoption": 86,
+   "hieAdoption": 80
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:36Z",
+  "_id": "perfIndex-connecticut",
+  "_rev": "ZDU5b4qioPbFp0EQfvWpqc",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:36Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 93,
+   "spendingPerCapita": 65,
+   "workforceGaps": 72
+  },
+  "narrativeSummary": "Connecticut's investment in 23-hour crisis stabilization centers and universal nurse home-visiting reflects a mature behavioral health strategy designed to prevent unnecessary hospitalizations.",
+  "narrativeTitle": "Behavioral Health Infrastructure as a Strategic Priority",
+  "performanceScore": 79,
+  "policyMetrics": {
+   "scopeOfPractice": 76,
+   "telehealth": 80,
+   "vbpAdoption": 78
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "connecticut"
+  },
+  "stateName": "Connecticut",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 78,
+   "ehrAdoption": 88,
+   "hieAdoption": 82
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:41Z",
+  "_id": "perfIndex-delaware",
+  "_rev": "ZDU5b4qioPbFp0EQfvWr2Q",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:41Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 88,
+   "spendingPerCapita": 68,
+   "workforceGaps": 58
+  },
+  "narrativeSummary": "Delaware's small footprint belies significant rural access disparities in Sussex County. Behavioral health co-location and FQHC expansion are the primary levers for closing gaps in primary and preventive care.",
+  "narrativeTitle": "Compact State, Complex Access Gaps",
+  "performanceScore": 62,
+  "policyMetrics": {
+   "scopeOfPractice": 62,
+   "telehealth": 65,
+   "vbpAdoption": 60
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "delaware"
+  },
+  "stateName": "Delaware",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 62,
+   "ehrAdoption": 80,
+   "hieAdoption": 68
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:44Z",
+  "_id": "perfIndex-florida",
+  "_rev": "GIKqHwCOFsUvADyibzlBUW",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:44Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 75,
+   "spendingPerCapita": 72,
+   "workforceGaps": 48
+  },
+  "narrativeSummary": "Florida's high uninsured rate and fragmented rural hospital landscape create recurring access gaps. Community paramedicine for post-discharge care and formalized regional collaboratives represent the core transformation strategy.",
+  "narrativeTitle": "Paramedicine and Regional Collaboratives Targeting Fragmentation",
+  "performanceScore": 55,
+  "policyMetrics": {
+   "scopeOfPractice": 58,
+   "telehealth": 62,
+   "vbpAdoption": 52
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "florida"
+  },
+  "stateName": "Florida",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 58,
+   "ehrAdoption": 76,
+   "hieAdoption": 65
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:45Z",
+  "_id": "perfIndex-georgia",
+  "_rev": "ZDU5b4qioPbFp0EQfvWrlq",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:45Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 62,
+   "spendingPerCapita": 75,
+   "workforceGaps": 38
+  },
+  "narrativeSummary": "Georgia has among the nation's highest maternal mortality rates. Obstetric cart deployment to rural EDs and preparation for the CMS AHEAD global budget model are urgent priorities for a system under acute financial and clinical stress.",
+  "narrativeTitle": "Obstetric Crisis Driving Urgent Structural Reform",
+  "performanceScore": 44,
+  "policyMetrics": {
+   "scopeOfPractice": 48,
+   "telehealth": 50,
+   "vbpAdoption": 42
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "georgia"
+  },
+  "stateName": "Georgia",
+  "status": "At Risk",
+  "technologyMetrics": {
+   "broadbandAccess": 44,
+   "ehrAdoption": 68,
+   "hieAdoption": 55
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:23Z",
+  "_id": "perfIndex-hawaii",
+  "_rev": "GIKqHwCOFsUvADyibzlJO3",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:23Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 94,
+   "spendingPerCapita": 60,
+   "workforceGaps": 80
+  },
+  "narrativeSummary": "Hawaii's Rural Health Information Network (RHIN) creates the digital integration layer for a geographically fragmented island system. Medical respite for the unhoused population addresses a social determinant that drives disproportionate acute care utilization.",
+  "narrativeTitle": "Digital Backbone and Respite Network Defining Island Health",
+  "performanceScore": 84,
+  "policyMetrics": {
+   "scopeOfPractice": 80,
+   "telehealth": 86,
+   "vbpAdoption": 82
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "hawaii"
+  },
+  "stateName": "Hawaii",
+  "status": "Leading",
+  "technologyMetrics": {
+   "broadbandAccess": 78,
+   "ehrAdoption": 90,
+   "hieAdoption": 88
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:14Z",
+  "_id": "perfIndex-idaho",
+  "_rev": "G7Tfo59YVwcDW2O5CBro5P",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:14Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 78,
+   "spendingPerCapita": 66,
+   "workforceGaps": 54
+  },
+  "narrativeSummary": "Idaho's aging Critical Access Hospital infrastructure and significant pharmacy deserts in rural counties are addressed through remote tele-pharmacy dispensing and capital investment in facility code compliance.",
+  "narrativeTitle": "Tele-Pharmacy and Facility Modernization Targeting Rural Gaps",
+  "performanceScore": 58,
+  "policyMetrics": {
+   "scopeOfPractice": 60,
+   "telehealth": 60,
+   "vbpAdoption": 54
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "idaho"
+  },
+  "stateName": "Idaho",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 55,
+   "ehrAdoption": 74,
+   "hieAdoption": 62
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:00Z",
+  "_id": "perfIndex-illinois",
+  "_rev": "ZDU5b4qioPbFp0EQfvWu6c",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:00Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 85,
+   "spendingPerCapita": 70,
+   "workforceGaps": 68
+  },
+  "narrativeSummary": "Illinois demonstrates solid progress in adopting value-based care models and has a stable technology infrastructure. The Treat-Not-Transport EMS model and behavioral health integration initiative are accelerating rural system efficiency.",
+  "narrativeTitle": "Balanced Progress with Focus on VBC",
+  "performanceScore": 71,
+  "policyMetrics": {
+   "scopeOfPractice": 75,
+   "telehealth": 78,
+   "vbpAdoption": 72
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "illinois"
+  },
+  "stateName": "Illinois",
+  "status": "Improving",
+  "technologyMetrics": {
+   "broadbandAccess": 72,
+   "ehrAdoption": 88,
+   "hieAdoption": 80
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:59Z",
+  "_id": "perfIndex-indiana",
+  "_rev": "G7Tfo59YVwcDW2O5CBrnL7",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:59Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 82,
+   "spendingPerCapita": 72,
+   "workforceGaps": 46
+  },
+  "narrativeSummary": "Indiana's centralized Medical Operations Coordination Center takes a logistics-engineering approach to rural care. Paired with post-discharge medication dispensing, it addresses two of the most reliable predictors of avoidable readmissions.",
+  "narrativeTitle": "Transfer Coordination and Medication Adherence as System Levers",
+  "performanceScore": 52,
+  "policyMetrics": {
+   "scopeOfPractice": 54,
+   "telehealth": 58,
+   "vbpAdoption": 50
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "indiana"
+  },
+  "stateName": "Indiana",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 52,
+   "ehrAdoption": 74,
+   "hieAdoption": 62
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:03Z",
+  "_id": "perfIndex-iowa",
+  "_rev": "GIKqHwCOFsUvADyibzlFj7",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:03Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 92,
+   "spendingPerCapita": 66,
+   "workforceGaps": 66
+  },
+  "narrativeSummary": "Iowa's creative use of dermatoscopes for rural melanoma screening and its Connections to Care digital literacy initiative reflect a pragmatic approach to closing access gaps with cost-effective tools.",
+  "narrativeTitle": "Skin Cancer Detection and Digital Access Driving Rural Innovation",
+  "performanceScore": 71,
+  "policyMetrics": {
+   "scopeOfPractice": 70,
+   "telehealth": 72,
+   "vbpAdoption": 68
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "iowa"
+  },
+  "stateName": "Iowa",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 65,
+   "ehrAdoption": 84,
+   "hieAdoption": 76
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:05Z",
+  "_id": "perfIndex-kansas",
+  "_rev": "ZDU5b4qioPbFp0EQfvWuyY",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:05Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 80,
+   "spendingPerCapita": 68,
+   "workforceGaps": 52
+  },
+  "narrativeSummary": "Kansas extends PACE elder care to rural regions while centralizing administrative functions across small rural clinics, addressing two of the most consistent barriers to rural health system viability: elder care capacity and prohibitive overhead.",
+  "narrativeTitle": "PACE Expansion and Admin Efficiency Anchoring Rural Sustainability",
+  "performanceScore": 59,
+  "policyMetrics": {
+   "scopeOfPractice": 60,
+   "telehealth": 62,
+   "vbpAdoption": 56
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "kansas"
+  },
+  "stateName": "Kansas",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 58,
+   "ehrAdoption": 76,
+   "hieAdoption": 65
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:53Z",
+  "_id": "perfIndex-kentucky",
+  "_rev": "G7Tfo59YVwcDW2O5CBrmoN",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:53Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 84,
+   "spendingPerCapita": 76,
+   "workforceGaps": 32
+  },
+  "narrativeSummary": "Kentucky faces severe chronic disease burdens amplified by rural access gaps. The PoWERing Maternal Health initiative's full year of postpartum support and community diabetes hubs are high-priority interventions in one of the nation's most health-distressed states.",
+  "narrativeTitle": "Maternal Health and Diabetes Disparities Driving Reform",
+  "performanceScore": 38,
+  "policyMetrics": {
+   "scopeOfPractice": 40,
+   "telehealth": 45,
+   "vbpAdoption": 36
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "kentucky"
+  },
+  "stateName": "Kentucky",
+  "status": "At Risk",
+  "technologyMetrics": {
+   "broadbandAccess": 38,
+   "ehrAdoption": 65,
+   "hieAdoption": 52
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:51Z",
+  "_id": "perfIndex-louisiana",
+  "_rev": "G7Tfo59YVwcDW2O5CBrmZh",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:51Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 74,
+   "spendingPerCapita": 76,
+   "workforceGaps": 30
+  },
+  "narrativeSummary": "Louisiana's RHT strategy treats smartphone access and digital literacy as a prerequisite for all other health system improvements. Paired with clinician tax-credit incentives, it aims to address both supply-side workforce gaps and demand-side access barriers.",
+  "narrativeTitle": "Digital Equity as the Foundation for Health Transformation",
+  "performanceScore": 33,
+  "policyMetrics": {
+   "scopeOfPractice": 36,
+   "telehealth": 42,
+   "vbpAdoption": 32
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "louisiana"
+  },
+  "stateName": "Louisiana",
+  "status": "At Risk",
+  "technologyMetrics": {
+   "broadbandAccess": 38,
+   "ehrAdoption": 62,
+   "hieAdoption": 50
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:33Z",
+  "_id": "perfIndex-maine",
+  "_rev": "G7Tfo59YVwcDW2O5CBrlhV",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:33Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 88,
+   "spendingPerCapita": 72,
+   "workforceGaps": 60
+  },
+  "narrativeSummary": "Maine's aging, geographically dispersed population places significant pressure on its rural hospital network. Investment in AI-driven rural hubs and expanded paramedicine aims to close critical access gaps.",
+  "narrativeTitle": "AI Innovation Bridging a Dispersed Population",
+  "performanceScore": 69,
+  "policyMetrics": {
+   "scopeOfPractice": 70,
+   "telehealth": 72,
+   "vbpAdoption": 65
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "maine"
+  },
+  "stateName": "Maine",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 62,
+   "ehrAdoption": 85,
+   "hieAdoption": 74
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:42Z",
+  "_id": "perfIndex-maryland",
+  "_rev": "u6HIGXCWiHyy7dtg52FCZb",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-10-08T01:48:33Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 91,
+   "spendingPerCapita": 70,
+   "workforceGaps": 68
+  },
+  "narrativeSummary": "Maryland’s all-payer hospital global budget system is a national policy benchmark; after the Total Cost of Care Model ended on December 31, 2025, Maryland entered the CMS AHEAD Model as its Cohort 1 state in January 2026. Its RHT program targets the rural workforce, primary care access, mobile health and food access rather than hospital payment reform.",
+  "narrativeTitle": "All-Payer Global Budgets, Now Under AHEAD",
+  "performanceScore": 75,
+  "policyMetrics": {
+   "scopeOfPractice": 72,
+   "telehealth": 78,
+   "vbpAdoption": 82
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "maryland"
+  },
+  "stateName": "Maryland",
+  "status": "Improving",
+  "technologyMetrics": {
+   "broadbandAccess": 70,
+   "ehrAdoption": 88,
+   "hieAdoption": 80
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:35Z",
+  "_id": "perfIndex-massachusetts",
+  "_rev": "ZDU5b4qioPbFp0EQfvWpcQ",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:35Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 97,
+   "spendingPerCapita": 60,
+   "workforceGaps": 85
+  },
+  "narrativeSummary": "Massachusetts consistently outperforms peers on coverage rates and technology adoption. Its focus on mobile health ROI and real-time behavioral health bed tracking pushes the frontier of system efficiency.",
+  "narrativeTitle": "National Leader with High-Value Technology Focus",
+  "performanceScore": 85,
+  "policyMetrics": {
+   "scopeOfPractice": 82,
+   "telehealth": 90,
+   "vbpAdoption": 88
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "massachusetts"
+  },
+  "stateName": "Massachusetts",
+  "status": "Leading",
+  "technologyMetrics": {
+   "broadbandAccess": 80,
+   "ehrAdoption": 95,
+   "hieAdoption": 92
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:58Z",
+  "_id": "perfIndex-michigan",
+  "_rev": "ZDU5b4qioPbFp0EQfvWtpa",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:58Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 90,
+   "spendingPerCapita": 68,
+   "workforceGaps": 58
+  },
+  "narrativeSummary": "Michigan's Upper Peninsula faces acute workforce shortages and a rapidly aging population. High school-to-healthcare pipelines and a community-based aging blueprint aim to build a sustainable local workforce for a geographically isolated region.",
+  "narrativeTitle": "Upper Peninsula Aging-in-Place as the Defining Rural Challenge",
+  "performanceScore": 66,
+  "policyMetrics": {
+   "scopeOfPractice": 65,
+   "telehealth": 70,
+   "vbpAdoption": 65
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "michigan"
+  },
+  "stateName": "Michigan",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 62,
+   "ehrAdoption": 82,
+   "hieAdoption": 72
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:02Z",
+  "_id": "perfIndex-minnesota",
+  "_rev": "ZDU5b4qioPbFp0EQfvWuNe",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:02Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 92,
+   "spendingPerCapita": 65,
+   "workforceGaps": 75
+  },
+  "narrativeSummary": "Minnesota's strong health system foundation is being extended through Mental Health Urgent Care centers designed to divert crisis patients from emergency departments, while regional cardiometabolic collaboratives address the state's most prevalent chronic diseases.",
+  "narrativeTitle": "Mental Health Urgent Care Reducing Crisis-Driven ED Load",
+  "performanceScore": 80,
+  "policyMetrics": {
+   "scopeOfPractice": 78,
+   "telehealth": 84,
+   "vbpAdoption": 82
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "minnesota"
+  },
+  "stateName": "Minnesota",
+  "status": "Improving",
+  "technologyMetrics": {
+   "broadbandAccess": 74,
+   "ehrAdoption": 90,
+   "hieAdoption": 85
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:50Z",
+  "_id": "perfIndex-mississippi",
+  "_rev": "ZDU5b4qioPbFp0EQfvWsJu",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:50Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 58,
+   "spendingPerCapita": 80,
+   "workforceGaps": 35
+  },
+  "narrativeSummary": "Mississippi faces critical challenges, particularly in its healthcare workforce supply and low rates of broadband access, which hinder technology-driven transformation efforts. The CRIS regional district model is its most ambitious structural reform.",
+  "narrativeTitle": "Significant Headwinds in Workforce and Access",
+  "performanceScore": 48,
+  "policyMetrics": {
+   "scopeOfPractice": 50,
+   "telehealth": 55,
+   "vbpAdoption": 40
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "mississippi"
+  },
+  "stateName": "Mississippi",
+  "status": "At Risk",
+  "technologyMetrics": {
+   "broadbandAccess": 45,
+   "ehrAdoption": 70,
+   "hieAdoption": 60
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:04Z",
+  "_id": "perfIndex-missouri",
+  "_rev": "ZDU5b4qioPbFp0EQfvWuq2",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:04Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 75,
+   "spendingPerCapita": 72,
+   "workforceGaps": 44
+  },
+  "narrativeSummary": "Missouri's Transformation of Rural Community Health (ToRCH) model creates hub-and-spoke networks that integrate fragmented rural providers. An alternative payment model incentivizing ED reduction completes a dual-track transformation strategy.",
+  "narrativeTitle": "ToRCH Networks Building Hub-and-Spoke Integration",
+  "performanceScore": 49,
+  "policyMetrics": {
+   "scopeOfPractice": 50,
+   "telehealth": 55,
+   "vbpAdoption": 48
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "missouri"
+  },
+  "stateName": "Missouri",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 48,
+   "ehrAdoption": 70,
+   "hieAdoption": 60
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:15Z",
+  "_id": "perfIndex-montana",
+  "_rev": "ZDU5b4qioPbFp0EQfvWvwA",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:15Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 80,
+   "spendingPerCapita": 68,
+   "workforceGaps": 48
+  },
+  "narrativeSummary": "Montana's 'Rural Center of Excellence' takes a centralized oversight approach to a highly fragmented frontier health system, coordinating restructuring efforts and pharmacist scope expansion to address the state's negative-margin hospital crisis.",
+  "narrativeTitle": "Center of Excellence Driving Structural Restructuring",
+  "performanceScore": 54,
+  "policyMetrics": {
+   "scopeOfPractice": 56,
+   "telehealth": 58,
+   "vbpAdoption": 50
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "montana"
+  },
+  "stateName": "Montana",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 52,
+   "ehrAdoption": 72,
+   "hieAdoption": 60
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:06Z",
+  "_id": "perfIndex-nebraska",
+  "_rev": "ZDU5b4qioPbFp0EQfvWvCk",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:06Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 84,
+   "spendingPerCapita": 66,
+   "workforceGaps": 62
+  },
+  "narrativeSummary": "Nebraska's School Food Learning Labs connect agricultural identity with preventive health, while VR/AR clinical training offers a scalable solution to rural provider education gaps in a state where simulation centers are prohibitively distant.",
+  "narrativeTitle": "Farm-to-School and VR Training Reflecting Rural Innovation",
+  "performanceScore": 68,
+  "policyMetrics": {
+   "scopeOfPractice": 66,
+   "telehealth": 68,
+   "vbpAdoption": 65
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "nebraska"
+  },
+  "stateName": "Nebraska",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 62,
+   "ehrAdoption": 80,
+   "hieAdoption": 72
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:19Z",
+  "_id": "perfIndex-nevada",
+  "_rev": "G7Tfo59YVwcDW2O5CBroT7",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:19Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 72,
+   "spendingPerCapita": 68,
+   "workforceGaps": 48
+  },
+  "narrativeSummary": "Nevada's $30M Outcomes Accelerator and $80M rural provider incentive package represent a significant financial commitment to rebuilding a rural workforce that has been chronically underpowered relative to the state's growing rural population.",
+  "narrativeTitle": "Accelerator Investment and Provider Incentives Rebuilding Workforce",
+  "performanceScore": 56,
+  "policyMetrics": {
+   "scopeOfPractice": 58,
+   "telehealth": 62,
+   "vbpAdoption": 54
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "nevada"
+  },
+  "stateName": "Nevada",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 55,
+   "ehrAdoption": 72,
+   "hieAdoption": 62
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:34Z",
+  "_id": "perfIndex-new_hampshire",
+  "_rev": "GIKqHwCOFsUvADyibzl9f3",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:34Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 88,
+   "spendingPerCapita": 68,
+   "workforceGaps": 58
+  },
+  "narrativeSummary": "New Hampshire's RHT strategy targets high-risk senior populations through pharmacy transformation and prevention-first access points, reflecting a proactive approach to its opioid and chronic disease burden.",
+  "narrativeTitle": "Addressing Polypharmacy and Prevention Gaps",
+  "performanceScore": 65,
+  "policyMetrics": {
+   "scopeOfPractice": 72,
+   "telehealth": 68,
+   "vbpAdoption": 62
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "new_hampshire"
+  },
+  "stateName": "New Hampshire",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 65,
+   "ehrAdoption": 82,
+   "hieAdoption": 70
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:40Z",
+  "_id": "perfIndex-new_jersey",
+  "_rev": "G7Tfo59YVwcDW2O5CBrmAr",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:40Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 90,
+   "spendingPerCapita": 62,
+   "workforceGaps": 70
+  },
+  "narrativeSummary": "New Jersey's CCBHC transition strategy addresses a fragmented mental health system, while public telehealth access points aim to close equity gaps for low-income rural residents.",
+  "narrativeTitle": "Behavioral Health System Modernization Underway",
+  "performanceScore": 73,
+  "policyMetrics": {
+   "scopeOfPractice": 74,
+   "telehealth": 76,
+   "vbpAdoption": 72
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "new_jersey"
+  },
+  "stateName": "New Jersey",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 75,
+   "ehrAdoption": 88,
+   "hieAdoption": 78
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:21Z",
+  "_id": "perfIndex-new_mexico",
+  "_rev": "GIKqHwCOFsUvADyibzlIhu",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:21Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 76,
+   "spendingPerCapita": 74,
+   "workforceGaps": 40
+  },
+  "narrativeSummary": "New Mexico's Healthy Horizons specialty network addresses one of the most acute specialty access crises in the West, while its Rooted in New Mexico workforce housing and mentorship program targets the root cause of persistent rural clinician vacancy.",
+  "narrativeTitle": "Specialty Deserts and Workforce Instability Drive Urgent Reform",
+  "performanceScore": 48,
+  "policyMetrics": {
+   "scopeOfPractice": 52,
+   "telehealth": 55,
+   "vbpAdoption": 46
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "new_mexico"
+  },
+  "stateName": "New Mexico",
+  "status": "At Risk",
+  "technologyMetrics": {
+   "broadbandAccess": 44,
+   "ehrAdoption": 68,
+   "hieAdoption": 58
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:38Z",
+  "_id": "perfIndex-new_york",
+  "_rev": "G7Tfo59YVwcDW2O5CBrlzZ",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:38Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 92,
+   "spendingPerCapita": 55,
+   "workforceGaps": 68
+  },
+  "narrativeSummary": "New York's 'Rural Roots' model directly confronts obstetric care deserts in its vast non-metropolitan regions. The statewide eConsult platform is among the most ambitious specialty access initiatives in the country.",
+  "narrativeTitle": "Addressing Maternal Deserts Through Workforce Reform",
+  "performanceScore": 72,
+  "policyMetrics": {
+   "scopeOfPractice": 70,
+   "telehealth": 76,
+   "vbpAdoption": 74
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "new_york"
+  },
+  "stateName": "New York",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 68,
+   "ehrAdoption": 88,
+   "hieAdoption": 80
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:46Z",
+  "_id": "perfIndex-north_carolina",
+  "_rev": "ZDU5b4qioPbFp0EQfvWruM",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:46Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 72,
+   "spendingPerCapita": 70,
+   "workforceGaps": 50
+  },
+  "narrativeSummary": "North Carolina's 6 ROOTS regional hubs aim to break down siloes between medical, social, and behavioral services. Mobile opioid treatment units address the state's persistent SUD crisis in rural counties.",
+  "narrativeTitle": "ROOTS Hubs Building Regional Integration Capacity",
+  "performanceScore": 57,
+  "policyMetrics": {
+   "scopeOfPractice": 58,
+   "telehealth": 62,
+   "vbpAdoption": 56
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "north_carolina"
+  },
+  "stateName": "North Carolina",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 52,
+   "ehrAdoption": 75,
+   "hieAdoption": 65
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:07Z",
+  "_id": "perfIndex-north_dakota",
+  "_rev": "G7Tfo59YVwcDW2O5CBrnhh",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:07Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 84,
+   "spendingPerCapita": 64,
+   "workforceGaps": 62
+  },
+  "narrativeSummary": "North Dakota's frontier geography makes conventional access models economically unviable. Automated pharmacy kiosks and drone delivery of lab samples and supplies represent genuinely novel solutions to last-mile healthcare logistics.",
+  "narrativeTitle": "Frontier Logistics Innovation Through Drones and Kiosks",
+  "performanceScore": 67,
+  "policyMetrics": {
+   "scopeOfPractice": 64,
+   "telehealth": 70,
+   "vbpAdoption": 62
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "north_dakota"
+  },
+  "stateName": "North Dakota",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 65,
+   "ehrAdoption": 80,
+   "hieAdoption": 70
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:57Z",
+  "_id": "perfIndex-ohio",
+  "_rev": "ZDU5b4qioPbFp0EQfvWth4",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:57Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 84,
+   "spendingPerCapita": 70,
+   "workforceGaps": 52
+  },
+  "narrativeSummary": "Ohio's OH SEE mobile screening program and school-based health center expansion directly address pediatric access gaps in rural communities, building a preventive foundation that reduces downstream acute care costs.",
+  "narrativeTitle": "School-Based Health Anchoring Pediatric Access Strategy",
+  "performanceScore": 58,
+  "policyMetrics": {
+   "scopeOfPractice": 60,
+   "telehealth": 62,
+   "vbpAdoption": 58
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "ohio"
+  },
+  "stateName": "Ohio",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 58,
+   "ehrAdoption": 78,
+   "hieAdoption": 68
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:56Z",
+  "_id": "perfIndex-oklahoma",
+  "_rev": "ZDU5b4qioPbFp0EQfvWtSs",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:56Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 60,
+   "spendingPerCapita": 72,
+   "workforceGaps": 32
+  },
+  "narrativeSummary": "Oklahoma's Moving Upstream program deploys consumer-facing technology for remote monitoring, while wellness microgrants empower local health departments to launch county-specific prevention programs in a state with high uninsured rates and critical chronic disease burden.",
+  "narrativeTitle": "Microgrants and Consumer Tech Targeting Prevention at Scale",
+  "performanceScore": 36,
+  "policyMetrics": {
+   "scopeOfPractice": 38,
+   "telehealth": 44,
+   "vbpAdoption": 34
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "oklahoma"
+  },
+  "stateName": "Oklahoma",
+  "status": "At Risk",
+  "technologyMetrics": {
+   "broadbandAccess": 38,
+   "ehrAdoption": 62,
+   "hieAdoption": 50
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:12Z",
+  "_id": "perfIndex-oregon",
+  "_rev": "G7Tfo59YVwcDW2O5CBrnyd",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:12Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 88,
+   "spendingPerCapita": 66,
+   "workforceGaps": 66
+  },
+  "narrativeSummary": "Oregon's rural-urban provider exchange program builds cross-sectoral clinical knowledge while expanding pharmacy locker infrastructure addresses the medication access gap that affects a disproportionate share of rural residents.",
+  "narrativeTitle": "Provider Exchange and Pharmacy Access as Dual Levers",
+  "performanceScore": 70,
+  "policyMetrics": {
+   "scopeOfPractice": 74,
+   "telehealth": 76,
+   "vbpAdoption": 72
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "oregon"
+  },
+  "stateName": "Oregon",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 65,
+   "ehrAdoption": 82,
+   "hieAdoption": 76
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:39Z",
+  "_id": "perfIndex-pennsylvania",
+  "_rev": "ZDU5b4qioPbFp0EQfvWqXC",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:39Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 90,
+   "spendingPerCapita": 70,
+   "workforceGaps": 65
+  },
+  "narrativeSummary": "Pennsylvania's 8-hub regional architecture provides critical IT and workflow support to small rural providers, accelerating VBC adoption in a state with a large and dispersed rural hospital network.",
+  "narrativeTitle": "Regional Hub Model Anchoring Value-Based Transition",
+  "performanceScore": 69,
+  "policyMetrics": {
+   "scopeOfPractice": 66,
+   "telehealth": 72,
+   "vbpAdoption": 68
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "pennsylvania"
+  },
+  "stateName": "Pennsylvania",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 66,
+   "ehrAdoption": 84,
+   "hieAdoption": 75
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:37Z",
+  "_id": "perfIndex-rhode_island",
+  "_rev": "GIKqHwCOFsUvADyibzlALC",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:37Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 94,
+   "spendingPerCapita": 70,
+   "workforceGaps": 74
+  },
+  "narrativeSummary": "Rhode Island's compact geography masks significant equity gaps for Block Island and Narragansett communities. Its Hospital-at-Home initiative offers a scalable model for acute care outside traditional facilities.",
+  "narrativeTitle": "Island and Tribal Access as Unique Infrastructure Challenge",
+  "performanceScore": 77,
+  "policyMetrics": {
+   "scopeOfPractice": 74,
+   "telehealth": 78,
+   "vbpAdoption": 76
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "rhode_island"
+  },
+  "stateName": "Rhode Island",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 74,
+   "ehrAdoption": 86,
+   "hieAdoption": 80
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:54Z",
+  "_id": "perfIndex-south_carolina",
+  "_rev": "GIKqHwCOFsUvADyibzlDjv",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:54Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 73,
+   "spendingPerCapita": 72,
+   "workforceGaps": 40
+  },
+  "narrativeSummary": "South Carolina's Connections to Care digital literacy program recognizes that technology adoption cannot precede technology fluency. Its Tech Catalyst Fund supports homegrown rural health startups as a longer-term system innovation strategy.",
+  "narrativeTitle": "Digital Literacy as the Entry Point for Rural Transformation",
+  "performanceScore": 45,
+  "policyMetrics": {
+   "scopeOfPractice": 46,
+   "telehealth": 52,
+   "vbpAdoption": 44
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "south_carolina"
+  },
+  "stateName": "South Carolina",
+  "status": "At Risk",
+  "technologyMetrics": {
+   "broadbandAccess": 42,
+   "ehrAdoption": 65,
+   "hieAdoption": 55
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:09Z",
+  "_id": "perfIndex-south_dakota",
+  "_rev": "G7Tfo59YVwcDW2O5CBrnoT",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:09Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 78,
+   "spendingPerCapita": 62,
+   "workforceGaps": 60
+  },
+  "narrativeSummary": "South Dakota's capitated Medicaid primary care model offers rural practices the financial stability needed to invest in quality improvement, while Regional Maternal/Infant Hubs address a persistent obstetric access gap.",
+  "narrativeTitle": "Capitated Medicaid and Maternal Hubs Reorienting Rural Care",
+  "performanceScore": 64,
+  "policyMetrics": {
+   "scopeOfPractice": 62,
+   "telehealth": 66,
+   "vbpAdoption": 60
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "south_dakota"
+  },
+  "stateName": "South Dakota",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 60,
+   "ehrAdoption": 78,
+   "hieAdoption": 68
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:52Z",
+  "_id": "perfIndex-tennessee",
+  "_rev": "GIKqHwCOFsUvADyibzlDDV",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:52Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 72,
+   "spendingPerCapita": 74,
+   "workforceGaps": 36
+  },
+  "narrativeSummary": "Tennessee's hub-and-spoke dementia care network addresses a rapidly growing elderly population in rural counties, while its NEMT system tackles the transportation barriers that prevent patients from accessing any care at all.",
+  "narrativeTitle": "Memory Care and Transportation Barriers Defining Rural Gaps",
+  "performanceScore": 43,
+  "policyMetrics": {
+   "scopeOfPractice": 44,
+   "telehealth": 50,
+   "vbpAdoption": 42
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "tennessee"
+  },
+  "stateName": "Tennessee",
+  "status": "At Risk",
+  "technologyMetrics": {
+   "broadbandAccess": 42,
+   "ehrAdoption": 65,
+   "hieAdoption": 55
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:43Z",
+  "_id": "perfIndex-texas",
+  "_rev": "GIKqHwCOFsUvADyibzlBB4",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:43Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 62,
+   "spendingPerCapita": 68,
+   "workforceGaps": 50
+  },
+  "narrativeSummary": "Texas faces significant challenges in workforce distribution and insurance coverage across its vast rural areas. However, recent investments in its Lone Star AI telehealth network and community wellness infrastructure show significant promise.",
+  "narrativeTitle": "Addressing Scale and Disparity",
+  "performanceScore": 65,
+  "policyMetrics": {
+   "scopeOfPractice": 60,
+   "telehealth": 70,
+   "vbpAdoption": 55
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "texas"
+  },
+  "stateName": "Texas",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 65,
+   "ehrAdoption": 80,
+   "hieAdoption": 75
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:18Z",
+  "_id": "perfIndex-utah",
+  "_rev": "G7Tfo59YVwcDW2O5CBroML",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:18Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 80,
+   "spendingPerCapita": 60,
+   "workforceGaps": 74
+  },
+  "narrativeSummary": "Utah's PATH initiative takes a population health approach to chronic disease prevention through built environment intervention, while the SUPPORT AI toolkit reduces the administrative burden that drives rural provider burnout and turnover.",
+  "narrativeTitle": "Built Environment and AI Admin Tools Reducing System Friction",
+  "performanceScore": 78,
+  "policyMetrics": {
+   "scopeOfPractice": 78,
+   "telehealth": 80,
+   "vbpAdoption": 76
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "utah"
+  },
+  "stateName": "Utah",
+  "status": "Improving",
+  "technologyMetrics": {
+   "broadbandAccess": 74,
+   "ehrAdoption": 88,
+   "hieAdoption": 82
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:31Z",
+  "_id": "perfIndex-vermont",
+  "_rev": "RuQtBt74suCKw0XbcOZoCY",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-10-07T20:25:42Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 95,
+   "spendingPerCapita": 75,
+   "workforceGaps": 80
+  },
+  "narrativeSummary": "Vermont ran the nation's only all-payer ACO model (2017–2025) and signed the CMS AHEAD agreement in January 2025 before withdrawing in July 2026; its reform now continues under Act 68 hospital global budgets and reference-based pricing. Rural broadband access remains a key challenge for telehealth expansion.",
+  "narrativeTitle": "Pioneering State-Wide Value Models",
+  "performanceScore": 82,
+  "policyMetrics": {
+   "scopeOfPractice": 78,
+   "telehealth": 85,
+   "vbpAdoption": 90
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "vermont"
+  },
+  "stateName": "Vermont",
+  "status": "Leading",
+  "technologyMetrics": {
+   "broadbandAccess": 70,
+   "ehrAdoption": 92,
+   "hieAdoption": 88
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:47Z",
+  "_id": "perfIndex-virginia",
+  "_rev": "GIKqHwCOFsUvADyibzlCDu",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:47Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 86,
+   "spendingPerCapita": 68,
+   "workforceGaps": 62
+  },
+  "narrativeSummary": "Virginia's CareIQ initiative takes a startup-investment approach to health system innovation, complemented by produce prescription programs that address food insecurity as a driver of chronic disease.",
+  "narrativeTitle": "Tech Investment and Food-as-Medicine Defining Reform",
+  "performanceScore": 68,
+  "policyMetrics": {
+   "scopeOfPractice": 68,
+   "telehealth": 72,
+   "vbpAdoption": 66
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "virginia"
+  },
+  "stateName": "Virginia",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 64,
+   "ehrAdoption": 82,
+   "hieAdoption": 74
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:11Z",
+  "_id": "perfIndex-washington",
+  "_rev": "ZDU5b4qioPbFp0EQfvWvhy",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:11Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 88,
+   "spendingPerCapita": 64,
+   "workforceGaps": 70
+  },
+  "narrativeSummary": "Washington's Ignite Innovation program pairs financial sustainability modeling with dedicated Tribal health workforce investment, reflecting the state's dual obligation to rural hospital solvency and Native community health equity.",
+  "narrativeTitle": "Tribal Health Investment and Value-Based Hospital Solvency",
+  "performanceScore": 75,
+  "policyMetrics": {
+   "scopeOfPractice": 76,
+   "telehealth": 80,
+   "vbpAdoption": 76
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "washington"
+  },
+  "stateName": "Washington",
+  "status": "Improving",
+  "technologyMetrics": {
+   "broadbandAccess": 72,
+   "ehrAdoption": 88,
+   "hieAdoption": 80
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:55:48Z",
+  "_id": "perfIndex-west_virginia",
+  "_rev": "GIKqHwCOFsUvADyibzlCab",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:55:48Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 82,
+   "spendingPerCapita": 82,
+   "workforceGaps": 28
+  },
+  "narrativeSummary": "West Virginia carries the nation's most acute opioid burden alongside pervasive rural hospital financial distress. Recovery community networks, CAH shared service collaboratives, and primary care prospective payment are the three pillars of its transformation strategy.",
+  "narrativeTitle": "SUD Crisis and Hospital Distress Demand Systemic Response",
+  "performanceScore": 31,
+  "policyMetrics": {
+   "scopeOfPractice": 38,
+   "telehealth": 42,
+   "vbpAdoption": 30
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "west_virginia"
+  },
+  "stateName": "West Virginia",
+  "status": "At Risk",
+  "technologyMetrics": {
+   "broadbandAccess": 35,
+   "ehrAdoption": 62,
+   "hieAdoption": 48
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:01Z",
+  "_id": "perfIndex-wisconsin",
+  "_rev": "GIKqHwCOFsUvADyibzlFZO",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:01Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 88,
+   "spendingPerCapita": 68,
+   "workforceGaps": 65
+  },
+  "narrativeSummary": "Wisconsin's farmer wellness helpline and rural dental grant programs reflect the distinct health challenges of an agricultural workforce. Mental health and oral health gaps in farm communities are often invisible in national data but significant in rural Wisconsin.",
+  "narrativeTitle": "Agricultural Community Health as a Unique Focus",
+  "performanceScore": 70,
+  "policyMetrics": {
+   "scopeOfPractice": 70,
+   "telehealth": 72,
+   "vbpAdoption": 68
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "wisconsin"
+  },
+  "stateName": "Wisconsin",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 68,
+   "ehrAdoption": 84,
+   "hieAdoption": 75
+  }
+ },
+ {
+  "_createdAt": "2026-03-10T13:56:16Z",
+  "_id": "perfIndex-wyoming",
+  "_rev": "ZDU5b4qioPbFp0EQfvWwAM",
+  "_type": "statePerformanceIndex",
+  "_updatedAt": "2026-03-10T13:56:16Z",
+  "economicsMetrics": {
+   "insuranceCoverage": 76,
+   "spendingPerCapita": 66,
+   "workforceGaps": 46
+  },
+  "narrativeSummary": "Wyoming's CAH Basic Incentive program encourages Critical Access Hospitals to concentrate on ED and ambulance services, reducing unsustainable service sprawl. Statewide telepsychiatry addresses mental health access in one of the nation's most sparsely populated states.",
+  "narrativeTitle": "CAH Refocusing and Telepsychiatry Addressing Frontier Realities",
+  "performanceScore": 51,
+  "policyMetrics": {
+   "scopeOfPractice": 54,
+   "telehealth": 56,
+   "vbpAdoption": 48
+  },
+  "stateId": {
+   "_type": "slug",
+   "current": "wyoming"
+  },
+  "stateName": "Wyoming",
+  "status": "Stable",
+  "technologyMetrics": {
+   "broadbandAccess": 50,
+   "ehrAdoption": 70,
+   "hieAdoption": 58
+  }
+ }
+]

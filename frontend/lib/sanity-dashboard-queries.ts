@@ -1,14 +1,13 @@
 /**
  * lib/sanity-dashboard-queries.ts
  *
- * GROQ queries for rhtState and statePerformanceIndex documents.
+ * GROQ queries for rhtState documents.
  * Projections are shaped to match the existing TypeScript types so
  * consuming components need no changes.
  */
 
 import { client } from "./sanity";
 import type { RHTProfile } from "./data/rht-program";
-import type { PerformanceIndexProfile } from "./data/performance-index-data";
 
 // ── RHT State ─────────────────────────────────────────────────────────────────
 
@@ -36,64 +35,3 @@ export async function getAllRhtStates(): Promise<Record<string, RHTProfile>> {
   );
   return Object.fromEntries(docs.map((d) => [d.id, d]));
 }
-
-// ── Performance Index ─────────────────────────────────────────────────────────
-
-const PERF_FIELDS = `
-  "id": stateId.current,
-  stateName,
-  performanceScore,
-  status,
-  "metrics": {
-    "policy": {
-      "vbpAdoption":      policyMetrics.vbpAdoption,
-      "telehealth":       policyMetrics.telehealth,
-      "scopeOfPractice":  policyMetrics.scopeOfPractice
-    },
-    "economics": {
-      "spendingPerCapita":  economicsMetrics.spendingPerCapita,
-      "insuranceCoverage":  economicsMetrics.insuranceCoverage
-    },
-    "technology": {
-      "hieAdoption":     technologyMetrics.hieAdoption,
-      "broadbandAccess": technologyMetrics.broadbandAccess,
-      "ehrAdoption":     technologyMetrics.ehrAdoption
-    },
-    "clinical": {
-      "preventiveCare":         coalesce(clinicalMetrics.preventiveCare, 0),
-      "readmissionRate":        coalesce(clinicalMetrics.readmissionRate, 0),
-      "chronicDiseaseControl":  coalesce(clinicalMetrics.chronicDiseaseControl, 0)
-    },
-    "operations": {
-      "workforceGaps":     coalesce(operationsMetrics.workforceGaps, economicsMetrics.workforceGaps, 0)
-    }
-  },
-  "equityImperative": {
-    "racialEquityGap":   coalesce(equityMetrics.racialEquityGap, 0),
-    "ruralUrbanGap":     coalesce(equityMetrics.ruralUrbanGap, 0),
-    "sdohIntegration":   coalesce(equityMetrics.sdohIntegration, 0)
-  },
-  "narrative": {
-    "title":   narrativeTitle,
-    "summary": narrativeSummary
-  }
-`;
-
-export async function getPerformanceIndex(
-  stateId: string
-): Promise<PerformanceIndexProfile | null> {
-  return client.fetch(
-    `*[_type == "statePerformanceIndex" && stateId.current == $stateId][0]{ ${PERF_FIELDS} }`,
-    { stateId }
-  );
-}
-
-export async function getAllPerformanceIndexes(): Promise<
-  Record<string, PerformanceIndexProfile>
-> {
-  const docs: PerformanceIndexProfile[] = await client.fetch(
-    `*[_type == "statePerformanceIndex"] | order(stateName asc) { ${PERF_FIELDS} }`
-  );
-  return Object.fromEntries(docs.map((d) => [d.id, d]));
-}
-

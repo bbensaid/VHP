@@ -186,31 +186,7 @@ export default function HTIDashboard() {
   // ── Real data from Supabase (overlays on trend chart) ──
   const [realScores, setRealScores] = useState<Record<string, QuarterlySnapshot[]>>({});
 
-  useEffect(() => {
-    fetch("/api/hti-scores")
-      .then(r => r.json())
-      .then(json => {
-        if (!json.scores?.length) return;
-        // Group rows by state_id and convert to QuarterlySnapshot format
-        const grouped: Record<string, QuarterlySnapshot[]> = {};
-        for (const row of json.scores) {
-          const sid = row.state_id as string;
-          if (!grouped[sid]) grouped[sid] = [];
-          grouped[sid].push({
-            quarter:    row.quarter,
-            composite:  row.composite ?? calcComposite({ digital: row.digital ?? 0, vbc: row.vbc ?? 0, equity: row.equity ?? 0, outcomes: row.outcomes ?? 0, experience: row.experience ?? 0, workforce: row.workforce ?? 0 }),
-            digital:    row.digital    ?? 0,
-            vbc:        row.vbc        ?? 0,
-            equity:     row.equity     ?? 0,
-            outcomes:   row.outcomes   ?? 0,
-            experience: row.experience ?? 0,
-            workforce:  row.workforce  ?? 0,
-          });
-        }
-        setRealScores(grouped);
-      })
-      .catch(() => {/* silent — static data remains active */});
-  }, []);
+
 
   const composite = useMemo(() => calcComposite(metrics), [metrics]);
 
