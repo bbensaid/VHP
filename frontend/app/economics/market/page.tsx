@@ -1,3 +1,4 @@
+import Link from "next/link";
 import CategoryPage from "@/components/CategoryPage";
 
 export const metadata = {
@@ -27,108 +28,10 @@ function MarketFinanceHero() {
 function MarketFinanceBody() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-0 pb-12">
-      {/* Hospital Financial Stress Test */}
-      <div className="bg-white rounded-2xl border border-slate-200 p-8 mb-10">
-        <div className="flex items-center gap-3 mb-6">
-          <span className="text-2xl">🏥</span>
-          <div>
-            <h2 className="ty-h3 font-bold text-slate-900">Hospital Financial Health Benchmarks</h2>
-            <p className="text-sm text-slate-500">Key ratios used by bond rating agencies and analysts to assess financial stability</p>
-          </div>
-        </div>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-slate-200">
-                <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">Metric</th>
-                <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">Strong (A/AA rated)</th>
-                <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">Adequate (BBB rated)</th>
-                <th className="text-left py-2 pr-4 text-xs font-bold uppercase tracking-wider text-slate-500">Distressed</th>
-                <th className="text-left py-2 text-xs font-bold uppercase tracking-wider text-slate-500">National Median (2024)</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-100">
-              {[
-                { metric: "Operating Margin", strong: ">5%", adequate: "1–3%", distressed: "<0%", national: "1.8%" },
-                { metric: "Days Cash on Hand", strong: ">250 days", adequate: "100–200 days", distressed: "<80 days", national: "182 days" },
-                { metric: "Debt-to-Capitalization", strong: "<35%", adequate: "35–55%", distressed: ">65%", national: "43%" },
-                { metric: "Debt Service Coverage", strong: ">4.0×", adequate: "2.0–3.5×", distressed: "<1.5×", national: "3.1×" },
-                { metric: "Days in Accounts Receivable", strong: "<35 days", adequate: "35–50 days", distressed: ">60 days", national: "48 days" },
-                { metric: "Labor Cost as % NPR", strong: "<48%", adequate: "50–55%", distressed: ">60%", national: "57%" },
-                { metric: "Uncompensated Care %", strong: "<4%", adequate: "4–7%", distressed: ">10%", national: "5.2%" },
-              ].map((row) => (
-                <tr key={row.metric} className="hover:bg-slate-50">
-                  <td className="py-3 pr-4 font-semibold text-slate-800">{row.metric}</td>
-                  <td className="py-3 pr-4 text-emerald-700 font-medium text-xs">{row.strong}</td>
-                  <td className="py-3 pr-4 text-amber-700 font-medium text-xs">{row.adequate}</td>
-                  <td className="py-3 pr-4 text-rose-600 font-medium text-xs">{row.distressed}</td>
-                  <td className="py-3 text-slate-700 font-bold text-xs">{row.national}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <p className="text-xs text-slate-400 mt-4">Sources: Kaufman Hall National Hospital Flash Report, Moody&apos;s NFP Health System Rating Methodology, CMS Cost Reports. NPR = Net Patient Revenue.</p>
-      </div>
-
-      {/* M&A Deal Flow + PE Activity */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-        <div className="bg-white rounded-2xl border border-slate-200 p-6">
-          <h3 className="font-bold text-slate-900 mb-1">Hospital M&A Deal Activity</h3>
-          <p className="text-sm text-slate-500 mb-5">Annual announced transactions by acquirer type</p>
-          <div className="space-y-4">
-            {[
-              { year: "2021", strategic: 68, pe: 22, total: 90, color: "bg-emerald-500" },
-              { year: "2022", strategic: 71, pe: 18, total: 89, color: "bg-emerald-500" },
-              { year: "2023", strategic: 74, pe: 12, total: 86, color: "bg-emerald-500" },
-              { year: "2024 (proj)", strategic: 78, pe: 15, total: 93, color: "bg-emerald-400" },
-            ].map((row) => (
-              <div key={row.year}>
-                <div className="flex justify-between text-sm font-semibold text-slate-700 mb-1">
-                  <span>{row.year}</span>
-                  <span>{row.total} deals</span>
-                </div>
-                <div className="flex h-3 rounded-full overflow-hidden">
-                  <div className="bg-emerald-500 h-full" style={{ width: `${(row.strategic / row.total) * 100}%` }} />
-                  <div className="bg-indigo-400 h-full" style={{ width: `${(row.pe / row.total) * 100}%` }} />
-                </div>
-                <div className="flex gap-4 text-xs text-slate-400 mt-1">
-                  <span className="flex items-center gap-1"><span className="w-2 h-2 bg-emerald-500 rounded-full inline-block" />{row.strategic} strategic</span>
-                  <span className="flex items-center gap-1"><span className="w-2 h-2 bg-indigo-400 rounded-full inline-block" />{row.pe} PE</span>
-                </div>
-              </div>
-            ))}
-          </div>
-          <p className="text-xs text-slate-400 mt-4">Sources: Kaufman Hall M&A Quarterly Reports. PE = Private Equity acquirer. Strategic = health system, payer, or corporate buyer.</p>
-        </div>
-
-        <div className="bg-white rounded-2xl border border-slate-200 p-6">
-          <h3 className="font-bold text-slate-900 mb-1">PE Physician Group Penetration</h3>
-          <p className="text-sm text-slate-500 mb-5">Share of physicians in PE-backed groups by specialty (2024)</p>
-          <div className="space-y-3">
-            {[
-              { specialty: "Dermatology", pct: 52, color: "bg-rose-500" },
-              { specialty: "Gastroenterology", pct: 43, color: "bg-orange-500" },
-              { specialty: "Ophthalmology", pct: 38, color: "bg-amber-500" },
-              { specialty: "Urology", pct: 32, color: "bg-yellow-500" },
-              { specialty: "Radiology", pct: 28, color: "bg-emerald-500" },
-              { specialty: "Orthopedics", pct: 22, color: "bg-sky-500" },
-              { specialty: "Emergency Medicine", pct: 65, color: "bg-rose-600" },
-              { specialty: "Anesthesiology", pct: 55, color: "bg-rose-500" },
-            ].map((row) => (
-              <div key={row.specialty}>
-                <div className="flex justify-between ty-body text-slate-700 mb-1">
-                  <span>{row.specialty}</span>
-                  <span className="font-bold">{row.pct}%</span>
-                </div>
-                <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
-                  <div className={`h-2 ${row.color} rounded-full`} style={{ width: `${row.pct}%` }} />
-                </div>
-              </div>
-            ))}
-          </div>
-          <p className="text-xs text-slate-400 mt-4">Source: Health Affairs, Anaesthesia journal, JAMA studies 2022–2024. EM/Anesthesia includes staffing company PE-ownership (TeamHealth, Envision/NAPA).</p>
-        </div>
+      <div className="bg-white rounded-2xl border border-slate-200 p-6 mb-10 text-sm text-slate-600">
+        For hospital-level financial ratios — margin, days cash, debt service, labor share — run the{" "}
+        <Link href="/research-lab/policy-quality?tab=scorecard" className="text-emerald-700 font-semibold hover:underline">Hospital Financial Stress Test</Link>{" "}
+        on your own audited figures and compare against current rating-agency medians (Moody&apos;s, Fitch, S&amp;P), which change every year.
       </div>
 
       {/* Core Domains */}
@@ -138,47 +41,44 @@ function MarketFinanceBody() {
             icon: "🏦",
             title: "Hospital Financial Health",
             items: [
-              "Operating margin: national median 1.8% (Kaufman Hall 2024); 30%+ hospitals negative margin",
-              "Days Cash on Hand (DCOH): ≥200 days = strong; <100 days = financial distress signal",
-              "Debt-to-capitalization: investment grade threshold ≈ <45%; speculative grade >65%",
-              "Net Patient Revenue (NPR) growth: inflation + volume — target ≥3.5% to maintain margin",
+              "Operating margin: Kaufman Hall's monthly National Hospital Flash Report tracks the national median; rural and safety-net hospitals run well below it",
+              "Days Cash on Hand (DCOH): compare to rating-agency medians for your rating category",
+              "Debt-to-capitalization: a core rating-agency leverage test",
               "Payer mix shift: Medicaid expansion states absorbing formerly uninsured (margin pressure)",
-              "Labor as % of NPR: current national avg 56–60%; pre-COVID target was 45–50%",
+              "Labor as % of net patient revenue: the largest expense line, and the one contract labor inflated after 2020",
             ],
           },
           {
             icon: "🔀",
             title: "Mergers, Acquisitions & Consolidation",
             items: [
-              "Hospital M&A volume: ~75 transactions/year (2020–2023 avg); accelerating post-COVID",
-              "HHI (Herfindahl-Hirschman Index): FTC flags markets >2,500 HHI or +200 delta post-merger",
+              "Hospital M&A volume: Kaufman Hall counted 65 announced transactions in 2023 and 72 in 2024",
+              "HHI (Herfindahl-Hirschman Index): under the 2023 Merger Guidelines, a market above 1,800 with an increase over 100 is presumed anticompetitive",
               "Vertical integration: payer-PCP acquisitions (UHC/Optum, CVS/Oak Street, Amazon/OneMedical)",
-              "PE in physician practices: 50%+ of dermatology, 40%+ GI, 30%+ urology now PE-backed",
-              "Antitrust enforcement: FTC blocked 5 hospital mergers 2022–2024; staffing agency scrutiny",
-              "Post-merger price effects: hospital mergers increase commercial prices 7–20% avg (NBER)",
+              "PE in physician practices: concentrated in specialties such as dermatology, gastroenterology, ophthalmology and anesthesiology",
+              "Antitrust enforcement: FTC challenges hospital mergers in court — e.g., Novant Health/Community Health Systems, abandoned in 2024 after an appeals-court injunction",
+              "Post-merger price effects: mergers of hospitals within 5 miles of each other raised prices by more than 5% (Cooper et al., Quarterly Journal of Economics, 2019)",
             ],
           },
           {
             icon: "💸",
             title: "Private Equity in Healthcare",
             items: [
-              "PE deal volume: $100B+ annually in healthcare services (2021–2023 peak)",
               "Target sectors: physician groups, behavioral health, home care, dental (high fragmentation)",
               "Investment thesis: platform + bolt-on acquisitions, EHR rationalization, payer contracting",
               "Revenue cycle optimization: coding intensity, capture rate improvement = primary value driver",
               "Hold period: 5–7 years typical; exit via strategic sale, IPO, or secondary PE buyout",
-              "Controversy: PE-owned hospitals show 25% increase in adverse outcomes (JAMA 2023)",
+              "Controversy: hospital-acquired adverse events rose 25.4% after private-equity acquisition (Kannan et al., JAMA, 2023)",
             ],
           },
           {
             icon: "📉",
             title: "Payer-Provider Dynamics",
             items: [
-              "Commercial rate negotiation: multi-year contracts (2–5 years), rate escalators 3–6% annually",
-              "Prior authorization burden: 94M PA requests/year (AMA); avg 14.4 hours per physician/week",
+              "Commercial rate negotiation: multi-year contracts with annual escalators",
+              "Prior authorization burden: tracked in the AMA's annual physician survey; CMS-0057-F requires payer prior-auth APIs from January 2027",
               "Surprise billing protections: No Surprises Act (2022) — IDR process, QPA methodology",
-              "Medicare Advantage penetration: 51% of Medicare beneficiaries in MA plans (2024)",
-              "MA payment accuracy: CMS audit recovered $4.7B in improper MA payments (2022–2023)",
+              "Medicare Advantage penetration: 54% of eligible Medicare beneficiaries in 2024 (KFF)",
               "Direct contracting: payer-agnostic bundles, employer coalitions (Pacific Business Group)",
             ],
           },
@@ -186,11 +86,11 @@ function MarketFinanceBody() {
             icon: "📊",
             title: "Capital Markets & Healthcare Finance",
             items: [
-              "Municipal bond market: NFP hospitals borrow at tax-exempt rates (4.5–5.5% 30-year, 2024)",
+              "Municipal bond market: not-for-profit hospitals borrow at tax-exempt rates",
               "Credit rating agencies: Moody's, S&P, Fitch — NFP health system ratings key metrics",
               "Revenue bond structures: Series A/B, LOC-backed, synthetic fixed-rate swaps",
-              "Bank market: revolving credit facilities ($100M–$2B for large systems), TLA/TLB structures",
-              "Digital health VC: $10.7B invested in 2023 (down from $29B peak 2021); AI/RPM leading",
+              "Bank market: revolving credit facilities and term loans for large systems",
+              "Digital health VC: $10.7B in 2023 and $10.1B in 2024, down from $29.1B in 2021 (Rock Health)",
               "Healthcare REIT: Ventas, Welltower — MOB (Medical Office Buildings) vs. LTACH/SNF mix",
             ],
           },
@@ -199,11 +99,11 @@ function MarketFinanceBody() {
             title: "Antitrust & Regulatory",
             items: [
               "FTC Section 5 / DOJ Antitrust: hospital + physician practice merger review",
-              "HSR filing threshold: $119.5M (2024) — most large health system deals require filing",
+              "HSR filing threshold: adjusted each year by the FTC (above $125M in 2025)",
               "Charity care obligations: IRS 501(r) — NFP hospitals must publish community benefit report",
-              "Certificate of Need (CON): 35 states still require CON for major capital investments",
+              "Certificate of Need (CON): about 35 states and DC run some CON program (NCSL)",
               "Price transparency: CMS hospital price transparency (2021) + payer machine-readable files (2022)",
-              "Prescription drug pricing: IRA drug negotiation (10 drugs 2026); PBM reform legislation",
+              "Prescription drug pricing: IRA negotiation — first 10 negotiated prices effective 2026, 15 more in 2027",
             ],
           },
         ].map((card) => (
@@ -224,7 +124,7 @@ function MarketFinanceBody() {
 
       {/* Market Outlook */}
       <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 mb-10">
-        <h2 className="ty-h3 font-bold text-slate-900 mb-2">Healthcare Market Forces — 2024–2026 Outlook</h2>
+        <h2 className="ty-h3 font-bold text-slate-900 mb-2">Healthcare Market Forces — Near-Term Outlook</h2>
         <p className="text-slate-500 text-sm mb-6">Structural trends shaping healthcare economics over the near term</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
@@ -232,37 +132,37 @@ function MarketFinanceBody() {
               force: "Payer Vertical Integration",
               direction: "↑ Accelerating",
               color: "text-amber-600",
-              body: "UHC/Optum now employs 90,000+ physicians. CVS/Aetna expanding Oak Street primary care to 300 clinics. Creates closed network leverage and TCOC data advantages.",
+              body: "Optum employs or is affiliated with roughly 90,000 physicians; CVS Health owns Oak Street Health primary care. Integration gives payers network leverage and total-cost-of-care data.",
             },
             {
               force: "Hospital Distress & Closures",
               direction: "↑ Rising",
               color: "text-rose-600",
-              body: "AHA projects 600+ hospitals at risk of closure over next decade. Rural hospitals most vulnerable. Conversion to RTAH (Rural Emergency Hospital) designation as financial lifeline.",
+              body: "The Center for Healthcare Quality and Payment Reform counts hundreds of rural hospitals at risk of closure. Conversion to the Rural Emergency Hospital designation (available since 2023) is one lifeline.",
             },
             {
               force: "AI Infrastructure Investment",
               direction: "↑ Accelerating",
               color: "text-emerald-600",
-              body: "Health systems allocating $50M–$300M for AI infrastructure (GPUs, data lakes, AI talent). Near-term ROI from ambient documentation; long-term bet on clinical AI.",
+              body: "Large systems are funding data platforms and AI talent. The best-evidenced near-term use is ambient documentation; clinical AI remains a longer bet.",
             },
             {
               force: "Drug Pricing Pressure (IRA)",
               direction: "↑ Significant",
               color: "text-sky-600",
-              body: "IRA Medicare drug negotiation covering 10 drugs by 2026, 60 by 2029. Pharma companies shifting launch strategy to orphan/rare disease to escape negotiation.",
+              body: "IRA Medicare negotiation reaches 10 drugs in 2026 and 60 by 2029.",
             },
             {
               force: "MA Margin Compression",
               direction: "↑ Rising",
               color: "text-amber-600",
-              body: "CMS V28 risk model phaseout reducing RAF scores 5–10%. Combined with medical cost trends, MA plan MLRs deteriorating. UHC/Humana both guided to lower MA margins 2024.",
+              body: "The V28 risk model, fully phased in for 2026, cut risk scores about 3.1% on average (CMS). With higher medical cost trends, major MA insurers reported margin pressure in 2024–2025.",
             },
             {
               force: "Healthcare REIT Activity",
               direction: "→ Stable",
               color: "text-slate-500",
-              body: "MOB (Medical Office Building) REITs outperforming skilled nursing REITs. Welltower, Ventas deploying capital in senior housing/PACE as aging population demand rises.",
+              body: "Healthcare REITs such as Welltower and Ventas are concentrating capital in senior housing as the population ages.",
             },
           ].map((item) => (
             <div key={item.force} className="bg-white border border-slate-200 rounded-xl p-4">
