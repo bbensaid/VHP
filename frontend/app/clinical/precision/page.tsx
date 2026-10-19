@@ -70,34 +70,7 @@ function PrecisionMedicineBody() {
       </div>
 
       {/* Precision Medicine Economics */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-        <div className="bg-white rounded-2xl border border-slate-200 p-6">
-          <h3 className="font-bold text-slate-900 mb-1">Targeted Therapy Pricing Landscape</h3>
-          <p className="text-sm text-slate-500 mb-5">Annual cost of select precision oncology agents (WAC, 2024)</p>
-          <div className="space-y-3">
-            {[
-              { drug: "Osimertinib (Tagrisso)", indication: "EGFR+ NSCLC", cost: 211000, badge: "AstraZeneca" },
-              { drug: "Sotorasib (Lumakras)", indication: "KRAS G12C NSCLC", cost: 180000, badge: "Amgen" },
-              { drug: "Pembrolizumab (Keytruda)", indication: "PD-L1+, various", cost: 212000, badge: "Merck" },
-              { drug: "Olaparib (Lynparza)", indication: "BRCA+ ovarian/breast", cost: 174000, badge: "AZ/MSD" },
-              { drug: "Palbociclib (Ibrance)", indication: "HR+/HER2- breast", cost: 168000, badge: "Pfizer" },
-              { drug: "Entrectinib (Rozlytrek)", indication: "NTRK fusion, ROS1", cost: 192000, badge: "Roche" },
-            ].map((row) => (
-              <div key={row.drug} className="flex items-center justify-between p-3 bg-slate-50 rounded-xl">
-                <div>
-                  <div className="font-semibold text-slate-800 text-sm">{row.drug}</div>
-                  <div className="text-xs text-slate-500">{row.indication} · {row.badge}</div>
-                </div>
-                <div className="text-right">
-                  <div className="font-black text-rose-600 text-lg">${Math.round(row.cost / 1000)}k</div>
-                  <div className="text-[10px] text-slate-400">annual WAC</div>
-                </div>
-              </div>
-            ))}
-          </div>
-          <p className="text-xs text-slate-400 mt-4">WAC = Wholesale Acquisition Cost. Net price after rebates typically 30–60% lower. Sources: SSR Health, Drug Channels.</p>
-        </div>
-
+      <div className="grid grid-cols-1 gap-6 mb-10">
         <div className="bg-white rounded-2xl border border-slate-200 p-6">
           <h3 className="font-bold text-slate-900 mb-1">Value Frameworks for Precision Therapy</h3>
           <p className="text-sm text-slate-500 mb-5">How ICER, ASCO, and ESMO assess clinical value</p>
@@ -106,7 +79,7 @@ function PrecisionMedicineBody() {
               {
                 framework: "ICER (Institute for Clinical and Economic Review)",
                 badge: "bg-indigo-100 text-indigo-700",
-                criteria: ["Cost per QALY threshold: $100K–$150K", "Net health benefit (NHB) rating: A–D", "Evidentiary basis: RCT vs. single-arm required", "Often sets PBM/payer prior auth benchmarks"],
+                criteria: ["Health-benefit price benchmark at $100,000–$150,000 per QALY or evLYG gained", "Evidence rating matrix (A, B+, C+, … I) for comparative clinical effectiveness", "Weighs randomized versus single-arm evidence", "Reports are used by payers in coverage and pricing negotiations"],
               },
               {
                 framework: "ASCO Value Framework",
@@ -116,7 +89,7 @@ function PrecisionMedicineBody() {
               {
                 framework: "ESMO-MCBS (Magnitude of Clinical Benefit Scale)",
                 badge: "bg-emerald-100 text-emerald-700",
-                criteria: ["Grades 1–5 (curative) or A–C (palliative)", "Grade 4–5 / A–B = high clinical benefit", "Threshold: ≥1.2 HR improvement OR median OS gain", "Used by EU HTA agencies for reimbursement decisions"],
+                criteria: ["Grades A–C in the curative setting; 5–1 in the non-curative setting", "A–B and 5–4 indicate substantial clinical benefit", "Scores survival gain, quality of life and toxicity from trial results", "Used by ESMO guidelines and referenced by European HTA bodies"],
               },
             ].map((fw) => (
               <div key={fw.framework} className="border border-slate-200 rounded-xl p-4">
@@ -165,10 +138,10 @@ function PrecisionMedicineBody() {
             icon: "🩸",
             title: "Liquid Biopsy & ctDNA",
             items: [
-              "Cell-free DNA (cfDNA) capture: Guardant360, FoundationOne Liquid CDx (FDA cleared)",
+              "Cell-free DNA (cfDNA) panels: Guardant360 CDx and FoundationOne Liquid CDx (FDA-approved)",
               "Circulating tumor DNA (ctDNA): detects somatic mutations, fusions, CNVs in plasma",
               "Minimal residual disease (MRD): Signatera, clonoSEQ — post-surgery clearance",
-              "Treatment monitoring: rising ctDNA precedes radiographic progression by ~3 months",
+              "Treatment monitoring: rising ctDNA can precede radiographic progression",
               "Tumor mutational burden (bTMB): liquid proxy for solid tumor TMB immunotherapy prediction",
               "Limitations: low sensitivity early-stage; false-negatives from low shedding tumors",
             ],
@@ -191,11 +164,9 @@ function PrecisionMedicineBody() {
             items: [
               "Pre-emptive PGx testing: panel ordered once, results embedded in EHR for lifetime use",
               "CDS integration: Epic Genomics, Cerner Genomics — alert fires at point of prescribing",
-              "CPIC guidelines: 24 gene-drug pairs with actionable clinical recommendations",
-              "Right Drug Right Dose (RDRD) model: Vanderbilt, Mayo, UCSF — population-scale PGx",
-              "Payer coverage: BCBS, UHC covering pre-emptive PGx for Medicare Advantage (2024)",
-              "ROI model: $800–$2,400 saved per patient by avoiding ADEs + failed therapeutic trials",
-            ],
+              "CPIC guidelines: peer-reviewed dosing recommendations for actionable gene–drug pairs",
+              "Pre-emptive programs at scale: Vanderbilt PREDICT, Mayo Clinic RIGHT protocol",
+                                        ],
           },
           {
             icon: "🤖",
@@ -203,10 +174,9 @@ function PrecisionMedicineBody() {
             items: [
               "Radiomics: extracting 1,000s of image features from CT/MRI — texture, shape, intensity",
               "PathAI, Paige.AI: deep learning pathology for HER2 scoring, tumor infiltrating lymphocytes",
-              "Digital pathology: whole-slide imaging (WSI) + AI — Leica AIVIA, Hamamatsu NDP.serve",
+              "Digital pathology: whole-slide imaging (WSI) as the substrate for pathology AI",
               "Digital biomarkers: wearable-derived HRV, gait, voice for neurodegenerative monitoring",
-              "Polygenic risk integration: 23andMe + Tempus — population + molecular risk combo",
-              "FDA-cleared AI: OncotypeDX algorithm, Paige Prostate (FDA cleared DL for PCa Dx)",
+                            "FDA-authorized AI: Paige Prostate (De Novo, 2021) — the first AI pathology product for prostate biopsy review",
             ],
           },
         ].map((card) => (
@@ -240,7 +210,7 @@ function PrecisionMedicineBody() {
             {
               num: "02",
               title: "Lab & CDx Infrastructure",
-              body: "In-house NGS vs. send-out lab decision. Turnaround time (TAT) target: ≤7 days for somatic panels. CLIA/CAP accreditation + FDA-cleared CDx for reimbursable indications.",
+              body: "In-house NGS vs. send-out lab decision. Set a turnaround target the oncology team agrees to for somatic panels. CLIA/CAP accreditation + FDA-cleared CDx for reimbursable indications.",
               color: "bg-white border-amber-200",
             },
             {
