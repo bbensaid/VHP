@@ -5989,7 +5989,7 @@ PMI's standard requires the portfolio to be defined --- every component identifi
 
   Clinical     Blueprint PCMH (Ch. 8)                               Operational program      Critical       Blueprint + DVHA             Active → 100% PCMH by FY2028
 
-  Clinical     CCBHC certification (5 entities) (Ch. 8)             Compliance project       High           AHS + providers              4 of 5 certified Jul 2026 → fifth pending
+  Clinical     CCBHC certification (5 entities) (Ch. 8)             Compliance project       High           AHS + providers              4 certified Jul 1, 2026 → six in all
 
   Clinical     CoCM statewide deployment (Ch. 9)                    Operational program      High           MHI + Blueprint              Pilot → 80%+ practices FY2028
 
@@ -6383,7 +6383,7 @@ Pillar 2 --- Technology (data infrastructure, HIE governance, analytics, EHR str
 
 Pillar 3 --- Economics (payment-reform sequencing, financial-sustainability monitoring, ROI): payment-reform coordination with GMCB (RBP methodology, global-budget design, premium-passthrough monitoring); hospital-financial monitoring against the Oliver Wyman projections --- particularly the CAH operating-profit gap (\$938 vs. \$2,784 benchmark) and the PPS administrative-cost premium (\$3,826 vs. \$1,427 benchmark) --- with early technical assistance; the lost federal upside (the EAST Fund cut to a cap near \$10M against the \~\$138M originally expected, then forgone with the July 2026 AHEAD withdrawal); and transformation-ROI tracking against Oliver Wyman's \$400M+ projected savings.
 
-Pillar 4 --- Clinical (primary-care expansion, BH integration, care-model design): Blueprint expansion and making the MHI behavioral-health-integration pilot permanent; CCBHC network development (4 of 5 planned new entities certified July 1, 2026, integrated with primary care, EDs, and 988); care-model technical assistance for the global-budget environment; and long-term-care capacity development (PACE gap, dementia-care COE, HCBS expansion).
+Pillar 4 --- Clinical (primary-care expansion, BH integration, care-model design): Blueprint expansion and making the MHI behavioral-health-integration pilot permanent; CCBHC network development (four new entities certified July 1, 2026, joining two earlier CCBHCs, integrated with primary care, EDs, and 988); care-model technical assistance for the global-budget environment; and long-term-care capacity development (PACE gap, dementia-care COE, HCBS expansion).
 
 Pillar 5 --- Operations (transformation-plan management, RHRC successor, administrative simplification): hospital-transformation-plan oversight (from draft outlines to final plans for all 14 hospitals, coordinated regionally); administrative simplification (prior authorization, the CON process, Medicaid billing); PMO establishment; and EMS/transportation transformation (addressing the agency fragmentation that makes inter-facility transfers complex and expensive).
 
@@ -6396,7 +6396,7 @@ Pillar 5 --- Operations (transformation-plan management, RHRC successor, adminis
 
   FY2026 (now)        Analytics-vendor procurement (joint AHS-GMCB)                                                              AHS + GMCB                            RFP posted October 21, 2025; contracts nearing completion spring 2026
 
-  FY2026 (now)        CCBHC certification for new entities (4 of 5 planned certified July 1, 2026)                               AHS / DMH                             Four certified July 2026; fifth pending
+  FY2026 (now)        CCBHC certification for new entities (four certified July 1, 2026)                                         AHS / DMH                             Four certified July 2026 --- six CCBHCs in all
 
   FY2026 (now)        Medicaid hospital global budget launched January 2026; ruled unapproved by CMS, July 2026                  DVHA / CMS                            CMS notice July 7, 2026; payments stopped July 31; January--July payments reprocessed as fee-for-service by January 7, 2027
 
@@ -6753,22 +6753,22 @@ Vermont's quality performance reflects both the strengths of a high-coverage, pr
 
 Act 68 of 2025 (S.126) established a comprehensive sequence of transformation milestones. This appendix consolidates the complete timeline for reference and folds in the Policy-pillar implementation matrix used in the in-practice chapters.
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   **Date / deadline**              **Statutory requirement**                                                                                                             **Primary authority**   **Status (April 2026; July 2026 updates)**
-  -------------------------------- ------------------------------------------------------------------------------------------------------------------------------------- ----------------------- -----------------------------------------------------------------------------------------------------------------------
+  -------------------------------- ------------------------------------------------------------------------------------------------------------------------------------- ----------------------- ----------------------------------------------------------------------------------------------------------------------------------
   January 1, 2026                  Medicaid hospital global budget launched January 2026; ruled unapproved under the Global Commitment demonstration by CMS, July 2026   DVHA / CMS              Payments stopped July 31, 2026; January--July payments reprocessed as fee-for-service by January 7, 2027 (GCR 26-089)
 
-  FY2026 (ongoing)                 Hospital budget orders implementing -1% commercial-rate benchmark                                                                     GMCB                    In effect --- \$94.58M in FY2026 reductions ordered
+  FY2026 (ongoing)                 Hospital budget orders reducing FY2026 commercial revenue                                                                             GMCB                    In effect --- \$94.58M in FY2026 reductions ordered
 
   FY2026 (ongoing)                 \$2M Act 68 transformation grants to hospitals (HIT fund)                                                                             AHS                     Launched September 2025 --- all eligible hospitals applied
 
   FY2026 (ongoing)                 Act 55 drug-pricing cap (in effect January 1, 2026)                                                                                   GMCB / DFR              In effect --- \$104.3M in FY2026 drug-cap savings
 
-  Early 2026                       Final hospital Care Transformation Plans approved by AHS                                                                              AHS                     In progress --- hospitals in draft-plan phase
+  Early 2026                       Final hospital Care Transformation Plans submitted to AHS                                                                             AHS                     All 14 hospitals submitted final plans (April 2026); implementation under way
 
-  May 2026                         BALANCE Model GLP-1 Medicaid launch (voluntary state participation)                                                                   DVHA / CMS              DVHA participation decision pending
+  May 2026                         BALANCE Model GLP-1 Medicaid launch (voluntary state participation)                                                                   DVHA / CMS              State applications were due July 31, 2026; Vermont's decision not yet public
 
-  July 1, 2026                     New CCBHC entities certified (RHT target: five)                                                                                       AHS / DMH               Four certified July 1, 2026; fifth pending
+  July 1, 2026                     New CCBHC entities certified (RHT application: four, joining two earlier CCBHCs)                                                      AHS / DMH               Four certified July 1, 2026 (HCRS, Howard Center, NCSS, NKHS) --- six CCBHCs in all
 
   July 2026                        Medicare GLP-1 Bridge demonstration launches (\$50/month co-pay)                                                                      CMS                     Federal program --- Vermont Medicare beneficiaries eligible
 
@@ -6776,7 +6776,7 @@ Act 68 of 2025 (S.126) established a comprehensive sequence of transformation mi
 
   Postponed                        BALANCE Model Medicare Part D coverage (planned 2027; postponed by CMS in April 2026, no new date)                                    CMS                     Federal program
 
-  FY2028 (Oct 1, 2027)             Global budgets for non-CAH (PPS) hospitals                                                                                            GMCB                    Methodology under development; contingent on GMCB resources
+  FY2028 (Oct 1, 2027)             Global budgets for one or more non-CAH (PPS) hospitals, to the extent resources are available                                         GMCB                    Methodology under development; contingent on GMCB resources
 
   January 15, 2028                 Statewide Strategic Plan delivered to legislature                                                                                     AHS + HCAC              In planning --- development begins 2026
 
@@ -6784,10 +6784,10 @@ Act 68 of 2025 (S.126) established a comprehensive sequence of transformation mi
 
   December 2031                    BALANCE Model testing concludes                                                                                                       CMS                     Federal program
 
-  October 1, 2032                  All RHT Program funds must be spent                                                                                                   AHS / CMS               \$195M award; spending window 2026--2032
+  September 30, 2031               Each annual RHT award must be spent by the end of the following federal fiscal year; the last (FY2030) award by this date             AHS / CMS               FY2026 \$195M: obligations due October 30, 2026, spending by September 30, 2027; unspent funds are redistributed to other states
 
   Every 3 years from Dec 1, 2030   Statewide Strategic Plan updated                                                                                                      AHS + HCAC              Ongoing statutory obligation
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure B.1 --- Act 68 statutory timeline and milestones. Source: Act 68 of 2025.*
 
@@ -6800,9 +6800,9 @@ Estimated cost, timeline to value, ROI crossover, and Vermont benchmark for the 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   **Investment**                                               **Estimated cost**              **Timeline to value**    **ROI crossover**                              **Vermont benchmark**
   ------------------------------------------------------------ ------------------------------- ------------------------ ---------------------------------------------- ----------------------------------------------------------------------------------------------------
-  CMMI model participation and APM-readiness assessment        \$50K--\$150K per org           6--12 months             12--18 months                                  Vermont AHEAD preparation (withdrawn July 2026); HTR APM Readiness Assessment tool
+  CMMI model participation and APM-readiness assessment        \$50K--\$150K per org           6--12 months             12--18 months                                  Vermont AHEAD preparation (withdrawn July 2026); HTR VBC Readiness Assessment tool
 
-  1115 waiver application development                          \$200K--\$500K state cost       18--36 months            Multi-year waiver term                         Vermont Global Commitment waiver; annual CMS negotiation
+  1115 waiver application development                          \$200K--\$500K state cost       18--36 months            Multi-year waiver term                         Vermont Global Commitment waiver; current term expires December 31, 2027 --- renewal needed
 
   State-employee-plan direct contracting (reference pricing)   \$100K--\$300K design + admin   6--12 months design      Year 1 (Montana: \$47.8M saved, SFY2017--19)   No Vermont program yet; Montana (2016) benchmark: about 220--250% of Medicare
 
