@@ -1,0 +1,58 @@
+{
+ "_createdAt": "2026-03-10T13:54:25Z",
+ "_id": "rhtState-west_virginia",
+ "_rev": "G7Tfo59YVwcDW2O5CBrehx",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:25Z",
+ "awardAmount": "$199,000,000",
+ "description": "West Virginia confronts the nation's most acute opioid crisis alongside severe rural hospital financial distress. The RHT program focuses on a dual strategy: stabilizing critical access hospitals through shared service networks while building a comprehensive SUD recovery continuum.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Funding peer recovery coaches, mobile MAT units, and community recovery centers in the hardest-hit counties.",
+   "title": "Recovery Community Networks"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Shared credentialing, group purchasing, and IT infrastructure support for financially distressed CAHs.",
+   "title": "Critical Access Hospital Collaborative"
+  },
+  {
+   "_key": "ini-2",
+   "description": "Per-member-per-month prospective payments to stabilize rural primary care practices.",
+   "title": "Primary Care PMPM Model"
+  },
+  {
+   "_key": "ini-3",
+   "description": "Co-investment with the state broadband office to connect unserved hollows and enable telehealth delivery.",
+   "title": "Broadband & Telehealth Infrastructure"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "MAT Access Points",
+   "status": "In Progress",
+   "target": "40 Sites"
+  },
+  {
+   "_key": "metric-1",
+   "label": "CAH Shared Services",
+   "status": "Pending",
+   "target": "12 Hospitals"
+  },
+  {
+   "_key": "metric-2",
+   "label": "Primary Care PMPM Enrollees",
+   "status": "Pending",
+   "target": "50,000"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "west_virginia"
+ },
+ "stateName": "West Virginia",
+ "status": "Active",
+ "strategicFocus": "SUD Recovery Networks & Primary Care Stabilization"
+}

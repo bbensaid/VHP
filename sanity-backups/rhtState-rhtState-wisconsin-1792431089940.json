@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:44Z",
+ "_id": "rhtState-wisconsin",
+ "_rev": "G7Tfo59YVwcDW2O5CBrhTZ",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:44Z",
+ "awardAmount": "$204,000,000",
+ "description": "24-hour Farmer Wellness Helpline and equipment grants for rural dental clinics.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Helpline, counseling vouchers, and support groups for farmers.",
+   "title": "Farmer Wellness"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Equipment upgrades for rural dental clinics.",
+   "title": "Dental Grants"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Helpline Volume",
+   "status": "In Progress",
+   "target": "Active"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Dental Procedures",
+   "status": "Pending",
+   "target": "+10%"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "wisconsin"
+ },
+ "stateName": "Wisconsin",
+ "status": "Active",
+ "strategicFocus": "Farmer Wellness & Dental"
+}
