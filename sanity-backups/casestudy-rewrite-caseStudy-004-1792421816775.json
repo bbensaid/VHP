@@ -1,0 +1,136 @@
+{
+ "_createdAt": "2026-03-10T14:00:42Z",
+ "_id": "caseStudy-004",
+ "_rev": "1jJ4sZyHE3MNejrOV85A2B",
+ "_type": "caseStudy",
+ "_updatedAt": "2026-07-31T18:27:15Z",
+ "body": [
+  {
+   "_key": "k505",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k506",
+     "_type": "span",
+     "marks": [],
+     "text": "Program Overview"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "k507",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k508",
+     "_type": "span",
+     "marks": [],
+     "text": "Intermountain Health's Advanced Care at Home (ACH) program treats patients with acute-level medical conditions in their home environment. Approved under the CMS Acute Hospital Care at Home waiver, the program covers conditions including pneumonia, COPD exacerbation, cellulitis, heart failure, UTI, and post-operative monitoring."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "k509",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k510",
+     "_type": "span",
+     "marks": [],
+     "text": "Patient Selection"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "k511",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k512",
+     "_type": "span",
+     "marks": [],
+     "text": "Not all acute admissions are appropriate for home-based care. Intermountain's inclusion criteria require: clinical stability appropriate for twice-daily in-person nursing visits, home environment meeting safety and space requirements, caregiver availability for 8+ hours daily, reliable cellular connectivity for monitoring devices, and patient and family preference for home-based care. Approximately 15-18% of eligible acute admissions are enrolled."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "k513",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k514",
+     "_type": "span",
+     "marks": [],
+     "text": "Clinical Operations Model"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "k515",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k516",
+     "_type": "span",
+     "marks": [],
+     "text": "Each ACH patient receives: twice-daily in-person visits from a mobile nurse or advanced practice provider, real-time continuous monitoring via a cellular hub transmitting vitals to a clinical operations center, 24/7 physician telemedicine coverage with in-person rapid response backup, daily physician review, and same-day laboratory and medication delivery through contracted pharmacy and laboratory partners."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "k517",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k518",
+     "_type": "span",
+     "marks": [],
+     "text": "Economics"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "k519",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k520",
+     "_type": "span",
+     "marks": [],
+     "text": "Intermountain's published cost analysis shows ACH episodes average 32% below matched inpatient stays. The savings source is primarily reduced overhead allocation (no room-and-board cost), shorter length of stay (4.1 days ACH vs. 5.8 days inpatient for comparable DRGs), and near-elimination of hospital-acquired conditions. The program requires $8-12M in infrastructure investment to reach the 400-patient concurrent census needed for operational efficiency."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  }
+ ],
+ "chapterRef": "8",
+ "clientType": "Health System",
+ "metrics": [
+  "400+ concurrent patients at scale",
+  "32% lower cost vs. inpatient",
+  "6.2% 30-day readmission (vs. 9.8% inpatient matched)",
+  "97% patient satisfaction"
+ ],
+ "pillar": "Clinical",
+ "slug": {
+  "_type": "slug",
+  "current": "intermountain-hospital-at-home-operations"
+ },
+ "summary": "Intermountain Health's Advanced Care at Home program, one of the largest Hospital-at-Home programs in the U.S., provides operational detail on patient selection, clinical logistics, technology infrastructure, and the economics of scaling home-based acute care.",
+ "title": "Intermountain Health: Hospital-at-Home Program Design and Operations"
+}

@@ -1,0 +1,136 @@
+{
+ "_createdAt": "2026-03-10T14:00:43Z",
+ "_id": "caseStudy-005",
+ "_rev": "1jJ4sZyHE3MNejrOV85A2B",
+ "_type": "caseStudy",
+ "_updatedAt": "2026-07-31T18:27:15Z",
+ "body": [
+  {
+   "_key": "k521",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k522",
+     "_type": "span",
+     "marks": [],
+     "text": "CMQCC Background"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "k523",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k524",
+     "_type": "span",
+     "marks": [],
+     "text": "The California Maternal Quality Care Collaborative (CMQCC) was established in 2006 as a public-private partnership to improve maternal outcomes in California's 250+ birthing hospitals. California's maternal mortality rate at inception was 17.2 per 100,000 — comparable to the national average. By 2024, California achieved 7.3 per 100,000 — the lowest in the nation and approaching European benchmarks."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "k525",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k526",
+     "_type": "span",
+     "marks": [],
+     "text": "The Bundle Approach"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "k527",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k528",
+     "_type": "span",
+     "marks": [],
+     "text": "CMQCC's clinical toolkits — now adopted nationally as the Alliance for Innovation on Maternal Health (AIM) bundles — provide standardized, evidence-based protocols for the leading causes of maternal death: obstetric hemorrhage, severe hypertension and preeclampsia, venous thromboembolism, and peripartum cardiomyopathy. Each toolkit includes: recognition triggers, standardized response protocols, simulation training materials, and measurement tools."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "k529",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k530",
+     "_type": "span",
+     "marks": [],
+     "text": "Implementation Infrastructure"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "k531",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k532",
+     "_type": "span",
+     "marks": [],
+     "text": "CMQCC's model includes a real-time mortality surveillance system that identifies every maternal death within 30 days and conducts structured case review. This rapid feedback loop — unusual in quality improvement — allows identification of emerging safety signals before they become trends. The surveillance system also enabled California to identify that COVID-19 significantly increased maternal mortality risk 18 months before national data showed the trend."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  },
+  {
+   "_key": "k533",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k534",
+     "_type": "span",
+     "marks": [],
+     "text": "Replication Strategy"
+    }
+   ],
+   "markDefs": [],
+   "style": "h2"
+  },
+  {
+   "_key": "k535",
+   "_type": "block",
+   "children": [
+    {
+     "_key": "k536",
+     "_type": "span",
+     "marks": [],
+     "text": "The AIM program has now been adopted in 41 states, with CMQCC providing technical assistance and training. Early adopter states show 20-35% reduction in severe maternal morbidity within 24 months of full bundle implementation. States with the weakest outcomes — primarily those without state-level perinatal quality collaboratives — are the least engaged with AIM, creating a troubling quality gap that maps directly onto the states with highest maternal mortality."
+    }
+   ],
+   "markDefs": [],
+   "style": "normal"
+  }
+ ],
+ "chapterRef": "8",
+ "clientType": "Quality Collaborative",
+ "metrics": [
+  "7.3/100K maternal mortality (lowest in U.S.)",
+  "55% reduction in hemorrhage deaths",
+  "40% reduction in VTE-related deaths",
+  "15 years of sustained implementation"
+ ],
+ "pillar": "Clinical",
+ "slug": {
+  "_type": "slug",
+  "current": "california-cmqcc-maternal-mortality-bundles"
+ },
+ "summary": "California achieved the lowest maternal mortality rate in the U.S. (7.3/100K) through 15 years of CMQCC clinical bundles, real-time surveillance, and a culture of safety. This case study details the bundle development, implementation, and measurement approach that other states are now replicating.",
+ "title": "California Maternal Quality Care Collaborative: Reducing Maternal Mortality Through Clinical Bundles"
+}
