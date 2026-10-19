@@ -1328,7 +1328,7 @@ export default function SystemVitalsPage() {
             availability, alerts and repatriation patients shown here are illustrative — they show how a statewide
             coordination tool would work, not current conditions. Counts change only when an authorized user enters them.
             For each hospital&apos;s reported beds, see the{" "}
-            <a href="/dashboard/vermont?tab=hospitals" className="underline font-bold">CMS hospital list</a>.
+            <Link href="/dashboard/vermont?tab=hospitals" className="underline font-bold">CMS hospital list</Link>.
           </div>
           {/* Action bar */}
           <div className="flex flex-wrap gap-2 mt-4">
