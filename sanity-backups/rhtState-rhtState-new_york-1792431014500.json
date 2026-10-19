@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:21Z",
+ "_id": "rhtState-new_york",
+ "_rev": "GIKqHwCOFsUvADyibzkaMk",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:21Z",
+ "awardAmount": "$212,000,000",
+ "description": "Addressing maternal deserts with the 'Rural Roots' workforce model and scaling a statewide eConsult platform.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Workforce model focusing on maternal care deserts and simulation training.",
+   "title": "Rural Roots"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Statewide implementation to address specialty access.",
+   "title": "eConsult Platform"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "OB Simulation Training",
+   "status": "In Progress",
+   "target": "500 Staff"
+  },
+  {
+   "_key": "metric-1",
+   "label": "eConsult Volume",
+   "status": "Pending",
+   "target": "50,000/yr"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "new_york"
+ },
+ "stateName": "New York",
+ "status": "Active",
+ "strategicFocus": "Rural Roots & eConsult"
+}
