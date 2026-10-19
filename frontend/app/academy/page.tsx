@@ -41,9 +41,9 @@ export default function AcademyHub() {
               Learning Tracks
             </h3>
             <p className="text-slate-600 ty-body leading-relaxed">
-              Structured multi-course sequences designed for specific roles — health economists, compliance
-              officers, CMOs, policy analysts, and technology leaders. Each track culminates in a
-              verifiable credential.
+              Each course is organized into tracks and lessons — the Five Pillars, One Imperative course
+              follows the book chapter by chapter. Completing a course issues a certificate that anyone can
+              verify online.
             </p>
           </div>
           <div>
@@ -52,8 +52,7 @@ export default function AcademyHub() {
             </h3>
             <p className="text-slate-600 ty-body leading-relaxed">
               Deep-dive modules on specific topics — from CMS rule interpretation to FHIR implementation
-              to value-based contract design. Webinars bring in domain experts for live Q&amp;A and
-              recorded sessions available on demand.
+              to value-based contract design. Webinars will be listed as they are scheduled.
             </p>
           </div>
           <div>
