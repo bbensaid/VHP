@@ -49,12 +49,12 @@ function MandatesBody() {
               {[
                 { mandate: "Hospital Price Transparency", authority: "CMS (ACA §2718)", who: "All hospitals", penalty: "$300–$5,500/day CMPs", status: "Active", statusColor: "bg-emerald-100 text-emerald-700" },
                 { mandate: "No Surprises Act (NSA)", authority: "CAA 2021", who: "Hospitals, group health plans, OON providers", penalty: "Up to $10,000 per violation", status: "Active", statusColor: "bg-emerald-100 text-emerald-700" },
-                { mandate: "CMS Healthcare Worker Vaccine Mandate", authority: "CMS §3", who: "Medicare/Medicaid-certified facilities", penalty: "Termination of Medicare/Medicaid participation", status: "Active", statusColor: "bg-emerald-100 text-emerald-700" },
-                { mandate: "Nursing Home Staffing Minimum", authority: "CMS Final Rule 2024", who: "Skilled nursing facilities", penalty: "Civil monetary penalties; loss of certification", status: "Phased 2026–29", statusColor: "bg-amber-100 text-amber-700" },
-                { mandate: "HIPAA Security Rule", authority: "45 CFR §164.300", who: "Covered entities + Business Associates", penalty: "Up to $1.9M/violation category/year", status: "Active", statusColor: "bg-emerald-100 text-emerald-700" },
+                { mandate: "CMS Healthcare Worker COVID-19 Vaccine Rule", authority: "CMS interim final rule (2021)", who: "Medicare/Medicaid-certified facilities", penalty: "—", status: "Withdrawn 2023", statusColor: "bg-rose-100 text-rose-700" },
+                { mandate: "Nursing Home Staffing Minimum", authority: "CMS Final Rule 2024", who: "Skilled nursing facilities", penalty: "—", status: "Vacated 2025", statusColor: "bg-rose-100 text-rose-700" },
+                { mandate: "HIPAA Security Rule", authority: "45 CFR §164.300", who: "Covered entities + Business Associates", penalty: "Up to about $2.1M per violation category per year (inflation-adjusted)", status: "Active", statusColor: "bg-emerald-100 text-emerald-700" },
                 { mandate: "Information Blocking Prohibition", authority: "21st Century Cures Act", who: "EHR developers, HIEs, health systems", penalty: "Up to $1M per violation (info blocking)", status: "Active", statusColor: "bg-emerald-100 text-emerald-700" },
                 { mandate: "Emergency Preparedness Rule", authority: "CMS CoPs 42 CFR §482", who: "17 Medicare/Medicaid provider types", penalty: "Termination from Medicare/Medicaid", status: "Active", statusColor: "bg-emerald-100 text-emerald-700" },
-                { mandate: "EMTALA (Emergency Treatment)", authority: "42 USC §1395dd", who: "Hospitals with emergency departments", penalty: "$119,942 per violation; exclusion from Medicare", status: "Active", statusColor: "bg-emerald-100 text-emerald-700" },
+                { mandate: "EMTALA (Emergency Treatment)", authority: "42 USC §1395dd", who: "Hospitals with emergency departments", penalty: "Civil money penalties (inflation-adjusted yearly); Medicare exclusion", status: "Active", statusColor: "bg-emerald-100 text-emerald-700" },
               ].map((row) => (
                 <tr key={row.mandate} className="hover:bg-slate-50">
                   <td className="py-3 pr-4 font-semibold text-slate-800 text-sm">{row.mandate}</td>
@@ -69,7 +69,7 @@ function MandatesBody() {
             </tbody>
           </table>
         </div>
-        <p className="text-xs text-slate-400 mt-4">CMP = Civil Monetary Penalty. Penalty amounts reflect 2024 inflation adjustments. CoPs = Conditions of Participation.</p>
+        <p className="text-xs text-slate-400 mt-4">CMP = Civil Monetary Penalty. Penalty amounts are adjusted for inflation each year — check the current Federal Register notice. CoPs = Conditions of Participation.</p>
       </div>
 
       {/* Core Domains */}
@@ -79,12 +79,11 @@ function MandatesBody() {
             icon: "💉",
             title: "Vaccine Mandates & Immunization Policy",
             items: [
-              "CMS healthcare worker vaccine mandate: COVID-19 vaccination required at 76,000+ Medicare/Medicaid facilities",
-              "Childhood immunization schedule: CDC ACIP recommendations — 14 vaccines by age 6; state school entry requirements",
+              "CMS healthcare worker COVID-19 vaccine rule: withdrawn by CMS in June 2023",
+              "Childhood immunization schedule: CDC's ACIP was reconstituted in June 2025 and has since revised several recommendations; state school-entry rules and many payers also reference professional-society schedules",
               "VFC program: Vaccines for Children — free vaccines for Medicaid, uninsured, underinsured, Native American children",
               "Medicare Part D vaccine coverage: IRA (2023) — all ACIP-recommended adult vaccines $0 cost-sharing",
-              "HPV vaccination rates: only 58% of adolescents up to date (CDC 2023) — provider recommendation gap",
-              "COVID booster uptake: <20% of adults received updated 2023–24 booster — public health challenge",
+              "HPV vaccination: adolescent up-to-date rates remain well below other routine vaccines (CDC NIS-Teen)",
             ],
           },
           {
@@ -92,10 +91,9 @@ function MandatesBody() {
             title: "Emergency Preparedness Requirements",
             items: [
               "CMS Emergency Preparedness Rule (42 CFR §482.15): all 17 provider types must have 4-part EP plan",
-              "FEMA Healthcare Coalition: regional preparedness — 475+ coalitions coordinating hospital surge capacity",
+              "ASPR Hospital Preparedness Program: funds regional healthcare coalitions coordinating hospital surge capacity",
               "HHS ASPR TRACIE: technical resources for healthcare preparedness — national guidance library",
-              "Hospital preparedness benchmarks: HCC Tier 1–4 maturity model for surge, decon, mass casualty",
-              "Medical countermeasure (MCM) dispensing: SNS distribution to PODs within 48 hours of activation",
+              "Medical countermeasure (MCM) dispensing: Strategic National Stockpile distribution to local points of dispensing",
               "EMTALA + disaster: EMTALA waiver (1135) allows triage-only screening during declared emergencies",
             ],
           },
@@ -103,20 +101,20 @@ function MandatesBody() {
             icon: "👩‍⚕️",
             title: "Staffing Mandates",
             items: [
-              "Nursing home staffing rule (2024): 0.55 RN hours/resident/day; 2.45 total nurse hours/resident/day",
+              "Nursing home staffing rule (2024): vacated by a federal court in April 2025; H.R. 1 bars enforcement through September 2034",
               "24/7 RN requirement: SNFs must have RN on-site at all times — rural exemption process available",
-              "Safe staffing laws: California (1:5 nurse:patient acute care); 14 states have nurse staffing laws/regulations",
+              "Safe staffing laws: California sets nurse-to-patient ratios (1:5 in medical-surgical units); other states use staffing committees or disclosure",
               "OSHA Healthcare ETS: infection control, PPE, ventilation standards for healthcare workers (COVID-driven)",
               "Resident duty hour limits: ACGME 80-hour weekly maximum for medical residents — since 2003",
-              "CMS certified nursing assistant training: 75-hour federal minimum; states may exceed (CA: 150 hours)",
+              "CMS certified nursing assistant training: 75-hour federal minimum; states may exceed (California: 160 hours)",
             ],
           },
           {
             icon: "🏥",
             title: "Hospital Conditions of Participation",
             items: [
-              "CoPs (42 CFR §482): 24 conditions — governing board, medical staff, nursing, emergency services, etc.",
-              "Joint Commission accreditation: 22,000+ accredited organizations; deemed status exempts from CMS surveys",
+              "CoPs (42 CFR §482): governing board, medical staff, nursing, emergency services and other conditions",
+              "Joint Commission accreditation: deemed status substitutes for routine CMS surveys",
               "Patient rights (CoPs §482.13): informed consent, restraint, seclusion — CMS enforcement rising",
               "Discharge planning (§482.43): required for all Medicare/Medicaid patients; patient choice of post-acute",
               "Infection control (§482.42): CMS updated infection prevention CoPs post-COVID with new standards",
@@ -127,7 +125,7 @@ function MandatesBody() {
             icon: "🔬",
             title: "Clinical Quality & Reporting Mandates",
             items: [
-              "Inpatient Quality Reporting (IQR): 60+ measures; failure to report → 2% Medicare payment reduction",
+              "Inpatient Quality Reporting (IQR): failure to report cuts the annual payment update by one-quarter",
               "Outpatient Quality Reporting (OQR): CMS HOPD quality measures — linked to OPPS payment update",
               "MIPS/APM: MACRA quality payment mandate — all billing physicians must participate or face penalty",
               "HAC Reporting: CMS Hospital Acquired Conditions Reduction Program — bottom 25% → 1% penalty",
@@ -140,9 +138,8 @@ function MandatesBody() {
             title: "Environmental & Social Mandates",
             items: [
               "HHS Climate & Health Action Plan: hospitals encouraged to reduce greenhouse gas emissions",
-              "Joint Commission sustainability: new accreditation standards for environmental sustainability (2025)",
               "Lead poisoning screening: Medicaid mandate for blood lead testing at ages 12 and 24 months",
-              "Maternal mortality review: 18 states have MMRCs with mandatory case reporting requirements",
+              "Maternal mortality review committees: operating in nearly every state",
               "CHNA requirement (501(r)): tax-exempt hospitals must assess community health needs every 3 years",
               "Medicaid EPSDT: Early and Periodic Screening — mandatory comprehensive child health benefits",
             ],
