@@ -4,7 +4,9 @@ import { createClient } from "next-sanity";
 import { createImageUrlBuilder } from "@sanity/image-url";
 
 export const client = createClient({
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  // The project ID is public (it ships to the browser); the fallback lets CI
+  // build without the secret set.
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "fxz10xl7",
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
   apiVersion: "2023-10-01",
   // CDN in production for fast cached responses; direct API in dev for live updates
