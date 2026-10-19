@@ -83,7 +83,7 @@ const HEDIS_META: Record<string, { fullName: string; domain: string; numeratorDe
     numeratorDef: 'Members followed up within 30 days after MH inpatient discharge.',
     denominatorDef: 'Same as FUH-7.',
     dataSource: 'Same as FUH-7, extended window.',
-    vermont: 'An easier target than FUH-7 but Vermont still underperforms national average on 30-day follow-up in rural ACOs.',
+    vermont: 'An easier target than FUH-7; track 30-day follow-up separately for rural attributed patients.',
   },
   'AMM': {
     fullName: 'Antidepressant Medication Management — Effective Continuation Phase',
@@ -275,7 +275,7 @@ function HEDISPanelView() {
             )}
             {m.stars !== null && (
               <p className="text-[9px] font-bold text-indigo-600 mt-1">
-                {"★".repeat(m.stars)}{"☆".repeat(5 - m.stars)} vs. NCQA national
+                {"★".repeat(m.stars)}{"☆".repeat(5 - m.stars)} vs. illustrative benchmark
               </p>
             )}
             {m.inDenom > 0 && (
@@ -336,7 +336,7 @@ function HEDISPanelView() {
                 <Award className="w-5 h-5 text-indigo-500 shrink-0" />
                 <div className="flex-1">
                   <p className="text-[10px] font-black uppercase tracking-widest text-indigo-700 mb-1.5">
-                    vs. NCQA Quality Compass national benchmark ({activeMeasure.benchmark.measureName})
+                    vs. illustrative benchmark range ({activeMeasure.benchmark.measureName}) — approximations, not licensed NCQA Quality Compass data
                   </p>
                   <div className="relative h-2.5 bg-slate-200 rounded-full overflow-hidden">
                     <div className="absolute inset-y-0 left-0 bg-slate-400" style={{ width: `${activeMeasure.benchmark.p50}%` }} />
