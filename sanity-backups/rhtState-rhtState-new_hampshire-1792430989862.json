@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:16Z",
+ "_id": "rhtState-new_hampshire",
+ "_rev": "G7Tfo59YVwcDW2O5CBre6h",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:16Z",
+ "awardAmount": "$204,000,000",
+ "description": "New Hampshire is tackling polypharmacy risks in seniors via community lockboxes and expanding prevention access points in schools and libraries.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Community lockboxes and AI tools for polypharmacy risk reduction.",
+   "title": "Pharmacy Transformation"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Community access points in libraries and schools.",
+   "title": "Prevention-First Model"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Lockboxes Deployed",
+   "status": "In Progress",
+   "target": "50 Sites"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Adverse Drug Events",
+   "status": "Pending",
+   "target": "-10%"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "new_hampshire"
+ },
+ "stateName": "New Hampshire",
+ "status": "Active",
+ "strategicFocus": "Pharmacy Lockboxes & Prevention"
+}

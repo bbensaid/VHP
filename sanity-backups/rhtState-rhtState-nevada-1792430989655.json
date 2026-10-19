@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:55:00Z",
+ "_id": "rhtState-nevada",
+ "_rev": "ZDU5b4qioPbFp0EQfvWkzi",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:55:00Z",
+ "awardAmount": "$180,000,000",
+ "description": "$30M Accelerator for value-based care and $80M in provider incentives.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Investing in value-based care models and AI.",
+   "title": "Outcomes Accelerator"
+  },
+  {
+   "_key": "ini-1",
+   "description": "$80M investment for living/serving in rural areas.",
+   "title": "Provider Incentives"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Accelerator Adoption",
+   "status": "Pending",
+   "target": "High"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Provider Count",
+   "status": "In Progress",
+   "target": "Increased"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "nevada"
+ },
+ "stateName": "Nevada",
+ "status": "Active",
+ "strategicFocus": "Outcomes Accelerator & Incentives"
+}

@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:49Z",
+ "_id": "rhtState-nebraska",
+ "_rev": "GIKqHwCOFsUvADyibzkkCE",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:49Z",
+ "awardAmount": "$219,000,000",
+ "description": "'School Food Learning Labs' connecting farms to schools, and VR/AR training for providers.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Connecting schools with farms for 'Food as Medicine'.",
+   "title": "School Food Lab"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Using virtual reality to train rural providers.",
+   "title": "VR/AR Training"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Student Obesity",
+   "status": "Pending",
+   "target": "Reduced"
+  },
+  {
+   "_key": "metric-1",
+   "label": "VR Training Hours",
+   "status": "In Progress",
+   "target": "1,000"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "nebraska"
+ },
+ "stateName": "Nebraska",
+ "status": "Active",
+ "strategicFocus": "School Food & VR Training"
+}
