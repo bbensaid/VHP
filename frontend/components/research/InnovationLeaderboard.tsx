@@ -162,10 +162,7 @@ const PILLAR_METHODOLOGY_NOTES = {
 function getDomainExtremes(s: Omit<StateRecord, "rank">) {
   const domains = [
     { key: "policy", label: "Policy", val: s.policy },
-    { key: "technology", label: "Technology", val: s.technology },
-    { key: "economics", label: "Economics", val: s.economics },
     { key: "clinical", label: "Clinical", val: s.clinical },
-    { key: "operations", label: "Operations", val: s.operations },
   ];
   const sorted = [...domains].sort((a, b) => b.val - a.val);
   return { top: sorted[0].label, weakest: sorted[sorted.length - 1].label };
@@ -180,7 +177,7 @@ const NATIONAL_AVG = {
 };
 
 const STATES: StateRecord[] = [...RAW_STATES]
-  .map((s) => ({ ...s, composite: Math.round((s.policy + s.technology + s.economics + s.clinical + s.operations) / 5) }))
+  .map((s) => ({ ...s, composite: Math.round((s.policy + s.clinical) / 2) }))
   .sort((a, b) => b.composite - a.composite)
   .map((s, i) => ({ ...s, rank: i + 1 }));
 
@@ -316,9 +313,9 @@ function StateRankings() {
   );
 
   const handleExport = () => {
-    const lines = ["Rank\tState\tComposite\tPolicy\tTechnology\tEconomics\tClinical\tOperations\tTop Pillar\tWeakest Pillar\tPolicy Program", ...filtered.map(s => {
+    const lines = ["Rank\tState\tComposite\tPolicy\tClinical\tStronger Pillar\tWeaker Pillar\tPolicy Program", ...filtered.map(s => {
       const { top, weakest } = getDomainExtremes(s);
-      return `${s.rank}\t${s.state}\t${s.composite}\t${s.policy}\t${s.technology}\t${s.economics}\t${s.clinical}\t${s.operations}\t${top}\t${weakest}\t${s.policyProgram}`;
+      return `${s.rank}\t${s.state}\t${s.composite}\t${s.policy}\t${s.clinical}\t${top}\t${weakest}\t${s.policyProgram}`;
     })];
     navigator.clipboard.writeText(lines.join("\n"));
   };
@@ -331,15 +328,13 @@ function StateRankings() {
       <div className="rounded-xl border-2 border-amber-500 bg-amber-950/40 px-4 py-3 flex items-start gap-3">
         <span className="text-2xl leading-none">⚠️</span>
         <div className="text-xs text-amber-200 leading-relaxed">
-          <span className="font-black uppercase tracking-widest text-amber-300">Simulated data notice — </span>
-          The <strong>Technology</strong>, <strong>Economics</strong> and <strong>Operations</strong> columns below
-          (marked <SimBadge />) are illustrative estimates. No public dataset scores these three pillars for all 50
-          states — confirmed by direct review of ONC's 2024 interoperability brief (national-only) and HCP-LAN's 2024
-          APM Measurement effort (national/by-payer-category only, not by state). <strong>Policy</strong> and{" "}
-          <strong>Clinical</strong> are real, cited data (CMS AHEAD Model cohorts; America&rsquo;s Health Rankings).{" "}
-          <strong>Vermont</strong>&rsquo;s row is the one exception to all of this: its five numbers are pulled directly
-          from this book&rsquo;s own sourced pillar readiness (the same numbers the{" "}
-          <a href="/htr-simulator" className="underline text-amber-100">HTR Simulator</a> runs), not estimated here.
+          <span className="font-black uppercase tracking-widest text-amber-300">What is scored — </span>
+          Only <strong>Policy</strong> (CMS AHEAD Model cohorts and other state all-payer programs) and{" "}
+          <strong>Clinical</strong> (America&rsquo;s Health Rankings) have real 50-state data, so the ranking uses those two.
+          No public dataset scores <strong>Technology</strong>, <strong>Economics</strong> or <strong>Operations</strong> by
+          state (ONC and HCP-LAN publish national figures only), so they are not scored here rather than estimated.{" "}
+          <strong>Vermont</strong>&rsquo;s numbers are the book&rsquo;s sourced pillar readiness; its full five-pillar
+          profile is in the <a href="/htr-simulator" className="underline text-amber-100">HTR Simulator</a>.
           See Methodology for full source detail.
         </div>
       </div>
@@ -387,10 +382,7 @@ function StateRankings() {
               <th className="px-3 py-2 text-left text-xs font-semibold text-fuchsia-300">Region</th>
               <ColHeader label="Composite" k="composite" />
               <ColHeader label="Policy" k="policy" />
-              <ColHeader label="Technology" k="technology" />
-              <ColHeader label="Economics" k="economics" />
               <ColHeader label="Clinical" k="clinical" />
-              <ColHeader label="Operations" k="operations" />
               <th className="px-3 py-2 text-left text-xs font-semibold text-fuchsia-300">Top Pillar</th>
               <th className="px-3 py-2 text-left text-xs font-semibold text-fuchsia-300">Weakest</th>
               <th className="px-3 py-2 text-left text-xs font-semibold text-fuchsia-300">Policy Program</th>
@@ -429,10 +421,7 @@ function StateRankings() {
                       <span className={`font-bold text-base ${scoreColor(s.composite)}`}>{s.composite}</span>
                     </td>
                     <td className="px-3 py-2.5 text-slate-300">{s.policy}</td>
-                    <td className="px-3 py-2.5 text-slate-300">{s.technology}{s.simulated.technology && <SimBadge />}</td>
-                    <td className="px-3 py-2.5 text-slate-300">{s.economics}{s.simulated.economics && <SimBadge />}</td>
                     <td className="px-3 py-2.5 text-slate-300">{s.clinical}</td>
-                    <td className="px-3 py-2.5 text-slate-300">{s.operations}{s.simulated.operations && <SimBadge />}</td>
                     <td className="px-3 py-2.5 text-emerald-400 text-xs font-medium">{top}</td>
                     <td className="px-3 py-2.5 text-orange-400 text-xs font-medium">{weakest}</td>
                     <td className="px-3 py-2.5 text-slate-400 text-xs">{s.policyProgram}</td>
@@ -442,7 +431,7 @@ function StateRankings() {
                   </tr>
                   {isExpanded && (
                     <tr key={`${s.state}-expand`} className="bg-fuchsia-950/20">
-                      <td colSpan={13} className="px-6 py-4">
+                      <td colSpan={10} className="px-6 py-4">
                         {s.readinessSourced ? (
                           <p className="text-xs text-indigo-200 bg-indigo-950/40 border border-indigo-700/40 rounded-lg px-3 py-2 mb-3">
                             Vermont&rsquo;s five numbers are not this table&rsquo;s indicator methodology — they are read
@@ -456,29 +445,23 @@ function StateRankings() {
                         ) : (
                           <p className="text-xs text-slate-400 mb-3">
                             Policy Program: <span className="text-white">{s.policyProgram}</span>
-                            {(s.simulated.technology || s.simulated.economics || s.simulated.operations) && (
-                              <span className="ml-2 text-amber-300">— dimensions marked SIM below are simulated estimates, not published data.</span>
-                            )}
                           </p>
                         )}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           {[
                             { label: "Policy", val: s.policy, avg: NATIONAL_AVG.policy, sim: false },
-                            { label: "Technology", val: s.technology, avg: NATIONAL_AVG.technology, sim: s.simulated.technology },
-                            { label: "Economics", val: s.economics, avg: NATIONAL_AVG.economics, sim: s.simulated.economics },
                             { label: "Clinical", val: s.clinical, avg: NATIONAL_AVG.clinical, sim: false },
-                            { label: "Operations", val: s.operations, avg: NATIONAL_AVG.operations, sim: s.simulated.operations },
                           ].map(d => (
                             <div key={d.label}>
                               <div className="flex justify-between text-xs mb-1">
-                                <span className="text-slate-400">{d.label} {d.sim && <SimBadge />}</span>
+                                <span className="text-slate-400">{d.label}</span>
                                 <span className={scoreColor(d.val)}>{d.val} <span className="text-slate-500">/ avg {d.avg}</span></span>
                               </div>
                               <ScoreBar score={d.val} avg={d.avg} color={scoreBg(d.val)} />
                             </div>
                           ))}
                         </div>
-                        <p className="text-xs text-slate-500 mt-3">White marker = national average across all 50 states. Composite = unweighted average of the five pillar columns; note it mixes real and simulated dimensions — see Methodology.</p>
+                        <p className="text-xs text-slate-500 mt-3">White marker = national average across all 50 states. Composite = average of the two pillars with real multi-state data (Policy, Clinical). No published 50-state dataset exists for Technology, Economics or Operations, so they are not scored here.</p>
                       </td>
                     </tr>
                   )}
@@ -496,9 +479,6 @@ function StateRankings() {
                 <td className="px-3 py-2.5 text-slate-500">n/a</td>
                 <td className="px-3 py-2.5 text-slate-300">{DC_UNRANKED.policy}</td>
                 <td className="px-3 py-2.5 text-slate-500">n/a</td>
-                <td className="px-3 py-2.5 text-slate-500">n/a</td>
-                <td className="px-3 py-2.5 text-slate-500">n/a</td>
-                <td className="px-3 py-2.5 text-slate-500">n/a</td>
                 <td colSpan={4} className="px-3 py-2.5 text-slate-400 text-xs">{DC_UNRANKED.note}</td>
               </tr>
             )}
@@ -507,7 +487,7 @@ function StateRankings() {
       </div>
       <p className="text-xs text-slate-500">
         Showing {filtered.length} of {STATES.length} states{showDC ? " + the District of Columbia (listed, unranked)" : ""}. Policy &amp; Clinical: real, cited data.
-        Technology, Economics, Operations: <SimBadge /> simulated estimates. Vermont: sourced pillar readiness.
+        Technology, Economics and Operations are not scored: no published 50-state dataset exists. Vermont: sourced pillar readiness (all five pillars in the HTR Simulator).
       </p>
     </div>
   );
@@ -522,7 +502,7 @@ const TABS: { id: TabId; label: string; icon: React.ReactNode; description: stri
     id: "states",
     label: "State Health Transformation Rankings",
     icon: <Globe className="w-4 h-4" />,
-    description: "Five-pillar comparison across all 50 states — Policy and Clinical are real, cited data; Technology/Economics/Operations are disclosed simulated estimates; Vermont uses the book's sourced pillar readiness",
+    description: "50-state comparison on the two pillars with real multi-state data — Policy and Clinical; Vermont uses the book's sourced pillar readiness",
   },
 ];
 
@@ -546,8 +526,8 @@ export default function InnovationLeaderboard() {
                 <h1 className="text-2xl font-bold text-white">Innovation Leaderboard &amp; Benchmarks</h1>
               </div>
               <p className="text-slate-400 text-sm max-w-2xl">
-                Five-pillar comparison of health transformation across the 50 states. Policy and Clinical use real, cited data;
-                Technology, Economics, and Operations are disclosed simulated estimates; Vermont uses the book&apos;s sourced pillar readiness.
+                Comparison of health transformation across the 50 states on the two pillars with real multi-state data: Policy and Clinical.
+                Technology, Economics and Operations are not scored because no published 50-state dataset exists; Vermont uses the book&apos;s sourced pillar readiness.
               </p>
             </div>
             <div className="flex items-center gap-3 text-xs text-slate-400">
@@ -568,13 +548,11 @@ export default function InnovationLeaderboard() {
             <div className="mt-4 p-4 bg-gray-900/80 rounded-xl border border-fuchsia-800/30 text-sm text-slate-300 leading-relaxed">
               <p className="font-semibold text-fuchsia-300 mb-2">Scoring Methodology</p>
               <div className="mb-3 pb-3 border-b border-gray-800">
-                <p className="text-white font-semibold mb-1">State Pillar Comparison (Policy / Technology / Economics / Clinical / Operations)</p>
+                <p className="text-white font-semibold mb-1">State Pillar Comparison (Policy / Clinical)</p>
                 <ul className="list-disc pl-5 space-y-1">
                   <li><strong className="text-white">Policy</strong> — real: CMS AHEAD Model cohort assignments ({PILLAR_METHODOLOGY_NOTES.policy})</li>
                   <li><strong className="text-white">Clinical</strong> — real: {PILLAR_METHODOLOGY_NOTES.clinical}</li>
-                  <li><strong className="text-amber-300">Technology</strong> — {PILLAR_METHODOLOGY_NOTES.technology}</li>
-                  <li><strong className="text-amber-300">Economics</strong> — {PILLAR_METHODOLOGY_NOTES.economics}</li>
-                  <li><strong className="text-amber-300">Operations</strong> — {PILLAR_METHODOLOGY_NOTES.operations}</li>
+                  <li><strong className="text-amber-300">Technology, Economics, Operations</strong> — not scored: no published 50-state dataset exists (ONC and HCP-LAN publish national figures only).</li>
                   <li><strong className="text-indigo-300">Vermont</strong> — exception to all of the above: its five numbers are read directly from
                     lib/framework/sequence-engine.ts <code className="text-indigo-200">PRESETS[&quot;vermont-2026&quot;]</code> (policy 80,
                     technology 45, economics 55, clinical 65, operations 50) — the same sourced pillar readiness the HTR Simulator and Friction

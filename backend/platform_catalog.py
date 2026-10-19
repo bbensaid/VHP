@@ -576,7 +576,7 @@ CATALOG = [
         "url": "/research-lab/knowledge-workspace?tab=leaderboard",
         "category": "Research Lab",
         "subcategory": "Knowledge & Workspace",
-        "description": "Compare all 50 states across the five pillars: Policy and Clinical from real, cited data; Technology, Economics, and Operations as disclosed simulated estimates; Vermont from the book's sourced pillar readiness.",
+        "description": "Compare all 50 states on the two pillars with real multi-state data, Policy (AHEAD cohorts and state programs) and Clinical (America's Health Rankings); Technology, Economics and Operations are not scored because no 50-state dataset exists; Vermont from the book's sourced pillar readiness.",
         "keywords": ["innovation leaderboard", "state ranking", "five pillars by state", "state comparison"],
     },
     {
