@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:54Z",
+ "_id": "rhtState-oregon",
+ "_rev": "G7Tfo59YVwcDW2O5CBrjYH",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:54Z",
+ "awardAmount": "$197,000,000",
+ "description": "Rural-Urban provider exchange program and secure pharmacy pickup lockers.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Rural providers training in urban centers, and vice-versa.",
+   "title": "Provider Exchange"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Secure pickup lockers to expand access.",
+   "title": "Pharmacy Lockers"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Exchange Participants",
+   "status": "In Progress",
+   "target": "50 Providers"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Locker Usage",
+   "status": "Pending",
+   "target": "High"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "oregon"
+ },
+ "stateName": "Oregon",
+ "status": "Active",
+ "strategicFocus": "Provider Exchange & Pharmacy Lockers"
+}

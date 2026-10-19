@@ -1,0 +1,36 @@
+{
+ "_createdAt": "2026-03-10T13:54:19Z",
+ "_id": "rhtState-rhode_island",
+ "_rev": "G7Tfo59YVwcDW2O5CBreDT",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:19Z",
+ "awardAmount": "$156,000,000",
+ "description": "Specific infrastructure for Block Island and Narragansett Tribe, combined with a Hospital-at-Home program.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Infrastructure hardening for Block Island and Narragansett.",
+   "title": "Island/Tribal Support"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Enabling acute care in home settings.",
+   "title": "Hospital-at-Home"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "HaH Admissions",
+   "status": "Pending",
+   "target": "200/yr"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "rhode_island"
+ },
+ "stateName": "Rhode Island",
+ "status": "Active",
+ "strategicFocus": "Island EMS & Hospital-at-Home"
+}

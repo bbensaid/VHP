@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:39Z",
+ "_id": "rhtState-oklahoma",
+ "_rev": "ZDU5b4qioPbFp0EQfvWckk",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:39Z",
+ "awardAmount": "$223,000,000",
+ "description": "'Moving Upstream' consumer tech and $50k wellness microgrants for local departments.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Consumer-facing tech and remote monitoring.",
+   "title": "Moving Upstream"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Grants up to $50k for local health departments.",
+   "title": "Wellness Microgrants"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "App Adoption",
+   "status": "In Progress",
+   "target": "High"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Projects Launched",
+   "status": "Pending",
+   "target": "All Counties"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "oklahoma"
+ },
+ "stateName": "Oklahoma",
+ "status": "Active",
+ "strategicFocus": "Upstream Prevention & Microgrants"
+}
