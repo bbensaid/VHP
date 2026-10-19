@@ -125,7 +125,7 @@ function ValueBasedCareBody() {
             icon: "🏥",
             title: "Medicare ACO Models",
             items: [
-              "MSSP (Medicare Shared Savings Program): 476 ACOs and 11.2 million assigned beneficiaries in 2025 (CMS)",
+              "MSSP (Medicare Shared Savings Program): 476 ACOs and 10.3 million assigned beneficiaries in 2024, with record savings of about $2.5 billion (CMS)",
               "MSSP Basic: glide path from upside-only (Levels A–B) to two-sided risk (Levels C–E)",
               "MSSP Enhanced: two-sided risk; up to 75% sharing; loss cap 15% of benchmark",
               "ACO REACH (Realizing Equity, Access, Coordination): global capitation option",
