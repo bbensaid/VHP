@@ -1,0 +1,42 @@
+{
+ "_createdAt": "2026-03-10T13:54:31Z",
+ "_id": "rhtState-alabama",
+ "_rev": "ZDU5b4qioPbFp0EQfvWYrS",
+ "_type": "rhtState",
+ "_updatedAt": "2026-03-10T13:54:31Z",
+ "awardAmount": "$203,000,000",
+ "description": "Deploying telerobotic ultrasound for high-risk pregnancy and establishing cancer prevention hubs.",
+ "initiatives": [
+  {
+   "_key": "ini-0",
+   "description": "Remote-controlled ultrasound units for high-risk pregnancy monitoring.",
+   "title": "Telerobotic Ultrasound"
+  },
+  {
+   "_key": "ini-1",
+   "description": "Establishing 5 IT/telehealth hubs for cancer prevention.",
+   "title": "Cancer Digital Hubs"
+  }
+ ],
+ "metrics": [
+  {
+   "_key": "metric-0",
+   "label": "Telerobotic Sites",
+   "status": "Pending",
+   "target": "15 Sites"
+  },
+  {
+   "_key": "metric-1",
+   "label": "Cancer Screening",
+   "status": "In Progress",
+   "target": "+20%"
+  }
+ ],
+ "stateId": {
+  "_type": "slug",
+  "current": "alabama"
+ },
+ "stateName": "Alabama",
+ "status": "Active",
+ "strategicFocus": "Maternal & Cancer Digital Regionalization"
+}

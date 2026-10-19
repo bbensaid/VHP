@@ -1,0 +1,691 @@
+{
+ "Alabama": {
+  "description": "Rural Health Transformation Program - Implement statewide sustainable rural healthcare initiatives that support the goals of the program by transforming the healthcare delivery ecosystem.",
+  "initiatives": [
+   {
+    "title": "Enhance health information technology (IT) and",
+    "description": "Enhance health information technology (IT) and cybersecurity through regional shared- service hubs supporting Electronic Health Record (EHR) integration and compliance."
+   },
+   {
+    "title": "Expand access to care via telehealth,",
+    "description": "Expand access to care via telehealth, remote monitoring, and regional specialty networks."
+   },
+   {
+    "title": "Address maternal and cancer care deserts",
+    "description": "Address maternal and cancer care deserts through digital regionalization and mobile screening models."
+   },
+   {
+    "title": "Strengthen the healthcare workforce through rural",
+    "description": "Strengthen the healthcare workforce through rural training pipelines, simulation training programs, and expanded Graduate Medical Education (GME) opportunities."
+   }
+  ]
+ },
+ "Alaska": {
+  "description": "State of Alaska Rural Health Transformation Program",
+  "initiatives": [
+   {
+    "title": "Promote lifelong health and well-being for",
+    "description": "Promote lifelong health and well-being for rural, remote, and frontier Alaskans."
+   },
+   {
+    "title": "Build sustainable, outcomes-driven health systems",
+    "description": "Build sustainable, outcomes-driven health systems."
+   },
+   {
+    "title": "Healthy Beginnings",
+    "description": "strengthens maternal and child health as a foundation for healthy families"
+   },
+   {
+    "title": "Health Care Access",
+    "description": "expands and sustains essential primary, behavioral, oral, specialty, emergency, home and community-based and post-acute care health services across Alaska’s rural communities"
+   }
+  ]
+ },
+ "Arizona": {
+  "description": "’s RHT Program drives innovation in rural healthcare delivery through telehealth and integrated care, targeting behavioral health, chronic disease, child and maternal health, and healthcare workforce",
+  "initiatives": []
+ },
+ "Arkansas": {
+  "description": "The Arkansas RHT Program expands access, strengthens care, grows the healthcare workforce, and advances telehealth to improve health outcomes and service quality for rural residents and communities statewide",
+  "initiatives": []
+ },
+ "California": {
+  "description": "The California Rural Health Transformation Program will provide novel and innovative strategies to bring rural and frontier communities the resources and quality health care services that they need.",
+  "initiatives": []
+ },
+ "Colorado": {
+  "description": "Colorado is dedicated to ensuring our rural residents have ready access to the same high quality, multimodal, affordable health care as their urban counterparts.",
+  "initiatives": [
+   {
+    "title": "Provide rural hospitals and clinics with",
+    "description": "Provide rural hospitals and clinics with resources to help communities get and stay healthy to reduce chronic disease."
+   },
+   {
+    "title": "Invest in telehealth, mobile health tools",
+    "description": "Invest in telehealth, mobile health tools and monitoring, equipment and shared data systems to connect and improve outcomes for patients."
+   },
+   {
+    "title": "Bring together physical, behavioral, public health,",
+    "description": "Bring together physical, behavioral, public health, schools, and local businesses to partner to improve outcomes and affordability for rural Coloradans."
+   },
+   {
+    "title": "Strengthen access to care, ensuring that",
+    "description": "Strengthen access to care, ensuring that rural Coloradans have essential services including primary care, wellness, emergency, behavioral health, and maternity care services in rural communities."
+   }
+  ]
+ },
+ "Connecticut": {
+  "description": "'s RHT Plan will modernize rural health delivery by investing in shared technology infrastructure, predictive analytics, facility upgrades, digital inclusion, and telehealth expansion.",
+  "initiatives": [
+   {
+    "title": "Population Health Outcomes",
+    "description": "Advance prevention, improve management of chronic diseases, maternal and behavioral health integration, and address root causes of disease."
+   },
+   {
+    "title": "Workforce",
+    "description": "Strengthen recruitment, training, and retention of healthcare providers and staff through education partnerships, telehealth support, and career pipelines."
+   }
+  ]
+ },
+ "Delaware": {
+  "description": "The Delaware Rural Health Transformation Plan addresses critical healthcare access and outcome disparities affecting approximately 400,000 residents in rural Sussex and Kent Counties.",
+  "initiatives": [
+   {
+    "title": "Expand Access",
+    "description": "Establish Hope Centers for homeless populations, deploy mobile health units, create school-based health centers, and expand library-based health services to eliminate transportation barriers and bring care directly to rural communities."
+   }
+  ]
+ },
+ "Florida": {
+  "description": "The Florida Rural Health Transformation Program (RHTP) modernizes, stabilizes, and sustains rural health systems across 31 counties, serving approximately 1.2 million Floridians.",
+  "initiatives": [
+   {
+    "title": "Improve Outcomes",
+    "description": "Reduce preventable hospitalizations and improve chronic, behavioral, and maternal health outcomes through evidence-based, technology-enabled interventions."
+   },
+   {
+    "title": "Enhance Technology and Data Use",
+    "description": "Advance telehealth, remote monitoring, and health information exchange and encounter notification systems to improve continuity, efficiency, and performance tracking."
+   },
+   {
+    "title": "Strengthen Workforce",
+    "description": "Build a lasting rural workforce pipeline through the Clinical Training Investment Opportunity (CTIO) initiative, with supervised rotations and five-year rural service commitments."
+   }
+  ]
+ },
+ "Georgia": {
+  "description": "Rural Enhancement And Transformation of Health (GREAT Health) Program is a grant to support value-based care uptake in the State of Georgia strengthening the healthcare access and the workforce.",
+  "initiatives": [
+   {
+    "title": "Connecting to Care to Improve Healthcare",
+    "description": "Connecting to Care to Improve Healthcare Access includes six strategies that align with the vision of increasing access in rural places to ensure rural residents have more opportunities for preventative, primary, specialty, dental, and…"
+   }
+  ]
+ },
+ "Hawaii": {
+  "description": "The Hawai‘i Rural Health Transformation Plan will build a robust, sustainable rural health care system that will improve healthcare access, quality and outcomes through six interconnected initiatives.",
+  "initiatives": [
+   {
+    "title": "Rural Health Information Network (RHIN)",
+    "description": "A statewide digital backbone connecting rural hospitals, clinics, and health centers through interoperable EHRs, wireless networks, and integrated data hubs"
+   },
+   {
+    "title": "Pili Ola Telehealth Network",
+    "description": "A statewide telehealth network connecting rural communities to providers and integrating digital health access, virtual care, and telehealth training"
+   },
+   {
+    "title": "Hawaii Outreach for Medical Education in",
+    "description": "Hawaii Outreach for Medical Education in Rural Under-resourced Neighborhoods (HOME RUN): A pipeline initiative expanding education, recruitment, and retention of healthcare workers through certificate programs, residencies,…"
+   },
+   {
+    "title": "Rural Respite Network (RRN)",
+    "description": "An expansion of the effective medical respite model to rural areas to reduce preventable hospital use among unhoused or post-acute patients with low medical acuity"
+   }
+  ]
+ },
+ "Idaho": {
+  "description": "State of Idaho Rural Health Transformation Program",
+  "initiatives": []
+ },
+ "Illinois": {
+  "description": "Rural Health Transformation Program - To support rural communities across the State of Illinois in improving healthcare access, quality, and outcomes by transforming healthcare delivery.",
+  "initiatives": [
+   {
+    "title": "Transforming Rural Healthcare",
+    "description": "Transforming Rural Healthcare"
+   },
+   {
+    "title": "Overcoming Geographic Barriers to Care",
+    "description": "Overcoming Geographic Barriers to Care"
+   },
+   {
+    "title": "Building a Resilient Rural Workforce. The",
+    "description": "Building a Resilient Rural Workforce. The purpose of HFS’ RHT program is to"
+   },
+   {
+    "title": "Invest in infrastructure and innovative models",
+    "description": "Invest in infrastructure and innovative models of care to right-size care delivery in rural communities"
+   }
+  ]
+ },
+ "Indiana": {
+  "description": "Growing Rural Opportunities for Well-being in Health (Grow: Cultivating Hoosier Health), Indiana's Rural Health Transformation Plan.",
+  "initiatives": [
+   {
+    "title": "Innovative Care (10% of total funding)",
+    "description": "Innovative Care (10% of total funding) Promote patient-centered models of care to address access barriers to preventive and post-acute services by enhancing pediatric and obstetric readiness in emergency departments"
+   },
+   {
+    "title": "Workforce Development (10% of total funding)",
+    "description": "Workforce Development (10% of total funding) Grow the paraprofessional, physician, and behavioral health workforce to removing credentialing and training barriers for community health workers and peers"
+   },
+   {
+    "title": "Make Rural America Healthy Again Catalyze",
+    "description": "Make Rural America Healthy Again Catalyze targeted local rural health innovation by addressing community-specific challenges with community-specific solutions through the Make Rural Indiana Healthy Again Regional Grants"
+   }
+  ]
+ },
+ "Iowa": {
+  "description": "'s Rural Health Transformation Program. Supports rural hospitals and partners, build collaborations, recruit providers, prevent and treat chronic disease, combat cancer, and rural technology upgrades.",
+  "initiatives": []
+ },
+ "Kansas": {
+  "description": "Rural Health Transformation Plan",
+  "initiatives": []
+ },
+ "Kentucky": {
+  "description": "Rural Health Transformation Plan - To improve health outcomes, expand access to care, & strengthen the infrastructure that supports the Commonwealth of KY rural constituents & areas",
+  "initiatives": [
+   {
+    "title": "Rural Community Hubs for Chronic Care Innovation",
+    "description": "Reduce obesity and diabetes rate through evidence-based, community-led strategies focused on upstream prevention"
+   },
+   {
+    "title": "PoWERing Maternal and Infant Health, Community-Based Teams",
+    "description": "Increase timely perinatal care in maternity care deserts through coordinated, telehealth enabled teams"
+   },
+   {
+    "title": "Rapid Response to Recovery, EmPATH Model,",
+    "description": "Rapid Response to Recovery, EmPATH Model, Mobile Crisis, and Telehealth: Expand integrated, technology-enabled crisis care from community response to long-term support"
+   },
+   {
+    "title": "Rooted in Health, Kentucky Rural Dental Access Program",
+    "description": "Improve rural access to preventive dental care and treatment through expanded training and mobile, portable services; and"
+   }
+  ]
+ },
+ "Louisiana": {
+  "description": "Utilizing workforce, modernized technology, coordinated and innovative care models, and investments in infrastructure LDH will transform health outcomes for rural communities in LA",
+  "initiatives": []
+ },
+ "Maine": {
+  "description": "’s Rural Health Transformation Plan proposes a new approach to delivering rural health care so that rural Mainers will have a resilient and integrated rural healthcare system accessible to all.",
+  "initiatives": [
+   {
+    "title": "Increase the relative percentage of residents",
+    "description": "Increase the relative percentage of residents in rural areas with high BP that is well- controlled by 10%."
+   },
+   {
+    "title": "Reduce the relative 30-day all-cause readmission",
+    "description": "Reduce the relative 30-day all-cause readmission rate among rural patients by 10%."
+   },
+   {
+    "title": "Reduce the relative percentage of adults",
+    "description": "Reduce the relative percentage of adults in rural areas who report delaying medical care for reasons other than costs by 10%."
+   }
+  ]
+ },
+ "Maryland": {
+  "description": "Rural Health Transformation Program: Transform the Rural Health Workforce; Promote Sustainable Access and Innovative Care for Rural Marylanders; Empower Rural Marylanders to Eat for Health",
+  "initiatives": []
+ },
+ "Massachusetts": {
+  "description": "The Massachusetts Rural Health Transformation Program will catalyze transformative investments that strengthen rural MA communities, enabling them to thrive and sustain improved health and well-being.",
+  "initiatives": [
+   {
+    "title": "Ensure rural residents can readily access",
+    "description": "Ensure rural residents can readily access healthcare services"
+   },
+   {
+    "title": "Generate opportunities to improve the health",
+    "description": "Generate opportunities to improve the health and well-being of rural residents, and"
+   }
+  ]
+ },
+ "Michigan": {
+  "description": "Subrecipients/Sub-awardees: Local health departments, rural health clinics, Federally Qualified Health Centers (FQHCs), hospitals, community-based organizations, universities, Tribal governments, and other critical rural health partners (to be identified through a competitive subaward process).",
+  "initiatives": [
+   {
+    "title": "Establish sustainable partnerships that integrate health,",
+    "description": "Establish sustainable partnerships that integrate health, human services, and community sectors across rural regions."
+   },
+   {
+    "title": "Increase access to primary, behavioral, and",
+    "description": "Increase access to primary, behavioral, and preventive care through a well-trained, supported workforce now and in the future."
+   },
+   {
+    "title": "Improve use of technical innovations that",
+    "description": "Improve use of technical innovations that promote increased efficiencies, health data sharing and real-time referral capacity among rural providers among many other benefits."
+   },
+   {
+    "title": "Advance rural health by reducing gaps",
+    "description": "Advance rural health by reducing gaps in access to care and essential supportive care by implementing care models that keep residents close to home."
+   }
+  ]
+ },
+ "Minnesota": {
+  "description": "MN's plan for rural health transformation adopts a comprehensive, data-driven, coordinated approach that builds on strong partnerships and local priorities and uses emerging technology to improve provider financial sustainability and extend access to health care deeper into trusted rural settings.",
+  "initiatives": [
+   {
+    "title": "Improve health outcomes for rural Minnesotans",
+    "description": "Improve health outcomes for rural Minnesotans with or at risk of developing cardiovascular disease, diabetes, and chronic kidney disease (cardiometabolic disease). (CMS goal: Make Rural America Healthy Again)"
+   },
+   {
+    "title": "Build education pathways and promote training",
+    "description": "Build education pathways and promote training opportunities in rural communities to sustainably expand the healthcare workforce in rural Minnesota. (CMS goal: Workforce Development)"
+   },
+   {
+    "title": "Strengthen partnerships between providers to enable",
+    "description": "Strengthen partnerships between providers to enable delivery of expanded services in rural areas through shared learning, collaborative approaches, and advanced technology interventions. (CMS goals: Tech Innovation, Sustainable Access)"
+   },
+   {
+    "title": "Community-Based Preventive Care and Chronic Disease",
+    "description": "Community-Based Preventive Care and Chronic Disease Management"
+   }
+  ]
+ },
+ "Mississippi": {
+  "description": "The MS RHTP strengthens rural healthcare by expanding access, improving care coordination, modernizing infrastructure, growing the workforce, and using telehealth to improve health outcomes.",
+  "initiatives": []
+ },
+ "Missouri": {
+  "description": "Transformation of Rural Community Health Care (ToRCH Care) Project",
+  "initiatives": [
+   {
+    "title": "Expanding access to care",
+    "description": "Ensure rural Missourians can access primary and behavioral health providers close to home, community-based maternity options, with connections to specialists and complex care enabled by telehealth and provider interoperability"
+   },
+   {
+    "title": "Improving health outcomes",
+    "description": "Strengthen healthcare quality through integrated care coordination, aligned incentives, and evidence-based practices – so that rural Missourians consistently experience seamless, high-value care"
+   },
+   {
+    "title": "Regional Coordinating Networks and Hub Activation",
+    "description": "Building the foundation of Regional Coordinating Networks and Local Community Hubs to coordinate local care delivery and expand entry points for physical health, behavioral health, and social services"
+   },
+   {
+    "title": "Alternative Payment Models",
+    "description": "Designing and launching alternative payment models to sustain ToRCH Care through rewarding collaboration that leads to high quality and high value outcomes"
+   }
+  ]
+ },
+ "Montana": {
+  "description": "Building a Healthier Rural Montana: Investing in People, Technology, & Preventive Care to Strengthen Health Systems, Improve Access, & Build a More Resilient, Sustainable Future for Rural Communities.",
+  "initiatives": [
+   {
+    "title": "Workforce Development",
+    "description": "Strengthen recruitment, training, and retention of a high-skilled rural health workforce across Montana."
+   },
+   {
+    "title": "Sustainable Access",
+    "description": "Improve the long-term viability of rural providers as access points for care through operational and financial support."
+   },
+   {
+    "title": "Innovative Care Models",
+    "description": "Implement and scale flexible, patient-centered care models that improve outcomes and care coordination."
+   },
+   {
+    "title": "Community Health and Prevention",
+    "description": "Promote prevention and address root causes of disease through expanded access and community-based interventions."
+   }
+  ]
+ },
+ "Nebraska": {
+  "description": "RHTP – Make Nebraska Healthy Again - Nebraska Department of Health and Human Services (DHHS) will build a prevention-first, tech-enabled sustainable rural health care system.",
+  "initiatives": [
+   {
+    "title": "Rural Emergency Behavioral Health",
+    "description": "Address behavioral health needs by creating a continuum of care for early intervention and emergency behavioral health and substance use services. Subrecipients include Nebraska Medical Association."
+   },
+   {
+    "title": "Assisted Living Facility (ALF) Special Needs",
+    "description": "Assisted Living Facility (ALF) Special Needs Population Incentive Model: Better serve residents with complex medical, physical, intellectual, and other high-acuity needs through provider add-ons and modernization grants for ALFs."
+   }
+  ]
+ },
+ "Nevada": {
+  "description": "This project will support improved health outcomes, strengthening rural health care infrastructure, attract/retain more health care providers, and technology innovation across rural Nevada.",
+  "initiatives": []
+ },
+ "New Hampshire": {
+  "description": "DHHS through CMS’ Rural Health Transformation Program proposes to meet the needs of its rural communities.",
+  "initiatives": []
+ },
+ "New Jersey": {
+  "description": "Strengthen rural communities across New Jersey by improving their health through transformation of the healthcare delivery ecosystem.",
+  "initiatives": [
+   {
+    "title": "RHT1 supports recruitment, training, and retention",
+    "description": "RHT1 supports recruitment, training, and retention of clinical and non-clinical providers"
+   },
+   {
+    "title": "RHT2 provides funding for essential providers",
+    "description": "RHT2 provides funding for essential providers of behavioral health (CCBHCs), primary care (FQHCs), and emergency medical services (hospitals)"
+   },
+   {
+    "title": "RHT3 encourages regional partnerships to strengthen",
+    "description": "RHT3 encourages regional partnerships to strengthen care delivery outside of brick-and- mortar offices—including telehealth, remote patient monitoring, and mobile care"
+   },
+   {
+    "title": "RHT4 funds community-level efforts to promote",
+    "description": "RHT4 funds community-level efforts to promote preventive health"
+   }
+  ]
+ },
+ "New Mexico": {
+  "description": "The State of New Mexico Health Care Authority (HCA) is proud to present the State of New Mexico’s Rural Health Transformation Plan.",
+  "initiatives": [
+   {
+    "title": "Healthy Horizons",
+    "description": "Expanding Access to Care in Rural Communities"
+   },
+   {
+    "title": "State Goal / CMS Goal",
+    "description": "Expand Access to Care / Make Rural America Healthy Again"
+   },
+   {
+    "title": "Rooted in New Mexico",
+    "description": "Building Tomorrow’s Rural Health Workforce"
+   },
+   {
+    "title": "State Goal / CMS Goal",
+    "description": "Expand and Sustain Rural Health Care Workforce / Workforce Development"
+   }
+  ]
+ },
+ "New York": {
+  "description": "The NY RHTP is designed to address persistent disparities in rural health outcomes, workforce shortages, and infrastructure gaps by investing in innovative models, technology, and partnerships.",
+  "initiatives": []
+ },
+ "North Carolina": {
+  "description": "Organization: The North Carolina Department of Health & Human Services (NCDHHS), as the Governor’s designee, will lead the North Carolina Rural Health Transformation Program (NCRHTP) through its Office of Rural Health.",
+  "initiatives": [
+   {
+    "title": "Improve prevention/screening, chronic disease management, maternal",
+    "description": "Improve prevention/screening, chronic disease management, maternal health, and nutrition by scaling up effective programs for primary care access, food as medicine, diabetes and hypertension management, cancer screening, and perinatal…"
+   },
+   {
+    "title": "Modernize and sustain the rural health",
+    "description": "Modernize and sustain the rural health workforce through catalyzing investments in rural training centers, fellowships, and certification programs to recruit, train, and retain clinicians, allied health professionals, and community…"
+   },
+   {
+    "title": "Advance value-based payment (VBP) by establishing",
+    "description": "Advance value-based payment (VBP) by establishing capabilities for rural primary care practices to participate in advanced VBP models and laying the groundwork for rural hospital participation in VBP arrangements, with a focus on…"
+   }
+  ]
+ },
+ "North Dakota": {
+  "description": "Organization: North Dakota Department of Health and Human Services (NDHHS) Rural Health Transformation Plan (RHTP) Total Budget Requested: $1,000,000,000 PURPOSE: North Dakota’s rural health system is under threat from workforce shortages, financially fragile facilities, widening outcome gaps for Tribal and frontier communities, and fragmented data and technology that block innovation.",
+  "initiatives": [
+   {
+    "title": "Rebuild and retain a rural health",
+    "description": "Rebuild and retain a rural health workforce"
+   },
+   {
+    "title": "Increase Rural Provider Retention",
+    "description": "Increase Rural Provider Retention"
+   },
+   {
+    "title": "Expand Remote Monitoring and AI-Assisted Care",
+    "description": "Expand Remote Monitoring and AI-Assisted Care"
+   },
+   {
+    "title": "Reduce Health Professional Shortages",
+    "description": "Reduce Health Professional Shortages"
+   }
+  ]
+ },
+ "Ohio": {
+  "description": "'s Rural Health Transformation Project will implement initiatives to improve health for rural Ohioans through innovation, healthcare access, and prevention.",
+  "initiatives": [
+   {
+    "title": "Establish regional integrated networks across all",
+    "description": "Establish regional integrated networks across all rural counties. Expanded rural SBHCs."
+   },
+   {
+    "title": "Reduce avoidable emergency visits through EMS",
+    "description": "Reduce avoidable emergency visits through EMS innovation."
+   },
+   {
+    "title": "Improve diabetes and hypertension outcomes statewide",
+    "description": "Improve diabetes and hypertension outcomes statewide."
+   },
+   {
+    "title": "Increase the rural health workforce by",
+    "description": "Increase the rural health workforce by at least 20%."
+   }
+  ]
+ },
+ "Oklahoma": {
+  "description": "Rural Health Transformation Program – Strengthening Access, Innovation, and Workforce in Rural Communities",
+  "initiatives": [
+   {
+    "title": "Innovating the care model",
+    "description": "This initiative seeks to improve healthcare access and outcomes through modernized care delivery (Make Rural America Healthy Again, Technology Innovation)."
+   },
+   {
+    "title": "Moving upstream",
+    "description": "This initiative seeks to promote preventive healthcare and address root causes of disease through innovative care delivery and technology (Make Rural America Healthy Again, Innovative Care, Technology Innovation)."
+   },
+   {
+    "title": "Facilitating regional collaboration",
+    "description": "This initiative seeks to strengthen provider infrastructure and enhance local and regional partnerships (Sustainable Access, Innovative Care)."
+   },
+   {
+    "title": "Shifting to value",
+    "description": "This initiative seeks to improve outcomes and financial sustainability through value-based care models (Sustainable Access, Innovative Care)."
+   }
+  ]
+ },
+ "Oregon": {
+  "description": "The Rural Health Transformation (RHT) Program offers a pivotal opportunity for Oregon to strengthen its rural healthcare system, improve access, and support local communities and economies across the State.",
+  "initiatives": [
+   {
+    "title": "Regional Partnerships & System Transformation",
+    "description": "Regional Partnerships & System Transformation"
+   },
+   {
+    "title": "Healthy Communities & Prevention",
+    "description": "Healthy Communities & Prevention"
+   },
+   {
+    "title": "Workforce Capacity & Resilience",
+    "description": "Workforce Capacity & Resilience"
+   },
+   {
+    "title": "Technology & Data Modernization",
+    "description": "Technology & Data Modernization"
+   }
+  ]
+ },
+ "Pennsylvania": {
+  "description": "Pennsylvania’s Rural Health Transformation Plan (RHTP) Summary The name of your organization: The Commonwealth of Pennsylvania Project goals: Transform rural health through regionally led, technology-enabled models that strengthen local capacity and sustain high-quality, evidence-based care driven by continuous learning and innovation.",
+  "initiatives": []
+ },
+ "Rhode Island": {
+  "description": "The Rhode Island Rural Health Transformation Program (RHTP) will strengthen access to high-quality, sustainable, and community-driven health care for residents of Rhode Island’s rural and island communities.",
+  "initiatives": []
+ },
+ "South Carolina": {
+  "description": "Transforming Rural Healthcare in South Carolina",
+  "initiatives": []
+ },
+ "South Dakota": {
+  "description": "South Dakota Rural Health Transformation Project Summary Organization: Office of the Governor, State of South Dakota Lead Agency: South Dakota Department of Health Total Budget: $1,000,000,000 over 5 years Overview: South Dakota's Rural Health Transformation Plan addresses the State’s health access challenges in one of America's most rural States.",
+  "initiatives": [
+   {
+    "title": "Connecting Technology & Data",
+    "description": "Deploy certified electronic health record (EHR) systems, integrate health information exchange, fund telehealth equipment and platforms, support cybersecurity enhancements, and create a Rural Data Atlas for evidence-based planning."
+   },
+   {
+    "title": "Advancing the Rural Workforce",
+    "description": "Provide recruitment incentives and retention supports for healthcare professionals, expand Community Health Worker training and certification, and establish a Training and Resource Hub for continuing education."
+   },
+   {
+    "title": "Keeping Healthcare Local and Strong",
+    "description": "Explore new Medicaid payment models, award Rural Health Access and Quality Grants for facility optimization, strengthen chronic disease management programs, and improve access to maternal care."
+   }
+  ]
+ },
+ "Tennessee": {
+  "description": "Project Summary The State of Tennessee will leverage the Rural Health Transformation Fund (RHTF) to build a comprehensive, outcomes-driven, sustainable care delivery system in its rural communities— anchored in prevention, innovation, workforce capacity, and value-based transformation.",
+  "initiatives": [
+   {
+    "title": "Goal 1",
+    "description": "Rural Healthcare Transformation Incentivizing transformative change in rural health by right-sizing rural facilities and investing in outcomes-based payment models that enhance and sustain access in rural communities."
+   },
+   {
+    "title": "Goal 2",
+    "description": "Maternal and Child Health Generational investments to ensure strong starts for every rural family"
+   },
+   {
+    "title": "Goal 3",
+    "description": "Make Rural Tennessee Healthy Again Embedding prevention into health and healthcare delivery by addressing locally identified concerns, expanding early detection, and improving nutrition security"
+   },
+   {
+    "title": "Goal 4 - Technological Infrastructure Investing",
+    "description": "Goal 4 - Technological Infrastructure Investing in health-tech solutions that enhance operational performance, allow for innovative care solutions, maximize efficiencies, and cut administrative waste."
+   }
+  ]
+ },
+ "Texas": {
+  "description": "Rural Texas Strong: Supporting Health and Wellness",
+  "initiatives": [
+   {
+    "title": "Make Rural Texans Healthy Again",
+    "description": "Make Rural Texans Healthy Again"
+   },
+   {
+    "title": "Rural Texas Patients in the Driver’s",
+    "description": "Rural Texas Patients in the Driver’s Seat"
+   },
+   {
+    "title": "Lone Star Advanced AI and Telehealth",
+    "description": "Lone Star Advanced AI and Telehealth"
+   },
+   {
+    "title": "The Next Generation of The Small",
+    "description": "The Next Generation of The Small Town Doctor and Team"
+   }
+  ]
+ },
+ "Utah": {
+  "description": "Rural Health Transformation Program: A bold, multi-faceted innovative effort aimed at generational investments to build resilient, sustainable rural health systems.",
+  "initiatives": []
+ },
+ "Vermont": {
+  "description": "Sub-Recipients/Sub-Awardees: More information on subrecipients and sub-awardees for all projects within each initiative will be provided to CMS at a later date following completion of State procurement processes.",
+  "initiatives": [
+   {
+    "title": "Strengthen the State’s rural health care",
+    "description": "Strengthen the State’s rural health care workforce"
+   },
+   {
+    "title": "Increase access to timely care across",
+    "description": "Increase access to timely care across rural communities"
+   },
+   {
+    "title": "Expand innovative strategies to increase quality",
+    "description": "Expand innovative strategies to increase quality and reduce health care costs. Funds will be allocated across five core initiatives:"
+   },
+   {
+    "title": "Price Transparency and Insurance Competition",
+    "description": "The State aims to address rising health care costs and affordability barriers through investments in new accountability tools and strategies."
+   }
+  ]
+ },
+ "Virginia": {
+  "description": "VA Rural Vitality – transforming health access and outcomes for more than 1.5 million rural residents through technological innovation, workforce development, wellness, and sustainable access",
+  "initiatives": [
+   {
+    "title": "Modernize health technology to support preventive",
+    "description": "Modernize health technology to support preventive care and data-driven decision-making"
+   },
+   {
+    "title": "Strengthen and expand the rural health",
+    "description": "Strengthen and expand the rural health workforce to sustain local care delivery"
+   },
+   {
+    "title": "Improve access to primary, specialty, and",
+    "description": "Improve access to primary, specialty, and maternal care close to home"
+   }
+  ]
+ },
+ "Washington": {
+  "description": "State supporting the innovative development of rural health care across primary and specialty care, hospitals, workforce development, technology investment, and chronic disease management.",
+  "initiatives": [
+   {
+    "title": "Create opportunities for health in rural",
+    "description": "Create opportunities for health in rural Washington"
+   },
+   {
+    "title": "Foster partnerships across the rural health",
+    "description": "Foster partnerships across the rural health care delivery system"
+   },
+   {
+    "title": "Grow Washington’s workforce",
+    "description": "Grow Washington’s workforce"
+   },
+   {
+    "title": "Deploy technology and data-driven solutions to",
+    "description": "Deploy technology and data-driven solutions to empower communities with healthy opportunities, increased efficiencies, and connectivity"
+   }
+  ]
+ },
+ "West Virginia": {
+  "description": "The WV Rural Health Transformation Program launches a once-in-a-generation effort to improve healthcare outcomes, build a healthy and long-lasting rural workforce, and develop a more vibrant economy.",
+  "initiatives": [
+   {
+    "title": "Connected Care Grid will bring healthcare",
+    "description": "Connected Care Grid will bring healthcare access directly to people—both in person and digitally—by integrating telehealth, remote monitoring, and local care coordination."
+   },
+   {
+    "title": "Rural Health Link will unify medical",
+    "description": "Rural Health Link will unify medical and community transportation into a one-stop system so distance and mobility are never barriers to care."
+   },
+   {
+    "title": "Mountain State Care Force will attract",
+    "description": "Mountain State Care Force will attract top clinical talent while training and retaining West Virginia’s own future providers."
+   },
+   {
+    "title": "Smart Care Catalyst will equip rural",
+    "description": "Smart Care Catalyst will equip rural providers with payment and data tools that free time for patients and sustain provider viability."
+   }
+  ]
+ },
+ "Wisconsin": {
+  "description": "The Rural Health Transformation Program – Wisconsin",
+  "initiatives": []
+ },
+ "Wyoming": {
+  "description": "State of Wyoming - Rural Health Transformation Application",
+  "initiatives": [
+   {
+    "title": "To increase sustainable access to right-sized",
+    "description": "To increase sustainable access to right-sized and coordinated rural medical care."
+   },
+   {
+    "title": "Encouraging smaller Critical Access Hospitals to",
+    "description": "Encouraging smaller Critical Access Hospitals to focus on doing the basics well, and creating incentives for small ambulance services to consolidate around sustainable regional funding bases"
+   },
+   {
+    "title": "Expansion of primary care that integrates",
+    "description": "Expansion of primary care that integrates behavioral health and preventative medicine"
+   },
+   {
+    "title": "Building an affordable major medical plan",
+    "description": "Building an affordable major medical plan for people priced out of health insurance"
+   }
+  ]
+ }
+}
