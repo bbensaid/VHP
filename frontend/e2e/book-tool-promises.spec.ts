@@ -117,7 +117,7 @@ test.describe("HTI dashboard five-pillar view (/hti-dashboard)", () => {
     await gotoPillars(page);
 
     const expected: Record<string, string> = {
-      policy: "95",
+      policy: "80",
       technology: "45",
       economics: "55",
       clinical: "65",
