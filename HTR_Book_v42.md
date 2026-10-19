@@ -2976,7 +2976,7 @@ The following matrix provides implementation guidance for the key Technology pil
 
   VHCURES analytics platform access and training     \$20K-\$60K annually       3-6 months              6 months                   Vermont hospitals: pre-global-budget HCC gap analysis; attribution modeling
 
-  CIN shared analytics infrastructure                \$500K-\$2M network cost   18-36 months            36-48 months               Vermont CIN: RHT-funded shared analytics for all 14 hospitals
+  CIN shared analytics infrastructure                \$500K-\$2M network cost   18-36 months            36-48 months               Vermont CIN: RHT-funded shared analytics for independent hospitals and providers
 
   EHR optimization for structured data capture       \$15K-\$40K per practice   1-3 months              6 months                   Blueprint PCMH prerequisite; HEDIS measure reporting accuracy
 
