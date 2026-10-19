@@ -52,7 +52,6 @@ function SecurityBody() {
                 { org: "Advocate Aurora Health", year: "2022", records: "3.0M", type: "Pixel tracking (Meta)", impact: "PHI via third-party analytics code" },
                 { org: "CommonSpirit Health", year: "2022", records: "623,774", type: "Ransomware", impact: "EHR and other systems taken offline" },
                 { org: "Shields Health Care Group", year: "2022", records: "2.0M", type: "Data theft", impact: "Imaging center billing data exposure" },
-                { org: "Roper St. Francis Healthcare", year: "2023", records: "187,979", type: "Phishing", impact: "Patient portal + payment data" },
               ].map((row) => (
                 <tr key={row.org} className="hover:bg-slate-50">
                   <td className="py-3 pr-4 font-bold text-slate-800">{row.org}</td>
@@ -99,7 +98,7 @@ function SecurityBody() {
             title: "Interoperability & Data Standards",
             items: [
               "21st Century Cures Act: information blocking prohibition effective April 2021",
-              "ONC Interoperability Rule: FHIR R4 API required for certified EHR technology (CHIT)",
+              "ONC Cures Act rule: standardized FHIR R4 API required for certified EHR technology (CEHRT)",
               "CMS Interoperability Rule: payer-to-payer data exchange, prior auth APIs (FHIR-based)",
               "TEFCA (Trusted Exchange Framework): nationwide health information exchange — QHIN network",
               "HL7 FHIR R4: dominant API standard; SMART on FHIR for app authorization",
