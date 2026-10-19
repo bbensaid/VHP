@@ -266,7 +266,8 @@ const HEDIS_MEASURES: HedisMeasure[] = [
 ];
 
 // Shared with other Research Lab tools (e.g. VBCQualityDashboard) so a national
-// benchmark comparison never retypes these NCQA Quality Compass percentiles —
+// benchmark comparison never retypes these illustrative percentiles (NOT licensed
+// NCQA Quality Compass values) —
 // derived from HEDIS_MEASURES above, single source of truth, keyed by the
 // official measure code.
 export const NCQA_QUALITY_COMPASS_BENCHMARKS: Record<string, { p50: number; p90: number; measureName: string }> =
@@ -1769,7 +1770,7 @@ export default function ClinicalQualityOptimizer() {
         {/* Footer */}
         <div className="mt-8 text-center text-xs text-violet-400 border-t border-violet-100 pt-4">
           Clinical Quality & Value Optimizer — For planning and educational use only.
-          Benchmark data sourced from NCQA HEDIS 2024, CMS Star Ratings Technical Notes, and QPP documentation.
+          Measure definitions follow NCQA HEDIS, CMS Star Ratings Technical Notes and QPP documentation. The 50th/90th percentiles and star cut points are illustrative approximations, not licensed NCQA Quality Compass or published CMS cut-point values — replace them with your contract’s benchmark edition.
         </div>
       </div>
     </div>
