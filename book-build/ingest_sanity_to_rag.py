@@ -84,18 +84,33 @@ def main() -> int:
         print("DRY RUN — nothing embedded, nothing written.")
         return 0
 
-    # 1. Embed first.
+    # 1. Embed first. Embeddings are cached on disk by content hash, so a failed
+    #    insert can be re-run without paying for (or waiting on) re-embedding.
+    import hashlib, json
+    cache_path = BACKEND / "storage" / "sanity_embed_cache.json"
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        cache = json.loads(cache_path.read_text())
+    except Exception:
+        cache = {}
     Settings.embed_model = OpenAIEmbedding(model=EMBEDDING_MODEL)
     embed = Settings.embed_model
+    texts = [n.get_content(metadata_mode="embed") for n in nodes]
+    keys = [hashlib.sha256(x.encode()).hexdigest() for x in texts]
+    todo = [i for i, k in enumerate(keys) if k not in cache]
+    print(f"  {len(nodes) - len(todo)} embeddings cached, {len(todo)} to embed")
     BATCH = 100
-    for i in range(0, len(nodes), BATCH):
-        batch = nodes[i: i + BATCH]
-        vecs = embed.get_text_embedding_batch([n.get_content(metadata_mode="embed") for n in batch],
-                                              show_progress=False)
-        for n, v in zip(batch, vecs):
-            n.embedding = v
-        if (i // BATCH) % 10 == 0:
-            print(f"  embedded {min(i + BATCH, len(nodes))}/{len(nodes)}")
+    for j in range(0, len(todo), BATCH):
+        idx = todo[j: j + BATCH]
+        vecs = embed.get_text_embedding_batch([texts[i] for i in idx], show_progress=False)
+        for i, v in zip(idx, vecs):
+            cache[keys[i]] = v
+        if (j // BATCH) % 20 == 0:
+            print(f"  embedded {min(j + BATCH, len(todo))}/{len(todo)}")
+            cache_path.write_text(json.dumps(cache))
+    cache_path.write_text(json.dumps(cache))
+    for n, k in zip(nodes, keys):
+        n.embedding = cache[k]
 
     # 2. Only now remove the stale Sanity rows.
     conn = psycopg2.connect(db_url)
@@ -114,9 +129,29 @@ def main() -> int:
         table_name="rag_documents",
         embed_dim=1536,
     )
+    # Small batches: each row carries ~10KB of window metadata plus a 1536-dim
+    # vector, and 500-row INSERTs made the server drop the connection.
+    import time
     ids = []
-    for i in range(0, len(nodes), 500):
-        ids += store.add(nodes[i: i + 500])
+    BATCH = 50
+    for i in range(0, len(nodes), BATCH):
+        for attempt in range(4):
+            try:
+                ids += store.add(nodes[i: i + BATCH])
+                break
+            except Exception as e:
+                if attempt == 3:
+                    raise
+                print(f"  insert batch {i} failed ({type(e).__name__}); retrying")
+                time.sleep(5 * (attempt + 1))
+                store = PGVectorStore.from_params(
+                    connection_string=str(db_url),
+                    async_connection_string=db_url.replace("postgresql://", "postgresql+asyncpg://", 1),
+                    table_name="rag_documents",
+                    embed_dim=1536,
+                )
+        if (i // BATCH) % 40 == 0:
+            print(f"  inserted {len(ids)}/{len(nodes)}")
     print(f"Inserted {len(ids)} rows into public.data_rag_documents.")
 
     # 4. Verify.
