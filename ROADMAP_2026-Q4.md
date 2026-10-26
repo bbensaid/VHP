@@ -25,14 +25,13 @@ and sources.
   to `sanity-backups/` (the pattern used for the 2026-10-17/19 fixes).
 
 ### 1.2 Book promises the platform still does not keep
-- **Investment Tracker** (Ch7 Fig. table ~md line 3715, Ch15 ~6202) promises "see where
-  funding and dependency order disagree / components funded ahead of their upstream
-  gate." The tool is a deal-news feed with a pillar filter; it has no gate logic.
-  **[Author]** pick one: (a) reword both rows, or (b) **[Claude]** builds a
-  "Funding vs. Sequence" view that tags each deal with a dependency from
-  `lib/framework/dependencies.ts` and flags deals whose upstream gate the
-  `sequence-engine` marks unmet. Recommendation: (b) — the engine and tests exist,
-  so it is a few days' work and it makes the book's claim true.
+- **Investment Tracker** — **no gap.** Corrected 2026-10-26: the first version of this
+  roadmap said the tool lacked the gate logic Ch7 and Ch15 promise. Wrong — both checks
+  were built 2026-09-21 and are live on `/investment-tracker`:
+  `components/framework/InvestmentSequencingCheck.tsx` (deal-feed capital vs. Vermont's
+  gate status, Ch7 wording) and `PortfolioSequencingCheck.tsx` (the reader's own
+  initiatives vs. their pillar's limiting gate, Ch15 wording). Book wording matches;
+  nothing to build or reword.
 - HTI Dashboard (flagged 2026-09-21) — **resolved**: now a five-pillar view.
 - "Go Deeper — Academy" doorways (flagged 2026-09-21) — **resolved**: Ch2–16 each
   carry an "In the Academy" paragraph with `/academy/tracks/…` links. Still worth a
@@ -185,10 +184,15 @@ Three series are announced; none exist. Order by what is realistic:
 | Months 3–6 | Ch7, Ch14, Ch5, Ch9 courses · chapter explainer videos · instructor kit · first State of the Sequence report · interview podcast pilot · credit accreditation enquiry |
 
 ## Decisions only the author can make
-1. Investment Tracker: reword the book, or build the funding-vs-sequence view (1.2).
-2. `welcome-htr-framework`: delete, hide, or replace with the "Start Here" course (1.6).
-3. The 14 thin lessons: intentional, or approve rewrites (1.6).
-4. Webinar host platform (Zoom / StreamYard / Luma) and whether sessions are free.
-5. Whether AI-voiced audio (audiobook feed, Wire briefing) is acceptable with a label.
-6. Course order in 2.1 and which to draft first.
-7. Whether to appear on camera/mic for webinars, explainers and interviews.
+Answered 2026-10-26:
+1. Investment Tracker — already built (see 1.2); no action.
+2. `welcome-htr-framework` — **replace with the "Start Here" course.**
+3. The 14 thin lessons — **rewrite them.**
+4. Webinars — free; author produces them with Claude's help. **Last in the queue.**
+5. AI-voiced audio — **yes, if labelled.**
+6. Course order — Claude decides; quality bar is non-negotiable.
+7. On camera / mic — yes; author may prefer an **AI-generated presenter persona**
+   (Claude to help design it, labelled as AI like the audio).
+
+Prerequisite for everything in Parts 1–2 that touches data: **live API access from
+cloud sessions** (Sanity, Supabase, production site, Fly backend). No work from dumps.

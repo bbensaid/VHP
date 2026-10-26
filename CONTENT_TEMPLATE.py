@@ -139,8 +139,20 @@ import json, re, urllib.request
 
 # ── Token — read from env file, never hardcoded ────────────────────────────────
 def _read_token():
-    with open('/Users/baba/Vermont-Health-Platform/frontend/.env.local') as f:
-        return re.search(r'SANITY_API_TOKEN\s*=\s*(.+)', f.read()).group(1).strip()
+    # Cloud sessions: the token is an environment variable. Mac: frontend/.env.local.
+    import os
+    for name in ('SANITY_WRITE_TOKEN', 'SANITY_API_TOKEN'):
+        if os.environ.get(name):
+            return os.environ[name].strip()
+    for path in ('frontend/.env.local',
+                 os.path.join(os.path.dirname(os.path.abspath('CONTENT_TEMPLATE.py')), 'frontend/.env.local'),
+                 '/Users/baba/Vermont-Health-Platform/frontend/.env.local'):
+        if os.path.exists(path):
+            with open(path) as f:
+                m = re.search(r'SANITY_(?:WRITE|API)_TOKEN\s*=\s*(.+)', f.read())
+            if m:
+                return m.group(1).strip().strip('"\'')
+    raise SystemExit('No Sanity token: set SANITY_API_TOKEN in the environment or frontend/.env.local')
 
 PROJECT_ID = "fxz10xl7"
 API = f"https://{PROJECT_ID}.api.sanity.io/v2021-06-07/data/mutate/production"
