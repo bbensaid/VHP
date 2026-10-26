@@ -199,8 +199,11 @@ The permitted edit is a **surgical string replacement inside
 `word/document.xml`**, then re-zip. Nothing else. Never rebuild the file.
 
 The live book is the **Google Doc**, not the local file
-([HTR_Book_v42](https://docs.google.com/document/d/1Yfrh5UkW_L_XK0LQw7nSluAViEpOzKn8cq4dmvFAa60/edit),
-My Drive root). The local `.docx` goes stale the moment the author touches the
+My Drive root). **The author re-uploads the `.docx` as a NEW Google Doc each round**
+(several files share the title `HTR_Book_v42`), so never trust a hard-coded doc ID:
+search Drive for `title contains 'HTR_Book'` and take the newest `modifiedTime`
+(on 2026-10-26 that was `1QlUHFfQBMggAreqHgq7jw8WZW45iKtt1EJFykEICOt0`, 2026-10-19;
+the ID this line used to carry was a 2026-09-19 copy). The local `.docx` goes stale the moment the author touches the
 doc online — it was a full day behind on 2026-09-19. So, every time:
 
 1. Author downloads the current `.docx` from Google Docs over the repo copy.

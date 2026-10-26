@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import MultimediaClientPage from "./MultimediaClientPage";
 import VideosPage from "@/app/media/videos/page";
 import Link from "next/link";
+import EmailCaptureBar from "@/components/EmailCaptureBar";
 
 const PODCAST_SERIES = [
   {
@@ -10,7 +11,7 @@ const PODCAST_SERIES = [
     title: "Five Pillars Podcast",
     desc: "Deep-dive conversations on Policy, Technology, Economics, Clinical, and Operations — one episode per pillar per month, plus recurring episodes on the Equity Imperative, featuring HTR analysts and field practitioners.",
     frequency: "Monthly · 6 episodes per cycle",
-    status: "Launching Q3 2025",
+    status: "In development",
     accentBg: "bg-indigo-50",
     accentBorder: "border-indigo-200",
     accentText: "text-indigo-700",
@@ -21,7 +22,7 @@ const PODCAST_SERIES = [
     title: "Vermont Health Lab",
     desc: "On-the-ground reporting from Vermont's health system transformation — Act 167, Act 68, the AHEAD model, and what's actually working for rural hospitals.",
     frequency: "Bi-weekly · ~30 minutes",
-    status: "Launching Q3 2025",
+    status: "In development",
     accentBg: "bg-emerald-50",
     accentBorder: "border-emerald-200",
     accentText: "text-emerald-700",
@@ -32,7 +33,7 @@ const PODCAST_SERIES = [
     title: "The Wire: Weekly Briefing",
     desc: "A 15-minute audio digest of the week's top healthcare policy and economics news — everything from The Wire, curated and narrated by an HTR analyst.",
     frequency: "Weekly · ~15 minutes",
-    status: "Launching Q2 2025",
+    status: "In development",
     accentBg: "bg-amber-50",
     accentBorder: "border-amber-200",
     accentText: "text-amber-700",
@@ -49,8 +50,8 @@ const PodcastsTab = () => (
           <p className="text-slate-600 leading-relaxed max-w-3xl">
             Three podcast series covering healthcare transformation from policy to practice.
             Episodes are produced by HTR analysts and feature practitioners, researchers, and
-            executives working at the frontier of health system change. Subscribe to get notified
-            at launch.
+            executives working at the frontier of health system change. None has launched yet;
+            subscribe to be told when the first episodes are published.
           </p>
         </div>
       </div>
@@ -80,12 +81,9 @@ const PodcastsTab = () => (
           early access to episode transcripts and show notes.
         </p>
       </div>
-      <Link
-        href="/connect/alerts"
-        className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-black text-white bg-indigo-600 hover:bg-indigo-700 transition-colors shadow whitespace-nowrap"
-      >
-        Subscribe to Alerts →
-      </Link>
+      <div className="w-full md:w-96">
+        <EmailCaptureBar context="podcast" variant="inline" />
+      </div>
     </div>
   </div>
 );
