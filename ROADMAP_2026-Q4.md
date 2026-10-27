@@ -218,7 +218,7 @@ Course slug `transformation-portfolio-management` ("Transformation as Portfolio 
 5 tracks x 3 lessons. Scripts: `frontend/content/_course_portfolio_t{1..5}.py` (run from repo
 root; `--commit` posts to Sanity; quality gate in `_course_portfolio_common.py`).
 - Track 1 (L1-3) and Track 2 (L4-6): POSTED to Sanity.
-- Track 3 (L7-9): written, committed; L8 needs ~60 more words to pass the gate, then post.
+- Track 3 (L7-9): POSTED to Sanity.
 - Track 4 (L10 risk register, L11 reading the register/heat map/escalation, L12 benefits
   realization vs Act 167 goals) and Track 5 (L13 business case, L14 objections + roadmap,
   L15 capstone across /portfolio-sequencing-test, /transformation-friction-index,
