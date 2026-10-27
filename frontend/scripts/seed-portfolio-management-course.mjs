@@ -22,7 +22,7 @@ const die = (label, err) => { if (err) { console.error("ERR", label, err.message
 
 const COURSE = {
   slug: "transformation-portfolio-management",
-  title: "Transformation as Portfolio Management",
+  title: "Portfolio Management for Healthcare Transformation",
   subtitle: "PMI standards for running a five-pillar transformation: roles, sequencing, risk, benefits and the business case",
   description:
     "The companion course to Chapter 15 of Transforming Healthcare. A healthcare transformation is not a project or a single program; it is a portfolio of interdependent programs that must be built in dependency order against fixed deadlines. This course applies PMI's portfolio, program and project standards to that problem, using Vermont's 19-component transformation as the worked case: defining the portfolio, staffing and governing it, scheduling it by dependency rather than by deadline, choosing predictive or adaptive management per component, measuring progress with earned value, building and reading the portfolio risk register, tracing every component to Act 167's goals, and making the business case for a portfolio office. It ends with a capstone in which you build and run a portfolio of your own on the platform's tools.",

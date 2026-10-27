@@ -214,7 +214,7 @@ cloud sessions** (Sanity, Supabase, production site, Fly backend). No work from 
 
 ## Chapter 15 course — DONE 2026-10-27
 
-`transformation-portfolio-management` ("Transformation as Portfolio Management"): 5 tracks,
+`transformation-portfolio-management` ("Portfolio Management for Healthcare Transformation"; renamed from "Transformation as Portfolio Management" to avoid clashing with the Five Pillars Track 8 lesson of that name): 5 tracks,
 15 lessons, ~6.5 h, live (Sanity bodies + Supabase rows; audit-courses 15/15 rich; rendered
 and checked locally). Sources: `frontend/content/_course_portfolio_t{1..5}.py`,
 `frontend/scripts/seed-portfolio-management-course.mjs`.
