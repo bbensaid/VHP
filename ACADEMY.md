@@ -8,6 +8,13 @@ _Last verified against code and live Supabase/Sanity: 2026-10-07._
 
 ## The Rules (read before touching Academy data)
 
+- **Tables: store rows as a JSON string, never an array of objects.** Sanity sorts object
+  keys alphabetically, so an object-array table loses its column order (found 2026-10-27:
+  39 of 45 Academy tables were scrambled this way). `CONTENT_TEMPLATE.table()` now writes a
+  string; header keys may contain spaces.
+- **Cloud sessions:** node scripts need `NODE_USE_ENV_PROXY=1` (Node's fetch ignores the
+  sandbox proxy otherwise); credentials come from `frontend/.env.local`.
+
 These are the facts that have caused real breakage when forgotten. Each was verified against code on 2026-10-07.
 
 1. **Two stores, two jobs.** Supabase holds *structure and state* (`courses` → `tracks` → `lessons`, quizzes, enrollment, progress). Sanity holds the *rich lesson body* (`academyModule` documents, Portable Text). Neither replaced the other.
@@ -459,7 +466,7 @@ Live Supabase query, 2026-10-07: **18 courses (all published), 100 tracks (all p
 | `revenue-cycle-management` | Revenue Cycle Management | 7 | 21 | 21 | operations | intermediate | 11 |
 | `transformation-leadership` | Transformation Leadership | 1 | 6 | 6 | operations | advanced | 12 |
 | `value-based-care` | Value-Based Care: From Fee-for-Service to Outcomes | 7 | 23 (21 published) | 17 | economics | intermediate | 6 |
-| `welcome-htr-framework` | Welcome & the HTR Framework | 1 | 1 | 0 | technology | — | 1 |
+| `welcome-htr-framework` | **Start Here** (renamed 2026-10-27; slug kept so links survive) | 1 | 5 | 5 | technology | foundational | 1 |
 
 "Book ch." is `courses.chapter_ref` (migration 032). The partial courses (genomics, interoperability, value-based-care) and the empty `welcome-htr-framework` shell are open owner decisions (RELEASE_AUDIT CONTENT-1/2) — thin lessons may be deliberate.
 
