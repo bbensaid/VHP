@@ -91,7 +91,7 @@ L13 = [
     blk('src1', "[1] " + BOOK15 + " — §15.11 and Figure 15.9 (business case and cost of failure), §15.12 (roadmap timing), §15.13 objection 3"),
     blk('src2', "[2] Project Management Institute, Pulse of the Profession 2017 (survey report) — https://sitsd.mt.gov/_docs/ITMC/SMPMAW/2017.08.23/PMIs-Pulse-of-the-Profession-2017-Survey.pdf — about 9.7% of project spending wasted through poor performance"),
     blk('src3', "[3] Health Transformation Review, Transforming Healthcare, Chapter 14 — https://healthtransformationreview.org/read/chapter-14 — political sustainability and the descriptive-plan failure mode"),
-    blk('src4', "[4] Centers for Medicare & Medicaid Services, Rural Health Transformation Program — https://www.cms.gov/priorities/rural-health-transformation-rht-program/overview — the federal program whose award the office coordinates"),
+    blk('src4', "[4] Centers for Medicare & Medicaid Services, CMS Launches Landmark $50 Billion Rural Health Transformation Program (press release, September 15, 2025) — https://www.cms.gov/newsroom/press-releases/cms-launches-landmark-50-billion-rural-health-transformation-program — the federal program whose award the office coordinates"),
 ]
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -194,6 +194,7 @@ L15 = [
     blk('s2p1', "Open the Transformation Friction Index at /transformation-friction-index and score your organization or state on each pillar. Chapter 15 notes that the tool finds the binding constraint by sensitivity rather than by the highest bar: the pillar whose improvement would lift delivered readiness most is where the portfolio manager's attention belongs. Then list your three most urgent initiatives by deadline. If none sits in the binding-constraint pillar, your portfolio is being scheduled by calendar rather than by dependency."),
     blk('s2p2', "Next, open the Investment Tracker at /investment-tracker and use the portfolio check to enter your components' committed capital by pillar. The tool checks each against its pillar's limiting gate and flags components funded ahead of their upstream gate. The book calls money moving faster than dependency order the early signal of premature investment."),
     blk('s2p3', "Record three facts from this step: the binding-constraint pillar, whether your most urgent initiatives sit in it, and which components are funded ahead of their gate. These become the centre of your portfolio brief."),
+    blk('s2p4', "If the two tools disagree, for example the Friction Index names Technology while your capital is concentrated in Economics, that disagreement is the finding. It usually means money is following deadlines or sponsors rather than the dependency chain."),
     callout('s2c1', "The binding constraint is found by sensitivity, not by the weakest score. Ask which pillar's improvement would lift delivered readiness most; that is where the next dollar and the next hour belong."),
 
     h2('s3h1', 'Step 3: Model a Slip and Score the Portfolio'),
@@ -217,6 +218,7 @@ L15 = [
     blk('s5p1', "Finish with a one-page brief for your governance body. Open with the answer to the oversight question: which component is the binding constraint, who owns it, and what would it take to accelerate it. Follow with the sequencing findings, components running ahead of their gate and components late by dependency, and the capital funded ahead of its gate."),
     blk('s5p2', "Then give the two or three risks that need a decision now, each with options and the cost of not deciding, and a benefits summary showing whether each goal is on course. Close with the management infrastructure the portfolio needs, costed as a share of what it coordinates and tied to the risks it reduces, as in Lesson 13."),
     blk('s5p3', "If you can write that page with confidence, you have done what Chapter 15 argues Vermont, and most organizations running a transformation, have not yet done: managed the transformation as a portfolio. Revisit the brief quarterly. The binding constraint will move, and the brief is how you will know."),
+    blk('s5p4', "Share the brief with the people who own the components as well as with the governance body. Component leads who see the whole portfolio, its binding constraint and its top risks understand why their own component is being accelerated, held back or resourced differently, and they become the first line of the portfolio's early-warning system. A portfolio brief that only travels upward manages the governance body; one that also travels outward manages the portfolio."),
     table('s5t1', 'The one-page portfolio brief', [
         {'Section': 'Oversight answer', 'Content': 'Binding constraint, its owner, and what would accelerate it'},
         {'Section': 'Sequencing', 'Content': 'Components ahead of their gate; components late by dependency; capital ahead of its gate'},
