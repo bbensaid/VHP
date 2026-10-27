@@ -63,6 +63,9 @@ affected transcripts with Piper and re-upload to `narration-audio`. Local and fr
   (answers quoted from the text, so no new claims); **[Author]** spot-checks.
 
 ### 1.6 Open sign-offs carried since August — **[Author]**
+- **Live check 2026-10-27 (Supabase + Sanity, audit-courses.mjs): CONTENT-1 and CONTENT-2 are
+  already resolved.** All 280 lessons in 18 courses are rich (sanity_slug set, >=20 blocks);
+  `welcome-htr-framework` has one 47-block lesson (posted 2026-10-18). Items below are history.
 - CONTENT-1: `welcome-htr-framework` course is a live 1-lesson empty shell. Delete,
   hide, or fill (fill = the "start here" course in 2.1).
 - CONTENT-2: 14 thin lessons (genomics 15/21 rich, VBC 17/23, interoperability 25/26).
