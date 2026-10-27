@@ -212,23 +212,13 @@ Answered 2026-10-26:
 Prerequisite for everything in Parts 1–2 that touches data: **live API access from
 cloud sessions** (Sanity, Supabase, production site, Fly backend). No work from dumps.
 
-## HANDOFF — Chapter 15 course in progress (2026-10-27)
+## Chapter 15 course — DONE 2026-10-27
 
-Course slug `transformation-portfolio-management` ("Transformation as Portfolio Management"),
-5 tracks x 3 lessons. Scripts: `frontend/content/_course_portfolio_t{1..5}.py` (run from repo
-root; `--commit` posts to Sanity; quality gate in `_course_portfolio_common.py`).
-- Track 1 (L1-3) and Track 2 (L4-6): POSTED to Sanity.
-- Track 3 (L7-9): POSTED to Sanity.
-- Track 4 (L10 risk register, L11 reading the register/heat map/escalation, L12 benefits
-  realization vs Act 167 goals) and Track 5 (L13 business case, L14 objections + roadmap,
-  L15 capstone across /portfolio-sequencing-test, /transformation-friction-index,
-  /investment-tracker, /impact-simulation, scorecard tab, /hti-dashboard): NOT WRITTEN.
-- Supabase rows NOT created yet: write a seed script in frontend/scripts/ (pattern:
-  start-here-course.mjs; lessons table has no unique slug constraint -> insert-if-missing),
-  course chapter_ref "15", pillar operations, level intermediate, sanity_slug = lesson slug.
-- Verified facts for the remaining lessons: PMI Pulse 2017 9.7%; Pulse 2018 9.9%, 1 in 3 high
-  BRM maturity; BRM Practice Guide (PMI, Dec 2018/Jan 2019); risk responses escalate/avoid/
-  transfer/mitigate/accept; Healthcare.gov GAO-14-694 + OIG OEI-06-14-00350.
-- Book defects found (report, do not fix without asking): Fig 15.3 CCBHC row says "5 entities"
-  but "six in all"; Fig 15.2 cites Program Mgmt standard 4th ed. (5th ed. published 2024).
-- Node scripts in cloud sessions need NODE_USE_ENV_PROXY=1. frontend/.env.local is session-only.
+`transformation-portfolio-management` ("Transformation as Portfolio Management"): 5 tracks,
+15 lessons, ~6.5 h, live (Sanity bodies + Supabase rows; audit-courses 15/15 rich; rendered
+and checked locally). Sources: `frontend/content/_course_portfolio_t{1..5}.py`,
+`frontend/scripts/seed-portfolio-management-course.mjs`.
+- Open: the book's Ch15 "In the Academy" paragraph does not yet name this course (book edit).
+- Book defects found (not fixed): Fig 15.3 CCBHC row "5 entities" vs "six in all";
+  Fig 15.2 cites Program Management standard 4th ed. (5th ed. published 2024).
+- Node scripts in cloud sessions need NODE_USE_ENV_PROXY=1; frontend/.env.local is session-only.

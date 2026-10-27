@@ -465,6 +465,7 @@ Live Supabase query, 2026-10-07: **18 courses (all published), 100 tracks (all p
 | `population-health-management` | Population Health Management | 7 | 17 | 17 | clinical | intermediate | 8 |
 | `revenue-cycle-management` | Revenue Cycle Management | 7 | 21 | 21 | operations | intermediate | 11 |
 | `transformation-leadership` | Transformation Leadership | 1 | 6 | 6 | operations | advanced | 12 |
+| `transformation-portfolio-management` | Transformation as Portfolio Management (added 2026-10-27) | 5 | 15 | 15 | operations | intermediate | 15 |
 | `value-based-care` | Value-Based Care: From Fee-for-Service to Outcomes | 7 | 23 (21 published) | 17 | economics | intermediate | 6 |
 | `welcome-htr-framework` | **Start Here** (renamed 2026-10-27; slug kept so links survive) | 1 | 5 | 5 | technology | foundational | 1 |
 
