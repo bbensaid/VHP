@@ -218,7 +218,10 @@ cloud sessions** (Sanity, Supabase, production site, Fly backend). No work from 
 15 lessons, ~6.5 h, live (Sanity bodies + Supabase rows; audit-courses 15/15 rich; rendered
 and checked locally). Sources: `frontend/content/_course_portfolio_t{1..5}.py`,
 `frontend/scripts/seed-portfolio-management-course.mjs`.
-- Open: the book's Ch15 "In the Academy" paragraph does not yet name this course (book edit).
 - Book defects found (not fixed): Fig 15.3 CCBHC row "5 entities" vs "six in all";
   Fig 15.2 cites Program Management standard 4th ed. (5th ed. published 2024).
 - Node scripts in cloud sessions need NODE_USE_ENV_PROXY=1; frontend/.env.local is session-only.
+- Cloud sandbox pandoc is 3.1.3 (older than the author's Mac): `refresh_md.py` regenerates
+  `frontend/content/book-html/*` with centered table headers dropped in every chapter. After a
+  cloud refresh, restore book-html from git and patch only the changed paragraph (done 2026-10-27).
+- Ch15 book link to the new course: DONE 2026-10-27 (§15.14 In the Academy paragraph).
