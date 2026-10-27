@@ -72,6 +72,18 @@ affected transcripts with Piper and re-upload to `narration-audio`. Local and fr
   Confirm intentional or approve rewrites.
 - CODE-3: unknown hosts default to the `.solutions` (advisory) brand.
 
+### 1.6b Done 2026-10-27
+- **Start Here course live**: `welcome-htr-framework` renamed Start Here, 5 lessons (~2 h):
+  the existing welcome lesson + Reading the Book With the Platform Open, Your First Research
+  Lab Session, Getting Good Answers From the AI Analyst, Your Learning Path and the Lab
+  Workbook. Source: `frontend/content/_course_start_here.py`, `frontend/scripts/start-here-course.mjs`.
+- **Open: 35 older Academy tables have scrambled (alphabetical) columns** — Sanity sorted the
+  object keys. Fix = re-post each table as a JSON string with the intended column order, taken
+  from the lesson's source script where one exists.
+- **Open: the AI Analyst's index contains a PDF sourced from Anna's Archive** (Culyer,
+  Dictionary of Health Economics) — a pirated copy; remove it from `data_rag_documents` and
+  `backend/data/`. Also unverified: whether the book itself is in the live index.
+
 ### 1.7 Hygiene (background, low priority) — **[Claude]**
 Lint 245 warnings; 21 moderate npm vulns (upstream Sanity/Sentry); `backend/venv`
 pip shebang points at another project (rebuild venv); Supabase backup ≤30 days.

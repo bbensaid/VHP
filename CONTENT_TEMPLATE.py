@@ -303,7 +303,11 @@ def table(k, title, rows):
           {'Model': 'Capitation',      'Incentive': 'Efficiency', 'Risk': 'Provider'},
       ])
     """
-    return {'_type':'code','_key':k,'title':title,'language':'json','code':rows}
+    # Stored as a JSON STRING, not an array of objects: Sanity sorts object keys
+    # alphabetically, which scrambled column order in 39 of 45 Academy tables
+    # (found 2026-10-27). AcademyContent.tsx JSON.parses strings, keeping order.
+    # Header keys may now contain spaces ('On paper'); underscores still work.
+    return {'_type':'code','_key':k,'title':title,'language':'json','code':json.dumps(rows, ensure_ascii=False)}
 
 
 # ══════════════════════════════════════════════════════════════════════════════
