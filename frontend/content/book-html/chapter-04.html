@@ -7,23 +7,23 @@
 <h3 id="vermonts-health-data-infrastructure-three-layers">4.1.1 <strong>Vermont’s Health Data Infrastructure — Three Layers</strong></h3>
 <div class="table-wrap"><table>
 <thead>
-<tr>
-<th style="text-align: left;"><strong>Layer</strong></th>
-<th style="text-align: left;"><strong>Role in the data stack</strong></th>
+<tr class="header">
+<th><strong>Layer</strong></th>
+<th><strong>Role in the data stack</strong></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align: left;"><strong>Layer 1</strong> — VHCURES (All-Payer Claims Database)</td>
-<td style="text-align: left;">Foundation for total-cost-of-care measurement and HEDIS stratification. Gap: race/ethnicity data incomplete in commercial claims.</td>
+<tr class="odd">
+<td><strong>Layer 1</strong> — VHCURES (All-Payer Claims Database)</td>
+<td>Foundation for total-cost-of-care measurement and HEDIS stratification. Gap: race/ethnicity data incomplete in commercial claims.</td>
 </tr>
-<tr>
-<td style="text-align: left;"><strong>Layer 2</strong> — VITL / VHIE (Health Information Exchange)</td>
-<td style="text-align: left;">Clinical data substrate — diagnoses, labs, medications, care plans. Voluntary participation means not all providers are connected.</td>
+<tr class="header">
+<td><strong>Layer 2</strong> — VITL / VHIE (Health Information Exchange)</td>
+<td>Clinical data substrate — diagnoses, labs, medications, care plans. Voluntary participation means not all providers are connected.</td>
 </tr>
-<tr>
-<td style="text-align: left;"><strong>Layer 3</strong> — AHS-GMCB Analytics Vendor (procurement underway)</td>
-<td style="text-align: left;">Modeling layer for global budget design, TCOC tracking, risk stratification, and equity monitoring. Act 68 global budgets take effect FY2028.</td>
+<tr class="odd">
+<td><strong>Layer 3</strong> — AHS-GMCB Analytics Vendor (procurement underway)</td>
+<td>Modeling layer for global budget design, TCOC tracking, risk stratification, and equity monitoring. Act 68 global budgets take effect FY2028.</td>
 </tr>
 </tbody>
 </table></div>
@@ -37,14 +37,14 @@
 <p>VHCURES is a substantial data asset that gives Vermont analytical capabilities most states lack. Understanding both its capabilities and its limitations is essential for anyone designing Vermont’s technology infrastructure.</p>
 <div class="table-wrap"><table>
 <thead>
-<tr>
-<th style="text-align: center;"><p><strong>60%</strong></p>
+<tr class="header">
+<th><p><strong>60%</strong></p>
 <p><strong>Commercial Population Covered</strong></p></th>
-<th style="text-align: center;"><p><strong>100%</strong></p>
+<th><p><strong>100%</strong></p>
 <p><strong>Medicaid &amp; Medicare Enrollees</strong></p></th>
-<th style="text-align: center;"><p><strong>Claims + Rx</strong></p>
+<th><p><strong>Claims + Rx</strong></p>
 <p><strong>Data Types Held</strong></p></th>
-<th style="text-align: center;"><p><strong>6+ Mo</strong></p>
+<th><p><strong>6+ Mo</strong></p>
 <p><strong>Claims Run-Out Before Analysis</strong></p></th>
 </tr>
 </thead>
@@ -56,32 +56,32 @@
 <p>VHCURES has four structural limitations that matter directly for Vermont’s transformation management needs. Oliver Wyman identified the data infrastructure as one of the barriers to coordinated transformation, and the specific limitations below explain why.</p>
 <div class="table-wrap"><table>
 <thead>
-<tr>
-<th style="text-align: left;"><strong>Limitation</strong></th>
-<th style="text-align: left;"><strong>What it means for transformation</strong></th>
-<th style="text-align: left;"><strong>Required improvement</strong></th>
+<tr class="header">
+<th><strong>Limitation</strong></th>
+<th><strong>What it means for transformation</strong></th>
+<th><strong>Required improvement</strong></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align: left;">Incomplete commercial coverage (60%)</td>
-<td style="text-align: left;">The roughly 40% of commercially insured Vermonters missing from VHCURES are mostly members of self-insured employer plans, which are not in VHCURES unless the employer voluntarily submits. Total cost of care calculations and population health analyses are systematically missing a significant portion of the commercially insured population. Under federal law, self-insured employers cannot be required to submit data to state APCDs.</td>
-<td style="text-align: left;">Voluntary submission incentives; federal ERISA reform advocacy; use of commercial insurer aggregate data for the covered portion; flag analyses as partial in all public reporting</td>
+<tr class="odd">
+<td>Incomplete commercial coverage (60%)</td>
+<td>The roughly 40% of commercially insured Vermonters missing from VHCURES are mostly members of self-insured employer plans, which are not in VHCURES unless the employer voluntarily submits. Total cost of care calculations and population health analyses are systematically missing a significant portion of the commercially insured population. Under federal law, self-insured employers cannot be required to submit data to state APCDs.</td>
+<td>Voluntary submission incentives; federal ERISA reform advocacy; use of commercial insurer aggregate data for the covered portion; flag analyses as partial in all public reporting</td>
 </tr>
-<tr>
-<td style="text-align: left;">Data lag measured in quarters</td>
-<td style="text-align: left;">VHCURES is collected quarterly, and analysts typically allow about six months for late-adjudicated claims to arrive before analyzing a period (GMCB). Published measures run further behind still: the November 2025 AHS transformation report acknowledged that most available measures reflect 2023 or earlier data. Under global budgets, where hospitals need to understand their population health performance in near-real-time to manage within their budget cap, this lag makes VHCURES insufficient as a management tool.</td>
-<td style="text-align: left;">Act 68 global budgets require more timely data reporting; RHT Program analytics investments; GMCB FY27 hospital budget guidance requires hospitals to report more frequently; push for a 60–90 day path from date of service to usable data</td>
+<tr class="header">
+<td>Data lag measured in quarters</td>
+<td>VHCURES is collected quarterly, and analysts typically allow about six months for late-adjudicated claims to arrive before analyzing a period (GMCB). Published measures run further behind still: the November 2025 AHS transformation report acknowledged that most available measures reflect 2023 or earlier data. Under global budgets, where hospitals need to understand their population health performance in near-real-time to manage within their budget cap, this lag makes VHCURES insufficient as a management tool.</td>
+<td>Act 68 global budgets require more timely data reporting; RHT Program analytics investments; GMCB FY27 hospital budget guidance requires hospitals to report more frequently; push for a 60–90 day path from date of service to usable data</td>
 </tr>
-<tr>
-<td style="text-align: left;">No behavioral health or SDOH data integration</td>
-<td style="text-align: left;">VHCURES contains medical and pharmacy claims but not mental health and SUD clinical records (governed by 42 CFR Part 2 and state confidentiality laws), social service utilization data, housing status, or other SDOH indicators. The HIE Steering Committee has a statutory directive to create one health record per person integrating claims, clinical, and SDOH data — but this integration has not been implemented.</td>
-<td style="text-align: left;">VHCURES-VHIE integration per HIE Steering Committee statutory mandate; Act 167 HIE provisions; SDOH data collection through Blueprint HRSN screening linked to VHCURES identifiers with appropriate consent framework</td>
+<tr class="odd">
+<td>No behavioral health or SDOH data integration</td>
+<td>VHCURES contains medical and pharmacy claims but not mental health and SUD clinical records (governed by 42 CFR Part 2 and state confidentiality laws), social service utilization data, housing status, or other SDOH indicators. The HIE Steering Committee has a statutory directive to create one health record per person integrating claims, clinical, and SDOH data — but this integration has not been implemented.</td>
+<td>VHCURES-VHIE integration per HIE Steering Committee statutory mandate; Act 167 HIE provisions; SDOH data collection through Blueprint HRSN screening linked to VHCURES identifiers with appropriate consent framework</td>
 </tr>
-<tr>
-<td style="text-align: left;">No clinical results, only billing records</td>
-<td style="text-align: left;">VHCURES records that a service was delivered and paid for, but not what it found. A claim shows an HbA1c test was performed; it does not carry the result. This is why claims-only quality measurement systematically underestimates performance, and why the hybrid measures Act 68 depends on cannot be produced from VHCURES alone.</td>
-<td style="text-align: left;">Clinical-claims linkage through the UHDS; MDWAS weekly refresh as the primary path; VHCURES retained for retrospective analysis rather than management</td>
+<tr class="header">
+<td>No clinical results, only billing records</td>
+<td>VHCURES records that a service was delivered and paid for, but not what it found. A claim shows an HbA1c test was performed; it does not carry the result. This is why claims-only quality measurement systematically underestimates performance, and why the hybrid measures Act 68 depends on cannot be produced from VHCURES alone.</td>
+<td>Clinical-claims linkage through the UHDS; MDWAS weekly refresh as the primary path; VHCURES retained for retrospective analysis rather than management</td>
 </tr>
 </tbody>
 </table></div>
@@ -91,8 +91,12 @@
 <h3 id="perception-vs.-reality-what-the-exchange-actually-delivers">4.3.1 <strong>Perception vs. Reality — What the Exchange Actually Delivers</strong></h3>
 <p>The VHCURES limitations catalogued above are that database’s own. The exchange has a separate set, and in Oliver Wyman’s assessment a more consequential one: the gap between what Vermont appears to have in a statewide HIE and what the exchange can actually be used for. The finding is worth quoting because it is the more damaging of the two:</p>
 <ul>
-<li><p>Perception: Vermont has a statewide Health Information Exchange, operated under exclusive statutory designation by VITL.</p></li>
-<li><p>Reality: Participation is voluntary and many community-based providers are not included. The exchange lacks pharmacy claims data and is not viewed as ‘user friendly’ by providers.</p></li>
+<li><blockquote>
+<p>Perception: Vermont has a statewide Health Information Exchange, operated under exclusive statutory designation by VITL.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Reality: Participation is voluntary and many community-based providers are not included. The exchange lacks pharmacy claims data and is not viewed as ‘user friendly’ by providers.</p>
+</blockquote></li>
 </ul>
 <p>This matters because Vermont’s transformation strategy depends on care coordination between hospitals and community providers — and care coordination requires data sharing. A care coordinator trying to manage a patient transitioning from a hospital inpatient stay to a community mental health program cannot access the clinical data they need if the mental health agency is not connected to VITL. A primary care practice trying to close chronic disease management gaps cannot see the specialty care their patient received at a different facility if that facility’s data is not in the HIE.</p>
 <p>Vermont’s technology investments — the VHCURES-VHIE integration mandate, the RHT Program interoperability grants, Act 68’s reporting requirements — are all aimed at closing this gap between VITL’s nominal existence and the functional interoperability Vermont’s care coordination model requires.</p>
@@ -119,31 +123,31 @@
 <p>The practical path to this integration has three components that must be executed in sequence:</p>
 <div class="table-wrap"><table>
 <thead>
-<tr>
-<th style="text-align: left;"><strong>Step</strong></th>
-<th style="text-align: left;"><strong>What it requires</strong></th>
-<th style="text-align: left;"><strong>Timeline</strong></th>
-<th style="text-align: left;"><strong>Current status</strong></th>
+<tr class="header">
+<th><strong>Step</strong></th>
+<th><strong>What it requires</strong></th>
+<th><strong>Timeline</strong></th>
+<th><strong>Current status</strong></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align: left;">1. VHCURES-VHIE claims-clinical integration</td>
-<td style="text-align: left;">Merge VHCURES claims data with VHIE clinical data using a privacy-compliant patient matching methodology. This gives every provider record access to both the claims history (what care was delivered, at what cost, through what payers) and the clinical record (diagnoses, medications, lab results, care plans).</td>
-<td style="text-align: left;">DVHA leading; Act 68 global budgets require this for population health management; target 2026–2027</td>
-<td style="text-align: left;">HIE Steering Committee has a statutory directive to include data integration strategy in HIE plans; VHCURES was linked to Blueprint clinical-registry data (fed through VITL) for HbA1c and blood-pressure measures in 2013–2018 Blueprint profiles; full bidirectional integration not yet operational</td>
+<tr class="odd">
+<td>1. VHCURES-VHIE claims-clinical integration</td>
+<td>Merge VHCURES claims data with VHIE clinical data using a privacy-compliant patient matching methodology. This gives every provider record access to both the claims history (what care was delivered, at what cost, through what payers) and the clinical record (diagnoses, medications, lab results, care plans).</td>
+<td>DVHA leading; Act 68 global budgets require this for population health management; target 2026–2027</td>
+<td>HIE Steering Committee has a statutory directive to include data integration strategy in HIE plans; VHCURES was linked to Blueprint clinical-registry data (fed through VITL) for HbA1c and blood-pressure measures in 2013–2018 Blueprint profiles; full bidirectional integration not yet operational</td>
 </tr>
-<tr>
-<td style="text-align: left;">2. Mental health and SUD data integration</td>
-<td style="text-align: left;">Add mental health and substance use disorder data to the integrated record, with appropriate consent frameworks that comply with 42 CFR Part 2 (federal SUD confidentiality rules) and Vermont’s own privacy statutes. This is technically complex — SUD data has a separate consent regime from medical data — but clinically essential.</td>
-<td style="text-align: left;">2027–2028; requires federal 42 CFR Part 2 compliance pathway</td>
-<td style="text-align: left;">DVHA working with VITL on consent policy; 2025 federal regulatory changes to 42 CFR Part 2 may simplify compliance pathway; behavioral health CCBHC expansion creates urgency</td>
+<tr class="header">
+<td>2. Mental health and SUD data integration</td>
+<td>Add mental health and substance use disorder data to the integrated record, with appropriate consent frameworks that comply with 42 CFR Part 2 (federal SUD confidentiality rules) and Vermont’s own privacy statutes. This is technically complex — SUD data has a separate consent regime from medical data — but clinically essential.</td>
+<td>2027–2028; requires federal 42 CFR Part 2 compliance pathway</td>
+<td>DVHA working with VITL on consent policy; 2025 federal regulatory changes to 42 CFR Part 2 may simplify compliance pathway; behavioral health CCBHC expansion creates urgency</td>
 </tr>
-<tr>
-<td style="text-align: left;">3. SDOH data integration</td>
-<td style="text-align: left;">Add social service utilization data — housing program participation, food assistance, transportation use, domestic violence services — linked to the health record with appropriate privacy protections. This is the most politically sensitive and technically complex integration because it involves non-healthcare agencies and data that carries significant stigma risk.</td>
-<td style="text-align: left;">2028 and beyond; requires cross-agency data governance agreement</td>
-<td style="text-align: left;">Blueprint HRSN screening generates SDOH data but it is not yet linked to VHCURES or VHIE at scale; AHS HSA Coordinator model (Chapter 16) provides the cross-agency governance vehicle</td>
+<tr class="odd">
+<td>3. SDOH data integration</td>
+<td>Add social service utilization data — housing program participation, food assistance, transportation use, domestic violence services — linked to the health record with appropriate privacy protections. This is the most politically sensitive and technically complex integration because it involves non-healthcare agencies and data that carries significant stigma risk.</td>
+<td>2028 and beyond; requires cross-agency data governance agreement</td>
+<td>Blueprint HRSN screening generates SDOH data but it is not yet linked to VHCURES or VHIE at scale; AHS HSA Coordinator model (Chapter 16) provides the cross-agency governance vehicle</td>
 </tr>
 </tbody>
 </table></div>
@@ -162,29 +166,29 @@
 <col style="width: 46%" />
 </colgroup>
 <thead>
-<tr>
-<th style="text-align: left;"><strong>Layer</strong></th>
-<th style="text-align: left;"><strong>Name</strong></th>
-<th style="text-align: left;"><strong>Components</strong></th>
-<th style="text-align: left;"><strong>What it establishes</strong></th>
+<tr class="header">
+<th><strong>Layer</strong></th>
+<th><strong>Name</strong></th>
+<th><strong>Components</strong></th>
+<th><strong>What it establishes</strong></th>
 </tr>
-<tr>
-<th style="text-align: left;">3</th>
-<th style="text-align: left;">End-User Services</th>
-<th style="text-align: left;">VITLAccess provider portal; real-time ADT event notifications; Advanced Analytics Layer</th>
-<th style="text-align: left;">What clinicians and state leaders actually touch — including the analytics used for regionalization and global-budget modeling</th>
+<tr class="odd">
+<th>3</th>
+<th>End-User Services</th>
+<th>VITLAccess provider portal; real-time ADT event notifications; Advanced Analytics Layer</th>
+<th>What clinicians and state leaders actually touch — including the analytics used for regionalization and global-budget modeling</th>
 </tr>
-<tr>
-<th style="text-align: left;">2</th>
-<th style="text-align: left;">Exchange Services</th>
-<th style="text-align: left;">FHIR APIs; Clinical Data Repository</th>
-<th style="text-align: left;">Moves and stores data as a single source of truth, prioritized around the MDWAS pipeline rather than the lagging VHCURES feed</th>
+<tr class="header">
+<th>2</th>
+<th>Exchange Services</th>
+<th>FHIR APIs; Clinical Data Repository</th>
+<th>Moves and stores data as a single source of truth, prioritized around the MDWAS pipeline rather than the lagging VHCURES feed</th>
 </tr>
-<tr>
-<th style="text-align: left;">1</th>
-<th style="text-align: left;">Foundational Services</th>
-<th style="text-align: left;">Master Patient Index (Verato); Terminology Services (Term Atlas); Rhapsody integration engine</th>
-<th style="text-align: left;">Establishes <em>who a patient is</em> and ensures every system speaks the same clinical vocabulary (SNOMED CT, LOINC). Without it, nothing above is trustworthy</th>
+<tr class="odd">
+<th>1</th>
+<th>Foundational Services</th>
+<th>Master Patient Index (Verato); Terminology Services (Term Atlas); Rhapsody integration engine</th>
+<th>Establishes <em>who a patient is</em> and ensures every system speaks the same clinical vocabulary (SNOMED CT, LOINC). Without it, nothing above is trustworthy</th>
 </tr>
 </thead>
 <tbody>
@@ -217,35 +221,35 @@
 <p>AHS has commissioned a feasibility assessment to evaluate the cost-benefit of implementing a statewide electronic health record — a single EHR platform that all Vermont hospitals and primary care practices would use, enabling seamless data exchange as a byproduct of shared infrastructure rather than through complex interface work. Vermont’s HIE Strategic Plan describes the assessment as evaluating ‘what a statewide EHR would look like in line with the Act 167 Report.’</p>
 <div class="table-wrap"><table>
 <thead>
-<tr>
-<th style="text-align: left;"><strong>Case for a statewide EHR</strong></th>
-<th style="text-align: left;"><strong>Case against (or caution)</strong></th>
+<tr class="header">
+<th><strong>Case for a statewide EHR</strong></th>
+<th><strong>Case against (or caution)</strong></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align: left;">Eliminates interface complexity — data is naturally shared across providers on the same platform</td>
-<td style="text-align: left;">Capital cost is substantial — major EHR implementations run $100-300M for large health systems; statewide scope amplifies this</td>
+<tr class="odd">
+<td>Eliminates interface complexity — data is naturally shared across providers on the same platform</td>
+<td>Capital cost is substantial — major EHR implementations run $100-300M for large health systems; statewide scope amplifies this</td>
 </tr>
-<tr>
-<td style="text-align: left;">Community meeting participants specifically cited EMR fragmentation as a barrier: ‘EMR systems don’t talk to each other and it’s difficult to transfer from one center to another’</td>
-<td style="text-align: left;">Disruption risk — forced EHR migrations have caused significant clinical workflow disruption and temporary quality problems at major health systems</td>
+<tr class="header">
+<td>Community meeting participants specifically cited EMR fragmentation as a barrier: ‘EMR systems don’t talk to each other and it’s difficult to transfer from one center to another’</td>
+<td>Disruption risk — forced EHR migrations have caused significant clinical workflow disruption and temporary quality problems at major health systems</td>
 </tr>
-<tr>
-<td style="text-align: left;">Reduces per-provider IT infrastructure cost — smaller hospitals cannot afford full IT departments; shared infrastructure is more efficient</td>
-<td style="text-align: left;">FHIR-based interoperability (see §4.5) may make data exchange manageable without a single EHR, reducing the case for the disruption of migration</td>
+<tr class="odd">
+<td>Reduces per-provider IT infrastructure cost — smaller hospitals cannot afford full IT departments; shared infrastructure is more efficient</td>
+<td>FHIR-based interoperability (see §4.5) may make data exchange manageable without a single EHR, reducing the case for the disruption of migration</td>
 </tr>
-<tr>
-<td style="text-align: left;">Enables near-real-time population health data that VHCURES’s quarterly, run-out-delayed claims cannot provide</td>
-<td style="text-align: left;">Vendor lock-in — a single-vendor statewide EHR creates significant dependence on that vendor’s pricing, contract terms, and long-term viability</td>
+<tr class="header">
+<td>Enables near-real-time population health data that VHCURES’s quarterly, run-out-delayed claims cannot provide</td>
+<td>Vendor lock-in — a single-vendor statewide EHR creates significant dependence on that vendor’s pricing, contract terms, and long-term viability</td>
 </tr>
-<tr>
-<td style="text-align: left;">Maryland’s experience: common data infrastructure enabled the HSCRC to manage global budgets effectively</td>
-<td style="text-align: left;">ERISA self-insured employers — outside state authority — would still not be in the system even with a statewide EHR</td>
+<tr class="odd">
+<td>Maryland’s experience: common data infrastructure enabled the HSCRC to manage global budgets effectively</td>
+<td>ERISA self-insured employers — outside state authority — would still not be in the system even with a statewide EHR</td>
 </tr>
-<tr>
-<td style="text-align: left;">Vermont’s RHT application funds incentives for voluntary adoption of a shared EMR that keeps contributing data to the VHIE</td>
-<td style="text-align: left;">Vermont’s diverse provider landscape (hospitals, FQHCs, private practices, mental health agencies) may not all be able to adopt a single platform</td>
+<tr class="header">
+<td>Vermont’s RHT application funds incentives for voluntary adoption of a shared EMR that keeps contributing data to the VHIE</td>
+<td>Vermont’s diverse provider landscape (hospitals, FQHCs, private practices, mental health agencies) may not all be able to adopt a single platform</td>
 </tr>
 </tbody>
 </table></div>
@@ -258,11 +262,21 @@
 <h3 id="what-the-vermont-cin-will-provide">4.4.2 <strong>What the Vermont CIN Will Provide</strong></h3>
 <p>Vermont’s RHT Program application describes the Shared Services initiative — which includes the CIN infrastructure — as providing five specific functions for participating hospitals and providers:</p>
 <ul>
-<li><p>Analytics support: A shared analytics platform available to all hospitals and non-hospital providers for transformation and regionalization planning — identifying areas most in need, modeling the impact of service line changes, and tracking quality and cost metrics. This is the analytics vendor that AHS and GMCB are jointly procuring.</p></li>
-<li><p>Shared clinical protocols: Standardized clinical pathways for high-volume conditions — sepsis, heart failure, COPD, mental health crisis — that all participating providers adopt, enabling consistent quality regardless of which facility a patient uses.</p></li>
-<li><p>Group purchasing: Coordinated supply chain and group purchasing for medical supplies, equipment, and technology — capturing the scale economies that individual small hospitals cannot achieve independently. Oliver Wyman identified this as one of the highest-leverage near-term cost reduction opportunities.</p></li>
-<li><p>Administrative shared services: Shared infrastructure for billing, coding, credentialing, HR, and IT support — reducing the administrative overhead that drives Vermont’s $1,303 per-discharge administrative cost premium over national benchmarks.</p></li>
-<li><p>Referral network formalization: Structured referral agreements between RSC hospitals and Tier 2/3 facilities for each COE specialty — ensuring that the regionalization blueprint operates as a reliable clinical network rather than a set of informal relationships.</p></li>
+<li><blockquote>
+<p>Analytics support: A shared analytics platform available to all hospitals and non-hospital providers for transformation and regionalization planning — identifying areas most in need, modeling the impact of service line changes, and tracking quality and cost metrics. This is the analytics vendor that AHS and GMCB are jointly procuring.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Shared clinical protocols: Standardized clinical pathways for high-volume conditions — sepsis, heart failure, COPD, mental health crisis — that all participating providers adopt, enabling consistent quality regardless of which facility a patient uses.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Group purchasing: Coordinated supply chain and group purchasing for medical supplies, equipment, and technology — capturing the scale economies that individual small hospitals cannot achieve independently. Oliver Wyman identified this as one of the highest-leverage near-term cost reduction opportunities.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Administrative shared services: Shared infrastructure for billing, coding, credentialing, HR, and IT support — reducing the administrative overhead that drives Vermont’s $1,303 per-discharge administrative cost premium over national benchmarks.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Referral network formalization: Structured referral agreements between RSC hospitals and Tier 2/3 facilities for each COE specialty — ensuring that the regionalization blueprint operates as a reliable clinical network rather than a set of informal relationships.</p>
+</blockquote></li>
 </ul>
 <p>The CIN also serves as the governance vehicle for the technology investments Vermont’s transformation requires. Individual small hospitals cannot justify the capital investment in AI scribe technology, remote patient monitoring equipment, telehealth infrastructure, or advanced analytics platforms. A CIN can negotiate enterprise-wide technology contracts that make these investments affordable for the entire network, deploy shared technology infrastructure that individual providers access as a service, and establish common data standards that make the integrated health record vision achievable.</p>
 <h2 id="fhir-interoperability-the-national-standard-and-vermonts-compliance-path">4.5 <strong>FHIR Interoperability — The National Standard and Vermont’s Compliance Path</strong></h2>
@@ -270,37 +284,45 @@
 <h3 id="what-fhir-enables-that-vermont-currently-cannot-do">4.5.1 <strong>What FHIR Enables That Vermont Currently Cannot Do</strong></h3>
 <p>Vermont’s current health data infrastructure predates widespread FHIR adoption and was built around older data exchange standards. The operational implications are concrete:</p>
 <ul>
-<li><p>Patient matching across facilities: Reliable matching across organizations depends on a shared identity service. The VHIE has one — its Verato-based master patient index (§4.3.6) — but providers who are not connected to the exchange sit outside it. (Community meeting participants also described contacting 31 separate EMS agencies to arrange patient transfers; that is a coordination failure the RHT-funded centralized transfer center in §4.3.10 is designed to fix, not a FHIR problem.)</p></li>
-<li><p>Real-time care gap identification: FHIR-enabled EHR systems can query a patient’s record at the point of care, identifying care gaps (missing preventive services, chronic disease management gaps) in real time during the clinical encounter. Vermont’s current Blueprint data profile process delivers care gap information to practices, but with significant lag. FHIR enables the same information at the point of care.</p></li>
-<li><p>Attribution accuracy for global budgets: Hospital global budgets require accurate attribution of patients to hospitals. FHIR-based data exchange enables more precise attribution by tracking care delivery across providers in near-real-time, reducing the attribution disputes that complicate global budget performance measurement.</p></li>
-<li><p>Population health management at scale: Vermont’s Blueprint CHTs currently manage populations using a combination of claims data, clinical registry data, and provider-reported information. FHIR-based population health platforms can aggregate this data automatically, maintaining continuous patient registries that trigger care coordinator outreach when patients are overdue for care or when clinical indicators suggest increased risk.</p></li>
+<li><blockquote>
+<p>Patient matching across facilities: Reliable matching across organizations depends on a shared identity service. The VHIE has one — its Verato-based master patient index (§4.3.6) — but providers who are not connected to the exchange sit outside it. (Community meeting participants also described contacting 31 separate EMS agencies to arrange patient transfers; that is a coordination failure the RHT-funded centralized transfer center in §4.3.10 is designed to fix, not a FHIR problem.)</p>
+</blockquote></li>
+<li><blockquote>
+<p>Real-time care gap identification: FHIR-enabled EHR systems can query a patient’s record at the point of care, identifying care gaps (missing preventive services, chronic disease management gaps) in real time during the clinical encounter. Vermont’s current Blueprint data profile process delivers care gap information to practices, but with significant lag. FHIR enables the same information at the point of care.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Attribution accuracy for global budgets: Hospital global budgets require accurate attribution of patients to hospitals. FHIR-based data exchange enables more precise attribution by tracking care delivery across providers in near-real-time, reducing the attribution disputes that complicate global budget performance measurement.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Population health management at scale: Vermont’s Blueprint CHTs currently manage populations using a combination of claims data, clinical registry data, and provider-reported information. FHIR-based population health platforms can aggregate this data automatically, maintaining continuous patient registries that trigger care coordinator outreach when patients are overdue for care or when clinical indicators suggest increased risk.</p>
+</blockquote></li>
 </ul>
 <h3 id="vermonts-fhir-compliance-status">4.5.2 <strong>Vermont’s FHIR Compliance Status</strong></h3>
 <p>Vermont’s larger hospitals — UVM Health Network’s, on Epic, in particular — run EHRs certified to ONC’s standardized FHIR API criterion (§170.315(g)(10)), which every certified EHR has had to support since the end of 2022. The payer-side FHIR APIs — Patient Access, Provider Access, Payer-to-Payer, and Prior Authorization — are obligations of payers, not hospitals (Chapter 5, Figure 5.1). The critical gap is at community-based providers — designated mental health agencies, skilled nursing facilities, home health agencies — that were never eligible for the federal EHR incentive programs and often lack certified systems, and at smaller hospitals whose certified APIs exist but are not yet configured for exchange.</p>
 <p>Vermont’s RHT Program IT advance investments address this gap directly. The program includes grants for technology upgrades at smaller and more rural facilities that cannot afford FHIR-capable EHR migrations independently. The CIN infrastructure also supports FHIR compliance by providing shared technical assistance, vendor negotiations for favorable pricing on FHIR-capable platforms, and shared technical staff who can support implementation at facilities that lack internal IT capacity.</p>
 <div class="table-wrap"><table>
 <thead>
-<tr>
-<th style="text-align: left;"><strong>FHIR compliance level</strong></th>
-<th style="text-align: left;"><strong>Vermont providers and current status</strong></th>
+<tr class="header">
+<th><strong>FHIR compliance level</strong></th>
+<th><strong>Vermont providers and current status</strong></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align: left;">Certified FHIR R4 API in production</td>
-<td style="text-align: left;">Hospitals running a (g)(10)-certified EHR version with FHIR endpoints in use — including UVM Health Network’s hospitals on Epic. Any hospital’s certified version can be checked on ONC’s Certified Health IT Product List.</td>
+<tr class="odd">
+<td>Certified FHIR R4 API in production</td>
+<td>Hospitals running a (g)(10)-certified EHR version with FHIR endpoints in use — including UVM Health Network’s hospitals on Epic. Any hospital’s certified version can be checked on ONC’s Certified Health IT Product List.</td>
 </tr>
-<tr>
-<td style="text-align: left;">Certified API, not yet configured for exchange</td>
-<td style="text-align: left;">Hospitals whose certified products include the FHIR API but whose endpoints are not yet used for cross-organization exchange</td>
+<tr class="header">
+<td>Certified API, not yet configured for exchange</td>
+<td>Hospitals whose certified products include the FHIR API but whose endpoints are not yet used for cross-organization exchange</td>
 </tr>
-<tr>
-<td style="text-align: left;">Limited / no FHIR</td>
-<td style="text-align: left;">Most designated mental health agencies; many skilled nursing facilities and home health agencies; independent practices on older, uncertified EHR versions</td>
+<tr class="odd">
+<td>Limited / no FHIR</td>
+<td>Most designated mental health agencies; many skilled nursing facilities and home health agencies; independent practices on older, uncertified EHR versions</td>
 </tr>
-<tr>
-<td style="text-align: left;">FHIR investment planned (RHT Program)</td>
-<td style="text-align: left;">Rural and independent practices; smaller CAHs; targeted technical assistance through Vermont CIN shared services</td>
+<tr class="header">
+<td>FHIR investment planned (RHT Program)</td>
+<td>Rural and independent practices; smaller CAHs; targeted technical assistance through Vermont CIN shared services</td>
 </tr>
 </tbody>
 </table></div>
@@ -336,57 +358,101 @@
 <p>Vermont’s Statewide Health Care Delivery Strategic Plan must specify a technology architecture — the integrated set of data systems, exchange standards, governance structures, and analytical platforms that enable the transformed delivery system to be managed, monitored, and improved. The following architecture organizes Vermont’s technology investments across five layers, from foundational infrastructure to advanced analytical applications.</p>
 <div class="table-wrap"><table>
 <thead>
-<tr>
+<tr class="header">
 <th><strong>Layer</strong></th>
 <th><strong>Components</strong></th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td><strong>Layer 5 (Top)</strong> — Advanced Analytics &amp; AI Applications</td>
 <td><ul>
-<li><p>Population health analytics platform (joint AHS-GMCB vendor): models transformation scenarios, evaluates hospital proposals, tracks outcome metrics</p></li>
-<li><p>AI scribe &amp; documentation automation: RHT grants; CIN enterprise contract</p></li>
-<li><p>Diagnostic AI: network-wide deployment via CIN shared services with shared AI governance</p></li>
-<li><p>Remote patient monitoring: RPM for CHF, COPD, diabetes; community paramedicine integration</p></li>
-<li><p>Price transparency dashboard: GMCB public tool; patient-facing comparison via RHT</p></li>
+<li><blockquote>
+<p>Population health analytics platform (joint AHS-GMCB vendor): models transformation scenarios, evaluates hospital proposals, tracks outcome metrics</p>
+</blockquote></li>
+<li><blockquote>
+<p>AI scribe &amp; documentation automation: RHT grants; CIN enterprise contract</p>
+</blockquote></li>
+<li><blockquote>
+<p>Diagnostic AI: network-wide deployment via CIN shared services with shared AI governance</p>
+</blockquote></li>
+<li><blockquote>
+<p>Remote patient monitoring: RPM for CHF, COPD, diabetes; community paramedicine integration</p>
+</blockquote></li>
+<li><blockquote>
+<p>Price transparency dashboard: GMCB public tool; patient-facing comparison via RHT</p>
+</blockquote></li>
 </ul></td>
 </tr>
-<tr>
+<tr class="header">
 <td><strong>Layer 4</strong> — Population Health Management</td>
 <td><ul>
-<li><p>Blueprint clinical data registry: HEDIS measurement, care-gap reporting, population risk stratification</p></li>
-<li><p>Attribution management: patient-to-hospital attribution for hospital global budgets</p></li>
-<li><p>SDOH screening data: Blueprint HRSN results linked to health records</p></li>
-<li><p>Care coordination registry: CHT patient registries; CCBHC care-management data</p></li>
+<li><blockquote>
+<p>Blueprint clinical data registry: HEDIS measurement, care-gap reporting, population risk stratification</p>
+</blockquote></li>
+<li><blockquote>
+<p>Attribution management: patient-to-hospital attribution for hospital global budgets</p>
+</blockquote></li>
+<li><blockquote>
+<p>SDOH screening data: Blueprint HRSN results linked to health records</p>
+</blockquote></li>
+<li><blockquote>
+<p>Care coordination registry: CHT patient registries; CCBHC care-management data</p>
+</blockquote></li>
 </ul></td>
 </tr>
-<tr>
+<tr class="odd">
 <td><strong>Layer 3</strong> — Integrated Health Record (Target State)</td>
 <td><ul>
-<li><p>VHCURES–VHIE integration: claims merged with clinical data per HIE Steering Committee mandate</p></li>
-<li><p>Mental health &amp; SUD data integration: 42 CFR Part 2 compliant consent; CCBHC and DA data</p></li>
-<li><p>SDOH data integration: social-service utilization linked to the health record with privacy protections</p></li>
-<li><p>Single patient identity: master patient index across all 14 hospitals and community providers</p></li>
+<li><blockquote>
+<p>VHCURES–VHIE integration: claims merged with clinical data per HIE Steering Committee mandate</p>
+</blockquote></li>
+<li><blockquote>
+<p>Mental health &amp; SUD data integration: 42 CFR Part 2 compliant consent; CCBHC and DA data</p>
+</blockquote></li>
+<li><blockquote>
+<p>SDOH data integration: social-service utilization linked to the health record with privacy protections</p>
+</blockquote></li>
+<li><blockquote>
+<p>Single patient identity: master patient index across all 14 hospitals and community providers</p>
+</blockquote></li>
 </ul></td>
 </tr>
-<tr>
+<tr class="header">
 <td><strong>Layer 2</strong> — Data Exchange Infrastructure</td>
 <td><ul>
-<li><p>Vermont Health Information Exchange (VHIE/VITL): clinical data exchange; connectivity mandated by Act 68</p></li>
-<li><p>FHIR R4 APIs: ONC-certified EHR APIs; CMS-0057-F payer APIs from 2027; expanding to community providers via RHT grants</p></li>
-<li><p>Vermont Clinically Integrated Network: shared data standards, protocols, exchange agreements across 14 hospitals</p></li>
-<li><p>National networks (eHealth Exchange, Carequality, CommonWell) and TEFCA: out-of-state care records</p></li>
+<li><blockquote>
+<p>Vermont Health Information Exchange (VHIE/VITL): clinical data exchange; connectivity mandated by Act 68</p>
+</blockquote></li>
+<li><blockquote>
+<p>FHIR R4 APIs: ONC-certified EHR APIs; CMS-0057-F payer APIs from 2027; expanding to community providers via RHT grants</p>
+</blockquote></li>
+<li><blockquote>
+<p>Vermont Clinically Integrated Network: shared data standards, protocols, exchange agreements across 14 hospitals</p>
+</blockquote></li>
+<li><blockquote>
+<p>National networks (eHealth Exchange, Carequality, CommonWell) and TEFCA: out-of-state care records</p>
+</blockquote></li>
 </ul></td>
 </tr>
-<tr>
+<tr class="odd">
 <td><strong>Layer 1 (Foundation)</strong> — Core Data Assets</td>
 <td><ul>
-<li><p>VHCURES (all-payer claims database): 100% Medicaid/Medicare; 60% commercial; GMCB-managed; Onpoint vendor</p></li>
-<li><p>VUHDDS (hospital discharge database): all 14 hospitals; all inpatient, outpatient, ED discharges</p></li>
-<li><p>EHR systems at 14 hospitals: Epic across UVM Health Network; a mix of other certified vendors at independent hospitals</p></li>
-<li><p>Blueprint clinical registry: quality-measure data linked to VHCURES for population-level HEDIS</p></li>
-<li><p>GMCB regulatory data: hospital budgets, rate filings, CON decisions, ACO budget data</p></li>
+<li><blockquote>
+<p>VHCURES (all-payer claims database): 100% Medicaid/Medicare; 60% commercial; GMCB-managed; Onpoint vendor</p>
+</blockquote></li>
+<li><blockquote>
+<p>VUHDDS (hospital discharge database): all 14 hospitals; all inpatient, outpatient, ED discharges</p>
+</blockquote></li>
+<li><blockquote>
+<p>EHR systems at 14 hospitals: Epic across UVM Health Network; a mix of other certified vendors at independent hospitals</p>
+</blockquote></li>
+<li><blockquote>
+<p>Blueprint clinical registry: quality-measure data linked to VHCURES for population-level HEDIS</p>
+</blockquote></li>
+<li><blockquote>
+<p>GMCB regulatory data: hospital budgets, rate filings, CON decisions, ACO budget data</p>
+</blockquote></li>
 </ul></td>
 </tr>
 </tbody>
@@ -398,32 +464,32 @@
 <p>Chapter 4’s data-infrastructure argument is best understood by building on the actual standards. The FHIR Lab turns the interoperability discussion into working resources, and the EMR/EHR Lab turns the EHR-investment decision into a model you can run.</p>
 <div class="table-wrap"><table>
 <thead>
-<tr>
-<th style="text-align: left;"><strong>Do this</strong></th>
-<th style="text-align: left;"><strong>On this tool</strong></th>
-<th style="text-align: left;"><strong>What to look for</strong></th>
+<tr class="header">
+<th><strong>Do this</strong></th>
+<th><strong>On this tool</strong></th>
+<th><strong>What to look for</strong></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align: left;">Build FHIR R4 resources and map terminology across ICD-10, SNOMED, LOINC, RxNorm</td>
-<td style="text-align: left;"><strong>FHIR Interoperability Lab</strong> — /research-lab/interoperability?tab=fhir</td>
-<td style="text-align: left;">How a working data exchange differs from a data asset that merely “exists.”</td>
+<tr class="odd">
+<td>Build FHIR R4 resources and map terminology across ICD-10, SNOMED, LOINC, RxNorm</td>
+<td><strong>FHIR Interoperability Lab</strong> — /research-lab/interoperability?tab=fhir</td>
+<td>How a working data exchange differs from a data asset that merely “exists.”</td>
 </tr>
-<tr>
-<td style="text-align: left;">Stratify a population by CMS-HCC risk and see the attribution that global budgets require</td>
-<td style="text-align: left;"><strong>Risk Stratification Engine</strong> — /research-lab/interoperability?tab=risk</td>
-<td style="text-align: left;">Why technology must precede economics: you cannot manage a budget for a population you cannot see.</td>
+<tr class="header">
+<td>Stratify a population by CMS-HCC risk and see the attribution that global budgets require</td>
+<td><strong>Risk Stratification Engine</strong> — /research-lab/interoperability?tab=risk</td>
+<td>Why technology must precede economics: you cannot manage a budget for a population you cannot see.</td>
 </tr>
-<tr>
-<td style="text-align: left;">Compare EHR vendors, model adoption cost and 5-year ROI, and audit a record’s USCDI data quality</td>
-<td style="text-align: left;"><strong>EMR/EHR Lab</strong> — /research-lab/interoperability?tab=emr</td>
-<td style="text-align: left;">Why “buying an EHR” is a financial and data-quality decision, not just a software purchase — and where the documentation burden comes from.</td>
+<tr class="odd">
+<td>Compare EHR vendors, model adoption cost and 5-year ROI, and audit a record’s USCDI data quality</td>
+<td><strong>EMR/EHR Lab</strong> — /research-lab/interoperability?tab=emr</td>
+<td>Why “buying an EHR” is a financial and data-quality decision, not just a software purchase — and where the documentation burden comes from.</td>
 </tr>
-<tr>
-<td style="text-align: left;">Weigh a single statewide EHR against FHIR interoperability across Vermont’s existing platforms</td>
-<td style="text-align: left;"><strong>Statewide EHR Deployment Modeler</strong> — /research-lab/interoperability?tab=statewide-ehr</td>
-<td style="text-align: left;">The Act 167 feasibility question: whether FHIR can deliver the data sharing without the cost and disruption of a statewide migration.</td>
+<tr class="header">
+<td>Weigh a single statewide EHR against FHIR interoperability across Vermont’s existing platforms</td>
+<td><strong>Statewide EHR Deployment Modeler</strong> — /research-lab/interoperability?tab=statewide-ehr</td>
+<td>The Act 167 feasibility question: whether FHIR can deliver the data sharing without the cost and disruption of a statewide migration.</td>
 </tr>
 </tbody>
 </table></div>
