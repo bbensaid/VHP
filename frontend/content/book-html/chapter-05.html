@@ -12,31 +12,31 @@
 <p>Vermont’s technology investments should prioritize three FHIR use cases that deliver the highest value for the transformation agenda:</p>
 <div class="table-wrap"><table>
 <thead>
-<tr class="header">
-<th><strong>FHIR use case</strong></th>
-<th><strong>What it enables</strong></th>
-<th><strong>Implementation requirements</strong></th>
-<th><strong>Vermont priority</strong></th>
+<tr>
+<th style="text-align: left;"><strong>FHIR use case</strong></th>
+<th style="text-align: left;"><strong>What it enables</strong></th>
+<th style="text-align: left;"><strong>Implementation requirements</strong></th>
+<th style="text-align: left;"><strong>Vermont priority</strong></th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>Patient access API (ONC §170.315(g)(10))</td>
-<td>Patients — and the apps they choose — retrieve their records through a standardized FHIR R4 / US Core API. Every certified EHR must offer it, and Medicare’s Promoting Interoperability program requires hospitals to use certified technology.</td>
-<td>EHR version certified to (g)(10) on ONC’s Certified Health IT Product List; SMART App Launch authorization configured; published FHIR endpoint. Patient apps are not certified — the patient chooses them.</td>
-<td>Baseline compliance for every Vermont hospital. Check smaller CAHs’ certified versions on the CHPL.</td>
+<tr>
+<td style="text-align: left;">Patient access API (ONC §170.315(g)(10))</td>
+<td style="text-align: left;">Patients — and the apps they choose — retrieve their records through a standardized FHIR R4 / US Core API. Every certified EHR must offer it, and Medicare’s Promoting Interoperability program requires hospitals to use certified technology.</td>
+<td style="text-align: left;">EHR version certified to (g)(10) on ONC’s Certified Health IT Product List; SMART App Launch authorization configured; published FHIR endpoint. Patient apps are not certified — the patient chooses them.</td>
+<td style="text-align: left;">Baseline compliance for every Vermont hospital. Check smaller CAHs’ certified versions on the CHPL.</td>
 </tr>
-<tr class="header">
-<td>Provider-to-provider query (care coordination)</td>
-<td>Care coordinators at one organization can query clinical records from another organization for shared patients, enabling real-time care coordination across the Vermont CIN.</td>
-<td>EHR-to-EHR query capability; master patient index for matching across organizations; a trust framework — eHealth Exchange, Carequality, CommonWell, or TEFCA, whose designated QHINs must support facilitated FHIR exchange; consent management.</td>
-<td>Highest value use case for Vermont CIN. Enables inter-hospital care coordination that the regionalization blueprint requires. Priority RHT IT advance investment.</td>
+<tr>
+<td style="text-align: left;">Provider-to-provider query (care coordination)</td>
+<td style="text-align: left;">Care coordinators at one organization can query clinical records from another organization for shared patients, enabling real-time care coordination across the Vermont CIN.</td>
+<td style="text-align: left;">EHR-to-EHR query capability; master patient index for matching across organizations; a trust framework — eHealth Exchange, Carequality, CommonWell, or TEFCA, whose designated QHINs must support facilitated FHIR exchange; consent management.</td>
+<td style="text-align: left;">Highest value use case for Vermont CIN. Enables inter-hospital care coordination that the regionalization blueprint requires. Priority RHT IT advance investment.</td>
 </tr>
-<tr class="odd">
-<td>Payer APIs — Provider Access and Prior Authorization (CMS-0057-F)</td>
-<td>Impacted payers must expose FHIR APIs that let in-network providers retrieve a patient’s claims and clinical data and request prior authorization electronically (Da Vinci CRD, DTR, and PAS guides), generally by January 1, 2027.</td>
-<td>EHR support for CRD, DTR, and PAS. Impacted payers in Vermont are Vermont Medicaid and Medicare Advantage plans; commercial plans sold through Vermont Health Connect — a state-based exchange — are not “impacted payers” under the rule.</td>
-<td>Administrative simplification priority. Because Vermont’s commercial exchange plans fall outside CMS-0057-F, GMCB could require carriers to match the federal API standard as a condition of rate approval.</td>
+<tr>
+<td style="text-align: left;">Payer APIs — Provider Access and Prior Authorization (CMS-0057-F)</td>
+<td style="text-align: left;">Impacted payers must expose FHIR APIs that let in-network providers retrieve a patient’s claims and clinical data and request prior authorization electronically (Da Vinci CRD, DTR, and PAS guides), generally by January 1, 2027.</td>
+<td style="text-align: left;">EHR support for CRD, DTR, and PAS. Impacted payers in Vermont are Vermont Medicaid and Medicare Advantage plans; commercial plans sold through Vermont Health Connect — a state-based exchange — are not “impacted payers” under the rule.</td>
+<td style="text-align: left;">Administrative simplification priority. Because Vermont’s commercial exchange plans fall outside CMS-0057-F, GMCB could require carriers to match the federal API standard as a condition of rate approval.</td>
 </tr>
 </tbody>
 </table></div>
@@ -71,37 +71,37 @@
 <p>For Vermont’s transformation agenda, the highest-value CDS application is not medication alerts — it is population health intelligence: risk stratification that identifies patients likely to deteriorate, care gap identification that triggers outreach before patients present in crisis, SDOH screening tools that flag patients for CHT navigation at the moment of a primary care visit, and medication-safety and adherence monitoring across multiple prescribers.</p>
 <div class="table-wrap"><table>
 <thead>
-<tr class="header">
-<th><strong>CDS type</strong></th>
-<th><strong>What it does</strong></th>
-<th><strong>Implementation requirement</strong></th>
-<th><strong>Vermont application</strong></th>
+<tr>
+<th style="text-align: left;"><strong>CDS type</strong></th>
+<th style="text-align: left;"><strong>What it does</strong></th>
+<th style="text-align: left;"><strong>Implementation requirement</strong></th>
+<th style="text-align: left;"><strong>Vermont application</strong></th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>Predictive risk stratification</td>
-<td>Uses machine learning on claims, EHR, and demographic data to predict which patients are likely to be hospitalized or visit the ED in the next 30-90 days, generating a risk score and recommended care management action</td>
-<td>Attribution data, historical claims, EHR access, trained risk model; care management workflow to receive and act on high-risk alerts</td>
-<td>VHCURES-based risk stratification for the attributed Medicare population; identify the top 5% highest-risk patients for intensive CHT engagement before global budgets take effect</td>
+<tr>
+<td style="text-align: left;">Predictive risk stratification</td>
+<td style="text-align: left;">Uses machine learning on claims, EHR, and demographic data to predict which patients are likely to be hospitalized or visit the ED in the next 30-90 days, generating a risk score and recommended care management action</td>
+<td style="text-align: left;">Attribution data, historical claims, EHR access, trained risk model; care management workflow to receive and act on high-risk alerts</td>
+<td style="text-align: left;">VHCURES-based risk stratification for the attributed Medicare population; identify the top 5% highest-risk patients for intensive CHT engagement before global budgets take effect</td>
 </tr>
-<tr class="header">
-<td>Care gap identification</td>
-<td>Identifies patients due for preventive services, overdue for chronic disease management follow-up, or missing guideline-recommended medications at the moment of a primary care visit</td>
-<td>EHR integration; HEDIS measure definitions; patient registry with last service date tracking</td>
-<td>Blueprint PCMH practices: care gap report generated for each scheduled patient appointment, enabling care coordinator to prepare outreach materials before the visit</td>
+<tr>
+<td style="text-align: left;">Care gap identification</td>
+<td style="text-align: left;">Identifies patients due for preventive services, overdue for chronic disease management follow-up, or missing guideline-recommended medications at the moment of a primary care visit</td>
+<td style="text-align: left;">EHR integration; HEDIS measure definitions; patient registry with last service date tracking</td>
+<td style="text-align: left;">Blueprint PCMH practices: care gap report generated for each scheduled patient appointment, enabling care coordinator to prepare outreach materials before the visit</td>
 </tr>
-<tr class="odd">
-<td>SDOH screening and navigation</td>
-<td>Presents standardized HRSN screening questions at the appropriate point in a primary care visit; flags positive screens for CHT follow-up; tracks referral completion</td>
-<td>EHR-integrated screening tool; CHT workflow to receive referrals; community resource directory integration</td>
-<td>Vermont Blueprint universal HRSN screening: operational in PCMH practices. Gap: CHT follow-up completion tracking and outcome measurement not consistently linked back to clinical record</td>
+<tr>
+<td style="text-align: left;">SDOH screening and navigation</td>
+<td style="text-align: left;">Presents standardized HRSN screening questions at the appropriate point in a primary care visit; flags positive screens for CHT follow-up; tracks referral completion</td>
+<td style="text-align: left;">EHR-integrated screening tool; CHT workflow to receive referrals; community resource directory integration</td>
+<td style="text-align: left;">Vermont Blueprint universal HRSN screening: operational in PCMH practices. Gap: CHT follow-up completion tracking and outcome measurement not consistently linked back to clinical record</td>
 </tr>
-<tr class="header">
-<td>Medication safety and adherence</td>
-<td>Identifies patients with medication adherence gaps from pharmacy claims data; flags potential drug interactions from concurrent prescriptions across multiple providers</td>
-<td>Pharmacy claims data access; prescriber notification workflow</td>
-<td>VHCURES pharmacy claims linked to primary care EHR for medication adherence alerts; particularly valuable for high-complexity elderly patients with multiple prescribers</td>
+<tr>
+<td style="text-align: left;">Medication safety and adherence</td>
+<td style="text-align: left;">Identifies patients with medication adherence gaps from pharmacy claims data; flags potential drug interactions from concurrent prescriptions across multiple providers</td>
+<td style="text-align: left;">Pharmacy claims data access; prescriber notification workflow</td>
+<td style="text-align: left;">VHCURES pharmacy claims linked to primary care EHR for medication adherence alerts; particularly valuable for high-complexity elderly patients with multiple prescribers</td>
 </tr>
 </tbody>
 </table></div>
@@ -128,54 +128,54 @@
 <col style="width: 31%" />
 </colgroup>
 <thead>
-<tr class="header">
-<th><strong>Investment</strong></th>
-<th><strong>Estimated cost</strong></th>
-<th><strong>Timeline to value</strong></th>
-<th><strong>ROI crossover</strong></th>
-<th><strong>Vermont benchmark</strong></th>
+<tr>
+<th style="text-align: left;"><strong>Investment</strong></th>
+<th style="text-align: left;"><strong>Estimated cost</strong></th>
+<th style="text-align: left;"><strong>Timeline to value</strong></th>
+<th style="text-align: left;"><strong>ROI crossover</strong></th>
+<th style="text-align: left;"><strong>Vermont benchmark</strong></th>
 </tr>
-<tr class="odd">
-<th>FHIR R4 compliance and API development</th>
-<th>$150K-$500K per org</th>
-<th>12-18 months</th>
-<th>18-24 months</th>
-<th>ONC §170.315(g)(10) certification; CMS-0057-F payer APIs from 2027</th>
+<tr>
+<th style="text-align: left;">FHIR R4 compliance and API development</th>
+<th style="text-align: left;">$150K-$500K per org</th>
+<th style="text-align: left;">12-18 months</th>
+<th style="text-align: left;">18-24 months</th>
+<th style="text-align: left;">ONC §170.315(g)(10) certification; CMS-0057-F payer APIs from 2027</th>
 </tr>
-<tr class="header">
-<th>Clinical AI deployment with governance framework</th>
-<th>$200K-$1M setup</th>
-<th>6-12 months</th>
-<th>12-24 months</th>
-<th>Vermont AI scribe grants (RHT); ambient scribes: ~16 fewer documentation minutes per 8 patient hours (JAMA, 2026)</th>
+<tr>
+<th style="text-align: left;">Clinical AI deployment with governance framework</th>
+<th style="text-align: left;">$200K-$1M setup</th>
+<th style="text-align: left;">6-12 months</th>
+<th style="text-align: left;">12-24 months</th>
+<th style="text-align: left;">Vermont AI scribe grants (RHT); ambient scribes: ~16 fewer documentation minutes per 8 patient hours (JAMA, 2026)</th>
 </tr>
-<tr class="odd">
-<th>VHCURES analytics platform access and training</th>
-<th>$20K-$60K annually</th>
-<th>3-6 months</th>
-<th>6 months</th>
-<th>Vermont hospitals: pre-global-budget HCC gap analysis; attribution modeling</th>
+<tr>
+<th style="text-align: left;">VHCURES analytics platform access and training</th>
+<th style="text-align: left;">$20K-$60K annually</th>
+<th style="text-align: left;">3-6 months</th>
+<th style="text-align: left;">6 months</th>
+<th style="text-align: left;">Vermont hospitals: pre-global-budget HCC gap analysis; attribution modeling</th>
 </tr>
-<tr class="header">
-<th>CIN shared analytics infrastructure</th>
-<th>$500K-$2M network cost</th>
-<th>18-36 months</th>
-<th>36-48 months</th>
-<th>Vermont CIN: RHT-funded shared analytics for independent hospitals and providers</th>
+<tr>
+<th style="text-align: left;">CIN shared analytics infrastructure</th>
+<th style="text-align: left;">$500K-$2M network cost</th>
+<th style="text-align: left;">18-36 months</th>
+<th style="text-align: left;">36-48 months</th>
+<th style="text-align: left;">Vermont CIN: RHT-funded shared analytics for independent hospitals and providers</th>
 </tr>
-<tr class="odd">
-<th>EHR optimization for structured data capture</th>
-<th>$15K-$40K per practice</th>
-<th>1-3 months</th>
-<th>6 months</th>
-<th>Blueprint PCMH prerequisite; HEDIS measure reporting accuracy</th>
+<tr>
+<th style="text-align: left;">EHR optimization for structured data capture</th>
+<th style="text-align: left;">$15K-$40K per practice</th>
+<th style="text-align: left;">1-3 months</th>
+<th style="text-align: left;">6 months</th>
+<th style="text-align: left;">Blueprint PCMH prerequisite; HEDIS measure reporting accuracy</th>
 </tr>
-<tr class="header">
-<th>Cybersecurity assessment and hardening</th>
-<th>$50K-$200K per org</th>
-<th>3-6 months</th>
-<th>Risk avoidance immediate</th>
-<th>UVM Health Network 2020 ransomware: 28 days to restore the EHR; ~$63–65M cost</th>
+<tr>
+<th style="text-align: left;">Cybersecurity assessment and hardening</th>
+<th style="text-align: left;">$50K-$200K per org</th>
+<th style="text-align: left;">3-6 months</th>
+<th style="text-align: left;">Risk avoidance immediate</th>
+<th style="text-align: left;">UVM Health Network 2020 ransomware: 28 days to restore the EHR; ~$63–65M cost</th>
 </tr>
 </thead>
 <tbody>
@@ -186,37 +186,37 @@
 <p>Chapter 5’s implementation reality — AI governance, CDS, clinical data exchange, and the statewide-EHR question — maps to four working labs.</p>
 <div class="table-wrap"><table>
 <thead>
-<tr class="header">
-<th><strong>Do this</strong></th>
-<th><strong>On this tool</strong></th>
-<th><strong>What to look for</strong></th>
+<tr>
+<th style="text-align: left;"><strong>Do this</strong></th>
+<th style="text-align: left;"><strong>On this tool</strong></th>
+<th style="text-align: left;"><strong>What to look for</strong></th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>Build an AI clinical governance framework across the model lifecycle</td>
-<td><strong>AI Clinical Governance Lab</strong> — /research-lab/technology-ai?tab=ai</td>
-<td>The 62-item checklist across eight governance domains as a go/no-go gate before any clinical AI deployment.</td>
+<tr>
+<td style="text-align: left;">Build an AI clinical governance framework across the model lifecycle</td>
+<td style="text-align: left;"><strong>AI Clinical Governance Lab</strong> — /research-lab/technology-ai?tab=ai</td>
+<td style="text-align: left;">The 62-item checklist across eight governance domains as a go/no-go gate before any clinical AI deployment.</td>
 </tr>
-<tr class="header">
-<td>Model RPM and telehealth ROI by condition and CPT code</td>
-<td><strong>Digital Health Lab</strong> — /research-lab/technology-ai?tab=digital</td>
-<td>Where digital health earns its cost — and where it adds alert fatigue without value.</td>
+<tr>
+<td style="text-align: left;">Model RPM and telehealth ROI by condition and CPT code</td>
+<td style="text-align: left;"><strong>Digital Health Lab</strong> — /research-lab/technology-ai?tab=digital</td>
+<td style="text-align: left;">Where digital health earns its cost — and where it adds alert fatigue without value.</td>
 </tr>
-<tr class="odd">
-<td>Exercise clinical data exchange and HL7 messaging</td>
-<td><strong>Clinical Data Exchange</strong> — /research-lab/vbc-clinical-quality?tab=hl7</td>
-<td>The integration work that makes near-real-time care management possible.</td>
+<tr>
+<td style="text-align: left;">Exercise clinical data exchange and HL7 messaging</td>
+<td style="text-align: left;"><strong>Clinical Data Exchange</strong> — /research-lab/vbc-clinical-quality?tab=hl7</td>
+<td style="text-align: left;">The integration work that makes near-real-time care management possible.</td>
 </tr>
-<tr class="header">
-<td>Test whether FHIR-based exchange can deliver what a statewide EHR would, at lower cost</td>
-<td><strong>Statewide EHR Modeler</strong> — /research-lab/interoperability?tab=statewide-ehr</td>
-<td>Where FHIR closes the gap and where it does not — the question Vermont’s feasibility assessment must answer.</td>
+<tr>
+<td style="text-align: left;">Test whether FHIR-based exchange can deliver what a statewide EHR would, at lower cost</td>
+<td style="text-align: left;"><strong>Statewide EHR Modeler</strong> — /research-lab/interoperability?tab=statewide-ehr</td>
+<td style="text-align: left;">Where FHIR closes the gap and where it does not — the question Vermont’s feasibility assessment must answer.</td>
 </tr>
-<tr class="odd">
-<td>Plan a FHIR rollout: certified APIs, provider-to-provider exchange, and the 2027 payer APIs</td>
-<td><strong>FHIR Implementation Guide</strong> — /research-lab/interoperability?tab=fhir-guide</td>
-<td>Which obligations fall on your EHR vendor, which on you, and which on your payers — and the CHPL and CMS-0057-F checks to run first.</td>
+<tr>
+<td style="text-align: left;">Plan a FHIR rollout: certified APIs, provider-to-provider exchange, and the 2027 payer APIs</td>
+<td style="text-align: left;"><strong>FHIR Implementation Guide</strong> — /research-lab/interoperability?tab=fhir-guide</td>
+<td style="text-align: left;">Which obligations fall on your EHR vendor, which on you, and which on your payers — and the CHPL and CMS-0057-F checks to run first.</td>
 </tr>
 </tbody>
 </table></div>
