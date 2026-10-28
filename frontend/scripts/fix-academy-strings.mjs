@@ -28,7 +28,8 @@ for (const doc of nd.split('\n').filter(Boolean).map((l) => JSON.parse(l)).filte
   console.log('sanity', doc._id, n);
   if (DRY) continue;
   fs.writeFileSync(`../sanity-backups/${CFG.tag}-${doc._id}-${Date.now()}.json`, raw);
-  const { _id, _type, _rev, _createdAt, _updatedAt, ...fields } = JSON.parse(t);
+  let parsed; try { parsed = JSON.parse(t); } catch (e) { console.log('  !! SKIPPED (replacement broke JSON — escape quotes in the new text):', doc._id); continue; }
+  const { _id, _type, _rev, _createdAt, _updatedAt, ...fields } = parsed;
   console.log('  ->', (await fetch(`${API}/mutate/production`, { method: 'POST', headers: H, body: JSON.stringify({ mutations: [{ patch: { id: _id, set: fields } }] }) })).status);
 }
 const sb = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_KEY);
@@ -44,7 +45,7 @@ for (const table of ONLY ? ['lessons'] : ['lessons', 'quiz_questions', 'quiz_opt
       const isStr = typeof v === 'string';
       const [t, n] = fix(isStr ? JSON.stringify(v) : JSON.stringify(v));
       residue(`${table}.${k} ${row.slug ?? row.id}`, t);
-      if (n) upd[k] = JSON.parse(t);
+      if (n) { try { upd[k] = JSON.parse(t); } catch (e) { console.log('  !! SKIPPED field (bad JSON):', table, k, row.slug ?? row.id); } }
     }
     if (!Object.keys(upd).length) continue;
     console.log('supabase', table, row.slug ?? row.id, Object.keys(upd));
