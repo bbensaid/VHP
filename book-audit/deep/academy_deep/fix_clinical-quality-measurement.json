@@ -1,0 +1,9 @@
+{"tag": "deep-cqm", "note": "Academy deep pass 2026-10-28. MSSP quality performance standard: 30th percentile through PY2023 (CMS PY2023 guidance, cms.gov/files/document/mssp-30th-percentile-mips-quality-performance-category-score-performance-year-2023.pdf), 40th percentile for PY2024 and later (42 CFR 425.512(a)(4)(i); CY2024 PFS).",
+ "only": ["aco-quality-reporting"],
+ "pairs": [
+  ["Beginning in 2025 and beyond, the standard generally requires reaching at least the 40th percentile", "From performance year 2024 onward, the standard generally requires reaching at least the 40th percentile"],
+  ["Percentile Standard (2025+)", "Percentile Standard (2024+)"],
+  ["from 2025 it generally requires reaching about the 40th percentile of MIPS quality scores", "from 2024 it generally requires reaching about the 40th percentile of MIPS quality scores"],
+  ["40th percentile from 2025", "40th percentile from PY2024"]
+ ],
+ "residue": "40th percentile[^.]{0,40}2025|2025[^.]{0,40}40th"}
