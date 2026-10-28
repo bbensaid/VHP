@@ -20,3 +20,4 @@ VERIFIED_FACTS.md, the rest against the cited source or a web search. Fixes go o
 | hospital-finance | 374 | none needed | done |
 | medicaid-managed-care-operations | 399 | enrollment 78M→73M; unsourced insurer-loss claim deleted | done |
 | transformation-portfolio-management | 406 | none needed | done |
+| health-equity-sdoh | 417 | infant mortality 5.4→5.6; Joint Commission 2026 NPG update | done |
