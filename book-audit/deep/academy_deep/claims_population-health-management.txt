@@ -1,0 +1,352 @@
+
+## what-is-population-health
+0	The foundational definition comes from a 2003 paper by David Kindig and Greg Stoddart in the American Journal of Public Health.
+1	Population health (Kindig & Stoddart, 2003) is "the health outcomes of a group of individuals, including the distribution of such outcomes within the group." The unit of concern is the group, and the focus on distribution makes equity intrinsic.
+2	This is the most important and counterintuitive idea in population health: most of what determines a group's health happens outside the doctor's office.
+3	In 2008, Don Berwick, Tom Nolan, and John Whittington of the Institute for Healthcare Improvement (IHI) described three goals to pursue simultaneously: improving the patient experience of care, improving the health of populations, and reducing the per capita cost of care.
+4	The biggest mental shift in population health is attending to the whole defined panel — especially the high-risk patients who are not coming in for care.
+5	Population health (Kindig & Stoddart, 2003) is the health outcomes of a group AND the distribution of those outcomes — making equity intrinsic to the concept.
+6	The Triple Aim (Berwick et al., IHI, 2008) made population health a co-equal goal alongside patient experience and per capita cost.
+7	[1] What Is Population Health?
+8	(Kindig & Stoddart, AJPH 2003) — https://ajph.aphapublications.org/doi/full/10.2105/AJPH.93.3.380 — definition; three elements; six determinant categories
+9	[2] What Is Population Health?
+10	(PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC1447747/ — distribution of outcomes; differentiation from public health
+11	[3] The Triple Aim: Care, Health, and Cost (IHI) — https://www.ihi.org/resources/publications/triple-aim-care-health-and-cost — Berwick, Nolan & Whittington 2008; three simultaneous aims
+12	[4] Populations, Population Health, and the Evolution of Population Management (IHI) — https://www.ihi.org/library/blog/populations-population-health-and-evolution-population-management-making-sense-terminology — population health vs. population health management; defined populations
+13	[5] A Health System's Journey toward Better Population Health through Empanelment and Panel Management (PMC) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6023523/ — attribution, panels, proactive whole-population care
+14	[6] How to Improve Value-Based Care: Population Health Management Strategies (AMA) — https://www.ama-assn.org/practice-management/payment-delivery-models/how-improve-value-based-care-population-health — value-based care as the driver of PHM
+
+## determinants-of-health
+15	The most widely cited framework for the determinants of health is the County Health Rankings model, developed by the University of Wisconsin Population Health Institute with the Robert Wood Johnson Foundation.
+16	The model's weights are: social and economic factors about 40 percent, health behaviors about 30 percent, clinical care about 20 percent, and the physical environment about 10 percent.
+17	The popular shorthand is "80/20" — roughly 80 percent of health outcomes are driven by factors other than medical care, and only about 20 percent by clinical care itself.
+18	The federal Healthy People 2030 framework organizes them into five place-based domains, which give a practical map of where to look.
+19	The Five SDOH Domains (Healthy People 2030)
+20	The tool for this is a specific set of ICD-10 diagnosis codes, the "Z codes" in the range Z55 to Z65, which document social factors like housing instability, food insecurity, and lack of transportation.
+21	Studies have found SDOH Z codes recorded on only around 1.9 percent of hospital admissions.
+22	The social needs exist; they are simply not being captured in coded form, which means population health programs are often flying blind on the very factors that drive the most outcomes.
+23	Social factors drive the majority of health outcomes, yet SDOH Z codes appear on only ~1.9% of hospital admissions.
+24	The Biggest Drivers Are the Least Documented
+25	The County Health Rankings model weights modifiable determinants roughly: social/economic ~40%, behaviors ~30%, clinical care ~20%, physical environment ~10% (the "80/20" shorthand).
+26	Healthy People 2030 organizes SDOH into five domains: economic stability, education, health care access, neighborhood/built environment, and social/community context.
+27	ICD-10 Z codes (Z55-Z65) capture individual social needs in structured form, which aggregates into population-health data.
+28	Z codes are severely underused (~1.9% of hospital admissions), so programs often lack data on the biggest health drivers — making SDOH screening and capture foundational.
+29	The County Health Rankings model attributes only about 20% of health outcomes to clinical care, with social and economic factors (~40%), health behaviors (~30%), and the physical environment (~10%) driving the remaining ~80%.
+30	About 20% — with social/economic factors (~40%), behaviors (~30%), and physical environment (~10%) driving the rest
+31	[1] County Health Rankings: Relationships Between Determinant Factors and Health Outcomes (ScienceDirect) — https://www.sciencedirect.com/science/article/abs/pii/S0749379715005140 — model weights: social/economic 40%, behaviors 30%, clinical care 20%, physical environment 10%
+32	[2] Social Determinants of Health: The Variable for 80% of Health Outcomes (CareJourney) — https://carejourney.com/social-determinants-of-health/ — the 80/20 framing; top drivers (poverty, racism, food/housing insecurity, ACEs)
+33	[3] Social Determinants of Health — Healthy People 2030 (ODPHP) — https://odphp.health.gov/healthypeople/priority-areas/social-determinants-health — five SDOH domains and definition
+34	[4] 5 Domains of the Social Determinants of Health (Veradigm) — https://veradigm.com/veradigm-news/5-domains-social-determinants-of-health-sdoh/ — the five place-based domains explained
+35	[5] Using Z Codes: The Social Determinants of Health (CMS) — https://www.cms.gov/files/document/zcodes-infographic.pdf — Z55-Z65 codes; individual capture; population-health use
+36	[6] Utilization of SDOH ICD-10 Z-Codes Among Hospitalized Patients, 2016-2017 (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC7666017/ — Z codes on only ~1.9% of hospital admissions (underuse)
+
+## population-health-data-infrastructure
+37	You can see that a diabetic patient had a visit, but not their A1c result.
+38	Lags weeks to ~3 months (rear-view)
+39	This is where real-time data sources become valuable, and the most important is the ADT feed: Admission, Discharge, and Transfer notifications, transmitted as HL7 messages, that alert an organization in real time when one of its patients is admitted to, discharged from, or transferred between facilities.
+40	A health system ingests real-time ADT (HL7) notifications.
+41	A care manager calls the patient within 48 hours to reconcile medications and book a follow-up visit, closing the post-discharge gap that claims data would not have revealed for weeks.
+42	The recurring theme from the quality-measurement curriculum applies here at population scale: the most sophisticated analytics are worthless on bad data.
+43	Claims data is broad, longitudinal, and cost-aware but lags weeks to ~3 months and lacks clinical detail; EHR data is rich and real-time but in-network only.
+44	Real-time ADT notifications (HL7 messages) alert the team the day a patient is discharged — even from an out-of-network hospital — enabling follow-up within the critical window.
+45	Claims data, because it is the most complete
+46	A population health team wants to follow up with high-risk patients within 48 hours of a hospital discharge.
+47	[1] Claims Data vs EHRs: Distinct but United in Real-World Research (Nashville Biosciences) — https://nashbio.com/blog/ehr/claims-data-vs-ehrs/ — claims breadth/longitudinal vs EHR clinical granularity; integration value
+48	[2] What is Claims Data and Its Advantages and Disadvantages?
+49	(Datavant) — https://www.datavant.com/real-world-data-rwd/claims-data — claims lag (weeks to ~3 months); billing-only scope
+50	[3] Precision Is Key: Integrating Claims and Clinical Data (Milliman MedInsight) — https://medinsight.com/healthcare-data-analytics-resources/blog/precision-is-key-how-payers-can-unlock-strategic-insights-from-claims-and-clinical-data-integration/ — EHR near-real-time but in-network-limited; union gives complete picture
+51	[4] Top 15 Population Health Management Software Solutions (Arcadia) — https://arcadia.io/resources/population-health-management-software — aggregation of EHR, claims, self-reported, and SDOH data into a repository
+52	[5] Obtaining Data From EHRs / Registries (NCBI Bookshelf) — https://www.ncbi.nlm.nih.gov/books/NBK551878/ — data warehouses feeding registries; harmonization across EHR platforms; out-of-network gaps
+53	[6] Admission Discharge Transfer (ADT) in Healthcare (TechVariable) — https://techvariable.com/blogs/admission-discharge-transfer-in-healthcare/ — ADT HL7 notifications for real-time admission/discharge/transfer alerts
+
+## risk-stratification-models
+54	Risk stratification is the discipline of sorting a population by risk so that effort and resources go where they will do the most good.
+55	In the United States, roughly 5 percent of the population accounts for nearly half of all health expenditures, and about 20 percent accounts for 80 percent of total spending.
+56	Adults with five or more chronic conditions spend about 14 times more on health care than adults with none, and make up 12 percent of adults but 41 percent of spending (RAND, 2017).
+57	You do not have to fix everyone's cost; if you can keep the highest-risk 5 percent healthier and out of the hospital, you move the majority of the spending.
+58	Risk stratification is what lets you find that 5 percent — and the "rising risk" patients who are about to join them.
+59	Top 5% of population ~ nearly 50% of expenditures (US data)
+60	Top 20% ~ 80% of total health spending (US data)
+61	Spending for adults with 5+ chronic conditions vs none (RAND, 2017)
+62	The most prominent in U.S. value-based care is the Hierarchical Condition Categories (HCC) model, which calculates a Risk Adjustment Factor (RAF) score from a patient's documented diagnoses; a higher RAF means a more complex, higher-cost patient.
+63	Other validated tools include the Adjusted Clinical Groups (ACG) system (which often shows the strongest statistical performance for predicting utilization), the Charlson Comorbidity Index (a weighted count of conditions predicting mortality and future use), and condition-specific tools like the LACE score for post-discharge readmission risk (Length of stay, Acuity, Comorbidities, ED visits; a score of 10 or higher flags high readmission risk).
+64	Readmission prevention (score >=10 = high)
+65	4-factor post-discharge readmission risk
+66	Healthcare spending is extremely concentrated: ~5% of people drive nearly half of spending, ~20% drive 80%, and adults with 5+ chronic conditions spend ~14x those with none (RAND).
+67	The "rising risk" tier offers the biggest opportunity to change trajectory and avoid costly progression, so smart programs invest there, not only at the apex.
+68	[1] Risk Stratification in Healthcare: Models, Benefits, and Challenges (US Health Insights) — https://ushealthinsights.com/article/risk-stratification-in-healthcare/ — pyramid model; spending concentration; purpose of stratification
+69	[2] Risk Stratification (NACHC Action Guide) — https://www.nachc.org/wp-content/uploads/2023/04/PHM_Risk-Stratification-AG-Jan-2022.pdf — pyramid tiers; combining algorithms with clinical judgment
+70	[3] What Is Risk Stratification in Healthcare?
+71	(Aledade) — https://aledade.com/value-based-care-resources/blogs/what-is-risk-stratification-in-health-care/ — 5%/50% and 20%/80% spending concentration (consistent with AHRQ MEPS); RAND 2017 puts the 5+ chronic-condition multiple at 14x
+72	[4] Risk-Stratification Methods for Identifying Patients for Care Coordination (AJMC) — https://www.ajmc.com/view/risk-stratification-methods-for-identifying-patients-for-care-coordination — HCC, ACG, Charlson methods and comparative performance
+73	[5] A Systematic Review of Risk Stratification Tools in Primary Care (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC8299990/ — ACG/CCI/HCC comparison; predictive performance
+74	[6] Understanding Risk Stratification and Comorbidities (Health Catalyst) — https://www.slideshare.net/healthcatalyst1/understanding-risk-stratification-comorbidities-and-the-future-of-healthcare — HCC/RAF; LACE readmission score; tiering to action
+
+## predictive-analytics-population-health
+75	Here is the most important and frequently missed idea in predictive population health: predicting who is high-risk is NOT the same as predicting who you can actually help.
+76	Predictive models are only as fair as their design, and the most famous lesson in healthcare AI is a population health algorithm gone wrong.
+77	In a 2019 study published in Science, Ziad Obermeyer and colleagues dissected a widely used commercial algorithm — affecting millions of patients — that helped decide who got extra care-management resources.
+78	Researchers calculated that fixing the proxy would have raised the share of Black patients flagged for additional help from about 17.7 percent to 46.5 percent.
+79	Reformulating the model to predict actual health need (e.g., active chronic conditions) instead of cost would have increased the proportion of Black patients receiving extra help from ~17.7% to ~46.5% — a stark demonstration that proxy choice is an equity decision.
+80	(2019): Cost as a Biased Proxy
+81	The most effective programs are built so that clinical reasoning informs how models are constructed, and the models in turn inform care strategy — a two-way loop, not a static tool bolted onto a workflow.
+82	The 2019 Obermeyer Science study showed a widely used algorithm was racially biased because it predicted cost as a proxy for need; fixing the proxy would have raised Black patients flagged for help from ~17.7% to ~46.5%.
+83	Retraining the model to predict actual need (e.g., active chronic conditions) would have raised Black patients flagged for help from ~17.7% to ~46.5%.
+84	The 2019 Obermeyer et al. study found a widely used population health algorithm was racially biased.
+85	[1] Finding the Right Five Percent: How Machine Learning Is Reshaping Care Management (HIT Consultant) — https://hitconsultant.net/2026/04/14/conifer-machine-learning-predictive-analytics-population-health/ — anticipation; predicting severity/cost before decline; precise targeting
+86	[2] A Framework for Predicting Impactability of Healthcare Interventions Using Machine Learning (arXiv) — https://arxiv.org/pdf/1905.00751 — impactability vs predictability; identifying patients most likely to benefit
+87	[3] The Right Way to Build Predictive Models for the Most Vulnerable Patient Populations (Health Catalyst) — https://www.healthcatalyst.com/learn/insights/predictive-models-population-health-management — human oversight; clinical reasoning informing model design
+88	[4] Dissecting Racial Bias in an Algorithm Used to Manage the Health of Populations (Obermeyer et al., Science 2019) — https://www.science.org/doi/10.1126/science.aax2342 — cost-as-proxy bias; 17.7% to 46.5% correction
+89	[5] Widely Used Health Care Prediction Algorithm Biased Against Black People (Berkeley News) — https://news.berkeley.edu/2019/10/24/widely-used-health-care-prediction-algorithm-biased-against-black-people/ — plain-language summary of the Obermeyer findings and fix
+90	[6] AI & Predictive Analytics for Population Health Management (Innovaccer) — https://innovaccer.com/blogs/the-role-of-ai-predictive-analytics-population-health-management — ML use cases; integrating prediction into care strategy with human judgment
+
+## care-gap-analysis
+91	A 55-year-old who has never had a colonoscopy.
+92	Gaps span the full range of measures: cancer screenings, immunizations, chronic-disease management (like the diabetes measures — HbA1c control, blood pressure control, eye exams, and kidney health evaluation — which NCQA split out of the former Comprehensive Diabetes Care bundle in 2022), behavioral health follow-up, and more.
+93	The first is pre-visit planning: before a patient's scheduled visit, the team reviews their open gaps and pre-populates them so the provider can address them during the visit they are already having.
+94	Expanded from 50–74 for MY2025, following USPSTF (NCQA)
+95	Lowered from 50 to 45 for MY2022 (NCQA)
+96	A diabetic patient is in the denominator for several gaps at once: HbA1c testing, blood-pressure control, a retinal eye exam, and a kidney health evaluation.
+97	During a scheduled visit, point-of-care alerts prompt the team to draw the overdue HbA1c and order the eye exam; an outreach text with a scheduling link gets the patient booked for the screening they keep missing.
+98	[1] What Are Care Gaps in Healthcare?
+99	[2] HEDIS and Care Gaps (AmeriHealth Caritas) — https://www.amerihealthcaritasdc.com/provider/resources/hedis-and-care-gaps — gap as denominator-minus-numerator; comprehensive diabetes care measures
+100	[3] Daily Huddles, Pre-Visit Planning and Care-Gap Closure (MGMA) — https://www.mgma.com/articles/daily-huddles-pre-visit-planning-care-gap-closure-quality — pre-visit planning and workflow integration
+101	[4] Closing Care Gaps at the Point of Care (Veradigm) — https://veradigm.com/closing-gaps-at-the-point-of-care/ — point-of-care alerts for open gaps
+102	[5] Care Gap Closure Automation (Linear Health) — https://linear.health/care-gap-closure-automation — self-scheduling links and reminder sequences; end-to-end workflow
+103	[6] Closing Care Gaps to Achieve Quality Goals (FRG Systems) — https://frgsystems.com/healthcare-finance-news/closing-care-gaps-part-1 — gap closure impact on HEDIS, Stars, and value-based revenue
+
+## diabetes-population-management
+104	About 38 million Americans — roughly 11.6 percent of the population — have diabetes.
+105	Its total annual cost in the U.S. is around $413 billion, making it the most expensive chronic condition in the nation: roughly $1 of every $4 spent on U.S. health care goes to caring for people with diabetes.
+106	But control is hard to achieve at scale: nationally, only about 26 percent of adults with diagnosed diabetes met the combined "ABCS" goals (A1c, blood pressure, cholesterol, and not smoking) in 2017–2018, according to CDC.
+107	Diabetes affects ~38 million Americans (~11.6%), costs ~$413 billion a year (~$1 of every $4 in U.S. health spending), and is largely controllable — yet only ~26% of adults with diabetes meet combined ABCS control goals.
+108	Within that registry, the team works the diabetes care gaps (from the previous lesson): who is overdue for an A1c test, whose blood pressure is uncontrolled, who has not had a retinal eye exam, who needs a kidney health evaluation.
+109	Risk stratification prioritizes the work — the patient with an A1c of 11 and rising needs intensive outreach before the well-controlled patient.
+110	The lifestyle program — delivered by trained coaches over a roughly 12-month curriculum, focused on modest weight loss (5 to 7 percent of body weight) and increasing physical activity to at least 150 minutes per week — reduced the risk of developing type 2 diabetes by 58 percent in high-risk adults.
+111	And the effect is durable: a 10-year follow-up found participants were still about one-third less likely to develop diabetes than controls.
+112	Reduction in type 2 diabetes risk in high-risk adults (CDC/NIDDK)
+113	Diabetes is population health's signature disease: ~38 million Americans (~11.6%), ~$413 billion/year (~$1 of every $4 in U.S. health spending), and largely controllable.
+114	Only about 26% of adults with diabetes meet combined ABCS control goals — the gap between achievable and achieved control is the core opportunity.
+115	The CDC National DPP cut type 2 diabetes risk by 58% (with ~5-7% weight loss and ~150 min/week activity), with benefit durable at 10 years — a model preventive investment for rising-risk patients.
+116	The National DPP's lifestyle-change program — modest weight loss of 5-7% of body weight and at least 150 minutes of weekly activity, delivered by trained coaches over ~12 months — reduced the risk of developing type 2 diabetes by 58% in high-risk adults, and a 10-year follow-up showed participants remained about one-third less likely to develop diabetes.
+117	It cured type 2 diabetes in most participants
+118	A structured lifestyle program (~5-7% weight loss, ~150 min/week activity) reduced the risk of developing type 2 diabetes by 58% in high-risk adults, with benefit durable at 10 years
+119	[1] National Diabetes Statistics Report (CDC) — https://www.cdc.gov/diabetes/php/data-research/index.html — ~38 million with diabetes (~11.6% of population)
+120	[2] Diabetes in America: Prevalence, Statistics, and Economic Impact (ADA) — https://diabetes.org/about-diabetes/statistics/about-diabetes — ~$413B annual cost; $1 of every $4 in U.S. health care spending
+121	[3] The Chronic Care Model and Diabetes Management in US Primary Care Settings: A Systematic Review (CDC PCD) — https://www.cdc.gov/pcd/issues/2013/12_0180.htm — six CCM elements; effectiveness for glycemic and blood-pressure control
+122	[4] What Is the National DPP?
+123	(CDC) — https://www.cdc.gov/diabetes-prevention/programs/what-is-the-national-dpp.html — structured lifestyle program; coaches; 12-month curriculum
+124	[5] Diabetes Prevention Program (DPP) (NIDDK) — https://www.niddk.nih.gov/about-niddk/research-areas/diabetes/diabetes-prevention-program-dpp — 58% risk reduction; 5-7% weight loss; 150 min/week; 10-year durability
+125	[6] Population Health Management for Diabetes: System-Level Approaches for Quality and Disparities (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC5536329/ — registry-based management; addressing disparities and social drivers (the 26% ABCS figure is from CDC, MMWR Nov 2020)
+
+## heart-failure-hypertension-management
+126	About 120 million U.S. adults — roughly 48 percent — have high blood pressure.
+127	Yet control is poor: only about 1 in 4 adults with hypertension have it controlled.
+128	Heart failure is less common but far more acute and expensive: about 6.2 million U.S. adults have it, at an estimated national cost of $30.7 billion a year.
+129	Its defining population health challenge is the hospital readmission — heart-failure patients have roughly a 25 percent 30-day readmission rate nationally, and each readmission is costly and often preventable.
+130	Hypertension (~120M U.S. adults, only ~1 in 4 controlled) is a silent chronic-control problem; heart failure (~6.2M, ~$30.7B/year, ~25% 30-day readmission) is an acute decompensation-and-readmission problem.
+131	The most effective hypertension programs share two features.
+132	The first is self-measured blood pressure (SMBP) monitoring — having patients measure their own pressure at home and report it, which gives far more data than occasional office readings and engages patients in their own control.
+133	In a 2024 retrospective study of 6,595 patients with uncontrolled hypertension enrolled in a remote monitoring program (cellular-connected home cuffs plus registered-nurse care navigators), the share still uncontrolled fell from 66 percent to 40 percent after an average of about nine and a half months.
+134	In a remote monitoring program studied in 2024 (Smith et al., Healthcare), patients with uncontrolled hypertension used cellular-connected blood-pressure cuffs that transmitted home readings, while registered-nurse care navigators reviewed the data and coordinated medication changes with clinicians between visits.
+135	Among 6,595 patients uncontrolled at baseline, the share still uncontrolled fell from 66.3% to 40.2% after an average of 289 days — by combining home monitoring, team-based follow-up, and continuous data rather than relying on sporadic office visits.
+136	Heart-failure patients decompensate — fluid builds up, symptoms worsen — and end up back in the hospital, often within 30 days of a prior discharge.
+137	With a national 30-day readmission rate around 25 percent and each readmission costing many thousands of dollars, preventing readmissions is where the clinical and financial stakes concentrate.
+138	In 2024 UMass Memorial Health–Harrington Hospital reported that its remote monitoring program cut 30-day heart-failure readmissions by 50 percent, though no peer-reviewed study accompanied the announcement, and results vary across programs.
+139	National HF 30-Day Readmission
+140	One hospital RPM program, 2024; not peer-reviewed (AJMC)
+141	6,595 patients, mean 289 days (Smith et al., 2024)
+142	Hypertension (~120M U.S. adults, ~48%) is largely symptomless and poorly controlled (only ~1 in 4), making it a classic problem of reaching people who do not feel sick.
+143	Heart failure (~6.2M adults, ~$30.7B/year) centers on the preventable 30-day readmission, which runs ~25% nationally without intervention.
+144	In one 2024 remote-monitoring study, the share of patients with uncontrolled hypertension fell from 66% to 40% within about nine and a half months.
+145	Remote monitoring (especially daily weight to catch fluid retention) can reduce heart-failure readmissions — one hospital reported a 50% drop — though results vary across programs.
+146	Because weight is the only thing insurers will pay to monitor
+147	[1] High Blood Pressure Facts (CDC) — https://www.cdc.gov/high-blood-pressure/data-research/facts-stats/index.html — ~120M U.S. adults with hypertension; control rates
+148	[2] Estimated Hypertension Prevalence, Treatment, and Control (Million Hearts) — https://millionhearts.hhs.gov/data-reports/hypertension-prevalence.html — ~48% prevalence; only ~1 in 4 controlled
+149	[3] Cost of Inpatient Heart Failure Care and 30-Day Readmissions in the US (ScienceDirect) — https://www.sciencedirect.com/science/article/abs/pii/S0167527320342686 — ~6.2M with HF; ~$30.7B; readmission counts and costs
+150	[4] Remote Monitoring Program Cuts Heart Failure Readmissions in Half (AJMC) — https://www.ajmc.com/view/remote-monitoring-program-cuts-heart-failure-readmissions-in-half — UMass Memorial Health–Harrington Hospital reports 50% fewer 30-day CHF readmissions (2024 announcement; no study published)
+151	[5] Remote Patient Monitoring Is Associated with Improved Outcomes in Hypertension (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC11353537/ — cellular BP monitors with RN care navigators; uncontrolled HTN fell from 66.3% to 40.2% over a mean 289 days (n=6,595)
+152	[6] Outpatient Follow-Up Visits to Reduce 30-Day Readmissions for Heart Failure (CDC PCD) — https://www.cdc.gov/pcd/issues/2024/24_0138.htm — transitional care and post-discharge follow-up to reduce HF readmissions
+
+## behavioral-health-integration-population
+153	The gold-standard approach to behavioral health integration is the Collaborative Care Model (CoCM), developed at the University of Washington in the 1990s.
+154	It is, by a wide margin, the most evidence-backed integration model: more than 90 randomized controlled trials, beginning with the landmark IMPACT trial published in 2002, have shown it more effective than usual care for depression, anxiety, and other conditions.
+155	Rather than treating depression by impression, CoCM uses a validated, quantitative measure to track each patient and treat toward a specific goal, just as a diabetes program treats toward an A1c target.
+156	The standard tool for depression is the PHQ-9, a nine-item questionnaire scored 0 to 27.
+157	The care manager administers it at regular intervals, and the team treats "to target" — for example, a 50 percent reduction in the PHQ-9 score (response) and ultimately a score below 5 (remission).
+158	The behavioral health care manager administers the PHQ-9 at baseline (score 18, moderately severe) and re-measures every few weeks.
+159	The team tracks the PHQ-9 down toward the target (at least a 50% drop, aiming for remission below 5) — actively escalating rather than waiting, which is exactly why measurement-based collaborative care beats usual care.
+160	PHQ-9 Treat-to-Target in Action
+161	The CoCM codes — CPT 99492 (initial month, ~70 minutes), 99493 (subsequent month), and 99494 (additional time), plus G2214 — let a practice bill for the time the behavioral health care manager and psychiatric consultant spend managing a patient in coordination with the billing provider.
+162	A real-world note: a single complex patient — say, with type 2 diabetes, hypertension, and depression — may be served by several of these programs at once (collaborative care for the depression, chronic care management and remote monitoring for the physical conditions), all coordinated in one care plan.
+163	The Collaborative Care Model (CoCM), developed at UW with 90+ RCTs (starting with IMPACT, 2002), is the most evidence-backed integration model and beats usual care.
+164	Measurement-based care is central: validated tools like the PHQ-9 track patients and the team treats "to target" (e.g., a 50% PHQ-9 reduction, aiming for remission below 5), escalating when patients don't improve.
+165	CMS billing codes (99492/99493/99494, G2214) reimburse the team-based, between-visit CoCM work, making integration financially sustainable.
+166	[1] Evidence Base for Collaborative Care (CoCM) (UW AIMS Center) — https://aims.uw.edu/evidence-base-for-cocm/ — CoCM developed at UW; 90+ RCTs; IMPACT trial (2002); more effective than usual care
+167	[2] Learn About the Collaborative Care Model (American Psychiatric Association) — https://www.psychiatry.org/psychiatrists/practice/professional-interests/collaborative-care/learn — three-role team; measurement-based treatment to target
+168	[3] The Collaborative Care Model (CoCM) (Meadows Mental Health Policy Institute) — https://mmhpi.org/cocm/ — team structure; caseload/registry; psychiatric consultant leverage
+169	[4] Behavioral Health Integration Services (CMS MLN) — https://www.cms.gov/files/document/mln909432-behavioral-health-integration-services.pdf — CoCM billing codes 99492/99493/99494 and G2214
+170	[5] CPT 99492: Psychiatric Collaborative Care (Behave Health) — https://behavehealth.com/99492.html — 99492 covers the first ~70 minutes of CoCM; care manager + psychiatric consultant + billing provider
+171	[6] Behavioral Health Integration in Primary Care: 2026 Billing Guide (Nsight Health) — https://blog.nsightcare.com/blog-/behavioral-health-integration-primary-care-guide — medical-behavioral comorbidity; combining CoCM with CCM/RPM in one care plan
+
+## care-manager-roles-models
+172	The first half of this course built the analytic machinery of population health — data, risk stratification, prediction, care gaps, and disease-specific programs.
+173	The most common is the registered nurse (RN) care manager, who handles the clinical work — medication management, disease education, symptom monitoring, coordinating with physicians.
+174	Medicare reimburses it: CPT 99490 covers 20 minutes of clinical staff time per month for care planning and oversight.
+175	Complex CCM serves patients needing more intensive management, with codes (99487, plus add-on 99489) covering 60+ minutes per month and moderate-to-high-complexity decision-making.
+176	Transitional Care Management (TCM) is the time-limited, high-intensity work in the 30 days after a hospital discharge — the post-discharge follow-up that prevents readmissions (connecting to the heart-failure and ADT-alert lessons).
+177	Ongoing; ~20 min/month (CPT 99490)
+178	2+ chronic conditions (12+ months)
+179	60+ min/month; high-complexity decisions (99487/99489)
+180	High, time-limited (30-day post-discharge window)
+181	A typical RN care manager handling high-risk patients carries roughly 50 to 150 patients.
+182	But the range is wide: a purely telephonic, light-touch program might run as high as ~500 members per care manager, while intensive in-person case management for the most complex patients might be as low as ~25 to 1.
+183	A care manager given 300 of the most complex patients cannot meaningfully help any of them; one given 25 light-touch patients is wasted capacity.
+184	Care management types include Chronic Care Management (CCM, 2+ conditions, ~20 min/month, CPT 99490), Complex CCM (60+ min), Transitional Care Management (post-discharge), and intensive complex care management.
+185	Caseload is the central design variable: typically 50-150 high-risk patients per RN, ranging from ~500:1 (telephonic light-touch) to ~25:1 (intensive in-person).
+186	Intensive, in-person management of the most complex patients requires small caseloads — often as low as ~25 to 1, and typically 50-150 for high-risk RN caseloads.
+187	Assigning 300 complex patients to one care manager (a ratio appropriate only for light-touch telephonic work) means none of them get the intensive support they need.
+188	The caseload is far too high for intensive in-person management of complex patients (typically ~25-150), so the care manager cannot meaningfully help any of them
+189	A care management program assigns each RN care manager 300 of the organization's most complex, highest-risk patients for intensive in-person management.
+190	[1] Care Management Action Guide (NACHC) — https://www.nachc.org/wp-content/uploads/2022/01/Care-Management-AG_December-2021.pdf — care manager roles; RN caseload 50-150 high-risk patients; team composition
+191	[2] Chronic Care Management (RHIhub) — https://www.ruralhealthinfo.org/care-management/chronic-care-management — CCM definition; CPT 99490; complex CCM (99487/99489); reimbursement
+192	[3] What Is a Care Manager?
+193	[4] Section 5: Selecting a Care Management Program Model (AHRQ) — https://www.ahrq.gov/patient-safety/settings/long-term-care/resource/hcbs/medicaidmgmt/mm5.html — caseload ranges (~500:1 telephonic to ~25:1 intensive); program model selection
+194	[5] Effect of Care Management Program Structure on Implementation (PMC) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4986276/ — embedded (practice-based) vs centralized models; embedded better normalized
+195	[6] Designing the Role of the Embedded Care Manager (CEConnection) — https://alliedhealth.ceconnection.com/files/DesigningtheRoleoftheEmbeddedCareManager-1372333255651.pdf — embedded care manager working alongside PCPs and high-risk patients
+
+## care-planning-patient-engagement
+196	A person with diabetes spends maybe a few hours a year with clinicians and the other ~8,760 hours managing the disease themselves — choosing what to eat, whether to take medications, when to check glucose, how to respond to symptoms.
+197	The Patient Activation Measure (PAM), developed by Judith Hibbard, is a validated 13-item survey that scores a patient and places them in one of four levels: Level 1 (may not yet believe their role is important), Level 2 (lacks confidence and knowledge to act), Level 3 (beginning to take action), and Level 4 (maintaining healthy behaviors even under stress).
+198	A Level 1 patient who is overwhelmed needs small, confidence-building steps and basic education, not a complex 10-point self-management regimen that will only set them up to fail.
+199	A Level 4 patient can take on more.
+200	The first is motivational interviewing (MI): a collaborative, non-judgmental communication style that helps patients find their own motivation to change, rather than being lectured.
+201	The most evidence-based plan is worthless if the patient does not own it or cannot follow it.
+202	The Patient Activation Measure (PAM, Hibbard) is a validated 13-item tool placing patients in four levels, from Level 1 (not yet believing their role matters) to Level 4 (maintaining behaviors under stress).
+203	More-activated patients have better outcomes and experiences; tailoring support to activation level (small steps for Level 1, more for Level 4) improves results.
+204	[1] Person-Centered Care Plans (AHRQ Academy) — https://integrationacademy.ahrq.gov/products/playbooks/moud-playbook/engage-patients/person-centered-care — shared, person-centered plans; goals and action plans; unifying medical and behavioral health
+205	[2] What is the Patient Activation Measure in Patient-Centered Care?
+206	(TechTarget) — https://www.techtarget.com/patientengagement/news/366584797/What-is-the-Patient-Activation-Measure-in-Patient-Centered-Care — PAM 13-item scale; four activation levels
+207	[3] Patient Engagement & Patient Activation (CFCM) — https://www.cfcm.com/wp-content/uploads/2019/01/PATIENT_ACTIVATION_FINAL_WEB.pdf — the four PAM levels and tailoring to activation
+208	[4] What the Evidence Shows About Patient Activation (Health Affairs, Hibbard & Greene) — https://www.healthaffairs.org/doi/10.1377/hlthaff.2012.1061 — higher activation linked to better outcomes and experiences
+209	[5] Motivational Interviewing: A Communication Best Practice (American Nurse) — https://www.myamericannurse.com/motivational-interviewing/ — MI promotes engagement, self-management, and behavior change in chronic illness
+210	[6] Empowering Patients Through Effective Communication: The Teach-Back Method (PMC) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12680514/ — teach-back improves health literacy and self-care among chronic-disease patients
+
+## aco-population-health-strategy
+211	In 2024, the Medicare Shared Savings Program (MSSP) — the largest ACO program — had 476 ACOs covering about 10.3 million assigned beneficiaries and generated record net savings of roughly $2.5 billion, the eighth consecutive year of savings.
+212	In 2024, ACOs in the risk-bearing Level E and ENHANCED tracks delivered more than two-thirds of all program savings, and real downside risk drives serious population health investment: the more an ACO has at stake, the harder it works the population health levers.
+213	And primary care investment: ACOs composed predominantly of primary care clinicians saved Medicare $403 per beneficiary in 2024 versus $224 for ACOs with fewer primary care clinicians (CMS), because strong primary care prevents the downstream expensive events.
+214	Covering ~10.3M assigned beneficiaries (CMS)
+215	8th consecutive year of savings (CMS)
+216	Record Net Savings (2024)
+217	Net per capita savings, physician-led (low-revenue) vs hospital-led (high-revenue) ACOs, 2024 (CMS)
+218	Net per capita savings, ACOs mostly of primary care clinicians vs others, 2024 (CMS)
+219	This also clarifies why population health and value-based payment are inseparable, as the first lesson claimed.
+220	In 2024, MSSP had 476 ACOs covering ~10.3M beneficiaries and generated record net savings of ~$2.5 billion, an eighth straight year of savings.
+221	ACOs win by reducing avoidable utilization (preventable admissions, ED visits, bad transitions) using the full population health toolkit, plus post-acute/SNF network management and primary-care investment (primary-care-heavy ACOs saved $403 vs $224 per beneficiary in 2024).
+222	[1] Medicare Shared Savings Program PY24 Financial and Quality Results (CMS) — https://www.cms.gov/files/document/fact-sheet-ssp-py24-financial-quality-results.pdf — 476 ACOs; ~10.3M beneficiaries; record savings; quality gate
+223	[2] Medicare ACOs Saved $2.4B in 2024, Setting a New Record (Fierce Healthcare) — https://www.fiercehealthcare.com/regulatory/mssp-acos-saved-24b-2024-setting-new-record-program — record savings; eighth consecutive year of savings
+224	[3] ACO Payment Basics (MedPAC) — https://www.medpac.gov/wp-content/uploads/2024/10/MedPAC_Payment_Basics_25_ACOs_FINAL_SEC.pdf — attribution, benchmark, and shared-savings mechanics
+225	[4] 5 Key Strategies for ACO Performance (Arcadia) — https://arcadia.io/resources/5-key-strategies-for-aco-performance — reducing avoidable utilization; risk stratification; data infrastructure
+226	[5] New Analysis Finds Top-Performing ACOs Focus on Patients with Complex Needs (Avalere) — https://advisory.avalerehealth.com/insights/new-analysis-finds-top-performing-acos-across-models-focus-on-patients-with-complex-needs — complex-patient focus of top-performing ACOs
+227	[6] Solving the ACO's Out-of-Network Utilization Problem (TechTarget) — https://www.techtarget.com/revcyclemanagement/answer/Solving-the-ACOs-Out-of-Network-Utilization-Problem — network leakage; higher costs with out-of-network primary care
+
+## total-cost-of-care-management
+228	High-cost claimants (HiCCs) are a tiny fraction of the population but a huge share of spend: nationally, the top 5 percent of spenders account for roughly half of all health care spending, and the top 1 percent for about a fifth (AHRQ Medical Expenditure Panel Survey).
+229	Specialty drugs are only about 2 percent of prescriptions but often drive 50 percent or more of total pharmacy spend.
+230	UnitedHealth Group estimated in 2019 that 18 million of the 27 million ED visits made each year by privately insured people are avoidable, costing about $32 billion — roughly $1,800 per visit — because treating the same problem in the ED costs far more than in urgent care, primary care, or telehealth (other researchers estimate a smaller avoidable share).
+231	Top 5% of people account for about half of spending (AHRQ MEPS)
+232	~2% of prescriptions, often 50%+ of pharmacy spend (industry)
+233	Of 27M ED visits by privately insured people (UnitedHealth Group, 2019)
+234	Per year, about $1,800 per visit (UnitedHealth Group, 2019)
+235	The only legitimate way to reduce total cost of care is to eliminate avoidable, low-value spending — preventable admissions, duplicate tests, misplaced sites of care — never necessary care.
+236	Cost concentrates: the top 5% of spenders account for about half of all health spending, and the top 1% for about a fifth (AHRQ MEPS).
+237	Specialty pharmacy is ~2% of prescriptions but often 50%+ of pharmacy spend, and avoidable ED visits (an estimated 18M/year among the privately insured, ~$32B) are major drivers.
+238	[1] Total Cost of Care and Resource Use Technical Guidelines (HealthPartners) — https://www.healthpartners.com/content/dam/corporate/tcoc/tcoc-technical-implementation-guidelines.pdf — TCOC definition; risk-adjusted PMPM; all-services scope
+239	[2] Per Member Per Month (PMPM) (MD Clarity) — https://www.mdclarity.com/glossary/per-member-per-month-pmpm — PMPM definition and calculation
+240	[3] Practical Approaches to Manage High-Cost Claimants (Baldwin) — https://us.bbrown.com/blog/practical-approaches-for-employers-to-manage-high-cost-claimants-in-health-plans — employer approaches to managing high-cost claimants
+241	[4] Specialty Prescription Drugs: Advanced Cost Containment Strategies (Roundstone) — https://roundstoneinsurance.com/blog/specialty-prescription-drugs/ — specialty ~2% of scripts / 50%+ of pharmacy spend; cost levers
+242	[5] Specialty Pharmacy Benefits & Total Cost of Care / Site of Care (Anthem; EBRI) — https://www.ebri.org/content/full/unlocking-health-benefits--where-employer-high-cost-spending-often-goes — where employer high-cost spending goes (EBRI Issue Brief #547, Oct 2025); specialty medications’ share rises in the highest-spending tiers
+243	[6] Reducing Avoidable Emergency Department Utilization in Value-Based Care (Illustra Health) — https://illustra.health/blog/reducing-avoidable-emergency-department-utilization-in-value-based-care/ — strategies to reduce avoidable ED use in value-based care (the 18M / $32B estimate is UnitedHealth Group’s, 2019)
+
+## stratifying-by-equity
+244	Recall the founding definition from the first lesson: population health is the health outcomes of a group AND the distribution of those outcomes within it.
+245	An overall diabetes-control rate of 70 percent can hide that one group is at 85 percent and another at 50 percent.
+246	In 2024, OMB updated its race/ethnicity standards — moving to a combined race-and-ethnicity question, adding a new "Middle Eastern and North African" (MENA) category, and requiring collection of detailed responses.
+247	Reflect updates like the 2024 combined question and MENA category.
+248	It is reasonably accurate at the group level, with C-statistics around 0.93 to 0.94 for major groups.
+249	A population health program reports an overall hypertension-control rate of 68%, which meets its target.
+250	Stratified by race and preferred language, it discovers control is 78% among English-speaking White patients but only 52% among Spanish-speaking Hispanic patients.
+251	The aggregate hid a 26-point gap.
+252	The next lesson covers community health workers — one of the most effective tools for actually reaching and closing gaps in underserved populations.
+253	OMB updated its standards in 2024 (combined race/ethnicity question, new MENA category, detailed responses), reflecting a trend toward more granular, self-determined, complete data.
+254	It performs reasonably well at the group level (C-statistics ~0.93-0.94 for major groups), making it useful for measuring population disparities and targeting community-level interventions when self-reported data is incomplete.
+255	[1] Race, Ethnicity, Language (REL) Data Collection Standards (CT OHS) — https://portal.ct.gov/-/media/OHS/Health-IT-Advisory-Council/REL/PA-21-35-REL-Data-Collection-Standards.pdf — self-reported REL; OMB/ISO alignment; aggregation/disaggregation
+256	[2] Revisions to Federal Standards for Collecting Data on Race and Ethnicity (KFF) — https://www.kff.org/racial-equity-and-health-policy/revisions-to-federal-standards-for-collecting-and-reporting-data-on-race-and-ethnicity-what-are-they-and-why-do-they-matter/ — 2024 OMB updates: combined question, MENA category, detailed responses
+257	[3] Standardized Demographic and Language Data Collection (CMS OMH) — https://www.cms.gov/about-cms/agency-information/omh/downloads/data-collection-resources.pdf — granular categories; self-identification; multiple-race selection
+258	[4] Bayesian Indirect Surname Geocoding (BISG) (RAND) — https://www.rand.org/health/surveys/tools/bisg.html — BISG method combining surname and geocoding to estimate race/ethnicity
+259	[5] When Race/Ethnicity Data Are Lacking: Using Advanced Indirect Estimation Methods to Measure Disparities (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC5158280/ — BISG group-level accuracy vs individual-level limitation; missing-data problem
+260	[6] Using BISG to Create a Working Classification of Race and Ethnicity in a Managed Care Population (Health Services Research) — https://onlinelibrary.wiley.com/doi/abs/10.1111/1475-6773.12089 — validation; C-statistics ~0.93-0.94; group vs individual caution
+
+## community-health-workers-equity
+261	Community health workers (CHWs) are the most effective tool for reaching them.
+262	What CHWs Do: The C3 Roles
+263	The roles and skills of CHWs were standardized by the Community Health Worker Core Consensus (C3) Project, carried out from 2014 to 2018, which defined a national consensus set — ten core roles and eleven core skills.
+264	The C3 roles span the bridge function: cultural mediation between communities and systems; culturally appropriate health education and information; care coordination, case management, and system navigation; providing coaching and social support; advocating for individuals and communities; building individual and community capacity; providing direct service (like basic screening); implementing assessments; conducting outreach; and participating in evaluation and research.
+265	Core CHW Roles (C3 Project)
+266	The IMPaCT randomized trial found the program reduced total hospital days by 65 percent and doubled patient satisfaction with primary care, while modestly improving control of conditions like diabetes, obesity, and mental health.
+267	A Health Affairs economic analysis found that Penn's CHW program returned $2.47 for every $1 invested annually by Medicaid, with the savings driven by reduced hospitalizations.
+268	This is the rare population health intervention with randomized-trial evidence of both better outcomes AND positive return on investment — a roughly 2.5-to-1 ROI.
+269	The evidence is strongest for structured, evidence-based programs like IMPaCT — with defined roles, real training (aligned to the C3 competencies), appropriate caseloads, integration into the care team, and clear protocols — rather than loosely-defined "community outreach." A CHW program designed and supported like a serious clinical program produces serious results; one treated as an afterthought does not.
+270	In randomized trials this reduced hospital days by 65%, doubled primary-care satisfaction, and returned $2.47 per Medicaid dollar — demonstrating that a structured, evidence-based CHW program is both effective and a sound financial investment.
+271	The strong outcomes and ~2.5:1 ROI come from structured, evidence-based CHW programs (like IMPaCT) — with real training, defined roles, manageable caseloads, care-team integration, and reimbursement.
+272	The C3 Project (2014-2018) standardized CHW practice into ten core roles and eleven skills, spanning cultural mediation, navigation, coaching/support, outreach, and advocacy.
+273	Rigorous evidence (Penn's IMPaCT randomized trials) shows CHW programs cut hospital days by ~65% and doubled primary-care satisfaction.
+274	CHWs are a high-return investment: Penn's program returned $2.47 per $1 invested annually by Medicaid, driven by reduced hospitalizations.
+275	Results depend on structured, evidence-based programs (training to C3 competencies, defined roles, manageable caseloads, care-team integration) — CHWs are core equity infrastructure, not a margin.
+276	The IMPaCT program, tested in multi-center randomized controlled trials, reduced total hospital days by ~65% and doubled patient satisfaction with primary care, while a Health Affairs economic analysis found it returned $2.47 per $1 invested annually by Medicaid (savings driven by fewer hospitalizations).
+277	They reduced hospital days by ~65%, doubled primary-care satisfaction, and returned about $2.47 for every $1 invested by Medicaid — better outcomes AND positive ROI
+278	[1] Roles & Competencies (CHW Core Consensus / C3 Council) — https://www.c3council.org/roles-competencies — CHW definition; ten core roles and eleven skills; bridge function
+279	[2] The Community Health Worker Core Consensus (C3) Project Story (Springer) — https://link.springer.com/chapter/10.1007/978-3-030-56375-2_2 — C3 Project 2014-2018; standardized roles and competencies
+280	[3] Penn's Community Health Worker Program Yields $2.47 for Every $1 Invested (Newswise/Penn) — https://www.newswise.com/articles/penn-s-community-health-worker-program-yields-2-47-for-every-1-invested-annually-by-medicaid — $2.47 ROI per Medicaid dollar; savings from reduced hospitalizations; multi-center trial cut hospital stays 65% and doubled primary-care satisfaction
+281	[4] Evidence-Based Community Health Worker Program Generates Positive ROI (Health Affairs) — https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00981 — RCT-based economic analysis; IMPaCT; addressing unmet social needs
+282	[5] The Evidence on Community Health Workers (Penn LDI) — https://ldi.upenn.edu/healthpolicysense/evidence-community-health-workers — IMPaCT randomized-trial outcomes: 30% fewer hospitalizations in the multiple-chronic-condition trial; ~$2 return per $1
+283	[6] Medicaid Reimbursement for Community Health Worker Services (Milbank Memorial Fund) — https://www.milbank.org/publications/medicaid-reimbursement-for-community-health-worker-services-model-state-plan-amendment-other-guidance-november-2025-update/ — Medicaid reimbursement pathways (State Plan Amendments) for CHW sustainability
+
+## population-health-dashboards
+284	The Metrics: Rates per 1,000 and PMPM
+285	The two key conventions are rates "per 1,000" and "per member per month" (PMPM).
+286	The core utilization metrics are expressed per 1,000 members: inpatient admissions per 1,000, 30-day readmissions per 1,000, and emergency department visits per 1,000.
+287	A program working to reduce avoidable admissions watches its admissions-per-1,000 trend the way a business watches revenue.
+288	Admissions/ED/readmissions per 1,000 and risk-adjusted PMPM, trended over time.
+289	It must be interactive with drill-down: a leader sees population-level admissions-per-1,000, then drills into which conditions, clinicians, or subgroups are driving it.
+290	A population health dashboard shows ED-visits-per-1,000 rising over the last two quarters.
+291	Months later the dashboard shows ED-visits-per-1,000 declining and the disparity narrowing — the dashboard functioning as the program's nervous system, sensing and directing response.
+292	Population health metrics normalize to per-1,000 rates (admissions, ED visits, readmissions) and PMPM cost, because comparing raw counts across differently-sized populations is meaningless.
+293	A raw count of admissions means nothing without knowing the population size — 500 admissions is great for a population of 100,000 and terrible for 1,000.
+294	Normalizing to rates per 1,000 members (or PMPM for cost) lets you compare populations and track trends fairly.
+295	Because per-1,000 rates are always lower numbers
+296	Why are population health utilization metrics expressed as rates "per 1,000" members or "per member per month" rather than as raw counts?
+297	[1] 8 Healthcare Dashboard Examples and the Actions They Empower (Arcadia) — https://arcadia.io/resources/healthcare-dashboard-examples — population health dashboard types; tracking avoided ED visits, readmissions, care gaps; PMPM
+298	[2] Identifying Appropriate Metrics for Population Management (Milliman MedInsight) — https://www.medinsight.milliman.com/en/insight/identifying-appropriate-metrics-for-population-management — utilization metrics; per-1,000 and PMPM conventions
+299	[3] Conflicting Readmission Rate Trends in a High-Risk Population (Population Health Management / PMC) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4675182/ — admissions/readmissions per 1,000; importance of rate normalization to perceived effectiveness
+300	[4] Clinician Dashboard Views and Improvement in Preventative Health Outcomes (PMC) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6621998/ — color-coded risk levels; sortable/filterable panel views; care-gap dashboards
+301	[5] Transforming Population Health Management with Data-Driven Strategy (Health Catalyst) — https://www.healthcatalyst.com/use-cases/population-health-management — aligning dashboard metrics with value goals; drill-down and action
+302	[6] 15 Healthcare KPIs & Metrics You Should Track (ThoughtSpot) — https://www.thoughtspot.com/data-trends/dashboard/healthcare-kpis-and-metrics-dashboard-examples — dashboard KPI design; clinical/operational/financial views and audiences
+
+## population-health-quality-improvement
+303	Paul Batalden and Frank Davidoff (2007) defined quality improvement as the combined and unceasing efforts of everyone — clinicians, patients, families, payers, planners — to make changes that lead to better patient outcomes, better system performance, and better professional learning.
+304	"What are we trying to accomplish?" becomes a population aim — for example, "reduce 30-day readmissions per 1,000 in our heart-failure population by 20 percent this year." "How will we know?" points to the dashboard metrics from the last lesson (the per-1,000 rates, PMPM, care-gap closure, stratified by equity).
+305	A specific, measurable, time-bound goal (e.g., readmissions per 1,000 down 20%).
+306	Use dashboard measures (per-1,000 rates, PMPM, gaps), stratified by equity.
+307	A population's metrics fluctuate constantly — readmissions-per-1,000 bounces month to month even when nothing has changed.
+308	Sustainability is the hardest part and the most often neglected.
+309	A heart-failure program sets a population aim (readmissions per 1,000 down 20%), pilots ADT-driven transitional care with one team, confirms a real signal on a control chart, builds the workflow and bills the care-management codes to sustain it, then spreads it across all teams with continued PDSA — while the dashboard tracks the population metric and equity stratification ensures the gains reach everyone.
+310	The Model for Improvement applies at population scale: set a population aim, measure with dashboard metrics (per-1,000 rates, PMPM, gaps) stratified by equity, choose an intervention, and test with PDSA.
+311	A population health team pilots a new transitional-care program and sees heart-failure readmissions-per-1,000 drop the next month.
+312	[1] Quality Improvement in Population Health Systems (ScienceDirect) — https://www.sciencedirect.com/science/article/abs/pii/S2213076415000482 — QI definition; applying improvement methods to population health systems
+313	[2] Model for Improvement (IHI) — https://www.ihi.org/library/model-for-improvement — three questions and PDSA; implementation and spread
+314	[3] Model for Improvement & PDSA Cycles (Clinical Excellence Commission) — https://cec.health.nsw.gov.au/CEC-Academy/quality-improvement-tools/model-for-improvement-and-pdsa-cycles — PDSA iterative testing and ramps
+315	[4] A QI Approach to Scaling Up a Complex Health System Intervention for CVD (PMC) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12677765/ — PDSA-driven scale-up of a community-based cardiovascular program
+316	[5] Learning Health System for Implementation, Scale-Up, and Sustainment: A Systematic Review (medRxiv) — https://www.medrxiv.org/content/10.1101/2025.09.24.25336590.full.pdf — implementation, scale-up, and sustainment guidance
+317	[6] PDSA Quality Improvement in Healthcare: A Practical Framework (Quality Leaders Academy) — https://www.qualityleadersacademy.com/pdsa-quality-improvement — PDSA repeated until sustained improvement; learning health systems; continuous improvement

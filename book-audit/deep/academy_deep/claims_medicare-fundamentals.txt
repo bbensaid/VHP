@@ -1,0 +1,383 @@
+
+## medicare-history-structure
+0	Before 1965, growing old in America often meant losing health coverage exactly when you needed it most.
+1	Private insurers either refused to cover older adults or charged premiums most retirees could not afford, and roughly half of Americans over 65 had no health insurance at all.
+2	Johnson signed Medicare into law on July 30, 1965, as part of the Social Security Amendments of 1965.
+3	Johnson held the signing ceremony at the Truman Library in Independence, Missouri, to honor former President Harry Truman, who had proposed national health insurance back in 1945 only to be blocked by Congress.
+4	Truman was enrolled as Medicare’s very first beneficiary and received the first Medicare card.
+5	When Johnson signed Medicare into law at the Truman Library on July 30, 1965, he enrolled 81-year-old former President Harry Truman as the program’s first beneficiary.
+6	Truman and his wife Bess received the first two Medicare cards.
+7	Harry Truman, Medicare Card #1
+8	Parts A and B existed from the start in 1965 and together are called "Original" or "Traditional" Medicare.
+9	Part C (Medicare Advantage) was created by the Balanced Budget Act of 1997 — originally called Medicare+Choice — letting beneficiaries get their benefits through private plans.
+10	Part D, the outpatient prescription drug benefit, was created by the Medicare Modernization Act of 2003 and took effect on January 1, 2006.
+11	Most beneficiaries pay no Part A premium because they (or a spouse) paid Medicare payroll taxes for at least 40 quarters — ten years — of work.
+12	Medicare eligibility is not purely about turning 65.
+13	U.S. citizens and lawful permanent residents who have worked 40 quarters (ten years) in Medicare-covered employment are entitled to premium-free Part A at 65 and can enroll in Part B for a monthly premium.
+14	People who reach 65 without enough work quarters can still buy into Part A by paying a premium.
+15	The disability pathway covers people under 65 who have received Social Security Disability Insurance (SSDI) for 24 months; they are then automatically enrolled in Parts A and B.
+16	Two conditions bypass the standard 24-month wait: people with End-Stage Renal Disease (ESRD) generally qualify about three months after starting regular dialysis or after a kidney transplant, and people with ALS (amyotrophic lateral sclerosis) qualify immediately upon receiving SSDI.
+17	Citizens/permanent residents with 40 quarters of Medicare-taxed work get premium-free Part A; those with fewer quarters can buy in.
+18	People under 65 are auto-enrolled in Parts A and B after 24 months of Social Security Disability Insurance benefits.
+19	Qualify at any age, generally ~3 months after regular dialysis begins or after a kidney transplant — no 24-month wait.
+20	People with ALS receive Medicare immediately upon collecting SSDI — no 24-month wait.
+21	About 12 million Americans are "dual eligibles" enrolled in both at once — Medicare pays first, Medicaid fills gaps.
+22	Medicare is one of the largest payers in the world.
+23	In 2024, Medicare covered about 68 million people: roughly 61 million (about 90 percent) age 65 or older and 7 million younger people who qualify through disability, ESRD, or ALS.
+24	Medicare made up roughly 13.5 percent of the federal budget in 2024, Medicare benefit payments are estimated at about $1.1 trillion in 2025, and Medicare accounted for about 21 percent of all national health expenditures in 2023.
+25	The United States entered "Peak 65" in 2024: about 4.1 million people are turning 65 each year from 2024 through 2027 — roughly 11,000 every day.
+26	About 61M are age 65+ and 7M are under 65 (KFF Medicare 101)
+27	Medicare was 21% of national health spending in 2023 (KFF / CMS NHE)
+28	Benefit Payments (2025 est.)
+29	A major driver of federal spending (KFF Medicare 101)
+30	"Peak 65" — about 4.1M turn 65 each year, 2024–2027 (Alliance for Lifetime Income)
+31	Medicare was signed into law on July 30, 1965, by President Johnson as Title XVIII of the Social Security Act, alongside Medicaid (Title XIX); Harry Truman was its first beneficiary.
+32	Parts A and B date to 1965; Part C came from the Balanced Budget Act of 1997 and Part D from the Medicare Modernization Act of 2003 (effective 2006).
+33	Eligibility has four pathways: age 65+ with 40 work quarters, 24 months of SSDI, ESRD, and ALS (the last two skip the 24-month wait).
+34	In 2024, about 68 million people were enrolled, ~90% of them age 65 or older.
+35	Medicare benefit payments are estimated at about $1.1 trillion in 2025 — Medicare is about 21% of national health spending and ~13.5% of the federal budget — and the "Peak 65" wave is intensifying fiscal pressure.
+36	[1] Medicare Is Signed Into Law — SSA History — https://www.ssa.gov/history/lbjsm.html — July 30, 1965 signing, Truman as first beneficiary.
+37	[2] Medicare and Medicaid Act (1965) — National Archives — https://www.archives.gov/milestone-documents/medicare-and-medicaid-act — Title XVIII/XIX structure and intent.
+38	[3] Original Medicare (Part A and B) Eligibility and Enrollment — CMS — https://www.cms.gov/medicare/enrollment-renewal/original-part-a-b — 40 quarters, premium-free Part A, eligibility rules.
+39	[4] Medicare Coverage for People with Disabilities — Center for Medicare Advocacy — https://medicareadvocacy.org/medicare-info/medicare-coverage-for-people-with-disabilities/ — 24-month SSDI wait, ESRD and ALS exceptions.
+40	[5] Medicare Prescription Drug, Improvement, and Modernization Act — Wikipedia/Congress.gov — https://www.congress.gov/bill/108th-congress/house-bill/1 — Part D created 2003, effective Jan 1, 2006; Part C history.
+41	[6] The Peak 65® Zone is Here — Alliance for Lifetime Income, Retirement Income Institute (January 2024) — more than 4.1 million Americans turning 65 each year through 2027 (over 11,200 a day).
+42	[7] Medicare Health Policy 101 — KFF — https://www.kff.org/medicare/health-policy-101-medicare/ — 68M enrolled (2024; 61M age 65+), ~$1.1T benefit payments (2025 est.), 21% of NHE (2023), ~13.5% of federal budget (2024).
+43	[8] America is hitting "peak 65" in 2024/2025 — CBS News — https://www.cbsnews.com/news/retirement-medicare-401k-what-to-know-peak-65/ — ~4.1M turning 65 each year through 2027, ~11,000/day.
+
+## medicare-financing
+44	Funded by the 2.9% Medicare payroll tax
+45	Funded ~75% general revenue, ~25% premiums
+46	Employees pay 1.45 percent of their earnings and employers pay a matching 1.45 percent, for a combined 2.9 percent.
+47	Self-employed workers pay the full 2.9 percent themselves.
+48	Since 2013, an Additional Medicare Tax of 0.9 percent applies to high earners — on wages above $200,000 for individual filers and above $250,000 for joint filers.
+49	1.45% employee + 1.45% employer (CMS / Treasury)
+50	On wages over $200K single / $250K joint (ACA)
+51	~75% general revenue, ~25% premiums (KFF)
+52	For Part B, the law sets standard beneficiary premiums to cover about 25 percent of projected per-enrollee costs, with the remaining roughly 75 percent coming from general federal revenue — that is, from the broad federal budget funded by income taxes and borrowing.
+53	The 2025 Trustees Report projects HI depletion in 2033 — three years earlier than the prior report’s 2036 estimate, a change driven mainly by higher projected health care costs.
+54	It means incoming payroll-tax revenue would cover only about 89 percent of Part A costs in 2033 — leaving an 11 percent shortfall that Congress would have to close through higher taxes, lower payments, or other policy changes.
+55	If the HI Trust Fund is depleted in 2033, Part A would still pay roughly 89 cents on the dollar from ongoing payroll taxes — it would not shut down.
+56	2025 Trustees Report (moved up from 2036)
+57	An abrupt Part A cut unless Congress acts (CRFB analysis of the 2025 Trustees Report)
+58	Part B Revenue Mix (2023)
+59	The Part A payroll tax is 2.9% combined (1.45% employee + 1.45% employer), with an extra 0.9% on high earners and no wage cap.
+60	Part B premiums are set to cover about 25% of costs, with roughly 75% paid from general federal revenue; Part D is financed similarly.
+61	The 2025 Trustees Report projects the HI Trust Fund will be depleted in 2033, after which payroll taxes would cover about 89% of Part A costs.
+62	[1] What is the Medicare trust fund, and how is it financed? — Tax Policy Center — https://taxpolicycenter.org/briefing-book/what-medicare-trust-fund-and-how-it-financed — HI vs SMI structure, payroll tax, general revenue.
+63	[2] 2025 Medicare Trustees Report — CMS — https://www.cms.gov/oact/tr/2025 — HI depletion 2033, 89% of costs payable after.
+64	[3] Analysis of the 2025 Medicare Trustees Report — CRFB — https://www.crfb.org/papers/analysis-2025-medicare-trustees-report — 2036→2033 change driven by higher health costs.
+65	[4] FAQs on Medicare Financing and Trust Fund Solvency — KFF — https://www.kff.org/medicare/issue-brief/faqs-on-medicare-financing-and-trust-fund-solvency/ — Part B premiums set to cover ~25% of costs (general revenue 71%, premiums 27% of Part B revenue in 2023), payroll tax detail.
+66	[5] Trustees Report Summary — SSA — https://www.ssa.gov/oact/trsum/ — 1.45%/1.45% payroll tax, 0.9% additional tax thresholds, SMI financing.
+
+## medicare-coverage-benefits
+67	A common misconception is that Medicare pays for everything once you turn 65.
+68	Traditional Medicare was designed in 1965 as a safety net against catastrophic costs, not as a comprehensive benefit, and it still carries substantial cost-sharing and significant coverage exclusions.
+69	The most consequential design feature is what traditional Medicare lacks: an out-of-pocket maximum.
+70	Unlike employer plans and Medicare Advantage, Original Medicare Parts A and B set no annual cap on what a beneficiary can owe — a single catastrophic illness can generate unlimited 20 percent coinsurance.
+71	A benefit period begins when you are admitted as an inpatient and ends only after you have been out of a hospital or skilled nursing facility for 60 consecutive days.
+72	In 2025, the inpatient hospital deductible is $1,676 per benefit period.
+73	Days 1–60 carry no additional coinsurance after the deductible.
+74	Days 61–90 cost $419 per day.
+75	Beyond 90 days, you tap into 60 "lifetime reserve days" at $838 per day — and once used, those reserve days are gone forever.
+76	SNF days 1–20 carry no coinsurance; days 21–100 cost $209.50 per day in 2025; and after day 100, the beneficiary pays the full cost.
+77	$1,676 per benefit period
+78	Only 60 days for your entire life
+79	Requires prior 3-day hospital inpatient stay
+80	Medicare only covers SNF care after a 3-day inpatient hospital stay.
+81	The 3-day rule and "observation status"
+82	In 2025, the standard Part B premium is $185.00 per month and the annual deductible is $257.
+83	After the deductible, beneficiaries typically pay 20 percent coinsurance of the Medicare-approved amount for most services.
+84	That 20 percent has no ceiling.
+85	For a routine office visit it is trivial; for an expensive course of chemotherapy, dialysis, or specialty infusions billed under Part B, the 20 percent share can run into the tens of thousands of dollars in a single year — with no out-of-pocket maximum to stop it.
+86	Standard Part B Premium 2025
+87	Annual (CMS 2025 fact sheet)
+88	The largest gap is long-term care.
+89	Because Original Medicare has no out-of-pocket maximum and substantial cost-sharing, about 43 percent of traditional-Medicare beneficiaries (12.2 million people in 2023) buy a Medicare Supplement policy, known as Medigap; others rely on employer retiree coverage or Medicaid.
+90	Consider a Part B patient on an expensive specialty infusion drug billed at $300,000 a year.
+91	Under Original Medicare alone, the 20% coinsurance — about $60,000 — would fall on the patient with no cap to stop it.
+92	In 2025 the Part A deductible is $1,676 per benefit period; days 61-90 cost $419/day and lifetime reserve days cost $838/day.
+93	Part B in 2025 has a $185.00 standard premium and $257 deductible, then 20% coinsurance with no cap.
+94	SNF coverage requires a qualifying 3-day inpatient hospital stay; "observation status" does not count.
+95	Original Medicare has no out-of-pocket maximum, and Part B charges 20% coinsurance after the deductible.
+96	On $400,000 of services that 20% share runs into the tens of thousands with nothing to cap it — which is why most beneficiaries add Medigap or choose Medicare Advantage (which is required to have an out-of-pocket cap).
+97	A fixed annual out-of-pocket maximum of about $9,000
+98	About 20% of the approved amount — tens of thousands of dollars, with no cap
+99	Only the $257 Part B deductible
+100	A Medicare beneficiary on Original Medicare alone develops a serious illness requiring $400,000 of Part B-covered services in one year.
+101	[1] 2025 Medicare Parts A & B Premiums and Deductibles — CMS — https://www.cms.gov/newsroom/fact-sheets/2025-medicare-parts-b-premiums-and-deductibles — Part B premium $185, deductible $257; Part A deductible $1,676.
+102	[2] Medicare Program; CY 2025 Inpatient Hospital Deductible and Coinsurance — Federal Register — https://www.federalregister.gov/documents/2024/11/14/2024-26472/ — days 61-90 $419, lifetime reserve $838, SNF $209.50.
+103	[3] Medicare Lifetime Reserve Days — Medical News Today — https://www.medicalnewstoday.com/articles/medicare-lifetime-reserve-days — 60 lifetime reserve days at $838/day; benefit period rules.
+104	[4] Medicare Coverage of Skilled Nursing Facility Stays — Nolo — https://www.nolo.com/legal-encyclopedia/medicare-coverage-skilled-nursing-facility-stays.html — 3-day qualifying inpatient stay; SNF day schedule.
+105	[5] Medicare Coverage for Dental, Vision, and Hearing — Medigap.com — https://www.medigap.com/faqs/medicare-coverage-for-dental-vision-and-hearing/ — exclusions and Medigap gap-filling.
+106	[6] Learn what Medigap Covers — Medicare.gov — https://www.medicare.gov/health-drug-plans/medigap/basics/coverage — standardized lettered plans; covers coinsurance/copays/deductibles, not LTC/dental/vision.
+
+## inpatient-pps-drg
+107	For Medicare’s first 18 years, hospitals were paid retrospectively for whatever it cost them to treat a patient.
+108	By the early 1980s, policymakers concluded the incentives themselves had to change.
+109	Prospective (IPPS, 1983+)
+110	DRGs were developed at Yale University in the early 1970s by Robert Fetter and John Thompson as a way to classify hospital cases into clinically similar groups that consume similar resources.
+111	For fiscal year 2025, CMS uses a total of 773 MS-DRGs.
+112	In the early 1970s, Robert B.
+113	Thompson, MPH, at Yale University built the first operational set of Diagnosis-Related Groups to relate the types of patients a hospital treats to the costs it incurs.
+114	CMS FY2025 IPPS Final Rule
+115	After 1983, hospitals intensified their scrutiny of length of stay, and average inpatient stays fell substantially across the system.
+116	IPPS was the first large-scale demonstration that changing how you pay providers changes how they deliver care.
+117	The 1983 shift to DRG-based prospective payment proved a principle that still drives reform today: change how you pay, and you change how care is delivered.
+118	Before 1983, Medicare paid hospitals retrospectively for their costs, rewarding volume and long stays with almost no financial risk to the hospital.
+119	In 1983 Congress authorized the Inpatient Prospective Payment System (IPPS), paying a fixed amount per case set in advance by diagnosis.
+120	For FY2025 there are 773 MS-DRGs, each with a relative weight reflecting average resource use.
+121	It deliberately does not pay based on the hospital’s actual costs, charges, or length of stay — that was the pre-1983 cost-based system it replaced.
+122	[1] Design and Development of the Diagnosis Related Group (DRGs) — CMS — https://www.cms.gov/icd10m/fy2025-version42.0-fullcode-cms/fullcode_cms/Design_and_Development_of_the_Diagnosis_Related_Group_(DRGs).pdf — Yale origins, Fetter & Thompson, classification logic.
+123	[2] Diagnosis-related group — Wikipedia — https://en.wikipedia.org/wiki/Diagnosis-related_group — 1983 congressional authorization, IPPS adoption.
+124	[3] FY 2025 IPPS Final Rule — CMS — https://www.cms.gov/medicare/payment/prospective-payment-systems/acute-inpatient-pps/fy-2025-ipps-final-rule-home-page — 773 MS-DRGs for FY2025.
+125	[4] Medicare Inpatient Methodology — Payerset — https://docs.payerset.com/using-the-payerset-platform/data-dictionary/medicare-inpatient-methodology — base rate × relative weight, wage index, IME, DSH, outliers.
+126	[5] Cost-Based Payment — Saving Rural Hospitals (CHQPR) — https://ruralhospitals.chqpr.org/Cost-Based_Payment.html — how cost-based reimbursement works.
+127	[6] Marketing and health care implications of hospitals adapting to DRG reimbursement — PubMed — https://pubmed.ncbi.nlm.nih.gov/10113589/ — increased scrutiny of length of stay after 1983.
+
+## physician-payment-fee-schedule
+128	Just as hospitals were paid by cost before 1983, physicians were originally paid by their own charges — Medicare reimbursed "usual, customary, and reasonable" fees.
+129	The solution was the Resource-Based Relative Value Scale (RBRVS), developed in the 1980s by Harvard researchers led by economist William Hsiao.
+130	Congress authorized the RBRVS-based Medicare Physician Fee Schedule in the Omnibus Budget Reconciliation Act of 1989, and it took effect on January 1, 1992.
+131	These were implemented at the start in 1992.
+132	These were phased in starting in 1999.
+133	Malpractice (Professional Liability) RVUs capture the cost of malpractice insurance attributable to the service and were added in 2000.
+134	Work RVUs implemented in 1992
+135	Practice Expense RVUs phased in from 1999
+136	Malpractice RVUs added in 2000
+137	For calendar year 2025, the conversion factor is $32.35 — a decrease of $0.94, or 2.83 percent, from the 2024 figure of $33.29.
+138	Multiply the total by the national CF ($32.35 in 2025) to get the dollar payment.
+139	Authorized by OBRA 1989 (CMS / AMA)
+140	Down 2.83% from $33.29 in 2024 (CMS)
+141	Harvard research team, 1980s
+142	When new high-value services are added or work RVUs rise, the conversion factor is cut to keep the total budget neutral, which is part of why the 2025 conversion factor fell rather than rose.
+143	The Medicare Access and CHIP Reauthorization Act of 2015 (MACRA) finally repealed the SGR, ending the annual doc-fix drama.
+144	Before 1992, Medicare paid physicians based on their own "usual, customary, and reasonable" charges, producing wide and illogical variation.
+145	RBRVS, developed by William Hsiao’s Harvard team and authorized by OBRA 1989, took effect in 1992 and still underlies physician payment.
+146	The 2025 conversion factor is $32.35, down 2.83% from $33.29 in 2024.
+147	MACRA (2015) repealed the Sustainable Growth Rate and began tying physician payment to quality and value through the Quality Payment Program.
+148	Here 3.0 + 2.0 + 0.5 = 5.5 RVUs × $32.35 ≈ $178.
+149	Sum the RVUs (5.5) and multiply by the 2025 conversion factor of $32.35
+150	A physician service has 3.0 Work RVUs, 2.0 Practice Expense RVUs, and 0.5 Malpractice RVUs.
+151	Ignoring geographic adjustment, how would Medicare turn this into a dollar payment in 2025?
+152	[1] Diffusion of Medicare’s RBRVS and Related Physician Payment Policies — PMC — https://pmc.ncbi.nlm.nih.gov/articles/PMC4193488/ — Hsiao/Harvard origins, OBRA 1989, 1992 effective date, three RVU components and phase-in.
+153	[2] RBRVS overview — American Medical Association — https://www.ama-assn.org/about/rvs-update-committee-ruc/rbrvs-overview — RVU components, GPCI, conversion factor formula.
+154	[3] Calendar Year (CY) 2025 Medicare Physician Fee Schedule Final Rule — CMS — https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2025-medicare-physician-fee-schedule-final-rule — 2025 conversion factor $32.35, down 2.83% from $33.29.
+155	[4] RVS Update Committee (RUC) — American Medical Association — https://www.ama-assn.org/about/rvs-update-committee-ruc/rvs-update-committee-ruc — RUC recommends RVUs; CMS makes final decisions; budget neutrality.
+156	[5] Medicare physician payment schedule — AMA — https://www.ama-assn.org/practice-management/medicare-medicaid/medicare-physician-payment-schedule — MACRA 2015 repealed SGR; statutory update paths.
+157	[6] Medicare Physician Fees — NCBI Bookshelf — https://www.ncbi.nlm.nih.gov/books/NBK560327/ — fee = summed RVUs adjusted by locality × conversion factor.
+
+## post-acute-care-payment
+158	This is post-acute care (PAC), and it is one of the most consequential and most scrutinized areas of Medicare spending.
+159	Each post-acute setting has its own prospective payment system, all descended from the same 1983 IPPS logic: pay a predetermined amount per episode or period rather than per service.
+160	For two decades that rate was set by the Resource Utilization Groups system — most recently version IV (RUG-IV, from 2010) — which based payment primarily on the volume of therapy minutes a patient received — more therapy meant more money, largely independent of the patient’s actual clinical needs.
+161	On October 1, 2019, CMS replaced RUG-IV with the Patient-Driven Payment Model (PDPM).
+162	PDPM ties payment to clinically relevant patient characteristics — using ICD-10 diagnoses to sort residents into one of ten clinical categories — rather than to the sheer quantity of therapy provided.
+163	ICD-10 diagnosis sorts patients into clinical categories
+164	Home Health: From 60-Day Episodes to PDGM
+165	Home health agencies were historically paid for 60-day episodes of care, with payment heavily influenced by therapy thresholds — the more therapy visits delivered, the higher the payment tier.
+166	The Bipartisan Budget Act of 2018 mandated reform, and on January 1, 2020, CMS implemented the Patient-Driven Groupings Model (PDGM).
+167	PDGM made two major changes: it cut the unit of payment from a 60-day episode to a 30-day period, and it eliminated therapy thresholds entirely, shifting payment toward clinical characteristics drawn from the OASIS assessment and claims data.
+168	PDGM classifies each 30-day period into one of 432 case-mix groups (home health resource groups).
+169	It also refined the Low-Utilization Payment Adjustment (LUPA): instead of a single visit threshold, each of the 432 groups has its own threshold below which the period is paid per-visit rather than as a full case.
+170	Payment unit shrank from a 60-day episode to a 30-day period of care.
+171	Classify the period into one of 432 home health resource groups.
+172	Home health reform under BBA 2018 (CMS / Federal Register)
+173	Down from 60-day episodes under PDGM
+174	Inpatient Rehabilitation Facilities and the 60% Rule
+175	A distinctive feature governs which facilities even qualify as IRFs: the "60 percent rule." To be paid under the IRF PPS rather than as a regular acute-care hospital, at least 60 percent of an IRF’s patients must require intensive rehabilitation for one or more of 13 specified conditions listed in federal regulation.
+176	The 60 percent rule exists to keep the IRF benefit targeted at patients who genuinely need intensive inpatient rehabilitation, distinguishing true rehab hospitals from facilities that might otherwise reclassify to capture higher payment.
+177	Post-acute care is one of the largest sources of variation in Medicare spending.
+178	When a provider is held accountable for the total cost of an episode — say, a joint replacement and the 90 days after — post-acute spending becomes the biggest lever they can pull.
+179	Each post-acute setting has its own prospective payment system descended from the 1983 IPPS logic of paying per episode rather than per service.
+180	On October 1, 2019, the SNF Patient-Driven Payment Model (PDPM) replaced RUG-IV, basing per-diem payment on clinical characteristics instead of therapy minutes.
+181	PDPM uses six payment components (five case-mix adjusted) and ICD-10 diagnoses to sort residents into ten clinical categories.
+182	On January 1, 2020, the home health Patient-Driven Groupings Model (PDGM) cut the payment period from 60 to 30 days and eliminated therapy thresholds, using 432 case-mix groups.
+183	IRFs are paid via Case-Mix Groups from the IRF-PAI and must satisfy the "60 percent rule" — at least 60% of patients needing intensive rehab for one of 13 conditions.
+184	What is the central change that both the SNF PDPM (2019) and the home health PDGM (2020) made to Medicare post-acute payment?
+185	[1] Medicare issues FY2019 payment & policy changes for SNFs — CMS — https://www.cms.gov/newsroom/fact-sheets/medicare-issues-fiscal-year-2019-payment-policy-changes-skilled-nursing-facilities — PDPM replaced RUG-IV effective Oct 1, 2019; six components, clinical categories.
+186	[2] SNF PPS Patient-Driven Payment Model — Noridian — https://med.noridianmedicare.com/web/jfa/provider-types/snf/snf-pdpm — PDPM structure, ICD-10 clinical categories, case-mix components.
+187	[3] CY 2020 Home Health PPS / PDGM — CMS / Federal Register — https://www.federalregister.gov/documents/2019/11/08/2019-24026/ — PDGM effective Jan 1, 2020, 30-day periods, therapy thresholds eliminated (BBA 2018).
+188	[4] Home Health Patient-Driven Groupings Model — CMS — https://www.cms.gov/medicare/payment/prospective-payment-systems/home-health/home-health-patient-driven-groupings-model — 432 case-mix groups, OASIS, per-group LUPA thresholds.
+189	[5] Inpatient Rehabilitation Facilities Payment Basics — MedPAC — https://www.medpac.gov/wp-content/uploads/2024/10/MedPAC_Payment_Basics_25_IRF_FINAL_SEC.pdf — CMGs from IRF-PAI, 60% rule, 13 conditions.
+190	[6] Inpatient Rehabilitation Facility PPS — CMS — https://www.cms.gov/medicare/payment/prospective-payment-systems/inpatient-rehabilitation — IRF PPS classification and 60% compliance threshold.
+
+## medicare-advantage-overview
+191	Medicare Advantage grew from the Balanced Budget Act of 1997 (originally "Medicare+Choice") and was renamed and expanded by the Medicare Modernization Act of 2003.
+192	In 2024, more than half of eligible Medicare beneficiaries — about 32.8 million people, or 54 percent — were enrolled in MA plans, up from 25 percent in 2010.
+193	As MA crosses the majority threshold, a growing share of all Medicare dollars flows through private insurers rather than directly to providers, and the largest insurers (such as UnitedHealthcare and Humana) have become dominant players in Medicare.
+194	About 32.8 million people (KFF)
+195	Of Beneficiaries in MA (2024)
+196	The benchmark is the maximum CMS will pay for an enrollee in a given county, set as a percentage of estimated traditional-Medicare spending in that county — ranging from 95 percent in high-cost counties to 115 percent in low-cost counties.
+197	That share depends on the plan’s star rating: 70 percent for plans with at least 4.5 stars, 65 percent for 3.5–4 stars, and 50 percent for lower-rated plans.
+198	This is why MA plans can offer "$0 premium" coverage with dental and vision: the rebate funds those extras.
+199	A county-specific cap, 95%–115% of local traditional-Medicare spending.
+200	70% (4.5+ stars), 65% (3.5-4 stars), or 50% (lower) of the difference.
+201	Quality is governed by the Star Ratings system, which rates plans from 1 to 5 stars on dozens of measures spanning clinical quality, patient experience, and customer service.
+202	In 2025, about 75 percent of MA enrollees were in plans receiving bonus payments, at an estimated federal cost of at least $12.7 billion.
+203	In 2025, federal spending on Medicare Advantage quality-bonus payments totaled at least $12.7 billion, with roughly 75% of MA enrollees in plans that earned bonuses.
+204	Bonuses raise a plan’s benchmark (most by 5 percentage points, and "double bonus" counties by 10), which is why plans invest heavily in their star ratings — even small movements across a star threshold can mean large revenue swings.
+205	The $12.7 Billion Quality Bonus
+206	The Medicare Payment Advisory Commission (MedPAC) estimated that Medicare spends about 22 percent more for MA enrollees than it would if they were in fee-for-service — roughly $83 billion in 2024 alone.
+207	"Coding intensity" — plans documenting more diagnoses to raise risk scores — made MA risk scores about 20 percent higher than for comparable traditional-Medicare beneficiaries — about 13 percent even after CMS’s mandatory 5.9 percent coding adjustment, worth roughly $50 billion in 2024.
+208	Medicare Advantage often gives enrollees richer benefits and an out-of-pocket cap — but MedPAC estimates it cost taxpayers about $83 billion more than traditional Medicare in 2024, mostly from coding intensity and favorable selection.
+209	In 2024 about 54% of beneficiaries (~32.8 million) were enrolled in MA, making it how most people now get their Medicare.
+210	Plans are paid via a benchmark (95%–115% of local FFS spending) and a bid; bidding below benchmark earns a rebate whose share depends on star rating (50/65/70%).
+211	Rebates must fund lower premiums, reduced cost-sharing, or supplemental benefits — which is how "$0 premium" plans with dental/vision are financed.
+212	The CMS-HCC model risk-adjusts payment for sicker enrollees, and Star Ratings drive both quality bonuses (~$12.7B in 2025) and the rebate share.
+213	MedPAC estimates Medicare spends ~22% more on MA enrollees than traditional Medicare would (~$83B in 2024), driven mainly by coding intensity (~$50B) and favorable selection.
+214	The rebate — a star-rating-dependent share of the difference between benchmark and bid — must by law be returned to enrollees as lower premiums, reduced cost-sharing, or supplemental benefits, which is how plans fund $0-premium offerings with dental and vision.
+215	Why can many Medicare Advantage plans offer "$0 premium" coverage that includes extras like dental and vision?
+216	[1] Medicare Advantage in 2024: Enrollment Update and Key Trends — KFF — https://www.kff.org/medicare/issue-brief/medicare-advantage-in-2024-enrollment-update-and-key-trends/ — 54% / 32.8M enrolled; spending share growth.
+217	[2] How Medicare Pays Medicare Advantage Plans — KFF — https://www.kff.org/medicare/how-medicare-pays-medicare-advantage-plans-issues-and-policy-options/ — benchmarks (95–115%), bids, rebates (50/65/70% by stars), CMS-HCC, stars.
+218	[3] Medicare Advantage Quality Bonus Payments Will Total at Least $12.7 Billion in 2025 — KFF — https://www.kff.org/medicare/medicare-advantage-quality-bonus-payments/ — 75% of enrollees in bonus plans; $12.7B.
+219	[4] Estimating Medicare Advantage Coding Intensity and Favorable Selection (March 2024) — MedPAC — https://www.medpac.gov/wp-content/uploads/2024/03/Mar24_Ch13_MedPAC_Report_To_Congress_SEC.pdf — ~22% higher payments for MA enrollees; companion Ch. 12 status report: $83B in 2024, coding intensity ~20% (13% net of the 5.9% adjustment), $50B.
+220	[5] Medicare Prescription Drug, Improvement, and Modernization Act — Congress.gov — https://www.congress.gov/bill/108th-congress/house-bill/1 — Part C history; Medicare+Choice renamed Medicare Advantage (2003); BBA 1997 origin.
+221	[6] 2025 Medicare Advantage and Part D Star Ratings — CMS — https://www.cms.gov/newsroom/fact-sheets/2025-medicare-advantage-part-d-star-ratings — star ratings methodology and role in payment.
+
+## medicare-advantage-market-dynamics
+222	They now account for about 21 percent of all Medicare Advantage enrollees, up from just 13 percent in 2018, and between 2024 and 2025 they made up nearly half of the total growth in MA enrollment.
+223	Dual eligibles — people enrolled in both Medicare and Medicaid — are among the most complex and expensive beneficiaries in the entire health system.
+224	They are by far the largest SNP category: over 80 percent of all SNP enrollees are in D-SNPs, and D-SNP enrollment grew from about 2.2 million in 2018 to roughly 5.8 million in 2024.
+225	Up from 13% in 2018 (KFF)
+226	Of MA Enrollees in SNPs (2024)
+227	Of 2024-25 MA Growth from SNPs
+228	The 2025 Push Toward Integration
+229	CMS has made integrating Medicare and Medicaid for dual eligibles a top priority, and a set of rules taking effect in 2025 sharply accelerates that push.
+230	The central change is a new integrated-care Special Enrollment Period (SEP): starting January 1, 2025, full-benefit dual eligibles can switch into an integrated D-SNP (FIDE, HIDE, or an applicable integrated plan) once per month to align their Medicare and Medicaid coverage.
+231	For the dual-eligible population, these rules represent one of the most significant structural changes in years.
+232	Full-benefit duals can move into an integrated D-SNP once per month starting Jan 1, 2025.
+233	The 2025 Integration Changes (Dual Eligibles)
+234	A Fully Integrated Dual Eligible (FIDE) SNP is the most tightly integrated D-SNP.
+235	In 2024, UnitedHealthcare and Humana together accounted for nearly half — about 47 percent — of all Medicare Advantage enrollment nationwide.
+236	As of 2024, about 90 percent of eligible Medicare beneficiaries lived in a county where at least half of MA enrollees were in plans sponsored by just one or two insurers, and 79 percent of counties were classified as highly concentrated MA markets.
+237	Rural counties were the most concentrated of all: 39 percent of the most rural counties were very highly concentrated, versus 6 percent of urban counties.
+238	With UnitedHealthcare and Humana alone holding ~47% of national enrollment and most counties dominated by one or two firms, the MA "marketplace" is far less competitive than the plan count suggests.
+239	It is a fast-evolving market of specialized plans and dominant insurers, and the 2025 integration rules show that policymakers are actively trying to steer that market toward better-coordinated care for the people who need it most.
+240	SNPs reached about 21% of MA enrollees in 2024 (up from 13% in 2018) and drove nearly half of MA enrollment growth between 2024 and 2025.
+241	D-SNPs are the largest SNP type — over 80% of SNP enrollees — and grew from ~2.2 million (2018) to ~5.8 million (2024).
+242	Rules effective in 2025 add a monthly integrated-care SEP and require FIDE SNPs to use exclusively aligned enrollment, pushing toward unified dual coverage.
+243	The MA market is highly concentrated: UnitedHealthcare and Humana held ~47% of national enrollment in 2024, and ~90% of beneficiaries live in counties where one or two insurers enroll at least half of MA members.
+244	They are the largest SNP category — over 80% of SNP enrollees — and the most integrated forms (HIDE and FIDE SNPs) coordinate Medicare and Medicaid benefits, including, for FIDE SNPs, long-term services and supports.
+245	They serve people eligible for both Medicare and Medicaid and are the largest SNP type
+246	[1] A Closer Look at the Growing Role of Special Needs Plans in Medicare Advantage — KFF — https://www.kff.org/medicare/a-closer-look-at-the-growing-role-of-special-needs-plans-in-medicare-advantage/ — three SNP types; 21% (up from 13%); D-SNP 82% and 2.2M→5.8M growth.
+247	[2] Special Needs Plans (SNP) — Medicare.gov — https://www.medicare.gov/health-drug-plans/health-plans/your-health-plan-options/SNP — definitions of C-SNP, I-SNP, D-SNP.
+248	[3] D-SNPs: Integration & Unified Appeals Requirements — CMS — https://www.cms.gov/medicare/medicaid-coordination/about/dsnps — HIDE/FIDE definitions and integration goals.
+249	[4] Upcoming Changes for Dually Eligible Individuals: The Final 2025 MA Rule — Justice in Aging — https://justiceinaging.org/upcoming-changes-for-dually-enrolled-individuals/ — 2025 integrated-care SEP, exclusively aligned enrollment for FIDE SNPs.
+250	[5] Most Medicare Advantage Markets are Dominated by One or Two Insurers — KFF — https://www.kff.org/medicare/most-medicare-advantage-markets-are-dominated-by-one-or-two-insurers/ — 90% of beneficiaries in counties where 1-2 insurers enroll at least half of MA members; 79% of counties highly concentrated (2024).
+251	[6] Medicare Advantage in 2024: Enrollment Update and Key Trends — KFF — https://www.kff.org/medicare/medicare-advantage-in-2024-enrollment-update-and-key-trends/ — UnitedHealthcare + Humana ~47% of national MA enrollment.
+
+## hospital-vbp-hrrp-hacrp
+252	The Affordable Care Act of 2010 set out to fix that gap by tying a slice of Medicare hospital payment to quality and outcomes, not just volume.
+253	CMS withholds 2 percent of each participating hospital’s base operating DRG payments and redistributes the entire pool back to hospitals as value-based incentive payments.
+254	Full 2% pool redistributed back to hospitals
+255	The HRRP, also created by the ACA and launched in October 2012, targets a specific waste-and-quality problem: patients who are discharged and then readmitted within 30 days, often because of poor discharge planning or inadequate follow-up.
+256	Hospitals with excess readmissions lose up to 3 percent of their inpatient Medicare payments.
+257	HRRP is credited with helping drive down national readmission rates, but it is also one of the most debated programs in Medicare.
+258	HRRP makes such readmissions financially painful — up to a 3% cut on all inpatient Medicare payments — which is why hospitals invested heavily in discharge planning, transitional care, and post-discharge follow-up after 2012.
+259	Why the 30-Day Window Matters
+260	The HACRP, which began in October 2014, targets harms that happen inside the hospital — conditions patients acquire during their stay that should largely be preventable.
+261	It is the bluntest of the three programs: every year, the hospitals scoring in the worst-performing quartile (the bottom 25 percent) lose 1 percent of all their Medicare fee-for-service payments.
+262	HACRP scoring rests on six measures: the CMS Patient Safety and Adverse Events Composite (PSI 90), plus five healthcare-associated infection measures — central line-associated bloodstream infections (CLABSI), catheter-associated urinary tract infections (CAUTI), surgical site infections (SSI) for colon surgery and hysterectomy, MRSA bacteremia, and Clostridioides difficile infection (CDI).
+263	Because HACRP penalizes the worst-performing 25% of hospitals each year by definition, a hospital can reduce its infection rates and still be penalized if it remains in the bottom quartile.
+264	Up or down (2% withhold, redistributed)
+265	Overall quality (4 domains)
+266	30-day readmissions (6 conditions)
+267	Penalty only, 1% (worst quartile)
+268	They demonstrated that even modest payment adjustments — a few percent of Medicare revenue — can reshape hospital priorities.
+269	VBP withholds 2% of base operating DRG payments and redistributes the entire pool, so it can adjust payment up or down.
+270	HRRP (launched Oct 2012) is a penalty-only program of up to 3% for excess 30-day readmissions across six conditions including AMI, heart failure, and pneumonia.
+271	HACRP (began Oct 2014) imposes a 1% penalty on the worst-performing quartile of hospitals on six safety measures (PSI 90 plus five infection measures).
+272	HACRP penalizes a fixed bottom 25% every year, so a hospital can improve and still be penalized — a relative, not absolute, design.
+273	VBP withholds 2% of base operating DRG payments and redistributes the full pool, so high performers can earn back more than they contributed — payment moves both ways.
+274	HRRP (up to 3%) and HACRP (1% on the worst quartile) are penalty-only with no upside.
+275	VBP is the only one of the three created by the Affordable Care Act
+276	[1] Hospital Value-Based Purchasing — CMS — https://www.cms.gov/medicare/quality/value-based-programs/hospital-purchasing — four domains, 2% withhold, budget-neutral redistribution.
+277	[2] IPPS Hospital Value-Based Purchasing — AHA — https://www.aha.org/hospital-value-based-purchasing/ipps-hospital-value-based-purchasing — VBP domains, Total Performance Score, clinical outcomes measures.
+278	[3] Medicare’s Hospital Readmission Reduction Program FAQ — ACEP — https://www.acep.org/administration/reimbursement/reimbursement-faqs/hospital-readmissions-faq — ACA origin, Oct 2012 launch, up to 3% penalty, six conditions.
+279	[4] Impact of the Medicare HRRP on Vulnerable Populations — BMC Health Services Research — https://bmchealthservres.biomedcentral.com/articles/10.1186/s12913-019-4645-5 — readmissions critique, safety-net penalty concerns.
+280	[5] Hospital-Acquired Condition Reduction Program — CMS — https://www.cms.gov/medicare/payment/prospective-payment-systems/acute-inpatient-pps/hospital-acquired-condition-reduction-program-hacrp — Oct 2014 start, 1% worst-quartile penalty, six measures (PSI 90, CLABSI, CAUTI, SSI, MRSA, CDI).
+281	[6] HAC Reduction Program Penalizes Safety-Net Hospitals At Higher Rates — TechTarget — https://www.techtarget.com/revcyclemanagement/news/366600040/ — relative-ranking critique of HACRP.
+
+## mssp-aco-overview
+282	The Medicare Shared Savings Program (MSSP) is Medicare’s largest and permanent ACO program, created by the Affordable Care Act of 2010.
+283	An ACO must have at least 5,000 attributed fee-for-service beneficiaries to participate.
+284	Patients are assigned to the ACO based on their primary care; minimum 5,000 required.
+285	In 2024, roughly two-thirds of ACOs were in the higher-risk Level E or ENHANCED arrangements, and those risk-bearing ACOs generated the large majority of the program’s total savings.
+286	After a slow start, MSSP has become the largest accountable-care program in the country and is now producing record results.
+287	For performance year 2024, Shared Savings Program ACOs generated nearly $2.5 billion in net savings to Medicare — the highest in the program’s history — while nearly every ACO met CMS quality standards.
+288	For 2025, 476 ACOs participated, and the program serves millions of traditional-Medicare beneficiaries through hundreds of thousands of providers.
+289	REACH ends December 31, 2026; CMS's 10-year LEAD Model succeeds it from January 2027.
+290	Net Medicare Savings (PY2024)
+291	Of ACOs in Downside Risk (2024)
+292	The Medicare Shared Savings Program (MSSP), created by the ACA in 2010, is Medicare’s largest, permanent ACO program.
+293	MSSP runs on attribution (minimum 5,000 beneficiaries), a spending benchmark, and a year-end settlement — built on top of normal fee-for-service payments.
+294	In 2024, MSSP generated a record ~$2.5 billion in net savings, with risk-bearing (Level E/ENHANCED) ACOs producing most of the savings.
+295	[1] Shared Savings Program — CMS — https://www.cms.gov/medicare/payment/fee-for-service-providers/shared-savings-program-ssp-acos — ACO definition, FFS basis, quality-and-savings requirement.
+296	[2] ACOs Payment Basics — MedPAC — https://www.medpac.gov/wp-content/uploads/2024/10/MedPAC_Payment_Basics_25_ACOs_FINAL_SEC.pdf — attribution, benchmark, BASIC/ENHANCED tracks, one-sided vs two-sided risk.
+297	[3] CMS Report: ACOs Generated $2.4B in Medicare Savings in 2024 — LeadingAge — https://leadingage.org/cms-report-acos-generated-2-4b-in-medicare-savings-in-2024/ — record net savings, quality performance.
+298	[4] Accountability Delivered: Shared Savings Program Results from 2024 — Accountable for Health — https://accountableforhealth.org/accountability-delivered-in-medicare-shared-savings-program-results-from-2024/ — Level E/ENHANCED ACOs drive most savings.
+299	[5] 2026 Medicare ACO Initiatives Participation Highlights — CMS — https://www.cms.gov/newsroom/fact-sheets/2026-medicare-accountable-care-organization-initiatives-participation-highlights — 476 ACOs in 2025; 5,000-beneficiary minimum; track mix.
+300	[6] ACO REACH Model — CMS Innovation Center — https://www.cms.gov/priorities/innovation/innovation-models/aco-reach — capitation-based, equity-focused Innovation Center ACO model.
+
+## bundled-payments-and-innovation
+301	Instead of paying separately for the surgeon, the hospital stay, the rehab facility, and every follow-up visit, a bundle holds providers accountable for the total cost of a defined clinical episode — for example, a hip replacement and everything that happens in the 90 days after it.
+302	A bundled payment sets a single target price for a whole episode of care (often 90 days).
+303	It was created by Section 3021 of the Affordable Care Act in 2010 with a specific mission — to test new payment and delivery models that could reduce spending while preserving or improving quality.
+304	Bundled Payments for Care Improvement Advanced (BPCI Advanced), launched in 2018, let participants take accountability for 90-day episodes across a menu of medical and surgical conditions, with target prices based partly on their own historical spending.
+305	It was the first episode model to include an outpatient surgical condition (spine surgery).
+306	The clearest test of bundled payment was the Comprehensive Care for Joint Replacement (CJR) model, which ran from April 2016 through December 2024.
+307	A rigorous evaluation found CJR reduced institutional spending per joint-replacement episode by roughly $812 (about a 3 percent relative decrease), driven largely by a meaningful drop in patients being discharged to costly post-acute facilities instead of home.
+308	The lessons from CJR fed directly into its successor: the Transforming Episode Accountability Model (TEAM), a mandatory episode-based payment model that launched in January 2026.
+309	In roughly 14 years it has launched more than 50 models, but a 2023 Congressional Budget Office analysis found that only six of the 49 models it examined produced statistically significant savings, and that over 2011–2020 CMMI increased federal direct spending by about $5.4 billion — roughly 0.1 percent of net Medicare spending — once its operating costs were counted.
+310	To date, only the Diabetes Prevention Program and the Pioneer ACO model met the statutory criteria, and even the Pioneer ACO model was never fully folded into permanent Medicare.
+311	A bundled payment sets a single target price for an entire episode of care (often 90 days), reconciling fee-for-service spending against that target at the end.
+312	The CMS Innovation Center (CMMI), created by ACA Section 3021 in 2010, tests payment models and can expand successful ones nationally without new legislation.
+313	BPCI Advanced (2018) used voluntary 90-day episodes across many conditions; CJR (2016-2024) tested mandatory bundles for hip and knee replacement.
+314	CJR reduced spending by about $812 per episode, mainly by shifting patients away from costly post-acute facilities, with no measured harm to quality.
+315	The TEAM model, launched January 2026, makes episode payment mandatory across five surgical categories and adds safety-net hospital protections.
+316	CMMI’s overall record is mixed: of 50+ models, a CBO analysis found only six achieved statistically significant savings, and only the Diabetes Prevention Program and Pioneer ACO met the bar for expansion.
+317	CJR’s evaluation found savings of roughly $812 per episode driven largely by a decrease in the share of patients discharged to institutional post-acute care, with no worsening of complications, mortality, readmissions, or ED use.
+318	By eliminating the 90-day follow-up period entirely
+319	[1] "What is CMMI?" FAQs about the CMS Innovation Center — KFF — https://www.kff.org/medicare/fact-sheet/what-is-cmmi-and-11-other-faqs-about-the-cms-innovation-center/ — ACA Section 3021 creation, expansion authority, model overview.
+320	[2] BPCI Advanced: Participant Resources — CMS — https://www.cms.gov/priorities/innovation/innovation-models/bpci-advanced/participant-resources — 2018 launch, 90-day episodes, target prices, retrospective reconciliation.
+321	[3] Two-Year Evaluation of Mandatory Bundled Payments for Joint Replacement — NEJM — https://www.nejm.org/doi/full/10.1056/NEJMsa1809010 — CJR ~$812/episode savings, post-acute shift, no quality harm.
+322	[4] Comprehensive Care for Joint Replacement Model — CMS — https://www.cms.gov/priorities/innovation/innovation-models/cjr — CJR period (Apr 2016-Dec 2024), mandatory design.
+323	[5] Financial success of CJR paved way for TEAM — Norwood — https://www.norwood.com/financial-success-of-comprehensive-care-for-joint-replacement-cjr-model-paved-way-for-team/ — TEAM mandatory, five surgical episodes, Jan 2026 launch, safety-net protections.
+324	[6] CMMI’s savings record sparks concern among lawmakers — Healthcare Dive — https://www.healthcaredive.com/news/cmmi-cms-innovation-center-federal-spending-house-energy-commerce/718926/ — CBO: only 6 of 50+ models had significant savings; only DPP and Pioneer ACO certified for expansion.
+
+## part-d-structure-formulary
+325	Part D, created by the Medicare Modernization Act of 2003 and effective January 1, 2006, finally closed that gap.
+326	Part D is the Medicare outpatient prescription drug benefit, created by the Medicare Modernization Act of 2003 (effective 2006).
+327	These tools control costs but can create access barriers, making formulary design one of the most consequential — and contested — features of any Part D plan.
+328	A beneficiary first pays a deductible (up to $590 in 2025), then enters an initial coverage phase sharing costs with the plan.
+329	As of 2025, the Inflation Reduction Act restructured Part D into a simpler three-phase benefit — deductible, initial coverage, and catastrophic — with no coverage gap in between.
+330	Beginning in 2025, beneficiary out-of-pocket spending on covered Part D drugs is capped at $2,000 per year (indexed thereafter; the cap is $2,100 in 2026).
+331	New IRA cap; $2,100 in 2026 (KFF/CMS)
+332	Coverage gap removed under the IRA in 2025
+333	Part D insulin cost-sharing cap since 2023 (IRA; KFF)
+334	The 2022 Inflation Reduction Act (IRA) is the most significant change to Medicare drug coverage since Part D itself.
+335	Beyond the out-of-pocket cap and donut-hole elimination, it capped insulin cost-sharing at $35 per month (effective 2023 for Part D insulin), making a life-sustaining drug affordable for millions.
+336	And it created the Medicare Prescription Payment Plan, effective January 1, 2025, which lets any Part D enrollee spread their out-of-pocket costs into capped, interest-free monthly installments instead of paying a large bill all at once at the pharmacy.
+337	Most historically, the IRA gave Medicare the power to negotiate prices for certain high-spend drugs — something the original 2003 law had explicitly forbidden.
+338	CMS selected the first 10 drugs, and the negotiated prices (ranging from a 38 percent to a 79 percent discount off 2023 list prices) take effect in 2026, with more drugs added in later years.
+339	For the first negotiation cycle, CMS reached agreed prices on 10 high-spend Part D drugs — including Januvia, Eliquis, Xarelto, and Imbruvica — with discounts ranging from 38% to 79% off 2023 list prices.
+340	Effective in 2026, these prices are estimated to save Medicare beneficiaries about $1.5 billion in out-of-pocket costs and the Medicare program roughly $6 billion per year.
+341	It is the first time in Part D’s history that Medicare has directly negotiated drug prices.
+342	The First Round of Drug Price Negotiation
+343	For anyone working in Medicare, Part D is now one of the most dynamic areas of the program.
+344	Understanding formularies, the new three-phase benefit, the $2,000 cap, and drug price negotiation is essential to understanding where Medicare — and American drug policy — is heading.
+345	Part D, created by the Medicare Modernization Act of 2003 (effective 2006), is Medicare’s outpatient prescription drug benefit, delivered through private PDP and MA-PD plans.
+346	As of 2025 the IRA restructured Part D into a three-phase benefit (deductible up to $590, initial coverage, catastrophic) and eliminated the "donut hole."
+347	The IRA established a hard out-of-pocket cap on covered Part D drugs — $2,000 in 2025 (indexed to $2,100 in 2026).
+348	The IRA also capped insulin at $35/month, added inflation rebates, and created the Medicare Prescription Payment Plan for interest-free monthly installments.
+349	Most significantly, the IRA empowered Medicare to negotiate drug prices for the first time; the initial 10 drugs’ negotiated prices (38%–79% discounts) take effect in 2026.
+350	Effective 2025, the IRA reconfigured Part D into a three-phase benefit, eliminated the coverage-gap "donut hole," and imposed a hard $2,000 annual out-of-pocket cap on covered drugs (indexed to $2,100 in 2026).
+351	It capped beneficiary out-of-pocket spending on covered drugs at $2,000 and eliminated the donut hole
+352	Which statement best describes a major change the Inflation Reduction Act made to Medicare Part D starting in 2025?
+353	[1] Medicare Prescription Drug, Improvement, and Modernization Act — Congress.gov — https://www.congress.gov/bill/108th-congress/house-bill/1 — Part D created 2003, effective Jan 1, 2006; private-plan delivery.
+354	[2] Understanding Medicare Part D changes in 2025 — Wellpoint — https://www.wellpoint.com/medicare/understanding-medicare/medicare-part-d-changes-2025 — three-phase benefit, $590 deductible, donut hole eliminated, $2,000 cap.
+355	[3] Explaining the Prescription Drug Provisions in the Inflation Reduction Act — KFF — https://www.kff.org/medicare/issue-brief/explaining-the-prescription-drug-provisions-in-the-inflation-reduction-act/ — $2,000 cap, insulin $35, inflation rebates, negotiation.
+356	[4] Medicare Drug Price Negotiation Program: Negotiated Prices for IPAY 2026 — CMS — https://www.cms.gov/newsroom/fact-sheets/medicare-drug-price-negotiation-program-negotiated-prices-initial-price-applicability-year-2026 — first 10 drugs, 38%-79% discounts, effective 2026, savings estimates.
+357	[5] Medicare Prescription Payment Plan — CMS — https://www.cms.gov/medicare/health-drug-plans/medicare-prescription-payment-plan — interest-free monthly installments effective Jan 1, 2025.
+358	[6] Medicare Part D Donut Hole Explained: What Changed in 2025 — NCOA — https://www.ncoa.org/article/the-medicare-part-d-donut-hole-what-you-need-to-know/ — coverage gap eliminated; formulary tiers and benefit phases.

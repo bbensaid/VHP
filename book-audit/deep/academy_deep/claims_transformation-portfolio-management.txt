@@ -1,0 +1,436 @@
+
+## tpm-project-management-gap
+0	Chapter 15 of Transforming Healthcare makes a different argument.
+1	Chapter 15 opens with an observation that reframes the whole book.
+2	Its 2017 edition put the cost of poor project performance at about 9.7% of project spending: roughly $97 million wasted for every $1 billion invested.
+3	The 2018 edition put it at 9.9%.
+4	PMI's 2014 report, The High Cost of Low Performance, found that high-performing organizations completed 89% of their projects successfully against 36% for low performers, and that projects aligned to organizational strategy succeeded more often than misaligned ones.
+5	PMI, Pulse of the Profession 2017 ($97M per $1B invested)
+6	PMI, Pulse of the Profession 2018
+7	PMI, Pulse of the Profession 2014: The High Cost of Low Performance
+8	PMI, Pulse of the Profession 2018, as cited by PMI
+9	The most thoroughly documented delivery failure in recent American health policy is the October 2013 launch of HealthCare.gov, the federal insurance marketplace created under the Affordable Care Act.
+10	The Government Accountability Office's July 2014 report, GAO-14-694, found that the Centers for Medicare & Medicaid Services (CMS) began building the marketplace systems without effective planning or oversight.
+11	The HHS Office of Inspector General's 2016 case study, based on interviews with 86 officials, staff and contractors, reached a similar picture and also recorded the recovery: CMS restored the site for high consumer use within two months and adopted more effective organizational practices.
+12	GAO-14-694 found that CMS issued task orders before key technical requirements were known, that unclear guidance caused confusion over who could approve contractor spending, that key governance reviews were delayed, and that the site launched without verification that it met performance requirements.
+13	The HHS Inspector General's case study (OEI-06-14-00350) found that CMS recovered the website for high consumer use within two months and adopted more effective organizational practices, and called on the agency to keep applying those lessons.
+14	HealthCare.gov, 2013-2014
+15	Chapter 15 applies the same lens to Vermont.
+16	Oliver Wyman's Act 167 report recommended in 2024 that AHS establish a dedicated project-management function, and the November 2025 transformation report repeated the finding.
+17	Chapter 15's contribution is to define that function precisely, using PMI's standards, and to schedule it against the January 15, 2028 deadline for the Statewide Health Care Delivery Strategic Plan.
+18	Chapter 15 counts 19 components in the transformation portfolio, ten scored risks in its register, and fourteen hospital transformation plans the portfolio must coordinate.
+19	HTR inventory, Chapter 15, Figure 15.3
+20	Act 68 of 2025; Chapter 15, Figure 15.1
+21	Act 68 of 2025; Chapter 15, §15.12
+22	Track 1, which you are in now, establishes the levels of management and how to define a portfolio by inventorying its components.
+23	Track 2 staffs and governs it: the Portfolio Manager, the five pillar program managers, the governance tiers and the ten knowledge areas a portfolio office has to run.
+24	Track 3 schedules the portfolio by dependency rather than by deadline, chooses predictive, adaptive or hybrid management for each component, and measures progress with earned value.
+25	Track 4 builds and reads the risk register and traces every component to the benefits that justify it.
+26	Track 5 makes the business case, answers the standard objections, and ends with a capstone in which you build and run a portfolio of your own on the platform's tools.
+27	Five Pillars, One Imperative introduces the portfolio argument in a single Track 8 lesson, and the Transformation Leadership course includes a hands-on workshop on running the sequencing test.
+28	PMI's Pulse of the Profession put waste from poor project performance at about 9.7% of project spending in 2017 and 9.9% in 2018, across industries.
+29	Vermont's transformation is being managed as a collection of projects; Oliver Wyman recommended a project-management function in 2024 and the November 2025 report repeated it.
+30	Vermont's portfolio has 19 components, ten scored risks and fourteen hospital plans converging on the January 15, 2028 Strategic Plan.
+31	GAO-14-694 describes management failures: task orders issued while key requirements were unknown, confusion over who could approve contractor spending, delayed governance reviews, and a launch without verification against performance requirements.
+32	[1] Health Transformation Review, Transforming Healthcare (HTR book v42), Chapter 15 — https://healthtransformationreview.org/read/chapter-15 — §15.1-15.3, Figures 15.1-15.3: the framework-to-discipline mapping, Vermont's management gap, Oliver Wyman's recommendation, portfolio scale
+33	Government Accountability Office, Healthcare.gov: Ineffective Planning and Oversight Practices Underscore the Need for Improved Contract Management, GAO-14-694 (July 30, 2014) — https://www.gao.gov/products/gao-14-694 — planning, authority, governance-review and verification findings
+34	[3] HHS Office of Inspector General, HealthCare.gov: Case Study of CMS Management of the Federal Marketplace, OEI-06-14-00350 (February 2016) — https://oig.hhs.gov/reports/all/2016/healthcaregov-case-study-of-cms-management-of-the-federal-marketplace — 86 interviews; recovery within two months
+35	[4] Project Management Institute, Pulse of the Profession 2017 (survey report) — https://sitsd.mt.gov/_docs/ITMC/SMPMAW/2017.08.23/PMIs-Pulse-of-the-Profession-2017-Survey.pdf — 9.7% of project spending wasted ($97M per $1B); Pulse 2018 media release — https://blog.westerndigital.com/wp-content/uploads/2022/10/pdf-post25167-Pulse-of-the-Profession-2018-Media-Release.pdf — 9.9%
+36	[5] Project Management Institute, Pulse of the Profession 2014: The High Cost of Low Performance — https://www.pmi.org/learning/library/2022/11/02/21/05/es-2014-the-highcost-13551 — 89% vs 36% project success, high vs low performers; strategic alignment
+37	[6] Project Management Institute, Benefits Realization Management: A Practice Guide — https://www.pmi.org/standards/benefits-realization — cites Pulse 2018: one in three organizations report high benefits-realization maturity
+
+## tpm-project-program-portfolio
+38	The PMBOK Guide, the project-level reference, reached its eighth edition in November 2025.
+39	The Standard for Program Management reached its fifth edition in 2024.
+40	The Standard for Portfolio Management is still in its fourth edition, published in November 2017; PMI has a fifth edition in development and ran public comment periods on drafts during 2026, but as of this lesson it has not been published.
+41	Chapter 15 cites the fourth editions of the portfolio and program standards and the sixth through eighth editions of the PMBOK Guide.
+42	[{"Level": "Project", "Standard": "PMBOK Guide", "Current edition": "8th edition, November 2025"}, {"Level": "Program", "Standard": "The Standard for Program Management", "Current edition": "5th edition, 2024"}, {"Level": "Portfolio", "Standard": "The Standard for Portfolio Management", "Current edition": "4th edition, November 2017 (5th in development)"}]
+43	PMI standards by level, current editions (October 2026)
+44	Figure 15.2 of the book applies the hierarchy to Vermont.
+45	At the portfolio level is the whole: all 19 components across the five pillars, aligned to Act 167's five goals and the January 2028 Strategic Plan.
+46	The book's finding is that Vermont operates at all three levels but has management infrastructure only at the first.
+47	[{"Level": "Project", "Vermont example": "Analytics-vendor deployment; RBP rulemaking; CoCM at one practice", "Managed by": "Project manager", "Success measure": "On scope, schedule, budget; deliverable accepted"}, {"Level": "Program", "Vermont example": "Technology pillar program; Blueprint PCMH expansion; global-budget program", "Managed by": "Pillar program manager", "Success measure": "Benefits realized; interdependencies managed"}, {"Level": "Portfolio", "Vermont example": "All 19 components, aligned to Act 167 and the Jan 2028 plan", "Managed by": "Portfolio manager", "Success measure": "Strategic objectives achieved; resources optimally allocated"}]
+48	The PMI hierarchy applied to Vermont (from Figure 15.2)
+49	The most dangerous symptom is that every individual manager can be doing well.
+50	PMI's portfolio standard treats terminating components as a normal, healthy decision; Chapter 15 gives Vermont's Portfolio Manager the duty of recommending termination when a component's benefits are no longer achievable.
+51	The PMBOK Guide is in its 8th edition (November 2025), the Program Management standard in its 5th (2024), and the Portfolio Management standard in its 4th (2017), with a 5th in development.
+52	What is the most likely explanation?
+53	[1] Health Transformation Review, Transforming Healthcare (HTR book v42), Chapter 15 — https://healthtransformationreview.org/read/chapter-15 — §15.2 and Figure 15.2: the PMI hierarchy applied to Vermont
+54	[2] Project Management Institute, The Standard for Portfolio Management, 4th edition (November 2017) — https://www.pmi.org/pmbok-guide-standards/foundational/standard-for-portfolio-management — portfolio definition; 5th edition in development
+55	[3] Project Management Institute, The Standard for Program Management, 5th edition (2024) — https://www.pmi.org/standards/program-management-fifth-edition — eight principles; Collaboration performance domain
+56	[4] Project Management Institute, A Guide to the Project Management Body of Knowledge (PMBOK Guide), 8th edition (November 2025) — https://www.pmi.org/standards/pmbok — six principles, seven performance domains
+57	[5] Project Management Institute, The Standards Evolution — https://www.pmi.org/pmbok-guide-standards/about — standards development process and comment periods
+
+## tpm-defining-the-portfolio
+58	Chapter 15 does that work for Vermont, producing a 19-component inventory.
+59	How Vermont's 19 Components Were Found
+60	The inventory in Figure 15.3 is HTR's own, not an official state document.
+61	It was assembled by reading Act 68, the AHEAD State Agreement, Vermont's Rural Health Transformation Program application and the AHS transformation reports, and listing every initiative that carries a named owner and a dated obligation.
+62	Applied in early 2026, the exercise produced nineteen components.
+63	It is not a number Vermont has adopted, and anyone repeating the exercise against later reports should expect it to move, as components finish, new obligations arrive or, as happened in July 2026, a federal agreement is withdrawn and becomes a closeout obligation instead.
+64	Figure 15.3 classifies each component on five attributes.
+65	Track 3 of this course turns that observation into scheduling rules.
+66	The sample below shows one component from each pillar as the book recorded it for 2026.
+67	The full inventory is in Figure 15.3, and the Portfolio Sequencing Test on the platform loads all nineteen as its Vermont preset.
+68	[{"Pillar": "Policy", "Component": "Statewide Strategic Plan development", "Type": "Strategic project", "Priority": "Critical", "Next gate": "January 2028"}, {"Pillar": "Technology", "Component": "AHS-GMCB analytics-vendor deployment", "Type": "Strategic project", "Priority": "Critical", "Next gate": "Operational January 2027"}, {"Pillar": "Economics", "Component": "Social-risk-adjustment methodology", "Type": "Analytical project", "Priority": "High", "Next gate": "FY2028 adoption"}, {"Pillar": "Clinical", "Component": "Collaborative Care Model statewide deployment", "Type": "Operational program", "Priority": "High", "Next gate": "80%+ of practices, FY2028"}, {"Pillar": "Operations", "Component": "AHS PMO establishment", "Type": "Organizational project", "Priority": "Critical", "Next gate": "Operational Q2 2027"}]
+69	One component per pillar (from Figure 15.3, 2026)
+70	AHS PMO establishment appears in the Operations pillar with a critical priority and a target of being operational in the second quarter of 2027.
+71	That is why the book recommends the inventory as the first step for any state or organization, wherever it is in its transformation.
+72	That shift from activity to shape is the first sign that a portfolio is being managed rather than merely reported.
+73	Chapter 15 presents the inventory method as directly repeatable by any organization or state agency: list every statute, grant, model agreement and initiative touching the five pillars, then map each to a pillar and an owner.
+74	Record it, and make assigning an owner the first action against it.
+75	In Track 3 you will use the same tool to run the sequencing test on your inventory.
+76	Vermont has never published a portfolio definition; HTR's 19-component inventory was built from Act 68, the AHEAD agreement, the RHT application and AHS reports.
+77	The Portfolio Sequencing Test lets you replace Vermont's components with your own and becomes the base for the sequencing work in Track 3.
+78	Aspirations without an owner or date are not yet components; if they matter, assigning an owner is the first action, and until then they belong on the risk register.
+79	Under the inventory method in Chapter 15, which of these qualifies as a portfolio component?
+80	[1] Health Transformation Review, Transforming Healthcare (HTR book v42), Chapter 15 — https://healthtransformationreview.org/read/chapter-15 — §15.3, Figure 15.3 (the 19-component inventory and its method), Beyond Vermont box, §15.15 Implications for You
+81	[2] Project Management Institute, The Standard for Portfolio Management, 4th edition (2017) — https://www.pmi.org/pmbok-guide-standards/foundational/standard-for-portfolio-management — portfolio definition and component identification
+82	[3] Vermont Act 68 of 2025, as enacted — https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT068/ACT068%20As%20Enacted.pdf — statutory obligations behind several components
+83	[4] HTR Portfolio Sequencing Test — https://healthtransformationreview.org/portfolio-sequencing-test — Vermont preset of the 19 components; add, edit and remove components
+84	[5] Centers for Medicare & Medicaid Services, AHEAD Model — https://www.cms.gov/priorities/innovation/innovation-models/ahead — the federal model agreement whose closeout is a Policy component
+
+## tpm-portfolio-manager
+85	Nineteen components, shared stage gates, one January 2028 deadline, three statutory predecessors and the closeout obligations of a withdrawn federal agreement.
+86	Chapter 15 concludes that this is not a problem component managers can solve by working harder or coordinating better among themselves.
+87	Chapter 15's Implications section puts the point sharply for state leaders.
+88	Oliver Wyman's Act 167 report recommended a dedicated project-management function to manage the state's transformation portfolio, the November 2025 transformation report repeated the finding, and the AHS restructuring analysis in Chapter 16 identifies establishing a portfolio office as a critical organizational project.
+89	Chapter 15's contribution is a precise definition of the role.
+90	(Transforming Healthcare, Chapter 15)
+91	The role authorizes components being added to or removed from the portfolio, keeps every component aligned to Act 167's five statutory goals, and resolves resource conflicts between components.
+92	[{"Area": "Governance", "Responsibility": "Chair the monthly portfolio review board"}, {"Area": "Composition", "Responsibility": "Maintain the portfolio register; authorize adding and removing components"}, {"Area": "Alignment", "Responsibility": "Keep every component aligned to Act 167's five goals"}, {"Area": "Resources", "Responsibility": "Resolve cross-component resource conflicts"}, {"Area": "Risk", "Responsibility": "Maintain the portfolio risk register"}, {"Area": "Benefits", "Responsibility": "Track benefits realization; recommend terminating components whose benefits are no longer achievable"}, {"Area": "Reporting and stakeholders", "Responsibility": "Own Scorecard reporting; manage relationships with HCAC, GMCB, hospitals, the Legislature and CMS"}]
+93	Portfolio Manager responsibilities (Chapter 15, §15.4)
+94	The most important power is over sequencing.
+95	PMI's current eligibility rules offer three paths, all requiring 96 months (eight years) of professional business experience within the past fifteen years.
+96	With a secondary diploma, a candidate also needs 84 months of portfolio-management experience.
+97	With a bachelor's degree or higher, the requirement is 48 months.
+98	With a degree from a program accredited by PMI's Global Accreditation Center, it is 36 months.
+99	[{"Path": "A", "Education": "Secondary diploma or equivalent", "Portfolio-management experience": "84 months within 15 years", "Business experience": "96 months within 15 years"}, {"Path": "B", "Education": "Bachelor's degree or higher", "Portfolio-management experience": "48 months within 15 years", "Business experience": "96 months within 15 years"}, {"Path": "C", "Education": "Degree from a GAC-accredited program", "Portfolio-management experience": "36 months within 15 years", "Business experience": "96 months within 15 years"}]
+100	PfMP eligibility paths (PMI, as of October 2026)
+101	Its March 2026 Act 68 report lists contracted transformation support from Manatt, Phelps & Phillips, a new hospital technical-assistance vendor, and analytics support under negotiation.
+102	The book's roadmap puts a Portfolio Manager in the seat by January 2027, nine months before FY2028 hospital budgets take effect in October 2027, so the role is running before the Technology gate it is meant to protect.
+103	A coordinator who schedules meetings and compiles reports is useful, but it is not the role Chapter 15 describes.
+104	The Portfolio Manager chairs the review board, maintains the portfolio and risk registers, keeps components aligned to Act 167's goals, resolves resource conflicts, owns Scorecard reporting and tracks benefits.
+105	PMI's PfMP requires 96 months of business experience plus 84, 48 or 36 months of portfolio experience depending on education.
+106	Which power most distinguishes the Portfolio Manager Chapter 15 describes from a reporting function?
+107	[1] Health Transformation Review, Transforming Healthcare (HTR book v42), Chapter 15 — https://healthtransformationreview.org/read/chapter-15 — §15.4 (role and authority), §15.13 objections 4 and 5, §15.15 Implications for You
+108	[2] Project Management Institute, Portfolio Management Professional (PfMP) — https://www.pmi.org/certifications/portfolio-management-pfmp — eligibility paths and experience requirements
+109	[3] Project Management Institute, The Standard for Portfolio Management, 4th edition (2017) — https://www.pmi.org/pmbok-guide-standards/foundational/standard-for-portfolio-management — the portfolio manager's role
+110	[4] Oliver Wyman, Act 167 Community Engagement and recommendations to the Green Mountain Care Board (2024) — https://gmcboard.vermont.gov/hospitalsustainability — recommendation for a dedicated project-management function
+
+## tpm-program-managers-governance
+111	This lesson describes the five pillar program manager roles in Chapter 15, the credentials that fit them, and the three-tier governance structure PMI defines for a portfolio.
+112	Chapter 15 treats each pillar as exactly that.
+113	Figure 15.4 of the book sets out the five roles.
+114	Notice that the deliverables are dated and specific: analytics vendor operational by January 2027, reference-based-pricing rates in effect for FY2028, 100% patient-centered medical home coverage by FY2028, the portfolio office operational by the second quarter of 2027.
+115	[{"Pillar": "Policy", "Role": "Policy Transformation Program Manager", "Credential": "PMP + health-policy experience; PMI-ACP for agile rulemaking", "Key deliverables": "RBP methodology (FY2027); Strategic Plan (Jan 2028)"}, {"Pillar": "Technology", "Role": "Health IT Program Manager", "Credential": "PMP + health informatics; PMI-ACP", "Key deliverables": "Analytics vendor operational (Jan 2027); CIN Phase 1 (FY2028)"}, {"Pillar": "Economics", "Role": "Payment Reform Program Manager", "Credential": "PMP + healthcare finance; financial-modeling skills", "Key deliverables": "RBP rates in effect (FY2028); non-CAH global budgets (FY2028)"}, {"Pillar": "Clinical", "Role": "Clinical Transformation Program Manager", "Credential": "PMP + clinical background (RN/LCSW)", "Key deliverables": "100% PCMH (FY2028); CoCM 80%+ (FY2028)"}, {"Pillar": "Operations", "Role": "Hospital Transformation Program Manager", "Credential": "PMP + hospital-operations or turnaround experience", "Key deliverables": "14 hospital plans implemented; PMO operational (Q2 2027)"}]
+116	Pillar program manager roles (from Figure 15.4)
+117	PMI's current eligibility rules offer three paths: a secondary diploma with 60 months of project-management experience; a bachelor's degree with 36 months; or a degree from a GAC-accredited program with 24 months.
+118	The first two also require 35 hours of project-management education, which a CAPM certification can satisfy, and experience counts within the past eight years.
+119	PMI requires 21 contact hours of formal training in agile practices together with agile project experience; published summaries of the exact experience rules differ, so candidates should check PMI's current handbook.
+120	Lesson 8 of this course explains why the book pairs PMI-ACP with the Technology and Policy roles in particular: the AI-governance framework, the Care Integration Network build-out and parts of rulemaking evolve faster than a fixed plan can anticipate.
+121	PMI PMP eligibility (60 months with a secondary diploma; 24 with a GAC-accredited degree)
+122	The first of the five objections answered in Chapter 15 turns on this distinction.
+123	The book's advice to hospital project-office leaders is to treat Figure 15.3 as a template.
+124	The five roles in Figure 15.4 pair a PMP with domain experience, carry dated deliverables and report both to the Portfolio Manager and to a domain leader.
+125	PMP eligibility requires 60, 36 or 24 months of project experience depending on education; PMI-ACP requires 21 hours of agile training plus agile experience.
+126	Because the HCAC has no legal standing under Act 68
+127	Why does Chapter 15 say the HCAC and monthly reports are not a substitute for a portfolio office?
+128	[1] Health Transformation Review, Transforming Healthcare (HTR book v42), Chapter 15 — https://healthtransformationreview.org/read/chapter-15 — §15.5 and Figure 15.4 (pillar roles), §15.6 (governance tiers and PMO gaps), §15.13 objection 1, §15.15
+129	[2] Project Management Institute, Project Management Professional (PMP) — https://www.pmi.org/certifications/types/project-management-pmp — eligibility paths, education hours and experience window
+130	[3] Project Management Institute, PMI Agile Certified Practitioner (PMI-ACP) — https://www.pmi.org/acp — agile training and experience requirements
+131	[4] Project Management Institute, The Standard for Portfolio Management, 4th edition (2017) — https://www.pmi.org/pmbok-guide-standards/foundational/standard-for-portfolio-management — portfolio governance tiers
+132	[5] Project Management Institute, The Standard for Program Management, 5th edition (2024) — https://www.pmi.org/standards/program-management-fifth-edition — programs as coordinated projects producing benefits
+
+## tpm-ten-knowledge-areas
+133	The PMBOK Guide's sixth edition, published in 2017, organized project management into ten knowledge areas.
+134	Later editions reorganized the same ground into principles and performance domains, but Chapter 15 argues that the ten areas remain the clearest checklist of the machinery a portfolio office has to operate.
+135	This lesson walks the ten areas against Vermont's operational capacity, as Figure 15.5 of the book does.
+136	The seventh edition, published in 2021, moved away from that structure toward principles and performance domains.
+137	The eighth edition, published in November 2025, condensed the seventh edition's twelve principles into six, organized practice into seven performance domains, and restored process-level guidance as flexible reference material.
+138	Figure 15.5 reads each area against Vermont's operational capacity.
+139	The ten knowledge areas against Vermont's operational capacity (Figure 15.5)
+140	Government Accountability Office publishes the most widely used public standard for judging a schedule.
+141	Its Schedule Assessment Guide (GAO-16-89G), issued in December 2015, sets out ten best practices and four characteristics of a reliable schedule: comprehensive, well-constructed, credible and controlled.
+142	Track 3 returns to this point in detail.
+143	GAO's ten schedule best practices (GAO-16-89G)
+144	Record the audit alongside your component inventory from Lesson 3.
+145	Track 3 builds the dependency logic into scheduling decisions.
+146	[1] Health Transformation Review, Transforming Healthcare (HTR book v42), Chapter 15 — https://healthtransformationreview.org/read/chapter-15 — §15.6 and Figure 15.5: governance architecture and the ten knowledge areas against Vermont's capacity
+147	Government Accountability Office, Schedule Assessment Guide: Best Practices for Project Schedules, GAO-16-89G (December 2015) — https://www.gao.gov/products/gao-16-89g — ten best practices; four characteristics of a reliable schedule
+148	[3] Project Management Institute, A Guide to the Project Management Body of Knowledge, 8th edition (November 2025) — https://www.pmi.org/standards/pmbok — six principles, seven performance domains, process guidance
+149	[4] Project Management Institute, The Standards Evolution — https://www.pmi.org/pmbok-guide-standards/about — the move from knowledge areas to principles and performance domains
+150	[5] GAO Innovation Lab, Schedule Guide: Ten Best Practices — https://gaoinnovations.gov/schedule-guide/concepts.html — the practices in summary
+
+## tpm-dependency-sequence
+151	Chapter 15 argues that a five-pillar portfolio has a third, overriding constraint: the dependency structure from Chapter 1.
+152	Chapter 15 ties this directly to the failure that opens the book.
+153	Only implementation waits for the gate (Chapter 1, §1.11.2).
+154	The first rule: a component whose upstream pillar gate is still closed is not behind schedule.
+155	The book's clearest case is the AHS and Green Mountain Care Board analytics-vendor deployment, which carries the register's highest delivery-risk score, 20, tied only with the risk that the portfolio function itself is not established.
+156	Social-risk adjustment, the methodology that keeps global budgets from penalizing hospitals serving sicker and poorer populations, has a FY2028 target and no upstream blocker.
+157	Treating it as a FY2028 problem because that is when it is due is, in the book's words, the scheduling error that leaves equity work perpetually late.
+158	A gate opens when the enabling work in an upstream pillar is actually finished, not when a milestone is declared (Chapter 1, §1.4).
+159	Moving pressure upstream to where the constraint actually sits is the most useful thing a portfolio manager does with a schedule.
+160	The Portfolio Manager's Sequencing Test (Chapter 15, §15.7)
+161	The platform's Portfolio Sequencing Test at /portfolio-sequencing-test runs these four questions on Vermont's nineteen components, using the same dependency engine as the HTR Simulator and Vermont's Fall 2026 readiness scores.
+162	Portfolio Sequencing Test, Vermont preset, Fall 2026 scores
+163	To run the test on your own portfolio, load your inventory from Lesson 3 into the Portfolio Sequencing Test, replacing Vermont's components.
+164	The gap between those two lists is the most useful finding the test produces.
+165	On Vermont's Fall 2026 inputs the test finds 12 components on track, one running ahead of its gate, three late by dependency, and four Technology components where pressure belongs.
+166	Treating social-risk adjustment as a FY2028 problem because that is when it is due is the scheduling error the book says leaves equity work perpetually late.
+167	Schedule it for FY2027, a year before its deadline
+168	Remove it from the portfolio until FY2028 budgets are set
+169	Social-risk-adjustment methodology is due in FY2028 and has no unmet upstream dependency.
+170	According to Chapter 15, what should the portfolio manager do?
+171	[1] Health Transformation Review, Transforming Healthcare (HTR book v42), Chapter 15 — https://healthtransformationreview.org/read/chapter-15 — §15.7 (Portfolio Sequence Is Dependency Sequence; the Sequencing Test), Figure 15.6 (R-01 and R-08 scores)
+172	[2] Health Transformation Review, Transforming Healthcare, Chapter 1 — https://healthtransformationreview.org/read/chapter-01 — §1.2 OneCare autopsy, §1.4 gate definition, §1.11.2 Economics-as-design
+173	[3] HTR Portfolio Sequencing Test — https://healthtransformationreview.org/portfolio-sequencing-test — verdicts and pressure points for the Vermont preset, Fall 2026 scores
+174	Government Accountability Office, Schedule Assessment Guide, GAO-16-89G (December 2015) — https://www.gao.gov/products/gao-16-89g — critical path and schedule logic
+175	[5] HTR Academy, Transformation Leadership: Running the Sequencing Test: A Portfolio Register Workshop — https://healthtransformationreview.org/academy/tracks/transformation-leadership — the companion workshop
+
+## tpm-predictive-adaptive-hybrid
+176	Chapter 15 assigns each of Vermont's components to a predictive, adaptive or hybrid approach.
+177	PMI's Agile Practice Guide, developed with the Agile Alliance and published in 2017, treats hybrid life cycles as a legitimate fit-for-purpose choice rather than a compromise, and describes combinations ranging from predominantly predictive with some agile components to largely agile with a predictive component.
+178	The choice of approach is now treated as one of the first decisions in managing any piece of work, not a matter of organizational style.
+179	[{"Property": "Requirements", "Predictive": "Stable and well defined", "Adaptive": "Evolving; learned during delivery"}, {"Property": "Deadline and deliverable", "Predictive": "Fixed by statute or contract", "Adaptive": "Outcome fixed; path flexible"}, {"Property": "Planning", "Predictive": "Detailed up front; change controlled", "Adaptive": "Short cycles; replanned each cycle"}, {"Property": "Credential fit (Chapter 15)", "Predictive": "PMP", "Adaptive": "PMI-ACP"}]
+180	How Chapter 15 Classifies Vermont's Components
+181	[{"Approach": "Predictive", "Components": "RBP-methodology rulemaking; Strategic Plan (with adaptive elements); analytics-vendor deployment; CCBHC certification; AHS restructuring"}, {"Approach": "Adaptive", "Components": "AI-governance framework; CIN build-out; Blueprint PCMH expansion; HEROI methodology"}, {"Approach": "Hybrid", "Components": "14-hospital transformation planning"}]
+182	Vermont's components by approach (Chapter 15, §15.8)
+183	The approach also interacts with the dependency logic from Lesson 7.
+184	Hybrid components need the most care, because they carry both risks.
+185	The bridge needs a complete design before the first pour, because changing it halfway is ruinous.
+186	The workflow is best tried with a few clinicians, adjusted and tried again, because no one can predict in advance how it will feel at 3 a.m. on a busy unit.
+187	Take the inventory from Lesson 3 and add an approach column.
+188	PMI's Agile Practice Guide, developed with the Agile Alliance in 2017, treats hybrid life cycles as a legitimate fit-for-purpose choice.
+189	Chapter 15 manages rulemaking, the Strategic Plan, the analytics deployment, CCBHC certification and AHS restructuring predictively.
+190	The AI-governance framework, CIN build-out, Blueprint expansion and HEROI methodology are adaptive; the 14-hospital planning effort is hybrid.
+191	[1] Health Transformation Review, Transforming Healthcare (HTR book v42), Chapter 15 — https://healthtransformationreview.org/read/chapter-15 — §15.8 (predictive vs adaptive approaches; component classification; PMP and PMI-ACP mapping), §15.12 (governance cadence)
+192	[2] Project Management Institute and Agile Alliance, Agile Practice Guide (2017) — https://www.pmi.org/shop/p-/book/agile-practice-guide-%28english%29/00101602301 — predictive, iterative, incremental, agile and hybrid life cycles
+193	[3] Project Management Institute, PMBOK Guide, 8th edition (November 2025) — https://www.pmi.org/standards/pmbok — process guidance applicable to predictive, agile and hybrid work
+194	[4] Project Management Institute, PMI Agile Certified Practitioner (PMI-ACP) — https://www.pmi.org/acp — the adaptive-practice credential
+
+## tpm-earned-value-schedule-health
+195	Chapter 15's first objection ends with a list of what the existing oversight arrangements do not provide, and earned-value tracking is on it.
+196	For adaptive components, Lesson 8's cycle-output measures fit better.
+197	That is why it fits predictive components and why the book's finding that no pillar has a formal work-breakdown structure (Lesson 6) matters.
+198	A value of 1.0 means on plan; below 1.0 means behind schedule or over cost.
+199	A component with an SPI of 0.8 is delivering eighty percent of its planned work rate, whether its budget is two hundred thousand dollars or twenty million.
+200	[{"Indicator": "Schedule variance (SV)", "Formula": "EV − PV", "Reading": "Negative: behind schedule"}, {"Indicator": "Cost variance (CV)", "Formula": "EV − AC", "Reading": "Negative: over cost for work done"}, {"Indicator": "Schedule performance index (SPI)", "Formula": "EV ÷ PV", "Reading": "Below 1.0: behind schedule"}, {"Indicator": "Cost performance index (CPI)", "Formula": "EV ÷ AC", "Reading": "Below 1.0: over cost"}, {"Indicator": "Estimate at completion (simple)", "Formula": "Total budget ÷ CPI", "Reading": "Forecast final cost if performance holds"}]
+201	Consider a hypothetical analytics deployment with a total budget of $2.0 million.
+202	Six months in, the plan said $1.0 million of work would be complete, so planned value is $1.0 million.
+203	Measured against the work breakdown, the work actually finished was budgeted at $0.8 million, so earned value is $0.8 million.
+204	Actual spending to date is $1.0 million.
+205	Schedule variance is $0.8 million minus $1.0 million, or minus $0.2 million, and the SPI is 0.8: the component has delivered eighty percent of the work it planned to deliver by now.
+206	Cost variance is $0.8 million minus $1.0 million, also minus $0.2 million, and the CPI is 0.8: each dollar spent has bought eighty cents of planned work.
+207	If that cost performance holds, the simple estimate at completion is $2.0 million divided by 0.8, or $2.5 million.
+208	[{"Measure": "Total budget", "Value": "$2.0M"}, {"Measure": "Planned value at month 6 (PV)", "Value": "$1.0M"}, {"Measure": "Earned value at month 6 (EV)", "Value": "$0.8M"}, {"Measure": "Actual cost at month 6 (AC)", "Value": "$1.0M"}, {"Measure": "SPI = EV ÷ PV", "Value": "0.80"}, {"Measure": "CPI = EV ÷ AC", "Value": "0.80"}, {"Measure": "Estimate at completion = budget ÷ CPI", "Value": "$2.5M"}]
+209	The Government Accountability Office's Cost Estimating and Assessment Guide (GAO-20-195G), issued in March 2020 as the first update to its 2009 guide, sets out best practices for managing program cost through earned value management, including how an EVM system is set up, executed and validated.
+210	Federal agencies implement EVM systems against the industry guidelines in the EIA-748 standard.
+211	Chapter 15's second objection makes the related point that a time-bounded, outcome-specified, heavily financed portfolio with legally binding deadlines is exactly the kind of work that federal partners expect to be professionally managed.
+212	A component can report an SPI of 1.0, perfectly on schedule, while it is running ahead of its upstream gate and producing output nobody can yet use.
+213	In the terms of Lesson 7, earned value would score such a component as healthy while the sequencing test flags it as a problem.
+214	A component can be delivered on time and on budget and still fail to produce the benefit that justified it, which is why Track 4 adds benefits-realization tracking.
+215	SPI = EV ÷ PV and CPI = EV ÷ AC; values below 1.0 mean behind schedule or over cost, and budget ÷ CPI gives a simple estimate at completion.
+216	GAO's Cost Estimating and Assessment Guide (GAO-20-195G, March 2020) sets federal best practice for EVM, implemented against the EIA-748 guidelines.
+217	A component reports SPI = 1.0 and CPI = 1.0, but the Portfolio Sequencing Test marks it 'running ahead of its gate'.
+218	[1] Health Transformation Review, Transforming Healthcare (HTR book v42), Chapter 15 — https://healthtransformationreview.org/read/chapter-15 — §15.13 objections 1 and 2 (earned-value tracking; federal expectations), §15.6 (no work-breakdown structure), §15.16 Key Concepts (EVM)
+219	Government Accountability Office, Cost Estimating and Assessment Guide, GAO-20-195G (March 2020) — https://www.gao.gov/products/gao-20-195g — earned value management process, execution and validation
+220	[3] GAO Innovation Lab, Federal and Industry Guidelines for Implementing EVM — https://gaoinnovations.gov/cost-guide/federal-and-industry-guidelines-for-implementing-evm.html — EIA-748 guidelines and agency implementation
+221	[4] Project Management Institute, PMBOK Guide, 8th edition (November 2025) — https://www.pmi.org/standards/pmbok — performance measurement in project management
+
+## tpm-risk-register
+222	Chapter 15 observes that Vermont analyzes these risks but does not manage them operationally, because no maintained register exists.
+223	This lesson builds the portfolio risk register the way Chapter 15 does: what goes in each column, how risks are scored, which response strategies are available, and how Vermont's ten risks look when written in that format.
+224	Its risks usually span more than one component and often more than one pillar, and the most serious ones concern the dependencies between pillars rather than the work inside any single component.
+225	Figure 15.6 of the book uses a standard format with eight columns.
+226	Good statements name a cause and a consequence: the analytics vendor is not operational by January 2027, so hospitals enter Act 68 global budgets without financial-management capability.
+227	[{"Column": "ID", "What it holds": "A stable identifier, such as R-01"}, {"Column": "Risk", "What it holds": "Cause and consequence, in one sentence"}, {"Column": "Pillars", "What it holds": "Every pillar the risk affects"}, {"Column": "Probability and impact", "What it holds": "Rated on fixed scales"}, {"Column": "Score", "What it holds": "Probability × impact"}, {"Column": "Response", "What it holds": "Strategy and specific actions"}, {"Column": "Owner", "What it holds": "The person accountable for the response"}]
+228	Columns of the portfolio risk register (Figure 15.6)
+229	Chapter 15 scores each risk as probability multiplied by impact.
+230	Probability is rated Low (1), Low to Medium (2.5), Medium (3), Medium to High (3.75) or High (4).
+231	Impact is rated Low (1), Medium (3), High (4) or Critical (5).
+232	On that scale the highest possible score is 20: a high-probability risk with critical impact.
+233	R-01 is the analytics vendor not being operational by January 2027.
+234	R-10 is the portfolio-management infrastructure itself not being established before the 2027 deadlines, leaving the transformation managed as a collection of projects.
+235	Chapter 15, Figure 15.6 (High × Critical)
+236	R-01: analytics vendor not operational by Jan 2027
+237	R-10: portfolio infrastructure not established in time
+238	Chapter 15, Figure 15.6 (High × High)
+239	R-03 and R-06: descriptive Strategic Plan; VITL connectivity gaps
+240	Chapter 15, Figure 15.6 (Medium × High)
+241	R-08: social-risk adjustment not adopted in time
+242	R-10 is to be avoided by putting a Portfolio Manager in seat by January 2027 and the portfolio office in operation by the second quarter of 2027.
+243	R-04, a governor committed to modifying Act 68, is accepted and monitored, with actions to build irreversibility and maintain legislative relationships, because the portfolio cannot remove a political risk.
+244	The register also uses accelerate as a response for two risks, R-01 and R-08.
+245	Acceleration is a form of mitigation aimed at time: for R-01, a parallel route to claims data and compensating investment in coding accuracy; for R-08, making the Economics program manager lead social-risk adjustment as co-equal with global-budget design.
+246	Each of Vermont's responses lists concrete actions, such as scenario planning for a 30% reduction in Medicaid-funded investment under R-05, which is what allows the monthly review to check whether the response is actually under way.
+247	Example: R-10, by staffing the portfolio function before 2027.
+248	Example: R-06, using Care Integration Network shared services for small providers.
+249	Example: R-04, a political risk the portfolio cannot remove.
+250	Two risks concern Technology readiness: the analytics vendor (R-01) and persistent gaps in connectivity through VITL, the state's health information exchange (R-06).
+251	Two concern capacity to manage the transformation: an overcommitted agency producing a non-binding Strategic Plan (R-03) and the absence of portfolio infrastructure (R-10).
+252	Federal Medicaid cuts under H.R. 1 constrain Medicaid-funded clinical investments, with no EAST Fund backstop after Vermont's withdrawal from the AHEAD model (R-05).
+253	A change of governor could put the mandatory architecture at risk (R-04).
+254	That is not an accident: a risk whose owner does not yet exist cannot be managed, which is one more reason R-10, the missing portfolio function, sits at the top of the register.
+255	[{"ID": "R-01", "Risk": "Analytics vendor not operational by Jan 2027", "Pillars": "Tech, Econ", "Score": "20", "Response": "Accelerate"}, {"ID": "R-02", "Risk": "RBP methodology hollowed by regulatory process", "Pillars": "Policy, Econ", "Score": "15", "Response": "Mitigate"}, {"ID": "R-03", "Risk": "Overcommitment yields a non-binding Strategic Plan", "Pillars": "Ops, Policy", "Score": "16", "Response": "Mitigate"}, {"ID": "R-04", "Risk": "New governor modifies Act 68", "Pillars": "Policy", "Score": "12.5", "Response": "Accept + monitor"}, {"ID": "R-05", "Risk": "H.R. 1 Medicaid cuts; no EAST Fund backstop", "Pillars": "Clin, Econ", "Score": "15", "Response": "Mitigate"}, {"ID": "R-06", "Risk": "VITL connectivity gaps persist", "Pillars": "Tech, Clin", "Score": "16", "Response": "Mitigate"}, {"ID": "R-07", "Risk": "Hospital-planning support not replaced", "Pillars": "Ops", "Score": "15", "Response": "Mitigate"}, {"ID": "R-08", "Risk": "Social-risk adjustment not adopted before FY2028", "Pillars": "Econ", "Score": "12", "Response": "Accelerate"}, {"ID": "R-09", "Risk": "Insufficient clinical-leader engagement", "Pillars": "Clinical", "Score": "12", "Response": "Mitigate"}, {"ID": "R-10", "Risk": "Portfolio infrastructure not established before 2027", "Pillars": "All", "Score": "20", "Response": "Avoid"}]
+256	Vermont's portfolio risk register, condensed (Figure 15.6)
+257	Score with a fixed scale, such as the one in Figure 15.6, and agree it in advance so scores are comparable.
+258	Vermont's register (Figure 15.6) records ID, risk, pillars, probability, impact, score, response and owner for ten risks.
+259	Risks are scored as probability (1 to 4) times impact (1 to 5); the maximum of 20 is reached by R-01 (analytics vendor) and R-10 (no portfolio infrastructure).
+260	Because Act 68 cannot legally be modified
+261	Why does R-04, a new governor committed to modifying Act 68, carry the response 'accept and monitor' rather than 'avoid'?
+262	[1] Health Transformation Review, Transforming Healthcare (HTR book v42), Chapter 15 — https://healthtransformationreview.org/read/chapter-15 — §15.9 and Figure 15.6: the portfolio risk register, scoring method, responses and owners
+263	[2] Project Management Institute, projectmanagement.com, 5 Strategies for Dealing With Threats — https://www.projectmanagement.com/blog-post/68098/5-strategies-for-dealing-with-threats — escalate, avoid, transfer, mitigate, accept
+264	[3] Project Management Institute, The Standard for Portfolio Management, 4th edition (2017) — https://www.pmi.org/pmbok-guide-standards/foundational/standard-for-portfolio-management — portfolio risk management
+265	[4] Vermont Act 68 of 2025, as enacted — https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT068/ACT068%20As%20Enacted.pdf — the global-budget and pricing mandate several risks concern
+
+## tpm-reading-the-register
+266	Chapter 15 makes that shift by plotting the register by probability and impact, and by reading it against the dependency logic of the whole book.
+267	Figure 15.7 plots each risk on a grid, probability on one axis and impact on the other.
+268	The two risks scored 20 share the critical corner of the map, high probability and critical impact, and one of them is the absence of the portfolio function itself.
+269	Social-risk adjustment (R-08) scores 12, mid-map.
+270	R-01, the analytics vendor not being operational, and R-06, persistent VITL connectivity gaps, are both failures of the Technology pillar.
+271	A portfolio manager who mitigates R-01 and R-06 separately, with different owners and no shared plan, may miss that the most effective mitigation for both is the same: protecting and resourcing the Technology program as a whole.
+272	R-03, an overcommitted agency producing a non-binding Strategic Plan, and R-10, no portfolio infrastructure, both stem from the same shortage of management capacity.
+273	The book's response to R-03 includes establishing the portfolio office, the same action that avoids R-10.
+274	Federal Medicaid cuts (R-05) and the loss of the EAST Fund backstop after the AHEAD withdrawal hit the same Clinical and Economics components at once.
+275	Chapter 15's platform guide suggests a direct way to see why the Technology risks dominate.
+276	Open the HTR Simulator at /htr-simulator, load the Vermont, Fall 2026 scenario, and lower the Technology score.
+277	The book calls this the risk register's R-01 and R-06 in visual form.
+278	Go to /htr-simulator and load Vermont, Fall 2026.
+279	Reduce the Technology score by 15 points.
+280	See R-01 and R-06 in the simulator
+281	In a portfolio, escalation paths follow the governance tiers from Track 2.
+282	R-10 shows the limit of escalation.
+283	Plotting the register by probability and impact reveals its shape; Vermont's two risks scored 20 share the critical corner.
+284	A moderate score is not a licence to wait: social-risk adjustment scores 12 but has no upstream blocker and should already be running.
+285	Many portfolio risks share causes; R-01 and R-06 are both Technology failures, and R-03 and R-10 both stem from missing management capacity.
+286	Lowering Technology in the HTR Simulator shows R-01 and R-06 propagating to Economics and Clinical, because each pillar is gated on delivered upstream strength.
+287	Managing them separately can miss that the most effective response is common to both.
+288	R-01 and R-06 are both Technology-pillar risks.
+289	[1] Health Transformation Review, Transforming Healthcare (HTR book v42), Chapter 15 — https://healthtransformationreview.org/read/chapter-15 — §15.9, Figures 15.6-15.7 (risk register and heat map), §15.14 (HTR Simulator and Impact Simulation guidance)
+290	[2] HTR Simulator — https://healthtransformationreview.org/htr-simulator — dependency cascade through delivered pillar values; Vermont, Fall 2026 preset
+291	[3] HTR Impact Simulation — https://healthtransformationreview.org/impact-simulation — modelling a component slip across pillars
+292	[4] Project Management Institute, projectmanagement.com, 5 Strategies for Dealing With Threats — https://www.projectmanagement.com/blog-post/68098/5-strategies-for-dealing-with-threats — escalation to program, portfolio or upper management
+
+## tpm-benefits-realization
+293	Chapter 15 makes this the Portfolio Manager's core purpose: ensure every component can trace its contribution to one or more of Act 167's five statutory goals, and that the portfolio as a whole produces the benefits that justify its cost.
+294	The guide cites the 2018 Pulse of the Profession finding that only one in three organizations report high benefits-realization maturity.
+295	Tracing to Act 167's Five Goals
+296	Act 167 of 2022 set five: high-quality, accessible care; financial sustainability; affordability; a robust workforce; and health equity.
+297	Figure 15.8 of the book maps the portfolio's components to each goal, names a measurement metric and sets a 2028 target.
+298	For accessible care, 90% or better follow-up within 30 days after behavioral-health hospitalization and readmissions below 12%.
+299	For affordability, commercial premium growth below 5% a year and total-cost-of-care growth below inflation plus one point.
+300	For the workforce, a primary-care staffing gap below 200 full-time equivalents, from 370.
+301	[{"Act 167 goal": "High-quality, accessible care", "Contributing components": "Blueprint PCMH; CCBHC; HEROI; CIN", "2028 target": "90%+ BH follow-up; readmission <12%; access gap <6 pts"}, {"Act 167 goal": "Financial sustainability", "Contributing components": "RBP; global budgets; HCC gap closure; PMO", "2028 target": "No hospital in structural operating loss; deficit trajectory reversed"}, {"Act 167 goal": "Affordability", "Contributing components": "RBP methodology; global budgets", "2028 target": "Premium growth <5%/yr; TCOC growth below CPI+1%"}, {"Act 167 goal": "Robust workforce", "Contributing components": "RHT workforce investments; AI-scribe grants", "2028 target": "Primary-care FTE gap <200 (from 370); travel-nurse cost <5% of labor"}, {"Act 167 goal": "Health equity", "Contributing components": "HEROI; HRSN screening; social-risk adjustment; SDOH data", "2028 target": "BIPOC access >87%; NEK uninsurance <5%; gaps documented and targeted"}]
+302	Benefits-realization plan (condensed from Figure 15.8)
+303	The 2028 targets in Figure 15.8 are lagging indicators: they show whether benefits arrived, but only after the fact.
+304	Chapter 10's principle, calibrate for the gap and not the average, applies here: a portfolio can raise an average while widening a gap.
+305	Benefits for equity should therefore be measured as gaps between groups or regions, as Figure 15.8 does with the BIPOC access target and Northeast Kingdom uninsurance, not as statewide averages.
+306	It tells the Portfolio Manager which components are essential to which goals, so that when resources are short the portfolio protects the components on which the most benefit depends.
+307	Chapter 15 gives the Portfolio Manager the duty of tracking benefits realization and recommending that a component be terminated when its benefits are no longer achievable.
+308	Figure 15.8 maps Vermont's components to Act 167's five goals with a measurement metric and a 2028 target for each.
+309	Financial sustainability, for instance, draws on reference-based pricing, global budgets, coding-gap closure and the portfolio office itself, and is measured by operating margin, deficit trajectory and administrative cost per discharge, with a 2028 target of no hospital in structural operating loss and the deficit trajectory reversed.
+310	Chapter 15's benefits-realization plan
+311	Component leads who can see which goals their work serves make better day-to-day choices, and they are the first to notice when a deliverable is on track but its benefit is not.
+312	PMI reports that only one in three organizations have high benefits-realization maturity (Pulse of the Profession 2018).
+313	Chapter 15 maps Vermont's components to Act 167's five goals, each with a metric and a 2028 target (Figure 15.8).
+314	[1] Health Transformation Review, Transforming Healthcare (HTR book v42), Chapter 15 — https://healthtransformationreview.org/read/chapter-15 — §15.10 and Figure 15.8 (benefits-realization plan), §15.4 (termination duty), §15.12 (review cadence)
+315	[2] Project Management Institute, Benefits Realization Management: A Practice Guide — https://www.pmi.org/standards/benefits-realization — benefits life cycle; cites Pulse 2018: one in three organizations report high benefits-realization maturity
+316	[3] Vermont Act 167 of 2022, as enacted — https://legislature.vermont.gov/Documents/2022/Docs/ACTS/ACT167/ACT167%20As%20Enacted.pdf — the five statutory goals
+317	[4] Health Transformation Review, Transforming Healthcare, Chapter 10 and Appendix E — https://healthtransformationreview.org/read/chapter-10 — calibrating for the gap, not the average; the Vermont Scorecard
+
+## tpm-business-case
+318	Chapter 15 answers it directly with a cost-benefit table, and then makes a harder point: the table omits the most important number, the cost of failure.
+319	Figure 15.9 of the book costs a staffed portfolio office for Vermont at about $0.85 million to $1.3 million a year, or roughly $4 million to $6.4 million over four to five years.
+320	The largest line is the five pillar program managers, shared across agencies and hospitals, at $500,000 to $850,000 a year.
+321	The senior Portfolio Manager, with the PfMP credential, is costed at $180,000 to $220,000 a year; two analysts at $120,000 to $160,000; and portfolio-management software at $50,000 to $100,000.
+322	The Portfolio Manager provides single accountability for the January 2028 deadline and directly avoids R-10, the risk that the transformation is managed as a collection of projects.
+323	The software provides real-time visibility, resource optimization and an audit trail for Act 68.
+324	At under 1% a year of the $195 million first-year Rural Health Transformation Program award alone, before counting any savings from reference-based pricing, the office is a small fraction of the investment it protects.
+325	[{"Investment": "Portfolio Manager (PfMP, senior)", "Annual cost": "$180K-$220K", "Total (4-5 yr)": "~$0.9M-$1.1M", "Benefit": "R-10 avoided; single accountability for Jan 2028"}, {"Investment": "Two PMO analysts", "Annual cost": "$120K-$160K", "Total (4-5 yr)": "~$0.48M-$0.64M", "Benefit": "Master schedule; risk register; dashboard"}, {"Investment": "Portfolio-management software", "Annual cost": "$50K-$100K", "Total (4-5 yr)": "~$0.25M-$0.5M", "Benefit": "Visibility; resource optimization; Act 68 audit trail"}, {"Investment": "Five pillar program managers (shared)", "Annual cost": "$500K-$850K", "Total (4-5 yr)": "~$2.5M-$4.2M", "Benefit": "Pillar delivery accountability; critical-path management"}, {"Investment": "Total", "Annual cost": "~$850K-$1.3M", "Total (4-5 yr)": "~$4M-$6.4M", "Benefit": "Under 1% a year of the $195M first-year RHT award"}]
+326	Business case for portfolio-management investment (Figure 15.9)
+327	Without adequate portfolio infrastructure, Vermont risks delivering the January 2028 Strategic Plan as a descriptive document rather than a binding commitment, which the book's chapter on political sustainability identifies as the most dangerous failure mode.
+328	In the book's words, it is a multi-billion-dollar one: the continuation of the deficit trajectory Oliver Wyman projected, the failure of thirteen of fourteen hospitals to reach sustainability, and the loss of the political window that the mandatory architecture has opened.
+329	PMI's 2017 Pulse of the Profession put the waste from poor project performance at about 9.7% of project spending.
+330	The office's cost, it argues, is less than 2% of a single year of the value it protects.
+331	The risk register from Track 4 supplies this.
+332	The Portfolio Manager is costed against R-10 and, through the portfolio office, R-03.
+333	The Technology program manager is costed against R-01 and R-06, the two Technology risks that propagate into Economics and Clinical.
+334	The Economics program manager is costed against R-08, the risk that safety-net hospitals are penalized because social-risk adjustment arrives too late.
+335	A $200,000 role that materially reduces a risk scored 20 on a portfolio worth hundreds of millions is an easy decision once the link is drawn.
+336	Its value is highest before the gates it protects, which is why the book's roadmap puts the Portfolio Manager in seat by January 2027, nine months before FY2028 hospital budgets take effect.
+337	The most common, that existing governance already covers this, is best answered inside the business case itself, by showing what the governance body cannot do without a portfolio office to supply it with data.
+338	The one-page version: the portfolio office costs under 1% a year of what it coordinates, directly reduces the portfolio's highest-scored risks, and is worth most if it exists before the gates it protects.
+339	Chapter 15 costs a staffed Vermont portfolio office at about $0.85M to $1.3M a year, or $4M to $6.4M over four to five years.
+340	That is under 1% a year of the $195M first-year Rural Health Transformation Program award it coordinates, before counting pricing savings.
+341	The table omits the cost of failure, which the book describes as multi-billion-dollar: a non-binding plan, a continuing deficit trajectory and lost political momentum.
+342	Cross-industry waste of about 9.7% of project spending (PMI, 2017) establishes scale but should not be turned into a precise forecast.
+343	The office is worth most before the gates it protects, which is why the roadmap puts a Portfolio Manager in seat by January 2027.
+344	As a guaranteed saving of 9.7% of the transformation budget
+345	[1] Health Transformation Review, Transforming Healthcare (HTR book v42), Chapter 15 — https://healthtransformationreview.org/read/chapter-15 — §15.11 and Figure 15.9 (business case and cost of failure), §15.12 (roadmap timing), §15.13 objection 3
+346	[2] Project Management Institute, Pulse of the Profession 2017 (survey report) — https://sitsd.mt.gov/_docs/ITMC/SMPMAW/2017.08.23/PMIs-Pulse-of-the-Profession-2017-Survey.pdf — about 9.7% of project spending wasted through poor performance
+347	[3] Health Transformation Review, Transforming Healthcare, Chapter 14 — https://healthtransformationreview.org/read/chapter-14 — political sustainability and the descriptive-plan failure mode
+348	[4] Centers for Medicare & Medicaid Services, CMS Launches Landmark $50 Billion Rural Health Transformation Program (press release, September 15, 2025) — https://www.cms.gov/newsroom/press-releases/cms-launches-landmark-50-billion-rural-health-transformation-program — the federal program whose award the office coordinates
+
+## tpm-objections-and-oversight
+349	Chapter 15 anticipates five and answers each.
+350	This lesson works through them, then turns to the implementation roadmap the book schedules backward from the January 2028 deadline, and ends with the single question the book recommends to legislators and board members who oversee a transformation.
+351	The first objection is that existing arrangements already cover the work: the Health Care Advisory Committee and monthly reports.
+352	The Rural Health Transformation Program is a federal grant with deliverables and reporting obligations; the withdrawn AHEAD agreement still carries federal closeout requirements; Act 68 has a statutory deliverable in January 2028.
+353	Lesson 13 gave the full answer: Rural Health Transformation Program funds depend on demonstrated progress, the office costs a small fraction of the value it protects, and the alternative is a partial transformation that costs far more.
+354	Its March 2026 Act 68 report lists contracted support from Manatt, Phelps & Phillips, a new hospital technical-assistance vendor and analytics support under negotiation.
+355	The five objections and the short answer to each (Chapter 15, §15.13)
+356	The book anchors its roadmap to the one date that cannot move: the Statewide Strategic Plan, due January 15, 2028.
+357	Figure 15.10 schedules the portfolio office's build-out backward from that deadline and against the components it exists to sequence.
+358	A Portfolio Manager hired by January 2027 has nine months before FY2028 hospital budgets take effect in October 2027, which the book judges enough only if the office is running before the Technology gate it is meant to protect.
+359	From mid-2027 the office runs on a fixed cadence: monthly governance reviews, quarterly performance reviews against the Vermont Scorecard, and annual portfolio rebalancing.
+360	The book's aim is that the January 2028 plan arrives with portfolio-management evidence, benefits tracked, risks managed and resources deployed in dependency order, after which the office carries the portfolio into the plan's three-year update cycle.
+361	FY2028 hospital budgets take effect; the office must already be running.
+362	The roadmap, scheduled backward (Chapter 15, §15.12)
+363	Chapter 15's advice to legislators and board members is a single question that separates a real portfolio from a reporting exercise: which component is currently the binding constraint on all the others, who owns it, and what would it take to accelerate it?
+364	Identifying the binding constraint requires knowing which upstream work is holding back the most downstream value.
+365	The most persuasive answer to any objection is a concrete example from your own portfolio: an unowned dependency, an unmanaged cross-pillar risk, or a component running ahead of its gate.
+366	Chapter 15 answers five objections: existing governance, government is different, cost, hospital acceptance and existing consultants.
+367	The roadmap is scheduled backward from January 15, 2028: Portfolio Manager by January 2027, office operational by Q2 2027, before FY2028 budgets in October 2027.
+368	From mid-2027 the office runs monthly governance, quarterly Scorecard reviews and annual rebalancing.
+369	What does Chapter 15 suggest this reveals?
+370	[1] Health Transformation Review, Transforming Healthcare (HTR book v42), Chapter 15 — https://healthtransformationreview.org/read/chapter-15 — §15.12 (implementation roadmap, Figure 15.10), §15.13 (the five objections), §15.15 (Implications for legislators and board members)
+371	[2] Vermont Agency of Human Services, Act 68 Health Care System Transformation Report (March 2026), as cited in Chapter 15 — https://humanservices.vermont.gov — contracted transformation support
+372	[3] Vermont Act 68 of 2025, as enacted — https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT068/ACT068%20As%20Enacted.pdf — the January 2028 Strategic Plan obligation
+373	[4] Project Management Institute, The Standard for Portfolio Management, 4th edition (2017) — https://www.pmi.org/pmbok-guide-standards/foundational/standard-for-portfolio-management — governance body and portfolio office roles
+
+## tpm-capstone
+374	You will define a transformation portfolio, sequence it by dependency, find its binding constraint, check its capital against its gates, model what a slip would do, build its risk register and benefits trace, and finish with a one-page portfolio brief that answers the oversight question from Lesson 14.
+375	If you cannot, use Vermont's portfolio as Chapter 15 records it; the platform's tools load it as a preset.
+376	Every step uses a platform tool, and each tool corresponds to a row of Chapter 15's Work This Chapter on the Platform table.
+377	Step 1: Define and Sequence the Portfolio
+378	Begin with the inventory method from Lesson 3.
+379	If you are using Vermont's portfolio with the Fall 2026 scores, you should find twelve components on track, the RHT Program deployment running ahead of its gate, three components late by dependency order, and the four Technology components as the pressure points.
+380	Step 2: Find the Binding Constraint and Check the Capital
+381	Chapter 15 notes that the tool finds the binding constraint by sensitivity rather than by the highest bar: the pillar whose improvement would lift delivered readiness most is where the portfolio manager's attention belongs.
+382	Step 3: Model a Slip and Score the Portfolio
+383	Chapter 15 makes a pointed observation about this step: divergence between what the portfolio office reports and what the scorecard shows is itself a governance finding.
+384	In /htr-simulator, lower the binding-constraint pillar by 15 points and watch the cascade.
+385	Step 4: Register the Risks and Trace the Benefits
+386	Build a risk register using Lesson 10's format.
+387	Start with the pressure points and the no-slack components from the first three steps: each is a risk to everything that depends on it.
+388	Then read the register as Lesson 11 does: plot it, group risks by shared cause, and check which can be reduced by work that is unblocked today.
+389	Build the benefits trace from Lesson 12.
+390	It is tempting to leave the most uncomfortable risks off a register you will show to others, especially risks about leadership, capacity or political will.
+391	Chapter 15's own register puts the absence of the portfolio function at the top.
+392	An honest register is the only useful one.
+393	Step 5: Write the One-Page Portfolio Brief
+394	Close with the management infrastructure the portfolio needs, costed as a share of what it coordinates and tied to the risks it reduces, as in Lesson 13.
+395	If you can write that page with confidence, you have done what Chapter 15 argues Vermont, and most organizations running a transformation, have not yet done: managed the transformation as a portfolio.
+396	Component leads who see the whole portfolio, its binding constraint and its top risks understand why their own component is being accelerated, held back or resourced differently, and they become the first line of the portfolio's early-warning system.
+397	Chapter 15's Try This exercise makes exactly this comparison.
+398	In Step 2 you find that none of your three most urgent initiatives by deadline sits in the binding-constraint pillar the Friction Index identifies.
+399	What does Chapter 15 say this indicates?
+400	[1] Health Transformation Review, Transforming Healthcare (HTR book v42), Chapter 15 — https://healthtransformationreview.org/read/chapter-15 — §15.14 Work This Chapter on the Platform (Figure 15.11) and the Try This exercise; §15.15 Implications for You
+401	[2] HTR Portfolio Sequencing Test — https://healthtransformationreview.org/portfolio-sequencing-test — verdicts and pressure points
+402	[3] Transformation Friction Index — https://healthtransformationreview.org/transformation-friction-index — binding constraint by sensitivity
+403	[4] HTR Investment Tracker — https://healthtransformationreview.org/investment-tracker — portfolio check of capital against gates
+404	[5] HTR Simulator and Impact Simulation — https://healthtransformationreview.org/htr-simulator and https://healthtransformationreview.org/impact-simulation — cascade and slip modelling
+405	[6] HTR Transformation Scorecard — https://healthtransformationreview.org/research-lab/knowledge-workspace?tab=scorecard — outside-reviewer scoring of five-pillar status

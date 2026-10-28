@@ -1,0 +1,12 @@
+# Academy deep pass (roadmap 1.1) — started 2026-10-28
+
+Method: fresh live dump `book-audit/deep/content/academy_2026-10-28.txt` (19 courses, 299 lessons).
+`extract.py` pulls every sentence carrying a checkable claim (number, $, %, date, named study,
+superlative) per course into `claims_<course>.txt`. Each is read; known facts checked against
+VERIFIED_FACTS.md, the rest against the cited source or a web search. Fixes go out via
+`frontend/scripts/fix-academy-strings.mjs fix_<course>.json` (backups in sanity-backups/;
+`only` scopes generic strings to named lessons). Findings in `findings_<course>.jsonl`.
+
+| Course | Claim sentences | Fixed | Status |
+|---|---|---|---|
+| medicaid-101 | 285 | 4 claims (10 strings) | done |

@@ -1,0 +1,410 @@
+
+## hospital-business-model
+0	Net patient revenue — the money a hospital actually collects for treating patients, after discounts and adjustments — accounts for an average of roughly 90.9% of total hospital revenue.
+1	It is the engine of the hospital business model — averaging about 90.9% of total hospital revenue.
+2	Total compensation and related expenses account for roughly 56–60% of total hospital costs — the largest single expense category (Kaufman Hall / AHA)
+3	A hospital’s payer mix — the proportion of its revenue coming from each type of payer — is therefore one of the most consequential numbers in its finances.
+4	In Definitive Healthcare's 2024 analysis of more than 5,700 hospitals, commercial, private, self-pay, and other payers account for about 70.7% of net patient revenue, Medicare about 14.4%, and Medicaid about 14.8% — even though, by the AHA's count, Medicare and Medicaid pay for more than 70% of hospital inpatient days.
+5	In 2023, Medicare paid hospitals roughly 83 cents for every dollar of cost, and Medicare and Medicaid underpayments together totaled about $130 billion, according to the AHA.
+6	Largest share of net patient revenue (~70.7% with self-pay and other)
+7	Medicare ~14.4%, Medicaid ~14.8% of revenue, but over 70% of inpatient days
+8	Medicare paid ~83¢ per dollar of cost in 2023
+9	This dynamic produces one of the most important and least understood phenomena in hospital finance: the cross-subsidy.
+10	Total compensation and related expenses account for roughly 56% to 60% of total hospital costs.
+11	In 2024, hospitals saw a meaningful financial recovery — Kaufman Hall's national operating margin index, a median across U.S. hospitals, reached about 5% for the calendar year, and Fitch noted nonprofit margins flipped positive (a median around 1.2% for early-fiscal-year reporters, up from -0.5% the prior year).
+12	Even so, a 1–5% operating margin is razor-thin for an organization with massive fixed labor and facility costs.
+13	In Q2 2024, HCA posted roughly a 12.8% operating margin and Tenet roughly 14.9% — multiples of the nonprofit median.
+14	They are exempt from federal income, state, and local property taxes, an exemption KFF valued at about $28.1 billion in 2020 ($14.4 billion federal and $13.7 billion state and local) in foregone revenue.
+15	In exchange, they must satisfy the community benefit standard: under IRS Revenue Ruling 69-545 and the Affordable Care Act’s IRC Section 501(r), a nonprofit hospital must demonstrate that it benefits the community rather than private individuals — through charity care, unreimbursed Medicaid, community health programs, education, research, and subsidized services.
+16	The federal revenue loss from the exemption is projected at roughly $260 billion over 2025–2034.
+17	Net patient revenue — money collected for patient care after discounts and adjustments — averages about 90.9% of total hospital revenue, making the hospital fundamentally a patient-care business supplemented by investment income and philanthropy.
+18	A hospital has many payers paying different prices for the same service; by net patient revenue, payer mix is roughly 70.7% commercial/private/self-pay/other, 14.4% Medicare, and 14.8% Medicaid (Definitive Healthcare, 2024), though Medicare and Medicaid pay for over 70% of inpatient days.
+19	Government payers often pay below cost — Medicare paid roughly 83 cents per dollar of cost in 2023, and Medicare plus Medicaid underpayments reached about $130 billion — forcing hospitals to rely on a cross-subsidy from higher commercial payments.
+20	Expenses are dominated by labor: total compensation accounts for roughly 56–60% of hospital costs and is largely fixed in the short term, making margins highly sensitive to volume and payer mix.
+21	Operating margins are typically thin; even in the recovered year of 2024, medians ran from about 1.2% for nonprofits (Fitch early reporters) to about 5% across all hospitals (Kaufman Hall), versus 12–15% for large for-profit systems like HCA and Tenet.
+22	Nonprofit hospitals are exempt from income, property, and other taxes (worth about $28 billion in 2020, per KFF) in exchange for meeting the community benefit standard under IRS Revenue Ruling 69-545 and ACA Section 501(r).
+23	[1] Trilliant Health: "Hundreds of Hospitals Rely on Non-Patient Revenue to Maintain Positive Margins" — https://www.trillianthealth.com/market-research/studies/hundreds-of-hospitals-rely-on-non-patient-revenue-to-maintain-positive-margins — net patient revenue averages 90.9% of total hospital revenue; non-patient income sources.
+24	[2] Definitive Healthcare: "Understanding Hospital Payor Mixes Across the U.S." — https://www.definitivehc.com/resources/healthcare-insights/breaking-down-us-hospital-payor-mixes — payer mix by net patient revenue ~70.7% commercial/private/self-pay/other, 14.4% Medicare, 14.8% Medicaid (2024).
+25	[3] AHA: "Costs of Caring" / Healthcare Finance News on labor costs — https://www.aha.org/costsofcaring — labor as the largest expense category; Medicare paid ~83 cents per dollar of cost in 2023; Medicare + Medicaid underpayments ~$130B.
+26	[4] Kaufman Hall: "National Hospital Flash Report" — https://www.kaufmanhall.com/insights-reports/national-hospital-flash-report — 2024 calendar-year operating margin index ~5.0% (all hospitals); total compensation ~56–60% of expenses.
+27	[5] Fierce Healthcare: "Nonprofit hospital margins flipped positive in 2024: Fitch" — https://www.fiercehealthcare.com/providers/nonprofit-hospital-margins-flipped-positive-2024-fitch — nonprofit median margin ~1.2% (up from -0.5%); for-profit HCA ~12.8% and Tenet ~14.9% operating margins in Q2 2024.
+28	[6] IRS: "Charitable hospitals — general requirements for tax-exemption under Section 501(c)(3)" — https://www.irs.gov/charities-non-profits/charitable-hospitals-general-requirements-for-tax-exemption-under-section-501c3 — 501(c)(3) requirements and community benefit standard (Rev.
+29	Ruling 69-545, IRC 501(r)).
+30	[7] Committee for a Responsible Federal Budget: "The Federal Tax Benefits for Nonprofit Hospitals" — https://www.crfb.org/papers/federal-tax-benefits-nonprofit-hospitals — tax exemption worth ~$28.1 billion in 2020 (KFF); ~$260 billion federal revenue loss projected 2025–2034.
+
+## reading-hospital-financial-statements
+31	The most important structural feature of a hospital income statement is the split between operating and non-operating items.
+32	Salaries and benefits (the largest line), supplies, drugs, depreciation, and overhead.
+33	Following FASB ASU 2016-14 (effective 2018), net assets are reported in two categories: net assets without donor restrictions (formerly "unrestricted") and net assets with donor restrictions (formerly "restricted").
+34	Imagine two hospitals that both report a 3% operating margin this year — identical on the income statement.
+35	Cash from operating activities shows whether day-to-day care generates real cash — the most important section for judging sustainability.
+36	The First Numbers an Analyst Looks For
+37	The most famous is days cash on hand (DCOH) — how many days the hospital could keep operating using only its available cash if all revenue stopped.
+38	Strong liquidity is generally considered to be roughly 150–205 days of cash on hand, with the exact target varying by hospital size, location, and ownership.
+39	A hospital with 200 days of cash has a deep cushion; one with 30 days is in danger.
+40	Alongside DCOH, analysts check the current ratio (current assets divided by current liabilities; 1.0 or higher means short-term obligations are covered) and days in accounts receivable (how long, on average, it takes to collect payment — where a rising number means cash is stuck in unpaid claims).
+41	The balance sheet rests on assets = liabilities + net assets; for nonprofits, FASB ASU 2016-14 splits net assets into "without donor restrictions" (formerly unrestricted) and "with donor restrictions" (formerly restricted).
+42	Days cash on hand (DCOH) measures how long a hospital could operate on existing cash; strong levels run roughly 150–205 days, drawing on both the balance sheet and income statement.
+43	[1] Milbank Memorial Fund: "Guide to Understanding Hospital Spending through Financial Analysis" (2024) — https://www.milbank.org/wp-content/uploads/2024/03/Hospital-Financial-Analyses.pdf — the core financial statements, NPSR as primary revenue, and how indicators are derived.
+44	[2] Massachusetts CHIA: "Financial Metric Formulas and Calculations" — https://www.chiamass.gov/financial-metric-formulas-and-calculations — formulas for days cash on hand, current ratio, days in accounts receivable, and debt-to-capitalization.
+45	[3] NASHP: "A Community Leader’s Guide to Hospital Finance" — https://www.nashp.org/wp-content/uploads/2020/07/A-Community-Leaders-Guide-to-Hospital-Finance2.pdf — operating vs. non-operating revenue and reading nonprofit hospital statements.
+46	[4] Blackbaud: "The Four Core Statements of Nonprofit Financial Reporting" — https://www.blackbaud.com/industry-insights/glossary/nonprofit-reporting-financial-statements-overview — statement of activities as the nonprofit income statement; FASB ASU 2016-14 net-asset terminology (2018).
+47	[5] Accounting Insights: "Understanding Hospital Balance Sheets for Financial Insights" — https://accountinginsights.org/understanding-hospital-balance-sheets-for-financial-insights/ — assets, liabilities, and net assets (equity); current vs. non-current classification and PP&E.
+48	[6] Healthcare Finance News: "Why days cash on hand is so important for hospitals" — https://www.healthcarefinancenews.com/news/why-days-cash-hand-so-important-hospitals — DCOH significance and benchmark ranges (~150–205 days).
+49	[7] HFMA: "Key Hospital Financial Statistics and Ratio Medians" — https://www.hfma.org/finance-and-business-strategy/1113/ — standard hospital ratio definitions and medians used by analysts.
+
+## hospital-financial-ratios
+50	A hospital reporting $50 million in profit sounds healthy — until you learn it has $5 billion in revenue, making that "huge" profit a razor-thin 1% margin.
+51	Financial ratios solve this by expressing each number as a relationship — profit relative to revenue, cash relative to expenses, debt relative to capital — so that a 25-bed rural hospital and a 1,200-bed academic system can be compared on the same scale.
+52	Recent national hospital operating-margin medians ran roughly 1–2% in 2024–2025 — profitable but very thin (HFMA / Fitch)
+53	Median days cash on hand ran roughly 215–220 days in fiscal 2024, a favorable liquidity cushion versus history (Fitch)
+54	Recent medians put hospital operating margins around 1–2%, and Fitch reported its rated-credit median operating margin rising from roughly 0.2% in 2022 to about 1.1% in 2024 and 1.5% in 2025.
+55	A 1–2% operating margin means that a modest shift in payer mix, a wage spike, or a soft quarter of volume can tip a hospital from surplus to loss.
+56	The most watched is days cash on hand (DCOH) — how many days the hospital could keep operating on existing cash if revenue stopped — calculated from cash and investments divided by average daily operating expenses (excluding depreciation).
+57	Recent medians around 215–220 days represent a strong cushion; a hospital below 50 days is in genuine danger.
+58	The current ratio (current assets divided by current liabilities) tests whether short-term obligations are covered; a value of 1.0 or higher means current assets are sufficient to pay current liabilities.
+59	Strong is roughly 150–220+ days.
+60	Are short-term assets enough to cover short-term debts? 1.0 or higher is the floor.
+61	Recent medians around 170–178% indicate flexibility.
+62	Debt service coverage measures whether the hospital generates enough cash to cover its debt payments (principal, interest, and leases); a ratio below 1.0 means it is not generating enough to meet obligations — a serious red flag for lenders.
+63	A strong analyst reads the set: an operating margin around 1–2%, days cash on hand near 200, cash-to-debt above 170%, debt service coverage comfortably above 1.0, and an average age of plant that is not creeping upward.
+64	A current ratio of 1.5 means little until you know peers run at 2.0.
+65	A days-cash-on-hand figure of 120 is reassuring if it rose from 80, and alarming if it fell from 200.
+66	Recent operating-margin medians run roughly 1–2% (Fitch rated-credit median ~1.1% in 2024 and ~1.5% in 2025), leaving little cushion against shocks.
+67	Key liquidity ratios are days cash on hand (recent medians ~215–220 days), the current ratio (≥1.0 floor), days in accounts receivable (lower is better), and cash-to-debt (~170–178%).
+68	Capital structure ratios — equity financing and debt service coverage (a ratio below 1.0 means the hospital cannot cover its debt payments) — measure financing sustainability and borrowing capacity.
+69	[1] HFMA: "Key Hospital Financial Statistics and Ratio Medians: Glossary of Formulas" — https://www.hfma.org/finance-and-business-strategy/1113/ — standard definitions and formulas for hospital financial ratios and the medians analysts benchmark against.
+70	[2] Massachusetts CHIA: "Financial Metric Formulas and Calculations" — https://www.chiamass.gov/financial-metric-formulas-and-calculations — the five ratio categories (profitability, liquidity, capital structure, asset efficiency, other) and formulas including average age of plant and debt service coverage.
+71	[3] HIT Consultant: "Not-for-profit hospitals see margin improvements" (Fitch, April 2025) — https://hitconsultant.net/2025/04/04/report-not-for-profit-hospitals-see-margin-improvements-in-2025/ — Fitch early-FY2024 medians: ~220 days cash on hand, cash-to-debt 178.5%.
+72	[4] HFMA: "The financial state of the not-for-profit hospital sector: key takeaways from the latest medians" — https://www.hfma.org/finance-and-business-strategy/healthcare-business-trends/the-financial-state-of-the-not-for-profit-hospital-sector-key-takeaways-from-the-latest-medians/ — Fitch medians: operating margin 0.2% (2022) and 0.4% (2023); 211 days cash on hand and 163.7% cash-to-debt (2023).
+73	[5] AHA Chartbook Glossary — https://www.aha.org/system/files/research/reports/tw/chartbook/2016/glossary.pdf/ — definitions of average age of plant and related hospital financial indicators.
+74	[6] Corporate Finance Institute: "Debt Service Coverage Ratio" — https://corporatefinanceinstitute.com/resources/commercial-lending/debt-service-coverage-ratio/ — DSCR definition; a ratio below 1.0 indicates insufficient cash to meet debt obligations.
+
+## payer-mix-revenue
+75	The Most Important Number You’ve Never Heard Of
+76	This lesson unpacks how payer mix works, why the gap between payers is so large, how it produces the cross-subsidy that holds American hospital finance together, and why a single policy change — like the long-scheduled Medicaid DSH cuts — can threaten the survival of the hospitals serving the most vulnerable communities.
+77	In 2022, private insurers paid hospitals on average 254% of what Medicare would pay for the same services — up from 224% in 2020 (RAND, 2024)
+78	MedPAC put hospitals' overall fee-for-service Medicare margin at -13% in 2023 and projects about -13% for 2025 — paid below the cost of care (MedPAC, March 2025)
+79	Medicare FFS Margin (2023)
+80	The most revealing fact about payer mix is that patient volume and revenue do not line up.
+81	Medicare and Medicaid together accounted for about two-thirds (67%) of all hospital discharges in 2023 — Medicare nearly half (46%) and Medicaid more than a fifth (21%) — while private insurance covered just 24% of discharges and self-pay 4%.
+82	Yet when you look at revenue, the picture inverts: commercial, private, self-pay, and other payers together generate roughly 70.7% of hospital net patient revenue, while Medicare contributes about 14.4% and Medicaid about 14.8% (Definitive Healthcare, 2024).
+83	Medicare ~46% of discharges
+84	Medicaid ~21% of discharges
+85	Private insurance ~24% of discharges
+86	Self-pay ~4% of discharges
+87	Government payers fill ~67% of beds
+88	Commercial/private/self-pay/other ~70.7%
+89	Government payers provide <50% of revenue
+90	The RAND Corporation, analyzing billions of dollars in claims across thousands of hospitals, found that in 2022 employers and private insurers paid on average 254% of what Medicare would have paid for the same services at the same facilities — a figure that has climbed from 224% in 2020 and 247% in 2018.
+91	In some states, commercial prices averaged above 300% of Medicare.
+92	Meanwhile, MedPAC put hospitals' fee-for-service Medicare margin at -13% in 2023, and Medicaid often pays even less.
+93	Inpatient hospital prices paid by private insurers rose about 50% from mid-2014 to late 2024 — twice the 25% growth in Medicare inpatient prices and more than twice the 19% growth in Medicaid prices over the same span.
+94	Medicaid DSH payment cuts, enacted in the ACA and delayed repeatedly for more than a decade, were scheduled to take effect on October 1, 2025, at $8 billion a year for FY 2026–2028.
+95	Congress delayed them again in a November 2025 continuing resolution, and the funding package signed on February 3, 2026 eliminated the FY 2026 and FY 2027 reductions — leaving one year, about $8 billion, still scheduled for FY 2028.
+96	Volume and revenue diverge sharply: Medicare and Medicaid filled about 67% of discharges in 2023 but provided under half of revenue, while commercial/private/self-pay generated roughly 70.7% of net patient revenue from only ~28% of discharges.
+97	Government payers reimburse below cost (MedPAC put hospitals' Medicare fee-for-service margin at -13% in 2023), while commercial payers pay well above it — RAND found private plans paid 254% of Medicare rates in 2022.
+98	The payment gap is widening: private inpatient prices rose ~50% from 2014–2024 versus 25% for Medicare and 19% for Medicaid, deepening the cross-subsidy in which commercial payments cover below-cost government care.
+99	Medicaid DSH cuts of $8 billion a year were scheduled to begin October 1, 2025; after short-term delays, a February 2026 funding law eliminated the FY 2026 and FY 2027 cuts, leaving about $8 billion scheduled for FY 2028 — just as tightened eligibility threatens to raise uncompensated care.
+100	[1] Definitive Healthcare: "Understanding Hospital Payor Mixes Across the U.S." — https://www.definitivehc.com/resources/healthcare-insights/breaking-down-us-hospital-payor-mixes — payer mix by net patient revenue ~70.7% commercial/private/self-pay/other, 14.4% Medicare, 14.8% Medicaid (2024).
+101	[2] KFF: "Key Facts About Hospitals — Spending by Payer" — https://www.kff.org/health-costs/key-facts-about-hospitals/ — discharge shares (~46% Medicare, 21% Medicaid, 24% private, 4% self-pay) vs. revenue shares; government payers >70% of inpatient days but <half of revenue.
+102	[3] RAND: "Private Health Plans During 2022 Paid Hospitals 254 Percent of What Medicare Would Pay" (May 2024) — https://www.rand.org/news/press/2024/05/13.html — 254% in 2022 (224% in 2020, 247% in 2018); several states above 300% of Medicare.
+103	[4] Milliman: "Commercial reimbursement benchmarking — commercial payment rates as a percentage of Medicare FFS rates" — https://www.milliman.com/en/insight/commercial-reimbursement-benchmarking-medicare-ffs-rates — commercial payment rates as a percentage of Medicare FFS (roughly 190% of fully loaded Medicare FFS).
+104	[5] Medicaid.gov: "Medicaid Disproportionate Share Hospital (DSH) Payments" — https://www.medicaid.gov/medicaid/financial-management/medicaid-disproportionate-share-hospital-dsh-payments — federal requirement and purpose of DSH payments for hospitals serving low-income, uninsured, and Medicaid patients.
+105	[6] Spencer Fane: "Dual Pressures on Hospitals: OBBBA and $24 Billion in DSH Reductions" — https://www.spencerfane.com/insight/dual-pressures-on-hospitals-obbba-and-24-billion-in-dsh-reductions/ — DSH cuts scheduled from Oct 1, 2025 ($8B a year, FY2026–2028; FY2026–27 since eliminated by the February 2026 funding law); safety-net hospitals cannot cost-shift.
+
+## chargemaster-gross-net-revenue
+106	The $5,000 MRI That Nobody Pays $5,000 For
+107	A hospital lists an MRI at $5,000.
+108	A commercial insurer pays $1,200 for it.
+109	Medicare pays perhaps $500.
+110	A cash-paying patient might be quoted $3,200.
+111	The uninsured patient who never negotiates gets billed the full $5,000.
+112	The average hospital’s charges are about 3.4 times the actual cost of providing care, with some exceeding a 10x charge-to-cost ratio (Health Affairs / NIH studies)
+113	Hospitals’ chargemaster list prices are on average about 164% higher than negotiated prices for the same services (Health Affairs)
+114	Using the earlier example: a $5,000 chargemaster MRI with an insurer’s $1,200 negotiated rate generates a $3,800 contractual allowance and just $1,200 in net revenue.
+115	The $5,000 gross charge is essentially a fiction; the $1,200 is the financial reality.
+116	The full chargemaster list price for every item billed — e.g., $5,000 for an MRI.
+117	What the hospital actually expects to collect — the only revenue figure that reflects financial reality.
+118	Between 1996 and 2017, chargemaster markups increased by an average of 155% across more than 3,400 acute-care hospitals.
+119	The average hospital’s charges run about 3.4 times the actual cost of care, and the average charge-to-cost ratio across patient-care departments has been measured anywhere from 1.8 to 28.5, with for-profit hospitals carrying notably higher ratios than government hospitals.
+120	Researchers have found that both cash prices and commercial negotiated rates are typically set as a consistent percentage discount off the chargemaster — cash prices averaging around 64% and commercial negotiated rates around 58% of chargemaster prices — which is why the inflated list price still influences what real payers pay.
+121	The sticker says $50,000; the dealer expects to negotiate down to $38,000; a savvy buyer pays $35,000; and only the customer who walks in and pays the sticker without haggling gets soaked.
+122	Starting in July 2024, hospitals must use a standardized CMS template in a non-proprietary format (CSV or JSON), making the data far more usable.
+123	Enforcement carries teeth: CMS can levy fines of up to $5,500 per day for non-compliance at hospitals with 30 or more beds.
+124	As of late 2024, roughly 70% of hospitals were substantially compliant with all five required data elements, about 15% posted partial files (often missing payer-specific negotiated rates), and about 15% remained non-compliant.
+125	A 2024 HHS Office of Inspector General audit of 100 hospitals found 37 failed to meet key price-transparency requirements, with 34 not complying with the machine-readable file rules — yet by September 2024 CMS had issued only 14 civil monetary penalties nationwide, totaling about $4 million.
+126	In February 2025, a federal executive order directed agencies to ramp up enforcement of price transparency within 90 days, signaling that the era of lax enforcement may be ending.
+127	Transparency Meets Enforcement (2024–2025)
+128	Chargemaster prices are extremely inflated — averaging about 3.4 times actual cost and roughly 164% above negotiated prices — because of a self-reinforcing cycle of list-price inflation and insurer discounting, not because of cost.
+129	Federal price transparency rules now require hospitals to publish five standard charges (gross, cash, payer-specific negotiated, and de-identified min/max) in a standardized CMS machine-readable template (CSV/JSON) as of July 2024.
+130	Enforcement is tightening: fines reach up to $5,500/day for larger non-compliant hospitals; ~70% were substantially compliant by late 2024, and a February 2025 executive order directed stronger enforcement.
+131	[1] TechTarget RevCycleManagement: "The Role of the Hospital Chargemaster in Revenue Cycle Management" — https://www.techtarget.com/revcyclemanagement/feature/The-Role-of-the-Hospital-Chargemaster-in-Revenue-Cycle-Management — chargemaster/CDM definition, gross charges, and net patient revenue after contractual allowances and bad debt.
+132	[2] Health Affairs: "The Relationships Among Cash Prices, Negotiated Rates, And Chargemaster Prices For Shoppable Hospital Services" — https://www.healthaffairs.org/doi/abs/10.1377/hlthaff.2022.00977 — cash prices ~64% and commercial negotiated rates ~58% of chargemaster prices; consistent percentage discounting.
+133	[3] PMC/NIH: "Hospital Price Transparency in the US: Chargemaster, Cash, and Negotiated Price Variation for 14 Common Procedures" — https://pmc.ncbi.nlm.nih.gov/articles/PMC9464687/ — charge-to-cost ratios (1.8–28.5), list prices ~164% above negotiated, for-profit vs. government markup differences.
+134	[4] BillKarma: "Hospital Chargemaster Explained" — https://billkarma.app/guides/hospital-chargemaster-explained/ — the self-reinforcing inflation cycle; charges ~3.4x cost; 1996–2017 markup growth of ~155%.
+135	[5] CMS: "Hospital Price Transparency Frequently Asked Questions" — https://www.cms.gov/files/document/hospital-price-transparency-frequently-asked-questions.pdf — five required standard charges; July 2024 standardized template (CSV/JSON); penalties up to $5,500/day for 30+ bed hospitals.
+136	[6] HHS OIG audit coverage / February 2025 executive order reporting — https://www.techtarget.com/revcyclemanagement/news/366600486/Hospital-Chargemaster-Heavily-Influences-Cash-Prices-Payer-Rates — 2024 OIG audit (37 of 100 hospitals non-compliant), ~70% substantial compliance, and the Feb 2025 executive order to ramp up enforcement.
+
+## contractual-adjustments-charity
+137	Confusing these three is one of the most common errors in hospital finance, and it leads to badly wrong conclusions.
+138	U.S. hospitals provided almost $745 billion in uncompensated care between 2000 and 2020 (American Hospital Association)
+139	Uncompensated Care, 2000–2020
+140	Charity care plus bad debt, measured at cost, in a single year (American Hospital Association, 2022 fact sheet)
+141	Uncompensated Care in 2020
+142	If a hospital bills $5,000 for a procedure and the insurer’s contract says it will pay $1,200, the $3,800 difference is a contractual adjustment.
+143	By far the largest portion of the gap between gross and net revenue is contractual adjustments — and it represents a planned discount, not a loss or a charitable act.
+144	The same unpaid $2,000 hospital bill is charity care if the patient qualified for and received financial assistance, but bad debt if the patient simply never paid and never applied.
+145	Why the Distinction Has Legal Teeth: Section 501(r)
+146	Under Internal Revenue Code Section 501(r), enacted as part of the Affordable Care Act, tax-exempt hospitals must establish a written financial assistance policy (FAP) and a separate written policy for emergency medical care.
+147	Section 501(r) goes further, imposing concrete patient protections.
+148	The dollars written off are similar, but the meaning is opposite: one is a failure of process that harms a vulnerable patient and inflates bad debt; the other fulfills the hospital’s charitable mission and its 501(r) obligations.
+149	Uncompensated care has been an enormous and growing burden: U.S. hospitals provided almost $745 billion in uncompensated care between 2000 and 2020, including $42.7 billion in 2020 alone (AHA).
+150	And it moves with coverage: when pandemic-era Medicaid continuous-enrollment protections unwound in 2023 and more patients lost insurance, hospitals faced more uninsured patients and more unpaid bills.
+151	Rural and safety-net hospitals, which serve disproportionate numbers of uninsured and low-income patients, absorb the most uncompensated care while having the fewest commercial patients to offset it.
+152	When you see that a hospital "wrote off" a large sum, the first question is always: which kind of write-off?
+153	IRC Section 501(r) requires tax-exempt hospitals to maintain a written financial assistance policy (FAP), limit charges to FAP-eligible patients, and restrict extraordinary collection actions until they determine assistance eligibility.
+154	Screening patients for assistance ("presumptive eligibility") can reclassify bad debt as charity care — fulfilling the charitable mission and 501(r) obligations rather than subjecting vulnerable patients to aggressive collections.
+155	Uncompensated care is large and rising — almost $745 billion from 2000–2020, and $42.7 billion in 2020 alone — and it falls hardest on rural and safety-net hospitals.
+156	[1] KFF: "Hospital Charity Care: How It Works and Why It Matters" — https://www.kff.org/health-costs/issue-brief/hospital-charity-care-how-it-works-and-why-it-matters/ — definitions of charity care vs. bad debt; uncompensated care as the sum of financial assistance and bad debt.
+157	[2] IRS: "General health care & IRC Section 501(r)" — https://www.irs.gov/charities-non-profits/general-health-care-irc-section-501r — charity care excludes contractual adjustments, self-pay/prompt-pay discounts, and the Medicare/Medicaid shortfall; FAP and emergency-care policy requirements under 501(r)(4).
+158	[3] IRS: "Limitation on charges – Section 501(r)(5)" and "Billing and collections – Section 501(r)(6)" — https://www.irs.gov/charities-non-profits/limitation-on-charges-section-501r5 — limits on amounts charged to FAP-eligible patients and restrictions on extraordinary collection actions.
+159	[4] Definitive Healthcare: "Balancing uncompensated care and hospital bad debt" — https://www.definitivehc.com/blog/balancing-uncompensated-care-and-hospital-bad-debt — accounting treatment of bad debt (expected payment, never received) versus financial assistance.
+160	[5] American Hospital Association: "Uncompensated Hospital Care Cost Fact Sheet" — https://www.aha.org/fact-sheets/2020-01-06-fact-sheet-uncompensated-hospital-care-cost — almost $745 billion in uncompensated care 2000–2020; $42.67 billion in 2020.
+161	[6] PwC Viewpoint: "Uncompensated services" (Health Care Guide §5.2) — https://viewpoint.pwc.com/dt/us/en/pwc/accounting_guides/health-care/health_care_guide/chapter5_othertopics-/52_uncompensatedservices.html — accounting classification of charity care, implicit price concessions, and credit losses (bad debt).
+
+## direct-indirect-costs
+162	Direct-versus-indirect is not the only way costs are classified.
+163	Fixed costs stay roughly constant regardless of volume over the short term — the mortgage on the building, the depreciation on the MRI machine, and much of the administrative salary base do not change whether the hospital treats 100 or 1,000 patients this month.
+164	The most common allocation technique is the step-down method, which distributes overhead sequentially — from the higher-level cost centers down to lower ones in a ranked order — so that, for example, administration’s costs are spread first, then housekeeping’s, and so on, until all overhead lands on the revenue-producing departments.
+165	[1] Public Health Finance & Management: "Cost Allocation Study Notes" — http://www.publichealthfinance.org/media/file/PHFM_Class_Res_Cost_Allocation_Study_Notes.pdf — direct vs. indirect cost centers, cost pools and bases, application rates, and the purpose of cost allocation.
+166	[2] PatientBetter Glossary: "What Are Direct Costs In Healthcare?" — https://patientbetter.com/glossary/direct-costs/ — direct costs as those directly attributable to patient care (nursing, drugs, supplies, imaging, rehab, food).
+167	[3] AHRQ: "Understanding the Direct and Indirect Costs of Transformation to Medical Homes" — https://www.ahrq.gov/professionals/systems/primary-care/pcp-costs/halladay-costs.html — fixed vs. variable direct costs and how costs behave with patient volume.
+168	[4] American Institute for Healthcare Management: "Cost Classifications" — https://amihm.org/cost-classifications/ — direct vs. indirect (overhead) cost definitions and the role of overhead borne across all departments.
+169	[5] CostPerform: "7 Methods of Cost Allocation in Accounting" — https://www.costperform.com/7-methods-of-cost-allocation-in-accounting/ — step-down (sequential) allocation versus reciprocal allocation and their trade-offs.
+170	[6] Strata Decision Technology: "Considerations for Advanced Costing Methods in Healthcare" — https://www.stratadecision.com/blog/considerations-advanced-costing-methods-healthcare — single step-down vs. reciprocal allocation methodologies for hospital overhead.
+
+## cost-per-case-service-line
+171	Orthopedic surgeons generate an average of roughly $3.3 million in annual revenue for their affiliated hospitals — among the highest of any specialty (Merritt Hawkins 2019 survey)
+172	Contribution margins for total hip replacement ran about $5,889 higher in concentrated hospital markets than in competitive ones (AJMC, Robinson)
+173	The simplest is the ratio of cost to charges (RCC): a department divides its total cost by its total charges to get a ratio (say, $40 million in cost against $100 million in charges equals 0.4), then multiplies a case’s charges by that ratio to estimate its cost.
+174	The most precise (and most labor-intensive) method is microcosting, which tallies the actual individual resources consumed by a specific case.
+175	One analysis found contribution margins running thousands of dollars higher in concentrated (less competitive) hospital markets — about $5,259 higher for angioplasty, $4,123 for total knee replacement, $5,889 for total hip replacement, and $7,931 for lumbar spine fusion — than in competitive markets, reflecting the pricing power that comes with market concentration.
+176	The pattern is consistent across American hospitals: procedure-heavy specialties such as cardiovascular surgery, interventional cardiology, orthopedics, and neurosurgery consistently rank among the most profitable, while services like primary care, behavioral health, and obstetrics often run thin or negative margins despite being essential.
+177	An orthopedic surgeon generating around $3.3 million in annual hospital revenue (Merritt Hawkins, 2019) illustrates why these lines command so much strategic attention.
+178	Done well, cost-per-case and service-line analysis are among the most powerful tools in hospital finance.
+179	Procedure margins vary widely by market and payer; contribution margins ran thousands of dollars higher in concentrated markets (e.g., ~$5,889 for total hip replacement) than in competitive ones.
+180	[1] BCS ProSoft: "Cost Accounting in Healthcare: 9 Strategies for Maximizing Margin" — https://www.bcsprosoft.com/cost-accounting-in-healthcare-9-strategies-for-maximizing-margin/ — RCC, RVU-based costing, microcosting, and contribution-margin analysis as service-line tools.
+181	[2] Physicians Practice: "Cost Accounting in the Medical Practice via RVU" — https://www.physicianspractice.com/view/cost-accounting-medical-practice-rvu — RVU costing method (total expenses ÷ total RVUs × RVUs per procedure) and its limitations.
+182	[3] AJMC (Robinson): "Hospital Market Concentration, Pricing, and Profitability in Orthopedic Surgery and Interventional Cardiology" — https://www.ajmc.com/view/ajmc_11jun_robinson_e241_248 — contribution-margin definition and procedure-level margin gaps between concentrated and competitive markets (e.g., $5,889 hip replacement, $7,931 lumbar fusion).
+183	[4] Strata Decision Technology: "Community Hospital Uses Service-Line Profitability Reporting to Drive Margin" — https://www.stratadecision.com/article/community-hospital-uses-service-line-profitability-reporting-to-drive-margin — using service-line profitability data to guide growth and divestment decisions.
+184	[5] Vizient: "Optimizing service lines: better business, less busy-ness" (2025) — https://www.vizientinc.com/insights/all/2025/optimizing-service-lines-better-business-less-busyness — high activity does not guarantee positive margin; reviewing direct margins across care settings.
+185	[6] SocialClimb: "Why Your Most Profitable Service Lines Are Probably Undermarketed" — https://socialclimb.com/blog/profitable-service-lines-are-undermarketed/ — cardiology/orthopedics/neurosurgery profitability, orthopedic surgeon hospital revenue (Merritt Hawkins: ~$2.7M in 2016, ~$3.3M in 2019), and using positive margins to subsidize less remunerative care.
+
+## activity-based-costing
+186	The most influential refinement, designed specifically to make ABC practical in healthcare, is time-driven activity-based costing (TDABC).
+187	It has become the leading method for answering the question that value-based care makes unavoidable: when a hospital is paid a single bundled or capitated amount, does that payment actually cover the cost of delivering the care?
+188	Time-driven activity-based costing (TDABC) was created by Robert Kaplan and Steven Anderson at Harvard Business School to simplify and modernize ABC, and it was brought squarely into healthcare when Kaplan and Michael Porter laid out a seven-step approach for applying it in clinical settings in 2011.
+189	This is the core promise of TDABC for value-based care: it measures the denominator (cost) in the value equation of outcomes-over-cost, making true value measurable for the first time.
+190	The honest verdict is that activity-based costing, and TDABC in particular, represents the most accurate available answer to hospital finance’s hardest question — what does care actually cost? — while remaining genuinely difficult to implement well.
+191	Time-driven activity-based costing (TDABC), created by Kaplan and Anderson and brought into healthcare via Kaplan and Porter’s 2011 seven-step approach, simplifies ABC using just two parameters: the capacity cost rate and the time each activity requires.
+192	The honest verdict is that ABC/TDABC offers the most accurate answer to what care costs but remains hard to implement — and the cost of not knowing your costs rises sharply once revenue is fixed under value-based contracts.
+193	Journal of Health Planning and Management: "Improving healthcare performance through Activity-Based Costing and Time-Driven Activity-Based Costing" — https://onlinelibrary.wiley.com/doi/full/10.1002/hpm.3304 — ABC definition (tracing resource consumption), ABC vs.
+194	[2] Frontiers in Public Health (2021): "Research on Time-Driven Activity-Based Management System of Public Hospitals" — https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2021.763829/full — TDABC created by Kaplan and Anderson; two parameters (capacity cost rate and activity time); accuracy over precision.
+195	[3] Center for Global Development: "Costing Healthcare Services Using Time-Driven Activity-Based Costing: A Simple Step-by-Step" — https://www.cgdev.org/sites/default/files/costing-healthcare-services-using-time-driven-activity-based-costing-simple-step-step.pdf — TDABC process mapping along the care cycle; Kaplan and Porter’s seven-step approach.
+196	[4] Value in Health: "Advances in Value-Based Healthcare by the Application of Time-Driven Activity-Based Costing for Inpatient Management: A Systematic Review" — https://www.valueinhealthjournal.com/article/S1098-3015(20)30130-3/fulltext — TDABC contributions to value-based initiatives and cost-saving findings across studies.
+197	[5] PMC: "Using Time-Driven Activity-Based Costing as a Key Component of the Value Platform: A Pilot Analysis of Colonoscopy, Aortic Valve Replacement and Carpal Tunnel Release" — https://pmc.ncbi.nlm.nih.gov/articles/PMC5827916/ — real procedure-level TDABC application and its use measuring the cost denominator of value.
+198	[6] ScienceDirect / PubMed: "Time-driven activity-based costing in health care: A systematic review of the literature" — https://www.sciencedirect.com/science/article/pii/S0168851017301240 — barriers to adoption (resource constraints, EHR competing priorities, support-cost allocation, staff-time measurement) and the path forward.
+
+## operating-vs-capital-budget
+199	Hospital capital expenditures rose to a median of 123.4% of depreciation expense in FY24 — the highest since 2013, signaling renewed investment in aging facilities (Fitch)
+200	On the expense side it includes personnel salaries and benefits (the largest component, as the cost-accounting lessons established), medical and surgical supplies, pharmaceuticals, utilities, and administrative overhead.
+201	A $400 piece of equipment is an operating expense; a $400,000 imaging system is a capital asset depreciated over years.
+202	Fitch reported that hospital capital expenditures rose to a median of 123.4% of depreciation expense in FY24 — up from 109.1% the prior year and the highest level since 2013.
+203	Spending above 100% of depreciation means hospitals are reinvesting faster than their assets are wearing out, a healthy sign after years of deferred investment, but one that depends on operating margins strong enough to fund it.
+204	The most consequential financial decisions a hospital makes — whether to build, what technology to buy, how to fund it — happen in the capital budget, while the operating budget determines whether the hospital can keep those promises year after year.
+205	Capital spending is rising (Fitch: capex at a median 123.4% of depreciation in FY24, highest since 2013), reflecting reinvestment in aging facilities that depends on operating margins strong enough to fund it.
+206	[1] NetSuite: "Healthcare & Hospital Budgeting Guide for 2025" — https://www.netsuite.com/portal/resource/articles/financial-management/healthcare-budgeting.shtml — operating vs. capital budget definitions, examples, and how the two budgets influence each other.
+207	[2] Strata Decision Technology: "Capital Budgeting for Healthcare Organizations" — https://www.stratadecision.com/healthcare-and-hospital-capital-budget — fixed capital budgets, the department-request process, and prioritization criteria.
+208	[3] HFM Magazine: "Managing capital assets in health care facilities" — https://www.hfmmagazine.com/articles/4922-managing-capital-assets-in-health-care-facilities — capital assets (PP&E with useful life >1 year), depreciation, and funded depreciation.
+209	[4] StatPearls (NCBI): "Healthcare Business Budgeting" — https://www.ncbi.nlm.nih.gov/books/NBK589707/ — operating budget components (salaries, supplies, overhead) and the budgeting process.
+210	[5] GFOA: "Capitalization Thresholds for Capital Assets" — https://www.gfoa.org/materials/capitalization-thresholds-capital-assets — written capitalization policies setting the dollar threshold and service life for capital classification.
+211	[6] HFMA: "Hospital capital expenditures and aging facilities" — https://www.hfma.org/fast-finance/hospital-capital-expenditures-aging-facilities/ — Fitch data on capital expenditures rising to a median 123.4% of depreciation in FY24, the highest since 2013.
+
+## capital-planning
+212	Capital thresholds that trigger CON review vary enormously by state — e.g., ~$1.5M in Iowa versus $30M for general hospitals in New York (NCSL / NY DOH)
+213	Currently, 35 states and Washington, D.C. operate CON programs, with enormous variation among them.
+214	In New York, projects by general hospitals exceeding $30 million require a CON; in Iowa, projects over just $1.5 million do.
+215	Critics point to research suggesting hospital charges are about 5.5% lower five years after a state repeals CON, and that per-capita hospital expenditures run about 20.6% higher in CON states — arguing the laws protect incumbents and stifle competition.
+216	The result is an active reform landscape: in 2024, Georgia advanced reforms exempting certain single-specialty ASCs from review, and New York proposed raising its hospital CON threshold from $15 million to $30 million.
+217	CON Is the First Question, Not an Afterthought
+218	The most important is net present value (NPV), which measures the dollar profitability of a project by discounting its expected future cash flows back to today’s dollars and subtracting the initial investment.
+219	Certificate of Need (CON) laws require government approval before major health-facility investments; 35 states and DC operate CON programs, intended to restrain costs and coordinate planning.
+220	CON trigger thresholds vary enormously (e.g., ~$1.5M in Iowa vs. $30M for general hospitals in New York), and the laws are actively contested and being reformed (Georgia and New York changes in 2024).
+221	[1] NCSL: "Certificate of Need State Laws" — https://www.ncsl.org/health/certificate-of-need-state-laws — 35 states plus DC operate CON programs; purpose to restrain costs and coordinate planning; threshold variation including NY ($30M) and Iowa ($1.5M).
+222	[2] Becker’s ASC: "The certificate-of-need shakeup: 7 states updating policies" — https://www.beckersasc.com/new-asc-development/the-certificate-of-need-shakeup-7-states-updating-policies/ — 2024 reforms including Georgia ASC exemptions and New York’s proposed threshold increase from $15M to $30M.
+223	[3] Cicero Institute: "Ranking Certificate of Need Laws in All 50 States" (Dec 2024) — https://ciceroinstitute.org/wp-content/uploads/2024/12/50-State-CON-Rankings-Report-12-5-2024.pdf — evidence on CON cost effects (charges ~5.5% lower five years post-repeal; ~20.6% higher per-capita expenditures in CON states).
+224	[4] CliffsNotes / healthcare finance course material: "Financial Analysis of Healthcare Capital Investments" — https://www.cliffsnotes.com/study-notes/19719758 — NPV, IRR, payback period, and profitability index as capital-budgeting techniques.
+225	[5] Strata Decision Technology: "Capital Budgeting for Healthcare Organizations" — https://www.stratadecision.com/healthcare-and-hospital-capital-budget — ranking and scoring methods combining financial and strategic criteria; mission-driven needs with modest ROI.
+226	[6] PMC: "Hospital Investment Decisions and Prioritization of Clinical Programs" — https://pmc.ncbi.nlm.nih.gov/articles/PMC11965775/ — project scoring that incorporates both financial and non-financial (strategic, quality, compliance) factors.
+
+## debt-financing
+227	Because they are 501(c)(3) charitable organizations, they can issue tax-exempt (municipal) debt — bonds whose interest is exempt from federal (and often state) income tax for the investor.
+228	That tax exemption lets investors accept a lower interest rate, and nonprofit hospital borrowers save, on average, an estimated 2 percentage points on their borrowing compared to taxable bonds or bank financing.
+229	On a $300 million bond, two points is enormous, and those savings ultimately lower the cost of care.
+230	Key Concept: Nonprofit hospitals fund major investments primarily by issuing tax-exempt (municipal) bonds, saving roughly 2 percentage points versus taxable financing.
+231	Nonprofit hospitals save an estimated 2 percentage points on borrowing by issuing tax-exempt bonds versus taxable debt — savings that lower the cost of care (industry analyses)
+232	Moody’s, S&P, and Fitch collectively issued 95 hospital downgrades against 37 upgrades in 2024, reflecting ongoing expense pressure (Fierce Healthcare)
+233	After three years of declining volume, 2024 saw a large rebound, with healthcare bond issuance jumping more than 100% year over year as hospitals returned to the capital markets to fund delayed projects.
+234	The most important dividing line is investment grade.
+235	Bonds rated BBB- or higher by S&P and Fitch, or Baa3 or higher by Moody’s, are investment grade; anything below is "speculative" or "junk." This line matters enormously because many institutional investors are restricted to investment-grade securities, so a hospital that falls below it loses access to a huge pool of buyers.
+236	In 2024, the three agencies collectively issued 95 downgrades against just 37 upgrades — an improvement over 2023’s 116 downgrades and 33 upgrades, but still a lopsided picture.
+237	A debt service coverage ratio (DSCR) covenant requires the hospital to maintain enough cash flow to cover its principal and interest payments, with minimums often ranging from 1.10 to 1.25.
+238	A days cash on hand covenant requires the hospital to keep a minimum liquidity cushion, often in the range of 40 to 80 days.
+239	Maintain cash flow sufficient to cover debt payments — minimums often 1.10 to 1.25.
+240	Keep a minimum liquidity cushion — often 40 to 80 days of operating expenses.
+241	The financial ratios from Module 1 are not academic — they are literally the inputs rating agencies use and the thresholds covenants enforce.
+242	Hospitals fund large capital investments primarily by issuing bonds; nonprofit (501(c)(3)) hospitals can issue tax-exempt municipal bonds, saving roughly 2 percentage points versus taxable financing.
+243	Healthcare bond issuance rebounded sharply in 2024 (up more than 100% year over year), with proceeds going largely to renovation, expansion, and ambulatory (outpatient) growth.
+244	Investment grade (BBB-/Baa3 or higher) is the critical threshold; falling below it cuts off access to many institutional investors and sharply raises borrowing costs.
+245	Rating trends have been negative: agencies issued 95 downgrades versus 37 upgrades in 2024, driven by expenses outpacing revenue, and each downgrade raises future borrowing costs.
+246	Bond covenants impose ongoing requirements — commonly a debt service coverage ratio (often 1.10–1.25 minimum) and days cash on hand (often 40–80 days) — frequently consolidated via a master trust indenture and obligated group.
+247	[1] Health Affairs Forefront: "An Overlooked Hospital Performance Metric: Bond Ratings" — https://www.healthaffairs.org/content/forefront/overlooked-hospital-performance-metric-bond-ratings — nonprofit tax-exempt debt issuance, the three rating agencies, and ratings based on default likelihood, cost structure, demographics, and payer mix.
+248	[2] Fierce Healthcare: "Nonprofit hospitals' credit downgrades outpaced upgrades again in 2024" — https://www.fiercehealthcare.com/providers/nonprofit-hospitals-credit-downgrades-outpaced-upgrades-again-2024 — 95 downgrades vs. 37 upgrades in 2024 (116 vs. 33 in 2023); expense pressure driving downgrades.
+249	[3] Kaufman Hall: "2025 Healthcare Credit and Capital Markets Outlook" — https://www.kaufmanhall.com/insights/article/2025-healthcare-credit-and-capital-markets-outlook — 2024 healthcare bond market rebound (>100% YoY) and issuance directed to renovation, expansion, and ambulatory growth.
+250	[4] Wikipedia: "Bond credit rating" — https://en.wikipedia.org/wiki/Bond_credit_rating — investment-grade thresholds (BBB-/Baa3 or higher across S&P, Fitch, and Moody’s).
+251	[5] HFMA: "Robert Turner: Avoiding a bond covenant default takes aggressive action" — https://www.hfma.org/finance-and-business-strategy/robert-turner-avoiding-a-bond-covenant-default-takes-aggressive-action-from-a-health-system-borrower/ — covenant types, master trust indentures, obligated groups, and acting early to avoid default.
+252	The typical covenant ranges (DSCR often 1.10–1.25; days cash often 40–80) and the stricter covenants on bank-placed bonds come from Hall Render, "Managing Financial Covenants for Health Care Borrowers in a Pandemic" (2020) — https://hallrender.com/2020/05/05/managing-financial-covenants-for-health-care-borrowers-in-a-pandemic/
+253	[6] Boldt Healthcare Real Estate: "Hospital Credit Downgrades: How to Protect Capital Access" — https://www.boldthealthcarerealestate.com/blog/navigating-healthcare-credit-downgrades-and-its-impact-on-access-to-capital/ — how downgrades raise borrowing costs, widen spreads, and tighten terms and reserve requirements.
+
+## volume-to-value-financial-implications
+254	Inpatient primary knee replacements dropped 21.2% year-over-year as procedures shifted to outpatient settings — a volume-to-value migration of revenue (Strata Decision Technology)
+255	Hospitals can lose up to 3% of Medicare payments under the Hospital Readmissions Reduction Program — paying for the volume they fail to prevent (CMS)
+256	A health system CFO asked "what is the financial impact of reducing chronic-disease admissions by 25%?" faces a brutal calculation: the saved direct care costs are real, but so is the lost reimbursement, and the overhead that those admissions used to cover does not disappear.
+257	The published research is blunt about the consequence — because preventing a hospitalization leaves overhead costs uncovered, the loss of reimbursement revenue can actually mitigate a hospital’s incentive to reduce readmissions in the first place.
+258	Inpatient primary knee replacements fell 21.2% year over year as those cases moved to outpatient sites.
+259	Through 2024, hospitals posted 20 consecutive months of year-over-year revenue increases, with outpatient revenue up 8.0% — outpacing inpatient growth of 6.1% — and full-year median operating margins holding above 4.5% and reaching 6% by December.
+260	Clinically and ethically, this is unambiguously good — and under the Hospital Readmissions Reduction Program, avoiding readmissions also dodges penalties of up to 3% of Medicare payments.
+261	Hospitals are bracing for major revenue hits beginning in 2027 from provisions of the One Big Beautiful Bill Act (OBBBA), pushing many to cut expenses and rethink their revenue base now.
+262	Care is migrating as well as shrinking — inpatient knee replacements fell 21.2% year over year to outpatient settings — even amid strong overall revenue (20 straight months of growth, outpatient up 8.0%, margins reaching 6% in late 2024).
+263	The transition is uniquely hard because hospitals must undermine their current business model to build the future one without interruption, and external pressures like OBBBA revenue cuts beginning in 2027 are compressing the timeline.
+264	[1] RLDatix: "One foot in two canoes: why the shift to value-based care demands leadership at every level" — https://www.rldatix.com/en-nam/resources/one-foot-in-two-canoes-why-the-shift-to-value-based-care-demands-leadership-at-every-level/ — the two-canoes problem and the opposing incentives of fee-for-service and value-based care.
+265	[2] Health Data Management: "Two canoes, one canoeist: The accelerated transition to value-based care" — https://www.healthdatamanagement.com/articles/two-canoes-one-canoeist-the-accelerated-transition-to-value-based-care — the CFO’s difficulty modeling the financial impact of reducing admissions; expanded FFS codes as bridges between the canoes.
+266	[3] PMC: "The Financial Impact of an Avoided Readmission for Teaching and Safety-Net Hospitals Under Medicare’s Hospital Readmission Reduction Program" — https://pmc.ncbi.nlm.nih.gov/articles/PMC6656617/ — avoided readmissions leave overhead uncovered, mitigating incentives to reduce them.
+267	[4] CMS: "Hospital Readmissions Reduction Program" — https://www.cms.gov/medicare/quality/value-based-programs/hospital-readmissions — penalties of up to 3% of Medicare payments for excess readmissions.
+268	[5] Strata Decision Technology: "U.S.
+269	Hospitals See Financial Performance Stabilize Throughout 2024" — https://www.stratadecision.com/press-release/us-hospitals-see-financial-performance-stabilize-throughout-2024-according-new-strata — inpatient knee replacements -21.2%, outpatient revenue +8.0% (inpatient +6.1%), 20 months of revenue growth, margins reaching 6%.
+270	[6] HFMA: "Hospitals reached steadier ground financially as they moved into 2024" — https://www.hfma.org/cost-effectiveness-of-health/financial-sustainability/hospitals-reached-steadier-ground-financially-as-they-moved-into-2024/ — hospitals' 2023–24 financial recovery and the need for strategic revenue growth rather than cost avoidance alone (published February 2024, before the One Big Beautiful Bill Act of July 2025, whose Medicaid provisions phase in from 2027).
+
+## shared-savings-risk-capitation
+271	Arrangements with little downside risk are safe but offer modest upside; arrangements with full risk offer the largest rewards but can bankrupt a provider that miscalculates.
+272	This lesson walks the spectrum from the gentlest to the most aggressive forms of risk-bearing.
+273	The first step onto the risk continuum is upside risk, also called one-sided risk or shared savings.
+274	At the far end of the continuum sits capitation — the most complete transfer of financial risk to the provider.
+275	Global capitation is the most sweeping: a provider or group takes full financial responsibility for all of a population’s care — hospital, specialist, and ancillary services alike.
+276	[1] Yuvo Health: "What is upside and downside risk in value-based healthcare?" — https://www.yuvohealth.com/post/what-is-upside-and-downside-risk-in-value-based-healthcare — definitions of one-sided (upside) and two-sided risk and total-cost-of-care benchmarks.
+277	[2] TechTarget: "Understanding the Value-Based Reimbursement Model Landscape" — https://www.techtarget.com/revcyclemanagement/feature/Understanding-the-Value-Based-Reimbursement-Model-Landscape — the continuum from shared savings to capitation and growth into downside risk as a mature arrangement.
+278	[3] Respect Health: "Understanding Clinical Risk in Value Based Arrangements" — https://www.respecthealth.us/understanding-clinical-risk-in-value-based-arrangements/ — risk corridors and risk bands that cap shared savings and losses.
+279	[4] American College of Physicians: "Understanding Capitation" — https://www.acponline.org/about-acp/about-internal-medicine/career-paths/residency-career-counseling/resident-career-counseling-guidance-and-tips/understanding-capitation — PMPM capitation rates and risk pools withheld until year-end.
+280	[5] AHA: "Capitated and Global Budget Models" — https://www.aha.org/capitated-and-global-budget-models/capitated-and-global-budget-models — primary, specialty, and global capitation and full financial responsibility for population care.
+281	[6] Innovista Health: "Understanding Risk-Bearing Contracts in Value-Based Care" — https://innovista-health.com/risk-bearing-contracts-value-based-care/ — capitation as the highest degree of provider risk transfer, plus risk adjustment and stop-loss/reinsurance protections.
+
+## population-health-business-case
+282	A systematic review of 52 studies found a median return of 14.3 to 1 on public health interventions — yet such spending is often cut, because the payer rarely captures the return (Masters et al., J Epidemiol Community Health, 2017)
+283	Revenue opportunities for population health ROI can be 7 to 10 times greater in "keeping patients inside the system" than in accountable-payment shared-savings buckets (Healthcare Innovation)
+284	This is why hospital CEOs and CFOs are seeing a rising number of investment requests for social-determinant solutions — the shift to value-based care is evolving from treating disease toward community-based engagement that keeps people well in the first place.
+285	Analysts note that revenue opportunities to capture population-health ROI can be 7 to 10 times greater in the "keeping patients inside the system" bucket than in the "accountable payment" bucket — meaning where and how an organization gets paid dramatically changes whether a given investment pencils out.
+286	The honest conclusion is that population health is one of the most promising and most treacherous investments in health care.
+287	[1] Commonwealth Fund: "Making the Business Case for Social Needs Interventions — Update" — https://www.commonwealthfund.org/blog/2022/making-business-case-social-needs-interventions-update — SDOH investments reducing high-cost care use; ROI calculator and evidence guide for planning investments.
+288	[2] PMC: "Declines in Spending Despite Positive Returns on Investment: Understanding Public Health's Wrong Pocket Problem" — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6591259/ — the wrong pocket problem, shortages of political will and stakeholder-specific evidence over policy-relevant timelines.
+289	[3] Healthcare Innovation: "Achieving ROI from Population Health Investments: How Realistic is it?" — https://www.hcinnovationgroup.com/population-health-management/article/13028361/achieving-roi-from-population-health-investments-how-realistic-is-it — ROI depends on managed-care/capitation position; "keeping patients inside the system" ROI 7–10x the accountable-payment bucket.
+290	[4] BCA: "Maximizing ROI and Improving Patient Outcomes Through Population Health Management" — https://www.bcarev.com/maximizing-roi-and-improving-patient-outcomes-through-population-health-management-a-strategic-guide-for-financial-and-medical-leadership/ — metrics for assessing the ROI of population health programs.
+291	(The median 14.3:1 public-health ROI is from Masters et al., J Epidemiol Community Health 2017 — https://pmc.ncbi.nlm.nih.gov/articles/PMC5537512/)
+292	[5] NCBI Bookshelf: "Return on Investment — Investing in Interventions That Address Non-Medical, Health-Related Social Needs" — https://www.ncbi.nlm.nih.gov/books/NBK549446/ — evidence and measurement challenges for SDOH investment returns.
+293	[6] AJMC: "Understanding the Financial Return to Investments in the Social Determinants of Health" — https://www.ajmc.com/view/understanding-the-financial-return-to-investments-in-the-social-determinants-of-health — rising CEO/CFO investment requests as value-based care shifts toward community-based engagement.
+
+## board-financial-oversight
+294	The most important ongoing duty is monitoring financial performance — and here the duty of care has a sharp, practical edge.
+295	A board that accepts a reassuring slide saying "finances are fine" has not exercised oversight; one that reviews the statements, tracks the ratios from Module 1, and questions variances has.
+296	The Tools of Oversight: Committees, Audits, and Form 990
+297	The most important structure is the audit committee — and best practice, drawn from the principles of the Sarbanes-Oxley Act, holds that if a tax-exempt hospital lacks a separate audit committee, it should establish one composed of members completely independent from management who receive no consulting or advisory fees.
+298	The central oversight document for a nonprofit hospital is the IRS Form 990, the annual information return that publicly discloses the organization’s finances, governance, and compensation.
+299	Board review of the Form 990 before filing has long been a best practice — and the IRS itself has concluded that nonprofits with a board review process are more likely to be in compliance with tax laws.
+300	For hospitals specifically, Schedule H reports the Section 501(r) policies covered earlier: community health needs assessments, financial assistance, emergency care, and billing and collection practices.
+301	The 990 is where the board’s stewardship of the tax-exempt bargain becomes public and auditable.
+302	Key oversight tools include an independent audit committee (a Sarbanes-Oxley best practice), auditor independence, whistleblower protection, and board review of the IRS Form 990, where hospitals report Section 501(r) policies on Schedule H.
+303	[1] AHA Trustee Services: "Best Practice Guideline — Board Legal Fiduciary Duties" — https://trustees.aha.org/sites/default/files/trustees/board-legal-fiduciary-duties.pdf — the duties of care, loyalty, and obedience and the board’s accountability for the organization’s mission.
+304	[2] NCBI/PMC: "Hospital Board Infrastructure and Functions: The Role of Governance in Financial Performance" — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2672389/ — the six core financial responsibilities of the board and governance’s link to financial performance.
+305	[3] BoardEffect: "Fiduciary Responsibilities of a Nonprofit Board of Directors" — https://www.boardeffect.com/blog/fiduciary-responsibilities-nonprofit-board-directors/ — duty of care and the requirement to review actual financial statements rather than summaries.
+306	[4] von Briesen & Roper: "The Implications of Sarbanes-Oxley for the Nonprofit Sector" — https://www.vonbriesen.com/legal-news/1821/the-implications-of-sarbanes-oxley-for-the-nonprofit-sector — independent audit committees, auditor independence, whistleblower protection, and SOX best practices for tax-exempt hospitals.
+307	[5] Carr, Riggs & Ingram: "Nonprofit Board Review of Form 990" — https://www.criadv.com/insight/board-review-form-990/ — board review of Form 990 as fiduciary best practice and the IRS finding that review correlates with compliance.
+308	[6] IRS: "Section 501(r) reporting" — https://www.irs.gov/charities-non-profits/section-501r-reporting — hospital reporting of 501(r) policies on Form 990 Schedule H (community health needs assessment, financial assistance, billing/collections).
+
+## health-system-integration
+309	Nearly 70% of U.S. hospitals are affiliated with a health system, and the trend toward consolidation continues.
+310	This lesson examines the financial logic behind that transformation — the pursuit of "systemness" — and the uncomfortable gap between what consolidation promises and what the evidence shows it delivers.
+311	These are real potential advantages, and they explain why consolidation has been one of the most powerful forces reshaping hospital finance.
+312	A large and consistent body of evidence shows that consolidation reliably raises prices while rarely lowering costs or improving quality.
+313	The evidence shows consolidation reliably raises prices but rarely lowers costs or improves quality.
+314	69% of U.S. hospitals are now part of a larger health system, up from 56% in 2010 (KFF)
+315	One or two systems controlled the entire inpatient market in 47% of metropolitan areas in 2024; in 83% they controlled over 75% (KFF)
+316	Markets Dominated by 1–2 Systems
+317	Can raise prices 6%–65% in concentrated markets
+318	Physician-practice acquisition raises prices ~14% on average
+319	Horizontal hospital-to-hospital mergers in concentrated markets can raise hospital prices anywhere from 6% to 65%.
+320	One review found hospital charges increased with integration 93% of the time, in 13 of 14 studies measuring price changes.
+321	When hospitals acquire physician practices, prices for those physicians’ services rise about 14% on average — and patients sometimes find prices doubled or more simply because their practice was purchased by a hospital and can now bill at hospital rates.
+322	Cross-market mergers (combining hospitals in different geographic markets) raised prices by almost 13% over six years, with even larger increases when the acquired hospital had a bigger market share.
+323	The most common justification for consolidation — economies of scale lowering costs — is largely not borne out.
+324	Higher provider prices from consolidation raised insurance premiums and out-of-pocket costs, which come out of workers’ paychecks — contributing to an estimated reduction in U.S. worker wages of nearly $1 trillion from 2012 to 2022.
+325	The Federal Trade Commission (FTC) and Department of Justice have ramped up enforcement, and in 2023 jointly released modernized merger guidelines that expanded the analytical tools for evaluating health care transactions, with particular attention to already-concentrated hospital and physician-group markets.
+326	The FTC has blocked or deterred multiple hospital mergers, and in June 2024, Novant Health in North Carolina canceled its planned acquisition of two hospitals after the FTC argued the deal would create near-monopoly conditions.
+327	Consider a system that already operates the largest hospital in a metro area and seeks to acquire its main competitor.
+328	In practice, once it is the only hardware store in town, the incentive to pass along savings evaporates — it can simply charge more because shoppers have nowhere else to go.
+329	Systemness is neither salvation nor villainy; it is a powerful financial strategy whose benefits accrue unevenly, and whose price effects make it one of the most scrutinized and consequential forces in American health care.
+330	"Systemness" is the financial and operational benefit health systems seek through integration — economies of scale, payer leverage, capital access, pooled data, and standardized care; nearly 70% of U.S. hospitals are now system-affiliated.
+331	The evidence is consistent and inconvenient: consolidation rarely lowers costs or improves quality, and hospital charges rose with integration in 93% of studies measuring price changes.
+332	Horizontal mergers in concentrated markets can raise prices 6%–65%, and vertical acquisition of physician practices raises their service prices ~14% on average (sometimes doubling).
+333	The mechanism is market power, not efficiency — by 2024, one or two systems controlled the entire inpatient market in 47% of metro areas, letting dominant systems demand higher payer rates.
+334	Consolidation’s higher prices raised premiums and out-of-pocket costs, contributing to an estimated ~$1 trillion reduction in U.S. worker wages from 2012 to 2022.
+335	Regulators have responded: the FTC/DOJ issued modernized 2023 merger guidelines and increased enforcement, with deals like Novant Health’s 2024 acquisition canceled after FTC opposition.
+336	[1] KFF: "One or Two Health Systems Controlled the Entire Market for Inpatient Hospital Care in Nearly Half of Metropolitan Areas" — https://www.kff.org/health-costs/one-or-two-health-systems-controlled-the-entire-market-for-inpatient-hospital-care-in-nearly-half-of-metropolitan-areas/ — 47% of metros controlled by 1–2 systems in 2024 (83% over 75%); 69% of hospitals system-affiliated.
+337	[2] American College of Surgeons: "Improved Health Care Value Cannot Be Achieved by Hospital Mergers and Acquisitions Alone" (2024) — https://www.facs.org/media-center/press-releases/2024/improved-health-care-value-cannot-be-achieved-by-hospital-mergers-and-acquisitions-alone/ — mergers rarely improve quality or lower costs; charges rose with integration in 13 of 14 studies (93%).
+338	[3] Bipartisan Policy Center: "Health Care Provider Consolidation" — https://bipartisanpolicy.org/issue-brief/health-care-provider-consolidation/ — horizontal vs. vertical integration definitions; horizontal mergers raising prices 6%–65%; physician-practice acquisition raising prices ~14%.
+339	[4] Advisory Board: "Hospital mergers are leading to higher prices.
+340	Will regulators step in?" — https://www.advisory.com/daily-briefing/2024/04/29/hospital-mergers — cross-market mergers raising prices ~13% over six years (21.8% when the acquired hospital had larger share).
+341	[5] ScienceDirect: "Vertical integration and market consolidation in healthcare: Policy drivers and impact on physicians and patient care" — https://www.sciencedirect.com/science/article/pii/S104314892400037X — vertical integration’s anticompetitive price effects and reduced patient choice; ~$1 trillion wage reduction 2012–2022.
+342	[6] KFF Health News: "Biden’s FTC Has Blocked 4 Hospital Mergers" / FTC speeches — https://kffhealthnews.org/news/article/biden-ftc-block-hospital-mergers-antitrust/ — 2023 modernized merger guidelines, increased enforcement, and the 2024 Novant Health cancellation after FTC opposition.
+
+## financial-sustainability
+343	In 2025, hospital expenses increased by 7.5% — over twice the rate of growth in hospital prices over the same period.
+344	When the cost of providing care rises faster than the payment for it, margins compress, and for many hospitals, health systems, and medical groups, margin pressure in 2026 is intense, with the median hospital operating margin slipping below zero early in the year.
+345	Total hospital expenses grew 7.5% in 2025 — more than twice the rate of growth in hospital prices (AHA, Costs of Caring, March 2026)
+346	Hospital Expense Growth, 2025
+347	The One Big Beautiful Bill Act cuts an estimated $911 billion in federal Medicaid spending over 10 years, with ~$155B from rural areas (CBO and KFF estimates)
+348	The first force eroding sustainability is cost growth across the board.
+349	Recent data shows the squeeze in detail: workforce costs grew 5.6%, supply expenses 9.9%, and drug expenses 13.6% in 2025, according to the AHA’s Costs of Caring report — with supplies and drugs surging fastest.
+350	Labor, as the cost-accounting lessons established, remains the largest single expense, but the broad-based rise across supplies, pharmaceuticals, and services means hospitals cannot cost-cut their way out through any single lever.
+351	Total expenses rising 7.5% — more than twice the growth in hospital prices — captures the bind: the gap between the two lines is where margin disappears.
+352	A median hospital operating margin of −0.6% in January 2026 (Strata Decision Technology benchmarks) leaves almost no cushion against further cost shocks.
+353	In one nationwide survey of healthcare finance professionals, 66% cited government funding and Medicaid cuts as a leading concern — the single most pressing worry on the revenue side.
+354	The One Big Beautiful Bill Act (OBBBA) is projected to cut roughly $911 billion in federal Medicaid spending over ten years, with about $155 billion of that falling on rural areas, alongside the DSH cuts covered in the payer-mix lesson.
+355	Nearly half of rural hospitals already operate with negative margins, more than 100 rural hospitals have closed or converted in the last decade, and Commonwealth Fund modeling suggests Medicaid work requirements alone could cut safety-net and rural hospitals’ operating margins by roughly a quarter to a third in 2027.
+356	The first is operational excellence and disciplined cost control — but elevated from a finance-department task to a board-level strategic initiative, treating "operational rigor" and getting at the expense lines as a core competency rather than a one-time cost-cutting drive.
+357	Outpatient revenue has been growing far faster than inpatient — rising 8.0% versus 6.1% in 2024, per Strata Decision Technology — as care migrates to ambulatory settings and hospitals build outpatient, ambulatory surgery, and service-line capacity to capture it.
+358	The thin margins and ratios from Module 1 define how little cushion exists.
+359	The payer mix and reimbursement realities from Module 2 explain why revenue is under threat.
+360	The cost accounting from Module 3 is the toolkit for the expense discipline sustainability demands.
+361	The capital and debt strategy from Module 4 determines whether a hospital can fund its transformation.
+362	The value-based finance of Module 5 offers the most promising path to a durable model.
+363	Hospital expenses rose 7.5% in 2025 (over twice the growth in prices), with workforce (+5.6%), supply (+9.9%), and drug (+13.6%) costs all rising (AHA), squeezing already-thin margins.
+364	The revenue side is threatened by payer-mix shifts toward below-cost government payers and by federal policy: the OBBBA cuts an estimated $911 billion in federal Medicaid spending over 10 years (~$155B rural), and 66% of finance professionals cite government cuts as a leading concern.
+365	Rural hospitals are most at risk — nearly half operate with negative margins, 100+ have closed or converted in a decade, and Medicaid work requirements alone could cut safety-net and rural hospital margins by roughly a quarter to a third.
+366	[1] American Hospital Association: "Costs of Caring" report press release (11 March 2026) — https://www.aha.org/press-releases/2026-03-11-new-aha-report-hospitals-face-increased-challenges-and-financial-pressures-they-care-patients — 2025 total expenses +7.5% (more than twice price growth); workforce +5.6% (about 60% of expenses), supplies +9.9%, drugs +13.6%.
+367	[2] HFMA: "Hospital margins decline in 2026 as expenses outpace revenue" — https://www.hfma.org/operations-management/hospital-operating-margin-trends-2026/ — Strata Decision Technology benchmarks for early 2026: median operating margin −0.6% in January, drug (+7.6%) and supply (+7.8%) costs outpacing revenue, and boards prioritizing operational excellence.
+368	[3] Commonwealth Fund: "Federal Cuts to Medicaid Could End Medicaid Expansion and Affect Hospitals in Nearly Every State" (2025) — https://www.commonwealthfund.org/publications/issue-briefs/2025/may/federal-cuts-medicaid-could-end-medicaid-expansion-affect-hospitals — how federal Medicaid cuts would hit hospitals in nearly every state (published before enactment).
+369	The enacted-law estimates — ~$911 billion in federal Medicaid cuts over 10 years and ~$155 billion in rural areas — are CBO’s and KFF’s.
+370	[4] Commonwealth Fund: "The Impact of Proposed Federal Medicaid Work Requirements on Hospital Revenues and Financial Margins" (2025) — https://www.commonwealthfund.org/publications/issue-briefs/2025/sep/impact-medicaid-work-requirements-hospital-revenues-margins — projected 2027 operating-margin reductions of roughly a quarter to a third for safety-net and rural hospitals in expansion states.
+371	[5] FTI Consulting: "Healthcare Providers' Path from Crisis to Stability Amidst Potential Medicaid Cuts" — https://www.fticonsulting.com/insights/articles/healthcare-providers-path-crisis-stability-amidst-potential-medicaid-cuts — ~50% of rural hospitals with negative margins, 100+ closures/conversions in a decade, cost-reduction and state-directed-payment responses.
+372	[6] Becker’s Hospital Review: "Healthcare finance trends for 2026: A dynamic mix of opportunity and risk" — https://www.beckershospitalreview.com/finance/healthcare-finance-trends-for-2026-a-dynamic-mix-of-opportunity-and-risk/ — cost control as board-level strategy, outpatient revenue growth, and value-based enterprise models.
+373	The 66% figure is from Strata Decision Technology’s 2026 Healthcare Financial Outlook survey of finance leaders (April 2026); the 8.0% vs 6.1% outpatient/inpatient growth is Strata’s 2024 full-year data.

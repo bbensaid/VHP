@@ -1,0 +1,122 @@
+
+## welcome-htr-framework
+0	Why HTR Exists: A Room in Vermont, September 2024
+1	On September 18, 2024, the Green Mountain Care Board (GMCB) convened a public meeting at which Oliver Wyman presented a year-long, $1 million statewide hospital systems analysis commissioned under Act 167 of 2022.
+2	The engagement behind it had run more than 230 meetings across all of Vermont's Hospital Service Areas, with over 3,100 participants from more than 100 organizations.
+3	Nine of Vermont's fourteen hospitals were already reporting operating losses, and thirteen of fourteen would be in the red by 2028 if current trends continued.
+4	The cumulative five-year system deficit ranged from $700 million to $2.4 billion.
+5	The lowest-cost silver exchange premium had risen 108% between 2018 and 2024, while median household income grew 22% between 2018 and 2022.
+6	The working-age population that funds the commercial cross-subsidy keeping rural hospitals open was projected to fall 13% by 2040, as the over-65 share of the state climbed toward 30%.
+7	Not because Vermont is uniquely troubled, but because it is early: early in its demographic aging, early in its hospital financial fragility, and early in its willingness to mandate structural change in statute (Acts 167, 51 and 68) rather than wait for voluntary reform to work.
+8	The University of Vermont Medical Center, with roughly half of the state's hospital market, was charging commercial payers about 358% of Medicare rates, RAND's published figure for inpatient and outpatient services drawn from 2018 to 2020 claims.
+9	Statewide, Vermont hospitals charge commercial payers 250% to 300% of Medicare on average.
+10	Source: Oliver Wyman Act 167 analysis, presented to the GMCB September 18, 2024 (HTR book, Introduction)
+11	Vermont hospitals already losing money (2024)
+12	Source: Oliver Wyman Act 167 analysis (HTR book, Introduction)
+13	Projected in operating losses by 2028 absent structural change
+14	Lowest-cost silver exchange premium, 2018 to 2024 ($456 to $948/month)
+15	Source: Oliver Wyman Act 167 analysis (HTR book, Preface)
+16	Vermont's primary care access rate is roughly 91%, four points above the Agency of Human Services' 87% benchmark.
+17	Yet that aggregate conceals a 13-point gap between white (91%) and Hispanic (78%) Vermont adults, visible only when the data is stratified by race and ethnicity (Vermont Department of Health, Health Equity Data Report).
+18	Each chapter of the book applies this test to its own pillar, and Chapter 10 applies it in depth across all five.
+19	Its All-Payer ACO Model (2017 to 2025) relied on voluntary participation and, by the book's account, produced modest results.
+20	Acts 167 and 68 made participation in global budgets and reference-based pricing mandatory, so the reform no longer depends on any federal model: when Vermont withdrew from the CMS AHEAD Model in July 2026, the state framework stayed fully in force.
+21	Chapter 1 of the book develops the dependency logic in full; the Five Pillars, One Imperative course teaches it lesson by lesson.
+22	Five Pillars, One Imperative, Track 2: Policy, Establish the Mandate
+23	Five Pillars, One Imperative, Track 4: Economics, Put Incentives on a Visible System
+24	Track 2 (Policy) and Track 6 (Operations, Close the Execution Gap)
+25	Act 167, Act 68 and AHEAD pages; Vermont hospital dashboard (/dashboard/vermont/hospitals)
+26	HTR exists because Vermont's 2024 Act 167 findings showed a hospital system heading for structural failure, and Vermont is a preview of forces every state faces.
+27	An improving average can hide a widening gap: Vermont's 91% primary care access rate conceals a 13-point white–Hispanic gap.
+28	[1] Health Transformation Review, Transforming Healthcare (HTR book), Preface and Introduction — https://healthtransformationreview.org/book — Act 167 findings, RAND price figures, definition of transformation, five pillars and diagnostic questions, Equity Imperative, primary care access gap, the HTR ecosystem and reader profiles
+29	[2] Oliver Wyman, Act 167 Community Engagement: Executive Summary Report (revised October 21, 2024) — https://gmcboard.vermont.gov/sites/gmcb/files/documents/Act%20167%20Community%20Engagement_OW%20Exec%20Summary%20Report%20-%20revised%2010.21.2024.pdf — hospital losses, deficit range, engagement scale
+30	[3] Green Mountain Care Board, Hospital Sustainability (Act 167) — https://gmcboard.vermont.gov/hospitalsustainability — the Act 167 process and the September 2024 presentation
+31	[4] Act 167 of 2022, as enacted — https://legislature.vermont.gov/Documents/2022/Docs/ACTS/ACT167/ACT167%20As%20Enacted.pdf — the diagnostic mandate and its five goals
+32	[5] Act 68 of 2025, as enacted — https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT068/ACT068%20As%20Enacted.pdf — mandatory hospital global budgets and reference-based pricing
+33	[6] Centers for Medicare & Medicaid Services, AHEAD Model — https://www.cms.gov/priorities/innovation/innovation-models/ahead — the federal model Vermont signed in January 2025 and withdrew from in July 2026
+
+## start-here-reading-the-book
+34	From there you can open any section in the web reader, which lives at /read followed by the section's name: /read/preface, /read/introduction, and /read/chapter-01 through /read/chapter-16.
+35	[{"What": "Book home and chapter list", "Where": "/book"}, {"What": "Web reader, one section per page", "Where": "/read/preface, /read/introduction, /read/chapter-01 … /read/chapter-16"}, {"What": "Audio narration", "Where": "/book/listen (or Listen to this chapter in the reader sidebar)"}, {"What": "Full book as one file", "Where": "Download full book PDF, in the reader sidebar"}, {"What": "Your saved chapters", "Where": "/saved"}]
+36	In this chapter lists the chapter's sections, so you can jump straight to the one you need; chapters run long, and the contents list is the fastest way to find, say, the OneCare autopsy in Chapter 1.
+37	Open /read/chapter-01 and sign in.
+38	Open the first tool in Platform companion in a new tab, so the book and the tool sit side by side.
+39	Chapter 8, for example, points to Track 5 of Five Pillars, One Imperative and to the Behavioral Health Integration and Population Health Management courses.
+40	Chapter 7's Work This Chapter on the Platform table includes this task: track the capital committed against each pillar and find where funding runs ahead of dependency order.
+41	The one below takes a chapter from argument to practice in four moves, and it is the same routine whether you are a hospital executive reading Chapter 7 on financial modeling or a student reading Chapter 2 on legislative architecture.
+42	Run the first relevant row of Work This Chapter on the Platform, using your own state or organization where the tool allows it.
+43	Work the first row of Work This Chapter on the Platform with your own inputs.
+44	[1] Health Transformation Review, Transforming Healthcare (HTR book v42) — https://healthtransformationreview.org/book — Appendix F (the reader's guide to the platform), the closing sections of every chapter, Chapter 7's Work This Chapter on the Platform table, Chapter 8's In the Academy paragraph
+45	[2] HTR web reader — https://healthtransformationreview.org/read/chapter-01 — reader sidebar: In this chapter, notes, bookmark, Platform companion, Listen to this chapter, Download full book PDF
+46	[3] HTR audio narration — https://healthtransformationreview.org/book/listen — per-chapter narration
+47	[4] HTR Investment Tracker — https://healthtransformationreview.org/investment-tracker — Sequencing check panels (deal feed and your own portfolio)
+48	[5] HTR Research Lab — https://healthtransformationreview.org/research-lab — From the Book links on tool pages
+
+## start-here-first-research-lab-session
+49	The Research Lab is the platform's working environment: 35 interactive tools, grouped into benches that follow the book's structure.
+50	You set a readiness score from 0 to 100 for each of the five pillars.
+51	At 70 or above the gate is open; between 40 and 69 it is partial; below 40 it is closed.
+52	The first reproduces the profile the book opens with, OneCare Vermont in 2013.
+53	The third is the book's reading of Vermont in the fall of 2026, sourced to Acts 167, 51 and 68 and to the developments of July 2026, when the AHEAD agreement was withdrawn and the Medicaid hospital global budget was halted.
+54	[{"Scenario": "OneCare Vermont (2013)", "On paper": "47", "Delivered": "24.3", "Lost to sequencing": "22.7", "Binding constraint": "Technology"}, {"Scenario": "The same ambition, in order", "On paper": "72", "Delivered": "63.3", "Lost to sequencing": "8.7", "Binding constraint": "Technology"}, {"Scenario": "Vermont, Fall 2026", "On paper": "59", "Delivered": "42.9", "Lost to sequencing": "16.1", "Binding constraint": "Technology"}]
+55	In the OneCare scenario, Economics is scored at 85 but delivers about 26.5.
+56	In the OneCare scenario nearly half the paper value disappears; in the reordered scenario, where only Policy and Technology were raised, the loss falls from 22.7 points to 8.7.
+57	For Vermont in Fall 2026, that matches the book's own reading in Chapter 1, §1.14: the Policy gate is open on state authority, but Technology is only partly built and is still the bottleneck, with Economics staged behind it.
+58	In the Vermont scenario, Clinical is scored at 65 but delivers about 28, because the Economics pillar it depends on is itself held back by Technology.
+59	The book's Chapter 1 opens with OneCare Vermont, the all-payer ACO that launched with high economic ambition on a voluntary mandate and without integrated real-time data.
+60	Load the OneCare Vermont (2013) preset and the simulator reproduces that profile: Economics at 85, Policy at 25, Technology at 20, delivered readiness 24.3.
+61	The Economics, Clinical and Operations inputs are identical; only Policy (90) and Technology (80) move.
+62	Delivered readiness rises to 63.3.
+63	Its Sequencing check panel totals the disclosed value of the deals on the page for each pillar and checks each total against Vermont's Fall 2026 gate status, labelling a pillar Ahead of sequence when money is flowing into it behind a gate that is not yet open.
+64	When you are done, write down two things in your own notes: the binding constraint the simulator named, and the single change that recovered the most delivered readiness.
+65	Disagreements about the scores are often more revealing than the result: a team that cannot agree whether its data infrastructure is a 40 or a 70 has found the conversation it most needs to have.
+66	Open /htr-simulator and load Vermont, Fall 2026 as a starting point.
+67	Raise the binding-constraint pillar by 10 points and note how much Delivered rises.
+68	Reset, then raise a downstream pillar such as Clinical by the same 10 points and compare.
+69	The Research Lab holds 35 working tools on benches that follow the book's pillars, listed at /research-lab.
+70	A gate is open at 70 or above, partial from 40 to 69 and closed below 40, measured on the delivered strength of the upstream pillar.
+71	In the OneCare preset, raising only Policy and Technology lifts delivered readiness from 24.3 to 63.3 without touching the payment model.
+72	The binding constraint is the pillar whose improvement lifts delivered readiness most; in all three presets, including Vermont in Fall 2026, it is Technology.
+73	In the HTR Simulator, you raise Clinical by 10 points and Delivered barely moves; you raise Technology by 10 points and Delivered rises sharply.
+74	[1] Health Transformation Review, Transforming Healthcare (HTR book v42) — https://healthtransformationreview.org/book — Chapter 1 (§1.2 The OneCare Failure: A Sequencing Autopsy; §1.12.1 The Critical Path Is Non-Negotiable; §1.14 Vermont's Implementation Timeline) and Appendix F §F.5
+75	[2] HTR Simulator — https://healthtransformationreview.org/htr-simulator — five-pillar scoring, gate status, On paper vs Delivered, binding constraint, Equity Imperative; the three preset results quoted in this lesson
+76	[3] HTR Investment Tracker — https://healthtransformationreview.org/investment-tracker — Sequencing check (deal feed) and portfolio check (your initiatives)
+77	[4] Transformation Friction Index — https://healthtransformationreview.org/transformation-friction-index — friction scoring, trend, equity reported separately
+78	[5] HTR Research Lab hub — https://healthtransformationreview.org/research-lab — the 35 tools and their benches
+
+## start-here-ai-analyst
+79	This is the most important design choice for you as a reader: every answer comes with the evidence it was built from, so you can check it.
+80	The first time you open /chat you can pick a topic card or type your own question.
+81	"What would a hospital global budget under Vermont's Act 68 mean for a critical access hospital's commercial revenue, and which chapter of the book covers it?" returns an answer anchored in the right documents, with a pointer back into the book.
+82	This is often the most valuable thing it does: not answering the question itself, but routing you to the place where you can work it out properly.
+83	"For a 25-bed critical access hospital, which pillar should we fix first, and which Research Lab tool would show it?"
+84	Check that the claims you intend to rely on appear in the listed Sources, that the sources are current enough for the decision (a 2023 rule may have been replaced), and that numbers carry their year and their scope, national or state, Medicare or commercial.
+85	[1] Health Transformation Review, Transforming Healthcare (HTR book v42) — https://healthtransformationreview.org/book — Appendix F §F.7 (the AI Analyst as a research assistant embedded throughout the platform)
+86	[2] HTR AI Analyst — https://healthtransformationreview.org/chat — role cards, Sources citations, Try it in the HTR Lab links, Save (Download transcript) and Clear controls
+87	[3] HTR role setup — https://healthtransformationreview.org/welcome — the eight roles offered
+88	[4] HTR plans — https://healthtransformationreview.org/pricing — the AI Analyst requires a Subscriber plan or higher
+
+## start-here-your-learning-path
+89	HTR has more than any one reader needs: a sixteen-chapter book, 35 Research Lab tools and eighteen Academy courses.
+90	Take the first to learn how the pieces fit, and the second to learn the piece you are responsible for.
+91	Start with the first course listed for your role, then the second.
+92	Most specialist courses are intermediate level and assume you know the basic vocabulary; the foundational courses, Medicaid 101, Medicare Fundamentals, and Health Equity & SDOH, assume nothing.
+93	[{"Role": "Policy professional", "First": "Medicaid 101 (10 h, foundational)", "Then": "Medicare Fundamentals (8 h), then Medicaid Managed Care Operations (5.5 h)"}, {"Role": "Executive or administrator", "First": "Value-Based Care (11 h)", "Then": "Hospital Finance (6 h), then Transformation Leadership (5 h, advanced)"}, {"Role": "Clinician leader", "First": "Population Health Management (9 h)", "Then": "Clinical Quality Measurement (5.5 h), then Behavioral Health Integration (8 h)"}, {"Role": "Health technology professional", "First": "Healthcare Interoperability & Data Exchange (9 h)", "Then": "AI & Machine Learning in Healthcare (12 h)"}, {"Role": "Operations or revenue cycle", "First": "Revenue Cycle Management (6.5 h)", "Then": "Hospital Finance (6 h)"}, {"Role": "Equity or community health", "First": "Health Equity & SDOH (10 h, foundational)", "Then": "Health Equity Analytics (5 h)"}, {"Role": "Vermont practitioner", "First": "HIE & Health Reform (8 h)", "Then": "Medicaid 101 (10 h), with the Vermont Act 167 and Vermont Medicaid pages"}, {"Role": "Student or new to the field", "First": "Five Pillars, One Imperative in order (10 h)", "Then": "Personalized Learning to choose your specialty"}]
+94	And keep the Glossary at /academy/glossary open in a tab while you read; the field's vocabulary is the first barrier for newcomers, and the book's Key Concepts lists draw on the same terms.
+95	Start Five Pillars, One Imperative and the first course for your role.
+96	Use a real organization if you have the data, or the fictional Green Mountain Community Hospital, a 25-bed critical access hospital, if you do not.
+97	Stage 1 asks whether a binding mandate keeps the highest-revenue actors inside the model.
+98	Stage 2 asks whether you can see your population in time to act.
+99	Stage 3 asks whether the hospital is solvent under a fixed revenue envelope, and which assumptions break it.
+100	Stage 4 asks whether the redesigned care model pays for itself under that budget.
+101	Stage 5 asks whether operational capacity is keeping pace with the statutory timeline.
+102	If you only have time for one stage, do Stage 2, the Technology stage.
+103	[{"Stage": "1 Policy", "Tools": "Policy Simulator (/research-lab/policy-quality?tab=policy)"}, {"Stage": "2 Technology", "Tools": "Risk Stratification Engine (/research-lab/interoperability?tab=risk), FHIR Interoperability Lab (?tab=fhir)"}, {"Stage": "3 Economics", "Tools": "Global Budget Transition Modeler (/research-lab/payment-models?tab=gb-transition), Hospital Financial Stress Test (/research-lab/policy-quality?tab=scorecard)"}, {"Stage": "4 Clinical", "Tools": "Risk Stratification Methodology (/research-lab/vbc-clinical-quality?tab=risk), VBC Quality Measures (?tab=quality)"}, {"Stage": "Equity", "Tools": "Health Equity Studio (/research-lab/population-equity?tab=equity)"}, {"Stage": "5 Operations", "Tools": "Transformation Scorecard (/research-lab/knowledge-workspace?tab=scorecard), Workforce Modeler (?tab=workforce)"}]
+104	You now have the full orientation: the framework and its sequence from Lesson 1, the book and its platform links from Lesson 2, the dependency engine in your own hands from Lesson 3, the AI Analyst from Lesson 4, and a path from this lesson.
+105	The next step is the first track of Five Pillars, One Imperative, Foundations: The Framework, which teaches in depth what Lesson 1 introduced.
+106	It is to feel the dependency logic of Chapter 1 in your own hands, where a weak upstream pillar makes every downstream model unreliable.
+107	[1] Health Transformation Review, Transforming Healthcare (HTR book v42) — https://healthtransformationreview.org/book — Appendix F §F.4 and §F.8 (the Academy and reader profiles) and Appendix H (the HTR Lab Workbook, stages, questions and capstone)
+108	[2] HTR Academy course catalogue — https://healthtransformationreview.org/academy/courses — published courses, levels and estimated hours
+109	[3] Five Pillars, One Imperative — https://healthtransformationreview.org/academy/tracks/five-pillars-one-imperative — the book's companion course
+110	[4] Personalized Learning — https://healthtransformationreview.org/academy/personalized-learning — role- and time-based learning plans
+111	[5] HTR Research Lab — https://healthtransformationreview.org/research-lab — the Workbook tools listed above

@@ -1,0 +1,180 @@
+
+## tl-why-change-management-matters
+0	PMI, Pulse of the Profession 2013 — money put at risk by poor project performance
+1	At risk per $1B spent on projects
+2	PMI, Pulse of the Profession 2013 — the gap between high-performing organizations and low performers
+3	Risk per $1B spent, high- vs. low-performers
+4	PMI, Pulse of the Profession 2017 — organizations whose enterprise PMO is aligned to strategy
+5	PMI, Pulse of the Profession 2020 — organizations that undervalue project management as a strategic competency
+6	Healthcare transformation research and practice consistently find the second failure mode is more common than the first.
+7	The United Kingdom's National Programme for IT (NPfIT) is one of the most thoroughly studied examples of a pure execution failure in a health system context.
+8	Launched in the early 2000s to build a single national electronic health record and supporting IT infrastructure for the National Health Service, NPfIT was dismantled in 2011; in 2013 Parliament's Public Accounts Committee put its estimated cost at £9.8 billion and warned the final bill was likely to be higher.
+9	The project/program/portfolio hierarchy, using the VA's 1990s restructuring and the NHS's NPfIT as opposite case studies.
+10	PMI's 2020 Pulse of the Profession found organizations that undervalue project management as a strategic competency report an average of 67% more of their projects failing outright; its 2017 edition separately found organizations with a strategy-aligned enterprise PMO report 38% more projects meeting their original goals.
+11	Organizations that undervalue project management report 67% more projects failing outright
+12	[1] PMI, Pulse of the Profession research (multiple years) — https://www.pmi.org/learning/library/2022/07/01/21/01/en-2013-pulse-high-cost-low-performance-13511 — 2013 edition: $135M at risk per $1B; $20M vs $280M.
+13	The 38% (strategy-aligned EPMO) figure is from the 2017 edition, "Success Rates Rise"; the 67% figure is from the 2020 edition, "Ahead of the Curve"
+14	[2] National Audit Office / Parliament Public Accounts Committee, "The dismantled National Programme for IT in the NHS" — https://publications.parliament.uk/pa/cm201314/cmselect/cmpubacc/294/294.pdf — NPfIT governance failure findings and cost
+15	[3] Panorama Consulting, "Reasons Behind The NHS IT System & Project Failure Case Study" — https://www.panorama-consulting.com/nhs-it-system-failure/ — NPfIT cost and governance analysis
+16	[4] Health Transformation Review, Transforming American Healthcare, Chapter 12 §12.4 ("The Change Management Science Behind Healthcare Transformation") — internal manuscript, book's own framing of the execution-gap argument
+
+## tl-kotters-eight-steps
+17	John Kotter published his eight-step change model in "Leading Change" (Harvard Business School Press, 1996) after studying more than 100 corporate transformation efforts and finding a consistent pattern in why most of them fell short.
+18	Kotter's Eight Steps: (1) create urgency, (2) form a guiding coalition, (3) develop a vision, (4) communicate the vision, (5) remove obstacles, (6) create short-term wins, (7) sustain acceleration, (8) institute the change in culture and systems.
+19	Steps 1–4: What Changes Under a Mandatory Deadline
+20	Step 1, create urgency, is not a persuasion exercise when a legislature has already set a statutory deadline — the urgency exists whether or not leadership manufactures it.
+21	Step 2, form a guiding coalition, is where the most consequential healthcare-specific risk concentrates.
+22	Step 3, develop a vision, has to be specific enough to guide real decisions: an aspiration like "high-quality, affordable, equitable care for everyone" cannot be operationalized, while a specific target — a named percentage of patients in a coordinated-care model, a specific quality-measure benchmark, a specific network design — can be.
+23	Step 4, communicate the vision, has to reach several genuinely distinct audiences — clinical staff, administrators, the community, legislators, payers — each of whom needs the message calibrated to what they actually decide.
+24	The study found clear evidence of Steps 1 through 7 in the clinic's actual implementation process — urgency was established, a coalition formed, a vision developed and communicated, obstacles removed, and short-term wins produced and sustained.
+25	Step 8, institutionalizing the change in the clinic's permanent culture and systems, was the one area the researchers identified as still needing work at the time of publication — a finding that previews this lesson's later point about which step healthcare change efforts most often fail to complete.
+26	Steps 5–8: Where Reform Efforts Actually Break
+27	Step 5, remove obstacles, means clearing the barriers within the coalition's actual control — administrative complexity like prior-authorization requirements or certificate-of-need processes, organizational silos between departments that never share data, and contracting structures that still financially reward volume even after a value-based strategy has been announced on paper.
+28	Step 6, create short-term wins, requires results that are genuine, visible, and clearly attributable to the transformation effort — not cherry-picked metrics or coincidental improvements that would have happened anyway.
+29	Step 7, sustain acceleration, is specifically about surviving the multi-year span most healthcare reforms require, across multiple budget cycles, at least one election cycle, and the inevitable setbacks that occur along the way.
+30	A prospective, longitudinal quality-improvement study applied Kotter's eight-step model to hand-hygiene compliance in an intensive care unit over 41 months and published the results.
+31	Compliance rose from 35.71% at baseline to 87.75% by the end of the study period — an increase of roughly 146%.
+32	A 41-Month ICU Hand-Hygiene Improvement Study
+33	The detour sign, the barriers, and the construction crew are all Steps 1 through 7 — visible, attention-getting, and clearly temporary.
+34	Kotter's Step 8 — instituting change in organizational culture and systems
+35	Step 8 is the step with no natural finish line to celebrate.
+36	Steps 1 through 7 each have a visible event attached — a launch, an early win, a period of acceleration.
+37	Both the Kentucky FQHC study and the general pattern in healthcare change-management research point to this as the step most often left incomplete, which is why Lesson 6 of this course returns to it directly under the heading of benefits realization and sustainment.
+38	Kotter's eight-step model — urgency, coalition, vision, communication, obstacle removal, short-term wins, sustained acceleration, institutionalization — was developed from more than 100 corporate cases and has since been applied in independently published healthcare studies (a case study and a quality-improvement study, not controlled trials).
+39	Under a mandatory reform, Step 1 (urgency) already exists by statute; the task shifts to presenting it credibly rather than manufacturing it.
+40	Step 2 (coalition) carries the highest healthcare-specific risk: a coalition without real clinical leadership will not produce implementation, regardless of legal mandate.
+41	A published Kentucky FQHC case study found evidence of Steps 1–7 in a real preventive-care transformation, with Step 8 identified as the remaining gap.
+42	A 41-month ICU study found Kotter's model raised hand-hygiene compliance from 35.71% to 87.75%, evidence specifically for the model's ability to sustain change, not just launch it.
+43	Step 8, institutionalization, is the step most healthcare change efforts skip, because unlike the other seven it has no visible launch event to mark its completion.
+44	A durable, multi-year compliance gain — rather than a short-lived spike right after training — is exactly what Step 8 is meant to produce: the new behavior becoming the sustained default rather than a temporary intervention effect.
+45	Step 8: institute the change in culture and systems
+46	A 41-month ICU quality-improvement study found Kotter's model raised hand-hygiene compliance from 35.71% to 87.75%.
+47	(1996), Leading Change, Harvard Business School Press — the original eight-step framework
+48	[2] "A Change-Management Approach to Closing Care Gaps in a Federally Qualified Health Center: A Rural Kentucky Case Study" — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6716404/ — Kotter's model applied to a real FQHC preventive-care initiative
+49	[3] "Kotter's 8-step change model to improve hand hygiene compliance in intensive care unit: A 41-month prospective longitudinal quality improvement study" — https://pubmed.ncbi.nlm.nih.gov/39561482/ — the ICU compliance results cited above
+50	[4] Health Transformation Review, Transforming American Healthcare, Chapter 12 §12.4.1 ("Kotter's Framework Applied to Healthcare Transformation") — internal manuscript, the book's own Vermont-specific application of the eight steps
+
+## tl-building-the-pmo
+51	PMI, Pulse of the Profession 2018 — about $1M every 20 seconds; the 2020 edition put average waste at 11.4% of project investment
+52	PMI's PMBOK Guide (sixth edition, 2017) defines ten project management knowledge areas — integration, scope, schedule, cost, quality, resource, communications, risk, procurement, and stakeholder management — as the complete set a mature PMO has to address.
+53	The 2025 eighth edition reorganizes the same ground into principles and performance domains, but the ten areas remain the clearest checklist of what a PMO has to run.
+54	By the mid-1990s, the U.S.
+55	Kenneth Kizer, a physician trained in emergency medicine and public health, was appointed the VA's Under Secretary for Health — head of the Veterans Health Administration — in 1994 specifically to modernize the system.
+56	In 1995 he launched a restructuring plan that decentralized the VA's national operations into 22 geographically defined Veterans Integrated Service Networks, known as VISNs, and drove the reorganization through 1999.
+57	Rather than managing the whole VA system as one centralized bureaucracy, Kizer pushed real operational accountability down to the 22 regional networks while holding each one to consistent, measurable standards from the center.
+58	Published assessments of the transformation — including a 2009 Annual Review of Public Health review co-authored by Kizer himself — found the restructuring produced dramatically improved quality, service, and operational efficiency, to the point that VA care quality later came to be regarded as among the best in the American health system and the transformation itself is frequently cited as a model for large-scale health-system reform.
+59	Kenneth Kizer's VA Restructuring, 1995–1999
+60	NPfIT, launched in the early 2000s, retained centralized decision-making authority at the national level while leaving the NHS trusts and local organizations responsible for actually implementing the systems those central decisions had specified — the opposite structural choice from the VA's decentralized-with-accountability model.
+61	It was dismantled in 2011; in 2013 Parliament's Public Accounts Committee put its estimated cost at £9.8 billion and warned the final bill was likely to be higher.
+62	Decentralized operational authority to 22 regional networks
+63	Reorganization phased over roughly four years (1995–1999)
+64	Lessons still not systematically applied years later (NAO, 2020)
+65	Dismantled in 2011; estimated cost £9.8B and rising (Public Accounts Committee, 2013)
+66	The first and highest-value step, usable by an organization of any size, is a portfolio inventory: listing every statute, grant, model agreement, and initiative touching the transformation, and assigning each one a pillar and a named owner.
+67	PMI research finds organizations whose enterprise PMO is aligned to strategy report 38% more projects meeting their original goals (Pulse of the Profession, 2017).
+68	The VA's 1995–99 VISN restructuring under Kenneth Kizer decentralized operational authority to 22 regional networks while holding them to consistent central standards — and is widely credited with producing durable quality gains.
+69	The NHS's National Programme for IT made the opposite structural choice — centralizing decision-making while leaving local organizations accountable for implementation — and collapsed at an estimated cost of £9.8 billion (Public Accounts Committee, 2013).
+70	The VA pushed real operational authority down to 22 regional networks while maintaining consistent central standards and accountability.
+71	What is the key structural difference between the VA's 1995–99 VISN restructuring (widely regarded as successful) and the NHS's National Programme for IT (widely regarded as a failure)?
+72	[1] PMI, Pulse of the Profession research — https://www.pmi.org/learning/library/2022/07/01/21/01/en-2013-pulse-high-cost-low-performance-13511 — 2013 edition (cost of low performance).
+73	The $2T/year waste figure is from the 2018 edition, 11.4% average waste from the 2020 edition ("Ahead of the Curve"), and the 38% strategy-aligned-EPMO figure from the 2017 edition ("Success Rates Rise")
+74	[2] "Extreme Makeover: Transformation of the Veterans Health Care System" (Annual Review of Public Health) — https://www.annualreviews.org/content/journals/10.1146/annurev.publhealth.29.020907.090940 — VA VISN restructuring under Kenneth Kizer
+75	[3] "The Revitalization of the Veterans Health Administration" — https://www.businessofgovernment.org/sites/default/files/TransformingVHA.pdf — Kizer's 1995 "Vision for Change" restructuring plan
+76	[4] National Audit Office / Parliament Public Accounts Committee, "The dismantled National Programme for IT in the NHS" — https://publications.parliament.uk/pa/cm201314/cmselect/cmpubacc/294/294.pdf — NPfIT governance failure and cost findings
+77	[5] Health Transformation Review, Transforming American Healthcare, Chapter 15 §15.2–15.6 — internal manuscript, the book's own PMI-grounded portfolio governance design for Vermont
+
+## tl-running-the-sequencing-test
+78	This one is the first thing that office should do in its first month: build the register and run the sequencing test against it.
+79	Vermont has never published such a definition, so the book's Chapter 15 assembled one by reading Act 68, the AHEAD State Agreement, the Rural Health Transformation Program application, and the AHS transformation reports for every initiative carrying a named owner and a dated obligation.
+80	Vermont withdrew from the AHEAD State Agreement in July 2026, which turned one component from a live program into a closeout obligation, and hospital transformation plans moved from submission to implementation after final plans were due in March 2026.
+81	The definition of an open gate comes from Chapter 1: open means the enabling work is finished, not that a milestone was declared.
+82	Two qualifications come from Chapter 1 and keep the test from becoming a blunt instrument.
+83	Worked Example: Vermont, Fall 2026
+84	Load the book's nineteen components with their Fall 2026 statuses into the platform's Portfolio Sequencing Test and use the same gate profile the HTR Simulator uses for Vermont: the Policy gate open on the strength of Acts 167, 51, and 68, and Technology only partly delivered.
+85	The AHS-GMCB analytics vendor, which the book records as in procurement with a January 2027 operational target, is not yet running — and AHS reported in March 2026 that an analytics contract for regional planning was still under negotiation.
+86	Two Economics components — RBP implementation and global-budget design and implementation — are in design, which is exactly what Chapter 1 says they should be doing while the Technology gate is closed.
+87	Source: book Chapter 15, Figure 15.3 (HTR inventory, early 2026)
+88	Source: Portfolio Sequencing Test, Vermont Fall 2026 preset
+89	Vermont hospital fiscal years begin October 1 — Source: VTDigger, Aug 2025
+90	FY2028 hospital budgets take effect
+91	Sorted by statutory date, the AI-governance framework (FY2028 adoption) and the PMO (Q2 2027) look like later problems, and the analytics vendor looks like one deadline among many.
+92	The clearest public record of what happens without that authority comes from two health-insurance marketplace launches in 2013, each investigated afterward in detail.
+93	The federal Office of Inspector General's case study of HealthCare.gov found that the most critical misstep was the absence of clear leadership, which delayed decisions, and that there was no entity serving formally as systems integrator to coordinate the separately contracted pieces of the build.
+94	The HHS Office of Inspector General's February 2016 case study (OEI-06-14-00350) found that the "absence of clear leadership" delayed decisionmaking, and that no entity was formally serving as systems integrator to coordinate key functions built by different contractors.
+95	After the failed October 2013 launch, CMS hired QSSI as technical systems integrator to coordinate technical tasks and resources, and the OIG reports that CMS recovered the website for high consumer use within two months — once one party owned the integration.
+96	HealthCare.gov (federal marketplace, 2013)
+97	An independent review by First Data, commissioned by Governor John Kitzhaber and based on 67 interviews and more than 3,200 documents, found that Oracle had been hired on a time-and-materials basis, which contributed to a lack of scope control, delayed requirements, and unrealistic delivery expectations.
+98	On April 25, 2014, Cover Oregon's board voted to abandon its own enrollment site and move to HealthCare.gov.
+99	Cover Oregon (state marketplace, 2013–2014)
+100	Vermont's own March 2026 Act 68 report lists contracted transformation support, a new hospital technical-assistance vendor, and an analytics contract under negotiation — sensible ways to add capacity.
+101	Most critical was the absence of clear leadership, which caused delays in decisionmaking. — HHS Office of Inspector General, HealthCare.gov case study, 2016
+102	Chapter 15's risk register scores each risk as probability times impact.
+103	Two risks tie for the top score of 20: the analytics vendor not being operational by January 2027 (R-01), and portfolio-management infrastructure not being established before the 2027 deadlines (R-10).
+104	Social-risk adjustment not being adopted before the FY2028 budgets (R-08) scores 12 — a medium probability times a high impact.
+105	Treating it as a FY2028 problem because that is when it is due is the scheduling error that leaves equity work perpetually late.
+106	Expect the first run to be uncomfortable.
+107	Only implementation waits for a gate; design work and care-model work that produces value on its own should run now (book Chapter 1).
+108	In Vermont, Fall 2026, the test puts schedule pressure on the four unfinished Technology components and flags the AHS PMO itself as late by dependency order.
+109	A moderate risk score is not a licence to wait: social-risk adjustment scores 12 but has no upstream blocker and should already be running.
+110	In the Vermont, Fall 2026 run of the sequencing test, the statewide AI-governance framework has a FY2028 adoption target and has not started.
+111	[1] HHS Office of Inspector General, "HealthCare.gov: Case Study of CMS Management of the Federal Marketplace," OEI-06-14-00350, February 2016 — https://oig.hhs.gov/reports/all/2016/healthcaregov-case-study-of-cms-management-of-the-federal-marketplace — absence of clear leadership; no formal systems integrator; QSSI hired; recovery within 2 months.
+112	[2] PCWorld, "Reforms promised, officials removed following audit of troubled Obamacare site built by Oracle," March 21, 2014 — https://www.pcworld.com/article/2110880/reforms-promised-officials-removed-following-audit-of-troubled-obamacare-site-built-by-oracle.html — First Data review: commissioned by Gov.
+113	Kitzhaber, 67 interviews, 3,200+ documents, time-and-materials contract, the systems-integrator quote.
+114	[3] Commonwealth Fund, "Oregon Votes to Switch Enrollment to Federal Health Insurance Exchange," April 2014 — https://www.commonwealthfund.org/publications/newsletter-article/oregon-votes-switch-enrollment-federal-health-insurance-exchange — the board vote to move to HealthCare.gov.
+115	[4] Health Transformation Review, Transforming American Healthcare, Chapter 15 (Figures 15.3, 15.6 and §15.7) and Chapter 1 (§1.11.2, Figure 1.8) — /read/chapter-15 — the 19-component register, risk scores, the sequencing test, Economics-as-design, and Clinical work in parallel.
+116	[5] Vermont Agency of Human Services, Act 68 Health Care System Transformation Report, March 2026 — https://healthcarereform.vermont.gov/sites/hcr/files/documents/Mar%202026_Act%2068%20HC%20System%20Transformation%20Report%20from%20AHS.pdf — analytics contract for regional planning under negotiation.
+117	[6] VTDigger, "Amid health insurance affordability crisis, most Vermont hospitals seek moderate budget changes at annual hearings," August 14, 2025 — https://vtdigger.org/2025/08/14/amid-health-insurance-affordability-crisis-most-vermont-hospitals-seek-moderate-budget-changes-at-annual-hearings/ — "The fiscal year for hospitals in the state begins Oct 1."
+118	[7] Project Management Institute, The Standard for Portfolio Management, 4th ed.
+119	(2017) — https://www.pmi.org/pmbok-guide-standards/foundational/standard-for-portfolio-management — portfolio definition as the foundational portfolio-management act.
+
+## tl-stakeholder-board-management
+120	Maryland's Health Services Cost Review Commission, an independent state agency, has held hospital rate-setting authority since a 1971 state statute, expanded to private payers in 1974 and to Medicare and Medicaid under a 1977 federal waiver.
+121	In 2014, working with CMS and the CMS Innovation Center, the state converted all acute-care hospitals to global budgets under the Maryland All-Payer Model — fixing each hospital's total annual revenue in advance rather than paying by volume of services delivered.
+122	A 2022 qualitative study in JAMA Health Forum, based on interviews with 20 Maryland health care leaders, quotes one state regulator describing the global budget conversion as "a monumental change, a sea change, in the way that hospitals thought about raising revenue." The leaders interviewed identified a specific set of governance themes as necessary to manage that shift: setting achievable expectations rather than overpromising immediate results, protecting hospital autonomy rather than dictating operational decisions from the regulator, maintaining close and continuous communication between the commission and hospital leadership, using actionable data that hospitals could act on rather than only report, carefully calibrating each hospital's budget rather than applying a single formula uniformly, and building a shared commitment to the change across the state's hospital sector rather than treating compliance as adversarial.
+123	In 2019, Maryland and CMS extended the model into the Total Cost of Care Model, adding incentives for hospitals to help manage spending on services delivered by other, non-hospital providers — a sign the original governance approach had built enough durability to support expansion rather than retrenchment.
+124	Oregon took a structurally different governance approach for its Medicaid Coordinated Care Organizations, launched under a 2012 state reform.
+125	Blue Cross Blue Shield of Massachusetts took a third approach when it launched the Alternative Quality Contract in January 2009 — a global-budget-based commercial payment model combining a fixed per-patient payment, adjusted annually for health status and inflation, with substantial performance incentives tied to nationally accepted quality, effectiveness, and patient-experience measures.
+126	A Harvard Medical School study published in 2019 found the AQC slowed the growth rate of medical spending by up to 12% while improving patient care over eight years of operation, and the contract now covers more than 80% of the physicians and hospitals in the BCBS Massachusetts network.
+127	The book's own account of Vermont's transformation coalition identifies exactly the gap this points to: Vermont's guiding coalition of AHS leadership, the state regulator, hospital CEOs, and the legislature's health reform oversight committee is missing systematic clinical leadership integration — the same gap Kotter's Step 2 identifies as fatal if left unaddressed.
+128	Not a consultation role — a seat with actual influence over medical staff, matching what Kotter's Step 2 requires.
+129	Vermont's own Chapter 12 argues the legislature should require a consolidated transformation dashboard reported at every legislative cycle — visible, regular reporting is itself a stakeholder-management tool.
+130	A Maryland state regulator described the 2014 global budget conversion as "a monumental change, a sea change," and the health care leaders interviewed named achievable expectations, protected autonomy, close communication, actionable data, calibrated budgets, and shared commitment as the governance themes that managed it.
+131	[1] "Health Care Leaders' Perspectives on the Maryland All-Payer Model" (Kilaru et al., JAMA Health Forum, 2022) — https://pmc.ncbi.nlm.nih.gov/articles/PMC8903109/ — the "sea change" quote and governance themes
+132	[2] Commonwealth Fund, "Hospital Global Budgeting: Lessons from Maryland and Selected Nations" (2024) — https://www.commonwealthfund.org/publications/fund-reports/2024/jun/hospital-global-budgeting-lessons-maryland-selected-nations — Maryland model history and 2019 TCOC extension
+133	[3] Kaiser Family Foundation, "Coordinated Care Organizations: Frequently Asked Questions" — https://www.kff.org/wp-content/uploads/sites/2/2012/05/cco-faq.pdf — Oregon CCO governance structure
+134	[4] Health Affairs, "Private-Payer Innovation In Massachusetts: The 'Alternative Quality Contract'" (Chernew et al., 2011) — https://healthaffairs.org/doi/full/10.1377/hlthaff.2010.0980 — AQC design and co-development process
+135	[5] BCBS Massachusetts newsroom, "New Harvard Medical School Study Finds...
+136	Alternative Quality Contract Slowed Spending, Improved Care Over 8 Years" (July 2019) — https://newsroom.bluecrossma.com/2019-07-17-New-Harvard-Medical-School-Study-Finds-Blue-Cross-Blue-Shield-of-Massachusetts-Alternative-Quality-Contract-Slowed-Spending-Improved-Care-Over-8-Years — AQC outcomes and network coverage
+137	[6] Health Transformation Review, Transforming American Healthcare, Chapter 12 §12.4.1, Step 2 — internal manuscript, Vermont's named clinical-leadership coalition gap
+
+## tl-managing-resistance-global-budgets
+138	Naming those patterns in advance — rather than discovering them in the first year's performance data — is the difference between managing resistance proactively and reacting to it after it has already produced a measurable result.
+139	CMS's Comprehensive Care for Joint Replacement model made a 90-day bundled payment mandatory for lower-extremity joint replacement in a defined set of metropolitan statistical areas, launching in April 2016.
+140	It is one of the most directly documented examples in Medicare policy of how organizations respond, in practice, to a hard payment boundary imposed on them rather than one they chose.
+141	Roughly 77% of CJR participant hospitals earned reconciliation payments in one or both of the model's first two performance years.
+142	A 2021 JAMA Internal Medicine study found savings fell from about $976 per episode in year two to $331 in year four — no longer statistically significant — with patient and site-of-care selection explaining three-quarters of the decline.
+143	The third pattern connects directly back to Kotter's Step 2.
+144	CJR's measured savings had largely dissipated by year four because hospitals responded to the year-three rule changes — high-spending hospitals exited where participation became voluntary, and remaining hospitals selected which patients stayed inside the bundle (JAMA Internal Medicine, 2021).
+145	After outpatient knee replacement could be billed outside the bundle and participation became voluntary in half the areas, hospitals responded to the new boundary — high-spending hospitals dropped out, and mandatory hospitals kept healthier knee patients inside the inpatient bundle — so savings fell from about $976 to $331 per episode and were no longer statistically significant by the fourth year (JAMA Internal Medicine, 2021).
+146	[1] Commonwealth Fund, "How Hospitals Respond to Incentives: Bundled Payment for Joint Surgery" (2021) — https://www.commonwealthfund.org/publications/journal-article/2021/may/hospital-incentives-bundled-payment-joint-surgery — summary of Wilcock et al., "Hospital Responses to Incentives in Episode-Based Payment for Joint Surgery," JAMA Internal Medicine 2021;181(7):932-940 (https://pubmed.ncbi.nlm.nih.gov/33999159/)
+147	[2] CMS, "Findings at a Glance: Comprehensive Care for Joint Replacement (CJR) Model" — https://www.cms.gov/files/document/cjr-fg-secondannrptpdf.pdf — CJR participation and reconciliation-payment data
+148	[3] "Health Care Leaders' Perspectives on the Maryland All-Payer Model" — https://pmc.ncbi.nlm.nih.gov/articles/PMC8903109/ — the "protecting hospital autonomy" governance theme
+149	[4] Health Transformation Review, Transforming American Healthcare, Chapter 12 §12.4.1, Step 2 — internal manuscript, the coalition-seat argument applied to Vermont
+
+## tl-sustaining-change-benefits-realization
+150	Steps 1 through 7 each have a visible event attached: a public presentation that creates urgency, a coalition's first meeting, a launch, an early win, a period of visible acceleration.
+151	The Project Management Institute's Benefits Realization Management Framework (2016) gives this planning a formal structure.
+152	Maryland's hospital rate-setting authority has operated continuously since a 1971 state statute — more than five decades, spanning multiple governors, legislatures, and federal administrations.
+153	It has been repeatedly revised: extended to private payers in 1974, to Medicare and Medicaid in 1977, converted to global budgets for all acute-care hospitals in 2014, and extended again into a Total Cost of Care model covering non-hospital spending in 2019.
+154	The relevant lesson from Maryland is not that its original 1971 or 2014 design was perfect and therefore never needed to change.
+155	It is the opposite: the model survived and expanded specifically because it had a standing structure — the HSCRC as a permanent independent commission, with an ongoing relationship to CMS — that could keep making course corrections indefinitely, long after the original 1971 or 2014 launch events were no longer news.
+156	CMS's Comprehensive Primary Care Plus model, a national advanced primary care medical home model that launched in 2017 across 14 regions and expanded to 18 by 2018, built its sustainment mechanism directly into the program's design rather than treating it as a follow-up activity after launch.
+157	The NHS's National Programme for IT, examined in Lesson 3 for its governance-structure failure, offers a second, distinct lesson here about sustainment specifically.
+158	Kotter's Step 8, institutionalization, has no natural finish-line event, which is exactly why it is the step most healthcare transformations leave incomplete.
+159	PMI's Benefits Realization Management Framework defines three core elements — identify, execute, sustain — and most transformation plans budget for the first two but not the third.
+160	Maryland's hospital rate-setting model has operated continuously since 1971 and expanded through 2014 and 2019 specifically because a standing governance body kept making course corrections, not because the original design was static.
+161	[1] PMI, "Benefits Realization Management Framework" — https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/benefits-realization-management-framework.pdf — the identify/execute/sustain framework (2016)
+162	[2] Commonwealth Fund, "Hospital Global Budgeting: Lessons from Maryland and Selected Nations" (2024) — https://www.commonwealthfund.org/publications/fund-reports/2024/jun/hospital-global-budgeting-lessons-maryland-selected-nations — Maryland's multi-decade course-correction history
+163	[3] CMS, "CPC+ Annual Report" and Primary Care Collaborative overview — https://www.cms.gov/priorities/innovation/data-and-reports/2022/cpc-annual-report-2-cms-perspective — CPC+ learning-collaborative infrastructure
+164	[4] National Audit Office, "Digital transformation in the NHS" (May 2020) — https://www.nao.org.uk/reports/digital-transformation-in-the-nhs/ — the finding that NPfIT's lessons were not all being applied to later NHS digital programmes
+165	[5] Health Transformation Review, Transforming American Healthcare, Chapter 12 §12.9 — internal manuscript, the legislative-dashboard sustainment recommendation

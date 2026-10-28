@@ -1,0 +1,366 @@
+
+## why-quality-measurement-matters
+0	For most of the 20th century, American medicine assumed that well-trained doctors working in good hospitals delivered good care, and there was little systematic effort to check.
+1	That assumption shattered at the turn of the century, when a pair of landmark reports forced the country to confront how often care fell short.
+2	In November 1999, the Institute of Medicine (IOM) released "To Err Is Human: Building a Safer Health System." Its central finding stunned the public and the profession: between 44,000 and 98,000 Americans were dying each year as a result of preventable medical errors in hospitals.
+3	The report estimated that medication errors alone accounted for about 7,000 deaths annually, and that the economic cost of preventable adverse events ran to tens of billions of dollars.
+4	IOM "To Err Is Human," 1999
+5	If counted as one category, per the lower estimate (IOM 1999)
+6	Per year, in and out of hospitals (IOM 1999)
+7	Estimated annual economic cost (IOM 1999)
+8	Two years later, in 2001, the IOM followed up with "Crossing the Quality Chasm: A New Health System for the 21st Century." Where the first report focused on safety, this one widened the lens to the entire quality gap — the chasm between the care we know how to deliver and the care patients actually get.
+9	The Six Aims of Quality (IOM, 2001)
+10	The IOM reports made the case conceptually; a landmark study soon quantified it.
+11	In 2003, Elizabeth McGlynn and colleagues published a study in the New England Journal of Medicine examining whether adults actually received recommended care.
+12	The researchers reviewed the medical records of nearly 7,000 adults across 12 metropolitan areas, scoring care against 439 clinical indicators for 30 conditions plus preventive care.
+13	The headline result: on average, participants received just 54.9 percent of recommended care — barely more than a coin flip.
+14	Performance ranged from about 79 percent of recommended care for senile cataracts down to just 10.5 percent for alcohol dependence.
+15	McGlynn and colleagues found U.S. adults received only about 55% of recommended care, with wide variation by condition — from ~79% for cataracts to ~10.5% for alcohol dependence.
+16	Published in the New England Journal of Medicine, it became one of the most-cited demonstrations that the quality gap was real, large, and unevenly distributed — strengthening the case for systematic measurement.
+17	The McGlynn "Quality of Health Care" Study (2003)
+18	The 1999 IOM report "To Err Is Human" found 44,000-98,000 Americans died yearly from preventable medical errors, framing errors as system failures rather than individual fault.
+19	The 2001 IOM report "Crossing the Quality Chasm" defined six aims of quality: safe, effective, patient-centered, timely, efficient, and equitable.
+20	McGlynn's 2003 NEJM study found U.S. adults received only about 55% of recommended care, with wide variation by condition — making the quality gap concrete.
+21	The report argued that preventable errors — killing an estimated 44,000-98,000 Americans a year — were largely the product of poorly designed systems that set up competent people to fail.
+22	What was the central reframing introduced by the 1999 IOM report "To Err Is Human"?
+23	[1] To Err Is Human: Building a Safer Health System (IOM, 1999) — https://www.ncbi.nlm.nih.gov/books/NBK2673/ — 44,000-98,000 annual deaths; systems view of error; medication errors ~7,000 deaths
+24	[2] To Err Is Human (report) — https://en.wikipedia.org/wiki/To_Err_Is_Human_(report) — 8th leading cause of death framing; $17-29B cost estimate
+25	[3] Crossing the Quality Chasm: A New Health System for the 21st Century (IOM, 2001) — https://www.nationalacademies.org/read/10027/chapter/2 — six aims for improvement
+26	[4] Six Domains of Healthcare Quality (AHRQ) — https://www.ahrq.gov/talkingquality/measures/six-domains.html — definitions of safe, effective, patient-centered, timely, efficient, equitable
+27	[5] The Quality of Health Care Delivered to Adults in the United States (McGlynn et al., NEJM 2003) — https://www.nejm.org/doi/full/10.1056/NEJM200311063491916 — adults received 54.9% of recommended care; range 10.5%-78.7%
+28	[6] The First National Report Card on Quality of Care (RAND) — https://www.rand.org/news/press/2003/06/25fact.html — study design: ~7,000 adults, 439 indicators, 30 conditions
+
+## structure-process-outcome
+29	Donabedian first laid out his model in a 1966 article, "Evaluating the Quality of Medical Care," which became one of the most-cited public health articles of the 20th century.
+30	Examples include surgical-site infection rates, 30-day mortality, hospital readmissions, functional status, and patient-reported quality of life.
+31	First, outcomes have time lags and are often influenced by many factors beyond any single provider — a 30-day readmission depends not just on hospital care but on the patient's other conditions, medication adherence, and social circumstances.
+32	For example, a team working to reduce hospital length of stay might track 30-day readmissions as a balancing measure, to make sure faster discharges are not simply sending patients home too soon.
+33	A structure measure might be whether the hospital has a 24/7 rapid-response team.
+34	A process measure is the share of septic patients who received antibiotics within the first hour.
+35	Avedis Donabedian's 1966 model organizes quality measurement into three linked categories: structure, process, and outcome.
+36	Outcome measures are the most vulnerable to gaming, so teams must choose the right outcomes and watch for perverse responses.
+37	A structure measure would describe the care environment (e.g., staffing), and an outcome measure would capture the result (e.g., 30-day mortality).
+38	A quality team reports the percentage of heart-attack patients who received aspirin within the first hour of arrival.
+39	[1] Donabedian model — https://en.wikipedia.org/wiki/Donabedian_model — 1966 origin; definitions of structure, process, outcome; "good structure increases likelihood of good process..."
+40	[2] "Evaluating the Quality of Medical Care": Donabedian's Classic Article 50 Years Later — https://pmc.ncbi.nlm.nih.gov/articles/PMC4911723/ — historical significance and the structure-process-outcome paradigm
+41	[3] Why Process Measures Are Often More Important Than Outcome Measures (Health Catalyst) — https://www.healthcatalyst.com/learn/insights/process-vs-outcome-measures-healthcare — process measures actionable; outcome measures harder to attribute
+42	[4] Appendix 2b — Outcome, process and balancing measures (gov.scot) — https://www.gov.scot/publications/quality-improvement-measurement-non-executive-directors-need-know/pages/6/ — definitions and the readmission-as-balancing-measure example
+43	[5] The Limits of Using Outcomes as Quality Measures (Psychiatric Services) — https://psychiatryonline.org/doi/10.1176/appi.ps.202000873 — outcome gaming (falls example); attribution and risk-adjustment limitations
+44	[6] Risk Adjustment in Quality Measurement (CMS Measures Management System) — https://mmshub.cms.gov/sites/default/files/Risk-Adjustment-in-Quality-Measurement.pdf — risk adjustment enables fair outcome comparison; cautions on misuse
+
+## measure-stewardship
+45	The U.S. measurement ecosystem is dominated by a handful of organizations, each with a distinct role — and the landscape shifted notably in 2023.
+46	The National Committee for Quality Assurance (NCQA) is a private nonprofit and the steward of HEDIS — the Healthcare Effectiveness Data and Information Set — one of the most widely used performance-measurement tools in health care.
+47	CMS stewards most measures developed under its contracts, and its measure inventory houses over 500 measures used across dozens of federal programs — from hospital reporting to physician payment.
+48	Steward of 500+ measures; federal programs
+49	Section 1890 of the Social Security Act requires the Secretary of Health and Human Services to contract with a "consensus-based entity" (CBE) to run a transparent, multi-stakeholder process for endorsing quality and cost measures and keeping them updated.
+50	Effective March 27, 2023, NQF was no longer the contracted CBE for CMS; CMS instead awarded the contract to the Battelle Memorial Institute, which now runs the consensus-based functions under the banner of the Partnership for Quality Measurement (PQM).
+51	Separately, in August 2023 The Joint Commission acquired NQF, which continues some endorsement activities within TJC.
+52	A common outdated belief is that "NQF endorses measures for CMS." Since March 2023, the contracted consensus-based entity is Battelle, operating as the Partnership for Quality Measurement (PQM).
+53	NQF itself was acquired by The Joint Commission later in 2023.
+54	CMS is the largest steward, maintaining over 500 measures tied to Medicare and Medicaid payment and public reporting.
+55	Section 1890 of the Social Security Act requires HHS to contract with a consensus-based entity (CBE) to endorse measures and convene the Measure Applications Partnership.
+56	In 2023 the CBE role shifted from the National Quality Forum to Battelle, now operating as the Partnership for Quality Measurement (PQM); NQF was acquired by The Joint Commission.
+57	Effective March 27, 2023, NQF was no longer the contracted CBE for CMS.
+58	NQF was separately acquired by The Joint Commission later in 2023.
+59	As of 2023, which organization serves as the CMS consensus-based entity (CBE) that endorses measures and convenes the Measure Applications Partnership?
+60	[1] Roles in Measure Development (CMS Measures Management System) — https://mmshub.cms.gov/about-quality/new-to-measures/roles — definitions of measure steward and developer; CMS as steward of 500+ measures
+61	[2] HEDIS Measures and Technical Resources (NCQA) — https://www.ncqa.org/hedis/measures/ — NCQA is the steward of HEDIS
+62	[3] Accreditation Performance Measurement (The Joint Commission) — https://www.jointcommission.org/en-us/accreditation/performance-measurement — ORYX program, eCQMs and chart-abstracted measures
+63	[4] CMS Announces New Consensus-Based Entity to Replace the National Quality Forum (HRS) — https://www.hrsonline.org/guidance/advocacy-in-action/cms-announces-new-consensus-based-entity — NQF replaced by Battelle/PQM effective March 27, 2023; TJC acquired NQF Aug 2023
+64	[5] CMS Consensus-Based Entity (CBE) Endorsement and Maintenance — https://mmshub.cms.gov/measure-lifecycle/measure-implementation/CMS-CBE-EM/overview — Section 1890 CBE endorsement role; Battelle as current CBE
+65	[6] Pre-Rulemaking Measure Applications Partnership (MAP) — https://mmshub.cms.gov/measure-lifecycle/measure-implementation/pre-rulemaking/measure-applications-partnership — MAP multi-stakeholder recommendations; annual pre-rulemaking process
+
+## hedis-measures-overview
+66	The Most Widely Used Measure Set in America
+67	HEDIS — the Healthcare Effectiveness Data and Information Set — is the most widely used set of health-plan performance measures in the United States.
+68	The current set includes more than 90 measures, giving plans and regulators a broad, comparable picture of performance across the spectrum of care.
+69	HEDIS is NCQA's standardized set of 90+ health-plan performance measures, updated annually by measurement year.
+70	The domains include Effectiveness of Care (the largest, covering preventive and chronic-disease care like screenings and diabetes control), Access/Availability of Care, Experience of Care, Utilization and Risk-Adjusted Utilization, Health Plan Descriptive Information, and measures collected through electronic clinical data systems.
+71	The hybrid method addresses that gap by combining administrative data with manual review of a random sample of medical records — traditionally 411 members — to find services that were delivered but not captured in claims.
+72	Hybrid adds medical-record review (sample of ~411)
+73	It assesses adults 18 to 85 years of age who have a diagnosis of hypertension and whose blood pressure was adequately controlled during the measurement year.
+74	The denominator is members aged 18 to 85 with a hypertension diagnosis (identified on at least two different dates of service within the specified window) who meet enrollment criteria, minus the standard exclusions.
+75	The numerator is the subset whose most recent representative blood pressure reading was below 140/90 mm Hg — both systolic under 140 and diastolic under 90.
+76	Denominator: adults 18-85 with a hypertension diagnosis on at least two service dates, meeting enrollment rules, minus exclusions.
+77	Numerator: those whose most recent representative BP reading is <140/90 mm Hg.
+78	A plan that controls blood pressure in 700 of 1,000 eligible hypertensive members reports a CBP rate of 70%.
+79	The precise, standardized definition is what makes that 70% comparable across plans nationwide.
+80	HEDIS, stewarded by NCQA, is the most widely used set of health-plan performance measures in the U.S., with more than 90 measures updated annually by measurement year.
+81	HEDIS uses three data collection methods: administrative (claims only), hybrid (claims plus a ~411-member medical-record sample), and ECDS (structured EHR data).
+82	The Controlling High Blood Pressure measure illustrates HEDIS's precision: adults 18-85 with hypertension, numerator-compliant when their representative BP is <140/90 mm Hg.
+83	The denominator is adults 18-85 with a hypertension diagnosis (meeting enrollment and exclusion rules).
+84	The numerator is the subset of those members whose representative blood pressure reading is controlled — below 140/90 mm Hg (both systolic <140 and diastolic <90).
+85	All members aged 18-85 enrolled in the plan
+86	Members with hypertension whose most recent representative blood pressure is below 140/90 mm Hg
+87	[1] HEDIS Measures (NCQA) — https://www.ncqa.org/hedis/ — 90+ measures across ~6 domains of care; annual measurement-year updates
+88	[2] HEDIS MY 2024: What's New, What's Changed, What's Retired (NCQA) — https://www.ncqa.org/blog/hedis-my-2024-whats-new-whats-changed-whats-retired/ — domains and measurement-year structure
+89	[3] HEDIS: General Guidelines and Measure Descriptions (Johns Hopkins) — https://www.hopkinsmedicine.org/johns-hopkins-health-plans/providers-physicians/health-care-performance-measures/hedis/general-guidelines — numerator/denominator, eligible population, continuous enrollment, exclusions
+90	[4] HEDIS 101 for Providers — https://www.selecthealthofsc.com/content/dam/first-choice/selecthealthofsc/pdf/provider/resources/hedis-101.pdf.coredownload.inline.pdf — administrative, hybrid, and ECDS data collection methods; 411-member hybrid sample
+91	[5] Controlling High Blood Pressure (CBP) (NCQA) — https://www.ncqa.org/hedis/measures/controlling-high-blood-pressure/ — measure assesses adults 18-85 with hypertension controlled to <140/90 mm Hg
+92	[6] Controlling High Blood Pressure (CBP) Measure Definition — https://www.pahealthwellness.com/content/dam/centene/Pennsylvania/HEDIS/HEDIS%20CBP%20Tip%20Sheet.pdf — denominator (two diagnosis dates), numerator (BP <140/90), lowest same-day reading rule
+
+## cahps-patient-experience
+93	It began in 1995 to build the scientific understanding of patient experience as part of advancing safe, patient-centered care.
+94	CAHPS is AHRQ's family of standardized surveys, launched in 1995, that measure patient experience.
+95	The most consequential member of the CAHPS family is HCAHPS — the Hospital CAHPS survey — the first national, standardized, publicly reported survey of patients' hospital experiences.
+96	Beginning in 2002, CMS partnered with AHRQ to develop and test it; it was endorsed by the National Quality Forum in 2005, implemented in October 2006, and its results were first publicly reported in March 2008.
+97	CAHPS is AHRQ's family of standardized surveys, launched in 1995, that measure patient experience across specific care settings; surveys must be approved by the CAHPS Consortium.
+98	HCAHPS is the hospital CAHPS survey — the first national, standardized, publicly reported survey of patients' hospital experiences.
+99	HCAHPS was developed with AHRQ starting in 2002, NQF-endorsed in 2005, implemented in 2006, and first publicly reported in March 2008.
+100	[1] About the CAHPS Program and Surveys (AHRQ) — https://www.ahrq.gov/cahps/about-cahps/index.html — CAHPS began 1995; family of surveys; CAHPS Consortium approval
+101	[2] What Is Patient Experience?
+102	[3] HCAHPS: Patients' Perspectives of Care Survey (CMS) — https://www.cms.gov/medicare/quality/initiatives/hospital-quality-initiative/hcahps-patients-perspectives-care-survey — HCAHPS as first national standardized publicly reported hospital experience survey
+103	[4] HCAHPS Facts (CMS) — https://www.cms.gov/newsroom/fact-sheets/hcahps-facts — developed with AHRQ from 2002; NQF-endorsed 2005; implemented Oct 2006; first public reporting March 2008
+104	[5] HCAHPS and Hospital VBP — https://hcahpsonline.org/en/hcahps-and-hospital-vbp/ — HCAHPS composites; Care Compare reporting; Value-Based Purchasing weight
+105	[6] CAHPS Adult Hospital Survey (AHRQ) — https://www.ahrq.gov/cahps/surveys-guidance/hospital/about/adult_hp_survey.html — composite topics; patient-mix and mode adjustment for fair comparison
+
+## hedis-quality-improvement
+106	A breast-cancer-screening rate of 68 percent is a scorecard, not an improvement.
+107	Supplemental data is especially powerful for measures that need clinical values rather than just a billing code — blood pressure readings for the hypertension measure, A1c results for diabetes control.
+108	A plan's claims might show a diabetic member had an office visit but not record an A1c result, leaving the diabetes-control measure open.
+109	Pulling the actual A1c value from the practice's EHR via a data feed or HIE can close that gap — the care happened, it just was not on a claim.
+110	Quality Compass reports performance at percentiles — commonly the 10th, 25th, 50th, 75th, and 90th — so a plan can see not just its own rate but where that rate falls in the distribution.
+111	A measure sitting at the 25th percentile is a bigger improvement opportunity (and a bigger accreditation/Star risk) than one already at the 90th.
+112	Supplemental data from EHRs, HIEs, and aggregators captures care that claims miss and is essential for measures needing clinical values like blood pressure or A1c.
+113	NCQA's Quality Compass provides percentile benchmarks (10th-90th) so plans can prioritize the lagging measures with the biggest improvement opportunity.
+114	Pulling the A1c value from the EHR or an HIE as supplemental data, normalized to HEDIS value sets, lets the plan credit the real result and close the gap.
+115	Use supplemental clinical data from the EHR or HIE to capture the A1c result that the claim did not include
+116	A health plan finds that a diabetic member had an A1c blood test, but the result was never captured in the plan's claims data, leaving the diabetes-control measure open.
+117	What is the most effective way to close this gap?
+118	[1] Improve Your HEDIS Measures by Closing Patient Care Gaps (HealthHelper) — https://healthhelper.co/resources/improve-your-hedis-measures-by-closing-patient-care-gaps — care gaps as the unit of HEDIS improvement; gap-in-care reports and outreach
+119	[2] High-Quality Clinical Data Has the Potential to Transform HEDIS Quality Reporting (Availity) — https://www.availity.com/blog/high-quality-clinical-data-has-the-potential-to-transform-hedis-quality-reporting-and-close-care-gaps/ — supplemental EHR/HIE data; normalization to HEDIS value sets; numerator accuracy
+120	[3] How to Close HEDIS Care Gaps Before the End of the Year (Synsormed) — https://www.synsormed.com/how-to-close-hedis-care-gaps-before-the-end-of-the-year/ — retrospective data lag, year-end chase, fixed deadlines, year-round monitoring
+121	[4] The Precision Approach to Care Gap Closure (AristaMD) — https://www.aristamd.com/thought-leadership/articles/the-precision-approach-to-care-gap-closure/ — prospective vs. retrospective gap closure; proactive vs. reactive
+122	[5] Improving HEDIS Performance Through Benchmarking (NCQA) — https://www.ncqa.org/blog/improving-hedis-performance-through-benchmarking/ — using percentiles (25th, 50th, 75th, 90th) to find improvement opportunities
+123	[6] Quality Compass (NCQA) — https://www.ncqa.org/programs/data-and-information-technology/data-purchase-and-licensing/quality-compass/ — national/state/regional HEDIS and CAHPS benchmarks for quality improvement
+
+## hospital-compare-star-ratings
+124	The story begins with Hospital Compare, a website CMS launched in 2005 through the Hospital Quality Alliance, a public-private collaboration formed in 2002 to promote reporting of hospital quality.
+125	The first release was modest: a ten-measure "starter set" of process-of-care measures covering heart attack, heart failure, pneumonia, and surgical care.
+126	In 2020, CMS consolidated its various "Compare" tools (Hospital Compare, Nursing Home Compare, and others) into a single site called Care Compare on Medicare.gov.
+127	Hospital Compare (launched 2005, now part of Care Compare on Medicare.gov) is CMS's public website for comparing hospitals on standardized quality measures — turning quality data into something patients and purchasers can actually see.
+128	The first four are weighted equally at 22 percent each, and Timely & Effective Care is weighted at 12 percent.
+129	So mortality, safety, readmissions, and patient experience together drive about 88 percent of a hospital's overall rating.
+130	Patient experience appearing at a full 22 percent — equal to mortality — is striking.
+131	Experience 22%, Timely & Effective Care 12% (CMS)
+132	The rating uses a subset of the measures already on Care Compare — 46 measures were included in the July 2024 calculation — after excluding measures that are retired, reported by too few hospitals, structural, duplicative, or "non-directional" (where it is unclear whether higher or lower is better).
+133	Use the qualifying subset of Care Compare measures (e.g., 46 in July 2024).
+134	Mortality, Safety, Readmission, Experience at 22% each; Timely & Effective Care at 12%.
+135	CMS launched Hospital Compare in 2005 (a 10-measure starter set) and consolidated its compare tools into Care Compare on Medicare.gov in 2020.
+136	The Overall Hospital Quality Star Rating rolls many measures into a single 1-to-5-star score so the public can compare hospitals easily.
+137	The rating uses five measure groups: Mortality, Safety of Care, Readmission, and Patient Experience (22% each) plus Timely & Effective Care (12%).
+138	Patient experience (HCAHPS) carries the same 22% weight as mortality, signaling that experience is treated as a core quality dimension.
+139	Four of the five measure groups — Mortality, Safety of Care, Readmission, and Patient Experience — are each weighted at 22%, with Timely & Effective Care at 12%.
+140	Patient Experience is weighted equally to Mortality, at 22% each
+141	Patient Experience is the single highest-weighted group at 50%
+142	[1] Hospital Quality Initiative Public Reporting / Hospital Compare (CMS) — https://www.cms.gov/medicare/quality/initiatives/hospital-quality-initiative/hospital-compare — Hospital Compare history, Hospital Quality Alliance, 2005 10-measure starter set
+143	[2] Overall Hospital Quality Star Rating: Overview (Telligen, updated 2024) — https://www.telligen.com/wp-content/uploads/2024/12/HospitalStarRatingOverview_Updated2024_508-1.pdf — 46 measures in July 2024; eligibility (3 measures in 3 groups incl. mortality/safety); reporting-program participation
+144	[3] 42 CFR § 412.190 — Overall Hospital Quality Star Rating — https://www.law.cornell.edu/cfr/text/42/412.190 — regulatory basis for the star rating and measure groups
+145	[4] 2025 Star Ratings Calculation (Medisolv) — https://blog.medisolv.com/articles/2025-star-ratings-calculation — five measure groups and weights: Mortality/Safety/Readmission/Experience 22% each, Timely & Effective 12%; weight redistribution
+146	[5] CMS updates annual Overall Hospital Quality Star Ratings (AHA) — https://www.aha.org/news/headline/2024-07-31-cms-updates-annual-overall-hospital-quality-star-ratings — annual refresh; categories: mortality, safety, readmission, experience, timeliness
+147	[6] Properties of the Overall Hospital Star Ratings and Consumer Choice (AJMC) — https://www.ajmc.com/view/properties-of-the-overall-hospital-star-ratings-and-consumer-choice — summary-score usability vs. nuance; criticism and consumer use
+
+## mips-quality-payment
+148	MIPS was created by the Medicare Access and CHIP Reauthorization Act of 2015 (MACRA), the law that repealed Medicare's old physician-payment formula.
+149	It consolidated several older, separate programs into one scoring system — making it the largest pay-for-performance program for physicians in the country.
+150	MIPS (Merit-based Incentive Payment System), created by MACRA in 2015, is the track of Medicare's Quality Payment Program that ties a clinician's Medicare Part B payments directly to their measured performance.
+151	The first is Quality — clinical quality measures the clinician selects and reports, the direct descendant of the older quality-reporting programs.
+152	For 2024, the category weights are Quality 30 percent, Cost 30 percent, Promoting Interoperability 25 percent, and Improvement Activities 15 percent.
+153	MIPS Performance Categories (2024 Weights)
+154	The four weighted categories combine into a single MIPS final score on a 0-to-100 scale.
+155	For recent performance years the threshold is 75 points.
+156	A final score above 75 earns a positive adjustment, a score below 75 earns a negative adjustment, and a score exactly at 75 is neutral.
+157	Quality 30%, Cost 30%, PI 25%, Improvement Activities 15% (2024).
+158	Combine into a single 0-100 MIPS final score.
+159	Above 75 = positive, below = negative, at 75 = neutral adjustment.
+160	MIPS applies a Medicare Part B payment adjustment of up to plus or minus 9 percent based on the final score.
+161	For a practice with substantial Medicare volume, a 9 percent swing is a major revenue event.
+162	That means a high score does not guarantee the full 9 percent bonus — the actual upside depends on how everyone else performed.
+163	Performance in one year determines the payment adjustment two years later — for example, 2023 performance affects 2025 Medicare payments.
+164	e.g., 2023 performance → 2025 payment (CMS QPP)
+165	A top score does not guarantee the full +9% — the real bonus depends on the whole pool's performance, which is why actual positive adjustments have often been far smaller than the maximum.
+166	MIPS, created by MACRA in 2015, is the Quality Payment Program track that ties a clinician's Medicare Part B payments to measured performance.
+167	MIPS has four performance categories: Quality (30%), Cost (30%), Promoting Interoperability (25%), and Improvement Activities (15%) for 2024.
+168	The categories combine into a 0-100 final score compared against a performance threshold (75 in recent years) to set the adjustment.
+169	Payment adjustments reach up to ±9% of Medicare Part B, are budget-neutral, and are applied two years after the performance year.
+170	Budget neutrality means bonuses are funded by penalties on a sliding scale, so a top score rarely yields the full +9%.
+171	MIPS is the largest physician pay-for-performance program but is criticized for burden and weak outcome links; CMS is shifting toward focused MIPS Value Pathways and Advanced APMs.
+172	MIPS adjustments apply two years after the performance year, so 2024 performance affects 2026 payments.
+173	Because the program is budget-neutral and distributes adjustments on a sliding scale funded by penalties, a score above the threshold yields a positive adjustment — but typically less than the maximum ±9%, depending on the whole pool's performance.
+174	Immediately, as a guaranteed +9% bonus
+175	Two years later (2026), as a positive but budget-neutral, sliding-scale adjustment that may be less than +9%
+176	A clinician earns a MIPS final score above the performance threshold in 2024.
+177	[1] MIPS and MACRA Explained (AccountableHQ) — https://www.accountablehq.com/post/mips-and-macra-explained-key-differences-requirements-and-updates — MACRA 2015 created MIPS and the QPP; two tracks (MIPS and Advanced APMs)
+178	[2] What You Need To Know for MIPS 2024 (AVS Medical) — https://www.avsmedical.com/avs-medical-blog/what-you-need-to-know-for-mips-2024 — four categories and 2024 weights: Quality 30%, Cost 30%, PI 25%, Improvement Activities 15%
+179	[3] Understanding the Merit-Based Incentive Payment System (STS) — https://www.sts.org/understanding-merit-based-incentive-payment-system — 0-100 final score; threshold; category roll-up
+180	[4] MIPS FAQs (AAFP) — https://www.aafp.org/family-physician/practice-and-career/getting-paid/mips.html — ±9% Part B adjustment; budget neutral; two-year payment lag
+181	[5] 2025 MIPS Rules (MDinteractive) — https://mdinteractive.com/2025-mips-rules — 75-point performance threshold; positive/negative/neutral adjustment bands
+182	[6] MIPS and CY 2024 QPP Updates (Health Catalyst) — https://www.healthcatalyst.com/learn/insights/mips-overview-quality-measures-boost-bottom-line-2024 — Cost from claims (no submission); MIPS Value Pathways direction
+
+## aco-quality-reporting
+183	In the Medicare Shared Savings Program (MSSP) — the largest ACO program — quality performance is the gate that determines whether, and how much, an ACO actually gets to keep of any savings it generates.
+184	For 2024, ACOs had a transitional choice.
+185	They could report the legacy CMS Web Interface set of 10 measures, or the newer APP measure set of three clinical quality measures submitted electronically.
+186	Those three APP measures are familiar ones from elsewhere in this course: diabetes HbA1c poor control, depression screening and follow-up, and controlling high blood pressure.
+187	Diabetes HbA1c poor control, depression screening & follow-up, controlling high blood pressure (reported electronically).
+188	Or report the legacy 10-measure CMS Web Interface set.
+189	What an MSSP ACO Reports (2024 APP)
+190	In recent years, an ACO could meet it by scoring at or above roughly the 30th or 40th percentile (depending on the year) on its measures, with a lower floor (around the 10th percentile) on at least one outcome measure.
+191	Beginning in 2025 and beyond, the standard generally requires reaching at least the 40th percentile across the MIPS quality performance category scores.
+192	Generally must reach ~40th percentile of MIPS quality scores (CMS MSSP)
+193	Percentile Standard (2025+)
+194	3 CQMs in 2024; APP Plus set of 6 measures from 2025 (CMS)
+195	The legacy 10-measure Web Interface is being retired in favor of the APP.
+196	Starting in 2025, CMS introduced the "APP Plus" measure set, which grows the APP to six measures (a mix of eCQMs/Medicare CQMs, an administrative-claims measure, and the CAHPS survey) and expands further in later years.
+197	For 2024, MSSP ACOs reported three eCQMs through the APP plus CAHPS and claims-based measures.
+198	For 2025, CMS finalized the "APP Plus" set of six measures — four eCQMs/Medicare CQMs, one administrative-claims measure, and the CAHPS for MIPS survey — with the measure set scheduled to keep expanding.
+199	For 2024, ACOs could report the legacy 10-measure CMS Web Interface or the APP set of three eCQMs, plus CAHPS and CMS-calculated claims measures.
+200	The quality performance standard is percentile-based; from 2025 it generally requires reaching about the 40th percentile of MIPS quality scores.
+201	[1] Quality Performance Standards and Reporting (42 CFR Part 425 Subpart F) — https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-425/subpart-F — MSSP quality performance standard gating shared savings
+202	[2] Breaking Down the 2024 ACO Quality Performance Report (MDinteractive) — https://mdinteractive.com/mips-blog/breaking-down-2024-aco-quality-performance-report — APP 3-measure set (diabetes HbA1c, depression screening, controlling high BP); Web Interface alternative; CAHPS + claims
+203	[3] Medicare Shared Savings Program 2024 Reporting: eCQMs, MIPS CQMs, and Medicare CQMs in the APP (CMS) — https://qpp-cm-prod-content.s3.amazonaws.com/uploads/3124/MSSP-2024-Reporting-eCQMs-MIPS-CQMs-and-Medicare-CQMs-in-the-APP.pdf — collection types; all-payer vs Medicare FFS populations
+204	[4] Achieving Shared Savings: A Practical Guide to ACO Quality Performance Standards (MDinteractive) — https://mdinteractive.com/mips-blog/achieving-shared-savings-practical-guide-aco-quality-performance-standards — percentile-based standard (10th outcome floor; 30th/40th); 40th percentile from 2025
+205	[5] MSSP ACOs: 2025 Final Rule Impact — APP Plus (Dynamic Health IT) — https://dynamichealthit.com/post/introducing-the-app-plus-quality-measure-set/ — APP Plus six-measure set for 2025 and expansion
+206	[6] CMS to Expand Quality Reporting Measures for MSSP ACOs (Health Catalyst) — https://www.healthcatalyst.com/learn/insights/cms-expand-quality-reporting-measures-ssp-acos — transition from Web Interface to electronic all-payer reporting
+
+## ecqms-explained
+207	A blood-pressure reading or an A1c result often never appears on a claim, so claims measures miss clinically important detail.
+208	The shift has been decisive — by 2017, eCQMs had begun to outnumber chart-abstracted measures in CMS quality reporting, and the trend has only accelerated since.
+209	One EHR might code a hemoglobin A1c test one way and another EHR a different way. eCQMs solve this with value sets — curated lists of the standard codes (from terminologies like SNOMED CT, LOINC, and RxNorm) that count as a given clinical concept.
+210	A value set is essentially the answer to "which codes mean this?" When an eCQM asks whether a patient had an A1c test, it checks the patient's data against the LOINC codes in the measure's A1c value set.
+211	By 2017 eCQMs began to outnumber chart-abstracted measures in CMS reporting, and the shift has continued.
+212	[1] Electronic Clinical Quality Measure (eCQM) (eCQI Resource Center) — https://ecqi.healthit.gov/glossary/electronic-clinical-quality-measure-ecqm — definition: measure in standard electronic format using data extracted from EHRs
+213	[2] Electronic Clinical Quality Measures Basics (CMS) — https://www.cms.gov/medicare/regulations-guidance/promoting-interoperability-programs/electronic-clinical-quality-measures-basics — QDM and CQL standards; Measure Authoring Tool; CEHRT requirement
+214	[3] eCQMs Outnumber Chart-Abstracted Measures (Medisolv) — https://medisolv.com/academy/ecqms-outnumber-chart-abstracted-measures/ — eCQM vs chart-abstracted vs claims; manual abstraction drawbacks; 2017 crossover
+215	[4] Get Started with eCQMs — About eCQMs (eCQI Resource Center) — https://ecqi.healthit.gov/ecqms/about-ecqms — automated capture minimizing manual error; structured data; value sets
+216	[5] eCQM Specifications, Testing, Standards, Tools, Community (CMS Measures Management System) — https://mmshub.cms.gov/sites/default/files/eCQM-Specifications-Testing-Standards-Tools-Community.pdf — QDM/CQL standards stack and consistent extraction across EHRs
+217	[6] Comparison of electronic versus manual abstraction for 2 standardized perinatal care measures (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC9006703/ — reliability of EHR-extracted data elements varies; data-capture challenges
+
+## fhir-digital-quality-measures
+218	The foundation is FHIR Release 4 (R4), the version of the interoperability standard most measures build on.
+219	The FHIR stack is FHIR R4 + QI-Core (replacing QDM for clinical data) + the Quality Measure Implementation Guide, with CQL carried forward as the logic language.
+220	[1] dQMs — Digital Quality Measures (eCQI Resource Center) — https://ecqi.healthit.gov/dqm — CMS definition of dQMs; one-or-more sources; computable without additional effort; transition goal
+221	[3] CMS' Roadmap for Switching to FHIR-Based Digital Quality Measures (HCI Innovation Group) — https://www.hcinnovationgroup.com/policy-value-based-care/value-based-care-quality-measurement/article/55355919/cms-roadmap-for-switching-to-fhir-based-digital-quality-measures — QDM-eCQM to FHIR eCQM transition; burden reduction; interoperability
+222	[4] QI-Core — Quality Improvement Core, About (eCQI Resource Center) — https://ecqi.healthit.gov/qi-core/about — QI-Core replaces QDM; FHIR-based profiles built on US Core
+223	[5] Quality Measure Implementation Guide (HL7 FHIR) — http://hl7.org/fhir/us/cqfmeasures/index.html — QM IG built on FHIR R4; Clinical Reasoning module; CQL
+224	[6] FHIR — About (eCQI Resource Center) — https://ecqi.healthit.gov/fhir/about — FHIR R4 foundation; FHIR eCQM uses QM IG and QI-Core; multi-source data
+
+## ehr-data-quality
+225	The most sophisticated measure in the world is worthless if the underlying EHR data is wrong, missing, or inconsistent.
+226	Other frameworks add dimensions like plausibility (is the value believable — a blood pressure of 900 is not), uniqueness (no duplicate records), and representativeness.
+227	Notably, there is still no single standard taxonomy for EHR data quality, which is itself a challenge — but completeness is consistently the most-assessed dimension, because missing data is the most common and most damaging problem.
+228	A required A1c result is missing
+229	Missing data is the headline issue: studies have found missing-data rates exceeding 80 percent for some variables, meaning the fact a measure needs simply is not in the record for most patients.
+230	Copy-paste prevalence has been measured at around 82 percent in residents' progress notes, and more than half of the text in some electronic records is duplicated.
+231	EHR-related medication errors have been found to comprise about 34 percent of all medication errors in ICUs, with a substantial share carrying life-threatening potential.
+232	The first step is assessment: systematically checking data against the dimensions above using methods like comparison to gold standards, validity and plausibility checks, element-presence checks, and data-source agreement.
+233	This is the workflow work that the eCQM lesson flagged: getting the right data into the right field the first time.
+234	The core data-quality dimensions are completeness, accuracy, timeliness, and consistency, with completeness the most commonly assessed because missing data is so damaging.
+235	EHR data quality problems are pervasive: missing-data rates above 80% for some variables, ~82% copy-paste in resident notes, and over half of text duplicated in some records.
+236	Poor EHR data is also a safety problem — EHR-related medication errors made up about 34% of ICU medication errors in one analysis.
+237	What is the most accurate interpretation?
+238	[1] Methods and dimensions of EHR data quality assessment (JAMIA) — https://academic.oup.com/jamia/article/20/1/144/2909176 — five dimensions: completeness, correctness, concordance, plausibility, currency
+239	[2] Electronic health record data quality assessment and tools: a systematic review (JAMIA) — https://academic.oup.com/jamia/article/30/10/1730/7216383 — completeness most assessed; lack of standard taxonomy; assessment methods
+240	[3] Discovery of data quality issues in EHRs: consequences for critical care — systematized review (PMC) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12784561/ — missing-data rates exceeding 80% for some variables
+241	[4] Impact of EHR Systems on Information Integrity: Quality and Safety Implications (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC3797550/ — ~82% copy-paste in resident notes; >half duplicated text; note bloat and errors
+242	[5] Data hidden in the free text (EMERSE) — https://project-emerse.org/data_in_free_text.html — most EHR data is unstructured free text rarely usable by automated measures
+243	[6] Automating Electronic Health Record Data Quality Assessment (PMC) — https://ncbi.nlm.nih.gov/pmc/articles/PMC9925537 — assessment approaches and the cascading impact of data-quality issues; EHR-related medication errors in ICUs
+
+## stratifying-measures-by-race
+244	It connects directly to "equity," the sixth IOM aim from the first lesson of this course.
+245	In a 2021 CMS Office of Minority Health report on Medicare Advantage, stratifying by both race and dual-eligibility or low-income-subsidy status (markers of low income) at the same time showed gaps that a single average buries: within every racial group, low-income enrollees did worse on many clinical measures — on 56 percent of measures among White enrollees (including a 12-percentage-point deficit in breast cancer screening) and on 38 percent among Black enrollees.
+246	Breast cancer screening deficit for dual/LIS vs. other White MA enrollees (CMS OMH, 2021)
+247	Share of clinical measures on which White dual/LIS enrollees did worse than White non-dual enrollees (CMS OMH, 2021)
+248	Share of clinical measures on which Black dual/LIS enrollees did worse than Black non-dual enrollees (CMS OMH, 2021)
+249	The CMS example above used dual-eligibility as a proxy for low income, and it was the combination with race that exposed the largest gap.
+250	Seeing a 24-point gap tells you a problem exists, not how to fix it — and, as the next lesson explores, it raises a thorny technical question about whether and how to risk-adjust for social factors.
+251	A 2021 CMS analysis that crossed race with dual-eligibility found low-income enrollees doing worse within every racial group — gaps the aggregate would have buried.
+252	CMS and Medicaid are moving stratified, disaggregated reporting from optional to mandatory, because requiring it forces inequities into view — the first step to closing them.
+253	A 65% overall could hide, say, 80% control for one population and 45% for another.
+254	Because the 65% average can mask large disparities — some subgroups may be far below it while others are far above
+255	A health plan reports an overall blood-pressure-control rate of 65%, which meets its target.
+256	[1] Stratified Reporting (CMS) — https://www.cms.gov/priorities/health-equity/minority-health/research-data/stratified-reporting — CMS OMH stratified reporting of Medicare performance by race, ethnicity, sex, and social risk
+257	[2] Disparities in Health Care in Medicare Advantage Associated with Dual Eligibility (CMS) — https://www.cms.gov/files/document/2021-delis-national-disparities-stratified-report.pdf — within-race deficits for dual/LIS enrollees (worse on 56% of measures among White and 38% among Black enrollees); intersection of race and dual status
+258	[3] Using Patient Race, Ethnicity, and Language Data to Achieve Health Equity (JGIM/PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC4441661/ — REL data as foundation for stratifying performance measures
+259	[4] The Path Forward: Improving Data to Advance Health Equity Solutions (CMS) — https://www.cms.gov/files/document/path-forwardhe-data-paper.pdf — indirect estimation (administrative data, surname, geocoding) vs self-reported data
+260	[5] Developing Health Equity Measures (HHS ASPE) — https://aspe.hhs.gov/sites/default/files/private/pdf/265566/developing-health-equity-measures.pdf — stratification by demographic and SDOH factors to identify disparities
+261	[6] Drive Health Equity Improvements with Race, Ethnicity and Language Data (Healthmine) — https://www.healthmine.com/resources/building-health-equity-campaigns-demographic-language-data — mandatory standardized collection of race, ethnicity, language, disability status in Medicaid/CHIP
+
+## risk-adjustment-equity
+262	But when the "risk" in question is a social factor — poverty, housing instability, race — risk adjustment becomes one of the most contested questions in all of quality measurement.
+263	A patient's outcome — say, whether they are readmitted within 30 days — depends heavily on factors outside the hospital's control: whether they can afford medications, have stable housing, can get to follow-up appointments, or have social support at home.
+264	Without social risk adjustment, that hospital looks worse and gets penalized — which can drain resources from exactly the institutions caring for the most vulnerable, worsening inequity.
+265	Systematic review evidence shows this narrowed the penalty gap between hospitals serving more versus fewer socially disadvantaged patients — concrete proof that social risk adjustment materially shifts who gets penalized.
+266	A 2020 report to Congress from HHS's Office of the Assistant Secretary for Planning and Evaluation (ASPE) recommended against using social risk adjustment for performance measures that reflect a provider's quality of care — precisely because doing so could obscure quality differences that ought to be surfaced and fixed.
+267	ASPE (2020) advised against it for quality measures
+268	The most influential resolution recognizes that the answer depends on what the measure is for.
+269	A 2020 ASPE report to Congress recommended against social risk adjustment for measures that reflect a provider's quality of care.
+270	[1] Social Risk Adjustment in the Hospital Readmissions Reduction Program: A Systematic Review (Health Affairs) — https://www.healthaffairs.org/doi/10.1377/hlthaff.2022.00614 — masking-vs-fairness tension; peer grouping reduced safety-net penalties
+271	[2] Adjusting Quality Measures For Social Risk Factors Can Promote Equity In Health Care (Health Affairs) — https://www.healthaffairs.org/doi/10.1377/hlthaff.2020.01764 — the case that social risk adjustment promotes equity
+272	[3] Accounting for Social Risk Factors in Medicare Payment (NASEM/ASPE) — https://www.ncbi.nlm.nih.gov/books/NBK436069/ — ASPE work; recommendation against adjusting quality-of-care measures for social risk
+273	[4] The Challenge of Adjusting Health Measures for Social Risk Factors (AJMC) — https://www.ajmc.com/view/the-challenge-of-adjusting-health-measures-for-social-risk-factors — MedPAC dual approach: unadjusted public reporting, peer comparison for penalties
+274	[5] Adjusting for social risk factors impacts performance and penalties in the HRRP (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC6407348/ — magnitude of impact of social risk adjustment on hospital penalties
+275	[6] Race adjustments in clinical algorithms can help correct for racial disparities in data quality (PNAS) — https://www.pnas.org/doi/10.1073/pnas.2402267121 — nuanced debate on race in algorithms; data-quality-by-race consideration
+
+## equity-focused-qi
+276	The framework cannot run without stratified data (Lesson 13), and it presumes good underlying data quality (Lesson 12).
+277	The first is targeted intervention: focus improvement resources specifically on the disadvantaged group experiencing the worst outcomes.
+278	A year later its overall A1c-control rate has risen, but the gap between its White and Black patients has widened.
+279	[1] Equity and Performance Improvement: A Novel Toolkit That Makes Using an Equity Lens the Default (Joint Commission Journal) — https://www.jointcommissionjournal.com/article/S1553-7250(23)00271-4/fulltext — embedding an equity lens as the default in QI
+280	[2] IHI Framework to Standardize Health Equity Measurement (IHI) — https://www.ihi.org/about/news/ihi-releases-new-framework-standardize-health-equity-measurement — four-step framework: focus area, stratification attributes, metrics per group, quantify disparity
+281	[3] Using the Model for Improvement to Improve Health, Well-Being, and Equity (IHI) — https://www.ihi.org/insights/using-model-improvement-improve-health-well-being-and-equity — population of focus; targeting interventions; reducing the gap between groups
+282	[4] Institutionalising community engagement for quality of care: moving beyond the rhetoric (PMC) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10183996/ — sharing power and co-creating solutions; risks of superficial engagement
+283	[5] Reducing Racial Disparities in Hypertension Control Using a Multicomponent, Equity-Centered Approach (PMC) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12412386/ — multicomponent interventions with community health workers and pharmacists
+284	[6] RICH LIFE Project protocol (ClinicalTrials.gov) — https://cdn.clinicaltrials.gov/large-docs/64/NCT02674464/Prot_SAP_000.pdf — multilevel intervention targeting hypertension disparities among Black Americans
+
+## pdsa-model-for-improvement
+285	This module turns to the methods for doing that, starting with the most widely used improvement framework in health care.
+286	The first is three fundamental questions that frame any improvement effort.
+287	A single PDSA cycle almost never solves a problem, and treating it as a one-shot exercise is the most common way the method fails.
+288	A team wanting to improve medication reconciliation might ramp like this: Cycle 1 — one nurse reconciles meds for one patient using a new checklist (one hour).
+289	Cycle 2 — the whole day shift uses it for a day.
+290	Cycle 3 — all shifts on one unit use it for a week.
+291	Cycle 4 — adopt as standard across units.
+292	The most common PDSA mistakes are treating a single cycle as the whole project, skipping genuinely small-scale tests, and omitting a clear prediction and learning question for each cycle.
+293	[1] Model for Improvement (IHI) — https://www.ihi.org/library/model-for-improvement — two parts: three questions and the PDSA cycle; adopted by IHI
+294	[2] The Model for Improvement: Five Critical Components (NY DOH) — https://www.health.ny.gov/statistics/chac/improvement/components.htm — the three fundamental questions and PDSA steps
+295	[3] How to Improve: Model for Improvement (AHRQ Academy) — https://integrationacademy.ahrq.gov/resources/12126 — API origin; PDSA expands the four-step cycle; Deming/Shewhart lineage
+296	[4] Ramping an existing PDSA cycle (Life QI) — https://help.lifeqisystem.com/pdsa-cycles/ramping-an-existing-pdsa-cycle — PDSA ramps; increasing scale across linked cycles
+297	[5] How to Avoid the Most Common Pitfalls in Planning PDSA Cycles (NICHQ) — https://nichq.org/blog/how-avoid-most-common-pitfalls-planning-pdsa-cycles/ — single-cycle, inadequate small-scale testing, missing learning questions
+298	[6] Plan, Do, Study, Act (PDSA) cycles and the model for improvement (NHS/AQuA) — https://aqua.nhs.uk/wp-content/uploads/2023/07/qsir-pdsa-cycles-model-for-improvement.pdf — PDSA discipline; small-scale testing; sequential learning
+
+## statistical-process-control
+299	This is the central question of improvement, and answering it wrong is one of the most common and costly mistakes in quality work.
+300	SPC was invented by the physicist Walter Shewhart in the 1920s for manufacturing and later championed in health care through the Deming lineage that also gave us the Model for Improvement.
+301	The Run Chart: The First-Step Tool
+302	A "shift" is an unusually long run of consecutive points all above or all below the median (for example, with about 20 points, a run longer than 7 signals a shift).
+303	An unusually long run of points all on one side of the median (e.g., >7 of ~20).
+304	Those control limits are typically set at ±3 standard deviations from the mean — which is why they are called "3-sigma limits." They represent the boundaries of expected common cause variation.
+305	There is a trade-off, though — the 3-sigma rule is actually less sensitive to small shifts (up to about 2 standard deviations) than the run chart's shift and crossings rules, so the tools are complementary, not strictly ranked.
+306	UCL/LCL typically set at 3 standard deviations from the mean
+307	A control chart adds a mean center line and statistically calculated control limits (typically ±3 sigma), and can detect out-of-control conditions and process stability.
+308	The 3-sigma rule is less sensitive to small shifts than run-chart rules, so run charts and control charts are complementary tools.
+309	SPC uses time-ordered charts and rules — such as a run-chart shift (a long run above the median) or a control-chart point beyond the ±3-sigma limits — to determine whether a genuine special cause (the intervention) shifted the process, rather than reacting to one data point.
+310	[1] 100th Anniversary of the Shewhart Chart: Why Do We Care?
+311	(IHI) — https://www.ihi.org/library/blog/100th-anniversary-shewhart-chart-why-do-we-care — Shewhart's invention of SPC; common vs special cause; healthcare relevance
+312	[2] A Practical Guide to QI Data Analysis: Run and Statistical Process Control Charts (AAP Hospital Pediatrics) — https://publications.aap.org/hospitalpediatrics/article/14/1/e83/196276/A-Practical-Guide-to-QI-Data-Analysis-Run-and — run and SPC charts as the backbone of QI data analysis
+313	[3] Control chart applications in healthcare: a literature review (IJMQE) — https://www.metrology-journal.org/articles/ijmqe/full_html/2018/01/ijmqe170050/ijmqe170050.html — control chart mean center line, UCL/LCL, common vs special cause
+314	[4] Run Charts Revisited: A Simulation Study of Run Chart Rules (PLOS One) — https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0113825 — shift, trend, and crossings rules and their prediction limits
+315	[5] Sense and sensibility: on the diagnostic value of control chart rules (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC6171235/ — ±3-sigma limits; 3-sigma rule less sensitive to small shifts than run-chart rules
+316	[6] Run Chart Vs Control Chart Explained (Learn Lean Sigma) — https://www.learnleansigma.com/data-analysis/run-chart-vs-control-chart-explained-with-interactive-examples/ — run chart (median, no limits) vs control chart (mean, control limits, stability detection)
+
+## quality-dashboard
+317	The most beautiful dashboard fails if the organization's culture punishes the people who surface bad numbers.
+318	It includes stratified views so disparities are visible at a glance, applying Lesson 13's principle that the average hides the inequity.
+319	Embedding SPC (Lesson 17) into the dashboard is what lets viewers tell signal from noise at a glance — so the organization reacts to real change and avoids tampering with random variation.
+320	Public transparency — the same principle behind Care Compare from Lesson 7 — adds external accountability and signals confidence.
+321	The most important decision is which measures to show — select goal-tied KPIs and balance structure, process, outcome, and balancing measures across the IOM aims.
+322	What is the most likely outcome?
+323	[1] Most Important Metrics for a Healthcare Quality Management Dashboard (symplr) — https://www.symplr.com/blog/most-important-metrics-healthcare-quality-dashboard — selecting structure/process/outcome KPIs; transparency of quality targets
+324	[2] Development of Performance Dashboards in Healthcare Sector: Key Practical Issues (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC4639357/ — dashboard design factors: scalability, customization, communication, data presentation; balanced KPIs
+325	[3] Can hospital dashboards provide visibility from bedside to board?
+326	(ResearchGate) — https://www.researchgate.net/publication/315983782_Can_hospital_dashboards_provide_visibility_of_information_from_bedside_to_board_A_case_study_approach — board-to-bedside layered visibility
+327	[4] A Practical Guide to QI Data Analysis: Run and SPC Charts (AAP) — https://publications.aap.org/hospitalpediatrics/article/14/1/e83/196276/A-Practical-Guide-to-QI-Data-Analysis-Run-and — embedding run/control charts so dashboards distinguish signal from noise
+328	[5] Just Culture: A Foundation for Balanced Accountability and Patient Safety (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC3776518/ — just culture balancing accountability and learning; systems thinking
+329	[6] Promoting a Culture of Patient Safety: Using the Principles of Just Culture (Patient Safety Journal) — https://patientsafetyj.com/article/137737 — psychological safety; non-punitive reporting; feedback loops drive reporting and learning
