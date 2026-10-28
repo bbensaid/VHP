@@ -1,0 +1,39 @@
+{
+ "tag": "deep-hesdoh",
+ "note": "Academy deep pass 2026-10-28. US infant mortality 2023 final: 560.2 per 100,000 = 5.6 per 1,000 (CDC NCHS Data Brief 521, Mortality in the United States, 2023). 5.4 was the 2021 rate. Joint Commission: effective 2026-01-01 the hospital NPSG chapter was replaced by National Performance Goals; equity requirements now sit in NPG #4 'High Quality, Safe Care for All' (jointcommission.org/en-us/standards/national-performance-goals).",
+ "only": [
+  "global-health-equity-comparison",
+  "organizational-equity-transformation"
+ ],
+ "pairs": [
+  [
+   "Infant mortality tells the same story: about 5.4 deaths per 1,000 live births in the US",
+   "Infant mortality tells the same story: about 5.6 deaths per 1,000 live births in the US in 2023"
+  ],
+  [
+   "\"label\":\"US infant deaths per 1,000 births\",\"value\":\"5.4\"",
+   "\"label\":\"US infant deaths per 1,000 births (2023)\",\"value\":\"5.6\""
+  ],
+  [
+   "and infant mortality (~5.4 per 1,000) exceeds the OECD average",
+   "and infant mortality (~5.6 per 1,000 in 2023) exceeds the OECD average"
+  ],
+  [
+   "US infant mortality ~5.4 vs OECD ~4.0",
+   "US infant mortality ~5.6 (2023, CDC NCHS) vs OECD ~4.0"
+  ],
+  [
+   "highest among comparable nations\",\"value\":\"5.4\"",
+   "highest among comparable nations\",\"value\":\"5.6\""
+  ],
+  [
+   "signaling that inequitable care is a safety failure.",
+   "signaling that inequitable care is a safety failure. Effective January 1, 2026, the Joint Commission replaced its National Patient Safety Goals for hospitals with National Performance Goals, folding the equity requirements into NPG #4, \"High Quality, Safe Care for All.\""
+  ],
+  [
+   "The Joint Commission made equity a Leadership standard (Jan 2023) and a National Patient Safety Goal (July 2023), codifying SDOH screening, disparity analysis, and action plans.",
+   "The Joint Commission made equity a Leadership standard (Jan 2023) and a National Patient Safety Goal (July 2023), codifying SDOH screening, disparity analysis, and action plans; since January 2026 these requirements sit in National Performance Goal #4."
+  ]
+ ],
+ "residue": "5\\.4 (deaths|per 1,000)|~5\\.4"
+}
