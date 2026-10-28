@@ -1,5 +1,7 @@
 import { client } from "@/lib/sanity";
+import Link from "next/link";
 import AcademyCard from "@/components/academy/AcademyCard";
+import { isUpcoming } from "@/lib/webinar-calendar";
 
 export const metadata = {
   title: "Webinars & Roundtables | HTR Academy",
@@ -14,19 +16,27 @@ interface Webinar {
   date: string;
   duration?: string;
   slug: string;
+  registrationLink?: string;
+  recordingUrl?: string;
 }
 
 async function getWebinars() {
-  const query = `*[_type == "webinar"] | order(date asc) {
-    _id, title, pillar, description, date, duration, "slug": slug.current
+  const query = `*[_type == "webinar" && defined(date)] | order(date asc) {
+    _id, title, pillar, description, date, duration, "slug": slug.current,
+    registrationLink, "recordingUrl": coalesce(video.url, recordingUrl)
   }`;
   return client.fetch(query, {}, { next: { revalidate: 60 } });
 }
 
+type CardPillar = "Policy" | "Economics" | "Technology" | "General";
+
 export default async function WebinarsPage() {
   const allWebinars: Webinar[] = await getWebinars();
-  const featured = allWebinars.length > 0 ? allWebinars[0] : null;
-  const upcoming = allWebinars.length > 1 ? allWebinars.slice(1) : [];
+  const now = Date.now();
+  const upcomingAll = allWebinars.filter((w) => isUpcoming(w.date, w.duration, now));
+  const past = allWebinars.filter((w) => !isUpcoming(w.date, w.duration, now)).reverse();
+  const featured = upcomingAll[0] ?? null;
+  const upcoming = upcomingAll.slice(1);
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
@@ -52,11 +62,17 @@ export default async function WebinarsPage() {
                 <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold uppercase inline-block">Next Up</span>
                 <span className="text-sm font-bold text-slate-500">{formatDate(featured.date)}</span>
               </div>
-              <h2 className="ty-h1 font-bold text-slate-900 mb-4">{featured.title}</h2>
+              <h2 className="ty-h1 font-bold text-slate-900 mb-4">
+                <Link href={`/academy/webinars/${featured.slug}`} className="hover:text-indigo-700">{featured.title}</Link>
+              </h2>
               <p className="ty-hero text-slate-600 mb-6">{featured.description}</p>
-              <div className="flex gap-4">
-                <button className="px-6 py-3 bg-indigo-600 text-white font-bold rounded hover:bg-indigo-700 shadow-md transition-all">Register Free</button>
-                <button className="px-6 py-3 border border-gray-300 font-bold rounded hover:bg-gray-50 text-slate-700">Add to Calendar</button>
+              <div className="flex flex-wrap gap-4">
+                {featured.registrationLink ? (
+                  <a href={featured.registrationLink} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-indigo-600 text-white font-bold rounded hover:bg-indigo-700 shadow-md transition-all">Register Free</a>
+                ) : (
+                  <span className="px-6 py-3 bg-slate-100 text-slate-500 font-bold rounded">Registration opens soon</span>
+                )}
+                <a href={`/academy/webinars/${featured.slug}/ics`} className="px-6 py-3 border border-gray-300 font-bold rounded hover:bg-gray-50 text-slate-700">Add to Calendar</a>
               </div>
             </div>
             <div className="md:w-1/3 bg-indigo-800 h-48 w-full rounded-lg flex items-center justify-center text-white/20 font-bold text-4xl border border-indigo-700">HTR</div>
@@ -70,9 +86,20 @@ export default async function WebinarsPage() {
         {upcoming.length > 0 && (
           <>
             <h3 className="text-2xl font-bold text-slate-900 mb-6">Upcoming Schedule</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
               {upcoming.map((webinar) => (
-                <AcademyCard key={webinar._id} type="WEBINAR" pillar={(webinar.pillar ?? "General") as "Policy" | "Economics" | "Technology" | "General"} title={webinar.title} description={webinar.description ?? ""} meta={formatDate(webinar.date)} price="Free" href={`/academy/webinars/${webinar.slug}`} />
+                <AcademyCard key={webinar._id} type="WEBINAR" pillar={(webinar.pillar ?? "General") as CardPillar} title={webinar.title} description={webinar.description ?? ""} meta={formatDate(webinar.date)} price="Free" href={`/academy/webinars/${webinar.slug}`} />
+              ))}
+            </div>
+          </>
+        )}
+
+        {past.length > 0 && (
+          <>
+            <h3 className="text-2xl font-bold text-slate-900 mb-6">Past Sessions</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {past.map((webinar) => (
+                <AcademyCard key={webinar._id} type="WEBINAR" pillar={(webinar.pillar ?? "General") as CardPillar} title={webinar.title} description={webinar.description ?? ""} meta={webinar.recordingUrl ? "Recording available" : `Held ${formatDate(webinar.date)}`} price="Free" href={`/academy/webinars/${webinar.slug}`} />
               ))}
             </div>
           </>

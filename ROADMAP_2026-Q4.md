@@ -50,6 +50,16 @@ and sources.
 
 Fix copy to an honest status now; replace with real content as Part 2 lands.
 
+**DONE 2026-10-28.** Live Sanity check: 0 `webinar` docs, 0 video blocks in any document.
+- Podcasts: copy already said "In development"; `/connect/alerts` link already gone (fixed earlier).
+- Webinars: upcoming vs. past derived from `date` + `duration` (`lib/webinar-calendar.ts`);
+  "Register Free" is a real link to `registrationLink` (else "Registration opens soon");
+  "Add to Calendar" downloads `/academy/webinars/<slug>/ics`. Detail page: removed the
+  unverified "CE Credit: Pending ANCC" row and the "recording within 48 hours" promise.
+- Schema: `chapterRef` help text 1–16; new `recordingUrl` field (shown on past events).
+- `/media/videos`: honest empty state ("No videos published yet" → `/book`), search bar hidden
+  when empty. Its own `video` source is still 2.4.
+
 ### 1.4 Narration drifted again — **[Author approves run]**, Claude runs it
 Audio was re-recorded 2026-10-07. Book edits on 2026-10-17/18/19 (Preface/Intro,
 Ch2, Ch6, Ch7, Ch11, Ch12 §12.7 cut, Appendix D) post-date it. Regenerate only the
