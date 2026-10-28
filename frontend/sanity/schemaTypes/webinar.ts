@@ -41,7 +41,7 @@ export default defineType({
       name: 'chapterRef',
       title: 'Book Chapter',
       type: 'string',
-      description: 'Book chapter number ("1"–"20") this event ties into. Optional.',
+      description: 'Book chapter number ("1"–"16") this event ties into. Optional.',
     }),
     defineField({
       name: 'description',
@@ -64,6 +64,13 @@ export default defineType({
       name: 'registrationLink',
       title: 'Registration URL',
       type: 'url',
+      description: 'Zoom / StreamYard / Luma registration page. Leave empty and the page says registration is not open yet.',
+    }),
+    defineField({
+      name: 'recordingUrl',
+      title: 'Recording URL',
+      type: 'url',
+      description: 'YouTube/Vimeo link to the recording. Shown once the event has ended. Upcoming/past status comes from the date.',
     }),
     defineField({
       name: 'image',

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import VideoBlock from "@/components/VideoBlock";
+import { isUpcoming } from "@/lib/webinar-calendar";
 
 export const revalidate = 0;
 
@@ -17,7 +18,7 @@ async function getWebinar(slug: string) {
     duration,
     pillar,
     registrationLink,
-    "videoUrl": video.url,
+    "videoUrl": coalesce(video.url, recordingUrl),
     "videoCaption": video.caption,
     "imageUrl": image.asset->url,
     "speakers": speakers[]->{
@@ -51,6 +52,7 @@ export default async function WebinarDetailPage({
 
   const pillarStyle = pillarColors[webinar.pillar] ?? "bg-slate-100 text-slate-600 border-slate-200";
   const displayDate = webinar.date ?? webinar.publishedAt;
+  const upcoming = webinar.date ? isUpcoming(webinar.date, webinar.duration) : false;
 
   return (
     <div className="min-h-screen bg-white pb-20 font-sans text-slate-800">
@@ -124,10 +126,11 @@ export default async function WebinarDetailPage({
             <div className="aspect-video bg-linear-to-br from-indigo-900 to-slate-900 rounded-2xl flex items-center justify-center shadow-xl">
               <div className="text-center text-white px-8 max-w-lg">
                 <div className="text-5xl mb-4">🎥</div>
-                <p className="font-black text-xl mb-2">Recording Not Yet Available</p>
+                <p className="font-black text-xl mb-2">{upcoming ? "Not Yet Held" : "No Recording Posted"}</p>
                 <p className="text-slate-300 text-sm leading-relaxed">
-                  This webinar has not yet taken place, or the recording is being processed.
-                  Register below and you will receive access as soon as it is published.
+                  {upcoming
+                    ? "This session has not taken place yet. If it is recorded, the recording will be posted on this page."
+                    : "This session has ended and no recording has been posted."}
                 </p>
               </div>
             </div>
@@ -176,7 +179,7 @@ export default async function WebinarDetailPage({
               <p className="text-2xl font-black text-indigo-900">Open Access</p>
             </div>
 
-            {webinar.registrationLink ? (
+            {upcoming && webinar.registrationLink ? (
               <a
                 href={webinar.registrationLink}
                 target="_blank"
@@ -186,9 +189,18 @@ export default async function WebinarDetailPage({
                 Register Now →
               </a>
             ) : (
-              <button className="w-full py-4 bg-slate-100 text-slate-400 font-bold rounded-xl text-center cursor-not-allowed" disabled>
-                Registration Closed
-              </button>
+              <p className="w-full py-4 bg-slate-100 text-slate-500 font-bold rounded-xl text-center">
+                {upcoming ? "Registration opens soon" : "This session has ended"}
+              </p>
+            )}
+
+            {upcoming && (
+              <a
+                href={`/academy/webinars/${slug}/ics`}
+                className="block w-full py-3 border border-slate-300 hover:bg-slate-50 text-slate-700 font-bold rounded-xl text-center transition-colors"
+              >
+                Add to Calendar
+              </a>
             )}
 
             <div className="space-y-3 pt-4 border-t border-slate-100 text-sm">
@@ -214,18 +226,8 @@ export default async function WebinarDetailPage({
               )}
               <div className="flex justify-between">
                 <span className="text-slate-400">Format</span>
-                <span className="font-bold text-slate-700">Live + Recording</span>
+                <span className="font-bold text-slate-700">{upcoming ? "Live online" : webinar.videoUrl ? "Recording" : "Held live"}</span>
               </div>
-              <div className="flex justify-between">
-                <span className="text-slate-400">CE Credit</span>
-                <span className="font-bold text-slate-700">Pending ANCC</span>
-              </div>
-            </div>
-
-            <div className="pt-4 border-t border-slate-100">
-              <p className="text-xs text-slate-400 text-center leading-relaxed">
-                Can&apos;t attend live? A recording will be available to registered attendees within 48 hours.
-              </p>
             </div>
           </div>
         </div>

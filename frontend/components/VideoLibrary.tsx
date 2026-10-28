@@ -133,8 +133,11 @@ export default function VideoLibrary({ allVideos }: { allVideos: Video[] }) {
           Video Library
         </h1>
         <p className="ty-hero text-slate-600 max-w-3xl">
-          An interactive archive of all video briefings. Use the search below or filter by category within each pillar.
+          {allVideos.length > 0
+            ? "An interactive archive of all video briefings. Use the search below or filter by category within each pillar."
+            : "Video briefings, chapter explainers and tool walkthroughs will be collected here as they are published."}
         </p>
+        {allVideos.length > 0 && (
         <div className="mt-8 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
           <div className="relative max-w-lg w-full">
             <MagnifyingGlassIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 pointer-events-none" />
@@ -165,6 +168,7 @@ export default function VideoLibrary({ allVideos }: { allVideos: Video[] }) {
             </button>
           )}
         </div>
+        )}
       </header>
       
       {allVideos.length > 0 ? (
@@ -253,10 +257,14 @@ export default function VideoLibrary({ allVideos }: { allVideos: Video[] }) {
         </div>
       ) : (
         <div className="text-center py-24 border border-dashed border-slate-200 rounded-xl bg-slate-50">
-          <h2 className="text-2xl font-bold text-slate-700">No Videos Found</h2>
-          <p className="mt-2 text-slate-500">
-            There are currently no videos available in the content library.
+          <h2 className="text-2xl font-bold text-slate-700">No videos published yet</h2>
+          <p className="mt-2 text-slate-500 max-w-xl mx-auto">
+            The first videos are in production. In the meantime, every chapter of the book can be
+            read online with its narrated audio.
           </p>
+          <Link href="/book" className="inline-block mt-6 px-6 py-3 bg-indigo-600 text-white font-bold rounded-full hover:bg-indigo-700 transition-colors">
+            Read the book
+          </Link>
         </div>
       )}
     </div>
