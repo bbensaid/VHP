@@ -1,0 +1,153 @@
+
+## hea-measurement-foundations
+0	NCQA — nearly a 4.4x expansion in two measurement years
+1	NCQA HEDIS measures stratified by race/ethnicity, MY2022 → MY2024
+2	Priorities in the CMS Framework for Health Equity 2022–2032
+3	Truong et al., Medical Care 2020 — 2016–2017 National Inpatient Sample
+4	This platform's own Health Equity Studio computes a composite it calls HEROI — Health Equity Return on Investment — as a weighted average across five dimensions: Access Equity (25%), Quality Equity (25%), Outcome Equity (25%), SDOH Burden (15%), and Trust & Engagement (10%).
+5	Those five weights are not arbitrary; they come from the book's own definition of the metric (Chapter 10, section 10.13.1) and they map directly onto the five lessons in this course.
+6	Lesson 2 covers the decomposition arithmetic underneath Access, Quality, and Outcome equity — rate differences, rate ratios, and summary indices.
+7	Lesson 3 covers how quality gets stratified in practice through HEDIS and NCQA reporting.
+8	Lesson 4 covers how SDOH Burden actually gets scored, from individual screening tools to area-level composite indices.
+9	Lesson 5 covers the weighting logic itself — how five separate 0–100 scores become one number — using HEROI as a fully worked, hands-on example.
+10	Lesson 6 closes the loop from score to organizational action.
+11	The infrastructure for this kind of measurement has expanded rapidly since 2022.
+12	NCQA began requiring race and ethnicity stratification for HEDIS measures in Measurement Year 2022, starting with 5 measures; that grew to 22 measures by Measurement Year 2024, part of what NCQA describes as folding health equity into all of its offerings rather than treating it as a side program.
+13	Separately, the CMS Office of Minority Health published a ten-year Framework for Health Equity 2022–2032, organized around five priorities, the first of which is expanding the collection, reporting, and analysis of standardized demographic data — the raw material every method in this course depends on.
+14	CMS's Contract Year 2027 Medicare Advantage and Part D final rule did not implement the Health Equity Index reward for Star Ratings that CMS had finalized in 2023 — a reward that would have specifically incentivized closing gaps for disadvantaged enrollees.
+15	CMS Framework for Health Equity 2022–2032 — Five Priorities
+16	ICD-10-CM has carried a dedicated block of diagnosis codes for social determinants — Z55 through Z65, covering housing instability, food insecurity, transportation barriers, and similar factors — for years, and the Gravity Project has partnered with the American Medical Association to build standardized crosswalks from common screening tools directly to those codes.
+17	Despite that infrastructure, an analysis of the 2016–2017 National Inpatient Sample (Truong et al., Medical Care, 2020) found that only about 1.9% of inpatient hospital admissions carried an SDOH Z-code.
+18	This platform's HEROI composite weights five dimensions — Access (25%), Quality (25%), Outcome (25%), SDOH Burden (15%), Trust & Engagement (10%) — and this course is built lesson-by-lesson around those five dimensions.
+19	NCQA expanded race/ethnicity-stratified HEDIS measures from 5 (MY2022) to 22 (MY2024), a real and rapid build-out of measurement infrastructure.
+20	CMS declined to implement its previously finalized Health Equity Index reward for 2027 Medicare Advantage Star Ratings, continuing the historical Reward Factor instead — measurement and incentive are not moving at the same pace.
+21	Only about 1.9% of inpatient admissions carry an SDOH Z-code despite the codes and crosswalks existing — a documentation gap that will understate any claims-based social-risk score.
+22	National Inpatient Sample data (Truong et al., 2020) show SDOH Z-codes on about 1.9% of inpatient admissions, even though the codes are part of ICD-10-CM and the Gravity Project and AMA publish crosswalk tools for them — the low rate reflects a documentation gap, not a true absence of need.
+23	Only 2% of patients have any social risk factors
+24	SDOH Z-codes are not a real part of ICD-10-CM
+25	A hospital reports that only 2% of its admissions carry an SDOH Z-code.
+26	What is the most defensible interpretation?
+27	[1] NCQA, Race and Ethnicity Stratification of HEDIS Measures — https://www.ncqa.org/health-equity/data-and-measurement/ — MY2022 (5 measures) to MY2024 (22 measures) stratification expansion
+28	[2] CMS Office of Minority Health, CMS Framework for Health Equity 2022–2032 — https://www.cms.gov/files/document/cms-framework-health-equity.pdf — the five priorities
+29	[3] CMS, Contract Year 2027 Medicare Advantage and Part D Final Rule Fact Sheet — https://www.cms.gov/newsroom/fact-sheets/contract-year-2027-medicare-advantage-part-d-final-rule — Health Equity Index reward not implemented; historical Reward Factor continued
+30	[4] Truong HP et al., "Utilization of Social Determinants of Health ICD-10 Z-Codes Among Hospitalized Patients in the United States, 2016–2017," Medical Care (2020) — https://pmc.ncbi.nlm.nih.gov/articles/PMC7666017/ — 1.9% of 14.3 million admissions carried an SDOH Z-code
+31	[5] CMS, Mapping Medicare Disparities (MMD) Tool — https://www.cms.gov/priorities/health-equity/minority-health/research-data/mapping-medicare-disparities-tool-mmd — launched March 2016
+
+## hea-disparity-decomposition
+32	Suppose Group A has an adverse-outcome rate of 20% and Group B has a rate of 10%.
+33	The rate difference — the absolute disparity — is 10 percentage points.
+34	The rate ratio — the relative disparity — is 2.0: Group A's rate is twice Group B's.
+35	The rate difference answers "how many more people in Group A are affected, in absolute terms?" The rate ratio answers "how much more likely is Group A to be affected, relative to Group B?" A disparity that looks modest on one scale can look large on the other: a rate difference of 2 percentage points sounds small, but if the reference rate is only 1%, that same gap is a 3x rate ratio.
+36	AHRQ's National Healthcare Quality and Disparities Report — the federally mandated annual disparities report — uses both scales at once: it counts a gap as a disparity only when the absolute difference between a priority population and its reference group is statistically significant and the relative difference is at least 10%.
+37	Notice the second and third rows: an identical 10-point rate difference (row 1 and row 3) produces very different rate ratios (2.0x vs. 1.2x) depending on the baseline rate, and a small 2-point difference (row 2) can still be a 3x ratio when the baseline is low.
+38	Jeffrey Pearcy and Kenneth Keppel addressed this directly in a 2002 Public Health Reports paper written to help track progress toward the original Healthy People 2010 disparity-elimination goal.
+39	Applying it, they found that gender disparity in cardiovascular disease deaths declined between 1989 and 1998, while racial and ethnic disparity in the same outcome stayed essentially unchanged over the same period — a single index number carrying two very different underlying trends, disaggregated by which grouping variable you choose.
+40	Public Health Reports, Vol. 117
+41	AHRQ's NHQDR methods documentation states its choice explicitly — the largest subgroup or the subgroup that typically receives the best care (for example non-Hispanic White, high income, private insurance) — and the choice matters: comparing every subgroup to the population's single best-performing group makes every gap look as large as possible, since the comparison point is the ceiling.
+42	A rate computed from 20 patients can jump from 5% to 15% with just two additional events (1 of 20 to 3 of 20) — noise, not a real change in underlying risk.
+43	CMS's Office of Minority Health launched the MMD Tool in March 2016 to increase understanding of disparities among Medicare beneficiaries — and in doing so it makes the reference-group and small-numbers problems this lesson describes solvable for public users without requiring each analyst to make those calls independently.
+44	The tool tracks up to 60 chronic and potentially disabling conditions plus end-stage renal disease and disability status, along with Medicare spending, hospital and emergency-department utilization, preventable hospitalizations, readmissions, and mortality — and it applies its own pre-set suppression rules and reference-group conventions consistently across all of that, so a researcher or advocate downloading its tables inherits a defensible, disclosed set of methods choices rather than having to invent one from scratch.
+45	Pearcy and Keppel's 2002 Index of Disparity summarizes a gap across many subgroups at once into a single trackable percentage, developed to monitor progress toward Healthy People 2010's disparity-elimination goal.
+46	CMS's Mapping Medicare Disparities Tool (2016) is a working example of solving these problems once, centrally, rather than leaving every downstream analyst to remake the same methods decisions inconsistently.
+47	These decomposition methods are the arithmetic underneath the Access, Quality, and Outcome dimensions of this platform's HEROI composite, covered in Lesson 5.
+48	What is the most likely effect on the reported disparities?
+49	[1] Pearcy JN, Keppel KG.
+50	Public Health Reports 2002;117(3):273 — https://journals.sagepub.com/doi/abs/10.1093/phr/117.3.273 — the Index of Disparity methodology
+51	[2] AHRQ, Methods of the National Healthcare Quality and Disparities Report — https://www.ncbi.nlm.nih.gov/books/NBK600456/ — disparity test (significant absolute difference plus relative difference of at least 10%), reference groups, and small-sample suppression
+52	[3] CMS, Mapping Medicare Disparities (MMD) Tool — https://www.cms.gov/priorities/health-equity/minority-health/research-data/mapping-medicare-disparities-tool-mmd — launched 2016, Population and Hospital views
+53	[4] AHRQ, About the CAHPS Program — https://www.ahrq.gov/cahps/about-cahps/index.html — program began 1995
+
+## hea-stratified-quality-measurement
+54	NCQA began requiring this for HEDIS measures in Measurement Year 2022, starting with 5 measures.
+55	By Measurement Year 2024, that had grown to 22 measures, and NCQA continued proposing further additions and revisions for Measurement Year 2025 — part of a stated strategy of building health equity into all of its measurement offerings rather than running it as a separate initiative alongside standard HEDIS.
+56	HEDIS measures stratified by race/ethnicity, MY2022
+57	HEDIS measures stratified by race/ethnicity, MY2024
+58	Covered lives represented across those 101 contracts
+59	In April 2023 CMS finalized a Health Equity Index reward — later renamed the "Excellent Health Outcomes for All" reward — as a new Medicare Advantage Star Ratings incentive specifically designed to reward plans for improving performance among disadvantaged subsets of their enrollees, rather than rewarding uniformly high performance across everyone.
+60	In the Contract Year 2027 Medicare Advantage and Part D final rule, CMS did not implement that reward, choosing instead to continue the pre-existing, non-equity-targeted Reward Factor, which rewards plans for consistently high performance across all enrollees regardless of whether gaps between subgroups are narrowing.
+61	Meanwhile, NCQA's own stratified-measure requirement kept expanding across the same period, from 5 measures to 22.
+62	Rush University Medical Center's health equity approach, documented in a May 2021 NEJM Catalyst article, "Health Equity as a System Strategy: The Rush University Medical Center Framework" (Ansell et al.), started from what its community health needs assessment showed: large life-expectancy gaps between downtown Chicago and the West Side neighborhoods Rush serves.
+63	Concretely, Rush organized an internal Anchor Mission committee in January 2017 that set targets for local hiring, career pathways, local spending, and volunteering, reporting to senior leadership twice a year, and a multidisciplinary Health Equity Governance Committee that steers improvement projects on racial, ethnic, gender, and age inequities in patient outcomes — the kind of gap only stratified data can surface.
+64	NCQA grew its stratified-measure requirement from 5 measures (MY2022) to 22 measures (MY2024), covering 101 studied contracts and 19M+ covered lives in its Learning Network.
+65	CMS declined to implement its previously finalized Health Equity Index reward for 2027 Medicare Advantage Star Ratings, continuing the non-equity-targeted historical Reward Factor instead — a real, current example of measurement outrunning incentive.
+66	[1] NCQA, Expansion of Race and Ethnicity Stratification — https://wpcdn.ncqa.org/www-prod/wp-content/uploads/2023/02/02.-Race-Ethnicity.pdf — MY2022→MY2024 measure count growth, direct vs. indirect data requirement
+67	[2] NCQA Race and Ethnicity Stratification Learning Network — https://res.ncqa.org/ — 101 contracts, 19M+ covered lives
+68	[3] CMS, Contract Year 2027 Medicare Advantage and Part D Final Rule Fact Sheet — https://www.cms.gov/newsroom/fact-sheets/contract-year-2027-medicare-advantage-part-d-final-rule — Health Equity Index reward not implemented for 2027
+69	[4] Ansell DA, Oliver-Hightower D, Goodman LJ, Lateef OB, Johnson TJ, "Health Equity as a System Strategy: The Rush University Medical Center Framework," NEJM Catalyst, May 2021 — https://catalyst.nejm.org/doi/full/10.1056/CAT.20.0674 — Anchor Mission committee, Health Equity Governance Committee, West Side United
+
+## hea-sdoh-burden-scoring
+70	The first is answered by an individual-level screening tool, administered directly to a patient during an encounter.
+71	PRAPARE (the Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences) was developed in 2013 by the National Association of Community Health Centers, in partnership with the Association of Asian Pacific Community Health Organizations and the Oregon Primary Care Association.
+72	It screens for 22 distinct social determinants of health factors — housing, food security, transportation, income, and more.
+73	A deliberate design choice made PRAPARE unusually easy to adopt at scale: it was standardized against ICD-10, LOINC, and SNOMED CT codes from the start, so a clinician's answers translate directly into documentable, interoperable data rather than a free-text note.
+74	That standardization is a large part of why PRAPARE became one of the most widely used SDOH screening tools in U.S. community health centers, is available free in most major EHR platforms, and has been translated into 26 languages.
+75	PRAPARE's codification against LOINC, SNOMED CT, and ICD-10 (including the SDOH Z-codes covered later in this lesson) is precisely what let it scale into "most major EHR platforms" rather than remaining a paper form or a locally built questionnaire.
+76	A screening tool that produces answers a system cannot store, query, or aggregate is much harder to turn into a population-level score — the standardization decision made at PRAPARE's creation in 2013 is inseparable from its later adoption.
+77	The CDC/ATSDR Social Vulnerability Index (SVI) uses 16 variables drawn from the 5-year American Community Survey, grouped into four themes — socioeconomic status; household composition and disability; minority status and language; and housing type and transportation — combined into a single percentile ranking (0 to 1, higher meaning more vulnerable) at the census-tract level.
+78	A distinct approach is the Area Deprivation Index (ADI), an older federally developed index that Amy Kind's team at the University of Wisconsin–Madison refined, adapted, and validated to the census block-group level; Kind and William Buckingham described that work in a 2018 New England Journal of Medicine perspective, "Making Neighborhood-Disadvantage Metrics Accessible — The Neighborhood Atlas." The ADI ranks census block groups on 17 measures spanning income, education, employment, and housing quality.
+79	Kind & Buckingham, NEJM 2018
+80	Choose which underlying factors count toward deprivation — SVI's four themes, or the ADI's 17 measures.
+81	Convert each raw variable (income, percent without a vehicle, educational attainment, and so on) onto a common scale — typically a percentile rank or z-score — so measures in different units can be combined meaningfully.
+82	ICD-10-CM diagnosis codes Z55 through Z65 exist specifically to document social determinants of health inside a clinical encounter — housing instability, food insecurity, transportation barriers, and related factors.
+83	Despite that infrastructure, an analysis of the 2016–2017 National Inpatient Sample (Truong et al., Medical Care, 2020) found only about 1.9% of inpatient hospital admissions carried an SDOH Z-code.
+84	PRAPARE (NACHC, 2013) screens 22 SDOH factors, is codified against ICD-10/LOINC/SNOMED, is free in most EHRs, and is translated into 26 languages — its standardization is a large part of why it scaled.
+85	The CDC/ATSDR Social Vulnerability Index uses 16 variables across 4 themes; the Area Deprivation Index (Kind & Buckingham, NEJM 2018) uses 17 measures via the Neighborhood Atlas — different, equally valid area-level approaches.
+86	In 2016–2017 national inpatient data only about 1.9% of admissions carried an SDOH Z-code (Truong et al., 2020), so any claims-based SDOH burden score will understate true social risk unless it corrects for this documentation gap.
+87	This lesson's SDOH scoring methodology is the direct input to the SDOH Burden dimension (15% weight) of this platform's HEROI composite, covered next in Lesson 5.
+88	What is the most appropriate approach from this lesson?
+89	[1] NACHC, PRAPARE — https://www.nachc.org/resource/prapare/ — 22 factors, developed 2013, EHR availability and language translations
+90	[2] CDC/ATSDR, Social Vulnerability Index — https://www.atsdr.cdc.gov/place-health/php/svi/index.html — 16 variables, 4 themes
+91	[3] Kind AJH, Buckingham WR.
+92	NEJM 2018;378:2456-2458 — https://www.nejm.org/doi/10.1056/NEJMp1802313 — Area Deprivation Index, 17 measures
+93	[4] Truong HP et al., "Utilization of Social Determinants of Health ICD-10 Z-Codes Among Hospitalized Patients in the United States, 2016–2017," Medical Care (2020) — https://pmc.ncbi.nlm.nih.gov/articles/PMC7666017/ — 1.9% of 14.3 million admissions coded
+94	[5] CMS/Gravity Project SDOH Z-code resource — https://www.cms.gov/files/document/cms-2023-omh-z-code-resource.pdf — Z55–Z65 crosswalks
+
+## hea-equity-weighted-economics
+95	Conventional cost-effectiveness analysis (CEA) asks one question: for a given budget, which intervention produces the most total health, usually measured in quality-adjusted life years (QALYs)?
+96	Richard Cookson, Susan Griffin, Ole Norheim, and Anthony Culyer formalized this field in their 2020 Oxford University Press volume, Distributional Cost-Effectiveness Analysis: Quantifying Health Equity Impacts and Trade-Offs.
+97	At ε = 0, there is no special priority given to the worst-off group, and DCEA collapses back to standard CEA.
+98	When Robson, Asaria, Cookson, Tsuchiya, and Ali surveyed 244 members of the English public (Health Economics, 2017), the median response implied an Atkinson ε of 10.95 — enough to weight health gains to the poorest fifth of society six to seven times as highly as gains to the richest fifth.
+99	A thumb placed lightly on one side of a balance scale (ε = 0.5) tips the result somewhat toward that side without ignoring the other; a thumb pressed down hard (a large ε) can outweigh almost anything on the other side.
+100	No thumb at all (ε = 0) means the scale reads exactly as if the two sides were never distinguished — which is what standard, equity-blind cost-effectiveness analysis does.
+101	Robson et al., Health Economics 2017
+102	Median Atkinson ε elicited from the English public (survey, n = 244)
+103	This platform's Health Equity Studio computes HEROI (Health Equity Return on Investment) as a weighted average of five 0–100 dimension scores, each fed by a different tab of the same tool: Access Equity (25%), Quality Equity (25%), Outcome Equity (25%), SDOH Burden (15%), and Trust & Engagement (10%).
+104	Quality Equity and Outcome Equity apply the same disparity-decomposition logic taught in Lesson 2 to quality and outcome measures, respectively.
+105	SDOH Burden reuses the exact composite-scoring method built in the tool's SDOH Composite & ROI tab — the same construction method taught in Lesson 4 of this course.
+106	Disparity decomposition (Lesson 2 methods) applied to stratified quality measures.
+107	The composite SDOH score from the SDOH Composite & ROI tab, built via the domain-selection/standardization/weighting method taught in Lesson 4.
+108	This is the same tool referenced in Lesson 1; by this point in the course, every one of its five dimensions should be traceable to a method you have now learned.
+109	CAHPS is an AHRQ program dating to 1995, covering standardized patient-experience surveys across ambulatory care, hospitals, and other settings; it is the reference standard the proxy is standing in for, and it is covered directly in Lesson 6.
+110	Kaiser Permanente received the American Hospital Association's 2017 Equity of Care Award largely for its Equitable Care Health Outcomes (ECHO) program, launched in 2010 to close two specific, measured gaps: hypertension control among African-American members and colorectal cancer screening among Hispanic members.
+111	Kaiser Permanente — Equity of Care Award, 2017
+112	Distributional cost-effectiveness analysis (Cookson, Griffin, Norheim & Culyer, 2020) extends CEA with an equity weight derived from the Atkinson index of inequality aversion, denoted ε.
+113	At ε = 0, DCEA collapses to standard CEA; a 2017 survey of the English public (Robson et al.) elicited a median ε of 10.95 — the chosen value is a stated judgment call, not a measured fact.
+114	This platform's HEROI composite weights Access, Quality, and Outcome Equity at 25% each, SDOH Burden at 15%, and Trust & Engagement at 10%, combining five dimension scores this course teaches how to build.
+115	Kaiser Permanente's 2017 AHA Equity of Care Award, earned largely for its ECHO program targeting two specific measured gaps, illustrates that an equity score is only as useful as the sustained work built to act on it.
+116	At ε = 0 there is no special priority for the worst-off group, so DCEA mathematically reduces to standard CEA — larger ε values, not smaller, are what shift weight toward the worst-off.
+117	ε = 0 is not a valid value in DCEA
+118	In distributional cost-effectiveness analysis, what happens to the equity weight when the inequality-aversion parameter ε is set to 0?
+119	[1] Cookson R, Griffin S, Norheim OF, Culyer AJ (eds).
+120	Oxford University Press, 2020 — https://global.oup.com/academic/product/distributional-cost-effectiveness-analysis-9780198838197
+121	[2] Cookson R et al., "Distributional Cost-Effectiveness Analysis Comes of Age," Value in Health (2021) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7813213/ — DCEA methods and equity weights; Robson M, Asaria M, Cookson R, Tsuchiya A, Ali S, "Eliciting the level of health inequality aversion in England," Health Economics 2017;26(10):1328-1334 — median Atkinson ε 10.95
+122	[3] American Hospital Association, AHA Recognizes Kaiser Permanente with 2017 Equity of Care Award — https://www.aha.org/press-releases/2017-06-20-aha-recognizes-kaiser-permanente-2017-equity-care-award — ECHO program (2010), board diversity, community health investment
+
+## hea-from-score-to-action
+123	The Consumer Assessment of Healthcare Providers and Systems (CAHPS) program is an AHRQ initiative dating to 1995.
+124	CAHPS is the reference standard Lesson 5's Trust & Engagement proxy is standing in for.
+125	Real CAHPS data, stratified by race, ethnicity, and language the way Lesson 3's HEDIS measures are stratified, would let a Trust dimension measure what patients actually report about being heard and treated with respect — rather than the indirect signal a system without direct CAHPS access has to substitute in its place.
+126	A 2023 Lancet Digital Health review of the disparity-dashboard literature (Gallifant et al.) found that dashboards stratifying data by race, ethnicity, or other subgroup are increasingly common, but only six of the studies it evaluated used a dashboard as part of a wider process to identify disparities, hypothesize interventions, or track progress toward a goal.
+127	Compute the stratified rate, the composite SDOH score, or the HEROI dimension, using the methods from Lessons 2 through 5.
+128	A staffing gap, a referral-pathway gap, a documentation gap (recall Lesson 4's SDOH Z-code problem), and a genuine access barrier each call for a different fix.
+129	It mirrors Priority 2 of the CMS Framework for Health Equity 2022–2032, in which CMS commits to assess the causes of disparities within its own programs and address inequities in its policies and operations, not just document that disparities exist.
+130	In West Side ConnectED, Rush, the University of Illinois Hospital, AMITA Health Saints Mary and Elizabeth Medical Center, and Mount Sinai Hospital share a seven-question emergency-department screening tool, and Catholic Charities linked the hospitals to about 30 partner agencies ready to take referrals.
+131	Inside Rush, an Anchor Mission committee organized in January 2017 sets targets for local hiring, career pathways, local spending, and volunteering and reports to senior leadership twice a year, and a Health Equity Governance Committee steers improvement work on inequities in patient outcomes (Ansell et al., NEJM Catalyst, 2021).
+132	CAHPS (AHRQ, since 1995) is the real, patient-reported data source that Lesson 5's Trust & Engagement proxy is standing in for — it measures what patients actually report, not what a proxy infers.
+133	A 2023 Lancet Digital Health review (Gallifant et al.) found that only six of the dashboard studies it evaluated used the dashboard within a wider process to identify disparities, test interventions, or track progress toward a goal — measurement alone does not produce action.
+134	In Priority 2 of its Framework for Health Equity 2022–2032, CMS commits to assessing the causes of disparities within its own programs and operations, not only documenting that disparities exist — a discipline any organization can apply to its own.
+135	Across all six lessons of this course, the same thread holds: a defensible number (Lessons 2–5) only becomes an equity outcome once it is owned, acted on, and re-measured (Lesson 6).
+136	A 2023 review of the disparity-dashboard literature found few dashboards embedded in a wider process to identify disparities, test interventions, and track progress — visibility alone does not reliably produce action without an owner and a governance loop.
+137	[1] AHRQ, About the CAHPS Program — https://www.ahrq.gov/cahps/about-cahps/index.html — program began 1995, survey coverage
+138	[2] Gallifant J et al., "Disparity dashboards: an evaluation of the literature and framework for health equity improvement," Lancet Digital Health (2023) — https://pmc.ncbi.nlm.nih.gov/articles/PMC10639125/ — only six evaluated studies used a dashboard within a wider improvement process.
+139	[3] CMS Office of Minority Health, CMS Framework for Health Equity 2022–2032 — https://www.cms.gov/files/document/cms-framework-health-equity.pdf — Priority 2, assess causes of disparities within CMS programs
+140	[4] Ansell DA et al., "Health Equity as a System Strategy: The Rush University Medical Center Framework," NEJM Catalyst, May 2021 — https://catalyst.nejm.org/doi/full/10.1056/CAT.20.0674 — Anchor Mission committee, Health Equity Governance Committee; Catholic Health World, "Chicago hospitals unite to address socioeconomic needs of West Side residents" (Oct 1, 2019) — West Side ConnectED

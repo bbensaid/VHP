@@ -1,0 +1,52 @@
+{
+ "tag": "deep-medicaid101",
+ "note": "Academy deep pass 2026-10-28. Children share: CMS 2023 Beneficiary Profile slide 15 (2020 data: children 38.1% of beneficiaries, 15.7% of expenditures); KFF spending-by-group 2023 (seniors 21%, disability 30%, children 15%). Ex parte: HHS press release 2023-09-21 (30 states reported the issue; ~500,000 reinstated). Non-MAGI: SSI is the main, not the only, mandatory non-MAGI group.",
+ "only": [
+  "medicaid-who-it-covers",
+  "medicaid-unwinding-redeterminations",
+  "medicaid-eligibility-magi"
+ ],
+ "pairs": [
+  [
+   "In fiscal year 2023, children represented roughly 35 percent of full-benefit enrollment but only about 15 to 16 percent of Medicaid spending.",
+   "In 2020, children made up about 38 percent of Medicaid beneficiaries but only about 16 percent of Medicaid spending (CMS Beneficiary Profile); KFF's 2023 data put their share of spending at about 15 percent."
+  ],
+  [
+   "But only ~15-16% of spending (Medicaid.gov FY2023 Beneficiary Profile)",
+   "But only ~16% of spending (CMS Beneficiary Profile, 2020 data)"
+  ],
+  [
+   "From a minority of total enrollment (Medicaid.gov FY2023)",
+   "From a minority of total enrollment (KFF, 2023: seniors ~21% + disability ~30%)"
+  ],
+  [
+   "Children are the largest enrollment group (~35% of full-benefit enrollees) but account for only about 15-16% of spending because most are healthy.",
+   "Children are the largest enrollment group (~38% of beneficiaries in 2020) but account for only about 15-16% of spending because most are healthy."
+  ],
+  [
+   "children ~35% of enrollment but ~15-16% of spending; aged+disabled ~51% of spending",
+   "children 38.1% of beneficiaries and 15.7% of expenditures (2020 data)"
+  ],
+  [
+   "In August 2023, CMS determined that 29 states were running their automatic (ex parte) renewals at the household level instead of the individual level.",
+   "In August 2023, CMS warned that some states were running their automatic (ex parte) renewals at the household level instead of the individual level; by late September, 30 states had reported the problem and nearly 500,000 people were having their coverage reinstated."
+  ],
+  [
+   "In August 2023, CMS found that 29 states were processing automatic renewals at the household level rather than per individual.",
+   "In 2023, CMS found that 30 states were processing automatic renewals at the household level rather than per individual."
+  ],
+  [
+   "August 2023 household ex parte error; 29 states; children improperly disenrolled",
+   "August 2023 household ex parte error; children improperly disenrolled"
+  ],
+  [
+   "The only mandatory non-MAGI pathway is for people who receive Supplemental Security Income (SSI).",
+   "The main mandatory non-MAGI pathway is for people who receive Supplemental Security Income (SSI)."
+  ],
+  [
+   "~35%",
+   "~38%"
+  ]
+ ],
+ "residue": "29 states were|~35% of full"
+}

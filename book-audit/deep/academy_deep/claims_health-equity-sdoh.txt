@@ -1,0 +1,449 @@
+
+## health-equity-definitions
+0	The Robert Wood Johnson Foundation, whose definition is among the most widely cited in the field, frames it this way: achieving health equity requires removing obstacles to health such as poverty, discrimination, and their consequences — including powerlessness and lack of access to good jobs, quality education, safe housing, and environments free of toxins.
+1	That is not favoritism — it is the only way to produce fair outcomes when starting points are unequal.
+2	The 75-and-older population has more heart disease than 25-year-olds; that is a disparity, but not an inequity, because it reflects aging rather than unfairness.
+3	Modern evidence shows the overwhelming majority of racial disparities trace to social and structural causes, not genetics.
+4	They span years of life and the most basic outcomes — whether a mother survives childbirth, whether an infant reaches its first birthday.
+5	In 2023, life expectancy was approximately 74.0 years for Black Americans versus 78.4 years for white Americans — a gap of about 4.4 years, even after the pandemic-era gap narrowed somewhat.
+6	Maternal mortality is starker still: in 2023, Black women died at 50.3 deaths per 100,000 live births compared with 14.5 for white women, roughly 3.5 times higher — and that ratio widened from 2022 to 2023 rather than improving.
+7	A 2017 JAMA Internal Medicine study found that in 2014 the gap in life expectancy between the highest- and lowest-performing US counties was 20.1 years — a span comparable to the difference between a wealthy nation and a developing one, inside the same country.
+8	Related work by Raj Chetty and colleagues found the richest 1% of American men live roughly 15 years longer than the poorest 1%.
+9	Black 74.0 vs white 78.4 years in 2023, per KFF analysis of CDC data
+10	50.3 vs 14.5 deaths per 100,000 live births in 2023, per CDC NCHS
+11	US counties in 2014, per JAMA Internal Medicine (Dwyer-Lindgren et al.)
+12	Life expectancy gap by income, per JAMA (Chetty et al., 2016)
+13	Richest vs. poorest 1% of men
+14	The landmark Whitehall studies of British civil servants, led by Sir Michael Marmot beginning in 1967, demolished the simplest version of that argument.
+15	The first study began in 1967; Whitehall II launched in 1985 with over 10,000 participants.
+16	The largest single contributor to the coronary heart disease gradient was low control at work — a psychosocial factor, not a clinical one.
+17	The Whitehall Studies (UK, 1967-present)
+18	US disparities are extreme: a ~4.4-year Black-white life expectancy gap, ~3.5x higher Black maternal mortality, and a ~20-year gap between the highest and lowest US counties.
+19	[1] Robert Wood Johnson Foundation — "What Is Health Equity?" — https://www.rwjf.org/en/insights/our-research/2017/05/what-is-health-equity-.html — definition of health equity and the removal-of-obstacles framing.
+20	[2] KFF — "What Is Driving Widening Racial Disparities in Life Expectancy?" — https://www.kff.org/racial-equity-and-health-policy/issue-brief/what-is-driving-widening-racial-disparities-in-life-expectancy/ — 2023 Black (74.0) vs white (78.4) life expectancy, ~4.4-year gap.
+21	[3] CDC National Center for Health Statistics — "Maternal Mortality Rates in the United States, 2023" — https://www.cdc.gov/nchs/data/hestat/maternal-mortality/2023/maternal-mortality-rates-2023.htm — Black 50.3 vs white 14.5 deaths per 100,000 (~3.5x).
+22	[4] Dwyer-Lindgren et al., JAMA Internal Medicine (2017) — "Inequalities in Life Expectancy Among US Counties, 1980 to 2014" — https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2626194 — 20.1-year gap between highest and lowest US counties in 2014.
+23	[5] Chetty et al., JAMA (2016) — "The Association Between Income and Life Expectancy in the United States, 2001-2014" — https://jamanetwork.com/journals/jama/fullarticle/2513561 — ~15-year life expectancy gap between richest and poorest 1% of men.
+24	[6] Marmot et al. — The Whitehall Studies — https://en.wikipedia.org/wiki/Whitehall_Study and Marmot & Davey Smith (1997) — social gradient in mortality among British civil servants; began 1967, Whitehall II from 1985; low control at work as leading contributor.
+
+## structural-racism-health
+25	A mortgage map drawn in 1937, a school funded by local property taxes, a highway routed through a particular neighborhood — none of these requires a bigot in the room to produce racially patterned harm decades later.
+26	In 1933, during the Great Depression, Congress created the Home Owners' Loan Corporation (HOLC) to refinance mortgages and stem foreclosures.
+27	Beginning in 1935, as part of its City Survey project (which ran through 1940), the HOLC produced color-coded "residential security maps" of more than 200 cities, grading neighborhoods for lending risk: A ("Best," outlined green), B ("Still Desirable," blue), C ("Declining," yellow), and D ("Hazardous," outlined red).
+28	The remarkable and disturbing finding of modern research is how well those 1930s maps still predict health today, more than 80 years later.
+29	A national NCRC analysis found life expectancy roughly 3.6 years lower on average in historically redlined (grade D) communities versus the highest-graded (grade A) communities.
+30	Asthma is a striking marker: in eight California cities, asthma emergency department visit rates were about 2.4 times higher in grade-D than in grade-A tracts (Nardone et al., Lancet Planetary Health, 2020), and a 2024 multi-city birth-cohort study tied redlining to higher childhood asthma risk through neighborhood poverty.
+31	A reasonable question is how a policy from the 1930s, long since formally abolished, can still register in someone's blood pressure or birth weight today.
+32	The most cited evidence is a 2016 study by Hoffman and colleagues, published in the Proceedings of the National Academy of Sciences.
+33	Half endorsed at least one false biological difference between Black and white people (Hoffman et al., 2016 PNAS)
+34	About 70% of white laypeople endorsed at least one such false belief in the same study
+35	Asthma emergency department visit rates in redlined vs. best-graded tracts, eight California cities (Nardone et al., Lancet Planetary Health, 2020)
+36	Studies show one-off implicit bias trainings rarely change behavior on their own.
+37	The HOLC redlining maps (1935-1940) graded neighborhoods for credit, marking Black areas "hazardous" and denying the mortgages that built intergenerational wealth.
+38	Those 1930s maps still predict health: redlined neighborhoods show ~3.6 years lower life expectancy and higher asthma, diabetes, and hypertension more than 80 years later.
+39	(2016), half of white medical trainees endorsed a false biological belief and rated Black patients' pain lower.
+40	What did Hoffman and colleagues (2016, PNAS) find when they surveyed white medical students and residents about false beliefs regarding biological differences between Black and white people?
+41	[1] Home Owners' Loan Corporation — Wikipedia and NCRC "HOLC redlining maps" — https://ncrc.org/holc/ — HOLC created 1933; residential security maps via City Survey 1935-1940; A/B/C/D grading with red = "hazardous" and racially based criteria.
+42	[2] NCRC — "Redlining and Neighborhood Health" — https://ncrc.org/holc-health/ — associations between HOLC grade and present-day asthma, COPD, diabetes, hypertension, kidney disease, poor mental health, and lower life expectancy.
+43	[3] "The Legacy of Redlining: Increasing Childhood Asthma Disparities through Neighborhood Poverty," American Journal of Respiratory and Critical Care Medicine — https://www.atsjournals.org/doi/10.1164/rccm.202309-1702OC — redlining linked to higher childhood asthma risk through neighborhood poverty in a seven-city birth cohort (Ryan et al., 2024).
+44	The ~2.4x asthma ED-visit figure is from Nardone et al., Lancet Planetary Health (2020).
+45	[4] Hoffman, Trawalter, Axt & Oliver, PNAS (2016) — "Racial bias in pain assessment and treatment recommendations, and false beliefs about biological differences between blacks and whites" — https://www.pnas.org/doi/10.1073/pnas.1516047113 — ~50% of white medical trainees and ~70% of laypeople endorsed false beliefs; biased pain ratings and treatment recommendations.
+46	[5] Bailey et al., The Lancet (2017) — "Structural racism and health inequities in the USA: evidence and interventions" — https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)30569-X/fulltext — definition of structural racism as mutually reinforcing systems and its pathways to health.
+
+## global-health-equity-comparison
+47	A country leaving outcomes on the table while spending the most is, by definition, distributing health inefficiently and unjustly.
+48	In 2022, US health spending reached roughly $12,400 per person — more than double the average of comparable high-income countries.
+49	US life expectancy at birth was about 78.4 years in 2023 (rising to roughly 79.0 in 2024) — but the average across comparable high-income countries is around 82-83 years, a gap of three to four years.
+50	Infant mortality tells the same story: about 5.4 deaths per 1,000 live births in the US versus an OECD average closer to 4.0.
+51	Highest in the world; ~2x the peer-nation average, per OECD Health at a Glance 2023
+52	US per capita health spending (2022)
+53	About 3-4 years below the comparable-country average of ~82-83 years, per Peterson-KFF
+54	US life expectancy (2023)
+55	Versus an OECD average near 4.0 per 1,000, per OECD/Peterson-KFF
+56	US infant deaths per 1,000 births
+57	US ranked last overall among 10 high-income nations, per Commonwealth Fund
+58	US rank, Mirror Mirror 2024
+59	Mirror, Mirror 2024: Last Among Peers
+60	The most comprehensive recent comparison is the Commonwealth Fund's "Mirror, Mirror 2024: A Portrait of the Failing U.S.
+61	Health System." It compared the health systems of ten high-income countries — Australia, Canada, France, Germany, the Netherlands, New Zealand, Sweden, Switzerland, the United Kingdom, and the United States — across 70 performance measures in five domains: access to care, care process, administrative efficiency, equity, and health outcomes.
+62	The report's framing is blunt: the US is the only high-income country where the health system fails to deliver affordable, equitable care despite spending the most.
+63	The 2024 edition evaluated 70 measures across ten wealthy nations.
+64	The US placed last overall and last on equity, access, and outcomes, while spending the most.
+65	Commonwealth Fund "Mirror, Mirror 2024"
+66	The landmark 2013 National Academies report "U.S.
+67	The 2013 National Academies report found that even advantaged, insured, healthy-behavior Americans fare worse than peers abroad.
+68	The US over-invests in high-intensity medical intervention and under-invests in the upstream conditions that prevent illness in the first place.
+69	The US spends roughly twice the peer-nation average per person on health care (~$12,400 in 2022) yet ranks at or near the bottom on core outcomes.
+70	US life expectancy (~78.4 years in 2023) trails comparable countries by three to four years, and infant mortality (~5.4 per 1,000) exceeds the OECD average.
+71	The Commonwealth Fund's Mirror, Mirror 2024 ranked the US last overall among ten high-income nations — and last specifically on equity, access, and outcomes.
+72	The 2013 "Shorter Lives, Poorer Health" report found even advantaged, insured, healthy-behavior Americans fare worse than peers — the disadvantage is population-wide.
+73	It applies only to Americans over age 75
+74	According to the 2013 National Academies report "U.S.
+75	[1] Commonwealth Fund — "Mirror, Mirror 2024: A Portrait of the Failing U.S.
+76	Health System" — https://www.commonwealthfund.org/publications/fund-reports/2024/sep/mirror-mirror-2024 — US ranked last overall of 10 high-income countries; last on equity, access, and outcomes; top performers Australia, Netherlands, UK.
+77	[2] OECD — Health at a Glance 2023, "Health expenditure per capita" — https://www.oecd.org/en/publications/2023/11/health-at-a-glance-2023_e04f8239/full-report/health-expenditure-per-capita_735cda79.html — US per-capita spending ~$12,400 (2022), roughly double peer average; Switzerland second at ~two-thirds of US level.
+78	[3] Peterson-KFF Health System Tracker — "How does U.S. life expectancy compare to other countries?" — https://www.healthsystemtracker.org/chart-collection/u-s-life-expectancy-compare-countries/ — US life expectancy ~78.4 years (2023) vs comparable-country average ~82-83 years; US infant mortality ~5.4 vs OECD ~4.0.
+79	[4] National Research Council & Institute of Medicine (2013) — "U.S.
+80	Health in International Perspective: Shorter Lives, Poorer Health" — https://nap.nationalacademies.org/read/13497 — finding that even advantaged Americans fare worse than peers; the disadvantage is population-wide.
+81	[5] CDC NCHS — "Maternal Mortality Rates in the United States, 2023" — https://www.cdc.gov/nchs/data/hestat/maternal-mortality/2023/maternal-mortality-rates-2023.htm — US maternal mortality several times higher than peer nations such as the UK, France, and Canada.
+
+## sdoh-evidence-domains
+82	The most influential framework for quantifying this comes from the County Health Rankings & Roadmaps model, developed by the University of Wisconsin Population Health Institute with the Robert Wood Johnson Foundation.
+83	In that model, social and economic factors carry the largest weight at 40%, followed by health behaviors at 30%, clinical care at 20%, and the physical environment at 10%.
+84	The other 80% lies in behaviors and the social and physical conditions that heavily shape those behaviors.
+85	A health system serious about outcomes cannot treat the 80% as someone else's problem.
+86	The Five Healthy People 2030 SDOH Domains
+87	The US federal framework for organizing SDOH comes from Healthy People 2030, the decade-long set of national health objectives published by the Office of Disease Prevention and Health Promotion.
+88	Healthy People 2030 organizes SDOH into five domains, which have become the standard vocabulary for screening, measurement, and intervention.
+89	The Healthy People 2030 framework is the connective tissue that lets those handoffs happen.
+90	The Five SDOH Domains (Healthy People 2030)
+91	Two of the most rigorously studied SDOH-to-health links — social connection and education — illustrate how large these effects are when measured carefully.
+92	A 2010 meta-analysis by Julianne Holt-Lunstad and colleagues benchmarked the mortality risk of weak social connection against established risk factors and found it comparable to smoking up to 15 cigarettes a day — a comparison the US Surgeon General later cited in a formal advisory on loneliness.
+93	A follow-up 2015 meta-analysis covering over 3 million participants found social isolation associated with a 29% increase in mortality risk and living alone with a 32% increase.
+94	The 2010 analysis benchmarked weak social ties against smoking, obesity, and physical inactivity, finding the mortality effect of social isolation comparable to smoking up to 15 cigarettes per day.
+95	The 2015 follow-up, pooling over 3 million participants, found social isolation raised mortality risk by 29% and living alone by 32%.
+96	The work directly informed the 2023 US Surgeon General's Advisory on the epidemic of loneliness and isolation — moving social connection from a soft concern to a measured public health priority.
+97	If 80% of health outcomes are driven by factors outside clinical care, then a health system that wants to improve outcomes — especially under value-based contracts that pay for results rather than visits — has to engage the social conditions of its population.
+98	Addressing social needs is therefore not a separate agenda from equity — it is one of the most direct levers for reducing disparities.
+99	In the County Health Rankings model, social and economic factors carry the largest weight (40%) and clinical care accounts for only about 20% of health outcomes.
+100	Healthy People 2030 organizes SDOH into five domains: economic stability, education, health care access, neighborhood/built environment, and social/community context.
+101	The SDOH-to-health links are large: social isolation's mortality effect rivals smoking ~15 cigarettes/day, and education shows a strong graded relationship with health.
+102	Because social disadvantage tracks race, income, and place, addressing SDOH is one of the most direct levers for reducing health disparities.
+103	The County Health Rankings model assigns social and economic factors 40% (the largest weight), health behaviors 30%, clinical care 20%, and physical environment 10%.
+104	Clinical care is weighted at 50%, the single largest category
+105	Clinical care is weighted at about 20%, while social and economic factors carry the largest weight at 40%
+106	Clinical care and social factors are weighted equally at 40% each
+107	Clinical care is weighted at 70%, with social factors a distant second
+108	In the County Health Rankings model, approximately what share of health outcomes is attributed to clinical care, and which category carries the largest weight?
+109	[1] Office of Disease Prevention and Health Promotion — "Social Determinants of Health," Healthy People 2030 — https://odphp.health.gov/healthypeople/priority-areas/social-determinants-health — definition of SDOH and the five domains; SDOH as one of three Healthy People 2030 priority areas.
+110	[2] County Health Rankings & Roadmaps (University of Wisconsin Population Health Institute / RWJF) — model weights — https://www.countyhealthrankings.org/ — social & economic factors 40%, health behaviors 30%, clinical care 20%, physical environment 10%.
+111	[3] Holt-Lunstad J, et al.
+112	(2010), "Social Relationships and Mortality Risk: A Meta-analytic Review," PLOS Medicine — and (2015) "Loneliness and Social Isolation as Risk Factors for Mortality," Perspectives on Psychological Science — https://pubmed.ncbi.nlm.nih.gov/25910392/ — 15-cigarette benchmark; isolation +29%, living alone +32% mortality risk.
+113	[4] US Surgeon General (2023) — "Our Epidemic of Loneliness and Isolation: The Surgeon General's Advisory on the Healing Effects of Social Connection and Community" — https://www.hhs.gov/surgeongeneral/priorities/connection/index.html — cites the ~15-cigarettes-per-day mortality comparison.
+114	[5] CDC — "Social Determinants of Health (SDOH)" — https://www.cdc.gov/about/priorities/why-is-addressing-sdoh-important.html — overview of SDOH and their role in shaping population health and equity.
+
+## sdoh-screening-tools
+115	But screening is only the first step, and doing it badly can cause harm.
+116	It comprises 21 questions covering housing, food, employment, education, transportation, and social support.
+117	PRAPARE is the most widely used tool in Federally Qualified Health Centers and is designed to map to ICD-10 Z-codes for documentation.
+118	The CMS Accountable Health Communities (AHC) Health-Related Social Needs (HRSN) Screening Tool is a shorter, 10-item instrument published by CMS in 2017.
+119	ICD-10-CM Z-codes in the Z55-Z65 range are the standardized diagnosis codes for documenting social determinants of health.
+120	The categories map cleanly to the screening domains: Z55 covers education and literacy problems; Z56 employment and unemployment; Z57 occupational exposures; Z58 physical environment; Z59 housing and economic circumstances (Z59.0 is homelessness); Z60 the social environment; and Z62-Z65 various psychosocial circumstances.
+121	Per ICD-10 guidance, these are reported as secondary diagnoses, and notably they may be documented based on information from any clinician involved in the patient's care — not only the billing provider — which means social workers, nurses, and case managers can supply the documentation.
+122	CMS reported that Z-codes were documented for only about 1.6% of Medicare fee-for-service beneficiaries in 2019, despite social needs being far more prevalent than that.
+123	Medicare FFS beneficiaries with a Z-code (2019)
+124	PRAPARE (21 questions; NACHC) is the dominant tool in FQHCs; the CMS AHC HRSN tool (10 items, 5 core domains) is a federal reference standard.
+125	ICD-10 Z-codes (Z55-Z65) document social needs as structured data and may be recorded by any clinician on the care team, reported as secondary diagnoses.
+126	Z-codes are badly underutilized — documented for only ~1.6% of Medicare FFS beneficiaries in 2019 — mainly due to workflow gaps and lack of awareness.
+127	Z-codes in the Z55-Z65 range are ICD-10-CM diagnosis codes used to document social determinants of health (e.g., Z59.0 for homelessness).
+128	The key limitation is severe underutilization: CMS found they were documented for only about 1.6% of Medicare fee-for-service beneficiaries in 2019, due mainly to lack of awareness and missing workflows.
+129	They document social determinants of health as structured data, but are badly underutilized — recorded for only ~1.6% of Medicare FFS beneficiaries in 2019
+130	They code mental health diagnoses under DSM-5; the limitation is overlap with ICD codes
+131	What are ICD-10 Z-codes in the Z55-Z65 range used for, and what is a key limitation in current practice?
+132	[1] National Association of Community Health Centers — "PRAPARE" — https://www.nachc.org/resource/prapare/ — PRAPARE developed by NACHC/AAPCHO/OPCA; 21 questions; domains and FQHC use.
+133	[2] CMS — "The Accountable Health Communities Health-Related Social Needs Screening Tool" — https://www.cms.gov/priorities/innovation/files/worksheets/ahcm-screeningtool.pdf — 10-item tool; five core domains (housing, food, transportation, utilities, interpersonal safety); published 2017.
+134	[3] CMS Office of Minority Health (2023) — "Utilization of Z Codes for Social Determinants of Health" — https://www.cms.gov/files/document/cms-2023-omh-z-code-resource.pdf — Z55-Z65 range; ~1.6% of Medicare FFS beneficiaries had a Z-code in 2019; documentation by any clinician on the care team.
+135	[4] Medicaid.gov T-MSIS Reporting Reminder — "Z Codes for Social Determinants of Health" — https://www.medicaid.gov/medicaid/data-and-systems/macbis/tmsis/tmsis-blog/105716 — Z-codes reported as secondary diagnoses; available since FY2016; slow adoption.
+136	[5] Unite Us and findhelp — closed-loop referral platforms — https://uniteus.com/ and https://www.findhelp.org/ — community resource networks enabling electronic referrals and closed-loop tracking between health care and community organizations.
+
+## housing-as-health-care
+137	Of all the social determinants, housing has perhaps the most direct and measurable relationship to health.
+138	People experiencing homelessness in the United States have an average age of death of roughly 41 to 51 years — at least 26 years shorter than the general population — and, among non-elderly adults, a mortality rate about 3.5 times that of housed peers.
+139	For a health system operating under value-based contracts, this population is often the most expensive and hardest to manage.
+140	People experiencing homelessness die roughly 26 years earlier than the general population and use emergency and inpatient care at far higher rates.
+141	For these patients, the cost of doing nothing is not zero — it is very high, just paid through the most expensive part of the system.
+142	At least 26 years shorter than the general US population, per Community Solutions
+143	Non-elderly adults (18–54) experiencing homelessness vs. the housed population, per Community Solutions
+144	Share of time in stable housing in the At Home/Chez Soi randomized trial (Canada), as summarized by Tsai, AJPH 2020
+145	Plus 41% improved housing stability — Community Guide systematic review of 26 studies (Peng et al., 2020)
+146	Removing the preconditions also stops screening out the very people with the most acute needs, who are least able to clear a readiness bar.
+147	Randomized controlled trials find Housing First produces dramatically higher housing retention than treatment-as-usual — in the Canadian At Home/Chez Soi trial, Housing First participants spent 73% of their time stably housed versus 32% under treatment as usual.
+148	A 2020 Community Guide systematic review of 26 studies found Housing First decreased homelessness by 88% and improved housing stability by 41% relative to Treatment First, and the model is consistently associated with reduced hospitalization and emergency department use.
+149	The defining results: people offered immediate, unconditional permanent housing with supports stay housed at far higher rates than those in treatment-first programs — in At Home/Chez Soi, Housing First participants spent about 73% of their time stably housed versus 32% under treatment as usual.
+150	A 2020 Community Guide systematic review found Housing First reduced homelessness by 88% and improved housing stability by 41% versus Treatment First, and trials consistently show reduced use of hospitals and emergency departments.
+151	In November 2023, CMS released a Medicaid and CHIP Health-Related Social Needs (HRSN) Framework that, through Section 1115 demonstration waivers, allowed states to cover a defined menu of housing supports: housing transition and navigation services, tenancy-sustaining services such as eviction prevention and tenant-rights education, one-time moving costs, and home modifications — plus, for specific high-need populations, up to six months of transitional rent and up to six months of nutrition services.
+152	By early 2024, several states had approved demonstrations under this framework.
+153	In March 2025, the federal administration rescinded the November 2023 HRSN guidance and framework, stating it would review state requests to cover health-related social needs on a case-by-case basis under existing statute rather than the standardized framework.
+154	The underlying authority to use 1115 waivers for housing supports remains, but the standardized national framework that had accelerated adoption was withdrawn — a reminder that the financing of housing-as-health-care depends on shifting federal policy.
+155	Under the 2023 HRSN framework, up to six months of rent for specific high-need populations — subject to current federal policy.
+156	For frontline clinical teams, the practical implications start with screening: identifying housing instability through SDOH screening and documenting it (Z59 codes capture housing and economic problems).
+157	Whether through direct investment, Medicaid-funded services, or community partnerships, the throughline is the same: a system that treats housing as outside its lane is leaving one of the most powerful health levers untouched.
+158	It can cover housing-related services (navigation, tenancy support) and, under specific 1115 authorities, time-limited transitional rent for defined populations.
+159	The exact scope depends on each state's waiver and current federal policy, which changed in 2025.
+160	Housing instability is a primary driver of poor health: people experiencing homelessness die ~26 years earlier than average and use crisis care at far higher rates.
+161	RCTs show Housing First works: ~73% vs 32% of time stably housed (At Home/Chez Soi), an 88% reduction in homelessness vs Treatment First, and reduced hospital and ED use.
+162	Federal Medicaid generally cannot pay ongoing rent, but can fund housing-related services; the 2023 CMS HRSN framework added time-limited transitional rent via 1115 waivers.
+163	That HRSN framework was rescinded in March 2025, moving back to case-by-case review — financing of housing-as-health-care depends on shifting federal policy.
+164	Clinically, screen for housing instability (Z59 codes), refer to navigators or medical respite, and recognize respite care as a fundable bridge between street and hospital.
+165	Randomized controlled trials show it produces dramatically higher housing retention than treatment-as-usual (e.g., ~73% vs 32% of time stably housed in the At Home/Chez Soi trial) and reduces hospital and emergency department use, making it the evidence-based standard for ending chronic homelessness.
+166	Housing is provided only after the person completes treatment and demonstrates 90 days of sobriety
+167	[1] Community Solutions — "The Costs and Harms of Homelessness" — https://community.solutions/research-posts/the-costs-and-harms-of-homelessness/ — average age of death 41–51 (at least 26 years shorter than the general population); mortality ~3.5x higher for adults 18–54; elevated ED use.
+168	[2] National Low Income Housing Coalition — "The Case for Housing First" — https://nlihc.org/sites/default/files/Housing-First-Research.pdf — summary of Housing First research; reduced hospitalization and ED use.
+169	[3] "Is the Housing First Model Effective?
+170	Different Evidence for Different Outcomes," PMC — https://pmc.ncbi.nlm.nih.gov/articles/PMC7427255/ — Tsai, AJPH (2020): evidence graded by outcome; At Home/Chez Soi participants spent 73% vs 32% of time stably housed.
+171	The 88% / 41% figures are from Peng et al., Community Guide systematic review, Journal of Public Health Management and Practice (2020).
+172	[4] KFF — "Section 1115 Medicaid Waiver Watch: Recent Approvals to Address Health-Related Social Needs (HRSN)" — https://www.kff.org/medicaid/section-1115-medicaid-waiver-watch-a-closer-look-at-recent-approvals-to-address-health-related-social-needs-hrsn/ — November 2023 CMS HRSN framework; housing supports, up to 6 months transitional rent; approved state demonstrations.
+173	[5] State Health & Value Strategies — "CMS Releases Updated HRSN Framework for Medicaid and CHIP" — https://shvs.org/cms-releases-updated-hrsn-framework-for-medicaid-and-chip/ — scope of Medicaid housing supports (no room and board); March 2025 rescission of the 2023 HRSN framework.
+
+## food-insecurity-clinical-interventions
+174	According to the USDA, in 2023 about 13.5% of US households (18.0 million households) experienced food insecurity at some point during the year, and roughly 47 million people lived in food-insecure households, including nearly 14 million children.
+175	Both figures rose from 2022 and reached their highest levels in years.
+176	In 2023, ~47 million Americans — including nearly 14 million children — lived in food-insecure households.
+177	The Hunger Vital Sign, a validated two-item tool, asks whether in the past 12 months the household worried food would run out before there was money to buy more, and whether food bought did not last.
+178	Developed by researchers at Children's HealthWatch and validated against the longer USDA food-security module, the Hunger Vital Sign is a two-question screen: (1) "Within the past 12 months we worried whether our food would run out before we got money to buy more," and (2) "Within the past 12 months the food we bought just didn't last and we didn't have money to get more."
+179	Its brevity has made it one of the most widely adopted social-needs screens in clinical settings, including pediatrics.
+180	In a widely cited study by Berkowitz and colleagues, receiving medically tailored meals was associated with a 49% reduction in inpatient admissions, 72% fewer skilled-nursing-facility admissions, and about 16% lower total health care costs compared with similar patients who did not receive them.
+181	A study published in JAMA Network Open by researchers at Tufts University's Friedman School estimated that a nationwide medically tailored meal program for eligible patients could avert roughly 1.6 million hospitalizations and save insurers on the order of $13.6 billion annually.
+182	Several evaluations have found meaningful improvements: a large Tufts-led analysis reported modest A1c reductions (around 0.3 percentage points) along with reduced food insecurity and improved diet, and some physician-supported programs have reported larger A1c drops of roughly a full point.
+183	But at least one randomized clinical trial found that a produce prescription subsidy alone did not significantly improve A1c or health care utilization at twelve months.
+184	It is tempting to claim produce prescriptions reliably produce clinically large A1c reductions.
+185	The evidence is mixed: some studies show modest benefits (~0.3 to ~1.0 point A1c), but a randomized trial found a subsidy alone did not improve outcomes at 12 months.
+186	Present these programs as promising and design-dependent — not as proven, uniform A1c reducers.
+187	The Supplemental Nutrition Assistance Program (SNAP) is by far the largest food-security intervention in the United States, reaching tens of millions of people.
+188	Food insecurity is a clinical problem affecting ~47 million Americans (including nearly 14 million children) in 2023, with direct effects on diabetes, hypertension, and mental health.
+189	Medically tailored meals have the strongest evidence: ~49% fewer inpatient admissions and ~16% lower costs among recipients (Berkowitz et al.).
+190	A national MTM program was modeled to avert ~1.6 million hospitalizations and save insurers ~$13.6 billion annually (JAMA Network Open, Tufts).
+191	Produce prescriptions are promising but the evidence is mixed (modest or no A1c effect depending on design) — present them honestly, not as proven uniform A1c reducers.
+192	SNAP is the largest food-security intervention by far; connecting eligible patients to SNAP and WIC scales in a way clinic-based meal programs cannot.
+193	In Berkowitz et al., MTM recipients had about 49% fewer inpatient admissions, 72% fewer skilled-nursing admissions, and ~16% lower total costs than similar non-recipients.
+194	Produce prescriptions, which reliably reduce A1c by a full point in every trial
+195	Medically tailored meals, associated with ~49% fewer inpatient admissions and ~16% lower health care costs among recipients
+196	[1] USDA Economic Research Service — "Household Food Security in the United States in 2023" (ERR-337) — https://www.ers.usda.gov/publications/pub-details?pubid=109895 — 13.5% of households (18.0M) food insecure; ~47 million people including nearly 14 million children.
+197	[2] Berkowitz SA, et al. — "Association Between Receipt of a Medically Tailored Meal Program and Health Care Use," JAMA Internal Medicine (2019) — https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2737200 — ~49% fewer inpatient admissions, ~16% lower costs among MTM recipients.
+198	[3] Hager K, et al. — national medically tailored meals modeling, JAMA Network Open (Tufts Friedman School) — https://www.glwd.org/blog/new-study-in-jama-network-open-models-the-significant-national-healthcare-cost-savings-of-the-medically-tailored-meals-model/ — ~1.6 million hospitalizations averted and ~$13.6 billion in annual savings.
+199	[4] Tufts / produce prescription evidence — "Evaluation of a Produce Prescription Program for Patients With Diabetes," PMC — https://pmc.ncbi.nlm.nih.gov/articles/PMC10234740/ — modest A1c reductions (~0.3 points) with mixed results across studies; a randomized subsidy-only trial found no significant improvement at 12 months.
+200	[5] Children's HealthWatch — "Hunger Vital Sign" — https://childrenshealthwatch.org/public-policy/hunger-vital-sign/ — validated two-item food-insecurity screening tool and its wording.
+
+## real-data-collection
+201	The most damaging is collecting race by staff observation rather than patient self-report.
+202	The 1997 federal standard asked them as two separate questions (a person can be Hispanic and any race); the 2024 revision uses one multi-select question so Hispanic or Latino identity is captured alongside race rather than instead of it — either way, forcing a single choice destroys analytic value.
+203	Language is often the most neglected element.
+204	Captured alongside race, never instead of it (separate question under the 1997 OMB standard; multi-select combined question under the 2024 revision)
+205	The baseline comes from the Office of Management and Budget's Statistical Policy Directive No. 15 (SPD 15), which sets the minimum race and ethnicity categories used across federal data.
+206	In March 2024, OMB issued the first major revision to SPD 15 since 1997 — a significant change worth knowing.
+207	The 2024 revision made two notable changes.
+208	For health care specifically, the influential framework is the 2009 Institute of Medicine report "Race, Ethnicity, and Language Data: Standardization for Health Care Quality Improvement." It recommended collecting the OMB categories plus more granular ethnicity and preferred-language data drawn from national standard sets — precisely so that quality metrics can be stratified, disparity-reduction initiatives organized, and progress reported in consistent, comparable ways.
+209	OMB's Statistical Policy Directive No. 15 sets the federal minimum race/ethnicity categories.
+210	The March 28, 2024 revision — the first since 1997 — combined race and ethnicity into one multi-select question and added a Middle Eastern or North African (MENA) category, which had previously been folded into "White."
+211	The 2009 IOM report "Race, Ethnicity, and Language Data" built the health-care framework: collect OMB categories plus locally selected granular ethnicity and preferred-language data, so quality performance can be stratified and disparities tracked consistently across organizations.
+212	OMB SPD 15 (2024 Revision) and the IOM REaL Framework
+213	Consider a hospital reporting a 72% colorectal cancer screening rate — at or above the national benchmark, apparently fine.
+214	But stratified by race, the same data might show white patients at 79%, Black patients at 61%, and Hispanic patients at 54%.
+215	The aggregate hides a 25-percentage-point gap.
+216	The aggregate trap is the most important reason to collect and use REaL data.
+217	The most damaging failure is collecting race by staff observation; the fix is patient self-report, with race and ethnicity captured as separate, granular fields.
+218	OMB's SPD 15 sets minimum federal race/ethnicity categories; the March 2024 revision combined race and ethnicity into one question and added a MENA category.
+219	The 2009 IOM "Race, Ethnicity, and Language Data" report defined the health-care framework: OMB categories plus granular ethnicity and preferred-language data for stratification.
+220	The aggregate trap occurs when an acceptable overall quality score hides a significant gap between demographic subgroups — for example, a 72% screening rate that masks a 25-point gap between white and Hispanic patients.
+221	[1] Office of Management and Budget — "Revisions to OMB's Statistical Policy Directive No. 15," Federal Register (March 29, 2024) — https://www.federalregister.gov/documents/2024/03/29/2024-06469/revisions-to-ombs-statistical-policy-directive-no-15 — combined race/ethnicity question; added Middle Eastern or North African (MENA) category; effective March 28, 2024.
+222	Census Bureau — "Updates to OMB's Race/Ethnicity Standards" — https://www.census.gov/newsroom/blogs/random-samplings/2024/04/updates-race-ethnicity-standards.html — the seven minimum categories and the move to detailed data collection.
+223	[3] Institute of Medicine (2009) — "Race, Ethnicity, and Language Data: Standardization for Health Care Quality Improvement," via AHRQ — https://www.ahrq.gov/research/findings/final-reports/iomracereport/index.html — framework of OMB categories plus granular ethnicity and language need, for stratifying quality metrics.
+224	[4] HHS ASPE — "HHS Implementation Guidance on Data Collection Standards for Race, Ethnicity, Sex, Primary Language, and Disability Status" — https://aspe.hhs.gov/reports/hhs-implementation-guidance-data-collection-standards-race-ethnicity-sex-primary-language-disability — federal standards for REaL data in health care.
+225	[5] Agency for Healthcare Research and Quality — REaL data and stratified quality measurement — https://www.ahrq.gov/ — use of self-reported race/ethnicity/language to stratify quality and identify disparities (the aggregate trap).
+
+## from-data-to-action
+226	The first step is to identify and quantify the gap: take a meaningful measure — say, postpartum follow-up visits — stratify it by race, ethnicity, and language, and name the size of the gap between the highest- and lowest-performing groups.
+227	A precise gap ("an 18-point Black-white difference") is far more actionable than a vague concern.
+228	For example: reduce the Black-white postpartum follow-up gap from 18 to 8 points within 18 months.
+229	A 2023 framework published in The Lancet Digital Health evaluated the literature on disparity dashboards and laid out principles for using them to drive improvement rather than just display data.
+230	Root-cause analysis is the most-often-skipped and most important step: interventions are not interchangeable, and the cause determines the right fix.
+231	Having the most sophisticated data dashboards and analytics, regardless of how they are used
+232	[1] National Academy of Medicine — "An Equity Agenda for the Field of Health Care Quality Improvement" — https://nam.edu/perspectives/an-equity-agenda-for-the-field-of-health-care-quality-improvement/ — tying executive compensation and CEO accountability to quantifiable equity goals.
+233	[2] Disparity dashboards: an evaluation of the literature and framework for health equity improvement, The Lancet Digital Health (2023) — https://www.thelancet.com/journals/landig/article/PIIS2589-7500(23)00150-4/fulltext — framework for using stratified dashboards to drive disparity reduction.
+234	[3] Mass General Brigham — Health Equity Strategic Plan and disparity-reduction initiatives — https://www.massgeneralbrigham.org/en/about/advancing-care/health-equity-community-health — stratified identification of colorectal screening and diabetes disparities and targeted interventions (campaigns, Community Care Vans).
+235	[4] "Measure what matters: health equity tracking and measurement practices across US healthcare systems," PMC — https://pmc.ncbi.nlm.nih.gov/articles/PMC12094744/ — executive-level tracking and accountability as drivers of equity measurement and improvement.
+236	[5] Institute for Healthcare Improvement — "Achieving Health Equity: A Guide for Health Care Organizations" — https://www.ihi.org/resources/Pages/IHIWhitePapers/Achieving-Health-Equity.aspx — framework treating disparity reduction as a quality improvement discipline with named owners and targets.
+
+## algorithmic-bias-healthcare
+237	Case 1: The Optum Care-Management Algorithm
+238	The landmark demonstration of algorithmic bias in health care is a 2019 study published in Science by Ziad Obermeyer and colleagues.
+239	Among patients the algorithm flagged for extra care, Black patients were dramatically underrepresented; the researchers calculated that correcting the bias would raise the share of Black patients receiving additional help from 17.7% to 46.5% — nearly tripling it.
+240	Case 2: The eGFR Kidney-Function Race Correction
+241	A second landmark case involves not a machine-learning model but a clinical equation embedded in everyday practice.
+242	In September 2021, a joint National Kidney Foundation–American Society of Nephrology task force recommended adopting new race-free eGFR equations (the CKD-EPI 2021 equations).
+243	For more than 20 years, eGFR formulas applied a race coefficient that raised the estimated kidney function of Black patients, making their kidneys appear healthier than identical lab values would for other patients.
+244	In September 2021, the NKF/ASN Task Force recommended the race-free CKD-EPI 2021 equations, framing race as a social construct.
+245	Removing Race From the eGFR Equation (NKF/ASN, 2021)
+246	The first is biased training data: a model learns from historical care that was itself unequal, and faithfully reproduces those patterns.
+247	The Optum care-management algorithm (Obermeyer et al., Science 2019) used cost as a proxy for need; fixing it would raise Black patients flagged for care from 17.7% to 46.5%.
+248	In September 2021 the NKF/ASN task force recommended race-free CKD-EPI 2021 equations, treating race as a social rather than biological construct.
+249	What was the equity problem with the Optum care-management algorithm identified in the 2019 Science study by Obermeyer and colleagues?
+250	[1] Obermeyer Z, Powers B, Vogeli C, Mullainathan S (2019) — "Dissecting racial bias in an algorithm used to manage the health of populations," Science — https://www.science.org/doi/10.1126/science.aax2342 — cost-as-proxy bias; Black patients flagged for care would rise from 17.7% to 46.5% if corrected.
+251	[2] Scientific American — "Racial Bias Found in a Major Health Care Risk Algorithm" — https://www.scientificamerican.com/article/racial-bias-found-in-a-major-health-care-risk-algorithm/ — summary of the Optum/Obermeyer findings and mechanism.
+252	[3] National Kidney Foundation — "CKD-EPI Creatinine Equation (2021)" and NKF/ASN Task Force recommendations — https://www.kidney.org/ckd-epi-creatinine-equation-2021 — September 2021 recommendation to adopt race-free eGFR equations; race as a social construct.
+253	[4] American Kidney Fund — "eGFR Test Change: Removal of Race from the Calculation" — https://www.kidneyfund.org/all-about-kidneys/tests/egfr/egfr-test-change-removal-race-calculation — how the race correction overestimated Black kidney function and delayed diagnosis, referral, and transplant listing.
+254	[5] The Lancet Digital Health — "There is no such thing as race in health-care algorithms" — https://www.thelancet.com/journals/landig/article/PIIS2589-7500(19)30201-8/fulltext — analysis of how proxies and design choices encode racial bias even without race as an input.
+
+## pulse-oximetry-racial-bias
+255	The pulse oximeter, one of the most ubiquitous devices in all of medicine, is the clearest and most consequential example.
+256	A pulse oximeter estimates blood oxygen saturation (SpO2) by shining light through tissue and measuring how much is absorbed.
+257	The Landmark Evidence: Sjoding et al., 2020
+258	Although clinicians had noted the discrepancy for years, the study that crystallized the issue was published in the New England Journal of Medicine in December 2020 by Michael Sjoding and colleagues at the University of Michigan.
+259	They compared pulse oximeter readings (SpO2) against the gold-standard arterial blood gas measurement (SaO2) in two large patient cohorts, looking specifically for "occult hypoxemia."
+260	Occult hypoxemia is the dangerous scenario this bias produces: a true arterial oxygen saturation below 88% — clinically low — despite a pulse oximeter reading in the reassuring 92-96% range.
+261	In the multicenter cohort, occult hypoxemia occurred in 17.0% of Black patients but only 6.2% of white patients — Black patients had nearly three times the rate of dangerously low oxygen that the pulse oximeter failed to detect.
+262	The mechanism was attributed to greater melanin causing falsely elevated SpO2 readings.
+263	The timing made it urgent: the study landed during the COVID-19 pandemic, when oxygen saturation was the central triage variable for a disease that was already killing Black Americans at disproportionate rates.
+264	Nearly 3x higher in Black patients, per Sjoding et al., NEJM 2020
+265	True arterial saturation <88% despite a reassuring 92-96% oximeter reading
+266	Greater skin pigmentation absorbs light and falsely elevates the SpO2 reading
+267	If a pulse oximeter tells a triage nurse that a patient's saturation is 93% when it is truly 85%, that patient may be sent home instead of admitted, denied supplemental oxygen, not escalated to the ICU, or judged ineligible for a therapy that requires documented hypoxia.
+268	During COVID-19, this dynamic was especially dangerous.
+269	Oxygen saturation was the key marker used to decide who needed hospitalization and oxygen, and many treatment protocols and even drug eligibility were keyed to specific SpO2 thresholds.
+270	Subsequent research found that pulse oximeter inaccuracy was associated with delayed recognition of eligibility for COVID treatment in patients with darker skin — meaning the device bias plausibly contributed to the pandemic's already severe racial mortality gap.
+271	In February 2021, shortly after the NEJM study, the FDA issued a safety communication cautioning that pulse oximeters have limitations and that readings should not be the sole basis for assessing a patient's condition — explicitly noting that skin pigmentation can affect accuracy.
+272	Because COVID-19 triage, oxygen therapy, and some treatment eligibility were keyed to SpO2 thresholds, falsely high readings in darker-skinned patients risked delaying admission and treatment.
+273	Given that COVID-19 mortality was already significantly higher in Black patients, unreliable oximetry likely contributed to the gap.
+274	Pulse Oximetry During COVID-19
+275	On the regulatory side, the FDA convened its advisory committee on the issue and, in early 2025, issued draft guidance to improve the accuracy of pulse oximeters across skin tones.
+276	The draft recommends dramatically larger and more diverse validation studies — on the order of 150 participants representing a broad range of skin pigmentation, up from prior recommendations as low as around 10 — and measuring skin tone directly rather than by self-reported race.
+277	Clinicians should know that a pulse oximeter reading may overestimate true oxygen saturation in patients with darker skin, treat borderline readings in those patients with appropriate suspicion, and confirm with arterial blood gas analysis when the clinical picture suggests hypoxia despite a reassuring SpO2.
+278	Know that SpO2 may overestimate true oxygen in patients with darker skin.
+279	Use arterial blood gas analysis when hypoxia is suspected despite a reassuring SpO2.
+280	Support devices validated across the full range of skin tones (FDA 2025 draft guidance: ~150 diverse participants).
+281	(NEJM 2020) found occult hypoxemia in 17.0% of Black vs 6.2% of white patients — nearly three times more missed dangerous hypoxia.
+282	During COVID-19, when SpO2 drove triage and treatment thresholds, this bias likely contributed to the already severe racial mortality gap.
+283	FDA issued draft guidance (early 2025) for larger, more diverse validation studies, and clinicians should confirm suspected hypoxia with arterial blood gas.
+284	Occult hypoxemia is dangerously low true oxygen (arterial saturation <88%) that the pulse oximeter misses, showing a reassuring 92-96% reading instead.
+285	Sjoding et al. found it in 17.0% of Black patients versus 6.2% of white patients — nearly three times more often — because greater skin pigmentation causes the device to overestimate oxygen saturation.
+286	Occult hypoxemia (true arterial saturation <88% despite a 92-96% oximeter reading) occurred nearly three times as often in Black patients — 17.0% vs 6.2%
+287	What did Sjoding and colleagues (NEJM, 2020) find about pulse oximetry accuracy by race, and what is "occult hypoxemia"?
+288	[1] Sjoding MW, Dickson RP, Iwashyna TJ, Gay SE, Valley TS (2020) — "Racial Bias in Pulse Oximetry Measurement," New England Journal of Medicine — https://www.nejm.org/doi/full/10.1056/NEJMc2029240 — occult hypoxemia in 17.0% of Black vs 6.2% of white patients (~3x); melanin mechanism.
+289	[2] FDA — Safety Communication (Feb 2021), "Pulse Oximeter Accuracy and Limitations" — https://www.fda.gov/medical-devices/safety-communications/pulse-oximeter-accuracy-and-limitations-fda-safety-communication — caution that skin pigmentation can affect accuracy and readings should not be the sole basis for assessment.
+290	[3] CNN (Jan 6, 2025) — "FDA issues draft guidance to improve accuracy of pulse oximeters for people with darker skin tones" — https://www.cnn.com/2025/01/06/health/fda-pulse-oximeters-draft-guidance/index.html — draft recommends ~150 participants across diverse skin pigmentation, up from ~10, and direct skin-tone measurement.
+291	[4] Johns Hopkins Bloomberg School of Public Health (2024) — "Pulse Oximeters' Racial Bias" — https://publichealth.jhu.edu/2024/pulse-oximeters-racial-bias — overestimation bias by skin pigmentation and the link to delayed COVID-19 treatment eligibility.
+292	[5] Pulmonology Advisor — "Pulse Oximetry: Examining Racial Bias in a Valuable But Flawed Tool" — https://www.pulmonologyadvisor.com/features/pulse-oximetry-examining-racial-bias-in-a-valuable-but-flawed-tool/ — clinical implications and why a race-based correction is the wrong fix.
+
+## cms-equity-strategy
+293	Health equity stops being optional when the largest payer in the country attaches money to it.
+294	The Centers for Medicare & Medicaid Services (CMS) administers Medicare and Medicaid, covering well over 150 million Americans and accounting for a huge share of all US health spending.
+295	It also covers an essential and current caveat — that the strength of these requirements rises and falls with federal policy, and that several CMS equity provisions were scaled back in 2026.
+296	CMS covers over 150 million Americans, so when it ties equity to program rules and payment, the whole system responds.
+297	The CMS Framework for Health Equity 2022-2032
+298	CMS articulated its strategy in the CMS Framework for Health Equity 2022-2032, a ten-year plan published by the CMS Office of Minority Health.
+299	The five priorities are: (1) expand the collection, reporting, and analysis of standardized data; (2) assess the causes of disparities within CMS programs and address inequities in policy and operations; (3) build the capacity of health care organizations and the workforce to reduce disparities; (4) advance language access, health literacy, and culturally tailored services; and (5) increase access to health care services for people living with disabilities.
+300	Priority 1 is the REaL-data foundation.
+301	Priority 2 is the data-to-action pipeline.
+302	Priority 4 is the language-access and CLAS material in the next lesson.
+303	Priority 5 extends the equity lens to disability, a population often left out of race-focused equity work.
+304	The Five Priorities of the CMS Framework for Health Equity (2022-2032)
+305	The most powerful lever, though, is payment, and the clearest example is the Medicare Advantage and Part D Star Ratings system.
+306	CMS designed a specific equity mechanism for Star Ratings: a Health Equity Index (later renamed the "Excellent Health Outcomes for All," or EHO4all, reward).
+307	The reward, ranging up to 0.4 added to a plan's star rating, was structured so that a plan could only earn it by performing well for its most disadvantaged members — directly tying bonus dollars to equity.
+308	CMS developed a Health Equity Index reward — later renamed Excellent Health Outcomes for All (EHO4all) — to replace the legacy "reward factor" in Medicare Advantage and Part D Star Ratings.
+309	The design adds a bonus (0 to 0.4) to a plan's raw star rating based on how large its disadvantaged population is and how well the plan scores for those members on a subset of measures.
+310	The point was structural: make billions in Star Ratings bonuses depend, in part, on closing outcome gaps for the most disadvantaged enrollees.
+311	The Health Equity Index / EHO4all Reward in Star Ratings
+312	The most important current example: in its Contract Year 2027 Medicare Advantage and Part D final rule — finalized in 2026 — CMS reversed course on several equity provisions.
+313	CMS finalized that it would not implement the Health Equity Index / EHO4all reward for the 2027 Star Ratings, instead continuing the historical reward factor that rewards consistently high performance across all enrollees.
+314	The Health Equity Index / EHO4all reward was developed for the 2027 Star Ratings but then finalized as NOT implemented in the CY2027 final rule (2026), and several MA health-equity requirements were removed.
+315	An equity strategy that exists only because a Star Ratings bonus rewards it will evaporate the moment that bonus does — as the 2026 reversal illustrates.
+316	Covers 150M+ Americans — unmatched leverage
+317	HEI/EHO4all reward dropped for 2027 (2026 rule)
+318	Several MA equity requirements rolled back in 2026
+319	CMS covers over 150 million Americans, giving it unmatched leverage to turn equity from aspiration into requirement through program rules and payment.
+320	The CMS Framework for Health Equity 2022-2032 sets five priorities: standardized data, disparity assessment, organizational capacity, language/literacy, and disability access.
+321	CMS designed a Health Equity Index (later EHO4all) reward to give Star Ratings bonuses for good outcomes among dual-eligible, low-income-subsidy, and disabled enrollees.
+322	Crucially, these requirements are reversible: the CY2027 final rule (2026) finalized NOT implementing the EHO4all reward and removed several MA health-equity requirements.
+323	The Health Equity Index / EHO4all reward was designed to add a bonus (up to 0.4) to a plan's star rating based on how well it achieved outcomes for enrollees with social risk factors — those dually eligible, receiving the low-income subsidy, or qualifying via disability — tying Star Ratings bonus dollars to equity.
+324	However, in its Contract Year 2027 final rule (finalized in 2026), CMS finalized that it would not implement the reward and continued the legacy reward factor, illustrating that CMS equity requirements are reversible through rulemaking.
+325	It penalized plans that enrolled too many disadvantaged members; it was expanded in 2026
+326	It rewarded plans for good outcomes among socially at-risk enrollees (dual-eligible, low-income-subsidy, disabled), but CMS finalized NOT implementing it for 2027 Star Ratings in its CY2027 rule
+327	[1] CMS Office of Minority Health — "CMS Framework for Health Equity 2022-2032" — https://www.cms.gov/files/document/cms-framework-health-equity.pdf — the five priorities of the ten-year framework.
+328	[2] CMS — "Contract Year 2027 Medicare Advantage and Part D Final Rule" fact sheet — https://www.cms.gov/newsroom/fact-sheets/contract-year-2027-medicare-advantage-part-d-final-rule — finalized not implementing the Excellent Health Outcomes for All reward for 2027 Star Ratings; removal of MA health-equity requirements.
+329	[3] RISE Health — "Final rate notice includes update, new name for the Health Equity Index reward" — https://www.risehealth.org/insights-articles/article/final-rate-notice-includes-update-new-name-for-the-health-equity-index-reward/ — HEI renamed EHO4all; targets dual-eligible, LIS, and disabled enrollees.
+330	[4] Baltimore Health Analytics — "Health Equity Index" tutorial — https://www.baltimorehealthanalytics.com/tutorial/health-equity-index — design of the reward (0-0.4 bonus based on share of at-risk members and performance for them); replacement of the legacy reward factor.
+331	[5] CMS Office of Minority Health — "CMS Framework for Health Equity" program page — https://www.cms.gov/about-cms/agency-information/omh/health-equity-programs/cms-framework-for-health-equity — overview of CMS equity strategy and programs.
+
+## clas-standards-language-access
+332	For these patients, language access is the difference between care that works and care that fails — and the evidence shows that LEP patients receive worse care, experience more adverse events, and have poorer outcomes when language services are inadequate.
+333	First released in 2001 and enhanced in 2013, the standards consist of one Principal Standard and 14 supporting standards, for 15 in total.
+334	The Principal Standard sets the overarching expectation: "Provide effective, equitable, understandable, and respectful quality care and services that are responsive to diverse cultural health beliefs and practices, preferred languages, health literacy, and other communication needs." The 14 remaining standards are organized into three themes: governance, leadership, and workforce; communication and language assistance; and engagement, continuous improvement, and accountability.
+335	The Legal Mandate: Title VI and Section 1557
+336	The foundation is Title VI of the Civil Rights Act of 1964, which prohibits discrimination on the basis of race, color, or national origin by any program receiving federal financial assistance.
+337	Section 1557 of the Affordable Care Act builds directly on Title VI and sharpens the language-access requirements.
+338	The Section 1557 final rule adds concrete definitions of what counts as a "qualified" interpreter, translator, and bilingual staff member, and requires covered entities to post notices informing patients that free language assistance is available.
+339	Section 1557 of the ACA extends Title VI's national-origin protections with specific language-access duties for covered health programs.
+340	Section 1557 Language-Access Requirements
+341	Using minor children to interpret is specifically prohibited under Section 1557 except as a temporary emergency measure when there is an imminent threat and no qualified interpreter is available.
+342	It is possible to treat language access purely as a compliance obligation — do the minimum to satisfy Title VI and Section 1557 and avoid a civil-rights complaint.
+343	Language access sits at the intersection of legal requirement, quality improvement, and equity, which is part of why it is one of the most actionable pieces of equity work an organization can undertake.
+344	The CLAS Standards describe the destination; Title VI and Section 1557 make the journey mandatory; and professional language services, translated materials, and good REaL data are the vehicle.
+345	One Principal Standard plus 14 supporting standards, HHS Office of Minority Health
+346	Originally 2001; enhanced version in 2013
+347	1964 Civil Rights Act; bars national-origin discrimination, interpreted to include LEP access
+348	The National CLAS Standards (15 total: one Principal Standard plus 14, from HHS OMH) define culturally and linguistically appropriate care across three themes.
+349	Title VI of the Civil Rights Act (1964) bars national-origin discrimination — interpreted to require meaningful access for LEP patients at federally funded providers.
+350	Section 1557 of the ACA requires free, accurate, timely language assistance by qualified interpreters; being bilingual alone does not make someone qualified.
+351	Title VI of the Civil Rights Act of 1964 bars national-origin discrimination by federally funded programs, interpreted to require meaningful access for LEP patients, and Section 1557 of the ACA strengthens this by mandating free, accurate, timely language assistance from qualified interpreters.
+352	Title VI of the Civil Rights Act and Section 1557 of the ACA require federally funded providers to give LEP patients free, qualified language assistance; being bilingual alone is not sufficient to interpret
+353	[1] HHS Office of Minority Health — "National Standards for Culturally and Linguistically Appropriate Services (CLAS)" (Think Cultural Health) — https://thinkculturalhealth.hhs.gov/clas/standards — the 15 standards, the Principal Standard, and the three themes; released 2001, enhanced 2013.
+354	[2] Federal Register (2013) — "National Standards for Culturally and Linguistically Appropriate Services (CLAS) in Health and Health Care" — https://www.federalregister.gov/documents/2013/09/24/2013-23164/national-standards-for-culturally-and-linguistically-appropriate-services-clas-in-health-and-health — the enhanced CLAS Standards.
+355	[3] National Health Law Program — "What is required under Title VI and Section 1557 to ensure Language Access for Individuals with Limited English Proficiency?" — https://healthlaw.org/resource/what-is-required-under-title-vi-and-section-1557-to-ensure-language-access-for-individuals-with-limited-english-proficiency/ — Title VI and Section 1557 language-access obligations.
+356	[4] HHS Office for Civil Rights — Section 1557 final rule and language-access guidance — https://www.hhs.gov/sites/default/files/ocr-dcl-section-1557-language-access.pdf — qualified interpreter definitions, notice requirements, prohibition on minor-child interpreters except in emergencies.
+357	[5] HHS — "Limited English Proficiency (LEP)" — https://www.hhs.gov/civil-rights/for-individuals/special-topics/limited-english-proficiency/index.html — federal LEP framework and meaningful-access requirements.
+
+## community-health-workers
+358	For exactly the populations that experience the worst disparities, a trusted person from their own community is sometimes the most effective intervention available.
+359	A widely cited Health Affairs analysis found that every dollar invested in the IMPaCT model returned about $2.47 to an average Medicaid payer within the same year — meaning the program more than paid for itself.
+360	This was the first economic analysis of a health-system-based CHW intervention for adults built on randomized-trial data.
+361	Returned per $1 invested in IMPaCT
+362	The most promising path is Medicaid financing.
+363	In a 2013 rule (effective January 2014), CMS allowed state Medicaid programs to reimburse for preventive services delivered by non-licensed providers, including CHWs, when recommended by a licensed practitioner.
+364	The IMPaCT model, developed at the University of Pennsylvania, is the most rigorously evaluated CHW program in the US, tested in three randomized controlled trials and serving more than 12,000 patients in the Philadelphia region.
+365	Its trials showed improved chronic-disease control, mental health, and care quality with reduced hospital days, and a Health Affairs economic analysis found a $2.47 return per $1 invested for Medicaid.
+366	Durable programs need recurring funding, increasingly through Medicaid reimbursement (enabled by the 2013/2014 CMS rule).
+367	IMPaCT returned about $2.47 per $1 invested for Medicaid within the year — pairing better outcomes with a documented business case.
+368	A 2013 CMS rule (effective 2014) let Medicaid reimburse CHW preventive services; more than half of states now have some CHW coverage policy — the key to sustainability.
+369	The IMPaCT model was tested in three randomized controlled trials, improving chronic-disease control, mental health, and care quality while reducing hospital days, and a Health Affairs analysis found a ~$2.47 return per $1 invested for Medicaid.
+370	The main sustainability obstacle is funding: CHW programs have historically depended on time-limited grants that end, so the shift toward Medicaid reimbursement (enabled by the 2013/2014 CMS rule) is critical to putting them on durable footing.
+371	IMPaCT improved outcomes across three RCTs and returned ~$2.47 per $1 to Medicaid, but sustainability is threatened by reliance on time-limited grant funding rather than recurring payment
+372	[1] American Public Health Association — "Community Health Workers" — https://www.apha.org/apha-communities/member-sections/community-health-workers — APHA definition of CHWs and emphasis on CHW self-determination.
+373	(2020) — "Evidence-Based Community Health Worker Program Addresses Unmet Social Needs And Generates Positive Return On Investment," Health Affairs — https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00981 — IMPaCT $2.47 ROI per $1 to Medicaid; first economic analysis using RCT data.
+374	[3] Penn LDI — "The Evidence on Community Health Workers" — https://ldi.upenn.edu/our-work/research-updates/the-evidence-on-community-health-workers/ — three IMPaCT RCTs; improved chronic-disease control, mental health, quality, and reduced hospital days.
+375	[4] KFF — "State Policies for Expanding Medicaid Coverage of Community Health Worker (CHW) Services" — https://www.kff.org/medicaid/state-policies-for-expanding-medicaid-coverage-of-community-health-worker-chw-services/ — more than half of states have CHW coverage/payment policies; financing for sustainability.
+376	[5] Applied Policy — "The Growth of Community Health Worker Programs" — https://www.appliedpolicy.com/the-growth-of-community-health-worker-programs/ — 2013 CMS rule (effective January 2014) allowing Medicaid reimbursement for CHW preventive services; certification variation by state.
+
+## cross-sector-partnerships
+377	The most ambitious federal test of cross-sector partnership was the CMS Accountable Health Communities (AHC) Model, which ran from 2017 to 2023.
+378	The model was built around "bridge organizations" — 32 diverse entities, including community-based organizations, hospitals, health systems, payers, and health information exchanges, that coordinated screening and referral across sectors in their communities.
+379	Over its life, AHC organizations screened more than one million beneficiaries — a genuinely large-scale test.
+380	In the assistance track, the evaluation found lower total expenditures for beneficiaries offered navigation and fewer Medicaid inpatient admissions and unplanned readmissions; CMS’s final evaluation credited the model with more than $200 million in net savings, almost 80% of it among Medicaid-only beneficiaries.
+381	AHC was CMS's flagship cross-sector demonstration: screen Medicare and Medicaid beneficiaries for five core social needs and connect them to community resources through 32 "bridge organizations." It screened over 1.1 million beneficiaries.
+382	In the randomized assistance track, beneficiaries who received navigation showed lower total expenditures and fewer unplanned readmissions — more than $200 million in net savings overall, per CMS’s final evaluation.
+383	CMS Accountable Health Communities Model (2017-2023)
+384	Partnerships need money, and one of the most significant funding levers is the community benefit obligation that nonprofit hospitals carry.
+385	Most US hospitals are tax-exempt 501(c)(3) organizations, and in exchange for that exemption they are required to provide community benefit.
+386	Under Section 9007 of the ACA (codified as Internal Revenue Code Section 501(r)), every tax-exempt hospital must conduct a Community Health Needs Assessment (CHNA) at least once every three years, with input from people representing the broad interests of the community, including public health expertise — and must adopt an implementation strategy describing how it will address the priority needs identified.
+387	Hospitals report their community benefit spending and compliance on IRS Form 990, Schedule H.
+388	The requirements have teeth: a hospital that fails to conduct its triennial CHNA can face a $50,000 excise tax.
+389	For tax-exempt hospitals under ACA Section 9007 / IRC 501(r)(3)
+390	IRS Form 990, Schedule H, for 501(c)(3) hospitals
+391	The first is genuine shared power and trust, especially with community-based organizations.
+392	The CMS Accountable Health Communities Model (2017-2023) screened over 1.1 million beneficiaries via 32 bridge organizations and connected social needs to community resources.
+393	AHC's assistance track reduced expenditures (more than $200 million in net savings) and readmissions — but showed that referral only works if community resources have capacity.
+394	Nonprofit hospitals must conduct a Community Health Needs Assessment every 3 years under the ACA (501(r)), reporting community benefit on IRS Schedule H — with a $50,000 penalty for noncompliance.
+395	Under ACA Section 9007 (IRC Section 501(r)), tax-exempt hospitals must conduct a Community Health Needs Assessment (CHNA) at least every three years — with input from those representing the broad interests of the community, including public-health expertise — and adopt an implementation strategy to address the priority needs, reporting on IRS Form 990 Schedule H.
+396	Failure to do the CHNA carries a $50,000 excise tax.
+397	[1] CMS — "Accountable Health Communities Model" — https://www.cms.gov/priorities/innovation/innovation-models/ahcm — model design (2017-2023), five core social needs, bridge organizations, assistance/alignment tracks.
+398	[2] CMS — "Lessons from Five Years of CMS' Accountable Health Communities Model" — https://www.cms.gov/blog/lessons-five-years-cms-accountable-health-communities-model — screening at scale, assistance-track reductions in expenditures and readmissions, and capacity lessons.
+399	Final figures (32 bridge organizations, 1.1 million screened, >$200 million net savings) are from CMS’s AHC final evaluation report (2026).
+400	[3] IRS — "Requirements for 501(c)(3) hospitals under the Affordable Care Act — Section 501(r)" — https://www.irs.gov/charities-non-profits/charitable-organizations/requirements-for-501c3-hospitals-under-the-affordable-care-act-section-501r — triennial CHNA requirement, implementation strategy, $50,000 excise tax.
+401	[4] IRS — "Instructions for Schedule H (Form 990)" — https://www.irs.gov/instructions/i990sh — community benefit and CHNA reporting for tax-exempt hospitals.
+402	[5] Unite Us and findhelp — cross-sector referral infrastructure — https://uniteus.com/ and https://www.findhelp.org/ — platforms linking health care and community-based organizations with closed-loop referral tracking.
+
+## organizational-equity-transformation
+403	The most influential roadmap for organizational transformation is the Institute for Healthcare Improvement's 2016 white paper, "Achieving Health Equity: A Guide for Health Care Organizations." It lays out a framework of five interdependent components, and its core argument is that meaningful progress requires work across all five — not cherry-picking the comfortable ones.
+404	The Joint Commission — the body that accredits most US hospitals — issued new Leadership standards on health equity effective January 1, 2023, and then elevated health equity to a National Patient Safety Goal effective July 1, 2023.
+405	The standard (LD.04.03.08) was deliberately placed in the Leadership chapter, with the Joint Commission explaining that "success demands leadership" and that achieving equity requires commitment from the C-suite and the board.
+406	Effective January 1, 2023, the Joint Commission introduced a Leadership standard requiring accredited hospitals to treat health care disparities as a quality and safety priority; effective July 1, 2023, it elevated this to a National Patient Safety Goal.
+407	The Joint Commission Health Care Equity Standard (LD.04.03.08)
+408	It is reinforced every time leadership funds an equity intervention over a competing priority, and undermined every time equity is the first thing cut under pressure.
+409	Getting there is difficult, ongoing, and — given the disparities documented throughout this course — among the most important work in health care.
+410	The Joint Commission made equity a Leadership standard (Jan 2023) and a National Patient Safety Goal (July 2023), codifying SDOH screening, disparity analysis, and action plans.
+411	Having the largest possible number of separate equity initiatives running simultaneously
+412	[1] Institute for Healthcare Improvement (2016) — "Achieving Health Equity: A Guide for Health Care Organizations" — https://www.ihi.org/library/white-papers/achieving-health-equity-guide-health-care-organizations — the five-component framework for organizational equity transformation.
+413	[2] IHI — "Improving Health Equity: Make Health Equity a Strategic Priority" — https://www.ihi.org/sites/default/files/IHI_ImprovingHealthEquity_MakeEquityStrategicPriorityGuide.pdf — guidance on embedding equity in strategy and governance.
+414	[3] The Joint Commission — R3 Report Issue 38, "National Patient Safety Goal to Improve Health Care Equity" — https://www.jointcommission.org/en-us/standards/r3-report/r3-report-38 — LD.04.03.08 standard (effective Jan 1, 2023) elevated to a National Patient Safety Goal (effective July 1, 2023); elements of performance.
+415	[4] McDermott Will & Emery — "Health Equity Elevated to a Joint Commission National Patient Safety Goal" — https://www.mwe.com/insights/health-equity-elevated-to-a-joint-commission-national-patient-safety-goal/ — analysis of the leadership requirements and elements of performance.
+416	[5] National Academy of Medicine — "An Equity Agenda for the Field of Health Care Quality Improvement" — https://nam.edu/perspectives/an-equity-agenda-for-the-field-of-health-care-quality-improvement/ — tying leadership accountability and compensation to equity outcomes as the key to sustained organizational change.

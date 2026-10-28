@@ -1,0 +1,303 @@
+
+## medicaid-history-origins
+0	Medicaid's Origins: 1965 to Today
+1	Born in 1965: A Great Society Program
+2	Medicaid was created on July 30, 1965, when President Lyndon B.
+3	Johnson signed the Social Security Amendments of 1965 (Public Law 89-97).
+4	Medicare was designed as a uniform federal program for people 65 and older.
+5	Because states administer their own programs, "Medicaid" is really 56 different programs — one for each state, the District of Columbia, and the territories — each with different eligibility rules, covered benefits, and provider payment rates.
+6	A key early expansion came in 1972, when Congress created the Supplemental Security Income (SSI) program.
+7	A series of laws in the 1980s extended coverage to low-income pregnant women and children regardless of welfare status, transforming Medicaid into a broad health-financing program rather than a welfare appendage.
+8	The next major milestone came in 1997, when the Balanced Budget Act created the Children's Health Insurance Program (CHIP), originally known as SCHIP.
+9	CHIP was designed to cover children in families that earned too much to qualify for Medicaid but could not afford private insurance — generally children in families below roughly 200 percent of the federal poverty level.
+10	CHIP was enacted as part of the Balanced Budget Act of 1997, which provided roughly $40 billion in federal funding through fiscal year 2007 to cover low-income, uninsured children not eligible for Medicaid.
+11	The Balanced Budget Act of 1997
+12	The ACA and the Biggest Expansion in 50 Years
+13	The Affordable Care Act (ACA), signed in 2010, called for the single largest expansion in Medicaid's history.
+14	Starting January 1, 2014, the ACA extended Medicaid eligibility to nearly all non-elderly adults with incomes up to 138 percent of the federal poverty level — including, for the first time, low-income adults without dependent children, who had historically been excluded in most states.
+15	But in 2012, the Supreme Court changed the plan.
+16	Sebelius, decided June 28, 2012, the Court ruled that the federal government could not force states to expand Medicaid by threatening to withhold all of their existing Medicaid funding.
+17	Traditional Medicaid (pre-2014)
+18	Covers nearly all adults up to 138% of the federal poverty level
+19	Childless low-income adults eligible for the first time
+20	Because of the 2012 Supreme Court decision, ACA Medicaid expansion is optional.
+21	As of mid-2025, 41 states (including the District of Columbia) had adopted expansion while 10 states had not — which is why a low-income adult's eligibility still depends heavily on the state they live in.
+22	Six decades after its creation, Medicaid is one of the largest sources of health coverage in the United States.
+23	In fiscal year 2023, Medicaid provided coverage to roughly 96 million individuals over the course of the year at a total cost of about $894 billion.
+24	The federal government paid approximately 69 percent of that total and states paid the rest.
+25	Medicaid represented about 18 percent of all national health spending in 2023, making it comparable in scale to Medicare and one of the dominant payers in the entire health system.
+26	It surged during the COVID-19 pandemic when states were temporarily barred from disenrolling people, then fell sharply during the post-pandemic "unwinding." As of June 2026, about 73.2 million people were enrolled in Medicaid and CHIP combined — still slightly above pre-pandemic levels but well below the pandemic peak.
+27	Federal share ~69%, state share ~31% (CRS / MACPAC)
+28	Medicaid's share of all US health spending in CY2023 (CRS)
+29	Combined enrollment as of June 2026 (KFF Medicaid Enrollment and Unwinding Tracker)
+30	Medicaid was created on July 30, 1965, by Title XIX of the Social Security Act, signed by President Lyndon Johnson alongside Medicare.
+31	Medicaid began closely tied to cash welfare, but Congress gradually decoupled it — the 1972 SSI program and 1980s expansions broadened it into a true health insurer.
+32	The Balanced Budget Act of 1997 created CHIP to cover children in families earning too much for Medicaid but unable to afford private insurance.
+33	The 2010 ACA called for expanding Medicaid to adults up to 138% of poverty using a single MAGI income standard, beginning in 2014.
+34	The 2012 Supreme Court decision NFIB v.
+35	Sebelius made the ACA Medicaid expansion optional, so as of mid-2025, 41 states (with DC) had expanded and 10 had not.
+36	Today Medicaid covers roughly 96 million people a year, spends about $894 billion annually, and accounts for about 18% of all US health spending.
+37	What did the 2012 Supreme Court decision in NFIB v.
+38	[1] Medicare and Medicaid Act (1965) — https://www.archives.gov/milestone-documents/medicare-and-medicaid-act — Medicaid signed into law July 30, 1965 as Title XIX by President Johnson
+39	[2] Program History and Prior Initiatives — https://www.medicaid.gov/about-us/program-history — 1972 SSI link to Medicaid eligibility and program evolution
+40	[3] Federal Legislative Milestones in Medicaid and CHIP — https://www.macpac.gov/reference-materials/federal-legislative-milestones-in-medicaid-and-chip/ — CHIP created by the Balanced Budget Act of 1997
+41	[4] National Federation of Independent Business v.
+42	Sebelius, 567 U.S. 519 (2012) — https://supreme.justia.com/cases/federal/us/567/519/ — Supreme Court made ACA Medicaid expansion optional for states
+43	[5] Medicaid: An Overview — https://www.congress.gov/crs-product/R43357 — FY2023 ~96M covered, ~$894B spending, ~18% of national health spending, ~69% federal share
+44	[6] Medicaid Enrollment and Unwinding Tracker — https://www.kff.org/medicaid/medicaid-enrollment-and-unwinding-tracker/ — ~73.2M Medicaid+CHIP enrolled as of June 2026; 41 states (with DC) expanded as of mid-2025
+
+## medicaid-who-it-covers
+45	The program organizes its enrollees into four major populations: children, non-disabled (often called "non-elderly") adults, people who qualify on the basis of a disability, and adults age 65 and older.
+46	The 2010 Affordable Care Act added a fifth pathway for low-income adults generally, but the categorical structure still shapes how the program works, how benefits are set, and how spending is distributed.
+47	Medicaid enrollees fall into four major groups: children, non-disabled adults, people eligible due to disability, and adults 65 and older.
+48	Children are the largest group by enrollment, but older adults and people with disabilities drive the majority of spending.
+49	Children: The Largest Group
+50	EPSDT requires states to cover periodic and as-needed medical, vision, hearing, and dental screening for children under 21 — and, crucially, to cover any service needed to "correct or ameliorate" a child's physical or mental condition, even if that service is otherwise optional for adults.
+51	Despite being the largest enrollment group, children are relatively inexpensive to cover because most are healthy.
+52	In fiscal year 2023, children represented roughly 35 percent of full-benefit enrollment but only about 15 to 16 percent of Medicaid spending.
+53	EPSDT is the most comprehensive pediatric benefit in American health coverage: states must cover any medically necessary service for an eligible child, even services that are optional for adult enrollees.
+54	The populations that drive Medicaid spending are adults 65 and older and people who qualify on the basis of a disability.
+55	Spending per enrollee is highest for people with disabilities (around $20,950) and older adults (around $20,194) — roughly six times the per-enrollee spending for children (around $3,321), according to KFF analysis of federal data.
+56	But only ~15-16% of spending (Medicaid.gov FY2023 Beneficiary Profile)
+57	From a minority of total enrollment (Medicaid.gov FY2023)
+58	About 6x the per-child amount (KFF)
+59	KFF estimates that roughly 12 million Americans are enrolled in both programs — nearly 9 million with full Medicaid benefits and about 3 million with partial benefits.
+60	Medicaid and Medicare are the first- and second-largest public payers for long-term services and supports, together accounting for roughly 63.6 percent of all LTSS spending nationwide in 2023.
+61	EPSDT for children under 21
+62	Medicaid covers four major populations: children, non-disabled adults, people eligible due to disability, and adults age 65 and older.
+63	Children are the largest enrollment group (~35% of full-benefit enrollees) but account for only about 15-16% of spending because most are healthy.
+64	Dual eligibles (~12 million people, per KFF) are enrolled in both Medicare and Medicaid and account for a disproportionate share of combined spending.
+65	Children are the largest group by enrollment but the least expensive per person — about $3,321 per enrollee versus roughly $20,000 for older adults and people with disabilities.
+66	Children make up the largest share of Medicaid enrollment.
+67	[1] Eligibility Policy — https://www.medicaid.gov/medicaid/eligibility-policy — four major eligibility groups and mandatory vs optional eligibility
+68	[2] 2023 Medicaid and CHIP Beneficiary Profile — https://www.medicaid.gov/medicaid/quality-of-care/downloads/beneficiary-profile-2023.pdf — children ~35% of enrollment but ~15-16% of spending; aged+disabled ~51% of spending
+69	[3] A Look at Variation in Medicaid Spending Per Enrollee by Group — https://www.kff.org/medicaid/a-look-at-variation-in-medicaid-spending-per-enrollee-by-group-and-across-states/ — per-enrollee spending: disability ~$20,950, aged ~$20,194, children ~$3,321
+70	[4] Mandatory & Optional Medicaid Benefits — https://www.medicaid.gov/medicaid/benefits/mandatory-optional-medicaid-benefits — mandatory benefit list including hospital, physician, lab/x-ray, nursing facility, EPSDT
+71	[5] A Profile of Medicare-Medicaid Enrollees (Dual Eligibles) — https://www.kff.org/medicare/a-profile-of-medicare-medicaid-enrollees-dual-eligibles/ — ~12M dual eligibles (nearly 9M full-benefit, 3M partial-benefit); disproportionate share of combined spending
+72	[6] Who Pays for Long-Term Services and Supports? — https://www.congress.gov/crs-product/IF10343 — Medicaid and Medicare account for ~63.6% of all LTSS spending in 2023; Medicaid primary LTSS payer
+
+## medicaid-eligibility-magi
+73	Understanding which world an applicant falls into is the first step in any eligibility determination, because the two systems count income differently, treat assets differently, and use different thresholds.
+74	Before 2014, states used dozens of different income-counting methods with their own deductions and disregards.
+75	Subtract an amount equal to 5% of the federal poverty level as a standard disregard.
+76	Apply the 5% FPL disregard
+77	Check the result against the income limit for the applicant's eligibility group (e.g., 138% FPL for expansion adults).
+78	The 138% Threshold and the 5% Disregard
+79	In states that adopted the ACA expansion, adults qualify if their MAGI is at or below 138 percent of the federal poverty level (FPL).
+80	This single number — 138 percent — is one of the most cited figures in Medicaid policy, but there is a subtle wrinkle behind it.
+81	The statute actually sets the expansion limit at 133 percent of FPL, but the law also provides a standard "income disregard" equal to 5 percent of FPL.
+82	When you subtract that 5 percent disregard, an applicant earning exactly 138 percent of FPL is treated as if they earn 133 percent — which is why the effective threshold everyone refers to is 138 percent.
+83	Importantly, the disregard equals 5 percent of the poverty level, not 5 percent of the applicant's income.
+84	Because the federal poverty guidelines are updated annually, the dollar value of "138 percent" changes each year.
+85	For 2026, the federal poverty level is roughly $15,960 for an individual and about $33,000 for a family of four in the 48 contiguous states; 138 percent of those figures comes to roughly $22,000 for an individual and about $45,500 for a family of four.
+86	Statutory 133% FPL plus a standard 5%-of-FPL disregard (NHeLP)
+87	48 contiguous states, HHS poverty guidelines effective Jan 2026
+88	A common mistake is to think the 5% disregard subtracts 5% of the applicant's income.
+89	It does not — it subtracts an amount equal to 5% of the federal poverty level.
+90	That is what turns the statutory 133% limit into the familiar 138% figure.
+91	The Disregard Is 5% of the Poverty Level, Not 5% of Income
+92	One of the most consequential features of MAGI is what it leaves out: there is no asset or resource test.
+93	Children and pregnant women frequently qualify at higher income levels than adults — often well above 138 percent of FPL, sometimes up to 200 percent or more depending on the state and the CHIP structure — reflecting a longstanding policy priority of covering kids broadly.
+94	People who qualify for Medicaid based on age (65 and older), blindness, or disability are exempt from MAGI rules.
+95	The only mandatory non-MAGI pathway is for people who receive Supplemental Security Income (SSI).
+96	SSI limits recipients to a modest monthly income and no more than $2,000 in countable assets for an individual.
+97	People seeking Medicaid coverage of nursing-home or home-based long-term care generally face both income limits and a $2,000 asset limit (with some categories tied to 300 percent of the SSI income standard), which is why Medicaid long-term care eligibility is so much more complex than MAGI eligibility for a working family.
+98	Adults 65+, blind, or disabled
+99	Asset limit often $2,000 per individual
+100	The well-known 138% of FPL expansion limit is built from a statutory 133% threshold plus a standard 5%-of-FPL income disregard.
+101	The 5% disregard equals 5% of the federal poverty level, not 5% of the applicant's income — a frequent point of confusion.
+102	Non-MAGI pathways for older adults and people with disabilities still include asset limits — often $2,000 per individual under SSI rules — which is central to Medicaid long-term care eligibility.
+103	The statute sets the limit at 133% of FPL, but federal law also provides a standard disregard equal to 5% of FPL.
+104	Subtracting that disregard means someone earning 138% of FPL is treated as if they earn 133%, so the effective and commonly cited threshold is 138%.
+105	The statute was later amended to raise the limit to 138%
+106	A standard income disregard equal to 5% of the poverty level is subtracted, effectively raising the limit to 138%
+107	States voluntarily added 5 percentage points
+108	138% applies to children and 133% applies to adults
+109	Why is the ACA Medicaid expansion income limit commonly described as 138% of the federal poverty level when the statute says 133%?
+110	[1] Modified Adjusted Gross Income (MAGI) — https://www.healthcare.gov/glossary/modified-adjusted-gross-income-magi/ — MAGI = AGI plus untaxed foreign income, tax-exempt interest, non-taxable Social Security
+111	[2] The Use of Modified Adjusted Gross Income (MAGI) in Federal Health Programs — https://www.congress.gov/crs-product/R43861 — MAGI standardized methodology; no asset test for MAGI groups; non-MAGI exemptions
+112	[3] Health Advocate: MAGI Primer — https://healthlaw.org/resource/health-advocate-modified-adjusted-gross-income-magi-a-primer/ — 5% FPL disregard converts 133% to 138%; disregard is 5% of FPL not of income
+113	[4] 2026 Poverty Guidelines (48 Contiguous States) — https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines — 2026 FPL ~$15,960 individual / ~$33,000 family of four
+114	[5] Eligibility Policy — https://www.medicaid.gov/medicaid/eligibility-policy — MAGI applies to children, pregnant women, parents, expansion adults; aged/disabled exempt
+115	[6] Medicaid Eligibility Levels for Older Adults and People with Disabilities (Non-MAGI) in 2026 — https://www.kff.org/medicaid/medicaid-eligibility-levels-for-older-adults-and-people-with-disabilities-non-magi-in-2026/ — SSI mandatory pathway; ~$2,000 asset limit; non-MAGI asset documentation
+
+## medicaid-unwinding-redeterminations
+116	The COVID-19 pandemic suspended that machinery for three years, creating the conditions for what became the largest coverage disruption in the program's history.
+117	At the start of the pandemic in 2020, Congress passed the Families First Coronavirus Response Act (FFCRA).
+118	Medicaid and CHIP rolls grew by more than 23 million people, reaching nearly 95 million by the time the provision ended — a historic high driven not by a sudden spike in poverty but by the simple fact that the normal "exit door" had been bolted shut.
+119	The "continuous enrollment provision" of the 2020 Families First Coronavirus Response Act barred states from disenrolling most Medicaid members for three years in exchange for extra federal funding.
+120	Enrollment swelled to nearly 95 million.
+121	The continuous enrollment provision was originally tied to the COVID-19 public health emergency.
+122	But in the Consolidated Appropriations Act of 2023, signed December 29, 2022, Congress "delinked" the two — setting a fixed end date of March 31, 2023, rather than letting it ride on the emergency declaration.
+123	Starting April 1, 2023, states resumed normal eligibility reviews.
+124	The Centers for Medicare & Medicaid Services (CMS) gave states an "unwinding period" of up to 12 months to initiate renewals for their entire caseload — meaning every enrollee's eligibility had to be re-checked over the following year, a massive administrative undertaking after three years of paused renewals.
+125	The enhanced federal funding that came with continuous enrollment was phased down on a schedule rather than cut off at once: a 6.2 percentage-point boost ran through March 2023, then 5 points through June, 2.5 points through September, and 1.5 points through December 2023.
+126	States begin a 12-month "unwinding" period, redetermining the entire caseload.
+127	By the time the unwinding concluded in most states, KFF found that about 25 million people had lost Medicaid coverage through the process.
+128	Roughly 56 million renewals were completed with coverage retained — meaning about 31 percent of completed renewals ended in disenrollment.
+129	Because of the pandemic-era growth, total Medicaid/CHIP enrollment after the unwinding remained roughly 10 million higher than pre-pandemic levels — the rolls came down sharply from their peak but settled above February 2020.
+130	Disenrollment rates ranged from highs around 57 percent in some states to lows around 12 percent in others — a reminder that, as always in Medicaid, where you live shapes what happens to you.
+131	People disenrolled during the unwinding (KFF, 2024)
+132	About 56M renewals retained coverage (KFF)
+133	Net enrollment still higher than February 2020 (KFF)
+134	The most important policy lesson of the unwinding is hidden in why people lost coverage.
+135	Among those disenrolled, nearly seven in ten — about 69 percent — were dropped for "procedural" reasons: missing paperwork, an outdated mailing address, an unreturned form.
+136	Only about 31 percent were actually determined to be ineligible.
+137	About 69% of unwinding disenrollments were for paperwork or procedural reasons, not because the person was found ineligible.
+138	In August 2023, CMS determined that 29 states were running their automatic (ex parte) renewals at the household level instead of the individual level.
+139	In August 2023, CMS found that 29 states were processing automatic renewals at the household level rather than per individual.
+140	The Household Ex Parte Error of 2023
+141	The 2020 Families First Coronavirus Response Act required states to keep most Medicaid enrollees continuously enrolled in exchange for enhanced federal funding.
+142	Continuous enrollment pushed Medicaid/CHIP enrollment up by more than 23 million people, to nearly 95 million.
+143	The Consolidated Appropriations Act of 2023 ended continuous enrollment on March 31, 2023, delinking it from the public health emergency.
+144	States got a 12-month "unwinding" period starting April 2023 to redetermine their entire caseload, with enhanced funding phased down on a schedule.
+145	About 25 million people lost coverage during the unwinding, though net enrollment remained roughly 10 million above pre-pandemic levels.
+146	Nearly 69% of disenrollments were for procedural reasons (paperwork), not because people were found ineligible — meaning many still qualified.
+147	A 2023 ex parte processing error caused many children to be improperly dropped, prompting CMS to require states to fix their systems and reinstate coverage.
+148	During the unwinding, what does it mean that about 69% of disenrollments were "procedural"?
+149	[1] 10 Things to Know About the Unwinding of the Medicaid Continuous Enrollment Provision — https://www.kff.org/medicaid/10-things-to-know-about-the-unwinding-of-the-medicaid-continuous-enrollment-provision/ — FFCRA continuous enrollment; ~23M growth to ~95M; 12-month unwinding
+150	[2] Unwinding the Medicaid Continuous Coverage Requirement — https://www.cbpp.org/research/health/unwinding-the-medicaid-continuous-coverage-requirement — Consolidated Appropriations Act 2023 ended continuous enrollment March 31, 2023; FMAP phase-down schedule
+151	[3] As Medicaid Unwinding Concludes, KFF Finds 25 Million Lost Coverage — https://www.kff.org/medicaid/as-medicaid-unwinding-concludes-in-most-states-kff-finds-25-million-lost-medicaid-coverage-but-enrollment-is-10-million-higher-than-pre-pandemic-levels/ — ~25M lost coverage; net ~10M above pre-pandemic
+152	[4] Medicaid Enrollment and Unwinding Tracker — https://www.kff.org/medicaid/medicaid-enrollment-and-unwinding-tracker/ — ~31% of completed renewals ended in disenrollment; ~69% procedural; state range ~12-57%
+153	[5] Kids in many states wrongly removed from Medicaid, U.S. officials say — https://www.washingtonpost.com/health/2023/08/30/medicaid-unwinding-children-dropped/ — August 2023 household ex parte error; 29 states; children improperly disenrolled
+154	[6] Medicaid Unwinding Highlights Need for Stronger Federal Oversight to Protect Children's Coverage — https://www.healthaffairs.org/content/forefront/medicaid-unwinding-highlights-need-federal-oversight-protect-children-s-coverage — ex parte household vs individual processing; reinstatement and retroactive coverage
+
+## medicaid-fmap-federal-match
+155	A state whose per capita income equals the national average lands at an FMAP of about 55 percent (meaning the state pays 45 percent).
+156	No matter what the formula produces, federal law caps the match within a band: the regular FMAP can never be lower than 50 percent or higher than 83 percent.
+157	No state's regular match falls below 50% (Congressional Research Service)
+158	Rates use a 3-year average of per capita income (CRS)
+159	High-income states are floored at the 50% minimum even though the formula alone might assign them less.
+160	That is why states like New York and California receive a 50% regular match while lower-income states can receive far more.
+161	Wealthier States Get a Lower Match — But Never Below 50%
+162	At a 50 percent match, each state dollar brings one federal dollar.
+163	At higher match rates, the multiplier grows: across all states, every $1 of state Medicaid spending draws between roughly $1 and about $3 of federal money.
+164	The most important is the ACA expansion match.
+165	For adults made newly eligible by the Affordable Care Act, the federal government paid 100 percent of costs from 2014 through 2016, then phased the match down to 90 percent in 2020 — where it has remained since.
+166	That 90 percent expansion match is far more generous than any state's regular FMAP, which is precisely why it was designed to entice states to expand.
+167	A state that expands pays only 10 cents of every expansion dollar, with the federal government covering the other 90 cents.
+168	The CHIP "E-FMAP" is calculated by reducing a state's regular state share by 30 percent, producing matches typically in the range of roughly 65 to 85 percent across states.
+169	Ranges from 50% to 83% by state income
+170	90% for ACA expansion adults (since 2020)
+171	CHIP E-FMAP roughly 65%-85%
+172	Those proposals would replace the open-ended match with a fixed federal amount, shifting financial risk to states if enrollment or costs grow faster than the cap — a fundamental change to the program's 1965 financing design.
+173	Conversely, lowering the enhanced expansion match from 90 percent would dramatically raise the cost to states of covering expansion adults, which is why analysts model such changes carefully: small changes in the match rate translate into billions of dollars and can determine whether coverage is sustained or scaled back.
+174	Under the ACA, a state that expands Medicaid pays only about 10% of the cost of covering newly eligible adults, with the federal government paying 90%.
+175	That ratio — far more generous than any regular FMAP — is the core financial reason 41 states (including DC) had adopted expansion by mid-2025, and why debates about reducing the 90% match are treated as existential for those programs.
+176	The 90% Match as an Expansion Incentive
+177	Federal law floors the regular FMAP at 50% and caps it at 83%, with an average-income state landing around 55%.
+178	States must spend their own money to "draw down" the federal share, with every state dollar unlocking roughly $1 to $3 in federal funds.
+179	Enhanced match rates apply to special groups: 90% for ACA expansion adults since 2020, and a higher E-FMAP for CHIP (roughly 65-85%).
+180	The expansion match started at 100% from 2014-2016 and phased down to 90% in 2020, where it has remained.
+181	This rate is far more generous than any state's regular FMAP (capped at 83%), which is why it was designed as an incentive for states to adopt the expansion.
+182	What is the federal match rate for adults made newly eligible by the ACA Medicaid expansion, as of 2020 and after?
+183	[1] Medicaid's Federal Medical Assistance Percentage (FMAP) — https://www.congress.gov/crs-product/R43847 — FMAP formula, 50% floor / 83% ceiling, ~55% at average income, 3-year income lag
+184	[2] Matching rates — https://www.macpac.gov/subtopic/matching-rates/ — open-ended entitlement; every $1 state draws ~$1-$3 federal; CHIP E-FMAP reduces state share by 30%
+185	[3] Increased FMAP Through the Affordable Care Act of 2010 — https://www.cms.gov/newsroom/fact-sheets/increased-federal-medical-assistance-percentage-through-affordable-care-act-2010 — expansion match 100% 2014-2016 phasing to 90% in 2020
+186	[4] Understanding How States Access the ACA Enhanced Medicaid Match Rates — https://www.kff.org/medicaid/understanding-how-states-access-the-aca-enhanced-medicaid-match-rates/ — 90% federal match for expansion adults
+187	[5] Enhanced Federal Medical Assistance Percentage (FMAP) for CHIP — https://www.kff.org/medicaid/state-indicator/enhanced-federal-matching-rate-chip/ — CHIP enhanced match rates by state
+188	[6] Financing — https://www.macpac.gov/medicaid-101/financing/ — open-ended federal entitlement structure and state share requirements
+
+## medicaid-managed-care-organizations
+189	In 2024, more than 73 million people — about 85 percent of Medicaid enrollees — received some or all of their care through a Medicaid managed care plan, and as of July 2025, 42 states (including DC) contracted with comprehensive, risk-based managed care plans.
+190	Some or all care via a Medicaid managed care plan, 2024 (Medicaid.gov)
+191	Of all Medicaid enrollees, July 2024 (CMS managed care enrollment report)
+192	Medicaid managed care has grown into one of the largest privatized public programs in the country: a small number of large insurers operate Medicaid plans across many states, collectively covering tens of millions of enrollees.
+193	Since 2019, federal rules have required states to set capitation rates so that each MCO can reasonably be expected to achieve an MLR of at least 85 percent.
+194	In other words, at least 85 cents of every capitation dollar should go to medical care and quality improvement, leaving no more than 15 cents for administration and profit.
+195	The 85% medical loss ratio floor, network adequacy standards, and quality reporting exist precisely to counter that risk.
+196	In 2024, about 85% of enrollees got some or all care through a Medicaid managed care plan, and about 78% are in comprehensive risk-based MCOs.
+197	Since 2019, capitation rates must let each MCO reasonably achieve a medical loss ratio of at least 85%, ensuring most of each dollar goes to care rather than profit.
+198	This shifts financial risk to the plan — it profits if it spends less and absorbs losses if it spends more — which is why oversight tools like the 85% medical loss ratio exist.
+199	[1] Medicaid Managed Care Enrollment and Program Characteristics 2024 — https://www.medicaid.gov/medicaid/managed-care/downloads/2024-medicaid-managed-care-enrollment-report.pdf — ~73M / ~85% of enrollees in managed care in 2024
+200	[2] Medicaid managed care payment — https://www.macpac.gov/subtopic/medicaid-managed-care-payment/ — capitation PMPM payments; actuarial soundness requirement
+201	[3] Types of managed care arrangements — https://www.macpac.gov/subtopic/types-of-managed-care-arrangements/ — comprehensive risk-based MCO, PCCM, limited-benefit plans
+202	[4] Medical Loss Ratios in Medicaid Managed Care — https://www.macpac.gov/wp-content/uploads/2022/01/Medical-loss-ratio-issue-brief-January-2022.pdf — 85% MLR requirement since 2019
+203	[5] Managed care rate setting — https://www.macpac.gov/subtopic/managed-care-rate-setting/ — actuarially sound capitation rate development based on acuity and utilization
+204	[6] 10 Things to Know About Medicaid Managed Care (KFF) — https://www.kff.org/medicaid/10-things-to-know-about-medicaid-managed-care/ — 42 states (incl.
+205	DC) contract with comprehensive MCOs (July 2025); five largest parent firms hold 47% of MCO enrollment
+
+## medicaid-1115-waivers
+206	Section 1115 Waivers: Laboratories of Democracy
+207	But the law also contains a powerful escape hatch: Section 1115.
+208	In practice, Section 1115 lets a state ask the federal government for permission to run its Medicaid program differently than the statute would otherwise allow — covering populations or services that are not normally eligible, testing new payment models, or restructuring delivery.
+209	The breadth of the authority is striking: under Section 1115, the Secretary can waive almost any of the state plan requirements in Section 1902 of the Act to the extent necessary to carry out the demonstration.
+210	That is why 1115 waivers can reshape a state's program in ways that look very different from "textbook" Medicaid.
+211	A Section 1115 demonstration waiver lets the HHS Secretary approve state Medicaid projects that depart from normal federal rules, as long as they are found likely to promote the objectives of Medicaid.
+212	The flexibility of Section 1115 is not unlimited.
+213	Budget neutrality is the core guardrail of Section 1115: federal spending under the waiver cannot exceed what it would have been without the waiver, usually measured on a per-enrollee basis.
+214	Getting an 1115 waiver is a deliberate, transparent process.
+215	Before a state even submits its application to CMS, federal rules require it to provide public notice and hold a state-level public comment period of at least 30 days, publishing the application, objectives, and estimated impact on enrollment and spending.
+216	Once the state submits a complete application, CMS opens its own 30-day federal public comment period, posting the application and collecting comments online.
+217	Because 1115 authority is meant for research and demonstration, states must also commit to evaluation.
+218	The state publishes its proposal and holds a state-level comment period of at least 30 days.
+219	The state submits the application; CMS confirms completeness within 15 days.
+220	CMS opens a 30-day federal comment period and negotiates terms — often taking months to years.
+221	CMS approves for an initial 5-year period; the state must evaluate results and report back.
+222	The 1115 Waiver Lifecycle
+223	Section 1115 waivers have been used for an enormous range of purposes, and the dominant uses shift with each administration's priorities.
+224	This flexibility is why people call 1115 waivers "laboratories of democracy" — they let individual states test approaches that, if successful, can inform national policy, and if unsuccessful, are contained to the demonstration rather than imposed everywhere.
+225	Common Uses of Section 1115 Waivers
+226	In 2011, CMS approved Texas's 1115 waiver, which paired an uncompensated-care funding pool with a DSRIP program to fund innovative initiatives for Medicaid beneficiaries.
+227	New York launched its own DSRIP program under an 1115 waiver approved in 2014, focused on reducing avoidable hospital use, before it expired in 2020.
+228	As of early 2024, eight states — including Arizona, Arkansas, California, Massachusetts, New Jersey, New York, Oregon, and Washington — had approved demonstrations authorizing evidence-based housing and nutrition services for specific high-need populations.
+229	Across the country, 1115 demonstrations are now widespread: nearly every state has at least one active Section 1115 waiver, and some have several.
+230	That near-universal adoption is why understanding 1115 authority is essential to understanding how Medicaid actually operates state by state — the "rules" in any given state are often shaped as much by its waivers as by the base statute.
+231	Beginning in the 2020s, CMS approved Section 1115 waivers letting states use Medicaid to pay for evidence-based health-related social needs — such as short-term housing supports and medically tailored nutrition — for targeted high-need populations.
+232	In March 2025 CMS rescinded that framework guidance; existing approvals stand, and new requests are reviewed case by case.
+233	States including California, Massachusetts, and others used this authority to test whether addressing social drivers of health can improve outcomes and reduce costly medical care, exactly the kind of experiment Section 1115 was designed to enable.
+234	Section 1115 of the Social Security Act lets the HHS Secretary approve demonstration projects that depart from normal Medicaid rules if they promote the program's objectives.
+235	Under 1115, the Secretary can waive almost any state plan requirement in Section 1902 to the extent needed to run the demonstration.
+236	Approval requires both state and federal public comment periods (30 days each) and case-by-case CMS review and negotiation, often taking months to years.
+237	1115 waivers are nearly universal (nearly every state has at least one active waiver), so a state's real Medicaid program is often shaped as much by its waivers as by the base statute.
+238	The state and federal government must each pay exactly 50%
+239	What is the "budget neutrality" requirement for a Section 1115 demonstration waiver?
+240	[1] About Section 1115 Demonstrations — https://www.medicaid.gov/medicaid/section-1115-demonstrations/about-section-1115-demonstrations/index.html — Secretary authority to approve demonstrations promoting Medicaid objectives
+241	[2] Section 1115 research and demonstration waivers — https://www.macpac.gov/subtopic/section-1115-research-and-demonstration-waivers/ — waives §1902 requirements; budget neutrality; 5-year terms; evaluation requirements
+242	[3] Medicaid Section 1115 Waivers: The Basics — https://www.kff.org/medicaid/medicaid-section-1115-waivers-the-basics/ — budget neutrality per-enrollee; uses including work requirements, DSRIP, HRSN
+243	[4] Improved Review and Approval Process for Section 1115 Demonstrations (CMS) — https://www.cms.gov/newsroom/fact-sheets/improved-review-and-approval-process-section-1115-medicaid-demonstration-projects — state and federal 30-day public comment periods; 15-day completeness review
+244	[5] Section 1115 Medicaid Waiver Watch: HRSN Approvals — https://www.kff.org/medicaid/section-1115-medicaid-waiver-watch-a-closer-look-at-recent-approvals-to-address-health-related-social-needs-hrsn/ — eight states with HRSN housing/nutrition waivers as of early 2024
+245	[6] Medicaid Waiver Tracker: Approved and Pending Section 1115 Waivers by State — https://www.kff.org/medicaid/medicaid-waiver-tracker-approved-and-pending-section-1115-waivers-by-state/ — nearly all states have at least one active Section 1115 waiver
+
+## medicaid-hcbs-waivers
+246	The 1915(c) Waiver Solution
+247	Congress created a fix in 1981: the Section 1915(c) home- and community-based services waiver.
+248	The logic of a 1915(c) waiver is a trade.
+249	How a 1915(c) Waiver Works
+250	L.C., decided June 22, 1999, the Supreme Court held that the unjustified institutional segregation of people with disabilities is a form of discrimination prohibited by Title II of the Americans with Disabilities Act.
+251	Together, the 1915(c) waiver authority and the Olmstead decision drove a dramatic "rebalancing" of Medicaid long-term care away from institutions and toward the community.
+252	In 1999, when Olmstead was decided, about 27 percent of Medicaid LTSS spending went to home- and community-based services and roughly 73 percent went to institutional care.
+253	By 2020, those proportions had essentially flipped: 62.5 percent of LTSS spending went to HCBS and 37.5 percent to institutions.
+254	This reversal represents one of the most significant structural changes in the history of American long-term care — moving from a system that assumed institutional placement to one in which most Medicaid long-term care dollars now support people living in their own homes and communities.
+255	Shift from 1999 to FY2020 (Senate HELP Committee; CMS/Mathematica)
+256	Declined over the same period (CMS/Mathematica FY2020 report)
+257	More than 707,000 people were on HCBS waiver waiting lists in 2017, and more than 710,000 were on waiting or interest lists in 2024 — meaning hundreds of thousands of people who qualify for home-based care must wait, sometimes for years, for a slot to open.
+258	People with intellectual and developmental disabilities (I/DD) make up most of those waiting — about two-thirds in 2017 and 73 percent in 2024.
+259	The Section 1915(c) waiver, created in 1981, lets states offer home- and community-based services to people who would otherwise need institutional care.
+260	To use a 1915(c) waiver, a person must meet an institutional level of need, and average waiver costs must not exceed the cost of institutional care.
+261	(1999), the Supreme Court ruled that unjustified institutionalization of people with disabilities is discrimination under the ADA.
+262	Medicaid LTSS spending rebalanced dramatically — from about 27% on HCBS in 1999 to 62.5% by 2020, with institutional spending falling correspondingly.
+263	Because HCBS is optional and states can cap waiver slots, more than 700,000 people sit on HCBS waiting lists, nearly three-quarters of them people with intellectual/developmental disabilities.
+264	[1] Medicaid Section 1915(c) Home- and Community-Based Services Waivers — https://www.congress.gov/crs-product/R48519 — 1915(c) created 1981; institutional level-of-need requirement; cost-neutrality
+265	[2] Home & Community-Based Services 1915(c) — https://www.medicaid.gov/medicaid/home-community-based-services/home-community-based-services-authorities/home-community-based-services-1915c — HCBS as alternative to institutional care
+266	L.C., 527 U.S. 581 (1999) — https://supreme.justia.com/cases/federal/us/527/581/ — unjustified institutionalization is ADA discrimination; three-part test
+267	[4] Medicaid Long Term Services and Supports Annual Expenditures Report, FFY 2020 (Mathematica for CMS) — https://www.mathematica.org/publications/medicaid-long-term-services-and-supports-annual-expenditures-report-federal-fiscal-year-2020 — HCBS 62.5% / institutional 37.5% of $199.4B LTSS spending in FY2020
+268	[5] A Look at Waiting Lists for Medicaid Home- and Community-Based Services — https://www.kff.org/medicaid/a-look-at-waiting-lists-for-medicaid-home-and-community-based-services-from-2016-to-2024/ — over 710,000 on waiting or interest lists in 2024; I/DD 73%; states cap waiver slots
+269	[6] Key Questions About Medicaid HCBS Waiver Waiting Lists — https://www.kff.org/medicaid/issue-brief/key-questions-about-medicaid-home-and-community-based-services-waiver-waiting-lists/ — over 707,000 waiting in 2017; people with I/DD ~two-thirds of waiting-list enrollment
+
+## medicaid-quality-measures
+270	HEDIS — the Healthcare Effectiveness Data and Information Set — is the most widely used set of health plan performance measures in the United States.
+271	HEDIS includes more than 90 measures across six domains of care, spanning prevention, acute care, and chronic care.
+272	90+ measures across six domains
+273	To make quality comparable across all 50 states, CMS maintains standardized national measure sets specifically for Medicaid and CHIP: the Core Set of Adult Health Care Quality Measures and the Core Set of Children's Health Care Quality Measures.
+274	That changed in 2024: reporting of the Child Core Set and of the behavioral health measures within the Adult Core Set became mandatory for all states, the District of Columbia, and the territories.
+275	The first round of mandatory reporting had to be submitted and certified by states by December 31, 2024.
+276	The 2024 mandatory behavioral health measure set drew 7 measures from the Child Core Set and 11 from the Adult Core Set, covering areas such as follow-up after mental health hospitalization and monitoring for people on certain medications.
+277	HEDIS, maintained by NCQA, is the dominant clinical measure set — more than 90 measures across six domains spanning prevention, acute, and chronic care.
+278	In 2024, reporting of the Child Core Set and Adult Core Set behavioral health measures became mandatory for all states and territories, with first reports due December 31, 2024.
+279	[1] Child and Adult Health Care Quality Measures — https://www.medicaid.gov/medicaid/quality-of-care/performance-measurement/adult-and-child-health-care-quality-measures — Adult and Child Core Sets; mandatory reporting began 2024
+280	[2] Medicaid Program and CHIP; Mandatory Core Set Reporting (Federal Register) — https://www.federalregister.gov/documents/2023/08/31/2023-18669/medicaid-program-and-chip-mandatory-medicaid-and-childrens-health-insurance-program-chip-core-set — mandatory Child Core Set and Adult behavioral health reporting; Dec 31, 2024 deadline
+281	[3] HEDIS Measures and Technical Resources (NCQA) — https://www.ncqa.org/hedis/measures/ — HEDIS developed by NCQA; more than 90 measures across 6 domains; 235M+ people in plans reporting HEDIS
+282	[4] CAHPS Health Plan Survey (AHRQ) — https://www.ahrq.gov/cahps/surveys-guidance/hp/index.html — CAHPS patient-experience survey, global ratings and composites
+283	[5] CAHPS Health Plan Survey 5.1H, Adult Version (NCQA) — https://www.ncqa.org/report-cards/health-plans/state-of-health-care-quality-report/cahps-health-plan-survey-5-1h-adult-version-cpa/ — NCQA collects modified CAHPS as part of HEDIS; four global ratings
+284	[6] Quality of Care External Quality Review — https://www.medicaid.gov/medicaid/quality-of-care/medicaid-managed-care-quality/quality-of-care-external-quality-review — EQRO annual review requirement; performance measure validation; HEDIS compliance audits

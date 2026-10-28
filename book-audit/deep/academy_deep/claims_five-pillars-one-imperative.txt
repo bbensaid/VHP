@@ -1,0 +1,956 @@
+
+## why-single-pillar-thinking-fails
+0	In 2010, the Affordable Care Act created the Center for Medicare and Medicaid Innovation (CMMI) with a mandate to test new payment and delivery models and scale what worked.
+1	Over the next fifteen years, CMMI ran the largest natural experiment in American healthcare reform: dozens of models, billions of dollars, thousands of participating organizations, each testing a theory of what would fix the system.
+2	Models CMMI tested, 2011–2024
+3	Net increase in federal spending, 2011–2020
+4	CPC+ launched in 2017 as CMMI's largest primary care model to date — over 3,000 practices, more than 17 million patients, running five full years before ending in 2021.
+5	MDPP is the more uncomfortable example, because on paper it is one of CMMI's four unambiguous successes — its pilot met the statutory bar and CMS expanded it nationwide starting in 2018, the coverage decision that defines success in this framework's terms.
+6	Only about 38% of primary care physicians were aware the program existed, and only 23% referred an eligible patient to it.
+7	CMS's original design did not recognize telehealth delivery, which excluded exactly the rural beneficiaries who had the least access to an in-person site in the first place.
+8	You will see this Equity Imperative applied concretely, pillar by pillar, in Track 7 of this course and in Chapter 10 of the book.
+9	From the Book — Chapter 1
+10	This lesson works the opening argument of Chapter 1 — the CMMI record and why interventions that address a single pillar keep running into the constraints of the ones they ignore.
+11	Read it at /read/chapter-01.
+
+## five-pillars-diagnostic-questions
+12	Policy: Act 68 makes reference-based pricing binding on hospitals and requires global budgets — one or more non-critical-access hospitals from FY2028, all hospitals by FY2030, resources permitting.
+13	Economics: mandatory RBP (method set by GMCB rule in 2027, prices effective hospital FY2028) and hospital global budgets beginning FY2028 (all hospitals by FY2030).
+14	Operations: the 14-hospital transformation planning process, RHRC technical assistance, the proposed HSA Coordinator model, and EMS regionalization.
+15	Case study: Economics as the binding constraint — the Pioneer ACO exodus
+16	CMS's Pioneer ACO Model, launched in 2012, tested what the most advanced accountable care organizations in the country could do under two-sided financial risk — sharing not just in savings but in losses.
+17	CMS did not select novices: the 32 founding Pioneer ACOs were chosen specifically because they already had the care-coordination infrastructure most ACOs were still building.
+18	Thirteen of the 32 Pioneer ACOs left the model in 2013 or 2014, and CMS confirmed by name that Franciscan Alliance (Indianapolis), Genesys PHO (Flint, Michigan), and Renaissance Health Network (Wayne, Pennsylvania) were among them.
+19	Genesys PHO owed Medicare $1.9 million in repayment after failing to hold down spending in its second year under the downside-risk formula.
+20	By 2016, only 9 of the original 32 remained.
+21	Geisinger Health System's ProvenCare program, launched in 2006, bundled the entire cost of elective coronary artery bypass graft (CABG) surgery into a single warrantied price and built the protocol around 40 evidence-based best-practice steps — things like correct pre-admission documentation and correct post-operative beta-blocker dosing.
+22	None of these 40 steps were new medical knowledge; every one was already an established best practice before ProvenCare existed.
+23	What was new was hardwiring all 40 steps into the electronic health record so it could prompt clinicians in real time, and so Geisinger could monitor compliance across every patient rather than audit a sample after the fact.
+24	The published results (Casale et al., Annals of Surgery, 2007) show why that mattered: at launch, only 59% of patients received all 40 components — the same gap between known best practice and actual bedside practice that shows up everywhere in medicine.
+25	Within three months of the EHR-based prompting and monitoring going live, full-bundle compliance reached 100% and, after one dip to 86%, stayed there for the rest of the study period.
+26	Patients treated under the completed protocol had a 16% shorter hospital stay than the conventional-care comparison group.
+27	Clinical knowledge was not the constraint — the 40 steps were already known and written down.
+28	The diagnostic move is to walk the five questions in order and stop at the first honest 'no.'
+29	The Pioneer ACO exits didn't need better clinical protocols — they had those.
+30	Chapter 1 defines each pillar's diagnostic question and its structural role.
+31	Figure 1.2 is the reference table for what each pillar produces when it is working.
+
+## the-equity-imperative-is-it-just
+32	Vermont's primary care access rate is roughly 91% — about four points above the Agency of Human Services' 87% benchmark, and a genuine achievement.
+33	It also conceals gaps: in the Health Department's 2023–2024 survey data, 78% of Hispanic adults have a personal health care provider, against 91% of white adults.
+34	CMS's Hospital Readmissions Reduction Program, in effect since 2012, answers the Economics pillar's own question cleanly: it is sustainable, in the narrow sense that it gives hospitals a real financial reason to reduce 30-day readmissions, and it has moved behavior.
+35	The predictable result: safety-net hospitals serving disproportionately low-income and dually eligible (Medicare and Medicaid) patients were penalized far more consistently than others — one multi-year analysis found 72% of safety-net hospitals penalized in every one of four post-HRRP years studied, versus 59% of non-safety-net hospitals.
+36	Congress fixed this in the 21st Century Cures Act (2016), which required CMS to stop comparing every hospital against the same national benchmark and instead sort hospitals into five peer quintiles by their share of dual-eligible patients, comparing readmission performance only within each quintile — a change that took effect in FY2019, seven years after the program began penalizing hospitals under the original design.
+37	A 2020 New England Journal of Medicine study (Sjoding et al.) stratified that same 'accurate on average' technology by patient race and found it was not equally accurate at all.
+38	Across a multicenter cohort of 37,308 paired measurements from 178 hospitals, occult hypoxemia — a true blood oxygen level below 88% that the pulse oximeter was still reading as a reassuring 92–96% — occurred in 17.0% of Black patients versus 6.2% of white patients: nearly three times the rate.
+39	The most common way equity fails is not opposition — it is sequencing.
+40	Looked solved: validated accurate on average, decades of routine use → Hidden: occult hypoxemia missed in Black patients at nearly 3x the white-patient rate
+41	From the Book — Chapters 1 and 10
+42	Chapter 1 introduces the Equity Imperative as the test applied to all five pillars.
+43	Chapter 10 develops it in full — stratified HEDIS, the HEROI Index, and the VBC equity safeguards that keep payment design from penalizing the providers serving the hardest-to-reach populations.
+44	Read it at /read/chapter-10.
+
+## dependency-logic-execution-sequence
+45	Case study: skipping the gate — Massachusetts' 2006 coverage expansion
+46	Massachusetts' 2006 reform (Chapter 58) is usually remembered as the template for the Affordable Care Act: an individual mandate paired with subsidized coverage, moving the state to near-universal insurance.
+47	Before 2009, hospital EHR adoption in the United States crawled forward at roughly 3.2% a year among the hospitals that would later become eligible for federal incentives — total adoption was still only in the 10–20% range as of 2008.
+48	The HITECH Act (2009) tied real Medicare and Medicaid incentive payments to demonstrating 'meaningful use' of certified EHR technology — a Policy and Economics instrument aimed squarely at forcing a Technology build.
+49	After it took effect, annual EHR adoption growth among eligible hospitals jumped to about 14.2% a year, versus 3.3% a year at hospitals that weren't eligible for the incentive — a difference-in-differences of roughly 7.9 percentage points directly attributable to the program.
+50	By 2015–2017, more than 95% of U.S. hospitals had adopted an EHR.
+51	Sequencing does not mean four pillars sit idle while the first one finishes.
+52	The dependency matrix in Figure 1.3 is this lesson's source — nine directed relationships, read row-pillar to column-pillar, with ENABLES, REQUIRES, DRIVES and the two feedback loops that make the system self-correcting.
+53	Vermont's technology build is paid for by the Rural Health Transformation Program — a $195 million FY2026 award, an annual amount rather than a five-year total — and was to have been supplemented by the EAST Fund under the AHEAD State Agreement, before Vermont withdrew from AHEAD in July 2026.
+54	Vermont's AHEAD withdrawal is the demonstration: the EAST Fund was cut from roughly $138 million to a capped $10 million, and Act 68's mandates were untouched — because the two were never the same thing.
+
+## onecare-sequencing-autopsy
+55	OneCare Vermont was formed in 2012 by the University of Vermont Medical Center (then Fletcher Allen) and Dartmouth-Hitchcock Medical Center as a shared ACO vehicle, joining the Medicare Shared Savings Program in 2013, later becoming the lead entity under Vermont's federal All-Payer ACO Model — a Total Cost of Care arrangement holding the ACO financially accountable for the spending of an attributed Vermont population.
+56	It wound down at the close of 2025, thirteen years after it was formed; the federal all-payer agreement that defined its most consequential years ran about eight of those years before its scheduled sunset.
+57	Failure 1 — a Policy foundation the state could not fully build
+58	Liberty Mutual Insurance Co., 6–2, holding that ERISA preempts a Vermont law requiring health plans — including self-insured employer plans — to report claims data into the state's all-payer claims database.
+59	That structural gap became concrete on January 1, 2023, when Blue Cross Blue Shield of Vermont — the state's largest insurer — declined to renew its OneCare contract, removing roughly 93,000 enrollees, about a third of OneCare's total enrollment, in a single step.
+60	Failure 2 — Economics without Technology: 'Managing Blind'
+61	A 2019 audit found OneCare 'did not reliably monitor or accurately report' the community-based programs it had promised to fund — fresh produce for patients, housing assistance for homeless families, care coordination — producing no evidence of results from investments it had already made.
+62	A subsequent analysis found that Vermonters attributed to OneCare visited the emergency department at a rate roughly 36% higher than peer ACOs nationally, had about 18% fewer primary care visits, and paid roughly 30% more for prescription drugs — the utilization signature of a population that was not, in practice, being proactively managed.
+63	The mechanism behind Managing Blind is general even where a specific day-count for OneCare's own claims lag isn't independently documented: consider, hypothetically, a care manager responsible for 500 high-risk patients under a total-cost model.
+64	Liberty Mutual (2016) limited how far Vermont's mandate could legally reach into self-insured plans → Blue Cross Blue Shield of Vermont exits (Jan. 2023) → ~93,000 enrollees, about a third of the total, removed at once
+65	OneCare's own staff told GMCB its analytics lagged newer available systems → 36% higher ED visits and 18% fewer primary care visits than peer ACOs — care managed reactively, not proactively
+66	Three gaps compounding over the federal agreement's ~8-year run → Wind-down at the close of 2025.
+67	OneCare's administrative costs ran $70.35 million from 2018 through 2022.
+68	The Green Mountain Care Board's own analysis (May 2024) found that, counting those administrative expenses against performance on payer targets, OneCare was a net cost of $42.28 million over 2018–2022 — $89.56 million excluding the pandemic-distorted year 2020.
+69	Vermont's State Auditor separately found (2021) that over 2017–2019 OneCare missed its Medicaid targets by $11.1 million while the state paid it $14.5 million to operate.
+70	A second GMCB calculation, based on shared savings and losses, found $18.23 million in net savings — though excluding 2020 flips it to a $32.38 million cost.
+71	Its Medicaid-specific measure found $21.43 million in savings under that program alone.
+72	Act 68 as the structural answer — and what it doesn't answer
+73	Act 68 of 2025 makes reference-based pricing mandatory for all Vermont hospitals -- GMCB sets the method by rule in 2027, with prices effective in hospital FY2028 -- and hospital global budgets mandatory beginning FY2028 for one or more non-CAH hospitals (all hospitals by FY2030, resources permitting).
+74	What Act 68 cannot do is repeal Gobeille v.
+75	Vermont's mandate is now real and binding on the hospital side — the Policy failure this lesson opened with — while the payer-side gap that let Blue Cross Blue Shield walk away in 2023 remains a standing federal constraint no state law can close on its own.
+76	Whether the AHS–GMCB analytics capability is genuinely operational before FY2028 global budgets take effect is the second open question the framework tells you to watch.
+77	Notice what changed between the popular version of this story ('voluntary participation let costly actors free-ride') and the documented one (a 2016 Supreme Court ruling, a named payer's exit with stated reasons, an organization's own admission to its regulator).
+78	Chapter 1 works the OneCare Vermont collapse as three compounding sequencing failures and the cascade they produced.
+79	This lesson dissects the three compounding errors and shows how Act 68 was written as the direct structural response.
+
+## legislative-architecture-reform-cascade
+80	Legislative Architecture: Act 167 → Act 51 → Act 68
+81	Act 167 of 2022 commissioned a diagnosis.
+82	Act 51 of 2023 authorized planning with a small number of hospitals.
+83	Act 68 of 2025 named specific payment tools and attached dated deadlines to them.
+84	It is the Policy pillar doing the only job the Policy pillar can do: answering "is it permissible?" in a way the other four pillars can then build on.
+85	Act 167 of 2022 — the diagnostic mandate
+86	Act 167 of 2022 directed the Green Mountain Care Board to analyze how to improve the sustainability of Vermont's hospital system, and to develop community- and data-informed options for transforming it.
+87	The resulting report, *Act 167 Community Engagement: Recommendations*, was issued on September 18, 2024.
+88	The engagement ran in two phases — August to mid-November 2023 and March to September 2024 — across all of Vermont's hospital service areas, with more than 230 meetings and 3,100 participants.
+89	Act 167 also set five statutory goals that have functioned ever since as Vermont's accountability frame: reduce inefficiencies, lower costs, improve health outcomes, reduce health inequities, and increase access to essential services.
+90	Source: Oliver Wyman, Act 167 Community Engagement: Recommendations, September 2024
+91	Vermont hospitals reporting operating losses in FY2023, with the worst at -8.9%
+92	Source: Oliver Wyman Act 167 report, September 2024
+93	Projected cumulative five-year hospital system deficit below break-even by 2028, depending on expense-growth scenario
+94	Source: Green Mountain Care Board, Act 167 community engagement record
+95	Source: Oliver Wyman Act 167 report, as reported by VTDigger, October 2024
+96	Within weeks of the final report's September 2024 release, several hospitals publicly disputed the accuracy of the underlying data, and by late October the dispute was covered statewide.
+97	But the diagnosis held well enough to become the intellectual source material for Act 68 the following spring, which is the only test that mattered.
+98	Vermont's Act 167 report drew formal objections from hospitals over data accuracy within weeks of publication, and GMCB and Oliver Wyman both issued statements in response.
+99	Act 51 of 2023 — the planning mandate
+100	Act 51 of 2023 is the least discussed of the three acts and the easiest to underrate.
+101	Note what Act 51 did not do.
+102	Act 68 of 2025 — the operational mandate
+103	Act 68 of 2025 (originating as S.126) is the operationalization of the Act 167 diagnosis.
+104	Oliver Wyman recommended beginning movement to reference-based pricing at 200% of Medicare or less for PPS hospitals; Act 68 directs GMCB to implement reference-based pricing no later than hospital fiscal year 2027.
+105	Oliver Wyman recommended moving to global budgets when conditions for success are met; Act 68 requires global hospital budgets for one or more non-critical-access hospitals by FY2028 and for all Vermont hospitals by 2030, to the extent resources are available.
+106	Act 68 does not invite hospitals to experiment with alternative pricing.
+107	Act 68's RBP provision applies Medicare-benchmarked prices across the entire commercial market rather than to one purchaser's book of business.
+108	Act 68 also requires AHS to deliver a Statewide Health Care Delivery Strategic Plan to the legislature on or before January 15, 2028 (18 V.S.A. § 9403(d)(3)), updated every three years beginning December 1, 2030, and establishes a Health Care Delivery Advisory Committee to support it.
+109	GMCB must report to the General Assembly on implementation, beginning with a February 2026 update and continuing through its annual reports.
+110	Directs GMCB to set maximum allowable hospital payments by rule (RBP) no later than FY2027 and global budgets for one or more non-CAH hospitals by FY2028, all hospitals by 2030 (resources permitting); requires a Statewide Strategic Plan by January 15, 2028 → Converts the diagnosis and the planning capacity into dated legal obligations that the other four pillars must execute against
+111	RAND's 2020 hospital price study put commercial prices at the University of Vermont Medical Center at 358% of Medicare, the highest in Vermont; GMCB's 2024 claims data show hospital outpatient prices ranging from 279% to 697% of Medicare.
+112	A spread that wide among the hospitals of a state of 650,000 people is not explained by case mix or quality.
+113	Reference-based pricing controls the first term and leaves the second one free.
+114	Act 68's ordering — RBP in FY2027, global budgets for non-CAH hospitals in FY2028, all hospitals by 2030 — reflects that logic.
+115	FY2027: Act 68's deadline for reference-based pricing -- GMCB sets the method by rule in 2027, with prices effective in hospital FY2028.
+116	FY2028: global budgets for non-critical-access hospitals.
+117	January 15, 2028: the Statewide Health Care Delivery Strategic Plan is due to the legislature. 2030: global budgets for all Vermont hospitals, critical access included.
+118	Maryland's rate-setting system — the closest American analogue to what Act 68 is building — was itself a cascade, and a slower one.
+119	The Maryland legislature created the Health Services Cost Review Commission in 1971.
+120	The Commission began setting hospital rates in July 1974, after a three-year phase-in.
+121	Only in July 1977 did a federal waiver require Medicare and Medicaid to pay on the basis of HSCRC-approved rates, which is the step that made the system genuinely all-payer.
+122	Chapter 58 of 2006 established near-universal coverage and, in doing so, produced the enrollment and spending data that made the state's cost problem measurable.
+123	Chapter 224 of 2012 then set a statewide health care cost growth benchmark and created the Health Policy Commission to monitor it.
+124	Coverage first, cost discipline second — and the second act was possible because the first one had generated both the data and the political constituency.
+125	First, a continuous accountability frame: Vermont's five Act 167 goals appear unchanged in Act 68 and in every AHS report and federal application since.
+126	Act 68's price and budget mandates are defensible because they implement recommendations that were developed in the open across all of Vermont's hospital service areas over two years.
+127	Act 68 does not say that Vermont should move toward global budgets.
+128	From the Book — Chapter 2
+129	Chapter 2 is the full legislative history — Act 167's diagnostic mandate, Act 51's planning authority, and Act 68's operational mandate, plus the Oliver Wyman engagement that produced the evidence base for all three.
+130	Read it at /read/chapter-02.
+
+## voluntary-vs-mandatory-architecture
+131	The first consequence is a policy failure; the second is an evidence failure; and a program suffering the second cannot prove it is not suffering the first.
+132	Vermont has attempted a hospital global budget architecture four times in the past decade and a half: the GMCB net patient revenue cap in 2012, a Rutland Regional pilot proposed in 2014 that was never implemented, the Vermont All-Payer ACO Model from 2017 through 2025, and the current Act 167 / Act 68 mandate.
+133	The first three shared one design feature.
+134	Act 68 is the first of the four to remove the option.
+135	It directs GMCB to establish reference-based prices by rule across the commercial market and global budgets for one or more non-critical-access hospitals by FY2028 and all hospitals by 2030, resources permitting.
+136	Its participation was voluntary, and the Oliver Wyman Act 167 report listed that plainly in its perception-versus-reality analysis: Vermont did not have a statewide ACO, it had a voluntary one that did not include several hospitals or many community-based providers.
+137	The same analysis noted that Vermont's "all-payer" model excluded fee-for-service Medicare and roughly 40% of commercially insured Vermonters — so the label described a minority of total health care spending.
+138	The opt-out became concrete on January 1, 2023, when Blue Cross Blue Shield of Vermont, the state's largest insurer, declined to renew its OneCare contract.
+139	Roughly 93,000 enrollees — about a third of OneCare's total attributed population — left the model in a single step.
+140	OneCare announced in November 2024 that it would wind down at the close of 2025, coinciding with the scheduled end of the All-Payer ACO Model.
+141	Enrollees removed from OneCare Vermont in one step when Blue Cross Blue Shield of Vermont declined to renew, effective January 1, 2023 — about a third of its attributed population
+142	Source: Barnett et al., New England Journal of Medicine, 2019
+143	Savings per joint replacement episode under Medicare's mandatory CJR bundle — a 3.1% reduction, with no increase in complication rates
+144	Source: CMS, Comprehensive Care for Joint Replacement Model final rule, 2015
+145	Metropolitan statistical areas randomly assigned by Medicare to mandatory bundled payments in 2016, creating the randomization that makes CJR evaluable
+146	Source: Milbank Memorial Fund, 2024
+147	Oregon hospitals subject to the SB 1067 payment cap after rural and sole-community exemptions — all of which remained in network
+148	Any participant may leave at renewal, and the largest ones have the most reason to → Exit requires changing the rule, which is a legislative or rulemaking act with a public record
+149	Maryland has had mandatory all-payer hospital rate regulation since the Health Services Cost Review Commission began setting rates in 1974, made binding on federal payers by a 1977 Medicare waiver.
+150	When Maryland layered global budget revenue onto that foundation under its All-Payer Model in 2014, hospital participation in the global budget contracts was technically elective — and every hospital participated anyway.
+151	Over the All-Payer Model's first five years, Maryland saved Medicare $1.4 billion in hospital expenditures, with hospital expenditure growth running 8.74% below the national rate since 2013, and $869 million in total cost of care including non-hospital spending.
+152	Under the successor Total Cost of Care Model, CMS's evaluation found Medicare fee-for-service spending reduced by 2.1% and hospital admissions down 16.2%, with $689 million in reduced total Medicare spending from 2019 to 2021.
+153	In 2016, CMS randomly assigned hospitals in 67 of 196 metropolitan statistical areas to mandatory participation in the Comprehensive Care for Joint Replacement model.
+154	The two-year evaluation, published by Barnett and colleagues in the *New England Journal of Medicine* in 2019, found that mandatory bundles reduced spending by $812 per episode, a 3.1% decrease, driven almost entirely by reduced use of skilled nursing facilities after discharge, with no increase in complication rates.
+155	This is the most common analytical error in value-based care planning.
+156	A health system reads that a voluntary program produced an X% reduction, then builds a business case assuming a statewide mandate would produce the same.
+157	The only defensible way to estimate a mandate's effect is from a mandate — which is why the CJR randomization matters far more than its dollar figure suggests.
+158	Oregon's SB 1067, enacted in 2017 and effective in October 2019 for educators and January 2020 for public employees, capped hospital payments under the state employee plans at 200% of Medicare in network and 185% out of network.
+159	The legislature exempted small, rural, critical access and certain sole-community hospitals in counties under 70,000 people that drew at least 40% of revenue from Medicare.
+160	Only 24 of Oregon's 62 hospitals were subject to the cap.
+161	The cap saved the state $107.5 million in its first 27 months.
+162	The design point is that a rule covering 39% of a state's hospitals with a clear exemption test behaves like a mandate for those hospitals.
+163	In July 2016 the state employee health plan, covering roughly 31,000 members, renegotiated contracts with all eleven of Montana's acute care hospitals using Medicare reference-based pricing.
+164	An independent analysis published through the National Academy for State Health Policy found the plan saved an estimated $47.8 million in inpatient and outpatient costs over its first three years, state fiscal years 2017 through 2019.
+165	By October 2022 the state was publicly signaling a step back from the model, amid a change of third-party administrator and a new contract projecting a smaller $28 million in savings over three years with fewer specifics on how (KFF Health News, October 2022).
+166	What Act 68 does differently
+167	Act 68 places the obligation on the rule rather than on the contract.
+168	It litigates, or it seeks an amendment in a legislative session — both of which happen in public, on the record, against an administrative record built over the Act 167 process.
+169	Chapter 2 covers the enforcement mechanics behind the mandate — what 'mandatory' means in practice, what GMCB can actually do, and the reference-based pricing design that eliminates the opt-out.
+170	A reform that depends on voluntary participation by the actors with the most to lose will be defeated by exactly those actors.
+
+## cmmi-waivers-federal-state-interface
+171	Three federal-facing instruments bridge that gap: Section 1115 Medicaid demonstration waivers, CMMI model agreements, and federal rulemaking a state can influence but not control.
+172	Section 1115 — what the authority actually is
+173	Section 1115 of the Social Security Act gives the Secretary of Health and Human Services authority to waive certain Medicaid requirements and to provide federal matching funds for experimental, pilot or demonstration projects that promote the objectives of the program.
+174	It is the most powerful federal tool a state has for Medicaid reform, because it lets a state build a program that standard federal rules would not permit.
+175	In practice states use 1115 authority for four families of things.
+176	Health-related social needs services, which CMS has permitted since 2021 for enrollees at risk of institutionalization or with complex social needs, including housing supports, food assistance and transportation.
+177	And, since H.R. 1 of 2025 resolved the prior legal uncertainty in favor of state authority, work and community engagement requirements for expansion adults.
+178	Vermont's primary vehicle is the Global Commitment to Health demonstration, originally approved in 2005 and renewed and amended repeatedly since.
+179	It is the authority under which Vermont extends benefits beyond standard state plan requirements, and under which it launched a Medicaid hospital global budget for six hospitals on January 1, 2026 -- though CMS's July 7, 2026 letter found that program not approved under the Global Commitment terms and directed that its payments cease within 60 days.
+180	A state without an established 1115 demonstration is starting the Policy pillar's federal work from zero.
+181	The most common misconception about 1115 waivers is that they are applications CMS approves or denies against a checklist.
+182	Every 1115 waiver carries a budget neutrality requirement: the federal government will not spend more under the demonstration than it would have spent without it.
+183	State authority, where the legislature grants it → Vermont's Act 68 directs GMCB to set maximum allowable payments by rule; Maryland's HSCRC has set rates since 1974
+184	Liberty Mutual (2016) held ERISA preempts state claims-reporting mandates as applied to self-funded plans
+185	State-administered within federal rules; expandable by waiver → Section 1115 demonstration authority, subject to budget neutrality
+186	On March 1, 2016, the Supreme Court decided *Gobeille v.
+187	Liberty Mutual Insurance Co.* by a vote of 6–2, in an opinion by Justice Kennedy.
+188	Under KFF's 2025 Employer Health Benefits Survey, 67% of covered workers are in self-funded plans — 80% at large firms.
+189	Supreme Court, 577 U.S. 312 (2016)
+190	Liberty Mutual (March 1, 2016) — ERISA preempts state claims-reporting mandates as applied to self-insured plans
+191	Source: KFF Employer Health Benefits Survey, 2025
+192	Share of covered U.S. workers in self-funded health plans — 80% at large firms — largely beyond state reporting authority
+193	Source: Vermont Public and VTDigger reporting, July 2026, citing information provided to state lawmakers
+194	Source: Sommers et al., New England Journal of Medicine, 2019; KFF
+195	Arkansas adults who lost Medicaid coverage under the state's 1115 work-requirement demonstration before a federal court halted it
+196	Pharmaceutical Care Management Association*, decided December 10, 2020 by a vote of 8–0 in an opinion by Justice Sotomayor, the Court upheld Arkansas Act 900, which regulates the prices pharmacy benefit managers pay pharmacies for drugs covered by prescription-drug plans.
+197	Act 900 was "simple rate regulation" with neither an impermissible connection to nor reference to ERISA, and ERISA does not preempt state rate regulations that merely increase costs or alter incentives for ERISA plans without forcing them to adopt a particular scheme of substantive coverage.
+198	It is the space Act 68's reference-based pricing rule is designed to occupy.
+199	Vermont signed a State Agreement to participate in the CMS AHEAD Model in January 2025; the Green Mountain Care Board joined the Governor and the Agency of Human Services in signing on January 21, 2025.
+200	AHEAD is a state-based total cost of care model built around hospital global budgets for Medicare fee-for-service and enhanced primary care payments, with a performance period running into the 2030s.
+201	Vermont entered as a Cohort 2 state, with performance scheduled to begin in 2028.
+202	State officials had calculated, in information provided to lawmakers, that participation could bring roughly $138 million in additional federal funds to Vermont health care.
+203	CMS subsequently renegotiated the model's terms, and the renegotiation capped additional payments at approximately $10 million.
+204	Vermont notified CMS of its withdrawal on July 24, 2026, and announced it publicly the following week — before its performance period had ever begun.
+205	The state redirected its attention to the Rural Health Transformation Program, under which Vermont's FY2026 award is $195 million -- an annual amount, not a five-year total.
+206	Vermont's reference-based pricing mandate, its global budget schedule and its January 15, 2028 Strategic Plan deadline all rest on state statutory authority that never depended on AHEAD continuing.
+207	Vermont's AHEAD State Agreement was negotiated with explicit unilateral withdrawal rights — before launch on 30 days' notice, after launch on six months' notice — along with protections for GMCB's regulatory independence and provisions on methodology acceptance and dispute resolution.
+208	Those clauses looked like lawyerly caution in January 2025.
+209	In July 2026 they were the reason Vermont could exit cleanly when the federal economics collapsed.
+210	In June 2018 Arkansas became the first state to implement Medicaid work requirements, under an 1115 demonstration, requiring adults aged 30 to 49 to work or engage in qualifying activities for twenty hours a week or document an exemption.
+211	By the time a federal court halted the policy in spring 2019, roughly 18,000 adults had lost coverage.
+212	Sommers and colleagues, publishing in the *New England Journal of Medicine* in 2019, found the policy had not increased employment among the affected group but had raised the uninsured rate among adults aged 30 to 49.
+213	H.R. 1 of 2025 changed the legal posture by authorizing work and community engagement requirements of 80 hours a month for Medicaid expansion enrollees, with the requirements taking effect January 1, 2027.
+214	It is anticipation: knowing what the policy environment will require of the organization 18 to 36 months out, positioning to comply at manageable cost, and identifying which federal programs can fund work the organization intended to do anyway.
+215	Federal rulemaking surveillance through the Federal Register, where proposed rules give 60 to 90 days of advance notice and final rules typically take effect 60 days after publication.
+216	From the Book — Chapter 3
+217	Chapter 3 is the practitioner's guide to the federal interface — the CMMI model landscape, Section 1115 waiver negotiation, budget neutrality, and how H.R. 1 reshaped the Medicaid environment states now operate in.
+218	Read it at /read/chapter-03.
+219	Section 1115 waivers and CMMI models are negotiated instruments, not applications, and both are bounded by what a state can legally compel.
+220	Liberty Mutual, and Vermont's January 2025 AHEAD agreement and July 2026 withdrawal as a worked case of federal model risk.
+
+## data-infrastructure-as-the-gate
+221	In Vermont those are VHCURES, the all-payer claims database managed by the Green Mountain Care Board with Onpoint Health Data as aggregation vendor; VITL, the nonprofit that Vermont statute (18 V.S.A. § 9352) designates as the exclusive operator of the Vermont Health Information Exchange; and the analytics layer that AHS and GMCB have been jointly procuring, now organized around the Unified Health Data Space.
+222	Yes — it is the only source that prices care across every setting and payer → No — a clinical record cannot price the intervention it documents
+223	Systematically underestimates it — a claim shows an HbA1c was drawn, never the result → Has the result, but only for the population that organization happens to see
+224	Source: GMCB VHCURES documentation; AHS Transformation Report, November 2025
+225	It produced the GMCB analysis showing Vermont hospital outpatient prices running from 279% to 697% of Medicare, the 32.3% potentially avoidable ED visit rate in the AHS transformation reports, and the drug affordability modeling behind the state's IRA analysis.
+226	Roughly 40% of commercially insured Vermonters are in ERISA self-insured employer plans.
+227	Liberty Mutual the Supreme Court held 6 to 2 that ERISA preempts state laws requiring self-insured plans to report claims data to a state database.
+228	The November 2025 AHS transformation report acknowledged that most available measures reflected 2023 or earlier data.
+229	It does not hold mental health and substance use records governed by 42 CFR Part 2, social service utilization, housing status, or any other social determinant.
+230	It shows that an HbA1c test was performed.
+231	This is why the hybrid measures Act 68 depends on — CMS 167 for hypertension control, CMS 204 for diabetes control — cannot be produced from claims alone.
+232	Absent clinical linkage, AHS told the Legislature in January 2026, provider groups and payers "must resort to manual chart abstraction" — paying staff to read charts by hand.
+233	Act 68 can compel Vermont hospitals.
+234	OneCare Vermont was formed in 2012 by the University of Vermont Medical Center (then Fletcher Allen) and Dartmouth-Hitchcock, and became the accountable care organization through which Vermont ran the federal All-Payer ACO Model from 2017.
+235	It wound down at the close of 2025.
+236	Patients attributed to OneCare had roughly 36% higher emergency department utilization and roughly 18% fewer primary care visits than peer ACOs — the exact pattern you would predict from an organization that could not identify rising-risk patients early enough to route them to primary care.
+237	A 2019 audit found OneCare did not reliably monitor or accurately report on community programs it was funding.
+238	Administrative costs ran $70.35 million between 2018 and 2022.
+239	The financial bottom line is genuinely contested and should not be reduced to a single number — published estimates range from $18.23 million in savings to a net cost of tens of millions depending on whether the pandemic year is included.
+240	And the payer side closed the same way: Blue Cross Blue Shield of Vermont, the state's largest insurer, declined to renew effective January 1, 2023, withdrawing roughly 93,000 enrollees — about a third of total enrollment — citing data-protection concerns over OneCare's analytics subcontracting and the absence of evidence of improved outcomes or cost.
+241	Source: VTDigger, December 20, 2022
+242	Enrollees withdrawn when BCBS-VT declined renewal effective Jan 1, 2023 — about one third of enrollment
+243	OneCare administrative costs, 2018-2022
+244	Act 68 of 2025, section 10, directed AHS and the HIE Steering Committee to develop the Unified Health Data Space and decide whether and how to integrate clinical, claims and social-needs data — with no clinical–claims integration before January 1, 2027, and only on a Steering Committee majority vote.
+245	The quieter and more important change came in Act 167, which repealed 18 V.S.A. section 9410(e) — the provision that had barred the use of direct patient identifiers for record matching.
+246	Vermont routes integration primarily through the Medicaid Data Warehouse and Analytics Solution, which went live in early January 2026, rather than through VHCURES.
+247	That is the correct trade, and it comes with an obligation: Medicaid is roughly a quarter of Vermont's primary coverage, so multi-payer scaling through 2029-2030 is not an enhancement to the plan, it is the plan.
+248	VHCURES: quarterly, with ~6 months of claims run-out → MDWAS: linked Medicaid claims and clinical data in the State's own system
+249	All payers, but only 60% of commercial → Medicaid only, adding Medicare 2028-2029
+250	No patient opt-out mechanism → Integrated opt-out, compliant with Act 53
+251	In 2022 the General Assembly passed House Bill 1127, requiring the state-designated exchange, CRISP, to operate as a health data utility effective October 1, 2022.
+252	Equity monitoring under Act 68 inherits it.
+253	A state can hold a documented 13-point gap between white and Hispanic Vermonters on a 91% overall access measure, commit to closing it, and still be unable to demonstrate progress, because the denominator it needs is missing from the database it is measuring with.
+254	From the Book — Chapter 4
+255	Chapter 4 lays out Vermont's three-layer data architecture — VHCURES, VITL/HIE, and the UHDS plan — and the structural limitations that make Technology the gate Economics has to wait on.
+256	Read it at /read/chapter-04.
+
+## fhir-interoperability-compliance-path
+257	FHIR — Fast Healthcare Interoperability Resources — is an HL7 standard for representing and moving health data.
+258	FHIR R4, the version CMS regulation is written against, replaced most of that with a published contract.
+259	A hospital running Epic and a critical access hospital running TruBridge can both be accurately described as FHIR R4 compliant while exchanging documents with different content, triggering different workflows, and requiring custom integration work to interoperate at all.
+260	Vocabulary alignment across ICD-10, SNOMED CT, LOINC and RxNorm is terminology work, which is why Vermont's UHDS architecture puts terminology services in the foundational layer next to identity rather than treating them as a downstream cleanup.
+261	It lives in network agreements, state law, and 42 CFR Part 2 for substance use records.
+262	The most expensive mistake in a technology roadmap is treating FHIR compliance as a milestone rather than a precondition.
+263	A board can be shown a slide saying every hospital in the network is FHIR R4 certified and conclude the interoperability problem is closed.
+264	The CMS Interoperability and Patient Access final rule, CMS-9115-F, was published May 1, 2020.
+265	Both were required from January 1, 2021, with CMS exercising enforcement discretion until July 1, 2021.
+266	The CMS Interoperability and Prior Authorization final rule, CMS-0057-F, was issued January 17, 2024 and is the more operationally disruptive of the two.
+267	From January 1, 2026, impacted payers must decide standard prior authorization requests within 7 calendar days and expedited requests within 72 hours, must give a specific reason for every denial regardless of how the request arrived, and must publicly report prior authorization metrics.
+268	From January 1, 2027, they must operate four FHIR APIs: a Prior Authorization API, a Provider Access API, a Payer-to-Payer API, and an expanded Patient Access API that now carries prior authorization information.
+269	The 2020 rule gave patients a pipe.
+270	The 2024 rule puts a payer's most contested administrative process — prior authorization — onto that pipe, with a clock attached and the metrics published.
+271	CMS-9115-F — Interoperability and Patient Access → CMS-0057-F — Interoperability and Prior Authorization
+272	May 1, 2020 → January 17, 2024
+273	Admission, discharge and transfer event notifications as a Condition of Participation → 7-day standard and 72-hour expedited decisions; specific denial reasons; public metrics reporting
+274	APIs required January 1, 2021; enforcement from July 1, 2021 → Process requirements January 1, 2026; APIs primarily January 1, 2027
+275	Maximum decision time for a standard prior authorization request from Jan 1, 2026
+276	Maximum decision time for an expedited prior authorization request from Jan 1, 2026
+277	Source: HHS OIG final rule, effective September 1, 2023
+278	The 21st Century Cures Act runs in the opposite direction: it prohibits withholding data through the pipes that exist.
+279	A later addition, the TEFCA Manner Exception finalized in the HTI-2 rule, lets an actor satisfy a request via TEFCA when both parties are TEFCA participants.
+280	The HHS Office of Inspector General's civil monetary penalty rule took effect September 1, 2023, authorizing penalties of up to $1 million per violation against developers of certified health IT, entities offering certified health IT, and health information exchanges and networks.
+281	Then on June 24, 2024, HHS finalized the provider disincentives rule, effective July 31, 2024, which routes consequences through Medicare payment programs instead of fines.
+282	Source: HHS information blocking disincentives final rule, June 24, 2024
+283	MIPS Promoting Interoperability score for a clinician found to have committed information blocking — capping the total MIPS score at 75
+284	Before mid-2024, a provider organization weighing whether to share data with a competitor faced an enforceable-in-theory prohibition and no defined consequence.
+285	Every use case that crosses an organizational boundary depends on matching — establishing that the John Smith born March 14, 1952 at one hospital is the same person as the John Smith born March 14, 1952 at another, and the Jonathan Smith with that date of birth in the Medicaid enrollment file.
+286	A congressional appropriations rider has barred HHS from spending federal funds to promulgate one since 1999, which means matching is done probabilistically on demographic attributes: name, date of birth, address, sex, sometimes phone.
+287	Research published by The Pew Charitable Trusts in 2018 found match rates between organizations as low as 50% — including, per work by the ONC contractor Audacious Inquiry, between organizations running the same EHR vendor, because the variability is in process and configuration rather than in the software.
+288	Measured duplicate record creation rates within organizations ranged from 0.77% to 6%.
+289	Under 18 V.S.A. section 9410(e), state law prohibited the use of direct patient identifiers for record matching — a privacy provision that had the effect of forbidding the technique that accurate identity resolution requires.
+290	Act 167 repealed it, which is why the UHDS architecture can now place a master patient index, supplied by Verato, in its foundational layer alongside terminology services and the integration engine.
+291	Vermont's 14 hospitals do not share an EHR — UVM Health Network's hospitals run Epic, the independent hospitals a mix of other vendors' systems — before accounting for community mental health agencies, skilled nursing facilities, home health agencies and independent practices, many of which have no FHIR-capable system at all.
+292	Oliver Wyman's community engagement surfaced the everyday version: one participant described having to call up to 31 EMS agencies to arrange a single transfer.
+293	Eleven networks had QHIN status as of November 2025, including eHealth Exchange, Epic Nexus, CommonWell, Health Gorilla, KONZA and MedAllies, with Oracle Health subsequently designated.
+294	More than 23,000 organizations are live on TEFCA as QHINs, participants or subparticipants.
+295	Then the trust and consent layer — network membership, participation agreements, and the segregated handling that 42 CFR Part 2 requires for substance use records.
+296	From the Book — Chapter 5
+297	Chapter 5 covers the FHIR compliance landscape and the interoperability rules this lesson works through in practice.
+298	Read it at /read/chapter-05.
+
+## ai-governance-clinical-decision-support
+299	In October 2019, Ziad Obermeyer and colleagues published "Dissecting racial bias in an algorithm used to manage the health of populations" in Science.
+300	The subject was a commercial population health risk algorithm — Optum's, applied to roughly 200 million people a year nationally — used to identify patients who should be enrolled in high-risk care management.
+301	The researchers studied about 50,000 patients at a large academic hospital: roughly 6,000 self-identified Black and roughly 44,000 self-identified White.
+302	Among patients the algorithm flagged as highest risk, Black patients had 26.3% more chronic conditions than White patients at the same risk score.
+303	Only 17.7% of patients the algorithm selected for extra care were Black; the researchers calculated that an unbiased algorithm would have selected 46.5%.
+304	Working with the vendor to predict health outcomes rather than costs reduced the disparity by 84%.
+305	Source: Obermeyer et al., Science, October 2019
+306	Source: Obermeyer et al., Science, 2019
+307	In June 2021, Wong and colleagues published an external validation in JAMA Internal Medicine covering 27,697 patients across 38,455 hospitalizations at Michigan Medicine between December 6, 2018 and October 20, 2019.
+308	The model's area under the curve was 0.63, against the 0.76 to 0.83 range cited in the vendor's own documentation.
+309	Sensitivity was 33%, specificity 83%, positive predictive value 12%.
+310	In plain operational terms: the model alerted on 18% of all hospitalized patients, missed 1,709 sepsis cases — 67% of all sepsis in the cohort — and a clinician would have to work up 109 alerts to detect one case of sepsis earlier than they would have without it.
+311	Epic subsequently released a revised model in 2022, a gradient-boosted tree that addressed several of the methodological criticisms and, importantly, came with a recommendation that hospitals train it on their own data before clinical use — a substantial departure from the one-size-fits-all model that preceded it.
+312	Source: Wong et al., JAMA Internal Medicine, June 2021
+313	Epic Sepsis Model AUC on external validation, vs. 0.76-0.83 in vendor documentation
+314	Source: Wong et al., JAMA Internal Medicine, 2021
+315	Sepsis cases the model missed — 1,709 of them
+316	And watch override rates: a systematically high override rate is clinicians telling you the tool is not trustworthy, in the only channel available to them.
+317	The primary control — the disparity was visible in the deploying institution's own data → Would have shown a 12% positive predictive value within weeks of go-live
+318	Not applicable — the tool made referrals, not point-of-care alerts → 109 alerts per true case would have produced an unmistakable override signal
+319	If it is local, it is also temporal, and a model correct for your population in 2026 is an empirical claim about 2027, not a settled fact.
+320	The ONC HTI-1 final rule created a certification criterion for decision support interventions that took effect January 1, 2025.
+321	Certified health IT must support 13 source attributes for evidence-based interventions and 31 for predictive ones — covering the model's purpose, training data, validation, fairness assessment and maintenance — plus intervention risk management practices for predictive tools the developer supplies as part of its module.
+322	The FDA had authorized 1,451 AI-enabled medical devices through the end of December 2025, of which 1,104 — 76% — were radiology devices.
+323	That concentration matters for rural systems specifically: imaging is both the most mature category of clinical AI and the capability a small hospital with one radiologist covering every modality is least able to staff to volume.
+324	HTI-1 addresses disclosure.
+325	ASTP/ONC's HTI-5 proposed rule, published December 29, 2025, would remove most of HTI-1's source-attribute and risk-management requirements for predictive decision support; it was not final as of October 2026.
+326	Meanwhile a different federal rule reaches the hospital directly: since May 1, 2025, the Section 1557 nondiscrimination rule (45 CFR § 92.210) has required covered health programs to make reasonable efforts to identify patient care decision support tools that use race, color, national origin, sex, age, or disability as inputs, and to mitigate the risk of discrimination from each.
+327	That provision was not among those a federal court vacated in October 2025.
+328	Act 156 of 2026 makes it unprofessional conduct for a mental health professional to deliver therapy through AI systems alone, and Act 101 of 2026 directs the State's Artificial Intelligence Advisory Council to recommend statutory changes — including on generative AI in the regulated professions and AI in insurance utilization review — by January 15, 2027.
+329	AI-enabled medical devices authorized by the FDA through December 2025
+330	Source: FDA AI-Enabled Medical Device List, end of 2025
+331	Source: ONC HTI-1 final rule, effective January 1, 2025
+332	Source: ONC HTI-1 final rule
+333	Chapter 4's warning about incomplete race and ethnicity data in commercial claims connects directly here — a model trained or monitored on a dataset that cannot identify subgroups cannot be audited for differential performance, regardless of anyone's intent.
+334	Chapter 5 covers AI governance and clinical decision support as part of the Technology substrate a transformed system depends on.
+335	Two documented failures — a population health algorithm that systematically under-referred Black patients, and a sepsis model that missed two thirds of cases while alerting on 18% of admissions — show what ungoverned clinical AI produces.
+
+## global-budgets-reference-based-pricing
+336	Vermont's data, documented in the Green Mountain Care Board's February 2026 report, sits well above the national average: UVMMC's commercial prices ran 358% of Medicare in RAND's 2020 study, the average Vermont hospital charges commercial payers 250-300% of Medicare, and the approximate break-even point is roughly 136% of Medicare.
+337	Vermont's lowest-cost silver marketplace premium rose from $456 a month in 2018 to $948 in 2024 -- a 108% increase in six years -- and GMCB reports 169% growth from 2018 to 2025, tracking hospital charge growth closely (Oliver Wyman Act 167 Report; GMCB, January 2026).
+338	Vermont's Act 68 directs the GMCB to implement mandatory RBP for commercial payers no later than hospital fiscal year 2027.
+339	The statute sets no single multiplier; Oliver Wyman's Act 167 study recommended 200% of Medicare or less for PPS hospitals as a level that moves the system toward a sustainable trajectory while still covering hospitals' actual costs.
+340	Act 68's architecture rests on four design principles: mandatory, not voluntary, for every hospital and every commercial payer; a binding ceiling, not advisory guidance, meaning hospitals cannot charge or collect more than the established rate; a transparent, nationally comparable Medicare benchmark; and premium passthrough monitoring, so GMCB and Vermont's Department of Financial Regulation can verify that price reductions actually reach premiums rather than being absorbed as insurer margin.
+341	GMCB's February 2026 report added a refinement reflecting Vermont's varied 14-hospital system: rather than one statewide multiplier, GMCB will weigh each hospital's payer mix, labor costs, social risk factors, and role in the system -- a critical access hospital serving a largely Medicaid and Medicare rural population has different cost economics than a large academic medical center, even under one binding ceiling principle.
+342	The Cross-State Evidence Behind Vermont's 200%
+343	Oregon implemented RBP for its state employee health plans in 2019, capping in-network payments at 200% of Medicare and out-of-network at 185%, covering roughly 300,000 lives.
+344	A Health Affairs study found the program saved an estimated $107.5 million over its first 27 months -- and, critically, all 24 hospitals affected by the cap remained in-network.
+345	That finding directly answers the most common objection to RBP: that hospitals will simply walk away from a regulated rate.
+346	At 200% of Medicare, they did not, because 200% of Medicare is still substantially above their actual cost of care.
+347	Montana's 2016 state-employee-plan RBP program produced roughly $48 million in initial savings but proved politically fragile without a statutory mandate behind it -- a cautionary data point that helps explain why Vermont chose to legislate RBP rather than negotiate a smaller demonstration.
+348	Washington's 'Cascade Care' public option caps participating network payments at 160% of Medicare and is expanding toward state employee plans.
+349	GMCB's February 2026 report was precise about scope.
+350	This is why Act 68 sequences RBP first and global budgets second.
+351	Under fee-for-service, revenue equals price times volume: the only way to grow revenue is to deliver more services or charge more per service.
+352	The only lever left to improve financial performance is reducing cost -- which means managing population health better, preventing hospitalizations, cutting avoidable readmissions, and delivering care in less expensive settings.
+353	The clinical success and the financial success point the same direction for the first time.
+354	Maryland's Health Services Cost Review Commission (HSCRC) was created by the Maryland General Assembly in 1971 with a unique statutory authority to set hospital rates for all commercial payers, and received a Medicare demonstration waiver in 1977 to extend that authority to Medicare as well.
+355	The current Global Budget Revenue (GBR) methodology, operating under a renegotiated federal waiver since 2014, fixes each hospital's total annual revenue before the year begins; prices for individual services then adjust during the year to hit that fixed target.
+356	Maryland is the only U.S. state to have run mandatory all-payer hospital global budgets for more than a decade, and its results are the closest empirical evidence available for what Vermont is attempting: per the CMS-commissioned evaluation (RTI, 2019), $975 million less total Medicare spending over the first 4.5 years (2.8% slower growth), $796 million of it in hospital spending, and 6.7% fewer admissions for ambulatory-care-sensitive conditions; Maryland's regulator, measuring against the national trend, reports roughly $1.4 billion in Medicare hospital savings.
+357	The model's accountability structure extends beyond the budget cap itself: a Medicare Performance Adjustment worth 1% of Medicare revenue tied to total cost of care, and a Quality Based Reimbursement program worth 2% of all-payer revenue tied to patient experience, safety, and outcomes.
+358	A global budget creates a powerful incentive to reduce hospital utilization, but it does not automatically create the community infrastructure -- primary care capacity, behavioral health access, housing, transportation -- that addresses what drives that utilization in the first place.
+359	The AHEAD State Agreement linked hospital global budgets to the Equity, Access, and Statewide Transformation (EAST) Fund for primary care, mental health, home health, and long-term care investment -- a plan undone when CMS capped the expected EAST Fund near $10 million and Vermont withdrew from AHEAD in July 2026 (see below).
+360	The Rural Health Transformation Program separately provides transformation capital -- a $195 million FY2026 award, an annual amount rather than a five-year total -- for workforce, telehealth, and community infrastructure.
+361	GMCB's net patient revenue cap, in place since 2012, partially constrained individual hospital revenue growth but did not align incentives across payers or address volume gaming.
+362	A 2014 pilot proposed for Rutland Regional Medical Center -- payments based on historical revenue plus inflation, adjusted for demographics -- was never implemented; hospital opposition and implementation complexity stopped it before launch.
+363	The Vermont All-Payer ACO Model (2017-2025) went further: a voluntary arrangement aligning hospital global payments across Medicare, Medicaid, and commercial payers based on historical spend.
+364	The model produced modest results but never achieved the all-payer alignment that makes global budgets work, and it expired at the end of 2025.
+365	Act 68's statutory mandate, requiring global budgets for one or more non-CAH hospitals by FY2028 and all Vermont hospitals by FY2030, resources permitting, removes the opt-out.
+366	That is the design difference that matters, and it is the reason Act 68 looks structurally different from everything that came before it.
+367	In January 2025, Vermont signed the AHEAD (Achieving Healthcare Efficiency through Accountable Design) State Agreement with CMS, a federal model intended to bring Medicare fee-for-service hospitals under global budgets alongside Act 68's commercial reforms.
+368	Vermont expected roughly $138 million in additional federal funds to reinvest in primary care and community services as part of the deal.
+369	A subsequent CMS renegotiation, imposed to align Vermont's terms with those of other AHEAD states, cut that expectation to a cap of about $10 million.
+370	With most of the money that had justified joining gone, but the model's administrative complexity and downside risk unchanged, Vermont formally notified CMS of its withdrawal in July 2026.
+371	Because the performance period had not yet begun, the withdrawal changed nothing operationally for Vermont hospitals or providers: Act 68's global budget mandate rests on state statutory authority, not the federal AHEAD agreement, and Vermont's near-term transformation capital comes from the Rural Health Transformation Program, which does not depend on AHEAD either.
+372	For a hospital executive, the practical task is to model your cost structure under a fixed-revenue scenario now, not after FY2028 arrives: what does cost per adjusted discharge look like at current volume, at 5% lower volume, at 10% lower volume?
+373	GMCB sets the RBP method by rule in 2027, and reference prices take effect for commercial payers in hospital FY2028 -- the same year the first non-CAH global budgets are due, one budget cycle away.
+374	Source: RAND hospital price study (2020)
+375	Source: GMCB Act 68 Update, February 2026
+376	Source: Oliver Wyman Act 167 Report / GMCB analysis
+377	Increase in Vermont's lowest-cost silver marketplace premium, 2018-2024 ($456 to $948)
+378	Vermont's own All-Payer ACO Model (2017-2025) proves this concretely: OneCare Vermont could not compel the state's highest-cost commercial payers to participate, so the model never achieved the all-payer alignment that makes global budgets work, and it expired at the end of 2025.
+379	This is why Act 68 made participation mandatory rather than trying to improve the voluntary model.
+380	The population-health limits are equally real, and Vermont's planned response -- pairing the budget with the EAST Fund and Rural Health Transformation Program from day one -- was a direct answer to the specific gap Maryland's evaluators identified, though the EAST Fund half fell away when Vermont withdrew from AHEAD in July 2026.
+381	Medicare hospital savings versus the projected national trend since 2014
+382	Reduction in hospital admissions for Medicare patients (avoidable admissions down over 6%)
+383	Source: RTI International evaluation for CMS (2019); total Medicare savings were $975M
+384	Reduction in Medicare hospital spending vs. comparison group, first 4.5 years
+385	The most common objection to reference-based pricing is that hospitals will simply refuse the regulated rate and exit commercial networks, cutting off patient access.
+386	Oregon's experience directly refutes this at 200% of Medicare: all 24 hospitals affected by the state's 2019 employee-plan RBP program remained in-network, because 200% of Medicare is still well above their actual cost of care.
+387	The EAST Fund fell away when Vermont withdrew from AHEAD in July 2026.
+388	200% of Medicare in-network / 185% out-of-network; state employee plan, ~300,000 covered lives → $107.5M saved in 27 months (Health Affairs); all 24 affected hospitals stayed in-network
+389	Direct contracting at a percentage of Medicare for the state employee plan → $48M initial savings; politically fragile without a statutory mandate behind it
+390	'Cascade Care' public option at 160% of Medicare → Voluntary; expanding to state employee plans and growing commercial adoption
+391	Maryland (2014-present) —
+392	All-payer rate setting; fixed annual global budget revenue; Medicare waiver → $975M lower Medicare spending in 4.5 years ($796M hospital); 6.7% fewer avoidable admissions (CMS/RTI)
+393	Vermont Act 68 (FY2027) —
+394	Mandatory statewide RBP, hospital-specific prices set by GMCB rule (Oliver Wyman recommended 200% of Medicare or less) → Implementation underway; FY2027 commercial hospital rates cut 2.9% statewide (GMCB, September 2026) as a transition step
+395	From the Book — Chapter 6
+396	Chapter 6 is the Economics pillar in full — global budgets and reference-based pricing as Vermont's financial reform architecture.
+397	Read it at /read/chapter-06.
+
+## apm-readiness-vbc-financial-modeling
+398	Chapter 6 established the payment architecture -- reference-based pricing and global budgets.
+399	The methodology matters as much as the concept: attribution based on plurality of primary care visits produces a different, and typically more stable, population than attribution based on which provider billed the most for a patient.
+400	In Vermont, the AHEAD Model was to track total cost of care for Medicare fee-for-service beneficiaries attributed to Vermont hospitals across all payer settings, using the state's VHCURES all-payer claims database as the underlying data source, until Vermont withdrew from AHEAD in July 2026.
+401	A historical spending baseline, the most common approach, sets the benchmark from the organization's own past cost, typically with a trend adjustment.
+402	In January 2026, Kaiser Permanente affiliates agreed to pay $556 million -- the largest False Claims Act settlement to date involving Medicare Advantage -- to resolve Department of Justice allegations that employees in California and Colorado added diagnosis codes to patient charts after visits, codes the treating physicians had not identified or addressed at the visit itself, systematically inflating risk scores.
+403	The government alleged the practice drew roughly $1 billion in federal payments between 2009 and 2018.
+404	Before any payment changes hands, most models apply a minimum savings rate (MSR): under CMS's Medicare Shared Savings Program, this runs roughly 2% to 3.9% of the benchmark depending on the size of the attributed population, protecting against ordinary year-to-year cost variation triggering payments that do not reflect genuine performance change.
+405	Under MSSP's one-sided track, with no downside risk, an organization can earn up to 50% of savings based on quality performance; under two-sided tracks that accept downside risk, sharing can reach 60%, and higher-risk tracks can share losses at 40% to 75%.
+406	A care management program that prevents 50 hospitalizations in a population of 10,000 Medicare beneficiaries, at an average cost of $15,000 per hospitalization, avoids $750,000 in cost.
+407	If that program costs $200,000 a year to operate, the return is roughly 275%.
+408	Vermont's data adds a second lever: 32.3% of Vermont emergency department visits are classified as potentially avoidable, at an average cost of $1,800 per visit.
+409	The Pioneer ACO Lesson: Benchmark Design Determines Survival
+410	CMS's Pioneer ACO Model launched in 2012 with 32 participating health systems, selected specifically because they already had experience taking on financial risk.
+411	Participation fell sharply over the model's life: down to 19 organizations by 2014, and to just 8 by the program's final performance year in 2016.
+412	Work the math before you sign: a 30% quality withhold on 50% of gross savings means quality performance alone determines 15% of the total financial outcome.
+413	The VBC Transformation Readiness Assessment scores an organization across 30 dimensions in six domains -- strategic clarity, data and technology, care delivery capability, network and partnerships, revenue cycle, and workforce operations -- each rated 0 to 4.
+414	The platform reports an overall readiness percentage -- the average across all answered dimensions -- rather than a raw point total: 80%+ indicates Global Budget Readiness, 60-79% indicates Advanced stage (~6 months to readiness), and below 60% signals the organization is not ready for full downside risk.
+415	For Vermont specifically, the book argues that Domain 2 (Data and Technology) is the binding constraint, while the Blueprint's patient-centered medical homes and Community Health Teams give Domain 3 (care delivery) a long head start.
+416	An organization should score itself against this framework, or an equivalent one, before signing a downside-risk contract -- not after the first year-end reconciliation reveals the gap the hard way.
+417	Organizations that negotiate aligned VBC contracts ahead of Vermont's FY2028 global budget mandate will have a financial model that reinforces the transformation already underway.
+418	In January 2026, Kaiser Permanente affiliates agreed to pay $556 million -- the largest False Claims Act settlement to date in Medicare Advantage -- after the DOJ alleged employees added inaccurate diagnosis codes to patient charts after visits, inflating risk scores across California and Colorado and drawing roughly $1 billion in federal payments from 2009 to 2018.
+419	What Pioneer ACO's Attrition Actually Shows
+420	CMS's Pioneer ACO Model began in 2012 with 32 organizations chosen for their risk experience; only 8 remained by the program's final performance year in 2016.
+421	Savings must clear roughly 2-3.9% before any payment → Filters out normal year-to-year variance from genuine performance
+422	Gross savings x sharing rate (50-60%+ depending on risk track) → = the organization's shared savings payment
+423	From the Book — Chapter 7
+424	Chapter 7 works the APM financial modeling and VBC readiness mechanics this lesson teaches.
+425	Read it at /read/chapter-07.
+
+## economics-as-design-vs-management
+426	Chapters 6 and 7 together make a distinction this course treats as load-bearing: designing a payment model and managing one are different disciplines, done by different people, on different timelines.
+427	Act 68's statutory mandate, GMCB's rulemaking, and the five design dimensions every global budget must resolve -- scope, population adjustment, volume treatment, quality linkage, and flexibility mechanisms -- are design work, largely finished once GMCB's methodology is final.
+428	A reader who treats Act 68's passage, or GMCB's final rule, as the end of the transformation has confused the two jobs.
+429	Design is a policy and actuarial exercise: statutory authority (Act 68), a regulator with rulemaking power (GMCB), and resolution of the five dimensions every global budget methodology must address -- what services are in scope, how population differences are adjusted for, whether the budget moves with volume, how quality links to payment, and what flexibility exists for mid-year revision.
+430	Vermont's GMCB is still resolving several of these dimensions as of its February 2026 update -- scope and population adjustment in particular are both still working through rulemaking.
+431	That is not a failure of the process; getting a global budget's design right takes years, and Vermont has been working through some version of it since the Act 167 diagnostic.
+432	But having the database is not the same as having the internal analytics capability to use it -- precisely the gap the joint AHS-GMCB analytics vendor procurement is meant to close, and precisely the gap that determines whether a well-designed budget produces the incentive change this course describes, or just confusion at the first year-end reconciliation.
+433	Run the arithmetic on Domain 2: the gap has to close before FY2027, the year GMCB sets reference-based pricing by rule (prices take effect for commercial payers in hospital FY2028) -- not after, once the first year of binding prices has already exposed which hospitals could not see their own numbers.
+434	Maryland Designed It Right in 2014 and Still Had to Learn to Manage It
+435	Maryland's HSCRC had every design advantage: a unique, decades-old statutory authority and a federal waiver dating to 1977.
+436	Its 2014 Global Budget Revenue methodology is, on the design side, the most mature all-payer model in the country.
+437	Blue Cross Blue Shield of Massachusetts's Alternative Quality Contract, launched in 2009 with seven provider groups, is a non-Vermont, non-Maryland case of the same distinction resolving in the other direction.
+438	A Health Affairs study documented savings building from 1.9% in year one to 3.3% in year two; a subsequent New England Journal of Medicine study by Song, Chernew, and colleagues found the reduction in spending growth persisted through four years of the contract.
+439	In January 2026, Kaiser Permanente affiliates agreed to pay $556 million to settle Department of Justice allegations that employees in California and Colorado added diagnosis codes to patient charts after visits -- codes the treating physicians had not identified or addressed at the visit itself -- systematically inflating Medicare Advantage risk scores.
+440	The settlement, the largest False Claims Act recovery in Medicare Advantage history to date, is a warning specifically relevant to any organization about to accept downside risk under an HCC-adjusted benchmark: the audit and compliance infrastructure needed to code accurately is inseparable from the analytics infrastructure needed to manage a risk contract well.
+441	Organizations that start that build now, ahead of Vermont's FY2027-2028 deadlines, will manage the model the legislature designed.
+442	Source: Act 68 of 2025, Sec. 10 (18 V.S.A. § 9353)
+443	Earliest year Act 68 allows clinical–claims integration in the Unified Health Data Space (Steering Committee vote required)
+444	Kaiser Permanente DOJ settlement for Medicare Advantage risk-adjustment fraud, January 2026
+445	1.9% to 3.3%: Savings That Compounded
+446	The Massachusetts Alternative Quality Contract's documented savings grew from 1.9% in its first year to 3.3% in its second, and a four-year NEJM study found the reduction in spending growth persisted.
+447	From the Book — Chapters 6 and 7
+448	Chapters 6 and 7 together make the case this lesson distills: designing a payment model is not the same as being able to manage one.
+449	Designing a payment model is a policy and actuarial exercise; managing one is an analytics and operations exercise, and Vermont's own data show the second is well behind the first.
+
+## care-model-redesign-under-global-budgets
+450	The Vermont Blueprint for Health was established in 2006 and reached statewide implementation by 2013.
+451	Source: Population Health Management (2016), "Vermont's Community-Oriented All-Payer Medical Home Model Reduces Expenditures and Utilization While Delivering High-Quality Care"
+452	Medical expenditure reduction per $1M invested in the Blueprint, driven by lower hospitalization and outpatient facility use
+453	Source: Vermont AHS Health Care System Transformation Report, November 2025
+454	Vermont adults reporting a personal health care provider, against an 87% national benchmark
+455	Share of a primary care panel in the highest-complexity tier — accounting for 30-40% of total cost of care for that panel
+456	The Oliver Wyman analysis behind Vermont's Act 167 work reached a conclusion most states resist: Vermont does not have a primary care physician shortage in the conventional sense.
+457	A physician working without delegation manages roughly 1,100-1,200 patients.
+458	The same physician in a team-based model — medical assistant, care coordinator, behavioral health care manager, CHT connection, each person working at the top of their license — can carry 1,500-2,000.
+459	That is a 30-50% capacity gain with no new physicians, and it is achievable in a timeframe that physician recruitment is not.
+460	In a 2,000-patient panel, the 3-5% in the highest-complexity tier account for 30-40% of total cost of care.
+461	Preventing roughly one hospitalization a month in that tier avoids on the order of $180,000 a year — enough to fund a half-time care coordinator and still return margin, under any shared-savings or global-budget arrangement.
+462	Vermont's behavioral health data describes a system failing at the point of highest acuity: 245.5 emergency department visits per 10,000 population for suicide ideation and self-harm, with 30-day follow-up after a mental health ED visit reaching only 76% and after a substance use ED visit only 68% (Vermont AHS Transformation Report, November 2025).
+463	A behavioral health care manager sits inside the primary care practice, maintains a registry of every patient in treatment, delivers brief structured interventions, and tracks response with validated instruments — PHQ-9 for depression, GAD-7 for anxiety.
+464	The foundational trial is IMPACT — Unützer and colleagues, JAMA, December 2002.
+465	It randomized 1,801 primary care patients aged 60 and older with major depression, dysthymia or both across 18 primary care clinics in eight health care organizations in five states, comparing collaborative care management to usual care.
+466	It remains one of the largest depression treatment trials ever conducted, and it is emphatically not a Vermont result.
+467	Unützer and colleagues followed the same cohort for four years and reported in the American Journal of Managed Care in February 2008 that IMPACT participants had lower mean total health care costs — $29,422 versus $32,785 for usual care, a difference of $3,363 per patient over four years, with a bootstrap analysis putting the probability of lower costs at 87%.
+468	CPT 99492 covers the first calendar month of care management (70 minutes), 99493 each subsequent month (60 minutes), 99494 each additional 30 minutes, and HCPCS G2214 a 30-minute month for practices with lighter caseloads.
+469	As of January 1, 2026, CMS discontinued G0512; federally qualified health centers and rural health clinics now bill the same CPT codes and G2214 as everyone else, which removes a long-standing distortion for safety-net practices.
+470	Source: Unützer et al., JAMA, December 2002
+471	Patients aged 60+ randomized across 18 primary care clinics in five states in the IMPACT collaborative care trial
+472	Source: Unützer et al., American Journal of Managed Care, February 2008
+473	Lower mean total health care costs per IMPACT participant over four years ($29,422 vs. $32,785 under usual care)
+474	Vermont 30-day follow-up rates after a mental health ED visit and after a substance use ED visit
+475	Source: CMS behavioral health integration billing guidance, 2026
+476	Medicare CPT codes for psychiatric collaborative care management, plus HCPCS G2214; G0512 discontinued January 1, 2026
+477	Time tracking: the billing codes are time-based per calendar month, so the practice needs a way to capture care manager and physician minutes before the first claim, not after the first denial.
+478	Integration in primary care is the first: the Blueprint's Mental Health Integration pilot embedded mental health clinicians and community health workers in primary care beginning in 2023, and the 2025 qualitative evaluation found improved access and engagement, and by November 2025 the pilot had funded 62.2 FTE of Community Health Team staff across every HSA.
+479	Community capacity is the second: Vermont became a CCBHC demonstration state in 2024 and had six certified CCBHCs by July 2026: Clara Martin Center and Rutland Mental Health Services, joined on July 1, 2026 by Northeast Kingdom Human Services, Howard Center, Northwestern Counseling & Support Services and Health Care & Rehabilitation Services (HCRS).
+480	Washington County Mental Health Services announced its CCBHC designation in October 2026.
+481	Crisis response is the third: mobile crisis has been operational since January 2024, dispatched through the 988 Suicide and Crisis Lifeline.
+482	Vermont's plan was to move MHI onto permanent primary care payment through AHEAD rather than renew it as a pilot — a financing decision made to protect a clinical result, and one that Vermont's July 2026 withdrawal from AHEAD left without its intended federal vehicle.
+483	Vermont's 30-day all-cause readmission rate sits at 14.8%, and its 76% behavioral health follow-up rate reflects the same underlying defect: the hospital-to-community handoff is not systematic.
+484	The Transitional Care Model is the evidence-based countermeasure — identify high-risk patients before discharge, assign a transitional care nurse, make direct contact with the patient or caregiver within 24 to 48 hours, reconcile medications, and book the primary care follow-up before the patient leaves the building.
+485	Vermont's implementation runs through the Community Health Teams, with a protocol that is deliberately mundane: CHT contact within 24 hours of a discharge notification, a 7-day follow-up visit that reviews discharge instructions and medication reconciliation and screens for the social needs that drive readmission, and a 30-day care plan review that either closes the episode or moves the patient into standing panel management.
+486	Tier 1 — Complex (3-5% of panel) —
+487	Tier 2 — Moderate risk (15-20%) —
+488	Tier 3 — Standard (50-60%) —
+489	Tier 4 — Inactive (20-30%) —
+490	The most direct way to reduce the cost of an inpatient stay under a capped budget is to deliver it somewhere cheaper.
+491	Medicare's Acute Hospital Care at Home initiative lets an approved hospital treat inpatient-level patients in their homes, waiving Conditions of Participation that would otherwise require 24/7 on-site nursing, with a combination of in-person and remote visits.
+492	By the American Medical Association's count, 366 programs across 139 health systems in 37 states have been approved.
+493	Levine and colleagues published a randomized controlled trial in Annals of Internal Medicine in 2020 comparing home hospital care with usual inpatient care at Brigham and Women's: adjusted cost of the acute episode was roughly 38% lower, and 30-day readmission was 7% in the home arm against 23% among inpatients.
+494	CMS's own study, delivered to Congress on September 30, 2024, found that AHCAH beneficiaries generally had lower 30-day mortality than comparable brick-and-mortar inpatients, with low escalation rates back to the hospital.
+495	The waiver was scheduled to lapse on January 30, 2026.
+496	Section 6210 of the Consolidated Appropriations Act, 2026 (P.L. 119-75) amended Section 1866G(a)(1) of the Social Security Act to strike that date and substitute September 30, 2030, and appropriated $2.5 million for CMS to study hospital-at-home quality and cost against traditional inpatient care.
+497	Absent further action, every hospital with an active waiver must discharge or return its home inpatients on September 30, 2030.
+498	Hospital-at-home requires capital and hiring — monitoring equipment, a command center, paramedic or nurse field teams, supply logistics — on a payment authority that currently expires in 2030.
+499	Vermont's own numbers make the point. 91% of Vermonters report a personal health care provider, which is four points above the Agency of Human Services' 87% benchmark and genuinely good.
+500	In the same reporting period, 59% of Vermont primary care practices were accepting new Medicaid patients.
+501	Community Health Team capacity distributed by practice size rather than by panel risk sends the fewest care managers to the practices carrying the most complex patients.
+502	Vermont's MHI evaluation documented exactly this risk and it is the most common way clinical transformation is lost.
+503	Vermont's Blueprint puts a quality improvement facilitator in each of its 13 Hospital Service Areas to do readiness assessment, data coaching and workflow redesign inside the practice.
+504	That field staff line is the first thing cut in a budget transition and the least recoverable.
+505	Tier 4, the attributed-but-inactive 20-30%, is invisible by definition and contains a disproportionate share of the people the model was built for.
+506	From the Book — Chapter 8
+507	Chapter 8 is the Clinical pillar in full — care models redesigned once revenue is capped rather than volume-driven.
+508	Read it at /read/chapter-08.
+
+## quality-mechanics-hedis-hcc
+509	NCQA is moving the whole measure set in that direction: the hybrid method is scheduled to be phased out by measurement year 2029, with HEDIS reporting fully digital by MY 2030, and NCQA has already delayed the new ECDS versions of Transitions of Care and Care for Older Adults to MY 2028 to allow more testing.
+510	For MY 2026 NCQA added seven measures — four risk-adjusted measures of acute hospitalization following outpatient surgery (orthopedic, general, colonoscopy, urologic), a Disability Description of Membership measure, and two ECDS measures covering follow-up after acute and urgent care visits for asthma and tobacco use screening and cessation.
+511	The MY 2026 specifications were also restructured to align with FHIR, including a terminology change from "eligible population" to "initial population" and from "required exclusions" to "denominator exclusions."
+512	Source: NCQA, HEDIS MY 2026 measure updates
+513	HEDIS MY 2026 measure changes, with specifications restructured to align with FHIR
+514	Scheduled retirement of the HEDIS hybrid (chart abstraction) method, with fully digital reporting by MY 2030
+515	HEDIS measures that can be stratified by race and ethnicity as of measurement year 2027, up from five when stratification began in MY 2022
+516	Source: CMS 2024 Rate Announcement; CMS-HCC V28 model documentation
+517	Payment HCC categories in the CMS-HCC V28 model, up from 86 in V24, with mapped ICD-10 codes cut from 9,797 to 7,770
+518	That last one is the most common, the hardest to see in a dashboard, and the mechanism behind the equity failure later in this lesson.
+519	The CMS Hierarchical Condition Category model groups ICD-10 diagnoses into condition categories, assigns coefficients, and produces a risk adjustment factor score that scales payment.
+520	V28 Changed the Rules, and Some Standard Advice Is Now Wrong
+521	CMS finalized the V28 CMS-HCC model in the 2024 Rate Announcement and phased it in over three payment years: 33% in 2024, 67% in 2025, and 100% in 2026.
+522	Payment year 2026 is the first year with no V24 blend, so every submitted diagnosis is now evaluated against the V28 category map, hierarchy and coefficient set alone.
+523	Anyone working from a risk-adjustment playbook written before 2024 is working from a model that no longer exists.
+524	V28 raised the number of payment HCC categories from 86 to 115 while cutting the ICD-10 codes that map to any HCC from 9,797 to 7,770 — more categories, fewer codes reaching them.
+525	CMS projected the model would lower average Medicare Advantage risk scores by about 3.12%.
+526	Diabetes is the clearest case: the V28 diabetes categories carry the same community coefficient, so documenting diabetes with chronic complications rather than uncomplicated diabetes no longer raises the risk score within that category.
+527	Chronic kidney disease went the other way and became more stage-specific, with stage 3 split into its own categories.
+528	This matters because "document the diabetic complication to capture RAF value" was standard coding advice for years, and under V28 it is no longer true as a payment statement.
+529	Specificity where V28 still pays for it: stage-specific chronic kidney disease is the current example, where the difference between an unstaged and a staged diagnosis is a real category difference.
+530	In October 2024 the HHS Office of Inspector General reported that CMS paid Medicare Advantage plans an estimated $7.5 billion in risk-adjusted payments for 2023 based on diagnoses reported only on health risk assessments or HRA-linked chart reviews — with no other visit, procedure, test or supply anywhere in the encounter data for those conditions, across roughly 1.7 million enrollees.
+531	In-home HRAs and HRA-linked chart reviews generated almost two-thirds of that total, and two companies accounted for more than $5.4 billion of it.
+532	Either the diagnoses were wrong, in which case the payments were improper, or the diagnoses were right and 1.7 million people were recorded as having serious conditions that generated no treatment.
+533	MedPAC's March 2025 report to Congress puts the aggregate scale on it: coding intensity leaves Medicare Advantage risk scores roughly 16% higher than those of comparable fee-for-service beneficiaries, and MedPAC projected that Medicare would pay about 20% more for MA enrollees in 2025 than it would have paid for the same people in traditional Medicare — approximately $84 billion, of which favorable selection accounts for roughly $44 billion.
+534	The patients furthest from goal — the ones with the most unmet social needs and the highest utilization — are the most expensive to reach per point of measure gain, and under an unstratified measure they are the rational place not to spend.
+535	NCQA began requiring race and ethnicity stratification with five HEDIS measures in measurement year 2022; as of MY 2027, 24 HEDIS measures can be stratified by race and ethnicity, spanning access, behavioral health, cardiovascular, diabetes, prevention and utilization.
+536	NCQA has also aligned its categories with the 2024 revision of OMB Statistical Policy Directive 15, which adds a Middle Eastern or North African category.
+537	The 21st Century Cures Act required CMS to stratify the Hospital Readmissions Reduction Program: beginning in fiscal year 2019, hospitals are sorted into five peer groups by their share of patients dually eligible for Medicare and full-benefit Medicaid, and each hospital's excess readmission ratio is compared to the median of its own peer group rather than to a national average.
+538	CMS finalized a Health Equity Index reward, later renamed the Excellent Health Outcomes for All reward, to begin with the 2027 star ratings and replace the existing reward factor — an explicit bonus for plans achieving good outcomes among enrollees with social risk factors.
+539	In the Contract Year 2027 final rule issued April 2, 2026, CMS decided not to implement it, stating that it would "continue the historical reward factor that encourages consistently high performance for all enrollees across all quality measures."
+540	Policy sets what must be reported and to whom, and can add or remove an equity accountability with a single rule — as the 2027 star ratings decision demonstrated.
+541	Then the clinical redesign in the previous lesson has a way to prove it worked — which is the only reason anyone funds the second year of it.
+542	From the Book — Chapter 9
+543	Chapter 9 works the measurement mechanics — HEDIS, HCC, and the Vermont Clinical Transformation Toolkit — that make care redesign visible.
+544	Read it at /read/chapter-09.
+
+## regionalization-right-sizing-hospital-system
+545	That is precisely why it is the most under-resourced pillar: it has no signature deliverable to fund, only the obligation to deliver everything else.
+546	What is required is a transfer protocol that works at 2 a.m., a surgeon credentialed at the receiving facility, a referring emergency department that trusts the pathway, and a financial plan for the hospital that just lost a service line.
+547	Vermont's version of this problem is 14 independent non-profit hospitals across a rural state of about 645,000 people, ranging from an academic medical center that anchors the state's economy to critical access hospitals of 25 beds or fewer in the Northeast Kingdom where any service reduction has immediate community consequences.
+548	Source: Oliver Wyman Act 167 Report, 2024
+549	Source: AHS Health Care System Transformation Report, November 2025 (NASHP via CMS)
+550	Per-adjusted-discharge management and administrative cost gap, Vermont PPS hospitals vs. national 75th-percentile benchmark
+551	Birkmeyer and colleagues, in the New England Journal of Medicine in 2002, examined 2.5 million procedures performed between 1994 and 1999 across six cardiovascular procedures and eight major cancer resections.
+552	The absolute difference in adjusted mortality between very-low-volume and very-high-volume hospitals ranged from 12.5 percentage points for pancreatic resection — 16.3 percent versus 3.8 percent — down to 0.2 percentage points for carotid endarterectomy, 1.7 percent versus 1.5 percent.
+553	MacKenzie and colleagues, also in the New England Journal of Medicine, in January 2006, compared outcomes for injured patients across 18 hospitals with Level I trauma centers and 51 non-trauma centers in 14 states.
+554	The adjusted in-hospital death rate was 7.6 percent at trauma centers versus 9.5 percent at non-trauma centers; at one year, 10.4 percent versus 13.8 percent — roughly a 25 percent reduction in the risk of death.
+555	Trauma systems are the most mature example of American regionalization, and they demonstrate the thing that makes regionalization work: the designation is meaningless without the transport system, the field triage protocols and the transfer agreements that route the patient to the designated site in time.
+556	Tier 1, Regional Specialty Centers, are hospitals with the population base, financial position and existing expertise to sustain inpatient beds and act as Centers of Excellence across multiple specialties.
+557	UVM Medical Center in Burlington is the primary RSC with 16 COE designations.
+558	Southwestern Vermont Medical Center, Brattleboro Memorial Hospital, Rutland Regional Medical Center and Central Vermont Medical Center function as secondary RSCs with 5 to 9 COE designations each, serving their regional populations.
+559	Tier 2, community hospitals with focused scope, maintain the specific service lines where they have adequate volume and expertise, and transfer other complex cases to RSCs.
+560	Johnsbury, Springfield Hospital and Copley Hospital in Morrisville carry 2 to 4 COE designations each.
+561	Oliver Wyman's report lays out restructuring options rather than unexpected closure: to a Rural Emergency Hospital with 24/7 emergency and observation services and no inpatient beds, to a Community Ambulatory Care Center providing outpatient and primary care, or to a Care at Home support hub.
+562	Tier 1 — Regional Specialty Center —
+563	Tier 2 — Focused-scope community hospital —
+564	Gains: protected volume and investment in its 2-4 designated COE specialties; a defined role it can staff and finance. → Gives up: service lines being regionalized elsewhere, and the revenue attached to them, while the replacement volume is still ramping.
+565	This is the most financially exposed position in the design.
+566	Tier 3 — Transformed facility (REH / CACC / Care at Home hub) —
+567	Gains: a financially viable structure and preserved local emergency or ambulatory access, instead of an unplanned closure. → Gives up: inpatient beds entirely, plus — under the federal REH rules — swing beds, 340B eligibility and distinct part units such as inpatient psychiatric or rehabilitation wings.
+568	Gains: a system with defined roles it can plan, fund and measure, rather than 14 facilities each optimizing independently. → Gives up: deniability.
+569	Tier 1: The Referral Obligation Runs Both Ways
+570	The RSC model requires a change in how the largest hospitals understand their role — from serving an immediate geographic catchment to accepting referrals from an entire region for designated specialties.
+571	One Vermont provider's account — calling up to 31 EMS agencies to arrange a single transfer, in a state with about 174 licensed ambulance and first-response services — is the concrete version of this problem.
+572	Tier 2: Managing a Shrinking Service Line Without Falling Over
+573	Tier 2 is where regionalization plans most often break, and the reason is arithmetic.
+574	The problem is year two, when a Tier 2 hospital has already reduced a regionalized service line and the replacement referral volume has not yet materialized, or when a Tier 3 facility has announced a conversion and is losing staff to competitors eighteen months before the conversion takes effect.
+575	Tier 3's most concrete option is not a state invention.
+576	The Rural Emergency Hospital is a Medicare provider type created by Congress in Section 125 of the Consolidated Appropriations Act, 2021, which added section 1861(kkk) to the Social Security Act.
+577	The designation became effective January 1, 2023, and conversions began that year.
+578	A facility must have been a critical access hospital, or a rural acute care, tribally operated or Indian Health Service hospital with 50 or fewer beds, enrolled in Medicare as of December 27, 2020, and located in — or reclassified as located in — a rural area.
+579	An REH receives the Outpatient Prospective Payment System rate plus 5 percent for outpatient department services furnished to Medicare patients, plus a fixed monthly facility payment — $285,625.90 per month in 2025, rising annually with the hospital market basket.
+580	That fixed payment is roughly $3.4 million a year of revenue that does not depend on volume, which is precisely the exposure that destroys small rural hospitals with declining census.
+581	It must provide 24-hour emergency and observation services, and it must maintain an annual average length of stay of 24 hours per patient, measured from registration to discharge.
+582	Fixed monthly facility payment per Rural Emergency Hospital in 2025, indexed annually to the hospital market basket
+583	Facilities operating as Rural Emergency Hospitals per the UNC Sheps Center REH tracker (accessed September 2026); the Rural Health Information Hub counted 42 as of October 2025
+584	The adoption numbers are the most instructive part of the REH story.
+585	A peer-reviewed analysis counted about 1,569 hospitals eligible for the designation, and the Chartis Center for Rural Health identified 389 as the hospitals most likely to consider conversion on financial grounds — and only 77 as ideal candidates.
+586	Against that denominator, the UNC Sheps Center's tracker lists 56 facilities actually operating as REHs.
+587	Converting forfeits 340B drug pricing, which for many critical access hospitals is a material revenue stream.
+588	It eliminates swing beds, because swing-bed post-acute care requires acute inpatient capability the REH no longer has — and in rural communities with no nearby skilled nursing facility, swing beds are often both a revenue source and the only local post-acute option.
+589	The conversions that have worked have overwhelmingly been at facilities with low swing-bed utilization and minimal 340B exposure, where the fixed facility payment clearly exceeds what is forfeited.
+590	This is the correct way to read the REH option for Vermont's Tier 3 facilities: it is a real mechanism with real money attached, and it is not universally applicable.
+591	The analysis that determines whether it fits a given hospital is a facility-specific calculation of 340B revenue, swing-bed volume, distinct part unit dependence and outpatient Medicare mix — not a policy preference.
+592	The November 2025 AHS transformation report identified the absence of a platform capable of modelling exactly this question: if Springfield Hospital converts to a Rural Emergency Hospital, what is the net financial impact on the system, and what travel burden does it create?
+593	Anson General Hospital serves a Texas town of roughly 2,200 people about 200 miles west of Dallas.
+594	By 2023 it had absorbed three consecutive years of financial losses and its inpatient census had fallen to an average of about 1.7 patients per week.
+595	It filed for REH designation in early January 2023 and was notified on March 30 that the conversion was effective March 27 — among the first facilities in the country to convert, and the third in Texas.
+596	The number worth holding onto is 1.7 inpatients per week: a hospital staffing inpatient beds around the clock for that census is not a hospital that can be saved by better management.
+597	Transfer Infrastructure Is the First Thing to Build, Not the Last
+598	Transfer infrastructure is the most visible immediate need in Vermont's plan and the most consistently underestimated component of regionalization everywhere.
+599	The fragmentation is the diagnosis: about 174 licensed EMS services in 13 districts, and one provider's account of calling up to 31 of them to arrange a single transfer.
+600	A clinician trying to move a patient from a Tier 2 emergency department to a Tier 1 Regional Specialty Center at night is running a coordination problem that has nothing to do with clinical judgement and everything to do with who answers the phone.
+601	A tele-specialty consultation that lets a Tier 2 or Tier 3 facility keep a patient safely local removes cost from the transport system, keeps revenue at the smaller facility, and spares the patient and family a 45-minute drive.
+602	The specific commitment is that when a patient arrives at a Tier 2 facility needing a service designated to a Tier 1 Center of Excellence, the transfer pathway is established, protocolized and reliable — a named receiving service, an agreed acceptance standard, a defined transport mode.
+603	Act 68's transformation planning process is the vehicle for creating them, and their absence is the most likely single point of failure in the design.
+604	The fixes are known — automated primary source verification against the NPDB and state licensing boards, continuous license and sanction monitoring in place of point-in-time re-verification at two-year intervals, and a shared credentialing database across the network so a provider verified at one facility is verified for all of them — and they reduce cycle time to 45 to 60 days without loosening verification standards.
+605	The target is the $1,303 per-adjusted-discharge gap between what Vermont PPS hospitals spend on management and administration — $2,730 — and the national 75th-percentile benchmark of $1,427, a 91 percent premium.
+606	Oliver Wyman projected more than $400 million of direct savings over five years, with administrative reductions and shared services among the largest sources.
+607	Required before: a named receiving service at the Tier 1 site, an agreed acceptance protocol, a defined transport mode and a single point of contact for the referring clinician. → Failure mode if skipped: the referring ED works the phone through multiple agencies at 2 a.m., reverts to keeping patients it should transfer, and the designation becomes nominal.
+608	Required before: the Tier 2 hospital's designated specialty is receiving actual referrals, not projected ones, at a rate that covers the service line being given up. → Failure mode if skipped: revenue is lost on schedule and gained on hope.
+609	This is the most common way regionalization plans are abandoned in year two.
+610	Required before: for a Tier 3 conversion, a modelled comparison of the REH fixed payment and OPPS add-on against forfeited 340B revenue, swing-bed volume and distinct part unit services. → Failure mode if skipped: a conversion that looked solvent on the federal payment schedule and is insolvent on the facility's actual revenue mix.
+611	Precedent at Scale: the VHA's 1995-1999 Restructuring
+612	The largest deliberate right-sizing of an American hospital system is also the best-documented.
+613	Between 1995 and 1999, under Kenneth Kizer, the Veterans Health Administration reorganized from a confederation of individual medical centers focused on inpatient care into an integrated system built around primary and ambulatory care.
+614	Kizer and Dudley's account, published as "Extreme Makeover: Transformation of the Veterans Health Care System," records the scale: more than 20,000 acute care hospital beds closed, and roughly 350,000 fewer patients admitted to hospitals in FY1999 than in FY1995.
+615	Over that same period the VHA treated more than 700,000 additional patients — about a 24 percent increase in people receiving care — while closing beds and reducing admissions.
+616	Vermont's Tier 3 conversions rest on the same bet — that a community with a Rural Emergency Hospital and reliable EMS transport to an RSC 45 minutes away is better served than one with a financially distressed inpatient hospital that cannot staff its surgical suite or maintain specialist coverage.
+617	Oliver Wyman's Act 167 process found that Vermont communities were willing to accept difficult changes — service reductions, facility reconfiguration, longer travel distances — when they had been genuinely involved in the decision and understood that the alternative was an unexpected closure.
+618	The first is designation without infrastructure.
+619	A Tier 2 hospital that reduces a regionalized service line before its designated specialty volume has actually arrived spends the transition period insolvent.
+620	The REH designation is a genuine federal mechanism with a fixed monthly payment approaching $3.4 million a year, and it is still the wrong answer for most eligible hospitals — 56 conversions against roughly 1,600 eligible facilities is not a failure of communication, it is the accurate result of facility-by-facility arithmetic on 340B, swing beds and distinct part units.
+621	From the Book — Chapter 11
+622	Chapter 11 is the Operations pillar in full — the RHRC methodology and the regionalization tiers this lesson teaches.
+623	Read it at /read/chapter-11.
+624	How a system of 14 hospitals each attempting full-spectrum care becomes a differentiated regional network with defined roles, adequate volume and sustainable finances.
+
+## workforce-as-the-binding-constraint
+625	The state projects a shortfall of 370 primary care FTEs by 2030 — 112 in family medicine and 190 in other primary care specialties.
+626	All 14 hospitals cited physician shortages as a primary operational challenge in Oliver Wyman's assessment.
+627	And the labour market from which those clinicians must be recruited had an unemployment rate of 2.5 percent in August 2025 against 4.3 percent nationally.
+628	Source: Vermont Rural Health Transformation Program Application, November 2025
+629	Projected Vermont primary care shortfall by 2030 — 112 family medicine, 190 other primary care
+630	Vermont unemployment rate, August 2025, against 4.3% nationally
+631	Source: Vermont RHT Program Application, November 2025
+632	Vermont's FY2026 Rural Health Transformation Program award (an annual amount, not a five-year total) — its workforce initiatives include training programs, tuition and conditional financial assistance with 5-year service commitments, workforce housing, and scope-of-practice changes
+633	Physician training pipelines run 7 to 10 years from medical school enrollment to independent practice.
+634	That single fact determines what is achievable: it is arithmetically impossible to recruit a state out of a 2030 physician shortage by expanding medical school seats today.
+635	A transformation plan that sets a clinical target for FY2028 and begins recruiting the staff to meet it in FY2027 has already failed; it simply does not know it yet.
+636	The slow instruments are medical education and residency expansion — 7 to 10 years, with compound returns that arrive well after the current planning horizon.
+637	They are still worth funding, because the alternative is having the same conversation in 2035, but they cannot be the answer to a 2030 gap.
+638	The medium instruments are loan repayment and service obligations, which work on a 2 to 5 year horizon and are the main vehicle for Vermont's RHT workforce investment: tuition and conditional financial assistance — including no-cost tuition for critical occupations such as registered nursing — carrying 5-year in-state service commitments, plus workforce housing.
+639	Alongside them sit international medical graduate recruitment through the Conrad 30 J-1 visa waiver programme, which lets internationally trained physicians practise in underserved areas in exchange for 3-year service commitments.
+640	Everything that can change clinical capacity inside 12 to 24 months — scope of practice, team composition, administrative burden reduction, redistribution — operates on the demand side of the ledger, by changing how much care the existing workforce can deliver rather than how many clinicians exist.
+641	Adds clinicians to the national and regional pool. → 7-10 years to first independent practice.
+642	Redirects existing early-career clinicians toward underserved sites. → 2-5 years.
+643	Increases what the existing workforce is permitted to deliver. → 12-24 months, gated by credentialing policy updates and privilege delineation at every facility — not by legislation alone.
+644	Increases effective capacity per clinician by moving pre-visit preparation, care-gap follow-up and coordination off the physician. → 12-24 months, and gated by support-staff depth.
+645	Moves existing clinicians to where the redesigned system needs them, typically as facilities change tier. → Immediate in principle, and the most politically sensitive of all.
+646	HRSA reports that 87 percent of National Health Service Corps clinicians who completed service commitments between 2012 and 2021 are still working in a Health Professional Shortage Area or have remained in the community where they served, even where that community no longer qualifies as a HPSA.
+647	Longer-horizon research finds roughly 55 percent of NHSC clinicians still practising in underserved areas ten years after their commitment ended, with physician retention at about 60 percent.
+648	Family physicians who trained in rural residency programmes chose rural practice 56.8 percent of the time, against 17.9 percent for graduates of urban programmes.
+649	More than 60 percent of graduates of rurally located programmes were practising in rural areas in the first four years after residency, peaking near 70 percent at three years and declining to 58 percent by year five.
+650	The implication is that a meaningful portion of it is a productivity and care-model problem rather than a headcount problem, which makes it addressable by scope-of-practice expansion, team-based care and administrative burden reduction on a 12-to-24-month horizon, rather than only by recruitment on a 7-to-10-year one.
+651	Administrative burden is the quietest lever and often the largest.
+652	The American Hospital Association's 2022 Costs of Caring report found that in 2019, hospitals spent a median of 4.7 percent of total nurse labour expense on contract travel nurses.
+653	By January 2022 that median had reached 38.6 percent.
+654	A quarter of hospitals — those most dependent on agency staffing — were spending more than 50 percent of total nurse labour expense on travel nurses.
+655	In January 2022, contract travel nurses accounted for 23.4 percent of total nurse hours but nearly 40 percent of nurse labour expense.
+656	Data from Syntellis Performance Solutions showed a 213 percent increase in the hourly rates staffing companies charged hospitals in January 2022 compared with January 2019.
+657	The metric worth tracking explicitly is travel nursing as a percentage of total labour cost, with a target in the 5 to 10 percent range.
+658	Source: American Hospital Association, 2022 Costs of Caring
+659	Median share of hospital nurse labour expense spent on contract travel nurses, 2019 to January 2022
+660	Share of total nurse hours delivered by contract travel nurses in January 2022, versus their share of nurse labour expense
+661	Source: Syntellis Performance Solutions, cited in AHA 2022 Costs of Caring
+662	Increase in hourly rates charged to hospitals by nurse staffing companies, January 2022 vs.
+663	Auerbach and colleagues documented in Health Affairs that the number of nurse practitioners in the United States more than doubled between 2010 and 2017, from roughly 91,000 to 190,000, driven by rapid expansion of education programmes.
+664	Their later projection work, published in Health Affairs in July 2026, forecasts annual growth through 2030 of 1.1 percent for physicians, 11 percent for nurse practitioners and 5.6 percent for physician associates — with the combined NP and PA workforce approaching the size of the physician workforce, at an estimated 912,265 clinicians against 1,068,016 physicians.
+665	For a rural state this is the most consequential workforce trend available, and it is almost entirely a demand-side opportunity.
+666	What determines whether they add capacity in Vermont is whether scope-of-practice rules let them practise to the top of their training, whether credentialing and privilege delineation at all 14 hospitals has been updated to accommodate them, and whether practices are staffed deeply enough to deploy them in real teams rather than as substitute physicians in a solo model.
+667	That is a systematic policy revision at every hospital in the network, and in Vermont it means 14 separate medical staff bylaw processes unless it is coordinated through shared credentialing infrastructure.
+668	A nurse who leaves the region when a hospital converts is a nurse the state must now recruit back into a 2.5 percent unemployment labour market, at recruitment cost, against national competition.
+669	Cheapest outcome for the system and the only one that preserves local clinical knowledge.
+670	In a 3 percent rental vacancy market, the housing condition frequently fails.
+671	Departure to another state, another employer, or out of clinical practice entirely. → The default outcome when the first two are not named in advance.
+672	Typically 12-24 months between announcement and effective date, driven by regulatory and construction timelines. → This is when the three destinations are determined — not on conversion day.
+673	Vermont's rental vacancy rate is about 3 percent, against the roughly 5 percent that characterizes a functioning market.
+674	Telling an inpatient nurse in a converting facility that a position awaits at a Regional Specialty Center 45 minutes away is only a real offer if the commute is viable year-round or housing near the RSC is obtainable.
+675	In a system where 14 hospitals compete for the same limited rural provider pool, every departure is also a competitor's gain, and the signal it sends to the community about the facility's stability intensifies the fragility that caused it.
+676	A transformation programme that funds recruitment incentives and not retention is refilling a bucket while declining to fix the hole — and in a labour market at 2.5 percent unemployment, the bucket refills slowly.
+677	Chapter 11 develops Vermont's workforce crisis as its most binding operational constraint, with the RHT Program's supply-side response.
+
+## calibrate-for-the-gap-not-the-average
+678	Source: Vermont Department of Health, BRFSS 2024 Population in Focus: Race & Ethnicity (March 2026)
+679	Hispanic adults, the one group statistically below the state rate (BRFSS 2023–2024)
+680	Get it right and equity becomes a design constraint on every decision the other five pillars make — which is the only way gaps actually close.
+681	An estimated 1.2–1.4 million adults fall into the ACA ‘coverage gap’ in the roughly nine states that have not expanded Medicaid — too much income to qualify for Medicaid, too little to qualify for marketplace subsidies (KFF, 2026). → Opportunity: Vermont's Act 68 requires that hospital budget review (RBP) account for each hospital's community context, payer mix, and social risk factors rather than applying one uniform benchmark statewide.
+682	Before 2021, the standard eGFR kidney-function equation applied a race coefficient that produced systematically higher — less severe — estimated kidney function for Black patients, delaying transplant referral and specialist care. → Opportunity: the NKF-ASN Task Force's September 2021 recommendation adopted a race-free CKD-EPI creatinine equation, removing the coefficient from the calculation used nationwide.
+683	Before 2017, Medicare Advantage Star Ratings did not adjust for enrollee socioeconomic status, systematically lowering scores for plans serving more dual-eligible and disabled beneficiaries. → Opportunity: CMS's Categorical Adjustment Index, in place since the 2017 Star Ratings, adds or subtracts a small fraction of a star based on a contract's share of dual-eligible, low-income-subsidy, and disabled enrollees.
+684	The original VBAC (vaginal birth after cesarean) success calculator, published in 2007, used a race and ethnicity correction that systematically predicted lower success for Black and Hispanic patients — making clinicians less likely to offer a trial of labor. → Opportunity: the NICHD/MFMU Network's May 2021 calculator update removed race and ethnicity; predicted VBAC success no longer differs significantly by race.
+685	No policymaker set out to build a gap between two eligibility thresholds; it is the byproduct of a permissible, individually defensible state-level choice, repeated across nine or ten states, that in aggregate leaves over a million working-age adults with no affordable coverage option at all.
+686	Permissibility and justice are different questions, and the five-pillar framework's first pillar answers only the first one.
+687	Vermont expanded Medicaid and reports 97% overall coverage — a policy pillar pass at the state level.
+688	Yet Essex County, in the Northeast Kingdom, still runs an 8% uninsured rate, nearly three times the statewide average.
+689	Clinical laboratories had to re-implement the CKD-EPI 2021 race-free equation and manage a transition in which some patients' reported kidney function changed overnight — a reminder that correcting a biased technology tool is itself an operations and clinical-pillar problem, and that the five pillars interlock even when only one of them originally failed the test.
+690	The 2007 VBAC success calculator, developed by the Maternal-Fetal Medicine Units Network, included a statistical correction for race and ethnicity built directly from its original research cohort.
+691	NICHD and the MFMU Network released a race-free calculator in May 2021, and predicted VBAC success no longer differs significantly by race once the correction is removed.
+692	Before 2017, Medicare Advantage Star Ratings scored every contract against the same bar regardless of who it served.
+693	CMS's Categorical Adjustment Index, introduced with the 2017 Star Ratings, does not change what is measured.
+694	Coverage looked fine at 97% statewide.
+695	The financial logic of consolidating services at hospitals in Burlington, Rutland, or Bennington cannot override the equity obligation to maintain emergency access in the most rural, most isolated communities in the state.
+696	Rural Emergency Hospital designation is a viable path precisely because it maintains 24/7 emergency access while eliminating unsustainable inpatient infrastructure.
+697	The operations-pillar justice test, applied here, is concrete rather than abstract: after a given transformation, can a 70-year-old resident of Canaan having a heart attack at 2 a.m. still receive timely emergency care?
+698	Can a child in Lyndonville see a primary care provider within 14 days?
+699	Source: AHS November 2025 Transformation Report; Vermont Rural Health Transformation Program Application
+700	Uninsured rate, Essex County (Northeast Kingdom) vs. statewide Vermont — nearly 3x
+701	EMS, telehealth, and community paramedicine investment first, or at minimum concurrent — inpatient service reduction second, and only through a path like Rural Emergency Hospital designation that preserves 24/7 emergency access.
+702	Consider a hypothetical statewide diabetes-control initiative — used here only to illustrate the mechanism, not as a reported result — that raises the overall share of patients with controlled HbA1c from 68% to 75% over three years, a genuine seven-point aggregate gain.
+703	Disaggregating the same data by insurance type and geography is the only way to see it.
+704	From the Book — Chapter 10
+705	Chapter 10 is the Equity Imperative in full — closing gaps rather than averaging them, with Vermont's own access gaps by race and ethnicity as the anchor.
+
+## heroi-stratified-hedis-vbc-safeguards
+706	HEDIS — the Healthcare Effectiveness Data and Information Set — is the most widely used quality measurement system in American healthcare, covering measures from cancer screening rates to diabetes control to postpartum follow-up.
+707	The National Committee for Quality Assurance (NCQA), which develops and maintains HEDIS, has been steadily expanding stratification requirements: as of Measurement Year 2024, 22 HEDIS measures are stratified by race and ethnicity, and NCQA's 2026 Health Equity Accreditation standards require organizations to report stratified results across measures spanning cancer screening, immunizations, blood pressure control, diabetes assessment, postpartum care, and substance use disorder treatment initiation.
+708	HEDIS measures NCQA stratifies by race and ethnicity, as of Measurement Year 2024
+709	Source: Vermont Department of Health, January 2025
+710	Hispanic adults (BRFSS 2023–2024) — the gap stratification exists to surface
+711	Colorectal cancer screening rate: 72% of eligible patients screened → Colorectal cancer screening rate: 78% of white patients, 61% of Black patients, 58% of Hispanic patients screened
+712	Medicaid claims tend to have the most complete race and ethnicity fields; commercial insurance claims typically lack them; Medicare added standardized race and ethnicity collection more recently than either.
+713	A single stratified measure — even 22 of them — creates a new problem: an organization can close the gap on one measure while it widens on another, and no individual metric will show overall equity performance improving or declining.
+714	The five components are weighted by health impact and evidence strength: access equity (25%) — the gap in primary care, specialty, and emergency care utilization between advantaged and disadvantaged subpopulations; quality equity (25%) — the gap in HEDIS performance across the same subpopulations for the highest-burden chronic disease measures; outcome equity (25%) — the gap in avoidable hospitalizations, ED visits, and readmissions; SDOH burden (15%) — the prevalence of unmet health-related social needs and the completeness of screening for them; and trust and engagement (10%) — patient experience, measured through CAHPS survey data stratified by race and income.
+715	A score of 80 or above indicates equity achieved across all five dimensions simultaneously.
+716	A score of 60–80 flags material disparity in at least one dimension requiring targeted intervention.
+717	Below 60 indicates disparities pervasive enough to require a comprehensive redesign of the equity program, not an incremental fix.
+718	A weighted composite forces the trade-off into view: an organization cannot raise its HEROI score by improving access equity alone if quality and outcome equity are flat or falling, because those two dimensions are 65% of the score between them.
+719	CMS built exactly this mechanism into the ACO REACH model beginning performance year 2023, through a Health Equity Benchmark Adjustment that combined a beneficiary's Area Deprivation Index score with dual-Medicaid-eligibility status to adjust ACOs' financial benchmarks.
+720	The adjustment grew more aggressive in 2024 — moving from a downward adjustment on the bottom 50% of the deprivation distribution to the bottom 30%, and from -$6 to -$10 per member per month for providers serving the least-deprived populations, effectively increasing the relative benchmark advantage for ACOs serving higher-need beneficiaries.
+721	That trajectory reversed in 2025.
+722	CMS's Innovation Center released a new strategic direction in May 2025 that dropped “health equity” from its stated priorities entirely, and CMS confirmed the Health Equity Benchmark Adjustment is being removed from ACO REACH quality scoring starting performance year 2026 — the model's final year.
+723	The Merit-based Incentive Payment System's Complex Patient Bonus awards clinicians up to 10 additional points when their Medicare patient population's average HCC risk score or dual-eligibility share is at or above the prior year's median — a direct recognition that a clinician serving more medically and socially complex patients should not be scored as if their patients were average.
+724	The Skilled Nursing Facility Value-Based Purchasing program adopted a comparable mechanism for a later start date: beginning fiscal year 2027, high-performing SNFs whose resident population is at least 20% dually eligible receive bonus points under a Health Equity Adjustment, alongside an increase in the program's payback percentage from 60% to 66%.
+725	Vermont's hospital global budget methodology under Act 68, which must resolve hospital-level social risk adjustment before benchmarks are finalized, can draw on either approach — or, as the book's own framing insists it should, both together.
+726	Source: CMS, ACO REACH PY2026 model update
+727	ACO REACH's Health Equity Benchmark Adjustment for the least-deprived population share, 2023 to 2024 — before its removal from quality scoring in PY2026
+728	Dual-eligible resident share required for a Skilled Nursing Facility to qualify for the FY2027 Health Equity Adjustment bonus
+729	Mechanism: up to 10 bonus points based on average HCC risk score and dual-eligible share, methodology updated for PY2022 → Status: active
+730	Mechanism: Area Deprivation Index + dual-Medicaid status adjust ACO financial benchmarks, added PY2023 → Status: being removed from quality scoring starting PY2026; the model itself ends December 31, 2026
+731	Mechanism: bonus points for high-performing SNFs with ≥20% dual-eligible residents → Status: begins FY2027
+732	CMS-HCC risk adjustment model, Version 28 —
+733	Mechanism: risk scores incorporate differential cost patterns for dual-eligible beneficiaries → Status: active, fully phased in for 2026 payment
+734	CMMI's May 2025 strategic direction dropped 'health equity' as an explicit named priority, and the one CMS model built around a named health equity benchmark adjustment is losing that adjustment the year before the model itself ends.
+735	As of early 2026 this was an active, unresolved design question inside AHEAD; with Vermont's July 2026 withdrawal from AHEAD, it carries over to the global budgets GMCB must set under Act 68, and is not a settled feature of either.
+736	Chapter 10 introduces the HEROI Index and the stratified-measurement toolkit this lesson teaches in depth.
+
+## transformation-as-portfolio-management
+737	A portfolio aligns programs, projects, and ongoing operations with a strategic objective -- Vermont's full five-pillar transformation, aimed at Act 167's five statutory goals, is the portfolio.
+738	Source: HTR analysis of Act 68, the AHEAD State Agreement, the RHT Program application, and AHS Transformation Reports, early 2026
+739	Source: PMBOK Guide, 6th ed.
+740	PMI project-management knowledge areas (PMBOK Guide, 6th ed.) this book's framework addresses analytically
+741	Source: HTR portfolio risk register (book Chapter 15, Figure 15.6)
+742	Scored risks in Vermont's portfolio risk register -- two of them at the maximum score of 20
+743	The diagnostic question is not whether this infrastructure is needed -- Oliver Wyman answered that in August 2024 -- but whether it is being built fast enough.
+744	The honest answer from AHS's own November 2025 report is no.
+745	And that program is one of five feeding the portfolio as a whole, which exists to hit Act 167's statutory goals on the schedule Act 68 sets, beginning with the January 15, 2028 Strategic Plan deadline.
+746	Examples: the Technology pillar program (VHCURES + VITL + CIN + AI governance); Blueprint PCMH expansion across 14 Health Service Areas. → Managed by a pillar-level Program Manager.
+747	Example: Vermont's full five-pillar transformation -- all 19 components, aimed at Act 167's five goals. → Managed by a Portfolio Manager at Secretary level or a dedicated Chief Portfolio Officer.
+748	Vermont's 19-Component Portfolio
+749	The 19-component inventory used in this lesson is HTR's own, assembled by reading Act 68, the AHEAD State Agreement, the RHT Program application, and the AHS transformation reports for every initiative that carries a named owner and a dated obligation, then assigning each to the pillar whose function it serves.
+750	Nineteen is what that exercise produces as of early 2026 -- it is not a number Vermont has adopted, and a reader repeating the exercise against later reports should expect it to move.
+751	Operations carries the 14-hospital transformation planning effort and AHS PMO establishment.
+752	Each has a named lead, a type (compliance project, strategic program, organizational project), and a 2026 status mapped to its next stage gate.
+753	Social-risk-adjustment methodology has a FY2028 target and no upstream blocker; it can and should proceed in parallel today.
+754	Treating it as a FY2028 problem because that is when it is due is the scheduling error that leaves equity work perpetually late.
+755	For each component, in order: (1) Which pillar does it belong to?
+756	(2) Is that pillar's upstream gate open -- meaning the enabling work is actually finished, not that a milestone was announced?
+757	(3) If closed, what is the gating component, and is it resourced?
+758	(4) If open, is this component actually running?
+759	Oliver Wyman's Act 167 report recommended a dedicated project-management function in August 2024; the November 2025 report repeated the finding.
+760	Example: the 14-hospital transformation-planning effort. → Combines a fixed master schedule with agile execution inside each hospital's own plan.
+761	Two risks tie for Vermont's highest score of 20: the analytics vendor not being operational by January 2027 (hospitals entering global budgets without financial-management capability), and portfolio-management infrastructure itself not being established before the 2027 deadlines -- a risk that is, notably, the primary motivation for this lesson.
+762	A lower-scored risk deserves specific attention because of what it reveals about the equity sequencing error covered earlier in this course: social-risk adjustment not being adopted before FY2028 budgets scores only 12 -- a medium probability times a high impact -- yet it is exactly the kind of component the sequencing test above says should be running in parallel right now, not scheduled by its own due date.
+763	Source: PMI Pulse of the Profession (2017); Vermont RHT Program Application
+764	Annual cost of a staffed Portfolio Management Office as a share of the RHT capital it coordinates ($195M in FY2026)
+765	Launched by the National Health Service in 2002, the programme was formally dismantled in September 2011.
+766	In 2013 Parliament's Public Accounts Committee put its expected cost at 9.8 billion pounds -- a figure that still excluded large outstanding contract liabilities -- against just 3.7 billion pounds of benefits realized to March 2012.
+767	Vermont's nineteen components are smaller in dollar terms than NPfIT's roughly ten billion pounds, but the structural risk is the same shape: many interdependent components, one strategic objective, and no single accountable authority for the portfolio as a whole.
+768	The Portfolio Manager's job includes verifying that every component can trace its contribution to one or more of Act 167's five statutory goals.
+769	House of Commons Committee of Public Accounts, The dismantled National Programme for IT in the NHS (September 2013) -- the 9.8 billion pound expected cost and 3.7 billion pounds of benefits to March 2012.
+770	Project Management Institute, The Standard for Portfolio Management, 4th ed.
+771	Health Transformation Review, Transforming American Healthcare, Chapter 15 -- the 19-component register, the risk register, and the sequencing test.
+772	From the Book — Chapter 15
+773	Chapter 15 applies PMI portfolio-management standards to five-pillar reform — the source for this lesson's method.
+774	Read it at /read/chapter-15.
+775	Why a five-pillar transformation has to be managed as a single interdependent portfolio rather than five separate projects, using PMI's portfolio-management standard applied to Vermont's 19-component program.
+
+## political-sustainability-across-election-cycles
+776	Act 68 exists because a legislature passed it and remains in force only as long as a legislature, a governor, and a regulator continue to enforce it.
+777	Vermont's specific exposure in 2026: an annual legislature, a governor's race, a federal partner (CMS) whose priorities shift with each administration, and hospital systems whose finances are directly affected by reference-based pricing.
+778	Any of these actors, alone or together, can modify, weaken, or delay Act 68's mandatory architecture.
+779	The AHEAD State Agreement, signed with CMS in January 2025, was meant to bind Vermont into a federal-state model running through 2035.
+780	It proved less durable than its form suggested: after CMS renegotiated the terms and capped the expected EAST Fund near $10 million (from roughly $138 million), Vermont withdrew in July 2026, before its performance period began.
+781	The Rural Health Transformation Program's $195 million FY2026 award -- an annual amount in a program that runs through FY2030, not a five-year total -- is federal capital already flowing into Vermont's system.
+782	Act 167, Act 51, and Act 68 built legitimacy incrementally; each act created institutions -- the Health Care Delivery Advisory Committee, the Steering Committee for Comprehensive Primary Health Care, expanded GMCB authority -- that are now constituencies for the next reform.
+783	Dismantling Act 68 would mean dismantling those institutions too.
+784	Oliver Wyman's projection of 13 of 14 hospitals in operating losses by 2028 does not disappear if Act 68 is weakened.
+785	Act 68 requires RBP no later than hospital FY2027 -- GMCB sets the method by rule in 2027, with prices effective in hospital FY2028 -- but the methodology that sets reference prices is a GMCB regulatory determination -- it can be set so reference prices sit close to current commercial rates, or with exemptions broad enough that little repricing actually happens.
+786	Act 68 requires global budgets from FY2028 for one or more non-critical-access hospitals and for all hospitals by FY2030, to the extent resources are available, but GMCB sets the levels.
+787	Act 68 requires the Strategic Plan on or before January 15, 2028 but does not fully specify its content.
+788	A plan that is descriptive rather than committal satisfies the statute while producing none of the intended outcomes -- the most politically convenient failure mode.
+789	H.R. 1's $911 billion in Medicaid cuts, enacted in July 2025, pressure Vermont's transformation financing directly.
+790	AHEAD State Agreement (January 2025): a model term running through 2035, on terms CMS could renegotiate. → CMS did renegotiate, capping the expected EAST Fund near $10 million, and Vermont withdrew in July 2026 -- durable in form, adjustable in substance.
+791	RBP (no later than hospital FY2027) and global budgets (from FY2028 for one or more non-critical-access hospitals, all hospitals by FY2030, resources permitting) are mandatory by statute. → The regulatory methodology setting the actual price and budget levels is not fixed by statute -- this is where a mandate can be hollowed out.
+792	$195M FY2026 RHT Program award (an annual amount, not a five-year total) committed and flowing. → The January 2028 Strategic Plan's actual content remains discretionary in practice, even where required in form.
+793	Source: Green Mountain Care Board FY23 enforcement record
+794	UVMMC's FY23 budget overage, subject to GMCB enforcement
+795	Rutland Regional Medical Center's FY23 overage, subject to the same enforcement round
+796	Act 68 gives GMCB subpoena authority and data-sharing power with the Department of Financial Regulation.
+797	GMCB's FY23 enforcement actions against UVMMC ($80.3 million overage) and Rutland Regional Medical Center ($11.1 million overage) tested that power against the state's two largest hospitals.
+798	UVMMC -- Vermont's largest, most politically influential hospital system -- appealed GMCB's FY23 enforcement order and its FY25 budget order in October 2024.
+799	Under an April 4, 2025 settlement, UVMMC dismissed its appeals; the enforcement order was stayed and the remaining reductions were spread over FY26 and FY27.
+800	First, GMCB's corrective-action and budget-order mechanisms were challenged by the largest and most capable potential opponent, and the challenge ended with the hospital dismissing its appeals and accepting the reductions on a revised schedule.
+801	For any hospital weighing noncompliance heading into the FY2027-2028 transition, how a court would treat GMCB's authority remains legally untested.
+802	UVMMC's appeals were a real test: the state's largest, most capable hospital system challenged the regulator directly, then dismissed its appeals under an April 2025 settlement that kept the reductions while spreading them over FY26-FY27.
+803	Global-budget levels set within 5% of current commercial rates —
+804	Monitor GMCB's FY2028 budget guidance.
+805	January 2028 plan still 'in progress' in December 2027 reports —
+806	Every organization with global-budget exposure should model at least three scenarios: RBP delayed 18-plus months, global-budget levels set within 5 percent of current commercial rates, and cuts of 30 percent or more to expected federal transformation funding.
+807	AHS's monthly transformation reports, required by Act 68, are the primary vehicle for demonstrating that transformation is working.
+808	Source: HTR Advisory political-risk assessment, April 2026
+809	HTR's assessed probability of a 30%+ EAST Fund cut, driven by H.R. 1's federal Medicaid reductions -- the single highest-probability disruption scenario on Vermont's political risk register -- since overtaken: CMS capped the expected EAST Fund near $10 million and Vermont withdrew from AHEAD in July 2026
+810	Assessed probability that a 2026 governor is elected committed to Act 68 modification
+811	Maryland's Health Services Cost Review Commission (HSCRC) is the most direct national comparison to GMCB, and its history is the clearest evidence that an independent regulator with statutory rate-setting authority is a durable design.
+812	The Maryland legislature created the HSCRC in 1971; in 1977 Maryland became the first of five states granted a federal waiver letting Medicare and Medicaid pay Maryland hospitals at HSCRC-approved rates.
+813	That all-payer rate-setting system has operated continuously across Republican and Democratic governors for close to five decades -- the only state system of its kind to survive that long, according to health-policy researchers who have studied why it persisted where comparable efforts elsewhere were repealed.
+814	Enacted in 2013 as the 'private option' under the Health Care Independence Act, it used Medicaid funds to buy private marketplace coverage rather than expanding Medicaid directly -- a compromise built to survive a Republican-controlled legislature.
+815	In summer 2026, the mechanism that had protected the program from the state legislature failed to protect it from a federal change.
+816	CMS verbally rejected Arkansas's request to renew the program's federal waiver -- now operating as ARHOME, covering roughly 202,000 people -- on the grounds that it no longer met the budget-neutrality requirements imposed by the One Big Beautiful Bill Act.
+817	The waiver expires December 31, 2026; Arkansas is asking CMS for a two-year extension to manage the transition.
+818	A program that survived thirteen consecutive years of the toughest state legislative test failed the first federal rule change that mattered.
+819	Maryland HSCRC: a permanent statute creating an independent commission with rate-setting authority, reinforced by a federal Medicare/Medicaid waiver. → Arkansas ARHOME: a federal Section 1115 demonstration waiver requiring periodic federal renewal, paired with an annual state supermajority budget vote.
+820	Maryland: governors of both parties have left the HSCRC's core authority untouched since 1971. → Arkansas: a change in federal administration priorities (OBBBA budget-neutrality rules) ended a program the state legislature had voted to keep every single year.
+821	GMCB's authority is statutory and has been tested by a real challenge (UVMMC's appeals, dismissed under an April 2025 settlement) -- closer to Maryland's design. → The AHEAD agreement depended on CMS's continuing terms -- closer to Arkansas's exposure, and it played out that way: CMS renegotiated, capped the expected EAST Fund near $10 million, and Vermont withdrew from AHEAD in July 2026.
+822	Vermont's Act 167 to Act 51 to Act 68 sequence is itself a sustainability design, not just a legislative history.
+823	Act 167's 230-plus public meetings and 3,100-plus participants created legitimacy for Act 68's mandates by making the crisis visible and involving the communities affected.
+824	Act 68 adds a second feature: it makes failure visible.
+825	Monthly legislative reports, GMCB's annual hospital-budget and insurance-rate reviews, and the January 15, 2028 Strategic Plan deadline create continuous public accountability -- if the mandate is weakened, the weakening shows up in public reporting, which makes deliberate erosion politically costly rather than quiet.
+826	If your organization's capital plan depends on a policy landing on a specific date -- global budgets in FY2028, a federal model's cohort expansion, a state's continued Medicaid waiver -- the practical question is not whether you support the policy.
+827	From the Book — Chapter 14
+828	Chapter 14 covers political sustainability across election cycles, including the UVMMC challenge to GMCB enforcement.
+829	Read it at /read/chapter-14.
+
+## knowledge-infrastructure-technical-assistance
+830	It has no signature deliverable of its own, which is exactly why it is the most chronically under-resourced piece of any transformation.
+831	The Rural Health Redesign Center (RHRC) was AHS's primary contractor for hospital transformation planning from spring 2025 through October 2025, working with all fourteen Vermont hospitals.
+832	RHRC's Four Workstreams at Each of Vermont's 14 Hospitals
+833	Support each hospital in mapping specific actions to timelines, costs, and Act 167's outcome objectives. → The deliverable a report-only engagement stops at.
+834	Source: AHS Health Care System Transformation Report, November 2025
+835	Per-discharge operating-profit gap at Vermont critical access hospitals versus the 75th-percentile national benchmark ($938 actual vs. $2,784 benchmark) -- the signal RHRC's baseline work was built to surface
+836	Source: AHS Transformation Reports, 2025
+837	Vermont hospitals RHRC engaged for transformation planning between spring and October 2025
+838	RHRC's contract concluded in October 2025 -- a planned conclusion, not a termination.
+839	Whether it actually does depends on what replaces RHRC; the book's Chapter 15 portfolio risk register flags 'RHRC engagement not replaced by an adequate successor' as a distinct, tracked risk for exactly this reason.
+840	The most common advisory failure in healthcare transformation is engaging external consultants for analysis and stopping before implementation -- a report that produces recommendations without the organizational capacity to act on them, followed by a brief period of executive attention and then quiet shelving once operational demands consume the organization's bandwidth.
+841	The adaptation that matters most: in healthcare, the guiding coalition (step 2) must include clinical leadership, not only administrative and financial leadership -- transformation that clinical leaders oppose fails regardless of the administrative mandate behind it.
+842	The other adaptation that matters: communicating the vision (step 4) in healthcare means calibrating the same message differently for clinical staff, administrators, community members, legislators, and payers -- a single communication strategy built for a corporate workforce does not transfer directly to a system with this many distinct audiences and this much regulatory scrutiny.
+843	Create urgency (Step 1) —
+844	Original formulation: build a shared sense that change is needed. → Vermont: Oliver Wyman's September 2024 public presentation of the financial data -- 9 of 14 hospitals in losses, a $0.7B-$2.4B five-year deficit -- created shared urgency because it was specific and credible, not because it was alarming.
+845	Remove obstacles (Step 5) —
+846	Original formulation: clear barriers within the coalition's control. → Vermont: Acts 167 and 68 are institutional obstacle removal -- Act 68 turned RBP from a study into a statutory requirement; the AHS restructuring proposed in the book's Chapter 16 would remove the program-silo obstacle directly.
+847	Create short-term wins (Step 6) —
+848	Original formulation: engineer visible early improvement. → Vermont: FY2026 regulatory actions ($230.65M in commercial revenue reductions) are the first visible win; premium-reduction data from RBP will not be available until after maximum rates take effect in FY2028.
+849	Sustain acceleration (Step 7) —
+850	Original formulation: use early wins to drive deeper change. → Vermont: the statutory mandate itself -- Act 68's January 15, 2028 Strategic Plan deadline -- is the mechanism, because momentum has to survive multiple election cycles and budget battles, not just one leadership tenure.
+851	One of the most consequential technical-assistance questions is pace: how fast can an organization or system realistically change, and what happens when the required pace exceeds available capacity?
+852	Vermont's statutory deadlines -- an RBP rule in 2027 with maximum rates from FY2028, and the first global budgets from FY2028 -- set the required pace; whether organizational capacity can match it is the open execution question.
+853	Hard capacity constraints: if AHS lacks staff to manage 14 hospital transformation plans at once, the plans get managed sequentially, and some hospitals end up with rushed or superficial plans through no fault of their own.
+854	External constraints: federal program timelines set by someone else (AHEAD's January 2028 launch was a federal decision, not Vermont's -- and Vermont withdrew from AHEAD in July 2026, before its performance period began), hospital financial positions that can force emergency decisions preempting a planned timeline, and the political relationships a state's hospital community boards hold with legislators.
+855	The Institute for Healthcare Improvement's Breakthrough Series Collaborative model, developed in 1995, is the clearest national example.
+856	It brings a cohort of 12 to 160 organizational teams together for a defined six-to-fifteen-month period around one focused improvement topic, combining face-to-face learning sessions, Plan-Do-Study-Act improvement cycles, and ongoing technical assistance to each team between sessions.
+857	Documented Breakthrough Series results include 50 percent reductions in patient wait times and in hospitalizations for congestive heart failure, and 25 percent reductions in both ICU costs and staff absenteeism, across the collaboratives IHI has run since the model's introduction.
+858	Running from 2015 to 2019, CMS awarded $685 million to 29 Practice Transformation Networks and 10 Support and Alignment Networks to provide coaching and technical assistance to more than 140,000 clinicians nationally, preparing ambulatory practices to succeed under value-based payment.
+859	A peer-reviewed comparison of nearly 7,000 TCPI-enrolled practices against a matched comparison group found that TCPI practices enrolled in Medicare Alternative Payment Models -- including Advanced APMs -- at higher rates than the comparison group, with the effect holding across rural, small, and specialty practices.
+860	From the Book — Chapter 12
+861	Chapter 12 argues that knowledge without implementation infrastructure produces nothing; Chapter 11 documents the RHRC technical-assistance model this lesson uses as its case.
+862	Read it at /read/chapter-12.
+
+## capstone-apply-the-framework
+863	A reform can be permissible, possible, sustainable, effective, and executable and still fail the only test that finally matters.
+864	Both return in Step 3 below.
+865	That is deliberate, and it is the single most common mistake a learner makes running this method for the first time: reaching the end of the five questions and then asking a sixth, separate 'and is it equitable?' question about the initiative as a whole.
+866	The correct move is Step 2 below -- asking the justice question inside each of the five answers you already gave, not after them.
+867	Step 1 -- Run Your System Through the Five Questions
+868	Step 1 Worksheet -- What Counts as Evidence
+869	The most common way this step goes wrong is scoring a pillar 'yes' because the organization has stated an intention -- a strategic plan, a values statement, a pilot program -- rather than because the evidence in the right-hand column above actually exists.
+870	Step 2 -- Apply the Equity Imperative to Each Answer
+871	Now go back through your five paragraphs from Step 1 and ask the justice question inside each one, using the pillar-specific version of 'is it just?' this course has developed: does the Policy mandate close disparities or widen them?
+872	This step is where a 'yes' answer from Step 1 most often needs to be downgraded.
+873	Step 3 -- Find Your Binding Constraint
+874	Finding it requires the same gate logic this course applied to Vermont's 19-component portfolio, scaled down to your own system.
+875	(1) Which pillar does this initiative most directly depend on?
+876	(2) Is that pillar's gate open -- real, finished enabling work, not an announcement?
+877	(3) If closed, that pillar is your binding constraint; resources spent on the initiative itself, ahead of the gate, are the highest-risk spending in your plan.
+878	(4) If open, is the initiative running?
+879	Step 4 -- Name Your Sequencing Errors
+880	Early-warning signal: equity staff are consulted only after a policy or methodology is finalized, and flag the same structural problems every time. → Correction: bring the equity question into the design process at the start, not the approval stage -- Step 2 above is how you build that habit into your own process.
+881	Run the Equity Imperative through the same answers and the picture does not improve: a voluntary Policy design that let the highest-revenue system opt out also meant the populations most dependent on smaller, financially fragile hospitals carried the risk of a model the largest system never had to fully join.
+882	The binding constraint, by the Step 3 test, was Policy -- the closed gate at the very first stage -- and no amount of investment in Economics or Clinical work downstream could have opened it.
+883	Vermont signed the AHEAD State Agreement in January 2025 and withdrew from the model in 2026 -- clear evidence that a state can get the Policy pillar formally right, a signed federal agreement, and still fail to sustain it if the Technology and Operations gates behind it are not open fast enough to meet the model's own accountability timeline.
+884	Maryland, AHEAD's longest-running and most-watched participant, took the opposite path: it signed an agreement to continue its participation in November 2025, a signal that its Technology and Operations pillars -- built over nearly five decades of the same all-payer rate-setting infrastructure covered earlier in this track -- were sufficiently open to sustain the accountability AHEAD requires.
+885	Decision Rule 1 -- Never Fund a Downstream Pillar to Compensate for a Closed Upstream Gate
+886	If Step 3 finds your binding constraint in Technology, the fix is not a larger Economics or Clinical budget.
+887	Decision Rule 2 -- A Component With No Unmet Upstream Dependency Should Be Running Now
+888	The inverse rule matters as much as the first.
+889	Decision Rule 3 -- Equity Reviewed at Approval Is Equity Reviewed Too Late
+890	If your Step 2 answers were generated by a separate equity office after the Step 1 design was already finished, you have already made the fourth sequencing error, regardless of how good the eventual equity findings are.
+891	Decision Rule 4 -- If Your Urgent Initiatives Don't Match Your Highest-Friction Pillar, You're Scheduling by Calendar
+892	If none of them sits in the pillar you identified as your binding constraint in Step 3, your organization is being run by whatever has the nearest due date, not by what the system actually needs next.
+893	Step 5 -- Test the Diagnosis on the Platform, Not Just on Paper
+894	The [Transformation Friction Index](https://healthtransformationreview.org/transformation-friction-index) takes the same five-pillar scoring and answers a narrower, sharper question: which single pillar is generating the most resistance to progress right now, for your specific system.
+895	That is the platform's version of the binding-constraint test in Step 3 -- a way to check your own judgment against a structured score rather than relying on intuition about which pillar feels hardest.
+896	Neither tool replaces the work of Steps 1 through 4.
+897	Both exist to keep you honest about it -- a friction score that disagrees with your own Step 3 answer is worth investigating before you act on either one.
+898	(1) Write one evidence-based paragraph per pillar for your own system, using the Step 1 worksheet.
+899	(2) Run the equity question inside each paragraph, using the Step 2 table.
+900	(3) Apply the binding-constraint test from Step 3 and name the single pillar limiting everything else.
+901	(4) Check your own system against all five sequencing errors in Step 4's table, not just the one you suspect.
+902	(5) List your three most urgent initiatives and check whether any sits in your binding-constraint pillar.
+903	(6) Open the HTR Simulator and the Transformation Friction Index and see whether the numbers agree with your own diagnosis.
+904	If they do not, that disagreement is the most useful finding this exercise can produce.
+905	From the Book — Chapters 13 and 16
+906	Chapters 13 and 16 are this capstone's source — applying the framework to your own system and to AHS's own restructuring.
+907	Read it at /read/chapter-13.

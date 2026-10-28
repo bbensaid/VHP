@@ -1,0 +1,377 @@
+
+## behavioral-health-burden
+0	They are among the most common health problems Americans face, touching tens of millions of households every single year.
+1	In 2023, an estimated 58.7 million adults aged 18 or older — 22.8%, or roughly one in five — experienced any mental illness in the past year.
+2	Of those, 14.6 million adults (5.7%) had a serious mental illness, meaning a condition that substantially interfered with major life activities.
+3	Among people aged 12 or older, 48.5 million had a substance use disorder in 2023.
+4	In 2023, about 1 in 5 U.S. adults had any mental illness, and 48.5 million people aged 12+ had a substance use disorder.
+5	22.8% of U.S. adults in 2023 (SAMHSA NSDUH 2023)
+6	5.7% of U.S. adults in 2023 (SAMHSA NSDUH 2023)
+7	Aged 12+ in 2023 (SAMHSA NSDUH 2023)
+8	Any mental illness, past-year (SAMHSA NSDUH 2023)
+9	Of the 58.7 million adults with any mental illness in 2023, 27.1 million did not receive any mental health treatment in the past year — roughly 46% went untreated.
+10	The gap is even more dramatic for substance use: of the 48.5 million people aged 12 or older with a substance use disorder, only 15.6% (about 7.1 million) received any substance use treatment, leaving 85.4% — more than 41 million people — without care.
+11	58.7M adults had any mental illness
+12	27.1M received NO treatment in the past year
+13	Roughly 46% of adults with mental illness went untreated
+14	Substance Use Disorder (age 12+)
+15	48.5M had a substance use disorder
+16	54.2M needed substance use treatment; only 23.6% (12.8M) received it
+17	About 3 in 4 (~41M people) who needed treatment received none
+18	The Behavioral Health Treatment Gap (2023)
+19	In 2023, more than 49,000 people in the United States died by suicide.
+20	Suicide was the 11th leading cause of death overall that year, but it ranked as the second leading cause of death for Americans aged 10–14, 15–24, and 25–44 — meaning that for young and working-age people, few things kill more.
+21	People living with serious mental illness die substantially earlier than the general population — estimates commonly range from roughly 10 to more than 20 years of life lost.
+22	Suicide ranking in 2023 (CDC)
+23	Leading cause of death, ages 10–34
+24	In 2023, an estimated 20.4 million adults had a mental illness co-occurring with a substance use disorder in the past year, and 6.8 million had a serious mental illness alongside a substance use disorder.
+25	The scale of co-occurrence — more than 20 million adults — is one of the strongest arguments for the integration models this course explores.
+26	Its data show that in 2023, 20.4 million adults had any mental illness plus a substance use disorder, underscoring why the agency frames integration — not separation — as the standard of care.
+27	A 2024 study by economists at Yale, Columbia, and the University of Wisconsin–Madison (published as a National Bureau of Economic Research working paper) estimated that mental illness costs the U.S. economy roughly $282 billion every year — a drag comparable in size to an average economic recession.
+28	The estimate — equal to about 1.7% of aggregate U.S. consumption and roughly 30% higher than earlier estimates — counts how mental illness changes economic behavior: reduced consumption, lower investment in housing and stocks, people choosing less-demanding jobs, and treatment that is never sought.
+29	2024 Yale/NBER study, U.S. economy
+30	Share of U.S. aggregate consumption lost to mental illness each year (2024 Yale/Columbia/Wisconsin NBER study)
+31	How much larger the 2024 estimate is than previous estimates, because it counts behavioral and economic effects beyond treatment
+32	The cost of mental illness to the U.S. economy is roughly $282 billion a year — about the size of an average recession — and most of it is lost productivity, not treatment spending.
+33	Behavioral health spans both mental health conditions and substance use disorders; in 2023 about 1 in 5 U.S. adults (58.7 million) had any mental illness and 48.5 million people aged 12+ had a substance use disorder.
+34	14.6 million adults had a serious mental illness in 2023 — a condition that substantially interfered with major life activities.
+35	The defining feature of the system is the treatment gap: about 46% of adults with mental illness went untreated, and 85% of people with a substance use disorder received no treatment.
+36	More than 49,000 people died by suicide in 2023; suicide was the second leading cause of death for Americans aged 10–44.
+37	People with serious mental illness die roughly 10 to 20+ years earlier than average, mostly from preventable physical illnesses — making integration of behavioral and physical care a life-and-death issue.
+38	Co-occurring disorders are common (20.4 million adults in 2023) and are best addressed with integrated, simultaneous treatment rather than sequential silos.
+39	Mental illness costs the U.S. economy an estimated $282 billion a year, the majority of it from lost productivity rather than treatment spending.
+40	In 2023, 27.1 million of the 58.7 million adults with any mental illness (about 46%) received no treatment, and only 23.6% of the 54.2 million people who needed substance use treatment received it — leaving roughly three in four untreated.
+41	Roughly 46% of adults with any mental illness went untreated, and about three in four people who needed substance use treatment received none.
+42	According to 2023 NSDUH data, which statement best captures the "treatment gap" in U.S. behavioral health?
+43	[1] SAMHSA — Key Substance Use and Mental Health Indicators in the United States: Results from the 2023 NSDUH — https://www.samhsa.gov/data/report/2023-nsduh-annual-national-report — prevalence of any mental illness (58.7M / 22.8%), serious mental illness (14.6M / 5.7%), substance use disorder (48.5M), treatment rates and the treatment gap.
+44	[2] National Association of Counties — SAMHSA releases new data on rates of mental illness and substance use disorder in the U.S. — https://www.naco.org/news/samhsa-releases-new-data-rates-mental-illness-and-substance-use-disorder-us — summary of 2023 NSDUH including co-occurring disorders (20.4M adults AMI+SUD; 6.8M SMI+SUD) and treatment receipt.
+45	[3] CDC — Suicide Data and Statistics — https://www.cdc.gov/suicide/facts/data.html — more than 49,000 suicide deaths in 2023; suicide as 11th leading cause overall and 2nd leading cause for ages 10–34.
+46	[4] Yale News — Novel study quantifies immense economic costs of mental illness in the U.S.
+47	(2024) — https://news.yale.edu/2024/04/22/novel-study-quantifies-immense-economic-costs-mental-illness-us — ~$282B annual economic cost, about 1.7% of aggregate consumption and ~30% above previous estimates.
+48	[5] Annals of General Psychiatry — Mortality gap and physical comorbidity of people with severe mental disorders — https://annals-general-psychiatry.biomedcentral.com/articles/10.1186/s12991-021-00374-y — reduced life expectancy (commonly ~10–20+ years) for people with serious mental illness, driven largely by preventable physical illness.
+49	[6] SAMHSA — Co-Occurring Disorders and Other Health Conditions — https://www.samhsa.gov/substance-use/treatment/co-occurring-disorders — federal recommendation for integrated treatment of co-occurring mental and substance use disorders.
+
+## mental-health-conditions-overview
+50	Mental health conditions are diagnosed using standardized criteria, most commonly the American Psychiatric Association’s Diagnostic and Statistical Manual of Mental Disorders, currently in its fifth, text-revised edition (DSM-5-TR).
+51	This lesson surveys the most common and most consequential conditions a non-clinician working in health care should recognize: depression, anxiety disorders, post-traumatic stress disorder, bipolar disorder, and schizophrenia.
+52	A mental health condition is diagnosed when specific symptoms cause clinically significant distress or impairment over a defined period — using standardized criteria from the DSM-5-TR.
+53	Major depressive disorder is the most common: in a recent year, an estimated 21.0 million U.S. adults (8.3%) had at least one major depressive episode, with prevalence higher among women (10.3%) than men (6.2%).
+54	The World Health Organization identified depression as the single leading cause of disability worldwide, with more than 300 million people living with it.
+55	An estimated 2.8% of U.S. adults had bipolar disorder in the past year.
+56	~8.3% of U.S. adults (past year)
+57	~2.8% of U.S. adults (past year)
+58	8.3% of U.S. adults (NIMH)
+59	Anxiety disorders are the most prevalent class of mental health conditions overall.
+60	An estimated 2.7% of U.S. adults had GAD in the past year, with women affected more often (3.4%) than men (1.9%).
+61	NIMH data (from the National Comorbidity Survey Replication) put past-year GAD prevalence at 2.7% of U.S. adults, with a notable gender gap: 3.4% of women versus 1.9% of men.
+62	An estimated 3.6% of U.S. adults had PTSD in the past year, and like several other conditions it is more common in women (5.2%) than men (1.8%).
+63	Schizophrenia is among the most serious and disabling mental health conditions, even though it is far less common than mood or anxiety disorders.
+64	NIMH estimates the prevalence of schizophrenia and related psychotic disorders in U.S. adults at less than 1% — commonly cited in the range of about 0.25% to 0.64%.
+65	Schizophrenia affects well under 1% of adults, yet drives a large share of disability and early death.
+66	Mental health conditions are diagnosed with standardized DSM-5-TR criteria requiring clinically significant distress or impairment, and severity ranges from mild to disabling within the same diagnosis.
+67	Major depressive disorder is the most common consequential condition — about 21 million U.S. adults (8.3%) annually — and is the leading cause of disability worldwide per the WHO.
+68	Bipolar disorder (~2.8% of adults) is distinct from unipolar depression because it includes manic episodes and requires different treatment; antidepressants alone can trigger mania.
+69	Anxiety disorders are the most prevalent class overall; generalized anxiety disorder affects about 2.7% of adults in a given year and commonly co-occurs with depression.
+70	PTSD (about 3.6% of adults in the past year, more common in women) develops after trauma and underlies the push toward trauma-informed care.
+71	Schizophrenia affects under 1% of adults but causes outsized disability and early death, making integrated medical–behavioral care especially important.
+72	[1] NIMH — Major Depression — https://www.nimh.nih.gov/health/statistics/major-depression — ~21.0M U.S. adults (8.3%) with a major depressive episode; higher in women (10.3%) than men (6.2%).
+73	[2] WHO — "Depression: let’s talk" / Depression leading cause of disability worldwide (2017) — https://www.who.int/news/item/30-03-2017--depression-let-s-talk-says-who-as-depression-tops-list-of-causes-of-ill-health — depression as the single leading cause of disability worldwide, 300M+ affected.
+74	[3] NIMH — Bipolar Disorder — https://www.nimh.nih.gov/health/statistics/bipolar-disorder — ~2.8% past-year prevalence of bipolar disorder among U.S. adults.
+75	[4] NIMH — Generalized Anxiety Disorder — https://www.nimh.nih.gov/health/statistics/generalized-anxiety-disorder — 2.7% past-year GAD prevalence (3.4% women / 1.9% men).
+76	[5] NIMH — Post-Traumatic Stress Disorder (PTSD) — https://www.nimh.nih.gov/health/statistics/post-traumatic-stress-disorder-ptsd — 3.6% past-year PTSD prevalence (5.2% women / 1.8% men).
+77	[6] NIMH — Schizophrenia — https://www.nimh.nih.gov/health/statistics/schizophrenia — prevalence of schizophrenia/psychotic disorders under 1% of U.S. adults (~0.25%–0.64%).
+
+## substance-use-disorders-overview
+78	The leading federal science agency, the National Institute on Drug Abuse (NIDA), defines addiction as a chronic, relapsing brain disease characterized by compulsive drug seeking and use despite harmful consequences.
+79	The DSM-5-TR diagnoses substance use disorders using 11 criteria, spanning impaired control (using more than intended, unsuccessful attempts to cut down, craving), social impairment, risky use, and pharmacological signs (tolerance and withdrawal).
+80	Severity is graded by how many criteria a person meets: 2–3 indicates a mild disorder, 4–5 moderate, and 6 or more severe.
+81	A substance use disorder is a diagnosable medical condition graded mild (2–3 criteria), moderate (4–5), or severe (6+) on 11 DSM-5-TR criteria.
+82	People with any SUD (age 12+)
+83	DSM-5-TR diagnostic criteria
+84	Commonly called "addiction" (DSM-5-TR)
+85	Alcohol: The Most Common Substance Use Disorder
+86	Alcohol use disorder (AUD) is by far the most prevalent substance use disorder in the United States.
+87	In 2023, an estimated 28.9 million people aged 12 or older — about 10.2% of that population — had an alcohol use disorder.
+88	Alcohol use disorder is the single most common substance use disorder — about 28.9 million people aged 12+ in 2023 — yet because alcohol is legal and normalized, it is widely underdiagnosed.
+89	About 5 million adults had an opioid use disorder in the past year in 2023.
+90	The crisis has unfolded in waves: first prescription opioids, then heroin, and since around 2013 a third wave driven by illicitly manufactured fentanyl — a synthetic opioid roughly 50–100 times more potent than morphine.
+91	In 2023, synthetic opioids (primarily fentanyl) were involved in the large majority of opioid overdose deaths, with nearly 73,000 deaths involving synthetic opioids other than methadone.
+92	There were 105,007 drug overdose deaths in the United States in 2023 — the first annual decline since 2018 — and deaths fell sharply again in 2024, to 79,384, a 26% drop in the age-adjusted death rate.
+93	First annual decline since 2018 (CDC)
+94	Drug overdose deaths in 2023
+95	Primarily fentanyl, 2023 (CDC)
+96	Age-adjusted rate down 26% from 2023 (CDC NCHS)
+97	Past year, age 12+, 2023 (SAMHSA NSDUH)
+98	The key clinical point is that the same DSM-5-TR framework — impaired control, social impairment, risky use, tolerance and withdrawal — applies across substances.
+99	Of the 48.5 million people aged 12 or older with a substance use disorder in 2023, only about 15.6% received any treatment, leaving more than 41 million people untreated.
+100	Substance use disorders are chronic, treatable medical conditions — yet in 2023 fewer than one in six people with an SUD received any treatment.
+101	A substance use disorder is a diagnosable medical condition graded mild, moderate, or severe on 11 DSM-5-TR criteria; NIDA frames addiction as a chronic, relapsing brain disease.
+102	Alcohol use disorder is the most common SUD — about 28.9 million people aged 12+ in 2023 — but is widely underdiagnosed because alcohol is legal and normalized.
+103	Opioids drive the deadliest drug crisis in U.S. history; about 5 million adults had an opioid use disorder in 2023.
+104	Illicitly manufactured fentanyl, 50–100 times more potent than morphine, accounted for the large majority of opioid overdose deaths (nearly 73,000 in 2023).
+105	Overdose deaths reached ~107,543 in 2023 — the first decline since 2018 — and fell further to roughly 80,000 in 2024, though the crisis remains severe and uneven.
+106	SUDs are treatable — medications for opioid use disorder reduce death — but only about 15.6% of people with an SUD received any treatment in 2023.
+107	The DSM-5-TR uses 11 criteria and grades severity by how many a person meets — 2–3 is mild, 4–5 is moderate, and 6 or more is severe (often called addiction).
+108	By the number of diagnostic criteria met: 2–3 mild, 4–5 moderate, 6+ severe.
+109	How does the DSM-5-TR grade the severity of a substance use disorder?
+110	[1] NIDA — Understanding Drug Use and Addiction DrugFacts — https://nida.nih.gov/publications/drugfacts/understanding-drug-use-addiction — addiction defined as a chronic, relapsing brain disease.
+111	[2] NCBI Bookshelf — DSM-5-TR Criteria for Diagnosing and Classifying Substance Use Disorders — https://www.ncbi.nlm.nih.gov/books/NBK565474/table/table-3/ — 11 criteria; severity thresholds (mild 2–3, moderate 4–5, severe 6+).
+112	[3] SAMHSA — 2023 NSDUH Annual National Report — https://www.samhsa.gov/data/report/2023-nsduh-annual-national-report — 48.5M with any SUD (age 12+), ~28.9M with alcohol use disorder, 5.7M (age 12+) with opioid use disorder; 23.6% of the 54.2M who needed substance use treatment received it.
+113	[4] CDC NCHS — Drug Overdose Deaths in the United States, 2023–2024 — https://www.cdc.gov/nchs/products/databriefs/db549.htm — 105,007 overdose deaths in 2023 (first decline since 2018); 79,384 in 2024; synthetic opioid deaths fell from 72,776 to 47,735.
+114	[5] CDC — Understanding the Opioid Overdose Epidemic — https://www.cdc.gov/overdose-prevention/about/understanding-the-opioid-overdose-epidemic.html — waves of the crisis; illicitly manufactured fentanyl 50–100x more potent than morphine; synthetic opioids in the majority of opioid deaths.
+115	[6] NIAAA — NIDA and NIAAA commentary supports brain disease model of addiction — https://www.niaaa.nih.gov/news-events/announcement/nida-and-niaaa-commentary-strongly-supports-brain-disease-model-addiction — scientific support for treating addiction as a chronic brain disease.
+
+## continuum-of-integration
+116	This separation, often called fragmentation or "carve-out," produced exactly the problems the first track of this course described: people with serious mental illness dying of untreated physical disease, and people with co-occurring disorders bounced between systems that each addressed only half the problem.
+117	In April 2013, the SAMHSA-HRSA Center for Integrated Health Solutions published "A Standard Framework for Levels of Integrated Healthcare." It built on earlier work by Doherty, McDaniel, and Baird (1996) and gave the field a shared national vocabulary for describing exactly how integrated a practice is.
+118	When this course or a clinic says a practice is "Level 4" or "co-located," everyone is referring to the same defined point on the continuum.
+119	Behavioral and physical health providers work in separate facilities and separate systems, communicating sporadically (Level 1, minimal collaboration) or routinely but at a distance (Level 2, basic collaboration at a distance).
+120	At Level 3 they have basic collaboration onsite; at Level 4 they have closer collaboration with some shared systems.
+121	Level 5 approaches an integrated practice; Level 6 is full collaboration in a transformed, merged practice with shared records, workflows, and treatment plans.
+122	Full integration (Level 6) requires significant investment, cultural change, and financing that supports team-based care.
+123	The framework is a map, not a mandate to reach Level 6.
+124	SAMHSA-HRSA Six Levels of Integrated Healthcare (2013)
+125	Reaching Level 6 requires substantial financing, workforce, and cultural change.
+126	The SAMHSA-HRSA "Standard Framework for Levels of Integrated Healthcare" (2013) defines six levels in three categories: Coordinated, Co-located, and Integrated.
+127	Sharing a facility places the clinic in the co-located category (Levels 3–4).
+128	Integration (Levels 5–6) requires practice change — shared records, workflows, and a unified team — so co-location without coordination is not integration.
+129	Fully integrated (Level 6), because they share a building.
+130	[1] SAMHSA-HRSA Center for Integrated Health Solutions — A Standard Framework for Levels of Integrated Healthcare (2013) — https://www.thenationalcouncil.org/wp-content/uploads/2020/01/CIHS_Framework_Final_charts.pdf — the six levels and three categories; built on Doherty, McDaniel & Baird (1996).
+131	[2] SAMHSA-HRSA — Resource: Standard Framework for Levels of Integrated Healthcare — https://www.integration.samhsa.gov/resource/standard-framework-for-levels-of-integrated-healthcare — purpose and applications of the framework (planning, common language, benchmarking).
+132	[3] Advancing Integrated Healthcare: A Step by Step Guide (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC6797040/ — origins in Doherty, McDaniel & Baird (1996) and the six-level structure from minimal to full collaboration.
+133	[4] ASPE / HHS — Evaluation of the SAMHSA Primary and Behavioral Health Care Integration (PBHCI) Grant Program — https://aspe.hhs.gov/reports/evaluation-samhsa-primary-behavioral-health-care-integration-pbhci-grant-program-final-report-1 — federal demonstration program supporting integration.
+134	[5] SAMHSA-HRSA — What is Integrated Care — https://www.integration.samhsa.gov/about-us/what-is-integrated-care — definition of integrated care as systematic coordination of physical and behavioral health.
+
+## collaborative-care-model
+135	The Collaborative Care Model (CoCM) is the most rigorously studied approach to integrating behavioral health into primary care.
+136	Jürgen Unützer at the University of Washington in the 1990s and is now maintained and disseminated by the university’s AIMS Center (Advancing Integrated Mental Health Solutions), founded in 2004.
+137	The principles are: (1) patient-centered team care, in which the PCP and behavioral health team collaborate; (2) population-based care, using a registry so no patient "falls through the cracks"; (3) measurement-based treatment to target, using validated tools like the PHQ-9 for depression and GAD-7 for anxiety; (4) evidence-based care, applying treatments proven to work; and (5) accountable care, with reimbursement and quality tied to outcomes rather than volume.
+138	The team scores symptoms with a validated instrument at every contact and actively changes the treatment — adjusting medication or therapy — until the patient reaches a defined goal, such as a substantial drop in PHQ-9 score.
+139	Measurement-based treatment to target is the heart of CoCM: validated tools like the PHQ-9 and GAD-7 are used to track symptoms and adjust treatment until the patient actually reaches their goal.
+140	It began with the landmark IMPACT trial (Improving Mood — Promoting Access to Collaborative Treatment), published in 2002.
+141	IMPACT followed 1,801 older adults with depression across 18 primary care clinics affiliated with eight health care organizations in five states (Washington, California, Texas, Indiana, and North Carolina).
+142	Since IMPACT, the model has been tested in more than 90 randomized controlled trials in the United States and abroad, consistently showing better clinical outcomes, greater patient and provider satisfaction, improved functioning, and lower total health care costs.
+143	Jürgen Unützer at the University of Washington, IMPACT enrolled 1,801 depressed older adults across 18 diverse primary care clinics in five states and randomized them to collaborative care or usual care.
+144	Older adults with depression (2002)
+145	CPT codes 99492 and 99493 reimburse the first and subsequent months of CoCM (based on care-manager time and required activities like registry tracking and caseload review), with 99494 and HCPCS code G2214 for additional increments.
+146	But with both a deep evidence base and a payment pathway, CoCM has become the leading template for integrating behavioral health into primary care at scale.
+147	The Collaborative Care Model treats common behavioral health conditions inside primary care using a defined team and a systematic, registry-driven process — it is the most rigorously studied integration model.
+148	CoCM is defined by five principles, with measurement-based treatment to target (using tools like the PHQ-9 and GAD-7) as its central engine.
+149	The evidence is exceptional: the 2002 IMPACT trial (1,801 patients) more than doubled depression treatment effectiveness, and over 90 randomized trials have followed.
+150	Medicare created specific monthly billing codes (99492, 99493, 99494, G2214) that pay for CoCM as it actually works, removing a major barrier to adoption.
+151	[1] UW AIMS Center — Principles of Collaborative Care — https://aims.uw.edu/principles-of-collaborative-care/ — the five core principles including measurement-based treatment to target with PHQ-9/GAD-7.
+152	[2] UW AIMS Center — The Origins of Collaborative Care: From Research to Revolution — https://aims.uw.edu/the-origins-of-collaborative-care-from-research-to-revolution/ — development by Katon and Unützer; the IMPACT trial; AIMS Center founded 2004.
+153	[3] UW AIMS Center — IMPACT: Improving Mood — Promoting Access to Collaborative Treatment — https://aims.uw.edu/project/impact-improving-mood-promoting-access-to-collaborative-treatment/ — 1,801 older adults, 18 clinics, five states; CoCM more than doubled depression treatment effectiveness.
+154	[4] UW AIMS Center — Evidence Base for Collaborative Care (CoCM) — https://aims.uw.edu/evidence-base-for-cocm/ — more than 90 randomized controlled trials since IMPACT (published 2002).
+155	[5] American Psychiatric Association — Getting Paid in the Collaborative Care Model — https://www.psychiatry.org/psychiatrists/practice/professional-interests/collaborative-care/get-paid — Medicare CoCM billing codes 99492, 99493, 99494, and G2214.
+156	[6] PMC — Effect of Collaborative Care for Depression on Risk of Cardiovascular Events: IMPACT RCT — https://pmc.ncbi.nlm.nih.gov/articles/PMC3899245/ — long-term IMPACT follow-up showing reduced cardiovascular risk.
+
+## primary-care-behavioral-health-pcbh
+157	PCBH was given a concise operational definition by Reiter, Dobmeyer, and Hunter in a widely cited 2018 paper in the Journal of Clinical Psychology in Medical Settings.
+158	The warm handoff is PCBH’s signature feature and addresses one of the biggest leaks in the behavioral health pipeline: the referral that never happens.
+159	The BHC is not conducting a 50-minute therapy hour; they are delivering targeted, practical interventions that fit the rhythm of a busy primary care clinic, and seeing many patients across the day.
+160	The BHC spends 20–30 minutes assessing the anxiety, teaching a brief coping strategy, and coordinating with the physician on next steps — care the patient receives immediately rather than weeks later, if at all.
+161	The 2018 operational definition was, in part, an effort to enable more rigorous research.
+162	PCBH visits are deliberately brief, focused, and high in volume, fitting the rhythm of busy primary care rather than traditional 50-minute therapy.
+163	Reiter, Dobmeyer, and Hunter (2018) gave PCBH a concise operational definition, standardizing a model that had grown under inconsistent terminology.
+164	[1] Reiter, Dobmeyer & Hunter — The Primary Care Behavioral Health (PCBH) Model: An Overview and Operational Definition (2018), J Clin Psychol Med Settings — https://link.springer.com/article/10.1007/s10880-017-9534-7 — operational definition of PCBH, the BHC role, and the warm handoff.
+165	[2] PubMed — The Primary Care Behavioral Health (PCBH) Model: An Overview and Operational Definition — https://pubmed.ncbi.nlm.nih.gov/29480434/ — citation and abstract for the 2018 operational definition by Reiter, Dobmeyer, and Hunter.
+166	[3] AAFP — The GATHER model: six principles for integrating behavioral health — https://www.aafp.org/pubs/fpm/blogs/inpractice/entry/gather_bhi_model.html — GATHER acronym (Generalist, Accessible, Team-based, High productivity, Educator, Routine).
+167	[4] AAFP / FPM — Integrating Behavioral Health Into Primary Care — https://www.aafp.org/fpm/2021/0500/p3 — warm handoff, BHC role, and same-day access in PCBH.
+168	[5] Collaborative Family Healthcare Association — PCBH & CoCM: How providers working within these models can provide optimal care — https://www.cfha.net/webinars/pcbh-cocm-pcbh-cocm-how-providers-working-within-these-models-can-provide-optimal-care/ — distinctions between and complementarity of PCBH and CoCM.
+
+## asam-criteria-levels-of-care
+169	The ASAM Criteria, published by the American Society of Addiction Medicine, are the most widely used set of standards for assessing people with substance use disorders and matching them to the right intensity of treatment.
+170	The criteria are revised periodically; the Fourth Edition was released in 2023.
+171	The Fourth Edition was released in 2023.
+172	The six dimensions, in their long-standing form, are: (1) acute intoxication and withdrawal potential; (2) biomedical conditions and complications; (3) emotional, behavioral, or cognitive conditions and complications; (4) readiness to change; (5) relapse, continued use, or continued problem potential; and (6) recovery and living environment.
+173	Two people with the same diagnosis can need very different care: one with severe withdrawal risk and an unstable living environment may need a 24-hour setting, while another who is medically stable, motivated, and supported at home can succeed in outpatient care.
+174	Dimension 1 — Intoxication / Withdrawal
+175	Dimension 2 — Biomedical Conditions
+176	Dimension 3 — Emotional / Behavioral / Cognitive
+177	Dimension 4 — Readiness to Change
+178	Dimension 5 — Relapse / Continued Use Potential
+179	Dimension 6 — Recovery / Living Environment
+180	The ASAM Criteria describe broad levels of care running from Level 0.5 to Level 4, with higher numbers indicating more intensive services and more clinical supervision.
+181	Level 0.5 is early intervention — for people with risky use who do not yet meet full criteria for a disorder.
+182	Level 1 is outpatient treatment, generally fewer than nine hours of service per week for adults, delivered while the person lives at home.
+183	Level 2 is intensive outpatient or partial hospitalization — more hours per week for those needing structure but not residential care.
+184	Level 3 is residential treatment, provided in a structured setting staffed 24 hours a day, with sublevels ranging from clinically managed low-intensity to higher-intensity residential care.
+185	Level 4 is medically managed intensive inpatient care, with daily physician oversight and 24-hour nursing — the most intensive setting, used for example when withdrawal is medically dangerous.
+186	Generally fewer than 9 hours/week for adults; lives at home
+187	24-hour structured setting; multiple sublevels by intensity
+188	Daily physician care and 24-hour nursing; most intensive
+189	This is a sharp departure from the old "one program fits all" approach and from arbitrary fixed stays (such as the historic "28-day rehab").
+190	One is in dangerous withdrawal, has unstable housing, and a co-occurring psychiatric crisis — the dimensions point toward a medically managed (Level 4) or high-intensity residential (Level 3) setting.
+191	The other is medically stable, highly motivated, and lives with a supportive family — the same diagnosis, but the dimensions support outpatient (Level 1) or intensive outpatient (Level 2) care.
+192	The next lesson examines two of the most important specific settings on this continuum: opioid treatment programs and office-based opioid treatment.
+193	The ASAM Criteria, from the American Society of Addiction Medicine, are the national standard for assessing substance use disorders and matching patients to the right level of care; the Fourth Edition came out in 2023.
+194	Care runs along a continuum from Level 0.5 (early intervention) through outpatient, intensive outpatient, residential, and Level 4 (medically managed intensive inpatient).
+195	A fixed 28-day stay for everyone with a severe disorder.
+196	[1] American Society of Addiction Medicine — About the ASAM Criteria — https://www.asam.org/asam-criteria/about-the-asam-criteria — purpose of the criteria, multidimensional assessment, and patient placement.
+197	[2] ASAM — The ASAM Criteria Fourth Edition — https://www.asam.org/asam-criteria/asam-criteria-4th-edition — Fourth Edition released in 2023 and updated dimensions/continuum.
+198	[3] Montana DPHHS — The Six Dimensions of ASAM — https://dphhs.mt.gov/assets/MCDC/ASAMDimensionDefinitions.pdf — definitions of the six assessment dimensions.
+199	[4] American Addiction Centers — ASAM Criteria and Levels of Care in Addiction Treatment — https://americanaddictioncenters.org/rehab-guide/asam-criteria-levels-of-care — broad levels of care 0.5–4 and their descriptions.
+200	[5] Social Sci LibreTexts — ASAM Dimensions and Levels of Care — https://socialsci.libretexts.org/Bookshelves/Counseling_and_Guidance/Addictions_Counseling_Essentials_(Polites_Sewick_Florin_and_Trytek)/01:_Unit_One-_Core_Knowledge/1.02:_ASAM_Dimensions_and_Levels_of_Care — level definitions including outpatient hour thresholds, residential, and medically managed inpatient.
+
+## opioid-treatment-programs
+201	People with opioid use disorder taking prescribed methadone or buprenorphine are roughly 50% less likely to die of overdose than those receiving no medication.
+202	It has been used to treat opioid use disorder for more than 50 years.
+203	SAMHSA has updated OTP regulations (with changes finalized in 2024) to make some pandemic-era flexibilities, such as expanded take-home doses and telehealth, permanent.
+204	OTPs are the only legal home for methadone, but they are not the only setting for treating opioid use disorder.
+205	The Consolidated Appropriations Act of 2023 (through the MAT Act) eliminated the X-waiver entirely: now any practitioner with a standard DEA registration that includes Schedule III authority can prescribe buprenorphine for opioid use disorder, subject to state law, with no patient cap.
+206	X-waiver eliminated by the 2023 MAT Act
+207	Vermont’s Hub-and-Spoke model, covered later in this course, is one of the most influential attempts to solve exactly this problem — connecting specialized "hub" programs with primary-care "spokes" so that buprenorphine treatment can reach patients close to home.
+208	Methadone and buprenorphine reduce the risk of overdose death by roughly 50% compared with no medication.
+209	The Consolidated Appropriations Act of 2023 (MAT Act) eliminated the X-waiver, so any DEA-registered prescriber with Schedule III authority can now prescribe buprenorphine for OUD, with a new one-time eight-hour training requirement under the MATE Act.
+210	Buprenorphine, a partial agonist with a protective ceiling effect, can be prescribed in office-based settings — and the 2023 MAT Act removed the former X-waiver requirement entirely.
+211	Buprenorphine is a partial agonist with a safer profile and, since the 2023 MAT Act, needs no special waiver — while methadone, a full agonist, may by law only be dispensed through certified Opioid Treatment Programs.
+212	[1] NIDA — Medications for Opioid Use Disorder — https://nida.nih.gov/research-topics/medications-opioid-use-disorder — the three FDA-approved medications, their mechanisms, and ~50% lower overdose death on methadone/buprenorphine.
+213	[2] SAMHSA — Waiver Elimination (MAT Act) — https://www.samhsa.gov/substance-use/treatment/statutes-regulations-guidelines/mat-act — Consolidated Appropriations Act of 2023 removed the X-waiver; any DEA Schedule III registrant may prescribe buprenorphine for OUD.
+214	[3] SAMHSA — Opioid Treatment Program Information for Providers — https://www.samhsa.gov/substance-use/treatment/opioid-treatment-program — methadone for OUD dispensed only through SAMHSA-certified OTPs.
+215	[5] Foley & Lardner — Opioid Treatment Programs: SAMHSA Makes Permanent Regulatory Flexibilities (2024) — https://www.foley.com/insights/publications/2024/02/opioid-treatment-programs-samhsa-regulatory-flexibilities/ — 2024 OTP rule making take-home and telehealth flexibilities permanent.
+216	[6] NCBI Bookshelf — The Effectiveness of Medication-Based Treatment for Opioid Use Disorder — https://www.ncbi.nlm.nih.gov/books/NBK541393/ — evidence that MOUD saves lives and is the standard of care.
+
+## mental-health-parity-law
+217	Understanding parity is essential to understanding the treatment gap from the first track of this course.
+218	The Legislative Arc: 1996 to the ACA
+219	The Mental Health Parity Act of 1996 was the first, but it was narrow: it only required that lifetime and annual dollar limits on mental health benefits match those for medical benefits.
+220	The landmark step was the Mental Health Parity and Addiction Equity Act of 2008 (MHPAEA).
+221	Beginning in 2014, the ACA made mental health and substance use disorder services one of ten "essential health benefits" that individual and small-group market plans must cover — and must cover at parity.
+222	Mental Health Parity Act of 1996
+223	Affordable Care Act (2014)
+224	A 2021 law (the Consolidated Appropriations Act) and a 2024 final rule pushed plans to prove NQTL compliance by performing and documenting "comparative analyses" — formal demonstrations that, for example, their prior-authorization rules for therapy are no tougher than those for physical-therapy.
+225	Research has found that reimbursement for office visits with medical and surgical clinicians was on average about 22% higher than for behavioral health clinicians — and that patients went out of network to see a behavioral health professional roughly 3.5 times more often than for medical or surgical care.
+226	The 2024 final rule strengthened requirements for the NQTL comparative analyses, including objective data on network adequacy and reimbursement, in an effort to close the loopholes that allow ghost networks and arbitrary prior authorization to persist.
+227	In May 2025, the federal departments announced they would not enforce the new provisions of the 2024 final rule while related litigation (an industry lawsuit) plays out, plus an additional period afterward.
+228	This pause left uncertainty about exactly which 2024 requirements are in force and underscored how politically and legally fraught parity enforcement continues to be.
+229	In September 2024, the Departments of Labor, HHS, and Treasury finalized rules tightening the NQTL comparative-analysis requirements and demanding objective data on networks and reimbursement.
+230	In May 2025, the same departments announced a pause on enforcing the new provisions pending the outcome of industry litigation — a vivid illustration of how parity remains a moving, contested target rather than a solved problem.
+231	The 2024 Final Rule and the 2025 Enforcement Pause
+232	Federal parity advanced in three steps: the narrow 1996 Mental Health Parity Act, the landmark 2008 MHPAEA (adding financial requirements, treatment limits, and substance use disorders), and the ACA, which made behavioral health an essential health benefit for individual and small-group plans in 2014.
+233	Real-world gaps persist: ghost networks list unreachable providers, and behavioral health reimbursement runs about 22% below medical visits, driving roughly 3.5 times more out-of-network use.
+234	A strengthened 2024 final rule was followed by a 2025 federal enforcement pause amid litigation, showing parity remains an unfinished, contested project.
+235	[1] CMS — The Mental Health Parity and Addiction Equity Act of 2008 (MHPAEA) — https://www.cms.gov/newsroom/fact-sheets/mental-health-parity-and-addiction-equity-act-2008-mhpaea — MHPAEA scope, financial requirements, treatment limitations, addition of substance use disorders.
+236	[2] Wikipedia / Congress.gov — Mental Health Parity Act of 1996 — https://en.wikipedia.org/wiki/Mental_Health_Parity_Act — 1996 law limited to aggregate lifetime/annual dollar limits; did not require coverage.
+237	[3] ASPE / HHS — Affordable Care Act Expands Mental Health and Substance Use Disorder Benefits and Federal Parity Protections — https://aspe.hhs.gov/reports/affordable-care-act-expands-mental-health-substance-use-disorder-benefits-federal-parity-protections-0 — ACA made MH/SUD an essential health benefit requiring coverage at parity (2014).
+238	[4] Ballard Spahr — Summary of Nonquantitative Treatment Limitation Under MHPAEA — https://www.ballardspahr.com/landing-pages/nonquantitative-treatment-limitation-rules-under-the-mental-health-parity-and-addiction-equity-act — QTL vs.
+239	[5] AJMC — Low Reimbursement Rates for Mental Health Care Linked With High Out-of-Network Provider Use — https://www.ajmc.com/view/low-reimbursement-rates-for-mental-health-care-linked-with-high-out-of-network-provider-use — ~22% higher medical reimbursement and ~3.5x more out-of-network behavioral health use.
+240	Department of Labor — Statement regarding enforcement of the 2024 MHPAEA final rule — https://www.dol.gov/agencies/ebsa/laws-and-regulations/laws/mental-health-parity/statement-regarding-enforcement-of-the-final-rule-on-requirements-related-to-mhpaea — September 2024 final rule and the May 2025 enforcement pause pending litigation.
+
+## behavioral-health-payment-reform
+241	This lesson examines how value-based payment aims to fix that, and looks at the leading concrete example: the Certified Community Behavioral Health Clinic.
+242	The most important behavioral health payment reform of the past decade is the Certified Community Behavioral Health Clinic (CCBHC) model.
+243	It was created by Section 223 of the Protecting Access to Medicare Act of 2014 — based on the Excellence in Mental Health Act — and launched as an eight-state Medicaid demonstration that began operating in 2017.
+244	Critically, that cost basis includes the services fee-for-service neglects: care coordination, case management, peer and family support, and 24/7 crisis response.
+245	In exchange for this enhanced, flexible payment, CCBHCs must meet federal certification standards — including providing a comprehensive range of services (such as crisis services available 24/7, outpatient mental health and substance use treatment, case management, peer supports, and primary care screening) and offering routine outpatient care within 10 business days.
+246	The clinic must provide a defined set of services — including 24/7 crisis care, outpatient treatment, case management, and peer support — directly or via partnerships.
+247	In return for enhanced payment, the clinic must meet federal standards such as routine care within 10 business days.
+248	The Bipartisan Safer Communities Act created a pathway to add new states to the Medicaid demonstration on a recurring basis, and in June 2024 the federal government announced ten additional states joining the demonstration, including Vermont.
+249	Vermont’s inclusion in the 2024 cohort connects this national reform to the state-specific systems covered next in this course.
+250	Payment design is not a back-office detail — it is one of the most powerful levers for improving behavioral health care.
+251	The Certified Community Behavioral Health Clinic (CCBHC) model, created by Section 223 of the 2014 Protecting Access to Medicare Act, is the leading behavioral health payment reform.
+252	CCBHCs are paid via a cost-based Prospective Payment System plus optional quality bonus payments, and must deliver comprehensive required services including 24/7 crisis care and routine care within 10 business days.
+253	The model has grown from eight original states to many more; in June 2024 ten states, including Vermont, joined the Medicaid demonstration, with strong bipartisan support.
+254	The broader lesson is that good clinical models need aligned payment to survive — payment design is one of the most powerful levers for closing the behavioral health treatment gap.
+255	CCBHCs are reimbursed through a Prospective Payment System based on the clinic’s actual cost of delivering a required set of comprehensive services — including care coordination, peer support, and 24/7 crisis care — with states able to add quality bonus payments.
+256	[1] Medicaid.gov — CCBHC Prospective Payment System (PPS) & Quality Bonus Payments — https://www.medicaid.gov/medicaid/financial-management/certified-community-behavioral-health-clinic-ccbhc-demonstration/prospective-payment-system-pps-quality-bonus-payments-qbps — cost-based PPS rate and optional quality bonus payments.
+257	[2] SAMHSA — CCBHC History and Background — https://www.samhsa.gov/communities/certified-community-behavioral-health-clinics/history-background — created by Section 223 of the Protecting Access to Medicare Act of 2014 (Excellence in Mental Health Act); eight-state demonstration.
+258	[3] AHA News — HHS adds 10 states to CCBHC Medicaid Demonstration Program (June 2024) — https://www.aha.org/news/headline/2024-06-04-hhs-adds-10-states-certified-community-behavioral-health-clinic-medicaid-demonstration-program — ten states including Vermont added in 2024.
+259	[4] CHCS — Driving Toward Behavioral Health Quality and Value: Certified Community Behavioral Health Centers — https://www.chcs.org/driving-toward-behavioral-health-quality-value-certified-community-behavioral-health-centers/ — how PPS funds uncompensated services and supports value-based approaches.
+260	[5] CHCS — Behavioral Health Provider Participation in Medicaid Value-Based Payment Models — https://www.chcs.org/media/behavioral-health-provider-participation-in-medicaid-value-based-payment-models-an-environmental-scan-and-policy-considerations.pdf — structural barriers to value-based payment adoption in behavioral health.
+261	[6] AJMC — Expansion of Certified Community Behavioral Health Clinics Increases Access to Mental Health — https://www.ajmc.com/view/expansion-of-certified-community-behavioral-health-clinics-increases-access-to-mental-health — association between CCBHC expansion and improved access.
+
+## vermont-designated-agencies
+262	There are 10 Designated Agencies, with the state designating one to serve each region, so that every part of Vermont has a clear, accountable local provider of these services.
+263	Alongside the 10 DAs, Vermont works with two Specialized Service Agencies (SSAs): Pathways Vermont, which serves adults, and NFI Vermont (the Northeastern Family Institute), which serves children and families.
+264	Vermont has 10 DAs (one per region) plus two Specialized Service Agencies.
+265	The federal Community Mental Health Act, signed by President Kennedy in 1963, set out to replace this with community-based care, shifting resources toward local nonprofit services.
+266	This history became vivid in 2011, when the Vermont State Hospital in Waterbury was severely damaged and effectively closed after flooding from Tropical Storm Irene, capping years of decertification and quality problems.
+267	The Vermont State Hospital in Waterbury, the state’s long-standing psychiatric institution, was forced to close in 2011 following flooding from Tropical Storm Irene, on top of earlier decertification and quality concerns.
+268	Under Vermont law (18 V.S.A. § 8907 and related statutes), the state’s commissioners ensure that community services for people with mental health conditions, psychiatric disabilities, and developmental disabilities are provided through designated community agencies, and they designate the public or private nonprofit agencies to provide or arrange for those services in each area.
+269	State law directs that community services be delivered through designated agencies, which the state formally designates by region (18 V.S.A. § 8907).
+270	This capitated, case-rate structure gives agencies flexibility to provide comprehensive services — case management, crisis response, community support — without the financial pressure of fee-for-service to limit care to the most billable activities.
+271	Most of the Department of Mental Health’s budget — on the order of roughly $200 million — flows to these agencies, much of it from federal Medicaid funds.
+272	Like behavioral health systems everywhere, the DAs face workforce shortages, rising demand, and funding pressures, and Vermont continues to reform and supplement the system — including by adding Certified Community Behavioral Health Clinic funding in 2024, layering a national model on top of its existing infrastructure.
+273	It operates more than fifty programs with well over a thousand staff and supports roughly 19,000 people a year across more than 60 locations — illustrating the scale and comprehensiveness a single Designated Agency can reach.
+274	Vermont delivers public behavioral health care through 10 Designated Agencies — nonprofit organizations the state formally designates, one per region — plus two Specialized Service Agencies (Pathways Vermont and NFI Vermont).
+275	The model grew out of mid-century deinstitutionalization and the 1963 federal Community Mental Health Act, which shifted care from state hospitals to community nonprofits.
+276	The closure of the Vermont State Hospital in Waterbury in 2011 deepened the state’s reliance on this decentralized, community-based system.
+277	Designation is statutory (18 V.S.A. § 8907), assigns explicit regional responsibility, and must be periodically recertified, giving the state ongoing accountability over quality.
+278	The system serves more than 25,000 Vermonters a year for mental health, with most of the Department of Mental Health’s roughly $200 million budget flowing to these agencies.
+279	Vermont designates a single accountable nonprofit per region (10 Designated Agencies plus two Specialized Service Agencies) to deliver community behavioral health and developmental disability services, funding them through Medicaid case rates and capitation rather than fee-for-service.
+280	[1] Vermont Department of Mental Health — Designated Agencies and Specialized Service Agencies — https://mentalhealth.vermont.gov/services/designated-agencies-and-specialized-service-agencies — DAs as designated nonprofits; Pathways Vermont and NFI as Specialized Service Agencies.
+281	[2] Vermont Department of Mental Health — Designated Agencies (community mental health agencies) — https://mentalhealth.vermont.gov/community-resources/das-community-mental-health-agencies — one Designated Agency per region; 10 DAs statewide.
+282	[3] Vermont Care Partners — Agencies — https://vermontcarepartners.org/agencies/ — network of sixteen nonprofit member agencies serving developmental disabilities, mental health, and substance use.
+283	[4] FindLaw — 18 V.S.A. § 8907 (Designated agencies) — https://codes.findlaw.com/vt/title-18-health/vt-st-tit-18-sect-8907.html/ — statutory basis for designation of community mental health and developmental disability agencies.
+284	[5] Vermont Public — State of Mind: Community Mental Health — https://www.vermontpublic.org/vpr-news/2013-10-21/state-of-mind-community-mental-health-bearing-the-burden — deinstitutionalization roots, Community Mental Health Act, ~25,000+ served and DMH budget largely funding the agencies.
+285	[6] Howard Center — About Howard Center — https://howardcenter.org/about-us/about/ — Howard Center as Chittenden County Designated Agency; scale of programs, staff, and people served.
+
+## vermont-opioid-response
+286	Vermont’s Hub-and-Spoke model is one of the most influential state responses to the opioid crisis in the United States.
+287	Vermont divided the state into five geographic regions and began a staggered rollout of the system in January 2013.
+288	Vermont’s Hub-and-Spoke model treats opioid use disorder as a chronic condition and builds a statewide network linking specialty addiction "hubs" with primary-care "spokes." It launched across five regions in January 2013 under the Blueprint for Health.
+289	The "hubs" are regional specialty centers built around Opioid Treatment Programs (OTPs) — the SAMHSA-certified clinics that, as covered earlier, are the only settings legally able to dispense methadone for opioid use disorder.
+290	First, they treat the patients who need the most intensive, structured care — including those starting treatment, those with complex needs, or those who are not stable enough for a primary care setting.
+291	Second, they act as the regional center of addiction expertise: hub staff assess patients at intake and determine the most appropriate placement, including referral out to a primary-care spoke when a patient is stable.
+292	Each hub is organized around an existing Opioid Treatment Program with the authority to dispense both methadone and buprenorphine, providing daily dosing and intensive services for patients with the most complex needs.
+293	Each spoke is backed by a "MAT team" — staffing of roughly one full-time registered nurse and one master’s-level licensed behavioral health or addictions provider for every 100 Medicaid office-based patients.
+294	Crucially, this MAT team support is provided to the practice at no direct cost, funded through a Medicaid Health Home arrangement (a 90/10 federal–state funding split enabled by the Affordable Care Act).
+295	The spoke’s MAT team — nurse plus behavioral health provider per ~100 patients — provides care management; patients can move back to the hub if their needs change.
+296	By around 2017, Vermont had the highest capacity for treating opioid use disorder in the country — on the order of 10.56 people in treatment per 1,000 population.
+297	In treatment per 1,000 people
+298	MAT team per ~100 patients
+299	Vermont’s Hub-and-Spoke model is a statewide system that treats opioid use disorder as a chronic condition, linking specialty addiction centers with primary-care providers; it launched across five regions in January 2013 under the Blueprint for Health.
+300	Each spoke is supported by a MAT team — roughly one nurse and one behavioral health provider per 100 Medicaid patients — provided at no direct cost via a Medicaid Health Home funding arrangement.
+301	By around 2017 Vermont had the highest opioid-treatment capacity in the U.S.
+302	(about 10.56 people in treatment per 1,000), and a state evaluation found reduced opioid use, eliminated overdoses, fewer ED visits and arrests, and improved wellbeing.
+303	They are made feasible by an embedded MAT team — roughly one RN and one master’s-level behavioral health provider per 100 Medicaid patients — funded through a Medicaid Health Home arrangement at no direct cost to the practice, which removes both the workload and the cost barrier to treating opioid use disorder.
+304	Spokes are office-based primary care settings prescribing buprenorphine, supported by a MAT team (about one nurse and one behavioral health provider per 100 Medicaid patients) provided at no direct cost to the practice.
+305	[1] Vermont Blueprint for Health — Hub & Spoke — https://blueprintforhealth.vermont.gov/about-blueprint/hub-and-spoke — structure of hubs and spokes, the MAT team staffing, and the role of the Blueprint.
+306	[2] Brooklyn et al., PMC — Vermont Hub-and-Spoke Model of Care for Opioid Use Disorder: Development, Implementation, and Impact — https://pmc.ncbi.nlm.nih.gov/articles/PMC5537005/ — five regions, January 2013 rollout, chronic-disease network rationale, and impact on treatment capacity.
+307	[3] Medicaid.gov — Key Elements of Vermont’s Hub-and-Spoke System — https://www.medicaid.gov/state-resource-center/innovation-accelerator-program/iap-downloads/reducing-substance-use-disorders/mat-key-elements-vt.pdf — definitions of hubs (OTP, daily dosing) and spokes (office-based, weekly/monthly), and MAT team support.
+308	[4] Vermont Department of Health — Vermont Hub-and-Spoke Model of Care for Opioid Use Disorders: An Evaluation (2017) — https://www.healthvermont.gov/sites/default/files/documents/pdf/ADAP_Hub_and_Spoke_Evaluation_2017_1.pdf — outcomes: reduced opioid use, eliminated overdoses, fewer ED visits and arrests, improved wellbeing.
+309	[5] Rural Health Information Hub — Vermont Hub-and-Spoke Model of Care for Opioid Use Disorder — https://www.ruralhealthinfo.org/project-examples/1015 — highest U.S.
+310	OUD treatment capacity (~10.56 per 1,000) and status as a national model.
+
+## crisis-continuum-988
+311	The Behavioral Health Crisis Continuum and 988
+312	The first pillar, someone to contact, is a crisis line: a number a person can call, text, or chat any hour of the day to reach trained crisis counselors — the role 988 now fills nationally.
+313	A 988 counselor can dispatch a mobile crisis team; a mobile team can bring someone to a crisis stabilization facility; and stabilization can connect the person to ongoing treatment — all without defaulting to police or the ED.
+314	SAMHSA updated these national guidelines in 2025, reflecting new research and emerging best practices for a coordinated crisis system.
+315	A 24/7 crisis line (now 988) where trained counselors provide immediate phone, text, or chat support.
+316	988: The National Crisis Line
+317	The centerpiece of the contact pillar is 988, the Suicide & Crisis Lifeline.
+318	In July 2022, the United States transitioned the older ten-digit National Suicide Prevention Lifeline to the simple, three-digit 988 — an easy-to-remember number analogous to 911, but for behavioral health crises.
+319	It provides free, confidential, 24/7 support for people in suicidal, mental health, or substance-use crises, by call, text, or chat.
+320	988 is not a single call center but a national network of more than 200 local and state crisis centers, supported by SAMHSA.
+321	The transition to 988 was explicitly framed by SAMHSA as a first step toward a fully transformed crisis care system — the contact pillar that the response and stabilization pillars are meant to build around.
+322	Since its July 2022 launch, 988 received roughly 16.5 million contacts — about 11.1 million calls, 2.9 million texts, and 2.4 million chats — with monthly volume rising over time and text and chat growing especially fast.
+323	Importantly, the vast majority of contacts are resolved on the line: more than 98% of calls are handled without dispatching emergency services, underscoring that most crises can be defused through skilled conversation.
+324	Transition from the 10-digit Lifeline
+325	The national answer rate for 988 calls, texts, and chats rose substantially after launch — to around 91% — while wait times fell, meaning more people in crisis are actually reaching a counselor quickly.
+326	Most strikingly, research has begun to link 988 to reduced suicide.
+327	A study published in JAMA found that after the launch of 988, suicide deaths among adolescents and young adults dropped about 11% compared with projected rates, and that the states with the largest increases in answered calls saw the largest declines in suicide rates.
+328	The contact pillar is necessary but not sufficient on its own — its full promise depends on the response and stabilization pillars being built out so that 988 can connect callers to in-person help when a phone call is not enough.
+329	Up from ~70% before launch
+330	After 988 launch vs. projected (JAMA study)
+331	That is why states are working to build out the response and stabilization pillars — mobile crisis teams and crisis receiving facilities — to complement 988.
+332	In Vermont, this builds directly on the infrastructure covered earlier in this course: the Designated Agencies have long provided community crisis services, giving the state an existing local foundation on which to connect 988 to in-person care.
+333	Funding, workforce, and the uneven build-out of mobile crisis and stabilization services remain real challenges, and 988’s long-term financing is an ongoing policy question.
+334	But the direction is clear and increasingly evidence-backed: a coordinated crisis continuum, anchored by 988, that responds to behavioral health emergencies with care rather than handcuffs.
+335	988 is the contact pillar, but a crisis line is only as good as what it can connect people to.
+336	988, the Suicide & Crisis Lifeline, launched in July 2022 as a simple three-digit number providing free, confidential, 24/7 support by call, text, or chat through a network of 200+ local crisis centers.
+337	Since launch, 988 has received roughly 16.5 million contacts, and more than 98% of calls are resolved without dispatching emergency services.
+338	Early evidence is encouraging: answer rates rose to about 91%, and a JAMA study linked 988’s launch to an ~11% drop in suicide deaths among adolescents and young adults.
+339	SAMHSA’s crisis continuum is built on three elements — "someone to contact, someone to respond, and a safe place for help." 988 is the contact pillar (the crisis line); mobile crisis teams are the response pillar; and crisis receiving/stabilization facilities are the safe-place pillar.
+340	Police, jails, and emergency departments — with 988 replacing all three.
+341	Someone to contact (a crisis line such as 988), someone to respond (mobile crisis teams), and a safe place for help (crisis receiving and stabilization) — with 988 serving as the contact pillar.
+342	Hospitalization, medication, and therapy — with 988 as the medication pillar.
+343	There is only one pillar: the 988 phone line.
+344	What are the three pillars of SAMHSA’s behavioral health crisis continuum, and where does 988 fit?
+345	[1] SAMHSA — National Behavioral Health Crisis Care Guidance — https://www.samhsa.gov/mental-health/national-behavioral-health-crisis-care — the three pillars (someone to contact, someone to respond, a safe place for help) and the 2025 updated guidelines.
+346	[2] SAMHSA — 988 Suicide & Crisis Lifeline — https://www.samhsa.gov/mental-health/988 — July 2022 launch, network of 200+ crisis centers, 24/7 call/text/chat support, and 988 as a first step toward a transformed crisis system.
+347	[3] FCC — 988 Suicide and Crisis Lifeline — https://www.fcc.gov/988-suicide-and-crisis-lifeline — transition from the 10-digit National Suicide Prevention Lifeline to the three-digit 988.
+348	[4] KFF — 988 Suicide & Crisis Lifeline: Two Years After Launch — https://www.kff.org/mental-health/988-suicide-crisis-lifeline-two-years-after-launch/ — ~16.5M contacts since launch, ~91% answer rate, and the share of calls handled without emergency services.
+349	[5] STAT News — Increased calls to 988 hotline associated with a drop in suicides among young people (JAMA study) — https://www.statnews.com/2026/04/22/988-hotline-linked-11-percent-drop-youth-suicide-jama-study/ — ~11% decline in youth suicide deaths after 988 launch, larger where answered calls rose most.
+350	[6] Medicaid.gov — SHO #25-004: Best Practices for Implementing the Continuum of Crisis Care — https://www.medicaid.gov/federal-policy-guidance/downloads/sho25004.pdf — mobile crisis and crisis stabilization as the response and "safe place" pillars and how states build them out.
