@@ -1,0 +1,7 @@
+{"tag": "deep-mmco", "note": "Academy deep pass 2026-10-28. Medicaid+CHIP enrollment 73.2M June 2026 (KFF tracker; same figure as medicaid-101). 'Five largest Medicaid insurers lost a net 1.4 million members (3.8%)' — no source found; deleted per can't-confirm rule.",
+ "pairs": [
+  ["the quality of care delivered to the roughly 78 million Medicaid and CHIP beneficiaries", "the quality of care delivered to the roughly 73 million Medicaid and CHIP beneficiaries (June 2026)"],
+  ["measure quality for ~78 million beneficiaries", "measure quality for ~73 million beneficiaries"],
+  ["Since H.R.1 was enacted, the five largest Medicaid insurers have already lost a net 1.4 million members (3.8%), and the Urban Institute projects that", "The Urban Institute projects that"]
+ ],
+ "residue": "1\\.4 million members|78 million (Medicaid|benef)"}

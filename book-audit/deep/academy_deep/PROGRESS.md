@@ -18,3 +18,4 @@ VERIFIED_FACTS.md, the rest against the cited source or a web search. Fixes go o
 | behavioral-health-integration | 351 | 6 claims (13 strings): SUD treatment %, OUD count, overdose deaths, DMH budget, Howard, H&S eval, 988 | done |
 | medicare-fundamentals | 359 | CMMI certified models + attribution; 2025→2026 cost-sharing | done |
 | hospital-finance | 374 | none needed | done |
+| medicaid-managed-care-operations | 399 | enrollment 78M→73M; unsourced insurer-loss claim deleted | done |
