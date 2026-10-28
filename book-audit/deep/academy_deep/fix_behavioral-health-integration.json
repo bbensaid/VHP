@@ -1,0 +1,17 @@
+{"tag": "deep-bhi", "note": "Academy deep pass 2026-10-28. NSDUH 2023: 7.1M of 48.5M with SUD received treatment = 14.6% (85.4% untreated); 5.7M aged 12+ with OUD. CDC NCHS db549: 105,007 overdose deaths 2023, 79,384 in 2024. KFF 988 two-year report: 16.5M contacts in first two years. AHS FY27 budget presentation 2026-03-10: DMH $347M. Howard Center about page: 1,300 staff, >19,000 people, >60 locations (no program count). VDH 2017 Hub & Spoke evaluation: 'reductions in overdoses' (not elimination).",
+ "pairs": [
+  ["only 15.6% (about 7.1 million) received any substance use treatment, leaving 85.4%", "only 14.6% (about 7.1 million) received any substance use treatment, leaving 85.4%"],
+  ["only about 15.6% received any treatment, leaving more than 41 million people untreated", "only about 14.6% received any treatment, leaving more than 41 million people untreated"],
+  ["but only about 15.6% of people with an SUD received any treatment in 2023", "but only about 14.6% of people with an SUD received any treatment in 2023"],
+  ["About 5 million adults had an opioid use disorder in the past year in 2023.", "About 5.7 million people aged 12 or older had an opioid use disorder in the past year in 2023."],
+  ["about 5 million adults had an opioid use disorder in 2023", "about 5.7 million people aged 12 or older had an opioid use disorder in 2023"],
+  ["Overdose deaths reached ~107,543 in 2023 — the first decline since 2018 — and fell further to roughly 80,000 in 2024", "Overdose deaths reached 105,007 in 2023 — the first decline since 2018 — and fell further to 79,384 in 2024"],
+  ["Most of the Department of Mental Health’s budget — on the order of roughly $200 million — flows to these agencies, much of it from federal Medicaid funds.", "Much of the Department of Mental Health’s budget — about $347 million (all funds) in the state's FY2027 request — flows to these agencies, much of it from federal Medicaid funds."],
+  ["with most of the Department of Mental Health’s roughly $200 million budget flowing to these agencies", "with much of the Department of Mental Health’s budget (about $347 million in the FY2027 request) flowing to these agencies"],
+  ["It operates more than fifty programs with well over a thousand staff and supports roughly 19,000 people a year across more than 60 locations", "It has about 1,300 staff and supports more than 19,000 people a year across more than 60 locations"],
+  ["a state evaluation found reduced opioid use, eliminated overdoses, fewer ED visits and arrests, and improved wellbeing", "a state evaluation found reduced opioid use, fewer overdoses, ED visits and arrests, and improved wellbeing"],
+  ["outcomes: reduced opioid use, eliminated overdoses, fewer ED visits and arrests, improved wellbeing", "outcomes: reduced opioid use, fewer overdoses, ED visits and arrests, improved wellbeing"],
+  ["Since its July 2022 launch, 988 received roughly 16.5 million contacts", "In its first two years after the July 2022 launch, 988 received roughly 16.5 million contacts"],
+  ["Since launch, 988 has received roughly 16.5 million contacts", "In its first two years, 988 received roughly 16.5 million contacts"]
+ ],
+ "residue": "15\\.6% (of|received|\\(about 7)|eliminated overdoses|107,543|fifty programs|\\$200 million budget|roughly \\$200 million"}

@@ -15,3 +15,4 @@ VERIFIED_FACTS.md, the rest against the cited source or a web search. Fixes go o
 | welcome-htr-framework | 112 | course count 18→19 | done |
 | population-health-management | 318 | none needed (MSSP track shares verified from CMS PUF) | done |
 | clinical-quality-measurement | 330 | MSSP 40th-percentile start year 2025→2024 | done |
+| behavioral-health-integration | 351 | 6 claims (13 strings): SUD treatment %, OUD count, overdose deaths, DMH budget, Howard, H&S eval, 988 | done |
