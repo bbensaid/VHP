@@ -13,3 +13,4 @@ VERIFIED_FACTS.md, the rest against the cited source or a web search. Fixes go o
 | health-equity-analytics | 141 | PRAPARE counts/year (Sanity + legacy) | done |
 | transformation-leadership | 166 | none needed | done |
 | welcome-htr-framework | 112 | course count 18→19 | done |
+| population-health-management | 318 | none needed (MSSP track shares verified from CMS PUF) | done |
