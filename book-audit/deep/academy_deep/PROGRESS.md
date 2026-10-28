@@ -10,3 +10,4 @@ VERIFIED_FACTS.md, the rest against the cited source or a web search. Fixes go o
 | Course | Claim sentences | Fixed | Status |
 |---|---|---|---|
 | medicaid-101 | 285 | 4 claims (10 strings) | done |
+| health-equity-analytics | 141 | PRAPARE counts/year (Sanity + legacy) | done |

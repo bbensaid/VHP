@@ -1,0 +1,54 @@
+{
+ "tag": "deep-hea",
+ "note": "Academy deep pass 2026-10-28. PRAPARE: NACHC resource page ('available in over 25 languages'; developed with AAPCHO and OPCA) and SIREN/UCSF record ('16 core measures' + 4 optional; published 2016). No source found for '22 factors', '26 languages' or a 2013 creation date.",
+ "only": [
+  "hea-sdoh-burden-scoring"
+ ],
+ "pairs": [
+  [
+   "was developed in 2013 by the National Association of Community Health Centers, in partnership with the Association of Asian Pacific Community Health Organizations and the Oregon Primary Care Association. It screens for 22 distinct social determinants of health factors — housing, food security, transportation, income, and more.",
+   "was developed by the National Association of Community Health Centers, in partnership with the Association of Asian Pacific Community Health Organizations and the Oregon Primary Care Association, and published in 2016. It consists of 16 core measures — covering housing, income, transportation, social support and more — plus 4 optional measures."
+  ],
+  [
+   "and has been translated into 26 languages.",
+   "and is available in more than 25 languages."
+  ],
+  [
+   "the standardization decision made at PRAPARE's creation in 2013 is inseparable",
+   "the standardization decision made at PRAPARE's creation is inseparable"
+  ],
+  [
+   "PRAPARE (NACHC, 2013) screens 22 SDOH factors, is codified against ICD-10/LOINC/SNOMED, is free in most EHRs, and is translated into 26 languages",
+   "PRAPARE (NACHC, 2016) has 16 core and 4 optional measures, is codified against ICD-10/LOINC/SNOMED, is free in most EHRs, and is available in more than 25 languages"
+  ],
+  [
+   "22 factors, developed 2013, EHR availability and language translations",
+   "16 core + 4 optional measures, EHR availability, over 25 languages"
+  ],
+  [
+   "Social determinants of health factors PRAPARE screens for\",\"value\":\"22\"",
+   "Core measures in PRAPARE (plus 4 optional)\",\"value\":\"16\""
+  ],
+  [
+   "Languages PRAPARE has been translated into\",\"value\":\"26\"",
+   "Languages PRAPARE is available in\",\"value\":\"25+\""
+  ],
+  [
+   "was created in 2013 by the National Association of Community Health Centers (NACHC)",
+   "was developed by the National Association of Community Health Centers (NACHC) and published in 2016"
+  ],
+  [
+   "It screens for 22 social determinants of health factors and is standardized",
+   "It consists of 16 core and 4 optional measures and is standardized"
+  ],
+  [
+   "and translated into 26 languages.",
+   "and available in more than 25 languages."
+  ],
+  [
+   "{\"label\":\"Year NACHC's PRAPARE tool was developed\",\"value\":\"2013\",\"source\":\"NACHC\"}",
+   "{\"label\":\"Core measures in NACHC's PRAPARE tool (plus 4 optional)\",\"value\":\"16\",\"source\":\"NACHC\"}"
+  ]
+ ],
+ "residue": "PRAPARE[^.]{0,80}(22|26|2013)"
+}
