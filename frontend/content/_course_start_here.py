@@ -319,7 +319,7 @@ L4 = [
 L5_SLUG = 'start-here-your-learning-path'
 L5_TITLE = 'Your Learning Path and the Lab Workbook'
 L5 = [
-    blk('intro1', "HTR has more than any one reader needs: a sixteen-chapter book, 35 Research Lab tools and eighteen Academy courses. The way through is a path chosen for your role, not a march through everything. This final Start Here lesson gives you that path, shows you how the Academy can build one for you, and ends with the book's own practicum, the HTR Lab Workbook, which reproduces the book's argument in two to three hours of hands-on modeling."),
+    blk('intro1', "HTR has more than any one reader needs: a sixteen-chapter book, 35 Research Lab tools and nineteen Academy courses. The way through is a path chosen for your role, not a march through everything. This final Start Here lesson gives you that path, shows you how the Academy can build one for you, and ends with the book's own practicum, the HTR Lab Workbook, which reproduces the book's argument in two to three hours of hands-on modeling."),
     blk('intro2', "By the end you will know which course to take next, how many hours it asks of you, and how to prove to yourself that you understand the framework by running it end to end."),
     blk('intro3', 'Nothing in this lesson requires you to commit to a long program. The paths are suggestions built from the courses that exist today, and every course can be started, paused and resumed; your progress is saved as you go when you are signed in.'),
 
