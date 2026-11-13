@@ -238,6 +238,137 @@ def _save_embed_cache(cache: dict) -> None:
         log.warning(f"Could not save embedding cache: {e}")
 
 
+# 1b. Load general PDFs from data/ root (excluding the medicaid_eligibility subfolder)
+#
+# Vermont-specific PDFs get enriched metadata so the retriever can surface them
+# preferentially for Vermont-focused queries. The tagging is keyed on filename.
+_VT_PDF_METADATA: dict[str, dict] = {
+    # The book itself. The Introduction tells readers the AI Analyst is
+    # "grounded in this book" — until this entry existed, it was not: the
+    # corpus held policy PDFs only, so the Analyst answered framework
+    # questions from model priors, which still assert the pre-v46 six-pillar
+    # model. This is the authoritative source for the five pillars, the
+    # Equity Imperative, the nine dependencies and the execution sequence.
+    # Ch.1 §1.4 also states the rule for matrix membership: a dependency
+    # earns a cell only when the upstream pillar delivers the currency it
+    # issues (Policy=authority, Technology=information, Economics=incentives,
+    # Clinical=outcomes, Operations=capacity). That is why there is no
+    # Economics->Technology cell: transformation capital (RHT award, and the
+    # EAST Fund under AHEAD before Vermont withdrew in July 2026) is
+    # appropriated, and appropriation is authority, not incentive.
+    "htr_book_v42.pdf": {
+        "pillar": "HTR Framework",
+        "source_type": "htr_book",
+        "report": "Transforming American Healthcare — the HTR book (v42)",
+        "year": "2026",
+        "tags": (
+            "htr,book,framework,five pillars,equity imperative,policy,technology,"
+            "economics,clinical,operations,dependencies,execution sequence,vermont,"
+            "act167,act68,onecare,ahead,global budgets,reference-based pricing,"
+            "dependency matrix,matrix membership,what each pillar issues,"
+            "authority,incentives,information,outcomes,capacity,"
+            "transformation capital,incentive architecture,rht program,east fund"
+        ),
+    },
+    # Reference textbook for health-economics concepts (replaced a pirated
+    # dictionary removed 2026-11-13).
+    "health economics.pdf": {
+        "pillar": "Economics",
+        "source_type": "general",
+        "title": "Health Economics (Bhattacharya, Hyde & Tu, Palgrave Macmillan, 2014)",
+        "report": "Health Economics — Bhattacharya, Hyde & Tu (2014)",
+        "year": "2014",
+        "tags": "health economics,textbook,insurance,adverse selection,moral hazard,qaly,cost-effectiveness,demand,supply,physicians,hospitals",
+    },
+    "wyman_report.pdf": {
+        "pillar": "Vermont / Act 167",
+        "source_type": "vermont_policy",
+        "jurisdiction": "Vermont",
+        "report": "Oliver Wyman Act 167 Community Engagement Recommendations",
+        "year": "2024",
+        "tags": "act167,vermont,hospital,restructuring,gmcb,ahs,wyman,financials,coe,hsa,ems,transfer,beds",
+    },
+    "act167 as enacted.pdf": {
+        "pillar": "Vermont / Act 167",
+        "source_type": "vermont_legislation",
+        "jurisdiction": "Vermont",
+        "report": "Vermont Act 167 (2022) — As Enacted",
+        "year": "2022",
+        "tags": "act167,vermont,legislation,gmcb,ahs,hospital,sustainability",
+    },
+    "act068 act summary.pdf": {
+        "pillar": "Vermont / Act 68",
+        "source_type": "vermont_legislation",
+        "jurisdiction": "Vermont",
+        "report": "Vermont Act 68 Summary",
+        "tags": "act68,vermont,legislation,medicaid",
+    },
+    "htr_vermont_act167_advisory.pdf": {
+        "pillar": "Vermont / Act 167",
+        "source_type": "vermont_advisory",
+        "jurisdiction": "Vermont",
+        "report": "HTR Vermont Act 167 Advisory",
+        "tags": "act167,vermont,advisory,hospital,transformation",
+    },
+    "vermonts-rural-health-transformation-(rht)-program-application-activity-details-12052025.pdf": {
+        "pillar": "Vermont / RHT",
+        "source_type": "vermont_program",
+        "jurisdiction": "Vermont",
+        "report": "Vermont Rural Health Transformation Program Application",
+        "tags": "rht,vermont,rural,transformation,ahead,tcoc",
+    },
+    "vermont rht budget narrative updated 01-30-26.pdf": {
+        "pillar": "Vermont / RHT",
+        "source_type": "vermont_program",
+        "jurisdiction": "Vermont",
+        "report": "Vermont RHT Budget Narrative 2026",
+        "tags": "rht,vermont,rural,budget,transformation",
+    },
+    "rhtp 11-12-2025 (1).pdf": {
+        "pillar": "Rural Health",
+        "source_type": "national_policy",
+        "report": "Rural Health Transformation Program — CMS",
+        "tags": "rhtp,rural,cms,transformation,ahead,national",
+    },
+    "rhtp-50-state-spotlight_final.pdf": {
+        "pillar": "Rural Health",
+        "source_type": "national_policy",
+        "report": "RHTP 50-State Spotlight",
+        "tags": "rhtp,rural,states,transformation,cms",
+    },
+    "rht-program-state-provided-abstracts (1).pdf": {
+        "pillar": "Rural Health",
+        "source_type": "national_policy",
+        "report": "RHTP State Abstracts",
+        "tags": "rhtp,rural,states,transformation",
+    },
+}
+
+
+def load_pdf_pages(pdf_path: Path) -> List[Document]:
+    """One Document per page. SimpleDirectoryReader first; if it fails or returns
+    nothing (it silently skipped 'Health Economics.pdf' with a TypeError, so that
+    book was never indexed), fall back to plain pypdf with the same metadata keys."""
+    docs = SimpleDirectoryReader(input_files=[str(pdf_path)]).load_data()
+    if docs:
+        return docs
+    from pypdf import PdfReader
+    log.warning(f"  ⚠️ {pdf_path.name}: default PDF reader returned nothing — using pypdf")
+    reader = PdfReader(str(pdf_path))
+    return [
+        Document(
+            text=(page.extract_text() or ""),
+            metadata={"page_label": str(i + 1), "file_name": pdf_path.name},
+        )
+        for i, page in enumerate(reader.pages)
+        if (page.extract_text() or "").strip()
+    ]
+
+
+def _known_pdf_metadata() -> dict:
+    return _VT_PDF_METADATA
+
+
 async def build_index() -> VectorStoreIndex:
     """
     Build a VectorStoreIndex from all sources.
@@ -275,101 +406,6 @@ async def build_index() -> VectorStoreIndex:
     else:
         log.info("ℹ️  No data/medicaid_eligibility/ directory found — skipping")
 
-    # 1b. Load general PDFs from data/ root (excluding the medicaid_eligibility subfolder)
-    #
-    # Vermont-specific PDFs get enriched metadata so the retriever can surface them
-    # preferentially for Vermont-focused queries. The tagging is keyed on filename.
-    _VT_PDF_METADATA: dict[str, dict] = {
-        # The book itself. The Introduction tells readers the AI Analyst is
-        # "grounded in this book" — until this entry existed, it was not: the
-        # corpus held policy PDFs only, so the Analyst answered framework
-        # questions from model priors, which still assert the pre-v46 six-pillar
-        # model. This is the authoritative source for the five pillars, the
-        # Equity Imperative, the nine dependencies and the execution sequence.
-        # Ch.1 §1.4 also states the rule for matrix membership: a dependency
-        # earns a cell only when the upstream pillar delivers the currency it
-        # issues (Policy=authority, Technology=information, Economics=incentives,
-        # Clinical=outcomes, Operations=capacity). That is why there is no
-        # Economics->Technology cell: transformation capital (RHT award, and the
-        # EAST Fund under AHEAD before Vermont withdrew in July 2026) is
-        # appropriated, and appropriation is authority, not incentive.
-        "htr_book_v42.pdf": {
-            "pillar": "HTR Framework",
-            "source_type": "htr_book",
-            "report": "Transforming American Healthcare — the HTR book (v42)",
-            "year": "2026",
-            "tags": (
-                "htr,book,framework,five pillars,equity imperative,policy,technology,"
-                "economics,clinical,operations,dependencies,execution sequence,vermont,"
-                "act167,act68,onecare,ahead,global budgets,reference-based pricing,"
-                "dependency matrix,matrix membership,what each pillar issues,"
-                "authority,incentives,information,outcomes,capacity,"
-                "transformation capital,incentive architecture,rht program,east fund"
-            ),
-        },
-        "wyman_report.pdf": {
-            "pillar": "Vermont / Act 167",
-            "source_type": "vermont_policy",
-            "jurisdiction": "Vermont",
-            "report": "Oliver Wyman Act 167 Community Engagement Recommendations",
-            "year": "2024",
-            "tags": "act167,vermont,hospital,restructuring,gmcb,ahs,wyman,financials,coe,hsa,ems,transfer,beds",
-        },
-        "act167 as enacted.pdf": {
-            "pillar": "Vermont / Act 167",
-            "source_type": "vermont_legislation",
-            "jurisdiction": "Vermont",
-            "report": "Vermont Act 167 (2022) — As Enacted",
-            "year": "2022",
-            "tags": "act167,vermont,legislation,gmcb,ahs,hospital,sustainability",
-        },
-        "act068 act summary.pdf": {
-            "pillar": "Vermont / Act 68",
-            "source_type": "vermont_legislation",
-            "jurisdiction": "Vermont",
-            "report": "Vermont Act 68 Summary",
-            "tags": "act68,vermont,legislation,medicaid",
-        },
-        "htr_vermont_act167_advisory.pdf": {
-            "pillar": "Vermont / Act 167",
-            "source_type": "vermont_advisory",
-            "jurisdiction": "Vermont",
-            "report": "HTR Vermont Act 167 Advisory",
-            "tags": "act167,vermont,advisory,hospital,transformation",
-        },
-        "vermonts-rural-health-transformation-(rht)-program-application-activity-details-12052025.pdf": {
-            "pillar": "Vermont / RHT",
-            "source_type": "vermont_program",
-            "jurisdiction": "Vermont",
-            "report": "Vermont Rural Health Transformation Program Application",
-            "tags": "rht,vermont,rural,transformation,ahead,tcoc",
-        },
-        "vermont rht budget narrative updated 01-30-26.pdf": {
-            "pillar": "Vermont / RHT",
-            "source_type": "vermont_program",
-            "jurisdiction": "Vermont",
-            "report": "Vermont RHT Budget Narrative 2026",
-            "tags": "rht,vermont,rural,budget,transformation",
-        },
-        "rhtp 11-12-2025 (1).pdf": {
-            "pillar": "Rural Health",
-            "source_type": "national_policy",
-            "report": "Rural Health Transformation Program — CMS",
-            "tags": "rhtp,rural,cms,transformation,ahead,national",
-        },
-        "rhtp-50-state-spotlight_final.pdf": {
-            "pillar": "Rural Health",
-            "source_type": "national_policy",
-            "report": "RHTP 50-State Spotlight",
-            "tags": "rhtp,rural,states,transformation,cms",
-        },
-        "rht-program-state-provided-abstracts (1).pdf": {
-            "pillar": "Rural Health",
-            "source_type": "national_policy",
-            "report": "RHTP State Abstracts",
-            "tags": "rhtp,rural,states,transformation",
-        },
-    }
 
     def _get_pdf_metadata(pdf_path: Path) -> dict:
         """Return enriched metadata for known Vermont/policy PDFs, generic otherwise."""
@@ -401,7 +437,7 @@ async def build_index() -> VectorStoreIndex:
                         log.info(f"  ✓ {pdf_path.name}: {len(cached_docs)} pages (cache) [{enriched_meta.get('pillar')}]")
                         continue
 
-                    pdf_docs = SimpleDirectoryReader(input_files=[str(pdf_path)]).load_data()
+                    pdf_docs = load_pdf_pages(pdf_path)
                     for doc in pdf_docs:
                         for k, v in enriched_meta.items():
                             doc.metadata[k] = v
