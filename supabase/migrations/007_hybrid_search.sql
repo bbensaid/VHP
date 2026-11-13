@@ -1,3 +1,6 @@
+-- SUPERSEDED — DO NOT APPLY. Targets public.rag_documents, which was never used
+-- (the live table is data_rag_documents) and was dropped in migration 035.
+
 -- ============================================================
 -- MIGRATION 007: Hybrid Search (BM25 + vector RRF) + Schema Alignment
 --

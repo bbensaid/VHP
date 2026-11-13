@@ -171,6 +171,48 @@ def _build_pg_vector_store():
 _EMBED_CACHE_PATH = STORAGE_DIR / "embedding_cache.json"
 
 
+# ── Stale-row cleanup for full rebuilds ───────────────────────────────────────
+# A full rebuild inserts a fresh copy of every PDF and Sanity document. Until
+# 2026-11-13 it never removed the previous copy, so each rebuild doubled the
+# corpus (24,726 duplicate rows were found and deleted). The rebuild now notes
+# the highest existing id for the sources it owns, inserts, and only then
+# deletes the older rows — so a failed rebuild never leaves the table empty.
+# Rows written by book-build/ingest_*_to_rag.py (htr_book_md, htr_briefing)
+# are never touched here; those scripts manage their own rows.
+
+_RAG_TABLE = "data_rag_documents"   # PGVectorStore prefixes "data_" to table_name
+_REBUILD_SOURCES = ["pdf", "system", *SANITY_QUERIES.keys()]
+
+
+def _max_rebuild_row_id() -> Optional[int]:
+    import psycopg2
+    with psycopg2.connect(SUPABASE_DB_URL) as conn, conn.cursor() as cur:
+        cur.execute(
+            f"SELECT max(id) FROM public.{_RAG_TABLE} WHERE metadata_->>'source' = ANY(%s)",
+            (_REBUILD_SOURCES,),
+        )
+        return cur.fetchone()[0]
+
+
+def _delete_superseded_rows(max_old_id: int) -> int:
+    import psycopg2
+    deleted = 0
+    with psycopg2.connect(SUPABASE_DB_URL) as conn:
+        while True:
+            with conn.cursor() as cur:
+                cur.execute(
+                    f"DELETE FROM public.{_RAG_TABLE} WHERE id IN ("
+                    f"  SELECT id FROM public.{_RAG_TABLE}"
+                    f"  WHERE id <= %s AND metadata_->>'source' = ANY(%s) LIMIT 5000)",
+                    (max_old_id, _REBUILD_SOURCES),
+                )
+                n = cur.rowcount
+            conn.commit()
+            deleted += n
+            if n == 0:
+                return deleted
+
+
 def _file_sha256(path: Path) -> str:
     h = hashlib.sha256()
     with open(path, "rb") as f:
@@ -430,8 +472,12 @@ async def build_index() -> VectorStoreIndex:
     vector_store = _build_pg_vector_store()
 
     if vector_store:
+        max_old_id = _max_rebuild_row_id()
         storage_context = StorageContext.from_defaults(vector_store=vector_store)
         index = VectorStoreIndex(all_nodes, storage_context=storage_context, show_progress=True)
+        if max_old_id is not None:
+            removed = _delete_superseded_rows(max_old_id)
+            log.info(f"🧹 Removed {removed} rows from the previous build (id <= {max_old_id})")
     else:
         STORAGE_DIR.mkdir(parents=True, exist_ok=True)
         storage_context = StorageContext.from_defaults(persist_dir=str(STORAGE_DIR))

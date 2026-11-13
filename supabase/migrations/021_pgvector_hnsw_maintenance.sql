@@ -1,3 +1,6 @@
+-- SUPERSEDED — DO NOT APPLY. Targets public.rag_documents, which was never used
+-- (the live table is data_rag_documents) and was dropped in migration 035.
+
 -- Migration 021: pgvector HNSW index maintenance
 -- Schedules a quarterly REINDEX CONCURRENTLY on the embedding index to prevent
 -- index bloat and maintain ANN recall quality as the rag_documents table grows.

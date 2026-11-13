@@ -1,3 +1,6 @@
+-- SUPERSEDED — DO NOT APPLY. Targets public.rag_documents, which was never used
+-- (the live table is data_rag_documents) and was dropped in migration 035.
+
 -- ============================================================
 -- MIGRATION 005: RAG Vector Store (pgvector)
 -- Replaces local LlamaIndex JSON storage in backend/storage/
