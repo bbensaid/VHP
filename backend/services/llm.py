@@ -279,8 +279,18 @@ def get_ranker() -> Any:
     if _ranker is None:
         try:
             from flashrank import Ranker
-            _ranker = Ranker(model_name="ms-marco-MiniLM-L-12-v2", cache_dir="/tmp/flashrank")
-            log.info("✅ FlashRank re-ranker initialized (ms-marco-MiniLM-L-12-v2)")
+            # Memory: the defaults (512 tokens, ONNX memory arena on) grew to ~1.3 GB
+            # after a few questions and crashed the 1 GB Fly machine. 256 tokens with
+            # the arena off holds at ~165 MB and halves rerank time (measured 2026-11-14).
+            _ranker = Ranker(model_name="ms-marco-MiniLM-L-12-v2", cache_dir="/tmp/flashrank", max_length=256)
+            try:
+                import onnxruntime as ort
+                opts = ort.SessionOptions()
+                opts.enable_cpu_mem_arena = False
+                _ranker.session = ort.InferenceSession(_ranker.session._model_path, sess_options=opts)
+            except Exception as e:
+                log.warning(f"FlashRank: could not disable ONNX memory arena ({e})")
+            log.info("✅ FlashRank re-ranker initialized (ms-marco-MiniLM-L-12-v2, max_length=256)")
         except Exception as e:
             log.warning(f"FlashRank unavailable: {e} — re-ranking disabled")
     return _ranker
