@@ -86,7 +86,6 @@ const staticRoutes: { path: string; priority: number; changeFrequency: MetadataR
   { path: "/trending-topics",     priority: 0.8, changeFrequency: "daily" },
   { path: "/the-wire",            priority: 0.7, changeFrequency: "daily" },
   { path: "/multimedia",          priority: 0.7, changeFrequency: "weekly" },
-  { path: "/library",             priority: 0.7, changeFrequency: "weekly" },
   { path: "/investment-tracker",  priority: 0.7, changeFrequency: "weekly" },
 
   // Research Lab + framework tools

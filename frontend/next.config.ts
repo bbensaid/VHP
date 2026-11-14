@@ -99,6 +99,14 @@ const nextConfig: NextConfig = {
     ],
   },
 
+  // Retired /advisory/reports → /briefings. Done here, not in the page, so it
+  // also works on the Review brand, where the /advisory layout 404s first.
+  async redirects() {
+    return [
+      { source: "/advisory/reports", destination: "/briefings", permanent: true },
+    ];
+  },
+
   async headers() {
     return [
       {
@@ -109,9 +117,14 @@ const nextConfig: NextConfig = {
     ];
   },
 
-  // Forward the app URL to client components
+  // Forward the app URL to client components. It is not set in Vercel, and
+  // the localhost default used to be baked into production builds, so
+  // certificate and digest-email links pointed at localhost. On Vercel
+  // (VERCEL=1 at build time) fall back to the primary public domain.
   env: {
-    NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000",
+    NEXT_PUBLIC_APP_URL:
+      process.env.NEXT_PUBLIC_APP_URL ??
+      (process.env.VERCEL ? "https://healthtransformationreview.org" : "http://localhost:3000"),
   },
 };
 

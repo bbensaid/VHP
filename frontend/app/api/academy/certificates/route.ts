@@ -72,7 +72,8 @@ export async function POST(req: NextRequest) {
   sendEvent(user.email!, "course_completed", {
     courseTitle,
     courseSlug,
-    verifyUrl: `${process.env.NEXT_PUBLIC_APP_URL ?? ""}/verify/${hash}`,
+    // The domain the student is on, so the link matches the brand they used.
+    verifyUrl: `${new URL(req.url).origin}/verify/${hash}`,
   }).catch(console.error);
 
   return NextResponse.json({
