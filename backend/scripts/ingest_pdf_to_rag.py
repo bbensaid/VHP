@@ -27,7 +27,7 @@ assert path.is_file(), f"not found: {path}"
 
 # Same metadata rule as build_index(): known files get enriched labels.
 meta = {"source": "pdf", "source_type": "general", "pillar": "General", "filename": name}
-for key, m in indexing._known_pdf_metadata().items():
+for key, m in sorted(indexing._known_pdf_metadata().items(), key=lambda kv: -len(kv[0])):  # longest name wins
     if key in name.lower():
         meta = {**m, "source": "pdf", "filename": name}
         break

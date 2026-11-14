@@ -45,3 +45,6 @@ Book Latest Version/
 # Narration audio is served from Supabase Storage (bucket narration-audio); never commit it
 frontend/public/audio/narration/*.m4a
 frontend/public/audio/narration/*.wav
+
+# Licensed reference books used by the AI Analyst. Keep them off the public repo.
+backend/data/Dictionary of Health Economics.pdf

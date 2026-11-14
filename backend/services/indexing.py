@@ -280,6 +280,15 @@ _VT_PDF_METADATA: dict[str, dict] = {
         "year": "2014",
         "tags": "health economics,textbook,insurance,adverse selection,moral hazard,qaly,cost-effectiveness,demand,supply,physicians,hospitals",
     },
+    # Definitions of health-economics terms. Publisher copy supplied by the
+    # author 2026-11-13 (replaces a shadow-library copy removed that day).
+    "dictionary of health economics.pdf": {
+        "pillar": "Economics",
+        "source_type": "general",
+        "title": "The Dictionary of Health Economics (Culyer, Edward Elgar)",
+        "report": "The Dictionary of Health Economics — A. J. Culyer",
+        "tags": "health economics,dictionary,definitions,glossary,terms,qaly,cost-effectiveness,insurance,equity",
+    },
     "wyman_report.pdf": {
         "pillar": "Vermont / Act 167",
         "source_type": "vermont_policy",
@@ -410,7 +419,7 @@ async def build_index() -> VectorStoreIndex:
     def _get_pdf_metadata(pdf_path: Path) -> dict:
         """Return enriched metadata for known Vermont/policy PDFs, generic otherwise."""
         fname_lower = pdf_path.name.lower()
-        for key, meta in _VT_PDF_METADATA.items():
+        for key, meta in sorted(_VT_PDF_METADATA.items(), key=lambda kv: -len(kv[0])):  # longest name wins
             if key in fname_lower:
                 return {**meta, "source": "pdf", "filename": pdf_path.name}
         return {"source": "pdf", "source_type": "general", "pillar": "General", "filename": pdf_path.name}
