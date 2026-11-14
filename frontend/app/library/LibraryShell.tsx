@@ -27,7 +27,8 @@ type Bookmark = {
 };
 
 interface Props {
-  userName: string;
+  /** null = visitor without an account */
+  userName: string | null;
   bookmarks: Bookmark[];
   enrollments: EnrollmentRow[];
   certifications: CertificationRow[];
@@ -121,9 +122,23 @@ export default function LibraryShell({
       {/* Header */}
       <div className="mb-8">
         <h1 className="text-2xl font-black text-slate-900">My Library</h1>
-        <p className="text-sm text-slate-500 mt-1">
-          Welcome back, {userName}. Everything you&rsquo;ve saved or are working on.
-        </p>
+        {userName ? (
+          <p className="text-sm text-slate-500 mt-1">
+            Welcome back, {userName}. Everything you&rsquo;ve saved or are working on.
+          </p>
+        ) : (
+          <p className="text-sm text-slate-500 mt-1">
+            You&rsquo;re browsing as a guest.{" "}
+            <a href="/signup" className="font-semibold text-blue-700 hover:underline">
+              Create a free account
+            </a>{" "}
+            or{" "}
+            <a href="/login?from=%2Flibrary" className="font-semibold text-blue-700 hover:underline">
+              sign in
+            </a>{" "}
+            to save articles, chapters, notes and course progress here.
+          </p>
+        )}
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-8">

@@ -4,22 +4,18 @@ import { RESEARCH_LAB_TOOL_COUNT } from "@/lib/taxonomy/tools";
 import { useState } from "react";
 import Link from "next/link";
 import PillarHero from "@/components/home/PillarHero";
-import BookmarkButton from "@/components/BookmarkButton";
 import { PILLARS, EQUITY_IMPERATIVE } from "@/lib/taxonomy";
 import { useBrand } from "@/components/BrandContext";
 import { isAdvisoryPath } from "@/lib/brand";
-
-interface FeedItem {
-  _id: string;
-  _type: string;
-  title: string;
-  pillar?: string;
-  slug?: string;
-}
+import { timeAgo, type EnrichedWireItem } from "@/lib/wire/tag";
 
 interface HomeContentProps {
-  feed: FeedItem[] | null;
+  /** Live Wire headlines, already pillar-tagged (lib/wire). */
+  feed: EnrichedWireItem[];
 }
+
+// How many headlines the home page shows; the rest are on /the-wire.
+const HOME_WIRE_LIMIT = 8;
 
 // ─── FILTER CHIP CONFIG ──────────────────────────────────────────────────────
 
@@ -40,40 +36,21 @@ const IMPERATIVE_FILTER = {
   color: chipClasses(EQUITY_IMPERATIVE),
 };
 
-const TYPE_FILTERS = [
-  { id: "all", label: "All Formats" },
-  { id: "report", label: "Reports" },
-  { id: "course", label: "Courses" },
-  { id: "webinar", label: "Webinars" },
-];
-
 // ─── BADGE STYLES ────────────────────────────────────────────────────────────
 
-const getBadgeStyle = (type: string, pillar: string) => {
-  if (type === "webinar") return "text-rose-700 bg-rose-50 border-rose-200";
-  if (type === "course") return "text-emerald-700 bg-emerald-50 border-emerald-200";
-  switch (pillar?.toLowerCase()) {
+const getBadgeStyle = (pillar: string) => {
+  switch (pillar.toLowerCase()) {
     case "policy": return "text-blue-700 bg-blue-50 border-blue-200";
     case "economics": return "text-emerald-700 bg-emerald-50 border-emerald-200";
     case "technology": return "text-indigo-700 bg-indigo-50 border-indigo-200";
     case "clinical": return "text-red-700 bg-red-50 border-red-200";
-    case "equity": return "text-violet-700 bg-violet-50 border-violet-200";
     case "operations": return "text-amber-700 bg-amber-50 border-amber-200";
     default: return "text-slate-700 bg-slate-50 border-slate-200";
   }
 };
 
-const getBadgeLabel = (type: string, pillar: string) => {
-  if (type === "webinar") return "EVENT";
-  if (type === "course") return "COURSE";
-  return pillar ? pillar.toUpperCase() : "NEWS";
-};
-
-const getItemHref = (item: FeedItem) => {
-  if (item._type === "webinar") return `/academy/webinars/${item.slug}`;
-  if (item._type === "course") return `/academy/courses/${item.slug}`;
-  return `/advisory/reports`;
-};
+const getBadgeLabel = (pillar: string) =>
+  pillar && pillar !== "General" ? pillar.toUpperCase() : "NEWS";
 
 // ─── PLATFORM CAPABILITIES ───────────────────────────────────────────────────
 
@@ -175,16 +152,16 @@ export default function HomeContent({ feed }: HomeContentProps) {
   const { config: brand } = useBrand();
   // Advisory is Solutions-only; the Review brand blocks those pages.
   const showLink = (href: string) => brand.showAdvisory || !isAdvisoryPath(href);
-  const [typeFilter, setTypeFilter] = useState("all");
 
-  const filteredFeed = feed?.filter((item) => {
-    const pillarMatch =
+  // Equity is a cross-cutting flag on any pillar, not a pillar value.
+  const filteredFeed = feed
+    .filter((item) =>
       pillarFilter === "all" ||
-      item.pillar?.toLowerCase() === pillarFilter;
-    const typeMatch =
-      typeFilter === "all" || item._type === typeFilter;
-    return pillarMatch && typeMatch;
-  });
+      (pillarFilter === IMPERATIVE_FILTER.id
+        ? item.equityFlag
+        : item.pillar.toLowerCase() === pillarFilter)
+    )
+    .slice(0, HOME_WIRE_LIMIT);
 
   return (
     <>
@@ -296,81 +273,64 @@ export default function HomeContent({ feed }: HomeContentProps) {
             >
               {IMPERATIVE_FILTER.label}
             </button>
-            <div className="w-px bg-slate-200 mx-1 self-stretch" />
-            {TYPE_FILTERS.map((f) => (
-              <button
-                key={f.id}
-                onClick={() => setTypeFilter(f.id)}
-                className={`px-3 py-1 rounded-full text-xs font-bold border transition-all ${
-                  typeFilter === f.id
-                    ? "bg-slate-800 text-white border-slate-800"
-                    : "bg-white text-slate-500 border-slate-200 hover:bg-slate-100"
-                }`}
-              >
-                {f.label}
-              </button>
-            ))}
           </div>
         </div>
 
-        {/* Feed items */}
+        {/* Feed items — live headlines, each opening the source article */}
         <div className="space-y-0">
-          {filteredFeed && filteredFeed.length > 0 ? (
-            filteredFeed.map((item, i) => (
-              <div
-                key={item._id ?? i}
+          {filteredFeed.length > 0 ? (
+            filteredFeed.map((item) => (
+              <a
+                key={item.url}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 py-3 md:py-4 border-b border-slate-100 hover:bg-slate-50 transition-colors px-2 rounded -mx-2 group"
               >
-                <div className="flex items-center justify-between md:justify-start gap-3 md:w-32 md:shrink-0">
+                <div className="flex items-center gap-3 md:w-32 md:shrink-0">
                   <span
-                    className={`text-[10px] font-black px-2 py-1 rounded md:w-full text-center border ${getBadgeStyle(item._type, item.pillar ?? "")}`}
+                    className={`text-[10px] font-black px-2 py-1 rounded md:w-full text-center border ${getBadgeStyle(item.pillar)}`}
                   >
-                    {getBadgeLabel(item._type, item.pillar ?? "")}
+                    {getBadgeLabel(item.pillar)}
                   </span>
-                  {/* Bookmark always visible on mobile, hover-reveal on desktop */}
-                  <div className="md:hidden">
-                    <BookmarkButton
-                      sanityId={item._id}
-                      slug={item.slug ?? ""}
-                      title={item.title}
-                      pillar={item.pillar}
-                      contentType={item._type}
-                    />
-                  </div>
                 </div>
-                <div className="grow">
-                  <Link
-                    href={getItemHref(item)}
-                    className="text-sm md:text-base font-bold text-slate-800 leading-snug hover:text-indigo-600 transition-colors"
-                  >
+                <div className="grow min-w-0">
+                  <p className="text-sm md:text-base font-bold text-slate-800 leading-snug group-hover:text-indigo-600 transition-colors">
                     {item.title}
-                  </Link>
+                  </p>
+                  <p className="text-xs text-slate-400 mt-0.5">
+                    {item.label}
+                    {item.published_at && <> · {timeAgo(item.published_at)}</>}
+                    {item.equityFlag && <span className="ml-2 text-violet-600 font-semibold">⚖ Equity</span>}
+                  </p>
                 </div>
-                <BookmarkButton
-                  sanityId={item._id}
-                  slug={item.slug ?? ""}
-                  title={item.title}
-                  pillar={item.pillar}
-                  contentType={item._type}
-                  className="hidden md:block shrink-0 opacity-0 group-hover:opacity-100 focus:opacity-100"
-                />
-              </div>
+              </a>
             ))
-          ) : (
+          ) : feed.length > 0 ? (
             <div className="py-12 text-center text-slate-400 text-sm">
-              No items match the selected filters.
+              No headlines match this filter right now.
               <button
-                onClick={() => { setPillarFilter("all"); setTypeFilter("all"); }}
+                onClick={() => setPillarFilter("all")}
                 className="ml-2 text-indigo-500 hover:underline font-bold"
               >
-                Clear filters
+                Show all
               </button>
+            </div>
+          ) : (
+            <div className="py-12 text-center text-slate-400 text-sm">
+              Headlines are refreshing.{" "}
+              <Link href="/the-wire" className="text-indigo-500 hover:underline font-bold">
+                Open The Wire
+              </Link>
             </div>
           )}
         </div>
-        <button className="w-full mt-6 py-3 border border-slate-200 text-slate-500 font-bold text-sm rounded hover:bg-slate-50 hover:text-slate-900 transition-colors">
-          Load More Intelligence
-        </button>
+        <Link
+          href="/the-wire"
+          className="block w-full mt-6 py-3 border border-slate-200 text-center text-slate-500 font-bold text-sm rounded hover:bg-slate-50 hover:text-slate-900 transition-colors"
+        >
+          More on The Wire →
+        </Link>
       </section>
 
       {/* PLATFORM CAPABILITIES */}

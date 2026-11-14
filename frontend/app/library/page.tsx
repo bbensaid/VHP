@@ -1,7 +1,7 @@
 // app/library/page.tsx — My Library: personal hub for everything the user has accumulated.
 // Sections: Overview, Saved Articles, Saved Chapters, Notes, My Courses, AI Chats, Tool Results, Reading History.
 
-import { requireAuth } from "@/lib/auth";
+import { getUser } from "@/lib/auth";
 import { db } from "@/lib/db/client";
 import {
   getUserEnrollments,
@@ -16,7 +16,22 @@ export const metadata = {
 };
 
 export default async function LibraryPage() {
-  const user = await requireAuth("/library");
+  const user = await getUser();
+
+  // A visitor without an account sees an empty library and a sign-in prompt.
+  // Redirecting to /login instead made a loop: the login page's "Skip"
+  // button sends them straight back here.
+  if (!user) {
+    return (
+      <LibraryShell
+        userName={null}
+        bookmarks={[]}
+        enrollments={[]}
+        certifications={[]}
+        completedModuleCount={0}
+      />
+    );
+  }
 
   const [bookmarksRes, enrollments, certifications, moduleProgress] =
     await Promise.all([

@@ -3,6 +3,7 @@ import WireFeed from "./WireFeed";
 import { getUser } from "@/lib/auth";
 import VermontBillTracker from "./VermontBillTracker";
 import { getTrackedBills, type BillStatus } from "@/lib/wire/vt-bills";
+import { getWireFeed, type WireFeed as WireFeedData } from "@/lib/wire/feed";
 
 export const metadata = {
   title: "The Wire | HTR Live Intelligence",
@@ -11,30 +12,9 @@ export const metadata = {
 
 export const revalidate = 900; // 15 minutes
 
-interface WireItem {
-  title: string;
-  url: string;
-  source: string;
-  label: string;
-  published_at: string | null;
-}
-
-interface UnavailableSource {
-  label: string;
-  reason: string;
-  url: string;
-}
-
-async function getWireItems(): Promise<{
-  items: WireItem[];
-  fetched_at: string;
-  unavailable_sources: UnavailableSource[];
-}> {
+async function getWireItems(): Promise<WireFeedData> {
   try {
-    const baseUrl = process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000";
-    const res = await fetch(`${baseUrl}/api/wire`, { next: { revalidate: 900 } });
-    if (!res.ok) throw new Error("Wire API error");
-    return res.json();
+    return await getWireFeed();
   } catch {
     return { items: [], fetched_at: new Date().toISOString(), unavailable_sources: [] };
   }

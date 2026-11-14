@@ -1,7 +1,8 @@
-import { client } from "@/lib/sanity";
 import HomeContent from "@/components/HomeContent";
 import { getBrandConfig } from "@/lib/brand";
 import { currentBrand } from "@/lib/brand-server";
+import { getWireFeed } from "@/lib/wire/feed";
+import { tagItem, type EnrichedWireItem } from "@/lib/wire/tag";
 
 // Titled per brand: one deployment serves the Review and Solutions domains
 // (lib/brand.ts), and a hard-coded "Review" title showed on Solutions too.
@@ -18,15 +19,19 @@ export async function generateMetadata() {
   };
 }
 
-export const revalidate = 120; // Fallback ISR: revalidate every 2 minutes (webhook busts sooner)
+export const revalidate = 120; // Fallback ISR: revalidate every 2 minutes
 
 // The hero reads lib/briefings (versioned, sourced, checked by
-// scripts/check-briefings.ts), so the homepage only fetches the feed.
-async function getFeed() {
-  const query = `*[_type in ["course", "webinar"]] | order(_createdAt desc)[0...5]{
-    _id, _type, title, _createdAt, "pillar": pillar, "slug": slug.current, "date": date
-  }`;
-  return client.fetch(query, {}, { next: { revalidate: 120, tags: ["course", "webinar"] } });
+// scripts/check-briefings.ts). The Wire section shows the same live headline
+// feed as /the-wire. It used to query Sanity course/webinar documents, of
+// which there are none, so it always read "No items match".
+async function getFeed(): Promise<EnrichedWireItem[]> {
+  try {
+    const { items } = await getWireFeed();
+    return items.map(tagItem);
+  } catch {
+    return [];
+  }
 }
 
 export default async function HomePage() {
