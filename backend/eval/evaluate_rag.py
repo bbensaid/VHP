@@ -228,7 +228,7 @@ async def retrieve_context(question: str, pillar: str | None = None) -> list[str
     from supabase import create_client
 
     GROQ_API_KEY   = os.getenv("GROQ_API_KEY")
-    GROQ_MODEL     = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+    GROQ_MODEL     = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
     Settings.llm         = GroqLLM(model=GROQ_MODEL, api_key=GROQ_API_KEY)

@@ -17,8 +17,10 @@ ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
 OPENAI_API_KEY: str | None = os.getenv("OPENAI_API_KEY")
 
 # Model routing by tier
-MODEL_FREE       = "llama-3.1-8b-instant"
-MODEL_SUBSCRIBER = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+# Groq retired the Llama 3.x models (by 2026-11); these are its current ones.
+MODEL_FREE       = "openai/gpt-oss-20b"
+MODEL_SUBSCRIBER = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
+GROQ_CONTEXT_WINDOW = 131072  # llama_index assumes 3,900 for model names it doesn't know
 MODEL_ADVISORY   = "claude-sonnet-4-6"
 EMBEDDING_MODEL  = "text-embedding-3-small"
 

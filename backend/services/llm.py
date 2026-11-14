@@ -30,6 +30,7 @@ from config import (
     ANTHROPIC_API_KEY,
     EMBEDDING_MODEL,
     GROQ_API_KEY,
+    GROQ_CONTEXT_WINDOW,
     MODEL_ADVISORY,
     MODEL_FREE,
     MODEL_SUBSCRIBER,
@@ -60,7 +61,14 @@ def _is_retryable(exc: Exception) -> bool:
         return True
     if any(kw in msg for kw in ("rate limit", "ratelimit", "overloaded", "service unavailable", "bad gateway", "timeout")):
         return True
+    # A retired model must fall through to the next one, not kill every answer.
+    if any(kw in msg for kw in ("model_not_found", "does not exist", "decommissioned")):
+        return True
     return False
+
+
+def _groq(model: str) -> LLM:
+    return GroqLLM(model=model, api_key=GROQ_API_KEY, context_window=GROQ_CONTEXT_WINDOW)
 
 
 class FallbackLLM(LLM):
@@ -72,8 +80,8 @@ class FallbackLLM(LLM):
 
     Usage:
         llm = FallbackLLM(
-            primary=GroqLLM(model="llama-3.3-70b-versatile", ...),
-            fallbacks=[GroqLLM(model="llama-3.1-8b-instant", ...)],
+            primary=GroqLLM(model="openai/gpt-oss-120b", ...),
+            fallbacks=[GroqLLM(model="openai/gpt-oss-20b", ...)],
         )
     """
 
@@ -169,7 +177,22 @@ class FallbackLLM(LLM):
         last_exc: Optional[Exception] = None
         for llm in self._all_llms():
             try:
-                return await llm.astream_chat(messages, **kwargs)
+                gen = await llm.astream_chat(messages, **kwargs)
+                # The request is only sent when the stream is first read, so pull
+                # the first chunk here — otherwise errors escape the fallback.
+                first = await gen.__anext__()
+
+                async def _replay(first=first, gen=gen):
+                    yield first
+                    async for chunk in gen:
+                        yield chunk
+
+                return _replay()
+            except StopAsyncIteration:
+                async def _empty():
+                    return
+                    yield
+                return _empty()
             except Exception as exc:
                 if not _is_retryable(exc):
                     raise
@@ -187,7 +210,7 @@ def init_global_settings() -> None:
     if not OPENAI_API_KEY:
         raise ValueError("OPENAI_API_KEY is required in backend/.env")
 
-    Settings.llm = GroqLLM(model=MODEL_SUBSCRIBER, api_key=GROQ_API_KEY)
+    Settings.llm = _groq(MODEL_SUBSCRIBER)
     Settings.embed_model = OpenAIEmbedding(model=EMBEDDING_MODEL, api_key=OPENAI_API_KEY)
     log.info(f"LLM: Groq {MODEL_SUBSCRIBER} | Embeddings: OpenAI {EMBEDDING_MODEL}")
 
@@ -196,17 +219,17 @@ def get_llm_for_role(role: str) -> LLM:
     """
     Return an LLM (wrapped in FallbackLLM) for the user's subscription tier:
 
-      free / student       → llama-3.1-8b-instant  (Groq)
+      free / student       → MODEL_FREE (Groq)
                              fallback: gpt-4o-mini  (OpenAI, if Groq fully down)
 
-      subscriber           → llama-3.3-70b-versatile (Groq)
-                             fallback: llama-3.1-8b-instant → gpt-4o-mini
+      subscriber           → MODEL_SUBSCRIBER (Groq)
+                             fallback: MODEL_FREE → gpt-4o-mini
 
-      advisory / admin     → claude-sonnet-4-6 (Anthropic)
-                             fallback: llama-3.3-70b-versatile → gpt-4o-mini
+      advisory / admin     → MODEL_ADVISORY (Anthropic)
+                             fallback: MODEL_SUBSCRIBER → gpt-4o-mini
     """
-    fast_llm = GroqLLM(model=MODEL_FREE, api_key=GROQ_API_KEY)
-    sub_llm  = GroqLLM(model=MODEL_SUBSCRIBER, api_key=GROQ_API_KEY)
+    fast_llm = _groq(MODEL_FREE)
+    sub_llm  = _groq(MODEL_SUBSCRIBER)
 
     # OpenAI last-resort fallback (only when OPENAI_API_KEY is set)
     openai_fallback: list[LLM] = []
