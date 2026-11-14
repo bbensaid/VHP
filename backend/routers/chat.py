@@ -40,6 +40,7 @@ from services.retrieval import (
     boost_vermont_nodes,
     extract_citations,
     rerank_nodes,
+    trim_llm_metadata,
 )
 from services.tools import ALL_TOOLS
 
@@ -673,6 +674,7 @@ async def chat(
             nodes = boost_vermont_nodes(retrieval_query, nodes)
             nodes = rerank_nodes(retrieval_query, nodes, top_k=5)
 
+        nodes = trim_llm_metadata(nodes)
         citations = extract_citations(nodes)
 
         # ── LLM + engine setup ─────────────────────────────────────────────────

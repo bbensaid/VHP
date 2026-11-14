@@ -132,6 +132,21 @@ def boost_vermont_nodes(query: str, nodes: List[NodeWithScore]) -> List[NodeWith
     return boosted
 
 
+# Only these labels are shown to the LLM next to each passage. Everything else
+# (_node_content — a JSON copy of the whole node — window, original_text, file
+# paths, sizes, dates, ids) stays in metadata for citations but is hidden: it was
+# ~80% of every prompt (11,445 tokens for "What is a QALY?", measured 2026-11-14).
+_LLM_VISIBLE_METADATA = {"title", "pillar", "source_type", "url", "page_label"}
+
+
+def trim_llm_metadata(nodes: List[NodeWithScore]) -> List[NodeWithScore]:
+    for n in nodes:
+        hidden = [k for k in n.node.metadata if k not in _LLM_VISIBLE_METADATA]
+        n.node.excluded_llm_metadata_keys = hidden
+        n.node.excluded_embed_metadata_keys = hidden
+    return nodes
+
+
 def rerank_nodes(query: str, nodes: List[NodeWithScore], top_k: int = 5) -> List[NodeWithScore]:
     """
     Re-rank nodes using FlashRank cross-encoder (ms-marco-MiniLM-L-12-v2).
