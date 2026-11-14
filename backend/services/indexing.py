@@ -131,7 +131,12 @@ async def fetch_sanity_content() -> List[Document]:
                     pillar = doc["pillars"][0] if doc["pillars"] else None
 
                 slug = doc.get("slug") or ""
+                # id_ = the Sanity _id. LlamaIndex stores a document's id_ as
+                # doc_id / ref_doc_id on every passage (overwriting our own
+                # "doc_id"), so without this the library lost the Sanity id and
+                # an update could never find the old passages to replace.
                 documents.append(Document(
+                    id_=doc["_id"],
                     text=content,
                     metadata={
                         "source":      content_type,
@@ -609,6 +614,7 @@ async def fetch_single_sanity_doc(doc_id: str) -> Optional[Document]:
         pillar = doc["pillars"][0] if doc["pillars"] else None
 
     return Document(
+        id_=doc_id,  # see fetch_sanity_content: keeps the Sanity id on every passage
         text=content,
         metadata={
             "source":  doc.get("_type", "sanity"),
@@ -643,7 +649,8 @@ async def incremental_reindex_document(doc_id: str, index: VectorStoreIndex) -> 
                         "Authorization": f"Bearer {SUPABASE_SERVICE_ROLE_KEY}",
                         "Prefer":        "return=minimal",
                     },
-                    params={"metadata_->>doc_id": f"eq.{doc_id}"},
+                    # ref_doc_id holds the Sanity _id (Document id_) and is indexed
+                    params={"metadata_->>ref_doc_id": f"eq.{doc_id}"},
                     timeout=15,
                 )
                 if r.status_code not in (200, 204):
