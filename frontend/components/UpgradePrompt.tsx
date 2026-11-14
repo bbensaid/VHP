@@ -1,6 +1,7 @@
 "use client";
 
 import { RESEARCH_LAB_TOOL_COUNT } from "@/lib/taxonomy/tools";
+import { CONTACT_HREF } from "@/lib/brand";
 import Link from "next/link";
 import { LockClosedIcon, SparklesIcon, ChartBarIcon, AcademicCapIcon, BriefcaseIcon } from "@heroicons/react/24/outline";
 
@@ -107,7 +108,7 @@ const TIER_CONFIG: Record<Tier, {
       "Executive briefings & reports",
     ],
     cta: "Book a Discovery Call",
-    ctaHref: "/advisory/contact",
+    ctaHref: CONTACT_HREF,
     ctaStyle: "bg-amber-600 hover:bg-amber-700 text-white",
     secondaryCta: "Learn About Advisory",
     secondaryHref: "/advisory",

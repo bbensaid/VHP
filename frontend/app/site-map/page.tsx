@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { CONTACT_HREF, getBrandConfig, isAdvisoryPath } from "@/lib/brand";
+import { currentBrand } from "@/lib/brand-server";
 
 export const metadata = {
   title: "Site Map | HTR",
@@ -36,7 +38,7 @@ const sections = [
       { label: "Mission & Vision", href: "/mission" },
       { label: "Our Methodology", href: "/about/methodology" },
       { label: "FAQ", href: "/faq" },
-      { label: "Contact", href: "/advisory/contact" },
+      { label: "Contact", href: CONTACT_HREF },
       { label: "Subscribe", href: "/subscribe" },
     ],
   },
@@ -49,7 +51,9 @@ const sections = [
   },
 ];
 
-export default function SitemapPage() {
+export default async function SitemapPage() {
+  // Advisory links are Solutions-only; the Review brand blocks those pages.
+  const { showAdvisory } = getBrandConfig(await currentBrand());
   return (
     <div className="max-w-4xl mx-auto px-4 py-24">
       <div className="mb-12 border-b border-slate-200 pb-8">
@@ -63,7 +67,7 @@ export default function SitemapPage() {
               {section.title}
             </h2>
             <ul className="space-y-2.5">
-              {section.links.map((link) => (
+              {section.links.filter((link) => showAdvisory || !isAdvisoryPath(link.href)).map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

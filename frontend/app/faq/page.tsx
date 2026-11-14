@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { CONTACT_HREF } from "@/lib/brand";
 import Link from "next/link";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
@@ -236,7 +237,7 @@ export default function FAQPage() {
                     { label: "Methodology", href: "/about/methodology" },
                     { label: "Dashboard", href: "/dashboard" },
                     { label: "Subscribe", href: "/subscribe" },
-                    { label: "Advisory", href: "/advisory/contact" },
+                    { label: "Contact", href: CONTACT_HREF },
                   ].map((l) => (
                     <Link
                       key={l.label}
@@ -283,7 +284,7 @@ export default function FAQPage() {
                 Our advisory team responds to substantive inquiries within 48 business hours. For urgent research needs, note your timeline in the project details field.
               </p>
               <Link
-                href="/advisory/contact"
+                href={CONTACT_HREF}
                 className="inline-flex items-center gap-2 bg-white text-indigo-700 px-8 py-3 rounded-lg font-black hover:bg-indigo-50 transition-colors"
               >
                 Contact the Team →

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CONTACT_HREF } from "@/lib/brand";
 import { CHANGELOG, type ChangelogCategory } from "@/lib/data/changelog";
 
 export const metadata = {
@@ -45,7 +46,7 @@ export default function ChangelogPage() {
           Platform updates in reverse-chronological order. For raw commit history see GitHub. Significant changes — new routes, refactors, behavior changes — are listed here for users.
         </p>
         <p className="text-xs text-slate-400 mt-3">
-          Have feedback? <Link href="/advisory/contact" className="text-indigo-600 hover:underline">Tell us</Link>.
+          Have feedback? <Link href={CONTACT_HREF} className="text-indigo-600 hover:underline">Tell us</Link>.
         </p>
       </header>
 

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useSidebar } from "@/components/SidebarContext";
+import { useBrand } from "@/components/BrandContext";
 import {
   HomeIcon,
   AcademicCapIcon,
@@ -28,6 +29,9 @@ const NAV_ITEMS = [
 export default function BottomNav() {
   const pathname = usePathname() ?? "";
   const { isRightOpen, setRightOpen } = useSidebar();
+  const { config: brand } = useBrand();
+  // Advisory is a Solutions-only section; the Review brand blocks its pages.
+  const navItems = NAV_ITEMS.filter((i) => brand.showAdvisory || i.href !== "/advisory");
 
   const isActive = (href: string, exact: boolean) =>
     exact ? pathname === href : pathname === href || pathname.startsWith(href + "/");
@@ -38,7 +42,7 @@ export default function BottomNav() {
       style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
       aria-label="Bottom navigation"
     >
-      {NAV_ITEMS.map(({ href, label, Icon, IconActive, matchExact }) => {
+      {navItems.map(({ href, label, Icon, IconActive, matchExact }) => {
         const active = isActive(href, matchExact);
         const ActiveIcon = active ? IconActive : Icon;
         return (

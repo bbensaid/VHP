@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { CONTACT_HREF } from "@/lib/brand";
 import Link from "next/link";
 import FromTheBook from "@/components/FromTheBook";
 import SequenceSimulator from "@/components/framework/SequenceSimulator";
@@ -571,10 +572,10 @@ export default function HTRSimulatorPage() {
                   Contact the HTR team to discuss onboarding your context as a new use case.
                 </p>
                 <Link
-                  href="/advisory"
+                  href={CONTACT_HREF}
                   className="inline-flex items-center gap-2 bg-violet-600 hover:bg-violet-500 text-white font-bold text-sm px-4 py-2 rounded-lg transition-colors"
                 >
-                  Contact Advisory Team <ArrowTopRightOnSquareIcon className="w-4 h-4" />
+                  Contact the HTR Team <ArrowTopRightOnSquareIcon className="w-4 h-4" />
                 </Link>
               </div>
             </div>

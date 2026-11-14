@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CONTACT_HREF } from "@/lib/brand";
 
 export const metadata = {
   title: "Our Mission | HTR",
@@ -282,10 +283,10 @@ export default function MissionPage() {
                 Read Our Methodology
               </Link>
               <Link
-                href="/advisory/contact"
+                href={CONTACT_HREF}
                 className="inline-flex items-center gap-2 bg-indigo-700 text-white border border-indigo-500 px-8 py-4 rounded-lg font-black hover:bg-indigo-800 transition-colors"
               >
-                Engage Advisory
+                Contact Us
               </Link>
             </div>
           </div>

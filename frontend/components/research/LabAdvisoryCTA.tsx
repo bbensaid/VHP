@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { useBrand } from '@/components/BrandContext'
 
 interface LabAdvisoryCTAProps {
   category: string           // e.g. "Interoperability & Risk"
@@ -19,6 +20,9 @@ export default function LabAdvisoryCTA({
   bullets,
   toolParam,
 }: LabAdvisoryCTAProps) {
+  const { config: brand } = useBrand()
+  // Advisory is Solutions-only; the Review brand blocks those pages.
+  if (!brand.showAdvisory) return null
   const contactHref = `/advisory/contact?from=research-lab&category=${encodeURIComponent(toolParam)}&practice=${encodeURIComponent(practiceLabel)}`
 
   return (

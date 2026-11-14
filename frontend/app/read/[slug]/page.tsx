@@ -18,6 +18,8 @@ import {
 import { resolvePlatformLink, PILLARS } from "@/lib/taxonomy";
 import BookmarkChapterButton from "@/components/BookmarkChapterButton";
 import ChapterNotes from "@/components/ChapterNotes";
+import { getBrandConfig, isAdvisoryPath } from "@/lib/brand";
+import { currentBrand } from "@/lib/brand-server";
 import "./book-reader.css";
 
 // ─── Static params (generates one page per chapter at build time) ───────────
@@ -101,6 +103,9 @@ export default async function ChapterReaderPage(
   const { slug } = await params;
   const track = getTrackBySlug(slug);
   if (!track) notFound();
+  // Advisory links are Solutions-only; the Review brand blocks those pages.
+  const { showAdvisory } = getBrandConfig(await currentBrand());
+  const platformLinks = track.chapter.platformLinks.map((e) => resolvePlatformLink(e)).filter((l) => showAdvisory || !isAdvisoryPath(l.href));
 
   const book = await readBookChapter(track.slug);
   const text = book ? null : await readNarrationText(track);
@@ -241,14 +246,13 @@ export default async function ChapterReaderPage(
           <ChapterNotes slug={track.slug} />
 
           {/* Platform links for this chapter */}
-          {track.chapter.platformLinks.length > 0 && (
+          {platformLinks.length > 0 && (
             <div className="rounded-xl border border-slate-200 bg-white p-4">
               <h3 className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-3">
                 Platform companion
               </h3>
               <ul className="space-y-1.5">
-                {track.chapter.platformLinks.map((entry, i) => {
-                  const link = resolvePlatformLink(entry);
+                {platformLinks.map((link, i) => {
                   return (
                     <li key={`${link.href}-${i}`}>
                       <Link

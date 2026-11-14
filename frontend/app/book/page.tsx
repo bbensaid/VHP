@@ -23,6 +23,8 @@ import { getAllTracks } from "@/lib/narration";
 import { DEPENDENCIES } from "@/lib/framework/dependencies";
 import { getCoursesByChapter, type PillarCourse } from "@/lib/course-api";
 import { client } from "@/lib/sanity";
+import { getBrandConfig, isAdvisoryPath } from "@/lib/brand";
+import { currentBrand } from "@/lib/brand-server";
 
 interface ChapterBrief { _id: string; title: string; pillar?: string; slug?: { current: string } }
 
@@ -144,6 +146,8 @@ const KEY_CONCEPTS = [
 // ─── PAGE ─────────────────────────────────────────────────────────────────────
 
 export default async function BookPage() {
+  // Advisory links are Solutions-only; the Review brand blocks those pages.
+  const { showAdvisory } = getBrandConfig(await currentBrand());
   // Book ↔ platform tie-in (§7.2): courses + analysis briefs per chapter num.
   const [coursesByChapter, briefsByChapter, editorialByChapter] = await Promise.all([
     getCoursesByChapter(),
@@ -422,8 +426,7 @@ export default async function BookPage() {
                               Platform
                             </p>
                             <div className="flex flex-wrap gap-1.5">
-                              {ch.platformLinks.map((entry, i) => {
-                                const link = resolvePlatformLink(entry);
+                              {ch.platformLinks.map((e) => resolvePlatformLink(e)).filter((l) => showAdvisory || !isAdvisoryPath(l.href)).map((link, i) => {
                                 return (
                                   <Link
                                     key={`${link.href}-${i}`}

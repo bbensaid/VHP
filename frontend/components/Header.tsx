@@ -22,6 +22,7 @@ import { usePathname } from "next/navigation";
 import { MicrophoneIcon } from "@heroicons/react/24/outline";
 import { useVoice } from "@/components/VoiceContext";
 import { useBrand } from "@/components/BrandContext";
+import { CONTACT_HREF } from "@/lib/brand";
 
 // ─── COMPANY DROPDOWN (top bar) ─────────────────────────────────────────────
 const companyItems = [
@@ -30,7 +31,7 @@ const companyItems = [
   { href: "/values", label: "Core Values" },
   { href: "/about/framework", label: "Our Framework" },
   { href: "/about/methodology", label: "Our Methodology" },
-  { href: "/advisory/contact", label: "Contact Us" },
+  { href: CONTACT_HREF, label: "Contact Us" },
 ];
 
 // ─── MEGA-MENU DATA ──────────────────────────────────────────────────────────
@@ -1135,7 +1136,7 @@ const Header = () => {
                 <span>·</span>
                 <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="hover:text-slate-600 dark:hover:text-slate-300">About</Link>
                 <span>·</span>
-                <Link href="/advisory/contact" onClick={() => setMobileMenuOpen(false)} className="hover:text-slate-600 dark:hover:text-slate-300">Contact</Link>
+                <a href={CONTACT_HREF} onClick={() => setMobileMenuOpen(false)} className="hover:text-slate-600 dark:hover:text-slate-300">Contact</a>
               </div>
             </div>
           </div>

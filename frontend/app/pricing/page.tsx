@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { CONTACT_HREF } from "@/lib/brand";
 import Link from "next/link";
 import { CheckIcon } from "@heroicons/react/24/outline";
 import { useRouter } from "next/navigation";
@@ -341,10 +342,10 @@ export default function PricingPage() {
             </p>
           </div>
           <Link
-            href="/advisory"
+            href={CONTACT_HREF}
             className="shrink-0 bg-rose-600 hover:bg-rose-700 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors"
           >
-            Contact Advisory
+            Contact Us
           </Link>
         </div>
 

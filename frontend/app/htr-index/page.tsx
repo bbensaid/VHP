@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CONTACT_HREF } from "@/lib/brand";
 import { brandedMetadata } from "@/lib/brand-server";
 // app/htr-index/page.tsx
 import Link from "next/link";
@@ -210,7 +211,7 @@ const MethodologyPage = () => {
                 License.
               </p>
               <Link
-                href="/advisory/contact"
+                href={CONTACT_HREF}
                 className="block w-full py-3 bg-indigo-600 text-white text-center font-bold text-sm rounded hover:bg-indigo-700 transition-colors"
               >
                 Request Data Access

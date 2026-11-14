@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { RESEARCH_LAB_TOOL_COUNT } from "@/lib/taxonomy/tools";
+import { getBrandConfig, isAdvisoryPath } from "@/lib/brand";
+import { currentBrand } from "@/lib/brand-server";
 import { ArrowRightIcon, BookOpenIcon, BeakerIcon, SparklesIcon, MicrophoneIcon, AcademicCapIcon } from "@heroicons/react/24/outline";
 
 export const metadata = {
@@ -87,7 +89,9 @@ const FIRST_STEPS = [
   },
 ];
 
-export default function GettingStartedPage() {
+export default async function GettingStartedPage() {
+  // Advisory/Connect are Solutions-only; the Review brand blocks those pages.
+  const { showAdvisory } = getBrandConfig(await currentBrand());
   return (
     <div className="min-h-screen bg-white dark:bg-slate-900">
 
@@ -217,7 +221,7 @@ export default function GettingStartedPage() {
               { label: "Five-Pillar Framework", url: "/about/framework" },
               { label: "Account & Subscription", url: "/account" },
               { label: "FAQ", url: "/faq" },
-            ].map(({ label, url }) => (
+            ].filter(({ url }) => showAdvisory || !isAdvisoryPath(url)).map(({ label, url }) => (
               <div key={url} className="flex items-center justify-between py-2 border-b border-slate-200 dark:border-slate-700">
                 <span className="text-sm text-slate-700 dark:text-slate-300">{label}</span>
                 <Link href={url} className="text-xs font-mono text-indigo-600 dark:text-indigo-400 hover:underline">

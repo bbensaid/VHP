@@ -6,6 +6,8 @@ import Link from "next/link";
 import PillarHero from "@/components/home/PillarHero";
 import BookmarkButton from "@/components/BookmarkButton";
 import { PILLARS, EQUITY_IMPERATIVE } from "@/lib/taxonomy";
+import { useBrand } from "@/components/BrandContext";
+import { isAdvisoryPath } from "@/lib/brand";
 
 interface FeedItem {
   _id: string;
@@ -170,6 +172,9 @@ const TRENDING_PILLARS = PILLARS.map((p) => ({
 
 export default function HomeContent({ feed }: HomeContentProps) {
   const [pillarFilter, setPillarFilter] = useState("all");
+  const { config: brand } = useBrand();
+  // Advisory is Solutions-only; the Review brand blocks those pages.
+  const showLink = (href: string) => brand.showAdvisory || !isAdvisoryPath(href);
   const [typeFilter, setTypeFilter] = useState("all");
 
   const filteredFeed = feed?.filter((item) => {
@@ -221,7 +226,7 @@ export default function HomeContent({ feed }: HomeContentProps) {
               desc: "Strategic consulting & custom research",
               bg: "bg-indigo-50 hover:bg-indigo-100 border-indigo-200 hover:border-indigo-300",
             },
-          ].map((card) => (
+          ].filter((card) => showLink(card.href)).map((card) => (
             <Link
               key={card.href}
               href={card.href}
@@ -251,7 +256,7 @@ export default function HomeContent({ feed }: HomeContentProps) {
               </span>
             </h2>
             <Link
-              href="/advisory/reports"
+              href="/the-wire"
               className="text-xs font-bold text-slate-500 hover:text-indigo-600 transition-colors"
             >
               View All →
@@ -379,7 +384,7 @@ export default function HomeContent({ feed }: HomeContentProps) {
           </h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {CAPABILITIES.map((cap) => (
+          {CAPABILITIES.filter((cap) => showLink(cap.href)).map((cap) => (
             <Link
               key={cap.href}
               href={cap.href}

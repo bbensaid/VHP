@@ -5,6 +5,7 @@ import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import { useBrand } from "@/components/BrandContext";
+import { CONTACT_HREF } from "@/lib/brand";
 
 const pillars = [
   {
@@ -85,7 +86,7 @@ const companyLinks = [
   { label: "Our Framework", href: "/about/framework" },
   { label: "Our Methodology", href: "/about/methodology" },
   { label: "FAQ", href: "/faq" },
-  { label: "Contact Us", href: "/advisory/contact" },
+  { label: "Contact Us", href: CONTACT_HREF },
 ];
 
 const platformLinks = [

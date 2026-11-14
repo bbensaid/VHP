@@ -3,6 +3,8 @@
 // text-slate-600 (≥ 4.5:1 vs white). Icon/decorative uses left as-is.
 
 "use client";
+import { useBrand } from "@/components/BrandContext";
+import { isAdvisoryPath } from "@/lib/brand";
 
 import React, { useEffect, useState, useMemo, useCallback } from "react";
 import { useRouter } from "next/navigation";
@@ -95,6 +97,7 @@ const SECTION_LABELS: Record<Section, string> = {
 };
 
 export default function CommandPalette() {
+  const { config: brand } = useBrand();
   const [isOpen, setIsOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -117,11 +120,13 @@ export default function CommandPalette() {
   }, []);
 
   const filteredCommands = useMemo(() => {
-    if (!query) return COMMANDS;
-    return COMMANDS.filter((c) =>
+    // Advisory/Connect/Community are Solutions-only; the Review brand blocks them.
+    const available = COMMANDS.filter((c) => brand.showAdvisory || !isAdvisoryPath(c.href));
+    if (!query) return available;
+    return available.filter((c) =>
       c.title.toLowerCase().includes(query.toLowerCase())
     );
-  }, [query]);
+  }, [query, brand.showAdvisory]);
 
   // Sanity content search — debounced, fires when query ≥ 2 chars
   useEffect(() => {

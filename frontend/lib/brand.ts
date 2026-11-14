@@ -51,6 +51,19 @@ export function getBrandConfig(brand: Brand): BrandConfig {
   return BRAND_CONFIG[brand];
 }
 
+// ─── CONTACT ──────────────────────────────────────────────────────────────────
+// Every general "Contact Us" link on all four domains opens an email to this
+// address (author's decision, 2026-11-14). /advisory/contact is NOT a contact
+// page: it is the Advisory engagement form, a future offering whose submit
+// button sends nothing, and it is blocked on the Review brand.
+export const CONTACT_EMAIL = "bechir.bensaid@gmail.com";
+export const CONTACT_HREF = `mailto:${CONTACT_EMAIL}`;
+
+/** True for any path inside the Advisory section, which the Review brand blocks. */
+export function isAdvisoryPath(href: string): boolean {
+  return /^\/(advisory|advisory-hub|connect|connect-hub|community)(\/|$|\?|#)/.test(href);
+}
+
 // ─── DOMAIN-SCOPED ACCESS ─────────────────────────────────────────────────────
 // Beta access codes are scoped to one or more of these canonical hostnames.
 // A code is only valid on a domain listed in its `allowed_domains` column.
