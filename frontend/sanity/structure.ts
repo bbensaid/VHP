@@ -15,7 +15,6 @@ export const structure: StructureResolver = (S) =>
               S.documentTypeListItem("policyAnalysis").title("Policy Analyses"),
               S.documentTypeListItem("caseStudy").title("Case Studies"),
               S.documentTypeListItem("analystNote").title("Analyst Notes"),
-              S.documentTypeListItem("report").title("Reports"),
             ])
         ),
 
@@ -49,6 +48,7 @@ export const structure: StructureResolver = (S) =>
               S.documentTypeListItem("definition").title("Glossary"),
               S.documentTypeListItem("hospital").title("Hospitals"),
               S.documentTypeListItem("rhtState").title("State Profiles"),
+              S.documentTypeListItem("investmentDeal").title("Investment Deals"),
             ])
         ),
 
