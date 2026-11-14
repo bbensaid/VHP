@@ -15,7 +15,7 @@ from typing import Any, Dict, List, Optional
 import httpx
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import Response as FastAPIResponse
-from llama_index.llms.groq import Groq as GroqLLM
+from services.llm import groq_with_openai_fallback
 from pydantic import BaseModel, field_validator
 
 from config import (
@@ -216,7 +216,7 @@ async def _generate_single_bridge(
     doc: Dict[str, Any],
     prefs: "LearningPreferences",
     week_theme: str,
-    llm: GroqLLM,
+    llm: Any,
 ) -> None:
     """Generate a personalized relevance bridge for one case study item in-place."""
     role_label = prefs.role.replace("_", " ").title()
@@ -272,7 +272,7 @@ async def _generate_case_study_bridges(
     slug_to_doc = {d["slug"]: d for d in catalog if d.get("slug")}
 
     # Use lower temperature — we want factual, specific prose, not creative
-    llm = GroqLLM(model=MODEL_SUBSCRIBER, api_key=GROQ_API_KEY, temperature=0.25)
+    llm = groq_with_openai_fallback(MODEL_SUBSCRIBER, temperature=0.25)
 
     tasks = []
     for week in path_data.get("weeks", []):
@@ -533,7 +533,7 @@ async def generate_learning_path(
 
     # max_tokens: 8000 leaves headroom under Groq's 8192 limit and ensures
     # the JSON is never silently truncated mid-object.
-    llm = GroqLLM(model=MODEL_SUBSCRIBER, api_key=GROQ_API_KEY, max_tokens=8000)
+    llm = groq_with_openai_fallback(MODEL_SUBSCRIBER, max_tokens=8000)
 
     try:
         response = await llm.acomplete(prompt, temperature=0.65)

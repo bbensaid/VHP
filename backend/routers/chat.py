@@ -407,12 +407,8 @@ def _get_llm_for_medicaid(user: "AuthedUser"):
     Advisory/admin → stays on Claude (handled by standard routing).
     """
     if user.role in ("free", "student"):
-        from llama_index.llms.groq import Groq as GroqLLM
-
-        from services.llm import FallbackLLM
-        sub_llm  = GroqLLM(model=MODEL_SUBSCRIBER, api_key=GROQ_API_KEY)
-        fast_llm = GroqLLM(model=MODEL_FREE,        api_key=GROQ_API_KEY)
-        return FallbackLLM(primary=sub_llm, fallbacks=[fast_llm])
+        from services.llm import groq_with_openai_fallback
+        return groq_with_openai_fallback(MODEL_SUBSCRIBER)
     return get_llm_for_role(user.role)
 
 

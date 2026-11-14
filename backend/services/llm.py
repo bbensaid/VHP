@@ -69,8 +69,18 @@ def _is_retryable(exc: Exception) -> bool:
     return False
 
 
-def _groq(model: str) -> LLM:
-    return GroqLLM(model=model, api_key=GROQ_API_KEY, context_window=GROQ_CONTEXT_WINDOW)
+def _groq(model: str, **kwargs) -> LLM:
+    return GroqLLM(model=model, api_key=GROQ_API_KEY, context_window=GROQ_CONTEXT_WINDOW, **kwargs)
+
+
+def groq_with_openai_fallback(model: str, **kwargs) -> LLM:
+    """A Groq model that hands off to gpt-4o-mini when Groq refuses (e.g. free-tier size cap)."""
+    if not OPENAI_API_KEY:
+        return _groq(model, **kwargs)
+    return FallbackLLM(
+        primary=_groq(model, **kwargs),
+        fallbacks=[OpenAILLM(model="gpt-4o-mini", api_key=OPENAI_API_KEY, **kwargs)],
+    )
 
 
 class FallbackLLM(LLM):
