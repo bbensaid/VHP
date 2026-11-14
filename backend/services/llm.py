@@ -51,7 +51,9 @@ except ImportError:
 # ── Fallback LLM wrapper ───────────────────────────────────────────────────────
 
 # HTTP status codes that should trigger a fallback (not user errors)
-_RETRYABLE_STATUS = {429, 500, 502, 503, 504}
+# 413 = Groq "request too large" for the free tier's 8,000 tokens/minute cap,
+# which a full Analyst prompt (~14k tokens) always exceeds.
+_RETRYABLE_STATUS = {413, 429, 500, 502, 503, 504}
 
 def _is_retryable(exc: Exception) -> bool:
     """Return True if the exception looks like a transient Groq error."""
@@ -59,7 +61,7 @@ def _is_retryable(exc: Exception) -> bool:
     # Groq SDK raises httpx.HTTPStatusError or groq.RateLimitError etc.
     if any(str(s) in msg for s in _RETRYABLE_STATUS):
         return True
-    if any(kw in msg for kw in ("rate limit", "ratelimit", "overloaded", "service unavailable", "bad gateway", "timeout")):
+    if any(kw in msg for kw in ("rate limit", "rate_limit", "ratelimit", "overloaded", "service unavailable", "bad gateway", "timeout")):
         return True
     # A retired model must fall through to the next one, not kill every answer.
     if any(kw in msg for kw in ("model_not_found", "does not exist", "decommissioned")):
