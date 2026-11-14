@@ -49,7 +49,9 @@ export default defineConfig({
         {
           name: "htr_beta",
           value: `granted:${BASE_HOST}`,
-          domain: BASE_HOST,
+          // Leading dot so the cookie also reaches www.<host>: the Solutions
+          // domains redirect to www., and a host-only cookie never got there.
+          domain: BASE_HOST === "localhost" ? BASE_HOST : `.${BASE_HOST}`,
           path: "/",
           httpOnly: false,
           secure: false,
