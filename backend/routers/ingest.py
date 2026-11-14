@@ -6,7 +6,6 @@ backend/routers/ingest.py
 """
 
 import asyncio
-import hashlib
 import hmac
 import logging
 import uuid
@@ -29,8 +28,12 @@ _current_job: dict = {}
 
 
 def _auth_check(request: Request) -> None:
+    # Fail closed: with no secret configured these endpoints used to accept
+    # anyone, so a stranger could start a full library rebuild on the server.
+    if not INGEST_SECRET:
+        raise HTTPException(status_code=503, detail="Ingest is disabled: INGEST_SECRET is not set")
     auth = request.headers.get("Authorization", "")
-    if INGEST_SECRET and auth != f"Bearer {INGEST_SECRET}":
+    if not hmac.compare_digest(auth, f"Bearer {INGEST_SECRET}"):
         raise HTTPException(status_code=401, detail="Invalid ingest secret")
 
 
@@ -125,37 +128,29 @@ async def ingest_status(request: Request):
 @router.post("/api/ingest/webhook", status_code=202)
 async def sanity_webhook(request: Request):
     """
-    Sanity GROQ-Webhook endpoint for incremental document re-indexing.
+    Incremental re-index of one Sanity document.
 
-    Sanity sends a POST when a document is created, updated, or deleted.
-    The webhook HMAC signature is verified using INGEST_SECRET.
+    Sanity does not call this directly. Sanity calls the website's
+    /api/webhooks/sanity, which checks Sanity's own signature
+    (sanity-webhook-signature) and then forwards here with
+    Authorization: Bearer <INGEST_SECRET>.
 
     Expected payload: { "_id": "<sanity doc id>", "_type": "...", ... }
 
     On receipt:
-      - Deletes existing rag_documents chunks for this _id
+      - Deletes this document's existing passages from the library
       - Re-fetches the document from Sanity
-      - Re-embeds and inserts new chunks (if doc still exists)
+      - Re-embeds and inserts new passages (if the doc still exists)
 
     Falls back to a full rebuild if no live index is available.
     """
-    # Verify Sanity HMAC signature (Sanity sends X-Sanity-Signature: sha1=<hmac>)
-    if INGEST_SECRET:
-        sig_header = request.headers.get("X-Sanity-Signature", "")
-        body = await request.body()
-        mac = hmac.new(INGEST_SECRET.encode(), body, hashlib.sha1)
-        expected = "sha1=" + mac.hexdigest()
-        if not hmac.compare_digest(expected, sig_header):
-            raise HTTPException(status_code=401, detail="Invalid webhook signature")
-        import json as _json
-        payload = _json.loads(body)
-    else:
-        payload = await request.json()
+    _auth_check(request)
+    payload = await request.json()
 
     doc_id = payload.get("_id", "")
-    if not doc_id or doc_id.startswith("_"):
-        # System documents (e.g. _type starting with sanity.) — ignore
-        return {"status": "ignored", "reason": "system document"}
+    if not doc_id or doc_id.startswith("_") or doc_id.startswith("drafts."):
+        # System documents and unpublished drafts are never indexed
+        return {"status": "ignored", "reason": "system or draft document"}
 
     log.info(f"🔔 Sanity webhook: doc_id={doc_id} type={payload.get('_type', '?')}")
 

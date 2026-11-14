@@ -63,7 +63,11 @@ async function getIngestStatus() {
   try {
     const res = await fetch(
       `${process.env.PYTHON_BACKEND_URL || "http://localhost:8000"}/api/ingest/status`,
-      { cache: "no-store", signal: AbortSignal.timeout(4000) }
+      {
+        cache: "no-store",
+        signal: AbortSignal.timeout(4000),
+        headers: { Authorization: `Bearer ${process.env.INGEST_SECRET ?? ""}` },
+      }
     );
     if (!res.ok) return null;
     return await res.json() as { status: string; queued_at?: string; completed_at?: string; error?: string };
@@ -244,15 +248,13 @@ export default async function AdminDashboard() {
           )}
 
           <div className="border-t border-slate-100 pt-3 mt-3">
-            <form action="/api/ingest" method="POST">
-              <button
-                type="submit"
-                className="w-full flex items-center justify-center gap-2 text-xs font-bold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 px-3 py-2 rounded-lg transition-colors"
-              >
-                <ArrowPathIcon className="w-3.5 h-3.5" />
-                Trigger Manual Re-index
-              </button>
-            </form>
+            {/* The library is rebuilt from the Mac, not from here: a full rebuild is
+                too heavy for the 1 GB server. Sanity edits update it automatically
+                through /api/webhooks/sanity. See docs/HTR_Content_Production_Guide. */}
+            <p className="text-xs text-slate-500 leading-relaxed">
+              Published Sanity edits reach the AI library automatically. Full rebuilds run from the Mac
+              (Content Production Guide, “Updating the AI Analyst’s library”).
+            </p>
           </div>
         </div>
       </div>

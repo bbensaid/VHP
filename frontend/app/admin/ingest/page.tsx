@@ -5,7 +5,6 @@ import Link from "next/link";
 import { requireRole } from "@/lib/auth";
 import { dbAdmin } from "@/lib/db/client";
 import { ArrowLeftIcon, ArrowPathIcon, CheckCircleIcon, ClockIcon } from "@heroicons/react/24/outline";
-import IngestTriggerButton from "./IngestTriggerButton";
 
 export const metadata = { title: "Ingest Monitor | HTR Admin" };
 export const revalidate = 0;
@@ -42,7 +41,10 @@ export default async function IngestMonitorPage() {
             <h1 className="text-3xl font-black text-slate-900 dark:text-slate-100">Ingest Monitor</h1>
             <p className="text-slate-500 dark:text-slate-400 mt-1">RAG pipeline status and query log</p>
           </div>
-          <IngestTriggerButton />
+          <p className="max-w-xs text-xs text-slate-500 dark:text-slate-400">
+            Sanity edits update the library automatically. Full rebuilds run from the Mac
+            (see the Content Production Guide).
+          </p>
         </div>
       </div>
 

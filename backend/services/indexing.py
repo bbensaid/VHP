@@ -630,18 +630,20 @@ async def incremental_reindex_document(doc_id: str, index: VectorStoreIndex) -> 
     """
     log.info(f"📄 Incremental reindex: {doc_id}")
 
-    # Step 1: Delete existing chunks via Supabase REST
+    # Step 1: Delete existing chunks via Supabase REST. The live table is
+    # _RAG_TABLE (data_rag_documents, column metadata_); this used to target the
+    # empty legacy rag_documents table, so every update left a duplicate behind.
     if SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY:
         try:
             async with httpx.AsyncClient() as client:
                 r = await client.delete(
-                    f"{SUPABASE_URL}/rest/v1/rag_documents",
+                    f"{SUPABASE_URL}/rest/v1/{_RAG_TABLE}",
                     headers={
                         "apikey":        SUPABASE_SERVICE_ROLE_KEY,
                         "Authorization": f"Bearer {SUPABASE_SERVICE_ROLE_KEY}",
                         "Prefer":        "return=minimal",
                     },
-                    params={"metadata->>doc_id": f"eq.{doc_id}"},
+                    params={"metadata_->>doc_id": f"eq.{doc_id}"},
                     timeout=15,
                 )
                 if r.status_code not in (200, 204):
