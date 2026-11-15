@@ -102,8 +102,24 @@ const nextConfig: NextConfig = {
   // Retired /advisory/reports → /briefings. Done here, not in the page, so it
   // also works on the Review brand, where the /advisory layout 404s first.
   async redirects() {
+    const vbc = (lesson: string) => `/academy/tracks/value-based-care/${lesson}`;
     return [
       { source: "/advisory/reports", destination: "/briefings", permanent: true },
+      // Units of the retired "Value-Based Care Fundamentals" course that were
+      // published as analysis briefs (deleted 2026-11-15) → the same lessons.
+      { source: "/articles/vbc-fundamentals-module-2-policy-pillar", destination: vbc("sanity-vbc-policy"), permanent: true },
+      { source: "/articles/vbc-fundamentals-module-3-economics-pillar", destination: vbc("vbc-fundamentals-module-3-economics-pillar"), permanent: true },
+      { source: "/articles/vbc-fundamentals-module-4-technology-pillar", destination: vbc("sanity-vbc-technology"), permanent: true },
+      { source: "/articles/vbc-fundamentals-module-5-clinical-equity-pillars", destination: vbc("sanity-vbc-clinical"), permanent: true },
+      // Duplicate lesson modules deleted 2026-11-15 → the lessons they duplicated.
+      { source: "/academy/modules/vbc-aco-performance-evidence", destination: vbc("aco-performance-evidence"), permanent: true },
+      { source: "/academy/modules/vbc-aco-medicaid-commercial", destination: vbc("aco-medicaid-commercial"), permanent: true },
+      { source: "/academy/modules/vbc-bundled-payment-evidence", destination: vbc("bundled-payment-evidence"), permanent: true },
+      { source: "/academy/modules/vbc-bundled-payment-mechanics", destination: vbc("bundled-payment-mechanics"), permanent: true },
+      { source: "/academy/modules/vbc-mips-payment-system", destination: vbc("mips-merit-based-incentive"), permanent: true },
+      { source: "/academy/modules/vbc-oncology-care-model", destination: vbc("oncology-care-model"), permanent: true },
+      { source: "/academy/modules/vbc-rvu-physician-payment", destination: vbc("relative-value-units"), permanent: true },
+      { source: "/academy/modules/vbc-social-risk-adjustment", destination: vbc("social-risk-adjustment"), permanent: true },
     ];
   },
 
