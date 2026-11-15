@@ -91,7 +91,7 @@ add(
     ["admin", "You: the admin pages. Today the only admin account is bechir.bensaid@gmail.com"],
   ], [30, 70]),
   H2("2.8 Advisory Services (Solutions brand)"),
-  P("Eleven pages describe the paid services: the Advisory Hub, Strategic Consulting, Custom Research, Financial Audit, Regulatory Counsel, IT Consulting, Training & Education, Independent Review, HTR Connect, the Member Directory and Community. A prospective client contacts you through **Contact Us**, which opens an email to bechir.bensaid@gmail.com."),
+  P("Eleven pages describe the paid services: the Advisory Hub, Strategic Consulting, Custom Research, Financial Audit, Regulatory Counsel, IT Consulting, Training & Education, Independent Review, HTR Connect, the Member Directory and Community. A prospective client contacts you through **Contact Us**, which opens an email to contact@ followed by the domain they are on. All four contact@ addresses arrive in one Google Workspace inbox, contact@healthtransformationreview.org (the other three domains are free alias domains). To reply from another domain, choose it in the From field (set up in Gmail → Settings → Accounts → Send mail as)."),
   box("Not working yet", ["The “Start an Engagement” form on /advisory/contact does not send anything when submitted (the page's claim that submissions are recorded is not true yet). Until it is connected, point prospects to Contact Us."], WARN_FILL),
   H2("2.9 Beta testers"),
   B("A **Tester Hub** button sits bottom-right on every page. It opens /tester, a checklist of areas to try (Home & Core, The Book, Intelligence Dashboard, Research Lab, Simulators & Tools…) with a rating and comment for each."),

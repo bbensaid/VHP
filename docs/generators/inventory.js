@@ -242,7 +242,7 @@ add(
     ["Advisory Services in the top menu, sidebar and footer", "Hidden", "Shown"],
     ["Advisory pages (verified live on all 4 domains)", "Blocked: /advisory, /advisory/contact, /advisory/consulting, /connect, /connect/directory, /connect-hub and /community all return “page not found” (404)", "All load (200). /advisory-hub first asks for a login (see 2.3)"],
     ["Links into Advisory pages elsewhere on the site (verified live)", "None: all 130 pages in the Review sitemap checked after the 14 Nov fix", "Shown, as intended"],
-    ["“Contact Us” (verified live)", "Opens an email to bechir.bensaid@gmail.com", "Opens an email to bechir.bensaid@gmail.com"],
+    ["“Contact Us” (verified live)", "Opens an email to contact@ the Review domain being viewed (.org or .com)", "Opens an email to contact@ the Solutions domain being viewed (.org or .com)"],
     ["Sitemap for search engines (verified live)", "130 pages, no advisory pages, all on the Review address", "136 pages, including 6 advisory pages, all on the www. Solutions address"],
     ["AI Analyst", "Links in answers point to the Review address", "Links rewritten to the Solutions address; calls itself “Health Transformation Solutions (HTR)”"],
     ["www. in the address (checked live)", "www. is removed: www.healthtransformationreview.org → healthtransformationreview.org", "www. is added: healthtransformationsolutions.org → www.healthtransformationsolutions.org"],
@@ -269,7 +269,7 @@ add(
   H2("2.3 Problems found by testing, 14 November"),
   table(["Problem (all verified live)", "Status"], [
     ["Every page on the Review domains had links into the blocked Advisory pages: the phone tab bar's “Advisory” tab, two home-page cards, Getting Started, the site map, the command palette, the Research Lab “From Analysis to Action” box, and book chapter 12's platform link", "**Fixed and verified** (commit 4f9f1ed): 0 such links across all 130 Review pages"],
-    ["Every “Contact Us” went to /advisory/contact: blocked on Review, and on Solutions an Advisory engagement form whose Submit button sends nothing", "**Fixed and verified:** Contact Us opens an email to bechir.bensaid@gmail.com on all four domains (your decision)"],
+    ["Every “Contact Us” went to /advisory/contact: blocked on Review, and on Solutions an Advisory engagement form whose Submit button sends nothing", "**Fixed and verified:** Contact Us opens an email to contact@<the domain being viewed>; all four reach one Google Workspace inbox (15 Nov)"],
     ["The Solutions home page title and link preview said “Health Transformation Review”", "**Fixed and verified**"],
     ["The home page's “The Wire → View All” pointed to /advisory/reports", "**Fixed:** now /the-wire"],
     ["The automated browser tests could not run against the www. Solutions addresses (their access cookie never reached www.)", "**Fixed:** all four domains now pass"],
@@ -629,12 +629,13 @@ add(
     ["Sanity", "Free (verified)", "$0", "More editors or usage", "sanity.io/manage"],
     ["GitHub", "Free", "$0", "—", "github.com/settings/billing"],
     ["Google Drive", "Your account", "$0", "Storage beyond your Google plan", "—"],
+    ["Google Workspace (email)", "1 user: contact@healthtransformationreview.org; the 3 other domains are free alias domains", "One user at your Workspace plan's price (see the Google bill)", "Adding a second user (each one is billed); aliases and alias domains cost nothing", "admin.google.com → Billing"],
     ["Domains (4)", "Bought through Vercel (verified)", "~$4 averaged (.com renewal $12.03/yr; 3 of 4 auto-renew)", "—", "vercel.com → Domains"],
     ["Anthropic, Resend, Loops, Stripe, Sentry", "Not active", "$0", "Switching them on", "—"],
   ], [16, 16, 20, 28, 20]),
   gap(),
   box("Total", [
-    "**Roughly $40–45 per month**: about $35 Supabase, under $6 Fly, about $4 of domain fees spread over the year. Vercel is free (Hobby). The AI services cost cents.",
+    "**Roughly $40–45 per month**: about $35 Supabase, under $6 Fly, about $4 of domain fees spread over the year, plus one Google Workspace user for email. Vercel is free (Hobby). The AI services cost cents.",
     "The Claude Code subscription used for development is separate and not part of running the platform.",
   ]),
 );
