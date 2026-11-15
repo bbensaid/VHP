@@ -82,7 +82,7 @@ function titlePage(title, subtitle, intro) {
   ];
 }
 
-function build(out, docTitle, footerText, children) {
+function build(out, docTitle, footerText, children, footerDate = "14 November 2026") {
   const doc = new Document({
     creator: "Claude", title: docTitle,
     styles: {
@@ -105,7 +105,7 @@ function build(out, docTitle, footerText, children) {
     sections: [{
       properties: { page: { size: { width: 12240, height: 15840 }, margin: { top: 1440, bottom: 1440, left: 1440, right: 1440 } } },
       footers: { default: new Footer({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [
-        new TextRun({ text: footerText + " · 14 November 2026 · page ", size: 16, color: GREY }),
+        new TextRun({ text: footerText + " · " + footerDate + " · page ", size: 16, color: GREY }),
         new TextRun({ children: [PageNumber.CURRENT], size: 16, color: GREY })] })] }) },
       children,
     }],
