@@ -108,7 +108,9 @@ export default async function RootLayout({
     return (
       <html lang="en">
         <body className={`${inter.className} antialiased`}>
-          {children}
+          <BrandProvider brand={brand} contactEmail={contactEmailFor(hostHeader)}>
+            {children}
+          </BrandProvider>
         </body>
       </html>
     );

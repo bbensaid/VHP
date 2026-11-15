@@ -382,8 +382,22 @@ Renewal of the .com is $12.03/yr. The Review domains strip `www.`; the
 Solutions domains add it. Unknown hosts default to `solutions`.
 
 `ACCESS_DOMAINS` in `brand.ts` is the single source of truth for access-code
-scoping. Every general "Contact Us" link opens `mailto:bechir.bensaid@gmail.com`
-(`CONTACT_HREF`).
+scoping.
+
+**Email (Google Workspace, set up 2026-11-15).** One mailbox,
+`contact@healthtransformationreview.org` (one paid user). The other three
+domains are free **User alias domains** in admin.google.com → Account →
+Domains, so `contact@` at any of the four lands in the same inbox. All four
+have Google MX (`1 smtp.google.com`), SPF (`include:_spf.google.com ~all`),
+DKIM (`google._domainkey`) and DMARC (`_dmarc` TXT `v=DMARC1; p=none`) in
+Vercel DNS. mail-tester scored 10/10. To send as another domain: Gmail →
+Settings → Accounts → "Send mail as".
+
+The site shows `contact@<the domain being viewed>` on every Contact link
+(`contactEmailFor(host)` in `brand.ts`; `useBrand().contactEmail` in client
+components, `currentContactEmail()` on the server). Unknown hosts fall back to
+`ADMIN_EMAIL` = contact@healthtransformationreview.org, which also receives
+tester reports. Never hard-code an address anywhere else.
 
 ---
 
