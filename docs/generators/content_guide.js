@@ -10,7 +10,7 @@ add(
   box("How to use this guide", [
     "**New to Sanity?** Read Sections 1 and 2 first (15 minutes). They explain where content lives and what Sanity is.",
     "**Want to add something today?** Go straight to the recipe in Section 5 and the matching prompt in Section 6.",
-    "**One thing to do once, before anything else:** connect Sanity to the AI Analyst (Section 9). Until then, new content shows on the website but the AI Analyst does not learn it.",
+    "**Sanity is connected to the AI Analyst** (set up and tested 15 November): whatever you publish reaches the AI Analyst about a minute later (Section 9).",
   ], OK_FILL),
   gap(),
   H2("Contents"),
@@ -27,11 +27,11 @@ add(
   B("**The code** (GitHub): the Research Lab tools, the HTR Simulator, the home-page pillar briefings, menus and page layouts. Changing these is a programming task: ask Claude Code."),
   gap(),
   table(["Content", "Lives in", "Shown on the site at", "How many today", "AI Analyst learns it"], [
-    ["Analysis briefs", "Sanity (Policy Analyses)", "/articles/<slug>, pillar pages, search", "77", "Yes, automatically once Section 9 is done"],
-    ["Academy lesson text", "Sanity (Academy → Modules)", "Inside each lesson, /academy/tracks/<track>", "307 modules", "Yes, automatically once Section 9 is done"],
+    ["Analysis briefs", "Sanity (Policy Analyses)", "/articles/<slug>, pillar pages, search", "73", "Yes, about a minute after Publish"],
+    ["Academy lesson text", "Sanity (Academy → Modules)", "Inside each lesson, /academy/tracks/<track>", "299 modules (one per lesson)", "Yes, about a minute after Publish"],
     ["Academy structure: courses, tracks, lessons, quizzes", "Supabase", "/academy and every course page", "19 courses, 105 tracks, 299 lessons", "Through the lesson text"],
-    ["Case studies", "Sanity (Case Studies)", "/academy/case-studies", "5", "Yes, automatically once Section 9 is done"],
-    ["Glossary terms", "Sanity (Data & Intelligence → Glossary)", "/academy/glossary, command palette (⌘K)", "36", "Yes, automatically once Section 9 is done"],
+    ["Case studies", "Sanity (Case Studies)", "/academy/case-studies", "5", "Yes, about a minute after Publish"],
+    ["Glossary terms", "Sanity (Data & Intelligence → Glossary)", "/academy/glossary, command palette (⌘K)", "36", "Yes, about a minute after Publish"],
     ["Investment deals", "Sanity (Data & Intelligence → Investment Deals)", "/investment-tracker", "22", "No"],
     ["State profiles (RHT program)", "Sanity (State Profiles)", "50-state dashboard", "50", "No"],
     ["Webinars, articles, instructors, analyst notes, audio", "Sanity", "/academy/webinars, /academy/faculty …", "0 of each", "Webinars, articles, notes: yes"],
@@ -67,7 +67,7 @@ add(
     ["Academy lesson text, investment deals", "Within 5 minutes", "Refreshed every 5 minutes"],
     ["Glossary", "Within 1 hour", "Refreshed hourly"],
     ["Anything", "At the latest by the next midnight", "A nightly job refreshes every cached page"],
-    ["The AI Analyst's knowledge", "About 1 minute after Publish", "Only after the one-time setup in Section 9"],
+    ["The AI Analyst's knowledge", "About 1 minute after Publish", "Sanity notifies the site on Publish (Section 9)"],
   ], [34, 26, 40]),
   H2("2.5 Backups"),
   P("Sanity's own history covers mistakes in the Studio. In addition, the scripts Claude uses save a copy of every document before changing it, in the **sanity-backups/** folder of the project (one JSON file per document per change)."),
@@ -317,7 +317,7 @@ add(
   N("Open the live page on healthtransformationreview.org (and a Solutions domain if it is an Advisory item) and read it through once."),
   N("Click every source link."),
   N("For a lesson: open it from its course page, answer the knowledge check, confirm the next/previous navigation."),
-  N("Ask the AI Analyst a question only the new content answers (after Section 9 is done, wait a minute first)."),
+  N("Ask the AI Analyst a question only the new content answers (wait a minute after publishing first)."),
   N("For a correction: add the line to CONTENT_CORRECTIONS.md."),
   N("If Claude did the work: confirm it committed its script to GitHub (it says so in its report)."),
 );
@@ -325,56 +325,49 @@ add(
 // ───────────── 8
 add(
   H1("8. Keeping the AI Analyst's library current"),
-  P("The AI Analyst answers from a library of about 59,000 passages stored in Supabase. Each source reaches it differently:"),
+  P("The AI Analyst answers from a library of about 60,000 passages stored in Supabase. Each source reaches it differently:"),
   table(["Source", "How it gets into the library", "When"], [
-    ["Sanity briefs, lessons, case studies, glossary", "Automatically: Sanity notifies the site on Publish, and that one document's passages are replaced", "About a minute after Publish, once Section 9 is set up"],
+    ["Sanity briefs, lessons, case studies, glossary", "Automatically: Sanity notifies the site on Publish, and that one document's passages are replaced", "About a minute after Publish"],
     ["All Sanity content at once", "backend/scripts/reindex_sanity_to_rag.py (Claude runs it on the Mac)", "Only if the library's Sanity content is ever suspected stale"],
     ["The book", "book-build/ingest_book_to_rag.py, after refresh_md.py", "After each book change"],
     ["Home-page briefings", "book-build/ingest_briefings_to_rag.py", "After the briefings change"],
     ["A reference PDF (report, law)", "Put it in backend/data/, then backend/scripts/ingest_pdf_to_rag.py \"file.pdf\"", "When you add a document"],
   ], [26, 50, 24]),
   gap(),
-  box("Fixed on 14 November while preparing this guide", [
+  box("Fixed on 14–15 November while preparing this guide", [
     "**The automatic update never worked.** The site forwarded Sanity's notifications to an address that did not exist, checked a signature format Sanity stopped using, and deleted old passages from an empty table. The library's Sanity passages also carried random IDs, so they could never be matched to their documents. All four are fixed and the code is deployed.",
     "**The rebuild function was open to anyone on the internet.** It is now locked with a secret (verified: strangers get “unauthorized”).",
     "**All 425 Sanity documents were reloaded into the library with their correct IDs**, which also replaced older copies of the briefs and lessons.",
     "The two “re-index” buttons on the admin pages did nothing; they were replaced by a note pointing here.",
     "In the Studio menu, the broken “Reports” entry was removed and **Investment Deals** was added (it existed but could not be reached from the menu).",
-    "261 lesson modules were missing summary, course title and module number, so the Studio refused to publish edits to them. All were filled from the Academy database on 15 November (only empty fields; backup kept).",
+    "**Old Academy content retired (15 November):** every lesson module now carries its lesson's current title, summary, course, position and next/previous lesson (261 had empty required fields, so the Studio refused to publish edits; others named retired courses). Deleted: 8 duplicate lesson modules and 4 “Value-Based Care Fundamentals” units that were filed as analysis briefs; their old addresses forward to the current lessons. Old lesson and course addresses (/academy/modules/…, /academy/courses/…) now open the lesson or course in the current Academy player.",
   ], OK_FILL),
 );
 
 // ───────────── 9
 add(
-  H1("9. One-time setup: connect Sanity to the AI Analyst"),
-  P("This needs your Sanity login (it is a project setting, so Claude's editing key cannot do it). About 5 minutes."),
-  L(),
-  N("Open **sanity.io/manage**, sign in, choose the project **HealthTransformationReview**."),
-  N("Go to API → Webhooks → Create webhook."),
-  N("Fill in exactly:"),
-  table(["Field", "Value"], [
+  H1("9. Sanity and the AI Analyst: connected"),
+  P("**Set up on 15 November and tested live:** a published change to a glossary term reached the website, which checked Sanity's signature and passed it to the AI program; the term's passages in the AI library were replaced within 5 seconds, with no duplicates. Nothing more to do. This section records how it is configured, for reference."),
+  table(["Setting (in sanity.io/manage: project, then API, then Webhooks)", "Value"], [
     ["Name", "AI Analyst library update"],
     ["URL", "https://healthtransformationreview.org/api/webhooks/sanity"],
     ["Dataset", "production"],
-    ["Trigger on", "Create, Update, Delete (all three)"],
+    ["Trigger on", "Create, Update, Delete"],
     ["Filter", "_type in [\"policyAnalysis\",\"post\",\"academyModule\",\"caseStudy\",\"definition\",\"analystNote\",\"webinar\"]"],
     ["Projection", "{_id, _type}"],
-    ["Status", "Enabled"],
-    ["HTTP method", "POST"],
-    ["API version", "v2021-03-25 (or the newest offered)"],
-    ["Drafts", "Off (do not trigger on drafts)"],
-    ["Secret", "The value after SANITY_WEBHOOK_SECRET= in the file frontend/.env.local (open it in VS Code and copy the long code; nothing else on the line)"],
-  ], [22, 78]),
-  N("Save. Then tell Claude Code “the Sanity webhook is set up, test it”. Claude publishes a harmless edit and confirms the library updated."),
+    ["Drafts", "Off: unpublished drafts never reach the AI Analyst"],
+    ["Secret", "Stored in Sanity and in Vercel (SANITY_WEBHOOK_SECRET); the two must be identical"],
+  ], [38, 62]),
+  B("**If the AI Analyst stops picking up new content:** ask Claude to check the webhook. Claude can read the website's log, which states the reason for any rejected notification (for example, a secret mismatch)."),
+  B("**If the webhook is ever deleted or re-created:** ask Claude to generate a fresh secret, set it in Vercel, and give you the exact text to paste into Sanity's Secret field."),
   gap(),
-  box("Why the secret matters", ["Without it, anyone could send fake notifications. The site rejects any notification not signed with this secret (tested on 14 November: unsigned notifications are refused, correctly signed ones are accepted). Never paste the secret into a chat, email or document."], WARN_FILL),
+  box("Why the secret matters", ["Without it, anyone could send fake notifications. The site rejects any notification not signed with this secret (tested 14–15 November: unsigned or wrongly signed notifications are refused, correctly signed ones are accepted). Never paste the secret into a chat, email or document."], WARN_FILL),
 );
 
 // ───────────── 10
 add(
   H1("10. Known gaps and quirks"),
   table(["What you will notice", "Why", "What to do"], [
-    ["22 older lesson modules show an outdated course name or module number in the Studio", "They were numbered before the courses were reorganised (e.g. “Value-Based Care Fundamentals”). Course pages are unaffected (they use the Academy database), but the stand-alone module pages reached from search and Personalized Learning show the old name and number", "Optional: ask Claude to align them with the current courses"],
     ["A lesson table looks like code in the Studio", "Tables are stored as text in JSON form so their column order survives", "Edit with care, or ask Claude"],
     ["Webinars, faculty, articles pages are empty", "No documents of those types yet", "Recipe 5.9"],
     ["Two glossary entries for Certificate of Need", "Duplicate created in the past", "Delete one in the Studio (Unpublish first)"],

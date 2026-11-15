@@ -24,7 +24,7 @@ add(
   P("Health Transformation Review is one framework delivered five ways. The framework: transforming a state health system through **five pillars** (Policy, Technology, Economics, Clinical, Operations), executed in sequence, and held throughout to the **Equity Imperative**. Vermont is the worked example."),
   table(["Part", "Its job", "Who it serves", "Where"], [
     ["**The book** (HTR_Book_v42)", "Makes the full argument: why transformation fails, the five pillars, the execution sequence, Vermont as the case", "Leaders, policymakers, students", "Google Doc (master) to PDF at /book, web reader at /read, audio narration"],
-    ["**The platform**", "Turns the argument into intelligence and tools: pillar pages, 77 analysis briefs, 44 tools, dashboards, Vermont and 50-state program pages, live news", "Analysts, executives, planners", "All four domains"],
+    ["**The platform**", "Turns the argument into intelligence and tools: pillar pages, 73 analysis briefs, 44 tools, dashboards, Vermont and 50-state program pages, live news", "Analysts, executives, planners", "All four domains"],
     ["**The Academy**", "Teaches it: 19 courses, 105 tracks, 299 lessons with quizzes and certificates, plus glossary, case studies, Personalized Learning", "Staff, students, new hires", "/academy"],
     ["**The AI Analyst**", "Answers questions from the whole body of work, with sources", "Everyone", "Side panel on every page; full page /chat"],
     ["**Advisory Services**", "Offers paid help applying the framework: consulting, research, audit, regulatory, IT, training, independent review, and the HTR Connect member directory", "Health systems, states, investors", "Solutions domains only"],
@@ -162,7 +162,7 @@ add(
     ["Vercel → Settings → Environment Variables (Production)", "13 settings: AI server address, Sanity and Supabase keys, the beta sign-in switch, the AI-library secret and the Sanity webhook secret", "You or Claude (logged in)"],
     ["Fly secrets (vhp-backend)", "11 keys: Groq, OpenAI, Sanity, Supabase, the AI-library secret, the site address", "Claude (fly is logged in)"],
     ["frontend/.env.local and backend/.env on the Mac", "Copies for local work and scripts", "Claude; never uploaded to GitHub"],
-    ["Sanity → API → Webhooks", "The AI library connection (Content Production Guide, Section 9)", "You"],
+    ["Sanity → API → Webhooks", "The AI library connection, set up and tested 15 November (Content Production Guide, Section 9)", "You (with Claude)"],
   ], [32, 46, 22]),
   box("Never", ["Paste a key or secret into a chat, an email, a document or a GitHub issue. If one leaks, ask Claude to rotate it (create a new one, update every place above, revoke the old one)."], WARN_FILL),
 );
@@ -176,7 +176,7 @@ add(
     ["Pages ask testers to log in, and “Skip” loops back", "The beta sign-in switch (ALLOW_AUTH_BYPASS) is off", "Vercel → Environment Variables: ALLOW_AUTH_BYPASS = true → Redeploy (fixed 14 Nov)"],
     ["The AI Analyst is slow on the first question", "The AI server sleeps when idle", "Normal: about 20 seconds, then fast"],
     ["The AI Analyst returns an error", "Fly server down, or both Groq and OpenAI failing", "Check /health (4.3); ask Claude to read the Fly logs"],
-    ["The AI Analyst does not know something just published", "The Sanity webhook is not set up, or the content type is not one it reads (deals, state profiles)", "Content Production Guide, Section 9"],
+    ["The AI Analyst does not know something just published", "The content type is not one it reads (deals, state profiles), or the Sanity webhook stopped working", "Ask Claude to check the webhook log (Content Production Guide, Section 9)"],
     ["A page shows old content after a Sanity edit", "The page's refresh interval has not passed", "Wait (minutes to 1 hour; Content Guide 2.4); at the latest it refreshes at midnight"],
     ["A lesson shows only a short text", "Its Supabase row has no sanity_slug, or the slug is wrong", "Ask Claude to run audit-courses.mjs and link it"],
     ["Studio will not let me Publish", "A required field is empty (outlined in red)", "Fill the field outlined in red, then Publish"],

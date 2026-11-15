@@ -123,11 +123,11 @@ add(
   ...fig("07_ecosystem", 1000, 632, "The HTR ecosystem: one framework, seven components"),
   table(["Component", "What it is", "Size on 14 Nov 2026", "Where it lives"], [
     ["**The book**", "HTR_Book_v42: the full argument of the framework, chapter by chapter", "Preface, Introduction, 16 chapters, Conclusion, Appendices A–H, figure index, bibliography, index", "Google Docs (master) → PDF at /book, web reader at /read, 18 audio narrations"],
-    ["**Pillar pages**", "Intelligence pages for each pillar, split into sub-topics", "6 sections (5 pillars + Equity), 3–5 sub-topics each; 77 policy analyses", "Text in Sanity, pages on Vercel"],
+    ["**Pillar pages**", "Intelligence pages for each pillar, split into sub-topics", "6 sections (5 pillars + Equity), 3–5 sub-topics each; 73 policy analyses", "Text in Sanity, pages on Vercel"],
     ["**The Academy**", "Structured courses: course → track → lesson", "19 courses, 105 tracks, 299 lessons (all published, all with full lesson bodies)", "Structure in Supabase, lesson bodies in Sanity"],
     ["**Tools & Research Lab**", "Interactive models, calculators, simulators and dashboards", "44 tools, 35 of them in the Research Lab", "Website code (Vercel)"],
     ["**States & Programs**", "Vermont programs and legislation; state-by-state rural health profiles", "13 Vermont pages + a simulator; 50 state profiles", "Website code + Sanity"],
-    ["**AI Analyst**", "Answers questions from the HTR library, with sources", "59,412 searchable passages", "Fly.io + Supabase"],
+    ["**AI Analyst**", "Answers questions from the HTR library, with sources", "60,299 searchable passages", "Fly.io + Supabase"],
     ["**Advisory Services**", "Consulting service pages, HTR Connect member directory, Community", "11 pages", "Website code; Solutions domains only (Section 2)"],
   ], [16, 30, 28, 26]),
 
@@ -215,14 +215,14 @@ add(
   gap(),
 
   H2("1.5 The AI Analyst's library"),
-  P("Everything the AI Analyst can answer from, as stored in Supabase on 14 November. Published Sanity edits reach it automatically once the Sanity webhook is set up (Content Production Guide, Section 9); the book, briefings and PDFs are loaded by scripts on the Mac (same guide, Section 8)."),
+  P("Everything the AI Analyst can answer from, as stored in Supabase on 15 November. Published Sanity edits reach it automatically within about a minute (Sanity webhook, set up and tested 15 November); the book, briefings and PDFs are loaded by scripts on the Mac (same guide, Section 8)."),
   table(["Source", "Passages", "What it is"], [
     ["PDF reports and books", "35,427", "38 files: Vermont reports and legislative documents, plus two health-economics reference books (Bhattacharya et al.; Culyer's Dictionary)"],
-    ["Academy lessons", "19,065", "The lesson bodies from Sanity"],
-    ["Policy analyses", "4,207", "77 analyses from Sanity"],
+    ["Academy lessons", "20,111", "The 299 lesson bodies from Sanity"],
+    ["Policy analyses", "4,048", "73 analyses from Sanity"],
     ["The book", "539", "HTR_Book_v42"],
     ["Definitions, case studies, briefings", "174", "Glossary definitions, 5 case studies, 5 HTR briefings"],
-    ["**Total**", "**59,412**", ""],
+    ["**Total**", "**60,299**", ""],
   ], [28, 14, 58]),
   gap(),
 
@@ -381,7 +381,7 @@ add(service("5.2 Fly.io: the AI Analyst program", {
 }));
 add(service("5.3 Supabase: database, file storage, AI library", {
   what: "A hosted PostgreSQL database with extras (file storage, user authentication, an add-on called pgvector for AI search).",
-  use: "Academy courses/tracks/lessons (structure; lesson bodies live in Sanity); beta access codes; user profiles and roles; feedback and bookmarks; the AI Analyst's library (table data_rag_documents, ~59,000 passages: your book, Academy, Sanity articles, Vermont reports, and two health-economics books); narration audio files (storage bucket narration-audio).",
+  use: "Academy courses/tracks/lessons (structure; lesson bodies live in Sanity); beta access codes; user profiles and roles; feedback and bookmarks; the AI Analyst's library (table data_rag_documents, ~60,000 passages: your book, Academy, Sanity articles, Vermont reports, and two health-economics books); narration audio files (storage bucket narration-audio).",
   links: "Read by Vercel (site data) and Fly (AI library). Written by scripts on your Mac.",
   plan: "Pro (you chose to upgrade on 13 Nov 2026), billed through Vercel Marketplace. Read from the Vercel account on 14 November: three Supabase resources, all on “Supabase Pro Plan”: Vermont-Health-Platform (available), ppm-platform (available), sommiPicks_Data (suspended). The same Vercel account also holds a free Neon database, VT-AHS-NEON-DB, used by another of your projects, not by this platform.",
   cost: "Pro is $25/mo per organisation, including $10 of computing credit (covers one small project). Each additional running project adds about $10/mo. With two running projects, ~$35/mo (list). Paused projects add nothing.",
@@ -648,7 +648,6 @@ add(
     ["The runbook (HTR_ADMIN_RUNBOOK.md) is out of date", "It still names the retired Llama model, says re-ranking is off, says Fly stays always on, and describes the retired book build", "Claude: update it to match this document"],
     ["Fly is set to stop when idle, against the runbook's July decision", "First question after idle is slower; cheaper", "Your call; currently cheaper. Measured: the first question after idle waits 20 seconds"],
     ["Stripe, Loops, Sentry built but off", "Must be configured before charging users or emailing them", "Before launch"],
-    ["**Connect Sanity to the AI Analyst** (one-time webhook)", "Without it, published Sanity edits do not reach the AI Analyst", "You: Content Production Guide, Section 9 (5 minutes)"],
     ["**Beta gate cookie can be forged** (Section 2.3)", "Anyone who knows the cookie format can skip the access code", "Decide before inviting more testers; the fix signs everyone out once"],
     ["**healthtransformationreview.com expires 29 Dec 2026**", "The address stops working if it is not renewed", "You: auto-renew is OFF. Vercel → Domains → healthtransformationreview.com → turn on Auto Renew ($12.03/yr)"],
     ["The Solutions “Start an Engagement” form sends nothing", "Its page claims submissions are recorded; they are not", "Your decision: fix it or remove the claim"],
