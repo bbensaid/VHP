@@ -340,6 +340,7 @@ add(
     "**All 425 Sanity documents were reloaded into the library with their correct IDs**, which also replaced older copies of the briefs and lessons.",
     "The two “re-index” buttons on the admin pages did nothing; they were replaced by a note pointing here.",
     "In the Studio menu, the broken “Reports” entry was removed and **Investment Deals** was added (it existed but could not be reached from the menu).",
+    "261 lesson modules were missing summary, course title and module number, so the Studio refused to publish edits to them. All were filled from the Academy database on 15 November (only empty fields; backup kept).",
   ], OK_FILL),
 );
 
@@ -373,7 +374,7 @@ add(
 add(
   H1("10. Known gaps and quirks"),
   table(["What you will notice", "Why", "What to do"], [
-    ["Editing an older lesson in the Studio: **Publish is greyed out**", "261 of 307 lesson modules were posted by script without summary, course title and module number, which the Studio marks required", "Fill the three fields, then Publish. Claude can fill them all at once if you approve it"],
+    ["22 older lesson modules show an outdated course name or module number in the Studio", "They were numbered before the courses were reorganised (e.g. “Value-Based Care Fundamentals”). Course pages are unaffected (they use the Academy database), but the stand-alone module pages reached from search and Personalized Learning show the old name and number", "Optional: ask Claude to align them with the current courses"],
     ["A lesson table looks like code in the Studio", "Tables are stored as text in JSON form so their column order survives", "Edit with care, or ask Claude"],
     ["Webinars, faculty, articles pages are empty", "No documents of those types yet", "Recipe 5.9"],
     ["Two glossary entries for Certificate of Need", "Duplicate created in the past", "Delete one in the Studio (Unpublish first)"],

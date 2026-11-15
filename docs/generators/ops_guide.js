@@ -179,7 +179,7 @@ add(
     ["The AI Analyst does not know something just published", "The Sanity webhook is not set up, or the content type is not one it reads (deals, state profiles)", "Content Production Guide, Section 9"],
     ["A page shows old content after a Sanity edit", "The page's refresh interval has not passed", "Wait (minutes to 1 hour; Content Guide 2.4); at the latest it refreshes at midnight"],
     ["A lesson shows only a short text", "Its Supabase row has no sanity_slug, or the slug is wrong", "Ask Claude to run audit-courses.mjs and link it"],
-    ["Studio will not let me Publish", "A required field is empty (outlined in red)", "Fill it; for older lessons: summary, course title, module number"],
+    ["Studio will not let me Publish", "A required field is empty (outlined in red)", "Fill the field outlined in red, then Publish"],
     ["The Wire is empty", "All news feeds failed at once (rare)", "It retries every 15 minutes; tell Claude if it lasts a day"],
     ["A domain stops working", "Expired registration", "Vercel → Domains; renew"],
     ["A Python project on the Mac breaks after installing something", "Homebrew removed a Python it thought unused", "Inventory, Section 8; ask Claude to diagnose before changing anything"],

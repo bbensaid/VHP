@@ -649,7 +649,6 @@ add(
     ["Fly is set to stop when idle, against the runbook's July decision", "First question after idle is slower; cheaper", "Your call; currently cheaper. Measured: the first question after idle waits 20 seconds"],
     ["Stripe, Loops, Sentry built but off", "Must be configured before charging users or emailing them", "Before launch"],
     ["**Connect Sanity to the AI Analyst** (one-time webhook)", "Without it, published Sanity edits do not reach the AI Analyst", "You: Content Production Guide, Section 9 (5 minutes)"],
-    ["261 of 307 lesson modules lack summary, course title and module number", "The Studio will not publish edits to those lessons until the fields are filled", "Your decision: approve Claude filling them"],
     ["**Beta gate cookie can be forged** (Section 2.3)", "Anyone who knows the cookie format can skip the access code", "Decide before inviting more testers; the fix signs everyone out once"],
     ["**healthtransformationreview.com expires 29 Dec 2026**", "The address stops working if it is not renewed", "You: auto-renew is OFF. Vercel → Domains → healthtransformationreview.com → turn on Auto Renew ($12.03/yr)"],
     ["The Solutions “Start an Engagement” form sends nothing", "Its page claims submissions are recorded; they are not", "Your decision: fix it or remove the claim"],
