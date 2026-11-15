@@ -1,3 +1,4 @@
+import { currentContactEmail } from '@/lib/brand-server'
 import Link from 'next/link'
 
 export interface EarlyAccessFeature {
@@ -23,7 +24,7 @@ export interface ConnectEarlyAccessProps {
   backLabel: string
 }
 
-export default function ConnectEarlyAccess({
+export default async function ConnectEarlyAccess({
   icon,
   title,
   subtitle,
@@ -33,7 +34,8 @@ export default function ConnectEarlyAccess({
   backTab,
   backLabel,
 }: ConnectEarlyAccessProps) {
-  const mailtoHref = `mailto:connect@htr.com?subject=${encodeURIComponent(emailSubject)}`
+  const contactEmail = await currentContactEmail()
+  const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(emailSubject)}`
 
   return (
     <div className="bg-white min-h-screen pb-20">
@@ -107,7 +109,7 @@ export default function ConnectEarlyAccess({
                 href={mailtoHref}
                 className="block w-full text-center py-3 px-4 rounded-xl bg-white text-teal-700 font-black text-sm hover:bg-teal-50 transition-colors shadow"
               >
-                Email connect@htr.com →
+                Email {contactEmail} →
               </a>
               <p className="text-teal-200 text-xs mt-3 text-center">
                 Subject pre-filled: &ldquo;{emailSubject}&rdquo;
@@ -135,16 +137,8 @@ export default function ConnectEarlyAccess({
               </h3>
               <div className="space-y-3">
                 <div>
-                  <p className="text-xs text-slate-400 uppercase font-bold">Connect Team</p>
-                  <p className="text-sm font-medium text-slate-200">connect@htr.com</p>
-                </div>
-                <div>
-                  <p className="text-xs text-slate-400 uppercase font-bold">General Inquiries</p>
-                  <p className="text-sm font-medium text-slate-200">info@htr.com</p>
-                </div>
-                <div>
-                  <p className="text-xs text-slate-400 uppercase font-bold">Phone</p>
-                  <p className="text-sm font-medium text-slate-200">+1 (802) 555-0123</p>
+                  <p className="text-xs text-slate-400 uppercase font-bold">Email</p>
+                  <a href={`mailto:${contactEmail}`} className="text-sm font-medium text-slate-200 hover:text-white">{contactEmail}</a>
                 </div>
               </div>
             </div>

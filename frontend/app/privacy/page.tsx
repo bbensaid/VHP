@@ -1,3 +1,4 @@
+import { currentContactEmail } from "@/lib/brand-server";
 import LegalPage from "@/components/LegalPage";
 
 export const metadata = {
@@ -6,7 +7,8 @@ export const metadata = {
     "HTR's privacy policy — how we collect, use, and protect your data as a subscriber or visitor to the Health Transformation Review platform.",
 };
 
-export default function PrivacyPage() {
+export default async function PrivacyPage() {
+  const contactEmail = await currentContactEmail();
   return (
     <LegalPage title="Privacy Policy">
       <p>
@@ -80,8 +82,8 @@ export default function PrivacyPage() {
         collect, to access and delete it, to correct it, and to not be discriminated against for
         exercising these rights. We do not sell or &ldquo;share&rdquo; personal information for
         cross-context behavioral advertising. To exercise your rights, contact{" "}
-        <a href="mailto:privacy@htr.com" className="text-brand-policy hover:underline">
-          privacy@htr.com
+        <a href={`mailto:${contactEmail}`} className="text-brand-policy hover:underline">
+          {contactEmail}
         </a>
         . We will verify your request consistent with law.
       </p>
@@ -98,8 +100,8 @@ export default function PrivacyPage() {
       <h2>10. Contact</h2>
       <p>
         Privacy questions or data requests?{" "}
-        <a href="mailto:privacy@htr.com" className="text-brand-policy hover:underline">
-          privacy@htr.com
+        <a href={`mailto:${contactEmail}`} className="text-brand-policy hover:underline">
+          {contactEmail}
         </a>
         .
       </p>

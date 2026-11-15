@@ -1,7 +1,7 @@
 "use client";
+import { useBrand } from "@/components/BrandContext";
 
 import { useState } from "react";
-import { CONTACT_HREF } from "@/lib/brand";
 import Link from "next/link";
 import { CheckIcon } from "@heroicons/react/24/outline";
 import { useRouter } from "next/navigation";
@@ -135,6 +135,7 @@ const PLANS: Array<{
 ];
 
 export default function PricingPage() {
+  const contactHref = `mailto:${useBrand().contactEmail}`;
   const router = useRouter();
   const [interval, setInterval] = useState<Interval>("monthly");
   const [loading, setLoading] = useState<string | null>(null);
@@ -342,7 +343,7 @@ export default function PricingPage() {
             </p>
           </div>
           <Link
-            href={CONTACT_HREF}
+            href={contactHref}
             className="shrink-0 bg-rose-600 hover:bg-rose-700 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors"
           >
             Contact Us

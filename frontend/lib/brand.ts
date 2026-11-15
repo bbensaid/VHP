@@ -52,12 +52,26 @@ export function getBrandConfig(brand: Brand): BrandConfig {
 }
 
 // ─── CONTACT ──────────────────────────────────────────────────────────────────
-// Every general "Contact Us" link on all four domains opens an email to this
-// address (author's decision, 2026-11-14). /advisory/contact is NOT a contact
-// page: it is the Advisory engagement form, a future offering whose submit
-// button sends nothing, and it is blocked on the Review brand.
-export const CONTACT_EMAIL = "bechir.bensaid@gmail.com";
-export const CONTACT_HREF = `mailto:${CONTACT_EMAIL}`;
+// Every public email address is contact@<the domain the visitor is on>
+// (author's decision, 2026-11-15). All four domains deliver to the same Google
+// Workspace mailbox (healthtransformationreview.org, with the other three as
+// alias domains). Hosts that are not one of the four (preview deploys, local)
+// use the primary domain. /advisory/contact is the Advisory engagement form,
+// not a contact page.
+export const PRIMARY_DOMAIN = "healthtransformationreview.org";
+
+/** Mailbox the platform itself writes to (tester reports, admin notices). */
+export const ADMIN_EMAIL = `contact@${PRIMARY_DOMAIN}`;
+
+/** Placeholder for module-level link lists; swapped for the visitor's
+ *  contact address at render time (components know the domain, modules don't). */
+export const CONTACT_LINK = "mailto:__contact__";
+
+/** The public contact address for a request host. */
+export function contactEmailFor(host: string | null | undefined): string {
+  const h = normalizeHost(host);
+  return `contact@${isAccessDomain(h) ? h : PRIMARY_DOMAIN}`;
+}
 
 /** True for any path inside the Advisory section, which the Review brand blocks. */
 export function isAdvisoryPath(href: string): boolean {

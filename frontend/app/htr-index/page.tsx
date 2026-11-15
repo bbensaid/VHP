@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { CONTACT_HREF } from "@/lib/brand";
-import { brandedMetadata } from "@/lib/brand-server";
+import { brandedMetadata, currentContactEmail } from "@/lib/brand-server";
 // app/htr-index/page.tsx
 import Link from "next/link";
 
@@ -8,7 +7,8 @@ export async function generateMetadata(): Promise<Metadata> {
   return brandedMetadata("HTR Index Methodology", "The composite measure of healthcare system sustainability.");
 }
 
-const MethodologyPage = () => {
+const MethodologyPage = async () => {
+  const contactHref = `mailto:${await currentContactEmail()}`;
   return (
     <div className="bg-white min-h-screen pb-20">
       {/* 1. HERO SECTION */}
@@ -211,7 +211,7 @@ const MethodologyPage = () => {
                 License.
               </p>
               <Link
-                href={CONTACT_HREF}
+                href={contactHref}
                 className="block w-full py-3 bg-indigo-600 text-white text-center font-bold text-sm rounded hover:bg-indigo-700 transition-colors"
               >
                 Request Data Access

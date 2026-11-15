@@ -20,7 +20,6 @@ export default function AdvisoryPage() {
             <span className="text-[10px] font-black uppercase tracking-widest text-fuchsia-400">
               HTR Advisory
             </span>
-            <span className="text-slate-400 text-sm">Burlington, VT · San Francisco, CA</span>
           </div>
           <h1 className="ty-h1 font-black tracking-tight mb-6 leading-tight max-w-4xl">
             Healthcare Strategy at Every Level of the Enterprise
@@ -299,7 +298,6 @@ export default function AdvisoryPage() {
               View All Services
             </Link>
           </div>
-          <p className="mt-6 text-fuchsia-300 text-sm">Burlington, VT · San Francisco, CA · Remote engagements worldwide</p>
         </div>
       </div>
     </div>

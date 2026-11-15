@@ -1,3 +1,4 @@
+import { currentContactEmail } from "@/lib/brand-server";
 import Link from "next/link";
 import LegalPage from "@/components/LegalPage";
 
@@ -7,7 +8,9 @@ export const metadata = {
     "Terms of service governing use of the Health Transformation Review platform, including subscriber access, content licensing, and acceptable use.",
 };
 
-export default function TermsPage() {
+export default async function TermsPage() {
+  const contactEmail = await currentContactEmail();
+  const contactHref = `mailto:${contactEmail}`;
   return (
     <LegalPage title="Terms of Service">
       <p>
@@ -145,8 +148,8 @@ export default function TermsPage() {
       <h2>18. Contact</h2>
       <p>
         Questions about these Terms?{" "}
-        <a href="mailto:hello@htr.com" className="text-brand-policy hover:underline">
-          hello@htr.com
+        <a href={contactHref} className="text-brand-policy hover:underline">
+          {contactEmail}
         </a>
         .
       </p>

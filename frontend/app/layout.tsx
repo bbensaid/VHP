@@ -5,7 +5,7 @@ import "./globals.css";
 import { cookies, headers } from "next/headers";
 import Header from "@/components/Header";
 import { BrandProvider } from "@/components/BrandContext";
-import { resolveBrand, getBrandConfig, normalizeHost } from "@/lib/brand";
+import { resolveBrand, getBrandConfig, normalizeHost, contactEmailFor } from "@/lib/brand";
 import { TickerProvider } from "@/components/TickerContext";
 import { SidebarProvider } from "@/components/SidebarContext";
 import AppShell from "@/components/AppShell";
@@ -121,7 +121,7 @@ export default async function RootLayout({
       <body className={`${inter.className} subpixel-antialiased`}>
         <WebVitalsReporter />
         <ThemeProvider>
-          <BrandProvider brand={brand}>
+          <BrandProvider brand={brand} contactEmail={contactEmailFor(hostHeader)}>
           {/* Skip navigation — visible on focus for keyboard users (WCAG 2.4.1) */}
           <a
             href="#main-content"

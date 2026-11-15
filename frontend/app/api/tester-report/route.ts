@@ -8,11 +8,12 @@
  * Body: { testerName: string, feedback: Record<string, { rating, note }> }
  */
 
+import { ADMIN_EMAIL } from "@/lib/brand";
 import { NextRequest, NextResponse } from "next/server";
 import { dbAdmin } from "@/lib/db/client";
 import { normalizeHost } from "@/lib/brand";
 
-const TO      = "bechir.bensaid@gmail.com";
+const TO      = ADMIN_EMAIL;
 // Branded sender — healthtransformationreview.org is verified in Resend.
 const FROM    = "HTR <tester@healthtransformationreview.org>";
 const SUBJECT = (name: string, date: string) =>

@@ -7,11 +7,16 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import { notFound } from "next/navigation";
-import { getBrandConfig, resolveBrand, type Brand } from "./brand";
+import { contactEmailFor, getBrandConfig, resolveBrand, type Brand } from "./brand";
 
 /** Resolve the brand for the current request from the Host header. */
 export async function currentBrand(): Promise<Brand> {
   return resolveBrand((await headers()).get("host"));
+}
+
+/** contact@<domain of the current request> (see contactEmailFor). */
+export async function currentContactEmail(): Promise<string> {
+  return contactEmailFor((await headers()).get("host"));
 }
 
 /**

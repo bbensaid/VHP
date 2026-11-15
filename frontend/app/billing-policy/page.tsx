@@ -1,3 +1,4 @@
+import { currentContactEmail } from "@/lib/brand-server";
 import Link from "next/link";
 import LegalPage from "@/components/LegalPage";
 
@@ -7,7 +8,9 @@ export const metadata = {
     "How HTR subscriptions are billed, renewed, cancelled, and refunded across the Student, Subscriber, Professional, and Team plans.",
 };
 
-export default function BillingPolicyPage() {
+export default async function BillingPolicyPage() {
+  const contactEmail = await currentContactEmail();
+  const contactHref = `mailto:${contactEmail}`;
   return (
     <LegalPage title="Subscription, Billing & Refund Policy">
       <h2>Plans</h2>
@@ -71,8 +74,8 @@ export default function BillingPolicyPage() {
       <p>
         All fees are non-refundable except where required by law. If you believe you were charged in
         error, contact{" "}
-        <a href="mailto:hello@htr.com" className="text-brand-policy hover:underline">
-          hello@htr.com
+        <a href={contactHref} className="text-brand-policy hover:underline">
+          {contactEmail}
         </a>
         .
       </p>

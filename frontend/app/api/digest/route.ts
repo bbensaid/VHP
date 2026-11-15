@@ -34,7 +34,7 @@ async function sendEmail(to: string, subject: string, html: string) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: "HTR Intelligence <digest@healthtransformationreport.com>",
+      from: "HTR Intelligence <digest@healthtransformationreview.org>",
       to,
       subject,
       html,
@@ -47,7 +47,7 @@ async function sendEmail(to: string, subject: string, html: string) {
 }
 
 function buildDigestHtml(articles: { title: string; summary: string; slug: string; pillar: string }[]) {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://healthtransformationreport.com";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://healthtransformationreview.org";
   const rows = articles
     .map(
       (a) => `
@@ -117,7 +117,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ message: "No active subscribers", sent: 0 });
     }
 
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://healthtransformationreport.com";
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://healthtransformationreview.org";
     const dateLabel = new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
 
     let sent = 0;

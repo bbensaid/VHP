@@ -1,3 +1,4 @@
+import { currentContactEmail } from "@/lib/brand-server";
 import { Suspense } from "react";
 import Link from "next/link";
 import ContactForm from "./ContactForm";
@@ -8,7 +9,8 @@ export const metadata = {
     "Submit an inquiry to HTR Advisory. Strategic consulting, IT project advisory, independent reviews, financial auditing, regulatory counsel, capability assessments, and executive training.",
 };
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  const contactEmail = await currentContactEmail();
   return (
     <div className="bg-white min-h-screen pb-20 relative">
 
@@ -116,38 +118,10 @@ export default function ContactPage() {
               <h4 className="text-base font-bold mb-4 border-b border-indigo-600 pb-3">Direct Contact</h4>
               <div className="space-y-4">
                 <div>
-                  <p className="text-xs text-slate-400 uppercase font-bold">General Inquiries</p>
-                  <p className="text-sm font-medium text-slate-200">advisory@htr.com</p>
-                </div>
-                <div>
-                  <p className="text-xs text-slate-400 uppercase font-bold">Government / Policy Inquiries</p>
-                  <p className="text-sm font-medium text-slate-200">policy@htr.com</p>
-                </div>
-                <div>
-                  <p className="text-xs text-slate-400 uppercase font-bold">Media & Press</p>
-                  <p className="text-sm font-medium text-slate-200">press@htr.com</p>
-                </div>
-                <div>
-                  <p className="text-xs text-slate-400 uppercase font-bold">Phone</p>
-                  <p className="text-sm font-medium text-slate-200">+1 (802) 555-0123</p>
+                  <p className="text-xs text-slate-400 uppercase font-bold">Email</p>
+                  <a href={`mailto:${contactEmail}`} className="text-sm font-medium text-slate-200 hover:text-white">{contactEmail}</a>
                 </div>
               </div>
-            </div>
-
-            {/* Office Locations */}
-            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
-              <h4 className="text-base font-bold text-slate-900 mb-4 border-b border-gray-100 pb-3">Our Offices</h4>
-              <div className="space-y-4">
-                <div>
-                  <p className="font-bold text-slate-900 text-sm">Burlington, VT</p>
-                  <p className="text-slate-500 text-xs mt-0.5">120 St. Paul Street<br />Burlington, VT 05401</p>
-                </div>
-                <div>
-                  <p className="font-bold text-slate-900 text-sm">Washington, DC</p>
-                  <p className="text-slate-500 text-xs mt-0.5">1400 K Street NW<br />Washington, DC 20005</p>
-                </div>
-              </div>
-              <p className="text-xs text-slate-400 mt-4">Remote engagements served nationwide.</p>
             </div>
 
             {/* Confidentiality */}

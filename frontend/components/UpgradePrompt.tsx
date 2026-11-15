@@ -1,7 +1,8 @@
 "use client";
 
 import { RESEARCH_LAB_TOOL_COUNT } from "@/lib/taxonomy/tools";
-import { CONTACT_HREF } from "@/lib/brand";
+import { CONTACT_LINK } from "@/lib/brand";
+import { useBrand } from "@/components/BrandContext";
 import Link from "next/link";
 import { LockClosedIcon, SparklesIcon, ChartBarIcon, AcademicCapIcon, BriefcaseIcon } from "@heroicons/react/24/outline";
 
@@ -108,7 +109,7 @@ const TIER_CONFIG: Record<Tier, {
       "Executive briefings & reports",
     ],
     cta: "Book a Discovery Call",
-    ctaHref: CONTACT_HREF,
+    ctaHref: CONTACT_LINK,
     ctaStyle: "bg-amber-600 hover:bg-amber-700 text-white",
     secondaryCta: "Learn About Advisory",
     secondaryHref: "/advisory",
@@ -116,7 +117,9 @@ const TIER_CONFIG: Record<Tier, {
 };
 
 export default function UpgradePrompt({ required, feature, compact = false }: UpgradePromptProps) {
-  const config = TIER_CONFIG[required];
+  const { contactEmail } = useBrand();
+  const tier = TIER_CONFIG[required];
+  const config = tier.ctaHref === CONTACT_LINK ? { ...tier, ctaHref: `mailto:${contactEmail}` } : tier;
   const Icon = config.icon;
 
   if (compact) {

@@ -1,5 +1,5 @@
+import { currentContactEmail } from "@/lib/brand-server";
 import Link from "next/link";
-import { CONTACT_HREF } from "@/lib/brand";
 import { client } from "@/lib/sanity";
 
 export const metadata = {
@@ -24,6 +24,8 @@ async function getFaculty() {
 }
 
 export default async function FacultyPage() {
+  const contactEmail = await currentContactEmail();
+  const contactHref = `mailto:${contactEmail}`;
   const faculty = await getFaculty();
 
   return (
@@ -72,7 +74,7 @@ export default async function FacultyPage() {
           <p className="text-indigo-100 max-w-2xl mx-auto mb-8">
             Are you a recognized expert in your field? HTR Academy is always looking for visiting faculty to lead masterclasses.
           </p>
-          <Link href={CONTACT_HREF} className="px-6 py-3 bg-white text-indigo-700 font-bold rounded-lg hover:bg-indigo-50 transition-colors">
+          <Link href={contactHref} className="px-6 py-3 bg-white text-indigo-700 font-bold rounded-lg hover:bg-indigo-50 transition-colors">
             Apply to Teach
           </Link>
         </div>

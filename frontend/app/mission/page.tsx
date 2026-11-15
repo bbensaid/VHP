@@ -1,5 +1,5 @@
+import { currentContactEmail } from "@/lib/brand-server";
 import Link from "next/link";
-import { CONTACT_HREF } from "@/lib/brand";
 
 export const metadata = {
   title: "Our Mission | HTR",
@@ -88,7 +88,9 @@ const values = [
 ];
 
 
-export default function MissionPage() {
+export default async function MissionPage() {
+  const contactEmail = await currentContactEmail();
+  const contactHref = `mailto:${contactEmail}`;
   return (
     <div className="bg-white font-sans text-slate-800 min-h-screen">
 
@@ -283,7 +285,7 @@ export default function MissionPage() {
                 Read Our Methodology
               </Link>
               <Link
-                href={CONTACT_HREF}
+                href={contactHref}
                 className="inline-flex items-center gap-2 bg-indigo-700 text-white border border-indigo-500 px-8 py-4 rounded-lg font-black hover:bg-indigo-800 transition-colors"
               >
                 Contact Us

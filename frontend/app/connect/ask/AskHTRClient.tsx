@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useBrand } from '@/components/BrandContext'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 
@@ -74,6 +75,7 @@ function QACard({ qa }: { qa: typeof FEATURED_QA[number] }) {
 }
 
 function SubmitForm() {
+  const { contactEmail } = useBrand()
   const [name, setName] = useState('')
   const [org, setOrg] = useState('')
   const [pillar, setPillar] = useState('General')
@@ -92,7 +94,7 @@ function SubmitForm() {
       question,
     ].join('\n')
 
-    window.location.href = `mailto:connect@htr.com?subject=${encodeURIComponent(`Ask HTR: ${pillar} Question`)}&body=${encodeURIComponent(body)}`
+    window.location.href = `mailto:${contactEmail}?subject=${encodeURIComponent(`Ask HTR: ${pillar} Question`)}&body=${encodeURIComponent(body)}`
   }
 
   return (

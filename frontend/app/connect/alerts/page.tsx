@@ -37,7 +37,7 @@ export default function AlertsPage() {
         {
           step: 1,
           title: 'Email your preferences',
-          description: 'Email connect@htr.com with: your organization name, organization type, which Five Pillars are relevant, and your preferred alert frequency (immediate, weekly digest, or monthly digest).',
+          description: 'Email us (address on this page) with: your organization name, organization type, which Five Pillars are relevant, and your preferred alert frequency (immediate, weekly digest, or monthly digest).',
         },
         {
           step: 2,

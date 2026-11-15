@@ -1,3 +1,4 @@
+import { currentContactEmail } from "@/lib/brand-server";
 import { verifyCertification } from "@/lib/db/academy";
 import { dbAdmin } from "@/lib/db/client";
 import Link from "next/link";
@@ -21,6 +22,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function VerifyCertPage({ params }: Props) {
+  const contactEmail = await currentContactEmail();
+  const contactHref = `mailto:${contactEmail}`;
   const { hash } = await params;
   const cert = await verifyCertification(hash);
 
@@ -33,8 +36,8 @@ export default async function VerifyCertPage({ params }: Props) {
           <p className="text-slate-500 text-sm mb-6">
             This verification link is invalid or the certificate has been revoked.
             If you believe this is an error, contact{" "}
-            <a href="mailto:support@healthtransformationreview.com" className="text-indigo-600 hover:underline">
-              support@healthtransformationreview.com
+            <a href={contactHref} className="text-indigo-600 hover:underline">
+              {contactEmail}
             </a>.
           </p>
           <Link

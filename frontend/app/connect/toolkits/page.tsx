@@ -52,7 +52,7 @@ export default function ToolkitsPage() {
         {
           step: 1,
           title: 'Request the toolkit by name',
-          description: 'Email connect@htr.com with the name of the toolkit(s) you need and a brief description of your use case. Connect members receive access to all 8 current toolkits.',
+          description: 'Email us (address on this page) with the name of the toolkit(s) you need and a brief description of your use case. Connect members receive access to all 8 current toolkits.',
         },
         {
           step: 2,

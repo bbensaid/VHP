@@ -37,7 +37,7 @@ export default function RegisterOfficeHoursPage() {
         {
           step: 1,
           title: 'Choose your session',
-          description: 'Email connect@htr.com with the session name and date you want to attend (e.g., "Policy & Regulatory Office Hours — next available"). We will confirm availability.',
+          description: 'Email us (address on this page) with the session name and date you want to attend (e.g., "Policy & Regulatory Office Hours — next available"). We will confirm availability.',
         },
         {
           step: 2,

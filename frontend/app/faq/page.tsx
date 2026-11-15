@@ -1,7 +1,7 @@
 "use client";
+import { useBrand } from "@/components/BrandContext";
 
 import React, { useState } from "react";
-import { CONTACT_HREF } from "@/lib/brand";
 import Link from "next/link";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
@@ -16,7 +16,7 @@ const faqs = [
       },
       {
         q: "Do you offer enterprise licenses for health systems and payer organizations?",
-        a: "Yes. Enterprise licenses provide multi-seat access, white-labeled reporting, custom API data feeds, quarterly analyst briefings, and priority advisory support. Contact our team at advisory@htr.com for a customized proposal.",
+        a: "Yes. Enterprise licenses provide multi-seat access, white-labeled reporting, custom API data feeds, quarterly analyst briefings, and priority advisory support. Contact our team at {CONTACT} for a customized proposal.",
       },
       {
         q: "Can I access historical Performance Index data?",
@@ -100,7 +100,7 @@ const faqs = [
     items: [
       {
         q: "Can I engage HTR analysts for a custom research project?",
-        a: "Yes. Our Advisory practice engages health systems, payer organizations, investment firms, and government agencies on custom research sprints of 4–8 weeks. Typical engagements cover market sizing, policy impact analysis, technology due diligence, and value-based contract modeling. Submit an inquiry at advisory@htr.com or through the Contact page.",
+        a: "Yes. Our Advisory practice engages health systems, payer organizations, investment firms, and government agencies on custom research sprints of 4–8 weeks. Typical engagements cover market sizing, policy impact analysis, technology due diligence, and value-based contract modeling. Submit an inquiry at {CONTACT} or through the Contact page.",
       },
       {
         q: "Do HTR analysts serve as expert witnesses or keynote speakers?",
@@ -126,7 +126,7 @@ const faqs = [
       },
       {
         q: "Can my organization sponsor a custom masterclass for our leadership team?",
-        a: "Yes. Enterprise subscribers can commission custom Academy content — including white-labeled masterclasses built around their specific state, market, or strategic challenge. Delivery can be asynchronous, live virtual, or in-person. Contact advisory@htr.com for a proposal.",
+        a: "Yes. Enterprise subscribers can commission custom Academy content — including white-labeled masterclasses built around their specific state, market, or strategic challenge. Delivery can be asynchronous, live virtual, or in-person. Contact {CONTACT} for a proposal.",
       },
     ],
   },
@@ -158,6 +158,8 @@ function AccordionItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function FAQPage() {
+  const { contactEmail } = useBrand();
+  const contactHref = `mailto:${contactEmail}`;
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
 
   const filteredFaqs = activeCategory
@@ -237,7 +239,7 @@ export default function FAQPage() {
                     { label: "Methodology", href: "/about/methodology" },
                     { label: "Dashboard", href: "/dashboard" },
                     { label: "Subscribe", href: "/subscribe" },
-                    { label: "Contact", href: CONTACT_HREF },
+                    { label: "Contact", href: contactHref },
                   ].map((l) => (
                     <Link
                       key={l.label}
@@ -271,7 +273,7 @@ export default function FAQPage() {
                 </div>
                 <div className="px-8">
                   {section.items.map((item, j) => (
-                    <AccordionItem key={j} q={item.q} a={item.a} />
+                    <AccordionItem key={j} q={item.q} a={item.a.replaceAll("{CONTACT}", contactEmail)} />
                   ))}
                 </div>
               </div>
@@ -284,7 +286,7 @@ export default function FAQPage() {
                 Our advisory team responds to substantive inquiries within 48 business hours. For urgent research needs, note your timeline in the project details field.
               </p>
               <Link
-                href={CONTACT_HREF}
+                href={contactHref}
                 className="inline-flex items-center gap-2 bg-white text-indigo-700 px-8 py-3 rounded-lg font-black hover:bg-indigo-50 transition-colors"
               >
                 Contact the Team →

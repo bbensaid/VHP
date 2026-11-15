@@ -5,7 +5,7 @@ import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import { useBrand } from "@/components/BrandContext";
-import { CONTACT_HREF } from "@/lib/brand";
+import { CONTACT_LINK } from "@/lib/brand";
 
 const pillars = [
   {
@@ -86,7 +86,7 @@ const companyLinks = [
   { label: "Our Framework", href: "/about/framework" },
   { label: "Our Methodology", href: "/about/methodology" },
   { label: "FAQ", href: "/faq" },
-  { label: "Contact Us", href: CONTACT_HREF },
+  { label: "Contact Us", href: CONTACT_LINK },
 ];
 
 const platformLinks = [
@@ -99,7 +99,8 @@ const platformLinks = [
 ];
 
 const Footer: React.FC = () => {
-  const { config: brand } = useBrand();
+  const { config: brand, contactEmail } = useBrand();
+  const contactHref = `mailto:${contactEmail}`;
   const visiblePlatformLinks = platformLinks.filter(
     (l) => brand.showAdvisory || l.href !== "/advisory"
   );
@@ -231,7 +232,7 @@ const Footer: React.FC = () => {
               Company
             </h4>
             <ul className="space-y-2.5">
-              {companyLinks.map((l) => (
+              {companyLinks.map((l) => (l.href === CONTACT_LINK ? { ...l, href: contactHref } : l)).map((l) => (
                 <li key={l.label}>
                   <Link
                     href={l.href}
@@ -297,35 +298,11 @@ const Footer: React.FC = () => {
             <div className="space-y-3 text-sm">
               <div>
                 <p className="text-[10px] font-black uppercase tracking-widest text-slate-600 dark:text-slate-400 mb-0.5">
-                  General Inquiries
+                  Email
                 </p>
-                <a href="mailto:hello@htr.com" className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
-                  hello@htr.com
+                <a href={contactHref} className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
+                  {contactEmail}
                 </a>
-              </div>
-              <div>
-                <p className="text-[10px] font-black uppercase tracking-widest text-slate-600 dark:text-slate-400 mb-0.5">
-                  Advisory
-                </p>
-                <a href="mailto:advisory@htr.com" className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
-                  advisory@htr.com
-                </a>
-              </div>
-              <div>
-                <p className="text-[10px] font-black uppercase tracking-widest text-slate-600 dark:text-slate-400 mb-0.5">
-                  Media & Press
-                </p>
-                <a href="mailto:press@htr.com" className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
-                  press@htr.com
-                </a>
-              </div>
-              <div className="pt-2">
-                <p className="text-[10px] font-black uppercase tracking-widest text-slate-600 dark:text-slate-400 mb-1.5">
-                  Offices
-                </p>
-                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-                  Burlington, VT — San Francisco, CA
-                </p>
               </div>
             </div>
           </div>

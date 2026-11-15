@@ -238,7 +238,7 @@ export default function ContactForm() {
             <span className="text-sm font-bold text-slate-700 uppercase tracking-wide">How Did You Hear About HTR Advisory?</span>
             <select className="mt-2 block w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
               <option value="">Select...</option>
-              <option>HTR Intelligence Platform (htr.com)</option>
+              <option>HTR Intelligence Platform</option>
               <option>Referral from a colleague</option>
               <option>Google / Search Engine</option>
               <option>Conference or Event</option>

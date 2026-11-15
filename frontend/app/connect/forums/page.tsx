@@ -47,7 +47,7 @@ export default function ForumsPage() {
         {
           step: 1,
           title: 'Choose your circle(s)',
-          description: 'Email connect@htr.com with the circle name(s) you want to join and your professional role and organization. Members may join multiple circles.',
+          description: 'Email us (address on this page) with the circle name(s) you want to join and your professional role and organization. Members may join multiple circles.',
         },
         {
           step: 2,

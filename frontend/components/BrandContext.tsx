@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext } from "react";
-import { BRAND_CONFIG, type Brand, type BrandConfig } from "@/lib/brand";
+import { BRAND_CONFIG, ADMIN_EMAIL, type Brand, type BrandConfig } from "@/lib/brand";
 
 // Brand is resolved on the server (from the request Host header) and passed in
 // as a prop. The provider exposes both the raw brand and its resolved config so
@@ -11,18 +11,22 @@ import { BRAND_CONFIG, type Brand, type BrandConfig } from "@/lib/brand";
 interface BrandContextValue {
   brand: Brand;
   config: BrandConfig;
+  /** contact@<domain the visitor is on> (lib/brand.ts contactEmailFor) */
+  contactEmail: string;
 }
 
 const BrandContext = createContext<BrandContextValue | null>(null);
 
 export function BrandProvider({
   brand,
+  contactEmail,
   children,
 }: {
   brand: Brand;
+  contactEmail: string;
   children: React.ReactNode;
 }) {
-  const value: BrandContextValue = { brand, config: BRAND_CONFIG[brand] };
+  const value: BrandContextValue = { brand, config: BRAND_CONFIG[brand], contactEmail };
   return <BrandContext.Provider value={value}>{children}</BrandContext.Provider>;
 }
 
@@ -31,7 +35,7 @@ export function useBrand(): BrandContextValue {
   if (!ctx) {
     // Safe fallback for any component rendered outside the provider (e.g. the
     // beta gate, error pages). Default to the full-functionality variant.
-    return { brand: "solutions", config: BRAND_CONFIG.solutions };
+    return { brand: "solutions", config: BRAND_CONFIG.solutions, contactEmail: ADMIN_EMAIL };
   }
   return ctx;
 }

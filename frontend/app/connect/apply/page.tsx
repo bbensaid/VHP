@@ -37,7 +37,7 @@ export default function ApplyPage() {
         {
           step: 1,
           title: 'Submit your application',
-          description: 'Email connect@htr.com with your organization name, organization type (CAH, ACO, FQHC, etc.), the cohort you are applying for, and a primary contact name and title.',
+          description: 'Email us (address on this page) with your organization name, organization type (CAH, ACO, FQHC, etc.), the cohort you are applying for, and a primary contact name and title.',
         },
         {
           step: 2,

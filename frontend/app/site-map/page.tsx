@@ -1,5 +1,6 @@
+import { currentContactEmail } from "@/lib/brand-server";
 import Link from "next/link";
-import { CONTACT_HREF, getBrandConfig, isAdvisoryPath } from "@/lib/brand";
+import { CONTACT_LINK, getBrandConfig, isAdvisoryPath } from "@/lib/brand";
 import { currentBrand } from "@/lib/brand-server";
 
 export const metadata = {
@@ -38,7 +39,7 @@ const sections = [
       { label: "Mission & Vision", href: "/mission" },
       { label: "Our Methodology", href: "/about/methodology" },
       { label: "FAQ", href: "/faq" },
-      { label: "Contact", href: CONTACT_HREF },
+      { label: "Contact", href: CONTACT_LINK },
       { label: "Subscribe", href: "/subscribe" },
     ],
   },
@@ -52,6 +53,7 @@ const sections = [
 ];
 
 export default async function SitemapPage() {
+  const contactHref = `mailto:${await currentContactEmail()}`;
   // Advisory links are Solutions-only; the Review brand blocks those pages.
   const { showAdvisory } = getBrandConfig(await currentBrand());
   return (
@@ -67,7 +69,7 @@ export default async function SitemapPage() {
               {section.title}
             </h2>
             <ul className="space-y-2.5">
-              {section.links.filter((link) => showAdvisory || !isAdvisoryPath(link.href)).map((link) => (
+              {section.links.filter((link) => showAdvisory || !isAdvisoryPath(link.href)).map((link) => (link.href === CONTACT_LINK ? { ...link, href: contactHref } : link)).map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

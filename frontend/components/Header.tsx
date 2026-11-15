@@ -22,7 +22,7 @@ import { usePathname } from "next/navigation";
 import { MicrophoneIcon } from "@heroicons/react/24/outline";
 import { useVoice } from "@/components/VoiceContext";
 import { useBrand } from "@/components/BrandContext";
-import { CONTACT_HREF } from "@/lib/brand";
+import { CONTACT_LINK } from "@/lib/brand";
 
 // ─── COMPANY DROPDOWN (top bar) ─────────────────────────────────────────────
 const companyItems = [
@@ -31,7 +31,7 @@ const companyItems = [
   { href: "/values", label: "Core Values" },
   { href: "/about/framework", label: "Our Framework" },
   { href: "/about/methodology", label: "Our Methodology" },
-  { href: CONTACT_HREF, label: "Contact Us" },
+  { href: CONTACT_LINK, label: "Contact Us" },
 ];
 
 // ─── MEGA-MENU DATA ──────────────────────────────────────────────────────────
@@ -598,7 +598,8 @@ const Header = () => {
   const { isHeaderVisible, setHeaderVisible, headlines } = useTicker();
   const { toggleLeft, toggleRight, setLeftOpen, setRightOpen } = useSidebar();
   const voice = useVoice();
-  const { config: brand } = useBrand();
+  const { config: brand, contactEmail } = useBrand();
+  const contactHref = `mailto:${contactEmail}`;
   const isChatPage = pathname === "/chat";
 
   // Inject voice transcript into header search — skip /chat (handled there)
@@ -715,7 +716,7 @@ const Header = () => {
             <div className="h-3 w-px bg-neutral-700" />
             <NavDropdown
               label="COMPANY"
-              items={companyItems}
+              items={companyItems.map((i) => (i.href === CONTACT_LINK ? { ...i, href: contactHref } : i))}
               buttonClassName="flex items-center gap-1 text-[10px] font-bold tracking-wider uppercase hover:text-zinc-300 transition-colors text-white"
             />
             <div className="h-3 w-px bg-neutral-700" />
@@ -1136,7 +1137,7 @@ const Header = () => {
                 <span>·</span>
                 <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="hover:text-slate-600 dark:hover:text-slate-300">About</Link>
                 <span>·</span>
-                <a href={CONTACT_HREF} onClick={() => setMobileMenuOpen(false)} className="hover:text-slate-600 dark:hover:text-slate-300">Contact</a>
+                <a href={contactHref} onClick={() => setMobileMenuOpen(false)} className="hover:text-slate-600 dark:hover:text-slate-300">Contact</a>
               </div>
             </div>
           </div>
