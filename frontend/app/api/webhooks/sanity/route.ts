@@ -63,19 +63,7 @@ export async function POST(req: NextRequest) {
       : !m ? `signature header in an unexpected format (length ${sigHeader.length})`
       : Math.abs(Date.now() - parseInt(m[1], 10)) > MAX_AGE_MS ? `timestamp too old or in the future (${m[1]})`
       : `signature does not match: the Sanity webhook secret differs from SANITY_WEBHOOK_SECRET (secret length here ${webhookSecret.length}, body length ${body.length})`;
-    // Temporary diagnosis: which likely copy-paste mix-up the Sanity secret is.
-    let mixup = "none of the common mix-ups";
-    if (m && sigHeader) {
-      const candidates: [string, string][] = [
-        ["the INGEST_SECRET value", ingestSecret],
-        ["the whole line SANITY_WEBHOOK_SECRET=…", `SANITY_WEBHOOK_SECRET=${webhookSecret}`],
-        ["the whole line INGEST_SECRET=…", `INGEST_SECRET=${ingestSecret}`],
-      ];
-      for (const [label, candidate] of candidates) {
-        if (await isValidSignature(body, sigHeader, candidate)) { mixup = label; break; }
-      }
-    }
-    console.warn(`[sanity-webhook] rejected: ${reason}; Sanity's secret matches: ${mixup}`);
+    console.warn(`[sanity-webhook] rejected: ${reason}`);
     return NextResponse.json({ error: "Invalid signature" }, { status: 401 });
   }
 
