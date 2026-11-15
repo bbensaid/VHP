@@ -55,7 +55,15 @@ export async function POST(req: NextRequest) {
   }
 
   const body = await req.text();
-  if (!(await isValidSignature(body, req.headers.get(SIGNATURE_HEADER), webhookSecret))) {
+  const sigHeader = req.headers.get(SIGNATURE_HEADER);
+  if (!(await isValidSignature(body, sigHeader, webhookSecret))) {
+    // Say which check failed, never the secret or the signature itself.
+    const m = sigHeader?.trim().match(SIGNATURE_RE);
+    const reason = !sigHeader ? "no signature header (is a secret set on the Sanity webhook?)"
+      : !m ? `signature header in an unexpected format (length ${sigHeader.length})`
+      : Math.abs(Date.now() - parseInt(m[1], 10)) > MAX_AGE_MS ? `timestamp too old or in the future (${m[1]})`
+      : `signature does not match: the Sanity webhook secret differs from SANITY_WEBHOOK_SECRET (secret length here ${webhookSecret.length}, body length ${body.length})`;
+    console.warn(`[sanity-webhook] rejected: ${reason}`);
     return NextResponse.json({ error: "Invalid signature" }, { status: 401 });
   }
 
