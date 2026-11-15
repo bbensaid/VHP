@@ -199,7 +199,6 @@ add(
     ["Move Vercel to Pro", "The free Hobby plan is for non-commercial use only", "Vercel billing ($20/month)"],
     ["Connect or remove the Advisory engagement form", "It sends nothing today", "Code change"],
     ["Fill the Webinars and Faculty pages, or hide them", "Empty pages look unfinished", "Sanity or code"],
-    ["Update HTR_ADMIN_RUNBOOK.md", "Out of date in several places", "Claude"],
   ], [34, 40, 26]),
 );
 

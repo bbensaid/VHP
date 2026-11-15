@@ -645,7 +645,6 @@ add(
   table(["Item", "Why it matters", "Who"], [
     ["The pirated Dictionary PDF is still downloadable through 18 old Dependabot pull requests on GitHub", "GitHub keeps pull-request copies that a history rewrite cannot remove", "You: ask GitHub Support to purge them, and close those pull requests"],
     ["“Health Economics.pdf” (the 2014 textbook) is in the public repository", "If it is not openly licensed, it should not be public", "Your decision"],
-    ["The runbook (HTR_ADMIN_RUNBOOK.md) is out of date", "It still names the retired Llama model, says re-ranking is off, says Fly stays always on, and describes the retired book build", "Claude: update it to match this document"],
     ["Fly is set to stop when idle, against the runbook's July decision", "First question after idle is slower; cheaper", "Your call; currently cheaper. Measured: the first question after idle waits 20 seconds"],
     ["Stripe, Loops, Sentry built but off", "Must be configured before charging users or emailing them", "Before launch"],
     ["**Beta gate cookie can be forged** (Section 2.3)", "Anyone who knows the cookie format can skip the access code", "Decide before inviting more testers; the fix signs everyone out once"],
