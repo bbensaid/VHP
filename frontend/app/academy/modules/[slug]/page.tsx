@@ -1,56 +1,37 @@
 // frontend/app/academy/modules/[slug]/page.tsx
-// Route: /academy/modules/[slug]
-// Renders a single academyModule document using AcademyModuleEngine.
+// Route: /academy/modules/[slug]  (legacy address of a single lesson body)
+//
+// Every lesson now lives in its course's player:
+//   /academy/tracks/<course slug>/<lesson slug>
+// This address is still produced by site search, AI Analyst citations,
+// Personalized Learning and old bookmarks, so it forwards to the lesson whose
+// sanity_slug is this module. It used to render the Sanity document on its
+// own, with old course names, numbering and next/previous links.
 
-import { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { client } from "@/sanity/lib/client";
-import AcademyModuleEngine from "@/components/templates/AcademyModuleEngine";
+import { notFound, permanentRedirect } from "next/navigation";
+import { db } from "@/lib/db/client";
 
-// ── Static params for build-time generation ──────────────────────────────────
-export async function generateStaticParams() {
-  const slugs: { slug: string }[] = await client.fetch(
-    `*[_type == "academyModule" && defined(slug.current)]{ "slug": slug.current }`
-  );
-  return slugs.map(({ slug }) => ({ slug }));
+export const revalidate = 3600;
+
+async function lessonHref(slug: string): Promise<string | null> {
+  const { data: lesson } = await db
+    .from("lessons")
+    .select("slug, tracks!inner(courses!inner(slug))")
+    .eq("sanity_slug", slug)
+    .limit(1)
+    .maybeSingle();
+  // supabase-js types the embedded rows loosely; read them defensively
+  const course = (lesson as { slug: string; tracks: { courses: { slug: string } } } | null)?.tracks?.courses?.slug;
+  return lesson && course ? `/academy/tracks/${course}/${lesson.slug}` : null;
 }
 
-// ── Page metadata ─────────────────────────────────────────────────────────────
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}): Promise<Metadata> {
-  const { slug } = await params;
-
-  const mod = await client.fetch(
-    `*[_type == "academyModule" && slug.current == $slug][0]{
-      title, summary, courseTitle, moduleNumber
-    }`,
-    { slug }
-  );
-
-  if (!mod) return { title: "Module Not Found" };
-
-  return {
-    title: `${mod.title} | HTR Academy`,
-    description: mod.summary,
-    openGraph: {
-      title: mod.title,
-      description: mod.summary,
-      type: "article",
-    },
-  };
-}
-
-// ── Page component ────────────────────────────────────────────────────────────
 export default async function AcademyModulePage({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  if (!slug) return notFound();
-
-  return <AcademyModuleEngine slug={slug} />;
+  const href = slug ? await lessonHref(slug) : null;
+  if (!href) return notFound();
+  permanentRedirect(href);
 }

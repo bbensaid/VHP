@@ -709,77 +709,40 @@ function QuizBlock({
 // scoring each generated item against actual module/case-study titles.
 // We trust it and derive a precise label from what the URL actually points to.
 
-// Maps topic slugs → learning track ID (mirrors backend TOPIC_TO_TRACK).
-// Track IDs must match ids in frontend/lib/data/learning-tracks-data.ts.
-// Used client-side to upgrade legacy generic fallback URLs from localStorage.
-const TOPIC_TO_TRACK: Record<string, string> = {
-  "health-economics":    "value-based-care-track",
-  "payment-reform":      "value-based-care-track",
-  "clinical-innovation": "value-based-care-track",
-  "health-policy":       "value-based-care-track",
-  "population-health":   "value-based-care-track",
-  "leadership":          "value-based-care-track",
-  "regulatory":          "value-based-care-track",
-  "health-technology":   "precision-medicine-track",
-  "data-analytics":      "precision-medicine-track",
-  "health-equity":       "health-equity-track",
+// Old saved paths (localStorage) may still link to the retired "learning
+// tracks" (/academy?tab=tracks&track=…). Each maps to the course that replaced it.
+const RETIRED_TRACK_TO_COURSE: Record<string, { slug: string; name: string }> = {
+  "value-based-care-track":   { slug: "value-based-care",            name: "Value-Based Care course" },
+  "precision-medicine-track": { slug: "genomics-precision-medicine", name: "Genomics & Precision Medicine course" },
+  "health-equity-track":      { slug: "health-equity-sdoh",          name: "Health Equity & SDOH course" },
 };
 
-const TRACK_NAMES: Record<string, string> = {
-  "value-based-care-track":    "Value-Based Care Track",
-  "precision-medicine-track":  "Precision Medicine Track",
-  "health-equity-track":       "Health Equity Track",
-};
-
-function bestTrackForTopics(topics: string[]): string | null {
-  const scores: Record<string, number> = {};
-  for (const t of topics) {
-    const id = TOPIC_TO_TRACK[t];
-    if (id) scores[id] = (scores[id] ?? 0) + 1;
-  }
-  const entries = Object.entries(scores);
-  if (!entries.length) return null;
-  return entries.reduce((a, b) => (b[1] > a[1] ? b : a))[0];
-}
-
-function resolveAcademyLink(
-  item: PathItem,
-  topics: string[]
-): { href: string; label: string } {
+function resolveAcademyLink(item: PathItem): { href: string; label: string } {
   const link = item.platform_link;
 
   if (!link) {
     // knowledge_check items intentionally have no link
-    return { href: "/academy?tab=glossary", label: "Review Key Terms in the Glossary" };
+    return { href: "/academy/glossary", label: "Review Key Terms in the Glossary" };
   }
 
-  // Derive a specific label from the actual URL
-  if (link.includes("/academy/modules/"))       return { href: link, label: "Read This Module in HTR Academy" };
+  // Derive a specific label from the actual URL. /academy/modules/<slug> and
+  // /academy/courses/<slug> forward to the current lesson or course.
+  if (link.includes("/academy/modules/"))       return { href: link, label: "Read This Lesson in HTR Academy" };
   if (link.includes("/academy/case-studies/"))  return { href: link, label: "View Full Case Study in HTR Academy" };
-  if (link.includes("/academy/courses/")) {
-    const COURSE_NAMES: Record<string, string> = {
-      "value-based-care-fundamentals": "Value-Based Care Fundamentals Course",
-      "precision-medicine-fundamentals": "Precision Medicine Fundamentals Course",
-    };
-    const slug = link.split("/academy/courses/")[1]?.split("?")[0] ?? "";
-    const name = COURSE_NAMES[slug];
-    return { href: link, label: name ? `Start the ${name}` : "View This Course in HTR Academy" };
-  }
-  if (link.includes("tab=case-studies"))        return { href: link, label: "Browse the Case Studies Library" };
+  if (link.includes("/academy/courses/") || link.includes("/academy/tracks/"))
+    return { href: link, label: "View This Course in HTR Academy" };
+  // The Academy page no longer has tabs: map old tab links to their pages.
   if (link.includes("tab=tracks")) {
-    const trackMatch = link.match(/[?&]track=([^&]+)/);
-    // If the stored URL already has a track param (new paths), use it.
-    // If not (old localStorage paths), derive the best track from the user's topics.
-    const trackId = trackMatch ? trackMatch[1] : bestTrackForTopics(topics);
-    const name = trackId ? TRACK_NAMES[trackId] : null;
-    const href = trackId && !trackMatch
-      ? `/academy?tab=tracks&track=${trackId}`
-      : link;
-    return { href, label: name ? `Explore the ${name}` : "Explore Related Learning Tracks" };
+    const trackId = link.match(/[?&]track=([^&]+)/)?.[1];
+    const course = trackId ? RETIRED_TRACK_TO_COURSE[trackId] : undefined;
+    return course
+      ? { href: `/academy/tracks/${course.slug}`, label: `Start the ${course.name}` }
+      : { href: "/academy/courses", label: "Browse the Academy Courses" };
   }
-  if (link.includes("tab=courses"))             return { href: link, label: "View Related Courses" };
-  if (link.includes("tab=glossary"))            return { href: link, label: "Review Key Terms in the Glossary" };
-  if (link.includes("tab=webinars"))            return { href: link, label: "Watch Related Webinars" };
+  if (link.includes("tab=case"))                return { href: "/academy/case-studies", label: "Browse the Case Studies Library" };
+  if (link.includes("tab=courses"))             return { href: "/academy/courses", label: "View Related Courses" };
+  if (link.includes("tab=glossary"))            return { href: "/academy/glossary", label: "Review Key Terms in the Glossary" };
+  if (link.includes("tab=webinars"))            return { href: "/academy/webinars", label: "Watch Related Webinars" };
 
   return { href: link, label: "Explore Related Content in HTR Academy" };
 }
@@ -947,7 +910,6 @@ function AudioPlayer({ text }: { text: string }) {
 
 function PathItemCard({
   item,
-  topics,
   isCompleted,
   quizAnswers,
   note,
@@ -956,7 +918,6 @@ function PathItemCard({
   onNoteChange,
 }: {
   item: PathItem;
-  topics: string[];
   isCompleted: boolean;
   quizAnswers: number[];
   note: string;
@@ -1091,7 +1052,7 @@ function PathItemCard({
               )}
               {/* Outbound link to the specific Sanity document */}
               {(() => {
-                const { href, label } = resolveAcademyLink(item, topics);
+                const { href, label } = resolveAcademyLink(item);
                 return (
                   <a
                     href={href}
@@ -1327,7 +1288,6 @@ function PathViewer({
                   <PathItemCard
                     key={item.id}
                     item={item}
-                    topics={savedPath.preferences.topics}
                     isCompleted={!!savedPath.progress[item.id]}
                     quizAnswers={savedPath.quiz_answers[item.id] || []}
                     note={savedPath.notes[item.id] || ""}

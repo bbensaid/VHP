@@ -37,13 +37,37 @@
       "updatedAt": "2026-05-25T00:00:00Z",
       "lessons": [
         {
+          "pillar": "policy",
+          "order": 1,
+          "slug": "hie-intro-what-is-hie",
+          "title": "What Is Health Information Exchange?",
+          "summary": "Start here: a plain-language introduction to HIE \u2014 what it is, the problem it solves, the three ways information is exchanged, and why it matters.",
+          "estimatedMinutes": 15,
+          "isPublished": true,
+          "objectives": [
+            {
+              "id": "o1",
+              "text": "Explain in plain language what health information exchange is"
+            },
+            {
+              "id": "o2",
+              "text": "Describe the fragmentation problem HIE is designed to solve"
+            },
+            {
+              "id": "o3",
+              "text": "Distinguish directed, query-based, and consumer-mediated exchange"
+            }
+          ],
+          "contentBlocks": []
+        },
+        {
           "id": "lesson_hipaa",
           "trackId": "track_policy",
           "pillar": "policy",
-          "order": 1,
+          "order": 2,
           "slug": "hipaa-fundamentals",
           "title": "HIPAA Fundamentals",
-          "summary": "The Health Insurance Portability and Accountability Act — its three rules, your obligations as an HIE workforce member, and the minimum necessary standard.",
+          "summary": "The Health Insurance Portability and Accountability Act \u2014 its three rules, your obligations as an HIE workforce member, and the minimum necessary standard.",
           "estimatedMinutes": 25,
           "isPublished": true,
           "tags": [
@@ -101,7 +125,7 @@
                 {
                   "year": "2009",
                   "title": "HITECH Act",
-                  "body": "Health Information Technology for Economic and Clinical Health Act — strengthens HIPAA enforcement, introduces Meaningful Use.",
+                  "body": "Health Information Technology for Economic and Clinical Health Act \u2014 strengthens HIPAA enforcement, introduces Meaningful Use.",
                   "pillar": "policy"
                 },
                 {
@@ -163,7 +187,7 @@
                 {
                   "label": "Breach penalties",
                   "left": "Up to $1.9M per violation category",
-                  "right": "Same — directly liable since 2013 Omnibus Rule"
+                  "right": "Same \u2014 directly liable since 2013 Omnibus Rule"
                 },
                 {
                   "label": "Patient rights",
@@ -174,8 +198,8 @@
             },
             {
               "type": "audio_slot",
-              "label": "HIPAA in our daily workflow — from your compliance officer",
-              "hint": "Recommended content: organization-specific examples of minimum necessary, how breach reporting works internally, and one real (anonymized) lesson learned. 5–8 minutes, MP3 or WAV."
+              "label": "HIPAA in our daily workflow \u2014 from your compliance officer",
+              "hint": "Recommended content: organization-specific examples of minimum necessary, how breach reporting works internally, and one real (anonymized) lesson learned. 5\u20138 minutes, MP3 or WAV."
             }
           ],
           "quiz": {
@@ -188,7 +212,7 @@
                 "type": "single_choice",
                 "question": "Under HIPAA's minimum necessary standard, an HIE analyst running a population-level diabetes report should:",
                 "points": 1,
-                "explanation": "The minimum necessary standard requires accessing only the PHI elements required for the specific task — in this case, the data fields needed for the population report, not full patient charts.",
+                "explanation": "The minimum necessary standard requires accessing only the PHI elements required for the specific task \u2014 in this case, the data fields needed for the population report, not full patient charts.",
                 "options": [
                   {
                     "id": "opt_h1a",
@@ -220,22 +244,22 @@
                 "options": [
                   {
                     "id": "opt_h2a",
-                    "text": "1996 — initial enactment of HIPAA",
+                    "text": "1996 \u2014 initial enactment of HIPAA",
                     "isCorrect": false
                   },
                   {
                     "id": "opt_h2b",
-                    "text": "2003 — creation of the Privacy Rule",
+                    "text": "2003 \u2014 creation of the Privacy Rule",
                     "isCorrect": false
                   },
                   {
                     "id": "opt_h2c",
-                    "text": "2013 — Business Associates became directly liable for HIPAA compliance",
+                    "text": "2013 \u2014 Business Associates became directly liable for HIPAA compliance",
                     "isCorrect": true
                   },
                   {
                     "id": "opt_h2d",
-                    "text": "2009 — introduction of electronic health records",
+                    "text": "2009 \u2014 introduction of electronic health records",
                     "isCorrect": false
                   }
                 ]
@@ -267,7 +291,7 @@
           "id": "lesson_cures_act",
           "trackId": "track_policy",
           "pillar": "policy",
-          "order": 2,
+          "order": 3,
           "slug": "21st-century-cures-act",
           "title": "21st Century Cures Act",
           "summary": "The landmark 2016 legislation that mandated interoperability, prohibited information blocking, and established FHIR APIs as the standard for patient data access.",
@@ -308,7 +332,7 @@
             {
               "type": "text",
               "heading": "What the Cures Act changed",
-              "body": "The 21st Century Cures Act (enacted December 2016, with final ONC/CMS rules in 2020) fundamentally reshaped the health IT landscape. Three provisions are most relevant to HIE staff:\n\n**1. Information blocking prohibition** — It is illegal for health IT developers, health information networks, and healthcare providers to engage in practices that unreasonably interfere with access, exchange, or use of electronic health information (EHI).\n\n**2. Standardized API mandate** — Certified EHRs must provide FHIR R4-based APIs for patient and population services. This is the technical foundation for app-based access to health data.\n\n**3. TEFCA** — The Trusted Exchange Framework and Common Agreement establishes a nationwide framework for health information exchange through Qualified Health Information Networks (QHINs)."
+              "body": "The 21st Century Cures Act (enacted December 2016, with final ONC/CMS rules in 2020) fundamentally reshaped the health IT landscape. Three provisions are most relevant to HIE staff:\n\n**1. Information blocking prohibition** \u2014 It is illegal for health IT developers, health information networks, and healthcare providers to engage in practices that unreasonably interfere with access, exchange, or use of electronic health information (EHI).\n\n**2. Standardized API mandate** \u2014 Certified EHRs must provide FHIR R4-based APIs for patient and population services. This is the technical foundation for app-based access to health data.\n\n**3. TEFCA** \u2014 The Trusted Exchange Framework and Common Agreement establishes a nationwide framework for health information exchange through Qualified Health Information Networks (QHINs)."
             },
             {
               "type": "concepts_grid",
@@ -322,7 +346,7 @@
                 {
                   "icon": "ti-list-check",
                   "title": "8 exceptions",
-                  "body": "Preventing harm, privacy, security, infeasibility, health IT performance, content and manner, fees, and licensing. Know these — they define your compliance space."
+                  "body": "Preventing harm, privacy, security, infeasibility, health IT performance, content and manner, fees, and licensing. Know these \u2014 they define your compliance space."
                 },
                 {
                   "icon": "ti-api",
@@ -350,7 +374,7 @@
               "type": "callout",
               "variant": "info",
               "heading": "The 8 information blocking exceptions",
-              "body": "1. Preventing Harm Exception\n2. Privacy Exception\n3. Security Exception\n4. Infeasibility Exception\n5. Health IT Performance Exception\n6. Content and Manner Exception\n7. Fees Exception\n8. Licensing Exception\n\nThese exceptions are narrow and specific. When in doubt, consult your compliance team — the burden of proof is on the actor claiming an exception."
+              "body": "1. Preventing Harm Exception\n2. Privacy Exception\n3. Security Exception\n4. Infeasibility Exception\n5. Health IT Performance Exception\n6. Content and Manner Exception\n7. Fees Exception\n8. Licensing Exception\n\nThese exceptions are narrow and specific. When in doubt, consult your compliance team \u2014 the burden of proof is on the actor claiming an exception."
             },
             {
               "type": "comparison_table",
@@ -378,7 +402,7 @@
             {
               "type": "audio_slot",
               "label": "Cures Act compliance: what changed in our operations",
-              "hint": "Recommended: Your CTO or compliance lead walks through specific changes your organization made to comply with the Cures Act — API implementations, policy updates, workflow changes. 5–10 minutes."
+              "hint": "Recommended: Your CTO or compliance lead walks through specific changes your organization made to comply with the Cures Act \u2014 API implementations, policy updates, workflow changes. 5\u201310 minutes."
             }
           ],
           "quiz": {
@@ -391,7 +415,7 @@
                 "type": "single_choice",
                 "question": "Under the 21st Century Cures Act, 'information blocking' refers to:",
                 "points": 1,
-                "explanation": "Information blocking is specifically defined as practices that unreasonably interfere with access, exchange, or use of EHI — not all data sharing restrictions are prohibited.",
+                "explanation": "Information blocking is specifically defined as practices that unreasonably interfere with access, exchange, or use of EHI \u2014 not all data sharing restrictions are prohibited.",
                 "options": [
                   {
                     "id": "opt_ca1a",
@@ -450,7 +474,7 @@
           "id": "lesson_vt_legislation",
           "trackId": "track_policy",
           "pillar": "policy",
-          "order": 3,
+          "order": 4,
           "slug": "vermont-act-167-act-68",
           "title": "Vermont Act 167 & Act 68",
           "summary": "Vermont's landmark health reform legislation: Act 167's HIE mandate and hospital sustainability work, and Act 68's structural transformation goals and AHS transition.",
@@ -534,17 +558,17 @@
                 {
                   "icon": "ti-building-community",
                   "title": "AHS",
-                  "body": "Vermont Agency of Human Services — now leads statewide health transformation planning per Act 68. Parent agency for DVHA and other health programs."
+                  "body": "Vermont Agency of Human Services \u2014 now leads statewide health transformation planning per Act 68. Parent agency for DVHA and other health programs."
                 },
                 {
                   "icon": "ti-chart-bar",
                   "title": "GMCB",
-                  "body": "Green Mountain Care Board — regulates hospital budgets and health insurance rates. Previously led HIE strategy and hospital sustainability work."
+                  "body": "Green Mountain Care Board \u2014 regulates hospital budgets and health insurance rates. Previously led HIE strategy and hospital sustainability work."
                 },
                 {
                   "icon": "ti-device-desktop",
                   "title": "VITL",
-                  "body": "Vermont Information Technology Leaders — operates the VHIE. Connects hospitals, clinics, labs, and pharmacies. Vermont's HIE operator."
+                  "body": "Vermont Information Technology Leaders \u2014 operates the VHIE. Connects hospitals, clinics, labs, and pharmacies. Vermont's HIE operator."
                 },
                 {
                   "icon": "ti-database",
@@ -561,13 +585,13 @@
             {
               "type": "callout",
               "variant": "info",
-              "heading": "Act 68 — what changed in 2025",
-              "body": "Act 68 (2025) made several significant changes:\n• Transferred health transformation planning from GMCB to AHS\n• Appropriated $2 million for hospital incentive grants tied to transformation participation\n• Required AHS to report on telehealth access expansion by December 2025\n• Required DFR to plan for preserving domestic health insurer sustainability\n• Directed AHS to evaluate capabilities developed for an accountable care entity"
+              "heading": "Act 68 \u2014 what changed in 2025",
+              "body": "Act 68 (2025) made several significant changes:\n\u2022 Transferred health transformation planning from GMCB to AHS\n\u2022 Appropriated $2 million for hospital incentive grants tied to transformation participation\n\u2022 Required AHS to report on telehealth access expansion by December 2025\n\u2022 Required DFR to plan for preserving domestic health insurer sustainability\n\u2022 Directed AHS to evaluate capabilities developed for an accountable care entity"
             },
             {
               "type": "audio_slot",
               "label": "Vermont health reform: our organization's legislative journey",
-              "hint": "Recommended: A policy director or senior leader narrates how Act 167 and Act 68 have directly shaped your organization's work, priorities, and structure. 8–12 minutes."
+              "hint": "Recommended: A policy director or senior leader narrates how Act 167 and Act 68 have directly shaped your organization's work, priorities, and structure. 8\u201312 minutes."
             },
             {
               "type": "glossary_terms",
@@ -575,12 +599,12 @@
               "terms": [
                 {
                   "term": "VHIE",
-                  "definition": "Vermont Health Information Exchange — the statewide clinical data exchange operated by VITL.",
+                  "definition": "Vermont Health Information Exchange \u2014 the statewide clinical data exchange operated by VITL.",
                   "pillar": "technology"
                 },
                 {
                   "term": "VHCURES",
-                  "definition": "Vermont Health Care Uniform Reporting and Evaluation System — the all-payer claims database.",
+                  "definition": "Vermont Health Care Uniform Reporting and Evaluation System \u2014 the all-payer claims database.",
                   "pillar": "economics"
                 },
                 {
@@ -590,17 +614,17 @@
                 },
                 {
                   "term": "GMCB",
-                  "definition": "Green Mountain Care Board — Vermont's independent regulatory body for hospital budgets and health insurance rates.",
+                  "definition": "Green Mountain Care Board \u2014 Vermont's independent regulatory body for hospital budgets and health insurance rates.",
                   "pillar": "policy"
                 },
                 {
                   "term": "VITL",
-                  "definition": "Vermont Information Technology Leaders — non-profit organization that operates the VHIE.",
+                  "definition": "Vermont Information Technology Leaders \u2014 non-profit organization that operates the VHIE.",
                   "pillar": "technology"
                 },
                 {
                   "term": "UHDS",
-                  "definition": "Unified Health Data System — the planned integration of VHCURES and VHIE data mandated by Act 167.",
+                  "definition": "Unified Health Data System \u2014 the planned integration of VHCURES and VHIE data mandated by Act 167.",
                   "pillar": "technology"
                 }
               ]
@@ -698,7 +722,7 @@
           "order": 1,
           "slug": "hl7-fhir-standards",
           "title": "HL7, FHIR & Interoperability Standards",
-          "summary": "From HL7 v2 pipe-delimited messages to FHIR R4 RESTful APIs — the evolution of health data standards and why they matter for HIE.",
+          "summary": "From HL7 v2 pipe-delimited messages to FHIR R4 RESTful APIs \u2014 the evolution of health data standards and why they matter for HIE.",
           "estimatedMinutes": 30,
           "isPublished": true,
           "tags": [
@@ -747,13 +771,13 @@
                 {
                   "year": "2005",
                   "title": "HL7 CDA / C-CDA",
-                  "body": "Clinical Document Architecture — XML-based structured documents. C-CDA summaries power transitions of care and HIE document exchange.",
+                  "body": "Clinical Document Architecture \u2014 XML-based structured documents. C-CDA summaries power transitions of care and HIE document exchange.",
                   "pillar": "technology"
                 },
                 {
                   "year": "2012",
                   "title": "FHIR introduced",
-                  "body": "Fast Healthcare Interoperability Resources — RESTful, resource-based standard designed for modern web APIs. Far more developer-friendly than v2 or CDA.",
+                  "body": "Fast Healthcare Interoperability Resources \u2014 RESTful, resource-based standard designed for modern web APIs. Far more developer-friendly than v2 or CDA.",
                   "pillar": "technology"
                 },
                 {
@@ -782,12 +806,12 @@
                 {
                   "icon": "ti-file-text",
                   "title": "C-CDA documents",
-                  "body": "Consolidated Clinical Document Architecture — structured XML summaries (CCD, discharge summary, referral note) for transitions of care."
+                  "body": "Consolidated Clinical Document Architecture \u2014 structured XML summaries (CCD, discharge summary, referral note) for transitions of care."
                 },
                 {
                   "icon": "ti-box-multiple",
                   "title": "FHIR resources",
-                  "body": "Patient, Observation, Condition, MedicationRequest, DiagnosticReport — discrete data objects with defined schemas, accessible via REST API endpoints."
+                  "body": "Patient, Observation, Condition, MedicationRequest, DiagnosticReport \u2014 discrete data objects with defined schemas, accessible via REST API endpoints."
                 },
                 {
                   "icon": "ti-lock-access",
@@ -797,12 +821,12 @@
                 {
                   "icon": "ti-list",
                   "title": "USCDI",
-                  "body": "US Core Data for Interoperability — the minimum data set that must be available through certified EHR APIs. Defines the floor for FHIR R4 conformance."
+                  "body": "US Core Data for Interoperability \u2014 the minimum data set that must be available through certified EHR APIs. Defines the floor for FHIR R4 conformance."
                 },
                 {
                   "icon": "ti-arrows-exchange",
                   "title": "ADT notifications",
-                  "body": "Admit-Discharge-Transfer alerts (HL7 v2 or FHIR) — the foundational real-time signal for care coordination workflows in an HIE."
+                  "body": "Admit-Discharge-Transfer alerts (HL7 v2 or FHIR) \u2014 the foundational real-time signal for care coordination workflows in an HIE."
                 }
               ]
             },
@@ -824,7 +848,7 @@
                 },
                 {
                   "label": "Flexibility",
-                  "left": "High — but inconsistent implementations",
+                  "left": "High \u2014 but inconsistent implementations",
                   "right": "Standardized structure with conformance profiles"
                 },
                 {
@@ -853,7 +877,7 @@
             {
               "type": "audio_slot",
               "label": "Our FHIR implementation: what we built and why",
-              "hint": "Recommended: Your CTO or lead architect walks through your organization's specific FHIR implementation — what APIs you expose, what data you exchange, and the decisions you made. 8–12 minutes."
+              "hint": "Recommended: Your CTO or lead architect walks through your organization's specific FHIR implementation \u2014 what APIs you expose, what data you exchange, and the decisions you made. 8\u201312 minutes."
             }
           ],
           "quiz": {
@@ -928,7 +952,7 @@
           "order": 2,
           "slug": "master-patient-index-terminology",
           "title": "Master Patient Index & Terminology Services",
-          "summary": "Patient identity matching and clinical terminology standards — the infrastructure that ensures the right data belongs to the right patient and means the same thing everywhere.",
+          "summary": "Patient identity matching and clinical terminology standards \u2014 the infrastructure that ensures the right data belongs to the right patient and means the same thing everywhere.",
           "estimatedMinutes": 25,
           "isPublished": true,
           "tags": [
@@ -977,7 +1001,7 @@
                 {
                   "icon": "ti-equal",
                   "title": "Deterministic matching",
-                  "body": "Exact match on defined fields (SSN + DOB + surname). High precision, lower recall — misses records with any data entry errors."
+                  "body": "Exact match on defined fields (SSN + DOB + surname). High precision, lower recall \u2014 misses records with any data entry errors."
                 },
                 {
                   "icon": "ti-math-function",
@@ -987,7 +1011,7 @@
                 {
                   "icon": "ti-x",
                   "title": "False positive",
-                  "body": "Two different patients incorrectly linked — the most dangerous error. Can result in wrong patient receiving another's clinical information."
+                  "body": "Two different patients incorrectly linked \u2014 the most dangerous error. Can result in wrong patient receiving another's clinical information."
                 },
                 {
                   "icon": "ti-copy",
@@ -997,14 +1021,14 @@
                 {
                   "icon": "ti-refresh",
                   "title": "Referential matching",
-                  "body": "Uses a national reference database (e.g., LexisNexis) to augment matching — particularly effective for patients who change address or name."
+                  "body": "Uses a national reference database (e.g., LexisNexis) to augment matching \u2014 particularly effective for patients who change address or name."
                 }
               ]
             },
             {
               "type": "text",
               "heading": "Why terminology standards matter",
-              "body": "Even with perfect patient matching, HIE data is useless if 'diabetes' means different things in different systems. Terminology standards create a shared vocabulary:\n\n- **LOINC** (Logical Observation Identifiers Names and Codes): Standardizes lab tests and clinical measurements. A CBC from Quest Diagnostics and a CBC from LabCorp should map to the same LOINC codes.\n- **SNOMED CT**: Comprehensive clinical terminology for diagnoses, findings, procedures. The most granular clinical vocabulary.\n- **RxNorm**: Standard for drug names and clinical drug attributes. Enables medication reconciliation across systems.\n- **ICD-10-CM**: Diagnosis codes used in claims and clinical documentation. Required for billing; maps to SNOMED for clinical analysis.\n\nYour HIE's terminology services layer maps local codes to these standards — without it, population-level analytics are unreliable."
+              "body": "Even with perfect patient matching, HIE data is useless if 'diabetes' means different things in different systems. Terminology standards create a shared vocabulary:\n\n- **LOINC** (Logical Observation Identifiers Names and Codes): Standardizes lab tests and clinical measurements. A CBC from Quest Diagnostics and a CBC from LabCorp should map to the same LOINC codes.\n- **SNOMED CT**: Comprehensive clinical terminology for diagnoses, findings, procedures. The most granular clinical vocabulary.\n- **RxNorm**: Standard for drug names and clinical drug attributes. Enables medication reconciliation across systems.\n- **ICD-10-CM**: Diagnosis codes used in claims and clinical documentation. Required for billing; maps to SNOMED for clinical analysis.\n\nYour HIE's terminology services layer maps local codes to these standards \u2014 without it, population-level analytics are unreliable."
             },
             {
               "type": "key_stat",
@@ -1042,7 +1066,7 @@
                 "type": "single_choice",
                 "question": "A 'false negative' in Master Patient Index matching means:",
                 "points": 1,
-                "explanation": "A false negative means one patient's records across systems fail to be matched and remain fragmented — causing care gaps and analytics failures. False positives (wrong patients linked) are the more dangerous error.",
+                "explanation": "A false negative means one patient's records across systems fail to be matched and remain fragmented \u2014 causing care gaps and analytics failures. False positives (wrong patients linked) are the more dangerous error.",
                 "options": [
                   {
                     "id": "opt_m1a",
@@ -1104,7 +1128,7 @@
           "order": 3,
           "slug": "integration-engines-architecture",
           "title": "Integration Engines & HIE Architecture",
-          "summary": "The middleware that routes and transforms health data — how integration engines work, HIE architecture patterns, and Vermont's technical infrastructure.",
+          "summary": "The middleware that routes and transforms health data \u2014 how integration engines work, HIE architecture patterns, and Vermont's technical infrastructure.",
           "estimatedMinutes": 25,
           "isPublished": true,
           "tags": [
@@ -1148,7 +1172,7 @@
                 {
                   "icon": "ti-point-to-point",
                   "title": "Point-to-point",
-                  "body": "Each source system connects directly to each destination. Simple for small networks; becomes unmanageable at scale (N×M connections)."
+                  "body": "Each source system connects directly to each destination. Simple for small networks; becomes unmanageable at scale (N\u00d7M connections)."
                 },
                 {
                   "icon": "ti-broadcast",
@@ -1181,12 +1205,12 @@
               "type": "callout",
               "variant": "info",
               "heading": "Vermont's VHIE technical architecture",
-              "body": "VITL's VHIE operates as a centralized hub serving Vermont's hospitals, clinics, labs, pharmacies, and community health organizations. Data contributors send HL7 v2 or C-CDA messages; VITL normalizes, patient-matches via MPI, and makes data available through:\n• Query-based exchange (provider queries for patient records)\n• Alert-based services (ADT notifications to subscribed providers)\n• Population health analytics platforms\n• Connections to regional and national networks"
+              "body": "VITL's VHIE operates as a centralized hub serving Vermont's hospitals, clinics, labs, pharmacies, and community health organizations. Data contributors send HL7 v2 or C-CDA messages; VITL normalizes, patient-matches via MPI, and makes data available through:\n\u2022 Query-based exchange (provider queries for patient records)\n\u2022 Alert-based services (ADT notifications to subscribed providers)\n\u2022 Population health analytics platforms\n\u2022 Connections to regional and national networks"
             },
             {
               "type": "audio_slot",
               "label": "Our integration architecture: a technical walkthrough",
-              "hint": "Recommended: Your lead architect or integration engineer walks through your actual integration engine setup, key channels, and a real data flow example. 10–15 minutes. This is one of the most valuable audio slots in the course."
+              "hint": "Recommended: Your lead architect or integration engineer walks through your actual integration engine setup, key channels, and a real data flow example. 10\u201315 minutes. This is one of the most valuable audio slots in the course."
             }
           ],
           "quiz": {
@@ -1199,7 +1223,7 @@
                 "type": "single_choice",
                 "question": "In a publish-subscribe HIE architecture, what happens when a patient is admitted to a hospital?",
                 "points": 1,
-                "explanation": "The hospital (publisher) publishes an ADT notification to the HIE hub, which routes it to all subscribers who have opted in to receive alerts for that patient — e.g., their primary care provider.",
+                "explanation": "The hospital (publisher) publishes an ADT notification to the HIE hub, which routes it to all subscribers who have opted in to receive alerts for that patient \u2014 e.g., their primary care provider.",
                 "options": [
                   {
                     "id": "opt_i1a",
@@ -1235,7 +1259,7 @@
       "order": 3,
       "slug": "economics-payment-models",
       "title": "Economics & Payment Models",
-      "description": "The financial architecture of healthcare reform — value-based care models, payment incentives, and the economic case for high-value over low-value care.",
+      "description": "The financial architecture of healthcare reform \u2014 value-based care models, payment incentives, and the economic case for high-value over low-value care.",
       "icon": "ti-coin",
       "targetAudience": [
         "All staff",
@@ -1253,7 +1277,7 @@
           "order": 1,
           "slug": "fee-for-service-vs-value-based-care",
           "title": "Fee-for-Service vs Value-Based Care",
-          "summary": "The central economic transformation in healthcare — from volume-based to outcomes-based payment, and Vermont's All-Payer Model.",
+          "summary": "The central economic transformation in healthcare \u2014 from volume-based to outcomes-based payment, and Vermont's All-Payer Model.",
           "estimatedMinutes": 25,
           "isPublished": true,
           "tags": [
@@ -1292,8 +1316,8 @@
               "rows": [
                 {
                   "label": "Payment basis",
-                  "left": "Volume — each service rendered generates payment",
-                  "right": "Outcomes — quality, efficiency, and cost reduction generate payment"
+                  "left": "Volume \u2014 each service rendered generates payment",
+                  "right": "Outcomes \u2014 quality, efficiency, and cost reduction generate payment"
                 },
                 {
                   "label": "Incentive",
@@ -1302,13 +1326,13 @@
                 },
                 {
                   "label": "Care coordination",
-                  "left": "Penalized — coordination takes time with no direct billing",
-                  "right": "Rewarded — coordinated care reduces avoidable costs"
+                  "left": "Penalized \u2014 coordination takes time with no direct billing",
+                  "right": "Rewarded \u2014 coordinated care reduces avoidable costs"
                 },
                 {
                   "label": "Data needs",
                   "left": "Billing codes and claims",
-                  "right": "Complete longitudinal patient data — exactly what HIE provides"
+                  "right": "Complete longitudinal patient data \u2014 exactly what HIE provides"
                 },
                 {
                   "label": "Risk",
@@ -1339,19 +1363,19 @@
                 {
                   "icon": "ti-building-hospital",
                   "title": "ACOs",
-                  "body": "Accountable Care Organizations — networks of providers sharing accountability for a defined patient population's costs and quality outcomes."
+                  "body": "Accountable Care Organizations \u2014 networks of providers sharing accountability for a defined patient population's costs and quality outcomes."
                 }
               ]
             },
             {
               "type": "text",
-              "heading": "Vermont's All-Payer Model — a national first",
+              "heading": "Vermont's All-Payer Model \u2014 a national first",
               "body": "In 2017, Vermont became the first state to implement an All-Payer Accountable Care Organization Model, aligning Medicare, Medicaid, and commercial payers around shared value-based goals. OneCare Vermont is the ACO that operates under this model.\n\nThe model sets statewide per-capita cost and quality targets. Providers who meet targets share in savings; those who miss face potential penalties. The model covers most Vermonters and is the economic backbone of Act 167 and Act 68's transformation agenda.\n\nHIE data is foundational to this model: attribution, quality measurement, care gap identification, and outcome tracking all depend on complete, longitudinal patient data."
             },
             {
               "type": "audio_slot",
               "label": "Vermont's All-Payer Model: an insider perspective",
-              "hint": "Recommended: A senior leader from your economics, finance, or strategy team explains how Vermont's APM affects your organization's contracts, incentives, and priorities. 8–12 minutes."
+              "hint": "Recommended: A senior leader from your economics, finance, or strategy team explains how Vermont's APM affects your organization's contracts, incentives, and priorities. 8\u201312 minutes."
             }
           ],
           "quiz": {
@@ -1397,7 +1421,7 @@
           "order": 2,
           "slug": "high-value-vs-low-value-care",
           "title": "High-Value vs Low-Value Care",
-          "summary": "Not all spending produces health. Understanding what constitutes high-value and low-value care — and how HIE data identifies each — is core to health reform economics.",
+          "summary": "Not all spending produces health. Understanding what constitutes high-value and low-value care \u2014 and how HIE data identifies each \u2014 is core to health reform economics.",
           "estimatedMinutes": 20,
           "isPublished": true,
           "tags": [
@@ -1437,7 +1461,7 @@
                   "source": "JAMA 2019"
                 },
                 {
-                  "value": "25–30%",
+                  "value": "25\u201330%",
                   "label": "of care estimated to be of low value",
                   "source": "NEJM"
                 },
@@ -1487,7 +1511,7 @@
             {
               "type": "audio_slot",
               "label": "Measuring and reducing low-value care in Vermont",
-              "hint": "Recommended: An analytics or quality team member walks through a specific low-value care analysis your organization has conducted — what you found, what changed as a result. 8–10 minutes."
+              "hint": "Recommended: An analytics or quality team member walks through a specific low-value care analysis your organization has conducted \u2014 what you found, what changed as a result. 8\u201310 minutes."
             }
           ],
           "quiz": {
@@ -1554,7 +1578,7 @@
           "order": 1,
           "slug": "clinical-quality-measures",
           "title": "Clinical Quality Measures",
-          "summary": "How we measure quality — structure, process, outcome, and experience measures — and how HIE data improves measure fidelity.",
+          "summary": "How we measure quality \u2014 structure, process, outcome, and experience measures \u2014 and how HIE data improves measure fidelity.",
           "estimatedMinutes": 25,
           "isPublished": true,
           "tags": [
@@ -1620,7 +1644,7 @@
                 {
                   "label": "HEDIS (NCQA)",
                   "left": "Health Effectiveness Data and Information Set",
-                  "right": "Health plan quality reporting — 90+ measures across preventive care, chronic disease, behavioral health"
+                  "right": "Health plan quality reporting \u2014 90+ measures across preventive care, chronic disease, behavioral health"
                 },
                 {
                   "label": "CMS Quality Programs",
@@ -1642,12 +1666,12 @@
             {
               "type": "text",
               "heading": "eCQMs: where HIE data changes everything",
-              "body": "Electronic Clinical Quality Measures (eCQMs) pull directly from structured EHR data rather than claims. HIE data dramatically amplifies eCQM accuracy:\n\n**Without HIE**: A primary care provider only sees clinical data from their own EHR. A patient who had a mammogram at a different facility, filled a prescription at an independent pharmacy, or was hospitalized at a regional hospital appears to have care gaps that don't actually exist.\n\n**With HIE**: The provider's eCQM calculation includes data from all connected facilities. Fewer false care gaps, more accurate population health reports, better-targeted outreach.\n\nThis 'longitudinal view' is one of the highest-value propositions of HIE — and why HIE participation rates directly affect quality measurement accuracy."
+              "body": "Electronic Clinical Quality Measures (eCQMs) pull directly from structured EHR data rather than claims. HIE data dramatically amplifies eCQM accuracy:\n\n**Without HIE**: A primary care provider only sees clinical data from their own EHR. A patient who had a mammogram at a different facility, filled a prescription at an independent pharmacy, or was hospitalized at a regional hospital appears to have care gaps that don't actually exist.\n\n**With HIE**: The provider's eCQM calculation includes data from all connected facilities. Fewer false care gaps, more accurate population health reports, better-targeted outreach.\n\nThis 'longitudinal view' is one of the highest-value propositions of HIE \u2014 and why HIE participation rates directly affect quality measurement accuracy."
             },
             {
               "type": "audio_slot",
               "label": "Our quality measure portfolio and HIE data strategy",
-              "hint": "Recommended: Your clinical quality or analytics team describes which measures your organization tracks, how HIE data improves them, and what the biggest gaps are. 8–12 minutes."
+              "hint": "Recommended: Your clinical quality or analytics team describes which measures your organization tracks, how HIE data improves them, and what the biggest gaps are. 8\u201312 minutes."
             }
           ],
           "quiz": {
@@ -1660,7 +1684,7 @@
                 "type": "single_choice",
                 "question": "A measure tracking whether patients with diabetes received an HbA1c test in the past year is classified as:",
                 "points": 1,
-                "explanation": "Process measures ask 'was the right thing done?' — the HbA1c test is a recommended process of care for diabetic patients. Outcome measures would track the actual HbA1c value achieved.",
+                "explanation": "Process measures ask 'was the right thing done?' \u2014 the HbA1c test is a recommended process of care for diabetic patients. Outcome measures would track the actual HbA1c value achieved.",
                 "options": [
                   {
                     "id": "opt_cq1a",
@@ -1694,7 +1718,7 @@
                     "id": "opt_cq2t",
                     "text": "True",
                     "isCorrect": true,
-                    "explanation": "This is one of the core value propositions of HIE — eliminating false care gaps that appear when data from other facilities is unavailable."
+                    "explanation": "This is one of the core value propositions of HIE \u2014 eliminating false care gaps that appear when data from other facilities is unavailable."
                   },
                   {
                     "id": "opt_cq2f",
@@ -1715,7 +1739,7 @@
       "order": 5,
       "slug": "health-equity-access",
       "title": "Health Equity & Access",
-      "description": "Understanding health disparities, social determinants, and Vermont's rural health challenges — and how HIE can be a tool for equity rather than inequity.",
+      "description": "Understanding health disparities, social determinants, and Vermont's rural health challenges \u2014 and how HIE can be a tool for equity rather than inequity.",
       "icon": "ti-scale",
       "targetAudience": [
         "All staff",
@@ -1734,7 +1758,7 @@
           "order": 1,
           "slug": "health-disparities-sdoh",
           "title": "Health Disparities & Social Determinants",
-          "summary": "The upstream drivers of health inequity — race, income, geography, disability — and the data practices that reveal or perpetuate them.",
+          "summary": "The upstream drivers of health inequity \u2014 race, income, geography, disability \u2014 and the data practices that reveal or perpetuate them.",
           "estimatedMinutes": 25,
           "isPublished": true,
           "tags": [
@@ -1773,7 +1797,7 @@
                 {
                   "icon": "ti-scale",
                   "title": "Health equity",
-                  "body": "Every person has a fair opportunity to attain their full health potential — not limited by social, economic, or environmental disadvantage."
+                  "body": "Every person has a fair opportunity to attain their full health potential \u2014 not limited by social, economic, or environmental disadvantage."
                 },
                 {
                   "icon": "ti-chart-bar",
@@ -1783,7 +1807,7 @@
                 {
                   "icon": "ti-home",
                   "title": "Social determinants",
-                  "body": "Conditions where people are born, grow, live, work, and age — housing, income, education, food security, transportation — that drive 80%+ of health outcomes."
+                  "body": "Conditions where people are born, grow, live, work, and age \u2014 housing, income, education, food security, transportation \u2014 that drive 80%+ of health outcomes."
                 },
                 {
                   "icon": "ti-map-pin",
@@ -1795,13 +1819,13 @@
             {
               "type": "text",
               "heading": "The data equity imperative",
-              "body": "HIE data is not equity-neutral. It can amplify inequities in several ways:\n\n**Incomplete participation**: Safety-net providers serving the most vulnerable populations are often less connected to HIEs due to resource constraints. Their patients are underrepresented.\n\n**Missing demographic data**: Race and ethnicity data is frequently missing or inaccurate in EHRs and claims — making it impossible to measure or address disparities.\n\n**Algorithmic bias**: Risk stratification algorithms trained on historical data encode existing disparities. A Black patient with the same disease burden as a white patient may be scored as lower risk due to lower historical healthcare utilization.\n\n**Conversely**, when designed intentionally, HIE is a powerful equity tool: stratified quality measures reveal hidden disparities that aggregate data masks; SDOH data integration enables targeted outreach to vulnerable populations."
+              "body": "HIE data is not equity-neutral. It can amplify inequities in several ways:\n\n**Incomplete participation**: Safety-net providers serving the most vulnerable populations are often less connected to HIEs due to resource constraints. Their patients are underrepresented.\n\n**Missing demographic data**: Race and ethnicity data is frequently missing or inaccurate in EHRs and claims \u2014 making it impossible to measure or address disparities.\n\n**Algorithmic bias**: Risk stratification algorithms trained on historical data encode existing disparities. A Black patient with the same disease burden as a white patient may be scored as lower risk due to lower historical healthcare utilization.\n\n**Conversely**, when designed intentionally, HIE is a powerful equity tool: stratified quality measures reveal hidden disparities that aggregate data masks; SDOH data integration enables targeted outreach to vulnerable populations."
             },
             {
               "type": "callout",
               "variant": "warning",
               "heading": "Act 68 equity mandate",
-              "body": "Act 68 explicitly requires that health system transformation generate 'improvements in health outcomes, population health, quality of care, regional access to services, and reducing disparities in access resulting from demographic factors or health status.' Equity is not optional — it is a statutory requirement."
+              "body": "Act 68 explicitly requires that health system transformation generate 'improvements in health outcomes, population health, quality of care, regional access to services, and reducing disparities in access resulting from demographic factors or health status.' Equity is not optional \u2014 it is a statutory requirement."
             },
             {
               "type": "key_stat",
@@ -1831,7 +1855,7 @@
             {
               "type": "audio_slot",
               "label": "Equity in our HIE: gaps, strategies, and commitments",
-              "hint": "Recommended: Your equity lead or community health team discusses known data gaps, specific disparities you've identified in Vermont, and concrete steps your organization is taking. 10–15 minutes. This is one of the most important audio slots in the course."
+              "hint": "Recommended: Your equity lead or community health team discusses known data gaps, specific disparities you've identified in Vermont, and concrete steps your organization is taking. 10\u201315 minutes. This is one of the most important audio slots in the course."
             }
           ],
           "quiz": {
@@ -1844,7 +1868,7 @@
                 "type": "single_choice",
                 "question": "Which HIE data practice most directly enables measurement of health disparities?",
                 "points": 1,
-                "explanation": "Stratifying quality measures by race, ethnicity, income, and geography reveals hidden disparities that aggregate data masks — this is a core equity analytics practice.",
+                "explanation": "Stratifying quality measures by race, ethnicity, income, and geography reveals hidden disparities that aggregate data masks \u2014 this is a core equity analytics practice.",
                 "options": [
                   {
                     "id": "opt_eq1a",
@@ -1873,7 +1897,7 @@
                 "type": "true_false",
                 "question": "Risk stratification algorithms can perpetuate health disparities even when race is not explicitly included as an input variable.",
                 "points": 1,
-                "explanation": "True — algorithms trained on historical utilization data encode existing disparities. Lower utilization among disadvantaged groups (due to access barriers) is interpreted as lower risk, even when actual disease burden is equal or higher.",
+                "explanation": "True \u2014 algorithms trained on historical utilization data encode existing disparities. Lower utilization among disadvantaged groups (due to access barriers) is interpreted as lower risk, even when actual disease burden is equal or higher.",
                 "options": [
                   {
                     "id": "opt_eq2t",
@@ -1899,7 +1923,7 @@
       "order": 6,
       "slug": "operations-workforce",
       "title": "Operations & Workforce",
-      "description": "The organizational infrastructure of health reform — workforce roles, governance models, consent frameworks, and the ethical foundations of data stewardship.",
+      "description": "The organizational infrastructure of health reform \u2014 workforce roles, governance models, consent frameworks, and the ethical foundations of data stewardship.",
       "icon": "ti-settings",
       "targetAudience": [
         "All new employees",
@@ -1970,7 +1994,7 @@
                 {
                   "icon": "ti-users",
                   "title": "Provider relations",
-                  "body": "Onboard and support data contributors — hospitals, clinics, labs. Train end users on HIE services."
+                  "body": "Onboard and support data contributors \u2014 hospitals, clinics, labs. Train end users on HIE services."
                 },
                 {
                   "icon": "ti-file-certificate",
@@ -1987,7 +2011,7 @@
             {
               "type": "text",
               "heading": "The T-shaped professional",
-              "body": "The most effective HIE employees are 'T-shaped': deep expertise in one domain (the vertical bar of the T) combined with broad literacy across all five pillars \u2014 and fluency in the Equity Imperative that tests each of them \u2014 (the horizontal bar).\n\n- A **technical person** who understands policy context makes better architecture decisions — they know why the information blocking exception matters for their API design.\n- A **policy analyst** who understands FHIR asks better questions of the data team and writes more technically grounded legislation.\n- A **clinician** who understands economics designs better quality measures — ones that are both clinically meaningful and incentive-compatible.\n- Anyone who treats equity as a checklist item, not a lens applied to every decision, will miss the disparities that only show up when you look for them.\n\nThis course is your horizontal bar. Use it."
+              "body": "The most effective HIE employees are 'T-shaped': deep expertise in one domain (the vertical bar of the T) combined with broad literacy across all five pillars \u2014 and fluency in the Equity Imperative that tests each of them \u2014 (the horizontal bar).\n\n- A **technical person** who understands policy context makes better architecture decisions \u2014 they know why the information blocking exception matters for their API design.\n- A **policy analyst** who understands FHIR asks better questions of the data team and writes more technically grounded legislation.\n- A **clinician** who understands economics designs better quality measures \u2014 ones that are both clinically meaningful and incentive-compatible.\n- Anyone who treats equity as a checklist item, not a lens applied to every decision, will miss the disparities that only show up when you look for them.\n\nThis course is your horizontal bar. Use it."
             },
             {
               "type": "callout",
@@ -2039,7 +2063,7 @@
           "order": 2,
           "slug": "governance-consent-ethics",
           "title": "Governance, Consent & Data Ethics",
-          "summary": "Who decides what data is shared, with whom, and for what purpose — HIE governance models, Vermont's opt-out consent framework, and the ethical principles of data stewardship.",
+          "summary": "Who decides what data is shared, with whom, and for what purpose \u2014 HIE governance models, Vermont's opt-out consent framework, and the ethical principles of data stewardship.",
           "estimatedMinutes": 25,
           "isPublished": true,
           "tags": [
@@ -2067,7 +2091,7 @@
             },
             {
               "id": "obj_g4",
-              "text": "Apply ethical principles — purpose limitation, proportionality, benefit — to data use decisions"
+              "text": "Apply ethical principles \u2014 purpose limitation, proportionality, benefit \u2014 to data use decisions"
             }
           ],
           "contentBlocks": [
@@ -2123,18 +2147,18 @@
             {
               "type": "text",
               "heading": "Ethics in data use decisions",
-              "body": "Just because data can be accessed doesn't mean it should be. Every data use decision in an HIE should be evaluated against three principles:\n\n**Purpose limitation**: Is this use consistent with the purpose for which the data was originally collected? Patient data shared for treatment purposes should not be repurposed for commercial interests without explicit consent.\n\n**Proportionality (minimum necessary)**: Are you using the minimum amount of data needed to accomplish the legitimate purpose? This mirrors HIPAA's minimum necessary standard.\n\n**Benefit**: Does this use serve patients and the public? Who benefits, and who bears the risk?\n\nThese are not just legal questions — they are ethical ones, and every employee who touches data is a data steward."
+              "body": "Just because data can be accessed doesn't mean it should be. Every data use decision in an HIE should be evaluated against three principles:\n\n**Purpose limitation**: Is this use consistent with the purpose for which the data was originally collected? Patient data shared for treatment purposes should not be repurposed for commercial interests without explicit consent.\n\n**Proportionality (minimum necessary)**: Are you using the minimum amount of data needed to accomplish the legitimate purpose? This mirrors HIPAA's minimum necessary standard.\n\n**Benefit**: Does this use serve patients and the public? Who benefits, and who bears the risk?\n\nThese are not just legal questions \u2014 they are ethical ones, and every employee who touches data is a data steward."
             },
             {
               "type": "callout",
               "variant": "info",
               "heading": "Vermont's VHIE opt-out mechanics",
-              "body": "Patients can opt out of the VHIE at any time. An opt-out means:\n• Their data will not appear in query results for authorized providers\n• Their data will not be included in population analytics\n• They can opt back in at any time\n• Their care will not be affected by their opt-out decision\n\nApproximately 3–5% of Vermont patients have opted out. Understanding the opt-out process is important for provider relations and patient-facing staff."
+              "body": "Patients can opt out of the VHIE at any time. An opt-out means:\n\u2022 Their data will not appear in query results for authorized providers\n\u2022 Their data will not be included in population analytics\n\u2022 They can opt back in at any time\n\u2022 Their care will not be affected by their opt-out decision\n\nApproximately 3\u20135% of Vermont patients have opted out. Understanding the opt-out process is important for provider relations and patient-facing staff."
             },
             {
               "type": "audio_slot",
               "label": "Our data governance principles and decision-making process",
-              "hint": "Recommended: Your governance lead, privacy officer, or executive director walks through how your organization makes data use decisions — specific examples of requests approved and denied. 10–15 minutes."
+              "hint": "Recommended: Your governance lead, privacy officer, or executive director walks through how your organization makes data use decisions \u2014 specific examples of requests approved and denied. 10\u201315 minutes."
             }
           ],
           "quiz": {
@@ -2147,7 +2171,7 @@
                 "type": "single_choice",
                 "question": "Vermont's VHIE uses which patient consent model?",
                 "points": 1,
-                "explanation": "Vermont uses an opt-out model — patients are included by default and can choose to exclude their data. This maximizes data completeness while preserving patient autonomy.",
+                "explanation": "Vermont uses an opt-out model \u2014 patients are included by default and can choose to exclude their data. This maximizes data completeness while preserving patient autonomy.",
                 "options": [
                   {
                     "id": "opt_g1a",

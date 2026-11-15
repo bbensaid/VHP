@@ -96,7 +96,7 @@ export default async function MyCoursesPage() {
                       )}
                     </div>
                     <Link
-                      href={`/academy/courses/${enroll.course_slug}`}
+                      href={`/academy/tracks/${enroll.course_slug}`}
                       className="shrink-0 text-xs font-bold text-indigo-600 hover:text-indigo-800 border border-indigo-200 rounded-lg px-3 py-1.5 hover:bg-indigo-50 transition-colors"
                     >
                       {isComplete ? "Review" : "Continue"}

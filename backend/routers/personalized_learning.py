@@ -111,20 +111,6 @@ TOPIC_TO_PILLAR: Dict[str, Optional[str]] = {
     "regulatory":          "Policy",
 }
 
-# Maps user topic slugs to the most relevant published learning track ID.
-# Track IDs must match ids defined in frontend/lib/data/learning-tracks-data.ts.
-TOPIC_TO_TRACK: Dict[str, str] = {
-    "health-economics":    "value-based-care-track",
-    "payment-reform":      "value-based-care-track",
-    "clinical-innovation": "value-based-care-track",
-    "health-policy":       "value-based-care-track",
-    "population-health":   "value-based-care-track",
-    "leadership":          "value-based-care-track",
-    "regulatory":          "value-based-care-track",
-    "health-technology":   "precision-medicine-track",
-    "data-analytics":      "precision-medicine-track",
-    "health-equity":       "health-equity-track",
-}
 
 
 
@@ -494,7 +480,7 @@ OUTPUT: Return ONLY valid JSON. No markdown. No explanation. Start with {{ and e
     {{
       "title": "Resource title",
       "type": "course",
-      "link": "/academy/courses/healthcare-economics",
+      "link": "/academy/courses/value-based-care",
       "description": "1 sentence."
     }},
     {{

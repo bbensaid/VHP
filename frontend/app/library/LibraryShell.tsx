@@ -456,7 +456,7 @@ function CoursesSection({
               return (
                 <Link
                   key={e.id}
-                  href={`/academy/courses/${e.course_slug}`}
+                  href={`/academy/tracks/${e.course_slug}`}
                   className="block bg-white border border-slate-200 rounded-xl p-4 hover:border-slate-300 hover:shadow-sm transition-all"
                 >
                   <div className="flex items-center justify-between gap-3 mb-2">

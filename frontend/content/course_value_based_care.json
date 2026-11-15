@@ -375,7 +375,7 @@
         {
           "id": "lesson_sanity_vbc_fundamentals",
           "pillar": "all",
-          "order": 99,
+          "order": 4,
           "slug": "vbc-fundamentals-m1",
           "title": "Why the Way We Pay for Healthcare Is Breaking the System — And How Paying for Value Could Fix It",
           "summary": "The United States spends more on healthcare than any nation on earth — yet trails comparable wealthy nations on life expectancy and preventable deaths. This module explains why that paradox exists, how the fee-for-service payment system created it, and how value-based care offers a fundamentally different path forward.",
@@ -923,9 +923,9 @@
         {
           "id": "lesson_sanity_vbc_economics",
           "pillar": "economics",
-          "order": 99,
+          "order": 4,
           "slug": "vbc-fundamentals-module-3-economics-pillar",
-          "title": "Value-Based Care Fundamentals — Module 3: The Economics Pillar — Following the Money in Value-Based Care",
+          "title": "The Economics Pillar — Following the Money in Value-Based Care",
           "summary": "Module 3 of the HTR Academy Value-Based Care Fundamentals course examines the financial mechanics of value-based care from first principles. It explains, in plain language, how money actually flows in the major VBC contract structures — shared savings, bundled payments, and capitation — how providers calculate whether a VBC arrangement is financially rational for their organization, what the volume-to-value transition problem means in practice for health system balance sheets, and what the economic evidence says about which VBC models generate durable savings versus which ones simply shift cost without reducing it. Learners will leave this module able to evaluate a VBC contract term sheet, identify the key actuarial concepts their finance teams are using, and understand the economic case for primary care investment as the highest-return infrastructure spend in healthcare.",
           "estimatedMinutes": 26,
           "objectives": [
@@ -1661,126 +1661,6 @@
           "trackId": "track_vbc_quality",
           "createdAt": "2026-05-26T00:00:00.000Z",
           "updatedAt": "2026-05-26T00:00:00.000Z"
-        },
-        {
-          "id": "lesson_sanity_vbc_clinical",
-          "pillar": "clinical",
-          "order": 99,
-          "slug": "vbc-clinical-m5",
-          "title": "From Volume to Value at the Bedside: How Value-Based Care Transforms Clinical Practice",
-          "summary": "Value-based care is not just a billing change — it reshapes what happens in every exam room, every hospital ward, and every care team huddle. This module explores how the shift from fee-for-service to value changes clinical workflows, team structures, quality measurement, population health management, and care coordination. If you practice, manage, or support clinical care in any setting, this module explains why the ground is shifting beneath your feet — and what to do about it.",
-          "estimatedMinutes": 22,
-          "objectives": [
-            {
-              "id": "obj_sanity_vbc_clinical_1",
-              "text": "Explain how fee-for-service versus value-based payment creates different clinical incentives and workflows"
-            },
-            {
-              "id": "obj_sanity_vbc_clinical_2",
-              "text": "Identify the four major domains of quality measurement used in VBC contracts"
-            },
-            {
-              "id": "obj_sanity_vbc_clinical_3",
-              "text": "Define population health management and describe how it works in a primary care setting"
-            },
-            {
-              "id": "obj_sanity_vbc_clinical_4",
-              "text": "Explain what care coordination involves and why it reduces both cost and harm"
-            },
-            {
-              "id": "obj_sanity_vbc_clinical_5",
-              "text": "Describe evidence-based interventions that reduce preventable hospitalizations and readmissions"
-            },
-            {
-              "id": "obj_sanity_vbc_clinical_6",
-              "text": "Identify Vermont-specific clinical programs that operationalize value-based care"
-            }
-          ],
-          "contentBlocks": [
-            {
-              "type": "text",
-              "body": "Picture a primary care physician seeing 24 patients in a day. Under fee-for-service, she is rewarded for each visit, each test ordered, each referral made. Under value-based care, she is rewarded for something harder to measure but far more important: whether her patients are actually healthier. That shift in incentives changes everything that happens in the exam room.\n\nThis module is about the clinical side of the VBC transformation. It is not abstract. The shift shows up in care team huddles, in how discharge plans are written, in how nurses manage phone calls with patients just released from the hospital, and in how a physician spends the last five minutes of every appointment. Understanding these changes is essential for anyone who works in, manages, or influences clinical care."
-            },
-            {
-              "type": "text",
-              "heading": "How Payment Models Shape Clinical Decisions",
-              "body": "Clinicians do not consciously think 'I am going to order this test because I will get paid for it.' But payment systems create incentive structures that shape behavior in powerful ways. Under fee-for-service, a busy practice survives by filling the schedule. Under value-based care, a practice is rewarded for keeping patients healthy enough that they do not need to come back as often.\n\nThese differences are not just philosophical. They have real operational consequences. A practice moving to value-based contracts must restructure its workflows, hire different staff — care coordinators, community health workers, data analysts — and invest in systems that identify which patients are at risk before they land in the emergency room."
-            },
-            {
-              "type": "text",
-              "heading": "Quality Measures: How Clinical Performance Is Evaluated",
-              "body": "In value-based care, clinicians and practices are evaluated on a structured set of quality measures — standardized metrics that assess whether patients are receiving evidence-based care and achieving good outcomes. These come from several sources: the Centers for Medicare and Medicaid Services, the National Committee for Quality Assurance, and the Agency for Healthcare Research and Quality."
-            },
-            {
-              "type": "callout",
-              "variant": "tip",
-              "heading": "Key Concept",
-              "body": "Quality Measure: A standardized, evidence-based metric used to assess whether patients receive recommended care. Examples: the percentage of diabetic patients with HbA1c under 8.0%, the percentage of patients with hypertension whose blood pressure is controlled, or the percentage of eligible patients who received a colorectal cancer screening."
-            },
-            {
-              "type": "text",
-              "body": "There are hundreds of quality measures in use across the US healthcare system. For primary care practices in most VBC contracts, a core set of 10 to 20 measures typically drives the bulk of performance-based bonuses or penalties. The most important fall into four categories.\n\nThe most sophisticated VBC programs now move beyond process measures — did we do the right thing? — toward outcome measures: did the patient get better? Vermont's All-Payer Model tracks outcomes like population-level diabetes prevalence trends and preventable hospitalization rates, not just whether a doctor ordered a hemoglobin A1c test."
-            },
-            {
-              "type": "text",
-              "heading": "Population Health Management: Responsibility Beyond the Appointment",
-              "body": "One of the most fundamental shifts in value-based care is moving from patient-by-patient thinking to population-level thinking. Under fee-for-service, a physician's responsibility begins when a patient walks through the door and ends when they leave. Under VBC, a care team is responsible for the health of an entire attributed patient panel — including the people who are not coming in.\n\nPopulation health management requires three things fee-for-service practices rarely had: data, staff, and proactive processes. The data comes from electronic health records and claims. The staff — care managers or medical assistants in expanded roles — conduct outreach to patients who need follow-up. The processes include monthly panel reviews, risk stratification algorithms, and care gap closure protocols.\n\nRisk stratification is the engine of population health management. Practices use algorithms — built into EHR systems or analytics platforms — to sort patients into tiers based on their likelihood of a high-cost clinical event in the next 6 to 12 months. High-risk patients get intensive care management: regular check-ins, home visits, medication reconciliation. Low-risk patients get preventive outreach: reminders for annual wellness visits and screenings."
-            },
-            {
-              "type": "text",
-              "heading": "Care Coordination: The Connective Tissue of Value-Based Care",
-              "body": "The US healthcare system was built around specialization. Cardiologists manage hearts. Endocrinologists manage diabetes. Orthopedic surgeons manage joints. This works extraordinarily well for complex procedures and rare conditions. It works catastrophically poorly for the average Medicare patient with five chronic conditions who sees seven different specialists — none of whom talk to each other."
-            },
-            {
-              "type": "callout",
-              "variant": "tip",
-              "heading": "Key Concept",
-              "body": "Care Coordination: The deliberate organization of patient care activities and the sharing of information among all participants to achieve safer, more effective care. It includes communication between providers, follow-up after transitions, medication reconciliation, and ensuring patients understand their care plan."
-            },
-            {
-              "type": "text",
-              "body": "Poor care coordination is expensive and dangerous. When a cardiologist adds a new medication and does not know the patient's nephrologist recently changed a kidney medication, the combination can cause serious harm. When a hospital discharges a patient with instructions to 'schedule a follow-up within a week' but does not help make that appointment, the patient often does not go — and ends up back in the ER within 30 days.\n\nValue-based care fixes this by making coordination an explicit responsibility with a named owner. The care coordinator — often a registered nurse, social worker, or medical assistant in an extended role — serves as the connective tissue between providers, between hospital and home, and between patient and care plan. Their job is to make sure nothing falls through the cracks."
-            },
-            {
-              "type": "text",
-              "heading": "Reducing Preventable Hospitalizations and Readmissions",
-              "body": "Hospitalizations are the single largest driver of healthcare costs. A single inpatient stay for a Medicare patient costs, on average, more than $13,000. Many of those hospitalizations are for conditions that, if managed properly in an outpatient setting, should never have required a hospital bed. These are called ambulatory care-sensitive conditions — uncontrolled diabetes, COPD exacerbations, congestive heart failure, urinary tract infections."
-            },
-            {
-              "type": "callout",
-              "variant": "info",
-              "heading": "Note",
-              "body": "Ambulatory Care-Sensitive Conditions (ACSCs): Medical conditions for which timely and appropriate outpatient care can prevent hospitalization. They include asthma, COPD, congestive heart failure, diabetes complications, and hypertension. High ACSC hospitalization rates signal that primary care access or quality is failing."
-            },
-            {
-              "type": "text",
-              "body": "Value-based care contracts explicitly target ACSC hospitalization rates as a key performance indicator. A practice with a high ACSC rate is leaving money on the table — and more importantly, leaving patients in harm's way. Hospitalizations carry real clinical risk: hospital-acquired infections, medication errors, delirium in elderly patients, and the deconditioning from days of bed rest.\n\nReadmissions are a related but distinct problem. A readmission occurs when a patient returns to the hospital within 30 days of discharge. The national Medicare readmission rate hovers around 15 to 20 percent. CMS began financially penalizing hospitals for excess readmissions in 2013 under the Hospital Readmissions Reduction Program. Since then, rates have declined — but remain stubbornly high."
-            },
-            {
-              "type": "text",
-              "heading": "The New Clinical Team: Roles That Value-Based Care Built",
-              "body": "Value-based care has not replaced physicians. But it has radically expanded the clinical team around them. In a well-functioning VBC practice, the physician is the expert clinician and diagnostic mind — supported by a team that handles much of what was once shoved into a 15-minute visit or never done at all.\n\nAdvanced Practice Providers — nurse practitioners and physician assistants — play an expanded role in VBC models, often managing the bulk of stable chronic disease visits and wellness exams while physicians focus on complex diagnostic cases. This is team-based care: the right person, for the right patient, at the right time."
-            },
-            {
-              "type": "text",
-              "heading": "Vermont Clinical Programs: Value-Based Care in Action",
-              "body": "Vermont is not just talking about value-based clinical care — it has been running the experiment for over a decade. The Blueprint for Health, launched in 2006, was one of the first statewide primary care transformation programs in the country. Every participating practice has undergone a formal practice transformation process: team-based care, patient registries, care coordination, and quality measurement.\n\nVermont's All-Payer Model, which launched in 2017 and runs through 2029, takes this further. OneCare Vermont — the state's accountable care organization — holds a global budget covering roughly a third of Vermont residents. Practices within OneCare are responsible for the total cost of care for their attributed population. Every preventable hospitalization and readmission is a financial signal that something in the clinical model needs to change."
-            },
-            {
-              "type": "text",
-              "heading": "The Clinical Case for Value-Based Care",
-              "body": "For many clinicians, the shift to value-based care feels like an administrative imposition — more metrics to track, more documentation requirements, more meetings. That is a legitimate concern, and it reflects real transition pain. But the underlying logic of VBC aligns more closely with why most clinicians entered medicine than fee-for-service ever did.\n\nFee-for-service rewarded doing more. It paid well for procedures and poorly for conversations, care coordination, and prevention. It created a system where a physician who spent 45 minutes with a complex elderly patient on 12 medications was paid the same as a physician who spent 10 minutes. It created burnout among clinicians who wanted to practice relationship-based medicine but were trapped on a volume treadmill."
-            },
-            {
-              "type": "callout",
-              "variant": "info",
-              "heading": "Note",
-              "body": "Physician burnout peaked at 62.8% in 2021 and, though it has eased since — 43.2% of physicians reported at least one symptom in 2024 — it remains high, with administrative burden a leading driver. VBC, done well, can restore what drew clinicians to medicine: time with patients, team support, and a payment system that rewards doing what is actually right for the patient. Source: American Medical Association national burnout survey data, 2021–2024."
-            }
-          ],
-          "tags": [],
-          "relatedLessonIds": [],
-          "isPublished": true
         }
       ]
     },
@@ -2247,138 +2127,6 @@
           "trackId": "track_vbc_stars",
           "createdAt": "2026-05-26T00:00:00.000Z",
           "updatedAt": "2026-05-26T00:00:00.000Z"
-        },
-        {
-          "id": "lesson_sanity_vbc_equity",
-          "pillar": "equity",
-          "order": 99,
-          "slug": "vbc-equity-m6",
-          "title": "Who Gets Left Behind: Health Equity, Social Determinants, and Building a VBC System That Works for Everyone",
-          "summary": "Value-based care was designed, in part, as a health equity intervention — rewarding good outcomes rather than high volume should help the patients who need the most help. But the research tells a more complicated story. This module examines where VBC has advanced health equity, where it has undermined it, and what specific design choices — in risk adjustment, community health worker programs, panel selection, and rural policy — are required to build a VBC system that actually works for everyone.",
-          "estimatedMinutes": 20,
-          "objectives": [
-            {
-              "id": "obj_sanity_vbc_equity_1",
-              "text": "Define health disparities and social determinants of health using current data"
-            },
-            {
-              "id": "obj_sanity_vbc_equity_2",
-              "text": "Explain three structural equity flaws in how most VBC programs are currently designed"
-            },
-            {
-              "id": "obj_sanity_vbc_equity_3",
-              "text": "Describe how SDOH risk adjustment works and why the current CMS approach is considered insufficient"
-            },
-            {
-              "id": "obj_sanity_vbc_equity_4",
-              "text": "Explain the evidence base for community health workers and the reimbursement barriers they face"
-            },
-            {
-              "id": "obj_sanity_vbc_equity_5",
-              "text": "Identify Vermont-specific equity challenges including rural, refugee, and indigenous populations"
-            },
-            {
-              "id": "obj_sanity_vbc_equity_6",
-              "text": "Describe what equity-centered VBC design requires beyond good intentions"
-            }
-          ],
-          "contentBlocks": [
-            {
-              "type": "text",
-              "body": "In 2019, a landmark study published in the journal Science made a startling discovery. A widely used commercial algorithm — the kind that decides which patients get enrolled in intensive care management programs — was systematically underestimating the health needs of Black patients. Not by a little. The algorithm assigned Black patients the same risk score as white patients who were, on average, significantly healthier. The practical consequence: Black patients were less likely to be identified for the high-intensity care management they needed.\n\nThis module is the culmination of the course — and arguably its most important chapter. Value-based care promises to improve health for everyone by aligning incentives with outcomes rather than volume. But a payment reform that perpetuates or amplifies existing health inequities is not a solution. It is a new version of the same problem. Understanding where VBC fails on equity — and how to fix it — is not optional knowledge for healthcare leaders. It is the central challenge of our generation."
-            },
-            {
-              "type": "text",
-              "heading": "What Health Disparities Actually Look Like",
-              "body": "A health disparity is a difference in health outcomes between population groups that is preventable, avoidable, and unjust. It is not just the observation that some groups are sicker than others — it is the recognition that those differences are not random. They reflect systematic disadvantages in access to healthcare, economic stability, education, safe housing, and healthy food."
-            },
-            {
-              "type": "callout",
-              "variant": "tip",
-              "heading": "Key Concept",
-              "body": "Health Disparity: A preventable difference in the burden of disease, injury, violence, or opportunity to achieve optimal health between groups defined by race, ethnicity, income, education, disability, geography, or other social characteristics."
-            },
-            {
-              "type": "text",
-              "body": "These disparities are not primarily explained by genetic differences or individual health behaviors. The research literature is clear: the most powerful predictors of health outcomes are social and economic — where you live, what you earn, whether your neighborhood has a grocery store, whether you can take a day off work to see a doctor. These are the social determinants of health."
-            },
-            {
-              "type": "text",
-              "heading": "Social Determinants of Health: The 30 to 55 Percent of Outcomes We Rarely Treat",
-              "body": "Social determinants of health are the conditions in which people are born, grow, live, work, and age that shape health outcomes. They include: income and wealth, educational attainment, employment quality, food security, housing stability and quality, transportation access, neighborhood safety, and social connectedness. The evidence that SDOH factors account for 30 to 55 percent of health outcome variation — compared to only 10 to 20 percent typically attributed to clinical care — is now firmly established in the research literature.\n\nThe most frequently screened SDOH domains in clinical settings are food insecurity, housing instability, transportation barriers, social isolation, interpersonal violence, and low health literacy. Standardized screening tools — including the Accountable Health Communities tool and the PRAPARE instrument — allow clinical teams to systematically identify SDOH needs during routine visits. But screening alone is insufficient. The critical next step — connecting patients to community resources that address those needs — is where most health systems still struggle."
-            },
-            {
-              "type": "text",
-              "heading": "Three Structural Equity Flaws in Current VBC Design",
-              "body": "Value-based care was intended to be an equity intervention — aligning incentives with population health outcomes should, in theory, help the patients who need the most help. The reality is more complicated. Three structural equity problems have been consistently documented in the VBC research literature. Understanding all three is essential for any leader who wants to build VBC programs that advance rather than undermine health equity.\n\nThe panel selection problem is the most empirically documented. Because MSSP benchmarks and quality scores were built with little adjustment for social risk, ACOs serving high shares of dual-eligible beneficiaries — patients enrolled in both Medicare and Medicaid, who face the most complex social and clinical needs — face weaker financial returns from participation. CMS acknowledged that pressure when it added a health equity adjustment to ACO quality scoring (2023) and a Health Equity Benchmark Adjustment (2025), then removed the quality-score adjustment for 2026."
-            },
-            {
-              "type": "callout",
-              "variant": "info",
-              "heading": "Note",
-              "body": "A value-based care model that makes it financially rational to avoid serving the sickest, poorest, and most socially complex patients is not a health equity intervention. It is a health equity obstruction wearing the language of reform. Getting the incentives right requires explicit equity design — not just good intentions layered on top of metrics that were built for a different patient population."
-            },
-            {
-              "type": "text",
-              "heading": "SDOH Risk Adjustment: Making the Metrics Fair",
-              "body": "The metric design problem — the failure of standard quality metrics to account for social determinants — is the most technically solvable of VBC's equity challenges. SDOH risk adjustment means modifying performance benchmarks to account for the social complexity of the patient population being served, so that providers are compared to peers serving similar populations rather than to the national average.\n\nCMS made its most significant commitment to SDOH risk adjustment in the CY2025 Physician Fee Schedule final rule, which created a Health Equity Benchmark Adjustment — starting in 2025 — that raises spending benchmarks for ACOs serving high proportions of beneficiaries who are dually eligible or receive the Part D low-income subsidy. This acknowledges that high-need populations cost more to manage effectively. Critics note that dual and low-income-subsidy status are imperfect proxies for the full range of social complexity that drives outcome variation.\n\nCMS has not adopted the broader factors researchers recommend — such as Area Deprivation Index scores, Z-code screening data, or community health worker encounter data — and the CY2026 Physician Fee Schedule moved the other way, removing the social determinants risk assessment from Medicare's G0136 code. The policy change required to make VBC metrics truly equitable will require sustained advocacy from providers who are experiencing the consequences of inadequate adjustment directly."
-            },
-            {
-              "type": "text",
-              "heading": "Community Health Workers: The Most Powerful Equity Tool in VBC",
-              "body": "Community health workers — frontline public health workers who are typically members of the communities they serve, with lived experience of the social and health challenges those communities face — are emerging as the most powerful equity tool in value-based care. Where clinical care coordinators manage disease processes and care transitions, CHWs address the social and environmental factors that determine whether clinical interventions succeed."
-            },
-            {
-              "type": "callout",
-              "variant": "tip",
-              "heading": "Key Concept",
-              "body": "Community Health Worker (CHW): A frontline public health worker who is a trusted member of and has a close understanding of the community being served. CHWs serve as a bridge between health and social services and the communities they serve, reduce cultural and social barriers to care, and provide health education, advocacy, and social support in community settings. They are NOT case managers or care coordinators — the community trust and cultural competence that makes their work effective must be lived, not credentialed."
-            },
-            {
-              "type": "text",
-              "body": "What makes CHWs distinctive — and irreplaceable — is trust. In communities that have historically had reason to distrust institutional medicine, a CHW who grew up in the neighborhood, speaks the language, and has navigated the same systems can accomplish what no clinical protocol can. They connect patients to food assistance programs, navigate housing resources, provide transportation to appointments, and serve as advocates within a healthcare system that can feel foreign and hostile to those who most need it.\n\nDespite this evidence base, CHW integration into VBC programs has been slower than warranted, primarily because of reimbursement barriers. Most fee-for-service billing structures do not include a direct reimbursement pathway for CHW services, requiring VBC organizations to fund CHW positions out of shared savings or grants. This creates funding fragility — organizations that cannot sustain CHW positions between shared savings payments cycle through workforce disruption that undermines the relationship continuity that makes CHW programs effective.\n\nCMS has taken meaningful steps to address this. No federal rule requires state Medicaid programs to pay for CHW services: coverage is a state option, possible since a 2013 CMS rule (effective 2014) let Medicaid pay for preventive services recommended by a licensed practitioner, and 29 of 48 responding states reported paying for CHW services in KFF's 2022 survey. For Medicare, the CY2024 Physician Fee Schedule created the first Community Health Integration codes (G0019, G0022), which pay for CHW services furnished under a billing practitioner's supervision. The AHEAD Model gives each participating state up to $12 million in cooperative agreement funding and requires a state health equity plan. Vermont signed on to AHEAD in January 2025 but withdrew in July 2026, before its performance period began, so it has no AHEAD-linked CHW funding stream."
-            },
-            {
-              "type": "text",
-              "heading": "Rural and Geographic Equity: The Invisible Disparity",
-              "body": "Healthcare equity discussions in the United States have historically focused primarily on racial and ethnic disparities — and for important reasons. But a parallel geographic equity crisis receives far less policy attention: the systematic disadvantage faced by rural Americans in healthcare access, provider supply, and health outcomes relative to their urban peers.\n\nRural Americans are more likely to die from the five leading causes of preventable death — heart disease, cancer, unintentional injury, chronic lower respiratory disease, and stroke. They have fewer physicians per capita, longer travel distances to care, higher rates of uninsurance, and significantly lower rates of receiving recommended preventive services. And they are, as documented in the Technology module, disproportionately outside the VBC system entirely — receiving care under fee-for-service Medicare with its documented incentive failures."
-            },
-            {
-              "type": "text",
-              "heading": "Vermont's Equity Landscape: Progress and Persistent Gaps",
-              "body": "Vermont's All-Payer Model (2018–2025) set statewide population-health goals — improving access to primary care, reducing deaths from suicide and drug overdose, and reducing the prevalence and morbidity of chronic disease — rather than explicit health equity targets. The AHEAD Model requires participating states to set health equity goals, but Vermont withdrew from AHEAD before its performance period began.\n\nVermont's refugee and immigrant populations — concentrated primarily in Burlington, Winooski, and Rutland — face compounding health equity challenges: language barriers, cultural differences in health-seeking behavior, immigration status concerns, trauma histories from displacement and persecution, and limited familiarity with a healthcare system very different from those in their countries of origin.\n\nVermont's Abenaki and other indigenous communities face health disparities that reflect both geographic isolation and historical trauma with healthcare institutions. The legacy of forced assimilation and the state's eugenics program — including a 1931 sterilization law, for which the Vermont Legislature formally apologized in 2021 — has created well-founded distrust of the healthcare system that no appointment reminder or care coordinator can overcome. Rebuilding trust with indigenous communities requires sustained, community-led engagement over years — not program cycles."
-            },
-            {
-              "type": "text",
-              "heading": "AI Bias in Risk Stratification: Technology as an Equity Threat",
-              "body": "The 2019 Science study described at the opening of this module identified a mechanism that explains the algorithmic underestimation of Black patients' health needs: the algorithm used healthcare costs as a proxy for health need. Black patients historically had lower healthcare costs — not because they were healthier, but because structural barriers had historically limited their access to care. The algorithm encoded a history of discrimination as a measure of health. The practical consequence: Black patients were significantly less likely to be flagged for high-intensity care management programs.\n\nThis problem has been replicated for other demographic groups and other algorithm types. As AI-powered risk stratification tools become increasingly central to VBC care management, the equity risk posed by biased training data becomes increasingly urgent. A healthcare organization that deploys an AI risk model without auditing it for demographic performance disparities is potentially using technology to automate discrimination at scale."
-            },
-            {
-              "type": "callout",
-              "variant": "tip",
-              "heading": "Key Concept",
-              "body": "Technology Governance Requirement: Any healthcare organization deploying an AI risk stratification tool in a VBC context has an ethical and, increasingly, a legal obligation to audit the tool for demographic performance disparities before deployment. The audit should examine whether the model's accuracy varies significantly across racial, ethnic, and socioeconomic subgroups. If it does, the organization must select a different model, recalibrate it for its specific population, or supplement algorithmic scores with clinical and social worker judgment for populations where the algorithm performs poorly."
-            },
-            {
-              "type": "text",
-              "heading": "Building Equity-Centered VBC: What It Actually Takes",
-              "body": "Building a VBC program that genuinely advances health equity rather than performing it in marketing materials requires design choices that are sometimes in tension with the financial optimization logic that drives most VBC strategy discussions. Equity-centered VBC design requires accepting lower short-term shared savings in exchange for serving populations whose care management needs are higher. It requires investing in CHW infrastructure before guaranteed funding arrives. It requires choosing quality metrics that are SDOH-adjusted rather than metrics that produce better scores simply because you serve a more advantaged population."
-            },
-            {
-              "type": "text",
-              "heading": "Course Conclusion: What Value-Based Care Can and Cannot Do",
-              "body": "Across six modules, this course has examined value-based care through every lens that matters: the economic incentive logic that makes it necessary, the policy architecture that makes it operational, the economics that determine whether it saves money, the technology that makes it analytically possible, the clinical model that determines whether it actually improves patient outcomes, and the equity design requirements that determine whether it works for everyone. The honest conclusion is nuanced but ultimately optimistic.\n\nValue-based care, when designed well, implemented with adequate infrastructure, and evaluated with appropriate equity metrics, produces meaningfully better clinical outcomes than fee-for-service at lower total cost. The fee-for-service system that currently dominates American healthcare is producing the worst outcomes per dollar of any wealthy nation on earth. The most credible available alternative — paying for health rather than for activity — is demonstrably capable of doing better.\n\nWhat value-based care cannot do, on its own, is eliminate the social determinants of health that account for 30 to 55 percent of outcome variation. It cannot provide affordable housing, food security, safe neighborhoods, or living wages — the most powerful health interventions available at the population level. These are not arguments against value-based care. They are arguments for building it with sufficient ambition, equity intentionality, and long-term commitment to match the scale of the problem it is trying to solve."
-            },
-            {
-              "type": "callout",
-              "variant": "info",
-              "heading": "Note",
-              "body": "Vermont's health care reform effort — which since its July 2026 withdrawal from AHEAD proceeds under state law (Act 68 of 2025) — is the most ambitious attempt in state history to align payment incentives, equity goals, and clinical infrastructure toward a single measurable objective: a healthier population at sustainable cost. Whether it succeeds will depend on the willingness of providers, payers, policymakers, and community organizations to make the hard design choices that equity-centered VBC requires."
-            }
-          ],
-          "tags": [],
-          "relatedLessonIds": [],
-          "isPublished": true
         }
       ]
     },
@@ -2626,11 +2374,263 @@
           "updatedAt": "2026-05-26T00:00:00.000Z"
         },
         {
+          "id": "lesson_sanity_vbc_clinical",
+          "pillar": "clinical",
+          "order": 3,
+          "slug": "sanity-vbc-clinical",
+          "title": "From Volume to Value at the Bedside: How Value-Based Care Transforms Clinical Practice",
+          "summary": "Value-based care is not just a billing change — it reshapes what happens in every exam room, every hospital ward, and every care team huddle. This module explores how the shift from fee-for-service to value changes clinical workflows, team structures, quality measurement, population health management, and care coordination. If you practice, manage, or support clinical care in any setting, this module explains why the ground is shifting beneath your feet — and what to do about it.",
+          "estimatedMinutes": 22,
+          "objectives": [
+            {
+              "id": "obj_sanity_vbc_clinical_1",
+              "text": "Explain how fee-for-service versus value-based payment creates different clinical incentives and workflows"
+            },
+            {
+              "id": "obj_sanity_vbc_clinical_2",
+              "text": "Identify the four major domains of quality measurement used in VBC contracts"
+            },
+            {
+              "id": "obj_sanity_vbc_clinical_3",
+              "text": "Define population health management and describe how it works in a primary care setting"
+            },
+            {
+              "id": "obj_sanity_vbc_clinical_4",
+              "text": "Explain what care coordination involves and why it reduces both cost and harm"
+            },
+            {
+              "id": "obj_sanity_vbc_clinical_5",
+              "text": "Describe evidence-based interventions that reduce preventable hospitalizations and readmissions"
+            },
+            {
+              "id": "obj_sanity_vbc_clinical_6",
+              "text": "Identify Vermont-specific clinical programs that operationalize value-based care"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "body": "Picture a primary care physician seeing 24 patients in a day. Under fee-for-service, she is rewarded for each visit, each test ordered, each referral made. Under value-based care, she is rewarded for something harder to measure but far more important: whether her patients are actually healthier. That shift in incentives changes everything that happens in the exam room.\n\nThis module is about the clinical side of the VBC transformation. It is not abstract. The shift shows up in care team huddles, in how discharge plans are written, in how nurses manage phone calls with patients just released from the hospital, and in how a physician spends the last five minutes of every appointment. Understanding these changes is essential for anyone who works in, manages, or influences clinical care."
+            },
+            {
+              "type": "text",
+              "heading": "How Payment Models Shape Clinical Decisions",
+              "body": "Clinicians do not consciously think 'I am going to order this test because I will get paid for it.' But payment systems create incentive structures that shape behavior in powerful ways. Under fee-for-service, a busy practice survives by filling the schedule. Under value-based care, a practice is rewarded for keeping patients healthy enough that they do not need to come back as often.\n\nThese differences are not just philosophical. They have real operational consequences. A practice moving to value-based contracts must restructure its workflows, hire different staff — care coordinators, community health workers, data analysts — and invest in systems that identify which patients are at risk before they land in the emergency room."
+            },
+            {
+              "type": "text",
+              "heading": "Quality Measures: How Clinical Performance Is Evaluated",
+              "body": "In value-based care, clinicians and practices are evaluated on a structured set of quality measures — standardized metrics that assess whether patients are receiving evidence-based care and achieving good outcomes. These come from several sources: the Centers for Medicare and Medicaid Services, the National Committee for Quality Assurance, and the Agency for Healthcare Research and Quality."
+            },
+            {
+              "type": "callout",
+              "variant": "tip",
+              "heading": "Key Concept",
+              "body": "Quality Measure: A standardized, evidence-based metric used to assess whether patients receive recommended care. Examples: the percentage of diabetic patients with HbA1c under 8.0%, the percentage of patients with hypertension whose blood pressure is controlled, or the percentage of eligible patients who received a colorectal cancer screening."
+            },
+            {
+              "type": "text",
+              "body": "There are hundreds of quality measures in use across the US healthcare system. For primary care practices in most VBC contracts, a core set of 10 to 20 measures typically drives the bulk of performance-based bonuses or penalties. The most important fall into four categories.\n\nThe most sophisticated VBC programs now move beyond process measures — did we do the right thing? — toward outcome measures: did the patient get better? Vermont's All-Payer Model tracks outcomes like population-level diabetes prevalence trends and preventable hospitalization rates, not just whether a doctor ordered a hemoglobin A1c test."
+            },
+            {
+              "type": "text",
+              "heading": "Population Health Management: Responsibility Beyond the Appointment",
+              "body": "One of the most fundamental shifts in value-based care is moving from patient-by-patient thinking to population-level thinking. Under fee-for-service, a physician's responsibility begins when a patient walks through the door and ends when they leave. Under VBC, a care team is responsible for the health of an entire attributed patient panel — including the people who are not coming in.\n\nPopulation health management requires three things fee-for-service practices rarely had: data, staff, and proactive processes. The data comes from electronic health records and claims. The staff — care managers or medical assistants in expanded roles — conduct outreach to patients who need follow-up. The processes include monthly panel reviews, risk stratification algorithms, and care gap closure protocols.\n\nRisk stratification is the engine of population health management. Practices use algorithms — built into EHR systems or analytics platforms — to sort patients into tiers based on their likelihood of a high-cost clinical event in the next 6 to 12 months. High-risk patients get intensive care management: regular check-ins, home visits, medication reconciliation. Low-risk patients get preventive outreach: reminders for annual wellness visits and screenings."
+            },
+            {
+              "type": "text",
+              "heading": "Care Coordination: The Connective Tissue of Value-Based Care",
+              "body": "The US healthcare system was built around specialization. Cardiologists manage hearts. Endocrinologists manage diabetes. Orthopedic surgeons manage joints. This works extraordinarily well for complex procedures and rare conditions. It works catastrophically poorly for the average Medicare patient with five chronic conditions who sees seven different specialists — none of whom talk to each other."
+            },
+            {
+              "type": "callout",
+              "variant": "tip",
+              "heading": "Key Concept",
+              "body": "Care Coordination: The deliberate organization of patient care activities and the sharing of information among all participants to achieve safer, more effective care. It includes communication between providers, follow-up after transitions, medication reconciliation, and ensuring patients understand their care plan."
+            },
+            {
+              "type": "text",
+              "body": "Poor care coordination is expensive and dangerous. When a cardiologist adds a new medication and does not know the patient's nephrologist recently changed a kidney medication, the combination can cause serious harm. When a hospital discharges a patient with instructions to 'schedule a follow-up within a week' but does not help make that appointment, the patient often does not go — and ends up back in the ER within 30 days.\n\nValue-based care fixes this by making coordination an explicit responsibility with a named owner. The care coordinator — often a registered nurse, social worker, or medical assistant in an extended role — serves as the connective tissue between providers, between hospital and home, and between patient and care plan. Their job is to make sure nothing falls through the cracks."
+            },
+            {
+              "type": "text",
+              "heading": "Reducing Preventable Hospitalizations and Readmissions",
+              "body": "Hospitalizations are the single largest driver of healthcare costs. A single inpatient stay for a Medicare patient costs, on average, more than $13,000. Many of those hospitalizations are for conditions that, if managed properly in an outpatient setting, should never have required a hospital bed. These are called ambulatory care-sensitive conditions — uncontrolled diabetes, COPD exacerbations, congestive heart failure, urinary tract infections."
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "Note",
+              "body": "Ambulatory Care-Sensitive Conditions (ACSCs): Medical conditions for which timely and appropriate outpatient care can prevent hospitalization. They include asthma, COPD, congestive heart failure, diabetes complications, and hypertension. High ACSC hospitalization rates signal that primary care access or quality is failing."
+            },
+            {
+              "type": "text",
+              "body": "Value-based care contracts explicitly target ACSC hospitalization rates as a key performance indicator. A practice with a high ACSC rate is leaving money on the table — and more importantly, leaving patients in harm's way. Hospitalizations carry real clinical risk: hospital-acquired infections, medication errors, delirium in elderly patients, and the deconditioning from days of bed rest.\n\nReadmissions are a related but distinct problem. A readmission occurs when a patient returns to the hospital within 30 days of discharge. The national Medicare readmission rate hovers around 15 to 20 percent. CMS began financially penalizing hospitals for excess readmissions in 2013 under the Hospital Readmissions Reduction Program. Since then, rates have declined — but remain stubbornly high."
+            },
+            {
+              "type": "text",
+              "heading": "The New Clinical Team: Roles That Value-Based Care Built",
+              "body": "Value-based care has not replaced physicians. But it has radically expanded the clinical team around them. In a well-functioning VBC practice, the physician is the expert clinician and diagnostic mind — supported by a team that handles much of what was once shoved into a 15-minute visit or never done at all.\n\nAdvanced Practice Providers — nurse practitioners and physician assistants — play an expanded role in VBC models, often managing the bulk of stable chronic disease visits and wellness exams while physicians focus on complex diagnostic cases. This is team-based care: the right person, for the right patient, at the right time."
+            },
+            {
+              "type": "text",
+              "heading": "Vermont Clinical Programs: Value-Based Care in Action",
+              "body": "Vermont is not just talking about value-based clinical care — it has been running the experiment for over a decade. The Blueprint for Health, launched in 2006, was one of the first statewide primary care transformation programs in the country. Every participating practice has undergone a formal practice transformation process: team-based care, patient registries, care coordination, and quality measurement.\n\nVermont's All-Payer Model, which launched in 2017 and runs through 2029, takes this further. OneCare Vermont — the state's accountable care organization — holds a global budget covering roughly a third of Vermont residents. Practices within OneCare are responsible for the total cost of care for their attributed population. Every preventable hospitalization and readmission is a financial signal that something in the clinical model needs to change."
+            },
+            {
+              "type": "text",
+              "heading": "The Clinical Case for Value-Based Care",
+              "body": "For many clinicians, the shift to value-based care feels like an administrative imposition — more metrics to track, more documentation requirements, more meetings. That is a legitimate concern, and it reflects real transition pain. But the underlying logic of VBC aligns more closely with why most clinicians entered medicine than fee-for-service ever did.\n\nFee-for-service rewarded doing more. It paid well for procedures and poorly for conversations, care coordination, and prevention. It created a system where a physician who spent 45 minutes with a complex elderly patient on 12 medications was paid the same as a physician who spent 10 minutes. It created burnout among clinicians who wanted to practice relationship-based medicine but were trapped on a volume treadmill."
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "Note",
+              "body": "Physician burnout peaked at 62.8% in 2021 and, though it has eased since — 43.2% of physicians reported at least one symptom in 2024 — it remains high, with administrative burden a leading driver. VBC, done well, can restore what drew clinicians to medicine: time with patients, team support, and a payment system that rewards doing what is actually right for the patient. Source: American Medical Association national burnout survey data, 2021–2024."
+            }
+          ],
+          "tags": [],
+          "relatedLessonIds": [],
+          "isPublished": true
+        },
+        {
+          "id": "lesson_sanity_vbc_equity",
+          "pillar": "equity",
+          "order": 4,
+          "slug": "sanity-vbc-equity",
+          "title": "Who Gets Left Behind: Health Equity, Social Determinants, and Building a VBC System That Works for Everyone",
+          "summary": "Value-based care was designed, in part, as a health equity intervention — rewarding good outcomes rather than high volume should help the patients who need the most help. But the research tells a more complicated story. This module examines where VBC has advanced health equity, where it has undermined it, and what specific design choices — in risk adjustment, community health worker programs, panel selection, and rural policy — are required to build a VBC system that actually works for everyone.",
+          "estimatedMinutes": 20,
+          "objectives": [
+            {
+              "id": "obj_sanity_vbc_equity_1",
+              "text": "Define health disparities and social determinants of health using current data"
+            },
+            {
+              "id": "obj_sanity_vbc_equity_2",
+              "text": "Explain three structural equity flaws in how most VBC programs are currently designed"
+            },
+            {
+              "id": "obj_sanity_vbc_equity_3",
+              "text": "Describe how SDOH risk adjustment works and why the current CMS approach is considered insufficient"
+            },
+            {
+              "id": "obj_sanity_vbc_equity_4",
+              "text": "Explain the evidence base for community health workers and the reimbursement barriers they face"
+            },
+            {
+              "id": "obj_sanity_vbc_equity_5",
+              "text": "Identify Vermont-specific equity challenges including rural, refugee, and indigenous populations"
+            },
+            {
+              "id": "obj_sanity_vbc_equity_6",
+              "text": "Describe what equity-centered VBC design requires beyond good intentions"
+            }
+          ],
+          "contentBlocks": [
+            {
+              "type": "text",
+              "body": "In 2019, a landmark study published in the journal Science made a startling discovery. A widely used commercial algorithm — the kind that decides which patients get enrolled in intensive care management programs — was systematically underestimating the health needs of Black patients. Not by a little. The algorithm assigned Black patients the same risk score as white patients who were, on average, significantly healthier. The practical consequence: Black patients were less likely to be identified for the high-intensity care management they needed.\n\nThis module is the culmination of the course — and arguably its most important chapter. Value-based care promises to improve health for everyone by aligning incentives with outcomes rather than volume. But a payment reform that perpetuates or amplifies existing health inequities is not a solution. It is a new version of the same problem. Understanding where VBC fails on equity — and how to fix it — is not optional knowledge for healthcare leaders. It is the central challenge of our generation."
+            },
+            {
+              "type": "text",
+              "heading": "What Health Disparities Actually Look Like",
+              "body": "A health disparity is a difference in health outcomes between population groups that is preventable, avoidable, and unjust. It is not just the observation that some groups are sicker than others — it is the recognition that those differences are not random. They reflect systematic disadvantages in access to healthcare, economic stability, education, safe housing, and healthy food."
+            },
+            {
+              "type": "callout",
+              "variant": "tip",
+              "heading": "Key Concept",
+              "body": "Health Disparity: A preventable difference in the burden of disease, injury, violence, or opportunity to achieve optimal health between groups defined by race, ethnicity, income, education, disability, geography, or other social characteristics."
+            },
+            {
+              "type": "text",
+              "body": "These disparities are not primarily explained by genetic differences or individual health behaviors. The research literature is clear: the most powerful predictors of health outcomes are social and economic — where you live, what you earn, whether your neighborhood has a grocery store, whether you can take a day off work to see a doctor. These are the social determinants of health."
+            },
+            {
+              "type": "text",
+              "heading": "Social Determinants of Health: The 30 to 55 Percent of Outcomes We Rarely Treat",
+              "body": "Social determinants of health are the conditions in which people are born, grow, live, work, and age that shape health outcomes. They include: income and wealth, educational attainment, employment quality, food security, housing stability and quality, transportation access, neighborhood safety, and social connectedness. The evidence that SDOH factors account for 30 to 55 percent of health outcome variation — compared to only 10 to 20 percent typically attributed to clinical care — is now firmly established in the research literature.\n\nThe most frequently screened SDOH domains in clinical settings are food insecurity, housing instability, transportation barriers, social isolation, interpersonal violence, and low health literacy. Standardized screening tools — including the Accountable Health Communities tool and the PRAPARE instrument — allow clinical teams to systematically identify SDOH needs during routine visits. But screening alone is insufficient. The critical next step — connecting patients to community resources that address those needs — is where most health systems still struggle."
+            },
+            {
+              "type": "text",
+              "heading": "Three Structural Equity Flaws in Current VBC Design",
+              "body": "Value-based care was intended to be an equity intervention — aligning incentives with population health outcomes should, in theory, help the patients who need the most help. The reality is more complicated. Three structural equity problems have been consistently documented in the VBC research literature. Understanding all three is essential for any leader who wants to build VBC programs that advance rather than undermine health equity.\n\nThe panel selection problem is the most empirically documented. Because MSSP benchmarks and quality scores were built with little adjustment for social risk, ACOs serving high shares of dual-eligible beneficiaries — patients enrolled in both Medicare and Medicaid, who face the most complex social and clinical needs — face weaker financial returns from participation. CMS acknowledged that pressure when it added a health equity adjustment to ACO quality scoring (2023) and a Health Equity Benchmark Adjustment (2025), then removed the quality-score adjustment for 2026."
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "Note",
+              "body": "A value-based care model that makes it financially rational to avoid serving the sickest, poorest, and most socially complex patients is not a health equity intervention. It is a health equity obstruction wearing the language of reform. Getting the incentives right requires explicit equity design — not just good intentions layered on top of metrics that were built for a different patient population."
+            },
+            {
+              "type": "text",
+              "heading": "SDOH Risk Adjustment: Making the Metrics Fair",
+              "body": "The metric design problem — the failure of standard quality metrics to account for social determinants — is the most technically solvable of VBC's equity challenges. SDOH risk adjustment means modifying performance benchmarks to account for the social complexity of the patient population being served, so that providers are compared to peers serving similar populations rather than to the national average.\n\nCMS made its most significant commitment to SDOH risk adjustment in the CY2025 Physician Fee Schedule final rule, which created a Health Equity Benchmark Adjustment — starting in 2025 — that raises spending benchmarks for ACOs serving high proportions of beneficiaries who are dually eligible or receive the Part D low-income subsidy. This acknowledges that high-need populations cost more to manage effectively. Critics note that dual and low-income-subsidy status are imperfect proxies for the full range of social complexity that drives outcome variation.\n\nCMS has not adopted the broader factors researchers recommend — such as Area Deprivation Index scores, Z-code screening data, or community health worker encounter data — and the CY2026 Physician Fee Schedule moved the other way, removing the social determinants risk assessment from Medicare's G0136 code. The policy change required to make VBC metrics truly equitable will require sustained advocacy from providers who are experiencing the consequences of inadequate adjustment directly."
+            },
+            {
+              "type": "text",
+              "heading": "Community Health Workers: The Most Powerful Equity Tool in VBC",
+              "body": "Community health workers — frontline public health workers who are typically members of the communities they serve, with lived experience of the social and health challenges those communities face — are emerging as the most powerful equity tool in value-based care. Where clinical care coordinators manage disease processes and care transitions, CHWs address the social and environmental factors that determine whether clinical interventions succeed."
+            },
+            {
+              "type": "callout",
+              "variant": "tip",
+              "heading": "Key Concept",
+              "body": "Community Health Worker (CHW): A frontline public health worker who is a trusted member of and has a close understanding of the community being served. CHWs serve as a bridge between health and social services and the communities they serve, reduce cultural and social barriers to care, and provide health education, advocacy, and social support in community settings. They are NOT case managers or care coordinators — the community trust and cultural competence that makes their work effective must be lived, not credentialed."
+            },
+            {
+              "type": "text",
+              "body": "What makes CHWs distinctive — and irreplaceable — is trust. In communities that have historically had reason to distrust institutional medicine, a CHW who grew up in the neighborhood, speaks the language, and has navigated the same systems can accomplish what no clinical protocol can. They connect patients to food assistance programs, navigate housing resources, provide transportation to appointments, and serve as advocates within a healthcare system that can feel foreign and hostile to those who most need it.\n\nDespite this evidence base, CHW integration into VBC programs has been slower than warranted, primarily because of reimbursement barriers. Most fee-for-service billing structures do not include a direct reimbursement pathway for CHW services, requiring VBC organizations to fund CHW positions out of shared savings or grants. This creates funding fragility — organizations that cannot sustain CHW positions between shared savings payments cycle through workforce disruption that undermines the relationship continuity that makes CHW programs effective.\n\nCMS has taken meaningful steps to address this. No federal rule requires state Medicaid programs to pay for CHW services: coverage is a state option, possible since a 2013 CMS rule (effective 2014) let Medicaid pay for preventive services recommended by a licensed practitioner, and 29 of 48 responding states reported paying for CHW services in KFF's 2022 survey. For Medicare, the CY2024 Physician Fee Schedule created the first Community Health Integration codes (G0019, G0022), which pay for CHW services furnished under a billing practitioner's supervision. The AHEAD Model gives each participating state up to $12 million in cooperative agreement funding and requires a state health equity plan. Vermont signed on to AHEAD in January 2025 but withdrew in July 2026, before its performance period began, so it has no AHEAD-linked CHW funding stream."
+            },
+            {
+              "type": "text",
+              "heading": "Rural and Geographic Equity: The Invisible Disparity",
+              "body": "Healthcare equity discussions in the United States have historically focused primarily on racial and ethnic disparities — and for important reasons. But a parallel geographic equity crisis receives far less policy attention: the systematic disadvantage faced by rural Americans in healthcare access, provider supply, and health outcomes relative to their urban peers.\n\nRural Americans are more likely to die from the five leading causes of preventable death — heart disease, cancer, unintentional injury, chronic lower respiratory disease, and stroke. They have fewer physicians per capita, longer travel distances to care, higher rates of uninsurance, and significantly lower rates of receiving recommended preventive services. And they are, as documented in the Technology module, disproportionately outside the VBC system entirely — receiving care under fee-for-service Medicare with its documented incentive failures."
+            },
+            {
+              "type": "text",
+              "heading": "Vermont's Equity Landscape: Progress and Persistent Gaps",
+              "body": "Vermont's All-Payer Model (2018–2025) set statewide population-health goals — improving access to primary care, reducing deaths from suicide and drug overdose, and reducing the prevalence and morbidity of chronic disease — rather than explicit health equity targets. The AHEAD Model requires participating states to set health equity goals, but Vermont withdrew from AHEAD before its performance period began.\n\nVermont's refugee and immigrant populations — concentrated primarily in Burlington, Winooski, and Rutland — face compounding health equity challenges: language barriers, cultural differences in health-seeking behavior, immigration status concerns, trauma histories from displacement and persecution, and limited familiarity with a healthcare system very different from those in their countries of origin.\n\nVermont's Abenaki and other indigenous communities face health disparities that reflect both geographic isolation and historical trauma with healthcare institutions. The legacy of forced assimilation and the state's eugenics program — including a 1931 sterilization law, for which the Vermont Legislature formally apologized in 2021 — has created well-founded distrust of the healthcare system that no appointment reminder or care coordinator can overcome. Rebuilding trust with indigenous communities requires sustained, community-led engagement over years — not program cycles."
+            },
+            {
+              "type": "text",
+              "heading": "AI Bias in Risk Stratification: Technology as an Equity Threat",
+              "body": "The 2019 Science study described at the opening of this module identified a mechanism that explains the algorithmic underestimation of Black patients' health needs: the algorithm used healthcare costs as a proxy for health need. Black patients historically had lower healthcare costs — not because they were healthier, but because structural barriers had historically limited their access to care. The algorithm encoded a history of discrimination as a measure of health. The practical consequence: Black patients were significantly less likely to be flagged for high-intensity care management programs.\n\nThis problem has been replicated for other demographic groups and other algorithm types. As AI-powered risk stratification tools become increasingly central to VBC care management, the equity risk posed by biased training data becomes increasingly urgent. A healthcare organization that deploys an AI risk model without auditing it for demographic performance disparities is potentially using technology to automate discrimination at scale."
+            },
+            {
+              "type": "callout",
+              "variant": "tip",
+              "heading": "Key Concept",
+              "body": "Technology Governance Requirement: Any healthcare organization deploying an AI risk stratification tool in a VBC context has an ethical and, increasingly, a legal obligation to audit the tool for demographic performance disparities before deployment. The audit should examine whether the model's accuracy varies significantly across racial, ethnic, and socioeconomic subgroups. If it does, the organization must select a different model, recalibrate it for its specific population, or supplement algorithmic scores with clinical and social worker judgment for populations where the algorithm performs poorly."
+            },
+            {
+              "type": "text",
+              "heading": "Building Equity-Centered VBC: What It Actually Takes",
+              "body": "Building a VBC program that genuinely advances health equity rather than performing it in marketing materials requires design choices that are sometimes in tension with the financial optimization logic that drives most VBC strategy discussions. Equity-centered VBC design requires accepting lower short-term shared savings in exchange for serving populations whose care management needs are higher. It requires investing in CHW infrastructure before guaranteed funding arrives. It requires choosing quality metrics that are SDOH-adjusted rather than metrics that produce better scores simply because you serve a more advantaged population."
+            },
+            {
+              "type": "text",
+              "heading": "Course Conclusion: What Value-Based Care Can and Cannot Do",
+              "body": "Across six modules, this course has examined value-based care through every lens that matters: the economic incentive logic that makes it necessary, the policy architecture that makes it operational, the economics that determine whether it saves money, the technology that makes it analytically possible, the clinical model that determines whether it actually improves patient outcomes, and the equity design requirements that determine whether it works for everyone. The honest conclusion is nuanced but ultimately optimistic.\n\nValue-based care, when designed well, implemented with adequate infrastructure, and evaluated with appropriate equity metrics, produces meaningfully better clinical outcomes than fee-for-service at lower total cost. The fee-for-service system that currently dominates American healthcare is producing the worst outcomes per dollar of any wealthy nation on earth. The most credible available alternative — paying for health rather than for activity — is demonstrably capable of doing better.\n\nWhat value-based care cannot do, on its own, is eliminate the social determinants of health that account for 30 to 55 percent of outcome variation. It cannot provide affordable housing, food security, safe neighborhoods, or living wages — the most powerful health interventions available at the population level. These are not arguments against value-based care. They are arguments for building it with sufficient ambition, equity intentionality, and long-term commitment to match the scale of the problem it is trying to solve."
+            },
+            {
+              "type": "callout",
+              "variant": "info",
+              "heading": "Note",
+              "body": "Vermont's health care reform effort — which since its July 2026 withdrawal from AHEAD proceeds under state law (Act 68 of 2025) — is the most ambitious attempt in state history to align payment incentives, equity goals, and clinical infrastructure toward a single measurable objective: a healthier population at sustainable cost. Whether it succeeds will depend on the willingness of providers, payers, policymakers, and community organizations to make the hard design choices that equity-centered VBC requires."
+            }
+          ],
+          "tags": [],
+          "relatedLessonIds": [],
+          "isPublished": true
+        },
+        {
           "id": "lesson_sanity_vbc_policy",
           "pillar": "policy",
-          "order": 99,
-          "slug": "vbc-fundamentals-module-2-policy-pillar",
-          "title": "Value-Based Care Fundamentals — Module 2: The Policy Pillar — Laws, Rules, and the Regulatory Architecture That Makes (or Breaks) Value-Based Care",
+          "order": 5,
+          "slug": "sanity-vbc-policy",
+          "title": "The Policy Pillar — Laws, Rules, and the Regulatory Architecture That Makes (or Breaks) Value-Based Care",
           "summary": "Module 2 of the HTR Academy Value-Based Care Fundamentals course examines the federal and state policy architecture that governs value-based care adoption in the United States. Building on Module 1’s conceptual foundation, this module explains in plain language how MACRA, the ACA’s Innovation Center, and state Medicaid waiver programs create the legal and financial scaffolding for VBC models, identifies the regulatory barriers that slow adoption for rural and safety-net providers, and equips learners to read and interpret the policy signals that will shape their organization’s VBC strategy through 2030. No prior policy or legal background is required.",
           "estimatedMinutes": 24,
           "objectives": [
@@ -2742,9 +2742,9 @@
         {
           "id": "lesson_sanity_vbc_technology",
           "pillar": "technology",
-          "order": 99,
-          "slug": "vbc-fundamentals-module-4-technology-pillar",
-          "title": "Value-Based Care Fundamentals — Module 4: The Technology Pillar — Data, AI, and the Digital Infrastructure That Makes VBC Work",
+          "order": 6,
+          "slug": "sanity-vbc-technology",
+          "title": "The Technology Pillar — Data, AI, and the Digital Infrastructure That Makes VBC Work",
           "summary": "Module 4 of the HTR Academy Value-Based Care Fundamentals course examines the technology infrastructure that value-based care requires to function — and what happens when that infrastructure is missing. This module explains, in plain language, what interoperable electronic health records, health information exchange, and AI-powered risk stratification tools actually do in a VBC context, why many rural Critical Access Hospitals remain technology-unready for advanced VBC participation, and how the federal interoperability agenda — including the 21st Century Cures Act, the CMS Interoperability Rule, and the TEFCA framework — is building the data infrastructure that VBC depends upon. By the end of this module, learners will understand the specific technology capabilities that VBC models require, the sequence in which they should be built, and the federal programs that fund them.",
           "estimatedMinutes": 25,
           "objectives": [
