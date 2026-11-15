@@ -1,21 +1,24 @@
 # HTR Ecosystem — Administration Runbook
 
-**Last verified: 2026-07-30.** Everything here was checked against the running
-system on that date, not written from memory. Where something is unverified or
-uncertain it says so explicitly.
+**Last verified: 2026-11-15.** Everything here was checked against the running
+system, the accounts (Vercel, Fly, Sanity, Supabase) or the code on that date,
+not written from memory. Where something is unverified it says so.
 
-This is the operational companion to
-[`frontend/docs/platform-documentation/`](frontend/docs/platform-documentation/00-README-INDEX.md)
-(architecture, written 2026-06-06 and partly stale). **When the two disagree,
-trust this file** — it was verified more recently.
-
-Related documents that remain authoritative in their own scope:
+The printable guides in `docs/` (dated 2026-11-14, kept current through
+2026-11-15) cover the same ground for a non-technical reader:
 
 | Document | Scope |
 | :--- | :--- |
+| `docs/HTR_Infrastructure_Inventory_2026-11-14.docx` | Every service, account, plan, cost, diagram; the Mac's tools and Python versions |
+| `docs/HTR_Content_Production_Guide_2026-11-14.docx` | Creating content: Sanity, Academy, book; ready-made AI prompts |
+| `docs/HTR_Ecosystem_User_Operations_Guide_2026-11-14.docx` | How people use the platform; admin tasks; maintenance; troubleshooting |
 | [`BOOK_WORKFLOW.md`](BOOK_WORKFLOW.md) | Day-to-day book editing — read before touching the manuscript |
 | [`CLAUDE.md`](CLAUDE.md) | Rules for AI assistants working in this repo |
 | [`frontend/docs/auth.md`](frontend/docs/auth.md) | Beta gate + role-gating internals |
+
+`frontend/docs/platform-documentation/` and `docs/01-03*.md` are older
+architecture notes (June–October 2026). **When they disagree with this file,
+trust this file.**
 
 ---
 
@@ -45,17 +48,17 @@ Five services. Four are hosted; one is a repo.
 
 ```
                      ┌───────────────────────────────┐
-   4 domains ───────▶│  Vercel — Next.js 16 frontend │
-                     │  (single deployment, all 4)   │
+   4 domains ───────▶│  Vercel — Next.js 16 frontend │◀── Sanity webhook
+                     │  (single deployment, all 4)   │    (on Publish)
                      └───────┬───────────────┬───────┘
                              │               │
-             /api/chat proxy │               │ content reads
-                             ▼               ▼
-                  ┌────────────────┐   ┌──────────────────┐
-                  │ Fly.io         │   │ Sanity (CMS)     │
-                  │ vhp-backend    │   │ project: editorial│
-                  │ FastAPI/Python │   └──────────────────┘
-                  └───────┬────────┘
+   /api/chat proxy,          │               │ content reads
+   /api/webhooks/sanity ──▶  ▼               ▼
+                  ┌────────────────┐   ┌──────────────────────┐
+                  │ Fly.io         │   │ Sanity (CMS)         │
+                  │ vhp-backend    │   │ project fxz10xl7     │
+                  │ FastAPI/Python │   │ dataset production   │
+                  └───────┬────────┘   └──────────────────────┘
                           │ embeddings + pgvector
                           ▼
                   ┌──────────────────────────────────┐
@@ -70,31 +73,34 @@ Five services. Four are hosted; one is a repo.
 
 **The critical wiring detail:** the browser never talks to Fly directly. It calls
 `/api/chat` on Vercel, which proxies to `PYTHON_BACKEND_URL`. If that env var is
-unset, Vercel calls `http://localhost:8000` — meaning *Vercel's own machine* —
-and the AI Analyst reports "backend is offline." This exact failure occurred on
-2026-07-30.
+unset, Vercel calls `http://localhost:8000` — Vercel's own machine — and the AI
+Analyst reports "backend is offline" (happened 2026-07-30). The same rule now
+covers `/api/webhooks/sanity`, which forwards Sanity notifications to Fly.
 
 ---
 
 ## 2. Users and access codes
 
-### How access actually works
+### How access works
 
-There is **no per-user login** in beta. The whole site sits behind an
-access-code gate. Anyone holding a valid code gets in.
+The whole site sits behind an **access-code gate**. Separately, a few routes
+(`/chat`, `/dashboard`, `/hti-dashboard`, `/advisory-hub`, `/account`,
+`/onboarding`, `/admin`) are **role-gated**, but during the beta that check is
+switched off with `ALLOW_AUTH_BYPASS=true` (set in Vercel production on
+2026-11-14; it had been missing, which sent testers into a login loop). `/admin`
+and the admin APIs check the admin role themselves, so they stay protected.
 
 | Piece | Location |
 | :--- | :--- |
 | Gate page | `frontend/app/beta/page.tsx` |
 | Verify endpoint | `frontend/app/api/beta/verify/route.ts` |
-| Admin UI | `frontend/app/admin/access-codes/` |
+| Request filter (gate + role check) | `frontend/proxy.ts` (Next.js 16's name for middleware) |
+| Admin UI | `/admin/access-codes` |
 | Admin API | `frontend/app/api/admin/beta-codes/route.ts` |
 | Table | Supabase `beta_access_codes` |
-| Cookie | `htr_beta=granted`, **7-day** lifetime |
+| Cookie | `htr_beta=granted:<host>`, **7-day** lifetime, **unsigned** (see §15) |
 
-Two independent gates exist. The **beta gate** (above) is active. **Role-gating**
-(`free → subscriber → student → professional → advisory → admin`) is written but
-bypassed while `ALLOW_AUTH_BYPASS=true`. See `frontend/docs/auth.md`.
+The only admin account is `bechir.bensaid@gmail.com` (verified 2026-11-15).
 
 ### Table schema
 
@@ -110,63 +116,33 @@ beta_access_codes (
 ```
 
 RLS is on with **no public policies** — only the service-role key can read or
-write. The verify route uses `dbAdmin` (service-role), so no policy is needed.
+write.
 
-### Adding a user
+### Adding, restricting, revoking
 
-**Preferred:** the admin UI at `/admin/access-codes`.
+**Use `/admin/access-codes`** (sign in as the admin first): add a code with a
+label and the domains it works on (all four are ticked by default); untick
+domains, switch a code inactive, or delete it on the same page. No deploy is
+needed. Prefer *inactive* over *delete* to keep the audit trail.
 
-**Or SQL** (Supabase → SQL Editor):
-
-```sql
-INSERT INTO beta_access_codes (code, label, allowed_domains)
-VALUES ('Jane_S_0.0.0', 'Jane S.', ARRAY['healthtransformationreview.org'])
-ON CONFLICT (code) DO NOTHING;
-```
-
-> ⚠️ **`allowed_domains` must contain the exact host.** An empty array is
-> rejected in production. A code scoped only to `.org` will not work on `.com`.
-> Your own code (`Bechir_B_0.0.0`) is scoped to all four domains; everyone
-> else's is scoped to `healthtransformationreview.org` only.
-
-**No deploy is needed.** The verify route reads Supabase live.
-
-### Revoking
-
-```sql
-UPDATE beta_access_codes SET is_active = false WHERE code = 'Jane_S_0.0.0';
-```
-
-Set `is_active = false` — **do not delete**, so the audit trail survives.
+> ⚠️ **`allowed_domains` must contain the exact host.** On 2026-11-14, of the 12
+> active codes, 11 worked only on `healthtransformationreview.org`; the
+> remaining one works on all four domains.
 
 > ⚠️ **Revocation is not immediate.** An existing `htr_beta` cookie stays valid
-> until it expires, so someone already inside keeps access for **up to 7 days**.
-> There is currently no session-invalidation mechanism. If you need to lock
-> someone out immediately you must change the cookie name in `middleware.ts` and
-> redeploy, which signs *everyone* out.
-
-### Current roster (verified 2026-07-30)
-
-12 active codes: Bechir B. (all 4 domains), and — scoped to
-`healthtransformationreview.org` — Will D., Mahesh T., Inna P., Joe L.,
-Suellen B., Steve D., Tim T., Eli H., Alice S., Jenney S., Geoff B.
-
-`Kristin_M_0.0.0` appears in the original migration seed but is **not** in the
-table; it was removed at some point.
+> for up to 7 days. For instant lockout, change the cookie name (`BETA_COOKIE`
+> in `proxy.ts` and the verify route) and redeploy — this signs *everyone* out.
 
 ### Removing the gate at GA
 
-Delete the `// Beta gate` block in `middleware.ts` and the cookie check in
-`app/layout.tsx`. Keep `/beta` and the verify route if you want code-based
-onboarding for a preview channel.
+Delete the beta-gate block in `frontend/proxy.ts` and the cookie check in
+`app/layout.tsx`, and set `ALLOW_AUTH_BYPASS=false` (or remove it) in Vercel.
 
 ---
 
 ## 3. Running and deploying
 
 ### Local development
-
-Two processes, two terminals.
 
 ```bash
 # Terminal 1 — backend (FastAPI, port 8000)
@@ -179,81 +155,72 @@ cd frontend
 npm run dev
 ```
 
-Then use **`http://localhost:3000`**. Both must run for the AI Analyst to work
-locally.
+Then use `http://localhost:3000`. To preview the Review brand locally, use
+`review.localhost:3000`.
 
-Expected backend startup log:
+> `backend/venv` was originally copied from another project, so
+> `venv/bin/pip` points into that project's environment. Always install with
+> `venv/bin/python -m pip`. Never install or remove Python versions or run
+> `brew install` without asking first (2026-11-14: a Homebrew autoremove deleted
+> python@3.13 and broke four environments).
 
-```
-🚀 HTR AI Brain v4.2.0 starting...
-LLM: Groq llama-3.3-70b-versatile | Embeddings: OpenAI text-embedding-3-small
-✅ PG vector store (Supabase pgvector) initialized
-✅ Loaded existing index from Supabase pgvector
-✅ Catalog semantic index ready (67 entries)
-```
-
-Harmless warnings you can ignore: `PyTorch/TensorFlow not found` (no local model
-is used — everything is a remote API), `slowapi not installed` (rate limiting
-off locally), `FlashRank unavailable` (re-ranking disabled).
-
-> **Running the backend locally does not help the live site.** Vercel's servers
-> cannot see your laptop. Local backend serves `localhost:3000` only.
+> **Running the backend locally does not help the live site.** Vercel cannot see
+> your laptop.
 
 ### Frontend — Vercel
 
 | | |
 | :--- | :--- |
-| Trigger | push to `main` |
+| Account | team `bechirbensaid-url`, project `vhp`, **Hobby (free)** plan |
+| Trigger | push to `main` (builds take ~6–7 min) |
 | Config | [`vercel.json`](vercel.json) |
-| Build | `cd frontend && next build` |
 | Region | `iad1` |
 | Cron | `/api/cron/revalidate` daily at 00:00 |
+| CLI | `vercel` is logged in on the Mac; the local `.vercel` link is stale, so pass `--project vhp` / `--scope bechirbensaid-url` |
 
-**Environment variables** live in Vercel → Settings → Environment Variables.
-They are read **at build time**, so after changing one you must redeploy
-(Deployments → ⋯ → Redeploy). Changing a variable alone does nothing.
+Environment variables: Vercel → Settings → Environment Variables. After changing
+one, **redeploy** (Deployments → ⋯ → Redeploy, or `vercel redeploy <url>`).
 
-Required in Vercel:
+Production has 13 variables (read 2026-11-14/15):
 
-| Variable | Value |
+| Variable | Purpose |
 | :--- | :--- |
 | `PYTHON_BACKEND_URL` | `https://vhp-backend.fly.dev` |
-| `NEXT_PUBLIC_SUPABASE_URL` | the Supabase project URL |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | anon key |
-| `SUPABASE_SERVICE_ROLE_KEY` | service-role key |
-| `NEXT_PUBLIC_SANITY_PROJECT_ID` / `_DATASET` / `_API_VERSION` | Sanity |
-| `SANITY_API_TOKEN` | Sanity write token |
-| `RESEND_API_KEY` | transactional email |
+| `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY`, `SUPABASE_SERVICE_ROLE_KEY` | Supabase |
+| `NEXT_PUBLIC_SANITY_PROJECT_ID` / `_DATASET` / `_API_VERSION`, `SANITY_API_TOKEN`, `SANITY_TELEMETRY_DISABLED` | Sanity |
 | `ALLOW_AUTH_BYPASS` | `true` during beta |
+| `INGEST_SECRET` | Vercel → Fly authorisation for AI-library updates |
+| `SANITY_WEBHOOK_SECRET` | verifies Sanity's webhook signature |
+
+**Not set:** `RESEND_API_KEY`, `LOOPS_API_KEY`, Stripe keys, Sentry DSN,
+`CRON_SECRET`, `NEXT_PUBLIC_APP_URL` (on Vercel the build falls back to
+`https://healthtransformationreview.org`).
 
 ### Backend — Fly.io
 
 | | |
 | :--- | :--- |
-| App | `vhp-backend` |
+| App | `vhp-backend` (personal org, pay-as-you-go, billing status current) |
 | Region | `sjc` |
 | URL | `https://vhp-backend.fly.dev` |
-| Machine | `shared-1x-cpu@1024MB`, 1 machine |
+| Machine | 1 × shared CPU, 1 GB |
 | Config | [`backend/fly.toml`](backend/fly.toml) |
 | Deploy | GitHub Action, **only on `backend/**` changes** |
+| CLI | `fly` is logged in on the Mac |
 
 ```bash
-flyctl auth login                    # browser session ≠ CLI session
-flyctl status  -a vhp-backend
-flyctl logs    -a vhp-backend
-flyctl machine start -a vhp-backend
-flyctl deploy  -a vhp-backend        # manual deploy
+fly status  -a vhp-backend
+fly logs    -a vhp-backend --no-tail
+fly secrets list -a vhp-backend
+fly releases -a vhp-backend
 ```
 
-**Cold starts.** As of 2026-07-30 the config is `min_machines_running = 1` and
-`auto_stop_machines = 'off'` — one machine stays warm. This was changed
-deliberately: with scale-to-zero the first request after idle took 5–15s and
-could exceed Vercel's 60s function limit, surfacing as
-`FUNCTION_INVOCATION_TIMEOUT`. Cost of the change: ~$1–3/mo → ~$5.70/mo.
-
-**To revert to scale-to-zero** (cheaper, cold starts return): set
-`min_machines_running = 0` and `auto_stop_machines = 'stop'` in `fly.toml`, then
-push. Revert steps are also written into the file's own comments.
+**Idle behaviour.** Currently **scale-to-zero**: `auto_stop_machines = 'stop'`,
+`min_machines_running = 0` (verified on the live machine 2026-11-14). The first
+request after idle waited **20 s** (measured). `fly apps list` then shows the
+app as "suspended", meaning no machine is running — not an account problem. To
+keep it always on (~$5.70/mo, no cold start): set `min_machines_running = 1` and
+`auto_stop_machines = 'off'` in `fly.toml` and push.
 
 ### Health checks
 
@@ -263,58 +230,72 @@ curl -X POST https://healthtransformationreview.org/api/chat \
      -H "Content-Type: application/json" -d '{"message":"what is HIE?"}'
 ```
 
-The `/api/chat` payload is `{"message": "..."}` — **not** an OpenAI-style
-`messages` array. Sending the wrong shape returns 400.
+The `/api/chat` payload is `{"message": "..."}`. Full browser test suite (57
+checks; 57/57 on 2026-11-15):
+
+```bash
+cd frontend && PLAYWRIGHT_BASE_URL=https://healthtransformationreview.org node_modules/.bin/playwright test
+```
 
 ---
 
 ## 4. Content: Sanity
 
-Editorial content — articles, definitions, courses, reports. 21 schema types in
-`frontend/sanity/schemaTypes/`:
+Project `fxz10xl7` ("HealthTransformationReview"), dataset `production`,
+**free plan** (verified). Studio at `/studio` on any domain (exempt from the
+access-code gate). Full guide: the Content Production Guide in `docs/`.
 
-`academyModule` · `analystNote` · `audio` · `author` · `blockContent` ·
-`caseStudy` · `category` · `course` · `dailyInsight` · `definition` ·
-`hospital` · `instructor` · `investmentDeal` · `policyAnalysis` · `post` ·
-`report` · `rhtState` · `statePerformanceIndex` · `subscriber` · `ticker` ·
-`webinar`
+Schema types in `frontend/sanity/schemaTypes/` (19): `academyModule`,
+`analystNote`, `audio`, `author`, `blockContent`, `caseStudy`, `category`,
+`course`, `dailyInsight`, `definition`, `hospital`, `instructor`,
+`investmentDeal`, `policyAnalysis`, `post`, `rhtState`, `subscriber`, `ticker`,
+`webinar`.
 
-**Studio:** `/studio` on any deployment, or `localhost:3000/studio`.
+Documents on 2026-11-15: 299 `academyModule` (one per Academy lesson), 73
+`policyAnalysis`, 50 `rhtState`, 36 `definition`, 22 `investmentDeal`, 5
+`caseStudy`; none of `webinar`, `post`, `course`, `instructor`, `analystNote`,
+`audio`.
 
-Content is fetched with GROQ queries in `frontend/lib/sanity/`. Publishing in the
-Studio makes content live — the daily `/api/cron/revalidate` job refreshes cached
-pages, or you can redeploy to force it.
+**Publishing → the site:** brief pages update within about a minute; lists 2 min;
+lessons and deals 5 min; glossary 1 h; everything by the midnight revalidate.
 
-> **Content rule, from `CLAUDE.md`:** missing or thin content is often
-> *intentional* — unverifiable material was deliberately pulled. Do not
-> "restore" or re-link content without explicit sign-off.
+**Publishing → the AI Analyst:** a Sanity webhook (sanity.io/manage → API →
+Webhooks, "AI Analyst library update") calls `/api/webhooks/sanity`, which
+verifies Sanity's `sanity-webhook-signature` with `SANITY_WEBHOOK_SECRET` and
+forwards to Fly `/api/ingest/webhook` with `INGEST_SECRET`; that document's
+passages are replaced. Tested end to end 2026-11-15 (≈5 s). Filter:
+`policyAnalysis, post, academyModule, caseStudy, definition, analystNote,
+webinar`; drafts off. Rejections are logged with a reason:
+`vercel logs -p vhp --scope bechirbensaid-url --query sanity-webhook`.
+
+> The secret saved in Sanity is the full string `SANITY_WEBHOOK_SECRET=<code>`
+> (the whole env line was pasted on setup); Vercel and `frontend/.env.local`
+> hold the same full string. If the webhook is re-created, generate a fresh
+> secret and set it in both places.
+
+> **Content rule:** missing or thin content is often *intentional* —
+> unverifiable material was deliberately pulled. Do not restore without sign-off.
 
 ---
 
 ## 5. Content: Supabase
 
-**Project:** `clryhwqaqhvdikgesjbc` · Postgres 15 + pgvector.
+**Project:** `clryhwqaqhvdikgesjbc` · Postgres + pgvector · **Pro plan**, billed
+through Vercel Marketplace (resource "Vermont-Health-Platform"). Database ≈1.1 GB
+of the 8 GB included.
 
-Holds: user profiles and roles, academy course/track/lesson structure, RAG
-vectors, beta access codes, feedback, bookmarks, ticker cache, audit logs.
+Holds: user profiles and roles, Academy structure (courses, tracks, lessons,
+quizzes), the AI library (`data_rag_documents`), beta access codes, feedback,
+bookmarks, ticker/Wire cache, narration audio (Storage bucket `narration-audio`).
 
-**36 migrations** in `supabase/migrations/`, applied via the Supabase SQL Editor
-(there is no automated migration runner). Notable ones:
+**38 migrations** in `supabase/migrations/`, applied by hand in the Supabase SQL
+Editor (no automated runner).
 
-| File | Purpose |
-| :--- | :--- |
-| `001_profiles_and_roles.sql` | user roles |
-| `003_academy.sql`, `028_course_schema.sql` | Academy structure |
-| `005_rag_vectors.sql`, `007_hybrid_search.sql` | RAG storage + hybrid search |
-| `021_pgvector_hnsw_maintenance.sql` | vector index upkeep |
-| `20260411_beta_access_codes.sql` | access-code gate |
-| `20260704_beta_access_codes_domain_scope.sql` | per-domain scoping |
+> ⚠️ The live RAG table is **`data_rag_documents`** (column `metadata_`).
+> `rag_documents` is an empty legacy table; migrations 005/007 target it.
 
-**Two keys, very different powers:**
-
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY` — browser-safe, RLS enforced
-- `SUPABASE_SERVICE_ROLE_KEY` — **bypasses RLS entirely**; server-side only,
-  never in a `NEXT_PUBLIC_*` variable
+**Two keys:** `NEXT_PUBLIC_SUPABASE_ANON_KEY` (browser-safe, RLS enforced) and
+`SUPABASE_SERVICE_ROLE_KEY` (bypasses RLS; server-side only).
 
 ---
 
@@ -324,42 +305,44 @@ vectors, beta access codes, feedback, bookmarks, ticker cache, audit logs.
 
 ```
 question
-  → OpenAI text-embedding-3-small        (embed)
-  → Supabase pgvector + BM25, fused RRF  (retrieve)
-  → sentence-window chunking, window 3   (assemble context)
-  → Groq llama-3.3-70b-versatile         (generate)
+  → OpenAI text-embedding-3-small          (embed)
+  → Supabase pgvector + BM25, fused RRF    (retrieve)
+  → FlashRank re-ranking                    (order)
+  → sentence-window chunking, window 3     (assemble context; ~2,000 tokens)
+  → Groq openai/gpt-oss-120b (subscribers), gpt-oss-20b (free)  (generate)
+      └─ fallback: OpenAI gpt-4o-mini when Groq refuses or rate-limits
   → stream back through Vercel
 ```
 
-Verified from `/health` on 2026-07-30:
+`/health` on 2026-11-15: `model_subscriber: openai/gpt-oss-120b`,
+`reranker: flashrank`, `retrieval: hybrid_bm25_vector_rrf`, `auth_enabled: false`.
+Groq free tier measured 2026-11-14: 8,000 tokens/min, 1,000 requests/day per
+model. No model runs locally.
 
-```json
-{"status":"ok","version":"4.2.0","index_ready":true,
- "model_subscriber":"llama-3.3-70b-versatile",
- "embedding_model":"text-embedding-3-small",
- "vector_store":"pgvector","auth_enabled":false,
- "reranker":"disabled","retrieval":"hybrid_bm25_vector_rrf",
- "chunking":"sentence_window_3"}
-```
+The library: **60,299 passages** (2026-11-15): 35,427 from PDFs in
+`backend/data/` (Vermont reports and laws, two health-economics reference
+books), 20,111 Academy lessons, 4,048 analysis briefs, 539 book, 174 glossary /
+case studies / briefings.
 
-No model runs locally. Both the LLM and the embeddings are remote APIs, which is
-why a 1GB machine is ample.
+### Updating the library
 
-### Re-indexing after content changes
+| Source | How |
+| :--- | :--- |
+| Sanity documents | Automatic via the webhook (§4) |
+| All Sanity documents at once | `cd backend && venv/bin/python scripts/reindex_sanity_to_rag.py` (inserts first, then deletes the older Sanity passages) |
+| The book | `python3 book-build/refresh_md.py` then `book-build/ingest_book_to_rag.py` |
+| Home-page briefings | `backend/venv/bin/python book-build/ingest_briefings_to_rag.py` |
+| One PDF | put it in `backend/data/`, then `venv/bin/python scripts/ingest_pdf_to_rag.py "file.pdf"` |
 
-```bash
-curl -X POST http://localhost:8000/api/ingest
-```
+> The Fly endpoints `/api/ingest`, `/api/ingest/status` and
+> `/api/ingest/webhook` require `Authorization: Bearer $INGEST_SECRET` and refuse
+> everything if the secret is unset (fixed 2026-11-14 — they had been open to
+> anyone). Do not run a full rebuild on the 1 GB Fly machine; use the scripts
+> above from the Mac.
 
-> **Run ingestion locally, not against Fly.** Parsing large documents spikes
-> memory and is the one operation that could exhaust the machine. Routine chat
-> never will.
-
-### Re-ranking is off
-
-FlashRank isn't installed (`No module named 'flashrank'`). Retrieval quality is
-adequate without it; installing it would improve result ordering at the cost of
-memory and cold-start time.
+> LlamaIndex overwrites a passage's `doc_id`/`ref_doc_id` with the Document's
+> `id_`. Sanity documents are therefore created with `id_ = <Sanity _id>`, and
+> updates look passages up by `metadata_->>'ref_doc_id'` (indexed).
 
 ---
 
@@ -367,221 +350,103 @@ memory and cold-start time.
 
 | | |
 | :--- | :--- |
-| Remote | `https://github.com/bbensaid/VHP.git` |
+| Remote | `https://github.com/bbensaid/VHP.git` (public) |
 | Default branch | `main` |
 | CI | `.github/workflows/ci.yml` |
 | Backend deploy | `.github/workflows/fly-deploy.yml` (paths: `backend/**`) |
 
-**Push protection is enabled.** GitHub blocks any push containing a detected
-secret. This fired on 2026-07-30 when a Resend API key appeared inside a `curl`
-command recorded in `.claude/settings.json`'s permission allowlist.
+**Push protection is enabled.** If it fires: remove the secret, amend if it is
+only in the latest unpushed commit, rewrite history only if never pushed, and
+**rotate the key regardless**. Never use the "allow this secret" link.
 
-If it fires:
-
-1. Find the offending commit and path from the error output
-2. Remove the secret from the file
-3. If it's in the most recent commit: `git add <file> && git commit --amend --no-edit`
-4. If it's deeper in history, the commit must be rewritten (`git rebase -i` or
-   `git filter-repo`) — **only safe if the commit has never been pushed**
-5. **Rotate the key regardless.** A secret that reached your disk in a tracked
-   file must be treated as compromised.
-
-Never use GitHub's "allow this secret" bypass link for a live credential.
-
-### Archiving
-
-`book-archive/` holds pre-change snapshots of the manuscript and Google Docs
-downloads. It is **gitignored** — local only, never pushed. `Book Latest
-Version/` is likewise gitignored.
+`book-archive/` and `Book Latest Version/` are gitignored (local only). The
+printable `.docx` guides in `docs/` are gitignored; their generators are in
+`docs/generators/`.
 
 ---
 
 ## 8. Domains
 
-Four domains, **one Vercel deployment**. The brand is resolved per request from
+Four domains, **one Vercel deployment**; the brand is resolved per request from
 the `Host` header in `frontend/lib/brand.ts`.
 
-| Domain | Brand | Wordmark | Advisory section |
-| :--- | :--- | :--- | :--- |
-| healthtransformationsolutions.org | `solutions` | SOLUTIONS | **shown** |
-| healthtransformationsolutions.com | `solutions` | SOLUTIONS | **shown** |
-| healthtransformationreview.org | `review` | REVIEW | hidden |
-| healthtransformationreview.com | `review` | REVIEW | hidden |
+| Domain | Brand | Advisory section | Expires | Auto-renew |
+| :--- | :--- | :--- | :--- | :--- |
+| healthtransformationreview.org | review | hidden (pages 404) | 2027-10-03 | on |
+| healthtransformationreview.com | review | hidden (pages 404) | **2026-12-29** | **OFF** |
+| healthtransformationsolutions.org | solutions | shown | 2027-05-31 | on |
+| healthtransformationsolutions.com | solutions | shown | 2027-05-31 | on |
 
-**99% of the app is identical across all four.** Only three things differ: the
-logo wordmark, the display name, and whether Advisory Services appears in the
-nav.
+All four were bought through Vercel (registrar Name.com) and use Vercel DNS.
+Renewal of the .com is $12.03/yr. The Review domains strip `www.`; the
+Solutions domains add it. Unknown hosts default to `solutions`.
 
-Unknown hosts (localhost, Vercel preview URLs) default to `solutions` — the
-full-functionality variant. To preview the reduced variant locally, use a host
-starting with `review.` (e.g. `review.localhost:3000`).
-
-`ACCESS_DOMAINS` in the same file is the single source of truth for access-code
-scoping, referenced by the verify route, the admin UI, and the SQL migration.
+`ACCESS_DOMAINS` in `brand.ts` is the single source of truth for access-code
+scoping. Every general "Contact Us" link opens `mailto:bechir.bensaid@gmail.com`
+(`CONTACT_HREF`).
 
 ---
 
 ## 9. Services, costs, payment schedule
 
-> ⚠️ **Verify every figure against your own billing dashboards.** Amounts below
-> are what the configuration implies, not invoices I have seen. Only the Fly
-> machine size and Supabase project were verified directly.
+Plans verified in the accounts 2026-11-14/15. Invoice amounts are only on each
+provider's billing page; check them monthly.
 
-| Service | Purpose | Plan | Est. cost | Billing |
-| :--- | :--- | :--- | :--- | :--- |
-| **Fly.io** | FastAPI backend | Pay-as-you-go | **~$5.70/mo** | monthly, by machine-second |
-| **Vercel** | Frontend | Hobby or Pro | $0 or $20/mo | monthly |
-| **Supabase** | Postgres + pgvector | Free or Pro | $0 or $25/mo | monthly |
-| **Sanity** | CMS | Free tier likely | $0 | monthly |
-| **OpenAI** | Embeddings | Pay-as-you-go | cents/mo | usage |
-| **Groq** | LLM inference | Free tier | $0 | usage |
-| **Resend** | Email | Free tier | $0 | monthly |
-| **GitHub** | Repo + Actions | Free | $0 | — |
-| **Domains** ×4 | DNS | registrar | ~$15/yr each | annual |
+| Service | Purpose | Plan | Expected cost |
+| :--- | :--- | :--- | :--- |
+| **Supabase** | Postgres + pgvector + storage | Pro, via Vercel | ~$35/mo (2 active projects in the org: this one and ppm-platform; sommiPicks_Data suspended) |
+| **Fly.io** | FastAPI backend | Pay-as-you-go | under $6/mo (scale-to-zero; ~12% uptime on a heavy test day) |
+| **Vercel** | Frontend | Hobby (free) | $0 (Pro, $20/mo, needed before commercial use) |
+| **Sanity** | CMS | Free | $0 |
+| **OpenAI** | Embeddings, fallback answers, Personalized Learning audio | Prepaid | cents |
+| **Groq** | Answers | Free | $0 |
+| **GitHub** | Repo + Actions | Free | $0 |
+| **Domains** ×4 | | Vercel / Name.com | ~$4/mo averaged |
+| Resend, Loops, Stripe, Sentry, Anthropic | | Not configured in production | $0 |
 
-### Fly cost detail
+Total ≈ **$40–45/month**.
 
-Billed by **machine uptime, not by users or requests**. Ten testers cost exactly
-what one does.
+**Fly has no spending-cap setting,** but the configuration bounds it: one 1 GB
+shared machine × 24/7 ≈ $5.70/mo is the ceiling. It rises only if the config
+changes (second machine, bigger machine, another region, Fly Postgres/volumes).
 
-- `shared-1x-cpu@1024MB` ≈ **$5.70/month** running 24/7
-- Currently pinned to always-on (`min_machines_running = 1`)
-- Reverting to scale-to-zero drops it to ~$1–3/mo and reintroduces cold starts
-- Halving to 512MB would roughly halve the cost; the workload fits, since no
-  local model is loaded
-
-**On the "no spending cap" caveat.** Fly does not offer a setting that stops
-billing at a dollar limit. That is not the same as an unbounded bill. What you
-run is one machine, and its 24/7 rate — **~$5.70/mo** — is the arithmetic
-ceiling. Traffic does not move it: Fly bills machine-seconds, not requests, so
-ten testers and ten thousand cost the same.
-
-The bill can only exceed that if the **configuration** changes:
-
-- a second machine (`flyctl scale count`, or `min_machines_running > 1`)
-- a larger machine (the `[[vm]]` block in `backend/fly.toml`)
-- an additional region
-- adding a Fly-hosted service — Postgres, volumes, object storage
-
-None of those happen on their own. Review `backend/fly.toml` before any change
-touching `[[vm]]`, `min_machines_running`, or regions, and check the Fly
-dashboard monthly for the first few months.
-
-### Weekly balance check (installed 2026-07-30)
-
-Because Fly has no cap and no alerts, a **launchd agent** fires every **Monday
-at 09:14** — macOS notification, opens the Fly billing page, logs to
-`~/.htr-fly-reminder.log`.
-
-```bash
-launchctl list | grep htr                      # verify it is registered
-launchctl start org.htr.fly-balance-reminder   # fire now
-./scripts/fly-balance-reminder.sh --test       # or fire the script directly
-```
-
-| Piece | Path |
-| :--- | :--- |
-| Agent | `~/Library/LaunchAgents/org.htr.fly-balance-reminder.plist` |
-| Script | `scripts/fly-balance-reminder.sh` |
-| Log | `~/.htr-fly-reminder.log` |
-
-**Why launchd and not cron:** cron silently skips a job that was due while the
-Mac was asleep; launchd runs it on the next wake. For a once-a-week reminder
-that is the whole point. A cron entry was installed first and then removed —
-`--install`/`--uninstall` in the script still manage it as a fallback, but do
-not run both or the reminder fires twice.
-
-**What to look for:** ~$5.70/mo, roughly $1.40/week accruing. Materially higher
-means the configuration changed, not that traffic grew.
-
-**To remove:**
-```bash
-launchctl unload -w ~/Library/LaunchAgents/org.htr.fly-balance-reminder.plist
-```
-
-### Free tiers to watch
-
-Groq's free tier has rate limits that a public launch could exceed. OpenAI
-embeddings are pay-as-you-go and only charged during ingestion, which is rare.
-Supabase's free tier pauses a project after ~1 week of inactivity — that would
-take down both the app data and the RAG vectors.
+**Weekly balance reminder:** a launchd agent (`org.htr.fly-balance-reminder`,
+still registered 2026-11-15) fires Mondays 09:14, opens the Fly billing page and
+logs to `~/.htr-fly-reminder.log`. Script: `scripts/fly-balance-reminder.sh`.
+Remove with
+`launchctl unload -w ~/Library/LaunchAgents/org.htr.fly-balance-reminder.plist`.
 
 ---
 
 ## 10. The Book
 
-**Read [`BOOK_WORKFLOW.md`](BOOK_WORKFLOW.md) before editing the manuscript.**
-Summary only here.
+**Read [`BOOK_WORKFLOW.md`](BOOK_WORKFLOW.md) and the book section of
+[`CLAUDE.md`](CLAUDE.md) before touching the manuscript.** Summary:
 
-### The two files
-
-| File | Role | Who edits |
-| :--- | :--- | :--- |
-| `HTR_Book_v42.docx` | **The book.** Read, edit, export to PDF. | You, in Google Docs |
-| `HTR_Book_v42.md` | Build input. Regenerates the styled `.docx`. | Claude / the build |
-
-`./book.sh` is the only command needed:
-
-```bash
-./book.sh          # detect download, capture widths, list edits, rebuild
-./book.sh build    # rebuild only
-./book.sh check    # report only
-```
-
-### Things that will bite you
-
-- **A rebuild regenerates the `.docx` from the `.md`.** Anything living only in
-  the `.docx` is lost unless the pipeline reproduces it.
-- **Table column widths** are captured automatically on download into
-  `book-build/table_widths.json`, keyed by header row. 114 tables covered; the
-  49 uncovered ones are single-column callout boxes with nothing to size.
-- **Google Docs rewrites `keepNext`** on import (a build ships ~123 on; the
-  round-trip returns ~76 on / ~1058 off). Layout fixes based on `keepNext`
-  cannot survive the round trip.
-- **`WIDE_TABLE_MIN_COLS` must stay at 6.** At 4 it wrapped ordinary tables in a
-  portrait→landscape→portrait section sandwich whose leading break rendered as
-  the blank space above every table.
-- **There is no renderer in this environment.** Any claim about pages, gaps, or
-  layout is an estimate until you look at the document.
+- **`HTR_Book_v42.docx` is the book.** The live copy is the Google Doc; the
+  author edits there and re-uploads as a new Google Doc each round.
+- `HTR_Book_v42.md` is a disposable text mirror for searching, regenerated from
+  the `.docx` by `python3 book-build/refresh_md.py` (which also rebuilds the web
+  reader HTML). Truth flows `.docx → .md`, never back.
+- `./book.sh` and the `md → docx` build are **retired**; never regenerate the
+  `.docx`.
+- Claude edits the `.docx` surgically (`book-build/patch_docx.py`), backs it up
+  first, and checks layout with the renderer `python3 book-build/render_check.py`.
+  Formatting audit: `python3 book-build/check_format.py`.
 
 ### Wiring to the platform
 
 | Surface | Source of truth |
 | :--- | :--- |
 | Chapter structure | `frontend/lib/taxonomy/chapters.ts` (16 chapters) |
-| Tool ↔ chapter map | `frontend/lib/taxonomy/tools.ts` (39 tools, 44 pairs) |
-| PDF | `frontend/public/HTR_Book_v42.pdf`, referenced from 5 places |
-| Reader | `/book`, `/read/[slug]` |
-| Audio | **Supabase Storage**, public bucket `narration-audio`, path `narration/<NN-name>.m4a` (base URL in `frontend/lib/narration.ts`) — 18 files. Transcripts (`.txt`) stay in `frontend/public/audio/narration/`. Local `.m4a`/`.wav` there are gitignored working copies, never deployed. |
+| Tool ↔ chapter map | `frontend/lib/taxonomy/tools.ts` (44 tools) |
+| PDF | `frontend/public/HTR_Book_v42.pdf` (author exports from Google Docs) |
+| Reader | `/book`, `/read/[slug]` (HTML from `book-build/make_reader_html.py`) |
+| Audio | Supabase Storage bucket `narration-audio`, 18 files, re-recorded from the corrected text 2026-10-07 (Piper) |
 
-**Exporting a PDF:** upload the current `.docx` to Google Docs → File → Download
-→ PDF → save to repo root → copy to `frontend/public/`.
-
-> ⚠️ **Check the TOC before shipping a PDF.** Word/Docs writes page numbers as
-> fields. If they haven't been refreshed, every entry reads "1". This shipped to
-> production once on 2026-07-30. In Word: select the TOC → F9 → update entire
-> table.
-
-### Audio narration
-
-```bash
-python3 book-build/make_transcripts.py            # .txt from the manuscript
-./scripts/generate-narration-audio.sh             # macOS `say` (free, robotic)
-./scripts/generate-narration-piper.sh             # Piper (free, better)
-```
-
-The generators write `.m4a` files locally; the site plays them from the
-Supabase Storage bucket `narration-audio` (moved off Vercel 2026-09-22 — the
-audio was ~355MB per deployment). **A newly generated file is not live until
-it is uploaded to `narration-audio/narration/<same filename>`**, overwriting
-the old object. Bucket state on 2026-10-07: preface through chapter 5 uploaded
-2026-10-07, chapters 6–16 uploaded 2026-09-29. The CSP `media-src` must allow
-`https://*.supabase.co` or every player is blocked (fixed in `next.config.ts`
-2026-10-07).
-
-Cost model: **one-time per generation.** The `.m4a` files are static assets —
-listeners cost nothing, there is no per-play fee, and nothing regenerates
-automatically.
+Audio generators: `scripts/generate-narration-piper.sh` (or `-audio.sh` for
+macOS `say`); upload with `frontend/scripts/migrate-narration-audio-to-supabase.mjs`.
+A new file is not live until uploaded.
 
 ---
 
@@ -589,74 +454,58 @@ automatically.
 
 ### Data model
 
-Content is **split across two systems**, and this trips people up:
-
 ```
 Supabase                          Sanity
-  courses                           academyModule
-    └─ tracks                       course
-        └─ lessons ──sanity_slug──▶ (lesson body, rich content)
+  courses (19)                      academyModule (299)
+    └─ tracks (105)
+        └─ lessons (299) ──sanity_slug──▶ lesson body
 ```
 
-Structure, ordering, and membership live in **Supabase**. Lesson *body* content
-lives in **Sanity**, joined by the lesson row's `sanity_slug`.
+Structure, ordering and membership live in **Supabase**; each lesson's body is
+the Sanity module its `sanity_slug` names. Every module carries its lesson's
+title, summary, course title, position and next/previous lesson (aligned
+2026-11-15 by `frontend/scripts/academy-retire-old-content.mjs`).
 
-> ⚠️ **If `sanity_slug` is null or wrong, the app silently renders thin legacy
-> `content_blocks` instead of the real lesson.** After posting content to
-> Sanity, always set the slug. Use `frontend/scripts/link-sanity-slugs.mjs` —
-> and note it must live in `frontend/scripts/` so Node can resolve
-> `@supabase/supabase-js`.
+**Routes:** the player is `/academy/tracks/<course>/<lesson>`; the course list
+is `/academy/courses`. The legacy addresses `/academy/modules/<slug>` and
+`/academy/courses/<slug>` **redirect** to the lesson or course (retired course
+slugs map to their replacements; deleted duplicates are redirected in
+`next.config.ts`).
 
 ### Working rules
 
-- **Seed scripts are upsert-only — they never delete.** To remove a lesson from
-  a course, delete the DB row directly, then check every track for duplicates
-  and orphans.
-- **Write one lesson at a time**, fully, before starting the next.
-- Every lesson script starts with `exec(open('CONTENT_TEMPLATE.py').read())` —
-  never reimplement the block helpers inline.
+- **Seed scripts are upsert-only.** To remove a lesson, delete the DB row. The
+  seed sources in `frontend/content/*.json` were aligned with the live Academy
+  on 2026-11-15 — keep them in step, or a re-seed resurrects deleted lessons.
+- After posting a lesson body to Sanity, **set the lesson's `sanity_slug`**.
+- Lesson scripts start with `exec(open('CONTENT_TEMPLATE.py').read())`.
+- `node frontend/scripts/audit-courses.mjs` must show every course DONE
+  (299/299 on 2026-11-15).
 - `AcademyContent.tsx` is the gold-standard renderer.
-
-Migrations: `003_academy.sql`, `028_course_schema.sql`, `029_course_pillar_level`,
-`030_course_featured`, `031_lesson_sanity_slug`, `032/033_course_chapter_ref`.
-
-Book integration: each course links to chapters via `course_chapter_ref`;
-chapters link back through the "Work This Chapter on the Platform" tables.
 
 ---
 
 ## 12. Toolchain
 
-Verified 2026-07-30.
+Verified 2026-11-15.
 
 | Layer | Technology | Version |
 | :--- | :--- | :--- |
-| Frontend | Next.js (App Router) | ^16.1.6 |
-| Language | TypeScript / React | — |
+| Frontend | Next.js (App Router) / React | ^16.1.6 / ^19 |
 | Runtime | Node.js | v22.14.0 |
-| Backend | FastAPI + Uvicorn | Python 3.14.5 |
+| Backend | FastAPI + Uvicorn (local venv) | Python 3.13.18 |
 | RAG | LlamaIndex core | 0.14.10 |
-| LLM | Groq `llama-3.3-70b-versatile` | — |
+| LLM | Groq `openai/gpt-oss-120b` / `gpt-oss-20b`; OpenAI `gpt-4o-mini` fallback | — |
 | Embeddings | OpenAI `text-embedding-3-small` | — |
+| Re-ranking | FlashRank (ONNX, `max_length=256`) | — |
 | Database | Supabase Postgres + pgvector | — |
 | CMS | Sanity | API 2023-10-01 |
-| Book build | pandoc 3.3 + python-docx | — |
-| Audio | ffmpeg, Piper, macOS `say`, OpenAI TTS | — |
+| Book tooling | pandoc, python-docx, LibreOffice renderer | — |
+| Audio | Piper, macOS `say`, ffmpeg, OpenAI TTS | — |
 | Deploy | Vercel + Fly.io + GitHub Actions | — |
+| CLIs | `vercel`, `fly` (both logged in) | — |
 
-**Python backend dependencies are deliberately thin** — `llama-index-core` plus
-API clients. No torch, no tensorflow, no transformers. Keep it that way; adding
-a local model would change the machine sizing and the cost model.
-
-### Local prerequisites
-
-```bash
-node -v          # ≥ 22
-python3 -V       # ≥ 3.11
-pandoc --version # ≥ 3
-ffmpeg -version
-flyctl version
-```
+No torch/tensorflow/transformers in the backend; keep it that way.
 
 ---
 
@@ -666,29 +515,27 @@ flyctl version
 
 | Location | Contents | In git? |
 | :--- | :--- | :--- |
-| `backend/.env` | Groq, OpenAI, Sanity, Supabase | **No** (gitignored) |
-| `frontend/.env.local` | Sanity, Supabase, Resend | **No** (gitignored) |
-| Vercel env vars | production frontend secrets | n/a |
-| Fly secrets | production backend secrets | n/a |
+| `backend/.env` | Groq, OpenAI, Sanity, Supabase, `INGEST_SECRET` | No |
+| `frontend/.env.local` | Sanity, Supabase, Resend (local only), `INGEST_SECRET`, `SANITY_WEBHOOK_SECRET` | No |
+| Vercel env vars | 13 production variables (§3) | n/a |
+| Fly secrets | 11: `FRONTEND_URL`, `GROQ_API_KEY`, `OPENAI_API_KEY`, 4 × Sanity, `SUPABASE_DB_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `SUPABASE_URL`, `INGEST_SECRET` | n/a |
+| Sanity webhook | the webhook secret | n/a |
 
 ```bash
-flyctl secrets list -a vhp-backend
-flyctl secrets set KEY=value -a vhp-backend     # triggers a redeploy
+fly secrets list -a vhp-backend
+fly secrets set KEY=value -a vhp-backend     # restarts the machine
 ```
 
 ### Rotation checklist
 
-When a key is exposed, rotate it in **all** places:
-
 1. Revoke at the provider, create a new key
-2. Update the local `.env` / `.env.local`
-3. Update Vercel (Settings → Environment Variables) → **redeploy**
-4. Update Fly (`flyctl secrets set`) if the backend uses it
+2. Update `backend/.env` / `frontend/.env.local`
+3. Update Vercel → **redeploy**
+4. Update Fly (`fly secrets set`) if the backend uses it
 5. Confirm the old key is dead
 
-> **Outstanding:** the Resend key exposed on 2026-07-30 should be rotated if it
-> has not been already. It was removed from the repo, but it sat in a tracked
-> file and must be treated as compromised.
+The Resend key exposed on 2026-07-30 is dead (the three old strings were
+rejected by Resend on 2026-11-14).
 
 ---
 
@@ -696,73 +543,78 @@ When a key is exposed, rotate it in **all** places:
 
 ### AI Analyst says "backend is offline"
 
-1. `curl https://vhp-backend.fly.dev/health` — if this fails, the backend is down
-2. `flyctl status -a vhp-backend` — suspended? crashed?
-3. Suspended for billing → add a payment method; it resumes automatically
-   (the dashboard badge may stay stale — trust the health check)
-4. Crashed → `flyctl logs -a vhp-backend`
-5. Backend healthy but site still failing → **`PYTHON_BACKEND_URL` is unset or
-   wrong in Vercel.** Set it and redeploy.
+1. `curl https://vhp-backend.fly.dev/health` (allow 20 s for a cold start)
+2. `fly status -a vhp-backend` — crashed? billing?
+3. Crashed → `fly logs -a vhp-backend --no-tail`
+4. Backend healthy but site failing → `PYTHON_BACKEND_URL` unset or wrong in
+   Vercel. Set it and redeploy.
+
+### New Sanity content not reaching the AI Analyst
+
+`vercel logs -p vhp --scope bechirbensaid-url --since 1h --query sanity-webhook`
+shows each rejected notification with its reason (secret mismatch, missing
+signature, stale timestamp). Fly side: `fly logs` for "Sanity webhook".
+
+### Testers sent to the login page
+
+`ALLOW_AUTH_BYPASS` missing or not `true` in Vercel production → set it,
+redeploy.
 
 ### Site down entirely
 
-Check the Vercel deployment log first. A failed build leaves the previous
-deployment serving, so a "down" site is more often DNS or a domain
-misconfiguration than a bad build.
+Check the Vercel deployment log. A failed build leaves the previous deployment
+serving, so "down" is more often DNS or a domain (see the .com expiry in §8).
 
 ### Wrong PDF being served
 
-The file, not the reference — all five references already point at
-`HTR_Book_v42.pdf`. Copy the correct export to `frontend/public/` and push.
-Verify with `curl -sI <url> | grep content-length` and compare byte counts.
+Copy the correct export to `frontend/public/HTR_Book_v42.pdf` and push; compare
+`curl -sI <url> | grep content-length` byte counts.
 
 ### Someone must lose access immediately
 
-`is_active = false` takes up to 7 days because of the cookie. For instant
-lockout, change the cookie name in `middleware.ts` and redeploy — this signs out
-everyone.
+Deactivate the code, then change the cookie name in `proxy.ts` and redeploy —
+this signs out everyone.
 
 ### Rolling back
 
-```bash
-git revert <sha> && git push origin main    # frontend, via Vercel
-flyctl releases -a vhp-backend               # backend
-flyctl deploy --image <previous> -a vhp-backend
-```
-
-Vercel also offers instant rollback to any prior deployment in its dashboard.
+- Website: Vercel → Deployments → last good one → Promote to Production (or
+  `git revert <sha> && git push`)
+- Backend: `fly releases -a vhp-backend`, then redeploy the previous image
+- Sanity: document → History → restore; script changes also have JSON backups
+  in `sanity-backups/`
 
 ---
 
 ## 15. Known gaps and risks
 
-Honest list as of 2026-07-30.
+As of 2026-11-15.
 
 | Risk | Detail | Mitigation |
 | :--- | :--- | :--- |
-| **No spending-cap *feature* on Fly** | Fly has no setting where you cap the bill at $N and it stops. The *configuration* still bounds it: one `shared-1x-cpu@1024MB` machine × 24/7 = **~$5.70/mo**, regardless of users or requests. | Cost can only rise if the CONFIG changes — a second machine, a larger machine, another region, or adding a Fly service (Postgres, volumes, object storage). Review `backend/fly.toml` before any change that touches `[[vm]]`, `min_machines_running`, or regions. |
-| **Revocation lag** | 7-day cookie | Change cookie name for instant lockout |
-| **Role-gating bypassed** | `ALLOW_AUTH_BYPASS=true` | Intentional in beta; must flip before GA |
-| **No automated DB migrations** | Applied by hand in the SQL editor | Track carefully; migrations are numbered |
-| **Supabase free tier pauses** | ~1 week idle → project paused | Upgrade before any quiet period |
-| **Groq rate limits** | Free tier | Monitor; upgrade before public launch |
-| **Stale architecture docs** | `platform-documentation/` is from 2026-06-06 | This runbook supersedes it where they conflict |
-| **15 chapters of old audio** | Only preface/intro/ch1 re-recorded | ~$3 to redo the rest |
-| **Book claims drift** | Tool counts etc. go stale as the platform grows | Re-audit after adding tools |
+| **.com domain expiry** | healthtransformationreview.com expires 2026-12-29, auto-renew OFF | Vercel → Domains → Auto Renew ($12.03/yr) |
+| **Forgeable beta cookie** | `htr_beta=granted:<host>` is unsigned: anyone who knows the format skips the code | Sign it before inviting more testers (signs everyone out once) |
+| **Role-gating bypassed** | `ALLOW_AUTH_BYPASS=true` | Intentional in beta; turn off before GA |
+| **No email, payments or error tracking in production** | Resend, Loops, Stripe, Sentry keys not set | Configure before launch |
+| **Vercel Hobby plan** | Non-commercial use only | Move to Pro before charging users |
+| **Advisory engagement form** | `/advisory/contact` submit sends nothing | Connect or remove; Contact Us uses email |
+| **Empty pages** | Webinars and Faculty have no content | Add content or hide |
+| **Bed-capacity live data** | Page calls an unset `NEXT_PUBLIC_BACKEND_URL`; server returns baseline numbers anyway | Low priority |
+| **No spending cap on Fly** | Config bounds it at ~$5.70/mo | Weekly reminder (§9) |
+| **Revocation lag** | 7-day cookie | Rename cookie for instant lockout |
+| **Groq free-tier limits** | 8k tokens/min; OpenAI fallback covers overflow | Monitor before public launch |
+| **No automated DB migrations** | Applied by hand | Number and record every migration |
 | **No staging environment** | `main` deploys straight to production | Use Vercel preview deployments |
-| **Single region** | Fly `sjc` only | Fine for current scale |
+| **Pirated PDF in old GitHub PR refs** | 18 Dependabot PR refs still hold the removed Dictionary PDF | GitHub Support request (author) |
 
 ### Recurring failure patterns
 
-Four things have caused real problems more than once. All are documented above,
-repeated here because they will recur:
-
-1. **Env var set but not redeployed** — Vercel reads them at build time
-2. **Local backend won't serve the live site** — Vercel can't see your laptop
-3. **Book edits lost to a rebuild** — the `.docx` is generated output
-4. **Browser cache masking a fix** — always verify with `curl`, not a reload
+1. **Env var set but not redeployed** — redeploy after any Vercel variable change
+2. **An unset URL variable silently falls back to localhost** — `PYTHON_BACKEND_URL`, `NEXT_PUBLIC_APP_URL`, `BACKEND_URL` have all done this
+3. **Local backend won't serve the live site** — Vercel can't see your laptop
+4. **Seed files drifting from the live Academy** — a re-seed resurrects deleted lessons
+5. **Browser cache masking a fix** — verify with `curl`, not a reload
 
 ---
 
-*Verify anything cost-related against your own dashboards. Everything technical
-here was checked against the running system on 2026-07-30.*
+*Everything technical here was checked against the running system and the
+accounts on 2026-11-14/15. Verify invoice amounts on the providers' billing pages.*

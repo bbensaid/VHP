@@ -153,7 +153,7 @@ reason. Never fabricate content to make an audit look clean.
 
 | Document | When |
 | :--- | :--- |
-| [HTR_ADMIN_RUNBOOK.md](HTR_ADMIN_RUNBOOK.md) | **Anything operational** — access codes, deploys, Fly/Vercel/Supabase/Sanity, costs, secrets, emergencies. Verified 2026-07-30. |
+| [HTR_ADMIN_RUNBOOK.md](HTR_ADMIN_RUNBOOK.md) | **Anything operational** — access codes, deploys, Fly/Vercel/Supabase/Sanity, costs, secrets, emergencies. Verified 2026-11-15. |
 | [BOOK_WORKFLOW.md](BOOK_WORKFLOW.md) | Before touching the manuscript |
 | `frontend/docs/platform-documentation/` | Architecture (2026-06-06, partly stale — the runbook wins on conflicts) |
 | [RELEASE_AUDIT_2026-08.md](RELEASE_AUDIT_2026-08.md) | The pre-release audit ledger — read it for open items. (The earlier alignment-audit brief/findings docs were superseded and removed 2026-09-18.) |
