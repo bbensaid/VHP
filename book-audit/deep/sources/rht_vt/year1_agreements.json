@@ -1,0 +1,1946 @@
+[
+ {
+  "initiative": "Evaluator",
+  "activity": "Independent evaluator",
+  "legal_name": "National Opinion Research Center (NORC)",
+  "dba": "",
+  "amount": "$815,989.00",
+  "amount_num": 815989.0
+ },
+ {
+  "initiative": "Administration",
+  "activity": "Admin costs",
+  "legal_name": "GMS - AGATE IGX",
+  "dba": "",
+  "amount": "$323,927.00",
+  "amount_num": 323927.0
+ },
+ {
+  "initiative": "Price Transparency and Insurance Diversification",
+  "activity": "Green Mountain Care Board health care data platform modernization and transparency initiative",
+  "legal_name": "Memorandum of Understanding between AHS and GMCB",
+  "dba": "",
+  "amount": "$2,635,000.00",
+  "amount_num": 2635000.0
+ },
+ {
+  "initiative": "Price Transparency and Insurance Diversification",
+  "activity": "Statewide assessment of options to improve health coverage affordability",
+  "legal_name": "Wakely Consulting Group",
+  "dba": "",
+  "amount": "$500,000.00",
+  "amount_num": 500000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation analytics and support",
+  "legal_name": "McKinsey & Co.",
+  "dba": "",
+  "amount": "$5,100,000.00",
+  "amount_num": 5100000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Mental Health (MH) and Substance Use Disorder (SUD) urgent care expansion",
+  "legal_name": "Washington County Mental Health",
+  "dba": "",
+  "amount": "$22,500.73",
+  "amount_num": 22500.73
+ },
+ {
+  "initiative": "",
+  "activity": "Mental Health (MH) and Substance Use Disorder (SUD) urgent care expansion",
+  "legal_name": "Health Care and Rehabilitation Services of Southeastern Vermont, Inc.",
+  "dba": "",
+  "amount": "$3,216,288.17",
+  "amount_num": 3216288.17
+ },
+ {
+  "initiative": "",
+  "activity": "Mental Health (MH) and Substance Use Disorder (SUD) urgent care expansion",
+  "legal_name": "Rutland Mental Health Services",
+  "dba": "",
+  "amount": "$821,223.70",
+  "amount_num": 821223.7
+ },
+ {
+  "initiative": "",
+  "activity": "Development of a statewide health care delivery strategic plan",
+  "legal_name": "Bailit Health Purchasing, LLC.",
+  "dba": "",
+  "amount": "$1,430,829.00",
+  "amount_num": 1430829.0
+ },
+ {
+  "initiative": "",
+  "activity": "Community paramedicine/Mobile Integrated Health model",
+  "legal_name": "Town of Barre EMS",
+  "dba": "",
+  "amount": "$750,000.00",
+  "amount_num": 750000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Community paramedicine/Mobile Integrated Health model",
+  "legal_name": "Rescue Inc.",
+  "dba": "",
+  "amount": "$750,000.00",
+  "amount_num": 750000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Community paramedicine/Mobile Integrated Health model",
+  "legal_name": "Bennington Rescue Squad",
+  "dba": "",
+  "amount": "$750,000.00",
+  "amount_num": 750000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Community paramedicine/Mobile Integrated Health model",
+  "legal_name": "University of Vermont Health",
+  "dba": "",
+  "amount": "$385,293.00",
+  "amount_num": 385293.0
+ },
+ {
+  "initiative": "",
+  "activity": "Community paramedicine/Mobile Integrated Health model",
+  "legal_name": "Public Consulting Group",
+  "dba": "",
+  "amount": "$1,104,343.00",
+  "amount_num": 1104343.0
+ },
+ {
+  "initiative": "",
+  "activity": "Community paramedicine/Mobile Integrated Health model",
+  "legal_name": "Northeastern Vermont Regional Hospital, Inc",
+  "dba": "",
+  "amount": "$750,000.00",
+  "amount_num": 750000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Community paramedicine/Mobile Integrated Health model",
+  "legal_name": "Copley Hospital",
+  "dba": "",
+  "amount": "$750,000.00",
+  "amount_num": 750000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Northern Counties Health Care",
+  "dba": "",
+  "amount": "$125,500.00",
+  "amount_num": 125500.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Clara Martin Center",
+  "dba": "",
+  "amount": "$252,442.25",
+  "amount_num": 252442.25
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Brattleboro Memorial Hospital",
+  "dba": "",
+  "amount": "$759,000.00",
+  "amount_num": 759000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Northern Counties Health Care",
+  "dba": "",
+  "amount": "$69,549.85",
+  "amount_num": 69549.85
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "1248 Hospital Drive Opco LLC",
+  "dba": "St. Johnsbury Center for Living and Rehabilitation",
+  "amount": "$1,486,000.00",
+  "amount_num": 1486000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "CLR Opco",
+  "dba": "The Center for Living and Rehbailitation",
+  "amount": "$1,341,000.00",
+  "amount_num": 1341000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Springfield Center for Living and Rehabilitation",
+  "dba": "",
+  "amount": "$1,280,000.00",
+  "amount_num": 1280000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Brattleboro Retreat",
+  "dba": "",
+  "amount": "$525,000.00",
+  "amount_num": 525000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Drs Hogenkamp",
+  "dba": "",
+  "amount": "$85,300.00",
+  "amount_num": 85300.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Richford Health Center Inc",
+  "dba": "Northern Tier Center for Health (NOTCH)",
+  "amount": "$599,742.80",
+  "amount_num": 599742.8
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Primary Care Health Partners",
+  "dba": "",
+  "amount": "$415,332.03",
+  "amount_num": 415332.03
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Brattleboro Memorial Hospital",
+  "dba": "",
+  "amount": "$603,750.00",
+  "amount_num": 603750.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Central Vermont Medical Center",
+  "dba": "",
+  "amount": "$641,463.75",
+  "amount_num": 641463.75
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Rutland Regional Medical Center",
+  "dba": "",
+  "amount": "$644,107.00",
+  "amount_num": 644107.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Rutland Regional Medical Center",
+  "dba": "",
+  "amount": "$2,000,000.00",
+  "amount_num": 2000000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Northeast Kingdom Community Action (NEKCA)",
+  "dba": "",
+  "amount": "$271,589.15",
+  "amount_num": 271589.15
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Northeastern Vermont Regional Hospital (NVRH)",
+  "dba": "",
+  "amount": "$1,554,711.78",
+  "amount_num": 1554711.78
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "KPH Healthcare Services Inc.",
+  "dba": "Kinney Drugs",
+  "amount": "$1,586,475.00",
+  "amount_num": 1586475.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Community Health Centers of the Rutland Region",
+  "dba": "",
+  "amount": "$2,000,000.00",
+  "amount_num": 2000000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "S&A Healthcare PLC",
+  "dba": "New England Wellness Group",
+  "amount": "$300,000.00",
+  "amount_num": 300000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Little Rivers Health Care",
+  "dba": "",
+  "amount": "$1,320,085.00",
+  "amount_num": 1320085.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "North Country Hospital",
+  "dba": "",
+  "amount": "$1,469,700.00",
+  "amount_num": 1469700.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Rutland Center for Living and Rehabilitation",
+  "dba": "",
+  "amount": "$1,299,000.00",
+  "amount_num": 1299000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Springfield Center for Living and Rehabilitation",
+  "dba": "",
+  "amount": "$425,000.00",
+  "amount_num": 425000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Gifford Health Care",
+  "dba": "",
+  "amount": "$1,008,012.12",
+  "amount_num": 1008012.12
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Grace Cottage",
+  "dba": "",
+  "amount": "$2,000,000.00",
+  "amount_num": 2000000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Springfield Hospital",
+  "dba": "",
+  "amount": "$205,447.50",
+  "amount_num": 205447.5
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Northern Counties Health Care",
+  "dba": "",
+  "amount": "$91,250.00",
+  "amount_num": 91250.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Southwestern Vermont Health",
+  "dba": "",
+  "amount": "$1,998,848.35",
+  "amount_num": 1998848.35
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Richmond Family Medicine",
+  "dba": "",
+  "amount": "$320,673.96",
+  "amount_num": 320673.96
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Howard Center",
+  "dba": "",
+  "amount": "$323,627.74",
+  "amount_num": 323627.74
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Northwestern Medical Center",
+  "dba": "",
+  "amount": "$2,000,000.00",
+  "amount_num": 2000000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Rescue Inc.",
+  "dba": "",
+  "amount": "$186,000.00",
+  "amount_num": 186000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Gifford Health Care",
+  "dba": "",
+  "amount": "$633,201.36",
+  "amount_num": 633201.36
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Habit Opco LLC",
+  "dba": "Brattleboro Comprehensive Treatment Center",
+  "amount": "$268,530.79",
+  "amount_num": 268530.79
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "UVM - Health Network",
+  "dba": "",
+  "amount": "$1,972,160.00",
+  "amount_num": 1972160.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Springfield Hospital",
+  "dba": "",
+  "amount": "$85,100.00",
+  "amount_num": 85100.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Lamoille County Mental Health Services (LCMHS)",
+  "dba": "",
+  "amount": "$140,000.00",
+  "amount_num": 140000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Northeast Kingdom Human Services",
+  "dba": "",
+  "amount": "$1,488,626.00",
+  "amount_num": 1488626.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Community Health Centers of Burlington",
+  "dba": "",
+  "amount": "$479,522.00",
+  "amount_num": 479522.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Brattleboro Memorial Hospital",
+  "dba": "",
+  "amount": "$257,600.00",
+  "amount_num": 257600.0
+ },
+ {
+  "initiative": "",
+  "activity": "Facility upgrades to support regionalization",
+  "legal_name": "Copley Hospital",
+  "dba": "",
+  "amount": "$1,987,823.59",
+  "amount_num": 1987823.59
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Lamoille Community House, Inc.",
+  "dba": "",
+  "amount": "$596,760.86",
+  "amount_num": 596760.86
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "BAART St Albans",
+  "dba": "",
+  "amount": "$242,598.01",
+  "amount_num": 242598.01
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "BAART St Johnsbury",
+  "dba": "",
+  "amount": "$242,598.01",
+  "amount_num": 242598.01
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Bi-State Primary Care",
+  "dba": "",
+  "amount": "$557,400.42",
+  "amount_num": 557400.42
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Brattleboro Retreat",
+  "dba": "",
+  "amount": "$188,992.00",
+  "amount_num": 188992.0
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Health Care and Rehabilitation Services of Southeastern Vermont, Inc. (2)",
+  "dba": "",
+  "amount": "$4,255,000.00",
+  "amount_num": 4255000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Little Rivers Health Care",
+  "dba": "",
+  "amount": "$1,352,538.00",
+  "amount_num": 1352538.0
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Northern Counties Health Care",
+  "dba": "",
+  "amount": "$137,810.25",
+  "amount_num": 137810.25
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Real Time Medical Systems",
+  "dba": "",
+  "amount": "$498,758.00",
+  "amount_num": 498758.0
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Rutland Regional Medical Center",
+  "dba": "",
+  "amount": "$191,753.72",
+  "amount_num": 191753.72
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Central Vermont Medical Center",
+  "dba": "",
+  "amount": "$167,034.38",
+  "amount_num": 167034.38
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Northeast Kingdom Community Action (NEKCA)",
+  "dba": "",
+  "amount": "$259,748.12",
+  "amount_num": 259748.12
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Brattleboro Memorial Hospital",
+  "dba": "",
+  "amount": "$270,250.00",
+  "amount_num": 270250.0
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Brattleboro Memorial Hospital",
+  "dba": "",
+  "amount": "$115,000.00",
+  "amount_num": 115000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Brattleboro Memorial Hospital",
+  "dba": "",
+  "amount": "$48,005.73",
+  "amount_num": 48005.73
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "UVM - State Agricultural College",
+  "dba": "",
+  "amount": "$363,807.71",
+  "amount_num": 363807.71
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Bennington Rescue Squad",
+  "dba": "",
+  "amount": "$1,163,019.62",
+  "amount_num": 1163019.62
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "MOU with DVHA to support regional transformation managers",
+  "dba": "",
+  "amount": "$402,500.00",
+  "amount_num": 402500.0
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "North Country Hospital & Health Center, Inc.",
+  "dba": "",
+  "amount": "$1,042,090.00",
+  "amount_num": 1042090.0
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Southwestern Vermont Medical Center",
+  "dba": "",
+  "amount": "$518,949.00",
+  "amount_num": 518949.0
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Northwestern Medical Center",
+  "dba": "",
+  "amount": "$2,461,000.00",
+  "amount_num": 2461000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Cathedral Square Corporation",
+  "dba": "",
+  "amount": "$662,437.00",
+  "amount_num": 662437.0
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Rescue Inc.",
+  "dba": "",
+  "amount": "$359,907.59",
+  "amount_num": 359907.59
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Green Mountain Birth & Wellness",
+  "dba": "",
+  "amount": "$730,292.32",
+  "amount_num": 730292.32
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Springfield Hospital",
+  "dba": "",
+  "amount": "$1,894,177.31",
+  "amount_num": 1894177.31
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Full Circle Medicine",
+  "dba": "",
+  "amount": "$399,189.15",
+  "amount_num": 399189.15
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Dentistry One of Vermont, PC",
+  "dba": "",
+  "amount": "$125,000.40",
+  "amount_num": 125000.4
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Richford Health Center Inc",
+  "dba": "Northern Tier Center for Health (NOTCH)",
+  "amount": "$219,561.79",
+  "amount_num": 219561.79
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Brattleboro Memorial Hospital",
+  "dba": "",
+  "amount": "$3,108,650.00",
+  "amount_num": 3108650.0
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Springfield Hospital",
+  "dba": "",
+  "amount": "$69,938.01",
+  "amount_num": 69938.01
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "UVM - Home Health & Hospice",
+  "dba": "",
+  "amount": "$992,479.09",
+  "amount_num": 992479.09
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Community Health Centers of the Rutland Region",
+  "dba": "",
+  "amount": "$2,283,000.00",
+  "amount_num": 2283000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Cathedral Square Corporation",
+  "dba": "",
+  "amount": "$743,002.99",
+  "amount_num": 743002.99
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Brattleboro Memorial Hospital",
+  "dba": "",
+  "amount": "$230,000.00",
+  "amount_num": 230000.0
+ },
+ {
+  "initiative": "",
+  "activity": "Transformation, innovation, and regionalization support grants",
+  "legal_name": "Manatt, Phelps & Phillips, LLP",
+  "dba": "",
+  "amount": "$382,753.00",
+  "amount_num": 382753.0
+ },
+ {
+  "initiative": "",
+  "activity": "Mobile units offering medical, dental and integrated Mental Health (MH) and Substance Use Disorder (SUD) services",
+  "legal_name": "Central Vermont Medical Center",
+  "dba": "",
+  "amount": "$1,044,158.97",
+  "amount_num": 1044158.97
+ },
+ {
+  "initiative": "",
+  "activity": "Mobile units offering medical, dental and integrated Mental Health (MH) and Substance Use Disorder (SUD) services",
+  "legal_name": "Mary Hitchcock Memorial Hospital*",
+  "dba": "",
+  "amount": "$603,680.80",
+  "amount_num": 603680.8
+ },
+ {
+  "initiative": "",
+  "activity": "Mobile units offering medical, dental and integrated Mental Health (MH) and Substance Use Disorder (SUD) services",
+  "legal_name": "Howard Center",
+  "dba": "",
+  "amount": "$136,759.82",
+  "amount_num": 136759.82
+ },
+ {
+  "initiative": "",
+  "activity": "Mobile units offering medical, dental and integrated Mental Health (MH) and Substance Use Disorder (SUD) services",
+  "legal_name": "Little Rivers Health Care",
+  "dba": "",
+  "amount": "$238,672.57",
+  "amount_num": 238672.57
+ },
+ {
+  "initiative": "",
+  "activity": "Mobile units offering medical, dental and integrated Mental Health (MH) and Substance Use Disorder (SUD) services",
+  "legal_name": "Richford Health Center Inc",
+  "dba": "Northern Tier Center for Health (NOTCH)",
+  "amount": "$282,419.00",
+  "amount_num": 282419.0
+ },
+ {
+  "initiative": "",
+  "activity": "Mobile units offering medical, dental and integrated Mental Health (MH) and Substance Use Disorder (SUD) services",
+  "legal_name": "Vermont Dental Services (VDS)",
+  "dba": "",
+  "amount": "$315,175.00",
+  "amount_num": 315175.0
+ },
+ {
+  "initiative": "",
+  "activity": "Mobile units offering medical, dental and integrated Mental Health (MH) and Substance Use Disorder (SUD) services",
+  "legal_name": "Brattleboro Memorial Hospital",
+  "dba": "",
+  "amount": "$1,085,458.75",
+  "amount_num": 1085458.75
+ },
+ {
+  "initiative": "",
+  "activity": "Mobile units offering medical, dental and integrated Mental Health (MH) and Substance Use Disorder (SUD) services",
+  "legal_name": "HealthHUB",
+  "dba": "",
+  "amount": "$529,689.07",
+  "amount_num": 529689.07
+ },
+ {
+  "initiative": "",
+  "activity": "Mobile units offering medical, dental and integrated Mental Health (MH) and Substance Use Disorder (SUD) services",
+  "legal_name": "Bristol Rescue Squad, Inc.",
+  "dba": "",
+  "amount": "$725,255.29",
+  "amount_num": 725255.29
+ },
+ {
+  "initiative": "",
+  "activity": "Mobile units offering medical, dental and integrated Mental Health (MH) and Substance Use Disorder (SUD) services",
+  "legal_name": "University of Vermont Cancer Center",
+  "dba": "",
+  "amount": "$868,649.42",
+  "amount_num": 868649.42
+ },
+ {
+  "initiative": "",
+  "activity": "Mobile units offering medical, dental and integrated Mental Health (MH) and Substance Use Disorder (SUD) services",
+  "legal_name": "Community Health Centers of Burlington, Inc.",
+  "dba": "",
+  "amount": "$767,344.82",
+  "amount_num": 767344.82
+ },
+ {
+  "initiative": "",
+  "activity": "Improve availability and access to high-acuity services for nursing home residents including dialysis services and ventilators",
+  "legal_name": "105 Chester Road Opco LLC",
+  "dba": "Springfield Center for Living and Rehabilitation",
+  "amount": "$286,600.00",
+  "amount_num": 286600.0
+ },
+ {
+  "initiative": "",
+  "activity": "Improve availability and access to high-acuity services for nursing home residents including dialysis services and ventilators",
+  "legal_name": "1248 Hospital Drive Opco LLC",
+  "dba": "St. Johnsbury Center for Living and Rehabilitation",
+  "amount": "$531,750.00",
+  "amount_num": 531750.0
+ },
+ {
+  "initiative": "",
+  "activity": "Improve availability and access to high-acuity services for nursing home residents including dialysis services and ventilators",
+  "legal_name": "Rutland Crossings, LLC.",
+  "dba": "",
+  "amount": "$464,325.97",
+  "amount_num": 464325.97
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Incentivizing adoption of a shared Electronic Health Record (EHR)/Electronic Medical Record (EMR) platform",
+  "legal_name": "University of Vermont Health",
+  "dba": "",
+  "amount": "$4,900,000.00",
+  "amount_num": 4900000.0
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Incentivizing adoption of a shared Electronic Health Record (EHR)/Electronic Medical Record (EMR) platform",
+  "legal_name": "North Country Hospital & Health Center",
+  "dba": "",
+  "amount": "$2,390,852.02",
+  "amount_num": 2390852.02
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Incentivizing adoption of a shared Electronic Health Record (EHR)/Electronic Medical Record (EMR) platform",
+  "legal_name": "New England Collaborative Health Network (NECHN)",
+  "dba": "",
+  "amount": "$756,601.13",
+  "amount_num": 756601.13
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Remote Patient Monitoring (RPM) equipment",
+  "legal_name": "Northern Counties Health Care",
+  "dba": "",
+  "amount": "$82,871.00",
+  "amount_num": 82871.0
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Remote Patient Monitoring (RPM) equipment",
+  "legal_name": "Northeastern Vermont Regional Hospital Inc",
+  "dba": "",
+  "amount": "$143,375.56",
+  "amount_num": 143375.56
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Remote Patient Monitoring (RPM) equipment",
+  "legal_name": "Community Health Centers of the Rutland Region",
+  "dba": "",
+  "amount": "$283,395.91",
+  "amount_num": 283395.91
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Remote Patient Monitoring (RPM) equipment",
+  "legal_name": "Dartmouth Health Home Care, Inc. *",
+  "dba": "",
+  "amount": "$179,160.08",
+  "amount_num": 179160.08
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Remote Patient Monitoring (RPM) equipment",
+  "legal_name": "Richford Health Center Inc",
+  "dba": "Northern Tier Center for Health (NOTCH)",
+  "amount": "$109,465.19",
+  "amount_num": 109465.19
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Remote Patient Monitoring (RPM) equipment",
+  "legal_name": "CLR Opco",
+  "dba": "",
+  "amount": "$56,300.00",
+  "amount_num": 56300.0
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Remote Patient Monitoring (RPM) equipment",
+  "legal_name": "Central Vermont Home Health & Hospice",
+  "dba": "",
+  "amount": "$215,953.68",
+  "amount_num": 215953.68
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Remote Patient Monitoring (RPM) equipment",
+  "legal_name": "Rutland Center for Living and Rehabilitation",
+  "dba": "",
+  "amount": "$56,300.00",
+  "amount_num": 56300.0
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Remote Patient Monitoring (RPM) equipment",
+  "legal_name": "THE UNIVERSITY OF VERMONT HEALTH NETWORK INC.",
+  "dba": "",
+  "amount": "$266,288.34",
+  "amount_num": 266288.34
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Remote Patient Monitoring (RPM) equipment",
+  "legal_name": "VNA & Hospice of the Southwest Region, Inc.",
+  "dba": "",
+  "amount": "$431,120.88",
+  "amount_num": 431120.88
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grant funds to providers to adopt telehealth technology",
+  "legal_name": "Northern Counties Health Care",
+  "dba": "",
+  "amount": "$153,824.00",
+  "amount_num": 153824.0
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grant funds to providers to adopt telehealth technology",
+  "legal_name": "CLR Opco",
+  "dba": "",
+  "amount": "$63,760.00",
+  "amount_num": 63760.0
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grant funds to providers to adopt telehealth technology",
+  "legal_name": "North Country Hospital & Health Center",
+  "dba": "",
+  "amount": "$905,147.28",
+  "amount_num": 905147.28
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grant funds to providers to adopt telehealth technology",
+  "legal_name": "Thomas Chittenden Health Center",
+  "dba": "",
+  "amount": "$303,710.85",
+  "amount_num": 303710.85
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grant funds to providers to adopt telehealth technology",
+  "legal_name": "Mary Hitchcock Memorial Hospital*",
+  "dba": "",
+  "amount": "$3,933,283.80",
+  "amount_num": 3933283.8
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grant funds to providers to adopt telehealth technology",
+  "legal_name": "Community Health Centers of the Rutland Region",
+  "dba": "",
+  "amount": "$134,358.14",
+  "amount_num": 134358.14
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grant funds to providers to adopt telehealth technology",
+  "legal_name": "Northeastern Vermont Regional Hospital Inc",
+  "dba": "",
+  "amount": "$1,278,318.88",
+  "amount_num": 1278318.88
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grant funds to providers to adopt telehealth technology",
+  "legal_name": "Richford Health Center Inc",
+  "dba": "Northern Tier Center for Health (NOTCH)",
+  "amount": "$133,688.91",
+  "amount_num": 133688.91
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grant funds to providers to adopt telehealth technology",
+  "legal_name": "Brattleboro Memorial Hospital",
+  "dba": "",
+  "amount": "$371,775.00",
+  "amount_num": 371775.0
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grant funds to providers to adopt telehealth technology",
+  "legal_name": "Rutland Center for Living and Rehabilitation",
+  "dba": "Rutland Center for Living and Rehabilitation",
+  "amount": "$63,760.00",
+  "amount_num": 63760.0
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grant funds to providers to adopt telehealth technology",
+  "legal_name": "Springfield Center for Living and Rehabilitation",
+  "dba": "",
+  "amount": "$63,760.00",
+  "amount_num": 63760.0
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grant funds to providers to adopt telehealth technology",
+  "legal_name": "St. Johnsbury Center for Living and Rehabilitation",
+  "dba": "",
+  "amount": "$63,760.00",
+  "amount_num": 63760.0
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grant funds to providers to adopt telehealth technology",
+  "legal_name": "Rutland Regional Medical Center",
+  "dba": "",
+  "amount": "$59,550.00",
+  "amount_num": 59550.0
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grant funds to providers to adopt telehealth technology",
+  "legal_name": "THE UNIVERSITY OF VERMONT HEALTH NETWORK INC.",
+  "dba": "",
+  "amount": "$2,208,396.48",
+  "amount_num": 2208396.48
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "North Country Hospital & Health Center",
+  "dba": "",
+  "amount": "$172,500.00",
+  "amount_num": 172500.0
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Northern Counties Health Care",
+  "dba": "",
+  "amount": "$107,870.00",
+  "amount_num": 107870.0
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Grace Cottage Hospital",
+  "dba": "",
+  "amount": "$169,528.40",
+  "amount_num": 169528.4
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Mountain Community Health",
+  "dba": "Five Town Health Alliance, INC",
+  "amount": "$27,144.00",
+  "amount_num": 27144.0
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Community Health Centers of the Rutland Region",
+  "dba": "",
+  "amount": "$326,193.94",
+  "amount_num": 326193.94
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Rutland Regional Medical Center",
+  "dba": "Rutland Hospital Inc.",
+  "amount": "$75,204.00",
+  "amount_num": 75204.0
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Brattleboro Memorial Hospital",
+  "dba": "",
+  "amount": "$356,439.05",
+  "amount_num": 356439.05
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Brattleboro Retreat",
+  "dba": "",
+  "amount": "$228,550.93",
+  "amount_num": 228550.93
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Clara Martin Center",
+  "dba": "",
+  "amount": "$263,387.76",
+  "amount_num": 263387.76
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Counseling Service of Addison County, Inc.",
+  "dba": "",
+  "amount": "$104,655.75",
+  "amount_num": 104655.75
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Central Vermont Home Health & Hospice",
+  "dba": "",
+  "amount": "$264,315.20",
+  "amount_num": 264315.2
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Eye Care Associates",
+  "dba": "",
+  "amount": "$15,500.00",
+  "amount_num": 15500.0
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Essex Pediatrics",
+  "dba": "",
+  "amount": "$60,504.90",
+  "amount_num": 60504.9
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Howard Center",
+  "dba": "",
+  "amount": "$139,289.44",
+  "amount_num": 139289.44
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Marble Valley Healthworks",
+  "dba": "",
+  "amount": "$225,459.49",
+  "amount_num": 225459.49
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Richford Health Center Inc",
+  "dba": "Northern Tier Center for Health (NOTCH)",
+  "amount": "$173,966.92",
+  "amount_num": 173966.92
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Northeastern Vermont Regional Hospital Inc",
+  "dba": "",
+  "amount": "$860,274.00",
+  "amount_num": 860274.0
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Northwestern Medical Center",
+  "dba": "",
+  "amount": "$75,382.50",
+  "amount_num": 75382.5
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Ophthalmic Consultants of Vermont",
+  "dba": "",
+  "amount": "$44,355.50",
+  "amount_num": 44355.5
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Primary Care Health Partners",
+  "dba": "",
+  "amount": "$653,327.60",
+  "amount_num": 653327.6
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Gifford Health Care, Inc.",
+  "dba": "",
+  "amount": "$510,763.57",
+  "amount_num": 510763.57
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Thomas Chittenden Health Center",
+  "dba": "",
+  "amount": "$61,364.00",
+  "amount_num": 61364.0
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Lamoille Home Health",
+  "dba": "",
+  "amount": "$136,760.19",
+  "amount_num": 136760.19
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Richmond Family Medicine",
+  "dba": "",
+  "amount": "$59,555.93",
+  "amount_num": 59555.93
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "Community Health Centers of Burlington, Inc.",
+  "dba": "",
+  "amount": "$24,503.24",
+  "amount_num": 24503.24
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+  "legal_name": "The Manor",
+  "dba": "",
+  "amount": "$90,650.55",
+  "amount_num": 90650.55
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Support a statewide closed-loop referral system",
+  "legal_name": "Unite USA, Inc.",
+  "dba": "Unite Us",
+  "amount": "$425,000.00",
+  "amount_num": 425000.0
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "Creating a centralized tool to guide interfacility transfers",
+  "legal_name": "University of Vermont Health",
+  "dba": "",
+  "amount": "$2,979,790.59",
+  "amount_num": 2979790.59
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "e-Consult expansion and workforce capacity building/VTCPAP",
+  "legal_name": "Vermont Program for Quality in Health Care (VPQHC)",
+  "dba": "",
+  "amount": "$1,215,585.48",
+  "amount_num": 1215585.48
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "e-Consult expansion and workforce capacity building/VTCPAP",
+  "legal_name": "Five-Town Health Alliance Inc",
+  "dba": "Mountain Community Health, Inc.",
+  "amount": "$109,192.50",
+  "amount_num": 109192.5
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "e-Consult expansion and workforce capacity building/VTCPAP",
+  "legal_name": "Richford Health Center Inc",
+  "dba": "Northern Tier Center for Health (NOTCH)",
+  "amount": "$34,207.62",
+  "amount_num": 34207.62
+ },
+ {
+  "initiative": "Shared Services",
+  "activity": "e-Consult expansion and workforce capacity building/VTCPAP",
+  "legal_name": "Mary Hitchcock Memorial Hospital*",
+  "dba": "",
+  "amount": "$4,283,851.00",
+  "amount_num": 4283851.0
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Workforce support and system integration development",
+  "legal_name": "RC Warner Consulting, LLC.",
+  "dba": "",
+  "amount": "$270,000.00",
+  "amount_num": 270000.0
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Workforce support and system integration development",
+  "legal_name": "Elevation Partners",
+  "dba": "",
+  "amount": "$400,000.00",
+  "amount_num": 400000.0
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Workforce support and system integration development",
+  "legal_name": "Maryland Partnership for Prevention",
+  "dba": "",
+  "amount": "$500,000.00",
+  "amount_num": 500000.0
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Enhancing Blueprint Transformation Network Capacity",
+  "legal_name": "University of Vermont and State Agricultural College, Larner College of Medicine",
+  "dba": "Area Health Education Centers (AHEC)",
+  "amount": "$300,000.00",
+  "amount_num": 300000.0
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Providing enhanced capacity for team-based care",
+  "legal_name": "Cathedral Square Corporation",
+  "dba": "",
+  "amount": "$2,654,539.04",
+  "amount_num": 2654539.04
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Providing enhanced capacity for team-based care",
+  "legal_name": "Brattleboro Memorial Hospital",
+  "dba": "",
+  "amount": "$284,666.46",
+  "amount_num": 284666.46
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Providing enhanced capacity for team-based care",
+  "legal_name": "Central Vermont Medical Center",
+  "dba": "",
+  "amount": "$558,793.81",
+  "amount_num": 558793.81
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Providing enhanced capacity for team-based care",
+  "legal_name": "Gifford Health Care, Inc.",
+  "dba": "",
+  "amount": "$245,769.35",
+  "amount_num": 245769.35
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Providing enhanced capacity for team-based care",
+  "legal_name": "Copley Hospital, Inc.",
+  "dba": "",
+  "amount": "$349,767.12",
+  "amount_num": 349767.12
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Providing enhanced capacity for team-based care",
+  "legal_name": "North Country Hospital & Health Center",
+  "dba": "",
+  "amount": "$255,520.53",
+  "amount_num": 255520.53
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Providing enhanced capacity for team-based care",
+  "legal_name": "North Star Health",
+  "dba": "",
+  "amount": "$187,500.00",
+  "amount_num": 187500.0
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Providing enhanced capacity for team-based care",
+  "legal_name": "Northeastern Vermont Regional Hospital",
+  "dba": "",
+  "amount": "$314,820.74",
+  "amount_num": 314820.74
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Providing enhanced capacity for team-based care",
+  "legal_name": "Northwestern Medical Center",
+  "dba": "",
+  "amount": "$436,393.33",
+  "amount_num": 436393.33
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Providing enhanced capacity for team-based care",
+  "legal_name": "Porter Hospital, Inc.",
+  "dba": "",
+  "amount": "$388,100.02",
+  "amount_num": 388100.02
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Providing enhanced capacity for team-based care",
+  "legal_name": "Rutland Regional Medical Center",
+  "dba": "",
+  "amount": "$591,800.00",
+  "amount_num": 591800.0
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Providing enhanced capacity for team-based care",
+  "legal_name": "Southwestern Vermont Medical Center, Inc.",
+  "dba": "",
+  "amount": "$316,081.30",
+  "amount_num": 316081.3
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Providing enhanced capacity for team-based care",
+  "legal_name": "University of Vermont Medical Center",
+  "dba": "",
+  "amount": "$1,894,194.06",
+  "amount_num": 1894194.06
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Providing enhanced capacity for team-based care",
+  "legal_name": "Windsor Hospital Corp",
+  "dba": "Mt Ascutney Hospital and Health Center",
+  "amount": "$159,597.13",
+  "amount_num": 159597.13
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Mental Health and community support integration into primary care teams",
+  "legal_name": "Rutland Hospital, Inc.",
+  "dba": "Rutland Regional Medical Center",
+  "amount": "$959,593.02",
+  "amount_num": 959593.02
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Mental Health and community support integration into primary care teams",
+  "legal_name": "Brattleboro Memorial Hospital",
+  "dba": "",
+  "amount": "$604,443.20",
+  "amount_num": 604443.2
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Mental Health and community support integration into primary care teams",
+  "legal_name": "Central Vermont Medical Center",
+  "dba": "",
+  "amount": "$821,745.04",
+  "amount_num": 821745.04
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Mental Health and community support integration into primary care teams",
+  "legal_name": "Gifford Health Care, Inc.",
+  "dba": "",
+  "amount": "$642,160.90",
+  "amount_num": 642160.9
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Mental Health and community support integration into primary care teams",
+  "legal_name": "Copley Hospital, Inc.",
+  "dba": "",
+  "amount": "$721,780.00",
+  "amount_num": 721780.0
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Mental Health and community support integration into primary care teams",
+  "legal_name": "North Country Hospital & Health Center",
+  "dba": "",
+  "amount": "$440,345.73",
+  "amount_num": 440345.73
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Mental Health and community support integration into primary care teams",
+  "legal_name": "North Star Health",
+  "dba": "Springfield Medical Care Systems",
+  "amount": "$350,291.42",
+  "amount_num": 350291.42
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Mental Health and community support integration into primary care teams",
+  "legal_name": "Northeastern Vermont Regional Hospital Inc",
+  "dba": "",
+  "amount": "$525,355.11",
+  "amount_num": 525355.11
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Mental Health and community support integration into primary care teams",
+  "legal_name": "Northwestern Medical Center",
+  "dba": "",
+  "amount": "$764,516.22",
+  "amount_num": 764516.22
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Mental Health and community support integration into primary care teams",
+  "legal_name": "Porter Hospital, Inc.",
+  "dba": "",
+  "amount": "$631,185.30",
+  "amount_num": 631185.3
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Mental Health and community support integration into primary care teams",
+  "legal_name": "Southwestern Vermont Medical Center, Inc.",
+  "dba": "",
+  "amount": "$535,793.76",
+  "amount_num": 535793.76
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Mental Health and community support integration into primary care teams",
+  "legal_name": "University of Vermont Medical Center",
+  "dba": "",
+  "amount": "$2,226,478.52",
+  "amount_num": 2226478.52
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Enhancing primary care-focused data and analytics infrastructure",
+  "legal_name": "Community Health Centers of the Rutland Region, Inc.",
+  "dba": "",
+  "amount": "$251,269.88",
+  "amount_num": 251269.88
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Enhancing primary care-focused data and analytics infrastructure",
+  "legal_name": "Essex Pediatrics, PC",
+  "dba": "",
+  "amount": "$184,880.88",
+  "amount_num": 184880.88
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Enhancing primary care-focused data and analytics infrastructure",
+  "legal_name": "Evergreen Family Health Group",
+  "dba": "",
+  "amount": "$202,162.85",
+  "amount_num": 202162.85
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Enhancing primary care-focused data and analytics infrastructure",
+  "legal_name": "Gifford Health Care, Inc.",
+  "dba": "",
+  "amount": "$279,916.51",
+  "amount_num": 279916.51
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Enhancing primary care-focused data and analytics infrastructure",
+  "legal_name": "Grace Cottage Hospital",
+  "dba": "",
+  "amount": "$276,871.24",
+  "amount_num": 276871.24
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Enhancing primary care-focused data and analytics infrastructure",
+  "legal_name": "Lakeside Pediatrics",
+  "dba": "",
+  "amount": "$91,047.46",
+  "amount_num": 91047.46
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Enhancing primary care-focused data and analytics infrastructure",
+  "legal_name": "Five Town Health Alliance",
+  "dba": "Mountain Community Health",
+  "amount": "$182,084.62",
+  "amount_num": 182084.62
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Enhancing primary care-focused data and analytics infrastructure",
+  "legal_name": "Northern Counties Health Care",
+  "dba": "",
+  "amount": "$178,314.11",
+  "amount_num": 178314.11
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Enhancing primary care-focused data and analytics infrastructure",
+  "legal_name": "Pediatric Medicine, PLC",
+  "dba": "",
+  "amount": "$199,526.30",
+  "amount_num": 199526.3
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Enhancing primary care-focused data and analytics infrastructure",
+  "legal_name": "Richmond Family Medicine, PLLC",
+  "dba": "",
+  "amount": "$123,600.85",
+  "amount_num": 123600.85
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Enhancing primary care-focused data and analytics infrastructure",
+  "legal_name": "Southwestern Vermont Medical Center, Inc.",
+  "dba": "",
+  "amount": "$127,798.58",
+  "amount_num": 127798.58
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Enhancing primary care-focused data and analytics infrastructure",
+  "legal_name": "New England Wellness Group",
+  "dba": "",
+  "amount": "$102,390.99",
+  "amount_num": 102390.99
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Enhancing primary care-focused data and analytics infrastructure",
+  "legal_name": "Tree of Life Medicine, LLC.",
+  "dba": "",
+  "amount": "$104,150.45",
+  "amount_num": 104150.45
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Expanding access to Federally Qualified Health Center (FQHC) primary care services",
+  "legal_name": "Northern Counties Health Care, Inc.",
+  "dba": "",
+  "amount": "$226,194.70",
+  "amount_num": 226194.7
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Expanding access to recovery housing for individuals with Substance Use Disorder (SUD) services",
+  "legal_name": "Jenna Tatro Memorial Fund, Inc.",
+  "dba": "Jenna\u2019s Promise",
+  "amount": "$122,711.50",
+  "amount_num": 122711.5
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Expanding access to recovery housing for individuals with Substance Use Disorder (SUD) services",
+  "legal_name": "Recovery House, Inc.",
+  "dba": "",
+  "amount": "$200,001.10",
+  "amount_num": 200001.1
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Expanding access to recovery housing for individuals with Substance Use Disorder (SUD) services",
+  "legal_name": "Turning Point Center of Bennington",
+  "dba": "",
+  "amount": "$200,001.10",
+  "amount_num": 200001.1
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Expanding access to recovery housing for individuals with Substance Use Disorder (SUD) services",
+  "legal_name": "Common Ground Recovery, Inc.",
+  "dba": "",
+  "amount": "$296,075.89",
+  "amount_num": 296075.89
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Expanding access to recovery housing for individuals with Substance Use Disorder (SUD) services",
+  "legal_name": "Dismas of Vermont, Inc. (Dismas House)",
+  "dba": "",
+  "amount": "$394,612.16",
+  "amount_num": 394612.16
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Expanding access to recovery housing for individuals with Substance Use Disorder (SUD) services",
+  "legal_name": "Kingdom Wellness Collaborative Company",
+  "dba": "Ben\u2019s House",
+  "amount": "$870,187.40",
+  "amount_num": 870187.4
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Expanding access to recovery housing for individuals with Substance Use Disorder (SUD) services",
+  "legal_name": "Turning Point Recovery Center of Springfield, Vermont, Inc.",
+  "dba": "",
+  "amount": "$220,115.34",
+  "amount_num": 220115.34
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Expanding access to recovery housing for individuals with Substance Use Disorder (SUD) services",
+  "legal_name": "United Way of Northwest Vermont, Inc.",
+  "dba": "",
+  "amount": "$194,250.96",
+  "amount_num": 194250.96
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Expanding access to recovery housing for individuals with Substance Use Disorder (SUD) services",
+  "legal_name": "Vermont Alliances for Recovery Residences, Inc.",
+  "dba": "",
+  "amount": "$1,801,000.00",
+  "amount_num": 1801000.0
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Expanding access to recovery housing for individuals with Substance Use Disorder (SUD) services",
+  "legal_name": "Vermont Foundation of Recovery, Inc.",
+  "dba": "",
+  "amount": "$3,482,543.12",
+  "amount_num": 3482543.12
+ },
+ {
+  "initiative": "Primary Care",
+  "activity": "Expanding access to recovery housing for individuals with Substance Use Disorder (SUD) services",
+  "legal_name": "Hope Grove",
+  "dba": "",
+  "amount": "$200,001.10",
+  "amount_num": 200001.1
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Expand access to Licensed Nursing Assistant (LNA) training programs",
+  "legal_name": "Brattleboro Development Credit Corp",
+  "dba": "",
+  "amount": "$150,389.72",
+  "amount_num": 150389.72
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Expand access to Licensed Nursing Assistant (LNA) training programs",
+  "legal_name": "Hartford Town School District",
+  "dba": "",
+  "amount": "$297,314.00",
+  "amount_num": 297314.0
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Expand access to Licensed Nursing Assistant (LNA) training programs",
+  "legal_name": "Northeastern Vermont Regional Hospital Inc",
+  "dba": "",
+  "amount": "$210,371.21",
+  "amount_num": 210371.21
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Expand access to Licensed Nursing Assistant (LNA) training programs",
+  "legal_name": "Vermont State Colleges",
+  "dba": "",
+  "amount": "$790,450.54",
+  "amount_num": 790450.54
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Workforce development tuition assistance program",
+  "legal_name": "Behavioral Health Network of Vermont",
+  "dba": "Vermont Care Network",
+  "amount": "$641,188.78",
+  "amount_num": 641188.78
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Establish the Maple Mountain Consortium Family Medicine Residency Program",
+  "legal_name": "Maple Mountain Vermont",
+  "dba": "",
+  "amount": "$571,907.35",
+  "amount_num": 571907.35
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Expand pharmacists\u2019 scope to include test-to-treat in more scenarios",
+  "legal_name": "Little Rivers Health Care, Inc.",
+  "dba": "",
+  "amount": "$90,340.00",
+  "amount_num": 90340.0
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Expand pharmacists\u2019 scope to include test-to-treat in more scenarios",
+  "legal_name": "KPH Healthcare Services Inc.",
+  "dba": "Kinney Drugs",
+  "amount": "$8,649,920.00",
+  "amount_num": 8649920.0
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Health care workforce conditional financial assistance program",
+  "legal_name": "Vermont Student Assistance Corporation",
+  "dba": "",
+  "amount": "$9,059,785.00",
+  "amount_num": 9059785.0
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Health care professions mentorship program",
+  "legal_name": "Northern Counties Health Care",
+  "dba": "Caledonia Home Health Care and Hospice",
+  "amount": "$408,400.02",
+  "amount_num": 408400.02
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Health care professions mentorship program",
+  "legal_name": "Central Vermont Home Health & Hospice",
+  "dba": "",
+  "amount": "$366,841.44",
+  "amount_num": 366841.44
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Health care professions mentorship program",
+  "legal_name": "Dartmouth Health Home Care, Inc. *",
+  "dba": "",
+  "amount": "$1,101,645.00",
+  "amount_num": 1101645.0
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Health care professions mentorship program",
+  "legal_name": "Lamoille Home Health & Hospice",
+  "dba": "",
+  "amount": "$372,430.42",
+  "amount_num": 372430.42
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Health care professions mentorship program",
+  "legal_name": "VNA & Hospice of the Southwest Region, Inc.",
+  "dba": "",
+  "amount": "$1,478,711.17",
+  "amount_num": 1478711.17
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Health care professions mentorship program",
+  "legal_name": "Grace Cottage Family Health and Hospital",
+  "dba": "",
+  "amount": "$347,098.83",
+  "amount_num": 347098.83
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Health care professions mentorship program",
+  "legal_name": "Northwestern Medical Center",
+  "dba": "",
+  "amount": "$422,807.85",
+  "amount_num": 422807.85
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Health care professions mentorship program",
+  "legal_name": "Gifford Medical Center",
+  "dba": "",
+  "amount": "$172,500.00",
+  "amount_num": 172500.0
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Health care professions mentorship program",
+  "legal_name": "Springfield Hospital",
+  "dba": "",
+  "amount": "$348,593.75",
+  "amount_num": 348593.75
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Health care professions mentorship program",
+  "legal_name": "Southwestern Vermont Medical Center, Inc.",
+  "dba": "",
+  "amount": "$214,896.76",
+  "amount_num": 214896.76
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Health care professions mentorship program",
+  "legal_name": "Brattleboro Retreat",
+  "dba": "",
+  "amount": "$324,233.04",
+  "amount_num": 324233.04
+ },
+ {
+  "initiative": "Workforce Development",
+  "activity": "Health care professions mentorship program",
+  "legal_name": "University of Vermont Health - Home Health & Hospice",
+  "dba": "",
+  "amount": "$645,824.30",
+  "amount_num": 645824.3
+ },
+ {
+  "initiative": "*RHT funding is specific to services and activities benefiting Vermont patients and, in some cases, includes partnerships with Vermont-based health care providers or other organizations.",
+  "activity": "$182,154,948.14",
+  "legal_name": null,
+  "dba": null,
+  "amount": null,
+  "amount_num": null
+ }
+]

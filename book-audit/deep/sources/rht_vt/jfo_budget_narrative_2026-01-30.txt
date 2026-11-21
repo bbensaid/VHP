@@ -1,0 +1,697 @@
+ 
+1 
+Vermont Rural Health Transformation Program Budget Narrative 
+Revised January 30, 2026  
+ 
+I. Introduction 
+This Budget Narrative accompanies Vermont’s Rural Health Transformation (RHT) Program application and supports the information 
+presented in Standard Form SF-424A. It provides a detailed explanation and justification for each budget line item included across the period 
+of performance [Fiscal Year (FY) 2026]. Vermont certifies that all costs in this Budget Narrative are reasonable, allowable, allocable, and 
+necessary to achieve the goals and objectives of the RHT Program. All costs are also consistent with 2 CFR 200 and CMS program guidance. 
+ 
+• Administrative Expenses: Administrative expenses, inclusive of direct and indirect costs total approximately 4% percent of the 
+overall budget ($4,105,486.76 of $195,053,740.44). Costs include Categories A, B, C, D, E, G and J in Table 1 as well as the cost of 
+the independent evaluator. 
+• Principal Investigator / Program Director: Jill Olson, Medicaid Director, jill.olson@vermont.gov (interim) 
+• Indirect Cost Approach: The Agency of Human Services (AHS) has an approved cost allocation plan. Please see the Indirect Cost 
+Agreement for more information. 
+ 
+II. Budget Summary 
+Vermont's RHT Program budget is $195,053,740.44. Direct costs total $194,737,461.71 and indirect costs total $316,278.73. 
+ 
+Table 1. Vermont RHT Program Budget Summary 
+Cost Category FY26 
+A. Personnel $1,273,023.01 
+B. Fringe Benefits $1,098,729.51 
+C. Travel $16,795.50 
+D. Equipment $0.00 
+E. Supplies $50,660.00 
+F. Subrecipients/ Consultants/ Contracts $191,948,253.69 
+G. Other $350,000.00 
+Total Direct Costs $194,737,461.71 
+J. Indirect Costs $316,278.73 
+Total Project Costs $195,053,740.44 
+ 
+ 
+ 
+ 
+2 
+Table 2. Vermont RHT Program Administrative Budget Summary 
+Cost Category FY26 
+10% Administrative Cost Limit $19,505,374.04 
+Total Administrative Cost $4,105,486.76 
+Under/(Over) $15,399,887.30 
+ 
+III. Personnel 
+Vermont’s RHT Program budgets for personnel costs related to state staff necessary to implement each proposed initiative. Vermont’s RHT 
+Program budgets $1,273,023.01 for personnel for FY 26. The project budgets a pay scale for personnel, including a 3% increase following the 
+probationary period and annually for new staff (indicated by a *) and a 3% increase annually for current staff (indicated by a **).  
+ 
+Table 3. Vermont RHT Program Personnel Budget Summary 
+Position Title Description Initiative Position Status 
+Annual 
+Salary 
+Full 
+Time 
+Equivale
+nt (level 
+of effort) 
+FY26 
+Total Cost 
+HCR Integration 
+Manager 
+Project Director to oversee all RHT 
+Program activities. 
+Split evenly across all New – Limited 
+Service; Vacant $93,870.40* 100% $80,572.09 
+Admin Services 
+Director III 
+Deputy Project Director to help oversee 
+all RHT Program activities. 
+Split evenly across all Current employee $92,123.20** 100% $79,072.41 
+Director of Health 
+Care Workforce 
+Oversee the implementation and 
+execution of all Health Care Workforce 
+Development Director projects/activities 
+Split evenly across all Current employee 
+$89,752.00** 100% $77,037.13 
+Admin Services 
+Director II 
+Responsible for overseeing the 
+management and execution of RHT 
+transformation grants 
+(Planning/TA/Consultation)  
+Split evenly across all New – Limited 
+Service; Vacant $64,313.60* 100% $55,202.51 
+Admin Services 
+Director I 
+Responsible for overseeing the 
+management and execution of RHT 
+transformation grants 
+Split evenly across all Current employee 
+$102,128.00** 100% $87,659.87 
+Blueprint Payment 
+Ops Admin 
+Project administrator position to oversee 
+Blueprint and transformation 
+Split evenly across all New – Limited 
+Service; Vacant $72,716.80* 100% $62,415.25 
+Health Care Project 
+Director 
+Responsible for overseeing the 
+management and execution of RHT 
+Technology and Shared Services Grants 
+Split evenly across all New – Limited 
+Service; Vacant $87,900.80* 100% $75,448.19 
+Financial Manager 
+II 
+Responsible for overseeing and tracking 
+all RHT expenditures 
+Split evenly across all New – Limited 
+Service; Vacant $57,200.00* 100% $49,096.67 
+ 
+3 
+Administrative 
+Srvcs Mngr I 
+Responsible for overseeing the 
+management and execution of RHT 
+grants 
+Split evenly across all Existing - Vacant 
+$64,313.60* 50% $27,601.25 
+Administrative 
+Srvcs Mngr III 
+Responsible for overseeing the 
+management and execution of RHT 
+contracts 
+Split evenly across all Current employee 
+$98,945.60** 50% $42,464.15 
+Financial Manager I Responsible for overseeing and tracking 
+the RHT grant expenditures 
+Regionalization New – Limited 
+Service; Vacant $64,313.60* 100% $55,202.51 
+Administrative 
+Services Director II 
+Support the Regionalization 
+Administrative Services Director in 
+overseeing the implementation and 
+execution of projects/activities   
+Regionalization New – Limited 
+Service; Vacant $77,084.80* 100% $66,164.45 
+Health Care Project 
+Director 
+Oversee the implementation and 
+execution of all Regionalization 
+projects/activities   
+Regionalization New – Limited 
+Service; Vacant $86,403.20* 100% $74,162.75 
+Administrative 
+Services Manager I 
+Support the Grant Program Manager in 
+the management, coordination and 
+execution of grants in relation to RHT 
+program 
+Workforce Development 
+and Regionalization 
+New – Limited 
+Service; Vacant $64,313.60* 100% $55,202.51 
+Business Project 
+Manager 
+Project manages key initiatives including 
+budget, workplans, partner engagement, 
+data analysis, and report writing. 
+Workforce Development 
+and Regionalization 
+New – Limited 
+Service; Vacant $68,369.60* 100% $58,683.91 
+Administrative 
+Services Manager I 
+Support the Grant Program Manager in 
+the management, coordination and 
+execution of grants in relation to RHT 
+program 
+Primary Care New – Limited 
+Service; Vacant $77,084.80* 100% $66,164.45 
+Public Health 
+Program Manager I 
+Responsible for the implementation and 
+ongoing management of the Mobile 
+Integrated Healthcare (MIH) program as 
+part of the RHTP. Regionalization Existing - Vacant 
+$64,313.60* 100% $55,202.51 
+Public Health 
+Specialist III 
+Support the research, development, 
+implementation of statewide education 
+and training strategy for EMS personnel 
+and education staff, including consistent 
+data entry practices and procedures. Regionalization 
+New – Limited 
+Service; Vacant 
+$60,632.00* 100% $52,042.47 
+Public Health 
+Program Manager I 
+Support RHTP grants management and 
+oversight for Recovery Housing. Primary Care 
+New – Limited 
+Service; Vacant $64,313.60* 100% $55,202.51 
+Public Health 
+Programs 
+Administrator 
+Support RHTP grants management and 
+oversight for healthcare workforce 
+educational programs. Workforce Existing - Vacant 
+$60,632.00* 100% $52,042.47 
+ 
+4 
+Financial 
+Administrator I 
+Performs accounting work, maintaining, 
+reviewing, and reconciling financial 
+records to ensure compliance with GAAP 
+(Generally Accepted Accounting 
+Principles). Split evenly across all 
+New – Limited 
+Service; Vacant 
+$54,038.40* 100% $46,382.96 
+Personnel Total $1,273,023.01 
+ 
+IV. Fringe Benefits 
+Vermont’s RHT Program budgets $1,098,729.51 for fringe benefits for FY 26. Vermont’s RHT Program budget includes fringe benefits for 
+project personnel. A fringe rate of 28.8% is applied to annual salary to fund the employee's participation in the state Retirement Plan, and a 
+fringe rate of 7.65% is applied to annual salary for the employer's share of Medicare and Social Security contributions. A fringe rate of 0.43% 
+is applied to annual salary to fund the employee's participation in a life insurance program, and a fringe rate of 0.17% is applied to annual 
+salary to fund the employee's participation in a long-term disability program.  
+ 
+A flat rate of $28,479 per employee (average) covers the employer's share of health insurance coverage for the employee and their family, and 
+a flat rate of $853 per employee covers the cost of a dental insurance policy for the employee and their dependents. A flat rate of $37 per 
+employee covers the costs for an Employee Assistance Program which is available to the employee at no cost if the individual or members of 
+their household need help and support for a wide range of issues such as anxiety/depression, stress, financial issues, daycare and elder care 
+resources, etc.  
+ 
+A fringe rate of 0.44% is applied to annual salary for the statewide payroll tax that funds the Child Care and Parental Leave Contribution 
+Fund. A fringe rate of 0.3711% is applied to annual salary to fund participation in a Family Medical Leave Insurance program that provides 
+partial income replacement during leave due to the need to take care of a family member with a serious health condition, bond with a new 
+child, tend to their own serious health condition, provide care for a military service member's serious injury or illness, or address certain needs 
+related to a family member's covered active military duty or call to active duty. 
+ 
+Table 4. Vermont RHT Program Fringe Benefits Budget Summary  
+Benefit/Component Benefit Rate Salaries/ Wages FY26 
+Retirement 28.80% $1,184,872.17 $366,630.63 
+Social Security & Medicare 7.65% $1,184,872.17 $97,386.26 
+Group Life 0.43% $1,184,872.17 $5,474.00 
+Long-Term Disability 0.17% $1,184,872.17 $2,164.14 
+Health Insurance Flat Rate ($28,479) $1,184,872.17 $598,059.00 
+Dental Flat Rate ($853) $1,184,872.17 $17,913.00 
+Employee Assistance Program Flat Rate ($37) $1,184,872.17 $777.00 
+Child Care 0.44% $1,184,872.17 $5,601.30 
+Family Medical Leave Insurance 0.3711% $1,184,872.17 $4,724.19 
+Fringe Totals 
+  
+$1,098,729.51 
+ 
+ 
+5 
+V. Travel 
+Vermont’s RHT Program budgets $16,795.50 for travel for FY 26. Vermont's RHT Program budgets for state staff travel costs for select 
+initiatives related to local activities, such as attending regional workshops, conducting site visits, supporting trainings, holding convenings, 
+and onboarding partners.  
+ 
+Table 5. Vermont RHT Program Travel Budget Summary 
+Purpose of Travel Initiative Location 
+Expense 
+Item Cost Amount FY26 
+CMS Quality Conference RHTG Kick Off Baltimore, Maryland Airfare $427.00 x 3 $1,281.00 $1,281.00 
+CMS Quality Conference RHTG Kick Off Baltimore, Maryland Hotel $490.50 x 3 $1,471.50 $1,471.50 
+CMS Quality Conference RHTG Kick Off Baltimore, Maryland Per Diem 
+(Meals) 
+$301.00 x 3 $903.00 $903.00 
+CMS Quality Conference RHTG Kick Off Baltimore, Maryland Baggage $80.00 x 3 $240.00 $240.00 
+CMS Quality Conference RHTG Kick Off Baltimore, Maryland Cab $100.00 x 3 $300.00 $300.00 
+Local Travel - Regional Workshops and Site Visits Regionalization Statewide Mileage $.70/mi $3,000.00 $2,100.00 
+Local Travel - Regional Stakeholder Meetings Regionalization Statewide Mileage $.70/mi $3,000.00 $2,100.00 
+Local Travel - Partner Onboarding and Implementation 
+Sessions 
+Shared Services Statewide Mileage $.70/mi $3,000.00 $2,100.00 
+Local Travel - Site Visits, Practice Engagements Shared Services Statewide Mileage $.70/mi $3,000.00 $2,100.00 
+Local Travel - Site Visits, Trainings, Statewide convenings Primary Care Statewide Mileage $.70/mi $10,000.00 $2,100.00 
+Local Travel - Site Visit Workforce 
+Development 
+Statewide Mileage $.70/mi $3,000.00 $2,100.00 
+Travel Totals $16,795.50 
+ 
+VI. Equipment 
+Vermont’s RHT Program does not include any state equipment purchases outside of Vermont's RHT Program initiatives. Equipment costs 
+related to each initiative are described in Section VIII. 
+ 
+VII. Supplies 
+Vermont’s RHT Program budgets $50,660.00 for supplies for FY 26. Vermont’s RHT Program will require the purchase of a computer, 
+monitor, software, licenses, and cell phone for new personnel to perform project-related activities. The computers will be used solely for 
+project-related purposes, such as preparing grant documents and disseminating project information to the public. Cell phones will also be used 
+solely for project-related purposes, such as participation in conference calls and communication with providers, contractors, and awardees. A 
+cell phone is being issues to support activities under a hybrid work environment. Prices are consistent with other AHS purchases.  
+ 
+ 
+ 
+6 
+Table 6. Vermont RHT Program Supplies Budget Summary 
+Item Rate Quantity FY26 
+Computer and Monitor  $1,977.00 17 $33,609.00 
+G3 License (Full Microsoft License) $349.00 17 $5,933.00 
+Audio Conferencing $102.00 17 $1,734.00 
+Adobe Document Cloud $72.00 17 $1,224.00 
+Cell phone $480.00 17 $8,160.00 
+Supplies Total: $50,660.00 
+ 
+VIII. Budgets across Sub Recipients, Consultants, and Contracts 
+Vermont’s RHT Program budgets $191,948,253.69 for subrecipients, consultants, and contractors across the five initiatives for FY 26.  
+ 
+The State of Vermont will select contractors for these RHT Program activities in accordance with the State's standard procurement 
+requirements outlined in Administrative Bulletin 3.5. For each contract, the State will issue a competitive solicitation, through a formal 
+Request for Proposals. Please see the Business Assessment, Section H. Procurement for additional details.   
+  
+Proposals will be reviewed by an evaluation committee using consistent criteria, including: 1) the bidder’s technical approach and 
+methodology; 2) relevant experience and subject matter expertise; 3) organizational capacity and staffing; 4) demonstrated understanding of 
+Vermont’s health-system environment; 5) cost proposal and overall value; and 6) ability to meet data privacy, security, and compliance 
+requirements.  
+ 
+Contractors will be selected based on best value to the State, and all procurement steps including solicitation, evaluation, and award 
+justification will be fully documented to ensure transparency, fairness, and adherence to state and federal requirements. 
+ 
+Table 7. Vermont RHT Program Budget Summary for Subrecipients, Consultants, and Contracts 
+Subrecipients Budget Summary 
+Subrecipients Initiative FY26 
+#1 Community paramedicine/Mobile Integrated Health model Regionalization $5,370,000.00 
+#2 Facility upgrades to support regionalization  Regionalization $21,500,000.00 
+#3 Mental health and substance use urgent care expansion Regionalization $2,050,000.00 
+#4 Transformation, innovation, and regionalization support grants Regionalization $26,923,183.69 
+#5 Medical mobile units Regionalization $1,940,000.00 
+#6 Dental mobile units Regionalization $732,570.00 
+#7 Improve availability and access to high acuity services for nursing home residents, 
+including dialysis services and ventilators 
+Regionalization $1,450,000.00 
+#8 Shared Human Resources Information System (HRIS) System Shared Services $1,502,000.00 
+ 
+7 
+#9 Adoption of a shared Electronic Medical Record (EMR) platform Shared Services $17,250,000.00 
+#10 Statewide e-consult expansion and workforce capacity building Shared Services $2,300,000.00 
+#11 Grants to providers to adopt remote patient monitoring (RPM) Shared Services $900,000.00 
+#12 Grant to providers to adopt telehealth technology Shared Services $8,000,000.00 
+#13 Grants to providers to adopt AI transcription/scribe technology Shared Services $1,030,000.00 
+#14 Enhanced capacity for team-based care Primary Care $18,000,000.00 
+#15 Mental health (MH) and community support integration into primary care teams Primary Care $600,000.00 
+#16 Blueprint transformation network capacity Primary Care $1,800,000.00 
+#17 Workforce support and system integration development Primary Care $1,200,000.00 
+#18 Primary care-focused data and analytics infrastructure Primary Care $1,160,000.00 
+#19 Expand access to Federally Qualified Health Center (FQHC) primary care services Primary Care $1,800,000.00 
+#20 Incentivize access to primary care Primary Care $15,000,000.00 
+#21 Specialty and primary care performance payments Primary Care $15,000,000.00 
+#22 Recovery housing for individuals with SUD needs Primary Care $8,000,000.00 
+#23 Licensed Nursing Assistant training programs Workforce Development $810,000.00 
+#24 Health care workforce development tuition assistance program  Workforce Development $811,000.00 
+#25 “Critical occupations” no-cost tuition program  Workforce Development $934,500.00 
+#26 Maple Mountain Rural Residency Program Workforce Development $985,000 00 
+#27 Expand pharmacists’ scope to include test-to-treat in more scenarios   Workforce Development $1,070,000.00 
+#28 Health care workforce conditional financial assistance program Workforce Development $4,812,500.00 
+#29 Health care professions residency program Workforce Development $4,000,000.00 
+Subrecipient Totals:  $166,930,753.69 
+  
+Consultants Initiative FY26 
+#1 Development of a statewide health care delivery strategic plan Regionalization $2,527,500.00 
+#2 Statewide assessment of options to improve health coverage affordability Price Transparency and Insurance Competition $500,000.00 
+Consultant Totals: $3,027,500.00 
+  
+Contracts Initiative FY26 
+#1 Independent evaluator Evaluator $1,000,000.00 
+#2 Transformation analytics and support Regionalization $15,000,000.00 
+#3 Centralized tool to guide interfacility transfers Shared Services $2,900,000.00 
+#4 Statewide closed loop referral system Shared Services $455,000.00 
+#5 Statewide health care data platform modernization and transparency project Price Transparency and Insurance Competition $2,635,000.00 
+Contract Totals: $21,990,000.00 
+Combined Subrecipient, Consultant, and Contract Totals:  $192,948,253.69 
+ 
+8 
+Budget Summary for Subrecipients 
+Vermont’s RHT Program budgets $166,930,753.69 for subrecipients for FY 26. Specific subrecipients for the state’s RHT Program initiatives 
+and associated projects are in most cases yet to be determined (with the exception of #27, Establish Maple Mountain Rural Residency 
+Program), and AHS will initiate a competitive award process per State of Vermont policy (see description above). The scope of work for each 
+subrecipient will vary and is described in the Project Narrative. AHS will execute a subrecipient(s) agreement with one or more selected 
+subrecipient(s), and a financial workbook must be submitted to and approved by AHS prior to issues. The agreements(s) will be monitored by 
+an AHS Project Director, and AHS will provide updates once subrecipient(s) have been selected and price schedules are successfully 
+negotiated. 
+ 
+Table 8. Vermont RHT Program Budget Summary of Subrecipients 
+Category FY26 Line Item Budget Narrative 
+#1 Community paramedicine/Mobile Integrated Health model 
+Travel  $150,000.00 Site visits, Learning Collaborative meetings, trainings & materials, regional coordination, educational content, & protocol 
+distribution 
+Supplies  $100,000.00 Emergency Medical Services (EMS)–hospital partnership contracts, training delivery, ImageTrend integration, evaluation, 
+technical assistance, & payment model development 
+Contractual $5,100,000.00 Grants for medical kits, telehealth devices, mobile care units, & minor facility modifications for EMS training & date 
+connectivity tools for EMS partners 
+Other $20,000.00 Stakeholder engagement & communications 
+Totals $5,370,000.00 
+ 
+ 
+#2 Facility upgrades to support regionalization 
+Contractual $21,500,000.00 Minor physical renovations and refurbishments (repairs, accessibility enhancements, & improvements for specialized 
+equipment or technology accommodations) 
+Totals $21,500,000.00 
+ 
+ 
+#3 Mental health and substance use urgent care expansion 
+Travel $70,000.00 Site visits, peer learning collaboratives, & staff training 
+Supplies $130,000.00 Clinical supplies, personal protective equipment, testing kits, & medications 
+Contractual $1,650,000.00 Sub-awards to community partners for operations (includes furniture, diagnostic/ telehealth tools, computers, security), 
+minor facility retrofits, Americans with Disabilities Act upgrades, information technology (IT) wiring, & minor internal 
+space reconfiguration 
+Other $200,000.00 Outreach, communications, licensing, insurance, & community stipends 
+Totals $2,050,000.00 
+ 
+ 
+ 
+ 
+ 
+ 
+9 
+#4 Transformation, innovation, and regionalization support grants 
+Contractual $26,923,183.69 Grants to hospitals/regional partners to support plan development, stakeholder engagement & implementation of innovative 
+care models 
+Totals $26,923,183.69 
+ 
+ 
+#5 Medical mobile units 
+Travel $50,000.00 Fuel and tolls 
+Equipment $150,000.00 Outfitting of mobile units 
+Supplies $250,000.00 Clinical supplies 
+Contractual $1,500,000.00 Purchase of mobile units 
+Other $20,000.00 Community engagement & marketing 
+Totals $1,940,000.00 
+ 
+ 
+#6 Dental mobile units 
+Travel $12,000.00 Fuel and tolls 
+Equipment $30,000.00 Outfitting of mobile units 
+Supplies $15,000.00 Clinical supplies 
+Contractual $655,570.00 Purchase of mobile units 
+Other $20,000.00 Community engagement & marketing 
+Totals $732,570.00 
+ 
+ 
+#7 Improve availability and access to high-acuity services for nursing home residents including dialysis services and ventilators 
+Contractual $1,450,000.00 Vendor planning support for site readiness assessment & installation contracting, grants for purchase & installation of 
+dialysis & ventilator equipment, minor site modifications, plumbing, & electrical upgrades to support new equipment 
+Totals $1,450,000.00 
+ 
+ 
+#8 Shared HRIS System 
+Supplies $5,000.00 Software licenses, printing, & training materials 
+Contractual $1,485,000.00 Consulting support, software purchase, configuration, data migration, integration, maintenance, grants for servers, IT 
+hardware, & security infrastructure for system hosting & backup 
+Other $12,000.00 System optimization & user satisfaction reporting 
+Totals $1,502,000.00 
+ 
+ 
+#9 Adoption of a shared EMR platform 
+Personnel $700,000.00 New, core staff (IT, cybersecurity, project management, training). 
+Fringe Benefit $200,000.00 ~25% of personnel costs 
+Travel $250,000.00 Partner site visits, vendor coordination, training travel, & conferences 
+Supplies $300,000.00 Software supplies, licenses, training materials, & small tech peripherals. 
+ 
+10 
+Contractual $15,700,000.00 Vendor implementation consulting, electronic health record licensing, workflow redesign, training, data conversion, 
+hardware, servers, cybersecurity infrastructure, network integration/interoperability tools, minor renovations & wiring 
+upgrades (≤10% of total) for secure server and data center spaces 
+Other $100,000.00 Outreach & stakeholder engagement 
+Totals $17,250,000.00  
+ 
+#10 Statewide e-consult expansion and workforce capacity building 
+Contractual $2,300,000.00 Vendor support for e-consult expansion and workforce capacity building; program & technical support for acute specialty 
+consults, eConsult buildout & maintenance, net platform cost; training and resources development 
+Totals $2,300,000.00 
+ 
+ 
+#11 Grants to providers to adopt RPM 
+Contractual $900,000.00 Grants to purchase RPM equipment, includes direct sub-grants to primary care practices for RPM equipment, software, and 
+integration support (~$20-25 K per grantee) 
+Totals $900,000.00 
+ 
+ 
+#12 Grant to providers to adopt telehealth technology 
+Contractual $8,000,000.00 Sub-grants for telehealth carts, cameras, secure routers, & EMR integration tools (~$25–30 K per grantee), payment for 
+technical assistance & implementation vendor contracts for setup assistance, cybersecurity training, & billing compliance 
+support 
+Totals $8,000,000.00  
+. 
+#13 Grants to providers to adopt AI transcription/scribe technology 
+Contractual $1,000,000.00 Provider training materials, communication resources, & outreach 
+Other $30,000.00  AI scribe licensing, implementation, cybersecurity protections, & workflow integration 
+Totals $1,030,000.00  
+ 
+#14 Enhanced capacity for team-based care 
+Contractual $18,000,000.00 Capacity building payments to improve team-based care model implementation to support care coordination & chronic 
+condition management/counseling 
+Totals $18,000,000.00  
+ 
+#15 MH and community support integration into primary care teams 
+Equipment $75,000.00 Outfitting of sites for integration efforts 
+Supplies $75,000.00 Screening tools, educational materials, & patient engagement resources 
+Contractual $450,000.00 Supervision and partnerships with mental health centers and social service organizations, laptops, telehealth peripherals, 
+remote work technology, minor space modifications & technology infrastructure at primary care sites 
+Totals $600,000.00  
+ 
+ 
+11 
+#16 Blueprint transformation network capacity 
+Contractual $1,800,000.00 Support of network capacity building for team-based care model enhancements (technical assistance, training, practice 
+supports to adopt new standards, etc.) 
+Totals $1,800,000.00  
+ 
+#17 Workforce support and system integration development 
+Contractual $1,200,000.00 Vendor support to build workforce competency, tools development for patient/ family engagement, referral/consultation 
+workflows systems improvements, & bilateral communication mechanisms (focusing on orientation, training, policies and 
+procedures, data/information flows, assessments, etc.) 
+Totals $1,200,000.00  
+ 
+#18 Primary care-focused data and analytics infrastructure 
+Travel $20,000.00 Provider outreach, training & integration support 
+Supplies $25,000.00 Software subscriptions, training materials, & user support tools 
+Contractual $1,115,000.00 Vendor contracts for quality measurement/improvement, risk stratification, referral tracking, data system integration and 
+maintenance, servers, data storage, & secure hosting upgrades 
+Totals $1,160,000.00  
+ 
+#19 Expand access to federally qualified health center primary care services 
+Contractual $1,800,000.00 Minor infrastructure and equipment upgrades to enable expansion of federally qualified health center sites; formal 
+onboarding and training of staff; IT investments; costs related to health data information transfer and community engagement 
+and public relations activities 
+Totals $1,800,000.00   
+ 
+#20 Incentivize access to primary care 
+Contractual $15,000,000.00 Payment to providers in return for adopting the state’s primary care access requirements 
+Totals $15,000,000.00  
+ 
+#21 Specialty and primary care performance payments 
+Contractual $15,000,000.00 Payment to providers for participation in and outcomes related to performance payments 
+Totals $15,000,000.00 
+ 
+ 
+#22 Recovery housing for individuals with SUD needs 
+Contractual $8,000,000.00 Vendor grant payments for minor renovations & refurbishments to existing housing; and operating expenses not otherwise 
+covered by health insurance 
+Totals $8,000,000.00  
+ 
+#23 Licensed Nursing Assistant training programs 
+Supplies $25,000.00 Course materials, student uniforms, textbooks, & exam fees 
+ 
+12 
+Contractual $775,000.00 Grants for tuition support, stipends, hybrid class partnerships, centralized instruction, clinical placements, lab equipment, 
+minor renovations & IT upgrades 
+Other $10,000.00 Community outreach & communications 
+Totals $810,000.00  
+ 
+#24 Health care workforce development tuition assistance program 
+Supplies $10,000.00 Course materials, textbooks, printing costs 
+Contractual $800,000.00 Grants for renewals of licensing, exam fees, continuing education units, & retention/recruitment stipends 
+Other $1,000.00 Recognition events for participating agencies 
+Totals $811,000.00 
+ 
+ 
+#25 “Critical occupations” no-cost tuition program 
+Contractual $932,500.00 Financial incentives for students pursuing critical health and human services occupations 
+Other $2,000.00 Community communications & marketing 
+Totals $934,500.00 
+ 
+ 
+#26 Maple Mountain Rural Residency Program 
+Personnel $400,000.00 New director, faculty preceptors, coordinators, and teaching staff 
+Fringe Benefit $100,000.00 25% of personnel costs, including benefits for residents and faculty 
+Travel $25,000.00 Recruitment, conferences, & rural site travel 
+Supplies $25,000.00 Education materials, clinical supplies, accreditation fees 
+Contractual $425,000.00 Stipends & benefits (~$81K/resident/year), academic partnerships, rotation site payments, grants for simulation technology & 
+affiliated training costs [assumes resident stipend increases at 3% inflation rate each year and that the program's first class of 
+residents starts in July 2026 (4 residents per class)] 
+Other $10,000.00 Accreditation renewals & community outreach 
+Totals $985,000.00 
+ 
+ 
+#27 Expand pharmacists’ scope to include test-to-treat in more scenarios 
+Contractual $1,070,000.00 Renovation of 25 pharmacy spaces, training, recruitment stipends, diagnostic devices, reimbursement model redesign, 
+EMR/IT integration, & telehealth waiver tools 
+Totals $1,070,000.00  
+ 
+#28 Health care workforce conditional financial assistance program 
+Contractual $4,812,500.00 Financial assistance/incentives for qualifying students/clinicians, contingent on program completion 
+Totals $4,812,500.00 
+ 
+ 
+#29 Health care professions residency program 
+Personnel $1,000,000.00 New director, preceptors and residents 
+Fringe Benefit $250,000.00 25% of personnel costs, including benefits   
+ 
+13 
+Travel $30,000.00 Recruitment, conferences, & rural site travel 
+Supplies $10,000.00 Education and training materials and laptops 
+Contractual $2,700,000.00 Minor office space upgrades, IT support purchases, development of preceptor support structures and curriculum; coordination 
+of peer learning and support groups; program reporting 
+Other $10,000.00 Communications & marketing 
+Totals $4,000,000.00  
+ 
+Budget Summary for Consultants 
+Vermont’s RHT Program budgets $3,027,500.00 for consultants for FY 26. Specific consultants for these projects are yet to be determined, 
+and AHS will initiate a competitive procurement process per State of Vermont policy (see description above). One or more contracts may be 
+awarded depending on the consultant’s expertise, and the period of performance is FY26. The scope of work for each consultant will vary by 
+project. AHS will execute a contract with one or more selected consultant(s) that includes a clear price schedule and/or fixed price 
+deliverables. The contract(s) will be monitored by an AHS Project Director, and AHS will provide updates once consultant(s) has been 
+selected and price schedules have been successfully negotiated. 
+ 
+Table 9. Budget Summary of Consultants 
+Category FY26 Line Item Budget Narrative 
+#1 Development of a statewide health care delivery strategic plan 
+Contractual $2,527,500.00 Consultant development of strategic plan  
+Totals $2,527,500.00 
+ 
+#2 Statewide assessment of options to improve health coverage affordability 
+Contractual $500,000.00 Consultant support of technical analysis, waiver application preparation, exploration of Vermont Premium Assistance 
+adjustments 
+Totals $500,000.00 
+ 
+ 
+Budget Summary for Contracts 
+Vermont’s RHT Program budgets $21,990,000.00 for contracts for FY 26. Specific contractors for these projects is yet to be determined, and 
+AHS will initiate a competitive procurement process per State of Vermont policy (see description above). One or more contracts may be 
+awarded depending on the contractor's expertise, and the period of performance is FY26. The scope of work for each contract varies by 
+contract. AHS will execute a contract with one or more selected contractor(s) that includes a clear price schedule and/or fixed price 
+deliverables. The contract(s) will be monitored by an AHS Project Director, and AHS will provide updates once contractor(s) has been 
+selected and price schedules have been successfully negotiated. 
+ 
+ 
+14 
+Table 10. Budget Summary of Contracts 
+Category FY26 Line Item Budget Narrative 
+#1 Independent evaluator 
+Contractual $1,000,000.00 Evaluation activities, to include quality measurement collection and reporting 
+Totals $1,000,000.00 
+ 
+ 
+#2 Transformation analytics and support 
+Contractual $15,000,000.00 Modeling to assess impacts of reforms, on-site transformation support, & other supports aligned with request for proposal. 
+The state may require the vendor(s) to provide project management or other transformation support to the other Initiatives in 
+this application, as needed. 
+Totals $15,000,000.00 
+ 
+ 
+#3 Centralized tool to guide interfacility transfers 
+Personnel $700,000.00 New, core staff (≈6–8 FTEs) for coordination, data analytics, technical assistance (TA), & IT support 
+Fringe Benefit $175,000.00 ~25% of personnel costs 
+Travel $75,000.00 Site visits, training, & regional meetings 
+Supplies $50,000.00 Software licenses, subscriptions, & training materials 
+Contractual $1,850,000.00 Development of online platforms, system integration, cybersecurity & TA; hardware, secure hosting, network monitoring, 
+software setup, & minor upgrades for secure coordination hub 
+Other $50,000.00 Outreach & communications 
+Totals $2,900,000.00 
+ 
+ 
+#4 Statewide closed loop referral system 
+Travel $15,000.00 Outreach, provider engagement & user trainings 
+Supplies $10,000.00 Software licenses, training materials & communication resources  
+Contractual $425,000.00 Vendor software development, statewide implementation, electronic health record integration, referral tracking maintenance, 
+hardware, connectivity upgrades, & secure hosting environments 
+Other $5,000.00 Reporting to measure rates/outcomes  
+Totals $455,000.00   
+ 
+#5 Statewide health care data platform modernization and transparency project 
+Travel $25,000.00 Design sessions, on-site workshops, & training 
+Equipment $10,000.00 Software accessories, documentation materials, & user-support resources 
+Supplies $2,600,000.00 Labor (architecture, engineering, DevOps, data science, quality assurance, security, delivery), licensing/tooling, cloud 
+infrastructure, & training 
+Totals $2,635,000.00 
+ 
+ 
+ 
+15 
+IX. Other 
+Vermont’s RHT Program budgets $350,000.00 for grant management software for FY 26. This system will allow potential subrecipients 
+apply for funding opportunities and for AHS to efficiently administer the subrecipient agreements. 
+ 
+Table 11. Budget Summary of Other 
+Category FY26 Line Item Budget Narrative 
+Other $350,000.00 Grant management software. 
+Totals $350,000.00 
+ 
+ 
+X. Indirect Costs 
+Vermont’s RHT Program budgets $3,514,208.02 for total modified direct costs and $316,278.73 indirect costs are requested for FY 26. The 
+Vermont Agency of Human Services uses a Cost Allocation Plan. The submission and approval of the plan is conducted on a quarterly basis.  
+On average, the allocated indirect costs equal 9% across FY26. 
+ 
+Table 11. Vermont RHT Program Indirect Costs Budget Summary 
+Direct Costs minus exclusions FY26 
+Personnel $1,273,023.01 
+Fringe $1,098,729.51 
+Travel $16,795.50 
+Supplies $50,660.00 
+Subrecipients $725,000.00 
+Other $350,000.00 
+Total Modified Direct Costs $3,514,208.02 
+Indirect Costs Requested  $316,278.73 
+ 
