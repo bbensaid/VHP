@@ -816,5 +816,205 @@
     "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-more-233-million-improve-rural-healthcare-services-across-california"
    }
   }
+ },
+ "arizona": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "In July 2026, after what the Arizona Public Health Association called months of planning and missed timelines, AHCCCS released Arizona's first competitive RHT grant opportunity (an Opioid Antagonist Distribution Initiative, applications due August 7, 2026), with other grants on medical diagnostic equipment, EHR upgrades and telehealth. The association noted that the largest share of the funds will come through the Governor's Office of Economic Opportunity, which had provided little public information about its part of the program.",
+    "src": "az1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "az1": {
+    "label": "Arizona Public Health Association, “AZ's First Rural Health Transformation Grants Target Overdose Prevention, Telehealth & Data Management” (Jul 19, 2026)",
+    "url": "https://azpha.org/2026/07/19/azs-first-rural-health-transformation-grants-target-overdose-prevention-telehealth-data-management/"
+   }
+  }
+ },
+ "illinois": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "Illinois's state grant listing for the Hospital Transformation program estimates $28,191,393 for rural hospitals in the first federal budget period (January–October 2026), approximately $290,000 per hospital.",
+    "src": "il1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "il1": {
+    "label": "State of Illinois, GATA Catalog of State Financial Assistance, “Rural Health Transformation Program – Transforming Rural Healthcare Delivery, Hospital Transformation” (CSFA 3979)",
+    "url": "https://omb.illinois.gov/PUBLIC/GATA/CSFA/Program.aspx?csfa=3979"
+   }
+  }
+ },
+ "minnesota": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "Among Minnesota Department of Health awardees: the Minnesota Office of EMS received $9,218,109 in grant funds for rural ambulance services (plus $281,000 for staff time) to pilot “treatment in place” — care given when an ambulance answers a 911 call but does not transport the patient, which insurance does not reimburse.",
+    "src": "mn1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "mn1": {
+    "label": "Minnesota Department of Health, RHT Program awardee sheet, “Rural Ambulance Treatment in Place”",
+    "url": "https://www.health.state.mn.us/facilities/ruralhealth/ruraltrans/docs/awardees/mnems.pdf"
+   }
+  }
+ },
+ "nevada": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "On August 6, 2026 the Nevada Health Authority announced $26.9 million for 37 projects (64 applicants had requested $42 million) and said Nevada had awarded nearly $150 million in RHT awards supporting 158 projects across 17 counties, with final amounts subject to change.",
+    "src": "nv1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "nv1": {
+    "label": "Office of the Governor, Nevada, “Nevada Announces Another $27 Million in Awards to Improve Rural Health Care” (Aug 6, 2026)",
+    "url": "https://www.gov.nv.gov/press-releases/nevada-announces-another-$27-million-in-awards-to-improve-rural-health-care/"
+   }
+  }
+ },
+ "new-jersey": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "On July 31, 2026 Gov. Mikie Sherrill announced New Jersey's first round of RHT grants: $83 million for 103 projects. The Department of Human Services leads the program and the Department of Health administers about $95 million in competitive grants.",
+    "src": "nj1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "nj1": {
+    "label": "New Jersey Department of Human Services, “New Jersey Awards First Round of Rural Health Transformation Grants” (Jul 31, 2026)",
+    "url": "https://nj.gov/humanservices/news/pressreleases/2026/approved/20260731.shtml"
+   }
+  }
+ },
+ "north-dakota": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "North Dakota's $199 million Year 1 award has been allocated, but the state said it would likely be weeks before all recipients are public; in August it had published details of about $11.2 million in grants in a report to the federal government. Its Year 2 award is about $7.4 million more than Year 1 — the largest percentage increase of any state.",
+    "src": "nd1"
+   },
+   {
+    "text": "CMS reported that North Dakota had unveiled nearly $60 million in programs and funding opportunities, including $40 million in grants to help rural hospitals replace aging equipment.",
+    "src": "nd2"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "nd1": {
+    "label": "North Dakota Monitor via Valley News Live, “North Dakota's rural health money allocated but details not yet public” (Nov 17, 2026)",
+    "url": "https://www.valleynewslive.com/2026/11/17/north-dakotas-rural-health-money-allocated-details-not-yet-public/"
+   },
+   "nd2": {
+    "label": "CMS, press release on North Dakota's Coordinating and Connecting Care initiative (Aug 20, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-delivers-critical-funding-launch-coordinating-connecting-care-initiative-north"
+   }
+  }
+ },
+ "oklahoma": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "Oklahoma's Q3 legislative report (Oct 16, 2026): one grant program received 141 applications and awarded 20 recipients $39.6 million in Year 1 funding; a chronic disease management round received 76 applications and awarded 15 recipients $15 million. All Budget Period 1 funds must be spent by September 30, 2027.",
+    "src": "ok1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "ok1": {
+    "label": "Oklahoma State Department of Health, RHTP Legislative Quarterly Report, Q3 (Oct 16, 2026)",
+    "url": "https://oklahoma.gov/content/dam/ok/en/rhtp/documents/legislative-reports/10-16-26%20RHTP%20Legislative%20Quarterly%20Report_Q3.pdf"
+   }
+  }
+ },
+ "oregon": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "On July 7, 2026 the Oregon Health Authority announced about $97.1 million more in RHT grants — including about $80.1 million in competitive Catalyst Awards to 85 organizations leading 103 projects, and $17 million in Immediate Impact Awards for 33 projects — bringing Oregon's 2026 awards to about $175.3 million.",
+    "src": "or1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "or1": {
+    "label": "Oregon Health Authority, “$97M awarded across Oregon to improve rural health” (Jul 7, 2026)",
+    "url": "https://www.oregon.gov/oha/ERD/Pages/$97M-awarded-across-Oregon-to-improve-rural-health-07.07.2026.aspx"
+   }
+  }
+ },
+ "tennessee": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "On November 9, 2026 Tennessee announced 138 selected grantee projects that represent more than $422 million of RHT investment over the grant program's five-year lifecycle — the largest category being $119.4 million for 19 maternal, infant and child health projects. The figure spans five years, so it is not comparable to the single-year federal award.",
+    "src": "tn1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "tn1": {
+    "label": "Tennessee Department of Health, “Tennessee Announces $422 Million in Rural Health Transformation Grants for 138 Projects Statewide” (Nov 9, 2026)",
+    "url": "https://www.tn.gov/health/news/2026/11/9/tennessee-announces--422-million-in-rural-health-transformation-grants-for-138-projects-statewide.html"
+   }
+  }
+ },
+ "utah": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "Of Utah's $195.7 million Year 1 award, only $71.3 million had been obligated as of July 14, 2026, according to Utah's DHHS; most of it had gone to other state and public entities, such as the State Board of Education and the Department of Public Safety, to distribute.",
+    "src": "ut1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "ut1": {
+    "label": "Salt Lake Tribune, “Utah received $196 million for rural health. Will it work?” (Jul 27, 2026)",
+    "url": "https://www.sltrib.com/news/2026/07/27/utah-received-196-million-rural/"
+   }
+  }
+ },
+ "washington": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "On November 5, 2026 the Health Care Authority reported Washington's roughly $181 million Year 1 award as 100% obligated, including an estimated $41.99 million to the Washington State Hospital Association for hospital technology and $5.43 million for a 30-member Rural Collaborative.",
+    "src": "wa1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "wa1": {
+    "label": "Washington State Health Care Authority, “Washington's RHT funds are 100% obligated” (Nov 5, 2026)",
+    "url": "https://www.hca.wa.gov/assets/program/rht-obligated-funds.pdf"
+   }
+  }
+ },
+ "wisconsin": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "In June 2026 Wisconsin's Department of Health Services opened its first application period, distributing $40 million for care coordination, community health workers and dental clinics; DHS received a first-year award of $203,670,005.21 for three initiatives: workforce, technology and care coordination.",
+    "src": "wi1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "wi1": {
+    "label": "Wisconsin Department of Health Services, press release (Jun 15, 2026)",
+    "url": "https://www.dhs.wisconsin.gov/news/releases/061526.htm"
+   }
+  }
  }
 }
