@@ -14,3 +14,4 @@ Run from a folder with the `docx` npm package installed:
 
 The scripts require "./node_modules/docx": run them from a directory where
 `npm install docx` has been done, or adjust that require path.
+- m4a_memo.js → HTR_Medicare_for_All_Five_Pillar_Memo_2026-11-21.docx (M4A plan Phase 2; facts from book-audit/deep/sources/m4a)
