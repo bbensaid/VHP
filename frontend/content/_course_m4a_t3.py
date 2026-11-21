@@ -113,7 +113,7 @@ L7 = [
     stat_grid('s2sg1', [
         ('150,000', 'Vermonters in self-insured plans (2010)', '2013 financing plan, Table 1'),
         ('334,000', 'Vermonters with commercial coverage (2010)', '2013 financing plan, Table 1'),
-        ('296,000 → 31,000', 'People with employer coverage, 2017, before and after', '2014 report, Table 1'),
+        ('296K → 31K', 'People with employer coverage, 2017, before and after (296,000 to 31,000)', '2014 report, Table 1'),
     ]),
     warning('s2w1', 'A question the sources leave open', "Avalere raised the possibility that self-insured employers would seek exemption from a payroll tax that funded Green Mountain Care. The documents in this course do not settle whether such a challenge would have succeeded, and the plan was abandoned before it could be tested. Treat it as a risk the state faced, not a legal conclusion."),
 
