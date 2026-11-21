@@ -1,0 +1,31 @@
+{
+ "tag": "vbc-facts",
+ "note": "APM bonus: CAA 2023 (3.5% for 2025) and CAA 2024 (1.88% for 2026), as the HIE course states. SDOH screening + Commitment to Health Equity measures removed from IQR in FY2026 IPPS final rule (published Aug 5, 2025). HEI cancelled in CY2027 MA final rule (Apr 2, 2026) — same course already says so.",
+ "pairs": [
+  [
+   "For 2026, the Advanced APM incentive is now subject to policy review following the expiration of the 5% bonus at end of 2022.",
+   "The Advanced APM incentive, 5% for payment years 2019 through 2024, fell to 3.5% for 2025 and 1.88% for 2026 under later legislation."
+  ],
+  [
+   "In 2024, CMS issued regulations requiring hospitals participating in federal payment programs to screen all patients for five social determinants: food insecurity, housing instability, transportation needs, utility difficulties, and interpersonal safety. These screening requirements create a standardized data foundation that could eventually support more rigorous social risk adjustment.",
+   "In 2024, CMS began requiring hospitals in its Inpatient Quality Reporting program to report screening of adult patients for five social determinants: food insecurity, housing instability, transportation needs, utility difficulties, and interpersonal safety. CMS then removed those screening measures in its FY2026 inpatient payment rule (August 2025), citing reporting burden, so the standardized federal data foundation they promised did not materialize."
+  ],
+  [
+   "For Medicare Advantage, CMS introduced the Health Equity Index (HEI) as part of the Star Ratings system, taking effect for 2027 star ratings based on 2024–2025 performance data.",
+   "For Medicare Advantage, CMS finalized a Health Equity Index (HEI) for the Star Ratings, planned for the 2027 star ratings based on 2024–2025 performance data, but cancelled it in its Contract Year 2027 final rule (April 2026) before it took effect."
+  ],
+  [
+   "The 2024 SDOH screening mandates represent an attempt to solve this data problem at the population level by requiring consistent, standardized screening across all Medicare- and Medicaid-participating hospitals. Over time, if these requirements are enforced and data is aggregated at the CMS level,",
+   "The 2024 SDOH screening measures were an attempt to solve this data problem at the population level by requiring consistent, standardized screening reporting from hospitals, before CMS removed them in its FY2026 inpatient rule. If such requirements return and data is aggregated at the CMS level,"
+  ],
+  [
+   "CMS's 2024 SDOH screening mandate requires hospitals to screen patients for five social domains, building the data infrastructure needed for more systematic social risk adjustment in the future.",
+   "CMS's 2024 hospital SDOH screening measures (five social domains) were removed in the FY2026 inpatient rule, so the federal data infrastructure for systematic social risk adjustment remains unbuilt."
+  ],
+  [
+   "The CMS Health Equity Index, effective for 2027 Star Ratings, rewards Medicare Advantage plans for achieving equitable outcomes across social risk subgroups — an \"accountability for equity\" approach rather than benchmark adjustment.",
+   "The CMS Health Equity Index, planned for the 2027 Star Ratings and cancelled in April 2026 before taking effect, would have rewarded Medicare Advantage plans for equitable outcomes across social risk subgroups — an \"accountability for equity\" approach rather than benchmark adjustment."
+  ]
+ ],
+ "residue": "subject to policy review following the expiration|HEI\\) as part of the Star Ratings system, taking effect"
+}

@@ -1,0 +1,15 @@
+{
+ "tag": "vbc-facts2",
+ "note": "Timeline entries aligned with FY2026 IPPS (SDOH measures removed) and CY2027 MA rule (HEI not implemented)",
+ "pairs": [
+  [
+   "CMS requires hospitals in federal programs to screen patients for five SDOH domains and report results, creating standardized social data infrastructure.",
+   "CMS required hospitals in its inpatient quality program to report screening for five SDOH domains; it removed those measures in its FY2026 inpatient rule (August 2025)."
+  ],
+  [
+   "CMS Health Equity Index takes effect in Medicare Advantage Star Ratings, rewarding plans for equitable performance across social risk subgroups.",
+   "The Health Equity Index was to take effect in the 2027 Medicare Advantage Star Ratings; CMS cancelled it in April 2026 before it began."
+  ]
+ ],
+ "residue": "CMS requires hospitals in federal programs to screen|Health Equity Index takes effect"
+}
