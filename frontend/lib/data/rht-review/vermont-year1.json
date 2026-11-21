@@ -1,0 +1,2030 @@
+{
+ "asOf": "2026-11-20",
+ "award": {
+  "fy2026": 195053740.44,
+  "fy2027": 189996036,
+  "fy2027_state_release": 189996036.02
+ },
+ "agreements": {
+  "count": 242,
+  "total": 182154948.14,
+  "listUpdate": "2026-10-30",
+  "outOfStateNote": "Marked with an asterisk on the state list: RHT funding is specific to services and activities benefiting Vermont patients and, in some cases, includes partnerships with Vermont-based health care providers or other organizations.",
+  "note": "Executed grant and contract agreements only; excludes provider payment methodologies, program administrative costs and a small number of obligated but not yet executed agreements (State of Vermont)."
+ },
+ "byInitiative": [
+  {
+   "initiative": "Regionalization and Innovative Care Strategies",
+   "signed": 87487591.58,
+   "agreements": 103
+  },
+  {
+   "initiative": "Establishing a Clinically Integrated Network of Shared Services",
+   "signed": 33883851.18,
+   "agreements": 59
+  },
+  {
+   "initiative": "Strengthening Primary Care",
+   "signed": 29842940.2,
+   "agreements": 55
+  },
+  {
+   "initiative": "Health Care Workforce Development",
+   "signed": 26665649.18,
+   "agreements": 21
+  },
+  {
+   "initiative": "Price Transparency and Insurance Competition",
+   "signed": 3135000.0,
+   "agreements": 2
+  },
+  {
+   "initiative": "Evaluator",
+   "signed": 815989.0,
+   "agreements": 1
+  },
+  {
+   "initiative": "Administration",
+   "signed": 323927.0,
+   "agreements": 1
+  }
+ ],
+ "activities": [
+  {
+   "activity": "Facility upgrades to support regionalization",
+   "initiative": "Regionalization and Innovative Care Strategies",
+   "agreements": 42,
+   "signed": 36501172.02,
+   "planned_jan2026": 21500000.0,
+   "planned_label": [
+    "Facility upgrades to support regionalization"
+   ],
+   "recipients": [
+    {
+     "name": "Rutland Regional Medical Center",
+     "dba": null,
+     "amount": 2000000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Community Health Centers of the Rutland Region",
+     "dba": null,
+     "amount": 2000000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Grace Cottage",
+     "dba": null,
+     "amount": 2000000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northwestern Medical Center",
+     "dba": null,
+     "amount": 2000000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Southwestern Vermont Health",
+     "dba": null,
+     "amount": 1998848.35,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Copley Hospital",
+     "dba": null,
+     "amount": 1987823.59,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "UVM - Health Network",
+     "dba": null,
+     "amount": 1972160.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "KPH Healthcare Services Inc.",
+     "dba": "Kinney Drugs",
+     "amount": 1586475.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northeastern Vermont Regional Hospital (NVRH)",
+     "dba": null,
+     "amount": 1554711.78,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northeast Kingdom Human Services",
+     "dba": null,
+     "amount": 1488626.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "1248 Hospital Drive Opco LLC",
+     "dba": "St. Johnsbury Center for Living and Rehabilitation",
+     "amount": 1486000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "North Country Hospital",
+     "dba": null,
+     "amount": 1469700.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "CLR Opco",
+     "dba": "The Center for Living and Rehbailitation",
+     "amount": 1341000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Little Rivers Health Care",
+     "dba": null,
+     "amount": 1320085.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Rutland Center for Living and Rehabilitation",
+     "dba": null,
+     "amount": 1299000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Springfield Center for Living and Rehabilitation",
+     "dba": null,
+     "amount": 1280000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Gifford Health Care",
+     "dba": null,
+     "amount": 1008012.12,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Brattleboro Memorial Hospital",
+     "dba": null,
+     "amount": 759000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Rutland Regional Medical Center",
+     "dba": null,
+     "amount": 644107.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Central Vermont Medical Center",
+     "dba": null,
+     "amount": 641463.75,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Gifford Health Care",
+     "dba": null,
+     "amount": 633201.36,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Brattleboro Memorial Hospital",
+     "dba": null,
+     "amount": 603750.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Richford Health Center Inc",
+     "dba": "Northern Tier Center for Health (NOTCH)",
+     "amount": 599742.8,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Brattleboro Retreat",
+     "dba": null,
+     "amount": 525000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Community Health Centers of Burlington",
+     "dba": null,
+     "amount": 479522.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Springfield Center for Living and Rehabilitation",
+     "dba": null,
+     "amount": 425000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Primary Care Health Partners",
+     "dba": null,
+     "amount": 415332.03,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Howard Center",
+     "dba": null,
+     "amount": 323627.74,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Richmond Family Medicine",
+     "dba": null,
+     "amount": 320673.96,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "S&A Healthcare PLC",
+     "dba": "New England Wellness Group",
+     "amount": 300000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northeast Kingdom Community Action (NEKCA)",
+     "dba": null,
+     "amount": 271589.15,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Habit Opco LLC",
+     "dba": "Brattleboro Comprehensive Treatment Center",
+     "amount": 268530.79,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Brattleboro Memorial Hospital",
+     "dba": null,
+     "amount": 257600.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Clara Martin Center",
+     "dba": null,
+     "amount": 252442.25,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Springfield Hospital",
+     "dba": null,
+     "amount": 205447.5,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Rescue Inc.",
+     "dba": null,
+     "amount": 186000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Lamoille County Mental Health Services (LCMHS)",
+     "dba": null,
+     "amount": 140000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northern Counties Health Care",
+     "dba": null,
+     "amount": 125500.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northern Counties Health Care",
+     "dba": null,
+     "amount": 91250.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Drs Hogenkamp",
+     "dba": null,
+     "amount": 85300.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Springfield Hospital",
+     "dba": null,
+     "amount": 85100.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northern Counties Health Care",
+     "dba": null,
+     "amount": 69549.85,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Transformation, innovation, and regionalization support grants",
+   "initiative": "Regionalization and Innovative Care Strategies",
+   "agreements": 35,
+   "signed": 27276002.48,
+   "planned_jan2026": 26923183.69,
+   "planned_label": [
+    "Transformation, innovation, and regionalization support grants"
+   ],
+   "recipients": [
+    {
+     "name": "Health Care and Rehabilitation Services of Southeastern Vermont, Inc. (2)",
+     "dba": null,
+     "amount": 4255000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Brattleboro Memorial Hospital",
+     "dba": null,
+     "amount": 3108650.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northwestern Medical Center",
+     "dba": null,
+     "amount": 2461000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Community Health Centers of the Rutland Region",
+     "dba": null,
+     "amount": 2283000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Springfield Hospital",
+     "dba": null,
+     "amount": 1894177.31,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Little Rivers Health Care",
+     "dba": null,
+     "amount": 1352538.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Bennington Rescue Squad",
+     "dba": null,
+     "amount": 1163019.62,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "North Country Hospital & Health Center, Inc.",
+     "dba": null,
+     "amount": 1042090.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "UVM - Home Health & Hospice",
+     "dba": null,
+     "amount": 992479.09,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Cathedral Square Corporation",
+     "dba": null,
+     "amount": 743002.99,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Green Mountain Birth & Wellness",
+     "dba": null,
+     "amount": 730292.32,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Cathedral Square Corporation",
+     "dba": null,
+     "amount": 662437.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Lamoille Community House, Inc.",
+     "dba": null,
+     "amount": 596760.86,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Bi-State Primary Care",
+     "dba": null,
+     "amount": 557400.42,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Southwestern Vermont Medical Center",
+     "dba": null,
+     "amount": 518949.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Real Time Medical Systems",
+     "dba": null,
+     "amount": 498758.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "MOU with DVHA to support regional transformation managers",
+     "dba": null,
+     "amount": 402500.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Full Circle Medicine",
+     "dba": null,
+     "amount": 399189.15,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Manatt, Phelps & Phillips, LLP",
+     "dba": null,
+     "amount": 382753.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "UVM - State Agricultural College",
+     "dba": null,
+     "amount": 363807.71,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Rescue Inc.",
+     "dba": null,
+     "amount": 359907.59,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Brattleboro Memorial Hospital",
+     "dba": null,
+     "amount": 270250.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northeast Kingdom Community Action (NEKCA)",
+     "dba": null,
+     "amount": 259748.12,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "BAART St Albans",
+     "dba": null,
+     "amount": 242598.01,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "BAART St Johnsbury",
+     "dba": null,
+     "amount": 242598.01,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Brattleboro Memorial Hospital",
+     "dba": null,
+     "amount": 230000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Richford Health Center Inc",
+     "dba": "Northern Tier Center for Health (NOTCH)",
+     "amount": 219561.79,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Rutland Regional Medical Center",
+     "dba": null,
+     "amount": 191753.72,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Brattleboro Retreat",
+     "dba": null,
+     "amount": 188992.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Central Vermont Medical Center",
+     "dba": null,
+     "amount": 167034.38,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northern Counties Health Care",
+     "dba": null,
+     "amount": 137810.25,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Dentistry One of Vermont, PC",
+     "dba": null,
+     "amount": 125000.4,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Brattleboro Memorial Hospital",
+     "dba": null,
+     "amount": 115000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Springfield Hospital",
+     "dba": null,
+     "amount": 69938.01,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Brattleboro Memorial Hospital",
+     "dba": null,
+     "amount": 48005.73,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Grant funds to providers to adopt telehealth technology",
+   "initiative": "Establishing a Clinically Integrated Network of Shared Services",
+   "agreements": 14,
+   "signed": 9737093.34,
+   "planned_jan2026": 8000000.0,
+   "planned_label": [
+    "Grant to providers to adopt telehealth technology"
+   ],
+   "recipients": [
+    {
+     "name": "Mary Hitchcock Memorial Hospital",
+     "dba": null,
+     "amount": 3933283.8,
+     "outOfStatePartner": true
+    },
+    {
+     "name": "THE UNIVERSITY OF VERMONT HEALTH NETWORK INC.",
+     "dba": null,
+     "amount": 2208396.48,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northeastern Vermont Regional Hospital Inc",
+     "dba": null,
+     "amount": 1278318.88,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "North Country Hospital & Health Center",
+     "dba": null,
+     "amount": 905147.28,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Brattleboro Memorial Hospital",
+     "dba": null,
+     "amount": 371775.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Thomas Chittenden Health Center",
+     "dba": null,
+     "amount": 303710.85,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northern Counties Health Care",
+     "dba": null,
+     "amount": 153824.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Community Health Centers of the Rutland Region",
+     "dba": null,
+     "amount": 134358.14,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Richford Health Center Inc",
+     "dba": "Northern Tier Center for Health (NOTCH)",
+     "amount": 133688.91,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "CLR Opco",
+     "dba": null,
+     "amount": 63760.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Rutland Center for Living and Rehabilitation",
+     "dba": "Rutland Center for Living and Rehabilitation",
+     "amount": 63760.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Springfield Center for Living and Rehabilitation",
+     "dba": null,
+     "amount": 63760.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "St. Johnsbury Center for Living and Rehabilitation",
+     "dba": null,
+     "amount": 63760.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Rutland Regional Medical Center",
+     "dba": null,
+     "amount": 59550.0,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Mental Health and community support integration into primary care teams",
+   "initiative": "Strengthening Primary Care",
+   "agreements": 12,
+   "signed": 9223688.22,
+   "planned_jan2026": 600000.0,
+   "planned_label": [
+    "Mental health (MH) and community support integration into primary care teams"
+   ],
+   "recipients": [
+    {
+     "name": "University of Vermont Medical Center",
+     "dba": null,
+     "amount": 2226478.52,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Rutland Hospital, Inc.",
+     "dba": "Rutland Regional Medical Center",
+     "amount": 959593.02,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Central Vermont Medical Center",
+     "dba": null,
+     "amount": 821745.04,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northwestern Medical Center",
+     "dba": null,
+     "amount": 764516.22,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Copley Hospital, Inc.",
+     "dba": null,
+     "amount": 721780.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Gifford Health Care, Inc.",
+     "dba": null,
+     "amount": 642160.9,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Porter Hospital, Inc.",
+     "dba": null,
+     "amount": 631185.3,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Brattleboro Memorial Hospital",
+     "dba": null,
+     "amount": 604443.2,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Southwestern Vermont Medical Center, Inc.",
+     "dba": null,
+     "amount": 535793.76,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northeastern Vermont Regional Hospital Inc",
+     "dba": null,
+     "amount": 525355.11,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "North Country Hospital & Health Center",
+     "dba": null,
+     "amount": 440345.73,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "North Star Health",
+     "dba": "Springfield Medical Care Systems",
+     "amount": 350291.42,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Health care workforce conditional financial assistance program",
+   "initiative": "Health Care Workforce Development",
+   "agreements": 1,
+   "signed": 9059785.0,
+   "planned_jan2026": 4812500.0,
+   "planned_label": [
+    "Health care workforce conditional financial assistance program"
+   ],
+   "recipients": [
+    {
+     "name": "Vermont Student Assistance Corporation",
+     "dba": null,
+     "amount": 9059785.0,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Expand pharmacists’ scope to include test-to-treat in more scenarios",
+   "initiative": "Health Care Workforce Development",
+   "agreements": 2,
+   "signed": 8740260.0,
+   "planned_jan2026": 1070000.0,
+   "planned_label": [
+    "Expand pharmacists’ scope to include test-to-treat in more scenarios"
+   ],
+   "recipients": [
+    {
+     "name": "KPH Healthcare Services Inc.",
+     "dba": "Kinney Drugs",
+     "amount": 8649920.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Little Rivers Health Care, Inc.",
+     "dba": null,
+     "amount": 90340.0,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Providing enhanced capacity for team-based care",
+   "initiative": "Strengthening Primary Care",
+   "agreements": 14,
+   "signed": 8637542.89,
+   "planned_jan2026": 18000000.0,
+   "planned_label": [
+    "Enhanced capacity for team-based care"
+   ],
+   "recipients": [
+    {
+     "name": "Cathedral Square Corporation",
+     "dba": null,
+     "amount": 2654539.04,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "University of Vermont Medical Center",
+     "dba": null,
+     "amount": 1894194.06,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Rutland Regional Medical Center",
+     "dba": null,
+     "amount": 591800.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Central Vermont Medical Center",
+     "dba": null,
+     "amount": 558793.81,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northwestern Medical Center",
+     "dba": null,
+     "amount": 436393.33,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Porter Hospital, Inc.",
+     "dba": null,
+     "amount": 388100.02,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Copley Hospital, Inc.",
+     "dba": null,
+     "amount": 349767.12,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Southwestern Vermont Medical Center, Inc.",
+     "dba": null,
+     "amount": 316081.3,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northeastern Vermont Regional Hospital",
+     "dba": null,
+     "amount": 314820.74,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Brattleboro Memorial Hospital",
+     "dba": null,
+     "amount": 284666.46,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "North Country Hospital & Health Center",
+     "dba": null,
+     "amount": 255520.53,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Gifford Health Care, Inc.",
+     "dba": null,
+     "amount": 245769.35,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "North Star Health",
+     "dba": null,
+     "amount": 187500.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Windsor Hospital Corp",
+     "dba": "Mt Ascutney Hospital and Health Center",
+     "amount": 159597.13,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Incentivizing adoption of a shared Electronic Health Record (EHR)/Electronic Medical Record (EMR) platform",
+   "initiative": "Establishing a Clinically Integrated Network of Shared Services",
+   "agreements": 3,
+   "signed": 8047453.15,
+   "planned_jan2026": 17250000.0,
+   "planned_label": [
+    "Adoption of a shared Electronic Medical Record (EMR) platform"
+   ],
+   "recipients": [
+    {
+     "name": "University of Vermont Health",
+     "dba": null,
+     "amount": 4900000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "North Country Hospital & Health Center",
+     "dba": null,
+     "amount": 2390852.02,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "New England Collaborative Health Network (NECHN)",
+     "dba": null,
+     "amount": 756601.13,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Expanding access to recovery housing for individuals with Substance Use Disorder (SUD) services",
+   "initiative": "Strengthening Primary Care",
+   "agreements": 11,
+   "signed": 7981499.67,
+   "planned_jan2026": 8000000.0,
+   "planned_label": [
+    "Recovery housing for individuals with SUD needs"
+   ],
+   "recipients": [
+    {
+     "name": "Vermont Foundation of Recovery, Inc.",
+     "dba": null,
+     "amount": 3482543.12,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Vermont Alliances for Recovery Residences, Inc.",
+     "dba": null,
+     "amount": 1801000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Kingdom Wellness Collaborative Company",
+     "dba": "Ben’s House",
+     "amount": 870187.4,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Dismas of Vermont, Inc. (Dismas House)",
+     "dba": null,
+     "amount": 394612.16,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Common Ground Recovery, Inc.",
+     "dba": null,
+     "amount": 296075.89,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Turning Point Recovery Center of Springfield, Vermont, Inc.",
+     "dba": null,
+     "amount": 220115.34,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Recovery House, Inc.",
+     "dba": null,
+     "amount": 200001.1,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Turning Point Center of Bennington",
+     "dba": null,
+     "amount": 200001.1,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Hope Grove",
+     "dba": null,
+     "amount": 200001.1,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "United Way of Northwest Vermont, Inc.",
+     "dba": null,
+     "amount": 194250.96,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Jenna Tatro Memorial Fund, Inc.",
+     "dba": "Jenna’s Promise",
+     "amount": 122711.5,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Mobile units offering medical, dental and integrated Mental Health (MH) and Substance Use Disorder (SUD) services",
+   "initiative": "Regionalization and Innovative Care Strategies",
+   "agreements": 11,
+   "signed": 6597263.51,
+   "planned_jan2026": 2672570.0,
+   "planned_label": [
+    "Medical mobile units",
+    "Dental mobile units"
+   ],
+   "recipients": [
+    {
+     "name": "Brattleboro Memorial Hospital",
+     "dba": null,
+     "amount": 1085458.75,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Central Vermont Medical Center",
+     "dba": null,
+     "amount": 1044158.97,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "University of Vermont Cancer Center",
+     "dba": null,
+     "amount": 868649.42,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Community Health Centers of Burlington, Inc.",
+     "dba": null,
+     "amount": 767344.82,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Bristol Rescue Squad, Inc.",
+     "dba": null,
+     "amount": 725255.29,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Mary Hitchcock Memorial Hospital",
+     "dba": null,
+     "amount": 603680.8,
+     "outOfStatePartner": true
+    },
+    {
+     "name": "HealthHUB",
+     "dba": null,
+     "amount": 529689.07,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Vermont Dental Services (VDS)",
+     "dba": null,
+     "amount": 315175.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Richford Health Center Inc",
+     "dba": "Northern Tier Center for Health (NOTCH)",
+     "amount": 282419.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Little Rivers Health Care",
+     "dba": null,
+     "amount": 238672.57,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Howard Center",
+     "dba": null,
+     "amount": 136759.82,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Health care professions mentorship program",
+   "initiative": "Health Care Workforce Development",
+   "agreements": 12,
+   "signed": 6203982.58,
+   "planned_jan2026": 4000000.0,
+   "planned_label": [
+    "Health care professions residency program"
+   ],
+   "recipients": [
+    {
+     "name": "VNA & Hospice of the Southwest Region, Inc.",
+     "dba": null,
+     "amount": 1478711.17,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Dartmouth Health Home Care, Inc.",
+     "dba": null,
+     "amount": 1101645.0,
+     "outOfStatePartner": true
+    },
+    {
+     "name": "University of Vermont Health - Home Health & Hospice",
+     "dba": null,
+     "amount": 645824.3,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northwestern Medical Center",
+     "dba": null,
+     "amount": 422807.85,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northern Counties Health Care",
+     "dba": "Caledonia Home Health Care and Hospice",
+     "amount": 408400.02,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Lamoille Home Health & Hospice",
+     "dba": null,
+     "amount": 372430.42,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Central Vermont Home Health & Hospice",
+     "dba": null,
+     "amount": 366841.44,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Springfield Hospital",
+     "dba": null,
+     "amount": 348593.75,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Grace Cottage Family Health and Hospital",
+     "dba": null,
+     "amount": 347098.83,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Brattleboro Retreat",
+     "dba": null,
+     "amount": 324233.04,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Southwestern Vermont Medical Center, Inc.",
+     "dba": null,
+     "amount": 214896.76,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Gifford Medical Center",
+     "dba": null,
+     "amount": 172500.0,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "e-Consult expansion and workforce capacity building/VTCPAP",
+   "initiative": "Establishing a Clinically Integrated Network of Shared Services",
+   "agreements": 4,
+   "signed": 5642836.6,
+   "planned_jan2026": 2300000.0,
+   "planned_label": [
+    "Statewide e-consult expansion and workforce capacity building"
+   ],
+   "recipients": [
+    {
+     "name": "Mary Hitchcock Memorial Hospital",
+     "dba": null,
+     "amount": 4283851.0,
+     "outOfStatePartner": true
+    },
+    {
+     "name": "Vermont Program for Quality in Health Care (VPQHC)",
+     "dba": null,
+     "amount": 1215585.48,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Five-Town Health Alliance Inc",
+     "dba": "Mountain Community Health, Inc.",
+     "amount": 109192.5,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Richford Health Center Inc",
+     "dba": "Northern Tier Center for Health (NOTCH)",
+     "amount": 34207.62,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Community paramedicine/Mobile Integrated Health model",
+   "initiative": "Regionalization and Innovative Care Strategies",
+   "agreements": 7,
+   "signed": 5239636.0,
+   "planned_jan2026": 5370000.0,
+   "planned_label": [
+    "Community paramedicine/Mobile Integrated Health model"
+   ],
+   "recipients": [
+    {
+     "name": "Public Consulting Group",
+     "dba": null,
+     "amount": 1104343.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Town of Barre EMS",
+     "dba": null,
+     "amount": 750000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Rescue Inc.",
+     "dba": null,
+     "amount": 750000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Bennington Rescue Squad",
+     "dba": null,
+     "amount": 750000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northeastern Vermont Regional Hospital, Inc",
+     "dba": null,
+     "amount": 750000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Copley Hospital",
+     "dba": null,
+     "amount": 750000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "University of Vermont Health",
+     "dba": null,
+     "amount": 385293.0,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Grants to providers to adopt Artificial Intelligence (AI) transcription/scribe technology",
+   "initiative": "Establishing a Clinically Integrated Network of Shared Services",
+   "agreements": 26,
+   "signed": 5227446.86,
+   "planned_jan2026": 1030000.0,
+   "planned_label": [
+    "Grants to providers to adopt AI transcription/scribe technology"
+   ],
+   "recipients": [
+    {
+     "name": "Northeastern Vermont Regional Hospital Inc",
+     "dba": null,
+     "amount": 860274.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Primary Care Health Partners",
+     "dba": null,
+     "amount": 653327.6,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Gifford Health Care, Inc.",
+     "dba": null,
+     "amount": 510763.57,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Brattleboro Memorial Hospital",
+     "dba": null,
+     "amount": 356439.05,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Community Health Centers of the Rutland Region",
+     "dba": null,
+     "amount": 326193.94,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Central Vermont Home Health & Hospice",
+     "dba": null,
+     "amount": 264315.2,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Clara Martin Center",
+     "dba": null,
+     "amount": 263387.76,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Brattleboro Retreat",
+     "dba": null,
+     "amount": 228550.93,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Marble Valley Healthworks",
+     "dba": null,
+     "amount": 225459.49,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Richford Health Center Inc",
+     "dba": "Northern Tier Center for Health (NOTCH)",
+     "amount": 173966.92,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "North Country Hospital & Health Center",
+     "dba": null,
+     "amount": 172500.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Grace Cottage Hospital",
+     "dba": null,
+     "amount": 169528.4,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Howard Center",
+     "dba": null,
+     "amount": 139289.44,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Lamoille Home Health",
+     "dba": null,
+     "amount": 136760.19,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northern Counties Health Care",
+     "dba": null,
+     "amount": 107870.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Counseling Service of Addison County, Inc.",
+     "dba": null,
+     "amount": 104655.75,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "The Manor",
+     "dba": null,
+     "amount": 90650.55,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northwestern Medical Center",
+     "dba": null,
+     "amount": 75382.5,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Rutland Regional Medical Center",
+     "dba": "Rutland Hospital Inc.",
+     "amount": 75204.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Thomas Chittenden Health Center",
+     "dba": null,
+     "amount": 61364.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Essex Pediatrics",
+     "dba": null,
+     "amount": 60504.9,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Richmond Family Medicine",
+     "dba": null,
+     "amount": 59555.93,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Ophthalmic Consultants of Vermont",
+     "dba": null,
+     "amount": 44355.5,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Mountain Community Health",
+     "dba": "Five Town Health Alliance, INC",
+     "amount": 27144.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Community Health Centers of Burlington, Inc.",
+     "dba": null,
+     "amount": 24503.24,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Eye Care Associates",
+     "dba": null,
+     "amount": 15500.0,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Transformation analytics and support",
+   "initiative": "Regionalization and Innovative Care Strategies",
+   "agreements": 1,
+   "signed": 5100000.0,
+   "planned_jan2026": 15000000.0,
+   "planned_label": [
+    "Transformation analytics and support"
+   ],
+   "recipients": [
+    {
+     "name": "McKinsey & Co.",
+     "dba": null,
+     "amount": 5100000.0,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Mental Health (MH) and Substance Use Disorder (SUD) urgent care expansion",
+   "initiative": "Regionalization and Innovative Care Strategies",
+   "agreements": 3,
+   "signed": 4060012.6,
+   "planned_jan2026": 2050000.0,
+   "planned_label": [
+    "Mental health and substance use urgent care expansion"
+   ],
+   "recipients": [
+    {
+     "name": "Health Care and Rehabilitation Services of Southeastern Vermont, Inc.",
+     "dba": null,
+     "amount": 3216288.17,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Rutland Mental Health Services",
+     "dba": null,
+     "amount": 821223.7,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Washington County Mental Health",
+     "dba": null,
+     "amount": 22500.73,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Creating a centralized tool to guide interfacility transfers",
+   "initiative": "Establishing a Clinically Integrated Network of Shared Services",
+   "agreements": 1,
+   "signed": 2979790.59,
+   "planned_jan2026": 2900000.0,
+   "planned_label": [
+    "Centralized tool to guide interfacility transfers"
+   ],
+   "recipients": [
+    {
+     "name": "University of Vermont Health",
+     "dba": null,
+     "amount": 2979790.59,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Green Mountain Care Board health care data platform modernization and transparency initiative",
+   "initiative": "Price Transparency and Insurance Competition",
+   "agreements": 1,
+   "signed": 2635000.0,
+   "planned_jan2026": 2635000.0,
+   "planned_label": [
+    "Statewide health care data platform modernization and transparency project"
+   ],
+   "recipients": [
+    {
+     "name": "Memorandum of Understanding between AHS and GMCB",
+     "dba": null,
+     "amount": 2635000.0,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Enhancing primary care-focused data and analytics infrastructure",
+   "initiative": "Strengthening Primary Care",
+   "agreements": 13,
+   "signed": 2304014.72,
+   "planned_jan2026": 1160000.0,
+   "planned_label": [
+    "Primary care-focused data and analytics infrastructure"
+   ],
+   "recipients": [
+    {
+     "name": "Gifford Health Care, Inc.",
+     "dba": null,
+     "amount": 279916.51,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Grace Cottage Hospital",
+     "dba": null,
+     "amount": 276871.24,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Community Health Centers of the Rutland Region, Inc.",
+     "dba": null,
+     "amount": 251269.88,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Evergreen Family Health Group",
+     "dba": null,
+     "amount": 202162.85,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Pediatric Medicine, PLC",
+     "dba": null,
+     "amount": 199526.3,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Essex Pediatrics, PC",
+     "dba": null,
+     "amount": 184880.88,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Five Town Health Alliance",
+     "dba": "Mountain Community Health",
+     "amount": 182084.62,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northern Counties Health Care",
+     "dba": null,
+     "amount": 178314.11,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Southwestern Vermont Medical Center, Inc.",
+     "dba": null,
+     "amount": 127798.58,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Richmond Family Medicine, PLLC",
+     "dba": null,
+     "amount": 123600.85,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Tree of Life Medicine, LLC.",
+     "dba": null,
+     "amount": 104150.45,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "New England Wellness Group",
+     "dba": null,
+     "amount": 102390.99,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Lakeside Pediatrics",
+     "dba": null,
+     "amount": 91047.46,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Grants to providers to adopt Remote Patient Monitoring (RPM) equipment",
+   "initiative": "Establishing a Clinically Integrated Network of Shared Services",
+   "agreements": 10,
+   "signed": 1824230.64,
+   "planned_jan2026": 900000.0,
+   "planned_label": [
+    "Grants to providers to adopt remote patient monitoring (RPM)"
+   ],
+   "recipients": [
+    {
+     "name": "VNA & Hospice of the Southwest Region, Inc.",
+     "dba": null,
+     "amount": 431120.88,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Community Health Centers of the Rutland Region",
+     "dba": null,
+     "amount": 283395.91,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "THE UNIVERSITY OF VERMONT HEALTH NETWORK INC.",
+     "dba": null,
+     "amount": 266288.34,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Central Vermont Home Health & Hospice",
+     "dba": null,
+     "amount": 215953.68,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Dartmouth Health Home Care, Inc.",
+     "dba": null,
+     "amount": 179160.08,
+     "outOfStatePartner": true
+    },
+    {
+     "name": "Northeastern Vermont Regional Hospital Inc",
+     "dba": null,
+     "amount": 143375.56,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Richford Health Center Inc",
+     "dba": "Northern Tier Center for Health (NOTCH)",
+     "amount": 109465.19,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northern Counties Health Care",
+     "dba": null,
+     "amount": 82871.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "CLR Opco",
+     "dba": null,
+     "amount": 56300.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Rutland Center for Living and Rehabilitation",
+     "dba": null,
+     "amount": 56300.0,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Expand access to Licensed Nursing Assistant (LNA) training programs",
+   "initiative": "Health Care Workforce Development",
+   "agreements": 4,
+   "signed": 1448525.47,
+   "planned_jan2026": 810000.0,
+   "planned_label": [
+    "Licensed Nursing Assistant training programs"
+   ],
+   "recipients": [
+    {
+     "name": "Vermont State Colleges",
+     "dba": null,
+     "amount": 790450.54,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Hartford Town School District",
+     "dba": null,
+     "amount": 297314.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Northeastern Vermont Regional Hospital Inc",
+     "dba": null,
+     "amount": 210371.21,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Brattleboro Development Credit Corp",
+     "dba": null,
+     "amount": 150389.72,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Development of a statewide health care delivery strategic plan",
+   "initiative": "Regionalization and Innovative Care Strategies",
+   "agreements": 1,
+   "signed": 1430829.0,
+   "planned_jan2026": 2527500.0,
+   "planned_label": [
+    "Development of a statewide health care delivery strategic plan"
+   ],
+   "recipients": [
+    {
+     "name": "Bailit Health Purchasing, LLC.",
+     "dba": null,
+     "amount": 1430829.0,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Improve availability and access to high-acuity services for nursing home residents including dialysis services and ventilators",
+   "initiative": "Regionalization and Innovative Care Strategies",
+   "agreements": 3,
+   "signed": 1282675.97,
+   "planned_jan2026": 1450000.0,
+   "planned_label": [
+    "Improve availability and access to high-acuity services for nursing home residents"
+   ],
+   "recipients": [
+    {
+     "name": "1248 Hospital Drive Opco LLC",
+     "dba": "St. Johnsbury Center for Living and Rehabilitation",
+     "amount": 531750.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Rutland Crossings, LLC.",
+     "dba": null,
+     "amount": 464325.97,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "105 Chester Road Opco LLC",
+     "dba": "Springfield Center for Living and Rehabilitation",
+     "amount": 286600.0,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Workforce support and system integration development",
+   "initiative": "Strengthening Primary Care",
+   "agreements": 3,
+   "signed": 1170000.0,
+   "planned_jan2026": 1200000.0,
+   "planned_label": [
+    "Workforce support and system integration development"
+   ],
+   "recipients": [
+    {
+     "name": "Maryland Partnership for Prevention",
+     "dba": null,
+     "amount": 500000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "Elevation Partners",
+     "dba": null,
+     "amount": 400000.0,
+     "outOfStatePartner": false
+    },
+    {
+     "name": "RC Warner Consulting, LLC.",
+     "dba": null,
+     "amount": 270000.0,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Independent evaluator",
+   "initiative": "Evaluator",
+   "agreements": 1,
+   "signed": 815989.0,
+   "planned_jan2026": 1000000.0,
+   "planned_label": [
+    "Independent evaluator"
+   ],
+   "recipients": [
+    {
+     "name": "National Opinion Research Center (NORC)",
+     "dba": null,
+     "amount": 815989.0,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Workforce development tuition assistance program",
+   "initiative": "Health Care Workforce Development",
+   "agreements": 1,
+   "signed": 641188.78,
+   "planned_jan2026": 811000.0,
+   "planned_label": [
+    "Health care workforce development tuition assistance program"
+   ],
+   "recipients": [
+    {
+     "name": "Behavioral Health Network of Vermont",
+     "dba": "Vermont Care Network",
+     "amount": 641188.78,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Establish the Maple Mountain Consortium Family Medicine Residency Program",
+   "initiative": "Health Care Workforce Development",
+   "agreements": 1,
+   "signed": 571907.35,
+   "planned_jan2026": 985000.0,
+   "planned_label": [
+    "Maple Mountain Rural Residency Program"
+   ],
+   "recipients": [
+    {
+     "name": "Maple Mountain Vermont",
+     "dba": null,
+     "amount": 571907.35,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Statewide assessment of options to improve health coverage affordability",
+   "initiative": "Price Transparency and Insurance Competition",
+   "agreements": 1,
+   "signed": 500000.0,
+   "planned_jan2026": 500000.0,
+   "planned_label": [
+    "Statewide assessment of options to improve health coverage affordability"
+   ],
+   "recipients": [
+    {
+     "name": "Wakely Consulting Group",
+     "dba": null,
+     "amount": 500000.0,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Support a statewide closed-loop referral system",
+   "initiative": "Establishing a Clinically Integrated Network of Shared Services",
+   "agreements": 1,
+   "signed": 425000.0,
+   "planned_jan2026": 455000.0,
+   "planned_label": [
+    "Statewide closed loop referral system"
+   ],
+   "recipients": [
+    {
+     "name": "Unite USA, Inc.",
+     "dba": "Unite Us",
+     "amount": 425000.0,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Admin costs",
+   "initiative": "Administration",
+   "agreements": 1,
+   "signed": 323927.0,
+   "planned_jan2026": null,
+   "planned_label": [],
+   "recipients": [
+    {
+     "name": "GMS - AGATE IGX",
+     "dba": null,
+     "amount": 323927.0,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Enhancing Blueprint Transformation Network Capacity",
+   "initiative": "Strengthening Primary Care",
+   "agreements": 1,
+   "signed": 300000.0,
+   "planned_jan2026": 1800000.0,
+   "planned_label": [
+    "Blueprint transformation network capacity"
+   ],
+   "recipients": [
+    {
+     "name": "University of Vermont and State Agricultural College, Larner College of Medicine",
+     "dba": "Area Health Education Centers (AHEC)",
+     "amount": 300000.0,
+     "outOfStatePartner": false
+    }
+   ]
+  },
+  {
+   "activity": "Expanding access to Federally Qualified Health Center (FQHC) primary care services",
+   "initiative": "Strengthening Primary Care",
+   "agreements": 1,
+   "signed": 226194.7,
+   "planned_jan2026": 1800000.0,
+   "planned_label": [
+    "Expand access to Federally Qualified Health Center (FQHC) primary care services"
+   ],
+   "recipients": [
+    {
+     "name": "Northern Counties Health Care, Inc.",
+     "dba": null,
+     "amount": 226194.7,
+     "outOfStatePartner": false
+    }
+   ]
+  }
+ ],
+ "plannedWithoutAgreement": [
+  {
+   "activity": "Shared Human Resources Information System (HRIS) System",
+   "planned_jan2026": 1502000.0
+  },
+  {
+   "activity": "Incentivize access to primary care",
+   "planned_jan2026": 15000000.0
+  },
+  {
+   "activity": "Specialty and primary care performance payments",
+   "planned_jan2026": 15000000.0
+  },
+  {
+   "activity": "“Critical occupations” no-cost tuition program",
+   "planned_jan2026": 934500.0
+  }
+ ],
+ "topRecipients": [
+  {
+   "name": "KPH Healthcare Services Inc.",
+   "signed": 10236395.0,
+   "agreements": 2
+  },
+  {
+   "name": "Vermont Student Assistance Corporation",
+   "signed": 9059785.0,
+   "agreements": 1
+  },
+  {
+   "name": "Mary Hitchcock Memorial Hospital",
+   "signed": 8820815.6,
+   "agreements": 3
+  },
+  {
+   "name": "University of Vermont Health",
+   "signed": 8265083.59,
+   "agreements": 3
+  },
+  {
+   "name": "Brattleboro Memorial Hospital",
+   "signed": 8095038.19,
+   "agreements": 13
+  },
+  {
+   "name": "Northwestern Medical Center",
+   "signed": 6160099.9,
+   "agreements": 6
+  },
+  {
+   "name": "McKinsey & Co.",
+   "signed": 5100000.0,
+   "agreements": 1
+  },
+  {
+   "name": "Community Health Centers of the Rutland Region",
+   "signed": 5026947.99,
+   "agreements": 5
+  },
+  {
+   "name": "Health Care and Rehabilitation Services of Southeastern Vermont, Inc. (2)",
+   "signed": 4255000.0,
+   "agreements": 1
+  },
+  {
+   "name": "North Country Hospital & Health Center",
+   "signed": 4164365.56,
+   "agreements": 5
+  },
+  {
+   "name": "University of Vermont Medical Center",
+   "signed": 4120672.58,
+   "agreements": 2
+  },
+  {
+   "name": "Cathedral Square Corporation",
+   "signed": 4059979.03,
+   "agreements": 3
+  },
+  {
+   "name": "Rutland Regional Medical Center",
+   "signed": 3562414.72,
+   "agreements": 6
+  },
+  {
+   "name": "Vermont Foundation of Recovery, Inc.",
+   "signed": 3482543.12,
+   "agreements": 1
+  },
+  {
+   "name": "Central Vermont Medical Center",
+   "signed": 3233195.95,
+   "agreements": 5
+  }
+ ],
+ "cms": {
+  "putToWork_2026_07_31": 28369910.31,
+  "policyActions": [
+   {
+    "code": "B.3",
+    "text": "SNAP Waivers SNAP provides food benefits to low -income families to supplement their grocery budget. Restricting the use of SNAP benefits on non -nutritious foods can help improve dietary intake and clinical indicators associated with long - term disease in rural populations. This State Policy Action captures State efforts to obtain a USDA SNAP Food Restriction Waiver to prohibit purchase of non-nutritious items. At baseline, VT did not have a SNAP waiver in place VT committed to this State Policy Action No Progress",
+    "status_detail": "No Progress",
+    "status": "No Progress",
+    "state_committed": true,
+    "year2_funding_m": 3.32
+   },
+   {
+    "code": "D.2",
+    "text": "Licensure Compacts Licensure compacts provide clinicians with the opportunity to serve patients across State borders, increasing the supply of accessible rural health providers. This State Policy Action captures State participation in licensure compacts for physicians, nursing, EMS, psychology, and Physician Assistants. At baseline, VT was a member of two of the five licensure compacts No State commitment N/A",
+    "status_detail": "",
+    "status": "N/A",
+    "state_committed": false,
+    "year2_funding_m": 1.37
+   },
+   {
+    "code": "D.3",
+    "text": "Scope of Practice Physician supply challenges in rural areas could be mitigated by expanding the scope of practice of other clinicians who have training and competency in caring for many of the cases currently limited to physician care. This State Policy Action captures State efforts to expand scope of practice for Physician Assistants, Nurse Practitioners, Pharmacists, and Dental Hygienists. At baseline, VT had advanced or full scope of practice (SOP) for PAs, NPs, and Dental Hygienists. Pharmacist SOP was considered limited authority No State commitment N/A",
+    "status_detail": "",
+    "status": "N/A",
+    "state_committed": false,
+    "year2_funding_m": 2.57
+   },
+   {
+    "code": "F.1",
+    "text": "Remote Care Services Remote care services can help expand access to care by allowing clinicians to provide care to rural residents from another location via telehealth, remote patient monitoring, or other modalities. This State Policy Action captures State Medicaid coverage of remote care services and the presence of other policies to allow out -of-State clinicians to provide telehealth/remote care. At baseline, VT Medicaid covered all three types of remote care services and had policies in place to allow out-of-State clinicians to provide telehealth/remote care No State commitment (Medicaid coverage for specified remote care services in place; supportive remote care access policies in place) N/A",
+    "status_detail": "",
+    "status": "N/A",
+    "state_committed": false,
+    "year2_funding_m": 2.91
+   }
+  ],
+  "bp1_m": 195.05,
+  "bp2_m": 190.0
+ },
+ "julyStatus": {
+  "closed": 176890170.4,
+  "obligated": 15347078.0,
+  "posted": 2900000.0,
+  "positionsFilled": 18,
+  "positionsRecruiting": 5
+ }
+}
