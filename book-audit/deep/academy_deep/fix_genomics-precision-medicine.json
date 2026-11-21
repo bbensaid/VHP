@@ -1,0 +1,35 @@
+{
+ "tag": "genomics-facts",
+ "note": "HGP cost ~$2.7B (NHGRI; same course states $2.7B elsewhere). PMI: SOTU Jan 20 2015 announcement; $215M proposed Jan 30 2015 (White House fact sheet). Cures NIH Innovation Account = $4.796B (1.8+1.511+1.455+0.03). Vermont Medicaid '20%' unsourced -> removed.",
+ "pairs": [
+  [
+   "President Obama announced a $215 million initiative in his State of the Union address, elevating precision medicine",
+   "President Obama announced the Precision Medicine Initiative in his January 2015 State of the Union address and proposed $215 million for it later that month, elevating precision medicine"
+  ],
+  [
+   "creating a dedicated NIH Innovation Account funded at $4.976 billion over ten years",
+   "creating a dedicated NIH Innovation Account funded at $4.796 billion over ten years"
+  ],
+  [
+   "$4.976B",
+   "$4.796B"
+  ],
+  [
+   "The Human Genome Project took 13 years and cost approximately $3 billion in public funding across an international consortium.",
+   "The Human Genome Project took 13 years and cost approximately $2.7 billion in public funding across an international consortium."
+  ],
+  [
+   "A genetic test that costs $3 billion cannot be part of routine clinical care.",
+   "A genetic test that costs $2.7 billion cannot be part of routine clinical care."
+  ],
+  [
+   "The genome sequencing cost collapse — from $3 billion in 2003 to approximately $200 today —",
+   "The genome sequencing cost collapse — from about $2.7 billion for the first genome (completed 2003) to a few hundred dollars today —"
+  ],
+  [
+   "directly affecting Vermont, where Medicaid covers approximately 20% of the population.",
+   "directly affecting Vermont's Medicaid program."
+  ]
+ ],
+ "residue": "4\\.976|\\$3 billion in public|covers approximately 20% of the population"
+}

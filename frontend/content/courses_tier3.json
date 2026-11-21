@@ -13532,7 +13532,7 @@
                   {
                     "_type": "span",
                     "_key": "ab4genome3s",
-                    "text": "Traditional medicine largely ignored these differences \u2014 not because clinicians didn't know they existed, but because reading an individual's genome was prohibitively expensive. A genetic test that costs $3 billion cannot be part of routine clinical care. A test that costs $200 starts to look like a standard diagnostic. That cost collapse is the engine of the precision medicine revolution.",
+                    "text": "Traditional medicine largely ignored these differences \u2014 not because clinicians didn't know they existed, but because reading an individual's genome was prohibitively expensive. A genetic test that costs $2.7 billion cannot be part of routine clinical care. A test that costs $200 starts to look like a standard diagnostic. That cost collapse is the engine of the precision medicine revolution.",
                     "marks": []
                   }
                 ],
@@ -13547,7 +13547,7 @@
                     "_key": "ab5sg1s1",
                     "value": "$3B",
                     "label": "Cost to sequence first human genome (2003)",
-                    "context": "The Human Genome Project took 13 years and cost approximately $3 billion in public funding across an international consortium. Source: NIH National Human Genome Research Institute.",
+                    "context": "The Human Genome Project took 13 years and cost approximately $2.7 billion in public funding across an international consortium. Source: NIH National Human Genome Research Institute.",
                     "trend": "down"
                   },
                   {
@@ -13621,7 +13621,7 @@
                     "_key": "ab8step4",
                     "number": 4,
                     "title": "Obama's Precision Medicine Initiative (2015)",
-                    "description": "President Obama announced a $215 million initiative in his State of the Union address, elevating precision medicine from a scientific niche to a national policy priority. The initiative funded the creation of a one-million-participant research cohort and accelerated data-sharing infrastructure."
+                    "description": "President Obama announced the Precision Medicine Initiative in his January 2015 State of the Union address and proposed $215 million for it later that month, elevating precision medicine from a scientific niche to a national policy priority. The initiative funded the creation of a one-million-participant research cohort and accelerated data-sharing infrastructure."
                   },
                   {
                     "_key": "ab8step5",
@@ -14099,7 +14099,7 @@
                   {
                     "_type": "span",
                     "_key": "af8future2s",
-                    "text": "CMS is actively evaluating coverage expansion for pharmacogenomic testing panels, and several large commercial insurers have begun offering preemptive pharmacogenomic testing as a covered benefit for primary care populations. If CMS establishes a national coverage determination for broad pharmacogenomic testing, adoption will accelerate significantly across Medicare and Medicaid populations \u2014 directly affecting Vermont, where Medicaid covers approximately 20% of the population.",
+                    "text": "CMS is actively evaluating coverage expansion for pharmacogenomic testing panels, and several large commercial insurers have begun offering preemptive pharmacogenomic testing as a covered benefit for primary care populations. If CMS establishes a national coverage determination for broad pharmacogenomic testing, adoption will accelerate significantly across Medicare and Medicaid populations \u2014 directly affecting Vermont's Medicaid program.",
                     "marks": []
                   }
                 ],
@@ -15219,7 +15219,7 @@
                   {
                     "_type": "span",
                     "_key": "m3s00001",
-                    "text": "In 1990, sequencing a single human genome cost roughly $3 billion and took thirteen years. In 2026, a clinical-grade whole-genome sequence costs under $500 and returns results in days. That price collapse \u2014 faster than Moore's Law for semiconductors \u2014 is the single most important economic force driving modern precision medicine.",
+                    "text": "The Human Genome Project, begun in 1990, took thirteen years and about $2.7 billion to sequence the first human genome. In 2026, a clinical-grade whole-genome sequence costs under $500 and returns results in days. That price collapse \u2014 faster than Moore's Law for semiconductors \u2014 is the single most important economic force driving modern precision medicine.",
                     "marks": []
                   }
                 ],
@@ -15248,7 +15248,7 @@
                     "_key": "m3st0001",
                     "value": "$3B",
                     "label": "Cost to sequence one genome (2001)",
-                    "context": "The Human Genome Project required $3 billion in public funding and over a decade of international collaboration. (NHGRI, 2001)",
+                    "context": "The Human Genome Project required $2.7 billion in public funding and over a decade of international collaboration. (NHGRI, 2001)",
                     "trend": "neutral"
                   },
                   {
@@ -16308,7 +16308,7 @@
                     "_key": "m4st0003",
                     "value": "~150",
                     "label": "FDA-approved genomic biomarker-drug pairs (2026)",
-                    "context": "The FDA Table of Pharmacogenomic Biomarkers lists approximately 150 genomic biomarker-drug pairs with clinical relevance in FDA-approved drug labels as of early 2026. (FDA, 2026)",
+                    "context": "The FDA Table of Pharmacogenomic Biomarkers lists hundreds of gene–drug pairs with pharmacogenomic information in FDA-approved drug labels (517 in its 2022 version). (FDA, 2026)",
                     "trend": "up"
                   }
                 ]
@@ -16844,7 +16844,7 @@
                   {
                     "_type": "span",
                     "_key": "m4s00035",
-                    "text": "The interpretive power of precision medicine depends on the depth of the reference databases used to classify variants and train AI models. Those databases are built from biobanks \u2014 large repositories of biological specimens (blood, tissue, saliva) linked to detailed clinical and phenotypic data. The UK Biobank (500,000 participants), the All of Us Research Program (1 million participants recruited in the U.S.), and the VA Million Veteran Program are among the largest.",
+                    "text": "The interpretive power of precision medicine depends on the depth of the reference databases used to classify variants and train AI models. Those databases are built from biobanks \u2014 large repositories of biological specimens (blood, tissue, saliva) linked to detailed clinical and phenotypic data. The UK Biobank (500,000 participants), the All of Us Research Program (more than 880,000 U.S. participants enrolled by mid-2026, toward a goal of 1 million), and the VA Million Veteran Program are among the largest.",
                     "marks": []
                   }
                 ],

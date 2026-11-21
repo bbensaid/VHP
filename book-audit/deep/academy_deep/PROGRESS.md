@@ -23,3 +23,4 @@ VERIFIED_FACTS.md, the rest against the cited source or a web search. Fixes go o
 | health-equity-sdoh | 417 | infant mortality 5.4→5.6; Joint Commission 2026 NPG update | done |
 | revenue-cycle-management | 474 (2026-11-20 dump) | AR>90 benchmark 15%→10% (internal contradiction; NCDS source) | done 2026-11-20 |
 | hie-health-reform-onboarding | 559 | info-blocking count (unsourced "nearly 1,600 to OIG" → 2,450 claims, healthit.gov July 2026); HIPAA cap $1.9M → $1.5M statutory / $2,134,831 (89 FR 64815); HCP-LAN 2024 downside 28.5% removed (CY2023 figure) | done 2026-11-20 |
+| genomics-precision-medicine | 739 | HGP cost $3B→$2.7B (5 places incl. stat card; course already said $2.7B elsewhere); PMI $215M not in SOTU; Cures NIH Innovation Account $4.976B→$4.796B (HIE course); All of Us "1M recruited"→>880k (NIH, Jun 2026); FDA PGx table "~150 pairs"→517 (2022); BRCA breast risk aligned to NCI (55-72% / 45-69%); unsourced VT Medicaid 20% removed | done 2026-11-20 |

@@ -1,0 +1,15 @@
+{
+ "tag": "genomics-hgp2",
+ "note": "HGP cost $2.7B (NHGRI)",
+ "pairs": [
+  [
+   "\"value\":\"$3B\",\"context\":\"The Human Genome Project required $3 billion in public funding",
+   "\"value\":\"$2.7B\",\"context\":\"The Human Genome Project required $2.7 billion in public funding"
+  ],
+  [
+   "The Human Genome Project required $3 billion in public funding",
+   "The Human Genome Project required $2.7 billion in public funding"
+  ]
+ ],
+ "residue": "required \\$3 billion"
+}

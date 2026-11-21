@@ -1,0 +1,27 @@
+{
+ "tag": "genomics-facts3",
+ "note": "HGP $2.7B (NHGRI). All of Us: NIH news release June 2026, >883,000 enrolled. FDA PGx table: 517 gene-drug pairs (FDA 2022 table, per Pharmacological Reviews). BRCA risk: NCI BRCA fact sheet (BRCA1 55-72%, BRCA2 45-69%), consistent with the course's other lesson.",
+ "pairs": [
+  [
+   "In 1990, sequencing a single human genome cost roughly $3 billion and took thirteen years.",
+   "The Human Genome Project, begun in 1990, took thirteen years and about $2.7 billion to sequence the first human genome."
+  ],
+  [
+   "the All of Us Research Program (1 million participants recruited in the U.S.)",
+   "the All of Us Research Program (more than 880,000 U.S. participants enrolled by mid-2026, toward a goal of 1 million)"
+  ],
+  [
+   "lists approximately 150 genomic biomarker-drug pairs with clinical relevance in FDA-approved drug labels as of early 2026.",
+   "lists hundreds of gene–drug pairs with pharmacogenomic information in FDA-approved drug labels (517 in its 2022 version)."
+  ],
+  [
+   "roughly a 65-74 percent lifetime risk of breast cancer",
+   "roughly a 55-72 percent (BRCA1) or 45-69 percent (BRCA2) lifetime risk of breast cancer"
+  ],
+  [
+   "~65-74% lifetime breast cancer risk",
+   "~55-72% (BRCA1) / 45-69% (BRCA2) lifetime breast cancer risk"
+  ]
+ ],
+ "residue": "approximately 150 genomic biomarker|65-74"
+}

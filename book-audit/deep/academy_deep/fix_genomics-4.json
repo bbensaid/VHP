@@ -1,0 +1,18 @@
+{
+ "tag": "genomics-brca-card",
+ "note": "NCI BRCA fact sheet figures, consistent with lesson text",
+ "pairs": [
+  [
+   "\"context\":\"For BRCA variant carriers (ACOG)\",\"label\":\"Lifetime Breast Cancer Risk\",\"value\":\"65-74%\"",
+   "\"context\":\"BRCA1 55-72%, BRCA2 45-69% (National Cancer Institute)\",\"label\":\"Lifetime Breast Cancer Risk\",\"value\":\"45-72%\""
+  ],
+  [
+   "BRCA risk (65-74% breast); carrier frequency",
+   "BRCA risk; carrier frequency"
+  ]
+ ],
+ "only": [
+  "hereditary-conditions"
+ ],
+ "residue": "65-74"
+}
