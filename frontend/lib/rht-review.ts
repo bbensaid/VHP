@@ -9,6 +9,7 @@
 
 import statesData from "@/lib/data/rht-review/states.json";
 import vermontData from "@/lib/data/rht-review/vermont-year1.json";
+import notesData from "@/lib/data/rht-review/state-notes.json";
 
 export type PolicyAction = {
   code: string;
@@ -60,3 +61,14 @@ export const CMS_DOCS = {
   obligated: { label: "CMS, RHTP Obligated Funds Report (state-reported data as of Jul 31, 2026)", url: statesData.sources.obligated },
   snapshot: { label: "CMS, RHT State Program Snapshots, 2026 release (Budget Period 2)", url: statesData.sources.snapshot },
 };
+
+// Sourced review notes for states beyond the CMS data (lib/data/rht-review/state-notes.json).
+export type StateNotes = {
+  asOf: string;
+  notes: { text: string; src: string }[];
+  quotes: { q: string; who: string; src: string }[];
+  sources: Record<string, { label: string; url: string }>;
+};
+export function stateNotes(slug: string): StateNotes | undefined {
+  return (notesData as unknown as Record<string, StateNotes>)[slug];
+}

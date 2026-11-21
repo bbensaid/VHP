@@ -3,7 +3,7 @@
 // (award tables, the obligated-funds report and the 2026 state snapshots) until its own review is written.
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { RHT_STATES, rhtState, CMS_DOCS, usd, usdM, pct, change } from "@/lib/rht-review";
+import { RHT_STATES, rhtState, stateNotes, CMS_DOCS, usd, usdM, pct, change } from "@/lib/rht-review";
 import { Ext, Section, Stat, SourceNote, StatusPill } from "@/components/rht-review/ui";
 import VermontYear1Review from "@/components/rht-review/VermontYear1Review";
 
@@ -27,6 +27,7 @@ export default async function RhtStatePage({ params }: { params: Promise<{ state
   if (s.slug === "vermont") return <VermontYear1Review />;
 
   const ch = change(s);
+  const notes = stateNotes(s.slug);
   const rank = [...RHT_STATES].sort((a, b) => b.fy2027 - a.fy2027).findIndex((x) => x.slug === s.slug) + 1;
   return (
     <div className="max-w-5xl mx-auto px-6 py-12">
@@ -35,10 +36,33 @@ export default async function RhtStatePage({ params }: { params: Promise<{ state
         <span className="bg-teal-100 text-teal-700 border border-teal-200 text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded">Health Transformation Review</span>
         <h1 className="ty-h1 font-black text-slate-900 dark:text-slate-100 mt-4 mb-3">{s.state}: Rural Health Transformation Program</h1>
         <p className="text-sm text-slate-600 dark:text-slate-300 max-w-3xl leading-relaxed">
-          This page is built from CMS&apos;s own documents. A full review of {s.state}&apos;s Year 1 — its state agreements, budget and outcomes, as in our{" "}
+          This page is built from CMS&apos;s own documents{notes ? <> and the reporting cited in the review notes</> : null}. A full review of {s.state}&apos;s Year 1 — its state agreements, budget and outcomes, as in our{" "}
           <Link href="/rht-review/vermont" className="underline text-teal-700">Vermont review</Link>{" "}— has not been written yet.
         </p>
       </header>
+
+      {notes && (
+        <Section label="Review notes" title={`What has been reported about ${s.state}'s Year 1`}>
+          <ul className="text-sm text-slate-700 dark:text-slate-300 space-y-3 list-disc pl-5">
+            {notes.notes.map((n, i) => (
+              <li key={i}>{n.text}{" "}<span className="text-[11px] text-slate-500">(<Ext href={notes.sources[n.src].url}>source</Ext>)</span></li>
+            ))}
+          </ul>
+          {notes.quotes.length > 0 && (
+            <div className="space-y-3 mt-6">
+              {notes.quotes.map((q, i) => (
+                <blockquote key={i} className="border-l-4 border-teal-300 pl-4">
+                  <p className="text-sm italic text-slate-800 dark:text-slate-200">“{q.q}”</p>
+                  <footer className="text-[11px] text-slate-500 mt-1">{q.who}{" "}— <Ext href={notes.sources[q.src].url}>{notes.sources[q.src].label}</Ext></footer>
+                </blockquote>
+              ))}
+            </div>
+          )}
+          <SourceNote>
+            Compiled {notes.asOf}{" "}from: {Object.values(notes.sources).map((x, i) => <span key={x.url}>{i > 0 ? "; " : ""}<Ext href={x.url}>{x.label}</Ext></span>)}. Notes restate only what these sources report.
+          </SourceNote>
+        </Section>
+      )}
 
       <Section label="Awards" title="Year 1 and Year 2">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
