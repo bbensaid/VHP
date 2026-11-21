@@ -645,6 +645,14 @@ CATALOG = [
     # ACADEMY
     # ─────────────────────────────────────────────────────────────────────────
     {
+        "id": "course-medicare-for-all",
+        "label": "Academy: Medicare for All Through the Five-Pillar Test",
+        "url": "/academy/tracks/medicare-for-all-five-pillar-test",
+        "category": "Academy",
+        "description": "Take an 18-lesson course on Medicare for All and single payer: Vermont's Act 48 attempt, the federal walls (Medicare, ERISA, waivers), the bills and CBO evidence, a five-pillar assessment, and Vermont hospital modeling.",
+        "keywords": ["medicare for all course", "single payer course", "act 48 lesson", "erisa lesson", "section 1332", "learn medicare for all"],
+    },
+    {
         "id": "personalized-learning",
         "label": "Personalized Learning Path",
         "url": "/academy/personalized-learning",
