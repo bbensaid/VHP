@@ -496,6 +496,28 @@ slugs map to their replacements; deleted duplicates are redirected in
 - `node frontend/scripts/audit-courses.mjs` must show every course DONE
   (299/299 on 2026-11-15).
 - `AcademyContent.tsx` is the gold-standard renderer.
+- Tables are `code` blocks holding a JSON **string** (column order preserved). Never post
+  them as object arrays: Sanity alphabetizes object keys (34 tables had to be re-posted
+  2026-11-20 with `frontend/scripts/_fix_table_order.mjs`; check with
+  `node frontend/scripts/_find_object_tables.mjs out.json` — expect 0).
+
+### 11.1 RHT Program Review pages (`/rht-review`, added 2026-11-20)
+
+Every figure comes from downloaded primary documents; nothing is typed by hand.
+
+| Data file | Built by | From |
+|---|---|---|
+| `frontend/lib/data/rht-review/states.json` | `book-audit/deep/rht/extract_cms.py` → `build_states.py` | CMS award tables, CMS State Program Snapshots (BP2), CMS RHTP Obligated Funds Report |
+| `frontend/lib/data/rht-review/vermont-year1.json` | `book-audit/deep/rht/build_vermont.py` | State of Vermont executed-agreements list, Jan 30 budget narrative, July JFC update |
+| `frontend/lib/data/rht-review/state-notes.json` | edited directly | One opened source per note (CMS state press releases, state agencies, news); archived text in `book-audit/deep/sources/rht_states/` |
+
+**Refresh when CMS updates its obligated-funds report** (it said it would after the
+Nov 30, 2026 quarterly reports): download the new PDF into `book-audit/deep/sources/rht_vt/`,
+point `extract_cms.py` at it, run `extract_cms.py` then `build_states.py`, check the
+printed totals (each year must sum to $10.0B), and run `npx playwright test e2e/rht-review.spec.ts`
+(it pins source figures, so a changed figure fails until the test is updated to the new source).
+For Vermont, re-download the state's agreements page and run `build_vermont.py`
+(it asserts the list total equals the state's printed total).
 
 ---
 
