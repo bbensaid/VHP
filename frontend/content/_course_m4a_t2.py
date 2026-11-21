@@ -76,11 +76,12 @@ L3 = [
         ("It relied entirely on a federal block grant approved in 2011", False),
         ("It required employers to pay premiums directly to the Green Mountain Care Board", False),
     ], "Act 48 created the Green Mountain Care Fund (§ 1829) and an annual budget process (§ 1828), ordered financing plans by January 15, 2013 (Sec. 9), and listed enactment of a financing law among the conditions for implementation (§ 1822). The 11.5% payroll tax appeared only in the administration's December 2014 analysis, and was never enacted."),
-    *sources(['act48', 'hsiao', 'gmc14', 'bookA', 'act48page'], {
+    *sources(['act48', 'hsiao', 'gmc14', 'bookA', 'book2', 'act48page'], {
         'act48': "Sec. 1a principles; §§ 1801, 1821, 1822, 1824, 1825, 1828, 1829, 9374; Sec. 9 financing plans; Sec. 34 exchange dates; approval May 26, 2011",
         'hsiao': "design parameters, payroll cap, savings range and caveats",
         'gmc14': "pp. 7, 20: the 2014 design's ~94% actuarial value, 6% out-of-pocket and excluded benefits",
         'bookA': "the Green Mountain Care Board's budget-setting role, FY2025 cap and enforcement",
+        'book2': "the book's own account of Act 48 and why the plan stopped",
         'act48page': "timeline and conditions table on the platform",
     }),
 ]
@@ -236,12 +237,13 @@ L5 = [
         ("Because federal law prohibited Vermont from enacting a payroll tax", False),
         ("Because the Green Mountain Care Board voted to reject the benefit package", False),
     ], "Act 48 (33 V.S.A. § 1822) required, among other things, a law establishing the financing and a Board determination that the plan would not have a negative aggregate impact on Vermont's economy and that its financing was sustainable. The administration's own balance sheet could not support those findings, so the plan stopped at that condition."),
-    *sources(['gmc14', 'lunge15', 'act48', 'book1', 'bookA', 'act68'], {
+    *sources(['gmc14', 'lunge15', 'act48', 'book1', 'bookA', 'book2', 'act68'], {
         'gmc14': "p. 6 decision and rationale; Table 13 deficits from 2019",
         'lunge15': "small-business transition cost; rejected alternatives (80% plan, commuters, provider taxes)",
         'act48': "§ 1821 cost-containment tools; § 1822 implementation conditions",
         'book1': "§1.12.1: Policy enables Economics as a critical-path dependency",
         'bookA': "the Green Mountain Care Board's role today",
+        'book2': "the Policy-to-Economics reading of the stop, in the book",
         'act68': "hospital global budgets from HFY2028 to the extent resources allow, Medicare included where federal law permits, Medicaid excluded; reference-based pricing",
     }),
 ]
