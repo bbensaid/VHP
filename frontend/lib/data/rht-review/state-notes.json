@@ -22,6 +22,10 @@
    {
     "text": "CMS records New Hampshire as having put its entire Year 1 award to work by July 31, 2026 (state-reported obligations). The same reporting notes that the Executive Council approved the first-year distribution plan in March and that many requests for proposals were not released until October and November 2026.",
     "src": "nh1"
+   },
+   {
+    "text": "CMS announced on Oct 16, 2026: “Today, the Trump Administration announced more than $11 million in Rural Health Transformation Program (RHTP) funding to strengthen emergency medical services and expand Mobile Integrated Health across rural New Hampshire. This investment will support Mobile Integrated Health programs that bring healthcare services directly into rural communities, while helping EMS agencies respond to rising demand and workforce pressures.”",
+    "src": "cms1"
    }
   ],
   "quotes": [
@@ -40,6 +44,10 @@
    "nh1": {
     "label": "Granite State News Collaborative, “N.H. rural health program director says program is progressing ‘very well’” (Nov 19, 2026)",
     "url": "https://www.collaborativenh.org/granite-solutions-coronavirus-1/2026/11/19/nh-rural-health-program-director-says-program-is-progressing-very-well"
+   },
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces More Than $11 Million to Strengthen Rural EMS and Expand Mobile Healthcare Across New Hampshire” (Oct 16, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-more-11-million-strengthen-rural-ems-expand-mobile-healthcare-across"
    }
   }
  },
@@ -81,6 +89,10 @@
    {
     "text": "The remaining $104 million of the Year 1 award is going to more than 100 contracts across 30 projects overseen by 10 state agencies, according to CT Mirror.",
     "src": "ct2"
+   },
+   {
+    "text": "CMS announced on Sep 17, 2026: “The Trump Administration announced today that a $50 million investment is being delivered to improve rural health and expand access to high-quality care for Connecticut residents through the federal Rural Health Transformation Program (RHTP). This funding will help four rural hospital systems modernize facilities, expand service capacity, and stabilize essential healthcare infrastructure to better serve rural Connecticut communities.” It added: “Connecticut's RHTP strategy focuses on aligning hospital services with community needs, reducing gaps in access, and ensuring rural residents can receive care locally. This investment builds on the Administration’s more than $7 million in funding previously announced to support prevention and physical activity in rural Connecticut communities.”",
+    "src": "cms1"
    }
   ],
   "quotes": [
@@ -98,6 +110,10 @@
    "ct2": {
     "label": "CT Mirror, “Four rural CT hospitals receive $46 million in federal health grants” (Sep 16, 2026)",
     "url": "https://ctmirror.org/2026/09/16/ct-rural-health-transformation-grants-awarded/"
+   },
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $50 Million to Optimize Care Delivery and Improve Rural Hospital Infrastructure in Connecticut” (Sep 17, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-50-million-optimize-care-delivery-improve-rural-hospital"
    }
   }
  },
@@ -137,12 +153,20 @@
    {
     "text": "In September 2026 CMS announced $5.48 million of Rhode Island's award committed to 14 local education agencies and schools for healthcare-focused career and technical education, including $928,574 for a K-12 Biomedical Sciences pathway, $1,360,343 for a pipeline anchored by an on-campus physical therapy clinic, and $710,619 for the state's first Pre-Medicine CTE program.",
     "src": "ri1"
+   },
+   {
+    "text": "CMS announced on Sep 04, 2026: “The Trump Administration announced today that a $5.48 million investment is being delivered to strengthen the healthcare workforce across rural communities in Rhode Island through the federal Rural Health Transformation Program (RHTP). Rhode Island is committing this funding to 14 Local Education Agencies and schools to expand healthcare-focused Career and Technical Education (CTE) opportunities for students across the state.”",
+    "src": "cms1"
    }
   ],
   "quotes": [],
   "sources": {
    "ri1": {
     "label": "CMS, “Trump Administration Announces $5.48 Million to Strengthen Healthcare Workforce Pipeline in Rural Rhode Island” (Sep 4, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-5-48-million-strengthen-healthcare-workforce-pipeline-rural-rhode"
+   },
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $5.48 Million to Strengthen Healthcare Workforce Pipeline in Rural Rhode Island” (Sep 04, 2026)",
     "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-5-48-million-strengthen-healthcare-workforce-pipeline-rural-rhode"
    }
   }
@@ -157,6 +181,10 @@
    {
     "text": "On September 4, 2026 the governor announced more than $76 million through the Rural Community Health Integration Initiative for 90 awards to 56 organizations — about $22.7 million in planning awards and $53.5 million in implementation awards — part of the more than $212 million New York received for Year 1.",
     "src": "ny1"
+   },
+   {
+    "text": "CMS announced on Sep 04, 2026: “The Trump Administration announced today that a $76 million investment is being delivered to improve regional healthcare networks and deliver technology-enhanced primary care for New Yorkers through the federal Rural Health Transformation Program (RHTP). This investment will support coordinated care to expand access to healthcare services, allowing rural hospitals and community providers to build and grow integrated care networks. The funds will also help address rural healthcare workforce needs through the expansion of enhanced clinical rotations, employer-based training programs, and remote-supported training technologies.”",
+    "src": "cms2"
    }
   ],
   "quotes": [
@@ -174,6 +202,618 @@
    "cms": {
     "label": "CMS, RHTP Obligated Funds Report (data as of Jul 31, 2026)",
     "url": "https://www.medicaid.gov/resources-for-states/rural-health/rhtp-resources/RHTP-Obligated-Funds-20261014.pdf"
+   },
+   "cms2": {
+    "label": "CMS, “Trump Administration Announces $76 Million to Strengthen Regional Coordination and Modernize Healthcare Technology for New York” (Sep 04, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-76-million-strengthen-regional-coordination-modernize-healthcare"
+   }
+  }
+ },
+ "pennsylvania": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Aug 19, 2026: “The Trump Administration announced today that a $35 million investment is being delivered to improve health outcomes for Pennsylvanians through the federal Rural Health Transformation Program (RHTP). This investment will expand, upgrade and modernize screening technology, buying equipment to bring additional operating rooms online, and expanding transportation options removing access barriers for patients. This investment in supplies and equipment to help improve care and services advances the Administration’s commitment to strengthen rural healthcare and ensures Americans can access high-quality no matter their zip code.”",
+    "src": "cms1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $35 million Investment to Advance Screening Technology, Secure Additional Operating Rooms, and Modernize Rural Pennsylvania Healthcare” (Aug 19, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-35-million-investment-advance-screening-technology-secure-additional"
+   }
+  }
+ },
+ "south-dakota": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Aug 19, 2026: “The Trump Administration announced a $90 million investment is being delivered to South Dakota through the federal Rural Health Transformation Program (RHTP) to accelerate digital health modernization, strengthen cybersecurity, and enhance interoperability across rural and underserved communities. This investment will strengthen South Dakota’s health workforce, improve infrastructure, advance technology, and support innovative approaches tailored to the unique healthcare needs across the state.”",
+    "src": "cms1"
+   },
+   {
+    "text": "CMS announced on Oct 02, 2026: “Today, the Trump Administration announced $7.2 million in Rural Health Transformation Program (RHTP) funding to modernize emergency medical services (EMS) for South Dakota. This investment will provide first responders with modern telemedicine tools, expanded training, and faster access to patient data, helping them respond to emergencies and better connect rural patients with care across South Dakota.” It added: “This transformational funding will deliver $7.2 million to 25 projects led by local ambulance services, hospitals, community organizations, education partners, and statewide EMS support organizations. Projects will expand ambulance-based telemedicine, fund EMS workforce training, improve how EMS crews share patient data with hospitals, modernize dispatch and communications systems, and support data-driven quality improvement.”",
+    "src": "cms2"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $90 million to Modernize and Improve IT and Interoperability for South Dakota” (Aug 19, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-90-million-modernize-improve-it-interoperability-south-dakota"
+   },
+   "cms2": {
+    "label": "CMS, “Trump Administration Announces $7.2 Million to Expand Ambulance-Based Telemedicine and Upgrade Emergency Communications Across South Dakota” (Oct 02, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-7-2-million-expand-ambulance-based-telemedicine-upgrade-emergency"
+   }
+  }
+ },
+ "west-virginia": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Aug 20, 2026: “The Trump Administration announced an additional $4.2 million, made possible through the federal Rural Health Transformation Program (RHTP), is being put to work in West Virginia to expand patients’ transportation options and remove service barriers.”",
+    "src": "cms1"
+   },
+   {
+    "text": "CMS announced on Sep 09, 2026: “The Trump Administration announced today that a $4.8 million investment is being delivered to the Coal State through the federal Rural Health Transformation Program (RHTP). This investment will help recruit and retain the healthcare workforce across West Virginia and expand access to primary, behavioral, maternal, emergency, specialty, and preventive care services.” It added: “Today’s announcement delivers two funding awards of $2.4 million each. With $2.4 million to support a statewide recruitment and relocation program for licensed healthcare professionals to address workforce shortages in rural communities, with a first-year goal of recruiting at least 125 licensed healthcare professionals.”",
+    "src": "cms2"
+   },
+   {
+    "text": "CMS announced on Oct 30, 2026: “Today, the Trump Administration announced more than $19 million in Rural Health Transformation Program (RHTP) funding through 11 awards to strengthen and modernize healthcare delivery throughout rural West Virginia. This investment will expand access to virtual and specialty care, support mobile health services and chronic disease management, grow the rural healthcare workforce, and modernize technology and health data systems across the state.”",
+    "src": "cms3"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $4.2 Million to Expand Medical Transportation and Improve Patient Access to Care Across West Virginia” (Aug 20, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-4-2-million-expand-medical-transportation-improve-patient-access-care"
+   },
+   "cms2": {
+    "label": "CMS, “Trump Administration Announces $4.8 Million to Strengthen West Virginia’s Rural Healthcare Workforce and Expand Preventive Care” (Sep 09, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-4-8-million-strengthen-west-virginias-rural-healthcare-workforce"
+   },
+   "cms3": {
+    "label": "CMS, “Trump Administration Announces More Than $19 Million to Expand Telehealth, Specialty Care, and the Healthcare Workforce Across West Virginia” (Oct 30, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-more-19-million-expand-telehealth-specialty-care-healthcare-workforce"
+   }
+  }
+ },
+ "alabama": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Aug 24, 2026: “The Trump Administration announced today that a $144 million investment is being delivered to improve health outcomes for Alabamians through the federal Rural Health Transformation Program (RHTP) This investment will support 138 grants to expand access to care, modernize healthcare technology and infrastructure and strengthen the rural healthcare workforce.”",
+    "src": "cms1"
+   },
+   {
+    "text": "CMS announced on Oct 01, 2026: “The Trump Administration announced today that nearly $55 million in federal funding is being delivered to strengthen the rural healthcare workforce and expand access to maternal, emergency, and preventive care for Alabamians through the Rural Health Transformation Program (RHTP). The investment will support 34 grants to healthcare providers and institutions serving rural communities across Alabama.”",
+    "src": "cms2"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $144 million to Improve Mental Health, Substance Abuse, Emergency and Maternal Care and Expand the Healthcare Workforce in Alabama” (Aug 24, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-144-million-improve-mental-health-substance-abuse-emergency-maternal"
+   },
+   "cms2": {
+    "label": "CMS, “Trump Administration Announces Nearly $55 Million to Expand Rural Maternal and Emergency Care, Cancer Screening, and Alabama’s Rural Healthcare Workforce” (Oct 01, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-nearly-55-million-expand-rural-maternal-emergency-care-cancer"
+   }
+  }
+ },
+ "alaska": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Aug 25, 2026: “The Trump Administration announced today that a $160 million investment is being delivered to improve health outcomes for Alaskans through the Rural Health Transformation Program (RHTP). This investment will deliver funding to 142 projects across the state to advance technology, expand coordinated statewide care, and ensure seamless access for patients regardless of their zip code.”",
+    "src": "cms1"
+   },
+   {
+    "text": "CMS announced on Oct 22, 2026: “Today, the Trump Administration announced nearly $249 million in Rural Health Transformation Program (RHTP) funding for 254 projects that will strengthen healthcare for rural Alaskans. This investment will expand maternal and child health services, strengthen the rural health workforce, bring new technology to village clinics, and improve access to care in communities statewide. The announcement completes Alaska's Year 1 RHTP funding cycle.”",
+    "src": "cms2"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $160 Million to Bring Cutting-Edge Technology, Drones Prescription Deliveries, Surgical Robotics and More to Alaska” (Aug 25, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-160-million-bring-cutting-edge-technology-drones-prescription"
+   },
+   "cms2": {
+    "label": "CMS, “Trump Administration Announces Nearly $249 Million to Bring Healthcare Closer to Home for Rural Alaskans” (Oct 22, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-nearly-249-million-bring-healthcare-closer-home-rural-alaskans"
+   }
+  }
+ },
+ "ohio": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Aug 26, 2026: “The Trump Administration announced today that a $3.15 million investment is being delivered to strengthen pharmacy connectivity and improve care across rural communities in Ohio through the federal Rural Health Transformation Program (RHTP). The investments will connect independent and retail pharmacies, federally qualified health centers, and outpatient hospital pharmacies across Ohio’s 73 rural counties to improve rural healthcare providers’ integrated access to critical prescription drug information.” It added: “The funding will support efforts to improve integrated access for rural healthcare providers to help address low rates of prescription drug monitoring program (PDMP) integration within electronic health records and pharmacy dispensing systems. This program will help Ohio prescribers and pharmacists avoid potentially life-threatening drug interactions and combat the occurrence of individuals fraudulently obtaining controlled substances from multiple healthcare providers.”",
+    "src": "cms1"
+   },
+   {
+    "text": "CMS announced on Oct 16, 2026: “Today, the Trump Administration announced $92 million in Rural Health Transformation Program (RHTP) funding to help rural providers connect patients to coordinated, high-quality care and bring essential health services closer to home for Ohioans. This investment will support coordinated care networks, strengthen maternal health services, and upgrade equipment and facilities at 22 rural hospitals across Ohio.” It added: “This transformational funding will deliver $31.4 million to establish or expand coordinated rural care networks, including Clinically Integrated Networks (CINs) and Rural Health Innovation Hubs, that connect physicians, hospitals, clinics, emergency medical services, behavioral health providers, pharmacists, and higher education institutions so they can coordinate care more effectively.”",
+    "src": "cms2"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $3.15 Million to Expand Pharmacy Connectivity Throughout Rural Ohio Communities” (Aug 26, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-3-15-million-expand-pharmacy-connectivity-throughout-rural-ohio"
+   },
+   "cms2": {
+    "label": "CMS, “Trump Administration Announces $92 Million to Coordinate Rural Hospital Networks, Improve Maternal Care, and Expand Medical Services Across Ohio” (Oct 16, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-92-million-coordinate-rural-hospital-networks-improve-maternal-care"
+   }
+  }
+ },
+ "georgia": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Aug 27, 2026: “The Trump Administration announced today that a $93.3 million investment is being delivered to help rural hospitals advance new state-of-the-art models of care and improve health outcomes for Georgians through the federal Rural Health Transformation Program (RHTP).” It added: “This investment will help 87 rural hospitals prepare for value-based care, expand training and recruitment for nurses, EMTs and paramedics, and improve access to maternal and behavioral health services, newborn screening, and other critical health services through telehealth, transportation and expanded care networks. It will also bring next-generation technology to rural communities—including surgical robotics, dementia care capacity, and telehealth infrastructure—to modernize care.”",
+    "src": "cms1"
+   },
+   {
+    "text": "CMS announced on Oct 23, 2026: “Today, the Trump Administration announced nearly $219 million in Rural Health Transformation Program (RHTP) funding to expand the rural healthcare workforce and advance technology-enabled care. This investment will support clinician recruitment and training, expand mobile and telehealth services, and modernize rural hospitals and clinics to help more Georgians receive care in their communities. Georgia has committed its full $219 million in funding to improve healthcare in rural communities across the state.” It added: “This transformational $219 million investment supports five coordinated initiatives addressing healthcare access across Georgia’s 126 rural and partially rural counties. Investments will deploy mobile clinics and telehealth pods; strengthen maternal, pediatric, behavioral, and preventive care; and support training, residencies, and incentives to attract and retain rural clinicians.”",
+    "src": "cms2"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $93.3 Million to Expand Telehealth Services, Advance Surgical Robotics and Transform Rural Healthcare Access Across Georgia” (Aug 27, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-93-3-million-expand-telehealth-services-advance-surgical-robotics"
+   },
+   "cms2": {
+    "label": "CMS, “Trump Administration Announces Nearly $219 Million to Expand the Rural Healthcare Workforce and Advance Technology-Enabled Care Across Georgia” (Oct 23, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-nearly-219-million-expand-rural-healthcare-workforce-advance"
+   }
+  }
+ },
+ "virginia": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Aug 28, 2026: “The Trump Administration announced today that a $122 million investment is being delivered to improve health outcomes for Virginians through the federal Rural Health Transformation (RHTP). These investments will expand access to care by bringing more healthcare services closer to where people live. Funding will expand remote patient monitoring, virtual care, mobile clinics, maternal care and increase community paramedics.”",
+    "src": "cms1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $122 Million to Expand Healthcare Access, Workforce and Innovation Across Virginia” (Aug 28, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-122-million-expand-healthcare-access-workforce-innovation-across"
+   }
+  }
+ },
+ "arkansas": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Aug 31, 2026: “The Trump Administration announced today that a $149.3 million investment is being delivered to transform rural healthcare delivery for Arkansans through the federal Rural Health Transformation Program (RHTP).”",
+    "src": "cms1"
+   },
+   {
+    "text": "CMS announced on Sep 24, 2026: “The Trump Administration announced today that a $54.6 million investment is being delivered to recruit, train, and retain Arkansas’ rural healthcare workforce, expand maternal healthcare services, and help fight chronic disease in the state through the federal Rural Health Transformation Program (RHTP).” It added: “Supporting 54 projects across rural communities in Arkansas, $27.4 of this funding, will support 30 projects focused on community-based nutrition, physical activity, preventive care, and chronic disease management. An additional $27.2 million will support 24 projects focused on recruiting, training, and retaining the rural healthcare workforce. Project outlines include mobile preventive screenings; new rural residency and clinical training programs; and expanded EMT, nursing, maternal health, and behavioral health workforce development.”",
+    "src": "cms2"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $149.3 Million to Expand Telehealth and Increase Access to Specialty Care and Preventive Screenings in Rural Arkansas” (Aug 31, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-149-3-million-expand-telehealth-increase-access-specialty-care"
+   },
+   "cms2": {
+    "label": "CMS, “Trump Administration Announces $54.6 Million to Fight Chronic Disease, Expand Maternal Healthcare Services, and Build Arkansas’ Rural Health Workforce” (Sep 24, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-54-6-million-fight-chronic-disease-expand-maternal-healthcare"
+   }
+  }
+ },
+ "hawaii": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Sep 01, 2026: “The Trump Administration announced today that a $58 million investment is being delivered to improve health outcomes for Hawaiians through the federal Rural Health Transformation Program (RHTP). This investment will strengthen Hawaii’s healthcare workforce, improve infrastructure, advance technology, and support innovative approaches tailored to the unique healthcare needs across the state.”",
+    "src": "cms1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $58 million to Deliver New Ambulances and Upgrade Emergency Communications Systems Across Hawaii” (Sep 01, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-58-million-deliver-new-ambulances-upgrade-emergency-communications-0"
+   }
+  }
+ },
+ "indiana": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Sep 03, 2026: “The Trump Administration announced today that a $120 million investment is being delivered to strengthen rural health and expand access to high-quality care for Hoosiers through the federal Rural Health Transformation Program (RHTP). These investments will support locally driven solutions across eight regions of the state including removing barriers to technology, transportation, and health education. They will provide nutritional support and counseling with community-specific pilot programs that will address the impact food and nutrition have on health and healthcare.”",
+    "src": "cms1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $120 Million to Expand Maternal and Infant Health Services, Increase Primary Care Access and Grow the Healthcare Workforce Across Indiana” (Sep 03, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-120-million-expand-maternal-infant-health-services-increase-primary"
+   }
+  }
+ },
+ "michigan": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Sep 04, 2026: “The Trump Administration announced today that a $25 million investment is being delivered to improve health outcomes for Michiganders through the federal Rural Health Transformation Program (RHTP). This investment will help rural communities in Michigan overcome barriers to care and build stronger, more connected health systems by modernizing technology; upgrading digital systems; improving data exchange and connectivity; and expanding telehealth, remote patient monitoring, and technology-driven care coordination.” It added: “More than $16 million will help rural healthcare providers upgrade their technology and digital systems so doctors and patients can better connect and coordinate care, while more than $9 million will improve high-speed internet and other connectivity needed to deliver healthcare in rural areas.”",
+    "src": "cms1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Invests $25 Million to Modernize Healthcare Technology, Expand Telehealth, and Improve High-Speed Internet Connectivity Across Michigan” (Sep 04, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-invests-25-million-modernize-healthcare-technology-expand-telehealth-improve"
+   }
+  }
+ },
+ "kansas": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Sep 14, 2026: “The Trump Administration announced today that a nearly $17 million investment is being delivered to support rural healthcare technology and increase patient transportation options for Kansans through the federal Rural Health Transformation Program (RHTP).” It added: “As part of today’s announcement, $16 million will be allocated to Emerging Technology Grants to help 14 rural providers adopt technologies like diagnostic tools and remote patient monitoring. An additional $780,000 will support the Interfacility Transport Project to improve regional transportation coordination, helping rural patients safely reach specialty and behavioral healthcare faster.”",
+    "src": "cms1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces Nearly $17 Million to Adopt Emerging Healthcare Technologies and Improve Patient Transportation Between Facilities Across Rural Kansas” (Sep 14, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-nearly-17-million-adopt-emerging-healthcare-technologies-improve"
+   }
+  }
+ },
+ "mississippi": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Sep 15, 2026: “The Trump Administration announced today that more than $104 million in federal Rural Health Transformation Program (RHTP) funding is being put to work to modernize rural healthcare, expand access to services, and strengthen care delivery for Mississippians. This investment will support 167 grants across rural provider technology, capital and care-gap closure, and telehealth programs.”",
+    "src": "cms1"
+   },
+   {
+    "text": "CMS announced on Oct 21, 2026: “Today, the Trump Administration announced $32 million in Rural Health Transformation Program (RHTP) funding to strengthen Mississippi’s rural healthcare workforce and expand access to emergency mental health services. This investment will provide 60 awards for rural healthcare providers and workforce programs across Mississippi.”",
+    "src": "cms2"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $104 Million to Transform Rural Healthcare Across Mississippi Through Cutting-Edge Technology and Expanded Care Closer to Home” (Sep 15, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-104-million-transform-rural-healthcare-across-mississippi-through"
+   },
+   "cms2": {
+    "label": "CMS, “Trump Administration Announces $32 Million to Recruit Rural Doctors, Train Healthcare Workers and Expand Emergency Mental Healthcare Across Mississippi” (Oct 21, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-32-million-recruit-rural-doctors-train-healthcare-workers-expand"
+   }
+  }
+ },
+ "south-carolina": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Sep 17, 2026: “The Trump Administration announced today that a $167 million investment is being delivered to expand local access, modernize technology and infrastructure, improve prevention, and strengthen workforce capacity for South Carolinians through the federal Rural Health Transformation Program (RHTP). This investment will give residents more ways to access primary care, maternal and infant health, pediatrics, wellness, and behavioral health through new and modernized care locations, mobile units, telehealth, and other healthcare technologies such as local 24-hour pharmacy kiosks.”",
+    "src": "cms1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $167 Million to Build Rural Care Sites, Upgrade Health Technology, and Strengthen Prevention Across South Carolina” (Sep 17, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-167-million-build-rural-care-sites-upgrade-health-technology"
+   }
+  }
+ },
+ "new-mexico": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Sep 21, 2026: “The Trump Administration announced today that a $74 million investment is being delivered to improve access to healthcare for New Mexicans through the federal Rural Health Transformation Program (RHTP). This investment will support six Regional Hub Organizations lead Healthy Horizons, one part of New Mexico's five-year RHTP strategy that supports better access to specialty, maternal, behavioral health, chronic disease, and other health care services in rural, frontier, and tribal communities.”",
+    "src": "cms1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $74 Million to Expand Specialty, Maternal, and Behavioral Healthcare Across Rural New Mexico” (Sep 21, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-74-million-expand-specialty-maternal-behavioral-healthcare-across-0"
+   }
+  }
+ },
+ "missouri": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Sep 22, 2026: “The Trump Administration announced today that more than $45 million in Rural Health Transformation Program (RHTP) funding is being delivered to support rural healthcare for Missouri residents. This investment will support hospital infrastructure improvements, expand behavioral and maternal healthcare access, and strengthen the rural emergency medical services workforce.” It added: “The announcement includes approximately $35 million to support 20 rural hospital projects — covering facility improvements, building system upgrades, new diagnostic equipment, and renovated critical care and treatment spaces. It also includes up to $6.4 million to connect rural providers with behavioral health and perinatal specialists, including rapid psychiatric consultations, often within 30 minutes, for children and families, along with referral services, provider training, and additional support for pregnant and postpartum patients.”",
+    "src": "cms1"
+   },
+   {
+    "text": "CMS announced on Oct 13, 2026: “Today, the Trump Administration announced more than $2.3 million in federal Rural Health Transformation Program (RHTP) funding to strengthen Missouri’s rural healthcare workforce and expand access to maternal care. This investment supports two targeted workforce initiatives in Missouri: expanding affordable, dependable childcare for rural healthcare professionals and delivering funding to establish a certified nurse midwife training program.” It added: “This transformational funding will deliver $1.46 million to tackle healthcare recruitment and retention challenges across rural Missouri. The funding will expand a cost-sharing childcare program that brings the state, rural health employers, and families together to make dependable childcare more affordable for healthcare workers, providing peace of mind that their loved ones are cared for while they care for their patients.”",
+    "src": "cms2"
+   },
+   {
+    "text": "CMS announced on Oct 30, 2026: “Today, the Trump Administration announced $39.7 million in Rural Health Transformation Program (RHTP) funding to modernize rural healthcare services and expand access to care across Missouri. This investment will support 26 rural healthcare providers as they renovate, reconfigure, equip, or repurpose existing facilities, to expand maternal health, behavioral health, diagnostic, outpatient, and chronic disease management services across Missouri.”",
+    "src": "cms3"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces More Than $45 Million to Upgrade Rural Missouri Hospitals, Connect Families to Rapid Psychiatric Consultations and Maternal Care, and Train More EMS Professionals Across Missouri” (Sep 22, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-more-45-million-upgrade-rural-missouri-hospitals-connect-families"
+   },
+   "cms2": {
+    "label": "CMS, “Trump Administration Announces New Funding to Support Rural Healthcare Workers and Expand Maternal Care Across Missouri” (Oct 13, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-new-funding-support-rural-healthcare-workers-expand-maternal-care"
+   },
+   "cms3": {
+    "label": "CMS, “Trump Administration Announces $39.7 Million to Modernize Rural Healthcare Across Missouri” (Oct 30, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-39-7-million-modernize-rural-healthcare-across-missouri"
+   }
+  }
+ },
+ "delaware": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Sep 24, 2026: “The Trump Administration announced today that nearly $23 million in federal Rural Health Transformation Program (RHTP) funding is being delivered to strengthen healthcare delivery and expand access for rural Delawareans. The funding will support Delaware's three Federally Qualified Health Centers (FQHCs) as they modernize technology, strengthen chronic disease management, and expand services for the communities they serve.”",
+    "src": "cms1"
+   },
+   {
+    "text": "CMS announced on Oct 14, 2026: “Today, the Trump Administration announced over a million dollars in Rural Health Transformation Program (RHTP) funding to help recruit and retain physicians serving communities in rural Delaware. This investment will support medical students and physicians in residency training, reduce the financial burden of clinical training, and encourage more physicians to build their careers while expanding quality care access to rural communities across Delaware.”",
+    "src": "cms2"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces Nearly $23 Million to Modernize Rural Health Centers, Expand Mobile Care, and Make It Easier to Manage Chronic Disease in Delaware” (Sep 24, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-nearly-23-million-modernize-rural-health-centers-expand-mobile-care"
+   },
+   "cms2": {
+    "label": "CMS, “Trump Administration Announces New Funding to Support Early Career Physicians Who Choose to Work in Rural Delaware” (Oct 14, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-new-funding-support-early-career-physicians-who-choose-work-rural"
+   }
+  }
+ },
+ "colorado": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Sep 28, 2026: “The Trump Administration announced today that a $169.6 million investment is being delivered to strengthen and expand healthcare for rural Coloradans through the federal Rural Health Transformation Program (RHTP). This investment will support 91 grantees and approximately 250 projects working to improve access to care, strengthen rural providers and emergency services, and modernize healthcare delivery across Colorado.”",
+    "src": "cms1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $169 Million to Expand Specialty Care, Strengthen Emergency Services, and Bring Lifesaving Blood Transfusions Closer to Colorado Patients” (Sep 28, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-169-million-expand-specialty-care-strengthen-emergency-services-bring"
+   }
+  }
+ },
+ "texas": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Sep 28, 2026: “The Trump Administration announced today that a $51 million investment is being delivered to create or improve community-based chronic disease prevention, wellness, and nutrition programs through the federal Rural Health Transformation Program (RHTP). This investment will help rural healthcare providers implement solutions to improve outcomes for rural Texans with diabetes, cardiovascular disease, chronic respiratory disease, or obesity, while also supporting efforts to prevent these chronic conditions.”",
+    "src": "cms1"
+   },
+   {
+    "text": "CMS announced on Oct 15, 2026: “Today, the Trump Administration announced $78 million in Rural Health Transformation Program (RHTP) funding to 216 rural healthcare providers through the Rural Texas Strong initiative to strengthen healthcare across rural Texas communities. This investment will support chronic disease prevention and improved health outcomes, rural healthcare workforce recruitment and retention, and medical equipment and facility improvements to expand access to state-of-the-art care across Texas.” It added: “This transformational funding will deliver $78 million directly to 216 rural healthcare providers, helping rural communities prevent and manage chronic diseases such as diabetes, cardiovascular disease, chronic respiratory disease, and obesity. Other initiatives are focused on keeping the best aspects of a small-town medical practice by recruiting and retaining doctors, emergency medical personnel, and other healthcare workers.”",
+    "src": "cms2"
+   },
+   {
+    "text": "CMS announced on Oct 29, 2026: “Today, the Trump Administration announced $87 million in Rural Health Transformation Program (RHTP) funding to 129 rural healthcare providers through Rural Texas Strong to strengthen healthcare across rural communities. This investment will help improve health outcomes for rural Texans, build a strong healthcare workforce, and modernize facilities and equipment across rural Texas.”",
+    "src": "cms3"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $51 Million for Rural Texas Nutrition and Chronic Disease Prevention Programs” (Sep 28, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-51-million-rural-texas-nutrition-chronic-disease-prevention-programs"
+   },
+   "cms2": {
+    "label": "CMS, “CMS News: Trump Administration Announces $78 Million for Rural Healthcare Workforce, Chronic Disease Prevention, and Facility Upgrades Across Texas” (Oct 15, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/cms-news-trump-administration-announces-78-million-rural-healthcare-workforce-chronic-disease"
+   },
+   "cms3": {
+    "label": "CMS, “Trump Administration Announces $87 Million for 129 Rural Healthcare Providers Across Texas” (Oct 29, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-87-million-129-rural-healthcare-providers-across-texas"
+   }
+  }
+ },
+ "montana": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Sep 29, 2026: “The Trump Administration announced today that an $8.7 million investment is being delivered to support rural healthcare for Montana residents through the federal Rural Health Transformation Program (RHTP). This investment will provide 79 rural emergency medical service (EMS) agencies with new ambulances and lifesaving medical equipment, giving first responders the resources they need to respond to crises, transport critically ill patients, and deliver high-quality care.”",
+    "src": "cms1"
+   },
+   {
+    "text": "CMS announced on Oct 16, 2026: “Today, the Trump Administration announced $3.63 million in Rural Health Transformation Program (RHTP) funding to expand community integrated health (CIH) services across rural Montana. This investment will help rural emergency medical services (EMS) agencies deliver more care directly to patients and connect them to vital resources, keeping high-quality care close to home for Montanans.”",
+    "src": "cms2"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $8.7 Million for New Ambulances and Lifesaving Medical Equipment Upgrades Across Rural Montana” (Sep 29, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-8-7-million-new-ambulances-lifesaving-medical-equipment-upgrades"
+   },
+   "cms2": {
+    "label": "CMS, “Trump Administration Announces New Funding to Expand Rural EMS and Bring More Care Directly to Patients Across Montana” (Oct 16, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-new-funding-expand-rural-ems-bring-more-care-directly-patients-across"
+   }
+  }
+ },
+ "north-carolina": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Sep 30, 2026: “The Trump Administration announced today that a $20 million investment is being delivered to upgrade healthcare technology and expand access for patients across rural North Carolina through the federal Rural Health Transformation Program (RHTP). This funding will support North Carolina’s Rural Health Innovation Fund, making funding available to eligible providers for technology upgrades and other digital healthcare advancements.” It added: “The funding will help rural providers replace outdated technology and adopt modern tools that make it easier to deliver care and operate their practices. Eligible projects include expanding telehealth so patients can connect with care remotely, upgrading electronic health records, strengthening cybersecurity protections for health information, and adopting technology that helps clinicians make informed care decisions for their patients.”",
+    "src": "cms1"
+   },
+   {
+    "text": "CMS announced on Oct 07, 2026: “Today, the Trump Administration announced more than $17 million in Rural Health Transformation Program (RHTP) funding to expand mental health and substance use disorder services for North Carolina’s rural residents. The funding will support new behavioral health clinics, opioid treatment access, crisis response, early intervention, and perinatal behavioral healthcare across rural communities.” It added: “This transformational funding will deliver $4 million for three new mental health clinics; $3 million to expand access to medications for opioid use disorder through stationary medication units in five counties; and $4 million to send mobile crisis teams to six additional counties, bringing in-home support directly to children and families in crisis for up to eight weeks to help kids stay with their families and reduce hospital or residential placements.”",
+    "src": "cms2"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $20 Million to Expand Telehealth Access and Upgrade Healthcare Technology Across Rural North Carolina” (Sep 30, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-20-million-expand-telehealth-access-upgrade-healthcare-technology"
+   },
+   "cms2": {
+    "label": "CMS, “Trump Administration Announces More Than $17 Million for New Mental Health Clinics, Mobile Crisis Teams, and Expanded Addiction Treatment in North Carolina” (Oct 07, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-more-17-million-new-mental-health-clinics-mobile-crisis-teams"
+   }
+  }
+ },
+ "iowa": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Oct 09, 2026: “Today, the Trump Administration announced more than $209 million in Rural Health Transformation Program (RHTP) funding being put to work to strengthen healthcare delivery across rural Iowa through the state’s Healthy Hometowns initiative. This investment will support expanded clinical and maternal health services, rural workforce development, cancer prevention and screening, EMS and mobile health, and technology and infrastructure modernization across Iowa. Iowa has committed its full $209 million in funding to improving healthcare in rural communities across the state.”",
+    "src": "cms1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $209 Million to Expand Advanced Medical Care, Maternal Telehealth, and Cancer Prevention Across Rural Iowa” (Oct 09, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-209-million-expand-advanced-medical-care-maternal-telehealth-cancer"
+   }
+  }
+ },
+ "louisiana": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Oct 09, 2026: “Today, the Trump Administration announced $37.7 million in Rural Health Transformation Program (RHTP) funding to strengthen the rural healthcare workforce across Louisiana. This investment will expand healthcare training opportunities and help rural providers recruit and retain the professionals they need.” It added: “This transformational funding will deliver $37.7 million to build Louisiana’s rural healthcare workforce through education, training, recruitment, and retention initiatives, including up to $20 million to connect Louisiana’s public universities and community and technical colleges with rural healthcare providers, aligning education and training with local workforce needs.”",
+    "src": "cms1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $37.7 Million to Train and Recruit More Rural Healthcare Workers Across Louisiana” (Oct 09, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-37-7-million-train-recruit-more-rural-healthcare-workers-across"
+   }
+  }
+ },
+ "nebraska": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Oct 13, 2026: “Today, the Trump Administration announced more than $177 million in Rural Health Transformation Program (RHTP) funding to strengthen rural healthcare delivery across Nebraska. This investment will expand access to care, support healthcare workforce development, modernize rural healthcare technology, and bring services closer to home for rural and frontier communities.”",
+    "src": "cms1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces More Than $177 Million to Recruit Rural Healthcare Workers, Expand Mobile Care, and Modernize Services Across Nebraska” (Oct 13, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-more-177-million-recruit-rural-healthcare-workers-expand-mobile-care"
+   }
+  }
+ },
+ "maryland": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Oct 19, 2026: “Today, the Trump Administration announced $16.4 million in Rural Health Transformation Program (RHTP) funding to address critical healthcare workforce shortages and improve access to care. This investment will support projects ready for rapid deployment that train new healthcare workers, expand apprenticeships, and help rural communities recruit and retain skilled professionals across Maryland.” It added: “This $16.4 million investment will train Marylanders for healthcare jobs, expand registered apprenticeships, and reduce financial barriers to training and certification. Funding will also help rural communities recruit and retain nurses, physician assistants, physicians, dentists, and other healthcare professionals. Additional investments will help current workers build skills, prepare middle and high school students for healthcare careers, and train dental assistants with support for tuition, transportation, and uniforms.”",
+    "src": "cms1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces More Than $16 Million for Rural Healthcare Workforce Training and Retention Across Maryland” (Oct 19, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-more-16-million-rural-healthcare-workforce-training-retention-across"
+   }
+  }
+ },
+ "wyoming": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Oct 23, 2026: “Today, the Trump Administration announced $205 million in Rural Health Transformation Program (RHTP) funding to strengthen healthcare delivery across Wyoming’s rural communities. This investment will improve access to emergency medical services, grow the rural healthcare workforce, and modernize healthcare technology statewide. Wyoming has committed its full $205 million in funding toward improving rural healthcare in communities across the state.” It added: “This transformational funding includes $91.8 million to improve access to emergency medical care, including labor and delivery, EMS, and trauma services, while supporting the long-term sustainability of critical access to hospitals and rural ambulance services. An additional $56.3 million will support education and training to grow the pipeline of nurses, EMTs, behavioral health workers, and physicians.”",
+    "src": "cms1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces $205 Million to Strengthen Emergency Care, Expand the Rural Health Workforce, and Modernize Healthcare Technology in Rural Wyoming” (Oct 23, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-205-million-strengthen-emergency-care-expand-rural-health-workforce"
+   }
+  }
+ },
+ "florida": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Oct 23, 2026: “Today, the Trump Administration announced $193.7 million in Rural Health Transformation Program (RHTP) funding to 45 organizations across Florida to improve rural health across the state. This investment will help build regional capacity and expand options for rural Floridians to receive high-quality healthcare closer to home.”",
+    "src": "cms1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces More Than $193 Million to Expand Preventive Care and Bring Specialty Care Closer to Rural Florida” (Oct 23, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-more-193-million-expand-preventive-care-bring-specialty-care-closer"
+   }
+  }
+ },
+ "idaho": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Oct 28, 2026: “Today, the Trump Administration announced nearly $186 million in Rural Health Transformation Program (RHTP) funding to improve healthcare access across rural Idaho. This investment will help rural providers deliver and coordinate care locally through modern technology, new care models, an expanded healthcare workforce, and improvements to healthcare facilities. Idaho has committed its full $186 million in fiscal year 2026 funding to improve healthcare in rural communities across the state.” It added: “This transformational $186 million investment supports five initiatives designed to strengthen healthcare delivery and modernize rural Idaho’s healthcare system. Funding for telehealth, cybersecurity, and electronic health record modernization will help rural providers deliver and coordinate care better locally. Investments in community health workers and emergency medical services professionals will help bring services into homes and communities, while training, recruitment, and retention efforts will grow Idaho’s rural healthcare workforce.”",
+    "src": "cms1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces Nearly $186 Million to Expand Rural Healthcare Access, Modernize Technology, and Grow the Healthcare Workforce Across Idaho” (Oct 28, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-nearly-186-million-expand-rural-healthcare-access-modernize"
+   }
+  }
+ },
+ "california": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS announced on Oct 29, 2026: “Today, the Trump Administration announced more than $233 million in Rural Health Transformation Program (RHTP) funding to improve healthcare access across California. This investment will help rural providers deliver and coordinate care locally through regional care networks, telehealth, workforce development, and upgraded healthcare technology. California has committed its full fiscal year 2026 funding — more than $233 million — to improve healthcare in rural communities across the state.”",
+    "src": "cms1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "cms1": {
+    "label": "CMS, “Trump Administration Announces More Than $233 Million to Improve Rural Healthcare Services Across California” (Oct 29, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-more-233-million-improve-rural-healthcare-services-across-california"
    }
   }
  }
