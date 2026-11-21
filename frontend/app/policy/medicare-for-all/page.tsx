@@ -32,6 +32,7 @@ export default function MedicareForAllPage() {
         <div className="flex flex-wrap gap-4 text-sm">
           <Link href="/policy/medicare-for-all/vermont-act-48" className="text-blue-700 font-semibold underline underline-offset-2">Case study: Vermont Act 48 and Green Mountain Care →</Link>
           <Link href="/policy/medicare-for-all/modeler" className="text-blue-700 font-semibold underline underline-offset-2">Single-Payer Modeler: Vermont&apos;s 14 hospitals →</Link>
+          <Link href="/academy/tracks/medicare-for-all-five-pillar-test" className="text-blue-700 underline underline-offset-2">Academy course (18 lessons)</Link>
           <Link href="/policy/feasibility" className="text-blue-700 underline underline-offset-2">Policy Feasibility Studies</Link>
         </div>
       </div>

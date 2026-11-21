@@ -26,6 +26,8 @@ export default function SinglePayerModelerPage() {
         </p>
         <p className="text-sm mt-4">
           <Link href="/policy/medicare-for-all" className="text-blue-700 underline underline-offset-2">← Medicare for All: the five-pillar test</Link>
+          {" · "}
+          <Link href="/academy/tracks/medicare-for-all-five-pillar-test" className="text-blue-700 underline underline-offset-2">Academy course: Track 6 walks through this Modeler</Link>
         </p>
       </div>
       <ModelerClient />
