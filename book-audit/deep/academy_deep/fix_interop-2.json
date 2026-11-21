@@ -1,0 +1,23 @@
+{
+ "tag": "interop-cq2",
+ "note": "Replace unopenable Carequality deck figures with figure from opened TechTarget article (27 Mar 2024): >6 billion documents exchanged in 2023",
+ "pairs": [
+  [
+   "Carequality reports 10.6 billion clinical documents exchanged in 2024 (more than 1.1 billion in December 2024 alone) through provider-initiated queries,",
+   "Carequality's network exchanged more than 6 billion documents in 2023 through provider-initiated queries,"
+  ],
+  [
+   "against more than 1.1 billion documents moving through Carequality's provider-initiated exchange in December 2024 alone.",
+   "against more than 6 billion documents exchanged through Carequality's provider-initiated network in 2023."
+  ],
+  [
+   "Carequality volume (10.6 billion documents in 2024; 1.1+ billion in December 2024): Carequality Monthly Informational Call slides, February 27, 2025 — https://carequality.org/wp-content/uploads/2025/04/Carequality-Monthly-Informational-Call-2025-02-27.pdf",
+   "Carequality volume (more than 6 billion documents exchanged in 2023): TechTarget, \\\"Carequality interoperability network celebrates 10 years of HIE\\\" (March 27, 2024) — https://www.techtarget.com/searchhealthit/news/366577769/Carequality-interoperability-network-celebrates-10-years-of-HIE"
+  ],
+  [
+   "Carequality reports 10.6 billion clinical documents exchanged in 2024, with more than 1.1 billion in December 2024 alone.",
+   "Carequality's network exchanged more than 6 billion documents in 2023 (TechTarget, March 2024)."
+  ]
+ ],
+ "residue": "10\\.6 billion clinical documents|1\\.1 billion in December 2024"
+}

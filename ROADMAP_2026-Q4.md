@@ -13,7 +13,7 @@ Legend — **[Claude]** Claude can do it without a content decision ·
 
 ## Part 1 — Finish what the last sessions started
 
-### 1.1 Academy deep fact-check — not started (resume first)
+### 1.1 Academy deep fact-check — DONE 2026-11-20 (all 19 courses; see book-audit/deep/academy_deep/PROGRESS.md)
 `book-audit/deep/agent/PROGRESS.md`: `academyA` 0/90, `academyB` 0/76, `academyC` 0/90
 lessons. Book chapters 3, 8, 9, 12 and the Oregon/CalAIM simulators finished the same
 deep pass; the Academy did not. Passes 1–2 (time-sensitive federal claims, Vermont

@@ -1,0 +1,27 @@
+{
+ "tag": "interop-facts",
+ "note": "Carequality: 10.6B docs in 2024, 1.1B+ Dec 2024 (Carequality informational call deck, Feb 27 2025); prior course figures (940M/mo, 1.2B/mo) unsourced/inconsistent. TEFCA Manner exception finalized in HTI-1 (Dec 2023), as the course states in two other lessons.",
+ "pairs": [
+  [
+   "Carequality reports moving approximately 940 million clinical documents per month through provider-initiated queries,",
+   "Carequality reports 10.6 billion clinical documents exchanged in 2024 (more than 1.1 billion in December 2024 alone) through provider-initiated queries,"
+  ],
+  [
+   "against roughly 940 million documents a month moving through Carequality's provider-initiated exchange.",
+   "against more than 1.1 billion documents moving through Carequality's provider-initiated exchange in December 2024 alone."
+  ],
+  [
+   "Carequality volume (940M documents/month): Carequality framework announcement, August 2024.",
+   "Carequality volume (10.6 billion documents in 2024; 1.1+ billion in December 2024): Carequality Monthly Informational Call slides, February 27, 2025 — https://carequality.org/wp-content/uploads/2025/04/Carequality-Monthly-Informational-Call-2025-02-27.pdf"
+  ],
+  [
+   "As of 2024, Carequality enables the flow of more than 1.2 billion clinical documents every month.",
+   "Carequality reports 10.6 billion clinical documents exchanged in 2024, with more than 1.1 billion in December 2024 alone."
+  ],
+  [
+   "Crucially, a final rule issued in December 2024 established a \"TEFCA Manner Exception\"",
+   "Crucially, ONC's HTI-1 final rule (December 2023) established a \"TEFCA Manner Exception\""
+  ]
+ ],
+ "residue": "940 million (clinical )?documents|1\\.2 billion clinical documents"
+}
