@@ -1,3 +1,4 @@
+import Link from "next/link";
 import CategoryPage from "@/components/CategoryPage";
 
 export const metadata = {
@@ -25,6 +26,11 @@ function FeasibilityHero() {
 function FeasibilityBody() {
   return (
     <div className="max-w-7xl mx-auto px-6 pt-0 pb-12">
+      <Link href="/policy/medicare-for-all" className="block bg-blue-50 border border-blue-200 rounded-2xl px-6 py-5 mb-8 hover:bg-blue-100 transition-colors">
+        <span className="text-[10px] font-black uppercase tracking-widest text-blue-700">New briefing</span>
+        <span className="block font-bold text-slate-900 mt-1">Medicare for All: the five-pillar test, and why Vermont&apos;s Act 48 single payer stopped in 2014 →</span>
+      </Link>
+
       {/* Reform Feasibility Scorecard */}
       <div className="bg-white rounded-2xl border border-slate-200 p-8 mb-10">
         <div className="flex items-center gap-3 mb-6">
@@ -49,8 +55,8 @@ function FeasibilityBody() {
               {[
                 { reform: "Medicare drug price negotiation (IRA)", political: "7/10 — enacted; expansion contested", economic: "9/10 — $98.5B savings over 10yr (CBO)", complexity: "6/10 — complex negotiation process", timeline: "Active — expanding to 15 drugs by 2027" },
                 { reform: "Medicaid expansion (remaining 10 states)", political: "5/10 — state-level political resistance", economic: "8/10 — reduces uncompensated care + mortality", complexity: "4/10 — established playbook from 40 states", timeline: "2–4 years if political conditions shift" },
-                { reform: "Public option (Medicare buy-in)", political: "4/10 — never passed either chamber", economic: "7/10 — premium competition could lower costs", complexity: "7/10 — network adequacy, risk pool design", timeline: "Uncertain — no active federal vehicle" },
-                { reform: "Medicare for All (single-payer)", political: "3/10 — no Senate majority; industry opposition", economic: "Estimates range from net savings to net cost, depending on payment rates", complexity: "10/10 — eliminates entire private insurance industry", timeline: "15+ years — structural prerequisites missing" },
+                { reform: "Public option (Medicare buy-in)", political: "4/10 — never passed either chamber", economic: "7/10 — premium competition could lower costs", complexity: "7/10 — network adequacy, risk pool design", timeline: "Active vehicle: Medicare at 50 Act (Baldwin + 9 senators, Nov 10, 2026)" },
+                { reform: "Medicare for All (single-payer)", political: "3/10 — S.1506 has 19 Senate cosponsors and no committee action; Democratic majority from Jan 2027, but presidential veto and filibuster remain", economic: "CBO (2022): national spending −$0.7T to +$0.3T in 2030, federal subsidies +$1.5–3.0T, depending on design", complexity: "10/10 — bars duplicative private coverage; folds in Medicare and Medicaid; amends ERISA", timeline: "Policy gate closed; no revenue title (see the five-pillar test)" },
                 { reform: "PBM transparency & reform", political: "7/10 — bipartisan consensus; FTC pressure", economic: "6/10 — savings uncertain", complexity: "5/10 — contract reform + disclosure requirements", timeline: "Recurring bipartisan bills; state laws moving faster" },
                 { reform: "Site-neutral payment expansion", political: "6/10 — physician support; hospital opposition", economic: "7/10 — CBO scores vary widely by design", complexity: "5/10 — regulatory change via CMS rulemaking", timeline: "1–3 years via CMS annual rulemaking" },
                 { reform: "No Surprises Act expansion", political: "8/10 — high public support; bipartisan", economic: "5/10 — main gains already captured by the 2022 law", complexity: "4/10 — existing regulatory infrastructure", timeline: "Active — ongoing IDR arbitration reform" },
@@ -77,9 +83,9 @@ function FeasibilityBody() {
             icon: "🏥",
             title: "Medicare for All — Deep Dive",
             items: [
-              "Medicare for All Act of 2023 (H.R. 3421 / S. 1655): two-year transition to federal single-payer for all US residents",
-              "Estimated new federal spending: roughly $32–34 trillion over 10 years (Mercatus Center 2018; Urban Institute 2019), offset by eliminated premiums and cost-sharing",
-              "Financing options: payroll tax, income tax, financial transaction tax, wealth tax — no consensus proposal",
+              "Medicare for All Act (S.1506 / H.R.3069, introduced April 29, 2025): Senate bill phases in over four years, House bill over two",
+              "CBO (2022), five illustrative designs: federal health subsidies +$1.5–3.0 trillion in 2030; CBO has not scored the Sanders bill itself",
+              "Financing: neither S.1506 nor H.R.3069 includes a revenue title; Medicare for America (H.R.10924, 2026) does",
               "Provider payment: at Medicare rates — many hospitals lose revenue; rural hospitals at greatest risk",
               "Transition challenges: large displacement of insurance and billing jobs; retraining and a safety net required",
             ],
@@ -137,7 +143,7 @@ function FeasibilityBody() {
               "Medium-term: public option, drug importation, uniform billing standard — requires Senate threshold or reconciliation",
               "Long-term: all-payer rate setting, global budgets, meaningful admin simplification — decade-scale implementation",
               "Path dependence: each incremental reform shapes constituency and political economy for next step",
-              "Vermont lesson: the Act 48 (2011) single-payer plan was abandoned in December 2014 when financing and political will failed together",
+              "Vermont lesson: the Act 48 (2011) single-payer plan stopped in December 2014 when the Governor would not propose its financing ($2.58B of new revenue in 2017)",
             ],
           },
         ].map((card) => (

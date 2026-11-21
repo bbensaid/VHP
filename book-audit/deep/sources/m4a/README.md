@@ -20,6 +20,8 @@ Academy course and in the book must trace to a file here. Extracted facts with p
 | gmc_report_appendixA_2014.pdf/.txt | Appendix A of the 2014 report | legislature.vermont.gov/Documents/2020/…/W~Agency of Administration~2014 - Green Mountain Care… - Appendix-A~1-16-2019.pdf |
 | lunge_costa_hwm_2015-01-14.pdf/.txt | Lunge & Costa to House Ways and Means, Jan 14, 2015 | legislature.vermont.gov …/House Ways and Means/…/W~Robin Lunge, Michael Costa~Presentation on Financing Report~1-14-2015.pdf |
 
+| vt_greenmountaincare_org_home.html / _full.txt | greenmountaincare.org (302 → dvha.vermont.gov/members), 2026-11-21 | https://www.greenmountaincare.org/ |
+
 ## Federal law
 
 | File | What it is | URL |

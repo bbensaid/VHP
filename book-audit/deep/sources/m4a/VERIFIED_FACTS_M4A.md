@@ -193,6 +193,14 @@ sugared-drink excises; sunset of P.L. 115-97 and 119-21).
 - Jeffries (Roll Call): lowering the Medicare age is "all part of an ongoing conversation".
 - Senate Democratic leadership contested: Van Hollen challenging Schumer (Roll Call; Yahoo).
 
+## I2. The name "Green Mountain Care" today (vt_greenmountaincare_org_home)
+
+- https://www.greenmountaincare.org/ returns 302 → https://dvha.vermont.gov/members ("Vermont Medicaid Programs |
+  Department of Vermont Health Access"), checked 2026-11-21. The page itself does not use the words "Green Mountain
+  Care", so the platform says only that the old address redirects to DVHA's Medicaid pages. (Academy courses
+  course_medicaid_101 / courses_tier1 call Vermont's Medicaid program "Green Mountain Care" — not verified from a
+  primary source; flagged, not changed.)
+
 ## J. Corrections to earlier notes
 
 - Plan memory said S.1506 has 18 cosponsors and H.R.3069 has 114 → now **19** and **118** (billstatus).

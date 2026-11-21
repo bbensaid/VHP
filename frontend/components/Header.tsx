@@ -54,6 +54,7 @@ const PILLAR_MENU_ITEMS: Record<FrameworkId, MegaMenuItem[]> = {
     { href: "/policy/mandates", label: "Public Health Mandates", desc: "Coverage requirements & enforcement" },
     { href: "/policy/global", label: "Global & Comparative Policy", desc: "International health system benchmarks" },
     { href: "/policy/feasibility", label: "Policy Feasibility Studies", desc: "Implementation viability assessments" },
+    { href: "/policy/medicare-for-all", label: "Medicare for All", desc: "Single payer through the five-pillar test" },
   ],
   economics: [
     { href: "/economics/value", label: "Value-Based Care Models", desc: "APMs, bundled payments & outcomes" },

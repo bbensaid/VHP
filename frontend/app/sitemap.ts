@@ -33,6 +33,8 @@ const staticRoutes: { path: string; priority: number; changeFrequency: MetadataR
   { path: "/policy",              priority: 0.9, changeFrequency: "weekly" },
   { path: "/policy/feasibility",  priority: 0.7, changeFrequency: "weekly" },
   { path: "/policy/global",       priority: 0.7, changeFrequency: "weekly" },
+  { path: "/policy/medicare-for-all", priority: 0.8, changeFrequency: "weekly" },
+  { path: "/policy/medicare-for-all/vermont-act-48", priority: 0.7, changeFrequency: "monthly" },
   { path: "/policy/mandates",     priority: 0.7, changeFrequency: "weekly" },
   { path: "/policy/regulation",   priority: 0.7, changeFrequency: "weekly" },
   { path: "/economics",           priority: 0.9, changeFrequency: "weekly" },

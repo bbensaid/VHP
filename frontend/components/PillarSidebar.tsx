@@ -25,6 +25,7 @@ const PILLAR_CONFIG: Record<string, {
       { href: "/policy/mandates",    label: "Public Health Mandates" },
       { href: "/policy/global",      label: "Global & Comparative Policy" },
       { href: "/policy/feasibility", label: "Policy Feasibility Studies" },
+      { href: "/policy/medicare-for-all", label: "Medicare for All" },
     ],
     labItems: [
       { href: "/research-lab/policy-quality?tab=policy",           label: "Policy Simulator" },

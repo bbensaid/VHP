@@ -89,7 +89,7 @@ function GlobalPolicyBody() {
               "Medicare Canada: provincial single-payer for hospital + physician services; private supplemental common",
               "Taiwan NHI: single-payer universal coverage since 1995; smart card at every encounter; global budget",
               "German SHI: competing non-profit sickness funds; income-based contributions; a common benefit package",
-              "Medicare for All (US): Sanders/Jayapal bills would replace private insurance; estimated $32–34T in new federal spending over 10 years",
+              "Medicare for All (US): Sanders/Jayapal bills (S.1506 / H.R.3069) would bar duplicative private coverage; CBO (2022) put added federal subsidies at $1.5–3.0T in 2030 across five designs",
               "Public option models: state-based (WA, CO, OR) — government plan competes alongside private insurance",
             ],
           },

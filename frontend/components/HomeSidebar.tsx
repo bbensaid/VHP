@@ -113,6 +113,7 @@ const PILLAR_CONFIG: Record<FrameworkId, PillarSidebarConfig> = {
       { href: "/policy/mandates",    label: "Public Health Mandates" },
       { href: "/policy/global",      label: "Global & Comparative Policy" },
       { href: "/policy/feasibility", label: "Policy Feasibility Studies" },
+      { href: "/policy/medicare-for-all", label: "Medicare for All" },
     ],
     labToolIds: ["policy-simulator", "medicaid-wr-calculator", "hr1-cliff", "policy-impact-assessment", "innovation-leaderboard"],
   },

@@ -92,6 +92,7 @@ export const CHAPTERS: readonly Chapter[] = [
       { label: "Vermont Act 51 (2023)", href: "/vermont-act-51" },
       { label: "Vermont Act 68 (2025)", href: "/vermont-act-68" },
       { label: "Vermont RHT Program", href: "/vermont-rht-program" },
+      { label: "Vermont Act 48 (2011): the single-payer attempt", href: "/policy/medicare-for-all/vermont-act-48" },
       { label: "Policy Overview", href: "/policy" },
       "policy-simulator",
     ],
@@ -249,6 +250,7 @@ export const CHAPTERS: readonly Chapter[] = [
     platformLinks: [
       { label: "Vermont Legislative Resources", href: "/vermont-legislative-resources" },
       { label: "Policy Feasibility Studies", href: "/policy/feasibility" },
+      { label: "Medicare for All: the five-pillar test", href: "/policy/medicare-for-all" },
     ],
   },
   {

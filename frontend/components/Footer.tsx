@@ -17,6 +17,7 @@ const pillars = [
       { label: "Public Health Mandates", href: "/policy/mandates" },
       { label: "Global & Comparative Policy", href: "/policy/global" },
       { label: "Policy Feasibility Studies", href: "/policy/feasibility" },
+      { label: "Medicare for All", href: "/policy/medicare-for-all" },
     ],
   },
   {
