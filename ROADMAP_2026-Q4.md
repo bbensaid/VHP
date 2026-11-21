@@ -37,6 +37,11 @@ and sources.
   carry an "In the Academy" paragraph with `/academy/tracks/…` links. Still worth a
   promise-delivery check (CLAUDE.md "DONE" criterion 5): open each cited track and
   confirm the named lesson titles exist verbatim.
+  **DONE 2026-11-20:** all 21 Academy references in the book checked against live Supabase —
+  16 courses published; Five Pillars' 8 track names and every quoted lesson title match;
+  Medicaid 101 "Waivers & State Flexibility" track and Transformation Leadership's two named
+  lessons exist ("Building the PMO" is the book's short form of the full title); the Portfolio
+  course has the 15 lessons the book promises; /academy/medicaid and /academy/courses load.
 
 ### 1.3 Media pages that make promises the site does not keep — **[Claude]**, small code fixes
 | Page | Defect |
