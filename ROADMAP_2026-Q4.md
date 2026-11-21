@@ -73,7 +73,7 @@ affected transcripts with Piper and re-upload to `narration-audio`. Local and fr
 ### 1.5 AI Analyst grounding
 - `backend/services/indexing.py` now registers `htr_book_v42.pdf` — confirm the
   index was rebuilt from the **2026-10-19** export, not an older one.
-- RAG golden dataset is 8 Q/A pairs (target 50); Operations has ~30 indexed docs vs
+- **DONE 2026-11-20:** RAG golden dataset now 50 Q/A pairs (36 added, ground truth quoted verbatim from the book via book-audit/deep/rht/build_golden.py; stale "HTI composite score" pair removed; validator OK, every pillar ≥6). Was: RAG golden dataset is 8 Q/A pairs (target 50); Operations has ~30 indexed docs vs
   800–2,600 for other pillars. **[Claude]** drafts 42 more Q/A pairs from the book
   (answers quoted from the text, so no new claims); **[Author]** spot-checks.
 

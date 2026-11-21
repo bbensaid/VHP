@@ -87,17 +87,6 @@ GOLDEN_DATASET = [
         ),
         "pillar": "Equity",
     },
-    {
-        "question": "What is the HTI (Health Transformation Index) composite score?",
-        "ground_truth": (
-            "The HTI composite score is a multi-dimensional index that measures a state's progress "
-            "across the five pillars of health transformation: Policy, Technology, Economics, Clinical, "
-            "and Operations. It aggregates weighted sub-scores from each pillar to produce a 0-100 score "
-            "reflecting overall transformation readiness and performance, and is read alongside the "
-            "Equity Imperative, which is a cross-cutting justice test rather than a sixth pillar."
-        ),
-        "pillar": "Policy",
-    },
     # ── Operations pillar ─────────────────────────────────────────────────────
     # Added 2026-09-18. The Operations pillar had zero coverage here, the same
     # omission that had dropped it from the chat validator and the role-content
@@ -214,6 +203,192 @@ GOLDEN_DATASET = [
             "uncertainty, and clinician skepticism about black-box decision support."
         ),
         "pillar": "Technology",
+    },
+    # Ground truth quoted verbatim from HTR_Book_v42 (added 2026-11-20; book-audit/deep/rht/build_golden.py)
+    {
+        "question": "Who operates Vermont's Health Information Exchange?",
+        "ground_truth": "Vermont's Health Information Exchange (VHIE) is operated by Vermont Information Technology Leaders (VITL), an independent nonprofit designated by statute as the exclusive operator of the statewide HIE network.",
+        "pillar": "Technology",
+    },
+    {
+        "question": "What is Vermont's Unified Health Data Space?",
+        "ground_truth": "Vermont's answer is the Unified Health Data Space (UHDS) — the second-generation successor to the VHIE, and the vehicle Act 68 §10 directs AHS to develop for that integration.",
+        "pillar": "Technology",
+    },
+    {
+        "question": "Why does every cross-organization FHIR use case depend on patient matching?",
+        "ground_truth": "Every FHIR use case that involves sharing records between organizations requires patient matching — reliably identifying that the 'John Smith, DOB 1952-03-14' at UVMMC is the same person as the 'John Smith, DOB 1952-03-14' at North Country Hospital and the 'Jonathan Smith, DOB 1952-03-14' (with a name variant) in the Medicaid enrollment file.",
+        "pillar": "Technology",
+    },
+    {
+        "question": "How could e-Consults and telehealth support Oliver Wyman's regionalization blueprint?",
+        "ground_truth": "This is a technology enabler for Oliver Wyman's regionalization blueprint: rather than requiring every COE specialty to maintain physical presence at every community hospital, e-Consults and telehealth let COE specialists advise across the network while patients remain near their homes.",
+        "pillar": "Technology",
+    },
+    {
+        "question": "What does the CCBHC model require of a certified entity?",
+        "ground_truth": "The CCBHC model requires a certified entity with the organizational capacity to serve all patients regardless of insurance status.",
+        "pillar": "Clinical",
+    },
+    {
+        "question": "Why do Vermont primary care practices have a financial incentive for HEDIS improvement?",
+        "ground_truth": "This means Vermont primary care practices have a direct financial incentive for HEDIS improvement — not just a regulatory compliance requirement.",
+        "pillar": "Clinical",
+    },
+    {
+        "question": "Were Vermont's clinical models invented in Vermont?",
+        "ground_truth": "Every clinical model in this chapter — PCMH transformation, the Collaborative Care Model, CCBHC operations, HEDIS improvement — has a national specification and a national evidence base; none of it was invented in Vermont.",
+        "pillar": "Clinical",
+    },
+    {
+        "question": "How does remote patient monitoring change economics under global budgets?",
+        "ground_truth": "Under global budgets, RPM is a cost-reduction tool: every hospital admission or readmission prevented by early RPM-triggered intervention saves revenue under the fixed budget.",
+        "pillar": "Clinical",
+    },
+    {
+        "question": "What does Act 68 require regardless of what happens federally?",
+        "ground_truth": "Act 68 requires reference-based pricing and, as resources allow, global budgets for every hospital, regardless of what happens federally.",
+        "pillar": "Economics",
+    },
+    {
+        "question": "What level of reference-based pricing did Oliver Wyman recommend, and what problem does it address?",
+        "ground_truth": "Reference-based pricing — which Oliver Wyman recommended setting at 200% of Medicare or less for PPS hospitals; GMCB sets the actual level — addresses the unit price problem: Vermont's commercial insurance rates run far above Medicare, creating a cross-subsidy that is neither sustainable nor equitable.",
+        "pillar": "Economics",
+    },
+    {
+        "question": "What does Maryland's experience show about hospital global budgets?",
+        "ground_truth": "Maryland's experience with hospital global budgets is the primary counterevidence: Maryland has set hospital rates for all payers since 1977, and under its 2014 all-payer model per-capita hospital revenue grew 1.47% and 2.31% in the first two years against a 3.58% ceiling, while hospital spending per Medicare beneficiary rose more slowly than it did nationally.",
+        "pillar": "Economics",
+    },
+    {
+        "question": "What are the five goals of Vermont's Act 167?",
+        "ground_truth": "The five goals of Vermont's Act 167 — reduce inefficiencies, lower costs, improve health outcomes, reduce health inequities, and increase access to essential services — are goals that virtually every person across the political spectrum would endorse.",
+        "pillar": "Policy",
+    },
+    {
+        "question": "How do Acts 167, 51 and 68 fit together?",
+        "ground_truth": "Vermont's cascade — Act 167 establishing diagnosis, Act 51 building institutional capacity, Act 68 deploying mandatory requirements — is itself a sustainability design.",
+        "pillar": "Policy",
+    },
+    {
+        "question": "What kind of body is the Green Mountain Care Board, compared with other states?",
+        "ground_truth": "The Green Mountain Care Board is Vermont's version of a hospital rate-setting or cost-growth-benchmark authority — Massachusetts, Rhode Island, and several other states have analogous bodies under different names.",
+        "pillar": "Policy",
+    },
+    {
+        "question": "What is the basic unit of analysis for Vermont's regionalization planning?",
+        "ground_truth": "The HSA is the fundamental unit of analysis for Vermont's regionalization and transformation planning.",
+        "pillar": "Operations",
+    },
+    {
+        "question": "What did Act 167 community meetings reveal about arranging patient transfers in Vermont?",
+        "ground_truth": "Multiple meeting participants noted that EMR systems do not talk to each other, that a provider may have to call up to 31 EMS agencies to arrange a single transfer, and that no centralized system guides patients through the coverage and financial assistance they are entitled to.",
+        "pillar": "Operations",
+    },
+    {
+        "question": "When is a community better served without a full inpatient hospital?",
+        "ground_truth": "A community that cannot sustain a full inpatient hospital but has reliable access to a Regional Specialty Center via improved EMS and transportation is better served than one that maintains an understaffed, financially distressed inpatient facility that cannot reliably staff its emergency department or maintain physician expertise across specialties.",
+        "pillar": "Operations",
+    },
+    {
+        "question": "What is the Equity Imperative?",
+        "ground_truth": "This is the Equity Imperative — a cross-cutting test that each of the five pillars must pass on its own terms, rather than a separate workstream competing with them for budget, staff, and attention.",
+        "pillar": "Equity",
+    },
+    {
+        "question": "Why does social risk adjustment matter for Northeast Kingdom hospitals under global budgets?",
+        "ground_truth": "If their global budgets are set at the same percentage of Medicare rates without social risk adjustment, the Northeast Kingdom hospital is being held to a standard that does not reflect its population's actual cost burden.",
+        "pillar": "Equity",
+    },
+    {
+        "question": "What gap in having a personal health care provider does Vermont's data show by ethnicity?",
+        "ground_truth": "Yet the average hides gaps that appear as soon as the data is broken out by race and ethnicity: 78% of Hispanic adults — the one group statistically below the state rate — have one, against 91% of white adults, and Black (85%) and American Indian or Alaska Native (82%) adults also trail (Vermont Department of Health, BRFSS 2023–2024, published March 2026).",
+        "pillar": "Equity",
+    },
+    {
+        "question": "What are the five pillars of the HTR framework?",
+        "ground_truth": "The framework is organized around five pillars: Policy, Technology, Economics, Clinical, and Operations.",
+        "pillar": "Policy",
+    },
+    {
+        "question": "What was OneCare Vermont responsible for?",
+        "ground_truth": "OneCare was Vermont's primary Accountable Care Organization vehicle under a Total Cost of Care model — holding OneCare financially responsible for the total healthcare spending of an attributed Vermont population.",
+        "pillar": "Economics",
+    },
+    {
+        "question": "What happened when Blue Cross Blue Shield of Vermont left OneCare?",
+        "ground_truth": "OneCare Vermont ran for more than a decade on a voluntary model: all 14 hospitals took part, but the insurers did not have to — and when Blue Cross Blue Shield of Vermont, the state's largest, left in January 2023, about a third of the attributed population went with it (§1.2.1).",
+        "pillar": "Policy",
+    },
+    {
+        "question": "What did Vermont's AHEAD withdrawal show about the EAST Fund and Act 68?",
+        "ground_truth": "Vermont's AHEAD withdrawal shows it: the EAST Fund was cut from about $138 million to a cap near $10 million, and the incentive architecture — Act 68's mandates — was untouched, because the two were never the same thing.",
+        "pillar": "Policy",
+    },
+    {
+        "question": "What is the highest-priority technology engagement for Vermont's Clinically Integrated Network?",
+        "ground_truth": "For the Clinically Integrated Network of Shared Services that Vermont's RHT plan funds for its independent hospitals and providers, the highest-priority Technology Strategy engagement is the data architecture design that enables shared services across its member facilities.",
+        "pillar": "Technology",
+    },
+    {
+        "question": "Why does Vermont route clinical-claims integration through MDWAS rather than VHCURES?",
+        "ground_truth": "The reason is timeliness: MDWAS links Medicaid members' VHIE clinical data with Medicaid claims inside the State's own system, where VHCURES runs on quarterly collection and a six-month claims run-out, is de-identified for end users, and — because of ERISA preemption — excludes large segments of the commercially insured population.",
+        "pillar": "Technology",
+    },
+    {
+        "question": "What staffing does the Collaborative Care Model require?",
+        "ground_truth": "The Collaborative Care Model requires a behavioral health care manager employed by a primary care practice.",
+        "pillar": "Clinical",
+    },
+    {
+        "question": "What evidence and billing support the Collaborative Care Model?",
+        "ground_truth": "The Collaborative Care Model (CoCM) has its own designated Medicare billing codes and a 90+ randomized controlled trial evidence base.",
+        "pillar": "Clinical",
+    },
+    {
+        "question": "What primary care physician shortfall does Vermont project by 2030?",
+        "ground_truth": "The primary-care shortage is the most immediately actionable: the RHT application projects a 370-FTE physician shortfall by 2030 (112 family medicine, 190 internal medicine, 52 OB/GYN, 2 pediatrics).",
+        "pillar": "Operations",
+    },
+    {
+        "question": "Why does credentialing delay matter in Vermont?",
+        "ground_truth": "In a state projecting a 370 FTE primary care shortage by 2030, every month of credentialing delay is a month of foregone care — and foregone revenue — for every provider recruited.",
+        "pillar": "Operations",
+    },
+    {
+        "question": "What has the Section 1557 rule required of covered health programs since May 2025?",
+        "ground_truth": "The Section 1557 nondiscrimination rule has, since May 1, 2025, required covered health programs to identify and mitigate discrimination risk in patient care decision support tools (45 CFR § 92.210).",
+        "pillar": "Technology",
+    },
+    {
+        "question": "Why was Vermont's Certificate of Need process cited as a barrier?",
+        "ground_truth": "- CON process streamlining: Vermont's Certificate of Need process for hospital capital investments was cited as a barrier to efficient regionalization — providers cannot build the facilities and purchase the equipment that transformation requires if CON review is slow and contested.",
+        "pillar": "Operations",
+    },
+    {
+        "question": "What does a staffed PMO cost relative to the RHT award it coordinates?",
+        "ground_truth": "A staffed PMO costs about $0.85–1.3M a year — $4–6.4M over four to five years — which is under 1% a year of the $195M first-year RHT award it coordinates, before counting any savings from reference-based pricing.",
+        "pillar": "Operations",
+    },
+    {
+        "question": "What did the largest study of ambient clinical intelligence find?",
+        "ground_truth": "By 2026, ambient clinical intelligence — systems that listen to encounters and generate structured documentation automatically — has moved from early adoption to mainstream consideration, with the largest study to date (JAMA, 2026) finding real but modest savings — about 16 fewer minutes of documentation per eight scheduled patient hours (§4.6.1).",
+        "pillar": "Technology",
+    },
+    {
+        "question": "How does Act 68 strengthen GMCB's access to provider contracts?",
+        "ground_truth": "Act 68 lets GMCB share subpoenaed material with AHS and the Department of Financial Regulation and requires providers to hand over unredacted contracts on request, and the answer is no longer hypothetical.",
+        "pillar": "Policy",
+    },
+    {
+        "question": "Is the Equity Imperative a sixth pillar?",
+        "ground_truth": "It is the Equity Imperative — a single justice test that each of the five pillars must pass on its own terms.",
+        "pillar": "Equity",
+    },
+    {
+        "question": "What foundation do Blueprint PCMHs and Community Health Teams provide for Act 68?",
+        "ground_truth": "Vermont's Blueprint for Health PCMHs and CHTs provide a strong care delivery foundation; the gap is in building on this foundation to serve the more complex patients that Act 68's global budget population health requirements target.",
+        "pillar": "Clinical",
     },
 ]
 
